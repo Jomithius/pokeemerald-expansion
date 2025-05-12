@@ -1,0 +1,102 @@
+mapscripts SlateportCity_Lina_House_MapScripts {}
+
+script Lina_House_EventScript_Pokeball{
+
+    lockall
+    showmonpic(SPECIES_EEVEE, 10,4)
+    msgbox("{PLAYER} checked the POKé BALL.\p
+    It contained the POKéMON\n
+    EEVEE.\p
+    Take the POKé BALL?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_EEVEE, 15, ITEM_SILK_SCARF)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(1)
+            setflag(FLAG_LINA_HOUSE_EEVEE)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(1)
+            setflag(FLAG_LINA_HOUSE_EEVEE)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("You don't have any room.")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(LinaHouse_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+
+}
+
+script NicknamePartyMon{
+
+    msgbox("Would you like to nickname EEVEE?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+
+
+}
+
+script NicknameBoxMon{
+    
+    msgbox("Would you like to nickname EEVEE?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+
+}
+
+text LinaHouse_NotChosen{
+    "{PLAYER} decided not to take the \n
+    POKéMON."
+ }
+
+ script Lina_House_EventScript_Bookshelf {
+    lockall
+    msgbox("A bookshelf. \p
+    You grab a random book \n
+    and look at the title.")
+    waitmessage
+    showmonpic(SPECIES_LUCARIO, 10, 4)
+    msgbox("Muscles & Monsters: A Tale \n
+    of Forbidden Love.")
+    waitmessage
+    hidemonpic
+    msgbox("... \p
+    You put the book back.")
+    waitmessage
+    releaseall
+    end
+ }
+
+ script Lina_House_EventScript_TV {
+    lockall
+    msgbox ("There's something playing on the TV. \p
+    It looks like a romance game.")
+    waitmessage
+    showmonpic(SPECIES_INCINEROAR, 10, 4)
+    msgbox("...")
+    waitmessage
+    hidemonpic
+    msgbox("You decide it's better to not look \n
+    anymore.")
+    waitmessage
+    releaseall
+    end
+ }
