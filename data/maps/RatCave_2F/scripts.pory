@@ -1,0 +1,18 @@
+mapscripts RatCave_2F_MapScripts {}
+
+script RatCave_2F_FlameOrb {
+    lockall
+    setflag(FLAG_ITEM_RAT_CAVE_2F_FLAME_ORB)
+    finditem(ITEM_FLAME_ORB, 1)
+    waitmessage
+    releaseall
+}
+
+script RatCave_2F_RareCandy{
+    lockall
+    setflag(FLAG_ITEM_RAT_CAVE_2F_RARE_CANDY)
+    finditem(ITEM_RARE_CANDY, 5)
+    waitmessage
+    releaseall
+}
+

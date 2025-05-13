@@ -1,0 +1,22 @@
+mapscripts PetalburgCity_Luna_Upstairs_MapScripts {}
+
+ script Luna_House_EventScript_Cup {
+    lock
+    msgbox("A letter is placed next to the \n
+    drink: \p
+    Legend states that any who drink this \n
+    mysterious liquid before lying down \p
+    will awaken a new man or woman.")
+    waitmessage
+    release
+    end
+ }
+
+ script Luna_House_EventScript_TV {
+    lockall
+    msgbox ("There's a stream playing on the TV. \p
+    It's a popular Vtuber.")
+    waitmessage
+    releaseall
+    end
+ }

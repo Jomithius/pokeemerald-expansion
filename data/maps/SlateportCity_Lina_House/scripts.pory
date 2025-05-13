@@ -74,8 +74,7 @@ text LinaHouse_NotChosen{
     and look at the title.")
     waitmessage
     showmonpic(SPECIES_LUCARIO, 10, 4)
-    msgbox("Muscles & Monsters: A Tale \n
-    of Forbidden Love.")
+    msgbox("Muscles & Monsters")
     waitmessage
     hidemonpic
     msgbox("... \p

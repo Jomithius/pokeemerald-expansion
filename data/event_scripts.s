@@ -1156,3 +1156,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/SlateportCity_Lina_House/scripts.inc"
+
+	.include "data/maps/PetalburgCity_Luna_House/scripts.inc"
+
+	.include "data/maps/PetalburgCity_Luna_Basement/scripts.inc"
+
+	.include "data/maps/PetalburgCity_Luna_Upstairs/scripts.inc"
+
+	.include "data/maps/RatCave_1F/scripts.inc"
+
+	.include "data/maps/RatCave_2F/scripts.inc"
+
+	.include "data/maps/RatCave_3F/scripts.inc"
+
+	.include "data/maps/RatCave_B1F/scripts.inc"
+
+	.include "data/maps/RatCave_B2F/scripts.inc"

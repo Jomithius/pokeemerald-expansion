@@ -1222,14 +1222,14 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_LINA_HOUSE_EEVEE                                       0x493 // Unused Flag
-#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
+#define FLAG_LINA_HOUSE_EEVEE                                       0x493 // Gift Eevee
+#define FLAG_LUNA_HOUSE_MOTHIM                                      0x494 // Gift Mothim
+#define FLAG_CALL_FROM_CEO                                          0x495 // After clearing E4 first time
+#define FLAG_PETALBURG_RATICATE                                     0x496 // Rat Cave Petalburg
+#define FLAG_PETALBURG_RATICATE_ALOLA                               0x497 // Rat Cave Petalburg
+#define FLAG_ITEM_RAT_CAVE_2F_FLAME_ORB                             0x498 // Petalburg Rat Cave 
+#define FLAG_ITEM_RAT_CAVE_2F_RARE_CANDY                            0x499 // Petalburg Rat Cave
+#define FLAG_ITEM_RAT_CAVE_1F_HARD_STONE                            0x49A // hidden in rock
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag

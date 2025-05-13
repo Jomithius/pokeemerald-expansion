@@ -113,39 +113,39 @@ Lina_House_EventScript_Bookshelf::
 	showmonpic SPECIES_LUCARIO, 10, 4
 # 77 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox Lina_House_EventScript_Bookshelf_Text_1
+# 78 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	waitmessage
 # 79 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	waitmessage
-# 80 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	hidemonpic
-# 81 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 80 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox Lina_House_EventScript_Bookshelf_Text_2
-# 83 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 82 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
-# 84 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 83 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	releaseall
 	end
 
 
 Lina_House_EventScript_TV::
-# 89 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 88 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	lockall
-# 90 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 89 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox Lina_House_EventScript_TV_Text_0
+# 91 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	waitmessage
 # 92 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	waitmessage
-# 93 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	showmonpic SPECIES_INCINEROAR, 10, 4
-# 94 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 93 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox Lina_House_EventScript_TV_Text_1
+# 94 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	waitmessage
 # 95 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	waitmessage
-# 96 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	hidemonpic
-# 97 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 96 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox Lina_House_EventScript_TV_Text_2
-# 99 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 98 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
-# 100 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 99 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	releaseall
 	end
 
@@ -172,22 +172,22 @@ Lina_House_EventScript_Bookshelf_Text_0:
 
 Lina_House_EventScript_Bookshelf_Text_1:
 # 77 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	.string "Muscles & Monsters: A Tale \n of Forbidden Love.$"
+	.string "Muscles & Monsters$"
 
 Lina_House_EventScript_Bookshelf_Text_2:
-# 81 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 80 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "... \p You put the book back.$"
 
 Lina_House_EventScript_TV_Text_0:
-# 90 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 89 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "There's something playing on the TV. \p It looks like a romance game.$"
 
 Lina_House_EventScript_TV_Text_1:
-# 94 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 93 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "...$"
 
 Lina_House_EventScript_TV_Text_2:
-# 97 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 96 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "You decide it's better to not look \n anymore.$"
 
 LinaHouse_NotChosen::

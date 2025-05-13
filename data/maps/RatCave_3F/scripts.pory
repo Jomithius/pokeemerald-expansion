@@ -1,0 +1,86 @@
+mapscripts RatCave_3F_MapScripts {}
+
+script Petalburg_RatCave_Raticate{
+    lockall
+    setflag(FLAG_PETALBURG_RATICATE)
+    playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_RATICATE, 16, ITEM_JOLLY_MINT)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        call(RaticateWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(RaticateWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(RaticateFailed)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(RaticateFailed)
+	}
+    waitmessage
+	releaseall
+}
+ 
+script RaticateWon_Caught {
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+	return
+}
+ 
+script RaticateFailed {
+	playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+    msgbox("The Raticate disappeared...")
+	return
+}
+
+script Petalburg_RatCave_RaticateAlola{
+    lockall
+    setflag(FLAG_PETALBURG_RATICATE_ALOLA)
+    playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_RATICATE_ALOLA_TOTEM, 16, ITEM_ADAMANT_MINT)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        call(RaticateAlolaWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(RaticateAlolaWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(RaticateAlolaFailed)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(RaticateAlolaFailed)
+	}
+    waitmessage
+	releaseall
+}
+ 
+script RaticateAlolaWon_Caught {
+   fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+	return
+}
+ 
+script RaticateAlolaFailed {
+	playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(2)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+    msgbox("The Raticate disappeared...")
+    waitmessage
+	return
+}

@@ -1,0 +1,10 @@
+mapscripts RatCave_B2F_MapScripts {}
+
+script Petalburg_RatCave_Rock {
+    lock
+    msgbox("Doesn't look like the cave in \n
+    can be cleared anytime soon.")
+    waitmessage
+    release
+    
+}

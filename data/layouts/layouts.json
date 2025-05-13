@@ -4420,6 +4420,86 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SlateportCity_Lina_House/border.bin",
       "blockdata_filepath": "data/layouts/SlateportCity_Lina_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_LUNA_HOUSE",
+      "name": "PetalburgCity_Luna_House_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PetalburgCity_Luna_House/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_Luna_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_LUNA_BASEMENT",
+      "name": "PetalburgCity_Luna_Basement_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PetalburgCity_Luna_Basement/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_Luna_Basement/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_LUNA_UPSTAIRS",
+      "name": "PetalburgCity_Luna_Upstairs_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PetalburgCity_Luna_Upstairs/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_Luna_Upstairs/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_1F",
+      "name": "RatCave_1F_Layout",
+      "width": 19,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_2F",
+      "name": "RatCave_2F_Layout",
+      "width": 42,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_2F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_3F",
+      "name": "RatCave_3F_Layout",
+      "width": 20,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_3F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_B1F",
+      "name": "RatCave_B1F_Layout",
+      "width": 30,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_B2F",
+      "name": "RatCave_B2F_Layout",
+      "width": 11,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_B2F/map.bin"
     }
   ]
 }
