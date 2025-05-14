@@ -16873,3 +16873,42 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_RATDUARDO_1 ===
+Name: RATDUARDO
+Class: Rat Maniac
+Pic: Ratduardo
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Green
+
+Rattata-Alola  
+Ability: Gluttony  
+Level: 14  
+- Assurance  
+- Super Fang  
+
+Rattata  
+Ability: Run Away  
+Level: 15  
+- Quick Attack  
+- Bite
+
+Raticate @ Oran Berry  
+Ability: Hustle  
+EVs: 80 Atk / 152 Spe  
+Level: 16  
+- Pursuit  
+- Quick Attack  
+- Headbutt
+
+Raticate-Alola @ Oran Berry  
+Ability: Thick Fat 
+Level: 18  
+EVs: 20 Atk / 152 Spe  
+Jolly Nature  
+- Bite  
+- Quick Attack  
+- Swagger  

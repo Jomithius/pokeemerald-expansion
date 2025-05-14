@@ -1230,8 +1230,8 @@
 #define FLAG_ITEM_RAT_CAVE_2F_FLAME_ORB                             0x498 // Petalburg Rat Cave 
 #define FLAG_ITEM_RAT_CAVE_2F_RARE_CANDY                            0x499 // Petalburg Rat Cave
 #define FLAG_ITEM_RAT_CAVE_1F_HARD_STONE                            0x49A // hidden in rock
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
+#define FLAG_RATDUARDO_RAT_CAVE_1                                   0x49B // Ratduardo First Battle Petalburg
+#define FLAG_ITEM_RAT_CAVE_B2F_ESCAPE_ROPE                          0x49C // Escape Rope
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag

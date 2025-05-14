@@ -172,4 +172,4 @@ RaticateAlolaFailed::
 
 RaticateFailed_Text_0:
 # 41 "data/maps/RatCave_3F/scripts.pory"
-	.string "The Raticate disappeared...$"
+	.string "The RATICATE disappeared...$"

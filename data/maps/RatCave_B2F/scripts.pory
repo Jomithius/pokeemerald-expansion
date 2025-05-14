@@ -8,3 +8,113 @@ script Petalburg_RatCave_Rock {
     release
     
 }
+
+script RatCave_B2F_EscapeRope {
+    lockall
+    setflag(FLAG_ITEM_RAT_CAVE_B2F_ESCAPE_ROPE)
+    finditem(ITEM_ESCAPE_ROPE, 1)
+    waitmessage
+    releaseall
+}
+
+script Ratduardo1_BattleTrigger{
+    lockall
+    removeobject(5)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerRatCave1)
+    waitmovement(0)
+    delay(60)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerRatCave2)
+    waitmovement(0)
+    delay(60)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerRatCave3)
+    waitmovement(0)
+    delay(60)
+    applymovement(7, RattataRun)
+    delay(15)
+    playmoncry(SPECIES_RATTATA, CRY_MODE_ENCOUNTER)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerRatCave4)
+    waitmovement(0)
+    delay(120)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerRatCave5)
+    waitmovement(0)
+    delay(60)
+    playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerRatCave4)
+    waitmovement(0)
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    removeobject(7)
+    fadescreenspeed(FADE_FROM_BLACK, 2)
+    delay(10)
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    addobject(5)
+    fadescreenspeed(FADE_FROM_BLACK, 2)
+    call(RatCave_B2F_EventScript_RatduardoBattle)
+    call(Ratduardo1_BattleOver)
+    call(RatCaveShake)
+    setvar(VAR_RAT_CAVE_STATE, 1)
+    releaseall
+
+}
+
+movement PlayerRatCave1{
+    walk_up * 4
+    face_left
+}  
+
+movement PlayerRatCave2{
+    face_right
+}
+
+movement PlayerRatCave3{
+   face_up
+}
+
+movement PlayerRatCave4{
+   emote_exclamation_mark
+   face_down
+}
+
+movement PlayerRatCave5{
+   walk_up * 3
+}
+
+movement RattataRun{
+   walk_fast_left * 6
+}
+
+script RatCave_B2F_EventScript_RatduardoBattle{
+    trainerbattle_no_intro(TRAINER_RATDUARDO_1, Ratduardo_Outro)
+    lockall
+    return
+}
+
+text Ratduardo_Outro{
+    "..."
+}
+
+script Ratduardo1_BattleOver{
+    lockall
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    removeobject(5)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    msgbox("RATDUARDO's voice echoes:\p
+    Don't... try.. to follow...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setflag(FLAG_RATDUARDO_RAT_CAVE_1)
+    return
+}
+
+script RatCaveShake{
+    delay (30)
+    setvar(VAR_0x8004, 2) // vertical pan
+    setvar(VAR_0x8005, 6) // horizontal pan
+    setvar(VAR_0x8006, 8) // num shakes
+    setvar(VAR_0x8007, 4) // shake delay
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    return
+}

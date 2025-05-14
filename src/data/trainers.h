@@ -42178,3 +42178,109 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 16877
+    [DIFFICULTY_NORMAL][TRAINER_RATDUARDO_1] =
+    {
+#line 16878
+        .trainerName = _("RATDUARDO"),
+#line 16879
+        .trainerClass = TRAINER_CLASS_RAT_MANIAC,
+#line 16880
+        .trainerPic = TRAINER_PIC_RATDUARDO,
+        .encounterMusic_gender =
+#line 16882
+            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+#line 16883
+        .doubleBattle = FALSE,
+#line 16884
+        .aiFlags = AI_FLAG_SMART_TRAINER,
+#line 16885
+        .mugshotColor = MUGSHOT_COLOR_GREEN,
+        .partySize = 4,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 16887
+            .species = SPECIES_RATTATA_ALOLA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16890
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 16888
+            .ability = ABILITY_GLUTTONY,
+#line 16889
+            .lvl = 14,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 16890
+                MOVE_ASSURANCE,
+                MOVE_SUPER_FANG,
+            },
+            },
+            {
+#line 16893
+            .species = SPECIES_RATTATA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16896
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 16894
+            .ability = ABILITY_RUN_AWAY,
+#line 16895
+            .lvl = 15,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 16896
+                MOVE_QUICK_ATTACK,
+                MOVE_BITE,
+            },
+            },
+            {
+#line 16899
+            .species = SPECIES_RATICATE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16899
+            .heldItem = ITEM_ORAN_BERRY,
+#line 16901
+            .ev = TRAINER_PARTY_EVS(0, 80, 0, 152, 0, 0),
+#line 16903
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 16900
+            .ability = ABILITY_HUSTLE,
+#line 16902
+            .lvl = 16,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 16903
+                MOVE_PURSUIT,
+                MOVE_QUICK_ATTACK,
+                MOVE_HEADBUTT,
+            },
+            },
+            {
+#line 16907
+            .species = SPECIES_RATICATE_ALOLA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16907
+            .heldItem = ITEM_ORAN_BERRY,
+#line 16910
+            .ev = TRAINER_PARTY_EVS(0, 20, 0, 152, 0, 0),
+#line 16912
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 16908
+            .ability = ABILITY_THICK_FAT,
+#line 16909
+            .lvl = 18,
+#line 16911
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 16912
+                MOVE_BITE,
+                MOVE_QUICK_ATTACK,
+                MOVE_SWAGGER,
+            },
+            },
+        },
+    },
