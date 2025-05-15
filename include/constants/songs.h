@@ -545,6 +545,14 @@
 #define PH_NURSE_BLEND              607
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
+#define MUS_WATERFALL_COLOSSEUM     610
+#define MUS_VS_CIPHER_ADMIN         611
+#define MUS_VS_CHAMPION_NEMONA      612
+#define MUS_DUSK_FOREST             613
+#define MUS_AEGIS_CAVE              614
+#define MUS_BW_VS_LEGENDARY         615
+#define MUS_MISA_THEME              616
+
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

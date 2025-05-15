@@ -611,6 +611,13 @@ gSongTable::
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
+	song mus_waterfall_colosseum, 0, 0
+	song mus_vs_cipher_admin, 0, 0
+	song mus_vs_champion_nemona, 0, 0
+	song mus_dusk_forest, 0, 0
+	song mus_aegis_cave, 0, 0
+	song mus_bw_vs_legendary, 0, 0
+	song mus_misa_theme, 0, 0
 
 	.align 2
 dummy_song_header:
