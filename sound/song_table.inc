@@ -618,6 +618,13 @@ gSongTable::
 	song mus_aegis_cave, 0, 0
 	song mus_bw_vs_legendary, 0, 0
 	song mus_misa_theme, 0, 0
+	song mus_pyrite_theme, 0, 0
+	song mus_vs_ratduardo, 0, 0
+	song mus_bennis, 0, 0
+	song mus_bennis_dojo, 0, 0
+	song mus_final_battle, 0, 0
+	song mus_battle_three, 0, 0
+	song mus_pyrite_battle, 0, 0
 
 	.align 2
 dummy_song_header:

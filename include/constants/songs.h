@@ -552,6 +552,15 @@
 #define MUS_AEGIS_CAVE              614
 #define MUS_BW_VS_LEGENDARY         615
 #define MUS_MISA_THEME              616
+#define MUS_PYRITE_THEME            617
+#define MUS_VS_RATDUARDO            618
+#define MUS_BENNIS                  619
+#define MUS_BENNIS_DOJO             620
+#define MUS_FINAL_BATTLE            621
+#define MUS_BATTLE_THREE            622
+#define MUS_PYRITE_BATTLE           623
+
+
 
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
