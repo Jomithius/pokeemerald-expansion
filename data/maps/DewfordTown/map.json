@@ -110,7 +110,7 @@
       "x": 8,
       "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_DEWFORD_TOWN_GYM",
+      "dest_map": "MAP_BENNIS_DOJO",
       "dest_warp_id": "0"
     },
     {
@@ -128,7 +128,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
@@ -137,14 +139,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "DewfordTown_EventScript_TownSign"
-    },
-    {
-      "type": "sign",
-      "x": 11,
-      "y": 16,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "DewfordTown_EventScript_GymSign"
     },
     {
       "type": "sign",
@@ -169,6 +163,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "DewfordTown_EventScript_HallSign"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DewfordTown_EventScript_GymSign"
     }
   ]
 }

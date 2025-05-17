@@ -570,6 +570,13 @@
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY_LINA_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_DEWFORD_TOWN_GYM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

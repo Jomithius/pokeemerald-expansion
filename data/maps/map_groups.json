@@ -94,7 +94,9 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "PetalburgCity_Luna_House",
-    "PetalburgCity_Luna_Basement"
+    "PetalburgCity_Luna_Basement",
+    "BaseCamp",
+    "TheUnder"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -116,7 +118,8 @@
     "DewfordTown_PokemonCenter_2F",
     "DewfordTown_Gym",
     "DewfordTown_Hall",
-    "DewfordTown_House2"
+    "DewfordTown_House2",
+    "BennisDojo"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",

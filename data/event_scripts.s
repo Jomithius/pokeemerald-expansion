@@ -1172,3 +1172,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RatCave_B1F/scripts.inc"
 
 	.include "data/maps/RatCave_B2F/scripts.inc"
+
+	.include "data/maps/BaseCamp/scripts.inc"
+
+	.include "data/maps/TheUnder/scripts.inc"
+
+	.include "data/maps/BennisDojo/scripts.inc"

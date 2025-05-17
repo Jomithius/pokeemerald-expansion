@@ -4500,6 +4500,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/RatCave_B2F/border.bin",
       "blockdata_filepath": "data/layouts/RatCave_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BASE_CAMP",
+      "name": "BaseCamp_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/BaseCamp/border.bin",
+      "blockdata_filepath": "data/layouts/BaseCamp/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_UNDER",
+      "name": "TheUnder_Layout",
+      "width": 75,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/TheUnder/border.bin",
+      "blockdata_filepath": "data/layouts/TheUnder/map.bin"
+    },
+    {
+      "id": "LAYOUT_BENNIS_DOJO",
+      "name": "BennisDojo_Layout",
+      "width": 14,
+      "height": 21,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DojoInterior",
+      "border_filepath": "data/layouts/BennisDojo/border.bin",
+      "blockdata_filepath": "data/layouts/BennisDojo/map.bin"
     }
   ]
 }
