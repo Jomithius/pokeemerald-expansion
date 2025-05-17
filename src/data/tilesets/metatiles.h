@@ -207,3 +207,30 @@ const u16 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatile_attributes.bin");
+
+const u16 gMetatiles_Snow[] = INCBIN_U16("data/tilesets/primary/snow/metatiles.bin");
+const u16 gMetatileAttributes_Snow[] = INCBIN_U16("data/tilesets/primary/snow/metatile_attributes.bin");
+
+const u16 gMetatiles_Void[] = INCBIN_U16("data/tilesets/secondary/void/metatiles.bin");
+const u16 gMetatileAttributes_Void[] = INCBIN_U16("data/tilesets/secondary/void/metatile_attributes.bin");
+
+const u16 gMetatiles_Sewer[] = INCBIN_U16("data/tilesets/secondary/sewer/metatiles.bin");
+const u16 gMetatileAttributes_Sewer[] = INCBIN_U16("data/tilesets/secondary/sewer/metatile_attributes.bin");
+
+const u16 gMetatiles_AutumnRuins[] = INCBIN_U16("data/tilesets/secondary/autumn_ruins/metatiles.bin");
+const u16 gMetatileAttributes_AutumnRuins[] = INCBIN_U16("data/tilesets/secondary/autumn_ruins/metatile_attributes.bin");
+
+const u16 gMetatiles_DojoExterior[] = INCBIN_U16("data/tilesets/secondary/dojo_exterior/metatiles.bin");
+const u16 gMetatileAttributes_DojoExterior[] = INCBIN_U16("data/tilesets/secondary/dojo_exterior/metatile_attributes.bin");
+
+const u16 gMetatiles_ShadyForest[] = INCBIN_U16("data/tilesets/secondary/shady_forest/metatiles.bin");
+const u16 gMetatileAttributes_ShadyForest[] = INCBIN_U16("data/tilesets/secondary/shady_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_LugiaAltar[] = INCBIN_U16("data/tilesets/secondary/lugia_altar/metatiles.bin");
+const u16 gMetatileAttributes_LugiaAltar[] = INCBIN_U16("data/tilesets/secondary/lugia_altar/metatile_attributes.bin");
+
+const u16 gMetatiles_SmallTownWithLab[] = INCBIN_U16("data/tilesets/secondary/small_town_with_lab/metatiles.bin");
+const u16 gMetatileAttributes_SmallTownWithLab[] = INCBIN_U16("data/tilesets/secondary/small_town_with_lab/metatile_attributes.bin");
+
+const u16 gMetatiles_DojoInterior[] = INCBIN_U16("data/tilesets/secondary/dojo_interior/metatiles.bin");
+const u16 gMetatileAttributes_DojoInterior[] = INCBIN_U16("data/tilesets/secondary/dojo_interior/metatile_attributes.bin");
