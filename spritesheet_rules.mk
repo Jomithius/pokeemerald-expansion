@@ -315,6 +315,30 @@ $(OBJEVENTGFXDIR)/people/quinty_plump.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/ratduardo.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/people/misa.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/ceo.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/emo.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
+$(OBJEVENTGFXDIR)/people/luna_f.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/biker.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4	
+
+$(OBJEVENTGFXDIR)/people/speedwagon.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4	
+
+$(OBJEVENTGFXDIR)/people/avatar.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4	
+
+$(OBJEVENTGFXDIR)/people/bennis.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
 $(OBJEVENTGFXDIR)/people/red.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

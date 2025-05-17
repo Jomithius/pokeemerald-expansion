@@ -4,6 +4,14 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanSurf
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_QuintyPlump;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ratduardo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Misa;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ceo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Emo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Speedwagon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Avatar;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bennis;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NinjaBoy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Twin;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Boy1;
@@ -256,6 +264,14 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE] =       &gObjectEventGraphicsInfo_BrendanFieldMove,
     [OBJ_EVENT_GFX_QUINTY_PLUMP] =             &gObjectEventGraphicsInfo_QuintyPlump,
     [OBJ_EVENT_GFX_RATDUARDO] =                &gObjectEventGraphicsInfo_Ratduardo,
+    [OBJ_EVENT_GFX_MISA] =                     &gObjectEventGraphicsInfo_Misa,
+    [OBJ_EVENT_GFX_CEO] =                      &gObjectEventGraphicsInfo_Ceo,
+    [OBJ_EVENT_GFX_BENNIS] =                   &gObjectEventGraphicsInfo_Bennis,
+    [OBJ_EVENT_GFX_EMO] =                      &gObjectEventGraphicsInfo_Emo,
+    [OBJ_EVENT_GFX_BIKER] =                    &gObjectEventGraphicsInfo_Biker,
+    [OBJ_EVENT_GFX_SPEEDWAGON] =               &gObjectEventGraphicsInfo_Speedwagon,
+    [OBJ_EVENT_GFX_AVATAR] =                   &gObjectEventGraphicsInfo_Avatar,
+    [OBJ_EVENT_GFX_LUNA_F] =                   &gObjectEventGraphicsInfo_LunaF,
     [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_TWIN] =                     &gObjectEventGraphicsInfo_Twin,
     [OBJ_EVENT_GFX_BOY_1] =                    &gObjectEventGraphicsInfo_Boy1,
