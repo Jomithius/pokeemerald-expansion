@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_DEWFORD_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_ROUTE",
+  "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
@@ -25,11 +25,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_BENNIS_DOJO_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 12,
+      "x": 5,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_BENNIS_DOJO_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BENNIS",
@@ -51,20 +51,33 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_BENNIS_DOJO_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 5,
-      "y": 4,
+      "x": 1,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "BennisDojo_ExpertBelt",
+      "flag": "FLAG_ITEM_BENNIS_DOJO_EXPERT_BELT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 12,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BennisDojo_FocusSash",
+      "flag": "FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH"
     }
   ],
   "warp_events": [
@@ -89,18 +102,36 @@
       "x": 6,
       "y": 16,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_BENNIS_DOJO_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "DojoBattleTrigger"
     },
     {
       "type": "trigger",
       "x": 7,
       "y": 16,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_BENNIS_DOJO_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "DojoBattleTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_BENNIS_DOJO_STATE",
+      "var_value": "1",
+      "script": "Dojo_EarlierAnswerNO"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_BENNIS_DOJO_STATE",
+      "var_value": "1",
+      "script": "Dojo_EarlierAnswerNO"
     }
   ],
   "bg_events": [

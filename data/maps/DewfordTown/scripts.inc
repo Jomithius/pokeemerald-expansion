@@ -649,9 +649,9 @@ DewfordTown_Text_TownSign:
 	.string "“A tiny island in the blue sea.”$"
 
 DewfordTown_Text_GymSign:
-	.string "Text is scribbled over the gym sign...:\n"
-	.string "Dojo of MASTER BENNIS.\l"
-	.string "“NOT accepting disciples!”$"
+	.string "Text is scribbled over the gym sign:\n"
+	.string "“Dojo of MASTER BENNIS.”\l"
+	.string "“NO CHALLENGERS!”$"
 
 DewfordTown_Text_HallSign:
 	.string "DEWFORD HALL\n"

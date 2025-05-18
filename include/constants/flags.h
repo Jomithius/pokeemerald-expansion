@@ -1232,9 +1232,9 @@
 #define FLAG_ITEM_RAT_CAVE_1F_HARD_STONE                            0x49A // hidden in rock
 #define FLAG_RATDUARDO_RAT_CAVE_1                                   0x49B // Ratduardo First Battle Petalburg
 #define FLAG_ITEM_RAT_CAVE_B2F_ESCAPE_ROPE                          0x49C // Escape Rope
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
+#define FLAG_ITEM_BENNIS_DOJO_EXPERT_BELT                           0x49D // Expert Belt
+#define FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH                            0x49E // Focus Sash
+#define FLAG_BENNIS_DOJO_1                                          0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag

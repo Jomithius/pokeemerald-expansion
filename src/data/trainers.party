@@ -16912,3 +16912,117 @@ Jolly Nature
 - Bite  
 - Quick Attack  
 - Swagger  
+
+=== TRAINER_ASAK ===
+Name: ASAK
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: Yes
+AI: Basic Trainer
+
+Sawk @ Focus Sash  
+Ability: Inner Focus  
+Level: 18   
+EVs: 232 Atk / 124 SpD  
+Sassy Nature  
+- Focus Energy  
+- Focus Punch  
+- Coaching  
+
+Riolu @ Focus Band  
+Ability: Prankster  
+Level: 18   
+EVs: 248 HP / 8 Atk / 136 Def / 112 SpD  
+Impish Nature  
+- Follow Me  
+- Bullet Punch  
+- Helping Hand  
+
+Throh @ Focus Sash  
+Ability: Inner Focus  
+Level: 19  
+EVs: 236 Atk  
+Relaxed Nature  
+- Focus Energy  
+- Focus Punch  
+- Coaching  
+
+=== TRAINER_PANINI ===
+Name: PANINI
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Basic Trainer
+
+Tyrogue  
+Ability: Vital Spirit  
+Level: 18  
+EVs: 132 HP / 152 Atk / 152 Spe  
+- Fake Out  
+- Bulk Up  
+- Mach Punch  
+- Thief  
+
+Sneasel-Hisui  
+Ability: Poison Touch  
+Level: 19  
+EVs: 68 HP / 64 Atk / 92 Def / 76 SpD  
+- Fake Out  
+- Quick Attack  
+- Rock Smash  
+- Poison Tail  
+
+
+=== TRAINER_BENNIS_1 ===
+Name: BENNIS
+Class: Master
+Pic: Bennis
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Blue
+
+Mankey  
+Ability: Anger Point  
+Level: 17  
+EVs: 224 HP / 104 Atk / 164 Spe  
+Jolly Nature  
+- Meditate  
+- Karate Chop  
+- Dual Chop  
+- Payback  
+
+Croagunk  
+Ability: Poison Touch  
+Level: 17  
+EVs: 168 Atk / 168 Spe  
+Jolly Nature  
+- Meditate  
+- Bullet Punch  
+- Wake-Up Slap  
+- Dual Chop  
+
+Meditite @ Oran Berry  
+Ability: Pure Power  
+Level: 18  
+EVs: 84 HP / 180 Atk / 244 Spe  
+Adamant Nature  
+- Force Palm  
+- Bullet Punch  
+- Fake Out  
+- Meditate  
+
+Monferno @ Expert Belt  
+Ability: Iron Fist  
+Level: 19  
+EVs: 20 HP / 244 Atk / 240 Spe  
+Adamant Nature  
+- Mach Punch  
+- Fire Punch  
+
+

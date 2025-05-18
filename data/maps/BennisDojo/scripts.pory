@@ -1,1 +1,297 @@
 mapscripts BennisDojo_MapScripts {}
+
+script BennisDojo_ExpertBelt {
+    lock
+    setflag(FLAG_ITEM_BENNIS_DOJO_EXPERT_BELT)
+    finditem(ITEM_EXPERT_BELT, 1)
+    waitmessage
+    releaseall
+}
+
+script BennisDojo_FocusSash {
+    lock
+    setflag(FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH)
+    finditem(ITEM_FOCUS_SASH, 1)
+    waitmessage
+    releaseall
+}
+
+script DojoBattleTrigger{
+    lock
+    playse(SE_PIN)
+    applymovement(1, exclaim)
+    waitmovement(1)
+    delay(10)
+    msgbox("Hey!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, AsakMove1)
+    waitmovement(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceright)
+    waitmovement(0)
+    msgbox(Asak1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(BennisDojo_EventScript_AsakBattle)
+    msgbox("ASAK: Impossible...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, faceup)
+    msgbox("PANINI!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, faceup)
+    waitmovement(0)
+    applymovement(2, PaniniMove1)
+    waitmovement(2)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceleft)
+    waitmovement(0)
+    applymovement(1, faceleft)
+    waitmovement(1)
+    msgbox("PANINI: Panini?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(Asak2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(BennisDojo_EventScript_PaniniBattle)
+    msgbox("PANINI: P-Panini...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(AsakPaniniLoss, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("What's all this noise?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(1, exclaim)
+    waitmovement(1)
+    applymovement(1, faceup)
+    waitmovement(1)
+    applymovement (OBJ_EVENT_ID_PLAYER, faceup)
+    waitmovement(0)
+    applymovement(2, faceup)
+    waitmovement(2)
+    applymovement(3, BennisMove1)
+    waitmovement(3)
+    applymovement(1, AsakMove2)
+    waitmovement(1)
+    msgbox(Asak3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, facedown)
+    waitmovement(1)
+    msgbox(Asak3_5, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("BENNIS: Hm. I'll take you on.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, AsakMove3)
+    waitmovement(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceright)
+    waitmovement(0)
+    msgbox(Asak4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, faceleft)
+    waitmovement(0)
+    applymovement(2, faceright)
+    waitmovement(2)
+    msgbox("PANINI: Pani!", MSGBOX_AUTOCLOSE)
+    setvar(VAR_BENNIS_DOJO_STATE, 1)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceup)
+    waitmovement(0)
+    call(BennisBattleStart)
+
+}
+
+script Dojo_EarlierAnswerNO{
+    lock
+    playse(SE_PIN)
+    applymovement(1, exclaim)
+    waitmovement(1)
+    delay(10)
+    applymovement(1, AsakMove1)
+    waitmovement(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceright)
+    waitmovement(0)
+    msgbox("ASAK: Back again?!", MSGBOX_AUTOCLOSE)
+    applymovement(2, PaniniMove1)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceleft)
+    waitmovement(0)
+    msgbox("PANINI: Panini?", MSGBOX_AUTOCLOSE)
+    delay(20)
+    applymovement(3, BennisMove1)
+    waitmovement(3)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceup)
+    waitmovement(0)
+    call(BennisBattleStart)
+}
+
+script BennisBattleStart{
+    lock
+    msgbox("BENNIS: Are you ready now?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox(Bennis_Intro, MSGBOX_AUTOCLOSE)
+        call(BennisDojo_EventScript_BennisBattle1)
+        waitmessage
+        call(BennisEnd)
+        release
+        end
+    }
+    if(var(VAR_RESULT) == NO){
+        msgbox(BennisIfNo, MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(3, BennisLeave)
+        waitmovement(3)
+        applymovement(2, PaniniLeave)
+        waitmovement(2)
+        applymovement(1, AsakLeave)
+        waitmovement(1)
+        applymovement(OBJ_EVENT_ID_PLAYER, PlayerLeaves)
+        waitmovement(0)
+        release
+        end
+    }
+
+}
+
+script BennisEnd{
+    lock
+    msgbox(Bennis2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("PANINI: P-Panini?!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, faceright)
+    waitmovement(0)
+    msgbox(Asak5, MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    playse(SE_FLEE)
+    setflag(FLAG_BENNIS_DOJO_1)
+    setvar(VAR_BENNIS_DOJO_STATE, 2)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    return
+}
+
+script BennisDojo_EventScript_AsakBattle{
+    trainerbattle_no_intro(TRAINER_ASAK, Asak_Outro)
+    lock
+    return
+}
+
+script BennisDojo_EventScript_PaniniBattle{
+    trainerbattle_no_intro(TRAINER_PANINI, Panini_Outro)
+    lock
+    return
+}
+
+script BennisDojo_EventScript_BennisBattle1{
+    trainerbattle_no_intro(TRAINER_BENNIS_1, Bennis_Outro)
+    lock
+    return
+}
+
+movement exclaim {
+    emote_exclamation_mark
+}
+
+movement AsakMove1{
+    walk_fast_left * 4
+    walk_fast_down
+    face_player
+}
+
+text Asak1{"Who are you? Another goofball trainer?\n
+Didn't you see the sign?\p
+How rude of you to barge into our dojo\n
+when MASTER BENNIS is meditating.\p
+I guess I'll have to teach you a lesson!"
+}
+
+text Asak_Outro{"I lost my focus..."}
+
+text Panini_Outro{"Panini?!"}
+
+movement PaniniMove1{
+    walk_down * 7
+    face_player
+}
+
+text Asak2{"ASAK: Show this hooligan what happens\n
+when you challenge our dojo!"}
+
+movement BennisMove1{
+    walk_down * 5
+}
+
+text AsakPaniniLoss {"ASAK: WHAT?! Even though I'VE never\n
+even beaten Panini..."    
+}
+
+text Asak3{"ASAK: MASTER BENNIS! I'm sorry for\n
+disturbing you.\p
+ASAK: This trainer was intruding on\n
+our dojo."}
+
+text Asak3_5{"ASAK: We tried to get rid of them, but\n
+I'm ashamed to say we were no match."}
+
+text Asak4{"ASAK: Ha! It's over for you now.\n
+MASTER BENNIS has NEVER lost!"}
+
+text BennisIfNo{"Hm.\n
+Don't keep me waiting too long."}
+
+text Bennis_Intro{
+    "Oho. I'm gettin' good vibrations from\n
+    this place."
+}
+
+text Bennis_Outro{"Everyone's so mean to me..."}
+
+text Bennis2{"BENNIS: Hm.. Beefy."}
+
+text Asak5{"ASAK: This can't be...\n
+Even MASTER BENNIS...\p
+ASAK: W-We won't forget this\n
+humiliation!"}
+
+movement faceup {
+    face_up
+}
+
+movement faceleft {
+    face_left
+}
+
+movement faceright{
+    face_right
+}
+movement facedown{
+    face_down
+}
+
+movement PlayerLeaves {
+    walk_down * 3
+}
+
+movement AsakMove2{
+    walk_fast_up * 2
+    walk_fast_left
+}
+
+movement AsakMove3{
+    walk_fast_right
+    walk_fast_down * 2
+    face_player
+}
+
+movement AsakLeave{
+    walk_up
+    walk_right * 4
+    face_down
+}
+
+movement PaniniLeave{
+    walk_up * 7
+}
+
+movement BennisLeave{
+    walk_up * 5
+}
