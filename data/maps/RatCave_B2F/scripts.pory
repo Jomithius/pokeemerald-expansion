@@ -51,7 +51,7 @@ script Ratduardo1_BattleTrigger{
     call(RatCave_B2F_EventScript_RatduardoBattle)
     call(Ratduardo1_BattleOver)
     call(RatCaveShake)
-    setvar(VAR_RAT_CAVE_STATE, 1)
+    setvar(VAR_RAT_CAVE_STATE, 2)
     releaseall
 
 }

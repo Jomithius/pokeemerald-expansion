@@ -1,0 +1,411 @@
+raw`Route115_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Route115_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, Route115_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route115_OnFrame
+	.byte 0
+
+Route115_OnLoad:
+	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_115_WEST, AbnormalWeather_EventScript_PlaceTilesRoute115West
+	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_115_EAST, AbnormalWeather_EventScript_PlaceTilesRoute115East
+	end
+
+Route115_OnTransition:
+	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
+	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_115_WEST, AbnormalWeather_StartGroudonWeather
+	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_115_EAST, AbnormalWeather_StartGroudonWeather
+	end
+
+Route115_OnFrame:
+	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
+	.2byte 0
+
+Route115_EventScript_Woman::
+	msgbox Route115_Text_NeverKnowWhenCavePokemonWillAppear, MSGBOX_NPC
+	end
+
+Route115_EventScript_RouteSignRustboro::
+	msgbox Route115_Text_RouteSignRustboro, MSGBOX_SIGN
+	end
+
+Route115_EventScript_MeteorFallsSign::
+	msgbox Route115_Text_MeteorFallsSign, MSGBOX_SIGN
+	end
+
+Route115_EventScript_Timothy::
+	trainerbattle_single TRAINER_TIMOTHY_1, Route115_Text_TimothyIntro, Route115_Text_TimothyDefeat, Route115_EventScript_RegisterTimothy
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchTimothy
+	msgbox Route115_Text_TimothyPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route115_EventScript_RegisterTimothy::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route115_Text_TimothyRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_TIMOTHY_1
+	release
+	end
+
+Route115_EventScript_RematchTimothy::
+	trainerbattle_rematch TRAINER_TIMOTHY_1, Route115_Text_TimothyRematchIntro, Route115_Text_TimothyRematchDefeat
+	msgbox Route115_Text_TimothyPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Koichi::
+	trainerbattle_single TRAINER_KOICHI, Route115_Text_KoichiIntro, Route115_Text_KoichiDefeat
+	msgbox Route115_Text_KoichiPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Nob::
+	trainerbattle_single TRAINER_NOB_1, Route115_Text_NobIntro, Route115_Text_NobDefeat, Route115_EventScript_RegisterNob
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchNob
+	msgbox Route115_Text_NobPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route115_EventScript_RegisterNob::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route115_Text_NobRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_NOB_1
+	release
+	end
+
+Route115_EventScript_RematchNob::
+	trainerbattle_rematch TRAINER_NOB_1, Route115_Text_NobRematchIntro, Route115_Text_NobRematchDefeat
+	msgbox Route115_Text_NobPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Cyndy::
+	trainerbattle_single TRAINER_CYNDY_1, Route115_Text_CyndyIntro, Route115_Text_CyndyDefeat, Route115_EventScript_RegisterCyndy
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchCyndy
+	msgbox Route115_Text_CyndyPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route115_EventScript_RegisterCyndy::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route115_Text_CyndyRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_CYNDY_1
+	release
+	end
+
+Route115_EventScript_RematchCyndy::
+	trainerbattle_rematch TRAINER_CYNDY_1, Route115_Text_CyndyRematchIntro, Route115_Text_CyndyRematchDefeat
+	msgbox Route115_Text_CyndyPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Hector::
+	trainerbattle_single TRAINER_HECTOR, Route115_Text_HectorIntro, Route115_Text_HectorDefeat
+	msgbox Route115_Text_HectorPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Kyra::
+	trainerbattle_single TRAINER_KYRA, Route115_Text_KyraIntro, Route115_Text_KyraDefeat
+	msgbox Route115_Text_KyraPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Jaiden::
+	trainerbattle_single TRAINER_JAIDEN, Route115_Text_JaidenIntro, Route115_Text_JaidenDefeat
+	msgbox Route115_Text_JaidenPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Alix::
+	trainerbattle_single TRAINER_ALIX, Route115_Text_AlixIntro, Route115_Text_AlixDefeat
+	msgbox Route115_Text_AlixPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Helene::
+	trainerbattle_single TRAINER_HELENE, Route115_Text_HeleneIntro, Route115_Text_HeleneDefeat
+	msgbox Route115_Text_HelenePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_EventScript_Marlene::
+	trainerbattle_single TRAINER_MARLENE, Route115_Text_MarleneIntro, Route115_Text_MarleneDefeat
+	msgbox Route115_Text_MarlenePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_Text_NeverKnowWhenCavePokemonWillAppear:
+	.string "Exploring a cave isn't like walking\n"
+	.string "on a road.\p"
+	.string "You never know when wild POKéMON will\n"
+	.string "appear. It's full of suspense.$"
+
+Route115_Text_RouteSignRustboro:
+	.string "ROUTE 115\n"
+	.string "{DOWN_ARROW} RUSTBORO CITY$"
+
+Route115_Text_MeteorFallsSign:
+	.string "METEOR FALLS\n"
+	.string "FALLARBOR TOWN THROUGH HERE$"
+
+`
+
+script Route115_EventScript_TriggerRight_RivalEmo{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115MoveLeft)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceUp)
+    waitmovement(0)
+    call(Route115_EventScript_Trigger_RivalEmo)
+}
+
+script Route115_EventScript_TriggerLeft_RivalEmo{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115MoveRight)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceUp)
+    waitmovement(0)
+    call(Route115_EventScript_Trigger_RivalEmo)
+}
+
+script Route115_EventScript_Trigger_RivalEmo{
+    lockall
+    playbgm(MUS_DUMMY, FALSE)
+    msgbox("WAIT! It's dangerous!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Exclaim)
+    waitmovement(0)
+    msgbox(Route115Emo1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(180)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(20)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(10)
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_BIKE_HOP)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
+    waitmovement(0)
+    delay(60)
+    playbgm(MUS_PYRITE_THEME, TRUE)
+    delay(10)
+    applymovement(24, Route115EmoMove1)
+    waitmovement(24)
+    delay(10)
+    msgbox(Route115Emo2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(24, Route115FaceUp)
+    waitmovement(24)
+    delay(180)
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_BIKE_HOP)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
+    waitmovement(0)
+    delay(60)
+    msgbox(Route115Emo4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(24, Route115FaceDown)
+    waitmovement(0)
+    msgbox(Route115Emo5, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(24, Route115EmoMove2)
+    waitmovement(24)
+    call(Route115_RivalBattle)
+    clearflag(FLAG_HIDE_MISA_ROUTE115)
+    addobject(25)
+    msgbox(Route115Emo6, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("Oh, you're still out here!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(24, Route115Exclaim)
+    waitmovement(24)
+    delay(30)
+    applymovement (24, Route115EmoMove3) 
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
+    waitmovement(0)
+    delay(20)
+    applymovement(25, Route115MisaWalkUp)
+    waitmovement(25)
+    delay(120)
+    msgbox("MISA: Are you two having fun?")
+    waitmessage
+    applymovement(24, Route115FaceLeft)
+    waitmovement(24)
+    msgbox(Route115Emo7, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(Route115Misa1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_DUMMY,FALSE)
+    applymovement(24, Route115FaceRight)
+    waitmovement(24)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceLeft)
+    waitmovement(0)
+    delay(120)
+    applymovement(24, Route115FaceLeft)
+    waitmovement(24)
+    delay(120)
+    playse(SE_M_GUST)
+    delay(60)
+    playse(SE_M_GUST2)
+    delay(60)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
+    waitmovement(0)
+    delay(60)
+    msgbox("MISA: ...Oh! Um.. I mean... JOMITHIUS,\n
+    right?" MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(24, Route115FaceDown)
+    waitmovement(24)
+    delay(60)
+    playbgm(MUS_PYRITE_THEME, FALSE)
+    delay(20)
+    msgbox(Route115Emo8, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(Route115Misa2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(25, Route115MisaLeave)
+    waitmovement(25)
+    delay(30)
+    removeobject(25)
+    applymovement(24, Route115FaceRight)
+    waitmovement(24)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceLeft)
+    waitmovement(0)
+    msgbox(Route115Emo9, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(24, Route115MisaLeave)
+    waitmovement(24)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
+    waitmovement(0)
+    removeobject(24)
+    delay(60)
+    playbgm(MUS_ROUTE104, TRUE)
+    setflag(FLAG_RIVAL_EMO_DINNER)
+    setflag(FLAG_HIDE_MISA_ROUTE115)
+    setvar(VAR_MISA_STATE, 2)
+    releaseall
+    end
+}
+
+script Route115_RivalBattle{
+    trainerbattle_no_intro(TRAINER_JOMITHIUS, Jomithius_Outro)
+    lockall
+    return
+}
+
+text Route115Emo1{"Don't come any closer. Hold on.."}
+
+text Route115Emo2{"Sorry. It's hard to control this power.\n
+Any closer and you could've been pulled\l
+into the void...\l
+Anyways, who are you?\n
+...\p
+{PLAYER}, huh?\n
+And my mother sent you?\l
+I see..\l 
+So that means you're also a trainer..."}
+
+text Route115Emo3{""}
+
+text Route115Emo4{"... I am JOMITHIUS.\n
+...This must be the call of fate.\l
+We are.. destined to be rivals.\l
+You know what must be done."}
+
+text Route115Emo5{"Can you withstand this power?"}
+
+text Route115Emo6{"JOMITHIUS: You're lucky I told my\n 
+POKéMON to only use 10% of their\l
+power.\l
+Next time I, JOMITHIUS, will-"}
+
+text Route115Emo7{"JOMITHIUS: {PLAYER} is...\n
+a worthy opponent."}
+
+text Route115Misa1{"MISA: I'm glad you two are having fun!\n
+Oh! By the way, JAMES,\l
+dinner is almost ready."}
+
+text Route115Emo8{"JAMES?: ...\n
+Yes, Mother.\l
+I'll be heading back soon."}
+
+text Route115Misa2{"MISA: Great! I made a feast since\n
+tomorrow you're starting your journey.\l
+Hurry back soon, JAMES.\l
+{PLAYER}, you're more than welcome\l
+to stop by too!"}
+
+text Route115Emo9 {"Definitely JAMES: ...\p
+I should head back then.\n
+{PLAYER}, next time I'll achieve victory.\l
+See ya."}
+
+text Jomithius_Outro{"I'm in my abyss..."}
+
+movement Route115EmoMove1{
+    walk_down * 2
+}
+
+movement Route115EmoMove2{
+    walk_down
+}
+
+movement Route115EmoMove3{
+    walk_fast_left
+    walk_fast_down
+}
+
+movement Route115Exclaim{
+    emote_exclamation_mark
+}
+
+movement Route115MisaWalkUp{
+    walk_up * 5
+    walk_left
+    face_up
+}
+
+movement Route115MisaLeave{
+    walk_down * 5
+    walk_right
+    walk_down
+}
+
+movement Route115Confused{
+    emote_question_mark
+}
+
+movement Route115FaceUp{
+    face_up
+}
+
+movement Route115FaceDown{
+    face_down
+}
+
+movement Route115FaceRight{
+    face_right
+}
+
+movement Route115FaceLeft{
+    face_left
+}
+
+movement Route115MoveLeft{
+    walk_left
+}
+
+movement Route115MoveRight{
+    walk_right
+}
+
+script Route115_EventScript_EmoRivalVar0{
+    lock
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}

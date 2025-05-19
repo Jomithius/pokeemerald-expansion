@@ -323,6 +323,32 @@
       "trainer_sight_or_berry_tree_id": "ITEM_HEAL_POWDER",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_115_HEAL_POWDER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EMO",
+      "x": 7,
+      "y": 61,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route115_EventScript_EmoRivalVar0",
+      "flag": "FLAG_RIVAL_EMO_DINNER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MISA",
+      "x": 7,
+      "y": 72,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_MISA_ROUTE115"
     }
   ],
   "warp_events": [
@@ -349,7 +375,33 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 65,
+      "elevation": 0,
+      "var": "VAR_MISA_STATE",
+      "var_value": "1",
+      "script": "Route115_EventScript_TriggerRight_RivalEmo"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 65,
+      "elevation": 0,
+      "var": "VAR_MISA_STATE",
+      "var_value": "1",
+      "script": "Route115_EventScript_Trigger_RivalEmo"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 65,
+      "elevation": 0,
+      "var": "VAR_MISA_STATE",
+      "var_value": "1",
+      "script": "Route115_EventScript_TriggerLeft_RivalEmo"
+    }
   ],
   "bg_events": [
     {

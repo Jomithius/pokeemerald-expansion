@@ -16931,7 +16931,7 @@ Sassy Nature
 - Focus Punch  
 - Coaching  
 
-Riolu @ Focus Band  
+Riolu @ Focus Sash  
 Ability: Prankster  
 Level: 18   
 EVs: 248 HP / 8 Atk / 136 Def / 112 SpD  
@@ -17049,12 +17049,12 @@ Eevee (F) @ Silk Scarf
 Ability: Adaptability  
 Level: 18  
 EVs: 192 Atk / 192 Spe  
-Jolly Nature  
+Sassy Nature  
 - Quick Attack  
 - Bite  
 - Headbutt  
 
-Nidoqueen  
+Nidorina 
 Ability: Rivalry  
 Level: 18  
 EVs: 56 HP / 116 Atk / 56 Def / 76 SpA / 72 SpD  
@@ -17072,4 +17072,55 @@ Sassy Nature
 - Trop Kick  
 - Double Slap  
 - Captivate  
+
+=== TRAINER_JOMITHIUS ===
+Name: JOMITHIUS
+Class: Rival
+Pic: Emo
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Purple
+
+Roggenrola (M)  
+Ability: Sturdy  
+Level: 9  
+Shiny: Yes  
+Relaxed Nature  
+- Smack Down  
+- Tackle  
+- Mud-Slap  
+
+Timburr  
+Ability: Sheer Force  
+Level: 9  
+Adamant Nature  
+- Rock Smash  
+- Comet Punch  
+
+Inkay  
+Ability: Contrary  
+Level: 10  
+Adamant Nature  
+- Thief  
+- Psywave  
+- Disable  
+
+Impidimp @ Oran Berry  
+Ability: Prankster  
+Level: 11  
+Relaxed Nature  
+- Bite  
+- Assurance  
+- Fake Out  
+
+Cyndaquil @ Oran Berry  
+Ability: Flash Fire  
+Level: 12  
+EVs: 128 Atk / 156 Spe  
+Modest Nature  
+- Incinerate  
+- Smokescreen  
+- Quick Attack  
 

@@ -286,6 +286,9 @@ const u32 gTrainerPalette_Ratduardo[] = INCBIN_U32("graphics/trainers/palettes/r
 const u32 gTrainerFrontPic_Bennis[] = INCBIN_U32("graphics/trainers/front_pics/bennis.4bpp.lz");
 const u32 gTrainerPalette_Bennis[] = INCBIN_U32("graphics/trainers/palettes/bennis.gbapal.lz");
 
+const u32 gTrainerFrontPic_Emo[] = INCBIN_U32("graphics/trainers/front_pics/emo.4bpp.lz");
+const u32 gTrainerPalette_Emo[] = INCBIN_U32("graphics/trainers/palettes/emo.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -409,6 +412,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_RS_MAY, gTrainerFrontPic_RubySapphireMay, gTrainerPalette_RubySapphireMay),
     TRAINER_SPRITE(TRAINER_PIC_RATDUARDO, gTrainerFrontPic_Ratduardo, gTrainerPalette_Ratduardo),
     TRAINER_SPRITE(TRAINER_PIC_BENNIS, gTrainerFrontPic_Bennis, gTrainerPalette_Bennis, 0, 7, 0x188),
+    TRAINER_SPRITE(TRAINER_PIC_EMO, gTrainerFrontPic_Emo, gTrainerPalette_Emo),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

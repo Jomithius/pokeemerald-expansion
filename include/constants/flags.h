@@ -1236,9 +1236,9 @@
 #define FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH                            0x49E // Focus Sash
 #define FLAG_BENNIS_DOJO_1                                          0x49F // Bennis First Cutscene
 #define FLAG_SLATEPORT_MAE_BATTLE                                   0x4A0 // Mae First Battle
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
+#define FLAG_HIDE_RUSTBORO_MISA_OUTSIDE                             0x4A1 // Misa First Cutscene
+#define FLAG_RIVAL_EMO_DINNER                                       0x4A2 // After First New Rival Battle, in Misa's house
+#define FLAG_HIDE_MISA_ROUTE115                                     0x4A3 // For Rival Cutscene
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
