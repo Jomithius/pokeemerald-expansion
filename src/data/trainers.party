@@ -16936,9 +16936,9 @@ Ability: Prankster
 Level: 18   
 EVs: 248 HP / 8 Atk / 136 Def / 112 SpD  
 Impish Nature  
-- Follow Me  
-- Bullet Punch  
-- Helping Hand  
+- Follow Me   
+- Helping Hand 
+- Detect 
 
 Throh @ Focus Sash  
 Ability: Inner Focus  
@@ -17025,4 +17025,51 @@ Adamant Nature
 - Mach Punch  
 - Fire Punch  
 
+=== TRAINER_MAE_1 ===
+Name: MAE
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Pink
+
+Psyduck (F)  
+Ability: Damp  
+Level: 17  
+EVs: 160 HP / 180 SpA / 96 Spe  
+Sassy Nature  
+IVs: 0 Atk  
+- Water Pulse  
+- Psybeam  
+- Yawn  
+
+Eevee (F) @ Silk Scarf  
+Ability: Adaptability  
+Level: 18  
+EVs: 192 Atk / 192 Spe  
+Jolly Nature  
+- Quick Attack  
+- Bite  
+- Headbutt  
+
+Nidoqueen  
+Ability: Rivalry  
+Level: 18  
+EVs: 56 HP / 116 Atk / 56 Def / 76 SpA / 72 SpD  
+Sassy Nature  
+- Poison Tail  
+- Body Slam  
+- Charm  
+
+Tsareena  
+Ability: Queenly Majesty  
+Level: 19  
+EVs: 96 Atk / 84 Def / 100 Spe  
+Sassy Nature  
+- Stomp  
+- Trop Kick  
+- Double Slap  
+- Captivate  
 

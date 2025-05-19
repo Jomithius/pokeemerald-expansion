@@ -97,8 +97,8 @@ script Ratduardo1_BattleOver{
     fadescreenspeed(FADE_TO_BLACK, 2)
     removeobject(5)
     fadescreenspeed(FADE_FROM_BLACK, 3)
-    msgbox("RATDUARDO's voice echoes:\p
-    Don't... try.. to follow...", MSGBOX_AUTOCLOSE)
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes:\p
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't... try.. to follow...", MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_RATDUARDO_RAT_CAVE_1)
     return

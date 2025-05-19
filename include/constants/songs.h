@@ -559,6 +559,7 @@
 #define MUS_FINAL_BATTLE            621
 #define MUS_BATTLE_THREE            622
 #define MUS_PYRITE_BATTLE           623
+#define MUS_SNOWFALL                624
 
 
 
