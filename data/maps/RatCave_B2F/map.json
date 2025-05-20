@@ -122,7 +122,7 @@
       "y": 16,
       "elevation": 0,
       "var": "VAR_RAT_CAVE_STATE",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Ratduardo1_BattleTrigger"
     }
   ],

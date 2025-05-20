@@ -1,0 +1,80 @@
+mapscripts RustboroCity_Misa_House1F_MapScripts {
+    MAP_SCRIPT_ON_LOAD {if(var(VAR_MISA_STATE) == 2){
+        clearflag(FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE)
+    }
+    else{
+        setflag(FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE)
+    }  
+}}
+
+script Rustboro_Misa_Text_EventScript{
+    lock
+    if(flag(FLAG_RUSTBORO_MISA_HOUSE_RARECANDY) == TRUE){
+        call(Misa_House1F_EventScript_Text2)
+    }
+    else{
+        call(RustboroCity_Misa_House1F_MisaGiveItem)
+    }
+}
+
+script RustboroCity_Misa_House1F_MisaGiveItem{
+    lock
+    applymovement(1, MisaHouse1F_FacePlayer)
+    waitmovement(0)
+    msgbox(MisaHouse1F_1, MSGBOX_AUTOCLOSE)
+    call(RustboroCity_Misa_House1F_GiveRareCandy)
+    waitmessage
+    setflag(FLAG_RUSTBORO_MISA_HOUSE_RARECANDY)
+    msgbox(MisaHouse1F_2, MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script RustboroCity_Misa_House1F_GiveRareCandy{
+    if(checkitemspace(ITEM_RARE_CANDY) >= 99){
+        msgbox(MisaHouseCantCarryCandy, MSGBOX_AUTOCLOSE)
+        waitmessage
+        end
+    }
+    else{
+        giveitem(ITEM_RARE_CANDY, 10)
+        return  
+    }
+    
+}
+
+script Misa_House1F_EventScript_Text2{
+    lock
+    applymovement(1, MisaHouse1F_FacePlayer)
+    waitmovement(0)
+    msgbox(MisaHouse1F_3)
+    waitmessage
+    release
+}
+
+text MisaHouse1F_1{"MISA: {PLAYER}! Thanks for stopping by.\n
+JAMES is upstairs in his room.\l
+Thanks again for becoming his friend.\n
+I hope you two can help eachother\l
+out on your journey.\l
+Have you eaten yet? We already put away\n
+the leftovers, but I have some candy."
+}
+
+text MisaHouse1F_2{"MISA: I'll be leaving soon too.\n
+I took time off because I was worried\l
+about JAMES, but now I'll be heading\l
+back to work in EVERGRANDE CITY."}
+
+text MisaHouse1F_3{"MISA: Did you challenge the GYM yet?\n
+You're already a wonderful trainer, so\l
+you should be able to beat them.\l
+Good luck!"}
+
+text MisaHouseCantCarryCandy {
+    "Oh, it looks like you already have some."
+}
+
+movement MisaHouse1F_FacePlayer{
+    face_player
+}

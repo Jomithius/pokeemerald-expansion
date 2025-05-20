@@ -2229,7 +2229,7 @@ Route116_Text_JerryDefeat:
 Route116_Text_JerryPostBattle:
 	.string "I'll have to redo some courses at\n"
 	.string "the TRAINER'S SCHOOL.\l"
-	.string "If I don't, ROXANNE will be steamed.$"
+	.string "If I don't, my mom will be steamed.$"
 
 Route116_Text_JerryRegister1:
 	.string "I learned at the TRAINER'S SCHOOL\n"
@@ -2266,7 +2266,7 @@ Route116_Text_KarenDefeat:
 
 Route116_Text_KarenPostBattle:
 	.string "Awww, I'll never become an elegant\n"
-	.string "TRAINER like ROXANNE this way!$"
+	.string "TRAINER like MISA this way!$"
 
 Route116_Text_KarenRegister1:
 	.string "Oh, wow! Isn't that a POKéNAV?\n"

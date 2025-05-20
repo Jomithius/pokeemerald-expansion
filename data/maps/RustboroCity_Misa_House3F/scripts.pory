@@ -1,0 +1,87 @@
+mapscripts RustboroCity_Misa_House3F_MapScripts {}
+
+script RustboroCity_Misa_House3F_TV{
+    lock
+    msgbox("An show is on.\n
+    Looks some kind of drama.", MSGBOX_SIGN)
+    waitmessage
+    releaseall
+}
+
+script RustboroCity_Misa_House3F_Emo{
+    lock
+    applymovement(1, MisaHouse3F_FacePlayer)
+    waitmovement(1)
+    msgbox("JAMES: {PLAYER}... We meet again.\n
+    Did you challenge the GYM LEADER yet?\l
+    I already did.\n
+    I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script RustboroCity_Misa_House3F_Togepi{
+    lockall
+    showmonpic(SPECIES_TOGEPI, 10,4)
+    msgbox("{PLAYER} checked the POKé BALL.\p
+    It contained the POKéMON\n
+    TOGEPI.\p
+    Take the POKé BALL?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_TOGEPI, 10, ITEM_SITRUS_BERRY)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(1)
+            setflag(FLAG_MISA_HOUSE_TOGEPI)
+            call(NicknamePartyTogepi)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(1)
+            setflag(FLAG_MISA_HOUSE_TOGEPI)
+            call(NicknameBoxTogepi)
+        }
+        else{
+            hidemonpic
+            msgbox("You don't have any room.")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(MisaHouse_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+
+}
+
+script NicknamePartyTogepi{
+    msgbox("Would you like to nickname TOGEPI?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+
+
+}
+
+script NicknameBoxTogepi{
+    msgbox("Would you like to nickname TOGEPI?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+
+}
+
+text MisaHouse_NotChosen{
+    "{PLAYER} decided not to take the \n
+    POKéMON."
+ }
+
+script MisaHouse3F_FacePlayer{face_player}

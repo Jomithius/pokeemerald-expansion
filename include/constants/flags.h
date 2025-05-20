@@ -1188,14 +1188,14 @@
 #define FLAG_ITEM_ROUTE_104_POTION                                  0x46F
 #define FLAG_UNUSED_0x470                                           0x470 // Unused Flag
 #define FLAG_ITEM_ROUTE_103_PP_UP                                   0x471
-#define FLAG_UNUSED_0x472                                           0x472 // Unused Flag
+#define FLAG_RUSTBORO_MISA_HOUSE_RARECANDY                          0x472 // 10x rare candy given by Misa in Rustboro.
 #define FLAG_ITEM_ROUTE_108_STAR_PIECE                              0x473
-#define FLAG_ITEM_ROUTE_109_POTION                                  0x474
+#define FLAG_ITEM_MISA_HOUSE_1F_LEFTOVERS                           0x474
 #define FLAG_ITEM_ROUTE_110_ELIXIR                                  0x475
 #define FLAG_ITEM_ROUTE_111_ELIXIR                                  0x476
 #define FLAG_ITEM_ROUTE_113_HYPER_POTION                            0x477
 #define FLAG_ITEM_ROUTE_115_HEAL_POWDER                             0x478
-#define FLAG_UNUSED_0x479                                           0x479 // Unused Flag
+#define FLAG_MISA_HOUSE_TOGEPI                                      0x479 // Giftmon Misa house Rustboro
 #define FLAG_ITEM_ROUTE_116_POTION                                  0x47A
 #define FLAG_ITEM_ROUTE_119_ELIXIR_2                                0x47B
 #define FLAG_ITEM_ROUTE_120_REVIVE                                  0x47C
@@ -1239,7 +1239,7 @@
 #define FLAG_HIDE_RUSTBORO_MISA_OUTSIDE                             0x4A1 // Misa First Cutscene
 #define FLAG_RIVAL_EMO_DINNER                                       0x4A2 // After First New Rival Battle, in Misa's house
 #define FLAG_HIDE_MISA_ROUTE115                                     0x4A3 // For Rival Cutscene
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
+#define FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE                           0x4A4 // For post Rival
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag

@@ -173,7 +173,7 @@ script Route115_EventScript_Trigger_RivalEmo{
     waitmovement(0)
     msgbox(Route115Emo1, MSGBOX_AUTOCLOSE)
     waitmessage
-    delay(180)
+    delay(120)
     playse(SE_M_THUNDER_WAVE)
     fadescreen(FADE_TO_WHITE)
     fadescreen(FADE_FROM_WHITE)
@@ -229,7 +229,7 @@ script Route115_EventScript_Trigger_RivalEmo{
     delay(20)
     applymovement(25, Route115MisaWalkUp)
     waitmovement(25)
-    delay(120)
+    delay(80)
     msgbox("MISA: Are you two having fun?")
     waitmessage
     applymovement(24, Route115FaceLeft)
@@ -337,7 +337,7 @@ text Route115Misa2{"MISA: Great! I made a feast since\n
 tomorrow you're starting your journey.\l
 Hurry back soon, JAMES.\l
 {PLAYER}, you're more than welcome\l
-to stop by too!"}
+to stop by anytime!"}
 
 text Route115Emo9 {"Definitely JAMES: ...\p
 I should head back then.\n

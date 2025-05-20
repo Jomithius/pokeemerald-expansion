@@ -339,7 +339,7 @@ Route115_EventScript_Trigger_RivalEmo::
 # 175 "data/maps/Route115/scripts.pory"
 	waitmessage
 # 176 "data/maps/Route115/scripts.pory"
-	delay 180
+	delay 120
 # 177 "data/maps/Route115/scripts.pory"
 	playse SE_M_THUNDER_WAVE
 # 178 "data/maps/Route115/scripts.pory"
@@ -451,7 +451,7 @@ Route115_EventScript_Trigger_RivalEmo::
 # 231 "data/maps/Route115/scripts.pory"
 	waitmovement 25
 # 232 "data/maps/Route115/scripts.pory"
-	delay 120
+	delay 80
 # 233 "data/maps/Route115/scripts.pory"
 	msgbox Route115_EventScript_Trigger_RivalEmo_Text_3
 # 234 "data/maps/Route115/scripts.pory"
@@ -711,7 +711,7 @@ Route115_EventScript_Trigger_RivalEmo_Text_3:
 
 Route115_EventScript_Trigger_RivalEmo_Text_4:
 # 257 "data/maps/Route115/scripts.pory"
-	.string "MISA: ...Oh! Um.. I mean JOMITHIUS,\n right?$"
+	.string "MISA: ...Oh! Um.. I mean... JOMITHIUS,\n right?$"
 
 Route115Emo1::
 # 299 "data/maps/Route115/scripts.pory"
@@ -751,7 +751,7 @@ Route115Emo8::
 
 Route115Misa2::
 # 336 "data/maps/Route115/scripts.pory"
-	.string "MISA: Great! I made a feast since\n tomorrow you're starting your journey.\l Hurry back soon, JAMES!\l {PLAYER}, you're more than welcome\l to stop by too!$"
+	.string "MISA: Great! I made a feast since\n tomorrow you're starting your journey.\l Hurry back soon, JAMES.\l {PLAYER}, you're more than welcome\l to stop by anytime!$"
 
 Route115Emo9::
 # 342 "data/maps/Route115/scripts.pory"

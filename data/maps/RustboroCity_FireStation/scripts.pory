@@ -1,0 +1,95 @@
+mapscripts RustboroCity_FireStation_MapScripts {}
+
+script RustboroCity_FireStation_Maniac1{
+    lock
+    applymovement(1, FireStationFacePlayer)
+    waitmovement(1)
+    msgbox("I'm researching ROTOM. We're testing\n
+    what appliances they can inhabit.\l
+    Imagine if it could control cars!", MSGBOX_NPC)
+    applymovement(1, FireStationFaceUp)
+    waitmovement(1)
+    waitmessage
+    release
+}
+
+script RustboroCity_FireStation_Maniac2{
+    lock
+    applymovement(2, FireStationFacePlayer)
+    waitmovement(2)
+    msgbox("We're working with the LEAGUE to \n
+    investigate strange tremors in the\l
+    area recently.\p
+    I don't know what's going on, but\n
+    whatever it is, I'm sure we'll\l
+    be ready.", MSGBOX_NPC)
+    applymovement(2, FireStationFaceUp)
+    waitmovement(2)
+    waitmessage
+    release
+}
+
+script RustboroCity_FireStation_Man{
+    lock
+    applymovement(4, FireStationFacePlayer)
+    waitmovement(4)
+    msgbox("The Gym Leader, STEVE, is a\n
+    first responder. There's no one better\l
+    at firefighting in RUSTBORO.", MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script RustboroCity_FireStation_FatMan{
+    lock
+    msgbox("Ah, MISA's back in town...\l
+    I wish she would smother me...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(5, FireStationSurprised)
+    waitmovement(5)
+    delay(20)
+    applymovement(5, FireStationFacePlayer)
+    waitmovement(5)
+    msgbox("Hey! I'm working.\n
+    Get out of here!", MSGBOX_NPC)
+    applymovement(5, FireStationFaceUp)
+    waitmovement(5)
+    waitmessage
+    release
+}
+
+script RustboroCity_FireStation_Rotom{
+    lock
+    applymovement(3, FireStationFacePlayer)
+    waitmovement(3)
+    playmoncry(SPECIES_ROTOM, CRY_MODE_ENCOUNTER)
+    msgbox("ROTOM: zzzzz!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script RustboroCity_FireStation_Man2{
+    lock
+    applymovement(6, FireStationFacePlayer)
+    waitmovement(6)
+    msgbox("I recently heard that there's a mage\n
+    who sells a special drink that can\l
+    change your appearance overnight.\p
+    If it's real, maybe I could get my\n
+    hair back.", MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+movement FireStationSurprised{
+    emote_exclamation_mark
+}
+
+movement FireStationFacePlayer{
+    face_player
+}
+
+movement FireStationFaceUp{
+    face_up
+}

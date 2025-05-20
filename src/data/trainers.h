@@ -42621,7 +42621,7 @@ F_TRAINER_FEMALE |
 #line 17050
             .lvl = 18,
 #line 17052
-            .nature = NATURE_JOLLY,
+            .nature = NATURE_SASSY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 17053
@@ -42632,7 +42632,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 17057
-            .species = SPECIES_NIDOQUEEN,
+            .species = SPECIES_NIDORINA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17060
             .ev = TRAINER_PARTY_EVS(56, 116, 56, 0, 76, 72),
@@ -42757,7 +42757,7 @@ F_TRAINER_FEMALE |
 #line 17106
                 MOVE_THIEF,
                 MOVE_PSYWAVE,
-                MOVE_PECK,
+                MOVE_DISABLE,
             },
             },
             {

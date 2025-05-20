@@ -1178,3 +1178,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TheUnder/scripts.inc"
 
 	.include "data/maps/BennisDojo/scripts.inc"
+
+	.include "data/maps/RustboroCity_Misa_House1F/scripts.inc"
+
+	.include "data/maps/RustboroCity_Misa_House2F/scripts.inc"
+
+	.include "data/maps/RustboroCity_Misa_House3F/scripts.inc"
+
+	.include "data/maps/RustboroCity_FireStation/scripts.inc"

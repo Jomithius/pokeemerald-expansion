@@ -2117,7 +2117,7 @@ RustboroCity_Text_GymLeaderIsntEasyWithFire:
 # 1059 "data/maps/RustboroCity/scripts.pory"
 	.string "FIRE-type POKéMON don't match up\n"
 # 1060 "data/maps/RustboroCity/scripts.pory"
-	.string "well against ROCK-type POKéMON…$"
+	.string "well against a firefighter…$"
 # 1061 "data/maps/RustboroCity/scripts.pory"
 
 # 1062 "data/maps/RustboroCity/scripts.pory"
@@ -2489,9 +2489,9 @@ RustboroCity_Text_GymSign:
 # 1245 "data/maps/RustboroCity/scripts.pory"
 	.string "RUSTBORO CITY POKéMON GYM\n"
 # 1246 "data/maps/RustboroCity/scripts.pory"
-	.string "LEADER: ROXANNE\p"
+	.string "LEADER: STEVE\p"
 # 1247 "data/maps/RustboroCity/scripts.pory"
-	.string "“The ROCK-loving honors student!”$"
+	.string "“The firefighting genius!”$"
 # 1248 "data/maps/RustboroCity/scripts.pory"
 
 # 1249 "data/maps/RustboroCity/scripts.pory"

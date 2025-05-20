@@ -96,7 +96,11 @@
     "PetalburgCity_Luna_House",
     "PetalburgCity_Luna_Basement",
     "BaseCamp",
-    "TheUnder"
+    "TheUnder",
+    "RustboroCity_Misa_House1F",
+    "RustboroCity_Misa_House2F",
+    "RustboroCity_Misa_House3F",
+    "RustboroCity_FireStation"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
