@@ -2,10 +2,11 @@ mapscripts RustboroCity_Misa_House3F_MapScripts {}
 
 script RustboroCity_Misa_House3F_TV{
     lock
-    msgbox("An show is on.\n
+    msgbox("A show is on.\n
     Looks some kind of drama.", MSGBOX_SIGN)
     waitmessage
-    releaseall
+    release
+    end
 }
 
 script RustboroCity_Misa_House3F_Emo{
@@ -14,10 +15,13 @@ script RustboroCity_Misa_House3F_Emo{
     waitmovement(1)
     msgbox("JAMES: {PLAYER}... We meet again.\n
     Did you challenge the GYM LEADER yet?\l
-    I already did.\n
+    I already did.\l
     I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(1, MisaHouse3F_FaceUp)
+    waitmovement(1)
     release
+    end
 }
 
 script RustboroCity_Misa_House3F_Togepi{
@@ -32,14 +36,14 @@ script RustboroCity_Misa_House3F_Togepi{
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
-            removeobject(1)
+            removeobject(2)
             setflag(FLAG_MISA_HOUSE_TOGEPI)
             call(NicknamePartyTogepi)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
-            removeobject(1)
+            removeobject(2)
             setflag(FLAG_MISA_HOUSE_TOGEPI)
             call(NicknameBoxTogepi)
         }
@@ -84,4 +88,5 @@ text MisaHouse_NotChosen{
     POKéMON."
  }
 
-script MisaHouse3F_FacePlayer{face_player}
+movement MisaHouse3F_FacePlayer{face_player}
+movement MisaHouse3F_FaceUp{face_up}

@@ -401,6 +401,10 @@
 #define OBJ_EVENT_PAL_TAG_BIKER                   0x1130
 #define OBJ_EVENT_PAL_TAG_AVATAR                  0x1131
 #define OBJ_EVENT_PAL_TAG_BENNIS                  0x1132
+#define OBJ_EVENT_PAL_TAG_ROXANNE                 0x1133
+#define OBJ_EVENT_PAL_TAG_NORMAN                  0x1134
+
+
 
 
 #if OW_FOLLOWERS_POKEBALLS

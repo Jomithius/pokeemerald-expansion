@@ -96,7 +96,7 @@ Ratduardo1_BattleTrigger::
 # 53 "data/maps/RatCave_B2F/scripts.pory"
 	call RatCaveShake
 # 54 "data/maps/RatCave_B2F/scripts.pory"
-	setvar VAR_RAT_CAVE_STATE, 2
+	setvar VAR_RAT_CAVE_STATE, 4
 # 55 "data/maps/RatCave_B2F/scripts.pory"
 	releaseall
 	return

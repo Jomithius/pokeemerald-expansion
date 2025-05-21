@@ -652,10 +652,10 @@ static const struct SpriteFrameImage sPicTable_Flannery[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Norman[] = {
-    overworld_ascending_frames(gObjectEventPic_Norman, 2, 4),
-    overworld_frame(gObjectEventPic_Norman, 2, 4, 6),
-    overworld_frame(gObjectEventPic_Norman, 2, 4, 7),
-    overworld_frame(gObjectEventPic_Norman, 2, 4, 8),
+    overworld_ascending_frames(gObjectEventPic_Norman, 4, 4),
+    overworld_frame(gObjectEventPic_Norman, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Norman, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Norman, 4, 4, 8),
 };
 
 static const struct SpriteFrameImage sPicTable_Winona[] = {

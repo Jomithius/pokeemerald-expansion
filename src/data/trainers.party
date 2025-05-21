@@ -4789,38 +4789,70 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Crunch
 
 === TRAINER_ROXANNE_1 ===
-Name: ROXANNE
+Name: STEVE
 Class: Leader
 Pic: Leader Roxanne
-Gender: Female
-Music: Female
-Items: Potion / Potion
+Gender: Male
+Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
+Mugshot: Yellow
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Carbink  
+Ability: Clear Body  
+Level: 13   
+EVs: 32 HP / 92 Atk / 124 SpD  
+- Rock Tomb  
+- Flail  
+- Sharpen  
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Rufflet  
+Ability: Hustle  
+Level: 12   
+EVs: 56 HP / 44 Atk / 76 Spe  
+- Work Up  
+- Cut  
+- Pluck  
 
-Nosepass @ Oran Berry
-Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
+Clobbopus  
+Ability: Technician  
+Level: 12   
+EVs: 76 HP / 104 Atk / 76 SpD  
+- Bulk Up  
+- Rock Smash  
+- Detect  
+- Feint  
+
+Cubone  
+Ability: Battle Armor  
+Level: 13   
+EVs: 192 HP / 136 Atk / 32 Def / 108 SpD  
+Quiet Nature  
+- Bonemerang  
+- Rock Tomb  
+- Focus Energy  
+
+Tentacool @ Oran Berry  
+Ability: Liquid Ooze  
+Level: 14  
+Tera Type: Water  
+EVs: 100 HP / 112 Def / 164 SpA  
+Lax Nature  
+IVs: 0 Atk  
+- Chilling Water  
+- Acid Spray  
+- Acid Armor 
+
+Magby @ Sitrus Berry  
+Ability: Flame Body  
+Level: 15  
+Tera Type: Fire  
+EVs: 104 HP / 60 Def / 196 SpA / 148 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Incinerate  
+- Acid Spray  
+- Will-O-Wisp 
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -5972,17 +6004,34 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSH ===
 Name: JOSH
-Class: Youngster
-Pic: Youngster
+Class: Camper
+Pic: Camper
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Geodude
-Level: 10
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+Geodude-Alola  
+Ability: Galvanize
+Level: 10  
+- Tackle  
+- Rock Throw  
+
+Onix  
+Ability: Rock Head  
+Level: 10  
+EVs: 64 Atk / 80 Spe  
+Hasty Nature  
+- Rock Throw  
+- Defense Curl  
+- Tackle  
+
+Rolycoly  
+Ability: Steam Engine  
+Level: 11   
+EVs: 36 HP / 32 Atk / 24 Def / 32 SpA / 24 SpD / 76 Spe  
+- Rock Blast  
+- Incinerate
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -5991,15 +6040,24 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Geodude
-Level: 8
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Squirtle  
+Ability: Torrent  
+Level: 12    
+EVs: 160 Atk / 56 Def / 112 SpA  
+Relaxed Nature  
+- Water Gun  
+- Rapid Spin  
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Silicobra  
+Ability: Shed Skin  
+Level: 12  
+EVs: 128 HP / 44 Def / 112 SpD  
+Sassy Nature  
+- Mud-Slap  
+- Sand Tomb  
+- Rock Tomb  
 
 === TRAINER_JOEY ===
 Name: JOEY
@@ -10557,16 +10615,42 @@ Class: Hiker
 Pic: Hiker
 Gender: Male
 Music: Hiker
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Chewtle  
+Ability: Strong Jaw  
+Level: 12   
+EVs: 112 HP / 64 Atk / 44 Def / 8 SpA / 72 SpD  
+- Water Pulse  
+- Bite  
 
-Geodude
-Level: 8
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Growlithe  
+Ability: Intimidate  
+Level: 12  
+EVs: 72 HP / 52 Atk / 84 SpA / 64 Spe  
+Naughty Nature  
+- Fire Spin  
+- Will-O-Wisp  
+- Bite  
+
+Lillipup  
+Ability: Vital Spirit  
+Level: 10   
+EVs: 76 HP / 116 Atk / 36 SpD / 116 Spe  
+Lonely Nature  
+- Covet  
+- Mud-Slap  
+- Howl  
+
+Panpour @ Oran Berry  
+Ability: Gluttony  
+Level: 13   
+EVs: 92 HP / 100 Atk / 132 SpA / 104 Spe  
+Lonely Nature  
+- Water Sport  
+- Water Pulse  
+- Astonish
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN
@@ -17122,5 +17206,64 @@ EVs: 128 Atk / 156 Spe
 Modest Nature  
 - Incinerate  
 - Smokescreen  
+- Quick Attack  
+
+=== TRAINER_NORMAN_PETALBURG ===
+Name: LUNA
+Class: Leader
+Pic: Leader Norman
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Yellow
+
+Zigzagoon @ Oran Berry  
+Ability: Gluttony  
+Level: 13  
+Tera Type: Normal  
+EVs: 124 Atk / 64 Def / 92 SpD / 140 Spe  
+Adamant Nature  
+- Covet  
+- Odor Sleuth  
+- Work Up  
+
+Salandit (F)  
+Ability: Corrosion  
+Level: 14  
+Tera Type: Poison  
+EVs: 140 SpA / 32 Spe  
+Mild Nature  
+IVs: 0 Atk  
+- Incinerate  
+- Acid Spray  
+- Sand Attack  
+
+Golett  
+Ability: Iron Fist  
+Level: 14  
+Tera Type: Ground  
+- Astonish  
+- Rock Tomb  
+- Bulldoze  
+
+Milcery  
+Ability: Sweet Veil  
+Level: 13  
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Draining Kiss  
+- Round  
+- Aromatherapy  
+
+Buneary (F)  
+Ability: Limber  
+Level: 16  
+Tera Type: Normal  
+EVs: 12 HP / 248 Atk / 248 Spe  
+Jolly Nature  
+- Covet  
+- Charm  
+- Assurance  
 - Quick Attack  
 

@@ -2858,7 +2858,7 @@ SlateportCity_EventScript_Mae::
 	setflag FLAG_SLATEPORT_MAE_BATTLE
 # 1431 "data/maps/SlateportCity/scripts.pory"
 	release
-	return
+	end
 
 
 SlateportCity_EventScript_MaeBattle::
@@ -3010,19 +3010,19 @@ SlateportCity_EventScript_Psyduck::
 	waitmessage
 # 1525 "data/maps/SlateportCity/scripts.pory"
 	release
-	return
+	end
 
 
 SlateportCity_EventScript_GymSign::
-# 1529 "data/maps/SlateportCity/scripts.pory"
-	lock
 # 1530 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportGymSign, MSGBOX_SIGN
+	lock
 # 1531 "data/maps/SlateportCity/scripts.pory"
-	waitmessage
+	msgbox SlateportGymSign, MSGBOX_SIGN
 # 1532 "data/maps/SlateportCity/scripts.pory"
+	waitmessage
+# 1533 "data/maps/SlateportCity/scripts.pory"
 	release
-	return
+	end
 
 
 SlateportCity_EventScript_Psyduck_Text_0:
@@ -3054,5 +3054,5 @@ SlateportMartEmployee2::
 	.string "MART EMPLOYEE: Man, I swear I don't\n  get paid enough for this.$"
 
 SlateportGymSign::
-# 1535 "data/maps/SlateportCity/scripts.pory"
+# 1537 "data/maps/SlateportCity/scripts.pory"
 	.string "SLATEPORT CITY POKéMON GYM\n LEADER: LIAM\l “Experience the power of POOBLES!”$"

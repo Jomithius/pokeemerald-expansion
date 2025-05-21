@@ -11,6 +11,7 @@ script RustboroCity_FireStation_Maniac1{
     waitmovement(1)
     waitmessage
     release
+    end
 }
 
 script RustboroCity_FireStation_Maniac2{
@@ -21,23 +22,24 @@ script RustboroCity_FireStation_Maniac2{
     investigate strange tremors in the\l
     area recently.\p
     I don't know what's going on, but\n
-    whatever it is, I'm sure we'll\l
-    be ready.", MSGBOX_NPC)
+    whatever it is, I'm sure we'll be ready.", MSGBOX_NPC)
     applymovement(2, FireStationFaceUp)
     waitmovement(2)
     waitmessage
     release
+    end
 }
 
 script RustboroCity_FireStation_Man{
     lock
     applymovement(4, FireStationFacePlayer)
     waitmovement(4)
-    msgbox("The Gym Leader, STEVE, is a\n
-    first responder. There's no one better\l
-    at firefighting in RUSTBORO.", MSGBOX_NPC)
+    msgbox("The Gym Leader, STEVE, is a first\n
+    responder. There's no one better\l
+    at firefighting in HOENN.", MSGBOX_NPC)
     waitmessage
     release
+    end
 }
 
 script RustboroCity_FireStation_FatMan{
@@ -57,6 +59,7 @@ script RustboroCity_FireStation_FatMan{
     waitmovement(5)
     waitmessage
     release
+    end
 }
 
 script RustboroCity_FireStation_Rotom{
@@ -67,6 +70,7 @@ script RustboroCity_FireStation_Rotom{
     msgbox("ROTOM: zzzzz!", MSGBOX_AUTOCLOSE)
     waitmessage
     release
+    end
 }
 
 script RustboroCity_FireStation_Man2{
@@ -80,6 +84,7 @@ script RustboroCity_FireStation_Man2{
     hair back.", MSGBOX_NPC)
     waitmessage
     release
+    end
 }
 
 movement FireStationSurprised{

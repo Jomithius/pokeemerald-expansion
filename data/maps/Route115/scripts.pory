@@ -282,7 +282,8 @@ script Route115_EventScript_Trigger_RivalEmo{
     waitmovement(0)
     removeobject(24)
     delay(60)
-    playbgm(MUS_ROUTE104, TRUE)
+    savebgm(MUS_DUMMY)
+	fadedefaultbgm
     setflag(FLAG_RIVAL_EMO_DINNER)
     setflag(FLAG_HIDE_MISA_ROUTE115)
     setvar(VAR_MISA_STATE, 2)
@@ -408,4 +409,5 @@ script Route115_EventScript_EmoRivalVar0{
     msgbox("...", MSGBOX_AUTOCLOSE)
     waitmessage
     release
+    end
 }

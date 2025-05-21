@@ -106,6 +106,7 @@ RustboroCity_EventScript_MatchCallTutorial::
 	removeobject LOCALID_SCIENTIST
 	setflag FLAG_HIDE_RUSTBORO_CITY_SCIENTIST
 	setvar VAR_RUSTBORO_CITY_STATE, 7
+	setvar VAR_RAT_CAVE_STATE, 1
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	releaseall
 	end
@@ -1328,16 +1329,16 @@ script RustboroCity_EventScript_Misa{
     waitmessage
     msgbox(RustboroMisa3, MSGBOX_AUTOCLOSE)
     waitmessage
-    call(MisaPlayerMeetRival)
+    goto(MisaPlayerMeetRival)
 }
 
 script MisaPlayerMeetRival{
     msgbox(RustboroMisa4, MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        call(MisaAgreeMeetRival)
+        goto(MisaAgreeMeetRival)
     }
     if(var(VAR_RESULT) == NO){
-        call(MisaDeclineMeetRival)
+        goto(MisaDeclineMeetRival)
     }
 
 }
@@ -1346,40 +1347,107 @@ script MisaAgreeMeetRival{
     msgbox(RustboroMisaIfYes, MSGBOX_AUTOCLOSE)
     waitmessage
     call(MisaEnd)
-    playbgm(MUS_RUSTBORO, TRUE)
+	savebgm(MUS_DUMMY)
+	fadedefaultbgm
     releaseall
+	end
 }
 
 script MisaDeclineMeetRival{
     msgbox(RustboroMisaIfNo, MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        call(MisaAgreeMeetRival)
+        goto(MisaAgreeMeetRival)
     }
     if(var(VAR_RESULT) == NO){
-        call(MisaDeclineMeetRival)
+        goto(MisaDeclineMeetRival)
     }
 }
 
-script MisaEnd{    
-    playse(SE_PIN)
-    applymovement(17, RustboroExclaim)
-    waitmovement(17)
-    delay(20)
-    msgbox(RustboroMisa5, MSGBOX_AUTOCLOSE)
-    waitmessage
-    applymovement(17, RustboroMisaLeave1)
-    waitmovement(17)
-    applymovement(OBJ_EVENT_ID_PLAYER, RustboroFaceRight)
+script MisaEnd{
+	if(flag(FLAG_MISA_RUSTBORO_GYM_TRIGGER) == TRUE){
+		playse(SE_PIN)
+		applymovement(18, RustboroExclaim)
+		waitmovement(18)
+		delay(20)
+		msgbox(RustboroMisa5, MSGBOX_AUTOCLOSE)
+		waitmessage
+		applymovement(18, RustboroMisaLeaveGym1)
+		waitmovement(18)
+		applymovement(OBJ_EVENT_ID_PLAYER, RustboroFaceLeft)
+		waitmovement(0)
+		applymovement(18, RustboroMisaLeaveGym2)
+		waitmovement(18)
+		delay(10)
+		removeobject(18)
+		delay(20)
+		setflag(FLAG_HIDE_RUSTBORO_MISA_OUTSIDE)
+		setvar(VAR_MISA_STATE, 1)
+		return
+		
+	}
+	else{    
+		playse(SE_PIN)
+		applymovement(17, RustboroExclaim)
+		waitmovement(17)
+		delay(20)
+		msgbox(RustboroMisa5, MSGBOX_AUTOCLOSE)
+		waitmessage
+		applymovement(17, RustboroMisaLeave1)
+		waitmovement(17)
+		applymovement(OBJ_EVENT_ID_PLAYER, RustboroFaceRight)
+		waitmovement(0)
+		applymovement(17, RustboroMisaLeave2)
+		waitmovement(17)
+		delay(10)
+		removeobject(17)
+		delay(20)
+		setflag(FLAG_HIDE_RUSTBORO_MISA_OUTSIDE)
+		setvar(VAR_MISA_STATE, 1)
+		return
+	}
+}
+
+script RustboroCity_Eventscript_Promise_To_Misa{
+	lock
+	msgbox("I should probably keep my promise to\n
+	MISA...", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, RustboroCity_Movement_PlayerWalkDown)
+	waitmovement(0)
+	release
+	end
+}
+
+script RustboroCityGym_EventScript_Misa{
+    setflag(FLAG_MISA_RUSTBORO_GYM_TRIGGER)
+	lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, RustboroCity_Movement_PlayerWalkDown)
     waitmovement(0)
-    applymovement(17, RustboroMisaLeave2)
-    waitmovement(17)
+    applymovement(OBJ_EVENT_ID_PLAYER, RustboroFaceUp)
+    opendoor(27,19)
+    waitdooranim
+    addobject(18)
+    applymovement(18, RustboroCity_Movement_PlayerWalkDown)
+    waitmovement(18)
     delay(10)
-    removeobject(17)
+    clearflag(FLAG_HIDE_RUSTBORO_MISA_OUTSIDE)
+    closedoor(27,19)
+    waitdooranim
+    delay(10)
+    playse(SE_PIN)
+    applymovement(18, RustboroExclaim)
+    waitmovement(18)
     delay(20)
-    setflag(FLAG_HIDE_RUSTBORO_MISA_OUTSIDE)
-    setvar(VAR_MISA_STATE, 1)
-    return
-    }
+    playbgm(MUS_MISA_THEME, FALSE)
+    delay(10)
+    msgbox(RustboroMisa1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(RustboroMisa2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(RustboroMisa3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    goto(MisaPlayerMeetRival)
+}
 
 text RustboroMisa1{"Oh! Excuse me. I didn't see you there.\l
 It's nice to meet you.\n
@@ -1400,7 +1468,7 @@ meet him? He's always been a bit...\l
 different and could use a new friend."}
 
 text RustboroMisaIfYes{"MISA: Thank you! You're so sweet.\n
-To get to ROUTE 115 just head north."}
+Just head north to get to ROUTE 115."}
 
 text RustboroMisaIfNo{"MISA: Oh... Please don't be like that.\n
 Would you reconsider?"}
@@ -1409,17 +1477,33 @@ text RustboroMisa5{"MISA: Oh! I'm almost late for the\n
 meeting! I have to go.\l
 It was nice meeting you, {PLAYER}!"}
 
-movement RustboroExclaim {
-    emote_exclamation_mark
+script RustboroCity_LunaDexNav {
+    lockall
+    pokenavcall(Route104_LunaDexNavText)
+    waitmessage
+    delay(30)
+	setvar(VAR_RAT_CAVE_STATE, 2)
+	setflag(FLAG_HIDE_NPC_LUNA_HOUSE_PETALBURG)
+	clearflag(FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST)
+    releaseall
+    end
 }
 
-movement RustboroLove{
-    emote_heart
-}
+text RustboroCity_LunaDexNavText{
+    "… … … … … …\n
+    … … … … … Beep!\p
+    {PLAYER}? It's LUNA.\n
+	Are you still in the area?\p
+    I need a favor. Meet me in front of\n
+	my house in PETALBURG.\p
+	It's the one north of the POKéMON\n
+	CENTER.\p
+	… … … … … …\n
+	… … … … … Click!"}
 
-movement RustboroBoo{
-    emote_x
-}
+movement RustboroExclaim {emote_exclamation_mark}
+
+movement RustboroFaceLeft{face_left}
 
 movement RustboroFaceRight{
     face_right
@@ -1437,4 +1521,13 @@ movement RustboroMisaLeave1{
 movement RustboroMisaLeave2{
     walk_right * 3
     walk_up * 6
+}
+
+movement RustboroMisaLeaveGym1{
+    walk_left
+    walk_down
+}
+
+movement RustboroMisaLeaveGym2{
+    walk_left * 8 
 }

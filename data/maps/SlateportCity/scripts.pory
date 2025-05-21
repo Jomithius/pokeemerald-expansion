@@ -1429,7 +1429,7 @@ script SlateportCity_EventScript_Mae {
     removeobject(37)
     setflag(FLAG_SLATEPORT_MAE_BATTLE)
     release
-
+	end
 }
 
 script SlateportCity_EventScript_MaeBattle{
@@ -1523,6 +1523,7 @@ script SlateportCity_EventScript_Psyduck {
 	msgbox("PSYDUCK: Psy?" MSGBOX_AUTOCLOSE)
     waitmessage
     release
+	end
 }
 
 script SlateportCity_EventScript_GymSign {
@@ -1530,6 +1531,7 @@ script SlateportCity_EventScript_GymSign {
     msgbox(SlateportGymSign, MSGBOX_SIGN)
     waitmessage
     release
+	end
 }
 
 text SlateportGymSign{"SLATEPORT CITY POKéMON GYM\n

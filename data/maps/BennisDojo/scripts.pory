@@ -1,19 +1,21 @@
 mapscripts BennisDojo_MapScripts {}
 
 script BennisDojo_ExpertBelt {
-    lock
+    lockall
     setflag(FLAG_ITEM_BENNIS_DOJO_EXPERT_BELT)
     finditem(ITEM_EXPERT_BELT, 1)
     waitmessage
     releaseall
+    end
 }
 
 script BennisDojo_FocusSash {
-    lock
+    lockall
     setflag(FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH)
     finditem(ITEM_FOCUS_SASH, 1)
     waitmessage
     releaseall
+    end
 }
 
 script DojoBattleTrigger{
