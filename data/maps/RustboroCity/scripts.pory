@@ -1327,8 +1327,6 @@ script RustboroCity_EventScript_Misa{
     waitmessage
     msgbox(RustboroMisa2, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox(RustboroMisa3, MSGBOX_AUTOCLOSE)
-    waitmessage
     goto(MisaPlayerMeetRival)
 }
 
@@ -1444,8 +1442,6 @@ script RustboroCityGym_EventScript_Misa{
     waitmessage
     msgbox(RustboroMisa2, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox(RustboroMisa3, MSGBOX_AUTOCLOSE)
-    waitmessage
     goto(MisaPlayerMeetRival)
 }
 
@@ -1456,9 +1452,13 @@ My name's MISA."}
 text RustboroMisa2{"MISA: That POKéMON.. So cute!\n
 So you're a new trainer? That's great!\l 
 It looks like you're already raising\l 
-your POKéMON with love and care."}
+your POKéMON with love and care.\p
+I actually have a son around the\n
+same age as you.\l
+He's also starting his journey soon.\l
+He should be on ROUTE 115 preparing."}
 
-text RustboroMisa3{"MISA: I actually have a son around the\n
+text RustboroMisa3{"I actually have a son around the\n
 same age as you.\l
 He's also starting his journey soon.\l
 He should be on ROUTE 115 preparing."}

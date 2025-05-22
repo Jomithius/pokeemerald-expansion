@@ -276,7 +276,6 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 `
 
 script RustboroCity_Gym_EventScript_GiveChillingWater {
-    lock
 	msgbox("And because you were on fire,\n
 	take this to cool off!", MSGBOX_AUTOCLOSE)
     waitmessage

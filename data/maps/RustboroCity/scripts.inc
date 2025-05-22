@@ -2653,225 +2653,217 @@ RustboroCity_EventScript_Misa::
 # 1329 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
 # 1330 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroMisa3, MSGBOX_AUTOCLOSE
-# 1331 "data/maps/RustboroCity/scripts.pory"
-	waitmessage
-# 1332 "data/maps/RustboroCity/scripts.pory"
 	goto MisaPlayerMeetRival
 	return
 
 
 MisaPlayerMeetRival::
-# 1336 "data/maps/RustboroCity/scripts.pory"
+# 1334 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroMisa4, MSGBOX_YESNO
-# 1337 "data/maps/RustboroCity/scripts.pory"
+# 1335 "data/maps/RustboroCity/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MisaPlayerMeetRival_2
 MisaPlayerMeetRival_1:
-# 1340 "data/maps/RustboroCity/scripts.pory"
+# 1338 "data/maps/RustboroCity/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq MisaPlayerMeetRival_4
 	return
 
 MisaPlayerMeetRival_2:
-# 1338 "data/maps/RustboroCity/scripts.pory"
+# 1336 "data/maps/RustboroCity/scripts.pory"
 	goto MisaAgreeMeetRival
 	goto MisaPlayerMeetRival_1
 
 MisaPlayerMeetRival_4:
-# 1341 "data/maps/RustboroCity/scripts.pory"
+# 1339 "data/maps/RustboroCity/scripts.pory"
 	goto MisaDeclineMeetRival
 	return
 
 
 MisaAgreeMeetRival::
-# 1347 "data/maps/RustboroCity/scripts.pory"
+# 1345 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroMisaIfYes, MSGBOX_AUTOCLOSE
-# 1348 "data/maps/RustboroCity/scripts.pory"
+# 1346 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
-# 1349 "data/maps/RustboroCity/scripts.pory"
+# 1347 "data/maps/RustboroCity/scripts.pory"
 	call MisaEnd
-# 1350 "data/maps/RustboroCity/scripts.pory"
+# 1348 "data/maps/RustboroCity/scripts.pory"
 	savebgm MUS_DUMMY
-# 1351 "data/maps/RustboroCity/scripts.pory"
+# 1349 "data/maps/RustboroCity/scripts.pory"
 	fadedefaultbgm
-# 1352 "data/maps/RustboroCity/scripts.pory"
+# 1350 "data/maps/RustboroCity/scripts.pory"
 	releaseall
 	end
 
 
 MisaDeclineMeetRival::
-# 1357 "data/maps/RustboroCity/scripts.pory"
+# 1355 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroMisaIfNo, MSGBOX_YESNO
-# 1358 "data/maps/RustboroCity/scripts.pory"
+# 1356 "data/maps/RustboroCity/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MisaDeclineMeetRival_2
 MisaDeclineMeetRival_1:
-# 1361 "data/maps/RustboroCity/scripts.pory"
+# 1359 "data/maps/RustboroCity/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq MisaDeclineMeetRival_4
 	return
 
 MisaDeclineMeetRival_2:
-# 1359 "data/maps/RustboroCity/scripts.pory"
+# 1357 "data/maps/RustboroCity/scripts.pory"
 	goto MisaAgreeMeetRival
 	goto MisaDeclineMeetRival_1
 
 MisaDeclineMeetRival_4:
-# 1362 "data/maps/RustboroCity/scripts.pory"
+# 1360 "data/maps/RustboroCity/scripts.pory"
 	goto MisaDeclineMeetRival
 	return
 
 
 MisaEnd::
-# 1367 "data/maps/RustboroCity/scripts.pory"
+# 1365 "data/maps/RustboroCity/scripts.pory"
 	goto_if_set FLAG_MISA_RUSTBORO_GYM_TRIGGER, MisaEnd_1
-# 1389 "data/maps/RustboroCity/scripts.pory"
+# 1387 "data/maps/RustboroCity/scripts.pory"
 	playse SE_PIN
-# 1390 "data/maps/RustboroCity/scripts.pory"
+# 1388 "data/maps/RustboroCity/scripts.pory"
 	applymovement 17, RustboroExclaim
+# 1389 "data/maps/RustboroCity/scripts.pory"
+	waitmovement 17
+# 1390 "data/maps/RustboroCity/scripts.pory"
+	delay 20
 # 1391 "data/maps/RustboroCity/scripts.pory"
-	waitmovement 17
-# 1392 "data/maps/RustboroCity/scripts.pory"
-	delay 20
-# 1393 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroMisa5, MSGBOX_AUTOCLOSE
-# 1394 "data/maps/RustboroCity/scripts.pory"
+# 1392 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
-# 1395 "data/maps/RustboroCity/scripts.pory"
+# 1393 "data/maps/RustboroCity/scripts.pory"
 	applymovement 17, RustboroMisaLeave1
-# 1396 "data/maps/RustboroCity/scripts.pory"
+# 1394 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 17
-# 1397 "data/maps/RustboroCity/scripts.pory"
+# 1395 "data/maps/RustboroCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RustboroFaceRight
-# 1398 "data/maps/RustboroCity/scripts.pory"
+# 1396 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 0
-# 1399 "data/maps/RustboroCity/scripts.pory"
+# 1397 "data/maps/RustboroCity/scripts.pory"
 	applymovement 17, RustboroMisaLeave2
-# 1400 "data/maps/RustboroCity/scripts.pory"
+# 1398 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 17
-# 1401 "data/maps/RustboroCity/scripts.pory"
+# 1399 "data/maps/RustboroCity/scripts.pory"
 	delay 10
-# 1402 "data/maps/RustboroCity/scripts.pory"
+# 1400 "data/maps/RustboroCity/scripts.pory"
 	removeobject 17
-# 1403 "data/maps/RustboroCity/scripts.pory"
+# 1401 "data/maps/RustboroCity/scripts.pory"
 	delay 20
-# 1404 "data/maps/RustboroCity/scripts.pory"
+# 1402 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_HIDE_RUSTBORO_MISA_OUTSIDE
-# 1405 "data/maps/RustboroCity/scripts.pory"
+# 1403 "data/maps/RustboroCity/scripts.pory"
 	setvar VAR_MISA_STATE, 1
 	return
 
 MisaEnd_1:
-# 1368 "data/maps/RustboroCity/scripts.pory"
+# 1366 "data/maps/RustboroCity/scripts.pory"
 	playse SE_PIN
-# 1369 "data/maps/RustboroCity/scripts.pory"
+# 1367 "data/maps/RustboroCity/scripts.pory"
 	applymovement 18, RustboroExclaim
+# 1368 "data/maps/RustboroCity/scripts.pory"
+	waitmovement 18
+# 1369 "data/maps/RustboroCity/scripts.pory"
+	delay 20
 # 1370 "data/maps/RustboroCity/scripts.pory"
-	waitmovement 18
-# 1371 "data/maps/RustboroCity/scripts.pory"
-	delay 20
-# 1372 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroMisa5, MSGBOX_AUTOCLOSE
-# 1373 "data/maps/RustboroCity/scripts.pory"
+# 1371 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
-# 1374 "data/maps/RustboroCity/scripts.pory"
+# 1372 "data/maps/RustboroCity/scripts.pory"
 	applymovement 18, RustboroMisaLeaveGym1
-# 1375 "data/maps/RustboroCity/scripts.pory"
+# 1373 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 18
-# 1376 "data/maps/RustboroCity/scripts.pory"
+# 1374 "data/maps/RustboroCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RustboroFaceLeft
-# 1377 "data/maps/RustboroCity/scripts.pory"
+# 1375 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 0
-# 1378 "data/maps/RustboroCity/scripts.pory"
+# 1376 "data/maps/RustboroCity/scripts.pory"
 	applymovement 18, RustboroMisaLeaveGym2
-# 1379 "data/maps/RustboroCity/scripts.pory"
+# 1377 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 18
-# 1380 "data/maps/RustboroCity/scripts.pory"
+# 1378 "data/maps/RustboroCity/scripts.pory"
 	delay 10
-# 1381 "data/maps/RustboroCity/scripts.pory"
+# 1379 "data/maps/RustboroCity/scripts.pory"
 	removeobject 18
-# 1382 "data/maps/RustboroCity/scripts.pory"
+# 1380 "data/maps/RustboroCity/scripts.pory"
 	delay 20
-# 1383 "data/maps/RustboroCity/scripts.pory"
+# 1381 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_HIDE_RUSTBORO_MISA_OUTSIDE
-# 1384 "data/maps/RustboroCity/scripts.pory"
+# 1382 "data/maps/RustboroCity/scripts.pory"
 	setvar VAR_MISA_STATE, 1
 	return
 
 
 RustboroCity_Eventscript_Promise_To_Misa::
-# 1411 "data/maps/RustboroCity/scripts.pory"
+# 1409 "data/maps/RustboroCity/scripts.pory"
 	lock
-# 1412 "data/maps/RustboroCity/scripts.pory"
+# 1410 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroCity_Eventscript_Promise_To_Misa_Text_0, MSGBOX_AUTOCLOSE
-# 1414 "data/maps/RustboroCity/scripts.pory"
+# 1412 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
-# 1415 "data/maps/RustboroCity/scripts.pory"
+# 1413 "data/maps/RustboroCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RustboroCity_Movement_PlayerWalkDown
-# 1416 "data/maps/RustboroCity/scripts.pory"
+# 1414 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 0
-# 1417 "data/maps/RustboroCity/scripts.pory"
+# 1415 "data/maps/RustboroCity/scripts.pory"
 	release
 	end
 
 
 RustboroCityGym_EventScript_Misa::
-# 1422 "data/maps/RustboroCity/scripts.pory"
+# 1420 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_MISA_RUSTBORO_GYM_TRIGGER
-# 1423 "data/maps/RustboroCity/scripts.pory"
+# 1421 "data/maps/RustboroCity/scripts.pory"
 	lockall
-# 1424 "data/maps/RustboroCity/scripts.pory"
+# 1422 "data/maps/RustboroCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RustboroCity_Movement_PlayerWalkDown
-# 1425 "data/maps/RustboroCity/scripts.pory"
+# 1423 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 0
-# 1426 "data/maps/RustboroCity/scripts.pory"
+# 1424 "data/maps/RustboroCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RustboroFaceUp
-# 1427 "data/maps/RustboroCity/scripts.pory"
+# 1425 "data/maps/RustboroCity/scripts.pory"
 	opendoor 27, 19
-# 1428 "data/maps/RustboroCity/scripts.pory"
+# 1426 "data/maps/RustboroCity/scripts.pory"
 	waitdooranim
-# 1429 "data/maps/RustboroCity/scripts.pory"
+# 1427 "data/maps/RustboroCity/scripts.pory"
 	addobject 18
-# 1430 "data/maps/RustboroCity/scripts.pory"
+# 1428 "data/maps/RustboroCity/scripts.pory"
 	applymovement 18, RustboroCity_Movement_PlayerWalkDown
+# 1429 "data/maps/RustboroCity/scripts.pory"
+	waitmovement 18
+# 1430 "data/maps/RustboroCity/scripts.pory"
+	delay 10
 # 1431 "data/maps/RustboroCity/scripts.pory"
-	waitmovement 18
-# 1432 "data/maps/RustboroCity/scripts.pory"
-	delay 10
-# 1433 "data/maps/RustboroCity/scripts.pory"
 	clearflag FLAG_HIDE_RUSTBORO_MISA_OUTSIDE
-# 1434 "data/maps/RustboroCity/scripts.pory"
+# 1432 "data/maps/RustboroCity/scripts.pory"
 	closedoor 27, 19
-# 1435 "data/maps/RustboroCity/scripts.pory"
+# 1433 "data/maps/RustboroCity/scripts.pory"
 	waitdooranim
-# 1436 "data/maps/RustboroCity/scripts.pory"
+# 1434 "data/maps/RustboroCity/scripts.pory"
 	delay 10
-# 1437 "data/maps/RustboroCity/scripts.pory"
+# 1435 "data/maps/RustboroCity/scripts.pory"
 	playse SE_PIN
-# 1438 "data/maps/RustboroCity/scripts.pory"
+# 1436 "data/maps/RustboroCity/scripts.pory"
 	applymovement 18, RustboroExclaim
-# 1439 "data/maps/RustboroCity/scripts.pory"
+# 1437 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 18
-# 1440 "data/maps/RustboroCity/scripts.pory"
+# 1438 "data/maps/RustboroCity/scripts.pory"
 	delay 20
-# 1441 "data/maps/RustboroCity/scripts.pory"
+# 1439 "data/maps/RustboroCity/scripts.pory"
 	playbgm MUS_MISA_THEME, FALSE
-# 1442 "data/maps/RustboroCity/scripts.pory"
+# 1440 "data/maps/RustboroCity/scripts.pory"
 	delay 10
-# 1443 "data/maps/RustboroCity/scripts.pory"
+# 1441 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroMisa1, MSGBOX_AUTOCLOSE
+# 1442 "data/maps/RustboroCity/scripts.pory"
+	waitmessage
+# 1443 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroMisa2, MSGBOX_AUTOCLOSE
 # 1444 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
 # 1445 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroMisa2, MSGBOX_AUTOCLOSE
-# 1446 "data/maps/RustboroCity/scripts.pory"
-	waitmessage
-# 1447 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroMisa3, MSGBOX_AUTOCLOSE
-# 1448 "data/maps/RustboroCity/scripts.pory"
-	waitmessage
-# 1449 "data/maps/RustboroCity/scripts.pory"
 	goto MisaPlayerMeetRival
 	return
 
@@ -2979,20 +2971,20 @@ RustboroMisaLeaveGym2:
 	step_end
 
 RustboroCity_Eventscript_Promise_To_Misa_Text_0:
-# 1412 "data/maps/RustboroCity/scripts.pory"
+# 1410 "data/maps/RustboroCity/scripts.pory"
 	.string "I should probably keep my promise to\n MISA...$"
 
 RustboroMisa1::
-# 1452 "data/maps/RustboroCity/scripts.pory"
+# 1448 "data/maps/RustboroCity/scripts.pory"
 	.string "Oh! Excuse me. I didn't see you there.\l It's nice to meet you.\n My name's MISA.$"
 
 RustboroMisa2::
-# 1456 "data/maps/RustboroCity/scripts.pory"
-	.string "MISA: That POKéMON.. So cute!\n So you're a new trainer? That's great!\l  It looks like you're already raising\l  your POKéMON with love and care.$"
+# 1452 "data/maps/RustboroCity/scripts.pory"
+	.string "MISA: That POKéMON.. So cute!\n So you're a new trainer? That's great!\l  It looks like you're already raising\l  your POKéMON with love and care.\p I actually have a son around the\n same age as you.\l He's also starting his journey soon.\l He should be on ROUTE 115 preparing.$"
 
 RustboroMisa3::
 # 1461 "data/maps/RustboroCity/scripts.pory"
-	.string "MISA: I actually have a son around the\n same age as you.\l He's also starting his journey soon.\l He should be on ROUTE 115 preparing.$"
+	.string "I actually have a son around the\n same age as you.\l He's also starting his journey soon.\l He should be on ROUTE 115 preparing.$"
 
 RustboroMisa4::
 # 1466 "data/maps/RustboroCity/scripts.pory"

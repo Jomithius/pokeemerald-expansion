@@ -1,9 +1,9 @@
 # 1 "data/maps/PetalburgCity_Gym/scripts.pory"
-.set LOCALID_NORMAN, 1
+.set LOCALID_NORMAN, 12
 # 2 "data/maps/PetalburgCity_Gym/scripts.pory"
-.set LOCALID_WALLY, 10
+.set LOCALID_WALLY, 9
 # 3 "data/maps/PetalburgCity_Gym/scripts.pory"
-.set LOCALID_WALLYS_DAD, 11
+.set LOCALID_WALLYS_DAD, 10
 # 4 "data/maps/PetalburgCity_Gym/scripts.pory"
 .set LOCALID_LUNA_F, 13
 # 5 "data/maps/PetalburgCity_Gym/scripts.pory"

@@ -549,42 +549,40 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 
 RustboroCity_Gym_EventScript_GiveChillingWater::
 # 279 "data/maps/RustboroCity_Gym/scripts.pory"
-	lock
-# 280 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_EventScript_GiveChillingWater_Text_0, MSGBOX_AUTOCLOSE
+# 281 "data/maps/RustboroCity_Gym/scripts.pory"
+	waitmessage
 # 282 "data/maps/RustboroCity_Gym/scripts.pory"
-	waitmessage
-# 283 "data/maps/RustboroCity_Gym/scripts.pory"
 	giveitem ITEM_TM_CHILLING_WATER
+# 283 "data/maps/RustboroCity_Gym/scripts.pory"
+	waitmessage
 # 284 "data/maps/RustboroCity_Gym/scripts.pory"
-	waitmessage
-# 285 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_Text_ExplainChillingWater, MSGBOX_AUTOCLOSE
-# 286 "data/maps/RustboroCity_Gym/scripts.pory"
+# 285 "data/maps/RustboroCity_Gym/scripts.pory"
 	waitmessage
-# 287 "data/maps/RustboroCity_Gym/scripts.pory"
+# 286 "data/maps/RustboroCity_Gym/scripts.pory"
 	setvar VAR_MISA_STATE, 3
-# 288 "data/maps/RustboroCity_Gym/scripts.pory"
+# 287 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 	end
 
 
 RustboroCity_Gym_Magmortar::
-# 301 "data/maps/RustboroCity_Gym/scripts.pory"
+# 300 "data/maps/RustboroCity_Gym/scripts.pory"
 	lock
-# 302 "data/maps/RustboroCity_Gym/scripts.pory"
+# 301 "data/maps/RustboroCity_Gym/scripts.pory"
 	playmoncry SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER
-# 303 "data/maps/RustboroCity_Gym/scripts.pory"
+# 302 "data/maps/RustboroCity_Gym/scripts.pory"
 	delay 20
-# 304 "data/maps/RustboroCity_Gym/scripts.pory"
+# 303 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 	end
 
 
 RustboroCity_Gym_EventScript_GiveChillingWater_Text_0:
-# 280 "data/maps/RustboroCity_Gym/scripts.pory"
+# 279 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "And because you were on fire,\n take this to cool off!$"
 
 RustboroCity_Gym_Text_ExplainChillingWater::
-# 293 "data/maps/RustboroCity_Gym/scripts.pory"
+# 292 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "That TECHNICAL MACHINE, TM52,\n contains CHILLING WATER.\l It's a good way to put out a POKéMON\l that's on fire!$"

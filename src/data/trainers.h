@@ -43025,8 +43025,6 @@ F_TRAINER_FEMALE |
     {
 #line 17212
         .trainerName = _("LUNA"),
-#line 17213
-        .trainerClass = TRAINER_CLASS_LEADER,
 #line 17214
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender =
@@ -43038,7 +43036,7 @@ F_TRAINER_FEMALE |
         .aiFlags = AI_FLAG_SMART_TRAINER,
 #line 17219
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
-        .partySize = 5,
+        .partySize = 6,
         .party = (const struct TrainerMon[])
         {
             {
@@ -43158,6 +43156,32 @@ F_TRAINER_FEMALE |
                 MOVE_CHARM,
                 MOVE_ASSURANCE,
                 MOVE_QUICK_ATTACK,
+            },
+            },
+            {
+#line 17270
+            .species = SPECIES_BRAIXEN,
+#line 17270
+            .gender = TRAINER_MON_FEMALE,
+#line 17274
+            .ev = TRAINER_PARTY_EVS(104, 0, 0, 120, 108, 0),
+#line 17276
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 17271
+            .ability = ABILITY_MAGICIAN,
+#line 17272
+            .lvl = 16,
+#line 17275
+            .nature = NATURE_MILD,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 17273
+            .teraType = TYPE_FIRE,
+            .moves = {
+#line 17277
+                MOVE_INCINERATE,
+                MOVE_PSYBEAM,
+                MOVE_WILL_O_WISP,
+                MOVE_SHOCK_WAVE,
             },
             },
         },

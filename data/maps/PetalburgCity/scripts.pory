@@ -1,8 +1,8 @@
 raw `.set LOCALID_WALLY, 2
 .set LOCALID_BOY, 3
 .set LOCALID_WALLYS_DAD, 5
-.set LOCALID_GYM_BOY, 8
-.set LOCALID_SCOTT, 9
+.set LOCALID_GYM_BOY, 7
+.set LOCALID_SCOTT, 8
 
 PetalburgCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
@@ -783,24 +783,25 @@ script PetalburgCity_EventScript_LunaRightTrigger{
 
 script PetalburgCity_EventScript_Luna {
     lockall
-    clearflag(FLAG_HIDE_LUNA_PETALBURG)
-    addobject(9)
-    msgbox("{PLAYER}.", MSGBOX_AUTOCLOSE)
-    waitmessage
-    applymovement(OBJ_EVENT_ID_PLAYER, PetalburgFaceDown)
-    waitmovement(0)
-    applymovement(9, PetalburgCity_LunaMove1)
-    waitmovement(9)
+    opendoor(22,7)
+	waitdooranim
+	addobject(9)
+	delay(10)
+	applymovement(9, PetalburgWalkDown)
+	waitmovement(9)
+	closedoor(22,7)
+	waitdooranim
     msgbox(PetalburgCity_LunaText1, MSGBOX_AUTOCLOSE)
     waitmessage
-	applymovement(9, PetalburgWalkUp)
+	applymovement(9, PetalburgWalkDown)
 	waitmovement(9)
     call(PetalburgCity_LunaBattle)
     waitmessage
     msgbox(PetalburgCity_LunaText2, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(9, PetalburgFaceDown)
+    applymovement(9, PetalburgCity_LunaMove1)
     waitmovement(9)
+	applymovement(OBJ_EVENT_ID_PLAYER, PetalburgFaceDown)
     msgbox(PetalburgCity_LunaText3, MSGBOX_AUTOCLOSE)
     waitmessage
 	applymovement(9, PetalburgCity_LunaLeave)
@@ -809,11 +810,9 @@ script PetalburgCity_EventScript_Luna {
 	waitmovement(9)
 	delay(30)
 	removeobject(9)
-	setflag(FLAG_HIDE_LUNA_PETALBURG)
+	setflag(FLAG_HIDE_PETALBURG_CITY_LUNA)
 	setflag(FLAG_HIDE_PETALBURG_GYM_NORMAN) 
 	setvar(VAR_RAT_CAVE_STATE, 3)
-	applymovement(OBJ_EVENT_ID_PLAYER, PetalburgFaceUp)
-	waitmovement(0)
 	releaseall
 	end
 }
@@ -825,28 +824,30 @@ script PetalburgCity_LunaBattle{
 }
 
 text PetalburgCity_LunaText1{
-	"LUNA: Thanks for getting here fast.\l
-	You got your first GYM badge huh? Nice.\l
+	"LUNA: {PLAYER}.\n
+	Thanks for getting here fast.\l
+	You got your first GYM badge huh? Nice.\p
 	Before I tell you what I need you to do,\n
-	let me make sure you're ready."}
+	let me make sure you're strong enough."}
 
 text PetalburgCity_LunaOutro{"Not bad."}
 
 text PetalburgCity_LunaText2{
-    "LUNA: Okay, you should be fine.\p
+    "LUNA: Hm...\n
+	Okay, you should be fine.\p
     Let's just say we've been having a...\n
 	little pest problem lately.\p
 	And it looks like they somehow got\n
 	into my house when I was away.\p
 	The exterminators couldn't handle it,\n
-    But a POKéMON TRAINER should be fine. "
+    But a POKéMON TRAINER should be fine.\p
+	I'd do it myself, but I have\n
+	a very important person I need to\l
+	meet with."
 }
 
 text PetalburgCity_LunaText3{
-	"LUNA: I'd do it myself, but I have\n
-	a very important person I need to\l
-	meet with.\p
-	I won't be back for awhile, so I don't\n
+	"I won't be back for awhile, and I don't\n
 	want it to get out of control.\l
 	I'll leave it to you."
 }
@@ -867,13 +868,12 @@ script PetalburgCity_EventScript_NPC_GYM{
 	applymovement(11, PetalburgCityFacePlayer)
 	waitmovement(11)
 	if(var(VAR_RAT_CAVE_STATE) == 2){
-		msgbox("Sorry, LUNA's not at the GYM\n
-		right now.", MSGBOX_NPC)
+		msgbox("I think LUNA's waiting for you.", MSGBOX_NPC)
 		waitmessage
 		release
 		end
 	}
-	elif(var(VAR_RAT_CAVE_STATE) == 3){
+	elif(var(VAR_RAT_CAVE_STATE) == 4){
 		msgbox(LunaGone_FantasiaHint, MSGBOX_NPC)
 		waitmessage
 		release
@@ -897,13 +897,12 @@ text LunaGone_FantasiaHint{
 	go to such a haunted place."}
 
 movement PetalburgCity_LunaMove1 {
-    walk_right * 10
-    walk_up
+    walk_left 
+    walk_down * 2
 } 
 
 movement PetalburgCity_LunaLeave {
-    walk_down
-	walk_left * 10
+    walk_left * 9
 } 
 
 movement PetalburgFaceUp {face_up}
@@ -911,6 +910,7 @@ movement PetalburgFaceDown {face_down}
 movement PetalburgFaceRight {face_right}
 movement PetalburgFaceLeft {face_left}
 movement PetalburgWalkUp{walk_up}
+movement PetalburgWalkDown{walk_down}
 movement PetalburgCityFacePlayer{face_player}
 movement PetalburgCity_RatCaveTriggerLeft{
 	walk_right

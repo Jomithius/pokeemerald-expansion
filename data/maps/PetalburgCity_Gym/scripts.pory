@@ -1,6 +1,6 @@
-raw`.set LOCALID_NORMAN, 1
-.set LOCALID_WALLY, 10
-.set LOCALID_WALLYS_DAD, 11
+raw`.set LOCALID_NORMAN, 12
+.set LOCALID_WALLY, 9
+.set LOCALID_WALLYS_DAD, 10
 .set LOCALID_LUNA_F, 13
 
 PetalburgCity_Gym_MapScripts::

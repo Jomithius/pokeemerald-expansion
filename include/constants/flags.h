@@ -1231,7 +1231,7 @@
 #define FLAG_ITEM_RAT_CAVE_2F_RARE_CANDY                            0x499 // Petalburg Rat Cave
 #define FLAG_ITEM_RAT_CAVE_1F_HARD_STONE                            0x49A // hidden in rock
 #define FLAG_RATDUARDO_RAT_CAVE_1                                   0x49B // Ratduardo First Battle Petalburg
-#define FLAG_ITEM_RAT_CAVE_B2F_ESCAPE_ROPE                          0x49C // Escape Rope
+#define FLAG_ITEM_RAT_CAVE_B2F_RAZOR_FANG                           0x49C // Razor Fang
 #define FLAG_ITEM_BENNIS_DOJO_EXPERT_BELT                           0x49D // Expert Belt
 #define FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH                            0x49E // Focus Sash
 #define FLAG_BENNIS_DOJO_1                                          0x49F // Bennis First Cutscene
@@ -1240,7 +1240,7 @@
 #define FLAG_RIVAL_EMO_DINNER                                       0x4A2 // After First New Rival Battle, in Misa's house
 #define FLAG_HIDE_MISA_ROUTE115                                     0x4A3 // For Rival Cutscene
 #define FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE                           0x4A4 // For post Rival
-#define FLAG_HIDE_LUNA_PETALBURG                                    0x4A5 // For Ratduardo Sidequest
+#define FLAG_HIDE_PETALBURG_CITY_LUNA                               0x4A5 // For Ratduardo Sidequest
 #define FLAG_HIDE_NPC_LUNA_HOUSE_PETALBURG                          0x4A6 // For Ratduardo Sidequest, NPC blocking door
 #define FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST             0x4A7 // For Ratduardo Sidequest, After Luna Leaves
 #define FLAG_HIDE_PETALBURG_GYM_LUNA_F                              0x4A8 // Not sure if needed, for LunaF in gym

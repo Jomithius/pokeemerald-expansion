@@ -625,7 +625,7 @@
       "elevation": 0,
       "var": "VAR_MISA_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "RustboroCityGym_EventScript_Misa"
     },
     {
       "type": "trigger",

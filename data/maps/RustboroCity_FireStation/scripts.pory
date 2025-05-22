@@ -5,8 +5,10 @@ script RustboroCity_FireStation_Maniac1{
     applymovement(1, FireStationFacePlayer)
     waitmovement(1)
     msgbox("I'm researching ROTOM. We're testing\n
-    what appliances they can inhabit.\l
-    Imagine if it could control cars!", MSGBOX_NPC)
+    what appliances they can inhabit.\p
+    We've discovered that they can change\n
+    form just from looking at a catalog.\l
+    Isn't that amazing?", MSGBOX_NPC)
     applymovement(1, FireStationFaceUp)
     waitmovement(1)
     waitmessage
@@ -67,8 +69,7 @@ script RustboroCity_FireStation_Rotom{
     applymovement(3, FireStationFacePlayer)
     waitmovement(3)
     playmoncry(SPECIES_ROTOM, CRY_MODE_ENCOUNTER)
-    msgbox("ROTOM: zzzzz!", MSGBOX_AUTOCLOSE)
-    waitmessage
+    delay(20)
     release
     end
 }
@@ -83,8 +84,35 @@ script RustboroCity_FireStation_Man2{
     If it's real, maybe I could get my\n
     hair back.", MSGBOX_NPC)
     waitmessage
+    applymovement(6, FireStationFaceUp)
+    waitmovement(6)
     release
     end
+}
+
+script RustboroCity_FireStation_Camper{
+    lock
+    applymovement(7, FireStationFacePlayer)
+    waitmovement(7)
+    if(flag(FLAG_RECEIVED_TM_WATER_PULSE) == TRUE){
+        msgbox("WATER PULSE damages the foe,\n
+        while also has a chance to confuse it!")
+        waitmessage
+        release
+        end
+    }
+    else{
+        msgbox("In case of a fire, use this!", MSGBOX_NPC)
+        waitmessage
+        giveitem(ITEM_TM_WATER_PULSE)
+        waitmessage
+        msgbox("WATER PULSE damages the foe,\n
+        while also has a chance to confuse it!")
+        waitmessage
+        setflag(FLAG_RECEIVED_TM_WATER_PULSE)
+        release
+        end
+    }
 }
 
 movement FireStationSurprised{

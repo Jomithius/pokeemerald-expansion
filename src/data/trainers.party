@@ -10646,7 +10646,7 @@ Lonely Nature
 Panpour @ Oran Berry  
 Ability: Gluttony  
 Level: 13   
-EVs: 92 HP / 100 Atk / 132 SpA / 104 Spe  
+EVs: 92 HP / 100 Atk / 68 SpA
 Lonely Nature  
 - Water Sport  
 - Water Pulse  
@@ -17210,7 +17210,7 @@ Modest Nature
 
 === TRAINER_NORMAN_PETALBURG ===
 Name: LUNA
-Class: Leader
+Class:
 Pic: Leader Norman
 Gender: Male
 Music: Male
@@ -17267,3 +17267,14 @@ Jolly Nature
 - Assurance  
 - Quick Attack  
 
+Braixen (F)  
+Ability: Magician  
+Level: 16  
+Tera Type: Fire  
+EVs: 104 HP / 108 SpA / 120 Spe  
+Mild Nature  
+IVs: 0 Atk  
+- Incinerate  
+- Psybeam  
+- Will-O-Wisp  
+- Shock Wave

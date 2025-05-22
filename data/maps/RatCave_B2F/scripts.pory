@@ -6,15 +6,7 @@ script Petalburg_RatCave_Rock {
     can be cleared anytime soon.")
     waitmessage
     release
-    
-}
-
-script RatCave_B2F_EscapeRope {
-    lockall
-    setflag(FLAG_ITEM_RAT_CAVE_B2F_ESCAPE_ROPE)
-    finditem(ITEM_ESCAPE_ROPE, 1)
-    waitmessage
-    releaseall
+    end
 }
 
 script Ratduardo1_BattleTrigger{
@@ -53,7 +45,7 @@ script Ratduardo1_BattleTrigger{
     call(RatCaveShake)
     setvar(VAR_RAT_CAVE_STATE, 4)
     releaseall
-
+    end
 }
 
 movement PlayerRatCave1{
