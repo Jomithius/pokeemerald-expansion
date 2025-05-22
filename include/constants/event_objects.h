@@ -403,6 +403,16 @@
 #define OBJ_EVENT_PAL_TAG_BENNIS                  0x1132
 #define OBJ_EVENT_PAL_TAG_ROXANNE                 0x1133
 #define OBJ_EVENT_PAL_TAG_NORMAN                  0x1134
+#define OBJ_EVENT_PAL_TAG_BRAWLY                  0x1135
+#define OBJ_EVENT_PAL_TAG_WATTSON                 0x1136
+#define OBJ_EVENT_PAL_TAG_FLANNERY                0x1137
+#define OBJ_EVENT_PAL_TAG_WINONA                  0x1138
+#define OBJ_EVENT_PAL_TAG_TATE                    0x1139
+#define OBJ_EVENT_PAL_TAG_LIZA                    0x1140
+#define OBJ_EVENT_PAL_TAG_JUAN                    0x1141
+#define OBJ_EVENT_PAL_TAG_PHOEBE                  0x1142
+#define OBJ_EVENT_PAL_TAG_GLACIA                  0x1143
+#define OBJ_EVENT_PAL_TAG_DRAKE                   0x1144
 
 
 

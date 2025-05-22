@@ -111,7 +111,14 @@
 #define TRAINER_PIC_BENNIS                93
 #define TRAINER_PIC_RATDUARDO             94
 #define TRAINER_PIC_EMO                   95
-#define TRAINER_PIC_COUNT                 96
+#define TRAINER_PIC_CEO                   96
+#define TRAINER_PIC_ARIA                  97
+#define TRAINER_PIC_MOMO                  98
+#define TRAINER_PIC_LUNA                  99
+#define TRAINER_PIC_MISA                  100
+#define TRAINER_PIC_BIKER                 101
+#define TRAINER_PIC_SPEEDWAGON            102
+#define TRAINER_PIC_COUNT                 103
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

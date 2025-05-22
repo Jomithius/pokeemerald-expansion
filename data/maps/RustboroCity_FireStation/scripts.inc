@@ -100,86 +100,84 @@ RustboroCity_FireStation_Rotom::
 # 71 "data/maps/RustboroCity_FireStation/scripts.pory"
 	playmoncry SPECIES_ROTOM, CRY_MODE_ENCOUNTER
 # 72 "data/maps/RustboroCity_FireStation/scripts.pory"
-	msgbox RustboroCity_FireStation_Rotom_Text_0, MSGBOX_AUTOCLOSE
+	delay 20
 # 73 "data/maps/RustboroCity_FireStation/scripts.pory"
-	waitmessage
-# 74 "data/maps/RustboroCity_FireStation/scripts.pory"
 	release
 	end
 
 
 RustboroCity_FireStation_Man2::
-# 79 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 78 "data/maps/RustboroCity_FireStation/scripts.pory"
 	lock
-# 80 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 79 "data/maps/RustboroCity_FireStation/scripts.pory"
 	applymovement 6, FireStationFacePlayer
+# 80 "data/maps/RustboroCity_FireStation/scripts.pory"
+	waitmovement 6
 # 81 "data/maps/RustboroCity_FireStation/scripts.pory"
-	waitmovement 6
-# 82 "data/maps/RustboroCity_FireStation/scripts.pory"
 	msgbox RustboroCity_FireStation_Man2_Text_0, MSGBOX_NPC
-# 87 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 86 "data/maps/RustboroCity_FireStation/scripts.pory"
 	waitmessage
-# 88 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 87 "data/maps/RustboroCity_FireStation/scripts.pory"
 	applymovement 6, FireStationFaceUp
-# 89 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 88 "data/maps/RustboroCity_FireStation/scripts.pory"
 	waitmovement 6
-# 90 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 89 "data/maps/RustboroCity_FireStation/scripts.pory"
 	release
 	end
 
 
 RustboroCity_FireStation_Camper::
-# 95 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 94 "data/maps/RustboroCity_FireStation/scripts.pory"
 	lock
-# 96 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 95 "data/maps/RustboroCity_FireStation/scripts.pory"
 	applymovement 7, FireStationFacePlayer
-# 97 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 96 "data/maps/RustboroCity_FireStation/scripts.pory"
 	waitmovement 7
-# 98 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 97 "data/maps/RustboroCity_FireStation/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_WATER_PULSE, RustboroCity_FireStation_Camper_1
-# 106 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 105 "data/maps/RustboroCity_FireStation/scripts.pory"
 	msgbox RustboroCity_FireStation_Camper_Text_1, MSGBOX_NPC
+# 106 "data/maps/RustboroCity_FireStation/scripts.pory"
+	waitmessage
 # 107 "data/maps/RustboroCity_FireStation/scripts.pory"
-	waitmessage
-# 108 "data/maps/RustboroCity_FireStation/scripts.pory"
 	giveitem ITEM_TM_WATER_PULSE
+# 108 "data/maps/RustboroCity_FireStation/scripts.pory"
+	waitmessage
 # 109 "data/maps/RustboroCity_FireStation/scripts.pory"
-	waitmessage
-# 110 "data/maps/RustboroCity_FireStation/scripts.pory"
 	msgbox RustboroCity_FireStation_Camper_Text_0
-# 112 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 111 "data/maps/RustboroCity_FireStation/scripts.pory"
 	waitmessage
-# 113 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 112 "data/maps/RustboroCity_FireStation/scripts.pory"
 	setflag FLAG_RECEIVED_TM_WATER_PULSE
-# 114 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 113 "data/maps/RustboroCity_FireStation/scripts.pory"
 	release
 	end
 
 RustboroCity_FireStation_Camper_1:
-# 99 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 98 "data/maps/RustboroCity_FireStation/scripts.pory"
 	msgbox RustboroCity_FireStation_Camper_Text_0
-# 101 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 100 "data/maps/RustboroCity_FireStation/scripts.pory"
 	waitmessage
-# 102 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 101 "data/maps/RustboroCity_FireStation/scripts.pory"
 	release
 	end
 
 
-# 119 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 118 "data/maps/RustboroCity_FireStation/scripts.pory"
 FireStationSurprised:
-# 120 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 119 "data/maps/RustboroCity_FireStation/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 123 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 122 "data/maps/RustboroCity_FireStation/scripts.pory"
 FireStationFacePlayer:
-# 124 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 123 "data/maps/RustboroCity_FireStation/scripts.pory"
 	face_player
 	step_end
 
-# 127 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 126 "data/maps/RustboroCity_FireStation/scripts.pory"
 FireStationFaceUp:
-# 128 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 127 "data/maps/RustboroCity_FireStation/scripts.pory"
 	face_up
 	step_end
 
@@ -203,18 +201,14 @@ RustboroCity_FireStation_FatMan_Text_1:
 # 58 "data/maps/RustboroCity_FireStation/scripts.pory"
 	.string "Hey! I'm working.\n Get out of here!$"
 
-RustboroCity_FireStation_Rotom_Text_0:
-# 72 "data/maps/RustboroCity_FireStation/scripts.pory"
-	.string "ROTOM: zzzzz!$"
-
 RustboroCity_FireStation_Man2_Text_0:
-# 82 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 81 "data/maps/RustboroCity_FireStation/scripts.pory"
 	.string "I recently heard that there's a mage\n who sells a special drink that can\l change your appearance overnight.\p If it's real, maybe I could get my\n hair back.$"
 
 RustboroCity_FireStation_Camper_Text_0:
-# 99 "data/maps/RustboroCity_FireStation/scripts.pory"
-	.string "WATER PULSE not only damages the foe.\n It also has a chance to confuse it!$"
+# 98 "data/maps/RustboroCity_FireStation/scripts.pory"
+	.string "WATER PULSE damages the foe,\n while also has a chance to confuse it!$"
 
 RustboroCity_FireStation_Camper_Text_1:
-# 106 "data/maps/RustboroCity_FireStation/scripts.pory"
+# 105 "data/maps/RustboroCity_FireStation/scripts.pory"
 	.string "In case of a fire, use this!$"
