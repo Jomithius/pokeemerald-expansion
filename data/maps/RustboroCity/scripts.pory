@@ -105,6 +105,7 @@ RustboroCity_EventScript_MatchCallTutorial::
 	playse SE_EXIT
 	removeobject LOCALID_SCIENTIST
 	setflag FLAG_HIDE_RUSTBORO_CITY_SCIENTIST
+	setflag FLAG_SYS_STAT_EDIT_GET
 	setvar VAR_RUSTBORO_CITY_STATE, 7
 	setvar VAR_RAT_CAVE_STATE, 1
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
@@ -1266,7 +1267,7 @@ RustboroCity_Text_CuttersHouse:
 	.string "CUTTER'S HOUSE$"
 
 RustboroCity_Text_DevelopedNewPokenavFeature:
-	.string "I've been developing an added feature\n"
+	.string "I've been developing new features\n"
 	.string "for the POKéNAV…\p"
 	.string "And it turned out great!\p"
 	.string "{PLAYER}, may I see that POKéNAV?\n"
@@ -1288,6 +1289,12 @@ RustboroCity_Text_PleaseSelectPokenav:
 	.string "Please select the POKéNAV.$"
 
 RustboroCity_Text_IdBetterGetBackToWork:
+	.string "I also added another feature named\n"
+	.string "EDIT STATS to your POKéNAV.\p"
+	.string "You can use it to edit the IVs\n"
+	.string "and EVs of your POKéMON.\p"
+	.string "To use it, just select a POKéMON\n"
+	.string "from within the party menu.\p"
 	.string "Okay, I'd better get back to work.\n"
 	.string "Please take care, {PLAYER}!$"
 

@@ -100,7 +100,11 @@
     "RustboroCity_Misa_House1F",
     "RustboroCity_Misa_House2F",
     "RustboroCity_Misa_House3F",
-    "RustboroCity_FireStation"
+    "RustboroCity_FireStation",
+    "RusturfTunnel_2F",
+    "RusturfTunnel_3F",
+    "RusturfTunnel_2F_Room2",
+    "Route116_RusturfTunnel_Peak"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

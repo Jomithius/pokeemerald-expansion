@@ -1186,3 +1186,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RustboroCity_Misa_House3F/scripts.inc"
 
 	.include "data/maps/RustboroCity_FireStation/scripts.inc"
+
+	.include "data/maps/RusturfTunnel_2F/scripts.inc"
+
+	.include "data/maps/RusturfTunnel_3F/scripts.inc"
+
+	.include "data/maps/RusturfTunnel_2F_Room2/scripts.inc"
+
+	.include "data/maps/Route116_RusturfTunnel_Peak/scripts.inc"

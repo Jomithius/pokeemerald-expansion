@@ -4570,6 +4570,46 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/RustboroCity_FireStation/border.bin",
       "blockdata_filepath": "data/layouts/RustboroCity_FireStation/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTURF_TUNNEL_2F",
+      "name": "RusturfTunnel_2F_Layout",
+      "width": 24,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/RusturfTunnel_2F/border.bin",
+      "blockdata_filepath": "data/layouts/RusturfTunnel_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTURF_TUNNEL_3F",
+      "name": "RusturfTunnel_3F_Layout",
+      "width": 24,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/RusturfTunnel_3F/border.bin",
+      "blockdata_filepath": "data/layouts/RusturfTunnel_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTURF_TUNNEL_2F_ROOM2",
+      "name": "RusturfTunnel_2F_Room2_Layout",
+      "width": 14,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/RusturfTunnel_2F_Room2/border.bin",
+      "blockdata_filepath": "data/layouts/RusturfTunnel_2F_Room2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE116_RUSTURF_TUNNEL_PEAK",
+      "name": "Route116_RusturfTunnel_Peak_Layout",
+      "width": 19,
+      "height": 29,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route116_RusturfTunnel_Peak/border.bin",
+      "blockdata_filepath": "data/layouts/Route116_RusturfTunnel_Peak/map.bin"
     }
   ]
 }
