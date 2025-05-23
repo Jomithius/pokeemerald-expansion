@@ -17246,14 +17246,16 @@ Tera Type: Ground
 - Rock Tomb  
 - Bulldoze  
 
-Milcery  
-Ability: Sweet Veil  
-Level: 13  
-Tera Type: Fairy  
+Roselia  
+Ability: Poison Point  
+Level: 14  
+EVs: 220 HP / 116 Def / 96 SpD / 44 Spe  
+Bold Nature  
 IVs: 0 Atk  
-- Draining Kiss  
-- Round  
-- Aromatherapy  
+- Leech Seed  
+- Mega Drain  
+- Sludge  
+- Ingrain 
 
 Buneary (F)  
 Ability: Limber  

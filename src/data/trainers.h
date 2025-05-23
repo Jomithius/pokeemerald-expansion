@@ -43113,45 +43113,47 @@ F_TRAINER_FEMALE |
             },
             {
 #line 17249
-            .species = SPECIES_MILCERY,
+            .species = SPECIES_ROSELIA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 17253
+#line 17252
+            .ev = TRAINER_PARTY_EVS(220, 0, 116, 44, 0, 96),
+#line 17254
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 17250
-            .ability = ABILITY_SWEET_VEIL,
+            .ability = ABILITY_POISON_POINT,
 #line 17251
-            .lvl = 13,
-            .nature = NATURE_HARDY,
+            .lvl = 14,
+#line 17253
+            .nature = NATURE_BOLD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 17252
-            .teraType = TYPE_FAIRY,
             .moves = {
-#line 17254
-                MOVE_DRAINING_KISS,
-                MOVE_ROUND,
-                MOVE_AROMATHERAPY,
+#line 17255
+                MOVE_LEECH_SEED,
+                MOVE_MEGA_DRAIN,
+                MOVE_SLUDGE,
+                MOVE_INGRAIN,
             },
             },
             {
-#line 17258
-            .species = SPECIES_BUNEARY,
-#line 17258
-            .gender = TRAINER_MON_FEMALE,
-#line 17262
-            .ev = TRAINER_PARTY_EVS(12, 248, 0, 248, 0, 0),
-#line 17264
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 17259
-            .ability = ABILITY_LIMBER,
 #line 17260
+            .species = SPECIES_BUNEARY,
+#line 17260
+            .gender = TRAINER_MON_FEMALE,
+#line 17264
+            .ev = TRAINER_PARTY_EVS(12, 248, 0, 248, 0, 0),
+#line 17266
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 17261
+            .ability = ABILITY_LIMBER,
+#line 17262
             .lvl = 16,
-#line 17263
+#line 17265
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 17261
+#line 17263
             .teraType = TYPE_NORMAL,
             .moves = {
-#line 17264
+#line 17266
                 MOVE_COVET,
                 MOVE_CHARM,
                 MOVE_ASSURANCE,
@@ -43159,25 +43161,25 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 17269
-            .species = SPECIES_BRAIXEN,
-#line 17269
-            .gender = TRAINER_MON_FEMALE,
-#line 17273
-            .ev = TRAINER_PARTY_EVS(104, 0, 0, 120, 108, 0),
-#line 17275
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 17270
-            .ability = ABILITY_MAGICIAN,
 #line 17271
+            .species = SPECIES_BRAIXEN,
+#line 17271
+            .gender = TRAINER_MON_FEMALE,
+#line 17275
+            .ev = TRAINER_PARTY_EVS(104, 0, 0, 120, 108, 0),
+#line 17277
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 17272
+            .ability = ABILITY_MAGICIAN,
+#line 17273
             .lvl = 16,
-#line 17274
+#line 17276
             .nature = NATURE_MILD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 17272
+#line 17274
             .teraType = TYPE_FIRE,
             .moves = {
-#line 17276
+#line 17278
                 MOVE_INCINERATE,
                 MOVE_PSYBEAM,
                 MOVE_WILL_O_WISP,

@@ -9,7 +9,7 @@ script Lina_House_EventScript_Pokeball{
     EEVEE.\p
     Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_EEVEE, 15, ITEM_SILK_SCARF)
+        givemon(SPECIES_EEVEE, 15, ITEM_ABILITY_CAPSULE)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
@@ -74,7 +74,7 @@ text LinaHouse_NotChosen{
     and look at the title.")
     waitmessage
     showmonpic(SPECIES_LUCARIO, 10, 4)
-    msgbox("Muscles & Monsters")
+    msgbox("“Muscles & Monsters”")
     waitmessage
     hidemonpic
     msgbox("... \p

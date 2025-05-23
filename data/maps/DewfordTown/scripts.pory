@@ -802,3 +802,45 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
 `
+script DewfordTown_EventScript_Man{
+	lock
+	if(var(VAR_BENNIS_DOJO_STATE) == 0){
+		msgbox(DewfordTown_Text_BennisDojoHint, MSGBOX_NPC)
+	}
+	elif(var(VAR_BENNIS_DOJO_STATE) == 1){
+	msgbox(DewfordTown_Text_BennisLeft, MSGBOX_NPC)
+	}
+	elif(var(VAR_BENNIS_DOJO_STATE) >= 6){
+		msgbox(DewfordTown_Text_BennisReturn, MSGBOX_NPC)
+	}
+	else{
+		msgbox(DewfordTown_Text_GYM_Relocated, MSGBOX_NPC)
+	}
+	waitmessage
+	release
+	end
+}
+
+text DewfordTown_Text_BennisDojoHint{
+	"The POKéMON GYM was relocated to SLATEPORT\n
+	CITY around a year ago.\p
+	But recently, three people moved into the old\n
+	building, saying they were looking for somebody."
+}
+
+text DewfordTown_Text_BennisLeft{
+	"I just saw those three run out the GYM in\n
+	a rush!\p
+	What did you do to them?"
+}
+
+text DewfordTown_Text_BennisReturn{
+	"Those three are back again.\n
+	Did they really like this quiet town that much?"
+}
+
+text DewfordTown_Text_GYM_Relocated{
+	"The POKéMON GYM was relocated to SLATEPORT\n
+	CITY around a year ago.\p
+	That was the only interesting thing our\n
+	small town had..."}

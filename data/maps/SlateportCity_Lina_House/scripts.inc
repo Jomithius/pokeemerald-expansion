@@ -25,7 +25,7 @@ Lina_House_EventScript_Pokeball_1:
 
 Lina_House_EventScript_Pokeball_2:
 # 12 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	givemon SPECIES_EEVEE, 15, ITEM_SILK_SCARF
+	givemon SPECIES_EEVEE, 15, ITEM_ABILITY_CAPSULE
 # 13 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Lina_House_EventScript_Pokeball_5
@@ -172,7 +172,7 @@ Lina_House_EventScript_Bookshelf_Text_0:
 
 Lina_House_EventScript_Bookshelf_Text_1:
 # 77 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	.string "Muscles & Monsters$"
+	.string "“Muscles & Monsters”$"
 
 Lina_House_EventScript_Bookshelf_Text_2:
 # 80 "data/maps/SlateportCity_Lina_House/scripts.pory"
