@@ -34,18 +34,6 @@ Route102_Text_CalvinRematchPostBattle:
 	.string "If you're going to get stronger,\n"
 	.string "I'll get stronger, too.$"
 
-Route102_Text_AllenIntro:
-	.string "Did you just become a TRAINER?\n"
-	.string "We're both beginners!$"
-
-Route102_Text_AllenDefeated:
-	.string "I called you because I thought\n"
-	.string "I could beat you…$"
-
-Route102_Text_AllenPostBattle:
-	.string "I haven't won once yet…\n"
-	.string "I wish I would win soon…$"
-
 Route102_Text_RickIntro:
 	.string "Hahah! Our eyes met!\n"
 	.string "I'll take you on with my BUG POKéMON!$"
@@ -279,20 +267,6 @@ Route104_Text_MiaNotEnoughMons:
 	.string "It's a big no-no if you don't have two\n"
 	.string "POKéMON with you.\l"
 	.string "We're too strong for you!$"
-
-Route104_Text_IvanIntro:
-	.string "Why keep it a secret?\n"
-	.string "I'm the WATER POKéMON expert!\p"
-	.string "Huh?\n"
-	.string "You don't know me?$"
-
-Route104_Text_IvanDefeat:
-	.string "I thought I wasn't too bad, if I may\n"
-	.string "say so, but I guess not… Bleah…$"
-
-Route104_Text_IvanPostBattle:
-	.string "I got too into fishing.\n"
-	.string "I forgot I had to raise my POKéMON…$"
 
 Route104_Text_BillyIntro:
 	.string "Leaving footprints in the sand is\n"
@@ -2217,46 +2191,6 @@ Route116_Text_JanicePostBattle:
 	.string "POKéMON that possess cuteness and\n"
 	.string "power, that's ideal, I think.$"
 
-Route116_Text_JerryIntro:
-	.string "We learn all sorts of things at the\n"
-	.string "TRAINER'S SCHOOL.\p"
-	.string "I want to test things out for real!$"
-
-Route116_Text_JerryDefeat:
-	.string "I slacked off in school…\n"
-	.string "That's why I lost.$"
-
-Route116_Text_JerryPostBattle:
-	.string "I'll have to redo some courses at\n"
-	.string "the TRAINER'S SCHOOL.\l"
-	.string "If I don't, my mom will be steamed.$"
-
-Route116_Text_JerryRegister1:
-	.string "I learned at the TRAINER'S SCHOOL\n"
-	.string "that a POKéNAV can register TRAINERS.\p"
-	.string "I don't really get what that means,\n"
-	.string "so can I just try it?$"
-
-Route116_Text_JerryRegister2:
-	.string "I learned at the TRAINER'S SCHOOL\n"
-	.string "that a POKéNAV can register TRAINERS.\p"
-	.string "I don't really get what that means,\n"
-	.string "so can I just try it?$"
-
-Route116_Text_JerryRematchIntro:
-	.string "I've been studying seriously at the\n"
-	.string "TRAINER'S SCHOOL.\l"
-	.string "I won't lose like I did last time.$"
-
-Route116_Text_JerryRematchDefeat:
-	.string "Hunh?\n"
-	.string "I studied diligently.$"
-
-Route116_Text_JerryPostRematch:
-	.string "I'll have to redo some courses at\n"
-	.string "the TRAINER'S SCHOOL.\l"
-	.string "If I don't, ROXANNE will be steamed.$"
-
 Route116_Text_KarenIntro:
 	.string "I study at school, and I study on\n"
 	.string "the way home, too!$"
@@ -2287,34 +2221,6 @@ Route116_Text_KarenRematchDefeat:
 Route116_Text_KarenPostRematch:
 	.string "You've beaten ROXANNE?\n"
 	.string "I can't beat you, then. Not yet.$"
-
-Route116_Text_SarahIntro:
-	.string "Just so you know, I've never once been\n"
-	.string "bested by anyone at anything.$"
-
-Route116_Text_SarahDefeat:
-	.string "Oh, my goodness.\n"
-	.string "This is a new experience for me.$"
-
-Route116_Text_SarahPostBattle:
-	.string "My life of luxury affords me all that\n"
-	.string "I could possibly desire.\p"
-	.string "However, when it comes to POKéMON,\n"
-	.string "my wealth has no meaning.$"
-
-Route116_Text_DawsonIntro:
-	.string "When you lay your eyes on my POKéMON's\n"
-	.string "gorgeous fur, their beauty will render\l"
-	.string "you helpless!$"
-
-Route116_Text_DawsonDefeat:
-	.string "Oh, baby, say it isn't so!$"
-
-Route116_Text_DawsonPostBattle:
-	.string "Oh, no, no, no!\n"
-	.string "You've mussed up my POKéMON's fur!\l"
-	.string "You've ruined my hairdo, too!\l"
-	.string "I'll have to call my stylist now!$"
 
 Route116_Text_DevanIntro:
 	.string "We'll rock you hard!$"
@@ -4133,18 +4039,6 @@ Route127_Text_KojiRematchDefeat:
 Route127_Text_KojiPostRematch:
 	.string "Want to go barefoot for a while?\n"
 	.string "So I can try your RUNNING SHOES?$"
-
-Route127_Text_AthenaIntro:
-	.string "We should have a slow and methodical\n"
-	.string "match.$"
-
-Route127_Text_AthenaDefeat:
-	.string "You didn't give me the chance to\n"
-	.string "do any strategizing.$"
-
-Route127_Text_AthenaPostBattle:
-	.string "When I'm surrounded by the blue sea\n"
-	.string "and sky, it feels as if time slows down.$"
 
 Route128_Text_IsaiahIntro:
 	.string "EVER GRANDE CITY is still a long ways\n"

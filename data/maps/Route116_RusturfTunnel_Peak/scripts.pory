@@ -1,1 +1,153 @@
 mapscripts Route116_RusturfTunnel_Peak_MapScripts {}
+
+script Route116_RusturfTunnel_Peak_Jolteon {
+    lock
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    playmoncry(SPECIES_JOLTEON, CRY_MODE_ENCOUNTER)
+    delay(20)
+    release
+    end
+}
+
+script Route116_RusturfTunnel_Peak_Pumpkaboo{
+    lock
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    playmoncry(SPECIES_PUMPKABOO, CRY_MODE_ENCOUNTER)
+    delay(20)
+    release
+    end
+}
+
+script Route116_RusturfTunnel_Peak_Ribombee{
+    lockall
+    setflag(FLAG_RIBOMBEE_TOTEM)
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    playmoncry(SPECIES_RIBOMBEE, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_RIBOMBEE_TOTEM, 20, ITEM_WISE_GLASSES)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        call(RibombeeWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(RibombeeWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(RibombeeFailed)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(RibombeeFailed)
+	}
+    waitmessage
+	releaseall
+    end
+}
+ 
+script RibombeeWon_Caught {
+    fadescreen(FADE_TO_BLACK)
+    removeobject(4)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+	return
+}
+ 
+script RibombeeFailed {
+	playmoncry(SPECIES_RIBOMBEE, CRY_MODE_ENCOUNTER)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(4)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+    msgbox("The RIBOMBEE disappeared...")
+	return
+}
+
+script Route116_RusturfTunnel_Peak_Daca{
+    lock
+    delay(20)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(2)
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(2)
+    msgbox(Route116_RusturfTunnel_Peak_DacaText1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(Route116_RusturfTunnel_Peak_DacaText2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    goto(Route116_RusturfTunnel_Peak_DacaLeave)
+}
+
+text Route116_RusturfTunnel_Peak_DacaText1{
+    "Huh?\n
+    Who are you?\l
+    ...\p
+    Oh, a challenger?\n
+    Hahaha, my bad!\p
+    I'm DACA, LEADER of the MAUVILLE CITY\n
+    POKéMON GYM."
+}
+
+text Route116_RusturfTunnel_Peak_DacaText2{
+    "DACA: I was grabbing some rare herbs\n 
+    for a sick HOUNDOUR that's being\l
+    cared for at the DAYCARE.\p
+    Well, sorry to make you come\n
+    all the way up here!\p
+    I'll wait for you back at the GYM.\n
+    Then we can party! Hahaha!"
+}
+
+script Route116_RusturfTunnel_Peak_DacaLeave{
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
+    if(var(VAR_TEMP_1) == DIR_NORTH){
+        applymovement(1, RusturfTunnel_Peak_ReturnToPokeball)
+        waitmovement(1)
+        removeobject(1)
+        applymovement(3, RusturfTunnel_Peak_ReturnToPokeball)
+        waitmovement(3)
+        removeobject(3)
+        delay(20)
+        applymovement(2, Route116_RusturfTunnel_Peak_DacaLeave1)
+        delay(20)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+        waitmovement(2)
+        delay(30)
+        removeobject(2)
+        setflag(FLAG_HIDE_DACA_RUSTURF_PEAK)
+        release
+        end
+    }
+    else{
+        applymovement(1, RusturfTunnel_Peak_ReturnToPokeball)
+        waitmovement(1)
+        removeobject(1)
+        applymovement(3, RusturfTunnel_Peak_ReturnToPokeball)
+        waitmovement(3)
+        removeobject(3)
+        delay(20)
+        applymovement(2, Route116_RusturfTunnel_Peak_DacaLeave2)
+        delay(20)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+        waitmovement(2)
+        delay(30)
+        removeobject(2)
+        setflag(FLAG_HIDE_DACA_RUSTURF_PEAK)
+        release
+        end
+    }
+}
+
+movement Route116_RusturfTunnel_Peak_DacaLeave1{
+    walk_left
+    walk_down * 9
+}
+
+movement Route116_RusturfTunnel_Peak_DacaLeave2{
+    walk_down * 8
+}
+
+movement RusturfTunnel_Peak_ReturnToPokeball{
+    enter_pokeball
+}

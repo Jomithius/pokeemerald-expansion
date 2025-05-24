@@ -822,25 +822,27 @@ script DewfordTown_EventScript_Man{
 }
 
 text DewfordTown_Text_BennisDojoHint{
-	"The POKéMON GYM was relocated to SLATEPORT\n
-	CITY around a year ago.\p
-	But recently, three people moved into the old\n
-	building, saying they were looking for somebody."
+	"The POKéMON GYM was relocated to\n
+	SLATEPORT CITY around a year ago.\p
+	But recently, three people moved into\n
+	the old building, saying they were lookin\l
+	for somebody."
 }
 
 text DewfordTown_Text_BennisLeft{
-	"I just saw those three run out the GYM in\n
-	a rush!\p
+	"I just saw those three run out the GYM\n
+	in a rush!\p
 	What did you do to them?"
 }
 
 text DewfordTown_Text_BennisReturn{
 	"Those three are back again.\n
-	Did they really like this quiet town that much?"
+	Did they really like this quiet town\l
+	that much?"
 }
 
 text DewfordTown_Text_GYM_Relocated{
-	"The POKéMON GYM was relocated to SLATEPORT\n
-	CITY around a year ago.\p
+	"The POKéMON GYM was relocated to\n
+	SLATEPORT CITY around a year ago.\p
 	That was the only interesting thing our\n
 	small town had..."}

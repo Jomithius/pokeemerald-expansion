@@ -19,13 +19,13 @@
       "x": 5,
       "y": 9,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Route116_RusturfTunnel_Peak_Jolteon",
+      "flag": "FLAG_HIDE_DACA_RUSTURF_PEAK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WATTSON",
@@ -37,6 +37,71 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_RusturfTunnel_Peak_Daca",
+      "flag": "FLAG_HIDE_DACA_RUSTURF_PEAK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PUMPKABOO_SMALL)",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_RusturfTunnel_Peak_Pumpkaboo",
+      "flag": "FLAG_HIDE_DACA_RUSTURF_PEAK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RIBOMBEE_TOTEM)",
+      "x": 15,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_RusturfTunnel_Peak_Ribombee",
+      "flag": "FLAG_RIBOMBEE_TOTEM"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FARFETCHD)",
+      "x": 12,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PACHIRISU)",
+      "x": 6,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FARFETCHD_GALAR)",
+      "x": 16,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
     }
@@ -44,7 +109,7 @@
   "warp_events": [
     {
       "x": 15,
-      "y": 24,
+      "y": 23,
       "elevation": 0,
       "dest_map": "MAP_RUSTURF_TUNNEL_3F",
       "dest_warp_id": "1"
@@ -54,6 +119,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_WHITE_HERB",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_RUSTURF_PEAK_WHITE_HERB"
+    },
+    {
+      "type": "hidden_item",
+      "x": 7,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_POWER_HERB",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_RUSTURF_PEAK_POWER_HERB"
+    }
   ]
 }

@@ -28,7 +28,7 @@
       "flag": "FLAG_PETALBURG_RATICATE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE_ALOLA)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE_ALOLA_TOTEM)",
       "x": 15,
       "y": 3,
       "elevation": 0,

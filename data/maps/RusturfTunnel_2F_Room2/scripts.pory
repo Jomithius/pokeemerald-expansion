@@ -1,1 +1,92 @@
 mapscripts RusturfTunnel_2F_Room2_MapScripts {}
+
+script RusturfTunnel_2F_Room2_Galvantula{
+    lockall
+    setflag(FLAG_RUSTURF_GALVANTULA)
+    applymovement(5, Common_Movement_FacePlayer)
+    waitmovement(5)
+    playmoncry(SPECIES_GALVANTULA, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_GALVANTULA, 21, ITEM_MAGNET)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        call(GalvantulaWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(GalvantulaWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(GalvantulaFailed)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(GalvantulaFailed)
+	}
+    waitmessage
+	releaseall
+    end
+}
+ 
+script GalvantulaWon_Caught {
+    fadescreen(FADE_TO_BLACK)
+    removeobject(5)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+	return
+}
+ 
+script GalvantulaFailed {
+	playmoncry(SPECIES_GALVANTULA, CRY_MODE_ENCOUNTER)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(5)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+    msgbox("The GALVANTULA disappeared...")
+	return
+}
+
+
+script RusturfTunnel_2F_Room2_Ariados{
+    lockall
+    setflag(FLAG_RUSTURF_ARIADOS)
+    applymovement(6, Common_Movement_FacePlayer)
+    waitmovement(6)
+    playmoncry(SPECIES_ARIADOS, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ARIADOS, 21, ITEM_BIG_NUGGET)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        call(AriadosWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(AriadosWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(AriadosFailed)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(AriadosFailed)
+	}
+    waitmessage
+	releaseall
+    end
+}
+ 
+script AriadosWon_Caught {
+    fadescreen(FADE_TO_BLACK)
+    removeobject(6)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+	return
+}
+ 
+script AriadosFailed {
+	playmoncry(SPECIES_ARIADOS, CRY_MODE_ENCOUNTER)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(6)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+    msgbox("The ARIADOS disappeared...")
+	return
+}

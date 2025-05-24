@@ -50,11 +50,6 @@ Route127_EventScript_Aidan::
 	msgbox Route127_Text_AidanPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route127_EventScript_Athena::
-	trainerbattle_single TRAINER_ATHENA, Route127_Text_AthenaIntro, Route127_Text_AthenaDefeat
-	msgbox Route127_Text_AthenaPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route127_EventScript_Koji::
 	trainerbattle_single TRAINER_KOJI_1, Route127_Text_KojiIntro, Route127_Text_KojiDefeat, Route127_EventScript_RegisterKoji
 	specialvar VAR_RESULT, ShouldTryRematchBattle

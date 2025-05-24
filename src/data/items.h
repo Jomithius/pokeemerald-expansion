@@ -11198,16 +11198,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_CHILLING_WATER, // custom
     },
 
-    [ITEM_TM53] =
+    [ITEM_TM_DEFOG] =
     {
         .name = _("TM53"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Reduces the foe's\n"
+            "evasion and\n"
+            "removes hazards."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_DEFOG, // Todo
     },
 
     [ITEM_TM54] =

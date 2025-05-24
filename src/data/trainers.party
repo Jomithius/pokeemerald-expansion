@@ -4833,8 +4833,7 @@ Quiet Nature
 
 Tentacool @ Oran Berry  
 Ability: Liquid Ooze  
-Level: 14  
-Tera Type: Water  
+Level: 14   
 EVs: 100 HP / 112 Def / 164 SpA  
 Lax Nature  
 IVs: 0 Atk  
@@ -4844,8 +4843,7 @@ IVs: 0 Atk
 
 Magby @ Sitrus Berry  
 Ability: Flame Body  
-Level: 15  
-Tera Type: Fire  
+Level: 15   
 EVs: 104 HP / 60 Def / 196 SpA / 148 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -5155,18 +5153,35 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Ice Beam
 - Rest
 
-=== TRAINER_JERRY_1 ===
+=== TRAINER_JERRY_1 === /*Removed Match Call, others are free*/
 Name: JERRY
-Class: School Kid
-Pic: School Kid M
+Class: Cooltrainer
+Pic: Cooltrainer M
 Gender: Male
-Music: Male
+Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Ralts
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Quagsire  
+Ability: Unaware  
+Level: 20  
+EVs: 236 HP / 236 SpA / 36 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Chilling Water  
+- Mud Shot  
+- Haze  
+- Acid Spray
+
+Swoobat  
+Ability: Unaware  
+Level: 20   
+EVs: 240 HP / 56 Def / 160 SpA / 28 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Air Slash  
+- Swift  
+- Confusion
 
 === TRAINER_TED ===
 Name: TED
@@ -6265,20 +6280,21 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALLEN ===
 Name: ALLEN
-Class: Youngster
-Pic: Youngster
+Class: Bug Catcher
+Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Joltik
+Level: 15
 
-Taillow
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Spinarak
+Level: 16
+
+Ledian
+Level: 18
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -6379,24 +6395,22 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_IVAN ===
 Name: IVAN
-Class: Fisherman
-Pic: Fisherman
+Class: Hiker
+Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Magikarp
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Geodude @ Lagging Tail
+Level: 15
 
-Magikarp
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Loudred @ Lagging Tail
+Level: 17
 
-Magikarp
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Onix @ Lagging Tail
+Level: 16
+
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -10717,27 +10731,32 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ATHENA ===
-Name: ATHENA
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Hyper Potion
+Name: ATHEN
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Manectric
-Level: 32
+Gurdurr
+Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder
-- Thunder Wave
-- Quick Attack
+- Bulk Up
+- Low Kick
+- Focus Energy
+- Rock Throw
 
-Linoone
-Level: 32
+Machoke
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Surf
-- Thief
+- Bulk Up
+- Karate Chop
+- Knock Off
+
+Farfetch'd-Galar
+Level: 18
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HARRISON ===
 Name: HARRISON
@@ -13017,38 +13036,57 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAWSON ===
 Name: DAWSON
-Class: Rich Boy
-Pic: Rich Boy
+Class: Hiker
+Pic: Hiker
 Gender: Male
-Music: Rich
+Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Zigzagoon @ Nugget
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Stunky  
+Ability: Stench  
+Level: 20  
+EVs: 12 HP / 252 Atk / 244 Spe  
+Adamant Nature  
+- Assurance  
+- Poison Tail  
+- Tail Slap
 
-Poochyena
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Koffing @ Sitrus Berry  
+Ability: Levitate  
+Level: 20   
+EVs: 236 HP / 36 SpA / 236 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Poison Gas  
+- Sludge  
+- Belch
 
 === TRAINER_SARAH ===
 Name: SARAH
-Class: Lady
-Pic: Lady
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Clefairy  
+Ability: Friend Guard  
+Level: 19  
+- Follow Me  
+- Icy Wind  
+- Draining Kiss
 
-Zigzagoon @ Nugget
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dunsparce @ Oran Berry  
+Ability: Serene Grace  
+Level: 19  
+EVs: 152 HP / 56 Atk / 72 SpD / 212 Spe  
+Jolly Nature  
+- Headbutt  
+- Ancient Power  
+- Bulldoze
+
 
 === TRAINER_DARIAN ===
 Name: DARIAN
@@ -17220,7 +17258,6 @@ Mugshot: Yellow
 Zigzagoon @ Oran Berry  
 Ability: Gluttony  
 Level: 13  
-Tera Type: Normal  
 EVs: 124 Atk / 64 Def / 92 SpD / 140 Spe  
 Adamant Nature  
 - Covet  
@@ -17229,8 +17266,7 @@ Adamant Nature
 
 Salandit (F)  
 Ability: Corrosion  
-Level: 14  
-Tera Type: Poison  
+Level: 14   
 EVs: 140 SpA / 32 Spe  
 Mild Nature  
 IVs: 0 Atk  
@@ -17241,7 +17277,6 @@ IVs: 0 Atk
 Golett  
 Ability: Iron Fist  
 Level: 14  
-Tera Type: Ground  
 - Astonish  
 - Rock Tomb  
 - Bulldoze  
@@ -17259,8 +17294,7 @@ IVs: 0 Atk
 
 Buneary (F)  
 Ability: Limber  
-Level: 16  
-Tera Type: Normal  
+Level: 16   
 EVs: 12 HP / 248 Atk / 248 Spe  
 Jolly Nature  
 - Covet  
@@ -17271,7 +17305,6 @@ Jolly Nature
 Braixen (F)  
 Ability: Magician  
 Level: 16  
-Tera Type: Fire  
 EVs: 104 HP / 108 SpA / 120 Spe  
 Mild Nature  
 IVs: 0 Atk  

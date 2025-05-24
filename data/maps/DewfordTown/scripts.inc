@@ -1644,16 +1644,16 @@ DewfordTown_EventScript_Man_4:
 
 DewfordTown_Text_BennisDojoHint::
 # 824 "data/maps/DewfordTown/scripts.pory"
-	.string "The POKéMON GYM was relocated to SLATEPORT\n CITY around a year ago.\p But recently, three people moved into the old\n building, saying they were looking for somebody.$"
+	.string "The POKéMON GYM was relocated to\n SLATEPORT CITY around a year ago.\p But recently, three people moved into\n the old building, saying they were lookin\l for somebody.$"
 
 DewfordTown_Text_BennisLeft::
-# 831 "data/maps/DewfordTown/scripts.pory"
-	.string "I just saw those three run out the GYM in\n a rush!\p What did you do to them?$"
+# 832 "data/maps/DewfordTown/scripts.pory"
+	.string "I just saw those three run out the GYM\n in a rush!\p What did you do to them?$"
 
 DewfordTown_Text_BennisReturn::
-# 837 "data/maps/DewfordTown/scripts.pory"
-	.string "Those three are back again.\n Did they really like this quiet town that much?$"
+# 838 "data/maps/DewfordTown/scripts.pory"
+	.string "Those three are back again.\n Did they really like this quiet town\l that much?$"
 
 DewfordTown_Text_GYM_Relocated::
-# 842 "data/maps/DewfordTown/scripts.pory"
-	.string "The POKéMON GYM was relocated to SLATEPORT\n CITY around a year ago.\p That was the only interesting thing our\n small town had...$"
+# 844 "data/maps/DewfordTown/scripts.pory"
+	.string "The POKéMON GYM was relocated to\n SLATEPORT CITY around a year ago.\p That was the only interesting thing our\n small town had...$"

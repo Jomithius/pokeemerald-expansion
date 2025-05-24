@@ -1,1 +1,81 @@
 mapscripts RusturfTunnel_3F_MapScripts {}
+
+script RusturfTunnel_3F_EventScript_DefogMan{
+    lock
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    if(flag(FLAG_RECEIVED_TM_DEFOG) == TRUE){
+        msgbox("“Why's it still foggy in here?”\n
+        This isn't fog, dude!")
+        waitmessage
+        release
+        end
+    }
+    else{
+        msgbox("Dude, if you gotta like, air a room\n
+        out quick, you can use this.", MSGBOX_NPC)
+        waitmessage
+        giveitem(ITEM_TM_DEFOG)
+        waitmessage
+        setflag(FLAG_RECEIVED_TM_DEFOG)
+        release
+        end
+    }
+}
+
+script RusturfTunnel_3F_EventScript_Sarah{
+	trainerbattle_single(TRAINER_SARAH, RusturfTunnel_3F_Text_SarahIntro, RusturfTunnel_3F_Text_SarahDefeat)
+    msgbox(RusturfTunnel_3F_Text_SarahPostBattle, MSGBOX_AUTOCLOSE)
+	end
+}
+
+text RusturfTunnel_3F_Text_SarahIntro{
+	"Do you smell that?"
+}
+
+text RusturfTunnel_3F_Text_SarahDefeat{
+	"Oh, my goodness."
+}
+
+text RusturfTunnel_3F_Text_SarahPostBattle{
+	"Seriously, what's that smell?"
+}
+
+script RusturfTunnel_3F_EventScript_Dawson{
+	trainerbattle_single(TRAINER_DAWSON, RusturfTunnel_3F_Text_DawsonIntro, RusturfTunnel_3F_Text_DawsonDefeat)
+    msgbox(RusturfTunnel_3F_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+	end
+}
+
+text RusturfTunnel_3F_Text_DawsonIntro{
+	"Huh?"
+}
+
+text RusturfTunnel_3F_Text_DawsonDefeat{
+	"I don't smell anything!"
+}
+
+text RusturfTunnel_3F_Text_DawsonPostBattle{
+	"Does it really smell bad?"
+}
+
+script RusturfTunnel_3F_EventScript_Jerry{
+	trainerbattle_single(TRAINER_JERRY_1, RusturfTunnel_3F_Text_JerryIntro, RusturfTunnel_3F_Text_JerryDefeat)
+    msgbox(RusturfTunnel_3F_Text_JerryPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+	end
+}
+
+text RusturfTunnel_3F_Text_JerryIntro{
+    "We learn all sorts of things at the\n
+    TRAINER'S SCHOOL."
+}
+	
+text RusturfTunnel_3F_Text_JerryDefeat{"I slacked off in school…\n 
+That's why I lost."
+}
+
+text RusturfTunnel_3F_Text_JerryPostBattle{
+    "I should've studied more."
+}

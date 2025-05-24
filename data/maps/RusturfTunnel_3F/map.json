@@ -23,34 +23,34 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_FOCUS_PUNCH",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 9,
+      "x": 11,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
-      "movement_range_x": 0,
+      "movement_range_x": 5,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "RusturfTunnel_3F_EventScript_Jerry",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 7,
+      "x": 8,
       "y": 18,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "RusturfTunnel_3F_EventScript_DefogMan",
       "flag": "0"
     },
     {
@@ -58,12 +58,12 @@
       "x": 12,
       "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "RusturfTunnel_3F_EventScript_Dawson",
       "flag": "0"
     },
     {
@@ -71,12 +71,12 @@
       "x": 15,
       "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "RusturfTunnel_3F_EventScript_Sarah",
       "flag": "0"
     },
     {
@@ -88,9 +88,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_sight_or_berry_tree_id": "ITEM_BRIGHT_POWDER",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RUSTURFTUNNEL_3F_BRIGHT_POWDER"
     }
   ],
   "warp_events": [

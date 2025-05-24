@@ -19,8 +19,8 @@
       "x": 4,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
-      "movement_range_x": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
@@ -32,7 +32,7 @@
       "x": 9,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWPIDER)",
       "x": 6,
-      "y": 2,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
@@ -76,8 +76,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RusturfTunnel_2F_Room2_Galvantula",
+      "flag": "FLAG_RUSTURF_GALVANTULA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS)",
@@ -89,8 +89,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RusturfTunnel_2F_Room2_Ariados",
+      "flag": "FLAG_RUSTURF_ARIADOS"
     }
   ],
   "warp_events": [
@@ -111,8 +111,8 @@
       "x": 2,
       "y": 12,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_BLACK_SLUDGE",
+      "flag": "FLAG_HIDDEN_ITEM_RUSTURFTUNNEL_2F_ROOM2_BLACK_SLUDGE"
     }
   ]
 }

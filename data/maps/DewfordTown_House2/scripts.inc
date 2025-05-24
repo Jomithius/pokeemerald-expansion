@@ -48,8 +48,8 @@ DewfordTown_House2_Text_ExplainSilkScarf:
 	.string "with almost all POKéMON!$"
 
 DewfordTown_House2_Text_BrawlySoCool:
-	.string "“Baldy baldy over there~, what's it like\n"
-	.string "to have no hair~?”\p"
+	.string "“Baldy baldy over there, what's it like\n"
+	.string "to have no hair?”\p"
 	.string "Those three that came here would always\n"
 	.string "sing that in the morning.\p"
 	.string "It's so cool…\n"

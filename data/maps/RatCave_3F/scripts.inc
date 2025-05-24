@@ -36,7 +36,7 @@ Petalburg_RatCave_Raticate_1:
 	waitmessage
 # 25 "data/maps/RatCave_3F/scripts.pory"
 	releaseall
-	return
+	end
 
 Petalburg_RatCave_Raticate_2:
 # 13 "data/maps/RatCave_3F/scripts.pory"
@@ -60,116 +60,116 @@ Petalburg_RatCave_Raticate_5:
 
 
 RaticateWon_Caught::
-# 29 "data/maps/RatCave_3F/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 30 "data/maps/RatCave_3F/scripts.pory"
-	removeobject 1
+	fadescreen FADE_TO_BLACK
 # 31 "data/maps/RatCave_3F/scripts.pory"
+	removeobject 1
+# 32 "data/maps/RatCave_3F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	return
 
 
 RaticateFailed::
-# 36 "data/maps/RatCave_3F/scripts.pory"
-	playmoncry SPECIES_RATICATE, CRY_MODE_ENCOUNTER
 # 37 "data/maps/RatCave_3F/scripts.pory"
-	delay 20
+	playmoncry SPECIES_RATICATE, CRY_MODE_ENCOUNTER
 # 38 "data/maps/RatCave_3F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	delay 20
 # 39 "data/maps/RatCave_3F/scripts.pory"
-	removeobject 1
+	fadescreen FADE_TO_BLACK
 # 40 "data/maps/RatCave_3F/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 5
+	removeobject 1
 # 41 "data/maps/RatCave_3F/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+# 42 "data/maps/RatCave_3F/scripts.pory"
 	msgbox RaticateFailed_Text_0
 	return
 
 
 Petalburg_RatCave_RaticateAlola::
-# 46 "data/maps/RatCave_3F/scripts.pory"
-	lockall
 # 47 "data/maps/RatCave_3F/scripts.pory"
-	setflag FLAG_PETALBURG_RATICATE_ALOLA
+	lockall
 # 48 "data/maps/RatCave_3F/scripts.pory"
-	playmoncry SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER
+	setflag FLAG_PETALBURG_RATICATE_ALOLA
 # 49 "data/maps/RatCave_3F/scripts.pory"
-	delay 40
+	playmoncry SPECIES_RATICATE_ALOLA_TOTEM, CRY_MODE_ENCOUNTER
 # 50 "data/maps/RatCave_3F/scripts.pory"
-	waitmoncry
+	delay 40
 # 51 "data/maps/RatCave_3F/scripts.pory"
-	setwildbattle SPECIES_RATICATE_ALOLA_TOTEM, 16, ITEM_ADAMANT_MINT
+	waitmoncry
 # 52 "data/maps/RatCave_3F/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_RATICATE_ALOLA_TOTEM, 16, ITEM_ADAMANT_MINT
 # 53 "data/maps/RatCave_3F/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	dowildbattle
 # 54 "data/maps/RatCave_3F/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 55 "data/maps/RatCave_3F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Petalburg_RatCave_RaticateAlola_2
-# 57 "data/maps/RatCave_3F/scripts.pory"
+# 58 "data/maps/RatCave_3F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Petalburg_RatCave_RaticateAlola_3
-# 60 "data/maps/RatCave_3F/scripts.pory"
+# 61 "data/maps/RatCave_3F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq Petalburg_RatCave_RaticateAlola_4
-# 63 "data/maps/RatCave_3F/scripts.pory"
+# 64 "data/maps/RatCave_3F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq Petalburg_RatCave_RaticateAlola_5
 Petalburg_RatCave_RaticateAlola_1:
-# 66 "data/maps/RatCave_3F/scripts.pory"
-	waitmessage
 # 67 "data/maps/RatCave_3F/scripts.pory"
+	waitmessage
+# 68 "data/maps/RatCave_3F/scripts.pory"
 	releaseall
-	return
+	end
 
 Petalburg_RatCave_RaticateAlola_2:
-# 55 "data/maps/RatCave_3F/scripts.pory"
+# 56 "data/maps/RatCave_3F/scripts.pory"
 	call RaticateAlolaWon_Caught
 	goto Petalburg_RatCave_RaticateAlola_1
 
 Petalburg_RatCave_RaticateAlola_3:
-# 58 "data/maps/RatCave_3F/scripts.pory"
+# 59 "data/maps/RatCave_3F/scripts.pory"
 	call RaticateAlolaWon_Caught
 	goto Petalburg_RatCave_RaticateAlola_1
 
 Petalburg_RatCave_RaticateAlola_4:
-# 61 "data/maps/RatCave_3F/scripts.pory"
+# 62 "data/maps/RatCave_3F/scripts.pory"
 	call RaticateAlolaFailed
 	goto Petalburg_RatCave_RaticateAlola_1
 
 Petalburg_RatCave_RaticateAlola_5:
-# 64 "data/maps/RatCave_3F/scripts.pory"
+# 65 "data/maps/RatCave_3F/scripts.pory"
 	call RaticateAlolaFailed
 	goto Petalburg_RatCave_RaticateAlola_1
 
 
 RaticateAlolaWon_Caught::
-# 71 "data/maps/RatCave_3F/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 72 "data/maps/RatCave_3F/scripts.pory"
-	removeobject 2
 # 73 "data/maps/RatCave_3F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 74 "data/maps/RatCave_3F/scripts.pory"
+	removeobject 2
+# 75 "data/maps/RatCave_3F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	return
 
 
 RaticateAlolaFailed::
-# 78 "data/maps/RatCave_3F/scripts.pory"
-	playmoncry SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER
-# 79 "data/maps/RatCave_3F/scripts.pory"
-	delay 20
 # 80 "data/maps/RatCave_3F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	playmoncry SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER
 # 81 "data/maps/RatCave_3F/scripts.pory"
-	removeobject 2
+	delay 20
 # 82 "data/maps/RatCave_3F/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 5
+	fadescreen FADE_TO_BLACK
 # 83 "data/maps/RatCave_3F/scripts.pory"
-	msgbox RaticateFailed_Text_0
+	removeobject 2
 # 84 "data/maps/RatCave_3F/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+# 85 "data/maps/RatCave_3F/scripts.pory"
+	msgbox RaticateFailed_Text_0
+# 86 "data/maps/RatCave_3F/scripts.pory"
 	waitmessage
 	return
 
 
 RaticateFailed_Text_0:
-# 41 "data/maps/RatCave_3F/scripts.pory"
+# 42 "data/maps/RatCave_3F/scripts.pory"
 	.string "The RATICATE disappeared...$"

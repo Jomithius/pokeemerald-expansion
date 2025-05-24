@@ -53,7 +53,8 @@
     F(SNATCH) \
     F(OVERHEAT) \
     F(FREEZE_DRY) \
-    F(CHILLING_WATER)
+    F(CHILLING_WATER) \
+    F(DEFOG)
 
 #define FOREACH_HM(F) \
     F(CUT) \
