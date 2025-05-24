@@ -40,9 +40,9 @@ Route116_RusturfTunnel_Peak_Ribombee::
 # 25 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	setflag FLAG_RIBOMBEE_TOTEM
 # 26 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	applymovement 3, Common_Movement_FacePlayer
+	applymovement 4, Common_Movement_FacePlayer
 # 27 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	waitmovement 3
+	waitmovement 4
 # 28 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	playmoncry SPECIES_RIBOMBEE, CRY_MODE_ENCOUNTER
 # 29 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"

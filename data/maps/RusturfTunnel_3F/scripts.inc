@@ -12,7 +12,7 @@ RusturfTunnel_3F_EventScript_DefogMan::
 # 7 "data/maps/RusturfTunnel_3F/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_DEFOG, RusturfTunnel_3F_EventScript_DefogMan_1
 # 15 "data/maps/RusturfTunnel_3F/scripts.pory"
-	msgbox RusturfTunnel_3F_EventScript_DefogMan_Text_1, MSGBOX_NPC
+	msgbox RusturfTunnel_3F_EventScript_DefogMan_Text_1, MSGBOX_AUTOCLOSE
 # 17 "data/maps/RusturfTunnel_3F/scripts.pory"
 	waitmessage
 # 18 "data/maps/RusturfTunnel_3F/scripts.pory"
@@ -20,14 +20,18 @@ RusturfTunnel_3F_EventScript_DefogMan::
 # 19 "data/maps/RusturfTunnel_3F/scripts.pory"
 	waitmessage
 # 20 "data/maps/RusturfTunnel_3F/scripts.pory"
+	msgbox RusturfTunnel_3F_EventScript_DefogMan_Text_2, MSGBOX_NPC
+# 22 "data/maps/RusturfTunnel_3F/scripts.pory"
+	waitmessage
+# 23 "data/maps/RusturfTunnel_3F/scripts.pory"
 	setflag FLAG_RECEIVED_TM_DEFOG
-# 21 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 24 "data/maps/RusturfTunnel_3F/scripts.pory"
 	release
 	end
 
 RusturfTunnel_3F_EventScript_DefogMan_1:
 # 8 "data/maps/RusturfTunnel_3F/scripts.pory"
-	msgbox RusturfTunnel_3F_EventScript_DefogMan_Text_0
+	msgbox RusturfTunnel_3F_EventScript_DefogMan_Text_0, MSGBOX_NPC
 # 10 "data/maps/RusturfTunnel_3F/scripts.pory"
 	waitmessage
 # 11 "data/maps/RusturfTunnel_3F/scripts.pory"
@@ -36,29 +40,29 @@ RusturfTunnel_3F_EventScript_DefogMan_1:
 
 
 RusturfTunnel_3F_EventScript_Sarah::
-# 27 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 30 "data/maps/RusturfTunnel_3F/scripts.pory"
 	trainerbattle_single TRAINER_SARAH, RusturfTunnel_3F_Text_SarahIntro, RusturfTunnel_3F_Text_SarahDefeat
-# 28 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 31 "data/maps/RusturfTunnel_3F/scripts.pory"
 	msgbox RusturfTunnel_3F_Text_SarahPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 
 RusturfTunnel_3F_EventScript_Dawson::
-# 45 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 48 "data/maps/RusturfTunnel_3F/scripts.pory"
 	trainerbattle_single TRAINER_DAWSON, RusturfTunnel_3F_Text_DawsonIntro, RusturfTunnel_3F_Text_DawsonDefeat
-# 46 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 49 "data/maps/RusturfTunnel_3F/scripts.pory"
 	msgbox RusturfTunnel_3F_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE
-# 47 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 50 "data/maps/RusturfTunnel_3F/scripts.pory"
 	waitmessage
 	end
 
 
 RusturfTunnel_3F_EventScript_Jerry::
-# 64 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 67 "data/maps/RusturfTunnel_3F/scripts.pory"
 	trainerbattle_single TRAINER_JERRY_1, RusturfTunnel_3F_Text_JerryIntro, RusturfTunnel_3F_Text_JerryDefeat
-# 65 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 68 "data/maps/RusturfTunnel_3F/scripts.pory"
 	msgbox RusturfTunnel_3F_Text_JerryPostBattle, MSGBOX_AUTOCLOSE
-# 66 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 69 "data/maps/RusturfTunnel_3F/scripts.pory"
 	waitmessage
 	end
 
@@ -71,38 +75,42 @@ RusturfTunnel_3F_EventScript_DefogMan_Text_1:
 # 15 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Dude, if you gotta like, air a room\n out quick, you can use this.$"
 
+RusturfTunnel_3F_EventScript_DefogMan_Text_2:
+# 20 "data/maps/RusturfTunnel_3F/scripts.pory"
+	.string "DEFOG doesn't only clear hazards, it\n also like, lowers the foe's evasion.$"
+
 RusturfTunnel_3F_Text_SarahIntro::
-# 32 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 35 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Do you smell that?$"
 
 RusturfTunnel_3F_Text_SarahDefeat::
-# 36 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 39 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Oh, my goodness.$"
 
 RusturfTunnel_3F_Text_SarahPostBattle::
-# 40 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 43 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Seriously, what's that smell?$"
 
 RusturfTunnel_3F_Text_DawsonIntro::
-# 51 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 54 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Huh?$"
 
 RusturfTunnel_3F_Text_DawsonDefeat::
-# 55 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 58 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "I don't smell anything!$"
 
 RusturfTunnel_3F_Text_DawsonPostBattle::
-# 59 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 62 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Does it really smell bad?$"
 
 RusturfTunnel_3F_Text_JerryIntro::
-# 70 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 73 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "We learn all sorts of things at the\n TRAINER'S SCHOOL.$"
 
 RusturfTunnel_3F_Text_JerryDefeat::
-# 75 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 78 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "I slacked off in school…\n  That's why I lost.$"
 
 RusturfTunnel_3F_Text_JerryPostBattle::
-# 79 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 82 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "I should've studied more.$"

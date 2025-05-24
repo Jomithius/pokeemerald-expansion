@@ -6,16 +6,19 @@ script RusturfTunnel_3F_EventScript_DefogMan{
     waitmovement(3)
     if(flag(FLAG_RECEIVED_TM_DEFOG) == TRUE){
         msgbox("“Why's it still foggy in here?”\n
-        This isn't fog, dude!")
+        This isn't fog, dude!", MSGBOX_NPC)
         waitmessage
         release
         end
     }
     else{
         msgbox("Dude, if you gotta like, air a room\n
-        out quick, you can use this.", MSGBOX_NPC)
+        out quick, you can use this.", MSGBOX_AUTOCLOSE)
         waitmessage
         giveitem(ITEM_TM_DEFOG)
+        waitmessage
+        msgbox("DEFOG doesn't only clear hazards, it\n
+        also like, lowers the foe's evasion.", MSGBOX_NPC)
         waitmessage
         setflag(FLAG_RECEIVED_TM_DEFOG)
         release

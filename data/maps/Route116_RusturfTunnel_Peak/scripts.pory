@@ -23,8 +23,8 @@ script Route116_RusturfTunnel_Peak_Pumpkaboo{
 script Route116_RusturfTunnel_Peak_Ribombee{
     lockall
     setflag(FLAG_RIBOMBEE_TOTEM)
-    applymovement(3, Common_Movement_FacePlayer)
-    waitmovement(3)
+    applymovement(4, Common_Movement_FacePlayer)
+    waitmovement(4)
     playmoncry(SPECIES_RIBOMBEE, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
