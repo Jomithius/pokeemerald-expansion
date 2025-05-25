@@ -337,6 +337,9 @@ $(OBJEVENTGFXDIR)/people/avatar.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4	
 
 $(OBJEVENTGFXDIR)/people/bennis.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/policeman.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4	
 
 $(OBJEVENTGFXDIR)/people/red.4bpp: %.4bpp: %.png

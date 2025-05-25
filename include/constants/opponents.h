@@ -280,7 +280,7 @@
 #define TRAINER_TED                         274
 #define TRAINER_PAUL                        275
 #define TRAINER_MISA                        276
-#define TRAINER_JERRY_3                     277
+#define TRAINER_SPEEDWAGON                  277
 #define TRAINER_JERRY_4                     278
 #define TRAINER_JERRY_5                     279
 #define TRAINER_KAREN_1                     280
@@ -518,10 +518,10 @@
 #define TRAINER_EDWIN_1                     512
 #define TRAINER_HECTOR                      513
 #define TRAINER_TABITHA_MOSSDEEP            514
-#define TRAINER_EDWIN_2                     515
-#define TRAINER_EDWIN_3                     516
-#define TRAINER_EDWIN_4                     517
-#define TRAINER_EDWIN_5                     518
+#define TRAINER_DARWIN                      515
+#define TRAINER_DAN                         516
+#define TRAINER_ROB                         517
+#define TRAINER_STEPHEN                     518
 #define TRAINER_WALLY_VR_1                  519
 #define TRAINER_BRENDAN_ROUTE_103_MUDKIP    520
 #define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521

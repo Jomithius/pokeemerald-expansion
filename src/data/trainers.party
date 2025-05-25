@@ -5412,10 +5412,10 @@ Quiet Nature
 - Dazzling Gleam  
 
 
-=== TRAINER_JERRY_3 ===
-Name: JERRY
-Class: School Kid
-Pic: School Kid M
+=== TRAINER_SPEEDWAGON ===
+Name: SPEEDWAGON
+Class: Biker
+Pic: Speedwagon
 Gender: Male
 Music: Male
 Double Battle: No
@@ -6646,12 +6646,12 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_DALE ===
 Name: DALE
-Class: Fisherman
-Pic: Fisherman
+Class: Biker
+Pic: Biker
 Gender: Male
-Music: Hiker
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Tentacool
 Level: 11
@@ -9611,10 +9611,10 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_EDWIN_1 ===
 Name: EDWIN
-Class: Collector
-Pic: Collector
+Class: Biker
+Pic: Biker
 Gender: Male
-Music: Suspicious
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
@@ -9664,10 +9664,10 @@ Golbat
 Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_EDWIN_2 ===
-Name: EDWIN
-Class: Collector
-Pic: Collector
+=== TRAINER_DARWIN ===
+Name: DARWIN
+Class: Biker
+Pic: Biker
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -9681,12 +9681,12 @@ Nuzleaf
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_EDWIN_3 ===
-Name: EDWIN
-Class: Collector
-Pic: Collector
+=== TRAINER_DAN ===
+Name: DAN
+Class: Biker
+Pic: Biker
 Gender: Male
-Music: Suspicious
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
@@ -9698,12 +9698,12 @@ Nuzleaf
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_EDWIN_4 ===
-Name: EDWIN
-Class: Collector
-Pic: Collector
+=== TRAINER_ROB ===
+Name: ROB
+Class: Biker
+Pic: Biker
 Gender: Male
-Music: Suspicious
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
@@ -9715,10 +9715,10 @@ Nuzleaf
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_EDWIN_5 ===
-Name: EDWIN
-Class: Collector
-Pic: Collector
+=== TRAINER_STEPHEN ===
+Name: STEPHEN
+Class: Biker
+Pic: Biker
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -13415,10 +13415,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALYSSA ===
 Name: ALYSSA
-Class: Triathlete
-Pic: Cycling Triathlete F
-Gender: Female
-Music: Female
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 

@@ -1119,18 +1119,6 @@ Route110_Text_EdwinRematchPostBattle:
 	.string "Oh, I long to make all rare POKéMON\n"
 	.string "mine!$"
 
-Route110_Text_DaleIntro:
-	.string "Hey!\n"
-	.string "Don't sneak up behind me like that!$"
-
-Route110_Text_DaleDefeated:
-	.string "I lost!\n"
-	.string "Drat!$"
-
-Route110_Text_DalePostBattle:
-	.string "Fishing is all about concentration.\n"
-	.string "You have to focus on the floater.$"
-
 Route110_Text_IsabelIntro:
 	.string "Ahahaha! I would go anywhere to show\n"
 	.string "off my delightful POKéMON.$"
@@ -1170,19 +1158,6 @@ Route110_Text_TimmyDefeated:
 Route110_Text_TimmyPostBattle:
 	.string "It's hard to battle with POKéMON you\n"
 	.string "just caught.$"
-
-Route110_Text_AlyssaIntro:
-	.string "I fell off CYCLING ROAD…\p"
-	.string "I'll get over my embarrassment by\n"
-	.string "battling with you!$"
-
-Route110_Text_AlyssaDefeated:
-	.string "Oops!\n"
-	.string "I ended up losing!$"
-
-Route110_Text_AlyssaPostBattle:
-	.string "Falling… Losing…\n"
-	.string "This is so humiliating for me!$"
 
 Route110_Text_JosephIntro:
 	.string "Okay! Full-throttle time! If you can't\n"

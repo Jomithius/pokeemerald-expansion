@@ -140,7 +140,7 @@
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77
 
 #define FLAG_LANDMARK_MIRAGE_TOWER           0x78
-#define FLAG_RECEIVED_TM_BRICK_BREAK         0x79
+#define FLAG_RECEIVED_TM_BRICK_BREAK         0x79 // unused
 #define FLAG_RECEIVED_HM_SURF                0x7A
 #define FLAG_RECEIVED_HM_DIVE                0x7B
 #define FLAG_REGISTER_RIVAL_POKENAV          0x7C
@@ -1252,11 +1252,11 @@
 #define FLAG_ROUTE117_RECIEVED_LEFTOVERS                            0x4AE // From Misa
 #define FLAG_XION_HOUSE_LEAF_STONE                                  0x4AF // Xion's House in Verdanturf
 #define FLAG_RECIEVED_CHOICE_SCARF_XION                             0x4B0 // Xion's House in Verdanturf
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
+#define FLAG_HIDE_BIKERS_MAUVILLE                                   0x4B1 // Speedwagon Event Mauville
+#define FLAG_ROUTE110_HIDE_CYCLIST                                  0x4B2 // Speedwagon Event Mauville
+#define FLAG_ROUTE110_HIDE_BIKERS                                   0x4B3 // Speedwagon Event Mauville
+#define FLAG_ROUTE_110_BIKER_POLICEMAN                              0x4B4 // Speedwagon Event Mauville
+#define FLAG_HIDE_POLICEMAN_ROUTE_110                               0x4B5 // End of Speedwagon Event
 #define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
 #define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
 #define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag

@@ -13324,14 +13324,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 5415
-    [DIFFICULTY_NORMAL][TRAINER_JERRY_3] =
+    [DIFFICULTY_NORMAL][TRAINER_SPEEDWAGON] =
     {
 #line 5416
-        .trainerName = _("JERRY"),
+        .trainerName = _("SPEEDWAGON"),
 #line 5417
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
+        .trainerClass = TRAINER_CLASS_BIKER,
 #line 5418
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_SPEEDWAGON,
         .encounterMusic_gender =
 #line 5420
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -16461,16 +16461,16 @@ F_TRAINER_FEMALE |
 #line 6648
         .trainerName = _("DALE"),
 #line 6649
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
+        .trainerClass = TRAINER_CLASS_BIKER,
 #line 6650
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerPic = TRAINER_PIC_BIKER,
         .encounterMusic_gender =
 #line 6652
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6653
         .doubleBattle = FALSE,
 #line 6654
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_BASIC_TRAINER,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -23981,12 +23981,12 @@ F_TRAINER_FEMALE |
 #line 9613
         .trainerName = _("EDWIN"),
 #line 9614
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_BIKER,
 #line 9615
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_BIKER,
         .encounterMusic_gender =
 #line 9617
-            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 9618
         .doubleBattle = FALSE,
 #line 9619
@@ -24116,14 +24116,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9667
-    [DIFFICULTY_NORMAL][TRAINER_EDWIN_2] =
+    [DIFFICULTY_NORMAL][TRAINER_DARWIN] =
     {
 #line 9668
-        .trainerName = _("EDWIN"),
+        .trainerName = _("DARWIN"),
 #line 9669
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_BIKER,
 #line 9670
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_BIKER,
         .encounterMusic_gender =
 #line 9672
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -24159,17 +24159,17 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9684
-    [DIFFICULTY_NORMAL][TRAINER_EDWIN_3] =
+    [DIFFICULTY_NORMAL][TRAINER_DAN] =
     {
 #line 9685
-        .trainerName = _("EDWIN"),
+        .trainerName = _("DAN"),
 #line 9686
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_BIKER,
 #line 9687
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_BIKER,
         .encounterMusic_gender =
 #line 9689
-            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 9690
         .doubleBattle = FALSE,
 #line 9691
@@ -24202,17 +24202,17 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9701
-    [DIFFICULTY_NORMAL][TRAINER_EDWIN_4] =
+    [DIFFICULTY_NORMAL][TRAINER_ROB] =
     {
 #line 9702
-        .trainerName = _("EDWIN"),
+        .trainerName = _("ROB"),
 #line 9703
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_BIKER,
 #line 9704
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_BIKER,
         .encounterMusic_gender =
 #line 9706
-            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 9707
         .doubleBattle = FALSE,
 #line 9708
@@ -24245,14 +24245,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9718
-    [DIFFICULTY_NORMAL][TRAINER_EDWIN_5] =
+    [DIFFICULTY_NORMAL][TRAINER_STEPHEN] =
     {
 #line 9719
-        .trainerName = _("EDWIN"),
+        .trainerName = _("STEPHEN"),
 #line 9720
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_BIKER,
 #line 9721
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_BIKER,
         .encounterMusic_gender =
 #line 9723
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -33580,14 +33580,12 @@ F_TRAINER_FEMALE |
 #line 13417
         .trainerName = _("ALYSSA"),
 #line 13418
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
+        .trainerClass = TRAINER_CLASS_BIKER,
 #line 13419
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_BIKER,
         .encounterMusic_gender =
-#line 13420
-F_TRAINER_FEMALE | 
 #line 13421
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 13422
         .doubleBattle = FALSE,
 #line 13423

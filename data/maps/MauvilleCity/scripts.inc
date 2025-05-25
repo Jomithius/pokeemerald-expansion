@@ -1351,6 +1351,494 @@ MauvilleCity_EventScript_GymNPC::
 	end
 
 
+MauvilleCity_Trigger_Bikers1::
+# 692 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 693 "data/maps/MauvilleCity/scripts.pory"
+	playbgm MUS_DUMMY, FALSE
+# 694 "data/maps/MauvilleCity/scripts.pory"
+	addobject 13
+# 695 "data/maps/MauvilleCity/scripts.pory"
+	addobject 14
+# 696 "data/maps/MauvilleCity/scripts.pory"
+	addobject 15
+# 697 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
+# 698 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 699 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 700 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 701 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 702 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerRunLeft
+# 703 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 704 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 705 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 706 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 707 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM
+# 708 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 13, MauvileCity_Movement_Biker1
+# 709 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 710 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 14, MauvileCity_Movement_Biker1
+# 711 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 712 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 14
+# 713 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM_STOP
+# 714 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 715 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police1
+# 716 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 717 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 718 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
+# 719 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 720 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police2
+# 721 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 722 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 723 "data/maps/MauvilleCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 2
+# 724 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
+# 725 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
+# 726 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
+# 727 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 13
+# 728 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 14
+# 729 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 15
+# 730 "data/maps/MauvilleCity/scripts.pory"
+	addobject 16
+# 731 "data/maps/MauvilleCity/scripts.pory"
+	playbgm MUS_RG_SILPH, TRUE
+# 732 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Trigger_Bikers2::
+# 737 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 738 "data/maps/MauvilleCity/scripts.pory"
+	playbgm MUS_DUMMY, FALSE
+# 739 "data/maps/MauvilleCity/scripts.pory"
+	addobject 13
+# 740 "data/maps/MauvilleCity/scripts.pory"
+	addobject 14
+# 741 "data/maps/MauvilleCity/scripts.pory"
+	addobject 15
+# 742 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
+# 743 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 744 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 745 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 746 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 747 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerRunRight
+# 748 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 749 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 750 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 751 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 752 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM
+# 753 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 13, MauvileCity_Movement_Biker1
+# 754 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 755 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 14, MauvileCity_Movement_Biker1
+# 756 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 757 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 14
+# 758 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM_STOP
+# 759 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 760 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police1
+# 761 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 762 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 763 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
+# 764 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 765 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police2
+# 766 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 767 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 768 "data/maps/MauvilleCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 2
+# 769 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
+# 770 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
+# 771 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
+# 772 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 13
+# 773 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 14
+# 774 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 15
+# 775 "data/maps/MauvilleCity/scripts.pory"
+	addobject 16
+# 776 "data/maps/MauvilleCity/scripts.pory"
+	playbgm MUS_RG_SILPH, TRUE
+# 777 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Trigger_Bikers3::
+# 782 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 783 "data/maps/MauvilleCity/scripts.pory"
+	playbgm MUS_DUMMY, FALSE
+# 784 "data/maps/MauvilleCity/scripts.pory"
+	addobject 13
+# 785 "data/maps/MauvilleCity/scripts.pory"
+	addobject 14
+# 786 "data/maps/MauvilleCity/scripts.pory"
+	addobject 15
+# 787 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
+# 788 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 789 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 790 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 791 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 792 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 793 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 794 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 795 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM
+# 796 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 13, MauvileCity_Movement_Biker1
+# 797 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 798 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 14, MauvileCity_Movement_Biker1
+# 799 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 800 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 14
+# 801 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM_STOP
+# 802 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 803 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police1
+# 804 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 805 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 806 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
+# 807 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 808 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police2
+# 809 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 810 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 811 "data/maps/MauvilleCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 2
+# 812 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
+# 813 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
+# 814 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
+# 815 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 13
+# 816 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 14
+# 817 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 15
+# 818 "data/maps/MauvilleCity/scripts.pory"
+	addobject 16
+# 819 "data/maps/MauvilleCity/scripts.pory"
+	playbgm MUS_RG_SILPH, TRUE
+# 820 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Trigger_Bikers4::
+# 825 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 826 "data/maps/MauvilleCity/scripts.pory"
+	playbgm MUS_DUMMY, FALSE
+# 827 "data/maps/MauvilleCity/scripts.pory"
+	addobject 13
+# 828 "data/maps/MauvilleCity/scripts.pory"
+	addobject 14
+# 829 "data/maps/MauvilleCity/scripts.pory"
+	addobject 15
+# 830 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
+# 831 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 832 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 833 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 834 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 835 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 836 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 837 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 838 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM
+# 839 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 13, MauvileCity_Movement_Biker1
+# 840 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 841 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 14, MauvileCity_Movement_Biker1
+# 842 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 843 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 14
+# 844 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM_STOP
+# 845 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 846 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police1
+# 847 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 848 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 849 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
+# 850 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 851 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police2
+# 852 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 853 "data/maps/MauvilleCity/scripts.pory"
+	delay 10
+# 854 "data/maps/MauvilleCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 2
+# 855 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
+# 856 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
+# 857 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
+# 858 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 13
+# 859 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 14
+# 860 "data/maps/MauvilleCity/scripts.pory"
+	removeobject 15
+# 861 "data/maps/MauvilleCity/scripts.pory"
+	addobject 16
+# 862 "data/maps/MauvilleCity/scripts.pory"
+	playbgm MUS_RG_SILPH, TRUE
+# 863 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+# 867 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerRunLeft:
+# 868 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_left
+# 868 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_left
+	step_end
+
+# 871 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerRunRight:
+# 872 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+	step_end
+
+# 876 "data/maps/MauvilleCity/scripts.pory"
+MauvileCity_Movement_Biker1:
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 877 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+	step_end
+
+# 881 "data/maps/MauvilleCity/scripts.pory"
+MauvileCity_Movement_Police1:
+# 882 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 882 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 882 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 882 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 882 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 882 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+	step_end
+
+# 885 "data/maps/MauvilleCity/scripts.pory"
+MauvileCity_Movement_Police2:
+# 886 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 886 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 886 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 886 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+	step_end
+
+MauvilleCity_EventScript_Bikers_WomanWarn::
+# 896 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 897 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 898 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 899 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 16, Common_Movement_FacePlayer
+# 900 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 16
+# 901 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WomanBikersRoute110, MSGBOX_AUTOCLOSE
+# 902 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 903 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 16, Common_Movement_FaceDown
+# 904 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 16
+# 905 "data/maps/MauvilleCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 3
+# 906 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Trigger_Bikers1_Text_0:
+# 697 "data/maps/MauvilleCity/scripts.pory"
+	.string "LOOK OUT!$"
+
 MauvilleCity_Text_DacaGone::
 # 681 "data/maps/MauvilleCity/scripts.pory"
 	.string "What's up, dude?\n Here to challenge the GYM?\p Sorry, the LEADER went to \n RUSTURF TUNNEL.\p I don't when she'll be back.\n Maybe you could go get her for me?$"
+
+MauvilleCity_Text_Police::
+# 890 "data/maps/MauvilleCity/scripts.pory"
+	.string "Huff.. Huff..\n Requesting back up on ROUTE 110!$"
+
+MauvilleCity_Text_WomanBikersRoute110::
+# 910 "data/maps/MauvilleCity/scripts.pory"
+	.string "A biker gang took over the CYCLING\n ROAD!\l That poor policeman is outnumbered!$"

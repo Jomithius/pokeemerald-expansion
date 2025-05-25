@@ -686,3 +686,229 @@ text MauvilleCity_Text_DacaGone {
     I don't when she'll be back.\n
     Maybe you could go get her for me?"
 }
+
+
+script MauvilleCity_Trigger_Bikers1{
+	lock
+	playbgm(MUS_DUMMY, FALSE)
+	addobject(13)
+	addobject(14)
+	addobject(15)
+	msgbox("LOOK OUT!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerRunLeft)
+	waitmovement(0)
+	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+	playse(SE_THUNDERSTORM)
+	applymovement(13, MauvileCity_Movement_Biker1)
+	delay(10)
+	applymovement(14, MauvileCity_Movement_Biker1)
+	delay(20)
+	waitmovement(14)
+	playse(SE_THUNDERSTORM_STOP)
+	delay(20)
+	applymovement(15, MauvileCity_Movement_Police1)
+	waitmovement(15)
+	delay(20)
+	msgbox(MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(15, MauvileCity_Movement_Police2)
+	waitmovement(15)
+	delay(10)
+	setvar(VAR_SPEEDWAGON_STATE, 2)
+	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
+	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
+	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	removeobject(13)
+	removeobject(14)
+	removeobject(15)
+	addobject(16)
+	playbgm(MUS_RG_SILPH, TRUE)
+	release
+	end
+}
+
+script MauvilleCity_Trigger_Bikers2{
+	lock
+	playbgm(MUS_DUMMY, FALSE)
+	addobject(13)
+	addobject(14)
+	addobject(15)
+	msgbox("LOOK OUT!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerRunRight)
+	waitmovement(0)
+	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+	playse(SE_THUNDERSTORM)
+	applymovement(13, MauvileCity_Movement_Biker1)
+	delay(10)
+	applymovement(14, MauvileCity_Movement_Biker1)
+	delay(20)
+	waitmovement(14)
+	playse(SE_THUNDERSTORM_STOP)
+	delay(20)
+	applymovement(15, MauvileCity_Movement_Police1)
+	waitmovement(15)
+	delay(20)
+	msgbox(MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(15, MauvileCity_Movement_Police2)
+	waitmovement(15)
+	delay(10)
+	setvar(VAR_SPEEDWAGON_STATE, 2)
+	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
+	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
+	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	removeobject(13)
+	removeobject(14)
+	removeobject(15)
+	addobject(16)
+	playbgm(MUS_RG_SILPH, TRUE)
+	release
+	end
+}
+
+script MauvilleCity_Trigger_Bikers3{
+	lock
+	playbgm(MUS_DUMMY, FALSE)
+	addobject(13)
+	addobject(14)
+	addobject(15)
+	msgbox("LOOK OUT!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+	playse(SE_THUNDERSTORM)
+	applymovement(13, MauvileCity_Movement_Biker1)
+	delay(10)
+	applymovement(14, MauvileCity_Movement_Biker1)
+	delay(20)
+	waitmovement(14)
+	playse(SE_THUNDERSTORM_STOP)
+	delay(20)
+	applymovement(15, MauvileCity_Movement_Police1)
+	waitmovement(15)
+	delay(20)
+	msgbox(MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(15, MauvileCity_Movement_Police2)
+	waitmovement(15)
+	delay(10)
+	setvar(VAR_SPEEDWAGON_STATE, 2)
+	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
+	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
+	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	removeobject(13)
+	removeobject(14)
+	removeobject(15)
+	addobject(16)
+	playbgm(MUS_RG_SILPH, TRUE)
+	release
+	end
+}
+
+script MauvilleCity_Trigger_Bikers4{
+	lock
+	playbgm(MUS_DUMMY, FALSE)
+	addobject(13)
+	addobject(14)
+	addobject(15)
+	msgbox("LOOK OUT!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+	playse(SE_THUNDERSTORM)
+	applymovement(13, MauvileCity_Movement_Biker1)
+	delay(10)
+	applymovement(14, MauvileCity_Movement_Biker1)
+	delay(20)
+	waitmovement(14)
+	playse(SE_THUNDERSTORM_STOP)
+	delay(20)
+	applymovement(15, MauvileCity_Movement_Police1)
+	waitmovement(15)
+	delay(20)
+	msgbox(MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(15, MauvileCity_Movement_Police2)
+	waitmovement(15)
+	delay(10)
+	setvar(VAR_SPEEDWAGON_STATE, 2)
+	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
+	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
+	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	removeobject(13)
+	removeobject(14)
+	removeobject(15)
+	addobject(16)
+	playbgm(MUS_RG_SILPH, TRUE)
+	release
+	end
+}
+
+movement MauvilleCity_Movement_PlayerRunLeft{
+	walk_fast_left * 2
+}
+
+movement MauvilleCity_Movement_PlayerRunRight{
+	walk_fast_right
+}
+
+
+movement MauvileCity_Movement_Biker1{
+	walk_faster_down * 10
+	walk_faster_right * 13
+}
+
+movement MauvileCity_Movement_Police1{
+	walk_fast_down * 6
+}
+
+movement MauvileCity_Movement_Police2{
+	walk_fast_down * 4
+	walk_fast_right * 11
+}
+
+text MauvilleCity_Text_Police{
+	"Huff.. Huff..\n
+	Requesting back up on ROUTE 110!"
+}
+
+script MauvilleCity_EventScript_Bikers_WomanWarn{
+	lock
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+	applymovement(16, Common_Movement_FacePlayer)
+	waitmovement(16)
+	msgbox(MauvilleCity_Text_WomanBikersRoute110, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(16, Common_Movement_FaceDown)
+	waitmovement(16)
+	setvar(VAR_SPEEDWAGON_STATE, 3)
+	release
+	end
+}
+
+text MauvilleCity_Text_WomanBikersRoute110{
+	"A biker gang took over the CYCLING\n
+	ROAD!\l
+	That poor policeman is outnumbered!"
+}
