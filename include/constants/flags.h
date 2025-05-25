@@ -186,7 +186,7 @@
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
 #define FLAG_RECEIVED_TM_ROCK_TOMB           0xA5
 #define FLAG_RECEIVED_TM_BULK_UP             0xA6
-#define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7
+#define FLAG_RECEIVED_TM_CHARGE_BEAM         0xA7
 #define FLAG_RECEIVED_TM_OVERHEAT            0xA8
 #define FLAG_RECEIVED_TM_FACADE              0xA9
 #define FLAG_RECEIVED_TM_AERIAL_ACE          0xAA
@@ -656,10 +656,10 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_RECEIVED_TM_DEFOG 0x264 // Rusturf Tunnel 3F
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
+#define FLAG_RECEIVED_TM_DEFOG           0x264 // Rusturf Tunnel 3F
+#define FLAG_RECEIVED_TM_DAZZLING_GLEAM  0x265 // Slateport Gym
+#define FLAG_RECEIVED_TM_CLOSE_COMBAT    0x266 // Sootopolis City House 1
+#define FLAG_RECEIVED_TM_VOLT_SWITCH     0x267 // Mauville Gym
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
@@ -1162,7 +1162,7 @@
 #define FLAG_ITEM_ROUTE_123_ELIXIR                                  0x455
 #define FLAG_ITEM_NEW_MAUVILLE_THUNDER_STONE                        0x456
 #define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0x457
-#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_HAIL                       0x458
+#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_SNOWSCAPE                  0x458  //replaced hail
 #define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE                0x459
 #define FLAG_ITEM_ROUTE_103_GUARD_SPEC                              0x45A
 #define FLAG_ITEM_ROUTE_104_X_ACCURACY                              0x45B
@@ -1248,10 +1248,10 @@
 #define FLAG_HIDE_DACA_RUSTURF_PEAK                                 0x4AA // Rusturf Peak
 #define FLAG_RUSTURF_GALVANTULA                                     0x4AB // Rusturf 3F
 #define FLAG_RUSTURF_ARIADOS                                        0x4AC // Rusturf 3F
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
+#define FLAG_HIDE_DUGTRIO_POOBLES                                   0x4AD // Poobles Post Game Rematch
+#define FLAG_ROUTE117_RECIEVED_LEFTOVERS                            0x4AE // From Misa
+#define FLAG_XION_HOUSE_LEAF_STONE                                  0x4AF // Xion's House in Verdanturf
+#define FLAG_RECIEVED_CHOICE_SCARF_XION                             0x4B0 // Xion's House in Verdanturf
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
 #define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag

@@ -5,8 +5,8 @@ script RusturfTunnel_3F_EventScript_DefogMan{
     applymovement(3, Common_Movement_FacePlayer)
     waitmovement(3)
     if(flag(FLAG_RECEIVED_TM_DEFOG) == TRUE){
-        msgbox("“Why's it still foggy in here?”\n
-        This isn't fog, dude!", MSGBOX_NPC)
+        msgbox("DEFOG doesn't only clear hazards, it\n
+        also like, lowers the foe's evasion.", MSGBOX_NPC)
         waitmessage
         release
         end
@@ -52,11 +52,11 @@ script RusturfTunnel_3F_EventScript_Dawson{
 }
 
 text RusturfTunnel_3F_Text_DawsonIntro{
-	"Huh?"
+	"Huh? I don't smell anything."
 }
 
 text RusturfTunnel_3F_Text_DawsonDefeat{
-	"I don't smell anything!"
+	"I really don't smell anything!"
 }
 
 text RusturfTunnel_3F_Text_DawsonPostBattle{

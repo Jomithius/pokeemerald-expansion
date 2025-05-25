@@ -68,8 +68,10 @@ script RibombeeFailed {
 script Route116_RusturfTunnel_Peak_Daca{
     lock
     delay(20)
+    playse(SE_PIN)
     applymovement(2, Common_Movement_ExclamationMark)
     waitmovement(2)
+    delay(40)
     applymovement(2, Common_Movement_FacePlayer)
     waitmovement(2)
     msgbox(Route116_RusturfTunnel_Peak_DacaText1, MSGBOX_AUTOCLOSE)

@@ -1,0 +1,41 @@
+raw`Route117_PokemonDayCare_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route117_PokemonDayCare_OnTransition
+	.byte 0
+
+Route117_PokemonDayCare_OnTransition:
+	setflag FLAG_LANDMARK_POKEMON_DAYCARE
+	end
+`
+
+script PokemonDayCare_Woman{
+    lock
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(2)
+    if(flag(FLAG_CALL_FROM_CEO) == TRUE){
+        msgbox(PokemonDayCare_Text_HoundourRecovered, MSGBOX_NPC)
+        }
+
+    else{
+        msgbox(PokemonDayCare_Text_DacaHoundour, MSGBOX_NPC)
+    }
+
+    waitmessage
+    release
+    end
+}
+
+text PokemonDayCare_Text_HoundourRecovered{
+    "I'm so glad the HOUNDOUR made a\n
+    full recovery!\p
+    MAUVILLE's GYM LEADER decided to\n
+    adopt him.\p
+    I wonder how they're doing."
+}
+
+text PokemonDayCare_Text_DacaHoundour{
+    "A while back, MAUVILLE's GYM LEADER\n
+    found a badly hurt HOUNDOUR in\l
+    RUSTURF TUNNEL.\p
+    Since then, we've been helping it\n
+    recover."
+}

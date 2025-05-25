@@ -10498,19 +10498,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_TOXIC,
     },
 
-    [ITEM_TM_HAIL] =
+    [ITEM_TM_SNOWSCAPE] =
     {
         .name = _("TM07"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Creates a hailstorm\n"
-            "that damages all\n"
-            "types except Ice."),
+            "Creates a snowstorm\n"
+            "that raises Ice\n"
+            "types defense."), //custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_HAIL,
+        .secondaryId = MOVE_SNOWSCAPE, // custom
     },
 
     [ITEM_TM_BULK_UP] =
@@ -10913,19 +10913,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_REFLECT,
     },
 
-    [ITEM_TM_SHOCK_WAVE] =
+    [ITEM_TM_CHARGE_BEAM] =
     {
         .name = _("TM34"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Zaps the foe with a\n"
-            "jolt of electricity\n"
-            "that never misses."),
+            "Fires a concentrated\n"
+            "jolt of electricity.\n"
+            "Might raise SP. ATK."), // custom replaced shock wave
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SHOCK_WAVE,
+        .secondaryId = MOVE_CHARGE_BEAM, // custom
     },
 
     [ITEM_TM_FLAMETHROWER] =
@@ -11213,40 +11213,49 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DEFOG, // Todo
     },
 
-    [ITEM_TM54] =
+    [ITEM_TM_DAZZLING_GLEAM] =
     {
         .name = _("TM54"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Hits adjacent foes\n"
+            "by emtting a\n"
+            "powerful flash."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_DAZZLING_GLEAM, // custom
     },
 
-    [ITEM_TM55] =
+    [ITEM_TM_CLOSE_COMBAT] =
     {
         .name = _("TM55"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Fights the target\n"
+            "up close. Lowers\n"
+            "the user's defenses."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_CLOSE_COMBAT, // custom
     },
 
-    [ITEM_TM56] =
+    [ITEM_TM_VOLT_SWITCH] =
     {
         .name = _("TM56"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "After attacking,\n"
+            "the user goes back\n"
+            "to its Trainer."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_VOLT_SWITCH, //custom
     },
 
     [ITEM_TM57] =

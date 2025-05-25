@@ -3163,17 +3163,27 @@ Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_TAKAO ===
-Name: TAKAO
+Name: TY
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Machop
-Level: 13
+Level: 17
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Quilladin  
+Ability: Bulletproof  
+Level: 18  
+Tera Type: Grass  
+EVs: 168 HP / 120 Atk / 208 Def / 12 SpD  
+Impish Nature  
+- Bulk Up  
+- Bullet Seed  
+- Bulldoze
 
 === TRAINER_HITOSHI ===
 Name: HITOSHI
@@ -3364,7 +3374,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Electrike
-Level: 17
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Quick Attack
 - Thunder Wave
@@ -3372,10 +3382,16 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leer
 
 Voltorb
-Level: 17
+Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Charge
 - Shock Wave
+- Screech
+
+Voltorb-Hisui
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Charge Beam
 - Screech
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
@@ -3414,16 +3430,51 @@ Class: Guitarist
 Pic: Guitarist
 Gender: Male
 Music: Intense
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Voltorb
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Magnemite @ Air Balloon  
+Ability: Analytic  
+Level: 22  
+Tera Type: Electric  
+EVs: 236 HP / 236 SpA / 36 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Charge Beam  
+- Volt Switch  
+- Mirror Shot  
+- Swift  
 
-Magnemite
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Aipom  
+Ability: Skill Link  
+Level: 21  
+Tera Type: Normal  
+EVs: 244 Atk / 8 Def / 252 Spe  
+Adamant Nature  
+- Tail Slap  
+- Fake Out  
+- Aerial Ace  
+
+Klang  
+Ability: Plus  
+Level: 23  
+Tera Type: Steel  
+EVs: 252 HP / 4 Atk / 252 SpA  
+Rash Nature  
+- Charge Beam  
+- Autotomize  
+- Gear Grind  
+
+Electrike  
+Ability: Minus  
+Level: 22  
+Tera Type: Electric  
+EVs: 12 HP / 248 SpA / 248 Spe  
+Mild Nature  
+- Ice Fang  
+- Volt Switch  
+- Signal Beam  
+- Agility  
 
 === TRAINER_FERNANDO_1 ===
 Name: FERNANDO
@@ -4852,80 +4903,150 @@ IVs: 0 Atk
 - Will-O-Wisp 
 
 === TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+Name: LIAM
 Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
+Mugshot: Green
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+POOBLES (Diglett-Alola) @ Rocky Helmet  
+Ability: Tangling Hair  
+Level: 19  
+EVs: 8 HP / 236 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Metal Claw  
+- Aerial Ace  
+- Sucker Punch  
+- Bulldoze
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+Drifloon @ Sitrus Berry  
+Ability: Unburden  
+Level: 19  
+EVs: 68 Def / 176 SpA / 12 SpD / 244 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Destiny Bond  
+- Air Cutter  
+- Will-O-Wisp  
+- Hex  
 
-Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+Skiddo @ Coba Berry  
+Ability: Sap Sipper  
+Level: 19  
+EVs: 244 Atk / 20 Def / 244 SpD  
+Adamant Nature  
+- Bulk Up  
+- Razor Leaf  
+- Secret Power  
+- Dig 
+
+Ponyta-Galar @ Wiki Berry  
+Ability: Pastel Veil  
+Level: 19  
+EVs: 4 HP / 144 Atk / 8 Def / 96 SpA / 252 Spe  
+Naive Nature  
+- Stomp  
+- Dazzling Gleam  
+- Psybeam  
+- Double Kick  
+
+Dartrix @ Miracle Seed  
+Ability: Long Reach  
+Level: 19  
+EVs: 248 Atk / 12 SpD / 240 Spe  
+Adamant Nature  
+- Dual Wingbeat  
+- Steel Wing  
+- Razor Leaf  
+- Shadow Sneak  
+
+Cinccino @ Muscle Band  
+Ability: Technician  
+Level: 19  
+EVs: 248 HP / 128 Atk / 8 Def / 8 SpD / 116 Spe  
+Adamant Nature  
+IVs: 0 SpA  
+- Tail Slap  
+- Rock Blast  
+- Bullet Seed  
+- Dazzling Gleam  
 
 === TRAINER_WATTSON_1 ===
-Name: WATTSON
+Name: DACA
 Class: Leader
 Pic: Leader Wattson
-Gender: Male
-Music: Male
-Items: Super Potion / Super Potion
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
+Mugshot: Green
 
-Voltorb
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
+Pumpkaboo-Super @ Big Root  
+Ability: Insomnia  
+Level: 25  
+EVs: 248 HP / 64 Atk / 180 Def / 8 SpD  
+Impish Nature  
+- Destiny Bond  
+- Leech Seed  
+- Seed Bomb  
+- Shadow Sneak  
 
-Electrike
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
+Duosion @ Sticky Barb  
+Ability: Magic Guard  
+Level: 25  
+EVs: 244 HP / 76 Def / 164 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Psyshock  
+- Future Sight  
+- Signal Beam  
+- Trick  
 
-Magneton
-Level: 22
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
-- Thunder Wave
-- Sonic Boom
+Palpitoad @ Rocky Helmet  
+Ability: Water Absorb  
+Level: 25  
+EVs: 244 HP / 4 Def / 240 SpA / 20 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Water Pulse  
+- Mud Bomb  
+- Icy Wind  
+- Aqua Ring  
 
-Manectric @ Sitrus Berry
-Level: 24
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+Scrafty @ Salac Berry  
+Ability: Intimidate  
+Level: 25  
+EVs: 252 HP / 240 Atk / 12 Def / 4 Spe  
+Naughty Nature  
+- Fake Out  
+- Lash Out  
+- Bulk Up  
+- Brick Break  
+
+Drakloak @ Dragon Fang  
+Ability: Cursed Body  
+Level: 25  
+EVs: 16 HP / 236 Atk / 248 SpA / 4 Spe  
+Mild Nature  
+IVs: 21 SpD / 0 Spe  
+- Will-O-Wisp  
+- Hex  
+- Breaking Swipe  
+- Thief  
+
+Jolteon @ Magnet  
+Ability: Volt Absorb  
+Level: 25  
+EVs: 8 HP / 252 SpA / 236 Spe  
+Timid Nature  
+IVs: 0 Atk / 30 Def / 30 SpA  
+- Charge Beam  
+- Thunder Wave  
+- Hidden Power  
+- Volt Switch  
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -5164,7 +5285,7 @@ AI: Basic Trainer
 
 Quagsire  
 Ability: Unaware  
-Level: 20  
+Level: 21  
 EVs: 236 HP / 236 SpA / 36 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -5175,7 +5296,7 @@ IVs: 0 Atk
 
 Swoobat  
 Ability: Unaware  
-Level: 20   
+Level: 21   
 EVs: 240 HP / 56 Def / 160 SpA / 28 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -5217,22 +5338,79 @@ Wingull
 Level: 15
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_JERRY_2 ===
-Name: JERRY
-Class: School Kid
-Pic: School Kid M
-Gender: Male
-Music: Male
+=== TRAINER_MISA ===
+Name: MISA
+Class: 
+Pic: Misa
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Ralts
-Level: 26
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Sandshrew-Alola @ Sitrus Berry  
+Ability: Snow Cloak  
+Level: 18  
+EVs: 232 Atk / 24 Def / 244 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Icicle Spear  
+- Gyro Ball  
+- Stealth Rock  
+- Ice Shard  
 
-Meditite
-Level: 26
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Frillish (F)  
+Ability: Cursed Body  
+Level: 17  
+EVs: 116 HP / 92 Def / 64 SpA / 60 SpD  
+Sassy Nature  
+IVs: 0 Atk  
+- Water Pulse  
+- Hex  
+- Will-O-Wisp  
+- Icy Wind  
+
+Swirlix @ Oran Berry  
+Ability: Unburden  
+Level: 18  
+EVs: 236 HP / 100 SpA / 36 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Draining Kiss  
+- Round  
+- Play Nice  
+
+Spoink @ Sitrus Berry  
+Ability: Gluttony  
+Level: 19  
+EVs: 244 SpA / 248 SpD / 8 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Psyshock  
+- Future Sight  
+- Thunder Wave  
+- Swift  
+
+Dedenne @ Oran Berry  
+Ability: Cheek Pouch  
+Level: 18  
+EVs: 204 HP / 24 Atk / 240 SpA / 40 Spe  
+Hasty Nature  
+- Dazzling Gleam  
+- Signal Beam  
+- Nuzzle  
+- Charge Beam  
+
+Togetic @ Leftovers  
+Ability: Super Luck  
+Level: 20  
+EVs: 20 Atk / 248 SpA / 236 SpD  
+Quiet Nature  
+- Covet  
+- Draining Kiss  
+- Air Cutter  
+- Dazzling Gleam  
+
 
 === TRAINER_JERRY_3 ===
 Name: JERRY
@@ -6086,7 +6264,7 @@ Machop
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BEN ===
+=== TRAINER_BEN === /* FREE */
 Name: BEN
 Class: Youngster
 Pic: Youngster
@@ -6288,13 +6466,13 @@ Double Battle: No
 AI: Check Bad Move
 
 Joltik
-Level: 15
+Level: 18
 
 Spinarak
-Level: 16
+Level: 19
 
 Ledian
-Level: 18
+Level: 21
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -6403,14 +6581,13 @@ Double Battle: No
 AI: Basic Trainer
 
 Geodude @ Lagging Tail
-Level: 15
+Level: 20
 
 Loudred @ Lagging Tail
-Level: 17
+Level: 21
 
 Onix @ Lagging Tail
-Level: 16
-
+Level: 22
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -7908,12 +8085,30 @@ Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
 Music: Intense
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Meditite
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Jigglypuff  
+Ability: Friend Guard  
+Level: 18 
+EVs: 252 HP / 248 SpA / 8 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Protect  
+- Swift  
+
+Electabuzz @ Oran Berry  
+Ability: Static  
+Level: 19   
+EVs: 232 HP / 20 Def / 16 SpA / 236 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Follow Me  
+- Electroweb  
+- Swift  
+
+
 
 === TRAINER_LAURA ===
 Name: LAURA
@@ -7922,11 +8117,26 @@ Pic: Battle Girl
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Meditite
-Level: 13
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Flabebe 
+Ability: Flower Veil  
+Level: 17  
+EVs: 36 Def / 236 SpA / 236 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Fairy Wind  
+- Draining Kiss  
+- Grass Knot  
+- Chilling Water  
+
+Vigoroth  
+Ability: Vital Spirit  
+Level: 18 
+EVs: 188 HP / 88 Atk / 64 Def / 64 SpD / 84 Spe  
+- Bulk Up  
+- Knock Off  
+- Chip Away  
 
 === TRAINER_CYNDY_1 ===
 Name: CYNDY
@@ -10665,7 +10875,7 @@ Lonely Nature
 - Water Pulse  
 - Astonish
 
-=== TRAINER_BRENDEN ===
+=== TRAINER_BRENDEN === /* TRAINER IS FREE */
 Name: BRENDEN
 Class: Sailor
 Pic: Sailor
@@ -10678,7 +10888,7 @@ Machop
 Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_LILITH ===
+=== TRAINER_LILITH === /* TRAINER IS FREE */
 Name: LILITH
 Class: Battle Girl
 Pic: Battle Girl
@@ -10692,17 +10902,49 @@ Level: 13
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CRISTIAN ===
-Name: CRISTIAN
-Class: Black Belt
-Pic: Black Belt
+Name: RACINE
+Class: Cooltrainer
+Pic: Cooltrainer M
 Gender: Male
-Music: Intense
+Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Makuhita
-Level: 13
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Makuhita  
+Ability: Thick Fat  
+Level: 16   
+EVs: 252 HP / 248 Atk  
+Adamant Nature  
+- Bulk Up  
+- Smelling Salts  
+- Force Palm 
+
+Diglett  
+Ability: Arena Trap  
+Level: 19 
+EVs: 236 Atk / 248 Spe  
+Lonely Nature  
+- Magnitude  
+- Smack Down  
+
+Kadabra  
+Ability: Magic Guard  
+Level: 18  
+EVs: 244 SpA / 16 SpD / 236 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Psybeam  
+- Night Shade  
+
+Falinks  
+Ability: Battle Armor  
+Level: 18   
+EVs: 112 HP / 44 Atk / 104 SpD / 244 Spe  
+Jolly Nature  
+- Bulk Up  
+- Beat Up  
+- Revenge  
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
@@ -10755,7 +10997,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Knock Off
 
 Farfetch'd-Galar
-Level: 18
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HARRISON ===
@@ -11981,28 +12223,34 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VIVIAN ===
 Name: VIVIAN
-Class: Battle Girl
-Pic: Battle Girl
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Female
-Music: Intense
+Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Meditite
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bide
-- Detect
-- Confusion
-- Thunder Punch
+Qwilfish-Hisui  
+Ability: Intimidate  
+Level: 22  
+Tera Type: Dark  
+EVs: 244 Atk / 252 Spe  
+Jolly Nature  
+- Barb Barrage  
+- Bite  
+- Acupressure  
+- Flail  
 
-Meditite
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder Punch
-- Detect
-- Confusion
-- Meditate
+Bibarel  
+Ability: Simple  
+Level: 23  
+Tera Type: Normal  
+EVs: 16 Atk / 8 Def / 236 SpA / 248 Spe  
+Naive Nature  
+- Work Up  
+- Charge Beam  
+- Aqua Jet  
+- Swift  
 
 === TRAINER_DANIELLE ===
 Name: DANIELLE
@@ -13073,14 +13321,14 @@ AI: Basic Trainer
 
 Clefairy  
 Ability: Friend Guard  
-Level: 19  
+Level: 20  
 - Follow Me  
 - Icy Wind  
 - Draining Kiss
 
 Dunsparce @ Oran Berry  
 Ability: Serene Grace  
-Level: 19  
+Level: 21  
 EVs: 152 HP / 56 Atk / 72 SpD / 212 Spe  
 Jolly Nature  
 - Headbutt  
@@ -15940,26 +16188,41 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ANGELO ===
 Name: ANGELO
-Class: Bug Maniac
-Pic: Bug Maniac
+Class: Ruin Maniac
+Pic: Ruin Maniac
 Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Illumise
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Shock Wave
-- Quick Attack
-- Charm
+Grimer-Alola @ Salac Berry  
+Ability: Gluttony  
+Level: 23  
+Tera Type: Poison  
+EVs: 248 HP / 160 Atk / 12 Def / 88 SpD  
+Adamant Nature  
+- Belch  
+- Endure  
+- Assurance  
 
-Volbeat
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Shock Wave
-- Quick Attack
-- Confuse Ray
+Grimer  
+Ability: Poison Touch  
+Level: 23  
+Tera Type: Poison  
+EVs: 248 HP / 248 Atk / 8 Spe  
+Adamant Nature  
+IVs: 0 Atk  
+
+Beedrill  
+Ability: Sniper  
+Level: 20  
+Tera Type: Bug  
+EVs: 36 HP / 236 Atk / 236 Spe  
+Hasty Nature  
+- Focus Energy  
+- Fury Attack  
+- Aerial Ace  
+- Twineedle  
 
 === TRAINER_DARIUS ===
 Name: DARIUS
@@ -17305,7 +17568,6 @@ Jolly Nature
 Petilil (F)  
 Ability: Chlorophyll  
 Level: 16  
-Tera Type: Grass  
 EVs: 16 HP / 4 Def / 252 SpD / 236 Spe  
 Timid Nature  
 IVs: 0 Atk  

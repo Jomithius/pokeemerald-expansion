@@ -2974,59 +2974,57 @@ SlateportFaceRight:
 # 1503 "data/maps/SlateportCity/scripts.pory"
 SlateportConfused:
 # 1504 "data/maps/SlateportCity/scripts.pory"
-	face_down
-# 1505 "data/maps/SlateportCity/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 1508 "data/maps/SlateportCity/scripts.pory"
+# 1507 "data/maps/SlateportCity/scripts.pory"
 SlateportFacePlayer:
-# 1509 "data/maps/SlateportCity/scripts.pory"
+# 1508 "data/maps/SlateportCity/scripts.pory"
 	face_player
 	step_end
 
 SlateportCity_EventScript_Psyduck::
-# 1514 "data/maps/SlateportCity/scripts.pory"
+# 1513 "data/maps/SlateportCity/scripts.pory"
 	lock
-# 1515 "data/maps/SlateportCity/scripts.pory"
+# 1514 "data/maps/SlateportCity/scripts.pory"
 	applymovement 37, SlateportFacePlayer
+# 1515 "data/maps/SlateportCity/scripts.pory"
+	waitmovement 37
 # 1516 "data/maps/SlateportCity/scripts.pory"
-	waitmovement 37
-# 1517 "data/maps/SlateportCity/scripts.pory"
 	delay 30
-# 1518 "data/maps/SlateportCity/scripts.pory"
+# 1517 "data/maps/SlateportCity/scripts.pory"
 	playse SE_BIKE_HOP
-# 1519 "data/maps/SlateportCity/scripts.pory"
+# 1518 "data/maps/SlateportCity/scripts.pory"
 	applymovement 37, SlateportConfused
-# 1520 "data/maps/SlateportCity/scripts.pory"
+# 1519 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 37
-# 1521 "data/maps/SlateportCity/scripts.pory"
+# 1520 "data/maps/SlateportCity/scripts.pory"
 	delay 10
-# 1522 "data/maps/SlateportCity/scripts.pory"
+# 1521 "data/maps/SlateportCity/scripts.pory"
 	playmoncry SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER
-# 1523 "data/maps/SlateportCity/scripts.pory"
+# 1522 "data/maps/SlateportCity/scripts.pory"
 	msgbox SlateportCity_EventScript_Psyduck_Text_0
-# 1524 "data/maps/SlateportCity/scripts.pory"
+# 1523 "data/maps/SlateportCity/scripts.pory"
 	waitmessage
-# 1525 "data/maps/SlateportCity/scripts.pory"
+# 1524 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
 
 SlateportCity_EventScript_GymSign::
-# 1530 "data/maps/SlateportCity/scripts.pory"
+# 1529 "data/maps/SlateportCity/scripts.pory"
 	lock
-# 1531 "data/maps/SlateportCity/scripts.pory"
+# 1530 "data/maps/SlateportCity/scripts.pory"
 	msgbox SlateportGymSign, MSGBOX_SIGN
-# 1532 "data/maps/SlateportCity/scripts.pory"
+# 1531 "data/maps/SlateportCity/scripts.pory"
 	waitmessage
-# 1533 "data/maps/SlateportCity/scripts.pory"
+# 1532 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
 
 SlateportCity_EventScript_Psyduck_Text_0:
-# 1523 "data/maps/SlateportCity/scripts.pory"
+# 1522 "data/maps/SlateportCity/scripts.pory"
 	.string "PSYDUCK: Psy?$"
 
 Mae1::
@@ -3054,5 +3052,5 @@ SlateportMartEmployee2::
 	.string "MART EMPLOYEE: Man, I swear I don't\n  get paid enough for this.$"
 
 SlateportGymSign::
-# 1537 "data/maps/SlateportCity/scripts.pory"
+# 1536 "data/maps/SlateportCity/scripts.pory"
 	.string "SLATEPORT CITY POKéMON GYM\n LEADER: LIAM\l “Experience the power of POOBLES!”$"

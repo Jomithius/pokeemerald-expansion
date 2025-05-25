@@ -279,7 +279,7 @@
 #define TRAINER_JERRY_1                     273
 #define TRAINER_TED                         274
 #define TRAINER_PAUL                        275
-#define TRAINER_JERRY_2                     276
+#define TRAINER_MISA                        276
 #define TRAINER_JERRY_3                     277
 #define TRAINER_JERRY_4                     278
 #define TRAINER_JERRY_5                     279

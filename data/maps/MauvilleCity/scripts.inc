@@ -1353,4 +1353,4 @@ MauvilleCity_EventScript_GymNPC::
 
 MauvilleCity_Text_DacaGone::
 # 681 "data/maps/MauvilleCity/scripts.pory"
-	.string "What's up, dude?\n Here to challenge the GYM?\p Sorry, the LEADER went to \n RUSTURF TUNNEL.\p I don't when she'll be back.\l Maybe you could go get her for me?$"
+	.string "What's up, dude?\n Here to challenge the GYM?\p Sorry, the LEADER went to \n RUSTURF TUNNEL.\p I don't when she'll be back.\n Maybe you could go get her for me?$"

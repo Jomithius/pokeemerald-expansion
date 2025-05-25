@@ -264,7 +264,7 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_MISA_STATE                                   0x40F7 // 0-1 Misa Rustboro CS and Rival James First Battle, 2-3 Misa Route 117 and Lilycove, 4 Misa E4
+#define VAR_MISA_STATE                                   0x40F7 // 0-2 Misa Rustboro CS and Rival James First Battle, 3-4 Misa Route 117, 4- Lilycove
 #define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
 #define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
 #define VAR_UNUSED_0x40FA                                0x40FA // Unused Var

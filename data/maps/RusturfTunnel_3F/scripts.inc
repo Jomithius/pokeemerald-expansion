@@ -20,7 +20,7 @@ RusturfTunnel_3F_EventScript_DefogMan::
 # 19 "data/maps/RusturfTunnel_3F/scripts.pory"
 	waitmessage
 # 20 "data/maps/RusturfTunnel_3F/scripts.pory"
-	msgbox RusturfTunnel_3F_EventScript_DefogMan_Text_2, MSGBOX_NPC
+	msgbox RusturfTunnel_3F_EventScript_DefogMan_Text_0, MSGBOX_NPC
 # 22 "data/maps/RusturfTunnel_3F/scripts.pory"
 	waitmessage
 # 23 "data/maps/RusturfTunnel_3F/scripts.pory"
@@ -69,15 +69,11 @@ RusturfTunnel_3F_EventScript_Jerry::
 
 RusturfTunnel_3F_EventScript_DefogMan_Text_0:
 # 8 "data/maps/RusturfTunnel_3F/scripts.pory"
-	.string "“Why's it still foggy in here?”\n This isn't fog, dude!$"
+	.string "DEFOG doesn't only clear hazards, it\n also like, lowers the foe's evasion.$"
 
 RusturfTunnel_3F_EventScript_DefogMan_Text_1:
 # 15 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Dude, if you gotta like, air a room\n out quick, you can use this.$"
-
-RusturfTunnel_3F_EventScript_DefogMan_Text_2:
-# 20 "data/maps/RusturfTunnel_3F/scripts.pory"
-	.string "DEFOG doesn't only clear hazards, it\n also like, lowers the foe's evasion.$"
 
 RusturfTunnel_3F_Text_SarahIntro::
 # 35 "data/maps/RusturfTunnel_3F/scripts.pory"
@@ -93,11 +89,11 @@ RusturfTunnel_3F_Text_SarahPostBattle::
 
 RusturfTunnel_3F_Text_DawsonIntro::
 # 54 "data/maps/RusturfTunnel_3F/scripts.pory"
-	.string "Huh?$"
+	.string "Huh? I don't smell anything.$"
 
 RusturfTunnel_3F_Text_DawsonDefeat::
 # 58 "data/maps/RusturfTunnel_3F/scripts.pory"
-	.string "I don't smell anything!$"
+	.string "I really don't smell anything!$"
 
 RusturfTunnel_3F_Text_DawsonPostBattle::
 # 62 "data/maps/RusturfTunnel_3F/scripts.pory"

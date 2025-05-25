@@ -8,7 +8,7 @@
     F(CALM_MIND) \
     F(ROAR) \
     F(TOXIC) \
-    F(HAIL) \
+    F(SNOWSCAPE) \
     F(BULK_UP) \
     F(BULLET_SEED) \
     F(HIDDEN_POWER) \
@@ -35,7 +35,7 @@
     F(BRICK_BREAK) \
     F(DOUBLE_TEAM) \
     F(REFLECT) \
-    F(SHOCK_WAVE) \
+    F(CHARGE_BEAM) \
     F(FLAMETHROWER) \
     F(SLUDGE_BOMB) \
     F(SANDSTORM) \
@@ -54,7 +54,10 @@
     F(OVERHEAT) \
     F(FREEZE_DRY) \
     F(CHILLING_WATER) \
-    F(DEFOG)
+    F(DEFOG) \
+    F(DAZZLING_GLEAM) \
+    F(CLOSE_COMBAT) \
+    F(VOLT_SWITCH) \
 
 #define FOREACH_HM(F) \
     F(CUT) \
