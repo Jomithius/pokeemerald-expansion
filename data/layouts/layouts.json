@@ -134,7 +134,7 @@
     {
       "id": "LAYOUT_FALLARBOR_TOWN",
       "name": "FallarborTown_Layout",
-      "width": 20,
+      "width": 26,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
@@ -4610,6 +4610,36 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route116_RusturfTunnel_Peak/border.bin",
       "blockdata_filepath": "data/layouts/Route116_RusturfTunnel_Peak/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALLARBOR_TOWN_HOUSE",
+      "name": "FallarborTown_House_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FallarborTown_House/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALLARBOR_TOWN_HOUSE_BASEMENT",
+      "name": "FallarborTown_House_Basement_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FallarborTown_House_Basement/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_House_Basement/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_FALLARBOR_1F",
+      "name": "RatCave_Fallarbor_1F_Layout",
+      "width": 17,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/RatCave_Fallarbor_1F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_Fallarbor_1F/map.bin"
     }
   ]
 }

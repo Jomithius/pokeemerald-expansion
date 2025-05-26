@@ -1194,3 +1194,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RusturfTunnel_2F_Room2/scripts.inc"
 
 	.include "data/maps/Route116_RusturfTunnel_Peak/scripts.inc"
+
+	.include "data/maps/FallarborTown_House/scripts.inc"
+
+	.include "data/maps/FallarborTown_House_Basement/scripts.inc"
+
+	.include "data/maps/RatCave_Fallarbor_1F/scripts.inc"
