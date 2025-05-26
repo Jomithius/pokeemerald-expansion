@@ -85,16 +85,16 @@ Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad::
 # 45 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
 	lockall
 # 46 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
-	compare VAR_SPEEDWAGON_STATE, 5
+	compare VAR_SPEEDWAGON_STATE, 6
 	goto_if_eq Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad_2
-# 56 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
-	setvar VAR_CYCLING_CHALLENGE_STATE, 0
 # 57 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
-	clearflag FLAG_SYS_CYCLING_ROAD
+	setvar VAR_CYCLING_CHALLENGE_STATE, 0
 # 58 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
+	clearflag FLAG_SYS_CYCLING_ROAD
+# 59 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
 	setvar VAR_TEMP_1, 0
 Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad_1:
-# 60 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
+# 61 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
 	releaseall
 	end
 
@@ -112,7 +112,9 @@ Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad_2:
 # 52 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
 	waitmovement 1
 # 53 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 6
+	setvar VAR_SPEEDWAGON_STATE, 7
+# 54 "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.pory"
+	clearflag FLAG_ROUTE110_HIDE_CYCLIST
 	goto Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad_1
 
 

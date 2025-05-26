@@ -229,7 +229,7 @@ static const union AnimCmd sAnim_FaceEast_AsymNPC[] =
     ANIMCMD_JUMP(0),
 };
 
-static const union AnimCmd sAnim_FaceEast_AsymNPC_NoWalk[] =
+static const union AnimCmd sAnim_FaceWest_AsymNPC_NoWalk[] =
 {
     ANIMCMD_FRAME(4, 16),
     ANIMCMD_JUMP(0),
@@ -1339,8 +1339,8 @@ static const union AnimCmd *const sAnimTable_AsymNPC[] = {
 static const union AnimCmd *const sAnimTable_AsymNPC_NoWalk[] = {
     [ANIM_STD_FACE_SOUTH] = sAnim_FaceSouth,
     [ANIM_STD_FACE_NORTH] = sAnim_FaceNorth,
-    [ANIM_STD_FACE_WEST] = sAnim_FaceWest,
-    [ANIM_STD_FACE_EAST] = sAnim_FaceEast_AsymNPC_NoWalk,
+    [ANIM_STD_FACE_WEST] = sAnim_FaceWest_AsymNPC_NoWalk,
+    [ANIM_STD_FACE_EAST] = sAnim_FaceEast,
     [ANIM_STD_GO_SOUTH] = sAnim_GoSouth,
     [ANIM_STD_GO_NORTH] = sAnim_GoNorth,
     [ANIM_STD_GO_WEST] = sAnim_GoWest,

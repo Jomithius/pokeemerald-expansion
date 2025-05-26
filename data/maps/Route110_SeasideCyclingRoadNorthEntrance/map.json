@@ -76,6 +76,15 @@
       "var": "VAR_TEMP_1",
       "var_value": "1",
       "script": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "6",
+      "script": "Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou"
     }
   ],
   "bg_events": [

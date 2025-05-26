@@ -705,9 +705,9 @@ script MauvilleCity_Trigger_Bikers1{
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
 	waitmovement(0)
 	playse(SE_THUNDERSTORM)
-	applymovement(13, MauvileCity_Movement_Biker1)
-	delay(10)
-	applymovement(14, MauvileCity_Movement_Biker1)
+	applymovement(13, MauvilleCity_Movement_Biker1)
+	delay(30)
+	applymovement(14, MauvilleCity_Movement_Biker1)
 	delay(20)
 	waitmovement(14)
 	playse(SE_THUNDERSTORM_STOP)
@@ -724,11 +724,11 @@ script MauvilleCity_Trigger_Bikers1{
 	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	fadedefaultbgm
 	removeobject(13)
 	removeobject(14)
 	removeobject(15)
 	addobject(16)
-	playbgm(MUS_RG_SILPH, TRUE)
 	release
 	end
 }
@@ -750,9 +750,9 @@ script MauvilleCity_Trigger_Bikers2{
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
 	waitmovement(0)
 	playse(SE_THUNDERSTORM)
-	applymovement(13, MauvileCity_Movement_Biker1)
-	delay(10)
-	applymovement(14, MauvileCity_Movement_Biker1)
+	applymovement(13, MauvilleCity_Movement_Biker1)
+	delay(30)
+	applymovement(14, MauvilleCity_Movement_Biker1)
 	delay(20)
 	waitmovement(14)
 	playse(SE_THUNDERSTORM_STOP)
@@ -769,11 +769,11 @@ script MauvilleCity_Trigger_Bikers2{
 	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	fadedefaultbgm
 	removeobject(13)
 	removeobject(14)
 	removeobject(15)
 	addobject(16)
-	playbgm(MUS_RG_SILPH, TRUE)
 	release
 	end
 }
@@ -793,9 +793,9 @@ script MauvilleCity_Trigger_Bikers3{
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
 	waitmovement(0)
 	playse(SE_THUNDERSTORM)
-	applymovement(13, MauvileCity_Movement_Biker1)
-	delay(10)
-	applymovement(14, MauvileCity_Movement_Biker1)
+	applymovement(13, MauvilleCity_Movement_Biker1)
+	delay(30)
+	applymovement(14, MauvilleCity_Movement_Biker1)
 	delay(20)
 	waitmovement(14)
 	playse(SE_THUNDERSTORM_STOP)
@@ -812,11 +812,11 @@ script MauvilleCity_Trigger_Bikers3{
 	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	fadedefaultbgm
 	removeobject(13)
 	removeobject(14)
 	removeobject(15)
 	addobject(16)
-	playbgm(MUS_RG_SILPH, TRUE)
 	release
 	end
 }
@@ -836,9 +836,9 @@ script MauvilleCity_Trigger_Bikers4{
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
 	waitmovement(0)
 	playse(SE_THUNDERSTORM)
-	applymovement(13, MauvileCity_Movement_Biker1)
-	delay(10)
-	applymovement(14, MauvileCity_Movement_Biker1)
+	applymovement(13, MauvilleCity_Movement_Biker1)
+	delay(30)
+	applymovement(14, MauvilleCity_Movement_Biker1)
 	delay(20)
 	waitmovement(14)
 	playse(SE_THUNDERSTORM_STOP)
@@ -855,11 +855,11 @@ script MauvilleCity_Trigger_Bikers4{
 	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	fadedefaultbgm
 	removeobject(13)
 	removeobject(14)
 	removeobject(15)
 	addobject(16)
-	playbgm(MUS_RG_SILPH, TRUE)
 	release
 	end
 }
@@ -873,7 +873,7 @@ movement MauvilleCity_Movement_PlayerRunRight{
 }
 
 
-movement MauvileCity_Movement_Biker1{
+movement MauvilleCity_Movement_Biker1{
 	walk_faster_down * 10
 	walk_faster_right * 13
 }
@@ -894,6 +894,10 @@ text MauvilleCity_Text_Police{
 
 script MauvilleCity_EventScript_Bikers_WomanWarn{
 	lock
+	playse(SE_PIN)
+	applymovement(16, Common_Movement_ExclamationMark)
+	waitmovement(16)
+	delay(20)
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
 	waitmovement(0)
 	applymovement(16, Common_Movement_FacePlayer)
@@ -911,4 +915,32 @@ text MauvilleCity_Text_WomanBikersRoute110{
 	"A biker gang took over the CYCLING\n
 	ROAD!\l
 	That poor policeman is outnumbered!"
+}
+
+script MauvilleCity_EventScript_Bikers_WomanWarnText{
+	lock
+	msgbox("Oh no...", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script MauvileCity_EventScript_SeeWhatsGoingOn{
+	lock
+	msgbox("I should see what's happening\n
+	on ROUTE 110.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, MauvileCity_Movement_WalkDown)
+	waitmovement(0)
+	release
+	end
+}
+
+movement MauvileCity_Movement_WalkDown{
+	walk_down
+}
+
+script MauvilleCity_EventScript_SaveBikerMusic{
+	playbgm(MUS_RG_SILPH, TRUE)
+	return
 }

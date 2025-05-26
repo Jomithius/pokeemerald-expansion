@@ -5810,7 +5810,13 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_CEO:
             return MUS_WATERFALL_COLOSSEUM; 
         case TRAINER_CLASS_MASTER:
-            return MUS_BENNIS;            
+            return MUS_BENNIS;    
+        case TRAINER_CLASS_BIKER:
+            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
+                return MUS_RG_VS_WILD;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleSpeedwagonName))
+                return MUS_RG_VS_TRAINER;
+            return MUS_RG_VS_WILD;        
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:
         case TRAINER_CLASS_PALACE_MAVEN:

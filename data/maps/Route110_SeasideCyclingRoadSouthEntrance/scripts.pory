@@ -43,14 +43,15 @@ Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk:
 `
 script Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad{
 	lockall
-    if(var(VAR_SPEEDWAGON_STATE) == 5){
+    if(var(VAR_SPEEDWAGON_STATE) == 6){
         applymovement(1, Common_Movement_FacePlayer)
         waitmovement(1)
         msgbox("Thank you for getting rid of them!", MSGBOX_AUTOCLOSE)
         waitmessage
         applymovement(1, Common_Movement_FaceOriginalDirection)
         waitmovement(1)
-        setvar(VAR_SPEEDWAGON_STATE, 6)
+        setvar(VAR_SPEEDWAGON_STATE, 7)
+		clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
     }
     else{
 	    setvar(VAR_CYCLING_CHALLENGE_STATE, 0)

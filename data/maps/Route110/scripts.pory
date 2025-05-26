@@ -17,6 +17,7 @@ Route110_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call Common_EventScript_SetupRivalOnBikeGfxId
 	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 1, Route110_EventScript_SaveCyclingMusic
+	call_if_set FLAG_ROUTE110_HIDE_CYCLIST, Route110_EventScript_SaveBikerMusic
 	end
 
 Route110_EventScript_SaveCyclingMusic::
@@ -972,15 +973,20 @@ script Route110_EventScript_Biker1{
 }
 
 script Route110_EventScript_Dale{
-	lockall
+	lock
 	msgbox("Don't get in my way!")
 	trainerbattle_no_intro(TRAINER_DALE, Route110_BikerDefeat)
 	msgbox("I'll remember this!")
 	fadescreen(FADE_TO_BLACK)
+	playse(SE_THUNDERSTORM)
+	delay(30)
+	playse(SE_THUNDERSTORM_STOP)
 	removeobject(43)
 	playse(SE_FLEE)
+	delay(10)
 	fadescreenspeed(FADE_FROM_BLACK, 3)
 	setflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
+	setvar(VAR_SPEEDWAGON_STATE, 4)
 	release
 	end
 }
@@ -999,44 +1005,51 @@ script Route110_EventScript_PolicemanHelp{
 }
 
 text Route110_Text_PolicemanPleaseHelp{
-	"Thanks you for saving me.\n
+	"Thank you for saving me.\n
 	You're a strong TRAINER.\l
-	Though, the situation is urgent!\p
+	Though the situation is urgent!\p
 	Backup isn't coming, and\n
 	I can't do this alone.\p
 	Their boss is currently riding at\n
 	end of CYCLING ROAD.\p
 	If you can defeat him, all these\n
-	other cowards should flee!"
+	other cowards should flee!\l
+	You have a bike, right?"
 }
 
 script Route110_EventScript_Biker2{
 	trainerbattle_single(TRAINER_EDWIN_1, Route110_Biker_Intro, Route110_BikerDefeat)
+	msgbox(Route110_BikerDefeat2, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker3{
 	trainerbattle_single(TRAINER_DARWIN, Route110_Biker_Intro3, Route110_BikerDefeat2)
+	msgbox(Route110_BikerDefeat, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker4{
 	trainerbattle_single(TRAINER_DAN, Route110_Biker_Intro2, Route110_BikerDefeat3)
+	msgbox(Route110_BikerDefeat, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker5{
 	trainerbattle_single(TRAINER_ROB, Route110_Biker_Intro3, Route110_BikerDefeat2)
+	msgbox(Route110_BikerDefeat3, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker6{
-	trainerbattle_single(TRAINER_STEPHEN, Route110_Biker_Intro2, Route110_BikerDefeat)
+	trainerbattle_single(TRAINER_ALYSSA, Route110_Biker_Intro2, Route110_BikerDefeat)
+	msgbox(Route110_BikerDefeat, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker7{
-	trainerbattle_single(TRAINER_ALYSSA, Route110_Biker_Intro, Route110_BikerDefeat3)
+	trainerbattle_single(TRAINER_STEPHEN, Route110_Biker_Intro, Route110_BikerDefeat3)
+	msgbox(Route110_BikerDefeat2, MSGBOX_AUTOCLOSE)
 	end
 }
 
@@ -1048,10 +1061,12 @@ script Route110_EventScript_Speedwagon{
 	lock
 	msgbox(Route110_Text_Speedwagon_PostBattle, MSGBOX_AUTOCLOSE)
 	waitmessage
+	delay(30)
 	playbgm(MUS_DUMMY, FALSE)
-	delay(10)
 	fadescreen(FADE_TO_BLACK)
 	playse(SE_THUNDERSTORM)
+	delay(120)
+	playse(SE_THUNDERSTORM_STOP)
 	delay(20)
 	playse(SE_FLEE)
 	removeobject(34)
@@ -1067,11 +1082,12 @@ script Route110_EventScript_Speedwagon{
 	removeobject(44)
 	removeobject(45)
 	removeobject(46)
+	delay(10)
 	fadescreenspeed(FADE_FROM_BLACK, 3)
+	delay(10)
 	fadedefaultbgm
-	setvar(VAR_SPEEDWAGON_STATE, 5)
+	setvar(VAR_SPEEDWAGON_STATE, 6)
 	setflag(FLAG_ROUTE110_HIDE_BIKERS)
-	clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
 	release
 	end
 }
@@ -1079,9 +1095,9 @@ script Route110_EventScript_Speedwagon{
 text Route110_Text_Speedwagon{
 	"Huh?\n
 	Who's this brat?\p
-	Huh?\n
+	HUH?\n
 	You're telling US to leave?\p
-	You can't stop us from riding!\p
+	You can't stop us from riding!\n
 	Don't try to be a hero!"
 }
 
@@ -1091,7 +1107,7 @@ text Route110_SpeedwagonDefeat{
 }
 
 text Route110_Text_Speedwagon_PostBattle{
-	"H-how are you so strong?!
+	"H-how are you so strong?!\n
 	Let's get outta here, boys!"
 }
 
@@ -1101,24 +1117,62 @@ script Route110_Policeman_GiveBrickBreak{
 	waitmessage
 	clearflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
 	addobject(47)
-	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
-	waitmovement(0)
 	getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
 	if(var(VAR_TEMP_1) == DIR_SOUTH){
 		applymovement(47, Route110_Policeman_South)
+		waitmovement(47)
 	}
 	else{
 		applymovement(47, Route110_Policeman_East)
+		waitmovement(47)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+		waitmovement(0)
 	}
+	delay(10)
 	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_AUTOCLOSE)
 	waitmessage
 	giveitem(ITEM_TM_BRICK_BREAK)
 	waitmessage
-	msgbox(Route110_Text_PolicemanThankYou2)
+	msgbox(Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(47, Route110_PolicemanLeave)
 	waitmovement(47)
-	setvar(VAR_SPEEDWAGON_STATE, 7)
+	removeobject(47)
+	setflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
+	setvar(VAR_SPEEDWAGON_STATE, 8)
+	release
+	end
+}
+
+script Route110_Policeman_GiveBrickBreakNorth{
+	lock
+	msgbox("Wait!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	clearflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
+	addobject(48)
+	getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
+	if(var(VAR_TEMP_1) == DIR_EAST){
+		applymovement(48, Route110_Policeman_North)
+		waitmovement(48)
+	}
+	else{
+		applymovement(48, Route110_Policeman_North2)
+		waitmovement(48)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+		waitmovement(0)
+	}
+	delay(10)
+	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_AUTOCLOSE)
+	waitmessage
+	giveitem(ITEM_TM_BRICK_BREAK)
+	waitmessage
+	msgbox(Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(48, Route110_PolicemanLeaveNorth)
+	waitmovement(48)
+	removeobject(48)
+	setflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
+	setvar(VAR_SPEEDWAGON_STATE, 8)
 	release
 	end
 }
@@ -1172,6 +1226,19 @@ text Route110_BikerDefeat3{
 	"BRRRRUBBB BRRRUB...."
 }
 
+movement Route110_Policeman_North{
+	walk_right * 8
+}
+
+movement Route110_Policeman_North2{
+	walk_down
+	walk_right * 9
+}
+
+movement Route110_PolicemanLeaveNorth{
+	walk_left * 2
+	walk_up * 7
+}
 
 movement Route110_Policeman_South{
 	walk_up  * 6
@@ -1179,9 +1246,43 @@ movement Route110_Policeman_South{
 
 movement Route110_Policeman_East{
 	walk_left
-	walk_up * 6
+	walk_up * 7
 }
 
 movement Route110_PolicemanLeave{
 	walk_down * 7
+}
+
+script Route110_EventScript_PolicemanHelpTrigger1{
+	lock
+	msgbox("Help!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+	waitmovement(0)
+	release
+	end
+}
+
+script Route110_EventScript_PolicemanHelpTrigger2{
+	lock
+	msgbox("Help!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+	waitmovement(0)
+	release
+	end
+}
+
+movement Route110_WalkUp{
+	walk_up
+}
+
+movement Route110_WalkLeft{
+	walk_left
+}
+
+script Route110_EventScript_SaveBikerMusic{
+	fadenewbgm(MUS_RG_SILPH)
+	savebgm(MUS_RG_SILPH)
+	return
 }

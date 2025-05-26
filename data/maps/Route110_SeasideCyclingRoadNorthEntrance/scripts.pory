@@ -5,6 +5,7 @@ raw`Route110_SeasideCyclingRoadNorthEntrance_MapScripts::
 Route110_SeasideCyclingRoadNorthEntrance_OnTransition:
 	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 3, Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge
 	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 2, Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge
+	call_if_set FLAG_ROUTE110_HIDE_CYCLIST, Route110_SeasideCyclingRoadNorthEntrance_EventScript_SaveBikerMusic
 	end
 
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge::
@@ -58,7 +59,7 @@ Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk:
 
 script Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad{
 	lockall
-    if(var(VAR_SPEEDWAGON_STATE) == 3){
+    if(var(VAR_SPEEDWAGON_STATE) == 4){
         applymovement(1, Common_Movement_FacePlayer)
         waitmovement(1)
         msgbox(Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy, MSGBOX_AUTOCLOSE)
@@ -66,13 +67,14 @@ script Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad{
         playse(SE_PIN)
         applymovement(1, Common_Movement_ExclamationMark)
         waitmovement(1)
+		delay(20)
         msgbox(Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge)
         waitmessage
         applymovement(1, Common_Movement_FaceOriginalDirection)
         waitmovement(1)
-        setvar(VAR_SPEEDWAGON_STATE, 4)
+        setvar(VAR_SPEEDWAGON_STATE, 5)
     }
-    elif(var(VAR_SPEEDWAGON_STATE) == 4){
+    elif(var(VAR_SPEEDWAGON_STATE) == 5){
         applymovement(1, Common_Movement_FacePlayer)
         waitmovement(1)
         msgbox("Please, help us!", MSGBOX_AUTOCLOSE)
@@ -97,6 +99,28 @@ text Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy{
 
 text Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge{
     "That BADGE...! You must be a strong\n
-    TRAINER.\l
-    Please, help us!"
+    TRAINER.\p
+    Okay, I won't stop you.\n
+	Please, help us!"
+}
+
+script Route110_SeasideCyclingRoadNorthEntrance_EventScript_SaveBikerMusic{
+	playbgm(MUS_NONE, FALSE)
+	return
+}
+
+script Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou{
+        lock
+		applymovement(1, Common_Movement_FacePlayer)
+        waitmovement(1)
+        msgbox("Thank you for getting rid of them!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, Common_Movement_FaceOriginalDirection)
+        waitmovement(1)
+        setvar(VAR_SPEEDWAGON_STATE, 7)
+		clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
+		release
+		end
+
+
 }

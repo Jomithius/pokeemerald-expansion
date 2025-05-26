@@ -1444,6 +1444,7 @@ const u8 gText_Are2[] = _("are");
 const u8 gText_BadEgg[] = _("Bad Egg");
 const u8 gText_BattleWallyName[] = _("WALLY");
 const u8 gText_BattleLunaName[] = _("LUNA");
+const u8 gText_BattleSpeedwagonName[] = _("SPEEDWAGON");
 const u8 gText_Win[] = _("{HIGHLIGHT TRANSPARENT}Win");
 const u8 gText_Loss[] = _("{HIGHLIGHT TRANSPARENT}Loss");
 const u8 gText_Draw[] = _("{HIGHLIGHT TRANSPARENT}Draw");

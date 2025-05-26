@@ -3178,7 +3178,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Quilladin  
 Ability: Bulletproof  
 Level: 18  
-Tera Type: Grass  
 EVs: 168 HP / 120 Atk / 208 Def / 12 SpD  
 Impish Nature  
 - Bulk Up  
@@ -3436,7 +3435,6 @@ AI: Basic Trainer
 Magnemite @ Air Balloon  
 Ability: Analytic  
 Level: 22  
-Tera Type: Electric  
 EVs: 236 HP / 236 SpA / 36 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -3447,8 +3445,7 @@ IVs: 0 Atk
 
 Aipom  
 Ability: Skill Link  
-Level: 21  
-Tera Type: Normal  
+Level: 21   
 EVs: 244 Atk / 8 Def / 252 Spe  
 Adamant Nature  
 - Tail Slap  
@@ -3457,8 +3454,7 @@ Adamant Nature
 
 Klang  
 Ability: Plus  
-Level: 23  
-Tera Type: Steel  
+Level: 23   
 EVs: 252 HP / 4 Atk / 252 SpA  
 Rash Nature  
 - Charge Beam  
@@ -3468,7 +3464,6 @@ Rash Nature
 Electrike  
 Ability: Minus  
 Level: 22  
-Tera Type: Electric  
 EVs: 12 HP / 248 SpA / 248 Spe  
 Mild Nature  
 - Ice Fang  
@@ -5419,15 +5414,69 @@ Pic: Speedwagon
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Mugshot: Yellow
 
-Kirlia
-Level: 29
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Stunfisk-Galar @ Sitrus Berry  
+Ability: Mimicry  
+Level: 23   
+EVs: 252 HP / 156 Atk / 76 Def / 20 SpD / 4 Spe  
+Impish Nature  
+- Stealth Rock  
+- Metal Claw  
+- Dig  
+- Snap Trap  
 
-Meditite
-Level: 29
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Zigzagoon-Galar @ Toxic Orb  
+Ability: Quick Feet  
+Level: 25   
+EVs: 4 HP / 244 Atk / 12 SpD / 244 Spe  
+Jolly Nature  
+- Lash Out  
+- Facade  
+- Parting Shot  
+- Trick  
+
+Slowpoke-Galar @ Quick Claw  
+Ability: Regenerator  
+Level: 25   
+EVs: 244 HP / 108 Atk / 148 SpA / 4 SpD  
+Brave Nature  
+IVs: 0 Atk  
+- Tri Attack  
+- Psybeam  
+- Grass Knot  
+- Icy Wind  
+
+Darumaka-Galar @ Wide Lens  
+Ability: Hustle  
+Level: 23   
+EVs: 240 HP / 148 Atk / 108 Def / 12 SpD  
+Adamant Nature  
+- Ice Punch  
+- Brick Break  
+- Bite  
+
+Meowth-Galar @ Metal Coat  
+Ability: Tough Claws  
+Level: 25  
+EVs: 244 HP / 252 Atk / 4 SpD / 4 Spe  
+Adamant Nature  
+- Payback  
+- Pay Day  
+- Metal Claw  
+- Fake Out  
+
+Mr. Mime-Galar  
+Ability: Screen Cleaner  
+Level: 25   
+EVs: 20 HP / 244 SpA / 244 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Icy Wind  
+- Psybeam  
+- Charge Beam  
+
 
 === TRAINER_JERRY_4 ===
 Name: JERRY
@@ -6196,8 +6245,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSH ===
 Name: JOSH
-Class: Camper
-Pic: Camper
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
 Gender: Male
 Music: Male
 Double Battle: No
@@ -6225,22 +6274,30 @@ EVs: 36 HP / 32 Atk / 24 Def / 32 SpA / 24 SpD / 76 Spe
 - Rock Blast  
 - Incinerate
 
+Pansage
+Level: 13
+EVs: 36 HP / 32 Atk / 24 Def / 32 SpA / 24 SpD / 76 Spe  
+
 === TRAINER_TOMMY ===
 Name: TOMMY
-Class: Youngster
-Pic: Youngster
+Class: Kindler
+Pic: Kindler
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Squirtle  
-Ability: Torrent  
+Charmander 
+Ability: Blaze  
 Level: 12    
 EVs: 160 Atk / 56 Def / 112 SpA  
 Relaxed Nature  
-- Water Gun  
-- Rapid Spin  
+- Incinerate 
+- Scratch 
+
+Pansear
+Level: 12    
+EVs: 160 Atk / 56 Def / 112 SpA  
 
 Silicobra  
 Ability: Shed Skin  
@@ -6654,20 +6711,26 @@ Double Battle: No
 AI: Basic Trainer
 
 Tentacool
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
 
-Wailmer
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sneasel  
+Ability: Inner Focus  
+Level: 23  
+EVs: 248 Atk / 8 SpD / 244 Spe  
+Jolly Nature  
+- Fake Out  
+- Avalanche  
+- Knock Off  
+- Ice Shard  
 
-Tentacool
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wailmer
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Basculin  
+Ability: Adaptability  
+Level: 24   
+EVs: 252 HP / 108 Atk / 144 Spe  
+Naive Nature  
+- Aqua Jet  
+- Ice Fang  
+- Bite  
 
 === TRAINER_NOLAN ===
 Name: NOLAN
@@ -9616,15 +9679,36 @@ Pic: Biker
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Lombre
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Swinub  
+Ability: Oblivious  
+Level: 23  
+EVs: 244 HP / 244 Atk / 20 SpD  
+Adamant Nature  
+- Avalanche  
+- Ice Shard  
+- Smack Down  
+- Dig  
 
-Nuzleaf
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Houndour  
+Ability: Flash Fire  
+Level: 23  
+EVs: 12 HP / 244 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Incinerate  
+- Snarl  
+
+Delcatty  
+Ability: Normalize  
+Level: 25   
+EVs: 252 Atk / 12 SpD / 244 Spe  
+Jolly Nature  
+- Fake Out  
+- Headbutt  
+- Fake Tears  
+- Feint Attack  
 
 === TRAINER_HECTOR ===
 Name: HECTOR
@@ -9669,17 +9753,25 @@ Name: DARWIN
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
+Music: Intense
+Double Battle: Yes
+AI: Basic Trainer
 
-Lombre
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shedinja  
+Ability: Wonder Guard  
+Level: 24  
+- Leech Life  
+- Shadow Sneak  
+- Dig  
 
-Nuzleaf
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Stonjourner  
+Ability: Power Spot  
+Level: 24  
+EVs: 244 HP / 252 SpD  
+Careful Nature  
+- Stomping Tantrum  
+- Brutal Swing  
+- Rock Slide  
 
 === TRAINER_DAN ===
 Name: DAN
@@ -9688,15 +9780,33 @@ Pic: Biker
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Lombre
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ferroseed  
+Ability: Iron Barbs  
+Level: 23   
+IVs: 0 Spe  
+- Gyro Ball  
+- Seed Bomb  
+- Spikes  
 
-Nuzleaf
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nuzleaf  
+Ability: Pickpocket  
+Level: 24  
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Fake Out  
+- Lash Out  
+- Seed Bomb  
+- Thief  
+
+Crabrawler  
+Ability: Iron Fist  
+Level: 25   
+- Bulk Up  
+- Brick Break  
+- Dizzy Punch  
+- Ice Punch  
 
 === TRAINER_ROB ===
 Name: ROB
@@ -9707,30 +9817,68 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Liepard  
+Ability: Prankster  
+Level: 23   
+EVs: 80 HP / 148 Atk / 16 Def / 16 SpD / 248 Spe  
+Jolly Nature  
+- Fake Out  
+- Taunt  
+- Throat Chop  
+- Quick Attack  
 
-Nuzleaf
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Garbodor  
+Ability: Stench  
+Level: 24   
+EVs: 236 HP / 100 Atk / 120 Def / 48 SpA  
+Naughty Nature  
+- Clear Smog  
+- Cross Poison  
+- Rock Polish  
+- Self-Destruct  
 
 === TRAINER_STEPHEN ===
 Name: STEPHEN
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
+Music: Intense
+Double Battle: Yes
+AI: Basic Trainer
 
-Ludicolo
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Murkrow  
+Ability: Prankster  
+Level: 25  
+EVs: 244 HP / 164 Def / 76 SpA / 4 SpD / 12 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Tailwind  
+- Air Cutter  
+- Quash  
+- Snarl  
 
-Shiftry
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Corsola  
+Ability: Hustle  
+Level: 25   
+- Icicle Spear  
+- Rock Blast  
+- Bulldoze  
+
+Seviper  
+Ability: Shed Skin  
+Level: 23 
+- Poison Tail  
+- Brick Break
+-Ice Fang  
+ 
+Scyther @ Black Glasses  
+Ability: Technician  
+Level: 22  
+Tera Type: Bug  
+EVs: 244 HP / 116 Def / 148 SpD  
+Impish Nature  
+- Brutal Swing  
+- Focus Energy  
 
 === TRAINER_WALLY_VR_1 ===
 Name: WALLY
@@ -12233,7 +12381,6 @@ AI: Basic Trainer
 Qwilfish-Hisui  
 Ability: Intimidate  
 Level: 22  
-Tera Type: Dark  
 EVs: 244 Atk / 252 Spe  
 Jolly Nature  
 - Barb Barrage  
@@ -12243,8 +12390,7 @@ Jolly Nature
 
 Bibarel  
 Ability: Simple  
-Level: 23  
-Tera Type: Normal  
+Level: 23    
 EVs: 16 Atk / 8 Def / 236 SpA / 248 Spe  
 Naive Nature  
 - Work Up  
@@ -13414,17 +13560,35 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALYSSA ===
-Name: ALYSSA
+Name: AL
 Class: Biker
 Pic: Biker
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Magnemite
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Thievul  
+Ability: Stakeout  
+Level: 23  
+Tera Type: Dark  
+EVs: 188 HP / 180 Atk / 92 Def / 28 SpD / 12 Spe  
+Jolly Nature  
+- Knock Off  
+- Quick Attack  
+- U-turn  
+- Tail Slap  
+
+Dubwool  
+Ability: Fluffy  
+Level: 24  
+Tera Type: Normal  
+EVs: 252 HP / 156 Atk / 76 Def / 24 Spe  
+Impish Nature  
+- Body Press  
+- Headbutt  
+- Cotton Guard  
+
 
 === TRAINER_MARCOS ===
 Name: MARCOS
@@ -16188,8 +16352,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ANGELO ===
 Name: ANGELO
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Class: Collector
+Pic: Collector
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -16197,8 +16361,7 @@ AI: Basic Trainer
 
 Grimer-Alola @ Salac Berry  
 Ability: Gluttony  
-Level: 23  
-Tera Type: Poison  
+Level: 23   
 EVs: 248 HP / 160 Atk / 12 Def / 88 SpD  
 Adamant Nature  
 - Belch  
@@ -16207,8 +16370,7 @@ Adamant Nature
 
 Grimer  
 Ability: Poison Touch  
-Level: 23  
-Tera Type: Poison  
+Level: 23   
 EVs: 248 HP / 248 Atk / 8 Spe  
 Adamant Nature  
 IVs: 0 Atk  
@@ -16216,7 +16378,6 @@ IVs: 0 Atk
 Beedrill  
 Ability: Sniper  
 Level: 20  
-Tera Type: Bug  
 EVs: 36 HP / 236 Atk / 236 Spe  
 Hasty Nature  
 - Focus Energy  
