@@ -180,7 +180,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_3:
 
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_SaveBikerMusic::
 # 108 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	playbgm MUS_NONE, FALSE
+	fadenewbgm MUS_NONE
 	return
 
 

@@ -105,22 +105,20 @@ text Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge{
 }
 
 script Route110_SeasideCyclingRoadNorthEntrance_EventScript_SaveBikerMusic{
-	playbgm(MUS_NONE, FALSE)
+	fadenewbgm(MUS_NONE)
 	return
 }
 
 script Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou{
-        lock
-		applymovement(1, Common_Movement_FacePlayer)
-        waitmovement(1)
-        msgbox("Thank you for getting rid of them!", MSGBOX_AUTOCLOSE)
-        waitmessage
-        applymovement(1, Common_Movement_FaceOriginalDirection)
-        waitmovement(1)
-        setvar(VAR_SPEEDWAGON_STATE, 7)
-		clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
-		release
-		end
-
-
+    lock
+	applymovement(1, Common_Movement_FacePlayer)
+	waitmovement(1)
+    msgbox("Thank you for getting rid of them!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(1)
+    setvar(VAR_SPEEDWAGON_STATE, 7)
+	clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	release
+	end
 }

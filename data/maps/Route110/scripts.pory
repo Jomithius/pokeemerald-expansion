@@ -1151,7 +1151,7 @@ script Route110_Policeman_GiveBrickBreakNorth{
 	clearflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
 	addobject(48)
 	getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
-	if(var(VAR_TEMP_1) == DIR_EAST){
+	if(var(VAR_TEMP_1) == DIR_WEST){
 		applymovement(48, Route110_Policeman_North)
 		waitmovement(48)
 	}

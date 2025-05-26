@@ -2188,7 +2188,7 @@ Route110_Policeman_GiveBrickBreakNorth::
 # 1153 "data/maps/Route110/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
 # 1154 "data/maps/Route110/scripts.pory"
-	compare VAR_TEMP_1, DIR_EAST
+	compare VAR_TEMP_1, DIR_WEST
 	goto_if_eq Route110_Policeman_GiveBrickBreakNorth_2
 # 1159 "data/maps/Route110/scripts.pory"
 	applymovement 48, Route110_Policeman_North2
