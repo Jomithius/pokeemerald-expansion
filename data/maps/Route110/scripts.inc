@@ -2113,11 +2113,11 @@ Route110_EventScript_Speedwagon::
 	end
 
 
-Route110_Policeman_GiveBrickBreak::
+Route110_Policeman_GiveUturn::
 # 1115 "data/maps/Route110/scripts.pory"
 	lock
 # 1116 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Policeman_GiveBrickBreak_Text_0, MSGBOX_AUTOCLOSE
+	msgbox Route110_Policeman_GiveUturn_Text_0, MSGBOX_AUTOCLOSE
 # 1117 "data/maps/Route110/scripts.pory"
 	waitmessage
 # 1118 "data/maps/Route110/scripts.pory"
@@ -2128,7 +2128,7 @@ Route110_Policeman_GiveBrickBreak::
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
 # 1121 "data/maps/Route110/scripts.pory"
 	compare VAR_TEMP_1, DIR_SOUTH
-	goto_if_eq Route110_Policeman_GiveBrickBreak_2
+	goto_if_eq Route110_Policeman_GiveUturn_2
 # 1126 "data/maps/Route110/scripts.pory"
 	applymovement 47, Route110_Policeman_East
 # 1127 "data/maps/Route110/scripts.pory"
@@ -2137,7 +2137,7 @@ Route110_Policeman_GiveBrickBreak::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 # 1129 "data/maps/Route110/scripts.pory"
 	waitmovement 0
-Route110_Policeman_GiveBrickBreak_1:
+Route110_Policeman_GiveUturn_1:
 # 1131 "data/maps/Route110/scripts.pory"
 	delay 10
 # 1132 "data/maps/Route110/scripts.pory"
@@ -2145,7 +2145,7 @@ Route110_Policeman_GiveBrickBreak_1:
 # 1133 "data/maps/Route110/scripts.pory"
 	waitmessage
 # 1134 "data/maps/Route110/scripts.pory"
-	giveitem ITEM_TM_BRICK_BREAK
+	giveitem ITEM_TM_U_TURN
 # 1135 "data/maps/Route110/scripts.pory"
 	waitmessage
 # 1136 "data/maps/Route110/scripts.pory"
@@ -2166,19 +2166,19 @@ Route110_Policeman_GiveBrickBreak_1:
 	release
 	end
 
-Route110_Policeman_GiveBrickBreak_2:
+Route110_Policeman_GiveUturn_2:
 # 1122 "data/maps/Route110/scripts.pory"
 	applymovement 47, Route110_Policeman_South
 # 1123 "data/maps/Route110/scripts.pory"
 	waitmovement 47
-	goto Route110_Policeman_GiveBrickBreak_1
+	goto Route110_Policeman_GiveUturn_1
 
 
-Route110_Policeman_GiveBrickBreakNorth::
+Route110_Policeman_GiveUturnNorth::
 # 1148 "data/maps/Route110/scripts.pory"
 	lock
 # 1149 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Policeman_GiveBrickBreak_Text_0, MSGBOX_AUTOCLOSE
+	msgbox Route110_Policeman_GiveUturn_Text_0, MSGBOX_AUTOCLOSE
 # 1150 "data/maps/Route110/scripts.pory"
 	waitmessage
 # 1151 "data/maps/Route110/scripts.pory"
@@ -2189,7 +2189,7 @@ Route110_Policeman_GiveBrickBreakNorth::
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
 # 1154 "data/maps/Route110/scripts.pory"
 	compare VAR_TEMP_1, DIR_WEST
-	goto_if_eq Route110_Policeman_GiveBrickBreakNorth_2
+	goto_if_eq Route110_Policeman_GiveUturnNorth_2
 # 1159 "data/maps/Route110/scripts.pory"
 	applymovement 48, Route110_Policeman_North2
 # 1160 "data/maps/Route110/scripts.pory"
@@ -2198,7 +2198,7 @@ Route110_Policeman_GiveBrickBreakNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 # 1162 "data/maps/Route110/scripts.pory"
 	waitmovement 0
-Route110_Policeman_GiveBrickBreakNorth_1:
+Route110_Policeman_GiveUturnNorth_1:
 # 1164 "data/maps/Route110/scripts.pory"
 	delay 10
 # 1165 "data/maps/Route110/scripts.pory"
@@ -2206,7 +2206,7 @@ Route110_Policeman_GiveBrickBreakNorth_1:
 # 1166 "data/maps/Route110/scripts.pory"
 	waitmessage
 # 1167 "data/maps/Route110/scripts.pory"
-	giveitem ITEM_TM_BRICK_BREAK
+	giveitem ITEM_TM_U_TURN
 # 1168 "data/maps/Route110/scripts.pory"
 	waitmessage
 # 1169 "data/maps/Route110/scripts.pory"
@@ -2227,12 +2227,12 @@ Route110_Policeman_GiveBrickBreakNorth_1:
 	release
 	end
 
-Route110_Policeman_GiveBrickBreakNorth_2:
+Route110_Policeman_GiveUturnNorth_2:
 # 1155 "data/maps/Route110/scripts.pory"
 	applymovement 48, Route110_Policeman_North
 # 1156 "data/maps/Route110/scripts.pory"
 	waitmovement 48
-	goto Route110_Policeman_GiveBrickBreakNorth_1
+	goto Route110_Policeman_GiveUturnNorth_1
 
 
 Route110_EventScript_BikerSouthCyclingRoad::
@@ -2435,7 +2435,7 @@ Route110_EventScript_PolicemanHelp_Text_0:
 # 1000 "data/maps/Route110/scripts.pory"
 	.string "Help!$"
 
-Route110_Policeman_GiveBrickBreak_Text_0:
+Route110_Policeman_GiveUturn_Text_0:
 # 1116 "data/maps/Route110/scripts.pory"
 	.string "Wait!$"
 
@@ -2461,11 +2461,11 @@ Route110_Text_Speedwagon_PostBattle::
 
 Route110_Text_PolicemanThankYou::
 # 1180 "data/maps/Route110/scripts.pory"
-	.string "Thank you for helping me.\n Please, take this as thanks.$"
+	.string "Thank you for helping me.\n Please, take this as thanks.\p One of those thugs dropped it\n as they fled.$"
 
 Route110_Text_PolicemanThankYou2::
-# 1185 "data/maps/Route110/scripts.pory"
-	.string "TM31, BRICK BREAK, deals damage\n and also breaks screens.\p Well, I need to go file a report\n and help gather forces to hunt\l down all the bikers that got away.\p Take care.$"
+# 1187 "data/maps/Route110/scripts.pory"
+	.string "Well, I need to go file a report\n and help gather forces to hunt down\l all the bikers that got away.\p Take care.$"
 
 Route110_Biker_Intro::
 # 1203 "data/maps/Route110/scripts.pory"

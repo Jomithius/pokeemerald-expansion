@@ -1311,9 +1311,10 @@ RustboroCity_Text_YouCanHave2On2Battle:
 
 script RustboroCity_EventScript_Misa{
     lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, RustboroCity_Movement_PlayerWalkDown)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, RustboroFaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, RustboroPlayerStepBack)
+    waitmovement(0)
     opendoor(16,38)
     waitdooranim
     addobject(17)
@@ -1426,9 +1427,10 @@ script RustboroCity_Eventscript_Promise_To_Misa{
 script RustboroCityGym_EventScript_Misa{
     setflag(FLAG_MISA_RUSTBORO_GYM_TRIGGER)
 	lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, RustboroCity_Movement_PlayerWalkDown)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, RustboroFaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, RustboroPlayerStepBack)
+    waitmovement(0)
     opendoor(27,19)
     waitdooranim
     addobject(18)
@@ -1537,4 +1539,11 @@ movement RustboroMisaLeaveGym1{
 
 movement RustboroMisaLeaveGym2{
     walk_left * 8 
+}
+
+movement RustboroPlayerStepBack{
+	lock_facing_direction
+	walk_down
+	delay_16
+	unlock_facing_direction
 }

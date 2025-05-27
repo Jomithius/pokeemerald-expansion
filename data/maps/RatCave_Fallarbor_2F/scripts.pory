@@ -1,0 +1,74 @@
+mapscripts RatCave_Fallarbor_2F_MapScripts {}
+
+script RatCave_Fallarbor_2F_EventScript_Raticate{
+    lock
+    playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
+    delay(20)
+    release
+}
+
+script RatCave_Fallarbor_2F_EventScript_RaticateAlola{
+    lock
+    playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
+    delay(20)
+    release
+}
+
+script RatCave_Fallarbor_2F_EventScript_Ratduardo{
+    lockall
+    msgbox(RatCave_Fallarbor_2F_Text_RatduardoIntro, MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_RATDUARDO_2, RatCave_Fallarbor_2F_Text_RatduardoDefeat)
+    call(RatCave_Fallarbor_2F_BattleOver)
+    call(FallarborRatCaveShake)
+    setvar(VAR_RAT_CAVE_STATE, 6)
+    releaseall
+    end
+}
+
+
+text RatCave_Fallarbor_2F_Text_RatduardoIntro{
+    "Again... You..."
+}
+
+text RatCave_Fallarbor_2F_Text_RatduardoDefeat{
+    "..."
+}
+
+script RatCave_Fallarbor_2F_BattleOver{
+    lockall
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes again:\p
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't.. get.. in my way...!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setflag(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR)
+    return
+}
+
+script FallarborRatCaveShake{
+    delay (30)
+    setvar(VAR_0x8004, 2) // vertical pan
+    setvar(VAR_0x8005, 6) // horizontal pan
+    setvar(VAR_0x8006, 8) // num shakes
+    setvar(VAR_0x8007, 4) // shake delay
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    return
+}
+
+script Fallarbor_RatCave_Rock {
+    lock
+    msgbox("Doesn't look like the cave in \n
+    can be cleared anytime soon.")
+    waitmessage
+    release
+    end
+}

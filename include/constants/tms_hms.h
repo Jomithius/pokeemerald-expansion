@@ -58,6 +58,10 @@
     F(DAZZLING_GLEAM) \
     F(CLOSE_COMBAT) \
     F(VOLT_SWITCH) \
+    F(ROCK_SLIDE) \
+    F(U_TURN) \
+    F(DRAIN_PUNCH) \
+    F(ACROBATICS) \
 
 #define FOREACH_HM(F) \
     F(CUT) \

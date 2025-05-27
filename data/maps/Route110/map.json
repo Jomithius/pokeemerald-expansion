@@ -788,7 +788,7 @@
       "elevation": 0,
       "var": "VAR_SPEEDWAGON_STATE",
       "var_value": "7",
-      "script": "Route110_Policeman_GiveBrickBreak"
+      "script": "Route110_Policeman_GiveUturn"
     },
     {
       "type": "trigger",
@@ -797,7 +797,7 @@
       "elevation": 0,
       "var": "VAR_SPEEDWAGON_STATE",
       "var_value": "7",
-      "script": "Route110_Policeman_GiveBrickBreak"
+      "script": "Route110_Policeman_GiveUturn"
     },
     {
       "type": "trigger",
@@ -842,7 +842,7 @@
       "elevation": 0,
       "var": "VAR_SPEEDWAGON_STATE",
       "var_value": "7",
-      "script": "Route110_Policeman_GiveBrickBreakNorth"
+      "script": "Route110_Policeman_GiveUturnNorth"
     },
     {
       "type": "trigger",
@@ -851,7 +851,7 @@
       "elevation": 0,
       "var": "VAR_SPEEDWAGON_STATE",
       "var_value": "7",
-      "script": "Route110_Policeman_GiveBrickBreakNorth"
+      "script": "Route110_Policeman_GiveUturnNorth"
     }
   ],
   "bg_events": [

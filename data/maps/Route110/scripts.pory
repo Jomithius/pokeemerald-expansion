@@ -1111,7 +1111,7 @@ text Route110_Text_Speedwagon_PostBattle{
 	Let's get outta here, boys!"
 }
 
-script Route110_Policeman_GiveBrickBreak{
+script Route110_Policeman_GiveUturn{
 	lock
 	msgbox("Wait!", MSGBOX_AUTOCLOSE)
 	waitmessage
@@ -1131,7 +1131,7 @@ script Route110_Policeman_GiveBrickBreak{
 	delay(10)
 	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_AUTOCLOSE)
 	waitmessage
-	giveitem(ITEM_TM_BRICK_BREAK)
+	giveitem(ITEM_TM_U_TURN)
 	waitmessage
 	msgbox(Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE)
 	waitmessage
@@ -1144,7 +1144,7 @@ script Route110_Policeman_GiveBrickBreak{
 	end
 }
 
-script Route110_Policeman_GiveBrickBreakNorth{
+script Route110_Policeman_GiveUturnNorth{
 	lock
 	msgbox("Wait!", MSGBOX_AUTOCLOSE)
 	waitmessage
@@ -1164,7 +1164,7 @@ script Route110_Policeman_GiveBrickBreakNorth{
 	delay(10)
 	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_AUTOCLOSE)
 	waitmessage
-	giveitem(ITEM_TM_BRICK_BREAK)
+	giveitem(ITEM_TM_U_TURN)
 	waitmessage
 	msgbox(Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE)
 	waitmessage
@@ -1179,15 +1179,15 @@ script Route110_Policeman_GiveBrickBreakNorth{
 
 text Route110_Text_PolicemanThankYou{
 	"Thank you for helping me.\n
-	Please, take this as thanks."
+	Please, take this as thanks.\p
+	One of those thugs dropped it\n
+	as they fled."
 }
 
 text Route110_Text_PolicemanThankYou2{
-	"TM31, BRICK BREAK, deals damage\n
-	and also breaks screens.\p
-	Well, I need to go file a report\n
-	and help gather forces to hunt\l
-	down all the bikers that got away.\p
+	"Well, I need to go file a report\n
+	and help gather forces to hunt down\l
+	all the bikers that got away.\p
 	Take care."
 }
 

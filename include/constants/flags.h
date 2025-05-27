@@ -140,7 +140,7 @@
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77
 
 #define FLAG_LANDMARK_MIRAGE_TOWER           0x78
-#define FLAG_RECEIVED_TM_BRICK_BREAK         0x79 // unused
+#define FLAG_FOUND_TM_BRICK_BREAK            0x79 // Rat Cave Fallarbor
 #define FLAG_RECEIVED_HM_SURF                0x7A
 #define FLAG_RECEIVED_HM_DIVE                0x7B
 #define FLAG_REGISTER_RIVAL_POKENAV          0x7C
@@ -660,7 +660,7 @@
 #define FLAG_RECEIVED_TM_DAZZLING_GLEAM  0x265 // Slateport Gym
 #define FLAG_RECEIVED_TM_CLOSE_COMBAT    0x266 // Sootopolis City House 1
 #define FLAG_RECEIVED_TM_VOLT_SWITCH     0x267 // Mauville Gym
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
+#define FLAG_FOUND_TM_ROCK_SLIDE         0x268 // Fallarbor Rat Cave
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
@@ -1210,7 +1210,7 @@
 #define FLAG_ITEM_ROUTE_133_MAX_REVIVE                              0x485
 #define FLAG_ITEM_ROUTE_134_CARBOS                                  0x486
 #define FLAG_ITEM_ROUTE_134_STAR_PIECE                              0x487
-#define FLAG_ITEM_ROUTE_114_ENERGY_POWDER                           0x488
+#define FLAG_ITEM_ROUTE_114_TM_DRAIN_PUNCH                          0x488
 #define FLAG_ITEM_ROUTE_115_PP_UP                                   0x489
 #define FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP                            0x48A
 #define FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS                            0x48B
@@ -1224,7 +1224,7 @@
 
 #define FLAG_LINA_HOUSE_EEVEE                                       0x493 // Gift Eevee
 #define FLAG_LUNA_HOUSE_MOTHIM                                      0x494 // Gift Mothim
-#define FLAG_CALL_FROM_CEO                                          0x495 // After clearing E4 first time
+#define FLAG_UNUSED_0x495                                           0x495 // Unused
 #define FLAG_PETALBURG_RATICATE                                     0x496 // Rat Cave Petalburg
 #define FLAG_PETALBURG_RATICATE_ALOLA                               0x497 // Rat Cave Petalburg
 #define FLAG_ITEM_RAT_CAVE_2F_FLAME_ORB                             0x498 // Petalburg Rat Cave 
@@ -1257,9 +1257,9 @@
 #define FLAG_ROUTE110_HIDE_BIKERS                                   0x4B3 // Speedwagon Event Mauville
 #define FLAG_ROUTE_110_BIKER_POLICEMAN                              0x4B4 // Speedwagon Event Mauville
 #define FLAG_HIDE_POLICEMAN_ROUTE_110                               0x4B5 // End of Speedwagon Event
-#define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
-#define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
+#define FLAG_RATDUARDO_RAT_CAVE_FALLARBOR                           0x4B6 // Ratduardo Fallarbor
+#define FLAG_BENNIS_ROUTE_114                                       0x4B7 // Bennis Battle Route 114
+#define FLAG_EMO_ROUTE_112                                          0x4B8 // Rival Battle Route 112
 #define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
 #define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
 #define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
@@ -1502,7 +1502,7 @@
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
 
-#define FLAG_UNUSED_0x8E3                           (SYSTEM_FLAGS + 0x83) // Unused Flag
+#define FLAG_CALL_FROM_CEO                          (SYSTEM_FLAGS + 0x83) // After clearing E4
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 

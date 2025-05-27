@@ -80,11 +80,11 @@ Common_Movement_WalkLeft:
 	step_end
 
 Common_Movement_WalkRight:
-	walk_left
+	walk_right
 	step_end
 
 Common_Movement_WalkDown:
-	walk_left
+	walk_down
 	step_end
 
 Common_Movement_WalkUp6:

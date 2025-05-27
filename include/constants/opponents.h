@@ -326,7 +326,7 @@
 #define TRAINER_JOSH                        320
 #define TRAINER_TOMMY                       321
 #define TRAINER_JOEY                        322
-#define TRAINER_BEN                         323
+#define TRAINER_RATDUARDO_2                 323
 #define TRAINER_QUINCY                      324
 #define TRAINER_KATELYNN                    325
 #define TRAINER_JAYLEN                      326
@@ -575,8 +575,8 @@
 #define TRAINER_GRUNT_MT_PYRE_4             569
 #define TRAINER_GRUNT_JAGGED_PASS           570
 #define TRAINER_MARC                        571
-#define TRAINER_BRENDEN                     572
-#define TRAINER_LILITH                      573
+#define TRAINER_BENNIS_2                    572
+#define TRAINER_JOMITHIUS_2                 573
 #define TRAINER_CRISTIAN                    574
 #define TRAINER_SYLVIA                      575
 #define TRAINER_LEONARDO                    576

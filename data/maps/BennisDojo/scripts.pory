@@ -78,7 +78,8 @@ script DojoBattleTrigger{
     waitmovement(1)
     msgbox(Asak3_5, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox("BENNIS: Hm. I'll take you on.", MSGBOX_AUTOCLOSE)
+    msgbox("MASTER BENNIS: Hm.\n 
+    I'll take you on.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(1, AsakMove3)
     waitmovement(1)
@@ -124,7 +125,7 @@ script Dojo_EarlierAnswerNO{
 
 script BennisBattleStart{
     lock
-    msgbox("BENNIS: Are you ready now?", MSGBOX_YESNO)
+    msgbox("MASTER BENNIS: Are you ready now?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         msgbox(Bennis_Intro, MSGBOX_AUTOCLOSE)
         call(BennisDojo_EventScript_BennisBattle1)
@@ -247,7 +248,7 @@ text Bennis_Intro{
 
 text Bennis_Outro{"Everyone's so mean to me..."}
 
-text Bennis2{"BENNIS: Hm.. Beefy."}
+text Bennis2{"MASTER BENNIS: Hm.. Beefy."}
 
 text Asak5{"ASAK: This can't be...\n
 Even MASTER BENNIS...\p

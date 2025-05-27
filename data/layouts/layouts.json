@@ -4640,6 +4640,16 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/RatCave_Fallarbor_1F/border.bin",
       "blockdata_filepath": "data/layouts/RatCave_Fallarbor_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_FALLARBOR_2F",
+      "name": "RatCave_Fallarbor_2F_Layout",
+      "width": 13,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/RatCave_Fallarbor_2F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_Fallarbor_2F/map.bin"
     }
   ]
 }

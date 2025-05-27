@@ -1,0 +1,330 @@
+raw`.set LOCALID_GRUNT_1, 1
+.set LOCALID_GRUNT_2, 6
+
+Route112_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route112_OnTransition
+	.byte 0
+
+Route112_OnTransition:
+	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
+	setvar VAR_JAGGED_PASS_ASH_WEATHER, 0
+	end
+
+Route112_EventScript_MagmaGrunts::
+	lockall
+	delay 40
+	applymovement LOCALID_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	delay 20
+	msgbox Route112_Text_LeaderGoingToAwakenThing, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	delay 40
+	applymovement LOCALID_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	delay 20
+	msgbox Route112_Text_YeahWeNeedMeteorite, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_GRUNT_2, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	delay 40
+	applymovement LOCALID_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	delay 20
+	msgbox Route112_Text_OhThatsWhyCrewWentToFallarbor, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	delay 40
+	applymovement LOCALID_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	delay 20
+	msgbox Route112_Text_CantLetAnyonePassUntilTheyreBack, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_GRUNT_2, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	releaseall
+	end
+
+Route112_EventScript_MtChimneyCableCarSign::
+	msgbox Route112_Text_MtChimneyCableCarSign, MSGBOX_SIGN
+	end
+
+Route112_EventScript_MtChimneySign::
+	msgbox Route112_Text_MtChimneySign, MSGBOX_SIGN
+	end
+
+Route112_EventScript_RouteSignLavaridge::
+	msgbox Route112_Text_RouteSignLavaridge, MSGBOX_SIGN
+	end
+
+Route112_EventScript_Hiker::
+	msgbox Route112_Text_NotEasyToGetBackToLavaridge, MSGBOX_NPC
+	end
+
+Route112_EventScript_Brice::
+	trainerbattle_single TRAINER_BRICE, Route112_Text_BriceIntro, Route112_Text_BriceDefeat
+	msgbox Route112_Text_BricePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route112_EventScript_Trent::
+	trainerbattle_single TRAINER_TRENT_1, Route112_Text_TrentIntro, Route112_Text_TrentDefeat, Route112_EventScript_RegisterTrent
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route112_EventScript_RematchTrent
+	msgbox Route112_Text_TrentPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route112_EventScript_RegisterTrent::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route112_Text_TrentRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_TRENT_1
+	release
+	end
+
+Route112_EventScript_RematchTrent::
+	trainerbattle_rematch TRAINER_TRENT_1, Route112_Text_TrentRematchIntro, Route112_Text_TrentRematchDefeat
+	msgbox Route112_Text_TrentRematchPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route112_EventScript_Larry::
+	trainerbattle_single TRAINER_LARRY, Route112_Text_LarryIntro, Route112_Text_LarryDefeat
+	msgbox Route112_Text_LarryPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route112_EventScript_Carol::
+	trainerbattle_single TRAINER_CAROL, Route112_Text_CarolIntro, Route112_Text_CarolDefeat
+	msgbox Route112_Text_CarolPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route112_EventScript_Bryant::
+	trainerbattle_single TRAINER_BRYANT, Route112_Text_BryantIntro, Route112_Text_BryantDefeat
+	msgbox Route112_Text_BryantPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route112_EventScript_Shayla::
+	trainerbattle_single TRAINER_SHAYLA, Route112_Text_ShaylaIntro, Route112_Text_ShaylaDefeat
+	msgbox Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route112_Text_LeaderGoingToAwakenThing:
+	.string "Hey, man, is our leader really going\n"
+	.string "to awaken that thing?$"
+
+Route112_Text_YeahWeNeedMeteorite:
+	.string "Sounds like it, yeah. But I heard\n"
+	.string "we need a METEORITE to do it.$"
+
+Route112_Text_OhThatsWhyCrewWentToFallarbor:
+	.string "Oh, I get it now. That's why the rest\n"
+	.string "of the crew went out to FALLARBOR.$"
+
+Route112_Text_CantLetAnyonePassUntilTheyreBack:
+	.string "You got it. And until they come back,\n"
+	.string "we're not to let anyone pass, right.$"
+
+Route112_Text_NotEasyToGetBackToLavaridge:
+	.string "Eh, I'd like to get to MAUVILLE, but if\n"
+	.string "I went down these ledges, it'd be no\l"
+	.string "easy matter to get back to LAVARIDGE.$"
+
+Route112_Text_MtChimneyCableCarSign:
+	.string "MT. CHIMNEY CABLE CAR\n"
+	.string "“A short walk {UP_ARROW} way!”$"
+
+Route112_Text_MtChimneySign:
+	.string "MT. CHIMNEY\p"
+	.string "“For LAVARIDGE TOWN or the summit,\n"
+	.string "please take the CABLE CAR.”$"
+
+Route112_Text_RouteSignLavaridge:
+	.string "ROUTE 112\n"
+	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
+
+
+`
+
+script Route112_Trigger_Emo{
+    lockall
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
+    if(var(VAR_TEMP_1) == DIR_NORTH){
+        goto(Route112_EventScript_Emo)
+    }
+    else{
+        goto(Route112_EventScript_Emo_West)
+    }
+}
+
+script Route112_EventScript_Emo{
+    applymovement(OBJ_EVENT_ID_PLAYER, Route112_PlayerWalkBack)
+    waitmovement(0)
+    playse(SE_EXIT)
+    clearflag(FLAG_EMO_ROUTE_112)
+    addobject(15)
+    applymovement(15, Common_Movement_WalkDown)
+    waitmovement(15)
+    delay(40)
+    playse(SE_PIN)
+    applymovement(15, Common_Movement_ExclamationMark)
+    waitmovement(15)
+    delay(40)
+    playbgm(MUS_PYRITE_THEME, TRUE)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    msgbox(Route112_Text_Emo1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(Route112_EventScript_RivalBattle)
+    msgbox(Route112_Text_Emo2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    giveitem(ITEM_TM_ACROBATICS)
+    waitmessage
+    delay(10)
+    applymovement(15, Common_Movement_FaceRight)
+    waitmovement(15)
+    msgbox(Route112_Text_Emo3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(20)
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(30)
+    applymovement(15, Common_Movement_FacePlayer)
+    waitmovement(15)
+    msgbox(Route112_Text_Emo4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(15, Route112_Movement_EmoLeave)
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(15)
+    removeobject(15)
+    fadedefaultbgm
+    setflag(FLAG_EMO_ROUTE_112)
+    setvar(VAR_MISA_STATE, 5)
+    releaseall
+    end
+}
+
+script Route112_EventScript_Emo_West{
+    applymovement(OBJ_EVENT_ID_PLAYER, Route112_PlayerWalkBackWest)
+    waitmovement(0)
+    playse(SE_EXIT)
+    clearflag(FLAG_EMO_ROUTE_112)
+    addobject(15)
+    applymovement(15, Common_Movement_WalkDown)
+    waitmovement(15)
+    applymovement(15, Common_Movement_FaceRight)
+    waitmovement(15)
+    delay(40)
+    playse(SE_PIN)
+    applymovement(15, Common_Movement_ExclamationMark)
+    waitmovement(15)
+    delay(40)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    playbgm(MUS_PYRITE_THEME, TRUE)
+    msgbox(Route112_Text_Emo1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(Route112_EventScript_RivalBattle)
+    msgbox(Route112_Text_Emo2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    giveitem(ITEM_TM_ACROBATICS)
+    delay(10)
+    waitmessage
+    applymovement(15, Common_Movement_FaceDown)
+    waitmovement(15)
+    msgbox(Route112_Text_Emo3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(20)
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(30)
+    applymovement(15, Common_Movement_FacePlayer)
+    waitmovement(15)
+    msgbox(Route112_Text_Emo4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(15, Route112_Movement_EmoLeaveWest)
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(15)
+    removeobject(15)
+    fadedefaultbgm
+    setflag(FLAG_EMO_ROUTE_112)
+    setvar(VAR_MISA_STATE, 5)
+    releaseall
+    end
+}
+
+script Route112_EventScript_RivalBattle{
+    trainerbattle_no_intro(TRAINER_JOMITHIUS_2, Route112_EmoDefeat)
+    return
+}
+
+
+text Route112_Text_Emo1{
+    "JAMES: {PLAYER}...\n
+    We meet again.\p
+    My power has increased since we\n
+    last battled.\p
+    My eye... It now burns hotter than\n
+    the FIERY PATH..\p
+    This time, I, JOMITHIUS, will\n
+    achieve victory!"
+}
+
+text Route112_EmoDefeat{
+    "I'm in my abyss..."
+}
+
+text Route112_Text_Emo2{
+    "JAMES: So victory still eludes\n
+    me...\l
+    You're a worthy adversary.\p
+    Out of respect for your\n
+    power, I'll give you this."
+}
+
+text Route112_Text_Emo3{
+    "I'm going to challenge the\n
+    LAVARIDGE GYM after exploring\l
+    the DESERT.\p
+    If you're going to head north,\n
+    be careful.\p
+    There's been a lot of weirdos\n
+    lurking around here lately."
+}
+
+text Route112_Text_Emo4{
+    "JAMES: .. What?\p
+    Well, see ya, {PLAYER}.\n
+    Next time, I won't lose."
+}
+
+movement Route112_Movement_EmoLeave{
+    walk_right * 6
+    walk_down * 2
+    walk_right * 2
+}
+
+movement Route112_Movement_EmoLeaveWest{
+    walk_down
+    walk_right * 9
+    walk_down * 3
+}
+
+movement Route112_PlayerWalkBack{
+    lock_facing_direction
+	walk_down
+	delay_16
+	unlock_facing_direction
+}
+
+movement Route112_PlayerWalkBackWest{
+    lock_facing_direction
+	walk_right
+	delay_16
+	unlock_facing_direction
+}
+

@@ -1,0 +1,124 @@
+{
+  "id": "MAP_RAT_CAVE_FALLARBOR_2F",
+  "name": "RatCave_Fallarbor_2F",
+  "layout": "LAYOUT_RAT_CAVE_FALLARBOR_2F",
+  "music": "MUS_NONE",
+  "region_map_section": "MAPSEC_RAT_CAVE",
+  "requires_flash": true,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RATDUARDO",
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RatCave_Fallarbor_2F_EventScript_Ratduardo",
+      "flag": "FLAG_RATDUARDO_RAT_CAVE_FALLARBOR"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE)",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RatCave_Fallarbor_2F_EventScript_Raticate",
+      "flag": "FLAG_RATDUARDO_RAT_CAVE_FALLARBOR"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE_ALOLA)",
+      "x": 7,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RatCave_Fallarbor_2F_EventScript_RaticateAlola",
+      "flag": "FLAG_RATDUARDO_RAT_CAVE_FALLARBOR"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Fallarbor_RatCave_Rock",
+      "flag": "FLAG_CALL_FROM_CEO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 6,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Fallarbor_RatCave_Rock",
+      "flag": "FLAG_CALL_FROM_CEO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 7,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Fallarbor_RatCave_Rock",
+      "flag": "FLAG_CALL_FROM_CEO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_BRICK_BREAK",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_FOUND_TM_BRICK_BREAK"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_RAT_CAVE_FALLARBOR_1F",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

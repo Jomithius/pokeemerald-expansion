@@ -5342,7 +5342,7 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer
 
-Sandshrew-Alola @ Sitrus Berry  
+Sandshrew-Alola 
 Ability: Snow Cloak  
 Level: 18  
 EVs: 232 Atk / 24 Def / 244 SpD  
@@ -5375,16 +5375,16 @@ IVs: 0 Atk
 - Round  
 - Play Nice  
 
-Spoink @ Sitrus Berry  
-Ability: Gluttony  
+Pignite  
+Ability: Thick Fat  
 Level: 19  
-EVs: 244 SpA / 248 SpD / 8 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Psyshock  
-- Future Sight  
-- Thunder Wave  
-- Swift  
+Tera Type: Fire  
+EVs: 252 HP / 248 Atk / 8 SpD  
+Adamant Nature  
+- Bulk Up  
+- Rock Tomb  
+- Flame Charge  
+- Arm Thrust
 
 Dedenne @ Oran Berry  
 Ability: Cheek Pouch  
@@ -5406,7 +5406,6 @@ Quiet Nature
 - Air Cutter  
 - Dazzling Gleam  
 
-
 === TRAINER_SPEEDWAGON ===
 Name: SPEEDWAGON
 Class: Biker
@@ -5419,7 +5418,7 @@ Mugshot: Yellow
 
 Stunfisk-Galar @ Sitrus Berry  
 Ability: Mimicry  
-Level: 23   
+Level: 22   
 EVs: 252 HP / 156 Atk / 76 Def / 20 SpD / 4 Spe  
 Impish Nature  
 - Stealth Rock  
@@ -6321,30 +6320,67 @@ Machop
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BEN === /* FREE */
-Name: BEN
-Class: Youngster
-Pic: Youngster
+=== TRAINER_RATDUARDO_2 ===
+Name: RATDUARDO
+Class: RAT MANIAC
+Pic: Ratduardo
 Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
+Music: Suspicious
+Double Battle: Yes
+AI: Smart Trainer
+Mugshot: Green
 
-Zigzagoon
-Level: 17
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Headbutt
-- Sand Attack
-- Growl
-- Thunderbolt
+Plusle (F)  
+Ability: Lightning Rod  
+Level: 26  
+Tera Type: Electric  
+EVs: 16 Atk / 244 SpA / 240 Spe  
+Hasty Nature  
+- Discharge  
+- Alluring Voice  
 
-Gulpin
-Level: 17
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Amnesia
-- Sludge
-- Yawn
-- Pound
+Minun  
+Ability: Volt Absorb  
+Level: 26  
+Tera Type: Electric  
+EVs: 248 SpA / 12 SpD / 240 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Wish  
+- Discharge  
+- Encore  
+- Grass Knot  
+
+Patrat  
+Ability: Keen Eye  
+Level: 26  
+Tera Type: Normal  
+EVs: 252 Atk / 248 Spe  
+Jolly Nature  
+- Super Fang  
+- Hyper Fang  
+
+Raticate  
+Ability: Hustle  
+Level: 27  
+Tera Type: Normal  
+EVs: 252 Atk / 244 Spe  
+Jolly Nature  
+- Zen Headbutt  
+- Hyper Fang  
+- Quick Attack  
+- U-turn  
+
+Raticate-Alola-Totem  
+Ability: Thick Fat  
+Level: 27  
+Tera Type: Dark  
+EVs: 240 HP / 244 Atk / 24 SpD  
+Adamant Nature  
+- Bulk Up  
+- Knock Off  
+- Hyper Fang  
+- Quick Attack  
 
 === TRAINER_QUINCY ===
 Name: QUINCY
@@ -6715,18 +6751,16 @@ Level: 22
 
 Sneasel  
 Ability: Inner Focus  
-Level: 23  
-EVs: 248 Atk / 8 SpD / 244 Spe  
+Level: 23   
 Jolly Nature  
 - Fake Out  
 - Avalanche  
-- Knock Off  
-- Ice Shard  
+- Assurance  
+
 
 Basculin  
 Ability: Adaptability  
 Level: 24   
-EVs: 252 HP / 108 Atk / 144 Spe  
 Naive Nature  
 - Aqua Jet  
 - Ice Fang  
@@ -9679,7 +9713,7 @@ Pic: Biker
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
 Swinub  
 Ability: Oblivious  
@@ -9702,8 +9736,7 @@ IVs: 0 Atk
 
 Delcatty  
 Ability: Normalize  
-Level: 25   
-EVs: 252 Atk / 12 SpD / 244 Spe  
+Level: 22   
 Jolly Nature  
 - Fake Out  
 - Headbutt  
@@ -9780,7 +9813,7 @@ Pic: Biker
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
 Ferroseed  
 Ability: Iron Barbs  
@@ -11023,31 +11056,153 @@ Lonely Nature
 - Water Pulse  
 - Astonish
 
-=== TRAINER_BRENDEN === /* TRAINER IS FREE */
-Name: BRENDEN
-Class: Sailor
-Pic: Sailor
+=== TRAINER_BENNIS_2 ===
+Name: BENNIS
+Class: Master
+Pic: Bennis
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Mugshot: Blue
 
-Machop
-Level: 13
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Pancham @ Eviolite  
+Ability: Scrappy  
+Level: 26  
+Tera Type: Fighting  
+EVs: 248 HP / 248 Atk / 4 Spe  
+Adamant Nature  
+- Bulk Up  
+- Mega Punch  
+- Comet Punch  
+- Drain Punch  
 
-=== TRAINER_LILITH === /* TRAINER IS FREE */
-Name: LILITH
-Class: Battle Girl
-Pic: Battle Girl
-Gender: Female
-Music: Intense
+Meditite @ Expert Belt  
+Ability: Pure Power  
+Level: 27  
+Tera Type: Fighting  
+EVs: 244 HP / 240 Atk / 16 Def / 4 Spe  
+Adamant Nature  
+- Bullet Punch  
+- Thunder Punch  
+- Fire Punch  
+- Ice Punch  
+
+Croagunk @ Poison Barb  
+Ability: Poison Touch  
+Level: 26  
+Tera Type: Poison  
+EVs: 240 Atk / 24 SpD / 244 Spe  
+Jolly Nature  
+- Fake Out  
+- Poison Jab  
+- Bullet Punch  
+- Drain Punch  
+
+Hitmonchan @ Punching Glove  
+Ability: Iron Fist  
+Level: 26  
+Tera Type: Fighting  
+EVs: 248 HP / 252 Atk / 8 Spe  
+Adamant Nature  
+- Mega Punch  
+- Dizzy Punch  
+- Drain Punch  
+- Bullet Punch  
+
+Monferno @ Leftovers  
+Ability: Blaze  
+Level: 27  
+Tera Type: Fire  
+EVs: 12 HP / 252 Atk / 244 Spe  
+Jolly Nature  
+- Fire Punch  
+- Brick Break  
+- Mach Punch  
+- Bulk Up 
+
+Primeape @ Blunder Policy  
+Ability: Defiant  
+Level: 28  
+Tera Type: Fighting  
+EVs: 244 HP / 136 Atk / 12 Def / 116 Spe  
+Adamant Nature  
+- Acrobatics  
+- Brick Break  
+- Dynamic Punch  
+- Assurance  
+
+=== TRAINER_JOMITHIUS_2 ===
+Name: JOMITHIUS
+Class: Rival
+Pic: Emo
+Gender: Male
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Mugshot: Purple
 
-Meditite
-Level: 13
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Boldore @ Rocky Helmet  
+Ability: Sturdy  
+Level: 26  
+Shiny: Yes  
+EVs: 224 HP / 52 Atk / 208 Def / 20 SpD  
+Impish Nature  
+- Stealth Rock  
+- Rock Blast  
+- Body Press  
+- Bulldoze  
+
+Mienfoo @ Heavy-Duty Boots  
+Ability: Regenerator  
+Level: 27  
+EVs: 8 HP / 248 Atk / 4 SpD / 248 Spe  
+Jolly Nature  
+- Fake Out  
+- U-turn  
+- Brick Break  
+- Knock Off  
+
+Emolga @ Sitrus Berry  
+Ability: Static  
+Level: 26  
+EVs: 8 HP / 248 SpA / 252 Spe  
+Timid Nature  
+- Acrobatics  
+- Volt Switch  
+- Defog  
+- Roost  
+
+Drilbur @ Soft Sand  
+Ability: Mold Breaker  
+Level: 26  
+EVs: 244 HP / 244 Atk / 4 Def / 12 SpD  
+Adamant Nature  
+- Drill Run  
+- Brick Break  
+- Swords Dance  
+- Rapid Spin  
+
+Morgrem @ Eviolite  
+Ability: Prankster  
+Level: 28  
+EVs: 12 Atk / 248 SpA / 248 Spe  
+Hasty Nature  
+- Fake Out  
+- Dazzling Gleam  
+- Dark Pulse  
+- Thunder Wave  
+
+Quilava @ Charcoal  
+Ability: Flash Fire  
+Level: 28  
+EVs: 36 Def / 236 SpA / 236 Spe  
+Timid Nature  
+IVs: 0 Atk / 30 Def  
+- Flame Burst  
+- Extrasensory  
+- Hidden Power 
+- Will-O-Wisp  
 
 === TRAINER_CRISTIAN ===
 Name: RACINE
@@ -17637,12 +17792,11 @@ Relaxed Nature
 - Tackle  
 - Mud-Slap  
 
-Timburr  
-Ability: Sheer Force  
+Starly  
+Ability: Keen Eye  
 Level: 9  
-Adamant Nature  
-- Rock Smash  
-- Comet Punch  
+- Peck  
+- Fury Attack 
 
 Inkay  
 Ability: Contrary  

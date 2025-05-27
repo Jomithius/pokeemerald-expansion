@@ -1,1 +1,69 @@
 mapscripts FallarborTown_House_MapScripts {}
+
+
+script FallarborTown_House_EventScript_Old_Man{
+    lock
+    applymovement(1, Common_Movement_FacePlayer)
+    waitmovement(1)
+    if(var(VAR_RAT_CAVE_STATE) == 5){
+        msgbox(FallarborTown_House_Old_Man_RatCaveHint, MSGBOX_NPC)
+        waitmessage
+    }
+    elif(var(VAR_RAT_CAVE_STATE) == 6){
+        msgbox(FallarborTown_House_Old_Man_RatCavePost, MSGBOX_NPC)
+        waitmessage
+        setvar(VAR_RAT_CAVE_STATE, 7)
+    }
+    else{
+        msgbox("Huh? What?\n
+        Speak up, youngster.", MSGBOX_NPC)
+        waitmessage
+    }
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(1)
+    release
+    end
+}
+
+text FallarborTown_House_Old_Man_RatCaveHint{
+    "Huh?\p
+    What?\p
+    Oh, finally you're here!\p
+    We've still been hearing RATTATA noises\n
+    in the basement lately.\p
+    It's been so hard to sleep\n
+    because of it.\p
+    Be a good grandchild and go take\n
+    care of it for me, will you?"
+}
+
+text FallarborTown_House_Old_Man_RatCavePost{
+    "Huh?\p
+    What?\p
+    Did you take care of it?\p
+    ...\p
+    What?\n
+    There was a giant rat?\p
+    Your eyes must be worse than mine,\n
+    youngster."
+}
+
+script FallarborTown_House_EventScript_Old_Lady{
+    lock
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(2)
+    msgbox(FallarborTown_House_Text_Old_Lady, MSGBOX_NPC)
+    waitmessage
+    applymovement(2, Common_Movement_FaceOriginalDirection)
+    waitmovement(2)
+    release
+    end
+}
+
+text FallarborTown_House_Text_Old_Lady{
+    "Lately, some of the folks have\n
+    said they've been having a lot\l
+    of nightmares.\p
+    I wonder if it's something in\n
+    the water."
+}

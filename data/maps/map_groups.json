@@ -107,7 +107,8 @@
     "Route116_RusturfTunnel_Peak",
     "FallarborTown_House",
     "FallarborTown_House_Basement",
-    "RatCave_Fallarbor_1F"
+    "RatCave_Fallarbor_1F",
+    "RatCave_Fallarbor_2F"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

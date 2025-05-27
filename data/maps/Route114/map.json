@@ -352,16 +352,16 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 31,
-      "y": 19,
+      "x": 21,
+      "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ENERGY_POWDER",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_DRAIN_PUNCH",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_114_ENERGY_POWDER"
+      "flag": "FLAG_ITEM_ROUTE_114_TM_DRAIN_PUNCH"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
@@ -387,7 +387,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_BENNIS_ROUTE_114"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
@@ -400,7 +400,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_BENNIS_ROUTE_114"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
@@ -413,7 +413,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_BENNIS_ROUTE_114"
     }
   ],
   "warp_events": [
@@ -459,36 +459,36 @@
       "x": 19,
       "y": 21,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_BENNIS_DOJO_STATE",
+      "var_value": "2",
+      "script": "Route114_Bennis_Trigger_3"
     },
     {
       "type": "trigger",
       "x": 20,
       "y": 21,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_BENNIS_DOJO_STATE",
+      "var_value": "2",
+      "script": "Route114_Bennis_Trigger_1"
     },
     {
       "type": "trigger",
       "x": 21,
       "y": 21,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_BENNIS_DOJO_STATE",
+      "var_value": "2",
+      "script": "Route114_EventScript_Bennis"
     },
     {
       "type": "trigger",
       "x": 22,
       "y": 21,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_BENNIS_DOJO_STATE",
+      "var_value": "2",
+      "script": "Route114_Bennis_Trigger_2"
     }
   ],
   "bg_events": [

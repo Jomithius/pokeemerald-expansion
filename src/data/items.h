@@ -11258,52 +11258,64 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_VOLT_SWITCH, //custom
     },
 
-    [ITEM_TM57] =
+    [ITEM_TM_ROCK_SLIDE] =
     {
         .name = _("TM57"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Hurls large rocks\n"
+            "that may also make\n"
+            "the enemy flinch."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_ROCK_SLIDE, // custom
     },
 
-    [ITEM_TM58] =
+    [ITEM_TM_U_TURN] =
     {
         .name = _("TM58"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "The user rushes\n"
+            "back to switch out\n"
+            "after attacking."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_U_TURN, // custom
     },
 
-    [ITEM_TM59] =
+    [ITEM_TM_DRAIN_PUNCH] =
     {
         .name = _("TM59"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "The user's HP is\n"
+            "restored by half of\n"
+            "the damage dealt."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_DRAIN_PUNCH, // custom
     },
 
-    [ITEM_TM60] =
+    [ITEM_TM_ACROBATICS] =
     {
         .name = _("TM60"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Does double damage\n"
+            "if the user's not\n"
+            "holding an item."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_ACROBATICS, // custom
     },
 
     [ITEM_TM61] =

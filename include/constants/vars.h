@@ -95,7 +95,7 @@
 #define VAR_POKELOT_RND1                                 0x404B
 #define VAR_POKELOT_RND2                                 0x404C
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
-#define VAR_BENNIS_DOJO_STATE                            0x404E // 0-1 Bennis First Battle, 2-3 Bennis Fallarbor, 4-5 Bennis Victory Road,
+#define VAR_BENNIS_DOJO_STATE                            0x404E // 0-2 Bennis First Battle, 2-3 Bennis Fallarbor, 3
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051
@@ -178,7 +178,7 @@
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0
-#define VAR_RAT_CAVE_STATE                               0x40A1  // 0-2 Luna battle, 3-4 Ratduardo first battle, 
+#define VAR_RAT_CAVE_STATE                               0x40A1  // 0-2 Luna battle, 3-4 Ratduardo first battle, 4-7 Rat Cave Fallarbor, 7
 #define VAR_SEAFLOOR_CAVERN_STATE                        0x40A2
 #define VAR_CABLE_CAR_STATION_STATE                      0x40A3
 #define VAR_SAFARI_ZONE_STATE                            0x40A4  // 0: In or out of SZ, 1: Player exiting SZ, 2: Player entering SZ
@@ -264,7 +264,7 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_MISA_STATE                                   0x40F7 // 0-2 Misa Rustboro CS and Rival James First Battle, 3-4 Misa Route 117, 4- Lilycove
+#define VAR_MISA_STATE                                   0x40F7 // 0-2 Misa Rustboro CS and Rival James First Battle, 3-4 Misa Route 117, 4-5 James Route 112
 #define VAR_SPEEDWAGON_STATE                             0x40F8 // 0-7 Mauville/Route 110,
 #define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
 #define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
