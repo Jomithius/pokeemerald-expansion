@@ -4650,6 +4650,16 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/RatCave_Fallarbor_2F/border.bin",
       "blockdata_filepath": "data/layouts/RatCave_Fallarbor_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_PYRE_EXTERIOR_DAVE_HOUSE",
+      "name": "MtPyre_Exterior_Dave_House_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MtPyre_Exterior_Dave_House/border.bin",
+      "blockdata_filepath": "data/layouts/MtPyre_Exterior_Dave_House/map.bin"
     }
   ]
 }

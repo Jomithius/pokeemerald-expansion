@@ -1472,43 +1472,6 @@ Route112_Text_BricePostBattle:
 	.string "Hahahahaha! Something flew up my nose!\n"
 	.string "Hahahaha-hatchoo!$"
 
-Route112_Text_TrentIntro:
-	.string "My legs are solid from pounding up\n"
-	.string "and down the mountains.\p"
-	.string "They're not going to buckle easily,\n"
-	.string "friend!$"
-
-Route112_Text_TrentDefeat:
-	.string "Ouch! My legs cramped up!$"
-
-Route112_Text_TrentPostBattle:
-	.string "Try hiking, and I mean really\n"
-	.string "pounding, on these mountain trails\l"
-	.string "with a heavy pack weighing dozens of\l"
-	.string "pounds.\p"
-	.string "That, my friend, will get your body\n"
-	.string "into serious shape.$"
-
-Route112_Text_TrentRegister:
-	.string "Ow, my legs have cramped up.\n"
-	.string "Can you grab me some bandages from\l"
-	.string "my backpack?\p"
-	.string "No, that's my POKéNAV!\n"
-	.string "Oh, fine, I'll register you.$"
-
-Route112_Text_TrentRematchIntro:
-	.string "I've been keeping fit by hiking.\n"
-	.string "Power, I have in spades!$"
-
-Route112_Text_TrentRematchDefeat:
-	.string "I got trumped in power?$"
-
-Route112_Text_TrentRematchPostBattle:
-	.string "I hear there are some seriously tough\n"
-	.string "TRAINERS on top of MT. CHIMNEY.\p"
-	.string "I intend to get up there and give them\n"
-	.string "a challenge!$"
-
 Route112_Text_LarryIntro:
 	.string "I'm strong.\n"
 	.string "I won't cry if I lose.$"

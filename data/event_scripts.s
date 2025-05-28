@@ -1202,3 +1202,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RatCave_Fallarbor_1F/scripts.inc"
 
 	.include "data/maps/RatCave_Fallarbor_2F/scripts.inc"
+
+	.include "data/maps/MtPyre_Exterior_Dave_House/scripts.inc"

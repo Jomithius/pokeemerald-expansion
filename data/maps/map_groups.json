@@ -108,7 +108,8 @@
     "FallarborTown_House",
     "FallarborTown_House_Basement",
     "RatCave_Fallarbor_1F",
-    "RatCave_Fallarbor_2F"
+    "RatCave_Fallarbor_2F",
+    "MtPyre_Exterior_Dave_House"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

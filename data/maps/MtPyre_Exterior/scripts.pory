@@ -1,0 +1,156 @@
+raw`MtPyre_Exterior_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MtPyre_Exterior_OnTransition
+	.byte 0
+
+MtPyre_Exterior_OnTransition:
+	call MtPyre_Exterior_EventScript_CheckEnterFromSummit
+	end
+
+MtPyre_Exterior_EventScript_CheckEnterFromSummit::
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	goto_if_lt VAR_TEMP_1, 12, MtPyre_Exterior_EventScript_EnterFromSummit
+	return
+
+MtPyre_Exterior_EventScript_EnterFromSummit::
+	setweather WEATHER_FOG_HORIZONTAL
+	return
+
+MtPyre_Exterior_EventScript_FogTrigger::
+	setweather WEATHER_FOG_HORIZONTAL
+	doweather
+	end
+
+MtPyre_Exterior_EventScript_SunTrigger::
+	setweather WEATHER_SUNNY
+	doweather
+	end
+
+`
+
+script MtPyre_Exterior_EventScript_Emo{
+    lockall
+    applymovement(3, Common_Movement_FaceLeft)
+    waitmovement(3)
+    delay(20)
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    delay(20)
+    applymovement(3, MtPyre_Exterior_Movement_Emo1)
+    waitmovement(3)
+    playbgm(MUS_PYRITE_THEME, TRUE)
+    delay(10)
+    msgbox(MtPyre_Exterior_Text_Emo1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(3, Common_Movement_WalkLeft)
+    waitmovement(3)
+    trainerbattle_no_intro(TRAINER_JOMITHIUS_3, MtPyre_Exterior_Text_RivalDefeat)
+    msgbox(MtPyre_Exterior_Text_Emo2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    giveitem(ITEM_ASSAULT_VEST)
+    waitmessage
+    applymovement(3, Common_Movement_WalkRight)
+    waitmovement(3)
+    msgbox(MtPyre_Exterior_Text_Emo3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    setfieldeffectargument(0, 1)
+    dofieldeffect(FLDEFF_NPCFLY_OUT)
+    delay(15)
+    removeobject(3)
+    waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    fadedefaultbgm
+    setvar(VAR_MISA_STATE, 7)
+    setflag(FLAG_HIDE_EMO_MT_PYRE)
+    releaseall
+    end
+}
+
+script MtPyre_Exterior_EventScript_Emo2{
+    lockall
+    applymovement(3, Common_Movement_FaceLeft)
+    waitmovement(3)
+    delay(20)
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    delay(20)
+    applymovement(3, MtPyre_Exterior_Movement_Emo2)
+    waitmovement(3)
+    playbgm(MUS_PYRITE_THEME, TRUE)
+    delay(10)
+    msgbox(MtPyre_Exterior_Text_Emo1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(3, Common_Movement_WalkLeft)
+    waitmovement(3)
+    trainerbattle_no_intro(TRAINER_JOMITHIUS_3, MtPyre_Exterior_Text_RivalDefeat)
+    msgbox(MtPyre_Exterior_Text_Emo2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    giveitem(ITEM_ASSAULT_VEST)
+    waitmessage
+    applymovement(3, Common_Movement_WalkRight)
+    waitmovement(3)
+    msgbox(MtPyre_Exterior_Text_Emo3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    setfieldeffectargument(0, 1)
+    dofieldeffect(FLDEFF_NPCFLY_OUT)
+    delay(15)
+    removeobject(3)
+    waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    fadedefaultbgm
+    setvar(VAR_MISA_STATE, 7)
+    setflag(FLAG_HIDE_EMO_MT_PYRE)
+    releaseall
+    end
+}
+
+text MtPyre_Exterior_Text_Emo1{
+    "JAMES: {PLAYER}?\n
+    I wouldn't expect you to come here.\p
+    Are you a fan of the occult?\n
+    That's surprising.\p
+    The dark energies in this place\n
+    have caused my power to go even\l
+    further beyond...\p
+    I don't think even you can\n
+    withstand this strength!"
+}
+
+text MtPyre_Exterior_Text_Emo2{
+    "JAMES: Hm...\n
+    You've become stronger than I thought.\p
+    As expected of my adversary.\n
+    Here, you can have this."
+}
+
+text MtPyre_Exterior_Text_Emo3{
+    "I'm heading to MOSSDEEP next\n
+    after stopping by LILYCOVE.\p
+    I heard the DEPT. STORE sells\n
+    rare items.\p
+    See ya, {PLAYER}."
+}
+
+text MtPyre_Exterior_Text_RivalDefeat{
+    "I'm in my abyss..."
+}
+
+movement MtPyre_Exterior_Movement_Emo1{
+    walk_left * 4
+}
+
+movement MtPyre_Exterior_Movement_Emo2{
+    walk_down
+    walk_left * 4
+}
+
+movement MtPyre_Exterior_Movement_EmoLeave1{
+    walk_down
+    walk_left * 9
+    walk_up * 3
+}
+
+movement MtPyre_Exterior_Movement_EmoLeave2{
+    walk_up
+    walk_left * 9
+    walk_up * 2
+}

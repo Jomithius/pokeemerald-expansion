@@ -630,7 +630,7 @@
 #define TRAINER_JAMES_4                     624
 #define TRAINER_JAMES_5                     625
 #define TRAINER_BRICE                       626
-#define TRAINER_TRENT_1                     627
+#define TRAINER_JOMITHIUS_3                 627
 #define TRAINER_LENNY                       628
 #define TRAINER_LUCAS_1                     629
 #define TRAINER_ALAN                        630

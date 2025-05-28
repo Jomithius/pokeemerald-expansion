@@ -1,0 +1,43 @@
+mapscripts MtPyre_Exterior_Dave_House_MapScripts {}
+
+
+script MtPyre_Exterior_Dave_House_EventScript_Gengar{
+    lock
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    playmoncry(SPECIES_GENGAR, CRY_MODE_ENCOUNTER)
+    delay(20)
+    release
+    end
+}
+
+script MtPyre_Exterior_Dave_House_EventScript_Mimikyu{
+    lock
+    applymovement(4, Common_Movement_FacePlayer)
+    waitmovement(4)
+    playmoncry(SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER)
+    delay(20)
+    release
+    end
+}
+
+script MtPyre_Exterior_Dave_House_EventScript_Banette{
+    lock
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(2)
+    playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
+    delay(20)
+    release
+    end
+}
+
+script MtPyre_Exterior_Dave_House_EventScript_Litwick{
+    lock
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(2)
+    playmoncry(SPECIES_LITWICK, CRY_MODE_ENCOUNTER)
+    delay(20)
+    release
+    end
+}
+

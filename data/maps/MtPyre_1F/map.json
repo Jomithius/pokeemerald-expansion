@@ -42,8 +42,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
-      "x": 13,
-      "y": 10,
+      "x": 11,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -52,6 +52,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtPyre_1F_EventScript_Man",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_CHOICE_BAND",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_CHOICE_BAND"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 7,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_CHOICE_SCARF",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_CHOICE_SCARF"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 2,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_CHOICE_SPECS",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_CHOICE_SPECS"
     }
   ],
   "warp_events": [
@@ -63,24 +102,10 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 3,
-      "y": 6,
-      "elevation": 3,
-      "dest_map": "MAP_MT_PYRE_EXTERIOR",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 18,
       "y": 18,
       "elevation": 3,
       "dest_map": "MAP_ROUTE122",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 4,
-      "y": 6,
-      "elevation": 3,
-      "dest_map": "MAP_MT_PYRE_EXTERIOR",
       "dest_warp_id": "0"
     },
     {

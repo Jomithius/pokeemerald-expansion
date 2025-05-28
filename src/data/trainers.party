@@ -11191,7 +11191,7 @@ Hasty Nature
 - Fake Out  
 - Dazzling Gleam  
 - Dark Pulse  
-- Thunder Wave  
+- Taunt
 
 Quilava @ Charcoal  
 Ability: Flash Fire  
@@ -12111,26 +12111,84 @@ Machop
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TRENT_1 ===
-Name: TRENT
-Class: Hiker
-Pic: Hiker
+=== TRAINER_JOMITHIUS_3 ===
+Name: JOMITHIUS
+Class: Rival
+Pic: Emo
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Mugshot: Purple
 
-Geodude
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gigalith @ Rocky Helmet  
+Ability: Sturdy  
+Level: 37  
+Shiny: Yes  
+Tera Type: Rock  
+EVs: 244 HP / 248 Def / 16 SpD  
+Impish Nature  
+- Stealth Rock  
+- Earthquake  
+- Stone Edge  
+- Iron Head  
 
-Geodude
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Excadrill @ Soft Sand  
+Ability: Mold Breaker  
+Level: 37  
+Tera Type: Ground  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Iron Head  
+- High Horsepower  
+- Rock Slide  
 
-Geodude
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Emolga @ Heavy-Duty Boots  
+Ability: Static  
+Level: 38  
+Tera Type: Electric  
+EVs: 248 SpA / 8 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Volt Switch  
+- Air Slash  
+- Defog  
+- Roost  
+
+Sneasel @ Focus Sash  
+Ability: Inner Focus  
+Level: 37  
+Tera Type: Dark  
+EVs: 252 Atk / 12 SpD / 244 Spe  
+Jolly Nature  
+- Swords Dance  
+- Knock Off  
+- Ice Shard  
+- Ice Punch  
+
+Morgrem @ Light Clay  
+Ability: Prankster  
+Level: 38  
+Tera Type: Dark  
+EVs: 240 HP / 8 Atk / 12 Def / 248 SpD  
+Careful Nature  
+- Thunder Wave  
+- Reflect  
+- Play Rough  
+- Foul Play  
+
+Typhlosion-Hisui @ Assault Vest  
+Ability: Blaze  
+Level: 38  
+Tera Type: Fire  
+EVs: 8 HP / 4 Def / 252 SpA / 244 Spe  
+Timid Nature  
+IVs: 0 Atk / 30 Def  
+- Infernal Parade  
+- Lava Plume  
+- Hidden Power 
+- Shadow Ball  
 
 === TRAINER_LENNY ===
 Name: LENNY
@@ -12274,7 +12332,7 @@ Machop
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TRENT_2 ===
+=== TRAINER_TRENT_2 === /* FREE */
 Name: TRENT
 Class: Hiker
 Pic: Hiker
@@ -12299,7 +12357,7 @@ Graveler
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_TRENT_3 ===
+=== TRAINER_TRENT_3 === /* FREE */
 Name: TRENT
 Class: Hiker
 Pic: Hiker
@@ -12324,7 +12382,7 @@ Graveler
 Level: 27
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_TRENT_4 ===
+=== TRAINER_TRENT_4 === /* FREE */
 Name: TRENT
 Class: Hiker
 Pic: Hiker
@@ -12349,7 +12407,7 @@ Graveler
 Level: 30
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_TRENT_5 ===
+=== TRAINER_TRENT_5 === /* FREE */
 Name: TRENT
 Class: Hiker
 Pic: Hiker
