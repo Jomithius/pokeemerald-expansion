@@ -75,6 +75,34 @@ Common_Movement_WalkInPlaceRight:
 Common_Movement_FollowerSafeEnd::
 	step_end
 
+Common_Movement_EnterPokeball:
+	enter_pokeball
+	step_end
+
+Common_Movement_ExitPokeball:
+	exit_pokeball
+	step_end
+
+Common_Movement_WalkBackUp:
+	lock_facing_direction
+	walk_up
+	unlock_facing_direction
+
+Common_Movement_WalkBackDown:
+	lock_facing_direction
+	walk_down
+	unlock_facing_direction
+
+Common_Movement_WalkBackLeft:
+	lock_facing_direction
+	walk_left
+	unlock_facing_direction
+
+Common_Movement_WalkBackRight:
+	lock_facing_direction
+	walk_right
+	unlock_facing_direction
+
 Common_Movement_WalkLeft:
 	walk_left
 	step_end

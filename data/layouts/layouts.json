@@ -124,7 +124,7 @@
     {
       "id": "LAYOUT_LAVARIDGE_TOWN",
       "name": "LavaridgeTown_Layout",
-      "width": 20,
+      "width": 26,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
@@ -4660,6 +4660,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/MtPyre_Exterior_Dave_House/border.bin",
       "blockdata_filepath": "data/layouts/MtPyre_Exterior_Dave_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAVARIDGE_TOWN_HOUSE2",
+      "name": "LavaridgeTown_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LavaridgeTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_House2/map.bin"
     }
   ]
 }

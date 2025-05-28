@@ -99,6 +99,7 @@ script MtPyre_Exterior_EventScript_Emo2{
     fadedefaultbgm
     setvar(VAR_MISA_STATE, 7)
     setflag(FLAG_HIDE_EMO_MT_PYRE)
+    clearflag(FLAG_HIDE_EMO_LILYCOVE)
     releaseall
     end
 }

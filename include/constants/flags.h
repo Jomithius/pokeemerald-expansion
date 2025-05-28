@@ -1261,9 +1261,9 @@
 #define FLAG_BENNIS_ROUTE_114                                       0x4B7 // Bennis Battle Route 114
 #define FLAG_EMO_ROUTE_112                                          0x4B8 // Rival Battle Route 112
 #define FLAG_HIDE_EMO_MT_PYRE                                       0x4B9 // Rival Battle Mt. Pyre
-#define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
-#define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
+#define FLAG_HIDE_EMO_LILYCOVE                                      0x4BA // Rival Cutscene Lilycove
+#define FLAG_HIDE_LILYCOVE_RIVAL_POKEMON                            0x4BB // Rival Cutscene Lilycove
+#define FLAG_RECIEVED_RARE_CANDY_LILYCOVE_DEPT                      0x4BC // Misa Lilycove DEPT STORE
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag

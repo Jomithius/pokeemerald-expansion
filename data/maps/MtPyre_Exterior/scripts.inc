@@ -191,106 +191,108 @@ MtPyre_Exterior_EventScript_Emo2::
 # 101 "data/maps/MtPyre_Exterior/scripts.pory"
 	setflag FLAG_HIDE_EMO_MT_PYRE
 # 102 "data/maps/MtPyre_Exterior/scripts.pory"
+	clearflag FLAG_HIDE_EMO_LILYCOVE
+# 103 "data/maps/MtPyre_Exterior/scripts.pory"
 	releaseall
 	end
 
 
-# 137 "data/maps/MtPyre_Exterior/scripts.pory"
+# 138 "data/maps/MtPyre_Exterior/scripts.pory"
 MtPyre_Exterior_Movement_Emo1:
-# 138 "data/maps/MtPyre_Exterior/scripts.pory"
+# 139 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 138 "data/maps/MtPyre_Exterior/scripts.pory"
+# 139 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 138 "data/maps/MtPyre_Exterior/scripts.pory"
+# 139 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 138 "data/maps/MtPyre_Exterior/scripts.pory"
+# 139 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
 	step_end
 
-# 141 "data/maps/MtPyre_Exterior/scripts.pory"
-MtPyre_Exterior_Movement_Emo2:
 # 142 "data/maps/MtPyre_Exterior/scripts.pory"
+MtPyre_Exterior_Movement_Emo2:
+# 143 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_down
-# 143 "data/maps/MtPyre_Exterior/scripts.pory"
+# 144 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 143 "data/maps/MtPyre_Exterior/scripts.pory"
+# 144 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 143 "data/maps/MtPyre_Exterior/scripts.pory"
+# 144 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 143 "data/maps/MtPyre_Exterior/scripts.pory"
+# 144 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
 	step_end
 
-# 146 "data/maps/MtPyre_Exterior/scripts.pory"
-MtPyre_Exterior_Movement_EmoLeave1:
 # 147 "data/maps/MtPyre_Exterior/scripts.pory"
+MtPyre_Exterior_Movement_EmoLeave1:
+# 148 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_down
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
+# 149 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
 # 149 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 150 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 150 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 150 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
 	step_end
 
-# 152 "data/maps/MtPyre_Exterior/scripts.pory"
-MtPyre_Exterior_Movement_EmoLeave2:
 # 153 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_up
+MtPyre_Exterior_Movement_EmoLeave2:
 # 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
 # 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 156 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_up
+# 156 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
 	step_end
 
 MtPyre_Exterior_Text_Emo1::
-# 106 "data/maps/MtPyre_Exterior/scripts.pory"
-	.string "JAMES: {PLAYER}?\n I wouldn't expect you to come here.\p Are you a fan of the occult?\n That's surprising.\p The dark energies in this place\n have cause our power to grow\l to even further heights.\p I don't think even you can\n withstand this strength!$"
+# 107 "data/maps/MtPyre_Exterior/scripts.pory"
+	.string "JAMES: {PLAYER}?\n I wouldn't expect you to come here.\p Are you a fan of the occult?\n That's surprising.\p The dark energies in this place\n have caused my power to go even\l further beyond...\p I don't think even you can\n withstand this strength!$"
 
 MtPyre_Exterior_Text_Emo2::
-# 118 "data/maps/MtPyre_Exterior/scripts.pory"
+# 119 "data/maps/MtPyre_Exterior/scripts.pory"
 	.string "JAMES: Hm...\n You've become stronger than I thought.\p As expected of my adversary.\n Here, you can have this.$"
 
 MtPyre_Exterior_Text_Emo3::
-# 125 "data/maps/MtPyre_Exterior/scripts.pory"
+# 126 "data/maps/MtPyre_Exterior/scripts.pory"
 	.string "I'm heading to MOSSDEEP next\n after stopping by LILYCOVE.\p I heard the DEPT. STORE sells\n rare items.\p See ya, {PLAYER}.$"
 
 MtPyre_Exterior_Text_RivalDefeat::
-# 133 "data/maps/MtPyre_Exterior/scripts.pory"
+# 134 "data/maps/MtPyre_Exterior/scripts.pory"
 	.string "I'm in my abyss...$"

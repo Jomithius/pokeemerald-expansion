@@ -2132,20 +2132,19 @@ MatchCall_Text_Wattson4::
 	.string "with shocking power!$"
 
 MatchCall_Text_Flannery1::
-	.string "FLANNERY: {PLAYER}…\p"
-	.string "When we battled, I learned exactly\n"
-	.string "how immature I was.\p"
-	.string "But I'm not done yet!\p"
-	.string "I'm going to redo my training and\n"
-	.string "reopen the GYM.\p"
+	.string "KAI: {PLAYER}…\p"
+	.string "When we battled, I was thinking\n"
+	.string "about a new recipe.\p"
+	.string "Next time I won't lose to\n"
+	.string "you.\p"
 	.string "When the time comes, {PLAYER},\n"
-	.string "please challenge us again.$"
+	.string "get ready to get cooked.$"
 
 MatchCall_Text_Flannery2::
-	.string "FLANNERY: Hello, {PLAYER}?\n"
+	.string "KAI: Hello, {PLAYER}?\n"
 	.string "Congratulations!\p"
 	.string "Word of your success has reached\n"
-	.string "us like the heat of a volcano!\p"
+	.string "us like the heat of a kitchen!\p"
 	.string "Our training is coming along very\n"
 	.string "well here.\p"
 	.string "When the GYM's ready, a mark will\n"
@@ -2153,15 +2152,15 @@ MatchCall_Text_Flannery2::
 	.string "MATCH CALL list.$"
 
 MatchCall_Text_Flannery3::
-	.string "FLANNERY: Oh, {PLAYER}?\n"
+	.string "KAI: Oh, {PLAYER}?\n"
 	.string "Our GYM's ready!\p"
 	.string "Come to LAVARIDGE for a soak\n"
 	.string "in the hot spring and a challenge!$"
 
 MatchCall_Text_Flannery4::
-	.string "FLANNERY: {PLAYER}…\n"
+	.string "KAI: {PLAYER}…\n"
 	.string "I'm positive that you keep getting\l"
-	.string "better at training every time.$"
+	.string "better at cooking.$"
 
 MatchCall_Text_Winona1::
 	.string "WINONA: Hello, {PLAYER}!\p"

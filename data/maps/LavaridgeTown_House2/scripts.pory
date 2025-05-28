@@ -1,0 +1,72 @@
+mapscripts LavaridgeTown_House2_MapScripts {}
+
+script LavaridgeTown_House2_OldLady{
+    if(flag(FLAG_BADGE04_GET) == TRUE){
+        msgbox(LavaridgeTown_EventScript_Text_Lady1, MSGBOX_NPC)
+    }
+    else{
+    msgbox(LavaridgeTown_House2_Text_Lady2, MSGBOX_NPC)
+    }
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(1)
+    end
+}
+
+text LavaridgeTown_House2_Text_Lady2{
+    "Fufu.\n
+    She acts like she doesn't care, but\l
+    she travels all the way from SLATEPORT\l
+    CITY just to visit us all the time.\p
+    Maybe she just loves her\n
+    sister's cooking that much."
+}
+
+text LavaridgeTown_EventScript_Text_Lady1{
+    "Fufu. \n
+    My daughters are so great."
+}
+
+script LavaridgeTown_House2_Lina{
+    lock
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(2)
+    msgbox(LavaridgeTown_House2_Text_Lina, MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES ){
+        if(flag(FLAG_LINA_HOUSE_EEVEE) == TRUE ){
+            msgbox(LavaridgeTown_House2_Text_LinaEeveeStolen, MSGBOX_NPC)
+        }
+        else{
+            msgbox(LavaridgeTown_House2_Text_LinaThatsWeird, MSGBOX_NPC)
+        }
+    }
+    else{
+        msgbox(LavaridgeTown_House2_LinaThenLeave, MSGBOX_NPC)
+    }
+    applymovement(2, Common_Movement_FaceOriginalDirection)
+    waitmovement(2)
+    setvar(VAR_LINA_TALKED_TO, 1)
+    end
+}
+
+text LavaridgeTown_House2_Text_Lina{
+    "Do you always just go around\n
+    entering random people's houses?"
+}
+
+text LavaridgeTown_House2_Text_LinaEeveeStolen{
+    "You know that's weird, right?\n
+    You're probably the reason that\l
+    my EEVEE went missing too.\p
+    Shoo!"
+}
+
+text LavaridgeTown_House2_Text_LinaThatsWeird{
+    "You know that's weird, right?\n
+    Shoo!"
+}
+
+text LavaridgeTown_House2_LinaThenLeave{
+    "Then why did you barge in here?\n
+    Hmph!"
+}

@@ -147,8 +147,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "LavaridgeTown_EventScript_Joey",
+      "flag": "FLAG_BADGE04_GET"
     }
   ],
   "warp_events": [
@@ -193,6 +193,13 @@
       "elevation": 3,
       "dest_map": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 21,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_LAVARIDGE_TOWN_HOUSE2",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
