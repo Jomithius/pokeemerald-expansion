@@ -76,8 +76,6 @@ script Route116_RusturfTunnel_Peak_Daca{
     waitmovement(2)
     msgbox(Route116_RusturfTunnel_Peak_DacaText1, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox(Route116_RusturfTunnel_Peak_DacaText2, MSGBOX_AUTOCLOSE)
-    waitmessage
     goto(Route116_RusturfTunnel_Peak_DacaLeave)
 }
 
@@ -88,11 +86,8 @@ text Route116_RusturfTunnel_Peak_DacaText1{
     Oh, a challenger?\n
     Hahaha, my bad!\p
     I'm DACA, LEADER of the MAUVILLE CITY\n
-    POKéMON GYM."
-}
-
-text Route116_RusturfTunnel_Peak_DacaText2{
-    "DACA: I was grabbing some rare herbs\n 
+    POKéMON GYM.\p
+    DACA: I was grabbing some rare herbs\n 
     for a sick HOUNDOUR that's being\l
     cared for at the DAYCARE.\p
     Well, sorry to make you come\n

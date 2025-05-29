@@ -20,7 +20,71 @@
     }
   ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BENNIS",
+      "x": 19,
+      "y": 44,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_BENNIS_VICTORY_ROAD"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 20,
+      "y": 44,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_BENNIS_VICTORY_ROAD"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 18,
+      "y": 44,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FLAG_HIDE_BENNIS_VICTORY_ROAD",
+      "flag": "FLAG_HIDE_BENNIS_VICTORY_ROAD"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NURSE",
+      "x": 23,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EverGrandeCity_EventScript_Nurse",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EMO",
+      "x": 18,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RIVAL_EVERGRANDE_CITY"
+    }
   ],
   "warp_events": [
     {
@@ -151,6 +215,24 @@
       "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "EverGrandeCity_EventScript_SetVisitedEverGrande"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 51,
+      "elevation": 0,
+      "var": "VAR_BENNIS_DOJO_STATE",
+      "var_value": "3",
+      "script": "EverGrandeCity_EventScript_TriggerRight"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 51,
+      "elevation": 0,
+      "var": "VAR_BENNIS_DOJO_STATE",
+      "var_value": "3",
+      "script": "EverGrandeCity_EventScript_TriggerRight"
     }
   ],
   "bg_events": [

@@ -3217,35 +3217,6 @@ Route123_Text_VioletPostBattle:
 	.string "The BERRY MASTER's garden is filled\n"
 	.string "with uplifting fragrances.$"
 
-Route123_Text_CameronIntro:
-	.string "Being a psychic is about willpower.\p"
-	.string "I've willed myself not to lose to\n"
-	.string "anyone. That makes me strong!$"
-
-Route123_Text_CameronDefeat:
-	.string "I feel sad…$"
-
-Route123_Text_CameronPostBattle:
-	.string "Being a psychic is about willpower.\n"
-	.string "I thought I wouldn't lose to you…$"
-
-Route123_Text_CameronRegister:
-	.string "I sense it!\n"
-	.string "You and I shall battle again!\l"
-	.string "I can't tell if I'll win, though…\p"
-	.string "Let's see your POKéNAV.$"
-
-Route123_Text_CameronRematchIntro:
-	.string "I've convinced myself that I won't\n"
-	.string "lose anymore. That makes me strong!$"
-
-Route123_Text_CameronRematchDefeat:
-	.string "I feel sad…$"
-
-Route123_Text_CameronPostRematch:
-	.string "I should train at MT. PYRE…\n"
-	.string "I'll never beat you this way…$"
-
 Route123_Text_JackiIntro:
 	.string "Don't be too happy if your POKéMON\n"
 	.string "develop psychic powers.\p"

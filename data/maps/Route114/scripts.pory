@@ -246,7 +246,7 @@ script Route114_EventScript_Bennis{
     trainerbattle_no_intro(TRAINER_BENNIS_2, Route114_BennisDefeat)
     lockall
     msgbox("MASTER BENNIS: Hm.\n
-    Still beefy.", MSGBOX_AUTOCLOSE)
+    	Still beefy.", MSGBOX_AUTOCLOSE)
     waitmessage
     msgbox("PANINI: P-Panini?!", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -260,7 +260,6 @@ script Route114_EventScript_Bennis{
     removeobject(30)
     setflag(FLAG_BENNIS_ROUTE_114)
     setvar(VAR_BENNIS_DOJO_STATE, 3)
-    addobject(26)
     playse(SE_FLEE)
     fadescreenspeed(FADE_FROM_BLACK, 3)
     delay(20)

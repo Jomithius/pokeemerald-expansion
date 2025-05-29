@@ -241,7 +241,7 @@
 #define TRAINER_BLAKE                       235
 #define TRAINER_WILLIAM                     236
 #define TRAINER_JOSHUA                      237
-#define TRAINER_CAMERON_1                   238
+#define TRAINER_BENNIS_3                    238
 #define TRAINER_CAMERON_2                   239
 #define TRAINER_CAMERON_3                   240
 #define TRAINER_CAMERON_4                   241
@@ -639,10 +639,10 @@
 #define TRAINER_LUCAS_2                     633
 #define TRAINER_MIKE_1                      634
 #define TRAINER_MIKE_2                      635
-#define TRAINER_TRENT_2                     636
-#define TRAINER_TRENT_3                     637
-#define TRAINER_TRENT_4                     638
-#define TRAINER_TRENT_5                     639
+#define TRAINER_ROB_2                       636
+#define TRAINER_DALE_2                      637
+#define TRAINER_STEPHEN_2                   638
+#define TRAINER_SPEEDWAGON_2                639
 #define TRAINER_DEZ_AND_LUKE                640
 #define TRAINER_LEA_AND_JED                 641
 #define TRAINER_KIRA_AND_DAN_1              642

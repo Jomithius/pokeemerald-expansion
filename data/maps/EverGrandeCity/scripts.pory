@@ -1,0 +1,212 @@
+raw`EverGrandeCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_OnTransition
+	.byte 0
+
+EverGrandeCity_OnTransition:
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	end
+
+EverGrandeCity_EventScript_VictoryRoadSign::
+	msgbox EverGrandeCity_Text_EnteringVictoryRoad, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_CitySign::
+	msgbox EverGrandeCity_Text_CitySign, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_PokemonLeagueSign::
+	msgbox EverGrandeCity_Text_EnteringPokemonLeague, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_SetVisitedEverGrande::
+	setflag FLAG_VISITED_EVER_GRANDE_CITY
+	setvar VAR_TEMP_1, 1
+	end
+
+EverGrandeCity_Text_EnteringVictoryRoad:
+	.string "ENTERING VICTORY ROAD$"
+
+EverGrandeCity_Text_EnteringPokemonLeague:
+	.string "ENTERING POKéMON LEAGUE\n"
+	.string "CENTER GATE$"
+
+EverGrandeCity_Text_CitySign:
+	.string "EVER GRANDE CITY\p"
+	.string "“The paradise of flowers, the sea,\n"
+	.string "and POKéMON.”$"
+
+`
+script EverGrandeCity_EventScript_Trigger{
+    lockall
+    clearflag(FLAG_HIDE_BENNIS_VICTORY_ROAD)
+    addobject(3)
+    addobject(2)
+    addobject(1)
+    playbgm(MUS_NONE, FALSE)
+    msgbox("Baldy baldy over there, what's it like\n
+        to have no hair?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_BENNIS_DOJO, TRUE)
+    delay(20)
+    applymovement(3, EverGrandeCity_Movement_BennisFollower)
+    delay(20)
+    applymovement(2, EverGrandeCity_Movement_BennisFollower)
+    delay(20)
+    applymovement(1, EverGrandeCity_Movement_BennisFollower)
+    waitmovement(1)
+    msgbox(EverGrandeCity_Text_Asak1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(2, Common_Movement_FaceLeft)
+    waitmovement(2)
+    msgbox(EverGrandeCity_Text_Asak2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(2, Common_Movement_FaceDown)
+    waitmovement(2)
+    applymovement(1, Common_Movement_WalkDown)
+    waitmovement(1)
+    msgbox(EverGrandeCity_Text_Bennis1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_BENNIS_3, EverGrandeCity_BennisDefeat)
+    lockall
+    msgbox("MASTER BENNIS: Hm.\n
+        Still beefy.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("ASAK: No way...", MSGBOX_AUTOCLOSE)
+    msgbox("PANINI: P-Panini...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(EverGrandeCity_Text_Asak3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_NONE, FALSE)
+    delay(10)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    setflag(FLAG_HIDE_BENNIS_VICTORY_ROAD)
+    setvar(VAR_BENNIS_DOJO_STATE, 4)
+    playse(SE_FLEE)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    delay(20)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+script EverGrandeCity_EventScript_TriggerRight{
+    lockall
+    clearflag(FLAG_HIDE_BENNIS_VICTORY_ROAD)
+    addobject(3)
+    addobject(2)
+    addobject(1)
+    playbgm(MUS_NONE, FALSE)
+    msgbox("Baldy baldy over there, what's it like\n
+    to have no hair?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_BENNIS_DOJO, TRUE)
+    delay(20)
+    applymovement(3, EverGrandeCity_Movement_BennisFollower)
+    delay(20)
+    applymovement(2, EverGrandeCity_Movement_BennisFollower)
+    delay(20)
+    applymovement(1, EverGrandeCity_Movement_BennisFollower)
+    waitmovement(1)
+    msgbox(EverGrandeCity_Text_Asak1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(2, Common_Movement_FaceLeft)
+    waitmovement(2)
+    msgbox(EverGrandeCity_Text_Asak2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(2, Common_Movement_FaceDown)
+    waitmovement(2)
+    applymovement(1, EverGrandeCity_Movement_BennisRight)
+    waitmovement(1)
+    msgbox(EverGrandeCity_Text_Bennis1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_BENNIS_3, EverGrandeCity_BennisDefeat)
+    lockall
+    msgbox("MASTER BENNIS: Hm.\n
+        Still beefy.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("ASAK: No way...", MSGBOX_AUTOCLOSE)
+    msgbox("PANINI: P-Panini...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(EverGrandeCity_Text_Asak3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_NONE, FALSE)
+    delay(10)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    playse(SE_FLEE)
+    setflag(FLAG_HIDE_BENNIS_VICTORY_ROAD)
+    setvar(VAR_BENNIS_DOJO_STATE, 4)
+    playse(SE_FLEE)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    delay(20)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+movement EverGrandeCity_Movement_BennisFollower{
+    walk_down * 5
+}
+
+text EverGrandeCity_Text_Asak1{
+    "ASAK: This time for sure!\n
+    MASTER BENNIS will finally regain\l
+    his honor."
+}
+
+text EverGrandeCity_Text_Asak2{
+    "ASAK: Now, MASTER BENNIS!"
+}
+
+text EverGrandeCity_Text_Bennis1{
+    "MASTER BENNIS: Oho. I'm gettin' good\n
+    vibrations from this place."
+}
+
+text EverGrandeCity_BennisDefeat{
+    "Everyone's so mean to me..."
+}
+
+text EverGrandeCity_Text_Asak3{
+    "ASAK: Kuh.... W-We won't...\n
+    ... Forget..."
+}
+
+movement EverGrandeCity_Movement_BennisRight{
+    walk_down
+    walk_right
+    face_down
+}
+
+script EverGrandeCity_EventScript_Nurse{
+    lock
+    applymovement(4, Common_Movement_FacePlayer)
+    waitmovement(4)
+    msgbox(EverGrandeCity_Text_Nurse, MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(Common_EventScript_OutOfCenterPartyHeal)
+    msgbox(EverGrandeCity_Text_Nurse2, MSGBOX_AUTOCLOSE)
+    applymovement(4, Common_Movement_FaceOriginalDirection)
+    waitmovement(4)
+    waitmessage
+    release
+    end
+}
+
+text EverGrandeCity_Text_Nurse{
+    "You and your POKéMON look tired.\n
+    Please, take a quick break."
+}
+
+text EverGrandeCity_Text_Nurse2{
+    "Please come again."
+}

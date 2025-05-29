@@ -1248,7 +1248,7 @@
 #define FLAG_HIDE_DACA_RUSTURF_PEAK                                 0x4AA // Rusturf Peak
 #define FLAG_RUSTURF_GALVANTULA                                     0x4AB // Rusturf 3F
 #define FLAG_RUSTURF_ARIADOS                                        0x4AC // Rusturf 3F
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
+#define FLAG_HIDE_BIKERS_ROUTE_123                                  0x4AD // Speedwagon Route123
 #define FLAG_ROUTE117_RECIEVED_LEFTOVERS                            0x4AE // From Misa
 #define FLAG_XION_HOUSE_LEAF_STONE                                  0x4AF // Xion's House in Verdanturf
 #define FLAG_RECIEVED_CHOICE_SCARF_XION                             0x4B0 // Xion's House in Verdanturf
@@ -1265,8 +1265,8 @@
 #define FLAG_HIDE_LILYCOVE_RIVAL_POKEMON                            0x4BB // Rival Cutscene Lilycove
 #define FLAG_RECIEVED_RARE_CANDY_LILYCOVE_DEPT                      0x4BC // Misa Lilycove DEPT STORE
 #define FLAG_HIDE_ARIA_SHOAL_CAVE                                   0x4BD // Aria Shoal Cave
-#define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
-#define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
+#define FLAG_HIDE_BENNIS_VICTORY_ROAD                               0x4BE // Bennis 3rd Battle
+#define FLAG_HIDE_RIVAL_EVERGRANDE_CITY                             0x4BF // James Battle Evergrande City
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
 #define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag

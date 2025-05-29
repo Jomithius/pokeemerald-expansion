@@ -143,133 +143,129 @@ Route116_RusturfTunnel_Peak_Daca::
 # 78 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmessage
 # 79 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	msgbox Route116_RusturfTunnel_Peak_DacaText2, MSGBOX_AUTOCLOSE
-# 80 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	waitmessage
-# 81 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	goto Route116_RusturfTunnel_Peak_DacaLeave
 	return
 
 
 Route116_RusturfTunnel_Peak_DacaLeave::
-# 105 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 100 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
-# 106 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 101 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	compare VAR_TEMP_1, DIR_NORTH
 	goto_if_eq Route116_RusturfTunnel_Peak_DacaLeave_1
-# 125 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 120 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	applymovement 1, RusturfTunnel_Peak_ReturnToPokeball
-# 126 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 121 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmovement 1
-# 127 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 122 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	removeobject 1
-# 128 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 123 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	applymovement 3, RusturfTunnel_Peak_ReturnToPokeball
-# 129 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 124 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmovement 3
-# 130 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 125 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	removeobject 3
-# 131 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 126 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	delay 20
-# 132 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 127 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	applymovement 2, Route116_RusturfTunnel_Peak_DacaLeave2
-# 133 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 128 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	delay 20
-# 134 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 129 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
-# 135 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 130 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmovement 2
-# 136 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 131 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	delay 30
-# 137 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 132 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	removeobject 2
-# 138 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 133 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	setflag FLAG_HIDE_DACA_RUSTURF_PEAK
-# 139 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 134 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	release
 	end
 
 Route116_RusturfTunnel_Peak_DacaLeave_1:
-# 107 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 102 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	applymovement 1, RusturfTunnel_Peak_ReturnToPokeball
-# 108 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 103 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmovement 1
-# 109 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 104 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	removeobject 1
-# 110 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 105 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	applymovement 3, RusturfTunnel_Peak_ReturnToPokeball
-# 111 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 106 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmovement 3
-# 112 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 107 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	removeobject 3
-# 113 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 108 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	delay 20
-# 114 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 109 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	applymovement 2, Route116_RusturfTunnel_Peak_DacaLeave1
-# 115 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 110 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	delay 20
-# 116 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 111 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
-# 117 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 112 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmovement 2
-# 118 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 113 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	delay 30
-# 119 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 114 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	removeobject 2
-# 120 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 115 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	setflag FLAG_HIDE_DACA_RUSTURF_PEAK
-# 121 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 116 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	release
 	end
 
 
-# 144 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 139 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 Route116_RusturfTunnel_Peak_DacaLeave1:
-# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 140 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_left
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 146 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 141 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
 	step_end
 
-# 149 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 144 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 Route116_RusturfTunnel_Peak_DacaLeave2:
-# 150 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 150 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 150 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 150 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 150 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 150 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 150 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
-# 150 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 145 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	walk_down
 	step_end
 
-# 153 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 148 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 RusturfTunnel_Peak_ReturnToPokeball:
-# 154 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+# 149 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	enter_pokeball
 	step_end
 
@@ -278,9 +274,5 @@ RibombeeFailed_Text_0:
 	.string "The RIBOMBEE disappeared...$"
 
 Route116_RusturfTunnel_Peak_DacaText1::
-# 84 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	.string "Huh?\n Who are you?\l ...\p Oh, a challenger?\n Hahaha, my bad!\p I'm DACA, LEADER of the MAUVILLE CITY\n POKéMON GYM.$"
-
-Route116_RusturfTunnel_Peak_DacaText2::
-# 94 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	.string "DACA: I was grabbing some rare herbs\n  for a sick HOUNDOUR that's being\l cared for at the DAYCARE.\p Well, sorry to make you come\n all the way up here!\p I'll wait for you back at the GYM.\n Then we can party! Hahaha!$"
+# 82 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
+	.string "Huh?\n Who are you?\l ...\p Oh, a challenger?\n Hahaha, my bad!\p I'm DACA, LEADER of the MAUVILLE CITY\n POKéMON GYM.\p DACA: I was grabbing some rare herbs\n  for a sick HOUNDOUR that's being\l cared for at the DAYCARE.\p Well, sorry to make you come\n all the way up here!\p I'll wait for you back at the GYM.\n Then we can party! Hahaha!$"

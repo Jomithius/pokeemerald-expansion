@@ -95,7 +95,7 @@
 #define VAR_POKELOT_RND1                                 0x404B
 #define VAR_POKELOT_RND2                                 0x404C
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
-#define VAR_BENNIS_DOJO_STATE                            0x404E // 0-2 Bennis First Battle, 2-3 Bennis Fallarbor, 3
+#define VAR_BENNIS_DOJO_STATE                            0x404E // 0-2 Bennis First Battle, 2-3 Bennis Fallarbor, 3-4 Victory Road, 4
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051

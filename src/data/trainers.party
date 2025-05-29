@@ -4235,20 +4235,84 @@ Solrock
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CAMERON_1 ===
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
+=== TRAINER_BENNIS_3 ===
+Name: BENNIS
+Class: Master
+Pic: Bennis
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Mugshot: Blue
 
-Solrock
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pangoro (M) @ Assault Vest  
+Ability: Iron Fist  
+Level: 47  
+Tera Type: Fighting  
+EVs: 248 HP / 248 Atk / 12 Def  
+Adamant Nature  
+- Bullet Punch  
+- Sucker Punch  
+- Close Combat  
+- Ice Punch  
 
-=== TRAINER_CAMERON_2 ===
+Toxicroak (F) @ Black Sludge  
+Ability: Poison Touch  
+Level: 47  
+Tera Type: Poison  
+EVs: 248 Atk / 4 Def / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Close Combat  
+- Poison Jab  
+- Bullet Punch  
+
+Lilligant-Hisui @ Wide Lens  
+Ability: Hustle  
+Level: 46  
+Tera Type: Grass  
+EVs: 4 HP / 248 Atk / 8 SpD / 248 Spe  
+Jolly Nature  
+- Close Combat  
+- Trailblaze  
+- Petal Blizzard  
+- Triple Axel  
+
+Medicham (M) @ Expert Belt  
+Ability: Pure Power  
+Level: 48  
+Tera Type: Fighting  
+EVs: 248 Atk / 12 SpD / 248 Spe  
+Jolly Nature  
+- Bulk Up  
+- Fire Punch  
+- Ice Punch  
+- Thunder Punch  
+
+Infernape (M) @ Punching Glove  
+Ability: Iron Fist  
+Level: 48  
+Tera Type: Fire  
+EVs: 244 Atk / 8 Def / 8 SpD / 248 Spe  
+Jolly Nature  
+- Swords Dance  
+- Fire Punch  
+- Mach Punch  
+- Close Combat  
+
+Primeape (M) @ Blunder Policy  
+Ability: Defiant  
+Level: 48  
+Happiness: 0  
+Tera Type: Fighting  
+EVs: 248 Atk / 8 SpD / 252 Spe  
+Jolly Nature  
+- Bulk Up  
+- Acrobatics  
+- Rage Fist  
+- Dynamic Punch  
+
+=== TRAINER_CAMERON_2 === /* FREE */
 Name: CAMERON
 Class: Psychic
 Pic: Psychic M
@@ -4265,7 +4329,7 @@ Solrock
 Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_CAMERON_3 ===
+=== TRAINER_CAMERON_3 === /* FREE */
 Name: CAMERON
 Class: Psychic
 Pic: Psychic M
@@ -4282,7 +4346,7 @@ Solrock
 Level: 38
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_CAMERON_4 ===
+=== TRAINER_CAMERON_4 === /* FREE */
 Name: CAMERON
 Class: Psychic
 Pic: Psychic M
@@ -4299,7 +4363,7 @@ Solrock
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CAMERON_5 ===
+=== TRAINER_CAMERON_5 === /* FREE */
 Name: CAMERON
 Class: Psychic
 Pic: Psychic M
@@ -5425,7 +5489,7 @@ Impish Nature
 - Dig  
 - Snap Trap  
 
-Zigzagoon-Galar @ Toxic Orb  
+Zigzagoon-Galar (M) @ Toxic Orb  
 Ability: Quick Feet  
 Level: 25   
 EVs: 4 HP / 244 Atk / 12 SpD / 244 Spe  
@@ -5435,7 +5499,7 @@ Jolly Nature
 - Parting Shot  
 - Trick  
 
-Slowpoke-Galar @ Quick Claw  
+Slowpoke-Galar (M) @ Quick Claw  
 Ability: Regenerator  
 Level: 25   
 EVs: 244 HP / 108 Atk / 148 SpA / 4 SpD  
@@ -5446,7 +5510,7 @@ IVs: 0 Atk
 - Grass Knot  
 - Icy Wind  
 
-Darumaka-Galar @ Wide Lens  
+Darumaka-Galar (M) @ Wide Lens  
 Ability: Hustle  
 Level: 23   
 EVs: 240 HP / 148 Atk / 108 Def / 12 SpD  
@@ -5455,7 +5519,7 @@ Adamant Nature
 - Brick Break  
 - Bite  
 
-Meowth-Galar @ Metal Coat  
+Meowth-Galar (M) @ Metal Coat  
 Ability: Tough Claws  
 Level: 25  
 EVs: 244 HP / 252 Atk / 4 SpD / 4 Spe  
@@ -5465,7 +5529,7 @@ Adamant Nature
 - Metal Claw  
 - Fake Out  
 
-Mr. Mime-Galar  
+Mr. Mime-Galar (M)
 Ability: Screen Cleaner  
 Level: 25   
 EVs: 20 HP / 244 SpA / 244 Spe  
@@ -11065,7 +11129,7 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
 
-Pancham @ Eviolite  
+Pancham (M) @ Eviolite  
 Ability: Scrappy  
 Level: 26  
 Tera Type: Fighting  
@@ -11076,7 +11140,7 @@ Adamant Nature
 - Comet Punch  
 - Drain Punch  
 
-Meditite @ Expert Belt  
+Meditite (M) @ Expert Belt  
 Ability: Pure Power  
 Level: 27  
 Tera Type: Fighting  
@@ -11087,7 +11151,7 @@ Adamant Nature
 - Fire Punch  
 - Ice Punch  
 
-Croagunk @ Poison Barb  
+Croagunk (F) @ Poison Barb  
 Ability: Poison Touch  
 Level: 26  
 Tera Type: Poison  
@@ -11109,7 +11173,7 @@ Adamant Nature
 - Drain Punch  
 - Bullet Punch  
 
-Monferno @ Leftovers  
+Monferno (M) @ Leftovers  
 Ability: Blaze  
 Level: 27  
 Tera Type: Fire  
@@ -11120,7 +11184,7 @@ Jolly Nature
 - Mach Punch  
 - Bulk Up 
 
-Primeape @ Blunder Policy  
+Primeape (M) @ Blunder Policy  
 Ability: Defiant  
 Level: 28  
 Tera Type: Fighting  
@@ -11141,7 +11205,7 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Purple
 
-Boldore @ Rocky Helmet  
+Boldore (M) @ Rocky Helmet  
 Ability: Sturdy  
 Level: 26  
 Shiny: Yes  
@@ -11152,7 +11216,7 @@ Impish Nature
 - Body Press  
 - Bulldoze  
 
-Mienfoo @ Heavy-Duty Boots  
+Mienfoo (M) @ Heavy-Duty Boots  
 Ability: Regenerator  
 Level: 27  
 EVs: 8 HP / 248 Atk / 4 SpD / 248 Spe  
@@ -11162,7 +11226,7 @@ Jolly Nature
 - Brick Break  
 - Knock Off  
 
-Emolga @ Sitrus Berry  
+Emolga (F) @ Sitrus Berry  
 Ability: Static  
 Level: 26  
 EVs: 8 HP / 248 SpA / 252 Spe  
@@ -11172,7 +11236,7 @@ Timid Nature
 - Defog  
 - Roost  
 
-Drilbur @ Soft Sand  
+Drilbur (M) @ Soft Sand  
 Ability: Mold Breaker  
 Level: 26  
 EVs: 244 HP / 244 Atk / 4 Def / 12 SpD  
@@ -11192,7 +11256,7 @@ Hasty Nature
 - Dark Pulse  
 - Taunt
 
-Quilava @ Charcoal  
+Quilava (M) @ Charcoal  
 Ability: Flash Fire  
 Level: 28  
 EVs: 36 Def / 236 SpA / 236 Spe  
@@ -12120,11 +12184,10 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Purple
 
-Gigalith @ Rocky Helmet  
+Gigalith (M) @ Rocky Helmet  
 Ability: Sturdy  
 Level: 37  
-Shiny: Yes  
-Tera Type: Rock  
+Shiny: Yes    
 EVs: 244 HP / 248 Def / 16 SpD  
 Impish Nature  
 - Stealth Rock  
@@ -12132,10 +12195,9 @@ Impish Nature
 - Stone Edge  
 - Iron Head  
 
-Excadrill @ Soft Sand  
+Excadrill (M) @ Soft Sand  
 Ability: Mold Breaker  
-Level: 37  
-Tera Type: Ground  
+Level: 37    
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Swords Dance  
@@ -12143,10 +12205,9 @@ Jolly Nature
 - High Horsepower  
 - Rock Slide  
 
-Emolga @ Heavy-Duty Boots  
+Emolga (F) @ Heavy-Duty Boots  
 Ability: Static  
-Level: 38  
-Tera Type: Electric  
+Level: 38    
 EVs: 248 SpA / 8 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -12155,21 +12216,20 @@ IVs: 0 Atk
 - Defog  
 - Roost  
 
-Sneasel @ Focus Sash  
-Ability: Inner Focus  
-Level: 37  
-Tera Type: Dark  
-EVs: 252 Atk / 12 SpD / 244 Spe  
-Jolly Nature  
-- Swords Dance  
-- Knock Off  
+Cloyster @ Leftovers  
+Ability: Skill Link  
+Level: 38  
+Tera Type: Water  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Icicle Spear  
+- Rock Blast  
 - Ice Shard  
-- Ice Punch  
+- Liquidation 
 
 Morgrem @ Light Clay  
 Ability: Prankster  
-Level: 38  
-Tera Type: Dark  
+Level: 38    
 EVs: 240 HP / 8 Atk / 12 Def / 248 SpD  
 Careful Nature  
 - Thunder Wave  
@@ -12177,10 +12237,9 @@ Careful Nature
 - Play Rough  
 - Foul Play  
 
-Typhlosion-Hisui @ Assault Vest  
+Typhlosion-Hisui (M) @ Assault Vest  
 Ability: Blaze  
-Level: 38  
-Tera Type: Fire  
+Level: 38    
 EVs: 8 HP / 4 Def / 252 SpA / 244 Spe  
 Timid Nature  
 IVs: 0 Atk / 30 Def  
@@ -12331,105 +12390,192 @@ Machop
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TRENT_2 === /* FREE */
-Name: TRENT
-Class: Hiker
-Pic: Hiker
+=== TRAINER_ROB_2 ===
+Name: ROB
+Class: Biker
+Pic: Biker
 Gender: Male
-Music: Hiker
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Liepard  
+Ability: Prankster  
+Level: 36   
+EVs: 80 HP / 148 Atk / 16 Def / 16 SpD / 248 Spe  
+Jolly Nature  
+- Fake Out  
+- Taunt  
+- Throat Chop  
+- Quick Attack  
 
-Geodude
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Garbodor  
+Ability: Stench  
+Level: 36   
+EVs: 236 HP / 100 Atk / 120 Def / 48 SpA  
+Naughty Nature  
+- Clear Smog  
+- Cross Poison  
+- Rock Polish  
+- Self-Destruct
 
-Geodude
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Grimer  
+Ability: Poison Touch  
+Level: 36   
+EVs: 248 HP / 248 Atk / 12 SpD  
+Adamant Nature  
+- Body Slam  
+- Poison Jab
 
-Graveler
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_TRENT_3 === /* FREE */
-Name: TRENT
-Class: Hiker
-Pic: Hiker
+=== TRAINER_DALE_2 ===
+Name: DALE
+Class: Biker
+Pic: Biker
 Gender: Male
-Music: Hiker
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Geodude
-Level: 27
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Tentacruel
+Level: 36
 
-Geodude
-Level: 27
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Sneasel  
+Ability: Inner Focus  
+Level: 36   
+Jolly Nature  
+- Fake Out  
+- Icicle Crash  
+- Knock Off
+-Ice Shard 
 
-Graveler
-Level: 27
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Basculin  
+Ability: Adaptability  
+Level: 37   
+Naive Nature  
+- Aqua Jet  
+- Ice Fang  
+- Crunch
+- Liquidation
 
-Graveler
-Level: 27
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_TRENT_4 === /* FREE */
-Name: TRENT
-Class: Hiker
-Pic: Hiker
+=== TRAINER_STEPHEN_2 ===
+Name: STEPHEN
+Class: Biker
+Pic: Biker
 Gender: Male
-Music: Hiker
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Geodude
-Level: 30
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Honchkrow  
+Ability: Super Luck  
+Level: 37   
+EVs: 244 HP / 252 Atk / 12 SpD  
+Adamant Nature  
+- Drill Peck  
+- Night Slash  
+- U-turn  
+- Pursuit  
 
-Graveler
-Level: 30
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Corsola @ Loaded Dice  
+Ability: Hustle  
+Level: 37   
+EVs: 244 HP / 248 Atk / 16 SpD  
+Adamant Nature  
+- Icicle Spear  
+- Rock Blast  
+- Bulldoze  
+- Liquidation  
 
-Graveler
-Level: 30
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Seviper  
+Ability: Shed Skin  
+Level: 37   
+EVs: 244 HP / 244 Atk / 16 SpD  
+Adamant Nature  
+- Poison Tail  
+- Brick Break  
+- Ice Fang  
+- Coil  
 
-Graveler
-Level: 30
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Scyther @ Black Glasses  
+Ability: Technician  
+Level: 37   
+EVs: 8 HP / 252 Atk / 248 Spe  
+Jolly Nature  
+- Acrobatics  
+- Focus Energy  
+- Lunge  
+- Knock Off  
 
-=== TRAINER_TRENT_5 === /* FREE */
-Name: TRENT
-Class: Hiker
-Pic: Hiker
+=== TRAINER_SPEEDWAGON_2 ===
+Name: SPEEDWAGON
+Class: Biker
+Pic: Speedwagon
 Gender: Male
-Music: Hiker
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Mugshot: Yellow
 
-Graveler
-Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Stunfisk-Galar @ Sitrus Berry  
+Ability: Mimicry  
+Level: 38    
+EVs: 248 HP / 8 Atk / 244 SpA / 4 SpD  
+Quiet Nature  
+- Stealth Rock  
+- Flash Cannon  
+- Earth Power  
+- Snap Trap  
 
-Graveler
-Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Obstagoon (M) @ Toxic Orb  
+Ability: Guts  
+Level: 36   
+EVs: 248 Atk / 8 SpD / 252 Spe  
+Jolly Nature  
+- Bulk Up  
+- Facade  
+- Brick Break  
+- Knock Off  
 
-Graveler
-Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Slowbro-Galar (M) @ Black Glasses  
+Ability: Quick Draw  
+Level: 36    
+EVs: 252 HP / 244 Atk / 12 SpA  
+Brave Nature  
+- Zen Headbutt  
+- Razor Shell  
+- Brutal Swing  
+- Shell Side Arm  
 
-Golem
-Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Darmanitan-Galar (M) @ Wise Glasses  
+Ability: Zen Mode  
+Level: 36    
+EVs: 248 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Overheat  
+- Ice Beam  
+- Grass Knot  
+- Psychic  
+
+Perrserker (M) @ Metal Coat  
+Ability: Tough Claws  
+Level: 37   
+EVs: 248 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Iron Tail  
+- Brick Break  
+- Crunch  
+- Trailblaze  
+
+Mr. Mime-Galar (M) @ Never-Melt Ice  
+Ability: Screen Cleaner  
+Level: 37  
+EVs: 16 Atk / 248 SpA / 244 Spe  
+Hasty Nature  
+- Freeze-Dry  
+- Psyshock  
+- Signal Beam  
+- Ice Shard  
 
 === TRAINER_DEZ_AND_LUKE ===
 Name: DEZ & LUKE
@@ -17744,7 +17890,7 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
 
-Mankey  
+Mankey (M) 
 Ability: Anger Point  
 Level: 17  
 EVs: 224 HP / 104 Atk / 164 Spe  
@@ -17754,7 +17900,7 @@ Jolly Nature
 - Dual Chop  
 - Payback  
 
-Croagunk  
+Croagunk (F)  
 Ability: Poison Touch  
 Level: 17  
 EVs: 168 Atk / 168 Spe  
@@ -17764,7 +17910,7 @@ Jolly Nature
 - Wake-Up Slap  
 - Dual Chop  
 
-Meditite @ Oran Berry  
+Meditite (M) @ Oran Berry  
 Ability: Pure Power  
 Level: 18  
 EVs: 84 HP / 180 Atk / 244 Spe  
@@ -17774,7 +17920,7 @@ Adamant Nature
 - Fake Out  
 - Meditate  
 
-Monferno @ Expert Belt  
+Monferno (M) @ Expert Belt  
 Ability: Iron Fist  
 Level: 19  
 EVs: 20 HP / 244 Atk / 240 Spe  
@@ -17849,7 +17995,7 @@ Relaxed Nature
 - Tackle  
 - Mud-Slap  
 
-Starly  
+Starly (F)
 Ability: Keen Eye  
 Level: 9  
 - Peck  
@@ -17871,7 +18017,7 @@ Relaxed Nature
 - Assurance  
 - Fake Out  
 
-Cyndaquil @ Oran Berry  
+Cyndaquil (M) @ Oran Berry  
 Ability: Flash Fire  
 Level: 12  
 EVs: 128 Atk / 156 Spe  

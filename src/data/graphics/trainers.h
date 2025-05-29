@@ -439,7 +439,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_MOMO, gTrainerFrontPic_Momo, gTrainerPalette_Momo),
     TRAINER_SPRITE(TRAINER_PIC_MISA, gTrainerFrontPic_Misa, gTrainerPalette_Misa),
     TRAINER_SPRITE(TRAINER_PIC_LUNA, gTrainerFrontPic_Luna, gTrainerPalette_Luna),
-    TRAINER_SPRITE(TRAINER_PIC_SPEEDWAGON, gTrainerFrontPic_Speedwagon, gTrainerPalette_Speedwagon, -15, 7, 0x188),
+    TRAINER_SPRITE(TRAINER_PIC_SPEEDWAGON, gTrainerFrontPic_Speedwagon, gTrainerPalette_Speedwagon, -16, 7, 0x188),
     TRAINER_SPRITE(TRAINER_PIC_BIKER, gTrainerFrontPic_Biker, gTrainerPalette_Biker),
 };
 
