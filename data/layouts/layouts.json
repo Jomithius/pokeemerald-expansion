@@ -4670,6 +4670,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/LavaridgeTown_House2/border.bin",
       "blockdata_filepath": "data/layouts/LavaridgeTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILYCOVE_CITY_HOUSE5",
+      "name": "LilycoveCity_House5_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_House5/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_House5/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILYCOVE_CITY_HOUSE5_BASEMENT",
+      "name": "LilycoveCity_House5_Basement_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_House5_Basement/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_House5_Basement/map.bin"
     }
   ]
 }

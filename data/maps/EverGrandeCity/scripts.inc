@@ -113,17 +113,17 @@ EverGrandeCity_EventScript_Trigger::
 # 60 "data/maps/EverGrandeCity/scripts.pory"
 	waitmessage
 # 61 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 3, Common_Movement_FaceLeft
+	applymovement 2, Common_Movement_FaceLeft
 # 62 "data/maps/EverGrandeCity/scripts.pory"
-	waitmovement 3
+	waitmovement 2
 # 63 "data/maps/EverGrandeCity/scripts.pory"
 	msgbox EverGrandeCity_Text_Asak2, MSGBOX_AUTOCLOSE
 # 64 "data/maps/EverGrandeCity/scripts.pory"
 	waitmessage
 # 65 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 3, Common_Movement_FaceDown
+	applymovement 2, Common_Movement_FaceDown
 # 66 "data/maps/EverGrandeCity/scripts.pory"
-	waitmovement 3
+	waitmovement 2
 # 67 "data/maps/EverGrandeCity/scripts.pory"
 	applymovement 1, Common_Movement_WalkDown
 # 68 "data/maps/EverGrandeCity/scripts.pory"
@@ -167,145 +167,177 @@ EverGrandeCity_EventScript_Trigger::
 # 88 "data/maps/EverGrandeCity/scripts.pory"
 	setvar VAR_BENNIS_DOJO_STATE, 4
 # 89 "data/maps/EverGrandeCity/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 3
+	playse SE_FLEE
 # 90 "data/maps/EverGrandeCity/scripts.pory"
-	delay 20
+	fadescreenspeed FADE_FROM_BLACK, 3
 # 91 "data/maps/EverGrandeCity/scripts.pory"
-	fadedefaultbgm
+	delay 20
 # 92 "data/maps/EverGrandeCity/scripts.pory"
+	fadedefaultbgm
+# 93 "data/maps/EverGrandeCity/scripts.pory"
 	releaseall
 	end
 
 
 EverGrandeCity_EventScript_TriggerRight::
-# 97 "data/maps/EverGrandeCity/scripts.pory"
-	lockall
 # 98 "data/maps/EverGrandeCity/scripts.pory"
-	clearflag FLAG_HIDE_BENNIS_VICTORY_ROAD
-# 99 "data/maps/EverGrandeCity/scripts.pory"
-	addobject 3
-# 100 "data/maps/EverGrandeCity/scripts.pory"
-	addobject 2
-# 101 "data/maps/EverGrandeCity/scripts.pory"
-	addobject 1
-# 102 "data/maps/EverGrandeCity/scripts.pory"
-	playbgm MUS_NONE, FALSE
-# 103 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_EventScript_Trigger_Text_0, MSGBOX_AUTOCLOSE
-# 105 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 106 "data/maps/EverGrandeCity/scripts.pory"
-	playbgm MUS_BENNIS_DOJO, TRUE
-# 107 "data/maps/EverGrandeCity/scripts.pory"
-	delay 20
-# 108 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 3, EverGrandeCity_Movement_BennisFollower
-# 109 "data/maps/EverGrandeCity/scripts.pory"
-	delay 20
-# 110 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 2, EverGrandeCity_Movement_BennisFollower
-# 111 "data/maps/EverGrandeCity/scripts.pory"
-	delay 20
-# 112 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 1, EverGrandeCity_Movement_BennisFollower
-# 113 "data/maps/EverGrandeCity/scripts.pory"
-	waitmovement 1
-# 114 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_Text_Asak1, MSGBOX_AUTOCLOSE
-# 115 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 116 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_EventScript_Trigger_Text_1, MSGBOX_AUTOCLOSE
-# 117 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 118 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 3, Common_Movement_FaceLeft
-# 119 "data/maps/EverGrandeCity/scripts.pory"
-	waitmovement 3
-# 120 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_Text_Asak2, MSGBOX_AUTOCLOSE
-# 121 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 122 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 3, Common_Movement_FaceDown
-# 123 "data/maps/EverGrandeCity/scripts.pory"
-	waitmovement 3
-# 124 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 1, EverGrandeCity_Movement_BennisRight
-# 125 "data/maps/EverGrandeCity/scripts.pory"
-	waitmovement 1
-# 126 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_Text_Bennis1, MSGBOX_AUTOCLOSE
-# 127 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 128 "data/maps/EverGrandeCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_BENNIS_3, EverGrandeCity_BennisDefeat
-# 129 "data/maps/EverGrandeCity/scripts.pory"
 	lockall
-# 130 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_EventScript_Trigger_Text_2, MSGBOX_AUTOCLOSE
-# 132 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 133 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_EventScript_Trigger_Text_3, MSGBOX_AUTOCLOSE
-# 134 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_EventScript_Trigger_Text_4, MSGBOX_AUTOCLOSE
-# 135 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 136 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_Text_Asak3, MSGBOX_AUTOCLOSE
-# 137 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 138 "data/maps/EverGrandeCity/scripts.pory"
+# 99 "data/maps/EverGrandeCity/scripts.pory"
+	clearflag FLAG_HIDE_BENNIS_VICTORY_ROAD
+# 100 "data/maps/EverGrandeCity/scripts.pory"
+	addobject 3
+# 101 "data/maps/EverGrandeCity/scripts.pory"
+	addobject 2
+# 102 "data/maps/EverGrandeCity/scripts.pory"
+	addobject 1
+# 103 "data/maps/EverGrandeCity/scripts.pory"
 	playbgm MUS_NONE, FALSE
-# 139 "data/maps/EverGrandeCity/scripts.pory"
-	delay 10
-# 140 "data/maps/EverGrandeCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 141 "data/maps/EverGrandeCity/scripts.pory"
-	removeobject 1
-# 142 "data/maps/EverGrandeCity/scripts.pory"
-	removeobject 2
-# 143 "data/maps/EverGrandeCity/scripts.pory"
-	removeobject 3
-# 144 "data/maps/EverGrandeCity/scripts.pory"
-	setflag FLAG_HIDE_BENNIS_VICTORY_ROAD
-# 145 "data/maps/EverGrandeCity/scripts.pory"
-	setvar VAR_BENNIS_DOJO_STATE, 4
-# 146 "data/maps/EverGrandeCity/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 3
-# 147 "data/maps/EverGrandeCity/scripts.pory"
+# 104 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_EventScript_Trigger_Text_0, MSGBOX_AUTOCLOSE
+# 106 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 107 "data/maps/EverGrandeCity/scripts.pory"
+	playbgm MUS_BENNIS_DOJO, TRUE
+# 108 "data/maps/EverGrandeCity/scripts.pory"
 	delay 20
+# 109 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 3, EverGrandeCity_Movement_BennisFollower
+# 110 "data/maps/EverGrandeCity/scripts.pory"
+	delay 20
+# 111 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 2, EverGrandeCity_Movement_BennisFollower
+# 112 "data/maps/EverGrandeCity/scripts.pory"
+	delay 20
+# 113 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 1, EverGrandeCity_Movement_BennisFollower
+# 114 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 1
+# 115 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_Asak1, MSGBOX_AUTOCLOSE
+# 116 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 117 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_EventScript_Trigger_Text_1, MSGBOX_AUTOCLOSE
+# 118 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 119 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 2, Common_Movement_FaceLeft
+# 120 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 2
+# 121 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_Asak2, MSGBOX_AUTOCLOSE
+# 122 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 123 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 2, Common_Movement_FaceDown
+# 124 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 2
+# 125 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 1, EverGrandeCity_Movement_BennisRight
+# 126 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 1
+# 127 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_Bennis1, MSGBOX_AUTOCLOSE
+# 128 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 129 "data/maps/EverGrandeCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_BENNIS_3, EverGrandeCity_BennisDefeat
+# 130 "data/maps/EverGrandeCity/scripts.pory"
+	lockall
+# 131 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_EventScript_Trigger_Text_2, MSGBOX_AUTOCLOSE
+# 133 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 134 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_EventScript_Trigger_Text_3, MSGBOX_AUTOCLOSE
+# 135 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_EventScript_Trigger_Text_4, MSGBOX_AUTOCLOSE
+# 136 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 137 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_Asak3, MSGBOX_AUTOCLOSE
+# 138 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 139 "data/maps/EverGrandeCity/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 140 "data/maps/EverGrandeCity/scripts.pory"
+	delay 10
+# 141 "data/maps/EverGrandeCity/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 142 "data/maps/EverGrandeCity/scripts.pory"
+	removeobject 1
+# 143 "data/maps/EverGrandeCity/scripts.pory"
+	removeobject 2
+# 144 "data/maps/EverGrandeCity/scripts.pory"
+	removeobject 3
+# 145 "data/maps/EverGrandeCity/scripts.pory"
+	playse SE_FLEE
+# 146 "data/maps/EverGrandeCity/scripts.pory"
+	setflag FLAG_HIDE_BENNIS_VICTORY_ROAD
+# 147 "data/maps/EverGrandeCity/scripts.pory"
+	setvar VAR_BENNIS_DOJO_STATE, 4
 # 148 "data/maps/EverGrandeCity/scripts.pory"
-	fadedefaultbgm
+	playse SE_FLEE
 # 149 "data/maps/EverGrandeCity/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 3
+# 150 "data/maps/EverGrandeCity/scripts.pory"
+	delay 20
+# 151 "data/maps/EverGrandeCity/scripts.pory"
+	fadedefaultbgm
+# 152 "data/maps/EverGrandeCity/scripts.pory"
 	releaseall
 	end
 
 
-# 153 "data/maps/EverGrandeCity/scripts.pory"
+# 156 "data/maps/EverGrandeCity/scripts.pory"
 EverGrandeCity_Movement_BennisFollower:
-# 154 "data/maps/EverGrandeCity/scripts.pory"
+# 157 "data/maps/EverGrandeCity/scripts.pory"
 	walk_down
-# 154 "data/maps/EverGrandeCity/scripts.pory"
+# 157 "data/maps/EverGrandeCity/scripts.pory"
 	walk_down
-# 154 "data/maps/EverGrandeCity/scripts.pory"
+# 157 "data/maps/EverGrandeCity/scripts.pory"
 	walk_down
-# 154 "data/maps/EverGrandeCity/scripts.pory"
+# 157 "data/maps/EverGrandeCity/scripts.pory"
 	walk_down
-# 154 "data/maps/EverGrandeCity/scripts.pory"
+# 157 "data/maps/EverGrandeCity/scripts.pory"
 	walk_down
 	step_end
 
-# 181 "data/maps/EverGrandeCity/scripts.pory"
-EverGrandeCity_Movement_BennisRight:
-# 182 "data/maps/EverGrandeCity/scripts.pory"
-	walk_down
-# 183 "data/maps/EverGrandeCity/scripts.pory"
-	walk_right
 # 184 "data/maps/EverGrandeCity/scripts.pory"
+EverGrandeCity_Movement_BennisRight:
+# 185 "data/maps/EverGrandeCity/scripts.pory"
+	walk_down
+# 186 "data/maps/EverGrandeCity/scripts.pory"
+	walk_right
+# 187 "data/maps/EverGrandeCity/scripts.pory"
 	face_down
 	step_end
+
+EverGrandeCity_EventScript_Nurse::
+# 191 "data/maps/EverGrandeCity/scripts.pory"
+	lock
+# 192 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 4, Common_Movement_FacePlayer
+# 193 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 4
+# 194 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_Nurse, MSGBOX_AUTOCLOSE
+# 195 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 196 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 197 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_Nurse2, MSGBOX_AUTOCLOSE
+# 198 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 4, Common_Movement_FaceOriginalDirection
+# 199 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 4
+# 200 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 201 "data/maps/EverGrandeCity/scripts.pory"
+	release
+	end
+
 
 EverGrandeCity_EventScript_Trigger_Text_0:
 # 46 "data/maps/EverGrandeCity/scripts.pory"
@@ -328,21 +360,29 @@ EverGrandeCity_EventScript_Trigger_Text_4:
 	.string "PANINI: P-Panini...$"
 
 EverGrandeCity_Text_Asak1::
-# 157 "data/maps/EverGrandeCity/scripts.pory"
+# 160 "data/maps/EverGrandeCity/scripts.pory"
 	.string "ASAK: This time for sure!\n MASTER BENNIS will finally regain\l his honor.$"
 
 EverGrandeCity_Text_Asak2::
-# 163 "data/maps/EverGrandeCity/scripts.pory"
+# 166 "data/maps/EverGrandeCity/scripts.pory"
 	.string "ASAK: Now, MASTER BENNIS!$"
 
 EverGrandeCity_Text_Bennis1::
-# 167 "data/maps/EverGrandeCity/scripts.pory"
+# 170 "data/maps/EverGrandeCity/scripts.pory"
 	.string "MASTER BENNIS: Oho. I'm gettin' good\n vibrations from this place.$"
 
 EverGrandeCity_BennisDefeat::
-# 172 "data/maps/EverGrandeCity/scripts.pory"
+# 175 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Everyone's so mean to me...$"
 
 EverGrandeCity_Text_Asak3::
-# 176 "data/maps/EverGrandeCity/scripts.pory"
+# 179 "data/maps/EverGrandeCity/scripts.pory"
 	.string "ASAK: Kuh.... W-We won't...\n ... Forget...$"
+
+EverGrandeCity_Text_Nurse::
+# 205 "data/maps/EverGrandeCity/scripts.pory"
+	.string "You and your POKéMON look tired.\n Please, take a quick break.$"
+
+EverGrandeCity_Text_Nurse2::
+# 210 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Please come again.$"

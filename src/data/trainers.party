@@ -4312,22 +4312,77 @@ Jolly Nature
 - Rage Fist  
 - Dynamic Punch  
 
-=== TRAINER_CAMERON_2 === /* FREE */
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
+=== TRAINER_JOMITHIUS_4 === /* FREE */
+Name: JAMES
+Class: Rival
+Pic: Emo
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Kadabra
-Level: 33
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Gigalith (M) @ Custap Berry  
+Ability: Sturdy  
+Level: 50  
+Shiny: Yes    
+EVs: 244 HP / 252 Atk / 12 SpD  
+Adamant Nature  
+- Stealth Rock  
+- Earthquake  
+- Stone Edge  
+- Explosion  
 
-Solrock
-Level: 33
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Grimmsnarl @ Light Clay  
+Ability: Prankster  
+Level: 50    
+EVs: 252 HP / 4 Def / 252 SpD  
+Careful Nature  
+IVs: 0 Atk  
+- Reflect  
+- Light Screen  
+- Foul Play  
+- Thunder Wave  
+
+Staraptor @ Heavy-Duty Boots  
+Ability: Reckless  
+Level: 50    
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Brave Bird  
+- Double-Edge  
+- Defog  
+- Roost  
+
+Electivire (M) @ Air Balloon  
+Ability: Motor Drive  
+Level: 50   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Bulk Up  
+- Supercell Slam  
+- Cross Chop  
+- Trailblaze  
+
+Typhlosion-Hisui (M) @ Choice Scarf  
+Ability: Blaze  
+Level: 50  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk / 30 Def  
+- Eruption  
+- Focus Blast  
+- Infernal Parade  
+- Hidden Power  
+
+Garchomp (M) @ Garchompite  
+Ability: Rough Skin  
+Level: 50    
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Scale Shot  
+- Earthquake  
+- Iron Head  
 
 === TRAINER_CAMERON_3 === /* FREE */
 Name: CAMERON
@@ -11236,15 +11291,15 @@ Timid Nature
 - Defog  
 - Roost  
 
-Drilbur (M) @ Soft Sand  
-Ability: Mold Breaker  
+Gabite (M) @ Dragon Fang  
+Ability: Rough Skin  
 Level: 26  
-EVs: 244 HP / 244 Atk / 4 Def / 12 SpD  
-Adamant Nature  
-- Drill Run  
-- Brick Break  
-- Swords Dance  
-- Rapid Spin  
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- Bulldoze  
+- Dig  
+- Dual Chop  
+- Rock Slide 
 
 Morgrem @ Eviolite  
 Ability: Prankster  
@@ -12195,15 +12250,16 @@ Impish Nature
 - Stone Edge  
 - Iron Head  
 
-Excadrill (M) @ Soft Sand  
-Ability: Mold Breaker  
-Level: 37    
-EVs: 252 Atk / 4 SpD / 252 Spe  
+Gabite (M) @ Soft Sand  
+Ability: Rough Skin 
+Level: 37  
+Tera Type: Dragon  
+EVs: 248 Atk / 12 SpD / 248 Spe  
 Jolly Nature  
-- Swords Dance  
-- Iron Head  
-- High Horsepower  
+- Dragon Claw  
+- Bulldoze  
 - Rock Slide  
+- Iron Head 
 
 Emolga (F) @ Heavy-Duty Boots  
 Ability: Static  
@@ -12218,8 +12274,7 @@ IVs: 0 Atk
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
-Level: 38  
-Tera Type: Water  
+Level: 38   
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Icicle Spear  
