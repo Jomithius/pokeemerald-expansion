@@ -306,7 +306,7 @@
 #define FLAG_RECEIVED_SOFT_SAND              0x118
 #define FLAG_ENABLE_PROF_BIRCH_MATCH_CALL    0x119
 #define FLAG_RECEIVED_CLEANSE_TAG            0x11A
-#define FLAG_RECEIVED_FOCUS_BAND             0x11B
+#define FLAG_RECEIVED_CHOICE_BAND            0x11B
 #define FLAG_DECLINED_WALLY_BATTLE_MAUVILLE  0x11C
 #define FLAG_RECEIVED_DEVON_SCOPE            0x11D
 #define FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE  0x11E
@@ -1133,7 +1133,7 @@
 #define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_DRAGON_CLAW                0x438
 #define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439
 #define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_RARE_CANDY                  0x43A
-#define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_ICE_HEAL                   0x43B
+#define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_TM_ICE_BEAM                0x43B
 #define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
 #define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
 #define FLAG_ITEM_VICTORY_ROAD_B1F_TM_PSYCHIC                       0x43E
@@ -1148,7 +1148,7 @@
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_1F_HARBOR_MAIL               0x447
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE              0x448
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_B1F_DIVE_BALL              0x449
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_TM_ICE_BEAM              0x44A
+#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_RARE_CANDY               0x44A
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_1F_REVIVE                  0x44B
 #define FLAG_ITEM_ABANDONED_SHIP_CAPTAINS_OFFICE_STORAGE_KEY        0x44C
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_3_WATER_STONE    0x44D
@@ -1248,7 +1248,7 @@
 #define FLAG_HIDE_DACA_RUSTURF_PEAK                                 0x4AA // Rusturf Peak
 #define FLAG_RUSTURF_GALVANTULA                                     0x4AB // Rusturf 3F
 #define FLAG_RUSTURF_ARIADOS                                        0x4AC // Rusturf 3F
-#define FLAG_HIDE_DUGTRIO_POOBLES                                   0x4AD // Poobles Post Game Rematch
+#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_ROUTE117_RECIEVED_LEFTOVERS                            0x4AE // From Misa
 #define FLAG_XION_HOUSE_LEAF_STONE                                  0x4AF // Xion's House in Verdanturf
 #define FLAG_RECIEVED_CHOICE_SCARF_XION                             0x4B0 // Xion's House in Verdanturf
@@ -1264,7 +1264,7 @@
 #define FLAG_HIDE_EMO_LILYCOVE                                      0x4BA // Rival Cutscene Lilycove
 #define FLAG_HIDE_LILYCOVE_RIVAL_POKEMON                            0x4BB // Rival Cutscene Lilycove
 #define FLAG_RECIEVED_RARE_CANDY_LILYCOVE_DEPT                      0x4BC // Misa Lilycove DEPT STORE
-#define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
+#define FLAG_HIDE_ARIA_SHOAL_CAVE                                   0x4BD // Aria Shoal Cave
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag

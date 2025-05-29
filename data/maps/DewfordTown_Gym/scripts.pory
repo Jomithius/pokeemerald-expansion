@@ -4,7 +4,6 @@ raw`DewfordTown_Gym_MapScripts::
 
 DewfordTown_Gym_OnTransition:
 	call DewfordTown_Gym_EventScript_SetFlashLevel
-    call DewfordTown_Gym_EventScript_HidePoobles
 	end
 
 DewfordTown_Gym_EventScript_SetFlashLevel::
@@ -439,14 +438,4 @@ script DewfordTown_Gym_EventScript_PooblesDugtrio{
     waitmessage
     release
     end
-}
-
-script DewfordTown_Gym_EventScript_HidePoobles{
-    if(flag(FLAG_SYS_GAME_CLEAR) == TRUE){
-        clearflag(FLAG_HIDE_DUGTRIO_POOBLES)
-    }
-    else{
-        setflag(FLAG_HIDE_DUGTRIO_POOBLES)
-    }
-    return
 }

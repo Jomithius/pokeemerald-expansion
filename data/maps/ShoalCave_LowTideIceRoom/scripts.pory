@@ -1,0 +1,213 @@
+raw`ShoalCave_LowTideIceRoom_MapScripts::
+	.byte 0
+
+`
+script ShoalCave_LowTideIceRoom_Trigger_Aria{
+    lock
+    playse(SE_M_DOUBLE_TEAM)
+    delay(20)
+    msgbox("They're swinging a sword.\n
+    It looks dangerous to approach them\l
+    from the front.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script ShoalCave_LowTideIceRoom_EventScript_Aria{
+    lock
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
+    playbgm(MUS_NONE, FALSE)
+    delay(20)
+    playse(SE_M_DOUBLE_TEAM)
+    msgbox("ARGH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_M_DOUBLE_TEAM)
+    msgbox("AAAARGH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    delay(40)
+    playse(SE_M_YAWN)
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
+    waitmovement(3)
+    msgbox("AH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadedefaultbgm
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
+    waitmovement(3)
+    msgbox(ShoalCave_LowTideIceRoom_Text_Aria1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaLeave)
+    removeobject(3)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    fadescreenspeed(FADE_FROM_BLACK, 2)
+    setflag(FLAG_HIDE_ARIA_SHOAL_CAVE)
+    setvar(VAR_MOMO_ARIA_STATE, 1)
+    release
+    end
+}
+
+script ShoalCave_LowTideIceRoom_EventScript_AriaPosition1{
+    if(var(VAR_TEMP_1) == DIR_SOUTH){
+        applymovement(3, ShoalCave_LowTideIceRoom_Movement_WalkBackDown)
+    }
+    elif(var(VAR_TEMP_1) == DIR_WEST){
+        applymovement(3, ShoalCave_LowTideIceRoom_Movement_WalkBackLeft)
+    }
+    else{
+        applymovement(3, ShoalCave_LowTideIceRoom_Movement_WalkBackRight)
+    }
+    return
+}
+
+script ShoalCave_LowTideIceRoom_EventScript_AriaPosition2{
+    if(var(VAR_TEMP_1) == DIR_SOUTH){
+        applymovement(3, Common_Movement_WalkUp)
+        waitmovement(3)
+        applymovement(3, Common_Movement_FaceUp)
+    }
+    elif(var(VAR_TEMP_1) == DIR_WEST){
+        applymovement(3, Common_Movement_WalkRight)
+        waitmovement(3)
+        applymovement(3, Common_Movement_FaceRight)
+    }
+    else{
+        applymovement(3, Common_Movement_WalkLeft)
+        waitmovement(3)
+        applymovement(3, Common_Movement_FaceLeft)
+    }
+    return
+}
+
+script ShoalCave_LowTideIceRoom_EventScript_AriaLeave{
+    if(var(VAR_TEMP_1) == DIR_SOUTH){
+        applymovement(3, ShoalCave_LowTideIceRoom_Movement_AriaLeaveUp)
+        delay(30)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        waitmovement(3)
+    }
+    elif(var(VAR_TEMP_1) == DIR_WEST){
+        applymovement(3, ShoalCave_LowTideIceRoom_Movement_AriaLeaveLeft)
+        delay(30)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        waitmovement(3)
+    }
+    else{
+        applymovement(3, ShoalCave_LowTideIceRoom_Movement_AriaLeaveRight)
+        delay(30)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        waitmovement(3)
+    }
+    return
+}
+
+// unused
+script ShoalCave_LowTideIceRoom_EventScript_AriaNorth{
+    lock
+    playbgm(MUS_NONE, FALSE)
+    delay(20)
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    delay(10)
+    playse(SE_M_YAWN)
+    msgbox("AH!", MSGBOX_AUTOCLOSE)
+    applymovement(3, ShoalCave_LowTideIceRoom_Movement_WalkBackUp)
+    waitmovement(3)
+    waitmessage
+    fadedefaultbgm
+    msgbox(ShoalCave_LowTideIceRoom_Text_Aria1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(3, Common_Movement_WalkDown)
+    waitmovement(3)
+    applymovement(3, ShoalCave_LowTideIceRoom_Movement_AriaLeaveNorth)
+    waitmovement(3)
+    removeobject(3)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    setflag(FLAG_HIDE_ARIA_SHOAL_CAVE)
+    release
+    end
+} 
+// unused
+
+text ShoalCave_LowTideIceRoom_Text_Aria1{
+    "You scared me!\n 
+    Who are you?\p
+    ...\n
+    Oh. A challenger?\p
+    I'm ARIA. LEADER of the MOSSDEEP\n
+    POKéMON GYM and PROTECTOR of\l
+    the SACRED BLADE.\p
+    ARIA: I can stop my training here.\n
+    Me and my knights shall await you\l
+    at the GYM."
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_WalkBackDown{
+    lock_facing_direction
+    walk_fast_down * 1
+    unlock_facing_direction
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_WalkBackLeft{
+    lock_facing_direction
+    walk_fast_left * 1
+    unlock_facing_direction
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_WalkBackRight{
+    lock_facing_direction
+    walk_fast_right * 1
+    unlock_facing_direction
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_AriaLeaveUp{
+    walk_left
+    walk_up * 4
+    walk_left * 2
+    walk_up * 4
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_AriaLeaveLeft{
+    walk_up * 4
+    walk_left * 3
+    walk_up * 4   
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_AriaLeaveRight{
+    walk_up * 2
+    walk_left 
+    walk_up * 2
+    walk_left * 2
+    walk_up * 4
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_WalkBackUp{
+    lock_facing_direction
+    walk_fast_up * 2
+    unlock_facing_direction
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_AriaLeaveNorth{
+    walk_left
+    walk_up * 3
+    walk_left * 2
+    walk_up * 4
+}
+
+movement ShoalCave_LowTideIceRoom_Movement_StopMovement{
+    disable_anim
+}

@@ -1893,65 +1893,63 @@ LilycoveCity_Movement_Emo:
 	walk_left
 # 998 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 999 "data/maps/LilycoveCity/scripts.pory"
-	face_up
 	step_end
 
-# 1002 "data/maps/LilycoveCity/scripts.pory"
+# 1001 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Movement_EmoLeave:
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1002 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
 	step_end
 
-# 1006 "data/maps/LilycoveCity/scripts.pory"
+# 1005 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Movement_WalkBackRight:
+# 1006 "data/maps/LilycoveCity/scripts.pory"
+	lock_facing_direction
 # 1007 "data/maps/LilycoveCity/scripts.pory"
-	lock_facing_direction
-# 1008 "data/maps/LilycoveCity/scripts.pory"
 	walk_right
-# 1009 "data/maps/LilycoveCity/scripts.pory"
+# 1008 "data/maps/LilycoveCity/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 1012 "data/maps/LilycoveCity/scripts.pory"
+# 1011 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Movement_WalkBackLeft:
+# 1012 "data/maps/LilycoveCity/scripts.pory"
+	lock_facing_direction
 # 1013 "data/maps/LilycoveCity/scripts.pory"
-	lock_facing_direction
-# 1014 "data/maps/LilycoveCity/scripts.pory"
 	walk_left
-# 1015 "data/maps/LilycoveCity/scripts.pory"
+# 1014 "data/maps/LilycoveCity/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 1018 "data/maps/LilycoveCity/scripts.pory"
+# 1017 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Movement_WalkBackUp:
-# 1019 "data/maps/LilycoveCity/scripts.pory"
+# 1018 "data/maps/LilycoveCity/scripts.pory"
 	lock_facing_direction
-# 1020 "data/maps/LilycoveCity/scripts.pory"
+# 1019 "data/maps/LilycoveCity/scripts.pory"
 	walk_up
-# 1021 "data/maps/LilycoveCity/scripts.pory"
+# 1020 "data/maps/LilycoveCity/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 1024 "data/maps/LilycoveCity/scripts.pory"
+# 1023 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Movement_EnterPokeball:
-# 1025 "data/maps/LilycoveCity/scripts.pory"
+# 1024 "data/maps/LilycoveCity/scripts.pory"
 	enter_pokeball
 	step_end
 
