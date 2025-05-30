@@ -248,8 +248,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
-      "x": 16,
-      "y": 23,
+      "x": 15,
+      "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -506,6 +506,42 @@
       "var": "VAR_MISA_STATE",
       "var_value": "7",
       "script": "LilycoveCity_EventScript_EmoBully"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "7",
+      "script": "LilycoveCity_EventScript_RatCaveShake"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "7",
+      "script": "LilycoveCity_EventScript_RatCaveShake"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "7",
+      "script": "LilycoveCity_EventScript_RatCaveShake"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "7",
+      "script": "LilycoveCity_EventScript_RatCaveShake"
     }
   ],
   "bg_events": [

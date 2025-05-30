@@ -1953,6 +1953,42 @@ LilycoveCity_Movement_EnterPokeball:
 	enter_pokeball
 	step_end
 
+LilycoveCity_EventScript_RatCaveShake::
+# 1028 "data/maps/LilycoveCity/scripts.pory"
+	lockall
+# 1029 "data/maps/LilycoveCity/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 1030 "data/maps/LilycoveCity/scripts.pory"
+	delay 40
+# 1031 "data/maps/LilycoveCity/scripts.pory"
+	setvar VAR_0x8004, 2
+# 1032 "data/maps/LilycoveCity/scripts.pory"
+	setvar VAR_0x8005, 6
+# 1033 "data/maps/LilycoveCity/scripts.pory"
+	setvar VAR_0x8006, 8
+# 1034 "data/maps/LilycoveCity/scripts.pory"
+	setvar VAR_0x8007, 4
+# 1035 "data/maps/LilycoveCity/scripts.pory"
+	special ShakeCamera
+# 1036 "data/maps/LilycoveCity/scripts.pory"
+	waitstate
+# 1037 "data/maps/LilycoveCity/scripts.pory"
+	delay 60
+# 1038 "data/maps/LilycoveCity/scripts.pory"
+	special ShakeCamera
+# 1039 "data/maps/LilycoveCity/scripts.pory"
+	waitstate
+# 1040 "data/maps/LilycoveCity/scripts.pory"
+	delay 60
+# 1041 "data/maps/LilycoveCity/scripts.pory"
+	fadedefaultbgm
+# 1042 "data/maps/LilycoveCity/scripts.pory"
+	setvar VAR_RAT_CAVE_STATE, 8
+# 1043 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
 LilycoveCity_EventScript_EmoBully_Text_0:
 # 799 "data/maps/LilycoveCity/scripts.pory"
 	.string "What was that?!$"

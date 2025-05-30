@@ -4385,39 +4385,140 @@ Jolly Nature
 - Earthquake  
 - Iron Head  
 
-=== TRAINER_CAMERON_3 === /* FREE */
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
+=== TRAINER_RATDUARDO_3 ===
+Name: RATDUARDO
+Class: Rat Maniac
+Pic: Ratduardo
 Gender: Male
-Music: Intense
+Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Mugshot: Green
 
-Kadabra
-Level: 38
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Togedemaru (M) @ Terrain Extender  
+Ability: Iron Barbs  
+Level: 34    
+EVs: 240 HP / 12 Atk / 252 Spe  
+Jolly Nature  
+- Spiky Shield  
+- Reflect  
+- Nuzzle  
+- Electric Terrain  
 
-Solrock
-Level: 38
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Raticate-Alola-Totem (M) @ Sitrus Berry  
+Ability: Thick Fat  
+Level: 36    
+EVs: 244 HP / 252 Atk / 4 SpD / 4 Spe  
+Adamant Nature  
+- Bulk Up  
+- Hyper Fang  
+- Crunch  
+- Zen Headbutt  
 
-=== TRAINER_CAMERON_4 === /* FREE */
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
+Marill (F) @ Sitrus Berry  
+Ability: Huge Power  
+Level: 34   
+EVs: 248 HP / 248 Atk / 8 SpD / 4 Spe  
+Adamant Nature  
+- Aqua Jet  
+- Liquidation  
+- Ice Spinner  
+- Play Rough  
+
+Morpeko (F) @ Leftovers  
+Ability: Hunger Switch  
+Level: 36   
+EVs: 252 Atk / 4 SpD / 248 Spe  
+Jolly Nature  
+- Fake Out  
+- Crunch  
+- Aura Wheel  
+- Quick Attack  
+
+Raticate (M) @ Flame Orb  
+Ability: Guts  
+Level: 36   
+EVs: 4 HP / 252 Atk / 248 Spe  
+Jolly Nature  
+- Crunch  
+- Quick Attack  
+- Super Fang  
+- Facade  
+
+Raichu-Alola  
+Ability: Surge Surfer  
+Level: 36  
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Alluring Voice  
+- Discharge  
+- Expanding Force  
+- Rising Voltage  
+
+=== TRAINER_MAE_2 ===
+Name: MAE
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Mugshot: Pink
 
-Kadabra
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Psyduck (F) @ Eviolite  
+Ability: Cloud Nine  
+Level: 37    
+EVs: 244 HP / 244 SpA / 20 SpD  
+Sassy Nature  
+IVs: 0 Atk  
+- Surf  
+- Psychic  
+- Yawn  
+- Ice Beam  
 
-Solrock
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Flareon (F) @ Toxic Orb  
+Ability: Guts  
+Level: 36   
+EVs: 248 Atk / 8 SpD / 248 Spe  
+Sassy Nature  
+- Flame Charge  
+- Trailblaze  
+- Iron Tail  
+- Fire Fang  
+
+Nidoqueen @ Life Orb  
+Ability: Sheer Force  
+Level: 36   
+EVs: 4 HP / 4 Def / 244 SpA / 8 SpD / 248 Spe  
+Sassy Nature  
+IVs: 0 Atk  
+- Scorching Sands  
+- Sludge Bomb  
+- Toxic Spikes  
+- Thunderbolt  
+
+Tsareena @ Leftovers  
+Ability: Queenly Majesty  
+Level: 36    
+EVs: 248 HP / 252 Atk / 4 Def / 4 SpD  
+Sassy Nature  
+- Acupressure  
+- Trop Kick  
+- High Jump Kick  
+- Payback  
+
+Froslass @ Focus Sash  
+Ability: Cursed Body  
+Level: 36   
+EVs: 248 SpA / 8 SpD / 252 Spe  
+Sassy Nature  
+IVs: 0 Atk  
+- Destiny Bond  
+- Ice Beam  
+- Will-O-Wisp  
+- Hex  
+
 
 === TRAINER_CAMERON_5 === /* FREE */
 Name: CAMERON
@@ -6479,7 +6580,7 @@ Jolly Nature
 - Super Fang  
 - Hyper Fang  
 
-Raticate  
+Raticate (M)
 Ability: Hustle  
 Level: 27  
 Tera Type: Normal  
@@ -6490,7 +6591,7 @@ Jolly Nature
 - Quick Attack  
 - U-turn  
 
-Raticate-Alola-Totem  
+Raticate-Alola-Totem (M)
 Ability: Thick Fat  
 Level: 27  
 Tera Type: Dark  
@@ -17855,7 +17956,7 @@ Level: 15
 - Quick Attack  
 - Bite
 
-Raticate @ Oran Berry  
+Raticate (M) @ Oran Berry  
 Ability: Hustle  
 EVs: 80 Atk / 152 Spe  
 Level: 16  
@@ -17863,7 +17964,7 @@ Level: 16
 - Quick Attack  
 - Headbutt
 
-Raticate-Alola @ Oran Berry  
+Raticate-Alola-Totem (M) @ Oran Berry  
 Ability: Thick Fat 
 Level: 18  
 EVs: 20 Atk / 152 Spe  

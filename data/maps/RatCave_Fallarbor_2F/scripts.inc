@@ -98,7 +98,7 @@ Fallarbor_RatCave_Rock::
 # 68 "data/maps/RatCave_Fallarbor_2F/scripts.pory"
 	lock
 # 69 "data/maps/RatCave_Fallarbor_2F/scripts.pory"
-	msgbox Fallarbor_RatCave_Rock_Text_0
+	msgbox Fallarbor_RatCave_Rock_Text_0, MSGBOX_AUTOCLOSE
 # 71 "data/maps/RatCave_Fallarbor_2F/scripts.pory"
 	waitmessage
 # 72 "data/maps/RatCave_Fallarbor_2F/scripts.pory"

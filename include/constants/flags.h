@@ -1237,7 +1237,7 @@
 #define FLAG_BENNIS_DOJO_1                                          0x49F // Bennis First Cutscene
 #define FLAG_SLATEPORT_MAE_BATTLE                                   0x4A0 // Mae First Battle
 #define FLAG_HIDE_RUSTBORO_MISA_OUTSIDE                             0x4A1 // Misa First Cutscene
-#define FLAG_RIVAL_EMO_DINNER                                       0x4A2 // After First New Rival Battle, in Misa's house
+#define FLAG_HIDE_RIVAL_ROUTE115                                    0x4A2 // After First New Rival Battle, in Misa's house
 #define FLAG_HIDE_MISA_ROUTE115                                     0x4A3 // For Rival Cutscene
 #define FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE                           0x4A4 // For post Rival
 #define FLAG_HIDE_PETALBURG_CITY_LUNA                               0x4A5 // For Ratduardo Sidequest
@@ -1269,8 +1269,8 @@
 #define FLAG_HIDE_RIVAL_EVERGRANDE_CITY                             0x4BF // James Battle Evergrande City
 #define FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY                     0x4C0 // James Pokemon Evergrande City
 #define FLAG_HIDE_JAMES_RUSTBORO_CITY                               0x4C1 // James Rustboro City after final Rival Battle
-#define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
-#define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
+#define FLAG_HIDE_RATDUARDO_LILYCOVE                                0x4C2 // Ratduardo Lilycove Rat Cave
+#define FLAG_HIDE_LILYCOVE_MAE                                      0x4C3 // Mae Lilycove
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
 #define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
 #define FLAG_UNUSED_0x4C6                                           0x4C6 // Unused Flag

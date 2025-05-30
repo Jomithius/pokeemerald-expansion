@@ -67,7 +67,7 @@ script FallarborRatCaveShake{
 script Fallarbor_RatCave_Rock {
     lock
     msgbox("Doesn't look like the cave in \n
-    can be cleared anytime soon.")
+    can be cleared anytime soon.", MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end

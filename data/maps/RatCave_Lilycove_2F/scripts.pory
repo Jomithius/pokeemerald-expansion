@@ -1,0 +1,60 @@
+mapscripts RatCave_Lilycove_2F_MapScripts {}
+
+script LilycoveCity_RatCave_Rock {
+    lock
+    msgbox("Doesn't look like the cave in \n
+    can be cleared anytime soon.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script RatCave_LilycoveCity_2F_EventScript_Ratduardo{
+    lockall
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    trainerbattle_no_intro(TRAINER_RATDUARDO_3, RatCave_LilycoveCity_2F_Text_RatduardoDefeat)
+    call(RatCave_LilycoveCity_2F_BattleOver)
+    call(LilycoveCityRatCaveShake)
+    releaseall
+    end
+}
+
+text RatCave_LilycoveCity_2F_Text_RatduardoIntro{
+    "...!"
+}
+
+text RatCave_LilycoveCity_2F_Text_RatduardoDefeat{
+    "I... just.. want to be...\n
+    free..."
+}
+
+script RatCave_LilycoveCity_2F_BattleOver{
+    lockall
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    setflag(FLAG_HIDE_RATDUARDO_LILYCOVE)
+    return
+}
+
+script LilycoveCityRatCaveShake{
+    delay (30)
+    setvar(VAR_0x8004, 2) // vertical pan
+    setvar(VAR_0x8005, 6) // horizontal pan
+    setvar(VAR_0x8006, 8) // num shakes
+    setvar(VAR_0x8007, 4) // shake delay
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    return
+}
+

@@ -284,7 +284,7 @@ script Route115_EventScript_Trigger_RivalEmo{
     delay(60)
     savebgm(MUS_DUMMY)
 	fadedefaultbgm
-    setflag(FLAG_RIVAL_EMO_DINNER)
+    setflag(FLAG_HIDE_RIVAL_ROUTE115)
     setflag(FLAG_HIDE_MISA_ROUTE115)
     setvar(VAR_MISA_STATE, 2)
     releaseall

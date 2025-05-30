@@ -1023,3 +1023,23 @@ movement LilycoveCity_Movement_WalkBackUp{
 movement LilycoveCity_Movement_EnterPokeball{
     enter_pokeball
 }
+
+script LilycoveCity_EventScript_RatCaveShake{
+    lockall
+    playbgm(MUS_NONE, FALSE)
+    delay (40)
+    setvar(VAR_0x8004, 2) // vertical pan
+    setvar(VAR_0x8005, 6) // horizontal pan
+    setvar(VAR_0x8006, 8) // num shakes
+    setvar(VAR_0x8007, 4) // shake delay
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    fadedefaultbgm
+    setvar(VAR_RAT_CAVE_STATE, 8)
+    release
+    end
+}

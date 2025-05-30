@@ -1210,3 +1210,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LilycoveCity_House5/scripts.inc"
 
 	.include "data/maps/LilycoveCity_House5_Basement/scripts.inc"
+
+	.include "data/maps/RatCave_Lilycove_1F/scripts.inc"
+
+	.include "data/maps/RatCave_Lilycove_2F/scripts.inc"

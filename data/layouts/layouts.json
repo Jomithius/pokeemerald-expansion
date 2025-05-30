@@ -4690,6 +4690,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/LilycoveCity_House5_Basement/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_House5_Basement/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_LILYCOVE_1F",
+      "name": "RatCave_Lilycove_1F_Layout",
+      "width": 23,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_Lilycove_1F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_Lilycove_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_LILYCOVE_2F",
+      "name": "RatCave_Lilycove_2F_Layout",
+      "width": 21,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_Lilycove_2F/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_Lilycove_2F/map.bin"
     }
   ]
 }

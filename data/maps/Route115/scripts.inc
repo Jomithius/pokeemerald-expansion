@@ -559,7 +559,7 @@ Route115_EventScript_Trigger_RivalEmo::
 # 286 "data/maps/Route115/scripts.pory"
 	fadedefaultbgm
 # 287 "data/maps/Route115/scripts.pory"
-	setflag FLAG_RIVAL_EMO_DINNER
+	setflag FLAG_HIDE_RIVAL_ROUTE115
 # 288 "data/maps/Route115/scripts.pory"
 	setflag FLAG_HIDE_MISA_ROUTE115
 # 289 "data/maps/Route115/scripts.pory"

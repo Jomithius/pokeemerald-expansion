@@ -1,0 +1,249 @@
+raw`LilycoveCity_DepartmentStore_2F_MapScripts::
+	.byte 0
+
+LilycoveCity_DepartmentStore_2F_EventScript_Cook::
+	msgbox LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_2F_EventScript_PokefanF::
+	msgbox LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_2F_EventScript_Sailor::
+	msgbox LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_2F_EventScript_ClerkLeft::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_2F_Pokemart1
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_2F_Pokemart1:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_AWAKENING
+	.2byte ITEM_FLUFFY_TAIL
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_2F_Pokemart2
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_2F_Pokemart2:
+	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_REVIVE
+	.2byte ITEM_REPEL
+	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_WAVE_MAIL
+	.2byte ITEM_MECH_MAIL
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly:
+	.string "Learn to use items properly.\n"
+	.string "That's basic, really.$"
+
+LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband:
+	.string "My husband is waiting at home.\n"
+	.string "What would make a good gift for him?$"
+
+LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
+	.string "I'm leaving on a long journey soon.\n"
+	.string "I need to stock up on items.$"
+
+`
+
+script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
+    lock
+    msgbox(LilycoveCity_DepartmentStore_2F_Text_Mae1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(6, Common_Movement_ExclamationMark)
+    waitmovement(6)
+    applymovement(6, Common_Movement_FacePlayer)
+    waitmovement(6)
+    msgbox(LilycoveCity_DepartmentStore_2F_Text_Mae2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_MAE_2, LilycoveCity_DepartmentStore_2F_Text_MaeDefeat)
+    lock
+    playse(SE_PIN)
+    applymovement(1, LilycoveCity_DepartmentStore_2F_Movement_Cook1)
+    waitmovement(1)
+    msgbox("COOK: EXCUSE ME!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(6, Common_Movement_FaceUp)
+    delay(10)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook, MSGBOX_AUTOCLOSE)
+    waitmessage
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
+    if(var(VAR_TEMP_1) == DIR_SOUTH){
+        applymovement(3, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1)
+        delay(10)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        delay(10)
+        playse(SE_EXIT)
+        delay(10)
+        applymovement(4, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave1)
+        waitmovement(4)
+        playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
+        delay(20)
+        applymovement(4, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave2)
+        waitmovement(4)
+        playse(SE_EXIT)
+        delay(10)
+        playse(SE_BIKE_HOP)
+        applymovement(OBJ_EVENT_ID_PLAYER, SlateportConfused)
+        waitmovement(0)
+        applymovement(1, LilycoveCity_DepartmentStore_2F_Movement_Cook2)
+        waitmovement(1)
+        msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE)
+        waitmessage
+        removeobject(3)
+        removeobject(4)
+        setflag(FLAG_HIDE_LILYCOVE_MAE)
+    }
+    else{
+        applymovement(3, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
+        delay(10)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        delay(10)
+        playse(SE_EXIT)
+        delay(10)
+        applymovement(4, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave3)
+        waitmovement(4)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+        waitmovement(3)
+        playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
+        delay(20)
+        applymovement(4, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
+        waitmovement(4)
+        playse(SE_EXIT)
+        delay(10)
+        playse(SE_BIKE_HOP)
+        applymovement(OBJ_EVENT_ID_PLAYER, SlateportConfused)
+        waitmovement(0)
+        applymovement(1, LilycoveCity_DepartmentStore_2F_Movement_Cook2)
+        waitmovement(1)
+        msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE)
+        waitmessage
+        removeobject(3)
+        removeobject(4)
+        setflag(FLAG_HIDE_LILYCOVE_MAE)
+    }
+    release
+    end
+}
+
+text LilycoveCity_DepartmentStore_2F_Text_Mae1{
+    "MAE: OOOH YES!! THIS SLAYYYYS!"
+}
+
+text LilycoveCity_DepartmentStore_2F_Text_Mae2{
+    "You AGAIN? Why do you keep\n
+    getting in the way of my shopping?\p
+    I'm a diva and I deserve this!"
+}
+
+text LilycoveCity_DepartmentStore_2F_Text_MaeDefeat{
+    "Slay..."
+}
+
+text LilycoveCity_DepartmentStore_2F_Text_Cook{
+    "You can't battle in here!\n
+    Please leave!\p
+    MAE: Alright, whatever!\n
+    I'll shop somewhere else!"
+}
+
+text LilycoveCity_DepartmentStore_2F_Text_Cook2{
+    "COOK: Minimum wage to deal with\n
+    customers like this. Really?"
+}
+
+script LilycoveCity_DepartmentStore_2F_EventScript_Psyduck {
+    lock
+    applymovement(7, Common_Movement_FacePlayer)
+    waitmovement(7)
+    delay(30)
+    playse(SE_BIKE_HOP)
+    applymovement(7, LilycoveConfused)
+    waitmovement(7)
+    delay(10)
+    playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
+	msgbox("PSYDUCK: Psy?" MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+	end
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_Cook1{
+    walk_fast_left * 4
+    walk_fast_down * 1
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1{
+    walk_right
+    walk_up
+    walk_right * 7
+    walk_up
+    walk_right * 2
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave1{
+    walk_right
+    walk_up * 2
+    face_player
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave2{
+    walk_right * 7
+    walk_up
+    walk_right * 2
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_Cook2{
+    walk_up
+    walk_right * 4
+    face_original_direction
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2{
+    walk_up
+    walk_right * 8
+    walk_up
+    walk_right * 2
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave3{
+    walk_up
+    face_player
+}
+
+movement LilycoveConfused{
+    emote_question_mark
+}

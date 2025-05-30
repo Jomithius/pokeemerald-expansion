@@ -243,8 +243,8 @@
 #define TRAINER_JOSHUA                      237
 #define TRAINER_BENNIS_3                    238
 #define TRAINER_JOMITHIUS_4                 239
-#define TRAINER_CAMERON_3                   240
-#define TRAINER_CAMERON_4                   241
+#define TRAINER_RATDUARDO_3                 240
+#define TRAINER_MAE_2                       241
 #define TRAINER_CAMERON_5                   242
 #define TRAINER_JACLYN                      243
 #define TRAINER_HANNAH                      244

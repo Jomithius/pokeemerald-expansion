@@ -1428,6 +1428,7 @@ script SlateportCity_EventScript_Mae {
     removeobject(36)
     removeobject(37)
     setflag(FLAG_SLATEPORT_MAE_BATTLE)
+	clearflag(FLAG_HIDE_LILYCOVE_MAE)
     release
 	end
 }

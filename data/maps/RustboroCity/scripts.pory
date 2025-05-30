@@ -12,8 +12,6 @@ RustboroCity_MapScripts::
 
 RustboroCity_OnTransition:
 	setflag FLAG_VISITED_RUSTBORO_CITY
-    setflag FLAG_HIDE_RUSTBORO_MISA_OUTSIDE
-    setflag FLAG_HIDE_MISA_ROUTE115
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
@@ -1387,6 +1385,7 @@ script MisaEnd{
 		removeobject(18)
 		delay(20)
 		setflag(FLAG_HIDE_RUSTBORO_MISA_OUTSIDE)
+		clearflag(FLAG_HIDE_RIVAL_ROUTE115)
 		setvar(VAR_MISA_STATE, 1)
 		return
 		
@@ -1408,6 +1407,7 @@ script MisaEnd{
 		removeobject(17)
 		delay(20)
 		setflag(FLAG_HIDE_RUSTBORO_MISA_OUTSIDE)
+		clearflag(FLAG_HIDE_RIVAL_ROUTE115)
 		setvar(VAR_MISA_STATE, 1)
 		return
 	}
