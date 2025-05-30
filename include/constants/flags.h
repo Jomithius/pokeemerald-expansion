@@ -1268,7 +1268,7 @@
 #define FLAG_HIDE_BENNIS_VICTORY_ROAD                               0x4BE // Bennis 3rd Battle
 #define FLAG_HIDE_RIVAL_EVERGRANDE_CITY                             0x4BF // James Battle Evergrande City
 #define FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY                     0x4C0 // James Pokemon Evergrande City
-#define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
+#define FLAG_HIDE_JAMES_RUSTBORO_CITY                               0x4C1 // James Rustboro City after final Rival Battle
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag

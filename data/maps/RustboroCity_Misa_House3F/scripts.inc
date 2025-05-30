@@ -134,15 +134,35 @@ NicknameBoxTogepi_2:
 	goto NicknameBoxTogepi_1
 
 
-# 91 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+RustboroCity_Misa_House3F_James::
+# 92 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	lock
+# 93 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	applymovement 3, MisaHouse3F_FacePlayer
+# 94 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	waitmovement 3
+# 95 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	msgbox RustboroCity_Misa_House3F_James_Text_0, MSGBOX_AUTOCLOSE
+# 98 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	waitmessage
+# 99 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	applymovement 3, MisaHouse3F_FaceUp
+# 100 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	waitmovement 3
+# 101 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	release
+	end
+
+
+# 105 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 MisaHouse3F_FacePlayer:
-# 91 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 105 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	face_player
 	step_end
 
-# 92 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 107 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 MisaHouse3F_FaceUp:
-# 92 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 107 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	face_up
 	step_end
 
@@ -169,6 +189,10 @@ RustboroCity_Misa_House3F_Togepi_Text_2:
 NicknamePartyTogepi_Text_0:
 # 66 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	.string "Would you like to nickname TOGEPI?$"
+
+RustboroCity_Misa_House3F_James_Text_0:
+# 95 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	.string "JAMES: {PLAYER}!\n I lost to you again, but we're\l gonna get even stronger.$"
 
 MisaHouse_NotChosen::
 # 86 "data/maps/RustboroCity_Misa_House3F/scripts.pory"

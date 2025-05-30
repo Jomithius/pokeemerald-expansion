@@ -211,22 +211,139 @@ text EverGrandeCity_Text_Nurse2{
     "Please come again."
 }
 
+script EverGrandeCity_EventTrigger_JamesLeft{
+    setvar(VAR_TEMP_1, 1)
+    goto(EverGrandeCity_EventScript_James)
+}
+
+script EverGrandeCity_EventTrigger_JamesRight{
+    setvar(VAR_TEMP_1, 2)
+    goto(EverGrandeCity_EventScript_James)
+}
+
 script EverGrandeCity_EventScript_James{
     lockall
-    playbgm(MUS_NONE, FALSE)
-    msgbox("I've been waiting for you.", MSGBOX_AUTOCLOSE)
+    playbgm(MUS_NONE, TRUE)
+    msgbox("???: I've been waiting for you.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(5, Common_Movement_WalkDown)
+    applymovement(5, Common_Movement_FaceDown)
     waitmovement(5)
     msgbox(EverGrandeCity_Text_James1, MSGBOX_AUTOCLOSE)
     waitmessage
-
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    addobject(6)
+    addobject(7)
+    fadescreenspeed(FADE_FROM_WHITE, 3)
+    playmoncry(SPECIES_TYPHLOSION_HISUI, CRY_MODE_ENCOUNTER)
+    delay(20)
+    playmoncry(SPECIES_GRIMMSNARL, CRY_MODE_ENCOUNTER)
+    delay(20)
+    msgbox(EverGrandeCity_Text_James2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(5, Common_Movement_WalkDown)
+    waitmovement(5)
+    if(var(VAR_TEMP_1) == 1){
+        applymovement(OBJ_EVENT_ID_PLAYER, EvergrandeCity_Movement_PlayerLeftTrigger)
+    }
+    elif(var(VAR_TEMP_1) == 2){
+        applymovement(OBJ_EVENT_ID_PLAYER, EvergrandeCity_Movement_PlayerRightTrigger)
+    }
+    else{
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    }
+    waitmovement(0)
+    trainerbattle_no_intro(TRAINER_JOMITHIUS_4, EvergrandeCity_JamesDefeat)
+    lockall
+    applymovement(6, EverGrandeCity_Movement_EnterPokeball)
+    waitmovement(6)
+    removeobject(6)
+    applymovement(7, EverGrandeCity_Movement_EnterPokeball)
+    waitmovement(7)
+    removeobject(7)
+    applymovement(5, Common_Movement_WalkUp)
+    waitmovement(5)
+    delay(30)
+    playbgm(MUS_END, FALSE)
+    msgbox(EverGrandeCity_Text_James3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(5, Common_Movement_WalkDown)
+    waitmovement(5)
+    msgbox(EverGrandeCity_Text_James4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    giveitem(ITEM_MEGA_RING)
+    waitmessage
+    msgbox(EverGrandeCity_Text_James5, MSGBOX_AUTOCLOSE)
+    waitmessage
+    setfieldeffectargument(0, 1)
+    dofieldeffect(FLDEFF_NPCFLY_OUT)
+    delay(15)
+    removeobject(5)
+    waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    setflag(FLAG_HIDE_RIVAL_EVERGRANDE_CITY)
+    setflag(FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY)
+    clearflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
+    setvar(VAR_MISA_STATE, 10)
+    fadedefaultbgm
+    releaseall
+    end
 }
 
 text EverGrandeCity_Text_James1{
-    ""
+    "JAMES: A lot changed from the last time\n
+    we met.\p
+    I heard what happened in SOOTOPOLIS.\n
+    That's must've been crazy.\p
+    At that time I was here.\n
+    Working on myself.\p
+    We overcame a lot during our training.\n
+    But there was one thing I still\l
+    never did:\p
+    Defeat you."
+}
+
+text EverGrandeCity_Text_James2{
+    "JAMES: One last time."
+}
+
+text EvergrandeCity_JamesDefeat{
+    "...\n
+    I guess it still wasn't enough."
+}
+
+text EverGrandeCity_Text_James3{
+    "JAMES: ...\n
+    It feels like I was somehow always\l
+    destined to lose you, {PLAYER}."}
+    
+text EverGrandeCity_Text_James4{
+    "Even so, I'm glad my Mom had me\n
+    go on this journey.\p
+    I won't challenge the ELITE FOUR yet.\n
+    But I know you're going to.\l
+    Here, take this."
+}
+
+text EverGrandeCity_Text_James5{
+    "The ELITE FOUR are strong.\n
+    Be careful.\p
+    {COLOR BLUE}{SHADOW LIGHT_BLUE} The level cap for the ELITE FOUR\n
+    is 75.\p
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: Well, I'm gonna go back home for now.\n
+    See ya, {PLAYER}."
 }
 
 movement EverGrandeCity_Movement_EnterPokeball{
     enter_pokeball
 }
+
+movement EvergrandeCity_Movement_PlayerLeftTrigger {
+    walk_right
+    walk_up
+}
+
+movement EvergrandeCity_Movement_PlayerRightTrigger {
+    walk_left
+    walk_up
+}
+

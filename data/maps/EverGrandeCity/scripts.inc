@@ -339,30 +339,175 @@ EverGrandeCity_EventScript_Nurse::
 	end
 
 
-EverGrandeCity_EventScript_James::
+EverGrandeCity_EventTrigger_JamesLeft::
 # 215 "data/maps/EverGrandeCity/scripts.pory"
-	lockall
+	setvar VAR_TEMP_1, 1
 # 216 "data/maps/EverGrandeCity/scripts.pory"
-	playbgm MUS_NONE, FALSE
-# 217 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_EventScript_James_Text_0, MSGBOX_AUTOCLOSE
-# 218 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
-# 219 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 5, Common_Movement_WalkDown
-# 220 "data/maps/EverGrandeCity/scripts.pory"
-	waitmovement 5
-# 221 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_Text_James1, MSGBOX_AUTOCLOSE
-# 222 "data/maps/EverGrandeCity/scripts.pory"
-	waitmessage
+	goto EverGrandeCity_EventScript_James
 	return
 
 
+EverGrandeCity_EventTrigger_JamesRight::
+# 220 "data/maps/EverGrandeCity/scripts.pory"
+	setvar VAR_TEMP_1, 2
+# 221 "data/maps/EverGrandeCity/scripts.pory"
+	goto EverGrandeCity_EventScript_James
+	return
+
+
+EverGrandeCity_EventScript_James::
+# 225 "data/maps/EverGrandeCity/scripts.pory"
+	lockall
+# 226 "data/maps/EverGrandeCity/scripts.pory"
+	playbgm MUS_NONE, TRUE
+# 227 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_EventScript_James_Text_0, MSGBOX_AUTOCLOSE
+# 228 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 229 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 5, Common_Movement_FaceDown
 # 230 "data/maps/EverGrandeCity/scripts.pory"
-EverGrandeCity_Movement_EnterPokeball:
+	waitmovement 5
 # 231 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_James1, MSGBOX_AUTOCLOSE
+# 232 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 233 "data/maps/EverGrandeCity/scripts.pory"
+	playse SE_BALL_OPEN
+# 234 "data/maps/EverGrandeCity/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 235 "data/maps/EverGrandeCity/scripts.pory"
+	addobject 6
+# 236 "data/maps/EverGrandeCity/scripts.pory"
+	addobject 7
+# 237 "data/maps/EverGrandeCity/scripts.pory"
+	fadescreenspeed FADE_FROM_WHITE, 3
+# 238 "data/maps/EverGrandeCity/scripts.pory"
+	playmoncry SPECIES_TYPHLOSION_HISUI, CRY_MODE_ENCOUNTER
+# 239 "data/maps/EverGrandeCity/scripts.pory"
+	delay 20
+# 240 "data/maps/EverGrandeCity/scripts.pory"
+	playmoncry SPECIES_GRIMMSNARL, CRY_MODE_ENCOUNTER
+# 241 "data/maps/EverGrandeCity/scripts.pory"
+	delay 20
+# 242 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_James2, MSGBOX_AUTOCLOSE
+# 243 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 244 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 5, Common_Movement_WalkDown
+# 245 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 5
+# 246 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_TEMP_1, 1
+	goto_if_eq EverGrandeCity_EventScript_James_2
+# 249 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_TEMP_1, 2
+	goto_if_eq EverGrandeCity_EventScript_James_3
+# 253 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+EverGrandeCity_EventScript_James_1:
+# 255 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 0
+# 256 "data/maps/EverGrandeCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_JOMITHIUS_4, EvergrandeCity_JamesDefeat
+# 257 "data/maps/EverGrandeCity/scripts.pory"
+	lockall
+# 258 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 6, EverGrandeCity_Movement_EnterPokeball
+# 259 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 6
+# 260 "data/maps/EverGrandeCity/scripts.pory"
+	removeobject 6
+# 261 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 7, EverGrandeCity_Movement_EnterPokeball
+# 262 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 7
+# 263 "data/maps/EverGrandeCity/scripts.pory"
+	removeobject 7
+# 264 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 5, Common_Movement_WalkUp
+# 265 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 5
+# 266 "data/maps/EverGrandeCity/scripts.pory"
+	delay 30
+# 267 "data/maps/EverGrandeCity/scripts.pory"
+	playbgm MUS_END, FALSE
+# 268 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_James3, MSGBOX_AUTOCLOSE
+# 269 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 270 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 5, Common_Movement_WalkDown
+# 271 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 5
+# 272 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_James4, MSGBOX_AUTOCLOSE
+# 273 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 274 "data/maps/EverGrandeCity/scripts.pory"
+	giveitem ITEM_MEGA_RING
+# 275 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 276 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_James5, MSGBOX_AUTOCLOSE
+# 277 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 278 "data/maps/EverGrandeCity/scripts.pory"
+	setfieldeffectargument 0, 1
+# 279 "data/maps/EverGrandeCity/scripts.pory"
+	dofieldeffect FLDEFF_NPCFLY_OUT
+# 280 "data/maps/EverGrandeCity/scripts.pory"
+	delay 15
+# 281 "data/maps/EverGrandeCity/scripts.pory"
+	removeobject 5
+# 282 "data/maps/EverGrandeCity/scripts.pory"
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+# 283 "data/maps/EverGrandeCity/scripts.pory"
+	setflag FLAG_HIDE_RIVAL_EVERGRANDE_CITY
+# 284 "data/maps/EverGrandeCity/scripts.pory"
+	setflag FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY
+# 285 "data/maps/EverGrandeCity/scripts.pory"
+	clearflag FLAG_HIDE_JAMES_RUSTBORO_CITY
+# 286 "data/maps/EverGrandeCity/scripts.pory"
+	setvar VAR_MISA_STATE, 10
+# 287 "data/maps/EverGrandeCity/scripts.pory"
+	fadedefaultbgm
+# 288 "data/maps/EverGrandeCity/scripts.pory"
+	releaseall
+	end
+
+EverGrandeCity_EventScript_James_2:
+# 247 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, EvergrandeCity_Movement_PlayerLeftTrigger
+	goto EverGrandeCity_EventScript_James_1
+
+EverGrandeCity_EventScript_James_3:
+# 250 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, EvergrandeCity_Movement_PlayerRightTrigger
+	goto EverGrandeCity_EventScript_James_1
+
+
+# 336 "data/maps/EverGrandeCity/scripts.pory"
+EverGrandeCity_Movement_EnterPokeball:
+# 337 "data/maps/EverGrandeCity/scripts.pory"
 	enter_pokeball
+	step_end
+
+# 340 "data/maps/EverGrandeCity/scripts.pory"
+EvergrandeCity_Movement_PlayerLeftTrigger:
+# 341 "data/maps/EverGrandeCity/scripts.pory"
+	walk_right
+# 342 "data/maps/EverGrandeCity/scripts.pory"
+	walk_up
+	step_end
+
+# 345 "data/maps/EverGrandeCity/scripts.pory"
+EvergrandeCity_Movement_PlayerRightTrigger:
+# 346 "data/maps/EverGrandeCity/scripts.pory"
+	walk_left
+# 347 "data/maps/EverGrandeCity/scripts.pory"
+	walk_up
 	step_end
 
 EverGrandeCity_EventScript_Trigger_Text_0:
@@ -386,8 +531,8 @@ EverGrandeCity_EventScript_Trigger_Text_4:
 	.string "PANINI: P-Panini...$"
 
 EverGrandeCity_EventScript_James_Text_0:
-# 217 "data/maps/EverGrandeCity/scripts.pory"
-	.string "I've been waiting for you.$"
+# 227 "data/maps/EverGrandeCity/scripts.pory"
+	.string "???: I've been waiting for you.$"
 
 EverGrandeCity_Text_Asak1::
 # 160 "data/maps/EverGrandeCity/scripts.pory"
@@ -418,5 +563,25 @@ EverGrandeCity_Text_Nurse2::
 	.string "Please come again.$"
 
 EverGrandeCity_Text_James1::
-# 226 "data/maps/EverGrandeCity/scripts.pory"
-	.string "$"
+# 292 "data/maps/EverGrandeCity/scripts.pory"
+	.string "JAMES: A lot changed from the last time\n we met.\p I heard what happened in SOOTOPOLIS.\n That's must've been crazy.\p At that time I was here.\n Working on myself.\p We overcame a lot during our training.\n But there was one thing I still\l never did:\p Defeat you.$"
+
+EverGrandeCity_Text_James2::
+# 305 "data/maps/EverGrandeCity/scripts.pory"
+	.string "JAMES: One last time.$"
+
+EvergrandeCity_JamesDefeat::
+# 309 "data/maps/EverGrandeCity/scripts.pory"
+	.string "...\n I guess it still wasn't enough.$"
+
+EverGrandeCity_Text_James3::
+# 314 "data/maps/EverGrandeCity/scripts.pory"
+	.string "JAMES: ...\n It feels like I was somehow always\l destined to lose you, {PLAYER}.$"
+
+EverGrandeCity_Text_James4::
+# 319 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Even so, I'm glad my Mom had me\n go on this journey.\p I won't challenge the ELITE FOUR yet.\n But I know you're going to.\l Here, take this.$"
+
+EverGrandeCity_Text_James5::
+# 327 "data/maps/EverGrandeCity/scripts.pory"
+	.string "The ELITE FOUR are strong.\n Be careful.\p {COLOR BLUE}{SHADOW LIGHT_BLUE} The level cap for the ELITE FOUR\n is 75.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: Well, I'm gonna go back home for now.\n See ya, {PLAYER}.$"
