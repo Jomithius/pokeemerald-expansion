@@ -362,6 +362,11 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_RS_PROTAG] = { _("{PKMN} TRAINER") },
     [TRAINER_CLASS_BIKER] = { _("BIKER"), 8 },
     [TRAINER_CLASS_RAT_MANIAC] = { _("RAT MANIAC"), 5 },
+    [TRAINER_CLASS_CHANNELER] = { _("CHANNELER"), 10 },
+    [TRAINER_CLASS_KNIGHT] = { _("KNIGHT"), 15 },
+    [TRAINER_CLASS_NINJA] = { _("NINJA"), 10 },
+    [TRAINER_CLASS_NERD] = { _("NERD"), 10 },
+    [TRAINER_CLASS_CEO] = { _("CEO"), 60 },
     [TRAINER_CLASS_MASTER] = { _("MASTER"), 20 },
 };
 

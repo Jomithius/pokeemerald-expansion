@@ -73,11 +73,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_EMO",
+      "graphics_id": "OBJ_EVENT_GFX_JAMES",
       "x": 18,
-      "y": 8,
+      "y": 7,
       "elevation": 7,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -95,7 +95,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY",
       "flag": "0"
     },
     {
@@ -108,7 +108,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY",
       "flag": "0"
     }
   ],
@@ -259,6 +259,33 @@
       "var": "VAR_BENNIS_DOJO_STATE",
       "var_value": "3",
       "script": "EverGrandeCity_EventScript_TriggerRight"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
     }
   ],
   "bg_events": [

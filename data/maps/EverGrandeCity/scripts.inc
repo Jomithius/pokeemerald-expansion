@@ -339,6 +339,32 @@ EverGrandeCity_EventScript_Nurse::
 	end
 
 
+EverGrandeCity_EventScript_James::
+# 215 "data/maps/EverGrandeCity/scripts.pory"
+	lockall
+# 216 "data/maps/EverGrandeCity/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 217 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_EventScript_James_Text_0, MSGBOX_AUTOCLOSE
+# 218 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 219 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 5, Common_Movement_WalkDown
+# 220 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 5
+# 221 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_Text_James1, MSGBOX_AUTOCLOSE
+# 222 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+	return
+
+
+# 230 "data/maps/EverGrandeCity/scripts.pory"
+EverGrandeCity_Movement_EnterPokeball:
+# 231 "data/maps/EverGrandeCity/scripts.pory"
+	enter_pokeball
+	step_end
+
 EverGrandeCity_EventScript_Trigger_Text_0:
 # 46 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Baldy baldy over there, what's it like\n to have no hair?$"
@@ -358,6 +384,10 @@ EverGrandeCity_EventScript_Trigger_Text_3:
 EverGrandeCity_EventScript_Trigger_Text_4:
 # 77 "data/maps/EverGrandeCity/scripts.pory"
 	.string "PANINI: P-Panini...$"
+
+EverGrandeCity_EventScript_James_Text_0:
+# 217 "data/maps/EverGrandeCity/scripts.pory"
+	.string "I've been waiting for you.$"
 
 EverGrandeCity_Text_Asak1::
 # 160 "data/maps/EverGrandeCity/scripts.pory"
@@ -386,3 +416,7 @@ EverGrandeCity_Text_Nurse::
 EverGrandeCity_Text_Nurse2::
 # 210 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Please come again.$"
+
+EverGrandeCity_Text_James1::
+# 226 "data/maps/EverGrandeCity/scripts.pory"
+	.string "$"

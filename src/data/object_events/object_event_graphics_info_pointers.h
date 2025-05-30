@@ -13,6 +13,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Speedwagon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Avatar;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bennis;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Policeman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_James;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Koga;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KimonoGirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Channeler;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NinjaBoy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Twin;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Boy1;
@@ -274,6 +278,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_AVATAR] =                   &gObjectEventGraphicsInfo_Avatar,
     [OBJ_EVENT_GFX_LUNA_F] =                   &gObjectEventGraphicsInfo_LunaF,
     [OBJ_EVENT_GFX_POLICEMAN] =                &gObjectEventGraphicsInfo_Policeman,
+    [OBJ_EVENT_GFX_JAMES] =                    &gObjectEventGraphicsInfo_James,
+    [OBJ_EVENT_GFX_KOGA] =                     &gObjectEventGraphicsInfo_Koga,
+    [OBJ_EVENT_GFX_KIMONOGIRL] =               &gObjectEventGraphicsInfo_KimonoGirl,
+    [OBJ_EVENT_GFX_CHANNELER] =                &gObjectEventGraphicsInfo_Channeler,
     [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_TWIN] =                     &gObjectEventGraphicsInfo_Twin,
     [OBJ_EVENT_GFX_BOY_1] =                    &gObjectEventGraphicsInfo_Boy1,

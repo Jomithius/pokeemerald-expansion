@@ -111,6 +111,22 @@ static const struct SpriteFrameImage sPicTable_Policeman[] = {
     overworld_ascending_frames(gObjectEventPic_Policeman, 2, 4)
 };
 
+static const struct SpriteFrameImage sPicTable_James[] = {
+    overworld_ascending_frames(gObjectEventPic_James, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_Koga[] = {
+    overworld_ascending_frames(gObjectEventPic_Koga, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_KimonoGirl[] = {
+    overworld_ascending_frames(gObjectEventPic_KimonoGirl, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_Channeler[] = {
+    overworld_ascending_frames(gObjectEventPic_Channeler, 2, 4)
+};
+
 static const struct SpriteFrameImage sPicTable_QuintyPlump[] = {
     overworld_ascending_frames(gObjectEventPic_QuintyPlump, 4, 4),
 };

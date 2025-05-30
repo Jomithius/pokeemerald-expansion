@@ -118,7 +118,11 @@
 #define TRAINER_PIC_MISA                  100
 #define TRAINER_PIC_BIKER                 101
 #define TRAINER_PIC_SPEEDWAGON            102
-#define TRAINER_PIC_COUNT                 103
+#define TRAINER_PIC_JAMES                 103
+#define TRAINER_PIC_KOGA                  104
+#define TRAINER_PIC_NERD                  105
+#define TRAINER_PIC_CHANNELER             106
+#define TRAINER_PIC_COUNT                 107
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -365,7 +369,11 @@
 #define TRAINER_CLASS_RAT_MANIAC     0x43
 #define TRAINER_CLASS_CEO            0x44
 #define TRAINER_CLASS_MASTER         0x45
-#define TRAINER_CLASS_COUNT          0x46
+#define TRAINER_CLASS_CHANNELER      0x46
+#define TRAINER_CLASS_KNIGHT         0x47
+#define TRAINER_CLASS_NINJA          0x48
+#define TRAINER_CLASS_NERD           0x49
+#define TRAINER_CLASS_COUNT          0x50
 
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music

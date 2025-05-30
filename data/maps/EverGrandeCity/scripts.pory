@@ -210,3 +210,23 @@ text EverGrandeCity_Text_Nurse{
 text EverGrandeCity_Text_Nurse2{
     "Please come again."
 }
+
+script EverGrandeCity_EventScript_James{
+    lockall
+    playbgm(MUS_NONE, FALSE)
+    msgbox("I've been waiting for you.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(5, Common_Movement_WalkDown)
+    waitmovement(5)
+    msgbox(EverGrandeCity_Text_James1, MSGBOX_AUTOCLOSE)
+    waitmessage
+
+}
+
+text EverGrandeCity_Text_James1{
+    ""
+}
+
+movement EverGrandeCity_Movement_EnterPokeball{
+    enter_pokeball
+}

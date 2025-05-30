@@ -242,7 +242,7 @@
 #define TRAINER_WILLIAM                     236
 #define TRAINER_JOSHUA                      237
 #define TRAINER_BENNIS_3                    238
-#define TRAINER_CAMERON_2                   239
+#define TRAINER_JOMITHIUS_4                 239
 #define TRAINER_CAMERON_3                   240
 #define TRAINER_CAMERON_4                   241
 #define TRAINER_CAMERON_5                   242

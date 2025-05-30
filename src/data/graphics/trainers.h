@@ -310,6 +310,18 @@ const u32 gTrainerPalette_Biker[] = INCBIN_U32("graphics/trainers/palettes/biker
 const u32 gTrainerFrontPic_Speedwagon[] = INCBIN_U32("graphics/trainers/front_pics/speedwagon.4bpp.lz");
 const u32 gTrainerPalette_Speedwagon[] = INCBIN_U32("graphics/trainers/palettes/speedwagon.gbapal.lz");
 
+const u32 gTrainerFrontPic_James[] = INCBIN_U32("graphics/trainers/front_pics/james.4bpp.lz");
+const u32 gTrainerPalette_James[] = INCBIN_U32("graphics/trainers/palettes/james.gbapal.lz");
+
+const u32 gTrainerFrontPic_Koga[] = INCBIN_U32("graphics/trainers/front_pics/koga.4bpp.lz");
+const u32 gTrainerPalette_Koga[] = INCBIN_U32("graphics/trainers/palettes/koga.gbapal.lz");
+
+const u32 gTrainerFrontPic_Nerd[] = INCBIN_U32("graphics/trainers/front_pics/nerd.4bpp.lz");
+const u32 gTrainerPalette_Nerd[] = INCBIN_U32("graphics/trainers/palettes/nerd.gbapal.lz");
+
+const u32 gTrainerFrontPic_Channeler[] = INCBIN_U32("graphics/trainers/front_pics/channeler.4bpp.lz");
+const u32 gTrainerPalette_Channeler[] = INCBIN_U32("graphics/trainers/palettes/channeler.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -441,6 +453,10 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LUNA, gTrainerFrontPic_Luna, gTrainerPalette_Luna),
     TRAINER_SPRITE(TRAINER_PIC_SPEEDWAGON, gTrainerFrontPic_Speedwagon, gTrainerPalette_Speedwagon, -16, 7, 0x188),
     TRAINER_SPRITE(TRAINER_PIC_BIKER, gTrainerFrontPic_Biker, gTrainerPalette_Biker),
+    TRAINER_SPRITE(TRAINER_PIC_JAMES, gTrainerFrontPic_James, gTrainerPalette_James),
+    TRAINER_SPRITE(TRAINER_PIC_KOGA,  gTrainerFrontPic_Koga, gTrainerPalette_Koga),
+    TRAINER_SPRITE(TRAINER_PIC_NERD, gTrainerFrontPic_Nerd, gTrainerPalette_Nerd),
+    TRAINER_SPRITE(TRAINER_PIC_CHANNELER, gTrainerFrontPic_Channeler, gTrainerPalette_Channeler),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
