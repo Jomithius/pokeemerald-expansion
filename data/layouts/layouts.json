@@ -4710,6 +4710,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/RatCave_Lilycove_2F/border.bin",
       "blockdata_filepath": "data/layouts/RatCave_Lilycove_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_CENTRAL",
+      "name": "RatCave_Central_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_Central/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_Central/map.bin"
     }
   ]
 }

@@ -1214,3 +1214,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RatCave_Lilycove_1F/scripts.inc"
 
 	.include "data/maps/RatCave_Lilycove_2F/scripts.inc"
+
+	.include "data/maps/RatCave_Central/scripts.inc"
