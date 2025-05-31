@@ -84,8 +84,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-      "x": 21,
-      "y": 30,
+      "x": 10,
+      "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 0,
@@ -197,8 +197,8 @@
     },
     {
       "type": "secret_base",
-      "x": 24,
-      "y": 32,
+      "x": 26,
+      "y": 22,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_YELLOW_CAVE4_2"
     }

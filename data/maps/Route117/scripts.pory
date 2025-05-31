@@ -366,3 +366,48 @@ script Route117_EventScript_SaveBikerMusic {
 	playbgm(MUS_RG_SILPH, TRUE)
 	return
 }
+
+script Route117_EventScript_Araquanid{
+    lockall
+    setflag(FLAG_ARAQUANID_TOTEM)
+    applymovement(28, Common_Movement_FacePlayer)
+    waitmovement(28)
+    playmoncry(SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ARAQUANID_TOTEM, 17, ITEM_MYSTIC_WATER)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        call(AraquanidWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(AraquanidWon_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(AraquanidFailed)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(AraquanidFailed)
+	}
+    waitmessage
+	releaseall
+    end
+}
+ 
+script AraquanidWon_Caught {
+    fadescreen(FADE_TO_BLACK)
+    removeobject(28)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+	return
+}
+ 
+script AraquanidFailed {
+	playmoncry(SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(28)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+    msgbox("The ARAQUANID disappeared...")
+	return
+}

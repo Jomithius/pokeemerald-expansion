@@ -596,6 +596,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_120_REVIVE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VIKAVOLT_TOTEM)",
+      "x": 26,
+      "y": 79,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route120_EventScript_Vikavolt",
+      "flag": "FLAG_VIKAVOLT_TOTEM"
     }
   ],
   "warp_events": [

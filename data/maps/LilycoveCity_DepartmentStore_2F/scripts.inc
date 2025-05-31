@@ -236,7 +236,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_Mae::
 # 147 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	playse SE_BIKE_HOP
 # 148 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportConfused
+	applymovement OBJ_EVENT_ID_PLAYER, LilycoveConfused
 # 149 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 0
 # 150 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
@@ -290,7 +290,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_Mae_2:
 # 119 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	playse SE_BIKE_HOP
 # 120 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportConfused
+	applymovement OBJ_EVENT_ID_PLAYER, LilycoveConfused
 # 121 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 0
 # 122 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"

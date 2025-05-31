@@ -1271,12 +1271,12 @@
 #define FLAG_HIDE_JAMES_RUSTBORO_CITY                               0x4C1 // James Rustboro City after final Rival Battle
 #define FLAG_HIDE_RATDUARDO_LILYCOVE                                0x4C2 // Ratduardo Lilycove Rat Cave
 #define FLAG_HIDE_LILYCOVE_MAE                                      0x4C3 // Mae Lilycove
-#define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
-#define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
-#define FLAG_UNUSED_0x4C6                                           0x4C6 // Unused Flag
-#define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
-#define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag
-#define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag
+#define FLAG_TOGEDEMARU_TOTEM                                       0x4C4 // New Mauville
+#define FLAG_SALAZZLE_TOTEM                                         0x4C5 // Fiery Path
+#define FLAG_MIMIKYU_TOTEM                                          0x4C6 // Mt Pyre Summit
+#define FLAG_VIKAVOLT_TOTEM                                         0x4C7 // Route 120
+#define FLAG_KOMMO_O_TOTEM                                          0x4C8 // Victory Road
+#define FLAG_ARAQUANID_TOTEM                                        0x4C9 // Route 107
 #define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
 #define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
 #define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag

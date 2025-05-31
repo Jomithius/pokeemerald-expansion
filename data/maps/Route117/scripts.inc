@@ -619,9 +619,100 @@ Route117_EventScript_SaveBikerMusic::
 	return
 
 
+Route117_EventScript_Araquanid::
+# 371 "data/maps/Route117/scripts.pory"
+	lockall
+# 372 "data/maps/Route117/scripts.pory"
+	setflag FLAG_ARAQUANID_TOTEM
+# 373 "data/maps/Route117/scripts.pory"
+	applymovement 28, Common_Movement_FacePlayer
+# 374 "data/maps/Route117/scripts.pory"
+	waitmovement 28
+# 375 "data/maps/Route117/scripts.pory"
+	playmoncry SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER
+# 376 "data/maps/Route117/scripts.pory"
+	delay 40
+# 377 "data/maps/Route117/scripts.pory"
+	waitmoncry
+# 378 "data/maps/Route117/scripts.pory"
+	setwildbattle SPECIES_ARAQUANID_TOTEM, 17, ITEM_MYSTIC_WATER
+# 379 "data/maps/Route117/scripts.pory"
+	dowildbattle
+# 380 "data/maps/Route117/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 381 "data/maps/Route117/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route117_EventScript_Araquanid_2
+# 384 "data/maps/Route117/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq Route117_EventScript_Araquanid_3
+# 387 "data/maps/Route117/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq Route117_EventScript_Araquanid_4
+# 390 "data/maps/Route117/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq Route117_EventScript_Araquanid_5
+Route117_EventScript_Araquanid_1:
+# 393 "data/maps/Route117/scripts.pory"
+	waitmessage
+# 394 "data/maps/Route117/scripts.pory"
+	releaseall
+	end
+
+Route117_EventScript_Araquanid_2:
+# 382 "data/maps/Route117/scripts.pory"
+	call AraquanidWon_Caught
+	goto Route117_EventScript_Araquanid_1
+
+Route117_EventScript_Araquanid_3:
+# 385 "data/maps/Route117/scripts.pory"
+	call AraquanidWon_Caught
+	goto Route117_EventScript_Araquanid_1
+
+Route117_EventScript_Araquanid_4:
+# 388 "data/maps/Route117/scripts.pory"
+	call AraquanidFailed
+	goto Route117_EventScript_Araquanid_1
+
+Route117_EventScript_Araquanid_5:
+# 391 "data/maps/Route117/scripts.pory"
+	call AraquanidFailed
+	goto Route117_EventScript_Araquanid_1
+
+
+AraquanidWon_Caught::
+# 399 "data/maps/Route117/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 400 "data/maps/Route117/scripts.pory"
+	removeobject 28
+# 401 "data/maps/Route117/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+	return
+
+
+AraquanidFailed::
+# 406 "data/maps/Route117/scripts.pory"
+	playmoncry SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER
+# 407 "data/maps/Route117/scripts.pory"
+	delay 20
+# 408 "data/maps/Route117/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 409 "data/maps/Route117/scripts.pory"
+	removeobject 28
+# 410 "data/maps/Route117/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+# 411 "data/maps/Route117/scripts.pory"
+	msgbox AraquanidFailed_Text_0
+	return
+
+
 Route117_MisaFriendlyBattle_Text_0:
 # 305 "data/maps/Route117/scripts.pory"
 	.string "Great!\n Go easy on me!$"
+
+AraquanidFailed_Text_0:
+# 411 "data/maps/Route117/scripts.pory"
+	.string "The ARAQUANID disappeared...$"
 
 Route117_MisaHello::
 # 319 "data/maps/Route117/scripts.pory"
