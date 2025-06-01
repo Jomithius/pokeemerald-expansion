@@ -1,1 +1,12 @@
 mapscripts RatCave_Central_MapScripts {}
+
+script RatCave_Central_EventScript_Camper{
+    msgbox(RatCave_Central_Text_Camper, MSGBOX_NPC)
+    end
+}
+
+text RatCave_Central_Text_Camper{
+    "This cave system looks like it was recently\n
+    excavated.\p
+    I wonder who did all this digging."
+}

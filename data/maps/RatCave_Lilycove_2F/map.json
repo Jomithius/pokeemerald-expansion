@@ -87,6 +87,13 @@
       "elevation": 0,
       "dest_map": "MAP_RAT_CAVE_LILYCOVE_1F",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_RAT_CAVE_LILYCOVE_HIGHWAY",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

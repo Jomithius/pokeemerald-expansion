@@ -115,7 +115,13 @@
     "LilycoveCity_House5_Basement",
     "RatCave_Lilycove_1F",
     "RatCave_Lilycove_2F",
-    "RatCave_Central"
+    "RatCave_Central",
+    "NewMap1",
+    "RatCave_Lilycove_Highway",
+    "RatCave_Lilycove_Highway2",
+    "Route135",
+    "Route136",
+    "RatCave_ToUnder"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

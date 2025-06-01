@@ -2,7 +2,7 @@
   "id": "MAP_RAT_CAVE_FALLARBOR_1F",
   "name": "RatCave_Fallarbor_1F",
   "layout": "LAYOUT_RAT_CAVE_FALLARBOR_1F",
-  "music": "MUS_PETALBURG_WOODS",
+  "music": "MUS_MT_CHIMNEY",
   "region_map_section": "MAPSEC_RAT_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

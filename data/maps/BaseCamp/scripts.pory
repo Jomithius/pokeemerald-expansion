@@ -1,1 +1,18 @@
-mapscripts BaseCamp_MapScripts {}
+raw`.set LOCALID_NURSE, 1
+
+BaseCamp_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, BaseCamp_PokemonCenter_OnTransition
+	.byte 0
+
+BaseCamp_PokemonCenter_OnTransition:
+	setrespawn HEAL_LOCATION_THE_UNDER
+	end
+
+BaseCamp_PokemonCenter_EventScript_Nurse::
+	setvar VAR_0x800B, LOCALID_NURSE
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+`

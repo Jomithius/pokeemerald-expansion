@@ -12331,6 +12331,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_RAT_CAVE_CENTRAL",
+          "base_label": "gRatCave_Central0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_NOSEPASS"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_GIGALITH"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_PROBOPASS"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_CRUSTLE"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_NOSEPASS"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_CARBINK"
+              },
+              {
+                "min_level": 62,
+                "max_level": 62,
+                "species": "SPECIES_ARCHEOPS"
+              },
+              {
+                "min_level": 62,
+                "max_level": 62,
+                "species": "SPECIES_TYRANTRUM"
+              },
+              {
+                "min_level": 62,
+                "max_level": 62,
+                "species": "SPECIES_LYCANROC_MIDNIGHT"
+              },
+              {
+                "min_level": 62,
+                "max_level": 62,
+                "species": "SPECIES_LYCANROC_MIDNIGHT"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_LYCANROC_MIDDAY"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_LYCANROC_DUSK"
+              }
+            ]
+          }
         }
       ]
     },

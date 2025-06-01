@@ -10,11 +10,153 @@
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 25,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ABILITY_SHIELD",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RAT_CAVE_CENTRAL_ABILITY_SHIELD"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 56,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RAT_CAVE_CENTRAL_FAIRY_FEATHER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_COVERT_CLOAK",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RAT_CAVE_CENTRAL_COVERT_CLOAK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 26,
+      "y": 34,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 10,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 7,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_UP_LEFT",
+      "movement_range_x": 8,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 46,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_UP_RIGHT_LEFT",
+      "movement_range_x": 4,
+      "movement_range_y": 7,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 36,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 12,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 44,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_LEFT_DOWN",
+      "movement_range_x": 4,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 9,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_LEFT_UP",
+      "movement_range_x": 2,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 33,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 52,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
   ],
   "warp_events": [
     {
@@ -23,6 +165,27 @@
       "elevation": 0,
       "dest_map": "MAP_RAT_CAVE_FALLARBOR_2F",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 51,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_RAT_CAVE_LILYCOVE_HIGHWAY2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 31,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_RAT_CAVE_TO_UNDER",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

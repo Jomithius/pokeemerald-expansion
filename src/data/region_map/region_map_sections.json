@@ -1719,6 +1719,22 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_135",
+      "name": "ROUTE 135",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_136",
+      "name": "ROUTE 136",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }
