@@ -4780,6 +4780,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/RatCave_ToUnder/border.bin",
       "blockdata_filepath": "data/layouts/RatCave_ToUnder/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE135_LAB",
+      "name": "Route135_Lab_Layout",
+      "width": 14,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/Route135_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/Route135_Lab/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE135_HOUSE1",
+      "name": "Route135_House1_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Route135_House1/border.bin",
+      "blockdata_filepath": "data/layouts/Route135_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE135_HOUSE2",
+      "name": "Route135_House2_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Route135_House2/border.bin",
+      "blockdata_filepath": "data/layouts/Route135_House2/map.bin"
     }
   ]
 }

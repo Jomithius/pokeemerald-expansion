@@ -1228,3 +1228,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route136/scripts.inc"
 
 	.include "data/maps/RatCave_ToUnder/scripts.inc"
+
+	.include "data/maps/Route135_Lab/scripts.inc"
+
+	.include "data/maps/Route135_House1/scripts.inc"
+
+	.include "data/maps/Route135_House2/scripts.inc"

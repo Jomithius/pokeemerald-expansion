@@ -121,7 +121,10 @@
     "RatCave_Lilycove_Highway2",
     "Route135",
     "Route136",
-    "RatCave_ToUnder"
+    "RatCave_ToUnder",
+    "Route135_Lab",
+    "Route135_House1",
+    "Route135_House2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
