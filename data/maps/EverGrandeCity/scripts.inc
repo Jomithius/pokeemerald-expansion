@@ -432,7 +432,7 @@ EverGrandeCity_EventScript_James_1:
 # 266 "data/maps/EverGrandeCity/scripts.pory"
 	delay 30
 # 267 "data/maps/EverGrandeCity/scripts.pory"
-	playbgm MUS_END, FALSE
+	playbgm MUS_CREDITS, FALSE
 # 268 "data/maps/EverGrandeCity/scripts.pory"
 	msgbox EverGrandeCity_Text_James3, MSGBOX_AUTOCLOSE
 # 269 "data/maps/EverGrandeCity/scripts.pory"

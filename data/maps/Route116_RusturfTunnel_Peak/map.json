@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(JOLTEON)",
-      "x": 5,
+      "x": 10,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WATTSON",
-      "x": 6,
+      "x": 11,
       "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(PUMPKABOO_SMALL)",
-      "x": 9,
+      "x": 14,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(RIBOMBEE_TOTEM)",
-      "x": 15,
+      "x": 20,
       "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -68,7 +68,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(FARFETCHD)",
-      "x": 12,
+      "x": 17,
       "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(PACHIRISU)",
-      "x": 6,
+      "x": 10,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
@@ -94,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(FARFETCHD_GALAR)",
-      "x": 16,
+      "x": 21,
       "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -108,7 +108,7 @@
   ],
   "warp_events": [
     {
-      "x": 15,
+      "x": 20,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_RUSTURF_TUNNEL_3F",
@@ -121,7 +121,7 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 5,
+      "x": 10,
       "y": 8,
       "elevation": 0,
       "item": "ITEM_WHITE_HERB",
@@ -129,7 +129,7 @@
     },
     {
       "type": "hidden_item",
-      "x": 7,
+      "x": 12,
       "y": 8,
       "elevation": 0,
       "item": "ITEM_POWER_HERB",

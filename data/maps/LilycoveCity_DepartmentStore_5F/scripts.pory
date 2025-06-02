@@ -174,8 +174,6 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
         delay(20)
         playbgm(MUS_MISA_THEME, FALSE)
         delay(10)
-        msgbox("MISA: Oh, {PLAYER}!", MSGBOX_AUTOCLOSE)
-        waitmessage
         msgbox(LilycoveCity_DepartmentStore_5F_Text_Misa1, MSGBOX_AUTOCLOSE)
         waitmessage
         giveitem(ITEM_RARE_CANDY, 20)
@@ -195,7 +193,8 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
 }
 
 text LilycoveCity_DepartmentStore_5F_Text_Misa1{
-    "It's nice to see you again!\n
+    "MISA: Oh, {PLAYER}!\p
+	It's nice to see you again!\n
     I had to stop by the DEPT. STORE\l
     before I went back to work.\l
     I just love the POKé DOLLS here!\p
@@ -257,7 +256,7 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Lina{
 text LilcoveCity_DepartmentStore_5F_Text_Lina1{
     "What?\n
     The next “Muscles & Monsters” book\l
-    still isn't in yet...\p"
+    still isn't in yet..."
 }
 
 text LilcoveCity_DepartmentStore_5F_Text_Lina2{

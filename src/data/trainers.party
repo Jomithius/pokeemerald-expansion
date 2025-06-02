@@ -4467,7 +4467,7 @@ AI: Smart Trainer
 Mugshot: Pink
 
 Psyduck (F) @ Eviolite  
-Ability: Cloud Nine  
+Ability: Swift Swim 
 Level: 37    
 EVs: 244 HP / 244 SpA / 20 SpD  
 Sassy Nature  
@@ -4518,7 +4518,6 @@ IVs: 0 Atk
 - Ice Beam  
 - Will-O-Wisp  
 - Hex  
-
 
 === TRAINER_CAMERON_5 === /* FREE */
 Name: CAMERON

@@ -411,14 +411,10 @@ LavaridgeTown_Text_HerbShopSign:
 
 script LavaridgeTown_EventScript_Joey{
     lock
-    msgbox("Yeheaahh...", MSGBOX_AUTOCLOSE)
-    waitmessage
-    delay(20)
-    msgbox("...", MSGBOX_AUTOCLOSE)
-    waitmessage
-    msgbox("It looks like they're too relaxed\n
-    to notice you.", MSGBOX_AUTOCLOSE)
-    waitmessage
-    release
+    msgbox("Yeheaahh...\p
+	...\p
+	It looks like they're too relaxed\n
+	to notice you.", MSGBOX_NPC)
+	release
     end
 }

@@ -5796,7 +5796,11 @@ u16 GetBattleBGM(void)
                 return MUS_VS_CHAMPION_NEMONA;
             return MUS_VS_GYM_LEADER;
         case TRAINER_CLASS_CHAMPION:
-            return MUS_FINAL_BATTLE;
+            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
+                return MUS_VS_CHAMPION;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleRedName))
+                return MUS_RG_VS_CHAMPION;
+            return MUS_WATERFALL_COLOSSEUM;
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;
@@ -5810,15 +5814,15 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_RAT_MANIAC:
             return MUS_VS_RATDUARDO; 
         case TRAINER_CLASS_CEO:
-            return MUS_WATERFALL_COLOSSEUM; 
+            return MUS_FINAL_BATTLE; 
         case TRAINER_CLASS_MASTER:
             return MUS_BENNIS;    
         case TRAINER_CLASS_BIKER:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-                return MUS_RG_VS_WILD;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleSpeedwagonName))
                 return MUS_RG_VS_TRAINER;
-            return MUS_RG_VS_WILD;        
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleSpeedwagonName))
+                return MUS_RG_VS_GYM_LEADER;
+            return MUS_RG_VS_TRAINER;        
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:
         case TRAINER_CLASS_PALACE_MAVEN:

@@ -102,18 +102,19 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
     waitmessage
     getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
     if(var(VAR_TEMP_1) == DIR_SOUTH){
-        applymovement(3, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1)
+        applymovement(6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1)
         delay(10)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        waitmovement(6)
         delay(10)
         playse(SE_EXIT)
         delay(10)
-        applymovement(4, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave1)
-        waitmovement(4)
+        applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave1)
+        waitmovement(7)
         playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
         delay(20)
-        applymovement(4, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave2)
-        waitmovement(4)
+        applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave2)
+        waitmovement(7)
         playse(SE_EXIT)
         delay(10)
         playse(SE_BIKE_HOP)
@@ -123,25 +124,26 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
         waitmovement(1)
         msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE)
         waitmessage
-        removeobject(3)
-        removeobject(4)
+        removeobject(6)
+        removeobject(7)
         setflag(FLAG_HIDE_LILYCOVE_MAE)
     }
     else{
-        applymovement(3, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
+        applymovement(6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
         delay(10)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        waitmovement(6)
         delay(10)
         playse(SE_EXIT)
         delay(10)
-        applymovement(4, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave3)
-        waitmovement(4)
+        applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave3)
+        waitmovement(7)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
-        waitmovement(3)
+        waitmovement(0)
         playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
         delay(20)
-        applymovement(4, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
-        waitmovement(4)
+        applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
+        waitmovement(7)
         playse(SE_EXIT)
         delay(10)
         playse(SE_BIKE_HOP)
@@ -151,8 +153,8 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
         waitmovement(1)
         msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE)
         waitmessage
-        removeobject(3)
-        removeobject(4)
+        removeobject(6)
+        removeobject(7)
         setflag(FLAG_HIDE_LILYCOVE_MAE)
     }
     release
@@ -160,7 +162,7 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
 }
 
 text LilycoveCity_DepartmentStore_2F_Text_Mae1{
-    "MAE: OOOH YES!! THIS SLAYYYYS!"
+    "OOOH YES!! THIS SLAYYYYS!"
 }
 
 text LilycoveCity_DepartmentStore_2F_Text_Mae2{
@@ -246,4 +248,12 @@ movement LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave3{
 
 movement LilycoveConfused{
     emote_question_mark
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_FaceLeft{
+    face_left
+}
+
+movement LilycoveCity_DepartmentStore_2F_Movement_FaceRight{
+    face_right
 }

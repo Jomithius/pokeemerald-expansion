@@ -5,7 +5,7 @@
   "music": "MUS_B_PYRAMID_TOP",
   "region_map_section": "MAPSEC_ROUTE_136",
   "requires_flash": false,
-  "weather": "WEATHER_SHADE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -90,7 +90,34 @@
 
   ],
   "coord_events": [
-
+    {
+      "type": "weather",
+      "x": 12,
+      "y": 39,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "weather",
+      "x": 13,
+      "y": 39,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "weather",
+      "x": 27,
+      "y": 39,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "weather",
+      "x": 28,
+      "y": 39,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    }
   ],
   "bg_events": [
 

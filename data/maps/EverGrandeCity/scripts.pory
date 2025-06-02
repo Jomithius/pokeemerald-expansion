@@ -264,7 +264,7 @@ script EverGrandeCity_EventScript_James{
     applymovement(5, Common_Movement_WalkUp)
     waitmovement(5)
     delay(30)
-    playbgm(MUS_END, FALSE)
+    playbgm(MUS_CREDITS, FALSE)
     msgbox(EverGrandeCity_Text_James3, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(5, Common_Movement_WalkDown)

@@ -819,32 +819,12 @@ LavaridgeTown_EventScript_Joey::
 # 413 "data/maps/LavaridgeTown/scripts.pory"
 	lock
 # 414 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_EventScript_Joey_Text_0, MSGBOX_AUTOCLOSE
-# 415 "data/maps/LavaridgeTown/scripts.pory"
-	waitmessage
-# 416 "data/maps/LavaridgeTown/scripts.pory"
-	delay 20
-# 417 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_EventScript_Joey_Text_1, MSGBOX_AUTOCLOSE
+	msgbox LavaridgeTown_EventScript_Joey_Text_0, MSGBOX_NPC
 # 418 "data/maps/LavaridgeTown/scripts.pory"
-	waitmessage
-# 419 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_EventScript_Joey_Text_2, MSGBOX_AUTOCLOSE
-# 421 "data/maps/LavaridgeTown/scripts.pory"
-	waitmessage
-# 422 "data/maps/LavaridgeTown/scripts.pory"
 	release
 	end
 
 
 LavaridgeTown_EventScript_Joey_Text_0:
 # 414 "data/maps/LavaridgeTown/scripts.pory"
-	.string "Yeheaahh...$"
-
-LavaridgeTown_EventScript_Joey_Text_1:
-# 417 "data/maps/LavaridgeTown/scripts.pory"
-	.string "...$"
-
-LavaridgeTown_EventScript_Joey_Text_2:
-# 419 "data/maps/LavaridgeTown/scripts.pory"
-	.string "It looks like they're too relaxed\n to notice you.$"
+	.string "Yeheaahh...\p ...\p It looks like they're too relaxed\n to notice you.$"

@@ -4604,7 +4604,7 @@
     {
       "id": "LAYOUT_ROUTE116_RUSTURF_TUNNEL_PEAK",
       "name": "Route116_RusturfTunnel_Peak_Layout",
-      "width": 19,
+      "width": 29,
       "height": 29,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
