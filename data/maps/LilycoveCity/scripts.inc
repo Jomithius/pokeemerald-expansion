@@ -1989,6 +1989,12 @@ LilycoveCity_EventScript_RatCaveShake::
 	end
 
 
+LilycoveCity_EventScript_Man4::
+# 1048 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_Text_Man4, MSGBOX_NPC
+	end
+
+
 LilycoveCity_EventScript_EmoBully_Text_0:
 # 799 "data/maps/LilycoveCity/scripts.pory"
 	.string "What was that?!$"
@@ -2052,3 +2058,7 @@ LilycoveCity_Text_Emo3::
 LilycoveCity_Text_Emo4::
 # 968 "data/maps/LilycoveCity/scripts.pory"
 	.string "I'm gonna go.\p See ya.$"
+
+LilycoveCity_Text_Man4::
+# 1052 "data/maps/LilycoveCity/scripts.pory"
+	.string "I've been hearing weird noises coming\n from that houses for a few days now.\p But nobody's lived there for years.$"

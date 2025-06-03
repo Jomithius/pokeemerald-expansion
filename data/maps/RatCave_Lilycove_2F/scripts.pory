@@ -14,6 +14,7 @@ script RatCave_LilycoveCity_2F_EventScript_Ratduardo{
     playse(SE_PIN)
     applymovement(3, Common_Movement_ExclamationMark)
     waitmovement(3)
+    delay(20)
     applymovement(3, Common_Movement_FacePlayer)
     waitmovement(3)
     trainerbattle_no_intro(TRAINER_RATDUARDO_3, RatCave_LilycoveCity_2F_Text_RatduardoDefeat)

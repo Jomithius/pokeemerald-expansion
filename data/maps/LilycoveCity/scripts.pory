@@ -1043,3 +1043,14 @@ script LilycoveCity_EventScript_RatCaveShake{
     release
     end
 }
+
+script LilycoveCity_EventScript_Man4{
+	msgbox(LilycoveCity_Text_Man4, MSGBOX_NPC)
+	end
+}
+
+text LilycoveCity_Text_Man4{
+	"I've been hearing weird noises coming\n
+	from that houses for a few days now.\p
+	But nobody's lived there for years."
+}

@@ -442,7 +442,7 @@ LilycoveCity_DepartmentStore_5F_Text_Misa3::
 
 LilcoveCity_DepartmentStore_5F_Text_Lina1::
 # 256 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "What?\n The next “Muscles & Monsters” book\l still isn't in yet...$"
+	.string "What?\n The next “Muscles & Monsters”\l still isn't in yet...$"
 
 LilcoveCity_DepartmentStore_5F_Text_Lina2::
 # 262 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

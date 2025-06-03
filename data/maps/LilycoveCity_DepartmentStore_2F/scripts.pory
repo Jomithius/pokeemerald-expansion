@@ -76,6 +76,16 @@ LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
 
 `
 
+script LilycoveCity_DepartmentStore_2F_VarTempTrigger{
+    setvar(VAR_TEMP_1, 1)
+    end
+}
+
+script LilycoveCity_DepartmentStore_2F_VarTempTrigger2{
+    setvar(VAR_TEMP_1, 0)
+    end
+}
+
 script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
     lock
     msgbox(LilycoveCity_DepartmentStore_2F_Text_Mae1, MSGBOX_AUTOCLOSE)
@@ -85,50 +95,36 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
     waitmovement(6)
     applymovement(6, Common_Movement_FacePlayer)
     waitmovement(6)
-    msgbox(LilycoveCity_DepartmentStore_2F_Text_Mae2, MSGBOX_AUTOCLOSE)
+    if(flag(FLAG_SLATEPORT_MAE_BATTLE) == TRUE){
+        msgbox(LilycoveCity_DepartmentStore_2F_Text_Mae2, MSGBOX_AUTOCLOSE)
+    }
+    else{
+       msgbox(LilycoveCity_DepartmentStore_2F_Text_Mae, MSGBOX_AUTOCLOSE) 
+    }
     waitmessage
     trainerbattle_no_intro(TRAINER_MAE_2, LilycoveCity_DepartmentStore_2F_Text_MaeDefeat)
     lock
     playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    delay(10)
     applymovement(1, LilycoveCity_DepartmentStore_2F_Movement_Cook1)
     waitmovement(1)
-    msgbox("COOK: EXCUSE ME!", MSGBOX_AUTOCLOSE)
+    msgbox("EXCUSE ME!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(6, Common_Movement_FaceUp)
-    delay(10)
+    waitmovement(6)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
     msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook, MSGBOX_AUTOCLOSE)
     waitmessage
-    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
-    if(var(VAR_TEMP_1) == DIR_SOUTH){
-        applymovement(6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1)
-        delay(10)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
-        waitmovement(6)
-        delay(10)
-        playse(SE_EXIT)
-        delay(10)
-        applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave1)
-        waitmovement(7)
-        playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
-        delay(20)
-        applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave2)
-        waitmovement(7)
-        playse(SE_EXIT)
-        delay(10)
-        playse(SE_BIKE_HOP)
-        applymovement(OBJ_EVENT_ID_PLAYER, LilycoveConfused)
-        waitmovement(0)
-        applymovement(1, LilycoveCity_DepartmentStore_2F_Movement_Cook2)
-        waitmovement(1)
-        msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE)
-        waitmessage
-        removeobject(6)
-        removeobject(7)
-        setflag(FLAG_HIDE_LILYCOVE_MAE)
-    }
-    else{
+    call(LilycoveCity_DepartmentStore_2F_MaeMovementVar)
+    release
+    end
+}
+
+script LilycoveCity_DepartmentStore_2F_MaeMovementVar{
+    if(var(VAR_TEMP_1) == 1){
         applymovement(6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
         delay(10)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
@@ -145,7 +141,7 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
         applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
         waitmovement(7)
         playse(SE_EXIT)
-        delay(10)
+        delay(60)
         playse(SE_BIKE_HOP)
         applymovement(OBJ_EVENT_ID_PLAYER, LilycoveConfused)
         waitmovement(0)
@@ -156,10 +152,38 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
         removeobject(6)
         removeobject(7)
         setflag(FLAG_HIDE_LILYCOVE_MAE)
+        setflag(FLAG_SLATEPORT_MAE_BATTLE)
     }
-    release
-    end
+    else{
+        applymovement(6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1)
+        waitmovement(6)
+        delay(10)
+        playse(SE_EXIT)
+        delay(10)
+        applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave1)
+        waitmovement(7)
+        playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
+        delay(20)
+        applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave2)
+        waitmovement(7)
+        playse(SE_EXIT)
+        delay(60)
+        playse(SE_BIKE_HOP)
+        applymovement(OBJ_EVENT_ID_PLAYER, LilycoveConfused)
+        waitmovement(0)
+        applymovement(1, LilycoveCity_DepartmentStore_2F_Movement_Cook2)
+        waitmovement(1)
+        msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE)
+        waitmessage
+        removeobject(6)
+        removeobject(7)
+        setflag(FLAG_HIDE_LILYCOVE_MAE)
+        setflag(FLAG_SLATEPORT_MAE_BATTLE)
+    }
+    return
 }
+
+
 
 text LilycoveCity_DepartmentStore_2F_Text_Mae1{
     "OOOH YES!! THIS SLAYYYYS!"
@@ -168,6 +192,12 @@ text LilycoveCity_DepartmentStore_2F_Text_Mae1{
 text LilycoveCity_DepartmentStore_2F_Text_Mae2{
     "You AGAIN? Why do you keep\n
     getting in the way of my shopping?\p
+    I'm a diva and I deserve this!"
+}
+
+text LilycoveCity_DepartmentStore_2F_Text_Mae{
+    "Huh? Why are you getting\n
+    in the way of my shopping?\p
     I'm a diva and I deserve this!"
 }
 
@@ -183,8 +213,8 @@ text LilycoveCity_DepartmentStore_2F_Text_Cook{
 }
 
 text LilycoveCity_DepartmentStore_2F_Text_Cook2{
-    "COOK: Minimum wage to deal with\n
-    customers like this. Really?"
+    "WORKER: Minimum wage to deal\n
+    with customers like this... Really?"
 }
 
 script LilycoveCity_DepartmentStore_2F_EventScript_Psyduck {

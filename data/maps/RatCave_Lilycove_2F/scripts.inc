@@ -24,60 +24,62 @@ RatCave_LilycoveCity_2F_EventScript_Ratduardo::
 # 16 "data/maps/RatCave_Lilycove_2F/scripts.pory"
 	waitmovement 3
 # 17 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	applymovement 3, Common_Movement_FacePlayer
+	delay 20
 # 18 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	waitmovement 3
+	applymovement 3, Common_Movement_FacePlayer
 # 19 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	trainerbattle_no_intro TRAINER_RATDUARDO_3, RatCave_LilycoveCity_2F_Text_RatduardoDefeat
+	waitmovement 3
 # 20 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	call RatCave_LilycoveCity_2F_BattleOver
+	trainerbattle_no_intro TRAINER_RATDUARDO_3, RatCave_LilycoveCity_2F_Text_RatduardoDefeat
 # 21 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	call LilycoveCityRatCaveShake
+	call RatCave_LilycoveCity_2F_BattleOver
 # 22 "data/maps/RatCave_Lilycove_2F/scripts.pory"
+	call LilycoveCityRatCaveShake
+# 23 "data/maps/RatCave_Lilycove_2F/scripts.pory"
 	releaseall
 	end
 
 
 RatCave_LilycoveCity_2F_BattleOver::
-# 36 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	lockall
 # 37 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	fadescreenspeed FADE_TO_BLACK, 2
+	lockall
 # 38 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	removeobject 3
+	fadescreenspeed FADE_TO_BLACK, 2
 # 39 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	removeobject 4
+	removeobject 3
 # 40 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	removeobject 5
+	removeobject 4
 # 41 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 3
+	removeobject 5
 # 42 "data/maps/RatCave_Lilycove_2F/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 3
+# 43 "data/maps/RatCave_Lilycove_2F/scripts.pory"
 	setflag FLAG_HIDE_RATDUARDO_LILYCOVE
 	return
 
 
 LilycoveCityRatCaveShake::
-# 47 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	delay 30
 # 48 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	setvar VAR_0x8004, 2
+	delay 30
 # 49 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	setvar VAR_0x8005, 6
+	setvar VAR_0x8004, 2
 # 50 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	setvar VAR_0x8006, 8
+	setvar VAR_0x8005, 6
 # 51 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	setvar VAR_0x8007, 4
+	setvar VAR_0x8006, 8
 # 52 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 4
 # 53 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	waitstate
-# 54 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	delay 60
-# 55 "data/maps/RatCave_Lilycove_2F/scripts.pory"
 	special ShakeCamera
-# 56 "data/maps/RatCave_Lilycove_2F/scripts.pory"
+# 54 "data/maps/RatCave_Lilycove_2F/scripts.pory"
 	waitstate
+# 55 "data/maps/RatCave_Lilycove_2F/scripts.pory"
+	delay 60
+# 56 "data/maps/RatCave_Lilycove_2F/scripts.pory"
+	special ShakeCamera
 # 57 "data/maps/RatCave_Lilycove_2F/scripts.pory"
+	waitstate
+# 58 "data/maps/RatCave_Lilycove_2F/scripts.pory"
 	delay 60
 	return
 
@@ -87,9 +89,9 @@ LilycoveCity_RatCave_Rock_Text_0:
 	.string "Doesn't look like the cave in \n can be cleared anytime soon.$"
 
 RatCave_LilycoveCity_2F_Text_RatduardoIntro::
-# 26 "data/maps/RatCave_Lilycove_2F/scripts.pory"
+# 27 "data/maps/RatCave_Lilycove_2F/scripts.pory"
 	.string "...!$"
 
 RatCave_LilycoveCity_2F_Text_RatduardoDefeat::
-# 30 "data/maps/RatCave_Lilycove_2F/scripts.pory"
+# 31 "data/maps/RatCave_Lilycove_2F/scripts.pory"
 	.string "I... just.. want to be...\n free...$"
