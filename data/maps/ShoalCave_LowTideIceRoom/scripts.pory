@@ -92,19 +92,19 @@ script ShoalCave_LowTideIceRoom_EventScript_AriaLeave{
     if(var(VAR_TEMP_1) == DIR_SOUTH){
         applymovement(3, ShoalCave_LowTideIceRoom_Movement_AriaLeaveUp)
         delay(30)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
         waitmovement(3)
     }
     elif(var(VAR_TEMP_1) == DIR_WEST){
         applymovement(3, ShoalCave_LowTideIceRoom_Movement_AriaLeaveLeft)
         delay(30)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
         waitmovement(3)
     }
     else{
         applymovement(3, ShoalCave_LowTideIceRoom_Movement_AriaLeaveRight)
         delay(30)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
         waitmovement(3)
     }
     return

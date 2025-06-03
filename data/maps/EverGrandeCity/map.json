@@ -56,7 +56,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FLAG_HIDE_BENNIS_VICTORY_ROAD",
+      "script": "NULL",
       "flag": "FLAG_HIDE_BENNIS_VICTORY_ROAD"
     },
     {
@@ -95,8 +95,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY",
-      "flag": "0"
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMMSNARL)",
@@ -108,8 +108,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY",
-      "flag": "0"
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY"
     }
   ],
   "warp_events": [
@@ -249,7 +249,7 @@
       "elevation": 0,
       "var": "VAR_BENNIS_DOJO_STATE",
       "var_value": "3",
-      "script": "EverGrandeCity_EventScript_TriggerRight"
+      "script": "EverGrandeCity_EventScript_BennisTrigger"
     },
     {
       "type": "trigger",
@@ -258,7 +258,7 @@
       "elevation": 0,
       "var": "VAR_BENNIS_DOJO_STATE",
       "var_value": "3",
-      "script": "EverGrandeCity_EventScript_TriggerRight"
+      "script": "EverGrandeCity_EventScript_BennisTriggerRight"
     },
     {
       "type": "trigger",

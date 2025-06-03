@@ -405,25 +405,25 @@ BennisMove1:
 # 258 "data/maps/BennisDojo/scripts.pory"
 faceup:
 # 259 "data/maps/BennisDojo/scripts.pory"
-	face_up
+	walk_in_place_up
 	step_end
 
 # 262 "data/maps/BennisDojo/scripts.pory"
 faceleft:
 # 263 "data/maps/BennisDojo/scripts.pory"
-	face_left
+	walk_in_place_left
 	step_end
 
 # 266 "data/maps/BennisDojo/scripts.pory"
 faceright:
 # 267 "data/maps/BennisDojo/scripts.pory"
-	face_right
+	walk_in_place_right
 	step_end
 
 # 269 "data/maps/BennisDojo/scripts.pory"
 facedown:
 # 270 "data/maps/BennisDojo/scripts.pory"
-	face_down
+	walk_in_place_down
 	step_end
 
 # 273 "data/maps/BennisDojo/scripts.pory"
@@ -471,7 +471,7 @@ AsakLeave:
 # 290 "data/maps/BennisDojo/scripts.pory"
 	walk_right
 # 291 "data/maps/BennisDojo/scripts.pory"
-	face_down
+	walk_in_place_down
 	step_end
 
 # 294 "data/maps/BennisDojo/scripts.pory"

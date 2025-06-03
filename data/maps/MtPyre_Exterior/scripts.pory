@@ -29,7 +29,7 @@ MtPyre_Exterior_EventScript_SunTrigger::
 
 script MtPyre_Exterior_EventScript_Emo{
     lockall
-    applymovement(3, Common_Movement_FaceLeft)
+    applymovement(3, Common_Movement_WalkInPlaceLeft)
     waitmovement(3)
     delay(20)
     playse(SE_PIN)
@@ -67,7 +67,7 @@ script MtPyre_Exterior_EventScript_Emo{
 
 script MtPyre_Exterior_EventScript_Emo2{
     lockall
-    applymovement(3, Common_Movement_FaceLeft)
+    applymovement(3, Common_Movement_WalkInPlaceLeft)
     waitmovement(3)
     delay(20)
     playse(SE_PIN)

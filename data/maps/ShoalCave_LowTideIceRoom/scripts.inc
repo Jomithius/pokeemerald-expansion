@@ -169,7 +169,7 @@ ShoalCave_LowTideIceRoom_EventScript_AriaLeave::
 # 106 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	delay 30
 # 107 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 # 108 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitmovement 3
 ShoalCave_LowTideIceRoom_EventScript_AriaLeave_1:
@@ -181,7 +181,7 @@ ShoalCave_LowTideIceRoom_EventScript_AriaLeave_2:
 # 94 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	delay 30
 # 95 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 # 96 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitmovement 3
 	goto ShoalCave_LowTideIceRoom_EventScript_AriaLeave_1
@@ -192,7 +192,7 @@ ShoalCave_LowTideIceRoom_EventScript_AriaLeave_3:
 # 100 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	delay 30
 # 101 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 # 102 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitmovement 3
 	goto ShoalCave_LowTideIceRoom_EventScript_AriaLeave_1

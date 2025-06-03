@@ -1379,7 +1379,7 @@ MauvilleCity_Trigger_Bikers1::
 # 704 "data/maps/MauvilleCity/scripts.pory"
 	delay 10
 # 705 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 # 706 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 707 "data/maps/MauvilleCity/scripts.pory"
@@ -1465,7 +1465,7 @@ MauvilleCity_Trigger_Bikers2::
 # 749 "data/maps/MauvilleCity/scripts.pory"
 	delay 10
 # 750 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 751 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 752 "data/maps/MauvilleCity/scripts.pory"
@@ -1547,7 +1547,7 @@ MauvilleCity_Trigger_Bikers3::
 # 792 "data/maps/MauvilleCity/scripts.pory"
 	delay 10
 # 793 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 794 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 795 "data/maps/MauvilleCity/scripts.pory"
@@ -1629,7 +1629,7 @@ MauvilleCity_Trigger_Bikers4::
 # 835 "data/maps/MauvilleCity/scripts.pory"
 	delay 10
 # 836 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 # 837 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 838 "data/maps/MauvilleCity/scripts.pory"
@@ -1813,7 +1813,7 @@ MauvilleCity_EventScript_Bikers_WomanWarn::
 # 900 "data/maps/MauvilleCity/scripts.pory"
 	delay 20
 # 901 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 # 902 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 903 "data/maps/MauvilleCity/scripts.pory"
@@ -1825,7 +1825,7 @@ MauvilleCity_EventScript_Bikers_WomanWarn::
 # 906 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
 # 907 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 16, Common_Movement_FaceDown
+	applymovement 16, Common_Movement_WalkInPlaceDown
 # 908 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 16
 # 909 "data/maps/MauvilleCity/scripts.pory"

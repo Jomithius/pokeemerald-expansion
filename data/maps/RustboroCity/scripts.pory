@@ -1331,8 +1331,6 @@ script RustboroCity_EventScript_Misa{
     delay(10)
     msgbox(RustboroMisa1, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox(RustboroMisa2, MSGBOX_AUTOCLOSE)
-    waitmessage
     goto(MisaPlayerMeetRival)
 }
 
@@ -1449,14 +1447,20 @@ script RustboroCityGym_EventScript_Misa{
     delay(10)
     msgbox(RustboroMisa1, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox(RustboroMisa2, MSGBOX_AUTOCLOSE)
-    waitmessage
     goto(MisaPlayerMeetRival)
 }
 
 text RustboroMisa1{"Oh! Excuse me. I didn't see you there.\l
 It's nice to meet you.\n
-My name's MISA."}
+My name's MISA.\p
+MISA: That POKéMON.. So cute!\n
+So you're a new trainer? That's great!\l 
+It looks like you're already raising\l 
+your POKéMON with love and care.\p
+I actually have a son around the\n
+same age as you.\l
+He's also starting his journey soon.\l
+He should be on ROUTE 115 preparing."}
 
 text RustboroMisa2{"MISA: That POKéMON.. So cute!\n
 So you're a new trainer? That's great!\l 
@@ -1476,13 +1480,13 @@ text RustboroMisa4{"Could you do me a favor and go\n
 meet him? He's always been a bit...\l
 different and could use a new friend."}
 
-text RustboroMisaIfYes{"MISA: Thank you! You're so sweet.\n
+text RustboroMisaIfYes{"Thank you! You're so sweet.\n
 Just head north to get to ROUTE 115."}
 
-text RustboroMisaIfNo{"MISA: Oh... Please don't be like that.\n
+text RustboroMisaIfNo{"Oh... Please don't be like that.\n
 Would you reconsider?"}
 
-text RustboroMisa5{"MISA: Oh! I'm almost late for the\n
+text RustboroMisa5{"Oh! I'm almost late for the\n
 meeting! I have to go.\l
 It was nice meeting you, {PLAYER}!"}
 

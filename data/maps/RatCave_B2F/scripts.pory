@@ -50,15 +50,15 @@ script Ratduardo1_BattleTrigger{
 
 movement PlayerRatCave1{
     walk_up * 4
-    face_left
+    walk_in_place_fast_left
 }  
 
 movement PlayerRatCave2{
-    face_right
+    walk_in_place_fast_right
 }
 
 movement PlayerRatCave3{
-   face_up
+   walk_in_place_up
 }
 
 movement PlayerRatCave4{

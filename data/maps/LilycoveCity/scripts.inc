@@ -1571,7 +1571,7 @@ LilycoveCity_EventScript_EmoBully::
 # 789 "data/maps/LilycoveCity/scripts.pory"
 	delay 20
 # 790 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 23, Common_Movement_FaceDown
+	applymovement 23, Common_Movement_WalkInPlaceDown
 # 791 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 23
 # 792 "data/maps/LilycoveCity/scripts.pory"
@@ -1597,7 +1597,7 @@ LilycoveCity_EventScript_EmoBully::
 # 802 "data/maps/LilycoveCity/scripts.pory"
 	waitmessage
 # 803 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 23, Common_Movement_FaceLeft
+	applymovement 23, Common_Movement_WalkInPlaceLeft
 # 804 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 23
 # 805 "data/maps/LilycoveCity/scripts.pory"
@@ -1691,11 +1691,11 @@ LilycoveCity_EventScript_EmoBully::
 # 849 "data/maps/LilycoveCity/scripts.pory"
 	playbgm MUS_END, FALSE
 # 850 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 27, Common_Movement_FaceRight
+	applymovement 27, Common_Movement_WalkInPlaceRight
 # 851 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 27
 # 852 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 28, Common_Movement_FaceUp
+	applymovement 28, Common_Movement_WalkInPlaceUp
 # 853 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 28
 # 854 "data/maps/LilycoveCity/scripts.pory"
@@ -1743,7 +1743,7 @@ LilycoveCity_EventScript_EmoBully::
 # 875 "data/maps/LilycoveCity/scripts.pory"
 	waitmessage
 # 876 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 23, Common_Movement_FaceDown
+	applymovement 23, Common_Movement_WalkInPlaceDown
 # 877 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 23
 # 878 "data/maps/LilycoveCity/scripts.pory"
@@ -1751,7 +1751,7 @@ LilycoveCity_EventScript_EmoBully::
 # 879 "data/maps/LilycoveCity/scripts.pory"
 	waitmessage
 # 880 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 23, Common_Movement_FaceLeft
+	applymovement 23, Common_Movement_WalkInPlaceLeft
 # 881 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 23
 # 882 "data/maps/LilycoveCity/scripts.pory"
@@ -1763,7 +1763,7 @@ LilycoveCity_EventScript_EmoBully::
 # 885 "data/maps/LilycoveCity/scripts.pory"
 	delay 20
 # 886 "data/maps/LilycoveCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 887 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 23
 # 888 "data/maps/LilycoveCity/scripts.pory"
@@ -1790,7 +1790,7 @@ LilycoveCity_Movement_Typhlosion:
 # 975 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
 # 976 "data/maps/LilycoveCity/scripts.pory"
-	face_left
+	walk_in_place_fast_left
 	step_end
 
 # 979 "data/maps/LilycoveCity/scripts.pory"

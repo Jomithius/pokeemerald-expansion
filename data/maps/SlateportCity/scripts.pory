@@ -1463,11 +1463,11 @@ movement MaeSurprised {
 }
 
 movement SlateportFaceUp{
-    face_up
+    walk_in_place_up
 }
 
 movement SlateportFaceLeft{
-    face_left
+    walk_in_place_left
 }
 
 movement SlateportMartEmployeeMove1{
@@ -1477,8 +1477,10 @@ movement SlateportMartEmployeeMove1{
 }
 
 movement SlateportMaeMovesPlayer{
-    walk_left
-    face_right
+    lock_facing_direction
+	walk_left
+    delay_16
+	unlock_facing_direction
 }
 
 movement SlateportMaeLeaves{
@@ -1498,7 +1500,7 @@ movement SlateportMartEmployeeMove2{
 }
 
 movement SlateportFaceRight{
-    face_right
+    walk_in_place_right
 }
 
 movement SlateportConfused{

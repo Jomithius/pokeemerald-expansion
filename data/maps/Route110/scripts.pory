@@ -1,7 +1,7 @@
-raw`.set LOCALID_CHALLENGE_BIKER, 19
-.set LOCALID_RIVAL, 26
-.set LOCALID_RIVAL_ON_BIKE, 27
-.set LOCALID_BIRCH, 33
+raw`.set LOCALID_CHALLENGE_BIKER, 18
+.set LOCALID_RIVAL, 25
+.set LOCALID_RIVAL_ON_BIKE, 26
+.set LOCALID_BIRCH, 32
 
 Route110_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route110_OnResume
@@ -1081,7 +1081,7 @@ script Route110_EventScript_Speedwagon{
 	removeobject(43)
 	removeobject(44)
 	removeobject(45)
-	removeobject(46)
+	removeobject(33)
 	delay(10)
 	fadescreenspeed(FADE_FROM_BLACK, 3)
 	delay(10)
@@ -1125,7 +1125,7 @@ script Route110_Policeman_GiveUturn{
 	else{
 		applymovement(47, Route110_Policeman_East)
 		waitmovement(47)
-		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
 		waitmovement(0)
 	}
 	delay(10)
@@ -1158,7 +1158,7 @@ script Route110_Policeman_GiveUturnNorth{
 	else{
 		applymovement(48, Route110_Policeman_North2)
 		waitmovement(48)
-		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
 		waitmovement(0)
 	}
 	delay(10)

@@ -36,7 +36,7 @@ EverGrandeCity_Text_CitySign:
 	.string "and POKéMON.”$"
 
 `
-script EverGrandeCity_EventScript_Trigger{
+script EverGrandeCity_EventScript_BennisTrigger{
     lockall
     clearflag(FLAG_HIDE_BENNIS_VICTORY_ROAD)
     addobject(3)
@@ -56,13 +56,11 @@ script EverGrandeCity_EventScript_Trigger{
     waitmovement(1)
     msgbox(EverGrandeCity_Text_Asak1, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
-    waitmessage
-    applymovement(2, Common_Movement_FaceLeft)
+    applymovement(2, Common_Movement_WalkInPlaceLeft)
     waitmovement(2)
     msgbox(EverGrandeCity_Text_Asak2, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(2, Common_Movement_FaceDown)
+    applymovement(2, Common_Movement_WalkInPlaceDown)
     waitmovement(2)
     applymovement(1, Common_Movement_WalkDown)
     waitmovement(1)
@@ -70,12 +68,6 @@ script EverGrandeCity_EventScript_Trigger{
     waitmessage
     trainerbattle_no_intro(TRAINER_BENNIS_3, EverGrandeCity_BennisDefeat)
     lockall
-    msgbox("MASTER BENNIS: Hm.\n
-        Still beefy.", MSGBOX_AUTOCLOSE)
-    waitmessage
-    msgbox("ASAK: No way...", MSGBOX_AUTOCLOSE)
-    msgbox("PANINI: P-Panini...", MSGBOX_AUTOCLOSE)
-    waitmessage
     msgbox(EverGrandeCity_Text_Asak3, MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_NONE, FALSE)
@@ -94,7 +86,7 @@ script EverGrandeCity_EventScript_Trigger{
     end
 }
 
-script EverGrandeCity_EventScript_TriggerRight{
+script EverGrandeCity_EventScript_BennisTriggerRight{
     lockall
     clearflag(FLAG_HIDE_BENNIS_VICTORY_ROAD)
     addobject(3)
@@ -114,13 +106,11 @@ script EverGrandeCity_EventScript_TriggerRight{
     waitmovement(1)
     msgbox(EverGrandeCity_Text_Asak1, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
-    waitmessage
-    applymovement(2, Common_Movement_FaceLeft)
+    applymovement(2, Common_Movement_WalkInPlaceLeft)
     waitmovement(2)
     msgbox(EverGrandeCity_Text_Asak2, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(2, Common_Movement_FaceDown)
+    applymovement(2, Common_Movement_WalkInPlaceDown)
     waitmovement(2)
     applymovement(1, EverGrandeCity_Movement_BennisRight)
     waitmovement(1)
@@ -128,12 +118,6 @@ script EverGrandeCity_EventScript_TriggerRight{
     waitmessage
     trainerbattle_no_intro(TRAINER_BENNIS_3, EverGrandeCity_BennisDefeat)
     lockall
-    msgbox("MASTER BENNIS: Hm.\n
-        Still beefy.", MSGBOX_AUTOCLOSE)
-    waitmessage
-    msgbox("ASAK: No way...", MSGBOX_AUTOCLOSE)
-    msgbox("PANINI: P-Panini...", MSGBOX_AUTOCLOSE)
-    waitmessage
     msgbox(EverGrandeCity_Text_Asak3, MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_NONE, FALSE)
@@ -159,8 +143,9 @@ movement EverGrandeCity_Movement_BennisFollower{
 
 text EverGrandeCity_Text_Asak1{
     "ASAK: This time for sure!\n
-    MASTER BENNIS will finally regain\l
-    his honor."
+    MASTER BENNIS will finally regain his\l
+    honor!\p
+    PANINI: Panini!"
 }
 
 text EverGrandeCity_Text_Asak2{
@@ -177,7 +162,10 @@ text EverGrandeCity_BennisDefeat{
 }
 
 text EverGrandeCity_Text_Asak3{
-    "ASAK: Kuh.... W-We won't...\n
+    "MASTER BENNIS: Hm.\n
+    Still beefy.\p
+    PANINI: P-Panini...\p
+    ASAK: Kuh.... W-We won't...\n
     ... Forget..."
 }
 
@@ -226,10 +214,13 @@ script EverGrandeCity_EventScript_James{
     playbgm(MUS_NONE, TRUE)
     msgbox("???: I've been waiting for you.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(5, Common_Movement_FaceDown)
+    applymovement(5, Common_Movement_WalkInPlaceDown)
     waitmovement(5)
     msgbox(EverGrandeCity_Text_James1, MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(5, Common_Movement_WalkDown)
+    waitmovement(5)
+    delay(10)
     playse(SE_BALL_OPEN)
     fadescreen(FADE_TO_WHITE)
     addobject(6)
@@ -241,8 +232,6 @@ script EverGrandeCity_EventScript_James{
     delay(20)
     msgbox(EverGrandeCity_Text_James2, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(5, Common_Movement_WalkDown)
-    waitmovement(5)
     if(var(VAR_TEMP_1) == 1){
         applymovement(OBJ_EVENT_ID_PLAYER, EvergrandeCity_Movement_PlayerLeftTrigger)
     }
@@ -275,6 +264,10 @@ script EverGrandeCity_EventScript_James{
     waitmessage
     msgbox(EverGrandeCity_Text_James5, MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(5, Common_Movement_WalkLeft)
+    waitmovement(5)
+    msgbox(EverGrandeCity_Text_James6, MSGBOX_AUTOCLOSE)
+    waitmessage
     setfieldeffectargument(0, 1)
     dofieldeffect(FLDEFF_NPCFLY_OUT)
     delay(15)
@@ -290,20 +283,20 @@ script EverGrandeCity_EventScript_James{
 }
 
 text EverGrandeCity_Text_James1{
-    "JAMES: A lot changed from the last time\n
+    "A lot changed from the last time\n
     we met.\p
     I heard what happened in SOOTOPOLIS.\n
-    That's must've been crazy.\p
+    That must have been crazy.\p
     At that time I was here.\n
     Working on myself.\p
-    We overcame a lot during our training.\n
-    But there was one thing I still\l
-    never did:\p
+    We overcame a lot during our training,\n
+    but there's still one thing I haven't\l
+    done:\p
     Defeat you."
 }
 
 text EverGrandeCity_Text_James2{
-    "JAMES: One last time."
+    "One last time."
 }
 
 text EvergrandeCity_JamesDefeat{
@@ -314,22 +307,25 @@ text EvergrandeCity_JamesDefeat{
 text EverGrandeCity_Text_James3{
     "JAMES: ...\n
     It feels like I was somehow always\l
-    destined to lose you, {PLAYER}."}
-    
-text EverGrandeCity_Text_James4{
-    "Even so, I'm glad my Mom had me\n
+    destined to lose you, {PLAYER}.\p
+    Even so, I'm glad my mom had me\n
     go on this journey.\p
     I won't challenge the ELITE FOUR yet.\n
-    But I know you're going to.\l
-    Here, take this."
+    But I know you're going to."}
+    
+text EverGrandeCity_Text_James4{
+    "Here, take this."
 }
 
 text EverGrandeCity_Text_James5{
-    "The ELITE FOUR are strong.\n
+    "JAMES: The ELITE FOUR are strong.\n
     Be careful.\p
     {COLOR BLUE}{SHADOW LIGHT_BLUE} The level cap for the ELITE FOUR\n
-    is 75.\p
-    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: Well, I'm gonna go back home for now.\n
+    is 75."
+}
+
+text EverGrandeCity_Text_James6{
+    "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Well, I'm gonna go back home for now.\n
     See ya, {PLAYER}."
 }
 

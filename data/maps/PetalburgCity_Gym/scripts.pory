@@ -1162,12 +1162,12 @@ PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
 	.string "LUNA: Hm? You're… Uh… Oh, right.\n"
 	.string "You're WALLY, right?\p"
-	.string "You know this is a GYM,\n"
-	.string "not a charity, right?$"
+	.string "You do know this is a GYM.\n"
+	.string "Not a charity.$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
-	.string "WALLY: I'm going to go stay with my\n"
-	.string "relatives in VERDANTURF TOWN.\p"
+	.string "WALLY: But I'm going to go stay with\n"
+	.string "my relatives in VERDANTURF TOWN.\p"
 	.string "I thought I would be lonely by myself,\n"
 	.string "so I wanted to take a POKéMON along.\p"
 	.string "But I've never caught a POKéMON before.\n"
@@ -1184,7 +1184,8 @@ PetalburgCity_Gym_Text_DadPlayerGoWithWally:
 	.string "he catches a POKéMON?$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
-	.string "WALLY, here, uh, just borrow this or something.\p"
+	.string "WALLY, here, uh, just borrow this\n"
+	.string "or something.\p"
 	.string "WALLY received a ZIGZAGOON!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:

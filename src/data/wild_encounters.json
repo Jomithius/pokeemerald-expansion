@@ -1736,6 +1736,71 @@
         {
           "map": "MAP_ROUTE124",
           "base_label": "gRoute124",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 28,
+                "max_level": 28,
+                "species": "SPECIES_SHELLOS_EAST"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_KLEFKI"
+              },
+              {
+                "min_level": 31,
+                "max_level": 32,
+                "species": "SPECIES_TIRTOUGA"
+              },
+              {
+                "min_level": 28,
+                "max_level": 28,
+                "species": "SPECIES_ANORITH"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_LILEEP"
+              },
+              {
+                "min_level": 30,
+                "max_level": 32,
+                "species": "SPECIES_THROH"
+              },
+              {
+                "min_level": 30,
+                "max_level": 32,
+                "species": "SPECIES_PALPITOAD"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_SAWK"
+              },
+              {
+                "min_level": 30,
+                "max_level": 32,
+                "species": "SPECIES_KABUTOPS"
+              },
+              {
+                "min_level": 30,
+                "max_level": 32,
+                "species": "SPECIES_OMASTAR"
+              },
+              {
+                "min_level": 31,
+                "max_level": 31,
+                "species": "SPECIES_MUNCHLAX"
+              },
+              {
+                "min_level": 32,
+                "max_level": 32,
+                "species": "SPECIES_SNORLAX"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [
@@ -1818,71 +1883,6 @@
                 "min_level": 40,
                 "max_level": 45,
                 "species": "SPECIES_WAILMER"
-              }
-            ]
-          },
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_SHELLOS_EAST"
-              },
-              {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_KLEFKI"
-              },
-              {
-                "min_level": 31,
-                "max_level": 32,
-                "species": "SPECIES_TIRTOUGA"
-              },
-              {
-                "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_ANORITH"
-              },
-              {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_LILEEP"
-              },
-              {
-                "min_level": 30,
-                "max_level": 32,
-                "species": "SPECIES_THROH"
-              },
-              {
-                "min_level": 30,
-                "max_level": 32,
-                "species": "SPECIES_PALPITOAD"
-              },
-              {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_SAWK"
-              },
-              {
-                "min_level": 30,
-                "max_level": 32,
-                "species": "SPECIES_KABUTOPS"
-              },
-              {
-                "min_level": 30,
-                "max_level": 32,
-                "species": "SPECIES_OMASTAR"
-              },
-              {
-                "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_MUNCHLAX"
-              },
-              {
-                "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_SNORLAX"
               }
             ]
           }
@@ -2443,7 +2443,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_CLAWITZER"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 5,
@@ -5779,7 +5779,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_CLAWITZER"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 5,
@@ -8904,12 +8904,12 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_QWILFISH"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_QWILFISH_HISUI"
+                "species": "SPECIES_CORSOLA"
               },
               {
                 "min_level": 10,

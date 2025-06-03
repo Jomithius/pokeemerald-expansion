@@ -273,19 +273,19 @@ Route112_EventScript_Emo::
 # 143 "data/maps/Route112/scripts.pory"
 	clearflag FLAG_EMO_ROUTE_112
 # 144 "data/maps/Route112/scripts.pory"
-	addobject 15
+	addobject 14
 # 145 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_WalkDown
+	applymovement 14, Common_Movement_WalkDown
 # 146 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 147 "data/maps/Route112/scripts.pory"
 	delay 40
 # 148 "data/maps/Route112/scripts.pory"
 	playse SE_PIN
 # 149 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_ExclamationMark
+	applymovement 14, Common_Movement_ExclamationMark
 # 150 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 151 "data/maps/Route112/scripts.pory"
 	delay 40
 # 152 "data/maps/Route112/scripts.pory"
@@ -311,9 +311,9 @@ Route112_EventScript_Emo::
 # 162 "data/maps/Route112/scripts.pory"
 	delay 10
 # 163 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_FaceRight
+	applymovement 14, Common_Movement_FaceRight
 # 164 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 165 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_Emo3, MSGBOX_AUTOCLOSE
 # 166 "data/maps/Route112/scripts.pory"
@@ -327,23 +327,23 @@ Route112_EventScript_Emo::
 # 170 "data/maps/Route112/scripts.pory"
 	delay 30
 # 171 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_FacePlayer
+	applymovement 14, Common_Movement_FacePlayer
 # 172 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 173 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_Emo4, MSGBOX_AUTOCLOSE
 # 174 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 175 "data/maps/Route112/scripts.pory"
-	applymovement 15, Route112_Movement_EmoLeave
+	applymovement 14, Route112_Movement_EmoLeave
 # 176 "data/maps/Route112/scripts.pory"
 	delay 30
 # 177 "data/maps/Route112/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 # 178 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 179 "data/maps/Route112/scripts.pory"
-	removeobject 15
+	removeobject 14
 # 180 "data/maps/Route112/scripts.pory"
 	fadedefaultbgm
 # 181 "data/maps/Route112/scripts.pory"
@@ -365,27 +365,27 @@ Route112_EventScript_Emo_West::
 # 191 "data/maps/Route112/scripts.pory"
 	clearflag FLAG_EMO_ROUTE_112
 # 192 "data/maps/Route112/scripts.pory"
-	addobject 15
+	addobject 14
 # 193 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_WalkDown
+	applymovement 14, Common_Movement_WalkDown
 # 194 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 195 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_FaceRight
+	applymovement 14, Common_Movement_WalkInPlaceRight
 # 196 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 197 "data/maps/Route112/scripts.pory"
 	delay 40
 # 198 "data/maps/Route112/scripts.pory"
 	playse SE_PIN
 # 199 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_ExclamationMark
+	applymovement 14, Common_Movement_ExclamationMark
 # 200 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 201 "data/maps/Route112/scripts.pory"
 	delay 40
 # 202 "data/maps/Route112/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 203 "data/maps/Route112/scripts.pory"
 	waitmovement 0
 # 204 "data/maps/Route112/scripts.pory"
@@ -407,9 +407,9 @@ Route112_EventScript_Emo_West::
 # 212 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 213 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_FaceDown
+	applymovement 14, Common_Movement_WalkInPlaceDown
 # 214 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 215 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_Emo3, MSGBOX_AUTOCLOSE
 # 216 "data/maps/Route112/scripts.pory"
@@ -423,27 +423,27 @@ Route112_EventScript_Emo_West::
 # 220 "data/maps/Route112/scripts.pory"
 	delay 30
 # 221 "data/maps/Route112/scripts.pory"
-	applymovement 15, Common_Movement_FacePlayer
+	applymovement 14, Common_Movement_FacePlayer
 # 222 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 223 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_Emo4, MSGBOX_AUTOCLOSE
 # 224 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 225 "data/maps/Route112/scripts.pory"
-	applymovement 15, Route112_Movement_EmoLeaveWest
+	applymovement 14, Route112_Movement_EmoLeaveWest
 # 226 "data/maps/Route112/scripts.pory"
 	delay 30
 # 227 "data/maps/Route112/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 # 228 "data/maps/Route112/scripts.pory"
 	delay 20
 # 229 "data/maps/Route112/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 # 230 "data/maps/Route112/scripts.pory"
-	waitmovement 15
+	waitmovement 14
 # 231 "data/maps/Route112/scripts.pory"
-	removeobject 15
+	removeobject 14
 # 232 "data/maps/Route112/scripts.pory"
 	fadedefaultbgm
 # 233 "data/maps/Route112/scripts.pory"

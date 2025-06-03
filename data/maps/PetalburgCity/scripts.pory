@@ -767,20 +767,6 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm sorry to have taken your time.$"
 `
 
-script PetalburgCity_EventScript_LunaLeftTrigger{
-	applymovement(OBJ_EVENT_ID_PLAYER, PetalburgCity_RatCaveTriggerLeft)
-	waitmovement(0)
-	delay(10)
-	goto(PetalburgCity_EventScript_Luna)
-}
-
-script PetalburgCity_EventScript_LunaRightTrigger{
-	applymovement(OBJ_EVENT_ID_PLAYER, PetalburgCity_RatCaveTriggerRight)
-	waitmovement(0)
-	delay(10)
-	goto(PetalburgCity_EventScript_Luna)
-}
-
 script PetalburgCity_EventScript_Luna {
     lockall
     opendoor(22,7)
@@ -793,7 +779,7 @@ script PetalburgCity_EventScript_Luna {
 	waitdooranim
     msgbox(PetalburgCity_LunaText1, MSGBOX_AUTOCLOSE)
     waitmessage
-	applymovement(9, PetalburgWalkDown)
+	applymovement(9, Common_Movement_WalkDown)
 	waitmovement(9)
     call(PetalburgCity_LunaBattle)
     waitmessage
@@ -801,12 +787,87 @@ script PetalburgCity_EventScript_Luna {
     waitmessage
     applymovement(9, PetalburgCity_LunaMove1)
     waitmovement(9)
-	applymovement(OBJ_EVENT_ID_PLAYER, PetalburgFaceDown)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	waitmovement(0)
     msgbox(PetalburgCity_LunaText3, MSGBOX_AUTOCLOSE)
     waitmessage
 	applymovement(9, PetalburgCity_LunaLeave)
 	delay(20)
-	applymovement(OBJ_EVENT_ID_PLAYER, PetalburgFaceLeft)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	waitmovement(9)
+	delay(30)
+	removeobject(9)
+	setflag(FLAG_HIDE_PETALBURG_CITY_LUNA)
+	setflag(FLAG_HIDE_PETALBURG_GYM_NORMAN) 
+	setvar(VAR_RAT_CAVE_STATE, 3)
+	releaseall
+	end
+}
+
+script PetalburgCity_EventScript_LunaLeft{
+    lockall
+    opendoor(22,7)
+	waitdooranim
+	addobject(9)
+	delay(10)
+	applymovement(9, Common_Movement_WalkDown)
+	waitmovement(9)
+	closedoor(22,7)
+	waitdooranim
+    msgbox(PetalburgCity_LunaText1, MSGBOX_AUTOCLOSE)
+    waitmessage
+	applymovement(9, PetalburgCity_Movement_LunaLeftTrigger)
+	waitmovement(9)
+    call(PetalburgCity_LunaBattle)
+    waitmessage
+    msgbox(PetalburgCity_LunaText2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(9, PetalburgCity_LunaMove1LeftTrigger)
+    waitmovement(9)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	waitmovement(0)
+    msgbox(PetalburgCity_LunaText3, MSGBOX_AUTOCLOSE)
+    waitmessage
+	applymovement(9, PetalburgCity_LunaLeave2)
+	delay(20)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	waitmovement(9)
+	delay(30)
+	removeobject(9)
+	setflag(FLAG_HIDE_PETALBURG_CITY_LUNA)
+	setflag(FLAG_HIDE_PETALBURG_GYM_NORMAN) 
+	setvar(VAR_RAT_CAVE_STATE, 3)
+	releaseall
+	end
+}
+
+script PetalburgCity_EventScript_LunaRight{
+    lockall
+    opendoor(22,7)
+	waitdooranim
+	addobject(9)
+	delay(10)
+	applymovement(9, Common_Movement_WalkDown)
+	waitmovement(9)
+	closedoor(22,7)
+	waitdooranim
+    msgbox(PetalburgCity_LunaText1, MSGBOX_AUTOCLOSE)
+    waitmessage
+	applymovement(9, PetalburgCity_Movement_LunaRightTrigger)
+	waitmovement(9)
+    call(PetalburgCity_LunaBattle)
+    waitmessage
+    msgbox(PetalburgCity_LunaText2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(9, PetalburgCity_LunaMove1)
+    waitmovement(9)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	waitmovement(0)
+    msgbox(PetalburgCity_LunaText3, MSGBOX_AUTOCLOSE)
+    waitmessage
+	applymovement(9, PetalburgCity_LunaLeave2)
+	delay(20)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
 	waitmovement(9)
 	delay(30)
 	removeobject(9)
@@ -894,10 +955,16 @@ text LunaGone_FantasiaHint{
 	He said he was meeting somebody\l
 	at MT. PYRE.\p
 	I have no idea why he would want to\n
-	go to such a haunted place."}
+	go to such a haunted place."
+}
 
 movement PetalburgCity_LunaMove1 {
     walk_left 
+    walk_down * 2
+} 
+
+movement PetalburgCity_LunaMove1LeftTrigger{
+    walk_right 
     walk_down * 2
 } 
 
@@ -905,10 +972,16 @@ movement PetalburgCity_LunaLeave {
     walk_left * 9
 } 
 
-movement PetalburgFaceUp {face_up}
-movement PetalburgFaceDown {face_down}
-movement PetalburgFaceRight {face_right}
-movement PetalburgFaceLeft {face_left}
+movement PetalburgCity_LunaLeave2{
+    walk_left * 7
+	walk_down 
+	walk_left * 3
+} 
+
+movement PetalburgFaceUp {walk_in_place_up}
+movement PetalburgFaceDown {walk_in_place_down}
+movement PetalburgFaceRight {walk_in_place_right}
+movement PetalburgFaceLeft {walk_in_place_left}
 movement PetalburgWalkUp{walk_up}
 movement PetalburgWalkDown{walk_down}
 movement PetalburgCityFacePlayer{face_player}
@@ -919,4 +992,14 @@ movement PetalburgCity_RatCaveTriggerLeft{
 movement PetalburgCity_RatCaveTriggerRight{
 	walk_left
 	face_up
+}
+
+movement PetalburgCity_Movement_LunaLeftTrigger{
+	walk_left
+	walk_down
+}
+
+movement PetalburgCity_Movement_LunaRightTrigger{
+	walk_right
+	walk_down
 }

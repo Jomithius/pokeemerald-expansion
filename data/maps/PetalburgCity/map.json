@@ -304,21 +304,21 @@
     },
     {
       "type": "trigger",
-      "x": 21,
-      "y": 10,
-      "elevation": 0,
-      "var": "VAR_RAT_CAVE_STATE",
-      "var_value": "2",
-      "script": "PetalburgCity_EventScript_LunaLeftTrigger"
-    },
-    {
-      "type": "trigger",
       "x": 23,
       "y": 10,
       "elevation": 0,
       "var": "VAR_RAT_CAVE_STATE",
       "var_value": "2",
-      "script": "PetalburgCity_EventScript_LunaRightTrigger"
+      "script": "PetalburgCity_EventScript_LunaRight"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "2",
+      "script": "PetalburgCity_EventScript_LunaLeft"
     }
   ],
   "bg_events": [

@@ -10697,7 +10697,7 @@ F_TRAINER_FEMALE |
 #line 4322
         .aiFlags = AI_FLAG_SMART_TRAINER,
 #line 4323
-        .mugshotColor = MUGSHOT_COLOR_PURPLE,
+        .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -10811,13 +10811,13 @@ F_TRAINER_FEMALE |
 #line 4367
             .gender = TRAINER_MON_MALE,
 #line 4367
-            .heldItem = ITEM_CHOICE_SCARF,
+            .heldItem = ITEM_LEFTOVERS,
 #line 4370
             .ev = TRAINER_PARTY_EVS(4, 0, 0, 252, 252, 0),
 #line 4372
             .iv = TRAINER_PARTY_IVS(31, 0, 30, 31, 31, 31),
 #line 4368
-            .ability = ABILITY_BLAZE,
+            .ability = ABILITY_FRISK,
 #line 4369
             .lvl = 50,
 #line 4371

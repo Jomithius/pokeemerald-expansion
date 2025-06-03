@@ -256,18 +256,18 @@ ASAK: W-We won't forget this\n
 humiliation!"}
 
 movement faceup {
-    face_up
+    walk_in_place_up
 }
 
 movement faceleft {
-    face_left
+    walk_in_place_left
 }
 
 movement faceright{
-    face_right
+    walk_in_place_right
 }
 movement facedown{
-    face_down
+    walk_in_place_down
 }
 
 movement PlayerLeaves {
@@ -288,7 +288,7 @@ movement AsakMove3{
 movement AsakLeave{
     walk_up
     walk_right * 4
-    face_down
+    walk_in_place_down
 }
 
 movement PaniniLeave{

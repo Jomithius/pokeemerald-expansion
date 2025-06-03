@@ -172,7 +172,7 @@ Route116_RusturfTunnel_Peak_DacaLeave::
 # 128 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	delay 20
 # 129 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 # 130 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmovement 2
 # 131 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
@@ -205,7 +205,7 @@ Route116_RusturfTunnel_Peak_DacaLeave_1:
 # 110 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	delay 20
 # 111 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 # 112 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	waitmovement 2
 # 113 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"

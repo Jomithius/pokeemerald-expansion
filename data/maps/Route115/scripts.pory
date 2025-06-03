@@ -145,24 +145,6 @@ Route115_Text_MeteorFallsSign:
 
 `
 
-script Route115_EventScript_TriggerRight_RivalEmo{
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, Route115MoveLeft)
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceUp)
-    waitmovement(0)
-    call(Route115_EventScript_Trigger_RivalEmo)
-}
-
-script Route115_EventScript_TriggerLeft_RivalEmo{
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, Route115MoveRight)
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceUp)
-    waitmovement(0)
-    call(Route115_EventScript_Trigger_RivalEmo)
-}
-
 script Route115_EventScript_Trigger_RivalEmo{
     lockall
     playbgm(MUS_DUMMY, FALSE)
@@ -190,13 +172,13 @@ script Route115_EventScript_Trigger_RivalEmo{
     delay(60)
     playbgm(MUS_PYRITE_THEME, TRUE)
     delay(10)
-    applymovement(24, Route115EmoMove1)
-    waitmovement(24)
+    applymovement(22, Route115EmoMove1)
+    waitmovement(22)
     delay(10)
     msgbox(Route115Emo2, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(24, Route115FaceUp)
-    waitmovement(24)
+    applymovement(22, Route115FaceUp)
+    waitmovement(22)
     delay(180)
     msgbox("...", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -206,59 +188,59 @@ script Route115_EventScript_Trigger_RivalEmo{
     delay(60)
     msgbox(Route115Emo4, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(24, Route115FaceDown)
+    applymovement(22, Route115FaceDown)
     waitmovement(0)
     msgbox(Route115Emo5, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(24, Route115EmoMove2)
-    waitmovement(24)
+    applymovement(22, Route115EmoMove2)
+    waitmovement(22)
     call(Route115_RivalBattle)
     clearflag(FLAG_HIDE_MISA_ROUTE115)
-    addobject(25)
+    addobject(23)
     msgbox(Route115Emo6, MSGBOX_AUTOCLOSE)
     waitmessage
     msgbox("Oh, you're still out here!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
-    applymovement(24, Route115Exclaim)
-    waitmovement(24)
+    applymovement(22, Route115Exclaim)
+    waitmovement(22)
     delay(30)
-    applymovement (24, Route115EmoMove3) 
+    applymovement (22, Route115EmoMove3) 
     applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
     waitmovement(0)
     delay(20)
-    applymovement(25, Route115MisaWalkUp)
-    waitmovement(25)
+    applymovement(23, Route115MisaWalkUp)
+    waitmovement(23)
     delay(80)
     msgbox("MISA: Are you two having fun?")
     waitmessage
-    applymovement(24, Route115FaceLeft)
-    waitmovement(24)
+    applymovement(22, Route115FaceLeft)
+    waitmovement(22)
     msgbox(Route115Emo7, MSGBOX_AUTOCLOSE)
     waitmessage
     msgbox(Route115Misa1, MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_DUMMY,FALSE)
-    applymovement(24, Route115FaceRight)
-    waitmovement(24)
-    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceLeft)
+    applymovement(22, Common_Movement_FaceRight)
+    waitmovement(22)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)
     delay(120)
-    applymovement(24, Route115FaceLeft)
-    waitmovement(24)
+    applymovement(22, Common_Movement_FaceLeft)
+    waitmovement(22)
     delay(120)
     playse(SE_M_GUST)
     delay(60)
     playse(SE_M_GUST2)
     delay(60)
-    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
     waitmovement(0)
     delay(60)
     msgbox("MISA: ...Oh! Um.. I mean... JOMITHIUS,\n
     right?" MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(24, Route115FaceDown)
-    waitmovement(24)
+    applymovement(22, Route115FaceDown)
+    waitmovement(22)
     delay(60)
     playbgm(MUS_PYRITE_THEME, FALSE)
     delay(20)
@@ -266,21 +248,277 @@ script Route115_EventScript_Trigger_RivalEmo{
     waitmessage
     msgbox(Route115Misa2, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(25, Route115MisaLeave)
-    waitmovement(25)
+    applymovement(23, Route115MisaLeave)
+    waitmovement(23)
     delay(30)
-    removeobject(25)
-    applymovement(24, Route115FaceRight)
-    waitmovement(24)
+    removeobject(23)
+    applymovement(22, Route115FaceRight)
+    waitmovement(22)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceLeft)
     waitmovement(0)
     msgbox(Route115Emo9, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(24, Route115MisaLeave)
-    waitmovement(24)
+    applymovement(22, Route115MisaLeave)
+    waitmovement(22)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
     waitmovement(0)
-    removeobject(24)
+    removeobject(22)
+    delay(60)
+    savebgm(MUS_DUMMY)
+	fadedefaultbgm
+    setflag(FLAG_HIDE_RIVAL_ROUTE115)
+    setflag(FLAG_HIDE_MISA_ROUTE115)
+    setvar(VAR_MISA_STATE, 2)
+    releaseall
+    end
+}
+
+script Route115_EventScript_TriggerRight_RivalEmo{
+    lockall
+    playbgm(MUS_DUMMY, FALSE)
+    msgbox("WAIT! It's dangerous!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Exclaim)
+    waitmovement(0)
+    msgbox(Route115Emo1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(120)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(20)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(10)
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_BIKE_HOP)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
+    waitmovement(0)
+    delay(60)
+    playbgm(MUS_PYRITE_THEME, TRUE)
+    delay(10)
+    applymovement(22, Route115EmoMove1Right)
+    waitmovement(22)
+    delay(10)
+    msgbox(Route115Emo2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Route115FaceUp)
+    waitmovement(22)
+    delay(180)
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_BIKE_HOP)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
+    waitmovement(0)
+    delay(60)
+    msgbox(Route115Emo4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Route115FaceDown)
+    waitmovement(0)
+    msgbox(Route115Emo5, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Common_Movement_WalkDown)
+    waitmovement(22)
+    call(Route115_RivalBattle)
+    clearflag(FLAG_HIDE_MISA_ROUTE115)
+    addobject(23)
+    msgbox(Route115Emo6, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("Oh, you're still out here!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(22, Route115Exclaim)
+    waitmovement(22)
+    delay(30)
+    applymovement (22, Route115EmoMove3) 
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
+    waitmovement(0)
+    delay(20)
+    applymovement(23, Route115MisaWalkUpRight)
+    waitmovement(23)
+    delay(80)
+    msgbox("MISA: Are you two having fun?")
+    waitmessage
+    applymovement(22, Route115FaceLeft)
+    waitmovement(22)
+    msgbox(Route115Emo7, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(Route115Misa1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_DUMMY,FALSE)
+    applymovement(22, Common_Movement_FaceRight)
+    waitmovement(22)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    delay(120)
+    applymovement(22, Common_Movement_FaceLeft)
+    waitmovement(22)
+    delay(120)
+    playse(SE_M_GUST)
+    delay(60)
+    playse(SE_M_GUST2)
+    delay(60)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(60)
+    msgbox("MISA: ...Oh! Um.. I mean... JOMITHIUS,\n
+    right?" MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Route115FaceDown)
+    waitmovement(22)
+    delay(60)
+    playbgm(MUS_PYRITE_THEME, FALSE)
+    delay(20)
+    msgbox(Route115Emo8, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(Route115Misa2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(23, Route115MisaLeave)
+    waitmovement(23)
+    delay(30)
+    removeobject(23)
+    applymovement(22, Route115FaceRight)
+    waitmovement(22)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceLeft)
+    waitmovement(0)
+    msgbox(Route115Emo9, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Route115MisaLeave)
+    waitmovement(22)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
+    waitmovement(0)
+    removeobject(22)
+    delay(60)
+    savebgm(MUS_DUMMY)
+	fadedefaultbgm
+    setflag(FLAG_HIDE_RIVAL_ROUTE115)
+    setflag(FLAG_HIDE_MISA_ROUTE115)
+    setvar(VAR_MISA_STATE, 2)
+    releaseall
+    end
+}
+
+script Route115_EventScript_TriggerLeft_RivalEmo{
+    lockall
+    playbgm(MUS_DUMMY, FALSE)
+    msgbox("WAIT! It's dangerous!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Exclaim)
+    waitmovement(0)
+    msgbox(Route115Emo1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(120)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(20)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(10)
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_BIKE_HOP)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
+    waitmovement(0)
+    delay(60)
+    playbgm(MUS_PYRITE_THEME, TRUE)
+    delay(10)
+    applymovement(22, Route115EmoMove1Left)
+    waitmovement(22)
+    delay(10)
+    msgbox(Route115Emo2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Route115FaceUp)
+    waitmovement(22)
+    delay(180)
+    msgbox("...", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_BIKE_HOP)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
+    waitmovement(0)
+    delay(60)
+    msgbox(Route115Emo4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Route115FaceDown)
+    waitmovement(0)
+    msgbox(Route115Emo5, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Common_Movement_WalkDown)
+    waitmovement(22)
+    call(Route115_RivalBattle)
+    clearflag(FLAG_HIDE_MISA_ROUTE115)
+    addobject(23)
+    msgbox(Route115Emo6, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox("Oh, you're still out here!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(22, Route115Exclaim)
+    waitmovement(22)
+    delay(30)
+    applymovement (22, Route115EmoMove3Left) 
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
+    waitmovement(0)
+    delay(20)
+    applymovement(23, Route115MisaWalkUpRight)
+    waitmovement(23)
+    delay(80)
+    msgbox("MISA: Are you two having fun?")
+    waitmessage
+    applymovement(22, Route115FaceRight)
+    waitmovement(22)
+    msgbox(Route115Emo7, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(Route115Misa1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_DUMMY,FALSE)
+    applymovement(22, Common_Movement_FaceLeft)
+    waitmovement(22)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    delay(120)
+    applymovement(22, Common_Movement_FaceRight)
+    waitmovement(22)
+    delay(120)
+    playse(SE_M_GUST)
+    delay(60)
+    playse(SE_M_GUST2)
+    delay(60)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(60)
+    msgbox("MISA: ...Oh! Um.. I mean... JOMITHIUS,\n
+    right?" MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Route115FaceDown)
+    waitmovement(22)
+    delay(60)
+    playbgm(MUS_PYRITE_THEME, FALSE)
+    delay(20)
+    msgbox(Route115Emo8, MSGBOX_AUTOCLOSE)
+    waitmessage
+    msgbox(Route115Misa2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(23, Route115MisaLeave)
+    waitmovement(23)
+    delay(30)
+    removeobject(23)
+    applymovement(22, Route115FaceLeft)
+    waitmovement(22)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceRight)
+    waitmovement(0)
+    msgbox(Route115Emo9, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, Route115MisaLeave)
+    waitmovement(22)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
+    waitmovement(0)
+    removeobject(22)
     delay(60)
     savebgm(MUS_DUMMY)
 	fadedefaultbgm
@@ -300,8 +538,8 @@ script Route115_RivalBattle{
 text Route115Emo1{"Don't come any closer. Hold on.."}
 
 text Route115Emo2{"Sorry. It's hard to control this power.\n
-Any closer and you could've been pulled\l
-into the void...\l
+Any closer and you could've been\l
+pulled into the void...\p
 Anyways, who are you?\n
 ...\p
 {PLAYER}, huh?\n
@@ -351,12 +589,28 @@ movement Route115EmoMove1{
     walk_down * 2
 }
 
+movement Route115EmoMove1Right{
+    walk_right
+    walk_down * 2
+}
+
+movement Route115EmoMove1Left{
+    walk_down
+    walk_left
+    walk_down
+}
+
 movement Route115EmoMove2{
     walk_down
 }
 
 movement Route115EmoMove3{
     walk_fast_left
+    walk_fast_down
+}
+
+movement Route115EmoMove3Left{
+    walk_fast_right
     walk_fast_down
 }
 
@@ -370,6 +624,10 @@ movement Route115MisaWalkUp{
     face_up
 }
 
+movement Route115MisaWalkUpRight{
+    walk_up * 5
+}
+
 movement Route115MisaLeave{
     walk_down * 5
     walk_right
@@ -381,19 +639,19 @@ movement Route115Confused{
 }
 
 movement Route115FaceUp{
-    face_up
+    walk_in_place_up
 }
 
 movement Route115FaceDown{
-    face_down
+    walk_in_place_down
 }
 
 movement Route115FaceRight{
-    face_right
+    walk_in_place_right
 }
 
 movement Route115FaceLeft{
-    face_left
+    walk_in_place_left
 }
 
 movement Route115MoveLeft{

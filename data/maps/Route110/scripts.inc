@@ -1,11 +1,11 @@
 # 1 "data/maps/Route110/scripts.pory"
-.set LOCALID_CHALLENGE_BIKER, 19
+.set LOCALID_CHALLENGE_BIKER, 18
 # 2 "data/maps/Route110/scripts.pory"
-.set LOCALID_RIVAL, 26
+.set LOCALID_RIVAL, 25
 # 3 "data/maps/Route110/scripts.pory"
-.set LOCALID_RIVAL_ON_BIKE, 27
+.set LOCALID_RIVAL_ON_BIKE, 26
 # 4 "data/maps/Route110/scripts.pory"
-.set LOCALID_BIRCH, 33
+.set LOCALID_BIRCH, 32
 # 5 "data/maps/Route110/scripts.pory"
 
 # 6 "data/maps/Route110/scripts.pory"
@@ -2095,7 +2095,7 @@ Route110_EventScript_Speedwagon::
 # 1083 "data/maps/Route110/scripts.pory"
 	removeobject 45
 # 1084 "data/maps/Route110/scripts.pory"
-	removeobject 46
+	removeobject 33
 # 1085 "data/maps/Route110/scripts.pory"
 	delay 10
 # 1086 "data/maps/Route110/scripts.pory"
@@ -2134,7 +2134,7 @@ Route110_Policeman_GiveUturn::
 # 1127 "data/maps/Route110/scripts.pory"
 	waitmovement 47
 # 1128 "data/maps/Route110/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 # 1129 "data/maps/Route110/scripts.pory"
 	waitmovement 0
 Route110_Policeman_GiveUturn_1:
@@ -2195,7 +2195,7 @@ Route110_Policeman_GiveUturnNorth::
 # 1160 "data/maps/Route110/scripts.pory"
 	waitmovement 48
 # 1161 "data/maps/Route110/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 1162 "data/maps/Route110/scripts.pory"
 	waitmovement 0
 Route110_Policeman_GiveUturnNorth_1:

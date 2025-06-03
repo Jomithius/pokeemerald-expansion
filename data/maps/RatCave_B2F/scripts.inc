@@ -99,19 +99,19 @@ PlayerRatCave1:
 # 52 "data/maps/RatCave_B2F/scripts.pory"
 	walk_up
 # 53 "data/maps/RatCave_B2F/scripts.pory"
-	face_left
+	walk_in_place_fast_left
 	step_end
 
 # 56 "data/maps/RatCave_B2F/scripts.pory"
 PlayerRatCave2:
 # 57 "data/maps/RatCave_B2F/scripts.pory"
-	face_right
+	walk_in_place_fast_right
 	step_end
 
 # 60 "data/maps/RatCave_B2F/scripts.pory"
 PlayerRatCave3:
 # 61 "data/maps/RatCave_B2F/scripts.pory"
-	face_up
+	walk_in_place_up
 	step_end
 
 # 64 "data/maps/RatCave_B2F/scripts.pory"

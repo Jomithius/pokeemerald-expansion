@@ -3,7 +3,7 @@
 # 2 "data/maps/Route104/scripts.pory"
 @  These are labeled in DewfordTown/scripts.inc
 # 3 "data/maps/Route104/scripts.pory"
-.set LOCALID_RIVAL, 34
+.set LOCALID_RIVAL, 33
 # 4 "data/maps/Route104/scripts.pory"
 
 # 5 "data/maps/Route104/scripts.pory"

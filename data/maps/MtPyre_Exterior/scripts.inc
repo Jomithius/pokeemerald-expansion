@@ -55,7 +55,7 @@ MtPyre_Exterior_EventScript_Emo::
 # 31 "data/maps/MtPyre_Exterior/scripts.pory"
 	lockall
 # 32 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, Common_Movement_FaceLeft
+	applymovement 3, Common_Movement_WalkInPlaceLeft
 # 33 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmovement 3
 # 34 "data/maps/MtPyre_Exterior/scripts.pory"
@@ -127,7 +127,7 @@ MtPyre_Exterior_EventScript_Emo2::
 # 69 "data/maps/MtPyre_Exterior/scripts.pory"
 	lockall
 # 70 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, Common_Movement_FaceLeft
+	applymovement 3, Common_Movement_WalkInPlaceLeft
 # 71 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmovement 3
 # 72 "data/maps/MtPyre_Exterior/scripts.pory"
