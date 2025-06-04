@@ -11,6 +11,7 @@ script LilycoveCity_RatCave_Rock {
 
 script RatCave_LilycoveCity_2F_EventScript_Ratduardo{
     lockall
+    delay(20)
     playse(SE_PIN)
     applymovement(3, Common_Movement_ExclamationMark)
     waitmovement(3)

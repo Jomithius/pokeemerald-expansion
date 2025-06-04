@@ -44859,7 +44859,7 @@ F_TRAINER_FEMALE |
 #line 17985
             .ability = ABILITY_INNER_FOCUS,
 #line 17986
-            .lvl = 18,
+            .lvl = 16,
 #line 17988
             .nature = NATURE_SASSY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -44883,7 +44883,7 @@ F_TRAINER_FEMALE |
 #line 17994
             .ability = ABILITY_PRANKSTER,
 #line 17995
-            .lvl = 18,
+            .lvl = 17,
 #line 17997
             .nature = NATURE_IMPISH,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -44907,7 +44907,7 @@ F_TRAINER_FEMALE |
 #line 18003
             .ability = ABILITY_INNER_FOCUS,
 #line 18004
-            .lvl = 19,
+            .lvl = 16,
 #line 18006
             .nature = NATURE_RELAXED,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -44950,7 +44950,7 @@ F_TRAINER_FEMALE |
 #line 18021
             .ability = ABILITY_VITAL_SPIRIT,
 #line 18022
-            .lvl = 18,
+            .lvl = 16,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -44972,7 +44972,7 @@ F_TRAINER_FEMALE |
 #line 18030
             .ability = ABILITY_POISON_TOUCH,
 #line 18031
-            .lvl = 19,
+            .lvl = 16,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {

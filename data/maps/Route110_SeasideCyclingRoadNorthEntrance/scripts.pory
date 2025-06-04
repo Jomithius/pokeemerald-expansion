@@ -5,7 +5,6 @@ raw`Route110_SeasideCyclingRoadNorthEntrance_MapScripts::
 Route110_SeasideCyclingRoadNorthEntrance_OnTransition:
 	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 3, Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge
 	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 2, Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge
-	call_if_set FLAG_ROUTE110_HIDE_CYCLIST, Route110_SeasideCyclingRoadNorthEntrance_EventScript_SaveBikerMusic
 	end
 
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge::
@@ -102,11 +101,6 @@ text Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge{
     TRAINER.\p
     Okay, I won't stop you.\n
 	Please, help us!"
-}
-
-script Route110_SeasideCyclingRoadNorthEntrance_EventScript_SaveBikerMusic{
-	fadenewbgm(MUS_NONE)
-	return
 }
 
 script Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou{

@@ -886,10 +886,10 @@ script PetalburgCity_LunaBattle{
 
 text PetalburgCity_LunaText1{
 	"LUNA: {PLAYER}.\n
-	Thanks for getting here fast.\l
-	You got your first GYM badge huh? Nice.\p
-	Before I tell you what I need you to do,\n
-	let me make sure you're strong enough."}
+	Thanks for getting here quick.\l
+	You got your first GYM badge? Nice.\p
+	Well, before I tell you what I need you\n
+	to do, let me make sure you're ready."}
 
 text PetalburgCity_LunaOutro{"Not bad."}
 
@@ -902,9 +902,8 @@ text PetalburgCity_LunaText2{
 	into my house when I was away.\p
 	The exterminators couldn't handle it,\n
     But a POKéMON TRAINER should be fine.\p
-	I'd do it myself, but I have\n
-	a very important person I need to\l
-	meet with."
+	I'd do it myself, but I have a very\n
+	important person I need to meet with."
 }
 
 text PetalburgCity_LunaText3{

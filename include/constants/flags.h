@@ -1224,7 +1224,7 @@
 
 #define FLAG_LINA_HOUSE_EEVEE                                       0x493 // Gift Eevee
 #define FLAG_LUNA_HOUSE_MOTHIM                                      0x494 // Gift Mothim
-#define FLAG_UNUSED_0x495                                           0x495 // Unused
+#define FLAG_HIDE_MISA_LILYCOVE_DEPT_5F                             0x495 // Misa Lilycove 5F
 #define FLAG_PETALBURG_RATICATE                                     0x496 // Rat Cave Petalburg
 #define FLAG_PETALBURG_RATICATE_ALOLA                               0x497 // Rat Cave Petalburg
 #define FLAG_ITEM_RAT_CAVE_2F_FLAME_ORB                             0x498 // Petalburg Rat Cave 

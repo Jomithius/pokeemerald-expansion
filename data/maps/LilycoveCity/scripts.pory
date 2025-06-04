@@ -766,8 +766,6 @@ script LilycoveCity_EventScript_EmoBully{
     fadenewbgm(MUS_NONE)
     msgbox(LilycoveCity_Text_BullyMan1, MSGBOX_AUTOCLOSE)
     waitmessage
-    msgbox(LilycoveCity_Text_BullyKid1, MSGBOX_AUTOCLOSE)
-    waitmessage
     applymovement(26, Common_Movement_FaceDown)
     waitmovement(26)
     delay(10)
@@ -776,8 +774,6 @@ script LilycoveCity_EventScript_EmoBully{
     applymovement(26, Common_Movement_FaceRight)
     waitmovement(26)
     msgbox(LilycoveCity_Text_BullyMan2, MSGBOX_AUTOCLOSE)
-    waitmessage
-    msgbox(LilycoveCity_Text_BullyKid2, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(26, Common_Movement_FaceDown)
     waitmovement(26)
@@ -795,10 +791,6 @@ script LilycoveCity_EventScript_EmoBully{
     waitmovement(23)
     delay(30)
     msgbox(LilycoveCity_Text_Emo1, MSGBOX_AUTOCLOSE)
-    waitmessage
-    msgbox("What was that?!", MSGBOX_AUTOCLOSE)
-    waitmessage
-    msgbox("You..!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(23, Common_Movement_WalkInPlaceLeft)
     waitmovement(23)
@@ -834,9 +826,9 @@ script LilycoveCity_EventScript_EmoBully{
     msgbox("L-Let's get out of here!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
-    delay(10)
+    delay(4)
     applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_Movement_WalkBackUp)
-    waitmovement(0)
+    delay(10)
     applymovement(24, LilycoveCity_Movement_BullyMan)
     delay(20)
     applymovement(25, LilycoveCity_Movement_BullyKid)
@@ -898,11 +890,8 @@ script LilycoveCity_EventScript_EmoBully{
 text LilycoveCity_Text_BullyMan1{
     "BOY: What are you doing in LILYCOVE?\n
     I'm surprised a little nerd like you\l
-    actually left your house!"
-}
-
-text LilycoveCity_Text_BullyKid1{
-    "KID: Haha, for real!\n
+    actually left your house!\p
+	KID: Haha, for real!\n
     Are you still acting like a weirdo?\l
     “Oh, the abyss is calling me..”"
 }
@@ -917,11 +906,8 @@ text LilycoveCity_Text_BullyMan2{
     have to see you and your lame acting\l
     again after I moved.\p
     Acting all cocky just because your\n
-    mom's a strong TRAINER."
-}
-
-text LilycoveCity_Text_BullyKid2{
-    "KID: Yeah!\n
+    mom's a strong TRAINER.\p
+	KID: Yeah!\n
     You probably got all those badges\l
     using your mommy's POKéMON."
 }
@@ -943,8 +929,9 @@ text LilycoveCity_Text_BullyMan3{
 
 text LilycoveCity_Text_Emo1{
     "JAMES: ...\p
-    I don't have anything to say\n
-    to you."
+    I don't have anything to say to you.\p
+	BOY: What was that?!\p
+	KID: You...!"
 }
 
 text LilycoveCity_Text_Emo2{

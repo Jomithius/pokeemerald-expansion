@@ -61,6 +61,8 @@ script MtPyre_Exterior_EventScript_Emo{
     fadedefaultbgm
     setvar(VAR_MISA_STATE, 7)
     setflag(FLAG_HIDE_EMO_MT_PYRE)
+    clearflag(FLAG_HIDE_EMO_LILYCOVE)
+    clearflag(FLAG_HIDE_MISA_LILYCOVE_DEPT_5F)
     releaseall
     end
 }
@@ -100,6 +102,7 @@ script MtPyre_Exterior_EventScript_Emo2{
     setvar(VAR_MISA_STATE, 7)
     setflag(FLAG_HIDE_EMO_MT_PYRE)
     clearflag(FLAG_HIDE_EMO_LILYCOVE)
+    clearflag(FLAG_HIDE_MISA_LILYCOVE_DEPT_5F)
     releaseall
     end
 }
@@ -126,7 +129,7 @@ text MtPyre_Exterior_Text_Emo2{
 text MtPyre_Exterior_Text_Emo3{
     "I'm heading to MOSSDEEP next\n
     after stopping by LILYCOVE.\p
-    I heard the DEPT. STORE sells\n
+    I heard the DEPT. STORE there sells\n
     rare items.\p
     See ya, {PLAYER}."
 }

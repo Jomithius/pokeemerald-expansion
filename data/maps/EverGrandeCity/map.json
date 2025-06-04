@@ -266,7 +266,7 @@
       "y": 10,
       "elevation": 0,
       "var": "VAR_MISA_STATE",
-      "var_value": "9",
+      "var_value": "8",
       "script": "EverGrandeCity_EventTrigger_JamesLeft"
     },
     {
@@ -275,7 +275,7 @@
       "y": 10,
       "elevation": 0,
       "var": "VAR_MISA_STATE",
-      "var_value": "9",
+      "var_value": "8",
       "script": "EverGrandeCity_EventScript_James"
     },
     {
@@ -284,7 +284,7 @@
       "y": 10,
       "elevation": 0,
       "var": "VAR_MISA_STATE",
-      "var_value": "9",
+      "var_value": "8",
       "script": "EverGrandeCity_EventTrigger_JamesRight"
     }
   ],

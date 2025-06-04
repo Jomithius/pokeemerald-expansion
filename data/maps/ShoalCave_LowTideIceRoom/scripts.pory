@@ -52,6 +52,9 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
     fadescreenspeed(FADE_FROM_BLACK, 2)
     setflag(FLAG_HIDE_ARIA_SHOAL_CAVE)
     setvar(VAR_MOMO_ARIA_STATE, 1)
+    setflag(FLAG_HIDE_MISA_LILYCOVE_DEPT_5F) // if player misses Misa in Lilycove
+    setvar(VAR_MISA_STATE, 8)
+    setflag(FLAG_HIDE_EMO_LILYCOVE) // if player misses cutscene in Lilycove
     release
     end
 }
@@ -138,6 +141,9 @@ script ShoalCave_LowTideIceRoom_EventScript_AriaNorth{
     removeobject(6)
     fadescreenspeed(FADE_FROM_BLACK, 3)
     setflag(FLAG_HIDE_ARIA_SHOAL_CAVE)
+    setflag(FLAG_HIDE_MISA_LILYCOVE_DEPT_5F) // if player misses Misa in Lilycove
+    setvar(VAR_MISA_STATE, 8)
+    setflag(FLAG_HIDE_EMO_LILYCOVE) // if player misses cutscene in Lilycove
     release
     end
 } 
@@ -149,8 +155,8 @@ text ShoalCave_LowTideIceRoom_Text_Aria1{
     ...\n
     Oh. A challenger?\p
     I'm ARIA. LEADER of the MOSSDEEP\n
-    POKéMON GYM and PROTECTOR of\l
-    the SACRED BLADE.\p
+    POKéMON GYM and PROTECTOR of the\l
+    SACRED BLADE.\p
     ARIA: I can stop my training here.\n
     Me and my knights shall await you\l
     at the GYM."

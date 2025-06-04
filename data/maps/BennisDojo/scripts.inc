@@ -576,11 +576,11 @@ AsakPaniniLoss::
 
 Asak3::
 # 230 "data/maps/BennisDojo/scripts.pory"
-	.string "ASAK: MASTER BENNIS! I'm sorry for\n disturbing you.\p ASAK: This trainer was intruding on\n our dojo.$"
+	.string "ASAK: MASTER BENNIS! I'm sorry for\n disturbing you.\p This trainer was intruding on\n our dojo.$"
 
 Asak3_5::
 # 235 "data/maps/BennisDojo/scripts.pory"
-	.string "ASAK: We tried to get rid of them, but\n I'm ashamed to say we were no match.$"
+	.string "We tried to get rid of them, but\n I'm ashamed to say we were no match.$"
 
 Asak4::
 # 238 "data/maps/BennisDojo/scripts.pory"

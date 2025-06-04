@@ -1397,20 +1397,22 @@ script SlateportCity_EventScript_Mae {
     applymovement(20, SlateportMartEmployeeMove1)
     msgbox(SlateportMartEmployee1, MSGBOX_AUTOCLOSE)
     waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, SlateportFaceLeft)
+    waitmovement(0)
     applymovement(36, SlateportFaceLeft)
     waitmovement(36)
     msgbox(Mae3, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, SlateportMaeMovesPlayer)
-    waitmovement(0)
+    delay(8)
     applymovement(36, SlateportMaeLeaves)
     delay(10)
     applymovement(OBJ_EVENT_ID_PLAYER, SlateportFaceUp)
     delay(10)
     applymovement(37, SlateportPsyduckLeaves1)
-    waitmovement(37)
+    delay(10)
     applymovement(OBJ_EVENT_ID_PLAYER, SlateportFaceRight)
-    waitmovement(0)
+    waitmovement(37)
     playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
     delay(20)
     applymovement(37, SlateportMaeLeaves)
@@ -1477,7 +1479,8 @@ movement SlateportMartEmployeeMove1{
 }
 
 movement SlateportMaeMovesPlayer{
-    lock_facing_direction
+    face_right
+	lock_facing_direction
 	walk_left
     delay_16
 	unlock_facing_direction

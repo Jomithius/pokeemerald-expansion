@@ -819,7 +819,7 @@ LavaridgeTown_EventScript_Joey::
 # 413 "data/maps/LavaridgeTown/scripts.pory"
 	lock
 # 414 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_EventScript_Joey_Text_0, MSGBOX_NPC
+	msgbox LavaridgeTown_EventScript_Joey_Text_0, MSGBOX_SIGN
 # 418 "data/maps/LavaridgeTown/scripts.pory"
 	release
 	end

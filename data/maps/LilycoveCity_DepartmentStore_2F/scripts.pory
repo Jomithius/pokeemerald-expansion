@@ -114,7 +114,7 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
     waitmessage
     applymovement(6, Common_Movement_FaceUp)
     waitmovement(6)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -124,17 +124,15 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
 }
 
 script LilycoveCity_DepartmentStore_2F_MaeMovementVar{
-    if(var(VAR_TEMP_1) == 1){
+    if(var(VAR_TEMP_1) == 1){ //facing west
         applymovement(6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2)
-        delay(10)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
         waitmovement(6)
         delay(10)
         playse(SE_EXIT)
         delay(10)
         applymovement(7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave3)
         waitmovement(7)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
         waitmovement(0)
         playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
         delay(20)
@@ -154,8 +152,10 @@ script LilycoveCity_DepartmentStore_2F_MaeMovementVar{
         setflag(FLAG_HIDE_LILYCOVE_MAE)
         setflag(FLAG_SLATEPORT_MAE_BATTLE)
     }
-    else{
+    else{ //facing south
         applymovement(6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1)
+        delay(10)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
         waitmovement(6)
         delay(10)
         playse(SE_EXIT)

@@ -179,7 +179,7 @@ script Route112_EventScript_Emo{
     removeobject(14)
     fadedefaultbgm
     setflag(FLAG_EMO_ROUTE_112)
-    setvar(VAR_MISA_STATE, 5)
+    setvar(VAR_MISA_STATE, 6)
     releaseall
     end
 }
@@ -199,8 +199,6 @@ script Route112_EventScript_Emo_West{
     applymovement(14, Common_Movement_ExclamationMark)
     waitmovement(14)
     delay(40)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
-    waitmovement(0)
     playbgm(MUS_PYRITE_THEME, TRUE)
     msgbox(Route112_Text_Emo1, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -231,7 +229,7 @@ script Route112_EventScript_Emo_West{
     removeobject(14)
     fadedefaultbgm
     setflag(FLAG_EMO_ROUTE_112)
-    setvar(VAR_MISA_STATE, 5)
+    setvar(VAR_MISA_STATE, 6)
     releaseall
     end
 }

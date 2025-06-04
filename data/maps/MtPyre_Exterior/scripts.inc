@@ -119,180 +119,186 @@ MtPyre_Exterior_EventScript_Emo::
 # 63 "data/maps/MtPyre_Exterior/scripts.pory"
 	setflag FLAG_HIDE_EMO_MT_PYRE
 # 64 "data/maps/MtPyre_Exterior/scripts.pory"
+	clearflag FLAG_HIDE_EMO_LILYCOVE
+# 65 "data/maps/MtPyre_Exterior/scripts.pory"
+	clearflag FLAG_HIDE_MISA_LILYCOVE_DEPT_5F
+# 66 "data/maps/MtPyre_Exterior/scripts.pory"
 	releaseall
 	end
 
 
 MtPyre_Exterior_EventScript_Emo2::
-# 69 "data/maps/MtPyre_Exterior/scripts.pory"
-	lockall
-# 70 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceLeft
 # 71 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmovement 3
+	lockall
 # 72 "data/maps/MtPyre_Exterior/scripts.pory"
-	delay 20
+	applymovement 3, Common_Movement_WalkInPlaceLeft
 # 73 "data/maps/MtPyre_Exterior/scripts.pory"
-	playse SE_PIN
+	waitmovement 3
 # 74 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, Common_Movement_ExclamationMark
-# 75 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmovement 3
-# 76 "data/maps/MtPyre_Exterior/scripts.pory"
 	delay 20
+# 75 "data/maps/MtPyre_Exterior/scripts.pory"
+	playse SE_PIN
+# 76 "data/maps/MtPyre_Exterior/scripts.pory"
+	applymovement 3, Common_Movement_ExclamationMark
 # 77 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, MtPyre_Exterior_Movement_Emo2
+	waitmovement 3
 # 78 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmovement 3
+	delay 20
 # 79 "data/maps/MtPyre_Exterior/scripts.pory"
-	playbgm MUS_PYRITE_THEME, TRUE
+	applymovement 3, MtPyre_Exterior_Movement_Emo2
 # 80 "data/maps/MtPyre_Exterior/scripts.pory"
-	delay 10
-# 81 "data/maps/MtPyre_Exterior/scripts.pory"
-	msgbox MtPyre_Exterior_Text_Emo1, MSGBOX_AUTOCLOSE
-# 82 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmessage
-# 83 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, Common_Movement_WalkLeft
-# 84 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmovement 3
-# 85 "data/maps/MtPyre_Exterior/scripts.pory"
-	trainerbattle_no_intro TRAINER_JOMITHIUS_3, MtPyre_Exterior_Text_RivalDefeat
-# 86 "data/maps/MtPyre_Exterior/scripts.pory"
-	msgbox MtPyre_Exterior_Text_Emo2, MSGBOX_AUTOCLOSE
-# 87 "data/maps/MtPyre_Exterior/scripts.pory"
+# 81 "data/maps/MtPyre_Exterior/scripts.pory"
+	playbgm MUS_PYRITE_THEME, TRUE
+# 82 "data/maps/MtPyre_Exterior/scripts.pory"
+	delay 10
+# 83 "data/maps/MtPyre_Exterior/scripts.pory"
+	msgbox MtPyre_Exterior_Text_Emo1, MSGBOX_AUTOCLOSE
+# 84 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
+# 85 "data/maps/MtPyre_Exterior/scripts.pory"
+	applymovement 3, Common_Movement_WalkLeft
+# 86 "data/maps/MtPyre_Exterior/scripts.pory"
+	waitmovement 3
+# 87 "data/maps/MtPyre_Exterior/scripts.pory"
+	trainerbattle_no_intro TRAINER_JOMITHIUS_3, MtPyre_Exterior_Text_RivalDefeat
 # 88 "data/maps/MtPyre_Exterior/scripts.pory"
-	giveitem ITEM_ASSAULT_VEST
+	msgbox MtPyre_Exterior_Text_Emo2, MSGBOX_AUTOCLOSE
 # 89 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
 # 90 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, Common_Movement_WalkRight
+	giveitem ITEM_ASSAULT_VEST
 # 91 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmovement 3
-# 92 "data/maps/MtPyre_Exterior/scripts.pory"
-	msgbox MtPyre_Exterior_Text_Emo3, MSGBOX_AUTOCLOSE
-# 93 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
+# 92 "data/maps/MtPyre_Exterior/scripts.pory"
+	applymovement 3, Common_Movement_WalkRight
+# 93 "data/maps/MtPyre_Exterior/scripts.pory"
+	waitmovement 3
 # 94 "data/maps/MtPyre_Exterior/scripts.pory"
-	setfieldeffectargument 0, 1
+	msgbox MtPyre_Exterior_Text_Emo3, MSGBOX_AUTOCLOSE
 # 95 "data/maps/MtPyre_Exterior/scripts.pory"
-	dofieldeffect FLDEFF_NPCFLY_OUT
+	waitmessage
 # 96 "data/maps/MtPyre_Exterior/scripts.pory"
-	delay 15
+	setfieldeffectargument 0, 1
 # 97 "data/maps/MtPyre_Exterior/scripts.pory"
-	removeobject 3
+	dofieldeffect FLDEFF_NPCFLY_OUT
 # 98 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitfieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
 # 99 "data/maps/MtPyre_Exterior/scripts.pory"
-	fadedefaultbgm
+	removeobject 3
 # 100 "data/maps/MtPyre_Exterior/scripts.pory"
-	setvar VAR_MISA_STATE, 7
+	waitfieldeffect FLDEFF_NPCFLY_OUT
 # 101 "data/maps/MtPyre_Exterior/scripts.pory"
-	setflag FLAG_HIDE_EMO_MT_PYRE
+	fadedefaultbgm
 # 102 "data/maps/MtPyre_Exterior/scripts.pory"
-	clearflag FLAG_HIDE_EMO_LILYCOVE
+	setvar VAR_MISA_STATE, 7
 # 103 "data/maps/MtPyre_Exterior/scripts.pory"
+	setflag FLAG_HIDE_EMO_MT_PYRE
+# 104 "data/maps/MtPyre_Exterior/scripts.pory"
+	clearflag FLAG_HIDE_EMO_LILYCOVE
+# 105 "data/maps/MtPyre_Exterior/scripts.pory"
+	clearflag FLAG_HIDE_MISA_LILYCOVE_DEPT_5F
+# 106 "data/maps/MtPyre_Exterior/scripts.pory"
 	releaseall
 	end
 
 
-# 138 "data/maps/MtPyre_Exterior/scripts.pory"
+# 141 "data/maps/MtPyre_Exterior/scripts.pory"
 MtPyre_Exterior_Movement_Emo1:
-# 139 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 139 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 139 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 139 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-	step_end
-
 # 142 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 142 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 142 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 142 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+	step_end
+
+# 145 "data/maps/MtPyre_Exterior/scripts.pory"
 MtPyre_Exterior_Movement_Emo2:
-# 143 "data/maps/MtPyre_Exterior/scripts.pory"
+# 146 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_down
-# 144 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 144 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 144 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 144 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-	step_end
-
 # 147 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 147 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 147 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+# 147 "data/maps/MtPyre_Exterior/scripts.pory"
+	walk_left
+	step_end
+
+# 150 "data/maps/MtPyre_Exterior/scripts.pory"
 MtPyre_Exterior_Movement_EmoLeave1:
-# 148 "data/maps/MtPyre_Exterior/scripts.pory"
+# 151 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_down
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
+# 152 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 150 "data/maps/MtPyre_Exterior/scripts.pory"
+# 153 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
-# 150 "data/maps/MtPyre_Exterior/scripts.pory"
+# 153 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
-# 150 "data/maps/MtPyre_Exterior/scripts.pory"
+# 153 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
 	step_end
 
-# 153 "data/maps/MtPyre_Exterior/scripts.pory"
+# 156 "data/maps/MtPyre_Exterior/scripts.pory"
 MtPyre_Exterior_Movement_EmoLeave2:
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
+# 157 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 155 "data/maps/MtPyre_Exterior/scripts.pory"
+# 158 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 156 "data/maps/MtPyre_Exterior/scripts.pory"
+# 159 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
-# 156 "data/maps/MtPyre_Exterior/scripts.pory"
+# 159 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_up
 	step_end
 
 MtPyre_Exterior_Text_Emo1::
-# 107 "data/maps/MtPyre_Exterior/scripts.pory"
+# 110 "data/maps/MtPyre_Exterior/scripts.pory"
 	.string "JAMES: {PLAYER}?\n I wouldn't expect you to come here.\p Are you a fan of the occult?\n That's surprising.\p The dark energies in this place\n have caused my power to go even\l further beyond...\p I don't think even you can\n withstand this strength!$"
 
 MtPyre_Exterior_Text_Emo2::
-# 119 "data/maps/MtPyre_Exterior/scripts.pory"
+# 122 "data/maps/MtPyre_Exterior/scripts.pory"
 	.string "JAMES: Hm...\n You've become stronger than I thought.\p As expected of my adversary.\n Here, you can have this.$"
 
 MtPyre_Exterior_Text_Emo3::
-# 126 "data/maps/MtPyre_Exterior/scripts.pory"
-	.string "I'm heading to MOSSDEEP next\n after stopping by LILYCOVE.\p I heard the DEPT. STORE sells\n rare items.\p See ya, {PLAYER}.$"
+# 129 "data/maps/MtPyre_Exterior/scripts.pory"
+	.string "I'm heading to MOSSDEEP next\n after stopping by LILYCOVE.\p I heard the DEPT. STORE there sells\n rare items.\p See ya, {PLAYER}.$"
 
 MtPyre_Exterior_Text_RivalDefeat::
-# 134 "data/maps/MtPyre_Exterior/scripts.pory"
+# 137 "data/maps/MtPyre_Exterior/scripts.pory"
 	.string "I'm in my abyss...$"

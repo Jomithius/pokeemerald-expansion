@@ -807,7 +807,7 @@ script DewfordTown_EventScript_Man{
 	if(var(VAR_BENNIS_DOJO_STATE) == 0){
 		msgbox(DewfordTown_Text_BennisDojoHint, MSGBOX_NPC)
 	}
-	elif(var(VAR_BENNIS_DOJO_STATE) == 1){
+	elif(var(VAR_BENNIS_DOJO_STATE) == 2){
 	msgbox(DewfordTown_Text_BennisLeft, MSGBOX_NPC)
 	}
 	elif(var(VAR_BENNIS_DOJO_STATE) >= 6){

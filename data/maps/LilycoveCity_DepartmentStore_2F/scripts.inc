@@ -210,7 +210,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_Mae_1:
 # 116 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 6
 # 117 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 # 118 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 0
 # 119 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
@@ -233,8 +233,12 @@ LilycoveCity_DepartmentStore_2F_MaeMovementVar::
 # 127 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	compare VAR_TEMP_1, 1
 	goto_if_eq LilycoveCity_DepartmentStore_2F_MaeMovementVar_2
-# 158 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 156 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	applymovement 6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1
+# 157 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+	delay 10
+# 158 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 # 159 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 6
 # 160 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
@@ -288,58 +292,54 @@ LilycoveCity_DepartmentStore_2F_MaeMovementVar_2:
 # 128 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	applymovement 6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2
 # 129 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	delay 10
-# 130 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
-# 131 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 6
+# 130 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+	delay 10
+# 131 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+	playse SE_EXIT
 # 132 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	delay 10
 # 133 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	playse SE_EXIT
-# 134 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	delay 10
-# 135 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	applymovement 7, LilycoveCity_DepartmentStore_2F_Movement_PsyduckLeave3
+# 134 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+	waitmovement 7
+# 135 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 136 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	waitmovement 7
+	waitmovement 0
 # 137 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
-# 138 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	waitmovement 0
-# 139 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	playmoncry SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER
-# 140 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 138 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	delay 20
-# 141 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 139 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	applymovement 7, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave2
-# 142 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 140 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 7
-# 143 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 141 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	playse SE_EXIT
-# 144 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 142 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	delay 60
-# 145 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 143 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	playse SE_BIKE_HOP
-# 146 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 144 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, LilycoveConfused
-# 147 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 145 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 0
-# 148 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 146 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	applymovement 1, LilycoveCity_DepartmentStore_2F_Movement_Cook2
-# 149 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 147 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmovement 1
-# 150 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 148 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	msgbox LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE
-# 151 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 149 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmessage
-# 152 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 150 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	removeobject 6
-# 153 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 151 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	removeobject 7
-# 154 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 152 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	setflag FLAG_HIDE_LILYCOVE_MAE
-# 155 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 153 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	setflag FLAG_SLATEPORT_MAE_BATTLE
 	goto LilycoveCity_DepartmentStore_2F_MaeMovementVar_1
 

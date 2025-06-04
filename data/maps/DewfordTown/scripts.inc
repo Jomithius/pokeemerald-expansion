@@ -1612,7 +1612,7 @@ DewfordTown_EventScript_Man::
 	compare VAR_BENNIS_DOJO_STATE, 0
 	goto_if_eq DewfordTown_EventScript_Man_2
 # 810 "data/maps/DewfordTown/scripts.pory"
-	compare VAR_BENNIS_DOJO_STATE, 1
+	compare VAR_BENNIS_DOJO_STATE, 2
 	goto_if_eq DewfordTown_EventScript_Man_3
 # 813 "data/maps/DewfordTown/scripts.pory"
 	compare VAR_BENNIS_DOJO_STATE, 6

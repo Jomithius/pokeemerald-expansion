@@ -798,17 +798,19 @@ MauvilleCity_Gym_EventScript_GiveVoltSwitch::
 	setflag FLAG_RECEIVED_TM_VOLT_SWITCH
 # 403 "data/maps/MauvilleCity_Gym/scripts.pory"
 	setvar VAR_SPEEDWAGON_STATE, 1
+# 404 "data/maps/MauvilleCity_Gym/scripts.pory"
+	setvar VAR_MISA_STATE, 5
 	return
 
 
 MauvilleCity_Gym_EventScript_Jolteon::
-# 414 "data/maps/MauvilleCity_Gym/scripts.pory"
-	lock
 # 415 "data/maps/MauvilleCity_Gym/scripts.pory"
-	playmoncry SPECIES_JOLTEON, CRY_MODE_ENCOUNTER
+	lock
 # 416 "data/maps/MauvilleCity_Gym/scripts.pory"
-	delay 20
+	playmoncry SPECIES_JOLTEON, CRY_MODE_ENCOUNTER
 # 417 "data/maps/MauvilleCity_Gym/scripts.pory"
+	delay 20
+# 418 "data/maps/MauvilleCity_Gym/scripts.pory"
 	release
 	end
 
@@ -818,5 +820,5 @@ MauvilleCity_Gym_EventScript_GiveVoltSwitch_Text_0:
 	.string "One more thing! Here!$"
 
 MauvilleCity_Gym_Text_ExplainVoltSwitch::
-# 407 "data/maps/MauvilleCity_Gym/scripts.pory"
-	.string "That TM56, VOLT SWITCH, is\n perfect for getting out of\l shocking situations! Hahaha!$"
+# 408 "data/maps/MauvilleCity_Gym/scripts.pory"
+	.string "That TM56, VOLT SWITCH, is perfect for\n getting out of shocking situations!\l Hahaha!$"

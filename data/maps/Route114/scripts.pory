@@ -233,23 +233,18 @@ script Route114_EventScript_Bennis{
     waitmessage
     msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(30, Common_Movement_FaceLeft)
+    applymovement(30, Common_Movement_WalkInPlaceLeft)
     waitmovement(30)
     msgbox(Route114_Text_ASAK2, MSGBOX_AUTOCLOSE)
     waitmessage
     delay(20)
-    applymovement(30, Common_Movement_FaceUp)
+    applymovement(30, Common_Movement_WalkInPlaceUp)
     waitmovement(30)
     call(BennisMovementVar)
     msgbox(Route114_Bennis_Intro, MSGBOX_AUTOCLOSE)
     waitmessage
     trainerbattle_no_intro(TRAINER_BENNIS_2, Route114_BennisDefeat)
     lockall
-    msgbox("MASTER BENNIS: Hm.\n
-    	Still beefy.", MSGBOX_AUTOCLOSE)
-    waitmessage
-    msgbox("PANINI: P-Panini?!", MSGBOX_AUTOCLOSE)
-    waitmessage
     msgbox(Route114_Text_ASAK3, MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_NONE, FALSE)
@@ -334,7 +329,10 @@ text Route114_BennisDefeat{
 }
 
 text Route114_Text_ASAK3{
-    "ASAK: Kuh... W-We won't forget\n
+    "MASTER BENNIS: Hm.\n
+    Still beefy.\p
+	PANINI: P-Panini?!\p
+	ASAK: Kuh... W-We won't forget\n
     this humiliation!"
 }
 

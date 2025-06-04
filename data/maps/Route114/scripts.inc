@@ -455,7 +455,7 @@ Route114_EventScript_Bennis::
 # 235 "data/maps/Route114/scripts.pory"
 	waitmessage
 # 236 "data/maps/Route114/scripts.pory"
-	applymovement 30, Common_Movement_FaceLeft
+	applymovement 30, Common_Movement_WalkInPlaceLeft
 # 237 "data/maps/Route114/scripts.pory"
 	waitmovement 30
 # 238 "data/maps/Route114/scripts.pory"
@@ -465,7 +465,7 @@ Route114_EventScript_Bennis::
 # 240 "data/maps/Route114/scripts.pory"
 	delay 20
 # 241 "data/maps/Route114/scripts.pory"
-	applymovement 30, Common_Movement_FaceUp
+	applymovement 30, Common_Movement_WalkInPlaceUp
 # 242 "data/maps/Route114/scripts.pory"
 	waitmovement 30
 # 243 "data/maps/Route114/scripts.pory"
@@ -479,189 +479,181 @@ Route114_EventScript_Bennis::
 # 247 "data/maps/Route114/scripts.pory"
 	lockall
 # 248 "data/maps/Route114/scripts.pory"
-	msgbox Route114_EventScript_Bennis_Text_2, MSGBOX_AUTOCLOSE
-# 250 "data/maps/Route114/scripts.pory"
-	waitmessage
-# 251 "data/maps/Route114/scripts.pory"
-	msgbox Route114_EventScript_Bennis_Text_3, MSGBOX_AUTOCLOSE
-# 252 "data/maps/Route114/scripts.pory"
-	waitmessage
-# 253 "data/maps/Route114/scripts.pory"
 	msgbox Route114_Text_ASAK3, MSGBOX_AUTOCLOSE
-# 254 "data/maps/Route114/scripts.pory"
+# 249 "data/maps/Route114/scripts.pory"
 	waitmessage
-# 255 "data/maps/Route114/scripts.pory"
+# 250 "data/maps/Route114/scripts.pory"
 	playbgm MUS_NONE, FALSE
-# 256 "data/maps/Route114/scripts.pory"
+# 251 "data/maps/Route114/scripts.pory"
 	delay 10
-# 257 "data/maps/Route114/scripts.pory"
+# 252 "data/maps/Route114/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 258 "data/maps/Route114/scripts.pory"
+# 253 "data/maps/Route114/scripts.pory"
 	removeobject 28
-# 259 "data/maps/Route114/scripts.pory"
+# 254 "data/maps/Route114/scripts.pory"
 	removeobject 29
-# 260 "data/maps/Route114/scripts.pory"
+# 255 "data/maps/Route114/scripts.pory"
 	removeobject 30
-# 261 "data/maps/Route114/scripts.pory"
+# 256 "data/maps/Route114/scripts.pory"
 	setflag FLAG_BENNIS_ROUTE_114
-# 262 "data/maps/Route114/scripts.pory"
+# 257 "data/maps/Route114/scripts.pory"
 	setvar VAR_BENNIS_DOJO_STATE, 3
-# 263 "data/maps/Route114/scripts.pory"
+# 258 "data/maps/Route114/scripts.pory"
 	playse SE_FLEE
-# 264 "data/maps/Route114/scripts.pory"
+# 259 "data/maps/Route114/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 3
-# 265 "data/maps/Route114/scripts.pory"
+# 260 "data/maps/Route114/scripts.pory"
 	delay 20
-# 266 "data/maps/Route114/scripts.pory"
+# 261 "data/maps/Route114/scripts.pory"
 	fadedefaultbgm
-# 267 "data/maps/Route114/scripts.pory"
+# 262 "data/maps/Route114/scripts.pory"
 	releaseall
 	end
 
 
 BennisFollowersMovementVar::
-# 272 "data/maps/Route114/scripts.pory"
+# 267 "data/maps/Route114/scripts.pory"
 	compare VAR_TEMP_1, 3
 	goto_if_eq BennisFollowersMovementVar_2
-# 279 "data/maps/Route114/scripts.pory"
+# 274 "data/maps/Route114/scripts.pory"
 	compare VAR_TEMP_1, 1
 	goto_if_eq BennisFollowersMovementVar_3
-# 287 "data/maps/Route114/scripts.pory"
+# 282 "data/maps/Route114/scripts.pory"
 	applymovement 29, Route114_Movement_BennisFollowers
-# 288 "data/maps/Route114/scripts.pory"
+# 283 "data/maps/Route114/scripts.pory"
 	delay 30
-# 289 "data/maps/Route114/scripts.pory"
+# 284 "data/maps/Route114/scripts.pory"
 	applymovement 28, Route114_Movement_BennisFollowers
-# 290 "data/maps/Route114/scripts.pory"
+# 285 "data/maps/Route114/scripts.pory"
 	delay 20
-# 291 "data/maps/Route114/scripts.pory"
+# 286 "data/maps/Route114/scripts.pory"
 	applymovement 30, Route114_Movement_BennisFollowers
 BennisFollowersMovementVar_1:
-# 293 "data/maps/Route114/scripts.pory"
+# 288 "data/maps/Route114/scripts.pory"
 	waitmovement 0
 	return
 
 BennisFollowersMovementVar_2:
-# 273 "data/maps/Route114/scripts.pory"
+# 268 "data/maps/Route114/scripts.pory"
 	applymovement 29, Route114_Movement_BennisFollowers3
-# 274 "data/maps/Route114/scripts.pory"
+# 269 "data/maps/Route114/scripts.pory"
 	delay 30
-# 275 "data/maps/Route114/scripts.pory"
+# 270 "data/maps/Route114/scripts.pory"
 	applymovement 28, Route114_Movement_BennisFollowers3
-# 276 "data/maps/Route114/scripts.pory"
+# 271 "data/maps/Route114/scripts.pory"
 	delay 20
-# 277 "data/maps/Route114/scripts.pory"
+# 272 "data/maps/Route114/scripts.pory"
 	applymovement 30, Route114_Movement_BennisFollowers3
 	goto BennisFollowersMovementVar_1
 
 BennisFollowersMovementVar_3:
-# 280 "data/maps/Route114/scripts.pory"
+# 275 "data/maps/Route114/scripts.pory"
 	applymovement 29, Route114_Movement_BennisFollowers3
-# 281 "data/maps/Route114/scripts.pory"
+# 276 "data/maps/Route114/scripts.pory"
 	delay 30
-# 282 "data/maps/Route114/scripts.pory"
+# 277 "data/maps/Route114/scripts.pory"
 	applymovement 28, Route114_Movement_BennisFollowers3
-# 283 "data/maps/Route114/scripts.pory"
+# 278 "data/maps/Route114/scripts.pory"
 	delay 20
-# 284 "data/maps/Route114/scripts.pory"
+# 279 "data/maps/Route114/scripts.pory"
 	applymovement 30, Route114_Movement_BennisFollowers3
 	goto BennisFollowersMovementVar_1
 
 
 BennisMovementVar::
-# 298 "data/maps/Route114/scripts.pory"
+# 293 "data/maps/Route114/scripts.pory"
 	compare VAR_TEMP_1, 1
 	goto_if_eq BennisMovementVar_2
-# 302 "data/maps/Route114/scripts.pory"
+# 297 "data/maps/Route114/scripts.pory"
 	compare VAR_TEMP_1, 2
 	goto_if_eq BennisMovementVar_3
-# 306 "data/maps/Route114/scripts.pory"
+# 301 "data/maps/Route114/scripts.pory"
 	compare VAR_TEMP_1, 3
 	goto_if_eq BennisMovementVar_4
-# 311 "data/maps/Route114/scripts.pory"
+# 306 "data/maps/Route114/scripts.pory"
 	applymovement 28, Route114_Movement_Bennis
-# 312 "data/maps/Route114/scripts.pory"
+# 307 "data/maps/Route114/scripts.pory"
 	waitmovement 28
 BennisMovementVar_1:
 	return
 
 BennisMovementVar_2:
-# 299 "data/maps/Route114/scripts.pory"
+# 294 "data/maps/Route114/scripts.pory"
 	applymovement 28, Route114_Movement_Bennis
-# 300 "data/maps/Route114/scripts.pory"
+# 295 "data/maps/Route114/scripts.pory"
 	waitmovement 28
 	goto BennisMovementVar_1
 
 BennisMovementVar_3:
-# 303 "data/maps/Route114/scripts.pory"
+# 298 "data/maps/Route114/scripts.pory"
 	applymovement 28, Route114_Movement_Bennis2
-# 304 "data/maps/Route114/scripts.pory"
+# 299 "data/maps/Route114/scripts.pory"
 	waitmovement 28
 	goto BennisMovementVar_1
 
 BennisMovementVar_4:
-# 307 "data/maps/Route114/scripts.pory"
+# 302 "data/maps/Route114/scripts.pory"
 	applymovement 28, Route114_Movement_Bennis1
-# 308 "data/maps/Route114/scripts.pory"
+# 303 "data/maps/Route114/scripts.pory"
 	waitmovement 28
 	goto BennisMovementVar_1
 
 
-# 341 "data/maps/Route114/scripts.pory"
+# 339 "data/maps/Route114/scripts.pory"
 Route114_Movement_BennisFollowers:
-# 342 "data/maps/Route114/scripts.pory"
+# 340 "data/maps/Route114/scripts.pory"
 	walk_up
-# 342 "data/maps/Route114/scripts.pory"
+# 340 "data/maps/Route114/scripts.pory"
 	walk_up
-# 342 "data/maps/Route114/scripts.pory"
+# 340 "data/maps/Route114/scripts.pory"
 	walk_up
-# 342 "data/maps/Route114/scripts.pory"
+# 340 "data/maps/Route114/scripts.pory"
 	walk_up
-# 342 "data/maps/Route114/scripts.pory"
+# 340 "data/maps/Route114/scripts.pory"
 	walk_up
 	step_end
 
-# 345 "data/maps/Route114/scripts.pory"
+# 343 "data/maps/Route114/scripts.pory"
 Route114_Movement_BennisFollowers3:
-# 346 "data/maps/Route114/scripts.pory"
+# 344 "data/maps/Route114/scripts.pory"
 	walk_up
-# 346 "data/maps/Route114/scripts.pory"
+# 344 "data/maps/Route114/scripts.pory"
 	walk_up
-# 346 "data/maps/Route114/scripts.pory"
+# 344 "data/maps/Route114/scripts.pory"
 	walk_up
-# 346 "data/maps/Route114/scripts.pory"
+# 344 "data/maps/Route114/scripts.pory"
 	walk_up
-# 346 "data/maps/Route114/scripts.pory"
+# 344 "data/maps/Route114/scripts.pory"
 	walk_up
-# 347 "data/maps/Route114/scripts.pory"
+# 345 "data/maps/Route114/scripts.pory"
 	walk_left
-# 348 "data/maps/Route114/scripts.pory"
+# 346 "data/maps/Route114/scripts.pory"
 	face_up
 	step_end
 
-# 351 "data/maps/Route114/scripts.pory"
+# 349 "data/maps/Route114/scripts.pory"
 Route114_Movement_Bennis:
-# 352 "data/maps/Route114/scripts.pory"
+# 350 "data/maps/Route114/scripts.pory"
 	walk_up
 	step_end
 
-# 355 "data/maps/Route114/scripts.pory"
+# 353 "data/maps/Route114/scripts.pory"
 Route114_Movement_Bennis1:
-# 356 "data/maps/Route114/scripts.pory"
+# 354 "data/maps/Route114/scripts.pory"
 	walk_up
-# 357 "data/maps/Route114/scripts.pory"
+# 355 "data/maps/Route114/scripts.pory"
 	walk_left
-# 358 "data/maps/Route114/scripts.pory"
+# 356 "data/maps/Route114/scripts.pory"
 	face_up
 	step_end
 
-# 361 "data/maps/Route114/scripts.pory"
+# 359 "data/maps/Route114/scripts.pory"
 Route114_Movement_Bennis2:
-# 362 "data/maps/Route114/scripts.pory"
+# 360 "data/maps/Route114/scripts.pory"
 	walk_up
-# 363 "data/maps/Route114/scripts.pory"
+# 361 "data/maps/Route114/scripts.pory"
 	walk_right
-# 364 "data/maps/Route114/scripts.pory"
+# 362 "data/maps/Route114/scripts.pory"
 	face_up
 	step_end
 
@@ -673,30 +665,22 @@ Route114_EventScript_Bennis_Text_1:
 # 234 "data/maps/Route114/scripts.pory"
 	.string "PANINI: Panini!$"
 
-Route114_EventScript_Bennis_Text_2:
-# 248 "data/maps/Route114/scripts.pory"
-	.string "MASTER BENNIS: Hm.\n Still beefy.$"
-
-Route114_EventScript_Bennis_Text_3:
-# 251 "data/maps/Route114/scripts.pory"
-	.string "PANINI: P-Panini?!$"
-
 Route114_Text_ASAK1::
-# 317 "data/maps/Route114/scripts.pory"
+# 312 "data/maps/Route114/scripts.pory"
 	.string "ASAK: There you are!\n It's time for MASTER BENNIS to regain\l his honor!$"
 
 Route114_Text_ASAK2::
-# 323 "data/maps/Route114/scripts.pory"
+# 318 "data/maps/Route114/scripts.pory"
 	.string "ASAK: Now, MASTER BENNIS!$"
 
 Route114_Bennis_Intro::
-# 327 "data/maps/Route114/scripts.pory"
+# 322 "data/maps/Route114/scripts.pory"
 	.string "MASTER BENNIS: Oho. I'm gettin' good\n vibrations from this place.$"
 
 Route114_BennisDefeat::
-# 332 "data/maps/Route114/scripts.pory"
+# 327 "data/maps/Route114/scripts.pory"
 	.string "Everyone's so mean to me...$"
 
 Route114_Text_ASAK3::
-# 336 "data/maps/Route114/scripts.pory"
-	.string "ASAK: Kuh... W-We won't forget\n this humiliation!$"
+# 331 "data/maps/Route114/scripts.pory"
+	.string "MASTER BENNIS: Hm.\n Still beefy.\p PANINI: P-Panini?!\p ASAK: Kuh... W-We won't forget\n this humiliation!$"

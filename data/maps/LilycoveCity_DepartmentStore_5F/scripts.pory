@@ -255,8 +255,8 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Lina{
 
 text LilcoveCity_DepartmentStore_5F_Text_Lina1{
     "What?\n
-    The next “Muscles & Monsters”\l
-    still isn't in yet..."
+    The next “Muscles & Monsters” still\l
+    isn't in yet..."
 }
 
 text LilcoveCity_DepartmentStore_5F_Text_Lina2{

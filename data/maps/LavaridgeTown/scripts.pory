@@ -414,7 +414,7 @@ script LavaridgeTown_EventScript_Joey{
     msgbox("Yeheaahh...\p
 	...\p
 	It looks like they're too relaxed\n
-	to notice you.", MSGBOX_NPC)
+	to notice you.", MSGBOX_SIGN)
 	release
     end
 }

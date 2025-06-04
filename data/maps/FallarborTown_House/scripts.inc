@@ -71,7 +71,7 @@ FallarborTown_House_EventScript_Old_Man_Text_0:
 
 FallarborTown_House_Old_Man_RatCaveHint::
 # 28 "data/maps/FallarborTown_House/scripts.pory"
-	.string "Huh?\p What?\p Oh, finally you're here!\p We've still been hearing RATTATA noises\n in the basement lately.\p It's been so hard to sleep\n because of it.\p Be a good grandchild and go take\n care of it for me, will you?$"
+	.string "Huh?\p What?\p Oh, finally you're here!\p We've still been hearing RATTATA noises\n in the basement lately.\p It's been so hard to sleep because\n of it.\p Be a good grandchild and go take\n care of it for me, will you?$"
 
 FallarborTown_House_Old_Man_RatCavePost::
 # 40 "data/maps/FallarborTown_House/scripts.pory"

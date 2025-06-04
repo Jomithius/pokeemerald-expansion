@@ -264,7 +264,7 @@
       "y": 37,
       "elevation": 0,
       "var": "VAR_MISA_STATE",
-      "var_value": "4",
+      "var_value": "5",
       "script": "Route112_Trigger_Emo"
     }
   ],

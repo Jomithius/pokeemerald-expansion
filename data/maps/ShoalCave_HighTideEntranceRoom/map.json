@@ -17,7 +17,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 27,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 

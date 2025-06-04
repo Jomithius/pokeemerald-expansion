@@ -401,13 +401,14 @@ script MauvilleCity_Gym_EventScript_GiveVoltSwitch{
     waitmessage
     setflag(FLAG_RECEIVED_TM_VOLT_SWITCH)
 	setvar(VAR_SPEEDWAGON_STATE, 1)
+	setvar(VAR_MISA_STATE, 5)
     return
 }
 
 text MauvilleCity_Gym_Text_ExplainVoltSwitch{
-    "That TM56, VOLT SWITCH, is\n
-    perfect for getting out of\l
-    shocking situations! Hahaha!"
+    "That TM56, VOLT SWITCH, is perfect for\n
+	getting out of shocking situations!\l
+	Hahaha!"
 }
 
 script MauvilleCity_Gym_EventScript_Jolteon{

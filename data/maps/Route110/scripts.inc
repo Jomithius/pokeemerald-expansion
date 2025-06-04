@@ -1955,7 +1955,7 @@ Route110_EventScript_Dale::
 # 983 "data/maps/Route110/scripts.pory"
 	playse SE_THUNDERSTORM_STOP
 # 984 "data/maps/Route110/scripts.pory"
-	removeobject 43
+	removeobject 42
 # 985 "data/maps/Route110/scripts.pory"
 	playse SE_FLEE
 # 986 "data/maps/Route110/scripts.pory"
@@ -2071,31 +2071,31 @@ Route110_EventScript_Speedwagon::
 # 1071 "data/maps/Route110/scripts.pory"
 	playse SE_FLEE
 # 1072 "data/maps/Route110/scripts.pory"
-	removeobject 34
-# 1073 "data/maps/Route110/scripts.pory"
-	removeobject 35
-# 1074 "data/maps/Route110/scripts.pory"
-	removeobject 36
-# 1075 "data/maps/Route110/scripts.pory"
-	removeobject 37
-# 1076 "data/maps/Route110/scripts.pory"
-	removeobject 38
-# 1077 "data/maps/Route110/scripts.pory"
-	removeobject 39
-# 1078 "data/maps/Route110/scripts.pory"
-	removeobject 40
-# 1079 "data/maps/Route110/scripts.pory"
-	removeobject 41
-# 1080 "data/maps/Route110/scripts.pory"
-	removeobject 42
-# 1081 "data/maps/Route110/scripts.pory"
-	removeobject 43
-# 1082 "data/maps/Route110/scripts.pory"
-	removeobject 44
-# 1083 "data/maps/Route110/scripts.pory"
-	removeobject 45
-# 1084 "data/maps/Route110/scripts.pory"
 	removeobject 33
+# 1073 "data/maps/Route110/scripts.pory"
+	removeobject 34
+# 1074 "data/maps/Route110/scripts.pory"
+	removeobject 35
+# 1075 "data/maps/Route110/scripts.pory"
+	removeobject 36
+# 1076 "data/maps/Route110/scripts.pory"
+	removeobject 37
+# 1077 "data/maps/Route110/scripts.pory"
+	removeobject 38
+# 1078 "data/maps/Route110/scripts.pory"
+	removeobject 39
+# 1079 "data/maps/Route110/scripts.pory"
+	removeobject 40
+# 1080 "data/maps/Route110/scripts.pory"
+	removeobject 41
+# 1081 "data/maps/Route110/scripts.pory"
+	removeobject 42
+# 1082 "data/maps/Route110/scripts.pory"
+	removeobject 43
+# 1083 "data/maps/Route110/scripts.pory"
+	removeobject 44
+# 1084 "data/maps/Route110/scripts.pory"
+	removeobject 45
 # 1085 "data/maps/Route110/scripts.pory"
 	delay 10
 # 1086 "data/maps/Route110/scripts.pory"
@@ -2123,16 +2123,16 @@ Route110_Policeman_GiveUturn::
 # 1118 "data/maps/Route110/scripts.pory"
 	clearflag FLAG_HIDE_POLICEMAN_ROUTE_110
 # 1119 "data/maps/Route110/scripts.pory"
-	addobject 47
+	addobject 46
 # 1120 "data/maps/Route110/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
 # 1121 "data/maps/Route110/scripts.pory"
 	compare VAR_TEMP_1, DIR_SOUTH
 	goto_if_eq Route110_Policeman_GiveUturn_2
 # 1126 "data/maps/Route110/scripts.pory"
-	applymovement 47, Route110_Policeman_East
+	applymovement 46, Route110_Policeman_East
 # 1127 "data/maps/Route110/scripts.pory"
-	waitmovement 47
+	waitmovement 46
 # 1128 "data/maps/Route110/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 # 1129 "data/maps/Route110/scripts.pory"
@@ -2153,11 +2153,11 @@ Route110_Policeman_GiveUturn_1:
 # 1137 "data/maps/Route110/scripts.pory"
 	waitmessage
 # 1138 "data/maps/Route110/scripts.pory"
-	applymovement 47, Route110_PolicemanLeave
+	applymovement 46, Route110_PolicemanLeave
 # 1139 "data/maps/Route110/scripts.pory"
-	waitmovement 47
+	waitmovement 46
 # 1140 "data/maps/Route110/scripts.pory"
-	removeobject 47
+	removeobject 46
 # 1141 "data/maps/Route110/scripts.pory"
 	setflag FLAG_HIDE_POLICEMAN_ROUTE_110
 # 1142 "data/maps/Route110/scripts.pory"
@@ -2168,9 +2168,9 @@ Route110_Policeman_GiveUturn_1:
 
 Route110_Policeman_GiveUturn_2:
 # 1122 "data/maps/Route110/scripts.pory"
-	applymovement 47, Route110_Policeman_South
+	applymovement 46, Route110_Policeman_South
 # 1123 "data/maps/Route110/scripts.pory"
-	waitmovement 47
+	waitmovement 46
 	goto Route110_Policeman_GiveUturn_1
 
 
@@ -2184,16 +2184,16 @@ Route110_Policeman_GiveUturnNorth::
 # 1151 "data/maps/Route110/scripts.pory"
 	clearflag FLAG_HIDE_POLICEMAN_ROUTE_110
 # 1152 "data/maps/Route110/scripts.pory"
-	addobject 48
+	addobject 47
 # 1153 "data/maps/Route110/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
 # 1154 "data/maps/Route110/scripts.pory"
 	compare VAR_TEMP_1, DIR_WEST
 	goto_if_eq Route110_Policeman_GiveUturnNorth_2
 # 1159 "data/maps/Route110/scripts.pory"
-	applymovement 48, Route110_Policeman_North2
+	applymovement 47, Route110_Policeman_North2
 # 1160 "data/maps/Route110/scripts.pory"
-	waitmovement 48
+	waitmovement 47
 # 1161 "data/maps/Route110/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 1162 "data/maps/Route110/scripts.pory"
@@ -2214,11 +2214,11 @@ Route110_Policeman_GiveUturnNorth_1:
 # 1170 "data/maps/Route110/scripts.pory"
 	waitmessage
 # 1171 "data/maps/Route110/scripts.pory"
-	applymovement 48, Route110_PolicemanLeaveNorth
+	applymovement 47, Route110_PolicemanLeaveNorth
 # 1172 "data/maps/Route110/scripts.pory"
-	waitmovement 48
+	waitmovement 47
 # 1173 "data/maps/Route110/scripts.pory"
-	removeobject 48
+	removeobject 47
 # 1174 "data/maps/Route110/scripts.pory"
 	setflag FLAG_HIDE_POLICEMAN_ROUTE_110
 # 1175 "data/maps/Route110/scripts.pory"
@@ -2229,9 +2229,9 @@ Route110_Policeman_GiveUturnNorth_1:
 
 Route110_Policeman_GiveUturnNorth_2:
 # 1155 "data/maps/Route110/scripts.pory"
-	applymovement 48, Route110_Policeman_North
+	applymovement 47, Route110_Policeman_North
 # 1156 "data/maps/Route110/scripts.pory"
-	waitmovement 48
+	waitmovement 47
 	goto Route110_Policeman_GiveUturnNorth_1
 
 
@@ -2445,7 +2445,7 @@ Route110_EventScript_BikerSouthCyclingRoad_Text_0:
 
 Route110_Text_PolicemanPleaseHelp::
 # 1007 "data/maps/Route110/scripts.pory"
-	.string "Thank you for saving me.\n You're a strong TRAINER.\l Though the situation is urgent!\p Backup isn't coming, and\n I can't do this alone.\p Their boss is currently riding at\n end of CYCLING ROAD.\p If you can defeat him, all these\n other cowards should flee!\l You have a bike, right?$"
+	.string "Thank you for saving me.\n You're a strong TRAINER.\l Though the situation is urgent!\p Backup isn't coming, and I can't\n do this alone.\p Their boss is currently riding at\n end of CYCLING ROAD.\p If you can defeat him, all these\n other cowards should flee!\l You have a bike, right?$"
 
 Route110_Text_Speedwagon::
 # 1095 "data/maps/Route110/scripts.pory"

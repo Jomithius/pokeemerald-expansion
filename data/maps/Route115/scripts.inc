@@ -1263,7 +1263,7 @@ Route115Emo8::
 
 Route115Misa2::
 # 575 "data/maps/Route115/scripts.pory"
-	.string "MISA: Great! I made a feast since\n tomorrow you're starting your journey.\l Hurry back soon, JAMES.\l {PLAYER}, you're more than welcome\l to stop by anytime!$"
+	.string "MISA: Great! I made a feast since\n you're starting your journey tomorrow.\l Hurry back soon, JAMES.\l {PLAYER}, you're more than welcome\l to stop by anytime!$"
 
 Route115Emo9::
 # 581 "data/maps/Route115/scripts.pory"
