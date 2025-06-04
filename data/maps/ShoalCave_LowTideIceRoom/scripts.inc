@@ -436,4 +436,4 @@ ShoalCave_LowTideIceRoom_EventScript_Aria_Text_2:
 
 ShoalCave_LowTideIceRoom_Text_Aria1::
 # 152 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	.string "You scared me!\n  Who are you?\p ...\n Oh. A challenger?\p I'm ARIA. LEADER of the MOSSDEEP\n POKéMON GYM and PROTECTOR of\l the SACRED BLADE.\p ARIA: I can stop my training here.\n Me and my knights shall await you\l at the GYM.$"
+	.string "You scared me!\n  Who are you?\p ...\n Oh. A challenger?\p I'm ARIA. LEADER of the MOSSDEEP\n POKéMON GYM and PROTECTOR of the\l SACRED BLADE.\p ARIA: I can stop my training here.\n Me and my knights shall await you\l at the GYM.$"
