@@ -176,7 +176,7 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
         delay(10)
         msgbox(LilycoveCity_DepartmentStore_5F_Text_Misa1, MSGBOX_AUTOCLOSE)
         waitmessage
-        giveitem(ITEM_RARE_CANDY, 20)
+        giveitem(ITEM_RARE_CANDY, 10)
         msgbox(LilycoveCity_DepartmentStore_5F_Text_Misa2, MSGBOX_AUTOCLOSE)
         waitmessage
         fadedefaultbgm

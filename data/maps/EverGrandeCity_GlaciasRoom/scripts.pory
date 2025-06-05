@@ -1,0 +1,96 @@
+raw`EverGrandeCity_GlaciasRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_GlaciasRoom_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_GlaciasRoom_OnLoad
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_GlaciasRoom_OnWarp
+	.byte 0
+
+EverGrandeCity_GlaciasRoom_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_GlaciasRoom_EventScript_PlayerTurnNorth
+	.2byte 0
+
+EverGrandeCity_GlaciasRoom_EventScript_PlayerTurnNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+EverGrandeCity_GlaciasRoom_OnFrame:
+	map_script_2 VAR_ELITE_4_STATE, 2, EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor
+	.2byte 0
+
+EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor::
+	lockall
+	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	setvar VAR_ELITE_4_STATE, 3
+	releaseall
+	end
+
+EverGrandeCity_GlaciasRoom_OnLoad:
+	call_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_ResetAdvanceToNextRoom
+	call_if_eq VAR_ELITE_4_STATE, 3, EverGrandeCity_GlaciasRoom_EventScript_CloseDoor
+	end
+
+EverGrandeCity_GlaciasRoom_EventScript_ResetAdvanceToNextRoom::
+	call PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom
+	return
+
+EverGrandeCity_GlaciasRoom_EventScript_CloseDoor::
+	call PokemonLeague_EliteFour_EventScript_CloseDoor
+	return
+
+EverGrandeCity_GlaciasRoom_EventScript_Glacia::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
+    goto_if_set FLAG_RECIEVED_CHOICE_SCARF_XION, EverGrandeCity_GlaciasRoom_EventScript_Xion
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
+	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
+	end
+
+EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech::
+	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_GlaciasRoom_EventScript_Defeated::
+	setflag FLAG_DEFEATED_ELITE_4_GLACIA
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
+	.string "Welcome, my name is XION\n"
+	.string "of the ELITE FOUR.\p"
+	.string "Are you the TRAINER that MISA\n"
+	.string "had talked to me about?\p"
+	.string "Not many TRAINERS can usually\n"
+	.string "make it this far.\p"
+	.string "Let me find out if you're\n"
+	.string "able to pass me!$"
+
+EverGrandeCity_GlaciasRoom_Text_Defeat:
+	.string "Wow…\n"
+	.string "I knew you had potential.$"
+
+EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
+	.string "Go on to the next room.\p"
+	.string "And there, witness the truly fearsome\n"
+	.string "side of the POKéMON LEAGUE.$"
+
+`
+script EverGrandeCity_GlaciasRoom_EventScript_Xion{
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+	msgbox(EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech, MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat)
+	goto(EverGrandeCity_GlaciasRoom_EventScript_Defeated)
+    end
+}
+
+text EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech{
+    "Oh, you're that TRAINER I met in\n
+    VERDANTURF! So you made it this far.\l
+    Again, I'm XION of the ELITE FOUR.\p
+    Let me see how strong the TRAINER\n
+    that MISA believed in really is!"
+}

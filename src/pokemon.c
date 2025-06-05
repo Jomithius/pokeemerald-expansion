@@ -5800,21 +5800,23 @@ u16 GetBattleBGM(void)
                 return MUS_VS_CHAMPION;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleRedName))
                 return MUS_RG_VS_CHAMPION;
-            return MUS_WATERFALL_COLOSSEUM;
+            return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
                 return MUS_VS_TRAINER;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJamesName))
-                return MUS_VS_FRONTIER_BRAIN;
+                return MUS_FINAL_BATTLE;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
-            return MUS_VS_CIPHER_ADMIN;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleEugeniaName))
+                return MUS_RG_VS_CHAMPION;
+            return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_RAT_MANIAC:
             return MUS_VS_RATDUARDO; 
         case TRAINER_CLASS_CEO:
-            return MUS_FINAL_BATTLE; 
+            return MUS_VS_FRONTIER_BRAIN; 
         case TRAINER_CLASS_MASTER:
             return MUS_BENNIS;    
         case TRAINER_CLASS_BIKER:

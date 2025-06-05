@@ -365,7 +365,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_Misa_2:
 # 178 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmessage
 # 179 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	giveitem ITEM_RARE_CANDY, 20
+	giveitem ITEM_RARE_CANDY, 10
 # 180 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilycoveCity_DepartmentStore_5F_Text_Misa2, MSGBOX_AUTOCLOSE
 # 181 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

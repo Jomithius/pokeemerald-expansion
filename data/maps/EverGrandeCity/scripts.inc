@@ -470,25 +470,25 @@ EverGrandeCity_EventScript_James_3:
 	goto EverGrandeCity_EventScript_James_1
 
 
-# 332 "data/maps/EverGrandeCity/scripts.pory"
+# 334 "data/maps/EverGrandeCity/scripts.pory"
 EverGrandeCity_Movement_EnterPokeball:
-# 333 "data/maps/EverGrandeCity/scripts.pory"
+# 335 "data/maps/EverGrandeCity/scripts.pory"
 	enter_pokeball
 	step_end
 
-# 336 "data/maps/EverGrandeCity/scripts.pory"
-EvergrandeCity_Movement_PlayerLeftTrigger:
-# 337 "data/maps/EverGrandeCity/scripts.pory"
-	walk_right
 # 338 "data/maps/EverGrandeCity/scripts.pory"
+EvergrandeCity_Movement_PlayerLeftTrigger:
+# 339 "data/maps/EverGrandeCity/scripts.pory"
+	walk_right
+# 340 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
 	step_end
 
-# 341 "data/maps/EverGrandeCity/scripts.pory"
-EvergrandeCity_Movement_PlayerRightTrigger:
-# 342 "data/maps/EverGrandeCity/scripts.pory"
-	walk_left
 # 343 "data/maps/EverGrandeCity/scripts.pory"
+EvergrandeCity_Movement_PlayerRightTrigger:
+# 344 "data/maps/EverGrandeCity/scripts.pory"
+	walk_left
+# 345 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
 	step_end
 
@@ -550,8 +550,8 @@ EverGrandeCity_Text_James4::
 
 EverGrandeCity_Text_James5::
 # 320 "data/maps/EverGrandeCity/scripts.pory"
-	.string "JAMES: The ELITE FOUR are strong.\n Be careful.\p {COLOR BLUE}{SHADOW LIGHT_BLUE} The level cap for the ELITE FOUR\n is 75.$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}To use MEGA EVOLUTION in battle,\n press START before selecting your move.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: The ELITE FOUR are strong.\n Be careful.\p {COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap for the ELITE FOUR\n is 75.$"
 
 EverGrandeCity_Text_James6::
-# 327 "data/maps/EverGrandeCity/scripts.pory"
+# 329 "data/maps/EverGrandeCity/scripts.pory"
 	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Well, I'm gonna go back home for now.\n See ya, {PLAYER}.$"

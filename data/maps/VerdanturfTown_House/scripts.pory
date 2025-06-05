@@ -13,8 +13,6 @@ script VerdanturfTown_House_Xion{
     else{
         msgbox(VerdanturfTown_House_Text_Xion, MSGBOX_NPC)
         waitmessage
-        msgbox(VerdanturfTown_House_Text_Xion2, MSGBOX_NPC)
-        waitmessage
         giveitem(ITEM_CHOICE_SCARF)
         waitmessage
         msgbox(VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE)
@@ -33,11 +31,8 @@ text VerdanturfTown_House_Text_Xion{
     ...\p
     Oh, {PLAYER}!\n
     It's nice to meet you!\p
-    I'm XION."
-}
-
-text VerdanturfTown_House_Text_Xion2{
-    "XION: That's funny! MISA was telling\n
+    I'm XION.\p
+    XION: That's funny! MISA was telling\n
     me about you before she left.\p
     She's so happy her son finally\n
     made a friend.\p
@@ -50,7 +45,7 @@ text VerdanturfTown_House_Text_Xion2{
 }
 
 text VerdanturfTown_House_Text_Xion3{
-    "XION: MISA also said you're a\n
+    "MISA also said you're a\n
     promising TRAINER!\l
     I'm sure we'll meet again."
 }

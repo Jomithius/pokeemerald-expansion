@@ -1,0 +1,213 @@
+raw`EverGrandeCity_PhoebesRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_PhoebesRoom_OnLoad
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_PhoebesRoom_OnWarp
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_PhoebesRoom_OnFrame
+	.byte 0
+
+EverGrandeCity_PhoebesRoom_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_PhoebesRoom_EventScript_PlayerTurnNorth
+	.2byte 0
+
+EverGrandeCity_PhoebesRoom_EventScript_PlayerTurnNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+EverGrandeCity_PhoebesRoom_OnFrame:
+	map_script_2 VAR_ELITE_4_STATE, 1, EverGrandeCity_PhoebesRoom_EventScript_WalkInCloseDoor
+	.2byte 0
+
+EverGrandeCity_PhoebesRoom_EventScript_WalkInCloseDoor::
+	lockall
+	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	setvar VAR_ELITE_4_STATE, 2
+	releaseall
+	end
+
+EverGrandeCity_PhoebesRoom_OnLoad:
+	call_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_ResetAdvanceToNextRoom
+	call_if_eq VAR_ELITE_4_STATE, 2, EverGrandeCity_PhoebesRoom_EventScript_CloseDoor
+	end
+
+EverGrandeCity_PhoebesRoom_EventScript_ResetAdvanceToNextRoom::
+	call PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom
+	return
+
+EverGrandeCity_PhoebesRoom_EventScript_CloseDoor::
+	call PokemonLeague_EliteFour_EventScript_CloseDoor
+	return
+
+EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
+	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
+	end
+
+EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech::
+	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_PhoebesRoom_EventScript_Defeated::
+	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
+	.string "Huh?\p"
+	.string "Oh... A challenger? Hmph!\n"
+	.string "I was just getting to the good part.\p"
+	.string "Okay, let's get this over with\n"
+	.string "so I can get back to my book!$"
+
+EverGrandeCity_PhoebesRoom_Text_Defeat:
+	.string "... Fight's over?\n"
+	.string "Now I can get back to reading.$"
+
+EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
+	.string "Why are you still here?\n"
+	.string "Go on to the next room! Hmph!$"
+`
+
+script EverGrandeCity_PhoebesRoom_EventScript_Lina{
+    lock
+    goto_if_set(FLAG_DEFEATED_EUGENIA, EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech)
+    goto_if_set(FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
+    playse(SE_PIN)
+	applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    delay(20)
+    faceplayer
+    if(var(VAR_LINA_TALKED_TO) == 2){
+        goto_if_set(FLAG_ELITE_FOUR_FINAL_BATTLE, EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss)
+        msgbox(EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2, MSGBOX_DEFAULT)
+	    trainerbattle_no_intro(TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
+	    goto(EverGrandeCity_PhoebesRoom_EventScript_Defeated)
+	    end
+    }
+    else{
+	    msgbox(EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
+	    trainerbattle_no_intro(TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
+	    goto(EverGrandeCity_PhoebesRoom_EventScript_Defeated)
+	    end
+    }
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss{
+    msgbox(EverGrandeCity_PhoebesRoom_Text_LinaStillGoingIntoHouses, MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        goto(EverGrandeCity_PhoebesRoom_EventScript_LinaEevee)
+        end
+    }
+    else{
+	    goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
+        end
+    }
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_LinaEevee{
+    msgbox(EverGrandeCity_PhoebesRoom_Text_LinaDidYouTakeEevee, MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        goto(EverGrandeCity_PhoebesRoom_EventScript_LinaReally)
+        end
+    }
+    else{
+	    goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
+        end
+    }
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_LinaReally{
+    playbgm(MUS_NONE, FALSE)
+    msgbox(EverGrandeCity_PhoebesRoom_Text_LinaReally, MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+        msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaIntro, MSGBOX_DEFAULT)
+	    trainerbattle_no_intro(TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat)
+	    goto(EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated)
+        end
+    }
+    else{
+	    goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
+        end
+    }
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_LinaNo{
+    msgbox(EverGrandeCity_PhoebesRoom_Text_LinaNo, MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_Defeated)
+    end
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated{
+    setflag(FLAG_DEFEATED_ELITE_4_PHOEBE)
+    setflag(FLAG_DEFEATED_EUGENIA)
+    setvar(VAR_LINA_TALKED_TO, 3)
+	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+	msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech{
+    msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+
+text EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2{
+    "Wha-\n
+    Oh, it's you again.\p
+    Let's get this over with so I can\n
+    go back to reading. Hmph!"
+}
+
+text EverGrandeCity_PhoebesRoom_Text_LinaStillGoingIntoHouses{
+    "Wha-!\n
+    You again?!\l
+    Right when I was getting to the good part!\p
+    I thought I locked the door this time, but\n
+    you would probably break in either way.\p
+    Are you still going into random peoples'\n
+    houses?"
+}
+
+text EverGrandeCity_PhoebesRoom_Text_LinaDidYouTakeEevee{
+    "Hmph! Of course you are.\p
+    They still haven't found my EEVEE,\n
+    by the way...\p
+    So be honest. Was it you who took it?"
+}
+
+text EverGrandeCity_PhoebesRoom_Text_LinaReally{
+    "... Really?"
+}
+
+text EverGrandeCity_PhoebesRoom_Text_EugeniaIntro{
+    "You little-\p
+    What the fuck is wrong with you?!\n
+    I'm going to crush you, you dirty thief!"
+}
+
+text EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat{
+    ">.>\n
+    Hmph!"
+}
+
+text EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech{
+    "Get out of my sight!\n
+    Hmph!"
+}
+
+text EverGrandeCity_PhoebesRoom_Text_LinaNo{
+    "Hmph. Oh, well.\p
+    Let's get this over with so I\n
+    can get back to my book."
+}

@@ -4519,22 +4519,70 @@ IVs: 0 Atk
 - Will-O-Wisp  
 - Hex  
 
-=== TRAINER_CAMERON_5 === /* FREE */
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
+=== TRAINER_EUGENIA ===
+Name: EUGENIA
+Class: Elite Four
+Pic: Elite Four Phoebe
+Gender: Female
+Music: Elite Four
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer Ace
+Mugshot: Pink
 
-Solrock
-Level: 45
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Rayquaza @ Life Orb  
+Ability: Air Lock    
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Outrage  
+- Dragon Ascent  
+- V-create  
+- Dragon Tail  
 
-Alakazam
-Level: 45
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Cobalion @ Leftovers  
+Ability: Justified    
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Close Combat  
+- Iron Head  
+- Zen Headbutt  
+
+Reshiram @ Choice Specs  
+Ability: Turboblaze    
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Blue Flare  
+- Draco Meteor  
+- Earth Power  
+- Shadow Ball  
+
+Luxray (M) @ Flame Orb  
+Ability: Guts    
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Supercell Slam  
+- Play Rough  
+- Throat Chop  
+- Trailblaze  
+
+Serperior @ Leftovers  
+Ability: Contrary    
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Leaf Storm  
+- Superpower  
+- Armor Cannon  
+- Psycho Boost  
+
+Chien-Pao @ Ability Shield  
+Ability: Sword of Ruin  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Icicle Crash  
+- Crunch  
+- Sucker Punch  
 
 === TRAINER_JACLYN ===
 Name: JACLYN
@@ -4860,198 +4908,299 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
 
-Mightyena
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
+Shuckle (M) @ Custap Berry  
+Ability: Sturdy  
+Level: 75  
+EVs: 244 HP / 36 Def / 228 SpD  
+Impish Nature  
+- Sticky Web  
+- Stealth Rock  
+- Toxic  
+- Knock Off  
 
-Shiftry
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
+Jellicent (F) @ Rocky Helmet  
+Ability: Cursed Body  
+Level: 75   
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Scald  
+- Shadow Ball  
+- Ice Beam  
+- Strength Sap  
 
-Cacturne
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
+Emboar (M) @ Leftovers  
+Ability: Reckless  
+Level: 75   
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Flare Blitz  
+- Drain Punch  
+- Trailblaze  
+- Wild Charge  
 
-Crawdaunt
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
+Bewear (M) @ Misty Seed  
+Ability: Fluffy  
+Level: 75    
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Swords Dance  
+- Drain Punch  
+- Darkest Lariat  
+- Zen Headbutt  
 
-Absol @ Sitrus Berry
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rock Slide
-- Swords Dance
-- Slash
+Audino (F) @ Audinite  
+Ability: Regenerator  
+Level: 75    
+EVs: 252 HP / 124 Def / 132 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Wish  
+- Dazzling Gleam  
+- Misty Terrain  
+- Hyper Voice  
+
+Togekiss (F) @ Life Orb  
+Ability: Serene Grace  
+Level: 75    
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Air Slash  
+- Psychic  
+- Ancient Power  
+- Dazzling Gleam  
 
 === TRAINER_PHOEBE ===
-Name: PHOEBE
+Name: LINA
 Class: Elite Four
 Pic: Elite Four Phoebe
 Gender: Female
 Music: Elite Four
-Items: Full Restore / Full Restore
-Double Battle: No
-AI: Basic Trainer
-Mugshot: Green
+Double Battle: Yes
+AI: Smart Trainer
+Mugshot: Pink
 
-Dusclops
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
+Lapras (F) @ Rocky Helmet  
+Ability: Water Absorb  
+Level: 75  
+Tera Type: Water  
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Blizzard  
+- Surf  
+- Reflect  
+- Freeze-Dry  
 
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
+Milotic (F) @ Absorb Bulb  
+Ability: Marvel Scale  
+Level: 75  
+Tera Type: Water  
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Surf  
+- Light Screen  
+- Blizzard  
+- Aqua Ring  
 
-Sableye
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
+Hatterene @ Leftovers  
+Ability: Magic Bounce  
+Level: 75  
+Tera Type: Psychic  
+EVs: 252 HP / 96 Def / 120 SpA / 40 SpD  
+Quiet Nature  
+IVs: 0 Atk / 0 Spe  
+- Trick Room  
+- Dazzling Gleam  
+- Expanding Force  
+- Life Dew  
 
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
+Incineroar (M) @ Heavy-Duty Boots  
+Ability: Intimidate  
+Level: 75  
+Tera Type: Fire  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Fake Out  
+- Parting Shot  
+- Flare Blitz  
+- Darkest Lariat  
 
-Dusclops @ Sitrus Berry
-Level: 51
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Ice Beam
-- Rock Slide
-- Earthquake
+Serperior (M) @ Life Orb  
+Ability: Contrary  
+Level: 75  
+Tera Type: Grass  
+EVs: 248 HP / 252 SpA / 8 SpD  
+Quiet Nature  
+IVs: 30 Atk / 0 Spe  
+- Leaf Storm  
+- Breaking Swipe  
+- Dragon Pulse  
+- Hidden Power 
+
+Luxray (M) @ Flame Orb  
+Ability: Guts  
+Level: 75  
+Tera Type: Electric  
+EVs: 252 HP / 252 Atk / 4 Def  
+Brave Nature  
+IVs: 0 Spe  
+- Supercell Slam  
+- Play Rough  
+- Crunch  
+- Ice Fang  
 
 === TRAINER_GLACIA ===
-Name: GLACIA
+Name: XION
 Class: Elite Four
 Pic: Elite Four Glacia
 Gender: Female
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
-Mugshot: Pink
+AI: Smart Trainer
+Mugshot: Blue
 
-Sealeo
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
+Indeedee-F @ Light Clay  
+Ability: Psychic Surge  
+Level: 75   
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Expanding Force  
+- Mystical Fire  
+- Reflect  
+- Light Screen  
 
-Glalie
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
-- Ice Beam
+Gastrodon (M) @ Leftovers  
+Ability: Storm Drain  
+Level: 75   
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Earth Power  
+- Scald  
+- Pain Split  
+- Sludge Bomb  
 
-Sealeo
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
-- Blizzard
+Hydreigon (M) @ Assault Vest  
+Ability: Levitate  
+Level: 75   
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Draco Meteor  
+- Dark Pulse  
+- Earth Power  
+- Focus Blast  
 
-Glalie
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
+Malamar (M) @ Life Orb  
+Ability: Contrary  
+Level: 75   
+EVs: 252 Atk / 68 SpD / 188 Spe  
+Adamant Nature  
+- Superpower  
+- Knock Off  
+- Psycho Cut  
+- Return  
 
-Walrein @ Sitrus Berry
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Body Slam
-- Ice Beam
-- Sheer Cold
+Gardevoir (M) @ Gardevoirite  
+Ability: Trace 
+Level: 75  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Calm Mind  
+- Hyper Voice  
+- Future Sight  
+- Psyshock  
+
+Leafeon (F) @ Salac Berry  
+Ability: Chlorophyll  
+Level: 75  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Knock Off  
+- Leaf Blade  
+- Trailblaze  
 
 === TRAINER_DRAKE ===
-Name: DRAKE
+Name: DAVE
 Class: Elite Four
 Pic: Elite Four Drake
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
-Mugshot: Blue
+AI: Smart Trainer
+Mugshot: Yellow
 
-Shelgon
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
+Cursola (F) @ Focus Sash  
+Ability: Perish Body  
+Level: 75    
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Stealth Rock  
+- Night Shade  
+- Reflect  
+- Light Screen  
 
-Altaria
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+Ferrothorn (M) @ Rocky Helmet  
+Ability: Iron Barbs  
+Level: 75    
+EVs: 252 HP / 232 Def / 24 Spe  
+Impish Nature  
+IVs: 0 Spe  
+- Spikes  
+- Leech Seed  
+- Power Whip  
+- Gyro Ball  
 
-Kingdra
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
+Reuniclus (M) @ Leftovers  
+Ability: Magic Guard  
+Level: 75    
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Calm Mind  
+- Expanding Force  
+- Recover  
+- Focus Blast  
 
-Flygon
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
-- Earthquake
+Mimikyu (F) @ Life Orb  
+Ability: Disguise  
+Level: 75   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Play Rough  
+- Shadow Sneak  
+- Shadow Claw  
 
-Salamence @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Dragon Claw
-- Rock Slide
-- Crunch
+Eiscue (M) @ Sitrus Berry  
+Ability: Ice Face  
+Level: 75  
+Shiny: Yes   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Belly Drum  
+- Icicle Crash  
+- Liquidation  
+- Iron Head  
+
+Banette (F) @ Banettite  
+Ability: Frisk 
+Level: 75    
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Destiny Bond  
+- Sucker Punch  
+- Poltergeist  
+- Will-O-Wisp  
+
 
 === TRAINER_ROXANNE_1 ===
 Name: STEVE
@@ -6809,58 +6958,73 @@ Class: Champion
 Pic: Champion Wallace
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 Mugshot: Purple
 
-Wailord
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
+Palossand (M) @ Rocky Helmet  
+Ability: Water Compaction  
+Level: 75  
+Shiny: Yes   
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Stealth Rock  
+- Shore Up  
+- Night Shade  
+- Toxic  
 
-Tentacruel
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
-- Ice Beam
+Ninetales-Alola (F) @ Fairy Feather  
+Ability: Snow Warning  
+Level: 75   
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Aurora Veil  
+- Moonblast  
+- Blizzard  
+- Freeze-Dry  
 
-Ludicolo
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
+Samurott-Hisui (M) @ Life Orb  
+Ability: Sharpness  
+Level: 75    
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Ceaseless Edge  
+- Aqua Cutter  
+- Megahorn  
+- Sucker Punch  
 
-Whiscash
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
+Mienshao (M) @ Heavy-Duty Boots  
+Ability: Regenerator  
+Level: 75   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Fake Out  
+- U-turn  
+- High Jump Kick  
+- Knock Off  
 
-Gyarados
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
+Volcarona (F) @ Heavy-Duty Boots  
+Ability: Flame Body  
+Level: 75    
+EVs: 248 HP / 200 Def / 60 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Quiver Dance  
+- Bug Buzz  
+- Fiery Dance  
+- Giga Drain  
 
-Milotic @ Sitrus Berry
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Surf
-- Ice Beam
-- Toxic
+Palafin-Hero (M)
+Ability: Zero to Hero  
+Level: 75  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Bulk Up  
+- Jet Punch  
+- Drain Punch  
+- Flip Turn  
 
 === TRAINER_ANDREW ===
 Name: ANDREW

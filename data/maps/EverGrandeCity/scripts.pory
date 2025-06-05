@@ -318,9 +318,11 @@ text EverGrandeCity_Text_James4{
 }
 
 text EverGrandeCity_Text_James5{
-    "JAMES: The ELITE FOUR are strong.\n
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}To use MEGA EVOLUTION in battle,\n
+    press START before selecting your move.\p
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: The ELITE FOUR are strong.\n
     Be careful.\p
-    {COLOR BLUE}{SHADOW LIGHT_BLUE} The level cap for the ELITE FOUR\n
+    {COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap for the ELITE FOUR\n
     is 75."
 }
 

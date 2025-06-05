@@ -1443,6 +1443,7 @@ const u8 gText_Are[] = _("are");
 const u8 gText_Are2[] = _("are");
 const u8 gText_BadEgg[] = _("Bad Egg");
 const u8 gText_BattleWallyName[] = _("WALLY");
+const u8 gText_BattleEugeniaName[] = _("EUGENIA");
 const u8 gText_BattleLunaName[] = _("LUNA");
 const u8 gText_BattleJamesName[] = _("JAMES");
 const u8 gText_BattleSpeedwagonName[] = _("SPEEDWAGON");

@@ -1222,6 +1222,7 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
+// custom flags
 #define FLAG_LINA_HOUSE_EEVEE                                       0x493 // Gift Eevee
 #define FLAG_LUNA_HOUSE_MOTHIM                                      0x494 // Gift Mothim
 #define FLAG_HIDE_MISA_LILYCOVE_DEPT_5F                             0x495 // Misa Lilycove 5F
@@ -1277,10 +1278,10 @@
 #define FLAG_VIKAVOLT_TOTEM                                         0x4C7 // Route 120
 #define FLAG_KOMMO_O_TOTEM                                          0x4C8 // Victory Road
 #define FLAG_ARAQUANID_TOTEM                                        0x4C9 // Route 107
-#define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
-#define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
-#define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag
-#define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag
+#define FLAG_E4_FINAL_REMATCH                                       0x4CA // For postgame final rematch
+#define FLAG_RECIEVED_FANTASIA                                      0x4CB // From Dave in Mt Pyre Summit
+#define FLAG_DEFEATED_EUGENIA                                       0x4CC // Lina Superboss
+#define FLAG_ELITE_FOUR_FINAL_BATTLE                                0x4CD // For Elite Four Rematches
 #define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag
 #define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
 #define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag

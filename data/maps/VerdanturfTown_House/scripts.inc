@@ -17,25 +17,21 @@ VerdanturfTown_House_Xion::
 # 15 "data/maps/VerdanturfTown_House/scripts.pory"
 	waitmessage
 # 16 "data/maps/VerdanturfTown_House/scripts.pory"
-	msgbox VerdanturfTown_House_Text_Xion2, MSGBOX_NPC
+	giveitem ITEM_CHOICE_SCARF
 # 17 "data/maps/VerdanturfTown_House/scripts.pory"
 	waitmessage
 # 18 "data/maps/VerdanturfTown_House/scripts.pory"
-	giveitem ITEM_CHOICE_SCARF
+	msgbox VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE
 # 19 "data/maps/VerdanturfTown_House/scripts.pory"
 	waitmessage
 # 20 "data/maps/VerdanturfTown_House/scripts.pory"
-	msgbox VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE
-# 21 "data/maps/VerdanturfTown_House/scripts.pory"
-	waitmessage
-# 22 "data/maps/VerdanturfTown_House/scripts.pory"
 	setflag FLAG_RECIEVED_CHOICE_SCARF_XION
 VerdanturfTown_House_Xion_1:
-# 24 "data/maps/VerdanturfTown_House/scripts.pory"
+# 22 "data/maps/VerdanturfTown_House/scripts.pory"
 	applymovement 1, Common_Movement_FaceOriginalDirection
-# 25 "data/maps/VerdanturfTown_House/scripts.pory"
+# 23 "data/maps/VerdanturfTown_House/scripts.pory"
 	waitmovement 1
-# 26 "data/maps/VerdanturfTown_House/scripts.pory"
+# 24 "data/maps/VerdanturfTown_House/scripts.pory"
 	release
 	end
 
@@ -48,13 +44,9 @@ VerdanturfTown_House_Xion_2:
 
 
 VerdanturfTown_House_Text_Xion::
-# 30 "data/maps/VerdanturfTown_House/scripts.pory"
-	.string "Oh, hello.\n Who are you?\p ...\p Oh, {PLAYER}!\n It's nice to meet you!\p I'm XION.$"
-
-VerdanturfTown_House_Text_Xion2::
-# 39 "data/maps/VerdanturfTown_House/scripts.pory"
-	.string "XION: That's funny! MISA was telling\n me about you before she left.\p She's so happy her son finally\n made a friend.\p So?\n What are you up to now?\p ...\p Oh, MAUVILLE's GYM?\n The LEADER there's pretty strong.\p Here, maybe this'll help you.$"
+# 28 "data/maps/VerdanturfTown_House/scripts.pory"
+	.string "Oh, hello.\n Who are you?\p ...\p Oh, {PLAYER}!\n It's nice to meet you!\p I'm XION.\p XION: That's funny! MISA was telling\n me about you before she left.\p She's so happy her son finally\n made a friend.\p So?\n What are you up to now?\p ...\p Oh, MAUVILLE's GYM?\n The LEADER there's pretty strong.\p Here, maybe this'll help you.$"
 
 VerdanturfTown_House_Text_Xion3::
-# 52 "data/maps/VerdanturfTown_House/scripts.pory"
-	.string "XION: MISA also said you're a\n promising TRAINER!\l I'm sure we'll meet again.$"
+# 47 "data/maps/VerdanturfTown_House/scripts.pory"
+	.string "MISA also said you're a\n promising TRAINER!\l I'm sure we'll meet again.$"
