@@ -276,7 +276,7 @@
 #define TRAINER_WINONA_1                    270
 #define TRAINER_TATE_AND_LIZA_1             271
 #define TRAINER_JUAN_1                      272
-#define TRAINER_JERRY_1                     273
+#define TRAINER_JERRY                       273
 #define TRAINER_TED                         274
 #define TRAINER_PAUL                        275
 #define TRAINER_MISA                        276
@@ -523,21 +523,21 @@
 #define TRAINER_ROB                         517
 #define TRAINER_STEPHEN                     518
 #define TRAINER_WALLY_VR_1                  519
-#define TRAINER_BRENDAN_ROUTE_103_MUDKIP    520
-#define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521
-#define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522
+#define TRAINER_BRENDAN_ROUTE_103_MUDKIP    520 // free
+#define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521 // free
+#define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522 // free
 #define TRAINER_BRENDAN_ROUTE_103_TREECKO   523
 #define TRAINER_BRENDAN_ROUTE_110_TREECKO   524
 #define TRAINER_BRENDAN_ROUTE_119_TREECKO   525
-#define TRAINER_BRENDAN_ROUTE_103_TORCHIC   526
-#define TRAINER_BRENDAN_ROUTE_110_TORCHIC   527
-#define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528
-#define TRAINER_MAY_ROUTE_103_MUDKIP        529
-#define TRAINER_MAY_ROUTE_110_MUDKIP        530
-#define TRAINER_MAY_ROUTE_119_MUDKIP        531
-#define TRAINER_MAY_ROUTE_103_TREECKO       532
-#define TRAINER_MAY_ROUTE_110_TREECKO       533
-#define TRAINER_MAY_ROUTE_119_TREECKO       534
+#define TRAINER_BRENDAN_ROUTE_103_TORCHIC   526 // free
+#define TRAINER_BRENDAN_ROUTE_110_TORCHIC   527 // free
+#define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528 // free
+#define TRAINER_MAY_ROUTE_103_MUDKIP        529 // free
+#define TRAINER_MAY_ROUTE_110_MUDKIP        530 // free
+#define TRAINER_MAY_ROUTE_119_MUDKIP        531 // free
+#define TRAINER_MAY_ROUTE_103_TREECKO       532 // free
+#define TRAINER_MAY_ROUTE_110_TREECKO       533 // free
+#define TRAINER_MAY_ROUTE_119_TREECKO       534 // free
 #define TRAINER_MAY_ROUTE_103_TORCHIC       535
 #define TRAINER_MAY_ROUTE_110_TORCHIC       536
 #define TRAINER_MAY_ROUTE_119_TORCHIC       537
@@ -596,14 +596,14 @@
 #define TRAINER_GRUNT_SPACE_CENTER_7        590
 #define TRAINER_MACEY                       591
 #define TRAINER_BRENDAN_RUSTBORO_TREECKO    592
-#define TRAINER_BRENDAN_RUSTBORO_MUDKIP     593
+#define TRAINER_BRENDAN_RUSTBORO_MUDKIP     593 // free
 #define TRAINER_PAXTON                      594
 #define TRAINER_ISABELLA                    595
 #define TRAINER_GRUNT_WEATHER_INST_5        596
 #define TRAINER_TABITHA_MT_CHIMNEY          597
 #define TRAINER_JONATHAN                    598
-#define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599
-#define TRAINER_MAY_RUSTBORO_MUDKIP         600
+#define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599 // free
+#define TRAINER_MAY_RUSTBORO_MUDKIP         600 // free
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
 #define TRAINER_TIANA                       603
@@ -664,11 +664,11 @@
 #define TRAINER_WALLY_VR_3                  658
 #define TRAINER_WALLY_VR_4                  659
 #define TRAINER_WALLY_VR_5                  660
-#define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661
+#define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661 // free
 #define TRAINER_BRENDAN_LILYCOVE_TREECKO    662
-#define TRAINER_BRENDAN_LILYCOVE_TORCHIC    663
-#define TRAINER_MAY_LILYCOVE_MUDKIP         664
-#define TRAINER_MAY_LILYCOVE_TREECKO        665
+#define TRAINER_BRENDAN_LILYCOVE_TORCHIC    663 // free
+#define TRAINER_MAY_LILYCOVE_MUDKIP         664 // free
+#define TRAINER_MAY_LILYCOVE_TREECKO        665 // free
 #define TRAINER_MAY_LILYCOVE_TORCHIC        666
 #define TRAINER_JONAH                       667
 #define TRAINER_HENRY                       668
@@ -771,7 +771,7 @@
 #define TRAINER_MYLES                       765
 #define TRAINER_PAT                         766
 #define TRAINER_CRISTIN_1                   767
-#define TRAINER_MAY_RUSTBORO_TREECKO        768
+#define TRAINER_MAY_RUSTBORO_TREECKO        768 // free
 #define TRAINER_MAY_RUSTBORO_TORCHIC        769
 #define TRAINER_ROXANNE_2                   770
 #define TRAINER_ROXANNE_3                   771

@@ -91,3 +91,13 @@ text EverGrandeCity_DrakesRoom_Text_DaveIntro{
     Once again, I'm DAVE of the ELITE FOUR.\n
     Keep your promise and lose to me, okay?"
 }
+
+script EverGrandeCity_DrakesRoom_EventScript_Banette{
+	lock
+	faceplayer
+	playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
+	delay(24)
+	applymovement(2, Common_Movement_FaceOriginalDirection)
+	release
+	end
+}

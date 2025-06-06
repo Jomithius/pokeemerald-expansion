@@ -59,7 +59,7 @@ RusturfTunnel_3F_EventScript_Dawson::
 
 RusturfTunnel_3F_EventScript_Jerry::
 # 67 "data/maps/RusturfTunnel_3F/scripts.pory"
-	trainerbattle_single TRAINER_JERRY_1, RusturfTunnel_3F_Text_JerryIntro, RusturfTunnel_3F_Text_JerryDefeat
+	trainerbattle_single TRAINER_JERRY, RusturfTunnel_3F_Text_JerryIntro, RusturfTunnel_3F_Text_JerryDefeat
 # 68 "data/maps/RusturfTunnel_3F/scripts.pory"
 	msgbox RusturfTunnel_3F_Text_JerryPostBattle, MSGBOX_AUTOCLOSE
 # 69 "data/maps/RusturfTunnel_3F/scripts.pory"

@@ -169,6 +169,22 @@ EverGrandeCity_GlaciasRoom_EventScript_Xion::
 	end
 
 
+EverGrandeCity_GlaciasRoom_EventScript_Leafeon::
+# 99 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	lock
+# 100 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	faceplayer
+# 101 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	playmoncry SPECIES_LEAFEON, CRY_MODE_ENCOUNTER
+# 102 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	delay 24
+# 103 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	applymovement 2, Common_Movement_FaceOriginalDirection
+# 104 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	release
+	end
+
+
 EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech::
 # 90 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "Oh, you're that TRAINER I met in\n VERDANTURF! So you made it this far.\l Again, I'm XION of the ELITE FOUR.\p Let me see how strong the TRAINER\n that MISA believed in really is!$"

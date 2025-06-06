@@ -94,3 +94,14 @@ text EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech{
     Let me see how strong the TRAINER\n
     that MISA believed in really is!"
 }
+
+script EverGrandeCity_GlaciasRoom_EventScript_Leafeon{
+	lock
+	faceplayer
+	playmoncry(SPECIES_LEAFEON, CRY_MODE_ENCOUNTER)
+	delay(24)
+	applymovement(2, Common_Movement_FaceOriginalDirection)
+	release
+	end
+}
+

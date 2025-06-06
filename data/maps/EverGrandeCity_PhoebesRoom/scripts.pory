@@ -211,3 +211,13 @@ text EverGrandeCity_PhoebesRoom_Text_LinaNo{
     Let's get this over with so I\n
     can get back to my book."
 }
+
+script EverGrandeCity_PhoebesRoom_EventScript_Luxray{
+	lock
+	faceplayer
+	playmoncry(SPECIES_LUXRAY, CRY_MODE_ENCOUNTER)
+	delay(24)
+	applymovement(2, Common_Movement_FaceOriginalDirection)
+	release
+	end
+}

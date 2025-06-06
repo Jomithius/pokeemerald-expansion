@@ -277,6 +277,22 @@ EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech::
 	end
 
 
+EverGrandeCity_PhoebesRoom_EventScript_Luxray::
+# 216 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	lock
+# 217 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	faceplayer
+# 218 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	playmoncry SPECIES_LUXRAY, CRY_MODE_ENCOUNTER
+# 219 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	delay 24
+# 220 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	applymovement 2, Common_Movement_FaceOriginalDirection
+# 221 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	release
+	end
+
+
 EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2::
 # 165 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Wha-\n Oh, it's you again.\p Let's get this over with so I can\n go back to reading. Hmph!$"

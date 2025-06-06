@@ -163,6 +163,22 @@ EverGrandeCity_DrakesRoom_EventScript_Dave::
 	end
 
 
+EverGrandeCity_DrakesRoom_EventScript_Banette::
+# 96 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	lock
+# 97 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	faceplayer
+# 98 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playmoncry SPECIES_BANETTE, CRY_MODE_ENCOUNTER
+# 99 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	delay 24
+# 100 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	applymovement 2, Common_Movement_FaceOriginalDirection
+# 101 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	release
+	end
+
+
 EverGrandeCity_DrakesRoom_Text_DaveIntro::
 # 88 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "Oh, hello again.\n Good job on making it this far.\p Once again, I'm DAVE of the ELITE FOUR.\n Keep your promise and lose to me, okay?$"

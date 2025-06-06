@@ -64,7 +64,7 @@ text RusturfTunnel_3F_Text_DawsonPostBattle{
 }
 
 script RusturfTunnel_3F_EventScript_Jerry{
-	trainerbattle_single(TRAINER_JERRY_1, RusturfTunnel_3F_Text_JerryIntro, RusturfTunnel_3F_Text_JerryDefeat)
+	trainerbattle_single(TRAINER_JERRY, RusturfTunnel_3F_Text_JerryIntro, RusturfTunnel_3F_Text_JerryDefeat)
     msgbox(RusturfTunnel_3F_Text_JerryPostBattle, MSGBOX_AUTOCLOSE)
     waitmessage
 	end

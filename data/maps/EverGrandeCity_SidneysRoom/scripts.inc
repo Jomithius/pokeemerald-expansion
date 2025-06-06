@@ -194,3 +194,19 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 	.string "Now, go on to the next room and enjoy\l"
 # 98 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "your next battle!$"
+
+EverGrandeCity_SidneysRoom_EventScript_Togekiss::
+# 103 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	lock
+# 104 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	faceplayer
+# 105 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	playmoncry SPECIES_TOGEKISS, CRY_MODE_ENCOUNTER
+# 106 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	delay 24
+# 107 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	applymovement 2, Common_Movement_FaceOriginalDirection
+# 108 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	release
+	end
+
