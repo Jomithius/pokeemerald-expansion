@@ -281,8 +281,8 @@
 #define TRAINER_PAUL                        275
 #define TRAINER_MISA                        276
 #define TRAINER_SPEEDWAGON                  277
-#define TRAINER_JERRY_4                     278
-#define TRAINER_JERRY_5                     279
+#define TRAINER_NATE_SHOAL_CAVE             278
+#define TRAINER_BLAKE_SHOAL_CAVE            279
 #define TRAINER_KAREN_1                     280
 #define TRAINER_GEORGIA                     281
 #define TRAINER_KAREN_2                     282
@@ -523,13 +523,13 @@
 #define TRAINER_ROB                         517
 #define TRAINER_STEPHEN                     518
 #define TRAINER_WALLY_VR_1                  519
-#define TRAINER_BRENDAN_ROUTE_103_MUDKIP    520 // free
-#define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521 // free
-#define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522 // free
+#define TRAINER_NICHOLAS_SHOAL_CAVE         520
+#define TRAINER_BINGLETON                   521 
+#define TRAINER_BUNGLETON                   522
 #define TRAINER_BRENDAN_ROUTE_103_TREECKO   523
 #define TRAINER_BRENDAN_ROUTE_110_TREECKO   524
 #define TRAINER_BRENDAN_ROUTE_119_TREECKO   525
-#define TRAINER_BRENDAN_ROUTE_103_TORCHIC   526 // free
+#define TRAINER_DAQUAVIUS                   526
 #define TRAINER_BRENDAN_ROUTE_110_TORCHIC   527 // free
 #define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528 // free
 #define TRAINER_MAY_ROUTE_103_MUDKIP        529 // free

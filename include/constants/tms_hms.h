@@ -62,6 +62,10 @@
     F(U_TURN) \
     F(DRAIN_PUNCH) \
     F(ACROBATICS) \
+    F(MYSTICAL_FIRE) \
+    F(STONE_EDGE) \
+    F(SWORDS_DANCE) \
+    F(NASTY_PLOT) \
 
 #define FOREACH_HM(F) \
     F(CUT) \

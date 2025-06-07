@@ -2,6 +2,26 @@ raw`ShoalCave_LowTideIceRoom_MapScripts::
 	.byte 0
 
 `
+
+script ShoalCave_LowTideIceRoom_EventScript_Sylvia{
+    msgbox(ShoalCave_LowTideIceRoom_Text_Sylvia, MSGBOX_NPC)
+    end
+}
+
+script ShoalCave_LowTideIceRoom_EventScript_Nate{
+    trainerbattle_single(TRAINER_NATE_SHOAL_CAVE, ShoalCave_LowTideIceRoom_Text_NateIntro, ShoalCave_LowTideIceRoom_Text_NateDefeat)
+    msgbox(ShoalCave_LowTideIceRoom_Text_NatePostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+	end
+}
+
+script ShoalCave_LowTideIceRoom_EventScript_Blake{
+    trainerbattle_single(TRAINER_BLAKE_SHOAL_CAVE, ShoalCave_LowTideIceRoom_Text_BlakeIntro, ShoalCave_LowTideIceRoom_Text_BlakeDefeat)
+    msgbox(ShoalCave_LowTideIceRoom_Text_BlakePostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+	end
+}
+
 script ShoalCave_LowTideIceRoom_Trigger_Aria{
     lock
     playse(SE_M_DOUBLE_TEAM)
@@ -149,6 +169,45 @@ script ShoalCave_LowTideIceRoom_EventScript_AriaNorth{
 } 
 // unused
 
+text ShoalCave_LowTideIceRoom_Text_Sylvia{
+    "If you're gonna try to get the\n
+    commander's attention, don't sneak\l
+    up on them!\p
+    They scare easily."
+}
+
+text ShoalCave_LowTideIceRoom_Text_BlakeIntro{
+    "For a knight, offense is the best\n
+    defense!"
+}
+
+text ShoalCave_LowTideIceRoom_Text_BlakeDefeat{
+    "H-How did you withstand my\n
+    relentless offense..."
+}
+
+text ShoalCave_LowTideIceRoom_Text_BlakePostBattle{
+    "People think our commander is larping,\n
+    but the armor is real."
+}
+
+text ShoalCave_LowTideIceRoom_Text_NateIntro{
+    "The greatest'th offense'th be a great\n
+    defense!\p
+    Dost thoust agree'th?"
+}
+
+text ShoalCave_LowTideIceRoom_Text_NateDefeat{
+    "Thoust'th broketh thru'th thine\p
+    defenses'th'snt'nt.."
+}
+
+text ShoalCave_LowTideIceRoom_Text_NatePostBattle{
+    "I surmise thoust seeketh to joineth\n
+    the PROTECTORS? If'th so, thou must\l
+    speaketh to thine commander."
+}
+
 text ShoalCave_LowTideIceRoom_Text_Aria1{
     "You scared me!\n 
     Who are you?\p
@@ -212,8 +271,4 @@ movement ShoalCave_LowTideIceRoom_Movement_AriaLeaveNorth{
     walk_up * 3
     walk_left * 2
     walk_up * 4
-}
-
-movement ShoalCave_LowTideIceRoom_Movement_StopMovement{
-    disable_anim
 }

@@ -9228,63 +9228,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 9,
-                "max_level": 9,
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_MEOWTH"
               },
               {
-                "min_level": 9,
-                "max_level": 9,
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_MEOWTH"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_MEOWTH"
+                "min_level": 4,
+                "max_level": 5,
+                "species": "SPECIES_PIDGEY"
               },
               {
-                "min_level": 9,
-                "max_level": 9,
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_MEOWTH_ALOLA"
               },
               {
-                "min_level": 9,
-                "max_level": 9,
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_MEOWTH_ALOLA"
               },
               {
-                "min_level": 9,
-                "max_level": 9,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_MEOWTH_ALOLA"
               },
               {
-                "min_level": 9,
-                "max_level": 9,
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_SPEAROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_MEOWTH_ALOLA"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_MEOWTH_ALOLA"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SPEAROW"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_MEOWTH_ALOLA"
-              },
-              {
-                "min_level": 9,
-                "max_level": 9,
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_MEOWTH_GALAR"
               },
               {
-                "min_level": 9,
-                "max_level": 9,
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_MEOWTH_GALAR"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_MEOWTH_GALAR"
               }
             ]

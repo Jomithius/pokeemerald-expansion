@@ -434,11 +434,11 @@ LilycoveCity_DepartmentStore_5F_Text_Misa1::
 
 LilycoveCity_DepartmentStore_5F_Text_Misa2::
 # 207 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "MISA: I ran into JAMES earlier.\n He seems really motivated since\l meeting you.\p I also his noticed his... behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on this journey.\p Well, I need to FLY back to EVERGRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see eachother again.$"
+	.string "MISA: I ran into JAMES earlier.\n He seems really motivated since\l meeting you.\p I also his noticed his... behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on this journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see eachother again.$"
 
 LilycoveCity_DepartmentStore_5F_Text_Misa3::
 # 221 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "Well, I need to FLY back to EVERGRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see eachother again.$"
+	.string "Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see eachother again.$"
 
 LilcoveCity_DepartmentStore_5F_Text_Lina1::
 # 256 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

@@ -43,7 +43,7 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define I_EXP_SHARE_FLAG     0x20 // Exp Share gives EXP to whole team
+#define FLAG_I_EXP_SHARE     0x20 // Exp Share gives EXP to whole team
 #define B_FLAG_NO_BAG_USE    0x21 // No items in battle
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag

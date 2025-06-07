@@ -716,7 +716,7 @@ AraquanidFailed_Text_0:
 
 Route117_MisaHello::
 # 319 "data/maps/Route117/scripts.pory"
-	.string "MISA: Oh! {PLAYER}!\n It's so good to see you again!\p I stopped by a friend's house in\n VERDANTURF on my way back to\l EVERGRANDE CITY.\p I just love the flowers here!\p Anyways, how's your journey going?\n ...\p Two badges already?!\n I'm so proud of you!\p I'd love to see how much you've grown!\n How about a friendly battle?$"
+	.string "MISA: Oh! {PLAYER}!\n It's so good to see you again!\p I stopped by a friend's house in\n VERDANTURF on my way back to\l EVER GRANDE CITY.\p I just love the flowers here!\p Anyways, how's your journey going?\n ...\p Two badges already?!\n I'm so proud of you!\p I'd love to see how much you've grown!\n How about a friendly battle?$"
 
 Route117_Text_MisaFlowers::
 # 334 "data/maps/Route117/scripts.pory"
