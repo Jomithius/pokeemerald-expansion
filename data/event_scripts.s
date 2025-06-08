@@ -1236,3 +1236,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route135_House2/scripts.inc"
 
 	.include "data/maps/WachunpelonCity/scripts.inc"
+
+	.include "data/maps/WachunpelonCity_House1/scripts.inc"
+
+	.include "data/maps/WachunpelonCity_House2/scripts.inc"
+
+	.include "data/maps/WachunpelonCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/WachunpelonCity_Mart/scripts.inc"
+
+	.include "data/maps/WachunpelonCity_SmallHouse1/scripts.inc"
+
+	.include "data/maps/WachunpelonCity_SmallHouse2/scripts.inc"
+
+	.include "data/maps/WachunpelonCity_SmallHouse3/scripts.inc"
+
+	.include "data/maps/WachunpelonCity_Sewer/scripts.inc"

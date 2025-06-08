@@ -125,7 +125,14 @@
     "Route135_Lab",
     "Route135_House1",
     "Route135_House2",
-    "WachunpelonCity"
+    "WachunpelonCity",
+    "WachunpelonCity_House1",
+    "WachunpelonCity_House2",
+    "WachunpelonCity_PokemonCenter",
+    "WachunpelonCity_Mart",
+    "WachunpelonCity_SmallHouse1",
+    "WachunpelonCity_SmallHouse2",
+    "WachunpelonCity_SmallHouse3"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -470,7 +477,8 @@
     "RatCave_2F",
     "RatCave_3F",
     "RatCave_B1F",
-    "RatCave_B2F"
+    "RatCave_B2F",
+    "WachunpelonCity_Sewer"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

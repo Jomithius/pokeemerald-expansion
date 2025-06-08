@@ -4820,6 +4820,86 @@
       "secondary_tileset": "gTileset_DesertVillage",
       "border_filepath": "data/layouts/WachunpelonCity/border.bin",
       "blockdata_filepath": "data/layouts/WachunpelonCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY_HOUSE1",
+      "name": "WachunpelonCity_House1_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/WachunpelonCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY_HOUSE2",
+      "name": "WachunpelonCity_House2_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/WachunpelonCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY_POKEMON_CENTER",
+      "name": "WachunpelonCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/WachunpelonCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY_MART",
+      "name": "WachunpelonCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/WachunpelonCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY_SMALL_HOUSE1",
+      "name": "WachunpelonCity_SmallHouse1_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/WachunpelonCity_SmallHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity_SmallHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY_SMALL_HOUSE2",
+      "name": "WachunpelonCity_SmallHouse2_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/WachunpelonCity_SmallHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity_SmallHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY_SMALL_HOUSE3",
+      "name": "WachunpelonCity_SmallHouse3_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/WachunpelonCity_SmallHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity_SmallHouse3/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY_SEWER",
+      "name": "WachunpelonCity_Sewer_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Sewer",
+      "border_filepath": "data/layouts/WachunpelonCity_Sewer/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity_Sewer/map.bin"
     }
   ]
 }

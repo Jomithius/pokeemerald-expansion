@@ -26699,7 +26699,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BUNGLETON] =
     {
 #line 10611
-        .trainerName = _("BINGLETON"),
+        .trainerName = _("BUNGLETON"),
 #line 10612
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 10613

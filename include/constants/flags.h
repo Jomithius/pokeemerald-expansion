@@ -1282,7 +1282,7 @@
 #define FLAG_RECIEVED_FANTASIA                                      0x4CB // From Dave in Mt Pyre Summit
 #define FLAG_DEFEATED_EUGENIA                                       0x4CC // Lina Superboss
 #define FLAG_ELITE_FOUR_FINAL_BATTLE                                0x4CD // For Elite Four Rematches
-#define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag
+#define FLAG_HIDE_GYM_LEADERS                                       0x4CE // For postgame when gym leaders are out
 #define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
 #define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag
 #define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
