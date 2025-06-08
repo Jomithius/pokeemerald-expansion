@@ -4900,6 +4900,26 @@
       "secondary_tileset": "gTileset_Sewer",
       "border_filepath": "data/layouts/WachunpelonCity_Sewer/border.bin",
       "blockdata_filepath": "data/layouts/WachunpelonCity_Sewer/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP2",
+      "name": "NewMap2_Layout",
+      "width": 45,
+      "height": 55,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/NewMap2/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE137_SEASIDE_HOUSE",
+      "name": "Route137_SeasideHouse_Layout",
+      "width": 20,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SeashoreHouse",
+      "border_filepath": "data/layouts/Route137_SeasideHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route137_SeasideHouse/map.bin"
     }
   ]
 }

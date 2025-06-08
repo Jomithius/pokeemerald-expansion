@@ -1736,9 +1736,25 @@
       "width": 1,
       "height": 1
     },
-     {
+    {
       "map_section": "MAPSEC_WACHUNPELON",
       "name": "WACHUNPELON",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_137",
+      "name": "ROUTE 137",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ULTRA_SPACE",
+      "name": "ULTRA SPACE",
       "x": 0,
       "y": 0,
       "width": 1,

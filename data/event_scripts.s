@@ -1252,3 +1252,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/WachunpelonCity_SmallHouse3/scripts.inc"
 
 	.include "data/maps/WachunpelonCity_Sewer/scripts.inc"
+
+	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/Route137_SeasideHouse/scripts.inc"

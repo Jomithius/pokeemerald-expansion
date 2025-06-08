@@ -219,7 +219,9 @@
 #define MAPSEC_ROUTE_135                    0xD7
 #define MAPSEC_ROUTE_136                    0xD8
 #define MAPSEC_WACHUNPELON                  0xD9
-#define MAPSEC_NONE                         0xDA
+#define MAPSEC_ROUTE_137                    0xDA
+#define MAPSEC_ULTRA_SPACE                  0xDB
+#define MAPSEC_NONE                         0xDC
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

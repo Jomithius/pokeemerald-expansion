@@ -17,6 +17,11 @@
       "map": "MAP_THE_UNDER",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_NEW_MAP2",
+      "offset": 8,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -74,7 +79,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
-      "x": 31,
+      "x": 32,
       "y": 39,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -87,7 +92,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
-      "x": 30,
+      "x": 31,
       "y": 39,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -204,7 +209,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-      "x": 53,
+      "x": 52,
       "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -247,6 +252,19 @@
       "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MR_BRINEYS_BOAT",
+      "x": 52,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
