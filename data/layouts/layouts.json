@@ -4810,6 +4810,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Route135_House2/border.bin",
       "blockdata_filepath": "data/layouts/Route135_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WACHUNPELON_CITY",
+      "name": "WachunpelonCity_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/WachunpelonCity/border.bin",
+      "blockdata_filepath": "data/layouts/WachunpelonCity/map.bin"
     }
   ]
 }

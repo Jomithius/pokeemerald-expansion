@@ -218,7 +218,8 @@
 #define MAPSEC_THE_UNDER                    0xD6
 #define MAPSEC_ROUTE_135                    0xD7
 #define MAPSEC_ROUTE_136                    0xD8
-#define MAPSEC_NONE                         0xD9
+#define MAPSEC_WACHUNPELON                  0xD9
+#define MAPSEC_NONE                         0xDA
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

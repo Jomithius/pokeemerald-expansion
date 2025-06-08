@@ -1234,3 +1234,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route135_House1/scripts.inc"
 
 	.include "data/maps/Route135_House2/scripts.inc"
+
+	.include "data/maps/WachunpelonCity/scripts.inc"
