@@ -626,6 +626,8 @@ gSongTable::
 	song mus_battle_three, 0, 0
 	song mus_pyrite_battle, 0, 0
 	song mus_snowfall, 0, 0
+	song mus_hearthome_city_night, 0, 0
+	song mus_eterna_city_night, 0, 0
 
 	.align 2
 dummy_song_header:

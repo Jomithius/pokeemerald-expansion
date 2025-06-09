@@ -12338,154 +12338,73 @@
         },
         {
           "map": "MAP_ROUTE135",
-          "base_label": "gRoute1350",
+          "base_label": "gRoute1350"
+        },
+        {
+          "map": "MAP_ULTRA_SPACE",
+          "base_label": "gUltra_Space0",
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
               {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_POIPOLE"
+              },
+              {
+                "min_level": 66,
+                "max_level": 66,
+                "species": "SPECIES_POIPOLE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 67,
+                "species": "SPECIES_POIPOLE"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_POIPOLE"
+              },
+              {
+                "min_level": 69,
+                "max_level": 69,
+                "species": "SPECIES_POIPOLE"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 66,
+                "max_level": 66,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 67,
+                "max_level": 67,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 69,
+                "max_level": 69,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 69,
+                "max_level": 69,
+                "species": "SPECIES_NAGANADEL"
+              },
+              {
                 "min_level": 70,
                 "max_level": 70,
-                "species": "SPECIES_OINKOLOGNE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 4,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
-          "fishing_mons": {
-            "encounter_rate": 30,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_NAGANADEL"
               }
             ]
           }

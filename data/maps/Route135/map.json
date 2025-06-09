@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE135",
   "name": "Route135",
   "layout": "LAYOUT_ROUTE135",
-  "music": "MUS_RG_ROUTE11",
+  "music": "MUS_ETERNA_CITY_NIGHT",
   "region_map_section": "MAPSEC_ROUTE_135",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -48,10 +48,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 21,
-      "y": 34,
+      "x": 18,
+      "y": 32,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -116,8 +116,8 @@
       "x": 21,
       "y": 23,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
@@ -281,33 +281,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(QUAXLY)",
-      "x": 71,
-      "y": 27,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(QUAXLY)",
-      "x": 76,
-      "y": 27,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BOUFFALANT)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEA_COMBAT)",
       "x": 39,
       "y": 13,
       "elevation": 0,
@@ -320,7 +294,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BOUFFALANT)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEA_COMBAT)",
       "x": 42,
       "y": 14,
       "elevation": 0,
@@ -333,7 +307,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BOUFFALANT)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEA_COMBAT)",
       "x": 40,
       "y": 15,
       "elevation": 0,

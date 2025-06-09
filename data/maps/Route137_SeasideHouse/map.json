@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE137_SEASIDE_HOUSE",
   "name": "Route137_SeasideHouse",
   "layout": "LAYOUT_ROUTE137_SEASIDE_HOUSE",
-  "music": "MUS_RG_ROUTE3",
+  "music": "MUS_GSC_PEWTER",
   "region_map_section": "MAPSEC_ROUTE_137",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

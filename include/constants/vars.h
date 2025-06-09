@@ -267,7 +267,7 @@
 #define VAR_MISA_STATE                                   0x40F7 // 0-2 Misa James Rustboro, 3-5 Misa Route 117, 4-5 James Route 112, 6-7 James Mt Pyre, 7-8 James Lilycove CS, 8-9 James Evergrande
 #define VAR_SPEEDWAGON_STATE                             0x40F8 // 0-7 Mauville/Route 110,
 #define VAR_LINA_TALKED_TO                               0x40F9 // If Lina will recognize you at E4, 0-1 Lavaridge, 1-2 Lilycove, 3 Elite Four
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
+#define VAR_ROUTE135_STATE                               0x40FA // for music on route 135
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var

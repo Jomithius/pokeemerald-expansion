@@ -560,6 +560,8 @@
 #define MUS_BATTLE_THREE            622
 #define MUS_PYRITE_BATTLE           623
 #define MUS_SNOWFALL                624
+#define MUS_HEARTHOME_CITY_NIGHT    625
+#define MUS_ETERNA_CITY_NIGHT       626
 
 
 

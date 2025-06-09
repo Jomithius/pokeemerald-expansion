@@ -2,7 +2,7 @@
   "id": "MAP_WACHUNPELON_CITY_SMALL_HOUSE1",
   "name": "WachunpelonCity_SmallHouse1",
   "layout": "LAYOUT_WACHUNPELON_CITY_SMALL_HOUSE1",
-  "music": "MUS_GSC_PEWTER",
+  "music": "MUS_HEARTHOME_CITY_NIGHT",
   "region_map_section": "MAPSEC_WACHUNPELON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -33,7 +33,10 @@
     "gMapGroup_IndoorRoute113",
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
-    "gMapGroup_IndoorRoute124"
+    "gMapGroup_IndoorRoute124",
+    "gMapGroup_IndoorWachunpelon",
+    "gMapGroup_IndoorRoute135",
+    "gMapGroup_IndoorRoute137"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -93,48 +96,12 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "PetalburgCity_Luna_House",
-    "PetalburgCity_Luna_Basement",
     "BaseCamp",
     "TheUnder",
-    "RustboroCity_Misa_House1F",
-    "RustboroCity_Misa_House2F",
-    "RustboroCity_Misa_House3F",
-    "RustboroCity_FireStation",
-    "RusturfTunnel_2F",
-    "RusturfTunnel_3F",
-    "RusturfTunnel_2F_Room2",
-    "Route116_RusturfTunnel_Peak",
-    "FallarborTown_House",
-    "FallarborTown_House_Basement",
-    "RatCave_Fallarbor_1F",
-    "RatCave_Fallarbor_2F",
-    "MtPyre_Exterior_Dave_House",
-    "LavaridgeTown_House2",
-    "LilycoveCity_House5",
-    "LilycoveCity_House5_Basement",
-    "RatCave_Lilycove_1F",
-    "RatCave_Lilycove_2F",
-    "RatCave_Central",
-    "NewMap1",
-    "RatCave_Lilycove_Highway",
-    "RatCave_Lilycove_Highway2",
     "Route135",
     "Route136",
-    "RatCave_ToUnder",
-    "Route135_Lab",
-    "Route135_House1",
-    "Route135_House2",
     "WachunpelonCity",
-    "WachunpelonCity_House1",
-    "WachunpelonCity_House2",
-    "WachunpelonCity_PokemonCenter",
-    "WachunpelonCity_Mart",
-    "WachunpelonCity_SmallHouse1",
-    "WachunpelonCity_SmallHouse2",
-    "WachunpelonCity_SmallHouse3",
-    "NewMap2",
-    "Route137_SeasideHouse"
+    "NewMap2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -166,7 +133,8 @@
     "LavaridgeTown_House",
     "LavaridgeTown_Mart",
     "LavaridgeTown_PokemonCenter_1F",
-    "LavaridgeTown_PokemonCenter_2F"
+    "LavaridgeTown_PokemonCenter_2F",
+    "LavaridgeTown_House2"
   ],
   "gMapGroup_IndoorFallarbor": [
     "FallarborTown_Mart",
@@ -176,7 +144,9 @@
     "FallarborTown_PokemonCenter_1F",
     "FallarborTown_PokemonCenter_2F",
     "FallarborTown_CozmosHouse",
-    "FallarborTown_MoveRelearnersHouse"
+    "FallarborTown_MoveRelearnersHouse",
+    "FallarborTown_House",
+    "FallarborTown_House_Basement"
   ],
   "gMapGroup_IndoorVerdanturf": [
     "VerdanturfTown_BattleTentLobby",
@@ -206,7 +176,9 @@
     "PetalburgCity_PokemonCenter_1F",
     "PetalburgCity_PokemonCenter_2F",
     "PetalburgCity_Mart",
-    "PetalburgCity_Luna_Upstairs"
+    "PetalburgCity_Luna_House",
+    "PetalburgCity_Luna_Upstairs",
+    "PetalburgCity_Luna_Basement"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
@@ -252,7 +224,11 @@
     "RustboroCity_Flat2_1F",
     "RustboroCity_Flat2_2F",
     "RustboroCity_Flat2_3F",
-    "RustboroCity_House3"
+    "RustboroCity_House3",
+    "RustboroCity_Misa_House1F",
+    "RustboroCity_Misa_House2F",
+    "RustboroCity_Misa_House3F",
+    "RustboroCity_FireStation"
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",
@@ -289,7 +265,9 @@
     "LilycoveCity_DepartmentStore_4F",
     "LilycoveCity_DepartmentStore_5F",
     "LilycoveCity_DepartmentStoreRooftop",
-    "LilycoveCity_DepartmentStoreElevator"
+    "LilycoveCity_DepartmentStoreElevator",
+    "LilycoveCity_House5",
+    "LilycoveCity_House5_Basement"
   ],
   "gMapGroup_IndoorMossdeep": [
     "MossdeepCity_Gym",
@@ -372,6 +350,10 @@
     "MeteorFalls_B1F_1R",
     "MeteorFalls_B1F_2R",
     "RusturfTunnel",
+    "RusturfTunnel_2F",
+    "RusturfTunnel_2F_Room2",
+    "RusturfTunnel_3F",
+    "Route116_RusturfTunnel_Peak",
     "Underwater_SootopolisCity",
     "DesertRuins",
     "GraniteCave_1F",
@@ -389,6 +371,7 @@
     "MtPyre_5F",
     "MtPyre_6F",
     "MtPyre_Exterior",
+    "MtPyre_Exterior_Dave_House",
     "MtPyre_Summit",
     "AquaHideout_1F",
     "AquaHideout_B1F",
@@ -480,7 +463,15 @@
     "RatCave_3F",
     "RatCave_B1F",
     "RatCave_B2F",
-    "WachunpelonCity_Sewer"
+    "RatCave_Fallarbor_1F",
+    "RatCave_Fallarbor_2F",
+    "RatCave_Lilycove_1F",
+    "RatCave_Lilycove_2F",
+    "RatCave_Central",
+    "NewMap1",
+    "RatCave_Lilycove_Highway",
+    "RatCave_Lilycove_Highway2",
+    "RatCave_ToUnder"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -634,7 +625,8 @@
     "NavelRock_Down10",
     "NavelRock_Down11",
     "NavelRock_Bottom",
-    "TrainerHill_Elevator"
+    "TrainerHill_Elevator",
+    "Ultra_Space"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",
@@ -671,5 +663,23 @@
   ],
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
+  ],
+  "gMapGroup_IndoorWachunpelon": [
+    "WachunpelonCity_House1",
+    "WachunpelonCity_House2",
+    "WachunpelonCity_PokemonCenter",
+    "WachunpelonCity_Mart",
+    "WachunpelonCity_SmallHouse1",
+    "WachunpelonCity_SmallHouse2",
+    "WachunpelonCity_SmallHouse3",
+    "WachunpelonCity_Sewer"
+  ],
+  "gMapGroup_IndoorRoute135": [
+    "Route135_Lab",
+    "Route135_House1",
+    "Route135_House2"
+  ],
+  "gMapGroup_IndoorRoute137": [
+    "Route137_SeasideHouse"
   ]
 }

@@ -237,3 +237,12 @@ const u16 gMetatileAttributes_DojoInterior[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_DesertVillage[] = INCBIN_U16("data/tilesets/secondary/desert_village/metatiles.bin");
 const u16 gMetatileAttributes_DesertVillage[] = INCBIN_U16("data/tilesets/secondary/desert_village/metatile_attributes.bin");
+
+const u16 gMetatiles_DistortionWorld[] = INCBIN_U16("data/tilesets/secondary/distortion_world/metatiles.bin");
+const u16 gMetatileAttributes_DistortionWorld[] = INCBIN_U16("data/tilesets/secondary/distortion_world/metatile_attributes.bin");
+
+const u16 gMetatiles_BeachCave[] = INCBIN_U16("data/tilesets/secondary/beach_cave/metatiles.bin");
+const u16 gMetatileAttributes_BeachCave[] = INCBIN_U16("data/tilesets/secondary/beach_cave/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendOfZeldaHouse[] = INCBIN_U16("data/tilesets/secondary/legend_of_zelda_house/metatiles.bin");
+const u16 gMetatileAttributes_LegendOfZeldaHouse[] = INCBIN_U16("data/tilesets/secondary/legend_of_zelda_house/metatile_attributes.bin");

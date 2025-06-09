@@ -935,3 +935,36 @@ const struct Tileset gTileset_DesertVillage =
     .metatileAttributes = gMetatileAttributes_DesertVillage,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_DistortionWorld =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_DistortionWorld,
+    .palettes = gTilesetPalettes_DistortionWorld,
+    .metatiles = gMetatiles_DistortionWorld,
+    .metatileAttributes = gMetatileAttributes_DistortionWorld,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_BeachCave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BeachCave,
+    .palettes = gTilesetPalettes_BeachCave,
+    .metatiles = gMetatiles_BeachCave,
+    .metatileAttributes = gMetatileAttributes_BeachCave,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendOfZeldaHouse =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendOfZeldaHouse,
+    .palettes = gTilesetPalettes_LegendOfZeldaHouse,
+    .metatiles = gMetatiles_LegendOfZeldaHouse,
+    .metatileAttributes = gMetatileAttributes_LegendOfZeldaHouse,
+    .callback = NULL,
+};

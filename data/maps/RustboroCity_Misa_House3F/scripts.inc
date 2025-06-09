@@ -192,7 +192,7 @@ NicknamePartyTogepi_Text_0:
 
 RustboroCity_Misa_House3F_James_Text_0:
 # 95 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "JAMES: {PLAYER}!\n I lost to you again, but we're\l gonna get even stronger.$"
+	.string "JAMES: {PLAYER}!\p I lost again, but I'm not gonna give up.\n We're gonna get even stronger.$"
 
 MisaHouse_NotChosen::
 # 86 "data/maps/RustboroCity_Misa_House3F/scripts.pory"

@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE135_HOUSE2",
   "name": "Route135_House2",
   "layout": "LAYOUT_ROUTE135_HOUSE2",
-  "music": "MUS_RG_ROUTE3",
+  "music": "MUS_ETERNA_CITY_NIGHT",
   "region_map_section": "MAPSEC_ROUTE_135",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

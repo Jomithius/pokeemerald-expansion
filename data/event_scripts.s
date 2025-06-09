@@ -1256,3 +1256,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NewMap2/scripts.inc"
 
 	.include "data/maps/Route137_SeasideHouse/scripts.inc"
+
+	.include "data/maps/Ultra_Space/scripts.inc"

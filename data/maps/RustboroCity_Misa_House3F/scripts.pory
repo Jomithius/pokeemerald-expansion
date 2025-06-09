@@ -92,9 +92,9 @@ script RustboroCity_Misa_House3F_James{
     lock
     applymovement(3, MisaHouse3F_FacePlayer)
     waitmovement(3)
-    msgbox("JAMES: {PLAYER}!\n
-    I lost to you again, but we're\l
-    gonna get even stronger.", MSGBOX_AUTOCLOSE)
+    msgbox("JAMES: {PLAYER}!\p
+    I lost again, but I'm not gonna give up.\n
+    We're gonna get even stronger.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(3, MisaHouse3F_FaceUp)
     waitmovement(3)
