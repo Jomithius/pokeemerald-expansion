@@ -304,6 +304,7 @@ extern const u8 gText_BadEgg[];
 extern const u8 gText_BattleWallyName[];
 extern const u8 gText_BattleLunaName[];
 extern const u8 gText_BattleJamesName[];
+extern const u8 gText_BattleJomithiusName[];
 extern const u8 gText_BattleSpeedwagonName[];
 extern const u8 gText_BattleEugeniaName[];
 extern const u8 gText_BattleRedName[];
