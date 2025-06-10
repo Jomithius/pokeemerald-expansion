@@ -4930,6 +4930,46 @@
       "secondary_tileset": "gTileset_DistortionWorld",
       "border_filepath": "data/layouts/Ultra_Space/border.bin",
       "blockdata_filepath": "data/layouts/Ultra_Space/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAT_CAVE_THE_UNDER",
+      "name": "RatCave_TheUnder_Layout",
+      "width": 17,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RatCave_TheUnder/border.bin",
+      "blockdata_filepath": "data/layouts/RatCave_TheUnder/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_UNDER_CANYON_LAKE",
+      "name": "TheUnder_CanyonLake_Layout",
+      "width": 31,
+      "height": 27,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TheUnder_CanyonLake/border.bin",
+      "blockdata_filepath": "data/layouts/TheUnder_CanyonLake/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_UNDER_HOUSE",
+      "name": "TheUnder_House_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TheUnder_House/border.bin",
+      "blockdata_filepath": "data/layouts/TheUnder_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_UNDER_SHADY_HOUSE",
+      "name": "TheUnder_ShadyHouse_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TheUnder_ShadyHouse/border.bin",
+      "blockdata_filepath": "data/layouts/TheUnder_ShadyHouse/map.bin"
     }
   ]
 }

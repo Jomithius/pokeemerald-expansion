@@ -1258,3 +1258,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route137_SeasideHouse/scripts.inc"
 
 	.include "data/maps/Ultra_Space/scripts.inc"
+
+	.include "data/maps/RatCave_TheUnder/scripts.inc"
+
+	.include "data/maps/TheUnder_CanyonLake/scripts.inc"
+
+	.include "data/maps/TheUnder_House/scripts.inc"
+
+	.include "data/maps/TheUnder_ShadyHouse/scripts.inc"

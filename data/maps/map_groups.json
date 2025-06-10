@@ -101,7 +101,10 @@
     "Route135",
     "Route136",
     "WachunpelonCity",
-    "NewMap2"
+    "NewMap2",
+    "TheUnder_CanyonLake",
+    "TheUnder_House",
+    "TheUnder_ShadyHouse"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -471,7 +474,8 @@
     "NewMap1",
     "RatCave_Lilycove_Highway",
     "RatCave_Lilycove_Highway2",
-    "RatCave_ToUnder"
+    "RatCave_ToUnder",
+    "RatCave_TheUnder"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

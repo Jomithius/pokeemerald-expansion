@@ -5807,7 +5807,7 @@ u16 GetBattleBGM(void)
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
                 return MUS_VS_TRAINER;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJomithiusName))
-                return MUS_VS_CIPER_ADMIN;
+                return MUS_VS_CIPHER_ADMIN;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJamesName))
                 return MUS_WATERFALL_COLOSSEUM;
             return MUS_VS_RIVAL;
