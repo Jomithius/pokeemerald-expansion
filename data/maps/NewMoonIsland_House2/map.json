@@ -1,0 +1,105 @@
+{
+  "id": "MAP_NEW_MOON_ISLAND_HOUSE2",
+  "name": "NewMoonIsland_House2",
+  "layout": "LAYOUT_NEW_MOON_ISLAND_HOUSE2",
+  "music": "MUS_OLD_CHATEAU",
+  "region_map_section": "MAPSEC_NEWMOON_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE)",
+      "x": 7,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_DEFEATED_DARKRAI"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE_ALOLA)",
+      "x": 3,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_DEFEATED_DARKRAI"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_DEFEATED_DARKRAI"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA_ALOLA)",
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_DEFEATED_DARKRAI"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CHANNELER",
+      "x": 14,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_CHANNELER_NEWMOON_ISLAND"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MOON_ISLAND",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MOON_ISLAND",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

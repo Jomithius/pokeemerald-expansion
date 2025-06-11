@@ -2,7 +2,7 @@
   "id": "MAP_THE_UNDER",
   "name": "TheUnder",
   "layout": "LAYOUT_THE_UNDER",
-  "music": "MUS_B_TOWER",
+  "music": "MUS_ROWANS_LAB",
   "region_map_section": "MAPSEC_THE_UNDER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -167,7 +167,7 @@
       "x": 21,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_RAT_CAVE_THE_UNDER",
+      "dest_map": "MAP_THE_UNDER_TO_CANYON_LAKE",
       "dest_warp_id": "0"
     }
   ],

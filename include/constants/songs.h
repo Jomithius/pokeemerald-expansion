@@ -562,6 +562,12 @@
 #define MUS_SNOWFALL                624
 #define MUS_HEARTHOME_CITY_NIGHT    625
 #define MUS_ETERNA_CITY_NIGHT       626
+#define MUS_OLD_CHATEAU             627
+#define MUS_ROWANS_LAB              628
+#define MUS_CITY_TWO                629
+#define MUS_ETERNA_FOREST           630
+#define MUS_FF_THEME                631
+#define MUS_VOID                    632
 
 
 

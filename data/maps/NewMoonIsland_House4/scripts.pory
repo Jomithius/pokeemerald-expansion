@@ -1,0 +1,30 @@
+mapscripts NewMoonIsland_House4_MapScripts {
+    MAP_SCRIPT_ON_LOAD{
+        setflag(FLAG_TEMP_E)
+        end
+    }
+}
+
+script NewMoonIsland_EventScript_Dendenne{
+    lock
+    faceplayer
+    msgbox(NewMoonIsland_House4_Text_YouLookTired, MSGBOX_DEFAULT)
+    waitmessage
+    call(Common_EventScript_OutOfCenterPartyHeal)
+    msgbox(NewMoonIsland_House4_Text_RestHereAnytime, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(1)
+    release
+    end
+}
+
+text NewMoonIsland_House4_Text_YouLookTired{
+    "You look tired.\n
+    Take a rest for awhile."
+}
+
+text NewMoonIsland_House4_Text_RestHereAnytime{
+    "You can rest here anytime.\n
+    We're stuck here for eternity, after all…"
+}

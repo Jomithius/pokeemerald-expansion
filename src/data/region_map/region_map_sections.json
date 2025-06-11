@@ -1759,6 +1759,22 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_NEWMOON_ISLAND",
+      "name": "NEWMOON ISLAND",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_FULLMOON_ISLAND",
+      "name": "FULLMOON ISLAND",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

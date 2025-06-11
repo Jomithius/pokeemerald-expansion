@@ -2,10 +2,10 @@
   "id": "MAP_THE_UNDER_CANYON_LAKE",
   "name": "TheUnder_CanyonLake",
   "layout": "LAYOUT_THE_UNDER_CANYON_LAKE",
-  "music": "MUS_B_TOWER",
+  "music": "MUS_ROWANS_LAB",
   "region_map_section": "MAPSEC_THE_UNDER",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY_CLOUDS",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -14,91 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
-      "x": 9,
-      "y": 13,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
-      "x": 22,
-      "y": 17,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
-      "x": 10,
-      "y": 18,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
-      "x": 13,
-      "y": 22,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA_ALOLA)",
-      "x": 17,
-      "y": 22,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA_ALOLA)",
-      "x": 20,
-      "y": 13,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    }
+
   ],
   "warp_events": [
     {
       "x": 15,
       "y": 20,
       "elevation": 0,
-      "dest_map": "MAP_RAT_CAVE_THE_UNDER",
+      "dest_map": "MAP_THE_UNDER_TO_CANYON_LAKE",
       "dest_warp_id": "1"
     },
     {

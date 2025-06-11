@@ -1,1 +1,72 @@
 mapscripts TheUnder_House_MapScripts {}
+
+script TheUnder_House_Eventscript_BedLeft{
+    lock
+    msgbox(TheUnder_House_Text_TakeARest, MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        applymovement(OBJ_EVENT_ID_PLAYER, TheUnder_House_Movement_LayInBedLeft)
+        waitmovement(0)
+        call(TheUnder_House_OutOfCenterPartyHeal)
+        setvar(VAR_NEWMOON_ISLAND_STATE, 1)
+    }
+    else{
+        msgbox("Maybe another time.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+        waitmovement(0)
+    }
+    release
+    end
+}
+
+script TheUnder_House_Eventscript_BedRight{
+    lock
+    msgbox(TheUnder_House_Text_TakeARest, MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        applymovement(OBJ_EVENT_ID_PLAYER, TheUnder_House_Movement_LayInBedRight)
+        waitmovement(0)
+        call(TheUnder_House_OutOfCenterPartyHeal)
+        setvar(VAR_NEWMOON_ISLAND_STATE, 1)
+    }
+    else{
+        msgbox("Maybe another time.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+        waitmovement(0)
+    }
+    release
+    end
+}
+
+script TheUnder_House_OutOfCenterPartyHeal{
+    warpsilent(MAP_THE_UNDER_SHADY_HOUSE, 11, 2)
+    delay(10)
+    fadescreen(FADE_TO_BLACK)
+    fadescreen(FADE_FROM_BLACK)
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    playbgm(MUS_DUMMY, FALSE)
+    delay(10)
+	playfanfare(MUS_HEAL)
+	waitfanfare
+	special(HealPlayerParty)
+	callnative(UpdateFollowingPokemon)
+    fadescreenspeed(FADE_FROM_BLACK, 2)
+	return
+}
+
+
+text TheUnder_House_Text_TakeARest{
+    "There's a bed…\n
+    Take a rest?"
+}
+
+movement TheUnder_House_Movement_LayInBedLeft{
+    walk_right
+    walk_in_place_down
+}
+
+movement TheUnder_House_Movement_LayInBedRight{
+    walk_left
+    walk_in_place_down
+}
+

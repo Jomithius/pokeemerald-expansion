@@ -34,7 +34,7 @@ voicegroup193::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_directsound_no_resample 64, 45, DirectSoundWaveData_sd90_open_triangle, 255, 242, 103, 188
+	voice_directsound_no_resample 32, 34, DirectSoundWaveData_sc88pro_tambourine, 255, 127, 77, 204
 	voice_directsound_no_resample 60, 64, DirectSoundWaveData_sc88pro_rnd_kick, 255, 0, 255, 242
 	voice_directsound_no_resample 64, 64, DirectSoundWaveData_drum_and_percussion_kick, 255, 0, 255, 0       @ C3
 	voice_directsound 62, 64, DirectSoundWaveData_drum_and_percussion_stick, 255, 0, 255, 0
@@ -52,7 +52,7 @@ voicegroup193::
 	voice_directsound_no_resample 60, 14, DirectSoundWaveData_trinity_cymbal_crash, 255, 235, 0, 165
 	voice_directsound 60, 79, DirectSoundWaveData_unused_sc55_tom, 255, 204, 77, 204
 	voice_directsound_no_resample 30, 54, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 246, 0, 216
-	voice_directsound_no_resample 64, 24, DirectSoundWaveData_dance_drums_ride_bell, 255, 165, 103, 231
+	voice_directsound_no_resample 64, 70, DirectSoundWaveData_dance_drums_ride_bell, 255, 165, 103, 231
 	voice_directsound_no_resample 64, 24, DirectSoundWaveData_dance_drums_ride_bell, 255, 165, 103, 231
 	voice_directsound_no_resample 32, 34, DirectSoundWaveData_sc88pro_tambourine, 255, 127, 77, 204
 	voice_directsound_no_resample 60, 14, DirectSoundWaveData_trinity_cymbal_crash, 255, 235, 0, 165
@@ -77,6 +77,6 @@ voicegroup193::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound_no_resample 72, 54, DirectSoundWaveData_sc88pro_mute_high_conga, 255, 0, 255, 0 
-	voice_directsound_no_resample 64, 89, DirectSoundWaveData_sd90_cowbell, 255, 0, 255, 242
+	voice_directsound_no_resample 72, 75, DirectSoundWaveData_sc88pro_open_low_conga, 255, 0, 255, 0
 	voice_directsound_no_resample 72, 39, DirectSoundWaveData_sc88pro_mute_high_conga, 255, 0, 255, 0 
-	voice_directsound_no_resample 72, 68, DirectSoundWaveData_sc88pro_open_low_conga, 255, 0, 255, 0
+	voice_directsound_no_resample 64, 89, DirectSoundWaveData_sd90_cowbell, 255, 0, 255, 242

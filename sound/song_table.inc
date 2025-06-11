@@ -628,6 +628,12 @@ gSongTable::
 	song mus_snowfall, 0, 0
 	song mus_hearthome_city_night, 0, 0
 	song mus_eterna_city_night, 0, 0
+	song mus_old_chateau, 0, 0
+	song mus_rowans_lab, 0, 0
+	song mus_city_two, 0, 0
+	song mus_eterna_forest, 0, 0
+	song mus_ff_theme, 0, 0
+	song mus_void, 0, 0
 
 	.align 2
 dummy_song_header:

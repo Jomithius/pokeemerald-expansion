@@ -1,0 +1,6 @@
+mapscripts NewMoonIsland_House1_MapScripts {
+    MAP_SCRIPT_ON_LOAD{
+        setflag(FLAG_TEMP_E)
+        end
+    }
+}

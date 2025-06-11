@@ -4932,16 +4932,6 @@
       "blockdata_filepath": "data/layouts/Ultra_Space/map.bin"
     },
     {
-      "id": "LAYOUT_RAT_CAVE_THE_UNDER",
-      "name": "RatCave_TheUnder_Layout",
-      "width": 17,
-      "height": 18,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/RatCave_TheUnder/border.bin",
-      "blockdata_filepath": "data/layouts/RatCave_TheUnder/map.bin"
-    },
-    {
       "id": "LAYOUT_THE_UNDER_CANYON_LAKE",
       "name": "TheUnder_CanyonLake_Layout",
       "width": 31,
@@ -4970,6 +4960,76 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/TheUnder_ShadyHouse/border.bin",
       "blockdata_filepath": "data/layouts/TheUnder_ShadyHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MOON_ISLAND",
+      "name": "NewMoonIsland_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ShadyForest",
+      "border_filepath": "data/layouts/NewMoonIsland/border.bin",
+      "blockdata_filepath": "data/layouts/NewMoonIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MOON_ISLAND_HOUSE1",
+      "name": "NewMoonIsland_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LegendOfZeldaHouse",
+      "border_filepath": "data/layouts/NewMoonIsland_House1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMoonIsland_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MOON_ISLAND_DARKRAI_LAIR",
+      "name": "NewMoonIsland_DarkraiLair_Layout",
+      "width": 18,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ShadyForest",
+      "border_filepath": "data/layouts/NewMoonIsland_DarkraiLair/border.bin",
+      "blockdata_filepath": "data/layouts/NewMoonIsland_DarkraiLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MOON_ISLAND_HOUSE2",
+      "name": "NewMoonIsland_House2_Layout",
+      "width": 18,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LegendOfZeldaHouse",
+      "border_filepath": "data/layouts/NewMoonIsland_House2/border.bin",
+      "blockdata_filepath": "data/layouts/NewMoonIsland_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MOON_ISLAND_HOUSE3",
+      "name": "NewMoonIsland_House3_Layout",
+      "width": 24,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LegendOfZeldaHouse",
+      "border_filepath": "data/layouts/NewMoonIsland_House3/border.bin",
+      "blockdata_filepath": "data/layouts/NewMoonIsland_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MOON_ISLAND_HOUSE4",
+      "name": "NewMoonIsland_House4_Layout",
+      "width": 18,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LegendOfZeldaHouse",
+      "border_filepath": "data/layouts/NewMoonIsland_House4/border.bin",
+      "blockdata_filepath": "data/layouts/NewMoonIsland_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_UNDER_TO_CANYON_LAKE",
+      "name": "TheUnder_ToCanyonLake_Layout",
+      "width": 17,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TheUnder_ToCanyonLake/border.bin",
+      "blockdata_filepath": "data/layouts/TheUnder_ToCanyonLake/map.bin"
     }
   ]
 }

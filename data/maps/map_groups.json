@@ -104,7 +104,14 @@
     "NewMap2",
     "TheUnder_CanyonLake",
     "TheUnder_House",
-    "TheUnder_ShadyHouse"
+    "TheUnder_ShadyHouse",
+    "NewMoonIsland",
+    "NewMoonIsland_House1",
+    "NewMoonIsland_DarkraiLair",
+    "NewMoonIsland_House2",
+    "NewMoonIsland_House3",
+    "NewMoonIsland_House4",
+    "TheUnder_ToCanyonLake"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -474,8 +481,7 @@
     "NewMap1",
     "RatCave_Lilycove_Highway",
     "RatCave_Lilycove_Highway2",
-    "RatCave_ToUnder",
-    "RatCave_TheUnder"
+    "RatCave_ToUnder"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

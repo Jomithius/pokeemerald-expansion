@@ -2,7 +2,7 @@
   "id": "MAP_THE_UNDER_HOUSE",
   "name": "TheUnder_House",
   "layout": "LAYOUT_THE_UNDER_HOUSE",
-  "music": "MUS_B_TOWER",
+  "music": "MUS_ROWANS_LAB",
   "region_map_section": "MAPSEC_THE_UNDER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -33,7 +33,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_NEWMOON_ISLAND_STATE",
+      "var_value": "0",
+      "script": "TheUnder_House_Eventscript_BedLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_NEWMOON_ISLAND_STATE",
+      "var_value": "0",
+      "script": "TheUnder_House_Eventscript_BedRight"
+    }
   ],
   "bg_events": [
 

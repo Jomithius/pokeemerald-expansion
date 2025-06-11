@@ -301,11 +301,11 @@ EverGrandeCity_EventScript_Nurse::
 # 185 "data/maps/EverGrandeCity/scripts.pory"
 	msgbox EverGrandeCity_Text_Nurse2, MSGBOX_AUTOCLOSE
 # 186 "data/maps/EverGrandeCity/scripts.pory"
-	applymovement 4, Common_Movement_FaceOriginalDirection
-# 187 "data/maps/EverGrandeCity/scripts.pory"
-	waitmovement 4
-# 188 "data/maps/EverGrandeCity/scripts.pory"
 	waitmessage
+# 187 "data/maps/EverGrandeCity/scripts.pory"
+	applymovement 4, Common_Movement_FaceOriginalDirection
+# 188 "data/maps/EverGrandeCity/scripts.pory"
+	waitmovement 4
 # 189 "data/maps/EverGrandeCity/scripts.pory"
 	release
 	end

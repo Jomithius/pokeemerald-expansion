@@ -183,9 +183,9 @@ script EverGrandeCity_EventScript_Nurse{
     waitmessage
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox(EverGrandeCity_Text_Nurse2, MSGBOX_AUTOCLOSE)
+    waitmessage
     applymovement(4, Common_Movement_FaceOriginalDirection)
     waitmovement(4)
-    waitmessage
     release
     end
 }

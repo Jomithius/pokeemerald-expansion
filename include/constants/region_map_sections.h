@@ -221,7 +221,9 @@
 #define MAPSEC_WACHUNPELON                  0xD9
 #define MAPSEC_ROUTE_137                    0xDA
 #define MAPSEC_ULTRA_SPACE                  0xDB
-#define MAPSEC_NONE                         0xDC
+#define MAPSEC_NEWMOON_ISLAND               0xDC
+#define MAPSEC_FULLMOON_ISLAND              0xDD
+#define MAPSEC_NONE                         0xDE
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

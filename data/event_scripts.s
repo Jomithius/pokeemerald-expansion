@@ -1259,10 +1259,22 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Ultra_Space/scripts.inc"
 
-	.include "data/maps/RatCave_TheUnder/scripts.inc"
-
 	.include "data/maps/TheUnder_CanyonLake/scripts.inc"
 
 	.include "data/maps/TheUnder_House/scripts.inc"
 
 	.include "data/maps/TheUnder_ShadyHouse/scripts.inc"
+
+	.include "data/maps/NewMoonIsland/scripts.inc"
+
+	.include "data/maps/NewMoonIsland_House1/scripts.inc"
+
+	.include "data/maps/NewMoonIsland_DarkraiLair/scripts.inc"
+
+	.include "data/maps/NewMoonIsland_House2/scripts.inc"
+
+	.include "data/maps/NewMoonIsland_House3/scripts.inc"
+
+	.include "data/maps/NewMoonIsland_House4/scripts.inc"
+
+	.include "data/maps/TheUnder_ToCanyonLake/scripts.inc"

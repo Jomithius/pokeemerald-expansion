@@ -510,8 +510,7 @@
 #define FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL 0x1D8
 #define FLAG_ENABLE_JUAN_MATCH_CALL          0x1D9
 
-#define FLAG_UNUSED_0x1DA                    0x1DA // Unused Flag
-
+#define FLAG_DEFEATED_DARKRAI                0x1DA // Newmoon Island
 #define FLAG_SHOWN_MYSTIC_TICKET             0x1DB
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
@@ -1283,7 +1282,7 @@
 #define FLAG_DEFEATED_EUGENIA                                       0x4CC // Lina Superboss
 #define FLAG_ELITE_FOUR_FINAL_BATTLE                                0x4CD // For Elite Four Rematches
 #define FLAG_HIDE_GYM_LEADERS                                       0x4CE // For postgame when gym leaders are out
-#define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
+#define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
 #define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag
 #define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
 #define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
