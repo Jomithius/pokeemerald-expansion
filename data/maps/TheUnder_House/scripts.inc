@@ -72,43 +72,39 @@ TheUnder_House_OutOfCenterPartyHeal::
 # 42 "data/maps/TheUnder_House/scripts.pory"
 	warpsilent MAP_THE_UNDER_SHADY_HOUSE, 11, 2
 # 43 "data/maps/TheUnder_House/scripts.pory"
-	delay 10
-# 44 "data/maps/TheUnder_House/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 45 "data/maps/TheUnder_House/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 46 "data/maps/TheUnder_House/scripts.pory"
-	fadescreenspeed FADE_TO_BLACK, 2
-# 47 "data/maps/TheUnder_House/scripts.pory"
 	playbgm MUS_DUMMY, FALSE
-# 48 "data/maps/TheUnder_House/scripts.pory"
+# 44 "data/maps/TheUnder_House/scripts.pory"
 	delay 10
-# 49 "data/maps/TheUnder_House/scripts.pory"
+# 45 "data/maps/TheUnder_House/scripts.pory"
+	fadescreenspeed FADE_TO_BLACK, 2
+# 46 "data/maps/TheUnder_House/scripts.pory"
+	delay 10
+# 47 "data/maps/TheUnder_House/scripts.pory"
 	playfanfare MUS_HEAL
-# 50 "data/maps/TheUnder_House/scripts.pory"
+# 48 "data/maps/TheUnder_House/scripts.pory"
 	waitfanfare
-# 51 "data/maps/TheUnder_House/scripts.pory"
+# 49 "data/maps/TheUnder_House/scripts.pory"
 	special HealPlayerParty
-# 52 "data/maps/TheUnder_House/scripts.pory"
+# 50 "data/maps/TheUnder_House/scripts.pory"
 	callnative UpdateFollowingPokemon
-# 53 "data/maps/TheUnder_House/scripts.pory"
+# 51 "data/maps/TheUnder_House/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 2
 	return
 
 
-# 63 "data/maps/TheUnder_House/scripts.pory"
+# 61 "data/maps/TheUnder_House/scripts.pory"
 TheUnder_House_Movement_LayInBedLeft:
-# 64 "data/maps/TheUnder_House/scripts.pory"
+# 62 "data/maps/TheUnder_House/scripts.pory"
 	walk_right
-# 65 "data/maps/TheUnder_House/scripts.pory"
+# 63 "data/maps/TheUnder_House/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 68 "data/maps/TheUnder_House/scripts.pory"
+# 66 "data/maps/TheUnder_House/scripts.pory"
 TheUnder_House_Movement_LayInBedRight:
-# 69 "data/maps/TheUnder_House/scripts.pory"
+# 67 "data/maps/TheUnder_House/scripts.pory"
 	walk_left
-# 70 "data/maps/TheUnder_House/scripts.pory"
+# 68 "data/maps/TheUnder_House/scripts.pory"
 	walk_in_place_down
 	step_end
 
@@ -117,5 +113,5 @@ TheUnder_House_Eventscript_BedLeft_Text_0:
 	.string "Maybe another time.$"
 
 TheUnder_House_Text_TakeARest::
-# 58 "data/maps/TheUnder_House/scripts.pory"
+# 56 "data/maps/TheUnder_House/scripts.pory"
 	.string "There's a bed…\n Take a rest?$"

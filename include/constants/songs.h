@@ -568,6 +568,7 @@
 #define MUS_ETERNA_FOREST           630
 #define MUS_FF_THEME                631
 #define MUS_VOID                    632
+#define MUS_BALDESION_ANNEX         633
 
 
 
