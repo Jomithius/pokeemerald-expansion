@@ -635,6 +635,8 @@ gSongTable::
 	song mus_ff_theme, 0, 0
 	song mus_void, 0, 0
 	song mus_baldesion_annex, 0, 0
+	song mus_exdeath, 0, 0
+	song mus_underwater_cave, 0, 0
 
 	.align 2
 dummy_song_header:

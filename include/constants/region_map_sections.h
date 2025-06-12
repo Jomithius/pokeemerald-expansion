@@ -223,7 +223,9 @@
 #define MAPSEC_ULTRA_SPACE                  0xDB
 #define MAPSEC_NEWMOON_ISLAND               0xDC
 #define MAPSEC_FULLMOON_ISLAND              0xDD
-#define MAPSEC_NONE                         0xDE
+#define MAPSEC_BEACHSIDE_CAVE               0xDE
+#define MAPSEC_FLOWER_PARADISE              0xDF
+#define MAPSEC_NONE                         0xF0
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

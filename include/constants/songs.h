@@ -569,6 +569,8 @@
 #define MUS_FF_THEME                631
 #define MUS_VOID                    632
 #define MUS_BALDESION_ANNEX         633
+#define MUS_EXDEATH                 634
+#define MUS_UNDERWATER_CAVE         635
 
 
 

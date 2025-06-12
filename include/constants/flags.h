@@ -1283,8 +1283,8 @@
 #define FLAG_ELITE_FOUR_FINAL_BATTLE                                0x4CD // For Elite Four Rematches
 #define FLAG_HIDE_GYM_LEADERS                                       0x4CE // For postgame when gym leaders are out
 #define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
-#define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag
-#define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
+#define FLAG_HIDE_RATDUARDO_FULLMOON                                0x4D0 // Ratduardo Cutscene Fullmoon Island
+#define FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE                         0x4D1 // Cleared if player defeats Darkrai before reaching Fullmoon
 #define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
 #define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
 #define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag

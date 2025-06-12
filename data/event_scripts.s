@@ -1278,3 +1278,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NewMoonIsland_House4/scripts.inc"
 
 	.include "data/maps/TheUnder_ToCanyonLake/scripts.inc"
+
+	.include "data/maps/FullMoonIsland/scripts.inc"
+
+	.include "data/maps/FullMoonIslandInterior/scripts.inc"
+
+	.include "data/maps/BeachsideCave/scripts.inc"
+
+	.include "data/maps/Route137_CaveSide/scripts.inc"
+
+	.include "data/maps/BeachsideCave_InteriorRoom/scripts.inc"
+
+	.include "data/maps/BeachsideCave_Room2/scripts.inc"
+
+	.include "data/maps/FlowerParadise/scripts.inc"
+
+	.include "data/maps/Route137_CaveSideEast/scripts.inc"

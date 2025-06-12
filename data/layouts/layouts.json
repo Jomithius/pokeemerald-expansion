@@ -5030,6 +5030,86 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/TheUnder_ToCanyonLake/border.bin",
       "blockdata_filepath": "data/layouts/TheUnder_ToCanyonLake/map.bin"
+    },
+    {
+      "id": "LAYOUT_FULL_MOON_ISLAND",
+      "name": "FullMoonIsland_Layout",
+      "width": 45,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ShadyForest",
+      "border_filepath": "data/layouts/FullMoonIsland/border.bin",
+      "blockdata_filepath": "data/layouts/FullMoonIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_FULL_MOON_ISLAND_INTERIOR",
+      "name": "FullMoonIslandInterior_Layout",
+      "width": 14,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ShadyForest",
+      "border_filepath": "data/layouts/FullMoonIslandInterior/border.bin",
+      "blockdata_filepath": "data/layouts/FullMoonIslandInterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACHSIDE_CAVE",
+      "name": "BeachsideCave_Layout",
+      "width": 30,
+      "height": 27,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BeachCave",
+      "border_filepath": "data/layouts/BeachsideCave/border.bin",
+      "blockdata_filepath": "data/layouts/BeachsideCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE137_CAVE_SIDE",
+      "name": "Route137_CaveSide_Layout",
+      "width": 46,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/Route137_CaveSide/border.bin",
+      "blockdata_filepath": "data/layouts/Route137_CaveSide/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACHSIDE_CAVE_INTERIOR_ROOM",
+      "name": "BeachsideCave_InteriorRoom_Layout",
+      "width": 15,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BeachCave",
+      "border_filepath": "data/layouts/BeachsideCave_InteriorRoom/border.bin",
+      "blockdata_filepath": "data/layouts/BeachsideCave_InteriorRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACHSIDE_CAVE_ROOM2",
+      "name": "BeachsideCave_Room2_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BeachCave",
+      "border_filepath": "data/layouts/BeachsideCave_Room2/border.bin",
+      "blockdata_filepath": "data/layouts/BeachsideCave_Room2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOWER_PARADISE",
+      "name": "FlowerParadise_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/FlowerParadise/border.bin",
+      "blockdata_filepath": "data/layouts/FlowerParadise/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE137_CAVE_SIDE_EAST",
+      "name": "Route137_CaveSideEast_Layout",
+      "width": 30,
+      "height": 69,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route137_CaveSideEast/border.bin",
+      "blockdata_filepath": "data/layouts/Route137_CaveSideEast/map.bin"
     }
   ]
 }

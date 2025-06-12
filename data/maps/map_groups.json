@@ -111,7 +111,15 @@
     "NewMoonIsland_House2",
     "NewMoonIsland_House3",
     "NewMoonIsland_House4",
-    "TheUnder_ToCanyonLake"
+    "TheUnder_ToCanyonLake",
+    "FullMoonIsland",
+    "FullMoonIslandInterior",
+    "BeachsideCave",
+    "Route137_CaveSide",
+    "BeachsideCave_InteriorRoom",
+    "BeachsideCave_Room2",
+    "FlowerParadise",
+    "Route137_CaveSideEast"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

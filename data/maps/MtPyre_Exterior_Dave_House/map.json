@@ -2,7 +2,7 @@
   "id": "MAP_MT_PYRE_EXTERIOR_DAVE_HOUSE",
   "name": "MtPyre_Exterior_Dave_House",
   "layout": "LAYOUT_MT_PYRE_EXTERIOR_DAVE_HOUSE",
-  "music": "MUS_MT_PYRE_EXTERIOR",
+  "music": "MUS_FF_THEME",
   "region_map_section": "MAPSEC_MT_PYRE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

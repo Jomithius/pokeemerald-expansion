@@ -1,0 +1,45 @@
+{
+  "id": "MAP_ROUTE137_CAVE_SIDE",
+  "name": "Route137_CaveSide",
+  "layout": "LAYOUT_ROUTE137_CAVE_SIDE",
+  "music": "MUS_ROUTE119",
+  "region_map_section": "MAPSEC_ROUTE_137",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_FULL_MOON_ISLAND",
+      "offset": -9,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE137_CAVE_SIDE_EAST",
+      "offset": 5,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 18,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_BEACHSIDE_CAVE_ROOM2",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

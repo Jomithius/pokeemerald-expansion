@@ -284,17 +284,24 @@
   "warp_events": [
     {
       "x": 16,
-      "y": 11,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_ROUTE137_SEASIDE_HOUSE",
       "dest_warp_id": "0"
     },
     {
       "x": 28,
-      "y": 11,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_ROUTE137_SEASIDE_HOUSE",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 52,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_BEACHSIDE_CAVE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

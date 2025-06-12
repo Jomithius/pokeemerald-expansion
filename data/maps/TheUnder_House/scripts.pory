@@ -6,10 +6,11 @@ script TheUnder_House_Eventscript_BedLeft{
     if(var(VAR_RESULT) == YES){
         applymovement(OBJ_EVENT_ID_PLAYER, TheUnder_House_Movement_LayInBedLeft)
         waitmovement(0)
-        warpsilent(MAP_THE_UNDER_SHADY_HOUSE, 11, 2)
         msgbox(TheUnder_House_Movement_FallIntoSlumber, MSGBOX_DEFAULT)
         waitmessage
-        call(Common_EventScript_OutOfCenterPartyHeal)
+        warpsilent(MAP_THE_UNDER_SHADY_HOUSE, 11, 2)
+        delay(120)
+        call(TheUnder_House_OutOfCenterPartyHeal)
         setvar(VAR_NEWMOON_ISLAND_STATE, 1)
     }
     else{
@@ -28,10 +29,11 @@ script TheUnder_House_Eventscript_BedRight{
     if(var(VAR_RESULT) == YES){
         applymovement(OBJ_EVENT_ID_PLAYER, TheUnder_House_Movement_LayInBedRight)
         waitmovement(0)
-        warpsilent(MAP_THE_UNDER_SHADY_HOUSE, 11, 2)
         msgbox(TheUnder_House_Movement_FallIntoSlumber, MSGBOX_DEFAULT)
         waitmessage
-        call(Common_EventScript_OutOfCenterPartyHeal)
+        warpsilent(MAP_THE_UNDER_SHADY_HOUSE, 11, 2)
+        delay(120)
+        call(TheUnder_House_OutOfCenterPartyHeal)
         setvar(VAR_NEWMOON_ISLAND_STATE, 1)
     }
     else{
@@ -44,21 +46,21 @@ script TheUnder_House_Eventscript_BedRight{
     end
 }
 
-//unused
+
 script TheUnder_House_OutOfCenterPartyHeal{
-    warpsilent(MAP_THE_UNDER_SHADY_HOUSE, 11, 2)
     playbgm(MUS_DUMMY, FALSE)
-    delay(10)
+    delay(30)
     fadescreenspeed(FADE_TO_BLACK, 2)
-    delay(10)
+    delay(30)
 	playfanfare(MUS_HEAL)
 	waitfanfare
 	special(HealPlayerParty)
 	callnative(UpdateFollowingPokemon)
+    delay(60)
     fadescreenspeed(FADE_FROM_BLACK, 2)
 	return
 } 
-//unsed
+
 
 
 text TheUnder_House_Text_TakeARest{
