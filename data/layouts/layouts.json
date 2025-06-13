@@ -5110,6 +5110,46 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route137_CaveSideEast/border.bin",
       "blockdata_filepath": "data/layouts/Route137_CaveSideEast/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR",
+      "name": "LilycoveCity_HighriseGroundFloor_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/LilycoveCity_HighriseGroundFloor/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_HighriseGroundFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILYCOVE_CITY_HIGHRISE_ELEVATOR",
+      "name": "LilycoveCity_HighriseElevator_Layout",
+      "width": 5,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/LilycoveCity_HighriseElevator/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_HighriseElevator/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILYCOVE_CITY_HIGHRISE_CEO_OFFICE",
+      "name": "LilycoveCity_HighriseCeoOffice_Layout",
+      "width": 15,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/LilycoveCity_HighriseCeoOffice/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_HighriseCeoOffice/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILYCOVE_CITY_HIGHRISE_FLOOR2",
+      "name": "LilycoveCity_HighriseFloor2_Layout",
+      "width": 12,
+      "height": 18,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/LilycoveCity_HighriseFloor2/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_HighriseFloor2/map.bin"
     }
   ]
 }

@@ -285,7 +285,11 @@
     "LilycoveCity_DepartmentStoreRooftop",
     "LilycoveCity_DepartmentStoreElevator",
     "LilycoveCity_House5",
-    "LilycoveCity_House5_Basement"
+    "LilycoveCity_House5_Basement",
+    "LilycoveCity_HighriseGroundFloor",
+    "LilycoveCity_HighriseElevator",
+    "LilycoveCity_HighriseCeoOffice",
+    "LilycoveCity_HighriseFloor2"
   ],
   "gMapGroup_IndoorMossdeep": [
     "MossdeepCity_Gym",

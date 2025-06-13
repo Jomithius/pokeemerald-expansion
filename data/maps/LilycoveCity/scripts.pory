@@ -833,7 +833,7 @@ script LilycoveCity_EventScript_EmoBully{
     delay(10)
     applymovement(23, LilycoveCity_Movement_Emo)
     waitmovement(23)
-    msgbox("JAMES: ...\p So you saw that.", MSGBOX_AUTOCLOSE)
+    msgbox("JAMES: …\p So you saw that.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(23, Common_Movement_WalkRight)
     waitmovement(23)
@@ -902,14 +902,14 @@ text LilycoveCity_Text_BullyMan3{
 }
 
 text LilycoveCity_Text_Emo1{
-    "JAMES: ...\p
+    "JAMES: …\p
     I don't have anything to say to you.\p
 	BOY: What was that?!\p
-	KID: You...!"
+	KID: You…!"
 }
 
 text LilycoveCity_Text_Emo2{
-    "That guy...\n
+    "That guy…\n
     Was the reason I stopped going\l
     to school.\p
     My mom found out what was happening\n
@@ -919,11 +919,11 @@ text LilycoveCity_Text_Emo2{
 }
 
 text LilycoveCity_Text_Emo3{
-    "Either way, I'm...\n
+    "Either way, I'm…\n
     I'm a different person now.\l
     I have my friends with me.\p
-    Even if...\p
-    ..."
+    Even if…\p
+    …"
 }
 
 text LilycoveCity_Text_Emo4{
@@ -981,6 +981,22 @@ movement LilycoveCity_Movement_WalkBackUp{
     unlock_facing_direction
 }
 
+movement LilycoveCity_Movement_WalkBackDown{
+	lock_facing_direction
+	walk_down
+	unlock_facing_direction
+}
+
+movement LilycoveCity_Movement_StaffEmployee{
+	walk_fast_right
+	walk_in_place_down
+}
+
+movement LilycoveCity_Movement_StaffEmployee2{
+	walk_left
+	face_original_direction
+}
+
 movement LilycoveCity_Movement_EnterPokeball{
     enter_pokeball
 }
@@ -1014,4 +1030,31 @@ text LilycoveCity_Text_Man4{
 	"I've been hearing weird noises coming\n
 	from that houses for a few days now.\p
 	But nobody's lived there for years."
+}
+
+script LilycoveCity_EventScript_CEO_HighriseNoEntry{
+	lock
+	playse(SE_PIN)
+	applymovement(30, Common_Movement_ExclamationMark)
+	waitmovement(30)
+	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_Movement_WalkBackDown)
+	applymovement(30, LilycoveCity_Movement_StaffEmployee)
+	waitmovement(0)
+	msgbox(LilycoveCity_Text_StaffEmployee, MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(30, LilycoveCity_Movement_StaffEmployee2)
+	waitmovement(30)
+	release
+	end
+}
+
+script LilycoveCity_EventScript_StaffEmployee{
+	msgbox("…", MSGBOX_NPC)
+	end
+}
+
+text LilycoveCity_Text_StaffEmployee{
+	"Sorry. This area is restricted.\n
+	Cleared personnel only."
 }

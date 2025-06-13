@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEDENNE)",
       "x": 10,
-      "y": 5,
+      "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TOGEDEMARU)",
       "x": 14,
-      "y": 5,
+      "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,

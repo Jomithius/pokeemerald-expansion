@@ -222,10 +222,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 50,
-      "y": 7,
+      "x": 52,
+      "y": 13,
       "elevation": 5,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -401,6 +401,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_EventScript_Man4",
       "flag": "FLAG_HIDE_RATDUARDO_LILYCOVE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_STAFF_EMPLOYEE",
+      "x": 50,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_EventScript_StaffEmployee",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_STAFF_EMPLOYEE2",
+      "x": 52,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_EventScript_StaffEmployee",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -508,6 +534,13 @@
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY_HOUSE5",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 51,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -555,6 +588,15 @@
       "var": "VAR_RAT_CAVE_STATE",
       "var_value": "7",
       "script": "LilycoveCity_EventScript_RatCaveShake"
+    },
+    {
+      "type": "trigger",
+      "x": 51,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_CEO_STATE",
+      "var_value": "0",
+      "script": "LilycoveCity_EventScript_CEO_HighriseNoEntry"
     }
   ],
   "bg_events": [

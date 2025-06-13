@@ -1880,50 +1880,112 @@ LilycoveCity_Movement_WalkBackUp:
 	step_end
 
 # 984 "data/maps/LilycoveCity/scripts.pory"
-LilycoveCity_Movement_EnterPokeball:
+LilycoveCity_Movement_WalkBackDown:
 # 985 "data/maps/LilycoveCity/scripts.pory"
+	lock_facing_direction
+# 986 "data/maps/LilycoveCity/scripts.pory"
+	walk_up
+# 987 "data/maps/LilycoveCity/scripts.pory"
+	unlock_facing_direction
+	step_end
+
+# 990 "data/maps/LilycoveCity/scripts.pory"
+LilycoveCity_Movement_StaffEmployee:
+# 991 "data/maps/LilycoveCity/scripts.pory"
+	walk_fast_right
+# 992 "data/maps/LilycoveCity/scripts.pory"
+	walk_in_place_down
+	step_end
+
+# 995 "data/maps/LilycoveCity/scripts.pory"
+LilycoveCity_Movement_StaffEmployee2:
+# 996 "data/maps/LilycoveCity/scripts.pory"
+	walk_left
+# 997 "data/maps/LilycoveCity/scripts.pory"
+	face_original_direction
+	step_end
+
+# 1000 "data/maps/LilycoveCity/scripts.pory"
+LilycoveCity_Movement_EnterPokeball:
+# 1001 "data/maps/LilycoveCity/scripts.pory"
 	enter_pokeball
 	step_end
 
 LilycoveCity_EventScript_RatCaveShake::
-# 989 "data/maps/LilycoveCity/scripts.pory"
+# 1005 "data/maps/LilycoveCity/scripts.pory"
 	lockall
-# 990 "data/maps/LilycoveCity/scripts.pory"
+# 1006 "data/maps/LilycoveCity/scripts.pory"
 	playbgm MUS_NONE, FALSE
-# 991 "data/maps/LilycoveCity/scripts.pory"
+# 1007 "data/maps/LilycoveCity/scripts.pory"
 	delay 40
-# 992 "data/maps/LilycoveCity/scripts.pory"
+# 1008 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_0x8004, 2
-# 993 "data/maps/LilycoveCity/scripts.pory"
+# 1009 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_0x8005, 6
-# 994 "data/maps/LilycoveCity/scripts.pory"
+# 1010 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_0x8006, 8
-# 995 "data/maps/LilycoveCity/scripts.pory"
+# 1011 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_0x8007, 4
-# 996 "data/maps/LilycoveCity/scripts.pory"
+# 1012 "data/maps/LilycoveCity/scripts.pory"
 	special ShakeCamera
-# 997 "data/maps/LilycoveCity/scripts.pory"
+# 1013 "data/maps/LilycoveCity/scripts.pory"
 	waitstate
-# 998 "data/maps/LilycoveCity/scripts.pory"
+# 1014 "data/maps/LilycoveCity/scripts.pory"
 	delay 60
-# 999 "data/maps/LilycoveCity/scripts.pory"
+# 1015 "data/maps/LilycoveCity/scripts.pory"
 	special ShakeCamera
-# 1000 "data/maps/LilycoveCity/scripts.pory"
+# 1016 "data/maps/LilycoveCity/scripts.pory"
 	waitstate
-# 1001 "data/maps/LilycoveCity/scripts.pory"
+# 1017 "data/maps/LilycoveCity/scripts.pory"
 	delay 60
-# 1002 "data/maps/LilycoveCity/scripts.pory"
+# 1018 "data/maps/LilycoveCity/scripts.pory"
 	fadedefaultbgm
-# 1003 "data/maps/LilycoveCity/scripts.pory"
+# 1019 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 8
-# 1004 "data/maps/LilycoveCity/scripts.pory"
+# 1020 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
 LilycoveCity_EventScript_Man4::
-# 1009 "data/maps/LilycoveCity/scripts.pory"
+# 1025 "data/maps/LilycoveCity/scripts.pory"
 	msgbox LilycoveCity_Text_Man4, MSGBOX_NPC
+	end
+
+
+LilycoveCity_EventScript_CEO_HighriseNoEntry::
+# 1036 "data/maps/LilycoveCity/scripts.pory"
+	lock
+# 1037 "data/maps/LilycoveCity/scripts.pory"
+	playse SE_PIN
+# 1038 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, Common_Movement_ExclamationMark
+# 1039 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 30
+# 1040 "data/maps/LilycoveCity/scripts.pory"
+	delay 10
+# 1041 "data/maps/LilycoveCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Movement_WalkBackDown
+# 1042 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, LilycoveCity_Movement_StaffEmployee
+# 1043 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 1044 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_Text_StaffEmployee, MSGBOX_DEFAULT
+# 1045 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1046 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, LilycoveCity_Movement_StaffEmployee2
+# 1047 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 30
+# 1048 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
+LilycoveCity_EventScript_StaffEmployee::
+# 1053 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_StaffEmployee_Text_0, MSGBOX_NPC
 	end
 
 
@@ -1937,7 +1999,11 @@ LilycoveCity_EventScript_EmoBully_Text_1:
 
 LilycoveCity_EventScript_EmoBully_Text_2:
 # 836 "data/maps/LilycoveCity/scripts.pory"
-	.string "JAMES: ...\p So you saw that.$"
+	.string "JAMES: …\p So you saw that.$"
+
+LilycoveCity_EventScript_StaffEmployee_Text_0:
+# 1053 "data/maps/LilycoveCity/scripts.pory"
+	.string "…$"
 
 LilycoveCity_Text_BullyMan1::
 # 864 "data/maps/LilycoveCity/scripts.pory"
@@ -1961,20 +2027,24 @@ LilycoveCity_Text_BullyMan3::
 
 LilycoveCity_Text_Emo1::
 # 904 "data/maps/LilycoveCity/scripts.pory"
-	.string "JAMES: ...\p I don't have anything to say to you.\p BOY: What was that?!\p KID: You...!$"
+	.string "JAMES: …\p I don't have anything to say to you.\p BOY: What was that?!\p KID: You…!$"
 
 LilycoveCity_Text_Emo2::
 # 911 "data/maps/LilycoveCity/scripts.pory"
-	.string "That guy...\n Was the reason I stopped going\l to school.\p My mom found out what was happening\n and suddenly he moved away.\p I guess his friends still visit\n him out here.$"
+	.string "That guy…\n Was the reason I stopped going\l to school.\p My mom found out what was happening\n and suddenly he moved away.\p I guess his friends still visit\n him out here.$"
 
 LilycoveCity_Text_Emo3::
 # 921 "data/maps/LilycoveCity/scripts.pory"
-	.string "Either way, I'm...\n I'm a different person now.\l I have my friends with me.\p Even if...\p ...$"
+	.string "Either way, I'm…\n I'm a different person now.\l I have my friends with me.\p Even if…\p …$"
 
 LilycoveCity_Text_Emo4::
 # 929 "data/maps/LilycoveCity/scripts.pory"
 	.string "I'm gonna go.\p See ya.$"
 
 LilycoveCity_Text_Man4::
-# 1013 "data/maps/LilycoveCity/scripts.pory"
+# 1029 "data/maps/LilycoveCity/scripts.pory"
 	.string "I've been hearing weird noises coming\n from that houses for a few days now.\p But nobody's lived there for years.$"
+
+LilycoveCity_Text_StaffEmployee::
+# 1057 "data/maps/LilycoveCity/scripts.pory"
+	.string "Sorry. This area is restricted.\n Cleared personnel only.$"

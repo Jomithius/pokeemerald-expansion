@@ -256,12 +256,18 @@
 #define OBJ_EVENT_GFX_KOGA                       252
 #define OBJ_EVENT_GFX_KIMONOGIRL                 253
 #define OBJ_EVENT_GFX_CHANNELER                  254
+#define OBJ_EVENT_GFX_STAFF_EMPLOYEE             255
+#define OBJ_EVENT_GFX_STAFF_EMPLOYEE2            256
+#define OBJ_EVENT_GFX_OLD_MAN_DOJO               257
+#define OBJ_EVENT_GFX_KIMONOWOMAN                258
+#define OBJ_EVENT_GFX_KIMONOLADY                 259
+#define OBJ_EVENT_GFX_KIMONO_OLDLADY             260
 
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        255
+#define NUM_OBJ_EVENT_GFX                        261
 
 
 // These are dynamic object gfx ids.
@@ -425,8 +431,6 @@
 #define OBJ_EVENT_PAL_TAG_CHANNELER               0x1149
 
 
-
-
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla
 #define OBJ_EVENT_PAL_TAG_BALL_MASTER             0x1150
@@ -463,6 +467,14 @@
 #define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x116A
 #endif //OW_FOLLOWERS_POKEBALLS
 // Used as a placeholder follower graphic
+
+#define OBJ_EVENT_PAL_TAG_STAFF_EMPLOYEE          0x116B
+#define OBJ_EVENT_PAL_TAG_STAFF_EMPLOYEE2         0x116C
+#define OBJ_EVENT_PAL_TAG_OLD_MAN_DOJO            0x116D
+#define OBJ_EVENT_PAL_TAG_KIMONOWOMAN             0x116E
+#define OBJ_EVENT_PAL_TAG_KIMONOLADY              0x116F
+#define OBJ_EVENT_PAL_TAG_KIMONO_OLDLADY          0x1170
+
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002
 // Not a real OW palette tag; used for the white flash applied to followers

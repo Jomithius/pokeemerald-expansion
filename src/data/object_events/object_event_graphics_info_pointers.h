@@ -17,6 +17,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_James;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Koga;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KimonoGirl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Channeler;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StaffEmployee;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StaffEmployee2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_OldManDojo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KimonoWoman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KimonoLady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KimonoOldLady;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NinjaBoy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Twin;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Boy1;
@@ -282,6 +288,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_KOGA] =                     &gObjectEventGraphicsInfo_Koga,
     [OBJ_EVENT_GFX_KIMONOGIRL] =               &gObjectEventGraphicsInfo_KimonoGirl,
     [OBJ_EVENT_GFX_CHANNELER] =                &gObjectEventGraphicsInfo_Channeler,
+    [OBJ_EVENT_GFX_STAFF_EMPLOYEE] =           &gObjectEventGraphicsInfo_StaffEmployee,
+    [OBJ_EVENT_GFX_STAFF_EMPLOYEE2] =          &gObjectEventGraphicsInfo_StaffEmployee2,
+    [OBJ_EVENT_GFX_OLD_MAN_DOJO] =             &gObjectEventGraphicsInfo_OldManDojo,
+    [OBJ_EVENT_GFX_KIMONOWOMAN] =              &gObjectEventGraphicsInfo_KimonoWoman,
+    [OBJ_EVENT_GFX_KIMONOLADY] =               &gObjectEventGraphicsInfo_KimonoLady,
+    [OBJ_EVENT_GFX_KIMONO_OLDLADY] =           &gObjectEventGraphicsInfo_KimonoOldLady,
     [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_TWIN] =                     &gObjectEventGraphicsInfo_Twin,
     [OBJ_EVENT_GFX_BOY_1] =                    &gObjectEventGraphicsInfo_Boy1,

@@ -354,6 +354,24 @@ $(OBJEVENTGFXDIR)/people/kimonogirl.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/channeler.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4	
 
+$(OBJEVENTGFXDIR)/people/kimono_old_lady.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/staff_employee.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/staff_employee2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/old_man_dojo.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
+$(OBJEVENTGFXDIR)/people/kimono_woman.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
+$(OBJEVENTGFXDIR)/people/kimono_lady.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4		
+
 $(OBJEVENTGFXDIR)/people/red.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

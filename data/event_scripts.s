@@ -1294,3 +1294,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FlowerParadise/scripts.inc"
 
 	.include "data/maps/Route137_CaveSideEast/scripts.inc"
+
+	.include "data/maps/LilycoveCity_HighriseGroundFloor/scripts.inc"
+
+	.include "data/maps/LilycoveCity_HighriseElevator/scripts.inc"
+
+	.include "data/maps/LilycoveCity_HighriseCeoOffice/scripts.inc"
+
+	.include "data/maps/LilycoveCity_HighriseFloor2/scripts.inc"

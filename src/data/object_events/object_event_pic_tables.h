@@ -127,6 +127,30 @@ static const struct SpriteFrameImage sPicTable_Channeler[] = {
     overworld_ascending_frames(gObjectEventPic_Channeler, 2, 4)
 };
 
+static const struct SpriteFrameImage sPicTable_StaffEmployee[] = {
+    overworld_ascending_frames(gObjectEventPic_StaffEmployee, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_StaffEmployee2[] = {
+    overworld_ascending_frames(gObjectEventPic_StaffEmployee2, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_OldManDojo[] = {
+    overworld_ascending_frames(gObjectEventPic_OldManDojo, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_KimonoWoman[] = {
+    overworld_ascending_frames(gObjectEventPic_KimonoWoman, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_KimonoLady[] = {
+    overworld_ascending_frames(gObjectEventPic_KimonoLady, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_KimonoOldLady[] = {
+    overworld_ascending_frames(gObjectEventPic_KimonoOldLady, 2, 4)
+};
+
 static const struct SpriteFrameImage sPicTable_QuintyPlump[] = {
     overworld_ascending_frames(gObjectEventPic_QuintyPlump, 4, 4),
 };

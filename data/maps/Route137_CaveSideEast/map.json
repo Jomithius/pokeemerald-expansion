@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE137_CAVE_SIDE_EAST",
   "name": "Route137_CaveSideEast",
   "layout": "LAYOUT_ROUTE137_CAVE_SIDE_EAST",
-  "music": "MUS_UNDERWATER_CAVE",
+  "music": "MUS_ROUTE119",
   "region_map_section": "MAPSEC_ROUTE_137",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
