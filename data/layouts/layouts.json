@@ -5150,6 +5150,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/LilycoveCity_HighriseFloor2/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_HighriseFloor2/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_VOID",
+      "name": "TheVoid_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Void",
+      "border_filepath": "data/layouts/TheVoid/border.bin",
+      "blockdata_filepath": "data/layouts/TheVoid/map.bin"
     }
   ]
 }

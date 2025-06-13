@@ -648,7 +648,8 @@
     "NavelRock_Down11",
     "NavelRock_Bottom",
     "TrainerHill_Elevator",
-    "Ultra_Space"
+    "Ultra_Space",
+    "TheVoid"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

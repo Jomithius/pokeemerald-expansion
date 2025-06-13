@@ -1302,3 +1302,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LilycoveCity_HighriseCeoOffice/scripts.inc"
 
 	.include "data/maps/LilycoveCity_HighriseFloor2/scripts.inc"
+
+	.include "data/maps/TheVoid/scripts.inc"
