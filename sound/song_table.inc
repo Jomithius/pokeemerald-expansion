@@ -637,6 +637,16 @@ gSongTable::
 	song mus_baldesion_annex, 0, 0
 	song mus_exdeath, 0, 0
 	song mus_underwater_cave, 0, 0
+	song mus_tin_tower, 0, 0
+	song mus_sprout_tower, 0, 0
+	song mus_ecruteak_city, 0, 0
+	song mus_kimono_dance, 0, 0
+	song mus_encounter_kimono, 0, 0
+	song mus_gold_battle, 0, 0
+	song mus_victory_gold, 0, 0
+	song mus_encounter_gold, 0, 0
+	song mus_gold_27, 0, 0
+	song mus_gold_12, 0, 0
 
 	.align 2
 dummy_song_header:

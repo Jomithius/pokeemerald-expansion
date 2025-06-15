@@ -1644,7 +1644,7 @@ DewfordTown_EventScript_Man_4:
 
 DewfordTown_Text_BennisDojoHint::
 # 824 "data/maps/DewfordTown/scripts.pory"
-	.string "The POKéMON GYM was relocated to\n SLATEPORT CITY around a year ago.\p But recently, three people moved into\n the old building, saying they were lookin\l for somebody.$"
+	.string "The POKéMON GYM was relocated to\n SLATEPORT CITY around a year ago.\p But recently, three people moved into\n the old building, saying they were\l looking for somebody.$"
 
 DewfordTown_Text_BennisLeft::
 # 832 "data/maps/DewfordTown/scripts.pory"

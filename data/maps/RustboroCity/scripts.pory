@@ -1447,13 +1447,13 @@ He's also starting his journey soon.\l
 He should be on ROUTE 115 preparing."}
 
 text RustboroMisa4{"Could you do me a favor and go\n
-meet him? He's always been a bit...\l
+meet him? He's always been a bit…\l
 different and could use a new friend."}
 
 text RustboroMisaIfYes{"Thank you! You're so sweet.\n
 Just head north to get to ROUTE 115."}
 
-text RustboroMisaIfNo{"Oh... Please don't be like that.\n
+text RustboroMisaIfNo{"Oh… Please don't be like that.\n
 Would you reconsider?"}
 
 text RustboroMisa5{"Oh! I'm almost late for the\n

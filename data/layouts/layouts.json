@@ -5160,6 +5160,26 @@
       "secondary_tileset": "gTileset_Void",
       "border_filepath": "data/layouts/TheVoid/border.bin",
       "blockdata_filepath": "data/layouts/TheVoid/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE138",
+      "name": "Route138_Layout",
+      "width": 60,
+      "height": 52,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DojoExterior",
+      "border_filepath": "data/layouts/Route138/border.bin",
+      "blockdata_filepath": "data/layouts/Route138/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE138_2",
+      "name": "Route138_2_Layout",
+      "width": 61,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DojoExterior",
+      "border_filepath": "data/layouts/Route138_2/border.bin",
+      "blockdata_filepath": "data/layouts/Route138_2/map.bin"
     }
   ]
 }

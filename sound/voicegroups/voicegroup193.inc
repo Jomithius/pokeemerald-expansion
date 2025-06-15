@@ -58,7 +58,7 @@ voicegroup193::
 	voice_directsound_no_resample 60, 14, DirectSoundWaveData_trinity_cymbal_crash, 255, 235, 0, 165
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound_no_resample 30, 54, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 246, 0, 216
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 50, 64, DirectSoundWaveData_ethnic_flavours_kotsuzumi, 255, 0, 255, 0
 	voice_directsound_no_resample 30, 54, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 246, 0, 216
 	voice_directsound_no_resample 72, 104, DirectSoundWaveData_sc88pro_mute_high_conga, 255, 0, 255, 0    @ C5
 	voice_directsound_no_resample 72, 94, DirectSoundWaveData_sc88pro_open_low_conga, 255, 0, 255, 0
@@ -72,7 +72,7 @@ voicegroup193::
 	voice_directsound_no_resample 60, 29, DirectSoundWaveData_unknown_close_hihat, 255, 127, 0, 188
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0    @ C6
+	voice_directsound_no_resample 72, 89, DirectSoundWaveData_sc88pro_mute_high_conga, 255, 0, 255, 0    @ C6
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -80,3 +80,8 @@ voicegroup193::
 	voice_directsound_no_resample 72, 75, DirectSoundWaveData_sc88pro_open_low_conga, 255, 0, 255, 0
 	voice_directsound_no_resample 72, 39, DirectSoundWaveData_sc88pro_mute_high_conga, 255, 0, 255, 0 
 	voice_directsound_no_resample 64, 89, DirectSoundWaveData_sd90_cowbell, 255, 0, 255, 242
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound_no_resample 32, 34, DirectSoundWaveData_sc88pro_tambourine, 255, 127, 77, 204
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ C7

@@ -98,7 +98,7 @@ MisaHouse1F_FacePlayer:
 
 MisaHouse1F_1::
 # 57 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "MISA: {PLAYER}! I'm glad you stopped by.\n JAMES is upstairs in his room.\l Thanks again for becoming his friend.\l I hope you two can help eachother\l out on your journey.\p Have you eaten yet? We already put away\n the leftovers, but I have some candy.$"
+	.string "MISA: {PLAYER}! I'm glad you stopped by.\n JAMES is upstairs in his room.\l Thanks again for becoming his friend.\l I hope you two can help each other\l out on your journey.\p Have you eaten yet? We already put away\n the leftovers, but I have some candy.$"
 
 MisaHouse1F_2::
 # 66 "data/maps/RustboroCity_Misa_House1F/scripts.pory"

@@ -2950,7 +2950,7 @@ RustboroMisa3::
 
 RustboroMisa4::
 # 1449 "data/maps/RustboroCity/scripts.pory"
-	.string "Could you do me a favor and go\n meet him? He's always been a bit...\l different and could use a new friend.$"
+	.string "Could you do me a favor and go\n meet him? He's always been a bit…\l different and could use a new friend.$"
 
 RustboroMisaIfYes::
 # 1453 "data/maps/RustboroCity/scripts.pory"
@@ -2958,7 +2958,7 @@ RustboroMisaIfYes::
 
 RustboroMisaIfNo::
 # 1456 "data/maps/RustboroCity/scripts.pory"
-	.string "Oh... Please don't be like that.\n Would you reconsider?$"
+	.string "Oh… Please don't be like that.\n Would you reconsider?$"
 
 RustboroMisa5::
 # 1459 "data/maps/RustboroCity/scripts.pory"

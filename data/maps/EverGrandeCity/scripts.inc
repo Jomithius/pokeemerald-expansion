@@ -542,7 +542,7 @@ EvergrandeCity_JamesDefeat::
 
 EverGrandeCity_Text_James3::
 # 307 "data/maps/EverGrandeCity/scripts.pory"
-	.string "JAMES: ...\n It feels like I was somehow always\l destined to lose you, {PLAYER}.\p Even so, I'm glad my mom had me\n go on this journey.\p I won't challenge the ELITE FOUR yet.\n But I know you're going to.$"
+	.string "JAMES: ...\n It feels like I was somehow always\l destined to lose to you, {PLAYER}.\p Even so, I'm glad my mom had me\n go on this journey.\p I won't challenge the ELITE FOUR yet.\n But I know you're going to.$"
 
 EverGrandeCity_Text_James4::
 # 316 "data/maps/EverGrandeCity/scripts.pory"
@@ -550,7 +550,7 @@ EverGrandeCity_Text_James4::
 
 EverGrandeCity_Text_James5::
 # 320 "data/maps/EverGrandeCity/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}To use MEGA EVOLUTION in battle,\n press START before selecting your move.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: The ELITE FOUR are strong.\n Be careful.\p {COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap for the ELITE FOUR\n is 75.$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}To use MEGA EVOLUTION in battle, press\n START before selecting your move.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: The ELITE FOUR are strong.\n Be careful.\p {COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap for the ELITE FOUR\n is 75.$"
 
 EverGrandeCity_Text_James6::
 # 329 "data/maps/EverGrandeCity/scripts.pory"

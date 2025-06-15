@@ -122,7 +122,9 @@
 #define TRAINER_PIC_KOGA                  104
 #define TRAINER_PIC_NERD                  105
 #define TRAINER_PIC_CHANNELER             106
-#define TRAINER_PIC_COUNT                 107
+#define TRAINER_PIC_KIMONO_LADY           107
+#define TRAINER_PIC_KIMONO_WOMAN          108
+#define TRAINER_PIC_COUNT                 109
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -373,7 +375,9 @@
 #define TRAINER_CLASS_KNIGHT         0x47
 #define TRAINER_CLASS_NINJA          0x48
 #define TRAINER_CLASS_NERD           0x49
-#define TRAINER_CLASS_COUNT          0x50
+#define TRAINER_CLASS_KIMONO_WOMAN   0x50
+#define TRAINER_CLASS_KIMONO_LADY    0x51
+#define TRAINER_CLASS_COUNT          0x52
 
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
@@ -390,6 +394,7 @@
 #define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // used for other trainer classes too
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
+#define TRAINER_ENCOUNTER_MUSIC_KIMONO      14 // Kimono Lady and Woman 
 
 #define F_TRAINER_FEMALE (1 << 7)
 

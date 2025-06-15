@@ -5813,14 +5813,18 @@ u16 GetBattleBGM(void)
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleEugeniaName))
-                return MUS_RG_VS_CHAMPION;
+                return MUS_FINAL_BATTLE;
             return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_RAT_MANIAC:
             return MUS_VS_RATDUARDO; 
         case TRAINER_CLASS_CEO:
-            return MUS_VS_FRONTIER_BRAIN; 
+            return MUS_EXDEATH; 
         case TRAINER_CLASS_MASTER:
-            return MUS_BENNIS;    
+            return MUS_BENNIS;  
+        case TRAINER_CLASS_NINJA:
+        case TRAINER_CLASS_CHANNELER:
+        case TRAINER_CLASS_KIMONO_LADY:
+        case TRAINER_CLASS_KIMONO_WOMAN:   
         case TRAINER_CLASS_BIKER:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_RG_VS_TRAINER;

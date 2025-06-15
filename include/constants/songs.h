@@ -571,6 +571,16 @@
 #define MUS_BALDESION_ANNEX         633
 #define MUS_EXDEATH                 634
 #define MUS_UNDERWATER_CAVE         635
+#define MUS_TIN_TOWER               636
+#define MUS_SPROUT_TOWER            637
+#define MUS_ECRUTEAK_CITY           638
+#define MUS_KIMONO_DANCE            639
+#define MUS_ENCOUNTER_KIMONO        640
+#define MUS_GOLD_BATTLE             641
+#define MUS_VICTORY_GOLD            642
+#define MUS_ENCOUNTER_GOLD          643
+#define MUS_GOLD_27                 644
+#define MUS_GOLD_12                 645
 
 
 

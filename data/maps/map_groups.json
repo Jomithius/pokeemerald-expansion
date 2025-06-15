@@ -119,7 +119,9 @@
     "BeachsideCave_InteriorRoom",
     "BeachsideCave_Room2",
     "FlowerParadise",
-    "Route137_CaveSideEast"
+    "Route137_CaveSideEast",
+    "Route138",
+    "Route138_2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

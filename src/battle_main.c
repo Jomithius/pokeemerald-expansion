@@ -368,6 +368,8 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_NERD] = { _("NERD"), 10 },
     [TRAINER_CLASS_CEO] = { _("CEO"), 60 },
     [TRAINER_CLASS_MASTER] = { _("MASTER"), 20 },
+    [TRAINER_CLASS_KIMONO_WOMAN] = { _("KIMONO WOMAN"), 25 },
+    [TRAINER_CLASS_KIMONO_LADY] = { _("KIMONO LADY"), 30 },
 };
 
 static void (* const sTurnActionsFuncsTable[])(void) =
@@ -5439,6 +5441,13 @@ static void HandleEndTurn_BattleWon(void)
             break;
         case TRAINER_CLASS_LEADER:
             PlayBGM(MUS_VICTORY_GYM_LEADER);
+            break;
+        case TRAINER_CLASS_CHANNELER:
+        case TRAINER_CLASS_KIMONO_LADY:
+        case TRAINER_CLASS_KIMONO_WOMAN:
+        case TRAINER_CLASS_NINJA:
+        case TRAINER_CLASS_BIKER:
+            PlayBGM(MUS_RG_VICTORY_TRAINER);
             break;
         default:
             PlayBGM(MUS_VICTORY_TRAINER);

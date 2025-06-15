@@ -322,6 +322,12 @@ const u32 gTrainerPalette_Nerd[] = INCBIN_U32("graphics/trainers/palettes/nerd.g
 const u32 gTrainerFrontPic_Channeler[] = INCBIN_U32("graphics/trainers/front_pics/channeler.4bpp.lz");
 const u32 gTrainerPalette_Channeler[] = INCBIN_U32("graphics/trainers/palettes/channeler.gbapal.lz");
 
+const u32 gTrainerFrontPic_KimonoLady[] = INCBIN_U32("graphics/trainers/front_pics/kimono_lady.4bpp.lz");
+const u32 gTrainerPalette_KimonoLady[] = INCBIN_U32("graphics/trainers/palettes/kimono_lady.gbapal.lz");
+
+const u32 gTrainerFrontPic_KimonoWoman[] = INCBIN_U32("graphics/trainers/front_pics/kimono_woman.4bpp.lz");
+const u32 gTrainerPalette_KimonoWoman[] = INCBIN_U32("graphics/trainers/palettes/kimono_woman.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -457,6 +463,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_KOGA,  gTrainerFrontPic_Koga, gTrainerPalette_Koga),
     TRAINER_SPRITE(TRAINER_PIC_NERD, gTrainerFrontPic_Nerd, gTrainerPalette_Nerd),
     TRAINER_SPRITE(TRAINER_PIC_CHANNELER, gTrainerFrontPic_Channeler, gTrainerPalette_Channeler),
+    TRAINER_SPRITE(TRAINER_PIC_KIMONO_LADY, gTrainerFrontPic_KimonoLady, gTrainerPalette_KimonoLady),
+    TRAINER_SPRITE(TRAINER_PIC_KIMONO_WOMAN, gTrainerFrontPic_KimonoWoman, gTrainerPalette_KimonoWoman),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

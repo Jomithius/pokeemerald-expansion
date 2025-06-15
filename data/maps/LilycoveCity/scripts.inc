@@ -1884,7 +1884,7 @@ LilycoveCity_Movement_WalkBackDown:
 # 985 "data/maps/LilycoveCity/scripts.pory"
 	lock_facing_direction
 # 986 "data/maps/LilycoveCity/scripts.pory"
-	walk_up
+	walk_down
 # 987 "data/maps/LilycoveCity/scripts.pory"
 	unlock_facing_direction
 	step_end
