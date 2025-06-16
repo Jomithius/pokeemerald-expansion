@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE138_2",
       "offset": -35,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE139",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -38,7 +43,7 @@
       "x": 17,
       "y": 15,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

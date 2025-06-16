@@ -1320,3 +1320,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Baldesia_House3/scripts.inc"
 
 	.include "data/maps/Baldesia_House4/scripts.inc"
+
+	.include "data/maps/Route139/scripts.inc"

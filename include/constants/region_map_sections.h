@@ -228,6 +228,7 @@
 #define MAPSEC_THE_VOID                     0xE0
 #define MAPSEC_ROUTE_138                    0xE1
 #define MAPSEC_BALDESIA                     0xE2
+#define MAPSEC_ROUTE_139                    0xE3
 #define MAPSEC_NONE                         0xF0
 
 #define METLOC_SPECIAL_EGG                  0xFD

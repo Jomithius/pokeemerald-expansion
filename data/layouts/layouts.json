@@ -5185,7 +5185,7 @@
       "id": "LAYOUT_BALDESIA",
       "name": "Baldesia_Layout",
       "width": 50,
-      "height": 45,
+      "height": 49,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_DojoExterior",
       "border_filepath": "data/layouts/Baldesia/border.bin",
@@ -5240,6 +5240,16 @@
       "secondary_tileset": "gTileset_DojoInterior",
       "border_filepath": "data/layouts/Baldesia_House4/border.bin",
       "blockdata_filepath": "data/layouts/Baldesia_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE139",
+      "name": "Route139_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DojoExterior",
+      "border_filepath": "data/layouts/Route139/border.bin",
+      "blockdata_filepath": "data/layouts/Route139/map.bin"
     }
   ]
 }
