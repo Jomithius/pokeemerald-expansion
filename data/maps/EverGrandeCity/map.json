@@ -34,7 +34,7 @@
       "flag": "FLAG_HIDE_BENNIS_VICTORY_ROAD"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "graphics_id": "OBJ_EVENT_GFX_NINJA",
       "x": 20,
       "y": 44,
       "elevation": 3,

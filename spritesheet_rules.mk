@@ -370,7 +370,10 @@ $(OBJEVENTGFXDIR)/people/kimono_woman.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4	
 
 $(OBJEVENTGFXDIR)/people/kimono_lady.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4		
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
+$(OBJEVENTGFXDIR)/people/ninja.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
 
 $(OBJEVENTGFXDIR)/people/red.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4

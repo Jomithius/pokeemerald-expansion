@@ -12477,6 +12477,65 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_BALDESIA",
+          "base_label": "gBaldesia0",
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 60,
+                "max_level": 61,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 62,
+                "max_level": 64,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 61,
+                "max_level": 65,
+                "species": "SPECIES_TATSUGIRI_CURLY"
+              },
+              {
+                "min_level": 62,
+                "max_level": 65,
+                "species": "SPECIES_TATSUGIRI_DROOPY"
+              },
+              {
+                "min_level": 63,
+                "max_level": 65,
+                "species": "SPECIES_TATSUGIRI_STRETCHY"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_VELUZA"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_TATSUGIRI"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_DONDOZO"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_BASCULEGION"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_BASCULEGION"
+              }
+            ]
+          }
         }
       ]
     },

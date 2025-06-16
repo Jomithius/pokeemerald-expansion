@@ -121,7 +121,13 @@
     "FlowerParadise",
     "Route137_CaveSideEast",
     "Route138",
-    "Route138_2"
+    "Route138_2",
+    "Baldesia",
+    "Baldesia_MainHouse",
+    "Baldesia_House1",
+    "Baldesia_House2",
+    "Baldesia_House3",
+    "Baldesia_House4"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

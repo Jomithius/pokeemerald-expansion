@@ -1308,3 +1308,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route138/scripts.inc"
 
 	.include "data/maps/Route138_2/scripts.inc"
+
+	.include "data/maps/Baldesia/scripts.inc"
+
+	.include "data/maps/Baldesia_MainHouse/scripts.inc"
+
+	.include "data/maps/Baldesia_House1/scripts.inc"
+
+	.include "data/maps/Baldesia_House2/scripts.inc"
+
+	.include "data/maps/Baldesia_House3/scripts.inc"
+
+	.include "data/maps/Baldesia_House4/scripts.inc"

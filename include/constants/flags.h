@@ -1286,10 +1286,10 @@
 #define FLAG_HIDE_RATDUARDO_FULLMOON                                0x4D0 // Ratduardo Cutscene Fullmoon Island
 #define FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE                         0x4D1 // Cleared if player defeats Darkrai before reaching Fullmoon
 #define FLAG_HIDE_STAFF_EMPLOYEE_LILYCOVE                           0x4D2 // Cleared after call from CEO
-#define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
-#define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
-#define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
-#define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag
+#define FLAG_HIDE_ASAK_BALDESIA                                     0x4D3 // For first CS in Baldesia
+#define FLAG_HIDE_PANINI_BALDESIA                                   0x4D4 // For first CS in Baldesia
+#define FLAG_HIDE_BENNIS_BALDESIA                                   0x4D5 // For first CS in Baldesia
+#define FLAG_HISUIAN_ZORUA                                          0x4D6 // For first CS in Baldesia
 #define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
 #define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag

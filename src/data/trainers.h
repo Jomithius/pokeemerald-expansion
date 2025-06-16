@@ -10760,7 +10760,7 @@ F_TRAINER_FEMALE |
 #line 4298
         .trainerName = _("BLAKE"),
 #line 4299
-        .trainerClass = TRAINER_CLASS_NERD,
+        .trainerClass = TRAINER_CLASS_KNIGHT,
 #line 4300
         .trainerPic = TRAINER_PIC_NERD,
         .encounterMusic_gender =
@@ -15219,7 +15219,7 @@ F_TRAINER_FEMALE |
 #line 6108
         .trainerName = _("BALDASARIO"),
 #line 6109
-        .trainerClass = TRAINER_CLASS_NERD,
+        .trainerClass = TRAINER_CLASS_KNIGHT,
 #line 6110
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
@@ -15252,7 +15252,7 @@ F_TRAINER_FEMALE |
 #line 6120
         .trainerName = _("BLAKE"),
 #line 6121
-        .trainerClass = TRAINER_CLASS_NERD,
+        .trainerClass = TRAINER_CLASS_KNIGHT,
 #line 6122
         .trainerPic = TRAINER_PIC_NERD,
         .encounterMusic_gender =
@@ -26626,7 +26626,7 @@ F_TRAINER_FEMALE |
 #line 10583
         .trainerName = _("NICHOLAS"),
 #line 10584
-        .trainerClass = TRAINER_CLASS_NERD,
+        .trainerClass = TRAINER_CLASS_KNIGHT,
 #line 10585
         .trainerPic = TRAINER_PIC_NERD,
         .encounterMusic_gender =
@@ -30267,7 +30267,7 @@ F_TRAINER_FEMALE |
 #line 11973
         .trainerName = _("BALDASARIO"),
 #line 11974
-        .trainerClass = TRAINER_CLASS_NERD,
+        .trainerClass = TRAINER_CLASS_KNIGHT,
 #line 11975
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
@@ -30399,7 +30399,7 @@ F_TRAINER_FEMALE |
 #line 12018
         .trainerName = _("NICHOLAS"),
 #line 12019
-        .trainerClass = TRAINER_CLASS_NERD,
+        .trainerClass = TRAINER_CLASS_KNIGHT,
 #line 12020
         .trainerPic = TRAINER_PIC_NERD,
         .encounterMusic_gender =
@@ -46744,9 +46744,9 @@ F_TRAINER_FEMALE |
 #line 18570
         .trainerName = _("ASAK"),
 #line 18571
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
+        .trainerClass = TRAINER_CLASS_NINJA,
 #line 18572
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_NINJA,
         .encounterMusic_gender =
 #line 18574
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -46837,7 +46837,7 @@ F_TRAINER_FEMALE |
 #line 18606
         .trainerName = _("PANINI"),
 #line 18607
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
+        .trainerClass = TRAINER_CLASS_NINJA,
 #line 18608
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =

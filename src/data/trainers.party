@@ -4296,7 +4296,7 @@ Level: 38
 
 === TRAINER_BLAKE ===
 Name: BLAKE
-Class: Nerd
+Class: Knight
 Pic: Nerd
 Gender: Male
 Music: Suspicious
@@ -6106,7 +6106,7 @@ IVs: 0 Atk
 
 === TRAINER_NATE_SHOAL_CAVE ===
 Name: BALDASARIO
-Class: Nerd
+Class: Knight
 Pic: Collector
 Gender: Male
 Music: Suspicious
@@ -6118,7 +6118,7 @@ Level: 38
 
 === TRAINER_BLAKE_SHOAL_CAVE ===
 Name: BLAKE
-Class: Nerd
+Class: Knight
 Pic: Nerd
 Gender: Male
 Music: Suspicious
@@ -10581,7 +10581,7 @@ Level: 48
 
 === TRAINER_NICHOLAS_SHOAL_CAVE ===
 Name: NICHOLAS
-Class: Nerd
+Class: Knight
 Pic: Nerd
 Gender: Male
 Music: Intense
@@ -11971,7 +11971,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NATE ===
 Name: BALDASARIO
-Class: Nerd
+Class: Knight
 Pic: Collector
 Gender: Male
 Music: Suspicious
@@ -12016,7 +12016,7 @@ Level: 38
 
 === TRAINER_NICHOLAS ===
 Name: NICHOLAS
-Class: Nerd
+Class: Knight
 Pic: Nerd
 Gender: Male
 Music: Intense
@@ -18568,8 +18568,8 @@ Jolly Nature
 
 === TRAINER_ASAK ===
 Name: ASAK
-Class: Black Belt
-Pic: Black Belt
+Class: Ninja
+Pic: Ninja
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -18604,7 +18604,7 @@ Relaxed Nature
 
 === TRAINER_PANINI ===
 Name: PANINI
-Class: Ninja Boy
+Class: Ninja
 Pic: Ninja Boy
 Gender: Male
 Music: Intense

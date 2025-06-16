@@ -5164,7 +5164,7 @@
     {
       "id": "LAYOUT_ROUTE138",
       "name": "Route138_Layout",
-      "width": 60,
+      "width": 44,
       "height": 52,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_DojoExterior",
@@ -5174,12 +5174,72 @@
     {
       "id": "LAYOUT_ROUTE138_2",
       "name": "Route138_2_Layout",
-      "width": 61,
+      "width": 77,
       "height": 35,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_DojoExterior",
       "border_filepath": "data/layouts/Route138_2/border.bin",
       "blockdata_filepath": "data/layouts/Route138_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BALDESIA",
+      "name": "Baldesia_Layout",
+      "width": 50,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DojoExterior",
+      "border_filepath": "data/layouts/Baldesia/border.bin",
+      "blockdata_filepath": "data/layouts/Baldesia/map.bin"
+    },
+    {
+      "id": "LAYOUT_BALDESIA_MAIN_HOUSE",
+      "name": "Baldesia_MainHouse_Layout",
+      "width": 27,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DojoInterior",
+      "border_filepath": "data/layouts/Baldesia_MainHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Baldesia_MainHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_BALDESIA_HOUSE1",
+      "name": "Baldesia_House1_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DojoInterior",
+      "border_filepath": "data/layouts/Baldesia_House1/border.bin",
+      "blockdata_filepath": "data/layouts/Baldesia_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_BALDESIA_HOUSE2",
+      "name": "Baldesia_House2_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DojoInterior",
+      "border_filepath": "data/layouts/Baldesia_House2/border.bin",
+      "blockdata_filepath": "data/layouts/Baldesia_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BALDESIA_HOUSE3",
+      "name": "Baldesia_House3_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DojoInterior",
+      "border_filepath": "data/layouts/Baldesia_House3/border.bin",
+      "blockdata_filepath": "data/layouts/Baldesia_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_BALDESIA_HOUSE4",
+      "name": "Baldesia_House4_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DojoInterior",
+      "border_filepath": "data/layouts/Baldesia_House4/border.bin",
+      "blockdata_filepath": "data/layouts/Baldesia_House4/map.bin"
     }
   ]
 }
