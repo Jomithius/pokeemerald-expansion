@@ -12480,7 +12480,41 @@
         },
         {
           "map": "MAP_BALDESIA",
-          "base_label": "gBaldesia0",
+          "base_label": "gBaldesia0"
+        },
+        {
+          "map": "MAP_ROUTE139",
+          "base_label": "gRoute1390",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 65,
+                "max_level": 68,
+                "species": "SPECIES_VELUZA"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_TATSUGIRI"
+              },
+              {
+                "min_level": 68,
+                "max_level": 70,
+                "species": "SPECIES_DONDOZO"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_BASCULEGION"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_BASCULEGION"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 30,
             "mons": [

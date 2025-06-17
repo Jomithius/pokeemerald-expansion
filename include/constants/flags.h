@@ -1290,11 +1290,11 @@
 #define FLAG_HIDE_PANINI_BALDESIA                                   0x4D4 // For first CS in Baldesia
 #define FLAG_HIDE_BENNIS_BALDESIA                                   0x4D5 // For first CS in Baldesia
 #define FLAG_HISUIAN_ZORUA                                          0x4D6 // For first CS in Baldesia
-#define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
-#define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
-#define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
-#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
-#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
+#define FLAG_PECHARUNT_EASTERN_RUINS                                0x4D7 // Static Encounter
+#define FLAG_OKIDOGI_EASTERN_RUINS                                  0x4D8 // Static Encounter
+#define FLAG_MUNKIDORI_EASTERN_RUINS                                0x4D9 // Static Encounter
+#define FLAG_FEZANDIPITI_EASTERN_RUINS                              0x4DA // Static Encounter
+#define FLAG_HIDE_RED_AZURE_MOUNTAIN                                0x4DB // After Red Battle at peak
 #define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
 #define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
 #define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag

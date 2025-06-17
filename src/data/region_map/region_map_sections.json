@@ -1823,6 +1823,38 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_EASTERN_RUINS",
+      "name": "EASTERN RUINS",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_BALDESIAN_ALTAR",
+      "name": "JIRACHI'S ALTAR",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_AZURE_MOUNTAIN",
+      "name": "AZURE MOUNTAIN",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_SNOWDRIFT_CITY",
+      "name": "SNOWDRIFT CITY",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

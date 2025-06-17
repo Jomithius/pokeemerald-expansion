@@ -46744,9 +46744,9 @@ F_TRAINER_FEMALE |
 #line 18570
         .trainerName = _("ASAK"),
 #line 18571
-        .trainerClass = TRAINER_CLASS_NINJA,
+        .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 18572
-        .trainerPic = TRAINER_PIC_NINJA,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
 #line 18574
             TRAINER_ENCOUNTER_MUSIC_INTENSE,

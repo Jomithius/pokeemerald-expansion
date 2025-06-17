@@ -1322,3 +1322,57 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Baldesia_House4/scripts.inc"
 
 	.include "data/maps/Route139/scripts.inc"
+
+	.include "data/maps/Route139_Tunnel/scripts.inc"
+
+	.include "data/maps/EasternRuins/scripts.inc"
+
+	.include "data/maps/EasternRuins_PecharuntLair/scripts.inc"
+
+	.include "data/maps/AltarOfBaldesia/scripts.inc"
+
+	.include "data/maps/AzureMountain_B1F/scripts.inc"
+
+	.include "data/maps/AzureMountain_B2F/scripts.inc"
+
+	.include "data/maps/AzureMountain_B3F/scripts.inc"
+
+	.include "data/maps/AzureMountain_Volcano/scripts.inc"
+
+	.include "data/maps/AzureMountain_B4F/scripts.inc"
+
+	.include "data/maps/AzureMountain_Up1/scripts.inc"
+
+	.include "data/maps/AzureMountain_Up2/scripts.inc"
+
+	.include "data/maps/AzureMountain_Up3/scripts.inc"
+
+	.include "data/maps/AzureMountain_Up4/scripts.inc"
+
+	.include "data/maps/AzureMountain_Up5/scripts.inc"
+
+	.include "data/maps/AzureMountain_Up6/scripts.inc"
+
+	.include "data/maps/AzureMountain_Up7/scripts.inc"
+
+	.include "data/maps/AzureMountain_Fork/scripts.inc"
+
+	.include "data/maps/AzureMountain_Peak/scripts.inc"
+
+	.include "data/maps/SnowdriftCity/scripts.inc"
+
+	.include "data/maps/SnowdriftCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/SnowdriftCity_Mart/scripts.inc"
+
+	.include "data/maps/SnowdriftCity_House1/scripts.inc"
+
+	.include "data/maps/SnowdriftCity_House2/scripts.inc"
+
+	.include "data/maps/SnowdriftCity_House3/scripts.inc"
+
+	.include "data/maps/NewMap3/scripts.inc"
+
+	.include "data/maps/SnowdriftCity_House5/scripts.inc"
+
+	.include "data/maps/SnowdriftCity_House6/scripts.inc"

@@ -4767,7 +4767,7 @@
       "width": 40,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route136/border.bin",
       "blockdata_filepath": "data/layouts/Route136/map.bin"
     },
@@ -5250,6 +5250,276 @@
       "secondary_tileset": "gTileset_DojoExterior",
       "border_filepath": "data/layouts/Route139/border.bin",
       "blockdata_filepath": "data/layouts/Route139/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE139_TUNNEL",
+      "name": "Route139_Tunnel_Layout",
+      "width": 15,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route139_Tunnel/border.bin",
+      "blockdata_filepath": "data/layouts/Route139_Tunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_EASTERN_RUINS",
+      "name": "EasternRuins_Layout",
+      "width": 25,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AutumnRuins",
+      "border_filepath": "data/layouts/EasternRuins/border.bin",
+      "blockdata_filepath": "data/layouts/EasternRuins/map.bin"
+    },
+    {
+      "id": "LAYOUT_EASTERN_RUINS_PECHARUNT_LAIR",
+      "name": "EasternRuins_PecharuntLair_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AutumnRuins",
+      "border_filepath": "data/layouts/EasternRuins_PecharuntLair/border.bin",
+      "blockdata_filepath": "data/layouts/EasternRuins_PecharuntLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALTAR_OF_BALDESIA",
+      "name": "AltarOfBaldesia_Layout",
+      "width": 36,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LugiaAltar",
+      "border_filepath": "data/layouts/AltarOfBaldesia/border.bin",
+      "blockdata_filepath": "data/layouts/AltarOfBaldesia/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_B1F",
+      "name": "AzureMountain_B1F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_B2F",
+      "name": "AzureMountain_B2F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_B3F",
+      "name": "AzureMountain_B3F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_B3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_VOLCANO",
+      "name": "AzureMountain_Volcano_Layout",
+      "width": 26,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Volcano/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Volcano/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_B4F",
+      "name": "AzureMountain_B4F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_B4F/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_B4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_UP1",
+      "name": "AzureMountain_Up1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Up1/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Up1/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_UP2",
+      "name": "AzureMountain_Up2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Up2/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Up2/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_UP3",
+      "name": "AzureMountain_Up3_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Up3/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Up3/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_UP4",
+      "name": "AzureMountain_Up4_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Up4/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Up4/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_UP5",
+      "name": "AzureMountain_Up5_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Up5/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Up5/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_UP6",
+      "name": "AzureMountain_Up6_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Up6/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Up6/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_UP7",
+      "name": "AzureMountain_Up7_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Up7/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Up7/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_FORK",
+      "name": "AzureMountain_Fork_Layout",
+      "width": 27,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_Fork/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Fork/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_PEAK",
+      "name": "AzureMountain_Peak_Layout",
+      "width": 25,
+      "height": 28,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/AzureMountain_Peak/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_Peak/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWDRIFT_CITY",
+      "name": "SnowdriftCity_Layout",
+      "width": 40,
+      "height": 35,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/SnowdriftCity/border.bin",
+      "blockdata_filepath": "data/layouts/SnowdriftCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWDRIFT_CITY_POKEMON_CENTER",
+      "name": "SnowdriftCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SnowdriftCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SnowdriftCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWDRIFT_CITY_MART",
+      "name": "SnowdriftCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/SnowdriftCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/SnowdriftCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWDRIFT_CITY_HOUSE1",
+      "name": "SnowdriftCity_House1_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SnowdriftCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/SnowdriftCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWDRIFT_CITY_HOUSE2",
+      "name": "SnowdriftCity_House2_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SnowdriftCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/SnowdriftCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWDRIFT_CITY_HOUSE3",
+      "name": "SnowdriftCity_House3_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SnowdriftCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/SnowdriftCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP3",
+      "name": "NewMap3_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewMap3/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWDRIFT_CITY_HOUSE5",
+      "name": "SnowdriftCity_House5_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SnowdriftCity_House5/border.bin",
+      "blockdata_filepath": "data/layouts/SnowdriftCity_House5/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWDRIFT_CITY_HOUSE6",
+      "name": "SnowdriftCity_House6_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SnowdriftCity_House6/border.bin",
+      "blockdata_filepath": "data/layouts/SnowdriftCity_House6/map.bin"
     }
   ]
 }

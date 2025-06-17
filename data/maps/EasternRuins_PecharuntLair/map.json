@@ -1,0 +1,85 @@
+{
+  "id": "MAP_EASTERN_RUINS_PECHARUNT_LAIR",
+  "name": "EasternRuins_PecharuntLair",
+  "layout": "LAYOUT_EASTERN_RUINS_PECHARUNT_LAIR",
+  "music": "MUS_DUSK_FOREST",
+  "region_map_section": "MAPSEC_EASTERN_RUINS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PECHARUNT)",
+      "x": 6,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_PECHARUNT_EASTERN_RUINS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FEZANDIPITI)",
+      "x": 4,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FEZANDIPITI_EASTERN_RUINS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MUNKIDORI)",
+      "x": 6,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_MUNKIDORI_EASTERN_RUINS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(OKIDOGI)",
+      "x": 8,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_OKIDOGI_EASTERN_RUINS"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_EASTERN_RUINS",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -229,6 +229,10 @@
 #define MAPSEC_ROUTE_138                    0xE1
 #define MAPSEC_BALDESIA                     0xE2
 #define MAPSEC_ROUTE_139                    0xE3
+#define MAPSEC_EASTERN_RUINS                0xE4
+#define MAPSEC_BALDESIAN_ALTAR              0xE5
+#define MAPSEC_AZURE_MOUNTAIN               0xE6
+#define MAPSEC_SNOWDRIFT_CITY               0xE7
 #define MAPSEC_NONE                         0xF0
 
 #define METLOC_SPECIAL_EGG                  0xFD
