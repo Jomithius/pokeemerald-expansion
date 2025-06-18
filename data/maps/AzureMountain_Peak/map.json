@@ -2,7 +2,7 @@
   "id": "MAP_AZURE_MOUNTAIN_PEAK",
   "name": "AzureMountain_Peak",
   "layout": "LAYOUT_AZURE_MOUNTAIN_PEAK",
-  "music": "MUS_B_PYRAMID_TOP",
+  "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_AZURE_MOUNTAIN",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

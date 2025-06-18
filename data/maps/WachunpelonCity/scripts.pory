@@ -1,1 +1,188 @@
 mapscripts WachunpelonCity_MapScripts {}
+
+script WachunpelonCity_EventScript_PolicemanTrigger{
+    lockall
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    delay(16)
+    applymovement(1, Common_Movement_WalkInPlaceLeft)
+    waitmovement(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    if(flag(FLAG_HIDE_BIKERS_ROUTE_123) == TRUE){
+        msgbox(WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO)
+    }
+    else{
+        msgbox(WachunpelonCity_Text_Policeman1, MSGBOX_YESNO)
+    }
+    while(var(VAR_RESULT) == NO){
+        msgbox(WachunpelonCity_Text_PolicemanNo, MSGBOX_YESNO)
+    }
+    msgbox(WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_WalkBack)
+    waitmovement(0)
+    applymovement(1, Common_Movement_WalkLeft)
+    waitmovement(0)
+    opendoor(46, 14)
+    waitdooranim
+    applymovement(1, Common_Movement_WalkUp)
+    waitmovement(1)
+    removeobject(1)
+    closedoor(46, 14)
+    waitdooranim
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
+    setvar(VAR_SPEEDWAGON_STATE, 9)
+    warpdoor(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
+    waitstate
+    releaseall
+    end
+}
+
+script WachunpelonCity_EventScript_Policeman{
+    lockall
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
+    if(var(VAR_TEMP_1) == DIR_NORTH){
+        goto(WachunpelonCity_EventScript_PolicemanNorth)
+    }
+    else{
+        goto(WachunpelonCity_EventScript_PolicemanEast)
+    }
+    end
+}
+
+script WachunpelonCity_EventScript_PolicemanNorth{
+    lockall
+    if(flag(FLAG_HIDE_BIKERS_ROUTE_123) == TRUE){
+        msgbox(WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO)
+    }
+    else{
+        msgbox(WachunpelonCity_Text_Policeman1, MSGBOX_YESNO)
+    }
+    while(var(VAR_RESULT) == NO){
+        msgbox(WachunpelonCity_Text_PolicemanNo, MSGBOX_YESNO)
+    }
+    msgbox(WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_WalkLeft)
+    waitmovement(0)
+    opendoor(46, 14)
+    waitdooranim
+    applymovement(1, Common_Movement_WalkUp)
+    waitmovement(1)
+    removeobject(1)
+    closedoor(46, 14)
+    waitdooranim
+    applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerNorth)
+    waitmovement(0)
+    setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
+    setvar(VAR_SPEEDWAGON_STATE, 9)
+    warpdoor(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
+    waitstate
+    releaseall
+    end
+}
+
+script WachunpelonCity_EventScript_PolicemanEast{
+    lockall
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    delay(16)
+    applymovement(1, Common_Movement_WalkInPlaceRight)
+    waitmovement(1)
+    if(flag(FLAG_HIDE_BIKERS_ROUTE_123) == TRUE){
+        msgbox(WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO)
+    }
+    else{
+        msgbox(WachunpelonCity_Text_Policeman1, MSGBOX_YESNO)
+    }
+    while(var(VAR_RESULT) == NO){
+        msgbox(WachunpelonCity_Text_PolicemanNo, MSGBOX_YESNO)
+    }
+    msgbox(WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_WalkLeft)
+    waitmovement(0)
+    opendoor(46, 14)
+    waitdooranim
+    applymovement(1, Common_Movement_WalkUp)
+    waitmovement(1)
+    removeobject(1)
+    closedoor(46, 14)
+    waitdooranim
+    applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerEast)
+    waitmovement(0)
+    setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
+    setvar(VAR_SPEEDWAGON_STATE, 9)
+    warpdoor(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
+    waitstate
+    releaseall
+    end
+}
+
+text WachunpelonCity_Text_Policeman1{
+    "It's you! Thanks again for your help on\n
+    ROUTE 110.\p
+    Most of the bikers have been arrested\n
+    already.\l
+    Only the boss along with a couple of\l
+    members are left now, and I've tracked\l
+    them to their hideout here.\p
+    Backup's actually coming this time, but\n
+    I want to get the jump on them before\l
+    they have a chance to escape…\p
+    So, what do you say?\p
+    Having a strong TRAINER like you to\n
+    cover me would be reassuring.\p
+    Can you help me out?"
+}
+
+text WachunpelonCity_Text_PolicemanBikersRoute123{
+    "It's you! Thanks again for your help on\n
+    ROUTE 110.\p
+    I heard you drove those thugs away from\n
+    ROUTE 123 as well.\p
+    Most of them have been arrested\n
+    already.\l
+    Only the boss along with a couple of\l
+    members are left now, and I've tracked\l
+    them to their hideout here.\p
+    Backup's actually coming this time, but\n
+    I want to get the jump on them before\l
+    they have a chance to escape…\p
+    So, what do you say?\p
+    Having a strong TRAINER like you to\n
+    cover me would be reassuring.\p
+    Can you help me out?"
+}
+
+text WachunpelonCity_Text_PolicemanNo{
+    "Come on. You've already helped me\n
+    on this case before.\l
+    This will be the last time."
+}
+
+text WachunpelonCity_Text_Policeman2{
+    "Great! This time I have clearance to use\n
+    force as necessary.\p
+    It won't be a repeat of last time.\n
+    I'll lead."
+}
+
+movement WachunpelonCity_Movement_WalkBack{
+    walk_down
+    walk_in_place_up
+}
+
+movement WachunpelonCity_Movement_PlayerNorth{
+    walk_left
+    walk_up
+}
+
+movement WachunpelonCity_Movement_PlayerEast{
+    walk_left * 2
+}

@@ -28,6 +28,7 @@ script RustboroCity_FireStation_Maniac2{
     applymovement(2, FireStationFaceUp)
     waitmovement(2)
     waitmessage
+    setvar(VAR_ULTRA_SPACE_STATE, 1)
     release
     end
 }

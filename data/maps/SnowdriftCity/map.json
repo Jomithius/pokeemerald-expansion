@@ -2,7 +2,7 @@
   "id": "MAP_SNOWDRIFT_CITY",
   "name": "SnowdriftCity",
   "layout": "LAYOUT_SNOWDRIFT_CITY",
-  "music": "MUS_SNOWFALL",
+  "music": "MUS_RG_SEVII_45",
   "region_map_section": "MAPSEC_SNOWDRIFT_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
@@ -201,7 +201,7 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_SNOWDRIFT_CITY_POKEMON_CENTER",
-      "dest_warp_id": "1"
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

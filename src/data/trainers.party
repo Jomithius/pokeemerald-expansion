@@ -10695,26 +10695,76 @@ Level: 37
 Sawk
 Level: 36
 
-=== TRAINER_BRENDAN_ROUTE_110_TORCHIC === /* FREE */
-Name: BRENDAN
-Class: Rival
-Pic: Brendan
+=== TRAINER_SPEEDWAGON_3 ===
+Name: SPEEDWAGON
+Class: Biker
+Pic: Speedwagon
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
+Mugshot: Yellow
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Perrserker (M) @ Rocky Helmet  
+Ability: Tough Claws  
+Level: 75 
+EVs: 252 HP / 96 Atk / 148 Def / 12 SpD  
+Impish Nature  
+- Stealth Rock  
+- Iron Head  
+- Play Rough  
+- Metal Burst  
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Obstagoon (M) @ Flame Orb  
+Ability: Guts  
+Level: 75   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Body Slam  
+- Knock Off  
+- Parting Shot  
+- Switcheroo  
 
-Marshtomp
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Slowbro-Galar (M) @ Quick Claw  
+Ability: Quick Draw  
+Level: 75   
+EVs: 252 HP / 252 Atk / 4 SpA  
+Brave Nature  
+- Razor Shell  
+- Shell Side Arm  
+- Zen Headbutt  
+- Brick Break  
+
+Darmanitan-Galar (M) @ Ability Shield  
+Ability: Gorilla Tactics  
+Level: 70   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Icicle Crash  
+- Earthquake  
+- Superpower  
+- Zen Headbutt  
+
+Mr. Rime (M) @ Berserk Gene  
+Ability: Tangled Feet  
+Level: 75   
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Zen Headbutt  
+- Sucker Punch  
+- Fake Out  
+- Icicle Spear  
+
+Weezing-Galar (M) @ Leftovers  
+Ability: Neutralizing Gas  
+Level: 75  
+EVs: 252 HP / 252 SpD / 4 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Toxic Spikes  
+- Toxic  
+- Strange Steam  
+- Sludge Wave  
 
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC === /* FREE */
 Name: BRENDAN

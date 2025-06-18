@@ -1,1 +1,300 @@
-mapscripts WachunpelonCity_Sewer_MapScripts {}
+mapscripts WachunpelonCity_Sewer_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+    VAR_SPEEDWAGON_STATE, 9: WachunpelonCity_Sewer_EventScript_Biker1
+    ]
+}
+
+script WachunpelonCity_Sewer_EventScript_Biker1{
+    lockall
+    applymovement(1, WachunpelonCity_Sewer_Movement_Policeman1)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Sewer_Movement_Player1)
+    waitmovement(1)
+    msgbox(WachunpelonCity_Sewer_Text_Policeman1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(1, WachunpelonCity_Sewer_Movement_Policeman2)
+    waitmovement(1)
+    waitse
+    playbgm(MUS_NONE, FALSE)
+    playse(SE_THUNDERSTORM)
+    applymovement(2, WachunpelonCity_Sewer_Movement_Biker1)
+    waitmovement(2)
+    playse(SE_THUNDERSTORM_STOP)
+    waitse
+    playse(SE_PIN)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(2)
+    waitse
+    playse(SE_THUNDERSTORM)
+    applymovement(2, WachunpelonCity_Sewer_Movement_Biker2)
+    waitmovement(2)
+    playse(SE_THUNDERSTORM_STOP)
+    waitse
+    msgbox(WachunpelonCity_Sewer_Text_Policeman2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, WachunpelonCity_Sewer_Movement_Policeman3)
+    delay(24)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(1)
+    removeobject(1)
+    removeobject(2)
+    fadedefaultbgm
+    setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON_SEWERS)
+    setvar(VAR_SPEEDWAGON_STATE, 10)
+    releaseall
+    end
+}
+
+script WachunpelonCity_Sewer_EventScript_Biker2{
+    lock
+    msgbox("Over here!" MSGBOX_AUTOCLOSE)
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Sewer_Movement_Player2)
+    waitmovement(0)
+    applymovement(12, Common_Movement_WalkInPlaceDown)
+    waitmovement(12)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("I can handle these two!\n
+        Take care of the boss for me!", MSGBOX_AUTOCLOSE)
+    applymovement(12, Common_Movement_WalkInPlaceRight)
+    waitmovement(12)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    setvar(VAR_SPEEDWAGON_STATE, 11)
+    release
+    end
+}
+
+script WachunpelonCity_Sewer_EventScript_Battle{
+    lock
+    msgbox("He's focused on the battle.", MSGBOX_SIGN)
+    end
+}
+
+script WachunpelonCity_Sewer_EventScript_Speedwagon{
+    lock
+    playbgm(MUS_RG_SILPH, FALSE)
+    msgbox(WachunpelonCity_Sewer_Text_Speedwagon1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_SPEEDWAGON_3, WachunpelonCity_Sewer_SpeedwagonDefeat)
+    lock
+    applymovement(5, Common_Movement_EnterPokeball)
+    waitmovement(5)
+    removeobject(5)
+    applymovement(6, Common_Movement_EnterPokeball)
+    waitmovement(6)
+    removeobject(6)
+    applymovement(7, Common_Movement_EnterPokeball)
+    waitmovement(7)
+    removeobject(7)
+    applymovement(8, Common_Movement_EnterPokeball)
+    waitmovement(8)
+    removeobject(8)
+    playse(SE_EXIT)
+    delay(60)
+    clearflag(FLAG_HIDE_POLICEMAN_WACHUNPELON_SEWERS)
+    addobject(14)
+    addobject(15)
+    addobject(16)
+    applymovement(14, WachunpelonCity_Sewer_Movement_Police14)
+    waitmovement(14)
+    applymovement(13, Common_Movement_WalkInPlaceUp)
+    delay(30)
+    applymovement(3, Common_Movement_WalkInPlaceUp)
+    delay(16)
+    applymovement(15, WachunpelonCity_Sewer_Movement_Police15)
+    waitmovement(15)
+    applymovement(3, Common_Movement_WalkInPlaceDown)
+    waitmovement(3)
+    applymovement(16, WachunpelonCity_Sewer_Movement_Police16)
+    waitmovement(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    applymovement(12, Common_Movement_WalkInPlaceDown)
+    waitmovement(12)
+    msgbox("Good work.\n
+        We'll take it from here.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(16, WachunpelonCity_Sewer_Movement_Police16_2)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Sewer_Movement_PlayerStepBack)
+    delay(10)
+    applymovement(12, Common_Movement_WalkInPlaceRight)
+    waitmovement(16)
+    delay(10)
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_EXIT)
+    removeobject(3)
+    removeobject(4)
+    removeobject(13)
+    removeobject(14)
+    removeobject(15)
+    removeobject(16)
+    setflag(FLAG_HIDE_POKEMON_WACHUNPELON_SEWERS)
+    setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON_SEWERS)
+    setflag(FLAG_HIDE_SPEEDWAGON_WACHUNPELON_SEWERS)
+    fadescreenspeed(FADE_FROM_BLACK, 2)
+    applymovement(12, WachunpelonCity_Sewer_Movement_Police12)
+    waitmovement(12)
+    msgbox(WachunpelonCity_Sewer_Text_Policeman3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    giveitem(ITEM_METAL_ALLOY)
+    waitmessage
+    msgbox(WachunpelonCity_Sewer_Text_Policeman4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(12, WachunpelonCity_Sewer_Movement_Police12Leave)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(12)
+    removeobject(12)
+    setflag(FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS)
+    release
+    end
+}
+
+script WachunpelonCity_Sewer_EventScript_Arcanine{
+    lock
+    playmoncry(SPECIES_ARCANINE, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script WachunpelonCity_Sewer_EventScript_Mabosstiff{
+    lock
+    playmoncry(SPECIES_MABOSSTIFF, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script WachunpelonCity_Sewer_EventScript_Sneasel{
+    lock
+    playmoncry(SPECIES_SNEASEL, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script WachunpelonCity_Sewer_EventScript_Kleavor{
+    lock
+    playmoncry(SPECIES_KLEAVOR, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+text WachunpelonCity_Sewer_Text_Policeman1{
+    "I don't see anybody…\n
+    But they have to be down here.\l
+    Let's go further-"
+}
+
+text WachunpelonCity_Sewer_Text_Policeman2{
+    "…How did they even get their bikes\n
+    down here?\p
+    I'll go on ahead!"
+}
+
+text WachunpelonCity_Sewer_Text_Speedwagon1{
+    "YOU AGAIN!\p
+    They're all locked up now because of\n
+    YOU!\p
+    This time I'll make sure you can't\n
+    chase us anymore!"
+}
+
+text WachunpelonCity_Sewer_SpeedwagonDefeat{
+    "I just wanted to speed my wagon…"
+}
+
+text WachunpelonCity_Sewer_Text_Policeman3{
+    "Thanks again for helping us clear\n
+    up this case.\p
+    Here, take this. I think the boss was\n
+    going to use it to upgrade his bike."
+}
+
+text WachunpelonCity_Sewer_Text_Policeman4{
+    "Well, I should head back to MAUVILLE\n
+    CITY now. Take care."
+}
+
+movement WachunpelonCity_Sewer_Movement_Policeman1{
+    walk_left * 3
+    walk_down
+    delay_16
+    walk_in_place_left
+    delay_16
+    walk_up
+    delay_16
+    walk_in_place_right
+}
+
+movement WachunpelonCity_Sewer_Movement_Player1{
+    walk_down
+    walk_left * 3
+}
+
+movement WachunpelonCity_Sewer_Movement_Biker1{
+    walk_right * 4
+}
+
+movement WachunpelonCity_Sewer_Movement_Policeman2{
+    emote_exclamation_mark
+    walk_in_place_fast_left
+}
+
+
+movement WachunpelonCity_Sewer_Movement_Biker2{
+    walk_fast_left
+    walk_fast_down * 7
+}
+
+movement WachunpelonCity_Sewer_Movement_Policeman3{
+    walk_fast_left * 4
+    walk_fast_down * 8
+}
+
+movement WachunpelonCity_Sewer_Movement_Police12{
+    walk_right * 5
+    walk_down * 2
+}
+
+movement WachunpelonCity_Sewer_Movement_Police12Leave{
+    walk_left * 5
+    walk_up * 2
+    walk_left * 4
+}
+
+movement WachunpelonCity_Sewer_Movement_Player2{
+    walk_fast_down * 4
+    walk_fast_right * 8
+}
+
+movement WachunpelonCity_Sewer_Movement_Police14{
+    walk_fast_right * 10
+    walk_in_place_fast_down
+}
+
+movement WachunpelonCity_Sewer_Movement_Police15{
+    walk_fast_right * 10
+    walk_in_place_fast_up
+}
+
+movement WachunpelonCity_Sewer_Movement_Police16{
+    walk_right * 7
+}
+
+
+movement WachunpelonCity_Sewer_Movement_Police16_2{
+    walk_down
+    walk_right * 6
+}
+
+movement WachunpelonCity_Sewer_Movement_PlayerStepBack{
+    walk_down
+    walk_in_place_up
+}

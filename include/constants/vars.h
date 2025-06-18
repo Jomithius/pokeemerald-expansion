@@ -265,12 +265,12 @@
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 #define VAR_MISA_STATE                                   0x40F7 // 0-2 Misa James Rustboro, 3-5 Misa Route 117, 4-5 James Route 112, 6-7 James Mt Pyre, 7-8 James Lilycove CS, 8-9 James Evergrande
-#define VAR_SPEEDWAGON_STATE                             0x40F8 // 0-7 Mauville/Route 110,
+#define VAR_SPEEDWAGON_STATE                             0x40F8 // 0-8 Mauville/Route 110, 8-9 Wachunpelon City, 9-10 Wachunpelon Sewer 1, 10-11 Wachunpelon Sewer 2
 #define VAR_LINA_TALKED_TO                               0x40F9 // If Lina will recognize you at E4, 0-1 Lavaridge, 1-2 Lilycove, 3 Elite Four
 #define VAR_NEWMOON_ISLAND_STATE                         0x40FA // For Darkrai Event, 0-1 Bed in House
 #define VAR_FULLMOON_ISLAND_STATE                        0x40FB // For Cresselia/Ratduardo cutscene, 0-1
 #define VAR_CEO_STATE                                    0x40FC // For postgame events before rematches, 0 Lilycove Highrise,
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
+#define VAR_ULTRA_SPACE_STATE                            0x40FD // 0-1
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 

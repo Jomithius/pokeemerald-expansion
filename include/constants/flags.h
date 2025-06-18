@@ -1295,11 +1295,11 @@
 #define FLAG_MUNKIDORI_EASTERN_RUINS                                0x4D9 // Static Encounter
 #define FLAG_FEZANDIPITI_EASTERN_RUINS                              0x4DA // Static Encounter
 #define FLAG_HIDE_RED_AZURE_MOUNTAIN                                0x4DB // After Red Battle at peak
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
-#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
-#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
-#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
-#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
+#define FLAG_HIDE_POLICEMAN_WACHUNPELON                             0x4DC // For Speedwagon Event Wachunpelon
+#define FLAG_HIDE_SPEEDWAGON_WACHUNPELON_SEWERS                     0x4DD // For Speedwagon Event Wachunpelon
+#define FLAG_HIDE_POLICEMAN_WACHUNPELON_SEWERS                      0x4DE // For Speedwagon Event Wachunpelon
+#define FLAG_HIDE_POKEMON_WACHUNPELON_SEWERS                        0x4DF // For Speedwagon Event Wachunpelon
+#define FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS                     0x4E0 // For Speedwagon Event Wachunpelon
 #define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
 #define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
 #define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
