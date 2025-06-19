@@ -114,13 +114,13 @@ text MtPyre_Exterior_Text_Emo1{
     That's surprising.\p
     The dark energies in this place\n
     have caused my power to go even\l
-    further beyond...\p
+    further beyond…\p
     I don't think even you can\n
     withstand this strength!"
 }
 
 text MtPyre_Exterior_Text_Emo2{
-    "JAMES: Hm...\n
+    "JAMES: Hm…\n
     You've become stronger than I thought.\p
     As expected of my adversary.\n
     Here, you can have this."
@@ -135,7 +135,7 @@ text MtPyre_Exterior_Text_Emo3{
 }
 
 text MtPyre_Exterior_Text_RivalDefeat{
-    "I'm in my abyss..."
+    "I'm in my abyss…"
 }
 
 movement MtPyre_Exterior_Movement_Emo1{

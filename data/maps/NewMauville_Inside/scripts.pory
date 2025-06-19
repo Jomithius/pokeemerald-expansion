@@ -304,6 +304,6 @@ script TogedemaruFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(9)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The TOGEDEMARU disappeared...")
+    msgbox("The TOGEDEMARU disappeared…")
 	return
 }

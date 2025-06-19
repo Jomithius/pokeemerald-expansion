@@ -317,7 +317,7 @@ ShoalCave_LowTideInnerRoom_Text_BungletonIntro::
 
 ShoalCave_LowTideInnerRoom_Text_BungletonDefeat::
 # 176 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "B-Brother...?!$"
+	.string "B-Brother…?!$"
 
 ShoalCave_LowTideInnerRoom_Text_BungletonPostBattle::
 # 180 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
@@ -329,7 +329,7 @@ ShoalCave_LowTideInnerRoom_Text_DaquaviusIntro::
 
 ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat::
 # 190 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "Look like I need more training...$"
+	.string "Look like I need more training…$"
 
 ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle::
 # 194 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"

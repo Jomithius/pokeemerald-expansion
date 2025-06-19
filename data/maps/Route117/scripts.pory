@@ -324,7 +324,7 @@ text Route117_MisaHello{
     EVER GRANDE CITY.\p
     I just love the flowers here!\p
     Anyways, how's your journey going?\n
-    ...\p
+    … … … …\p
     Two badges already?!\n
     I'm so proud of you!\p
     I'd love to see how much you've grown!\n
@@ -338,7 +338,7 @@ text Route117_Text_MisaFlowers{
 }
 
 text Route117_MisaAnotherTime{
-    "Oh...\n
+    "Oh…\n
     Maybe another time, then!"}
 
 text Route117_MisaAboutTheBattle{
@@ -350,7 +350,7 @@ text Route117_MisaDefeat{
 }
 
 text Route117_MisaPostBattle{
-    "MISA: Wow! I can tell you and your\n
+    "Wow! I can tell you and your\n
     POKéMON really share a strong bond.\p
     I'm excited to see how much more\n
     you'll grow!\p"
@@ -408,6 +408,6 @@ script AraquanidFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(28)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The ARAQUANID disappeared...")
+    msgbox("The ARAQUANID disappeared…")
 	return
 }

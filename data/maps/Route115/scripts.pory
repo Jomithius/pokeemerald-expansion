@@ -164,7 +164,7 @@ script Route115_EventScript_Trigger_RivalEmo{
     fadescreen(FADE_TO_WHITE)
     fadescreen(FADE_FROM_WHITE)
     delay(10)
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_BIKE_HOP)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
@@ -180,7 +180,7 @@ script Route115_EventScript_Trigger_RivalEmo{
     applymovement(22, Route115FaceUp)
     waitmovement(22)
     delay(180)
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_BIKE_HOP)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
@@ -236,7 +236,7 @@ script Route115_EventScript_Trigger_RivalEmo{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
     waitmovement(0)
     delay(60)
-    msgbox("MISA: ...Oh! Um.. I mean... JOMITHIUS,\n
+    msgbox("MISA: …Oh! Um… I mean… JOMITHIUS,\n
     right?" MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(22, Route115FaceDown)
@@ -292,7 +292,7 @@ script Route115_EventScript_TriggerRight_RivalEmo{
     fadescreen(FADE_TO_WHITE)
     fadescreen(FADE_FROM_WHITE)
     delay(10)
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_BIKE_HOP)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
@@ -308,7 +308,7 @@ script Route115_EventScript_TriggerRight_RivalEmo{
     applymovement(22, Route115FaceUp)
     waitmovement(22)
     delay(180)
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_BIKE_HOP)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
@@ -364,7 +364,7 @@ script Route115_EventScript_TriggerRight_RivalEmo{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
     waitmovement(0)
     delay(60)
-    msgbox("MISA: ...Oh! Um.. I mean... JOMITHIUS,\n
+    msgbox("MISA: …Oh! Um… I mean… JOMITHIUS,\n
     right?" MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(22, Route115FaceDown)
@@ -420,7 +420,7 @@ script Route115_EventScript_TriggerLeft_RivalEmo{
     fadescreen(FADE_TO_WHITE)
     fadescreen(FADE_FROM_WHITE)
     delay(10)
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_BIKE_HOP)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
@@ -436,7 +436,7 @@ script Route115_EventScript_TriggerLeft_RivalEmo{
     applymovement(22, Route115FaceUp)
     waitmovement(22)
     delay(180)
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_BIKE_HOP)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Confused)
@@ -492,7 +492,7 @@ script Route115_EventScript_TriggerLeft_RivalEmo{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
     waitmovement(0)
     delay(60)
-    msgbox("MISA: ...Oh! Um.. I mean... JOMITHIUS,\n
+    msgbox("MISA: …Oh! Um… I mean… JOMITHIUS,\n
     right?" MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(22, Route115FaceDown)
@@ -535,22 +535,22 @@ script Route115_RivalBattle{
     return
 }
 
-text Route115Emo1{"Don't come any closer. Hold on.."}
+text Route115Emo1{"Don't come any closer. Hold on…"}
 
 text Route115Emo2{"Sorry. It's hard to control this power.\n
 Any closer and you could've been\l
-pulled into the void...\p
+pulled into the void…\p
 Anyways, who are you?\n
-...\p
+…\p
 {PLAYER}, huh?\n
 And my mother sent you?\l
-I see..\l 
-So that means you're also a trainer..."}
+I see…\l 
+So that means you're also a trainer…"}
 
 text Route115Emo3{""}
 
-text Route115Emo4{"... I am JOMITHIUS.\n
-...This must be the call of fate.\l
+text Route115Emo4{"… I am JOMITHIUS.\n
+…This must be the call of fate.\l
 We are.. destined to be rivals.\l
 You know what must be done."}
 
@@ -561,14 +561,14 @@ POKéMON to only use 10% of their\l
 power.\l
 Next time I, JOMITHIUS, will-"}
 
-text Route115Emo7{"JOMITHIUS: {PLAYER} is...\n
+text Route115Emo7{"JOMITHIUS: {PLAYER} is…\n
 a worthy opponent."}
 
 text Route115Misa1{"MISA: I'm glad you two are having fun!\n
 Oh! By the way, JAMES,\l
 dinner is almost ready."}
 
-text Route115Emo8{"JAMES?: ...\n
+text Route115Emo8{"JAMES?: …\n
 Yes, Mother.\l
 I'll be heading back soon."}
 
@@ -578,12 +578,12 @@ Hurry back soon, JAMES.\l
 {PLAYER}, you're more than welcome\l
 to stop by anytime!"}
 
-text Route115Emo9 {"Definitely JAMES: ...\p
+text Route115Emo9 {"Definitely JAMES: …\p
 I should head back then.\n
 {PLAYER}, next time I'll achieve victory.\l
 See ya."}
 
-text Jomithius_Outro{"I'm in my abyss..."}
+text Jomithius_Outro{"I'm in my abyss…"}
 
 movement Route115EmoMove1{
     walk_down * 2
@@ -664,7 +664,7 @@ movement Route115MoveRight{
 
 script Route115_EventScript_EmoRivalVar0{
     lock
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end

@@ -176,7 +176,7 @@ Lina_House_EventScript_Bookshelf_Text_1:
 
 Lina_House_EventScript_Bookshelf_Text_2:
 # 80 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	.string "... \p You put the book back.$"
+	.string "……… \p You put the book back.$"
 
 Lina_House_EventScript_TV_Text_0:
 # 89 "data/maps/SlateportCity_Lina_House/scripts.pory"
@@ -184,7 +184,7 @@ Lina_House_EventScript_TV_Text_0:
 
 Lina_House_EventScript_TV_Text_1:
 # 93 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	.string "...$"
+	.string "………$"
 
 Lina_House_EventScript_TV_Text_2:
 # 96 "data/maps/SlateportCity_Lina_House/scripts.pory"

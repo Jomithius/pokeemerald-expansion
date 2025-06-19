@@ -77,7 +77,7 @@ text LinaHouse_NotChosen{
     msgbox("“Muscles & Monsters”")
     waitmessage
     hidemonpic
-    msgbox("... \p
+    msgbox("……… \p
     You put the book back.")
     waitmessage
     releaseall
@@ -90,7 +90,7 @@ text LinaHouse_NotChosen{
     It looks like a romance game.")
     waitmessage
     showmonpic(SPECIES_INCINEROAR, 10, 4)
-    msgbox("...")
+    msgbox("………")
     waitmessage
     hidemonpic
     msgbox("You decide it's better to not look \n

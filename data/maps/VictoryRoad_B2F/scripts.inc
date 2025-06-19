@@ -302,4 +302,4 @@ KommoOFailed::
 
 KommoOFailed_Text_0:
 # 152 "data/maps/VictoryRoad_B2F/scripts.pory"
-	.string "The KOMMO-O disappeared...$"
+	.string "The KOMMO-O disappeared…$"

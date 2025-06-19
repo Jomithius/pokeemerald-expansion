@@ -464,7 +464,7 @@ ShoalCave_LowTideIceRoom_Text_BlakeIntro::
 
 ShoalCave_LowTideIceRoom_Text_BlakeDefeat::
 # 184 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	.string "H-How did you withstand my\n relentless offense...$"
+	.string "H-How did you withstand my\n relentless offense…$"
 
 ShoalCave_LowTideIceRoom_Text_BlakePostBattle::
 # 189 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
@@ -484,4 +484,4 @@ ShoalCave_LowTideIceRoom_Text_NatePostBattle::
 
 ShoalCave_LowTideIceRoom_Text_Aria1::
 # 211 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	.string "You scared me!\n  Who are you?\p ...\n Oh. A challenger?\p I'm ARIA. LEADER of the MOSSDEEP\n POKéMON GYM and PROTECTOR of the\l SACRED BLADE.\p ARIA: I can stop my training here.\n Me and my knights shall await you\l at the GYM.$"
+	.string "You scared me!\n  Who are you?\p … … … …\n Oh. A challenger?\p I'm ARIA. LEADER of the MOSSDEEP\n POKéMON GYM and PROTECTOR of the\l SACRED BLADE.\p ARIA: I can stop my training here.\n Me and my knights shall await you\l at the GYM.$"

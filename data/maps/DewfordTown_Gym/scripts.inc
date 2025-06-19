@@ -681,7 +681,7 @@ DewfordTown_Gym_Text_BrawlyDefeat:
 # 341 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "Aw, man.\n"
 # 342 "data/maps/DewfordTown_Gym/scripts.pory"
-	.string "My poor POOBLES...\p"
+	.string "My poor POOBLES…\p"
 # 343 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "Okay, you've got me.\n"
 # 344 "data/maps/DewfordTown_Gym/scripts.pory"

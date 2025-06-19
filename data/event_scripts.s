@@ -1303,8 +1303,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/LilycoveCity_HighriseFloor2/scripts.inc"
 
-	.include "data/maps/TheVoid/scripts.inc"
-
 	.include "data/maps/Route138/scripts.inc"
 
 	.include "data/maps/Route138_2/scripts.inc"
@@ -1376,3 +1374,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SnowdriftCity_House5/scripts.inc"
 
 	.include "data/maps/SnowdriftCity_House6/scripts.inc"
+
+	.include "data/maps/Void/scripts.inc"

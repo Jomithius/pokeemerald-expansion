@@ -465,7 +465,7 @@ Route123_Biker_Intro2::
 
 Route123_BikerDefeat::
 # 265 "data/maps/Route123/scripts.pory"
-	.string "All outta gas...$"
+	.string "All outta gas…$"
 
 Route123_BikerDefeat2::
 # 269 "data/maps/Route123/scripts.pory"
@@ -473,8 +473,8 @@ Route123_BikerDefeat2::
 
 Route123_BikerDefeat3::
 # 273 "data/maps/Route123/scripts.pory"
-	.string "BRRRRUBBB BRRRUB....$"
+	.string "BRRRRUBBB BRRRUB….$"
 
 Route123_SpeedwagonDefeat::
 # 277 "data/maps/Route123/scripts.pory"
-	.string "Dress for the slide,\n not the ride...$"
+	.string "Dress for the slide,\n not the ride…$"

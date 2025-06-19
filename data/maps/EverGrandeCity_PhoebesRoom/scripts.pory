@@ -60,13 +60,13 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 	.string "Huh?\p"
-	.string "Oh... A challenger? Hmph!\n"
+	.string "Oh… A challenger? Hmph!\n"
 	.string "I was just getting to the good part.\p"
 	.string "Okay, let's get this over with\n"
 	.string "so I can get back to my book!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
-	.string "... Fight's over?\n"
+	.string "… Fight's over?\n"
 	.string "Now I can get back to reading.$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
@@ -182,12 +182,12 @@ text EverGrandeCity_PhoebesRoom_Text_LinaStillGoingIntoHouses{
 text EverGrandeCity_PhoebesRoom_Text_LinaDidYouTakeEevee{
     "Hmph! Of course you are.\p
     They still haven't found my EEVEE,\n
-    by the way...\p
+    by the way…\p
     So be honest. Was it you who took it?"
 }
 
 text EverGrandeCity_PhoebesRoom_Text_LinaReally{
-    "... Really?"
+    "… Really?"
 }
 
 text EverGrandeCity_PhoebesRoom_Text_EugeniaIntro{

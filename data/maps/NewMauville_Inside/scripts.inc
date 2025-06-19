@@ -614,4 +614,4 @@ TogedemaruFailed::
 
 TogedemaruFailed_Text_0:
 # 307 "data/maps/NewMauville_Inside/scripts.pory"
-	.string "The TOGEDEMARU disappeared...$"
+	.string "The TOGEDEMARU disappeared…$"

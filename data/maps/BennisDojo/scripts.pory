@@ -33,7 +33,7 @@ script DojoBattleTrigger{
     msgbox(Asak1, MSGBOX_AUTOCLOSE)
     waitmessage
     call(BennisDojo_EventScript_AsakBattle)
-    msgbox("ASAK: Impossible...", MSGBOX_AUTOCLOSE)
+    msgbox("ASAK: Impossible…", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(1, faceup)
     msgbox("PANINI!", MSGBOX_AUTOCLOSE)
@@ -53,7 +53,7 @@ script DojoBattleTrigger{
     msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
     waitmessage
     call(BennisDojo_EventScript_PaniniBattle)
-    msgbox("PANINI: P-Panini...", MSGBOX_AUTOCLOSE)
+    msgbox("PANINI: P-Panini…", MSGBOX_AUTOCLOSE)
     waitmessage
     msgbox(AsakPaniniLoss, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -207,7 +207,7 @@ when MASTER BENNIS is meditating.\p
 I guess I'll have to teach you a lesson!"
 }
 
-text Asak_Outro{"I lost my focus..."}
+text Asak_Outro{"I lost my focus…"}
 
 text Panini_Outro{"Panini?!"}
 
@@ -224,7 +224,7 @@ movement BennisMove1{
 }
 
 text AsakPaniniLoss {"ASAK: WHAT?! Even though I'VE never\n
-even beaten Panini..."    
+even beaten Panini…"    
 }
 
 text Asak3{"ASAK: MASTER BENNIS! I'm sorry for\n
@@ -246,12 +246,12 @@ text Bennis_Intro{
     this place."
 }
 
-text Bennis_Outro{"Everyone's so mean to me..."}
+text Bennis_Outro{"Everyone's so mean to me…"}
 
 text Bennis2{"MASTER BENNIS: Hm.. Beefy."}
 
-text Asak5{"ASAK: This can't be...\n
-Even MASTER BENNIS...\p
+text Asak5{"ASAK: This can't be…\n
+Even MASTER BENNIS…\p
 ASAK: W-We won't forget this\n
 humiliation!"}
 

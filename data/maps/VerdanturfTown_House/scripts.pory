@@ -28,7 +28,7 @@ script VerdanturfTown_House_Xion{
 text VerdanturfTown_House_Text_Xion{
     "Oh, hello.\n
     Who are you?\p
-    ...\p
+    … … … …\p
     Oh, {PLAYER}!\n
     It's nice to meet you!\p
     I'm XION.\p
@@ -38,7 +38,7 @@ text VerdanturfTown_House_Text_Xion{
     made a friend.\p
     So?\n
     What are you up to now?\p
-    ...\p
+    … … … …\p
     Oh, MAUVILLE's GYM?\n
     The LEADER there's pretty strong.\p
     Here, maybe this'll help you."

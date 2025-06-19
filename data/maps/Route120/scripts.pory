@@ -473,7 +473,7 @@ script VikavoltFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(45)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The VIKAVOLT disappeared...")
+    msgbox("The VIKAVOLT disappeared…")
 	return
 }
 

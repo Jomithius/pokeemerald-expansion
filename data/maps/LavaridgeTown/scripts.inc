@@ -827,4 +827,4 @@ LavaridgeTown_EventScript_Joey::
 
 LavaridgeTown_EventScript_Joey_Text_0:
 # 414 "data/maps/LavaridgeTown/scripts.pory"
-	.string "Yeheaahh...\p ...\p It looks like they're too relaxed\n to notice you.$"
+	.string "Yeheaahh…\p …\p It looks like they're too relaxed\n to notice you.$"

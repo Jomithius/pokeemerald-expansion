@@ -1415,7 +1415,7 @@ PetalburgCity_Gym_Text_GeorgePostBattle:
 	.string "Nobody's said anything yet.$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
-	.string "Seriously...\n"
+	.string "Seriously…\n"
 	.string "Nobody's gonna say anything?$"
 
 PetalburgCity_Gym_Text_BerkeIntro:

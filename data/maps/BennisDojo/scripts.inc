@@ -512,7 +512,7 @@ DojoBattleTrigger_Text_0:
 
 DojoBattleTrigger_Text_1:
 # 36 "data/maps/BennisDojo/scripts.pory"
-	.string "ASAK: Impossible...$"
+	.string "ASAK: Impossible…$"
 
 DojoBattleTrigger_Text_2:
 # 39 "data/maps/BennisDojo/scripts.pory"
@@ -528,7 +528,7 @@ DojoBattleTrigger_Text_4:
 
 DojoBattleTrigger_Text_5:
 # 56 "data/maps/BennisDojo/scripts.pory"
-	.string "PANINI: P-Panini...$"
+	.string "PANINI: P-Panini…$"
 
 DojoBattleTrigger_Text_6:
 # 60 "data/maps/BennisDojo/scripts.pory"
@@ -560,7 +560,7 @@ Asak1::
 
 Asak_Outro::
 # 210 "data/maps/BennisDojo/scripts.pory"
-	.string "I lost my focus...$"
+	.string "I lost my focus…$"
 
 Panini_Outro::
 # 212 "data/maps/BennisDojo/scripts.pory"
@@ -572,7 +572,7 @@ Asak2::
 
 AsakPaniniLoss::
 # 226 "data/maps/BennisDojo/scripts.pory"
-	.string "ASAK: WHAT?! Even though I'VE never\n even beaten Panini...$"
+	.string "ASAK: WHAT?! Even though I'VE never\n even beaten Panini…$"
 
 Asak3::
 # 230 "data/maps/BennisDojo/scripts.pory"
@@ -596,7 +596,7 @@ Bennis_Intro::
 
 Bennis_Outro::
 # 249 "data/maps/BennisDojo/scripts.pory"
-	.string "Everyone's so mean to me...$"
+	.string "Everyone's so mean to me…$"
 
 Bennis2::
 # 251 "data/maps/BennisDojo/scripts.pory"
@@ -604,4 +604,4 @@ Bennis2::
 
 Asak5::
 # 253 "data/maps/BennisDojo/scripts.pory"
-	.string "ASAK: This can't be...\n Even MASTER BENNIS...\p ASAK: W-We won't forget this\n humiliation!$"
+	.string "ASAK: This can't be…\n Even MASTER BENNIS…\p ASAK: W-We won't forget this\n humiliation!$"

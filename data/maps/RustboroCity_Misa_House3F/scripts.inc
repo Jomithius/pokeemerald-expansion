@@ -172,7 +172,7 @@ RustboroCity_Misa_House3F_TV_Text_0:
 
 RustboroCity_Misa_House3F_Emo_Text_0:
 # 16 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "JAMES: {PLAYER}... We meet again.\n Did you challenge the GYM LEADER yet?\l I already did.\l I'll wait for you to catch up.$"
+	.string "JAMES: {PLAYER}… We meet again.\n Did you challenge the GYM LEADER yet?\l I already did.\l I'll wait for you to catch up.$"
 
 RustboroCity_Misa_House3F_Togepi_Text_0:
 # 30 "data/maps/RustboroCity_Misa_House3F/scripts.pory"

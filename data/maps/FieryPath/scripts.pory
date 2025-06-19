@@ -54,6 +54,6 @@ script SalazzleFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(7)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The SALAZZLE disappeared...")
+    msgbox("The SALAZZLE disappeared…")
 	return
 }

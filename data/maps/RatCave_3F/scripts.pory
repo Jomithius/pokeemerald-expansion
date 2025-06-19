@@ -39,7 +39,7 @@ script RaticateFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(1)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The RATICATE disappeared...")
+    msgbox("The RATICATE disappeared…")
 	return
 }
 
@@ -82,7 +82,7 @@ script RaticateAlolaFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(2)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The RATICATE disappeared...")
+    msgbox("The RATICATE disappeared…")
     waitmessage
 	return
 }

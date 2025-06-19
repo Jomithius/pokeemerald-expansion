@@ -403,10 +403,10 @@
       "flag": "FLAG_HIDE_RATDUARDO_LILYCOVE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_STAFF_EMPLOYEE",
+      "graphics_id": "OBJ_EVENT_GFX_STAFF_EMPLOYEE2",
       "x": 50,
       "y": 7,
-      "elevation": 0,
+      "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -416,10 +416,10 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_STAFF_EMPLOYEE2",
+      "graphics_id": "OBJ_EVENT_GFX_STAFF_EMPLOYEE",
       "x": 52,
       "y": 7,
-      "elevation": 0,
+      "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -540,7 +540,7 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
@@ -597,6 +597,15 @@
       "var": "VAR_CEO_STATE",
       "var_value": "0",
       "script": "LilycoveCity_EventScript_CEO_HighriseNoEntry"
+    },
+    {
+      "type": "trigger",
+      "x": 51,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_CEO_STATE",
+      "var_value": "1",
+      "script": "LilycoveCity_EventScript_CEO_HighriseWelcome"
     }
   ],
   "bg_events": [

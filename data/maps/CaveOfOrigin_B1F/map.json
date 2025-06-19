@@ -26,6 +26,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CaveOfOrigin_B1F_EventScript_Wallace",
       "flag": "FLAG_HIDE_CAVE_OF_ORIGIN_B1F_WALLACE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DIALGA)",
+      "x": 5,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_DIALGA"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PALKIA)",
+      "x": 13,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_PALKIA"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARCEUS)",
+      "x": 9,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ARCEUS"
     }
   ],
   "warp_events": [

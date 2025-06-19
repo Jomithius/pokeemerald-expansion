@@ -165,7 +165,7 @@ script Route112_EventScript_Emo{
     msgbox(Route112_Text_Emo3, MSGBOX_AUTOCLOSE)
     waitmessage
     delay(20)
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     delay(30)
     applymovement(14, Common_Movement_FacePlayer)
@@ -213,7 +213,7 @@ script Route112_EventScript_Emo_West{
     msgbox(Route112_Text_Emo3, MSGBOX_AUTOCLOSE)
     waitmessage
     delay(20)
-    msgbox("...", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
     delay(30)
     applymovement(14, Common_Movement_FacePlayer)
@@ -241,23 +241,23 @@ script Route112_EventScript_RivalBattle{
 
 
 text Route112_Text_Emo1{
-    "JAMES: {PLAYER}...\n
+    "JAMES: {PLAYER}…\n
     We meet again.\p
     My power has increased since we\n
     last battled.\p
-    My eye... It now burns hotter than\n
+    My eye… It now burns hotter than\n
     the FIERY PATH..\p
     This time, I, JOMITHIUS, will\n
     achieve victory!"
 }
 
 text Route112_EmoDefeat{
-    "I'm in my abyss..."
+    "I'm in my abyss…"
 }
 
 text Route112_Text_Emo2{
     "JAMES: So victory still eludes\n
-    me...\l
+    me…\l
     You're a worthy adversary.\p
     Out of respect for your\n
     power, I'll give you this."

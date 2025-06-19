@@ -108,7 +108,7 @@ Fallarbor_RatCave_Rock::
 
 RatCave_Fallarbor_2F_BattleOver_Text_0:
 # 45 "data/maps/RatCave_Fallarbor_2F/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes again:\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't.. get.. in my way...!$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes again:\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… get… in my way…!$"
 
 Fallarbor_RatCave_Rock_Text_0:
 # 69 "data/maps/RatCave_Fallarbor_2F/scripts.pory"
@@ -116,8 +116,8 @@ Fallarbor_RatCave_Rock_Text_0:
 
 RatCave_Fallarbor_2F_Text_RatduardoIntro::
 # 30 "data/maps/RatCave_Fallarbor_2F/scripts.pory"
-	.string "Again... You...$"
+	.string "Again… You…$"
 
 RatCave_Fallarbor_2F_Text_RatduardoDefeat::
 # 34 "data/maps/RatCave_Fallarbor_2F/scripts.pory"
-	.string "...$"
+	.string "…$"

@@ -15,6 +15,7 @@ PetalburgCity_OnTransition:
 	call_if_eq VAR_PETALBURG_CITY_STATE, 2, PetalburgCity_EventScript_DisableMapNameAndMusic
 	call_if_eq VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_EventScript_DisableMapNameAndMusic
 	call_if_eq VAR_PETALBURG_GYM_STATE, 8, PetalburgCity_EventScript_SetGymDoorsUnlocked
+	call_if_set FLAG_HIDE_GYM_LEADERS, PetalburgCity_EventScript_BlockGymNPC
 	end
 
 PetalburgCity_EventScript_MoveGymBoyToWestEntrance::
@@ -894,9 +895,9 @@ text PetalburgCity_LunaText1{
 text PetalburgCity_LunaOutro{"Not bad."}
 
 text PetalburgCity_LunaText2{
-    "LUNA: Hm...\n
+    "LUNA: Hm…\n
 	Okay, you should be fine.\p
-    Let's just say we've been having a...\n
+    Let's just say we've been having a…\n
 	little pest problem lately.\p
 	And it looks like they somehow got\n
 	into my house when I was away.\p
@@ -916,7 +917,7 @@ script PetalburgCity_EventScript_Exterminator{
 	lock
 	applymovement(10, PetalburgCityFacePlayer)
 	waitmovement(10)
-	msgbox("MAN: Sorry, we got people in\n
+	msgbox("Sorry, we got people in\n
 	there working right now.", MSGBOX_NPC)
 	waitmessage
 	release
@@ -947,6 +948,11 @@ script PetalburgCity_EventScript_NPC_GYM{
 		end
 	}
 
+}
+
+script PetalburgCity_EventScript_BlockGymNPC{
+	clearflag(FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST)
+	return
 }
 
 text LunaGone_FantasiaHint{

@@ -75,7 +75,7 @@ FallarborTown_House_Old_Man_RatCaveHint::
 
 FallarborTown_House_Old_Man_RatCavePost::
 # 40 "data/maps/FallarborTown_House/scripts.pory"
-	.string "Huh?\p What?\p Did you take care of it?\p ...\p What?\n There was a giant rat?\p Your eyes must be worse than mine,\n youngster.$"
+	.string "Huh?\p What?\p Did you take care of it?\p … … … …\p What?\n There was a giant rat?\p Your eyes must be worse than mine,\n youngster.$"
 
 FallarborTown_House_Text_Old_Lady::
 # 63 "data/maps/FallarborTown_House/scripts.pory"

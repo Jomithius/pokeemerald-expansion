@@ -1211,7 +1211,7 @@ Route115_EventScript_Trigger_RivalEmo_Text_0:
 
 Route115_EventScript_Trigger_RivalEmo_Text_1:
 # 167 "data/maps/Route115/scripts.pory"
-	.string "...$"
+	.string "…$"
 
 Route115_EventScript_Trigger_RivalEmo_Text_2:
 # 202 "data/maps/Route115/scripts.pory"
@@ -1223,15 +1223,15 @@ Route115_EventScript_Trigger_RivalEmo_Text_3:
 
 Route115_EventScript_Trigger_RivalEmo_Text_4:
 # 239 "data/maps/Route115/scripts.pory"
-	.string "MISA: ...Oh! Um.. I mean... JOMITHIUS,\n right?$"
+	.string "MISA: …Oh! Um… I mean… JOMITHIUS,\n right?$"
 
 Route115Emo1::
 # 538 "data/maps/Route115/scripts.pory"
-	.string "Don't come any closer. Hold on..$"
+	.string "Don't come any closer. Hold on…$"
 
 Route115Emo2::
 # 540 "data/maps/Route115/scripts.pory"
-	.string "Sorry. It's hard to control this power.\n Any closer and you could've been\l pulled into the void...\p Anyways, who are you?\n ...\p {PLAYER}, huh?\n And my mother sent you?\l I see..\l  So that means you're also a trainer...$"
+	.string "Sorry. It's hard to control this power.\n Any closer and you could've been\l pulled into the void…\p Anyways, who are you?\n …\p {PLAYER}, huh?\n And my mother sent you?\l I see…\l  So that means you're also a trainer…$"
 
 Route115Emo3::
 # 550 "data/maps/Route115/scripts.pory"
@@ -1239,7 +1239,7 @@ Route115Emo3::
 
 Route115Emo4::
 # 552 "data/maps/Route115/scripts.pory"
-	.string "... I am JOMITHIUS.\n ...This must be the call of fate.\l We are.. destined to be rivals.\l You know what must be done.$"
+	.string "… I am JOMITHIUS.\n …This must be the call of fate.\l We are.. destined to be rivals.\l You know what must be done.$"
 
 Route115Emo5::
 # 557 "data/maps/Route115/scripts.pory"
@@ -1251,7 +1251,7 @@ Route115Emo6::
 
 Route115Emo7::
 # 564 "data/maps/Route115/scripts.pory"
-	.string "JOMITHIUS: {PLAYER} is...\n a worthy opponent.$"
+	.string "JOMITHIUS: {PLAYER} is…\n a worthy opponent.$"
 
 Route115Misa1::
 # 567 "data/maps/Route115/scripts.pory"
@@ -1259,7 +1259,7 @@ Route115Misa1::
 
 Route115Emo8::
 # 571 "data/maps/Route115/scripts.pory"
-	.string "JAMES?: ...\n Yes, Mother.\l I'll be heading back soon.$"
+	.string "JAMES?: …\n Yes, Mother.\l I'll be heading back soon.$"
 
 Route115Misa2::
 # 575 "data/maps/Route115/scripts.pory"
@@ -1267,8 +1267,8 @@ Route115Misa2::
 
 Route115Emo9::
 # 581 "data/maps/Route115/scripts.pory"
-	.string "Definitely JAMES: ...\p I should head back then.\n {PLAYER}, next time I'll achieve victory.\l See ya.$"
+	.string "Definitely JAMES: …\p I should head back then.\n {PLAYER}, next time I'll achieve victory.\l See ya.$"
 
 Jomithius_Outro::
 # 586 "data/maps/Route115/scripts.pory"
-	.string "I'm in my abyss...$"
+	.string "I'm in my abyss…$"

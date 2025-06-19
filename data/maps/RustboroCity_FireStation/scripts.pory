@@ -47,8 +47,8 @@ script RustboroCity_FireStation_Man{
 
 script RustboroCity_FireStation_FatMan{
     lock
-    msgbox("Ah, MISA's back in town...\l
-    I wish she would smother me...", MSGBOX_AUTOCLOSE)
+    msgbox("Ah, MISA's back in town…\l
+    I wish she would smother me…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(5, FireStationSurprised)

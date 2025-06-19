@@ -1881,7 +1881,7 @@ MauvilleCity_Trigger_Bikers1_Text_0:
 
 MauvilleCity_EventScript_Bikers_WomanWarnText_Text_0:
 # 922 "data/maps/MauvilleCity/scripts.pory"
-	.string "Oh no...$"
+	.string "Oh no…$"
 
 MauvileCity_EventScript_SeeWhatsGoingOn_Text_0:
 # 930 "data/maps/MauvilleCity/scripts.pory"

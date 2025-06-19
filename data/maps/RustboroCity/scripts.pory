@@ -1384,7 +1384,7 @@ script MisaEnd{
 script RustboroCity_Eventscript_Promise_To_Misa{
 	lock
 	msgbox("I should probably keep my promise to\n
-	MISA...", MSGBOX_AUTOCLOSE)
+	MISA…", MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, RustboroCity_Movement_PlayerWalkDown)
 	waitmovement(0)

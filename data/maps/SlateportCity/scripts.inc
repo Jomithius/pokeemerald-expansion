@@ -3049,7 +3049,7 @@ Mae2::
 
 Mae_Outro::
 # 1451 "data/maps/SlateportCity/scripts.pory"
-	.string "I'm a diva and I deserve this...$"
+	.string "I'm a diva and I deserve this…$"
 
 SlateportMartEmployee1::
 # 1453 "data/maps/SlateportCity/scripts.pory"

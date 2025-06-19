@@ -2401,7 +2401,7 @@ Route110_Text_Speedwagon::
 
 Route110_SpeedwagonDefeat::
 # 1078 "data/maps/Route110/scripts.pory"
-	.string "Dress for the slide,\n not the ride...$"
+	.string "Dress for the slide,\n not the ride…$"
 
 Route110_Text_Speedwagon_PostBattle::
 # 1083 "data/maps/Route110/scripts.pory"
@@ -2429,7 +2429,7 @@ Route110_Biker_Intro3::
 
 Route110_BikerDefeat::
 # 1191 "data/maps/Route110/scripts.pory"
-	.string "All outta gas...$"
+	.string "All outta gas…$"
 
 Route110_BikerDefeat2::
 # 1195 "data/maps/Route110/scripts.pory"
@@ -2437,4 +2437,4 @@ Route110_BikerDefeat2::
 
 Route110_BikerDefeat3::
 # 1199 "data/maps/Route110/scripts.pory"
-	.string "BRRRRUBBB BRRRUB....$"
+	.string "BRRRRUBBB BRRRUB….$"

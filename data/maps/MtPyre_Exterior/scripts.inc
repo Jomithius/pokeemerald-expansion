@@ -289,11 +289,11 @@ MtPyre_Exterior_Movement_EmoLeave2:
 
 MtPyre_Exterior_Text_Emo1::
 # 110 "data/maps/MtPyre_Exterior/scripts.pory"
-	.string "JAMES: {PLAYER}?\n I wouldn't expect you to come here.\p Are you a fan of the occult?\n That's surprising.\p The dark energies in this place\n have caused my power to go even\l further beyond...\p I don't think even you can\n withstand this strength!$"
+	.string "JAMES: {PLAYER}?\n I wouldn't expect you to come here.\p Are you a fan of the occult?\n That's surprising.\p The dark energies in this place\n have caused my power to go even\l further beyond…\p I don't think even you can\n withstand this strength!$"
 
 MtPyre_Exterior_Text_Emo2::
 # 122 "data/maps/MtPyre_Exterior/scripts.pory"
-	.string "JAMES: Hm...\n You've become stronger than I thought.\p As expected of my adversary.\n Here, you can have this.$"
+	.string "JAMES: Hm…\n You've become stronger than I thought.\p As expected of my adversary.\n Here, you can have this.$"
 
 MtPyre_Exterior_Text_Emo3::
 # 129 "data/maps/MtPyre_Exterior/scripts.pory"
@@ -301,4 +301,4 @@ MtPyre_Exterior_Text_Emo3::
 
 MtPyre_Exterior_Text_RivalDefeat::
 # 137 "data/maps/MtPyre_Exterior/scripts.pory"
-	.string "I'm in my abyss...$"
+	.string "I'm in my abyss…$"

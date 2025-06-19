@@ -178,8 +178,8 @@ AriadosFailed::
 
 GalvantulaFailed_Text_0:
 # 44 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	.string "The GALVANTULA disappeared...$"
+	.string "The GALVANTULA disappeared…$"
 
 AriadosFailed_Text_0:
 # 90 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	.string "The ARIADOS disappeared...$"
+	.string "The ARIADOS disappeared…$"

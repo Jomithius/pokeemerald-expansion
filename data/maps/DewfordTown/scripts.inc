@@ -1656,4 +1656,4 @@ DewfordTown_Text_BennisReturn::
 
 DewfordTown_Text_GYM_Relocated::
 # 844 "data/maps/DewfordTown/scripts.pory"
-	.string "The POKéMON GYM was relocated to\n SLATEPORT CITY around a year ago.\p That was the only interesting thing our\n small town had...$"
+	.string "The POKéMON GYM was relocated to\n SLATEPORT CITY around a year ago.\p That was the only interesting thing our\n small town had…$"

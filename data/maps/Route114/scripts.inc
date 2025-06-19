@@ -679,8 +679,8 @@ Route114_Bennis_Intro::
 
 Route114_BennisDefeat::
 # 327 "data/maps/Route114/scripts.pory"
-	.string "Everyone's so mean to me...$"
+	.string "Everyone's so mean to me…$"
 
 Route114_Text_ASAK3::
 # 331 "data/maps/Route114/scripts.pory"
-	.string "MASTER BENNIS: Hm.\n Still beefy.\p PANINI: P-Panini?!\p ASAK: Kuh... W-We won't forget\n this humiliation!$"
+	.string "MASTER BENNIS: Hm.\n Still beefy.\p PANINI: P-Panini?!\p ASAK: Kuh… W-We won't forget\n this humiliation!$"

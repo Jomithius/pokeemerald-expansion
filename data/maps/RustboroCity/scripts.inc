@@ -2934,7 +2934,7 @@ RustboroPlayerStepBack:
 
 RustboroCity_Eventscript_Promise_To_Misa_Text_0:
 # 1386 "data/maps/RustboroCity/scripts.pory"
-	.string "I should probably keep my promise to\n MISA...$"
+	.string "I should probably keep my promise to\n MISA…$"
 
 RustboroMisa1::
 # 1423 "data/maps/RustboroCity/scripts.pory"

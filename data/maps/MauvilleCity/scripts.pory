@@ -919,7 +919,7 @@ text MauvilleCity_Text_WomanBikersRoute110{
 
 script MauvilleCity_EventScript_Bikers_WomanWarnText{
 	lock
-	msgbox("Oh no...", MSGBOX_AUTOCLOSE)
+	msgbox("Oh no…", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release
 	end

@@ -148,6 +148,8 @@ script WachunpelonCity_Sewer_EventScript_Speedwagon{
     delay(20)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(12)
+    delay(60)
+    playse(SE_EXIT)
     removeobject(12)
     setflag(FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS)
     release
@@ -219,7 +221,7 @@ text WachunpelonCity_Sewer_Text_Policeman3{
 
 text WachunpelonCity_Sewer_Text_Policeman4{
     "Well, I should head back to MAUVILLE\n
-    CITY now. Take care."
+    now. Take care."
 }
 
 movement WachunpelonCity_Sewer_Movement_Policeman1{

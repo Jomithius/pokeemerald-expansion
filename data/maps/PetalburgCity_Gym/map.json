@@ -155,7 +155,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgGym_EventScript_Lopunny",
-      "flag": "FLAG_HIDE_PETALBURG_GYM_LUNA_F"
+      "flag": "FLAG_HIDE_GYM_LEADERS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NORMAN",
@@ -181,7 +181,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_Norman",
-      "flag": "FLAG_HIDE_PETALBURG_GYM_LUNA_F"
+      "flag": "FLAG_HIDE_GYM_LEADERS"
     }
   ],
   "warp_events": [

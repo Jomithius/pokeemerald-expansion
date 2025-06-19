@@ -1,1 +1,215 @@
-mapscripts LilycoveCity_HighriseCeoOffice_MapScripts {}
+mapscripts LilycoveCity_HighriseCeoOffice_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+    VAR_CEO_STATE, 1: LilycoveCity_HighriseFloor2_EventScript_CeoMeeting
+    ]
+}
+
+script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    delay(10)
+    applymovement(4, LilycoveCity_HighriseFloor2_Movement_Attendant)
+    delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6)
+    waitmovement(4)
+    msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(5, Common_Movement_WalkInPlaceLeft)
+    waitmovement(5)
+    msgbox("Sir.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(5, Common_Movement_WalkDown)
+    waitmovement(5)
+    msgbox(LilycoveCity_HighriseFloor2_Text_Scientist, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(5, LilycoveCity_HighriseFloor2_Movement_Scientist)
+    waitmovement(5)
+    msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy2, MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy4, MSGBOX_AUTOCLOSE)  
+    }
+    else{
+        msgbox("…", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(2, LilycoveCity_HighriseFloor2_Movement_StaffMember)
+        delay(16)
+        applymovement(3, LilycoveCity_HighriseFloor2_Movement_StaffMember2)
+        delay(16)
+        playse(SE_PIN)
+        applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_HighriseFloor2_Movement_PlayerPanic)
+        waitmovement(3)
+        msgbox("JIMMY: Wait.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(2, Common_Movement_WalkInPlaceUp)
+        applymovement(3, Common_Movement_WalkInPlaceUp)
+        waitmovement(3)
+        msgbox("It's fine.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(2, LilycoveCity_HighriseFloor2_Movement_StaffMemberReturn)
+        delay(16)
+        applymovement(3, LilycoveCity_HighriseFloor2_Movement_StaffMember2Return)
+        delay(16)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+        waitmovement(3)
+        msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy3, MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_HighriseFloor2_Movement_PlayerLeave)
+    waitmovement(0)
+    setvar(VAR_CEO_STATE, 2)
+    setflag(FLAG_CALL_FROM_CEO)
+    setflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
+    call(LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags)
+    warp(MAP_LILYCOVE_CITY, 51, 7)
+    waitstate
+    release
+    end
+}
+
+script LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags{
+    clearflag(FLAG_HIDE_ENTEI)
+    clearflag(FLAG_HIDE_RAIKOU)
+    clearflag(FLAG_HIDE_SUICUNE)
+    clearflag(FLAG_HIDE_MOLTRES)
+    clearflag(FLAG_HIDE_ARTICUNO)
+    clearflag(FLAG_HIDE_ZAPDOS)
+    clearflag(FLAG_HIDE_GALARIAN_MOLTRES)
+    clearflag(FLAG_HIDE_GALARIAN_ZAPDOS)
+    clearflag(FLAG_HIDE_GALARIAN_ARTICUNO)
+    clearflag(FLAG_HIDE_ARCEUS)
+    clearflag(FLAG_HIDE_DIALGA)
+    clearflag(FLAG_HIDE_PALKIA)
+    clearflag(FLAG_HIDE_GIRATINA)
+    clearflag(FLAG_HIDE_MARSHADOW)
+    clearflag(FLAG_HIDE_ZERAORA)
+    return
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_Attendant{
+    walk_up * 4
+    walk_left * 3
+    walk_up * 5
+    walk_right
+    walk_in_place_down
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_Scientist{
+    lock_facing_direction
+    walk_up
+    unlock_facing_direction
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_PlayerPanic{
+    emote_exclamation_mark
+    walk_in_place_fast_right
+    delay_16
+    walk_in_place_fast_left
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_PlayerLeave{
+    walk_down * 7
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_StaffMember{
+    walk_fast_down * 4
+    walk_fast_left
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_StaffMemberReturn{
+    walk_right
+    walk_up * 4
+    walk_in_place_down
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_StaffMember2{
+    walk_fast_down * 4
+    walk_fast_right
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_StaffMember2Return{
+    walk_left
+    walk_up * 4
+    walk_in_place_down
+}
+
+text LilycoveCity_HighriseFloor2_Text_Jimmy1{
+    "JIMMY: {PLAYER}! Good to see you.\n
+    I'll get to the point.\p
+    I'm sure you noticed random tremors\n
+    in the region during your travels.\p
+    Well, the LEAGUE's investigation around\n
+    the cause of those earthquakes has\l
+    concluded.\p
+    My subordinate will give you the finer\n
+    details."
+}
+
+text LilycoveCity_HighriseFloor2_Text_Scientist{
+    "We have discovered that the source of\n
+    seismic disturbances have primarily\l
+    come from a MANIAC and his RATTATAs\l
+    creating tunnels all throughout the\l
+    region.\p
+    Surprisingly, it had nothing to do\n
+    with the actions of TEAM MAGMA.\p
+    We have surveyed the tunnel systems\n
+    and have discovered their origin lies\l
+    in NORTHERN HOENN.\p
+    It's difficult to continue monitoring\n
+    seismic activity due to GROUDON being\l
+    awakened, but we believe the RATTATA\l
+    are no longer being ordered to dig.\p
+    We presume that he has finally found\n
+    whatever he has been looking for.\p
+    Furthermore, there have been reports\n
+    of extremely rare POKéMON now being\l
+    seen in the region.\p
+    Notable reports have come from the\n
+    SCORCHED SLAB, MT. PYRE, FIERY PATH,\l
+    METEOR FALLS, ROUTE 123, NEW MAUVILLE,\l
+    and the CAVE OF ORIGIN."
+}
+
+text LilycoveCity_HighriseFloor2_Text_Jimmy2{
+    "JIMMY: That's pretty much it.\p
+    That rat weirdo isn't much of a threat\n
+    to the region's security at this point.\p
+    Still, I'd like you to go and do your\n
+    own general investigation of the area."
+}
+
+text LilycoveCity_HighriseFloor2_Text_Jimmy3{
+    "{PLAYER}, you can do what you want.\n
+    But it's in your best interest to go.\p
+    In that remote part of the region, there\n
+    are POKéMON you've never seen before.\p
+    You may be CHAMPION, but there's still\n
+    parts of this region to explore.\l
+    After you return, I want you to go and\l
+    challenge all the GYM LEADERS again.\l
+    And, of course, the ELITE FOUR.\l
+    Next time, they won't hold back.\p
+    Well, {PLAYER}, I won't hold you\n
+    any longer. You got things to do!\p
+    You should be able to reach NORTHERN\n
+    HOENN through the tunnel system.\l
+    I expect good news!"
+}
+
+text LilycoveCity_HighriseFloor2_Text_Jimmy4{
+    "I knew you'd be down for an adventure!\n
+    JAMES is already out there on another\l
+    job I asked him to work on.\l
+    You'll probably run into him out there.\p
+    Then, after you return, I want you to\n
+    challenge all the GYM LEADERS again.\l
+    And, of course, the ELITE FOUR.\l
+    Next time, they won't hold back.\p
+    Well, {PLAYER}, I won't hold you\n
+    any longer. You got things to do!\p
+    You should be able to reach NORTHERN\n
+    HOENN through the tunnel system.\l
+    I expect good news!"
+}
+

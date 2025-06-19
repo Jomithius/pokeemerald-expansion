@@ -81,7 +81,7 @@ script RatCave_B2F_EventScript_RatduardoBattle{
 }
 
 text Ratduardo_Outro{
-    "..."
+    "…"
 }
 
 script Ratduardo1_BattleOver{
@@ -90,7 +90,7 @@ script Ratduardo1_BattleOver{
     removeobject(5)
     fadescreenspeed(FADE_FROM_BLACK, 3)
     msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes:\p
-    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't... try.. to follow...", MSGBOX_AUTOCLOSE)
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… try… to follow…", MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_RATDUARDO_RAT_CAVE_1)
     return

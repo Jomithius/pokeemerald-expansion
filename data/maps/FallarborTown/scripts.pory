@@ -75,9 +75,9 @@ FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "Have you already challenged\n"
 	.string "the LEADER of LAVARIDGE GYM?\p"
 	.string "The girl's cooking is famous.\n"
-	.string "It wouldn't surprise me to see her\l"
-	.string "open a restuarant in the future\l"
-	.string "instead of a GYM!$"
+	.string "It wouldn't surprise me to see her open\l"
+	.string "a restaurant in the future instead of\l"
+	.string "of a GYM!$"
 
 FallarborTown_Text_BattleTentSign:
 	.string "BATTLE TENT FALLARBOR SITE\n"

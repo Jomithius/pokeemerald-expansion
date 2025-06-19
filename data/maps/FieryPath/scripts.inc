@@ -114,4 +114,4 @@ SalazzleFailed::
 
 SalazzleFailed_Text_0:
 # 57 "data/maps/FieryPath/scripts.pory"
-	.string "The SALAZZLE disappeared...$"
+	.string "The SALAZZLE disappeared…$"

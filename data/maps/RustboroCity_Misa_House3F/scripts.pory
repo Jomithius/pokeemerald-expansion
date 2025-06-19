@@ -13,7 +13,7 @@ script RustboroCity_Misa_House3F_Emo{
     lock
     applymovement(1, MisaHouse3F_FacePlayer)
     waitmovement(1)
-    msgbox("JAMES: {PLAYER}... We meet again.\n
+    msgbox("JAMES: {PLAYER}… We meet again.\n
     Did you challenge the GYM LEADER yet?\l
     I already did.\l
     I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)

@@ -1,1 +1,56 @@
-mapscripts LilycoveCity_HighriseElevator_MapScripts {}
+mapscripts LilycoveCity_HighriseElevator_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+    VAR_CEO_STATE, 1: LilycoveCity_HighriseElevator_EventScript_ToFloor2
+    ]
+}
+
+script LilycoveCity_HighriseElevator_EventScript_ToFloor2{
+    lock
+    applymovement(1, LilycoveCity_HighriseElevator_Movement_OperateElevator)
+    delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_HighriseElevator_Movement_EnterElevator)
+    waitmovement(0)
+    msgbox("One moment…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(LilycoveCity_HighriseElevator_EventScript_MoveElevator)
+    delay(25)
+    applymovement(1, LilycoveCity_HighriseElevator_Movement_OperateElevator2)
+    waitmovement(1)
+    removeobject(1)
+    playse(SE_EXIT)
+    waitse
+    applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_HighriseElevator_Movement_ExitElevator)
+    waitmovement(0)
+    warp(MAP_LILYCOVE_CITY_HIGHRISE_FLOOR2, 2, 16)
+    waitstate
+    release
+    end
+}
+
+script LilycoveCity_HighriseElevator_EventScript_MoveElevator{
+    setvar(VAR_0x8005, 1) // current floor
+    setvar(VAR_0x8006, 10) // destination
+    waitse
+    special(MoveElevator)
+    waitstate
+    return
+}
+
+movement LilycoveCity_HighriseElevator_Movement_OperateElevator{
+    walk_left
+    walk_in_place_down
+}
+
+movement LilycoveCity_HighriseElevator_Movement_OperateElevator2{
+    walk_right
+    walk_in_place_down
+}
+
+movement LilycoveCity_HighriseElevator_Movement_EnterElevator{
+    walk_up * 2
+    walk_in_place_down
+}
+
+movement LilycoveCity_HighriseElevator_Movement_ExitElevator{
+    walk_down * 2
+}

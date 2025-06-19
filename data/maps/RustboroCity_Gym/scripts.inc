@@ -307,7 +307,7 @@ RustboroCity_Gym_Text_TommyIntro:
 # 154 "data/maps/RustboroCity_Gym/scripts.pory"
 RustboroCity_Gym_Text_TommyDefeat:
 # 155 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "I'm all burnt out...$"
+	.string "I'm all burnt out…$"
 # 156 "data/maps/RustboroCity_Gym/scripts.pory"
 
 # 157 "data/maps/RustboroCity_Gym/scripts.pory"

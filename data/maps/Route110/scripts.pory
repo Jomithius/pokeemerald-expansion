@@ -1077,7 +1077,7 @@ text Route110_Text_Speedwagon{
 
 text Route110_SpeedwagonDefeat{
 	"Dress for the slide,\n
-	not the ride..."
+	not the ride…"
 }
 
 text Route110_Text_Speedwagon_PostBattle{
@@ -1189,7 +1189,7 @@ text Route110_Biker_Intro3{
 }
 
 text Route110_BikerDefeat{
-	"All outta gas..."
+	"All outta gas…"
 }
 
 text Route110_BikerDefeat2{
@@ -1197,7 +1197,7 @@ text Route110_BikerDefeat2{
 }
 
 text Route110_BikerDefeat3{
-	"BRRRRUBBB BRRRUB...."
+	"BRRRRUBBB BRRRUB…."
 }
 
 movement Route110_Policeman_North{

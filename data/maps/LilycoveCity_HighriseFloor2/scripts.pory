@@ -1,1 +1,45 @@
-mapscripts LilycoveCity_HighriseFloor2_MapScripts {}
+mapscripts LilycoveCity_HighriseFloor2_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+    VAR_CEO_STATE, 1: LilycoveCity_HighriseFloor2_EventScript_ToOffice
+    ]
+}
+
+script LilycoveCity_HighriseFloor2_EventScript_ToOffice{
+    lock
+    applymovement(1, LilycoveCity_HighriseFloor2_Movement_Attendant1)
+    delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_HighriseFloor2_Movement_Player1)
+    waitmovement(0)
+    applymovement(1, Common_Movement_WalkRight)
+    delay(10)
+    applymovement(2, Common_Movement_WalkInPlaceLeft)
+    waitmovement(2)
+    delay(30)
+    applymovement(2, Common_Movement_WalkInPlaceRight)
+    waitmovement(2)
+    applymovement(1, LilycoveCity_HighriseFloor2_Movement_Attendant2)
+    waitmovement(1)
+    playse(SE_EXIT)
+    removeobject(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+    warp(MAP_LILYCOVE_CITY_HIGHRISE_CEO_OFFICE, 7, 13)
+    waitstate
+    release
+    end
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_Attendant1{
+    walk_right * 3
+    walk_up * 14
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_Attendant2{
+   walk_left
+   walk_up
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_Player1{
+    walk_right * 5
+    walk_up * 13
+}

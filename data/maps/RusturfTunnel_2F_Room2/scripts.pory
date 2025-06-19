@@ -41,7 +41,7 @@ script GalvantulaFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(5)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The GALVANTULA disappeared...")
+    msgbox("The GALVANTULA disappeared…")
 	return
 }
 
@@ -87,6 +87,6 @@ script AriadosFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(6)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The ARIADOS disappeared...")
+    msgbox("The ARIADOS disappeared…")
 	return
 }

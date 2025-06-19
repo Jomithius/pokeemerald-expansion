@@ -1336,4 +1336,4 @@ MimikyuFailed::
 
 MimikyuFailed_Text_0:
 # 669 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The MIMIKYU disappeared...$"
+	.string "The MIMIKYU disappeared…$"

@@ -411,8 +411,8 @@ LavaridgeTown_Text_HerbShopSign:
 
 script LavaridgeTown_EventScript_Joey{
     lock
-    msgbox("Yeheaahh...\p
-	...\p
+    msgbox("Yeheaahh…\p
+	…\p
 	It looks like they're too relaxed\n
 	to notice you.", MSGBOX_SIGN)
 	release

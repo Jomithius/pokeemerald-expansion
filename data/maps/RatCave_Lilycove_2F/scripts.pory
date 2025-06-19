@@ -26,12 +26,12 @@ script RatCave_LilycoveCity_2F_EventScript_Ratduardo{
 }
 
 text RatCave_LilycoveCity_2F_Text_RatduardoIntro{
-    "...!"
+    "…!"
 }
 
 text RatCave_LilycoveCity_2F_Text_RatduardoDefeat{
-    "I... just.. want to be...\n
-    free..."
+    "I… just… want to be…\n
+    free…"
 }
 
 script RatCave_LilycoveCity_2F_BattleOver{

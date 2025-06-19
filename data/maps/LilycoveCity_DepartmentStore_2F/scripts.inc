@@ -542,7 +542,7 @@ LilycoveCity_DepartmentStore_2F_Text_Mae::
 
 LilycoveCity_DepartmentStore_2F_Text_MaeDefeat::
 # 204 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	.string "Slay...$"
+	.string "Slay…$"
 
 LilycoveCity_DepartmentStore_2F_Text_Cook::
 # 208 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
@@ -550,4 +550,4 @@ LilycoveCity_DepartmentStore_2F_Text_Cook::
 
 LilycoveCity_DepartmentStore_2F_Text_Cook2::
 # 215 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	.string "WORKER: Minimum wage to deal\n with customers like this... Really?$"
+	.string "WORKER: Minimum wage to deal\n with customers like this… Really?$"

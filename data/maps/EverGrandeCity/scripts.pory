@@ -158,15 +158,15 @@ text EverGrandeCity_Text_Bennis1{
 }
 
 text EverGrandeCity_BennisDefeat{
-    "Everyone's so mean to me..."
+    "Everyone's so mean to me…"
 }
 
 text EverGrandeCity_Text_Asak3{
     "MASTER BENNIS: Hm.\n
     Still beefy.\p
-    PANINI: P-Panini...\p
-    ASAK: Kuh.... W-We won't...\n
-    ... Forget..."
+    PANINI: P-Panini…\p
+    ASAK: Kuh… W-We won't…\n
+    ……"
 }
 
 movement EverGrandeCity_Movement_BennisRight{
@@ -300,12 +300,12 @@ text EverGrandeCity_Text_James2{
 }
 
 text EvergrandeCity_JamesDefeat{
-    "...\n
+    "…\n
     I guess it still wasn't enough."
 }
 
 text EverGrandeCity_Text_James3{
-    "JAMES: ...\n
+    "JAMES: …\n
     It feels like I was somehow always\l
     destined to lose to you, {PLAYER}.\p
     Even so, I'm glad my mom had me\n

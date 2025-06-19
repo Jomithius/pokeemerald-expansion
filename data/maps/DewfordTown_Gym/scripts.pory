@@ -339,7 +339,7 @@ DewfordTown_Gym_Text_BrawlyIntro:
 
 DewfordTown_Gym_Text_BrawlyDefeat:
 	.string "Aw, man.\n"
-	.string "My poor POOBLES...\p"
+	.string "My poor POOBLES…\p"
 	.string "Okay, you've got me.\n"
 	.string "Take this GYM BADGE.$"
 

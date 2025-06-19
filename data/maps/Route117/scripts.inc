@@ -712,11 +712,11 @@ Route117_MisaFriendlyBattle_Text_0:
 
 AraquanidFailed_Text_0:
 # 411 "data/maps/Route117/scripts.pory"
-	.string "The ARAQUANID disappeared...$"
+	.string "The ARAQUANID disappeared…$"
 
 Route117_MisaHello::
 # 319 "data/maps/Route117/scripts.pory"
-	.string "MISA: Oh! {PLAYER}!\n It's so good to see you again!\p I stopped by a friend's house in\n VERDANTURF on my way back to\l EVER GRANDE CITY.\p I just love the flowers here!\p Anyways, how's your journey going?\n ...\p Two badges already?!\n I'm so proud of you!\p I'd love to see how much you've grown!\n How about a friendly battle?$"
+	.string "MISA: Oh! {PLAYER}!\n It's so good to see you again!\p I stopped by a friend's house in\n VERDANTURF on my way back to\l EVER GRANDE CITY.\p I just love the flowers here!\p Anyways, how's your journey going?\n … … … …\p Two badges already?!\n I'm so proud of you!\p I'd love to see how much you've grown!\n How about a friendly battle?$"
 
 Route117_Text_MisaFlowers::
 # 334 "data/maps/Route117/scripts.pory"
@@ -724,7 +724,7 @@ Route117_Text_MisaFlowers::
 
 Route117_MisaAnotherTime::
 # 340 "data/maps/Route117/scripts.pory"
-	.string "Oh...\n Maybe another time, then!$"
+	.string "Oh…\n Maybe another time, then!$"
 
 Route117_MisaAboutTheBattle::
 # 344 "data/maps/Route117/scripts.pory"
@@ -736,7 +736,7 @@ Route117_MisaDefeat::
 
 Route117_MisaPostBattle::
 # 352 "data/maps/Route117/scripts.pory"
-	.string "MISA: Wow! I can tell you and your\n POKéMON really share a strong bond.\p I'm excited to see how much more\n you'll grow!\p$"
+	.string "Wow! I can tell you and your\n POKéMON really share a strong bond.\p I'm excited to see how much more\n you'll grow!\p$"
 
 Route117_Text_MisaLeftovers::
 # 359 "data/maps/Route117/scripts.pory"

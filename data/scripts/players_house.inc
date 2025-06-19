@@ -482,8 +482,20 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	closemessage
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 4
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4
+	call PlayersHouse_1F_EventScript_CallFromCeo
 	releaseall
 	end
+
+@custom
+PlayersHouse_1F_EventScript_CallFromCeo::
+	pokenavcall PlayersHouse_1F_Text_CeoComeMeetMeInLilycove
+	waitmessage
+	setvar VAR_CEO_STATE, 1
+	setflag FLAG_BEFORE_ELITE_4_REMATCH
+	setflag FLAG_HIDE_GYM_LEADERS
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	return
+
 
 @ Never called.
 PlayersHouse_1F_EventScript_AirLatiBroadcast::

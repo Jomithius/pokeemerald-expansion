@@ -206,8 +206,8 @@ Petalburg_RatCave_Rock_Text_0:
 
 Ratduardo1_BattleOver_Text_0:
 # 92 "data/maps/RatCave_B2F/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes:\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't... try.. to follow...$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes:\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… try… to follow…$"
 
 Ratduardo_Outro::
 # 83 "data/maps/RatCave_B2F/scripts.pory"
-	.string "...$"
+	.string "…$"

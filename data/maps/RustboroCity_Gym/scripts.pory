@@ -152,7 +152,7 @@ RustboroCity_Gym_Text_TommyIntro:
 	.string "FIRE! FIRE! FIRE! FIRE!$"
 
 RustboroCity_Gym_Text_TommyDefeat:
-	.string "I'm all burnt out...$"
+	.string "I'm all burnt out…$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
 	.string "STEVE is stronger than me by\n"

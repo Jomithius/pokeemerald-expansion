@@ -129,7 +129,7 @@ ShoalCave_LowTideLowerRoom_Text_NicholasIntro::
 
 ShoalCave_LowTideLowerRoom_Text_NicholasDefeat::
 # 72 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	.string "Kuh...\n You've wounded a knights pride..$"
+	.string "Kuh…\n You've wounded a knights pride..$"
 
 ShoalCave_LowTideLowerRoom_Text_NicholasPostBattle::
 # 77 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"

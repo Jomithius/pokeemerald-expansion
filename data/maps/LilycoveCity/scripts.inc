@@ -1985,7 +1985,49 @@ LilycoveCity_EventScript_CEO_HighriseNoEntry::
 
 LilycoveCity_EventScript_StaffEmployee::
 # 1053 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_EventScript_StaffEmployee_Text_0, MSGBOX_NPC
+	msgbox LilycoveCity_EventScript_StaffEmployee_Text_0, MSGBOX_SIGN
+	end
+
+
+LilycoveCity_EventScript_CEO_HighriseWelcome::
+# 1063 "data/maps/LilycoveCity/scripts.pory"
+	lock
+# 1064 "data/maps/LilycoveCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 1065 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 1066 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, Common_Movement_WalkInPlaceRight
+# 1067 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 30
+# 1068 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_Text_StaffEmployee2, MSGBOX_DEFAULT
+# 1069 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1070 "data/maps/LilycoveCity/scripts.pory"
+	playse SE_PIN
+# 1071 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, Common_Movement_ExclamationMark
+# 1072 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 30
+# 1073 "data/maps/LilycoveCity/scripts.pory"
+	waitse
+# 1074 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_Text_StaffEmployee3, MSGBOX_DEFAULT
+# 1075 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1076 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, Common_Movement_FaceOriginalDirection
+# 1077 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 30
+# 1078 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 1079 "data/maps/LilycoveCity/scripts.pory"
+	warpdoor MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR, 8, 7
+# 1080 "data/maps/LilycoveCity/scripts.pory"
+	waitstate
+# 1081 "data/maps/LilycoveCity/scripts.pory"
+	release
 	end
 
 
@@ -2048,3 +2090,11 @@ LilycoveCity_Text_Man4::
 LilycoveCity_Text_StaffEmployee::
 # 1057 "data/maps/LilycoveCity/scripts.pory"
 	.string "Sorry. This area is restricted.\n Cleared personnel only.$"
+
+LilycoveCity_Text_StaffEmployee2::
+# 1085 "data/maps/LilycoveCity/scripts.pory"
+	.string "Sorry, could I see your TRAINER CARD?\n … … … … … …$"
+
+LilycoveCity_Text_StaffEmployee3::
+# 1090 "data/maps/LilycoveCity/scripts.pory"
+	.string "Ah, CHAMPION {PLAYER}! My apologies.\n Please, go ahead.$"

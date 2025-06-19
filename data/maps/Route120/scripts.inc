@@ -952,4 +952,4 @@ VikavoltFailed::
 
 VikavoltFailed_Text_0:
 # 476 "data/maps/Route120/scripts.pory"
-	.string "The VIKAVOLT disappeared...$"
+	.string "The VIKAVOLT disappeared…$"

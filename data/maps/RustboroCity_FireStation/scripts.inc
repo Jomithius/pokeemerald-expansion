@@ -197,7 +197,7 @@ RustboroCity_FireStation_Man_Text_0:
 
 RustboroCity_FireStation_FatMan_Text_0:
 # 50 "data/maps/RustboroCity_FireStation/scripts.pory"
-	.string "Ah, MISA's back in town...\l I wish she would smother me...$"
+	.string "Ah, MISA's back in town…\l I wish she would smother me…$"
 
 RustboroCity_FireStation_FatMan_Text_1:
 # 59 "data/maps/RustboroCity_FireStation/scripts.pory"

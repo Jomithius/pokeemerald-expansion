@@ -143,7 +143,7 @@ WachunpelonCity_EventScript_PolicemanNorth_6:
 # 81 "data/maps/WachunpelonCity/scripts.pory"
 	setflag FLAG_HIDE_POLICEMAN_WACHUNPELON
 # 82 "data/maps/WachunpelonCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 8
+	setvar VAR_SPEEDWAGON_STATE, 9
 # 83 "data/maps/WachunpelonCity/scripts.pory"
 	warpdoor MAP_WACHUNPELON_CITY_SEWER, 26, 5
 # 84 "data/maps/WachunpelonCity/scripts.pory"
@@ -266,7 +266,7 @@ WachunpelonCity_Text_Policeman1::
 
 WachunpelonCity_Text_PolicemanBikersRoute123::
 # 144 "data/maps/WachunpelonCity/scripts.pory"
-	.string "It's you! Thanks again for your help on\n ROUTE 110.\p I heard you drove those thugs away from\n ROUTE 123 as well.\p Most of the bikers have been arrested\n already.\l Only the boss along with a couple of\l members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
+	.string "It's you! Thanks again for your help on\n ROUTE 110.\p I heard you drove those thugs away from\n ROUTE 123 as well.\p Most of them have been arrested\n already.\l Only the boss along with a couple of\l members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
 
 WachunpelonCity_Text_PolicemanNo::
 # 163 "data/maps/WachunpelonCity/scripts.pory"

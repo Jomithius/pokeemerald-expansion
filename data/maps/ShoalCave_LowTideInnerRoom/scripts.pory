@@ -174,7 +174,7 @@ text ShoalCave_LowTideInnerRoom_Text_BungletonIntro{
 }
 
 text ShoalCave_LowTideInnerRoom_Text_BungletonDefeat{
-    "B-Brother...?!"
+    "B-Brother…?!"
 }
 
 text ShoalCave_LowTideInnerRoom_Text_BungletonPostBattle{
@@ -188,7 +188,7 @@ text ShoalCave_LowTideInnerRoom_Text_DaquaviusIntro{
 }
 
 text ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat{
-    "Look like I need more training..."
+    "Look like I need more training…"
 }
 
 text ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle{

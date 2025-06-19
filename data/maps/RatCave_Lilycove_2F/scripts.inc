@@ -92,8 +92,8 @@ LilycoveCity_RatCave_Rock_Text_0:
 
 RatCave_LilycoveCity_2F_Text_RatduardoIntro::
 # 28 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	.string "...!$"
+	.string "…!$"
 
 RatCave_LilycoveCity_2F_Text_RatduardoDefeat::
 # 32 "data/maps/RatCave_Lilycove_2F/scripts.pory"
-	.string "I... just.. want to be...\n free...$"
+	.string "I… just… want to be…\n free…$"

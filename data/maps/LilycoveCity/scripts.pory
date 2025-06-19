@@ -1050,11 +1050,44 @@ script LilycoveCity_EventScript_CEO_HighriseNoEntry{
 }
 
 script LilycoveCity_EventScript_StaffEmployee{
-	msgbox("…", MSGBOX_NPC)
+	msgbox("…", MSGBOX_SIGN)
 	end
 }
 
 text LilycoveCity_Text_StaffEmployee{
 	"Sorry. This area is restricted.\n
 	Cleared personnel only."
+}
+
+script LilycoveCity_EventScript_CEO_HighriseWelcome{
+	lock
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	waitmovement(0)
+	applymovement(30, Common_Movement_WalkInPlaceRight)
+	waitmovement(30)
+	msgbox(LilycoveCity_Text_StaffEmployee2, MSGBOX_DEFAULT)
+	waitmessage
+	playse(SE_PIN)
+	applymovement(30, Common_Movement_ExclamationMark)
+	waitmovement(30)
+	waitse
+	msgbox(LilycoveCity_Text_StaffEmployee3, MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(30, Common_Movement_FaceOriginalDirection)
+	waitmovement(30)
+	closemessage
+	warpdoor(MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR, 8, 7)
+	waitstate
+	release
+	end
+}
+
+text LilycoveCity_Text_StaffEmployee2{
+	"Sorry, could I see your TRAINER CARD?\n
+	… … … … … …"
+}
+
+text LilycoveCity_Text_StaffEmployee3{
+	"Ah, CHAMPION {PLAYER}! My apologies.\n
+	Please, go ahead."
 }

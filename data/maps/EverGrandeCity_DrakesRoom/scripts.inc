@@ -141,7 +141,7 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 # 71 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 EverGrandeCity_DrakesRoom_Text_Defeat:
 # 72 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	.string "I swear to god dude...$"
+	.string "I swear to god dude…$"
 # 73 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 
 # 74 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"

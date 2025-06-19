@@ -2833,7 +2833,7 @@ PetalburgCity_Gym_Text_GeorgePostBattle:
 # 1417 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_Text_GeorgePostBadge:
 # 1418 "data/maps/PetalburgCity_Gym/scripts.pory"
-	.string "Seriously...\n"
+	.string "Seriously…\n"
 # 1419 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Nobody's gonna say anything?$"
 # 1420 "data/maps/PetalburgCity_Gym/scripts.pory"

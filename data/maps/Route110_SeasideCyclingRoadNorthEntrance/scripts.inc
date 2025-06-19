@@ -214,4 +214,4 @@ Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy::
 
 Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge::
 # 99 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	.string "That BADGE...! You must be a strong\n TRAINER.\p Okay, I won't stop you.\n Please, help us!$"
+	.string "That BADGE…! You must be a strong\n TRAINER.\p Okay, I won't stop you.\n Please, help us!$"

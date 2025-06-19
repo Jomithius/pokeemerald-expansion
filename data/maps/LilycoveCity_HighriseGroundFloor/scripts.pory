@@ -1,1 +1,87 @@
-mapscripts LilycoveCity_HighriseGroundFloor_MapScripts {}
+mapscripts LilycoveCity_HighriseGroundFloor_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+    VAR_CEO_STATE, 1: LilycoveCity_HighriseGroundFloor_EventScript_ToElevator
+    ]
+}
+
+script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
+    lock
+    applymovement(6, Common_Movement_WalkDown)
+    waitmovement(6)
+    msgbox(LilycoveCity_HighriseGroundFloor_Text_Attendant, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_FOLLOW_ME, FALSE)
+    applymovement(6, Common_Movement_WalkUp4)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4)
+    waitmovement(0)
+    opendoor(8, 1)
+    waitdooranim
+    applymovement(6, Common_Movement_WalkUp)
+    waitmovement(6)
+    removeobject(6)
+    closedoor(8, 1)
+    waitdooranim
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    warpdoor(MAP_LILYCOVE_CITY_HIGHRISE_ELEVATOR, 2, 6)
+    waitstate
+    release
+    end  
+}
+
+text LilycoveCity_HighriseGroundFloor_Text_Attendant{
+    "Welcome, {PLAYER}.\n
+    We have been expecting you.\p
+    Please, allow me to show you to\n
+    the CEO's office."
+}
+
+script LilycoveCity_HighriseGroundFloor_EventScript_NoEntry{
+	lock
+	playse(SE_PIN)
+	applymovement(2, Common_Movement_ExclamationMark)
+	waitmovement(2)
+	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	applymovement(2, Common_Movement_WalkInPlaceRight)
+	waitmovement(2)
+	msgbox(LilycoveCity_HighriseGroundFloor_Text_StaffEmployee, MSGBOX_AUTOCLOSE)
+	waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+	applymovement(2, Common_Movement_WalkInPlaceDown)
+	waitmovement(2)
+	release
+	end
+}
+
+text LilycoveCity_HighriseGroundFloor_Text_StaffEmployee{
+    "I'm sorry CHAMPION, but you're not\n
+    scheduled to meet with the CEO."
+}
+
+script LilycoveCity_HighriseGroundFloor_EventScript_Woman{
+    msgbox("They said my meeting would be in “like\n
+       an hour”, but that was two hours ago…", MSGBOX_NPC)
+    end
+}
+
+script LilycoveCity_HighriseGroundFloor_EventScript_StaffMember{
+    msgbox("…", MSGBOX_SIGN)
+    end
+}
+
+script LilycoveCity_HighriseGroundFloor_EventScript_Gentleman{
+    msgbox("I finally get to meet with the CEO.\n
+        I can't wait.", MSGBOX_NPC)
+    end
+}
+
+script LilycoveCity_HighriseGroundFloor_EventScript_Maniac{
+    msgbox("I heard rumors that the CEO has\n
+        experience with things of the occult.\l
+        Namely, the void…\l
+        I'm going to ask him about it.", MSGBOX_NPC)
+    end
+}

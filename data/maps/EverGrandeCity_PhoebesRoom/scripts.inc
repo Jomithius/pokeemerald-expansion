@@ -123,7 +123,7 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 # 62 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Huh?\p"
 # 63 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	.string "Oh... A challenger? Hmph!\n"
+	.string "Oh… A challenger? Hmph!\n"
 # 64 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "I was just getting to the good part.\p"
 # 65 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
@@ -135,7 +135,7 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 # 68 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 EverGrandeCity_PhoebesRoom_Text_Defeat:
 # 69 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	.string "... Fight's over?\n"
+	.string "… Fight's over?\n"
 # 70 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Now I can get back to reading.$"
 # 71 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
@@ -303,11 +303,11 @@ EverGrandeCity_PhoebesRoom_Text_LinaStillGoingIntoHouses::
 
 EverGrandeCity_PhoebesRoom_Text_LinaDidYouTakeEevee::
 # 182 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	.string "Hmph! Of course you are.\p They still haven't found my EEVEE,\n by the way...\p So be honest. Was it you who took it?$"
+	.string "Hmph! Of course you are.\p They still haven't found my EEVEE,\n by the way…\p So be honest. Was it you who took it?$"
 
 EverGrandeCity_PhoebesRoom_Text_LinaReally::
 # 189 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	.string "... Really?$"
+	.string "… Really?$"
 
 EverGrandeCity_PhoebesRoom_Text_EugeniaIntro::
 # 193 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"

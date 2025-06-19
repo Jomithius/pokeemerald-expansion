@@ -208,7 +208,7 @@ text LilycoveCity_DepartmentStore_5F_Text_Misa2{
     "MISA: I ran into JAMES earlier.\n
     He seems really motivated since\l
     meeting you.\p
-    I also his noticed his... behavior\n
+    I also his noticed his… behavior\n
     has changed a bit as well.\p
     Maybe he's growing from his experiences\n
     he's had on this journey.\p
@@ -256,7 +256,7 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Lina{
 text LilcoveCity_DepartmentStore_5F_Text_Lina1{
     "What?\n
     The next “Muscles & Monsters” still\l
-    isn't in yet..."
+    isn't in yet…"
 }
 
 text LilcoveCity_DepartmentStore_5F_Text_Lina2{

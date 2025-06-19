@@ -169,7 +169,7 @@
 #define FLAG_MR_BRINEY_SAILING_INTRO         0x93
 #define FLAG_DOCK_REJECTED_DEVON_GOODS       0x94
 #define FLAG_DELIVERED_DEVON_GOODS           0x95
-#define FLAG_RECEIVED_CONTEST_PASS           0x96 // Unused, leftover from R/S
+#define FLAG_BEFORE_ELITE_4_REMATCH          0x96 // For postgame before rechalling E4
 #define FLAG_RECEIVED_CASTFORM               0x97
 #define FLAG_RECEIVED_SUPER_ROD              0x98
 #define FLAG_RUSTBORO_NPC_TRADE_COMPLETED    0x99
@@ -660,23 +660,22 @@
 #define FLAG_RECEIVED_TM_CLOSE_COMBAT    0x266 // Sootopolis City House 1
 #define FLAG_RECEIVED_TM_VOLT_SWITCH     0x267 // Mauville Gym
 #define FLAG_FOUND_TM_ROCK_SLIDE         0x268 // Fallarbor Rat Cave
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
+#define FLAG_HIDE_ENTEI                  0x269 // Static Encounter Scorched Slab
+#define FLAG_HIDE_RAIKOU                 0x26A // Static Encounter New Mauville
+#define FLAG_HIDE_SUICUNE                0x26B // Static Encounter Meteor Falls
+#define FLAG_HIDE_MOLTRES                0x26C // Static Encounter Fiery Path
+#define FLAG_HIDE_ARTICUNO               0x26D // Static Encounter Meteor Falls
+#define FLAG_HIDE_ZAPDOS                 0x26E // Static Encounter New Mauville
+#define FLAG_HIDE_GALARIAN_MOLTRES       0x26F // Static Encounter Mt. Pyre
+#define FLAG_HIDE_GALARIAN_ZAPDOS        0x270 // Static Encounter Route 123
+#define FLAG_HIDE_GALARIAN_ARTICUNO      0x271 // Static Encounter Mt. Pyre
+#define FLAG_HIDE_ARCEUS                 0x272 // Static Encounter Cave Of Origin
+#define FLAG_HIDE_DIALGA                 0x273 // Static Encounter Cave of Origin
+#define FLAG_HIDE_PALKIA                 0x274 // Static Encounter Cave of Origin
+#define FLAG_HIDE_GIRATINA               0x275 // Static Encounter Mt. Pyre
+#define FLAG_HIDE_MARSHADOW              0x276 // Static Encounter Mt. Pyre
+#define FLAG_HIDE_ZERAORA                0x277 // Static Encounter New Mauville
+#define FLAG_HIDE_MEWTWO                 0x278 // Static Encounter Meteor Falls
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
@@ -1243,7 +1242,7 @@
 #define FLAG_HIDE_PETALBURG_CITY_LUNA                               0x4A5 // For Ratduardo Sidequest
 #define FLAG_HIDE_NPC_LUNA_HOUSE_PETALBURG                          0x4A6 // For Ratduardo Sidequest, NPC blocking door
 #define FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST             0x4A7 // For Ratduardo Sidequest, After Luna Leaves
-#define FLAG_HIDE_PETALBURG_GYM_LUNA_F                              0x4A8 // Not sure if needed, for LunaF in gym
+#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
 #define FLAG_RIBOMBEE_TOTEM                                         0x4A9 // Found at Rusturf Peak
 #define FLAG_HIDE_DACA_RUSTURF_PEAK                                 0x4AA // Rusturf Peak
 #define FLAG_RUSTURF_GALVANTULA                                     0x4AB // Rusturf 3F
@@ -1285,7 +1284,7 @@
 #define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
 #define FLAG_HIDE_RATDUARDO_FULLMOON                                0x4D0 // Ratduardo Cutscene Fullmoon Island
 #define FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE                         0x4D1 // Cleared if player defeats Darkrai before reaching Fullmoon
-#define FLAG_HIDE_STAFF_EMPLOYEE_LILYCOVE                           0x4D2 // Cleared after call from CEO
+#define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
 #define FLAG_HIDE_ASAK_BALDESIA                                     0x4D3 // For first CS in Baldesia
 #define FLAG_HIDE_PANINI_BALDESIA                                   0x4D4 // For first CS in Baldesia
 #define FLAG_HIDE_BENNIS_BALDESIA                                   0x4D5 // For first CS in Baldesia

@@ -514,11 +514,11 @@ EverGrandeCity_Text_Bennis1::
 
 EverGrandeCity_BennisDefeat::
 # 160 "data/maps/EverGrandeCity/scripts.pory"
-	.string "Everyone's so mean to me...$"
+	.string "Everyone's so mean to me…$"
 
 EverGrandeCity_Text_Asak3::
 # 164 "data/maps/EverGrandeCity/scripts.pory"
-	.string "MASTER BENNIS: Hm.\n Still beefy.\p PANINI: P-Panini...\p ASAK: Kuh.... W-We won't...\n ... Forget...$"
+	.string "MASTER BENNIS: Hm.\n Still beefy.\p PANINI: P-Panini…\p ASAK: Kuh… W-We won't…\n ……$"
 
 EverGrandeCity_Text_Nurse::
 # 193 "data/maps/EverGrandeCity/scripts.pory"
@@ -538,11 +538,11 @@ EverGrandeCity_Text_James2::
 
 EvergrandeCity_JamesDefeat::
 # 302 "data/maps/EverGrandeCity/scripts.pory"
-	.string "...\n I guess it still wasn't enough.$"
+	.string "…\n I guess it still wasn't enough.$"
 
 EverGrandeCity_Text_James3::
 # 307 "data/maps/EverGrandeCity/scripts.pory"
-	.string "JAMES: ...\n It feels like I was somehow always\l destined to lose to you, {PLAYER}.\p Even so, I'm glad my mom had me\n go on this journey.\p I won't challenge the ELITE FOUR yet.\n But I know you're going to.$"
+	.string "JAMES: …\n It feels like I was somehow always\l destined to lose to you, {PLAYER}.\p Even so, I'm glad my mom had me\n go on this journey.\p I won't challenge the ELITE FOUR yet.\n But I know you're going to.$"
 
 EverGrandeCity_Text_James4::
 # 316 "data/maps/EverGrandeCity/scripts.pory"

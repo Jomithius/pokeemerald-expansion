@@ -69,7 +69,7 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "Thank.$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat:
-	.string "I swear to god dude...$"
+	.string "I swear to god dude…$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "Oh, well.\n"

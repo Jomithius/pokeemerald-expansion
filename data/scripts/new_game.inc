@@ -112,6 +112,25 @@ EventScript_ResetAllBerries::
 	setberrytree BERRY_TREE_ROUTE_130_LIECHI, ITEM_TO_BERRY(ITEM_LIECHI_BERRY), BERRY_STAGE_BERRIES
 	return
 
+@ custom
+EventScript_ResetAllLegendaries::
+	setflag FLAG_HIDE_ENTEI
+    setflag FLAG_HIDE_RAIKOU
+    setflag FLAG_HIDE_SUICUNE
+    setflag FLAG_HIDE_MOLTRES
+    setflag FLAG_HIDE_ARTICUNO
+    setflag FLAG_HIDE_ZAPDOS
+    setflag FLAG_HIDE_GALARIAN_MOLTRES
+    setflag FLAG_HIDE_GALARIAN_ZAPDOS
+    setflag FLAG_HIDE_GALARIAN_ARTICUNO
+    setflag FLAG_HIDE_ARCEUS
+    setflag FLAG_HIDE_DIALGA
+    setflag FLAG_HIDE_PALKIA
+    setflag FLAG_HIDE_GIRATINA
+    setflag FLAG_HIDE_MARSHADOW
+	setflag FLAG_HIDE_ZERAORA
+	return
+
 EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_CONTEST_POKE_BALL
 	setflag FLAG_HIDE_POLICEMAN_ROUTE_110
@@ -293,4 +312,5 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_SKY_PILLAR_WALLACE
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
 	call EventScript_ResetAllBerries
+	call EventScript_ResetAllLegendaries
 	end

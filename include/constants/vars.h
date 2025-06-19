@@ -269,7 +269,7 @@
 #define VAR_LINA_TALKED_TO                               0x40F9 // If Lina will recognize you at E4, 0-1 Lavaridge, 1-2 Lilycove, 3 Elite Four
 #define VAR_NEWMOON_ISLAND_STATE                         0x40FA // For Darkrai Event, 0-1 Bed in House
 #define VAR_FULLMOON_ISLAND_STATE                        0x40FB // For Cresselia/Ratduardo cutscene, 0-1
-#define VAR_CEO_STATE                                    0x40FC // For postgame events before rematches, 0 Lilycove Highrise,
+#define VAR_CEO_STATE                                    0x40FC // For unlocking postgame area, 0-1 Lilycove Highrise, 1-2 Meeting with CEO
 #define VAR_ULTRA_SPACE_STATE                            0x40FD // 0-1
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var

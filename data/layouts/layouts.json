@@ -5125,7 +5125,7 @@
       "id": "LAYOUT_LILYCOVE_CITY_HIGHRISE_ELEVATOR",
       "name": "LilycoveCity_HighriseElevator_Layout",
       "width": 5,
-      "height": 6,
+      "height": 7,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleFrontier",
       "border_filepath": "data/layouts/LilycoveCity_HighriseElevator/border.bin",
@@ -5150,16 +5150,6 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/LilycoveCity_HighriseFloor2/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_HighriseFloor2/map.bin"
-    },
-    {
-      "id": "LAYOUT_THE_VOID",
-      "name": "TheVoid_Layout",
-      "width": 20,
-      "height": 40,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Void",
-      "border_filepath": "data/layouts/TheVoid/border.bin",
-      "blockdata_filepath": "data/layouts/TheVoid/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE138",
@@ -5520,6 +5510,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SnowdriftCity_House6/border.bin",
       "blockdata_filepath": "data/layouts/SnowdriftCity_House6/map.bin"
+    },
+    {
+      "id": "LAYOUT_VOID",
+      "name": "Void_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Void",
+      "border_filepath": "data/layouts/Void/border.bin",
+      "blockdata_filepath": "data/layouts/Void/map.bin"
     }
   ]
 }

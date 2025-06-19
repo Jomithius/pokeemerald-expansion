@@ -537,19 +537,19 @@ Route112_PlayerWalkBackWest:
 
 Route112_EventScript_Emo_Text_0:
 # 168 "data/maps/Route112/scripts.pory"
-	.string "...$"
+	.string "…$"
 
 Route112_Text_Emo1::
 # 243 "data/maps/Route112/scripts.pory"
-	.string "JAMES: {PLAYER}...\n We meet again.\p My power has increased since we\n last battled.\p My eye... It now burns hotter than\n the FIERY PATH..\p This time, I, JOMITHIUS, will\n achieve victory!$"
+	.string "JAMES: {PLAYER}…\n We meet again.\p My power has increased since we\n last battled.\p My eye… It now burns hotter than\n the FIERY PATH..\p This time, I, JOMITHIUS, will\n achieve victory!$"
 
 Route112_EmoDefeat::
 # 254 "data/maps/Route112/scripts.pory"
-	.string "I'm in my abyss...$"
+	.string "I'm in my abyss…$"
 
 Route112_Text_Emo2::
 # 258 "data/maps/Route112/scripts.pory"
-	.string "JAMES: So victory still eludes\n me...\l You're a worthy adversary.\p Out of respect for your\n power, I'll give you this.$"
+	.string "JAMES: So victory still eludes\n me…\l You're a worthy adversary.\p Out of respect for your\n power, I'll give you this.$"
 
 Route112_Text_Emo3::
 # 266 "data/maps/Route112/scripts.pory"
