@@ -1376,3 +1376,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SnowdriftCity_House6/scripts.inc"
 
 	.include "data/maps/Void/scripts.inc"
+
+	.include "data/maps/AreaZero/scripts.inc"
+
+	.include "data/maps/AreaZero_Prehistoric/scripts.inc"
+
+	.include "data/maps/AreaZero_Futuristic/scripts.inc"

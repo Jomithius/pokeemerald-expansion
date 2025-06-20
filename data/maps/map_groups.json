@@ -155,7 +155,10 @@
     "SnowdriftCity_House3",
     "NewMap3",
     "SnowdriftCity_House5",
-    "SnowdriftCity_House6"
+    "SnowdriftCity_House6",
+    "AreaZero",
+    "AreaZero_Prehistoric",
+    "AreaZero_Futuristic"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

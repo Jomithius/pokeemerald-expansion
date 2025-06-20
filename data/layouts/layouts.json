@@ -5520,6 +5520,36 @@
       "secondary_tileset": "gTileset_Void",
       "border_filepath": "data/layouts/Void/border.bin",
       "blockdata_filepath": "data/layouts/Void/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREA_ZERO",
+      "name": "AreaZero_Layout",
+      "width": 32,
+      "height": 16,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AreaZero/border.bin",
+      "blockdata_filepath": "data/layouts/AreaZero/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREA_ZERO_PREHISTORIC",
+      "name": "AreaZero_Prehistoric_Layout",
+      "width": 26,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ShadyForest",
+      "border_filepath": "data/layouts/AreaZero_Prehistoric/border.bin",
+      "blockdata_filepath": "data/layouts/AreaZero_Prehistoric/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREA_ZERO_FUTURISTIC",
+      "name": "AreaZero_Futuristic_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/AreaZero_Futuristic/border.bin",
+      "blockdata_filepath": "data/layouts/AreaZero_Futuristic/map.bin"
     }
   ]
 }

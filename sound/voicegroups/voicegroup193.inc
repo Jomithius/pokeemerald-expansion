@@ -47,7 +47,7 @@ voicegroup193::
 	voice_directsound 58, 79, DirectSoundWaveData_unknown_close_hihat, 255, 127, 0, 188
 	voice_directsound 54, 64, DirectSoundWaveData_unused_sc55_tom, 255, 216, 77, 204
 	voice_directsound_no_resample 60, 79, DirectSoundWaveData_unknown_open_hihat, 255, 242, 141, 0
-	voice_directsound 57, 69, DirectSoundWaveData_unused_sc55_tom, 255, 210, 77, 204
+	voice_directsound 57, 64, DirectSoundWaveData_unused_sc55_tom, 255, 210, 77, 204
 	voice_directsound 60, 79, DirectSoundWaveData_unused_sc55_tom, 255, 204, 77, 204                      @ C4
 	voice_directsound_no_resample 60, 14, DirectSoundWaveData_trinity_cymbal_crash, 255, 235, 0, 165
 	voice_directsound 60, 79, DirectSoundWaveData_unused_sc55_tom, 255, 204, 77, 204

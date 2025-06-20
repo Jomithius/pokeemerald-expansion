@@ -581,6 +581,9 @@
 #define MUS_ENCOUNTER_GOLD          643
 #define MUS_GOLD_27                 644
 #define MUS_GOLD_12                 645
+#define MUS_AREA_ZERO               646
+#define MUS_AREA_ZERO_WILD_BATTLE   647
+#define MUS_LEGENDARY_QUARTET       648
 
 
 

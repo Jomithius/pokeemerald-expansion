@@ -129,6 +129,7 @@ EventScript_ResetAllLegendaries::
     setflag FLAG_HIDE_GIRATINA
     setflag FLAG_HIDE_MARSHADOW
 	setflag FLAG_HIDE_ZERAORA
+	setflag FLAG_HIDE_COSMOG_ULTRA_SPACE
 	return
 
 EventScript_ResetAllMapFlags::

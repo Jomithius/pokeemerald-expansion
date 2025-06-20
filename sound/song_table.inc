@@ -647,6 +647,9 @@ gSongTable::
 	song mus_encounter_gold, 0, 0
 	song mus_gold_27, 0, 0
 	song mus_gold_12, 0, 0
+	song mus_area_zero, 0, 0
+	song mus_area_zero_wild_battle, 0, 0
+	song mus_legendary_quartet, 0, 0
 
 	.align 2
 dummy_song_header:

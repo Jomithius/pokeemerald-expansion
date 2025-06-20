@@ -1299,8 +1299,8 @@
 #define FLAG_HIDE_POLICEMAN_WACHUNPELON_SEWERS                      0x4DE // For Speedwagon Event Wachunpelon
 #define FLAG_HIDE_POKEMON_WACHUNPELON_SEWERS                        0x4DF // For Speedwagon Event Wachunpelon
 #define FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS                     0x4E0 // For Speedwagon Event Wachunpelon
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
+#define FLAG_HIDE_JAMES_ULTRA_SPACE                                 0x4E1 // For Ultra Space Event
+#define FLAG_HIDE_COSMOG_ULTRA_SPACE                                0x4E2 // For Ultra Space Event
 #define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
