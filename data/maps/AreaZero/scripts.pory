@@ -18,5 +18,5 @@ script AreaZero_EventScript_Cosmog{
 }
 
 text AreaZero_Text_WouldYouLikeToReturn{
-    "Would you like to return to the LAB?"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Would you like to return to the LAB?"
 }

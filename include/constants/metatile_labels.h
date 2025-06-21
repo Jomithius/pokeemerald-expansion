@@ -143,6 +143,10 @@
 #define METATILE_Dewford_Door              0x225
 #define METATILE_Dewford_Door_BattleTower  0x25D
 
+// gTileset_DistortionWorld
+#define METATILE_DistortionWorld_Ultra_Space_PC_Bottom  0x2AF
+#define METATILE_DistortionWorld_Ultra_Space_PC_Top     0x29F
+
 // gTileset_EliteFour
 #define METATILE_EliteFour_EntryDoor_ClosedBottom    0x20E
 #define METATILE_EliteFour_EntryDoor_ClosedTop       0x206

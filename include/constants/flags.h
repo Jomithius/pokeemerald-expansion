@@ -460,8 +460,8 @@
 #define FLAG_REGISTERED_DRAKE                (TRAINER_REGISTERED_FLAGS_START + REMATCH_DRAKE)
 #define FLAG_REGISTERED_WALLACE              (TRAINER_REGISTERED_FLAGS_START + REMATCH_WALLACE)
 
-#define FLAG_UNUSED_0x1AA                    0x1AA // Unused Flag
-#define FLAG_UNUSED_0x1AB                    0x1AB // Unused Flag
+#define FLAG_DEFEATED_CELEBI                 0x1AA // TBD
+#define FLAG_DEFEATED_DIANCIE                0x1AB // Azure Mountain
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC
 #define FLAG_BATTLED_DEOXYS                  0x1AD
@@ -515,9 +515,9 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
+#define FLAG_DEFEATED_REGIGIAS               0x1DE // TBD
+#define FLAG_RECIEVED_TYPE_NULL              0x1DF // TBD
+#define FLAG_DEFEATED_OGERPON                0x1E0 // Eastern Ruins
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
@@ -655,93 +655,94 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
+// Static Encounters Legendaries, Mythicals, Paradox and Ultra Beasts
 #define FLAG_RECEIVED_TM_DEFOG           0x264 // Rusturf Tunnel 3F
 #define FLAG_RECEIVED_TM_DAZZLING_GLEAM  0x265 // Slateport Gym
 #define FLAG_RECEIVED_TM_CLOSE_COMBAT    0x266 // Sootopolis City House 1
 #define FLAG_RECEIVED_TM_VOLT_SWITCH     0x267 // Mauville Gym
 #define FLAG_FOUND_TM_ROCK_SLIDE         0x268 // Fallarbor Rat Cave
-#define FLAG_HIDE_ENTEI                  0x269 // Static Encounter Scorched Slab
-#define FLAG_HIDE_RAIKOU                 0x26A // Static Encounter New Mauville
-#define FLAG_HIDE_SUICUNE                0x26B // Static Encounter Meteor Falls
-#define FLAG_HIDE_MOLTRES                0x26C // Static Encounter Fiery Path
-#define FLAG_HIDE_ARTICUNO               0x26D // Static Encounter Meteor Falls
-#define FLAG_HIDE_ZAPDOS                 0x26E // Static Encounter New Mauville
-#define FLAG_HIDE_GALARIAN_MOLTRES       0x26F // Static Encounter Mt. Pyre
-#define FLAG_HIDE_GALARIAN_ZAPDOS        0x270 // Static Encounter Route 123
-#define FLAG_HIDE_GALARIAN_ARTICUNO      0x271 // Static Encounter Mt. Pyre
-#define FLAG_HIDE_ARCEUS                 0x272 // Static Encounter Cave Of Origin
-#define FLAG_HIDE_DIALGA                 0x273 // Static Encounter Cave of Origin
-#define FLAG_HIDE_PALKIA                 0x274 // Static Encounter Cave of Origin
-#define FLAG_HIDE_GIRATINA               0x275 // Static Encounter Mt. Pyre
-#define FLAG_HIDE_MARSHADOW              0x276 // Static Encounter Mt. Pyre
-#define FLAG_HIDE_ZERAORA                0x277 // Static Encounter New Mauville
-#define FLAG_HIDE_MEWTWO                 0x278 // Static Encounter Meteor Falls
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
-#define FLAG_UNUSED_0x283  0x283 // Unused Flag
-#define FLAG_UNUSED_0x284  0x284 // Unused Flag
-#define FLAG_UNUSED_0x285  0x285 // Unused Flag
-#define FLAG_UNUSED_0x286  0x286 // Unused Flag
-#define FLAG_UNUSED_0x287  0x287 // Unused Flag
-#define FLAG_UNUSED_0x288  0x288 // Unused Flag
-#define FLAG_UNUSED_0x289  0x289 // Unused Flag
-#define FLAG_UNUSED_0x28A  0x28A // Unused Flag
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
-#define FLAG_UNUSED_0x28E  0x28E // Unused Flag
-#define FLAG_UNUSED_0x28F  0x28F // Unused Flag
-#define FLAG_UNUSED_0x290  0x290 // Unused Flag
-#define FLAG_UNUSED_0x291  0x291 // Unused Flag
-#define FLAG_UNUSED_0x292  0x292 // Unused Flag
-#define FLAG_UNUSED_0x293  0x293 // Unused Flag
-#define FLAG_UNUSED_0x294  0x294 // Unused Flag
-#define FLAG_UNUSED_0x295  0x295 // Unused Flag
-#define FLAG_UNUSED_0x296  0x296 // Unused Flag
-#define FLAG_UNUSED_0x297  0x297 // Unused Flag
-#define FLAG_UNUSED_0x298  0x298 // Unused Flag
-#define FLAG_UNUSED_0x299  0x299 // Unused Flag
-#define FLAG_UNUSED_0x29A  0x29A // Unused Flag
-#define FLAG_UNUSED_0x29B  0x29B // Unused Flag
-#define FLAG_UNUSED_0x29C  0x29C // Unused Flag
-#define FLAG_UNUSED_0x29D  0x29D // Unused Flag
-#define FLAG_UNUSED_0x29E  0x29E // Unused Flag
-#define FLAG_UNUSED_0x29F  0x29F // Unused Flag
-#define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
-#define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
-#define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
-#define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
-#define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
-#define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag
-#define FLAG_UNUSED_0x2A6  0x2A6 // Unused Flag
-#define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag
-#define FLAG_UNUSED_0x2A8  0x2A8 // Unused Flag
-#define FLAG_UNUSED_0x2A9  0x2A9 // Unused Flag
-#define FLAG_UNUSED_0x2AA  0x2AA // Unused Flag
-#define FLAG_UNUSED_0x2AB  0x2AB // Unused Flag
-#define FLAG_UNUSED_0x2AC  0x2AC // Unused Flag
-#define FLAG_UNUSED_0x2AD  0x2AD // Unused Flag
-#define FLAG_UNUSED_0x2AE  0x2AE // Unused Flag
-#define FLAG_UNUSED_0x2AF  0x2AF // Unused Flag
-#define FLAG_UNUSED_0x2B0  0x2B0 // Unused Flag
-#define FLAG_UNUSED_0x2B1  0x2B1 // Unused Flag
-#define FLAG_UNUSED_0x2B2  0x2B2 // Unused Flag
-#define FLAG_UNUSED_0x2B3  0x2B3 // Unused Flag
-#define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
-#define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
-#define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
-#define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
-#define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
-#define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
-#define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
-#define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
+#define FLAG_HIDE_ENTEI                  0x269 // Scorched Slab
+#define FLAG_HIDE_RAIKOU                 0x26A // New Mauville
+#define FLAG_HIDE_SUICUNE                0x26B // Meteor Falls
+#define FLAG_HIDE_MOLTRES                0x26C // Fiery Path
+#define FLAG_HIDE_ARTICUNO               0x26D // Meteor Falls
+#define FLAG_HIDE_ZAPDOS                 0x26E // New Mauville
+#define FLAG_HIDE_GALARIAN_MOLTRES       0x26F // Mt. Pyre
+#define FLAG_HIDE_GALARIAN_ZAPDOS        0x270 // Route 123
+#define FLAG_HIDE_GALARIAN_ARTICUNO      0x271 // Mt. Pyre
+#define FLAG_HIDE_ARCEUS                 0x272 // Cave Of Origin
+#define FLAG_HIDE_DIALGA                 0x273 // Cave of Origin
+#define FLAG_HIDE_PALKIA                 0x274 // Cave of Origin
+#define FLAG_HIDE_GIRATINA               0x275 // Mt. Pyre
+#define FLAG_HIDE_MARSHADOW              0x276 // Mt. Pyre
+#define FLAG_HIDE_ZERAORA                0x277 // New Mauville
+#define FLAG_HIDE_MEWTWO                 0x278 // Meteor Falls
+#define FLAG_DEFEATED_BLACEPHALON        0x27A // Ultra Space
+#define FLAG_DEFEATED_STAKATAKA          0x27B // Ultra Space
+#define FLAG_DEFEATED_GUZZLORD           0x27C // Ultra Space
+#define FLAG_DEFEATED_PHEROMOSA          0x27D // Ultra Space
+#define FLAG_DEFEATED_BUZZWOLE           0x27E // Ultra Space
+#define FLAG_DEFEATED_XURKITREE          0x27F // Ultra Space
+#define FLAG_DEFEATED_CELESTEELA         0x280 // Ultra Space
+#define FLAG_DEFEATED_KARTANA            0x281 // Ultra Space
+#define FLAG_DEFEATED_LUNALA             0x282 // Ultra Space
+#define FLAG_DEFEATED_SOLGALEO           0x283 // Ultra Space
+#define FLAG_DEFEATED_NECROZMA           0x284 // Ultra Space
+#define FLAG_DEFEATED_CRESSELIA          0x285 // Fullmoon Island
+#define FLAG_DEFEATED_TAPU_FINI          0x286 // Beachside Cave
+#define FLAG_DEFEATED_TAPU_KOKO          0x287 // Flower Paradise
+#define FLAG_DEFEATED_TAPU_BULU          0x288 // Flower Paradise
+#define FLAG_DEFEATED_TAPU_LELE          0x289 // Flower Paradise
+#define FLAG_DEFEATED_MELOETTA           0x28A // Flower Paradise
+#define FLAG_DEFEATED_VICTINI            0x28B // Flower Paradise
+#define FLAG_DEFEATED_SHAYMIN            0x28C // Flower Paradise
+#define FLAG_DEFEATED_MIRAIDON           0x28D // Area Zero
+#define FLAG_DEFEATED_IRON_VALIANT       0x28E // Area Zero
+#define FLAG_DEFEATED_IRON_HANDS         0x28F // Area Zero
+#define FLAG_DEFEATED_IRON_LEAVES        0x290 // Area Zero
+#define FLAG_DEFEATED_IRON_CROWN         0x291 // Area Zero
+#define FLAG_DEFEATED_IRON_BOULDER       0x292 // Area Zero
+#define FLAG_DEFEATED_IRON_BUNDLE        0x293 // Area Zero
+#define FLAG_DEFEATED_IRON_TREADS        0x294 // Area Zero
+#define FLAG_DEFEATED_KORAIDON           0x295 // Area Zero
+#define FLAG_DEFEATED_RAGING_BOLT        0x296 // Area Zero
+#define FLAG_DEFEATED_WALKING_WAKE       0x297 // Area Zero
+#define FLAG_DEFEATED_GOUGING_FIRE       0x298 // Area Zero
+#define FLAG_DEFEATED_ROARING_MOON       0x299 // Area Zero
+#define FLAG_DEFEATED_FLUTTER_MANE       0x29A // Area Zero
+#define FLAG_DEFEATED_GREAT_TUSK         0x29B // Area Zero
+#define FLAG_DEFEATED_CHIEN_PAO          0x29C // Area Zero
+#define FLAG_DEFEATED_WO_CHIEN           0x29D // Area Zero
+#define FLAG_DEFEATED_TING_LU            0x29E // Area Zero
+#define FLAG_DEFEATED_CHI_YU             0x29F // Area Zero
+#define FLAG_RECIEVED_MELTAN             0x2A0 // TBD
+#define FLAG_DEFEATED_VOLCANION          0x2A1 // Azure Mountain
+#define FLAG_DEFEATED_HOOPA              0x2A2 // Azure Mountain
+#define FLAG_DEFEATED_GENESECT           0x2A3 // TBD
+#define FLAG_DEFEATED_KELDEO             0x2A4 // Azure Mountain
+#define FLAG_DEFEATED_COBALION           0x2A5 // Azure Mountain
+#define FLAG_DEFEATED_TERRAKION          0x2A6 // Azure Mountain
+#define FLAG_DEFEATED_VIRIZION           0x2A7 // Azure Mountain
+#define FLAG_DEFEATED_HEATRAN            0x2A8 // Azure Mountain
+#define FLAG_DEFEATED_REGIELEKI          0x2A9 // New Mauville
+#define FLAG_DEFEATED_REGIDRAGO          0x2AA // Sky Pillar
+#define FLAG_DEFEATED_RESHIRAM           0x2AB // Sky Pillar
+#define FLAG_DEFEATED_ZEKROM             0x2AC // Sky Pillar
+#define FLAG_DEFEATED_TORNADUS           0x2AD // Baldesia
+#define FLAG_DEFEATED_THUNDURUS          0x2AE // Baldesia
+#define FLAG_DEFEATED_LANDORUS           0x2AF // Baldesia
+#define FLAG_DEFEATED_ZACIAN             0x2B0 // TBD
+#define FLAG_DEFEATED_ZAMAZENTA          0x2B1 // TBD
+#define FLAG_DEFEATED_ENAMORUS           0x2B2 // TBD
+#define FLAG_DEFEATED_CALYREX            0x2B3 // Snowdrift City
+#define FLAG_DEFEATED_SPECTRIER          0x2B4 // Mt. Pyre
+#define FLAG_DEFEATED_GLASTRIER          0x2B5 // Snowdrift City
+#define FLAG_RECIEVED_KUBFU              0x2B6 // Baldesia
+#define FLAG_DEFEATED_UXIE               0x2B7 // TBD
+#define FLAG_DEFEATED_MESPRIT            0x2B8 // TBD
+#define FLAG_DEFEATED_AZELF              0x2B9 // TBD
+#define FLAG_DEFEATED_ZARUDE             0x2BA // TBD
+#define FLAG_DEFEATED_MAGEARNA           0x2BB // TBD
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
@@ -1242,7 +1243,7 @@
 #define FLAG_HIDE_PETALBURG_CITY_LUNA                               0x4A5 // For Ratduardo Sidequest
 #define FLAG_HIDE_NPC_LUNA_HOUSE_PETALBURG                          0x4A6 // For Ratduardo Sidequest, NPC blocking door
 #define FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST             0x4A7 // For Ratduardo Sidequest, After Luna Leaves
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
+#define FLAG_DEFEATED_XERNEAS                                       0x4A8 // TBD
 #define FLAG_RIBOMBEE_TOTEM                                         0x4A9 // Found at Rusturf Peak
 #define FLAG_HIDE_DACA_RUSTURF_PEAK                                 0x4AA // Rusturf Peak
 #define FLAG_RUSTURF_GALVANTULA                                     0x4AB // Rusturf 3F
@@ -1284,7 +1285,7 @@
 #define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
 #define FLAG_HIDE_RATDUARDO_FULLMOON                                0x4D0 // Ratduardo Cutscene Fullmoon Island
 #define FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE                         0x4D1 // Cleared if player defeats Darkrai before reaching Fullmoon
-#define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
+#define FLAG_DEFEATED_YVELTAL                                       0x4D2 // TBD
 #define FLAG_HIDE_ASAK_BALDESIA                                     0x4D3 // For first CS in Baldesia
 #define FLAG_HIDE_PANINI_BALDESIA                                   0x4D4 // For first CS in Baldesia
 #define FLAG_HIDE_BENNIS_BALDESIA                                   0x4D5 // For first CS in Baldesia
@@ -1386,8 +1387,8 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
-#define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
+#define FLAG_VISITED_ULTRA_SPACE                    (SYSTEM_FLAGS + 0x21) // custom
+#define FLAG_VISITED_ROUTE_135                      (SYSTEM_FLAGS + 0x22) // custom
 #define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag

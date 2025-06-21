@@ -1,1 +1,424 @@
-mapscripts Route135_Lab_MapScripts {}
+mapscripts Route135_Lab_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_ULTRA_SPACE_STATE, 0: Route135_Lab_EventScript_ToUltraSpace
+        VAR_ULTRA_SPACE_STATE, 3: Route135_Lab_EventScript_EndUltraSpace
+    ]
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+        VAR_ULTRA_SPACE_STATE, 3: Route135_EventScript_NPCPosition
+        VAR_ULTRA_SPACE_STATE, 4: Route135_EventScript_JamesPosition
+        VAR_ULTRA_SPACE_STATE, 5: Route135_EventScript_JamesPosition
+    ]
+}
+
+script Route135_EventScript_NPCPosition{
+    setflag(FLAG_VISITED_ROUTE_135)
+    setrespawn(HEAL_LOCATION_ROUTE135)
+    setobjectxy(1, 6, 9)
+    setobjectmovementtype(1, MOVEMENT_TYPE_FACE_UP)
+    setobjectxy(2, 8, 9)
+    setobjectxy(3, 6, 8)
+    setobjectmovementtype(3, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    end
+}
+
+script Route135_EventScript_JamesPosition{
+    setobjectxyperm(2, 5, 2)
+    setobjectmovementtype(1, MOVEMENT_TYPE_FACE_UP)
+    end
+}
+
+script Route135_Lab_EventScript_Maniac{
+    lock
+    if(var(VAR_ULTRA_SPACE_STATE) == 4){
+        msgbox(Route_135_Lab_Text_ImBusy, MSGBOX_DEFAULT)
+        waitmessage
+    }
+    release
+    end
+}
+
+script Route135_Lab_EventScript_James{
+    lock
+    faceplayer
+    msgbox(Route_135_Lab_Text_ImGoingToStayHere, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_WalkInPlaceUp)
+    waitmovement(1)
+    release
+    end
+}
+
+script Route135_Lab_EventScript_ToUltraSpace{
+    lock
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    waitse
+    applymovement(1, Route135_Lab_Movement_ManiacApproachPlayer)
+    waitmovement(1)
+    msgbox(Route135_Lab_Text_Maniac1, MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox(Route135_Lab_Text_Maniac2, MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, Route135_Lab_Movement_ManiacGoBackToPC)
+        delay(16)
+        applymovement(OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerGoBackToPC)
+        waitmovement(0)
+        msgbox(Route135_Lab_Text_Maniac3, MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, Common_Movement_WalkInPlaceRight)
+        waitmovement(1)
+        msgbox(" In fact, this POKéMON here came from one\n
+        of those rifts.\l
+        I've named it COSMOG.", MSGBOX_AUTOCLOSE)
+        applymovement(3, Common_Movement_WalkInPlaceLeft)
+        waitmovement(3)
+        playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+        waitmoncry
+        applymovement(1, Common_Movement_WalkInPlaceDown)
+        waitmovement(1)
+        msgbox(Route135_Lab_Text_Maniac4, MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, Common_Movement_WalkInPlaceUp)
+        waitmovement(1)
+        msgbox("Assistant!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        delay(20)
+        applymovement(2, Route135_Lab_Movement_JamesEnter)
+        waitmovement(2)
+        playse(SE_PIN)
+        applymovement(2, Common_Movement_ExclamationMark)
+        waitmovement(2)
+        waitse
+        applymovement(1, Common_Movement_WalkInPlaceLeft)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+        waitmovement(0)
+        msgbox(Route135_Lab_Text_James, MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, Common_Movement_WalkInPlaceDown)
+        delay(8)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+        waitmovement(0)
+        msgbox(Route135_Lab_Text_Maniac5, MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, Route135_Lab_Movement_ManiacStartExperiment)
+        delay(16)
+        applymovement(2, Route135_Lab_Movement_JamesStartExperiment)
+        delay(16)
+        applymovement(OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerStartExperiment)
+        waitmovement(2)
+        playbgm(MUS_NONE, FALSE)
+        msgbox(Route135_Lab_Text_Maniac6, MSGBOX_AUTOCLOSE)
+        waitmessage
+        closemessage
+        playse(SE_BERRY_BLENDER)
+        delay(60)
+        msgbox(Route135_Lab_Text_Maniac7, MSGBOX_AUTOCLOSE)
+        waitmessage
+        closemessage
+        playse(SE_BREAKABLE_DOOR)
+        waitse
+        delay(10)
+        call(Route135_Lab_Shake)
+        setvar(VAR_ULTRA_SPACE_STATE, 1)
+        warpwhitefade(MAP_ULTRA_SPACE, 40, 65)
+        waitstate
+    }
+    else{
+        msgbox(Route135_Lab_Text_ManiacNo, MSGBOX_AUTOCLOSE)
+        waitmessage
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+        waitmovement(0)
+        warp(MAP_ROUTE135, 8, 10)
+        waitstate
+    }
+    release
+    end
+}
+
+script Route135_Lab_Shake{
+    delay (30)
+    setvar(VAR_0x8004, 2) // vertical pan
+    setvar(VAR_0x8005, 6) // horizontal pan
+    setvar(VAR_0x8006, 8) // num shakes
+    setvar(VAR_0x8007, 4) // shake delay
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(20)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(10)
+    waitse
+    playse(SE_INTRO_BLAST)
+    delay(20)
+    return
+}
+
+script Route135_Lab_EventScript_Cosmog{
+    lock
+    faceplayer
+    playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script Route135_Lab_EventScript_EndUltraSpace{
+    lock
+    applymovement(1, Route_135_Lab_ManiacLookAround)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route_135_Lab_PlayerLookAround)
+    delay(8)
+    applymovement(2, Route_135_Lab_JamesLookAround)
+    waitmovement(0)
+    msgbox("We… We really returned…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_WalkInPlaceUp)
+    waitmovement(1)
+    msgbox(Route135_Lab_Text_Maniac8, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Route_135_Lab_Movement_ManiacReturnsToComputer)
+    delay(8)
+    applymovement(3, Route_135_Lab_Movement_CosmogReturnsToComputer)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    delay(8)
+    applymovement(2, Common_Movement_WalkInPlaceRight)
+    waitmovement(3)
+    applymovement(1, Common_Movement_WalkInPlaceLeft)
+    waitmovement(1)
+    msgbox(Route135_Lab_Text_Maniac9, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_WalkInPlaceRight)
+    waitmovement(1)
+    applymovement(2, Route_135_Lab_Movement_JamesFacePlayer)
+    waitmovement(2)
+    msgbox(Route135_Lab_Text_James2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(2, Common_Movement_WalkInPlaceUp)
+    waitmovement(2)
+    msgbox(Route135_Lab_Text_James3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(2, Route_135_Lab_Movement_JamesReturnsToComputer)
+    waitmovement(2)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    setvar(VAR_ULTRA_SPACE_STATE, 4)
+    release
+    end
+}
+
+movement Route135_Lab_Movement_ManiacApproachPlayer{
+    walk_left * 5
+    walk_down * 2
+}
+
+movement Route135_Lab_Movement_ManiacGoBackToPC{
+    walk_up * 3
+    walk_right * 4
+    walk_in_place_down
+}
+
+movement Route135_Lab_Movement_PlayerGoBackToPC{
+    walk_up * 3
+    walk_right * 4
+    walk_in_place_up
+}
+
+text Route135_Lab_Text_Maniac1{
+    "Hm? Are you the new intern?"
+}
+
+text Route135_Lab_Text_Maniac2{
+    "Resplendent!\n
+    You're just in time.\l
+    Come with me."
+}
+
+text Route135_Lab_Text_Maniac3{
+    "I presume you're already aware of\n
+    what's being researched here… but\l
+    to reiterate, I'm currently looking\l
+    into the possibility of traveling\l
+    to new worlds.\p
+    In fact, I discovered the existence of\n
+    different dimensions parallel to ours.\p
+    I've named the endless expanse\n
+    between these worlds ULTRA SPACE.\p
+    Around the world, there have been\n
+    rifts across the region that connect\l
+    our world to this ULTRA SPACE."
+    }
+
+text Route135_Lab_Text_Maniac4{
+    "Now I've reached a breakthrough in\n
+    my experiments and plan to attempt to\l
+    open a rift to the ULTRA SPACE.\p
+    You made it just in time.\n
+    Quite fortuitous, indeed."
+}
+
+movement Route135_Lab_Movement_JamesEnter{
+    walk_down * 5
+    walk_in_place_right
+}
+
+text Route135_Lab_Text_James{
+    "JAMES: {PLAYER}?\n
+    What are you doing here?"
+}
+
+text Route135_Lab_Text_Maniac5{
+    "MANIAC: Ah, so you two are\n
+    already acquainted.\p
+    Let us forgo the formalities and\n
+    get right to the experiment!"
+}
+
+movement Route135_Lab_Movement_ManiacStartExperiment{
+    walk_up * 3
+    walk_right
+    walk_in_place_up
+}
+
+movement Route135_Lab_Movement_JamesStartExperiment{
+    walk_up * 3
+    walk_right
+}
+
+movement Route135_Lab_Movement_PlayerStartExperiment{
+    walk_up * 2
+}
+
+movement Route_135_Lab_ManiacLookAround{
+    walk_in_place_down
+    delay_8
+    walk_in_place_left
+    delay_8
+    walk_in_place_up
+    delay_8
+    walk_in_place_right
+
+}
+
+movement Route_135_Lab_JamesLookAround{
+    walk_in_place_up
+    delay_8
+    walk_in_place_right
+    delay_8
+    walk_in_place_down
+    delay_8
+    walk_in_place_left
+
+}
+
+movement Route_135_Lab_PlayerLookAround{
+    walk_in_place_right
+    delay_8
+    walk_in_place_down
+    delay_8
+    walk_in_place_up
+    delay_8
+    walk_in_place_left
+
+}
+
+text Route135_Lab_Text_Maniac6{
+    "This machine I've built should be\n
+    capable of creating the rift…\l
+    Let us begin."
+}
+
+text Route135_Lab_Text_Maniac7{
+    "It's working! It's really working!\n
+    RESPLENDENT!\p
+    I knew I was a genius!\n
+    Wait… No! Something's wrong!"
+}
+
+text Route135_Lab_Text_ManiacNo{
+    "I see…\n
+    Well, this is a private LAB.\p
+    If you're not going to help me with\n
+    my research, you'll have to leave."
+}
+
+text Route135_Lab_Text_Maniac8{
+    "Great work COSMOG!\n
+    I must log all my findings this instant!"
+}
+
+text Route135_Lab_Text_Maniac9{
+    "MANIAC: Thanks for your work, intern.\n
+    You're free to do as you would.\p
+    I shall contact you if your assistance\n
+    is required again."
+}
+
+text Route135_Lab_Text_James2{
+    "…He's gonna be like that for a while.\n
+    Well, that was an experience.\p
+    What are you going to do now, {PLAYER}?\n
+    I'm going to stay here and help out more.\l
+    I think if I do, I'll find the answers\l
+    I'm looking for."
+}
+
+text Route135_Lab_Text_James3{
+    "I think I understand why JIMMY gave\n
+    me this job now…\l
+    Anyways, like the PROF. said, we'll\n
+    let you know if anything else happens.\p
+    See ya, {PLAYER}."
+}
+
+text Route_135_Lab_Text_ImGoingToStayHere{
+    "I don't know how long I'm going to\n
+    stay here but I don't mind it.\p
+    Yeah, it's in a rural area, but the people\n
+    are nice.\p
+    The PROF.'s a little weird, but I can\n
+    tolerate it."
+}
+
+
+movement Route_135_Lab_Movement_ManiacReturnsToComputer{
+    walk_fast_down
+    walk_fast_right * 5
+}
+
+movement Route_135_Lab_Movement_CosmogReturnsToComputer{
+    walk_down * 2
+    walk_right * 4
+    walk_up
+    walk_right
+    walk_in_place_down
+}
+
+movement Route_135_Lab_Movement_JamesFacePlayer{
+    walk_up
+    walk_in_place_left
+}
+
+movement Route_135_Lab_Movement_JamesReturnsToComputer{
+    walk_up * 3
+    walk_left * 2
+    walk_up * 2
+    walk_left
+    walk_up
+}
+
+text Route_135_Lab_Text_ImBusy{
+    "Salutations, Intern.\n
+    There's no new breakthroughs yet.\p
+    I'm busy now, so come back later."
+}

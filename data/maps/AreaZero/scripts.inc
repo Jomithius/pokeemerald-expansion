@@ -27,10 +27,10 @@ AreaZero_EventScript_Cosmog_1:
 
 AreaZero_EventScript_Cosmog_2:
 # 11 "data/maps/AreaZero/scripts.pory"
-	warpwhitefade MAP_ROUTE135_LAB, 7, 9
+	warpwhitefade MAP_ROUTE135_LAB, 10, 9
 	goto AreaZero_EventScript_Cosmog_1
 
 
 AreaZero_Text_WouldYouLikeToReturn::
 # 20 "data/maps/AreaZero/scripts.pory"
-	.string "Would you like to return to the LAB?$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Would you like to return to the LAB?$"
