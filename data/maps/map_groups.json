@@ -158,7 +158,11 @@
     "SnowdriftCity_House6",
     "AreaZero",
     "AreaZero_Prehistoric",
-    "AreaZero_Futuristic"
+    "AreaZero_Futuristic",
+    "AreaZero_KoriadonLair",
+    "AreaZero_MiraidonLair",
+    "AreaZero_RagingBoltLair",
+    "AreaZero_WalkingWakeLair"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

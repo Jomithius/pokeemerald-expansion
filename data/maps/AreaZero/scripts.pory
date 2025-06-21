@@ -1,1 +1,22 @@
 mapscripts AreaZero_MapScripts {}
+
+script AreaZero_EventScript_Cosmog{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    msgbox(AreaZero_Text_WouldYouLikeToReturn, MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        warpwhitefade(MAP_ROUTE135_LAB, 10, 9)
+    }
+    else{
+        applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    }
+    releaseall
+    end
+}
+
+text AreaZero_Text_WouldYouLikeToReturn{
+    "Would you like to return to the LAB?"
+}

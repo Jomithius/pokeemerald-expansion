@@ -5550,6 +5550,46 @@
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/AreaZero_Futuristic/border.bin",
       "blockdata_filepath": "data/layouts/AreaZero_Futuristic/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREA_ZERO_KORIADON_LAIR",
+      "name": "AreaZero_KoriadonLair_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ShadyForest",
+      "border_filepath": "data/layouts/AreaZero_KoriadonLair/border.bin",
+      "blockdata_filepath": "data/layouts/AreaZero_KoriadonLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREA_ZERO_MIRAIDON_LAIR",
+      "name": "AreaZero_MiraidonLair_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/AreaZero_MiraidonLair/border.bin",
+      "blockdata_filepath": "data/layouts/AreaZero_MiraidonLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREA_ZERO_RAGING_BOLT_LAIR",
+      "name": "AreaZero_RagingBoltLair_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ShadyForest",
+      "border_filepath": "data/layouts/AreaZero_RagingBoltLair/border.bin",
+      "blockdata_filepath": "data/layouts/AreaZero_RagingBoltLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREA_ZERO_WALKING_WAKE_LAIR",
+      "name": "AreaZero_WalkingWakeLair_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ShadyForest",
+      "border_filepath": "data/layouts/AreaZero_WalkingWakeLair/border.bin",
+      "blockdata_filepath": "data/layouts/AreaZero_WalkingWakeLair/map.bin"
     }
   ]
 }

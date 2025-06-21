@@ -1382,3 +1382,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AreaZero_Prehistoric/scripts.inc"
 
 	.include "data/maps/AreaZero_Futuristic/scripts.inc"
+
+	.include "data/maps/AreaZero_KoriadonLair/scripts.inc"
+
+	.include "data/maps/AreaZero_MiraidonLair/scripts.inc"
+
+	.include "data/maps/AreaZero_RagingBoltLair/scripts.inc"
+
+	.include "data/maps/AreaZero_WalkingWakeLair/scripts.inc"
