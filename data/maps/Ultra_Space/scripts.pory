@@ -3,11 +3,32 @@ mapscripts Ultra_Space_MapScripts {
         VAR_ULTRA_SPACE_STATE, 1: Ultra_Space_EventScript_ArrivedInUltraSpace 
     ]
     MAP_SCRIPT_ON_LOAD: Ultra_Space_UpdatePCMetatiles
+    MAP_SCRIPT_ON_RESUME: Ultra_Space_UpdateUltraBeasts
 }
 
 script Ultra_Space_UpdatePCMetatiles{
     call_if_set(FLAG_DEFEATED_BLACEPHALON, Ultra_Space_EventScript_AddPC)
     end
+}
+
+script Ultra_Space_UpdateUltraBeasts{
+    call_if_set(FLAG_DEFEATED_BLACEPHALON, Ultra_Space_RemoveBlacephalon)
+    call_if_ge(VAR_ULTRA_SPACE_STATE, 3, UltraSpace_TryRemoveUltraBeast)
+    end
+}
+
+script Ultra_Space_RemoveBlacephalon{
+    removeobject(4)
+    return
+}
+
+script UltraSpace_TryRemoveUltraBeast{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+    removeobject(VAR_LAST_TALKED)
+    return
 }
 
 script Ultra_Space_EventScript_ArrivedInUltraSpace{
@@ -37,6 +58,14 @@ script Ultra_Space_EventScript_ArrivedInUltraSpace{
     waitmovement(0)
     msgbox(Ultra_Space_Text_Maniac1, MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(1, Common_Movement_WalkInPlaceDown)
+    waitmovement(1)
+    applymovement(2, Common_Movement_WalkInPlaceLeft)
+    waitmovement(2)
+    msgbox("JAMES: Something…\p
+        Something about this place feels…\n
+        familiar.", MSGBOX_AUTOCLOSE)
+    waitmessage
     applymovement(1, Common_Movement_WalkInPlaceLeft)
     waitmovement(1)
     msgbox("I don't know why…", MSGBOX_AUTOCLOSE)
@@ -45,20 +74,25 @@ script Ultra_Space_EventScript_ArrivedInUltraSpace{
     waitmovement(1)
     msgbox(Ultra_Space_Text_James1, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(2, Common_Movement_WalkInPlaceLeft)
+    playse(SE_BIKE_HOP)
+    applymovement(2, Common_Movement_QuestionMark)
     waitmovement(2)
+    waitse
     msgbox(Ultra_Space_Text_Maniac2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(2, Common_Movement_WalkInPlaceDown)
+    waitmovement(2)
+    msgbox("Either way, let us follow his intuition\n
+        and keep moving.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(2, Ultra_Space_Movement_ManiacToCentralArea)
     delay(10)
     applymovement(1, Ultra_Space_Movement_JamesToCentralArea)
     waitmovement(0)
     delay(20)
-    setobjectxyperm(1, 30, 38)
-    setobjectmovementtype(1, MOVEMENT_TYPE_NONE)
-    setobjectxyperm(2, 29, 36)
-    setobjectmovementtype(2, MOVEMENT_TYPE_LOOK_AROUND)
-    special(DrawWholeMapView)
+    removeobject(1)
+    removeobject(2)
+    setflag(FLAG_HIDE_JAMES_ULTRA_SPACE)
     setvar(VAR_ULTRA_SPACE_STATE, 2)
     release
     end
@@ -68,63 +102,61 @@ script Ultra_Space_EventScript_Blacephalon{
     lock
     msgbox("JAMES: {PLAYER}! Over here!", MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(17, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Ultra_Space_Movement_PlayerToCentralArea)
     waitmovement(0)
-    applymovement(1, Common_Movement_WalkInPlaceLeft)
-    waitmovement(1)
+    applymovement(16, Common_Movement_WalkInPlaceLeft)
+    waitmovement(16)
     msgbox("JAMES: This area looks promising.\n
     He's investigating it now.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, Common_Movement_WalkInPlaceUp)
-    waitmovement(1)
+    applymovement(16, Common_Movement_WalkInPlaceUp)
+    waitmovement(16)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
-    waitmovement(1)
+    waitmovement(16)
+    applymovement(17, Ultra_Space_Movement_ManiacInvestigate)
+    waitmovement(0)
     msgbox(Ultra_Space_Text_Maniac3, MSGBOX_AUTOCLOSE)
     waitmessage
-    setobjectmovementtype(2, MOVEMENT_TYPE_NONE)
-    applymovement(2, Ultra_Space_Movement_ManiacToPortal)
+    applymovement(17, Ultra_Space_Movement_ManiacToPortal)
     delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     delay(16)
-    applymovement(1, Common_Movement_WalkInPlaceLeft)
-    waitmovement(2)
+    applymovement(16, Common_Movement_WalkInPlaceLeft)
+    waitmovement(17)
+    applymovement(16, Common_Movement_WalkInPlaceUp)
+    waitmovement(16)
     playse(SE_PIN)
-    applymovement(1, Common_Movement_ExclamationMark)
-    waitmovement(1)
+    applymovement(16, Common_Movement_ExclamationMark)
+    waitmovement(16)
     waitse
     msgbox("JAMES: Look out!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
-    applymovement(2, Common_Movement_ExclamationMark)
-    waitmovement(2)
+    applymovement(17, Common_Movement_ExclamationMark)
+    waitmovement(17)
     waitse
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
     applymovement(4, Ultra_Space_Movement_Blacephalon)
     delay(16)
-    applymovement(2, Ultra_Space_Movement_ManiacRunToPlayer)
-    waitmovement(0)
+    applymovement(17, Ultra_Space_Movement_ManiacRunToPlayer)
+    waitmovement(17)
     msgbox("MANIAC: W-What is that?!\n
         An undiscovered POKéMON?!\p
         Wait, it's attacking!", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
-    waitmovement(0)
     applymovement(4, Ultra_Space_Movement_BlacephalonApproachesPlayer)
     waitmovement(4)
     setflag(FLAG_DEFEATED_BLACEPHALON)
     setwildbattle(SPECIES_BLACEPHALON, 75)
     dowildbattle
-    applymovement(2, Ultra_Space_Movement_ManiacFacePlayer)
-    waitmovement(2)
+    applymovement(17, Ultra_Space_Movement_ManiacFacePlayer)
+    waitmovement(17)
     msgbox(Ultra_Space_Text_Maniac4, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(2, Common_Movement_WalkInPlaceLeft)
-    waitmovement(2)
-    msgbox("Assistant, please give some of them\n
-        to the intern.", MSGBOX_AUTOCLOSE)
-    waitmessage
-    applymovement(2, Common_Movement_WalkInPlaceDown)
-    waitmovement(2)
-    applymovement(1, Common_Movement_WalkLeft)
+    applymovement(16, Common_Movement_WalkLeft)
     delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     waitmovement(0)
@@ -134,32 +166,31 @@ script Ultra_Space_EventScript_Blacephalon{
     giveitem(ITEM_BEAST_BALL, 50)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
-    applymovement(1, Common_Movement_WalkInPlaceUp)
+    applymovement(16, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    applymovement(2, Common_Movement_FaceDown)
-    waitmovement(2)
+    applymovement(17, Common_Movement_FaceDown)
+    waitmovement(17)
     msgbox(Ultra_Space_Text_Maniac5, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(2, Ultra_Space_Movement_ManiacGoesToPermSpot)
-    delay(30)
+    applymovement(17, Ultra_Space_Movement_ManiacGoesToPermSpot)
+    delay(60)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
     delay(10)
-    applymovement(1, Common_Movement_WalkInPlaceDown)
-    waitmovement(2)
-    setobjectxyperm(2, 27, 48)
+    applymovement(16, Common_Movement_WalkInPlaceDown)
+    waitmovement(17)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     delay(10)
-    applymovement(1, Common_Movement_WalkInPlaceLeft)
-    waitmovement(0)
+    applymovement(16, Common_Movement_WalkInPlaceLeft)
+    waitmovement(16)
     msgbox(Ultra_Space_Text_JamesGoingToExplore, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1,  Ultra_Space_Movement_JamesGoesToPermSpot)
+    applymovement(16,  Ultra_Space_Movement_JamesGoesToPermSpot)
     delay(32)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
-    waitmovement(1)
-    setobjectxyperm(1, 22, 31)
-    setobjectmovementtype(1, MOVEMENT_TYPE_FACE_UP)
-    setobjectmovementtype(2, MOVEMENT_TYPE_NONE)
+    waitmovement(16)
+    removeobject(16)
+    removeobject(17)
+    clearflag(FLAG_DEFEATED_NECROZMA)
     call(Ultra_Space_EventScript_AddPC)
     special(DrawWholeMapView)
     setvar(VAR_ULTRA_SPACE_STATE, 3)
@@ -172,8 +203,8 @@ script Ultra_Space_EventScript_James{
     faceplayer
     msgbox(Ultra_Space_Text_InvisiblePathHint, MSGBOX_NPC)
     waitmessage
-    applymovement(1, Common_Movement_FaceOriginalDirection)
-    waitmovement(1)
+    applymovement(19, Common_Movement_FaceOriginalDirection)
+    waitmovement(19)
     release
     end
 }
@@ -186,8 +217,8 @@ script Ultra_Space_EventScript_Maniac{
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox(Ultra_Space_Text_LetMeKnowIfYouMakeAnyDiscoveries, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(2, Common_Movement_FaceOriginalDirection)
-    waitmovement(2)
+    applymovement(18, Common_Movement_FaceOriginalDirection)
+    waitmovement(18)
     release
     end
 }
@@ -203,22 +234,20 @@ script Ultra_Space_EventScript_Necrozma{
     lock
     playmoncry(SPECIES_NECROZMA, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_NECROZMA, 75)
-    dowildbattle
-    fadescreen(FADE_TO_BLACK)
-    removeobject(13)
-    setflag(FLAG_DEFEATED_NECROZMA)
-    fadescreenspeed(FADE_FROM_BLACK, 2)
+    setwildbattle(SPECIES_NECROZMA, 75, ITEM_ULTRANECROZIUM_Z)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
     msgbox("{PLAYER}!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    setobjectxy(1, 24, 15)
-    setobjectxy(2, 24, 14)
-    applymovement(1, Ultra_Space_Movement_JamesGoesToNecrozma)
+    addobject(20)
+    addobject(21)
+    clearflag(FLAG_HIDE_JAMES_ULTRA_SPACE)
+    applymovement(20, Ultra_Space_Movement_JamesGoesToNecrozma)
     delay(16)
-    applymovement(2, Ultra_Space_Movement_ManiacGoesToNecrozma)
-    waitmovement(2)
+    applymovement(21, Ultra_Space_Movement_ManiacGoesToNecrozma)
+    waitmovement(21)
     msgbox(Ultra_Space_Text_ThatWasCrazy, MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_M_THUNDER_WAVE)
@@ -233,10 +262,14 @@ script Ultra_Space_EventScript_Necrozma{
     delay(10)
     waitse
     playse(SE_PIN)
-    applymovement(2, Common_Movement_ExclamationMark)
+    applymovement(21, Common_Movement_ExclamationMark)
     delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    delay(4)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
-    waitmovement(2)
+    delay(4)
+    applymovement(20, Common_Movement_ExclamationMark)
+    waitmovement(20)
     waitse
     msgbox("MANIAC: C-COSMOG?!", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -244,7 +277,7 @@ script Ultra_Space_EventScript_Necrozma{
     delay(20)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     delay(8)
-    applymovement(1, Common_Movement_WalkInPlaceLeft)
+    applymovement(20, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
     msgbox(Ultra_Space_Text_Maniac6, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -258,9 +291,22 @@ script Ultra_Space_EventScript_Necrozma{
     playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
     waitmoncry
     call(Ultra_Space_Shake)
+    setflag(FLAG_RETURNED_FROM_ULTRA_SPACE)
     setflag(FLAG_HIDE_JAMES_ULTRA_SPACE)
     setobjectxyperm(15, 26, 48)
     warpwhitefade(MAP_ROUTE135_LAB, 7, 8)
+    waitstate
+    release
+    end
+}
+
+script Ultra_Space_EventScript_Buzzwole{
+    lock
+    faceplayer
+    playmoncry(SPECIES_BUZZWOLE, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_BUZZWOLE, 75)
+    dowildbattle
     release
     end
 }
@@ -313,10 +359,7 @@ text Ultra_Space_Text_Maniac1{
     It appears we've been pulled into\l
     the rift.\p
     I'm not sure if we'll ever be able\n
-    to return to our world…\p
-    JAMES: Something…\p
-    Something about this place feels…\n
-    familiar."
+    to return to our world…"
 }
 
 text Ultra_Space_Text_James1{
@@ -329,9 +372,7 @@ text Ultra_Space_Text_Maniac2{
     Perhaps you had stumbled across a rift\l
     in the past…\p
     Although I've never heard reports of\n
-    such an occurance happening to anyone.\p
-    Either way, let us follow your intuition\n
-    and keep moving."
+    such an occurance happening to anyone."
 }
 
 text Ultra_Space_Text_Maniac3{
@@ -339,7 +380,7 @@ text Ultra_Space_Text_Maniac3{
     It appears as though these caves\l
     are a means of connection to the\l
     other floating islands…\l
-    Perhaps we can come across another rift\l
+    Perhaps we can find another rift\l
     through them…\p
     I must get a closer look!"
 }
@@ -351,7 +392,9 @@ text Ultra_Space_Text_Maniac4{
     lightspeed!\p
     Now that we know there's undiscovered\n
     POKéMON here, we can test the new\l
-    POKé BALL I designed…"
+    POKé BALL I designed…\p
+    Assistant, please give some of them\n
+    to the intern."
 }
 
 text Ultra_Space_Text_Maniac5{
@@ -382,9 +425,9 @@ text Ultra_Space_Text_ThatWasCrazy{
 }
 
 text Ultra_Space_Text_Maniac6{
-    "MANIAC: You came for us?!\p
-    RESPLENDENT!\n
-    I had no idea COSMOG had the ability\l
+    "MANIAC: You came for us?!\n
+    R-RESPLENDENT!\p
+    I had no idea it had the ability\n
     to traverse the ULTRA SPACE!\p
     COSMOG, are you able to take us\n
     back to the lab?"
@@ -417,9 +460,9 @@ movement Ultra_Space_Movement_JamesLookAround{
 }
 
 movement Ultra_Space_Movement_PlayerLookAround{
-    walk_in_place_down
-    delay_16
     walk_in_place_up
+    delay_16
+    walk_in_place_down
     delay_16
     walk_in_place_left
     delay_16
@@ -486,8 +529,8 @@ movement Ultra_Space_Movement_JamesGoesToPermSpot{
     walk_up
     walk_left * 4
     walk_up * 4
-    walk_left * 4
-    walk_up
+    walk_left * 3
+    walk_up * 2
 }
 
 movement Ultra_Space_Movement_JamesGoesToNecrozma{
@@ -505,4 +548,18 @@ movement Ultra_Space_Movement_ManiacGoesToNecrozma{
 movement Ultra_Space_Movement_Cosmog{
     walk_left
     walk_down * 3
+}
+
+movement Ultra_Space_Movement_ManiacInvestigate{
+    walk_up
+    delay_8
+    walk_right
+    delay_8
+    walk_in_place_left
+    delay_2
+    walk_in_place_right
+    delay_2
+    walk_left
+    delay_16
+    walk_down
 }

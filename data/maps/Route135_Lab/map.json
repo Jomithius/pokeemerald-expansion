@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_JAMES",
       "x": 8,
-      "y": 4,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

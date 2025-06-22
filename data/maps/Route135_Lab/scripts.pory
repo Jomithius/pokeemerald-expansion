@@ -3,16 +3,23 @@ mapscripts Route135_Lab_MapScripts {
         VAR_ULTRA_SPACE_STATE, 0: Route135_Lab_EventScript_ToUltraSpace
         VAR_ULTRA_SPACE_STATE, 3: Route135_Lab_EventScript_EndUltraSpace
     ]
-    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
-        VAR_ULTRA_SPACE_STATE, 3: Route135_EventScript_NPCPosition
-        VAR_ULTRA_SPACE_STATE, 4: Route135_EventScript_JamesPosition
-        VAR_ULTRA_SPACE_STATE, 5: Route135_EventScript_JamesPosition
-    ]
+    MAP_SCRIPT_ON_TRANSITION: Route135_Lab_OnTransition
+}
+
+script Route135_Lab_OnTransition{
+    setflag(FLAG_VISITED_ROUTE_135_LAB)
+    call_if_set(FLAG_RETURNED_FROM_ULTRA_SPACE, Route135_EventScript_NPCPosition)
+    call_if_ge(VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_JamesPosition)
+    end
+}
+
+script Route135_Lab_JamesPosition{
+    setobjectxyperm(2, 5, 2)
+    setobjectmovementtype(2, MOVEMENT_TYPE_FACE_UP)
+    return
 }
 
 script Route135_EventScript_NPCPosition{
-    setflag(FLAG_VISITED_ROUTE_135)
-    setrespawn(HEAL_LOCATION_ROUTE135)
     setobjectxy(1, 6, 9)
     setobjectmovementtype(1, MOVEMENT_TYPE_FACE_UP)
     setobjectxy(2, 8, 9)
@@ -20,13 +27,7 @@ script Route135_EventScript_NPCPosition{
     setobjectmovementtype(3, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)
-    end
-}
-
-script Route135_EventScript_JamesPosition{
-    setobjectxyperm(2, 5, 2)
-    setobjectmovementtype(1, MOVEMENT_TYPE_FACE_UP)
-    end
+    return
 }
 
 script Route135_Lab_EventScript_Maniac{
@@ -88,12 +89,12 @@ script Route135_Lab_EventScript_ToUltraSpace{
         delay(20)
         applymovement(2, Route135_Lab_Movement_JamesEnter)
         waitmovement(2)
+        applymovement(1, Common_Movement_WalkInPlaceLeft)
+        waitmovement(0)
         playse(SE_PIN)
         applymovement(2, Common_Movement_ExclamationMark)
         waitmovement(2)
         waitse
-        applymovement(1, Common_Movement_WalkInPlaceLeft)
-        waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
         waitmovement(0)
         msgbox(Route135_Lab_Text_James, MSGBOX_AUTOCLOSE)
@@ -213,6 +214,8 @@ script Route135_Lab_EventScript_EndUltraSpace{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     setvar(VAR_ULTRA_SPACE_STATE, 4)
+    setrespawn(HEAL_LOCATION_ROUTE135)
+    clearflag(FLAG_RETURNED_FROM_ULTRA_SPACE)
     release
     end
 }
@@ -260,15 +263,15 @@ text Route135_Lab_Text_Maniac3{
     }
 
 text Route135_Lab_Text_Maniac4{
-    "Now I've reached a breakthrough in\n
-    my experiments and plan to attempt to\l
-    open a rift to the ULTRA SPACE.\p
+    "I've reached a breakthrough in my\n
+    experiments and now plan to attempt\l
+    to open a rift to the ULTRA SPACE.\p
     You made it just in time.\n
     Quite fortuitous, indeed."
 }
 
 movement Route135_Lab_Movement_JamesEnter{
-    walk_down * 5
+    walk_down * 6
     walk_in_place_right
 }
 

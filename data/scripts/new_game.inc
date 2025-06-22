@@ -130,6 +130,7 @@ EventScript_ResetAllLegendaries::
     setflag FLAG_HIDE_MARSHADOW
 	setflag FLAG_HIDE_ZERAORA
 	setflag FLAG_HIDE_COSMOG_ULTRA_SPACE
+	setflag FLAG_DEFEATED_NECROZMA
 	return
 
 EventScript_ResetAllMapFlags::

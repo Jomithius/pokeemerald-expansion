@@ -5760,6 +5760,18 @@ u16 GetBattleBGM(void)
         case SPECIES_REGIELEKI:
         case SPECIES_REGIDRAGO:
             return MUS_VS_REGI;
+        case SPECIES_NECROZMA:
+        case SPECIES_LUNALA:
+        case SPECIES_SOLGALEO:
+            return MUS_B_FACTORY;
+        case SPECIES_CHI_YU:
+        case SPECIES_TING_LU:
+        case SPECIES_CHIEN_PAO:
+        case SPECIES_WO_CHIEN:
+            return MUS_LEGENDARY_QUARTET;
+        case SPECIES_MIRAIDON:
+        case SPECIES_KORAIDON:
+            return MUS_C_VS_LEGEND_BEAST;
         default:
             return MUS_RG_VS_LEGEND;
         }

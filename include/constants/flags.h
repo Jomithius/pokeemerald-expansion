@@ -1302,7 +1302,7 @@
 #define FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS                     0x4E0 // For Speedwagon Event Wachunpelon
 #define FLAG_HIDE_JAMES_ULTRA_SPACE                                 0x4E1 // For Ultra Space Event
 #define FLAG_HIDE_COSMOG_ULTRA_SPACE                                0x4E2 // For Ultra Space Event
-#define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
+#define FLAG_HIDE_PROF_ULTRA_SPACE                                  0x4E3 // For Ultra Space Event
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
 #define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
@@ -1388,7 +1388,7 @@
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
 #define FLAG_VISITED_ULTRA_SPACE                    (SYSTEM_FLAGS + 0x21) // custom
-#define FLAG_VISITED_ROUTE_135                      (SYSTEM_FLAGS + 0x22) // custom
+#define FLAG_VISITED_ROUTE_135_LAB                  (SYSTEM_FLAGS + 0x22) // custom
 #define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
@@ -1502,7 +1502,7 @@
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
 
-#define FLAG_UNUSED_0x83                         (SYSTEM_FLAGS + 0x83) // Unused Flag
+#define FLAG_RETURNED_FROM_ULTRA_SPACE              (SYSTEM_FLAGS + 0x83) // Ultra Space Event, only on first return
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
