@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route135_Lab_EventScript_Maniac",
-      "flag": "0"
+      "flag": "FLAG_HIDE_PROF_ROUTE_135_LAB"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_JAMES",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route135_Lab_EventScript_James",
-      "flag": "0"
+      "flag": "FLAG_HIDE_PROF_ROUTE_135_LAB"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(COSMOG)",
@@ -51,7 +51,46 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route135_Lab_EventScript_Cosmog",
-      "flag": "0"
+      "flag": "FLAG_HIDE_PROF_ROUTE_135_LAB"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 6,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_JAMES",
+      "x": 8,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(COSMOG)",
+      "x": 6,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE"
     }
   ],
   "warp_events": [

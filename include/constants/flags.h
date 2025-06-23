@@ -775,7 +775,7 @@
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
+#define FLAG_DEFEATED_ZYGARDE                                       0x2D9 // Azure Mountain
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
@@ -872,7 +872,7 @@
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE         0x336
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
 #define FLAG_HIDE_PETALBURG_GYM_WALLYS_DAD                          0x338
-#define FLAG_HIDE_LEGEND_MON_CAVE_OF_ORIGIN                         0x339 // Unused, leftover from R/S
+#define FLAG_DEFEATED_KYUREM                                        0x339 // Azure Mountain Chasm
 #define FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE                            0x33A
 #define FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE                             0x33B
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_ARCHIE                     0x33C
@@ -1303,8 +1303,8 @@
 #define FLAG_HIDE_JAMES_ULTRA_SPACE                                 0x4E1 // For Ultra Space Event
 #define FLAG_HIDE_COSMOG_ULTRA_SPACE                                0x4E2 // For Ultra Space Event
 #define FLAG_HIDE_PROF_ULTRA_SPACE                                  0x4E3 // For Ultra Space Event
-#define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
-#define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
+#define FLAG_HIDE_PROF_ROUTE_135_LAB                                0x4E4 // For Ultra Space Event
+#define FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE                    0x4E5 // For Ultra Space Event
 #define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
 #define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
 #define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag

@@ -7,10 +7,15 @@ mapscripts Route135_Lab_MapScripts {
 }
 
 script Route135_Lab_OnTransition{
-    setflag(FLAG_VISITED_ROUTE_135_LAB)
-    call_if_set(FLAG_RETURNED_FROM_ULTRA_SPACE, Route135_EventScript_NPCPosition)
+    call_if_unset(FLAG_VISITED_ROUTE_135_LAB, Route135_SetFlag)
     call_if_ge(VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_JamesPosition)
     end
+}
+
+
+script Route135_SetFlag{
+    setflag(FLAG_VISITED_ROUTE_135_LAB)
+    return
 }
 
 script Route135_Lab_JamesPosition{
@@ -19,6 +24,7 @@ script Route135_Lab_JamesPosition{
     return
 }
 
+// unused
 script Route135_EventScript_NPCPosition{
     setobjectxy(1, 6, 9)
     setobjectmovementtype(1, MOVEMENT_TYPE_FACE_UP)
@@ -45,14 +51,14 @@ script Route135_Lab_EventScript_James{
     faceplayer
     msgbox(Route_135_Lab_Text_ImGoingToStayHere, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, Common_Movement_WalkInPlaceUp)
-    waitmovement(1)
+    applymovement(2, Common_Movement_WalkInPlaceUp)
+    waitmovement(2)
     release
     end
 }
 
 script Route135_Lab_EventScript_ToUltraSpace{
-    lock
+    lockall
     playse(SE_PIN)
     applymovement(1, Common_Movement_ExclamationMark)
     waitmovement(1)
@@ -72,8 +78,8 @@ script Route135_Lab_EventScript_ToUltraSpace{
         applymovement(1, Common_Movement_WalkInPlaceRight)
         waitmovement(1)
         msgbox(" In fact, this POKéMON here came from one\n
-        of those rifts.\l
-        I've named it COSMOG.", MSGBOX_AUTOCLOSE)
+            of those rifts.\l
+            I've named it COSMOG.", MSGBOX_AUTOCLOSE)
         applymovement(3, Common_Movement_WalkInPlaceLeft)
         waitmovement(3)
         playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
@@ -111,7 +117,7 @@ script Route135_Lab_EventScript_ToUltraSpace{
         delay(16)
         applymovement(OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerStartExperiment)
         waitmovement(2)
-        playbgm(MUS_NONE, FALSE)
+        fadenewbgm(MUS_NONE)
         msgbox(Route135_Lab_Text_Maniac6, MSGBOX_AUTOCLOSE)
         waitmessage
         closemessage
@@ -120,6 +126,8 @@ script Route135_Lab_EventScript_ToUltraSpace{
         msgbox(Route135_Lab_Text_Maniac7, MSGBOX_AUTOCLOSE)
         waitmessage
         closemessage
+        playse(SE_M_THUNDERBOLT2)
+        waitse
         playse(SE_BREAKABLE_DOOR)
         waitse
         delay(10)
@@ -137,7 +145,7 @@ script Route135_Lab_EventScript_ToUltraSpace{
         warp(MAP_ROUTE135, 8, 10)
         waitstate
     }
-    release
+    releaseall
     end
 }
 
@@ -174,49 +182,63 @@ script Route135_Lab_EventScript_Cosmog{
 }
 
 script Route135_Lab_EventScript_EndUltraSpace{
-    lock
-    applymovement(1, Route_135_Lab_ManiacLookAround)
+    lockall
+    applymovement(4, Route_135_Lab_ManiacLookAround)
     delay(8)
     applymovement(OBJ_EVENT_ID_PLAYER, Route_135_Lab_PlayerLookAround)
     delay(8)
-    applymovement(2, Route_135_Lab_JamesLookAround)
+    applymovement(5, Route_135_Lab_JamesLookAround)
     waitmovement(0)
-    msgbox("We… We really returned…", MSGBOX_AUTOCLOSE)
+    msgbox("MANIAC: We…\n
+        We really returned…", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, Common_Movement_WalkInPlaceUp)
-    waitmovement(1)
+    applymovement(4, Common_Movement_WalkInPlaceUp)
+    waitmovement(4)
     msgbox(Route135_Lab_Text_Maniac8, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, Route_135_Lab_Movement_ManiacReturnsToComputer)
+    playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    applymovement(4, Route_135_Lab_Movement_ManiacReturnsToComputer)
     delay(8)
-    applymovement(3, Route_135_Lab_Movement_CosmogReturnsToComputer)
+    applymovement(6, Route_135_Lab_Movement_CosmogReturnsToComputer)
     delay(8)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     delay(8)
-    applymovement(2, Common_Movement_WalkInPlaceRight)
-    waitmovement(3)
-    applymovement(1, Common_Movement_WalkInPlaceLeft)
-    waitmovement(1)
+    applymovement(5, Common_Movement_WalkInPlaceRight)
+    waitmovement(6)
+    applymovement(4, Common_Movement_WalkInPlaceLeft)
+    waitmovement(4)
     msgbox(Route135_Lab_Text_Maniac9, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, Common_Movement_WalkInPlaceRight)
-    waitmovement(1)
-    applymovement(2, Route_135_Lab_Movement_JamesFacePlayer)
-    waitmovement(2)
+    applymovement(4, Common_Movement_WalkInPlaceRight)
+    waitmovement(4)
+    applymovement(5, Route_135_Lab_Movement_JamesFacePlayer)
+    waitmovement(5)
     msgbox(Route135_Lab_Text_James2, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(2, Common_Movement_WalkInPlaceUp)
-    waitmovement(2)
+    applymovement(5, Common_Movement_WalkInPlaceUp)
+    waitmovement(5)
+    msgbox("I think I understand why JIMMY gave\n
+        me this job now…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(5, Common_Movement_WalkInPlaceLeft)
+    waitmovement(5)
     msgbox(Route135_Lab_Text_James3, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(2, Route_135_Lab_Movement_JamesReturnsToComputer)
-    waitmovement(2)
+    applymovement(5, Route_135_Lab_Movement_JamesReturnsToComputer)
+    delay(8)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(5)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route_135_Lab_Movement_PlayerLeaves)
     waitmovement(0)
+    removeobject(5)
+    setflag(FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE)
+    clearflag(FLAG_HIDE_PROF_ROUTE_135_LAB)
     setvar(VAR_ULTRA_SPACE_STATE, 4)
     setrespawn(HEAL_LOCATION_ROUTE135)
-    clearflag(FLAG_RETURNED_FROM_ULTRA_SPACE)
-    release
+    warp(MAP_ROUTE135, 8, 10)
+    waitstate
+    releaseall
     end
 }
 
@@ -283,7 +305,7 @@ text Route135_Lab_Text_James{
 text Route135_Lab_Text_Maniac5{
     "MANIAC: Ah, so you two are\n
     already acquainted.\p
-    Let us forgo the formalities and\n
+    Then let us forgo the formalities and\n
     get right to the experiment!"
 }
 
@@ -357,7 +379,9 @@ text Route135_Lab_Text_ManiacNo{
 
 text Route135_Lab_Text_Maniac8{
     "Great work COSMOG!\n
-    I must log all my findings this instant!"
+    These discoveries are monumental!\p
+    I must log all my findings this instant!\n
+    Come with me, COSMOG!"
 }
 
 text Route135_Lab_Text_Maniac9{
@@ -368,18 +392,18 @@ text Route135_Lab_Text_Maniac9{
 }
 
 text Route135_Lab_Text_James2{
-    "…He's gonna be like that for a while.\n
-    Well, that was an experience.\p
+    "JAMES: …He's gonna be like that for a\n
+    while.\p
+    Well, either way, that really was a crazy\n
+    experience.\p
     What are you going to do now, {PLAYER}?\n
-    I'm going to stay here and help out more.\l
+    I'm going to stay and help out more.\l
     I think if I do, I'll find the answers\l
     I'm looking for."
 }
 
 text Route135_Lab_Text_James3{
-    "I think I understand why JIMMY gave\n
-    me this job now…\l
-    Anyways, like the PROF. said, we'll\n
+    "Anyways, like the PROF. said, we'll let\n
     let you know if anything else happens.\p
     See ya, {PLAYER}."
 }
@@ -396,14 +420,16 @@ text Route_135_Lab_Text_ImGoingToStayHere{
 
 movement Route_135_Lab_Movement_ManiacReturnsToComputer{
     walk_fast_down
-    walk_fast_right * 5
+    walk_fast_right * 4
+    walk_fast_up
+    walk_fast_right
 }
 
 movement Route_135_Lab_Movement_CosmogReturnsToComputer{
-    walk_down * 2
-    walk_right * 4
     walk_up
-    walk_right
+    walk_right * 3
+    walk_down
+    walk_right * 2
     walk_in_place_down
 }
 
@@ -413,15 +439,19 @@ movement Route_135_Lab_Movement_JamesFacePlayer{
 }
 
 movement Route_135_Lab_Movement_JamesReturnsToComputer{
-    walk_up * 3
+    walk_up * 4
     walk_left * 2
     walk_up * 2
     walk_left
-    walk_up
+    walk_up * 2
+}
+
+movement Route_135_Lab_Movement_PlayerLeaves{
+    walk_down * 4
 }
 
 text Route_135_Lab_Text_ImBusy{
-    "Salutations, Intern.\n
+    "Salutations, intern.\n
     There's no new breakthroughs yet.\p
     I'm busy now, so come back later."
 }

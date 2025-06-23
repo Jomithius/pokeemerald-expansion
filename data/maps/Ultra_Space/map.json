@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Ultra_Space_EventScript_Stakataka",
       "flag": "FLAG_DEFEATED_STAKATAKA"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Ultra_Space_EventScript_Guzzlord",
       "flag": "FLAG_DEFEATED_GUZZLORD"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Ultra_Space_EventScript_Pheromosa",
       "flag": "FLAG_DEFEATED_PHEROMOSA"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Ultra_Space_EventScript_Kartana",
       "flag": "FLAG_DEFEATED_KARTANA"
     },
     {
@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Ultra_Space_EventScript_Xurkitree",
       "flag": "FLAG_DEFEATED_XURKITREE"
     },
     {
@@ -141,7 +141,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Ultra_Space_EventScript_Celesteela",
       "flag": "FLAG_DEFEATED_CELESTEELA"
     },
     {
@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Ultra_Space_EventScript_Solgaleo",
       "flag": "FLAG_DEFEATED_SOLGALEO"
     },
     {
@@ -167,26 +167,26 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Ultra_Space_EventScript_Lunala",
       "flag": "FLAG_DEFEATED_LUNALA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(NECROZMA)",
       "x": 24,
-      "y": 7,
+      "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Ultra_Space_EventScript_Necrozma",
+      "script": "NULL",
       "flag": "FLAG_DEFEATED_NECROZMA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 27,
-      "y": 11,
+      "x": 44,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -418,6 +418,15 @@
       "var": "VAR_ULTRA_SPACE_STATE",
       "var_value": "2",
       "script": "Ultra_Space_EventScript_Blacephalon"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_ULTRA_SPACE_STATE",
+      "var_value": "3",
+      "script": "Ultra_Space_EventScript_Necrozma"
     }
   ],
   "bg_events": [

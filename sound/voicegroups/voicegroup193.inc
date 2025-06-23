@@ -77,7 +77,7 @@ voicegroup193::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound_no_resample 72, 54, DirectSoundWaveData_sc88pro_mute_high_conga, 255, 0, 255, 0 
-	voice_directsound_no_resample 72, 75, DirectSoundWaveData_sc88pro_open_low_conga, 255, 0, 255, 0
+	voice_directsound_no_resample 72, 39, DirectSoundWaveData_sc88pro_open_low_conga, 255, 0, 255, 0
 	voice_directsound_no_resample 72, 39, DirectSoundWaveData_sc88pro_mute_high_conga, 255, 0, 255, 0 
 	voice_directsound_no_resample 64, 89, DirectSoundWaveData_sd90_cowbell, 255, 0, 255, 242
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
