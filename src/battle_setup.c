@@ -504,7 +504,7 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_WO_CHIEN:
     case SPECIES_TING_LU:
     case SPECIES_CHI_YU:
-        CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_LEGENDARY_QUARTET);
+        CreateBattleStartTask(B_TRANSITION_RECTANGULAR_SPIRAL, MUS_LEGENDARY_QUARTET);
         break;
     case SPECIES_MIRAIDON:
     case SPECIES_KORAIDON:
