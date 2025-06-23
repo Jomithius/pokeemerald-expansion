@@ -1,1 +1,23 @@
-mapscripts AreaZero_WalkingWakeLair_MapScripts {}
+mapscripts AreaZero_WalkingWakeLair_MapScripts {
+    MAP_SCRIPT_ON_RESUME: AreaZero_WalkingWakeLair_RemoveWalkingWake
+}
+
+script AreaZero_WalkingWakeLair_RemoveWalkingWake{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+    removeobject(VAR_LAST_TALKED)
+    end
+}
+
+script AreaZero_WalkingWakeLair_EventScript_WalkingWake{
+    lock
+    faceplayer
+    playmoncry(SPECIES_WALKING_WAKE, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_WALKING_WAKE, 75)
+    dowildbattle
+    release
+    end
+}

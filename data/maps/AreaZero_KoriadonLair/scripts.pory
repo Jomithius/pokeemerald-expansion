@@ -1,1 +1,24 @@
-mapscripts AreaZero_KoriadonLair_MapScripts {}
+mapscripts AreaZero_KoriadonLair_MapScripts {
+    MAP_SCRIPT_ON_RESUME: AreaZero_KoriadonLair_RemoveKoraidon
+}
+
+script AreaZero_KoriadonLair_RemoveKoraidon{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+    removeobject(VAR_LAST_TALKED)
+    end
+}
+
+script AreaZero_KoriadonLair_EventScript_Koraidon{
+    lock
+    faceplayer
+    playmoncry(SPECIES_KORAIDON, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_KORAIDON, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    release
+    end
+}

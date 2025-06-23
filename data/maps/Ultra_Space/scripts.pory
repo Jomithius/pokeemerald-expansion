@@ -250,7 +250,7 @@ script Ultra_Space_EventScript_Necrozma{
     delay(40)
     waitmoncry
     setflag(FLAG_DEFEATED_NECROZMA)
-    setwildbattle(SPECIES_NECROZMA, 75, ITEM_ULTRANECROZIUM_Z)
+    setwildbattle(SPECIES_NECROZMA, 75)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     fadedefaultbgm
@@ -274,7 +274,7 @@ script Ultra_Space_EventScript_Necrozma{
     playse(SE_THUNDER)
     fadescreen(FADE_TO_WHITE)
     addobject(15)
-    clearflag(FLAG_HIDE_COSMOG_ULTRA_SPACE)
+    clearflag(FLAG_DEFEATED_BLACEPHALON)
     fadescreen(FADE_FROM_WHITE)
     delay(10)
     waitse
@@ -309,9 +309,10 @@ script Ultra_Space_EventScript_Necrozma{
     waitmoncry
     call(Ultra_Space_Shake)
     clearflag(FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE)
+    clearflag(FLAG_HIDE_COSMOG_ULTRA_SPACE)
     setflag(FLAG_HIDE_PROF_ROUTE_135_LAB)
     setflag(FLAG_HIDE_JAMES_ULTRA_SPACE)
-    setobjectxyperm(15, 26, 48)
+    setflag(FLAG_DEFEATED_BLACEPHALON)
     warpwhitefade(MAP_ROUTE135_LAB, 7, 9)
     waitstate
     releaseall
@@ -440,6 +441,30 @@ script Ultra_Space_Shake{
     playse(SE_INTRO_BLAST)
     delay(20)
     return
+}
+
+script Ultra_Space_EventScript_Cosmog{
+    lock
+    faceplayer
+    playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    msgbox(UltraSpace_Text_WouldYouLikeToReturn, MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        closemessage
+        call(Ultra_Space_Shake)
+        warpwhitefade(MAP_ROUTE135_LAB, 10, 9)
+        waitstate
+    }
+    else{
+        applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    }
+    release
+    end
+}
+
+text UltraSpace_Text_WouldYouLikeToReturn{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Would you like to return to the LAB?"
 }
 
 text Ultra_Space_Text_DoYouNeedMedicalAssistance{

@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AreaZero_Prehistoric_EventScript_GreatTusk",
+      "flag": "FLAG_DEFEATED_GREAT_TUSK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOUGING_FIRE)",
@@ -37,8 +37,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AreaZero_Prehistoric_EventScript_GougingFire",
+      "flag": "FLAG_DEFEATED_GOUGING_FIRE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ROARING_MOON)",
@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AreaZero_Prehistoric_EventScript_RoaringMoon",
+      "flag": "FLAG_DEFEATED_ROARING_MOON"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(FLUTTER_MANE)",
@@ -63,8 +63,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AreaZero_Prehistoric_EventScript_FlutterMane",
+      "flag": "FLAG_DEFEATED_FLUTTER_MANE"
     }
   ],
   "warp_events": [

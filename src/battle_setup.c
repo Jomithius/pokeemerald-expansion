@@ -488,14 +488,27 @@ void BattleSetup_StartLegendaryBattle(void)
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
         break;
     case SPECIES_LUGIA:
+    case SPECIES_MEWTWO:
     case SPECIES_HO_OH:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
         break;
     case SPECIES_MEW:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
         break;
+    case SPECIES_SOLGALEO:
+    case SPECIES_LUNALA:
     case SPECIES_NECROZMA:
         CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_B_FACTORY);
+        break;
+    case SPECIES_CHIEN_PAO:    
+    case SPECIES_WO_CHIEN:
+    case SPECIES_TING_LU:
+    case SPECIES_CHI_YU:
+        CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_LEGENDARY_QUARTET);
+        break;
+    case SPECIES_MIRAIDON:
+    case SPECIES_KORAIDON:
+        CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_C_VS_LEGEND_BEAST);
         break;
     }
 

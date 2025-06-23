@@ -1,1 +1,23 @@
-mapscripts AreaZero_RagingBoltLair_MapScripts {}
+mapscripts AreaZero_RagingBoltLair_MapScripts {
+    MAP_SCRIPT_ON_RESUME: AreaZero_RagingBoltLair_RemoveRagingBolt
+}
+
+script AreaZero_RagingBoltLair_RemoveRagingBolt{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+    removeobject(VAR_LAST_TALKED)
+    end
+}
+
+script AreaZero_RagingBoltLair_EventScript_RagingBolt{
+    lock
+    faceplayer
+    playmoncry(SPECIES_RAGING_BOLT, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_RAGING_BOLT, 75)
+    dowildbattle
+    release
+    end
+}

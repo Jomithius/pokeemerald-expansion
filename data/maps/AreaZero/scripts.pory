@@ -1,22 +1,107 @@
-mapscripts AreaZero_MapScripts {}
+mapscripts AreaZero_MapScripts {
+    MAP_SCRIPT_ON_RESUME: AreaZero_TryRemoveLegendaries
+}
+
+script AreaZero_TryRemoveLegendaries{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+    removeobject(VAR_LAST_TALKED)
+    end
+}
+
+script Area_Zero_EventScript_ChienPao{
+    lock
+    faceplayer
+    playmoncry(SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_CHIEN_PAO, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    release
+    end
+}
+
+script Area_Zero_EventScript_ChiYu{
+    lock
+    faceplayer
+    playmoncry(SPECIES_CHI_YU, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_CHI_YU, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    release
+    end
+}
+
+script Area_Zero_EventScript_WoChien{
+    lock
+    faceplayer
+    playmoncry(SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_WO_CHIEN, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    release
+    end
+}
+
+script Area_Zero_EventScript_TingLu{
+    lock
+    faceplayer
+    playmoncry(SPECIES_TING_LU, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_TING_LU, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    release
+    end
+}
 
 script AreaZero_EventScript_Cosmog{
-    lockall
+    lock
     faceplayer
     playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
     waitmoncry
     msgbox(AreaZero_Text_WouldYouLikeToReturn, MSGBOX_YESNO)
     waitmessage
     if(var(VAR_RESULT) == YES){
+        closemessage
+        call(Area_Zero_Shake)
         warpwhitefade(MAP_ROUTE135_LAB, 10, 9)
+        waitstate
     }
     else{
         applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     }
-    releaseall
+    release
     end
 }
 
 text AreaZero_Text_WouldYouLikeToReturn{
     "{COLOR BLUE}{SHADOW LIGHT_BLUE}Would you like to return to the LAB?"
+}
+
+script Area_Zero_Shake{
+    delay (30)
+    setvar(VAR_0x8004, 2) // vertical pan
+    setvar(VAR_0x8005, 6) // horizontal pan
+    setvar(VAR_0x8006, 8) // num shakes
+    setvar(VAR_0x8007, 4) // shake delay
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(20)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(10)
+    waitse
+    playse(SE_INTRO_BLAST)
+    delay(20)
+    return
 }

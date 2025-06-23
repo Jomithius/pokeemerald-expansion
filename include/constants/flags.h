@@ -45,8 +45,8 @@
 
 #define FLAG_I_EXP_SHARE     0x20 // Exp Share gives EXP to whole team
 #define B_FLAG_NO_BAG_USE    0x21 // No items in battle
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
+#define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_1   0x22 // Area Zero
+#define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_2   0x23 // Area Zero
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
@@ -169,7 +169,7 @@
 #define FLAG_MR_BRINEY_SAILING_INTRO         0x93
 #define FLAG_DOCK_REJECTED_DEVON_GOODS       0x94
 #define FLAG_DELIVERED_DEVON_GOODS           0x95
-#define FLAG_BEFORE_ELITE_4_REMATCH          0x96 // For postgame before rechalling E4
+#define FLAG_ULTRA_SPACE_ULTRA_NECROZIUM_Z   0x96 // Ultra Space
 #define FLAG_RECEIVED_CASTFORM               0x97
 #define FLAG_RECEIVED_SUPER_ROD              0x98
 #define FLAG_RUSTBORO_NPC_TRADE_COMPLETED    0x99
@@ -1502,12 +1502,12 @@
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
 
-#define FLAG_RETURNED_FROM_ULTRA_SPACE              (SYSTEM_FLAGS + 0x83) // Ultra Space Event, only on first return
+#define FLAG_RETURNED_FROM_ULTRA_SPACE              (SYSTEM_FLAGS + 0x83) // Completed Ultra Space Event
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-#define FLAG_UNUSED_0x8E5                           (SYSTEM_FLAGS + 0x85) // Unused Flag
-#define FLAG_UNUSED_0x8E6                           (SYSTEM_FLAGS + 0x86) // Unused Flag
+#define FLAG_DEFEATED_RED                           (SYSTEM_FLAGS + 0x85) // Defeated Red at Azure Mountain
+#define FLAG_BEFORE_ELITE_4_REMATCH                 (SYSTEM_FLAGS + 0x86) // For postgame before rechalling E4
 #define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused Flag
 #define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
 #define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag

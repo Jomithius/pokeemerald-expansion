@@ -7,6 +7,7 @@ mapscripts Route135_Lab_MapScripts {
 }
 
 script Route135_Lab_OnTransition{
+    setflag(FLAG_TEMP_E)
     call_if_unset(FLAG_VISITED_ROUTE_135_LAB, Route135_SetFlag)
     call_if_ge(VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_JamesPosition)
     end
@@ -24,24 +25,20 @@ script Route135_Lab_JamesPosition{
     return
 }
 
-// unused
-script Route135_EventScript_NPCPosition{
-    setobjectxy(1, 6, 9)
-    setobjectmovementtype(1, MOVEMENT_TYPE_FACE_UP)
-    setobjectxy(2, 8, 9)
-    setobjectxy(3, 6, 8)
-    setobjectmovementtype(3, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
-    waitmovement(0)
-    return
-}
-
 script Route135_Lab_EventScript_Maniac{
     lock
     if(var(VAR_ULTRA_SPACE_STATE) == 4){
         msgbox(Route_135_Lab_Text_ImBusy, MSGBOX_DEFAULT)
         waitmessage
     }
+    elif(var(VAR_ULTRA_SPACE_STATE) == 5){
+        goto(Route135_Lab_EventScript_ToAreaZero)
+    }
+    elif(var(VAR_ULTRA_SPACE_STATE) == 6){
+        goto(Route135_Lab_EventScript_TalkToCosmog)  
+    }
+    msgbox(Route_135_Lab_Text_ImBusyTalkToCosmog, MSGBOX_DEFAULT)
+    waitmessage
     release
     end
 }
@@ -177,6 +174,7 @@ script Route135_Lab_EventScript_Cosmog{
     faceplayer
     playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
     waitmoncry
+    goto_if_ge(VAR_ULTRA_SPACE_STATE, 6, Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero)
     release
     end
 }
@@ -235,11 +233,126 @@ script Route135_Lab_EventScript_EndUltraSpace{
     setflag(FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE)
     clearflag(FLAG_HIDE_PROF_ROUTE_135_LAB)
     setvar(VAR_ULTRA_SPACE_STATE, 4)
+    call_if_set(FLAG_DEFEATED_RED, Route135_Lab_TryAdvanceUltraSpaceVar)
     setrespawn(HEAL_LOCATION_ROUTE135)
     warp(MAP_ROUTE135, 8, 10)
     waitstate
     releaseall
     end
+}
+
+// Insurance for if player defeats Red before doing the Ultra Space event. Defeating Red unlocks Area Zero.
+script Route135_Lab_TryAdvanceUltraSpaceVar{
+    setvar(VAR_ULTRA_SPACE_STATE, 5)
+    return
+}
+
+script Route135_Lab_EventScript_ToAreaZero{
+    lock
+    faceplayer
+    if(flag(FLAG_TEMP_1) == TRUE){
+        msgbox("Ah, intern. Did you change your mind?", MSGBOX_YESNO)
+    }
+    else{
+        msgbox(Route135_Lab_Text_ManiacIntroduceAreaZero, MSGBOX_YESNO)
+    }
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        msgbox("Resplendent!\n
+            Go stand next to COSMOG.\p
+            It shall transport you.", MSGBOX_AUTOCLOSE)
+        call(Route135_Lab_EventScript_PlayerGoesToCosmog)
+        waitmovement(0)
+        msgbox(Route135_Lab_Text_ManiacExplainCosmog, MSGBOX_AUTOCLOSE)
+        waitmessage
+        playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+        waitmoncry
+        call(Route135_Lab_Shake)
+        setvar(VAR_ULTRA_SPACE_STATE, 6)
+        warpwhitefade(MAP_AREA_ZERO, 15, 11)
+        waitstate
+    }
+    else{
+        msgbox("…I see. Well, you know where\n
+            to find me if you change your mind.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, Common_Movement_FaceOriginalDirection)
+        waitmovement(1)
+        setflag(FLAG_TEMP_1)
+    }
+    release
+    end
+}
+
+script Route135_Lab_EventScript_TalkToCosmog{
+    lock
+    faceplayer
+    msgbox("Ah, intern.\n
+        It seems the survey went well.\l
+        Thanks for the great data.\p
+        Well, other than that, there hasn't\n
+        been any significant new developments.\p
+        But on another trip to ULTRA SPACE, we\n
+        found these devices.\p
+        I couldn't find any use for them, but\n
+        maybe you can.", MSGBOX_AUTOCLOSE)
+    giveitem(ITEM_N_SOLARIZER)
+    waitmessage
+    giveitem(ITEM_N_LUNARIZER)
+    waitmessage
+    msgbox("If you'd like to return to one of the\n
+        previous worlds, COSMOG is ready.\l
+        It seems to trust you now." MSGBOX_AUTOCLOSE)
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    msgbox("I'm busy, so I'll leave it to you.\n
+        You know the routine by now.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(1)
+    setvar(VAR_ULTRA_SPACE_STATE, 7)
+    release
+    end
+}
+
+script Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero{
+    lock
+    message("{COLOR BLUE}{SHADOW LIGHT_BLUE}Where would you like to go?")
+    multichoice(25, 5, MULTI_ULTRA_SPACE_CHOICE, 0)
+    closemessage
+    if(var(VAR_RESULT) == 0){
+        playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+        waitmoncry
+        call(Route135_Lab_Shake)
+        warpwhitefade(MAP_ULTRA_SPACE, 26, 49)
+        waitstate
+    }
+    elif(var(VAR_RESULT) == 1){
+        playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+        waitmoncry
+        call(Route135_Lab_Shake)
+        warpwhitefade(MAP_AREA_ZERO, 15, 11)
+        waitstate
+    }
+    release
+    end
+}
+
+script Route135_Lab_EventScript_PlayerGoesToCosmog{
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_0)
+    if(var(VAR_TEMP_0) == DIR_WEST){
+        applymovement(OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerGoesToCosmogWest)
+        waitmovement(0)
+    }
+    else{
+        applymovement(OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerGoesToCosmogNorth)
+        waitmovement(0)
+    }
+    applymovement(1, Common_Movement_WalkInPlaceUp)
+    waitmovement(1)
+    return
 }
 
 movement Route135_Lab_Movement_ManiacApproachPlayer{
@@ -454,4 +567,55 @@ text Route_135_Lab_Text_ImBusy{
     "Salutations, intern.\n
     There's no new breakthroughs yet.\p
     I'm busy now, so come back later."
+}
+
+movement Route135_Lab_Movement_PlayerGoesToCosmogWest{
+    walk_up
+    walk_in_place_down
+}
+
+movement Route135_Lab_Movement_PlayerGoesToCosmogNorth{
+    walk_left
+    walk_up * 2
+    walk_in_place_down
+}
+
+text Route135_Lab_Text_ManiacIntroduceAreaZero{
+    "Ah, intern.\n
+    Salutations.\p
+    I assume JAMES provided you with the\n
+    relevant information, yes?\p
+    As you saw, COSMOG is capable of\n
+    traversing the ULTRA SPACE at will.\p
+    With extensive testing and research,\n
+    we've been able to survey the ULTRA\l
+    SPACE further.\p
+    During these surveys, we came across\n
+    another rift that seems to lead to\l
+    another world…\p
+    Seeing as you were crazy enough to\n
+    walk across the sky, I presume you'd\l
+    be open to being the first human to\l
+    explore this new world, yes?"
+}
+
+text Route135_Lab_Text_ManiacExplainCosmog{
+    "The camera I put on COSMOG showed\n
+    the world has a somewhat strange\l
+    composition… Although, there are signs\l
+    that it was once inhabited by humans\l
+    so it should be safe to traverse.\p
+    COSMOG will be with you, so if you want\n
+    to return to the lab, just ask it.\p
+    Now, it is time! Godspeed, intern!\n
+    COSMOG, if you will!"
+}
+
+text Route_135_Lab_Text_ImBusyTalkToCosmog{
+    "Ah, intern.\n
+    Unfortunately, there's no new discoveries.\p
+    Just ask COSMOG if you need to return to\n
+    the ULTRA SPACE.\p
+    It seems to trust you enough without needing\n
+    my intervention any further."
 }
