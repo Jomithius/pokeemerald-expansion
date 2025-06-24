@@ -516,7 +516,7 @@
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
 #define FLAG_DEFEATED_REGIGIAS               0x1DE // TBD
-#define FLAG_RECIEVED_TYPE_NULL              0x1DF // TBD
+#define FLAG_RECEIVED_TYPE_NULL              0x1DF // Route 135 Lab
 #define FLAG_DEFEATED_OGERPON                0x1E0 // Eastern Ruins
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
@@ -715,19 +715,19 @@
 #define FLAG_DEFEATED_WO_CHIEN           0x29D // Area Zero
 #define FLAG_DEFEATED_TING_LU            0x29E // Area Zero
 #define FLAG_DEFEATED_CHI_YU             0x29F // Area Zero
-#define FLAG_RECIEVED_MELTAN             0x2A0 // TBD
+#define FLAG_RECEIVED_MELTAN             0x2A0 // Route 135 Lab
 #define FLAG_DEFEATED_VOLCANION          0x2A1 // Azure Mountain
 #define FLAG_DEFEATED_HOOPA              0x2A2 // Azure Mountain
-#define FLAG_DEFEATED_GENESECT           0x2A3 // TBD
+#define FLAG_DEFEATED_GENESECT           0x2A3 // New Mauville
 #define FLAG_DEFEATED_KELDEO             0x2A4 // Azure Mountain
 #define FLAG_DEFEATED_COBALION           0x2A5 // Azure Mountain
 #define FLAG_DEFEATED_TERRAKION          0x2A6 // Azure Mountain
 #define FLAG_DEFEATED_VIRIZION           0x2A7 // Azure Mountain
 #define FLAG_DEFEATED_HEATRAN            0x2A8 // Azure Mountain
 #define FLAG_DEFEATED_REGIELEKI          0x2A9 // New Mauville
-#define FLAG_DEFEATED_REGIDRAGO          0x2AA // Sky Pillar
-#define FLAG_DEFEATED_RESHIRAM           0x2AB // Sky Pillar
-#define FLAG_DEFEATED_ZEKROM             0x2AC // Sky Pillar
+#define FLAG_DEFEATED_REGIDRAGO          0x2AA // TBD
+#define FLAG_DEFEATED_RESHIRAM           0x2AB // TBD
+#define FLAG_DEFEATED_ZEKROM             0x2AC // TBD
 #define FLAG_DEFEATED_TORNADUS           0x2AD // Baldesia
 #define FLAG_DEFEATED_THUNDURUS          0x2AE // Baldesia
 #define FLAG_DEFEATED_LANDORUS           0x2AF // Baldesia
@@ -737,7 +737,7 @@
 #define FLAG_DEFEATED_CALYREX            0x2B3 // Snowdrift City
 #define FLAG_DEFEATED_SPECTRIER          0x2B4 // Mt. Pyre
 #define FLAG_DEFEATED_GLASTRIER          0x2B5 // Snowdrift City
-#define FLAG_RECIEVED_KUBFU              0x2B6 // Baldesia
+#define FLAG_RECEIVED_KUBFU              0x2B6 // Baldesia
 #define FLAG_DEFEATED_UXIE               0x2B7 // TBD
 #define FLAG_DEFEATED_MESPRIT            0x2B8 // TBD
 #define FLAG_DEFEATED_AZELF              0x2B9 // TBD
@@ -1249,7 +1249,7 @@
 #define FLAG_RUSTURF_GALVANTULA                                     0x4AB // Rusturf 3F
 #define FLAG_RUSTURF_ARIADOS                                        0x4AC // Rusturf 3F
 #define FLAG_HIDE_BIKERS_ROUTE_123                                  0x4AD // Speedwagon Route123
-#define FLAG_ROUTE117_RECIEVED_LEFTOVERS                            0x4AE // From Misa
+#define FLAG_ROUTE117_RECEIVED_LEFTOVERS                            0x4AE // From Misa
 #define FLAG_XION_HOUSE_LEAF_STONE                                  0x4AF // Xion's House in Verdanturf
 #define FLAG_RECIEVED_CHOICE_SCARF_XION                             0x4B0 // Xion's House in Verdanturf
 #define FLAG_HIDE_BIKERS_MAUVILLE                                   0x4B1 // Speedwagon Event Mauville
@@ -1263,7 +1263,7 @@
 #define FLAG_HIDE_EMO_MT_PYRE                                       0x4B9 // Rival Battle Mt. Pyre
 #define FLAG_HIDE_EMO_LILYCOVE                                      0x4BA // Rival Cutscene Lilycove
 #define FLAG_HIDE_LILYCOVE_RIVAL_POKEMON                            0x4BB // Rival Cutscene Lilycove
-#define FLAG_RECIEVED_RARE_CANDY_LILYCOVE_DEPT                      0x4BC // Misa Lilycove DEPT STORE
+#define FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT                      0x4BC // Misa Lilycove DEPT STORE
 #define FLAG_HIDE_ARIA_SHOAL_CAVE                                   0x4BD // Aria Shoal Cave
 #define FLAG_HIDE_BENNIS_VICTORY_ROAD                               0x4BE // Bennis 3rd Battle
 #define FLAG_HIDE_RIVAL_EVERGRANDE_CITY                             0x4BF // James Battle Evergrande City
@@ -1278,7 +1278,7 @@
 #define FLAG_KOMMO_O_TOTEM                                          0x4C8 // Victory Road
 #define FLAG_ARAQUANID_TOTEM                                        0x4C9 // Route 107
 #define FLAG_E4_FINAL_REMATCH                                       0x4CA // For postgame final rematch
-#define FLAG_RECIEVED_FANTASIA                                      0x4CB // From Dave in Mt Pyre Summit
+#define FLAG_RECEIVED_FANTASIA                                      0x4CB // From Dave in Mt Pyre Summit
 #define FLAG_DEFEATED_EUGENIA                                       0x4CC // Lina Superboss
 #define FLAG_ELITE_FOUR_FINAL_BATTLE                                0x4CD // For Elite Four Rematches
 #define FLAG_HIDE_GYM_LEADERS                                       0x4CE // For postgame when gym leaders are out

@@ -333,7 +333,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_Misa::
 # 169 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmovement 8
 # 170 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	goto_if_unset FLAG_RECIEVED_RARE_CANDY_LILYCOVE_DEPT, LilycoveCity_DepartmentStore_5F_EventScript_Misa_2
+	goto_if_unset FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT, LilycoveCity_DepartmentStore_5F_EventScript_Misa_2
 # 186 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilycoveCity_DepartmentStore_5F_Text_Misa3, MSGBOX_AUTOCLOSE
 # 187 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
@@ -373,7 +373,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_Misa_2:
 # 182 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	fadedefaultbgm
 # 183 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	setflag FLAG_RECIEVED_RARE_CANDY_LILYCOVE_DEPT
+	setflag FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT
 	goto LilycoveCity_DepartmentStore_5F_EventScript_Misa_1
 
 

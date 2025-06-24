@@ -313,6 +313,7 @@ script Route135_Lab_EventScript_TalkToCosmog{
     applymovement(1, Common_Movement_FaceOriginalDirection)
     waitmovement(1)
     setvar(VAR_ULTRA_SPACE_STATE, 7)
+    clearflag(FLAG_RECEIVED_MELTAN)
     release
     end
 }
@@ -618,4 +619,80 @@ text Route_135_Lab_Text_ImBusyTalkToCosmog{
     the ULTRA SPACE.\p
     It seems to trust you enough without needing\n
     my intervention any further."
+}
+
+script Route_135_Lab_EventScript_Meltan{
+    lockall
+    showmonpic(SPECIES_MELTAN, 10,4)
+    msgbox("{PLAYER} checked the POKé BALL.\p
+    	It contained the POKéMON\n
+    	MELTAN.\p
+    	Take the POKé BALL?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_MELTAN, 70)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(VAR_LAST_TALKED)
+            setflag(FLAG_RECEIVED_MELTAN)
+            call(Common_EventScript_NicknameRecievedMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(VAR_LAST_TALKED)
+            setflag(FLAG_RECEIVED_MELTAN)
+            call(Common_EventScript_NicknameRecievedMonBox)
+        }
+        else{
+            hidemonpic
+            msgbox("You don't have any room.")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox("{PLAYER} decided not to take the \n
+    	POKéMON.")
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script Route_135_Lab_EventScript_TypeNull{
+    lockall
+    showmonpic(SPECIES_TYPE_NULL, 10,4)
+    msgbox("{PLAYER} checked the POKé BALL.\p
+    	It contained the POKéMON\n
+    	TYPE NULL.\p
+    	Take the POKé BALL?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_TYPE_NULL, 70)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(VAR_LAST_TALKED)
+            setflag(FLAG_RECEIVED_TYPE_NULL)
+            call(Common_EventScript_NicknameRecievedMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(VAR_LAST_TALKED)
+            setflag(FLAG_RECEIVED_TYPE_NULL)
+            call(Common_EventScript_NicknameRecievedMonBox)
+        }
+        else{
+            hidemonpic
+            msgbox("You don't have any room.")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox("{PLAYER} decided not to take the \n
+    	POKéMON.")
+    }
+    waitmessage
+    releaseall
+    end
 }

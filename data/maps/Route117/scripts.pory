@@ -280,7 +280,7 @@ script Route117_EventScript_MisaBattle{
 
     }
     else{
-        if(flag(FLAG_ROUTE117_RECIEVED_LEFTOVERS) == TRUE){
+        if(flag(FLAG_ROUTE117_RECEIVED_LEFTOVERS) == TRUE){
         msgbox(Route117_Text_MisaFlowers, MSGBOX_AUTOCLOSE)   
         }
         else{
@@ -288,7 +288,7 @@ script Route117_EventScript_MisaBattle{
             waitmessage
             giveitem(ITEM_LEFTOVERS)
             waitmessage
-            setflag(FLAG_ROUTE117_RECIEVED_LEFTOVERS)
+            setflag(FLAG_ROUTE117_RECEIVED_LEFTOVERS)
             release
             end
         }

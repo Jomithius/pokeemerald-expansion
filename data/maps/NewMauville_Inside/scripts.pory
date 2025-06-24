@@ -307,3 +307,143 @@ script TogedemaruFailed {
     msgbox("The TOGEDEMARU disappeared…")
 	return
 }
+
+script NewMauville_Inside_EventScript_Raikou{
+    lock
+    playmoncry(SPECIES_RAIKOU, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_RAIKOU, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script NewMauville_Inside_EventScript_Regieleki{
+    lock
+    playmoncry(SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_REGIELEKI, 75)
+    special(StartRegiBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script NewMauville_Inside_EventScript_Zeraora{
+    lock
+    playmoncry(SPECIES_ZERAORA, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ZERAORA, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script NewMauville_Inside_EventScript_Zapdos{
+    lock
+    playmoncry(SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ZAPDOS, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script NewMauville_Inside_EventScript_Genesect{
+    lockall
+    showmonpic(SPECIES_GENESECT, 10,4)
+    msgbox("{PLAYER} checked the POKé BALL.\p
+    	It contained the POKéMON\n
+    	GENESECT.\p
+    	Take the POKé BALL?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_GENESECT, 70)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(VAR_LAST_TALKED)
+            setflag(FLAG_DEFEATED_GENESECT)
+            call(Common_EventScript_NicknameRecievedMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} took the POKéMON!")
+            removeobject(VAR_LAST_TALKED)
+            setflag(FLAG_DEFEATED_GENESECT)
+            call(Common_EventScript_NicknameRecievedMonBox)
+        }
+        else{
+            hidemonpic
+            msgbox("You don't have any room.")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox("{PLAYER} decided not to take the \n
+    	POKéMON.")
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script Common_EventScript_NicknameRecievedMon{
+    msgbox("Would you like to nickname the POKéMON?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+}
+
+script Common_EventScript_NicknameRecievedMonBox{
+    msgbox("Would you like to nickname the POKéMON?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+}

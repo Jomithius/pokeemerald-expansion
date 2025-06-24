@@ -114,65 +114,67 @@ AreaZero_EventScript_Cosmog::
 # 69 "data/maps/AreaZero/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq AreaZero_EventScript_Cosmog_2
-# 75 "data/maps/AreaZero/scripts.pory"
+# 76 "data/maps/AreaZero/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 AreaZero_EventScript_Cosmog_1:
-# 77 "data/maps/AreaZero/scripts.pory"
+# 78 "data/maps/AreaZero/scripts.pory"
 	release
 	end
 
 AreaZero_EventScript_Cosmog_2:
 # 70 "data/maps/AreaZero/scripts.pory"
-	call Area_Zero_Shake
+	closemessage
 # 71 "data/maps/AreaZero/scripts.pory"
-	warpwhitefade MAP_ROUTE135_LAB, 10, 9
+	call Area_Zero_Shake
 # 72 "data/maps/AreaZero/scripts.pory"
+	warpwhitefade MAP_ROUTE135_LAB, 10, 9
+# 73 "data/maps/AreaZero/scripts.pory"
 	waitstate
 	goto AreaZero_EventScript_Cosmog_1
 
 
 Area_Zero_Shake::
-# 86 "data/maps/AreaZero/scripts.pory"
-	delay 30
 # 87 "data/maps/AreaZero/scripts.pory"
-	setvar VAR_0x8004, 2
+	delay 30
 # 88 "data/maps/AreaZero/scripts.pory"
-	setvar VAR_0x8005, 6
+	setvar VAR_0x8004, 2
 # 89 "data/maps/AreaZero/scripts.pory"
-	setvar VAR_0x8006, 8
+	setvar VAR_0x8005, 6
 # 90 "data/maps/AreaZero/scripts.pory"
-	setvar VAR_0x8007, 4
+	setvar VAR_0x8006, 8
 # 91 "data/maps/AreaZero/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 4
 # 92 "data/maps/AreaZero/scripts.pory"
-	waitstate
+	special ShakeCamera
 # 93 "data/maps/AreaZero/scripts.pory"
-	delay 60
+	waitstate
 # 94 "data/maps/AreaZero/scripts.pory"
-	playse SE_M_THUNDER_WAVE
+	delay 60
 # 95 "data/maps/AreaZero/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 96 "data/maps/AreaZero/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 97 "data/maps/AreaZero/scripts.pory"
-	delay 20
-# 98 "data/maps/AreaZero/scripts.pory"
 	playse SE_M_THUNDER_WAVE
-# 99 "data/maps/AreaZero/scripts.pory"
+# 96 "data/maps/AreaZero/scripts.pory"
 	fadescreen FADE_TO_WHITE
-# 100 "data/maps/AreaZero/scripts.pory"
+# 97 "data/maps/AreaZero/scripts.pory"
 	fadescreen FADE_FROM_WHITE
+# 98 "data/maps/AreaZero/scripts.pory"
+	delay 20
+# 99 "data/maps/AreaZero/scripts.pory"
+	playse SE_M_THUNDER_WAVE
+# 100 "data/maps/AreaZero/scripts.pory"
+	fadescreen FADE_TO_WHITE
 # 101 "data/maps/AreaZero/scripts.pory"
-	delay 10
+	fadescreen FADE_FROM_WHITE
 # 102 "data/maps/AreaZero/scripts.pory"
-	waitse
+	delay 10
 # 103 "data/maps/AreaZero/scripts.pory"
-	playse SE_INTRO_BLAST
+	waitse
 # 104 "data/maps/AreaZero/scripts.pory"
+	playse SE_INTRO_BLAST
+# 105 "data/maps/AreaZero/scripts.pory"
 	delay 20
 	return
 
 
 AreaZero_Text_WouldYouLikeToReturn::
-# 81 "data/maps/AreaZero/scripts.pory"
+# 82 "data/maps/AreaZero/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Would you like to return to the LAB?$"

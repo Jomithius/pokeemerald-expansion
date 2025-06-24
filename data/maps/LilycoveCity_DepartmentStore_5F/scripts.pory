@@ -167,7 +167,7 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
     lock
     applymovement(8, Common_Movement_FacePlayer)
     waitmovement(8)
-    if(flag(FLAG_RECIEVED_RARE_CANDY_LILYCOVE_DEPT ) == FALSE){
+    if(flag(FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT ) == FALSE){
         playse(SE_PIN)
         applymovement(8, Common_Movement_ExclamationMark)
         waitmovement(8)
@@ -180,7 +180,7 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
         msgbox(LilycoveCity_DepartmentStore_5F_Text_Misa2, MSGBOX_AUTOCLOSE)
         waitmessage
         fadedefaultbgm
-        setflag(FLAG_RECIEVED_RARE_CANDY_LILYCOVE_DEPT)
+        setflag(FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT)
     }
     else{
         msgbox(LilycoveCity_DepartmentStore_5F_Text_Misa3, MSGBOX_AUTOCLOSE)

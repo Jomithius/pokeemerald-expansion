@@ -85,7 +85,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 # 43 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
 # 44 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-    goto_if_set FLAG_RECIEVED_FANTASIA, EverGrandeCity_DrakesRoom_EventScript_Dave
+    goto_if_set FLAG_RECEIVED_FANTASIA, EverGrandeCity_DrakesRoom_EventScript_Dave
 # 45 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 46 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"

@@ -230,6 +230,27 @@ script Route123_EventScript_Speedwagon{
     end
 }
 
+script Route123_EventScript_ZapdosGalar{
+    lock
+    playmoncry(SPECIES_ZAPDOS_GALAR, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ZAPDOS_GALAR, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
 text Route123_Text_Speedwagon1{
     "SPEEDWAGON: Huh?\n
     YOU again?!\p

@@ -112,6 +112,55 @@ SalazzleFailed::
 	return
 
 
+FieryPath_EventScript_Moltres::
+# 62 "data/maps/FieryPath/scripts.pory"
+	lock
+# 63 "data/maps/FieryPath/scripts.pory"
+	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
+# 64 "data/maps/FieryPath/scripts.pory"
+	delay 40
+# 65 "data/maps/FieryPath/scripts.pory"
+	waitmoncry
+# 66 "data/maps/FieryPath/scripts.pory"
+	setwildbattle SPECIES_MOLTRES, 75
+# 67 "data/maps/FieryPath/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 68 "data/maps/FieryPath/scripts.pory"
+	waitstate
+# 69 "data/maps/FieryPath/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 70 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq FieryPath_EventScript_Moltres_2
+# 70 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq FieryPath_EventScript_Moltres_2
+# 75 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq FieryPath_EventScript_Moltres_3
+# 75 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq FieryPath_EventScript_Moltres_3
+FieryPath_EventScript_Moltres_1:
+# 78 "data/maps/FieryPath/scripts.pory"
+	release
+	end
+
+FieryPath_EventScript_Moltres_2:
+# 71 "data/maps/FieryPath/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 72 "data/maps/FieryPath/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 73 "data/maps/FieryPath/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+	goto FieryPath_EventScript_Moltres_1
+
+FieryPath_EventScript_Moltres_3:
+# 76 "data/maps/FieryPath/scripts.pory"
+	goto Common_EventScript_NopReturn
+	goto FieryPath_EventScript_Moltres_1
+
+
 SalazzleFailed_Text_0:
 # 57 "data/maps/FieryPath/scripts.pory"
 	.string "The SALAZZLE disappeared…$"

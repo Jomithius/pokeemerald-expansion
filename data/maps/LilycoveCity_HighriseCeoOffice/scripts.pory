@@ -83,6 +83,9 @@ script LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags{
     clearflag(FLAG_HIDE_GIRATINA)
     clearflag(FLAG_HIDE_MARSHADOW)
     clearflag(FLAG_HIDE_ZERAORA)
+    clearflag(FLAG_DEFEATED_GLASTRIER)
+    clearflag(FLAG_DEFEATED_GENESECT)
+    clearflag(FLAG_DEFEATED_REGIELEKI)
     return
 }
 

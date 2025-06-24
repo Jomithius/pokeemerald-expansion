@@ -1,11 +1,13 @@
-mapscripts FlowerParadise_MapScripts {}
+raw`ArtisanCave_B1F_MapScripts::
+	.byte 0
+`
 
-script FlowerParadise_EventScript_Shaymin{
+script AzureMountain_EventScript_Keldeo{
     lock
-    playmoncry(SPECIES_SHAYMIN, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_KELDEO, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_SHAYMIN, 75, ITEM_GRACIDEA)
+    setwildbattle(SPECIES_KELDEO, 75)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -21,12 +23,12 @@ script FlowerParadise_EventScript_Shaymin{
 	end
 }
 
-script FlowerParadise_EventScript_Meloetta{
+script AzureMountain_EventScript_Cobalion{
     lock
-    playmoncry(SPECIES_MELOETTA, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_COBALION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_MELOETTA, 75)
+    setwildbattle(SPECIES_COBALION, 75)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -42,12 +44,12 @@ script FlowerParadise_EventScript_Meloetta{
 	end
 }
 
-script FlowerParadise_EventScript_Victini{
+script AzureMountain_EventScript_Virizion{
     lock
-    playmoncry(SPECIES_VICTINI, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_VIRIZION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_VICTINI, 75)
+    setwildbattle(SPECIES_VIRIZION, 75)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -63,12 +65,12 @@ script FlowerParadise_EventScript_Victini{
 	end
 }
 
-script FlowerParadise_EventScript_TapuBulu{
+script AzureMountain_EventScript_Terrakion{
     lock
-    playmoncry(SPECIES_TAPU_BULU, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_TERRAKION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_TAPU_BULU, 75)
+    setwildbattle(SPECIES_TERRAKION, 75)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -84,12 +86,12 @@ script FlowerParadise_EventScript_TapuBulu{
 	end
 }
 
-script FlowerParadise_EventScript_TapuKoko{
+script AzureMountain_EventScript_Hoopa{
     lock
-    playmoncry(SPECIES_TAPU_KOKO, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_HOOPA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_TAPU_KOKO, 75)
+    setwildbattle(SPECIES_HOOPA, 75)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -104,25 +106,3 @@ script FlowerParadise_EventScript_TapuKoko{
 	release
 	end
 }
-
-script FlowerParadise_EventScript_TapuLele{
-    lock
-    playmoncry(SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER)
-    delay(40)
-    waitmoncry
-    setwildbattle(SPECIES_TAPU_LELE, 75)
-    special(BattleSetup_StartLegendaryBattle)
-    waitstate
-    specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
-        fadescreen(FADE_TO_BLACK)
-        removeobject(VAR_LAST_TALKED)
-	    fadescreenspeed(FADE_FROM_BLACK, 5)
-	}
-	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
-		goto(Common_EventScript_NopReturn)
-    }
-	release
-	end
-}
-

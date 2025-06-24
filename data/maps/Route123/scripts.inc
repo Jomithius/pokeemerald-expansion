@@ -439,42 +439,91 @@ Route123_EventScript_Speedwagon::
 	end
 
 
+Route123_EventScript_ZapdosGalar::
+# 234 "data/maps/Route123/scripts.pory"
+	lock
+# 235 "data/maps/Route123/scripts.pory"
+	playmoncry SPECIES_ZAPDOS_GALAR, CRY_MODE_ENCOUNTER
+# 236 "data/maps/Route123/scripts.pory"
+	delay 40
+# 237 "data/maps/Route123/scripts.pory"
+	waitmoncry
+# 238 "data/maps/Route123/scripts.pory"
+	setwildbattle SPECIES_ZAPDOS_GALAR, 75
+# 239 "data/maps/Route123/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 240 "data/maps/Route123/scripts.pory"
+	waitstate
+# 241 "data/maps/Route123/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 242 "data/maps/Route123/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route123_EventScript_ZapdosGalar_2
+# 242 "data/maps/Route123/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq Route123_EventScript_ZapdosGalar_2
+# 247 "data/maps/Route123/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq Route123_EventScript_ZapdosGalar_3
+# 247 "data/maps/Route123/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq Route123_EventScript_ZapdosGalar_3
+Route123_EventScript_ZapdosGalar_1:
+# 250 "data/maps/Route123/scripts.pory"
+	release
+	end
+
+Route123_EventScript_ZapdosGalar_2:
+# 243 "data/maps/Route123/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 244 "data/maps/Route123/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 245 "data/maps/Route123/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+	goto Route123_EventScript_ZapdosGalar_1
+
+Route123_EventScript_ZapdosGalar_3:
+# 248 "data/maps/Route123/scripts.pory"
+	goto Common_EventScript_NopReturn
+	goto Route123_EventScript_ZapdosGalar_1
+
+
 Route123_Text_Speedwagon1::
-# 233 "data/maps/Route123/scripts.pory"
+# 254 "data/maps/Route123/scripts.pory"
 	.string "SPEEDWAGON: Huh?\n YOU again?!\p Some of my members got arrested\n because of you!\p This is for them!\n Come on!$"
 
 Route123_Text_Speedwagon2::
-# 242 "data/maps/Route123/scripts.pory"
+# 263 "data/maps/Route123/scripts.pory"
 	.string "H-How are you still stronger?!\n Let's get out of here, boys!$"
 
 Route123_Dale_Intro::
-# 247 "data/maps/Route123/scripts.pory"
+# 268 "data/maps/Route123/scripts.pory"
 	.string "You!\n My friend's locked up because of you!$"
 
 Route123_DaleDefeat::
-# 252 "data/maps/Route123/scripts.pory"
+# 273 "data/maps/Route123/scripts.pory"
 	.string "I won't forget this!$"
 
 Route123_Biker_Intro::
-# 256 "data/maps/Route123/scripts.pory"
+# 277 "data/maps/Route123/scripts.pory"
 	.string "BRRRRUBBB BRRRRUB\n BRRRUBRUBRRRRUB!$"
 
 Route123_Biker_Intro2::
-# 261 "data/maps/Route123/scripts.pory"
+# 282 "data/maps/Route123/scripts.pory"
 	.string "Get out of my way!$"
 
 Route123_BikerDefeat::
-# 265 "data/maps/Route123/scripts.pory"
+# 286 "data/maps/Route123/scripts.pory"
 	.string "All outta gas…$"
 
 Route123_BikerDefeat2::
-# 269 "data/maps/Route123/scripts.pory"
+# 290 "data/maps/Route123/scripts.pory"
 	.string "You messed up my ride!$"
 
 Route123_BikerDefeat3::
-# 273 "data/maps/Route123/scripts.pory"
+# 294 "data/maps/Route123/scripts.pory"
 	.string "BRRRRUBBB BRRRUB….$"
 
 Route123_SpeedwagonDefeat::
-# 277 "data/maps/Route123/scripts.pory"
+# 298 "data/maps/Route123/scripts.pory"
 	.string "Dress for the slide,\n not the ride…$"

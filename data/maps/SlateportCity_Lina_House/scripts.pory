@@ -40,34 +40,29 @@ script Lina_House_EventScript_Pokeball{
 }
 
 script NicknamePartyMon{
-
     msgbox("Would you like to nickname EEVEE?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
-
-
 }
 
 script NicknameBoxMon{
-    
     msgbox("Would you like to nickname EEVEE?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){
         call(Common_EventScript_NameReceivedBoxMon)
     }
     call(Common_EventScript_TransferredToPC)
-
 }
 
 text LinaHouse_NotChosen{
     "{PLAYER} decided not to take the \n
     POKéMON."
- }
+}
 
- script Lina_House_EventScript_Bookshelf {
+script Lina_House_EventScript_Bookshelf {
     lockall
     msgbox("A bookshelf. \p
     You grab a random book \n
@@ -82,9 +77,9 @@ text LinaHouse_NotChosen{
     waitmessage
     releaseall
     end
- }
+}
 
- script Lina_House_EventScript_TV {
+script Lina_House_EventScript_TV {
     lockall
     msgbox ("There's something playing on the TV. \p
     It looks like a romance game.")
@@ -98,4 +93,4 @@ text LinaHouse_NotChosen{
     waitmessage
     releaseall
     end
- }
+}

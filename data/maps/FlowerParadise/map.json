@@ -30,8 +30,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FlowerParadise_EventScript_Shaymin",
+      "flag": "FLAG_DEFEATED_SHAYMIN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAPU_KOKO)",
@@ -43,8 +43,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FlowerParadise_EventScript_TapuKoko",
+      "flag": "FLAG_DEFEATED_TAPU_KOKO"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAPU_BULU)",
@@ -56,21 +56,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FlowerParadise_EventScript_TapuBulu",
+      "flag": "FLAG_DEFEATED_TAPU_BULU"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAPU_LELE)",
-      "x": 22,
-      "y": 18,
+      "x": 24,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FlowerParadise_EventScript_TapuLele",
+      "flag": "FLAG_DEFEATED_TAPU_LELE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MELOETTA)",
@@ -82,8 +82,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FlowerParadise_EventScript_Meloetta",
+      "flag": "FLAG_DEFEATED_MELOETTA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(VICTINI)",
@@ -95,8 +95,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FlowerParadise_EventScript_Victini",
+      "flag": "FLAG_DEFEATED_VICTINI"
     }
   ],
   "warp_events": [

@@ -5771,6 +5771,10 @@ u16 GetBattleBGM(void)
             return MUS_LEGENDARY_QUARTET;
         case SPECIES_MIRAIDON:
         case SPECIES_KORAIDON:
+            return MUS_AREA_ZERO_WILD_BATTLE;
+        case SPECIES_ENTEI:
+        case SPECIES_RAIKOU:
+        case SPECIES_SUICUNE:
             return MUS_C_VS_LEGEND_BEAST;
         default:
             return MUS_RG_VS_LEGEND;

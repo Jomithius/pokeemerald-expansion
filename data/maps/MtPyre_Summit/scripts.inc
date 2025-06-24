@@ -1334,6 +1334,104 @@ MimikyuFailed::
 	return
 
 
+MtPyre_Summit_EventScript_Giratina::
+# 674 "data/maps/MtPyre_Summit/scripts.pory"
+	lock
+# 675 "data/maps/MtPyre_Summit/scripts.pory"
+	playmoncry SPECIES_GIRATINA, CRY_MODE_ENCOUNTER
+# 676 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 40
+# 677 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmoncry
+# 678 "data/maps/MtPyre_Summit/scripts.pory"
+	setwildbattle SPECIES_GIRATINA, 75, ITEM_GRISEOUS_CORE
+# 679 "data/maps/MtPyre_Summit/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 680 "data/maps/MtPyre_Summit/scripts.pory"
+	waitstate
+# 681 "data/maps/MtPyre_Summit/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 682 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq MtPyre_Summit_EventScript_Giratina_2
+# 682 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq MtPyre_Summit_EventScript_Giratina_2
+# 687 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq MtPyre_Summit_EventScript_Giratina_3
+# 687 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq MtPyre_Summit_EventScript_Giratina_3
+MtPyre_Summit_EventScript_Giratina_1:
+# 690 "data/maps/MtPyre_Summit/scripts.pory"
+	release
+	end
+
+MtPyre_Summit_EventScript_Giratina_2:
+# 683 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 684 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 685 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+	goto MtPyre_Summit_EventScript_Giratina_1
+
+MtPyre_Summit_EventScript_Giratina_3:
+# 688 "data/maps/MtPyre_Summit/scripts.pory"
+	goto Common_EventScript_NopReturn
+	goto MtPyre_Summit_EventScript_Giratina_1
+
+
+MtPyre_Summit_EventScript_MoltresGalar::
+# 695 "data/maps/MtPyre_Summit/scripts.pory"
+	lock
+# 696 "data/maps/MtPyre_Summit/scripts.pory"
+	playmoncry SPECIES_MOLTRES_GALAR, CRY_MODE_ENCOUNTER
+# 697 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 40
+# 698 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmoncry
+# 699 "data/maps/MtPyre_Summit/scripts.pory"
+	setwildbattle SPECIES_MOLTRES_GALAR, 75
+# 700 "data/maps/MtPyre_Summit/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 701 "data/maps/MtPyre_Summit/scripts.pory"
+	waitstate
+# 702 "data/maps/MtPyre_Summit/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 703 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq MtPyre_Summit_EventScript_MoltresGalar_2
+# 703 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq MtPyre_Summit_EventScript_MoltresGalar_2
+# 708 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq MtPyre_Summit_EventScript_MoltresGalar_3
+# 708 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq MtPyre_Summit_EventScript_MoltresGalar_3
+MtPyre_Summit_EventScript_MoltresGalar_1:
+# 711 "data/maps/MtPyre_Summit/scripts.pory"
+	release
+	end
+
+MtPyre_Summit_EventScript_MoltresGalar_2:
+# 704 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 705 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 706 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+	goto MtPyre_Summit_EventScript_MoltresGalar_1
+
+MtPyre_Summit_EventScript_MoltresGalar_3:
+# 709 "data/maps/MtPyre_Summit/scripts.pory"
+	goto Common_EventScript_NopReturn
+	goto MtPyre_Summit_EventScript_MoltresGalar_1
+
+
 MimikyuFailed_Text_0:
 # 669 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "The MIMIKYU disappeared…$"

@@ -501,7 +501,7 @@ Route117_EventScript_MisaBattle::
 	compare VAR_MISA_STATE, 4
 	goto_if_eq Route117_EventScript_MisaBattle_2
 # 283 "data/maps/Route117/scripts.pory"
-	goto_if_set FLAG_ROUTE117_RECIEVED_LEFTOVERS, Route117_EventScript_MisaBattle_13
+	goto_if_set FLAG_ROUTE117_RECEIVED_LEFTOVERS, Route117_EventScript_MisaBattle_13
 # 287 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_MisaLeftovers, MSGBOX_AUTOCLOSE
 # 288 "data/maps/Route117/scripts.pory"
@@ -511,7 +511,7 @@ Route117_EventScript_MisaBattle::
 # 290 "data/maps/Route117/scripts.pory"
 	waitmessage
 # 291 "data/maps/Route117/scripts.pory"
-	setflag FLAG_ROUTE117_RECIEVED_LEFTOVERS
+	setflag FLAG_ROUTE117_RECEIVED_LEFTOVERS
 # 292 "data/maps/Route117/scripts.pory"
 	release
 	end
