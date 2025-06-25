@@ -3,6 +3,7 @@ mapscripts AzureMountain_KyuremLair_MapScripts {}
 
 script AzureMountain_KyuremLair_EventScript_Kyurem{
     lock
+    faceplayer
     playmoncry(SPECIES_KYUREM, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

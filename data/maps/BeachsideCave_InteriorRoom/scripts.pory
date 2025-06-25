@@ -2,6 +2,7 @@ mapscripts BeachsideCave_InteriorRoom_MapScripts {}
 
 script BeachsideCave_InteriorRoom_EventScript_TapuFini{
     lock
+    faceplayer
     playmoncry(SPECIES_TAPU_FINI, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

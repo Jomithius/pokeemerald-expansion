@@ -11,6 +11,7 @@ ScorchedSlab_OnTransition:
 
 script ScorchedSlab_EventScript_Entei{
     lock
+    faceplayer
     playmoncry(SPECIES_ENTEI, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

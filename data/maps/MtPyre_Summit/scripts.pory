@@ -672,6 +672,7 @@ script MimikyuFailed {
 
 script MtPyre_Summit_EventScript_Giratina{
     lock
+	faceplayer
     playmoncry(SPECIES_GIRATINA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -693,6 +694,7 @@ script MtPyre_Summit_EventScript_Giratina{
 
 script MtPyre_Summit_EventScript_MoltresGalar{
     lock
+	faceplayer
     playmoncry(SPECIES_MOLTRES_GALAR, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

@@ -291,145 +291,151 @@ MtPyre_Exterior_EventScript_Spectrier::
 # 163 "data/maps/MtPyre_Exterior/scripts.pory"
 	lock
 # 164 "data/maps/MtPyre_Exterior/scripts.pory"
-	playmoncry SPECIES_SPECTRIER, CRY_MODE_ENCOUNTER
+	faceplayer
 # 165 "data/maps/MtPyre_Exterior/scripts.pory"
-	delay 40
+	playmoncry SPECIES_SPECTRIER, CRY_MODE_ENCOUNTER
 # 166 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmoncry
+	delay 40
 # 167 "data/maps/MtPyre_Exterior/scripts.pory"
-	setwildbattle SPECIES_SPECTRIER, 75
+	waitmoncry
 # 168 "data/maps/MtPyre_Exterior/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_SPECTRIER, 75
 # 169 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 170 "data/maps/MtPyre_Exterior/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 171 "data/maps/MtPyre_Exterior/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 172 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MtPyre_Exterior_EventScript_Spectrier_2
-# 171 "data/maps/MtPyre_Exterior/scripts.pory"
+# 172 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MtPyre_Exterior_EventScript_Spectrier_2
-# 176 "data/maps/MtPyre_Exterior/scripts.pory"
+# 177 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq MtPyre_Exterior_EventScript_Spectrier_3
-# 176 "data/maps/MtPyre_Exterior/scripts.pory"
+# 177 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MtPyre_Exterior_EventScript_Spectrier_3
 MtPyre_Exterior_EventScript_Spectrier_1:
-# 179 "data/maps/MtPyre_Exterior/scripts.pory"
+# 180 "data/maps/MtPyre_Exterior/scripts.pory"
 	release
 	end
 
 MtPyre_Exterior_EventScript_Spectrier_2:
-# 172 "data/maps/MtPyre_Exterior/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 173 "data/maps/MtPyre_Exterior/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreen FADE_TO_BLACK
 # 174 "data/maps/MtPyre_Exterior/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 175 "data/maps/MtPyre_Exterior/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto MtPyre_Exterior_EventScript_Spectrier_1
 
 MtPyre_Exterior_EventScript_Spectrier_3:
-# 177 "data/maps/MtPyre_Exterior/scripts.pory"
+# 178 "data/maps/MtPyre_Exterior/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto MtPyre_Exterior_EventScript_Spectrier_1
 
 
 MtPyre_Exterior_EventScript_Marshadow::
-# 184 "data/maps/MtPyre_Exterior/scripts.pory"
-	lock
 # 185 "data/maps/MtPyre_Exterior/scripts.pory"
-	playmoncry SPECIES_MARSHADOW, CRY_MODE_ENCOUNTER
+	lock
 # 186 "data/maps/MtPyre_Exterior/scripts.pory"
-	delay 40
+	faceplayer
 # 187 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_MARSHADOW, CRY_MODE_ENCOUNTER
 # 188 "data/maps/MtPyre_Exterior/scripts.pory"
-	setwildbattle SPECIES_MARSHADOW, 75
+	delay 40
 # 189 "data/maps/MtPyre_Exterior/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 190 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitstate
+	setwildbattle SPECIES_MARSHADOW, 75
 # 191 "data/maps/MtPyre_Exterior/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 192 "data/maps/MtPyre_Exterior/scripts.pory"
+	waitstate
+# 193 "data/maps/MtPyre_Exterior/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 194 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MtPyre_Exterior_EventScript_Marshadow_2
-# 192 "data/maps/MtPyre_Exterior/scripts.pory"
+# 194 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MtPyre_Exterior_EventScript_Marshadow_2
-# 197 "data/maps/MtPyre_Exterior/scripts.pory"
+# 199 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq MtPyre_Exterior_EventScript_Marshadow_3
-# 197 "data/maps/MtPyre_Exterior/scripts.pory"
+# 199 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MtPyre_Exterior_EventScript_Marshadow_3
 MtPyre_Exterior_EventScript_Marshadow_1:
-# 200 "data/maps/MtPyre_Exterior/scripts.pory"
+# 202 "data/maps/MtPyre_Exterior/scripts.pory"
 	release
 	end
 
 MtPyre_Exterior_EventScript_Marshadow_2:
-# 193 "data/maps/MtPyre_Exterior/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 194 "data/maps/MtPyre_Exterior/scripts.pory"
-	removeobject VAR_LAST_TALKED
 # 195 "data/maps/MtPyre_Exterior/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 196 "data/maps/MtPyre_Exterior/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 197 "data/maps/MtPyre_Exterior/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto MtPyre_Exterior_EventScript_Marshadow_1
 
 MtPyre_Exterior_EventScript_Marshadow_3:
-# 198 "data/maps/MtPyre_Exterior/scripts.pory"
+# 200 "data/maps/MtPyre_Exterior/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto MtPyre_Exterior_EventScript_Marshadow_1
 
 
 MtPyre_Exterior_EventScript_ArticunoGalar::
-# 205 "data/maps/MtPyre_Exterior/scripts.pory"
-	lock
-# 206 "data/maps/MtPyre_Exterior/scripts.pory"
-	playmoncry SPECIES_ARTICUNO_GALAR, CRY_MODE_ENCOUNTER
 # 207 "data/maps/MtPyre_Exterior/scripts.pory"
-	delay 40
+	lock
 # 208 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmoncry
+	faceplayer
 # 209 "data/maps/MtPyre_Exterior/scripts.pory"
-	setwildbattle SPECIES_ARTICUNO_GALAR, 75
+	playmoncry SPECIES_ARTICUNO_GALAR, CRY_MODE_ENCOUNTER
 # 210 "data/maps/MtPyre_Exterior/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	delay 40
 # 211 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitstate
+	waitmoncry
 # 212 "data/maps/MtPyre_Exterior/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setwildbattle SPECIES_ARTICUNO_GALAR, 75
 # 213 "data/maps/MtPyre_Exterior/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 214 "data/maps/MtPyre_Exterior/scripts.pory"
+	waitstate
+# 215 "data/maps/MtPyre_Exterior/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 216 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MtPyre_Exterior_EventScript_ArticunoGalar_2
-# 213 "data/maps/MtPyre_Exterior/scripts.pory"
+# 216 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MtPyre_Exterior_EventScript_ArticunoGalar_2
-# 218 "data/maps/MtPyre_Exterior/scripts.pory"
+# 221 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq MtPyre_Exterior_EventScript_ArticunoGalar_3
-# 218 "data/maps/MtPyre_Exterior/scripts.pory"
+# 221 "data/maps/MtPyre_Exterior/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MtPyre_Exterior_EventScript_ArticunoGalar_3
 MtPyre_Exterior_EventScript_ArticunoGalar_1:
-# 221 "data/maps/MtPyre_Exterior/scripts.pory"
+# 224 "data/maps/MtPyre_Exterior/scripts.pory"
 	release
 	end
 
 MtPyre_Exterior_EventScript_ArticunoGalar_2:
-# 214 "data/maps/MtPyre_Exterior/scripts.pory"
+# 217 "data/maps/MtPyre_Exterior/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 215 "data/maps/MtPyre_Exterior/scripts.pory"
+# 218 "data/maps/MtPyre_Exterior/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 216 "data/maps/MtPyre_Exterior/scripts.pory"
+# 219 "data/maps/MtPyre_Exterior/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto MtPyre_Exterior_EventScript_ArticunoGalar_1
 
 MtPyre_Exterior_EventScript_ArticunoGalar_3:
-# 219 "data/maps/MtPyre_Exterior/scripts.pory"
+# 222 "data/maps/MtPyre_Exterior/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto MtPyre_Exterior_EventScript_ArticunoGalar_1
 

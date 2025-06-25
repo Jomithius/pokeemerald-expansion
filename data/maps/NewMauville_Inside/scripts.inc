@@ -616,294 +616,302 @@ NewMauville_Inside_EventScript_Raikou::
 # 312 "data/maps/NewMauville_Inside/scripts.pory"
 	lock
 # 313 "data/maps/NewMauville_Inside/scripts.pory"
-	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
+	faceplayer
 # 314 "data/maps/NewMauville_Inside/scripts.pory"
-	delay 40
+	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
 # 315 "data/maps/NewMauville_Inside/scripts.pory"
-	waitmoncry
+	delay 40
 # 316 "data/maps/NewMauville_Inside/scripts.pory"
-	setwildbattle SPECIES_RAIKOU, 75
+	waitmoncry
 # 317 "data/maps/NewMauville_Inside/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_RAIKOU, 75
 # 318 "data/maps/NewMauville_Inside/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 319 "data/maps/NewMauville_Inside/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 320 "data/maps/NewMauville_Inside/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 321 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq NewMauville_Inside_EventScript_Raikou_2
-# 320 "data/maps/NewMauville_Inside/scripts.pory"
+# 321 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq NewMauville_Inside_EventScript_Raikou_2
-# 325 "data/maps/NewMauville_Inside/scripts.pory"
+# 326 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq NewMauville_Inside_EventScript_Raikou_3
-# 325 "data/maps/NewMauville_Inside/scripts.pory"
+# 326 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NewMauville_Inside_EventScript_Raikou_3
 NewMauville_Inside_EventScript_Raikou_1:
-# 328 "data/maps/NewMauville_Inside/scripts.pory"
+# 329 "data/maps/NewMauville_Inside/scripts.pory"
 	release
 	end
 
 NewMauville_Inside_EventScript_Raikou_2:
-# 321 "data/maps/NewMauville_Inside/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 322 "data/maps/NewMauville_Inside/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreen FADE_TO_BLACK
 # 323 "data/maps/NewMauville_Inside/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 324 "data/maps/NewMauville_Inside/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto NewMauville_Inside_EventScript_Raikou_1
 
 NewMauville_Inside_EventScript_Raikou_3:
-# 326 "data/maps/NewMauville_Inside/scripts.pory"
+# 327 "data/maps/NewMauville_Inside/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto NewMauville_Inside_EventScript_Raikou_1
 
 
 NewMauville_Inside_EventScript_Regieleki::
-# 333 "data/maps/NewMauville_Inside/scripts.pory"
-	lock
 # 334 "data/maps/NewMauville_Inside/scripts.pory"
-	playmoncry SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER
+	lock
 # 335 "data/maps/NewMauville_Inside/scripts.pory"
-	delay 40
+	faceplayer
 # 336 "data/maps/NewMauville_Inside/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER
 # 337 "data/maps/NewMauville_Inside/scripts.pory"
-	setwildbattle SPECIES_REGIELEKI, 75
+	delay 40
 # 338 "data/maps/NewMauville_Inside/scripts.pory"
-	special StartRegiBattle
+	waitmoncry
 # 339 "data/maps/NewMauville_Inside/scripts.pory"
-	waitstate
+	setwildbattle SPECIES_REGIELEKI, 75
 # 340 "data/maps/NewMauville_Inside/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special StartRegiBattle
 # 341 "data/maps/NewMauville_Inside/scripts.pory"
+	waitstate
+# 342 "data/maps/NewMauville_Inside/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 343 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq NewMauville_Inside_EventScript_Regieleki_2
-# 341 "data/maps/NewMauville_Inside/scripts.pory"
+# 343 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq NewMauville_Inside_EventScript_Regieleki_2
-# 346 "data/maps/NewMauville_Inside/scripts.pory"
+# 348 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq NewMauville_Inside_EventScript_Regieleki_3
-# 346 "data/maps/NewMauville_Inside/scripts.pory"
+# 348 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NewMauville_Inside_EventScript_Regieleki_3
 NewMauville_Inside_EventScript_Regieleki_1:
-# 349 "data/maps/NewMauville_Inside/scripts.pory"
+# 351 "data/maps/NewMauville_Inside/scripts.pory"
 	release
 	end
 
 NewMauville_Inside_EventScript_Regieleki_2:
-# 342 "data/maps/NewMauville_Inside/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 343 "data/maps/NewMauville_Inside/scripts.pory"
-	removeobject VAR_LAST_TALKED
 # 344 "data/maps/NewMauville_Inside/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 345 "data/maps/NewMauville_Inside/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 346 "data/maps/NewMauville_Inside/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto NewMauville_Inside_EventScript_Regieleki_1
 
 NewMauville_Inside_EventScript_Regieleki_3:
-# 347 "data/maps/NewMauville_Inside/scripts.pory"
+# 349 "data/maps/NewMauville_Inside/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto NewMauville_Inside_EventScript_Regieleki_1
 
 
 NewMauville_Inside_EventScript_Zeraora::
-# 354 "data/maps/NewMauville_Inside/scripts.pory"
-	lock
-# 355 "data/maps/NewMauville_Inside/scripts.pory"
-	playmoncry SPECIES_ZERAORA, CRY_MODE_ENCOUNTER
 # 356 "data/maps/NewMauville_Inside/scripts.pory"
-	delay 40
+	lock
 # 357 "data/maps/NewMauville_Inside/scripts.pory"
-	waitmoncry
+	faceplayer
 # 358 "data/maps/NewMauville_Inside/scripts.pory"
-	setwildbattle SPECIES_ZERAORA, 75
+	playmoncry SPECIES_ZERAORA, CRY_MODE_ENCOUNTER
 # 359 "data/maps/NewMauville_Inside/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	delay 40
 # 360 "data/maps/NewMauville_Inside/scripts.pory"
-	waitstate
+	waitmoncry
 # 361 "data/maps/NewMauville_Inside/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setwildbattle SPECIES_ZERAORA, 75
 # 362 "data/maps/NewMauville_Inside/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 363 "data/maps/NewMauville_Inside/scripts.pory"
+	waitstate
+# 364 "data/maps/NewMauville_Inside/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 365 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq NewMauville_Inside_EventScript_Zeraora_2
-# 362 "data/maps/NewMauville_Inside/scripts.pory"
+# 365 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq NewMauville_Inside_EventScript_Zeraora_2
-# 367 "data/maps/NewMauville_Inside/scripts.pory"
+# 370 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq NewMauville_Inside_EventScript_Zeraora_3
-# 367 "data/maps/NewMauville_Inside/scripts.pory"
+# 370 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NewMauville_Inside_EventScript_Zeraora_3
 NewMauville_Inside_EventScript_Zeraora_1:
-# 370 "data/maps/NewMauville_Inside/scripts.pory"
+# 373 "data/maps/NewMauville_Inside/scripts.pory"
 	release
 	end
 
 NewMauville_Inside_EventScript_Zeraora_2:
-# 363 "data/maps/NewMauville_Inside/scripts.pory"
+# 366 "data/maps/NewMauville_Inside/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 364 "data/maps/NewMauville_Inside/scripts.pory"
+# 367 "data/maps/NewMauville_Inside/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 365 "data/maps/NewMauville_Inside/scripts.pory"
+# 368 "data/maps/NewMauville_Inside/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto NewMauville_Inside_EventScript_Zeraora_1
 
 NewMauville_Inside_EventScript_Zeraora_3:
-# 368 "data/maps/NewMauville_Inside/scripts.pory"
+# 371 "data/maps/NewMauville_Inside/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto NewMauville_Inside_EventScript_Zeraora_1
 
 
 NewMauville_Inside_EventScript_Zapdos::
-# 375 "data/maps/NewMauville_Inside/scripts.pory"
-	lock
-# 376 "data/maps/NewMauville_Inside/scripts.pory"
-	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
-# 377 "data/maps/NewMauville_Inside/scripts.pory"
-	delay 40
 # 378 "data/maps/NewMauville_Inside/scripts.pory"
-	waitmoncry
+	lock
 # 379 "data/maps/NewMauville_Inside/scripts.pory"
-	setwildbattle SPECIES_ZAPDOS, 75
+	faceplayer
 # 380 "data/maps/NewMauville_Inside/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
 # 381 "data/maps/NewMauville_Inside/scripts.pory"
-	waitstate
+	delay 40
 # 382 "data/maps/NewMauville_Inside/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitmoncry
 # 383 "data/maps/NewMauville_Inside/scripts.pory"
+	setwildbattle SPECIES_ZAPDOS, 75
+# 384 "data/maps/NewMauville_Inside/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 385 "data/maps/NewMauville_Inside/scripts.pory"
+	waitstate
+# 386 "data/maps/NewMauville_Inside/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 387 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq NewMauville_Inside_EventScript_Zapdos_2
-# 383 "data/maps/NewMauville_Inside/scripts.pory"
+# 387 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq NewMauville_Inside_EventScript_Zapdos_2
-# 388 "data/maps/NewMauville_Inside/scripts.pory"
+# 392 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq NewMauville_Inside_EventScript_Zapdos_3
-# 388 "data/maps/NewMauville_Inside/scripts.pory"
+# 392 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NewMauville_Inside_EventScript_Zapdos_3
 NewMauville_Inside_EventScript_Zapdos_1:
-# 391 "data/maps/NewMauville_Inside/scripts.pory"
+# 395 "data/maps/NewMauville_Inside/scripts.pory"
 	release
 	end
 
 NewMauville_Inside_EventScript_Zapdos_2:
-# 384 "data/maps/NewMauville_Inside/scripts.pory"
+# 388 "data/maps/NewMauville_Inside/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 385 "data/maps/NewMauville_Inside/scripts.pory"
+# 389 "data/maps/NewMauville_Inside/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 386 "data/maps/NewMauville_Inside/scripts.pory"
+# 390 "data/maps/NewMauville_Inside/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto NewMauville_Inside_EventScript_Zapdos_1
 
 NewMauville_Inside_EventScript_Zapdos_3:
-# 389 "data/maps/NewMauville_Inside/scripts.pory"
+# 393 "data/maps/NewMauville_Inside/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto NewMauville_Inside_EventScript_Zapdos_1
 
 
 NewMauville_Inside_EventScript_Genesect::
-# 396 "data/maps/NewMauville_Inside/scripts.pory"
+# 400 "data/maps/NewMauville_Inside/scripts.pory"
 	lockall
-# 397 "data/maps/NewMauville_Inside/scripts.pory"
+# 401 "data/maps/NewMauville_Inside/scripts.pory"
 	showmonpic SPECIES_GENESECT, 10, 4
-# 398 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_EventScript_Genesect_Text_0, MSGBOX_YESNO
 # 402 "data/maps/NewMauville_Inside/scripts.pory"
+	msgbox NewMauville_Inside_EventScript_Genesect_Text_0, MSGBOX_YESNO
+# 406 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewMauville_Inside_EventScript_Genesect_2
-# 424 "data/maps/NewMauville_Inside/scripts.pory"
+# 428 "data/maps/NewMauville_Inside/scripts.pory"
 	hidemonpic
-# 425 "data/maps/NewMauville_Inside/scripts.pory"
+# 429 "data/maps/NewMauville_Inside/scripts.pory"
 	msgbox NewMauville_Inside_EventScript_Genesect_Text_3
 NewMauville_Inside_EventScript_Genesect_1:
-# 428 "data/maps/NewMauville_Inside/scripts.pory"
+# 432 "data/maps/NewMauville_Inside/scripts.pory"
 	waitmessage
-# 429 "data/maps/NewMauville_Inside/scripts.pory"
+# 433 "data/maps/NewMauville_Inside/scripts.pory"
 	releaseall
 	end
 
 NewMauville_Inside_EventScript_Genesect_2:
-# 403 "data/maps/NewMauville_Inside/scripts.pory"
+# 407 "data/maps/NewMauville_Inside/scripts.pory"
 	givemon SPECIES_GENESECT, 70
-# 404 "data/maps/NewMauville_Inside/scripts.pory"
+# 408 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq NewMauville_Inside_EventScript_Genesect_5
-# 411 "data/maps/NewMauville_Inside/scripts.pory"
+# 415 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewMauville_Inside_EventScript_Genesect_6
-# 419 "data/maps/NewMauville_Inside/scripts.pory"
+# 423 "data/maps/NewMauville_Inside/scripts.pory"
 	hidemonpic
-# 420 "data/maps/NewMauville_Inside/scripts.pory"
+# 424 "data/maps/NewMauville_Inside/scripts.pory"
 	msgbox NewMauville_Inside_EventScript_Genesect_Text_2
 	goto NewMauville_Inside_EventScript_Genesect_1
 
 NewMauville_Inside_EventScript_Genesect_5:
-# 405 "data/maps/NewMauville_Inside/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 406 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_EventScript_Genesect_Text_1
-# 407 "data/maps/NewMauville_Inside/scripts.pory"
-	removeobject VAR_LAST_TALKED
-# 408 "data/maps/NewMauville_Inside/scripts.pory"
-	setflag FLAG_DEFEATED_GENESECT
 # 409 "data/maps/NewMauville_Inside/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 410 "data/maps/NewMauville_Inside/scripts.pory"
+	msgbox NewMauville_Inside_EventScript_Genesect_Text_1
+# 411 "data/maps/NewMauville_Inside/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 412 "data/maps/NewMauville_Inside/scripts.pory"
+	setflag FLAG_DEFEATED_GENESECT
+# 413 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_NicknameRecievedMon
 	goto NewMauville_Inside_EventScript_Genesect_1
 
 NewMauville_Inside_EventScript_Genesect_6:
-# 412 "data/maps/NewMauville_Inside/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 413 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_EventScript_Genesect_Text_1
-# 414 "data/maps/NewMauville_Inside/scripts.pory"
-	removeobject VAR_LAST_TALKED
-# 415 "data/maps/NewMauville_Inside/scripts.pory"
-	setflag FLAG_DEFEATED_GENESECT
 # 416 "data/maps/NewMauville_Inside/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 417 "data/maps/NewMauville_Inside/scripts.pory"
+	msgbox NewMauville_Inside_EventScript_Genesect_Text_1
+# 418 "data/maps/NewMauville_Inside/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 419 "data/maps/NewMauville_Inside/scripts.pory"
+	setflag FLAG_DEFEATED_GENESECT
+# 420 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_NicknameRecievedMonBox
 	goto NewMauville_Inside_EventScript_Genesect_1
 
 
 Common_EventScript_NicknameRecievedMon::
-# 434 "data/maps/NewMauville_Inside/scripts.pory"
+# 438 "data/maps/NewMauville_Inside/scripts.pory"
 	msgbox Common_EventScript_NicknameRecievedMon_Text_0, MSGBOX_YESNO
-# 435 "data/maps/NewMauville_Inside/scripts.pory"
+# 439 "data/maps/NewMauville_Inside/scripts.pory"
 	hidemonpic
-# 436 "data/maps/NewMauville_Inside/scripts.pory"
+# 440 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Common_EventScript_NicknameRecievedMon_1
 	return
 
 Common_EventScript_NicknameRecievedMon_1:
-# 437 "data/maps/NewMauville_Inside/scripts.pory"
+# 441 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 438 "data/maps/NewMauville_Inside/scripts.pory"
+# 442 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	return
 
 
 Common_EventScript_NicknameRecievedMonBox::
-# 443 "data/maps/NewMauville_Inside/scripts.pory"
+# 447 "data/maps/NewMauville_Inside/scripts.pory"
 	msgbox Common_EventScript_NicknameRecievedMon_Text_0, MSGBOX_YESNO
-# 444 "data/maps/NewMauville_Inside/scripts.pory"
+# 448 "data/maps/NewMauville_Inside/scripts.pory"
 	hidemonpic
-# 445 "data/maps/NewMauville_Inside/scripts.pory"
+# 449 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Common_EventScript_NicknameRecievedMonBox_2
 Common_EventScript_NicknameRecievedMonBox_1:
-# 448 "data/maps/NewMauville_Inside/scripts.pory"
+# 452 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_TransferredToPC
 	return
 
 Common_EventScript_NicknameRecievedMonBox_2:
-# 446 "data/maps/NewMauville_Inside/scripts.pory"
+# 450 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto Common_EventScript_NicknameRecievedMonBox_1
 
@@ -913,21 +921,21 @@ TogedemaruFailed_Text_0:
 	.string "The TOGEDEMARU disappeared…$"
 
 NewMauville_Inside_EventScript_Genesect_Text_0:
-# 398 "data/maps/NewMauville_Inside/scripts.pory"
+# 402 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "{PLAYER} checked the POKé BALL.\p It contained the POKéMON\n GENESECT.\p Take the POKé BALL?$"
 
 NewMauville_Inside_EventScript_Genesect_Text_1:
-# 406 "data/maps/NewMauville_Inside/scripts.pory"
+# 410 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "{PLAYER} took the POKéMON!$"
 
 NewMauville_Inside_EventScript_Genesect_Text_2:
-# 420 "data/maps/NewMauville_Inside/scripts.pory"
+# 424 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "You don't have any room.$"
 
 NewMauville_Inside_EventScript_Genesect_Text_3:
-# 425 "data/maps/NewMauville_Inside/scripts.pory"
+# 429 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"
 
 Common_EventScript_NicknameRecievedMon_Text_0:
-# 434 "data/maps/NewMauville_Inside/scripts.pory"
+# 438 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "Would you like to nickname the POKéMON?$"

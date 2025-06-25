@@ -2,6 +2,7 @@ mapscripts AzureChasm_MapScripts {}
 
 script AzureChasm_EventScript_Azelf{
     lock
+    faceplayer
     playmoncry(SPECIES_AZELF, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -23,6 +24,7 @@ script AzureChasm_EventScript_Azelf{
 
 script AzureChasm_EventScript_Uxie{
     lock
+    faceplayer
     playmoncry(SPECIES_UXIE, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -44,6 +46,7 @@ script AzureChasm_EventScript_Uxie{
 
 script AzureChasm_EventScript_Mesprit{
     lock
+    faceplayer
     playmoncry(SPECIES_MESPRIT, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -65,6 +68,7 @@ script AzureChasm_EventScript_Mesprit{
 
 script AzureChasm_EventScript_Glastrier{
     lock
+    faceplayer
     playmoncry(SPECIES_GLASTRIER, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -86,6 +90,7 @@ script AzureChasm_EventScript_Glastrier{
 
 script AzureChasm_EventScript_Zacian{
     lock
+    faceplayer
     playmoncry(SPECIES_ZACIAN, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -107,6 +112,7 @@ script AzureChasm_EventScript_Zacian{
 
 script AzureChasm_EventScript_Zamazenta{
     lock
+    faceplayer
     playmoncry(SPECIES_ZAMAZENTA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

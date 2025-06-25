@@ -232,6 +232,7 @@ script Route123_EventScript_Speedwagon{
 
 script Route123_EventScript_ZapdosGalar{
     lock
+	faceplayer
     playmoncry(SPECIES_ZAPDOS_GALAR, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

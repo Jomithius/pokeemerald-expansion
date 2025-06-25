@@ -633,96 +633,100 @@ MeteorFalls_1F_1R_EventScript_Articuno::
 # 319 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	lock
 # 320 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
+	faceplayer
 # 321 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	delay 40
+	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
 # 322 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitmoncry
+	delay 40
 # 323 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setwildbattle SPECIES_ARTICUNO, 75
+	waitmoncry
 # 324 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_ARTICUNO, 75
 # 325 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 326 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 327 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 328 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MeteorFalls_1F_1R_EventScript_Articuno_2
-# 327 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 328 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MeteorFalls_1F_1R_EventScript_Articuno_2
-# 332 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 333 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq MeteorFalls_1F_1R_EventScript_Articuno_3
-# 332 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 333 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MeteorFalls_1F_1R_EventScript_Articuno_3
 MeteorFalls_1F_1R_EventScript_Articuno_1:
-# 335 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 336 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 	end
 
 MeteorFalls_1F_1R_EventScript_Articuno_2:
-# 328 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 329 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreen FADE_TO_BLACK
 # 330 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 331 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto MeteorFalls_1F_1R_EventScript_Articuno_1
 
 MeteorFalls_1F_1R_EventScript_Articuno_3:
-# 333 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 334 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto MeteorFalls_1F_1R_EventScript_Articuno_1
 
 
 MeteorFalls_1F_1R_EventScript_Mewtwo::
-# 340 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	lock
 # 341 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
+	lock
 # 342 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	delay 40
+	faceplayer
 # 343 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
 # 344 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setwildbattle SPECIES_MEWTWO, 75
+	delay 40
 # 345 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 346 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitstate
+	setwildbattle SPECIES_MEWTWO, 75
 # 347 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 348 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	waitstate
+# 349 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 350 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MeteorFalls_1F_1R_EventScript_Mewtwo_2
-# 348 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 350 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MeteorFalls_1F_1R_EventScript_Mewtwo_2
-# 353 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 355 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq MeteorFalls_1F_1R_EventScript_Mewtwo_3
-# 353 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 355 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MeteorFalls_1F_1R_EventScript_Mewtwo_3
 MeteorFalls_1F_1R_EventScript_Mewtwo_1:
-# 356 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 358 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 	end
 
 MeteorFalls_1F_1R_EventScript_Mewtwo_2:
-# 349 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 350 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject VAR_LAST_TALKED
 # 351 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 352 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 353 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto MeteorFalls_1F_1R_EventScript_Mewtwo_1
 
 MeteorFalls_1F_1R_EventScript_Mewtwo_3:
-# 354 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 356 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto MeteorFalls_1F_1R_EventScript_Mewtwo_1
 

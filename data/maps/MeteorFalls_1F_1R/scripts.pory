@@ -317,6 +317,7 @@ MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 
 script MeteorFalls_1F_1R_EventScript_Articuno{
     lock
+	faceplayer
     playmoncry(SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -338,6 +339,7 @@ script MeteorFalls_1F_1R_EventScript_Articuno{
 
 script MeteorFalls_1F_1R_EventScript_Mewtwo{
     lock
+	faceplayer
     playmoncry(SPECIES_MEWTWO, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

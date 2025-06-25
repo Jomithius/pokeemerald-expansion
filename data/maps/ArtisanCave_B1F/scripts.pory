@@ -4,6 +4,7 @@ raw`ArtisanCave_B1F_MapScripts::
 
 script AzureMountain_EventScript_Keldeo{
     lock
+    faceplayer
     playmoncry(SPECIES_KELDEO, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -25,6 +26,7 @@ script AzureMountain_EventScript_Keldeo{
 
 script AzureMountain_EventScript_Cobalion{
     lock
+    faceplayer
     playmoncry(SPECIES_COBALION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -46,6 +48,7 @@ script AzureMountain_EventScript_Cobalion{
 
 script AzureMountain_EventScript_Virizion{
     lock
+    faceplayer
     playmoncry(SPECIES_VIRIZION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -67,6 +70,7 @@ script AzureMountain_EventScript_Virizion{
 
 script AzureMountain_EventScript_Terrakion{
     lock
+    faceplayer
     playmoncry(SPECIES_TERRAKION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -88,6 +92,7 @@ script AzureMountain_EventScript_Terrakion{
 
 script AzureMountain_EventScript_Hoopa{
     lock
+    faceplayer
     playmoncry(SPECIES_HOOPA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

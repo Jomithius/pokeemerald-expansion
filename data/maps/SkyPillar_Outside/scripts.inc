@@ -347,96 +347,100 @@ SkyPillar_Outside_EventScript_Reshiram::
 # 176 "data/maps/SkyPillar_Outside/scripts.pory"
 	lock
 # 177 "data/maps/SkyPillar_Outside/scripts.pory"
-	playmoncry SPECIES_RESHIRAM, CRY_MODE_ENCOUNTER
+	faceplayer
 # 178 "data/maps/SkyPillar_Outside/scripts.pory"
-	delay 40
+	playmoncry SPECIES_RESHIRAM, CRY_MODE_ENCOUNTER
 # 179 "data/maps/SkyPillar_Outside/scripts.pory"
-	waitmoncry
+	delay 40
 # 180 "data/maps/SkyPillar_Outside/scripts.pory"
-	setwildbattle SPECIES_RESHIRAM, 75
+	waitmoncry
 # 181 "data/maps/SkyPillar_Outside/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_RESHIRAM, 75
 # 182 "data/maps/SkyPillar_Outside/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 183 "data/maps/SkyPillar_Outside/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 184 "data/maps/SkyPillar_Outside/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 185 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq SkyPillar_Outside_EventScript_Reshiram_2
-# 184 "data/maps/SkyPillar_Outside/scripts.pory"
+# 185 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq SkyPillar_Outside_EventScript_Reshiram_2
-# 189 "data/maps/SkyPillar_Outside/scripts.pory"
+# 190 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq SkyPillar_Outside_EventScript_Reshiram_3
-# 189 "data/maps/SkyPillar_Outside/scripts.pory"
+# 190 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq SkyPillar_Outside_EventScript_Reshiram_3
 SkyPillar_Outside_EventScript_Reshiram_1:
-# 192 "data/maps/SkyPillar_Outside/scripts.pory"
+# 193 "data/maps/SkyPillar_Outside/scripts.pory"
 	release
 	end
 
 SkyPillar_Outside_EventScript_Reshiram_2:
-# 185 "data/maps/SkyPillar_Outside/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 186 "data/maps/SkyPillar_Outside/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreen FADE_TO_BLACK
 # 187 "data/maps/SkyPillar_Outside/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 188 "data/maps/SkyPillar_Outside/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto SkyPillar_Outside_EventScript_Reshiram_1
 
 SkyPillar_Outside_EventScript_Reshiram_3:
-# 190 "data/maps/SkyPillar_Outside/scripts.pory"
+# 191 "data/maps/SkyPillar_Outside/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto SkyPillar_Outside_EventScript_Reshiram_1
 
 
 SkyPillar_Outside_EventScript_Zekrom::
-# 197 "data/maps/SkyPillar_Outside/scripts.pory"
-	lock
 # 198 "data/maps/SkyPillar_Outside/scripts.pory"
-	playmoncry SPECIES_ZEKROM, CRY_MODE_ENCOUNTER
+	lock
 # 199 "data/maps/SkyPillar_Outside/scripts.pory"
-	delay 40
+	faceplayer
 # 200 "data/maps/SkyPillar_Outside/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_ZEKROM, CRY_MODE_ENCOUNTER
 # 201 "data/maps/SkyPillar_Outside/scripts.pory"
-	setwildbattle SPECIES_ZEKROM, 75
+	delay 40
 # 202 "data/maps/SkyPillar_Outside/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 203 "data/maps/SkyPillar_Outside/scripts.pory"
-	waitstate
+	setwildbattle SPECIES_ZEKROM, 75
 # 204 "data/maps/SkyPillar_Outside/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 205 "data/maps/SkyPillar_Outside/scripts.pory"
+	waitstate
+# 206 "data/maps/SkyPillar_Outside/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 207 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq SkyPillar_Outside_EventScript_Zekrom_2
-# 205 "data/maps/SkyPillar_Outside/scripts.pory"
+# 207 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq SkyPillar_Outside_EventScript_Zekrom_2
-# 210 "data/maps/SkyPillar_Outside/scripts.pory"
+# 212 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq SkyPillar_Outside_EventScript_Zekrom_3
-# 210 "data/maps/SkyPillar_Outside/scripts.pory"
+# 212 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq SkyPillar_Outside_EventScript_Zekrom_3
 SkyPillar_Outside_EventScript_Zekrom_1:
-# 213 "data/maps/SkyPillar_Outside/scripts.pory"
+# 215 "data/maps/SkyPillar_Outside/scripts.pory"
 	release
 	end
 
 SkyPillar_Outside_EventScript_Zekrom_2:
-# 206 "data/maps/SkyPillar_Outside/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 207 "data/maps/SkyPillar_Outside/scripts.pory"
-	removeobject VAR_LAST_TALKED
 # 208 "data/maps/SkyPillar_Outside/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 209 "data/maps/SkyPillar_Outside/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 210 "data/maps/SkyPillar_Outside/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto SkyPillar_Outside_EventScript_Zekrom_1
 
 SkyPillar_Outside_EventScript_Zekrom_3:
-# 211 "data/maps/SkyPillar_Outside/scripts.pory"
+# 213 "data/maps/SkyPillar_Outside/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto SkyPillar_Outside_EventScript_Zekrom_1
 

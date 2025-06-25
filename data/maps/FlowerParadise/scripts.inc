@@ -6,292 +6,304 @@ FlowerParadise_EventScript_Shaymin::
 # 4 "data/maps/FlowerParadise/scripts.pory"
 	lock
 # 5 "data/maps/FlowerParadise/scripts.pory"
-	playmoncry SPECIES_SHAYMIN, CRY_MODE_ENCOUNTER
+	faceplayer
 # 6 "data/maps/FlowerParadise/scripts.pory"
-	delay 40
+	playmoncry SPECIES_SHAYMIN, CRY_MODE_ENCOUNTER
 # 7 "data/maps/FlowerParadise/scripts.pory"
-	waitmoncry
+	delay 40
 # 8 "data/maps/FlowerParadise/scripts.pory"
-	setwildbattle SPECIES_SHAYMIN, 75, ITEM_GRACIDEA
+	waitmoncry
 # 9 "data/maps/FlowerParadise/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_SHAYMIN, 75, ITEM_GRACIDEA
 # 10 "data/maps/FlowerParadise/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 11 "data/maps/FlowerParadise/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 12 "data/maps/FlowerParadise/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 13 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq FlowerParadise_EventScript_Shaymin_2
-# 12 "data/maps/FlowerParadise/scripts.pory"
+# 13 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq FlowerParadise_EventScript_Shaymin_2
-# 17 "data/maps/FlowerParadise/scripts.pory"
+# 18 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq FlowerParadise_EventScript_Shaymin_3
-# 17 "data/maps/FlowerParadise/scripts.pory"
+# 18 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq FlowerParadise_EventScript_Shaymin_3
 FlowerParadise_EventScript_Shaymin_1:
-# 20 "data/maps/FlowerParadise/scripts.pory"
+# 21 "data/maps/FlowerParadise/scripts.pory"
 	release
 	end
 
 FlowerParadise_EventScript_Shaymin_2:
-# 13 "data/maps/FlowerParadise/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 14 "data/maps/FlowerParadise/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreen FADE_TO_BLACK
 # 15 "data/maps/FlowerParadise/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 16 "data/maps/FlowerParadise/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto FlowerParadise_EventScript_Shaymin_1
 
 FlowerParadise_EventScript_Shaymin_3:
-# 18 "data/maps/FlowerParadise/scripts.pory"
+# 19 "data/maps/FlowerParadise/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto FlowerParadise_EventScript_Shaymin_1
 
 
 FlowerParadise_EventScript_Meloetta::
-# 25 "data/maps/FlowerParadise/scripts.pory"
-	lock
 # 26 "data/maps/FlowerParadise/scripts.pory"
-	playmoncry SPECIES_MELOETTA, CRY_MODE_ENCOUNTER
+	lock
 # 27 "data/maps/FlowerParadise/scripts.pory"
-	delay 40
+	faceplayer
 # 28 "data/maps/FlowerParadise/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_MELOETTA, CRY_MODE_ENCOUNTER
 # 29 "data/maps/FlowerParadise/scripts.pory"
-	setwildbattle SPECIES_MELOETTA, 75
+	delay 40
 # 30 "data/maps/FlowerParadise/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 31 "data/maps/FlowerParadise/scripts.pory"
-	waitstate
+	setwildbattle SPECIES_MELOETTA, 75
 # 32 "data/maps/FlowerParadise/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 33 "data/maps/FlowerParadise/scripts.pory"
+	waitstate
+# 34 "data/maps/FlowerParadise/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 35 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq FlowerParadise_EventScript_Meloetta_2
-# 33 "data/maps/FlowerParadise/scripts.pory"
+# 35 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq FlowerParadise_EventScript_Meloetta_2
-# 38 "data/maps/FlowerParadise/scripts.pory"
+# 40 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq FlowerParadise_EventScript_Meloetta_3
-# 38 "data/maps/FlowerParadise/scripts.pory"
+# 40 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq FlowerParadise_EventScript_Meloetta_3
 FlowerParadise_EventScript_Meloetta_1:
-# 41 "data/maps/FlowerParadise/scripts.pory"
+# 43 "data/maps/FlowerParadise/scripts.pory"
 	release
 	end
 
 FlowerParadise_EventScript_Meloetta_2:
-# 34 "data/maps/FlowerParadise/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 35 "data/maps/FlowerParadise/scripts.pory"
-	removeobject VAR_LAST_TALKED
 # 36 "data/maps/FlowerParadise/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 37 "data/maps/FlowerParadise/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 38 "data/maps/FlowerParadise/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto FlowerParadise_EventScript_Meloetta_1
 
 FlowerParadise_EventScript_Meloetta_3:
-# 39 "data/maps/FlowerParadise/scripts.pory"
+# 41 "data/maps/FlowerParadise/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto FlowerParadise_EventScript_Meloetta_1
 
 
 FlowerParadise_EventScript_Victini::
-# 46 "data/maps/FlowerParadise/scripts.pory"
-	lock
-# 47 "data/maps/FlowerParadise/scripts.pory"
-	playmoncry SPECIES_VICTINI, CRY_MODE_ENCOUNTER
 # 48 "data/maps/FlowerParadise/scripts.pory"
-	delay 40
+	lock
 # 49 "data/maps/FlowerParadise/scripts.pory"
-	waitmoncry
+	faceplayer
 # 50 "data/maps/FlowerParadise/scripts.pory"
-	setwildbattle SPECIES_VICTINI, 75
+	playmoncry SPECIES_VICTINI, CRY_MODE_ENCOUNTER
 # 51 "data/maps/FlowerParadise/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	delay 40
 # 52 "data/maps/FlowerParadise/scripts.pory"
-	waitstate
+	waitmoncry
 # 53 "data/maps/FlowerParadise/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setwildbattle SPECIES_VICTINI, 75
 # 54 "data/maps/FlowerParadise/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 55 "data/maps/FlowerParadise/scripts.pory"
+	waitstate
+# 56 "data/maps/FlowerParadise/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 57 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq FlowerParadise_EventScript_Victini_2
-# 54 "data/maps/FlowerParadise/scripts.pory"
+# 57 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq FlowerParadise_EventScript_Victini_2
-# 59 "data/maps/FlowerParadise/scripts.pory"
+# 62 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq FlowerParadise_EventScript_Victini_3
-# 59 "data/maps/FlowerParadise/scripts.pory"
+# 62 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq FlowerParadise_EventScript_Victini_3
 FlowerParadise_EventScript_Victini_1:
-# 62 "data/maps/FlowerParadise/scripts.pory"
+# 65 "data/maps/FlowerParadise/scripts.pory"
 	release
 	end
 
 FlowerParadise_EventScript_Victini_2:
-# 55 "data/maps/FlowerParadise/scripts.pory"
+# 58 "data/maps/FlowerParadise/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 56 "data/maps/FlowerParadise/scripts.pory"
+# 59 "data/maps/FlowerParadise/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 57 "data/maps/FlowerParadise/scripts.pory"
+# 60 "data/maps/FlowerParadise/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto FlowerParadise_EventScript_Victini_1
 
 FlowerParadise_EventScript_Victini_3:
-# 60 "data/maps/FlowerParadise/scripts.pory"
+# 63 "data/maps/FlowerParadise/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto FlowerParadise_EventScript_Victini_1
 
 
 FlowerParadise_EventScript_TapuBulu::
-# 67 "data/maps/FlowerParadise/scripts.pory"
-	lock
-# 68 "data/maps/FlowerParadise/scripts.pory"
-	playmoncry SPECIES_TAPU_BULU, CRY_MODE_ENCOUNTER
-# 69 "data/maps/FlowerParadise/scripts.pory"
-	delay 40
 # 70 "data/maps/FlowerParadise/scripts.pory"
-	waitmoncry
+	lock
 # 71 "data/maps/FlowerParadise/scripts.pory"
-	setwildbattle SPECIES_TAPU_BULU, 75
+	faceplayer
 # 72 "data/maps/FlowerParadise/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	playmoncry SPECIES_TAPU_BULU, CRY_MODE_ENCOUNTER
 # 73 "data/maps/FlowerParadise/scripts.pory"
-	waitstate
+	delay 40
 # 74 "data/maps/FlowerParadise/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitmoncry
 # 75 "data/maps/FlowerParadise/scripts.pory"
+	setwildbattle SPECIES_TAPU_BULU, 75
+# 76 "data/maps/FlowerParadise/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 77 "data/maps/FlowerParadise/scripts.pory"
+	waitstate
+# 78 "data/maps/FlowerParadise/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 79 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq FlowerParadise_EventScript_TapuBulu_2
-# 75 "data/maps/FlowerParadise/scripts.pory"
+# 79 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq FlowerParadise_EventScript_TapuBulu_2
-# 80 "data/maps/FlowerParadise/scripts.pory"
+# 84 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq FlowerParadise_EventScript_TapuBulu_3
-# 80 "data/maps/FlowerParadise/scripts.pory"
+# 84 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq FlowerParadise_EventScript_TapuBulu_3
 FlowerParadise_EventScript_TapuBulu_1:
-# 83 "data/maps/FlowerParadise/scripts.pory"
+# 87 "data/maps/FlowerParadise/scripts.pory"
 	release
 	end
 
 FlowerParadise_EventScript_TapuBulu_2:
-# 76 "data/maps/FlowerParadise/scripts.pory"
+# 80 "data/maps/FlowerParadise/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 77 "data/maps/FlowerParadise/scripts.pory"
+# 81 "data/maps/FlowerParadise/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 78 "data/maps/FlowerParadise/scripts.pory"
+# 82 "data/maps/FlowerParadise/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto FlowerParadise_EventScript_TapuBulu_1
 
 FlowerParadise_EventScript_TapuBulu_3:
-# 81 "data/maps/FlowerParadise/scripts.pory"
+# 85 "data/maps/FlowerParadise/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto FlowerParadise_EventScript_TapuBulu_1
 
 
 FlowerParadise_EventScript_TapuKoko::
-# 88 "data/maps/FlowerParadise/scripts.pory"
-	lock
-# 89 "data/maps/FlowerParadise/scripts.pory"
-	playmoncry SPECIES_TAPU_KOKO, CRY_MODE_ENCOUNTER
-# 90 "data/maps/FlowerParadise/scripts.pory"
-	delay 40
-# 91 "data/maps/FlowerParadise/scripts.pory"
-	waitmoncry
 # 92 "data/maps/FlowerParadise/scripts.pory"
-	setwildbattle SPECIES_TAPU_KOKO, 75
+	lock
 # 93 "data/maps/FlowerParadise/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	faceplayer
 # 94 "data/maps/FlowerParadise/scripts.pory"
-	waitstate
+	playmoncry SPECIES_TAPU_KOKO, CRY_MODE_ENCOUNTER
 # 95 "data/maps/FlowerParadise/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	delay 40
 # 96 "data/maps/FlowerParadise/scripts.pory"
+	waitmoncry
+# 97 "data/maps/FlowerParadise/scripts.pory"
+	setwildbattle SPECIES_TAPU_KOKO, 75
+# 98 "data/maps/FlowerParadise/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 99 "data/maps/FlowerParadise/scripts.pory"
+	waitstate
+# 100 "data/maps/FlowerParadise/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 101 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq FlowerParadise_EventScript_TapuKoko_2
-# 96 "data/maps/FlowerParadise/scripts.pory"
+# 101 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq FlowerParadise_EventScript_TapuKoko_2
-# 101 "data/maps/FlowerParadise/scripts.pory"
+# 106 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq FlowerParadise_EventScript_TapuKoko_3
-# 101 "data/maps/FlowerParadise/scripts.pory"
+# 106 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq FlowerParadise_EventScript_TapuKoko_3
 FlowerParadise_EventScript_TapuKoko_1:
-# 104 "data/maps/FlowerParadise/scripts.pory"
+# 109 "data/maps/FlowerParadise/scripts.pory"
 	release
 	end
 
 FlowerParadise_EventScript_TapuKoko_2:
-# 97 "data/maps/FlowerParadise/scripts.pory"
+# 102 "data/maps/FlowerParadise/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 98 "data/maps/FlowerParadise/scripts.pory"
+# 103 "data/maps/FlowerParadise/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 99 "data/maps/FlowerParadise/scripts.pory"
+# 104 "data/maps/FlowerParadise/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto FlowerParadise_EventScript_TapuKoko_1
 
 FlowerParadise_EventScript_TapuKoko_3:
-# 102 "data/maps/FlowerParadise/scripts.pory"
+# 107 "data/maps/FlowerParadise/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto FlowerParadise_EventScript_TapuKoko_1
 
 
 FlowerParadise_EventScript_TapuLele::
-# 109 "data/maps/FlowerParadise/scripts.pory"
-	lock
-# 110 "data/maps/FlowerParadise/scripts.pory"
-	playmoncry SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER
-# 111 "data/maps/FlowerParadise/scripts.pory"
-	delay 40
-# 112 "data/maps/FlowerParadise/scripts.pory"
-	waitmoncry
-# 113 "data/maps/FlowerParadise/scripts.pory"
-	setwildbattle SPECIES_TAPU_LELE, 75
 # 114 "data/maps/FlowerParadise/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	lock
 # 115 "data/maps/FlowerParadise/scripts.pory"
-	waitstate
+	faceplayer
 # 116 "data/maps/FlowerParadise/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	playmoncry SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER
 # 117 "data/maps/FlowerParadise/scripts.pory"
+	delay 40
+# 118 "data/maps/FlowerParadise/scripts.pory"
+	waitmoncry
+# 119 "data/maps/FlowerParadise/scripts.pory"
+	setwildbattle SPECIES_TAPU_LELE, 75
+# 120 "data/maps/FlowerParadise/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 121 "data/maps/FlowerParadise/scripts.pory"
+	waitstate
+# 122 "data/maps/FlowerParadise/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 123 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq FlowerParadise_EventScript_TapuLele_2
-# 117 "data/maps/FlowerParadise/scripts.pory"
+# 123 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq FlowerParadise_EventScript_TapuLele_2
-# 122 "data/maps/FlowerParadise/scripts.pory"
+# 128 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq FlowerParadise_EventScript_TapuLele_3
-# 122 "data/maps/FlowerParadise/scripts.pory"
+# 128 "data/maps/FlowerParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq FlowerParadise_EventScript_TapuLele_3
 FlowerParadise_EventScript_TapuLele_1:
-# 125 "data/maps/FlowerParadise/scripts.pory"
+# 131 "data/maps/FlowerParadise/scripts.pory"
 	release
 	end
 
 FlowerParadise_EventScript_TapuLele_2:
-# 118 "data/maps/FlowerParadise/scripts.pory"
+# 124 "data/maps/FlowerParadise/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 119 "data/maps/FlowerParadise/scripts.pory"
+# 125 "data/maps/FlowerParadise/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 120 "data/maps/FlowerParadise/scripts.pory"
+# 126 "data/maps/FlowerParadise/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto FlowerParadise_EventScript_TapuLele_1
 
 FlowerParadise_EventScript_TapuLele_3:
-# 123 "data/maps/FlowerParadise/scripts.pory"
+# 129 "data/maps/FlowerParadise/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto FlowerParadise_EventScript_TapuLele_1
 

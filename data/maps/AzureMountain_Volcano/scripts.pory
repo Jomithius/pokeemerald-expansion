@@ -2,6 +2,7 @@ mapscripts AzureMountain_Volcano_MapScripts {}
 
 script AzureMountain_Volcano_EventScript_Volcanion{
     lock
+    faceplayer
     playmoncry(SPECIES_VOLCANION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -23,6 +24,7 @@ script AzureMountain_Volcano_EventScript_Volcanion{
 
 script AzureMountain_Volcano_EventScript_Heatran{
     lock
+    faceplayer
     playmoncry(SPECIES_HEATRAN, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -44,6 +46,7 @@ script AzureMountain_Volcano_EventScript_Heatran{
 
 script AzureMountain_Volcano_EventScript_Diancie{
     lock
+    faceplayer
     playmoncry(SPECIES_DIANCIE, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

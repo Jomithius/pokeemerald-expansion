@@ -3,6 +3,7 @@ raw`MeteorFalls_B1F_2R_MapScripts::
 `
 script MeteorFalls_B1F_2R_EventScript_Suicune{
     lock
+    faceplayer
     playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

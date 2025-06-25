@@ -361,6 +361,13 @@
       "y": 17,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "weather",
+      "x": 11,
+      "y": 8,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
     }
   ],
   "bg_events": [

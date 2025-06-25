@@ -241,145 +241,151 @@ CaveOfOrigin_B1F_EventScript_Dialga::
 # 124 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	lock
 # 125 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	playmoncry SPECIES_DIALGA, CRY_MODE_ENCOUNTER
+	faceplayer
 # 126 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	delay 40
+	playmoncry SPECIES_DIALGA, CRY_MODE_ENCOUNTER
 # 127 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	waitmoncry
+	delay 40
 # 128 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	setwildbattle SPECIES_DIALGA, 75, ITEM_ADAMANT_CRYSTAL
+	waitmoncry
 # 129 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_DIALGA, 75, ITEM_ADAMANT_CRYSTAL
 # 130 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 131 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 132 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 133 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Dialga_2
-# 132 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 133 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Dialga_2
-# 137 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 138 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Dialga_3
-# 137 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 138 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Dialga_3
 CaveOfOrigin_B1F_EventScript_Dialga_1:
-# 140 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 141 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	release
 	end
 
 CaveOfOrigin_B1F_EventScript_Dialga_2:
-# 133 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 134 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreen FADE_TO_BLACK
 # 135 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 136 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto CaveOfOrigin_B1F_EventScript_Dialga_1
 
 CaveOfOrigin_B1F_EventScript_Dialga_3:
-# 138 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 139 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto CaveOfOrigin_B1F_EventScript_Dialga_1
 
 
 CaveOfOrigin_B1F_EventScript_Palkia::
-# 145 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	lock
 # 146 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	playmoncry SPECIES_PALKIA, CRY_MODE_ENCOUNTER
+	lock
 # 147 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	delay 40
+	faceplayer
 # 148 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_PALKIA, CRY_MODE_ENCOUNTER
 # 149 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	setwildbattle SPECIES_PALKIA, 75, ITEM_LUSTROUS_GLOBE
+	delay 40
 # 150 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 151 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	waitstate
+	setwildbattle SPECIES_PALKIA, 75, ITEM_LUSTROUS_GLOBE
 # 152 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 153 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	waitstate
+# 154 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 155 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Palkia_2
-# 153 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 155 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Palkia_2
-# 158 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 160 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Palkia_3
-# 158 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 160 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Palkia_3
 CaveOfOrigin_B1F_EventScript_Palkia_1:
-# 161 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 163 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	release
 	end
 
 CaveOfOrigin_B1F_EventScript_Palkia_2:
-# 154 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 155 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	removeobject VAR_LAST_TALKED
 # 156 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 157 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 158 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto CaveOfOrigin_B1F_EventScript_Palkia_1
 
 CaveOfOrigin_B1F_EventScript_Palkia_3:
-# 159 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 161 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto CaveOfOrigin_B1F_EventScript_Palkia_1
 
 
 CaveOfOrigin_B1F_EventScript_Arceus::
-# 166 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	lock
-# 167 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	playmoncry SPECIES_ARCEUS, CRY_MODE_ENCOUNTER
 # 168 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	delay 40
+	lock
 # 169 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	waitmoncry
+	faceplayer
 # 170 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	setwildbattle SPECIES_ARCEUS, 75
+	playmoncry SPECIES_ARCEUS, CRY_MODE_ENCOUNTER
 # 171 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	delay 40
 # 172 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	waitstate
+	waitmoncry
 # 173 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setwildbattle SPECIES_ARCEUS, 75
 # 174 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 175 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	waitstate
+# 176 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 177 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_2
-# 174 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 177 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_2
-# 179 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 182 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_3
-# 179 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 182 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_3
 CaveOfOrigin_B1F_EventScript_Arceus_1:
-# 182 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 185 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	release
 	end
 
 CaveOfOrigin_B1F_EventScript_Arceus_2:
-# 175 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 178 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 176 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 179 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 177 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 180 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto CaveOfOrigin_B1F_EventScript_Arceus_1
 
 CaveOfOrigin_B1F_EventScript_Arceus_3:
-# 180 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 183 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto CaveOfOrigin_B1F_EventScript_Arceus_1
 
