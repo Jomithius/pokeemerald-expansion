@@ -2,7 +2,7 @@
   "id": "MAP_EASTERN_RUINS_PECHARUNT_LAIR",
   "name": "EasternRuins_PecharuntLair",
   "layout": "LAYOUT_EASTERN_RUINS_PECHARUNT_LAIR",
-  "music": "MUS_DUSK_FOREST",
+  "music": "MUS_SPROUT_TOWER",
   "region_map_section": "MAPSEC_EASTERN_RUINS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -1390,3 +1390,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AreaZero_RagingBoltLair/scripts.inc"
 
 	.include "data/maps/AreaZero_WalkingWakeLair/scripts.inc"
+
+	.include "data/maps/BaldesianForest/scripts.inc"
+
+	.include "data/maps/BaldesianForestDojo/scripts.inc"
+
+	.include "data/maps/AzureChasm/scripts.inc"
+
+	.include "data/maps/AzureMountain_KyuremLair/scripts.inc"
+
+	.include "data/maps/AzureMountain_FromChasm/scripts.inc"

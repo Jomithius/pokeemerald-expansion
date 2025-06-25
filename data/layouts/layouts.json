@@ -5590,6 +5590,56 @@
       "secondary_tileset": "gTileset_ShadyForest",
       "border_filepath": "data/layouts/AreaZero_WalkingWakeLair/border.bin",
       "blockdata_filepath": "data/layouts/AreaZero_WalkingWakeLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_BALDESIAN_FOREST",
+      "name": "BaldesianForest_Layout",
+      "width": 60,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DojoExterior",
+      "border_filepath": "data/layouts/BaldesianForest/border.bin",
+      "blockdata_filepath": "data/layouts/BaldesianForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_BALDESIAN_FOREST_DOJO",
+      "name": "BaldesianForestDojo_Layout",
+      "width": 16,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DojoInterior",
+      "border_filepath": "data/layouts/BaldesianForestDojo/border.bin",
+      "blockdata_filepath": "data/layouts/BaldesianForestDojo/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_CHASM",
+      "name": "AzureChasm_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/AzureChasm/border.bin",
+      "blockdata_filepath": "data/layouts/AzureChasm/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_KYUREM_LAIR",
+      "name": "AzureMountain_KyuremLair_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_KyuremLair/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_KyuremLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_FROM_CHASM",
+      "name": "AzureMountain_FromChasm_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_FromChasm/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_FromChasm/map.bin"
     }
   ]
 }

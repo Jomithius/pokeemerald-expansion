@@ -125,7 +125,9 @@
 #define TRAINER_PIC_KIMONO_LADY           107
 #define TRAINER_PIC_KIMONO_WOMAN          108
 #define TRAINER_PIC_NINJA                 109
-#define TRAINER_PIC_COUNT                 110
+#define TRAINER_PIC_BRUNO                 110
+#define TRAINER_PIC_BLACK_BELT_FR         111
+#define TRAINER_PIC_COUNT                 112
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

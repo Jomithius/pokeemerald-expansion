@@ -155,6 +155,14 @@ static const struct SpriteFrameImage sPicTable_Ninja[] = {
     overworld_ascending_frames(gObjectEventPic_Ninja, 2, 4)
 };
 
+static const struct SpriteFrameImage sPicTable_Bruno[] = {
+    overworld_ascending_frames(gObjectEventPic_Bruno, 2, 4)
+};
+
+static const struct SpriteFrameImage sPicTable_Professor[] = {
+    overworld_ascending_frames(gObjectEventPic_Professor, 2, 4)
+};
+
 static const struct SpriteFrameImage sPicTable_QuintyPlump[] = {
     overworld_ascending_frames(gObjectEventPic_QuintyPlump, 4, 4),
 };

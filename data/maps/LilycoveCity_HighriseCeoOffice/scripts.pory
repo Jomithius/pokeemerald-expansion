@@ -85,6 +85,9 @@ script LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags{
     clearflag(FLAG_HIDE_ZERAORA)
     clearflag(FLAG_DEFEATED_GLASTRIER)
     clearflag(FLAG_DEFEATED_GENESECT)
+    clearflag(FLAG_DEFEATED_RESHIRAM)
+    clearflag(FLAG_DEFEATED_ZEKROM)
+    clearflag(FLAG_DEFEATED_REGIDRAGO)
     clearflag(FLAG_DEFEATED_REGIELEKI)
     return
 }
@@ -171,7 +174,7 @@ text LilycoveCity_HighriseFloor2_Text_Scientist{
     Notable reports have come from the\n
     SCORCHED SLAB, MT. PYRE, FIERY PATH,\l
     METEOR FALLS, ROUTE 123, NEW MAUVILLE,\l
-    and the CAVE OF ORIGIN."
+    SKY PILLAR, and the CAVE OF ORIGIN."
 }
 
 text LilycoveCity_HighriseFloor2_Text_Jimmy2{

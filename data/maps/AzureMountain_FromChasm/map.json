@@ -1,0 +1,118 @@
+{
+  "id": "MAP_AZURE_MOUNTAIN_FROM_CHASM",
+  "name": "AzureMountain_FromChasm",
+  "layout": "LAYOUT_AZURE_MOUNTAIN_FROM_CHASM",
+  "music": "MUS_AEGIS_CAVE",
+  "region_map_section": "MAPSEC_AZURE_MOUNTAIN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZYGARDE)",
+      "x": 23,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AzureMountain_FromChasm_EventScript_Zygarde",
+      "flag": "FLAG_DEFEATED_ZYGARDE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(XERNEAS)",
+      "x": 35,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AzureMountain_FromChasm_EventScript_Xerneas",
+      "flag": "FLAG_DEFEATED_XERNEAS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(YVELTAL)",
+      "x": 35,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AzureMountain_FromChasm_EventScript_Yveltal",
+      "flag": "FLAG_DEFEATED_YVELTAL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGEARNA)",
+      "x": 2,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AzureMountain_FromChasm_EventScript_Magearna",
+      "flag": "FLAG_DEFEATED_MAGEARNA"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 21,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 13,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 18,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_AZURE_CHASM",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_AZURE_MOUNTAIN_KYUREM_LAIR",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

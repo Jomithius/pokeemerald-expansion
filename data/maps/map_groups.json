@@ -162,7 +162,12 @@
     "AreaZero_KoriadonLair",
     "AreaZero_MiraidonLair",
     "AreaZero_RagingBoltLair",
-    "AreaZero_WalkingWakeLair"
+    "AreaZero_WalkingWakeLair",
+    "BaldesianForest",
+    "BaldesianForestDojo",
+    "AzureChasm",
+    "AzureMountain_KyuremLair",
+    "AzureMountain_FromChasm"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

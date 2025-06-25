@@ -1,0 +1,127 @@
+mapscripts AzureChasm_MapScripts {}
+
+script AzureChasm_EventScript_Azelf{
+    lock
+    playmoncry(SPECIES_AZELF, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_AZELF, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script AzureChasm_EventScript_Uxie{
+    lock
+    playmoncry(SPECIES_UXIE, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_UXIE, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script AzureChasm_EventScript_Mesprit{
+    lock
+    playmoncry(SPECIES_MESPRIT, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_MESPRIT, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script AzureChasm_EventScript_Glastrier{
+    lock
+    playmoncry(SPECIES_GLASTRIER, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_GLASTRIER, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script AzureChasm_EventScript_Zacian{
+    lock
+    playmoncry(SPECIES_ZACIAN, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ZACIAN, 75, ITEM_RUSTED_SWORD)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script AzureChasm_EventScript_Zamazenta{
+    lock
+    playmoncry(SPECIES_ZAMAZENTA, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ZAMAZENTA, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}

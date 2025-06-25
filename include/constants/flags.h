@@ -47,7 +47,7 @@
 #define B_FLAG_NO_BAG_USE    0x21 // No items in battle
 #define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_1   0x22 // Area Zero
 #define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_2   0x23 // Area Zero
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
+#define FLAG_DEFEATED_KLAWF  0x24 // Route 136
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
@@ -460,7 +460,7 @@
 #define FLAG_REGISTERED_DRAKE                (TRAINER_REGISTERED_FLAGS_START + REMATCH_DRAKE)
 #define FLAG_REGISTERED_WALLACE              (TRAINER_REGISTERED_FLAGS_START + REMATCH_WALLACE)
 
-#define FLAG_DEFEATED_CELEBI                 0x1AA // TBD
+#define FLAG_RECEIVED_CELEBI                 0x1AA // Baldesian Forest
 #define FLAG_DEFEATED_DIANCIE                0x1AB // Azure Mountain
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC
@@ -725,24 +725,24 @@
 #define FLAG_DEFEATED_VIRIZION           0x2A7 // Azure Mountain
 #define FLAG_DEFEATED_HEATRAN            0x2A8 // Azure Mountain
 #define FLAG_DEFEATED_REGIELEKI          0x2A9 // New Mauville
-#define FLAG_DEFEATED_REGIDRAGO          0x2AA // TBD
-#define FLAG_DEFEATED_RESHIRAM           0x2AB // TBD
-#define FLAG_DEFEATED_ZEKROM             0x2AC // TBD
-#define FLAG_DEFEATED_TORNADUS           0x2AD // Baldesia
-#define FLAG_DEFEATED_THUNDURUS          0x2AE // Baldesia
-#define FLAG_DEFEATED_LANDORUS           0x2AF // Baldesia
-#define FLAG_DEFEATED_ZACIAN             0x2B0 // TBD
-#define FLAG_DEFEATED_ZAMAZENTA          0x2B1 // TBD
-#define FLAG_DEFEATED_ENAMORUS           0x2B2 // TBD
+#define FLAG_DEFEATED_REGIDRAGO          0x2AA // Sky Pillar
+#define FLAG_DEFEATED_RESHIRAM           0x2AB // Sky Pillar
+#define FLAG_DEFEATED_ZEKROM             0x2AC // Sky Pillar
+#define FLAG_DEFEATED_TORNADUS           0x2AD // Baldesia Forest
+#define FLAG_DEFEATED_THUNDURUS          0x2AE // Baldesia Forest
+#define FLAG_DEFEATED_LANDORUS           0x2AF // Baldesia Forest
+#define FLAG_DEFEATED_ZACIAN             0x2B0 // Azure Mountain
+#define FLAG_DEFEATED_ZAMAZENTA          0x2B1 // Azure Mountain
+#define FLAG_DEFEATED_ENAMORUS           0x2B2 // Baldesia Forest
 #define FLAG_DEFEATED_CALYREX            0x2B3 // Snowdrift City
 #define FLAG_DEFEATED_SPECTRIER          0x2B4 // Mt. Pyre
-#define FLAG_DEFEATED_GLASTRIER          0x2B5 // Snowdrift City
-#define FLAG_RECEIVED_KUBFU              0x2B6 // Baldesia
-#define FLAG_DEFEATED_UXIE               0x2B7 // TBD
-#define FLAG_DEFEATED_MESPRIT            0x2B8 // TBD
-#define FLAG_DEFEATED_AZELF              0x2B9 // TBD
-#define FLAG_DEFEATED_ZARUDE             0x2BA // TBD
-#define FLAG_DEFEATED_MAGEARNA           0x2BB // TBD
+#define FLAG_DEFEATED_GLASTRIER          0x2B5 // Azure Chasm
+#define FLAG_RECEIVED_KUBFU              0x2B6 // Baldesia Forest Dojo
+#define FLAG_DEFEATED_UXIE               0x2B7 // Azure Chasm
+#define FLAG_DEFEATED_MESPRIT            0x2B8 // Azure Chasm
+#define FLAG_DEFEATED_AZELF              0x2B9 // Azure Chasm
+#define FLAG_DEFEATED_ZARUDE             0x2BA // Baldesia Forest
+#define FLAG_DEFEATED_MAGEARNA           0x2BB // Azure Mountain
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
@@ -1243,7 +1243,7 @@
 #define FLAG_HIDE_PETALBURG_CITY_LUNA                               0x4A5 // For Ratduardo Sidequest
 #define FLAG_HIDE_NPC_LUNA_HOUSE_PETALBURG                          0x4A6 // For Ratduardo Sidequest, NPC blocking door
 #define FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST             0x4A7 // For Ratduardo Sidequest, After Luna Leaves
-#define FLAG_DEFEATED_XERNEAS                                       0x4A8 // TBD
+#define FLAG_DEFEATED_XERNEAS                                       0x4A8 // Azure Mountain
 #define FLAG_RIBOMBEE_TOTEM                                         0x4A9 // Found at Rusturf Peak
 #define FLAG_HIDE_DACA_RUSTURF_PEAK                                 0x4AA // Rusturf Peak
 #define FLAG_RUSTURF_GALVANTULA                                     0x4AB // Rusturf 3F
@@ -1285,7 +1285,7 @@
 #define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
 #define FLAG_HIDE_RATDUARDO_FULLMOON                                0x4D0 // Ratduardo Cutscene Fullmoon Island
 #define FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE                         0x4D1 // Cleared if player defeats Darkrai before reaching Fullmoon
-#define FLAG_DEFEATED_YVELTAL                                       0x4D2 // TBD
+#define FLAG_DEFEATED_YVELTAL                                       0x4D2 // Azure Mountain
 #define FLAG_HIDE_ASAK_BALDESIA                                     0x4D3 // For first CS in Baldesia
 #define FLAG_HIDE_PANINI_BALDESIA                                   0x4D4 // For first CS in Baldesia
 #define FLAG_HIDE_BENNIS_BALDESIA                                   0x4D5 // For first CS in Baldesia

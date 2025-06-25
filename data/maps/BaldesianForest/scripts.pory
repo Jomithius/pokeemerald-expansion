@@ -1,0 +1,106 @@
+mapscripts BaldesianForest_MapScripts {}
+
+script BaldesianForest_EventScript_Zarude{
+    lock
+    playmoncry(SPECIES_ZARUDE, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ZARUDE, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script BaldesianForest_EventScript_Landorus{
+    lock
+    playmoncry(SPECIES_LANDORUS, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_LANDORUS, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script BaldesianForest_EventScript_Thundurus{
+    lock
+    playmoncry(SPECIES_THUNDURUS, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_THUNDURUS, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script BaldesianForest_EventScript_Tornadus{
+    lock
+    playmoncry(SPECIES_TORNADUS, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_TORNADUS, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}
+
+script BaldesianForest_EventScript_Enamorus{
+    lock
+    playmoncry(SPECIES_ENAMORUS, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_ENAMORUS, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
+    }
+	release
+	end
+}

@@ -233,6 +233,8 @@
 #define MAPSEC_BALDESIAN_ALTAR              0xE5
 #define MAPSEC_AZURE_MOUNTAIN               0xE6
 #define MAPSEC_SNOWDRIFT_CITY               0xE7
+#define MAPSEC_BALDESIAN_FOREST             0xE8
+#define MAPSEC_AZURE_CHASM                  0xE9
 #define MAPSEC_NONE                         0xF0
 
 #define METLOC_SPECIAL_EGG                  0xFD
