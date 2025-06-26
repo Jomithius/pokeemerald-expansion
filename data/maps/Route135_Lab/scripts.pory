@@ -265,6 +265,8 @@ script Route135_Lab_EventScript_ToAreaZero{
         waitmovement(0)
         msgbox(Route135_Lab_Text_ManiacExplainCosmog, MSGBOX_AUTOCLOSE)
         waitmessage
+        applymovement(3, Common_Movement_WalkInPlaceDown)
+        waitmovement(3)
         playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
         waitmoncry
         call(Route135_Lab_Shake)
@@ -343,8 +345,8 @@ script Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero{
 
 script Route135_Lab_EventScript_PlayerGoesToCosmog{
     getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_0)
-    if(var(VAR_TEMP_0) == DIR_WEST){
-        applymovement(OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerGoesToCosmogWest)
+    if(var(VAR_TEMP_0) == DIR_EAST){
+        applymovement(OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerGoesToCosmogEast)
         waitmovement(0)
     }
     else{
@@ -570,7 +572,7 @@ text Route_135_Lab_Text_ImBusy{
     I'm busy now, so come back later."
 }
 
-movement Route135_Lab_Movement_PlayerGoesToCosmogWest{
+movement Route135_Lab_Movement_PlayerGoesToCosmogEast{
     walk_up
     walk_in_place_down
 }
@@ -603,8 +605,8 @@ text Route135_Lab_Text_ManiacIntroduceAreaZero{
 text Route135_Lab_Text_ManiacExplainCosmog{
     "The camera I put on COSMOG showed\n
     the world has a somewhat strange\l
-    composition… Although, there are signs\l
-    that it was once inhabited by humans\l
+    composition… Although there are signs\l
+    that it was once inhabited by humans,\l
     so it should be safe to traverse.\p
     COSMOG will be with you, so if you want\n
     to return to the lab, just ask it.\p

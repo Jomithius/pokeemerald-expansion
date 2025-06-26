@@ -4974,7 +4974,7 @@
     {
       "id": "LAYOUT_NEW_MOON_ISLAND_HOUSE1",
       "name": "NewMoonIsland_House1_Layout",
-      "width": 10,
+      "width": 11,
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_LegendOfZeldaHouse",
@@ -5615,7 +5615,7 @@
       "id": "LAYOUT_AZURE_CHASM",
       "name": "AzureChasm_Layout",
       "width": 50,
-      "height": 51,
+      "height": 50,
       "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/AzureChasm/border.bin",
@@ -5636,7 +5636,7 @@
       "name": "AzureMountain_FromChasm_Layout",
       "width": 40,
       "height": 30,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AzureMountain_FromChasm/border.bin",
       "blockdata_filepath": "data/layouts/AzureMountain_FromChasm/map.bin"

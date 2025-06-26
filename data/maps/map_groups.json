@@ -36,7 +36,9 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorWachunpelon",
     "gMapGroup_IndoorRoute135",
-    "gMapGroup_IndoorRoute137"
+    "gMapGroup_IndoorRoute137",
+    "gMapGroup_IndoorBaldesia",
+    "gMapGroup_IndoorSnowdriftCity"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -114,25 +116,17 @@
     "TheUnder_ToCanyonLake",
     "FullMoonIsland",
     "FullMoonIslandInterior",
-    "BeachsideCave",
     "Route137_CaveSide",
-    "BeachsideCave_InteriorRoom",
-    "BeachsideCave_Room2",
     "FlowerParadise",
     "Route137_CaveSideEast",
     "Route138",
     "Route138_2",
     "Baldesia",
-    "Baldesia_MainHouse",
-    "Baldesia_House1",
-    "Baldesia_House2",
-    "Baldesia_House3",
-    "Baldesia_House4",
     "Route139",
     "Route139_Tunnel",
-    "EasternRuins",
-    "EasternRuins_PecharuntLair",
-    "AltarOfBaldesia",
+    "BeachsideCave",
+    "BeachsideCave_InteriorRoom",
+    "BeachsideCave_Room2",
     "AzureMountain_B1F",
     "AzureMountain_B2F",
     "AzureMountain_B3F",
@@ -147,27 +141,14 @@
     "AzureMountain_Up7",
     "AzureMountain_Fork",
     "AzureMountain_Peak",
-    "SnowdriftCity",
-    "SnowdriftCity_PokemonCenter",
-    "SnowdriftCity_Mart",
-    "SnowdriftCity_House1",
-    "SnowdriftCity_House2",
-    "SnowdriftCity_House3",
-    "NewMap3",
-    "SnowdriftCity_House5",
-    "SnowdriftCity_House6",
-    "AreaZero",
-    "AreaZero_Prehistoric",
-    "AreaZero_Futuristic",
-    "AreaZero_KoriadonLair",
-    "AreaZero_MiraidonLair",
-    "AreaZero_RagingBoltLair",
-    "AreaZero_WalkingWakeLair",
+    "AzureMountain_KyuremLair",
+    "AzureMountain_FromChasm",
+    "EasternRuins",
+    "EasternRuins_PecharuntLair",
+    "AltarOfBaldesia",
     "BaldesianForest",
     "BaldesianForestDojo",
-    "AzureChasm",
-    "AzureMountain_KyuremLair",
-    "AzureMountain_FromChasm"
+    "AzureChasm"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -697,7 +678,14 @@
     "NavelRock_Bottom",
     "TrainerHill_Elevator",
     "Ultra_Space",
-    "Void"
+    "Void",
+    "AreaZero",
+    "AreaZero_Prehistoric",
+    "AreaZero_Futuristic",
+    "AreaZero_KoriadonLair",
+    "AreaZero_MiraidonLair",
+    "AreaZero_RagingBoltLair",
+    "AreaZero_WalkingWakeLair"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",
@@ -752,5 +740,23 @@
   ],
   "gMapGroup_IndoorRoute137": [
     "Route137_SeasideHouse"
+  ],
+  "gMapGroup_IndoorBaldesia": [
+    "Baldesia_MainHouse",
+    "Baldesia_House1",
+    "Baldesia_House2",
+    "Baldesia_House3",
+    "Baldesia_House4"
+  ],
+  "gMapGroup_IndoorSnowdriftCity": [
+    "SnowdriftCity",
+    "SnowdriftCity_PokemonCenter",
+    "SnowdriftCity_Mart",
+    "SnowdriftCity_House1",
+    "SnowdriftCity_House2",
+    "SnowdriftCity_House3",
+    "NewMap3",
+    "SnowdriftCity_House5",
+    "SnowdriftCity_House6"
   ]
 }
