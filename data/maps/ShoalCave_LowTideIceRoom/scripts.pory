@@ -73,8 +73,9 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
     setflag(FLAG_HIDE_ARIA_SHOAL_CAVE)
     setvar(VAR_MOMO_ARIA_STATE, 1)
     setflag(FLAG_HIDE_MISA_LILYCOVE_DEPT_5F) // if player misses Misa in Lilycove
-    setvar(VAR_MISA_STATE, 8)
-    setflag(FLAG_HIDE_EMO_LILYCOVE) // if player misses cutscene in Lilycove
+    setvar(VAR_MISA_STATE, 8) // if player misses rival cutscene in Lilycove
+    setflag(FLAG_HIDE_EMO_LILYCOVE) // if player misses rival cutscene in Lilycove
+    setflag(FLAG_HIDE_RATDUARDO_LILYCOVE) // if player misses Ratduardo in Lilycove
     release
     end
 }

@@ -431,7 +431,7 @@ Route135_Lab_EventScript_EndUltraSpace::
 # 235 "data/maps/Route135_Lab/scripts.pory"
 	setvar VAR_ULTRA_SPACE_STATE, 4
 # 236 "data/maps/Route135_Lab/scripts.pory"
-	call_if_set FLAG_DEFEATED_RED, Route135_Lab_TryAdvanceUltraSpaceVar
+	call_if_set FLAG_SYS_DEFEATED_RED, Route135_Lab_TryAdvanceUltraSpaceVar
 # 237 "data/maps/Route135_Lab/scripts.pory"
 	setrespawn HEAL_LOCATION_ROUTE135
 # 238 "data/maps/Route135_Lab/scripts.pory"

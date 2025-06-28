@@ -1305,7 +1305,7 @@
 #define FLAG_HIDE_PROF_ULTRA_SPACE                                  0x4E3 // For Ultra Space Event
 #define FLAG_HIDE_PROF_ROUTE_135_LAB                                0x4E4 // For Ultra Space Event
 #define FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE                    0x4E5 // For Ultra Space Event
-#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
+#define FLAG_HIDE_RATICATE_TO_CANYON_LAKE                           0x4E6 // Darkrai Event
 #define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
 #define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
 #define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
@@ -1438,7 +1438,7 @@
 #define FLAG_SYS_MYSTERY_EVENT_ENABLE               (SYSTEM_FLAGS + 0x4C)
 #define FLAG_SYS_ENC_UP_ITEM                        (SYSTEM_FLAGS + 0x4D)
 #define FLAG_SYS_ENC_DOWN_ITEM                      (SYSTEM_FLAGS + 0x4E)
-#define FLAG_SYS_BRAILLE_DIG                        (SYSTEM_FLAGS + 0x4F)
+#define FLAG_SYS_BRAILLE_DIG                        (SYSTEM_FLAGS + 0x4F) //2223
 #define FLAG_SYS_REGIROCK_PUZZLE_COMPLETED          (SYSTEM_FLAGS + 0x50)
 #define FLAG_SYS_BRAILLE_REGICE_COMPLETED           (SYSTEM_FLAGS + 0x51)
 #define FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED         (SYSTEM_FLAGS + 0x52)
@@ -1506,9 +1506,9 @@
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-#define FLAG_DEFEATED_RED                           (SYSTEM_FLAGS + 0x85) // Defeated Red at Azure Mountain
-#define FLAG_BEFORE_ELITE_4_REMATCH                 (SYSTEM_FLAGS + 0x86) // For postgame before rechalling E4
-#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused Flag
+#define FLAG_SYS_DEFEATED_RED                       (SYSTEM_FLAGS + 0x85) // Defeated Red at Azure Mountain
+#define FLAG_SYS_BEFORE_ELITE_4_REMATCH             (SYSTEM_FLAGS + 0x86) // For postgame before rechalling E4
+#define FLAG_SYS_THE_UNDER_DIG                      (SYSTEM_FLAGS + 0x87) // Darkrai Event 2279
 #define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
 #define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
@@ -1645,7 +1645,7 @@
 #define FLAG_HIDE_MAP_NAME_POPUP                (SPECIAL_FLAGS_START + 0x0)
 #define FLAG_DONT_TRANSITION_MUSIC              (SPECIAL_FLAGS_START + 0x1)
 #define FLAG_ENABLE_MULTI_CORRIDOR_DOOR         (SPECIAL_FLAGS_START + 0x2)
-#define FLAG_SPECIAL_FLAG_UNUSED_0x4003         (SPECIAL_FLAGS_START + 0x3) // Unused Flag
+#define FLAG_REMOVE_WARP_FADE                   (SPECIAL_FLAGS_START + 0x3) // Stop warp fade
 #define FLAG_STORING_ITEMS_IN_PYRAMID_BAG       (SPECIAL_FLAGS_START + 0x4)
 #define FLAG_SAFE_FOLLOWER_MOVEMENT             (SPECIAL_FLAGS_START + 0x5) // When set, applymovement does not put the follower inside a pokeball
                                                                             // Also, scripted movements on the player will move follower(s), too

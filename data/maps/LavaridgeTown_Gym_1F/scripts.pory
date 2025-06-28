@@ -399,6 +399,8 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
 
 script LavaridgeTown_Gym_1F_EventScript_GiveMysticalFire{
 	giveitem(ITEM_TM_MYSTICAL_FIRE)
+	setvar(VAR_RAT_CAVE_STATE, 7) // if player misses ratduardo event in lavaridge or doesnt talk to npc again after
+	call_if_unset(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR, LavaridgeTown_Gym_1F_TryUpdateRatCaveState)
 	msgbox(LavaridgeTown_Gym_1F_Text_ExplainMysticalFire, MSGBOX_DEFAULT)
 	return
 }
@@ -418,4 +420,10 @@ script LavaridgeTown_Gym_1F_EventScript_Ninetales{
     delay(24)
     release
     end
+}
+
+// if player misses ratduardo in fallarbor
+script LavaridgeTown_Gym_1F_TryUpdateRatCaveState{
+	setflag(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR)
+	return
 }

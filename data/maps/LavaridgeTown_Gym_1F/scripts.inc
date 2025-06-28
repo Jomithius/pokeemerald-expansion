@@ -797,22 +797,32 @@ LavaridgeTown_Gym_1F_EventScript_GiveMysticalFire::
 # 401 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	giveitem ITEM_TM_MYSTICAL_FIRE
 # 402 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	setvar VAR_RAT_CAVE_STATE, 7
+# 403 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	call_if_unset FLAG_RATDUARDO_RAT_CAVE_FALLARBOR, LavaridgeTown_Gym_1F_TryUpdateRatCaveState
+# 404 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	msgbox LavaridgeTown_Gym_1F_Text_ExplainMysticalFire, MSGBOX_DEFAULT
 	return
 
 
 LavaridgeTown_Gym_1F_EventScript_Ninetales::
-# 416 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	lock
-# 417 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	playmoncry SPECIES_NINETALES, CRY_MODE_ENCOUNTER
 # 418 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	delay 24
+	lock
 # 419 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	playmoncry SPECIES_NINETALES, CRY_MODE_ENCOUNTER
+# 420 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	delay 24
+# 421 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	release
 	end
 
 
+LavaridgeTown_Gym_1F_TryUpdateRatCaveState::
+# 427 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	setflag FLAG_RATDUARDO_RAT_CAVE_FALLARBOR
+	return
+
+
 LavaridgeTown_Gym_1F_Text_ExplainMysticalFire::
-# 406 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 408 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "That TM61 contains MYSTICAL FIRE.\n Not only does it do damage, it also\l lowers the foes Sp. Atk.\p It's great for cooking your opponents\n in a magical way!\p … … … … … …$"

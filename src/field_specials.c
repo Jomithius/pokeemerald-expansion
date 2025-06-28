@@ -4359,3 +4359,143 @@ void GetCodeFeedback(void)
     else
         gSpecialVar_Result = 0;
 }
+
+u16 GetLeadMonSpecies(void)
+{
+    return GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, NULL);
+}
+
+void IsLeadMonCat(void)
+{
+    u8 i;
+    u16 species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gPlayerParty[i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG) && !GetMonData(pokemon, MON_DATA_HP_LOST))
+        {
+            species = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
+            switch(species){
+            case SPECIES_MEOWTH:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_MEOWTH_ALOLA:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_MEOWTH_GALAR:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_PERSIAN:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_PERSIAN_ALOLA:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_PERRSERKER:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_SKITTY:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_DELCATTY:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_SHINX:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_LUXIO:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_LUXRAY:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_GLAMEOW:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_PURUGLY:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_PURRLOIN:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_LIEPARD:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_LITLEO:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_PYROAR:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_ESPURR:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_MEOWSTIC:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_LITTEN:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_TORRACAT:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_INCINEROAR:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_ZERAORA:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_SPRIGATITO:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_FLORAGATO:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_MEOWSCARADA:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_CHIEN_PAO:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_SOLGALEO:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_RAIKOU:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_EEVEE:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_ESPEON:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_UMBREON:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_SYLVEON:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_LEAFEON:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_GLACEON:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_VAPOREON:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_JOLTEON:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_FLAREON:
+                gSpecialVar_Result = TRUE;
+                break;
+            default:
+                break;
+            }
+            return;
+        }
+    }
+    gSpecialVar_Result = FALSE;
+}

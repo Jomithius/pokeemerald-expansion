@@ -233,7 +233,7 @@ script Route135_Lab_EventScript_EndUltraSpace{
     setflag(FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE)
     clearflag(FLAG_HIDE_PROF_ROUTE_135_LAB)
     setvar(VAR_ULTRA_SPACE_STATE, 4)
-    call_if_set(FLAG_DEFEATED_RED, Route135_Lab_TryAdvanceUltraSpaceVar)
+    call_if_set(FLAG_SYS_DEFEATED_RED, Route135_Lab_TryAdvanceUltraSpaceVar)
     setrespawn(HEAL_LOCATION_ROUTE135)
     warp(MAP_ROUTE135, 8, 10)
     waitstate

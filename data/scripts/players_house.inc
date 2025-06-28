@@ -491,7 +491,7 @@ PlayersHouse_1F_EventScript_CallFromCeo::
 	pokenavcall PlayersHouse_1F_Text_CeoComeMeetMeInLilycove
 	waitmessage
 	setvar VAR_CEO_STATE, 1
-	setflag FLAG_BEFORE_ELITE_4_REMATCH
+	setflag FLAG_SYS_BEFORE_ELITE_4_REMATCH
 	setflag FLAG_HIDE_GYM_LEADERS
 	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
 	return

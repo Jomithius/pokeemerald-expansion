@@ -1,1 +1,141 @@
-mapscripts TheUnder_ToCanyonLake_MapScripts {}
+mapscripts TheUnder_ToCanyonLake_MapScripts {
+    MAP_SCRIPT_ON_LOAD: TheUnder_ToCanyonLake_OnLoad
+}
+
+script TheUnder_ToCanyonLake_OnLoad{
+    call_if_unset(FLAG_SYS_THE_UNDER_DIG, TheUnder_ToCanyonLake_CloseEntrance)
+    end
+}
+
+script TheUnder_ToCanyonLake_CloseEntrance{
+    setmetatile(8, 2, METATILE_Cave_EntranceCover, TRUE)
+    setmetatile(8, 3, METATILE_Cave_EntranceCover, TRUE)
+    return
+}
+
+script TheUnder_ToCanyonLake_MiddleTrigger_CheckLeadMon{
+    lock
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    special(IsLeadMonCat)
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    waitse
+    playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
+    delay(8)
+    applymovement(1, Common_Movement_WalkDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(60)
+    goto_if_eq(VAR_RESULT, TRUE, TheUnder_ToCanyonLake_EventScript_ScareAwayRats)
+    playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    applymovement(1, Common_Movement_WalkUp)
+    waitmovement(1)
+    applymovement(1, Common_Movement_WalkInPlaceDown)
+    waitmovement(1)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    release
+    end
+}
+
+script TheUnder_ToCanyonLake_RightTrigger_CheckLeadMon{
+    lock
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    special(IsLeadMonCat)
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    waitse
+    playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
+    delay(8)
+    applymovement(3, Common_Movement_WalkDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(60)
+    goto_if_eq(VAR_RESULT, TRUE, TheUnder_ToCanyonLake_EventScript_ScareAwayRats)
+    playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    applymovement(3, Common_Movement_WalkUp)
+    waitmovement(3)
+    applymovement(3, Common_Movement_WalkInPlaceDown)
+    waitmovement(3)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    release
+    end
+}
+
+script TheUnder_ToCanyonLake_LeftTrigger_CheckLeadMon{
+    lock
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    special(IsLeadMonCat)
+    playse(SE_PIN)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(2)
+    waitse
+    playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
+    delay(8)
+    applymovement(2, Common_Movement_WalkDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(60)
+    goto_if_eq(VAR_RESULT, TRUE, TheUnder_ToCanyonLake_EventScript_ScareAwayRats)
+    playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    applymovement(2, Common_Movement_WalkUp)
+    waitmovement(2)
+    applymovement(2, Common_Movement_WalkInPlaceDown)
+    waitmovement(2)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    release
+    end
+}
+
+script TheUnder_ToCanyonLake_EventScript_ScareAwayRats{
+    lock
+    bufferpartymonnick(STR_VAR_1, 0)
+    fadenewbgm(MUS_NONE)
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(2, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    waitse
+    msgbox("The RATICATE are afraid of\n 
+        {STR_VAR_1}!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_FLEE)
+    waitse
+    call(TheUnder_ToCanyonLake_OpenEntrance)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    fadescreenspeed(FADE_FROM_BLACK, 2)
+    fadedefaultbgm
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    setvar(VAR_RAT_CAVE_STATE, 9)
+    release
+    end
+}
+
+script TheUnder_ToCanyonLake_OpenEntrance{
+    setmetatile(8, 2, METATILE_Cave_SealedChamberEntrance_TopMid, TRUE)
+    setmetatile(8, 3, METATILE_Cave_SealedChamberEntrance_BottomMid, FALSE)
+    special(DrawWholeMapView)
+    playse(SE_BANG)
+    setflag(FLAG_SYS_THE_UNDER_DIG)
+    return
+}
