@@ -1,9 +1,10 @@
 mapscripts TheUnder_ShadyHouse_MapScripts {
-    MAP_SCRIPT_ON_LOAD{
-        setflag(FLAG_TEMP_E)
-        if(var(VAR_NEWMOON_ISLAND_STATE) == 1){
-            setrespawn(HEAL_LOCATION_NEW_MOON_ISLAND)
-        }
-        end
-    }
+    MAP_SCRIPT_ON_TRANSITION: TheUnder_ShadyHouse_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script TheUnder_ShadyHouse_OnTransition{
+    setrespawn(HEAL_LOCATION_NEW_MOON_ISLAND)
+    setflag(FLAG_TEMP_E)
+    end
 }

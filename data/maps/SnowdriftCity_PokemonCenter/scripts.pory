@@ -1,1 +1,18 @@
-mapscripts SnowdriftCity_PokemonCenter_MapScripts {}
+mapscripts SnowdriftCity_PokemonCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: SnowdriftCity_PokemonCenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script SnowdriftCity_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_SNOWDRIFT_CITY)
+    end
+}
+
+script SnowdriftCity_PokemonCenter_Nurse{
+    setvar(VAR_0x800B, 1)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

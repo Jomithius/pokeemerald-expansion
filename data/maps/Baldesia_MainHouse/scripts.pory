@@ -1,1 +1,35 @@
-mapscripts Baldesia_MainHouse_MapScripts {}
+mapscripts Baldesia_MainHouse_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Baldesia_MainHouse_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script Baldesia_MainHouse_OnTransition{
+    setrespawn(HEAL_LOCATION_BALDESIA)
+    end
+}
+
+script Baldesia_MainHouse_EventScript_KimonoGirl{
+    lock
+    faceplayer
+    msgbox(gText_WouldYouLikeToRestYourPkmn, MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+        call(Common_EventScript_OutOfCenterPartyHeal)
+        msgbox(Baldesia_MainHouse_Text_ThankYouForWaiting, MSGBOX_DEFAULT)
+    }
+    else{
+        msgbox(gText_WeHopeToSeeYouAgain, MSGBOX_DEFAULT)
+    }
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+text Baldesia_MainHouse_Text_ThankYouForWaiting{
+    "Thank you for waiting.\p
+	We've restored your POKéMON\n
+	to full health.\p
+    We hope to see you again!"
+}

@@ -140,6 +140,66 @@ static const struct HealLocation sHealLocationsPokemonCenter[HEAL_LOCATION_COUNT
         .map = MAP_NUM(BATTLE_FRONTIER_POKEMON_CENTER_1F),
         DEFAULT_POKEMON_CENTER_COORDS,
     },
+    [HEAL_LOCATION_THE_UNDER - 1] =
+    {
+        .group = MAP_GROUP(BASE_CAMP),
+        .map = MAP_NUM(BASE_CAMP),
+        DEFAULT_POKEMON_CENTER_COORDS,
+    },
+    [HEAL_LOCATION_ROUTE135 - 1] =
+    {
+        .group = MAP_GROUP(ROUTE135_LAB),
+        .map = MAP_NUM(ROUTE135_LAB),
+        .x = 10,
+        .y = 10,
+    },
+    [HEAL_LOCATION_WACHUNPELON_CITY - 1] =
+    {
+        .group = MAP_GROUP(WACHUNPELON_CITY_POKEMON_CENTER),
+        .map = MAP_NUM(WACHUNPELON_CITY_POKEMON_CENTER),
+        DEFAULT_POKEMON_CENTER_COORDS,
+    },
+    [HEAL_LOCATION_ULTRA_SPACE - 1] =
+    {
+        .group = MAP_GROUP(ULTRA_SPACE),
+        .map = MAP_NUM(ULTRA_SPACE),
+        .x = 26,
+        .y = 49,   
+    },
+    [HEAL_LOCATION_NEW_MOON_ISLAND - 1] =
+    {
+        .group = MAP_GROUP(NEW_MOON_ISLAND_HOUSE4),
+        .map = MAP_NUM(NEW_MOON_ISLAND_HOUSE4),
+        .x = 10,
+        .y = 5,  
+    },
+    [HEAL_LOCATION_BALDESIA - 1] =
+    {
+        .group = MAP_GROUP(BALDESIA_MAIN_HOUSE),
+        .map = MAP_NUM(BALDESIA_MAIN_HOUSE),
+        .x = 1,
+        .y = 17,  
+    },
+    [HEAL_LOCATION_SNOWDRIFT_CITY - 1] =
+    {
+        .group = MAP_GROUP(SNOWDRIFT_CITY_POKEMON_CENTER),
+        .map = MAP_NUM(SNOWDRIFT_CITY_POKEMON_CENTER),
+        DEFAULT_POKEMON_CENTER_COORDS,
+    },
+    [HEAL_LOCATION_VOID - 1] =
+    {
+        .group = MAP_GROUP(VOID),
+        .map = MAP_NUM(VOID),
+        .x = 9,
+        .y = 32,  
+    },
+    [HEAL_LOCATION_AREA_ZERO - 1] =
+    {
+        .group = MAP_GROUP(AREA_ZERO),
+        .map = MAP_NUM(AREA_ZERO),
+        .x = 15,
+        .y = 11,  
+    },
 };
 
 #undef DEFAULT_POKEMON_CENTER_COORDS
@@ -172,4 +232,13 @@ static const u8 sHealNpcLocalId[HEAL_LOCATION_COUNT - 1] =
     [HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE - 1] = 1,
     [HEAL_LOCATION_SOUTHERN_ISLAND_EXTERIOR - 1] = 0, // no heal npc
     [HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST - 1] = 1,
+    [HEAL_LOCATION_THE_UNDER - 1] = 1,
+    [HEAL_LOCATION_ROUTE135 - 1] = 0, // no heal npc
+    [HEAL_LOCATION_WACHUNPELON_CITY - 1] = 1,
+    [HEAL_LOCATION_ULTRA_SPACE - 1] = 0, // no heal npc
+    [HEAL_LOCATION_NEW_MOON_ISLAND - 1] = 1,
+    [HEAL_LOCATION_BALDESIA - 1] = 14,
+    [HEAL_LOCATION_SNOWDRIFT_CITY - 1] = 1,
+    [HEAL_LOCATION_VOID - 1] = 0, // no heal npc
+    [HEAL_LOCATION_AREA_ZERO - 1] = 0, // no heal npc
 };

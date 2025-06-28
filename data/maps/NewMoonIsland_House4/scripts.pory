@@ -1,8 +1,11 @@
 mapscripts NewMoonIsland_House4_MapScripts {
-    MAP_SCRIPT_ON_LOAD{
-        setflag(FLAG_TEMP_E)
-        end
-    }
+    MAP_SCRIPT_ON_TRANSITION: NewMoonIsland_House4_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script NewMoonIsland_House4_OnTransition{
+    setflag(FLAG_TEMP_E)
+    setrespawn(HEAL_LOCATION_NEW_MOON_ISLAND)
 }
 
 script NewMoonIsland_EventScript_Dendenne{

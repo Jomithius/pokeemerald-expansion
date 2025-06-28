@@ -1,1 +1,18 @@
-mapscripts WachunpelonCity_PokemonCenter_MapScripts {}
+mapscripts WachunpelonCity_PokemonCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: WachunpelonCity_PokemonCenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script WachunpelonCity_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_WACHUNPELON_CITY)
+    end
+}
+
+script WachunpelonCity_PokemonCenter_Nurse{
+    setvar(VAR_0x800B, 1)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
