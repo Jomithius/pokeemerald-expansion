@@ -4,3 +4,107 @@ mapscripts NewMoonIsland_House3_MapScripts {
         end
     }
 }
+
+script NewMoonIsland_House3_EventScript_Momo{
+    msgbox(NewMoonIsland_House3_Text_Momo, MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_House3_EventScript_Misa{
+    lock
+    faceplayer
+    playbgm(MUS_MISA_THEME, FALSE)
+    msgbox("{PLAYER}, it's your turn to tuck mommy\n
+        into bed now.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadedefaultbgm
+    release
+    end
+}
+
+script NewMoonIsland_House3_EventScript_Gentleman{
+    msgbox("{PLAYER}!\n
+        LISTEN TO ME!\p
+        CLOSE THE GAME NOW!\n
+        IT'S THE ONLY WAY TO ESCAPE! HURRY!", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_House3_EventScript_Woman{
+    msgbox("{PLAYER}?\n
+        {PLAYER}?\p
+        {PLAYER}?\n
+        PLEASE… WAKE UP…", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_House3_EventScript_James{
+    lock
+    delay(16)
+    playse(SE_PIN)
+    applymovement(7, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    playbgm(MUS_PYRITE_THEME, FALSE)
+    msgbox(NewMoonIsland_House3_Text_James, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(7, Common_Movement_FaceDown)
+    waitmovement(0)
+    fadedefaultbgm
+    release
+    end
+}
+
+script NewMoonIsland_House3_EventScript_Rattata{
+    msgbox("Huh?\n
+        I'm not the RATTATA, {PLAYER}.\p
+        You are.", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_House3_EventScript_Aria{
+    lock
+    delay(16)
+    playse(SE_PIN)
+    applymovement(4, Common_Movement_ExclamationMark)
+    waitmovement(4)
+    waitse
+    faceplayer
+    playse(SE_M_YAWN)
+    waitse
+    msgbox("MA-AH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(4, Common_Movement_FaceOriginalDirection)
+    waitmovement(4)
+    release
+    end
+}
+
+text NewMoonIsland_House3_Text_James{
+    "{PLAYER}?!\n
+    What are you doing here?\p
+    … … … …\p
+    I see…\n
+    So you were also pulled into the abyss…\p
+    There's no saving us then…\p
+    At least now I can tell you that the\n
+    other me is a fake."
+}
+
+text NewMoonIsland_House3_Text_Momo{
+    "…\n
+    …\l
+    …\p
+    BARK BARK RUGF RUGG FHHHHERGRGRGRRRR\n
+    GRRRRRRRR\p
+    AAAAAARAAAAAAAA AAAAA GRE\n
+    RGRERRRRR GRRR\p
+    HRHEHEHEGRGRGRGRGR\n
+    GRGRGRGRGRGR\p
+    HSISSSSS HISSSSSS BITE\n
+    BITE SNARL SNARL\p
+    sniff sniff\n
+    GRRRRRRRRR…"
+}
+

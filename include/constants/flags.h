@@ -1282,7 +1282,7 @@
 #define FLAG_DEFEATED_EUGENIA                                       0x4CC // Lina Superboss
 #define FLAG_ELITE_FOUR_FINAL_BATTLE                                0x4CD // For Elite Four Rematches
 #define FLAG_HIDE_GYM_LEADERS                                       0x4CE // For postgame when gym leaders are out
-#define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
+#define FLAG_HIDE_RATDUARDO_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
 #define FLAG_HIDE_RATDUARDO_FULLMOON                                0x4D0 // Ratduardo Cutscene Fullmoon Island
 #define FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE                         0x4D1 // Cleared if player defeats Darkrai before reaching Fullmoon
 #define FLAG_DEFEATED_YVELTAL                                       0x4D2 // Azure Mountain
@@ -1306,10 +1306,10 @@
 #define FLAG_HIDE_PROF_ROUTE_135_LAB                                0x4E4 // For Ultra Space Event
 #define FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE                    0x4E5 // For Ultra Space Event
 #define FLAG_HIDE_RATICATE_TO_CANYON_LAKE                           0x4E6 // Darkrai Event
-#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
-#define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
-#define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
-#define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
+#define FLAG_RECEIVED_GIMMIGHOUL_COINS_HOUSE_1                      0x4E7 // Darkrai Event
+#define FLAG_DEFEATED_GIMMIGHOUL                                    0x4E8 // Darkrai Event
+#define FLAG_RECEIVED_GIMMIGHOUL_COINS_HOUSE_2                      0x4E9 // Darkai Event
+#define FLAG_NEWMOON_ISLAND_HOUSE_2_RATDUARDO_TRIGGER               0x4EA // Darkrai Event
 #define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
 #define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
 #define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag

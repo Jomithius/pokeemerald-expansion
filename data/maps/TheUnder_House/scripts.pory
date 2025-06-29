@@ -1,4 +1,6 @@
-mapscripts TheUnder_House_MapScripts {}
+mapscripts TheUnder_House_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE[VAR_RAT_CAVE_STATE, 10: TheUnder_House_PlayerAwakens]
+}
 
 script TheUnder_House_Eventscript_BedLeft{
     lock
@@ -10,7 +12,7 @@ script TheUnder_House_Eventscript_BedLeft{
         waitmessage
         setflag(FLAG_REMOVE_WARP_FADE)
         call(TheUnder_House_OutOfCenterPartyHeal)
-        setvar(VAR_NEWMOON_ISLAND_STATE, 1)
+        setvar(VAR_NEWMOON_ISLAND_STATE, 2)
     }
     else{
         msgbox("Maybe another time.", MSGBOX_AUTOCLOSE)
@@ -32,7 +34,7 @@ script TheUnder_House_Eventscript_BedRight{
         waitmessage
         setflag(FLAG_REMOVE_WARP_FADE)
         call(TheUnder_House_OutOfCenterPartyHeal)
-        setvar(VAR_NEWMOON_ISLAND_STATE, 1)
+        setvar(VAR_NEWMOON_ISLAND_STATE, 2)
     }
     else{
         msgbox("Maybe another time.", MSGBOX_AUTOCLOSE)
@@ -46,7 +48,7 @@ script TheUnder_House_Eventscript_BedRight{
 
 
 script TheUnder_House_OutOfCenterPartyHeal{
-    playbgm(MUS_DUMMY, FALSE)
+    fadenewbgm(MUS_DUMMY)
     delay(30)
     fadescreenspeed(FADE_TO_BLACK, 2)
     delay(30)
@@ -60,7 +62,48 @@ script TheUnder_House_OutOfCenterPartyHeal{
 	return
 } 
 
+script TheUnder_House_PlayerAwakens{
+    lockall
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    waitse
+    delay(16)
+    applymovement(1, TheUnder_House_Movement_RatduardoApproachesPlayer)
+    waitmovement(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox(TheUnder_House_Text_Ratduardo, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, TheUnder_House_Movement_RatduardoReturnsToSeat)
+    waitmovement(1)
+    setvar(VAR_RAT_CAVE_STATE, 11)
+    releaseall
+    end
+}
 
+script TheUnder_House_EventScript_Ratduardo{
+    msgbox(TheUnder_House_Ratduardo2, MSGBOX_NPC)
+    end
+}
+
+script TheUnder_House_EventScript_Raticate{
+   lock
+   faceplayer
+   playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
+   waitmoncry
+   release
+   end
+}
+
+script TheUnder_House_EventScript_RaticateAlola{
+   lock
+   faceplayer
+   playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
+   waitmoncry
+   release
+   end
+}
 
 text TheUnder_House_Text_TakeARest{
     "There's a bed…\n
@@ -70,6 +113,23 @@ text TheUnder_House_Text_TakeARest{
 text TheUnder_House_Movement_FallIntoSlumber{
     "Your eyes feel heavy as you\n
     fall into a deep slumber…"
+}
+
+text TheUnder_House_Text_Ratduardo{
+    "You've been asleep for a long, long\n
+    time… What happened to you?\p
+    And what were you doing here?\n
+    Nobody's been living here for years.\p
+    Well, make sure you're okay before\n
+    you get up."
+}
+
+text TheUnder_House_Ratduardo2{
+    "I haven't been home in a long time.\p
+    But suddenly, it was like I had been\n
+    woken up from a really long dream…\p
+    Did you have something to do with it?\n
+    If you did… Thank you."
 }
 
 movement TheUnder_House_Movement_LayInBedLeft{
@@ -82,3 +142,12 @@ movement TheUnder_House_Movement_LayInBedRight{
     walk_in_place_down
 }
 
+movement TheUnder_House_Movement_RatduardoApproachesPlayer{
+    walk_up * 2
+    walk_right * 2
+}
+
+movement TheUnder_House_Movement_RatduardoReturnsToSeat{
+    walk_down * 2
+    walk_left * 2
+}

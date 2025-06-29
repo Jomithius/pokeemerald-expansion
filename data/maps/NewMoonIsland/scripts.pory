@@ -4,3 +4,54 @@ mapscripts NewMoonIsland_MapScripts {
         end
     }
 }
+
+script NewMoonIsland_EventScript_Maushold{
+    msgbox("See that house over there?\n
+        It's haunted.", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_EventScript_Rattata{
+    msgbox("He hasn't visited recently.\n
+        Where? Where is he?", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_EventScript_Raticate{
+    msgbox("Where am I?\n
+        Who am I?", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_EventScript_Gentleman{
+    msgbox("{PLAYER}.\n
+        It's too late.", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_EventScript_HexManiac{
+    msgbox("What have you done, {PLAYER}?", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_EventScript_Maniac{
+    msgbox("He's gone?\n
+        WHERE DID HE GO?", MSGBOX_NPC)
+    end
+}
+
+script NewMoonIsland_EventScript_Sign{
+    lock
+    msgbox(NewMoonIsland_Text_Sign, MSGBOX_SIGN)
+    waitmessage
+    release
+    end
+}
+
+text NewMoonIsland_Text_Sign{
+    "It's an old sign.\n 
+    There's something scrawled on it…\p
+    Som…hing so pecu…r shou…\n
+    make off …ith the mot…\p
+    The rest is too worn to read."
+}

@@ -1,6 +1,5 @@
 mapscripts TheUnder_ShadyHouse_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: TheUnder_ShadyHouse_OnTransition
-    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
 }
 
 script TheUnder_ShadyHouse_OnTransition{

@@ -1,6 +1,147 @@
 mapscripts NewMoonIsland_House2_MapScripts {
-    MAP_SCRIPT_ON_LOAD{
-        setflag(FLAG_TEMP_E)
-        end
+    MAP_SCRIPT_ON_LOAD: NewMoonIsland_House2_OnLoad
+}
+
+script NewMoonIsland_House2_OnLoad{
+    setflag(FLAG_TEMP_E)
+    call_if_set(FLAG_RECEIVED_GIMMIGHOUL_COINS_HOUSE_2, NewMoonIsland_House2_HideGimmighoulCoins)
+    call_if_set(FLAG_NEWMOON_ISLAND_HOUSE_2_RATDUARDO_TRIGGER, NewMoonIsland_House2_HideChannelerChest)
+    end
+}
+
+
+script NewMoonIsland_House2_HideGimmighoulCoins{
+    setmetatile(14, 2, METATILE_LegendOfZeldaHouse_FloorTileTop, FALSE)
+    return
+}
+
+script NewMoonIsland_House2_HideChannelerChest{
+    setmetatile(13, 2, METATILE_LegendOfZeldaHouse_FloorTileTop, FALSE)
+    return
+}
+
+script NewMoonIsland_House2_EventScript_TriggerChanneler{
+    lockall
+    playbgm(MUS_NONE, TRUE)
+    setweather(WEATHER_FOG_DIAGONAL)
+    doweather
+    special(WaitWeather)
+    animateflash(8)
+    setflashlevel(7)
+    removeobject(9)
+    addobject(5)
+    addobject(6)
+    addobject(7)
+    clearflag(FLAG_HIDE_RATDUARDO_NEWMOON_ISLAND)
+    releaseall
+    end
+}
+
+script NewMoonIsland_House2_EventScript_GimmighoulCoin{
+    lock
+    msgbox("You check the treasure chest…\n
+        There's a coin!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    checkitemspace(ITEM_GIMMIGHOUL_COIN)
+    if(var(VAR_RESULT) == TRUE){
+        finditem(ITEM_GIMMIGHOUL_COIN)
+        waitmessage
+        closemessage
+        fadescreen(FADE_TO_BLACK)
+        call(NewMoonIsland_House2_HideGimmighoulCoins)
+        special(DrawWholeMapView)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
     }
+    else{
+        msgbox("You don't have enough room…", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end
+}
+
+script NewMoonIsland_House2_EventScript_Channeler{
+    lockall
+    faceplayer
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(8)
+    hideobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(16)
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(24)
+    hideobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(30)
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    msgbox("{PLAYER}…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_RATDUARDO_NEWMOON_ISLAND, NewMoonIsland_House2_Text_ChannelerDefeat)
+    fadescreen(FADE_TO_BLACK)
+    call(NewMoonIsland_House2_HideChannelerChest)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    resetweather
+    doweather
+    special(DrawWholeMapView)
+	fadescreenspeed(FADE_FROM_BLACK, 5)
+    animateflash(0)
+    setflashlevel(0)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+text NewMoonIsland_House2_Text_ChannelerDefeat{
+    "{PLAYER}…"
+}
+
+script NewMoonIsland_House2_EventScript_Raticate{
+    lock
+    msgbox("Just because we're trapped here\n
+        doesn't mean we can't be a family.", MSGBOX_NPC)
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script NewMoonIsland_House2_EventScript_RaticateAlola{
+    lock
+    faceplayer
+    msgbox("What, {PLAYER}?\n
+        Never seen a rat family before?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox("Guess you're just uncultured.", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("Then come join us for dinner.", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script NewMoonIsland_House2_EventScript_RattataAlola{
+    lock
+    faceplayer
+    msgbox("My stummy hurt.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script NewMoonIsland_House2_EventScript_Rattata{
+    lock
+    faceplayer
+    msgbox("How are you so calm with her standing\n
+        right behind you?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
 }

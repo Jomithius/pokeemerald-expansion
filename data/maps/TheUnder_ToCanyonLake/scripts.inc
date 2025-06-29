@@ -230,7 +230,7 @@ TheUnder_ToCanyonLake_EventScript_ScareAwayRats::
 # 128 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 129 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	setvar VAR_RAT_CAVE_STATE, 9
+	setvar VAR_NEWMOON_ISLAND_STATE, 1
 # 130 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	release
 	end

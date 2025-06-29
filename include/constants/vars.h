@@ -178,7 +178,7 @@
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0
-#define VAR_RAT_CAVE_STATE                               0x40A1  // 0-2 Luna battle, 3-4 Ratduardo first battle, 4-7 Rat Cave Fallarbor, 7-8 Lilycove, 8-9 The Under to canyon lake or Cresselia Event, 10
+#define VAR_RAT_CAVE_STATE                               0x40A1  // 0-2 Luna battle, 3-4 Ratduardo first battle, 4-7 Rat Cave Fallarbor, 7-8 Lilycove, 8-9 Cresselia or Darkrai Event, 10
 #define VAR_SEAFLOOR_CAVERN_STATE                        0x40A2
 #define VAR_CABLE_CAR_STATION_STATE                      0x40A3
 #define VAR_SAFARI_ZONE_STATE                            0x40A4  // 0: In or out of SZ, 1: Player exiting SZ, 2: Player entering SZ
@@ -267,8 +267,8 @@
 #define VAR_MISA_STATE                                   0x40F7 // 0-2 Misa James Rustboro, 3-5 Misa Route 117, 4-5 James Route 112, 6-7 James Mt Pyre, 7-8 James Lilycove CS, 8-9 James Evergrande
 #define VAR_SPEEDWAGON_STATE                             0x40F8 // 0-8 Mauville/Route 110, 8-9 Wachunpelon City, 9-10 Wachunpelon Sewer 1, 10-11 Wachunpelon Sewer 2
 #define VAR_LINA_TALKED_TO                               0x40F9 // If Lina will recognize you at E4, 0-1 Lavaridge, 1-2 Lilycove, 3 Elite Four
-#define VAR_NEWMOON_ISLAND_STATE                         0x40FA // For Darkrai Event, 0-1 Bed in House
-#define VAR_FULLMOON_ISLAND_STATE                        0x40FB // For Cresselia/Ratduardo cutscene, 0-1
+#define VAR_NEWMOON_ISLAND_STATE                         0x40FA // For Darkrai Event, 0-1 TheUnderToCanyon Rattatas, 1-2 Bed in House
+#define VAR_FULLMOON_ISLAND_STATE                        0x40FB // unused
 #define VAR_CEO_STATE                                    0x40FC // For unlocking postgame area, 0-1 Lilycove Highrise, 1-2 Meeting with CEO
 #define VAR_ULTRA_SPACE_STATE                            0x40FD // 0-4 Ultra Space Event, 4-6 Area Zero, 7
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var

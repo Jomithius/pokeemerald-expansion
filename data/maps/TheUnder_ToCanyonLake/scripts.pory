@@ -126,7 +126,7 @@ script TheUnder_ToCanyonLake_EventScript_ScareAwayRats{
     fadescreenspeed(FADE_FROM_BLACK, 2)
     fadedefaultbgm
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-    setvar(VAR_RAT_CAVE_STATE, 9)
+    setvar(VAR_NEWMOON_ISLAND_STATE, 1)
     release
     end
 }

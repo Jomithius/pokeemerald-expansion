@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_NEWMOON_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
-  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NewMoonIsland_EventScript_Maniac",
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NewMoonIsland_EventScript_Gentleman",
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NewMoonIsland_EventScript_HexManiac",
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NewMoonIsland_EventScript_Maushold",
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NewMoonIsland_EventScript_Rattata",
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NewMoonIsland_EventScript_Raticate",
       "flag": "FLAG_DEFEATED_DARKRAI"
     }
   ],
@@ -141,6 +141,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 23,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "NewMoonIsland_EventScript_Sign"
+    }
   ]
 }

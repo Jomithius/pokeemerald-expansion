@@ -128,8 +128,8 @@
       "x": 7,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_RAT_CAVE_STATE",
-      "var_value": "8",
+      "var": "VAR_NEWMOON_ISLAND_STATE",
+      "var_value": "0",
       "script": "TheUnder_ToCanyonLake_LeftTrigger_CheckLeadMon"
     },
     {
@@ -137,8 +137,8 @@
       "x": 8,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_RAT_CAVE_STATE",
-      "var_value": "8",
+      "var": "VAR_NEWMOON_ISLAND_STATE",
+      "var_value": "0",
       "script": "TheUnder_ToCanyonLake_MiddleTrigger_CheckLeadMon"
     },
     {
@@ -146,8 +146,8 @@
       "x": 9,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_RAT_CAVE_STATE",
-      "var_value": "8",
+      "var": "VAR_NEWMOON_ISLAND_STATE",
+      "var_value": "0",
       "script": "TheUnder_ToCanyonLake_RightTrigger_CheckLeadMon"
     }
   ],

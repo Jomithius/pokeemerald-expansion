@@ -276,6 +276,11 @@
 #define METATILE_Lavaridge_NormalGrass          0x206
 #define METATILE_Lavaridge_RockWall             0x274
 
+// gTileset_LegendOfZeldaHouse
+#define METATILE_LegendOfZeldaHouse_FloorTile        0x200
+#define METATILE_LegendOfZeldaHouse_FloorTileTop     0x202
+#define METATILE_LegendOfZeldaHouse_GimmighoulChest  0x23A
+
 // gTileset_Lilycove
 #define METATILE_Lilycove_Door             0x246
 #define METATILE_Lilycove_Door_DeptStore   0x30C

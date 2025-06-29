@@ -380,7 +380,9 @@
 #define TRAINER_CLASS_NERD           0x49
 #define TRAINER_CLASS_KIMONO_WOMAN   0x50
 #define TRAINER_CLASS_KIMONO_LADY    0x51
-#define TRAINER_CLASS_COUNT          0x52
+#define TRAINER_CLASS_NINJA_COUPLE   0x52
+#define TRAINER_CLASS_NIGHTMARE      0x53
+#define TRAINER_CLASS_COUNT          0x54
 
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music

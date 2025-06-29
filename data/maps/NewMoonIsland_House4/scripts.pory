@@ -8,7 +8,7 @@ script NewMoonIsland_House4_OnTransition{
     setrespawn(HEAL_LOCATION_NEW_MOON_ISLAND)
 }
 
-script NewMoonIsland_EventScript_Dendenne{
+script NewMoonIsland_House4_EventScript_Dendenne{
     lock
     faceplayer
     msgbox(NewMoonIsland_House4_Text_YouLookTired, MSGBOX_DEFAULT)
@@ -23,11 +23,11 @@ script NewMoonIsland_EventScript_Dendenne{
 }
 
 text NewMoonIsland_House4_Text_YouLookTired{
-    "You look tired.\n
+    "You look tired…\n
     Take a rest for awhile."
 }
 
 text NewMoonIsland_House4_Text_RestHereAnytime{
-    "You can rest here anytime.\n
+    "You can stop by anytime.\n
     We're stuck here for eternity, after all…"
 }

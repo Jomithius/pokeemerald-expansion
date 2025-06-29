@@ -10766,26 +10766,29 @@ IVs: 0 Atk
 - Strange Steam  
 - Sludge Wave  
 
-=== TRAINER_BRENDAN_ROUTE_119_TORCHIC === /* FREE */
-Name: BRENDAN
-Class: Rival
-Pic: Brendan
+=== TRAINER_RATDUARDO_NEWMOON_ISLAND ===
+Name: RATDUARDO
+Class: Nightmare
+Pic: Ratduardo
 Gender: Male
-Music: Male
+Music: Suspicious
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
-Lombre
+Gengar
 Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Slugma
+Spiritomb
 Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Marshtomp
+Runerigus
 Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Froslass
+Level: 31
+
+Cofagrigus
+Level: 31
 
 === TRAINER_MAY_ROUTE_103_MUDKIP === /* FREE */
 Name: MAY

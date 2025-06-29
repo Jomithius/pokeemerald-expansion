@@ -1,6 +1,67 @@
 mapscripts NewMoonIsland_House1_MapScripts {
-    MAP_SCRIPT_ON_LOAD{
-        setflag(FLAG_TEMP_E)
-        end
+    MAP_SCRIPT_ON_LOAD: NewMoonIsland_House1_OnLoad
+}
+
+script NewMoonIsland_House1_OnLoad{
+    setflag(FLAG_TEMP_E)
+    call_if_set(FLAG_DEFEATED_GIMMIGHOUL, NewMoonIsland_House1_EventScript_RemoveGimmighoul)
+    call_if_set(FLAG_RECEIVED_GIMMIGHOUL_COINS_HOUSE_1, NewMoonIsland_House1_EventScript_RemoveGimmighoulCoins)
+    end
+}
+
+script NewMoonIsland_House1_EventScript_Gimmighoul{
+    lock
+    msgbox("You check the treasure chest…\n
+        Wait… It's a POKéMON!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playmoncry(SPECIES_GIMMIGHOUL, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_GIMMIGHOUL, 75, ITEM_GIMMIGHOUL_COIN)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+        call(NewMoonIsland_House1_EventScript_RemoveGimmighoul)
+        special(DrawWholeMapView)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		goto(Common_EventScript_NopReturn)
     }
+	release
+	end
+}
+
+script NewMoonIsland_House1_EventScript_GimmighoulCoins{
+    lock
+    msgbox("You check the treasure chest…\n
+        There's a bunch of coins!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    checkitemspace(ITEM_GIMMIGHOUL_COIN, 997)
+    if(var(VAR_RESULT) == TRUE){
+        finditem(ITEM_GIMMIGHOUL_COIN, 997)
+        waitmessage
+        closemessage
+        fadescreen(FADE_TO_BLACK)
+        call(NewMoonIsland_House1_EventScript_RemoveGimmighoulCoins)
+        special(DrawWholeMapView)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+    }
+    else{
+        msgbox("You don't have enough room…", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end
+}
+
+script NewMoonIsland_House1_EventScript_RemoveGimmighoul{
+    setmetatile(4, 3, METATILE_LegendOfZeldaHouse_FloorTile, FALSE)
+    return
+}
+
+script NewMoonIsland_House1_EventScript_RemoveGimmighoulCoins{
+    setmetatile(5, 3, METATILE_LegendOfZeldaHouse_FloorTile, FALSE)
+    return
 }

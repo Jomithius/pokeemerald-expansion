@@ -14,7 +14,7 @@ NewMoonIsland_House4_OnTransition::
 	return
 
 
-NewMoonIsland_EventScript_Dendenne::
+NewMoonIsland_House4_EventScript_Dendenne::
 # 12 "data/maps/NewMoonIsland_House4/scripts.pory"
 	lock
 # 13 "data/maps/NewMoonIsland_House4/scripts.pory"
@@ -40,8 +40,8 @@ NewMoonIsland_EventScript_Dendenne::
 
 NewMoonIsland_House4_Text_YouLookTired::
 # 25 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.string "You look tired.\n Take a rest for awhile.$"
+	.string "You look tired…\n Take a rest for awhile.$"
 
 NewMoonIsland_House4_Text_RestHereAnytime::
 # 30 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.string "You can rest here anytime.\n We're stuck here for eternity, after all…$"
+	.string "You can stop by anytime.\n We're stuck here for eternity, after all…$"

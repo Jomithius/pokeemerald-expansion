@@ -536,8 +536,6 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_RAIKOU:
     case SPECIES_SUICUNE:
     case SPECIES_ENTEI:
-    case SPECIES_DARKRAI:
-    case SPECIES_CRESSELIA:
     case SPECIES_HEATRAN:
     case SPECIES_ZACIAN:
     case SPECIES_ZAMAZENTA:
@@ -576,6 +574,10 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_JIRACHI:
     case SPECIES_ZARUDE:
         CreateBattleStartTask(B_TRANSITION_SLICE, MUS_B_ARENA);
+        break;
+    case SPECIES_DARKRAI:
+    case SPECIES_CRESSELIA:
+        CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_VS_RATDUARDO);
         break;
     }
 

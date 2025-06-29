@@ -370,6 +370,8 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_MASTER] = { _("MASTER"), 20 },
     [TRAINER_CLASS_KIMONO_WOMAN] = { _("KIMONO WOMAN"), 25 },
     [TRAINER_CLASS_KIMONO_LADY] = { _("KIMONO LADY"), 30 },
+    [TRAINER_CLASS_NINJA_COUPLE] = { _("NINJA COUPLE"), 40 },
+    [TRAINER_CLASS_NIGHTMARE] = { _("NIGHTMARE"), 5 },
 };
 
 static void (* const sTurnActionsFuncsTable[])(void) =
