@@ -79,7 +79,7 @@ RustboroCity_Misa_House3F_Togepi_2:
 # 59 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	hidemonpic
 # 60 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	msgbox RustboroCity_Misa_House3F_Togepi_Text_2
+	goto Common_EventScript_NoMoreRoomForPokemon
 	goto RustboroCity_Misa_House3F_Togepi_1
 
 RustboroCity_Misa_House3F_Togepi_5:
@@ -202,10 +202,6 @@ RustboroCity_Misa_House3F_Togepi_Text_0:
 RustboroCity_Misa_House3F_Togepi_Text_1:
 # 46 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	.string "{PLAYER} took the POKéMON!$"
-
-RustboroCity_Misa_House3F_Togepi_Text_2:
-# 60 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "You don't have any room.$"
 
 NicknamePartyTogepi_Text_0:
 # 74 "data/maps/RustboroCity_Misa_House3F/scripts.pory"

@@ -44,7 +44,14 @@ script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
         applymovement(2, Common_Movement_WalkInPlaceUp)
         applymovement(3, Common_Movement_WalkInPlaceUp)
         waitmovement(3)
-        msgbox("It's fine.", MSGBOX_AUTOCLOSE)
+        checkplayergender
+        if(var(VAR_RESULT) == 1){
+            msgbox("What's wrong with you?\n
+                Don't threaten her.", MSGBOX_AUTOCLOSE)
+        }
+        else{
+            msgbox("It's fine.", MSGBOX_AUTOCLOSE)
+        }
         waitmessage
         applymovement(2, LilycoveCity_HighriseFloor2_Movement_StaffMemberReturn)
         delay(16)
@@ -171,7 +178,7 @@ text LilycoveCity_HighriseFloor2_Text_Scientist{
     Furthermore, there have been reports\n
     of extremely rare POKéMON now being\l
     seen in the region.\p
-    Notable reports have come from the\n
+    Notable reports have come from: the\n
     SCORCHED SLAB, MT. PYRE, FIERY PATH,\l
     METEOR FALLS, ROUTE 123, NEW MAUVILLE,\l
     SKY PILLAR, and the CAVE OF ORIGIN."
@@ -219,4 +226,3 @@ text LilycoveCity_HighriseFloor2_Text_Jimmy4{
     HOENN through the tunnel system.\l
     I expect good news!"
 }
-

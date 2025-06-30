@@ -2,6 +2,12 @@ mapscripts LilycoveCity_HighriseGroundFloor_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
     VAR_CEO_STATE, 1: LilycoveCity_HighriseGroundFloor_EventScript_ToElevator
     ]
+    MAP_SCRIPT_ON_TRANSITION: LilycoveCity_HighriseGroundFloor_OnTransition
+}
+
+script LilycoveCity_HighriseGroundFloor_OnTransition{
+    setflag(FLAG_TEMP_E)
+    end
 }
 
 script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
@@ -9,6 +15,11 @@ script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
     applymovement(6, Common_Movement_WalkDown)
     waitmovement(6)
     msgbox(LilycoveCity_HighriseGroundFloor_Text_Attendant, MSGBOX_AUTOCLOSE)
+    waitmessage
+    giveitem(ITEM_BIG_NUGGET, 50)
+    waitmessage
+    msgbox("Now, please allow me to\n
+        show you to the CEO's office.", MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_FOLLOW_ME, FALSE)
     applymovement(6, Common_Movement_WalkUp4)
@@ -33,8 +44,8 @@ script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
 text LilycoveCity_HighriseGroundFloor_Text_Attendant{
     "Welcome, {PLAYER}.\n
     We have been expecting you.\p
-    Please, allow me to show you to\n
-    the CEO's office."
+    Please, accept this gift from the CEO\n
+    for becoming CHAMPION."
 }
 
 script LilycoveCity_HighriseGroundFloor_EventScript_NoEntry{

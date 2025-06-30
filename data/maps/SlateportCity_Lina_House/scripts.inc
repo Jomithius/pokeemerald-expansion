@@ -37,7 +37,7 @@ Lina_House_EventScript_Pokeball_2:
 # 28 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	hidemonpic
 # 29 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_Pokeball_Text_2
+	goto Common_EventScript_NoMoreRoomForPokemon
 	goto Lina_House_EventScript_Pokeball_1
 
 Lina_House_EventScript_Pokeball_5:
@@ -164,10 +164,6 @@ Lina_House_EventScript_Pokeball_Text_0:
 Lina_House_EventScript_Pokeball_Text_1:
 # 15 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "{PLAYER} took the EEVEE!$"
-
-Lina_House_EventScript_Pokeball_Text_2:
-# 29 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	.string "You don't have any room.$"
 
 NicknamePartyMon_Text_0:
 # 43 "data/maps/SlateportCity_Lina_House/scripts.pory"

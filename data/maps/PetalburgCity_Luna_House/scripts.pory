@@ -28,7 +28,7 @@ script Luna_House_EventScript_Pokeball{
         }
         else{
             hidemonpic
-            msgbox("You don't have any room.")
+            goto(Common_EventScript_NoMoreRoomForPokemon)
         }
     }
     else{

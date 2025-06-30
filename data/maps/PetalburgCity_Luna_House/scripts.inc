@@ -39,7 +39,7 @@ Luna_House_EventScript_Pokeball_2:
 # 30 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	hidemonpic
 # 31 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	msgbox Luna_House_EventScript_Pokeball_Text_2
+	goto Common_EventScript_NoMoreRoomForPokemon
 	goto Luna_House_EventScript_Pokeball_1
 
 Luna_House_EventScript_Pokeball_5:
@@ -118,10 +118,6 @@ Luna_House_EventScript_Pokeball_Text_0:
 Luna_House_EventScript_Pokeball_Text_1:
 # 17 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	.string "{PLAYER} took the POKéMON!$"
-
-Luna_House_EventScript_Pokeball_Text_2:
-# 31 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	.string "You don't have any room.$"
 
 NicknamePartyPkmn_Text_0:
 # 45 "data/maps/PetalburgCity_Luna_House/scripts.pory"

@@ -125,7 +125,7 @@ FullMoonIslandInterior_EventScript_CresseliaJoinsParty_2:
 # 63 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 64 "data/maps/FullMoonIslandInterior/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	removeobject 1
 # 65 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 66 "data/maps/FullMoonIslandInterior/scripts.pory"
@@ -146,7 +146,7 @@ FullMoonIslandInterior_EventScript_CresseliaJoinsParty_3:
 # 74 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 75 "data/maps/FullMoonIslandInterior/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	removeobject 1
 # 76 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 77 "data/maps/FullMoonIslandInterior/scripts.pory"

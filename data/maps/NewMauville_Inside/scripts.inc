@@ -829,7 +829,7 @@ NewMauville_Inside_EventScript_Genesect::
 # 429 "data/maps/NewMauville_Inside/scripts.pory"
 	hidemonpic
 # 430 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_EventScript_Genesect_Text_3
+	msgbox NewMauville_Inside_EventScript_Genesect_Text_2
 NewMauville_Inside_EventScript_Genesect_1:
 # 433 "data/maps/NewMauville_Inside/scripts.pory"
 	waitmessage
@@ -851,7 +851,7 @@ NewMauville_Inside_EventScript_Genesect_2:
 # 424 "data/maps/NewMauville_Inside/scripts.pory"
 	hidemonpic
 # 425 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_EventScript_Genesect_Text_2
+	goto Common_EventScript_NoMoreRoomForPokemon
 	goto NewMauville_Inside_EventScript_Genesect_1
 
 NewMauville_Inside_EventScript_Genesect_5:
@@ -936,10 +936,6 @@ NewMauville_Inside_EventScript_Genesect_Text_1:
 	.string "{PLAYER} took the POKéMON!$"
 
 NewMauville_Inside_EventScript_Genesect_Text_2:
-# 425 "data/maps/NewMauville_Inside/scripts.pory"
-	.string "You don't have any room.$"
-
-NewMauville_Inside_EventScript_Genesect_Text_3:
 # 430 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"
 
