@@ -5,7 +5,7 @@ mapscripts NewMoonIsland_House2_MapScripts {
 script NewMoonIsland_House2_OnLoad{
     setflag(FLAG_TEMP_E)
     call_if_set(FLAG_RECEIVED_GIMMIGHOUL_COINS_HOUSE_2, NewMoonIsland_House2_HideGimmighoulCoins)
-    call_if_set(FLAG_NEWMOON_ISLAND_HOUSE_2_RATDUARDO_TRIGGER, NewMoonIsland_House2_HideChannelerChest)
+    call_if_eq(VAR_NEWMOON_ISLAND_STATE, 4, NewMoonIsland_House2_HideTrapChest)
     end
 }
 
@@ -15,24 +15,40 @@ script NewMoonIsland_House2_HideGimmighoulCoins{
     return
 }
 
-script NewMoonIsland_House2_HideChannelerChest{
+script NewMoonIsland_House2_HideTrapChest{
     setmetatile(13, 2, METATILE_LegendOfZeldaHouse_FloorTileTop, FALSE)
     return
 }
 
-script NewMoonIsland_House2_EventScript_TriggerChanneler{
+script NewMoonIsland_House2_EventScript_TriggerTrap{
     lockall
     playbgm(MUS_NONE, TRUE)
     setweather(WEATHER_FOG_DIAGONAL)
     doweather
     special(WaitWeather)
-    animateflash(8)
-    setflashlevel(7)
     removeobject(9)
+    goto_if_ge(VAR_RAT_CAVE_STATE 11, NewMoonIsland_House2_EventScript_SpawnChanneler)
     addobject(5)
     addobject(6)
     addobject(7)
     clearflag(FLAG_HIDE_RATDUARDO_NEWMOON_ISLAND)
+    setvar(VAR_NEWMOON_ISLAND_STATE, 3)
+    msgbox("{PLAYER}…\n
+        You shouldn't have done that.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+    end
+}
+
+script NewMoonIsland_House2_EventScript_SpawnChanneler{
+    lockall
+    addobject(10)
+    addobject(11)
+    addobject(12)
+    clearflag(FLAG_HIDE_CHANNELER_NEWMOON_ISLAND)
+    msgbox("{PLAYER}…\n
+        You shouldn't have done that.", MSGBOX_AUTOCLOSE)
+    waitmessage
     releaseall
     end
 }
@@ -50,13 +66,44 @@ script NewMoonIsland_House2_EventScript_GimmighoulCoin{
         fadescreen(FADE_TO_BLACK)
         call(NewMoonIsland_House2_HideGimmighoulCoins)
         special(DrawWholeMapView)
-	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	    fadescreen(FADE_FROM_BLACK)
     }
     else{
         msgbox("You don't have enough room…", MSGBOX_AUTOCLOSE)
         waitmessage
     }
     release
+    end
+}
+
+script NewMoonIsland_House2_EventScript_Ratduardo{
+    lockall
+    faceplayer
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(8)
+    hideobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(16)
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(24)
+    hideobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(30)
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    msgbox("…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_RATDUARDO_NEWMOON_ISLAND, NewMoonIsland_House2_Text_RatduardoDefeat)
+    fadescreen(FADE_TO_BLACK)
+    call(NewMoonIsland_House2_HideTrapChest)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    special(DrawWholeMapView)
+    resetweather
+    doweather
+    special(WaitWeather)
+	fadescreen(FADE_FROM_BLACK)
+    setvar(VAR_NEWMOON_ISLAND_STATE, 4)
+    fadedefaultbgm
+    releaseall
     end
 }
 
@@ -72,27 +119,28 @@ script NewMoonIsland_House2_EventScript_Channeler{
     hideobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
     delay(30)
     showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
-    msgbox("{PLAYER}…", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
-    trainerbattle_no_intro(TRAINER_RATDUARDO_NEWMOON_ISLAND, NewMoonIsland_House2_Text_ChannelerDefeat)
+    trainerbattle_no_intro(TRAINER_CHANNELER_NEWMOON_ISLAND, NewMoonIsland_House2_Text_RatduardoDefeat)
     fadescreen(FADE_TO_BLACK)
-    call(NewMoonIsland_House2_HideChannelerChest)
-    removeobject(5)
-    removeobject(6)
-    removeobject(7)
+    call(NewMoonIsland_House2_HideTrapChest)
+    removeobject(10)
+    removeobject(11)
+    removeobject(12)
+    special(DrawWholeMapView)
+	fadescreen(FADE_FROM_BLACK)
     resetweather
     doweather
-    special(DrawWholeMapView)
-	fadescreenspeed(FADE_FROM_BLACK, 5)
-    animateflash(0)
-    setflashlevel(0)
+    special(WaitWeather)
+    setvar(VAR_NEWMOON_ISLAND_STATE, 4)
     fadedefaultbgm
     releaseall
     end
 }
 
-text NewMoonIsland_House2_Text_ChannelerDefeat{
-    "{PLAYER}…"
+text NewMoonIsland_House2_Text_RatduardoDefeat{
+    "…\n
+    There's no escape…"
 }
 
 script NewMoonIsland_House2_EventScript_Raticate{

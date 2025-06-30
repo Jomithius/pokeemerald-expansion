@@ -1,7 +1,6 @@
 mapscripts SlateportCity_Lina_House_MapScripts {}
 
 script Lina_House_EventScript_Pokeball{
-
     lockall
     showmonpic(SPECIES_EEVEE, 10,4)
     msgbox("{PLAYER} checked the POKé BALL.\p
@@ -10,19 +9,20 @@ script Lina_House_EventScript_Pokeball{
     Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         givemon(SPECIES_EEVEE, 15, ITEM_ABILITY_CAPSULE)
+        setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_EEVEE)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the EEVEE!")
             removeobject(1)
             setflag(FLAG_LINA_HOUSE_EEVEE)
-            call(NicknamePartyMon)
+            goto(NicknamePartyMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the EEVEE!")
             removeobject(1)
             setflag(FLAG_LINA_HOUSE_EEVEE)
-            call(NicknameBoxMon)
+            goto(NicknameBoxMon)
         }
         else{
             hidemonpic
@@ -46,6 +46,8 @@ script NicknamePartyMon{
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
+    releaseall
+    end
 }
 
 script NicknameBoxMon{
@@ -55,6 +57,8 @@ script NicknameBoxMon{
         call(Common_EventScript_NameReceivedBoxMon)
     }
     call(Common_EventScript_TransferredToPC)
+    releaseall
+    end
 }
 
 text LinaHouse_NotChosen{

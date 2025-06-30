@@ -405,19 +405,20 @@ script NewMauville_Inside_EventScript_Genesect{
     	Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         givemon(SPECIES_GENESECT, 70)
+		setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_GENESECT)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_DEFEATED_GENESECT)
-            call(Common_EventScript_NicknameRecievedMon)
+            goto(Common_EventScript_NicknameRecievedMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_DEFEATED_GENESECT)
-            call(Common_EventScript_NicknameRecievedMonBox)
+            goto(Common_EventScript_NicknameRecievedMonBox)
         }
         else{
             hidemonpic
@@ -441,6 +442,8 @@ script Common_EventScript_NicknameRecievedMon{
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
+	releaseall
+	end
 }
 
 script Common_EventScript_NicknameRecievedMonBox{
@@ -450,4 +453,6 @@ script Common_EventScript_NicknameRecievedMonBox{
         call(Common_EventScript_NameReceivedBoxMon)
     }
     call(Common_EventScript_TransferredToPC)
+	releaseall
+	end
 }

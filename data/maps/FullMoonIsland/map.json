@@ -39,7 +39,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "9",
+      "script": "FullMoonIsland_EventScript_CresseliaHelp"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "9",
+      "script": "FullMoonIsland_EventScript_CresseliaHelp"
+    }
   ],
   "bg_events": [
 

@@ -11,15 +11,22 @@ script RustboroCity_Misa_House3F_TV{
 
 script RustboroCity_Misa_House3F_Emo{
     lock
-    applymovement(1, MisaHouse3F_FacePlayer)
-    waitmovement(1)
-    msgbox("JAMES: {PLAYER}… We meet again.\n
-    Did you challenge the GYM LEADER yet?\l
-    I already did.\l
-    I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
-    waitmessage
-    applymovement(1, MisaHouse3F_FaceUp)
-    waitmovement(1)
+    if(flag(FLAG_TEMP_5) == TRUE){
+        msgbox("AUDIO?!\n
+        WHERE'S THE AUDIO?",MSGBOX_SIGN)
+    }
+    else{
+        applymovement(1, MisaHouse3F_FacePlayer)
+        waitmovement(1)
+        msgbox("{PLAYER}… We meet again.\n
+        Did you challenge the GYM LEADER yet?\l
+        I already did.\l
+        I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, MisaHouse3F_FaceUp)
+        waitmovement(1)
+        setflag(FLAG_TEMP_5)
+    }
     release
     end
 }
@@ -33,19 +40,20 @@ script RustboroCity_Misa_House3F_Togepi{
     Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         givemon(SPECIES_TOGEPI, 10, ITEM_SITRUS_BERRY)
+        setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOGEPI)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(2)
             setflag(FLAG_MISA_HOUSE_TOGEPI)
-            call(NicknamePartyTogepi)
+            goto(NicknamePartyTogepi)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(2)
             setflag(FLAG_MISA_HOUSE_TOGEPI)
-            call(NicknameBoxTogepi)
+            goto(NicknameBoxTogepi)
         }
         else{
             hidemonpic
@@ -69,8 +77,8 @@ script NicknamePartyTogepi{
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
-
-
+    releaseall
+    end
 }
 
 script NicknameBoxTogepi{
@@ -80,7 +88,8 @@ script NicknameBoxTogepi{
         call(Common_EventScript_NameReceivedBoxMon)
     }
     call(Common_EventScript_TransferredToPC)
-
+    releaseall
+    end
 }
 
 text MisaHouse_NotChosen{

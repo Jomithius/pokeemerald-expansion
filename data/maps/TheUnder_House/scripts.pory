@@ -1,5 +1,5 @@
 mapscripts TheUnder_House_MapScripts {
-    MAP_SCRIPT_ON_FRAME_TABLE[VAR_RAT_CAVE_STATE, 10: TheUnder_House_PlayerAwakens]
+    MAP_SCRIPT_ON_FRAME_TABLE[VAR_RAT_CAVE_STATE, 13: TheUnder_House_PlayerAwakens]
 }
 
 script TheUnder_House_Eventscript_BedLeft{
@@ -77,7 +77,7 @@ script TheUnder_House_PlayerAwakens{
     waitmessage
     applymovement(1, TheUnder_House_Movement_RatduardoReturnsToSeat)
     waitmovement(1)
-    setvar(VAR_RAT_CAVE_STATE, 11)
+    setvar(VAR_RAT_CAVE_STATE, 14)
     releaseall
     end
 }

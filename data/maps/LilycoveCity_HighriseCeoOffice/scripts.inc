@@ -162,7 +162,7 @@ LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags::
 # 85 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	clearflag FLAG_HIDE_ZERAORA
 # 86 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_DEFEATED_GLASTRIER
+	clearflag FLAG_DEFEATED_SPECTRIER
 # 87 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	clearflag FLAG_DEFEATED_GENESECT
 # 88 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"

@@ -1,1 +1,11 @@
 mapscripts FullMoonIsland_MapScripts {}
+
+script FullMoonIsland_EventScript_CresseliaHelp{
+    lockall
+    msgbox("???: Please!\n You must hurry!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+    setvar(VAR_RAT_CAVE_STATE, 10)
+    clearflag(FLAG_HIDE_RATDUARDO_FULLMOON)
+    end
+}

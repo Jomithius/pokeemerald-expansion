@@ -12,14 +12,14 @@ Luna_House_EventScript_Pokeball::
 # 11 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Luna_House_EventScript_Pokeball_2
-# 33 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 35 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	hidemonpic
-# 34 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 36 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	msgbox LunaHouse_NotChosen
 Luna_House_EventScript_Pokeball_1:
-# 36 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 38 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	waitmessage
-# 37 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 39 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	releaseall
 	end
 
@@ -27,60 +27,67 @@ Luna_House_EventScript_Pokeball_2:
 # 12 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	givemon SPECIES_MOTHIM, 12, ITEM_SILVERPOWDER
 # 13 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MOTHIM
+# 14 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	bufferspeciesname STR_VAR_2, SPECIES_MOTHIM
+# 15 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Luna_House_EventScript_Pokeball_5
-# 20 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 22 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Luna_House_EventScript_Pokeball_6
-# 28 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 30 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	hidemonpic
-# 29 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 31 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	msgbox Luna_House_EventScript_Pokeball_Text_2
 	goto Luna_House_EventScript_Pokeball_1
 
 Luna_House_EventScript_Pokeball_5:
-# 14 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 15 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	msgbox Luna_House_EventScript_Pokeball_Text_1
 # 16 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	removeobject 1
+	playfanfare MUS_OBTAIN_ITEM
 # 17 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	setflag FLAG_LUNA_HOUSE_MOTHIM
+	msgbox Luna_House_EventScript_Pokeball_Text_1
 # 18 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	call NicknamePartyPkmn
+	removeobject 1
+# 19 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	setflag FLAG_LUNA_HOUSE_MOTHIM
+# 20 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	goto NicknamePartyPkmn
 	goto Luna_House_EventScript_Pokeball_1
 
 Luna_House_EventScript_Pokeball_6:
-# 21 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 22 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	msgbox Luna_House_EventScript_Pokeball_Text_1
 # 23 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	removeobject 1
+	playfanfare MUS_OBTAIN_ITEM
 # 24 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	setflag FLAG_LUNA_HOUSE_MOTHIM
+	msgbox Luna_House_EventScript_Pokeball_Text_1
 # 25 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	call NicknameBoxPkmn
+	removeobject 1
+# 26 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	setflag FLAG_LUNA_HOUSE_MOTHIM
+# 27 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	goto NicknameBoxPkmn
 	goto Luna_House_EventScript_Pokeball_1
 
 
 NicknamePartyPkmn::
-# 44 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	msgbox NicknamePartyPkmn_Text_0, MSGBOX_YESNO
 # 45 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	hidemonpic
+	msgbox NicknamePartyPkmn_Text_0, MSGBOX_YESNO
 # 46 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	compare VAR_RESULT, YES
-	goto_if_eq NicknamePartyPkmn_1
-	return
-
-NicknamePartyPkmn_1:
+	hidemonpic
 # 47 "data/maps/PetalburgCity_Luna_House/scripts.pory"
-	call Common_EventScript_GetGiftMonPartySlot
+	compare VAR_RESULT, YES
+	goto_if_eq NicknamePartyPkmn_2
+NicknamePartyPkmn_1:
+# 51 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	releaseall
+	end
+
+NicknamePartyPkmn_2:
 # 48 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	call Common_EventScript_GetGiftMonPartySlot
+# 49 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
-	return
+	goto NicknamePartyPkmn_1
 
 
 NicknameBoxPkmn::
@@ -94,7 +101,9 @@ NicknameBoxPkmn::
 NicknameBoxPkmn_1:
 # 61 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	call Common_EventScript_TransferredToPC
-	return
+# 62 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+	releaseall
+	end
 
 NicknameBoxPkmn_2:
 # 59 "data/maps/PetalburgCity_Luna_House/scripts.pory"
@@ -107,17 +116,17 @@ Luna_House_EventScript_Pokeball_Text_0:
 	.string "{PLAYER} checked the POKé BALL.\p It contained the POKéMON\n MOTHIM.\p Take the POKé BALL?$"
 
 Luna_House_EventScript_Pokeball_Text_1:
-# 15 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 17 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	.string "{PLAYER} took the POKéMON!$"
 
 Luna_House_EventScript_Pokeball_Text_2:
-# 29 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 31 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	.string "You don't have any room.$"
 
 NicknamePartyPkmn_Text_0:
-# 44 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 45 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	.string "Would you like to nickname MOTHIM?$"
 
 LunaHouse_NotChosen::
-# 65 "data/maps/PetalburgCity_Luna_House/scripts.pory"
+# 66 "data/maps/PetalburgCity_Luna_House/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"

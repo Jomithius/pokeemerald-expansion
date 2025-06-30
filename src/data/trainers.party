@@ -4360,8 +4360,7 @@ Mugshot: Blue
 
 Pangoro (M) @ Assault Vest  
 Ability: Iron Fist  
-Level: 47  
-Tera Type: Fighting  
+Level: 47   
 EVs: 248 HP / 248 Atk / 12 Def  
 Adamant Nature  
 - Bullet Punch  
@@ -4371,8 +4370,7 @@ Adamant Nature
 
 Toxicroak (F) @ Black Sludge  
 Ability: Poison Touch  
-Level: 47  
-Tera Type: Poison  
+Level: 47   
 EVs: 248 Atk / 4 Def / 4 SpD / 252 Spe  
 Jolly Nature  
 - Swords Dance  
@@ -4382,8 +4380,7 @@ Jolly Nature
 
 Lilligant-Hisui @ Wide Lens  
 Ability: Hustle  
-Level: 46  
-Tera Type: Grass  
+Level: 46   
 EVs: 4 HP / 248 Atk / 8 SpD / 248 Spe  
 Jolly Nature  
 - Close Combat  
@@ -4393,8 +4390,7 @@ Jolly Nature
 
 Medicham (M) @ Expert Belt  
 Ability: Pure Power  
-Level: 48  
-Tera Type: Fighting  
+Level: 48   
 EVs: 248 Atk / 12 SpD / 248 Spe  
 Jolly Nature  
 - Bulk Up  
@@ -4404,8 +4400,7 @@ Jolly Nature
 
 Infernape (M) @ Punching Glove  
 Ability: Iron Fist  
-Level: 48  
-Tera Type: Fire  
+Level: 48    
 EVs: 244 Atk / 8 Def / 8 SpD / 248 Spe  
 Jolly Nature  
 - Swords Dance  
@@ -4417,7 +4412,6 @@ Primeape (M) @ Blunder Policy
 Ability: Defiant  
 Level: 48  
 Happiness: 0  
-Tera Type: Fighting  
 EVs: 248 Atk / 8 SpD / 252 Spe  
 Jolly Nature  
 - Bulk Up  
@@ -5099,8 +5093,7 @@ Mugshot: Pink
 
 Lapras (F) @ Rocky Helmet  
 Ability: Water Absorb  
-Level: 75  
-Tera Type: Water  
+Level: 75   
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -5111,8 +5104,7 @@ IVs: 0 Atk
 
 Milotic (F) @ Absorb Bulb  
 Ability: Marvel Scale  
-Level: 75  
-Tera Type: Water  
+Level: 75    
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -5123,8 +5115,7 @@ IVs: 0 Atk
 
 Hatterene @ Leftovers  
 Ability: Magic Bounce  
-Level: 75  
-Tera Type: Psychic  
+Level: 75    
 EVs: 252 HP / 96 Def / 120 SpA / 40 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -5135,8 +5126,7 @@ IVs: 0 Atk / 0 Spe
 
 Incineroar (M) @ Heavy-Duty Boots  
 Ability: Intimidate  
-Level: 75  
-Tera Type: Fire  
+Level: 75   
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 IVs: 0 Spe  
@@ -5147,8 +5137,7 @@ IVs: 0 Spe
 
 Serperior (M) @ Life Orb  
 Ability: Contrary  
-Level: 75  
-Tera Type: Grass  
+Level: 75    
 EVs: 248 HP / 252 SpA / 8 SpD  
 Quiet Nature  
 IVs: 30 Atk / 0 Spe  
@@ -5159,8 +5148,7 @@ IVs: 30 Atk / 0 Spe
 
 Luxray (M) @ Flame Orb  
 Ability: Guts  
-Level: 75  
-Tera Type: Electric  
+Level: 75    
 EVs: 252 HP / 252 Atk / 4 Def  
 Brave Nature  
 IVs: 0 Spe  
@@ -6004,8 +5992,7 @@ IVs: 0 Atk
 
 Pignite  
 Ability: Thick Fat  
-Level: 19  
-Tera Type: Fire  
+Level: 19   
 EVs: 252 HP / 248 Atk / 8 SpD  
 Adamant Nature  
 - Bulk Up  
@@ -6931,7 +6918,7 @@ Level: 9
 
 === TRAINER_RATDUARDO_2 ===
 Name: RATDUARDO
-Class: RAT MANIAC
+Class: Rat Maniac
 Pic: Ratduardo
 Gender: Male
 Music: Suspicious
@@ -6941,8 +6928,7 @@ Mugshot: Green
 
 Plusle (F)  
 Ability: Lightning Rod  
-Level: 26  
-Tera Type: Electric  
+Level: 26    
 EVs: 16 Atk / 244 SpA / 240 Spe  
 Hasty Nature  
 - Discharge  
@@ -6950,8 +6936,7 @@ Hasty Nature
 
 Minun  
 Ability: Volt Absorb  
-Level: 26  
-Tera Type: Electric  
+Level: 26    
 EVs: 248 SpA / 12 SpD / 240 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -6962,8 +6947,7 @@ IVs: 0 Atk
 
 Patrat  
 Ability: Keen Eye  
-Level: 26  
-Tera Type: Normal  
+Level: 26    
 EVs: 252 Atk / 248 Spe  
 Jolly Nature  
 - Super Fang  
@@ -6971,8 +6955,7 @@ Jolly Nature
 
 Raticate (M)
 Ability: Hustle  
-Level: 27  
-Tera Type: Normal  
+Level: 27    
 EVs: 252 Atk / 244 Spe  
 Jolly Nature  
 - Zen Headbutt  
@@ -6982,8 +6965,7 @@ Jolly Nature
 
 Raticate-Alola-Totem (M)
 Ability: Thick Fat  
-Level: 27  
-Tera Type: Dark  
+Level: 27   
 EVs: 240 HP / 244 Atk / 24 SpD  
 Adamant Nature  
 - Bulk Up  
@@ -10524,7 +10506,6 @@ Level: 23
 Scyther @ Black Glasses  
 Ability: Technician  
 Level: 22  
-Tera Type: Bug  
 EVs: 244 HP / 116 Def / 148 SpD  
 Impish Nature  
 - Brutal Swing  
@@ -10775,54 +10756,195 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer
 
-Gengar
-Level: 29
+Azumarill (F) @ Sitrus Berry  
+Ability: Huge Power  
+Tera Type: Water  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Belly Drum  
+- Aqua Jet  
+- Play Rough  
+- Liquidation  
 
-Spiritomb
-Level: 29
+Togedemaru @ Assault Vest  
+Ability: Iron Barbs  
+Tera Type: Flying  
+EVs: 252 HP / 4 Atk / 252 Def  
+Impish Nature  
+- Fake Out  
+- Nuzzle  
+- Steel Roller  
+- Iron Head  
 
-Runerigus
-Level: 31
+Raticate-Alola-Totem (M) @ Leftovers  
+Ability: Thick Fat  
+Tera Type: Ghost  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Bulk Up  
+- Knock Off  
+- Protect  
+- Quick Attack  
 
-Froslass
-Level: 31
+Raticate (M) @ Blunder Policy  
+Ability: Hustle  
+Tera Type: Ghost  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Body Slam  
+- Crunch  
+- Zen Headbutt  
+- Sucker Punch  
 
-Cofagrigus
-Level: 31
+Dedenne @ Petaya Berry  
+Ability: Cheek Pouch  
+Tera Type: Fairy  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Parabolic Charge  
+- Endure  
+- Dazzling Gleam  
+- Grass Knot  
 
-=== TRAINER_MAY_ROUTE_103_MUDKIP === /* FREE */
-Name: MAY
-Class: Rival
-Pic: May
+Maushold @ Wide Lens  
+Ability: Technician  
+Tera Type: Ghost  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Population Bomb  
+- Bullet Seed  
+- Play Rough  
+- Tidy Up  
+
+
+=== TRAINER_CHANNELER_NEWMOON_ISLAND ===
+Name: ???
+Class: Nightmare
+Pic: Channeler
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
-Treecko
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Clefable @ Leftovers  
+Ability: Magic Guard    
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Misty Explosion  
+- Alluring Voice  
+- Chilling Water  
+- Stealth Rock  
 
-=== TRAINER_MAY_ROUTE_110_MUDKIP === /* FREE */
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+Cursola @ Fairy Feather  
+Ability: Perish Body    
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Curse  
+- Destiny Bond  
+- Shadow Ball  
+- Nature Power  
+
+Mimikyu  
+Ability: Disguise    
+EVs: 252 Atk / 252 Spe  
+Adamant Nature  
+- Swords Dance  
+- Play Rough  
+- Shadow Sneak  
+- Curse  
+
+Slowking-Galar @ Heavy-Duty Boots  
+Ability: Regenerator    
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Sludge Bomb  
+- Chilly Reception  
+- Eerie Spell  
+- Hex  
+
+Gengar @ Gengarite  
+Ability: Cursed Body   
+Brave Nature  
+IVs: 0 Atk / 0 SpA  
+- Curse  
+- Shadow Ball  
+- Sludge Bomb  
+- Giga Drain  
+
+=== TRAINER_RATDUARDO_FULLMOON_ISLAND ===
+Name: RATDUARDO
+Class: Rat Maniac
+Pic: Ratduardo
+Gender: Male
+Music: Suspicious
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
+Mugshot: Green
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Azumarill (F) @ Sitrus Berry  
+Ability: Huge Power  
+Tera Type: Water  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Belly Drum  
+- Aqua Jet  
+- Play Rough  
+- Liquidation  
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Togedemaru @ Assault Vest  
+Ability: Iron Barbs  
+Tera Type: Flying  
+EVs: 252 HP / 4 Atk / 252 Def  
+Impish Nature  
+- Fake Out  
+- Nuzzle  
+- Spikes  
+- Iron Head  
 
-Grovyle
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Raticate-Alola-Totem (M) @ Leftovers  
+Ability: Thick Fat  
+Tera Type: Ghost  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Bulk Up  
+- Knock Off  
+- Protect  
+- Quick Attack  
+
+Raticate (M) @ Blunder Policy  
+Ability: Hustle  
+Tera Type: Ghost  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Body Slam  
+- Crunch  
+- Zen Headbutt  
+- Sucker Punch  
+
+Dedenne @ Petaya Berry  
+Ability: Cheek Pouch  
+Tera Type: Fairy  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Parabolic Charge  
+- Endure  
+- Dazzling Gleam  
+- Grass Knot  
+
+Maushold @ Wide Lens  
+Ability: Technician  
+Tera Type: Ghost  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Population Bomb  
+- Bullet Seed  
+- Play Rough  
+- Tidy Up
 
 === TRAINER_MAY_ROUTE_119_MUDKIP === /* FREE */
 Name: MAY
@@ -11733,8 +11855,7 @@ Mugshot: Blue
 
 Pancham (M) @ Eviolite  
 Ability: Scrappy  
-Level: 26  
-Tera Type: Fighting  
+Level: 26    
 EVs: 248 HP / 248 Atk / 4 Spe  
 Adamant Nature  
 - Bulk Up  
@@ -11744,8 +11865,7 @@ Adamant Nature
 
 Meditite (M) @ Expert Belt  
 Ability: Pure Power  
-Level: 27  
-Tera Type: Fighting  
+Level: 27    
 EVs: 244 HP / 240 Atk / 16 Def / 4 Spe  
 Adamant Nature  
 - Bullet Punch  
@@ -11755,8 +11875,7 @@ Adamant Nature
 
 Croagunk (F) @ Poison Barb  
 Ability: Poison Touch  
-Level: 26  
-Tera Type: Poison  
+Level: 26   
 EVs: 240 Atk / 24 SpD / 244 Spe  
 Jolly Nature  
 - Fake Out  
@@ -11766,8 +11885,7 @@ Jolly Nature
 
 Hitmonchan @ Punching Glove  
 Ability: Iron Fist  
-Level: 26  
-Tera Type: Fighting  
+Level: 26    
 EVs: 248 HP / 252 Atk / 8 Spe  
 Adamant Nature  
 - Mega Punch  
@@ -11777,8 +11895,7 @@ Adamant Nature
 
 Monferno (M) @ Leftovers  
 Ability: Blaze  
-Level: 27  
-Tera Type: Fire  
+Level: 27    
 EVs: 12 HP / 252 Atk / 244 Spe  
 Jolly Nature  
 - Fire Punch  
@@ -11788,8 +11905,7 @@ Jolly Nature
 
 Primeape (M) @ Blunder Policy  
 Ability: Defiant  
-Level: 28  
-Tera Type: Fighting  
+Level: 28    
 EVs: 244 HP / 136 Atk / 12 Def / 116 Spe  
 Adamant Nature  
 - Acrobatics  
@@ -12838,8 +12954,7 @@ Impish Nature
 
 Gabite (M) @ Soft Sand  
 Ability: Rough Skin 
-Level: 37  
-Tera Type: Dragon  
+Level: 37   
 EVs: 248 Atk / 12 SpD / 248 Spe  
 Jolly Nature  
 - Dragon Claw  
@@ -13786,8 +13901,7 @@ AI: Smart Trainer
 
 Torkoal (M) @ Heat Rock  
 Ability: Drought  
-Level: 34  
-Tera Type: Fire  
+Level: 34   
 EVs: 248 HP / 4 Def / 128 SpA / 128 SpD  
 Quiet Nature  
 - Stealth Rock  
@@ -13797,8 +13911,7 @@ Quiet Nature
 
 Tropius (M) @ Leftovers  
 Ability: Solar Power  
-Level: 36  
-Tera Type: Grass  
+Level: 36    
 EVs: 252 HP / 248 SpA / 4 SpD / 4 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -13809,8 +13922,7 @@ IVs: 0 Atk
 
 Sceptile (M) @ Occa Berry  
 Ability: Unburden  
-Level: 36  
-Tera Type: Grass  
+Level: 36    
 EVs: 252 Atk / 4 Def / 252 Spe  
 Adamant Nature  
 - Dragon Dance  
@@ -13820,8 +13932,7 @@ Adamant Nature
 
 Aggron (M)  
 Ability: Rock Head  
-Level: 36  
-Tera Type: Steel  
+Level: 36    
 EVs: 252 HP / 252 Atk  
 Adamant Nature  
 - Head Smash  
@@ -13831,8 +13942,7 @@ Adamant Nature
 
 Shiftry (M) @ Sitrus Berry  
 Ability: Chlorophyll  
-Level: 36  
-Tera Type: Grass  
+Level: 36    
 EVs: 12 HP / 248 Atk / 248 Spe  
 Jolly Nature  
 - Swords Dance  
@@ -13842,8 +13952,7 @@ Jolly Nature
 
 Swellow (M) @ Flame Orb  
 Ability: Guts  
-Level: 36  
-Tera Type: Normal  
+Level: 36    
 EVs: 252 Atk / 12 SpD / 244 Spe  
 Jolly Nature  
 - Facade  
@@ -14677,8 +14786,7 @@ AI: Basic Trainer
 
 Thievul  
 Ability: Stakeout  
-Level: 23  
-Tera Type: Dark  
+Level: 23    
 EVs: 188 HP / 180 Atk / 92 Def / 28 SpD / 12 Spe  
 Jolly Nature  
 - Knock Off  
@@ -14688,8 +14796,7 @@ Jolly Nature
 
 Dubwool  
 Ability: Fluffy  
-Level: 24  
-Tera Type: Normal  
+Level: 24   
 EVs: 252 HP / 156 Atk / 76 Def / 24 Spe  
 Impish Nature  
 - Body Press  
@@ -15176,8 +15283,7 @@ AI: Basic Trainer
 
 Torkoal @ Eject Button  
 Ability: Drought  
-Level: 43  
-Tera Type: Fire  
+Level: 43   
 EVs: 248 HP / 24 Def / 184 SpA / 52 SpD  
 Bold Nature  
 IVs: 0 Atk  

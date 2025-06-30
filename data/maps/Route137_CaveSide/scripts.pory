@@ -1,1 +1,26 @@
-mapscripts Route137_CaveSide_MapScripts {}
+mapscripts Route137_CaveSide_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE[VAR_RAT_CAVE_STATE, 8: Route137_CaveSide_EventScript_GoToFullMoonIsland
+    ]
+}
+
+script Route137_CaveSide_EventScript_GoToFullMoonIsland{
+    lockall
+    fadenewbgm(MUS_ETERNA_FOREST)
+    msgbox(Route137_CaveSide_Text_Cresselia, MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadedefaultbgm
+    setvar(VAR_RAT_CAVE_STATE, 9)
+    releaseall
+    end
+}
+
+text Route137_CaveSide_Text_Cresselia{
+  "…A voice called out from somehere…\p
+  ???: Please, stranger, you must help me!\n
+  A strange man has come to my island!\l
+  From where you are, head east!\p
+  Following the currents will bring you\n
+  to the island I'm on!\p
+  I'm not sure how much longer I can\n
+  defend myself…"  
+}

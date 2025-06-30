@@ -10,19 +10,21 @@ script Luna_House_EventScript_Pokeball{
     Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         givemon(SPECIES_MOTHIM, 12, ITEM_SILVERPOWDER)
+        setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MOTHIM)
+        bufferspeciesname(STR_VAR_2, SPECIES_MOTHIM)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(1)
             setflag(FLAG_LUNA_HOUSE_MOTHIM)
-            call(NicknamePartyPkmn)
+            goto(NicknamePartyPkmn)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(1)
             setflag(FLAG_LUNA_HOUSE_MOTHIM)
-            call(NicknameBoxPkmn)
+            goto(NicknameBoxPkmn)
         }
         else{
             hidemonpic
@@ -40,26 +42,25 @@ script Luna_House_EventScript_Pokeball{
 }
 
 script NicknamePartyPkmn{
-
     msgbox("Would you like to nickname MOTHIM?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
-
-
+    releaseall
+    end
 }
 
 script NicknameBoxPkmn{
-    
     msgbox("Would you like to nickname MOTHIM?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){
         call(Common_EventScript_NameReceivedBoxMon)
     }
     call(Common_EventScript_TransferredToPC)
-
+    releaseall
+    end
 }
 
 text LunaHouse_NotChosen{

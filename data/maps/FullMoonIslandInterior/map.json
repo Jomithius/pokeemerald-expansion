@@ -5,8 +5,8 @@
   "music": "MUS_ETERNA_FOREST",
   "region_map_section": "MAPSEC_FULLMOON_ISLAND",
   "requires_flash": false,
-  "weather": "WEATHER_SHADE",
-  "map_type": "MAP_TYPE_UNDERGROUND",
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FullMoonIslandInterior_EventScript_Cresselia",
       "flag": "FLAG_DEFEATED_CRESSELIA"
     },
     {

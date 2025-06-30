@@ -1,1 +1,140 @@
-mapscripts FullMoonIslandInterior_MapScripts {}
+mapscripts FullMoonIslandInterior_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE[VAR_RAT_CAVE_STATE, 10: FullMoonIslandInterior_EventScript_RatduardoBattle]
+    MAP_SCRIPT_ON_RESUME: FullMoonIslandInterior_TryRemoveCresselia
+}
+
+script FullMoonIslandInterior_TryRemoveCresselia{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+    call_if_set(FLAG_TEMP_5, FullMoonIslandInterior_RemoveRatduardoPokemon)
+    removeobject(VAR_LAST_TALKED)
+    end
+}
+
+script FullMoonIslandInterior_RemoveRatduardoPokemon{
+    removeobject(3)
+    removeobject(4)
+    return
+}
+
+script FullMoonIslandInterior_EventScript_RatduardoBattle{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6)
+    waitmovement(0)
+    delay(30)
+    playse(SE_PIN)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(2)
+    waitse
+    applymovement(2, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(3, Common_Movement_WalkDown)
+    delay(8)
+    applymovement(4, Common_Movement_WalkDown)
+    waitmovement(4)
+    playbgm(MUS_OLD_CHATEAU, FALSE)
+    msgbox(FullMoonIslandInterior_Text_Ratduardo, MSGBOX_AUTOCLOSE)
+    waitmessage
+    setflag(FLAG_TEMP_5)
+    trainerbattle_no_intro(TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_Text_RatduardoDefeat)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreenspeed(FADE_FROM_BLACK, 2)
+    applymovement(1, Common_Movement_WalkDown2)
+    waitmovement(1)
+    msgbox(FullMoonIslandInterior_Text_CresseliaMyThanks, MSGBOX_YESNO)
+    waitmessage
+    goto_if_eq(VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty)
+    msgbox(FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE)
+    waitmessage
+    setvar(VAR_RAT_CAVE_STATE, 11)
+    release
+    end
+}
+
+script FullMoonIslandInterior_EventScript_CresseliaJoinsParty{
+    msgbox("Thank you, {PLAYER}.\n
+        I'll be in your care.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    givemon(SPECIES_CRESSELIA, 75)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(1)
+        fadescreen(FADE_FROM_BLACK)
+        playfanfare(MUS_OBTAIN_ITEM)
+        waitfanfare
+        msgbox("CRESSELIA joined the party!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_DEFEATED_CRESSELIA)
+        setvar(VAR_RAT_CAVE_STATE, 12)
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(1)
+        fadescreen(FADE_FROM_BLACK)
+        playfanfare(MUS_OBTAIN_ITEM)
+        waitfanfare
+        msgbox("CRESSELIA was sent to the PC!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_DEFEATED_CRESSELIA)
+        setvar(VAR_RAT_CAVE_STATE, 12)
+    }
+    else{
+        goto(Common_EventScript_NoMoreRoomForPokemon)
+    }
+    release
+    end   
+}
+
+script FullMoonIslandInterior_EventScript_CresseliaChangeMind{
+    lock
+    msgbox("{PLAYER}.\n
+        Have you reconsidered my offer?", MSGBOX_YESNO)
+    goto_if_eq(VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty)
+    msgbox(FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script FullMoonIslandInterior_EventScript_Cresselia{
+    lock
+	faceplayer
+    goto_if_eq(VAR_RAT_CAVE_STATE, 11, FullMoonIslandInterior_EventScript_CresseliaChangeMind)
+    playmoncry(SPECIES_CRESSELIA, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_CRESSELIA, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    release
+    end
+}
+
+text FullMoonIslandInterior_Text_Ratduardo{
+    "… Again… You…\n
+    Always… in my way…\p
+    No more…!"
+}
+text FullMoonIslandInterior_Text_RatduardoDefeat{
+   "…\n
+    There's no escape for me…"
+}
+
+text FullMoonIslandInterior_Text_CresseliaMyThanks{
+    "Thank you for coming to my aid.\n
+    You have a very pure heart.\l
+    May I ask for your name?\p
+    … … … …\p
+    I see. {PLAYER},\n
+    I really cannot thank you enough.\p
+    It would be an honor to join a\n
+    TRAINER like you on your journey."
+}
+
+text FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind{
+    "I see.\n
+    I'll be here if you ever change your mind."
+}

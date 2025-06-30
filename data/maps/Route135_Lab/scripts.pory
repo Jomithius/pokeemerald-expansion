@@ -631,24 +631,25 @@ script Route_135_Lab_EventScript_Meltan{
     	MELTAN.\p
     	Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_MELTAN, 70)
+        givemon(SPECIES_MELTAN, 75)
+        setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_MELTAN)
-            call(Common_EventScript_NicknameRecievedMon)
+            goto(Common_EventScript_NicknameRecievedMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_MELTAN)
-            call(Common_EventScript_NicknameRecievedMonBox)
+            goto(Common_EventScript_NicknameRecievedMonBox)
         }
         else{
             hidemonpic
-            msgbox("You don't have any room.")
+            goto(Common_EventScript_NoMoreRoomForPokemon)
         }
     }
     else{
@@ -670,23 +671,24 @@ script Route_135_Lab_EventScript_TypeNull{
     	Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         givemon(SPECIES_TYPE_NULL, 70)
+        setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYPE_NULL)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_TYPE_NULL)
-            call(Common_EventScript_NicknameRecievedMon)
+            goto(Common_EventScript_NicknameRecievedMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("{PLAYER} took the POKéMON!")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_TYPE_NULL)
-            call(Common_EventScript_NicknameRecievedMonBox)
+            goto(Common_EventScript_NicknameRecievedMonBox)
         }
         else{
             hidemonpic
-            msgbox("You don't have any room.")
+            goto(Common_EventScript_NoMoreRoomForPokemon)
         }
     }
     else{

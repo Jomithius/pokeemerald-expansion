@@ -77,40 +77,56 @@ NewMoonIsland_House3_EventScript_James::
 	end
 
 
-NewMoonIsland_House3_EventScript_Rattata::
+NewMoonIsland_House3_EventScript_Poobles::
 # 60 "data/maps/NewMoonIsland_House3/scripts.pory"
-	msgbox NewMoonIsland_House3_EventScript_Rattata_Text_0, MSGBOX_NPC
+	lock
+# 61 "data/maps/NewMoonIsland_House3/scripts.pory"
+	faceplayer
+# 62 "data/maps/NewMoonIsland_House3/scripts.pory"
+	playmoncry SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER
+# 63 "data/maps/NewMoonIsland_House3/scripts.pory"
+	waitmoncry
+# 64 "data/maps/NewMoonIsland_House3/scripts.pory"
+	msgbox NewMoonIsland_House3_EventScript_Poobles_Text_0, MSGBOX_AUTOCLOSE
+# 65 "data/maps/NewMoonIsland_House3/scripts.pory"
+	waitmessage
+# 66 "data/maps/NewMoonIsland_House3/scripts.pory"
+	release
 	end
 
 
 NewMoonIsland_House3_EventScript_Aria::
-# 67 "data/maps/NewMoonIsland_House3/scripts.pory"
-	lock
-# 68 "data/maps/NewMoonIsland_House3/scripts.pory"
-	delay 16
-# 69 "data/maps/NewMoonIsland_House3/scripts.pory"
-	playse SE_PIN
-# 70 "data/maps/NewMoonIsland_House3/scripts.pory"
-	applymovement 4, Common_Movement_ExclamationMark
 # 71 "data/maps/NewMoonIsland_House3/scripts.pory"
-	waitmovement 4
+	lock
 # 72 "data/maps/NewMoonIsland_House3/scripts.pory"
-	waitse
-# 73 "data/maps/NewMoonIsland_House3/scripts.pory"
-	faceplayer
-# 74 "data/maps/NewMoonIsland_House3/scripts.pory"
-	playse SE_M_YAWN
-# 75 "data/maps/NewMoonIsland_House3/scripts.pory"
-	waitse
-# 76 "data/maps/NewMoonIsland_House3/scripts.pory"
 	msgbox NewMoonIsland_House3_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
-# 77 "data/maps/NewMoonIsland_House3/scripts.pory"
+# 74 "data/maps/NewMoonIsland_House3/scripts.pory"
 	waitmessage
+# 75 "data/maps/NewMoonIsland_House3/scripts.pory"
+	delay 16
+# 76 "data/maps/NewMoonIsland_House3/scripts.pory"
+	playse SE_PIN
+# 77 "data/maps/NewMoonIsland_House3/scripts.pory"
+	applymovement 4, Common_Movement_ExclamationMark
 # 78 "data/maps/NewMoonIsland_House3/scripts.pory"
-	applymovement 4, Common_Movement_FaceOriginalDirection
-# 79 "data/maps/NewMoonIsland_House3/scripts.pory"
 	waitmovement 4
+# 79 "data/maps/NewMoonIsland_House3/scripts.pory"
+	waitse
 # 80 "data/maps/NewMoonIsland_House3/scripts.pory"
+	faceplayer
+# 81 "data/maps/NewMoonIsland_House3/scripts.pory"
+	playse SE_M_YAWN
+# 82 "data/maps/NewMoonIsland_House3/scripts.pory"
+	waitse
+# 83 "data/maps/NewMoonIsland_House3/scripts.pory"
+	msgbox NewMoonIsland_House3_EventScript_Aria_Text_1, MSGBOX_AUTOCLOSE
+# 84 "data/maps/NewMoonIsland_House3/scripts.pory"
+	waitmessage
+# 85 "data/maps/NewMoonIsland_House3/scripts.pory"
+	applymovement 4, Common_Movement_FaceOriginalDirection
+# 86 "data/maps/NewMoonIsland_House3/scripts.pory"
+	waitmovement 4
+# 87 "data/maps/NewMoonIsland_House3/scripts.pory"
 	release
 	end
 
@@ -121,24 +137,28 @@ NewMoonIsland_House3_EventScript_Misa_Text_0:
 
 NewMoonIsland_House3_EventScript_Gentleman_Text_0:
 # 26 "data/maps/NewMoonIsland_House3/scripts.pory"
-	.string "{PLAYER}!\n LISTEN TO ME!\p CLOSE THE GAME NOW!\n IT'S THE ONLY WAY TO ESCAPE! HURRY!$"
+	.string "{PLAYER}!\n LISTEN TO ME!\p CLOSE THE GAME! NOW!\n IT'S THE ONLY WAY TO ESCAPE! HURRY!$"
 
 NewMoonIsland_House3_EventScript_Woman_Text_0:
 # 34 "data/maps/NewMoonIsland_House3/scripts.pory"
 	.string "{PLAYER}?\n {PLAYER}?\p {PLAYER}?\n PLEASE… WAKE UP…$"
 
-NewMoonIsland_House3_EventScript_Rattata_Text_0:
-# 60 "data/maps/NewMoonIsland_House3/scripts.pory"
-	.string "Huh?\n I'm not the RATTATA, {PLAYER}.\p You are.$"
+NewMoonIsland_House3_EventScript_Poobles_Text_0:
+# 64 "data/maps/NewMoonIsland_House3/scripts.pory"
+	.string "Poobs.$"
 
 NewMoonIsland_House3_EventScript_Aria_Text_0:
-# 76 "data/maps/NewMoonIsland_House3/scripts.pory"
+# 72 "data/maps/NewMoonIsland_House3/scripts.pory"
+	.string "ARGH! AAAAAARGH!\n AAAUUAUUAAAUGH!$"
+
+NewMoonIsland_House3_EventScript_Aria_Text_1:
+# 83 "data/maps/NewMoonIsland_House3/scripts.pory"
 	.string "MA-AH!$"
 
 NewMoonIsland_House3_Text_James::
-# 84 "data/maps/NewMoonIsland_House3/scripts.pory"
+# 91 "data/maps/NewMoonIsland_House3/scripts.pory"
 	.string "{PLAYER}?!\n What are you doing here?\p … … … …\p I see…\n So you were also pulled into the abyss…\p There's no saving us then…\p At least now I can tell you that the\n other me is a fake.$"
 
 NewMoonIsland_House3_Text_Momo::
-# 95 "data/maps/NewMoonIsland_House3/scripts.pory"
+# 102 "data/maps/NewMoonIsland_House3/scripts.pory"
 	.string "…\n …\l …\p BARK BARK RUGF RUGG FHHHHERGRGRGRRRR\n GRRRRRRRR\p AAAAAARAAAAAAAA AAAAA GRE\n RGRERRRRR GRRR\p HRHEHEHEGRGRGRGRGR\n GRGRGRGRGRGR\p HSISSSSS HISSSSSS BITE\n BITE SNARL SNARL\p sniff sniff\n GRRRRRRRRR…$"

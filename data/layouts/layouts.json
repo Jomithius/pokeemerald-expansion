@@ -5056,7 +5056,7 @@
       "name": "BeachsideCave_Layout",
       "width": 30,
       "height": 27,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BeachCave",
       "border_filepath": "data/layouts/BeachsideCave/border.bin",
       "blockdata_filepath": "data/layouts/BeachsideCave/map.bin"

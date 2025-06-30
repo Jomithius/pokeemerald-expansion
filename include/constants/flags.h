@@ -1309,8 +1309,8 @@
 #define FLAG_RECEIVED_GIMMIGHOUL_COINS_HOUSE_1                      0x4E7 // Darkrai Event
 #define FLAG_DEFEATED_GIMMIGHOUL                                    0x4E8 // Darkrai Event
 #define FLAG_RECEIVED_GIMMIGHOUL_COINS_HOUSE_2                      0x4E9 // Darkai Event
-#define FLAG_NEWMOON_ISLAND_HOUSE_2_RATDUARDO_TRIGGER               0x4EA // Darkrai Event
-#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
+#define FLAG_NEWMOON_ISLAND_HOUSE_2_TRAP_TRIGGER                    0x4EA // Darkrai Event
+#define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND                          0x4EB // Darkrai Event
 #define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
 #define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag

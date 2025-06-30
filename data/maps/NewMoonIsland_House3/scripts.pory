@@ -25,7 +25,7 @@ script NewMoonIsland_House3_EventScript_Misa{
 script NewMoonIsland_House3_EventScript_Gentleman{
     msgbox("{PLAYER}!\n
         LISTEN TO ME!\p
-        CLOSE THE GAME NOW!\n
+        CLOSE THE GAME! NOW!\n
         IT'S THE ONLY WAY TO ESCAPE! HURRY!", MSGBOX_NPC)
     end
 }
@@ -56,15 +56,22 @@ script NewMoonIsland_House3_EventScript_James{
     end
 }
 
-script NewMoonIsland_House3_EventScript_Rattata{
-    msgbox("Huh?\n
-        I'm not the RATTATA, {PLAYER}.\p
-        You are.", MSGBOX_NPC)
+script NewMoonIsland_House3_EventScript_Poobles{
+    lock
+    faceplayer
+    playmoncry(SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    msgbox("Poobs.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
     end
 }
 
 script NewMoonIsland_House3_EventScript_Aria{
     lock
+    msgbox("ARGH! AAAAAARGH!\n
+        AAAUUAUUAAAUGH!", MSGBOX_AUTOCLOSE)
+    waitmessage
     delay(16)
     playse(SE_PIN)
     applymovement(4, Common_Movement_ExclamationMark)

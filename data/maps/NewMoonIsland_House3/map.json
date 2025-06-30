@@ -41,11 +41,11 @@
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 15,
       "y": 6,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -67,7 +67,7 @@
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DIGLETT_ALOLA)",
       "x": 20,
       "y": 6,
       "elevation": 3,
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NewMoonIsland_House3_EventScript_Rattata",
+      "script": "NewMoonIsland_House3_EventScript_Poobles",
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {

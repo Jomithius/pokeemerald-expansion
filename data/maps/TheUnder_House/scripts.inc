@@ -5,7 +5,7 @@ TheUnder_House_MapScripts::
 
 TheUnder_House_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 2 "data/maps/TheUnder_House/scripts.pory"
-	map_script_2 VAR_RAT_CAVE_STATE, 10, TheUnder_House_PlayerAwakens
+	map_script_2 VAR_RAT_CAVE_STATE, 13, TheUnder_House_PlayerAwakens
 	.2byte 0
 
 
@@ -143,7 +143,7 @@ TheUnder_House_PlayerAwakens::
 # 79 "data/maps/TheUnder_House/scripts.pory"
 	waitmovement 1
 # 80 "data/maps/TheUnder_House/scripts.pory"
-	setvar VAR_RAT_CAVE_STATE, 11
+	setvar VAR_RAT_CAVE_STATE, 14
 # 81 "data/maps/TheUnder_House/scripts.pory"
 	releaseall
 	end
