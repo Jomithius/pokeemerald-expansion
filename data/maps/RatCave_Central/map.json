@@ -146,8 +146,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 52,
-      "y": 33,
+      "x": 42,
+      "y": 32,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -168,14 +168,14 @@
     },
     {
       "x": 12,
-      "y": 37,
+      "y": 34,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP1",
       "dest_warp_id": "1"
     },
     {
       "x": 51,
-      "y": 37,
+      "y": 34,
       "elevation": 0,
       "dest_map": "MAP_RAT_CAVE_LILYCOVE_HIGHWAY2",
       "dest_warp_id": "1"

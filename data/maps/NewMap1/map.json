@@ -19,7 +19,7 @@
   "warp_events": [
     {
       "x": 7,
-      "y": 77,
+      "y": 75,
       "elevation": 0,
       "dest_map": "MAP_RAT_CAVE_B2F",
       "dest_warp_id": "1"

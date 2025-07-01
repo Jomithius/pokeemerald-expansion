@@ -1277,7 +1277,7 @@
 #define FLAG_VIKAVOLT_TOTEM                                         0x4C7 // Route 120
 #define FLAG_KOMMO_O_TOTEM                                          0x4C8 // Victory Road
 #define FLAG_ARAQUANID_TOTEM                                        0x4C9 // Route 107
-#define FLAG_E4_FINAL_REMATCH                                       0x4CA // For postgame final rematch
+#define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
 #define FLAG_RECEIVED_FANTASIA                                      0x4CB // From Dave in Mt Pyre Summit
 #define FLAG_DEFEATED_EUGENIA                                       0x4CC // Lina Superboss
 #define FLAG_ELITE_FOUR_FINAL_BATTLE                                0x4CD // For Elite Four Rematches
@@ -1286,8 +1286,8 @@
 #define FLAG_HIDE_RATDUARDO_FULLMOON                                0x4D0 // Ratduardo Cutscene Fullmoon Island
 #define FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE                         0x4D1 // Cleared if player defeats Darkrai before reaching Fullmoon
 #define FLAG_DEFEATED_YVELTAL                                       0x4D2 // Azure Mountain
-#define FLAG_HIDE_ASAK_BALDESIA                                     0x4D3 // For first CS in Baldesia
-#define FLAG_HIDE_PANINI_BALDESIA                                   0x4D4 // For first CS in Baldesia
+#define FLAG_HIDE_NINJA_BALDESIA                                    0x4D3 // For after CS in Baldesia
+#define FLAG_HIDE_NINJA_BOY_6_BALDESIA                              0x4D4 // Baldesia Mini Game
 #define FLAG_HIDE_BENNIS_BALDESIA                                   0x4D5 // For first CS in Baldesia
 #define FLAG_HISUIAN_ZORUA                                          0x4D6 // For first CS in Baldesia
 #define FLAG_PECHARUNT_EASTERN_RUINS                                0x4D7 // Static Encounter
@@ -1311,10 +1311,10 @@
 #define FLAG_RECEIVED_GIMMIGHOUL_COINS_HOUSE_2                      0x4E9 // Darkai Event
 #define FLAG_NEWMOON_ISLAND_HOUSE_2_TRAP_TRIGGER                    0x4EA // Darkrai Event
 #define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND                          0x4EB // Darkrai Event
-#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
-#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
-#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+#define FLAG_HIDE_NINJA_BOY_1_BALDESIA                              0x4EC // Baldesia Mini Game
+#define FLAG_HIDE_NINJA_BOY_2_BALDESIA                              0x4ED // Baldesia Mini Game
+#define FLAG_HIDE_NINJA_BOY_3_BALDESIA                              0x4EE // Baldesia Mini Game
+#define FLAG_HIDE_NINJA_BOY_4_BALDESIA                              0x4EF // Baldesia Mini Game
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
@@ -1327,14 +1327,14 @@
 #define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
 
 #define FLAG_CALL_FROM_CEO                                          0x4F9 // After E4
-#define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
+#define FLAG_HIDE_NINJA_BOY_5_BALDESIA                              0x4FA // Baldesia Mini Game
 
 #define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4FB
 #define FLAG_DEFEATED_ELITE_4_PHOEBE                                0x4FC
 #define FLAG_DEFEATED_ELITE_4_GLACIA                                0x4FD
 #define FLAG_DEFEATED_ELITE_4_DRAKE                                 0x4FE
 
-#define FLAG_UNUSED_0x4FF                                           0x4FF // Unused Flag
+#define FLAG_HIDE_MOMO_BALDESIA                                     0x4FF // Baldesia Cutscene
 
 // Trainer Flags
 // Trainer flags occupy 0x500 - 0x85F, the last 9 of which are unused
@@ -1509,7 +1509,7 @@
 #define FLAG_SYS_DEFEATED_RED                       (SYSTEM_FLAGS + 0x85) // Defeated Red at Azure Mountain
 #define FLAG_SYS_BEFORE_ELITE_4_REMATCH             (SYSTEM_FLAGS + 0x86) // For postgame before rechalling E4
 #define FLAG_SYS_THE_UNDER_DIG                      (SYSTEM_FLAGS + 0x87) // Darkrai Event 2279
-#define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
+#define FLAG_E4_FINAL_REMATCH                       (SYSTEM_FLAGS + 0x88) // Final Rematches
 #define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag

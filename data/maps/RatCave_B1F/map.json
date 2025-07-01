@@ -82,14 +82,14 @@
   ],
   "warp_events": [
     {
-      "x": 3,
+      "x": 5,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_RAT_CAVE_2F",
       "dest_warp_id": "2"
     },
     {
-      "x": 26,
+      "x": 24,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_RAT_CAVE_B2F",

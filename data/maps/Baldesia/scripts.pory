@@ -1,1 +1,349 @@
-mapscripts Baldesia_MapScripts {}
+const LOCALID_MOMO = 22
+const LOCALID_BENNIS = 2
+const LOCALID_ASAK = 1
+const LOCALID_PANINI = 3
+const LOCALID_ZORUA = 4
+const LOCALID_NINJABOY1 = 7
+const LOCALID_NINJABOY2 = 19
+const LOCALID_NINJABOY3 = 17
+const LOCALID_NINJABOY4 = 18
+const LOCALID_NINJABOY5 = 16
+const LOCALID_NINJABOY6 = 20
+
+
+mapscripts Baldesia_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Baldesia_OnTransition
+}
+
+script Baldesia_OnTransition{
+    call_if_set(FLAG_HIDE_NINJA_BOY_1_BALDESIA, Baldesia_UpdateNinjaBoy1Location)
+    call_if_set(FLAG_HIDE_NINJA_BOY_2_BALDESIA, Baldesia_UpdateNinjaBoy2Location)
+    call_if_set(FLAG_HIDE_NINJA_BOY_3_BALDESIA, Baldesia_UpdateNinjaBoy3Location)
+    call_if_set(FLAG_HIDE_NINJA_BOY_4_BALDESIA, Baldesia_UpdateNinjaBoy4Location)
+    call_if_set(FLAG_HIDE_NINJA_BOY_5_BALDESIA, Baldesia_UpdateNinjaBoy5Location)
+    call_if_set(FLAG_HIDE_NINJA_BOY_6_BALDESIA, Baldesia_UpdateNinjaBoy6Location)
+    end
+}
+
+script Baldesia_UpdateNinjaBoy1Location{
+    setobjectxyperm(LOCALID_NINJABOY1, 21, 24)
+    setobjectmovementtype(LOCALID_NINJABOY1, MOVEMENT_TYPE_LOOK_AROUND)
+    return
+}
+
+script Baldesia_UpdateNinjaBoy2Location{
+    setobjectxyperm(LOCALID_NINJABOY2, 21, 23)
+    setobjectmovementtype(LOCALID_NINJABOY2, MOVEMENT_TYPE_LOOK_AROUND)
+    return
+}
+
+script Baldesia_UpdateNinjaBoy3Location{
+    setobjectxyperm(LOCALID_NINJABOY3, 23, 23)
+    setobjectmovementtype(LOCALID_NINJABOY3, MOVEMENT_TYPE_MOUNTAIN_DISGUISE)
+    return
+}
+
+script Baldesia_UpdateNinjaBoy4Location{
+    setobjectxyperm(LOCALID_NINJABOY4, 25, 27)
+    setobjectmovementtype(LOCALID_NINJABOY4, MOVEMENT_TYPE_WANDER_AROUND)
+    return
+}
+
+script Baldesia_UpdateNinjaBoy5Location{
+    setobjectxyperm(LOCALID_NINJABOY5, 21, 26)
+    setobjectmovementtype(LOCALID_NINJABOY5, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+    return
+}
+
+script Baldesia_UpdateNinjaBoy6Location{
+    setobjectxyperm(LOCALID_NINJABOY6, 23, 24)
+    return
+}
+
+script Baldesia_EventScript_OldManMiniGame{
+    lock
+    faceplayer
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 0 Baldesia_EventScript_StartMiniGame)
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 1 Baldesia_EventScript_RemindMiniGame)
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 2 Baldesia_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 3 Baldesia_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 4 Baldesia_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 5 Baldesia_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 6 Baldesia_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 7, Baldesia_EventScript_GiveLeadersCrest)
+    msgbox("That crest is demanding of respect\n
+        in our culture.\p
+        It proves you have the qualities to\n
+        become a powerful leader.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script Baldesia_EventScript_StartMiniGame{
+    lock
+    msgbox("Hm… I sense potential in you, young one.\n
+        How about a little challenge?\p
+        If you can find my 6 disciples that are\n
+        hidden around the village, I'll give\l
+        you a reward." MSGBOX_AUTOCLOSE)
+    waitmessage
+    setvar(VAR_BALDESIA_MINI_GAME_STATE, 1)
+    release
+    end
+}
+
+script Baldesia_EventScript_RemindMiniGame{
+    lock
+    msgbox("If you can find my 6 disciples that are\n
+        hidden outside around the village, I'll\l
+        give you a reward.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script Baldesia_EventScript_GiveResult{
+    buffernumberstring(STR_VAR_1, VAR_BALDESIA_NINJA_BOY_COUNTER)
+    msgbox("So far you've found {STR_VAR_1} out of\n
+        6 disciples.\p
+        Keep searching, young one.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script Baldesia_EventScript_GiveLeadersCrest{
+    lock
+    msgbox("Hm… So you were able to find all\n
+    of my disciples… Impressive.\p
+    As promised, here's your reward." MSGBOX_AUTOCLOSE)
+    waitmessage
+    checkitemspace(ITEM_LEADERS_CREST)
+    if(var(VAR_RESULT) == TRUE){
+        giveitem(ITEM_LEADERS_CREST)
+        waitmessage
+        msgbox("That crest is demanding of respect\n
+        in our culture.\p
+        It proves you have the qualities to\n
+        become a powerful leader.", MSGBOX_AUTOCLOSE)
+        setvar(VAR_BALDESIA_MINI_GAME_STATE, 8)
+    }
+    else{
+        msgbox("Hm… It seems you don't have enough room,\n
+        young one.", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    release
+    end
+}
+
+script Baldesia_EventScript_NinjaBoy1{
+    lock
+    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 0, Baldesia_EventScript_NinjaBoyHiding)
+    if(flag(FLAG_HIDE_NINJA_BOY_1_BALDESIA) == FALSE && var(VAR_BALDESIA_MINI_GAME_STATE) >= 1){
+        delay(16)
+        playse(SE_PIN)
+        applymovement(LOCALID_NINJABOY1, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        faceplayer
+        msgbox("Uh oh!\n 
+            You found me!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        playse(SE_FLEE)
+        removeobject(VAR_LAST_TALKED)
+        call(Baldesia_UpdateNinjaBoy1Location)
+        special(DrawWholeMapView)
+        waitse
+        fadescreen(FADE_FROM_BLACK)
+        addvar(VAR_BALDESIA_NINJA_BOY_COUNTER, 1)
+        addvar(VAR_BALDESIA_MINI_GAME_STATE, 1)
+        setflag(FLAG_HIDE_NINJA_BOY_1_BALDESIA)
+    }
+    else{
+        faceplayer
+        msgbox("Baldy, baldy, over there!\n
+        What's it like to have no hair?", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end
+}
+
+script Baldesia_EventScript_NinjaBoy2{
+    lock
+    if(flag(FLAG_HIDE_NINJA_BOY_2_BALDESIA) == FALSE && var(VAR_BALDESIA_MINI_GAME_STATE) >= 1){
+        delay(16)
+        playse(SE_PIN)
+        applymovement(LOCALID_NINJABOY2, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        faceplayer
+        msgbox("Uh oh!\n 
+            You found me!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+        playse(SE_FLEE)
+        call(Baldesia_UpdateNinjaBoy2Location)
+        special(DrawWholeMapView)
+        waitse
+        fadescreen(FADE_FROM_BLACK)
+        addvar(VAR_BALDESIA_NINJA_BOY_COUNTER, 1)
+        addvar(VAR_BALDESIA_MINI_GAME_STATE, 1)
+        setflag(FLAG_HIDE_NINJA_BOY_2_BALDESIA)
+    }
+    else{
+        faceplayer
+        msgbox("Is it hot, or is it cold?\n
+            I don't know cause I'm not bald!", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end
+}
+
+script Baldesia_EventScript_NinjaBoy3{
+    lock
+    call(EventScript_RevealTrainer)
+    if(flag(FLAG_HIDE_NINJA_BOY_3_BALDESIA) == FALSE && var(VAR_BALDESIA_MINI_GAME_STATE) >= 1){
+        delay(16)
+        playse(SE_PIN)
+        applymovement(LOCALID_NINJABOY3, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        faceplayer
+        msgbox("W-What?!\n 
+            My disguise was perfect!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+        playse(SE_FLEE)
+        call(Baldesia_UpdateNinjaBoy3Location)
+        special(DrawWholeMapView)
+        waitse
+        fadescreen(FADE_FROM_BLACK)
+        addvar(VAR_BALDESIA_NINJA_BOY_COUNTER, 1)
+        addvar(VAR_BALDESIA_MINI_GAME_STATE, 1)
+        setflag(FLAG_HIDE_NINJA_BOY_3_BALDESIA)
+    }
+    else{
+        faceplayer
+        msgbox("I'm practicing my disguises!", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end
+}
+
+script Baldesia_EventScript_NinjaBoy4{
+    lock
+    if(flag(FLAG_HIDE_NINJA_BOY_4_BALDESIA) == FALSE && var(VAR_BALDESIA_MINI_GAME_STATE) >= 1){
+        delay(16)
+        playse(SE_PIN)
+        applymovement(LOCALID_NINJABOY4, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        faceplayer
+        msgbox("Aw!\n 
+            You found me!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+        playse(SE_FLEE)
+        call(Baldesia_UpdateNinjaBoy4Location)
+        special(DrawWholeMapView)
+        waitse
+        fadescreen(FADE_FROM_BLACK)
+        addvar(VAR_BALDESIA_NINJA_BOY_COUNTER, 1)
+        addvar(VAR_BALDESIA_MINI_GAME_STATE, 1)
+        setflag(FLAG_HIDE_NINJA_BOY_4_BALDESIA)
+    }
+    else{
+        faceplayer
+        msgbox("I thought hiding in plain sight was\n
+            a good idea.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end
+}
+
+script Baldesia_EventScript_NinjaBoy5{
+    lock
+    if(flag(FLAG_HIDE_NINJA_BOY_5_BALDESIA) == FALSE && var(VAR_BALDESIA_MINI_GAME_STATE) >= 1){
+        delay(16)
+        playse(SE_PIN)
+        applymovement(LOCALID_NINJABOY5, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        faceplayer
+        msgbox("Dang!\n 
+            You found me!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+        playse(SE_FLEE)
+        call(Baldesia_UpdateNinjaBoy5Location)
+        special(DrawWholeMapView)
+        waitse
+        fadescreen(FADE_FROM_BLACK)
+        addvar(VAR_BALDESIA_NINJA_BOY_COUNTER, 1)
+        addvar(VAR_BALDESIA_MINI_GAME_STATE, 1)
+        setflag(FLAG_HIDE_NINJA_BOY_5_BALDESIA)
+    }
+    else{
+        faceplayer
+        msgbox("I'm training to be a great ninja\n
+        like MASTER BENNIS!\p
+        Believe it!", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    applymovement(LOCALID_NINJABOY5, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Baldesia_EventScript_NinjaBoy6{
+    lock
+    if(flag(FLAG_HIDE_NINJA_BOY_6_BALDESIA) == FALSE && var(VAR_BALDESIA_MINI_GAME_STATE) >= 1){
+        delay(16)
+        playse(SE_PIN)
+        applymovement(LOCALID_NINJABOY6, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        faceplayer
+        msgbox("…!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+        playse(SE_FLEE)
+        call(Baldesia_UpdateNinjaBoy6Location)
+        special(DrawWholeMapView)
+        waitse
+        fadescreen(FADE_FROM_BLACK)
+        addvar(VAR_BALDESIA_NINJA_BOY_COUNTER, 1)
+        addvar(VAR_BALDESIA_MINI_GAME_STATE, 1)
+        setflag(FLAG_HIDE_NINJA_BOY_6_BALDESIA)
+    }
+    else{
+        faceplayer
+        msgbox("…\n
+        …\l
+        …\p
+        … I wanna grow up to be bald like my\n
+        Auntie MOMO.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end
+}
+
+script Baldesia_EventScript_NinjaBoyHiding{
+    msgbox("I'm training right now!\n
+        SENSEI told us to hide!", MSGBOX_NPC)
+    end
+}

@@ -15,32 +15,32 @@
   "connections": [
     {
       "map": "MAP_ROUTE138_2",
-      "offset": -35,
+      "offset": -28,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE139",
-      "offset": 0,
+      "offset": 7,
       "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 27,
-      "y": 26,
+      "x": 32,
+      "y": 25,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_ASAK_BALDESIA"
+      "flag": "FLAG_HIDE_BENNIS_BALDESIA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BENNIS",
-      "x": 17,
+      "x": 24,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -53,7 +53,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 33,
+      "x": 40,
       "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -62,11 +62,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PANINI_BALDESIA"
+      "flag": "FLAG_HIDE_BENNIS_BALDESIA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "x": 18,
+      "x": 25,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA",
-      "x": 15,
-      "y": 18,
+      "x": 34,
+      "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -88,11 +88,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_NINJA_BALDESIA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KIMONO_OLDLADY",
-      "x": 41,
+      "x": 48,
       "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
@@ -105,7 +105,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 4,
+      "x": 11,
       "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -113,12 +113,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_EventScript_NinjaBoy1",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 27,
+      "x": 34,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -131,7 +131,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 23,
+      "x": 30,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -144,7 +144,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KIMONOLADY",
-      "x": 14,
+      "x": 43,
       "y": 26,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -157,7 +157,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 23,
+      "x": 30,
       "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -170,7 +170,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 27,
+      "x": 34,
       "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -183,20 +183,20 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_DOJO",
-      "x": 36,
-      "y": 27,
+      "x": 22,
+      "y": 24,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_EventScript_OldManMiniGame",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_DOJO",
-      "x": 26,
+      "x": 33,
       "y": 37,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -209,7 +209,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 37,
+      "x": 44,
       "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
@@ -222,20 +222,20 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 47,
-      "y": 26,
+      "x": 54,
+      "y": 27,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_EventScript_NinjaBoy5",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
-      "x": 32,
+      "x": 39,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
@@ -243,15 +243,54 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_EventScript_NinjaBoy3",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "x": 36,
+      "x": 45,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Baldesia_EventScript_NinjaBoy4",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "x": 21,
       "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Baldesia_EventScript_NinjaBoy2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "x": 12,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Baldesia_EventScript_NinjaBoy6",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SAWK)",
+      "x": 46,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -260,9 +299,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "x": 14,
-      "y": 16,
+      "graphics_id": "OBJ_EVENT_GFX_LIZA",
+      "x": 32,
+      "y": 37,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -270,27 +309,14 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MOMO_BALDESIA"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "x": 14,
-      "y": 22,
+      "graphics_id": "OBJ_EVENT_GFX_KIMONOLADY",
+      "x": 24,
+      "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SAWK)",
-      "x": 39,
-      "y": 28,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -301,42 +327,42 @@
   ],
   "warp_events": [
     {
-      "x": 23,
+      "x": 30,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_BALDESIA_MAIN_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 28,
+      "x": 35,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_BALDESIA_MAIN_HOUSE",
       "dest_warp_id": "2"
     },
     {
-      "x": 10,
+      "x": 17,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_BALDESIA_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
+      "x": 18,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_BALDESIA_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 40,
+      "x": 47,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_BALDESIA_HOUSE3",
       "dest_warp_id": "0"
     },
     {
-      "x": 42,
+      "x": 49,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_BALDESIA_HOUSE4",
@@ -346,7 +372,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 24,
+      "x": 31,
       "y": 11,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -355,7 +381,7 @@
     },
     {
       "type": "trigger",
-      "x": 25,
+      "x": 32,
       "y": 11,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -364,8 +390,35 @@
     },
     {
       "type": "trigger",
-      "x": 26,
+      "x": 33,
       "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 30,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

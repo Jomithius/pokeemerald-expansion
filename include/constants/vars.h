@@ -268,10 +268,10 @@
 #define VAR_SPEEDWAGON_STATE                             0x40F8 // 0-8 Mauville/Route 110, 8-9 Wachunpelon City, 9-10 Wachunpelon Sewer 1, 10-11 Wachunpelon Sewer 2
 #define VAR_LINA_TALKED_TO                               0x40F9 // If Lina will recognize you at E4, 0-1 Lavaridge, 1-2 Lilycove, 3 Elite Four
 #define VAR_NEWMOON_ISLAND_STATE                         0x40FA // For Darkrai Event, 0-1 TheUnderToCanyon Rattatas, 1-2 Bed in House, 2-4 nightmare event, 5
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
+#define VAR_BALDESIA_MINI_GAME_STATE                     0x40FB // For hide and seek minigame, 0-1 start game, 1-6 minigame, 7-8 give leaders crest
 #define VAR_CEO_STATE                                    0x40FC // For unlocking postgame area, 0-1 Lilycove Highrise, 1-2 Meeting with CEO
 #define VAR_ULTRA_SPACE_STATE                            0x40FD // 0-4 Ultra Space Event, 4-6 Area Zero, 7
-#define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
+#define VAR_BALDESIA_NINJA_BOY_COUNTER                   0x40FE // For hide and seek minigame
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
 #define VARS_END                                         0x40FF

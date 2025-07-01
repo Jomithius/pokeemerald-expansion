@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_BALDESIA",
-      "offset": 0,
+      "offset": -7,
       "direction": "down"
     }
   ],
