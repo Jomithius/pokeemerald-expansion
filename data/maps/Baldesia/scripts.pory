@@ -360,6 +360,76 @@ script Baldesia_EventScript_NinjaBoy6{
     end
 }
 
+script Baldesia_EventScript_LittleGirl{
+    msgbox("My mom said the ASAKURA family has\n
+        a gene that makes the women bald!\p
+        Hahaha!", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_EventScript_OldWoman{
+    msgbox("There's a DOJO in the woods renowned\n
+        for the strength of its members.\p
+        I heard the Sensei there is looking\n
+        for a successor.", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_EventScript_OldManBridge{
+    lock
+    faceplayer
+    msgbox("I helped dig this moat about\n
+        fifty years ago.\p
+        Time really flies.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    end
+}
+
+script Baldesia_EventScript_KimonoLady1{
+    msgbox("There's a new flavor of mochi that's\n
+        becoming super popular in the village.\p
+        The Chief and his wife seem to enjoy it\n
+        the most.", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_EventScript_KimonoLady2{
+    msgbox("I heard the Young Lady left the village\n
+        because she met somebody.\p
+        Oh, to be in love…", MSGBOX_NPC)
+    end
+} 
+
+script Baldesia_EventScript_Ninja{
+    msgbox("This land has been home to\n
+        ninjas for many generations.", MSGBOX_NPC)
+    end
+} 
+
+script Baldesia_EventScript_EntranceGuard{
+    lock
+    faceplayer
+    msgbox("Don't get into any trouble.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+} 
+
+script Baldesia_EventScript_Sawk{
+    lock
+    faceplayer
+    playmoncry(SPECIES_SAWK, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
 script Baldesia_Entrance_TriggerLeft{
     lockall
     setvar(VAR_TEMP_B, 1)
@@ -741,7 +811,7 @@ script Baldesia_EventScript_YouNeedPermission{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
     msgbox("Sorry, you need permission from the\n
-        village chief to travel to the altar.", MSGBOX_AUTOCLOSE)
+        Village Chief to travel to the altar.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
     waitmovement(0)
@@ -764,24 +834,26 @@ text Baldesia_Text_Bennis2{
 
 text Baldesia_Text_Bennis3{
     "ASAK: L-LADY ASAKURA?\p
-    MASTER BENNIS: Madam.\n
+    MASTER BENNIS: Young Lady.\n
     Your scalp is as shiny as ever.\p
-    MOMO: … … … … I'm back."
+    MOMO: … … … …\n
+    I'm back."
 }
 
 text Baldesia_Text_Bennis4{
     "MASTER BENNIS: {PLAYER}? Hm.\p
     ASAK: Huh… I just realized we never knew\n
     your name.\l
-    So you also know LADY ASAKURA…"
+    And you also know LADY ASAKURA…\l
+    I'm surprised."
 }
 
 text Baldesia_Text_Bennis5{
     "MASTER BENNIS: We were searching all\n
     over HOENN for you.\l
     Where have you been?\p
-    MOMO: … I came back in time for the\n
-    ritual.\l
+    MOMO: … I made it back in time for the\n
+    ritual. I think.\l
     I need to go see brother now."}
 
 movement Baldesa_Movement_BlockTrainerLeftGuard{

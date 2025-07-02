@@ -1,1 +1,28 @@
 mapscripts Baldesia_House2_MapScripts {}
+
+script Baldesia_House2_EventScript_OldWoman{
+    msgbox("Every time JIRACHI is going to awaken,\n
+        the Young Lady of the ASAKURA\l
+        household is required to make the\l
+        pilgrimage to the altar to perform a\l
+        very sacred ritual.", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_House2_EventScript_OldMan{
+    msgbox("It's said every 1000 years JIRACHI\n
+    awakens to grant one wish.\p
+    It's going to awaken again soon.", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_House2_EventScript_Blissey{
+    lock
+    faceplayer
+    playmoncry(SPECIES_BLISSEY, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}

@@ -1,1 +1,30 @@
 mapscripts Baldesia_House3_MapScripts {}
+
+script Baldesia_House3_EventScript_BlackBelt{
+    msgbox("I trained at BRUNO's dojo for about\n
+        two years.\p
+        The regimen was brutal, but it made me\n
+        much stronger!", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_House3_EventScript_Girl{
+    msgbox("Soon I'm going to go train at\n
+        BRUNO's dojo.\p
+        I'm nervous!", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_House3_EventScript_KimonoLady{
+    msgbox("I heard that JIRACHI is going to\n
+        awaken soon.\p
+        If only I was a CHANNELER so I could\n
+        enter the holy grounds.", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_House3_EventScript_LittleGirl{
+    msgbox("I wanna grow up and train in\n
+        martial arts too!", MSGBOX_NPC)
+    end
+}
