@@ -13,6 +13,7 @@ const LOCALID_NINJABOY6 = 20
 
 mapscripts Baldesia_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Baldesia_OnTransition
+    MAP_SCRIPT_ON_RESUME: Baldesia_OnResume
 }
 
 script Baldesia_OnTransition{
@@ -23,6 +24,16 @@ script Baldesia_OnTransition{
     call_if_set(FLAG_HIDE_NINJA_BOY_5_BALDESIA, Baldesia_UpdateNinjaBoy5Location)
     call_if_set(FLAG_HIDE_NINJA_BOY_6_BALDESIA, Baldesia_UpdateNinjaBoy6Location)
     end
+}
+
+script Baldesia_OnResume{
+    call_if_set(FLAG_HISUIAN_ZORUA, Baldesia_RemoveHisuianZorua)
+    end
+}
+
+script Baldesia_RemoveHisuianZorua{
+    removeobject(24)
+    return
 }
 
 script Baldesia_UpdateNinjaBoy1Location{
@@ -88,6 +99,7 @@ script Baldesia_EventScript_StartMiniGame{
         hidden around the village, I'll give\l
         you a reward." MSGBOX_AUTOCLOSE)
     waitmessage
+    clearflag(FLAG_BALDESIA_MINI_GAME_START)
     setvar(VAR_BALDESIA_MINI_GAME_STATE, 1)
     release
     end
@@ -140,7 +152,6 @@ script Baldesia_EventScript_GiveLeadersCrest{
 
 script Baldesia_EventScript_NinjaBoy1{
     lock
-    goto_if_eq(VAR_BALDESIA_MINI_GAME_STATE, 0, Baldesia_EventScript_NinjaBoyHiding)
     if(flag(FLAG_HIDE_NINJA_BOY_1_BALDESIA) == FALSE && var(VAR_BALDESIA_MINI_GAME_STATE) >= 1){
         delay(16)
         playse(SE_PIN)
@@ -154,6 +165,7 @@ script Baldesia_EventScript_NinjaBoy1{
         fadescreen(FADE_TO_BLACK)
         playse(SE_FLEE)
         removeobject(VAR_LAST_TALKED)
+        clearflag(FLAG_BALDESIA_MINI_GAME_START)
         call(Baldesia_UpdateNinjaBoy1Location)
         special(DrawWholeMapView)
         waitse
@@ -186,6 +198,7 @@ script Baldesia_EventScript_NinjaBoy2{
         waitmessage
         fadescreen(FADE_TO_BLACK)
         removeobject(VAR_LAST_TALKED)
+        clearflag(FLAG_BALDESIA_MINI_GAME_START)
         playse(SE_FLEE)
         call(Baldesia_UpdateNinjaBoy2Location)
         special(DrawWholeMapView)
@@ -198,7 +211,7 @@ script Baldesia_EventScript_NinjaBoy2{
     else{
         faceplayer
         msgbox("Is it hot, or is it cold?\n
-            I don't know cause I'm not bald!", MSGBOX_AUTOCLOSE)
+            I don't know, 'cause I'm not bald!", MSGBOX_AUTOCLOSE)
         waitmessage
     }
     release
@@ -220,6 +233,7 @@ script Baldesia_EventScript_NinjaBoy3{
         waitmessage
         fadescreen(FADE_TO_BLACK)
         removeobject(VAR_LAST_TALKED)
+        clearflag(FLAG_BALDESIA_MINI_GAME_START)
         playse(SE_FLEE)
         call(Baldesia_UpdateNinjaBoy3Location)
         special(DrawWholeMapView)
@@ -252,6 +266,7 @@ script Baldesia_EventScript_NinjaBoy4{
         waitmessage
         fadescreen(FADE_TO_BLACK)
         removeobject(VAR_LAST_TALKED)
+        clearflag(FLAG_BALDESIA_MINI_GAME_START)
         playse(SE_FLEE)
         call(Baldesia_UpdateNinjaBoy4Location)
         special(DrawWholeMapView)
@@ -285,6 +300,7 @@ script Baldesia_EventScript_NinjaBoy5{
         waitmessage
         fadescreen(FADE_TO_BLACK)
         removeobject(VAR_LAST_TALKED)
+        clearflag(FLAG_BALDESIA_MINI_GAME_START)
         playse(SE_FLEE)
         call(Baldesia_UpdateNinjaBoy5Location)
         special(DrawWholeMapView)
@@ -298,7 +314,8 @@ script Baldesia_EventScript_NinjaBoy5{
         faceplayer
         msgbox("I'm training to be a great ninja\n
         like MASTER BENNIS!\p
-        Believe it!", MSGBOX_AUTOCLOSE)
+        It's not fair that only PANINI gets to\n
+        be his disciple!", MSGBOX_AUTOCLOSE)
         waitmessage
     }
     applymovement(LOCALID_NINJABOY5, Common_Movement_FaceOriginalDirection)
@@ -320,6 +337,7 @@ script Baldesia_EventScript_NinjaBoy6{
         waitmessage
         fadescreen(FADE_TO_BLACK)
         removeobject(VAR_LAST_TALKED)
+        clearflag(FLAG_BALDESIA_MINI_GAME_START)
         playse(SE_FLEE)
         call(Baldesia_UpdateNinjaBoy6Location)
         special(DrawWholeMapView)
@@ -342,8 +360,562 @@ script Baldesia_EventScript_NinjaBoy6{
     end
 }
 
-script Baldesia_EventScript_NinjaBoyHiding{
-    msgbox("I'm training right now!\n
-        SENSEI told us to hide!", MSGBOX_NPC)
+script Baldesia_Entrance_TriggerLeft{
+    lockall
+    setvar(VAR_TEMP_B, 1)
+    goto(Baldesia_EventScript_HisuianZoruaTrigger)
     end
+}
+
+script Baldesia_Entrance_TriggerRight{
+    lockall
+    setvar(VAR_TEMP_B, 2)
+    goto(Baldesia_EventScript_HisuianZoruaTrigger)
+    end
+}
+
+script Baldesia_EventScript_HisuianZoruaTrigger{
+    lockall
+    playse(SE_PIN)
+    applymovement(11, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(12, Common_Movement_ExclamationMark)
+    waitmovement(12)
+    waitse
+    applymovement(11, Baldesa_Movement_BlockTrainerLeftGuard)
+    delay(16)
+    applymovement(12, Baldesa_Movement_BlockTrainerRightGuard)
+    waitmovement(12)
+    delay(10)
+    msgbox("Halt!\n
+        I've never seen you before.\p
+        I'm sorry, but we can't just let\n
+        you enter.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    clearflag(FLAG_HIDE_BENNIS_BALDESIA)
+    addobject(LOCALID_ASAK)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkDown4)
+    waitmovement(LOCALID_ASAK)
+    playse(SE_PIN)
+    applymovement(LOCALID_ASAK, Common_Movement_ExclamationMark)
+    waitmovement(LOCALID_ASAK)
+    waitse
+    msgbox("ASAK: Huh?!\n
+        What are YOU doing here?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(11, Common_Movement_WalkInPlaceUp)
+    applymovement(12, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("ASAK, you know this person?\p
+        ASAK: … Yes.\n
+        They're a… friend… of MASTER BENNIS.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(11, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(12, Common_Movement_ExclamationMark)
+    waitmovement(12)
+    msgbox("I see! My deepest apologies.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(11, Common_Movement_WalkInPlaceDown)
+    applymovement(12, Common_Movement_WalkInPlaceDown)
+    waitmovement(11)
+    msgbox("We will allow you entry out of respect\n
+        for MASTER BENNIS.\p
+        But if you cause any trouble, you'll be\n
+        dealt with accordingly.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(11, Common_Movement_WalkLeft)
+    delay(8)
+    applymovement(12, Common_Movement_WalkRight)
+    waitmovement(12)
+    applymovement(11, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(12, Common_Movement_WalkInPlaceDown)
+    waitmovement(12)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkUp6)
+    delay(8)
+    if(var(VAR_TEMP_B) == 1){
+        applymovement(OBJ_EVENT_ID_PLAYER, Baldesia_Movement_PlayerEntersBaldesiaLeftTrigger)
+    }
+    elif(var(VAR_TEMP_B) == 2){
+        applymovement(OBJ_EVENT_ID_PLAYER, Baldesia_Movement_PlayerEntersBaldesiaRightTrigger)
+    }
+    else{
+        applymovement(OBJ_EVENT_ID_PLAYER, Baldesia_Movement_PlayerEntersBaldesia)
+    }
+    waitmovement(0)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceDown)
+    waitmovement(LOCALID_ASAK)
+    msgbox("ASAK: You're lucky that MASTER BENNIS\n
+        has acknowledged your strength.\p
+        If it was up to me, I'd-", MSGBOX_AUTOCLOSE)
+    waitmessage
+    addobject(LOCALID_BENNIS)
+    addobject(LOCALID_ZORUA)
+    playse(SE_PIN)
+    applymovement(LOCALID_ASAK, Common_Movement_ExclamationMark)
+    waitmovement(LOCALID_ASAK)
+    waitse
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    fadenewbgm(MUS_BENNIS_DOJO)
+    savebgm(MUS_BENNIS_DOJO)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkRight7)
+    delay(16)
+    applymovement(LOCALID_ZORUA, Common_Movement_WalkRight7)
+    waitmovement(0)
+    msgbox(Baldesia_Text_Bennis1, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("ASAK: Yes. I caught them trying to enter\n
+        the village.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("…By the way, who is that next\n
+        to you?\p
+        MASTER BENNIS: Hm? It's PANINI.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("Right, PANINI?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ZORUA, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    playse(SE_BIKE_HOP)
+    applymovement(LOCALID_ZORUA, Common_Movement_QuestionMark)
+    waitmovement(0)
+    waitse
+    msgbox("PANINI?: Paneenee?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceRight)
+    delay(16)
+    applymovement(LOCALID_ZORUA, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: See?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ASAK, Baldesia_Movement_AsakInspectZorua1)
+    waitmovement(0)
+    delay(16)
+    applymovement(LOCALID_ASAK, Baldesia_Movement_AsakInspectZorua2)
+    delay(8)
+    applymovement(LOCALID_ZORUA, Common_Movement_FaceDown)
+    waitmovement(LOCALID_ASAK)
+    delay(16)
+    applymovement(LOCALID_ASAK, Baldesia_Movement_AsakInspectZorua3)
+    delay(8)
+    applymovement(LOCALID_ZORUA, Common_Movement_FaceLeft)
+    waitmovement(LOCALID_ASAK)
+    delay(16)
+    applymovement(LOCALID_ASAK, Baldesia_Movement_AsakWalkToBennis)
+    delay(8)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
+    delay(8)
+    applymovement(LOCALID_ZORUA, Common_Movement_WalkInPlaceUp)
+    waitmovement(LOCALID_ZORUA)
+    msgbox("ASAK: Sir, I'm not sure if that's PANINI…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    addobject(LOCALID_PANINI)
+    applymovement(LOCALID_PANINI, Common_Movement_WalkRight7)
+    waitmovement(0)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
+    applymovement(LOCALID_ZORUA, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    applymovement(LOCALID_ASAK, Common_Movement_ExclamationMark)
+    applymovement(LOCALID_BENNIS, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    playbgm(MUS_NONE, FALSE)
+    delay(30)
+    playse(SE_BIKE_HOP)
+    applymovement(LOCALID_ZORUA, Common_Movement_QuestionMark)
+    delay(6)
+    applymovement(LOCALID_PANINI, Common_Movement_QuestionMark)
+    waitmovement(0)
+    waitse
+    msgbox("PANINI: Panini?\n
+        PANINI?: Paneenee?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_SUDOWOODO_SHAKE)
+    applymovement(LOCALID_PANINI, Baldesia_Movement_PaniniMirror)
+    applymovement(LOCALID_ZORUA, Baldesia_Movement_PaniniMirror)
+    waitmovement(0)
+    msgbox("PANINI: Panini!\n
+        PANINI?: Paneenee!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_RG_HELP_OPEN)
+    applymovement(LOCALID_PANINI, Baldesia_Movement_PaniniMirror2)
+    applymovement(LOCALID_ZORUA, Baldesia_Movement_PaniniMirror2Reverse)
+    waitmovement(0)
+    delay(20)
+    playse(SE_RG_HELP_CLOSE)
+    applymovement(LOCALID_PANINI, Baldesia_Movement_PaniniMirror4)
+    applymovement(LOCALID_ZORUA, Baldesia_Movement_PaniniMirror4Reverse)
+    waitmovement(0)
+    delay(60)
+    playse(SE_BIKE_HOP)
+    applymovement(LOCALID_PANINI, Baldesia_Movement_PaniniMirror3)
+    applymovement(LOCALID_ZORUA, Baldesia_Movement_PaniniMirror3Reverse)
+    waitmovement(0)
+    msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_PANINI, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    playse(SE_EFFECTIVE)
+    fadescreen(FADE_TO_WHITE)
+    removeobject(LOCALID_ZORUA)
+    addobject(24)
+    waitse
+    fadescreen(FADE_FROM_WHITE)
+    delay(60)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    applymovement(LOCALID_ASAK, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(LOCALID_BENNIS, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(LOCALID_PANINI, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    delay(30)
+    applymovement(24, Common_Movement_WalkInPlaceRight)
+    waitmovement(24)
+    playmoncry(SPECIES_ZORUA_HISUI, CRY_MODE_ENCOUNTER)
+    msgbox("ZORUA: Paneenee!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(24, Common_Movement_WalkRight)
+    waitmovement(24)
+    setwildbattle(SPECIES_ZORUA_HISUI, 50)
+    dowildbattle
+    applymovement(LOCALID_PANINI, Baldesia_Movement_PaniniFaceBennis)
+    waitmovement(0)
+    msgbox("PANINI: Panini?! Panini panini?!\n
+        Panini!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_PANINI, Baldesia_Movement_WalkFastLeft7)
+    delay(24)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
+    waitmovement(LOCALID_PANINI)
+    msgbox(Baldesia_Text_Bennis2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    msgbox("ASAK: N-No, sir! W-Well, not in\n
+    your overworld sprite, at least…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_NONE, FALSE)
+    playse(SE_SHINY)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    waitse
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceFasterDown)
+    delay(4)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceFasterDown)
+    delay(4)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+    msgbox("ASAK: Ah! My eyes! Now what?!\n
+        What was that flash?!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_SHINY)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    waitse
+    playse(SE_M_PETAL_DANCE)
+    fadescreenspeed(FADE_TO_WHITE, 4)
+    fadescreenspeed(FADE_FROM_WHITE, 3)
+    waitse
+    addobject(LOCALID_MOMO)
+    applymovement(LOCALID_MOMO, Baldesia_Movement_MomoEnters)
+    waitmovement(LOCALID_MOMO)
+    playse(SE_PIN)
+    applymovement(LOCALID_ASAK, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(LOCALID_BENNIS, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    waitse
+    fadedefaultbgm
+    msgbox(Baldesia_Text_Bennis3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    msgbox("… Hi, {PLAYER}.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceRight)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    msgbox(Baldesia_Text_Bennis4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox(Baldesia_Text_Bennis5, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_MOMO, Baldesia_Movement_MomoGoesToMainHouse)
+    delay(30)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceUp)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceUp)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(LOCALID_MOMO)
+    playse(SE_DOOR)
+    removeobject(LOCALID_MOMO)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceRight)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: I'm going too.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkUp5)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceUp)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(LOCALID_BENNIS)
+    playse(SE_DOOR)
+    waitse
+    applymovement(LOCALID_ASAK, Baldesia_Movement_AsakApproachesPlayer)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(LOCALID_ASAK)
+    msgbox("ASAK: Sorry, {PLAYER}.\n
+        Could I ask you to go get PANINI and\l
+        then come to the MAIN HOUSE?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("MASTER BENNIS! Wait for me!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ASAK, Baldesia_Movement_AsakGoesToMainHouse)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(LOCALID_ASAK)
+    playse(SE_DOOR)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkUp)
+    waitmovement(0)
+    waitse
+    removeobject(LOCALID_ASAK)
+    removeobject(LOCALID_BENNIS)
+    removeobject(LOCALID_PANINI)
+    setvar(VAR_MOMO_ARIA_STATE, 2)
+    releaseall
+    end
+}
+
+script Baldesia_EventScript_INeedToGoGetPanini{
+    lockall
+    msgbox("I need to go get PANINI first.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script Baldesia_EventScript_YouNeedPermission{
+    lockall
+    playse(SE_PIN)
+    applymovement(9, Common_Movement_ExclamationMark)
+    waitmovement(9)
+    waitse
+    applymovement(9, Common_Movement_WalkInPlaceRight)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("Sorry, you need permission from the\n
+        village chief to travel to the altar.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(9, Common_Movement_FaceOriginalDirection)
+    waitmovement(9)
+    releaseall
+    end
+}
+
+text Baldesia_Text_Bennis1{
+    "ASAK: MASTER BENNIS!\p
+    MASTER BENNIS: ASAK. Oho? And… you're\n
+    here too, I see."
+}
+
+text Baldesia_Text_Bennis2{
+    "MASTER BENNIS: Oh, beef.\n
+    Do I really have a weird shaped butt?"
+}
+
+text Baldesia_Text_Bennis3{
+    "ASAK: L-LADY ASAKURA?\p
+    MASTER BENNIS: Madam.\n
+    Your scalp is as shiny as ever.\p
+    MOMO: … … … … I'm back."
+}
+
+text Baldesia_Text_Bennis4{
+    "MASTER BENNIS: {PLAYER}? Hm.\p
+    ASAK: Huh… I just realized we never knew\n
+    your name.\l
+    So you also know LADY ASAKURA…"
+}
+
+text Baldesia_Text_Bennis5{
+    "MASTER BENNIS: We were searching all\n
+    over HOENN for you.\l
+    Where have you been?\p
+    MOMO: … I came back in time for the\n
+    ritual.\l
+    I need to go see brother now."}
+
+movement Baldesa_Movement_BlockTrainerLeftGuard{
+    walk_fast_right
+    walk_in_place_fast_down
+}
+
+movement Baldesa_Movement_BlockTrainerRightGuard{
+    walk_fast_left
+    walk_in_place_fast_down
+}
+
+movement Baldesia_Movement_PlayerEntersBaldesia{
+    walk_up * 7
+}
+
+movement Baldesia_Movement_PlayerEntersBaldesiaLeftTrigger{
+    walk_right
+    walk_up * 7
+}
+
+movement Baldesia_Movement_PlayerEntersBaldesiaRightTrigger{
+    walk_left
+    walk_up * 7
+}
+
+movement Baldesia_Movement_AsakInspectZorua1{
+    walk_fast_left
+    walk_fast_down
+    walk_in_place_fast_left
+}
+
+movement Baldesia_Movement_AsakInspectZorua2{
+    walk_fast_down
+    walk_fast_left
+    walk_in_place_fast_up
+}
+
+movement Baldesia_Movement_AsakInspectZorua3{
+    walk_fast_left
+    walk_fast_up
+    walk_in_place_fast_right
+}
+
+movement Baldesia_Movement_AsakWalkToBennis{
+    walk_fast_up
+    walk_in_place_fast_right
+}
+
+movement Baldesia_Movement_PaniniMirror{
+    lock_facing_direction
+    walk_fast_down * 2
+    delay_16
+    walk_fast_up * 2
+    delay_16
+    unlock_facing_direction
+}
+
+movement Baldesia_Movement_PaniniMirror2{
+    walk_in_place_down
+    delay_4
+    walk_in_place_left
+    delay_4
+    walk_in_place_up
+    delay_4
+    walk_in_place_right
+}
+
+movement Baldesia_Movement_PaniniMirror4Reverse{
+    walk_in_place_up
+    delay_4
+    walk_in_place_right
+    delay_4
+    walk_in_place_down
+    delay_4
+    walk_in_place_left
+}
+
+movement Baldesia_Movement_PaniniMirror3{
+    jump_in_place_left_right
+}
+
+movement Baldesia_Movement_PaniniMirror3Reverse{
+    jump_in_place_right_left
+}
+
+movement Baldesia_Movement_PaniniMirror4{
+    walk_in_place_up
+    delay_4
+    walk_in_place_left
+    delay_4
+    walk_in_place_down
+    delay_4
+    walk_in_place_right
+}
+
+movement Baldesia_Movement_PaniniMirror2Reverse{
+    walk_in_place_down
+    delay_4
+    walk_in_place_right
+    delay_4
+    walk_in_place_up
+    delay_4
+    walk_in_place_left
+}
+
+movement Baldesia_Movement_PaniniFaceBennis{
+    walk_right
+    walk_in_place_up
+}
+
+movement Baldesia_Movement_WalkFastLeft7{
+    walk_fast_left * 7
+}
+
+movement Baldesia_Movement_MomoEnters{
+    walk_up * 4
+    walk_left
+    walk_up * 2
+}
+
+movement Baldesia_Movement_MomoGoesToMainHouse{
+    walk_right
+    walk_up * 3
+    walk_left
+    walk_up * 3
+}
+
+movement Baldesia_Movement_AsakGoesToMainHouse{
+    walk_fast_left
+    walk_fast_up * 7
+}
+
+movement Baldesia_Movement_AsakApproachesPlayer{
+    walk_fast_down
+    walk_fast_right * 2
 }
