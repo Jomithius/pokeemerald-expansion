@@ -67,4 +67,4 @@ Baldesia_House4_EventScript_NinjaBoy_Text_0:
 
 Baldesia_House4_EventScript_KimonoLady_Text_0:
 # 35 "data/maps/Baldesia_House4/scripts.pory"
-	.string "Before she left, LADY ASAKURA\n used to mentor all the children in\l the village.$"
+	.string "Before she left, Lady ASAKURA\n used to mentor all the children in\l the village.$"

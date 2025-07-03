@@ -1,10 +1,298 @@
+const LOCALID_BRO = 1
+const LOCALID_WIFE = 2 
+const LOCALID_MOMO = 3
+const LOCALID_BENNIS = 4
+const LOCALID_ASAK = 5
+const LOCALID_PANINI = 6
+const LOCALID_ARIA = 7
+  
 mapscripts Baldesia_MainHouse_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Baldesia_MainHouse_OnTransition
     MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_MOMO_ARIA_STATE, 3: Baldesia_MainHouse_EventScript_GoToChief
+        VAR_MOMO_ARIA_STATE, 4: Baldesia_MainHouse_EventScript_GoToAltar
+    ]
 }
 
 script Baldesia_MainHouse_OnTransition{
     setrespawn(HEAL_LOCATION_BALDESIA)
+    setflag(FLAG_TEMP_E)
+    call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateAriaPos)
+    end
+}
+
+script Baldesia_MainHouse_UpdateAriaPos{
+    setobjectxyperm(LOCALID_ARIA, 19, 9)
+    setobjectmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+    return
+}
+
+script Baldesia_MainHouse_EventScript_GoToChief{
+    lockall
+    checkobjectat(5, 20)
+    if(var(VAR_RESULT) == TRUE){
+        fadescreen(FADE_TO_BLACK)
+        playse(SE_M_DOUBLE_TEAM)
+        addobject(19)
+        addobject(20)
+        addobject(21)
+        fadescreen(FADE_FROM_BLACK)
+        waitse
+        playse(SE_PIN)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        msgbox("We've been expecting you.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_REMOVE_WARP_FADE)
+        fadescreen(FADE_TO_BLACK)
+        removeobject(19)
+        removeobject(20)
+        removeobject(21)
+        playse(SE_M_DOUBLE_TEAM)
+        setvar(VAR_MOMO_ARIA_STATE, 4)
+        warpsilent(MAP_BALDESIA_MAIN_HOUSE, 13, 7)
+    }
+    else{
+        fadescreen(FADE_TO_BLACK)
+        playse(SE_M_DOUBLE_TEAM)
+        addobject(22)
+        addobject(23)
+        addobject(24)
+        fadescreen(FADE_FROM_BLACK)
+        waitse
+        playse(SE_PIN)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        msgbox("We've been expecting you.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_REMOVE_WARP_FADE)
+        fadescreen(FADE_TO_BLACK)
+        removeobject(22)
+        removeobject(23)
+        removeobject(24)
+        playse(SE_M_DOUBLE_TEAM)
+        setvar(VAR_MOMO_ARIA_STATE, 4)
+        warpsilent(MAP_BALDESIA_MAIN_HOUSE, 13, 7)
+    }
+    waitstate
+    end
+}
+
+script Baldesia_MainHouse_EventScript_GoToAltar{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_LookAround)
+    waitmovement(0)
+    fadenewbgm(MUS_B_ARENA)
+    msgbox("???: So you're {PLAYER}.\n
+        MOMO told me you were coming.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox(Baldesia_MainHouse_TextLohan, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(LOCALID_BENNIS, Common_Movement_ExclamationMark)
+    delay(6)
+    applymovement(LOCALID_ASAK, Common_Movement_ExclamationMark)
+    applymovement(LOCALID_MOMO, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(LOCALID_PANINI, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    applymovement(LOCALID_ASAK, Baldesia_MainHouse_Movement_AsakGoesToChief)
+    waitmovement(0)
+    msgbox(Baldesia_MainHouse_TextAsak, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ASAK, Baldesia_MainHouse_Movement_AsakGoesBack)
+    waitmovement(0)
+    msgbox(Baldesia_MainHouse_TextAsak2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_NONE, FALSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceDown)
+    delay(6)
+    applymovement(LOCALID_PANINI, Common_Movement_WalkInPlaceDown)
+    delay(6)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
+    applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_AriaEnter)
+    waitmovement(0)
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_M_DOUBLE_TEAM)
+    addobject(25)
+    fadescreen(FADE_FROM_BLACK)
+    waitse
+    playse(SE_PIN)
+    applymovement(LOCALID_ARIA, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    playse(SE_M_YAWN)
+    applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_WalkBackDown)
+    waitmovement(0)
+    waitse
+    delay(30)
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_M_DOUBLE_TEAM)
+    addobject(26)
+    clearflag(FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE)
+    fadescreen(FADE_FROM_BLACK)
+    waitse
+    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(LOCALID_ARIA)
+    delay(20)
+    playse(SE_PIN)
+    applymovement(LOCALID_ARIA, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    playse(SE_M_YAWN)
+    applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_WalkBackUp)
+    waitmovement(LOCALID_ARIA)
+    delay(30)
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_M_DOUBLE_TEAM)
+    addobject(27)
+    addobject(28)
+    fadescreen(FADE_FROM_BLACK)
+    waitse
+    applymovement(26, Common_Movement_WalkUp)
+    waitmovement(26)
+    delay(30)
+    applymovement(LOCALID_ARIA, Common_Movement_LookAround)
+    waitmovement(LOCALID_ARIA)
+    msgbox("ARIA: AAAARGGHH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_AriaCharges)
+    applymovement(25, Baldesia_MainHouse_Movement_WalkBackRight)
+    playse(SE_NOT_EFFECTIVE)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
+    delay(6)
+    applymovement(LOCALID_PANINI, Common_Movement_WalkInPlaceRight)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    waitse
+    msgbox("MOMO: … What are you doing here?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceUp)
+    delay(6)
+    waitmovement(0)
+    msgbox("LOHAN: You know this fool? Very well.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("I'll allow it.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadenewbgm(MUS_B_ARENA)
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_FLEE)
+    removeobject(25)
+    removeobject(26)
+    removeobject(27)
+    removeobject(28)
+    fadescreen(FADE_FROM_BLACK)
+    waitse
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("ARIA: That scared me!\p
+        MOMO! Why didn't you tell me where you\n
+        were going?!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceUp)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("MOMO: … It's like you didn't see the\n
+        note I left you.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
+    delay(6)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("ARIA: All the note said was “ritual”!\n
+        How am I supposed to know what that \l
+        means?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    delay(8)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceUp)
+    delay(6)
+    playse(SE_BIKE_HOP)
+    applymovement(LOCALID_PANINI, Common_Movement_QuestionMark)
+    delay(8)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox(Baldesia_MainHouse_TextLohan2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ARIA, Common_Movement_WalkUp)
+    waitmovement(0)
+    msgbox("ARIA: I heard everything. I'm MOMO's\n
+        KNIGHT. I swore to protect her.\l
+        Please, let me go with!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_CONTEST_HEART)
+    applymovement(LOCALID_MOMO, ContestHall_Movement_Heart)
+    waitmovement(0)
+    waitse
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    delay(30)
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    delay(60)
+    msgbox(Baldesia_MainHouse_TextLohan3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("MOMO: ……… Brother.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    msgbox("LOHAN: I won't discuss it any further.\n
+        You're lucky I've even allowed this\l
+        KNIGHT to show such disrespect.\p
+        MOMO: ………", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceDown)
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox(Baldesia_MainHouse_TextLohan4, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceRight)
+    applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("You should go on ahead, since you're\n
+        able to get to the altar quickly.\p
+        MOMO: ………………", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_M_PETAL_DANCE)
+    fadescreenspeed(FADE_TO_WHITE, 4)
+    removeobject(LOCALID_MOMO)
+    fadescreenspeed(FADE_FROM_WHITE, 3)
+    waitse
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("LOHAN: Time is of the essence.\n
+        Hurry to the altar, {PLAYER}.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    clearflag(FLAG_HIDE_NINJA_BALDESIA)
+    setflag(FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE)
+    setvar(VAR_MOMO_ARIA_STATE, 5)
+    releaseall
     end
 }
 
@@ -27,9 +315,118 @@ script Baldesia_MainHouse_EventScript_KimonoGirl{
     end
 }
 
+text Baldesia_MainHouse_TextLohan{
+    "LOHAN: I'm LOHAN, the Village Chief of\n
+    BALDESIA.\p
+    I've heard that you've earned the\n
+    respect of not only MASTER BENNIS, but\l
+    my sister as well. Quite impressive.\p
+    Anyways, as you may have heard, JIRACHI\n
+    is going to awaken soon.\p
+    During this time, the Maiden of the\n
+    ASAKURA Family is required to travel\l
+    to the altar to perform the ritual.\p
+    I want you to be her bodyguard during\n
+    the ritual."
+}
+
+text Baldesia_MainHouse_TextAsak{
+    "ASAK: M-My Lord! With all due respect,\n
+    tradition demands that the Young Lady\l
+    is escorted by her retainers!\p
+    To delegate such a role to one person,\n
+    an outsider as well, is unheard of!\p
+    LOHAN: Enough!\n
+    This is my decision.\p
+    ASAK: … Yes, sir.\n
+    My deepest apologies."
+}
+
+text Baldesia_MainHouse_TextAsak2{"
+    LOHAN: MOMO and the HOENN CHAMPION\n
+    should be more than enough to deter\l
+    anybody with ill intentions.\p
+    Since MOMO procrastinated, there's not\n
+    much time left before JIRACHI will\l
+    fall back into a deep slumber.\p
+    You must leave immed-\p
+    ???: Wait! You can't just barge in here!"}
+
+text Baldesia_MainHouse_TextLohan2{
+    "MOMO: … … … …\n
+    Figure it out.\p
+    LOHAN: Enough!\n
+    Why have you barged in here?"
+}
+
+text Baldesia_MainHouse_TextLohan3{
+    "LOHAN: ………\n
+    I see.\p
+    You barge in here uninvited, demanding\n
+    to take place in the ritual, because\l
+    you're her… “KNIGHT”?\p
+    There's no way I'll permit you to\n
+    accompany her and {PLAYER}.\p
+    Such disrespect won't be tolerated\n
+    any longer. You will wait here.\p
+    ARIA: But-"
+}
+
+text Baldesia_MainHouse_TextLohan4{
+    "Now, that's enough talk.\p
+    MOMO has already waited until the last\n
+    minute for the ritual. We need to hurry.\p
+    {PLAYER}, make preparations quickly and\n
+    then head out."
+}
+
 text Baldesia_MainHouse_Text_ThankYouForWaiting{
     "Thank you for waiting.\p
 	We've restored your POKéMON\n
 	to full health.\p
     We hope to see you again!"
+}
+
+movement Baldesia_MainHouse_Movement_AsakGoesToChief{
+    walk_fast_left * 2
+    walk_fast_up
+    walk_fast_left
+    walk_in_place_fast_up
+}
+
+movement Baldesia_MainHouse_Movement_AsakGoesBack{
+    walk_right
+    walk_down
+    walk_right * 2
+    walk_in_place_left
+}
+
+movement Baldesia_MainHouse_Movement_AriaEnter{
+    walk_fast_up
+    walk_fast_left * 5
+    walk_fast_up * 2
+}
+
+movement Baldesia_MainHouse_Movement_WalkBackDown{
+    lock_facing_direction
+    walk_fast_down
+    unlock_facing_direction
+}
+
+movement Baldesia_MainHouse_Movement_WalkBackUp{
+    lock_facing_direction
+    walk_fast_up
+    unlock_facing_direction
+}
+
+movement Baldesia_MainHouse_Movement_WalkBackRight{
+    lock_facing_direction
+    walk_fast_right
+    unlock_facing_direction
+    delay_16
+    walk_in_place_fast_up
+}
+
+movement Baldesia_MainHouse_Movement_AriaCharges{
+    walk_fast_up * 3
 }

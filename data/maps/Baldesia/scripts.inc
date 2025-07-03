@@ -1900,8 +1900,8 @@ Baldesia_Text_Bennis3::
 
 Baldesia_Text_Bennis4::
 # 843 "data/maps/Baldesia/scripts.pory"
-	.string "MASTER BENNIS: {PLAYER}? Hm.\p ASAK: Huh… I just realized we never knew\n your name.\l And you also know LADY ASAKURA…\l I'm surprised.$"
+	.string "MASTER BENNIS: {PLAYER}? Hm.\p ASAK: Huh… I just realized we never knew\n your name.\l And you also know Lady ASAKURA…\l I'm surprised.$"
 
 Baldesia_Text_Bennis5::
 # 851 "data/maps/Baldesia/scripts.pory"
-	.string "MASTER BENNIS: We were searching all\n over HOENN for you.\l Where have you been?\p MOMO: … I made it back in time for the\n ritual. I think.\l I need to go see brother now.$"
+	.string "MASTER BENNIS: We were searching all\n over HOENN for you.\l Where have you been?\p MOMO: … I made it back in time for the\n ritual… I think.\l I need to go see brother now.$"

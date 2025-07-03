@@ -454,6 +454,33 @@
       "var": "VAR_MOMO_ARIA_STATE",
       "var_value": "2",
       "script": "Baldesia_EventScript_INeedToGoGetPanini"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_MOMO_ARIA_STATE",
+      "var_value": "3",
+      "script": "Baldesia_EventScript_YouNeedPermission"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_MOMO_ARIA_STATE",
+      "var_value": "3",
+      "script": "Baldesia_EventScript_YouNeedPermission"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_MOMO_ARIA_STATE",
+      "var_value": "3",
+      "script": "Baldesia_EventScript_YouNeedPermission"
     }
   ],
   "bg_events": [

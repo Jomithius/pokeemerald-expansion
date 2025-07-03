@@ -15,19 +15,19 @@ Baldesia_House2_EventScript_OldMan::
 
 
 Baldesia_House2_EventScript_Blissey::
-# 20 "data/maps/Baldesia_House2/scripts.pory"
-	lock
-# 21 "data/maps/Baldesia_House2/scripts.pory"
-	faceplayer
 # 22 "data/maps/Baldesia_House2/scripts.pory"
-	playmoncry SPECIES_BLISSEY, CRY_MODE_ENCOUNTER
+	lock
 # 23 "data/maps/Baldesia_House2/scripts.pory"
-	waitmoncry
+	faceplayer
 # 24 "data/maps/Baldesia_House2/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	playmoncry SPECIES_BLISSEY, CRY_MODE_ENCOUNTER
 # 25 "data/maps/Baldesia_House2/scripts.pory"
-	waitmovement 0
+	waitmoncry
 # 26 "data/maps/Baldesia_House2/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 27 "data/maps/Baldesia_House2/scripts.pory"
+	waitmovement 0
+# 28 "data/maps/Baldesia_House2/scripts.pory"
 	release
 	end
 
@@ -38,4 +38,4 @@ Baldesia_House2_EventScript_OldWoman_Text_0:
 
 Baldesia_House2_EventScript_OldMan_Text_0:
 # 13 "data/maps/Baldesia_House2/scripts.pory"
-	.string "It's said every 1000 years JIRACHI\n awakens to grant one wish.\p It's going to awaken again soon.$"
+	.string "It's said every 1000 years JIRACHI\n awakens to grant one wish.\p That's a lie though.\n It really awakens every 10 years or so.\p It must be a light sleeper.$"

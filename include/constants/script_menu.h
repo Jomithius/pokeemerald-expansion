@@ -124,6 +124,9 @@
 #define MULTI_TAG_MATCH_TYPE               113
 #define MULTI_BERRY_PLOT                   114
 #define MULTI_ULTRA_SPACE_CHOICE           115 // for returning to ultra space or area zero
+#define MULTI_PANINI_BALDESIA_1            116 // I came to get you. || Are you okay?
+#define MULTI_PANINI_BALDESIA_2            117 // Don't let him get to you. || I understand. 
+#define MULTI_PANINI_BALDESIA_3            118 // Momo is back. || … What?
 
 
 // Lilycove SS Tidal Multichoice Selections

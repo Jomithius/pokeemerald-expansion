@@ -16,10 +16,17 @@ script Baldesia_House3_EventScript_Girl{
 }
 
 script Baldesia_House3_EventScript_KimonoLady{
-    msgbox("I heard that JIRACHI is going to\n
+    if(flag(FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS) == TRUE){
+        msgbox("There's a rumor that the ritual\n
+        was ruined by a group of POKéMON!\p
+        Do you think that's really true?", MSGBOX_NPC)
+    }
+    else{
+        msgbox("I heard that JIRACHI is going to\n
         awaken soon.\p
-        If only I was a CHANNELER so I could\n
-        enter the holy grounds.", MSGBOX_NPC)
+        If only I were a CHANNELER so I could\n
+        enter the holy grounds…", MSGBOX_NPC)
+    }
     end
 }
 

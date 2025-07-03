@@ -1,1 +1,112 @@
 mapscripts Baldesia_House1_MapScripts {}
+
+script Baldesia_House1_EventScript_KimonoLady{
+    lock
+    faceplayer
+    msgbox("My daughter gets to train under\n
+        MASTER BENNIS.\l
+        As a mother, I couldn't be more proud.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Baldesia_House1_EventScript_OldWoman{
+    lock
+    faceplayer
+    msgbox("MASTER BENNIS has been a retainer for\n
+    the Young Lady since she was a child.\p
+    He would even go as far as to shave his\n
+    head so she wouldn't feel insecure\l
+    about being bald.\p
+    Even after all these years, he still\n
+    makes sure he's bald.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Baldesia_House1_EventScript_OldMan{
+    lock
+    faceplayer
+    msgbox("MASTER BENNIS is not only the head\n
+    retainer for the ASAKURA family, he's\l
+    also the leader of the ninjas.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Baldesia_House1_EventScript_Panini{
+    lock
+    delay(16)
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    waitse
+    faceplayer
+    msgbox("PANINI: Panini? Panini pani?", MSGBOX_DEFAULT) // Player? What are you doing here?
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "I came to get you.", "Are you okay?")
+    if(var(VAR_RESULT) == 0){
+        msgbox("PANINI: Panini?", MSGBOX_DEFAULT) // For what?
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "MOMO is back.", "… What?")
+    }
+    elif(var(VAR_RESULT) == 1){
+        msgbox("PANINI: Panini… Panini.\n
+            Panini pani nini panini.", MSGBOX_DEFAULT) // I'm… okay I guess. MASTER BENNIS just frustrates me sometimes.
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Don't let him get to you.", "I understand.")
+        msgbox("PANINI: …Panini. Panini pani\n
+            panini.\p
+            Ni? Panini pani?", MSGBOX_DEFAULT)       // …You're right. I should just let it go. So? What are you  doing here?
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "MOMO is back.", "… What?")
+    }
+    while(var(VAR_RESULT) == 1){
+        delay(16)
+        playse(SE_BIKE_HOP)
+        applymovement(3, Common_Movement_QuestionMark)
+        waitmovement(3)
+        waitse
+        msgbox("PANINI: Panini?", MSGBOX_DEFAULT) // … What?
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "MOMO is back.", "… What?")
+    }
+    delay(16)
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(3)
+    waitse
+    msgbox("PANINI: Panini?! Panini!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_FLEE)
+    removeobject(3)
+    fadescreen(FADE_FROM_BLACK)
+    waitse
+    applymovement(2, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(2)
+    msgbox("Oh! There she goes again, leaving like a\n
+        ninja. They grow up so fast!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(2, Common_Movement_WalkInPlaceLeft)
+    waitmovement(2)
+    waitse
+    setvar(VAR_MOMO_ARIA_STATE, 3)
+    release
+    end
+}
+
+script Baldesia_House1_EventScript_Pawmi{
+    lock
+    faceplayer
+    playmoncry(SPECIES_PAWMI, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}

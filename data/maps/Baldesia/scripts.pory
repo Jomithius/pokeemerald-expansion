@@ -844,7 +844,7 @@ text Baldesia_Text_Bennis4{
     "MASTER BENNIS: {PLAYER}? Hm.\p
     ASAK: Huh… I just realized we never knew\n
     your name.\l
-    And you also know LADY ASAKURA…\l
+    And you also know Lady ASAKURA…\l
     I'm surprised."
 }
 
@@ -853,7 +853,7 @@ text Baldesia_Text_Bennis5{
     over HOENN for you.\l
     Where have you been?\p
     MOMO: … I made it back in time for the\n
-    ritual. I think.\l
+    ritual… I think.\l
     I need to go see brother now."}
 
 movement Baldesa_Movement_BlockTrainerLeftGuard{

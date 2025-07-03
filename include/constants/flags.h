@@ -43,15 +43,15 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_I_EXP_SHARE     0x20 // Exp Share gives EXP to whole team
-#define B_FLAG_NO_BAG_USE    0x21 // No items in battle
+#define FLAG_HIDE_PANINI_BALDESIA_HOUSE1       0x20 // Panini CS Baldesia
+#define FLAG_HIDE_MOMO_BALDESIA_MAIN_HOUSE     0x21 // Main House Cs
 #define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_1   0x22 // Area Zero
 #define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_2   0x23 // Area Zero
-#define FLAG_DEFEATED_KLAWF  0x24 // Route 136
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
+#define FLAG_DEFEATED_KLAWF                    0x24 // Route 136
+#define FLAG_DEFEATED_JIRACHI                  0x25 // Baldesia Altar
+#define FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS    0x26 // Baldesia Altar
+#define FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE     0x27 // Unused Flag
+#define FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE   0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
@@ -1389,8 +1389,8 @@
 
 #define FLAG_VISITED_ULTRA_SPACE                    (SYSTEM_FLAGS + 0x21) // custom
 #define FLAG_VISITED_ROUTE_135_LAB                  (SYSTEM_FLAGS + 0x22) // custom
-#define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
-#define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
+#define FLAG_I_EXP_SHARE                            (SYSTEM_FLAGS + 0x23) // Exp Share gen 6
+#define B_FLAG_NO_BAG_USE                           (SYSTEM_FLAGS + 0x24) // No Item Use
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag

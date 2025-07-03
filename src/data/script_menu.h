@@ -789,6 +789,24 @@ static const struct MenuAction MultichoiceList_UltraSpace[] =
     {gText_AreaZero},
 };
 
+static const struct MenuAction MultichoiceList_Panini1[] =
+{
+    {gText_ICameToGetYou},
+    {gText_AreYouOkay},
+};
+
+static const struct MenuAction MultichoiceList_Panini2[] =
+{
+    {gText_DontLetHim},
+    {gText_IUnderstand},
+};
+
+static const struct MenuAction MultichoiceList_Panini3[] =
+{
+    {gText_MomoIsBack},
+    {gText_What},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -913,6 +931,9 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
     [MULTI_ULTRA_SPACE_CHOICE]         = MULTICHOICE(MultichoiceList_UltraSpace), // for returning to ultra space or area zero
+    [MULTI_PANINI_BALDESIA_1]          = MULTICHOICE(MultichoiceList_Panini1), // Panini cs baldesia
+    [MULTI_PANINI_BALDESIA_2]          = MULTICHOICE(MultichoiceList_Panini2), // Panini cs baldesia
+    [MULTI_PANINI_BALDESIA_3]          = MULTICHOICE(MultichoiceList_Panini3), // Panini cs baldesia
 };
 
 const u8 *const gStdStrings[] =

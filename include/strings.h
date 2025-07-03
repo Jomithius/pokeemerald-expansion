@@ -2396,6 +2396,12 @@ extern const u8 gText_SamePkmnInPartyAlready[];
 extern const u8 gText_Cancel3[];
 extern const u8 gText_UltraSpace[];
 extern const u8 gText_AreaZero[];
+extern const u8 gText_ICameToGetYou[];
+extern const u8 gText_AreYouOkay[];
+extern const u8 gText_DontLetHim[];
+extern const u8 gText_IUnderstand[];
+extern const u8 gText_MomoIsBack[];
+extern const u8 gText_What[];
 
 // Naming Screen
 extern const u8 gText_MoveOkBack[];

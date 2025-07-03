@@ -32,7 +32,7 @@ script Baldesia_House4_EventScript_NinjaBoy{
 }
 
 script Baldesia_House4_EventScript_KimonoLady{
-    msgbox("Before she left, LADY ASAKURA\n
+    msgbox("Before she left, Lady ASAKURA\n
         used to mentor all the children in\l
         the village.", MSGBOX_NPC)
     end
