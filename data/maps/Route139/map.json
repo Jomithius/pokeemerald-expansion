@@ -21,11 +21,11 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 22,
-      "y": 1,
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 26,
+      "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -41,9 +41,9 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route139_EventScript_Johnald",
       "flag": "0"
     },
     {
@@ -54,13 +54,13 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route139_EventScript_Morgan",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_DOJO",
+      "graphics_id": "OBJ_EVENT_GFX_KIMONO_OLDLADY",
       "x": 13,
       "y": 13,
       "elevation": 0,
@@ -69,7 +69,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route139_EventScript_KimonoOldWoman",
       "flag": "0"
     },
     {
@@ -80,9 +80,9 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route139_EventScript_Dinwiddle",
       "flag": "0"
     },
     {
@@ -93,9 +93,9 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route139_EventScript_Widdledin",
       "flag": "0"
     },
     {
@@ -106,9 +106,9 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route139_EventScript_Fredward",
       "flag": "0"
     },
     {
@@ -139,10 +139,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA",
-      "x": 23,
-      "y": 1,
+      "x": 11,
+      "y": 24,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
+      "movement_type": "MOVEMENT_TYPE_MOUNTAIN_DISGUISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -153,9 +153,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_KIMONOLADY",
       "x": 28,
-      "y": 3,
+      "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -179,9 +179,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CHANNELER",
       "x": 36,
-      "y": 19,
+      "y": 18,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -191,8 +191,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 45,
-      "y": 11,
+      "x": 10,
+      "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -214,6 +214,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIZA",
+      "x": 29,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_MOMO_ROUTE_139"
     }
   ],
   "warp_events": [
@@ -240,7 +253,33 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_MOMO_ARIA_STATE",
+      "var_value": "5",
+      "script": "Route139_LeftTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_MOMO_ARIA_STATE",
+      "var_value": "5",
+      "script": "Route139_EventScript_Momo"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_MOMO_ARIA_STATE",
+      "var_value": "5",
+      "script": "Route139_RightTrigger"
+    }
   ],
   "bg_events": [
 

@@ -10936,33 +10936,25 @@ Jolly Nature
 - Play Rough  
 - Tidy Up
 
-=== TRAINER_MAY_ROUTE_119_MUDKIP === /* FREE */
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+=== TRAINER_MORGAN ===
+Name: MORGAN
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
-
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_TREECKO === /* FREE */
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+=== TRAINER_DINWIDDLE ===
+Name: DINWIDDLE
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
@@ -10970,12 +10962,12 @@ Torchic
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_ROUTE_110_TREECKO === /* FREE */
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+=== TRAINER_WIDDLEDIN ===
+Name: WIDDLEDIN
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
@@ -10983,30 +10975,14 @@ Wingull
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Combusken
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_MAY_ROUTE_119_TREECKO === /* FREE */
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+=== TRAINER_JOHNALD ===
+Name: JOHNALD
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
-
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Combusken
 Level: 31
@@ -12294,18 +12270,14 @@ Level: 14
 Treecko
 Level: 15
 
-=== TRAINER_BRENDAN_RUSTBORO_MUDKIP === /* FREE */
-Name: BRENDAN
-Class: Rival
-Pic: Brendan
+=== TRAINER_FREDWARD ===
+Name: FREDWARD
+Class: Black Belt
+Pic: Black Belt
 Gender: Male
-Music: Male
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
-
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+AI: Basic Trainer
 
 Treecko
 Level: 15

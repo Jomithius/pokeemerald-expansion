@@ -218,3 +218,7 @@ Common_Movement_LookAround:
 	delay_16
 	walk_in_place_right
 	step_end
+
+Common_Movement_WalkFasterUp:
+	walk_faster_up
+	step_end

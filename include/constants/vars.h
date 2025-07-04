@@ -172,7 +172,7 @@
 #define VAR_PETALBURG_WOODS_STATE                        0x4098
 #define VAR_LILYCOVE_CONTEST_LOBBY_STATE                 0x4099
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
-#define VAR_MOMO_ARIA_STATE                              0x409B // 0-1 Shoal Cave Ice Floor, 1-2 Baldesia Zorua, 2-3 Panini, 3-5 Main House Cs, 5-
+#define VAR_MOMO_ARIA_STATE                              0x409B // 0-1 Shoal Cave Ice Floor, 1-2 Baldesia Zorua, 2-3 Panini, 3-5 Main House CS, 5-6 Route 139,
 #define VAR_ELITE_4_STATE                                0x409C
 #define VAR_UNUSED_0x409D                                0x409D // Unused Var
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
@@ -237,7 +237,7 @@
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE                         0x40DA
 #define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
-#define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
+#define VAR_ROUTE_139_TRAINER_COUNT                      0x40DC // Trainer Sidequests
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
 #define VAR_GIFT_UNUSED_1                                0x40DE // Var is written to, but never read
 #define VAR_GIFT_UNUSED_2                                0x40DF // Var is written to, but never read
@@ -246,7 +246,7 @@
 #define VAR_GIFT_UNUSED_5                                0x40E2 // Var is written to, but never read
 #define VAR_GIFT_UNUSED_6                                0x40E3 // Var is written to, but never read
 #define VAR_GIFT_UNUSED_7                                0x40E4 // var is written to, but never read
-#define VAR_UNUSED_0x40E5                                0x40E5 // Unused Var
+#define VAR_BALDESIA_FOREST_DOJO_STATE                   0x40E5 // For Baldesia Dojo Sidequest
 #define VAR_DAILY_SLOTS                                  0x40E6
 #define VAR_DAILY_WILDS                                  0x40E7
 #define VAR_DAILY_BLENDER                                0x40E8
@@ -272,7 +272,7 @@
 #define VAR_CEO_STATE                                    0x40FC // For unlocking postgame area, 0-1 Lilycove Highrise, 1-2 Meeting with CEO
 #define VAR_ULTRA_SPACE_STATE                            0x40FD // 0-4 Ultra Space Event, 4-6 Area Zero, 7
 #define VAR_BALDESIA_NINJA_BOY_COUNTER                   0x40FE // For hide and seek minigame
-#define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
+#define VAR_BALDESIA_ROUTE_139_STATE                     0x40FF // For Trainer Sidequest
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)

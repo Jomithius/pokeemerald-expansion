@@ -534,10 +534,10 @@
 #define TRAINER_RATDUARDO_NEWMOON_ISLAND    528
 #define TRAINER_CHANNELER_NEWMOON_ISLAND    529
 #define TRAINER_RATDUARDO_FULLMOON_ISLAND   530
-#define TRAINER_MAY_ROUTE_119_MUDKIP        531 // free
-#define TRAINER_MAY_ROUTE_103_TREECKO       532 // free
-#define TRAINER_MAY_ROUTE_110_TREECKO       533 // free
-#define TRAINER_MAY_ROUTE_119_TREECKO       534 // free
+#define TRAINER_MORGAN                      531 
+#define TRAINER_DINWIDDLE                   532
+#define TRAINER_WIDDLEDIN                   533
+#define TRAINER_JOHNALD                     534
 #define TRAINER_MAY_ROUTE_103_TORCHIC       535
 #define TRAINER_MAY_ROUTE_110_TORCHIC       536
 #define TRAINER_MAY_ROUTE_119_TORCHIC       537
@@ -596,7 +596,7 @@
 #define TRAINER_GRUNT_SPACE_CENTER_7        590
 #define TRAINER_MACEY                       591
 #define TRAINER_BRENDAN_RUSTBORO_TREECKO    592
-#define TRAINER_BRENDAN_RUSTBORO_MUDKIP     593 // free
+#define TRAINER_FREDWARD                    593
 #define TRAINER_PAXTON                      594
 #define TRAINER_ISABELLA                    595
 #define TRAINER_GRUNT_WEATHER_INST_5        596

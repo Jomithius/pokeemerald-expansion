@@ -18,13 +18,17 @@ mapscripts Baldesia_MainHouse_MapScripts {
 script Baldesia_MainHouse_OnTransition{
     setrespawn(HEAL_LOCATION_BALDESIA)
     setflag(FLAG_TEMP_E)
-    call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateAriaPos)
+    call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateNPCPos)
+    call_if_eq(VAR_MOMO_ARIA_STATE, 6, Baldesia_MainHouse_UpdateNPCPos)
     end
 }
 
-script Baldesia_MainHouse_UpdateAriaPos{
+script Baldesia_MainHouse_UpdateNPCPos{
     setobjectxyperm(LOCALID_ARIA, 19, 9)
     setobjectmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+    setobjectxyperm(LOCALID_PANINI, 11, 11)
+    setobjectmovementtype(LOCALID_PANINI, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
+    setobjectmovementtype(LOCALID_BENNIS, MOVEMENT_TYPE_LOOK_AROUND)
     return
 }
 
@@ -32,12 +36,10 @@ script Baldesia_MainHouse_EventScript_GoToChief{
     lockall
     checkobjectat(5, 20)
     if(var(VAR_RESULT) == TRUE){
-        fadescreen(FADE_TO_BLACK)
         playse(SE_M_DOUBLE_TEAM)
         addobject(19)
         addobject(20)
         addobject(21)
-        fadescreen(FADE_FROM_BLACK)
         waitse
         playse(SE_PIN)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
@@ -47,20 +49,18 @@ script Baldesia_MainHouse_EventScript_GoToChief{
         waitmessage
         setflag(FLAG_REMOVE_WARP_FADE)
         fadescreen(FADE_TO_BLACK)
+        playse(SE_M_DOUBLE_TEAM)
         removeobject(19)
         removeobject(20)
         removeobject(21)
-        playse(SE_M_DOUBLE_TEAM)
         setvar(VAR_MOMO_ARIA_STATE, 4)
         warpsilent(MAP_BALDESIA_MAIN_HOUSE, 13, 7)
     }
     else{
-        fadescreen(FADE_TO_BLACK)
         playse(SE_M_DOUBLE_TEAM)
         addobject(22)
         addobject(23)
         addobject(24)
-        fadescreen(FADE_FROM_BLACK)
         waitse
         playse(SE_PIN)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
@@ -70,10 +70,10 @@ script Baldesia_MainHouse_EventScript_GoToChief{
         waitmessage
         setflag(FLAG_REMOVE_WARP_FADE)
         fadescreen(FADE_TO_BLACK)
+        playse(SE_M_DOUBLE_TEAM)
         removeobject(22)
         removeobject(23)
         removeobject(24)
-        playse(SE_M_DOUBLE_TEAM)
         setvar(VAR_MOMO_ARIA_STATE, 4)
         warpsilent(MAP_BALDESIA_MAIN_HOUSE, 13, 7)
     }
@@ -120,10 +120,9 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_AriaEnter)
     waitmovement(0)
-    fadescreen(FADE_TO_BLACK)
     playse(SE_M_DOUBLE_TEAM)
     addobject(25)
-    fadescreen(FADE_FROM_BLACK)
+    clearflag(FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE)
     waitse
     playse(SE_PIN)
     applymovement(LOCALID_ARIA, Common_Movement_ExclamationMark)
@@ -133,12 +132,9 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_WalkBackDown)
     waitmovement(0)
     waitse
-    delay(30)
-    fadescreen(FADE_TO_BLACK)
     playse(SE_M_DOUBLE_TEAM)
-    addobject(26)
-    clearflag(FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE)
-    fadescreen(FADE_FROM_BLACK)
+    addobject(9)
+    delay(30)
     waitse
     applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceFasterDown)
     waitmovement(LOCALID_ARIA)
@@ -149,23 +145,22 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     waitse
     playse(SE_M_YAWN)
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_WalkBackUp)
-    waitmovement(LOCALID_ARIA)
+    delay(8)
+    applymovement(9, Common_Movement_WalkUp)
+    applymovement(15,  Baldesia_MainHouse_Movement_LeftGuard)
+    delay(8)
+    applymovement(16,  Baldesia_MainHouse_Movement_RightGuard)
+    waitmovement(16)
     delay(30)
-    fadescreen(FADE_TO_BLACK)
-    playse(SE_M_DOUBLE_TEAM)
-    addobject(27)
-    addobject(28)
-    fadescreen(FADE_FROM_BLACK)
     waitse
-    applymovement(26, Common_Movement_WalkUp)
-    waitmovement(26)
-    delay(30)
     applymovement(LOCALID_ARIA, Common_Movement_LookAround)
     waitmovement(LOCALID_ARIA)
     msgbox("ARIA: AAAARGGHH!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_AriaCharges)
     applymovement(25, Baldesia_MainHouse_Movement_WalkBackRight)
+    applymovement(15, Common_Movement_WalkInPlaceUp)
+    applymovement(16, Common_Movement_WalkInPlaceUp)
     playse(SE_NOT_EFFECTIVE)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
@@ -194,19 +189,24 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     fadenewbgm(MUS_B_ARENA)
     fadescreen(FADE_TO_BLACK)
     playse(SE_FLEE)
+    applymovement(15,  Baldesia_MainHouse_Movement_LeftGuardReturn)
+    delay(8)
+    applymovement(16,  Baldesia_MainHouse_Movement_RightGuardReturn)
     removeobject(25)
-    removeobject(26)
-    removeobject(27)
-    removeobject(28)
+    removeobject(9)
+    addobject(26)
+    addobject(12)
     fadescreen(FADE_FROM_BLACK)
     waitse
+    waitmovement(15)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     delay(8)
     applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    msgbox("ARIA: That scared me!\p
-        MOMO! Why didn't you tell me where you\n
+    msgbox("ARIA: That scared me!\n
+        MOMO!\p
+        Why didn't you tell me where you\n
         were going?!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
@@ -214,7 +214,7 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceUp)
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
-    msgbox("MOMO: … It's like you didn't see the\n
+    msgbox("MOMO: … It's like… you didn't see the\n
         note I left you.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
@@ -223,9 +223,11 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     delay(6)
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    msgbox("ARIA: All the note said was “ritual”!\n
+    msgbox("ARIA: All it said was “beefy ritual”!\n
         How am I supposed to know what that \l
-        means?", MSGBOX_AUTOCLOSE)
+        means?\p
+        I'm lucky that you told BALDASARIO\n
+        where you were actually going!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     delay(8)
@@ -239,6 +241,8 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     msgbox(Baldesia_MainHouse_TextLohan2, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_ARIA, Common_Movement_WalkUp)
+    delay(6)
+    applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
     msgbox("ARIA: I heard everything. I'm MOMO's\n
         KNIGHT. I swore to protect her.\l
@@ -296,6 +300,152 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     end
 }
 
+script Baldesia_MainHouse_EventScript_Guard{
+    lock
+    faceplayer
+    msgbox("Don't get into any trouble.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+} 
+
+script Baldesia_MainHouse_EventScript_Ninja{
+    lock
+    delay(16)
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    msgbox("How did you see me?!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Baldesia_MainHouse_EventScript_NinjaBoy{
+    msgbox("Don't talk to me!\n
+        I'm working!", MSGBOX_SIGN)
+    end
+} 
+
+script Baldesia_MainHouse_EventScript_Bennis{
+    msgbox("Hm…\n
+        Something smells… beefy.", MSGBOX_NPC)
+    end
+} 
+
+script Baldesia_MainHouse_EventScript_Asak{
+    lock
+    faceplayer
+    msgbox("……… I mean no disrespect, {PLAYER},\n
+        but this really doesn't feel right.\p
+        Still… I can't go against my Lord's will.\n
+        Also… He's right.\p
+        I'm ashamed of our failure…\p
+        I think I'm going to go back home for\n
+        a bit to retrain.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_RESULT)
+    if(var(VAR_RESULT) == DIR_NORTH){
+        applymovement(LOCALID_ASAK, Baldesia_MainHouse_Movement_AsakLeavePlayerFacingNorth)
+        delay(16)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    }
+    elif(var(VAR_RESULT) == DIR_SOUTH){
+        applymovement(LOCALID_ASAK, Baldesia_MainHouse_Movement_AsakLeave)
+    }
+    else{
+        applymovement(LOCALID_ASAK, Baldesia_MainHouse_Movement_AsakLeave)
+        delay(8)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    }
+    waitmovement(LOCALID_ASAK)
+    removeobject(LOCALID_ASAK)
+    release
+    end
+}
+
+script Baldesia_MainHouse_EventScript_Panini{
+    lock
+    faceplayer
+    msgbox("Panini… Panini ni.", MSGBOX_DEFAULT)
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "… You're right.", "I'll be careful.", "What are you even saying?")
+    msgbox("Panini.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Baldesia_MainHouse_EventScript_Aria{
+    msgbox("ARGH!\n
+        Why can't I go with?!\p
+        I guess all I can do right now is\n
+        more training!", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_MainHouse_EventScript_OldManDojo{
+    msgbox("The former Head of the ASAKURA\n
+    family and his wife spend a lot of\l
+    time at the LILYCOVE GAME CORNER.", MSGBOX_NPC)
+    end
+}
+
+script Baldesia_MainHouse_EventScript_OldWoman{
+    if(var(VAR_MOMO_ARIA_STATE) <=8){
+        msgbox("Lately the Village Chief has been\n
+            much stricter.\p
+            I wonder what changed.", MSGBOX_NPC)
+    }
+    else{
+        msgbox("So PECHARUNT and the LOYAL THREE\n
+            plotted to steal the wish…\p
+            I wonder what it would've wished for.", MSGBOX_NPC)
+    }
+    end
+}
+
+script Baldesia_MainHouse_EventScript_OldMan{
+    msgbox("While we say that JIRACHI is going\n
+        to awaken, the truth is it's only coming\l
+        out of a deeper state of sleep.\p
+        During this time, the Maiden needs to play\n
+        the POKé FLUTE to truly wake it up.")
+    end
+}
+
+script Baldesia_MainHouse_EventScript_Lohan{
+    if(var(VAR_MOMO_ARIA_STATE) <=8){
+        msgbox("Move quickly, {PLAYER}.\n
+            There's not much time left.", MSGBOX_NPC)
+    }
+    else{
+        msgbox("I can't thank you enough for what\n
+            you've done, {PLAYER}.\p
+            You are always welcome here.", MSGBOX_NPC)
+    }
+    end
+}
+
+script Baldesia_MainHouse_EventScript_Lindsay{
+    if(var(VAR_MOMO_ARIA_STATE) <=8){
+        msgbox("… We're counting on you.", MSGBOX_NPC)
+    }
+    else{
+        msgbox("I can't thank you enough for what\n
+            you've done.\p
+            You are always welcome here.", MSGBOX_NPC)
+    }
+    end
+}
+
 script Baldesia_MainHouse_EventScript_KimonoGirl{
     lock
     faceplayer
@@ -324,21 +474,24 @@ text Baldesia_MainHouse_TextLohan{
     Anyways, as you may have heard, JIRACHI\n
     is going to awaken soon.\p
     During this time, the Maiden of the\n
-    ASAKURA Family is required to travel\l
-    to the altar to perform the ritual.\p
-    I want you to be her bodyguard during\n
-    the ritual."
+    ASAKURA family is required to travel\l
+    to the altar to perform a sacred ritual.\p
+    I want you to be her bodyguard while\n
+    it's taking place."
 }
 
 text Baldesia_MainHouse_TextAsak{
     "ASAK: M-My Lord! With all due respect,\n
-    tradition demands that the Young Lady\l
+    tradition dictates that the Young Lady\l
     is escorted by her retainers!\p
     To delegate such a role to one person,\n
     an outsider as well, is unheard of!\p
     LOHAN: Enough!\n
-    This is my decision.\p
-    ASAK: … Yes, sir.\n
+    Her retainers?\p
+    The ones that were unable to\n
+    properly complete their mission?\l
+    Have some shame and know your place.\p
+    ASAK: ……… Yes, sir.\n
     My deepest apologies."
 }
 
@@ -347,14 +500,13 @@ text Baldesia_MainHouse_TextAsak2{"
     should be more than enough to deter\l
     anybody with ill intentions.\p
     Since MOMO procrastinated, there's not\n
-    much time left before JIRACHI will\l
-    fall back into a deep slumber.\p
+    much time left before JIRACHI falls\l
+    back into a deep slumber.\p
     You must leave immed-\p
     ???: Wait! You can't just barge in here!"}
 
 text Baldesia_MainHouse_TextLohan2{
-    "MOMO: … … … …\n
-    Figure it out.\p
+    "MOMO: … … … …\p
     LOHAN: Enough!\n
     Why have you barged in here?"
 }
@@ -362,8 +514,8 @@ text Baldesia_MainHouse_TextLohan2{
 text Baldesia_MainHouse_TextLohan3{
     "LOHAN: ………\n
     I see.\p
-    You barge in here uninvited, demanding\n
-    to take place in the ritual, because\l
+    You rush in here uninvited and demand\n
+    to take place in the ritual because\l
     you're her… “KNIGHT”?\p
     There's no way I'll permit you to\n
     accompany her and {PLAYER}.\p
@@ -423,10 +575,46 @@ movement Baldesia_MainHouse_Movement_WalkBackRight{
     lock_facing_direction
     walk_fast_right
     unlock_facing_direction
+    face_left
     delay_16
     walk_in_place_fast_up
 }
 
+movement Baldesia_MainHouse_Movement_RightGuard{
+    walk_faster_down * 7
+    walk_faster_left * 3
+}
+
+movement Baldesia_MainHouse_Movement_LeftGuard{
+    walk_faster_down * 7
+    walk_faster_right * 5
+}
+
+movement Baldesia_MainHouse_Movement_LeftGuardReturn{
+    walk_left * 5
+    walk_up * 7
+    walk_in_place_down
+}
+
+movement Baldesia_MainHouse_Movement_RightGuardReturn{
+    walk_right * 3
+    walk_up * 7
+    walk_in_place_down
+}
+
 movement Baldesia_MainHouse_Movement_AriaCharges{
     walk_fast_up * 3
+}
+
+movement Baldesia_MainHouse_Movement_AsakLeavePlayerFacingNorth{
+    walk_right
+    walk_down * 4
+    walk_right * 3
+    walk_down * 4
+}
+
+movement Baldesia_MainHouse_Movement_AsakLeave{
+    walk_down * 4
+    walk_right * 3
+    walk_down * 4
 }

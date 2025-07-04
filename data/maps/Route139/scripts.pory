@@ -1,1 +1,299 @@
 mapscripts Route139_MapScripts {}
+
+// ITEM_SYRUPY_APPLE
+
+script Route139_LeftTrigger{
+    lockall
+    setflag(FLAG_TEMP_5)
+    goto(Route139_EventScript_Momo)
+    end
+}
+
+script Route139_RightTrigger{
+    lockall
+    setflag(FLAG_TEMP_6)
+    goto(Route139_EventScript_Momo)
+    end
+}
+
+script Route139_EventScript_Momo{
+    lockall
+    playse(SE_SHINY)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    addobject(16)
+    if(flag(FLAG_TEMP_5) == TRUE){
+        applymovement(16, Route139_Movement_MomoToPlayerLeftTrigger)
+    }
+    elif(flag(FLAG_TEMP_6) == TRUE){
+        applymovement(16, Route139_Movement_MomoToPlayerRightTrigger)
+    }
+    else{
+        applymovement(16, Route139_Movement_MomoToPlayerTrigger)   
+    }
+    delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    waitmovement(16)
+    msgbox("MOMO: … … …\n
+        The altar is up ahead through the cave.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(16, Common_Movement_WalkInPlaceDown)
+    waitmovement(16)
+    delay(24)
+    applymovement(16, Common_Movement_WalkInPlaceLeft)
+    waitmovement(16)
+    msgbox("MOMO: … … …\n
+        Be careful.\l
+        I'll meet you there.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_M_PETAL_DANCE)
+    fadescreenspeed(FADE_TO_WHITE, 4)
+    removeobject(16)
+    fadescreenspeed(FADE_FROM_WHITE, 3)
+    setflag(FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE) // if not talked to after Lohan CS
+    setvar(VAR_MOMO_ARIA_STATE, 6)
+    releaseall
+    end
+}
+
+script Route139_EventScript_KimonoOldWoman{
+    lock
+    faceplayer
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 0 Route139_EventScript_StartSidequest)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 1 Route139_EventScript_RemindSidequest)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 2 Route139_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 3 Route139_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 4 Route139_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 5 Route139_EventScript_GiveResult)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 6, Route139_EventScript_GiveSyrupyApple)
+    msgbox("This dessert has been a staple food\n
+        in our village for a few years now.\p
+        The apples required to make them only grow\n
+        in this area.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script Route139_EventScript_StartSidequest{
+    lock
+    msgbox("Hm… I sense strength in you, young one.\n
+        Would you mind helping out an old lady?\p
+        These meat heads only think about\n
+        battling, and they're all bored of\l
+        battling each other.\p
+        Do you mind battling them?\n
+        I want them to get fired up.\p
+        I'll give you a reward if you can\n
+        get all 5 of them fired up." MSGBOX_AUTOCLOSE)
+    waitmessage
+    setvar(VAR_BALDESIA_ROUTE_139_STATE, 1)
+    release
+    end
+}
+
+script Route139_EventScript_RemindSidequest{
+    lock
+    msgbox("I need to get my workers fired up.\p
+        If you can defeat all 5 of them in\n
+        a battle, I'll give you a reward.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script Route139_EventScript_GiveResult{
+    buffernumberstring(STR_VAR_1, VAR_ROUTE_139_TRAINER_COUNT)
+    msgbox("So far you've defeat {STR_VAR_1} out of\n
+        my 5 workers.\p
+        Keep up the good work.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script Route139_EventScript_GiveSyrupyApple{
+    lock
+    msgbox("Thank you, young one.\p
+        My workers are all fired up.\n
+        As promised, here's your reward." MSGBOX_AUTOCLOSE)
+    waitmessage
+    checkitemspace(ITEM_SYRUPY_APPLE)
+    if(var(VAR_RESULT) == TRUE){
+        giveitem(ITEM_SYRUPY_APPLE)
+        waitmessage
+        msgbox("This dessert has been a staple food\n
+        in our village for a few years now.\p
+        The apples required to make them only grow\n
+        in this area.", MSGBOX_AUTOCLOSE)
+        setvar(VAR_BALDESIA_ROUTE_139_STATE, 7)
+    }
+    else{
+        msgbox("Hm… It seems you don't have enough room,\n
+        young one.", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    release
+    end
+}
+
+script Route139_EventScript_Morgan{
+    lock
+    specialvar(VAR_RESULT, GetTrainerFlag)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored)
+    if(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == FALSE){
+        faceplayer
+        playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+        msgbox("Huh? The boss said we should battle?\n
+            Alright, sounds fun!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        trainerbattle_no_intro(TRAINER_MORGAN, Route139_Text_WorkerDefeat)
+        msgbox("Okay!\n
+            I feel like I can focus on my work now!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        addvar(VAR_ROUTE_139_TRAINER_COUNT, 1)
+        addvar(VAR_BALDESIA_ROUTE_139_STATE, 1)
+    }
+    elif(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == TRUE){
+        goto(Route139_EventScript_WorkerFiredUp)
+    }
+    release
+    end
+}
+
+script Route139_EventScript_Dinwiddle{
+    lock
+    specialvar(VAR_RESULT, GetTrainerFlag)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored)
+    if(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == FALSE){
+        faceplayer
+        playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+        msgbox("Huh? The boss said we should battle?\n
+            Alright, sounds fun!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        trainerbattle_no_intro(TRAINER_DINWIDDLE, Route139_Text_WorkerDefeat)
+        msgbox("Okay!\n
+            I feel like I can focus on my work now!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        addvar(VAR_ROUTE_139_TRAINER_COUNT, 1)
+        addvar(VAR_BALDESIA_ROUTE_139_STATE, 1)
+    }
+    elif(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == TRUE){
+        goto(Route139_EventScript_WorkerFiredUp)
+    }
+    release
+    end
+}
+
+script Route139_EventScript_Widdledin{
+    lock
+    specialvar(VAR_RESULT, GetTrainerFlag)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored)
+    if(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == FALSE){
+        faceplayer
+        playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+        msgbox("Huh? The boss said we should battle?\n
+            Alright, sounds fun!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        trainerbattle_no_intro(TRAINER_WIDDLEDIN, Route139_Text_WorkerDefeat)
+        msgbox("Okay!\n
+            I feel like I can focus on my work now!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        addvar(VAR_ROUTE_139_TRAINER_COUNT, 1)
+        addvar(VAR_BALDESIA_ROUTE_139_STATE, 1)
+    }
+    elif(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == TRUE){
+        goto(Route139_EventScript_WorkerFiredUp)
+    }
+    release
+    end
+}
+
+script Route139_EventScript_Johnald{
+    lock
+    specialvar(VAR_RESULT, GetTrainerFlag)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored)
+    if(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == FALSE){
+        faceplayer
+        playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+        msgbox("Huh? The boss said we should battle?\n
+            Alright, sounds fun!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        trainerbattle_no_intro(TRAINER_JOHNALD, Route139_Text_WorkerDefeat)
+        msgbox("Okay!\n
+            I feel like I can focus on my work now!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        addvar(VAR_ROUTE_139_TRAINER_COUNT, 1)
+        addvar(VAR_BALDESIA_ROUTE_139_STATE, 1)
+    }
+    elif(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == TRUE){
+        goto(Route139_EventScript_WorkerFiredUp)
+    }
+    release
+    end
+}
+
+script Route139_EventScript_Fredward{
+    lock
+    specialvar(VAR_RESULT, GetTrainerFlag)
+    goto_if_eq(VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored)
+    if(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == FALSE){
+        faceplayer
+        playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+        msgbox("Huh? The boss said we should battle?\n
+            Alright!\p
+            Just warning you, I'm the strongest out\n
+            of all of us!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        trainerbattle_no_intro(TRAINER_FREDWARD, Route139_Text_WorkerDefeat)
+        msgbox("Okay!\n
+            I feel like I can focus on my work now!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        addvar(VAR_ROUTE_139_TRAINER_COUNT, 1)
+        addvar(VAR_BALDESIA_ROUTE_139_STATE, 1)
+    }
+    elif(var(VAR_BALDESIA_ROUTE_139_STATE) >=1 && var(VAR_RESULT) == TRUE){
+        goto(Route139_EventScript_WorkerFiredUp)
+    }
+    release
+    end
+}
+
+script Route139_EventScript_WorkerFiredUp{
+    lock
+    faceplayer
+    msgbox("Thanks!\n
+        I lost, but that was a great battle!\p
+        I feel like I can focus on my work now!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route139_EventScript_WorkerBored{
+    lock
+    msgbox("So bored…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+text Route139_Text_WorkerDefeat{
+    "That was a great battle!"
+}
+
+movement Route139_Movement_MomoToPlayerLeftTrigger{
+    walk_left * 10
+}
+
+movement Route139_Movement_MomoToPlayerTrigger{
+    walk_left * 9
+}
+
+movement Route139_Movement_MomoToPlayerRightTrigger{
+    walk_left * 8
+}
+
+

@@ -50,10 +50,10 @@
 #define FLAG_DEFEATED_KLAWF                    0x24 // Route 136
 #define FLAG_DEFEATED_JIRACHI                  0x25 // Baldesia Altar
 #define FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS    0x26 // Baldesia Altar
-#define FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE     0x27 // Unused Flag
-#define FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE   0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
+#define FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE     0x27 // Baldesia Main House CS
+#define FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE   0x28 // Baldesia Main House CS
+#define FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE     0x29 // Baldesia Main House
+#define FLAG_HIDE_MOMO_ROUTE_139               0x2A // Route 139
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag

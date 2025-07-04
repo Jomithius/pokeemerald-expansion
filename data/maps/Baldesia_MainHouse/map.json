@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Lohan",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Lindsay",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Bennis",
       "flag": "FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE"
     },
     {
@@ -76,8 +76,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE"
+      "script": "Baldesia_MainHouse_EventScript_Asak",
+      "flag": "FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Panini",
       "flag": "FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Aria",
       "flag": "FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE"
     },
     {
@@ -115,21 +115,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Ninja",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_DOJO",
-      "x": 4,
-      "y": 10,
+      "graphics_id": "OBJ_EVENT_GFX_NINJA",
+      "x": 14,
+      "y": 12,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KIMONO_OLDLADY",
@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Ninja",
       "flag": "0"
     },
     {
@@ -167,8 +167,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Baldesia_MainHouse_EventScript_OldMan",
+      "flag": "FLAG_HIDE_NINJA_BALDESIA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
@@ -180,7 +180,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_OldWoman",
       "flag": "0"
     },
     {
@@ -206,7 +206,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Guard",
       "flag": "0"
     },
     {
@@ -219,7 +219,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_Guard",
       "flag": "0"
     },
     {
@@ -232,7 +232,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_NinjaBoy",
       "flag": "0"
     },
     {
@@ -245,7 +245,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Baldesia_MainHouse_EventScript_NinjaBoy",
       "flag": "0"
     },
     {
@@ -259,7 +259,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PANINI_BALDESIA_HOUSE1"
+      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA",
@@ -272,7 +272,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PANINI_BALDESIA_HOUSE1"
+      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA",
@@ -285,7 +285,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PANINI_BALDESIA_HOUSE1"
+      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA",
@@ -298,7 +298,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PANINI_BALDESIA_HOUSE1"
+      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA",
@@ -311,7 +311,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PANINI_BALDESIA_HOUSE1"
+      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA",
@@ -324,7 +324,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PANINI_BALDESIA_HOUSE1"
+      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA",
@@ -340,43 +340,17 @@
       "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NINJA",
-      "x": 14,
-      "y": 12,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_NINJA",
-      "x": 13,
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_DOJO",
+      "x": 5,
       "y": 10,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_NINJA",
-      "x": 15,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE"
+      "script": "Baldesia_MainHouse_EventScript_OldManDojo",
+      "flag": "FLAG_HIDE_NINJA_BALDESIA"
     }
   ],
   "warp_events": [
