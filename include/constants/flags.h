@@ -54,11 +54,11 @@
 #define FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE   0x28 // Baldesia Main House CS
 #define FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE     0x29 // Baldesia Main House
 #define FLAG_HIDE_MOMO_ROUTE_139               0x2A // Route 139
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
+#define FLAG_DEFEATED_WORKER_MORGAN            0x2B // Route 139 Sidequest
+#define FLAG_DEFEATED_WORKER_DINWIDDLE         0x2C // Route 139 Sidequest
+#define FLAG_DEFEATED_WORKER_WIDDLEDIN         0x2D // Route 139 Sidequest
+#define FLAG_DEFEATED_WORKER_FREDWARD          0x2E // Route 139 Sidequest
+#define FLAG_DEFEATED_WORKER_JOHNALD           0x2F // Route 139 Sidequest
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
@@ -1345,7 +1345,7 @@
 
 // System Flags
 
-#define SYSTEM_FLAGS                                   (TRAINER_FLAGS_END + 1) // 0x860
+#define SYSTEM_FLAGS                                 (TRAINER_FLAGS_END + 1) // 0x860
 
 #define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0x860
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)

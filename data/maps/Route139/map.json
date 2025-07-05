@@ -38,10 +38,10 @@
       "x": 11,
       "y": 13,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route139_EventScript_Johnald",
       "flag": "0"
@@ -51,17 +51,17 @@
       "x": 11,
       "y": 15,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route139_EventScript_Morgan",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KIMONO_OLDLADY",
-      "x": 13,
+      "x": 14,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
@@ -77,10 +77,10 @@
       "x": 12,
       "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route139_EventScript_Dinwiddle",
       "flag": "0"
@@ -90,10 +90,10 @@
       "x": 15,
       "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route139_EventScript_Widdledin",
       "flag": "0"
@@ -103,10 +103,10 @@
       "x": 46,
       "y": 10,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route139_EventScript_Fredward",
       "flag": "0"
@@ -264,21 +264,21 @@
     },
     {
       "type": "trigger",
-      "x": 19,
-      "y": 24,
-      "elevation": 0,
-      "var": "VAR_MOMO_ARIA_STATE",
-      "var_value": "5",
-      "script": "Route139_EventScript_Momo"
-    },
-    {
-      "type": "trigger",
       "x": 20,
       "y": 24,
       "elevation": 0,
       "var": "VAR_MOMO_ARIA_STATE",
       "var_value": "5",
       "script": "Route139_RightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_MOMO_ARIA_STATE",
+      "var_value": "5",
+      "script": "Route139_EventScript_Momo"
     }
   ],
   "bg_events": [
