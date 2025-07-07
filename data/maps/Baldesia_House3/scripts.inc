@@ -16,7 +16,7 @@ Baldesia_House3_EventScript_Girl::
 
 Baldesia_House3_EventScript_KimonoLady::
 # 19 "data/maps/Baldesia_House3/scripts.pory"
-	goto_if_set FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS, Baldesia_House3_EventScript_KimonoLady_2
+	goto_if_set FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR, Baldesia_House3_EventScript_KimonoLady_2
 # 25 "data/maps/Baldesia_House3/scripts.pory"
 	msgbox Baldesia_House3_EventScript_KimonoLady_Text_1, MSGBOX_NPC
 Baldesia_House3_EventScript_KimonoLady_1:

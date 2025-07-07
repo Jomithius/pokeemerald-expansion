@@ -103,6 +103,7 @@ script BaldesianForestDojo_DisciplePositionsBruno{
     addobject(21)
     addobject(23)
     addobject(26) // laroldina
+    hideobjectat(22, MAP_BALDESIAN_FOREST_DOJO)
     clearflag(FLAG_HIDE_GAUNTLET_TRAINERS)
     clearflag(FLAG_HIDE_LAROLDINA_SPECTATOR)
     return
@@ -110,7 +111,7 @@ script BaldesianForestDojo_DisciplePositionsBruno{
 
 script BaldesianForestDojo_RemoveTrainerPokemon{
     removeobject(14) // laroldina
-    removeobject(24) //cornelius
+    removeobject(24) // cornelius
     removeobject(25) // asak
     return
 }
@@ -209,8 +210,8 @@ script BaldesianForestDojo_EventScript_ReadyToChallengeBruno{
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
         waitmovement(0)
         msgbox("OI! BRUNO!\n
-            YOU GOT A CHALLENGER!\p
-            EVERYONE ELSE GET OUT THE WAY!\n
+            YOU GOT A CHALLENGER!\l
+            EVERYONE ELSE GET OUT THE WAY!\p
             Yes, Ma'am!", MSGBOX_AUTOCLOSE)
         waitmessage
         fadescreen(FADE_TO_BLACK)
@@ -429,7 +430,7 @@ script BaldesianForestDojo_EventScript_AsakTrigger{
         applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakToPlayer)
     }
     waitmovement(0)
-    if(flag(FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS) == FALSE){
+    if(flag(FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR) == FALSE){
         msgbox("ASAK: {PLAYER}?\n
         What are you doing here?\l
         What about the ritual?", MSGBOX_DEFAULT)

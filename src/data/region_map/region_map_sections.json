@@ -1818,7 +1818,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_139",
-      "name": "HOLY GROUNDS",
+      "name": "ROUTE 139",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1826,7 +1826,7 @@
     },
     {
       "map_section": "MAPSEC_EASTERN_RUINS",
-      "name": "EASTERN RUINS",
+      "name": "HOLY GROUNDS",
       "x": 0,
       "y": 0,
       "width": 1,

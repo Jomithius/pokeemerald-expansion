@@ -38,12 +38,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MOMO_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KOGA",
-      "x": 18,
-      "y": 22,
+      "x": 17,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_LOHAN_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KIMONOWOMAN",
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_LOHAN_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BENNIS",
@@ -77,12 +77,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_BENNIS_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TATE",
       "x": 18,
-      "y": 21,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_BENNIS_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(PECHARUNT)",
@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS"
+      "flag": "FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(FEZANDIPITI)",
@@ -116,7 +116,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS"
+      "flag": "FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MUNKIDORI)",
@@ -129,7 +129,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS"
+      "flag": "FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(OKIDOGI)",
@@ -142,7 +142,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS"
+      "flag": "FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",

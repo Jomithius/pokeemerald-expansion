@@ -49,7 +49,7 @@
 #define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_2   0x23 // Area Zero
 #define FLAG_DEFEATED_KLAWF                    0x24 // Route 136
 #define FLAG_DEFEATED_JIRACHI                  0x25 // Baldesia Altar
-#define FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS    0x26 // Baldesia Altar
+#define FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR    0x26 // Baldesia Altar
 #define FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE     0x27 // Baldesia Main House CS
 #define FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE   0x28 // Baldesia Main House CS
 #define FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE     0x29 // Baldesia Main House
@@ -65,10 +65,10 @@
 #define FLAG_HIDE_LAROLDINA_SPECTATOR          0x33 // Dojo Challenge
 #define FLAG_RECEIVED_PROTECTIVE_PADS          0x34 // Dojo Challenge
 #define FLAG_HIDE_ASAK_BALDESIAN_FOREST_DOJO   0x35 // Set if player does dojo event before battling bennis for the last time
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
+#define FLAG_HIDE_LOHAN_JIRACHIS_ALTAR         0x36 // Jirachis Altar CS
+#define FLAG_HIDE_BENNIS_JIRACHIS_ALTAR        0x37 // Jirachis Altar CS
+#define FLAG_HIDE_MOMO_JIRACHIS_ALTAR          0x38 // Jirachis Altar CS
+#define FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR       0x39 // Jirachis Altar CS
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
