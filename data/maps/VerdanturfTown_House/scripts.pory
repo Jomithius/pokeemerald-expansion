@@ -6,7 +6,7 @@ script VerdanturfTown_House_Xion{
     lock
     applymovement(1, Common_Movement_FacePlayer)
     waitmovement(1)
-    if(flag(FLAG_RECIEVED_CHOICE_SCARF_XION) == TRUE){
+    if(flag(FLAG_RECEIVED_CHOICE_SCARF_XION) == TRUE){
         msgbox(VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE)
         waitmessage
     }
@@ -17,7 +17,7 @@ script VerdanturfTown_House_Xion{
         waitmessage
         msgbox(VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE)
         waitmessage
-        setflag(FLAG_RECIEVED_CHOICE_SCARF_XION)
+        setflag(FLAG_RECEIVED_CHOICE_SCARF_XION)
     }
     applymovement(1, Common_Movement_FaceOriginalDirection)
     waitmovement(1)

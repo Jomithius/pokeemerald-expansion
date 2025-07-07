@@ -5836,6 +5836,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_CEO:
             return MUS_EXDEATH; 
         case TRAINER_CLASS_MASTER:
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBrunoName))
+                return MUS_RG_VS_GYM_LEADER;
             return MUS_BENNIS;  
         case TRAINER_CLASS_NINJA:
         case TRAINER_CLASS_NINJA_COUPLE:

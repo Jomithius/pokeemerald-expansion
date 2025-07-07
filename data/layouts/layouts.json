@@ -5605,7 +5605,7 @@
       "id": "LAYOUT_BALDESIAN_FOREST_DOJO",
       "name": "BaldesianForestDojo_Layout",
       "width": 16,
-      "height": 20,
+      "height": 21,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_DojoInterior",
       "border_filepath": "data/layouts/BaldesianForestDojo/border.bin",

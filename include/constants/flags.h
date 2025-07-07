@@ -59,12 +59,12 @@
 #define FLAG_DEFEATED_WORKER_WIDDLEDIN         0x2D // Route 139 Sidequest
 #define FLAG_DEFEATED_WORKER_FREDWARD          0x2E // Route 139 Sidequest
 #define FLAG_DEFEATED_WORKER_JOHNALD           0x2F // Route 139 Sidequest
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
+#define FLAG_HIDE_POKEMON_FOREST_DOJO          0x30 // Dojo Challenge
+#define FLAG_HIDE_GAUNTLET_TRAINERS            0x31 // Dojo Challenge
+#define FLAG_HIDE_DOJO_DISCIPLES               0x32 // Dojo Challenge
+#define FLAG_HIDE_LAROLDINA_SPECTATOR          0x33 // Dojo Challenge
+#define FLAG_RECEIVED_PROTECTIVE_PADS          0x34 // Dojo Challenge
+#define FLAG_HIDE_ASAK_BALDESIAN_FOREST_DOJO   0x35 // Set if player does dojo event before battling bennis for the last time
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
@@ -1251,7 +1251,7 @@
 #define FLAG_HIDE_BIKERS_ROUTE_123                                  0x4AD // Speedwagon Route123
 #define FLAG_ROUTE117_RECEIVED_LEFTOVERS                            0x4AE // From Misa
 #define FLAG_XION_HOUSE_LEAF_STONE                                  0x4AF // Xion's House in Verdanturf
-#define FLAG_RECIEVED_CHOICE_SCARF_XION                             0x4B0 // Xion's House in Verdanturf
+#define FLAG_RECEIVED_CHOICE_SCARF_XION                             0x4B0 // Xion's House in Verdanturf
 #define FLAG_HIDE_BIKERS_MAUVILLE                                   0x4B1 // Speedwagon Event Mauville
 #define FLAG_ROUTE110_HIDE_CYCLIST                                  0x4B2 // Speedwagon Event Mauville
 #define FLAG_ROUTE110_HIDE_BIKERS                                   0x4B3 // Speedwagon Event Mauville
@@ -1510,7 +1510,7 @@
 #define FLAG_SYS_BEFORE_ELITE_4_REMATCH             (SYSTEM_FLAGS + 0x86) // For postgame before rechalling E4
 #define FLAG_SYS_THE_UNDER_DIG                      (SYSTEM_FLAGS + 0x87) // Darkrai Event 2279
 #define FLAG_E4_FINAL_REMATCH                       (SYSTEM_FLAGS + 0x88) // Final Rematches
-#define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
+#define FLAG_SYS_DEFEATED_BRUNO                     (SYSTEM_FLAGS + 0x89) // Baldesia Forest Dojo
 #define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag

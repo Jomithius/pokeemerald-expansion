@@ -1,1 +1,762 @@
-mapscripts BaldesianForestDojo_MapScripts {}
+const LOCALID_ASAK = 9
+const LOCALID_BRUNO = 1
+const LOCALID_HAG = 12
+
+mapscripts BaldesianForestDojo_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: BaldesianForestDojo_OnTransition
+    MAP_SCRIPT_ON_RESUME: BaldesianForestDojo_OnResume
+}
+
+script BaldesianForestDojo_OnTransition{
+    setflag(FLAG_TEMP_E)
+    goto_if_le(VAR_BALDESIA_FOREST_DOJO_STATE, 3, BaldesianForestDojo_TryResetGauntlet)
+    goto_if_ge(VAR_BALDESIA_FOREST_DOJO_STATE, 4, BaldesianForestDojo_ResetDojo)
+    end
+}
+
+script BaldesianForestDojo_OnResume{
+    call_if_defeated(TRAINER_LAROLDINA, BaldesianForestDojo_RemoveTrainerPokemon)
+    call_if_defeated(TRAINER_BRUNO, BaldesianForestDojo_RemoveBrunoPokemon)
+    end    
+}
+
+script BaldesianForestDojo_TryResetGauntlet{
+    call(BaldesianForestDojo_ResetDisciplePositions)
+    call(BaldesianForestDojo_RemoveTrainerPokemon)
+    end
+}
+
+script BaldesianForestDojo_ResetDojo{
+    call(BaldesianForestDojo_ResetDisciplePositions)
+    call(BaldesianForestDojo_RemoveTrainerPokemon)
+    call(BaldesianForestDojo_RemoveBrunoPokemon)
+    end
+}
+
+script BaldesianForestDojo_DisciplePositionsGauntlet{
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
+    removeobject(10)
+    removeobject(11)
+    removeobject(13)
+    setflag(FLAG_HIDE_DOJO_DISCIPLES)
+    addobject(15)
+    addobject(16)
+    addobject(17)
+    addobject(18)
+    addobject(19)
+    addobject(20)
+    addobject(21)
+    addobject(22) // laroldina
+    addobject(23)
+    clearflag(FLAG_HIDE_GAUNTLET_TRAINERS)
+    return
+}
+
+script BaldesianForestDojo_ResetDisciplePositions{
+    removeobject(15)
+    removeobject(16)
+    removeobject(17)
+    removeobject(18)
+    removeobject(19)
+    removeobject(20)
+    removeobject(21)
+    removeobject(22)
+    removeobject(23)
+    removeobject(26)
+    setflag(FLAG_HIDE_GAUNTLET_TRAINERS)
+    setflag(FLAG_HIDE_LAROLDINA_SPECTATOR)
+    addobject(3)
+    addobject(4)
+    addobject(5)
+    addobject(6)
+    addobject(7)
+    addobject(8)
+    addobject(10)
+    addobject(11)
+    addobject(13)
+    clearflag(FLAG_HIDE_DOJO_DISCIPLES)
+    return
+}
+
+script BaldesianForestDojo_DisciplePositionsBruno{
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
+    removeobject(10)
+    removeobject(11)
+    removeobject(13)
+    setflag(FLAG_HIDE_DOJO_DISCIPLES)
+    addobject(15)
+    addobject(16)
+    addobject(17)
+    addobject(18)
+    addobject(19)
+    addobject(20)
+    addobject(21)
+    addobject(23)
+    addobject(26) // laroldina
+    clearflag(FLAG_HIDE_GAUNTLET_TRAINERS)
+    clearflag(FLAG_HIDE_LAROLDINA_SPECTATOR)
+    return
+}
+
+script BaldesianForestDojo_RemoveTrainerPokemon{
+    removeobject(14) // laroldina
+    removeobject(24) //cornelius
+    removeobject(25) // asak
+    return
+}
+
+script BaldesianForestDojo_RemoveBrunoPokemon{
+    removeobject(2)
+    return
+}
+
+script BaldesianForestDojo_EventScript_KimonoOldWoman{
+    lock
+    goto_if_eq(VAR_BALDESIA_FOREST_DOJO_STATE, 1, BaldesianForestDojo_EventScript_ExplainDojo)
+    goto_if_eq(VAR_BALDESIA_FOREST_DOJO_STATE, 2, BaldesianForestDojo_EventScript_ReadyToChallenge)
+    goto_if_eq(VAR_BALDESIA_FOREST_DOJO_STATE, 3, BaldesianForestDojo_EventScript_ReadyToChallengeBruno)
+    goto_if_unset(FLAG_RECEIVED_PROTECTIVE_PADS, BaldesianForestDojo_EventScript_GiveProtectivePads)
+    msgbox("Kahaha!\n
+        I've never seen BRUNO lose.\p
+        Good, good!\n
+        You've entertained this old lady!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_ExplainDojo{
+    lock
+    msgbox(BaldesianForestDojo_Text_ExplainDojo, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_HAG, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    msgbox("OI! WE GOT A CHALLENGER!\n
+        GET READY!\p
+        Yes, Ma'am!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    call(BaldesianForestDojo_DisciplePositionsGauntlet)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(LOCALID_HAG, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("Kahaha!\n
+        Alright! Good luck!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 2)
+    special(HealPlayerParty)
+    goto(BaldesianForestDojo_EventScript_DojoChallenge)
+    release
+    end   
+}
+
+script BaldesianForestDojo_EventScript_ReadyToChallenge{
+    lock
+    msgbox("Kahaha! Welcome back!\n
+        Here to try again?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        applymovement(LOCALID_HAG, Common_Movement_WalkInPlaceRight)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+        waitmovement(0)
+        msgbox("OI! WE GOT A CHALLENGER!\n
+            GET READY!\p
+            Yes, Ma'am!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        call(BaldesianForestDojo_DisciplePositionsGauntlet)
+        fadescreen(FADE_FROM_BLACK)
+        applymovement(LOCALID_HAG, Common_Movement_WalkInPlaceDown)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+        waitmovement(0)
+        msgbox("Kahahaha!\n
+            Alright! Good luck!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        special(HealPlayerParty)
+        goto(BaldesianForestDojo_EventScript_DojoChallenge)
+    }
+    else{
+        msgbox("Alright.\n
+            Let me know when you're ready.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end  
+}
+
+script BaldesianForestDojo_EventScript_ReadyToChallengeBruno{
+    lock
+    msgbox("Kahaha! Welcome back!\n
+        BRUNO's waiting! Ready?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        applymovement(LOCALID_HAG, Common_Movement_WalkInPlaceRight)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+        waitmovement(0)
+        msgbox("OI! BRUNO!\n
+            YOU GOT A CHALLENGER!\p
+            EVERYONE ELSE GET OUT THE WAY!\n
+            Yes, Ma'am!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        call(BaldesianForestDojo_DisciplePositionsBruno)
+        fadescreen(FADE_FROM_BLACK)
+        applymovement(LOCALID_HAG, Common_Movement_WalkInPlaceDown)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+        waitmovement(0)
+        msgbox("Kahahaha!\n
+            Alright! Good luck!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        special(HealPlayerParty)
+        goto(BaldesianForestDojo_EventScript_ChallengeBruno)
+    }
+    else{
+        msgbox("Alright.\n
+            Let me know when you're ready.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end  
+}
+
+script BaldesianForestDojo_EventScript_GiveProtectivePads{
+    lock
+    msgbox("Kahahaha! Great job!\n
+        You actually beat BRUNO!\p
+        Here's your reward!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    checkitemspace(ITEM_PROTECTIVE_PADS)
+    if(var(VAR_RESULT) == TRUE){
+        giveitem(ITEM_PROTECTIVE_PADS)
+        waitmessage
+        setflag(FLAG_RECEIVED_PROTECTIVE_PADS)
+        msgbox("BRUNO wanted to talk to you too.\n
+            Don't keep him waiting too long!", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("You don't have any room!\n
+            Come back when you have space!", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    release
+    end    
+}
+
+script BaldesianForestDojo_EventScript_Bruno{
+    lock
+    faceplayer
+    goto_if_le(VAR_BALDESIA_FOREST_DOJO_STATE, 3, BaldesianForestDojo_EventScript_BrunoAChallenger)
+    goto_if_unset(FLAG_SYS_DEFEATED_BRUNO, BaldesianForestDojo_EventScript_GiveKubfu)
+    goto_if_eq(VAR_BALDESIA_FOREST_DOJO_STATE, 4, BaldesianForestDojo_EventScript_GiveScroll)
+    msgbox("I'll keep training.\n
+        Our battle re-inspired me.\p
+        There's also still the pressing issue\n
+        of finding a sucessor…\p
+        If only my younger brother wasn't\n
+        MASTER BENNIS's disciple.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_BrunoAChallenger{
+    lock
+    msgbox("Oh, are you a new challenger?", MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        msgbox("I see.\n
+            I look forward to our battle.\p
+            As long as you can prove yourself\n
+            worthy, that is.", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("Hm. Then why are you here?\n
+            Don't waste my time.", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_GiveKubfu{
+    lock
+    msgbox("That was a great battle.\n
+        As acknowledgement of your strength,\l
+        I want you to accept this KUBFU.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    givemon(SPECIES_KUBFU, 70)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_KUBFU)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received KUBFU!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_SYS_DEFEATED_BRUNO)
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received KUBFU!\p
+            KUBFU was sent to the PC.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_SYS_DEFEATED_BRUNO)
+    }
+    else{
+        goto(Common_EventScript_NoMoreRoomForPokemon)
+    }
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_GiveScroll{
+    lock
+    faceplayer
+    msgbox("I'll also give you one scroll.\n
+        It contains secret techniques passed\l
+        down in our family for generations.\p
+        Which one would you like?\n
+        Choose wisely.", MSGBOX_DEFAULT)
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Scroll of Darkness", "Scroll of Waters")
+    if(var(VAR_RESULT) == 0){
+        giveitem(ITEM_SCROLL_OF_DARKNESS)
+        waitmessage
+        setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 5)
+    }
+    elif(var(VAR_RESULT) == 1){
+        giveitem(ITEM_SCROLL_OF_WATERS)
+        waitmessage
+        setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 5)
+    }
+    else{
+        msgbox("You don't have any room.\n
+        Come back when you do.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_Disciple{
+    msgbox("They're busy training.\n
+    It's probably a bad idea to disturb them.", MSGBOX_SIGN)
+    end
+}
+
+script BaldesianForestDojo_EventScript_OldManDojo{
+    lock
+    faceplayer
+    msgbox("I'm the referee for the battles\n
+        during dojo challenges.\p
+        Nothing will get past me, so\n
+        don't even think about cheating!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_Kubfu{
+    lock
+    faceplayer
+    playmoncry(SPECIES_KUBFU, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_Asak{
+    lock
+    faceplayer
+    if(var(VAR_BALDESIA_FOREST_DOJO_STATE) <= 3){
+        msgbox("It's been a while since I've come home.\n
+            I guess brother's still a strong as ever.", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("Wow… you really beat brother…\p
+        No wonder MASTER BENNIS and LADY\n
+        ASAKURA recognize your strength.", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_Nerd{
+    msgbox("Huff… Huff…\p
+        Even though I look like this, I\n
+        love training in the martial arts.", MSGBOX_SIGN)
+    end
+}
+
+script BaldesianForestDojo_LeftTrigger{
+    lockall
+    setflag(FLAG_TEMP_5)
+    goto(BaldesianForestDojo_EventScript_AsakTrigger)
+    end
+}
+
+script BaldesianForestDojo_EventScript_AsakTrigger{
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_ASAK, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    if(flag(FLAG_TEMP_5) == TRUE){
+        applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakToPlayerLeft)
+    }
+    else{
+        applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakToPlayer)
+    }
+    waitmovement(0)
+    if(flag(FLAG_HIDE_PECHARUNT_BALDESIAN_RUINS) == FALSE){
+        msgbox("ASAK: {PLAYER}?\n
+        What are you doing here?\l
+        What about the ritual?", MSGBOX_DEFAULT)
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "I'll still make it in time.", "Don't worry about it.")
+        msgbox("………\n
+            Uh… okay.\p
+            You must be here to challenge the DOJO,\n
+            then.\p
+            Talk to the old hag over there.\n
+            She'll get everything set up.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        if(flag(FLAG_TEMP_5) == TRUE){
+            applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturnsLeft)
+        }
+        else{
+            applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturns)
+        }
+        delay(8)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+        waitmovement(LOCALID_ASAK)
+    }
+    else{
+        msgbox("ASAK: {PLAYER}?\n
+        What are you doing here?\l
+        What about the ritual?\p
+        … … …\n
+        I see… So all that happened.\l
+        Thanks for everything that you did.\p
+        You must be here to challenge the DOJO,\n
+        then.\p
+        Talk to the old hag over there.\n
+        She'll get everything set up.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        if(flag(FLAG_TEMP_5) == TRUE){
+            applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturnsLeft)
+        }
+        else{
+            applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturns)
+        }
+        delay(8)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+        waitmovement(LOCALID_ASAK)
+    }
+    setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 1)
+    releaseall
+    end
+}
+
+script BaldesianForestDojo_EventScript_DojoChallenge{
+    lock
+    clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    callnative(UpdateFollowingPokemon)
+    applymovement(OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerGoesToGauntlet)
+    waitmovement(0)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    addobject(14)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
+    waitmovement(0)
+    fadescreen(FADE_FROM_WHITE)
+    playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+    msgbox("I'm first!\p
+        You gotta get through me before you\n
+        even think about battling BRUNO!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_LAROLDINA, BaldesianForestDojo_Text_BattleGirlDefeat)
+    playse(SE_ARENA_TIMEUP2)
+    waitse
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    msgbox("OLD MAN: Winner: Challenger!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(22, BaldesianForestDojo_Movement_LaroldinaGoesToSeat)
+    delay(8)
+    applymovement(21, BaldesianForestDojo_Movement_CorneliusGoesToStage)
+    waitmovement(21)
+    delay(60)
+    special(HealPlayerParty)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    addobject(24)
+    fadescreen(FADE_FROM_WHITE)
+    waitse
+    playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
+    msgbox("I'm next!\p
+        You shall fear the power of my\n
+        secret martial arts!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_CORNELIUS, BaldesianForestDojo_Text_NerdDefeat)
+    playse(SE_ARENA_TIMEUP2)
+    waitse
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    msgbox("OLD MAN: Winner: Challenger!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(30)
+    applymovement(21, BaldesianForestDojo_Movement_CorneliusGoesToSeat)
+    delay(8)
+    applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakGoesToStage)
+    waitmovement(LOCALID_ASAK)
+    delay(60)
+    special(HealPlayerParty)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    addobject(25)
+    fadescreen(FADE_FROM_WHITE)
+    waitse
+    msgbox("{PLAYER}.\p
+        I'll show you how much stronger\n
+        I've gotten!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_ASAK_2, BaldesianForestDojo_Text_AsakDefeat)
+    playse(SE_ARENA_TIMEUP2)
+    waitse
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    msgbox("OLD MAN: Winner: Challenger!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 3)
+    applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturnsToSeat)
+    waitmovement(0)
+    applymovement(LOCALID_BRUNO, Common_Movement_WalkDown4)
+    delay(8)
+    applymovement(2, Common_Movement_WalkDown4)
+    waitmovement(2)
+    special(HealPlayerParty)
+    playbgm(MUS_RG_ENCOUNTER_GYM_LEADER, FALSE)
+    msgbox("BRUNO: Those were impressive battles.\n
+        Finally, it's my turn.\p
+        Will you be the first one to defeat me?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat)
+    playbgm(MUS_NONE, FALSE)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    delay(30)
+    playse(SE_PIN)
+    applymovement(23, Common_Movement_ExclamationMark)
+    waitmovement(23)
+    waitse
+    msgbox("OLD MAN: T-The winner is {PLAYER}!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playfanfare(MUS_RG_CAUGHT_INTRO)
+    waitfanfare
+    fadedefaultbgm
+    applymovement(LOCALID_BRUNO, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("{PLAYER}, was it? After you receive\n
+        your prize, come talk to me.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BRUNO, Common_Movement_WalkUp4)
+    waitmovement(0)
+    applymovement(LOCALID_BRUNO, Common_Movement_FaceDown)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    applymovement(OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerReturns)
+    waitmovement(0)
+    fadescreen(FADE_TO_BLACK)
+    call(BaldesianForestDojo_ResetDisciplePositions)
+    fadescreen(FADE_FROM_BLACK)
+    setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 4)
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_ChallengeBruno{
+    lock
+    clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    callnative(UpdateFollowingPokemon)
+    applymovement(OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerGoesToGauntlet)
+    waitmovement(0)
+    applymovement(LOCALID_BRUNO, Common_Movement_WalkDown4)
+    applymovement(2, Common_Movement_WalkDown4)
+    waitmovement(0)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
+    waitmovement(0)
+    fadescreen(FADE_FROM_WHITE)
+    playbgm(MUS_RG_ENCOUNTER_GYM_LEADER, FALSE)
+    msgbox("BRUNO: So you've come to challenge\n
+        me again. Very well.\p
+        Will you be the first one to defeat me?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat)
+    playbgm(MUS_NONE, FALSE)
+    delay(30)
+    playse(SE_PIN)
+    applymovement(23, Common_Movement_ExclamationMark)
+    waitmovement(23)
+    waitse
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    msgbox("OLD MAN: T-The winner is {PLAYER}!", MSGBOX_AUTOCLOSE)
+    playfanfare(MUS_RG_CAUGHT_INTRO)
+    waitfanfare
+    waitmessage
+    fadedefaultbgm
+    applymovement(LOCALID_BRUNO, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("{PLAYER}, was it? After you receive\n
+        your prize, come talk to me.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BRUNO, Common_Movement_WalkUp4)
+    waitmovement(0)
+    applymovement(LOCALID_BRUNO, Common_Movement_FaceDown)
+    delay(8)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    applymovement(OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerReturns)
+    waitmovement(0)
+    fadescreen(FADE_TO_BLACK)
+    call(BaldesianForestDojo_ResetDisciplePositions)
+    fadescreen(FADE_FROM_BLACK)
+    setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 4)
+    release
+    end
+}
+
+movement BaldesianForestDojo_Movement_AsakToPlayer{
+    walk_down * 2
+    walk_left * 6
+    walk_in_place_down
+}
+
+movement BaldesianForestDojo_Movement_AsakToPlayerLeft{
+    walk_down * 2
+    walk_left * 7
+    walk_in_place_down
+}
+
+movement BaldesianForestDojo_Movement_AsakReturns{
+    walk_right * 6
+    walk_up * 2
+    walk_in_place_left
+}
+
+movement BaldesianForestDojo_Movement_AsakReturnsLeft{
+    walk_right * 7
+    walk_up * 2
+    walk_in_place_left
+}
+
+movement BaldesianForestDojo_Movement_PlayerGoesToGauntlet{
+    walk_right * 3
+    walk_up * 2
+    walk_right * 4
+    walk_up * 3
+}
+
+movement BaldesianForestDojo_Movement_FollowerBesidePlayer{
+    walk_left
+    walk_in_place_up
+}
+
+movement BaldesianForestDojo_Movement_LaroldinaGoesToSeat{
+    walk_left * 6
+    walk_down * 2
+    walk_left
+    walk_in_place_right
+}
+
+movement BaldesianForestDojo_Movement_CorneliusGoesToStage{
+    walk_left * 6
+    walk_down
+}
+
+movement BaldesianForestDojo_Movement_CorneliusGoesToSeat{
+    walk_up
+    walk_right * 6
+    walk_in_place_left
+}
+
+movement BaldesianForestDojo_Movement_AsakGoesToStage{
+    walk_left
+    walk_up * 4
+    walk_left * 5
+    walk_in_place_down
+}
+
+movement BaldesianForestDojo_Movement_AsakReturnsToSeat{
+    walk_right * 5
+    walk_down * 4
+    walk_right
+    walk_in_place_left
+}
+
+movement BaldesianForestDojo_Movement_PlayerReturns{
+    walk_down * 3
+    walk_left * 4
+    walk_down * 2
+    walk_left * 3
+    walk_in_place_up
+
+}
+
+text BaldesianForestDojo_Text_ExplainDojo{
+    "Oh, a challenger? Kahaha, good!\n
+    We haven't been getting many lately.\p
+    The way the challenge works is simple:\n
+    beat three of our disciples in a row.\l
+    Only then can you challenge BRUNO.\p
+    Easy, right? Kahahaha!\n
+    Let's get everything set up for you!"
+}
+
+text BaldesianForestDojo_Text_BattleGirlDefeat{
+    "Maybe you can think about battling\n
+    him…"
+}
+
+text BaldesianForestDojo_Text_NerdDefeat{
+    "I should've become a KNIGHT instead."
+}
+
+text BaldesianForestDojo_Text_AsakDefeat{
+    "…… As expected of the one\n
+    acknowledged by MASTER BENNIS."
+}
+
+text BaldesianForestDojo_Text_BrunoDefeat{
+    "… I was finally defeated……\n
+    Impressive. Truly impressive."
+}

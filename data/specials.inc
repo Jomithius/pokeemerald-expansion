@@ -565,3 +565,4 @@ gSpecials::
 	def_special GetCodeFeedback
 	def_special GetLeadMonSpecies
 	def_special IsLeadMonCat
+	def_special SetObjectMovementType

@@ -11230,3 +11230,15 @@ static u16 GetUnownSpecies(struct Pokemon *mon)
         return SPECIES_UNOWN;
     return SPECIES_UNOWN_B + form - 1;
 }
+
+void SetObjectMovementType(void)
+{
+    struct ObjectEvent *objectEvent = &gObjectEvents[GetObjectEventIdByLocalId(gSpecialVar_0x8005)];
+    u8 movementType = gSpecialVar_0x8006;
+    
+    objectEvent->movementType = movementType;
+    objectEvent->directionSequenceIndex = 0;
+    objectEvent->playerCopyableMovement = 0;
+    gSprites[objectEvent->spriteId].callback = sMovementTypeCallbacks[movementType];
+    gSprites[objectEvent->spriteId].data[1] = 0;
+}

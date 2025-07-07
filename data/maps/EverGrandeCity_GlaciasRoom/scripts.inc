@@ -83,7 +83,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 # 42 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
 # 43 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-    goto_if_set FLAG_RECIEVED_CHOICE_SCARF_XION, EverGrandeCity_GlaciasRoom_EventScript_Xion
+    goto_if_set FLAG_RECEIVED_CHOICE_SCARF_XION, EverGrandeCity_GlaciasRoom_EventScript_Xion
 # 44 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 45 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"

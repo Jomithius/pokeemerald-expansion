@@ -11,7 +11,7 @@ VerdanturfTown_House_Xion::
 # 8 "data/maps/VerdanturfTown_House/scripts.pory"
 	waitmovement 1
 # 9 "data/maps/VerdanturfTown_House/scripts.pory"
-	goto_if_set FLAG_RECIEVED_CHOICE_SCARF_XION, VerdanturfTown_House_Xion_2
+	goto_if_set FLAG_RECEIVED_CHOICE_SCARF_XION, VerdanturfTown_House_Xion_2
 # 14 "data/maps/VerdanturfTown_House/scripts.pory"
 	msgbox VerdanturfTown_House_Text_Xion, MSGBOX_NPC
 # 15 "data/maps/VerdanturfTown_House/scripts.pory"
@@ -25,7 +25,7 @@ VerdanturfTown_House_Xion::
 # 19 "data/maps/VerdanturfTown_House/scripts.pory"
 	waitmessage
 # 20 "data/maps/VerdanturfTown_House/scripts.pory"
-	setflag FLAG_RECIEVED_CHOICE_SCARF_XION
+	setflag FLAG_RECEIVED_CHOICE_SCARF_XION
 VerdanturfTown_House_Xion_1:
 # 22 "data/maps/VerdanturfTown_House/scripts.pory"
 	applymovement 1, Common_Movement_FaceOriginalDirection

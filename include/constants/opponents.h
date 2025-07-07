@@ -602,8 +602,8 @@
 #define TRAINER_GRUNT_WEATHER_INST_5        596
 #define TRAINER_TABITHA_MT_CHIMNEY          597
 #define TRAINER_JONATHAN                    598
-#define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599 // free
-#define TRAINER_MAY_RUSTBORO_MUDKIP         600 // free
+#define TRAINER_LAROLDINA                   599
+#define TRAINER_CORNELIUS                   600
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
 #define TRAINER_TIANA                       603
@@ -664,9 +664,9 @@
 #define TRAINER_WALLY_VR_3                  658
 #define TRAINER_WALLY_VR_4                  659
 #define TRAINER_WALLY_VR_5                  660
-#define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661 // free
+#define TRAINER_ASAK_2                      661
 #define TRAINER_BRENDAN_LILYCOVE_TREECKO    662
-#define TRAINER_BRENDAN_LILYCOVE_TORCHIC    663 // free
+#define TRAINER_BRUNO                       663
 #define TRAINER_MAY_LILYCOVE_MUDKIP         664 // free
 #define TRAINER_MAY_LILYCOVE_TREECKO        665 // free
 #define TRAINER_MAY_LILYCOVE_TORCHIC        666
