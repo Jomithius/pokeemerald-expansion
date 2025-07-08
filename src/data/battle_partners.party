@@ -49,32 +49,34 @@ Pic: Momo
 Gender: Female
 Music: Female
 
-Metang
-Brave Nature
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Light Screen
-- Psychic
-- Reflect
-- Metal Claw
+Poliwrath (M) @ Blunder Policy  
+Ability: Swift Swim  
+Level: 100  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Substitute  
+- Dynamic Punch  
+- Bulk Up  
+- Rock Slide  
 
-Skarmory
-Impish Nature
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 6 SpA / 252 SpD
-- Toxic
-- Aerial Ace
-- Protect
-- Steel Wing
+Greninja (M) @ Life Orb  
+Ability: Protean  
+Level: 100 
+Happiness: 0  
+EVs: 84 HP / 28 Def / 252 SpA / 4 SpD / 140 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Water Shuriken  
+- Dark Pulse  
+- Grass Knot  
+- Blizzard  
 
-Aggron
-Adamant Nature
-Level: 44
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 SpA / 6 SpD
-- Thunder
-- Protect
-- Solar Beam
-- Dragon Claw
+Raichu (F) @ Air Balloon  
+Ability: Lightning Rod  
+Level: 100 
+EVs: 8 HP / 252 SpA / 244 Spe  
+Timid Nature  
+- Nasty Plot  
+- Discharge  
+- Fake Out  
+- Surf  

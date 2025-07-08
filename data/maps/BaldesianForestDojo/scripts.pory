@@ -430,7 +430,7 @@ script BaldesianForestDojo_EventScript_AsakTrigger{
         applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakToPlayer)
     }
     waitmovement(0)
-    if(flag(FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR) == FALSE){
+    if(flag(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR) == FALSE){
         msgbox("ASAK: {PLAYER}?\n
         What are you doing here?\l
         What about the ritual?", MSGBOX_DEFAULT)

@@ -38,4 +38,4 @@ Baldesia_House2_EventScript_OldWoman_Text_0:
 
 Baldesia_House2_EventScript_OldMan_Text_0:
 # 13 "data/maps/Baldesia_House2/scripts.pory"
-	.string "It's said every 1000 years JIRACHI\n awakens to grant one wish.\p That's a lie though.\n It really awakens every 10 years or so.\p It must be a light sleeper.$"
+	.string "It's said every 1000 years JIRACHI\n awakens to grant one wish.\p That's a lie though.\n It really awakens every 50 years or so.\p It must be a light sleeper. Hahaha!$"

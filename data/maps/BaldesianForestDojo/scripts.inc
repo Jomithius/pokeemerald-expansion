@@ -652,7 +652,7 @@ BaldesianForestDojo_EventScript_AsakTrigger_1:
 # 432 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmovement 0
 # 433 "data/maps/BaldesianForestDojo/scripts.pory"
-	goto_if_unset FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR, BaldesianForestDojo_EventScript_AsakTrigger_6
+	goto_if_unset FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR, BaldesianForestDojo_EventScript_AsakTrigger_6
 # 456 "data/maps/BaldesianForestDojo/scripts.pory"
 	msgbox BaldesianForestDojo_EventScript_AsakTrigger_Text_4, MSGBOX_AUTOCLOSE
 # 466 "data/maps/BaldesianForestDojo/scripts.pory"

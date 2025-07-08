@@ -667,8 +667,8 @@
 #define TRAINER_ASAK_2                      661
 #define TRAINER_BRENDAN_LILYCOVE_TREECKO    662
 #define TRAINER_BRUNO                       663
-#define TRAINER_MAY_LILYCOVE_MUDKIP         664 // free
-#define TRAINER_MAY_LILYCOVE_TREECKO        665 // free
+#define TRAINER_LOHAN                       664
+#define TRAINER_LINDSAY                     665 
 #define TRAINER_MAY_LILYCOVE_TORCHIC        666
 #define TRAINER_JONAH                       667
 #define TRAINER_HENRY                       668

@@ -49,7 +49,7 @@
 #define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_2   0x23 // Area Zero
 #define FLAG_DEFEATED_KLAWF                    0x24 // Route 136
 #define FLAG_DEFEATED_JIRACHI                  0x25 // Baldesia Altar
-#define FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR    0x26 // Baldesia Altar
+#define FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR    0x26 // Baldesia Altar
 #define FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE     0x27 // Baldesia Main House CS
 #define FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE   0x28 // Baldesia Main House CS
 #define FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE     0x29 // Baldesia Main House
@@ -69,7 +69,7 @@
 #define FLAG_HIDE_BENNIS_JIRACHIS_ALTAR        0x37 // Jirachis Altar CS
 #define FLAG_HIDE_MOMO_JIRACHIS_ALTAR          0x38 // Jirachis Altar CS
 #define FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR       0x39 // Jirachis Altar CS
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
+#define FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR     0x3A // Jirachis Altar CS
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
@@ -1390,7 +1390,7 @@
 #define FLAG_VISITED_ULTRA_SPACE                    (SYSTEM_FLAGS + 0x21) // custom
 #define FLAG_VISITED_ROUTE_135_LAB                  (SYSTEM_FLAGS + 0x22) // custom
 #define FLAG_I_EXP_SHARE                            (SYSTEM_FLAGS + 0x23) // Exp Share gen 6
-#define B_FLAG_NO_BAG_USE                           (SYSTEM_FLAGS + 0x24) // No Item Use
+#define FLAG_SYS_NO_BAG_USE                         (SYSTEM_FLAGS + 0x24) // No Item Use
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag

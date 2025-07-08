@@ -13,8 +13,8 @@ script Baldesia_House2_EventScript_OldMan{
     msgbox("It's said every 1000 years JIRACHI\n
     awakens to grant one wish.\p
     That's a lie though.\n
-    It really awakens every 10 years or so.\p
-    It must be a light sleeper.", MSGBOX_NPC)
+    It really awakens every 50 years or so.\p
+    It must be a light sleeper. Hahaha!", MSGBOX_NPC)
     end
 }
 

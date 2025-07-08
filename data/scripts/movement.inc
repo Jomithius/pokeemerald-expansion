@@ -222,3 +222,7 @@ Common_Movement_LookAround:
 Common_Movement_WalkFasterUp:
 	walk_faster_up
 	step_end
+
+Common_Movement_WalkFasterRight:
+	walk_faster_right
+	step_end
