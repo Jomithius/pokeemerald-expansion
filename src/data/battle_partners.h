@@ -109,7 +109,7 @@
 #line 46
         .trainerName = _("MOMO"),
 #line 47
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_NINJA,
 #line 48
         .trainerPic = TRAINER_BACK_PIC_MOMO,
         .encounterMusic_gender =
@@ -126,7 +126,7 @@ F_TRAINER_FEMALE |
 #line 52
             .gender = TRAINER_MON_MALE,
 #line 52
-            .heldItem = ITEM_BLUNDER_POLICY,
+            .heldItem = ITEM_SITRUS_BERRY,
 #line 55
             .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
 #line 57
@@ -141,63 +141,63 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 57
                 MOVE_SUBSTITUTE,
-                MOVE_DYNAMIC_PUNCH,
-                MOVE_BULK_UP,
+                MOVE_DRAIN_PUNCH,
+                MOVE_JET_PUNCH,
                 MOVE_ROCK_SLIDE,
             },
             },
             {
 #line 62
-            .species = SPECIES_GRENINJA,
+            .species = SPECIES_SKELEDIRGE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
 #line 62
-            .gender = TRAINER_MON_MALE,
-#line 62
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_THROAT_SPRAY,
 #line 66
-            .ev = TRAINER_PARTY_EVS(84, 0, 28, 140, 252, 4),
+            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
 #line 68
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 63
-            .ability = ABILITY_PROTEAN,
-#line 64
+            .ability = ABILITY_UNAWARE,
+#line 69
             .lvl = 100,
-#line 65
-            .friendship = 0,
 #line 67
-            .nature = NATURE_MODEST,
+            .nature = NATURE_CALM,
+#line 64
+            .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 65
+            .teraType = TYPE_FAIRY,
             .moves = {
 #line 69
-                MOVE_WATER_SHURIKEN,
-                MOVE_DARK_PULSE,
-                MOVE_GRASS_KNOT,
-                MOVE_BLIZZARD,
+                MOVE_TORCH_SONG,
+                MOVE_HEX,
+                MOVE_SLACK_OFF,
+                MOVE_WILL_O_WISP,
             },
             },
             {
 #line 74
-            .species = SPECIES_RAICHU,
+            .species = SPECIES_KROOKODILE,
 #line 74
-            .gender = TRAINER_MON_FEMALE,
+            .gender = TRAINER_MON_MALE,
 #line 74
-            .heldItem = ITEM_AIR_BALLOON,
+            .heldItem = ITEM_LEFTOVERS,
 #line 77
-            .ev = TRAINER_PARTY_EVS(8, 0, 0, 244, 252, 0),
-#line 79
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 75
-            .ability = ABILITY_LIGHTNING_ROD,
-#line 76
+            .ability = ABILITY_MOXIE,
+#line 77
             .lvl = 100,
-#line 78
-            .nature = NATURE_TIMID,
+            .nature = NATURE_HARDY,
+#line 76
+            .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 79
-                MOVE_NASTY_PLOT,
-                MOVE_DISCHARGE,
-                MOVE_FAKE_OUT,
-                MOVE_SURF,
+#line 77
+                MOVE_THUNDER_FANG,
+                MOVE_STONE_EDGE,
+                MOVE_DARKEST_LARIAT,
+                MOVE_EARTHQUAKE,
             },
             },
         },

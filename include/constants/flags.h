@@ -70,7 +70,7 @@
 #define FLAG_HIDE_MOMO_JIRACHIS_ALTAR          0x38 // Jirachis Altar CS
 #define FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR       0x39 // Jirachis Altar CS
 #define FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR     0x3A // Jirachis Altar CS
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
+#define FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO 0x3B // For Bennis Rematch
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
@@ -1512,8 +1512,8 @@
 #define FLAG_E4_FINAL_REMATCH                       (SYSTEM_FLAGS + 0x88) // Final Rematches
 #define FLAG_SYS_DEFEATED_BRUNO                     (SYSTEM_FLAGS + 0x89) // Baldesia Forest Dojo
 #define FLAG_SYS_SMART_WILD_AI                      (SYSTEM_FLAGS + 0x8A) // Smart Ai in wild battles
-#define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
-#define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
+#define FLAG_SYS_NO_RUNNING                         (SYSTEM_FLAGS + 0x8B) // To stop running from wild battles
+#define FLAG_SYS_NO_CATCHING                        (SYSTEM_FLAGS + 0x8C) // To stop catching in wild battles
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag

@@ -44,39 +44,37 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 
 === PARTNER_MOMO ===
 Name: MOMO
-Class: Rival
+Class: Ninja
 Pic: Momo
 Gender: Female
 Music: Female
 
-Poliwrath (M) @ Blunder Policy  
+Poliwrath (M) @ Sitrus Berry  
 Ability: Swift Swim  
 Level: 100  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Substitute  
-- Dynamic Punch  
-- Bulk Up  
+- Drain Punch  
+- Jet Punch  
 - Rock Slide  
 
-Greninja (M) @ Life Orb  
-Ability: Protean  
-Level: 100 
-Happiness: 0  
-EVs: 84 HP / 28 Def / 252 SpA / 4 SpD / 140 Spe  
-Modest Nature  
+Skeledirge @ Throat Spray 
+Ability: Unaware  
+Shiny: Yes  
+Tera Type: Fairy  
+EVs: 248 HP / 8 SpA / 252 SpD  
+Calm Nature  
 IVs: 0 Atk  
-- Water Shuriken  
-- Dark Pulse  
-- Grass Knot  
-- Blizzard  
+- Torch Song  
+- Hex  
+- Slack Off  
+- Will-O-Wisp 
 
-Raichu (F) @ Air Balloon  
-Ability: Lightning Rod  
-Level: 100 
-EVs: 8 HP / 252 SpA / 244 Spe  
-Timid Nature  
-- Nasty Plot  
-- Discharge  
-- Fake Out  
-- Surf  
+Krookodile (M) @ Leftovers  
+Ability: Moxie  
+Shiny: Yes    
+- Thunder Fang  
+- Stone Edge  
+- Darkest Lariat  
+- Earthquake  

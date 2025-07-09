@@ -12,6 +12,7 @@ mapscripts Baldesia_MainHouse_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_MOMO_ARIA_STATE, 3: Baldesia_MainHouse_EventScript_GoToChief
         VAR_MOMO_ARIA_STATE, 4: Baldesia_MainHouse_EventScript_GoToAltar
+        VAR_MOMO_ARIA_STATE, 7: Baldesia_MainHouse_EventScript_LohanThanks
     ]
 }
 
@@ -20,6 +21,7 @@ script Baldesia_MainHouse_OnTransition{
     setflag(FLAG_TEMP_E)
     call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateNPCPos)
     call_if_eq(VAR_MOMO_ARIA_STATE, 6, Baldesia_MainHouse_UpdateNPCPos)
+    call_if_eq(VAR_MOMO_ARIA_STATE, 7, Baldesia_MainHouse_UpdateAriaPos)
     end
 }
 
@@ -29,6 +31,12 @@ script Baldesia_MainHouse_UpdateNPCPos{
     setobjectxyperm(LOCALID_PANINI, 11, 11)
     setobjectmovementtype(LOCALID_PANINI, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
     setobjectmovementtype(LOCALID_BENNIS, MOVEMENT_TYPE_LOOK_AROUND)
+    return
+}
+
+script Baldesia_MainHouse_UpdateAriaPos{
+    setobjectxyperm(LOCALID_ARIA, 12, 7)
+    setobjectmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_FACE_UP)
     return
 }
 
@@ -300,6 +308,60 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     end
 }
 
+script Baldesia_MainHouse_EventScript_LohanThanks{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    msgbox(Baldesia_MainHouse_Text_LohanThankYou, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BRO, Common_Movement_WalkDown2)
+    waitmovement(0)
+    giveitem(ITEM_AUSPICIOUS_ARMOR)
+    waitmessage
+    closemessage
+    applymovement(LOCALID_BRO, Common_Movement_WalkLeft)
+    waitmovement(0)
+    applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    delay(30)
+    applymovement(LOCALID_BRO, Baldesia_MainHouse_Movement_LohanReturns)
+    waitmovement(0)
+    msgbox(Baldesia_MainHouse_Text_AriaRecievesArmor, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_BENNIS, Baldesia_MainHouse_Movement_BennisToPlayer)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: {PLAYER}. I'll be heading\n
+        back to my dojo.\p
+        I want to battle you one more time.\n
+        I'll wait for you there.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_FLEE)
+    fadescreen(FADE_TO_BLACK)
+    waitse
+    removeobject(LOCALID_BENNIS)
+    removeobject(LOCALID_PANINI)
+    clearflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    msgbox("ARIA: I shouldn't make MOMO wait for me\n
+        too long.\p
+        We'll be ready for a rematch soon,\n
+        {PLAYER}!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_AriaLeaves)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(LOCALID_ARIA)
+    removeobject(LOCALID_ARIA)
+    setflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE)
+    clearflag(FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO)
+    setvar(VAR_MOMO_ARIA_STATE, 8)
+    releaseall
+    end
+}
+
 script Baldesia_MainHouse_EventScript_Guard{
     lock
     faceplayer
@@ -399,7 +461,7 @@ script Baldesia_MainHouse_EventScript_OldManDojo{
 }
 
 script Baldesia_MainHouse_EventScript_OldWoman{
-    if(var(VAR_MOMO_ARIA_STATE) <=8){
+    if(var(VAR_MOMO_ARIA_STATE) <=7){
         msgbox("Lately the Village Chief has been\n
             much stricter.\p
             I wonder what changed.", MSGBOX_NPC)
@@ -422,7 +484,7 @@ script Baldesia_MainHouse_EventScript_OldMan{
 }
 
 script Baldesia_MainHouse_EventScript_Lohan{
-    if(var(VAR_MOMO_ARIA_STATE) <=8){
+    if(var(VAR_MOMO_ARIA_STATE) <=7){
         msgbox("Move quickly, {PLAYER}.\n
             There's not much time left.", MSGBOX_NPC)
     }
@@ -435,13 +497,13 @@ script Baldesia_MainHouse_EventScript_Lohan{
 }
 
 script Baldesia_MainHouse_EventScript_Lindsay{
-    if(var(VAR_MOMO_ARIA_STATE) <=8){
+    if(var(VAR_MOMO_ARIA_STATE) <=7){
         msgbox("… We're counting on you.", MSGBOX_NPC)
     }
     else{
-        msgbox("I can't thank you enough for what\n
-            you've done.\p
-            You are always welcome here.", MSGBOX_NPC)
+        msgbox("I'm so sorry for attacking you!\p
+            And thank you so much for everything\n
+            that you did.", MSGBOX_NPC)
     }
     end
 }
@@ -532,6 +594,40 @@ text Baldesia_MainHouse_TextLohan4{
     then head out."
 }
 
+text Baldesia_MainHouse_Text_LohanThankYou{
+    "LOHAN: You've returned.\n
+    I… don't know what to say…\l
+    But I'm sorry. And thank you.\p
+    The mythical POKéMON, PECHARUNT…\n
+    There are stories of it passed down,\l
+    but I didn't believe it to be real.\p
+    Apparently, it uses PECHA BERRIES and\n
+    it's poison to create brainwashing\l
+    mochi. It sounds ridiculous.\p
+    Either way, I won't just thank you.\n
+    I'd like to give you both rewards."
+}
+
+text Baldesia_MainHouse_Text_AriaRecievesArmor{
+    "ARIA: N-New armor…!\n
+    This will increase my power…\p
+    LOHAN: That armor is only given to the\n
+    most trusted allies of the ASAKURA\l
+    family.\p
+    Where's MOMO? I want to apologize to\n
+    her too. My memory is hazy, but I\l
+    remember she was mad before she left.\p
+    ARIA: … I think she went back home.\n
+    I'll let her know.\p
+    LOHAN: … Back home… I see.\n
+    So she's found somewhere she belongs.\p
+    BENNIS, can you head back to HOENN's\n
+    mainland? To make sure she's safe?\p
+    MASTER BENNIS: Yes, sir.\p
+    LOHAN: Well, I won't keep you all\n
+    any longer.\p
+    You're welcome in BALDESIA any time."}
+
 text Baldesia_MainHouse_Text_ThankYouForWaiting{
     "Thank you for waiting.\p
 	We've restored your POKéMON\n
@@ -616,5 +712,22 @@ movement Baldesia_MainHouse_Movement_AsakLeavePlayerFacingNorth{
 movement Baldesia_MainHouse_Movement_AsakLeave{
     walk_down * 4
     walk_right * 3
+    walk_down * 4
+}
+
+movement Baldesia_MainHouse_Movement_LohanReturns{
+    walk_right
+    walk_up * 2
+    walk_in_place_down
+}
+
+movement Baldesia_MainHouse_Movement_BennisToPlayer{
+    walk_left * 3
+    walk_down
+}
+
+movement Baldesia_MainHouse_Movement_AriaLeaves{
+    walk_down * 3
+    walk_left * 5
     walk_down * 4
 }

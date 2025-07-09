@@ -9,6 +9,8 @@ const LOCALID_ARIA = 6
 mapscripts AltarOfBaldesia_MapScripts {
     MAP_SCRIPT_ON_RESUME: AltarOfBaldesia_OnResume
     MAP_SCRIPT_ON_TRANSITION: AltarOfBaldesia_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_MOMO_ARIA_STATE, 6: AltarOfBaldesia_EventScript_AltarRitual]
 }
 
 script AltarOfBaldesia_OnResume{
@@ -26,32 +28,34 @@ script AltarOfBaldesia_RemoveOkidogi{
     return
 }
 
-script AltarOfBaldesia_LeftTrigger{
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, AltarOfBaldesia_Movement_PlayerWalksToMomoLeftTrigger)
-    waitmovement(0)
-    goto(AltarOfBaldesia_EventScript_AltarRitual)
-    end
-}
+#script AltarOfBaldesia_LeftTrigger{
+    #lockall
+    #applymovement(OBJ_EVENT_ID_PLAYER, AltarOfBaldesia_Movement_PlayerWalksToMomoLeftTrigger)
+    #waitmovement(0)
+    #goto(AltarOfBaldesia_EventScript_AltarRitual)
+    #end
+#}
 
-script AltarOfBaldesia_RightTrigger{
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, AltarOfBaldesia_Movement_PlayerWalksToMomoRightTrigger)
-    waitmovement(0)
-    goto(AltarOfBaldesia_EventScript_AltarRitual)
-    end
-}
+#script AltarOfBaldesia_RightTrigger{
+    #lockall
+   # applymovement(OBJ_EVENT_ID_PLAYER, AltarOfBaldesia_Movement_PlayerWalksToMomoRightTrigger)
+   # waitmovement(0)
+   # goto(AltarOfBaldesia_EventScript_AltarRitual)
+   # end
+#}
 
-script AltarOfBaldesia_MiddleTrigger{
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, AltarOfBaldesia_Movement_PlayerWalksToMomoMiddleTrigger)
-    waitmovement(0)
-    goto(AltarOfBaldesia_EventScript_AltarRitual)
-    end
-}
+#script AltarOfBaldesia_MiddleTrigger{
+  #  lockall
+    #applymovement(OBJ_EVENT_ID_PLAYER, AltarOfBaldesia_Movement_PlayerWalksToMomoMiddleTrigger)
+   # waitmovement(0)
+   # goto(AltarOfBaldesia_EventScript_AltarRitual)
+   # end
+#}
 
 script AltarOfBaldesia_EventScript_AltarRitual{
     lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, AltarOfBaldesia_Movement_PlayerWalksToMomo)
+    waitmovement(0)
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
     msgbox("MOMO: …… You made it.\n
@@ -61,11 +65,11 @@ script AltarOfBaldesia_EventScript_AltarRitual{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    playbgm(MUS_NONE, FALSE)
+    fadenewbgm(MUS_NONE)
     msgbox("MOMO begins to play the POKé FLUTE…", MSGBOX_AUTOCLOSE)
     waitmessage
-    playfanfare(MUS_RG_POKE_FLUTE)
-    waitfanfare
+    playbgm(MUS_RG_JIGGLYPUFF, FALSE)
+    delay(450)
     msgbox("JIRACHI is awakening!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_M_THUNDER_WAVE)
@@ -173,6 +177,8 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     playse(SE_PIN)
     applymovement(LOCALID_MOMO, Common_Movement_ExclamationMark)
     waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
     waitse
     playbgm(MUS_WEATHER_GROUDON, FALSE)
     applymovement(8, AltarOfBaldesia_Movement_Fezandipiti)
@@ -183,7 +189,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceRight)
     delay(8)
     applymovement(7, AltarOfBaldesia_Movement_Pecharunt)
-    delay(8)
+    delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(7)
     msgbox("MOMO: …!\p
@@ -237,12 +243,14 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     playmoncry(SPECIES_PECHARUNT, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_PECHARUNT, 100)
-    setflag(FLAG_SYS_NO_BAG_USE)
+    setflag(FLAG_SYS_NO_RUNNING)
+    setflag(FLAG_SYS_NO_CATCHING)
     setflag(FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR)
     setflag(FLAG_SYS_SMART_WILD_AI)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
-    clearflag(FLAG_SYS_NO_BAG_USE)
+    clearflag(FLAG_SYS_NO_RUNNING)
+    clearflag(FLAG_SYS_NO_CATCHING)
     clearflag(FLAG_SYS_SMART_WILD_AI)
     playmoncry(SPECIES_PECHARUNT, CRY_MODE_FAINT)
     waitmoncry
@@ -300,7 +308,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     fadenewbgm(MUS_SEALED_CHAMBER)
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("MASTER BENNIS: Oh, yeah. My Lady.\n
+    msgbox("MASTER BENNIS: Oh… yeah. My Lady.\n
         You should finish the ritual.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
@@ -376,7 +384,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     applymovement(LOCALID_JIRACHI, Common_Movement_FaceDown)
     waitmovement(0)
     fadescreen(FADE_FROM_WHITE)
-    msgbox("…But nothing happened!", MSGBOX_AUTOCLOSE)
+    msgbox("… But nothing happened!", MSGBOX_AUTOCLOSE)
     waitmessage
     playmoncry(SPECIES_JIRACHI, CRY_MODE_FAINT)
     waitmoncry
@@ -393,14 +401,15 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     waitmessage
     applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
-    msgbox("But… Maybe we can get you a wig?\p
+    msgbox("But… Um…\n
+        Maybe we can get you a wig?\p
         MOMO: ………………", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_MOMO, AltarOfBaldesia_Movement_MomoHandsItem)
     waitmovement(0)
-    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceDown)
-    waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
     giveitem(ITEM_POKE_FLUTE)
     waitmessage
@@ -464,11 +473,16 @@ text AltarOfBaldesia_Text_Bennis{
 
 text AltarOfBaldesia_Text_ExplainPecharunt{
     "MASTER BENNIS: So they fled…\p
-    I thought it was only a myth, but\n
+    I thought it was only a myth… but\n
     that POKéMON, PECHARUNT, was the one\l
     who brainwashed the Chief and Madam.\p
     {PLAYER} weakened it, so it probably\n
-    can't keep controlling them."
+    can't keep its control over them."
+}
+
+movement AltarOfBaldesia_Movement_PlayerWalksToMomo{
+    walk_up * 18
+    walk_in_place_right
 }
 
 movement AltarOfBaldesia_Movement_PlayerWalksToMomoLeftTrigger{

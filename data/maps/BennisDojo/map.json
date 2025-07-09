@@ -78,6 +78,71 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BennisDojo_FocusSash",
       "flag": "FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NINJA",
+      "x": 3,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BENNIS",
+      "x": 7,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 3,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NINJA",
+      "x": 10,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEDICHAM)",
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
     }
   ],
   "warp_events": [
