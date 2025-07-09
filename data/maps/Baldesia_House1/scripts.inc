@@ -194,7 +194,7 @@ Baldesia_House1_EventScript_OldWoman_Text_0:
 
 Baldesia_House1_EventScript_OldMan_Text_0:
 # 36 "data/maps/Baldesia_House1/scripts.pory"
-	.string "MASTER BENNIS is not only the head\n retainer for the ASAKURA family, he's\l also the leader of the ninjas.$"
+	.string "MASTER BENNIS is not only the head\n retainer for the ASAKURA family.\p He's also the leader of the ninjas.$"
 
 Baldesia_House1_EventScript_Panini_Text_0:
 # 54 "data/maps/Baldesia_House1/scripts.pory"

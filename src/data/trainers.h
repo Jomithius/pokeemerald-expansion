@@ -35015,7 +35015,7 @@ F_TRAINER_FEMALE |
 #line 13832
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 13833
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT_FR,
         .encounterMusic_gender =
 #line 13835
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -47075,7 +47075,7 @@ F_TRAINER_FEMALE |
 #line 18695
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 18696
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT_FR,
         .encounterMusic_gender =
 #line 18698
             TRAINER_ENCOUNTER_MUSIC_INTENSE,

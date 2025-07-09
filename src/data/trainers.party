@@ -13830,7 +13830,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_ASAK_2 ===
 Name: ASAK
 Class: Black Belt
-Pic: Black Belt
+Pic: Black Belt Fr
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -18693,7 +18693,7 @@ Jolly Nature
 === TRAINER_ASAK ===
 Name: ASAK
 Class: Black Belt
-Pic: Black Belt
+Pic: Black Belt Fr
 Gender: Male
 Music: Intense
 Double Battle: Yes

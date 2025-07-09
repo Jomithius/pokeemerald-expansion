@@ -1099,7 +1099,7 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_Text_6:
 
 AltarOfBaldesia_EventScript_PecharuntAmbush_Text_7:
 # 311 "data/maps/AltarOfBaldesia/scripts.pory"
-	.string "MASTER BENNIS: Oh, yeah. My Lady.\n You should finish the ritual.$"
+	.string "MASTER BENNIS: Oh… yeah. My Lady.\n You should finish the ritual.$"
 
 AltarOfBaldesia_EventScript_PecharuntAmbush_Text_8:
 # 321 "data/maps/AltarOfBaldesia/scripts.pory"
@@ -1131,7 +1131,7 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_Text_14:
 
 AltarOfBaldesia_EventScript_PecharuntAmbush_Text_15:
 # 387 "data/maps/AltarOfBaldesia/scripts.pory"
-	.string "…But nothing happened!$"
+	.string "… But nothing happened!$"
 
 AltarOfBaldesia_EventScript_PecharuntAmbush_Text_16:
 # 391 "data/maps/AltarOfBaldesia/scripts.pory"

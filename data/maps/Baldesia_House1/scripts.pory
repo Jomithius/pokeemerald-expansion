@@ -34,8 +34,8 @@ script Baldesia_House1_EventScript_OldMan{
     lock
     faceplayer
     msgbox("MASTER BENNIS is not only the head\n
-    retainer for the ASAKURA family, he's\l
-    also the leader of the ninjas.", MSGBOX_AUTOCLOSE)
+    retainer for the ASAKURA family.\p
+    He's also the leader of the ninjas.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)

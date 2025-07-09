@@ -478,8 +478,8 @@ script Baldesia_MainHouse_EventScript_OldMan{
     msgbox("While we say that JIRACHI is going\n
         to awaken, the truth is it's only coming\l
         out of a deeper state of sleep.\p
-        During this time, the Maiden needs to play\n
-        the POKé FLUTE to truly wake it up.")
+        During this time, the Maiden needs to\n
+        play the POKé FLUTE to truly wake it up.", MSGBOX_NPC)
     end
 }
 
