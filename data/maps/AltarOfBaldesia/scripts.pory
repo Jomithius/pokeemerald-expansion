@@ -61,38 +61,39 @@ script AltarOfBaldesia_EventScript_AltarRitual{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
+    playbgm(MUS_NONE, FALSE)
     msgbox("MOMO begins to play the POKé FLUTE…", MSGBOX_AUTOCLOSE)
     waitmessage
-    fadeoutbgm(2)
-    delay(30)
     playfanfare(MUS_RG_POKE_FLUTE)
     waitfanfare
-    delay(60)
-    dofieldeffectsparkle(17, 18, 0)
-    delay(60)
-    dofieldeffectsparkle(17, 18, 0)
-    delay(90)
-    playse(SE_PIN)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
-    waitmovement(0)
-    waitse
     msgbox("JIRACHI is awakening!", MSGBOX_AUTOCLOSE)
     waitmessage
-    playbgm(MUS_SEALED_CHAMBER, FALSE)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    waitse
+    fadescreen(FADE_FROM_WHITE)
+    delay(30)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
     setobjectnewmovementtype(LOCALID_JIRACHI, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
-    applymovement(LOCALID_JIRACHI, AltarOfBaldesia_Movement_JirachiLevitate)
-    waitmovement(0)
+    waitse
+    fadescreen(FADE_FROM_WHITE)
+    delay(30)
+    playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    delay(30)
+    playbgm(MUS_SEALED_CHAMBER, FALSE)
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     waitmovement(0)
     msgbox("MOMO: … Now I just need to make the\n
         wish and we're done.\p
-        We always wish for-")
+        We always wish for-", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_M_DOUBLE_TEAM)
     waitse
-    playbgm(MUS_NONE, TRUE)
+    playbgm(MUS_NONE, FALSE)
     playse(SE_PIN)
     applymovement(LOCALID_MOMO, Common_Movement_ExclamationMark)
     waitmovement(0)
@@ -107,7 +108,7 @@ script AltarOfBaldesia_EventScript_AltarRitual{
     delay(8)
     applymovement(LOCALID_WIFE, Common_Movement_WalkUp6)
     waitmovement(0)
-    playbgm(MUS_KIMONO_DANCE, FALSE)
+    playbgm(MUS_KIMONO_DANCE, TRUE)
     msgbox(AltarOfBaldesia_Text_MomoAndLohan, MSGBOX_AUTOCLOSE)
     waitmessage
     goto(AltarOfBaldesia_EventScript_MomoICantBeatThemAlone)
@@ -139,6 +140,7 @@ script AltarOfBaldesia_EventScript_GetReadyForBattle{
 }
 
 script AltarOfBaldesia_EventScript_DoLohanMultiBattle{
+    playbgm(MUS_NONE, TRUE)
     multi_2_vs_2(TRAINER_LOHAN, AltarOfBaldesia_Text_LohanIntro, TRAINER_LINDSAY, AltarOfBaldesia_Text_LindsayIntro, PARTNER_MOMO)
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_WON){
@@ -185,45 +187,63 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(7)
     msgbox("MOMO: …!\p
-        A voice calls out:\p
-        Baldy baldy, over there!\n
-        What's it like to have no hair?", MSGBOX_DEFAULT)
+        ???: Baldy baldy, over there!\n
+        What's it like to have no hair?", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceDown)
     delay(8)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    playse(SE_M_PETAL_DANCE)
-    fadescreen(FADE_TO_WHITE)
+    playse(SE_M_DOUBLE_TEAM)
     addobject(LOCALID_BENNIS)
-    fadescreen(FADE_FROM_WHITE)
-    msgbox("Hold on, my shiny crystal ball!\n
+    applymovement(8, Common_Movement_FaceRight)
+    waitmovement(8)
+    addobject(LOCALID_ARIA)
+    clearflag(FLAG_HIDE_BENNIS_JIRACHIS_ALTAR)
+    applymovement(8, AltarOfBaldesia_Movement_FezStepsBack)
+    waitmovement(8)
+    msgbox("???: Hold on, my shiny crystal ball!\n
         Your KNIGHT is here!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_ARIA, AltarOfBaldesia_Movement_AriaEnters)
     waitmovement(0)
-    msgbox("ARIA: AAAARGGHH!",MSGBOX_AUTOCLOSE)
+    msgbox("ARIA: AAAARGGHH!", MSGBOX_AUTOCLOSE)
     waitmessage
+    playse(SE_NOT_EFFECTIVE)
     applymovement(LOCALID_ARIA, Common_Movement_WalkFasterRight)
     applymovement(9, AltarOfBaldesia_Movement_MunkidoriPushedBack)
     waitmovement(9)
+    waitse
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     msgbox(AltarOfBaldesia_Text_Bennis, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    addobject(13)
+    fadescreen(FADE_FROM_WHITE)
+    waitse
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceRight)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
+    applymovement(7, Common_Movement_WalkRight)
+    waitmovement(7)
+    applymovement(10, Common_Movement_WalkLeft)
+    delay(8)
+    applymovement(9, Common_Movement_WalkLeft)
+    waitmovement(9)
     playmoncry(SPECIES_PECHARUNT, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_PECHARUNT, 100)
     setflag(FLAG_SYS_NO_BAG_USE)
     setflag(FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR)
+    setflag(FLAG_SYS_SMART_WILD_AI)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     clearflag(FLAG_SYS_NO_BAG_USE)
+    clearflag(FLAG_SYS_SMART_WILD_AI)
     playmoncry(SPECIES_PECHARUNT, CRY_MODE_FAINT)
     waitmoncry
     playse(SE_FLEE)
@@ -243,9 +263,14 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     fadescreen(FADE_TO_BLACK)
     removeobject(8)
     removeobject(9)
+    special(HealPlayerParty)
     fadescreen(FADE_FROM_BLACK)
     waitse
     fadedefaultbgm
+    applymovement(13, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    removeobject(13)
+    clearflag(FLAG_HIDE_BENNIS_JIRACHIS_ALTAR)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
     delay(8)
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceDown)
@@ -272,7 +297,10 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     applymovement(LOCALID_ARIA, Common_Movement_ExclamationMark)
     waitmovement(0)
     waitse
-    msgbox("MASTER BENNIS: Hm. My Lady.\n
+    fadenewbgm(MUS_SEALED_CHAMBER)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: Oh, yeah. My Lady.\n
         You should finish the ritual.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
@@ -281,63 +309,96 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     delay(10)
     applymovement(LOCALID_MOMO, Common_Movement_WalkUp)
     waitmovement(0)
-    fadenewbgm(MUS_SEALED_CHAMBER)
+    delay(30)
     msgbox("MOMO: JIRACHI… …\n
         Please bless our village with peace\l
-        and prosperity.", MSGBOX_AUTOCLOSE)
+        and prosperity for many years to come.", MSGBOX_AUTOCLOSE)
     waitmessage
     playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
     waitmoncry
     msgbox("JIRACHI stares at MOMO…", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceDown)
+    applymovement(LOCALID_ARIA, AltarOfBaldesia_Movement_AriaNextToMomo)
+    waitmovement(0)
+    applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     waitmovement(0)
     msgbox("ARIA: It looks like it still wants to\n
-        grant another wish.\p
-        Maybe it's grateful that we protected it?", MSGBOX_AUTOCLOSE)
+        grant another wish…\p
+        Maybe it's grateful to us for\n
+        protecting it?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: My Lady. If you have\n
+        a wish of your own, now's the time.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceUp)
+    delay(8)
+    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("MOMO:…\n
-        …\l
-        …\l
+    msgbox("MOMO: … … … …\n
+        … … … …\l
+        … … …\l
         I…\l
         ……… want hair.", MSGBOX_AUTOCLOSE)
     waitmessage
+    playbgm(MUS_NONE, FALSE)
+    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
     playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
     waitmoncry
     msgbox("JIRACHI begins gathering power!", MSGBOX_AUTOCLOSE)
     waitmessage
-    playbgm(MUS_NONE, FALSE)
-    setvar(VAR_RESULT, 0)
+    setvar(VAR_RESULT, 1)
     playse(SE_ORB)
     special(DoOrbEffect)
-    applymovement(LOCALID_JIRACHI, AltarOfBaldesia_Movement_JirachiEndLevitate)
-    waitmovement(0)
     delay(150)
-    setobjectnewmovementtype(LOCALID_JIRACHI, MOVEMENT_TYPE_NONE)
     waitstate
     special(FadeOutOrbEffect)
     waitstate
+    delay(150)
+    msgbox("… … … …", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_BIKE_HOP)
+    applymovement(LOCALID_JIRACHI, Common_Movement_QuestionMark)
+    waitmovement(LOCALID_JIRACHI)
+    waitse
+    delay(90)
+    setobjectnewmovementtype(LOCALID_JIRACHI, MOVEMENT_TYPE_NONE)
     playse(SE_M_MORNING_SUN)
     fadescreen(FADE_TO_WHITE)
     waitse
+    applymovement(LOCALID_JIRACHI, Common_Movement_FaceDown)
+    waitmovement(0)
     fadescreen(FADE_FROM_WHITE)
-    msgbox("…Nothing happened!", MSGBOX_AUTOCLOSE)
+    msgbox("…But nothing happened!", MSGBOX_AUTOCLOSE)
     waitmessage
     playmoncry(SPECIES_JIRACHI, CRY_MODE_FAINT)
     waitmoncry
-    playse(SE_M_SWAGGER2)
-    waitse
-    playse(SE_M_SACRED_FIRE2)
+    msgbox("JIRACHI went back to sleep!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_M_BLIZZARD)
+    delay(60)
+    playse(SE_M_BLIZZARD2)
     waitse
     msgbox("MASTER BENNIS: … It's okay.\n
         Bald is beautiful too, my Lady.\p
-        ARIA: …… I'm sorry.\n
-        Maybe we can get you a wig?\p
+        ARIA: W-Wow! Not even JIRACHI's power\n
+        can give you hair…!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("But… Maybe we can get you a wig?\p
         MOMO: ………………", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_MOMO, AltarOfBaldesia_Movement_MomoHandsItem)
+    waitmovement(0)
+    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     waitmovement(0)
@@ -353,13 +414,18 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     waitse
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceLeft)
-    waitmovement(0)
     msgbox("MASTER BENNIS: … Hm.\n
         Just give her some time.\p
         We should head back to the MAIN HOUSE.\n
         The Chief and Madam should be waiting.", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_HIDE_BENNIS_JIRACHIS_ALTAR)
+    setflag(FLAG_HIDE_LOHAN_JIRACHIS_ALTAR)
+    setflag(FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR)
+    setflag(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR)
+    clearflag(FLAG_FEZANDIPITI_EASTERN_RUINS)
+    clearflag(FLAG_MUNKIDORI_EASTERN_RUINS)
+    clearflag(FLAG_PECHARUNT_EASTERN_RUINS)
     setvar(VAR_MOMO_ARIA_STATE, 7)
     setflag(FLAG_REMOVE_WARP_FADE)
     playse(SE_FLEE)
@@ -399,10 +465,10 @@ text AltarOfBaldesia_Text_Bennis{
 text AltarOfBaldesia_Text_ExplainPecharunt{
     "MASTER BENNIS: So they fled…\p
     I thought it was only a myth, but\n
-    that POKéMON, PECHARUNT, was the\l
-    one who brainwashed the Chief and Madam.\p
-    {PLAYER} weakened it, so the brainwashing\n
-    has probably worn off."
+    that POKéMON, PECHARUNT, was the one\l
+    who brainwashed the Chief and Madam.\p
+    {PLAYER} weakened it, so it probably\n
+    can't keep controlling them."
 }
 
 movement AltarOfBaldesia_Movement_PlayerWalksToMomoLeftTrigger{
@@ -439,12 +505,12 @@ movement AltarOfBaldesia_Movement_JirachiEndLevitate{
 
 movement AltarOfBaldesia_Movement_Pecharunt{
     walk_fast_down * 7
-    walk_fast_right
+    walk_in_place_fast_right
 }
 
 movement AltarOfBaldesia_Movement_Okidogi{
     walk_fast_down * 7
-    walk_fast_left * 2
+    walk_fast_left
 }
 
 movement AltarOfBaldesia_Movement_Munkidori{
@@ -465,11 +531,23 @@ movement AltarOfBaldesia_Movement_AriaEnters{
 
 movement AltarOfBaldesia_Movement_MunkidoriPushedBack{
     lock_facing_direction
-    jump_2_right * 2
+    jump_2_right
     unlock_facing_direction
 }
 
 movement AltarOfBaldesia_Movement_MomoHandsItem{
     walk_down
+    walk_in_place_left
+}
+
+movement AltarOfBaldesia_Movement_FezStepsBack{
+    lock_facing_direction
+    walk_left
+    unlock_facing_direction
+}
+
+movement AltarOfBaldesia_Movement_AriaNextToMomo{
+    walk_left
+    walk_up * 2
     walk_in_place_left
 }

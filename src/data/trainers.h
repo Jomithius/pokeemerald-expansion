@@ -35347,7 +35347,7 @@ F_TRAINER_FEMALE |
 #line 13962
         .trainerName = _("LOHAN"),
 #line 13963
-        .trainerClass = TRAINER_CLASS_NINJA,
+        .trainerClass = TRAINER_CLASS_CHIEF,
 #line 13964
         .trainerPic = TRAINER_PIC_KOGA,
         .encounterMusic_gender =

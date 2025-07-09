@@ -49,7 +49,7 @@
 #define FLAG_ITEM_AREA_ZERO_BOOSTER_ENERGY_2   0x23 // Area Zero
 #define FLAG_DEFEATED_KLAWF                    0x24 // Route 136
 #define FLAG_DEFEATED_JIRACHI                  0x25 // Baldesia Altar
-#define FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR    0x26 // Baldesia Altar
+#define FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR   0x26 // Baldesia Altar
 #define FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE     0x27 // Baldesia Main House CS
 #define FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE   0x28 // Baldesia Main House CS
 #define FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE     0x29 // Baldesia Main House
@@ -1511,7 +1511,7 @@
 #define FLAG_SYS_THE_UNDER_DIG                      (SYSTEM_FLAGS + 0x87) // Darkrai Event 2279
 #define FLAG_E4_FINAL_REMATCH                       (SYSTEM_FLAGS + 0x88) // Final Rematches
 #define FLAG_SYS_DEFEATED_BRUNO                     (SYSTEM_FLAGS + 0x89) // Baldesia Forest Dojo
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
+#define FLAG_SYS_SMART_WILD_AI                      (SYSTEM_FLAGS + 0x8A) // Smart Ai in wild battles
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
