@@ -10750,7 +10750,7 @@ IVs: 0 Atk
 === TRAINER_RATDUARDO_NEWMOON_ISLAND ===
 Name: RATDUARDO
 Class: Nightmare
-Pic: Ratduardo
+Pic: Nightmare Ratduardo
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -10816,7 +10816,7 @@ Jolly Nature
 === TRAINER_CHANNELER_NEWMOON_ISLAND ===
 Name: ???
 Class: Nightmare
-Pic: Channeler
+Pic: Nightmare
 Gender: Female
 Music: Female
 Double Battle: No
@@ -15882,22 +15882,45 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_RUSTBORO_TREECKO === /* FREE */
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+=== TRAINER_CARSON ===
+Name: CARSON
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: Male
+Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Musharna  
+Ability: Synchronize   
+IVs: 0 Atk  
+- Signal Beam  
+- Psychic  
+- Rest  
+- Sleep Talk  
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Copperajah  
+Ability: Heavy Metal   
+- Heavy Slam  
+- Heat Crash  
+- High Horsepower  
+- Supercell Slam  
+
+Donphan  
+Ability: Sturdy  
+- Rapid Spin  
+- Earthquake  
+- Ice Shard  
+- Knock Off  
+
+Mamoswine  
+Ability: Thick Fat  
+- High Horsepower  
+- Icicle Crash  
+- Heavy Slam  
+- Smack Down  
+
+
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY

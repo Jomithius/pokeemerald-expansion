@@ -127,7 +127,9 @@
 #define TRAINER_PIC_NINJA                 109
 #define TRAINER_PIC_BRUNO                 110
 #define TRAINER_PIC_BLACK_BELT_FR         111
-#define TRAINER_PIC_COUNT                 112
+#define TRAINER_PIC_NIGHTMARE_RATDUARDO   112
+#define TRAINER_PIC_NIGHTMARE             113
+#define TRAINER_PIC_COUNT                 114
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

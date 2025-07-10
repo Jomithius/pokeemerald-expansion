@@ -1,3 +1,7 @@
+const LOCALID_PROF = 18
+const LOCALID_JAMES = 19
+const LOCALID_COSMOG = 22
+
 mapscripts Ultra_Space_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE[
         VAR_ULTRA_SPACE_STATE, 1: Ultra_Space_EventScript_ArrivedInUltraSpace 
@@ -33,7 +37,12 @@ script UltraSpace_TryRemoveUltraBeast{
     goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
-    removeobject(VAR_LAST_TALKED)
+    if(var(VAR_LAST_TALKED) == LOCALID_JAMES || var(VAR_LAST_TALKED) == LOCALID_PROF || var(VAR_LAST_TALKED) == LOCALID_COSMOG){
+        goto(Common_EventScript_NopReturn) // on the chance player talks to one of these npcs then gets into a wild battle in grass
+    }
+    else{
+        removeobject(VAR_LAST_TALKED)
+    }
     return
 }
 

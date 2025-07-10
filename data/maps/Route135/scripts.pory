@@ -1,1 +1,166 @@
 mapscripts Route135_MapScripts {}
+
+script Route135_EventScript_FatMan{
+    msgbox("Oh man…\n
+        Look at all that tasty cabbage…", MSGBOX_SIGN)
+    end
+}
+
+script Route135_EventScript_Man4{
+    msgbox("It ain't much, but it's honest work.", MSGBOX_NPC)
+    end
+}
+
+script Route135_EventScript_Man1{
+    msgbox("I lost my gosh darn hat!", MSGBOX_NPC)
+    end
+}
+
+script Route135_EventScript_WomanILoveLechonk{
+    lock
+    faceplayer
+    msgbox("I just love LECHONK!", MSGBOX_DEFAULT)
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Me too!", "Yup. They make good bacon.")
+    if(var(VAR_RESULT) == 0){
+        msgbox("Right?!\n
+            They're stinky, but sooo cute!", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("What's WRONG with you?!\n
+            I'm vegan, you PIG!", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route135_EventScript_WomanILoveMiltank{
+    lock
+    faceplayer
+    msgbox("I just love MILTANK!", MSGBOX_DEFAULT)
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Me too!", "Yup. They make good burgers.")
+    if(var(VAR_RESULT) == 0){
+        msgbox("Right?!\n
+            They're stinky, but sooo cute!", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("What's WRONG with you?!\n
+            I'm vegan, you COW!", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route135_EventScript_FirstMoo{
+    lockall
+    applymovement(27, Common_Movement_WalkInPlaceDown)
+    waitmovement(27)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("You're just in time!\n
+        That MILTANK found it's moo!\p
+        Listen!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(27, Common_Movement_WalkInPlaceLeft)
+    waitmovement(27)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    fadeoutbgm(1)
+    delay(60)
+    playmoncry(SPECIES_MILTANK, CRY_MODE_ENCOUNTER)
+    msgbox("MILTANK: Moooooo!", MSGBOX_AUTOCLOSE)
+    waitmoncry
+    waitmessage
+    applymovement(27, Common_Movement_WalkInPlaceDown)
+    waitmovement(27)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("Isn't it beautiful?\n
+        Gosh, I love nature.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(27, Common_Movement_WalkInPlaceLeft)
+    waitmovement(27)
+    setvar(VAR_TEMP_7, 1)
+    fadeinbgm(1)
+    releaseall
+    end
+}
+
+script Route135_EventScript_Man4DidYouKnow{
+    msgbox("Did you know?\n
+        Some TAUROS have different types.", MSGBOX_NPC)
+    end
+}
+
+script Route135_EventScript_Gentleman{
+    msgbox("That PROF. at the lab…\n
+        He's researching some gotdang strange\l
+        things, I'll tell you what.", MSGBOX_NPC)
+    end
+}
+
+script Route135_EventScript_Lechonk{
+    lock
+    faceplayer
+    playmoncry(SPECIES_LECHONK, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script Route135_EventScript_Oinkologne{
+    lock
+    faceplayer
+    playmoncry(SPECIES_OINKOLOGNE, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script Route135_EventScript_Mudbray{
+    lock
+    faceplayer
+    playmoncry(SPECIES_MUDBRAY, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script Route135_EventScript_Mudsdale{
+    lock
+    faceplayer
+    playmoncry(SPECIES_MUDSDALE, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script Route135_EventScript_Tauros{
+    lock
+    faceplayer
+    playmoncry(SPECIES_TAUROS, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script Route135_EventScript_Miltank{
+    lock
+    faceplayer
+    playmoncry(SPECIES_MILTANK, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script Route135_EventScript_Sign{
+    msgbox("LUSH ACREAGE\p
+        “The land of resplendent wonders!”", MSGBOX_SIGN)
+    end
+}
+

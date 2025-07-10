@@ -1,1 +1,16 @@
 mapscripts Route135_House2_MapScripts {}
+
+script Route135_House2_Man{
+    msgbox("A lot more people have been stopping\n
+        by here recently.\p
+        Did they finally make it easier to get\n
+        all the way out here?", MSGBOX_NPC)
+    end
+}
+
+script Route135_House2_Woman{
+    msgbox("We've lived here all our lives.\n
+        It really feels so far away from\l
+        the rest of the region.", MSGBOX_NPC)
+    end
+}

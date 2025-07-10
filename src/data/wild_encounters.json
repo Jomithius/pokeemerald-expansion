@@ -1449,7 +1449,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_MILTANK"
+                "species": "SPECIES_MUDBRAY"
               },
               {
                 "min_level": 13,
@@ -1474,7 +1474,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_MILTANK"
+                "species": "SPECIES_CHANSEY"
               },
               {
                 "min_level": 14,
@@ -1489,7 +1489,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_MILTANK"
               }
             ]
           },
@@ -3487,7 +3487,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_MUDBRAY"
+                "species": "SPECIES_GRANBULL"
               },
               {
                 "min_level": 27,

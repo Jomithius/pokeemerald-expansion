@@ -771,7 +771,7 @@
 #define TRAINER_MYLES                       765
 #define TRAINER_PAT                         766
 #define TRAINER_CRISTIN_1                   767
-#define TRAINER_MAY_RUSTBORO_TREECKO        768 // free
+#define TRAINER_CARSON                      768
 #define TRAINER_MAY_RUSTBORO_TORCHIC        769
 #define TRAINER_ROXANNE_2                   770
 #define TRAINER_ROXANNE_3                   771

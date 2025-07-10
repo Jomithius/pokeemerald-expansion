@@ -4376,7 +4376,8 @@ void IsLeadMonCat(void)
         if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG) && !GetMonData(pokemon, MON_DATA_HP_LOST))
         {
             species = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
-            switch(species){
+            switch(species)
+            {
             case SPECIES_MEOWTH:
                 gSpecialVar_Result = TRUE;
                 break;
@@ -4492,6 +4493,7 @@ void IsLeadMonCat(void)
                 gSpecialVar_Result = TRUE;
                 break;
             default:
+                gSpecialVar_Result = FALSE;
                 break;
             }
             return;

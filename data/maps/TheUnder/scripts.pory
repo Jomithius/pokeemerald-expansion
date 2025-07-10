@@ -1,1 +1,141 @@
 mapscripts TheUnder_MapScripts {}
+
+script TheUnder_EventScript_Luna{
+    lockall
+    checkobjectat(13, 45) // south trigger
+    if(var(VAR_RESULT) == TRUE){
+       applymovement(7, TheUnder_Movement_LunaSouth) 
+    }
+    else{
+        applymovement(7, TheUnder_Movement_Luna) 
+    }
+    waitmovement(7)
+    msgbox("LUNA: {PLAYER}. You made it.\p
+        JIMMY wanted me to meet you out here.\n
+        He has a message for you:\p
+        Grinding is cringe, so here.\n
+        Take these.", MSGBOX_DEFAULT)
+    waitmessage
+    giveitem(ITEM_MASTER_BALL, 24)
+    waitmessage
+    msgbox("He wanted me to give you this too.\n
+        Crystals of this stuff was found in\l
+        the new caves around here.\p
+        Scientists turned it into a way to make\n
+        your POKéMON stronger or something.", MSGBOX_DEFAULT)
+    waitmessage
+    giveitem(ITEM_TERA_ORB)
+    waitmessage
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}Do you want an explanation of TERA?", MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        msgbox(Common_Text_ExplainTera, MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    applymovement(7, Common_Movement_WalkRight)
+    waitmovement(7)
+    applymovement(7, Common_Movement_WalkInPlaceUp)
+    waitmovement(7)
+    msgbox("So that rat bastard dug all the way out\n
+        here, huh…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(7, Common_Movement_WalkInPlaceLeft)
+    waitmovement(7)
+    msgbox("Well, the first place I would go is the\n
+        lab on ROUTE 135 to the east.\p
+        There's some interesting stuff going on\n
+        over there.\p
+        Anyways, mucho texto. I'll be ready for\n
+        our rematch once you're done here.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(7, Common_Movement_WalkRight)
+    waitmovement(7)
+    setfieldeffectargument(0, 1)
+    dofieldeffect(FLDEFF_NPCFLY_OUT)
+    delay(15)
+    removeobject(7)
+    waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    setvar(VAR_THE_UNDER_STATE, 1)
+    setflag(FLAG_SYS_RECEIVED_TERA_ORB)
+    setflag(FLAG_SYS_TERA_ORB_CHARGED)
+    releaseall
+    end
+}
+
+script TheUnder_EventScript_Sign{
+    msgbox("{RIGHT_ARROW} POKéMON CENTER", MSGBOX_SIGN)
+    end
+}
+
+script TheUnder_EventScript_Artist{
+    msgbox("Such beauty…\n
+        I must capture nature's splendors!", MSGBOX_SIGN)
+    end
+}
+
+script TheUnder_EventScript_Carson{
+    trainerbattle_single(TRAINER_CARSON, TheUnder_Text_CarsonIntro, TheUnder_Text_CarsonDefeat)
+    msgbox(TheUnder_Text_CarsonPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+	end
+}
+
+text TheUnder_Text_CarsonIntro{
+    "There's some RATICATE blocking the\n
+    path in the tunnel!\p
+    I tried battling them, but for some\n
+    reason my POKéMON were scared."
+}
+
+text TheUnder_Text_CarsonDefeat{
+    "Huh… Why weren't they scared now?"
+}
+
+text TheUnder_Text_CarsonPostBattle{
+    "If only I could figure out why my\n
+    POKéMON are so scared of those\l
+    RATICATE…"
+}
+
+text Common_Text_ExplainTera{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}TERASTALLIZATION is a battle mechanic\n
+    that allows you to change your\l
+    POKéMON's TYPE temporarily during a\l
+    battle.\p
+    Similar to MEGA EVOLUTION, the TYPE\n
+    the POKéMON TERASTALLIZED into will\l
+    last until the end of the battle, or\l
+    until the POKéMON faints.\p
+    Only one POKéMON can TERA during a\n
+    battle, and two gimmicks can't be\l
+    used on the same POKéMON.\l
+    Such as: MEGA EVOLUTION and TERA.\p
+    To TERASTALLIZE, press START before\n
+    selecting your move.\p
+    While TERASTALLIZED, POKéMON receive\n 
+    STAB (Same Type Attack Bonus) on\l
+    moves matching their TERA TYPE,\l
+    in addition to moves matching their\l 
+    original TYPES.\p
+    A POKéMON's TERA TYPE can be viewed\n
+    in the summary screen.\p
+    It will default to an existing TYPE\n
+    the POKéMON has, such as:\p
+    A mono TYPE will have that TYPE as\n
+    its TERA, while a DUAL TYPE could\l
+    have either TYPE as the TERA.\p
+    TERA SHARDS are required to change\n
+    a POKéMON's TERA TYPE.\p
+    They can be bought from vendors in\n
+    NORTHERN HOENN."
+}
+
+movement TheUnder_Movement_Luna{
+    walk_left * 9
+}
+
+movement TheUnder_Movement_LunaSouth{
+    walk_down
+    walk_left * 9
+}
+

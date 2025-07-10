@@ -1,1 +1,30 @@
 mapscripts Route135_House1_MapScripts {}
+
+script Route135_House1_EventScript_OldMan{
+    lock
+    faceplayer
+    msgbox("There was a couple that used to live in\n
+        these parts that would go adventurin'.\p
+        One day, they didn't come back.\n
+        They had a son, too.\p
+        I wonder what happened to him.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    end
+}
+
+script Route135_House1_EventScript_OldWoman{
+    lock
+    faceplayer
+    msgbox("There's an old story that says people\n
+        in this area used to get cursed with\l
+        terrible nightmares.\p
+        Huh? No, it's not real!\n
+        Just another urban myth! Hahaha!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    end
+}
+

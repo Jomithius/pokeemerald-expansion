@@ -1,18 +1,45 @@
-raw`.set LOCALID_NURSE, 1
+const LOCALID_NURSE = 1
 
-BaseCamp_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, BaseCamp_PokemonCenter_OnTransition
-	.byte 0
+mapscripts BaseCamp_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION: BaseCamp_PokemonCenter_OnTransition
+	MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
 
-BaseCamp_PokemonCenter_OnTransition:
-	setrespawn HEAL_LOCATION_THE_UNDER
+script BaseCamp_PokemonCenter_OnTransition{
+	setrespawn(HEAL_LOCATION_THE_UNDER)
 	end
+}
 
-BaseCamp_PokemonCenter_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_NURSE
-	call Common_EventScript_PkmnCenterNurse
+script BaseCamp_PokemonCenter_EventScript_Nurse{
+	setvar(VAR_0x800B, LOCALID_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
 	waitmessage
 	waitbuttonpress
 	release
 	end
-`
+}
+
+script BaseCamp_PokemonCenter_EventScript_Hiker{
+	msgbox("This part of HOENN used to be very\n
+		hard to get to.\p
+		Whoever dug out that cave system did\n
+		the region a favor.", MSGBOX_NPC)
+	end
+}
+
+script BaseCamp_PokemonCenter_EventScript_Pokefan_M{
+	msgbox("There's so many POKéMON here\n
+		that I've never seen before!", MSGBOX_NPC)
+	end
+}
+
+script BaseCamp_PokemonCenter_EventScript_Camper{
+	msgbox("A new age of exploration awaits me!", MSGBOX_NPC)
+	end
+}
+
+script BaseCamp_PokemonCenter_EventScript_Cooltrainer{
+	msgbox("There's some strong TRAINERS around here.\n
+		I'm getting fired up!", MSGBOX_NPC)
+	end
+}

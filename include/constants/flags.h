@@ -518,7 +518,7 @@
 #define FLAG_DEFEATED_REGIGIAS               0x1DE // TBD
 #define FLAG_RECEIVED_TYPE_NULL              0x1DF // Route 135 Lab
 #define FLAG_DEFEATED_OGERPON                0x1E0 // Eastern Ruins
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
+#define FLAG_HIDE_LUNA_THE_UNDER             0x1E1 // Luna CS the under
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
@@ -1248,7 +1248,7 @@
 #define FLAG_HIDE_DACA_RUSTURF_PEAK                                 0x4AA // Rusturf Peak
 #define FLAG_RUSTURF_GALVANTULA                                     0x4AB // Rusturf 3F
 #define FLAG_RUSTURF_ARIADOS                                        0x4AC // Rusturf 3F
-#define FLAG_HIDE_BIKERS_ROUTE_123                                  0x4AD // Speedwagon Route123
+#define FLAG_HIDE_BIKERS_ROUTE_123                                  0x4AD // Speedwagon Route123. 8th gym removes them if missed
 #define FLAG_ROUTE117_RECEIVED_LEFTOVERS                            0x4AE // From Misa
 #define FLAG_XION_HOUSE_LEAF_STONE                                  0x4AF // Xion's House in Verdanturf
 #define FLAG_RECEIVED_CHOICE_SCARF_XION                             0x4B0 // Xion's House in Verdanturf
@@ -1514,9 +1514,9 @@
 #define FLAG_SYS_SMART_WILD_AI                      (SYSTEM_FLAGS + 0x8A) // Smart Ai in wild battles
 #define FLAG_SYS_NO_RUNNING                         (SYSTEM_FLAGS + 0x8B) // To stop running from wild battles
 #define FLAG_SYS_NO_CATCHING                        (SYSTEM_FLAGS + 0x8C) // To stop catching in wild battles
-#define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
-#define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
-#define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
+#define FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123      (SYSTEM_FLAGS + 0x8D) // Check if player found speedwagon rt 123
+#define FLAG_SYS_RECEIVED_TERA_ORB                  (SYSTEM_FLAGS + 0x8E) // Unlocks Tera in Summary
+#define FLAG_SYS_TERA_ORB_CHARGED                   (SYSTEM_FLAGS + 0x8F) // Tera
 #define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
 #define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag

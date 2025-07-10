@@ -10,7 +10,7 @@ script WachunpelonCity_EventScript_PolicemanTrigger{
     waitmovement(1)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     waitmovement(0)
-    if(flag(FLAG_HIDE_BIKERS_ROUTE_123) == TRUE){
+    if(flag(FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123) == TRUE){
         msgbox(WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO)
     }
     else{
@@ -56,7 +56,7 @@ script WachunpelonCity_EventScript_Policeman{
 
 script WachunpelonCity_EventScript_PolicemanNorth{
     lockall
-    if(flag(FLAG_HIDE_BIKERS_ROUTE_123) == TRUE){
+    if(flag(FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123) == TRUE){
         msgbox(WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO)
     }
     else{
@@ -94,7 +94,7 @@ script WachunpelonCity_EventScript_PolicemanEast{
     delay(16)
     applymovement(1, Common_Movement_WalkInPlaceRight)
     waitmovement(1)
-    if(flag(FLAG_HIDE_BIKERS_ROUTE_123) == TRUE){
+    if(flag(FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123) == TRUE){
         msgbox(WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO)
     }
     else{

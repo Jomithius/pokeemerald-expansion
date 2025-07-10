@@ -22,7 +22,7 @@ WachunpelonCity_EventScript_PolicemanTrigger::
 # 12 "data/maps/WachunpelonCity/scripts.pory"
 	waitmovement 0
 # 13 "data/maps/WachunpelonCity/scripts.pory"
-	goto_if_set FLAG_HIDE_BIKERS_ROUTE_123, WachunpelonCity_EventScript_PolicemanTrigger_2
+	goto_if_set FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123, WachunpelonCity_EventScript_PolicemanTrigger_2
 # 17 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_Policeman1, MSGBOX_YESNO
 WachunpelonCity_EventScript_PolicemanTrigger_1:
@@ -106,7 +106,7 @@ WachunpelonCity_EventScript_PolicemanNorth::
 # 58 "data/maps/WachunpelonCity/scripts.pory"
 	lockall
 # 59 "data/maps/WachunpelonCity/scripts.pory"
-	goto_if_set FLAG_HIDE_BIKERS_ROUTE_123, WachunpelonCity_EventScript_PolicemanNorth_2
+	goto_if_set FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123, WachunpelonCity_EventScript_PolicemanNorth_2
 # 63 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_Policeman1, MSGBOX_YESNO
 WachunpelonCity_EventScript_PolicemanNorth_1:
@@ -179,7 +179,7 @@ WachunpelonCity_EventScript_PolicemanEast::
 # 96 "data/maps/WachunpelonCity/scripts.pory"
 	waitmovement 1
 # 97 "data/maps/WachunpelonCity/scripts.pory"
-	goto_if_set FLAG_HIDE_BIKERS_ROUTE_123, WachunpelonCity_EventScript_PolicemanEast_2
+	goto_if_set FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123, WachunpelonCity_EventScript_PolicemanEast_2
 # 101 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_Policeman1, MSGBOX_YESNO
 WachunpelonCity_EventScript_PolicemanEast_1:
