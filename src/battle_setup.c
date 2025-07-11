@@ -571,9 +571,11 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_OKIDOGI:
     case SPECIES_FEZANDIPITI:
     case SPECIES_MUNKIDORI:
-    case SPECIES_JIRACHI:
     case SPECIES_ZARUDE:
         CreateBattleStartTask(B_TRANSITION_SLICE, MUS_RG_VS_LEGEND);
+        break;
+    case SPECIES_JIRACHI:
+        CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_VS_RAYQUAZA);
         break;
     case SPECIES_DARKRAI:
     case SPECIES_CRESSELIA:

@@ -87,3 +87,98 @@ script BaldesianForest_EventScript_Enamorus{
 	release
 	end
 }
+
+script BaldesianForest_EventScript_Celebi{
+    lockall
+    msgbox("You sense a mystical energy…\n
+        Try playing the POKé FLUTE?", MSGBOX_YESNO)
+    waitmessage
+    goto_if_eq(VAR_RESULT, NO, BaldesianForest_EventScript_NoCelebiSummon)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    delay(20)
+    fadenewbgm(MUS_NONE)
+    msgbox("{PLAYER} begins playing the POKé FLUTE…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_RG_JIGGLYPUFF, FALSE)
+    delay(480)
+    checkobjectat(33, 12)
+    if(var(VAR_RESULT) == TRUE){
+        playse(SE_M_PETAL_DANCE)
+        showobjectat(17, MAP_BALDESIAN_FOREST)
+        delay(8)
+        hideobjectat(17, MAP_BALDESIAN_FOREST)
+        delay(8)
+        showobjectat(17, MAP_BALDESIAN_FOREST)
+        delay(16)
+        hideobjectat(17, MAP_BALDESIAN_FOREST)
+        delay(24)
+        showobjectat(17, MAP_BALDESIAN_FOREST)
+        waitse
+    }
+    else{
+        playse(SE_M_PETAL_DANCE)
+        showobjectat(13, MAP_BALDESIAN_FOREST)
+        delay(8)
+        hideobjectat(13, MAP_BALDESIAN_FOREST)
+        delay(8)
+        showobjectat(13, MAP_BALDESIAN_FOREST)
+        delay(16)
+        hideobjectat(13, MAP_BALDESIAN_FOREST)
+        delay(24)
+        showobjectat(13, MAP_BALDESIAN_FOREST)
+        waitse
+    } 
+    delay(16)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    playbgm(MUS_SEALED_CHAMBER, FALSE)
+    msgbox("CELEBI was drawn to the sound!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    givemon(SPECIES_CELEBI, 75)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CELEBI)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        removeobject(13)
+        removeobject(17)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        playfanfare(MUS_OBTAIN_ITEM)
+        waitfanfare
+        msgbox("CELEBI joined the party!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_RECEIVED_CELEBI)
+        setvar(VAR_BALDESIA_FOREST_STATE, 2)
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        removeobject(13)
+        removeobject(17)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        playfanfare(MUS_OBTAIN_ITEM)
+        waitfanfare
+        msgbox("CELEBI was sent to the PC!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_RECEIVED_CELEBI)
+        setvar(VAR_BALDESIA_FOREST_STATE, 2)
+    }
+    else{
+        goto(Common_EventScript_NoMoreRoomForPokemon)
+    }
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+script BaldesianForest_EventScript_NoCelebiSummon{
+    lockall
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    releaseall
+    end
+}

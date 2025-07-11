@@ -15,6 +15,7 @@ mapscripts AltarOfBaldesia_MapScripts {
 
 script AltarOfBaldesia_OnResume{
     call_if_set(FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR, AltarOfBaldesia_RemoveOkidogi)
+    call_if_eq(VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_TryRemoveJirachi)
     end
 }
 
@@ -26,6 +27,19 @@ script AltarOfBaldesia_OnTransition{
 script AltarOfBaldesia_RemoveOkidogi{
     removeobject(10)
     return
+}
+
+script AltarOfBaldesia_TryRemoveJirachi{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_LAST_TALKED) == LOCALID_JIRACHI && var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        removeobject(VAR_LAST_TALKED)
+        setflag(FLAG_DEFEATED_JIRACHI)
+        addvar(VAR_JIRACHI_COUNTER, 1)
+    }
+    else{
+        goto(Common_EventScript_NopReturn)
+    }
+    end
 }
 
 #script AltarOfBaldesia_LeftTrigger{
@@ -436,11 +450,129 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     clearflag(FLAG_MUNKIDORI_EASTERN_RUINS)
     clearflag(FLAG_PECHARUNT_EASTERN_RUINS)
     setvar(VAR_MOMO_ARIA_STATE, 7)
+    setvar(VAR_BALDESIA_FOREST_STATE, 1)
     setflag(FLAG_REMOVE_WARP_FADE)
     playse(SE_FLEE)
     fadescreen(FADE_TO_BLACK)
     waitse
     warpsilent(MAP_BALDESIA_MAIN_HOUSE, 13, 7)
+    end
+}
+
+script AltarOfBaldesia_EventScript_Jirachi{
+    lock
+    goto_if_eq(VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle) // if player somehow lost
+    goto_if_eq(VAR_JIRACHI_COUNTER, 10, AltarOfBaldesia_EventScript_ShouldntTryAgain) // locks player out if they ko'd jirachi
+    msgbox("JIRACHI is in a deep slumber.\n
+        … Try playing the POKé FLUTE?", MSGBOX_YESNO)
+    waitmessage
+    goto_if_eq(VAR_RESULT, YES, AltarOfBaldesia_EventScript_TryAwakenJirachi)
+    release
+    end
+}
+
+script AltarOfBaldesia_EventScript_ShouldntTryAgain{
+    lock
+    msgbox("MOMO's voice echoes…\p
+        “If you ever feel safe, please\n
+        remember that I'm out there.”\p
+        Probably shouldn't try to wake\n
+        JIRACHI again…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script AltarOfBaldesia_EventScript_TryAwakenJirachi{
+    lock
+    fadenewbgm(MUS_NONE)
+    msgbox("{PLAYER} begins playing the POKé FLUTE…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playbgm(MUS_RG_JIGGLYPUFF, FALSE)
+    delay(450)
+    addvar(VAR_JIRACHI_COUNTER, 1)
+    goto_if_eq(VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle)
+    msgbox("Nothing happened!\n
+        Try again?", MSGBOX_YESNO)
+    waitmessage
+    while(var(VAR_JIRACHI_COUNTER) <= 7 && var(VAR_RESULT) == YES){
+        msgbox("{PLAYER} begins playing the POKé FLUTE…", MSGBOX_AUTOCLOSE)
+        waitmessage
+        playbgm(MUS_RG_JIGGLYPUFF, FALSE)
+        delay(450)
+        addvar(VAR_JIRACHI_COUNTER, 1)
+        msgbox("Nothing happened!\n
+        Try again?", MSGBOX_YESNO)
+        waitmessage
+    }
+    if(var(VAR_JIRACHI_COUNTER) == 8 && var(VAR_RESULT) == YES){
+        msgbox("{PLAYER} begins playing the POKé FLUTE…", MSGBOX_AUTOCLOSE)
+        waitmessage
+        playbgm(MUS_RG_JIGGLYPUFF, FALSE)
+        delay(450)
+        addvar(VAR_JIRACHI_COUNTER, 1)
+    }
+    goto_if_eq(VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle)
+    fadedefaultbgm
+    release
+    end
+}
+
+// jirachi counter 9
+script AltarOfBaldesia_EventScript_JirachiBattle{
+    lock
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    delay(16)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    waitse
+    fadescreen(FADE_FROM_WHITE)
+    delay(30)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    waitse
+    setobjectnewmovementtype(LOCALID_JIRACHI, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+    fadescreen(FADE_FROM_WHITE)
+    delay(30)
+    faceplayer
+    playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    delay(30)
+    playbgm(MUS_SEALED_CHAMBER, TRUE)
+    msgbox("JIRACHI woke!\n
+        It looks mad!\l
+        … Maybe it was having a good dream?\p
+        In a rage, JIRACHI attacks!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setwildbattle(SPECIES_JIRACHI, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+        playmoncry(SPECIES_JIRACHI, CRY_MODE_FAINT)
+        waitmoncry
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        setobjectnewmovementtype(LOCALID_JIRACHI, MOVEMENT_TYPE_NONE)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("JIRACHI went back to sleep…", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setvar(VAR_JIRACHI_COUNTER, 8) //resets count to player needing to play once
+    }
+    elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        playmoncry(SPECIES_JIRACHI, CRY_MODE_FAINT)
+        waitmoncry
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        setobjectnewmovementtype(LOCALID_JIRACHI, MOVEMENT_TYPE_NONE)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("JIRACHI went back into a deep slumber…", MSGBOX_AUTOCLOSE)
+        waitmessage
+        addvar(VAR_JIRACHI_COUNTER, 1) // sets var to 10, locking player from trying again
+    }
+    fadedefaultbgm
+    release
     end
 }
 

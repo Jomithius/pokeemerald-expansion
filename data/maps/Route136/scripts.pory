@@ -1,1 +1,93 @@
-mapscripts Route136_MapScripts {}
+const LOCALID_KLAWF = 12
+
+mapscripts Route136_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Route136_OnResume
+}
+
+script Route136_OnResume{
+    call_if_eq(VAR_ROUTE_136_STATE, 1, Route136_RemoveKlawf)
+    end
+}
+
+script Route136_RemoveKlawf{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_LAST_TALKED) == LOCALID_KLAWF && var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        removeobject(VAR_LAST_TALKED)
+        setflag(FLAG_DEFEATED_KLAWF)
+    }
+    else{
+        goto(Common_EventScript_NopReturn)
+    }
+    end
+}
+
+script Route136_EventScript_Klawf{
+    lock
+    playmoncry(SPECIES_KLAWF, CRY_MODE_WEAK)
+    waitmoncry
+    checkitem(ITEM_POKE_FLUTE)
+    goto_if_ne(VAR_RESULT, TRUE, Route136_EventScript_KlawfWontMove)
+    msgbox("The KLAWF is in a deep sleep.\p
+        Would you like to use the POKé FLUTE?", MSGBOX_YESNO)
+    waitmessage
+    goto_if_eq(VAR_RESULT, YES, Route136_EventScript_KlawfBattle)
+    release
+    end
+}
+
+script Route136_EventScript_KlawfWontMove{
+    lock
+    msgbox("The KLAWF is in a deep sleep.\p
+        Doesn't look like it's waking up\n
+        anytime soon.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script Route136_EventScript_KlawfBattle{
+    lock
+    setvar(VAR_ROUTE_136_STATE, 1)
+    fadenewbgm(MUS_NONE)
+    msgbox("{PLAYER} begins playing the POKé FLUTE…", MSGBOX_DEFAULT)
+    waitmessage
+    playbgm(MUS_RG_JIGGLYPUFF, FALSE)
+    delay(450)
+    fadedefaultbgm
+    delay(30)
+    playse(SE_PIN)
+    applymovement(LOCALID_KLAWF, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    applymovement(LOCALID_KLAWF, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("The KLAWF woke up!\n
+        In a rage, it attacks!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setwildbattle(SPECIES_KLAWF, 75)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+        playmoncry(SPECIES_KLAWF, CRY_MODE_ENCOUNTER)
+        waitmoncry
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        removeobject(LOCALID_KLAWF)
+        setflag(FLAG_DEFEATED_KLAWF)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("The KLAWF ran off somewhere…", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        playmoncry(SPECIES_KLAWF, CRY_MODE_FAINT)
+        waitmoncry
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        removeobject(LOCALID_KLAWF)
+        setflag(FLAG_DEFEATED_KLAWF)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("The KLAWF ran off somewhere…", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    setvar(VAR_ROUTE_136_STATE, 2)
+    release
+    end
+}

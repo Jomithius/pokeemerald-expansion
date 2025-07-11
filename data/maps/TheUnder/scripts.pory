@@ -73,6 +73,12 @@ script TheUnder_EventScript_Artist{
     end
 }
 
+script TheUnder_EventScript_Hiker{
+    msgbox("It was a long hike, but it was\n
+        definitely worth it!", MSGBOX_NPC)
+    end
+}
+
 script TheUnder_EventScript_Carson{
     trainerbattle_single(TRAINER_CARSON, TheUnder_Text_CarsonIntro, TheUnder_Text_CarsonDefeat)
     msgbox(TheUnder_Text_CarsonPostBattle, MSGBOX_AUTOCLOSE)
@@ -119,7 +125,7 @@ text Common_Text_ExplainTera{
     A POKéMON's TERA TYPE can be viewed\n
     in the summary screen.\p
     It will default to an existing TYPE\n
-    the POKéMON has, such as:\p
+    the POKéMON has. Such as:\p
     A mono TYPE will have that TYPE as\n
     its TERA, while a DUAL TYPE could\l
     have either TYPE as the TERA.\p
