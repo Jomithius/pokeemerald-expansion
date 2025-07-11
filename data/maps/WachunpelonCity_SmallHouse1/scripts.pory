@@ -1,1 +1,11 @@
 mapscripts WachunpelonCity_SmallHouse1_MapScripts {}
+
+script WachunpelonCity_SmallHouse1_EventScript_Gentleman{
+    msgbox("This city has a very unique\n
+        irrigation system.\p
+        The water that you see flowing through\n
+        the houses starts from the roof, and\l
+        ends up in the sewer system.\p
+        It's engineering genius!", MSGBOX_NPC)
+    end
+}

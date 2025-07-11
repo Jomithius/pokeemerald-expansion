@@ -1,1 +1,32 @@
 mapscripts WachunpelonCity_SmallHouse3_MapScripts {}
+
+script WachunpelonCity_SmallHouse3_EventScript_Lina{
+    msgbox("I'm on vacation! Shoo!", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_SmallHouse3_EventScript_Kai{
+    msgbox("{PLAYER}!\p
+        I cooked up a new strategy for the\n
+        next time we battle!\p
+        You better be ready!", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_SmallHouse3_EventScript_Luxray{
+    lock
+    faceplayer
+    playmoncry(SPECIES_LUXRAY, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script WachunpelonCity_SmallHouse3_EventScript_Ninetales{
+    lock
+    faceplayer
+    playmoncry(SPECIES_NINETALES, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}

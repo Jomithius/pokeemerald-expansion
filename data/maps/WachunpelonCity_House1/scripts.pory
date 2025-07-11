@@ -1,1 +1,31 @@
 mapscripts WachunpelonCity_House1_MapScripts {}
+
+script WachunpelonCity_House1_EventScript_OldWoman{
+    msgbox("There's a legend that a very rare\n
+        POKéMON whose feathers can cure bad\l
+        dreams lives on an island around here.\p
+        There used to be an adventurer couple\n
+        that would rest here while they were\l
+        searching for it.\p
+        After a while, they just… stopped\n
+        coming.", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_House1_EventScript_Wattrel{
+    lock
+    faceplayer
+    playmoncry(SPECIES_WATTREL, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script WachunpelonCity_House1_EventScript_Blissey{
+    lock
+    faceplayer
+    playmoncry(SPECIES_BLISSEY, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}

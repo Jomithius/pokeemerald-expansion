@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "WachunpelonCity_SmallHouse3_EventScript_Lina",
+      "flag": "FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(LUXRAY)",
@@ -37,8 +37,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "WachunpelonCity_SmallHouse3_EventScript_Luxray",
+      "flag": "FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(NINETALES)",
@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "WachunpelonCity_SmallHouse3_EventScript_Ninetales",
+      "flag": "FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FLANNERY",
@@ -63,8 +63,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "WachunpelonCity_SmallHouse3_EventScript_Kai",
+      "flag": "FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN"
     }
   ],
   "warp_events": [

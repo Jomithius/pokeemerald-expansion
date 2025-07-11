@@ -8,11 +8,58 @@ script WachunpelonCity_PokemonCenter_OnTransition{
     end
 }
 
-script WachunpelonCity_PokemonCenter_Nurse{
+script WachunpelonCity_PokemonCenter_EventScript_Nurse{
     setvar(VAR_0x800B, 1)
     call(Common_EventScript_PkmnCenterNurse)
     waitmessage
     waitbuttonpress
     release
+    end
+}
+
+script WachunpelonCity_PokemonCenter_EventScript_Man_5{
+    lock
+    faceplayer
+    goto_if_set(FLAG_RECEIVED_PEAT_BLOCK, WachunpelonCity_PokemonCenter_EventScript_UrsalunaHint)
+    msgbox("You're a TRAINER, aren't you?\n
+        I found this weird rock in PETALBURG\l
+        WOODS.\p
+        I couldn't find a use for it, but maybe\n
+        you can.", MSGBOX_DEFAULT)
+    waitmessage
+    checkitemspace(ITEM_PEAT_BLOCK)
+    if(var(VAR_RESULT) == TRUE){
+        giveitem(ITEM_PEAT_BLOCK)
+        setflag(FLAG_RECEIVED_PEAT_BLOCK)
+        waitmessage
+        clearflag(FLAG_DEFEATED_URSALUNA_BLOODMOON)
+    }
+    else{
+        goto(Common_EventScript_ShowBagIsFull)
+    }
+    msgbox("There was also a scary looking POKéMON\n
+        I've never seen before!\p
+        It's probably still there, but I'm too\n
+        scared to go back.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+script WachunpelonCity_PokemonCenter_EventScript_UrsalunaHint{
+    msgbox("There was a scary looking POKéMON in\n
+        PETALBURG WOODS!\p
+        It's probably still there, but I'm too\n
+        scared to go back.", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_PokemonCenter_EventScript_Beauty{
+    msgbox("I just love coming here for vacation!", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_PokemonCenter_EventScript_DevonEmployee{
+    msgbox("DEVON CORP. paid for this vacation.\n
+        Man, I love my job.", MSGBOX_NPC)
     end
 }

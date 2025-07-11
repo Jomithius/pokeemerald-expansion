@@ -1,1 +1,14 @@
 mapscripts WachunpelonCity_House2_MapScripts {}
+
+script WachunpelonCity_House2_EventScript_AquaGrunt{
+    msgbox("Now that ARCHIE and MAXIE have\n
+        disbanded their teams, we can finally\l
+        be together.", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_House2_EventScript_MagmaGrunt{
+    msgbox("Just because we have different views\n
+        doesn't mean we can't love each other.", MSGBOX_NPC)
+    end
+}

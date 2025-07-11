@@ -71,9 +71,9 @@
 #define FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR       0x39 // Jirachis Altar CS
 #define FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR     0x3A // Jirachis Altar CS
 #define FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO 0x3B // For Bennis Rematch
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
+#define FLAG_RECEIVED_PEAT_BLOCK               0x3C // Wachunpelon PokeCenter
+#define FLAG_DEFEATED_URSALUNA_BLOODMOON       0x3D // Petalburg Woods
+#define FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN   0x3E // For gym rematches
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag

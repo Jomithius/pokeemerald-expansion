@@ -1764,7 +1764,7 @@ Baldesia_EventScript_LittleGirl_Text_0:
 
 Baldesia_EventScript_OldWoman_Text_0:
 # 371 "data/maps/Baldesia/scripts.pory"
-	.string "There's a DOJO in the woods renowned\n for the strength of its members.\p I heard the Sensei there is looking\n for a successor.$"
+	.string "There's a DOJO in the woods renowned\n for the strength of its members.\p I heard the MASTER there is looking\n for a successor.$"
 
 Baldesia_EventScript_OldManBridge_Text_0:
 # 381 "data/maps/Baldesia/scripts.pory"

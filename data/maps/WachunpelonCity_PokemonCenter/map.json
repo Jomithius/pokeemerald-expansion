@@ -24,11 +24,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "WachunpelonCity_PokemonCenter_Nurse",
+      "script": "WachunpelonCity_PokemonCenter_EventScript_Nurse",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
       "x": 2,
       "y": 3,
       "elevation": 3,
@@ -37,11 +37,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_PokemonCenter_EventScript_Man_5",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
       "x": 10,
       "y": 6,
       "elevation": 3,
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_PokemonCenter_EventScript_DevonEmployee",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_PokemonCenter_EventScript_Beauty",
       "flag": "0"
     }
   ],

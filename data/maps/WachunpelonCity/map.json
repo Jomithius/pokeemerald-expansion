@@ -74,33 +74,33 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_FatMan",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 32,
       "y": 39,
-      "elevation": 4,
+      "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_OldMan",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
       "x": 31,
       "y": 39,
-      "elevation": 4,
+      "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_OldWoman",
       "flag": "0"
     },
     {
@@ -113,7 +113,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Cook",
       "flag": "0"
     },
     {
@@ -126,7 +126,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Woman_2",
       "flag": "0"
     },
     {
@@ -139,7 +139,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Tuber_F",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Woman_4",
       "flag": "0"
     },
     {
@@ -165,20 +165,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Tuber_M_Swimming",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
-      "x": 52,
-      "y": 37,
+      "x": 51,
+      "y": 35,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Man_4",
       "flag": "0"
     },
     {
@@ -191,7 +191,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_AquaGrunt",
       "flag": "0"
     },
     {
@@ -204,7 +204,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Sailor",
       "flag": "0"
     },
     {
@@ -217,7 +217,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Woman_1",
       "flag": "0"
     },
     {
@@ -230,7 +230,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_Tuber_M_Walking",
       "flag": "0"
     },
     {
@@ -243,7 +243,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WachunpelonCity_EventScript_OldManBeach",
       "flag": "0"
     },
     {

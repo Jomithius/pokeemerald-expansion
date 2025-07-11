@@ -182,3 +182,23 @@ script BaldesianForest_EventScript_NoCelebiSummon{
     releaseall
     end
 }
+
+script BaldesianForest_EventScript_OldMan{
+    lock
+    faceplayer
+    msgbox("Huff… Huff…\n
+        I might be old, but I still got it!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script BaldesianForest_EventScript_KimonoGirl{
+    msgbox("My grandpa used to train here\n
+        when he was younger.\p
+        He was one of the former MASTER's\n
+        top disciples.", MSGBOX_NPC)
+    end
+}

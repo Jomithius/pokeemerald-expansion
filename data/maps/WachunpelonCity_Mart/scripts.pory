@@ -1,1 +1,13 @@
 mapscripts WachunpelonCity_Mart_MapScripts {}
+
+script WachunpelonCity_Mart_EventScript_Lass{
+    msgbox("Should I get this?\n
+        Or…", MSGBOX_SIGN)
+    end
+}
+
+script WachunpelonCity_Mart_EventScript_FatMan{
+    msgbox("Aw, sweet.\n
+        They got MOUNTAIN DEW.", MSGBOX_SIGN)
+    end
+}

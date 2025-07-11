@@ -523,6 +523,7 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_HOOPA_UNBOUND:
         CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_RG_VS_DEOXYS);
         break;
+    case SPECIES_URSALUNA_BLOODMOON:
     case SPECIES_CHIEN_PAO:    
     case SPECIES_WO_CHIEN:
     case SPECIES_TING_LU:

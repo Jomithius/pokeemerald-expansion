@@ -386,6 +386,30 @@ BaldesianForest_EventScript_NoCelebiSummon::
 	end
 
 
+BaldesianForest_EventScript_OldMan::
+# 187 "data/maps/BaldesianForest/scripts.pory"
+	lock
+# 188 "data/maps/BaldesianForest/scripts.pory"
+	faceplayer
+# 189 "data/maps/BaldesianForest/scripts.pory"
+	msgbox BaldesianForest_EventScript_OldMan_Text_0, MSGBOX_AUTOCLOSE
+# 191 "data/maps/BaldesianForest/scripts.pory"
+	waitmessage
+# 192 "data/maps/BaldesianForest/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 193 "data/maps/BaldesianForest/scripts.pory"
+	waitmovement 0
+# 194 "data/maps/BaldesianForest/scripts.pory"
+	release
+	end
+
+
+BaldesianForest_EventScript_KimonoGirl::
+# 199 "data/maps/BaldesianForest/scripts.pory"
+	msgbox BaldesianForest_EventScript_KimonoGirl_Text_0, MSGBOX_NPC
+	end
+
+
 BaldesianForest_EventScript_Celebi_Text_0:
 # 93 "data/maps/BaldesianForest/scripts.pory"
 	.string "You sense a mystical energy…\n Try playing the POKé FLUTE?$"
@@ -405,3 +429,11 @@ BaldesianForest_EventScript_Celebi_Text_3:
 BaldesianForest_EventScript_Celebi_Text_4:
 # 164 "data/maps/BaldesianForest/scripts.pory"
 	.string "CELEBI was sent to the PC!$"
+
+BaldesianForest_EventScript_OldMan_Text_0:
+# 189 "data/maps/BaldesianForest/scripts.pory"
+	.string "Huff… Huff…\n I might be old, but I still got it!$"
+
+BaldesianForest_EventScript_KimonoGirl_Text_0:
+# 199 "data/maps/BaldesianForest/scripts.pory"
+	.string "My grandpa used to train here\n when he was younger.\p He was one of the former MASTER's\n top disciples.$"

@@ -1,5 +1,127 @@
 mapscripts WachunpelonCity_MapScripts {}
 
+script WachunpelonCity_EventScript_FatMan{
+    msgbox("Man…\n
+        That's a nice ocean breeze.", MSGBOX_SIGN)
+    end
+}
+
+script WachunpelonCity_EventScript_OldMan{
+    msgbox("This could be one of the last\n
+        vacations we ever take! Hahaha!", MSGBOX_SIGN)
+    end
+}
+
+script WachunpelonCity_EventScript_OldWoman{
+    msgbox("Don't say that!", MSGBOX_SIGN)
+    end
+}
+
+script WachunpelonCity_EventScript_AquaGrunt{
+    delay(16)
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    msgbox("I'm not doing anything bad, I swear!\p
+        I just moved out here after everything\n
+        that happened.\p
+        I just want to live quietly now.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script WachunpelonCity_EventScript_Woman_4{
+    lock
+    msgbox("You can do it, honey!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script WachunpelonCity_EventScript_Tuber_F{
+    msgbox("I can't!\n
+        It's too scary!", MSGBOX_SIGN)
+    end
+}
+
+script WachunpelonCity_EventScript_Tuber_M_Swimming{
+    msgbox("I love swimming!", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_EventScript_Tuber_M_Walking{
+    msgbox("I love running on the sand!", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_EventScript_Man_4{
+    msgbox("We came all the way from VERDANTURF.\n
+        I work at the DAYCARE over there.", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_EventScript_Woman_1{
+    msgbox("My family can embarass me sometimes,\n
+        but I still love them.", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_EventScript_OldManBeach{
+    msgbox("I'm on vacation with my family.\n
+        I love seeing my grandkids having fun.", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_EventScript_Sailor{
+    msgbox("It can be hard work navigatin' these\n
+        seas.", MSGBOX_NPC)
+    end
+}
+
+script WachunpelonCity_EventScript_Woman_2{
+    lock
+    faceplayer
+    msgbox("I come here from LUSH ACREAGE all the\n
+        time just for the coffee.\p
+        It's so good!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script WachunpelonCity_EventScript_Cook{
+    lock
+    msgbox("Hm… So he decided to use those spices…!\n
+        Gosh… It's so yummy…\l
+        Tasty…\l
+        Scrumptious…\l
+        Delicious…\l
+        Savory…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    msgbox("Excuse me!\p
+        It's rude to bother people when they're\n
+        eating!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
 script WachunpelonCity_EventScript_PolicemanTrigger{
     lockall
     playse(SE_PIN)

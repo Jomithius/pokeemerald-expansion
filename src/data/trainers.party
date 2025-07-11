@@ -10716,15 +10716,15 @@ Brave Nature
 - Zen Headbutt  
 - Brick Break  
 
-Darmanitan-Galar (M) @ Ability Shield  
-Ability: Gorilla Tactics  
-Level: 70   
+Revavroom @ Air Balloon  
+Ability: Filter
+Level: 75    
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
-- Icicle Crash  
-- Earthquake  
-- Superpower  
-- Zen Headbutt  
+- Noxious Torque  
+- Wicked Torque  
+- Blazing Torque  
+- Magical Torque  
 
 Mr. Rime (M) @ Berserk Gene  
 Ability: Tangled Feet  
@@ -10737,8 +10737,9 @@ Adamant Nature
 - Icicle Spear  
 
 Weezing-Galar (M) @ Leftovers  
-Ability: Neutralizing Gas  
-Level: 75  
+Ability: Neutralizing Gas 
+Tera Type: Fairy  
+Level: 75   
 EVs: 252 HP / 252 SpD / 4 SpA  
 Bold Nature  
 IVs: 0 Atk  

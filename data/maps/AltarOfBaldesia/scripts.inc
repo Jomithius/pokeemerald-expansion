@@ -1426,7 +1426,7 @@ AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_1:
 
 AltarOfBaldesia_EventScript_JirachiBattle_Text_0:
 # 545 "data/maps/AltarOfBaldesia/scripts.pory"
-	.string "JIRACHI woke!\n It looks mad!\l … Maybe it was having a good dream?\p In a rage, JIRACHI attacked!$"
+	.string "JIRACHI woke!\n It looks mad!\l … Maybe it was having a good dream?\p In a rage, JIRACHI attacks!$"
 
 AltarOfBaldesia_EventScript_JirachiBattle_Text_1:
 # 560 "data/maps/AltarOfBaldesia/scripts.pory"
