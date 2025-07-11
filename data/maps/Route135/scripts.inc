@@ -86,9 +86,9 @@ Route135_EventScript_FirstMoo::
 # 60 "data/maps/Route135/scripts.pory"
 	lockall
 # 61 "data/maps/Route135/scripts.pory"
-	applymovement 28, Common_Movement_WalkInPlaceDown
+	applymovement 27, Common_Movement_WalkInPlaceDown
 # 62 "data/maps/Route135/scripts.pory"
-	waitmovement 28
+	waitmovement 27
 # 63 "data/maps/Route135/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 # 64 "data/maps/Route135/scripts.pory"
@@ -98,9 +98,9 @@ Route135_EventScript_FirstMoo::
 # 68 "data/maps/Route135/scripts.pory"
 	waitmessage
 # 69 "data/maps/Route135/scripts.pory"
-	applymovement 28, Common_Movement_WalkInPlaceLeft
+	applymovement 27, Common_Movement_WalkInPlaceLeft
 # 70 "data/maps/Route135/scripts.pory"
-	waitmovement 28
+	waitmovement 27
 # 71 "data/maps/Route135/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 72 "data/maps/Route135/scripts.pory"
@@ -118,9 +118,9 @@ Route135_EventScript_FirstMoo::
 # 78 "data/maps/Route135/scripts.pory"
 	waitmessage
 # 79 "data/maps/Route135/scripts.pory"
-	applymovement 28, Common_Movement_WalkInPlaceDown
+	applymovement 27, Common_Movement_WalkInPlaceDown
 # 80 "data/maps/Route135/scripts.pory"
-	waitmovement 28
+	waitmovement 27
 # 81 "data/maps/Route135/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 # 82 "data/maps/Route135/scripts.pory"
@@ -130,13 +130,13 @@ Route135_EventScript_FirstMoo::
 # 85 "data/maps/Route135/scripts.pory"
 	waitmessage
 # 86 "data/maps/Route135/scripts.pory"
-	applymovement 28, Common_Movement_WalkInPlaceLeft
+	applymovement 27, Common_Movement_WalkInPlaceLeft
 # 87 "data/maps/Route135/scripts.pory"
-	waitmovement 28
+	waitmovement 27
 # 88 "data/maps/Route135/scripts.pory"
 	setvar VAR_TEMP_7, 1
 # 89 "data/maps/Route135/scripts.pory"
-	fadeinbgm 2
+	fadeinbgm 1
 # 90 "data/maps/Route135/scripts.pory"
 	releaseall
 	end
@@ -298,7 +298,7 @@ Route135_EventScript_FirstMoo_Text_1:
 
 Route135_EventScript_FirstMoo_Text_2:
 # 83 "data/maps/Route135/scripts.pory"
-	.string "Isn't it beautiful?\n I love nature.$"
+	.string "Isn't it beautiful?\n Gosh, I love nature.$"
 
 Route135_EventScript_Man4DidYouKnow_Text_0:
 # 95 "data/maps/Route135/scripts.pory"

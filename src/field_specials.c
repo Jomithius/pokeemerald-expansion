@@ -4373,7 +4373,7 @@ void IsLeadMonCat(void)
     for (i = 0; i < PARTY_SIZE; i++)
     {
         pokemon = &gPlayerParty[i];
-        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG) && !GetMonData(pokemon, MON_DATA_HP_LOST))
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG) && !GetMonData(&gPlayerParty[0], MON_DATA_HP_LOST))
         {
             species = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
             switch(species)
@@ -4465,31 +4465,7 @@ void IsLeadMonCat(void)
             case SPECIES_RAIKOU:
                 gSpecialVar_Result = TRUE;
                 break;
-            case SPECIES_EEVEE:
-                gSpecialVar_Result = TRUE;
-                break;
             case SPECIES_ESPEON:
-                gSpecialVar_Result = TRUE;
-                break;
-            case SPECIES_UMBREON:
-                gSpecialVar_Result = TRUE;
-                break;
-            case SPECIES_SYLVEON:
-                gSpecialVar_Result = TRUE;
-                break;
-            case SPECIES_LEAFEON:
-                gSpecialVar_Result = TRUE;
-                break;
-            case SPECIES_GLACEON:
-                gSpecialVar_Result = TRUE;
-                break;
-            case SPECIES_VAPOREON:
-                gSpecialVar_Result = TRUE;
-                break;
-            case SPECIES_JOLTEON:
-                gSpecialVar_Result = TRUE;
-                break;
-            case SPECIES_FLAREON:
                 gSpecialVar_Result = TRUE;
                 break;
             default:

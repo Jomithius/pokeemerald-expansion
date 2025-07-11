@@ -40193,7 +40193,7 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender =
 #line 15890
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+            TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 15891
         .doubleBattle = FALSE,
 #line 15892
