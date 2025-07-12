@@ -74,7 +74,7 @@
 #define FLAG_RECEIVED_PEAT_BLOCK               0x3C // Wachunpelon PokeCenter
 #define FLAG_DEFEATED_URSALUNA_BLOODMOON       0x3D // Petalburg Woods
 #define FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN   0x3E // For gym rematches
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
+#define FLAG_RECEIVED_CASTELIACONE             0x3F // Route 137
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag

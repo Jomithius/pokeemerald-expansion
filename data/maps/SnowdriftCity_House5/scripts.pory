@@ -1,1 +1,40 @@
 mapscripts SnowdriftCity_House5_MapScripts {}
+
+script SnowdriftCity_House5_EventScript_LittleBoy{
+    if(flag(FLAG_DEFEATED_CALYREX) == TRUE){
+        msgbox("What happened to that weird POKéMON?", MSGBOX_NPC)
+    }
+    else{
+       msgbox("There's a weird POKéMON outside!\n
+            It talks like a human!", MSGBOX_NPC) 
+    }
+    end
+}
+
+script SnowdriftCity_House5_EventScript_Vanillite{
+    lock
+    faceplayer
+    playmoncry(SPECIES_VANILLITE, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script SnowdriftCity_House5_EventScript_Girl{
+    msgbox("I love my VANILLITE!", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_House5_EventScript_Man{
+    msgbox("We had to get rid of all our stuff\n
+        to move here.\p
+        It was hard, but definitely worth it.", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_House5_EventScript_Woman{
+    msgbox("My grandfather is a GYM LEADER\n
+        in JOHTO.\p
+        He comes to visit sometimes.", MSGBOX_NPC)
+    end
+}

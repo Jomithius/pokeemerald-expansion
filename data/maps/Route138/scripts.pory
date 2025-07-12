@@ -1,1 +1,8 @@
 mapscripts Route138_MapScripts {}
+
+script Route138_EventScript_Camper{
+    msgbox("There's a village up ahead.\p
+        When I tried to enter, they wouldn't\n
+        let me in!", MSGBOX_NPC)
+    end
+}

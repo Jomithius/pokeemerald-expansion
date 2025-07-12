@@ -905,12 +905,12 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_DUSTY_2 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
+=== TRAINER_LAROLD ===
+Name: LAROLD
+Class: Black Belt
+Pic: Black Belt Fr
 Gender: Male
-Music: Hiker
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
@@ -922,7 +922,7 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_DUSTY_3 ===
+=== TRAINER_DUSTY_3 === /* FREE */
 Name: DUSTY
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -939,7 +939,7 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_DUSTY_4 ===
+=== TRAINER_DUSTY_4 === /* FREE */
 Name: DUSTY
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -956,7 +956,7 @@ IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_DUSTY_5 ===
+=== TRAINER_DUSTY_5 === /* FREE */
 Name: DUSTY
 Class: Ruin Maniac
 Pic: Ruin Maniac

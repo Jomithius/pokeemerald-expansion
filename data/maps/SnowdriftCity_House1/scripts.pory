@@ -1,1 +1,96 @@
 mapscripts SnowdriftCity_House1_MapScripts {}
+
+script SnowdriftCity_House1_EventScript_KimonoLady{
+    msgbox("My meathead of a husband only thinks\n
+        about training and battling.", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_House1_EventScript_LittleGirl{
+    msgbox("I wanna train at BRUNO's dojo!", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_House1_EventScript_Girl{
+    msgbox("I train in martial arts, but I\n
+        really like CONTESTS more.", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_House1_EventScript_BlackBelt{
+    lock
+    faceplayer
+    goto_if_not_defeated(TRAINER_LAROLD, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle)
+    msgbox("Sorry for doubting you.\n
+        I never thought BRUNO would lose." MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script SnowdriftCity_House1_EventScript_BlackBeltPrepBattle{
+    lock
+    msgbox("I grew up training with BRUNO.\n
+        I've never seen him lose a fight.", MSGBOX_DEFAULT)
+    waitmessage
+    if(flag(FLAG_SYS_DEFEATED_BRUNO) == TRUE){
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "I beat him.", "Yeah. He was strong.")
+        if(var(VAR_RESULT) == 0){
+            msgbox("What?!\n
+            There's no way you did.\p
+            Quit lying.", MSGBOX_DEFAULT)
+            waitmessage
+            dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Want me to prove it?", "Yeah, you're right.")
+            if(var(VAR_RESULT) == 0){
+                goto(SnowdriftCity_House1_EventScript_BlackBeltBattle)
+            }
+            else{
+                msgbox("That's what I thought.\n
+                There's no way he could lose.", MSGBOX_AUTOCLOSE)
+                waitmessage
+            }
+        }
+        else{
+            msgbox("Yeah. He really is.", MSGBOX_AUTOCLOSE)
+            waitmessage
+        }
+    }
+    closemessage
+    release
+    end
+}
+
+script SnowdriftCity_House1_EventScript_BlackBeltBattle{
+    lock
+    playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+    msgbox("Yeah, I do!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_LAROLD, SnowdriftCity_House1_Text_LaroldLoss)
+    playse(SE_PIN)
+    applymovement(4, Common_Movement_ExclamationMark)
+    waitmovement(4)
+    waitse
+    applymovement(4, Common_Movement_FaceUp)
+    waitmovement(4)
+    msgbox("What did I tell you about battling\n
+        indoors?!", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(1)
+    msgbox("Hahaha! Sorry, honey!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    faceplayer
+    applymovement(4, Common_Movement_FaceRight)
+    waitmovement(4)
+    msgbox("Sorry for doubting you.\n
+        I never thought BRUNO would lose.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_FaceRight)
+    waitmovement(1)
+    release
+    end
+}
+
+text SnowdriftCity_House1_Text_LaroldLoss{
+    "I guess you weren't lying!"
+}

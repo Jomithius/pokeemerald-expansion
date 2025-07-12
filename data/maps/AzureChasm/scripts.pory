@@ -1,5 +1,11 @@
 mapscripts AzureChasm_MapScripts {}
 
+script AzureChasm_EventScript_BlackBelt{
+    msgbox("It's so cold…\n
+        I can barely train like this…", MSGBOX_SIGN)
+    end
+}
+
 script AzureChasm_EventScript_Azelf{
     lock
     faceplayer

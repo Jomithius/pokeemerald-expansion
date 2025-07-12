@@ -166,6 +166,34 @@ Route136_EventScript_KlawfBattle_3:
 	goto Route136_EventScript_KlawfBattle_1
 
 
+Route136_EventScript_Expert_M::
+# 96 "data/maps/Route136/scripts.pory"
+	msgbox Route136_EventScript_Expert_M_Text_0, MSGBOX_NPC
+	end
+
+
+Route136_EventScript_HikerKlawf::
+# 106 "data/maps/Route136/scripts.pory"
+	lock
+# 107 "data/maps/Route136/scripts.pory"
+	faceplayer
+# 108 "data/maps/Route136/scripts.pory"
+	goto_if_unset FLAG_DEFEATED_KLAWF, Route136_EventScript_HikerKlawf_2
+Route136_EventScript_HikerKlawf_1:
+# 115 "data/maps/Route136/scripts.pory"
+	msgbox Route136_EventScript_HikerKlawf_Text_1, MSGBOX_AUTOCLOSE
+# 120 "data/maps/Route136/scripts.pory"
+	release
+	end
+
+Route136_EventScript_HikerKlawf_2:
+# 109 "data/maps/Route136/scripts.pory"
+	msgbox Route136_EventScript_HikerKlawf_Text_0, MSGBOX_AUTOCLOSE
+# 113 "data/maps/Route136/scripts.pory"
+	waitmessage
+	goto Route136_EventScript_HikerKlawf_1
+
+
 Route136_EventScript_Klawf_Text_0:
 # 30 "data/maps/Route136/scripts.pory"
 	.string "The KLAWF is in a deep sleep.\p Would you like to use the POKé FLUTE?$"
@@ -185,3 +213,15 @@ Route136_EventScript_KlawfBattle_Text_1:
 Route136_EventScript_KlawfBattle_Text_2:
 # 77 "data/maps/Route136/scripts.pory"
 	.string "The KLAWF ran off somewhere…$"
+
+Route136_EventScript_Expert_M_Text_0:
+# 96 "data/maps/Route136/scripts.pory"
+	.string "There's a city at the top of AZURE\n MOUNTAIN.\p It's snowy, but not that cold because\n of the geothermal energy.\p I don't really get it, but it's\n interesting.$"
+
+Route136_EventScript_HikerKlawf_Text_0:
+# 109 "data/maps/Route136/scripts.pory"
+	.string "There's a stupid KLAWF blocking\n the tunnel entrance!\p I tried hitting it to wake it up,\n but it's shell's too hard.$"
+
+Route136_EventScript_HikerKlawf_Text_1:
+# 115 "data/maps/Route136/scripts.pory"
+	.string "The KLAWF is finally gone!\n Now I can start my hike up the\l mountain.\p I'll go after I take a break.\n … Maybe a nap too.$"

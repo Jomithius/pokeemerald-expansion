@@ -1,1 +1,11 @@
 mapscripts SnowdriftCity_House6_MapScripts {}
+
+script SnowdriftCity_House6_EventScript_DojoOldMan{
+    msgbox("This is a great place to retire.", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_House6_EventScript_DojoOldWoman{
+    msgbox("We moved here from BALDESIA.", MSGBOX_NPC)
+    end
+}

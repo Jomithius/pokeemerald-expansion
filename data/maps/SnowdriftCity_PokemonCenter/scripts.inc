@@ -25,3 +25,33 @@ SnowdriftCity_PokemonCenter_Nurse::
 	release
 	end
 
+
+SnowdriftCity_PokemonCenter_EventScript_BirdKeeper::
+# 21 "data/maps/SnowdriftCity_PokemonCenter/scripts.pory"
+	msgbox SnowdriftCity_PokemonCenter_EventScript_BirdKeeper_Text_0, MSGBOX_NPC
+	end
+
+
+SnowdriftCity_PokemonCenter_EventScript_OldMan::
+# 31 "data/maps/SnowdriftCity_PokemonCenter/scripts.pory"
+	msgbox SnowdriftCity_PokemonCenter_EventScript_OldMan_Text_0, MSGBOX_NPC
+	end
+
+
+SnowdriftCity_PokemonCenter_EventScript_OldWoman::
+# 37 "data/maps/SnowdriftCity_PokemonCenter/scripts.pory"
+	msgbox SnowdriftCity_PokemonCenter_EventScript_OldWoman_Text_0, MSGBOX_NPC
+	end
+
+
+SnowdriftCity_PokemonCenter_EventScript_BirdKeeper_Text_0:
+# 21 "data/maps/SnowdriftCity_PokemonCenter/scripts.pory"
+	.string "There's a CORVIKNIGHT service to\n transport people up here.\p It's really difficult to navigate\n around the mountain, though.\p Get too close, and TINKATON might\n try knocking you out of the sky.$"
+
+SnowdriftCity_PokemonCenter_EventScript_OldMan_Text_0:
+# 31 "data/maps/SnowdriftCity_PokemonCenter/scripts.pory"
+	.string "I love the hot springs here.\n Risking the flight here was worth it!$"
+
+SnowdriftCity_PokemonCenter_EventScript_OldWoman_Text_0:
+# 37 "data/maps/SnowdriftCity_PokemonCenter/scripts.pory"
+	.string "We used the CORVIKNIGHT service\n to get here.\p I'm worried about the flight back down.$"

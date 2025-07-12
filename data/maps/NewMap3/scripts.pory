@@ -1,1 +1,18 @@
 mapscripts NewMap3_MapScripts {}
+
+script SnowdriftCity_NewMap3_EventScript_Corviknight{
+    lock
+    faceplayer
+    playmoncry(SPECIES_CORVIKNIGHT, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script SnowdriftCity_NewMap3_EventScript_BirdKeeper{
+    msgbox("I run a business flying people up\n
+        the mountain.\p
+        It's can be risky, but we've never\n
+        had any accidents.", MSGBOX_NPC)
+    end
+}

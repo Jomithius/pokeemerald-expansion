@@ -36,6 +36,18 @@ script Route139_UpdateWorkerFredward{
     return
 }
 
+script Route139_EventScript_BattleGirl{
+    msgbox("BRUNO's way too strong.\n
+        I can't beat him.", MSGBOX_NPC)
+    end
+}
+
+script Route139_EventScript_Expert_M{
+    msgbox("There are some rare POKéMON\n
+        in this river.", MSGBOX_NPC)
+    end
+}
+
 script Route139_LeftTrigger{
     lockall
     setflag(FLAG_TEMP_5)

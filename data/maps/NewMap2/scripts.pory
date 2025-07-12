@@ -1,1 +1,110 @@
 mapscripts NewMap2_MapScripts {}
+
+script Route137_EventScript_Woman_4{
+    lock
+    faceplayer
+    msgbox("My husband used to be an athlete.\n
+        Every time we come to the beach, he\l
+        has to show off how well he can swim.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route137_EventScript_Woman_1{
+    lock
+    faceplayer
+    msgbox("Sunbathing is way better than swimming!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route137_EventScript_Tuber_F{
+    lock
+    faceplayer
+    msgbox("When I grow up, I wanna be a swimmer\n
+        too!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route137_EventScript_Pokefan_M{
+    lock
+    faceplayer
+    msgbox("My children and I love coming to the\n
+        beach.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route137_EventScript_Tuber_F_2{
+    lock
+    faceplayer
+    msgbox("All my dumb brother does is swim!\n
+        I want to build a sand castle!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route137_EventScript_Joey{
+    msgbox("Ahaha… Yeeeeaaaah…\p
+        ……………………\p
+        They're too relaxed to notice you.", MSGBOX_SIGN)
+    end
+}
+
+script Route137_EventScript_Beauty{
+    lock
+    faceplayer
+    msgbox("That guy next to me just keeps going\n
+        “Yeeeaaaaheheeaaahhh…”\p
+        Is he okay?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route137_EventScript_Sailor1{
+    lock
+    faceplayer
+    msgbox("Huh?\n
+        … … … …\p
+        How did we get this ship in here with\n
+        all these rocks?\p
+        … You ask too many questions.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route137_EventScript_Sailor2{
+    msgbox("Hm…\p
+        That cave wasn't there the\n
+        last time I was here…", MSGBOX_SIGN)
+    end
+}
+
+script Route137_EventScript_Sign{
+    msgbox("CASTELIA QUEEN\p
+        “Come taste UNOVA's world-famous\n
+        dessert!”", MSGBOX_SIGN)
+    end
+}

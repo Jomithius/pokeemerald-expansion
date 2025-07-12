@@ -30,8 +30,8 @@ WachunpelonCity_SmallHouse2_EventScript_Woman::
 
 WachunpelonCity_SmallHouse2_EventScript_Man_Text_0:
 # 13 "data/maps/WachunpelonCity_SmallHouse2/scripts.pory"
-	.string "Lately I've heard weird noises coming\n from the sewers.\l It sounds like motorcycles.\p But there's no way anybody would bring\n a motorcycle down there, right?$"
+	.string "Lately I've heard weird noises coming\n from the sewers.\l It sounds like a bike.\p But there's no way anybody would bring\n a motorcycle down there, right?$"
 
 WachunpelonCity_SmallHouse2_EventScript_Woman_Text_0:
 # 22 "data/maps/WachunpelonCity_SmallHouse2/scripts.pory"
-	.string "For awhile, there were a lot of tremors\n happening in the area.\l Mainly around ROUTE 137.\p Then suddenly, they just stopped occuring.\n I wonder what happened.$"
+	.string "For awhile, there were a lot of tremors\n happening in the area.\l Mainly around ROUTE 137.\p Then, suddenly, they just… stopped.\n I wonder what happened.$"

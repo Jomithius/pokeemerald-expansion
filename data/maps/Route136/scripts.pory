@@ -91,3 +91,32 @@ script Route136_EventScript_KlawfBattle{
     release
     end
 }
+
+script Route136_EventScript_Expert_M{
+    msgbox("There's a city at the top of AZURE\n
+        MOUNTAIN.\p
+        It's snowy, but not that cold because\n
+        of the geothermal energy.\p
+        I don't really get it, but it's\n
+        interesting.", MSGBOX_NPC)
+    end
+}
+
+script Route136_EventScript_HikerKlawf{
+    lock
+    faceplayer
+    if(flag(FLAG_DEFEATED_KLAWF) == FALSE){
+        msgbox("There's a stupid KLAWF blocking\n
+            the tunnel entrance!\p
+            I tried hitting it to wake it up,\n
+            but it's shell's too hard.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    msgbox("The KLAWF is finally gone!\n
+        Now I can start my hike up the\l
+        mountain.\p
+        I'll go after I take a break.\n
+        … Maybe a nap too.", MSGBOX_AUTOCLOSE)
+    release
+    end
+}

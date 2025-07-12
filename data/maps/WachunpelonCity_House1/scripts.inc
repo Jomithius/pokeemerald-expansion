@@ -9,33 +9,33 @@ WachunpelonCity_House1_EventScript_OldWoman::
 
 
 WachunpelonCity_House1_EventScript_Wattrel::
-# 15 "data/maps/WachunpelonCity_House1/scripts.pory"
-	lock
 # 16 "data/maps/WachunpelonCity_House1/scripts.pory"
-	faceplayer
+	lock
 # 17 "data/maps/WachunpelonCity_House1/scripts.pory"
-	playmoncry SPECIES_WATTREL, CRY_MODE_ENCOUNTER
+	faceplayer
 # 18 "data/maps/WachunpelonCity_House1/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_WATTREL, CRY_MODE_ENCOUNTER
 # 19 "data/maps/WachunpelonCity_House1/scripts.pory"
+	waitmoncry
+# 20 "data/maps/WachunpelonCity_House1/scripts.pory"
 	release
 	end
 
 
 WachunpelonCity_House1_EventScript_Blissey::
-# 24 "data/maps/WachunpelonCity_House1/scripts.pory"
-	lock
 # 25 "data/maps/WachunpelonCity_House1/scripts.pory"
-	faceplayer
+	lock
 # 26 "data/maps/WachunpelonCity_House1/scripts.pory"
-	playmoncry SPECIES_BLISSEY, CRY_MODE_ENCOUNTER
+	faceplayer
 # 27 "data/maps/WachunpelonCity_House1/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_BLISSEY, CRY_MODE_ENCOUNTER
 # 28 "data/maps/WachunpelonCity_House1/scripts.pory"
+	waitmoncry
+# 29 "data/maps/WachunpelonCity_House1/scripts.pory"
 	release
 	end
 
 
 WachunpelonCity_House1_EventScript_OldWoman_Text_0:
 # 4 "data/maps/WachunpelonCity_House1/scripts.pory"
-	.string "There's a legend that a very rare\n POKéMON who can cure bad dreams lives\l on an island around here.\p There used to be an adventurer couple\n that would come here in search of it.\p After a while, they just stopped\n coming.$"
+	.string "There's a legend that a very rare\n POKéMON whose feathers can cure bad\l dreams lives on an island around here.\p There used to be an adventurer couple\n that would rest here while they were\l searching for it.\p After a while, they just… stopped\n coming.$"

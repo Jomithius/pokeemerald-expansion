@@ -1,1 +1,124 @@
 mapscripts Route137_SeasideHouse_MapScripts {}
+
+script Route137_SeasideHouse_EventScript_GiveCasteliaCone{
+    lock
+    delay(16)
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    playbgm(MUS_MISA_THEME, FALSE)
+    msgbox("Oh, {PLAYER}!\n
+        Or should I say CHAMPION now?!\l
+        It's good to see you again!\p
+        I was visiting JAMES at his new\n
+        job and decided to get a\l
+        CASTELIACONE on the way back.\p
+        I used to go to their first stall\n
+        in CASTELIA CITY when I was a kid.\p
+        I still remember when they\n
+        weren't as famous as they are now!\p
+        Well, I bought two… and regret it.\n
+        Here, take this one before it melts!", MSGBOX_DEFAULT)
+    waitmessage
+    giveitem(ITEM_CASTELIACONE)
+    waitmessage
+    setflag(FLAG_RECEIVED_CASTELIACONE)
+    msgbox("There's a weird myth I heard.\p
+        Apparently if you give a super rare\n
+        ICE POKéMON a nickname, something\l
+        cold to hold, and then go to a\l
+        specific location, a super strong\l
+        POKéMON will appear!\p
+        Isn't that weird?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    fadedefaultbgm
+    release
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Misa{
+    lock
+    goto_if_unset(FLAG_RECEIVED_CASTELIACONE, Route137_SeasideHouse_EventScript_GiveCasteliaCone)
+    faceplayer
+    msgbox("There's a weird myth I heard.\p
+        Apparently if you give a super rare\n
+        ICE POKéMON a nickname, something\l
+        cold to hold, and then go to a very\l
+        specific location, a super strong\l
+        POKéMON will appear!\p
+        Isn't that weird?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Daca{
+    msgbox("Hahaha!\n
+        It's an ice cream party!", MSGBOX_SIGN)
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Tuber_M{
+    msgbox("I SCREAM FOR ICE CREAM!\n
+        AAAAAAAAAAAAAAAAAAAAAHH!", MSGBOX_NPC)
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Tuber_F{
+    msgbox("Ice cream! Ice cream!\n
+        Ice cream! Ice cream!", MSGBOX_NPC)
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Woman_4{
+    lock
+    applymovement(5, Common_Movement_FaceRight)
+    waitmovement(5)
+    msgbox("Yes, yes! You'll get ice cream!\n
+        And you! Stop screaming!", MSGBOX_DEFAULT)
+    waitmessage
+    faceplayer
+    msgbox("It's hard being a single mom.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Beauty{
+    msgbox("I know it's bad for my figure…\n
+        But I just love ice cream.", MSGBOX_SIGN)
+    end
+}
+
+script Route137_SeasideHouse_EventScript_FatMan{
+    msgbox("I come here every day.", MSGBOX_NPC)
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Man{
+    msgbox("So this ice cream comes all the\n
+        way from UNOVA, huh…\p
+        I heard the LEAGUE's CEO is from there.", MSGBOX_NPC)
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Man_4{
+    msgbox("I live in LUSH ACREAGE.\n
+        The ice cream here uses milk from the\l
+        MILTANKS we raise.", MSGBOX_NPC)
+    end
+}
+
+script Route137_SeasideHouse_EventScript_Gentleman{
+    msgbox("I came all the way from UNOVA\n
+        to start expanding my business.\p
+        I'm glad it's going so well here!", MSGBOX_NPC)
+    end
+}

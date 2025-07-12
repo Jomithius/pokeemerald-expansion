@@ -2129,17 +2129,17 @@ F_TRAINER_FEMALE |
         },
     },
 #line 908
-    [DIFFICULTY_NORMAL][TRAINER_DUSTY_2] =
+    [DIFFICULTY_NORMAL][TRAINER_LAROLD] =
     {
 #line 909
-        .trainerName = _("DUSTY"),
+        .trainerName = _("LAROLD"),
 #line 910
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 911
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_BLACK_BELT_FR,
         .encounterMusic_gender =
 #line 913
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 914
         .doubleBattle = FALSE,
 #line 915

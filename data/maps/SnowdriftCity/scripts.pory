@@ -1,1 +1,30 @@
 mapscripts SnowdriftCity_MapScripts {}
+
+script SnowdriftCity_EventScript_Hiker{
+    msgbox("Huff… Huff…\n
+        I… I made it!", MSGBOX_SIGN)
+    end
+}
+
+script SnowdriftCity_EventScript_Man_4{
+    msgbox("Wow.\n
+        It's warmer than I thought up here.", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_EventScript_Man{
+    msgbox("Who would've thought there would\n
+        be hot springs up here?", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_EventScript_Sign{
+    msgbox("SNOWDRIFT CITY\p
+        “A warm rest at HOENN's highest peak!”", MSGBOX_SIGN)
+    end
+}
+
+script SnowdriftCity_EventScript_SignToAzureMountain{
+    msgbox("{LEFT_ARROW} AZURE MOUNTAIN", MSGBOX_SIGN)
+    end
+}

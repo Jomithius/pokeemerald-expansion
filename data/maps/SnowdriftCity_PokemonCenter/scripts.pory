@@ -16,3 +16,26 @@ script SnowdriftCity_PokemonCenter_Nurse{
     release
     end
 }
+
+script SnowdriftCity_PokemonCenter_EventScript_BirdKeeper{
+    msgbox("There's a CORVIKNIGHT service to\n
+        transport people up here.\p
+        It's really difficult to navigate\n
+        around the mountain, though.\p
+        Get too close, and TINKATON might\n
+        try knocking you out of the sky.", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_PokemonCenter_EventScript_OldMan{
+    msgbox("I love the hot springs.\n
+        Risking the flight here was worth it!", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_PokemonCenter_EventScript_OldWoman{
+    msgbox("We used the CORVIKNIGHT service\n
+        to get here.\p
+        I'm worried about the flight back down.", MSGBOX_NPC)
+    end
+}
