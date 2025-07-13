@@ -46898,7 +46898,7 @@ F_TRAINER_FEMALE |
 #line 18631
         .trainerName = _("RED"),
 #line 18632
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_CHAMPION,
 #line 18633
         .trainerPic = TRAINER_PIC_RED,
         .encounterMusic_gender =
@@ -46911,7 +46911,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 18638
-            .species = SPECIES_CHARMANDER,
+            .species = SPECIES_PIKACHU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 18640
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

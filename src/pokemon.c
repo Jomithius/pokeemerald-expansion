@@ -5880,6 +5880,26 @@ u16 GetBattleBGM(void)
     }
     else
     {
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ULTRA_SPACE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ULTRA_SPACE))
+            return MUS_B_FACTORY;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(AREA_ZERO) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(AREA_ZERO))
+            return MUS_AREA_ZERO_WILD_BATTLE;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(AREA_ZERO_PREHISTORIC) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(AREA_ZERO_PREHISTORIC))
+            return MUS_AREA_ZERO_WILD_BATTLE;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(AREA_ZERO_FUTURISTIC) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(AREA_ZERO_FUTURISTIC))
+            return MUS_AREA_ZERO_WILD_BATTLE;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE138) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE138))
+            return MUS_RG_VS_WILD;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE138_2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE138_2))
+            return MUS_RG_VS_WILD;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE139) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE139))
+            return MUS_RG_VS_WILD;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE139_TUNNEL) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE139_TUNNEL))
+            return MUS_RG_VS_WILD;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BALDESIAN_FOREST) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BALDESIAN_FOREST))
+            return MUS_RG_VS_WILD;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(EASTERN_RUINS) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(EASTERN_RUINS))
+            return MUS_RG_VS_WILD;
         return MUS_VS_WILD;
     }
 }

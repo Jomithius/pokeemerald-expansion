@@ -233,7 +233,7 @@ script Route135_Lab_EventScript_EndUltraSpace{
     setflag(FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE)
     clearflag(FLAG_HIDE_PROF_ROUTE_135_LAB)
     setvar(VAR_ULTRA_SPACE_STATE, 4)
-    call_if_set(FLAG_SYS_DEFEATED_RED, Route135_Lab_TryAdvanceUltraSpaceVar)
+    setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0) // if player already defeated Red before ultra space, field special will update sidequest instead
     setrespawn(HEAL_LOCATION_ROUTE135)
     warp(MAP_ROUTE135, 8, 10)
     waitstate
@@ -241,10 +241,14 @@ script Route135_Lab_EventScript_EndUltraSpace{
     end
 }
 
-// Insurance for if player defeats Red before doing the Ultra Space event. Defeating Red unlocks Area Zero.
-script Route135_Lab_TryAdvanceUltraSpaceVar{
+script Route135_Lab_EventScript_JamesCallsPlayerAreaZero{
+    lockall
+    pokenavcall(Route_135_Lab_PokenavText_JamesComeBackToTheLab)
+    waitmessage
+    delay(30)
     setvar(VAR_ULTRA_SPACE_STATE, 5)
-    return
+    releaseall
+    end
 }
 
 script Route135_Lab_EventScript_ToAreaZero{
@@ -621,6 +625,21 @@ text Route_135_Lab_Text_ImBusyTalkToCosmog{
     the ULTRA SPACE.\p
     It seems to trust you enough without needing\n
     my intervention any further."
+}
+
+text Route_135_Lab_PokenavText_JamesComeBackToTheLab{
+    "… … … … … …\n
+    … … … … … Beep!\p
+    {PLAYER}?\n
+    It's JAMES.\p
+    The PROF. says there's a new\n
+    breakthrough in his research.\p
+    He thinks you'll be interested\n
+    in helping with his experiment.\p
+    Can you come to the LAB when\n
+    you have a chance?\p
+    … … … … … …\n
+	… … … … … Click!"
 }
 
 script Route_135_Lab_EventScript_Meltan{

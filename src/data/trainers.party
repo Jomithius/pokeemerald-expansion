@@ -18629,13 +18629,13 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RED ===
 Name: RED
-Class: Rival
+Class: Champion
 Pic: Red
 Gender: Male
 Music: Male
 Double Battle: No
 
-Charmander
+Pikachu
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 

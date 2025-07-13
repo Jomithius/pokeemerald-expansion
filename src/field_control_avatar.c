@@ -708,6 +708,11 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(EventScript_VsSeekerChargingDone);
             return TRUE;
         }
+        if (ShouldDoAreaZeroCall() == TRUE)
+        {
+            ScriptContext_SetupScript(Route135_Lab_EventScript_JamesCallsPlayerAreaZero);
+            return TRUE;
+        }
     }
 
     if (SafariZoneTakeStep() == TRUE)

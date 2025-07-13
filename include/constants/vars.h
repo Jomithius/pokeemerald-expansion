@@ -148,7 +148,7 @@
 #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
 #define VAR_ROUTE134_STATE                               0x4081 // Unused Var
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
-#define VAR_UNUSED_0x4083                                0x4083 // Unused Var
+#define VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER            0x4083 // Area Zero Call
 #define VAR_BIRCH_LAB_STATE                              0x4084
 #define VAR_PETALBURG_GYM_STATE                          0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE                           0x4086
@@ -174,7 +174,7 @@
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
 #define VAR_MOMO_ARIA_STATE                              0x409B // 0-1 Shoal Cave Ice Floor, 1-2 Baldesia Zorua, 2-3 Panini, 3-5 Main House CS, 5-6 Route 139, 6-7 Jirachis altar, 7-8 Main House cs, 9
 #define VAR_ELITE_4_STATE                                0x409C
-#define VAR_UNUSED_0x409D                                0x409D // Unused Var
+#define VAR_AZURE_MOUNTAIN_PEAK_STATE                    0x409D // 0-1 Red Battle
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0

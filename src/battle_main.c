@@ -5431,6 +5431,9 @@ static void HandleEndTurn_BattleWon(void)
         {
         case TRAINER_CLASS_ELITE_FOUR:
         case TRAINER_CLASS_CHAMPION:
+        case TRAINER_CLASS_CEO:
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleRedName))
+                PlayBGM(MUS_RG_VICTORY_GYM_LEADER);
             PlayBGM(MUS_VICTORY_LEAGUE);
             break;
         case TRAINER_CLASS_TEAM_AQUA:
@@ -5442,6 +5445,7 @@ static void HandleEndTurn_BattleWon(void)
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
         case TRAINER_CLASS_LEADER:
+        case TRAINER_CLASS_MASTER:
             PlayBGM(MUS_VICTORY_GYM_LEADER);
             break;
         case TRAINER_CLASS_CHANNELER:
