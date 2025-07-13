@@ -489,17 +489,6 @@ void BattleSetup_StartLegendaryBattle(void)
         break;
     case SPECIES_LUGIA:
     case SPECIES_HO_OH:
-    case SPECIES_SPECTRIER:
-    case SPECIES_GLASTRIER:
-    case SPECIES_XERNEAS:
-    case SPECIES_YVELTAL:
-    case SPECIES_ZYGARDE:
-    case SPECIES_TAPU_KOKO:
-    case SPECIES_TAPU_LELE:
-    case SPECIES_TAPU_BULU:
-    case SPECIES_TAPU_FINI:
-    case SPECIES_SHAYMIN:
-    case SPECIES_DIANCIE:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
         break;
     case SPECIES_MEW:
@@ -542,6 +531,11 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_ZAMAZENTA:
     case SPECIES_MARSHADOW:
     case SPECIES_MAGEARNA:
+    case SPECIES_SPECTRIER:
+    case SPECIES_GLASTRIER:
+    case SPECIES_XERNEAS:
+    case SPECIES_YVELTAL:
+    case SPECIES_ZYGARDE:
         CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_C_VS_LEGEND_BEAST);
         break;
     case SPECIES_MEWTWO:
@@ -577,6 +571,12 @@ void BattleSetup_StartLegendaryBattle(void)
         CreateBattleStartTask(B_TRANSITION_SLICE, MUS_RG_VS_LEGEND);
         break;
     case SPECIES_JIRACHI:
+    case SPECIES_TAPU_KOKO:
+    case SPECIES_TAPU_LELE:
+    case SPECIES_TAPU_BULU:
+    case SPECIES_TAPU_FINI:
+    case SPECIES_SHAYMIN:
+    case SPECIES_DIANCIE:
         CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_VS_RAYQUAZA);
         break;
     case SPECIES_DARKRAI:

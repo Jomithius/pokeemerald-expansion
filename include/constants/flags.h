@@ -515,7 +515,7 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_DEFEATED_REGIGIAS               0x1DE // TBD
+#define FLAG_DEFEATED_REGIGIGAS              0x1DE // Island Cave
 #define FLAG_RECEIVED_TYPE_NULL              0x1DF // Route 135 Lab
 #define FLAG_DEFEATED_OGERPON                0x1E0 // Eastern Ruins
 #define FLAG_HIDE_LUNA_THE_UNDER             0x1E1 // Luna CS the under
@@ -1517,7 +1517,7 @@
 #define FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123      (SYSTEM_FLAGS + 0x8D) // Check if player found speedwagon rt 123
 #define FLAG_SYS_RECEIVED_TERA_ORB                  (SYSTEM_FLAGS + 0x8E) // Unlocks Tera in Summary
 #define FLAG_SYS_TERA_ORB_CHARGED                   (SYSTEM_FLAGS + 0x8F) // Tera
-#define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
+#define FLAG_SYS_TALKED_TO_CALYREX                  (SYSTEM_FLAGS + 0x90) // Calryex Event
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
 #define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag
 #define FLAG_UNUSED_0x8F3                           (SYSTEM_FLAGS + 0x93) // Unused Flag

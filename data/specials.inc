@@ -566,3 +566,5 @@ gSpecials::
 	def_special GetLeadMonSpecies
 	def_special IsLeadMonCat
 	def_special SetObjectMovementType
+	def_special IsLeadMonSpectrierOrGlastrier
+	def_special AreRegisInParty

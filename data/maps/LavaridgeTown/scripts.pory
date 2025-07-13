@@ -202,24 +202,10 @@ LavaridgeTown_Movement_RivalExitHerbShop:
 LavaridgeTown_EventScript_HotSpringsTrigger::
 	specialvar VAR_RESULT, GetPlayerFacingDirection
 	goto_if_eq VAR_RESULT, DIR_SOUTH, LavaridgeTown_EventScript_EnteredHotSprings
-	goto_if_eq VAR_RESULT, DIR_NORTH, LavaridgeTown_EventScript_ExitHotSprings
 	end
-
-LavaridgeTown_EventScript_HotSpringsTriggerNorth::
 
 LavaridgeTown_EventScript_EnteredHotSprings::
-	setflag FLAG_TEMP_E
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
-	waitmovement 0
-	callnative RemoveFollowingPokemon
 	incrementgamestat GAME_STAT_ENTERED_HOT_SPRINGS
-	end
-
-LavaridgeTown_EventScript_ExitHotSprings::
-	clearflag FLAG_TEMP_E
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball
-	waitmovement 0
-	callnative UpdateFollowingPokemon
 	end
 
 LavaridgeTown_EventScript_ExpertM::

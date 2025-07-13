@@ -28,3 +28,95 @@ script SnowdriftCity_EventScript_SignToAzureMountain{
     msgbox("{LEFT_ARROW} AZURE MOUNTAIN", MSGBOX_SIGN)
     end
 }
+
+script SnowdriftCity_EventScript_Calyrex{
+    lock
+    goto_if_set(FLAG_SYS_TALKED_TO_CALYREX, SnowdriftCity_EventScript_CheckSpectierOrGlastrier)
+    msgbox("…", MSGBOX_DEFAULT)
+    waitmessage
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Uh… Hello?", "Are you okay?")
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    msgbox("You can hear me?!", MSGBOX_DEFAULT)
+    waitmessage
+    setflag(FLAG_SYS_TALKED_TO_CALYREX)
+    goto(SnowdriftCity_EventScript_CheckSpectierOrGlastrier)
+    end
+}
+
+script SnowdriftCity_EventScript_CheckSpectierOrGlastrier{
+    lock
+    faceplayer
+    msgbox("My name is CALYREX.\n
+        Long ago, I was a ruler of a land far,\l
+        far away from this place.\p
+        Since my fall from grace, I've spent\n
+        my days searching for my trusted\l
+        partners: SPECTRIER and GLASTRIER.\l
+        Still, my search has been in vain.\p
+        Please, adventurer.\p
+        If you come across either of my\n
+        old partners, could you bring\l
+        them here?\p
+        I'll give you a reward if you do.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    special(IsLeadMonSpectrierOrGlastrier)
+    goto_if_eq(VAR_RESULT, TRUE, SnowdriftCity_EventScript_ReceiveCalyrex)
+    applymovement(VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script SnowdriftCity_EventScript_ReceiveCalyrex{
+    lock
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    fadenewbgm(MUS_END)
+    msgbox("Old friend…\n
+            It's good to see you again.\p
+            Thank you, brave one.\n
+            May I ask for your name?\p
+            … … … …\p
+            {PLAYER}.\n 
+            As promised, I will give you a reward.", MSGBOX_DEFAULT)
+    waitmessage
+    giveitem(ITEM_REINS_OF_UNITY)
+    waitmessage
+    msgbox("Also… I humbly ask you.\p
+            Allow this fallen king to once again\n
+            fight alongside his old friend.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    givemon(SPECIES_CALYREX, 75)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(9)
+        fadescreen(FADE_FROM_BLACK)
+        playfanfare(MUS_OBTAIN_ITEM)
+        waitfanfare
+        msgbox("CALYREX joined the party!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_DEFEATED_CALYREX)
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(9)
+        fadescreen(FADE_FROM_BLACK)
+        playfanfare(MUS_OBTAIN_ITEM)
+        waitfanfare
+        msgbox("CALYREX was sent to the PC!", MSGBOX_AUTOCLOSE)
+        waitmessage
+        setflag(FLAG_DEFEATED_CALYREX)
+    }
+    else{
+        goto(Common_EventScript_NoMoreRoomForPokemon)
+    }
+    fadedefaultbgm
+    release
+    end  
+}

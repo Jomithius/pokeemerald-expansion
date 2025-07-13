@@ -25,12 +25,13 @@ script Route137_SeasideHouse_EventScript_GiveCasteliaCone{
     giveitem(ITEM_CASTELIACONE)
     waitmessage
     setflag(FLAG_RECEIVED_CASTELIACONE)
-    msgbox("There's a weird myth I heard.\p
-        Apparently if you give a super rare\n
-        ICE POKéMON a nickname, something\l
-        cold to hold, and then go to a\l
-        specific location, a super strong\l
-        POKéMON will appear!\p
+    msgbox("There's a weird legend I heard.\n
+        It goes:\p
+        “Three golems: one ice, one rock, and\n
+        one steel.\l
+        One cold nickname and one cold item\l
+        will awaken the golems' sluggish ruler\l
+        in the once cold cave.”\p
         Isn't that weird?", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
@@ -44,12 +45,13 @@ script Route137_SeasideHouse_EventScript_Misa{
     lock
     goto_if_unset(FLAG_RECEIVED_CASTELIACONE, Route137_SeasideHouse_EventScript_GiveCasteliaCone)
     faceplayer
-    msgbox("There's a weird myth I heard.\p
-        Apparently if you give a super rare\n
-        ICE POKéMON a nickname, something\l
-        cold to hold, and then go to a very\l
-        specific location, a super strong\l
-        POKéMON will appear!\p
+    msgbox("There's a weird legend I heard.\n
+        It goes:\p
+        “Three golems: one ice, one rock, and\n
+        one steel.\l
+        One cold nickname and one cold item\l
+        will awaken the golems' sluggish ruler\l
+        in the once cold cave.”\p
         Isn't that weird?", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)

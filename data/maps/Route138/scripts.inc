@@ -10,4 +10,4 @@ Route138_EventScript_Camper::
 
 Route138_EventScript_Camper_Text_0:
 # 4 "data/maps/Route138/scripts.pory"
-	.string "There's a village up ahead.\p When I tried to enter, the wouldn't let me in!$"
+	.string "There's a village up ahead.\p When I tried to enter, they wouldn't\n let me in!$"

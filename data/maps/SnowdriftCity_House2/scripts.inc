@@ -15,7 +15,7 @@ SnowdriftCity_House2_EventScript_HexManiac::
 
 
 SnowdriftCity_House2_EventScript_Maniac::
-# 15 "data/maps/SnowdriftCity_House2/scripts.pory"
+# 17 "data/maps/SnowdriftCity_House2/scripts.pory"
 	msgbox SnowdriftCity_House2_EventScript_Maniac_Text_0, MSGBOX_NPC
 	end
 
@@ -26,8 +26,8 @@ SnowdriftCity_House2_EventScript_LittleNerd_Text_0:
 
 SnowdriftCity_House2_EventScript_HexManiac_Text_0:
 # 9 "data/maps/SnowdriftCity_House2/scripts.pory"
-	.string "We moved here from LILYCOVE.\n We met at MT. PYRE.$"
+	.string "Before living here, we lived in\n LILYCOVE.\p We first met at MT. PYRE.\n It was love at first sight.$"
 
 SnowdriftCity_House2_EventScript_Maniac_Text_0:
-# 15 "data/maps/SnowdriftCity_House2/scripts.pory"
-	.string "Even though I look like this,\n I'm a family man.$"
+# 17 "data/maps/SnowdriftCity_House2/scripts.pory"
+	.string "Even though I look like this,\n I'm really a family man.$"

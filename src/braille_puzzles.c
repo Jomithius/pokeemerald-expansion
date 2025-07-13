@@ -343,3 +343,13 @@ bool8 ShouldDoBrailleRegicePuzzle(void)
 
     return FALSE;
 }
+
+bool8 AreRegisInParty(void)
+{
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_REGICE)
+    {
+        if (GetMonData(&gPlayerParty[1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_REGIROCK && GetMonData(&gPlayerParty[2], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_REGISTEEL)
+            return TRUE;
+    }
+    return FALSE;
+}

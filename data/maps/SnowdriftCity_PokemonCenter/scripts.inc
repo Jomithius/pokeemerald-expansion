@@ -50,7 +50,7 @@ SnowdriftCity_PokemonCenter_EventScript_BirdKeeper_Text_0:
 
 SnowdriftCity_PokemonCenter_EventScript_OldMan_Text_0:
 # 31 "data/maps/SnowdriftCity_PokemonCenter/scripts.pory"
-	.string "I love the hot springs here.\n Risking the flight here was worth it!$"
+	.string "I love the hot springs.\n Risking the flight here was worth it!$"
 
 SnowdriftCity_PokemonCenter_EventScript_OldWoman_Text_0:
 # 37 "data/maps/SnowdriftCity_PokemonCenter/scripts.pory"

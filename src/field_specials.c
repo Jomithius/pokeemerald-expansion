@@ -4477,3 +4477,32 @@ void IsLeadMonCat(void)
     }
     gSpecialVar_Result = FALSE;
 }
+
+void IsLeadMonSpectrierOrGlastrier(void)
+{
+    u8 i;
+    u16 species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gPlayerParty[i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG) && !GetMonData(&gPlayerParty[0], MON_DATA_HP_LOST))
+        {
+            species = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
+            switch(species)
+            {
+            case SPECIES_SPECTRIER:
+                gSpecialVar_Result = TRUE;
+                break;
+            case SPECIES_GLASTRIER:
+                gSpecialVar_Result = TRUE;
+                break;
+            default:
+                gSpecialVar_Result = FALSE;
+                break;
+            }
+            return;
+        }
+    }
+    gSpecialVar_Result = FALSE;
+}
