@@ -1279,7 +1279,7 @@ Baldesia_MainHouse_EventScript_Aria_Text_0:
 
 Baldesia_MainHouse_EventScript_OldManDojo_Text_0:
 # 457 "data/maps/Baldesia_MainHouse/scripts.pory"
-	.string "The former Head of the ASAKURA\n family and his wife spend a lot of\l time at the LILYCOVE GAME CORNER.$"
+	.string "The former Head of the ASAKURA\n family and his wife spend a lot of\l time at the MAUVILLE GAME CORNER.$"
 
 Baldesia_MainHouse_EventScript_OldWoman_Text_0:
 # 465 "data/maps/Baldesia_MainHouse/scripts.pory"

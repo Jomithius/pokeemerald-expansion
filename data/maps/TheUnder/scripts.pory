@@ -74,8 +74,13 @@ script TheUnder_EventScript_Artist{
 }
 
 script TheUnder_EventScript_Hiker{
-    msgbox("It was a long hike, but it was\n
-        definitely worth it!", MSGBOX_NPC)
+    msgbox("We're in a huge valley under\n
+        the cliffside north of FALLARBOR.\p
+        Before the new caves, it was hard\n
+        to get out here if you couldn't\l
+        afford to fly or go by ship.\p
+        But now that I'm here, I can say the\n
+        hike was definitely worth it!", MSGBOX_NPC)
     end
 }
 

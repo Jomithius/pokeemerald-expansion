@@ -731,8 +731,8 @@
 #define FLAG_DEFEATED_TORNADUS           0x2AD // Baldesia Forest
 #define FLAG_DEFEATED_THUNDURUS          0x2AE // Baldesia Forest
 #define FLAG_DEFEATED_LANDORUS           0x2AF // Baldesia Forest
-#define FLAG_DEFEATED_ZACIAN             0x2B0 // Azure Mountain
-#define FLAG_DEFEATED_ZAMAZENTA          0x2B1 // Azure Mountain
+#define FLAG_DEFEATED_ZACIAN             0x2B0 // Azure Chasm
+#define FLAG_DEFEATED_ZAMAZENTA          0x2B1 // Azure Chasm
 #define FLAG_DEFEATED_ENAMORUS           0x2B2 // Baldesia Forest
 #define FLAG_DEFEATED_CALYREX            0x2B3 // Snowdrift City
 #define FLAG_DEFEATED_SPECTRIER          0x2B4 // Mt. Pyre
@@ -741,7 +741,7 @@
 #define FLAG_DEFEATED_UXIE               0x2B7 // Azure Chasm
 #define FLAG_DEFEATED_MESPRIT            0x2B8 // Azure Chasm
 #define FLAG_DEFEATED_AZELF              0x2B9 // Azure Chasm
-#define FLAG_DEFEATED_ZARUDE             0x2BA // Baldesia Forest
+#define FLAG_DEFEATED_ZARUDE             0x2BA // Route 123
 #define FLAG_DEFEATED_MAGEARNA           0x2BB // Azure Mountain
 
 // Event Flags
@@ -1518,11 +1518,11 @@
 #define FLAG_SYS_RECEIVED_TERA_ORB                  (SYSTEM_FLAGS + 0x8E) // Unlocks Tera in Summary
 #define FLAG_SYS_TERA_ORB_CHARGED                   (SYSTEM_FLAGS + 0x8F) // Tera
 #define FLAG_SYS_TALKED_TO_CALYREX                  (SYSTEM_FLAGS + 0x90) // Calryex Event
-#define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
-#define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag
-#define FLAG_UNUSED_0x8F3                           (SYSTEM_FLAGS + 0x93) // Unused Flag
-#define FLAG_UNUSED_0x8F4                           (SYSTEM_FLAGS + 0x94) // Unused Flag
-#define FLAG_UNUSED_0x8F5                           (SYSTEM_FLAGS + 0x95) // Unused Flag
+#define FLAG_LANDMARK_ROUTE135                      (SYSTEM_FLAGS + 0x91) 
+#define FLAG_LANDMARK_THE_UNDER                     (SYSTEM_FLAGS + 0x92) 
+#define FLAG_LANDMARK_WACHUNPELON                   (SYSTEM_FLAGS + 0x93) 
+#define FLAG_LANDMARK_BALDESIA                      (SYSTEM_FLAGS + 0x94) 
+#define FLAG_LANDMARK_SNOWDRIFT_CITY                (SYSTEM_FLAGS + 0x95) 
 #define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
 #define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
 #define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag

@@ -456,7 +456,7 @@ script Baldesia_MainHouse_EventScript_Aria{
 script Baldesia_MainHouse_EventScript_OldManDojo{
     msgbox("The former Head of the ASAKURA\n
     family and his wife spend a lot of\l
-    time at the LILYCOVE GAME CORNER.", MSGBOX_NPC)
+    time at the MAUVILLE GAME CORNER.", MSGBOX_NPC)
     end
 }
 

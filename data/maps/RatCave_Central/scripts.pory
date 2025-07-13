@@ -7,6 +7,8 @@ script RatCave_Central_EventScript_Camper{
 
 text RatCave_Central_Text_Camper{
     "This cave system looks like it was recently\n
-    excavated.\p
-    I wonder who did all this digging."
+    excavated…\p
+    But whoever made it did a fantastic\n
+    job at constructing it.\p
+    They must be a genius."
 }
