@@ -380,7 +380,7 @@ static const struct MatchCallStructTrainer sRoxanneMatchCallHeader =
     .mapSec = MAPSEC_RUSTBORO_CITY,
     .flag = FLAG_ENABLE_ROXANNE_MATCH_CALL,
     .rematchTableIdx = REMATCH_ROXANNE,
-    .desc = COMPOUND_STRING("ROCKIN' WHIZ"),
+    .desc = COMPOUND_STRING("FIREFIGHTER"),
     .name = NULL,
     .textData = sRoxanneTextScripts
 };
@@ -399,7 +399,7 @@ static const struct MatchCallStructTrainer sBrawlyMatchCallHeader =
     .mapSec = MAPSEC_DEWFORD_TOWN,
     .flag = FLAG_ENABLE_BRAWLY_MATCH_CALL,
     .rematchTableIdx = REMATCH_BRAWLY,
-    .desc = COMPOUND_STRING("THE BIG HIT"),
+    .desc = COMPOUND_STRING("LOAM"),
     .name = NULL,
     .textData = sBrawlyTextScripts
 };
@@ -418,7 +418,7 @@ static const struct MatchCallStructTrainer sWattsonMatchCallHeader =
     .mapSec = MAPSEC_MAUVILLE_CITY,
     .flag = FLAG_ENABLE_WATTSON_MATCH_CALL,
     .rematchTableIdx = REMATCH_WATTSON,
-    .desc = COMPOUND_STRING("SWELL SHOCK"),
+    .desc = COMPOUND_STRING("PARTIER"),
     .name = NULL,
     .textData = sWattsonTextScripts
 };
@@ -437,7 +437,7 @@ static const struct MatchCallStructTrainer sFlanneryMatchCallHeader =
     .mapSec = MAPSEC_LAVARIDGE_TOWN,
     .flag = FLAG_ENABLE_FLANNERY_MATCH_CALL,
     .rematchTableIdx = REMATCH_FLANNERY,
-    .desc = COMPOUND_STRING("PASSION BURN"),
+    .desc = COMPOUND_STRING("HEAD CHEF"),
     .name = NULL,
     .textData = sFlanneryTextScripts
 };
@@ -456,7 +456,7 @@ static const struct MatchCallStructTrainer sWinonaMatchCallHeader =
     .mapSec = MAPSEC_FORTREE_CITY,
     .flag = FLAG_ENABLE_WINONA_MATCH_CALL,
     .rematchTableIdx = REMATCH_WINONA,
-    .desc = COMPOUND_STRING("SKY TAMER"),
+    .desc = COMPOUND_STRING("WOLF GANG"),
     .name = NULL,
     .textData = sWinonaTextScripts
 };
@@ -475,7 +475,7 @@ static const struct MatchCallStructTrainer sTateLizaMatchCallHeader =
     .mapSec = MAPSEC_MOSSDEEP_CITY,
     .flag = FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL,
     .rematchTableIdx = REMATCH_TATE_AND_LIZA,
-    .desc = COMPOUND_STRING("MYSTIC DUO"),
+    .desc = COMPOUND_STRING("NINJA & KNIGHT"),
     .name = NULL,
     .textData = sTateLizaTextScripts
 };
@@ -494,7 +494,7 @@ static const struct MatchCallStructTrainer sJuanMatchCallHeader =
     .mapSec = MAPSEC_SOOTOPOLIS_CITY,
     .flag = FLAG_ENABLE_JUAN_MATCH_CALL,
     .rematchTableIdx = REMATCH_JUAN,
-    .desc = COMPOUND_STRING("DANDY CHARM"),
+    .desc = COMPOUND_STRING("YEAAAAH"),
     .name = NULL,
     .textData = sJuanTextScripts
 };
@@ -512,7 +512,7 @@ static const struct MatchCallStructTrainer sSidneyMatchCallHeader =
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
     .flag = FLAG_REGISTERED_SIDNEY,
     .rematchTableIdx = REMATCH_SIDNEY,
-    .desc = gText_EliteFourMatchCallDesc,
+    .desc = COMPOUND_STRING("MOTHER"),
     .name = NULL,
     .textData = sSidneyTextScripts
 };
@@ -528,7 +528,7 @@ static const struct MatchCallStructTrainer sPhoebeMatchCallHeader =
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
     .flag = FLAG_REGISTERED_PHOEBE,
     .rematchTableIdx = REMATCH_PHOEBE,
-    .desc = gText_EliteFourMatchCallDesc,
+    .desc = COMPOUND_STRING("EUGENIA"),
     .name = NULL,
     .textData = sPhoebeTextScripts
 };
@@ -544,7 +544,7 @@ static const struct MatchCallStructTrainer sGlaciaMatchCallHeader =
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
     .flag = FLAG_REGISTERED_GLACIA,
     .rematchTableIdx = REMATCH_GLACIA,
-    .desc = gText_EliteFourMatchCallDesc,
+    .desc = COMPOUND_STRING("FLEUR"),
     .name = NULL,
     .textData = sGlaciaTextScripts
 };
@@ -560,7 +560,7 @@ static const struct MatchCallStructTrainer sDrakeMatchCallHeader =
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
     .flag = FLAG_REGISTERED_DRAKE,
     .rematchTableIdx = REMATCH_DRAKE,
-    .desc = gText_EliteFourMatchCallDesc,
+    .desc = COMPOUND_STRING("MAGICIAN"),
     .name = NULL,
     .textData = sDrakeTextScripts
 };
@@ -576,7 +576,7 @@ static const struct MatchCallStructTrainer sWallaceMatchCallHeader =
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
     .flag = FLAG_REGISTERED_WALLACE,
     .rematchTableIdx = REMATCH_WALLACE,
-    .desc = COMPOUND_STRING("CHAMPION"),
+    .desc = COMPOUND_STRING("LEAGUE CEO"),
     .name = NULL,
     .textData = sWallaceTextScripts
 };
