@@ -1166,7 +1166,7 @@ Route135_Lab_Text_ManiacExplainCosmog::
 
 Route_135_Lab_Text_ImBusyTalkToCosmog::
 # 621 "data/maps/Route135_Lab/scripts.pory"
-	.string "Ah, intern.\n Unfortunately, there's no new discoveries.\p Just ask COSMOG if you need to return to\n the ULTRA SPACE.\p It seems to trust you enough without needing\n my intervention any further.$"
+	.string "Ah, intern.\n Sadly, there's no new discoveries.\p Just ask COSMOG if you need to return\n to the ULTRA SPACE.\p It seems to trust you enough without\n needing my intervention any further.$"
 
 Route_135_Lab_PokenavText_JamesComeBackToTheLab::
 # 630 "data/maps/Route135_Lab/scripts.pory"

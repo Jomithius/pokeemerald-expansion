@@ -22,82 +22,76 @@ AzureMountain_Peak_EventScript_Red::
 # 17 "data/maps/AzureMountain_Peak/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 18 "data/maps/AzureMountain_Peak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3
 # 19 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp3
 # 20 "data/maps/AzureMountain_Peak/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp2
+	waitmovement 0
 # 21 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmovement 0
-# 22 "data/maps/AzureMountain_Peak/scripts.pory"
 	delay 30
-# 23 "data/maps/AzureMountain_Peak/scripts.pory"
+# 22 "data/maps/AzureMountain_Peak/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceDown
-# 24 "data/maps/AzureMountain_Peak/scripts.pory"
+# 23 "data/maps/AzureMountain_Peak/scripts.pory"
 	delay 8
-# 25 "data/maps/AzureMountain_Peak/scripts.pory"
+# 24 "data/maps/AzureMountain_Peak/scripts.pory"
 	applymovement 2, Common_Movement_WalkInPlaceDown
+# 25 "data/maps/AzureMountain_Peak/scripts.pory"
+	waitmovement 0
 # 26 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmovement 0
-# 27 "data/maps/AzureMountain_Peak/scripts.pory"
 	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
-# 28 "data/maps/AzureMountain_Peak/scripts.pory"
+# 27 "data/maps/AzureMountain_Peak/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkLeft
+# 28 "data/maps/AzureMountain_Peak/scripts.pory"
+	waitmovement 0
 # 29 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp
 # 30 "data/maps/AzureMountain_Peak/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkInPlaceUp
+	waitmovement 0
 # 31 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmovement 0
+	msgbox AzureMountain_Peak_Text_Red, MSGBOX_AUTOCLOSE
 # 32 "data/maps/AzureMountain_Peak/scripts.pory"
-	msgbox AzureMountain_Peak_Text_Red, MSGBOX_AUTOCLOSE
+	waitmessage
 # 33 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmessage
-# 34 "data/maps/AzureMountain_Peak/scripts.pory"
 	trainerbattle_no_intro TRAINER_RED, AzureMountain_Peak_Text_Red
-# 35 "data/maps/AzureMountain_Peak/scripts.pory"
+# 34 "data/maps/AzureMountain_Peak/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 36 "data/maps/AzureMountain_Peak/scripts.pory"
+# 35 "data/maps/AzureMountain_Peak/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceUp
+# 36 "data/maps/AzureMountain_Peak/scripts.pory"
+	waitmovement 1
 # 37 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmovement 0
-# 38 "data/maps/AzureMountain_Peak/scripts.pory"
 	msgbox AzureMountain_Peak_Text_Red, MSGBOX_AUTOCLOSE
-# 39 "data/maps/AzureMountain_Peak/scripts.pory"
+# 38 "data/maps/AzureMountain_Peak/scripts.pory"
 	waitmessage
+# 39 "data/maps/AzureMountain_Peak/scripts.pory"
+	setfieldeffectargument 0, 1
 # 40 "data/maps/AzureMountain_Peak/scripts.pory"
-	applymovement 1, AzureMountain_Peak_RedLeaves
-# 41 "data/maps/AzureMountain_Peak/scripts.pory"
-	delay 16
-# 42 "data/maps/AzureMountain_Peak/scripts.pory"
-	setfieldeffectargument 0, 3
-# 43 "data/maps/AzureMountain_Peak/scripts.pory"
 	dofieldeffect FLDEFF_NPCFLY_OUT
-# 44 "data/maps/AzureMountain_Peak/scripts.pory"
+# 41 "data/maps/AzureMountain_Peak/scripts.pory"
 	delay 15
-# 45 "data/maps/AzureMountain_Peak/scripts.pory"
+# 42 "data/maps/AzureMountain_Peak/scripts.pory"
 	removeobject 1
-# 46 "data/maps/AzureMountain_Peak/scripts.pory"
+# 43 "data/maps/AzureMountain_Peak/scripts.pory"
 	waitfieldeffect FLDEFF_NPCFLY_OUT
-# 47 "data/maps/AzureMountain_Peak/scripts.pory"
+# 44 "data/maps/AzureMountain_Peak/scripts.pory"
 	setflag FLAG_SYS_DEFEATED_RED
-# 48 "data/maps/AzureMountain_Peak/scripts.pory"
+# 45 "data/maps/AzureMountain_Peak/scripts.pory"
 	setflag FLAG_HIDE_RED_AZURE_MOUNTAIN
-# 49 "data/maps/AzureMountain_Peak/scripts.pory"
+# 46 "data/maps/AzureMountain_Peak/scripts.pory"
 	setvar VAR_AZURE_MOUNTAIN_PEAK_STATE, 1
-# 50 "data/maps/AzureMountain_Peak/scripts.pory"
-	goto_if_eq VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_EventScript_JamesCallsPlayerAreaZero
-# 51 "data/maps/AzureMountain_Peak/scripts.pory"
+# 47 "data/maps/AzureMountain_Peak/scripts.pory"
+	setvar VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0
+# 48 "data/maps/AzureMountain_Peak/scripts.pory"
 	releaseall
 	end
 
 
-# 59 "data/maps/AzureMountain_Peak/scripts.pory"
+# 56 "data/maps/AzureMountain_Peak/scripts.pory"
 AzureMountain_Peak_RedLeaves:
-# 60 "data/maps/AzureMountain_Peak/scripts.pory"
+# 57 "data/maps/AzureMountain_Peak/scripts.pory"
 	jump_up
 	step_end
 
 AzureMountain_Peak_Text_Red::
-# 55 "data/maps/AzureMountain_Peak/scripts.pory"
+# 52 "data/maps/AzureMountain_Peak/scripts.pory"
 	.string "…$"

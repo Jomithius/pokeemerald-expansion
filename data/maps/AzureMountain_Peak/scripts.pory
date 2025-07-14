@@ -16,7 +16,6 @@ script AzureMountain_Peak_EventScript_Red{
     lockall
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3)
-    delay(8)
     applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp3)
     waitmovement(0)
     delay(30)
@@ -37,8 +36,6 @@ script AzureMountain_Peak_EventScript_Red{
     waitmovement(1)
     msgbox(AzureMountain_Peak_Text_Red, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, AzureMountain_Peak_RedLeaves)
-    delay(16)
     setfieldeffectargument(0, 1)
 	dofieldeffect(FLDEFF_NPCFLY_OUT)
 	delay(15)
@@ -47,7 +44,7 @@ script AzureMountain_Peak_EventScript_Red{
     setflag(FLAG_SYS_DEFEATED_RED)
     setflag(FLAG_HIDE_RED_AZURE_MOUNTAIN)
     setvar(VAR_AZURE_MOUNTAIN_PEAK_STATE, 1)
-    goto_if_eq(VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_EventScript_JamesCallsPlayerAreaZero) //unlocks Area Zero
+    setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0) //unlocks Area Zero
     releaseall
     end
 }

@@ -750,7 +750,7 @@ Gloom
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROSE_2 ===
+=== TRAINER_ROSE_2 === /* FREE */
 Name: ROSE
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -767,7 +767,7 @@ Roselia
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_ROSE_3 ===
+=== TRAINER_ROSE_3 === /* FREE */
 Name: ROSE
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -788,7 +788,7 @@ Roselia
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_ROSE_4 ===
+=== TRAINER_ROSE_4 === /* FREE */
 Name: ROSE
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -809,7 +809,7 @@ Roselia
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_ROSE_5 ===
+=== TRAINER_ROSE_5 === /* FREE */
 Name: ROSE
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -1126,7 +1126,7 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LOLA_2 ===
+=== TRAINER_LOLA_2 === /* FREE */
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1143,7 +1143,7 @@ Marill
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_LOLA_3 ===
+=== TRAINER_LOLA_3 === /* FREE */
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1160,7 +1160,7 @@ Marill
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_LOLA_4 ===
+=== TRAINER_LOLA_4 === /* FREE */
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1177,7 +1177,7 @@ Marill
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_LOLA_5 ===
+=== TRAINER_LOLA_5 === /* FREE */
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1241,7 +1241,7 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RICKY_2 ===
+=== TRAINER_RICKY_2 === /* FREE */
 Name: RICKY
 Class: Tuber M
 Pic: Tuber M
@@ -1258,7 +1258,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Tail Whip
 - Surf
 
-=== TRAINER_RICKY_3 ===
+=== TRAINER_RICKY_3 === /* FREE */
 Name: RICKY
 Class: Tuber M
 Pic: Tuber M
@@ -1275,7 +1275,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Tail Whip
 - Surf
 
-=== TRAINER_RICKY_4 ===
+=== TRAINER_RICKY_4 === /* FREE */
 Name: RICKY
 Class: Tuber M
 Pic: Tuber M
@@ -1292,7 +1292,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Tail Whip
 - Surf
 
-=== TRAINER_RICKY_5 ===
+=== TRAINER_RICKY_5 === /* FREE */
 Name: RICKY
 Class: Tuber M
 Pic: Tuber M
@@ -1632,7 +1632,7 @@ Wailord
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WILTON_2 ===
+=== TRAINER_WILTON_2 === /* FREE */
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1654,7 +1654,7 @@ Makuhita
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-=== TRAINER_WILTON_3 ===
+=== TRAINER_WILTON_3 === /* FREE */
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1676,7 +1676,7 @@ Makuhita
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_WILTON_4 ===
+=== TRAINER_WILTON_4 === /* FREE */
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1698,7 +1698,7 @@ Makuhita
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_WILTON_5 ===
+=== TRAINER_WILTON_5 === /* FREE */
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -2005,7 +2005,7 @@ Tropius
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BROOKE_2 ===
+=== TRAINER_BROOKE_2 === /* FREE */
 Name: BROOKE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -2027,7 +2027,7 @@ Roselia
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-=== TRAINER_BROOKE_3 ===
+=== TRAINER_BROOKE_3 === /* FREE */
 Name: BROOKE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -2049,7 +2049,7 @@ Roselia
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_BROOKE_4 ===
+=== TRAINER_BROOKE_4 === /* FREE */
 Name: BROOKE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -2071,8 +2071,8 @@ Roselia
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_BROOKE_5 ===
-Name: BROOKE
+=== TRAINER_BROOKE_5 === /* FREE */
+Name: BROOKE 
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -2170,7 +2170,7 @@ Shuppet
 Level: 32
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_VALERIE_2 ===
+=== TRAINER_VALERIE_2 === /* FREE */
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2187,7 +2187,7 @@ Spoink
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_VALERIE_3 ===
+=== TRAINER_VALERIE_3 === /* FREE */
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2204,7 +2204,7 @@ Sableye
 Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_VALERIE_4 ===
+=== TRAINER_VALERIE_4 === /* FREE */
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2221,7 +2221,7 @@ Sableye
 Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_VALERIE_5 ===
+=== TRAINER_VALERIE_5 === /* FREE */
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2296,7 +2296,7 @@ Numel
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CINDY_2 ===
+=== TRAINER_CINDY_2 === /* should be FREE. not sure where its used, but other matches of this trainer were made free */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2337,7 +2337,7 @@ Roselia @ Nugget
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_CINDY_3 ===
+=== TRAINER_CINDY_3 === /* FREE */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2351,7 +2351,7 @@ Linoone @ Nugget
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_CINDY_4 ===
+=== TRAINER_CINDY_4 === /* FREE */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2365,7 +2365,7 @@ Linoone @ Nugget
 Level: 30
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_CINDY_5 ===
+=== TRAINER_CINDY_5 === /* FREE */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2379,7 +2379,7 @@ Linoone @ Nugget
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CINDY_6 ===
+=== TRAINER_CINDY_6 === /* FREE */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2520,7 +2520,7 @@ Sharpedo
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JESSICA_2 ===
+=== TRAINER_JESSICA_2 === /* FREE */
 Name: JESSICA
 Class: Beauty
 Pic: Beauty
@@ -2545,7 +2545,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Glare
 - Crunch
 
-=== TRAINER_JESSICA_3 ===
+=== TRAINER_JESSICA_3 === /* FREE */
 Name: JESSICA
 Class: Beauty
 Pic: Beauty
@@ -2570,7 +2570,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Glare
 - Crunch
 
-=== TRAINER_JESSICA_4 ===
+=== TRAINER_JESSICA_4 === /* FREE */
 Name: JESSICA
 Class: Beauty
 Pic: Beauty
@@ -2594,8 +2594,8 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Screech
 - Glare
 - Crunch
-
-=== TRAINER_JESSICA_5 ===
+ 
+=== TRAINER_JESSICA_5 === /* FREE */
 Name: JESSICA
 Class: Beauty
 Pic: Beauty
@@ -2665,7 +2665,7 @@ Azumarill @ Nugget
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_2 ===
+=== TRAINER_WINSTON_2 === /* FREE */
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2679,7 +2679,7 @@ Linoone @ Nugget
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_3 ===
+=== TRAINER_WINSTON_3 === /* FREE */
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2693,7 +2693,7 @@ Linoone @ Nugget
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_4 ===
+=== TRAINER_WINSTON_4 === /* FREE */
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2707,7 +2707,7 @@ Linoone @ Nugget
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_5 ===
+=== TRAINER_WINSTON_5 === /* FREE */
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2781,7 +2781,7 @@ Numel
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_STEVE_2 ===
+=== TRAINER_STEVE_2 === /* FREE */
 Name: STEVE
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -2794,7 +2794,7 @@ Lairon
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_STEVE_3 ===
+=== TRAINER_STEVE_3 === /* FREE */
 Name: STEVE
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -2811,7 +2811,7 @@ Rhyhorn
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_STEVE_4 ===
+=== TRAINER_STEVE_4 === /* FREE */
 Name: STEVE
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -2828,7 +2828,7 @@ Rhyhorn
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_STEVE_5 ===
+=== TRAINER_STEVE_5 === /* FREE */
 Name: STEVE
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -3205,7 +3205,7 @@ Wailmer
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TONY_2 ===
+=== TRAINER_TONY_2 === /* FREE */
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -3218,7 +3218,7 @@ Sharpedo
 Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_TONY_3 ===
+=== TRAINER_TONY_3 === /* FREE */
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -3231,7 +3231,7 @@ Sharpedo
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_TONY_4 ===
+=== TRAINER_TONY_4 === /* FREE */
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -3248,7 +3248,7 @@ Sharpedo
 Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_TONY_5 ===
+=== TRAINER_TONY_5 === /* FREE */
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -3347,7 +3347,7 @@ Machop
 Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_NOB_2 ===
+=== TRAINER_NOB_2 === /* FREE */
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3360,7 +3360,7 @@ Machoke
 Level: 27
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-=== TRAINER_NOB_3 ===
+=== TRAINER_NOB_3 === /* FREE */
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3377,7 +3377,7 @@ Machoke
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_NOB_4 ===
+=== TRAINER_NOB_4 === /* FREE */
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3398,7 +3398,7 @@ Machoke
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_NOB_5 ===
+=== TRAINER_NOB_5 === /* FREE */
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3608,7 +3608,7 @@ Whismur
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DALTON_2 ===
+=== TRAINER_DALTON_2 === /* FREE */
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3629,7 +3629,7 @@ Magnemite
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_DALTON_3 ===
+=== TRAINER_DALTON_3 === /* FREE */
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3650,7 +3650,7 @@ Magnemite
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_DALTON_4 ===
+=== TRAINER_DALTON_4 === /* FREE */
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3671,7 +3671,7 @@ Magneton
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_DALTON_5 ===
+=== TRAINER_DALTON_5 === /* FREE */
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3781,7 +3781,7 @@ Wingull
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BERNIE_2 ===
+=== TRAINER_BERNIE_2 === /* FREE */
 Name: BERNIE
 Class: Kindler
 Pic: Kindler
@@ -3798,7 +3798,7 @@ Wingull
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_BERNIE_3 ===
+=== TRAINER_BERNIE_3 === /* FREE */
 Name: BERNIE
 Class: Kindler
 Pic: Kindler
@@ -3815,7 +3815,7 @@ Pelipper
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_BERNIE_4 ===
+=== TRAINER_BERNIE_4 === /* FREE */
 Name: BERNIE
 Class: Kindler
 Pic: Kindler
@@ -3832,7 +3832,7 @@ Pelipper
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_BERNIE_5 ===
+=== TRAINER_BERNIE_5 === /* FREE */
 Name: BERNIE
 Class: Kindler
 Pic: Kindler
@@ -3985,7 +3985,7 @@ Sandshrew
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ETHAN_2 ===
+=== TRAINER_ETHAN_2 === /* FREE */
 Name: ETHAN
 Class: Camper
 Pic: Camper
@@ -4002,7 +4002,7 @@ Taillow
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_ETHAN_3 ===
+=== TRAINER_ETHAN_3 === /* FREE */
 Name: ETHAN
 Class: Camper
 Pic: Camper
@@ -4019,7 +4019,7 @@ Swellow
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_ETHAN_4 ===
+=== TRAINER_ETHAN_4 === /* FREE */
 Name: ETHAN
 Class: Camper
 Pic: Camper
@@ -4040,7 +4040,7 @@ Linoone
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_ETHAN_5 ===
+=== TRAINER_ETHAN_5 === /* FREE */
 Name: ETHAN
 Class: Camper
 Pic: Camper
@@ -4154,7 +4154,7 @@ Beautifly
 Level: 16
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_JEFFREY_2 ===
+=== TRAINER_JEFFREY_2 === /* FREE */
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4175,7 +4175,7 @@ Surskit
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_JEFFREY_3 ===
+=== TRAINER_JEFFREY_3 === /* FREE */
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4196,7 +4196,7 @@ Masquerain
 Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_JEFFREY_4 ===
+=== TRAINER_JEFFREY_4 === /* FREE */
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4221,7 +4221,7 @@ Masquerain
 Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_JEFFREY_5 ===
+=== TRAINER_JEFFREY_5 === /* FREE */
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4802,7 +4802,7 @@ Lunatone
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JACKI_2 ===
+=== TRAINER_JACKI_2 === /* FREE */
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -4819,7 +4819,7 @@ Lunatone
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_JACKI_3 ===
+=== TRAINER_JACKI_3 === /* FREE */
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -4836,7 +4836,7 @@ Lunatone
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_JACKI_4 ===
+=== TRAINER_JACKI_4 === /* FREE */
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -4853,7 +4853,7 @@ Lunatone
 Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_JACKI_5 ===
+=== TRAINER_JACKI_5 === /* FREE */
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -14366,7 +14366,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Rest
 - Belly Drum
 
-=== TRAINER_JOHN_AND_JAY_2 ===
+=== TRAINER_JOHN_AND_JAY_2 === /* FREE */
 Name: JOHN & JAY
 Class: Old Couple
 Pic: Old Couple
@@ -14391,7 +14391,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Rest
 - Belly Drum
 
-=== TRAINER_JOHN_AND_JAY_3 ===
+=== TRAINER_JOHN_AND_JAY_3 === /* FREE */
 Name: JOHN & JAY
 Class: Old Couple
 Pic: Old Couple
@@ -14416,7 +14416,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Rest
 - Belly Drum
 
-=== TRAINER_JOHN_AND_JAY_4 ===
+=== TRAINER_JOHN_AND_JAY_4 === /* FREE */
 Name: JOHN & JAY
 Class: Old Couple
 Pic: Old Couple
@@ -14441,7 +14441,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Rest
 - Belly Drum
 
-=== TRAINER_JOHN_AND_JAY_5 ===
+=== TRAINER_JOHN_AND_JAY_5 === /* FREE */
 Name: JOHN & JAY
 Class: Old Couple
 Pic: Old Couple
@@ -14500,7 +14500,7 @@ Carvanha
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LILA_AND_ROY_2 ===
+=== TRAINER_LILA_AND_ROY_2 === /* FREE */
 Name: LILA & ROY
 Class: Sis And Bro
 Pic: Sis And Bro
@@ -14517,7 +14517,7 @@ Carvanha
 Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LILA_AND_ROY_3 ===
+=== TRAINER_LILA_AND_ROY_3 === /* FREE */
 Name: LILA & ROY
 Class: Sis And Bro
 Pic: Sis And Bro
@@ -14534,7 +14534,7 @@ Carvanha
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LILA_AND_ROY_4 ===
+=== TRAINER_LILA_AND_ROY_4 === /* FREE */
 Name: LILA & ROY
 Class: Sis And Bro
 Pic: Sis And Bro
@@ -14551,7 +14551,7 @@ Sharpedo
 Level: 46
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LILA_AND_ROY_5 ===
+=== TRAINER_LILA_AND_ROY_5 === /* FREE */
 Name: LILA & ROY
 Class: Sis And Bro
 Pic: Sis And Bro
@@ -17803,7 +17803,7 @@ Beldum
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ANDRES_2 ===
+=== TRAINER_ANDRES_2 === /* FREE */
 Name: ANDRES
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -17820,7 +17820,7 @@ Sandshrew
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_ANDRES_3 ===
+=== TRAINER_ANDRES_3 === /* FREE */
 Name: ANDRES
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -17841,7 +17841,7 @@ Sandshrew
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_ANDRES_4 ===
+=== TRAINER_ANDRES_4 === /* FREE */
 Name: ANDRES
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -17862,7 +17862,7 @@ Sandshrew
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_ANDRES_5 ===
+=== TRAINER_ANDRES_5 === /* FREE */
 Name: ANDRES
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -18047,7 +18047,7 @@ Starmie
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_KOJI_2 ===
+=== TRAINER_KOJI_2 === /* FREE */
 Name: KOJI
 Class: Black Belt
 Pic: Black Belt
@@ -18064,7 +18064,7 @@ Machoke
 Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_KOJI_3 ===
+=== TRAINER_KOJI_3 === /* FREE */
 Name: KOJI
 Class: Black Belt
 Pic: Black Belt
@@ -18085,7 +18085,7 @@ Machoke
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_KOJI_4 ===
+=== TRAINER_KOJI_4 === /* FREE */
 Name: KOJI
 Class: Black Belt
 Pic: Black Belt
@@ -18106,7 +18106,7 @@ Machoke
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_KOJI_5 ===
+=== TRAINER_KOJI_5 === /* FREE */
 Name: KOJI
 Class: Black Belt
 Pic: Black Belt
@@ -18127,7 +18127,7 @@ Machamp
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CRISTIN_2 ===
+=== TRAINER_CRISTIN_2 === /* FREE */
 Name: CRISTIN
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -18145,7 +18145,7 @@ Vigoroth
 Level: 35
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-=== TRAINER_CRISTIN_3 ===
+=== TRAINER_CRISTIN_3 === /* FREE */
 Name: CRISTIN
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -18167,7 +18167,7 @@ Vigoroth
 Level: 37
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_CRISTIN_4 ===
+=== TRAINER_CRISTIN_4 === /* FREE */
 Name: CRISTIN
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -18189,7 +18189,7 @@ Vigoroth
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_CRISTIN_5 ===
+=== TRAINER_CRISTIN_5 === /* FREE */
 Name: CRISTIN
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -18211,7 +18211,7 @@ Slaking
 Level: 41
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-=== TRAINER_FERNANDO_2 ===
+=== TRAINER_FERNANDO_2 === /* FREE */
 Name: FERNANDO
 Class: Guitarist
 Pic: Guitarist
@@ -18232,7 +18232,7 @@ Loudred
 Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_FERNANDO_3 ===
+=== TRAINER_FERNANDO_3 === /* FREE */
 Name: FERNANDO
 Class: Guitarist
 Pic: Guitarist
@@ -18253,7 +18253,7 @@ Loudred
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_FERNANDO_4 ===
+=== TRAINER_FERNANDO_4 === /* FREE */
 Name: FERNANDO
 Class: Guitarist
 Pic: Guitarist
@@ -18274,7 +18274,7 @@ Loudred
 Level: 39
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_FERNANDO_5 ===
+=== TRAINER_FERNANDO_5 === /* FREE */
 Name: FERNANDO
 Class: Guitarist
 Pic: Guitarist
@@ -18507,7 +18507,7 @@ Swellow
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_THALIA_2 ===
+=== TRAINER_THALIA_2 === /* FREE */
 Name: THALIA
 Class: Beauty
 Pic: Beauty
@@ -18524,7 +18524,7 @@ Horsea
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_THALIA_3 ===
+=== TRAINER_THALIA_3 === /* FREE */
 Name: THALIA
 Class: Beauty
 Pic: Beauty
@@ -18545,7 +18545,7 @@ Seadra
 Level: 36
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_THALIA_4 ===
+=== TRAINER_THALIA_4 === /* FREE */
 Name: THALIA
 Class: Beauty
 Pic: Beauty
@@ -18566,7 +18566,7 @@ Seadra
 Level: 38
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_THALIA_5 ===
+=== TRAINER_THALIA_5 === /* FREE */
 Name: THALIA
 Class: Beauty
 Pic: Beauty

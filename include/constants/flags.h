@@ -1509,7 +1509,7 @@
 #define FLAG_SYS_DEFEATED_RED                       (SYSTEM_FLAGS + 0x85) // Defeated Red at Azure Mountain
 #define FLAG_SYS_BEFORE_ELITE_4_REMATCH             (SYSTEM_FLAGS + 0x86) // For postgame before rechalling E4
 #define FLAG_SYS_THE_UNDER_DIG                      (SYSTEM_FLAGS + 0x87) // Darkrai Event 2279
-#define FLAG_E4_FINAL_REMATCH                       (SYSTEM_FLAGS + 0x88) // Final Rematches
+#define FLAG_SYS_FINAL_REMATCH                      (SYSTEM_FLAGS + 0x88) // Final Rematches
 #define FLAG_SYS_DEFEATED_BRUNO                     (SYSTEM_FLAGS + 0x89) // Baldesia Forest Dojo
 #define FLAG_SYS_SMART_WILD_AI                      (SYSTEM_FLAGS + 0x8A) // Smart Ai in wild battles
 #define FLAG_SYS_NO_RUNNING                         (SYSTEM_FLAGS + 0x8B) // To stop running from wild battles

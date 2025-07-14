@@ -58,13 +58,11 @@ Route115_EventScript_Koichi::
 	end
 
 Route115_EventScript_Nob::
-	trainerbattle_single TRAINER_NOB_1, Route115_Text_NobIntro, Route115_Text_NobDefeat, Route115_EventScript_RegisterNob
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchNob
+	trainerbattle_single TRAINER_NOB_1, Route115_Text_NobIntro, Route115_Text_NobDefeat,
 	msgbox Route115_Text_NobPostBattle, MSGBOX_DEFAULT
 	release
 	end
-
+@ Unused
 Route115_EventScript_RegisterNob::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
@@ -72,7 +70,7 @@ Route115_EventScript_RegisterNob::
 	register_matchcall TRAINER_NOB_1
 	release
 	end
-
+@ Unused
 Route115_EventScript_RematchNob::
 	trainerbattle_rematch TRAINER_NOB_1, Route115_Text_NobRematchIntro, Route115_Text_NobRematchDefeat
 	msgbox Route115_Text_NobPostRematch, MSGBOX_AUTOCLOSE

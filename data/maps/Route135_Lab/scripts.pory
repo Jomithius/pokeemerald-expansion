@@ -620,11 +620,11 @@ text Route135_Lab_Text_ManiacExplainCosmog{
 
 text Route_135_Lab_Text_ImBusyTalkToCosmog{
     "Ah, intern.\n
-    Unfortunately, there's no new discoveries.\p
-    Just ask COSMOG if you need to return to\n
-    the ULTRA SPACE.\p
-    It seems to trust you enough without needing\n
-    my intervention any further."
+    Sadly, there's no new discoveries.\p
+    Just ask COSMOG if you need to return\n
+    to the ULTRA SPACE.\p
+    It seems to trust you enough without\n
+    needing my intervention any further."
 }
 
 text Route_135_Lab_PokenavText_JamesComeBackToTheLab{
