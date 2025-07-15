@@ -462,10 +462,12 @@ EverGrandeCity_EventScript_James_1:
 # 290 "data/maps/EverGrandeCity/scripts.pory"
 	clearflag FLAG_HIDE_JAMES_RUSTBORO_CITY
 # 291 "data/maps/EverGrandeCity/scripts.pory"
-	setvar VAR_MISA_STATE, 10
+	setflag FLAG_DEFEATED_JAMES_EVERGRANDE
 # 292 "data/maps/EverGrandeCity/scripts.pory"
-	fadedefaultbgm
+	setvar VAR_MISA_STATE, 10
 # 293 "data/maps/EverGrandeCity/scripts.pory"
+	fadedefaultbgm
+# 294 "data/maps/EverGrandeCity/scripts.pory"
 	releaseall
 	end
 
@@ -484,25 +486,25 @@ EverGrandeCity_EventScript_James_3:
 	goto EverGrandeCity_EventScript_James_1
 
 
-# 346 "data/maps/EverGrandeCity/scripts.pory"
-EverGrandeCity_Movement_EnterPokeball:
 # 347 "data/maps/EverGrandeCity/scripts.pory"
+EverGrandeCity_Movement_EnterPokeball:
+# 348 "data/maps/EverGrandeCity/scripts.pory"
 	enter_pokeball
 	step_end
 
-# 350 "data/maps/EverGrandeCity/scripts.pory"
-EvergrandeCity_Movement_PlayerLeftTrigger:
 # 351 "data/maps/EverGrandeCity/scripts.pory"
-	walk_right
+EvergrandeCity_Movement_PlayerLeftTrigger:
 # 352 "data/maps/EverGrandeCity/scripts.pory"
+	walk_right
+# 353 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
 	step_end
 
-# 355 "data/maps/EverGrandeCity/scripts.pory"
-EvergrandeCity_Movement_PlayerRightTrigger:
 # 356 "data/maps/EverGrandeCity/scripts.pory"
-	walk_left
+EvergrandeCity_Movement_PlayerRightTrigger:
 # 357 "data/maps/EverGrandeCity/scripts.pory"
+	walk_left
+# 358 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
 	step_end
 
@@ -543,29 +545,29 @@ EverGrandeCity_Text_Nurse2::
 	.string "Please come again.$"
 
 EverGrandeCity_Text_James1::
-# 297 "data/maps/EverGrandeCity/scripts.pory"
+# 298 "data/maps/EverGrandeCity/scripts.pory"
 	.string "A lot changed from the last time\n we met.\p I heard what happened in SOOTOPOLIS.\n That must have been crazy.\p At that time I was here.\n Working on myself.\p We overcame a lot during our training,\n but there's still one thing I haven't\l done:\p Defeat you.$"
 
 EverGrandeCity_Text_James2::
-# 310 "data/maps/EverGrandeCity/scripts.pory"
+# 311 "data/maps/EverGrandeCity/scripts.pory"
 	.string "One last time.$"
 
 EvergrandeCity_JamesDefeat::
-# 314 "data/maps/EverGrandeCity/scripts.pory"
+# 315 "data/maps/EverGrandeCity/scripts.pory"
 	.string "…\n I guess it still wasn't enough.$"
 
 EverGrandeCity_Text_James3::
-# 319 "data/maps/EverGrandeCity/scripts.pory"
+# 320 "data/maps/EverGrandeCity/scripts.pory"
 	.string "JAMES: …\n It feels like I was somehow always\l destined to lose to you, {PLAYER}.\p Even so, I'm glad my mom had me\n go on this journey.\p I won't challenge the ELITE FOUR yet.\n But I know you're going to.$"
 
 EverGrandeCity_Text_James4::
-# 328 "data/maps/EverGrandeCity/scripts.pory"
+# 329 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Here, take this.$"
 
 EverGrandeCity_Text_James5::
-# 332 "data/maps/EverGrandeCity/scripts.pory"
+# 333 "data/maps/EverGrandeCity/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}To use MEGA EVOLUTION in battle, press\n START before selecting your move.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: The ELITE FOUR are strong.\n Be careful.\p {COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap for the ELITE FOUR\n is 75.$"
 
 EverGrandeCity_Text_James6::
-# 341 "data/maps/EverGrandeCity/scripts.pory"
+# 342 "data/maps/EverGrandeCity/scripts.pory"
 	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Well, I'm gonna go back home for now.\n See ya, {PLAYER}.$"

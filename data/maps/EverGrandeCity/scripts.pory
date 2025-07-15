@@ -288,6 +288,7 @@ script EverGrandeCity_EventScript_James{
     setflag(FLAG_HIDE_RIVAL_EVERGRANDE_CITY)
     setflag(FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY)
     clearflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
+    setflag(FLAG_DEFEATED_JAMES_EVERGRANDE) // level cap from 50 to 75
     setvar(VAR_MISA_STATE, 10)
     fadedefaultbgm
     releaseall

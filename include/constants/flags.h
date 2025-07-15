@@ -1391,8 +1391,8 @@
 #define FLAG_VISITED_ROUTE_135_LAB                  (SYSTEM_FLAGS + 0x22) // custom
 #define FLAG_I_EXP_SHARE                            (SYSTEM_FLAGS + 0x23) // Exp Share gen 6
 #define FLAG_SYS_NO_BAG_USE                         (SYSTEM_FLAGS + 0x24) // No Item Use
-#define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
-#define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
+#define FLAG_SYS_DYNAMIC_LEVELS                     (SYSTEM_FLAGS + 0x25) // Dynamic Leveling for postgame
+#define FLAG_DEFEATED_JAMES_EVERGRANDE              (SYSTEM_FLAGS + 0x26) // Level Cap for James evergrande city
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
 
 #define FLAG_SYS_USE_FLASH                          (SYSTEM_FLAGS + 0x28)
