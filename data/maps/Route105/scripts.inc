@@ -88,5 +88,5 @@ Route104_Text_DadPokenavCall:
 	.string "… … … … … Click!$"
 
 Route104_Text_RegisteredDadInPokenav:
-	.string "Registered LEADER LUNA\n"
+	.string "Registered GYM LEADER LUNA\n"
 	.string "in the POKéNAV.$"

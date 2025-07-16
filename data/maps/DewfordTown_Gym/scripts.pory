@@ -371,10 +371,10 @@ DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "won't hold back!$"
 
 DewfordTown_Gym_Text_GymStatue:
-	.string "SLATEPORT TOWN POKéMON GYM$"
+	.string "SLATEPORT CITY POKéMON GYM$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
-	.string "SLATEPORT TOWN POKéMON GYM\p"
+	.string "SLATEPORT CITY POKéMON GYM\p"
 	.string "LIAM'S CERTIFIED TRAINERS:\n"
     .string "JAMES\p"
 	.string "{PLAYER}$"

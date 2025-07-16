@@ -856,6 +856,7 @@ script LilycoveCity_EventScript_EmoBully{
     fadedefaultbgm
     setvar(VAR_MISA_STATE, 8)
     setflag(FLAG_HIDE_EMO_LILYCOVE)
+	setflag(FLAG_JOMITHIUS_UNAVAILABLE) // for match call
     setflag(FLAG_HIDE_LILYCOVE_RIVAL_POKEMON)
     releaseall
     end

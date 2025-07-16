@@ -75,8 +75,8 @@
 #define FLAG_DEFEATED_URSALUNA_BLOODMOON       0x3D // Petalburg Woods
 #define FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN   0x3E // For gym rematches
 #define FLAG_RECEIVED_CASTELIACONE             0x3F // Route 137
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
+#define FLAG_ENABLED_JOMITHIUS_MATCH_CALL      0x40 // Jomithius
+#define FLAG_ENABLED_JAMES_MATCH_CALL          0x41 // James
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
@@ -120,7 +120,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_ENABLE_REPORT_MATCH_CALL        0x68  // Used for legendary pkmn list
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
@@ -1388,7 +1388,7 @@
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
 #define FLAG_VISITED_ULTRA_SPACE                    (SYSTEM_FLAGS + 0x21) // custom
-#define FLAG_VISITED_ROUTE_135_LAB                  (SYSTEM_FLAGS + 0x22) // custom
+#define FLAG_REGISTERED_LUNA_POKENAV                (SYSTEM_FLAGS + 0x22) // to replace luna's sprite
 #define FLAG_I_EXP_SHARE                            (SYSTEM_FLAGS + 0x23) // Exp Share gen 6
 #define FLAG_SYS_NO_BAG_USE                         (SYSTEM_FLAGS + 0x24) // No Item Use
 #define FLAG_SYS_DYNAMIC_LEVELS                     (SYSTEM_FLAGS + 0x25) // Dynamic Leveling for postgame
@@ -1523,7 +1523,7 @@
 #define FLAG_LANDMARK_WACHUNPELON                   (SYSTEM_FLAGS + 0x93) 
 #define FLAG_LANDMARK_BALDESIA                      (SYSTEM_FLAGS + 0x94) 
 #define FLAG_LANDMARK_SNOWDRIFT_CITY                (SYSTEM_FLAGS + 0x95) 
-#define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
+#define FLAG_JOMITHIUS_UNAVAILABLE                  (SYSTEM_FLAGS + 0x96) // For rival match call
 #define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
 #define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
 #define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag

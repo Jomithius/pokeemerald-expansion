@@ -745,13 +745,13 @@ DewfordTown_Gym_Text_BrawlyPostBattle:
 # 373 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_Text_GymStatue:
 # 374 "data/maps/DewfordTown_Gym/scripts.pory"
-	.string "SLATEPORT TOWN POKéMON GYM$"
+	.string "SLATEPORT CITY POKéMON GYM$"
 # 375 "data/maps/DewfordTown_Gym/scripts.pory"
 
 # 376 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_Text_GymStatueCertified:
 # 377 "data/maps/DewfordTown_Gym/scripts.pory"
-	.string "SLATEPORT TOWN POKéMON GYM\p"
+	.string "SLATEPORT CITY POKéMON GYM\p"
 # 378 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "LIAM'S CERTIFIED TRAINERS:\n"
 # 379 "data/maps/DewfordTown_Gym/scripts.pory"

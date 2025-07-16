@@ -719,7 +719,7 @@ LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 # 360 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "LAVARIDGE TOWN POKéMON GYM\p"
 # 361 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	.string "KAI'S CERTIFIED TRAINERS:\n"
+	.string "KAIRYN'S CERTIFIED TRAINERS:\n"
 # 362 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
     .string "JAMES\p"
 # 363 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

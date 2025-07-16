@@ -1939,6 +1939,14 @@ extern const u8 MatchCall_Text_Phoebe[];
 extern const u8 MatchCall_Text_Glacia[];
 extern const u8 MatchCall_Text_Drake[];
 extern const u8 MatchCall_Text_Wallace[];
+extern const u8 MatchCall_Text_Report[];
+extern const u8 MatchCall_Text_Report2[];
+extern const u8 MatchCall_Text_Emo1[];
+extern const u8 MatchCall_Text_Emo2[];
+extern const u8 MatchCall_Text_Emo3[];
+extern const u8 MatchCall_Text_James1[];
+extern const u8 MatchCall_Text_James2[];
+extern const u8 MatchCall_Text_James3[];
 
 // Contest Link
 extern const u8 gText_ColorDarkGray[];

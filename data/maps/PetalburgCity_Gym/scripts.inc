@@ -3184,9 +3184,15 @@ PetalburgCity_Gym_EventScript_GiveSwordsDance::
 	giveitem ITEM_TM_SWORDS_DANCE
 # 1598 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_ExplainSwordsDance, MSGBOX_DEFAULT
+# 1599 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmessage
+# 1600 "data/maps/PetalburgCity_Gym/scripts.pory"
+	clearflag FLAG_ENABLE_NORMAN_MATCH_CALL
+# 1601 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_REGISTERED_LUNA_POKENAV
 	return
 
 
 PetalburgCity_Gym_Text_ExplainSwordsDance::
-# 1602 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1605 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "That TM63, SWORDS DANCE, sharply\n raises the user's ATTACK.$"

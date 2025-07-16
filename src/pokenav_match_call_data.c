@@ -203,8 +203,18 @@ static const struct MatchCallStructTrainer sNormanMatchCallHeader =
     .mapSec = MAPSEC_PETALBURG_CITY,
     .flag = FLAG_ENABLE_NORMAN_MATCH_CALL,
     .rematchTableIdx = REMATCH_NORMAN,
-    .desc = COMPOUND_STRING("RELIABLE ONE"),
-    .name = COMPOUND_STRING("DAD"),
+    .desc = COMPOUND_STRING("THAT GUY"),
+    .name = COMPOUND_STRING("LUNA"),
+    .textData = sNormanTextScripts
+};
+
+static const struct MatchCallStructNPC sLunaMatchCallHeader =
+{
+    .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_PETALBURG_CITY,
+    .flag = FLAG_REGISTERED_LUNA_POKENAV,
+    .desc = COMPOUND_STRING("LULU(RUBRUB)"),
+    .name = COMPOUND_STRING("LUNA"),
     .textData = sNormanTextScripts
 };
 
@@ -315,6 +325,40 @@ static const struct MatchCallRival sBrendanMatchCallHeader =
     .textData = sBrendanTextScripts
 };
 
+static const match_call_text_data_t sJomithiusTextScripts[] = {
+    { MatchCall_Text_Emo1, 0xFFFF,                              0xFFFF },
+    { MatchCall_Text_Emo2, FLAG_BADGE06_GET,                    0xFFFF },
+    { MatchCall_Text_Emo3, FLAG_JOMITHIUS_UNAVAILABLE,          0xFFFF },
+    { NULL,                   0xFFFF,                           0xFFFF },
+};
+
+static const struct MatchCallStructNPC sJomithiusMatchCallHeader =
+{
+    .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_NONE,
+    .flag = FLAG_ENABLED_JOMITHIUS_MATCH_CALL,
+    .desc = COMPOUND_STRING("VOIDWALKER"),
+    .name = COMPOUND_STRING("JOMITHIUS"),
+    .textData = sJomithiusTextScripts
+};
+
+static const match_call_text_data_t sJamesTextScripts[] = {
+    { MatchCall_Text_James1, 0xFFFF,                            0xFFFF },
+    { MatchCall_Text_James2, FLAG_CALL_FROM_CEO,                0xFFFF },
+    { MatchCall_Text_James3, FLAG_RETURNED_FROM_ULTRA_SPACE,    0xFFFF },
+    { NULL,                   0xFFFF,                           0xFFFF },
+};
+
+static const struct MatchCallStructNPC sJamesMatchCallHeader =
+{
+    .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_NONE,
+    .flag = FLAG_ENABLED_JAMES_MATCH_CALL,
+    .desc = COMPOUND_STRING("{PKMN} TRAINER"),
+    .name = COMPOUND_STRING("JAMES"),
+    .textData = sJamesTextScripts
+};
+
 static const match_call_text_data_t sWallyTextScripts[] = {
     { MatchCall_Text_Wally1, 0xFFFF,                              0xFFFF },
     { MatchCall_Text_Wally2, FLAG_RUSTURF_TUNNEL_OPENED,          0xFFFF },
@@ -399,7 +443,7 @@ static const struct MatchCallStructTrainer sBrawlyMatchCallHeader =
     .mapSec = MAPSEC_DEWFORD_TOWN,
     .flag = FLAG_ENABLE_BRAWLY_MATCH_CALL,
     .rematchTableIdx = REMATCH_BRAWLY,
-    .desc = COMPOUND_STRING("LOAM"),
+    .desc = COMPOUND_STRING("POOBLES POWER"),
     .name = NULL,
     .textData = sBrawlyTextScripts
 };
@@ -581,13 +625,32 @@ static const struct MatchCallStructTrainer sWallaceMatchCallHeader =
     .textData = sWallaceTextScripts
 };
 
+static const match_call_text_data_t sReportGuyTextScripts[] = {
+    { MatchCall_Text_Report, 0xFFFF,                    0xFFFF },
+    { MatchCall_Text_Report2, FLAG_RECEIVED_PEAT_BLOCK, 0xFFFF },
+    { NULL,                0xFFFF,                      0xFFFF }
+};
+
+static const struct MatchCallStructNPC sReportGuyMatchCallHeader =
+{
+    .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_LILYCOVE_CITY,
+    .flag = FLAG_ENABLE_REPORT_MATCH_CALL,
+    .desc = COMPOUND_STRING("CEO'S STAFF"),
+    .name = COMPOUND_STRING("REPORT GUY"),
+    .textData = sReportGuyTextScripts
+};
+
 static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_MR_STONE]   = {.npc    = &sMrStoneMatchCallHeader},
     [MC_HEADER_PROF_BIRCH] = {.birch  = &sProfBirchMatchCallHeader},
     [MC_HEADER_BRENDAN]    = {.rival  = &sBrendanMatchCallHeader},
     [MC_HEADER_MAY]        = {.rival  = &sMayMatchCallHeader},
+    [MC_HEADER_JOMITHIUS]  = {.npc  = &sJomithiusMatchCallHeader},
+    [MC_HEADER_JAMES]      = {.npc  = &sJamesMatchCallHeader},
     [MC_HEADER_WALLY]      = {.wally  = &sWallyMatchCallHeader},
     [MC_HEADER_NORMAN]     = {.leader = &sNormanMatchCallHeader},
+    [MC_HEADER_LUNA]       = {.npc    = &sLunaMatchCallHeader},
     [MC_HEADER_MOM]        = {.npc    = &sMomMatchCallHeader},
     [MC_HEADER_STEVEN]     = {.npc    = &sStevenMatchCallHeader},
     [MC_HEADER_SCOTT]      = {.npc    = &sScottMatchCallHeader},
@@ -602,7 +665,8 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_PHOEBE]     = {.leader = &sPhoebeMatchCallHeader},
     [MC_HEADER_GLACIA]     = {.leader = &sGlaciaMatchCallHeader},
     [MC_HEADER_DRAKE]      = {.leader = &sDrakeMatchCallHeader},
-    [MC_HEADER_WALLACE]    = {.leader = &sWallaceMatchCallHeader}
+    [MC_HEADER_WALLACE]    = {.leader = &sWallaceMatchCallHeader},
+    [MC_HEADER_REPORT_GUY] = {.npc    = &sReportGuyMatchCallHeader}
 };
 
 static bool32 (*const sMatchCallGetEnabledFuncs[])(match_call_t) = {
@@ -674,6 +738,16 @@ static const u8 gText_MatchCallMay_Pokemon[] = _("I'll use any POKéMON!");
 static const u8 gText_MatchCallMay_Intro1[] = _("My POKéMON and I help");
 static const u8 gText_MatchCallMay_Intro2[] = _("my father's research.");
 
+static const u8 gText_MatchCallVoidwalker_Jomithius_Strategy[] = _("I use the power of the void.");
+static const u8 gText_MatchCallVoidwalker_Jomithius_Pokemon[] = _("Voidsent.");
+static const u8 gText_MatchCallVoidwalker_Jomithius_Intro1[] = _("I'm in my abyss…");
+static const u8 gText_MatchCallVoidwalker_Jomithius_Intro2[] = _("It calls me…");
+
+static const u8 gText_MatchCallPkmnTrainer_James_Strategy[] = _("Trusting in my friends.");
+static const u8 gText_MatchCallPkmnTrainer_James_Pokemon[] = _("Strong POKéMON.");
+static const u8 gText_MatchCallPkmnTrainer_James_Intro1[] = _("One last time…");
+static const u8 gText_MatchCallPkmnTrainer_James_Intro2[] = _("One more battle.");
+
 static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
     {
         .idx = MC_HEADER_STEVEN,
@@ -708,6 +782,29 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
         .facilityClass = FACILITY_CLASS_MAY,
         .flag = 0xFFFF,
         .flavorTexts = MCFLAVOR(May)
+    },
+    {
+        .idx = MC_HEADER_JOMITHIUS,
+        .facilityClass = FACILITY_CLASS_JOMITHIUS,
+        .flag = 0xFFFF,
+        .flavorTexts = MCFLAVOR(Voidwalker_Jomithius)
+    },
+    {
+        .idx = MC_HEADER_JAMES,
+        .facilityClass = FACILITY_CLASS_JAMES,
+        .flag = 0xFFFF,
+        .flavorTexts = MCFLAVOR(PkmnTrainer_James)
+    },
+    {
+        .idx = MC_HEADER_LUNA,
+        .facilityClass = FACILITY_CLASS_LUNA,
+        .flag = 0xFFFF,
+        .flavorTexts = {
+            [CHECK_PAGE_STRATEGY] = COMPOUND_STRING("Mucho texto."),
+            [CHECK_PAGE_POKEMON]  = COMPOUND_STRING("Mucho texto."),
+            [CHECK_PAGE_INTRO_1]  = COMPOUND_STRING("Your"),
+            [CHECK_PAGE_INTRO_2]  = COMPOUND_STRING("Mom.")
+        }
     }
 };
 

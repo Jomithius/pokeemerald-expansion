@@ -337,6 +337,7 @@ Route104_EventScript_SailToDewfordNoCall::
 	goto Route104_EventScript_ArriveInDewford
 
 Route104_EventScript_SailToDewfordDadCalls::
+	goto_if_set FLAG_REGISTERED_LUNA_POKENAV, Route104_EventScript_SailToDewfordNoCall
 	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordBeforeDadCalls
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordBeforeDadCalls
 	waitmovement 0

@@ -155,7 +155,7 @@ script Route112_EventScript_Emo{
     msgbox(Route112_Text_Emo1, MSGBOX_AUTOCLOSE)
     waitmessage
     call(Route112_EventScript_RivalBattle)
-    msgbox(Route112_Text_Emo2, MSGBOX_AUTOCLOSE)
+    msgbox(Route112_Text_Emo2, MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_TM_ACROBATICS)
     waitmessage
@@ -203,11 +203,19 @@ script Route112_EventScript_Emo_West{
     msgbox(Route112_Text_Emo1, MSGBOX_AUTOCLOSE)
     waitmessage
     call(Route112_EventScript_RivalBattle)
-    msgbox(Route112_Text_Emo2, MSGBOX_AUTOCLOSE)
+    msgbox(Route112_Text_Emo2, MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_TM_ACROBATICS)
     delay(10)
     waitmessage
+    msgbox("I see you also got a POKéNAV…\n
+        … … … … …", MSGBOX_DEFAULT)
+    waitmessage
+    playfanfare(MUS_REGISTER_MATCH_CALL)
+    msgbox("Registered JOMITHIUS in the POKéNAV.", MSGBOX_AUTOCLOSE)
+    waitfanfare
+    waitmessage
+    setflag(FLAG_ENABLED_JOMITHIUS_MATCH_CALL)
     applymovement(14, Common_Movement_WalkInPlaceDown)
     waitmovement(14)
     msgbox(Route112_Text_Emo3, MSGBOX_AUTOCLOSE)

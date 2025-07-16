@@ -17,23 +17,25 @@ Route135_Lab_OnTransition::
 # 10 "data/maps/Route135_Lab/scripts.pory"
 	setflag FLAG_TEMP_E
 # 11 "data/maps/Route135_Lab/scripts.pory"
-	call_if_unset FLAG_VISITED_ROUTE_135_LAB, Route135_SetFlag
+	setflag FLAG_LANDMARK_ROUTE135
 # 12 "data/maps/Route135_Lab/scripts.pory"
+	call_if_set FLAG_ENABLED_JAMES_MATCH_CALL, Route135_Lab_DisableJamesMatchCall
+# 13 "data/maps/Route135_Lab/scripts.pory"
 	call_if_ge VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_JamesPosition
 	end
 
 
-Route135_SetFlag::
+Route135_Lab_JamesPosition::
 # 18 "data/maps/Route135_Lab/scripts.pory"
-	setflag FLAG_VISITED_ROUTE_135_LAB
+	setobjectxyperm 2, 5, 2
+# 19 "data/maps/Route135_Lab/scripts.pory"
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
 	return
 
 
-Route135_Lab_JamesPosition::
-# 23 "data/maps/Route135_Lab/scripts.pory"
-	setobjectxyperm 2, 5, 2
+Route135_Lab_DisableJamesMatchCall::
 # 24 "data/maps/Route135_Lab/scripts.pory"
-	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
+	clearflag FLAG_ENABLED_JAMES_MATCH_CALL
 	return
 
 

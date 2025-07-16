@@ -358,7 +358,7 @@ LavaridgeTown_Gym_1F_Text_GymStatue:
 
 LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 	.string "LAVARIDGE TOWN POKéMON GYM\p"
-	.string "KAI'S CERTIFIED TRAINERS:\n"
+	.string "KAIRYN'S CERTIFIED TRAINERS:\n"
     .string "JAMES\p"
 	.string "{PLAYER}$"
 

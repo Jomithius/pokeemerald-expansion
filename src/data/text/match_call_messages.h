@@ -328,10 +328,10 @@ const u8 gText_MatchCallPassionBurn_Flannery_Pokemon[] = _("Burn with passion!")
 const u8 gText_MatchCallPassionBurn_Flannery_Intro1[] = _("I'll roast you like a");
 const u8 gText_MatchCallPassionBurn_Flannery_Intro2[] = _("SLOWPOKE TAIL!");
 
-const u8 gText_MatchCallReliableOne_Dad_Strategy[] = _("LOPUNNY.");
-const u8 gText_MatchCallReliableOne_Dad_Pokemon[] = _("LOPUNNY & SALAZZLE.");
-const u8 gText_MatchCallReliableOne_Dad_Intro1[] = _("Mucho texto.");
-const u8 gText_MatchCallReliableOne_Dad_Intro2[] = _("Mucho texto.");
+const u8 gText_MatchCallReliableOne_Dad_Strategy[] = _("Mucho texto.");
+const u8 gText_MatchCallReliableOne_Dad_Pokemon[] = _("Mucho texto.");
+const u8 gText_MatchCallReliableOne_Dad_Intro1[] = _("Your");
+const u8 gText_MatchCallReliableOne_Dad_Intro2[] = _("Mom.");
 
 const u8 gText_MatchCallSkyTamer_Winona_Strategy[] = _("I bark and bite.");
 const u8 gText_MatchCallSkyTamer_Winona_Pokemon[] = _("DOG TYPE POKéMON.");

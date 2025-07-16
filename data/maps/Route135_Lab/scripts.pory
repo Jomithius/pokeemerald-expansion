@@ -8,20 +8,20 @@ mapscripts Route135_Lab_MapScripts {
 
 script Route135_Lab_OnTransition{
     setflag(FLAG_TEMP_E)
-    call_if_unset(FLAG_VISITED_ROUTE_135_LAB, Route135_SetFlag)
+    setflag(FLAG_LANDMARK_ROUTE135)
+    call_if_set(FLAG_ENABLED_JAMES_MATCH_CALL, Route135_Lab_DisableJamesMatchCall)
     call_if_ge(VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_JamesPosition)
     end
-}
-
-
-script Route135_SetFlag{
-    setflag(FLAG_VISITED_ROUTE_135_LAB)
-    return
 }
 
 script Route135_Lab_JamesPosition{
     setobjectxyperm(2, 5, 2)
     setobjectmovementtype(2, MOVEMENT_TYPE_FACE_UP)
+    return
+}
+
+script Route135_Lab_DisableJamesMatchCall{
+    clearflag(FLAG_ENABLED_JAMES_MATCH_CALL) // clears when in lab since you're in the same room. added back in route 135 map scripts
     return
 }
 

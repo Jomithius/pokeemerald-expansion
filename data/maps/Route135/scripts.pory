@@ -1,4 +1,11 @@
-mapscripts Route135_MapScripts {}
+mapscripts Route135_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Route135_OnTransition
+}
+
+script Route135_OnTransition{
+    setflag(FLAG_ENABLED_JAMES_MATCH_CALL)
+    end
+}
 
 script Route135_EventScript_FatMan{
     msgbox("Oh man…\n

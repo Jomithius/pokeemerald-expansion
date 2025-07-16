@@ -289,6 +289,8 @@ script EverGrandeCity_EventScript_James{
     setflag(FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY)
     clearflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
     setflag(FLAG_DEFEATED_JAMES_EVERGRANDE) // level cap from 50 to 75
+    clearflag(FLAG_ENABLED_JOMITHIUS_MATCH_CALL)
+    setflag(FLAG_ENABLED_JAMES_MATCH_CALL) // update match call to match new sprite.
     setvar(VAR_MISA_STATE, 10)
     fadedefaultbgm
     releaseall

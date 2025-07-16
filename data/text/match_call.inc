@@ -2652,23 +2652,20 @@ MatchCall_Text_Scott7::
 	.string "the POKéNAV's service area…$"
 
 MatchCall_Text_Norman1::
-	.string "DAD: In RUSTBORO, there's a man\n"
+	.string "LUNA: In RUSTBORO, there's a man\n"
 	.string "that goes by the odd name of\l"
 	.string "the CUTTER.\p"
 	.string "If you're in the area, you should\n"
 	.string "pay him a visit.$"
 
 MatchCall_Text_Norman2::
-	.string "DAD: Hm… Little by little, but also\n"
+	.string "LUNA: Hm… Little by little, but also\n"
 	.string "very surely, you're getting\l"
 	.string "tougher, {PLAYER}.\p"
-	.string "The stronger you get, the farther\n"
-	.string "and higher you soar from Mother\l"
-	.string "and me…\p"
-	.string "This feeling is hard to explain.$"
+	.string "Mucho texto.$"
 
 MatchCall_Text_Norman3::
-	.string "DAD: I see…\n"
+	.string "LUNA: I see…\n"
 	.string "You've collected four GYM BADGES…\p"
 	.string "There's no avoiding it now.\n"
 	.string "We will battle like I promised.\p"
@@ -2676,35 +2673,33 @@ MatchCall_Text_Norman3::
 	.string "We'll all be waiting for you!$"
 
 MatchCall_Text_Norman4::
-	.string "DAD: {PLAYER}! You'd better go visit\n"
-	.string "Mother every so often.\p"
-	.string "I'm going to remain here and\n"
-	.string "redouble my training.\p"
-	.string "The way of battling is deep\n"
-	.string "and unforgiving!$"
+	.string "LUNA: {PLAYER}! You'd better go visit\n"
+	.string "your Mom every so often.\p"
+	.string "I've been keep her company, but still.\n"
+	.string "At least give her a call.\p"
+	.string "She told me that she misses\n"
+	.string "hearing from you.$"
 
 MatchCall_Text_Norman5::
-	.string "DAD: Oh, hi, {PLAYER}!\p"
+	.string "LUNA: Oh, hi, {PLAYER}.\p"
 	.string "What's that? MAGMA EMBLEM?\n"
 	.string "I don't know what that's about.\p"
 	.string "But with a name like that, it may\n"
-	.string "be somehow linked to a volcano!$"
+	.string "be somehow linked to a volcano?$"
 
 MatchCall_Text_Norman6::
-	.string "DAD: Hiyah! Haah! Dwah!\p"
-	.string "…Oh? {PLAYER}!\p"
+	.string "LUNA: LU! LU! RUB! RUB!\p"
+	.string "…Oh? {PLAYER}.\p"
 	.string "You caught me right in the middle\n"
 	.string "of a POKéMON training session!$"
 
 MatchCall_Text_Norman7::
-	.string "DAD: {PLAYER}!\p"
+	.string "LUNA: {PLAYER}.\p"
 	.string "Who would've thought you'd become\n"
-	.string "the POKéMON LEAGUE CHAMPION…\p"
-	.string "Okay!\n"
-	.string "I won't be left behind!$"
+	.string "the POKéMON LEAGUE CHAMPION…$"
 
 MatchCall_Text_Norman8::
-	.string "DAD: Hm? {PLAYER}?\n"
+	.string "LUNA: Hm? {PLAYER}?\n"
 	.string "What good timing!\p"
 	.string "This time, I'm going to challenge\n"
 	.string "you to battle.\p"
@@ -2712,7 +2707,7 @@ MatchCall_Text_Norman8::
 	.string "Accept my challenge anytime!$"
 
 MatchCall_Text_Norman9::
-	.string "DAD: …You amaze me, {PLAYER}.\n"
+	.string "LUNA: …You amaze me, {PLAYER}.\n"
 	.string "How much higher will you soar?$"
 
 MatchCall_Text_Steven1::
@@ -2894,3 +2889,97 @@ MatchCall_Text_MrStone11::
 	.string "I didn't recognize you right off!\p"
 	.string "Hm! You must come visit us at DEVON\n"
 	.string "sometime!$"
+
+MatchCall_Text_Report::
+	.string "… … … … … … Yes?\n"
+	.string "Ah, {PLAYER}{KUN}.\p"
+	.string "I presume you'd like to hear the\n"
+	.string "areas of interest again, yes?\p"
+	.string "Notable reports have come from:\n"
+	.string "the SCORCHED SLAB, MT. PYRE,\l"
+	.string "FIERY PATH, METEOR FALLS,\l"
+	.string "SKY PILLAR, and CAVE OF ORIGIN.\p"
+	.string "Feel free to call me again\n"
+	.string "if you require another reminder.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+MatchCall_Text_Report2::
+	.string "… … … … … … Yes?\n"
+	.string "Ah, {PLAYER}{KUN}.\p"
+	.string "I presume you'd like to hear the\n"
+	.string "areas of interest again, yes?\p"
+	.string "Notable reports have come from:\n"
+	.string "the SCORCHED SLAB, MT. PYRE,\l"
+	.string "FIERY PATH, METEOR FALLS,\l"
+	.string "SKY PILLAR, and CAVE OF ORIGIN.\p"
+	.string "There's also reports of a very\n"
+	.string "rare POKéMON in PETALBURG WOODS.\p"
+	.string "Feel free to call me again\n"
+	.string "if you require another reminder.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+MatchCall_Text_Emo1::
+	.string "… … … … … …\n"
+	.string "{PLAYER}.\p"
+	.string "I'm training right now.\n"
+	.string "Next time, I won't lose.\p"
+	.string "The abyss… It calls…\n"
+	.string "… See ya.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+MatchCall_Text_Emo2::
+	.string "… … … … … …\n"
+	.string "{PLAYER}.\l"
+	.string "I'm heading to MT. PYRE.\p"
+	.string "I heard there's a mage\n"
+	.string "there with true power…\p"
+	.string "Well, I'll see if his\n"
+	.string "power is real or not…\l"
+	.string "… See ya.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+MatchCall_Text_Emo3::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "It looks like nobody's\n"
+	.string "answering right now.$"
+
+MatchCall_Text_James1::
+	.string "Hello? {PLAYER}?\n"
+	.string "What's up?\l"
+	.string "I'm still in RUSTBORO.\p"
+	.string "I'll be heading to LILYCOVE\n"
+	.string "soon to meet with JIMMY.\p"
+	.string "Apparently he has a job\n"
+	.string "for me to do.\l"
+	.string "I'm kind of nervous.\p"
+	.string "Well, I got to go.\n"
+	.string "See ya, {PLAYER}.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+MatchCall_Text_James2::
+	.string "Sorry, {PLAYER}!\p"
+	.string "I'm busy at my new job\n"
+	.string "right now. I can't talk!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+MatchCall_Text_James3::
+	.string "Hello? {PLAYER}?\n"
+	.string "What's up?\l"
+	.string "… … … … … …\p"
+	.string "Nah, there's no updates\n"
+	.string "on the ULTRA SPACE yet.\p"
+	.string "The PROF. is still locked\n"
+	.string "in on his research, but\l"
+	.string "he might have something soon.\p"
+	.string "I'll give you a call\n"
+	.string "if anything changes.\l"
+	.string "See ya, {PLAYER}.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"

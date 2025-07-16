@@ -1596,6 +1596,9 @@ script PetalburgGym_EventScript_Lopunny{
 script PetalburgCity_Gym_EventScript_GiveSwordsDance{
 	giveitem(ITEM_TM_SWORDS_DANCE)
 	msgbox(PetalburgCity_Gym_Text_ExplainSwordsDance, MSGBOX_DEFAULT)
+	waitmessage
+	clearflag(FLAG_ENABLE_NORMAN_MATCH_CALL)
+	setflag(FLAG_REGISTERED_LUNA_POKENAV) // changes match call to reflect updated sprite.
 	return
 }
 

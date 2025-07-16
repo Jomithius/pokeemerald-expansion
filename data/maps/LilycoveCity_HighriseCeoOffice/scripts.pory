@@ -20,8 +20,14 @@ script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
     waitmessage
     applymovement(5, Common_Movement_WalkDown)
     waitmovement(5)
-    msgbox(LilycoveCity_HighriseFloor2_Text_Scientist, MSGBOX_AUTOCLOSE)
+    msgbox(LilycoveCity_HighriseFloor2_Text_Scientist, MSGBOX_DEFAULT)
     waitmessage
+    delay(30)
+    playfanfare(MUS_REGISTER_MATCH_CALL)
+    msgbox("Registered REPORT GUY in the POKéNAV.", MSGBOX_AUTOCLOSE)
+    waitfanfare
+    waitmessage
+    setflag(FLAG_ENABLE_REPORT_MATCH_CALL)
     applymovement(5, LilycoveCity_HighriseFloor2_Movement_Scientist)
     waitmovement(5)
     msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy2, MSGBOX_YESNO)
@@ -67,6 +73,7 @@ script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
     setvar(VAR_CEO_STATE, 2)
     setflag(FLAG_CALL_FROM_CEO)
     setflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
     call(LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags)
     warp(MAP_LILYCOVE_CITY, 51, 7)
     waitstate
@@ -182,7 +189,9 @@ text LilycoveCity_HighriseFloor2_Text_Scientist{
     Notable reports have come from: the\n
     SCORCHED SLAB, MT. PYRE, FIERY PATH,\l
     METEOR FALLS, ROUTE 123, NEW MAUVILLE,\l
-    SKY PILLAR, and the CAVE OF ORIGIN."
+    SKY PILLAR, and the CAVE OF ORIGIN.\p
+    Please register me in your POKéNAV\n
+    so I can give you future updates."
 }
 
 text LilycoveCity_HighriseFloor2_Text_Jimmy2{
