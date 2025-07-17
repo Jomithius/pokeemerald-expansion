@@ -2099,3 +2099,18 @@ const u32 gItemIconPalette_SwapSnack[] = INCBIN_U32("graphics/items/icon_palette
 
 const u32 gItemIcon_TwiceSpicedRadish[] = INCBIN_U32("graphics/items/icons/twice_spiced_radish.4bpp.lz");
 const u32 gItemIconPalette_TwiceSpicedRadish[] = INCBIN_U32("graphics/items/icon_palettes/twice_spiced_radish.gbapal.lz");
+
+const u32 gItemIcon_Fantasia[] = INCBIN_U32("graphics/items/icons/fantasia.4bpp.lz");
+const u32 gItemIconPalette_Fantasia[] = INCBIN_U32("graphics/items/icon_palettes/fantasia.gbapal.lz");
+
+const u32 gItemIcon_SacredBlade[] = INCBIN_U32("graphics/items/icons/sacred_blade.4bpp.lz");
+const u32 gItemIconPalette_SacredBlade[] = INCBIN_U32("graphics/items/icon_palettes/sacred_blade.gbapal.lz");
+
+const u32 gItemIcon_Luxrite[] = INCBIN_U32("graphics/items/icons/luxrite.4bpp.lz");
+const u32 gItemIconPalette_Luxrite[] = INCBIN_U32("graphics/items/icon_palettes/luxrite.gbapal.lz");
+
+const u32 gItemIcon_Roserite[] = INCBIN_U32("graphics/items/icons/roserite.4bpp.lz");
+const u32 gItemIconPalette_Roserite[] = INCBIN_U32("graphics/items/icon_palettes/roserite.gbapal.lz");
+
+const u32 gItemIcon_Pooblite[] = INCBIN_U32("graphics/items/icons/pooblite.4bpp.lz");
+const u32 gItemIconPalette_Pooblite[] = INCBIN_U32("graphics/items/icon_palettes/pooblite.gbapal.lz");

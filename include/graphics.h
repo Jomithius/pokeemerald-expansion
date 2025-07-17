@@ -983,6 +983,14 @@ extern const u32 gItemIcon_Audinite[];
 extern const u32 gItemIconPalette_Audinite[];
 extern const u32 gItemIcon_Diancite[];
 extern const u32 gItemIconPalette_Diancite[];
+extern const u32 gItemIcon_Luxrite[];
+extern const u32 gItemIconPalette_Luxrite[];
+extern const u32 gItemIcon_Roserite[];
+extern const u32 gItemIconPalette_Roserite[];
+extern const u32 gItemIcon_Pooblite[];
+extern const u32 gItemIconPalette_Pooblite[];
+extern const u32 gItemIcon_SacredBlade[];
+extern const u32 gItemIconPalette_SacredBlade[];
 // Gems
 extern const u32 gItemIcon_NormalGem[];
 extern const u32 gItemIconPalette_NormalGem[];
@@ -1574,6 +1582,8 @@ extern const u32 gItemIcon_FameChecker[];
 extern const u32 gItemIconPalette_FameChecker[];
 extern const u32 gItemIcon_TeachyTV[];
 extern const u32 gItemIconPalette_TeachyTV[];
+extern const u32 gItemIcon_Fantasia[];
+extern const u32 gItemIconPalette_Fantasia[];
 // Story Key Items
 extern const u32 gItemIcon_SSTicket[];
 extern const u32 gItemIconPalette_SSTicket[];

@@ -5,7 +5,7 @@ script WachunpelonCity_SmallHouse1_EventScript_Gentleman{
         irrigation system.\p
         The water that you see flowing through\n
         the houses starts from the roof, and\l
-        ends up in the sewer system.\p
+        ends up in the sewers.\p
         It's engineering genius!", MSGBOX_NPC)
     end
 }

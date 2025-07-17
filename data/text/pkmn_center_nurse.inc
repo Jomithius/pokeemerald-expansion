@@ -49,3 +49,4 @@ gText_ThankYouForWaiting::
 
 gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
+

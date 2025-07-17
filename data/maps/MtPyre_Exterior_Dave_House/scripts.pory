@@ -1,43 +1,96 @@
 mapscripts MtPyre_Exterior_Dave_House_MapScripts {}
 
-
 script MtPyre_Exterior_Dave_House_EventScript_Gengar{
     lock
-    applymovement(3, Common_Movement_FacePlayer)
-    waitmovement(3)
+    faceplayer
     playmoncry(SPECIES_GENGAR, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     release
     end
 }
 
 script MtPyre_Exterior_Dave_House_EventScript_Mimikyu{
     lock
-    applymovement(4, Common_Movement_FacePlayer)
-    waitmovement(4)
+    faceplayer
     playmoncry(SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     release
     end
 }
 
 script MtPyre_Exterior_Dave_House_EventScript_Banette{
     lock
-    applymovement(2, Common_Movement_FacePlayer)
-    waitmovement(2)
+    faceplayer
     playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     release
     end
 }
 
 script MtPyre_Exterior_Dave_House_EventScript_Litwick{
     lock
-    applymovement(2, Common_Movement_FacePlayer)
-    waitmovement(2)
+    faceplayer
     playmoncry(SPECIES_LITWICK, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     release
     end
 }
 
+script MtPyre_Exterior_Dave_House_EventScript_Dave{
+    lock
+    faceplayer
+    goto_if_unset(FLAG_RECEIVED_FANTASIA, MtPyre_Exterior_Dave_House_EventScript_GiveFantasia)
+    msgbox("If we have to battle in the future, do\n
+        me a favor and lose, okay?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script MtPyre_Exterior_Dave_House_EventScript_GiveFantasia{
+    lock
+    bufferleadmonspeciesname(STR_VAR_1)
+    msgbox(MtPyre_Exterior_Dave_House_Text_Fantasia, MSGBOX_DEFAULT)
+    waitmessage
+    giveitem(ITEM_FANTASIA)
+    waitmessage
+    msgbox(MtPyre_Exterior_Dave_House_Text_WarnFantasia, MSGBOX_AUTOCLOSE)
+    waitmessage
+    setflag(FLAG_RECEIVED_FANTASIA)
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+
+}
+
+text MtPyre_Exterior_Dave_House_Text_Fantasia{
+    "Oh yes, hello.\n
+    Who are you?\l
+    … … … …\p
+    Oh. Nice to meet you, {PLAYER}.\n
+    I'm DAVE, a member of the ELITE FOUR.\l
+    So? Why'd you come all the way out here?\p
+    … … … …\p
+    Oh, I see.\p
+    Well, I can tell you're a good TRAINER.\n
+    Your {STR_VAR_1} looks strong.\p
+    Usually I sell these, but I'll give you\n
+    one for free.\p
+    There's a guy that recently bought out\n
+    almost all my stock, so I'm feeling\l
+    generous today."
+}
+
+text MtPyre_Exterior_Dave_House_Text_WarnFantasia{
+    "{COLOR RED}{SHADOW LIGHT_RED} WARNING\p
+    {COLOR BLUE}{SHADOW LIGHT_BLUE} It's very unlikely any problems will\n
+    occur with using the FANTASIA, but it's\l
+    still possible.\p
+    If you want to be safe, wait until after\n
+    defeating the ELITE FOUR to use it.\p
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}If we have to battle in the future, do\n
+    me a favor and lose, okay?"
+}

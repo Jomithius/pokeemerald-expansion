@@ -265,12 +265,13 @@
 #define OBJ_EVENT_GFX_NINJA                      261
 #define OBJ_EVENT_GFX_BRUNO                      262
 #define OBJ_EVENT_GFX_PROFESSOR                  263
+#define OBJ_EVENT_GFX_CYNTHIA                    264
 
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        264
+#define NUM_OBJ_EVENT_GFX                        265
 
 
 // These are dynamic object gfx ids.
@@ -480,6 +481,7 @@
 #define OBJ_EVENT_PAL_TAG_NINJA                   0x1171
 #define OBJ_EVENT_PAL_TAG_BRUNO                   0x1172
 #define OBJ_EVENT_PAL_TAG_PROFESSOR               0x1173
+#define OBJ_EVENT_PAL_TAG_CYNTHIA                 0x1174
 
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002

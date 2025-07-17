@@ -1745,14 +1745,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 753
-    [DIFFICULTY_NORMAL][TRAINER_ROSE_2] =
+    [DIFFICULTY_NORMAL][TRAINER_CYNTHIA] =
     {
 #line 754
-        .trainerName = _("ROSE"),
+        .trainerName = _("CYNTHIA"),
 #line 755
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .trainerClass = TRAINER_CLASS_CHAMPION,
 #line 756
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_CYNTHIA,
         .encounterMusic_gender =
 #line 757
 F_TRAINER_FEMALE | 
@@ -1761,7 +1761,7 @@ F_TRAINER_FEMALE |
 #line 759
         .doubleBattle = FALSE,
 #line 760
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_SMART_TRAINER,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {

@@ -125,7 +125,7 @@
       "y": 1,
       "elevation": 3,
       "dest_map": "MAP_MT_PYRE_1F",
-      "dest_warp_id": "4"
+      "dest_warp_id": "2"
     },
     {
       "x": 10,
@@ -153,7 +153,7 @@
       "y": 9,
       "elevation": 3,
       "dest_map": "MAP_MT_PYRE_1F",
-      "dest_warp_id": "5"
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

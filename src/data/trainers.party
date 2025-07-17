@@ -750,14 +750,14 @@ Gloom
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROSE_2 === /* FREE */
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+=== TRAINER_CYNTHIA ===
+Name: CYNTHIA
+Class: Champion
+Pic: Cynthia
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Shroomish
 Level: 26

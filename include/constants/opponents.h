@@ -43,7 +43,7 @@
 #define TRAINER_ROSE_1                       37
 #define TRAINER_FELIX                        38
 #define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40 // free
+#define TRAINER_CYNTHIA                      40 
 #define TRAINER_ROSE_3                       41 // free
 #define TRAINER_ROSE_4                       42 // free
 #define TRAINER_ROSE_5                       43 // free

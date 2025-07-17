@@ -7,8 +7,10 @@ script SnowdriftCity_EventScript_Hiker{
 }
 
 script SnowdriftCity_EventScript_Man_4{
-    msgbox("Wow.\n
-        It's warmer than I thought up here.", MSGBOX_NPC)
+    msgbox("There's a legend that a POKéMON\n
+        living deep in the mountain is\l
+        the source of the geothermal energy.\p
+        I wonder if that's really true.", MSGBOX_NPC)
     end
 }
 

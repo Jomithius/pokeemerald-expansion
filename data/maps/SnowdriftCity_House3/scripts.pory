@@ -1,16 +1,2 @@
 mapscripts SnowdriftCity_House3_MapScripts {}
 
-script SnowdriftCity_House3_EventScript_Man{
-    msgbox("We've lived here all our lives.\p
-        We do occasionally take a hike down\n
-        the mountain though.", MSGBOX_NPC)
-    end
-}
-
-script SnowdriftCity_House3_EventScript_Woman{
-    msgbox("There's a legend that a POKéMON\n
-        living deep in the mountain is\l
-        the source of the geothermal energy.\p
-        I wonder if that's really true.", MSGBOX_NPC)
-    end
-}

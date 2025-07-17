@@ -14141,4 +14141,88 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_FANTASIA] =
+    {
+        .name = _("Fantasia"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A strange potion\n"
+            "that can change\n"
+            "your appearance."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Fantasia,
+        .iconPic = gItemIcon_Fantasia,
+        .iconPalette = gItemIconPalette_Fantasia,
+    },
+
+    [ITEM_SACRED_BLADE] =
+    {
+        .name = _("Sacred Blade"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "A knightly blade\n"
+            "that allows Totodile\n"
+            "to Mega Evolve."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_SacredBlade,
+        .iconPalette = gItemIconPalette_SacredBlade,
+    },
+
+    [ITEM_LUXRITE] =
+    {
+        .name = _("Luxrite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Luxray to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Luxrite,
+        .iconPalette = gItemIconPalette_Luxrite,
+    },
+
+    [ITEM_ROSERITE] =
+    {
+        .name = _("Roserite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Roserade to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Roserite,
+        .iconPalette = gItemIconPalette_Roserite,
+    },
+
+    [ITEM_POOBLITE] =
+    {
+        .name = _("Pooblite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Poobles to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Pooblite,
+        .iconPalette = gItemIconPalette_Pooblite,
+    },
 };

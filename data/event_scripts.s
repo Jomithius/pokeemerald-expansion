@@ -1099,6 +1099,15 @@ EventScript_VsSeekerChargingDone::
 	releaseall
 	end
 
+EventScript_Fantasia::
+	msgbox gText_YouDrankTheFantasia, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+gText_YouDrankTheFantasia::
+	.string "You drank the FANTASIA.$"
+
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
 	.include "data/scripts/abnormal_weather.inc"

@@ -1608,4 +1608,31 @@ void ItemUseOutOfBattle_TownMap(u8 taskId)
     }
 }
 
+static void ItemUseCB_Fantasia(u8 taskId)
+{
+    LockPlayerFieldControls();
+    if (gSaveBlock2Ptr->playerGender == MALE)
+        gSaveBlock2Ptr->playerGender = FEMALE;
+    else
+        gSaveBlock2Ptr->playerGender = MALE;
+    ScriptContext_SetupScript(EventScript_Fantasia);
+    DestroyTask(taskId);
+}
+
+void ItemUseOutOfBattle_Fantasia(u8 taskId)
+{
+    if (!gTasks[taskId].tUsingRegisteredKeyItem)
+    {
+        sItemUseOnFieldCB = ItemUseCB_Fantasia;
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
+    }
+    else
+    {
+        // TODO: handle key items with callbacks to menus allow to be used by registering them.
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+    }
+}
+
 #undef tUsingRegisteredKeyItem
