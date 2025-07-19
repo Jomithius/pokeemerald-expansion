@@ -475,6 +475,7 @@ gCryTable::
 .endif @ P_FAMILY_CYNDAQUIL
 .if P_FAMILY_TOTODILE == TRUE
 	cry Cry_Totodile
+	cry Cry_Totoknight
 	cry Cry_Croconaw
 	cry Cry_Feraligatr
 .endif @ P_FAMILY_TOTODILE
@@ -2424,6 +2425,7 @@ gCryTable::
 .if P_FAMILY_PECHARUNT == TRUE
 	cry Cry_Pecharunt
 .endif @ P_FAMILY_PECHARUNT
+	cry Cry_Avatar
 .endif @ P_CRIES_ENABLED
 
 	.align 2
@@ -2903,6 +2905,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CYNDAQUIL
 .if P_FAMILY_TOTODILE == TRUE
 	cry_reverse Cry_Totodile
+	cry_reverse Cry_Totoknight
 	cry_reverse Cry_Croconaw
 	cry_reverse Cry_Feraligatr
 .endif @ P_FAMILY_TOTODILE
@@ -4852,4 +4855,5 @@ gCryTable_Reverse::
 .if P_FAMILY_PECHARUNT == TRUE
 	cry_reverse Cry_Pecharunt
 .endif @ P_FAMILY_PECHARUNT
+	cry_reverse Cry_Avatar
 .endif @ P_CRIES_ENABLED

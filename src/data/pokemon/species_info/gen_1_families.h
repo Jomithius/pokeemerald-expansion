@@ -6631,8 +6631,79 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sDiglettAlolaTeachableLearnset,
         .eggMoveLearnset = sDiglettAlolaEggMoveLearnset,
         .formSpeciesIdTable = sDiglettFormSpeciesIdTable,
+        .formChangeTable = sDiglettAlolaFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO_ALOLA}),
     },
+
+    #if P_MEGA_EVOLUTIONS
+    [SPECIES_POOBLES_MEGA] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 100,
+        .baseDefense   = 100,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 53 : 81,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_STEELY_SPIRIT, ABILITY_STEELY_SPIRIT, ABILITY_STEELY_SPIRIT },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Diglett"),
+        .cryId = CRY_DIGLETT,
+        .natDexNum = NATIONAL_DEX_DIGLETT,
+        .categoryName = _("Mole"),
+        .height = 2,
+        .weight = 10,
+        .description = COMPOUND_STRING(
+            "Liam's Alolan Diglett, Poobles, trained\n"
+            "so much that its steel whiskers on its\n"
+            "head that changed shape to represent this\n"
+            "newfound power."),
+        .pokemonScale = 833,
+        .pokemonOffset = 25,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Poobles,
+        .frontPicSize = MON_COORDS_SIZE(32, 40),
+        .frontPicYOffset = 19,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicSize = MON_COORDS_SIZE(40, 40),
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Poobles,
+        .shinyPalette = gMonShinyPalette_Poobles,
+        .iconSprite = gMonIcon_DiglettAlola,
+        .iconPalIndex = 2,
+        NO_SHADOW
+        FOOTPRINT(Diglett)
+    #if OW_BATTLE_ONLY_FORMS
+        OVERWORLD(
+            sPicTable_DiglettAlola,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_DiglettAlola,
+            gShinyOverworldPalette_DiglettAlola
+        )
+    #endif //OW_BATTLE_ONLY_FORMS
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sDiglettAlolaLevelUpLearnset,
+        .teachableLearnset = sDiglettAlolaTeachableLearnset,
+        .eggMoveLearnset = sDiglettAlolaEggMoveLearnset,
+        .formSpeciesIdTable = sDiglettFormSpeciesIdTable,
+        .formChangeTable = sDiglettAlolaFormChangeTable,
+    },
+    #endif //P_MEGA_EVOLUTIONS
 
     [SPECIES_DUGTRIO_ALOLA] =
     {

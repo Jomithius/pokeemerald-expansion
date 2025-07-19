@@ -360,7 +360,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUI}),
+                                {EVO_MOVE, MOVE_INFERNAL_PARADE, SPECIES_TYPHLOSION_HISUI}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -576,6 +576,147 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggMoveLearnset = sTotodileEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_CROCONAW}),
     },
+
+    [SPECIES_TOTODILE_PARTNER] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 90,
+        .baseDefense   = 95,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 63 : 66,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_STRONG_JAW, ABILITY_NONE, ABILITY_TORRENT },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Totodile"),
+        .cryId = CRY_TOTODILE,
+        .natDexNum = NATIONAL_DEX_TOTODILE,
+        .categoryName = _("Big Jaw"),
+        .height = 6,
+        .weight = 95,
+        .description = COMPOUND_STRING(
+            "Stronger than most Totodile, this special\n"
+            "Pokémon is very powerful. A strange genetic\n"
+            "defect stops this Totodile from being able to\n"
+            "evolve."),
+        .pokemonScale = 487,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_TotodilePartner,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+        ),
+        .frontAnimId = ANIM_H_JUMPS,
+        .backPic = gMonBackPic_TotodilePartner,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_TotodilePartner,
+        .shinyPalette = gMonShinyPalette_TotodilePartner,
+        .iconSprite = gMonIcon_Totodile,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        SHADOW(2, 0, SHADOW_SIZE_S)
+        FOOTPRINT(Totodile)
+        OVERWORLD(
+            sPicTable_Totodile,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Totodile,
+            gShinyOverworldPalette_Totodile
+        )
+        .levelUpLearnset = sTotodilePartnerLevelUpLearnset,
+        .teachableLearnset = sTotodileTeachableLearnset,
+        .eggMoveLearnset = sTotodileEggMoveLearnset,
+        .formSpeciesIdTable = sTotodileFormSpeciesIdTable,
+        .formChangeTable = sTotodileFormChangeTable,
+    },
+
+    #if P_MEGA_EVOLUTIONS
+    [SPECIES_TOTOKNIGHT] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 105,
+        .baseDefense   = 100,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 110,
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 63 : 66,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_SHARPNESS, ABILITY_SHARPNESS, ABILITY_SHARPNESS },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Totodile"),
+        .cryId = CRY_TOTOKNIGHT,
+        .natDexNum = NATIONAL_DEX_TOTODILE,
+        .categoryName = _("Big Jaw"),
+        .height = 6,
+        .weight = 95,
+        .description = COMPOUND_STRING(
+            "A special Totodile that has learned the way\n"
+            "of the sacred blade.\n"
+            "This Pokémon has attained true Knighthood, and\n"
+            "will cut down any foes in it's path."),
+        .pokemonScale = 487,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 6,
+        .frontPic = gMonFrontPic_Totoknight,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Totoknight,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_Totoknight,
+        .shinyPalette = gMonShinyPalette_Totoknight,
+        .iconSprite = gMonIcon_Totoknight,
+        .iconPalIndex = 2,
+        SHADOW(-6, 8, SHADOW_SIZE_M)
+        FOOTPRINT(Totodile)
+    #if OW_BATTLE_ONLY_FORMS
+        OVERWORLD(
+            sPicTable_Totodile,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Totodile,
+            gShinyOverworldPalette_Totodile
+        )
+    #endif //OW_BATTLE_ONLY_FORMS
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sTotodilePartnerLevelUpLearnset,
+        .teachableLearnset = sTotodileTeachableLearnset,
+        .formSpeciesIdTable = sTotodileFormSpeciesIdTable,
+        .formChangeTable = sTotodileFormChangeTable,
+    },
+    #endif //P_MEGA_EVOLUTIONS
 
     [SPECIES_CROCONAW] =
     {

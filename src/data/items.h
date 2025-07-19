@@ -14164,9 +14164,9 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "A knightly blade\n"
-            "that allows Totodile\n"
-            "to Mega Evolve."),
+            "A blade that lets\n"
+            "certain Totodiles\n"
+            "attain Knighthood."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

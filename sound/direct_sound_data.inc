@@ -1508,6 +1508,10 @@ Cry_Totodile::
 	.incbin "sound/direct_sound_samples/cries/totodile.bin"
 
 	.align 2
+Cry_Totoknight::
+	.incbin "sound/direct_sound_samples/cries/totoknight.bin"
+
+	.align 2
 Cry_Croconaw::
 	.incbin "sound/direct_sound_samples/cries/croconaw.bin"
 
@@ -6162,6 +6166,10 @@ Cry_Terapagos::
 Cry_Pecharunt::
 	.incbin "sound/direct_sound_samples/cries/pecharunt.bin"
 .endif @ P_FAMILY_PECHARUNT
+
+	.align 2
+Cry_Avatar::
+	.incbin "sound/direct_sound_samples/cries/avatar.bin"
 .endif @ P_CRIES_ENABLED
 
 	.align 2

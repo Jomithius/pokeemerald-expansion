@@ -2869,6 +2869,7 @@ BattleScript_MoveMissed::
 BattleScript_EffectDarkVoid::
 .if B_DARK_VOID_FAIL >= GEN_7
 	jumpifspecies BS_ATTACKER, SPECIES_DARKRAI, BattleScript_EffectSleep
+	jumpifspecies BS_ATTACKER, SPECIES_AVATAR, BattleScript_EffectSleep
 	goto BattleScript_PokemonCantUseTheMove
 .endif
 BattleScript_EffectSleep::
@@ -6870,6 +6871,7 @@ BattleScript_FocusPunchSetUp::
 	end3
 
 BattleScript_MegaEvolution::
+	jumpifspecies BS_ATTACKER, SPECIES_TOTODILE_PARTNER, BattleScript_MegaEvolutionTotodile
 	flushtextbox
 	trytrainerslidemegaevolutionmsg
 	printstring STRINGID_MEGAEVOREACTING
@@ -6880,6 +6882,21 @@ BattleScript_MegaEvolutionAfterString:
 	waitanimation
 	handlemegaevo BS_SCRIPTING, 1
 	printstring STRINGID_MEGAEVOEVOLVED
+	waitmessage B_WAIT_TIME_LONG
+	switchinabilities BS_SCRIPTING
+	end3
+
+BattleScript_MegaEvolutionTotodile::
+	flushtextbox
+	trytrainerslidemegaevolutionmsg
+	printstring STRINGID_MEGAEVOREACTINGTOTODILE
+BattleScript_MegaEvolutionTotodileAfterString:
+	waitmessage B_WAIT_TIME_LONG
+	handlemegaevo BS_SCRIPTING, 0
+	playanimation BS_SCRIPTING, B_ANIM_MEGA_EVOLUTION
+	waitanimation
+	handlemegaevo BS_SCRIPTING, 1
+	printstring STRINGID_MEGAEVOEVOLVEDTOTODILE
 	waitmessage B_WAIT_TIME_LONG
 	switchinabilities BS_SCRIPTING
 	end3

@@ -8093,6 +8093,71 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     },
 #endif //P_FAMILY_PECHARUNT
 
+[SPECIES_AVATAR] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 85,
+        .baseDefense   = 80,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 110,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
+        .catchRate = 3,
+        .expYield = 300,
+        .evYield_SpAttack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_DARK_AURA, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Avatar"),
+        .cryId = CRY_AVATAR,
+        .natDexNum = NATIONAL_DEX_AVATAR,
+        .categoryName = _("Voidsent"),
+        .height = 3,
+        .weight = 3,
+        .description = COMPOUND_STRING(
+            "A mysterious entity that has never\n"
+            "been seen before in the world.\n"
+            "The only known owner of such a “POKéMON”\n"
+            "is the CEO of HOENN's POKéMON LEAGUE."),
+        .pokemonScale = 356,
+        .pokemonOffset = 0,
+        .trainerScale = 365,
+        .trainerOffset = 7,
+        .frontPic = gMonFrontPic_Avatar,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SLIDE_SLOW,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicSize = MON_COORDS_SIZE(40, 40),
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Avatar,
+        .shinyPalette = gMonShinyPalette_Avatar,
+        .iconSprite = gMonIcon_Darkrai,
+        .iconPalIndex = 0,
+        SHADOW(2, 8, SHADOW_SIZE_S)
+        FOOTPRINT(Darkrai)
+        OVERWORLD(
+            sPicTable_Darkrai,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Darkrai,
+            gShinyOverworldPalette_Darkrai
+        )
+        .isMythical = TRUE,
+        .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sDarkraiLevelUpLearnset,
+        .teachableLearnset = sDarkraiTeachableLearnset,
+    },
+
 #ifdef __INTELLISENSE__
 };
 #endif

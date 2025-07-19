@@ -174,6 +174,9 @@ static const u16 sDiglettFormSpeciesIdTable[] = {
 #if P_ALOLAN_FORMS
     SPECIES_DIGLETT_ALOLA,
 #endif
+#if P_MEGA_EVOLUTIONS
+    SPECIES_POOBLES_MEGA,
+#endif
     FORM_SPECIES_END,
 };
 
@@ -2195,3 +2198,30 @@ static const u16 sTerapagosFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TERAPAGOS
+
+#if P_FAMILY_TOTODILE
+static const u16 sTotodileFormSpeciesIdTable[] = {
+    SPECIES_TOTODILE,
+    SPECIES_TOTODILE_PARTNER,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_TOTOKNIGHT,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_GEN_2_CROSS_EVOS
+
+static const u16 sLuxrayFormSpeciesIdTable[] = {
+    SPECIES_LUXRAY,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_LUXRAY_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+
+static const u16 sRoseradeFormSpeciesIdTable[] = {
+    SPECIES_ROSERADE,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_ROSERADE_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
