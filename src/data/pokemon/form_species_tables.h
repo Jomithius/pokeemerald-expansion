@@ -82,7 +82,10 @@ static const u16 sRaticateFormSpeciesIdTable[] = {
 #if P_ALOLAN_FORMS
     SPECIES_RATICATE_ALOLA,
     SPECIES_RATICATE_ALOLA_TOTEM,
-#endif
+#endif // P_ALOLAN_FORMS
+#if P_MEGA_EVOLUTIONS
+    SPECIES_RATICATE_MEGA,
+#endif // P_MEGA_EVOLUTIONS
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_RATTATA
@@ -589,6 +592,10 @@ static const u16 sTyphlosionFormSpeciesIdTable[] = {
     SPECIES_TYPHLOSION,
 #if P_HISUIAN_FORMS
     SPECIES_TYPHLOSION_HISUI,
+#endif
+#if P_MEGA_EVOLUTIONS
+    SPECIES_TYPHLOSION_MEGA,
+    SPECIES_TYPHLOSION_HISUI_MEGA,
 #endif
     FORM_SPECIES_END,
 };
@@ -2208,6 +2215,13 @@ static const u16 sTotodileFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
+static const u16 sFeraligatrFormSpeciesIdTable[] = {
+    SPECIES_FERALIGATR,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_FERALIGATR_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
 #endif //P_GEN_2_CROSS_EVOS
 
 static const u16 sLuxrayFormSpeciesIdTable[] = {
@@ -2222,6 +2236,14 @@ static const u16 sRoseradeFormSpeciesIdTable[] = {
     SPECIES_ROSERADE,
 #if P_MEGA_EVOLUTIONS
     SPECIES_ROSERADE_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+
+static const u16 sMeganiumFormSpeciesIdTable[] = {
+    SPECIES_MEGANIUM,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_MEGANIUM_MEGA,
 #endif
     FORM_SPECIES_END,
 };

@@ -1,2 +1,161 @@
-mapscripts SnowdriftCity_House3_MapScripts {}
+mapscripts SnowdriftCity_House3_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: SnowdriftCity_House3_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_CYNTHIA_STATE, 0: SnowdriftCity_House3_EventScript_CynthiaEncounter
+        VAR_CYNTHIA_STATE, 1: SnowdriftCity_House3_EventScript_CynthiaReencounter
+    ]
+}
 
+script SnowdriftCity_House3_OnTransition{
+    setflag(FLAG_TEMP_E)
+    call_if_not_defeated(TRAINER_CYNTHIA, SnowdriftCity_House3_UpdateMusic)
+    end
+}
+
+script SnowdriftCity_House3_UpdateMusic{
+    playbgm(MUS_ENCOUNTER_CYNTHIA, TRUE)
+    return
+}
+
+script SnowdriftCity_House3_EventScript_CynthiaEncounter{
+    lockall
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(1)
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(1)
+    msgbox("???: What's this?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, SnowdriftCity_House3_Movement_CynthiaApproachesPlayer)
+    waitmovement(1)
+    msgbox("What's your name?\p
+        …\p
+        Okay. I'll remember that!\n
+        {PLAYER}, nice to meet you.\p
+        I'm CYNTHIA.\n
+        I'm a POKéMON TRAINER too, like you.\p
+        I have an insatiable curiosity for\n
+        researching POKéMON myths.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_WalkInPlaceRight)
+    waitmovement(1)
+    msgbox("I'm sure you know about HOENN's\n
+        SEALED CHAMBERS, right?\p
+        I'm staying here at my friend's villa\n
+        so I can investigate them.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_WalkInPlaceDown)
+    waitmovement(1)
+    msgbox("In order to get to know each other\n
+        better as POKéMON TRAINERS, I would\l
+        like our POKéMON to have a match.\p
+        Would you care to be my opponent?", MSGBOX_DEFAULT)
+    waitmessage
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "I'd love to.", "OH, GOD. SOMEBODY SAVE ME!")
+    goto_if_eq(VAR_RESULT, 1, SnowdriftCity_House3_EventScript_PlayerFlees)
+    goto(SnowdriftCity_House3_EventScript_CynthiaBattle)
+    end
+}
+
+script SnowdriftCity_House3_EventScript_CynthiaReencounter{
+    lockall
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(1)
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(1)
+    msgbox("CYNTHIA: What's this?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, SnowdriftCity_House3_Movement_CynthiaApproachesPlayer)
+    waitmovement(1)
+    msgbox("You came back!\n
+        Did you change your mind?", MSGBOX_DEFAULT)
+    waitmessage
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "… Yeah. Sorry about that.", "NO! I'M STILL SCARED!")
+    goto_if_eq(VAR_RESULT, 1, SnowdriftCity_House3_EventScript_PlayerFlees)
+    goto(SnowdriftCity_House3_EventScript_CynthiaBattle)
+    end
+}
+
+script SnowdriftCity_House3_EventScript_PlayerFlees{
+    lockall
+    closemessage
+    setvar(VAR_CYNTHIA_STATE, 1)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+    setflag(FLAG_REMOVE_WARP_FADE)
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_FLEE)
+    waitse
+    warpsilent(MAP_SNOWDRIFT_CITY, 34, 28)
+    waitstate
+    releaseall
+    end
+}
+
+script SnowdriftCity_House3_EventScript_CynthiaBattle{
+    lockall
+    applymovement(1, Common_Movement_WalkDown)
+    waitmovement(1)
+    msgbox("Before I send out my POKéMON,\n
+        my heart always begins to race…\p
+        Interesting…\n
+        My POKéMON in their POKé BALLS are\l
+        radiating a happy feeling.\p
+        Are you the reason?\n
+        What are you?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_CYNTHIA, SnowdriftCity_House3_Text_CynthiaLoss)
+    msgbox("That was beyond my expectation!\n
+        What an exceptional battle!\l
+        I love being visiting HOENN.\p
+        I can't stay all year, because there's so\n
+        much to investigate in SINNOH, as well.\p
+        You're a great TRAINER, and it would\n
+        make me happy to see you again sometime.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, SnowdriftCity_House3_Movement_CynthiaReturnsToSeat)
+    waitmovement(1)
+    setvar(VAR_CYNTHIA_STATE, 2)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+script SnowdriftCity_House3_EventScript_Cynthia{
+    lock
+    faceplayer
+    msgbox("You certainly bear a resemblance\n
+        to that TRAINER who faced GIRATINA…\p
+        Oh, pardon me.\n
+        I was just thinking out loud.\p
+        I love visiting HOENN.\p
+        I can't stay all year, because there's so\n
+        much to investigate in SINNOH, as well.\p
+        Though I've heard in HOENN there's six\n
+        legendary golems, compared to the four\l
+        in SINNOH…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+text SnowdriftCity_House3_Text_CynthiaLoss{
+    "My heart is pounding so hard because I\n
+    had such a heated battle with you.\p
+    You're a really great TRAINER!!"
+}
+
+movement SnowdriftCity_House3_Movement_CynthiaReturnsToSeat{
+    walk_up * 2
+    walk_right * 2
+}
+
+movement SnowdriftCity_House3_Movement_CynthiaApproachesPlayer{
+    walk_left * 2
+    walk_down
+}

@@ -1643,8 +1643,13 @@
 #define SPECIES_ROSERADE_MEGA                           1527
 #define SPECIES_POOBLES_MEGA                            1528
 #define SPECIES_AVATAR                                  1529
+#define SPECIES_MEGANIUM_MEGA                           1530
+#define SPECIES_TYPHLOSION_MEGA                         1531
+#define SPECIES_TYPHLOSION_HISUI_MEGA                   1532
+#define SPECIES_FERALIGATR_MEGA                         1533
+#define SPECIES_RATICATE_MEGA                           1534
 
-#define SPECIES_EGG                                     (SPECIES_AVATAR + 1)
+#define SPECIES_EGG                                     (SPECIES_RATICATE_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

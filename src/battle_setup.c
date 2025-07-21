@@ -478,15 +478,17 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_AZELF:
     case SPECIES_GIRATINA:
     case SPECIES_TYPE_NULL:
-        CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_B_FACTORY);
+        CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_VS_LAKE_GUARDIANS);
         break;
     case SPECIES_SOLGALEO:
     case SPECIES_LUNALA:
     case SPECIES_NECROZMA:
-    case SPECIES_ARCEUS:
     case SPECIES_HOOPA:
     case SPECIES_HOOPA_UNBOUND:
         CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_RG_VS_DEOXYS);
+        break;
+    case SPECIES_ARCEUS:
+        CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_VS_ARCEUS);
         break;
     case SPECIES_URSALUNA_BLOODMOON:
     case SPECIES_CHIEN_PAO:    
@@ -502,10 +504,8 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_RAIKOU:
     case SPECIES_SUICUNE:
     case SPECIES_ENTEI:
-    case SPECIES_HEATRAN:
     case SPECIES_ZACIAN:
     case SPECIES_ZAMAZENTA:
-    case SPECIES_MARSHADOW:
     case SPECIES_MAGEARNA:
     case SPECIES_SPECTRIER:
     case SPECIES_GLASTRIER:
@@ -544,7 +544,7 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_FEZANDIPITI:
     case SPECIES_MUNKIDORI:
     case SPECIES_ZARUDE:
-        CreateBattleStartTask(B_TRANSITION_SLICE, MUS_RG_VS_LEGEND);
+        CreateBattleStartTask(B_TRANSITION_SLICE, MUS_VS_LAKE_GUARDIANS);
         break;
     case SPECIES_JIRACHI:
     case SPECIES_TAPU_KOKO:
@@ -558,6 +558,10 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_DARKRAI:
     case SPECIES_CRESSELIA:
         CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_VS_RATDUARDO);
+        break;
+    case SPECIES_HEATRAN:
+    case SPECIES_MARSHADOW:
+        CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_VS_LAKE_GUARDIANS);
         break;
     }
 

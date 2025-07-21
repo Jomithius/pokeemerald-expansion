@@ -5528,15 +5528,22 @@ static void HandleEndTurn_BattleWon(void)
     {
         BattleStopLowHpSound();
         gBattlescriptCurrInstr = BattleScript_LocalTrainerBattleWon;
-
+        
         switch (GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA))
         {
         case TRAINER_CLASS_ELITE_FOUR:
         case TRAINER_CLASS_CHAMPION:
-        case TRAINER_CLASS_CEO:
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleRedName))
-                PlayBGM(MUS_RG_VICTORY_GYM_LEADER);
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleCynthiaName)){
+                PlayBGM(MUS_VICTORY_CYNTHIA);
+                break;
+            }
+            else
+            {
             PlayBGM(MUS_VICTORY_LEAGUE);
+            break;
+            }
+        case TRAINER_CLASS_CEO:
+            PlayBGM(MUS_VICTORY_CYNTHIA);
             break;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:

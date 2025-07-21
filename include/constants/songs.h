@@ -584,9 +584,11 @@
 #define MUS_AREA_ZERO               646
 #define MUS_AREA_ZERO_WILD_BATTLE   647
 #define MUS_LEGENDARY_QUARTET       648
-
-
-
+#define MUS_ENCOUNTER_CYNTHIA       649
+#define MUS_VS_CYNTHIA              650
+#define MUS_VICTORY_CYNTHIA         651
+#define MUS_VS_ARCEUS               652
+#define MUS_VS_LAKE_GUARDIANS       653
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
