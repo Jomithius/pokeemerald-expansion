@@ -726,12 +726,12 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Medicham
+Bronzong
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psychic
 
-Claydol
+Sigilyph
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Skill Swap
@@ -1521,11 +1521,11 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Cacturne
+Heliolisk
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Pelipper
+Noivern
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1539,7 +1539,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Magneton
+Klinklang
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1557,15 +1557,15 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Swellow
+Sylveon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Mawile
+Braviary
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Kadabra
+Golem-Alola
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1579,19 +1579,19 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Dodrio
+Furfrou
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Kadabra
+Aromatisse
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Electrode
+Electrode-Hisui
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Shiftry
+Drampa
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1605,15 +1605,15 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Kecleon
+Orbeetle
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Graveler
+Oranguru
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Wailord
+Wyrdeer
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1715,7 +1715,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Graveler
+Golem
 Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1904,11 +1904,10 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Roselia
+Roserade
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1922,7 +1921,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Claydol
+Cinderace
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1940,11 +1939,11 @@ Torkoal
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Medicham
+Gogoat
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ludicolo
+Galvantula
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1958,11 +1957,11 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Skarmory
+Dracozolt
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Sableye
+Meganium
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1976,15 +1975,15 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Sandslash
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
 Ninetales
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Tropius
+Gothitelle
+Level: 42
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Beheeyem
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2629,7 +2628,7 @@ Whiscash
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Meditite
+Medicham
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -2956,11 +2955,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+Dewott
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wingull
+Prinplup
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2973,7 +2972,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
+Sharpedo
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2999,7 +2998,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Horsea
+Kingdra
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3025,15 +3024,15 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
+Sharpedo
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wingull
+Quagsire
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
+Skrelp
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3059,7 +3058,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Pelipper
+Kingler
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3072,11 +3071,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+Wartortle
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacruel
+Barbaracle
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3145,7 +3144,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Gyarados
+Lumineon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3179,11 +3178,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+Slowbro
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
+Carracosta
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3278,11 +3277,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machop
+Mienfoo
 Level: 32
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Machoke
+Machamp
 Level: 32
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -3295,7 +3294,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Hariyama
+Poliwrath
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -6969,13 +6968,9 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Slaking
+Jumpluff
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Attract
-- Ice Beam
-- Thunderbolt
-- Flamethrower
 
 Dusclops
 Level: 43
@@ -7523,24 +7518,8 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Gyarados
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Gyarados
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Gyarados
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Gyarados
-Level: 30
+Primarina
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Gyarados
@@ -7875,11 +7854,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+Barraskewda
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
+Starmie
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7922,7 +7901,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+Binacle
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7939,11 +7918,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 26
+Araquanid
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
+Wishiwashi
 Level: 34
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -8008,7 +7987,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+Barraskewda
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8021,11 +8000,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+Sealeo
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
+Lumineon
 Level: 34
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 
@@ -8051,7 +8030,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+Shellder
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8064,11 +8043,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 27
+Bruxish
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
+Milotic
 Level: 33
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
@@ -8081,7 +8060,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+Shellder
 Level: 39
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -8094,7 +8073,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+Shellder
 Level: 42
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -8107,7 +8086,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Starmie
+Cloyster
 Level: 45
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -8120,7 +8099,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Starmie
+Cloyster
 Level: 48
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -8137,7 +8116,7 @@ Altaria
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Altaria
+Shelgon
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -8154,7 +8133,7 @@ Altaria
 Level: 41
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Altaria
+Shelgon
 Level: 41
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
@@ -8171,7 +8150,7 @@ Altaria
 Level: 44
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Altaria
+Shelgon
 Level: 44
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -8184,7 +8163,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bagon
+Shelgon
 Level: 46
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -8192,7 +8171,7 @@ Altaria
 Level: 46
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Altaria
+Fraxure
 Level: 46
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -8209,12 +8188,12 @@ Altaria
 Level: 49
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Altaria
-Level: 49
+Haxorus
+Level: 50
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Shelgon @ Dragon Fang
-Level: 49
+Salamence @ Dragon Fang
+Level: 50
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_AARON ===
@@ -8226,7 +8205,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bagon
+Shelgon
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Breath
@@ -8322,11 +8301,11 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Tropius
+Poliwrath
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
+Politoed
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8491,11 +8470,11 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Natu
+Mandibuzz
 Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Swellow
+Toucannon
 Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -8508,7 +8487,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Tropius
+Decidueye
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9220,7 +9199,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Marill
+Mantine
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9233,7 +9212,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Luvdisc
+Alomomola
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9246,7 +9225,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Seaking
+Seadra
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9276,7 +9255,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Goldeen
+Dragalge
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9289,11 +9268,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Goldeen
+Toxapex
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Spheal
+Kingler
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9306,7 +9285,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Luvdisc
+Jellicent
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9332,7 +9311,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Azumarill
+Frogadier
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9349,7 +9328,7 @@ Luvdisc
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Luvdisc
+Alomomola
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9413,7 +9392,7 @@ Luvdisc
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Luvdisc
+Alomomola
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9426,7 +9405,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Seaking
+Gastrodon-East
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9936,7 +9915,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Oricorio-Fire
+Oricorio
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9953,7 +9932,7 @@ Wingull
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
+Machamp
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10050,7 +10029,7 @@ Tentacool
 Level: 36
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Machoke
+Machamp
 Level: 36
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -10092,7 +10071,7 @@ Tentacool
 Level: 42
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Machoke
+Machamp
 Level: 42
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -10109,7 +10088,7 @@ Pelipper
 Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Machoke
+Machamp
 Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -10210,7 +10189,7 @@ Manectric
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machamp
+Raichu
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10223,11 +10202,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Machoke
+Machamp
 Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Spheal
+Sealeo
 Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -10258,11 +10237,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
+Hitmonlee
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Hariyama
+Emboar
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -10275,7 +10254,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wailmer
+Wailord
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10288,7 +10267,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Chinchou
+Lanturn
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11284,11 +11263,11 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Sableye
+Porygon-Z
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Absol
+Luxray
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11583,7 +11562,7 @@ Nuzleaf
 Level: 28
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Shifty
+Shiftry
 Level: 28
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -12012,7 +11991,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
+Swanna
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12053,7 +12032,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacruel
+Drizzile
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12083,7 +12062,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Sharpedo
+Carracosta
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12288,7 +12267,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Swellow
+Pidgeot
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12305,7 +12284,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+Starmie
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12357,11 +12336,11 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Kecleon
+Crawdaunt
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Loudred
+Golisopod
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14102,11 +14081,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Wailmer
+Wailord
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
+Tentacruel
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14123,7 +14102,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
+Basculin
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14162,7 +14141,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Gloom
+Vileplume
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -14180,11 +14159,11 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Shiftry
+Golduck
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Nosepass
+Probopass
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -14197,7 +14176,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machoke
+Machamp
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hitmontop
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14210,15 +14193,15 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+Tentacruel
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
+Octillery
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
+Arrokuda
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14231,11 +14214,11 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
+Corviknight
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skarmory
+Fearow
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14248,11 +14231,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Spheal
+Dewgong
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sharpedo
+Slowking
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14265,7 +14248,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Chinchou
+Eelektross
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14295,7 +14278,7 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Swablu
+Altaria
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sing
@@ -14303,7 +14286,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Safeguard
 - Aerial Ace
 
-Numel
+Camerupt
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flamethrower
@@ -14370,21 +14353,13 @@ Music: Intense
 Double Battle: Yes
 AI: Basic Trainer
 
-Medicham
+Onix
 Level: 39
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Psychic
-- Fire Punch
-- Psych Up
-- Protect
 
-Hariyama
+Cloyster
 Level: 39
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Focus Punch
-- Rock Tomb
-- Rest
-- Belly Drum
 
 === TRAINER_JOHN_AND_JAY_2 === /* FREE */
 Name: JOHN & JAY
@@ -14499,7 +14474,7 @@ Azumarill
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wingull
+Pelipper
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14512,11 +14487,11 @@ Music: Swimmer
 Double Battle: Yes
 AI: Check Bad Move
 
-Chinchou
+Octillery
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
+Bibarel
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15035,7 +15010,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Skunktank
+Skuntank
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15250,7 +15225,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Pelipper
+Seismitoad
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15626,7 +15601,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Gurrdurr
+Gurdurr
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15717,7 +15692,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Roselia
+Tangrowth
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -17994,7 +17969,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+Binacle
 Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -18015,11 +17990,11 @@ Wingull
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Staryu
+Barbaracle
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Staryu
+Starmie
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -18036,11 +18011,11 @@ Pelipper
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Staryu
+Barbaracle
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Staryu
+Starmie
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -18057,7 +18032,7 @@ Pelipper
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Starmie
+Barbaracle
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 

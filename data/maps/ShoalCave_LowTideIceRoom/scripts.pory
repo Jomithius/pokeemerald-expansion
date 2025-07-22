@@ -42,14 +42,16 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
     playbgm(MUS_NONE, FALSE)
     delay(20)
     playse(SE_M_DOUBLE_TEAM)
-    msgbox("ARGH!", MSGBOX_AUTOCLOSE)
+    waitse
+    playmoncry(SPECIES_TOTOKNIGHT, CRY_MODE_ENCOUNTER)
+    msgbox("ARGH!\n
+        AAAARGH!", MSGBOX_AUTOCLOSE)
     waitmessage
-    playse(SE_M_DOUBLE_TEAM)
-    msgbox("AAAARGH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+    waitmoncry
     playse(SE_PIN)
     applymovement(3, Common_Movement_ExclamationMark)
     waitmovement(3)
+    waitse
     applymovement(3, Common_Movement_FacePlayer)
     waitmovement(3)
     delay(40)
