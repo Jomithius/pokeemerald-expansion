@@ -286,7 +286,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_PP_MAX",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_PP_UP"
     },
@@ -364,7 +364,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POKE_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_QUICK_BALL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_POKE_BALL"
     },
@@ -390,7 +390,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_X_ACCURACY",
+      "trainer_sight_or_berry_tree_id": "ITEM_PP_MAX",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_X_ACCURACY"
     },
@@ -416,7 +416,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_FULL_RESTORE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_POTION"
     },
@@ -535,7 +535,7 @@
       "elevation": 0,
       "var": "VAR_RAT_CAVE_STATE",
       "var_value": "1",
-      "script": "Route104_LunaDexNav"
+      "script": "Route104_EventScript_LunaDexNav"
     },
     {
       "type": "trigger",
@@ -544,7 +544,34 @@
       "elevation": 0,
       "var": "VAR_RAT_CAVE_STATE",
       "var_value": "1",
-      "script": "Route104_LunaDexNav"
+      "script": "Route104_EventScript_LunaDexNav"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 51,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "2",
+      "script": "Route104_EventScript_SeeWhatLunaWants"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 52,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "2",
+      "script": "Route104_EventScript_SeeWhatLunaWants"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 51,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "2",
+      "script": "Route104_EventScript_SeeWhatLunaWants"
     }
   ],
   "bg_events": [
@@ -593,7 +620,7 @@
       "x": 14,
       "y": 55,
       "elevation": 3,
-      "item": "ITEM_POTION",
+      "item": "ITEM_FULL_RESTORE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POTION"
     },
     {

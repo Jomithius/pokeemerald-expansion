@@ -216,7 +216,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_PP_MAX",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_116_HP_UP"
     },
@@ -363,7 +363,7 @@
     },
     {
       "x": 72,
-      "y": 4,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_RUSTURF_TUNNEL_2F",
       "dest_warp_id": "0"
@@ -408,7 +408,7 @@
     {
       "type": "secret_base",
       "x": 75,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_BLUE_CAVE1_1"
     },

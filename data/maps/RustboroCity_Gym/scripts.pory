@@ -283,7 +283,8 @@ script RustboroCity_Gym_EventScript_GiveChillingWater {
     waitmessage
     msgbox(RustboroCity_Gym_Text_ExplainChillingWater, MSGBOX_AUTOCLOSE)
     waitmessage
-    setvar (VAR_MISA_STATE, 3)
+    setvar(VAR_MISA_STATE, 3)
+	setflag(FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE)
 	setrespawn(HEAL_LOCATION_RUSTBORO_CITY) // to avoid player missing rat cave trigger by teleporting/whiting out back to petalburg
     release
     end

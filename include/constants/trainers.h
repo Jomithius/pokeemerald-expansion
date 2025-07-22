@@ -389,7 +389,8 @@
 #define TRAINER_CLASS_KIMONO_LADY    0x51
 #define TRAINER_CLASS_CHIEF          0x52
 #define TRAINER_CLASS_NIGHTMARE      0x53
-#define TRAINER_CLASS_COUNT          0x54
+#define TRAINER_CLASS_BLACK_MAGE     0x54
+#define TRAINER_CLASS_COUNT          0x55
 
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music

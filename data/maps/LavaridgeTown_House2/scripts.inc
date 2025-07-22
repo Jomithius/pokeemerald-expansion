@@ -42,6 +42,8 @@ LavaridgeTown_House2_Lina_1:
 # 47 "data/maps/LavaridgeTown_House2/scripts.pory"
 	waitmovement 2
 # 48 "data/maps/LavaridgeTown_House2/scripts.pory"
+	setflag FLAG_TALKED_TO_LINA_LAVARIDGE
+# 49 "data/maps/LavaridgeTown_House2/scripts.pory"
 	setvar VAR_LINA_TALKED_TO, 1
 	end
 
@@ -67,17 +69,17 @@ LavaridgeTown_EventScript_Text_Lady1::
 	.string "Fufu. \n My daughters are so great.$"
 
 LavaridgeTown_House2_Text_Lina::
-# 52 "data/maps/LavaridgeTown_House2/scripts.pory"
+# 53 "data/maps/LavaridgeTown_House2/scripts.pory"
 	.string "Do you always just go around\n entering random people's houses?$"
 
 LavaridgeTown_House2_Text_LinaEeveeStolen::
-# 57 "data/maps/LavaridgeTown_House2/scripts.pory"
+# 58 "data/maps/LavaridgeTown_House2/scripts.pory"
 	.string "You know that's weird, right?\n You're probably the reason that\l my EEVEE went missing too.\p Shoo!$"
 
 LavaridgeTown_House2_Text_LinaThatsWeird::
-# 64 "data/maps/LavaridgeTown_House2/scripts.pory"
+# 65 "data/maps/LavaridgeTown_House2/scripts.pory"
 	.string "You know that's weird, right?\n Shoo!$"
 
 LavaridgeTown_House2_LinaThenLeave::
-# 69 "data/maps/LavaridgeTown_House2/scripts.pory"
+# 70 "data/maps/LavaridgeTown_House2/scripts.pory"
 	.string "Then why did you barge in here?\n Hmph!$"

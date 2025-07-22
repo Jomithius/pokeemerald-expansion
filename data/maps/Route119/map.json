@@ -242,7 +242,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_REPEL",
+      "trainer_sight_or_berry_tree_id": "ITEM_MAX_REPEL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_SUPER_REPEL"
     },
@@ -437,7 +437,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_FULL_RESTORE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_2"
     },
@@ -554,7 +554,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
+      "trainer_sight_or_berry_tree_id": "ITEM_BIG_NUGGET",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_NUGGET"
     },

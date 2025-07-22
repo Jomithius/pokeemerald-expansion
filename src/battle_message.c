@@ -1453,6 +1453,7 @@ const u8 gText_BattleJomithiusName[] = _("JOMITHIUS");
 const u8 gText_BattleSpeedwagonName[] = _("SPEEDWAGON");
 const u8 gText_BattleRedName[] = _("RED");
 const u8 gText_BattleCynthiaName[] = _("CYNTHIA");
+const u8 gText_BattleDaveName[] = _("DAVE");
 const u8 gText_Win[] = _("{HIGHLIGHT TRANSPARENT}Win");
 const u8 gText_Loss[] = _("{HIGHLIGHT TRANSPARENT}Loss");
 const u8 gText_Draw[] = _("{HIGHLIGHT TRANSPARENT}Draw");

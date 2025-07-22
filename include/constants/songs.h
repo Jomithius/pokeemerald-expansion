@@ -589,6 +589,10 @@
 #define MUS_VICTORY_CYNTHIA         651
 #define MUS_VS_ARCEUS               652
 #define MUS_VS_LAKE_GUARDIANS       653
+#define MUS_FF_BATTLE               654
+#define MUS_DECISIVE_BATTLE         655
+#define MUS_FF_VICTORY              656
+
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -45,6 +45,7 @@ script LavaridgeTown_House2_Lina{
     }
     applymovement(2, Common_Movement_FaceOriginalDirection)
     waitmovement(2)
+    setflag(FLAG_TALKED_TO_LINA_LAVARIDGE)
     setvar(VAR_LINA_TALKED_TO, 1)
     end
 }

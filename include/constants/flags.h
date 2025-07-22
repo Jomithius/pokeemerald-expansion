@@ -1524,8 +1524,8 @@
 #define FLAG_LANDMARK_BALDESIA                      (SYSTEM_FLAGS + 0x94) 
 #define FLAG_LANDMARK_SNOWDRIFT_CITY                (SYSTEM_FLAGS + 0x95) 
 #define FLAG_JOMITHIUS_UNAVAILABLE                  (SYSTEM_FLAGS + 0x96) // For rival match call
-#define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
-#define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
+#define FLAG_TALKED_TO_LINA_LAVARIDGE               (SYSTEM_FLAGS + 0x97) // Secret Boss
+#define FLAG_SYS_BIKERS_ROUTE_110                   (SYSTEM_FLAGS + 0x98) // For biker event
 #define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
 #define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
 #define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag

@@ -1786,7 +1786,7 @@ F_TRAINER_FEMALE |
 #line 767
         .trainerName = _("ROSE"),
 #line 768
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .trainerClass = TRAINER_CLASS_BLACK_MAGE,
 #line 769
         .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =

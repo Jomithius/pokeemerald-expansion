@@ -115,9 +115,9 @@ voicegroup192::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_keysplit_all voicegroup193
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 64, 54, DirectSoundWaveData_sd90_ambient_tom, 255, 0, 255, 226
 	voice_directsound 63, 64, DirectSoundWaveData_sc88pro_taiko, 255, 0, 255, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 51, 24, DirectSoundWaveData_unused_sc55_tom, 255, 216, 77, 204
 	voice_directsound_no_resample 72, 104, DirectSoundWaveData_sc88pro_mute_high_conga, 255, 0, 255, 0
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_close_hihat, 255, 127, 0, 188
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

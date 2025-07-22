@@ -661,7 +661,8 @@ script Route_135_Lab_EventScript_Meltan{
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!\n
+                MELTAN was sent to the PC.")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_MELTAN)
             goto(Common_EventScript_NicknameRecievedMonBox)
@@ -700,7 +701,8 @@ script Route_135_Lab_EventScript_TypeNull{
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!\n
+                TYPE NULL was sent to the PC.")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_TYPE_NULL)
             goto(Common_EventScript_NicknameRecievedMonBox)

@@ -19,7 +19,8 @@ script Lina_House_EventScript_Pokeball{
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the EEVEE!")
+            msgbox("{PLAYER} took the EEVEE!\n
+                EEVEE was sent to the PC.")
             removeobject(1)
             setflag(FLAG_LINA_HOUSE_EEVEE)
             goto(NicknameBoxMon)

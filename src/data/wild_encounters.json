@@ -2869,17 +2869,17 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_DEERLING_WINTER"
+                "species": "SPECIES_YUNGOOS"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_DEERLING_WINTER"
+                "species": "SPECIES_YUNGOOS"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_DEERLING_WINTER"
+                "species": "SPECIES_YUNGOOS"
               }
             ]
           }
@@ -3497,7 +3497,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_TROPIUS"
+                "species": "SPECIES_BLITZLE"
               },
               {
                 "min_level": 27,

@@ -826,14 +826,14 @@ NewMauville_Inside_EventScript_Genesect::
 # 406 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewMauville_Inside_EventScript_Genesect_2
-# 429 "data/maps/NewMauville_Inside/scripts.pory"
-	hidemonpic
 # 430 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_EventScript_Genesect_Text_2
+	hidemonpic
+# 431 "data/maps/NewMauville_Inside/scripts.pory"
+	msgbox NewMauville_Inside_EventScript_Genesect_Text_3
 NewMauville_Inside_EventScript_Genesect_1:
-# 433 "data/maps/NewMauville_Inside/scripts.pory"
-	waitmessage
 # 434 "data/maps/NewMauville_Inside/scripts.pory"
+	waitmessage
+# 435 "data/maps/NewMauville_Inside/scripts.pory"
 	releaseall
 	end
 
@@ -848,9 +848,9 @@ NewMauville_Inside_EventScript_Genesect_2:
 # 416 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq NewMauville_Inside_EventScript_Genesect_6
-# 424 "data/maps/NewMauville_Inside/scripts.pory"
-	hidemonpic
 # 425 "data/maps/NewMauville_Inside/scripts.pory"
+	hidemonpic
+# 426 "data/maps/NewMauville_Inside/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto NewMauville_Inside_EventScript_Genesect_1
 
@@ -871,54 +871,54 @@ NewMauville_Inside_EventScript_Genesect_6:
 # 417 "data/maps/NewMauville_Inside/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 418 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_EventScript_Genesect_Text_1
-# 419 "data/maps/NewMauville_Inside/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	msgbox NewMauville_Inside_EventScript_Genesect_Text_2
 # 420 "data/maps/NewMauville_Inside/scripts.pory"
-	setflag FLAG_DEFEATED_GENESECT
+	removeobject VAR_LAST_TALKED
 # 421 "data/maps/NewMauville_Inside/scripts.pory"
+	setflag FLAG_DEFEATED_GENESECT
+# 422 "data/maps/NewMauville_Inside/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMonBox
 	goto NewMauville_Inside_EventScript_Genesect_1
 
 
 Common_EventScript_NicknameRecievedMon::
-# 439 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox Common_EventScript_NicknameRecievedMon_Text_0, MSGBOX_YESNO
 # 440 "data/maps/NewMauville_Inside/scripts.pory"
-	hidemonpic
+	msgbox Common_EventScript_NicknameRecievedMon_Text_0, MSGBOX_YESNO
 # 441 "data/maps/NewMauville_Inside/scripts.pory"
+	hidemonpic
+# 442 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Common_EventScript_NicknameRecievedMon_2
 Common_EventScript_NicknameRecievedMon_1:
-# 445 "data/maps/NewMauville_Inside/scripts.pory"
+# 446 "data/maps/NewMauville_Inside/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_NicknameRecievedMon_2:
-# 442 "data/maps/NewMauville_Inside/scripts.pory"
-	call Common_EventScript_GetGiftMonPartySlot
 # 443 "data/maps/NewMauville_Inside/scripts.pory"
+	call Common_EventScript_GetGiftMonPartySlot
+# 444 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto Common_EventScript_NicknameRecievedMon_1
 
 
 Common_EventScript_NicknameRecievedMonBox::
-# 450 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox Common_EventScript_NicknameRecievedMon_Text_0, MSGBOX_YESNO
 # 451 "data/maps/NewMauville_Inside/scripts.pory"
-	hidemonpic
+	msgbox Common_EventScript_NicknameRecievedMon_Text_0, MSGBOX_YESNO
 # 452 "data/maps/NewMauville_Inside/scripts.pory"
+	hidemonpic
+# 453 "data/maps/NewMauville_Inside/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Common_EventScript_NicknameRecievedMonBox_2
 Common_EventScript_NicknameRecievedMonBox_1:
-# 455 "data/maps/NewMauville_Inside/scripts.pory"
-	call Common_EventScript_TransferredToPC
 # 456 "data/maps/NewMauville_Inside/scripts.pory"
+	call Common_EventScript_TransferredToPC
+# 457 "data/maps/NewMauville_Inside/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_NicknameRecievedMonBox_2:
-# 453 "data/maps/NewMauville_Inside/scripts.pory"
+# 454 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto Common_EventScript_NicknameRecievedMonBox_1
 
@@ -936,9 +936,13 @@ NewMauville_Inside_EventScript_Genesect_Text_1:
 	.string "{PLAYER} took the POKéMON!$"
 
 NewMauville_Inside_EventScript_Genesect_Text_2:
-# 430 "data/maps/NewMauville_Inside/scripts.pory"
+# 418 "data/maps/NewMauville_Inside/scripts.pory"
+	.string "{PLAYER} took the POKéMON!\n GENESECT was sent to the PC.$"
+
+NewMauville_Inside_EventScript_Genesect_Text_3:
+# 431 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"
 
 Common_EventScript_NicknameRecievedMon_Text_0:
-# 439 "data/maps/NewMauville_Inside/scripts.pory"
+# 440 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "Would you like to nickname the POKéMON?$"

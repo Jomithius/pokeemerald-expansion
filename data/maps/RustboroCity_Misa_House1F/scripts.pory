@@ -1,12 +1,4 @@
-mapscripts RustboroCity_Misa_House1F_MapScripts {
-    MAP_SCRIPT_ON_LOAD {if(var(VAR_MISA_STATE) == 2){
-        clearflag(FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE)
-    }
-    else{
-        setflag(FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE)
-    }
-    end 
-}}
+mapscripts RustboroCity_Misa_House1F_MapScripts {}
 
 script Rustboro_Misa_Text_EventScript{
     lock

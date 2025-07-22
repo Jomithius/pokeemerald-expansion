@@ -1027,176 +1027,178 @@ Route115_EventScript_TriggerLeft_RivalEmo::
 # 524 "data/maps/Route115/scripts.pory"
 	setflag FLAG_HIDE_MISA_ROUTE115
 # 525 "data/maps/Route115/scripts.pory"
-	setvar VAR_MISA_STATE, 2
+	clearflag FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE
 # 526 "data/maps/Route115/scripts.pory"
+	setvar VAR_MISA_STATE, 2
+# 527 "data/maps/Route115/scripts.pory"
 	releaseall
 	end
 
 
 Route115_RivalBattle::
-# 531 "data/maps/Route115/scripts.pory"
-	trainerbattle_no_intro TRAINER_JOMITHIUS, Jomithius_Outro
 # 532 "data/maps/Route115/scripts.pory"
+	trainerbattle_no_intro TRAINER_JOMITHIUS, Jomithius_Outro
+# 533 "data/maps/Route115/scripts.pory"
 	lockall
 	return
 
 
-# 586 "data/maps/Route115/scripts.pory"
+# 587 "data/maps/Route115/scripts.pory"
 Route115EmoMove1:
-# 587 "data/maps/Route115/scripts.pory"
+# 588 "data/maps/Route115/scripts.pory"
 	walk_down
-# 587 "data/maps/Route115/scripts.pory"
+# 588 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 590 "data/maps/Route115/scripts.pory"
-Route115EmoMove1Right:
 # 591 "data/maps/Route115/scripts.pory"
+Route115EmoMove1Right:
+# 592 "data/maps/Route115/scripts.pory"
 	walk_right
-# 592 "data/maps/Route115/scripts.pory"
+# 593 "data/maps/Route115/scripts.pory"
 	walk_down
-# 592 "data/maps/Route115/scripts.pory"
+# 593 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 595 "data/maps/Route115/scripts.pory"
-Route115EmoMove1Left:
 # 596 "data/maps/Route115/scripts.pory"
-	walk_down
+Route115EmoMove1Left:
 # 597 "data/maps/Route115/scripts.pory"
-	walk_left
+	walk_down
 # 598 "data/maps/Route115/scripts.pory"
+	walk_left
+# 599 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 601 "data/maps/Route115/scripts.pory"
-Route115EmoMove2:
 # 602 "data/maps/Route115/scripts.pory"
+Route115EmoMove2:
+# 603 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 605 "data/maps/Route115/scripts.pory"
-Route115EmoMove3:
 # 606 "data/maps/Route115/scripts.pory"
-	walk_fast_left
+Route115EmoMove3:
 # 607 "data/maps/Route115/scripts.pory"
+	walk_fast_left
+# 608 "data/maps/Route115/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 610 "data/maps/Route115/scripts.pory"
-Route115EmoMove3Left:
 # 611 "data/maps/Route115/scripts.pory"
-	walk_fast_right
+Route115EmoMove3Left:
 # 612 "data/maps/Route115/scripts.pory"
+	walk_fast_right
+# 613 "data/maps/Route115/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 615 "data/maps/Route115/scripts.pory"
-Route115Exclaim:
 # 616 "data/maps/Route115/scripts.pory"
+Route115Exclaim:
+# 617 "data/maps/Route115/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 619 "data/maps/Route115/scripts.pory"
+# 620 "data/maps/Route115/scripts.pory"
 Route115MisaWalkUp:
-# 620 "data/maps/Route115/scripts.pory"
-	walk_up
-# 620 "data/maps/Route115/scripts.pory"
-	walk_up
-# 620 "data/maps/Route115/scripts.pory"
-	walk_up
-# 620 "data/maps/Route115/scripts.pory"
-	walk_up
-# 620 "data/maps/Route115/scripts.pory"
+# 621 "data/maps/Route115/scripts.pory"
 	walk_up
 # 621 "data/maps/Route115/scripts.pory"
-	walk_left
+	walk_up
+# 621 "data/maps/Route115/scripts.pory"
+	walk_up
+# 621 "data/maps/Route115/scripts.pory"
+	walk_up
+# 621 "data/maps/Route115/scripts.pory"
+	walk_up
 # 622 "data/maps/Route115/scripts.pory"
+	walk_left
+# 623 "data/maps/Route115/scripts.pory"
 	face_up
 	step_end
 
-# 625 "data/maps/Route115/scripts.pory"
+# 626 "data/maps/Route115/scripts.pory"
 Route115MisaWalkUpRight:
-# 626 "data/maps/Route115/scripts.pory"
+# 627 "data/maps/Route115/scripts.pory"
 	walk_up
-# 626 "data/maps/Route115/scripts.pory"
+# 627 "data/maps/Route115/scripts.pory"
 	walk_up
-# 626 "data/maps/Route115/scripts.pory"
+# 627 "data/maps/Route115/scripts.pory"
 	walk_up
-# 626 "data/maps/Route115/scripts.pory"
+# 627 "data/maps/Route115/scripts.pory"
 	walk_up
-# 626 "data/maps/Route115/scripts.pory"
+# 627 "data/maps/Route115/scripts.pory"
 	walk_up
 	step_end
 
-# 629 "data/maps/Route115/scripts.pory"
+# 630 "data/maps/Route115/scripts.pory"
 Route115MisaLeave:
-# 630 "data/maps/Route115/scripts.pory"
-	walk_down
-# 630 "data/maps/Route115/scripts.pory"
-	walk_down
-# 630 "data/maps/Route115/scripts.pory"
-	walk_down
-# 630 "data/maps/Route115/scripts.pory"
-	walk_down
-# 630 "data/maps/Route115/scripts.pory"
+# 631 "data/maps/Route115/scripts.pory"
 	walk_down
 # 631 "data/maps/Route115/scripts.pory"
-	walk_right
+	walk_down
+# 631 "data/maps/Route115/scripts.pory"
+	walk_down
+# 631 "data/maps/Route115/scripts.pory"
+	walk_down
+# 631 "data/maps/Route115/scripts.pory"
+	walk_down
 # 632 "data/maps/Route115/scripts.pory"
+	walk_right
+# 633 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 635 "data/maps/Route115/scripts.pory"
-Route115Confused:
 # 636 "data/maps/Route115/scripts.pory"
+Route115Confused:
+# 637 "data/maps/Route115/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 639 "data/maps/Route115/scripts.pory"
-Route115FaceUp:
 # 640 "data/maps/Route115/scripts.pory"
+Route115FaceUp:
+# 641 "data/maps/Route115/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 643 "data/maps/Route115/scripts.pory"
-Route115FaceDown:
 # 644 "data/maps/Route115/scripts.pory"
+Route115FaceDown:
+# 645 "data/maps/Route115/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 647 "data/maps/Route115/scripts.pory"
-Route115FaceRight:
 # 648 "data/maps/Route115/scripts.pory"
+Route115FaceRight:
+# 649 "data/maps/Route115/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 651 "data/maps/Route115/scripts.pory"
-Route115FaceLeft:
 # 652 "data/maps/Route115/scripts.pory"
+Route115FaceLeft:
+# 653 "data/maps/Route115/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 655 "data/maps/Route115/scripts.pory"
-Route115MoveLeft:
 # 656 "data/maps/Route115/scripts.pory"
+Route115MoveLeft:
+# 657 "data/maps/Route115/scripts.pory"
 	walk_left
 	step_end
 
-# 659 "data/maps/Route115/scripts.pory"
-Route115MoveRight:
 # 660 "data/maps/Route115/scripts.pory"
+Route115MoveRight:
+# 661 "data/maps/Route115/scripts.pory"
 	walk_right
 	step_end
 
 Route115_EventScript_EmoRivalVar0::
-# 664 "data/maps/Route115/scripts.pory"
-	lock
 # 665 "data/maps/Route115/scripts.pory"
-	msgbox Route115_EventScript_Trigger_RivalEmo_Text_1, MSGBOX_AUTOCLOSE
+	lock
 # 666 "data/maps/Route115/scripts.pory"
-	waitmessage
+	msgbox Route115_EventScript_Trigger_RivalEmo_Text_1, MSGBOX_AUTOCLOSE
 # 667 "data/maps/Route115/scripts.pory"
+	waitmessage
+# 668 "data/maps/Route115/scripts.pory"
 	release
 	end
 
@@ -1222,49 +1224,49 @@ Route115_EventScript_Trigger_RivalEmo_Text_4:
 	.string "MISA: …Oh! Um… I mean… JOMITHIUS,\n right?$"
 
 Route115Emo1::
-# 536 "data/maps/Route115/scripts.pory"
+# 537 "data/maps/Route115/scripts.pory"
 	.string "Don't come any closer. Hold on…$"
 
 Route115Emo2::
-# 538 "data/maps/Route115/scripts.pory"
+# 539 "data/maps/Route115/scripts.pory"
 	.string "Sorry. It's hard to control this power.\n Any closer and you could've been\l pulled into the void…\p Anyways, who are you?\n …\p {PLAYER}, huh?\n And my mother sent you?\l I see…\l  So that means you're also a trainer…$"
 
 Route115Emo3::
-# 548 "data/maps/Route115/scripts.pory"
+# 549 "data/maps/Route115/scripts.pory"
 	.string "$"
 
 Route115Emo4::
-# 550 "data/maps/Route115/scripts.pory"
+# 551 "data/maps/Route115/scripts.pory"
 	.string "… I am JOMITHIUS.\n …This must be the call of fate.\l We are.. destined to be rivals.\l You know what must be done.$"
 
 Route115Emo5::
-# 555 "data/maps/Route115/scripts.pory"
+# 556 "data/maps/Route115/scripts.pory"
 	.string "Can you withstand this power?$"
 
 Route115Emo6::
-# 557 "data/maps/Route115/scripts.pory"
+# 558 "data/maps/Route115/scripts.pory"
 	.string "JOMITHIUS: You're lucky I told my\n  POKéMON to only use 10% of their\l power.\l Next time I, JOMITHIUS, will-$"
 
 Route115Emo7::
-# 562 "data/maps/Route115/scripts.pory"
+# 563 "data/maps/Route115/scripts.pory"
 	.string "JOMITHIUS: {PLAYER} is…\n a worthy opponent.$"
 
 Route115Misa1::
-# 565 "data/maps/Route115/scripts.pory"
+# 566 "data/maps/Route115/scripts.pory"
 	.string "MISA: I'm glad you two are having fun!\n Oh! By the way, JAMES,\l dinner is almost ready.$"
 
 Route115Emo8::
-# 569 "data/maps/Route115/scripts.pory"
+# 570 "data/maps/Route115/scripts.pory"
 	.string "JAMES?: …\n Yes, Mother.\l I'll be heading back soon.$"
 
 Route115Misa2::
-# 573 "data/maps/Route115/scripts.pory"
+# 574 "data/maps/Route115/scripts.pory"
 	.string "MISA: Great! I made a feast since\n you're starting your journey tomorrow.\l Hurry back soon, JAMES.\l {PLAYER}, you're more than welcome\l to stop by anytime!$"
 
 Route115Emo9::
-# 579 "data/maps/Route115/scripts.pory"
+# 580 "data/maps/Route115/scripts.pory"
 	.string "Definitely JAMES: …\p I should head back then.\n {PLAYER}, next time I'll achieve victory.\l See ya.$"
 
 Jomithius_Outro::
-# 584 "data/maps/Route115/scripts.pory"
+# 585 "data/maps/Route115/scripts.pory"
 	.string "I'm in my abyss…$"

@@ -1,10 +1,35 @@
 mapscripts WachunpelonCity_SmallHouse3_MapScripts {}
 
 script WachunpelonCity_SmallHouse3_EventScript_Lina{
-    msgbox("I'm on vacation! Shoo!", MSGBOX_NPC)
+    lock
+    faceplayer
+    goto_if_eq(VAR_LINA_TALKED_TO, 1, WachunpelonCity_SmallHouse3_EventScript_LinaAddVar)
+    msgbox("I'm on vacation! Shoo!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
     end
 }
 
+script WachunpelonCity_SmallHouse3_EventScript_LinaAddVar{
+    lock
+    if(flag(FLAG_TALKED_TO_LINA_LAVARIDGE) == TRUE){
+        msgbox("Oh, look who's barging into random\n
+        peoples' houses again. Hmph!\p
+        I'm on vacation! Shoo!", MSGBOX_AUTOCLOSE)
+        setvar(VAR_LINA_TALKED_TO, 2)
+    }
+    else{
+        msgbox("Oh, you again.\n
+        I'm on vacation! Shoo!", MSGBOX_AUTOCLOSE) 
+    }
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
 script WachunpelonCity_SmallHouse3_EventScript_Kai{
     msgbox("{PLAYER}!\p
         I cooked up a new strategy for the\n

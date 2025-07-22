@@ -655,6 +655,9 @@ gSongTable::
 	song mus_victory_cynthia, 0, 0
 	song mus_vs_arceus, 0, 0
 	song mus_vs_lake_guardians, 0, 0
+	song mus_ff_battle, 0, 0
+	song mus_decisive_battle, 0, 0
+	song mus_ff_victory, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -14,14 +14,15 @@ script Luna_House_EventScript_Pokeball{
         bufferspeciesname(STR_VAR_2, SPECIES_MOTHIM)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the MOTHIM!")
             removeobject(1)
             setflag(FLAG_LUNA_HOUSE_MOTHIM)
             goto(NicknamePartyPkmn)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the MOTHIM!\n
+                MOTHIM was sent to the PC.")
             removeobject(1)
             setflag(FLAG_LUNA_HOUSE_MOTHIM)
             goto(NicknameBoxPkmn)

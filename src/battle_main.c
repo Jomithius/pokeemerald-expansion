@@ -366,12 +366,13 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_KNIGHT] = { _("KNIGHT"), 15 },
     [TRAINER_CLASS_NINJA] = { _("NINJA"), 10 },
     [TRAINER_CLASS_NERD] = { _("NERD"), 10 },
-    [TRAINER_CLASS_CEO] = { _("CEO"), 60 },
+    [TRAINER_CLASS_CEO] = { _("CEO"), 60, BALL_MOON },
     [TRAINER_CLASS_MASTER] = { _("MASTER"), 20 },
     [TRAINER_CLASS_KIMONO_WOMAN] = { _("KIMONO WOMAN"), 25 },
     [TRAINER_CLASS_KIMONO_LADY] = { _("KIMONO LADY"), 30 },
     [TRAINER_CLASS_CHIEF] = { _("CHIEF"), 40 },
     [TRAINER_CLASS_NIGHTMARE] = { _("NIGHTMARE"), 5 },
+    [TRAINER_CLASS_BLACK_MAGE] = { _("BLACK MAGE"), 20, BALL_DUSK },
 };
 
 static void (* const sTurnActionsFuncsTable[])(void) =
@@ -5533,8 +5534,15 @@ static void HandleEndTurn_BattleWon(void)
         {
         case TRAINER_CLASS_ELITE_FOUR:
         case TRAINER_CLASS_CHAMPION:
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleCynthiaName)){
+        case TRAINER_CLASS_BLACK_MAGE:
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleCynthiaName))
+            {
                 PlayBGM(MUS_VICTORY_CYNTHIA);
+                break;
+            }
+            else if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleDaveName))
+            {
+                PlayBGM(MUS_FF_VICTORY);
                 break;
             }
             else

@@ -5841,9 +5841,13 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_ELITE_FOUR:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleEugeniaName))
                 return MUS_FINAL_BATTLE;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleDaveName))
+                return MUS_FF_BATTLE;
             return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_RAT_MANIAC:
             return MUS_VS_RATDUARDO; 
+        case TRAINER_CLASS_BLACK_MAGE:
+            return MUS_DECISIVE_BATTLE;
         case TRAINER_CLASS_CEO:
             return MUS_EXDEATH; 
         case TRAINER_CLASS_MASTER:

@@ -1128,7 +1128,7 @@ Route104_Text_BrendanPostBattle:
 	.string "become friends with your POKéMON.$"
 `
 
-script Route104_LunaDexNav {
+script Route104_EventScript_LunaDexNav {
     lockall
     pokenavcall(Route104_LunaDexNavText)
     waitmessage
@@ -1136,6 +1136,16 @@ script Route104_LunaDexNav {
 	setvar(VAR_RAT_CAVE_STATE, 2)
 	setflag(FLAG_HIDE_NPC_LUNA_HOUSE_PETALBURG)
 	clearflag(FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST)
+    releaseall
+    end
+}
+
+script Route104_EventScript_SeeWhatLunaWants{
+    lockall
+    msgbox("I should probably see what LUNA wants\nfirst.")
+    waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+	waitmovement(0)
     releaseall
     end
 }

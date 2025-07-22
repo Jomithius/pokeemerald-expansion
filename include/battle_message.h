@@ -310,6 +310,7 @@ extern const u8 gText_BattleEugeniaName[];
 extern const u8 gText_BattleBrunoName[];
 extern const u8 gText_BattleRedName[];
 extern const u8 gText_BattleCynthiaName[];
+extern const u8 gText_BattleDaveName[];
 extern const u8 gText_Win[];
 extern const u8 gText_Loss[];
 extern const u8 gText_Draw[];

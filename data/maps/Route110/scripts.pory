@@ -961,6 +961,7 @@ script Route110_EventScript_Dale{
 	fadescreenspeed(FADE_FROM_BLACK, 3)
 	setflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setvar(VAR_SPEEDWAGON_STATE, 4)
+	setflag(FLAG_SYS_BIKERS_ROUTE_110)
 	release
 	end
 }
@@ -1062,6 +1063,7 @@ script Route110_EventScript_Speedwagon{
 	fadedefaultbgm
 	setvar(VAR_SPEEDWAGON_STATE, 6)
 	setflag(FLAG_ROUTE110_HIDE_BIKERS)
+	clearflag(FLAG_SYS_BIKERS_ROUTE_110)
 	release
 	end
 }

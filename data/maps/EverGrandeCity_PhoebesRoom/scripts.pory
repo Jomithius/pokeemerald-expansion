@@ -78,6 +78,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_Lina{
     lock
     goto_if_set(FLAG_DEFEATED_EUGENIA, EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech)
     goto_if_set(FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
+    delay(16)
     playse(SE_PIN)
 	applymovement(1, Common_Movement_ExclamationMark)
     waitmovement(1)
@@ -88,14 +89,13 @@ script EverGrandeCity_PhoebesRoom_EventScript_Lina{
         msgbox(EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2, MSGBOX_DEFAULT)
 	    trainerbattle_no_intro(TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
 	    goto(EverGrandeCity_PhoebesRoom_EventScript_Defeated)
-	    end
     }
     else{
 	    msgbox(EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
 	    trainerbattle_no_intro(TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
 	    goto(EverGrandeCity_PhoebesRoom_EventScript_Defeated)
-	    end
     }
+    end
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss{

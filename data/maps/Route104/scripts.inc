@@ -2255,7 +2255,7 @@ Route104_Text_BrendanPostBattle:
 # 1128 "data/maps/Route104/scripts.pory"
 	.string "become friends with your POKéMON.$"
 
-Route104_LunaDexNav::
+Route104_EventScript_LunaDexNav::
 # 1132 "data/maps/Route104/scripts.pory"
 	lockall
 # 1133 "data/maps/Route104/scripts.pory"
@@ -2275,6 +2275,26 @@ Route104_LunaDexNav::
 	end
 
 
+Route104_EventScript_SeeWhatLunaWants::
+# 1144 "data/maps/Route104/scripts.pory"
+	lockall
+# 1145 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_SeeWhatLunaWants_Text_0
+# 1146 "data/maps/Route104/scripts.pory"
+	waitmessage
+# 1147 "data/maps/Route104/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 1148 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1149 "data/maps/Route104/scripts.pory"
+	releaseall
+	end
+
+
+Route104_EventScript_SeeWhatLunaWants_Text_0:
+# 1145 "data/maps/Route104/scripts.pory"
+	.string "I should probably see what LUNA wants\nfirst.$"
+
 Route104_LunaDexNavText::
-# 1143 "data/maps/Route104/scripts.pory"
+# 1153 "data/maps/Route104/scripts.pory"
 	.string "… … … … … …\n … … … … … Beep!\p {PLAYER}? It's LUNA.\n Are you still in the area?\p I need a favor. Meet me in front of\n my house in PETALBURG.\p It's the one north of the POKéMON\n CENTER.\p … … … … … …\n … … … … … Click!$"

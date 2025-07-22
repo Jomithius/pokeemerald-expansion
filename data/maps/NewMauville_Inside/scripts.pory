@@ -415,7 +415,8 @@ script NewMauville_Inside_EventScript_Genesect{
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!\n
+				GENESECT was sent to the PC.")
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_DEFEATED_GENESECT)
             goto(Common_EventScript_NicknameRecievedMonBox)

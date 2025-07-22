@@ -155,36 +155,39 @@ EverGrandeCity_PhoebesRoom_EventScript_Lina::
 # 80 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 # 81 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	playse SE_PIN
+	delay 16
 # 82 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 83 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmovement 1
+	applymovement 1, Common_Movement_ExclamationMark
 # 84 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	delay 20
+	waitmovement 1
 # 85 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	faceplayer
+	delay 20
 # 86 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	faceplayer
+# 87 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	compare VAR_LINA_TALKED_TO, 2
-	goto_if_eq EverGrandeCity_PhoebesRoom_EventScript_Lina_1
+	goto_if_eq EverGrandeCity_PhoebesRoom_EventScript_Lina_2
 # 94 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 # 95 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
 # 96 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
+EverGrandeCity_PhoebesRoom_EventScript_Lina_1:
 	end
 
-EverGrandeCity_PhoebesRoom_EventScript_Lina_1:
-# 87 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	goto_if_set FLAG_ELITE_FOUR_FINAL_BATTLE, EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss
+EverGrandeCity_PhoebesRoom_EventScript_Lina_2:
 # 88 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2, MSGBOX_DEFAULT
+	goto_if_set FLAG_ELITE_FOUR_FINAL_BATTLE, EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss
 # 89 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2, MSGBOX_DEFAULT
 # 90 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
+# 91 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
-	end
+	goto EverGrandeCity_PhoebesRoom_EventScript_Lina_1
 
 
 EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss::

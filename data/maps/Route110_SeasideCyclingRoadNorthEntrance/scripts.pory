@@ -5,6 +5,7 @@ raw`Route110_SeasideCyclingRoadNorthEntrance_MapScripts::
 Route110_SeasideCyclingRoadNorthEntrance_OnTransition:
 	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 3, Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge
 	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 2, Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge
+	call_if_set FLAG_SYS_BIKERS_ROUTE_110, Route110_SeasideCyclingRoadNorthEntrance_UpdateMusic
 	end
 
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge::
@@ -17,6 +18,10 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_Clerk::
 	msgbox Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad, MSGBOX_DEFAULT
 	release
 	end
+
+Route110_SeasideCyclingRoadNorthEntrance_UpdateMusic::
+	playbgm MUS_RG_SILPH, TRUE
+	return
 
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck::
 	lockall

@@ -511,6 +511,78 @@
       "var": "VAR_SPEEDWAGON_STATE",
       "var_value": "3",
       "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "3",
+      "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "3",
+      "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "3",
+      "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "3",
+      "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "2",
+      "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "2",
+      "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "2",
+      "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "2",
+      "script": "MauvileCity_EventScript_SeeWhatsGoingOn"
     }
   ],
   "bg_events": [

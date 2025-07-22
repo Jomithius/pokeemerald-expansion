@@ -563,20 +563,22 @@ RustboroCity_Gym_EventScript_GiveChillingWater::
 # 286 "data/maps/RustboroCity_Gym/scripts.pory"
 	setvar VAR_MISA_STATE, 3
 # 287 "data/maps/RustboroCity_Gym/scripts.pory"
-	setrespawn HEAL_LOCATION_RUSTBORO_CITY
+	setflag FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE
 # 288 "data/maps/RustboroCity_Gym/scripts.pory"
+	setrespawn HEAL_LOCATION_RUSTBORO_CITY
+# 289 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 	end
 
 
 RustboroCity_Gym_Magmortar::
-# 301 "data/maps/RustboroCity_Gym/scripts.pory"
-	lock
 # 302 "data/maps/RustboroCity_Gym/scripts.pory"
-	playmoncry SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER
+	lock
 # 303 "data/maps/RustboroCity_Gym/scripts.pory"
-	delay 20
+	playmoncry SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER
 # 304 "data/maps/RustboroCity_Gym/scripts.pory"
+	delay 20
+# 305 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 	end
 
@@ -586,5 +588,5 @@ RustboroCity_Gym_EventScript_GiveChillingWater_Text_0:
 	.string "And because you were on fire,\n take this to cool off!$"
 
 RustboroCity_Gym_Text_ExplainChillingWater::
-# 293 "data/maps/RustboroCity_Gym/scripts.pory"
+# 294 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "That TECHNICAL MACHINE, TM52,\n contains CHILLING WATER.\l It's a good way to put out a POKéMON\l that's on fire!$"
