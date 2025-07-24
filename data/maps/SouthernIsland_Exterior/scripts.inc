@@ -7,6 +7,7 @@ SouthernIsland_Exterior_MapScripts::
 
 SouthernIsland_Exterior_OnTransition:
 	setflag FLAG_LANDMARK_SOUTHERN_ISLAND
+	clearflag FLAG_SYS_DYNAMIC_LEVELS
 	end
 
 SouthernIsland_Exterior_EventScript_Sailor::

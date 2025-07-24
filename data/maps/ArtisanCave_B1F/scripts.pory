@@ -2,6 +2,62 @@ raw`ArtisanCave_B1F_MapScripts::
 	.byte 0
 `
 
+script AzureMountain_EventScript_Barley{
+    trainerbattle_single(TRAINER_BARLEY, "Only the strongest TRAINERS come here!", "Whoa…")
+    msgbox("Another super strong TRAINER\n
+        came through here a while ago.", MSGBOX_NPC)
+	end
+}
+
+script AzureMountain_EventScript_Hurley{
+    trainerbattle_single(TRAINER_HURLEY, "I'll show you why I was\nable to get here!", "Dang…")
+    msgbox("Dang… You're strong!", MSGBOX_NPC)
+	end
+}
+
+script AzureMountain_EventScript_Jessi{
+    trainerbattle_single(TRAINER_JESSI, "Oh?\nYou think you can beat me?", "Okay…\nMaybe you can beat me.")
+    msgbox("Dang… You're strong!", MSGBOX_NPC)
+	end
+}
+
+script AzureMountain_EventScript_Dogfood{
+    trainerbattle_single(TRAINER_DOGFOOD, "Grrr…", "Grrr…")
+    msgbox("Grrr…", MSGBOX_NPC)
+	end
+}
+
+script AzureMountain_EventScript_Bjornulfr{
+    trainerbattle_single(TRAINER_BJORNULFR, "Huff… huff…\nWhat a hike!", "Maybe I'm out of shape…")
+    msgbox("There's a lot of strong POKéMON\n
+        in here!", MSGBOX_NPC)
+	end
+}
+
+script AzureMountain_EventScript_Rin{
+    trainerbattle_single(TRAINER_RIN, "Fear my fists!", "Maybe I should fear you!")
+    msgbox("This is the best place to train!", MSGBOX_NPC)
+	end
+}
+
+script AzureMountain_EventScript_Shuji{
+    trainerbattle_single(TRAINER_SHUJI, "Hm…\nI can sense your strength.", "You've come far, young one.")
+    msgbox("Hm…\n
+        Looks like the next generations have\l
+        a lot of potential.", MSGBOX_NPC)
+	end
+}
+
+script AzureMountain_EventScript_Yuu{
+    trainerbattle_single(TRAINER_YUU, "It's so hot over here!\nI'm fired up!", "Well, that cooled me down!")
+    msgbox("The ladder next to me leads to\n
+        the volcano deep within the\l
+        mountain.\p
+        It's so hot that I don't think\n
+        I've ever seen anyone go down there!", MSGBOX_NPC)
+	end
+}
+
 script AzureMountain_EventScript_Keldeo{
     lock
     faceplayer

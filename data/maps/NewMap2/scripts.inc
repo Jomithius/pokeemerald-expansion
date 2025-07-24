@@ -2,186 +2,354 @@ NewMap2_MapScripts::
 	.byte 0
 
 
-Route137_EventScript_Woman_4::
+Route137_EventScript_Tadina::
 # 4 "data/maps/NewMap2/scripts.pory"
-	lock
+	trainerbattle_single TRAINER_TADINA, Route137_EventScript_Tadina_Text_0, Route137_EventScript_Tadina_Text_1
 # 5 "data/maps/NewMap2/scripts.pory"
-	faceplayer
-# 6 "data/maps/NewMap2/scripts.pory"
-	msgbox Route137_EventScript_Woman_4_Text_0, MSGBOX_AUTOCLOSE
-# 9 "data/maps/NewMap2/scripts.pory"
-	waitmessage
+	msgbox Route137_EventScript_Tadina_Text_2, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Elvina::
 # 10 "data/maps/NewMap2/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	trainerbattle_single TRAINER_ELVINA, Route137_EventScript_Elvina_Text_0, Route137_EventScript_Elvina_Text_1
 # 11 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Elvina_Text_0, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Lena::
+# 16 "data/maps/NewMap2/scripts.pory"
+	trainerbattle_single TRAINER_LENA, Route137_EventScript_Lena_Text_0, Route137_EventScript_Lena_Text_1
+# 17 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Lena_Text_2, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Charles::
+# 23 "data/maps/NewMap2/scripts.pory"
+	trainerbattle_single TRAINER_CHARLES, Route137_EventScript_Charles_Text_0, Route137_EventScript_Charles_Text_1
+# 24 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Charles_Text_1, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Charleson::
+# 29 "data/maps/NewMap2/scripts.pory"
+	trainerbattle_single TRAINER_CHARLESON, Route137_EventScript_Charleson_Text_0, Route137_EventScript_Charleson_Text_1
+# 30 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Charleson_Text_2, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Jameson::
+# 37 "data/maps/NewMap2/scripts.pory"
+	trainerbattle_single TRAINER_JAMESON, Route137_EventScript_Jameson_Text_0, Route137_EventScript_Jameson_Text_1
+# 38 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Jameson_Text_1, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Daveson::
+# 43 "data/maps/NewMap2/scripts.pory"
+	trainerbattle_single TRAINER_DAVESON, Route137_EventScript_Daveson_Text_0, Route137_EventScript_Daveson_Text_1
+# 44 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Daveson_Text_2, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Hiyoshi::
+# 51 "data/maps/NewMap2/scripts.pory"
+	trainerbattle_single TRAINER_HIYOSHI, Route137_EventScript_Hiyoshi_Text_0, Route137_EventScript_Hiyoshi_Text_1
+# 52 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Hiyoshi_Text_2, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Diddlevon::
+# 57 "data/maps/NewMap2/scripts.pory"
+	trainerbattle_single TRAINER_DIDDLEVON, Route137_EventScript_Diddlevon_Text_0, Route137_EventScript_Diddlevon_Text_1
+# 58 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Diddlevon_Text_2, MSGBOX_NPC
+	end
+
+
+Route137_EventScript_Woman_4::
+# 64 "data/maps/NewMap2/scripts.pory"
+	lock
+# 65 "data/maps/NewMap2/scripts.pory"
+	faceplayer
+# 66 "data/maps/NewMap2/scripts.pory"
+	msgbox Route137_EventScript_Woman_4_Text_0, MSGBOX_AUTOCLOSE
+# 69 "data/maps/NewMap2/scripts.pory"
+	waitmessage
+# 70 "data/maps/NewMap2/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 71 "data/maps/NewMap2/scripts.pory"
 	waitmovement 0
-# 12 "data/maps/NewMap2/scripts.pory"
+# 72 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Woman_1::
-# 17 "data/maps/NewMap2/scripts.pory"
+# 77 "data/maps/NewMap2/scripts.pory"
 	lock
-# 18 "data/maps/NewMap2/scripts.pory"
+# 78 "data/maps/NewMap2/scripts.pory"
 	faceplayer
-# 19 "data/maps/NewMap2/scripts.pory"
+# 79 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Woman_1_Text_0, MSGBOX_AUTOCLOSE
-# 20 "data/maps/NewMap2/scripts.pory"
+# 80 "data/maps/NewMap2/scripts.pory"
 	waitmessage
-# 21 "data/maps/NewMap2/scripts.pory"
+# 81 "data/maps/NewMap2/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 22 "data/maps/NewMap2/scripts.pory"
+# 82 "data/maps/NewMap2/scripts.pory"
 	waitmovement 0
-# 23 "data/maps/NewMap2/scripts.pory"
+# 83 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Tuber_F::
-# 28 "data/maps/NewMap2/scripts.pory"
+# 88 "data/maps/NewMap2/scripts.pory"
 	lock
-# 29 "data/maps/NewMap2/scripts.pory"
+# 89 "data/maps/NewMap2/scripts.pory"
 	faceplayer
-# 30 "data/maps/NewMap2/scripts.pory"
+# 90 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Tuber_F_Text_0, MSGBOX_AUTOCLOSE
-# 32 "data/maps/NewMap2/scripts.pory"
+# 92 "data/maps/NewMap2/scripts.pory"
 	waitmessage
-# 33 "data/maps/NewMap2/scripts.pory"
+# 93 "data/maps/NewMap2/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 34 "data/maps/NewMap2/scripts.pory"
+# 94 "data/maps/NewMap2/scripts.pory"
 	waitmovement 0
-# 35 "data/maps/NewMap2/scripts.pory"
+# 95 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Pokefan_M::
-# 40 "data/maps/NewMap2/scripts.pory"
+# 100 "data/maps/NewMap2/scripts.pory"
 	lock
-# 41 "data/maps/NewMap2/scripts.pory"
+# 101 "data/maps/NewMap2/scripts.pory"
 	faceplayer
-# 42 "data/maps/NewMap2/scripts.pory"
+# 102 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Pokefan_M_Text_0, MSGBOX_AUTOCLOSE
-# 44 "data/maps/NewMap2/scripts.pory"
+# 104 "data/maps/NewMap2/scripts.pory"
 	waitmessage
-# 45 "data/maps/NewMap2/scripts.pory"
+# 105 "data/maps/NewMap2/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 46 "data/maps/NewMap2/scripts.pory"
+# 106 "data/maps/NewMap2/scripts.pory"
 	waitmovement 0
-# 47 "data/maps/NewMap2/scripts.pory"
+# 107 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Tuber_F_2::
-# 52 "data/maps/NewMap2/scripts.pory"
+# 112 "data/maps/NewMap2/scripts.pory"
 	lock
-# 53 "data/maps/NewMap2/scripts.pory"
+# 113 "data/maps/NewMap2/scripts.pory"
 	faceplayer
-# 54 "data/maps/NewMap2/scripts.pory"
+# 114 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Tuber_F_2_Text_0, MSGBOX_AUTOCLOSE
-# 56 "data/maps/NewMap2/scripts.pory"
+# 116 "data/maps/NewMap2/scripts.pory"
 	waitmessage
-# 57 "data/maps/NewMap2/scripts.pory"
+# 117 "data/maps/NewMap2/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 58 "data/maps/NewMap2/scripts.pory"
+# 118 "data/maps/NewMap2/scripts.pory"
 	waitmovement 0
-# 59 "data/maps/NewMap2/scripts.pory"
+# 119 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Joey::
-# 64 "data/maps/NewMap2/scripts.pory"
+# 124 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Joey_Text_0, MSGBOX_SIGN
 	end
 
 
 Route137_EventScript_Beauty::
-# 71 "data/maps/NewMap2/scripts.pory"
+# 131 "data/maps/NewMap2/scripts.pory"
 	lock
-# 72 "data/maps/NewMap2/scripts.pory"
+# 132 "data/maps/NewMap2/scripts.pory"
 	faceplayer
-# 73 "data/maps/NewMap2/scripts.pory"
+# 133 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Beauty_Text_0, MSGBOX_AUTOCLOSE
-# 76 "data/maps/NewMap2/scripts.pory"
+# 136 "data/maps/NewMap2/scripts.pory"
 	waitmessage
-# 77 "data/maps/NewMap2/scripts.pory"
+# 137 "data/maps/NewMap2/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 78 "data/maps/NewMap2/scripts.pory"
+# 138 "data/maps/NewMap2/scripts.pory"
 	waitmovement 0
-# 79 "data/maps/NewMap2/scripts.pory"
+# 139 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Sailor1::
-# 84 "data/maps/NewMap2/scripts.pory"
+# 144 "data/maps/NewMap2/scripts.pory"
 	lock
-# 85 "data/maps/NewMap2/scripts.pory"
+# 145 "data/maps/NewMap2/scripts.pory"
 	faceplayer
-# 86 "data/maps/NewMap2/scripts.pory"
+# 146 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Sailor1_Text_0, MSGBOX_AUTOCLOSE
-# 91 "data/maps/NewMap2/scripts.pory"
+# 151 "data/maps/NewMap2/scripts.pory"
 	waitmessage
-# 92 "data/maps/NewMap2/scripts.pory"
+# 152 "data/maps/NewMap2/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 93 "data/maps/NewMap2/scripts.pory"
+# 153 "data/maps/NewMap2/scripts.pory"
 	waitmovement 0
-# 94 "data/maps/NewMap2/scripts.pory"
+# 154 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Sailor2::
-# 99 "data/maps/NewMap2/scripts.pory"
+# 159 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Sailor2_Text_0, MSGBOX_SIGN
 	end
 
 
 Route137_EventScript_Sign::
-# 106 "data/maps/NewMap2/scripts.pory"
+# 166 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Sign_Text_0, MSGBOX_SIGN
 	end
 
 
+Route137_EventScript_Tadina_Text_0:
+# 4 "data/maps/NewMap2/scripts.pory"
+	.string "This is a great vacation!$"
+
+Route137_EventScript_Tadina_Text_1:
+# 4 "data/maps/NewMap2/scripts.pory"
+	.string "You just ruined it.$"
+
+Route137_EventScript_Tadina_Text_2:
+# 5 "data/maps/NewMap2/scripts.pory"
+	.string "I haven't gone on vacation in years!$"
+
+Route137_EventScript_Elvina_Text_0:
+# 10 "data/maps/NewMap2/scripts.pory"
+	.string "Hey!\nYou're in my way!$"
+
+Route137_EventScript_Elvina_Text_1:
+# 10 "data/maps/NewMap2/scripts.pory"
+	.string "Just get out of my way!$"
+
+Route137_EventScript_Lena_Text_0:
+# 16 "data/maps/NewMap2/scripts.pory"
+	.string "You got to try the ice cream here!$"
+
+Route137_EventScript_Lena_Text_1:
+# 16 "data/maps/NewMap2/scripts.pory"
+	.string "It's so good.$"
+
+Route137_EventScript_Lena_Text_2:
+# 17 "data/maps/NewMap2/scripts.pory"
+	.string "I heard the owner came all the way\n from UNOVA to open up a shop here.$"
+
+Route137_EventScript_Charles_Text_0:
+# 23 "data/maps/NewMap2/scripts.pory"
+	.string "I love swimming!$"
+
+Route137_EventScript_Charles_Text_1:
+# 23 "data/maps/NewMap2/scripts.pory"
+	.string "I hate sand castles!$"
+
+Route137_EventScript_Charleson_Text_0:
+# 29 "data/maps/NewMap2/scripts.pory"
+	.string "Huff, huff…\nLook how well I can swim!$"
+
+Route137_EventScript_Charleson_Text_1:
+# 29 "data/maps/NewMap2/scripts.pory"
+	.string "Gah! I got a cramp!$"
+
+Route137_EventScript_Charleson_Text_2:
+# 30 "data/maps/NewMap2/scripts.pory"
+	.string "Huff, huff…\n Look how well I can swim!\p Is my wife watching?!$"
+
+Route137_EventScript_Jameson_Text_0:
+# 37 "data/maps/NewMap2/scripts.pory"
+	.string "SWIM! SWIM! SWIM!$"
+
+Route137_EventScript_Jameson_Text_1:
+# 37 "data/maps/NewMap2/scripts.pory"
+	.string "I'LL KEEP SWIMMING!$"
+
+Route137_EventScript_Daveson_Text_0:
+# 43 "data/maps/NewMap2/scripts.pory"
+	.string "Hey!\nLook what I caught at a spot out east!$"
+
+Route137_EventScript_Daveson_Text_1:
+# 43 "data/maps/NewMap2/scripts.pory"
+	.string "What a catch!$"
+
+Route137_EventScript_Daveson_Text_2:
+# 44 "data/maps/NewMap2/scripts.pory"
+	.string "Out to the east there's a village\n that's hard to get into.\p But the culture there is really cool.$"
+
+Route137_EventScript_Hiyoshi_Text_0:
+# 51 "data/maps/NewMap2/scripts.pory"
+	.string "This is my secret training spot!$"
+
+Route137_EventScript_Hiyoshi_Text_1:
+# 51 "data/maps/NewMap2/scripts.pory"
+	.string "I need more training.$"
+
+Route137_EventScript_Hiyoshi_Text_2:
+# 52 "data/maps/NewMap2/scripts.pory"
+	.string "I'm training to finally beat BRUNO!$"
+
+Route137_EventScript_Diddlevon_Text_0:
+# 57 "data/maps/NewMap2/scripts.pory"
+	.string "Oh?\nWhat have we here?$"
+
+Route137_EventScript_Diddlevon_Text_1:
+# 57 "data/maps/NewMap2/scripts.pory"
+	.string "Oh.\nHere what we have.$"
+
+Route137_EventScript_Diddlevon_Text_2:
+# 58 "data/maps/NewMap2/scripts.pory"
+	.string "Even though I look like this,\n I love the beach.$"
+
 Route137_EventScript_Woman_4_Text_0:
-# 6 "data/maps/NewMap2/scripts.pory"
+# 66 "data/maps/NewMap2/scripts.pory"
 	.string "My husband used to be an athlete.\n Every time we come to the beach, he\l has to show off how well he can swim.$"
 
 Route137_EventScript_Woman_1_Text_0:
-# 19 "data/maps/NewMap2/scripts.pory"
+# 79 "data/maps/NewMap2/scripts.pory"
 	.string "Sunbathing is way better than swimming!$"
 
 Route137_EventScript_Tuber_F_Text_0:
-# 30 "data/maps/NewMap2/scripts.pory"
+# 90 "data/maps/NewMap2/scripts.pory"
 	.string "When I grow up, I wanna be a swimmer\n too!$"
 
 Route137_EventScript_Pokefan_M_Text_0:
-# 42 "data/maps/NewMap2/scripts.pory"
+# 102 "data/maps/NewMap2/scripts.pory"
 	.string "My children and I love coming to the\n beach.$"
 
 Route137_EventScript_Tuber_F_2_Text_0:
-# 54 "data/maps/NewMap2/scripts.pory"
+# 114 "data/maps/NewMap2/scripts.pory"
 	.string "All my dumb brother does is swim!\n I want to build a sand castle!$"
 
 Route137_EventScript_Joey_Text_0:
-# 64 "data/maps/NewMap2/scripts.pory"
+# 124 "data/maps/NewMap2/scripts.pory"
 	.string "Ahaha… Yeeeeaaaah…\p ……………………\p They're too relaxed to notice you.$"
 
 Route137_EventScript_Beauty_Text_0:
-# 73 "data/maps/NewMap2/scripts.pory"
+# 133 "data/maps/NewMap2/scripts.pory"
 	.string "That guy next to me just keeps going\n “Yeeeaaaaheheeaaahhh…”\p Is he okay?$"
 
 Route137_EventScript_Sailor1_Text_0:
-# 86 "data/maps/NewMap2/scripts.pory"
+# 146 "data/maps/NewMap2/scripts.pory"
 	.string "Huh?\n … … … …\p How did we get this ship in here with\n all these rocks?\p … You ask too many questions.$"
 
 Route137_EventScript_Sailor2_Text_0:
-# 99 "data/maps/NewMap2/scripts.pory"
+# 159 "data/maps/NewMap2/scripts.pory"
 	.string "Hm…\p That cave wasn't there the\n last time I was here…$"
 
 Route137_EventScript_Sign_Text_0:
-# 106 "data/maps/NewMap2/scripts.pory"
+# 166 "data/maps/NewMap2/scripts.pory"
 	.string "CASTELIA QUEEN\p “Come taste UNOVA's world-famous\n dessert!”$"

@@ -1,4 +1,56 @@
-mapscripts RatCave_Central_MapScripts {}
+mapscripts RatCave_Central_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: RatCave_Central_OnTransition
+}
+
+script RatCave_Central_OnTransition{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
+    end
+}
+
+script RatCave_Central_EventScript_Todd{
+    trainerbattle_single(TRAINER_TODD, "A new age of exploration!", "Losing won't bring me down!")
+    msgbox("There's so much to explore!", MSGBOX_NPC)
+    end
+}
+
+script RatCave_Central_EventScript_Barold{
+    trainerbattle_single(TRAINER_BAROLD, "This cave system is massive!", "That loss was massive…")
+    msgbox("… You know what else is massive?", MSGBOX_NPC)
+    end
+}
+
+script RatCave_Central_EventScript_Samson{
+    trainerbattle_single(TRAINER_SAMSON, "I came here all the way from PETALBURG!", "Maybe I should go back home…")
+    msgbox("Maybe I should go back home…", MSGBOX_NPC)
+    end
+}
+
+script RatCave_Central_EventScript_Deanson{
+    trainerbattle_single(TRAINER_DEANSON, "I can't believe somebody dug this.", "They dug through peoples' houses…")
+    msgbox("You had to walk through somebody's house\n
+        to get here too, right?", MSGBOX_NPC)
+    end
+}
+
+script RatCave_Central_EventScript_Pammy{
+    trainerbattle_single(TRAINER_PAMMY, "This used to be my secret training\nspot!", "Now there's all these people!")
+    msgbox("I need to find a new spot to train.", MSGBOX_NPC)
+    end
+}
+
+script RatCave_Central_EventScript_Sammy{
+    trainerbattle_single(TRAINER_SAMMY, "I used to train at BRUNO's!", "Maybe I should go back to retrain.")
+    msgbox("BRUNO's crazy strong.", MSGBOX_NPC)
+    end
+}
+
+script RatCave_Central_EventScript_Deanuel{
+    trainerbattle_single(TRAINER_DEANUEL, "I heard to the east there's a\ndojo where I can train!", "Maybe I should get stronger first.")
+    msgbox("I'll train more here before I go\n
+        try to join.", MSGBOX_NPC)
+    end
+}
+
 
 script RatCave_Central_EventScript_Camper{
     msgbox(RatCave_Central_Text_Camper, MSGBOX_NPC)
@@ -6,9 +58,11 @@ script RatCave_Central_EventScript_Camper{
 }
 
 text RatCave_Central_Text_Camper{
-    "This cave system looks like it was recently\n
-    excavated…\p
+    "This cave system looks like it was\n
+    recently excavated…\p
     But whoever made it did a fantastic\n
     job at constructing it.\p
     They must be a genius."
 }
+
+

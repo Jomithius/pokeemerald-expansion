@@ -1,4 +1,11 @@
-mapscripts TheUnder_MapScripts {}
+mapscripts TheUnder_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: TheUnder_OnTransition
+}
+
+script TheUnder_OnTransition{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
+    end
+}
 
 script TheUnder_EventScript_Luna{
     lockall
@@ -88,6 +95,26 @@ script TheUnder_EventScript_Carson{
     trainerbattle_single(TRAINER_CARSON, TheUnder_Text_CarsonIntro, TheUnder_Text_CarsonDefeat)
     msgbox(TheUnder_Text_CarsonPostBattle, MSGBOX_AUTOCLOSE)
     waitmessage
+	end
+}
+
+script TheUnder_EventScript_Maximillian{
+    trainerbattle_single(TRAINER_MAXIMILLIAN, "It was a long trip to get here!", "It was still worth it!")
+    msgbox("Before it was almost impossible to\n
+        get out here by foot.", MSGBOX_NPC)
+	end
+}
+
+script TheUnder_EventScript_Samothy{
+    trainerbattle_single(TRAINER_SAMOTHY, "Hey! Catch out this catch!", "I should switch spots.")
+    msgbox("There's a lot of weird POKéMON\n
+        out here.", MSGBOX_NPC)
+	end
+}
+
+script TheUnder_EventScript_Trevor{
+    trainerbattle_single(TRAINER_TREVOR, "Look at this cool POKéMON!", "I've never seen a POKéMON like that!")
+    msgbox("I've never seen a POKéMON like that!", MSGBOX_NPC)
 	end
 }
 

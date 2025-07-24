@@ -3,6 +3,7 @@ mapscripts Route139_MapScripts {
 }
 
 script Route139_OnTransition{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
     call_if_set(FLAG_DEFEATED_WORKER_MORGAN, Route139_UpdateWorkerMorgan)
     call_if_set(FLAG_DEFEATED_WORKER_JOHNALD, Route139_UpdateWorkerJohnald)
     call_if_set(FLAG_DEFEATED_WORKER_DINWIDDLE, Route139_UpdateWorkerDinwiddle)
@@ -35,6 +36,47 @@ script Route139_UpdateWorkerFredward{
     setobjectmovementtype(7, MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT)
     return
 }
+
+script Route139_EventScript_Satoshi{
+    trainerbattle_single(TRAINER_SATOSHI, "Ha!\nYou fell for my trap!", "I still lost…")
+    msgbox("The Chief and MASTER BENNIS are some\n
+        of the greatest ninjas to ever live.", MSGBOX_NPC)
+	end
+}
+
+script Route139_EventScript_Yoshio{
+    trainerbattle_single(TRAINER_YOSHIO, "Too slow!", "T-Too slow…")
+    msgbox("Huh?\p
+        You could see my head sticking out\n
+        from behind the rock?", MSGBOX_NPC)
+	end
+}
+
+script Route139_EventScript_Katashi{
+    trainerbattle_single(TRAINER_KATASHI, "A ninja must be calm, swift,\nand decisive.", "Impressive.")
+    msgbox("LADY ASAKURA was able to become\n
+        a full-fledged ninja at a very\l
+        young age.\p
+        She's an inspiration to us all.", MSGBOX_NPC)
+	end
+}
+
+script Route139_EventScript_Naoki{
+    trainerbattle_single(TRAINER_NAOKI, "Be a dear and entertain me\nwith a battle.", "Thank you.\nIt was fun.")
+    msgbox("I heard LADY ASAKURA returned for\n
+        the ritual.\p
+        I hope she's in time.\n
+        She has a habit of procrastinating.", MSGBOX_NPC)
+	end
+}
+
+script Route139_EventScript_Kyoko{
+    trainerbattle_single(TRAINER_KYOKO, "Fufufu…\nThe ritual… Soon…", "…")
+    msgbox("… I saw the Young Lady has returned.\p
+        Her scalp is resplendent as ever…", MSGBOX_NPC)
+	end
+}
+
 
 script Route139_EventScript_BattleGirl{
     msgbox("BRUNO's way too strong.\n

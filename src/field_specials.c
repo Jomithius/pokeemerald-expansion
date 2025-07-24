@@ -4531,3 +4531,24 @@ bool32 ShouldDoAreaZeroCall(void)
 
     return TRUE;
 }
+
+void IsGhostTypeInParty(void)
+{
+    u8 i;
+    u16 species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gPlayerParty[i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (gSpeciesInfo[species].types[0] == TYPE_GHOST || gSpeciesInfo[species].types[1] == TYPE_GHOST)
+            {
+                gSpecialVar_Result = TRUE;
+                return;
+            }
+        }
+    }
+    gSpecialVar_Result = FALSE;
+}

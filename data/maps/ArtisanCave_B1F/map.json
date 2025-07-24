@@ -87,22 +87,22 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "AzureMountain_EventScript_Bjornulfr",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 25,
       "y": 11,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
       "movement_range_x": 5,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "AzureMountain_EventScript_Hurley",
       "flag": "0"
     },
     {
@@ -113,9 +113,9 @@
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 5,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "AzureMountain_EventScript_Rin",
       "flag": "0"
     },
     {
@@ -126,48 +126,48 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
       "movement_range_x": 2,
       "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "AzureMountain_EventScript_Yuu",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 16,
       "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_LEFT_DOWN_UP",
       "movement_range_x": 5,
       "movement_range_y": 2,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "AzureMountain_EventScript_Barley",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
       "x": 25,
       "y": 35,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "AzureMountain_EventScript_Shuji",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
       "x": 23,
       "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_RIGHT_DOWN_UP",
       "movement_range_x": 5,
       "movement_range_y": 2,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "AzureMountain_EventScript_Jessi",
       "flag": "0"
     },
     {
@@ -178,9 +178,9 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "AzureMountain_EventScript_Dogfood",
       "flag": "0"
     },
     {
@@ -193,7 +193,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Common_EventScript_FindItem",
       "flag": "0"
     },
     {
@@ -206,7 +206,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Common_EventScript_FindItem",
       "flag": "0"
     },
     {
@@ -219,7 +219,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Common_EventScript_FindItem",
       "flag": "0"
     },
     {
@@ -268,7 +268,7 @@
       "x": 19,
       "y": 44,
       "elevation": 0,
-      "item": "ITEM_ZINC",
+      "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_ZINC"
     },
     {
@@ -276,7 +276,7 @@
       "x": 28,
       "y": 31,
       "elevation": 0,
-      "item": "ITEM_CALCIUM",
+      "item": "ITEM_PP_MAX",
       "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_CALCIUM"
     },
     {
@@ -284,7 +284,7 @@
       "x": 28,
       "y": 40,
       "elevation": 0,
-      "item": "ITEM_PROTEIN",
+      "item": "ITEM_PP_MAX",
       "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_PROTEIN"
     },
     {
@@ -292,7 +292,7 @@
       "x": 19,
       "y": 43,
       "elevation": 0,
-      "item": "ITEM_IRON",
+      "item": "ITEM_PP_MAX",
       "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_IRON"
     }
   ]

@@ -73,7 +73,6 @@ script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
     setvar(VAR_CEO_STATE, 2)
     setflag(FLAG_CALL_FROM_CEO)
     setflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
-    setflag(FLAG_SYS_DYNAMIC_LEVELS)
     call(LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags)
     warp(MAP_LILYCOVE_CITY, 51, 7)
     waitstate

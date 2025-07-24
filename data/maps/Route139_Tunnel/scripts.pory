@@ -1,1 +1,13 @@
 mapscripts Route139_Tunnel_MapScripts {}
+
+script Route139_Tunnel_EventScript_Natsuko{
+    trainerbattle_single(TRAINER_NATSUKO, "I must test that you're\nworthy to pass!", "… You're worthy.")
+    msgbox("… Soon… The ritual will start…", MSGBOX_NPC)
+	end
+}
+
+script Route139_Tunnel_EventScript_Akiko{
+    trainerbattle_single(TRAINER_AKIKO, "My sister and I are tasked\nwith guarding the path!", "You may pass.")
+    msgbox("… Soon… The ritual will start…", MSGBOX_NPC)
+	end
+}

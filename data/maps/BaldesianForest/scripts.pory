@@ -1,5 +1,55 @@
 mapscripts BaldesianForest_MapScripts {}
 
+script BaldesianForest_EventScript_Masato{
+    trainerbattle_single(TRAINER_MASATO, "Time to show the results of\nmy training!", "Those were poor results…")
+    msgbox("I love training!", MSGBOX_NPC)
+	end
+}
+
+script BaldesianForest_EventScript_Kamiko{
+    trainerbattle_single(TRAINER_KAMIKO, "I just love a stroll through the forest!", "Aw, I lost…")
+    msgbox("I just love a stroll through the forest!", MSGBOX_NPC)
+	end
+}
+
+script BaldesianForest_EventScript_Miyako{
+    trainerbattle_single(TRAINER_MIYAKO, "We're protecting the shrine!", "The shrine…")
+    msgbox("This shrine used to have tons of\n
+        visitors.\p
+        But as the years went on, more and more\n
+        people stopped coming.", MSGBOX_NPC)
+	end
+}
+
+script BaldesianForest_EventScript_Kotone{
+    trainerbattle_single(TRAINER_KOTONE, "CELEBI!\nWhy won't you respond to the melody?", "The melody…")
+    msgbox("We used to also perform rituals here\n
+        for CELEBI.\p
+        That was a long time ago.", MSGBOX_NPC)
+	end
+}
+
+script BaldesianForest_EventScript_Yoshiko{
+    trainerbattle_single(TRAINER_YOSHIKO, "Argh!\nI still can't beat BRUNO!", "Sorry for taking it out on you.")
+    msgbox("I swear!\n
+        BRUNO is impossible to beat!", MSGBOX_NPC)
+	end
+}
+
+script BaldesianForest_EventScript_Hanzo{
+    trainerbattle_single(TRAINER_HANZO, "Haha! I bet you didn't see me!\nDid I scare you?", "I'm a master of disguise!")
+    msgbox("I'm small so its easy for\n
+        me to hide!", MSGBOX_NPC)
+	end
+}
+
+script BaldesianForest_EventScript_Genji{
+    trainerbattle_single(TRAINER_GENJI, "Baldy, baldy, over- huh?\nYou're not bald!", "You're the loser since you\nhave hair!")
+    msgbox("Sorry.\n
+        I don't talk to hair-having losers.", MSGBOX_NPC)
+	end
+}
+
 script BaldesianForest_EventScript_Landorus{
     lock
     faceplayer
@@ -191,6 +241,86 @@ script BaldesianForest_EventScript_OldMan{
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
+    release
+    end
+}
+
+script BaldesianForest_EventScript_OldManDojo{
+    lock
+    faceplayer
+    goto_if_unset(FLAG_RECEIVED_TEACUP, BaldesianForest_EventScript_OldManDojoGiveTeaCup)
+    msgbox("Gahaha!\n
+        Nothing like a good wager!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script BaldesianForest_EventScript_Expert_F_RevealGlass{
+    lock
+    faceplayer
+    goto_if_unset(FLAG_SYS_DEFEATED_BRUNO, BaldesianForest_EventScript_Expert_F_DefeatBruno)
+    goto_if_set(FLAG_RECEIVED_REVEAL_GLASS, BaldesianForest_EventScript_Expert_F_ExplainRevealGlass)
+    msgbox("Wow! You actually did it?\n
+        As promised, you can have this.", MSGBOX_DEFAULT)
+    giveitem(ITEM_REVEAL_GLASS)
+    waitmessage
+    setflag(FLAG_RECEIVED_REVEAL_GLASS)
+    goto(BaldesianForest_EventScript_Expert_F_ExplainRevealGlass)
+    release
+    end
+}
+
+script BaldesianForest_EventScript_Expert_F_DefeatBruno{
+    msgbox("Hm…\n
+        You seem strong.\p
+        Tell you what: beat BRUNO\n
+        and I'll give you a prize.", MSGBOX_NPC)
+    end
+}
+
+script BaldesianForest_EventScript_Expert_F_ExplainRevealGlass{
+    msgbox("That artifact is said to reveal\n
+        the true form of the forces of nature.", MSGBOX_NPC)
+    end
+}
+
+script BaldesianForest_EventScript_OldManDojoGiveTeaCup{
+    lock
+    faceplayer
+    msgbox("Hey!\n
+        You like gambling?", MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        msgbox("Gahaha!\n
+            Alright!\p
+            I'm holding something in my hands.
+            Left or right?", MSGBOX_DEFAULT)
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Left!", "Right!")
+            if(var(VAR_RESULT) == 0){
+                msgbox("Gahaha! You win!", MSGBOX_DEFAULT)
+                checkitem(ITEM_MASTERPIECE_TEACUP)
+                goto_if_ne(VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull)
+                giveitem(ITEM_MASTERPIECE_TEACUP)
+                waitmessage
+                setflag(FLAG_RECEIVED_TEACUP)
+            }
+            else{
+                msgbox("Gahaha!\nBetter luck next time!", MSGBOX_DEFAULT)
+                checkitem(ITEM_UNREMARKABLE_TEACUP)
+                goto_if_ne(VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull)
+                giveitem(ITEM_UNREMARKABLE_TEACUP)
+                waitmessage
+                setflag(FLAG_RECEIVED_TEACUP)
+            }
+        msgbox("Gahaha!\n
+            Nothing like a good wager!", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("… Oh.\n
+            Nevermind then.", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
     release
     end
 }

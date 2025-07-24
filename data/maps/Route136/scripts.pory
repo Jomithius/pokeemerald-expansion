@@ -1,12 +1,29 @@
 const LOCALID_KLAWF = 12
 
 mapscripts Route136_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Route136_OnTransition
     MAP_SCRIPT_ON_RESUME: Route136_OnResume
+   
 }
 
 script Route136_OnResume{
     call_if_eq(VAR_ROUTE_136_STATE, 1, Route136_RemoveKlawf)
     end
+}
+
+script Route136_OnTransition{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
+    call_if_set(FLAG_DEFEATED_KLAWF, Route136_TryUpdateWeather)
+    end
+}
+
+script Route136_TryUpdateWeather{
+    checkobjectat(11, 8)
+    if(var(VAR_RESULT) == TRUE){
+        setweather(WEATHER_SHADE)
+        doweather
+    }
+    return
 }
 
 script Route136_RemoveKlawf{
@@ -120,3 +137,53 @@ script Route136_EventScript_HikerKlawf{
     release
     end
 }
+
+script Route136_EventScript_Newton{
+    trainerbattle_single(TRAINER_NEWTON, "This is a prime spot!", "I still won't move!")
+    msgbox("This is a huge waterfall.\n
+        There are tons of MAGIKARP that try\l
+        to swim up the mountain each day.", MSGBOX_NPC)
+	end
+}
+
+script Route136_EventScript_Dewton{
+    trainerbattle_single(TRAINER_DEWTON, "All I've caught is MAGIKARP here!", "I should go back to my old spot.")
+    msgbox("I heard there's a new cave that\n
+        opened up on ROUTE 137.\p
+        There must be rare POKéMON in there.", MSGBOX_NPC)
+	end
+}
+
+script Route136_EventScript_Johnithin{
+    trainerbattle_single(TRAINER_JOHNITHIN, "I've trained so much that I've\ngotten so skinny.", "I'm so fricking skinny…")
+    msgbox("A long time ago I used to train\n
+        in BALDESIA.\p
+        You should visit the dojo out there if\n
+        you ever have the chance.", MSGBOX_NPC)
+	end
+}
+
+script Route136_EventScript_Bobby{
+    trainerbattle_single(TRAINER_BOBBY, "I want to hike up the mountain,\nbut a POKéMON is blocking the entrance.", "Oh, well.")
+    msgbox("I guess I can wait to make\n
+        the hike.
+        There's a lot of strong TRAINERS in\n
+        there either way.", MSGBOX_NPC)
+	end
+}
+
+script Route136_EventScript_Tobias{
+    trainerbattle_single(TRAINER_TOBIAS, "Up ahead is the tallest mountain\nin HOENN!", "I'm afraid of tall things.")
+    msgbox("You remind me of another TRAINER\n
+        that came through here recently.", MSGBOX_NPC)
+	end
+}
+
+script Route136_EventScript_Bentley{
+    trainerbattle_single(TRAINER_BENTLEY, "I can feel it…\nAdventure awaits me!", "Maybe I'm not the main character…")
+    msgbox("AZURE MOUNTAIN has some crazy\n
+        strong POKéMON.", MSGBOX_NPC)
+	end
+}
+
+

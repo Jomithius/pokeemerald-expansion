@@ -6,3 +6,38 @@ script Route138_EventScript_Camper{
         let me in!", MSGBOX_NPC)
     end
 }
+
+script Route138_EventScript_Pamela{
+    trainerbattle_single(TRAINER_PAMELA, "I swam here all the way from\nWACHUNPELON!", "I don't want to swim\nall the way back.")
+    msgbox("It's gonna be a long swim back.", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Pamson{
+    trainerbattle_single(TRAINER_PAMSON, "Check it out!\pOne of my FINIZEN evolved,\nbut it still looks the same!", "Nothing changed at all!")
+    msgbox("One of my FINIZEN evolved,\n
+        but it still looks the same!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Suzu{
+    trainerbattle_single(TRAINER_SUZU, "I train in the unseen fist style!", "My fist is still seen…")
+    msgbox("I won't beat BRUNO or MOMO\n
+        at this rate!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Hitomi{
+    trainerbattle_single(TRAINER_HITOMI, "Oh, hello. I've never seen you before.", "Thank you for the battle.")
+    msgbox("Are you trying to enter BALDESIA?\p
+        It might be hard for you since\n
+        you're not a resident.", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Kazuki{
+    trainerbattle_single(TRAINER_KAZUKI, "Osu!", "Osu!")
+    msgbox("Osu!", MSGBOX_NPC)
+	end
+}
+

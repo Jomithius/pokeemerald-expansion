@@ -1,1 +1,114 @@
 mapscripts Route138_2_MapScripts {}
+
+script Route138_EventScript_Ken{
+    trainerbattle_single(TRAINER_KEN, "Oho?\nTravelers are rare around here.", "You're strong, youngster.")
+    msgbox("Strength like that is rare, youngster.", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Aiko{
+    trainerbattle_single(TRAINER_AIKO, "Don't underestimate me!", "You're strong!")
+    msgbox("I gotta keep training!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Ayumi{
+    trainerbattle_single(TRAINER_AYUMI, "Hello. Are you interested in a battle?", "That was fun!")
+    msgbox("I love going on strolls outside\n
+        of the village.", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Mana{
+    trainerbattle_single(TRAINER_AYUMI, "Ara.\nI've never seen you around here before.", "Ara.\nYou're pretty strong.")
+    msgbox("My husband is a ninja.\n
+        He likes training around here.", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Kohaku{
+    trainerbattle_single(TRAINER_KOHAKU, "Rule one!\nDecieve your enemy!", "Rule two:\ndon't take fights you can't win…")
+    msgbox("A ninja's all about being a\n
+        master of deception!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Ryuu{
+    trainerbattle_single(TRAINER_RYUU, "Nin! Nin!", "N-Nin…")
+    msgbox("Nin! Nin nin!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Ichigo{
+    trainerbattle_single(TRAINER_ICHIGO, "We're protectors of the village!", "You're mean…")
+    msgbox("We're protects of the village!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Iwao{
+    trainerbattle_single(TRAINER_IWAO, "Hi-yah!", "H-Hi-yah…")
+    msgbox("Hi-yah!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Katsumi{
+    trainerbattle_single(TRAINER_KATSUMI, "Ahaha! You FOOL!\nYou fell for my trap!", "I guess it didn't matter…")
+    msgbox("A ninja's all about being a\n
+        master of deception!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Hagerou{
+    trainerbattle_single(TRAINER_HAGEROU, "Time to remove your hair follicles!", "You can keep them…")
+    msgbox("Most ninjas are bald in respect to\n
+        LADY ASAKURA!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Jurou{
+    trainerbattle_single(TRAINER_JUROU, "Did you not see me?", "I lost…")
+    msgbox("Baldy, baldy, over there!", MSGBOX_NPC)
+	end
+}
+
+script Route138_EventScript_Masashi{
+    trainerbattle_single(TRAINER_MASASHI, "Ha! My bald head gives me\nbetter aerodynamics!", "I was still too slow…")
+    msgbox("The breeze feels nice on my scalp.", MSGBOX_NPC)
+	end
+}
+
+
+script Route138_EventScript_BlackBelt{
+    msgbox("Up ahead is BALDESIA, the\n
+    village of NINJAS.\p
+    I don't know if an outsider like\n
+    you will be allowed in.", MSGBOX_NPC)
+    end
+}
+
+script Route138_EventScript_KimonoLady{
+    msgbox("My husband and kids love using\n
+        disguises.\p
+        It's so fun watching them practice\n
+        their ninjutsu.", MSGBOX_NPC)
+    end
+}
+
+script Route138_EventScript_Expert_F{
+    lock
+    faceplayer
+    msgbox("Oh? A traveler?\n
+        Do you know anybody from BALDESIA?", MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES){
+        msgbox("Fufu.\n
+            You might be allowed in then!", MSGBOX_NPC)
+    }
+    else{
+        msgbox("Hm.\n
+            Usually you need to know somebody\l
+            to be allowed in…", MSGBOX_NPC)
+    }
+    release
+    end
+}

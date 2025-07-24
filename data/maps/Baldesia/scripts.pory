@@ -17,6 +17,7 @@ mapscripts Baldesia_MapScripts {
 }
 
 script Baldesia_OnTransition{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
     call_if_set(FLAG_HIDE_NINJA_BOY_1_BALDESIA, Baldesia_UpdateNinjaBoy1Location)
     call_if_set(FLAG_HIDE_NINJA_BOY_2_BALDESIA, Baldesia_UpdateNinjaBoy2Location)
     call_if_set(FLAG_HIDE_NINJA_BOY_3_BALDESIA, Baldesia_UpdateNinjaBoy3Location)

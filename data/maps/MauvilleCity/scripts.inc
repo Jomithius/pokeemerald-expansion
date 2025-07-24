@@ -17,485 +17,485 @@ MauvilleCity_MapScripts::
 # 9 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_OnTransition:
 # 10 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_VISITED_MAUVILLE_CITY
+	clearflag FLAG_SYS_DYNAMIC_LEVELS
 # 11 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
+	setflag FLAG_VISITED_MAUVILLE_CITY
 # 12 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION
+	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
 # 13 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_SYS_TV_START
+	clearflag FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION
 # 14 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
+	setflag FLAG_SYS_TV_START
 # 15 "data/maps/MauvilleCity/scripts.pory"
-	setvar VAR_MAUVILLE_GYM_STATE, 0
+	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
 # 16 "data/maps/MauvilleCity/scripts.pory"
-	call_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym
+	setvar VAR_MAUVILLE_GYM_STATE, 0
 # 17 "data/maps/MauvilleCity/scripts.pory"
-	end
+	call_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym
 # 18 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 19 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_MoveWattsonBackToGym::
+
 # 20 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+MauvilleCity_EventScript_MoveWattsonBackToGym::
 # 21 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
+	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
 # 22 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_WATTSON_REMATCH_AVAILABLE
+	setflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
 # 23 "data/maps/MauvilleCity/scripts.pory"
-	return
+	setflag FLAG_WATTSON_REMATCH_AVAILABLE
 # 24 "data/maps/MauvilleCity/scripts.pory"
-
+	return
 # 25 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_Boy::
+
 # 26 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC
+MauvilleCity_EventScript_Boy::
 # 27 "data/maps/MauvilleCity/scripts.pory"
-	end
+	msgbox MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC
 # 28 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 29 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_Maniac::
+
 # 30 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_AllSortsOfPeopleComeThrough, MSGBOX_NPC
+MauvilleCity_EventScript_Maniac::
 # 31 "data/maps/MauvilleCity/scripts.pory"
-	end
+	msgbox MauvilleCity_Text_AllSortsOfPeopleComeThrough, MSGBOX_NPC
 # 32 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 33 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_Woman::
+
 # 34 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_RydelVeryGenerous, MSGBOX_NPC
+MauvilleCity_EventScript_Woman::
 # 35 "data/maps/MauvilleCity/scripts.pory"
-	end
+	msgbox MauvilleCity_Text_RydelVeryGenerous, MSGBOX_NPC
 # 36 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 37 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_RichBoy::
+
 # 38 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_PokemonCanJumpYouOnBike, MSGBOX_NPC
+MauvilleCity_EventScript_RichBoy::
 # 39 "data/maps/MauvilleCity/scripts.pory"
-	end
+	msgbox MauvilleCity_Text_PokemonCanJumpYouOnBike, MSGBOX_NPC
 # 40 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 41 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_CitySign::
+
 # 42 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_CitySign, MSGBOX_SIGN
+MauvilleCity_EventScript_CitySign::
 # 43 "data/maps/MauvilleCity/scripts.pory"
-	end
+	msgbox MauvilleCity_Text_CitySign, MSGBOX_SIGN
 # 44 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 45 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_GymSign::
+
 # 46 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_GymSign, MSGBOX_SIGN
+MauvilleCity_EventScript_GymSign::
 # 47 "data/maps/MauvilleCity/scripts.pory"
-	end
+	msgbox MauvilleCity_Text_GymSign, MSGBOX_SIGN
 # 48 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 49 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_BikeShopSign::
+
 # 50 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_BikeShopSign, MSGBOX_SIGN
+MauvilleCity_EventScript_BikeShopSign::
 # 51 "data/maps/MauvilleCity/scripts.pory"
-	end
+	msgbox MauvilleCity_Text_BikeShopSign, MSGBOX_SIGN
 # 52 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 53 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_GameCornerSign::
+
 # 54 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_GameCornerSign, MSGBOX_SIGN
+MauvilleCity_EventScript_GameCornerSign::
 # 55 "data/maps/MauvilleCity/scripts.pory"
-	end
+	msgbox MauvilleCity_Text_GameCornerSign, MSGBOX_SIGN
 # 56 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 57 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_SchoolKidM::
+
 # 58 "data/maps/MauvilleCity/scripts.pory"
-	lock
+MauvilleCity_EventScript_SchoolKidM::
 # 59 "data/maps/MauvilleCity/scripts.pory"
-	faceplayer
-# 60 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_set FLAG_TV_EXPLAINED, MauvilleCity_EventScript_TVExplained
-# 61 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_ExplainTV, MSGBOX_DEFAULT
-# 62 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_TV_EXPLAINED
-# 63 "data/maps/MauvilleCity/scripts.pory"
-	release
-# 64 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 65 "data/maps/MauvilleCity/scripts.pory"
-
-# 66 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_TVExplained::
-# 67 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_BeenCheckingOutTV, MSGBOX_DEFAULT
-# 68 "data/maps/MauvilleCity/scripts.pory"
-	release
-# 69 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 70 "data/maps/MauvilleCity/scripts.pory"
-
-# 71 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_WallysUncle::
-# 72 "data/maps/MauvilleCity/scripts.pory"
 	lock
-# 73 "data/maps/MauvilleCity/scripts.pory"
+# 60 "data/maps/MauvilleCity/scripts.pory"
 	faceplayer
+# 61 "data/maps/MauvilleCity/scripts.pory"
+	goto_if_set FLAG_TV_EXPLAINED, MauvilleCity_EventScript_TVExplained
+# 62 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_ExplainTV, MSGBOX_DEFAULT
+# 63 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_TV_EXPLAINED
+# 64 "data/maps/MauvilleCity/scripts.pory"
+	release
+# 65 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 66 "data/maps/MauvilleCity/scripts.pory"
+
+# 67 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_TVExplained::
+# 68 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_BeenCheckingOutTV, MSGBOX_DEFAULT
+# 69 "data/maps/MauvilleCity/scripts.pory"
+	release
+# 70 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 71 "data/maps/MauvilleCity/scripts.pory"
+
+# 72 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_WallysUncle::
+# 73 "data/maps/MauvilleCity/scripts.pory"
+	lock
 # 74 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
+	faceplayer
 # 75 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT
+	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
 # 76 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
+	msgbox MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT
 # 77 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
+	closemessage
 # 78 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 79 "data/maps/MauvilleCity/scripts.pory"
-	release
-# 80 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 81 "data/maps/MauvilleCity/scripts.pory"
-
-# 82 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
-# 83 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleCanYouBattleWally, MSGBOX_DEFAULT
-# 84 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
-# 85 "data/maps/MauvilleCity/scripts.pory"
 	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
+# 79 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 80 "data/maps/MauvilleCity/scripts.pory"
+	release
+# 81 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 82 "data/maps/MauvilleCity/scripts.pory"
+
+# 83 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
+# 84 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_UncleCanYouBattleWally, MSGBOX_DEFAULT
+# 85 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
 # 86 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
 # 87 "data/maps/MauvilleCity/scripts.pory"
-	release
+	waitmovement 0
 # 88 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 89 "data/maps/MauvilleCity/scripts.pory"
-
-# 90 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_Wally::
-# 91 "data/maps/MauvilleCity/scripts.pory"
-	lockall
-# 92 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain
-# 93 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
-# 94 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 95 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT
-# 96 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT
-# 97 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT
-# 98 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
-# 99 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 100 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_PIN
-# 101 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
-# 102 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 103 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_Delay48
-# 104 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 105 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO
-# 106 "data/maps/MauvilleCity/scripts.pory"
-	goto MauvilleCity_EventScript_BattleWallyPrompt
-# 107 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 108 "data/maps/MauvilleCity/scripts.pory"
-
-# 109 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_BattleWallyPrompt::
-# 110 "data/maps/MauvilleCity/scripts.pory"
-	call_if_eq VAR_RESULT, YES, MauvilleCity_EventScript_BattleWally
-# 111 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MauvilleCity_EventScript_DeclineWallyBattle
-# 112 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
-# 113 "data/maps/MauvilleCity/scripts.pory"
-	switch VAR_FACING
-# 114 "data/maps/MauvilleCity/scripts.pory"
-	case DIR_NORTH, MauvilleCity_EventScript_WallyAndUncleExitNorth
-# 115 "data/maps/MauvilleCity/scripts.pory"
-	case DIR_EAST, MauvilleCity_EventScript_WallyAndUncleExitEast
-# 116 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 117 "data/maps/MauvilleCity/scripts.pory"
-
-# 118 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_WallyAndUncleExitNorth::
-# 119 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitNorth1
-# 120 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitNorth1
-# 121 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitNorth1
-# 122 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 123 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
-# 124 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 125 "data/maps/MauvilleCity/scripts.pory"
-	delay 30
-# 126 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerFaceUncleNorth
-# 127 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleApproachPlayerNorth
-# 128 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 129 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT
-# 130 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
-# 131 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitNorth2
-# 132 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitNorth2
-# 133 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitNorth2
-# 134 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 135 "data/maps/MauvilleCity/scripts.pory"
-	goto MauvilleCity_EventScript_DefeatedWally
-# 136 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 137 "data/maps/MauvilleCity/scripts.pory"
-
-# 138 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_WallyAndUncleExitEast::
-# 139 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitEast1
-# 140 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitEast1
-# 141 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitEast1
-# 142 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 143 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
-# 144 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 145 "data/maps/MauvilleCity/scripts.pory"
-	delay 30
-# 146 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleApproachPlayerEast
-# 147 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 148 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT
-# 149 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
-# 150 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitEast2
-# 151 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitEast2
-# 152 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitEast2
-# 153 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 154 "data/maps/MauvilleCity/scripts.pory"
-	goto MauvilleCity_EventScript_DefeatedWally
-# 155 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 156 "data/maps/MauvilleCity/scripts.pory"
-
-# 157 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_DefeatedWally::
-# 158 "data/maps/MauvilleCity/scripts.pory"
-	removeobject LOCALID_WALLY
-# 159 "data/maps/MauvilleCity/scripts.pory"
-	removeobject LOCALID_WALLYS_UNCLE
-# 160 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
-# 161 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE
-# 162 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_DEFEATED_WALLY_MAUVILLE
-# 163 "data/maps/MauvilleCity/scripts.pory"
-	setvar VAR_WALLY_CALL_STEP_COUNTER, 0
-# 164 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL
-# 165 "data/maps/MauvilleCity/scripts.pory"
-	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottApproachPlayerNorth
-# 166 "data/maps/MauvilleCity/scripts.pory"
-	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottApproachPlayerEast
-# 167 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-# 168 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 169 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_ScottYouDidntHoldBack, MSGBOX_DEFAULT
-# 170 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
-# 171 "data/maps/MauvilleCity/scripts.pory"
-	addvar VAR_SCOTT_STATE, 1
-# 172 "data/maps/MauvilleCity/scripts.pory"
-	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottExitNorth
-# 173 "data/maps/MauvilleCity/scripts.pory"
-	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottExitEast
-# 174 "data/maps/MauvilleCity/scripts.pory"
-	removeobject LOCALID_SCOTT
-# 175 "data/maps/MauvilleCity/scripts.pory"
-	releaseall
-# 176 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 177 "data/maps/MauvilleCity/scripts.pory"
-
-# 178 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_ScottApproachPlayerNorth::
-# 179 "data/maps/MauvilleCity/scripts.pory"
-	addobject LOCALID_SCOTT
-# 180 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottApproachPlayerNorth
-# 181 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 182 "data/maps/MauvilleCity/scripts.pory"
-	return
-# 183 "data/maps/MauvilleCity/scripts.pory"
-
-# 184 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_ScottApproachPlayerEast::
-# 185 "data/maps/MauvilleCity/scripts.pory"
-	setobjectxyperm LOCALID_SCOTT, 12, 13
-# 186 "data/maps/MauvilleCity/scripts.pory"
-	addobject LOCALID_SCOTT
-# 187 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottApproachPlayerEast
-# 188 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 189 "data/maps/MauvilleCity/scripts.pory"
-	return
-# 190 "data/maps/MauvilleCity/scripts.pory"
-
-# 191 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_ScottExitNorth::
-# 192 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchScottExitNorth
-# 193 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottExitNorth
-# 194 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 195 "data/maps/MauvilleCity/scripts.pory"
-	return
-# 196 "data/maps/MauvilleCity/scripts.pory"
-
-# 197 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_ScottExitEast::
-# 198 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchScottExitEast
-# 199 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottExitEast
-# 200 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 201 "data/maps/MauvilleCity/scripts.pory"
-	return
-# 202 "data/maps/MauvilleCity/scripts.pory"
-
-# 203 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_BattleWally::
-# 204 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT
-# 205 "data/maps/MauvilleCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat
-# 206 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
-# 207 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 208 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT
-# 209 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
-# 210 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 211 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_ThankYouNotEnoughToBattle, MSGBOX_DEFAULT
-# 212 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
-# 213 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 214 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleNoNeedToBeDown, MSGBOX_DEFAULT
-# 215 "data/maps/MauvilleCity/scripts.pory"
-	return
-# 216 "data/maps/MauvilleCity/scripts.pory"
-
-# 217 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_DeclineWallyBattle::
-# 218 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_DECLINED_WALLY_BATTLE_MAUVILLE
-# 219 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyMyUncleWontKnowImStrong, MSGBOX_DEFAULT
-# 220 "data/maps/MauvilleCity/scripts.pory"
 	release
-# 221 "data/maps/MauvilleCity/scripts.pory"
+# 89 "data/maps/MauvilleCity/scripts.pory"
 	end
-# 222 "data/maps/MauvilleCity/scripts.pory"
+# 90 "data/maps/MauvilleCity/scripts.pory"
 
-# 223 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_WallyRequestBattleAgain::
-# 224 "data/maps/MauvilleCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
-# 225 "data/maps/MauvilleCity/scripts.pory"
+# 91 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_Wally::
+# 92 "data/maps/MauvilleCity/scripts.pory"
+	lockall
+# 93 "data/maps/MauvilleCity/scripts.pory"
+	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain
+# 94 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
+# 95 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
-# 226 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyPleaseBattleMe, MSGBOX_YESNO
-# 227 "data/maps/MauvilleCity/scripts.pory"
+# 96 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT
+# 97 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT
+# 98 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT
+# 99 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+# 100 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 101 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 102 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+# 103 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 104 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_Delay48
+# 105 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 106 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO
+# 107 "data/maps/MauvilleCity/scripts.pory"
 	goto MauvilleCity_EventScript_BattleWallyPrompt
-# 228 "data/maps/MauvilleCity/scripts.pory"
+# 108 "data/maps/MauvilleCity/scripts.pory"
 	end
-# 229 "data/maps/MauvilleCity/scripts.pory"
+# 109 "data/maps/MauvilleCity/scripts.pory"
 
+# 110 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_BattleWallyPrompt::
+# 111 "data/maps/MauvilleCity/scripts.pory"
+	call_if_eq VAR_RESULT, YES, MauvilleCity_EventScript_BattleWally
+# 112 "data/maps/MauvilleCity/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, MauvilleCity_EventScript_DeclineWallyBattle
+# 113 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 114 "data/maps/MauvilleCity/scripts.pory"
+	switch VAR_FACING
+# 115 "data/maps/MauvilleCity/scripts.pory"
+	case DIR_NORTH, MauvilleCity_EventScript_WallyAndUncleExitNorth
+# 116 "data/maps/MauvilleCity/scripts.pory"
+	case DIR_EAST, MauvilleCity_EventScript_WallyAndUncleExitEast
+# 117 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 118 "data/maps/MauvilleCity/scripts.pory"
+
+# 119 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_WallyAndUncleExitNorth::
+# 120 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitNorth1
+# 121 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitNorth1
+# 122 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitNorth1
+# 123 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 124 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
+# 125 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 126 "data/maps/MauvilleCity/scripts.pory"
+	delay 30
+# 127 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerFaceUncleNorth
+# 128 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleApproachPlayerNorth
+# 129 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 130 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT
+# 131 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 132 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitNorth2
+# 133 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitNorth2
+# 134 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitNorth2
+# 135 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 136 "data/maps/MauvilleCity/scripts.pory"
+	goto MauvilleCity_EventScript_DefeatedWally
+# 137 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 138 "data/maps/MauvilleCity/scripts.pory"
+
+# 139 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_WallyAndUncleExitEast::
+# 140 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitEast1
+# 141 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitEast1
+# 142 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitEast1
+# 143 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 144 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
+# 145 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 146 "data/maps/MauvilleCity/scripts.pory"
+	delay 30
+# 147 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleApproachPlayerEast
+# 148 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 149 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT
+# 150 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 151 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitEast2
+# 152 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitEast2
+# 153 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitEast2
+# 154 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 155 "data/maps/MauvilleCity/scripts.pory"
+	goto MauvilleCity_EventScript_DefeatedWally
+# 156 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 157 "data/maps/MauvilleCity/scripts.pory"
+
+# 158 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_DefeatedWally::
+# 159 "data/maps/MauvilleCity/scripts.pory"
+	removeobject LOCALID_WALLY
+# 160 "data/maps/MauvilleCity/scripts.pory"
+	removeobject LOCALID_WALLYS_UNCLE
+# 161 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
+# 162 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE
+# 163 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_DEFEATED_WALLY_MAUVILLE
+# 164 "data/maps/MauvilleCity/scripts.pory"
+	setvar VAR_WALLY_CALL_STEP_COUNTER, 0
+# 165 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL
+# 166 "data/maps/MauvilleCity/scripts.pory"
+	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottApproachPlayerNorth
+# 167 "data/maps/MauvilleCity/scripts.pory"
+	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottApproachPlayerEast
+# 168 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+# 169 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 170 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_ScottYouDidntHoldBack, MSGBOX_DEFAULT
+# 171 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 172 "data/maps/MauvilleCity/scripts.pory"
+	addvar VAR_SCOTT_STATE, 1
+# 173 "data/maps/MauvilleCity/scripts.pory"
+	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottExitNorth
+# 174 "data/maps/MauvilleCity/scripts.pory"
+	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottExitEast
+# 175 "data/maps/MauvilleCity/scripts.pory"
+	removeobject LOCALID_SCOTT
+# 176 "data/maps/MauvilleCity/scripts.pory"
+	releaseall
+# 177 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 178 "data/maps/MauvilleCity/scripts.pory"
+
+# 179 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_ScottApproachPlayerNorth::
+# 180 "data/maps/MauvilleCity/scripts.pory"
+	addobject LOCALID_SCOTT
+# 181 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottApproachPlayerNorth
+# 182 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 183 "data/maps/MauvilleCity/scripts.pory"
+	return
+# 184 "data/maps/MauvilleCity/scripts.pory"
+
+# 185 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_ScottApproachPlayerEast::
+# 186 "data/maps/MauvilleCity/scripts.pory"
+	setobjectxyperm LOCALID_SCOTT, 12, 13
+# 187 "data/maps/MauvilleCity/scripts.pory"
+	addobject LOCALID_SCOTT
+# 188 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottApproachPlayerEast
+# 189 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 190 "data/maps/MauvilleCity/scripts.pory"
+	return
+# 191 "data/maps/MauvilleCity/scripts.pory"
+
+# 192 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_ScottExitNorth::
+# 193 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchScottExitNorth
+# 194 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottExitNorth
+# 195 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 196 "data/maps/MauvilleCity/scripts.pory"
+	return
+# 197 "data/maps/MauvilleCity/scripts.pory"
+
+# 198 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_ScottExitEast::
+# 199 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchScottExitEast
+# 200 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottExitEast
+# 201 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 202 "data/maps/MauvilleCity/scripts.pory"
+	return
+# 203 "data/maps/MauvilleCity/scripts.pory"
+
+# 204 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_BattleWally::
+# 205 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT
+# 206 "data/maps/MauvilleCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat
+# 207 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
+# 208 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 209 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT
+# 210 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+# 211 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 212 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_ThankYouNotEnoughToBattle, MSGBOX_DEFAULT
+# 213 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
+# 214 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 215 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_UncleNoNeedToBeDown, MSGBOX_DEFAULT
+# 216 "data/maps/MauvilleCity/scripts.pory"
+	return
+# 217 "data/maps/MauvilleCity/scripts.pory"
+
+# 218 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_DeclineWallyBattle::
+# 219 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_DECLINED_WALLY_BATTLE_MAUVILLE
+# 220 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WallyMyUncleWontKnowImStrong, MSGBOX_DEFAULT
+# 221 "data/maps/MauvilleCity/scripts.pory"
+	release
+# 222 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 223 "data/maps/MauvilleCity/scripts.pory"
+
+# 224 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_WallyRequestBattleAgain::
+# 225 "data/maps/MauvilleCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+# 226 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 227 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WallyPleaseBattleMe, MSGBOX_YESNO
+# 228 "data/maps/MauvilleCity/scripts.pory"
+	goto MauvilleCity_EventScript_BattleWallyPrompt
+# 229 "data/maps/MauvilleCity/scripts.pory"
+	end
 # 230 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallyExitNorth1:
+
 # 231 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+MauvilleCity_Movement_WallyExitNorth1:
 # 232 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 233 "data/maps/MauvilleCity/scripts.pory"
-	walk_down
+	walk_left
 # 234 "data/maps/MauvilleCity/scripts.pory"
 	walk_down
 # 235 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
-# 236 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 237 "data/maps/MauvilleCity/scripts.pory"
-
-# 238 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallyExitEast1:
-# 239 "data/maps/MauvilleCity/scripts.pory"
 	walk_down
+# 236 "data/maps/MauvilleCity/scripts.pory"
+	walk_left
+# 237 "data/maps/MauvilleCity/scripts.pory"
+	step_end
+# 238 "data/maps/MauvilleCity/scripts.pory"
+
+# 239 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_WallyExitEast1:
 # 240 "data/maps/MauvilleCity/scripts.pory"
 	walk_down
 # 241 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+	walk_down
 # 242 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 243 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 244 "data/maps/MauvilleCity/scripts.pory"
-	step_end
+	walk_left
 # 245 "data/maps/MauvilleCity/scripts.pory"
-
+	step_end
 # 246 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallyExitNorth2:
+
 # 247 "data/maps/MauvilleCity/scripts.pory"
-	delay_16
+MauvilleCity_Movement_WallyExitNorth2:
 # 248 "data/maps/MauvilleCity/scripts.pory"
 	delay_16
 # 249 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+	delay_16
 # 250 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 251 "data/maps/MauvilleCity/scripts.pory"
@@ -511,19 +511,19 @@ MauvilleCity_Movement_WallyExitNorth2:
 # 256 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 257 "data/maps/MauvilleCity/scripts.pory"
-	delay_8
+	walk_left
 # 258 "data/maps/MauvilleCity/scripts.pory"
-	step_end
+	delay_8
 # 259 "data/maps/MauvilleCity/scripts.pory"
-
+	step_end
 # 260 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallyExitEast2:
+
 # 261 "data/maps/MauvilleCity/scripts.pory"
-	delay_16
+MauvilleCity_Movement_WallyExitEast2:
 # 262 "data/maps/MauvilleCity/scripts.pory"
 	delay_16
 # 263 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+	delay_16
 # 264 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 265 "data/maps/MauvilleCity/scripts.pory"
@@ -539,151 +539,151 @@ MauvilleCity_Movement_WallyExitEast2:
 # 270 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 271 "data/maps/MauvilleCity/scripts.pory"
-	delay_8
+	walk_left
 # 272 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 273 "data/maps/MauvilleCity/scripts.pory"
-
-# 274 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_PlayerWatchWallyExitNorth2:
-# 275 "data/maps/MauvilleCity/scripts.pory"
-	delay_16
-# 276 "data/maps/MauvilleCity/scripts.pory"
 	delay_8
-# 277 "data/maps/MauvilleCity/scripts.pory"
-	walk_in_place_faster_left
-# 278 "data/maps/MauvilleCity/scripts.pory"
+# 273 "data/maps/MauvilleCity/scripts.pory"
 	step_end
-# 279 "data/maps/MauvilleCity/scripts.pory"
+# 274 "data/maps/MauvilleCity/scripts.pory"
 
-# 280 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_PlayerWatchWallyExitEast2:
-# 281 "data/maps/MauvilleCity/scripts.pory"
+# 275 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerWatchWallyExitNorth2:
+# 276 "data/maps/MauvilleCity/scripts.pory"
 	delay_16
+# 277 "data/maps/MauvilleCity/scripts.pory"
+	delay_8
+# 278 "data/maps/MauvilleCity/scripts.pory"
+	walk_in_place_faster_left
+# 279 "data/maps/MauvilleCity/scripts.pory"
+	step_end
+# 280 "data/maps/MauvilleCity/scripts.pory"
+
+# 281 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerWatchWallyExitEast2:
 # 282 "data/maps/MauvilleCity/scripts.pory"
 	delay_16
 # 283 "data/maps/MauvilleCity/scripts.pory"
 	delay_16
 # 284 "data/maps/MauvilleCity/scripts.pory"
-	walk_in_place_faster_left
+	delay_16
 # 285 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 286 "data/maps/MauvilleCity/scripts.pory"
-
-# 287 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_PlayerWatchScottExitNorth:
-# 288 "data/maps/MauvilleCity/scripts.pory"
-	delay_16
-# 289 "data/maps/MauvilleCity/scripts.pory"
 	walk_in_place_faster_left
-# 290 "data/maps/MauvilleCity/scripts.pory"
+# 286 "data/maps/MauvilleCity/scripts.pory"
 	step_end
-# 291 "data/maps/MauvilleCity/scripts.pory"
+# 287 "data/maps/MauvilleCity/scripts.pory"
 
-# 292 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_PlayerWatchScottExitEast:
-# 293 "data/maps/MauvilleCity/scripts.pory"
+# 288 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerWatchScottExitNorth:
+# 289 "data/maps/MauvilleCity/scripts.pory"
 	delay_16
+# 290 "data/maps/MauvilleCity/scripts.pory"
+	walk_in_place_faster_left
+# 291 "data/maps/MauvilleCity/scripts.pory"
+	step_end
+# 292 "data/maps/MauvilleCity/scripts.pory"
+
+# 293 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerWatchScottExitEast:
 # 294 "data/maps/MauvilleCity/scripts.pory"
 	delay_16
 # 295 "data/maps/MauvilleCity/scripts.pory"
-	walk_in_place_faster_left
+	delay_16
 # 296 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 297 "data/maps/MauvilleCity/scripts.pory"
-
-# 298 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_PlayerWatchWallyExitEast1:
-# 299 "data/maps/MauvilleCity/scripts.pory"
-	delay_16
-# 300 "data/maps/MauvilleCity/scripts.pory"
-	walk_in_place_faster_down
-# 301 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 302 "data/maps/MauvilleCity/scripts.pory"
-
-# 303 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_PlayerWatchWallyExitNorth1:
-# 304 "data/maps/MauvilleCity/scripts.pory"
-	delay_16
-# 305 "data/maps/MauvilleCity/scripts.pory"
 	walk_in_place_faster_left
-# 306 "data/maps/MauvilleCity/scripts.pory"
+# 297 "data/maps/MauvilleCity/scripts.pory"
 	step_end
-# 307 "data/maps/MauvilleCity/scripts.pory"
+# 298 "data/maps/MauvilleCity/scripts.pory"
 
+# 299 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerWatchWallyExitEast1:
+# 300 "data/maps/MauvilleCity/scripts.pory"
+	delay_16
+# 301 "data/maps/MauvilleCity/scripts.pory"
+	walk_in_place_faster_down
+# 302 "data/maps/MauvilleCity/scripts.pory"
+	step_end
+# 303 "data/maps/MauvilleCity/scripts.pory"
+
+# 304 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerWatchWallyExitNorth1:
+# 305 "data/maps/MauvilleCity/scripts.pory"
+	delay_16
+# 306 "data/maps/MauvilleCity/scripts.pory"
+	walk_in_place_faster_left
+# 307 "data/maps/MauvilleCity/scripts.pory"
+	step_end
 # 308 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallysUncleExitNorth1:
+
 # 309 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+MauvilleCity_Movement_WallysUncleExitNorth1:
 # 310 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 311 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 312 "data/maps/MauvilleCity/scripts.pory"
-	walk_down
+	walk_left
 # 313 "data/maps/MauvilleCity/scripts.pory"
 	walk_down
 # 314 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 315 "data/maps/MauvilleCity/scripts.pory"
-
-# 316 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallysUncleExitEast1:
-# 317 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
-# 318 "data/maps/MauvilleCity/scripts.pory"
 	walk_down
+# 315 "data/maps/MauvilleCity/scripts.pory"
+	step_end
+# 316 "data/maps/MauvilleCity/scripts.pory"
+
+# 317 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_WallysUncleExitEast1:
+# 318 "data/maps/MauvilleCity/scripts.pory"
+	walk_left
 # 319 "data/maps/MauvilleCity/scripts.pory"
 	walk_down
 # 320 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+	walk_down
 # 321 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 322 "data/maps/MauvilleCity/scripts.pory"
-	step_end
+	walk_left
 # 323 "data/maps/MauvilleCity/scripts.pory"
-
-# 324 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_PlayerFaceUncleNorth:
-# 325 "data/maps/MauvilleCity/scripts.pory"
-	delay_16
-# 326 "data/maps/MauvilleCity/scripts.pory"
-	delay_8
-# 327 "data/maps/MauvilleCity/scripts.pory"
-	delay_4
-# 328 "data/maps/MauvilleCity/scripts.pory"
-	walk_in_place_faster_down
-# 329 "data/maps/MauvilleCity/scripts.pory"
 	step_end
-# 330 "data/maps/MauvilleCity/scripts.pory"
+# 324 "data/maps/MauvilleCity/scripts.pory"
 
+# 325 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerFaceUncleNorth:
+# 326 "data/maps/MauvilleCity/scripts.pory"
+	delay_16
+# 327 "data/maps/MauvilleCity/scripts.pory"
+	delay_8
+# 328 "data/maps/MauvilleCity/scripts.pory"
+	delay_4
+# 329 "data/maps/MauvilleCity/scripts.pory"
+	walk_in_place_faster_down
+# 330 "data/maps/MauvilleCity/scripts.pory"
+	step_end
 # 331 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallysUncleApproachPlayerNorth:
+
 # 332 "data/maps/MauvilleCity/scripts.pory"
-	walk_right
+MauvilleCity_Movement_WallysUncleApproachPlayerNorth:
 # 333 "data/maps/MauvilleCity/scripts.pory"
 	walk_right
 # 334 "data/maps/MauvilleCity/scripts.pory"
-	walk_in_place_faster_up
-# 335 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 336 "data/maps/MauvilleCity/scripts.pory"
-
-# 337 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallysUncleApproachPlayerEast:
-# 338 "data/maps/MauvilleCity/scripts.pory"
 	walk_right
-# 339 "data/maps/MauvilleCity/scripts.pory"
-	walk_up
-# 340 "data/maps/MauvilleCity/scripts.pory"
+# 335 "data/maps/MauvilleCity/scripts.pory"
+	walk_in_place_faster_up
+# 336 "data/maps/MauvilleCity/scripts.pory"
 	step_end
-# 341 "data/maps/MauvilleCity/scripts.pory"
+# 337 "data/maps/MauvilleCity/scripts.pory"
 
+# 338 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_WallysUncleApproachPlayerEast:
+# 339 "data/maps/MauvilleCity/scripts.pory"
+	walk_right
+# 340 "data/maps/MauvilleCity/scripts.pory"
+	walk_up
+# 341 "data/maps/MauvilleCity/scripts.pory"
+	step_end
 # 342 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallysUncleExitNorth2:
+
 # 343 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+MauvilleCity_Movement_WallysUncleExitNorth2:
 # 344 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 345 "data/maps/MauvilleCity/scripts.pory"
@@ -699,15 +699,15 @@ MauvilleCity_Movement_WallysUncleExitNorth2:
 # 350 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 351 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 352 "data/maps/MauvilleCity/scripts.pory"
-
-# 353 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_WallysUncleExitEast2:
-# 354 "data/maps/MauvilleCity/scripts.pory"
-	walk_down
-# 355 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
+# 352 "data/maps/MauvilleCity/scripts.pory"
+	step_end
+# 353 "data/maps/MauvilleCity/scripts.pory"
+
+# 354 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_WallysUncleExitEast2:
+# 355 "data/maps/MauvilleCity/scripts.pory"
+	walk_down
 # 356 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 357 "data/maps/MauvilleCity/scripts.pory"
@@ -723,13 +723,13 @@ MauvilleCity_Movement_WallysUncleExitEast2:
 # 362 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 363 "data/maps/MauvilleCity/scripts.pory"
-	step_end
+	walk_left
 # 364 "data/maps/MauvilleCity/scripts.pory"
-
+	step_end
 # 365 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_ScottApproachPlayerNorth:
+
 # 366 "data/maps/MauvilleCity/scripts.pory"
-	walk_up
+MauvilleCity_Movement_ScottApproachPlayerNorth:
 # 367 "data/maps/MauvilleCity/scripts.pory"
 	walk_up
 # 368 "data/maps/MauvilleCity/scripts.pory"
@@ -741,7 +741,7 @@ MauvilleCity_Movement_ScottApproachPlayerNorth:
 # 371 "data/maps/MauvilleCity/scripts.pory"
 	walk_up
 # 372 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+	walk_up
 # 373 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 374 "data/maps/MauvilleCity/scripts.pory"
@@ -749,15 +749,15 @@ MauvilleCity_Movement_ScottApproachPlayerNorth:
 # 375 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 376 "data/maps/MauvilleCity/scripts.pory"
-	walk_in_place_faster_up
+	walk_left
 # 377 "data/maps/MauvilleCity/scripts.pory"
-	step_end
+	walk_in_place_faster_up
 # 378 "data/maps/MauvilleCity/scripts.pory"
-
+	step_end
 # 379 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_ScottApproachPlayerEast:
+
 # 380 "data/maps/MauvilleCity/scripts.pory"
-	walk_up
+MauvilleCity_Movement_ScottApproachPlayerEast:
 # 381 "data/maps/MauvilleCity/scripts.pory"
 	walk_up
 # 382 "data/maps/MauvilleCity/scripts.pory"
@@ -767,7 +767,7 @@ MauvilleCity_Movement_ScottApproachPlayerEast:
 # 384 "data/maps/MauvilleCity/scripts.pory"
 	walk_up
 # 385 "data/maps/MauvilleCity/scripts.pory"
-	walk_left
+	walk_up
 # 386 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 387 "data/maps/MauvilleCity/scripts.pory"
@@ -777,15 +777,15 @@ MauvilleCity_Movement_ScottApproachPlayerEast:
 # 389 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 390 "data/maps/MauvilleCity/scripts.pory"
-	walk_up
-# 391 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 392 "data/maps/MauvilleCity/scripts.pory"
-
-# 393 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_ScottExitNorth:
-# 394 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
+# 391 "data/maps/MauvilleCity/scripts.pory"
+	walk_up
+# 392 "data/maps/MauvilleCity/scripts.pory"
+	step_end
+# 393 "data/maps/MauvilleCity/scripts.pory"
+
+# 394 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_ScottExitNorth:
 # 395 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 396 "data/maps/MauvilleCity/scripts.pory"
@@ -803,15 +803,15 @@ MauvilleCity_Movement_ScottExitNorth:
 # 402 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 403 "data/maps/MauvilleCity/scripts.pory"
-	step_end
-# 404 "data/maps/MauvilleCity/scripts.pory"
-
-# 405 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_ScottExitEast:
-# 406 "data/maps/MauvilleCity/scripts.pory"
-	walk_down
-# 407 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
+# 404 "data/maps/MauvilleCity/scripts.pory"
+	step_end
+# 405 "data/maps/MauvilleCity/scripts.pory"
+
+# 406 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_ScottExitEast:
+# 407 "data/maps/MauvilleCity/scripts.pory"
+	walk_down
 # 408 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 409 "data/maps/MauvilleCity/scripts.pory"
@@ -829,1072 +829,1074 @@ MauvilleCity_Movement_ScottExitEast:
 # 415 "data/maps/MauvilleCity/scripts.pory"
 	walk_left
 # 416 "data/maps/MauvilleCity/scripts.pory"
-	step_end
+	walk_left
 # 417 "data/maps/MauvilleCity/scripts.pory"
-
+	step_end
 # 418 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_Wattson::
+
 # 419 "data/maps/MauvilleCity/scripts.pory"
-	lock
+MauvilleCity_EventScript_Wattson::
 # 420 "data/maps/MauvilleCity/scripts.pory"
-	faceplayer
+	lock
 # 421 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_ReceivedThunderbolt
+	faceplayer
 # 422 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_EventScript_CompletedNewMauville
+	goto_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_ReceivedThunderbolt
 # 423 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_set FLAG_GOT_BASEMENT_KEY_FROM_WATTSON, MauvilleCity_EventScript_BegunNewMauville
+	goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_EventScript_CompletedNewMauville
 # 424 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonNeedFavorTakeKey, MSGBOX_DEFAULT
+	goto_if_set FLAG_GOT_BASEMENT_KEY_FROM_WATTSON, MauvilleCity_EventScript_BegunNewMauville
 # 425 "data/maps/MauvilleCity/scripts.pory"
-	giveitem ITEM_BASEMENT_KEY
+	msgbox MauvilleCity_Text_WattsonNeedFavorTakeKey, MSGBOX_DEFAULT
 # 426 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_BASEMENT_KEY
 # 427 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_GOT_BASEMENT_KEY_FROM_WATTSON
-# 428 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
-# 429 "data/maps/MauvilleCity/scripts.pory"
-	release
-# 430 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 431 "data/maps/MauvilleCity/scripts.pory"
-
-# 432 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_BegunNewMauville::
-# 433 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
-# 434 "data/maps/MauvilleCity/scripts.pory"
-	release
-# 435 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 436 "data/maps/MauvilleCity/scripts.pory"
-
-# 437 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_CompletedNewMauville::
-# 438 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT
-# 439 "data/maps/MauvilleCity/scripts.pory"
-	giveitem ITEM_TM_THUNDERBOLT
-# 440 "data/maps/MauvilleCity/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 428 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_GOT_BASEMENT_KEY_FROM_WATTSON
+# 429 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
+# 430 "data/maps/MauvilleCity/scripts.pory"
+	release
+# 431 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 432 "data/maps/MauvilleCity/scripts.pory"
+
+# 433 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_BegunNewMauville::
+# 434 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
+# 435 "data/maps/MauvilleCity/scripts.pory"
+	release
+# 436 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 437 "data/maps/MauvilleCity/scripts.pory"
+
+# 438 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_CompletedNewMauville::
+# 439 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT
+# 440 "data/maps/MauvilleCity/scripts.pory"
+	giveitem ITEM_TM_THUNDERBOLT
 # 441 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 442 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
+	setflag FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON
 # 443 "data/maps/MauvilleCity/scripts.pory"
-	release
-# 444 "data/maps/MauvilleCity/scripts.pory"
-	end
-# 445 "data/maps/MauvilleCity/scripts.pory"
-
-# 446 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_ReceivedThunderbolt::
-# 447 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
-# 448 "data/maps/MauvilleCity/scripts.pory"
+# 444 "data/maps/MauvilleCity/scripts.pory"
 	release
+# 445 "data/maps/MauvilleCity/scripts.pory"
+	end
+# 446 "data/maps/MauvilleCity/scripts.pory"
+
+# 447 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_ReceivedThunderbolt::
+# 448 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
 # 449 "data/maps/MauvilleCity/scripts.pory"
-	end
+	release
 # 450 "data/maps/MauvilleCity/scripts.pory"
-
-# 451 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_EventScript_RegisterWallyCall::
-# 452 "data/maps/MauvilleCity/scripts.pory"
-	lockall
-# 453 "data/maps/MauvilleCity/scripts.pory"
-	pokenavcall MauvilleCity_Text_WallyPokenavCall
-# 454 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
-# 455 "data/maps/MauvilleCity/scripts.pory"
-	delay 30
-# 456 "data/maps/MauvilleCity/scripts.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
-# 457 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_RegisteredWally, MSGBOX_DEFAULT
-# 458 "data/maps/MauvilleCity/scripts.pory"
-	waitfanfare
-# 459 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
-# 460 "data/maps/MauvilleCity/scripts.pory"
-	delay 30
-# 461 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_ENABLE_WALLY_MATCH_CALL
-# 462 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL
-# 463 "data/maps/MauvilleCity/scripts.pory"
-	releaseall
-# 464 "data/maps/MauvilleCity/scripts.pory"
 	end
+# 451 "data/maps/MauvilleCity/scripts.pory"
+
+# 452 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_EventScript_RegisterWallyCall::
+# 453 "data/maps/MauvilleCity/scripts.pory"
+	lockall
+# 454 "data/maps/MauvilleCity/scripts.pory"
+	pokenavcall MauvilleCity_Text_WallyPokenavCall
+# 455 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 456 "data/maps/MauvilleCity/scripts.pory"
+	delay 30
+# 457 "data/maps/MauvilleCity/scripts.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 458 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_RegisteredWally, MSGBOX_DEFAULT
+# 459 "data/maps/MauvilleCity/scripts.pory"
+	waitfanfare
+# 460 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 461 "data/maps/MauvilleCity/scripts.pory"
+	delay 30
+# 462 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_ENABLE_WALLY_MATCH_CALL
+# 463 "data/maps/MauvilleCity/scripts.pory"
+	clearflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL
+# 464 "data/maps/MauvilleCity/scripts.pory"
+	releaseall
 # 465 "data/maps/MauvilleCity/scripts.pory"
-
+	end
 # 466 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_UncleHesTooPeppy:
+
 # 467 "data/maps/MauvilleCity/scripts.pory"
-	.string "UNCLE: It's because of POKéMON that\n"
+MauvilleCity_Text_UncleHesTooPeppy:
 # 468 "data/maps/MauvilleCity/scripts.pory"
-	.string "this boy's got more pep, I suppose…\l"
+	.string "UNCLE: It's because of POKéMON that\n"
 # 469 "data/maps/MauvilleCity/scripts.pory"
-	.string "But he's become a bit too peppy…$"
+	.string "this boy's got more pep, I suppose…\l"
 # 470 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "But he's become a bit too peppy…$"
 # 471 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyWantToChallengeGym:
+
 # 472 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: Aww, UNCLE, please?\p"
+MauvilleCity_Text_WallyWantToChallengeGym:
 # 473 "data/maps/MauvilleCity/scripts.pory"
-	.string "I want to challenge this GYM and see\n"
+	.string "WALLY: Aww, UNCLE, please?\p"
 # 474 "data/maps/MauvilleCity/scripts.pory"
-	.string "how much better I've become.\p"
+	.string "I want to challenge this GYM and see\n"
 # 475 "data/maps/MauvilleCity/scripts.pory"
-	.string "Please? May I, please?$"
+	.string "how much better I've become.\p"
 # 476 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "Please? May I, please?$"
 # 477 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_UncleYourePushingIt:
+
 # 478 "data/maps/MauvilleCity/scripts.pory"
-	.string "UNCLE: Now hold on, WALLY.\p"
+MauvilleCity_Text_UncleYourePushingIt:
 # 479 "data/maps/MauvilleCity/scripts.pory"
-	.string "Since you started living with POKéMON,\n"
+	.string "UNCLE: Now hold on, WALLY.\p"
 # 480 "data/maps/MauvilleCity/scripts.pory"
-	.string "you have grown quite a lot stronger.\p"
+	.string "Since you started living with POKéMON,\n"
 # 481 "data/maps/MauvilleCity/scripts.pory"
-	.string "But don't you think you're pushing it\n"
+	.string "you have grown quite a lot stronger.\p"
 # 482 "data/maps/MauvilleCity/scripts.pory"
-	.string "to suddenly challenge a GYM?$"
+	.string "But don't you think you're pushing it\n"
 # 483 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "to suddenly challenge a GYM?$"
 # 484 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyWeCanBeatAnyone:
+
 # 485 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: I'm not pushing it.\p"
+MauvilleCity_Text_WallyWeCanBeatAnyone:
 # 486 "data/maps/MauvilleCity/scripts.pory"
-	.string "If I combine forces with RALTS,\n"
+	.string "WALLY: I'm not pushing it.\p"
 # 487 "data/maps/MauvilleCity/scripts.pory"
-	.string "we can beat anyone!$"
+	.string "If I combine forces with RALTS,\n"
 # 488 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "we can beat anyone!$"
 # 489 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyWillYouBattleMe:
+
 # 490 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: Oh! Hi, {PLAYER}!\p"
+MauvilleCity_Text_WallyWillYouBattleMe:
 # 491 "data/maps/MauvilleCity/scripts.pory"
-	.string "I've gotten a lot stronger since\n"
+	.string "WALLY: Oh! Hi, {PLAYER}!\p"
 # 492 "data/maps/MauvilleCity/scripts.pory"
-	.string "we met.\p"
+	.string "I've gotten a lot stronger since\n"
 # 493 "data/maps/MauvilleCity/scripts.pory"
-	.string "{PLAYER}, I want you and my UNCLE to\n"
+	.string "we met.\p"
 # 494 "data/maps/MauvilleCity/scripts.pory"
-	.string "understand that.\p"
+	.string "{PLAYER}, I want you and my UNCLE to\n"
 # 495 "data/maps/MauvilleCity/scripts.pory"
-	.string "{PLAYER}, please, will you have\n"
+	.string "understand that.\p"
 # 496 "data/maps/MauvilleCity/scripts.pory"
-	.string "a battle with me?$"
+	.string "{PLAYER}, please, will you have\n"
 # 497 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "a battle with me?$"
 # 498 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyMyUncleWontKnowImStrong:
+
 # 499 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: Oh… If you won't battle me,\n"
+MauvilleCity_Text_WallyMyUncleWontKnowImStrong:
 # 500 "data/maps/MauvilleCity/scripts.pory"
-	.string "{PLAYER}, my UNCLE won't know that I've\l"
+	.string "WALLY: Oh… If you won't battle me,\n"
 # 501 "data/maps/MauvilleCity/scripts.pory"
-	.string "become really strong.$"
+	.string "{PLAYER}, my UNCLE won't know that I've\l"
 # 502 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "become really strong.$"
 # 503 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_UncleCanYouBattleWally:
+
 # 504 "data/maps/MauvilleCity/scripts.pory"
-	.string "UNCLE: {PLAYER}{KUN}, was it?\n"
+MauvilleCity_Text_UncleCanYouBattleWally:
 # 505 "data/maps/MauvilleCity/scripts.pory"
-	.string "On WALLY's behalf, can I ask you to\l"
+	.string "UNCLE: {PLAYER}{KUN}, was it?\n"
 # 506 "data/maps/MauvilleCity/scripts.pory"
-	.string "battle with him just this once?\p"
+	.string "On WALLY's behalf, can I ask you to\l"
 # 507 "data/maps/MauvilleCity/scripts.pory"
-	.string "I don't think he's going to listen to\n"
+	.string "battle with him just this once?\p"
 # 508 "data/maps/MauvilleCity/scripts.pory"
-	.string "any reason the way he is now.$"
+	.string "I don't think he's going to listen to\n"
 # 509 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "any reason the way he is now.$"
 # 510 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyPleaseBattleMe:
+
 # 511 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: {PLAYER}, please!\n"
+MauvilleCity_Text_WallyPleaseBattleMe:
 # 512 "data/maps/MauvilleCity/scripts.pory"
-	.string "Battle with me, please.$"
+	.string "WALLY: {PLAYER}, please!\n"
 # 513 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "Battle with me, please.$"
 # 514 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyHereICome:
+
 # 515 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: {PLAYER}, thank you.\p"
+MauvilleCity_Text_WallyHereICome:
 # 516 "data/maps/MauvilleCity/scripts.pory"
-	.string "Okay… Here I come!$"
+	.string "WALLY: {PLAYER}, thank you.\p"
 # 517 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "Okay… Here I come!$"
 # 518 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyDefeat:
+
 # 519 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: … … … … … … …\p"
+MauvilleCity_Text_WallyDefeat:
 # 520 "data/maps/MauvilleCity/scripts.pory"
-	.string "… … … … … … … …\p"
+	.string "WALLY: … … … … … … …\p"
 # 521 "data/maps/MauvilleCity/scripts.pory"
-	.string "I lost…$"
+	.string "… … … … … … … …\p"
 # 522 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "I lost…$"
 # 523 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyIllGoBackToVerdanturf:
+
 # 524 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: UNCLE…\n"
+MauvilleCity_Text_WallyIllGoBackToVerdanturf:
 # 525 "data/maps/MauvilleCity/scripts.pory"
-	.string "I'll go back to VERDANTURF…$"
+	.string "WALLY: UNCLE…\n"
 # 526 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "I'll go back to VERDANTURF…$"
 # 527 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_ThankYouNotEnoughToBattle:
+
 # 528 "data/maps/MauvilleCity/scripts.pory"
-	.string "{PLAYER}, thank you.\n"
+MauvilleCity_Text_ThankYouNotEnoughToBattle:
 # 529 "data/maps/MauvilleCity/scripts.pory"
-	.string "Being a TRAINER is tough, isn't it?\p"
+	.string "{PLAYER}, thank you.\n"
 # 530 "data/maps/MauvilleCity/scripts.pory"
-	.string "It's not enough just to have POKéMON\n"
+	.string "Being a TRAINER is tough, isn't it?\p"
 # 531 "data/maps/MauvilleCity/scripts.pory"
-	.string "and make them battle. That isn't what\l"
+	.string "It's not enough just to have POKéMON\n"
 # 532 "data/maps/MauvilleCity/scripts.pory"
-	.string "being a real TRAINER is about.$"
+	.string "and make them battle. That isn't what\l"
 # 533 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "being a real TRAINER is about.$"
 # 534 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_UncleNoNeedToBeDown:
+
 # 535 "data/maps/MauvilleCity/scripts.pory"
-	.string "UNCLE: WALLY, there's no need to be so\n"
+MauvilleCity_Text_UncleNoNeedToBeDown:
 # 536 "data/maps/MauvilleCity/scripts.pory"
-	.string "down on yourself.\p"
+	.string "UNCLE: WALLY, there's no need to be so\n"
 # 537 "data/maps/MauvilleCity/scripts.pory"
-	.string "Why, what's keeping you from becoming\n"
+	.string "down on yourself.\p"
 # 538 "data/maps/MauvilleCity/scripts.pory"
-	.string "stronger and stronger?\p"
+	.string "Why, what's keeping you from becoming\n"
 # 539 "data/maps/MauvilleCity/scripts.pory"
-	.string "Come on, let's go home.\n"
+	.string "stronger and stronger?\p"
 # 540 "data/maps/MauvilleCity/scripts.pory"
-	.string "Everyone's waiting for you.$"
+	.string "Come on, let's go home.\n"
 # 541 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "Everyone's waiting for you.$"
 # 542 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_UncleVisitUsSometime:
-# 543 "data/maps/MauvilleCity/scripts.pory"
-	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
-# 544 "data/maps/MauvilleCity/scripts.pory"
-	.string "that you must be the TRAINER who kept\l"
-# 545 "data/maps/MauvilleCity/scripts.pory"
-	.string "an eye out for WALLY when he caught\l"
-# 546 "data/maps/MauvilleCity/scripts.pory"
-	.string "his POKéMON.\p"
-# 547 "data/maps/MauvilleCity/scripts.pory"
-	.string "Why don't you visit us in VERDANTURF\n"
-# 548 "data/maps/MauvilleCity/scripts.pory"
-	.string "sometime?\l"
-# 549 "data/maps/MauvilleCity/scripts.pory"
-	.string "I'm sure WALLY would enjoy it.$"
-# 550 "data/maps/MauvilleCity/scripts.pory"
 
+# 543 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Text_UncleVisitUsSometime:
+# 544 "data/maps/MauvilleCity/scripts.pory"
+	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
+# 545 "data/maps/MauvilleCity/scripts.pory"
+	.string "that you must be the TRAINER who kept\l"
+# 546 "data/maps/MauvilleCity/scripts.pory"
+	.string "an eye out for WALLY when he caught\l"
+# 547 "data/maps/MauvilleCity/scripts.pory"
+	.string "his POKéMON.\p"
+# 548 "data/maps/MauvilleCity/scripts.pory"
+	.string "Why don't you visit us in VERDANTURF\n"
+# 549 "data/maps/MauvilleCity/scripts.pory"
+	.string "sometime?\l"
+# 550 "data/maps/MauvilleCity/scripts.pory"
+	.string "I'm sure WALLY would enjoy it.$"
 # 551 "data/maps/MauvilleCity/scripts.pory"
 
 # 552 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WallyPokenavCall:
+
 # 553 "data/maps/MauvilleCity/scripts.pory"
-	.string "… … … … … …\n"
+MauvilleCity_Text_WallyPokenavCall:
 # 554 "data/maps/MauvilleCity/scripts.pory"
-	.string "… … … … … Beep!\p"
+	.string "… … … … … …\n"
 # 555 "data/maps/MauvilleCity/scripts.pory"
-	.string "WALLY: Oh, hello, {PLAYER}!\p"
+	.string "… … … … … Beep!\p"
 # 556 "data/maps/MauvilleCity/scripts.pory"
-	.string "I just wanted to tell you that\n"
+	.string "WALLY: Oh, hello, {PLAYER}!\p"
 # 557 "data/maps/MauvilleCity/scripts.pory"
-	.string "my uncle bought me a POKéNAV!\p"
+	.string "I just wanted to tell you that\n"
 # 558 "data/maps/MauvilleCity/scripts.pory"
-	.string "Now I can get in touch with you\n"
+	.string "my uncle bought me a POKéNAV!\p"
 # 559 "data/maps/MauvilleCity/scripts.pory"
-	.string "anytime, {PLAYER}!\p"
+	.string "Now I can get in touch with you\n"
 # 560 "data/maps/MauvilleCity/scripts.pory"
-	.string "… … … … … …\n"
+	.string "anytime, {PLAYER}!\p"
 # 561 "data/maps/MauvilleCity/scripts.pory"
-	.string "… … … … … Click!$"
-# 562 "data/maps/MauvilleCity/scripts.pory"
-
-# 563 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_RegisteredWally:
-# 564 "data/maps/MauvilleCity/scripts.pory"
-	.string "Registered WALLY\n"
-# 565 "data/maps/MauvilleCity/scripts.pory"
-	.string "in the POKéNAV.$"
-# 566 "data/maps/MauvilleCity/scripts.pory"
-
-# 567 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_ScottYouDidntHoldBack:
-# 568 "data/maps/MauvilleCity/scripts.pory"
-	.string "SCOTT: Hehe…\n"
-# 569 "data/maps/MauvilleCity/scripts.pory"
-	.string "I was watching that match!\p"
-# 570 "data/maps/MauvilleCity/scripts.pory"
-	.string "You're friends with that boy WALLY,\n"
-# 571 "data/maps/MauvilleCity/scripts.pory"
-	.string "aren't you?\p"
-# 572 "data/maps/MauvilleCity/scripts.pory"
-	.string "But you didn't hold anything back\n"
-# 573 "data/maps/MauvilleCity/scripts.pory"
-	.string "and beat him impressively.\p"
-# 574 "data/maps/MauvilleCity/scripts.pory"
-	.string "Yeah! That's what a real POKéMON\n"
-# 575 "data/maps/MauvilleCity/scripts.pory"
-	.string "battle is all about!\p"
-# 576 "data/maps/MauvilleCity/scripts.pory"
-	.string "I idolize TRAINERS like that!\p"
-# 577 "data/maps/MauvilleCity/scripts.pory"
 	.string "… … … … … …\n"
+# 562 "data/maps/MauvilleCity/scripts.pory"
+	.string "… … … … … Click!$"
+# 563 "data/maps/MauvilleCity/scripts.pory"
+
+# 564 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Text_RegisteredWally:
+# 565 "data/maps/MauvilleCity/scripts.pory"
+	.string "Registered WALLY\n"
+# 566 "data/maps/MauvilleCity/scripts.pory"
+	.string "in the POKéNAV.$"
+# 567 "data/maps/MauvilleCity/scripts.pory"
+
+# 568 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Text_ScottYouDidntHoldBack:
+# 569 "data/maps/MauvilleCity/scripts.pory"
+	.string "SCOTT: Hehe…\n"
+# 570 "data/maps/MauvilleCity/scripts.pory"
+	.string "I was watching that match!\p"
+# 571 "data/maps/MauvilleCity/scripts.pory"
+	.string "You're friends with that boy WALLY,\n"
+# 572 "data/maps/MauvilleCity/scripts.pory"
+	.string "aren't you?\p"
+# 573 "data/maps/MauvilleCity/scripts.pory"
+	.string "But you didn't hold anything back\n"
+# 574 "data/maps/MauvilleCity/scripts.pory"
+	.string "and beat him impressively.\p"
+# 575 "data/maps/MauvilleCity/scripts.pory"
+	.string "Yeah! That's what a real POKéMON\n"
+# 576 "data/maps/MauvilleCity/scripts.pory"
+	.string "battle is all about!\p"
+# 577 "data/maps/MauvilleCity/scripts.pory"
+	.string "I idolize TRAINERS like that!\p"
 # 578 "data/maps/MauvilleCity/scripts.pory"
-	.string "I'll be cheering for you!$"
+	.string "… … … … … …\n"
 # 579 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "I'll be cheering for you!$"
 # 580 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WattsonNeedFavorTakeKey:
+
 # 581 "data/maps/MauvilleCity/scripts.pory"
-	.string "DACA: Oh, {PLAYER}{KUN}!\n"
+MauvilleCity_Text_WattsonNeedFavorTakeKey:
 # 582 "data/maps/MauvilleCity/scripts.pory"
-	.string "You look ready to party!\l"
+	.string "DACA: Oh, {PLAYER}{KUN}!\n"
 # 583 "data/maps/MauvilleCity/scripts.pory"
-	.string "That's a good thing, hahaha!\p"
+	.string "You look ready to party!\l"
 # 584 "data/maps/MauvilleCity/scripts.pory"
-	.string "Fine! I've decided!\n"
+	.string "That's a good thing, hahaha!\p"
 # 585 "data/maps/MauvilleCity/scripts.pory"
-	.string "I need a favor, {PLAYER}{KUN}!\p"
+	.string "Fine! I've decided!\n"
 # 586 "data/maps/MauvilleCity/scripts.pory"
-	.string "MAUVILLE CITY has an underground\n"
+	.string "I need a favor, {PLAYER}{KUN}!\p"
 # 587 "data/maps/MauvilleCity/scripts.pory"
-	.string "sector called NEW MAUVILLE.\p"
+	.string "MAUVILLE CITY has an underground\n"
 # 588 "data/maps/MauvilleCity/scripts.pory"
-	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
+	.string "sector called NEW MAUVILLE.\p"
 # 589 "data/maps/MauvilleCity/scripts.pory"
-	.string "switch off the GENERATOR.\p"
+	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
 # 590 "data/maps/MauvilleCity/scripts.pory"
-	.string "The GENERATOR has been running a bit\n"
+	.string "switch off the GENERATOR.\p"
 # 591 "data/maps/MauvilleCity/scripts.pory"
-	.string "haywire. It's getting unsafe.\p"
+	.string "The GENERATOR has been running a bit\n"
 # 592 "data/maps/MauvilleCity/scripts.pory"
-	.string "Here, this is the KEY to get into\n"
+	.string "haywire. It's getting unsafe.\p"
 # 593 "data/maps/MauvilleCity/scripts.pory"
-	.string "NEW MAUVILLE.$"
+	.string "Here, this is the KEY to get into\n"
 # 594 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "NEW MAUVILLE.$"
 # 595 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WattsonWontBeChallenge:
+
 # 596 "data/maps/MauvilleCity/scripts.pory"
-	.string "DACA: Don't you worry about it.\n"
+MauvilleCity_Text_WattsonWontBeChallenge:
 # 597 "data/maps/MauvilleCity/scripts.pory"
-	.string "It won't be a challenge to you.\p"
+	.string "DACA: Don't you worry about it.\n"
 # 598 "data/maps/MauvilleCity/scripts.pory"
-	.string "The entrance to NEW MAUVILLE is just\n"
+	.string "It won't be a challenge to you.\p"
 # 599 "data/maps/MauvilleCity/scripts.pory"
-	.string "a short SURF away from ROUTE 110.\p"
+	.string "The entrance to NEW MAUVILLE is just\n"
 # 600 "data/maps/MauvilleCity/scripts.pory"
-	.string "That's it, then, go have fun!\n"
+	.string "a short SURF away from ROUTE 110.\p"
 # 601 "data/maps/MauvilleCity/scripts.pory"
-	.string "Hahaha!$"
+	.string "That's it, then, go have fun!\n"
 # 602 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "Hahaha!$"
 # 603 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WattsonThanksTakeTM:
+
 # 604 "data/maps/MauvilleCity/scripts.pory"
-	.string "DACA: Hahaha!\p"
+MauvilleCity_Text_WattsonThanksTakeTM:
 # 605 "data/maps/MauvilleCity/scripts.pory"
-	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
-# 606 "data/maps/MauvilleCity/scripts.pory"
-	.string "the right choice asking you!\p"
-# 607 "data/maps/MauvilleCity/scripts.pory"
-	.string "This is my thanks--a TM containing\n"
-# 608 "data/maps/MauvilleCity/scripts.pory"
-	.string "THUNDERBOLT!\p"
-# 609 "data/maps/MauvilleCity/scripts.pory"
-	.string "Go on, you've earned it!$"
-# 610 "data/maps/MauvilleCity/scripts.pory"
-
-# 611 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_WattsonYoungTakeCharge:
-# 612 "data/maps/MauvilleCity/scripts.pory"
 	.string "DACA: Hahaha!\p"
+# 606 "data/maps/MauvilleCity/scripts.pory"
+	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
+# 607 "data/maps/MauvilleCity/scripts.pory"
+	.string "the right choice asking you!\p"
+# 608 "data/maps/MauvilleCity/scripts.pory"
+	.string "This is my thanks--a TM containing\n"
+# 609 "data/maps/MauvilleCity/scripts.pory"
+	.string "THUNDERBOLT!\p"
+# 610 "data/maps/MauvilleCity/scripts.pory"
+	.string "Go on, you've earned it!$"
+# 611 "data/maps/MauvilleCity/scripts.pory"
+
+# 612 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Text_WattsonYoungTakeCharge:
 # 613 "data/maps/MauvilleCity/scripts.pory"
-	.string "It pleases me to no end to see\n"
+	.string "DACA: Hahaha!\p"
 # 614 "data/maps/MauvilleCity/scripts.pory"
-	.string "people party!$"
+	.string "It pleases me to no end to see\n"
 # 615 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "people party!$"
 # 616 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_NurseHurtMonBackToHealth:
+
 # 617 "data/maps/MauvilleCity/scripts.pory"
-	.string "You know, it's cool to have POKéMON\n"
+MauvilleCity_Text_NurseHurtMonBackToHealth:
 # 618 "data/maps/MauvilleCity/scripts.pory"
-	.string "battles and stuff…\p"
+	.string "You know, it's cool to have POKéMON\n"
 # 619 "data/maps/MauvilleCity/scripts.pory"
-	.string "But if your POKéMON gets hurt,\n"
+	.string "battles and stuff…\p"
 # 620 "data/maps/MauvilleCity/scripts.pory"
-	.string "you have to nurse it back to health.$"
+	.string "But if your POKéMON gets hurt,\n"
 # 621 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "you have to nurse it back to health.$"
 # 622 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_AllSortsOfPeopleComeThrough:
+
 # 623 "data/maps/MauvilleCity/scripts.pory"
-	.string "The roads of this town stretch north\n"
+MauvilleCity_Text_AllSortsOfPeopleComeThrough:
 # 624 "data/maps/MauvilleCity/scripts.pory"
-	.string "and south, and east and west.\p"
+	.string "The roads of this town stretch north\n"
 # 625 "data/maps/MauvilleCity/scripts.pory"
-	.string "Because of that, we get all sorts of\n"
+	.string "and south, and east and west.\p"
 # 626 "data/maps/MauvilleCity/scripts.pory"
-	.string "people coming through.$"
+	.string "Because of that, we get all sorts of\n"
 # 627 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "people coming through.$"
 # 628 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_RydelVeryGenerous:
+
 # 629 "data/maps/MauvilleCity/scripts.pory"
-	.string "Have you been to RYDEL'S CYCLES yet?\p"
+MauvilleCity_Text_RydelVeryGenerous:
 # 630 "data/maps/MauvilleCity/scripts.pory"
-	.string "RYDEL, the owner, is a very generous\n"
+	.string "Have you been to RYDEL'S CYCLES yet?\p"
 # 631 "data/maps/MauvilleCity/scripts.pory"
-	.string "man.$"
+	.string "RYDEL, the owner, is a very generous\n"
 # 632 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "man.$"
 # 633 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_PokemonCanJumpYouOnBike:
+
 # 634 "data/maps/MauvilleCity/scripts.pory"
-	.string "Even if you're riding a BIKE,\n"
+MauvilleCity_Text_PokemonCanJumpYouOnBike:
 # 635 "data/maps/MauvilleCity/scripts.pory"
-	.string "wild POKéMON could jump you.$"
+	.string "Even if you're riding a BIKE,\n"
 # 636 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "wild POKéMON could jump you.$"
 # 637 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_CitySign:
+
 # 638 "data/maps/MauvilleCity/scripts.pory"
-	.string "MAUVILLE CITY\n"
+MauvilleCity_Text_CitySign:
 # 639 "data/maps/MauvilleCity/scripts.pory"
-	.string "“The bright and shiny city of fun!”$"
+	.string "MAUVILLE CITY\n"
 # 640 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "“The bright and shiny city of fun!”$"
 # 641 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_GymSign:
+
 # 642 "data/maps/MauvilleCity/scripts.pory"
-	.string "MAUVILLE CITY POKéMON GYM\n"
+MauvilleCity_Text_GymSign:
 # 643 "data/maps/MauvilleCity/scripts.pory"
-	.string "LEADER: DACA\l"
+	.string "MAUVILLE CITY POKéMON GYM\n"
 # 644 "data/maps/MauvilleCity/scripts.pory"
-	.string "“Get ready for a party!”$"
+	.string "LEADER: DACA\l"
 # 645 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "“Get ready for a party!”$"
 # 646 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_BikeShopSign:
+
 # 647 "data/maps/MauvilleCity/scripts.pory"
-	.string "“Ride in gravel and shake up your\n"
+MauvilleCity_Text_BikeShopSign:
 # 648 "data/maps/MauvilleCity/scripts.pory"
-	.string "soul!”\l"
+	.string "“Ride in gravel and shake up your\n"
 # 649 "data/maps/MauvilleCity/scripts.pory"
-	.string "RYDEL'S CYCLES$"
+	.string "soul!”\l"
 # 650 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "RYDEL'S CYCLES$"
 # 651 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_GameCornerSign:
+
 # 652 "data/maps/MauvilleCity/scripts.pory"
-	.string "“The play spot for all!”\n"
+MauvilleCity_Text_GameCornerSign:
 # 653 "data/maps/MauvilleCity/scripts.pory"
-	.string "MAUVILLE GAME CORNER$"
+	.string "“The play spot for all!”\n"
 # 654 "data/maps/MauvilleCity/scripts.pory"
-
+	.string "MAUVILLE GAME CORNER$"
 # 655 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_ExplainTV:
-# 656 "data/maps/MauvilleCity/scripts.pory"
-	.string "Hi, do you check out TV at all?\p"
-# 657 "data/maps/MauvilleCity/scripts.pory"
-	.string "They've added a bunch of cool new\n"
-# 658 "data/maps/MauvilleCity/scripts.pory"
-	.string "shows recently.\p"
-# 659 "data/maps/MauvilleCity/scripts.pory"
-	.string "TV is so cool. I've seen my friends on\n"
-# 660 "data/maps/MauvilleCity/scripts.pory"
-	.string "TV just out of the blue.\p"
-# 661 "data/maps/MauvilleCity/scripts.pory"
-	.string "And, sometimes, they even put you on TV\n"
-# 662 "data/maps/MauvilleCity/scripts.pory"
-	.string "without telling you.\p"
-# 663 "data/maps/MauvilleCity/scripts.pory"
-	.string "I wish I would be on TV sometime.\p"
-# 664 "data/maps/MauvilleCity/scripts.pory"
-	.string "That's why I think you should check\n"
-# 665 "data/maps/MauvilleCity/scripts.pory"
-	.string "out TVs whenever you can.$"
-# 666 "data/maps/MauvilleCity/scripts.pory"
 
+# 656 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Text_ExplainTV:
+# 657 "data/maps/MauvilleCity/scripts.pory"
+	.string "Hi, do you check out TV at all?\p"
+# 658 "data/maps/MauvilleCity/scripts.pory"
+	.string "They've added a bunch of cool new\n"
+# 659 "data/maps/MauvilleCity/scripts.pory"
+	.string "shows recently.\p"
+# 660 "data/maps/MauvilleCity/scripts.pory"
+	.string "TV is so cool. I've seen my friends on\n"
+# 661 "data/maps/MauvilleCity/scripts.pory"
+	.string "TV just out of the blue.\p"
+# 662 "data/maps/MauvilleCity/scripts.pory"
+	.string "And, sometimes, they even put you on TV\n"
+# 663 "data/maps/MauvilleCity/scripts.pory"
+	.string "without telling you.\p"
+# 664 "data/maps/MauvilleCity/scripts.pory"
+	.string "I wish I would be on TV sometime.\p"
+# 665 "data/maps/MauvilleCity/scripts.pory"
+	.string "That's why I think you should check\n"
+# 666 "data/maps/MauvilleCity/scripts.pory"
+	.string "out TVs whenever you can.$"
 # 667 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Text_BeenCheckingOutTV:
+
 # 668 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Text_BeenCheckingOutTV:
+# 669 "data/maps/MauvilleCity/scripts.pory"
 	.string "Hi, have you been checking out TVs?$"
 
 MauvilleCity_EventScript_GymNPC::
-# 672 "data/maps/MauvilleCity/scripts.pory"
-	lock
 # 673 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 12, Common_Movement_FacePlayer
+	lock
 # 674 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 12
+	applymovement 12, Common_Movement_FacePlayer
 # 675 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_DacaGone, MSGBOX_NPC
+	waitmovement 12
 # 676 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	msgbox MauvilleCity_Text_DacaGone, MSGBOX_NPC
 # 677 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 678 "data/maps/MauvilleCity/scripts.pory"
 	release
 	end
 
 
 MauvilleCity_Trigger_Bikers1::
-# 692 "data/maps/MauvilleCity/scripts.pory"
-	lock
 # 693 "data/maps/MauvilleCity/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	lock
 # 694 "data/maps/MauvilleCity/scripts.pory"
-	addobject 13
+	playbgm MUS_DUMMY, FALSE
 # 695 "data/maps/MauvilleCity/scripts.pory"
-	addobject 14
+	addobject 13
 # 696 "data/maps/MauvilleCity/scripts.pory"
-	addobject 15
+	addobject 14
 # 697 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
+	addobject 15
 # 698 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
 # 699 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_PIN
-# 700 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-# 701 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 702 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerRunLeft
-# 703 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 704 "data/maps/MauvilleCity/scripts.pory"
-	delay 10
-# 705 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
-# 706 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 707 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_THUNDERSTORM
-# 708 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 13, MauvilleCity_Movement_Biker1
-# 709 "data/maps/MauvilleCity/scripts.pory"
-	delay 30
-# 710 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 14, MauvilleCity_Movement_Biker1
-# 711 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 712 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 14
-# 713 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_THUNDERSTORM_STOP
-# 714 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 715 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 15, MauvileCity_Movement_Police1
-# 716 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 15
-# 717 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 718 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
-# 719 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 720 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 15, MauvileCity_Movement_Police2
-# 721 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 15
-# 722 "data/maps/MauvilleCity/scripts.pory"
+# 700 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 701 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 702 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 703 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerRunLeft
+# 704 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 705 "data/maps/MauvilleCity/scripts.pory"
 	delay 10
+# 706 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 707 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 708 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM
+# 709 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 13, MauvilleCity_Movement_Biker1
+# 710 "data/maps/MauvilleCity/scripts.pory"
+	delay 30
+# 711 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 14, MauvilleCity_Movement_Biker1
+# 712 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 713 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 14
+# 714 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM_STOP
+# 715 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 716 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police1
+# 717 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 718 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 719 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
+# 720 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 721 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police2
+# 722 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
 # 723 "data/maps/MauvilleCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 2
+	delay 10
 # 724 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ROUTE110_HIDE_BIKERS
+	setvar VAR_SPEEDWAGON_STATE, 2
 # 725 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
 # 726 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_ROUTE110_HIDE_CYCLIST
+	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
 # 727 "data/maps/MauvilleCity/scripts.pory"
-	fadedefaultbgm
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
 # 728 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 13
+	fadedefaultbgm
 # 729 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 14
+	removeobject 13
 # 730 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 15
+	removeobject 14
 # 731 "data/maps/MauvilleCity/scripts.pory"
-	addobject 16
+	removeobject 15
 # 732 "data/maps/MauvilleCity/scripts.pory"
+	addobject 16
+# 733 "data/maps/MauvilleCity/scripts.pory"
 	release
 	end
 
 
 MauvilleCity_Trigger_Bikers2::
-# 737 "data/maps/MauvilleCity/scripts.pory"
-	lock
 # 738 "data/maps/MauvilleCity/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	lock
 # 739 "data/maps/MauvilleCity/scripts.pory"
-	addobject 13
+	playbgm MUS_DUMMY, FALSE
 # 740 "data/maps/MauvilleCity/scripts.pory"
-	addobject 14
+	addobject 13
 # 741 "data/maps/MauvilleCity/scripts.pory"
-	addobject 15
+	addobject 14
 # 742 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
+	addobject 15
 # 743 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
 # 744 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_PIN
-# 745 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-# 746 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 747 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerRunRight
-# 748 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 749 "data/maps/MauvilleCity/scripts.pory"
-	delay 10
-# 750 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
-# 751 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 752 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_THUNDERSTORM
-# 753 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 13, MauvilleCity_Movement_Biker1
-# 754 "data/maps/MauvilleCity/scripts.pory"
-	delay 30
-# 755 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 14, MauvilleCity_Movement_Biker1
-# 756 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 757 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 14
-# 758 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_THUNDERSTORM_STOP
-# 759 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 760 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 15, MauvileCity_Movement_Police1
-# 761 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 15
-# 762 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 763 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
-# 764 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 765 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 15, MauvileCity_Movement_Police2
-# 766 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 15
-# 767 "data/maps/MauvilleCity/scripts.pory"
+# 745 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 746 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 747 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 748 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerRunRight
+# 749 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 750 "data/maps/MauvilleCity/scripts.pory"
 	delay 10
+# 751 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 752 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 753 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM
+# 754 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 13, MauvilleCity_Movement_Biker1
+# 755 "data/maps/MauvilleCity/scripts.pory"
+	delay 30
+# 756 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 14, MauvilleCity_Movement_Biker1
+# 757 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 758 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 14
+# 759 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM_STOP
+# 760 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 761 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police1
+# 762 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 763 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 764 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
+# 765 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 766 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police2
+# 767 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
 # 768 "data/maps/MauvilleCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 2
+	delay 10
 # 769 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ROUTE110_HIDE_BIKERS
+	setvar VAR_SPEEDWAGON_STATE, 2
 # 770 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
 # 771 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_ROUTE110_HIDE_CYCLIST
+	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
 # 772 "data/maps/MauvilleCity/scripts.pory"
-	fadedefaultbgm
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
 # 773 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 13
+	fadedefaultbgm
 # 774 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 14
+	removeobject 13
 # 775 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 15
+	removeobject 14
 # 776 "data/maps/MauvilleCity/scripts.pory"
-	addobject 16
+	removeobject 15
 # 777 "data/maps/MauvilleCity/scripts.pory"
+	addobject 16
+# 778 "data/maps/MauvilleCity/scripts.pory"
 	release
 	end
 
 
 MauvilleCity_Trigger_Bikers3::
-# 782 "data/maps/MauvilleCity/scripts.pory"
-	lock
 # 783 "data/maps/MauvilleCity/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	lock
 # 784 "data/maps/MauvilleCity/scripts.pory"
-	addobject 13
+	playbgm MUS_DUMMY, FALSE
 # 785 "data/maps/MauvilleCity/scripts.pory"
-	addobject 14
+	addobject 13
 # 786 "data/maps/MauvilleCity/scripts.pory"
-	addobject 15
+	addobject 14
 # 787 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
+	addobject 15
 # 788 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
 # 789 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_PIN
-# 790 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-# 791 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 792 "data/maps/MauvilleCity/scripts.pory"
-	delay 10
-# 793 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
-# 794 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 795 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_THUNDERSTORM
-# 796 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 13, MauvilleCity_Movement_Biker1
-# 797 "data/maps/MauvilleCity/scripts.pory"
-	delay 30
-# 798 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 14, MauvilleCity_Movement_Biker1
-# 799 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 800 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 14
-# 801 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_THUNDERSTORM_STOP
-# 802 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 803 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 15, MauvileCity_Movement_Police1
-# 804 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 15
-# 805 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 806 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
-# 807 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 808 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 15, MauvileCity_Movement_Police2
-# 809 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 15
-# 810 "data/maps/MauvilleCity/scripts.pory"
+# 790 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 791 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 792 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 793 "data/maps/MauvilleCity/scripts.pory"
 	delay 10
+# 794 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 795 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 796 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM
+# 797 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 13, MauvilleCity_Movement_Biker1
+# 798 "data/maps/MauvilleCity/scripts.pory"
+	delay 30
+# 799 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 14, MauvilleCity_Movement_Biker1
+# 800 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 801 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 14
+# 802 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM_STOP
+# 803 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 804 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police1
+# 805 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 806 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 807 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
+# 808 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 809 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police2
+# 810 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
 # 811 "data/maps/MauvilleCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 2
+	delay 10
 # 812 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ROUTE110_HIDE_BIKERS
+	setvar VAR_SPEEDWAGON_STATE, 2
 # 813 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
 # 814 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_ROUTE110_HIDE_CYCLIST
+	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
 # 815 "data/maps/MauvilleCity/scripts.pory"
-	fadedefaultbgm
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
 # 816 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 13
+	fadedefaultbgm
 # 817 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 14
+	removeobject 13
 # 818 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 15
+	removeobject 14
 # 819 "data/maps/MauvilleCity/scripts.pory"
-	addobject 16
+	removeobject 15
 # 820 "data/maps/MauvilleCity/scripts.pory"
+	addobject 16
+# 821 "data/maps/MauvilleCity/scripts.pory"
 	release
 	end
 
 
 MauvilleCity_Trigger_Bikers4::
-# 825 "data/maps/MauvilleCity/scripts.pory"
-	lock
 # 826 "data/maps/MauvilleCity/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	lock
 # 827 "data/maps/MauvilleCity/scripts.pory"
-	addobject 13
+	playbgm MUS_DUMMY, FALSE
 # 828 "data/maps/MauvilleCity/scripts.pory"
-	addobject 14
+	addobject 13
 # 829 "data/maps/MauvilleCity/scripts.pory"
-	addobject 15
+	addobject 14
 # 830 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
+	addobject 15
 # 831 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	msgbox MauvilleCity_Trigger_Bikers1_Text_0, MSGBOX_AUTOCLOSE
 # 832 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_PIN
-# 833 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-# 834 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 835 "data/maps/MauvilleCity/scripts.pory"
-	delay 10
-# 836 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
-# 837 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
-# 838 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_THUNDERSTORM
-# 839 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 13, MauvilleCity_Movement_Biker1
-# 840 "data/maps/MauvilleCity/scripts.pory"
-	delay 30
-# 841 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 14, MauvilleCity_Movement_Biker1
-# 842 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 843 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 14
-# 844 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_THUNDERSTORM_STOP
-# 845 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 846 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 15, MauvileCity_Movement_Police1
-# 847 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 15
-# 848 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
-# 849 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
-# 850 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 851 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 15, MauvileCity_Movement_Police2
-# 852 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 15
-# 853 "data/maps/MauvilleCity/scripts.pory"
+# 833 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 834 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 835 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 836 "data/maps/MauvilleCity/scripts.pory"
 	delay 10
+# 837 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 838 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 839 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM
+# 840 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 13, MauvilleCity_Movement_Biker1
+# 841 "data/maps/MauvilleCity/scripts.pory"
+	delay 30
+# 842 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 14, MauvilleCity_Movement_Biker1
+# 843 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 844 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 14
+# 845 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_THUNDERSTORM_STOP
+# 846 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 847 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police1
+# 848 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
+# 849 "data/maps/MauvilleCity/scripts.pory"
+	delay 20
+# 850 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_Police, MSGBOX_AUTOCLOSE
+# 851 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 852 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 15, MauvileCity_Movement_Police2
+# 853 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 15
 # 854 "data/maps/MauvilleCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 2
+	delay 10
 # 855 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ROUTE110_HIDE_BIKERS
+	setvar VAR_SPEEDWAGON_STATE, 2
 # 856 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
 # 857 "data/maps/MauvilleCity/scripts.pory"
-	setflag FLAG_ROUTE110_HIDE_CYCLIST
+	clearflag FLAG_ROUTE_110_BIKER_POLICEMAN
 # 858 "data/maps/MauvilleCity/scripts.pory"
-	fadedefaultbgm
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
 # 859 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 13
+	fadedefaultbgm
 # 860 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 14
+	removeobject 13
 # 861 "data/maps/MauvilleCity/scripts.pory"
-	removeobject 15
+	removeobject 14
 # 862 "data/maps/MauvilleCity/scripts.pory"
-	addobject 16
+	removeobject 15
 # 863 "data/maps/MauvilleCity/scripts.pory"
+	addobject 16
+# 864 "data/maps/MauvilleCity/scripts.pory"
 	release
 	end
 
 
-# 867 "data/maps/MauvilleCity/scripts.pory"
+# 868 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_Movement_PlayerRunLeft:
-# 868 "data/maps/MauvilleCity/scripts.pory"
+# 869 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_left
-# 868 "data/maps/MauvilleCity/scripts.pory"
+# 869 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 871 "data/maps/MauvilleCity/scripts.pory"
-MauvilleCity_Movement_PlayerRunRight:
 # 872 "data/maps/MauvilleCity/scripts.pory"
+MauvilleCity_Movement_PlayerRunRight:
+# 873 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 876 "data/maps/MauvilleCity/scripts.pory"
+# 877 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_Movement_Biker1:
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_down
-# 877 "data/maps/MauvilleCity/scripts.pory"
+# 878 "data/maps/MauvilleCity/scripts.pory"
 	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 878 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_down
+# 879 "data/maps/MauvilleCity/scripts.pory"
 	walk_faster_right
-# 878 "data/maps/MauvilleCity/scripts.pory"
+# 879 "data/maps/MauvilleCity/scripts.pory"
 	walk_faster_right
-# 878 "data/maps/MauvilleCity/scripts.pory"
+# 879 "data/maps/MauvilleCity/scripts.pory"
 	walk_faster_right
-# 878 "data/maps/MauvilleCity/scripts.pory"
+# 879 "data/maps/MauvilleCity/scripts.pory"
 	walk_faster_right
-# 878 "data/maps/MauvilleCity/scripts.pory"
+# 879 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 879 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 879 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 879 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 879 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 879 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 879 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 879 "data/maps/MauvilleCity/scripts.pory"
+	walk_faster_right
+# 879 "data/maps/MauvilleCity/scripts.pory"
 	walk_faster_right
 	step_end
 
-# 881 "data/maps/MauvilleCity/scripts.pory"
+# 882 "data/maps/MauvilleCity/scripts.pory"
 MauvileCity_Movement_Police1:
-# 882 "data/maps/MauvilleCity/scripts.pory"
+# 883 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_down
-# 882 "data/maps/MauvilleCity/scripts.pory"
+# 883 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_down
-# 882 "data/maps/MauvilleCity/scripts.pory"
+# 883 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_down
-# 882 "data/maps/MauvilleCity/scripts.pory"
+# 883 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_down
-# 882 "data/maps/MauvilleCity/scripts.pory"
+# 883 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_down
-# 882 "data/maps/MauvilleCity/scripts.pory"
+# 883 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 885 "data/maps/MauvilleCity/scripts.pory"
+# 886 "data/maps/MauvilleCity/scripts.pory"
 MauvileCity_Movement_Police2:
-# 886 "data/maps/MauvilleCity/scripts.pory"
-	walk_fast_down
-# 886 "data/maps/MauvilleCity/scripts.pory"
-	walk_fast_down
-# 886 "data/maps/MauvilleCity/scripts.pory"
-	walk_fast_down
-# 886 "data/maps/MauvilleCity/scripts.pory"
+# 887 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_down
 # 887 "data/maps/MauvilleCity/scripts.pory"
-	walk_fast_right
+	walk_fast_down
 # 887 "data/maps/MauvilleCity/scripts.pory"
-	walk_fast_right
+	walk_fast_down
 # 887 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_down
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
-# 887 "data/maps/MauvilleCity/scripts.pory"
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
-# 887 "data/maps/MauvilleCity/scripts.pory"
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
-# 887 "data/maps/MauvilleCity/scripts.pory"
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
-# 887 "data/maps/MauvilleCity/scripts.pory"
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
-# 887 "data/maps/MauvilleCity/scripts.pory"
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
-# 887 "data/maps/MauvilleCity/scripts.pory"
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
-# 887 "data/maps/MauvilleCity/scripts.pory"
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
-# 887 "data/maps/MauvilleCity/scripts.pory"
+# 888 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 888 "data/maps/MauvilleCity/scripts.pory"
+	walk_fast_right
+# 888 "data/maps/MauvilleCity/scripts.pory"
 	walk_fast_right
 	step_end
 
 MauvilleCity_EventScript_Bikers_WomanWarn::
-# 896 "data/maps/MauvilleCity/scripts.pory"
-	lock
 # 897 "data/maps/MauvilleCity/scripts.pory"
-	playse SE_PIN
+	lock
 # 898 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 16, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 899 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 16
+	applymovement 16, Common_Movement_ExclamationMark
 # 900 "data/maps/MauvilleCity/scripts.pory"
-	delay 20
+	waitmovement 16
 # 901 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+	delay 20
 # 902 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 # 903 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 16, Common_Movement_FacePlayer
+	waitmovement 0
 # 904 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 16
+	applymovement 16, Common_Movement_FacePlayer
 # 905 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WomanBikersRoute110, MSGBOX_AUTOCLOSE
-# 906 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
-# 907 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 16, Common_Movement_WalkInPlaceDown
-# 908 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 16
+# 906 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Text_WomanBikersRoute110, MSGBOX_AUTOCLOSE
+# 907 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 908 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 16, Common_Movement_WalkInPlaceDown
 # 909 "data/maps/MauvilleCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 3
+	waitmovement 16
 # 910 "data/maps/MauvilleCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 3
+# 911 "data/maps/MauvilleCity/scripts.pory"
 	release
 	end
 
 
 MauvilleCity_EventScript_Bikers_WomanWarnText::
-# 921 "data/maps/MauvilleCity/scripts.pory"
-	lock
 # 922 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_EventScript_Bikers_WomanWarnText_Text_0, MSGBOX_AUTOCLOSE
+	lock
 # 923 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	msgbox MauvilleCity_EventScript_Bikers_WomanWarnText_Text_0, MSGBOX_AUTOCLOSE
 # 924 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 925 "data/maps/MauvilleCity/scripts.pory"
 	release
 	end
 
 
 MauvileCity_EventScript_SeeWhatsGoingOn::
-# 929 "data/maps/MauvilleCity/scripts.pory"
-	lock
 # 930 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 931 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvileCity_EventScript_SeeWhatsGoingOn_Text_0, MSGBOX_AUTOCLOSE
-# 932 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
 # 933 "data/maps/MauvilleCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MauvileCity_Movement_WalkDown
+	waitmessage
 # 934 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MauvileCity_Movement_WalkDown
 # 935 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 936 "data/maps/MauvilleCity/scripts.pory"
 	release
 	end
 
 
-# 939 "data/maps/MauvilleCity/scripts.pory"
-MauvileCity_Movement_WalkDown:
 # 940 "data/maps/MauvilleCity/scripts.pory"
+MauvileCity_Movement_WalkDown:
+# 941 "data/maps/MauvilleCity/scripts.pory"
 	walk_down
 	step_end
 
 MauvilleCity_EventScript_SaveBikerMusic::
-# 944 "data/maps/MauvilleCity/scripts.pory"
+# 945 "data/maps/MauvilleCity/scripts.pory"
 	playbgm MUS_RG_SILPH, TRUE
 	return
 
 
 MauvilleCity_Trigger_Bikers1_Text_0:
-# 697 "data/maps/MauvilleCity/scripts.pory"
+# 698 "data/maps/MauvilleCity/scripts.pory"
 	.string "LOOK OUT!$"
 
 MauvilleCity_EventScript_Bikers_WomanWarnText_Text_0:
-# 922 "data/maps/MauvilleCity/scripts.pory"
+# 923 "data/maps/MauvilleCity/scripts.pory"
 	.string "Oh no…$"
 
 MauvileCity_EventScript_SeeWhatsGoingOn_Text_0:
-# 930 "data/maps/MauvilleCity/scripts.pory"
+# 931 "data/maps/MauvilleCity/scripts.pory"
 	.string "I should see what's happening\n on ROUTE 110.$"
 
 MauvilleCity_Text_DacaGone::
-# 681 "data/maps/MauvilleCity/scripts.pory"
+# 682 "data/maps/MauvilleCity/scripts.pory"
 	.string "What's up, dude?\n Here to challenge the GYM?\p Sorry, the LEADER went to \n RUSTURF TUNNEL.\p I don't when she'll be back.\n Maybe you could go get her for me?$"
 
 MauvilleCity_Text_Police::
-# 890 "data/maps/MauvilleCity/scripts.pory"
+# 891 "data/maps/MauvilleCity/scripts.pory"
 	.string "Huff.. Huff..\n Requesting back up on ROUTE 110!$"
 
 MauvilleCity_Text_WomanBikersRoute110::
-# 914 "data/maps/MauvilleCity/scripts.pory"
+# 915 "data/maps/MauvilleCity/scripts.pory"
 	.string "A biker gang took over the CYCLING\n ROAD!\l That poor policeman is outnumbered!$"

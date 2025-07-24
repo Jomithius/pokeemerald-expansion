@@ -568,3 +568,4 @@ gSpecials::
 	def_special SetObjectMovementType
 	def_special IsLeadMonSpectrierOrGlastrier
 	def_special AreRegisInParty
+	def_special IsGhostTypeInParty

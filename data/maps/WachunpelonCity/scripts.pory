@@ -1,4 +1,11 @@
-mapscripts WachunpelonCity_MapScripts {}
+mapscripts WachunpelonCity_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: WachunpelonCity_OnTransition
+}
+
+script WachunpelonCity_OnTransition{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
+    end
+}
 
 script WachunpelonCity_EventScript_FatMan{
     msgbox("Man…\n

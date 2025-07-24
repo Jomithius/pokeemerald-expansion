@@ -1,4 +1,11 @@
-mapscripts SnowdriftCity_MapScripts {}
+mapscripts SnowdriftCity_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: SnowdriftCity_OnTransition 
+}
+
+script SnowdriftCity_OnTransition{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
+    end
+}
 
 script SnowdriftCity_EventScript_Hiker{
     msgbox("Huff… Huff…\n

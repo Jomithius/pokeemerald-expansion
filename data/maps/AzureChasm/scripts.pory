@@ -6,6 +6,39 @@ script AzureChasm_EventScript_BlackBelt{
     end
 }
 
+script AzureChasm_EventScript_Kenneth{
+    trainerbattle_single(TRAINER_KENNETH, "Fufu…\nSuch rare POKéMON.", "I see.\nYou're quite strong.")
+    msgbox("There's a horse down there.\n
+        I tried to catch it, but it's too strong.", MSGBOX_NPC)
+	end
+}
+
+script AzureChasm_EventScript_Keith{
+    trainerbattle_single(TRAINER_KEITH, "I MADE IT!\nRAAAAAAAH!", "I lost it…\nRaaaaaaah…")
+    msgbox("Congratulations on making it up here!\p
+        Most people just use the CORVIKNIGHT\n
+        service.\p
+        Huh?\n
+        How can I tell you didn't?\p
+        You're covered in dirt!\n
+        Hahahaha!", MSGBOX_NPC)
+	end
+}
+
+script AzureChasm_EventScript_Roy{
+    trainerbattle_single(TRAINER_ROY, "Man! It's so cold over here!", "Why is SNOWDRIFT so much warmer?")
+    msgbox("It's weird how warm SNOWDRIFT CITY gets.", MSGBOX_NPC)
+	end
+}
+
+script AzureChasm_EventScript_Yor{
+    trainerbattle_single(TRAINER_YOR, "There's less oxygen up here.\nGreat for training!", "I'm all out of breath…")
+    msgbox("You probably didn't notice how thin\n
+        the air was up here since you\l
+        hiked all the way up.", MSGBOX_NPC)
+	end
+}
+
 script AzureChasm_EventScript_Azelf{
     lock
     faceplayer

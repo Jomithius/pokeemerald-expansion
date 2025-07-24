@@ -4,6 +4,7 @@ PacifidlogTown_MapScripts::
 	.byte 0
 
 PacifidlogTown_OnTransition:
+	clearflag FLAG_SYS_DYNAMIC_LEVELS
 	setflag FLAG_VISITED_PACIFIDLOG_TOWN
 	end
 

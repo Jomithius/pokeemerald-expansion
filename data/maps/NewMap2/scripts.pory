@@ -1,5 +1,65 @@
 mapscripts NewMap2_MapScripts {}
 
+script Route137_EventScript_Tadina{
+    trainerbattle_single(TRAINER_TADINA, "This is a great vacation!", "You just ruined it.")
+    msgbox("I haven't gone on vacation in years!", MSGBOX_NPC)
+	end
+}
+
+script Route137_EventScript_Elvina{
+    trainerbattle_single(TRAINER_ELVINA, "Hey!\nYou're in my way!", "Just get out of my way!")
+    msgbox("Hey!\nYou're in my way!", MSGBOX_NPC)
+	end
+}
+
+script Route137_EventScript_Lena{
+    trainerbattle_single(TRAINER_LENA, "You got to try the ice cream here!", "It's so good.")
+    msgbox("I heard the owner came all the way\n
+        from UNOVA to open up a shop here.", MSGBOX_NPC)
+	end
+}
+
+script Route137_EventScript_Charles{
+    trainerbattle_single(TRAINER_CHARLES, "I love swimming!", "I hate sand castles!")
+    msgbox("I hate sand castles!", MSGBOX_NPC)
+	end
+}
+
+script Route137_EventScript_Charleson{
+    trainerbattle_single(TRAINER_CHARLESON, "Huff, huff…\nLook how well I can swim!", "Gah! I got a cramp!")
+    msgbox("Huff, huff…\n
+        Look how well I can swim!\p
+        Is my wife watching?!", MSGBOX_NPC)
+	end
+}
+
+script Route137_EventScript_Jameson{
+    trainerbattle_single(TRAINER_JAMESON, "SWIM! SWIM! SWIM!", "I'LL KEEP SWIMMING!")
+    msgbox("I'LL KEEP SWIMMING!", MSGBOX_NPC)
+	end
+}
+
+script Route137_EventScript_Daveson{
+    trainerbattle_single(TRAINER_DAVESON, "Hey!\nLook what I caught at a spot out east!", "What a catch!")
+    msgbox("Out to the east there's a village\n
+        that's hard to get into.\p
+        But the culture there is really cool.", MSGBOX_NPC)
+	end
+}
+
+script Route137_EventScript_Hiyoshi{
+    trainerbattle_single(TRAINER_HIYOSHI, "This is my secret training spot!", "I need more training.")
+    msgbox("I'm training to finally beat BRUNO!", MSGBOX_NPC)
+	end
+}
+
+script Route137_EventScript_Diddlevon{
+    trainerbattle_single(TRAINER_DIDDLEVON, "Oh?\nWhat have we here?", "Oh.\nHere what we have.")
+    msgbox("Even though I look like this,\n
+        I love the beach.", MSGBOX_NPC)
+	end
+}
+
 script Route137_EventScript_Woman_4{
     lock
     faceplayer

@@ -4,6 +4,7 @@ raw`EverGrandeCity_MapScripts::
 	.byte 0
 
 EverGrandeCity_OnTransition:
+    clearflag FLAG_SYS_DYNAMIC_LEVELS
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	end
 

@@ -4,7 +4,51 @@ mapscripts Route135_MapScripts {
 
 script Route135_OnTransition{
     setflag(FLAG_ENABLED_JAMES_MATCH_CALL)
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
     end
+}
+
+script Route135_EventScript_Danny{
+    trainerbattle_single(TRAINER_DANNY, "Hey!\nDoesn't this POKéMON sound weird?", "I've never heard a POKéMON like that!")
+    msgbox("I've heard seen a POKéMON like that!", MSGBOX_NPC)
+	end
+}
+
+script Route135_EventScript_Danuel{
+    trainerbattle_single(TRAINER_DANUEL, "Hey!\nThis is my fishing spot!", "I guess you can fish here too.")
+    msgbox("I've lived here all my life.\n
+        Most of the residents here are vegan.", MSGBOX_NPC)
+	end
+}
+
+script Route135_EventScript_Pibbles{
+    trainerbattle_single(TRAINER_PIBBLES, "I love nature!", "I don't love battling.")
+    msgbox("I love how rural it is out here.\n
+        Nature is so beautiful.", MSGBOX_NPC)
+	end
+}
+
+script Route135_EventScript_Billiam{
+    trainerbattle_single(TRAINER_BILLIAM, "It's my job to train POKéMON out here!", "Thanks for helping!")
+    msgbox("I was lucky enough to get a job\n
+        at the ranch.\p
+        Oh, sorry.\n
+        Do you even know what a job is?", MSGBOX_NPC)
+	end
+}
+
+script Route135_EventScript_Denjamin{
+    trainerbattle_single(TRAINER_DENJAMIN, "I'm on break right now.\nLet's kill time with a battle!", "I don't want to get back to work.")
+    msgbox("It's hard work out here, but the\n
+        pay is surprisingly good.", MSGBOX_NPC)
+	end
+}
+
+script Route135_EventScript_Pamuel{
+    trainerbattle_single(TRAINER_PAMUEL, "Gosh, I'm so bored.\nEntertain me with a battle!", "That was fun!")
+    msgbox("I've lived out here all my life.\n
+        I wonder what the city's like.", MSGBOX_NPC)
+	end
 }
 
 script Route135_EventScript_FatMan{

@@ -373,6 +373,8 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_CHIEF] = { _("CHIEF"), 40 },
     [TRAINER_CLASS_NIGHTMARE] = { _("NIGHTMARE"), 5 },
     [TRAINER_CLASS_BLACK_MAGE] = { _("BLACK MAGE"), 20, BALL_DUSK },
+    [TRAINER_CLASS_DISCIPLE] = { _("DISCIPLE"), 20 },
+    
 };
 
 static void (* const sTurnActionsFuncsTable[])(void) =
@@ -5570,6 +5572,8 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_KIMONO_WOMAN:
         case TRAINER_CLASS_NINJA:
         case TRAINER_CLASS_BIKER:
+        case TRAINER_CLASS_DISCIPLE:
+        case TRAINER_CLASS_CHIEF:
             PlayBGM(MUS_RG_VICTORY_TRAINER);
             break;
         default:

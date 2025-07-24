@@ -3,257 +3,405 @@ ArtisanCave_B1F_MapScripts::
 # 2 "data/maps/ArtisanCave_B1F/scripts.pory"
 	.byte 0
 
-AzureMountain_EventScript_Keldeo::
+AzureMountain_EventScript_Barley::
 # 6 "data/maps/ArtisanCave_B1F/scripts.pory"
-	lock
+	trainerbattle_single TRAINER_BARLEY, AzureMountain_EventScript_Barley_Text_0, AzureMountain_EventScript_Barley_Text_1
 # 7 "data/maps/ArtisanCave_B1F/scripts.pory"
-	faceplayer
-# 8 "data/maps/ArtisanCave_B1F/scripts.pory"
-	playmoncry SPECIES_KELDEO, CRY_MODE_ENCOUNTER
-# 9 "data/maps/ArtisanCave_B1F/scripts.pory"
-	delay 40
-# 10 "data/maps/ArtisanCave_B1F/scripts.pory"
-	waitmoncry
-# 11 "data/maps/ArtisanCave_B1F/scripts.pory"
-	setwildbattle SPECIES_KELDEO, 75
-# 12 "data/maps/ArtisanCave_B1F/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox AzureMountain_EventScript_Barley_Text_2, MSGBOX_NPC
+	end
+
+
+AzureMountain_EventScript_Hurley::
 # 13 "data/maps/ArtisanCave_B1F/scripts.pory"
-	waitstate
+	trainerbattle_single TRAINER_HURLEY, AzureMountain_EventScript_Hurley_Text_0, AzureMountain_EventScript_Hurley_Text_1
 # 14 "data/maps/ArtisanCave_B1F/scripts.pory"
+	msgbox AzureMountain_EventScript_Hurley_Text_2, MSGBOX_NPC
+	end
+
+
+AzureMountain_EventScript_Jessi::
+# 19 "data/maps/ArtisanCave_B1F/scripts.pory"
+	trainerbattle_single TRAINER_JESSI, AzureMountain_EventScript_Jessi_Text_0, AzureMountain_EventScript_Jessi_Text_1
+# 20 "data/maps/ArtisanCave_B1F/scripts.pory"
+	msgbox AzureMountain_EventScript_Hurley_Text_2, MSGBOX_NPC
+	end
+
+
+AzureMountain_EventScript_Dogfood::
+# 25 "data/maps/ArtisanCave_B1F/scripts.pory"
+	trainerbattle_single TRAINER_DOGFOOD, AzureMountain_EventScript_Dogfood_Text_0, AzureMountain_EventScript_Dogfood_Text_0
+# 26 "data/maps/ArtisanCave_B1F/scripts.pory"
+	msgbox AzureMountain_EventScript_Dogfood_Text_0, MSGBOX_NPC
+	end
+
+
+AzureMountain_EventScript_Bjornulfr::
+# 31 "data/maps/ArtisanCave_B1F/scripts.pory"
+	trainerbattle_single TRAINER_BJORNULFR, AzureMountain_EventScript_Bjornulfr_Text_0, AzureMountain_EventScript_Bjornulfr_Text_1
+# 32 "data/maps/ArtisanCave_B1F/scripts.pory"
+	msgbox AzureMountain_EventScript_Bjornulfr_Text_2, MSGBOX_NPC
+	end
+
+
+AzureMountain_EventScript_Rin::
+# 38 "data/maps/ArtisanCave_B1F/scripts.pory"
+	trainerbattle_single TRAINER_RIN, AzureMountain_EventScript_Rin_Text_0, AzureMountain_EventScript_Rin_Text_1
+# 39 "data/maps/ArtisanCave_B1F/scripts.pory"
+	msgbox AzureMountain_EventScript_Rin_Text_2, MSGBOX_NPC
+	end
+
+
+AzureMountain_EventScript_Shuji::
+# 44 "data/maps/ArtisanCave_B1F/scripts.pory"
+	trainerbattle_single TRAINER_SHUJI, AzureMountain_EventScript_Shuji_Text_0, AzureMountain_EventScript_Shuji_Text_1
+# 45 "data/maps/ArtisanCave_B1F/scripts.pory"
+	msgbox AzureMountain_EventScript_Shuji_Text_2, MSGBOX_NPC
+	end
+
+
+AzureMountain_EventScript_Yuu::
+# 52 "data/maps/ArtisanCave_B1F/scripts.pory"
+	trainerbattle_single TRAINER_YUU, AzureMountain_EventScript_Yuu_Text_0, AzureMountain_EventScript_Yuu_Text_1
+# 53 "data/maps/ArtisanCave_B1F/scripts.pory"
+	msgbox AzureMountain_EventScript_Yuu_Text_2, MSGBOX_NPC
+	end
+
+
+AzureMountain_EventScript_Keldeo::
+# 62 "data/maps/ArtisanCave_B1F/scripts.pory"
+	lock
+# 63 "data/maps/ArtisanCave_B1F/scripts.pory"
+	faceplayer
+# 64 "data/maps/ArtisanCave_B1F/scripts.pory"
+	playmoncry SPECIES_KELDEO, CRY_MODE_ENCOUNTER
+# 65 "data/maps/ArtisanCave_B1F/scripts.pory"
+	delay 40
+# 66 "data/maps/ArtisanCave_B1F/scripts.pory"
+	waitmoncry
+# 67 "data/maps/ArtisanCave_B1F/scripts.pory"
+	setwildbattle SPECIES_KELDEO, 75
+# 68 "data/maps/ArtisanCave_B1F/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 69 "data/maps/ArtisanCave_B1F/scripts.pory"
+	waitstate
+# 70 "data/maps/ArtisanCave_B1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 15 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 71 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureMountain_EventScript_Keldeo_2
-# 15 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 71 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureMountain_EventScript_Keldeo_2
-# 20 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 76 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureMountain_EventScript_Keldeo_3
-# 20 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 76 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureMountain_EventScript_Keldeo_3
 AzureMountain_EventScript_Keldeo_1:
-# 23 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 79 "data/maps/ArtisanCave_B1F/scripts.pory"
 	release
 	end
 
 AzureMountain_EventScript_Keldeo_2:
-# 16 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 72 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 17 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 73 "data/maps/ArtisanCave_B1F/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 18 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 74 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureMountain_EventScript_Keldeo_1
 
 AzureMountain_EventScript_Keldeo_3:
-# 21 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 77 "data/maps/ArtisanCave_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureMountain_EventScript_Keldeo_1
 
 
 AzureMountain_EventScript_Cobalion::
-# 28 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 84 "data/maps/ArtisanCave_B1F/scripts.pory"
 	lock
-# 29 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 85 "data/maps/ArtisanCave_B1F/scripts.pory"
 	faceplayer
-# 30 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 86 "data/maps/ArtisanCave_B1F/scripts.pory"
 	playmoncry SPECIES_COBALION, CRY_MODE_ENCOUNTER
-# 31 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 87 "data/maps/ArtisanCave_B1F/scripts.pory"
 	delay 40
-# 32 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 88 "data/maps/ArtisanCave_B1F/scripts.pory"
 	waitmoncry
-# 33 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 89 "data/maps/ArtisanCave_B1F/scripts.pory"
 	setwildbattle SPECIES_COBALION, 75
-# 34 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 90 "data/maps/ArtisanCave_B1F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 35 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 91 "data/maps/ArtisanCave_B1F/scripts.pory"
 	waitstate
-# 36 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 92 "data/maps/ArtisanCave_B1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 37 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 93 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureMountain_EventScript_Cobalion_2
-# 37 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 93 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureMountain_EventScript_Cobalion_2
-# 42 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 98 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureMountain_EventScript_Cobalion_3
-# 42 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 98 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureMountain_EventScript_Cobalion_3
 AzureMountain_EventScript_Cobalion_1:
-# 45 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 101 "data/maps/ArtisanCave_B1F/scripts.pory"
 	release
 	end
 
 AzureMountain_EventScript_Cobalion_2:
-# 38 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 94 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 39 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 95 "data/maps/ArtisanCave_B1F/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 40 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 96 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureMountain_EventScript_Cobalion_1
 
 AzureMountain_EventScript_Cobalion_3:
-# 43 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 99 "data/maps/ArtisanCave_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureMountain_EventScript_Cobalion_1
 
 
 AzureMountain_EventScript_Virizion::
-# 50 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 106 "data/maps/ArtisanCave_B1F/scripts.pory"
 	lock
-# 51 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 107 "data/maps/ArtisanCave_B1F/scripts.pory"
 	faceplayer
-# 52 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 108 "data/maps/ArtisanCave_B1F/scripts.pory"
 	playmoncry SPECIES_VIRIZION, CRY_MODE_ENCOUNTER
-# 53 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 109 "data/maps/ArtisanCave_B1F/scripts.pory"
 	delay 40
-# 54 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 110 "data/maps/ArtisanCave_B1F/scripts.pory"
 	waitmoncry
-# 55 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 111 "data/maps/ArtisanCave_B1F/scripts.pory"
 	setwildbattle SPECIES_VIRIZION, 75
-# 56 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 112 "data/maps/ArtisanCave_B1F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 57 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 113 "data/maps/ArtisanCave_B1F/scripts.pory"
 	waitstate
-# 58 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 114 "data/maps/ArtisanCave_B1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 59 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 115 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureMountain_EventScript_Virizion_2
-# 59 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 115 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureMountain_EventScript_Virizion_2
-# 64 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 120 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureMountain_EventScript_Virizion_3
-# 64 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 120 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureMountain_EventScript_Virizion_3
 AzureMountain_EventScript_Virizion_1:
-# 67 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 123 "data/maps/ArtisanCave_B1F/scripts.pory"
 	release
 	end
 
 AzureMountain_EventScript_Virizion_2:
-# 60 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 116 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 61 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 117 "data/maps/ArtisanCave_B1F/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 62 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 118 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureMountain_EventScript_Virizion_1
 
 AzureMountain_EventScript_Virizion_3:
-# 65 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 121 "data/maps/ArtisanCave_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureMountain_EventScript_Virizion_1
 
 
 AzureMountain_EventScript_Terrakion::
-# 72 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 128 "data/maps/ArtisanCave_B1F/scripts.pory"
 	lock
-# 73 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 129 "data/maps/ArtisanCave_B1F/scripts.pory"
 	faceplayer
-# 74 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 130 "data/maps/ArtisanCave_B1F/scripts.pory"
 	playmoncry SPECIES_TERRAKION, CRY_MODE_ENCOUNTER
-# 75 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 131 "data/maps/ArtisanCave_B1F/scripts.pory"
 	delay 40
-# 76 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 132 "data/maps/ArtisanCave_B1F/scripts.pory"
 	waitmoncry
-# 77 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 133 "data/maps/ArtisanCave_B1F/scripts.pory"
 	setwildbattle SPECIES_TERRAKION, 75
-# 78 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 134 "data/maps/ArtisanCave_B1F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 79 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 135 "data/maps/ArtisanCave_B1F/scripts.pory"
 	waitstate
-# 80 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 136 "data/maps/ArtisanCave_B1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 81 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 137 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureMountain_EventScript_Terrakion_2
-# 81 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 137 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureMountain_EventScript_Terrakion_2
-# 86 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 142 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureMountain_EventScript_Terrakion_3
-# 86 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 142 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureMountain_EventScript_Terrakion_3
 AzureMountain_EventScript_Terrakion_1:
-# 89 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 145 "data/maps/ArtisanCave_B1F/scripts.pory"
 	release
 	end
 
 AzureMountain_EventScript_Terrakion_2:
-# 82 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 138 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 83 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 139 "data/maps/ArtisanCave_B1F/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 84 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 140 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureMountain_EventScript_Terrakion_1
 
 AzureMountain_EventScript_Terrakion_3:
-# 87 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 143 "data/maps/ArtisanCave_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureMountain_EventScript_Terrakion_1
 
 
 AzureMountain_EventScript_Hoopa::
-# 94 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 150 "data/maps/ArtisanCave_B1F/scripts.pory"
 	lock
-# 95 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 151 "data/maps/ArtisanCave_B1F/scripts.pory"
 	faceplayer
-# 96 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 152 "data/maps/ArtisanCave_B1F/scripts.pory"
 	playmoncry SPECIES_HOOPA, CRY_MODE_ENCOUNTER
-# 97 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 153 "data/maps/ArtisanCave_B1F/scripts.pory"
 	delay 40
-# 98 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 154 "data/maps/ArtisanCave_B1F/scripts.pory"
 	waitmoncry
-# 99 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 155 "data/maps/ArtisanCave_B1F/scripts.pory"
 	setwildbattle SPECIES_HOOPA, 75
-# 100 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 156 "data/maps/ArtisanCave_B1F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 101 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 157 "data/maps/ArtisanCave_B1F/scripts.pory"
 	waitstate
-# 102 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 158 "data/maps/ArtisanCave_B1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 103 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 159 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureMountain_EventScript_Hoopa_2
-# 103 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 159 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureMountain_EventScript_Hoopa_2
-# 108 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 164 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureMountain_EventScript_Hoopa_3
-# 108 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 164 "data/maps/ArtisanCave_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureMountain_EventScript_Hoopa_3
 AzureMountain_EventScript_Hoopa_1:
-# 111 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 167 "data/maps/ArtisanCave_B1F/scripts.pory"
 	release
 	end
 
 AzureMountain_EventScript_Hoopa_2:
-# 104 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 160 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 105 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 161 "data/maps/ArtisanCave_B1F/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 106 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 162 "data/maps/ArtisanCave_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureMountain_EventScript_Hoopa_1
 
 AzureMountain_EventScript_Hoopa_3:
-# 109 "data/maps/ArtisanCave_B1F/scripts.pory"
+# 165 "data/maps/ArtisanCave_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureMountain_EventScript_Hoopa_1
 
+
+AzureMountain_EventScript_Barley_Text_0:
+# 6 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Only the strongest TRAINERS come here!$"
+
+AzureMountain_EventScript_Barley_Text_1:
+# 6 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Whoa…$"
+
+AzureMountain_EventScript_Barley_Text_2:
+# 7 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Another super strong TRAINER\n came through here a while ago.$"
+
+AzureMountain_EventScript_Hurley_Text_0:
+# 13 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "I'll show you why I was\nable to get here!$"
+
+AzureMountain_EventScript_Hurley_Text_1:
+# 13 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Dang…$"
+
+AzureMountain_EventScript_Hurley_Text_2:
+# 14 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Dang… You're strong!$"
+
+AzureMountain_EventScript_Jessi_Text_0:
+# 19 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Oh?\nYou think you can beat me?$"
+
+AzureMountain_EventScript_Jessi_Text_1:
+# 19 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Okay…\nMaybe you can beat me.$"
+
+AzureMountain_EventScript_Dogfood_Text_0:
+# 25 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Grrr…$"
+
+AzureMountain_EventScript_Bjornulfr_Text_0:
+# 31 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Huff… huff…\nWhat a hike!$"
+
+AzureMountain_EventScript_Bjornulfr_Text_1:
+# 31 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Maybe I'm out of shape…$"
+
+AzureMountain_EventScript_Bjornulfr_Text_2:
+# 32 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "There's a lot of strong POKéMON\n in here!$"
+
+AzureMountain_EventScript_Rin_Text_0:
+# 38 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Fear my fists!$"
+
+AzureMountain_EventScript_Rin_Text_1:
+# 38 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Maybe I should fear you!$"
+
+AzureMountain_EventScript_Rin_Text_2:
+# 39 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "This is the best place to train!$"
+
+AzureMountain_EventScript_Shuji_Text_0:
+# 44 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Hm…\nI can sense your strength.$"
+
+AzureMountain_EventScript_Shuji_Text_1:
+# 44 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "You've come far, young one.$"
+
+AzureMountain_EventScript_Shuji_Text_2:
+# 45 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Hm…\n Looks like the next generations have\l a lot of potential.$"
+
+AzureMountain_EventScript_Yuu_Text_0:
+# 52 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "It's so hot over here!\nI'm fired up!$"
+
+AzureMountain_EventScript_Yuu_Text_1:
+# 52 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Well, that cooled me down!$"
+
+AzureMountain_EventScript_Yuu_Text_2:
+# 53 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "The ladder next to me leads to\n the volcano deep within the\l mountain.\p It's so hot that I don't think\n I've ever seen anyone go down there!$"

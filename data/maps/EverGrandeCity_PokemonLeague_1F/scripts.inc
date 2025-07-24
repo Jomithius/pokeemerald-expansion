@@ -9,6 +9,7 @@ EverGrandeCity_PokemonLeague_1F_MapScripts::
 
 @ custom
 EverGrandeCity_PokemonLeague_1F_OnTransition:
+	clearflag FLAG_SYS_DYNAMIC_LEVELS
 	setrespawn HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE
 	setflag FLAG_LANDMARK_POKEMON_LEAGUE
 	call_if_unset FLAG_ENTERED_ELITE_FOUR, EverGrandeCity_PokemonLeague_1F_EventScript_GuardsBlockDoor

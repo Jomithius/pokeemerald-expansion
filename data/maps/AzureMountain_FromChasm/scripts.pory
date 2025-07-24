@@ -1,5 +1,19 @@
 mapscripts AzureMountain_FromChasm_MapScripts {}
 
+script AzureMountain_FromChasm_EventScript_Gohan{
+    trainerbattle_single(TRAINER_GOHAN, "You've done well to get this far.\nShow me your strength!", "Hm…\nYou have impressed me.")
+    msgbox("Not many people can make it out here.\n
+        Good job, young one.", MSGBOX_NPC)
+	end
+}
+
+script AzureMountain_FromChasm_EventScript_Gohana{
+    trainerbattle_single(TRAINER_GOHANA, "You've done well to get this far.\nShow me your strength!", "Hm…\nYou have impressed me.")
+    msgbox("Not many people can make it out here.\n
+        Good job, young one.", MSGBOX_NPC)
+	end
+}
+
 script AzureMountain_FromChasm_EventScript_Magearna{
     lock
     faceplayer

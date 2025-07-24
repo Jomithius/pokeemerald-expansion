@@ -1,1 +1,8 @@
-mapscripts FallarborTown_House_Basement_MapScripts {}
+mapscripts FallarborTown_House_Basement_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: FallarborTown_House_Basement_OnTransition
+}
+
+script FallarborTown_House_Basement_OnTransition{
+    clearflag(FLAG_SYS_DYNAMIC_LEVELS)
+    end
+}

@@ -67,29 +67,29 @@
       "flag": "FLAG_DEFEATED_MAGEARNA"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 21,
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_DOJO",
+      "x": 17,
       "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "AzureMountain_FromChasm_EventScript_Gohan",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_KIMONO_OLDLADY",
       "x": 16,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AzureMountain_FromChasm_EventScript_Gohana",
       "flag": "0"
     }
   ],

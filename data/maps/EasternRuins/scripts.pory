@@ -1,1 +1,108 @@
-mapscripts EasternRuins_MapScripts {}
+mapscripts EasternRuins_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: EasternRuins_OnTransition 
+}
+
+script EasternRuins_OnTransition{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
+    end
+}
+
+script EasternRuins_EventScript_Kumiko{
+    trainerbattle_single(TRAINER_KUMIKO, "It should be me!\nI should be able to accompany LADY\lASAKURA!", "I won't stand for this!")
+    msgbox("Why won't they let me in?!", MSGBOX_NPC)
+	end
+}
+
+script EasternRuins_EventScript_Shiori{
+    trainerbattle_single(TRAINER_SHIORI, "Fufufu…\nI can feel the power eminating from the land…", "Fufufufu…")
+    msgbox("… These sacred lands…\n
+        There is so much history in these ruins.", MSGBOX_NPC)
+	end
+}
+
+script EasternRuins_EventScript_Yumi{
+    trainerbattle_single(TRAINER_YUMI, "Fufufu…\nSoon, JIRACHI will awaken…", "Soon…")
+    msgbox("… We've protected these lands…\n
+        For many generations.", MSGBOX_NPC)
+	end
+}
+
+script EasternRuins_EventScript_Chestird{
+    trainerbattle_single(TRAINER_CHESTIRD, "I had to pay a lot of money\nto be able to get here…", "I guess money can't help me\nwin battles!")
+    msgbox("The ruins behind me are intruiging.\n
+        It seems as though they have been\l
+        recently inhabited by POKéMON.", MSGBOX_NPC)
+	end
+}
+
+script EasternRuins_EventScript_ManiacBlackAugurite{
+    lock
+    faceplayer
+    goto_if_set(FLAG_RECEIVED_BLACK_AUGURITE, EasternRuins_EventScript_KleavorHint)
+    msgbox("You're a TRAINER, aren't you?\n
+        I found this weird rock.\p
+        I couldn't find a use for it, but maybe\n
+        you can.", MSGBOX_DEFAULT)
+    waitmessage
+    checkitemspace(ITEM_BLACK_AUGURITE)
+    if(var(VAR_RESULT) == TRUE){
+        giveitem(ITEM_BLACK_AUGURITE)
+        setflag(FLAG_RECEIVED_BLACK_AUGURITE)
+        waitmessage
+    }
+    else{
+        goto(Common_EventScript_ShowBagIsFull)
+    }
+    msgbox("Maybe a POKéMON can use it\n
+        or something.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+script EasternRuins_EventScript_KleavorHint{
+    msgbox("That weird rock…\n
+        Maybe it's for a POKéMON?", MSGBOX_NPC)
+    end
+}
+
+script EasternRuins_EventScript_HexManiacMaliciousArmor{
+    lock
+    faceplayer
+    goto_if_set(FLAG_RECEIVED_MALICIOUS_ARMOR, EasternRuins_EventScript_HexManiacThanks)
+    msgbox("I-I love GHOST TYPE P-POKéMON…\n
+        show me one a-and I'll…\l
+        g-give you a gift…", MSGBOX_DEFAULT)
+    waitmessage
+    special(IsGhostTypeInParty)
+    goto_if_ne(VAR_RESULT, TRUE, EasternRuins_EventScript_HexManiacShowMeAGhostType)
+    msgbox("T-Thanks for s-showing me a\n
+        G-GHOST TYPE P-POKéMON…\p
+        H-Here.", MSGBOX_DEFAULT)
+    checkitemspace(ITEM_MALICIOUS_ARMOR)
+    if(var(VAR_RESULT) == TRUE){
+        giveitem(ITEM_MALICIOUS_ARMOR)
+        setflag(FLAG_RECEIVED_MALICIOUS_ARMOR)
+        waitmessage
+    }
+    else{
+        goto(Common_EventScript_ShowBagIsFull)
+    }
+    msgbox("I hope t-that armor suits you\n
+        w-well…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+script EasternRuins_EventScript_HexManiacShowMeAGhostType{
+    msgbox("O-Oh…\n
+        You d-don't have a GHOST T-TYPE?", MSGBOX_NPC)
+    end
+}
+
+script EasternRuins_EventScript_HexManiacThanks{
+    msgbox("T-Thanks for s-showing me a\n
+        G-GHOST TYPE P-POKéMON…\p
+        I hope t-that armor suits you\n
+        w-well…", MSGBOX_NPC)
+    end
+}

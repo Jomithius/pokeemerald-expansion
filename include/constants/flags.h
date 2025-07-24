@@ -99,7 +99,7 @@
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
 #define FLAG_RECEIVED_TM_FREEZE_DRY          0x54  // Sootopolis Gym
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_RECEIVED_REVEAL_GLASS           0x55  // Baldesia Forest
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -519,8 +519,8 @@
 #define FLAG_RECEIVED_TYPE_NULL              0x1DF // Route 135 Lab
 #define FLAG_DEFEATED_OGERPON                0x1E0 // Eastern Ruins
 #define FLAG_HIDE_LUNA_THE_UNDER             0x1E1 // Luna CS the under
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_HIDE_CARSON_THE_UNDER           0x1E2 // Newmoon Island Sidequest
+#define FLAG_HIDE_CARSON_THE_UNDER_CANYON_LAKE 0x1E3 // Newmoon Island Sidequest
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4
@@ -1082,7 +1082,7 @@
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
-#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
+#define FLAG_RECEIVED_TEACUP                                        0x409 // Baldesia Forest
 #define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
 #define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
@@ -1177,7 +1177,7 @@
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MAX_ELIXIR                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
+#define FLAG_RECEIVED_MALICIOUS_ARMOR                               0x468 // Eastern Ruins
 #define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
 #define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
@@ -1185,7 +1185,7 @@
 #define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
 #define FLAG_ITEM_ROUTE_119_NUGGET                                  0x46E
 #define FLAG_ITEM_ROUTE_104_POTION                                  0x46F
-#define FLAG_UNUSED_0x470                                           0x470 // Unused Flag
+#define FLAG_RECEIVED_BLACK_AUGURITE                                0x470 // Eastern Ruins
 #define FLAG_ITEM_ROUTE_103_PP_UP                                   0x471
 #define FLAG_RUSTBORO_MISA_HOUSE_RARECANDY                          0x472 // 10x rare candy given by Misa in Rustboro.
 #define FLAG_ITEM_ROUTE_108_STAR_PIECE                              0x473
@@ -1525,8 +1525,8 @@
 #define FLAG_LANDMARK_SNOWDRIFT_CITY                (SYSTEM_FLAGS + 0x95) 
 #define FLAG_JOMITHIUS_UNAVAILABLE                  (SYSTEM_FLAGS + 0x96) // For rival match call
 #define FLAG_TALKED_TO_LINA_LAVARIDGE               (SYSTEM_FLAGS + 0x97) // Secret Boss
-#define FLAG_SYS_BIKERS_ROUTE_110                   (SYSTEM_FLAGS + 0x98) // For biker event
-#define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
+#define FLAG_SYS_BIKERS_ROUTE_110                   (SYSTEM_FLAGS + 0x98) // For biker event rt 110
+#define FLAG_SYS_NO_TRAINER_SEE                     (SYSTEM_FLAGS + 0x99) // For debug
 #define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
 #define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag
 #define FLAG_UNUSED_0x8FC                           (SYSTEM_FLAGS + 0x9C) // Unused Flag

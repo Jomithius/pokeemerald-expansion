@@ -12,6 +12,7 @@ BattleFrontier_OutsideWest_MapScripts::
 	.byte 0
 
 BattleFrontier_OutsideWest_OnTransition:
+	clearflag FLAG_SYS_DYNAMIC_LEVELS
 	setvar VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, 0
 	setflag FLAG_HIDE_BATTLE_TOWER_REPORTER
 	end
