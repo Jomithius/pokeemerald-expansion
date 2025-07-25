@@ -43,3 +43,4 @@ script BaseCamp_PokemonCenter_EventScript_Cooltrainer{
 		I'm getting fired up!", MSGBOX_NPC)
 	end
 }
+

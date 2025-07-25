@@ -132,34 +132,34 @@ Route139_EventScript_Momo::
 # 111 "data/maps/Route139/scripts.pory"
 	fadescreen FADE_FROM_WHITE
 # 112 "data/maps/Route139/scripts.pory"
-	addobject 16
+	addobject 15
 # 113 "data/maps/Route139/scripts.pory"
 	goto_if_set FLAG_TEMP_5, Route139_EventScript_Momo_2
 # 116 "data/maps/Route139/scripts.pory"
 	goto_if_set FLAG_TEMP_6, Route139_EventScript_Momo_3
 # 120 "data/maps/Route139/scripts.pory"
-	applymovement 16, Route139_Movement_MomoToPlayerTrigger
+	applymovement 15, Route139_Movement_MomoToPlayerTrigger
 Route139_EventScript_Momo_1:
 # 122 "data/maps/Route139/scripts.pory"
-	delay 16
+	delay 15
 # 123 "data/maps/Route139/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 # 124 "data/maps/Route139/scripts.pory"
-	waitmovement 16
+	waitmovement 15
 # 125 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_Momo_Text_0, MSGBOX_AUTOCLOSE
 # 127 "data/maps/Route139/scripts.pory"
 	waitmessage
 # 128 "data/maps/Route139/scripts.pory"
-	applymovement 16, Common_Movement_WalkInPlaceDown
+	applymovement 15, Common_Movement_WalkInPlaceDown
 # 129 "data/maps/Route139/scripts.pory"
-	waitmovement 16
+	waitmovement 15
 # 130 "data/maps/Route139/scripts.pory"
 	delay 24
 # 131 "data/maps/Route139/scripts.pory"
-	applymovement 16, Common_Movement_WalkInPlaceLeft
+	applymovement 15, Common_Movement_WalkInPlaceLeft
 # 132 "data/maps/Route139/scripts.pory"
-	waitmovement 16
+	waitmovement 15
 # 133 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_Momo_Text_1, MSGBOX_AUTOCLOSE
 # 136 "data/maps/Route139/scripts.pory"
@@ -169,7 +169,7 @@ Route139_EventScript_Momo_1:
 # 138 "data/maps/Route139/scripts.pory"
 	fadescreenspeed FADE_TO_WHITE, 4
 # 139 "data/maps/Route139/scripts.pory"
-	removeobject 16
+	removeobject 15
 # 140 "data/maps/Route139/scripts.pory"
 	fadescreenspeed FADE_FROM_WHITE, 3
 # 141 "data/maps/Route139/scripts.pory"
@@ -182,12 +182,12 @@ Route139_EventScript_Momo_1:
 
 Route139_EventScript_Momo_2:
 # 114 "data/maps/Route139/scripts.pory"
-	applymovement 16, Route139_Movement_MomoToPlayerLeftTrigger
+	applymovement 15, Route139_Movement_MomoToPlayerLeftTrigger
 	goto Route139_EventScript_Momo_1
 
 Route139_EventScript_Momo_3:
 # 117 "data/maps/Route139/scripts.pory"
-	applymovement 16, Route139_Movement_MomoToPlayerRightTrigger
+	applymovement 15, Route139_Movement_MomoToPlayerRightTrigger
 	goto Route139_EventScript_Momo_1
 
 

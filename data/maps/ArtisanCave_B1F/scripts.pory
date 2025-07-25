@@ -10,7 +10,7 @@ script AzureMountain_EventScript_Barley{
 }
 
 script AzureMountain_EventScript_Hurley{
-    trainerbattle_single(TRAINER_HURLEY, "I'll show you why I was\nable to get here!", "Dang…")
+    trainerbattle_single(TRAINER_HURLEY, "I got here by cheating!", "Dang…")
     msgbox("Dang… You're strong!", MSGBOX_NPC)
 	end
 }
@@ -22,8 +22,8 @@ script AzureMountain_EventScript_Jessi{
 }
 
 script AzureMountain_EventScript_Dogfood{
-    trainerbattle_single(TRAINER_DOGFOOD, "Grrr…", "Grrr…")
-    msgbox("Grrr…", MSGBOX_NPC)
+    trainerbattle_single(TRAINER_DOGFOOD, "Guys… I need pee.", "Grrr…")
+    msgbox("Guys… I need pee.", MSGBOX_NPC)
 	end
 }
 

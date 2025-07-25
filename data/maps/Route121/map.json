@@ -292,16 +292,16 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 55,
-      "y": 10,
+      "x": 30,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_CARBOS",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_121_CARBOS"
+      "flag": "FLAG_BADGE01_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -396,16 +396,16 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 38,
-      "y": 13,
+      "x": 31,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_121_ZINC"
+      "flag": "FLAG_BADGE01_GET"
     }
   ],
   "warp_events": [
@@ -505,7 +505,7 @@
       "x": 23,
       "y": 10,
       "elevation": 3,
-      "item": "ITEM_HP_UP",
+      "item": "ITEM_PP_MAX",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_HP_UP"
     },
     {

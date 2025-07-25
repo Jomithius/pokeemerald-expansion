@@ -40,6 +40,50 @@ script Baldesia_MainHouse_UpdateAriaPos{
     return
 }
 
+script Baldesia_MainHouse_EventScript_Clerk{
+    lock
+    faceplayer
+    message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(Baldesia_MainHouse_Pokemart)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart Baldesia_MainHouse_Pokemart{
+    ITEM_FULL_RESTORE
+    ITEM_FULL_HEAL
+    ITEM_ABILITY_CAPSULE
+    ITEM_ABILITY_PATCH
+    ITEM_MAX_REVIVE
+    ITEM_MAX_REPEL
+    ITEM_MAX_LURE
+    ITEM_ELIXIR
+    ITEM_QUICK_BALL
+    ITEM_ULTRA_BALL
+    ITEM_DUSK_BALL
+    ITEM_TIMER_BALL
+}
+
+script Baldesia_MainHouse_EventScript_MochiClerk{
+    lock
+    faceplayer
+    message("Hello.\nPlease take a look at my wares.")
+	waitmessage
+	pokemart(Baldesia_MainHouse_PokemartMochi)
+	msgbox("Thank you for your patronage.", MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart Baldesia_MainHouse_PokemartMochi{
+    ITEM_FRESH_START_MOCHI
+    ITEM_HEARTHFLAME_MASK
+    ITEM_WELLSPRING_MASK
+    ITEM_CORNERSTONE_MASK
+}
+
 script Baldesia_MainHouse_EventScript_GoToChief{
     lockall
     checkobjectat(5, 20)

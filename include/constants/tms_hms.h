@@ -66,6 +66,23 @@
     F(STONE_EDGE) \
     F(SWORDS_DANCE) \
     F(NASTY_PLOT) \
+    F(HIGH_HORSEPOWER) \
+    F(TRAILBLAZE) \
+    F(FOCUS_BLAST) \
+    F(KNOCK_OFF) \
+    F(ICY_WIND) \
+    F(SCALD) \
+    F(WEATHER_BALL) \
+    F(VENOSHOCK) \
+    F(HURRICANE) \
+    F(TRICK_ROOM) \
+    F(SPIKES) \
+    F(TOXIC_SPIKES) \
+    F(STEALTH_ROCK) \
+    F(ENCORE) \
+    F(ICE_SPINNER) \
+    F(RAPID_SPIN) \
+
 
 #define FOREACH_HM(F) \
     F(CUT) \

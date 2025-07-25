@@ -18,17 +18,40 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_EvoItems
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
-	.2byte ITEM_TM_FIRE_BLAST
-	.2byte ITEM_TM_THUNDER
-	.2byte ITEM_TM_BLIZZARD
-	.2byte ITEM_TM_HYPER_BEAM
+LilycoveCity_DepartmentStore_4F_Pokemart_EvoItems:
+	.2byte ITEM_LINKING_CORD
+	.2byte ITEM_FIRE_STONE
+	.2byte ITEM_WATER_STONE
+	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_ICE_STONE
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_DAWN_STONE
+	.2byte ITEM_SWEET_APPLE
+	.2byte ITEM_TART_APPLE
+	.2byte ITEM_CRACKED_POT
+	.2byte ITEM_GALARICA_CUFF
+	.2byte ITEM_GALARICA_WREATH
+	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_UPGRADE
+	.2byte ITEM_PROTECTOR
+	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_DUBIOUS_DISC
+	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_WHIPPED_DREAM
+	.2byte ITEM_SACHET
+	.2byte ITEM_OVAL_STONE
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
@@ -46,6 +69,86 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	.2byte ITEM_TM_PROTECT
 	.2byte ITEM_TM_REFLECT
 	.2byte ITEM_TM_LIGHT_SCREEN
+	.2byte ITEM_TM_FIRE_BLAST
+	.2byte ITEM_TM_THUNDER
+	.2byte ITEM_TM_BLIZZARD
+	.2byte ITEM_TM_HYPER_BEAM
+	.2byte ITEM_TM_FOCUS_BLAST
+	.2byte ITEM_TM_SCALD
+	.2byte ITEM_TM_WEATHER_BALL
+	.2byte ITEM_TM_HURRICANE
+	.2byte ITEM_TM_TRICK_ROOM
+	.2byte ITEM_TM_ENCORE
+	.2byte ITEM_TM_RAPID_SPIN
+	.2byte ITEM_TM_STEALTH_ROCK
+	.2byte ITEM_TM_SPIKES
+	.2byte ITEM_TM_TOXIC_SPIKES
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_4F_EventScript_ClerkMiddle::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_BAND
+	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_AIR_BALLOON
+	.2byte ITEM_ASSAULT_VEST
+	.2byte ITEM_THROAT_SPRAY
+	.2byte ITEM_BLACK_SLUDGE
+	.2byte ITEM_BLUNDER_POLICY
+	.2byte ITEM_DESTINY_KNOT
+	.2byte ITEM_EJECT_BUTTON
+	.2byte ITEM_EJECT_PACK
+	.2byte ITEM_EXPERT_BELT
+	.2byte ITEM_HEAVY_DUTY_BOOTS
+	.2byte ITEM_LIFE_ORB
+	.2byte ITEM_SITRUS_BERRY
+	.2byte ITEM_LUM_BERRY
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_LEFTOVERS
+	.2byte ITEM_LIGHT_CLAY
+	.2byte ITEM_ROCKY_HELMET
+	.2byte ITEM_RED_CARD
+	.2byte ITEM_SHED_SHELL
+	.2byte ITEM_EVIOLITE
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_4F_EventScript_MartEmployee::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_AbsorbItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_AbsorbItems:
+	.2byte ITEM_FLAME_ORB
+	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_DAMP_ROCK
+	.2byte ITEM_HEAT_ROCK
+	.2byte ITEM_SMOOTH_ROCK
+	.2byte ITEM_ICY_ROCK
+	.2byte ITEM_TERRAIN_EXTENDER
+	.2byte ITEM_ELECTRIC_SEED
+	.2byte ITEM_PSYCHIC_SEED
+	.2byte ITEM_MISTY_SEED
+	.2byte ITEM_GRASSY_SEED
+	.2byte ITEM_ABSORB_BULB
+	.2byte ITEM_CELL_BATTERY
+	.2byte ITEM_LUMINOUS_MOSS
+	.2byte ITEM_SNOWBALL
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:

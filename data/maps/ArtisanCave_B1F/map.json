@@ -23,7 +23,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_LUXRITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP"
     },
@@ -93,15 +93,15 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 25,
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 27,
       "y": 11,
       "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
       "movement_range_x": 5,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "AzureMountain_EventScript_Hurley",
       "flag": "0"
     },
@@ -173,7 +173,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
       "x": 34,
-      "y": 8,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -185,19 +185,6 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 16,
-      "y": 10,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Common_EventScript_FindItem",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 30,
       "y": 19,
       "elevation": 4,
@@ -205,22 +192,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "ITEM_PRISON_BOTTLE",
       "script": "Common_EventScript_FindItem",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 22,
-      "y": 5,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Common_EventScript_FindItem",
-      "flag": "0"
+      "flag": "FLAG_ITEM_AZURE_MOUNTAIN_PRISON_BOTTLE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOOPA)",
@@ -265,8 +239,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 19,
-      "y": 44,
+      "x": 26,
+      "y": 5,
       "elevation": 0,
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_ZINC"
@@ -289,8 +263,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 19,
-      "y": 43,
+      "x": 26,
+      "y": 8,
       "elevation": 0,
       "item": "ITEM_PP_MAX",
       "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_IRON"

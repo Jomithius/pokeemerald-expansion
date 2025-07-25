@@ -281,7 +281,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_MeganiumMega,
         .iconSprite = gMonIcon_MeganiumMega,
         .iconPalIndex = 1,
-        SHADOW(0, 13, SHADOW_SIZE_M)
+        SHADOW(0, 13, SHADOW_SIZE_L)
         FOOTPRINT(Meganium)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
@@ -1085,10 +1085,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_FERALIGATR_MEGA] =
     {
         .baseHP        = 100,
-        .baseAttack    = 115,
+        .baseAttack    = 125,
         .baseDefense   = 120,
         .baseSpeed     = 90,
-        .baseSpAttack  = 100,
+        .baseSpAttack  = 90,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
         .catchRate = 45,
@@ -1136,7 +1136,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_FeraligatrMega,
         .iconSprite = gMonIcon_FeraligatrMega,
         .iconPalIndex = 0,
-        SHADOW(3, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(-2, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Feraligatr)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
@@ -8085,8 +8085,78 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sMiltankLevelUpLearnset,
         .teachableLearnset = sMiltankTeachableLearnset,
-        .eggMoveLearnset = sMiltankEggMoveLearnset,
+        .formSpeciesIdTable = sMiltankFormSpeciesIdTable,
+        .formChangeTable = sMiltankFormChangeTable,
     },
+
+    #if P_MEGA_EVOLUTIONS
+    [SPECIES_MILTANK_MEGA] =
+    {
+        .baseHP        = 125,
+        .baseAttack    = 100,
+        .baseDefense   = 135,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 200,
+        .evYield_Defense = 2,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_THICK_FAT, ABILITY_THICK_FAT, ABILITY_THICK_FAT },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Miltank"),
+        .cryId = CRY_MILTANK,
+        .natDexNum = NATIONAL_DEX_MILTANK,
+        .categoryName = _("Milk Cow"),
+        .height = 12,
+        .weight = 755,
+        .description = COMPOUND_STRING(
+            "It gives over ten gallons of milk daily.\n"
+            "Its sweet milk is enjoyed by children and\n"
+            "grown-ups alike. People who can't drink\n"
+            "milk turn it into yogurt and eat it instead."),
+        .pokemonScale = 280,
+        .pokemonOffset = 5,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MiltankMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_MiltankMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Miltank,
+        .shinyPalette = gMonShinyPalette_Miltank,
+        .iconSprite = gMonIcon_MiltankMega,
+        .iconPalIndex = 0,
+        SHADOW(-1, 13, SHADOW_SIZE_M)
+        FOOTPRINT(Miltank)
+    #if OW_BATTLE_ONLY_FORMS
+        OVERWORLD(
+            sPicTable_Miltank,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Miltank,
+            gShinyOverworldPalette_Miltank
+        )
+    #endif //OW_BATTLE_ONLY_FORMS
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sMiltankLevelUpLearnset,
+        .teachableLearnset = sMiltankTeachableLearnset,
+        .formSpeciesIdTable = sMiltankFormSpeciesIdTable,
+        .formChangeTable = sMiltankFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MILTANK
 
 #if P_FAMILY_RAIKOU

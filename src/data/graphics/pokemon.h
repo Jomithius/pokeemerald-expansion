@@ -26789,3 +26789,14 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
     const u32 gMonFrontPic_RaticateMega[] = INCBIN_U32("graphics/pokemon/raticate/mega/front.4bpp.lz");
 
+    const u32 gMonFrontPic_DragoniteMega[] = INCBIN_U32("graphics/pokemon/dragonite/mega/front.4bpp.lz");
+    const u32 gMonPalette_DragoniteMega[] = INCBIN_U32("graphics/pokemon/dragonite/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_DragoniteMega[] = INCBIN_U32("graphics/pokemon/dragonite/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_DragoniteMega[] = INCBIN_U32("graphics/pokemon/dragonite/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_DragoniteMega[] = INCBIN_U8("graphics/pokemon/dragonite/mega/icon.4bpp");
+
+    const u32 gMonFrontPic_MiltankMega[] = INCBIN_U32("graphics/pokemon/miltank/mega/front.4bpp.lz");
+    // const u32 gMonPalette_MiltankMega[] = INCBIN_U32("graphics/pokemon/miltank/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_MiltankMega[] = INCBIN_U32("graphics/pokemon/miltank/mega/back.4bpp.lz");
+    // const u32 gMonShinyPalette_MiltankMega[] = INCBIN_U32("graphics/pokemon/miltank/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_MiltankMega[] = INCBIN_U8("graphics/pokemon/miltank/mega/icon.4bpp");

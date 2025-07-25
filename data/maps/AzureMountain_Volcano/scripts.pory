@@ -50,7 +50,7 @@ script AzureMountain_Volcano_EventScript_Diancie{
     playmoncry(SPECIES_DIANCIE, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_DIANCIE, 75)
+    setwildbattle(SPECIES_DIANCIE, 75, ITEM_DIANCITE)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)

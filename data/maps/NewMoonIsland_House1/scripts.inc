@@ -75,7 +75,7 @@ NewMoonIsland_House1_EventScript_GimmighoulCoins::
 # 40 "data/maps/NewMoonIsland_House1/scripts.pory"
 	waitmessage
 # 41 "data/maps/NewMoonIsland_House1/scripts.pory"
-	checkitemspace ITEM_GIMMIGHOUL_COIN, 997
+	checkitemspace ITEM_GIMMIGHOUL_COIN, 998
 # 42 "data/maps/NewMoonIsland_House1/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq NewMoonIsland_House1_EventScript_GimmighoulCoins_2
@@ -90,7 +90,7 @@ NewMoonIsland_House1_EventScript_GimmighoulCoins_1:
 
 NewMoonIsland_House1_EventScript_GimmighoulCoins_2:
 # 43 "data/maps/NewMoonIsland_House1/scripts.pory"
-	finditem ITEM_GIMMIGHOUL_COIN, 997
+	finditem ITEM_GIMMIGHOUL_COIN, 998
 # 44 "data/maps/NewMoonIsland_House1/scripts.pory"
 	waitmessage
 # 45 "data/maps/NewMoonIsland_House1/scripts.pory"

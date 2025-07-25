@@ -1099,6 +1099,131 @@ EventScript_VsSeekerChargingDone::
 	releaseall
 	end
 
+Common_EventScript_ExpCandyClerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	goto_if_set FLAG_BADGE06_GET, Common_EventScript_ExpCandyClerkXL
+	goto_if_set FLAG_BADGE04_GET, Common_EventScript_ExpCandyClerkL
+	pokemart ExpCandy_Pokemart
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Common_EventScript_ExpCandyClerkL::
+	pokemart ExpCandy_PokemartL
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Common_EventScript_ExpCandyClerkXL::
+	pokemart ExpCandy_PokemartXL
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+ExpCandy_Pokemart:
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_EXP_CANDY_M
+	.2byte ITEM_SERIOUS_MINT
+	pokemartlistend
+
+	.align 2
+ExpCandy_PokemartL:
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_EXP_CANDY_M
+	.2byte ITEM_EXP_CANDY_L
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_CALM_MINT
+	.2byte ITEM_CAREFUL_MINT
+	.2byte ITEM_SERIOUS_MINT
+	pokemartlistend
+
+	.align 2
+ExpCandy_PokemartXL:
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_EXP_CANDY_M
+	.2byte ITEM_EXP_CANDY_L
+	.2byte ITEM_EXP_CANDY_XL
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_JOLLY_MINT
+	.2byte ITEM_TIMID_MINT
+	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_CALM_MINT
+	.2byte ITEM_CAREFUL_MINT
+	.2byte ITEM_SERIOUS_MINT
+	pokemartlistend
+
+Common_EventScript_StaffEmployeeClerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart Common_Mart_StaffEmployee
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+Common_Mart_StaffEmployee:
+	.2byte ITEM_RARE_CANDY
+    .2byte ITEM_CHOICE_BAND
+    .2byte ITEM_CHOICE_SCARF
+    .2byte ITEM_CHOICE_SPECS
+    .2byte ITEM_LOADED_DICE
+    .2byte ITEM_AIR_BALLOON
+    .2byte ITEM_LIFE_ORB
+    .2byte ITEM_ASSAULT_VEST
+    .2byte ITEM_SITRUS_BERRY
+    .2byte ITEM_HEAVY_DUTY_BOOTS
+    .2byte ITEM_WEAKNESS_POLICY
+    .2byte ITEM_PUNCHING_GLOVE
+    .2byte ITEM_FOCUS_SASH
+    .2byte ITEM_POWER_HERB
+	.2byte ITEM_WHITE_HERB
+	pokemartlistend
+
+Common_EventScript_TeraShardMerchant::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart Common_Mart_Tera_Shards
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+Common_Mart_Tera_Shards:
+	.2byte ITEM_NORMAL_TERA_SHARD
+	.2byte ITEM_FIRE_TERA_SHARD
+	.2byte ITEM_WATER_TERA_SHARD
+	.2byte ITEM_GRASS_TERA_SHARD
+	.2byte ITEM_ICE_TERA_SHARD
+	.2byte ITEM_FIGHTING_TERA_SHARD
+	.2byte ITEM_POISON_TERA_SHARD
+	.2byte ITEM_GROUND_TERA_SHARD
+	.2byte ITEM_FLYING_TERA_SHARD
+	.2byte ITEM_PSYCHIC_TERA_SHARD
+	.2byte ITEM_BUG_TERA_SHARD
+	.2byte ITEM_ROCK_TERA_SHARD
+	.2byte ITEM_GHOST_TERA_SHARD
+	.2byte ITEM_DRAGON_TERA_SHARD
+	.2byte ITEM_DARK_TERA_SHARD
+	.2byte ITEM_STEEL_TERA_SHARD
+	.2byte ITEM_FAIRY_TERA_SHARD
+	pokemartlistend
+
 EventScript_Fantasia::
 	msgbox gText_YouDrankTheFantasia, MSGBOX_DEFAULT
 	closemessage

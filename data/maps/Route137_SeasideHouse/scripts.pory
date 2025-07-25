@@ -1,5 +1,24 @@
 mapscripts Route137_SeasideHouse_MapScripts {}
 
+script  Route137_SeasideHouse_EventScript_CasteliaconeSalesman{
+    lock
+    faceplayer
+    message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(Route137_SeasideHouse_Pokemart)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart Route137_SeasideHouse_Pokemart{
+    ITEM_CASTELIACONE
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+    ITEM_LEMONADE
+    ITEM_MOOMOO_MILK
+}
+
 script Route137_SeasideHouse_EventScript_GiveCasteliaCone{
     lock
     delay(16)

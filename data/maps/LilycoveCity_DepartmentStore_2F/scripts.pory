@@ -2,7 +2,13 @@ raw`LilycoveCity_DepartmentStore_2F_MapScripts::
 	.byte 0
 
 LilycoveCity_DepartmentStore_2F_EventScript_Cook::
-	msgbox LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly, MSGBOX_NPC
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_2F_PokemartAlcremie
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
 	end
 
 LilycoveCity_DepartmentStore_2F_EventScript_PokefanF::
@@ -16,7 +22,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_Sailor::
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkLeft::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message LilycoveCity_DepartmentStore_2F_TextGetYourBalls
 	waitmessage
 	pokemart LilycoveCity_DepartmentStore_2F_Pokemart1
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
@@ -28,14 +34,22 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
-	.2byte ITEM_ESCAPE_ROPE
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_ICE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_FLUFFY_TAIL
+	.2byte ITEM_HEAL_BALL 
+    .2byte ITEM_NET_BALL
+    .2byte ITEM_NEST_BALL
+    .2byte ITEM_DIVE_BALL
+    .2byte ITEM_DUSK_BALL
+    .2byte ITEM_TIMER_BALL
+    .2byte ITEM_QUICK_BALL
+    .2byte ITEM_REPEAT_BALL
+    .2byte ITEM_LUXURY_BALL
+    .2byte ITEM_LEVEL_BALL
+    .2byte ITEM_LURE_BALL
+    .2byte ITEM_MOON_BALL
+    .2byte ITEM_FRIEND_BALL
+    .2byte ITEM_LOVE_BALL
+    .2byte ITEM_FAST_BALL
+    .2byte ITEM_HEAVY_BALL
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
@@ -55,12 +69,32 @@ LilycoveCity_DepartmentStore_2F_Pokemart2:
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_MAX_POTION
 	.2byte ITEM_REVIVE
-	.2byte ITEM_REPEL
-	.2byte ITEM_SUPER_REPEL
+    .2byte ITEM_FULL_HEAL
 	.2byte ITEM_MAX_REPEL
+    .2byte ITEM_MAX_LURE
+    .2byte ITEM_FLUFFY_TAIL
 	.2byte ITEM_WAVE_MAIL
 	.2byte ITEM_MECH_MAIL
 	pokemartlistend
+
+	.align 2
+LilycoveCity_DepartmentStore_2F_PokemartAlcremie:
+	.2byte ITEM_STRAWBERRY_SWEET
+    .2byte ITEM_LOVE_SWEET
+    .2byte ITEM_BERRY_SWEET
+    .2byte ITEM_CLOVER_SWEET
+    .2byte ITEM_FLOWER_SWEET
+    .2byte ITEM_STAR_SWEET
+    .2byte ITEM_RIBBON_SWEET
+    .2byte ITEM_RED_NECTAR
+    .2byte ITEM_YELLOW_NECTAR
+    .2byte ITEM_PINK_NECTAR
+    .2byte ITEM_PURPLE_NECTAR
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_2F_TextGetYourBalls:
+    .string "BALLS! BALLS!\n" 
+    .string "Come get your POKé BALLS here!$"
 
 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly:
 	.string "Learn to use items properly.\n"
@@ -147,10 +181,6 @@ script LilycoveCity_DepartmentStore_2F_MaeMovementVar{
         waitmovement(1)
         msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE)
         waitmessage
-        removeobject(6)
-        removeobject(7)
-        setflag(FLAG_HIDE_LILYCOVE_MAE)
-        setflag(FLAG_SLATEPORT_MAE_BATTLE)
     }
     else{ //facing south
         applymovement(6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1)
@@ -175,11 +205,12 @@ script LilycoveCity_DepartmentStore_2F_MaeMovementVar{
         waitmovement(1)
         msgbox(LilycoveCity_DepartmentStore_2F_Text_Cook2 MSGBOX_AUTOCLOSE)
         waitmessage
-        removeobject(6)
-        removeobject(7)
-        setflag(FLAG_HIDE_LILYCOVE_MAE)
-        setflag(FLAG_SLATEPORT_MAE_BATTLE)
     }
+    removeobject(6)
+    removeobject(7)
+    setflag(FLAG_HIDE_LILYCOVE_MAE)
+    setflag(FLAG_SLATEPORT_MAE_BATTLE)
+    clearflag(FLAG_HIDE_MAE_WACHUNPELON)
     return
 }
 

@@ -45,11 +45,47 @@ script Route135_EventScript_Denjamin{
 }
 
 script Route135_EventScript_Pamuel{
-    trainerbattle_single(TRAINER_PAMUEL, "Gosh, I'm so bored.\nEntertain me with a battle!", "That was fun!")
+    trainerbattle_single(TRAINER_PAMUEL, "Gosh, I'm so bored.\nEntertain me with a battle!", "That was fun!", Route135_EventScript_GiveMiltankite)
+    goto_if_unset(FLAG_RECEIVED_MILTANKITE, Route135_EventScript_GiveMiltankite)
     msgbox("I've lived out here all my life.\n
         I wonder what the city's like.", MSGBOX_NPC)
 	end
 }
+
+script Route135_EventScript_GiveMiltankite{
+    lock
+    msgbox("That was a lot of fun!\n
+        Did my MILTANK surprise you? Hehe!\p
+        Here. I have an extra stone you can\n
+        have as thanks for entertaining me!", MSGBOX_DEFAULT)
+    waitmessage
+    checkitemspace(ITEM_MILTANKITE)
+    goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+    giveitem(ITEM_MILTANKITE)
+    setflag(FLAG_RECEIVED_MILTANKITE)
+    waitmessage
+    closemessage
+    release
+    end
+}
+
+script Route135_EventScript_MoomooMilkSalesman{
+    lock
+    faceplayer
+    message("Welcome, partner!\n
+        Take a gander at my wares.")
+	waitmessage
+	pokemart(Route135_Pokemart)
+	msgbox("Pleasure doin' business!", MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart Route135_Pokemart{
+    ITEM_MOOMOO_MILK
+    ITEM_BERRY_JUICE
+}
+
 
 script Route135_EventScript_FatMan{
     msgbox("Oh man…\n
@@ -109,16 +145,16 @@ script Route135_EventScript_WomanILoveMiltank{
 
 script Route135_EventScript_FirstMoo{
     lockall
-    applymovement(27, Common_Movement_WalkInPlaceDown)
-    waitmovement(27)
+    applymovement(26, Common_Movement_WalkInPlaceDown)
+    waitmovement(26)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     msgbox("You're just in time!\n
         That MILTANK found it's moo!\p
         Listen!", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(27, Common_Movement_WalkInPlaceLeft)
-    waitmovement(27)
+    applymovement(26, Common_Movement_WalkInPlaceLeft)
+    waitmovement(26)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
     fadeoutbgm(1)
@@ -127,15 +163,15 @@ script Route135_EventScript_FirstMoo{
     msgbox("MILTANK: Moooooo!", MSGBOX_AUTOCLOSE)
     waitmoncry
     waitmessage
-    applymovement(27, Common_Movement_WalkInPlaceDown)
-    waitmovement(27)
+    applymovement(26, Common_Movement_WalkInPlaceDown)
+    waitmovement(26)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     msgbox("Isn't it beautiful?\n
         Gosh, I love nature.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(27, Common_Movement_WalkInPlaceLeft)
-    waitmovement(27)
+    applymovement(26, Common_Movement_WalkInPlaceLeft)
+    waitmovement(26)
     setvar(VAR_TEMP_7, 1)
     fadeinbgm(1)
     releaseall

@@ -88,6 +88,8 @@ TheUnder_EventScript_Luna_5:
 # 67 "data/maps/TheUnder/scripts.pory"
 	setflag FLAG_SYS_TERA_ORB_CHARGED
 # 68 "data/maps/TheUnder/scripts.pory"
+	clearflag FLAG_HIDE_TERA_SHARD_MERCHANTS
+# 69 "data/maps/TheUnder/scripts.pory"
 	releaseall
 	end
 
@@ -105,100 +107,100 @@ TheUnder_EventScript_Luna_6:
 
 
 TheUnder_EventScript_Sign::
-# 73 "data/maps/TheUnder/scripts.pory"
+# 74 "data/maps/TheUnder/scripts.pory"
 	msgbox TheUnder_EventScript_Sign_Text_0, MSGBOX_SIGN
 	end
 
 
 TheUnder_EventScript_Artist::
-# 78 "data/maps/TheUnder/scripts.pory"
+# 79 "data/maps/TheUnder/scripts.pory"
 	msgbox TheUnder_EventScript_Artist_Text_0, MSGBOX_SIGN
 	end
 
 
 TheUnder_EventScript_Hiker::
-# 84 "data/maps/TheUnder/scripts.pory"
+# 85 "data/maps/TheUnder/scripts.pory"
 	msgbox TheUnder_EventScript_Hiker_Text_0, MSGBOX_NPC
 	end
 
 
 TheUnder_EventScript_Carson::
-# 95 "data/maps/TheUnder/scripts.pory"
-	trainerbattle_single TRAINER_CARSON, TheUnder_Text_CarsonIntro, TheUnder_Text_CarsonDefeat
 # 96 "data/maps/TheUnder/scripts.pory"
-	msgbox TheUnder_Text_CarsonPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_CARSON, TheUnder_Text_CarsonIntro, TheUnder_Text_CarsonDefeat
 # 97 "data/maps/TheUnder/scripts.pory"
+	msgbox TheUnder_Text_CarsonPostBattle, MSGBOX_AUTOCLOSE
+# 98 "data/maps/TheUnder/scripts.pory"
 	waitmessage
 	end
 
 
 TheUnder_EventScript_Maximillian::
-# 102 "data/maps/TheUnder/scripts.pory"
-	trainerbattle_single TRAINER_MAXIMILLIAN, TheUnder_EventScript_Maximillian_Text_0, TheUnder_EventScript_Maximillian_Text_1
 # 103 "data/maps/TheUnder/scripts.pory"
+	trainerbattle_single TRAINER_MAXIMILLIAN, TheUnder_EventScript_Maximillian_Text_0, TheUnder_EventScript_Maximillian_Text_1
+# 104 "data/maps/TheUnder/scripts.pory"
 	msgbox TheUnder_EventScript_Maximillian_Text_2, MSGBOX_NPC
 	end
 
 
 TheUnder_EventScript_Samothy::
-# 109 "data/maps/TheUnder/scripts.pory"
-	trainerbattle_single TRAINER_SAMOTHY, TheUnder_EventScript_Samothy_Text_0, TheUnder_EventScript_Samothy_Text_1
 # 110 "data/maps/TheUnder/scripts.pory"
+	trainerbattle_single TRAINER_SAMOTHY, TheUnder_EventScript_Samothy_Text_0, TheUnder_EventScript_Samothy_Text_1
+# 111 "data/maps/TheUnder/scripts.pory"
 	msgbox TheUnder_EventScript_Samothy_Text_2, MSGBOX_NPC
 	end
 
 
 TheUnder_EventScript_Trevor::
-# 116 "data/maps/TheUnder/scripts.pory"
-	trainerbattle_single TRAINER_TREVOR, TheUnder_EventScript_Trevor_Text_0, TheUnder_EventScript_Trevor_Text_1
 # 117 "data/maps/TheUnder/scripts.pory"
+	trainerbattle_single TRAINER_TREVOR, TheUnder_EventScript_Trevor_Text_0, TheUnder_EventScript_Trevor_Text_1
+# 118 "data/maps/TheUnder/scripts.pory"
 	msgbox TheUnder_EventScript_Trevor_Text_1, MSGBOX_NPC
 	end
 
 
-# 170 "data/maps/TheUnder/scripts.pory"
+# 171 "data/maps/TheUnder/scripts.pory"
 TheUnder_Movement_Luna:
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 171 "data/maps/TheUnder/scripts.pory"
+# 172 "data/maps/TheUnder/scripts.pory"
 	walk_left
 	step_end
 
-# 174 "data/maps/TheUnder/scripts.pory"
-TheUnder_Movement_LunaSouth:
 # 175 "data/maps/TheUnder/scripts.pory"
+TheUnder_Movement_LunaSouth:
+# 176 "data/maps/TheUnder/scripts.pory"
 	walk_down
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 176 "data/maps/TheUnder/scripts.pory"
+# 177 "data/maps/TheUnder/scripts.pory"
 	walk_left
 	step_end
 
@@ -223,61 +225,61 @@ TheUnder_EventScript_Luna_Text_4:
 	.string "Well, the first place I would go is the\n lab on ROUTE 135 to the east.\p There's some interesting stuff going on\n over there.\p Anyways, mucho texto. I'll be ready for\n our rematch once you're done here.$"
 
 TheUnder_EventScript_Sign_Text_0:
-# 73 "data/maps/TheUnder/scripts.pory"
+# 74 "data/maps/TheUnder/scripts.pory"
 	.string "{RIGHT_ARROW} POKéMON CENTER$"
 
 TheUnder_EventScript_Artist_Text_0:
-# 78 "data/maps/TheUnder/scripts.pory"
+# 79 "data/maps/TheUnder/scripts.pory"
 	.string "Such beauty…\n I must capture nature's splendors!$"
 
 TheUnder_EventScript_Hiker_Text_0:
-# 84 "data/maps/TheUnder/scripts.pory"
+# 85 "data/maps/TheUnder/scripts.pory"
 	.string "We're in a huge valley under\n the cliffside north of FALLARBOR.\p Before the new caves, it was hard\n to get out here if you couldn't\l afford to fly or go by ship.\p But now that I'm here, I can say the\n hike was definitely worth it!$"
 
 TheUnder_EventScript_Maximillian_Text_0:
-# 102 "data/maps/TheUnder/scripts.pory"
+# 103 "data/maps/TheUnder/scripts.pory"
 	.string "It was a long trip to get here!$"
 
 TheUnder_EventScript_Maximillian_Text_1:
-# 102 "data/maps/TheUnder/scripts.pory"
+# 103 "data/maps/TheUnder/scripts.pory"
 	.string "It was still worth it!$"
 
 TheUnder_EventScript_Maximillian_Text_2:
-# 103 "data/maps/TheUnder/scripts.pory"
+# 104 "data/maps/TheUnder/scripts.pory"
 	.string "Before it was almost impossible to\n get out here by foot.$"
 
 TheUnder_EventScript_Samothy_Text_0:
-# 109 "data/maps/TheUnder/scripts.pory"
+# 110 "data/maps/TheUnder/scripts.pory"
 	.string "Hey! Catch out this catch!$"
 
 TheUnder_EventScript_Samothy_Text_1:
-# 109 "data/maps/TheUnder/scripts.pory"
+# 110 "data/maps/TheUnder/scripts.pory"
 	.string "I should switch spots.$"
 
 TheUnder_EventScript_Samothy_Text_2:
-# 110 "data/maps/TheUnder/scripts.pory"
+# 111 "data/maps/TheUnder/scripts.pory"
 	.string "There's a lot of weird POKéMON\n out here.$"
 
 TheUnder_EventScript_Trevor_Text_0:
-# 116 "data/maps/TheUnder/scripts.pory"
+# 117 "data/maps/TheUnder/scripts.pory"
 	.string "Look at this cool POKéMON!$"
 
 TheUnder_EventScript_Trevor_Text_1:
-# 116 "data/maps/TheUnder/scripts.pory"
+# 117 "data/maps/TheUnder/scripts.pory"
 	.string "I've never seen a POKéMON like that!$"
 
 TheUnder_Text_CarsonIntro::
-# 121 "data/maps/TheUnder/scripts.pory"
+# 122 "data/maps/TheUnder/scripts.pory"
 	.string "There's some RATICATE blocking the\n path in the tunnel!\p I tried battling them, but for some\n reason my POKéMON were scared.$"
 
 TheUnder_Text_CarsonDefeat::
-# 128 "data/maps/TheUnder/scripts.pory"
+# 129 "data/maps/TheUnder/scripts.pory"
 	.string "Huh… Why weren't they scared now?$"
 
 TheUnder_Text_CarsonPostBattle::
-# 132 "data/maps/TheUnder/scripts.pory"
+# 133 "data/maps/TheUnder/scripts.pory"
 	.string "If only I could figure out why my\n POKéMON are so scared of those\l RATICATE…$"
 
 Common_Text_ExplainTera::
-# 138 "data/maps/TheUnder/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}TERASTALLIZATION is a battle mechanic\n that allows you to change your\l POKéMON's TYPE temporarily during a\l battle.\p Similar to MEGA EVOLUTION, the TYPE\n the POKéMON TERASTALLIZED into will\l last until the end of the battle, or\l until the POKéMON faints.\p Only one POKéMON can TERA during a\n battle, and two gimmicks can't be\l used on the same POKéMON.\p To TERASTALLIZE, press START before\n selecting your move.\p While TERASTALLIZED, POKéMON receive\n  STAB (Same Type Attack Bonus) on\l moves matching their TERA TYPE,\l in addition to moves matching their\l  original TYPES.\p A POKéMON's TERA TYPE can be viewed\n in the summary screen.\p It will default to an existing TYPE\n the POKéMON has. Such as:\p A mono TYPE will have that TYPE as\n its TERA, while a DUAL TYPE could\l have either TYPE as the TERA.\p TERA SHARDS are required to change\n a POKéMON's TERA TYPE.\p They can be bought from vendors in\n NORTHERN HOENN.$"
+# 139 "data/maps/TheUnder/scripts.pory"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}TERASTALLIZATION is a battle mechanic\n that allows you to change your\l POKéMON's TYPE temporarily during a\l battle.\p Similar to MEGA EVOLUTION, the TYPE\n the POKéMON TERASTALLIZED into will\l last until the end of the battle, or\l until the POKéMON faints.\p Only one POKéMON can TERA during a\n battle, and two gimmicks can't be\l used on the same POKéMON.\p To TERASTALLIZE, press START before\n selecting your move.\p While TERASTALLIZED, POKéMON receive\n  STAB (Same Type Attack Bonus) on\l moves matching their TERA TYPE,\l in addition to moves matching their\l  original TYPES.\p A POKéMON's TERA TYPE can be viewed\n in the summary screen.\p It will default to an existing TYPE\n the POKéMON has. Such as:\p A mono TYPE will have that TYPE as\n its TERA, while a DUAL TYPE could\l have either TYPE as the TERA.\p TERA SHARDS are required to change\n a POKéMON's TERA TYPE.\p They can be bought from new vendors\n in POKé MARTS.$"

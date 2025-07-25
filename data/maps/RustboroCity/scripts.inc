@@ -2671,7 +2671,7 @@ MisaDeclineMeetRival_4:
 
 MisaEnd::
 # 1340 "data/maps/RustboroCity/scripts.pory"
-	goto_if_set FLAG_MISA_RUSTBORO_GYM_TRIGGER, MisaEnd_1
+	goto_if_set FLAG_TEMP_5, MisaEnd_1
 # 1363 "data/maps/RustboroCity/scripts.pory"
 	playse SE_PIN
 # 1364 "data/maps/RustboroCity/scripts.pory"
@@ -2768,7 +2768,7 @@ RustboroCity_Eventscript_Promise_To_Misa::
 
 RustboroCityGym_EventScript_Misa::
 # 1397 "data/maps/RustboroCity/scripts.pory"
-	setflag FLAG_MISA_RUSTBORO_GYM_TRIGGER
+	setflag FLAG_TEMP_5
 # 1398 "data/maps/RustboroCity/scripts.pory"
 	lockall
 # 1399 "data/maps/RustboroCity/scripts.pory"

@@ -3899,13 +3899,11 @@ AI: Basic Trainer
 
 Dudunsparce
 
-Steelix
+Steelix @ Steelixite
 
 Bombirdier
 
 Klawf
-
-Aggron
 
 === TRAINER_EDWARD ===
 Name: EDWARD
@@ -4464,20 +4462,24 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HURLEY ===
 Name: HURLEY
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Youngster
+Pic: Youngster
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Alakazam
+Alakazam @ Alakazite
 
 Salamence
 
-Hydreigon
+Mewtwo
 
-Haxorus
+Lugia
+
+Arceus @ Splash Plate
+
+Heatran
 
 === TRAINER_JESSI ===
 Name: JESSI
@@ -4497,6 +4499,8 @@ Bisharp
 
 Barraskewda
 
+Swampert @ Swampertite
+
 === TRAINER_DOGFOOD ===
 Name: DOGFOOD
 Class: Nerd
@@ -4506,11 +4510,14 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
+Tyranitar @ Tyranitarite
+
 Dachsbun
 
 Mabosstiff
 
-Linoone
+Stoutland
+Ability: Sand Rush
 
 === TRAINER_BJORNULFR ===
 Name: BJORNULFR
@@ -4528,6 +4535,8 @@ Garganacl
 Mamoswine
 
 Dugtrio-Alola
+
+Aerodactyl @ Aerodactylite
 
 === TRAINER_WALTER_1 ===
 Name: WALTER
@@ -4805,7 +4814,7 @@ IVs: 30 Atk / 0 Spe
 - Dragon Pulse  
 - Hidden Power 
 
-Luxray (M) @ Flame Orb  
+Luxray (M) @ Luxrite
 Ability: Guts  
 Level: 75    
 EVs: 252 HP / 252 Atk / 4 Def  
@@ -10431,7 +10440,7 @@ Adamant Nature
 - Protect  
 - Quick Attack  
 
-Raticate (M) @ Blunder Policy  
+Raticate (M) @ Rattatite  
 Ability: Hustle   
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -10555,7 +10564,7 @@ Adamant Nature
 - Protect  
 - Quick Attack  
 
-Raticate (M) @ Blunder Policy  
+Raticate (M) @ Rattatite 
 Ability: Hustle    
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -14075,7 +14084,7 @@ Music: Intense
 Double Battle: Yes
 AI: Basic Trainer
 
-Blaziken
+Blaziken @ Blazikenite
 
 Emboar
 
@@ -14091,6 +14100,8 @@ Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
+
+Abomasnow @ Abomasite
 
 Avalugg-Hisui
 
@@ -14143,6 +14154,8 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
+Aggron @ Aggronite
+
 Bellibolt
 
 Bronzong
@@ -14164,6 +14177,8 @@ Tangrowth
 
 Ambipom
 
+Camerupt @ Cameruptite
+
 === TRAINER_YOR ===
 Name: YOR
 Class: Triathlete
@@ -14178,6 +14193,8 @@ Sawsbuck-Winter
 Walrein
 
 Braviary
+
+Pidgeot @ Pidgeotite
 
 Delibird
 
@@ -14437,7 +14454,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Wartortle
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14450,7 +14467,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Roselia
+Ivysaur
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14476,7 +14493,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
+Magby
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15225,7 +15242,7 @@ Meditite
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Makuhita
+Combusken
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -17461,13 +17478,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Miltank
-
 Tauros-Paldea-Combat
 
 Bouffalant
 
 Furfrou
+
+Miltank @ Miltankite
 
 === TRAINER_ANDRES_4 === /* FREE */
 Name: ANDRES

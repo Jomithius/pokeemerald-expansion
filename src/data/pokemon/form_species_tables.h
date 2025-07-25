@@ -2222,8 +2222,9 @@ static const u16 sFeraligatrFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_GEN_2_CROSS_EVOS
+#endif //P_FAMILY_TOTODILE
 
+#if P_FAMILY_SHINX
 static const u16 sLuxrayFormSpeciesIdTable[] = {
     SPECIES_LUXRAY,
 #if P_MEGA_EVOLUTIONS
@@ -2231,7 +2232,9 @@ static const u16 sLuxrayFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
+#endif // P_FAMILY_SHINX
 
+#if P_FAMILY_ROSELIA
 static const u16 sRoseradeFormSpeciesIdTable[] = {
     SPECIES_ROSERADE,
 #if P_MEGA_EVOLUTIONS
@@ -2239,7 +2242,9 @@ static const u16 sRoseradeFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
+#endif // P_FAMILY_ROSELIA
 
+#if P_FAMILY_CHIKORITA
 static const u16 sMeganiumFormSpeciesIdTable[] = {
     SPECIES_MEGANIUM,
 #if P_MEGA_EVOLUTIONS
@@ -2247,3 +2252,24 @@ static const u16 sMeganiumFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
+#endif // P_FAMILY_CHIKORITA
+
+#if P_FAMILY_MILTANK
+static const u16 sMiltankFormSpeciesIdTable[] = {
+    SPECIES_MILTANK,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_MILTANK_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif // P_FAMILY_MILTANK
+
+#if P_FAMILY_DRATINI
+static const u16 sDragoniteFormSpeciesIdTable[] = {
+    SPECIES_DRAGONITE,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_DRAGONITE_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif // P_FAMILY_DRATINI

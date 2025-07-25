@@ -54,14 +54,14 @@ RustboroCity_Misa_House3F_Togepi::
 # 41 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq RustboroCity_Misa_House3F_Togepi_2
-# 65 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 64 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	hidemonpic
-# 66 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 65 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	msgbox MisaHouse_NotChosen
 RustboroCity_Misa_House3F_Togepi_1:
-# 68 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 67 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	waitmessage
-# 69 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 68 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	releaseall
 	end
 
@@ -76,9 +76,9 @@ RustboroCity_Misa_House3F_Togepi_2:
 # 51 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq RustboroCity_Misa_House3F_Togepi_6
-# 60 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 59 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	hidemonpic
-# 61 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 60 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto RustboroCity_Misa_House3F_Togepi_1
 
@@ -99,87 +99,87 @@ RustboroCity_Misa_House3F_Togepi_6:
 # 52 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 53 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	msgbox RustboroCity_Misa_House3F_Togepi_Text_2
-# 55 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	msgbox RustboroCity_Misa_House3F_Togepi_Text_1
+# 54 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	removeobject 2
-# 56 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 55 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	setflag FLAG_MISA_HOUSE_TOGEPI
-# 57 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 56 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	goto NicknameBoxTogepi
 	goto RustboroCity_Misa_House3F_Togepi_1
 
 
 NicknamePartyTogepi::
-# 75 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 74 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	msgbox NicknamePartyTogepi_Text_0, MSGBOX_YESNO
-# 76 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 75 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	hidemonpic
-# 77 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 76 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyTogepi_2
 NicknamePartyTogepi_1:
-# 81 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 80 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	releaseall
 	end
 
 NicknamePartyTogepi_2:
-# 78 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 77 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 79 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 78 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto NicknamePartyTogepi_1
 
 
 NicknameBoxTogepi::
-# 86 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 85 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	msgbox NicknamePartyTogepi_Text_0, MSGBOX_YESNO
-# 87 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 86 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	hidemonpic
-# 88 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 87 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxTogepi_2
 NicknameBoxTogepi_1:
-# 91 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 90 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	call Common_EventScript_TransferredToPC
-# 92 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 91 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	releaseall
 	end
 
 NicknameBoxTogepi_2:
-# 89 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 88 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxTogepi_1
 
 
 RustboroCity_Misa_House3F_James::
-# 102 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 101 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	lock
-# 103 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 102 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	applymovement 3, MisaHouse3F_FacePlayer
+# 103 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+	waitmovement 3
 # 104 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	waitmovement 3
-# 105 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	msgbox RustboroCity_Misa_House3F_James_Text_0, MSGBOX_AUTOCLOSE
-# 108 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 107 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	waitmessage
-# 109 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 108 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	applymovement 3, MisaHouse3F_FaceUp
-# 110 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 109 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	waitmovement 3
-# 111 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 110 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	release
 	end
 
 
-# 115 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 114 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 MisaHouse3F_FacePlayer:
-# 115 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 114 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	face_player
 	step_end
 
-# 117 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 116 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 MisaHouse3F_FaceUp:
-# 117 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 116 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	face_up
 	step_end
 
@@ -203,18 +203,14 @@ RustboroCity_Misa_House3F_Togepi_Text_1:
 # 46 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	.string "{PLAYER} took the POKéMON!$"
 
-RustboroCity_Misa_House3F_Togepi_Text_2:
-# 53 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "{PLAYER} took the POKéMON!\n TOGEPI was sent to the PC.$"
-
 NicknamePartyTogepi_Text_0:
-# 75 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 74 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	.string "Would you like to nickname TOGEPI?$"
 
 RustboroCity_Misa_House3F_James_Text_0:
-# 105 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 104 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	.string "JAMES: {PLAYER}!\p I lost again, but I'm not gonna give up.\n We're gonna get even stronger.$"
 
 MisaHouse_NotChosen::
-# 96 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 95 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"

@@ -109,34 +109,34 @@ script Route139_EventScript_Momo{
     playse(SE_SHINY)
     fadescreen(FADE_TO_WHITE)
     fadescreen(FADE_FROM_WHITE)
-    addobject(16)
+    addobject(15)
     if(flag(FLAG_TEMP_5) == TRUE){
-        applymovement(16, Route139_Movement_MomoToPlayerLeftTrigger)
+        applymovement(15, Route139_Movement_MomoToPlayerLeftTrigger)
     }
     elif(flag(FLAG_TEMP_6) == TRUE){
-        applymovement(16, Route139_Movement_MomoToPlayerRightTrigger)
+        applymovement(15, Route139_Movement_MomoToPlayerRightTrigger)
     }
     else{
-        applymovement(16, Route139_Movement_MomoToPlayerTrigger)   
+        applymovement(15, Route139_Movement_MomoToPlayerTrigger)   
     }
-    delay(16)
+    delay(15)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
-    waitmovement(16)
+    waitmovement(15)
     msgbox("MOMO: … … …\n
         The altar is up ahead through the cave.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(16, Common_Movement_WalkInPlaceDown)
-    waitmovement(16)
+    applymovement(15, Common_Movement_WalkInPlaceDown)
+    waitmovement(15)
     delay(24)
-    applymovement(16, Common_Movement_WalkInPlaceLeft)
-    waitmovement(16)
+    applymovement(15, Common_Movement_WalkInPlaceLeft)
+    waitmovement(15)
     msgbox("MOMO: … … …\n
         Be careful.\l
         I'll meet you there.", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_M_PETAL_DANCE)
     fadescreenspeed(FADE_TO_WHITE, 4)
-    removeobject(16)
+    removeobject(15)
     fadescreenspeed(FADE_FROM_WHITE, 3)
     setflag(FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE) // if not talked to after Lohan CS
     setvar(VAR_MOMO_ARIA_STATE, 6)

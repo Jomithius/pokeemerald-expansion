@@ -123,19 +123,6 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 46,
-      "y": 58,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 9,
       "y": 5,
       "elevation": 3,
@@ -143,9 +130,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_sight_or_berry_tree_id": "ITEM_CLEAR_AMULET",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_FOUND_CLEAR_AMULET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -156,9 +143,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_sight_or_berry_tree_id": "ITEM_TYPHLOSIONITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_THE_UNDER_TYPHLOSIONITE"
     }
   ],
   "warp_events": [

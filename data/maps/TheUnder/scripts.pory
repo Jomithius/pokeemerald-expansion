@@ -65,6 +65,7 @@ script TheUnder_EventScript_Luna{
     setvar(VAR_THE_UNDER_STATE, 1)
     setflag(FLAG_SYS_RECEIVED_TERA_ORB)
     setflag(FLAG_SYS_TERA_ORB_CHARGED)
+    clearflag(FLAG_HIDE_TERA_SHARD_MERCHANTS)
     releaseall
     end
 }
@@ -163,8 +164,8 @@ text Common_Text_ExplainTera{
     have either TYPE as the TERA.\p
     TERA SHARDS are required to change\n
     a POKéMON's TERA TYPE.\p
-    They can be bought from vendors in\n
-    NORTHERN HOENN."
+    They can be bought from new vendors\n
+    in POKé MARTS."
 }
 
 movement TheUnder_Movement_Luna{

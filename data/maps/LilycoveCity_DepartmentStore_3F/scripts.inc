@@ -6,19 +6,34 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_Mints
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins:
-	.2byte ITEM_PROTEIN
-	.2byte ITEM_CALCIUM
-	.2byte ITEM_IRON
-	.2byte ITEM_ZINC
-	.2byte ITEM_CARBOS
-	.2byte ITEM_HP_UP
+LilycoveCity_DepartmentStore_3F_Pokemart_Mints:
+	.2byte ITEM_LONELY_MINT 
+	.2byte ITEM_ADAMANT_MINT 
+	.2byte ITEM_NAUGHTY_MINT 
+	.2byte ITEM_BRAVE_MINT 
+	.2byte ITEM_BOLD_MINT 
+	.2byte ITEM_IMPISH_MINT 
+	.2byte ITEM_LAX_MINT 
+	.2byte ITEM_RELAXED_MINT 
+	.2byte ITEM_MODEST_MINT 
+	.2byte ITEM_MILD_MINT 
+	.2byte ITEM_RASH_MINT 
+	.2byte ITEM_QUIET_MINT 
+	.2byte ITEM_CALM_MINT 
+	.2byte ITEM_GENTLE_MINT 
+	.2byte ITEM_CAREFUL_MINT 
+	.2byte ITEM_SASSY_MINT 
+	.2byte ITEM_TIMID_MINT 
+	.2byte ITEM_HASTY_MINT 
+	.2byte ITEM_JOLLY_MINT 
+	.2byte ITEM_NAIVE_MINT 
+	.2byte ITEM_SERIOUS_MINT
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
@@ -33,6 +48,9 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
+	.2byte ITEM_LIGHT_BALL
 	.2byte ITEM_X_SPEED
 	.2byte ITEM_X_SP_ATK
 	.2byte ITEM_X_ATTACK
@@ -41,6 +59,58 @@ LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
 	.2byte ITEM_GUARD_SPEC
 	.2byte ITEM_X_ACCURACY
 	pokemartlistend
+
+LilycoveCity_DepartmentStore_3F_EventScript_ClerkMiddleRight::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_PokemonItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_3F_Pokemart_PokemonItems:
+	.2byte ITEM_LIGHT_BALL
+	.2byte ITEM_LEEK 
+	.2byte ITEM_THICK_CLUB 
+	.2byte ITEM_LUCKY_PUNCH 
+	.2byte ITEM_DEEP_SEA_SCALE 
+	.2byte ITEM_DEEP_SEA_TOOTH 
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_3F_EventScript_ClerkFarLeft::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_TypeBoostingItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_3F_Pokemart_TypeBoostingItems:
+	.2byte ITEM_SILK_SCARF
+	.2byte ITEM_CHARCOAL
+	.2byte ITEM_MYSTIC_WATER
+	.2byte ITEM_MAGNET
+	.2byte ITEM_MIRACLE_SEED
+	.2byte ITEM_NEVER_MELT_ICE
+	.2byte ITEM_BLACK_BELT
+	.2byte ITEM_POISON_BARB
+	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_SHARP_BEAK
+	.2byte ITEM_TWISTED_SPOON
+	.2byte ITEM_SILVER_POWDER
+	.2byte ITEM_HARD_STONE
+	.2byte ITEM_SPELL_TAG
+	.2byte ITEM_DRAGON_FANG
+	.2byte ITEM_BLACK_GLASSES
+	.2byte ITEM_METAL_COAT
+	pokemartlistend
+
 
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
 	msgbox LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC

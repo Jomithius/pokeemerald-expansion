@@ -918,14 +918,14 @@ Route_135_Lab_EventScript_Meltan::
 # 652 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route_135_Lab_EventScript_Meltan_2
-# 676 "data/maps/Route135_Lab/scripts.pory"
+# 675 "data/maps/Route135_Lab/scripts.pory"
 	hidemonpic
-# 677 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route_135_Lab_EventScript_Meltan_Text_3
+# 676 "data/maps/Route135_Lab/scripts.pory"
+	msgbox Route_135_Lab_EventScript_Meltan_Text_2
 Route_135_Lab_EventScript_Meltan_1:
-# 680 "data/maps/Route135_Lab/scripts.pory"
+# 679 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
-# 681 "data/maps/Route135_Lab/scripts.pory"
+# 680 "data/maps/Route135_Lab/scripts.pory"
 	releaseall
 	end
 
@@ -940,9 +940,9 @@ Route_135_Lab_EventScript_Meltan_2:
 # 662 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Route_135_Lab_EventScript_Meltan_6
-# 671 "data/maps/Route135_Lab/scripts.pory"
+# 670 "data/maps/Route135_Lab/scripts.pory"
 	hidemonpic
-# 672 "data/maps/Route135_Lab/scripts.pory"
+# 671 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto Route_135_Lab_EventScript_Meltan_1
 
@@ -963,77 +963,77 @@ Route_135_Lab_EventScript_Meltan_6:
 # 663 "data/maps/Route135_Lab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 664 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route_135_Lab_EventScript_Meltan_Text_2
-# 666 "data/maps/Route135_Lab/scripts.pory"
+	msgbox Route_135_Lab_EventScript_Meltan_Text_1
+# 665 "data/maps/Route135_Lab/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 667 "data/maps/Route135_Lab/scripts.pory"
+# 666 "data/maps/Route135_Lab/scripts.pory"
 	setflag FLAG_RECEIVED_MELTAN
-# 668 "data/maps/Route135_Lab/scripts.pory"
+# 667 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMonBox
 	goto Route_135_Lab_EventScript_Meltan_1
 
 
 Route_135_Lab_EventScript_TypeNull::
-# 686 "data/maps/Route135_Lab/scripts.pory"
+# 685 "data/maps/Route135_Lab/scripts.pory"
 	lockall
-# 687 "data/maps/Route135_Lab/scripts.pory"
+# 686 "data/maps/Route135_Lab/scripts.pory"
 	showmonpic SPECIES_TYPE_NULL, 10, 4
-# 688 "data/maps/Route135_Lab/scripts.pory"
+# 687 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route_135_Lab_EventScript_TypeNull_Text_0, MSGBOX_YESNO
-# 692 "data/maps/Route135_Lab/scripts.pory"
+# 691 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route_135_Lab_EventScript_TypeNull_2
-# 716 "data/maps/Route135_Lab/scripts.pory"
+# 714 "data/maps/Route135_Lab/scripts.pory"
 	hidemonpic
-# 717 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route_135_Lab_EventScript_Meltan_Text_3
+# 715 "data/maps/Route135_Lab/scripts.pory"
+	msgbox Route_135_Lab_EventScript_Meltan_Text_2
 Route_135_Lab_EventScript_TypeNull_1:
-# 720 "data/maps/Route135_Lab/scripts.pory"
+# 718 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
-# 721 "data/maps/Route135_Lab/scripts.pory"
+# 719 "data/maps/Route135_Lab/scripts.pory"
 	releaseall
 	end
 
 Route_135_Lab_EventScript_TypeNull_2:
-# 693 "data/maps/Route135_Lab/scripts.pory"
+# 692 "data/maps/Route135_Lab/scripts.pory"
 	givemon SPECIES_TYPE_NULL, 70
-# 694 "data/maps/Route135_Lab/scripts.pory"
+# 693 "data/maps/Route135_Lab/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYPE_NULL
-# 695 "data/maps/Route135_Lab/scripts.pory"
+# 694 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Route_135_Lab_EventScript_TypeNull_5
-# 702 "data/maps/Route135_Lab/scripts.pory"
+# 701 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Route_135_Lab_EventScript_TypeNull_6
-# 711 "data/maps/Route135_Lab/scripts.pory"
+# 709 "data/maps/Route135_Lab/scripts.pory"
 	hidemonpic
-# 712 "data/maps/Route135_Lab/scripts.pory"
+# 710 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto Route_135_Lab_EventScript_TypeNull_1
 
 Route_135_Lab_EventScript_TypeNull_5:
-# 696 "data/maps/Route135_Lab/scripts.pory"
+# 695 "data/maps/Route135_Lab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 697 "data/maps/Route135_Lab/scripts.pory"
+# 696 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route_135_Lab_EventScript_Meltan_Text_1
-# 698 "data/maps/Route135_Lab/scripts.pory"
+# 697 "data/maps/Route135_Lab/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 699 "data/maps/Route135_Lab/scripts.pory"
+# 698 "data/maps/Route135_Lab/scripts.pory"
 	setflag FLAG_RECEIVED_TYPE_NULL
-# 700 "data/maps/Route135_Lab/scripts.pory"
+# 699 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMon
 	goto Route_135_Lab_EventScript_TypeNull_1
 
 Route_135_Lab_EventScript_TypeNull_6:
-# 703 "data/maps/Route135_Lab/scripts.pory"
+# 702 "data/maps/Route135_Lab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
+# 703 "data/maps/Route135_Lab/scripts.pory"
+	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 704 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route_135_Lab_EventScript_TypeNull_Text_1
-# 706 "data/maps/Route135_Lab/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 707 "data/maps/Route135_Lab/scripts.pory"
+# 705 "data/maps/Route135_Lab/scripts.pory"
 	setflag FLAG_RECEIVED_TYPE_NULL
-# 708 "data/maps/Route135_Lab/scripts.pory"
+# 706 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMonBox
 	goto Route_135_Lab_EventScript_TypeNull_1
 
@@ -1091,20 +1091,12 @@ Route_135_Lab_EventScript_Meltan_Text_1:
 	.string "{PLAYER} took the POKéMON!$"
 
 Route_135_Lab_EventScript_Meltan_Text_2:
-# 664 "data/maps/Route135_Lab/scripts.pory"
-	.string "{PLAYER} took the POKéMON!\n MELTAN was sent to the PC.$"
-
-Route_135_Lab_EventScript_Meltan_Text_3:
-# 677 "data/maps/Route135_Lab/scripts.pory"
+# 676 "data/maps/Route135_Lab/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"
 
 Route_135_Lab_EventScript_TypeNull_Text_0:
-# 688 "data/maps/Route135_Lab/scripts.pory"
+# 687 "data/maps/Route135_Lab/scripts.pory"
 	.string "{PLAYER} checked the POKé BALL.\p It contained the POKéMON\n TYPE NULL.\p Take the POKé BALL?$"
-
-Route_135_Lab_EventScript_TypeNull_Text_1:
-# 704 "data/maps/Route135_Lab/scripts.pory"
-	.string "{PLAYER} took the POKéMON!\n TYPE NULL was sent to the PC.$"
 
 Route135_Lab_Text_Maniac1::
 # 382 "data/maps/Route135_Lab/scripts.pory"

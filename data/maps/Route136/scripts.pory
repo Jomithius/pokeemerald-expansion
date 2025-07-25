@@ -1,4 +1,4 @@
-const LOCALID_KLAWF = 12
+const LOCALID_KLAWF = 10
 
 mapscripts Route136_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Route136_OnTransition
@@ -19,10 +19,9 @@ script Route136_OnTransition{
 
 script Route136_TryUpdateWeather{
     checkobjectat(11, 8)
-    if(var(VAR_RESULT) == TRUE){
-        setweather(WEATHER_SHADE)
-        doweather
-    }
+    goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_NopReturn)
+    setweather(WEATHER_SHADE)
+    doweather
     return
 }
 
@@ -133,7 +132,9 @@ script Route136_EventScript_HikerKlawf{
         Now I can start my hike up the\l
         mountain.\p
         I'll go after I take a break.\n
-        … Maybe a nap too.", MSGBOX_AUTOCLOSE)
+        … Maybe a nap too.\p
+        The TRAINERS in there are super\n
+        scary.", MSGBOX_AUTOCLOSE)
     release
     end
 }
@@ -174,15 +175,15 @@ script Route136_EventScript_Bobby{
 
 script Route136_EventScript_Tobias{
     trainerbattle_single(TRAINER_TOBIAS, "Up ahead is the tallest mountain\nin HOENN!", "I'm afraid of tall things.")
-    msgbox("You remind me of another TRAINER\n
-        that came through here recently.", MSGBOX_NPC)
+    msgbox("The TRAINERS in AZURE MOUNTAIN\n
+        are seriously SUPER strong.", MSGBOX_NPC)
 	end
 }
 
 script Route136_EventScript_Bentley{
-    trainerbattle_single(TRAINER_BENTLEY, "I can feel it…\nAdventure awaits me!", "Maybe I'm not the main character…")
+    trainerbattle_single(TRAINER_BENTLEY, "I can feel it…\nMy story starts now!", "Maybe I'm not the main character…")
     msgbox("AZURE MOUNTAIN has some crazy\n
-        strong POKéMON.", MSGBOX_NPC)
+        strong POKéMON and TRAINERS.", MSGBOX_NPC)
 	end
 }
 

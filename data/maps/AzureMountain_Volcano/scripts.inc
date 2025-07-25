@@ -116,7 +116,7 @@ AzureMountain_Volcano_EventScript_Diancie::
 # 52 "data/maps/AzureMountain_Volcano/scripts.pory"
 	waitmoncry
 # 53 "data/maps/AzureMountain_Volcano/scripts.pory"
-	setwildbattle SPECIES_DIANCIE, 75
+	setwildbattle SPECIES_DIANCIE, 75, ITEM_DIANCITE
 # 54 "data/maps/AzureMountain_Volcano/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 55 "data/maps/AzureMountain_Volcano/scripts.pory"

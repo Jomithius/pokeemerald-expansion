@@ -50,8 +50,7 @@ script RustboroCity_Misa_House3F_Togepi{
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!\n
-                TOGEPI was sent to the PC.")
+            msgbox("{PLAYER} took the POKéMON!")
             removeobject(2)
             setflag(FLAG_MISA_HOUSE_TOGEPI)
             goto(NicknameBoxTogepi)

@@ -38,9 +38,9 @@ script NewMoonIsland_House1_EventScript_GimmighoulCoins{
     msgbox("You check the treasure chest…\n
         There's a bunch of coins!", MSGBOX_AUTOCLOSE)
     waitmessage
-    checkitemspace(ITEM_GIMMIGHOUL_COIN, 997)
+    checkitemspace(ITEM_GIMMIGHOUL_COIN, 998)
     if(var(VAR_RESULT) == TRUE){
-        finditem(ITEM_GIMMIGHOUL_COIN, 997)
+        finditem(ITEM_GIMMIGHOUL_COIN, 998)
         waitmessage
         closemessage
         fadescreen(FADE_TO_BLACK)

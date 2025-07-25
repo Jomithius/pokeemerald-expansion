@@ -1,1 +1,50 @@
 mapscripts SnowdriftCity_Mart_MapScripts {}
+
+script SnowdriftCity_Mart_EventScript_Clerk{
+    lock
+    faceplayer
+    message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(SnowdriftCity_Mart_Pokemart)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart SnowdriftCity_Mart_Pokemart{
+    ITEM_SNOWBALL
+    ITEM_FULL_RESTORE
+    ITEM_FULL_HEAL
+    ITEM_ABILITY_CAPSULE
+    ITEM_ABILITY_PATCH
+    ITEM_MAX_REVIVE
+    ITEM_MAX_REPEL
+    ITEM_MAX_LURE
+    ITEM_ELIXIR
+    ITEM_QUICK_BALL
+    ITEM_ULTRA_BALL
+    ITEM_DUSK_BALL
+    ITEM_TIMER_BALL
+}
+
+script SnowdriftCity_Mart_EventScript_Hiker{
+    msgbox("Huff… Huff…\n
+        What a hike…\p
+        Time to rejuvenate with some\n
+        BAJA BLAST!", MSGBOX_SIGN)
+    end
+}
+
+script SnowdriftCity_Mart_EventScript_StaffEmployee{
+    msgbox("I like to come up here when I have\n
+        time off.\p
+        I enjoy skiing in my free time.", MSGBOX_NPC)
+    end
+}
+
+script SnowdriftCity_Mart_EventScript_Woman{
+    msgbox("I want to buy some of these new\n
+        TERA SHARDS, but I can't decide\l
+        what TERA TYPE to make my POKéMON…", MSGBOX_NPC)
+    end
+}

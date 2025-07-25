@@ -1388,5 +1388,23 @@ static const struct FormChange sRaticateFormChangeTable[] = {
 };
 #endif //P_FAMILY_RATTATA
 
+#if P_FAMILY_MILTANK
+static const struct FormChange sMiltankFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MILTANK_MEGA, ITEM_MILTANKITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_MILTANK
+
+#if P_FAMILY_DRATINI
+static const struct FormChange sDragoniteFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DRAGONITE_MEGA, ITEM_DRAGONITEITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_DRATINI
+
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

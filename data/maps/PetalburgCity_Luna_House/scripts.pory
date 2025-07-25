@@ -21,8 +21,7 @@ script Luna_House_EventScript_Pokeball{
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the MOTHIM!\n
-                MOTHIM was sent to the PC.")
+            msgbox("{PLAYER} took the MOTHIM!")
             removeobject(1)
             setflag(FLAG_LUNA_HOUSE_MOTHIM)
             goto(NicknameBoxPkmn)

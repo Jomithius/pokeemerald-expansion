@@ -31,3 +31,31 @@ text NewMoonIsland_House4_Text_RestHereAnytime{
     "You can stop by anytime.\n
     We're stuck here for eternity, after all…"
 }
+
+script NewMoonIsland_House4_EventScript_Togedemaru{
+    lock
+    faceplayer
+    fadenewbgm(MUS_POKE_MART)
+    message("I got items you couldn't even\n
+        DREAM of!")
+	waitmessage
+	pokemart(NewMoonIsland_House4_Pokemart)
+	msgbox("Thank you…", MSGBOX_DEFAULT)
+    fadedefaultbgm
+	release
+	end
+}
+
+mart NewMoonIsland_House4_Pokemart{
+    ITEM_FULL_RESTORE
+    ITEM_FULL_HEAL
+    ITEM_MAX_REVIVE
+    ITEM_MAX_REPEL
+    ITEM_MAX_LURE
+    ITEM_ELIXIR
+    ITEM_POKE_BALL
+    ITEM_QUICK_BALL
+    ITEM_ULTRA_BALL
+    ITEM_DUSK_BALL
+    ITEM_TIMER_BALL
+}

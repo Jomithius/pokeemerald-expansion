@@ -1337,7 +1337,7 @@ script MisaDeclineMeetRival{
 }
 
 script MisaEnd{
-	if(flag(FLAG_MISA_RUSTBORO_GYM_TRIGGER) == TRUE){
+	if(flag(FLAG_TEMP_5) == TRUE){
 		playse(SE_PIN)
 		applymovement(18, RustboroExclaim)
 		waitmovement(18)
@@ -1394,7 +1394,7 @@ script RustboroCity_Eventscript_Promise_To_Misa{
 }
 
 script RustboroCityGym_EventScript_Misa{
-    setflag(FLAG_MISA_RUSTBORO_GYM_TRIGGER)
+    setflag(FLAG_TEMP_5)
 	lockall
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)

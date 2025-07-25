@@ -66,6 +66,15 @@ script AltarOfBaldesia_TryRemoveJirachi{
    # end
 #}
 
+script AltarOfBaldesia_EventScript_StoneTablet{
+    msgbox("There's text written on the stone slab…\p
+        “Baldy, baldy, over there!\n
+        What's it like to have no hair?\l
+        Is it hot? Or is it cold?\l
+        I don't know, 'cause I'm not bald!”", MSGBOX_SIGN)
+    end
+}
+
 script AltarOfBaldesia_EventScript_AltarRitual{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, AltarOfBaldesia_Movement_PlayerWalksToMomo)

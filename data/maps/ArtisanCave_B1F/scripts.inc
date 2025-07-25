@@ -29,7 +29,7 @@ AzureMountain_EventScript_Jessi::
 
 AzureMountain_EventScript_Dogfood::
 # 25 "data/maps/ArtisanCave_B1F/scripts.pory"
-	trainerbattle_single TRAINER_DOGFOOD, AzureMountain_EventScript_Dogfood_Text_0, AzureMountain_EventScript_Dogfood_Text_0
+	trainerbattle_single TRAINER_DOGFOOD, AzureMountain_EventScript_Dogfood_Text_0, AzureMountain_EventScript_Dogfood_Text_1
 # 26 "data/maps/ArtisanCave_B1F/scripts.pory"
 	msgbox AzureMountain_EventScript_Dogfood_Text_0, MSGBOX_NPC
 	end
@@ -336,7 +336,7 @@ AzureMountain_EventScript_Barley_Text_2:
 
 AzureMountain_EventScript_Hurley_Text_0:
 # 13 "data/maps/ArtisanCave_B1F/scripts.pory"
-	.string "I'll show you why I was\nable to get here!$"
+	.string "I got here by cheating!$"
 
 AzureMountain_EventScript_Hurley_Text_1:
 # 13 "data/maps/ArtisanCave_B1F/scripts.pory"
@@ -355,6 +355,10 @@ AzureMountain_EventScript_Jessi_Text_1:
 	.string "Okay…\nMaybe you can beat me.$"
 
 AzureMountain_EventScript_Dogfood_Text_0:
+# 25 "data/maps/ArtisanCave_B1F/scripts.pory"
+	.string "Guys… I need pee.$"
+
+AzureMountain_EventScript_Dogfood_Text_1:
 # 25 "data/maps/ArtisanCave_B1F/scripts.pory"
 	.string "Grrr…$"
 

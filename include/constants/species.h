@@ -1648,8 +1648,10 @@
 #define SPECIES_TYPHLOSION_HISUI_MEGA                   1532
 #define SPECIES_FERALIGATR_MEGA                         1533
 #define SPECIES_RATICATE_MEGA                           1534
+#define SPECIES_MILTANK_MEGA                            1535
+#define SPECIES_DRAGONITE_MEGA                          1536
 
-#define SPECIES_EGG                                     (SPECIES_RATICATE_MEGA + 1)
+#define SPECIES_EGG                                     (SPECIES_DRAGONITE_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 
