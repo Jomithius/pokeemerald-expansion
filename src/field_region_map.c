@@ -17,6 +17,7 @@
 #include "window.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "task.h"
 
 /*
  *  This is the type of map shown when interacting with the metatiles for
@@ -145,6 +146,8 @@ static void MCB2_FieldUpdateRegionMap(void)
 
 static void FieldUpdateRegionMap(void)
 {
+    RunTasks();
+
     switch (sFieldRegionMapHandler->state)
     {
         case 0:
