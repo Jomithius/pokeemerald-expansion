@@ -3,6 +3,7 @@ mapscripts WachunpelonCity_MapScripts {
 }
 
 script WachunpelonCity_OnTransition{
+    setflag(FLAG_LANDMARK_WACHUNPELON)
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
     end
 }

@@ -64,4 +64,4 @@ BaseCamp_PokemonCenter_EventScript_Camper_Text_0:
 
 BaseCamp_PokemonCenter_EventScript_Cooltrainer_Text_0:
 # 42 "data/maps/BaseCamp/scripts.pory"
-	.string "There's some strong TRAINERS around here.\n I'm getting fired up!$"
+	.string "I heard AZURE MOUNTAIN is where\n the strongest TRAINERS gather.\p I'm getting fired up!$"

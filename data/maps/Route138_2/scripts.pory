@@ -27,7 +27,7 @@ script Route138_EventScript_Mana{
 }
 
 script Route138_EventScript_Kohaku{
-    trainerbattle_single(TRAINER_KOHAKU, "Rule one!\nDecieve your enemy!", "Rule two:\ndon't take fights you can't win…")
+    trainerbattle_single(TRAINER_KOHAKU, "Rule one!\nDecieve your enemy!", "Rule two:\nDon't take fights you can't win…")
     msgbox("A ninja's all about being a\n
         master of deception!", MSGBOX_NPC)
 	end
@@ -79,8 +79,8 @@ script Route138_EventScript_Masashi{
 
 
 script Route138_EventScript_BlackBelt{
-    msgbox("Up ahead is BALDESIA, the\n
-    village of NINJAS.\p
+    msgbox("Up ahead is BALDESIA, the village\n
+    of NINJAS.\p
     I don't know if an outsider like\n
     you will be allowed in.", MSGBOX_NPC)
     end

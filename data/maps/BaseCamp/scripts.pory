@@ -39,7 +39,8 @@ script BaseCamp_PokemonCenter_EventScript_Camper{
 }
 
 script BaseCamp_PokemonCenter_EventScript_Cooltrainer{
-	msgbox("There's some strong TRAINERS around here.\n
+	msgbox("I heard AZURE MOUNTAIN is where\n
+		the strongest TRAINERS gather.\p
 		I'm getting fired up!", MSGBOX_NPC)
 	end
 }

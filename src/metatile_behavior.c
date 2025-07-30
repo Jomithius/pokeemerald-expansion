@@ -1076,6 +1076,14 @@ bool8 MetatileBehavior_IsRegionMap(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsRegionMapNHoenn(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_REGION_MAP_NHOENN)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 bool8 MetatileBehavior_IsClosedSootopolisDoor(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_CLOSED_SOOTOPOLIS_DOOR)

@@ -101,6 +101,8 @@ enum {
     WIN_VU_METER,
 };
 
+static u8 mapNumber = 0;
+
 // For scrolling search parameter
 #define MAX_SEARCH_PARAM_ON_SCREEN   6
 #define MAX_SEARCH_PARAM_CURSOR_POS  (MAX_SEARCH_PARAM_ON_SCREEN - 1)
@@ -3552,7 +3554,7 @@ static void Task_LoadAreaScreen(u8 taskId)
         gMain.state++;
         break;
     case 2:
-        ShowPokedexAreaScreen(NationalPokedexNumToSpecies(sPokedexListItem->dexNum), &sPokedexView->screenSwitchState);
+        ShowPokedexAreaScreen(NationalPokedexNumToSpecies(sPokedexListItem->dexNum), &sPokedexView->screenSwitchState, mapNumber);
         SetVBlankCallback(gPokedexVBlankCB);
         sPokedexView->screenSwitchState = 0;
         gMain.state = 0;
@@ -3580,6 +3582,20 @@ static void Task_SwitchScreensFromAreaScreen(u8 taskId)
             break;
         case 2:
             gTasks[taskId].func = Task_LoadCryScreen;
+            break;
+        case 3: // unsure if needed
+            if(mapNumber == 0)
+                mapNumber = 1;
+            else
+                mapNumber--;
+            gTasks[taskId].func = Task_LoadAreaScreen;
+            break;
+        case 4: // unsure if needed
+            if(mapNumber == 1)
+                mapNumber = 0;
+            else
+                mapNumber++;
+            gTasks[taskId].func = Task_LoadAreaScreen;
             break;
         }
     }

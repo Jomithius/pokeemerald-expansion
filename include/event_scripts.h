@@ -665,5 +665,6 @@ extern const u8 EventScript_TooDark[];
 extern const u8 EventScript_MovedTooFast[];
 
 extern const u8 EventScript_Fantasia[];
+extern const u8 EventScript_RegionMapNHoenn[];
 
 #endif // GUARD_EVENT_SCRIPTS_H

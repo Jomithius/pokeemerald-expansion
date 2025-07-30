@@ -1304,3 +1304,4 @@ const u8 gText_DontLetHim[] = _("Don't let him get to you.");
 const u8 gText_IUnderstand[] = _("I understand.");
 const u8 gText_MomoIsBack[] = _("Momo's back.");
 const u8 gText_What[] = _("… What?");
+const u8 gText_NHoenn_Menu[] = _("N. HOENN");

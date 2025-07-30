@@ -817,7 +817,7 @@
 #define TRAINER_BRANDON                     811
 #define TRAINER_GOHANA                      812
 #define TRAINER_PAMUEL                      813
-#define TRAINER_ANDRES_4                    814 // free
+#define TRAINER_JASON                       814
 #define TRAINER_ANDRES_5                    815 // free
 #define TRAINER_CORY_2                      816
 #define TRAINER_CORY_3                      817

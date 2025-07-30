@@ -72,7 +72,7 @@
 #define PARTY_MSG_X_MONS_ARE_NEEDED         17
 #define PARTY_MSG_MONS_CANT_BE_SAME         18
 #define PARTY_MSG_NO_SAME_HOLD_ITEMS        19
-#define PARTY_MSG_UNUSED                    20
+#define PARTY_MSG_WHICH_REGION              20 // custom
 #define PARTY_MSG_DO_WHAT_WITH_MON          21
 #define PARTY_MSG_RESTORE_WHICH_MOVE        22
 #define PARTY_MSG_BOOST_PP_WHICH_MOVE       23

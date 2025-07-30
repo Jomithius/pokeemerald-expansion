@@ -99,7 +99,7 @@ Route137_SeasideHouse_EventScript_Misa::
 
 Route137_SeasideHouse_EventScript_Daca::
 # 83 "data/maps/Route137_SeasideHouse/scripts.pory"
-	msgbox Route137_SeasideHouse_EventScript_Daca_Text_0, MSGBOX_SIGN
+	msgbox Route137_SeasideHouse_EventScript_Daca_Text_0, MSGBOX_NPC
 	end
 
 

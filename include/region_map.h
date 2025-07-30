@@ -20,6 +20,7 @@ enum
 enum {
     MAPSECTYPE_NONE,
     MAPSECTYPE_ROUTE,
+    MAPSECTYPE_ROUTE_CANFLY,
     MAPSECTYPE_CITY_CANFLY,
     MAPSECTYPE_CITY_CANTFLY,
     MAPSECTYPE_BATTLE_FRONTIER,
@@ -115,11 +116,13 @@ bool8 IsRegionMapZoomed(void);
 void TrySetPlayerIconBlink(void);
 void BlendRegionMap(u16 color, u32 coeff);
 void SetRegionMapDataForZoom(void);
+void SetMapGraphics(u8 mapNum);
 
 //Pokenav Fly funcs
 u32 FilterFlyDestination(struct RegionMap* regionMap);
 void SetFlyDestination(struct RegionMap* regionMap);
 
 extern const struct RegionMapLocation gRegionMapEntries[];
+extern const struct RegionMapLocation gRegionMapEntries_NHoenn[];
 
 #endif //GUARD_REGION_MAP_H

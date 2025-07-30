@@ -137,6 +137,11 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
+	setflag FLAG_LANDMARK_THE_UNDER
+	setflag FLAG_LANDMARK_ROUTE135
+	setflag FLAG_LANDMARK_WACHUNPELON
+	setflag FLAG_LANDMARK_BALDESIA 
+	setflag FLAG_LANDMARK_SNOWDRIFT_CITY
 	release
 	end
 

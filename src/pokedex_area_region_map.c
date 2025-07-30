@@ -11,6 +11,9 @@ static EWRAM_DATA u8 *sPokedexAreaMapBgNum = NULL;
 static const u16 ALIGNED(4) sPokedexAreaMap_Pal[] = INCBIN_U16("graphics/pokedex/region_map.gbapal");
 static const u32 sPokedexAreaMap_Gfx[] = INCBIN_U32("graphics/pokedex/region_map.8bpp.lz");
 static const u32 sPokedexAreaMap_Tilemap[] = INCBIN_U32("graphics/pokedex/region_map.bin.lz");
+static const u16 ALIGNED(4) sPokedexAreaMap_Pal_NHoenn[] = INCBIN_U16("graphics/pokedex/nhoenn_map.gbapal");
+static const u32 sPokedexAreaMap_Gfx_NHoenn[] = INCBIN_U32("graphics/pokedex/nhoenn_map.8bpp.lz");
+static const u32 sPokedexAreaMap_Tilemap_NHoenn[] = INCBIN_U32("graphics/pokedex/nhoenn_map.bin.lz");
 static const u32 sPokedexAreaMapAffine_Gfx[] = INCBIN_U32("graphics/pokedex/region_map_affine.8bpp.lz");
 static const u32 sPokedexAreaMapAffine_Tilemap[] = INCBIN_U32("graphics/pokedex/region_map_affine.bin.lz");
 
@@ -42,6 +45,37 @@ void LoadPokedexAreaMapGfx(const struct PokedexAreaMapTemplate *template)
     ChangeBgY(template->bg, 0, BG_COORD_SET);
     SetBgAttribute(template->bg, BG_ATTR_PALETTEMODE, 1);
     CpuCopy32(sPokedexAreaMap_Pal, &gPlttBufferUnfaded[BG_PLTT_ID(7)], sizeof(sPokedexAreaMap_Pal));
+    *sPokedexAreaMapBgNum = template->bg;
+}
+
+void LoadPokedexAreaMapGfx_NHoenn(const struct PokedexAreaMapTemplate *template)
+{
+    u8 mode;
+    void * tilemap;
+    sPokedexAreaMapBgNum = Alloc(sizeof(sPokedexAreaMapBgNum));
+    mode = template->mode;
+
+    if (mode == 0)
+    {
+        SetBgAttribute(template->bg, BG_ATTR_METRIC, 0);
+        DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMap_Gfx_NHoenn, 0, template->offset, 0);
+        tilemap = DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMap_Tilemap_NHoenn, 0, 0, 1);
+        AddValToTilemapBuffer(tilemap, template->offset, 32, 32, FALSE); // template->offset is always 0, so this does nothing.
+    }
+    else
+    {
+        // This is never reached, only a mode of 0 is given
+        SetBgAttribute(template->bg, BG_ATTR_METRIC, 2);
+        SetBgAttribute(template->bg, BG_ATTR_TYPE, BG_TYPE_AFFINE); // This does nothing. BG_ATTR_TYPE can't be set with this function
+        DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMapAffine_Gfx, 0, template->offset, 0);
+        tilemap = DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMapAffine_Tilemap, 0, 0, 1);
+        AddValToTilemapBuffer(tilemap, template->offset, 64, 64, TRUE); // template->offset is always 0, so this does nothing.
+    }
+
+    ChangeBgX(template->bg, 0, BG_COORD_SET);
+    ChangeBgY(template->bg, 0, BG_COORD_SET);
+    SetBgAttribute(template->bg, BG_ATTR_PALETTEMODE, 1);
+    CpuCopy32(sPokedexAreaMap_Pal_NHoenn, &gPlttBufferUnfaded[BG_PLTT_ID(7)], sizeof(sPokedexAreaMap_Pal_NHoenn));
     *sPokedexAreaMapBgNum = template->bg;
 }
 

@@ -189,7 +189,7 @@ Route138_EventScript_Kohaku_Text_0:
 
 Route138_EventScript_Kohaku_Text_1:
 # 30 "data/maps/Route138_2/scripts.pory"
-	.string "Rule two:\ndon't take fights you can't win…$"
+	.string "Rule two:\nDon't take fights you can't win…$"
 
 Route138_EventScript_Kohaku_Text_2:
 # 31 "data/maps/Route138_2/scripts.pory"
@@ -273,7 +273,7 @@ Route138_EventScript_Masashi_Text_2:
 
 Route138_EventScript_BlackBelt_Text_0:
 # 82 "data/maps/Route138_2/scripts.pory"
-	.string "Up ahead is BALDESIA, the\n village of NINJAS.\p I don't know if an outsider like\n you will be allowed in.$"
+	.string "Up ahead is BALDESIA, the village\n of NINJAS.\p I don't know if an outsider like\n you will be allowed in.$"
 
 Route138_EventScript_KimonoLady_Text_0:
 # 90 "data/maps/Route138_2/scripts.pory"

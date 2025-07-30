@@ -217,9 +217,9 @@
 #define MAPSEC_RAT_CAVE                     0xD5
 #define MAPSEC_THE_UNDER                    0xD6
 #define MAPSEC_ROUTE_135                    0xD7
-#define MAPSEC_ROUTE_136                    0xD8
-#define MAPSEC_WACHUNPELON                  0xD9
-#define MAPSEC_ROUTE_137                    0xDA
+#define MAPSEC_WACHUNPELON                  0xD8
+#define MAPSEC_BALDESIA                     0xD9
+#define MAPSEC_SNOWDRIFT_CITY               0xDA
 #define MAPSEC_ULTRA_SPACE                  0xDB
 #define MAPSEC_NEWMOON_ISLAND               0xDC
 #define MAPSEC_FULLMOON_ISLAND              0xDD
@@ -227,12 +227,12 @@
 #define MAPSEC_FLOWER_PARADISE              0xDF
 #define MAPSEC_THE_VOID                     0xE0
 #define MAPSEC_ROUTE_138                    0xE1
-#define MAPSEC_BALDESIA                     0xE2
+#define MAPSEC_ROUTE_136                    0xE2
 #define MAPSEC_ROUTE_139                    0xE3
 #define MAPSEC_EASTERN_RUINS                0xE4
 #define MAPSEC_BALDESIAN_ALTAR              0xE5
 #define MAPSEC_AZURE_MOUNTAIN               0xE6
-#define MAPSEC_SNOWDRIFT_CITY               0xE7
+#define MAPSEC_ROUTE_137                    0xE7
 #define MAPSEC_BALDESIAN_FOREST             0xE8
 #define MAPSEC_AZURE_CHASM                  0xE9
 #define MAPSEC_NONE                         0xF0

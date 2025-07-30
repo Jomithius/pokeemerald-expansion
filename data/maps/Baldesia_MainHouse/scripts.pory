@@ -69,7 +69,7 @@ mart Baldesia_MainHouse_Pokemart{
 script Baldesia_MainHouse_EventScript_MochiClerk{
     lock
     faceplayer
-    message("Hello.\nPlease take a look at my wares.")
+    message("Hello.\nI'm selling mochi.")
 	waitmessage
 	pokemart(Baldesia_MainHouse_PokemartMochi)
 	msgbox("Thank you for your patronage.", MSGBOX_DEFAULT)
@@ -79,9 +79,6 @@ script Baldesia_MainHouse_EventScript_MochiClerk{
 
 mart Baldesia_MainHouse_PokemartMochi{
     ITEM_FRESH_START_MOCHI
-    ITEM_HEARTHFLAME_MASK
-    ITEM_WELLSPRING_MASK
-    ITEM_CORNERSTONE_MASK
 }
 
 script Baldesia_MainHouse_EventScript_GoToChief{
@@ -348,6 +345,7 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     clearflag(FLAG_HIDE_NINJA_BALDESIA)
     setflag(FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE)
     setvar(VAR_MOMO_ARIA_STATE, 5)
+    setflag(FLAG_LANDMARK_BALDESIA) // set here so fly only unlocks along w main house. prevents sequence breaking.
     releaseall
     end
 }

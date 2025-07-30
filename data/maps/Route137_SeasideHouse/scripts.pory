@@ -81,7 +81,7 @@ script Route137_SeasideHouse_EventScript_Misa{
 
 script Route137_SeasideHouse_EventScript_Daca{
     msgbox("Hahaha!\n
-        It's an ice cream party!", MSGBOX_SIGN)
+        It's an ice cream party!", MSGBOX_NPC)
     end
 }
 

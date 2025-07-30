@@ -777,6 +777,15 @@ EventScript_RegionMap::
 	releaseall
 	end
 
+EventScript_RegionMapNHoenn::
+	lockall
+	msgbox Common_Text_LookCloserAtMap, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	special FieldShowRegionMapNHoenn
+	waitstate
+	releaseall
+	end
+
 Common_EventScript_PlayBrineysBoatMusic::
 	setflag FLAG_DONT_TRANSITION_MUSIC
 	playbgm MUS_SAILING, FALSE

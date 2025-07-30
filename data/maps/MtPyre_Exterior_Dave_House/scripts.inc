@@ -116,4 +116,4 @@ MtPyre_Exterior_Dave_House_Text_Fantasia::
 
 MtPyre_Exterior_Dave_House_Text_WarnFantasia::
 # 87 "data/maps/MtPyre_Exterior_Dave_House/scripts.pory"
-	.string "{COLOR RED}{SHADOW LIGHT_RED} WARNING\p {COLOR BLUE}{SHADOW LIGHT_BLUE} It's very unlikely any problems will\n occur with using the FANTASIA, but it's\l still possible.\p If you want to be safe, wait until after\n defeating the ELITE FOUR to use it.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}If we have to battle in the future, do\n me a favor and lose, okay?$"
+	.string "If we have to battle in the future, do\n me a favor and lose, okay?$"

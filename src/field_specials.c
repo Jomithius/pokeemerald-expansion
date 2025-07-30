@@ -978,6 +978,15 @@ static void CB2_FieldShowRegionMap(void)
 
 void FieldShowRegionMap(void)
 {
+    SetMapGraphics(0);
+    SetFieldMapNumber(0);
+    SetMainCallback2(CB2_FieldShowRegionMap);
+}
+
+void FieldShowRegionMapNHoenn(void)
+{
+    SetMapGraphics(1);
+    SetFieldMapNumber(1);
     SetMainCallback2(CB2_FieldShowRegionMap);
 }
 

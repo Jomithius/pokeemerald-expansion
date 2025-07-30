@@ -569,3 +569,4 @@ gSpecials::
 	def_special IsLeadMonSpectrierOrGlastrier
 	def_special AreRegisInParty
 	def_special IsGhostTypeInParty
+	def_special FieldShowRegionMapNHoenn

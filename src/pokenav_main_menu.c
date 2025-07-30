@@ -164,6 +164,11 @@ static const struct CompressedSpriteSheet sMenuLeftHeaderSpriteSheets[] =
         .data = gPokenavLeftHeaderHoennMap_Gfx,
         .size = 0x40,
         .tag = 0
+    },
+    [POKENAV_GFX_REGIONMAPS_MENU] = {
+        .data = gPokenavLeftHeaderRegionMaps_Gfx,
+        .size = 0x20,
+        .tag = 1
     }
 };
 

@@ -519,8 +519,8 @@
 #define FLAG_RECEIVED_TYPE_NULL              0x1DF // Route 135 Lab
 #define FLAG_DEFEATED_OGERPON                0x1E0 // Eastern Ruins
 #define FLAG_HIDE_LUNA_THE_UNDER             0x1E1 // Luna CS the under
-#define FLAG_HIDE_CARSON_THE_UNDER           0x1E2 // Newmoon Island Sidequest
-#define FLAG_HIDE_CARSON_THE_UNDER_CANYON_LAKE 0x1E3 // Newmoon Island Sidequest
+#define FLAG_HIDE_CARSON_THE_UNDER           0x1E2 // unused
+#define FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE  0x1E3 // Newmoon Island Sidequest
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4

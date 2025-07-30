@@ -79,8 +79,8 @@
 
 enum {
     MENU_SUMMARY,
-    MENU_STAT_EDIT,
     MENU_SWITCH,
+    MENU_STAT_EDIT,
     MENU_CANCEL1,
     MENU_ITEM,
     MENU_GIVE,
@@ -98,6 +98,8 @@ enum {
     MENU_TRADE1,
     MENU_TRADE2,
     MENU_TOSS,
+    MENU_HOENN,
+    MENU_NHOENN,
     MENU_CATALOG_BULB,
     MENU_CATALOG_OVEN,
     MENU_CATALOG_WASHING,
@@ -107,6 +109,7 @@ enum {
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
     MENU_FIELD_MOVES
+    
 };
 
 // IDs for the action lists that appear when a party mon is selected
@@ -502,6 +505,8 @@ static void CursorCb_Register(u8);
 static void CursorCb_Trade1(u8);
 static void CursorCb_Trade2(u8);
 static void CursorCb_Toss(u8);
+static void CursorCb_Hoenn(u8);
+static void CursorCb_NHoenn(u8);
 static void CursorCb_FieldMove(u8);
 static void CursorCb_CatalogBulb(u8);
 static void CursorCb_CatalogOven(u8);
@@ -518,6 +523,7 @@ static bool8 SetUpFieldMove_Dive(void);
 void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
+static bool8 CreateMapSelectionWindow(u8);
 
 // static const data
 #include "data/party_menu.h"
@@ -4019,9 +4025,17 @@ static void CursorCb_FieldMove(u8 taskId)
                 sPartyMenuInternal->data[0] = fieldMove;
                 break;
             case FIELD_MOVE_FLY:
+                if(FlagGet(FLAG_LANDMARK_THE_UNDER))
+                {
+                    CreateMapSelectionWindow(taskId);
+                    break;
+                }
+                else
+                {
                 gPartyMenu.exitCallback = CB2_OpenFlyMap;
                 Task_ClosePartyMenu(taskId);
                 break;
+                }
             default:
                 gPartyMenu.exitCallback = CB2_ReturnToField;
                 Task_ClosePartyMenu(taskId);
@@ -7885,4 +7899,42 @@ void IsLastMonThatKnowsSurf(void)
         if (AnyStorageMonWithMove(move) != TRUE)
             gSpecialVar_Result = !P_CAN_FORGET_HIDDEN_MOVE;
     }
+}
+
+static void SetRegionSelectionActions()
+{
+    sPartyMenuInternal->numActions = 0;
+    if(FlagGet(FLAG_LANDMARK_THE_UNDER))
+    {
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_HOENN);
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_NHOENN);
+    }
+}
+
+static void CursorCb_Hoenn(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    SetMapGraphics(0);
+    gPartyMenu.exitCallback = CB2_OpenFlyMap;
+    Task_ClosePartyMenu(taskId);
+}
+
+static void CursorCb_NHoenn(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    SetMapGraphics(1);
+    gPartyMenu.exitCallback = CB2_OpenFlyMap;
+    Task_ClosePartyMenu(taskId);
+}
+
+static bool8 CreateMapSelectionWindow(u8 taskId)
+{
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+
+    SetRegionSelectionActions();
+
+    DisplaySelectionWindow(SELECTWINDOW_ACTIONS);
+    DisplayPartyMenuStdMessage(PARTY_MSG_DO_WHAT_WITH_MON);
+
+    return TRUE;
 }

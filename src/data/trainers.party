@@ -17307,12 +17307,11 @@ Class: Rival
 Pic: Steven
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
 Skarmory
-Level: 77
+Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Toxic
 - Aerial Ace
@@ -17320,7 +17319,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Steel Wing
 
 Claydol
-Level: 75
+Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Reflect
 - Light Screen
@@ -17328,7 +17327,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 
 Aggron
-Level: 76
+Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Earthquake
@@ -17336,7 +17335,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Claw
 
 Cradily
-Level: 76
+Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Giga Drain
 - Ancient Power
@@ -17344,15 +17343,15 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 
 Armaldo
-Level: 76
+Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Water Pulse
 - Ancient Power
 - Aerial Ace
 - Slash
 
-Metagross @ Sitrus Berry
-Level: 78
+Metagross @ Metagrossite
+Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Psychic
@@ -17460,14 +17459,19 @@ Double Battle: No
 AI: Basic Trainer
 
 Charizard @ Charizardite X
+Level: 100
 
 Basculegion
+Level: 100
 
 Mudsdale
+Level: 100
 
 Rotom-Wash
+Level: 100
 
 Baxcalibur
+Level: 100
 
 === TRAINER_PAMUEL ===
 Name: PAMUEL
@@ -17479,32 +17483,40 @@ Double Battle: No
 AI: Check Bad Move
 
 Tauros-Paldea-Combat
+Level: 100
 
 Bouffalant
+Level: 100
 
 Furfrou
+Level: 100
 
 Miltank @ Miltankite
+Level: 100
 
-=== TRAINER_ANDRES_4 === /* FREE */
-Name: ANDRES
-Class: Ruin Maniac
-Pic: Ruin Maniac
+=== TRAINER_JASON ===
+Name: JASON
+Class: Bird Keeper
+Pic: Bird Keeper
 Gender: Male
-Music: Hiker
+Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Nosepass
-Level: 35
+Corviknight
+Level: 100
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sandshrew
-Level: 35
+Oricorio-Pa'u
+Level: 100
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sandshrew
-Level: 35
+Minior
+Level: 100
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+Squawkabilly
+Level: 100
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_ANDRES_5 === /* FREE */

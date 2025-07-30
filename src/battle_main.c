@@ -5553,7 +5553,7 @@ static void HandleEndTurn_BattleWon(void)
             break;
             }
         case TRAINER_CLASS_CEO:
-            PlayBGM(MUS_VICTORY_CYNTHIA);
+            PlayBGM(MUS_THE_DAY_WILL_COME);
             break;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:

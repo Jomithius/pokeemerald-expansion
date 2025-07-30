@@ -8,6 +8,7 @@ mapscripts Route135_Lab_MapScripts {
 
 script Route135_Lab_OnTransition{
     setflag(FLAG_TEMP_E)
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_LANDMARK_ROUTE135)
     call_if_set(FLAG_ENABLED_JAMES_MATCH_CALL, Route135_Lab_DisableJamesMatchCall)
     call_if_ge(VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_JamesPosition)

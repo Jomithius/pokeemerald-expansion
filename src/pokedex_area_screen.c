@@ -33,6 +33,10 @@
 #define MAP_GROUP_TOWNS_AND_ROUTES MAP_GROUP(PETALBURG_CITY)
 #define MAP_GROUP_DUNGEONS MAP_GROUP(METEOR_FALLS_1F_1R)
 #define MAP_GROUP_SPECIAL_AREA MAP_GROUP(SAFARI_ZONE_NORTHWEST)
+// NHoenn
+#define MAP_GROUP_NHOENN_TOWNS_AND_ROUTES MAP_GROUP(THE_UNDER)
+#define MAP_GROUP_NHOENN_DUNGEONS MAP_GROUP(ARTISAN_CAVE_B1F)
+
 
 #define AREA_SCREEN_WIDTH 32
 #define AREA_SCREEN_HEIGHT 20
@@ -112,6 +116,8 @@ static void LoadHGSSScreenSelectBarSubmenu(void);
 static const u32 sAreaGlow_Pal[] = INCBIN_U32("graphics/pokedex/area_glow.gbapal");
 static const u32 sAreaGlow_Gfx[] = INCBIN_U32("graphics/pokedex/area_glow.4bpp.lz");
 static const u32 sPokedexPlusHGSS_ScreenSelectBarSubmenu_Tilemap[] = INCBIN_U32("graphics/pokedex/hgss/SelectBar.bin.lz");
+
+static u8 mapNumber = 0;
 
 static const u16 sSpeciesHiddenFromAreaScreen[] = { SPECIES_WYNAUT };
 
@@ -274,12 +280,22 @@ static void FindMapsWithMon(u16 species)
             switch (sFeebasData[i][1])
             {
             case MAP_GROUP_TOWNS_AND_ROUTES:
-                SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
+                if(mapNumber == 0) // Hoenn
+                    SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
+                break;
+            case MAP_GROUP_NHOENN_TOWNS_AND_ROUTES:
+                if(mapNumber == 1) // NHoenn
+                    SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                 break;
             case MAP_GROUP_DUNGEONS:
             case MAP_GROUP_SPECIAL_AREA:
-                SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
+                if(mapNumber == 0) // Hoenn
+                    SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                 break;
+            case MAP_GROUP_NHOENN_DUNGEONS:
+                if(mapNumber == 1) // NHoenn
+                    SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
+                break;  
             }
         }
     }
@@ -292,12 +308,22 @@ static void FindMapsWithMon(u16 species)
             switch (gWildMonHeaders[i].mapGroup)
             {
             case MAP_GROUP_TOWNS_AND_ROUTES:
+                if(mapNumber == 0) // Hoenn
+                SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
+                break;
+            case MAP_GROUP_NHOENN_TOWNS_AND_ROUTES:
+                if(mapNumber == 1) // NHoenn
                 SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                 break;
             case MAP_GROUP_DUNGEONS:
             case MAP_GROUP_SPECIAL_AREA:
+                if(mapNumber == 0) // Hoenn
                 SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                 break;
+            case MAP_GROUP_NHOENN_DUNGEONS:
+                if(mapNumber == 1) // NHoenn
+                    SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
+                break;  
             }
         }
     }
@@ -578,9 +604,11 @@ static void DoAreaGlow(void)
 
 #define tState data[0]
 
-void ShowPokedexAreaScreen(u16 species, u8 *screenSwitchState)
+void ShowPokedexAreaScreen(u16 species, u8 *screenSwitchState, u8 mapNum)
 {
     u8 taskId;
+
+    mapNumber = mapNum;
 
     sPokedexAreaScreen = AllocZeroed(sizeof(*sPokedexAreaScreen));
     sPokedexAreaScreen->species = species;
@@ -592,6 +620,8 @@ void ShowPokedexAreaScreen(u16 species, u8 *screenSwitchState)
 
 static void Task_ShowPokedexAreaScreen(u8 taskId)
 {
+    SetMapGraphics(mapNumber);
+    
     switch (gTasks[taskId].tState)
     {
     case 0:
@@ -603,7 +633,12 @@ static void Task_ShowPokedexAreaScreen(u8 taskId)
         break;
     case 1:
         SetBgAttribute(3, BG_ATTR_CHARBASEINDEX, 3);
-        LoadPokedexAreaMapGfx(&sPokedexAreaMapTemplate);
+        //Hoenn
+        if(mapNumber == 0)
+            LoadPokedexAreaMapGfx(&sPokedexAreaMapTemplate);
+        //NHoenn
+        if(mapNumber == 1)
+            LoadPokedexAreaMapGfx_NHoenn(&sPokedexAreaMapTemplate);
         StringFill(sPokedexAreaScreen->charBuffer, CHAR_SPACE, 16);
         break;
     case 2:
@@ -638,7 +673,6 @@ static void Task_ShowPokedexAreaScreen(u8 taskId)
     case 10:
         if (POKEDEX_PLUS_HGSS)
             LoadHGSSScreenSelectBarSubmenu();
-
         SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT1_BG0 | BLDCNT_EFFECT_BLEND | BLDCNT_TGT2_BG0 | BLDCNT_TGT2_ALL);
         StartAreaGlow();
         ShowBg(2);
@@ -727,22 +761,46 @@ static void CreateAreaMarkerSprites(void)
     LoadSpriteSheet(&sAreaMarkerSpriteSheet);
     LoadSpritePalette(&sAreaMarkerSpritePalette);
     numSprites = 0;
-    for (i = 0; i < sPokedexAreaScreen->numSpecialAreas; i++)
+    // Hoenn
+    if (mapNumber == 0)
     {
-        mapSecId = sPokedexAreaScreen->specialAreaRegionMapSectionIds[i];
-        x = 8 * (gRegionMapEntries[mapSecId].x + 1) + 4;
-        y = 8 * (gRegionMapEntries[mapSecId].y) + 28;
-        x += 4 * (gRegionMapEntries[mapSecId].width - 1);
-        y += 4 * (gRegionMapEntries[mapSecId].height - 1);
-        spriteId = CreateSprite(&sAreaMarkerSpriteTemplate, x, y, 0);
+        for (i = 0; i < sPokedexAreaScreen->numSpecialAreas; i++)
+        {
+            mapSecId = sPokedexAreaScreen->specialAreaRegionMapSectionIds[i];
+            x = 8 * (gRegionMapEntries[mapSecId].x + 1) + 4;
+            y = 8 * (gRegionMapEntries[mapSecId].y) + 28;
+            x += 4 * (gRegionMapEntries[mapSecId].width - 1);
+            y += 4 * (gRegionMapEntries[mapSecId].height - 1);
+            spriteId = CreateSprite(&sAreaMarkerSpriteTemplate, x, y, 0);   
         if (spriteId != MAX_SPRITES)
         {
             gSprites[spriteId].invisible = TRUE;
             sPokedexAreaScreen->areaMarkerSprites[numSprites++] = &gSprites[spriteId];
         }
-    }
+        }
 
-    sPokedexAreaScreen->numAreaMarkerSprites = numSprites;
+        sPokedexAreaScreen->numAreaMarkerSprites = numSprites;
+    }
+    // NHoenn
+    else
+    {
+        for (i = 0; i < sPokedexAreaScreen->numSpecialAreas; i++)
+        {
+            mapSecId = sPokedexAreaScreen->specialAreaRegionMapSectionIds[i];
+            x = 8 * (gRegionMapEntries_NHoenn[mapSecId].x + 1) + 4;
+            y = 8 * (gRegionMapEntries_NHoenn[mapSecId].y) + 28;
+            x += 4 * (gRegionMapEntries_NHoenn[mapSecId].width - 1);
+            y += 4 * (gRegionMapEntries_NHoenn[mapSecId].height - 1);
+            spriteId = CreateSprite(&sAreaMarkerSpriteTemplate, x, y, 0); 
+        if (spriteId != MAX_SPRITES)
+        {
+            gSprites[spriteId].invisible = TRUE;
+            sPokedexAreaScreen->areaMarkerSprites[numSprites++] = &gSprites[spriteId];
+        }
+        }
+
+        sPokedexAreaScreen->numAreaMarkerSprites = numSprites;
+    }    
 }
 
 static void DestroyAreaScreenSprites(void)

@@ -3,6 +3,7 @@ mapscripts TheUnder_MapScripts {
 }
 
 script TheUnder_OnTransition{
+    setflag(FLAG_LANDMARK_THE_UNDER)
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
     end
 }
@@ -49,7 +50,7 @@ script TheUnder_EventScript_Luna{
     applymovement(7, Common_Movement_WalkInPlaceLeft)
     waitmovement(7)
     msgbox("Well, the first place I would go is the\n
-        lab on ROUTE 135 to the east.\p
+        lab on ROUTE 135 to the west.\p
         There's some interesting stuff going on\n
         over there.\p
         Anyways, mucho texto. I'll be ready for\n
@@ -71,7 +72,8 @@ script TheUnder_EventScript_Luna{
 }
 
 script TheUnder_EventScript_Sign{
-    msgbox("{RIGHT_ARROW} POKéMON CENTER", MSGBOX_SIGN)
+    msgbox("{RIGHT_ARROW} POKéMON CENTER\p
+        {UP_ARROW}{LEFT_ARROW} ROUTE 135 & LUSH ACREAGE", MSGBOX_SIGN)
     end
 }
 
@@ -114,7 +116,26 @@ script TheUnder_EventScript_Samothy{
 }
 
 script TheUnder_EventScript_Trevor{
-    trainerbattle_single(TRAINER_TREVOR, "Look at this cool POKéMON!", "I've never seen a POKéMON like that!")
+    trainerbattle_single(TRAINER_TREVOR, "They can have the ground.\nI own the sky!", "Mayday!\n Crashing and burning over here!")
+    msgbox("I work for SNOWDRIFT CITY's\n
+        CORVIKNIGHT service.\p
+        We bring people up and down the\n
+        mountain, but we have to be careful\l
+        of the TINKATON.", MSGBOX_NPC)
+	end
+}
+
+script TheUnder_EventScript_Woman{
+    msgbox("I love coming here during my days off.\n
+        The sound of the waterfall relaxes me.\p
+        If you have a chance, you should stop\n
+        by LUSH ACREAGE and try our famous\l
+        MOOMOO MILK!", MSGBOX_NPC)
+    end
+}
+
+script TheUnder_EventScript_Jason{
+    trainerbattle_single(TRAINER_JASON, "Look at this cool POKéMON!", "I've never seen a POKéMON like that!")
     msgbox("I've never seen a POKéMON like that!", MSGBOX_NPC)
 	end
 }
