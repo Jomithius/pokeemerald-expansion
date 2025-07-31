@@ -391,7 +391,8 @@
 #define TRAINER_CLASS_NIGHTMARE      0x53
 #define TRAINER_CLASS_BLACK_MAGE     0x54
 #define TRAINER_CLASS_DISCIPLE       0x55
-#define TRAINER_CLASS_COUNT          0x56
+#define TRAINER_CLASS_SHADOW_CLONE   0x56
+#define TRAINER_CLASS_COUNT          0x57
 
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music

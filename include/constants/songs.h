@@ -593,6 +593,9 @@
 #define MUS_DECISIVE_BATTLE         655
 #define MUS_FF_VICTORY              656
 #define MUS_THE_DAY_WILL_COME       657
+#define MUS_VS_FF_BOSS              658
+#define MUS_VS_GILGAMESH            659
+#define MUS_ENCOUNTER_EXDEATH       660
 
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

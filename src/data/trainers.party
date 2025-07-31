@@ -763,8 +763,64 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Yellow
 
-Spiritomb
-Level: 5
+Spiritomb (F) @ Leftovers  
+Ability: Pressure  
+Tera Type: Water  
+EVs: 252 HP / 156 Def / 100 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Dark Pulse  
+- Pain Split  
+- Shadow Ball  
+- Will-O-Wisp  
+
+Roserade (F) @ Black Sludge  
+Ability: Poison Point  
+Tera Type: Steel  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Sludge Bomb  
+- Toxic Spikes  
+- Extrasensory  
+
+Togekiss (M) @ Heavy-Duty Boots  
+Ability: Serene Grace  
+Tera Type: Fairy  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Defog  
+- Air Slash  
+- Aura Sphere  
+- Dazzling Gleam  
+
+Lucario (M) @ Air Balloon  
+Ability: Inner Focus  
+Tera Type: Fighting  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Aura Sphere  
+- Dragon Pulse  
+- Extreme Speed  
+- Flash Cannon  
+
+Milotic (F) @ Flame Orb  
+Ability: Marvel Scale  
+Tera Type: Water  
+IVs: 0 Atk  
+- Surf  
+- Ice Beam  
+- Mirror Coat  
+- Aqua Ring  
+
+Garchomp (F) @ Garchompite  
+Ability: Rough Skin  
+- Dragon Rush  
+- Earthquake  
+- Stone Edge  
+- Iron Head  
 
 === TRAINER_TODD ===
 Name: TODD
@@ -4084,7 +4140,7 @@ Pic: James
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer Ace
 Mugshot: Blue
 
 Gigalith (M) @ Custap Berry  
@@ -4127,18 +4183,7 @@ Adamant Nature
 - Bulk Up  
 - Supercell Slam  
 - Cross Chop  
-- Trailblaze  
-
-Typhlosion (M) @ Typhlosionite 
-Ability: Flash Fire 
-Level: 50  
-EVs: 4 HP / 252 SpA / 252 Spe  
-Modest Nature  
-IVs: 0 Atk / 30 Def  
-- Eruption  
-- Overheat  
-- Scorching Sands  
-- Hidden Power  
+- Trailblaze   
 
 Haxorus (M) @ Leftovers  
 Ability: Rivalry  
@@ -4148,7 +4193,18 @@ Jolly Nature
 - Swords Dance  
 - Outrage  
 - Earthquake  
-- Iron Head  
+- Iron Head 
+
+Typhlosion-Hisui (M) @ Typhlosionite 
+Ability: Frisk 
+Level: 50  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk / 30 Def  
+- Eruption  
+- Overheat  
+- Scorching Sands  
+- Infernal Parade 
 
 === TRAINER_RATDUARDO_3 ===
 Name: RATDUARDO
@@ -4868,17 +4924,17 @@ IVs: 0 Atk
 - Earth Power  
 - Focus Blast  
 
-Malamar (M) @ Life Orb  
-Ability: Contrary  
+Meganium (F) @ Meganiumite 
+Ability: Overgrow  
 Level: 75   
-EVs: 252 Atk / 68 SpD / 188 Spe  
-Adamant Nature  
-- Superpower  
-- Knock Off  
-- Psycho Cut  
-- Return  
+EVs: 252 HP / 252 SpA / 4 SpD   
+Modest Nature  
+- Sludge Bomb 
+- Leech Seed  
+- Giga Drain  
+- Toxic  
 
-Gardevoir (M) @ Gardevoirite  
+Gardevoir (M) @ Fairy Feather 
 Ability: Trace 
 Level: 75  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -5045,18 +5101,8 @@ Pic: Leader Brawly
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer Ace
 Mugshot: Green
-
-POOBLES (Diglett-Alola) @ Rocky Helmet  
-Ability: Tangling Hair  
-Level: 19  
-EVs: 8 HP / 236 Atk / 4 SpD / 252 Spe  
-Jolly Nature  
-- Metal Claw  
-- Aerial Ace  
-- Sucker Punch  
-- Bulldoze
 
 Drifloon @ Sitrus Berry  
 Ability: Unburden  
@@ -5100,15 +5146,24 @@ Adamant Nature
 - Shadow Sneak  
 
 Cinccino @ Muscle Band  
-Ability: Technician  
+Ability: Cute Charm 
 Level: 19  
-EVs: 248 HP / 128 Atk / 8 Def / 8 SpD / 116 Spe  
+EVs: 248 HP / 128 Atk
 Adamant Nature  
 IVs: 0 SpA  
 - Tail Slap  
 - Rock Blast  
-- Bullet Seed  
-- Dazzling Gleam  
+- Bullet Seed   
+
+POOBLES (Diglett-Alola) @ Rocky Helmet  
+Ability: Tangling Hair  
+Level: 19  
+EVs: 8 HP / 236 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Metal Claw  
+- Aerial Ace  
+- Rock Tomb  
+- Bulldoze
 
 === TRAINER_WATTSON_1 ===
 Name: DACA
@@ -12641,8 +12696,8 @@ Careful Nature
 - Play Rough  
 - Foul Play  
 
-Typhlosion (M) @ Assault Vest  
-Ability: Blaze  
+Typhlosion-Hisui (M) @ Assault Vest  
+Ability: Frisk  
 Level: 38    
 EVs: 8 HP / 4 Def / 252 SpA / 244 Spe  
 Timid Nature  
@@ -14084,13 +14139,17 @@ Music: Intense
 Double Battle: Yes
 AI: Basic Trainer
 
-Blaziken @ Blazikenite
+Lucario @ Lucarionite
+Level: 100
 
 Emboar
+Level: 100
 
 Infernape
+Level: 100
 
 Coalossal
+Level: 100
 
 === TRAINER_KENNETH ===
 Name: KENNETH
@@ -15588,14 +15647,14 @@ Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ROXANNE_2 ===
-Name: ROXANNE
+Name: STEVE
 Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Yellow
 
 Golem
 Level: 32
@@ -15604,30 +15663,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rollout
 - Magnitude
 - Explosion
-
-Kabuto @ Sitrus Berry
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Ice Beam
-- Surf
-- Rock Slide
-
-Onix
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
-- Explosion
-- Roar
-- Rock Slide
-
-Nosepass @ Sitrus Berry
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Team
-- Explosion
-- Protect
-- Rock Slide
 
 === TRAINER_ROXANNE_3 ===
 Name: ROXANNE
@@ -15788,14 +15823,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 === TRAINER_BRAWLY_2 ===
-Name: BRAWLY
+Name: LIAM
 Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Green
 
 Machamp @ Sitrus Berry
 Level: 33
@@ -15804,30 +15839,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Focus Punch
 - Bulk Up
-
-Meditite
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Light Screen
-- Reflect
-- Focus Punch
-
-Hitmontop
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Pursuit
-- Counter
-- Protect
-- Triple Kick
-
-Hariyama @ Sitrus Berry
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fake Out
-- Focus Punch
-- Belly Drum
-- Earthquake
 
 === TRAINER_BRAWLY_3 ===
 Name: BRAWLY
@@ -15980,14 +15991,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 
 === TRAINER_WATTSON_2 ===
-Name: WATTSON
+Name: DACA
 Class: Leader
 Pic: Leader Wattson
-Gender: Male
-Music: Male
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Green
 
 Mareep
 Level: 36
@@ -15996,30 +16007,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Thunder Wave
 - Light Screen
-
-Electrode
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
-
-Magneton @ Sitrus Berry
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
-
-Manectric @ Sitrus Berry
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Thunder Wave
-- Thunder
-- Protect
 
 === TRAINER_WATTSON_3 ===
 Name: WATTSON
@@ -16180,14 +16167,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 
 === TRAINER_FLANNERY_2 ===
-Name: FLANNERY
+Name: KAI
 Class: Leader
 Pic: Leader Flannery
 Gender: Female
 Music: Female
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Pink
 
 Magcargo @ White Herb
 Level: 38
@@ -16388,14 +16375,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Attract
 
 === TRAINER_NORMAN_2 ===
-Name: NORMAN
+Name: LUNA
 Class: Leader
-Pic: Leader Norman
-Gender: Male
-Music: Male
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Pic: Luna
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Pink
 
 Chansey
 Level: 42
@@ -16404,30 +16391,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sing
 - Skill Swap
 - Focus Punch
-
-Slaking @ Sitrus Berry
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Blizzard
-- Shadow Ball
-- Double Edge
-- Fire Blast
-
-Spinda
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Teeter Dance
-- Skill Swap
-- Facade
-- Hypnosis
-
-Slaking @ Sitrus Berry
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Flamethrower
-- Thunderbolt
-- Shadow Ball
 
 === TRAINER_NORMAN_3 ===
 Name: NORMAN
@@ -16588,14 +16551,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
 
 === TRAINER_WINONA_2 ===
-Name: WINONA
+Name: MICKEY
 Class: Leader
 Pic: Leader Winona
-Gender: Female
-Music: Female
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer / Risky
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Blue
 
 Dratini @ Sitrus Berry
 Level: 40
@@ -16811,171 +16774,43 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Dance
 - Earthquake
 
-=== TRAINER_TATE_AND_LIZA_2 ===
+=== TRAINER_ARIA ===
 Name: ARIA
 Class: Knight
 Pic: Aria
 Gender: Male
-Music: Female
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Blue
 
-Slowpoke
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Yawn
-- Psychic
-- Calm Mind
-- Protect
+Totodile-Partner @ Sacred Blade
+Level: 5
 
-Claydol
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Ancient Power
-- Psychic
-- Light Screen
-
-Xatu @ Chesto Berry
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Rest
-- Confuse Ray
-- Calm Mind
-
-Lunatone @ Chesto Berry
-Level: 50
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Psychic
-- Rest
-- Calm Mind
-
-Solrock @ Sitrus Berry
-Level: 50
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
-
-=== TRAINER_TATE_AND_LIZA_3 ===
+=== TRAINER_MOMO ===
 Name: MOMO
 Class: Ninja
 Pic: Momo
-Gender: Male
+Gender: Female
 Music: Female
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Blue
 
-Drowzee
+Dragonite @ Dragoniteite
 Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hypnosis
-- Dream Eater
-- Headbutt
-- Protect
 
-Slowpoke
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Yawn
-- Psychic
-- Calm Mind
-- Protect
-
-Claydol
-Level: 54
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Explosion
-- Psychic
-- Light Screen
-
-Xatu @ Chesto Berry
-Level: 54
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Rest
-- Confuse Ray
-- Calm Mind
-
-Lunatone @ Chesto Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Psychic
-- Rest
-- Calm Mind
-
-Solrock @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
-
-=== TRAINER_TATE_AND_LIZA_4 ===
-Name: TATE&LIZA
-Class: Leader
-Pic: Leader Tate And Liza
-Gender: Male
+=== TRAINER_SHADOW_CLONE_MOMO ===
+Name: MOMO
+Class: Shadow Clone
+Pic: Momo
+Gender: Female
 Music: Female
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Double Battle: No
+AI: Basic Trainer / Risky
 
-Hypno
+Altaria @ Altarianite
 Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hypnosis
-- Dream Eater
-- Headbutt
-- Protect
-
-Claydol
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Explosion
-- Psychic
-- Light Screen
-
-Slowpoke
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Yawn
-- Psychic
-- Calm Mind
-- Protect
-
-Xatu @ Chesto Berry
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Rest
-- Confuse Ray
-- Calm Mind
-
-Lunatone @ Chesto Berry
-Level: 60
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Psychic
-- Rest
-- Calm Mind
-
-Solrock @ Sitrus Berry
-Level: 60
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
 
 === TRAINER_TATE_AND_LIZA_5 ===
 Name: TATE&LIZA
@@ -17036,54 +16871,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flamethrower
 
 === TRAINER_JUAN_2 ===
-Name: JUAN
+Name: JOEY
 Class: Leader
 Pic: Leader Juan
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
-AI: Basic Trainer
+Double Battle: No
+AI: Smart Trainer
 
-Poliwag
-Level: 46
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hypnosis
-- Rain Dance
-- Protect
-- Hydro Pump
-
-Whiscash
-Level: 46
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Pulse
-- Double Team
-- Fissure
-
-Walrein
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Body Slam
-- Protect
-- Ice Beam
-
-Crawdaunt @ Chesto Berry
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rest
-- Crabhammer
-- Taunt
-- Double Team
-
-Kingdra @ Chesto Berry
-Level: 51
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Double Team
-- Ice Beam
-- Rest
+Mawile @ Mawilite
+Level: 100
 
 === TRAINER_JUAN_3 ===
 Name: JUAN
@@ -17519,26 +17316,18 @@ Squawkabilly
 Level: 100
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_ANDRES_5 === /* FREE */
-Name: ANDRES
-Class: Ruin Maniac
-Pic: Ruin Maniac
+=== TRAINER_MISA_2 ===
+Name: MISA
+Class: Elite Four
+Pic: Misa
 Gender: Male
-Music: Hiker
-Double Battle: No
-AI: Check Bad Move
+Music: Elite Four
+Double Battle: Yes
+AI: Smart Trainer
+Mugshot: Blue
 
-Nosepass
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Sandslash
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Sandslash
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Audino @ Audinite
+Level: 5
 
 === TRAINER_CORY_2 ===
 Name: CORY
@@ -17704,95 +17493,83 @@ Starmie
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_KOJI_2 === /* FREE */
-Name: KOJI
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Machoke
-Level: 37
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Machoke
-Level: 37
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_KOJI_3 === /* FREE */
-Name: KOJI
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Makuhita
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Machoke
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Machoke
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_KOJI_4 === /* FREE */
-Name: KOJI
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Hariyama
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Machoke
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Machoke
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_KOJI_5 === /* FREE */
-Name: KOJI
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Hariyama
-Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Machamp
-Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Machamp
-Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-=== TRAINER_CRISTIN_2 === /* FREE */
-Name: CRISTIN
-Class: Cooltrainer
-Pic: Cooltrainer F
+=== TRAINER_LINA ===
+Name: LINA
+Class: Elite Four
+Pic: Elite Four Phoebe
 Gender: Female
-Music: Cool
-Items: Hyper Potion
+Music: Elite Four
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
+Mugshot: Pink
+
+Luxray @ Luxrite
+
+=== TRAINER_XION ===
+Name: XION
+Class: Elite Four
+Pic: Elite Four Glacia
+Gender: Female
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Blue
+
+Meganium @ Meganiumite
+Level: 5
+
+=== TRAINER_DAVE ===
+Name: DAVE
+Class: Black Mage
+Pic: Elite Four Drake
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Yellow
+
+Banette @ Banettite
+
+=== TRAINER_JIMMY ===
+Name: JIMMY
+Class: Ceo
+Pic: Ceo
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer Ace
+Mugshot: Purple
+
+Typhlosion @ Typhlosionite
+Level: 5
+
+Metapod
+Level: 1
+
+Metapod
+Level: 1
+
+Metapod
+Level: 1
+
+Metapod
+Level: 1
+
+Metapod
+Level: 1
+
+Avatar
+Level: 1
+
+=== TRAINER_BENNIS_4 ===
+Name: BENNIS
+Class: Master
+Pic: Bennis
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Blue
 
 Loudred
 Level: 35
@@ -18293,14 +18070,68 @@ Music: Male
 Double Battle: No
 Mugshot: Yellow
 
-Typhlosion @ Typhlosionite
-Level: 5
+Pikachu-Partner @ Light Ball  
+Ability: Static  
+Tera Type: Flying  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Volt Tackle  
+- Iron Tail  
+- Fake Out  
+- Play Rough  
 
-Avatar
+Venusaur @ Black Sludge  
+Ability: Chlorophyll  
+Tera Type: Poison  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Earth Power  
+- Leech Seed  
+- Sludge Bomb  
 
-Pikachu
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Charizard @ Charizardite Y  
+Ability: Blaze   
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Weather Ball  
+- Air Slash  
+- Scorching Sands  
+- Dragon Pulse  
+
+Blastoise @ White Herb  
+Ability: Torrent  
+Tera Type: Water  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Shell Smash  
+- Flash Cannon  
+- Hydro Pump  
+- Weather Ball  
+
+Lapras @ Assault Vest  
+Ability: Water Absorb  
+Tera Type: Fairy  
+EVs: 248 HP / 252 SpA / 8 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Hydro Pump  
+- Blizzard  
+- Haze  
+- Heal Bell  
+
+Snorlax @ Sitrus Berry  
+Ability: Gluttony  
+Tera Type: Ghost  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Belly Drum  
+- Body Slam  
+- Earthquake  
+- Zen Headbutt  
 
 === TRAINER_LEAF ===
 Name: LEAF
@@ -18316,7 +18147,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRENDAN_PLACEHOLDER ===
 Name: BRENDAN
-Class: Ceo
+Class: Rival
 Pic: RS Brendan
 Gender: Male
 Music: Male

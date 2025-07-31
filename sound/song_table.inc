@@ -659,6 +659,9 @@ gSongTable::
 	song mus_decisive_battle, 0, 0
 	song mus_ff_victory, 0, 0
 	song mus_the_day_will_come, 0, 0
+	song mus_vs_ff_boss, 0, 0
+	song mus_vs_gilgamesh, 0, 0
+	song mus_encounter_exdeath, 0, 0
 
 	.align 2
 dummy_song_header:

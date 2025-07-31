@@ -5815,6 +5815,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_MAGMA_ADMIN:
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_LEADER:
+            if (FlagGet(FLAG_SYS_FINAL_REMATCH))
+                return MUS_FINAL_BATTLE;
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_GYM_LEADER;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleLunaName))
@@ -5840,19 +5842,23 @@ u16 GetBattleBGM(void)
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleEugeniaName))
-                return MUS_FINAL_BATTLE;
+                return MUS_DECISIVE_BATTLE;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleDaveName))
                 return MUS_FF_BATTLE;
+            if (FlagGet(FLAG_SYS_FINAL_REMATCH))
+                return MUS_VS_FRONTIER_BRAIN;
             return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_RAT_MANIAC:
             return MUS_VS_RATDUARDO; 
         case TRAINER_CLASS_BLACK_MAGE:
-            return MUS_DECISIVE_BATTLE;
+            return MUS_VS_FF_BOSS;
         case TRAINER_CLASS_CEO:
             return MUS_EXDEATH; 
         case TRAINER_CLASS_MASTER:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBrunoName))
                 return MUS_RG_VS_GYM_LEADER;
+            if(FlagGet(FLAG_SYS_FINAL_REMATCH) && !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBennisName))
+                return MUS_VS_GILGAMESH;
             return MUS_BENNIS; 
         case TRAINER_CLASS_CHIEF:
             return MUS_RG_VS_GYM_LEADER;
@@ -5866,9 +5872,15 @@ u16 GetBattleBGM(void)
                 return MUS_RG_VS_TRAINER;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleSpeedwagonName))
                 return MUS_RG_VS_GYM_LEADER;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
+                return MUS_RG_VS_GYM_LEADER;
             return MUS_RG_VS_TRAINER; 
         case TRAINER_CLASS_NIGHTMARE:
-            return MUS_RG_LAVENDER;       
+            return MUS_RG_LAVENDER;
+        case TRAINER_CLASS_KNIGHT:
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleAriaName))
+                return MUS_RG_VS_GYM_LEADER;
+            return MUS_VS_TRAINER;       
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:
         case TRAINER_CLASS_PALACE_MAVEN:

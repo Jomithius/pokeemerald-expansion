@@ -56,6 +56,225 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
 {
     [DIFFICULTY_NORMAL] =
     {
+        [TRAINER_MAY_ROUTE_103_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("Wow!\nYou know type-effectiveness already?!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRENDAN_ROUTE_103_TREECKO] =
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("You learned type-effectiveness\nalready?{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_JOMITHIUS] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Impossible… Has my control over\nthe void weakened?{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_ROXANNE_1] = // Steven
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_STAB_MOVE] = COMPOUND_STRING("Wow! You know what STAB is already?\nThat's sick!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Okay!\nThings are really heating up!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_MAY_RUSTBORO_TORCHIC] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow, {PLAYER}!\n You're this strong already!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You're this strong already?!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRAWLY_1] = // Liam
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I may be down, but not out!\nLet's do this, POOBLES!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_MAY_ROUTE_110_TORCHIC] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Haha…\nI might lose again!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I might lose again?!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WATTSON_1] = // Daca
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hahaha!\nNow it's really a party!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_JOMITHIUS_2] = // Jomithius Route 112
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is the moment where I reveal\nmy true power!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_FLANNERY_1] = // Kai
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow!\nI'm in HELL'S KITCHEN!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_NORMAN_1] = // Luna
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I can't lose…\nLosing is cringe.{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_MAY_ROUTE_119_TORCHIC] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow {PLAYER}!\nYou're stronger than ever!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRENDAN_ROUTE_119_TREECKO] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You're stronger than ever!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WINONA_1] = // Mickey
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I'm down to my last dog!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_JOMITHIUS_3] = // Jomithius Mt Pyre
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I still haven't lost yet!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_MAY_LILYCOVE_TORCHIC] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Haha, uh-oh…\nThis might be it!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRENDAN_LILYCOVE_TREECKO] =
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Dang… Is this it?{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_TATE_AND_LIZA_1] = // Momo & Aria
+        {
+            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("ARIA: Ah! Impossible!\nMOMO: …{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_JUAN_1] = // Joey
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Yeheeaaaaaaaaaaaah!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_JOMITHIUS_4] = // James
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("{PLAYER}…\nI respect your strength.\pThat's why we're not going to hold\nanything back.{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("{PLAYER}!\nLet me show you our new strength!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_ROXANNE_2] = // Steven
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Haha!\nWe're getting fired up now!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRAWLY_2] = // Liam
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Alright, POOBS!\nTime to show your true power!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WATTSON_2] = // Daca
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Hahaha!\nIt's time to party!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_FLANNERY_2] = // Kai
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay!\nI'm ready to cook!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_NORMAN_2] = // Luna
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, LOPUNNY.\nJust uh, MEGA EVOLVE or something.{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WINONA_2] = // Mickey
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("It's time to let the dogs out!\nAWOOOOOOOOOOOO!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_MOMO] = // Momo
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Oho. I'm gettin' good vibrations from\nthis place.{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_SHADOW_CLONE_MOMO] = // Momo
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("………………\nMeow.{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_ARIA] = // Aria
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TOTODILE!\nIt's time to draw the SACRED BLADE!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_JUAN_2] = // Joey
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Yeheheeeaaaaaaaaaaaaaaaah!\nYAH YEEEET!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_SIDNEY] = // Misa
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, AUDINO!\nIt's time to S-MOTHER!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_MISA_2] = // Misa
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, AUDINO!\nThis time we'll S-MOTHER them!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_PHOEBE] = // Lina
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("ALUXRA!\n Get this over with! Hmph!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_LINA] = // Lina
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("ALUXRA!\n Get this over with! Hmph!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_EUGENIA] = // Eugenia
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("ALUXRA!\nFuck them up! Hmph!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_GLACIA] = // Xion
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("MEGANIUM!\nMatch my freak!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_XION] = // Xion
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("MEGANIUM!\nMatch my freak!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_DRAKE] = // Dave
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Please lose now, okay?{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_DAVE] = // Dave
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("MIKE TRUK, make them lose!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WALLACE] = // Jimmy
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION!\nShow them the power of a CEO!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_JIMMY] = // Jimmy
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION!\nShow them the power of a CEO!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You've done well so far…\nBut are you ready for this?{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRUNO] = // Bruno
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Hm.\nI feel like I can go all out!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_RATDUARDO_FULLMOON_ISLAND] = // Ratduardo
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Help… Please… Help me…{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_RATDUARDO_NEWMOON_ISLAND] = // Ratduardo
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Help… Can't escape…{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_CHANNELER_NEWMOON_ISLAND] = // Nightmare
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("You… Can't escape…{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BENNIS_4] = // Bennis
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Oho.\nThese are some nice vibrations.{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_RED] = // Red
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("…{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_CYNTHIA] = // Cynthia
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("My heart is still racing, even now…\nWhat are you?{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_STEVEN] = // Steven
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Alright!\nMy POKéMON are ROCK HARD!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WALLY_VR_2] = // Wally
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GARDEVOIR!\nGo!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BRENDAN_PLACEHOLDER] =
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Let's go, SCEPTILE!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_MAY_PLACEHOLDER] =
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay then!\n Let's go, BLAZIKEN!{PAUSE_UNTIL_PRESS}"),
+        },
     },
 };
 

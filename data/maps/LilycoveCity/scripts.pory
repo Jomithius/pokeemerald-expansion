@@ -813,7 +813,7 @@ script LilycoveCity_EventScript_EmoBully{
     removeobject(24)
     removeobject(25)
     removeobject(26)
-    playbgm(MUS_END, FALSE)
+    playbgm(MUS_THE_DAY_WILL_COME, FALSE)
     applymovement(27, Common_Movement_WalkInPlaceRight)
     waitmovement(27)
     applymovement(28, Common_Movement_WalkInPlaceUp)

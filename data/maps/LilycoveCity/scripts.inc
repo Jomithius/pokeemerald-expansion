@@ -1623,7 +1623,7 @@ LilycoveCity_EventScript_EmoBully::
 # 815 "data/maps/LilycoveCity/scripts.pory"
 	removeobject 26
 # 816 "data/maps/LilycoveCity/scripts.pory"
-	playbgm MUS_END, FALSE
+	playbgm MUS_THE_DAY_WILL_COME, FALSE
 # 817 "data/maps/LilycoveCity/scripts.pory"
 	applymovement 27, Common_Movement_WalkInPlaceRight
 # 818 "data/maps/LilycoveCity/scripts.pory"

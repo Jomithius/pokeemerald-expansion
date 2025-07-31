@@ -797,9 +797,9 @@
 #define TRAINER_WINONA_3                    791
 #define TRAINER_WINONA_4                    792
 #define TRAINER_WINONA_5                    793
-#define TRAINER_TATE_AND_LIZA_2             794
-#define TRAINER_TATE_AND_LIZA_3             795
-#define TRAINER_TATE_AND_LIZA_4             796
+#define TRAINER_ARIA                        794
+#define TRAINER_MOMO                        795
+#define TRAINER_SHADOW_CLONE_MOMO           796
 #define TRAINER_TATE_AND_LIZA_5             797
 #define TRAINER_JUAN_2                      798
 #define TRAINER_JUAN_3                      799
@@ -818,7 +818,7 @@
 #define TRAINER_GOHANA                      812
 #define TRAINER_PAMUEL                      813
 #define TRAINER_JASON                       814
-#define TRAINER_ANDRES_5                    815 // free
+#define TRAINER_MISA_2                      815
 #define TRAINER_CORY_2                      816
 #define TRAINER_CORY_3                      817
 #define TRAINER_CORY_4                      818
@@ -827,14 +827,14 @@
 #define TRAINER_PABLO_3                     821
 #define TRAINER_PABLO_4                     822
 #define TRAINER_PABLO_5                     823
-#define TRAINER_KOJI_2                      824 // free
-#define TRAINER_KOJI_3                      825 // free
-#define TRAINER_KOJI_4                      826 // free
-#define TRAINER_KOJI_5                      827 // free
-#define TRAINER_CRISTIN_2                   828
-#define TRAINER_CRISTIN_3                   829
-#define TRAINER_CRISTIN_4                   830
-#define TRAINER_CRISTIN_5                   831
+#define TRAINER_LINA                        824 
+#define TRAINER_XION                        825 
+#define TRAINER_DAVE                        826 
+#define TRAINER_JIMMY                       827
+#define TRAINER_BENNIS_4                    828
+#define TRAINER_CRISTIN_3                   829 // free
+#define TRAINER_CRISTIN_4                   830 // free
+#define TRAINER_CRISTIN_5                   831 // free
 #define TRAINER_FERNANDO_2                  832 // free
 #define TRAINER_FERNANDO_3                  833 // free
 #define TRAINER_FERNANDO_4                  834 // free

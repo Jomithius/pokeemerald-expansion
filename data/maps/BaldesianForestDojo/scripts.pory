@@ -240,7 +240,7 @@ script BaldesianForestDojo_EventScript_GiveProtectivePads{
     lock
     msgbox("Kahahaha! Great job!\n
         You actually beat BRUNO!\p
-        Here's your reward!", MSGBOX_AUTOCLOSE)
+        Here's your prize!", MSGBOX_AUTOCLOSE)
     waitmessage
     checkitemspace(ITEM_PROTECTIVE_PADS)
     if(var(VAR_RESULT) == TRUE){
@@ -263,6 +263,7 @@ script BaldesianForestDojo_EventScript_Bruno{
     lock
     faceplayer
     goto_if_le(VAR_BALDESIA_FOREST_DOJO_STATE, 3, BaldesianForestDojo_EventScript_BrunoAChallenger)
+    goto_if_unset(FLAG_RECEIVED_PROTECTIVE_PADS, BaldesianForestDojo_EventScript_BrunoGoRecieveYourPrize)
     goto_if_unset(FLAG_SYS_DEFEATED_BRUNO, BaldesianForestDojo_EventScript_GiveKubfu)
     goto_if_eq(VAR_BALDESIA_FOREST_DOJO_STATE, 4, BaldesianForestDojo_EventScript_GiveScroll)
     msgbox("I'll keep training.\n
@@ -271,6 +272,20 @@ script BaldesianForestDojo_EventScript_Bruno{
         of finding a sucessor…\p
         If only my younger brother wasn't\n
         MASTER BENNIS's disciple.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script BaldesianForestDojo_EventScript_BrunoGoRecieveYourPrize{
+    lock
+    faceplayer
+    msgbox("Hm?\n
+        {PLAYER}, did you get your prize already?\p
+        If you didn't, go talk to my mother at\n
+        the reception desk.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
@@ -636,7 +651,7 @@ script BaldesianForestDojo_EventScript_ChallengeBruno{
     fadedefaultbgm
     applymovement(LOCALID_BRUNO, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("{PLAYER}, was it? After you receive\n
+    msgbox("…{PLAYER}, was it? After you receive\n
         your prize, come talk to me.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_BRUNO, Common_Movement_WalkUp4)

@@ -364,7 +364,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_RAT_MANIAC] = { _("RAT MANIAC"), 5 },
     [TRAINER_CLASS_CHANNELER] = { _("CHANNELER"), 10 },
     [TRAINER_CLASS_KNIGHT] = { _("KNIGHT"), 15 },
-    [TRAINER_CLASS_NINJA] = { _("NINJA"), 10 },
+    [TRAINER_CLASS_NINJA] = { _("NINJA"), 15 },
     [TRAINER_CLASS_NERD] = { _("NERD"), 10 },
     [TRAINER_CLASS_CEO] = { _("CEO"), 60, BALL_MOON },
     [TRAINER_CLASS_MASTER] = { _("MASTER"), 20 },
@@ -374,6 +374,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_NIGHTMARE] = { _("NIGHTMARE"), 5 },
     [TRAINER_CLASS_BLACK_MAGE] = { _("BLACK MAGE"), 20, BALL_DUSK },
     [TRAINER_CLASS_DISCIPLE] = { _("DISCIPLE"), 20 },
+    [TRAINER_CLASS_SHADOW_CLONE] = { _("SHADOW CLONE"), 5 },
     
 };
 
@@ -5563,19 +5564,29 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_MAGMA_LEADER:
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
+        case TRAINER_CLASS_CHIEF:
+        case TRAINER_CLASS_SHADOW_CLONE:
         case TRAINER_CLASS_LEADER:
         case TRAINER_CLASS_MASTER:
             PlayBGM(MUS_VICTORY_GYM_LEADER);
             break;
         case TRAINER_CLASS_CHANNELER:
+        case TRAINER_CLASS_KNIGHT:
         case TRAINER_CLASS_KIMONO_LADY:
         case TRAINER_CLASS_KIMONO_WOMAN:
         case TRAINER_CLASS_NINJA:
         case TRAINER_CLASS_BIKER:
         case TRAINER_CLASS_DISCIPLE:
-        case TRAINER_CLASS_CHIEF:
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName) || !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleAriaName))
+            {
+                PlayBGM(MUS_VICTORY_GYM_LEADER);
+                break;
+            }
+            else
+            {
             PlayBGM(MUS_RG_VICTORY_TRAINER);
             break;
+            }
         default:
             PlayBGM(MUS_VICTORY_TRAINER);
             break;
