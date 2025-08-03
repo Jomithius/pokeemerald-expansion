@@ -1,10 +1,20 @@
 raw`DewfordTown_Gym_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, DewfordTown_Gym_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, DewfordTown_Gym_OnTransition
 	.byte 0
 
+DewfordTown_Gym_OnResume:
+	call_if_defeated TRAINER_BRAWLY_2, DewfordTown_Gym_EventScript_RemoveGymLeaderPkmn
+	end
+
 DewfordTown_Gym_OnTransition:
+	call_if_set FLAG_HIDE_GYM_LEADERS, DewfordTown_Gym_EventScript_RemoveGymLeaderPkmn
 	call DewfordTown_Gym_EventScript_SetFlashLevel
 	end
+
+DewfordTown_Gym_EventScript_RemoveGymLeaderPkmn:
+	removeobject 7
+	return
 
 DewfordTown_Gym_EventScript_SetFlashLevel::
 	goto_if_defeated TRAINER_BRAWLY_1, DewfordTown_Gym_EventScript_SetLightsOn
@@ -127,6 +137,8 @@ DewfordTown_Gym_EventScript_StopCountingTrainers::
 	return
 
 DewfordTown_Gym_EventScript_Brawly::
+	goto_if_defeated TRAINER_BRAWLY_2, DewfordTown_Gym_EventScript_BrawlyDefeatedFinal2
+	goto_if_set FLAG_SYS_FINAL_REMATCH, DewfordTown_Gym_EventScript_Brawly_FinalBattle
 	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
@@ -438,4 +450,27 @@ script DewfordTown_Gym_EventScript_PooblesDugtrio{
     waitmessage
     release
     end
+}
+
+script DewfordTown_Gym_EventScript_Brawly_FinalBattle{
+	trainerbattle_single(TRAINER_BRAWLY_2, "Hello, {PLAYER}.\nCongratulations on becoming CHAMPION.\pAlright! It's time to show you how strong\n POOBLES and I have gotten!", "How could you do that to POOBLES…", DewfordTown_Gym_EventScript_BrawlyDefeatedFinal)
+	end
+}
+
+script DewfordTown_Gym_EventScript_BrawlyDefeatedFinal{
+	addvar(VAR_GYM_LEADER_COUNT, 1)
+	msgbox("Wow.\n
+		That was impressive, {PLAYER}!\p
+		You even beat POOBLES at\n
+		full power!", MSGBOX_NPC)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	end
+}
+
+script DewfordTown_Gym_EventScript_BrawlyDefeatedFinal2{
+	msgbox("Wow.\n
+		That was impressive, {PLAYER}!\p
+		You even beat POOBLES at\n
+		full power!", MSGBOX_NPC)
+	end
 }

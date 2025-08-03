@@ -585,6 +585,7 @@ extern const u8 MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall[];
 extern const u8 SSTidalCorridor_EventScript_ReachedStepCount[];
 extern const u8 EventScript_FallDownHoleMtPyre[];
 extern const u8 Route135_Lab_EventScript_JamesCallsPlayerAreaZero[];
+extern const u8 EventScript_FinalRematchesUnlocked[];
 
 // Secret Base
 extern const u8 SecretBase_EventScript_PC[];
@@ -666,5 +667,6 @@ extern const u8 EventScript_MovedTooFast[];
 
 extern const u8 EventScript_Fantasia[];
 extern const u8 EventScript_RegionMapNHoenn[];
+extern const u8 EventScript_UnlockEliteFourFinalRematch[];
 
 #endif // GUARD_EVENT_SCRIPTS_H

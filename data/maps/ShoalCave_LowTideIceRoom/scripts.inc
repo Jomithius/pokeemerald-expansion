@@ -31,7 +31,7 @@ ShoalCave_LowTideIceRoom_EventScript_Blake::
 
 ShoalCave_LowTideIceRoom_Trigger_Aria::
 # 26 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	lock
+	lockall
 # 27 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	playse SE_M_DOUBLE_TEAM
 # 28 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
@@ -45,7 +45,7 @@ ShoalCave_LowTideIceRoom_Trigger_Aria::
 # 34 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitmovement 0
 # 35 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	release
+	releaseall
 	end
 
 
@@ -63,7 +63,7 @@ ShoalCave_LowTideIceRoom_EventScript_Aria::
 # 45 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitse
 # 46 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	playmoncry SPECIES_TOTOKNIGHT, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER
 # 47 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	msgbox ShoalCave_LowTideIceRoom_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
 # 49 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
@@ -145,18 +145,18 @@ ShoalCave_LowTideIceRoom_EventScript_AriaPosition1::
 	compare VAR_TEMP_1, DIR_WEST
 	goto_if_eq ShoalCave_LowTideIceRoom_EventScript_AriaPosition1_3
 # 94 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, ShoalCave_LowTideIceRoom_Movement_WalkBackRight
+	applymovement VAR_LAST_TALKED, ShoalCave_LowTideIceRoom_Movement_WalkBackRight
 ShoalCave_LowTideIceRoom_EventScript_AriaPosition1_1:
 	return
 
 ShoalCave_LowTideIceRoom_EventScript_AriaPosition1_2:
 # 88 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, ShoalCave_LowTideIceRoom_Movement_WalkBackDown
+	applymovement VAR_LAST_TALKED, ShoalCave_LowTideIceRoom_Movement_WalkBackDown
 	goto ShoalCave_LowTideIceRoom_EventScript_AriaPosition1_1
 
 ShoalCave_LowTideIceRoom_EventScript_AriaPosition1_3:
 # 91 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, ShoalCave_LowTideIceRoom_Movement_WalkBackLeft
+	applymovement VAR_LAST_TALKED, ShoalCave_LowTideIceRoom_Movement_WalkBackLeft
 	goto ShoalCave_LowTideIceRoom_EventScript_AriaPosition1_1
 
 
@@ -168,30 +168,30 @@ ShoalCave_LowTideIceRoom_EventScript_AriaPosition2::
 	compare VAR_TEMP_1, DIR_WEST
 	goto_if_eq ShoalCave_LowTideIceRoom_EventScript_AriaPosition2_3
 # 111 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, Common_Movement_WalkLeft
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkLeft
 # 112 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	waitmovement 3
+	waitmovement VAR_LAST_TALKED
 # 113 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, Common_Movement_FaceLeft
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceLeft
 ShoalCave_LowTideIceRoom_EventScript_AriaPosition2_1:
 	return
 
 ShoalCave_LowTideIceRoom_EventScript_AriaPosition2_2:
 # 101 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, Common_Movement_WalkUp
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkUp
 # 102 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	waitmovement 3
+	waitmovement VAR_LAST_TALKED
 # 103 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, Common_Movement_FaceUp
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceUp
 	goto ShoalCave_LowTideIceRoom_EventScript_AriaPosition2_1
 
 ShoalCave_LowTideIceRoom_EventScript_AriaPosition2_3:
 # 106 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, Common_Movement_WalkRight
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkRight
 # 107 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	waitmovement 3
+	waitmovement VAR_LAST_TALKED
 # 108 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	applymovement 3, Common_Movement_FaceRight
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceRight
 	goto ShoalCave_LowTideIceRoom_EventScript_AriaPosition2_1
 
 

@@ -95,7 +95,7 @@
 #define VAR_POKELOT_RND1                                 0x404B
 #define VAR_POKELOT_RND2                                 0x404C
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
-#define VAR_BENNIS_DOJO_STATE                            0x404E // 0-2 Bennis First Battle, 2-3 Bennis Fallarbor, 3-4 Victory Road, 4
+#define VAR_BENNIS_DOJO_STATE                            0x404E // 0-2 Bennis First Battle, 2-3 Bennis Fallarbor, 3-4 Victory Road, 4-5 Final rematch, 5
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051
@@ -144,9 +144,9 @@
 #define VAR_ROUTE129_STATE                               0x407C // Unused Var
 #define VAR_ROUTE130_STATE                               0x407D // Unused Var
 #define VAR_ROUTE131_STATE                               0x407E // Unused Var
-#define VAR_ROUTE132_STATE                               0x407F // Unused Var
-#define VAR_ROUTE133_STATE                               0x4080 // Unused Var
-#define VAR_ROUTE134_STATE                               0x4081 // Unused Var
+#define VAR_GYM_LEADER_COUNT                             0x407F // For final rematches
+#define VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER        0x4080 // For unlocking rematches post game
+#define VAR_FINAL_REMATCH_STATE                          0x4081 // For unlocking rematches post game
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
 #define VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER            0x4083 // Area Zero Call
 #define VAR_BIRCH_LAB_STATE                              0x4084
@@ -172,7 +172,7 @@
 #define VAR_PETALBURG_WOODS_STATE                        0x4098
 #define VAR_LILYCOVE_CONTEST_LOBBY_STATE                 0x4099
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
-#define VAR_MOMO_ARIA_STATE                              0x409B // 0-1 Shoal Cave Ice Floor, 1-2 Baldesia Zorua, 2-3 Panini, 3-5 Main House CS, 5-6 Route 139, 6-7 Jirachis altar, 7-8 Main House cs, 9
+#define VAR_MOMO_ARIA_STATE                              0x409B // 0-1 Shoal Cave Ice Floor, 1-2 Baldesia Zorua, 2-3 Panini, 3-5 Main House CS, 5-6 Route 139, 6-7 Jirachis altar, 7-8 Main House cs, 9-11 Aria Mossdeep
 #define VAR_ELITE_4_STATE                                0x409C
 #define VAR_AZURE_MOUNTAIN_PEAK_STATE                    0x409D // 0-1 Red Battle
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E

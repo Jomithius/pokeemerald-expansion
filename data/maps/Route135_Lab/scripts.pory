@@ -234,7 +234,9 @@ script Route135_Lab_EventScript_EndUltraSpace{
     setflag(FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE)
     clearflag(FLAG_HIDE_PROF_ROUTE_135_LAB)
     setvar(VAR_ULTRA_SPACE_STATE, 4)
-    setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0) // if player already defeated Red before ultra space, field special will update sidequest instead
+    setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0) // if player already defeated Red before ultra space. for field special
+    addvar(VAR_FINAL_REMATCH_STATE, 1)
+    setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
     setrespawn(HEAL_LOCATION_ROUTE135)
     warp(MAP_ROUTE135, 8, 10)
     waitstate

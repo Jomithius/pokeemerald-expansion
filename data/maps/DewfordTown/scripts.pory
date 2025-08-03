@@ -811,7 +811,7 @@ script DewfordTown_EventScript_Man{
 	elif(var(VAR_BENNIS_DOJO_STATE) == 2){
 	msgbox(DewfordTown_Text_BennisLeft, MSGBOX_NPC)
 	}
-	elif(var(VAR_BENNIS_DOJO_STATE) >= 6){
+	elif(var(VAR_BENNIS_DOJO_STATE) >= 5){
 		msgbox(DewfordTown_Text_BennisReturn, MSGBOX_NPC)
 	}
 	else{
@@ -837,7 +837,7 @@ text DewfordTown_Text_BennisLeft{
 }
 
 text DewfordTown_Text_BennisReturn{
-	"Those three are back again.\n
+	"Those ninjas are back again!\n
 	Did they really like this quiet town\l
 	that much?"
 }

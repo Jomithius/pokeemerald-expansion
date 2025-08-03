@@ -1,5 +1,7 @@
 raw`MauvilleCity_Gym_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MauvilleCity_Gym_OnLoad
+	map_script MAP_SCRIPT_ON_RESUME, MauvilleCity_Gym_OnResume
+	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_Gym_OnTransition
 	.byte 0
 
 MauvilleCity_Gym_OnLoad:
@@ -11,6 +13,18 @@ MauvilleCity_Gym_OnLoad:
 	case 3, MauvilleCity_Gym_EventScript_Switch3Pressed
 	case 4, MauvilleCity_Gym_EventScript_Switch4Pressed
 	end
+
+MauvilleCity_Gym_OnResume:
+	call_if_defeated TRAINER_WATTSON_2, MauvilleCity_Gym_EventScript_RemoveGymLeaderPkmn
+	end
+
+MauvilleCity_Gym_OnTransition:
+	call_if_set FLAG_HIDE_MAUVILLE_GYM_WATTSON, MauvilleCity_Gym_EventScript_RemoveGymLeaderPkmn
+	end
+
+MauvilleCity_Gym_EventScript_RemoveGymLeaderPkmn:
+	removeobject 7
+	return
 
 MauvilleCity_Gym_EventScript_UpdateBarriers::
 	goto_if_set FLAG_MAUVILLE_GYM_BARRIERS_STATE, MauvilleCity_Gym_EventScript_SetAltBarriers
@@ -74,6 +88,8 @@ MauvilleCity_Gym_EventScript_DeactivatePuzzle::
 	end
 
 MauvilleCity_Gym_EventScript_Wattson::
+	goto_if_defeated TRAINER_WATTSON_2, MauvilleCity_Gym_EventScript_WattsonDefeatedFinal2
+	goto_if_set FLAG_SYS_FINAL_REMATCH, MauvilleCity_Gym_EventScript_Wattson_FinalBattle
 	trainerbattle_single TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch
@@ -419,3 +435,36 @@ script MauvilleCity_Gym_EventScript_Jolteon{
     end
 }
 
+script MauvilleCity_Gym_EventScript_Wattson_FinalBattle{
+	trainerbattle_single(TRAINER_WATTSON_2, "{PLAYER}!\nHere at last!\pIt's time to party!", MauvilleCity_Gym_Text_DacaDefeat, MauvilleCity_Gym_EventScript_WattsonDefeatedFinal)
+	end
+}
+
+script MauvilleCity_Gym_EventScript_WattsonDefeatedFinal{
+	addvar(VAR_GYM_LEADER_COUNT, 1)
+	msgbox("Hahaha!\n
+		That was fun!\p
+		But let's be honest.\n
+		The only reason I lost was to fit a\l
+		narrative.\p
+		You're lucky you're destined to\n
+		never lose.", MSGBOX_NPC)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	end
+}
+
+script MauvilleCity_Gym_EventScript_WattsonDefeatedFinal2{
+	msgbox("Hahaha!\n
+		That was fun!\p
+		But let's be honest.\n
+		The only reason I lost was to fit a\l
+		narrative.\p
+		You're lucky you're destined to\n
+		never lose.", MSGBOX_NPC)
+	end
+}
+
+text MauvilleCity_Gym_Text_DacaDefeat{
+	"Hahaha!\n
+	Now THAT was a PARTY!"
+}

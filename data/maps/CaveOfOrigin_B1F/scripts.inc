@@ -364,14 +364,14 @@ CaveOfOrigin_B1F_EventScript_Arceus::
 # 177 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_2
-# 182 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 183 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_3
-# 182 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 183 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_3
 CaveOfOrigin_B1F_EventScript_Arceus_1:
-# 185 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 186 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	release
 	end
 
@@ -382,10 +382,12 @@ CaveOfOrigin_B1F_EventScript_Arceus_2:
 	removeobject VAR_LAST_TALKED
 # 180 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
+# 181 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	clearflag FLAG_HIDE_PLATES_CLERK
 	goto CaveOfOrigin_B1F_EventScript_Arceus_1
 
 CaveOfOrigin_B1F_EventScript_Arceus_3:
-# 183 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 184 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto CaveOfOrigin_B1F_EventScript_Arceus_1
 

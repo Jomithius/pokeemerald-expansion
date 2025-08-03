@@ -116,4 +116,4 @@ MtPyre_Exterior_Dave_House_Text_Fantasia::
 
 MtPyre_Exterior_Dave_House_Text_WarnFantasia::
 # 87 "data/maps/MtPyre_Exterior_Dave_House/scripts.pory"
-	.string "If we have to battle in the future, do\n me a favor and lose, okay?$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}WARNING\p Using the FANTASIA before the post game\n may cause a few visual bugs in\l a couple cutscenes.\p Check the README for more details.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}If we have to battle in the future, do\n me a favor and lose. Okay?$"

@@ -1,1 +1,59 @@
-mapscripts TheUnder_CanyonLake_MapScripts {}
+mapscripts TheUnder_CanyonLake_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE[VAR_NEWMOON_ISLAND_STATE, 5:  TheUnder_CanyonLake_EventScript_NewmoonIslandMan]
+}
+
+
+script TheUnder_CanyonLake_EventScript_NewmoonIslandMan{
+    lockall
+    playse(SE_PIN)
+    applymovement(8, Common_Movement_ExclamationMark)
+    waitmovement(8)
+    waitse
+    applymovement(8, Common_Movement_WalkUp3)
+    waitmovement(8)
+    fadeoutbgm(0)
+    msgbox("You've been asleep for a long, long time…\n
+        What happened to you?\p
+        And what were you doing here? No one has\n
+        lived here for 50 years.\p
+        Not since that young boy was cursed with\n
+        eternal nightmares…\p
+        His parents tried to find the LUNAR WING\n
+        but failed.\p
+        …\n
+        …\l
+        Where ever he is now…\p
+        I just hope he's finally been woken up\n
+        from those bad dreams…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(8, Common_Movement_WalkInPlaceDown)
+    waitmovement(8)
+    hideobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    delay(8)
+    showobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    delay(12)
+    hideobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    delay(16)
+    showobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    applymovement(8, TheUnder_CanyonLake_Movement_ManLeaves)
+    delay(8)
+    hideobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    delay(8)
+    showobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    delay(12)
+    hideobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    delay(16)
+    showobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    waitmovement(8)
+    removeobject(8)
+    setvar(VAR_NEWMOON_ISLAND_STATE, 6)
+    releaseall
+    end
+}
+
+movement TheUnder_CanyonLake_Movement_ManLeaves{
+    walk_slow_down
+    lock_anim
+    delay_16
+    walk_down * 8
+}

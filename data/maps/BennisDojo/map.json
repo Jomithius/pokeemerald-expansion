@@ -80,16 +80,16 @@
       "flag": "FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NINJA",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 3,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BennisDojo_EventScript_Bertho",
       "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BennisDojo_EventScript_Bennis",
       "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
     },
     {
@@ -113,22 +113,22 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BennisDojo_EventScript_Panini",
       "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NINJA",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 10,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BennisDojo_EventScript_Benson",
       "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
     },
     {
@@ -141,8 +141,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BennisDojo_EventScript_Medicham",
       "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 7,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BennisDojo_EventScript_Asak",
+      "flag": "FLAG_HIDE_ASAK_BENNIS_DOJO"
     }
   ],
   "warp_events": [

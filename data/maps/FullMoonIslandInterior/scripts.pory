@@ -50,6 +50,8 @@ script FullMoonIslandInterior_EventScript_RatduardoBattle{
     msgbox(FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_RAT_CAVE_STATE, 11)
+    addvar(VAR_FINAL_REMATCH_STATE, 1)
+    setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
     release
     end
 }

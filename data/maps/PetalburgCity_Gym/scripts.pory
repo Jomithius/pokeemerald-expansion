@@ -8,6 +8,7 @@ PetalburgCity_Gym_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_Gym_OnTransition
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, PetalburgCity_Gym_OnWarp
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_Gym_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, PetalburgCity_Gym_OnResume
 	.byte 0
 
 PetalburgCity_Gym_OnLoad:
@@ -41,10 +42,19 @@ PetalburgCity_Gym_EventScript_UnlockAllDoors::
 	return
 
 PetalburgCity_Gym_OnTransition:
+	call_if_set FLAG_HIDE_GYM_LEADERS, PetalburgCity_Gym_EventScript_RemoveGymLeaderPkmn
 	call_if_eq VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_MoveWallyToEntrance
 	call_if_lt VAR_PETALBURG_GYM_STATE, 6, PetalburgCity_Gym_EventScript_MoveNormanToEntrance
 	call_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_CheckNormanForRematch
 	end
+
+PetalburgCity_Gym_OnResume:
+	call_if_defeated TRAINER_NORMAN_2, PetalburgCity_Gym_EventScript_RemoveGymLeaderPkmn
+	end
+
+PetalburgCity_Gym_EventScript_RemoveGymLeaderPkmn:
+	removeobject 11
+	return
 
 PetalburgCity_Gym_EventScript_MoveWallyToEntrance::
 	setobjectxyperm LOCALID_WALLY, 5, 108
@@ -59,6 +69,7 @@ PetalburgCity_Gym_EventScript_CheckNormanForRematch::
 	specialvar VAR_RESULT, IsTrainerReadyForRematch
 	goto_if_eq VAR_RESULT, TRUE, PetalburgCity_Gym_EventScript_DontMoveNormanToFront
 	goto_if_eq VAR_PETALBURG_GYM_STATE, 8, PetalburgCity_Gym_EventScript_DontMoveNormanToFront
+	goto_if_set FLAG_SYS_FINAL_REMATCH, PetalburgCity_Gym_EventScript_DontMoveNormanToFront
 	setobjectxyperm LOCALID_LUNA_F, 4, 107
 	return
 
@@ -107,6 +118,8 @@ PetalburgCity_Gym_Movement_WallyExitGym:
 PetalburgCity_Gym_EventScript_Norman::
 	lock
 	faceplayer
+	goto_if_defeated TRAINER_NORMAN_2, PetalburgCity_Gym_EventScript_NormanDefeatedFinal2
+	goto_if_set FLAG_SYS_FINAL_REMATCH, PetalburgCity_Gym_EventScript_Norman_FinalBattle
 	switch VAR_PETALBURG_GYM_STATE
 	case 2, PetalburgCity_Gym_EventScript_NormanNoBadges
 	case 3, PetalburgCity_Gym_EventScript_NormanOneBadge
@@ -1605,4 +1618,23 @@ script PetalburgCity_Gym_EventScript_GiveSwordsDance{
 text PetalburgCity_Gym_Text_ExplainSwordsDance{
 	"That TM63, SWORDS DANCE, sharply\n
 	raises the user's ATTACK."
+}
+
+script PetalburgCity_Gym_EventScript_Norman_FinalBattle{
+	trainerbattle_single(TRAINER_NORMAN_2, "{PLAYER}.\nWelcome back.\pEh, mucho texto.\nLet's just get to the battle.", "It's hard to be strong enough\nto admit that you're weak… you know?", PetalburgCity_Gym_EventScript_NormanDefeatedFinal)
+	end
+}
+
+script PetalburgCity_Gym_EventScript_NormanDefeatedFinal{
+	addvar(VAR_GYM_LEADER_COUNT, 1)
+	msgbox("You beat me again, {PLAYER}.\n
+		Great job.", MSGBOX_NPC)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	end
+}
+
+script PetalburgCity_Gym_EventScript_NormanDefeatedFinal2{
+	msgbox("You beat me again, {PLAYER}.\n
+		Great job.", MSGBOX_NPC)
+	end
 }

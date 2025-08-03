@@ -208,6 +208,9 @@
 #define METATILE_Fortree_WoodBridge1_Bottom                0x29F
 #define METATILE_Fortree_WoodBridge1_Top                   0x297
 
+// gTileset_FortreeGym
+#define METATILE_FortreeGym_FloorTile  0x202
+
 // gTileset_General
 #define METATILE_General_BlueCaveIndent        0x1B0
 #define METATILE_General_BlueCaveOpen          0x1B1
@@ -275,6 +278,9 @@
 #define METATILE_Lavaridge_LavaField            0x271
 #define METATILE_Lavaridge_NormalGrass          0x206
 #define METATILE_Lavaridge_RockWall             0x274
+
+// gTileset_LavaridgeGym
+#define METATILE_LavaridgeGym_FloorTile  0x208
 
 // gTileset_LegendOfZeldaHouse
 #define METATILE_LegendOfZeldaHouse_FloorTile        0x200

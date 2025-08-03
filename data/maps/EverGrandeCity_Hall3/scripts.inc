@@ -1,5 +1,6 @@
 EverGrandeCity_Hall3_MapScripts::
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_Hall3_OnWarp
+	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_Hall_OnTransition
 	.byte 0
 
 EverGrandeCity_Hall3_OnWarp:

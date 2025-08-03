@@ -1794,7 +1794,7 @@
     },
     {
       "map_section": "MAPSEC_THE_VOID",
-      "name": "THE VOID",
+      "name": "???",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -3668,7 +3668,7 @@
     },
     {
       "map_section": "MAPSEC_THE_VOID",
-      "name": "THE VOID",
+      "name": "???",
       "x": 0,
       "y": 0,
       "width": 1,

@@ -5838,7 +5838,7 @@ u16 GetBattleBGM(void)
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJomithiusName))
                 return MUS_VS_CIPHER_ADMIN;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJamesName))
-                return MUS_WATERFALL_COLOSSEUM;
+                return MUS_VS_FRONTIER_BRAIN;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleEugeniaName))
@@ -5857,7 +5857,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_MASTER:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBrunoName))
                 return MUS_RG_VS_GYM_LEADER;
-            if(FlagGet(FLAG_SYS_FINAL_REMATCH) && !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBennisName))
+            if(FlagGet(FLAG_SYS_BENNIS_FINAL_REMATCH) && !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBennisName))
                 return MUS_VS_GILGAMESH;
             return MUS_BENNIS; 
         case TRAINER_CLASS_CHIEF:
@@ -5873,13 +5873,13 @@ u16 GetBattleBGM(void)
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleSpeedwagonName))
                 return MUS_RG_VS_GYM_LEADER;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
-                return MUS_RG_VS_GYM_LEADER;
+                return MUS_VS_GILGAMESH;
             return MUS_RG_VS_TRAINER; 
         case TRAINER_CLASS_NIGHTMARE:
             return MUS_RG_LAVENDER;
         case TRAINER_CLASS_KNIGHT:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleAriaName))
-                return MUS_RG_VS_GYM_LEADER;
+                return MUS_FINAL_BATTLE;
             return MUS_VS_TRAINER;       
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:

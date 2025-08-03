@@ -3,17 +3,27 @@ raw`EverGrandeCity_SidneysRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SidneysRoom_OnWarp
 	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_SidneysRoom_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_SidneysRoom_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, EverGrandeCity_SidneysRoom_OnResume
 	.byte 0
 
 EverGrandeCity_SidneysRoom_OnTransition:
 	setflag FLAG_MET_SCOTT_IN_EVERGRANDE
 	setflag FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT
+	setflag FLAG_TEMP_E
 	end
 
 EverGrandeCity_SidneysRoom_OnLoad:
 	call_if_set FLAG_DEFEATED_ELITE_4_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_ResetAdvanceToNextRoom
 	call_if_eq VAR_ELITE_4_STATE, 1, EverGrandeCity_SidneysRoom_EventScript_CloseDoor
 	end
+
+EverGrandeCity_SidneysRoom_OnResume:
+	call_if_set FLAG_DEFEATED_MISA, EverGrandeCity_RemoveEliteFourPokemon
+	end
+
+EverGrandeCity_RemoveEliteFourPokemon::
+	removeobject 2
+	return
 
 EverGrandeCity_SidneysRoom_EventScript_ResetAdvanceToNextRoom::
 	call PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom
@@ -45,6 +55,8 @@ EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor::
 EverGrandeCity_SidneysRoom_EventScript_Sidney::
 	lock
 	faceplayer
+	goto_if_set FLAG_DEFEATED_MISA, EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech
+	goto_if_set FLAG_SYS_FINAL_REMATCH, EverGrandeCity_SidneysRoom_EventScript_Misa
 	goto_if_set FLAG_DEFEATED_ELITE_4_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech
 	playbgm MUS_MISA_THEME, FALSE
 	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
@@ -71,12 +83,12 @@ EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 	.string "It's great to see you again!\p"
 	.string "You're not surprised, are you?\n"
 	.string "I did say where I worked, after all!\p"
-	.string "JAMES probably didn't say anything\n"
-	.string "either. He doesn't like to brag about me.\p"
+	.string "JAMES probably didn't say anything.\n"
+	.string "He doesn't like to brag about me.\p"
 	.string "Speaking of JAMES, I was watching your\n"
     .string "battle earlier.\p"
     .string "As a mother, I'm sad to see my child\n"
-    .string "feel down, but I'm glad he's grown.\p"
+    .string "feel down… But I'm glad he's grown.\p"
     .string "Thank you for becoming his friend,\n"
     .string "{PLAYER}. I really mean it.$"
 
@@ -95,7 +107,7 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 	.string "to say.\p"
 	.string "You've got what it takes to go far.\n"
 	.string "Now, go on to the next room and enjoy\l"
-	.string "your next battle!$"
+	.string "your battle!$"
 
 `
 
@@ -107,4 +119,143 @@ script EverGrandeCity_SidneysRoom_EventScript_Togekiss{
 	applymovement(2, Common_Movement_FaceOriginalDirection)
 	release
 	end
+}
+
+script EverGrandeCity_SidneysRoom_EventScript_Misa{
+	lock
+	setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	playbgm(MUS_MISA_THEME, FALSE)
+	if(flag(FLAG_RECEIVED_CASTELIACONE) == TRUE){
+		msgbox("{PLAYER}!\n
+			It's good to see you again!\p
+			Did you happen to find anything out\n
+			with that legend I told you about?", MSGBOX_DEFAULT)
+		waitmessage
+		dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Yeah! Thanks for the info.", "No…")
+			if(var(VAR_RESULT) == 0){
+				msgbox("Oh, I'm glad it worked out!\p
+					I'm so happy you and JAMES have had\n
+					fun exploring this region.", MSGBOX_DEFAULT)
+			}
+			else{
+				msgbox("Oh… Well maybe it was just\n
+					an urban legend.\p
+					Either way, I'm glad you and JAMES have\n
+					had fun exploring this region.", MSGBOX_DEFAULT)
+			}
+	}
+	else{
+		msgbox("{PLAYER}!\n
+			It's good to see you again!\p
+			You look like more mature now.\n
+			I'm glad you and JAMES have had fun\l
+			exploring this region.", MSGBOX_DEFAULT)
+	}
+	waitmessage
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+	msgbox("Anyways, let me stop getting\n
+		off topic.\p
+		I'm excited to see how much stronger\n
+		you've gotten!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	call(EliteFour_EventScript_PlayerGetsInPosition)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_TOGEKISS, CRY_MODE_ENCOUNTER)
+	waitmoncry
+	msgbox("I won't be holding back this time!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setflag(FLAG_DEFEATED_ELITE_4_SIDNEY)
+	setflag(FLAG_DEFEATED_MISA)
+	trainerbattle_no_intro(TRAINER_MISA_2, "Nice job, {PLAYER}!")
+	setflag(FLAG_TEMP_E)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+	goto(EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech)
+	end
+}
+
+script EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech{
+	msgbox("Wow, {PLAYER}.\p
+		You've really grown a lot since the last\n
+		time!\p
+		This mommy is proud of you! I know\n
+		you'll do great on your next battle!", MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script EliteFour_EventScript_PlayerGetsInPosition{
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+	switch (var(VAR_RESULT)) {
+        case DIR_NORTH:
+            applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth)
+			waitmovement(0)
+			break
+        case DIR_SOUTH:
+			applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionSouth)
+			delay(8)
+			applymovement(VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown)
+			waitmovement(OBJ_EVENT_ID_PLAYER)
+			break
+        case DIR_WEST:
+			applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionWest)
+			delay(8)
+			applymovement(VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown)
+			waitmovement(OBJ_EVENT_ID_PLAYER)
+			break
+        default:
+            applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth)
+			waitmovement(0)
+    }
+	clearflag(FLAG_TEMP_E)
+	callnative(UpdateFollowingPokemon)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    //addobject(OBJ_EVENT_ID_FOLLOWER)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
+    waitmovement(0)
+	fadescreen(FADE_FROM_WHITE)
+	applymovement(2, EverGrandeCity_Movement_EliteFourPokemonGetsInPosition)
+	delay(8)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_Movement_PlayerPokemonGetsInPosition)
+	waitmovement(0)
+	delay(30)
+	return
+}
+
+movement EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth{
+	walk_down * 2
+	walk_in_place_up
+}
+
+movement EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionSouth{
+	walk_right
+	walk_down * 4
+	walk_left
+	walk_in_place_up
+}
+
+movement EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionWest{
+	walk_down * 3
+	walk_left
+	walk_in_place_up
+}
+
+movement EverGrandeCity_Movement_EliteFourPokemonGetsInPosition{
+	walk_down
+	walk_right
+	walk_in_place_down
+}
+
+movement EverGrandeCity_Movement_PlayerPokemonGetsInPosition{
+	walk_up
+	walk_right
+	walk_in_place_up
 }

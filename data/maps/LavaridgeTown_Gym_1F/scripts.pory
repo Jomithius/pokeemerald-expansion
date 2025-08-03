@@ -5,12 +5,27 @@ raw`.set LOCALID_COLE, 2
 
 LavaridgeTown_Gym_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LavaridgeTown_Gym_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, LavaridgeTown_Gym_1F_OnResume
+	map_script MAP_SCRIPT_ON_LOAD, LavaridgeTown_Gym_1F_OnLoad
 	.byte 0
 
 LavaridgeTown_Gym_1F_OnTransition:
 	call LavaridgeTown_Gym_1F_EventScript_SetTrainerTempVars
 	call LavaridgeTown_Gym_1F_EventScript_CheckBuryTrainers
+	call_if_set FLAG_HIDE_GYM_LEADERS, LavaridgeTown_Gym_1F_EventScript_RemoveGymLeaderPkmn
 	end
+
+LavaridgeTown_Gym_1F_OnResume:
+	call_if_defeated TRAINER_FLANNERY_2, LavaridgeTown_Gym_1F_EventScript_RemoveGymLeaderPkmn
+	end
+
+LavaridgeTown_Gym_1F_OnLoad:
+	call_if_set FLAG_SYS_FINAL_REMATCH, LavaridgeTown_Gym_1F_UpdateMetatiles
+	end
+
+LavaridgeTown_Gym_1F_EventScript_RemoveGymLeaderPkmn::
+	removeobject 7
+	return
 
 @ Unclear where/if these temp vars are getting checked
 LavaridgeTown_Gym_1F_EventScript_SetTrainerTempVars::
@@ -49,6 +64,8 @@ LavaridgeTown_Gym_1F_EventScript_EndCheckBuryTrainers::
 	return
 
 LavaridgeTown_Gym_1F_EventScript_Flannery::
+	goto_if_defeated TRAINER_FLANNERY_2, LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal2
+	goto_if_set FLAG_SYS_FINAL_REMATCH, LavaridgeTown_Gym_1F_EventScript_Flannery_FinalBattle
 	trainerbattle_single TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_Text_FlanneryIntro, LavaridgeTown_Gym_1F_Text_FlanneryDefeat, LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, LavaridgeTown_Gym_1F_EventScript_FlanneryRematch
@@ -399,7 +416,6 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
 
 script LavaridgeTown_Gym_1F_EventScript_GiveMysticalFire{
 	giveitem(ITEM_TM_MYSTICAL_FIRE)
-	setvar(VAR_RAT_CAVE_STATE, 7) // if player misses ratduardo event in lavaridge or doesnt talk to npc again after
 	call_if_unset(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR, LavaridgeTown_Gym_1F_TryUpdateRatCaveState)
 	msgbox(LavaridgeTown_Gym_1F_Text_ExplainMysticalFire, MSGBOX_DEFAULT)
 	return
@@ -425,5 +441,32 @@ script LavaridgeTown_Gym_1F_EventScript_Ninetales{
 // if player misses ratduardo in fallarbor
 script LavaridgeTown_Gym_1F_TryUpdateRatCaveState{
 	setflag(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR)
+	setvar(VAR_RAT_CAVE_STATE, 7)
 	return
+}
+
+script LavaridgeTown_Gym_1F_UpdateMetatiles{
+	setmetatile(13, 13, METATILE_LavaridgeGym_FloorTile, FALSE)
+	return
+}
+
+script LavaridgeTown_Gym_1F_EventScript_Flannery_FinalBattle{
+	trainerbattle_single(TRAINER_FLANNERY_2, "{PLAYER}!\nGet ready!\pI cooked up some new strategies!", "Looks like I'm cooked!", LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal)
+	end
+}
+
+script LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal{
+	addvar(VAR_GYM_LEADER_COUNT, 1)
+	msgbox("You cooked me again, {PLAYER}.\p
+		Next time I'll come up with a\n
+		winning recipe!", MSGBOX_NPC)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	end
+}
+
+script LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal2{
+	msgbox("You cooked me again, {PLAYER}.\p
+		Next time I'll come up with a\n
+		winning recipe!", MSGBOX_NPC)
+	end
 }

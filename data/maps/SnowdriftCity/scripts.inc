@@ -81,98 +81,98 @@ SnowdriftCity_EventScript_CheckSpectierOrGlastrier::
 	faceplayer
 # 63 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_EventScript_CheckSpectierOrGlastrier_Text_0, MSGBOX_AUTOCLOSE
-# 75 "data/maps/SnowdriftCity/scripts.pory"
+# 74 "data/maps/SnowdriftCity/scripts.pory"
 	waitmessage
-# 76 "data/maps/SnowdriftCity/scripts.pory"
+# 75 "data/maps/SnowdriftCity/scripts.pory"
 	special IsLeadMonSpectrierOrGlastrier
-# 77 "data/maps/SnowdriftCity/scripts.pory"
+# 76 "data/maps/SnowdriftCity/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, SnowdriftCity_EventScript_ReceiveCalyrex
-# 78 "data/maps/SnowdriftCity/scripts.pory"
+# 77 "data/maps/SnowdriftCity/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown
-# 79 "data/maps/SnowdriftCity/scripts.pory"
+# 78 "data/maps/SnowdriftCity/scripts.pory"
 	waitmovement 0
-# 80 "data/maps/SnowdriftCity/scripts.pory"
+# 79 "data/maps/SnowdriftCity/scripts.pory"
 	release
 	end
 
 
 SnowdriftCity_EventScript_ReceiveCalyrex::
-# 85 "data/maps/SnowdriftCity/scripts.pory"
+# 84 "data/maps/SnowdriftCity/scripts.pory"
 	lock
-# 86 "data/maps/SnowdriftCity/scripts.pory"
+# 85 "data/maps/SnowdriftCity/scripts.pory"
 	playse SE_PIN
-# 87 "data/maps/SnowdriftCity/scripts.pory"
+# 86 "data/maps/SnowdriftCity/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
-# 88 "data/maps/SnowdriftCity/scripts.pory"
+# 87 "data/maps/SnowdriftCity/scripts.pory"
 	waitmovement 0
-# 89 "data/maps/SnowdriftCity/scripts.pory"
+# 88 "data/maps/SnowdriftCity/scripts.pory"
 	waitse
-# 90 "data/maps/SnowdriftCity/scripts.pory"
+# 89 "data/maps/SnowdriftCity/scripts.pory"
 	fadenewbgm MUS_END
-# 91 "data/maps/SnowdriftCity/scripts.pory"
+# 90 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_0, MSGBOX_DEFAULT
+# 97 "data/maps/SnowdriftCity/scripts.pory"
+	waitmessage
 # 98 "data/maps/SnowdriftCity/scripts.pory"
-	waitmessage
-# 99 "data/maps/SnowdriftCity/scripts.pory"
 	giveitem ITEM_REINS_OF_UNITY
+# 99 "data/maps/SnowdriftCity/scripts.pory"
+	waitmessage
 # 100 "data/maps/SnowdriftCity/scripts.pory"
-	waitmessage
-# 101 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_1, MSGBOX_AUTOCLOSE
-# 104 "data/maps/SnowdriftCity/scripts.pory"
+# 103 "data/maps/SnowdriftCity/scripts.pory"
 	waitmessage
-# 105 "data/maps/SnowdriftCity/scripts.pory"
+# 104 "data/maps/SnowdriftCity/scripts.pory"
 	givemon SPECIES_CALYREX, 75
-# 106 "data/maps/SnowdriftCity/scripts.pory"
+# 105 "data/maps/SnowdriftCity/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq SnowdriftCity_EventScript_ReceiveCalyrex_2
-# 116 "data/maps/SnowdriftCity/scripts.pory"
+# 115 "data/maps/SnowdriftCity/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq SnowdriftCity_EventScript_ReceiveCalyrex_3
-# 127 "data/maps/SnowdriftCity/scripts.pory"
+# 126 "data/maps/SnowdriftCity/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 SnowdriftCity_EventScript_ReceiveCalyrex_1:
-# 129 "data/maps/SnowdriftCity/scripts.pory"
+# 128 "data/maps/SnowdriftCity/scripts.pory"
 	fadedefaultbgm
-# 130 "data/maps/SnowdriftCity/scripts.pory"
+# 129 "data/maps/SnowdriftCity/scripts.pory"
 	release
 	end
 
 SnowdriftCity_EventScript_ReceiveCalyrex_2:
-# 107 "data/maps/SnowdriftCity/scripts.pory"
+# 106 "data/maps/SnowdriftCity/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 108 "data/maps/SnowdriftCity/scripts.pory"
+# 107 "data/maps/SnowdriftCity/scripts.pory"
 	removeobject 9
-# 109 "data/maps/SnowdriftCity/scripts.pory"
+# 108 "data/maps/SnowdriftCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 110 "data/maps/SnowdriftCity/scripts.pory"
+# 109 "data/maps/SnowdriftCity/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 111 "data/maps/SnowdriftCity/scripts.pory"
+# 110 "data/maps/SnowdriftCity/scripts.pory"
 	waitfanfare
-# 112 "data/maps/SnowdriftCity/scripts.pory"
+# 111 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_2, MSGBOX_AUTOCLOSE
-# 113 "data/maps/SnowdriftCity/scripts.pory"
+# 112 "data/maps/SnowdriftCity/scripts.pory"
 	waitmessage
-# 114 "data/maps/SnowdriftCity/scripts.pory"
+# 113 "data/maps/SnowdriftCity/scripts.pory"
 	setflag FLAG_DEFEATED_CALYREX
 	goto SnowdriftCity_EventScript_ReceiveCalyrex_1
 
 SnowdriftCity_EventScript_ReceiveCalyrex_3:
-# 117 "data/maps/SnowdriftCity/scripts.pory"
+# 116 "data/maps/SnowdriftCity/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 118 "data/maps/SnowdriftCity/scripts.pory"
+# 117 "data/maps/SnowdriftCity/scripts.pory"
 	removeobject 9
-# 119 "data/maps/SnowdriftCity/scripts.pory"
+# 118 "data/maps/SnowdriftCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 120 "data/maps/SnowdriftCity/scripts.pory"
+# 119 "data/maps/SnowdriftCity/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 121 "data/maps/SnowdriftCity/scripts.pory"
+# 120 "data/maps/SnowdriftCity/scripts.pory"
 	waitfanfare
-# 122 "data/maps/SnowdriftCity/scripts.pory"
+# 121 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_3, MSGBOX_AUTOCLOSE
-# 123 "data/maps/SnowdriftCity/scripts.pory"
+# 122 "data/maps/SnowdriftCity/scripts.pory"
 	waitmessage
-# 124 "data/maps/SnowdriftCity/scripts.pory"
+# 123 "data/maps/SnowdriftCity/scripts.pory"
 	setflag FLAG_DEFEATED_CALYREX
 	goto SnowdriftCity_EventScript_ReceiveCalyrex_1
 
@@ -215,20 +215,20 @@ SnowdriftCity_EventScript_Calyrex_Text_3:
 
 SnowdriftCity_EventScript_CheckSpectierOrGlastrier_Text_0:
 # 63 "data/maps/SnowdriftCity/scripts.pory"
-	.string "My name is CALYREX.\n Long ago, I was a ruler of a land far,\l far away from this place.\p Since my fall from grace, I've spent\n my days searching for my trusted\l partners: SPECTRIER and GLASTRIER.\l Still, my search has been in vain.\p Please, adventurer.\p If you come across either of my\n old partners, could you bring\l them here?\p I'll give you a reward if you do.$"
+	.string "My name is CALYREX.\n Long ago, I was a ruler of a land far,\l far away from this place.\p Since my fall from grace, I've spent\n my days searching for my trusted\l partners: SPECTRIER and GLASTRIER.\l Still, my search has been in vain.\l Please, adventurer.\p If you come across either of my old\n partners, could you bring them here?\p I'll reward you if you do.$"
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_0:
-# 91 "data/maps/SnowdriftCity/scripts.pory"
+# 90 "data/maps/SnowdriftCity/scripts.pory"
 	.string "Old friend…\n It's good to see you again.\p Thank you, brave one.\n May I ask for your name?\p … … … …\p {PLAYER}.\n  As promised, I will give you a reward.$"
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_1:
-# 101 "data/maps/SnowdriftCity/scripts.pory"
+# 100 "data/maps/SnowdriftCity/scripts.pory"
 	.string "Also… I humbly ask you.\p Allow this fallen king to once again\n fight alongside his old friend.$"
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_2:
-# 112 "data/maps/SnowdriftCity/scripts.pory"
+# 111 "data/maps/SnowdriftCity/scripts.pory"
 	.string "CALYREX joined the party!$"
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_3:
-# 122 "data/maps/SnowdriftCity/scripts.pory"
+# 121 "data/maps/SnowdriftCity/scripts.pory"
 	.string "CALYREX was sent to the PC!$"

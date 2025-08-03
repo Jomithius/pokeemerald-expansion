@@ -771,7 +771,13 @@ static void Task_Hof_HandleExit(u8 taskId)
         ResetBgsAndClearDma3BusyFlags(0);
         DestroyTask(taskId);
         FreeAllHoFMem();
-        StartCredits();
+        if(FlagGet(FLAG_SYS_FINAL_REMATCH))
+        {
+            StartCredits();
+        }
+        else{
+            SoftReset(RESET_ALL);
+        }
     }
 }
 

@@ -570,3 +570,4 @@ gSpecials::
 	def_special AreRegisInParty
 	def_special IsGhostTypeInParty
 	def_special FieldShowRegionMapNHoenn
+	def_special IsEeveeInParty

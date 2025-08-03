@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "DewfordTown_Gym_EventScript_Poobles",
-      "flag": "FLAG_HIDE_GYM_LEADERS"
+      "flag": "FLAG_TEMP_7"
     }
   ],
   "warp_events": [

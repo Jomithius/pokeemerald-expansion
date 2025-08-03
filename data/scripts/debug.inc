@@ -146,14 +146,41 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
+	cleartrainerflag TRAINER_ROXANNE_2
+	cleartrainerflag TRAINER_BRAWLY_2
+	cleartrainerflag TRAINER_WATTSON_2
+	cleartrainerflag TRAINER_FLANNERY_2
+	cleartrainerflag TRAINER_NORMAN_2
+	cleartrainerflag TRAINER_WINONA_2
+	cleartrainerflag TRAINER_MOMO
+	cleartrainerflag TRAINER_ARIA
+	setflag FLAG_HIDE_PETALBURG_GYM_NORMAN
+	setvar VAR_PETALBURG_GYM_STATE, 7
 	release
 	end
 
 Debug_EventScript_Script_3::
+	call PlayersHouse_1F_EventScript_CallFromCeo
+	setvar VAR_MOMO_ARIA_STATE, 1
+	setvar VAR_RAT_CAVE_STATE, 8
+	warp MAP_THE_UNDER, 9, 43
+	waitstate
 	release
 	end
 
 Debug_EventScript_Script_4::
+	givemon SPECIES_EEVEE, 15
+	givemon SPECIES_VAPOREON, 15
+	givemon SPECIES_FLAREON, 15
+	givemon SPECIES_JOLTEON, 15
+	givemon SPECIES_LEAFEON, 15
+	givemon SPECIES_GLACEON, 15
+	givemon SPECIES_SYLVEON, 15
+	givemon SPECIES_ESPEON, 15
+	givemon SPECIES_UMBREON, 15
+	givemon SPECIES_EEVEE_STARTER, 15
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
 	release
 	end
 

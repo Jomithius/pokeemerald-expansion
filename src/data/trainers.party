@@ -4351,59 +4351,17 @@ AI: Smart Trainer
 Mugshot: Pink
 
 Rayquaza @ Life Orb  
-Ability: Air Lock    
+Ability: Air Lock
+Level: 5     
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Outrage  
 - Dragon Ascent  
 - V-create  
-- Dragon Tail  
+- Dragon Tail 
 
-Cobalion @ Leftovers  
-Ability: Justified    
-EVs: 252 Atk / 4 SpD / 252 Spe  
-Jolly Nature  
-- Swords Dance  
-- Close Combat  
-- Iron Head  
-- Zen Headbutt  
-
-Reshiram @ Choice Specs  
-Ability: Turboblaze    
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Blue Flare  
-- Draco Meteor  
-- Earth Power  
-- Shadow Ball  
-
-Luxray (M) @ Flame Orb  
-Ability: Guts    
-EVs: 252 Atk / 4 SpD / 252 Spe  
-Jolly Nature  
-- Supercell Slam  
-- Play Rough  
-- Throat Chop  
-- Trailblaze  
-
-Serperior @ Leftovers  
-Ability: Contrary    
-EVs: 4 Atk / 252 SpA / 252 Spe  
-Hasty Nature  
-- Leaf Storm  
-- Superpower  
-- Armor Cannon  
-- Psycho Boost  
-
-Chien-Pao @ Ability Shield  
-Ability: Sword of Ruin  
-EVs: 252 Atk / 4 SpD / 252 Spe  
-Jolly Nature  
-- Swords Dance  
-- Icicle Crash  
-- Crunch  
-- Sucker Punch  
+Luxray @ Luxrite
+Level: 5
 
 === TRAINER_JACLYN ===
 Name: JACLYN
@@ -5170,7 +5128,7 @@ Name: DACA
 Class: Leader
 Pic: Leader Wattson
 Gender: Female
-Music: Female
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Green
@@ -5249,7 +5207,7 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Pink
 
-Ninetales @ Heat Rock  
+Ninetales (F) @ Heat Rock  
 Ability: Drought  
 Level: 31  
 EVs: 140 SpA / 4 SpD / 252 Spe  
@@ -5303,7 +5261,7 @@ IVs: 0 Atk
 - Work Up  
 - Shock Wave  
 
-Ampharos @ Air Balloon  
+Ampharos (M) @ Air Balloon  
 Ability: Static  
 Level: 31  
 EVs: 248 HP / 24 Def / 228 SpA  
@@ -5678,7 +5636,7 @@ Pic: Misa
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Basic Trainer
 
 Sandshrew-Alola 
 Ability: Snow Cloak  
@@ -6940,7 +6898,7 @@ Jolly Nature
 - Megahorn  
 - Sucker Punch  
 
-Mienshao (M) @ Heavy-Duty Boots  
+Mienshao (F) @ Heavy-Duty Boots  
 Ability: Regenerator  
 Level: 75   
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -15650,19 +15608,14 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: STEVE
 Class: Leader
 Pic: Leader Roxanne
-Gender: Female
-Music: Female
+Gender: Male
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Yellow
 
-Golem
-Level: 32
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Protect
-- Rollout
-- Magnitude
-- Explosion
+Pinsir @ Pinsirite
+Level: 5
 
 === TRAINER_ROXANNE_3 ===
 Name: ROXANNE
@@ -15827,18 +15780,20 @@ Name: LIAM
 Class: Leader
 Pic: Leader Brawly
 Gender: Male
-Music: Male
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Green
 
-Machamp @ Sitrus Berry
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Karate Chop
-- Rock Slide
-- Focus Punch
-- Bulk Up
+POOBLES (Diglett-Alola) @ Pooblite
+Ability: Tangling Hair  
+Level: 19  
+EVs: 8 HP / 236 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Metal Claw  
+- Aerial Ace  
+- Rock Tomb  
+- Bulldoze
 
 === TRAINER_BRAWLY_3 ===
 Name: BRAWLY
@@ -15995,18 +15950,13 @@ Name: DACA
 Class: Leader
 Pic: Leader Wattson
 Gender: Female
-Music: Female
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Green
 
-Mareep
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Protect
-- Thunder Wave
-- Light Screen
+Houndoom @ Houndoominite
+Level: 5
 
 === TRAINER_WATTSON_3 ===
 Name: WATTSON
@@ -16171,42 +16121,13 @@ Name: KAI
 Class: Leader
 Pic: Leader Flannery
 Gender: Female
-Music: Female
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Pink
 
-Magcargo @ White Herb
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Attract
-- Light Screen
-- Rock Slide
-
-Ponyta
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Attract
-- Solar Beam
-- Bounce
-
-Camerupt @ White Herb
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
-
-Torkoal @ White Herb
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Explosion
-- Attract
+Ampharos @ Ampharosite
+Level: 5
 
 === TRAINER_FLANNERY_3 ===
 Name: FLANNERY
@@ -16379,18 +16300,13 @@ Name: LUNA
 Class: Leader
 Pic: Luna
 Gender: Female
-Music: Female
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Pink
 
-Chansey
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Light Screen
-- Sing
-- Skill Swap
-- Focus Punch
+Lopunny @ Lopunnite
+Level: 5
 
 === TRAINER_NORMAN_3 ===
 Name: NORMAN
@@ -16555,50 +16471,13 @@ Name: MICKEY
 Class: Leader
 Pic: Leader Winona
 Gender: Male
-Music: Male
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
 
-Dratini @ Sitrus Berry
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder Wave
-- Thunderbolt
-- Protect
-- Ice Beam
-
-Tropius
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Earthquake
-
-Pelipper
-Level: 41
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Supersonic
-- Protect
-- Aerial Ace
-
-Skarmory
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Whirlwind
-- Spikes
-- Steel Wing
-- Aerial Ace
-
-Altaria @ Chesto Berry
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rest
-- Dragon Dance
-- Earthquake
+Manectric @ Manectite
+Level: 5
 
 === TRAINER_WINONA_3 ===
 Name: WINONA
@@ -16779,7 +16658,7 @@ Name: ARIA
 Class: Knight
 Pic: Aria
 Gender: Male
-Music: Male
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
@@ -16792,13 +16671,13 @@ Name: MOMO
 Class: Ninja
 Pic: Momo
 Gender: Female
-Music: Female
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
 
 Dragonite @ Dragoniteite
-Level: 53
+Level: 5
 
 === TRAINER_SHADOW_CLONE_MOMO ===
 Name: MOMO
@@ -16810,7 +16689,7 @@ Double Battle: No
 AI: Basic Trainer / Risky
 
 Altaria @ Altarianite
-Level: 58
+Level: 5
 
 === TRAINER_TATE_AND_LIZA_5 ===
 Name: TATE&LIZA
@@ -16875,12 +16754,12 @@ Name: JOEY
 Class: Leader
 Pic: Leader Juan
 Gender: Male
-Music: Male
+Music: Cool
 Double Battle: No
 AI: Smart Trainer
 
 Mawile @ Mawilite
-Level: 100
+Level: 5
 
 === TRAINER_JUAN_3 ===
 Name: JUAN
@@ -17320,7 +17199,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Name: MISA
 Class: Elite Four
 Pic: Misa
-Gender: Male
+Gender: Female
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer
@@ -17504,6 +17383,7 @@ AI: Smart Trainer
 Mugshot: Pink
 
 Luxray @ Luxrite
+Level: 5
 
 === TRAINER_XION ===
 Name: XION
@@ -17529,11 +17409,12 @@ AI: Smart Trainer
 Mugshot: Yellow
 
 Banette @ Banettite
+Level: 5
 
 === TRAINER_JIMMY ===
 Name: JIMMY
 Class: Ceo
-Pic: Ceo
+Pic: Champion Wallace
 Gender: Male
 Music: Male
 Double Battle: No
@@ -17542,21 +17423,6 @@ Mugshot: Purple
 
 Typhlosion @ Typhlosionite
 Level: 5
-
-Metapod
-Level: 1
-
-Metapod
-Level: 1
-
-Metapod
-Level: 1
-
-Metapod
-Level: 1
-
-Metapod
-Level: 1
 
 Avatar
 Level: 1
@@ -17579,69 +17445,42 @@ Vigoroth
 Level: 35
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-=== TRAINER_CRISTIN_3 === /* FREE */
-Name: CRISTIN
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Hyper Potion
+=== TRAINER_BERTHO ===
+Name: BERTHO
+Class: Disciple
+Pic: Black Belt
+Gender: Male
+Music: Kimono
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint
 
 Spinda
 Level: 37
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Loudred
-Level: 37
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
-Vigoroth
-Level: 37
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
-=== TRAINER_CRISTIN_4 === /* FREE */
-Name: CRISTIN
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Hyper Potion
+=== TRAINER_BENSON ===
+Name: BENSON
+Class: Disciple
+Pic: Black Belt Fr
+Gender: Male
+Music: Kimono
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint
 
 Spinda
 Level: 39
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Loudred
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Vigoroth
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_CRISTIN_5 === /* FREE */
-Name: CRISTIN
-Class: Cooltrainer
-Pic: Cooltrainer F
+=== TRAINER_PANINI_2 ===
+Name: PANINI
+Class: Ninja
+Pic: Ninja Boy
 Gender: Female
-Music: Cool
-Items: Hyper Potion
+Music: Kimono
 Double Battle: No
 AI: Basic Trainer
 
 Spinda
-Level: 41
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-
-Exploud
-Level: 41
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-
-Slaking
 Level: 41
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
@@ -18153,19 +17992,19 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-Groudon
+Sceptile @ Sceptilite
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MAY_PLACEHOLDER ===
 Name: MAY
-Class: RS Protag
+Class: Rival
 Pic: RS May
 Gender: Female
 Music: Male
 Double Battle: No
 
-Kyogre
+Blaziken @ Blazikenite
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -18248,7 +18087,7 @@ Relaxed Nature
 Name: PANINI
 Class: Ninja
 Pic: Ninja Boy
-Gender: Male
+Gender: Female
 Music: Intense
 Double Battle: No
 AI: Basic Trainer

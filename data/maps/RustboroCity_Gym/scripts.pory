@@ -1,7 +1,23 @@
 raw`RustboroCity_Gym_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, RustboroCity_Gym_OnResume
+	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_Gym_OnTransition
 	.byte 0
 
+RustboroCity_Gym_OnResume:
+	call_if_defeated TRAINER_ROXANNE_2, RustboroCity_Gym_EventScript_TryRemoveGymLeaderPkmn
+	end
+
+RustboroCity_Gym_OnTransition:
+	call_if_set FLAG_HIDE_GYM_LEADERS, RustboroCity_Gym_EventScript_TryRemoveGymLeaderPkmn
+	end
+
+RustboroCity_Gym_EventScript_TryRemoveGymLeaderPkmn:
+	removeobject 6
+	return
+
 RustboroCity_Gym_EventScript_Roxanne::
+	goto_if_defeated TRAINER_ROXANNE_2, RustboroCity_Gym_EventScript_RoxanneDefeatedFinal2
+	goto_if_set FLAG_SYS_FINAL_REMATCH, RustboroCity_Gym_EventScript_Roxanne_FinalBattle
 	trainerbattle_single TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxanneIntro, RustboroCity_Gym_Text_RoxanneDefeat, RustboroCity_Gym_EventScript_RoxanneDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
@@ -303,5 +319,28 @@ script RustboroCity_Gym_Magmortar{
 	playmoncry(SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER)
 	delay(20)
 	release
+	end
+}
+
+script RustboroCity_Gym_EventScript_Roxanne_FinalBattle{
+	trainerbattle_single(TRAINER_ROXANNE_2, "Yo, {PLAYER}!\nI'm all fired up and ready to go!\pLet's get right to it!", "Haha!\nI'm all burnt out!", RustboroCity_Gym_EventScript_RoxanneDefeatedFinal)
+	end
+}
+
+script RustboroCity_Gym_EventScript_RoxanneDefeatedFinal{
+	addvar(VAR_GYM_LEADER_COUNT, 1)
+	msgbox("Haha!\n
+		That was a great battle, {PLAYER}!\p
+		You've gotten so strong now.\n
+		You were really on fire!", MSGBOX_NPC)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	end
+}
+
+script RustboroCity_Gym_EventScript_RoxanneDefeatedFinal2{
+	msgbox("Haha!\n
+		That was a great battle, {PLAYER}!\p
+		You've gotten so strong now.\n
+		You were really on fire!", MSGBOX_NPC)
 	end
 }

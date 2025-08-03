@@ -4,13 +4,13 @@ MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce:
 
 MoveTutor_Text_SwaggerTeach:
 	.string "Heh! My POKéMON totally rules!\n"
-	.string "It's cooler than any POKéMON!\p"
-	.string "I was lipping off with a swagger in\n"
-	.string "my step like that when the CHAIRMAN\l"
+	.string "It's cooler than YOUR POKéMON!\p"
+	.string "I was taunting my friends in\n"
+	.string "a battle when the CHAIRMAN\l"
 	.string "chewed me out.\p"
-	.string "That took the swagger out of my step.\p"
+	.string "I guess I took it too far.\p"
 	.string "If you'd like, I'll teach the move\n"
-	.string "SWAGGER to a POKéMON of yours.$"
+	.string "TAUNT to a POKéMON of yours.$"
 
 MoveTutor_Text_SwaggerDeclined:
 	.string "What, no? Can't you get into\n"
@@ -18,11 +18,11 @@ MoveTutor_Text_SwaggerDeclined:
 
 MoveTutor_Text_SwaggerWhichMon:
 	.string "All right, which POKéMON wants to\n"
-	.string "learn how to SWAGGER?$"
+	.string "learn how to TAUNT?$"
 
 MoveTutor_Text_SwaggerTaught:
 	.string "I'll just praise my POKéMON from now\n"
-	.string "on without the swagger.$"
+	.string "on without the taunts.$"
 
 MoveTutor_Text_RolloutTeach:
 	.string "Did you know that you can go from\n"

@@ -1300,6 +1300,7 @@ script RustboroCity_EventScript_Misa{
     delay(20)
     playbgm(MUS_MISA_THEME, FALSE)
     delay(10)
+	bufferleadmonspeciesname(STR_VAR_1)
     msgbox(RustboroMisa1, MSGBOX_AUTOCLOSE)
     waitmessage
     goto(MisaPlayerMeetRival)
@@ -1320,7 +1321,6 @@ script MisaAgreeMeetRival{
     msgbox(RustboroMisaIfYes, MSGBOX_AUTOCLOSE)
     waitmessage
     call(MisaEnd)
-	savebgm(MUS_DUMMY)
 	fadedefaultbgm
     releaseall
 	end
@@ -1356,8 +1356,6 @@ script MisaEnd{
 		setflag(FLAG_HIDE_RUSTBORO_MISA_OUTSIDE)
 		clearflag(FLAG_HIDE_RIVAL_ROUTE115)
 		setvar(VAR_MISA_STATE, 1)
-		return
-		
 	}
 	else{    
 		playse(SE_PIN)
@@ -1378,8 +1376,8 @@ script MisaEnd{
 		setflag(FLAG_HIDE_RUSTBORO_MISA_OUTSIDE)
 		clearflag(FLAG_HIDE_RIVAL_ROUTE115)
 		setvar(VAR_MISA_STATE, 1)
-		return
 	}
+	return
 }
 
 script RustboroCity_Eventscript_Promise_To_Misa{
@@ -1416,6 +1414,7 @@ script RustboroCityGym_EventScript_Misa{
     delay(20)
     playbgm(MUS_MISA_THEME, FALSE)
     delay(10)
+	bufferleadmonspeciesname(STR_VAR_1)
     msgbox(RustboroMisa1, MSGBOX_AUTOCLOSE)
     waitmessage
     goto(MisaPlayerMeetRival)
@@ -1424,27 +1423,13 @@ script RustboroCityGym_EventScript_Misa{
 text RustboroMisa1{"Oh! Excuse me. I didn't see you there.\l
 It's nice to meet you.\n
 My name's MISA.\p
-MISA: That POKéMON.. So cute!\n
+MISA: That {STR_VAR_1}… So cute!\n
 So you're a new trainer? That's great!\l 
 It looks like you're already raising\l 
 your POKéMON with love and care.\p
 I actually have a son around the\n
-same age as you.\l
-He's also starting his journey soon.\l
-He should be on ROUTE 115 preparing."}
-
-text RustboroMisa2{"MISA: That POKéMON.. So cute!\n
-So you're a new trainer? That's great!\l 
-It looks like you're already raising\l 
-your POKéMON with love and care.\p
-I actually have a son around the\n
-same age as you.\l
-He's also starting his journey soon.\l
-He should be on ROUTE 115 preparing."}
-
-text RustboroMisa3{"I actually have a son around the\n
-same age as you.\l
-He's also starting his journey soon.\l
+same age as you.\p
+He's also starting his journey soon.\n
 He should be on ROUTE 115 preparing."}
 
 text RustboroMisa4{"Could you do me a favor and go\n

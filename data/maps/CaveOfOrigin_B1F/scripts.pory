@@ -178,6 +178,7 @@ script CaveOfOrigin_B1F_EventScript_Arceus{
         fadescreen(FADE_TO_BLACK)
         removeobject(VAR_LAST_TALKED)
 	    fadescreenspeed(FADE_FROM_BLACK, 5)
+		clearflag(FLAG_HIDE_PLATES_CLERK)
 	}
 	elif(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
 		goto(Common_EventScript_NopReturn)

@@ -664,6 +664,13 @@ EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
 	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
 	clearflag FLAG_DEFEATED_ELITE_4_GLACIA
 	clearflag FLAG_DEFEATED_ELITE_4_DRAKE
+	clearflag FLAG_DEFEATED_MISA
+	clearflag FLAG_DEFEATED_LINA
+	clearflag FLAG_DEFEATED_EUGENIA
+	clearflag FLAG_DEFEATED_XION
+	clearflag FLAG_DEFEATED_DAVE
+	clearflag FLAG_DEFEATED_CEO
+	setflag FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM
 	setvar VAR_ELITE_4_STATE, 0
 	return
 
@@ -1234,6 +1241,8 @@ Common_Mart_Tera_Shards:
 	pokemartlistend
 
 EventScript_Fantasia::
+	playse SE_USE_ITEM
+	waitse
 	msgbox gText_YouDrankTheFantasia, MSGBOX_DEFAULT
 	closemessage
 	releaseall
@@ -1241,6 +1250,20 @@ EventScript_Fantasia::
 
 gText_YouDrankTheFantasia::
 	.string "You drank the FANTASIA.$"
+
+EventScript_UnlockEliteFourFinalRematch::
+	clearflag FLAG_SYS_BEFORE_ELITE_4_REMATCH
+	playfanfare MUS_OBTAIN_BADGE
+	waitfanfare
+	msgbox gText_TheEliteFourAreReady, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	addvar VAR_GYM_LEADER_COUNT, 1
+	end
+
+gText_TheEliteFourAreReady::
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The ELITE FOUR are now ready\n"
+	.string "for the final battles.$"
 
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"

@@ -61,7 +61,7 @@ script NewMoonIsland_House3_EventScript_Poobles{
     faceplayer
     playmoncry(SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER)
     waitmoncry
-    msgbox("Poobs.", MSGBOX_AUTOCLOSE)
+    msgbox("POOOOOOOOOOOOOOOBLES!", MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
@@ -69,6 +69,9 @@ script NewMoonIsland_House3_EventScript_Poobles{
 
 script NewMoonIsland_House3_EventScript_Aria{
     lock
+    playbgm(MUS_NONE, FALSE)
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_GROWL_1)
+    waitmoncry
     msgbox("ARGH! AAAAAARGH!\n
         AAAUUAUUAAAUGH!", MSGBOX_AUTOCLOSE)
     waitmessage

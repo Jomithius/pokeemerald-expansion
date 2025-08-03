@@ -2233,7 +2233,7 @@ MatchCall_Text_Glacia::
 	.string "to the POKéMON LEAGUE…$"
 
 MatchCall_Text_Drake::
-	.string "DAVE: I swear to god, dude…\n"
+	.string "DAVE: I swear to God, dude…\n"
 	.string "Next time you better lose.$"
 
 MatchCall_Text_Wallace::

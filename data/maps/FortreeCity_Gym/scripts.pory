@@ -1,16 +1,31 @@
 raw`FortreeCity_Gym_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FortreeCity_Gym_OnTransition
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FortreeCity_Gym_OnWarp
+	map_script MAP_SCRIPT_ON_RESUME, FortreeCity_Gym_OnResume
+	map_script MAP_SCRIPT_ON_LOAD, FortreeCity_Gym_OnLoad
 	.byte 0
 
 FortreeCity_Gym_OnTransition:
 	special RotatingGate_InitPuzzle
 	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower bc of rotating gates
+	call_if_set FLAG_HIDE_GYM_LEADERS, FortreeCity_Gym_EventScript_RemoveGymLeaderPkmn
 	end
 
 FortreeCity_Gym_OnWarp:
 	map_script_2 VAR_TEMP_0, VAR_TEMP_0, FortreeCity_Gym_EventScript_InitRotatingGates
 	.2byte 0
+
+FortreeCity_Gym_OnResume:
+	call_if_defeated TRAINER_WINONA_2, FortreeCity_Gym_EventScript_RemoveGymLeaderPkmn
+	end
+
+FortreeCity_Gym_OnLoad:
+	call_if_set FLAG_SYS_FINAL_REMATCH, FortreeCity_Gym_UpdateMetatiles
+	end
+
+FortreeCity_Gym_EventScript_RemoveGymLeaderPkmn:
+	removeobject 10
+	return
 
 @ NOTE: This rotating gate puzzle makes use of VAR_TEMP_0 - VAR_TEMP_3
 FortreeCity_Gym_EventScript_InitRotatingGates::
@@ -18,6 +33,8 @@ FortreeCity_Gym_EventScript_InitRotatingGates::
 	end
 
 FortreeCity_Gym_EventScript_Winona::
+	goto_if_defeated TRAINER_WINONA_2, FortreeCity_Gym_EventScript_WinonaDefeatedFinal2
+	goto_if_set FLAG_SYS_FINAL_REMATCH, FortreeCity_Gym_EventScript_Winona_FinalBattle
 	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, FortreeCity_Gym_EventScript_WinonaRematch
@@ -330,3 +347,32 @@ text FortreeCity_Gym_Text_ExplainStoneEdge{
     of the sky!\p
     … … … … … …"
 }
+
+script FortreeCity_Gym_UpdateMetatiles{
+	setmetatile(15, 17, METATILE_FortreeGym_FloorTile, FALSE)
+	setmetatile(15, 12, METATILE_FortreeGym_FloorTile, FALSE)
+	setmetatile(15, 6, METATILE_FortreeGym_FloorTile, FALSE)
+	return
+}
+
+script FortreeCity_Gym_EventScript_Winona_FinalBattle{
+	trainerbattle_single(TRAINER_WINONA_2, "{PLAYER}!\nGood to see you again!\pIt's time to let the dogs out!", "Doggone it…", FortreeCity_Gym_EventScript_WinonaDefeatedFinal)
+	end
+}
+
+script FortreeCity_Gym_EventScript_WinonaDefeatedFinal{
+	addvar(VAR_GYM_LEADER_COUNT, 1)
+	msgbox("You beat me again, {PLAYER}!\p
+		Well, at least I got my dogs with\n
+		me! AWOOOOOOOO!", MSGBOX_NPC)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	end
+}
+
+script FortreeCity_Gym_EventScript_WinonaDefeatedFinal2{
+	msgbox("You beat me again, {PLAYER}!\p
+		Well, at least I got my dogs with\n
+		me! AWOOOOOOOO!", MSGBOX_NPC)
+	end
+}
+

@@ -155,7 +155,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk",
-      "flag": "FLAG_HIDE_TERA_SHARD_MERCHANTS"
+      "flag": "FLAG_HIDE_PLATES_CLERK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
@@ -168,7 +168,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EverGrandeCity_PokemonLeague_1F_EventScript_DrivesClerk",
-      "flag": "FLAG_HIDE_TERA_SHARD_MERCHANTS"
+      "flag": "FLAG_HIDE_DRIVES_CLERK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -222,7 +222,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_FINAL_REMATCH_STATE",
+      "var_value": "5",
+      "script": "EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_FINAL_REMATCH_STATE",
+      "var_value": "5",
+      "script": "EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning"
+    }
   ],
   "bg_events": [
 

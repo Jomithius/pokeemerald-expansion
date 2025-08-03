@@ -66,12 +66,11 @@ script SnowdriftCity_EventScript_CheckSpectierOrGlastrier{
         Since my fall from grace, I've spent\n
         my days searching for my trusted\l
         partners: SPECTRIER and GLASTRIER.\l
-        Still, my search has been in vain.\p
+        Still, my search has been in vain.\l
         Please, adventurer.\p
-        If you come across either of my\n
-        old partners, could you bring\l
-        them here?\p
-        I'll give you a reward if you do.", MSGBOX_AUTOCLOSE)
+        If you come across either of my old\n
+        partners, could you bring them here?\p
+        I'll reward you if you do.", MSGBOX_AUTOCLOSE)
     waitmessage
     special(IsLeadMonSpectrierOrGlastrier)
     goto_if_eq(VAR_RESULT, TRUE, SnowdriftCity_EventScript_ReceiveCalyrex)

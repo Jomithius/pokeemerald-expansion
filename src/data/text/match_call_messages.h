@@ -365,7 +365,7 @@ const u8 gText_MatchCallEliteFour_Glacia_Intro2[] = _("match my freak?");
 
 const u8 gText_MatchCallEliteFour_Drake_Strategy[] = _("Making others lose.");
 const u8 gText_MatchCallEliteFour_Drake_Pokemon[] = _("The magical power of GHOSTS!");
-const u8 gText_MatchCallEliteFour_Drake_Intro1[] = _("I swear to god, dude.");
+const u8 gText_MatchCallEliteFour_Drake_Intro1[] = _("I swear to God, dude.");
 const u8 gText_MatchCallEliteFour_Drake_Intro2[] = _("Thank you forever.");
 
 const u8 gText_MatchCallChampion_Wallace_Strategy[] = _("What the voices tell me.");

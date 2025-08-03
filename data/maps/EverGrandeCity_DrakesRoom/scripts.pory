@@ -2,6 +2,8 @@ raw`EverGrandeCity_DrakesRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_DrakesRoom_OnFrame
 	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_DrakesRoom_OnLoad
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SidneysRoom_OnWarp
+	map_script MAP_SCRIPT_ON_RESUME, EverGrandeCity_DrakesRoom_OnResume
+	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_Hall_OnTransition
 	.byte 0
 
 @ Unused, Drake uses Sidneys identical OnWarp for some reason
@@ -37,9 +39,18 @@ EverGrandeCity_DrakesRoom_EventScript_CloseDoor::
 	call PokemonLeague_EliteFour_EventScript_CloseDoor
 	return
 
+EverGrandeCity_DrakesRoom_OnResume:
+    call_if_set FLAG_DEFEATED_DAVE, EverGrandeCity_DrakesRoom_PrepForWarp
+    end
+
+EverGrandeCity_DrakesRoom_PrepForWarp:
+	removeobject 2
+	return
+
 EverGrandeCity_DrakesRoom_EventScript_Drake::
 	lock
 	faceplayer
+	goto_if_set FLAG_SYS_FINAL_REMATCH, EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle
 	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
     goto_if_set FLAG_RECEIVED_FANTASIA, EverGrandeCity_DrakesRoom_EventScript_Dave
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
@@ -69,7 +80,7 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "Thank.$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat:
-	.string "I swear to god dude…$"
+	.string "I swear to God dude…$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "Oh, well.\n"
@@ -100,4 +111,165 @@ script EverGrandeCity_DrakesRoom_EventScript_Banette{
 	applymovement(2, Common_Movement_FaceOriginalDirection)
 	release
 	end
+}
+
+script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle{
+	playbgm(MUS_ENCOUNTER_CHAMPION, FALSE)
+	if(flag(FLAG_RECEIVED_FANTASIA) == TRUE){
+		msgbox("Oh, look who it is.\n
+			Are you going to keep your promise\l
+			to me this time?\p
+			Remember, you said you would lose\n
+			to me if we ever battled.", MSGBOX_YESNO)
+	}
+	else{
+		msgbox("Oh, look who it is.\n
+			Are you going to do me a favor\l
+			and lose to me this time?", MSGBOX_YESNO)
+	}
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning)
+	msgbox("…\p
+		You know, I also heard about what\n
+		you did to that biker gang.\p
+		Just so you know… my brother was one\n
+		of the people you helped lock up.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(EliteFour_EventScript_PlayerGetsInPosition)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
+	waitmoncry
+	msgbox("I'm going to do everything I can\n
+		to stop you here.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setflag(FLAG_DEFEATED_ELITE_4_DRAKE)
+	setflag(FLAG_DEFEATED_DAVE)
+	playbgm(MUS_NONE, TRUE)
+	trainerbattle_no_intro(TRAINER_DAVE, EverGrandeCity_DrakesRoom_Text_DaveCrashOut)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	msgbox("Bitch.\n
+		I'm really glad I get to do this.\p
+		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setvar(VAR_RESULT, 3)
+    playse(SE_ORB)
+    special(DoOrbEffect)
+    delay(150)
+    waitstate
+    special(FadeOutOrbEffect)
+    waitstate
+    delay(150)
+	call(EverGrandeCity_DrakesRoom_Shake)
+	setrespawn(HEAL_LOCATION_VOID)
+	warpwhitefade(MAP_VOID, 9, 32)
+    waitstate
+	release
+	end
+}
+
+script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
+	lock
+	playbgm(MUS_ENCOUNTER_CHAMPION, FALSE)
+	msgbox("…\p
+		You know, I also heard about what\n
+		you did to that biker gang.\p
+		Just so you know… my brother was one\n
+		of the people you helped lock up.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(EliteFour_EventScript_PlayerGetsInPosition)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
+	waitmoncry
+	msgbox("I'm going to do everything I can\n
+		to stop you here.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setflag(FLAG_DEFEATED_ELITE_4_DRAKE)
+	setflag(FLAG_DEFEATED_DAVE)
+	playbgm(MUS_NONE, TRUE)
+	trainerbattle_no_intro(TRAINER_DAVE, EverGrandeCity_DrakesRoom_Text_DaveCrashOut)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	msgbox("Bitch.\n
+		I'm really glad I get to do this.\p
+		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setvar(VAR_RESULT, 3)
+    playse(SE_ORB)
+    special(DoOrbEffect)
+    delay(150)
+    waitstate
+    special(FadeOutOrbEffect)
+    waitstate
+    delay(150)
+	call(EverGrandeCity_DrakesRoom_Shake)
+	setrespawn(HEAL_LOCATION_VOID)
+	warpwhitefade(MAP_VOID, 9, 32)
+    waitstate
+	release
+	end
+}
+
+script EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning{
+	playbgm(MUS_NONE, FALSE)
+	msgbox("Oh, wow.\n
+		Uh…\p
+		Really?\n
+		Are you sure?", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, NO, EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2)
+	msgbox("Wow.\n
+		I… didn't expect that.\p
+		Well, um… okay.\n
+		Thanks.\p
+		Here, I'll help you out then.\n
+		I hope you saved.", MSGBOX_DEFAULT)
+	waitmessage
+	call(EverGrandeCity_HallOfFame_EventScript_ResetEliteFour)
+	goto(EventScript_FieldWhiteOut)
+	release
+	end
+}
+
+script EverGrandeCity_DrakesRoom_Shake{
+    delay (30)
+    setvar(VAR_0x8004, 2) // vertical pan
+    setvar(VAR_0x8005, 6) // horizontal pan
+    setvar(VAR_0x8006, 8) // num shakes
+    setvar(VAR_0x8007, 4) // shake delay
+    special(ShakeCamera)
+    waitstate
+    delay(60)
+	special(ShakeCamera)
+    waitstate
+    delay(60)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(20)
+    playse(SE_M_THUNDER_WAVE)
+    fadescreen(FADE_TO_WHITE)
+    fadescreen(FADE_FROM_WHITE)
+    delay(10)
+    waitse
+    playse(SE_INTRO_BLAST)
+    delay(20)
+    return
+}
+
+text EverGrandeCity_DrakesRoom_Text_DaveCrashOut{
+	"I swear to God…\n
+	Fuck you, dude."
 }

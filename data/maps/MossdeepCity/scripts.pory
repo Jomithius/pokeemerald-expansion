@@ -7,6 +7,7 @@ raw`.set LOCALID_GRUNT_1, 10
 
 MossdeepCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, MossdeepCity_OnResume
 	.byte 0
 
 MossdeepCity_OnTransition:
@@ -17,6 +18,14 @@ MossdeepCity_OnTransition:
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_4
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	end
+
+MossdeepCity_OnResume:
+	call_if_defeated TRAINER_MOMO, MossdeepCity_RemoveMomoShadowClone
+	end
+
+MossdeepCity_RemoveMomoShadowClone:
+	removeobject 20
+	return
 
 MossdeepCity_EventScript_PokefanF::
 	lock
@@ -436,8 +445,265 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 
 `
 
+script MossdeepCity_EventScript_Momo{
+	lock
+	faceplayer
+	goto_if_not_defeated(TRAINER_MOMO, MossdeepCity_EventScript_MomoBattle)
+	msgbox("{PLAYER}, if you're going to see ARIA\n
+		can you tell them to hurry up and\l
+		finish their training?", MSGBOX_AUTOCLOSE)
+	release
+	end
+}
+
+script MossdeepCity_EventScript_MomoBattle{
+	msgbox("Hi, {PLAYER}.\n
+		ARIA's… not here.\p
+		They're training on the beach\n
+		right now.\l
+		…\l
+		…\p
+		Did you want to battle?", MSGBOX_YESNO)
+	waitmessage
+	if(var(VAR_RESULT) == NO){
+		msgbox("… Okay.", MSGBOX_AUTOCLOSE)
+		waitmessage
+	}
+	else{
+		msgbox("Okay.\p
+			I… want to show you the new\n
+			ninjutsu I've been working on.", MSGBOX_AUTOCLOSE)
+		waitmessage
+		fadeoutbgm(0)
+		delay(24)
+		playse(SE_ARENA_TIMEUP1)
+		delay(16)
+		playse(SE_ARENA_TIMEUP1)
+		waitse
+		playse(SE_ARENA_TIMEUP2)
+		waitse
+		playse(SE_M_PETAL_DANCE)
+		fadescreenspeed(FADE_TO_WHITE, 4)
+		waitse
+		clearflag(FLAG_HIDE_MOMO_SHADOW_CLONE_MOSSDEEP)
+		addobject(20)
+		call(MossdeepCity_EventScript_MomoShadowClone)
+		fadescreenspeed(FADE_FROM_WHITE, 3)
+		delay(20)
+		playbgm(MUS_KIMONO_DANCE, FALSE)
+		msgbox("I can make clones now.\n
+			Isn't that cool?\p
+			…\n
+			Okay, let's battle.", MSGBOX_AUTOCLOSE)
+		waitmessage
+		trainerbattle_two_trainers(TRAINER_MOMO, "Everyone's so mean to me…", TRAINER_SHADOW_CLONE_MOMO, "</3")
+		msgbox("I… lost again.\n
+			Still, I had fun.\p
+			{PLAYER}, if you're going to see ARIA,\n
+			can you tell them to hurry up and\l
+			finish their training?", MSGBOX_AUTOCLOSE)
+		waitmessage
+		addvar(VAR_GYM_LEADER_COUNT, 1)
+		goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+		release
+		end
+	}
+}
+
+script MossdeepCity_EventScript_MomoShadowClone{
+	getplayerxy(VAR_TEMP_2, VAR_TEMP_4)
+	if(var(VAR_TEMP_2) == 37 && var(VAR_TEMP_4) == 10){
+		applymovement(20, MossdeepCity_Movement_MomoClone)
+	}
+	elif(var(VAR_TEMP_2) == 39 && var(VAR_TEMP_4) == 10){
+		applymovement(20, MossdeepCity_Movement_MomoClone2)
+	}
+	else{
+		applymovement(20, Common_Movement_FaceDown)
+	}
+	waitmovement(20)
+	return
+}
+
+script MossdeepCity_EventScript_Aria{
+	lock
+	goto_if_not_defeated(TRAINER_ARIA, MossdeepCity_EventScript_AriaBattle)
+	goto_if_unset(FLAG_RECEIVED_TOTODILE_PARTNER, MossdeepCity_EventScript_GiveTotodile)
+	playse(SE_M_DOUBLE_TEAM)
+    waitse
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER)
+    msgbox("ARGH!\n
+        AAAARGH!", MSGBOX_DEFAULT)
+    waitmessage
+    waitmoncry
+	msgbox("They're busy training.\n
+		Probably shouldn't bother them again.", MSGBOX_SIGN)
+	waitmessage
+	release
+	end
+}
+
+script MossdeepCity_EventScript_AriaBattle{
+	lock
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
+    playbgm(MUS_NONE, FALSE)
+    delay(20)
+    playse(SE_M_DOUBLE_TEAM)
+    waitse
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER)
+    msgbox("ARGH!\n
+        AAAARGH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    waitmoncry
+    playse(SE_PIN)
+    applymovement(21, Common_Movement_ExclamationMark)
+    waitmovement(21)
+    waitse
+    applymovement(21, Common_Movement_FacePlayer)
+    waitmovement(21)
+    delay(40)
+    playse(SE_M_YAWN)
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
+    waitmovement(21)
+    msgbox("AH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+	playbgm(MUS_ENCOUNTER_COOL, FALSE)
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
+    waitmovement(21)
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_NONE)
+	msgbox("{PLAYER}!\n
+		You scared me!\p
+		Wait…\n
+		This murderous intent…!\l
+		I see… So you would challenge this KNIGHT?\p
+		Alright! I'll show you the power\n
+		of the SACRED BLADE!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	trainerbattle_no_intro(TRAINER_ARIA, "M-My lord…")
+	msgbox("ARRGGGHH!\n
+		I lost again!", MSGBOX_DEFAULT)
+	waitmessage
+	addvar(VAR_GYM_LEADER_COUNT, 1)
+	checkitem(ITEM_SACRED_BLADE)
+	goto_if_eq(VAR_RESULT, TRUE, MossdeepCity_EventScript_GiveTotodilePostBattle)
+	msgbox("I need to train more!\p
+		{PLAYER}, if you're going to see MOMO,\n
+		can you tell her I'm gonna train for\l
+		a while longer?", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+	applymovement(21, Common_Movement_WalkInPlaceDown)
+	waitmovement(21)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	release
+	end
+}
+
+script MossdeepCity_EventScript_GiveTotodilePostBattle{
+	lock
+	closemessage
+	playse(SE_PIN)
+    applymovement(21, Common_Movement_ExclamationMark)
+    waitmovement(21)
+    waitse
+	msgbox("Wait…\n
+		This power I sense…!\p
+		{PLAYER}, are you also a protector\n
+		of the SACRED BLADE?!\p
+		Here. This TOTODILE is special.\n
+		It has the KNIGHT's will required\l
+		to wield the SACRED BLADE.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	givemon(SPECIES_TOTODILE_PARTNER, 100)
+	setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received TOTODILE!")
+		waitmessage
+        setflag(FLAG_RECEIVED_TOTODILE_PARTNER)
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received TOTODILE!\n
+			TOTODILE was sent to the PC.")
+		waitmessage
+        setflag(FLAG_RECEIVED_TOTODILE_PARTNER)
+    }
+    else{
+        goto(Common_EventScript_NoMoreRoomForPokemon)
+    }
+	msgbox("Okay!\n
+		I need to get back to my training!\p
+		{PLAYER}, if you're going to see MOMO,\n
+		can you tell her I'm gonna train for\l
+		a while longer?", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+	applymovement(21, Common_Movement_WalkInPlaceDown)
+	waitmovement(21)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	release
+	end
+}
+
+script MossdeepCity_EventScript_GiveTotodile{
+	lock
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
+    playbgm(MUS_NONE, FALSE)
+    delay(20)
+    playse(SE_M_DOUBLE_TEAM)
+    waitse
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER)
+    msgbox("ARGH!\n
+        AAAARGH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    waitmoncry
+    playse(SE_PIN)
+    applymovement(21, Common_Movement_ExclamationMark)
+    waitmovement(21)
+    waitse
+    applymovement(21, Common_Movement_FacePlayer)
+    waitmovement(21)
+    delay(40)
+    playse(SE_M_YAWN)
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
+    waitmovement(21)
+    msgbox("AH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadedefaultbgm
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
+    waitmovement(21)
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_NONE)
+	msgbox("{PLAYER}!\n
+		You scared me again!", MSGBOX_DEFAULT)
+	waitmessage
+	checkitem(ITEM_SACRED_BLADE)
+	goto_if_eq(VAR_RESULT, TRUE, MossdeepCity_EventScript_GiveTotodilePostBattle)
+	closemessage
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+	applymovement(21, Common_Movement_WalkInPlaceDown)
+	waitmovement(21)
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch) // should be functionally unused
+	release
+	end
+}
+
 script MossdeepCity_Gym_NPC{
     msgbox(MossdeepCity_Text_GymLeaderGone, MSGBOX_NPC)
+    end
+}
+
+script MossdeepCity_EventScript_AriaSword{
+	lockall
+    playse(SE_M_DOUBLE_TEAM)
+    delay(20)
+    msgbox("They're swinging a sword.\n
+    It looks dangerous to approach them\l
+    from the front.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+    waitmovement(0)
+    releaseall
     end
 }
 
@@ -448,5 +714,16 @@ text MossdeepCity_Text_GymLeaderGone{
     Order to train in SHOAL CAVE.\p
     You'll have to wait until they return,\n
     unless you're brave enough to go\l
-	get them yourself.."
+	get them yourself…"
+}
+
+movement MossdeepCity_Movement_MomoClone{
+	walk_fast_down
+	walk_fast_left
+}
+
+movement MossdeepCity_Movement_MomoClone2{
+	walk_fast_down
+	walk_fast_left
+	walk_in_place_right
 }

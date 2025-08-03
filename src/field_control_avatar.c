@@ -715,6 +715,11 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(Route135_Lab_EventScript_JamesCallsPlayerAreaZero);
             return TRUE;
         }
+        if (ShouldDoFinalRematchCall() == TRUE)
+        {
+            ScriptContext_SetupScript(EventScript_FinalRematchesUnlocked);
+            return TRUE;
+        }
     }
 
     if (SafariZoneTakeStep() == TRUE)

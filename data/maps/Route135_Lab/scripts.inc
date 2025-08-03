@@ -437,605 +437,609 @@ Route135_Lab_EventScript_EndUltraSpace::
 # 237 "data/maps/Route135_Lab/scripts.pory"
 	setvar VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0
 # 238 "data/maps/Route135_Lab/scripts.pory"
-	setrespawn HEAL_LOCATION_ROUTE135
+	addvar VAR_FINAL_REMATCH_STATE, 1
 # 239 "data/maps/Route135_Lab/scripts.pory"
-	warp MAP_ROUTE135, 8, 10
+	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
 # 240 "data/maps/Route135_Lab/scripts.pory"
-	waitstate
+	setrespawn HEAL_LOCATION_ROUTE135
 # 241 "data/maps/Route135_Lab/scripts.pory"
+	warp MAP_ROUTE135, 8, 10
+# 242 "data/maps/Route135_Lab/scripts.pory"
+	waitstate
+# 243 "data/maps/Route135_Lab/scripts.pory"
 	releaseall
 	end
 
 
 Route135_Lab_EventScript_JamesCallsPlayerAreaZero::
-# 246 "data/maps/Route135_Lab/scripts.pory"
-	lockall
-# 247 "data/maps/Route135_Lab/scripts.pory"
-	pokenavcall Route_135_Lab_PokenavText_JamesComeBackToTheLab
 # 248 "data/maps/Route135_Lab/scripts.pory"
-	waitmessage
+	lockall
 # 249 "data/maps/Route135_Lab/scripts.pory"
-	delay 30
+	pokenavcall Route_135_Lab_PokenavText_JamesComeBackToTheLab
 # 250 "data/maps/Route135_Lab/scripts.pory"
-	setvar VAR_ULTRA_SPACE_STATE, 5
+	waitmessage
 # 251 "data/maps/Route135_Lab/scripts.pory"
+	delay 30
+# 252 "data/maps/Route135_Lab/scripts.pory"
+	setvar VAR_ULTRA_SPACE_STATE, 5
+# 253 "data/maps/Route135_Lab/scripts.pory"
 	releaseall
 	end
 
 
 Route135_Lab_EventScript_ToAreaZero::
-# 256 "data/maps/Route135_Lab/scripts.pory"
-	lock
-# 257 "data/maps/Route135_Lab/scripts.pory"
-	faceplayer
 # 258 "data/maps/Route135_Lab/scripts.pory"
+	lock
+# 259 "data/maps/Route135_Lab/scripts.pory"
+	faceplayer
+# 260 "data/maps/Route135_Lab/scripts.pory"
 	goto_if_set FLAG_TEMP_1, Route135_Lab_EventScript_ToAreaZero_2
-# 262 "data/maps/Route135_Lab/scripts.pory"
+# 264 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route135_Lab_Text_ManiacIntroduceAreaZero, MSGBOX_YESNO
 Route135_Lab_EventScript_ToAreaZero_1:
-# 264 "data/maps/Route135_Lab/scripts.pory"
+# 266 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
-# 265 "data/maps/Route135_Lab/scripts.pory"
+# 267 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route135_Lab_EventScript_ToAreaZero_6
-# 283 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route135_Lab_EventScript_ToAreaZero_Text_2, MSGBOX_AUTOCLOSE
 # 285 "data/maps/Route135_Lab/scripts.pory"
-	waitmessage
-# 286 "data/maps/Route135_Lab/scripts.pory"
-	applymovement 1, Common_Movement_FaceOriginalDirection
+	msgbox Route135_Lab_EventScript_ToAreaZero_Text_2, MSGBOX_AUTOCLOSE
 # 287 "data/maps/Route135_Lab/scripts.pory"
-	waitmovement 1
+	waitmessage
 # 288 "data/maps/Route135_Lab/scripts.pory"
+	applymovement 1, Common_Movement_FaceOriginalDirection
+# 289 "data/maps/Route135_Lab/scripts.pory"
+	waitmovement 1
+# 290 "data/maps/Route135_Lab/scripts.pory"
 	setflag FLAG_TEMP_1
 Route135_Lab_EventScript_ToAreaZero_5:
-# 290 "data/maps/Route135_Lab/scripts.pory"
+# 292 "data/maps/Route135_Lab/scripts.pory"
 	release
 	end
 
 Route135_Lab_EventScript_ToAreaZero_2:
-# 259 "data/maps/Route135_Lab/scripts.pory"
+# 261 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route135_Lab_EventScript_ToAreaZero_Text_0, MSGBOX_YESNO
 	goto Route135_Lab_EventScript_ToAreaZero_1
 
 Route135_Lab_EventScript_ToAreaZero_6:
-# 266 "data/maps/Route135_Lab/scripts.pory"
+# 268 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route135_Lab_EventScript_ToAreaZero_Text_1, MSGBOX_AUTOCLOSE
-# 269 "data/maps/Route135_Lab/scripts.pory"
-	call Route135_Lab_EventScript_PlayerGoesToCosmog
-# 270 "data/maps/Route135_Lab/scripts.pory"
-	waitmovement 0
 # 271 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route135_Lab_Text_ManiacExplainCosmog, MSGBOX_AUTOCLOSE
+	call Route135_Lab_EventScript_PlayerGoesToCosmog
 # 272 "data/maps/Route135_Lab/scripts.pory"
-	waitmessage
+	waitmovement 0
 # 273 "data/maps/Route135_Lab/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceDown
+	msgbox Route135_Lab_Text_ManiacExplainCosmog, MSGBOX_AUTOCLOSE
 # 274 "data/maps/Route135_Lab/scripts.pory"
-	waitmovement 3
+	waitmessage
 # 275 "data/maps/Route135_Lab/scripts.pory"
-	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
+	applymovement 3, Common_Movement_WalkInPlaceDown
 # 276 "data/maps/Route135_Lab/scripts.pory"
-	waitmoncry
+	waitmovement 3
 # 277 "data/maps/Route135_Lab/scripts.pory"
-	call Route135_Lab_Shake
+	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
 # 278 "data/maps/Route135_Lab/scripts.pory"
-	setvar VAR_ULTRA_SPACE_STATE, 6
+	waitmoncry
 # 279 "data/maps/Route135_Lab/scripts.pory"
-	warpwhitefade MAP_AREA_ZERO, 15, 11
+	call Route135_Lab_Shake
 # 280 "data/maps/Route135_Lab/scripts.pory"
+	setvar VAR_ULTRA_SPACE_STATE, 6
+# 281 "data/maps/Route135_Lab/scripts.pory"
+	warpwhitefade MAP_AREA_ZERO, 15, 11
+# 282 "data/maps/Route135_Lab/scripts.pory"
 	waitstate
 	goto Route135_Lab_EventScript_ToAreaZero_5
 
 
 Route135_Lab_EventScript_TalkToCosmog::
-# 295 "data/maps/Route135_Lab/scripts.pory"
-	lock
-# 296 "data/maps/Route135_Lab/scripts.pory"
-	faceplayer
 # 297 "data/maps/Route135_Lab/scripts.pory"
+	lock
+# 298 "data/maps/Route135_Lab/scripts.pory"
+	faceplayer
+# 299 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route135_Lab_EventScript_TalkToCosmog_Text_0, MSGBOX_AUTOCLOSE
-# 306 "data/maps/Route135_Lab/scripts.pory"
-	giveitem ITEM_N_SOLARIZER
-# 307 "data/maps/Route135_Lab/scripts.pory"
-	waitmessage
 # 308 "data/maps/Route135_Lab/scripts.pory"
-	giveitem ITEM_N_LUNARIZER
+	giveitem ITEM_N_SOLARIZER
 # 309 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
 # 310 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route135_Lab_EventScript_TalkToCosmog_Text_1
-# 313 "data/maps/Route135_Lab/scripts.pory"
-	applymovement 3, Common_Movement_FacePlayer
-# 314 "data/maps/Route135_Lab/scripts.pory"
-	waitmovement 3
-# 315 "data/maps/Route135_Lab/scripts.pory"
-	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
-# 316 "data/maps/Route135_Lab/scripts.pory"
-	waitmoncry
-# 317 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route135_Lab_EventScript_TalkToCosmog_Text_2, MSGBOX_AUTOCLOSE
-# 319 "data/maps/Route135_Lab/scripts.pory"
+	giveitem ITEM_N_LUNARIZER
+# 311 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
-# 320 "data/maps/Route135_Lab/scripts.pory"
-	applymovement 1, Common_Movement_FaceOriginalDirection
+# 312 "data/maps/Route135_Lab/scripts.pory"
+	msgbox Route135_Lab_EventScript_TalkToCosmog_Text_1
+# 315 "data/maps/Route135_Lab/scripts.pory"
+	applymovement 3, Common_Movement_FacePlayer
+# 316 "data/maps/Route135_Lab/scripts.pory"
+	waitmovement 3
+# 317 "data/maps/Route135_Lab/scripts.pory"
+	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
+# 318 "data/maps/Route135_Lab/scripts.pory"
+	waitmoncry
+# 319 "data/maps/Route135_Lab/scripts.pory"
+	msgbox Route135_Lab_EventScript_TalkToCosmog_Text_2, MSGBOX_AUTOCLOSE
 # 321 "data/maps/Route135_Lab/scripts.pory"
-	waitmovement 1
+	waitmessage
 # 322 "data/maps/Route135_Lab/scripts.pory"
-	setvar VAR_ULTRA_SPACE_STATE, 7
+	applymovement 1, Common_Movement_FaceOriginalDirection
 # 323 "data/maps/Route135_Lab/scripts.pory"
-	clearflag FLAG_RECEIVED_MELTAN
+	waitmovement 1
 # 324 "data/maps/Route135_Lab/scripts.pory"
+	setvar VAR_ULTRA_SPACE_STATE, 7
+# 325 "data/maps/Route135_Lab/scripts.pory"
+	clearflag FLAG_RECEIVED_MELTAN
+# 326 "data/maps/Route135_Lab/scripts.pory"
 	release
 	end
 
 
 Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero::
-# 329 "data/maps/Route135_Lab/scripts.pory"
-	lock
-# 330 "data/maps/Route135_Lab/scripts.pory"
-	message Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_Text_0
 # 331 "data/maps/Route135_Lab/scripts.pory"
-	multichoice 25, 5, MULTI_ULTRA_SPACE_CHOICE, 0
+	lock
 # 332 "data/maps/Route135_Lab/scripts.pory"
-	closemessage
+	message Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_Text_0
 # 333 "data/maps/Route135_Lab/scripts.pory"
+	multichoice 25, 5, MULTI_ULTRA_SPACE_CHOICE, 0
+# 334 "data/maps/Route135_Lab/scripts.pory"
+	closemessage
+# 335 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_2
-# 340 "data/maps/Route135_Lab/scripts.pory"
+# 342 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_3
 Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_1:
-# 347 "data/maps/Route135_Lab/scripts.pory"
+# 349 "data/maps/Route135_Lab/scripts.pory"
 	release
 	end
 
 Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_2:
-# 334 "data/maps/Route135_Lab/scripts.pory"
-	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
-# 335 "data/maps/Route135_Lab/scripts.pory"
-	waitmoncry
 # 336 "data/maps/Route135_Lab/scripts.pory"
-	call Route135_Lab_Shake
+	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
 # 337 "data/maps/Route135_Lab/scripts.pory"
-	warpwhitefade MAP_ULTRA_SPACE, 26, 49
+	waitmoncry
 # 338 "data/maps/Route135_Lab/scripts.pory"
+	call Route135_Lab_Shake
+# 339 "data/maps/Route135_Lab/scripts.pory"
+	warpwhitefade MAP_ULTRA_SPACE, 26, 49
+# 340 "data/maps/Route135_Lab/scripts.pory"
 	waitstate
 	goto Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_1
 
 Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_3:
-# 341 "data/maps/Route135_Lab/scripts.pory"
-	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
-# 342 "data/maps/Route135_Lab/scripts.pory"
-	waitmoncry
 # 343 "data/maps/Route135_Lab/scripts.pory"
-	call Route135_Lab_Shake
+	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
 # 344 "data/maps/Route135_Lab/scripts.pory"
-	warpwhitefade MAP_AREA_ZERO, 15, 11
+	waitmoncry
 # 345 "data/maps/Route135_Lab/scripts.pory"
+	call Route135_Lab_Shake
+# 346 "data/maps/Route135_Lab/scripts.pory"
+	warpwhitefade MAP_AREA_ZERO, 15, 11
+# 347 "data/maps/Route135_Lab/scripts.pory"
 	waitstate
 	goto Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_1
 
 
 Route135_Lab_EventScript_PlayerGoesToCosmog::
-# 352 "data/maps/Route135_Lab/scripts.pory"
+# 354 "data/maps/Route135_Lab/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_0
-# 353 "data/maps/Route135_Lab/scripts.pory"
+# 355 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_TEMP_0, DIR_EAST
 	goto_if_eq Route135_Lab_EventScript_PlayerGoesToCosmog_2
-# 358 "data/maps/Route135_Lab/scripts.pory"
+# 360 "data/maps/Route135_Lab/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerGoesToCosmogNorth
-# 359 "data/maps/Route135_Lab/scripts.pory"
+# 361 "data/maps/Route135_Lab/scripts.pory"
 	waitmovement 0
 Route135_Lab_EventScript_PlayerGoesToCosmog_1:
-# 361 "data/maps/Route135_Lab/scripts.pory"
+# 363 "data/maps/Route135_Lab/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceUp
-# 362 "data/maps/Route135_Lab/scripts.pory"
+# 364 "data/maps/Route135_Lab/scripts.pory"
 	waitmovement 1
 	return
 
 Route135_Lab_EventScript_PlayerGoesToCosmog_2:
-# 354 "data/maps/Route135_Lab/scripts.pory"
+# 356 "data/maps/Route135_Lab/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route135_Lab_Movement_PlayerGoesToCosmogEast
-# 355 "data/maps/Route135_Lab/scripts.pory"
+# 357 "data/maps/Route135_Lab/scripts.pory"
 	waitmovement 0
 	goto Route135_Lab_EventScript_PlayerGoesToCosmog_1
 
 
-# 366 "data/maps/Route135_Lab/scripts.pory"
+# 368 "data/maps/Route135_Lab/scripts.pory"
 Route135_Lab_Movement_ManiacApproachPlayer:
-# 367 "data/maps/Route135_Lab/scripts.pory"
+# 369 "data/maps/Route135_Lab/scripts.pory"
 	walk_left
-# 367 "data/maps/Route135_Lab/scripts.pory"
+# 369 "data/maps/Route135_Lab/scripts.pory"
 	walk_left
-# 367 "data/maps/Route135_Lab/scripts.pory"
+# 369 "data/maps/Route135_Lab/scripts.pory"
 	walk_left
-# 367 "data/maps/Route135_Lab/scripts.pory"
+# 369 "data/maps/Route135_Lab/scripts.pory"
 	walk_left
-# 367 "data/maps/Route135_Lab/scripts.pory"
+# 369 "data/maps/Route135_Lab/scripts.pory"
 	walk_left
-# 368 "data/maps/Route135_Lab/scripts.pory"
+# 370 "data/maps/Route135_Lab/scripts.pory"
 	walk_down
-# 368 "data/maps/Route135_Lab/scripts.pory"
+# 370 "data/maps/Route135_Lab/scripts.pory"
 	walk_down
 	step_end
 
-# 371 "data/maps/Route135_Lab/scripts.pory"
+# 373 "data/maps/Route135_Lab/scripts.pory"
 Route135_Lab_Movement_ManiacGoBackToPC:
-# 372 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 372 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 372 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 373 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
-# 373 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
-# 373 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
-# 373 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
 # 374 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 374 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 374 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 375 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 375 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 375 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 375 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 376 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 377 "data/maps/Route135_Lab/scripts.pory"
+# 379 "data/maps/Route135_Lab/scripts.pory"
 Route135_Lab_Movement_PlayerGoBackToPC:
-# 378 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 378 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 378 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 379 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
-# 379 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
-# 379 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
-# 379 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
 # 380 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 380 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 380 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 381 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 381 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 381 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 381 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 382 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 416 "data/maps/Route135_Lab/scripts.pory"
-Route135_Lab_Movement_JamesEnter:
-# 417 "data/maps/Route135_Lab/scripts.pory"
-	walk_down
-# 417 "data/maps/Route135_Lab/scripts.pory"
-	walk_down
-# 417 "data/maps/Route135_Lab/scripts.pory"
-	walk_down
-# 417 "data/maps/Route135_Lab/scripts.pory"
-	walk_down
-# 417 "data/maps/Route135_Lab/scripts.pory"
-	walk_down
-# 417 "data/maps/Route135_Lab/scripts.pory"
-	walk_down
 # 418 "data/maps/Route135_Lab/scripts.pory"
+Route135_Lab_Movement_JamesEnter:
+# 419 "data/maps/Route135_Lab/scripts.pory"
+	walk_down
+# 419 "data/maps/Route135_Lab/scripts.pory"
+	walk_down
+# 419 "data/maps/Route135_Lab/scripts.pory"
+	walk_down
+# 419 "data/maps/Route135_Lab/scripts.pory"
+	walk_down
+# 419 "data/maps/Route135_Lab/scripts.pory"
+	walk_down
+# 419 "data/maps/Route135_Lab/scripts.pory"
+	walk_down
+# 420 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 433 "data/maps/Route135_Lab/scripts.pory"
-Route135_Lab_Movement_ManiacStartExperiment:
-# 434 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 434 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 434 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
 # 435 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
+Route135_Lab_Movement_ManiacStartExperiment:
 # 436 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 436 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 436 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 437 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 438 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 439 "data/maps/Route135_Lab/scripts.pory"
-Route135_Lab_Movement_JamesStartExperiment:
-# 440 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 440 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 440 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
 # 441 "data/maps/Route135_Lab/scripts.pory"
+Route135_Lab_Movement_JamesStartExperiment:
+# 442 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 442 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 442 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 443 "data/maps/Route135_Lab/scripts.pory"
 	walk_right
 	step_end
 
-# 444 "data/maps/Route135_Lab/scripts.pory"
+# 446 "data/maps/Route135_Lab/scripts.pory"
 Route135_Lab_Movement_PlayerStartExperiment:
-# 445 "data/maps/Route135_Lab/scripts.pory"
+# 447 "data/maps/Route135_Lab/scripts.pory"
 	walk_up
-# 445 "data/maps/Route135_Lab/scripts.pory"
+# 447 "data/maps/Route135_Lab/scripts.pory"
 	walk_up
 	step_end
 
-# 448 "data/maps/Route135_Lab/scripts.pory"
-Route_135_Lab_ManiacLookAround:
-# 449 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_down
 # 450 "data/maps/Route135_Lab/scripts.pory"
-	delay_8
+Route_135_Lab_ManiacLookAround:
 # 451 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_left
+	walk_in_place_down
 # 452 "data/maps/Route135_Lab/scripts.pory"
 	delay_8
 # 453 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_up
+	walk_in_place_left
 # 454 "data/maps/Route135_Lab/scripts.pory"
 	delay_8
 # 455 "data/maps/Route135_Lab/scripts.pory"
+	walk_in_place_up
+# 456 "data/maps/Route135_Lab/scripts.pory"
+	delay_8
+# 457 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 459 "data/maps/Route135_Lab/scripts.pory"
-Route_135_Lab_JamesLookAround:
-# 460 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_up
 # 461 "data/maps/Route135_Lab/scripts.pory"
-	delay_8
+Route_135_Lab_JamesLookAround:
 # 462 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_right
+	walk_in_place_up
 # 463 "data/maps/Route135_Lab/scripts.pory"
 	delay_8
 # 464 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_down
+	walk_in_place_right
 # 465 "data/maps/Route135_Lab/scripts.pory"
 	delay_8
 # 466 "data/maps/Route135_Lab/scripts.pory"
+	walk_in_place_down
+# 467 "data/maps/Route135_Lab/scripts.pory"
+	delay_8
+# 468 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 470 "data/maps/Route135_Lab/scripts.pory"
-Route_135_Lab_PlayerLookAround:
-# 471 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_right
 # 472 "data/maps/Route135_Lab/scripts.pory"
-	delay_8
+Route_135_Lab_PlayerLookAround:
 # 473 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_down
+	walk_in_place_right
 # 474 "data/maps/Route135_Lab/scripts.pory"
 	delay_8
 # 475 "data/maps/Route135_Lab/scripts.pory"
-	walk_in_place_up
+	walk_in_place_down
 # 476 "data/maps/Route135_Lab/scripts.pory"
 	delay_8
 # 477 "data/maps/Route135_Lab/scripts.pory"
+	walk_in_place_up
+# 478 "data/maps/Route135_Lab/scripts.pory"
+	delay_8
+# 479 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 542 "data/maps/Route135_Lab/scripts.pory"
+# 544 "data/maps/Route135_Lab/scripts.pory"
 Route_135_Lab_Movement_ManiacReturnsToComputer:
-# 543 "data/maps/Route135_Lab/scripts.pory"
-	walk_fast_down
-# 544 "data/maps/Route135_Lab/scripts.pory"
-	walk_fast_right
-# 544 "data/maps/Route135_Lab/scripts.pory"
-	walk_fast_right
-# 544 "data/maps/Route135_Lab/scripts.pory"
-	walk_fast_right
-# 544 "data/maps/Route135_Lab/scripts.pory"
-	walk_fast_right
 # 545 "data/maps/Route135_Lab/scripts.pory"
-	walk_fast_up
+	walk_fast_down
 # 546 "data/maps/Route135_Lab/scripts.pory"
+	walk_fast_right
+# 546 "data/maps/Route135_Lab/scripts.pory"
+	walk_fast_right
+# 546 "data/maps/Route135_Lab/scripts.pory"
+	walk_fast_right
+# 546 "data/maps/Route135_Lab/scripts.pory"
+	walk_fast_right
+# 547 "data/maps/Route135_Lab/scripts.pory"
+	walk_fast_up
+# 548 "data/maps/Route135_Lab/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 549 "data/maps/Route135_Lab/scripts.pory"
+# 551 "data/maps/Route135_Lab/scripts.pory"
 Route_135_Lab_Movement_CosmogReturnsToComputer:
-# 550 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 551 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
-# 551 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
-# 551 "data/maps/Route135_Lab/scripts.pory"
-	walk_right
 # 552 "data/maps/Route135_Lab/scripts.pory"
-	walk_down
+	walk_up
+# 553 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
 # 553 "data/maps/Route135_Lab/scripts.pory"
 	walk_right
 # 553 "data/maps/Route135_Lab/scripts.pory"
 	walk_right
 # 554 "data/maps/Route135_Lab/scripts.pory"
+	walk_down
+# 555 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 555 "data/maps/Route135_Lab/scripts.pory"
+	walk_right
+# 556 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 557 "data/maps/Route135_Lab/scripts.pory"
-Route_135_Lab_Movement_JamesFacePlayer:
-# 558 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
 # 559 "data/maps/Route135_Lab/scripts.pory"
+Route_135_Lab_Movement_JamesFacePlayer:
+# 560 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 561 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 562 "data/maps/Route135_Lab/scripts.pory"
+# 564 "data/maps/Route135_Lab/scripts.pory"
 Route_135_Lab_Movement_JamesReturnsToComputer:
-# 563 "data/maps/Route135_Lab/scripts.pory"
+# 565 "data/maps/Route135_Lab/scripts.pory"
 	walk_up
-# 563 "data/maps/Route135_Lab/scripts.pory"
+# 565 "data/maps/Route135_Lab/scripts.pory"
 	walk_up
-# 563 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 563 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 564 "data/maps/Route135_Lab/scripts.pory"
-	walk_left
-# 564 "data/maps/Route135_Lab/scripts.pory"
-	walk_left
 # 565 "data/maps/Route135_Lab/scripts.pory"
 	walk_up
 # 565 "data/maps/Route135_Lab/scripts.pory"
 	walk_up
 # 566 "data/maps/Route135_Lab/scripts.pory"
 	walk_left
+# 566 "data/maps/Route135_Lab/scripts.pory"
+	walk_left
 # 567 "data/maps/Route135_Lab/scripts.pory"
 	walk_up
 # 567 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 568 "data/maps/Route135_Lab/scripts.pory"
+	walk_left
+# 569 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 569 "data/maps/Route135_Lab/scripts.pory"
 	walk_up
 	step_end
 
-# 570 "data/maps/Route135_Lab/scripts.pory"
+# 572 "data/maps/Route135_Lab/scripts.pory"
 Route_135_Lab_Movement_PlayerLeaves:
-# 571 "data/maps/Route135_Lab/scripts.pory"
+# 573 "data/maps/Route135_Lab/scripts.pory"
 	walk_down
-# 571 "data/maps/Route135_Lab/scripts.pory"
+# 573 "data/maps/Route135_Lab/scripts.pory"
 	walk_down
-# 571 "data/maps/Route135_Lab/scripts.pory"
+# 573 "data/maps/Route135_Lab/scripts.pory"
 	walk_down
-# 571 "data/maps/Route135_Lab/scripts.pory"
+# 573 "data/maps/Route135_Lab/scripts.pory"
 	walk_down
 	step_end
 
-# 580 "data/maps/Route135_Lab/scripts.pory"
-Route135_Lab_Movement_PlayerGoesToCosmogEast:
-# 581 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
 # 582 "data/maps/Route135_Lab/scripts.pory"
+Route135_Lab_Movement_PlayerGoesToCosmogEast:
+# 583 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 584 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 585 "data/maps/Route135_Lab/scripts.pory"
+# 587 "data/maps/Route135_Lab/scripts.pory"
 Route135_Lab_Movement_PlayerGoesToCosmogNorth:
-# 586 "data/maps/Route135_Lab/scripts.pory"
-	walk_left
-# 587 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
-# 587 "data/maps/Route135_Lab/scripts.pory"
-	walk_up
 # 588 "data/maps/Route135_Lab/scripts.pory"
+	walk_left
+# 589 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 589 "data/maps/Route135_Lab/scripts.pory"
+	walk_up
+# 590 "data/maps/Route135_Lab/scripts.pory"
 	walk_in_place_down
 	step_end
 
 Route_135_Lab_EventScript_Meltan::
-# 647 "data/maps/Route135_Lab/scripts.pory"
-	lockall
-# 648 "data/maps/Route135_Lab/scripts.pory"
-	showmonpic SPECIES_MELTAN, 10, 4
 # 649 "data/maps/Route135_Lab/scripts.pory"
+	lockall
+# 650 "data/maps/Route135_Lab/scripts.pory"
+	showmonpic SPECIES_MELTAN, 10, 4
+# 651 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route_135_Lab_EventScript_Meltan_Text_0, MSGBOX_YESNO
-# 653 "data/maps/Route135_Lab/scripts.pory"
+# 655 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route_135_Lab_EventScript_Meltan_2
-# 676 "data/maps/Route135_Lab/scripts.pory"
+# 678 "data/maps/Route135_Lab/scripts.pory"
 	hidemonpic
-# 677 "data/maps/Route135_Lab/scripts.pory"
+# 679 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route_135_Lab_EventScript_Meltan_Text_2
 Route_135_Lab_EventScript_Meltan_1:
-# 680 "data/maps/Route135_Lab/scripts.pory"
+# 682 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
-# 681 "data/maps/Route135_Lab/scripts.pory"
+# 683 "data/maps/Route135_Lab/scripts.pory"
 	releaseall
 	end
 
 Route_135_Lab_EventScript_Meltan_2:
-# 654 "data/maps/Route135_Lab/scripts.pory"
-	givemon SPECIES_MELTAN, 75
-# 655 "data/maps/Route135_Lab/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN
 # 656 "data/maps/Route135_Lab/scripts.pory"
+	givemon SPECIES_MELTAN, 75
+# 657 "data/maps/Route135_Lab/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN
+# 658 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Route_135_Lab_EventScript_Meltan_5
-# 663 "data/maps/Route135_Lab/scripts.pory"
+# 665 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Route_135_Lab_EventScript_Meltan_6
-# 671 "data/maps/Route135_Lab/scripts.pory"
+# 673 "data/maps/Route135_Lab/scripts.pory"
 	hidemonpic
-# 672 "data/maps/Route135_Lab/scripts.pory"
+# 674 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto Route_135_Lab_EventScript_Meltan_1
 
 Route_135_Lab_EventScript_Meltan_5:
-# 657 "data/maps/Route135_Lab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 658 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 659 "data/maps/Route135_Lab/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	playfanfare MUS_OBTAIN_ITEM
 # 660 "data/maps/Route135_Lab/scripts.pory"
-	setflag FLAG_RECEIVED_MELTAN
+	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 661 "data/maps/Route135_Lab/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 662 "data/maps/Route135_Lab/scripts.pory"
+	setflag FLAG_RECEIVED_MELTAN
+# 663 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMon
 	goto Route_135_Lab_EventScript_Meltan_1
 
 Route_135_Lab_EventScript_Meltan_6:
-# 664 "data/maps/Route135_Lab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 665 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 666 "data/maps/Route135_Lab/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	playfanfare MUS_OBTAIN_ITEM
 # 667 "data/maps/Route135_Lab/scripts.pory"
-	setflag FLAG_RECEIVED_MELTAN
+	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 668 "data/maps/Route135_Lab/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 669 "data/maps/Route135_Lab/scripts.pory"
+	setflag FLAG_RECEIVED_MELTAN
+# 670 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMonBox
 	goto Route_135_Lab_EventScript_Meltan_1
 
 
 Route_135_Lab_EventScript_TypeNull::
-# 686 "data/maps/Route135_Lab/scripts.pory"
-	lockall
-# 687 "data/maps/Route135_Lab/scripts.pory"
-	showmonpic SPECIES_TYPE_NULL, 10, 4
 # 688 "data/maps/Route135_Lab/scripts.pory"
+	lockall
+# 689 "data/maps/Route135_Lab/scripts.pory"
+	showmonpic SPECIES_TYPE_NULL, 10, 4
+# 690 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route_135_Lab_EventScript_TypeNull_Text_0, MSGBOX_YESNO
-# 692 "data/maps/Route135_Lab/scripts.pory"
+# 694 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route_135_Lab_EventScript_TypeNull_2
-# 715 "data/maps/Route135_Lab/scripts.pory"
+# 717 "data/maps/Route135_Lab/scripts.pory"
 	hidemonpic
-# 716 "data/maps/Route135_Lab/scripts.pory"
+# 718 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route_135_Lab_EventScript_Meltan_Text_2
 Route_135_Lab_EventScript_TypeNull_1:
-# 719 "data/maps/Route135_Lab/scripts.pory"
+# 721 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
-# 720 "data/maps/Route135_Lab/scripts.pory"
+# 722 "data/maps/Route135_Lab/scripts.pory"
 	releaseall
 	end
 
 Route_135_Lab_EventScript_TypeNull_2:
-# 693 "data/maps/Route135_Lab/scripts.pory"
-	givemon SPECIES_TYPE_NULL, 70
-# 694 "data/maps/Route135_Lab/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYPE_NULL
 # 695 "data/maps/Route135_Lab/scripts.pory"
+	givemon SPECIES_TYPE_NULL, 70
+# 696 "data/maps/Route135_Lab/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYPE_NULL
+# 697 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Route_135_Lab_EventScript_TypeNull_5
-# 702 "data/maps/Route135_Lab/scripts.pory"
+# 704 "data/maps/Route135_Lab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Route_135_Lab_EventScript_TypeNull_6
-# 710 "data/maps/Route135_Lab/scripts.pory"
+# 712 "data/maps/Route135_Lab/scripts.pory"
 	hidemonpic
-# 711 "data/maps/Route135_Lab/scripts.pory"
+# 713 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto Route_135_Lab_EventScript_TypeNull_1
 
 Route_135_Lab_EventScript_TypeNull_5:
-# 696 "data/maps/Route135_Lab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 697 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 698 "data/maps/Route135_Lab/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	playfanfare MUS_OBTAIN_ITEM
 # 699 "data/maps/Route135_Lab/scripts.pory"
-	setflag FLAG_RECEIVED_TYPE_NULL
+	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 700 "data/maps/Route135_Lab/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 701 "data/maps/Route135_Lab/scripts.pory"
+	setflag FLAG_RECEIVED_TYPE_NULL
+# 702 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMon
 	goto Route_135_Lab_EventScript_TypeNull_1
 
 Route_135_Lab_EventScript_TypeNull_6:
-# 703 "data/maps/Route135_Lab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 704 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 705 "data/maps/Route135_Lab/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	playfanfare MUS_OBTAIN_ITEM
 # 706 "data/maps/Route135_Lab/scripts.pory"
-	setflag FLAG_RECEIVED_TYPE_NULL
+	msgbox Route_135_Lab_EventScript_Meltan_Text_1
 # 707 "data/maps/Route135_Lab/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 708 "data/maps/Route135_Lab/scripts.pory"
+	setflag FLAG_RECEIVED_TYPE_NULL
+# 709 "data/maps/Route135_Lab/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMonBox
 	goto Route_135_Lab_EventScript_TypeNull_1
 
@@ -1057,121 +1061,121 @@ Route135_Lab_EventScript_EndUltraSpace_Text_1:
 	.string "I think I understand why JIMMY gave\n me this job now…$"
 
 Route135_Lab_EventScript_ToAreaZero_Text_0:
-# 259 "data/maps/Route135_Lab/scripts.pory"
+# 261 "data/maps/Route135_Lab/scripts.pory"
 	.string "Ah, intern. Did you change your mind?$"
 
 Route135_Lab_EventScript_ToAreaZero_Text_1:
-# 266 "data/maps/Route135_Lab/scripts.pory"
+# 268 "data/maps/Route135_Lab/scripts.pory"
 	.string "Resplendent!\n Go stand next to COSMOG.\p It shall transport you.$"
 
 Route135_Lab_EventScript_ToAreaZero_Text_2:
-# 283 "data/maps/Route135_Lab/scripts.pory"
+# 285 "data/maps/Route135_Lab/scripts.pory"
 	.string "…I see. Well, you know where\n to find me if you change your mind.$"
 
 Route135_Lab_EventScript_TalkToCosmog_Text_0:
-# 297 "data/maps/Route135_Lab/scripts.pory"
+# 299 "data/maps/Route135_Lab/scripts.pory"
 	.string "Ah, intern.\n It seems the survey went well.\l Thanks for the great data.\p Well, other than that, there hasn't\n been any significant new developments.\p But on another trip to ULTRA SPACE, we\n found these devices.\p I couldn't find any use for them, but\n maybe you can.$"
 
 Route135_Lab_EventScript_TalkToCosmog_Text_1:
-# 310 "data/maps/Route135_Lab/scripts.pory"
+# 312 "data/maps/Route135_Lab/scripts.pory"
 	.string "If you'd like to return to one of the\n previous worlds, COSMOG is ready.\l It seems to trust you now.$"
 
 Route135_Lab_EventScript_TalkToCosmog_Text_2:
-# 317 "data/maps/Route135_Lab/scripts.pory"
+# 319 "data/maps/Route135_Lab/scripts.pory"
 	.string "I'm busy, so I'll leave it to you.\n You know the routine by now.$"
 
 Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero_Text_0:
-# 330 "data/maps/Route135_Lab/scripts.pory"
+# 332 "data/maps/Route135_Lab/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Where would you like to go?$"
 
 Route_135_Lab_EventScript_Meltan_Text_0:
-# 649 "data/maps/Route135_Lab/scripts.pory"
+# 651 "data/maps/Route135_Lab/scripts.pory"
 	.string "{PLAYER} checked the POKé BALL.\p It contained the POKéMON\n MELTAN.\p Take the POKé BALL?$"
 
 Route_135_Lab_EventScript_Meltan_Text_1:
-# 658 "data/maps/Route135_Lab/scripts.pory"
+# 660 "data/maps/Route135_Lab/scripts.pory"
 	.string "{PLAYER} took the POKéMON!$"
 
 Route_135_Lab_EventScript_Meltan_Text_2:
-# 677 "data/maps/Route135_Lab/scripts.pory"
+# 679 "data/maps/Route135_Lab/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"
 
 Route_135_Lab_EventScript_TypeNull_Text_0:
-# 688 "data/maps/Route135_Lab/scripts.pory"
+# 690 "data/maps/Route135_Lab/scripts.pory"
 	.string "{PLAYER} checked the POKé BALL.\p It contained the POKéMON\n TYPE NULL.\p Take the POKé BALL?$"
 
 Route135_Lab_Text_Maniac1::
-# 383 "data/maps/Route135_Lab/scripts.pory"
+# 385 "data/maps/Route135_Lab/scripts.pory"
 	.string "Hm? Are you the new intern?$"
 
 Route135_Lab_Text_Maniac2::
-# 387 "data/maps/Route135_Lab/scripts.pory"
+# 389 "data/maps/Route135_Lab/scripts.pory"
 	.string "Resplendent!\n You're just in time.\l Come with me.$"
 
 Route135_Lab_Text_Maniac3::
-# 393 "data/maps/Route135_Lab/scripts.pory"
+# 395 "data/maps/Route135_Lab/scripts.pory"
 	.string "I presume you're already aware of\n what's being researched here… but\l to reiterate, I'm currently looking\l into the possibility of traveling\l to new worlds.\p In fact, I discovered the existence of\n different dimensions parallel to ours.\p I've named the endless expanse\n between these worlds ULTRA SPACE.\p Around the world, there have been\n rifts across the region that connect\l our world to this ULTRA SPACE.$"
 
 Route135_Lab_Text_Maniac4::
-# 408 "data/maps/Route135_Lab/scripts.pory"
+# 410 "data/maps/Route135_Lab/scripts.pory"
 	.string "I've reached a breakthrough in my\n experiments and now plan to attempt\l to open a rift to the ULTRA SPACE.\p You made it just in time.\n Quite fortuitous, indeed.$"
 
 Route135_Lab_Text_James::
-# 421 "data/maps/Route135_Lab/scripts.pory"
+# 423 "data/maps/Route135_Lab/scripts.pory"
 	.string "JAMES: {PLAYER}?\n What are you doing here?$"
 
 Route135_Lab_Text_Maniac5::
-# 426 "data/maps/Route135_Lab/scripts.pory"
+# 428 "data/maps/Route135_Lab/scripts.pory"
 	.string "MANIAC: Ah, so you two are\n already acquainted.\p Then let us forgo the formalities and\n get right to the experiment!$"
 
 Route135_Lab_Text_Maniac6::
-# 481 "data/maps/Route135_Lab/scripts.pory"
+# 483 "data/maps/Route135_Lab/scripts.pory"
 	.string "This machine I've built should be\n capable of creating the rift…\l Let us begin.$"
 
 Route135_Lab_Text_Maniac7::
-# 487 "data/maps/Route135_Lab/scripts.pory"
+# 489 "data/maps/Route135_Lab/scripts.pory"
 	.string "It's working! It's really working!\n RESPLENDENT!\p I knew I was a genius!\n Wait… No! Something's wrong!$"
 
 Route135_Lab_Text_ManiacNo::
-# 494 "data/maps/Route135_Lab/scripts.pory"
+# 496 "data/maps/Route135_Lab/scripts.pory"
 	.string "I see…\n Well, this is a private LAB.\p If you're not going to help me with\n my research, you'll have to leave.$"
 
 Route135_Lab_Text_Maniac8::
-# 501 "data/maps/Route135_Lab/scripts.pory"
+# 503 "data/maps/Route135_Lab/scripts.pory"
 	.string "Great work COSMOG!\n These discoveries are monumental!\p I must log all my findings this instant!\n Come with me, COSMOG!$"
 
 Route135_Lab_Text_Maniac9::
-# 508 "data/maps/Route135_Lab/scripts.pory"
+# 510 "data/maps/Route135_Lab/scripts.pory"
 	.string "MANIAC: Thanks for your work, intern.\n You're free to do as you would.\p I shall contact you if your assistance\n is required again.$"
 
 Route135_Lab_Text_James2::
-# 515 "data/maps/Route135_Lab/scripts.pory"
+# 517 "data/maps/Route135_Lab/scripts.pory"
 	.string "JAMES: …He's gonna be like that for a\n while.\p Well, either way, that really was a crazy\n experience.\p What are you going to do now, {PLAYER}?\n I'm going to stay and help out more.\l I think if I do, I'll find the answers\l I'm looking for.$"
 
 Route135_Lab_Text_James3::
-# 526 "data/maps/Route135_Lab/scripts.pory"
+# 528 "data/maps/Route135_Lab/scripts.pory"
 	.string "Anyways, like the PROF. said, we'll let\n let you know if anything else happens.\p See ya, {PLAYER}.$"
 
 Route_135_Lab_Text_ImGoingToStayHere::
-# 532 "data/maps/Route135_Lab/scripts.pory"
+# 534 "data/maps/Route135_Lab/scripts.pory"
 	.string "I don't know how long I'm going to\n stay here but I don't mind it.\p Yeah, it's in a rural area, but the people\n are nice.\p The PROF.'s a little weird, but I can\n tolerate it.$"
 
 Route_135_Lab_Text_ImBusy::
-# 574 "data/maps/Route135_Lab/scripts.pory"
+# 576 "data/maps/Route135_Lab/scripts.pory"
 	.string "Salutations, intern.\n There's no new breakthroughs yet.\p I'm busy now, so come back later.$"
 
 Route135_Lab_Text_ManiacIntroduceAreaZero::
-# 591 "data/maps/Route135_Lab/scripts.pory"
+# 593 "data/maps/Route135_Lab/scripts.pory"
 	.string "Ah, intern.\n Salutations.\p I assume JAMES provided you with the\n relevant information, yes?\p As you saw, COSMOG is capable of\n traversing the ULTRA SPACE at will.\p With extensive testing and research,\n we've been able to survey the ULTRA\l SPACE further.\p During these surveys, we came across\n another rift that seems to lead to\l another world…\p Seeing as you were crazy enough to\n walk across the sky, I presume you'd\l be open to being the first human to\l explore this new world, yes?$"
 
 Route135_Lab_Text_ManiacExplainCosmog::
-# 610 "data/maps/Route135_Lab/scripts.pory"
+# 612 "data/maps/Route135_Lab/scripts.pory"
 	.string "The camera I put on COSMOG showed\n the world has a somewhat strange\l composition… Although there are signs\l that it was once inhabited by humans,\l so it should be safe to traverse.\p COSMOG will be with you, so if you want\n to return to the lab, just ask it.\p Now, it is time! Godspeed, intern!\n COSMOG, if you will!$"
 
 Route_135_Lab_Text_ImBusyTalkToCosmog::
-# 622 "data/maps/Route135_Lab/scripts.pory"
+# 624 "data/maps/Route135_Lab/scripts.pory"
 	.string "Ah, intern.\n Sadly, there's no new discoveries.\p Just ask COSMOG if you need to return\n to the ULTRA SPACE.\p It seems to trust you enough without\n needing my intervention any further.$"
 
 Route_135_Lab_PokenavText_JamesComeBackToTheLab::
-# 631 "data/maps/Route135_Lab/scripts.pory"
+# 633 "data/maps/Route135_Lab/scripts.pory"
 	.string "… … … … … …\n … … … … … Beep!\p {PLAYER}?\n It's JAMES.\p The PROF. says there's a new\n breakthrough in his research.\p He thinks you'll be interested\n in helping with his experiment.\p Can you come to the LAB when\n you have a chance?\p … … … … … …\n … … … … … Click!$"

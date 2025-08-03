@@ -832,9 +832,9 @@
 #define TRAINER_DAVE                        826 
 #define TRAINER_JIMMY                       827
 #define TRAINER_BENNIS_4                    828
-#define TRAINER_CRISTIN_3                   829 // free
-#define TRAINER_CRISTIN_4                   830 // free
-#define TRAINER_CRISTIN_5                   831 // free
+#define TRAINER_BERTHO                      829
+#define TRAINER_BENSON                      830
+#define TRAINER_PANINI_2                    831
 #define TRAINER_FERNANDO_2                  832 // free
 #define TRAINER_FERNANDO_3                  833 // free
 #define TRAINER_FERNANDO_4                  834 // free

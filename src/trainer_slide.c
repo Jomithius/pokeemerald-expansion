@@ -160,7 +160,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_FLANNERY_2] = // Kai
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay!\nI'm ready to cook!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, LUME!\nLet's cook!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_NORMAN_2] = // Luna
         {
@@ -180,7 +180,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_ARIA] = // Aria
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TOTODILE!\nIt's time to draw the SACRED BLADE!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Bear witness to the power of the\nSACRED BLADE!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_JUAN_2] = // Joey
         {
@@ -196,15 +196,17 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_PHOEBE] = // Lina
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("ALUXRA!\n Get this over with! Hmph!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("LUXIFER!\nTake care of this so I can go read!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_LINA] = // Lina
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("ALUXRA!\n Get this over with! Hmph!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("LUXIFER!\nGet this over with! Hmph!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_EUGENIA] = // Eugenia
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("ALUXRA!\nFuck them up! Hmph!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("Hmph!\nThat's karma, you little rat!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("SHENRON!\nMake them pay!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hmph!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_GLACIA] = // Xion
         {
@@ -220,7 +222,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_DAVE] = // Dave
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("MIKE TRUK, make them lose!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("BOBSON DUGNUTT, please make them lose.\nThank.{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WALLACE] = // Jimmy
         {

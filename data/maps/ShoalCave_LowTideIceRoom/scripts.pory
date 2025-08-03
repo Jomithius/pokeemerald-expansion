@@ -23,7 +23,7 @@ script ShoalCave_LowTideIceRoom_EventScript_Blake{
 }
 
 script ShoalCave_LowTideIceRoom_Trigger_Aria{
-    lock
+    lockall
     playse(SE_M_DOUBLE_TEAM)
     delay(20)
     msgbox("They're swinging a sword.\n
@@ -32,7 +32,7 @@ script ShoalCave_LowTideIceRoom_Trigger_Aria{
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
     waitmovement(0)
-    release
+    releaseall
     end
 }
 
@@ -43,7 +43,7 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
     delay(20)
     playse(SE_M_DOUBLE_TEAM)
     waitse
-    playmoncry(SPECIES_TOTOKNIGHT, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER)
     msgbox("ARGH!\n
         AAAARGH!", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -85,32 +85,32 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
 
 script ShoalCave_LowTideIceRoom_EventScript_AriaPosition1{
     if(var(VAR_TEMP_1) == DIR_SOUTH){
-        applymovement(3, ShoalCave_LowTideIceRoom_Movement_WalkBackDown)
+        applymovement(VAR_LAST_TALKED, ShoalCave_LowTideIceRoom_Movement_WalkBackDown)
     }
     elif(var(VAR_TEMP_1) == DIR_WEST){
-        applymovement(3, ShoalCave_LowTideIceRoom_Movement_WalkBackLeft)
+        applymovement(VAR_LAST_TALKED, ShoalCave_LowTideIceRoom_Movement_WalkBackLeft)
     }
     else{
-        applymovement(3, ShoalCave_LowTideIceRoom_Movement_WalkBackRight)
+        applymovement(VAR_LAST_TALKED, ShoalCave_LowTideIceRoom_Movement_WalkBackRight)
     }
     return
 }
 
 script ShoalCave_LowTideIceRoom_EventScript_AriaPosition2{
     if(var(VAR_TEMP_1) == DIR_SOUTH){
-        applymovement(3, Common_Movement_WalkUp)
-        waitmovement(3)
-        applymovement(3, Common_Movement_FaceUp)
+        applymovement(VAR_LAST_TALKED, Common_Movement_WalkUp)
+        waitmovement(VAR_LAST_TALKED)
+        applymovement(VAR_LAST_TALKED, Common_Movement_FaceUp)
     }
     elif(var(VAR_TEMP_1) == DIR_WEST){
-        applymovement(3, Common_Movement_WalkRight)
-        waitmovement(3)
-        applymovement(3, Common_Movement_FaceRight)
+        applymovement(VAR_LAST_TALKED, Common_Movement_WalkRight)
+        waitmovement(VAR_LAST_TALKED)
+        applymovement(VAR_LAST_TALKED, Common_Movement_FaceRight)
     }
     else{
-        applymovement(3, Common_Movement_WalkLeft)
-        waitmovement(3)
-        applymovement(3, Common_Movement_FaceLeft)
+        applymovement(VAR_LAST_TALKED, Common_Movement_WalkLeft)
+        waitmovement(VAR_LAST_TALKED)
+        applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
     }
     return
 }

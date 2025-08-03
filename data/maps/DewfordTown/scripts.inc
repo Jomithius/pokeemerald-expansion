@@ -1617,7 +1617,7 @@ DewfordTown_EventScript_Man::
 	compare VAR_BENNIS_DOJO_STATE, 2
 	goto_if_eq DewfordTown_EventScript_Man_3
 # 814 "data/maps/DewfordTown/scripts.pory"
-	compare VAR_BENNIS_DOJO_STATE, 6
+	compare VAR_BENNIS_DOJO_STATE, 5
 	goto_if_ge DewfordTown_EventScript_Man_4
 # 818 "data/maps/DewfordTown/scripts.pory"
 	msgbox DewfordTown_Text_GYM_Relocated, MSGBOX_NPC
@@ -1654,7 +1654,7 @@ DewfordTown_Text_BennisLeft::
 
 DewfordTown_Text_BennisReturn::
 # 839 "data/maps/DewfordTown/scripts.pory"
-	.string "Those three are back again.\n Did they really like this quiet town\l that much?$"
+	.string "Those ninjas are back again!\n Did they really like this quiet town\l that much?$"
 
 DewfordTown_Text_GYM_Relocated::
 # 845 "data/maps/DewfordTown/scripts.pory"

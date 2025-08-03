@@ -1,7 +1,11 @@
-raw`EverGrandeCity_PhoebesRoom_MapScripts::
+raw`.set LOCALID_RAYQUAZA, 3
+
+EverGrandeCity_PhoebesRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_PhoebesRoom_OnLoad
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_PhoebesRoom_OnWarp
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_PhoebesRoom_OnFrame
+    map_script MAP_SCRIPT_ON_RESUME, EverGrandeCity_PhoebesRoom_OnResume
+    map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_Hall_OnTransition
 	.byte 0
 
 EverGrandeCity_PhoebesRoom_OnWarp:
@@ -35,6 +39,16 @@ EverGrandeCity_PhoebesRoom_EventScript_ResetAdvanceToNextRoom::
 EverGrandeCity_PhoebesRoom_EventScript_CloseDoor::
 	call PokemonLeague_EliteFour_EventScript_CloseDoor
 	return
+
+EverGrandeCity_PhoebesRoom_OnResume:
+    call_if_set FLAG_DEFEATED_LINA, EverGrandeCity_RemoveEliteFourPokemon
+    call_if_set FLAG_DEFEATED_EUGENIA, EverGrandeCity_RemoveRayquaza
+    end
+
+EverGrandeCity_RemoveRayquaza:
+    removeobject LOCALID_RAYQUAZA
+    removeobject 2
+    return
 
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
 	lock
@@ -77,6 +91,7 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 script EverGrandeCity_PhoebesRoom_EventScript_Lina{
     lock
     goto_if_set(FLAG_DEFEATED_EUGENIA, EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech)
+    goto_if_set(FLAG_DEFEATED_LINA, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
     goto_if_set(FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
     delay(16)
     playse(SE_PIN)
@@ -85,12 +100,13 @@ script EverGrandeCity_PhoebesRoom_EventScript_Lina{
     delay(20)
     faceplayer
     if(var(VAR_LINA_TALKED_TO) == 2){
-        goto_if_set(FLAG_ELITE_FOUR_FINAL_BATTLE, EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss)
+        goto_if_set(FLAG_SYS_FINAL_REMATCH, EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss)
         msgbox(EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2, MSGBOX_DEFAULT)
 	    trainerbattle_no_intro(TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
 	    goto(EverGrandeCity_PhoebesRoom_EventScript_Defeated)
     }
     else{
+        goto_if_set(FLAG_SYS_FINAL_REMATCH, EverGrandeCity_PhoebesRoom_EventScript_LinaFinalBattle)
 	    msgbox(EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
 	    trainerbattle_no_intro(TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
 	    goto(EverGrandeCity_PhoebesRoom_EventScript_Defeated)
@@ -98,8 +114,33 @@ script EverGrandeCity_PhoebesRoom_EventScript_Lina{
     end
 }
 
+script EverGrandeCity_PhoebesRoom_EventScript_LinaFinalBattle{
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    msgbox(EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2, MSGBOX_AUTOCLOSE)
+    waitmessage
+    clearflag(FLAG_TEMP_E)
+    call(EliteFour_EventScript_PlayerGetsInPosition)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_LUXRAY, CRY_MODE_ENCOUNTER)
+	waitmoncry
+    setflag(FLAG_DEFEATED_ELITE_4_PHOEBE)
+	setflag(FLAG_DEFEATED_LINA)
+    trainerbattle_no_intro(TRAINER_LINA, EverGrandeCity_PhoebesRoom_Text_Defeat)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
+	end
+}
+
 script EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss{
     msgbox(EverGrandeCity_PhoebesRoom_Text_LinaStillGoingIntoHouses, MSGBOX_YESNO)
+    waitmessage
     if(var(VAR_RESULT) == YES){
         goto(EverGrandeCity_PhoebesRoom_EventScript_LinaEevee)
         end
@@ -112,43 +153,89 @@ script EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss{
 
 script EverGrandeCity_PhoebesRoom_EventScript_LinaEevee{
     msgbox(EverGrandeCity_PhoebesRoom_Text_LinaDidYouTakeEevee, MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES){
-        goto(EverGrandeCity_PhoebesRoom_EventScript_LinaReally)
-        end
-    }
-    else{
-	    goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
-        end
-    }
+    waitmessage
+    goto_if_eq(VAR_RESULT, YES, EverGrandeCity_PhoebesRoom_EventScript_LinaReally)
+    special(IsEeveeInParty)
+	msgbox("I don't believe you…\n
+        Let me check your POKéMON.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    playse(SE_SUDOWOODO_SHAKE)
+    waitse
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    goto_if_eq(VAR_RESULT, TRUE, EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
+    end
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_LinaReally{
     playbgm(MUS_NONE, FALSE)
-    msgbox(EverGrandeCity_PhoebesRoom_Text_LinaReally, MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES){
-        playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
-        msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaIntro, MSGBOX_DEFAULT)
-	    trainerbattle_no_intro(TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat)
-	    goto(EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated)
-        end
-    }
-    else{
-	    goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
-        end
-    }
+    msgbox(EverGrandeCity_PhoebesRoom_Text_LinaReally, MSGBOX_DEFAULT)
+    waitmessage
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Yup. I'd do it again too.", "No. I was just kidding!")
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle)
+    special(IsEeveeInParty)
+    msgbox("I don't believe you…\n
+        Let me check your POKéMON.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    playse(SE_SUDOWOODO_SHAKE)
+    waitse
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    goto_if_eq(VAR_RESULT, TRUE, EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
+    end
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle{
+    playbgm(MUS_ENCOUNTER_EXDEATH, FALSE)
+    msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaIntro, MSGBOX_AUTOCLOSE)
+    waitmessage
+    clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    call(EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
+	waitmoncry
+    setflag(FLAG_DEFEATED_EUGENIA)
+	trainerbattle_no_intro(TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated)
+    end
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_LinaNo{
-    msgbox(EverGrandeCity_PhoebesRoom_Text_LinaNo, MSGBOX_DEFAULT)
-	trainerbattle_no_intro(TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
-	goto(EverGrandeCity_PhoebesRoom_EventScript_Defeated)
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+    msgbox(EverGrandeCity_PhoebesRoom_Text_LinaNo, MSGBOX_AUTOCLOSE)
+    waitmessage
+    clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(EliteFour_EventScript_PlayerGetsInPosition)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_LUXRAY, CRY_MODE_ENCOUNTER)
+	waitmoncry
+    setflag(FLAG_DEFEATED_ELITE_4_PHOEBE)
+	setflag(FLAG_DEFEATED_LINA)
+    trainerbattle_no_intro(TRAINER_LINA, EverGrandeCity_PhoebesRoom_Text_Defeat)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
     end
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated{
     setflag(FLAG_DEFEATED_ELITE_4_PHOEBE)
-    setflag(FLAG_DEFEATED_EUGENIA)
     setvar(VAR_LINA_TALKED_TO, 3)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
 	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech, MSGBOX_DEFAULT)
 	release
@@ -156,14 +243,89 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated{
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech{
+    applymovement(VAR_LAST_TALKED, EverGrandeCity_PhoebesRoom_Movement_FaceAwayPlayer)
+    waitmovement(0)
     msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech, MSGBOX_DEFAULT)
     release
     end
 }
 
+script EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle{
+    applymovement(2, Common_Movement_EnterPokeball)
+    waitmovement(2)
+    removeobject(2)
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+	switch (var(VAR_RESULT)) {
+        case DIR_NORTH:
+            applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth)
+			waitmovement(0)
+			break
+        case DIR_SOUTH:
+			applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionSouth)
+			delay(8)
+			applymovement(VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown)
+			waitmovement(OBJ_EVENT_ID_PLAYER)
+			break
+        case DIR_WEST:
+			applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionWest)
+			delay(8)
+			applymovement(VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown)
+			waitmovement(OBJ_EVENT_ID_PLAYER)
+			break
+        default:
+            applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth)
+			waitmovement(0)
+    }
+	clearflag(FLAG_TEMP_E)
+	callnative(UpdateFollowingPokemon)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    waitse
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
+    waitmovement(0)
+	fadescreen(FADE_FROM_WHITE)
+    msgbox("Hmph! I'm going to do everything I\n
+        can to make you pay!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    waitse
+    clearflag(FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM)
+    addobject(LOCALID_RAYQUAZA)
+	fadescreen(FADE_FROM_WHITE)
+    delay(30)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExclamationMark)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_PhoebesRoom_Movement_PlayerStepBack)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_PhoebesRoom_Movement_PlayerStepBack)
+	applymovement(LOCALID_RAYQUAZA, EverGrandeCity_Movement_EliteFourPokemonGetsInPosition)
+    waitmovement(LOCALID_RAYQUAZA)
+    delay(30)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    delay(60)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_Movement_PlayerPokemonGetsInPosition)
+	waitmovement(0)
+	delay(30)
+	return
+}
+
 
 text EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2{
-    "Wha-\n
+    "Wha-!\n
     Oh, it's you again.\p
     Let's get this over with so I can\n
     go back to reading. Hmph!"
@@ -171,10 +333,11 @@ text EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2{
 
 text EverGrandeCity_PhoebesRoom_Text_LinaStillGoingIntoHouses{
     "Wha-!\n
-    You again?!\l
-    Right when I was getting to the good part!\p
-    I thought I locked the door this time, but\n
-    you would probably break in either way.\p
+    You again?!\p
+    Right when I was getting to\n
+    the good part!\p
+    I thought I locked the door this time…\n
+    but you'd probably break in either way.\p
     Are you still going into random peoples'\n
     houses?"
 }
@@ -183,16 +346,20 @@ text EverGrandeCity_PhoebesRoom_Text_LinaDidYouTakeEevee{
     "Hmph! Of course you are.\p
     They still haven't found my EEVEE,\n
     by the way…\p
-    So be honest. Was it you who took it?"
+    So be honest.\n
+    Was it you?"
 }
 
 text EverGrandeCity_PhoebesRoom_Text_LinaReally{
-    "… Really?"
+    "…\p
+    Really?"
 }
 
 text EverGrandeCity_PhoebesRoom_Text_EugeniaIntro{
-    "You little-\p
-    What the fuck is wrong with you?!\n
+    "You little-\n
+    What the fuck is wrong with you?!\l
+    Didn't your mother raise you better?!\p
+    You should know it's wrong to steal!\n
     I'm going to crush you, you dirty thief!"
 }
 
@@ -220,4 +387,14 @@ script EverGrandeCity_PhoebesRoom_EventScript_Luxray{
 	applymovement(2, Common_Movement_FaceOriginalDirection)
 	release
 	end
+}
+
+movement EverGrandeCity_PhoebesRoom_Movement_PlayerStepBack{
+    lock_facing_direction
+    walk_fast_down
+    unlock_facing_direction
+}
+
+movement EverGrandeCity_PhoebesRoom_Movement_FaceAwayPlayer{
+    face_away_player
 }

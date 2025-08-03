@@ -10,6 +10,7 @@ EverGrandeCity_PokemonLeague_1F_MapScripts::
 @ custom
 EverGrandeCity_PokemonLeague_1F_OnTransition:
 	clearflag FLAG_SYS_DYNAMIC_LEVELS
+	setflag FLAG_TEMP_E
 	setrespawn HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE
 	setflag FLAG_LANDMARK_POKEMON_LEAGUE
 	call_if_unset FLAG_ENTERED_ELITE_FOUR, EverGrandeCity_PokemonLeague_1F_EventScript_GuardsBlockDoor
@@ -324,4 +325,16 @@ mart EverGrandeCity_PokemonLeague_1F_DrivesPokemart{
 	ITEM_DARK_MEMORY 
 	ITEM_STEEL_MEMORY 
 	ITEM_FAIRY_MEMORY 
+}
+
+script EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning{
+	lockall
+	msgbox("{COLOR RED}{SHADOW LIGHT_RED}WARNING\p
+		{COLOR BLUE}{SHADOW LIGHT_BLUE}Once you enter, there's no\n
+		going back.\p
+		Make sure you're ready.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setvar(VAR_FINAL_REMATCH_STATE, 6)
+	releaseall
+	end
 }

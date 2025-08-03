@@ -14,6 +14,7 @@ mapscripts Baldesia_MainHouse_MapScripts {
         VAR_MOMO_ARIA_STATE, 4: Baldesia_MainHouse_EventScript_GoToAltar
         VAR_MOMO_ARIA_STATE, 7: Baldesia_MainHouse_EventScript_LohanThanks
     ]
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE: Baldesia_MainHouse_OnWarp
 }
 
 script Baldesia_MainHouse_OnTransition{
@@ -22,6 +23,11 @@ script Baldesia_MainHouse_OnTransition{
     call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateNPCPos)
     call_if_eq(VAR_MOMO_ARIA_STATE, 6, Baldesia_MainHouse_UpdateNPCPos)
     call_if_eq(VAR_MOMO_ARIA_STATE, 7, Baldesia_MainHouse_UpdateAriaPos)
+    end
+}
+
+script Baldesia_MainHouse_OnWarp{
+    turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
     end
 }
 
@@ -400,6 +406,10 @@ script Baldesia_MainHouse_EventScript_LohanThanks{
     setflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE)
     clearflag(FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO)
     setvar(VAR_MOMO_ARIA_STATE, 8)
+    setvar(VAR_BENNIS_DOJO_STATE, 5)
+    addvar(VAR_FINAL_REMATCH_STATE, 1)
+    setflag(FLAG_SYS_BENNIS_FINAL_REMATCH)
+    setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
     releaseall
     end
 }

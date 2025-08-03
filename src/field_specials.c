@@ -4561,3 +4561,98 @@ void IsGhostTypeInParty(void)
     }
     gSpecialVar_Result = FALSE;
 }
+
+bool32 ShouldDoFinalRematchCall(void)
+{
+    if (VarGet(VAR_FINAL_REMATCH_STATE) == 4)
+    {
+        switch (gMapHeader.mapType)
+        {
+        case MAP_TYPE_TOWN:
+        case MAP_TYPE_CITY:
+        case MAP_TYPE_ROUTE:
+        case MAP_TYPE_OCEAN_ROUTE:
+            if (++(*GetVarPointer(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER)) < 33)
+                return FALSE;
+            break;
+        default:
+            return FALSE;
+        }
+    }
+    else
+    {
+        return FALSE;
+    }
+
+    return TRUE;
+}
+
+void IsEeveeInParty(void)
+{
+    int i;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_EEVEE)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_EEVEE_STARTER)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_ESPEON)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_UMBREON)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_FLAREON)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_VAPOREON)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_LEAFEON)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_SYLVEON)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_GLACEON)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_JOLTEON)
+        {
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+    }
+
+    gSpecialVar_Result = FALSE;
+}

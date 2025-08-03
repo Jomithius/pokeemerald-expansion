@@ -15,8 +15,8 @@
 #define FLAG_TEMP_4      (TEMP_FLAGS_START + 0x4)
 #define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)  // Used for Movement Variables in scripts
 #define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Used for Movement Variables in scripts
-#define FLAG_TEMP_7      (TEMP_FLAGS_START + 0x7)  // Unused Flag
-#define FLAG_TEMP_8      (TEMP_FLAGS_START + 0x8)  // Unused Flag
+#define FLAG_TEMP_7      (TEMP_FLAGS_START + 0x7)  // Used to hide elite four pokemon
+#define FLAG_TEMP_8      (TEMP_FLAGS_START + 0x8)  // Used to hide Champions pokemon
 #define FLAG_TEMP_9      (TEMP_FLAGS_START + 0x9)  // Unused Flag
 #define FLAG_TEMP_A      (TEMP_FLAGS_START + 0xA)  // Unused Flag
 #define FLAG_TEMP_B      (TEMP_FLAGS_START + 0xB)  // Unused Flag
@@ -468,7 +468,7 @@
 #define FLAG_SHOWN_EON_TICKET                0x1AE
 #define FLAG_SHOWN_AURORA_TICKET             0x1AF
 #define FLAG_SHOWN_OLD_SEA_MAP               0x1B0
-#define FLAG_MOVE_TUTOR_TAUGHT_SWAGGER       0x1B1 // functionially unused
+#define FLAG_HIDE_ASAK_BENNIS_DOJO           0x1B1 // used to be swagger tutor
 #define FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT       0x1B2 // functionially unused
 #define FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER   0x1B3 // functionially unused
 #define FLAG_MOVE_TUTOR_TAUGHT_MIMIC         0x1B4 // functionially unused
@@ -1062,18 +1062,18 @@
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2 // changed
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
-#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5 // Unused
+#define FLAG_HIDE_MOMO_SHADOW_CLONE_MOSSDEEP                        0x3F5 // Final Rematches
 #define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
 #define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
 #define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9
 #define FLAG_ITEM_RUSTURFTUNNEL_3F_BRIGHT_POWDER                    0x3FA
 #define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
-#define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC // Unused
+#define FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY                           0x3FC // Final Rematches
 #define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD // changed
 #define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
 #define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
-#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400 // Unused
+#define FLAG_HIDE_DRIVES_CLERK                                      0x400 // Evergrande City
 #define FLAG_ITEM_ROUTE_119_ZINC                                    0x401 // changed
 #define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
 #define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
@@ -1083,7 +1083,7 @@
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408 // changed
 #define FLAG_RECEIVED_TEACUP                                        0x409 // Baldesia Forest
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A // Unused
+#define FLAG_HIDE_PLATES_CLERK                                      0x40A // Evergrande City
 #define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B // Unused
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
@@ -1269,7 +1269,7 @@
 #define FLAG_HIDE_RIVAL_EVERGRANDE_CITY                             0x4BF // James Battle Evergrande City
 #define FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY                     0x4C0 // James Pokemon Evergrande City
 #define FLAG_HIDE_JAMES_RUSTBORO_CITY                               0x4C1 // James Rustboro City after final Rival Battle
-#define FLAG_HIDE_RATDUARDO_LILYCOVE                                0x4C2 // Ratduardo Lilycove Rat Cave
+#define FLAG_HIDE_RATDUARDO_LILYCOVE                                0x4C2 // Ratduardo Lilycove Rat Cave, Shoal Ice Cave Aria if missed
 #define FLAG_HIDE_LILYCOVE_MAE                                      0x4C3 // Mae Lilycove
 #define FLAG_TOGEDEMARU_TOTEM                                       0x4C4 // New Mauville
 #define FLAG_SALAZZLE_TOTEM                                         0x4C5 // Fiery Path
@@ -1279,8 +1279,8 @@
 #define FLAG_ARAQUANID_TOTEM                                        0x4C9 // Route 107
 #define FLAG_BALDESIA_MINI_GAME_START                               0x4CA // To start Minigame in Baldesia
 #define FLAG_RECEIVED_FANTASIA                                      0x4CB // From Dave in Mt Pyre Summit
-#define FLAG_DEFEATED_EUGENIA                                       0x4CC // Lina Superboss
-#define FLAG_ELITE_FOUR_FINAL_BATTLE                                0x4CD // For Elite Four Rematches
+#define FLAG_UNUSED_0x4CC                                           0x4CC // Unused
+#define FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM                             0x4CD // For Eugenia Superboss
 #define FLAG_HIDE_GYM_LEADERS                                       0x4CE // For postgame when gym leaders are out
 #define FLAG_HIDE_RATDUARDO_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
 #define FLAG_HIDE_RATDUARDO_FULLMOON                                0x4D0 // Ratduardo Cutscene Fullmoon Island
@@ -1527,14 +1527,14 @@
 #define FLAG_TALKED_TO_LINA_LAVARIDGE               (SYSTEM_FLAGS + 0x97) // Secret Boss
 #define FLAG_SYS_BIKERS_ROUTE_110                   (SYSTEM_FLAGS + 0x98) // For biker event rt 110
 #define FLAG_SYS_NO_TRAINER_SEE                     (SYSTEM_FLAGS + 0x99) // For debug
-#define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
-#define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag
-#define FLAG_UNUSED_0x8FC                           (SYSTEM_FLAGS + 0x9C) // Unused Flag
-#define FLAG_UNUSED_0x8FD                           (SYSTEM_FLAGS + 0x9D) // Unused Flag
-#define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
-#define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag
-#define FLAG_UNUSED_0x900                           (SYSTEM_FLAGS + 0xA0) // Unused Flag
-#define FLAG_UNUSED_0x901                           (SYSTEM_FLAGS + 0xA1) // Unused Flag
+#define FLAG_SYS_BENNIS_FINAL_REMATCH               (SYSTEM_FLAGS + 0x9A) // Final Battle
+#define FLAG_DEFEATED_MISA                          (SYSTEM_FLAGS + 0x9B) // For E4 Final Battles
+#define FLAG_DEFEATED_LINA                          (SYSTEM_FLAGS + 0x9C) // For E4 Final Battles
+#define FLAG_DEFEATED_XION                          (SYSTEM_FLAGS + 0x9D) // For E4 Final Battles
+#define FLAG_DEFEATED_DAVE                          (SYSTEM_FLAGS + 0x9E) // For E4 Final Battles
+#define FLAG_DEFEATED_CEO                           (SYSTEM_FLAGS + 0x9F) // For E4 Final Battles
+#define FLAG_DEFEATED_RIVAL_BIRCH_LAB               (SYSTEM_FLAGS + 0xA0) // Rematch post game
+#define FLAG_DEFEATED_EUGENIA                       (SYSTEM_FLAGS + 0xA1) // For E4 Final Battles
 #define FLAG_UNUSED_0x902                           (SYSTEM_FLAGS + 0xA2) // Unused Flag
 #define FLAG_UNUSED_0x903                           (SYSTEM_FLAGS + 0xA3) // Unused Flag
 #define FLAG_UNUSED_0x904                           (SYSTEM_FLAGS + 0xA4) // Unused Flag

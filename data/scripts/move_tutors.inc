@@ -1,13 +1,12 @@
 SlateportCity_PokemonFanClub_EventScript_SwaggerTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_SWAGGER, MoveTutor_EventScript_SwaggerTaught
 	msgbox MoveTutor_Text_SwaggerTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SwaggerDeclined
 	@ call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	@ goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SwaggerDeclined
 	msgbox MoveTutor_Text_SwaggerWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_SWAGGER
+	setvar VAR_0x8005, MOVE_TAUNT
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_SwaggerDeclined
 	goto MoveTutor_EventScript_SwaggerTaught

@@ -10,6 +10,7 @@ EverGrandeCity_ChampionsRoom_MapScripts::
 
 EverGrandeCity_ChampionsRoom_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
+	setflag FLAG_TEMP_E
 	end
 
 EverGrandeCity_ChampionsRoom_OnWarp:
@@ -126,7 +127,9 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 	delay 20
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	msgbox EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside, MSGBOX_DEFAULT
+	checkplayergender
+	call_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_SorryBut
+	call_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_SorryLilBro
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_MayCongratulations
 	call_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_BrendanCongratulations
@@ -159,6 +162,14 @@ EverGrandeCity_ChampionsRoom_EventScript_RivalApproachPlayer::
 EverGrandeCity_ChampionsRoom_EventScript_RivalLookBackAndForth::
 	applymovement LOCALID_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalLookBackAndForth
 	waitmovement 0
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_SorryBut::
+	msgbox EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_SorryLilBro::
+	msgbox EverGrandeCity_ChampionsRoom_Text_WallaceSorryLilBro, MSGBOX_DEFAULT
 	return
 
 EverGrandeCity_ChampionsRoom_Movement_PlayerExitStart:
@@ -307,7 +318,14 @@ EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
 	.string "JIMMY: Sorry, but…\p"
 	.string "From here on, only those TRAINERS who\n"
-	.string "have become CHAMPIONS may enter.\p"
+	.string "have become CHAMPIONS can enter.\p"
+	.string "You'll have to wait outside with\n"
+	.string "PROF. BIRCH.$"
+
+EverGrandeCity_ChampionsRoom_Text_WallaceSorryLilBro:
+	.string "JIMMY: Sorry, lil bro.\p"
+	.string "From here on, only those TRAINERS who\n"
+	.string "have become CHAMPIONS can enter.\p"
 	.string "You'll have to wait outside with\n"
 	.string "PROF. BIRCH.$"
 

@@ -1,4 +1,304 @@
-mapscripts BennisDojo_MapScripts {}
+mapscripts BennisDojo_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: BennisDojo_OnTransition
+}
+
+script BennisDojo_OnTransition{
+    call_if_unset(FLAG_HIDE_ASAK_BENNIS_DOJO, BennisDojo_UpdateAsakPos)
+    call_if_defeated(TRAINER_BENNIS_4, BennisDojo_UpdateDisciplesPos)
+    call_if_set(FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO, BennisDojoHideMedicham)
+    end
+}
+
+script BennisDojo_UpdateDisciplesPos{
+    setobjectxyperm(6, 8, 9)
+    setobjectxyperm(9, 5, 9)
+    setobjectxyperm(8, 3, 14)
+    setobjectmovementtype(6, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+    setobjectmovementtype(9, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+    setobjectmovementtype(8, MOVEMENT_TYPE_WANDER_AROUND)
+    return
+}
+
+script BennisDojo_UpdateAsakPos{
+    setobjectxyperm(11, 12, 15)
+    return
+}
+
+script BennisDojoHideMedicham{
+    removeobject(10)
+    return
+}
+
+script BennisDojo_EventScript_Bertho{
+    goto_if_defeated(TRAINER_BENNIS_4, BennisDojo_EventScript_BaldyBaldyOverThere)
+    trainerbattle_single(TRAINER_BERTHO, "You have to beat me first!", "I would've won if I was balder…")
+    msgbox("You got to beat all of us in order\n
+        before you can challenge MASTER BENNIS.", MSGBOX_NPC)
+	end
+}
+
+script BennisDojo_EventScript_Benson{
+    goto_if_defeated(TRAINER_BENNIS_4, BennisDojo_EventScript_BaldyBaldyOverThere)
+    goto_if_not_defeated(TRAINER_BERTHO, BennisDojo_EventScript_NoCheating)
+    trainerbattle_single(TRAINER_BENSON, "You have to beat me next!", "People and their stupid hair…")
+    msgbox("Just PANINI is left.\n
+        Then you can battle MASTER BENNIS!", MSGBOX_NPC)
+	end
+}
+
+script BennisDojo_EventScript_Panini{
+    goto_if_not_defeated(TRAINER_BENSON, BennisDojo_EventScript_NoCheatingPanini)
+    trainerbattle_single(TRAINER_PANINI_2, "Panini! Panini nini pani!", "Panini! Panini panini.")
+    msgbox("Panini!", MSGBOX_NPC)
+	end
+}
+
+script BennisDojo_EventScript_Bennis{
+    goto_if_not_defeated(TRAINER_PANINI_2, BennisDojo_EventScript_NoCheating)
+    setflag(FLAG_TEMP_7)
+    goto_if_not_defeated(TRAINER_BENNIS_4, BennisDojo_EventScript_BennisFinalBattle)
+    msgbox("Hm.\n
+        Those were some good vibrations.\p
+        You're a strong TRAINER, {PLAYER}.\n
+        You're welcome to train here anytime.", MSGBOX_NPC)
+	end
+}
+
+script BennisDojo_EventScript_Asak{
+    msgbox("{PLAYER}, please give LADY ASAKURA my\n 
+    regards the next time you see her.", MSGBOX_NPC)
+    end
+}
+
+script BennisDojo_EventScript_Medicham{
+    lock
+    faceplayer
+    playmoncry(SPECIES_MEDICHAM, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}
+
+script BennisDojo_EventScript_BennisFinalBattle{
+    lock
+    faceplayer
+    playbgm(MUS_ENCOUNTER_CHAMPION, FALSE)
+    msgbox("{PLAYER}. I'm glad you showed up for\n
+        a proper challenge of my dojo.\p
+        You've turned into a fine TRAINER.\n
+        I won't hold back this time.\p
+        Let's get some good vibrations\n
+        from this place!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_BENNIS_4, "Everyone's so mean to me…")
+    goto_if_set(FLAG_SYS_DEFEATED_BRUNO, BennisDojo_EventScript_AsakReturn)
+    msgbox("Hm.\n
+        That was a good battle.\p
+        Thanks again for what you did during\n
+        the ritual.\p
+        You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end   
+}
+
+script BennisDojo_EventScript_AsakReturn{
+    playse(SE_DOOR)
+    addobject(11)
+    clearflag(FLAG_HIDE_ASAK_BENNIS_DOJO)
+    waitse
+    checkobjectat(8, 5)
+    goto_if_eq(VAR_RESULT, TRUE, BennisDojo_EventScript_AsakReturnEast)
+    checkobjectat(7, 4)
+    goto_if_eq(VAR_RESULT, TRUE, BennisDojo_EventScript_AsakReturnNorth)
+    applymovement(11, BennisDojo_Movement_AsakReturns)
+    waitmovement(11)
+    applymovement(7, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    msgbox("ASAK: MASTER BENNIS!\n
+        I'm back.\p
+        MASTER BENNIS: Oho.\n
+        ASAK. Welcome back.", MSGBOX_DEFAULT)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(11, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(11, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("ASAK: {PLAYER}?!\n
+        What are you doing here?", MSGBOX_DEFAULT)
+    applymovement(11, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: Hm. We battled.\n
+        {PLAYER} had a wonderful victory.\p
+        ASAK: I see… As expected.\n
+        They also beat my brother.", MSGBOX_DEFAULT)
+    applymovement(7, Common_Movement_WalkInPlaceDown)
+    applymovement(11, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: Oho. You beat\n
+        BRUNO? That's impressive.\p
+        ASAK: Well, it feels good to be back.\n
+        Any longer there and the old hag\l
+        would've made me help look for a\l
+        successor.\p
+        But who knows? Maybe {PLAYER} can take\n
+        on the role once they're done with\l
+        their travels.\p
+        Well, time to get back to business\n
+        as usual!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(11, BennisDojo_Movement_AsakReturnsOriginalSpot)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(11)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("Hm.\n
+        Well, it was a good battle.\l
+        You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script BennisDojo_EventScript_AsakReturnEast{
+    applymovement(11, BennisDojo_Movement_AsakReturnsEast)
+    waitmovement(11)
+    applymovement(7, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("ASAK: MASTER BENNIS!\n
+        I'm back.\p
+        MASTER BENNIS: Oho.\n
+        ASAK. Welcome back.", MSGBOX_DEFAULT)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(11, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    msgbox("ASAK: {PLAYER}?!\n
+        What are you doing here?\p
+        MASTER BENNIS: Hm. We battled.\n
+        {PLAYER} had a wonderful victory.\p
+        ASAK: I see… As expected.\n
+        They also beat my brother.", MSGBOX_DEFAULT)
+    applymovement(7, Common_Movement_WalkInPlaceRight)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: Oho. You beat\n
+        BRUNO? That's impressive.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(7, Common_Movement_WalkInPlaceDown)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("ASAK: Well, it feels good to be back.\n
+        Any longer there and the old hag\l
+        would've made me help look for a\l
+        successor.\p
+        But who knows? Maybe {PLAYER} can take\n
+        on the role once they're done with\l
+        their travels.\p
+        Well, time to get back to business\n
+        as usual!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(11, BennisDojo_Movement_AsakReturnsOriginalSpotEast)
+    waitmovement(11)
+    applymovement(7, Common_Movement_WalkInPlaceRight)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("Hm.\n
+        Well, it was a good battle.\l
+        You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script BennisDojo_EventScript_AsakReturnNorth{
+    applymovement(11, BennisDojo_Movement_AsakReturns)
+    delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(11)
+    applymovement(7, Common_Movement_WalkInPlaceRight)
+    waitmovement(7)
+    msgbox("ASAK: MASTER BENNIS!\n
+        I'm back.\p
+        MASTER BENNIS: Oho.\n
+        ASAK. Welcome back.", MSGBOX_DEFAULT)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(11, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    delay(8)
+    applymovement(11, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+    msgbox("ASAK: {PLAYER}?!\n
+        What are you doing here?!", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(11, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("MASTER BENNIS: Hm. We battled.\n
+        {PLAYER} had a wonderful victory.\p
+        ASAK: I see… As expected.\n
+        They also beat my brother.\p
+        MASTER BENNIS: Oho. BRUNO?\n
+        That's impressive.\p
+        ASAK: Well, it feels good to be back.\n
+        Any longer there and the old hag\l
+        would've made me help look for a\l
+        successor.\p
+        But who knows? Maybe {PLAYER} can take\n
+        on the role once they're done with\l
+        their travels.\p
+        Well, time to get back to business\n
+        as usual!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(11, BennisDojo_Movement_AsakReturnsOriginalSpot)
+    delay(8)
+    applymovement(7, Common_Movement_WalkInPlaceDown)
+    waitmovement(11)
+    setobjectxyperm(11, 12, 15)
+    special(DrawWholeMapView)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    applymovement(7, Common_Movement_WalkInPlaceRight)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+    waitmovement(0)
+    msgbox("Hm.\n
+        Well, it was a good battle.\l
+        You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script BennisDojo_EventScript_NoCheating{
+    msgbox("What are you doing?\n
+        You have to fight us in order.", MSGBOX_NPC)
+    end
+}
+
+script BennisDojo_EventScript_NoCheatingPanini{
+    msgbox("Panini?\n
+        Papanini pani.", MSGBOX_NPC)
+    end
+}
+
+script BennisDojo_EventScript_BaldyBaldyOverThere{
+    lock
+    msgbox("Baldy, baldy, over there!\n
+        What's it like to have no hair?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
 
 script BennisDojo_ExpertBelt {
     lockall
@@ -297,4 +597,26 @@ movement PaniniLeave{
 
 movement BennisLeave{
     walk_up * 5
+}
+
+movement BennisDojo_Movement_AsakReturns{
+    walk_right
+    walk_up * 10
+    walk_in_place_left
+}
+
+movement BennisDojo_Movement_AsakReturnsEast{
+    walk_up * 9   
+}
+
+movement BennisDojo_Movement_AsakReturnsOriginalSpot{
+    walk_down * 10
+    walk_right * 4
+    face_down
+}
+
+movement BennisDojo_Movement_AsakReturnsOriginalSpotEast{
+    walk_down * 9
+    walk_right * 5
+    face_down
 }
