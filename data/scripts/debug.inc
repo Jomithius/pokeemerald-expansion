@@ -169,22 +169,18 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	givemon SPECIES_EEVEE, 15
-	givemon SPECIES_VAPOREON, 15
-	givemon SPECIES_FLAREON, 15
-	givemon SPECIES_JOLTEON, 15
-	givemon SPECIES_LEAFEON, 15
-	givemon SPECIES_GLACEON, 15
-	givemon SPECIES_SYLVEON, 15
-	givemon SPECIES_ESPEON, 15
-	givemon SPECIES_UMBREON, 15
-	givemon SPECIES_EEVEE_STARTER, 15
+	setflag FLAG_SYS_POKENAV_GET
+	setflag FLAG_HAS_MATCH_CALL
+	setflag FLAG_SYS_STAT_EDIT_GET
 	playfanfare MUS_OBTAIN_ITEM
 	waitfanfare
 	release
 	end
 
 Debug_EventScript_Script_5::
+	setvar VAR_MOMO_ARIA_STATE, 6
+	warp MAP_EASTERN_RUINS, 16, 4
+	waitstate
 	release
 	end
 

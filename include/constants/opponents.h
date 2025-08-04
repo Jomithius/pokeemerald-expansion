@@ -835,7 +835,7 @@
 #define TRAINER_BERTHO                      829
 #define TRAINER_BENSON                      830
 #define TRAINER_PANINI_2                    831
-#define TRAINER_FERNANDO_2                  832 // free
+#define TRAINER_MAE_3                       832
 #define TRAINER_FERNANDO_3                  833 // free
 #define TRAINER_FERNANDO_4                  834 // free
 #define TRAINER_FERNANDO_5                  835 // free

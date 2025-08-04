@@ -544,6 +544,7 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_FEZANDIPITI:
     case SPECIES_MUNKIDORI:
     case SPECIES_ZARUDE:
+    case SPECIES_OGERPON:
         CreateBattleStartTask(B_TRANSITION_SLICE, MUS_VS_LAKE_GUARDIANS);
         break;
     case SPECIES_JIRACHI:

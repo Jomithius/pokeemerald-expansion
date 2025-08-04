@@ -22,8 +22,12 @@ script EasternRuins_EventScript_Shiori{
 
 script EasternRuins_EventScript_Yumi{
     trainerbattle_single(TRAINER_YUMI, "Fufufu…\nSoon, JIRACHI will awaken…", "Soon…")
-    msgbox("… We've protected these lands…\n
-        For many generations.", MSGBOX_NPC)
+    msgbox("… There's an old tale of a MOCHI\n
+        making POKéMON and his LOYAL THREE\l
+        killing a TRAINER and stealing three
+        sacred masks from him…\p
+        That TRAINER's POKéMON was then said\n
+        to be chasing after them for revenge…", MSGBOX_NPC)
 	end
 }
 
@@ -69,12 +73,16 @@ script EasternRuins_EventScript_HexManiacMaliciousArmor{
     lock
     faceplayer
     goto_if_set(FLAG_RECEIVED_MALICIOUS_ARMOR, EasternRuins_EventScript_HexManiacThanks)
-    msgbox("I-I love GHOST TYPE P-POKéMON…\n
-        show me one a-and I'll…\l
+    msgbox("I-I love GHOST TYPE P-POKéMON…\p
+        Show me one a-and I'll…\n
         g-give you a gift…", MSGBOX_DEFAULT)
     waitmessage
     special(IsGhostTypeInParty)
     goto_if_ne(VAR_RESULT, TRUE, EasternRuins_EventScript_HexManiacShowMeAGhostType)
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
     msgbox("T-Thanks for s-showing me a\n
         G-GHOST TYPE P-POKéMON…\p
         H-Here.", MSGBOX_DEFAULT)

@@ -14,151 +14,152 @@ AreaZero_TryRemoveLegendaries::
 # 11 "data/maps/AreaZero/scripts.pory"
 	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn
 # 12 "data/maps/AreaZero/scripts.pory"
-	compare VAR_LAST_TALKED, 1
-	goto_if_eq AreaZero_TryRemoveLegendaries_2
-# 16 "data/maps/AreaZero/scripts.pory"
-	removeobject VAR_LAST_TALKED
-AreaZero_TryRemoveLegendaries_1:
-	end
-
-AreaZero_TryRemoveLegendaries_2:
+	goto_if_eq VAR_LAST_TALKED, 1, Common_EventScript_NopReturn
 # 13 "data/maps/AreaZero/scripts.pory"
-	goto Common_EventScript_NopReturn
-	goto AreaZero_TryRemoveLegendaries_1
+	removeobject VAR_LAST_TALKED
+	end
 
 
 Area_Zero_EventScript_ChienPao::
-# 22 "data/maps/AreaZero/scripts.pory"
+# 18 "data/maps/AreaZero/scripts.pory"
 	lock
-# 23 "data/maps/AreaZero/scripts.pory"
+# 19 "data/maps/AreaZero/scripts.pory"
 	faceplayer
-# 24 "data/maps/AreaZero/scripts.pory"
+# 20 "data/maps/AreaZero/scripts.pory"
 	playmoncry SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER
-# 25 "data/maps/AreaZero/scripts.pory"
+# 21 "data/maps/AreaZero/scripts.pory"
 	waitmoncry
-# 26 "data/maps/AreaZero/scripts.pory"
+# 22 "data/maps/AreaZero/scripts.pory"
 	setwildbattle SPECIES_CHIEN_PAO, 75
-# 27 "data/maps/AreaZero/scripts.pory"
+# 23 "data/maps/AreaZero/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 28 "data/maps/AreaZero/scripts.pory"
+# 24 "data/maps/AreaZero/scripts.pory"
 	waitstate
-# 29 "data/maps/AreaZero/scripts.pory"
+# 25 "data/maps/AreaZero/scripts.pory"
 	release
 	end
 
 
 Area_Zero_EventScript_ChiYu::
-# 34 "data/maps/AreaZero/scripts.pory"
+# 30 "data/maps/AreaZero/scripts.pory"
 	lock
-# 35 "data/maps/AreaZero/scripts.pory"
+# 31 "data/maps/AreaZero/scripts.pory"
 	faceplayer
-# 36 "data/maps/AreaZero/scripts.pory"
+# 32 "data/maps/AreaZero/scripts.pory"
 	playmoncry SPECIES_CHI_YU, CRY_MODE_ENCOUNTER
-# 37 "data/maps/AreaZero/scripts.pory"
+# 33 "data/maps/AreaZero/scripts.pory"
 	waitmoncry
-# 38 "data/maps/AreaZero/scripts.pory"
+# 34 "data/maps/AreaZero/scripts.pory"
 	setwildbattle SPECIES_CHI_YU, 75
-# 39 "data/maps/AreaZero/scripts.pory"
+# 35 "data/maps/AreaZero/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 40 "data/maps/AreaZero/scripts.pory"
+# 36 "data/maps/AreaZero/scripts.pory"
 	waitstate
-# 41 "data/maps/AreaZero/scripts.pory"
+# 37 "data/maps/AreaZero/scripts.pory"
 	release
 	end
 
 
 Area_Zero_EventScript_WoChien::
-# 46 "data/maps/AreaZero/scripts.pory"
+# 42 "data/maps/AreaZero/scripts.pory"
 	lock
-# 47 "data/maps/AreaZero/scripts.pory"
+# 43 "data/maps/AreaZero/scripts.pory"
 	faceplayer
-# 48 "data/maps/AreaZero/scripts.pory"
+# 44 "data/maps/AreaZero/scripts.pory"
 	playmoncry SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER
-# 49 "data/maps/AreaZero/scripts.pory"
+# 45 "data/maps/AreaZero/scripts.pory"
 	waitmoncry
-# 50 "data/maps/AreaZero/scripts.pory"
+# 46 "data/maps/AreaZero/scripts.pory"
 	setwildbattle SPECIES_WO_CHIEN, 75
-# 51 "data/maps/AreaZero/scripts.pory"
+# 47 "data/maps/AreaZero/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 52 "data/maps/AreaZero/scripts.pory"
+# 48 "data/maps/AreaZero/scripts.pory"
 	waitstate
-# 53 "data/maps/AreaZero/scripts.pory"
+# 49 "data/maps/AreaZero/scripts.pory"
 	release
 	end
 
 
 Area_Zero_EventScript_TingLu::
-# 58 "data/maps/AreaZero/scripts.pory"
+# 54 "data/maps/AreaZero/scripts.pory"
 	lock
-# 59 "data/maps/AreaZero/scripts.pory"
+# 55 "data/maps/AreaZero/scripts.pory"
 	faceplayer
-# 60 "data/maps/AreaZero/scripts.pory"
+# 56 "data/maps/AreaZero/scripts.pory"
 	playmoncry SPECIES_TING_LU, CRY_MODE_ENCOUNTER
-# 61 "data/maps/AreaZero/scripts.pory"
+# 57 "data/maps/AreaZero/scripts.pory"
 	waitmoncry
-# 62 "data/maps/AreaZero/scripts.pory"
+# 58 "data/maps/AreaZero/scripts.pory"
 	setwildbattle SPECIES_TING_LU, 75
-# 63 "data/maps/AreaZero/scripts.pory"
+# 59 "data/maps/AreaZero/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 64 "data/maps/AreaZero/scripts.pory"
+# 60 "data/maps/AreaZero/scripts.pory"
 	waitstate
-# 65 "data/maps/AreaZero/scripts.pory"
+# 61 "data/maps/AreaZero/scripts.pory"
 	release
 	end
 
 
 AreaZero_EventScript_Cosmog::
-# 70 "data/maps/AreaZero/scripts.pory"
+# 66 "data/maps/AreaZero/scripts.pory"
 	lock
-# 71 "data/maps/AreaZero/scripts.pory"
+# 67 "data/maps/AreaZero/scripts.pory"
 	faceplayer
-# 72 "data/maps/AreaZero/scripts.pory"
+# 68 "data/maps/AreaZero/scripts.pory"
 	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
-# 73 "data/maps/AreaZero/scripts.pory"
+# 69 "data/maps/AreaZero/scripts.pory"
 	waitmoncry
-# 74 "data/maps/AreaZero/scripts.pory"
+# 70 "data/maps/AreaZero/scripts.pory"
 	msgbox AreaZero_Text_WouldYouLikeToReturn, MSGBOX_YESNO
-# 75 "data/maps/AreaZero/scripts.pory"
+# 71 "data/maps/AreaZero/scripts.pory"
 	waitmessage
-# 76 "data/maps/AreaZero/scripts.pory"
+# 72 "data/maps/AreaZero/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq AreaZero_EventScript_Cosmog_2
-# 83 "data/maps/AreaZero/scripts.pory"
+# 79 "data/maps/AreaZero/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 AreaZero_EventScript_Cosmog_1:
-# 85 "data/maps/AreaZero/scripts.pory"
+# 81 "data/maps/AreaZero/scripts.pory"
 	release
 	end
 
 AreaZero_EventScript_Cosmog_2:
-# 77 "data/maps/AreaZero/scripts.pory"
+# 73 "data/maps/AreaZero/scripts.pory"
 	closemessage
-# 78 "data/maps/AreaZero/scripts.pory"
+# 74 "data/maps/AreaZero/scripts.pory"
 	call Area_Zero_Shake
-# 79 "data/maps/AreaZero/scripts.pory"
+# 75 "data/maps/AreaZero/scripts.pory"
 	warpwhitefade MAP_ROUTE135_LAB, 10, 9
-# 80 "data/maps/AreaZero/scripts.pory"
+# 76 "data/maps/AreaZero/scripts.pory"
 	waitstate
 	goto AreaZero_EventScript_Cosmog_1
 
 
 Area_Zero_Shake::
-# 94 "data/maps/AreaZero/scripts.pory"
+# 90 "data/maps/AreaZero/scripts.pory"
 	delay 30
-# 95 "data/maps/AreaZero/scripts.pory"
+# 91 "data/maps/AreaZero/scripts.pory"
 	setvar VAR_0x8004, 2
-# 96 "data/maps/AreaZero/scripts.pory"
+# 92 "data/maps/AreaZero/scripts.pory"
 	setvar VAR_0x8005, 6
-# 97 "data/maps/AreaZero/scripts.pory"
+# 93 "data/maps/AreaZero/scripts.pory"
 	setvar VAR_0x8006, 8
-# 98 "data/maps/AreaZero/scripts.pory"
+# 94 "data/maps/AreaZero/scripts.pory"
 	setvar VAR_0x8007, 4
-# 99 "data/maps/AreaZero/scripts.pory"
+# 95 "data/maps/AreaZero/scripts.pory"
 	special ShakeCamera
-# 100 "data/maps/AreaZero/scripts.pory"
+# 96 "data/maps/AreaZero/scripts.pory"
 	waitstate
-# 101 "data/maps/AreaZero/scripts.pory"
+# 97 "data/maps/AreaZero/scripts.pory"
 	delay 60
+# 98 "data/maps/AreaZero/scripts.pory"
+	playse SE_M_THUNDER_WAVE
+# 99 "data/maps/AreaZero/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 100 "data/maps/AreaZero/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 101 "data/maps/AreaZero/scripts.pory"
+	delay 20
 # 102 "data/maps/AreaZero/scripts.pory"
 	playse SE_M_THUNDER_WAVE
 # 103 "data/maps/AreaZero/scripts.pory"
@@ -166,24 +167,16 @@ Area_Zero_Shake::
 # 104 "data/maps/AreaZero/scripts.pory"
 	fadescreen FADE_FROM_WHITE
 # 105 "data/maps/AreaZero/scripts.pory"
-	delay 20
-# 106 "data/maps/AreaZero/scripts.pory"
-	playse SE_M_THUNDER_WAVE
-# 107 "data/maps/AreaZero/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 108 "data/maps/AreaZero/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 109 "data/maps/AreaZero/scripts.pory"
 	delay 10
-# 110 "data/maps/AreaZero/scripts.pory"
+# 106 "data/maps/AreaZero/scripts.pory"
 	waitse
-# 111 "data/maps/AreaZero/scripts.pory"
+# 107 "data/maps/AreaZero/scripts.pory"
 	playse SE_INTRO_BLAST
-# 112 "data/maps/AreaZero/scripts.pory"
+# 108 "data/maps/AreaZero/scripts.pory"
 	delay 20
 	return
 
 
 AreaZero_Text_WouldYouLikeToReturn::
-# 89 "data/maps/AreaZero/scripts.pory"
+# 85 "data/maps/AreaZero/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Would you like to return to the LAB?$"

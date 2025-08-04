@@ -252,7 +252,7 @@ script LilycoveCity_DepartmentStoreRooftop_EventScript_RotomCatalog{
 
 script LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon{
     lockall
-    showmonpic(SPECIES_PORYGON, 10,4)
+    showmonpic(SPECIES_PORYGON, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     	It contained the POKéMON\n
     	PORYGON.\p

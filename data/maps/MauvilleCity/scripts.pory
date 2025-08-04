@@ -680,7 +680,7 @@ script MauvilleCity_EventScript_GymNPC{
 }
 
 text MauvilleCity_Text_DacaGone {
-    "What's up, dude?\n
+    "Like, what's up, dude?\n
     Here to challenge the GYM?\p
     Sorry, the LEADER went to \n
     RUSTURF TUNNEL.\p
@@ -725,6 +725,7 @@ script MauvilleCity_Trigger_Bikers1{
 	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	fadedefaultbgm
 	removeobject(13)
 	removeobject(14)
@@ -770,6 +771,7 @@ script MauvilleCity_Trigger_Bikers2{
 	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	fadedefaultbgm
 	removeobject(13)
 	removeobject(14)
@@ -813,6 +815,7 @@ script MauvilleCity_Trigger_Bikers3{
 	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	fadedefaultbgm
 	removeobject(13)
 	removeobject(14)
@@ -856,6 +859,7 @@ script MauvilleCity_Trigger_Bikers4{
 	clearflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	fadedefaultbgm
 	removeobject(13)
 	removeobject(14)

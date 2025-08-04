@@ -531,7 +531,7 @@ script MossdeepCity_EventScript_Aria{
 	goto_if_unset(FLAG_RECEIVED_TOTODILE_PARTNER, MossdeepCity_EventScript_GiveTotodile)
 	playse(SE_M_DOUBLE_TEAM)
     waitse
-    playmoncry(SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
         AAAARGH!", MSGBOX_DEFAULT)
     waitmessage
@@ -550,7 +550,7 @@ script MossdeepCity_EventScript_AriaBattle{
     delay(20)
     playse(SE_M_DOUBLE_TEAM)
     waitse
-    playmoncry(SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
         AAAARGH!", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -653,7 +653,7 @@ script MossdeepCity_EventScript_GiveTotodile{
     delay(20)
     playse(SE_M_DOUBLE_TEAM)
     waitse
-    playmoncry(SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
         AAAARGH!", MSGBOX_AUTOCLOSE)
     waitmessage

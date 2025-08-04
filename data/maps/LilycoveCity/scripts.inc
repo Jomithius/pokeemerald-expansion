@@ -2035,6 +2035,24 @@ LilycoveCity_EventScript_CEO_HighriseWelcome::
 	end
 
 
+LilycoveCity_EventScript_MysteryGiftMan::
+# 1098 "data/maps/LilycoveCity/scripts.pory"
+	lock
+# 1099 "data/maps/LilycoveCity/scripts.pory"
+	faceplayer
+# 1100 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_OLD_SEA_MAP, MysteryGiftScript_OldSeaMap
+# 1101 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, CableClub_EventScript_DistributeEonTicket
+# 1102 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_AURORA_TICKET, MysteryGiftScript_AuroraTicket
+# 1103 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_MYSTIC_TICKET, MysteryGiftScript_MysticTicket
+# 1104 "data/maps/LilycoveCity/scripts.pory"
+	goto CableClub_EventScript_MysteryGiftThankYou2
+	end
+
+
 LilycoveCity_EventScript_EmoBully_Text_0:
 # 801 "data/maps/LilycoveCity/scripts.pory"
 	.string "L-Let's get out of here!$"

@@ -6126,7 +6126,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_RoseradeMega,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
-        .frontPicYOffset = 7,
+        .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_RoseradeMega,
@@ -6137,7 +6137,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Roserade,
         .iconSprite = gMonIcon_RoseradeMega,
         .iconPalIndex = 0,
-        SHADOW(0, 6, SHADOW_SIZE_S)
+        SHADOW(-5, 9, SHADOW_SIZE_S)
         FOOTPRINT(Roserade)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(

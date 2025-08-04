@@ -398,7 +398,7 @@ script NewMauville_Inside_EventScript_Zapdos{
 
 script NewMauville_Inside_EventScript_Genesect{
     lockall
-    showmonpic(SPECIES_GENESECT, 10,4)
+    showmonpic(SPECIES_GENESECT, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     	It contained the POKéMON\n
     	GENESECT.\p

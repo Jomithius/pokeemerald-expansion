@@ -3033,45 +3033,39 @@ SlateportCity_EventScript_Psyduck::
 # 1536 "data/maps/SlateportCity/scripts.pory"
 	lock
 # 1537 "data/maps/SlateportCity/scripts.pory"
-	applymovement 37, SlateportFacePlayer
+	applymovement VAR_LAST_TALKED, SlateportFacePlayer
 # 1538 "data/maps/SlateportCity/scripts.pory"
-	waitmovement 37
+	waitmovement VAR_LAST_TALKED
 # 1539 "data/maps/SlateportCity/scripts.pory"
 	delay 30
 # 1540 "data/maps/SlateportCity/scripts.pory"
 	playse SE_BIKE_HOP
 # 1541 "data/maps/SlateportCity/scripts.pory"
-	applymovement 37, SlateportConfused
+	applymovement VAR_LAST_TALKED, SlateportConfused
 # 1542 "data/maps/SlateportCity/scripts.pory"
-	waitmovement 37
+	waitmovement VAR_LAST_TALKED
 # 1543 "data/maps/SlateportCity/scripts.pory"
 	delay 10
 # 1544 "data/maps/SlateportCity/scripts.pory"
 	playmoncry SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER
 # 1545 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_Psyduck_Text_0
+	waitmoncry
 # 1546 "data/maps/SlateportCity/scripts.pory"
-	waitmessage
-# 1547 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
 
 SlateportCity_EventScript_GymSign::
-# 1552 "data/maps/SlateportCity/scripts.pory"
+# 1551 "data/maps/SlateportCity/scripts.pory"
 	lock
-# 1553 "data/maps/SlateportCity/scripts.pory"
+# 1552 "data/maps/SlateportCity/scripts.pory"
 	msgbox SlateportGymSign, MSGBOX_SIGN
-# 1554 "data/maps/SlateportCity/scripts.pory"
+# 1553 "data/maps/SlateportCity/scripts.pory"
 	waitmessage
-# 1555 "data/maps/SlateportCity/scripts.pory"
+# 1554 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
-
-SlateportCity_EventScript_Psyduck_Text_0:
-# 1545 "data/maps/SlateportCity/scripts.pory"
-	.string "PSYDUCK: Psy?$"
 
 Mae1::
 # 1461 "data/maps/SlateportCity/scripts.pory"
@@ -3098,5 +3092,5 @@ SlateportMartEmployee2::
 	.string "MART EMPLOYEE: Man, I swear I don't\n  get paid enough for this.$"
 
 SlateportGymSign::
-# 1559 "data/maps/SlateportCity/scripts.pory"
+# 1558 "data/maps/SlateportCity/scripts.pory"
 	.string "SLATEPORT CITY POKéMON GYM\n LEADER: LIAM\l “Experience the power of POOBLES!”$"

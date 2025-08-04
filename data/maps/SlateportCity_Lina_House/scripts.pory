@@ -2,7 +2,7 @@ mapscripts SlateportCity_Lina_House_MapScripts {}
 
 script Lina_House_EventScript_Pokeball{
     lockall
-    showmonpic(SPECIES_EEVEE, 10,4)
+    showmonpic(SPECIES_EEVEE, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     It contained the POKéMON\n
     EEVEE.\p

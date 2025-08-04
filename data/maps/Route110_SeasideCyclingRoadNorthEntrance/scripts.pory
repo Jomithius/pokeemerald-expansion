@@ -20,7 +20,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_Clerk::
 	end
 
 Route110_SeasideCyclingRoadNorthEntrance_UpdateMusic::
-	playbgm MUS_RG_SILPH, TRUE
+	savebgm MUS_RG_SILPH
 	return
 
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck::

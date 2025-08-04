@@ -9,12 +9,8 @@ script AreaZero_TryRemoveLegendaries{
     goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
-    if(var(VAR_LAST_TALKED) == LOCALID_COSMOG){
-        goto(Common_EventScript_NopReturn) // on the chance player talks to one of these npcs then gets into a non static wild battle
-    }
-    else{
-        removeobject(VAR_LAST_TALKED)
-    }
+    goto_if_eq(VAR_LAST_TALKED, LOCALID_COSMOG, Common_EventScript_NopReturn) // on the chance player talks to one of these npcs then gets into a non static wild battle
+    removeobject(VAR_LAST_TALKED)
     end
 }
 

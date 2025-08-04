@@ -1084,7 +1084,7 @@
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408 // changed
 #define FLAG_RECEIVED_TEACUP                                        0x409 // Baldesia Forest
 #define FLAG_HIDE_PLATES_CLERK                                      0x40A // Evergrande City
-#define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B // Unused
+#define FLAG_HIDE_MYSTERY_GIFT_MAN                                  0x40B // For vanilla mystery events: mew, deoxys, hooh lugia
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
 #define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E

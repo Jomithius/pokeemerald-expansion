@@ -63,7 +63,7 @@ ShoalCave_LowTideIceRoom_EventScript_Aria::
 # 45 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitse
 # 46 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	playmoncry SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
 # 47 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	msgbox ShoalCave_LowTideIceRoom_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
 # 49 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"

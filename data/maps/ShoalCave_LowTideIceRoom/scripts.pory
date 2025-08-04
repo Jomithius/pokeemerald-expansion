@@ -43,7 +43,7 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
     delay(20)
     playse(SE_M_DOUBLE_TEAM)
     waitse
-    playmoncry(SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
         AAAARGH!", MSGBOX_AUTOCLOSE)
     waitmessage

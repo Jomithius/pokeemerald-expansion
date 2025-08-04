@@ -8,6 +8,56 @@ script WachunpelonCity_OnTransition{
     end
 }
 
+script WachunpelonCity_EventScript_Mae{
+    trainerbattle_single(TRAINER_MAE_3, WachunpelonCity_Text_Mae, "I'm a diva and I deserve this…", WachunpelonCity_EventScript_MaePostBattle)
+    msgbox("Yasss, this beach slayyyyys!\p
+        No matter what you do, I'll\n
+        never leave!\p
+        I'm a DIVA!\n
+        And I DESERVE this!", MSGBOX_NPC)
+    waitmessage
+	end
+}
+
+script WachunpelonCity_EventScript_MaePostBattle{
+    lock
+    msgbox("Usually this is the part where\n
+        somebody would kick me out, right?\p
+        But this time we're just on a beach.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(17, Common_Movement_ExclamationMark)
+    delay(8)
+    applymovement(17, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    waitse
+    applymovement(17, WachunpelonCity_Movement_OldMan1)
+    waitmovement(0)
+    msgbox("Excuse me!", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("Please don't battle here!\p
+        My grandkids are playing on\n
+        the beach! It's dangerous!\p
+        If I worked here, I would have\n
+        asked you to leave!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(17, WachunpelonCity_Movement_OldMan2)
+    waitmovement(0)
+    msgbox("What's wrong with today's youth?\p
+        Gosh… I hope my grandkids don't grow\n
+        up and become like that…", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("…\n
+        I'm still not leaving.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
 script WachunpelonCity_EventScript_FatMan{
     msgbox("Man…\n
         That's a nice ocean breeze.", MSGBOX_SIGN)
@@ -303,6 +353,14 @@ text WachunpelonCity_Text_Policeman2{
     I'll lead."
 }
 
+text WachunpelonCity_Text_Mae{
+    "Huh?\n
+    It's you again!\p
+    You're seriously even trying to stop\n
+    my vacation?!\p
+    I'm a diva and I deserve this!"
+}
+
 movement WachunpelonCity_Movement_WalkBack{
     walk_down
     walk_in_place_up
@@ -315,4 +373,15 @@ movement WachunpelonCity_Movement_PlayerNorth{
 
 movement WachunpelonCity_Movement_PlayerEast{
     walk_left * 2
+}
+
+movement WachunpelonCity_Movement_OldMan1{
+    walk_right * 2
+    walk_up * 2
+}
+
+movement WachunpelonCity_Movement_OldMan2{
+    walk_down * 2
+    walk_left * 2
+    walk_in_place_right
 }

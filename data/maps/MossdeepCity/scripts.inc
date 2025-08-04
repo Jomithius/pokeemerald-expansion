@@ -1026,7 +1026,7 @@ MossdeepCity_EventScript_Aria::
 # 533 "data/maps/MossdeepCity/scripts.pory"
 	waitse
 # 534 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
 # 535 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_DEFAULT
 # 537 "data/maps/MossdeepCity/scripts.pory"
@@ -1056,7 +1056,7 @@ MossdeepCity_EventScript_AriaBattle::
 # 552 "data/maps/MossdeepCity/scripts.pory"
 	waitse
 # 553 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
 # 554 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
 # 556 "data/maps/MossdeepCity/scripts.pory"
@@ -1211,7 +1211,7 @@ MossdeepCity_EventScript_GiveTotodile::
 # 655 "data/maps/MossdeepCity/scripts.pory"
 	waitse
 # 656 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_ETERNATUS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
 # 657 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
 # 659 "data/maps/MossdeepCity/scripts.pory"

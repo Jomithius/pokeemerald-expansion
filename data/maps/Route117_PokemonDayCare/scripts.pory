@@ -9,8 +9,7 @@ Route117_PokemonDayCare_OnTransition:
 
 script PokemonDayCare_Woman{
     lock
-    applymovement(2, Common_Movement_FacePlayer)
-    waitmovement(2)
+    faceplayer
     if(flag(FLAG_CALL_FROM_CEO) == TRUE){
         msgbox(PokemonDayCare_Text_HoundourRecovered, MSGBOX_NPC)
         }

@@ -27,7 +27,7 @@ script NewMoonIsland_House2_EventScript_TriggerTrap{
     doweather
     special(WaitWeather)
     removeobject(9)
-    goto_if_ge(VAR_RAT_CAVE_STATE 11, NewMoonIsland_House2_EventScript_SpawnChanneler)
+    goto_if_ge(VAR_RAT_CAVE_STATE 9, NewMoonIsland_House2_EventScript_SpawnChanneler)
     addobject(5)
     addobject(6)
     addobject(7)

@@ -2,6 +2,13 @@ mapscripts LilycoveCity_HighriseCeoOffice_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
     VAR_CEO_STATE, 1: LilycoveCity_HighriseFloor2_EventScript_CeoMeeting
     ]
+    MAP_SCRIPT_ON_TRANSITION: LilycoveCity_HighriseCeoOffice_OnTransition
+}
+
+script LilycoveCity_HighriseCeoOffice_OnTransition{
+    setflag(FLAG_TEMP_7)
+    removeobject(6)
+    end
 }
 
 script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
@@ -30,10 +37,11 @@ script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
     setflag(FLAG_ENABLE_REPORT_MATCH_CALL)
     applymovement(5, LilycoveCity_HighriseFloor2_Movement_Scientist)
     waitmovement(5)
-    msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy2, MSGBOX_YESNO)
+    msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy2, MSGBOX_DEFAULT)
     waitmessage
-    if(var(VAR_RESULT) == YES){
-        msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy4, MSGBOX_AUTOCLOSE)  
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Okay. Sounds fun!", "No way! You're not even my boss!")
+    if(var(VAR_RESULT) == 0){
+        msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy4, MSGBOX_DEFAULT)  
     }
     else{
         msgbox("…", MSGBOX_AUTOCLOSE)
@@ -65,8 +73,139 @@ script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
         delay(16)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
         waitmovement(3)
-        msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy3, MSGBOX_AUTOCLOSE)
+        msgbox(LilycoveCity_HighriseFloor2_Text_Jimmy3, MSGBOX_DEFAULT)
     }
+    waitmessage
+    msgbox("Great!\p
+        Now that that's figured out, I have one\n
+        more thing for you.\p
+        When we battled, there was a POKéMON\n
+        you had never seen before, right?\l
+        That POKéMON's from NORTHERN HOENN.\p
+        I think you know where this is going.\n
+        Go ahead, PROF.", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(5, Common_Movement_WalkInPlaceLeft)
+    waitmovement(5)
+    msgbox("Sir.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(5, LilycoveCity_HighriseFloor2_Movement_ScientistPlacesBag)
+    waitmovement(5)
+    playse(SE_CONTEST_ICON_CLEAR) // bridge walk, mudd ball, tray exit
+    addobject(6)
+    waitse
+    delay(30)
+    goto(LilycoveCity_HighriseFloor2_EventScript_PickGen9Starter)
+    end
+}
+
+script LilycoveCity_HighriseFloor2_EventScript_PickGen9Starter{
+    hidemonpic
+    message("You may choose any one you'd like.")
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "SPRIGATITO", "FUECOCO", "QUAXLY")
+    if(var(VAR_RESULT) == 0){
+        showmonpic(SPECIES_SPRIGATITO, 10, 4)
+        msgbox("SPRIGATITO, the GRASS CAT POKéMON.\n
+            Is this the one you want?", MSGBOX_YESNO)
+        waitmessage
+        goto_if_eq(VAR_RESULT, NO, LilycoveCity_HighriseFloor2_EventScript_PickGen9Starter)
+        goto(LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito)
+    }
+    elif(var(VAR_RESULT) == 1){
+        showmonpic(SPECIES_FUECOCO, 10, 4)
+        msgbox("FUECOCO, the FIRE CROC POKéMON.\n
+            Is this the one you want?", MSGBOX_YESNO)
+        waitmessage
+        goto_if_eq(VAR_RESULT, NO, LilycoveCity_HighriseFloor2_EventScript_PickGen9Starter)
+        goto(LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco)
+    }
+    else{
+        showmonpic(SPECIES_QUAXLY, 10, 4)
+        msgbox("QUAXLY, the DUCKLING POKéMON.\n
+            Is this the one you want?", MSGBOX_YESNO)
+        waitmessage
+        goto_if_eq(VAR_RESULT, NO, LilycoveCity_HighriseFloor2_EventScript_PickGen9Starter)
+        goto(LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly)
+    }
+    end
+}
+
+script LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito{
+    hidemonpic
+    givemon(SPECIES_SPRIGATITO, 70)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPRIGATITO)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received SPRIGATITO!", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received SPRIGATITO!\p
+            SPRIGATITO was sent to the PC.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    else{
+        playse(SE_FAILURE)
+        msgbox("You don't have any room.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    goto(LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves)
+}
+
+script LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco{
+    hidemonpic
+    givemon(SPECIES_FUECOCO, 70)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FUECOCO)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received SPRIGATITO!", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received FUECOCO!\p
+            FUECOCO was sent to the PC.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    else{
+        playse(SE_FAILURE)
+        msgbox("You don't have any room.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    goto(LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves)
+}
+
+script LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly{
+    hidemonpic
+    givemon(SPECIES_QUAXLY, 70)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_QUAXLY)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received QUAXLY!", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received QUAXLY!\p
+            QUAXLY was sent to the PC.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    else{
+        playse(SE_FAILURE)
+        msgbox("You don't have any room.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    goto(LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves)
+}
+
+script LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves{
+    playse(SE_CONTEST_ICON_CLEAR)
+    removeobject(6)
+    waitse
+    applymovement(5, LilycoveCity_HighriseFloor2_Movement_ScientistReturnsPostStarter)
+    waitmovement(5)
+    msgbox(LilycoveCity_HighriseFloor2_Text_JimmyIExpectGoodNews, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_HighriseFloor2_Movement_PlayerLeave)
     waitmovement(0)
@@ -103,6 +242,7 @@ script LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags{
     clearflag(FLAG_DEFEATED_REGIDRAGO)
     clearflag(FLAG_DEFEATED_REGIELEKI)
     clearflag(FLAG_DEFEATED_ZARUDE)
+    clearflag(FLAG_HIDE_MYSTERY_GIFT_MAN) // slateport and lilycove
     return
 }
 
@@ -150,6 +290,18 @@ movement LilycoveCity_HighriseFloor2_Movement_StaffMember2{
 movement LilycoveCity_HighriseFloor2_Movement_StaffMember2Return{
     walk_left
     walk_up * 4
+    walk_in_place_down
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_ScientistPlacesBag{
+    walk_down
+    walk_left * 2
+    walk_in_place_down
+}
+
+movement LilycoveCity_HighriseFloor2_Movement_ScientistReturnsPostStarter{
+    walk_right *2
+    walk_up
     walk_in_place_down
 }
 
@@ -211,12 +363,7 @@ text LilycoveCity_HighriseFloor2_Text_Jimmy3{
     After you return, I want you to go and\l
     challenge all the GYM LEADERS again.\l
     And, of course, the ELITE FOUR.\l
-    Next time, they won't hold back.\p
-    Well, {PLAYER}, I won't hold you\n
-    any longer. You got things to do!\p
-    You should be able to reach NORTHERN\n
-    HOENN through the tunnel system.\l
-    I expect good news!"
+    Next time, they won't hold back."
 }
 
 text LilycoveCity_HighriseFloor2_Text_Jimmy4{
@@ -228,8 +375,11 @@ text LilycoveCity_HighriseFloor2_Text_Jimmy4{
     Then, after you return, I want you to\n
     challenge all the GYM LEADERS again.\l
     And, of course, the ELITE FOUR.\l
-    Next time, they won't hold back.\p
-    Well, {PLAYER}, I won't hold you\n
+    Next time, they won't hold back."
+}
+
+text LilycoveCity_HighriseFloor2_Text_JimmyIExpectGoodNews{
+    "JIMMY: Well, {PLAYER}, I won't hold you\n
     any longer. You got things to do!\p
     You should be able to reach NORTHERN\n
     HOENN through the tunnel system.\l

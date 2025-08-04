@@ -17,19 +17,19 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(PECHARUNT)",
       "x": 6,
-      "y": 1,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EasternRuins_PecharuntLair_EventScript_Pecharunt",
       "flag": "FLAG_PECHARUNT_EASTERN_RUINS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(FEZANDIPITI)",
-      "x": 4,
+      "x": 3,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -37,12 +37,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EasternRuins_PecharuntLair_EventScript_Fezandipiti",
       "flag": "FLAG_FEZANDIPITI_EASTERN_RUINS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MUNKIDORI)",
-      "x": 8,
+      "x": 9,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -50,8 +50,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EasternRuins_PecharuntLair_EventScript_Munkidori",
       "flag": "FLAG_MUNKIDORI_EASTERN_RUINS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(OGERPON)",
+      "x": 6,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EasternRuins_PecharuntLair_EventScript_Ogerpon",
+      "flag": "FLAG_DEFEATED_OGERPON"
     }
   ],
   "warp_events": [

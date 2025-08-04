@@ -43,8 +43,8 @@ script NewMoonIsland_DarkraiLair_EventScript_Darkrai{
     fadescreenspeed(FADE_TO_BLACK, 6)
     delay(90)
     setrespawn(HEAL_LOCATION_THE_UNDER)
+    goto_if_eq(VAR_RAT_CAVE_STATE, 8, NewMoonIsland_DarkraiLair_TryUpdateRatCaveState)
     clearflag(FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE)
-    call_if_eq(VAR_RAT_CAVE_STATE, 8, NewMoonIsland_DarkraiLair_TryUpdateRatCaveState)
     warpsilent(MAP_THE_UNDER_HOUSE, 11, 2)
     waitstate
 	release
@@ -56,10 +56,11 @@ script NewMoonIsland_DarkraiLair_TryUpdateRatCaveState{
     clearflag(FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE)
     setvar(VAR_RAT_CAVE_STATE, 13)
     setvar(VAR_NEWMOON_ISLAND_STATE, 6) // to stop other NPC cutscene
-    setflag(FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE)
     addvar(VAR_FINAL_REMATCH_STATE, 1)
     setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
-    return
+    warpsilent(MAP_THE_UNDER_HOUSE, 11, 2)
+    waitstate
+    end
 }
 
 text NewMoonIsland_DarkraiLair_Text_PostDarkrai{

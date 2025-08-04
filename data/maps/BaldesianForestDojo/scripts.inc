@@ -537,7 +537,7 @@ BaldesianForestDojo_EventScript_GiveScroll::
 # 348 "data/maps/BaldesianForestDojo/scripts.pory"
 	msgbox BaldesianForestDojo_EventScript_GiveScroll_Text_0, MSGBOX_DEFAULT
 # 353 "data/maps/BaldesianForestDojo/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, BaldesianForestDojo_EventScript_GiveScroll_Text_1, BaldesianForestDojo_EventScript_GiveScroll_Text_2
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_SHOW_ITEM, ITEM_SCROLL_OF_DARKNESS, ITEM_SCROLL_OF_WATERS
 # 354 "data/maps/BaldesianForestDojo/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq BaldesianForestDojo_EventScript_GiveScroll_2
@@ -545,7 +545,7 @@ BaldesianForestDojo_EventScript_GiveScroll::
 	compare VAR_RESULT, 1
 	goto_if_eq BaldesianForestDojo_EventScript_GiveScroll_3
 # 365 "data/maps/BaldesianForestDojo/scripts.pory"
-	msgbox BaldesianForestDojo_EventScript_GiveScroll_Text_3, MSGBOX_AUTOCLOSE
+	msgbox BaldesianForestDojo_EventScript_GiveScroll_Text_1, MSGBOX_AUTOCLOSE
 # 367 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmessage
 BaldesianForestDojo_EventScript_GiveScroll_1:
@@ -1408,14 +1408,6 @@ BaldesianForestDojo_EventScript_GiveScroll_Text_0:
 	.string "I'll also give you one scroll.\n It contains secret techniques passed\l down in our family for generations.\p Which one would you like?\n Choose wisely.$"
 
 BaldesianForestDojo_EventScript_GiveScroll_Text_1:
-# 353 "data/maps/BaldesianForestDojo/scripts.pory"
-	.string "Scroll of Darkness$"
-
-BaldesianForestDojo_EventScript_GiveScroll_Text_2:
-# 353 "data/maps/BaldesianForestDojo/scripts.pory"
-	.string "Scroll of Waters$"
-
-BaldesianForestDojo_EventScript_GiveScroll_Text_3:
 # 365 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "You don't have any room.\n Come back when you do.$"
 

@@ -135,8 +135,52 @@ script AltarOfBaldesia_EventScript_AltarRitual{
     delay(8)
     applymovement(LOCALID_WIFE, Common_Movement_WalkUp6)
     waitmovement(0)
+    msgbox(AltarOfBaldesia_Text_MomoAndLohan, MSGBOX_DEFAULT)
+    waitmessage
+    playse(SE_BIKE_HOP)
+    applymovement(2, Common_Movement_QuestionMark)
+    waitmovement(2)
+    waitse
+    msgbox("MOMO: …“MO”?\p
+        LOHAN: MO…\n
+            …………… MO…\p
+            MOCHIIIIIIII!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    delay(30)
+    playse(SE_M_BELLY_DRUM)
+    applymovement(3, AltarOfBaldesia_Movement_MochiDance1)
+    delay(8)
+    applymovement(4, AltarOfBaldesia_Movement_MochiDance2)
+    waitmovement(4)
+    waitse
+    playse(SE_M_BELLY_DRUM)
+    applymovement(3, AltarOfBaldesia_Movement_MochiDance2)
+    delay(8)
+    applymovement(4, AltarOfBaldesia_Movement_MochiDance1)
+    waitmovement(4)
+    waitse
+    msgbox("MOMOMOCHIIIII!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_M_TEETER_DANCE)
+    applymovement(3, AltarOfBaldesia_Movement_MochiDance3)
+    delay(8)
+    applymovement(4, AltarOfBaldesia_Movement_MochiDance3)
+    waitmovement(4)
+    waitse
+    playse(SE_M_COSMIC_POWER)
+    applymovement(3, AltarOfBaldesia_Movement_MochiDance4)
+    delay(8)
+    applymovement(4, AltarOfBaldesia_Movement_MochiDance4)
+    waitmovement(4)
+    applymovement(3, AltarOfBaldesia_Movement_MochiDance4)
+    delay(8)
+    applymovement(4, AltarOfBaldesia_Movement_MochiDance4)
+    waitmovement(4)
+    waitse
     playbgm(MUS_KIMONO_DANCE, TRUE)
-    msgbox(AltarOfBaldesia_Text_MomoAndLohan, MSGBOX_AUTOCLOSE)
+    msgbox("MOMO: ………………………\p
+        I knew it.\n
+        This is bad.", MSGBOX_AUTOCLOSE)
     waitmessage
     goto(AltarOfBaldesia_EventScript_MomoICantBeatThemAlone)
 }
@@ -216,7 +260,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(7)
     msgbox("MOMO: …!\p
-        ???: Baldy baldy, over there!\n
+        ???: Baldy, baldy, over there!\n
         What's it like to have no hair?", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceDown)
@@ -592,9 +636,7 @@ text AltarOfBaldesia_Text_MomoAndLohan{
     Only the Maiden and her guards are\n
     allowed to be at the altar during\l
     the ritual.\p
-    LOHAN: …………\p
-    MOMO: … I knew it.\n
-    This is bad."
+    LOHAN: MO………"
 }
 
 text AltarOfBaldesia_Text_LohanIntro{
@@ -705,4 +747,36 @@ movement AltarOfBaldesia_Movement_AriaNextToMomo{
     walk_left
     walk_up * 2
     walk_in_place_left
+}
+
+movement AltarOfBaldesia_Movement_MochiDance1{
+    lock_facing_direction
+    jump_2_right
+    unlock_facing_direction
+}
+
+movement AltarOfBaldesia_Movement_MochiDance2{
+    lock_facing_direction
+    jump_2_left
+    unlock_facing_direction
+}
+
+movement AltarOfBaldesia_Movement_MochiDance3{
+    lock_facing_direction
+    walk_faster_down * 2
+    delay_16
+    walk_faster_up * 2
+    unlock_facing_direction
+}
+
+movement AltarOfBaldesia_Movement_MochiDance4{
+    walk_in_place_faster_down
+    delay_4
+    walk_in_place_faster_right
+    delay_4
+    walk_in_place_faster_up
+    delay_4
+    walk_in_place_faster_left
+    delay_4
+    walk_in_place_faster_up
 }

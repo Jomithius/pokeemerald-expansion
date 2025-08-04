@@ -802,7 +802,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseDefense   = 95,
         .baseSpeed     = 90,
         .baseSpAttack  = 40,
-        .baseSpDefense = 60,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 63 : 66,
@@ -870,11 +870,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_TOTOKNIGHT] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 105,
-        .baseDefense   = 100,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 70,
+        .baseHP        = 90,
+        .baseAttack    = 125,
+        .baseDefense   = 130,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 50,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = 45,

@@ -14,19 +14,27 @@ script TheUnder_CanyonLake_EventScript_NewmoonIslandMan{
     fadeoutbgm(0)
     msgbox("You've been asleep for a long, long time…\n
         What happened to you?\p
-        And what were you doing here? No one has\n
-        lived here for 50 years.\p
-        Not since that young boy was cursed with\n
-        eternal nightmares…\p
-        His parents tried to find the LUNAR WING\n
-        but failed.\p
-        …\n
-        …\l
-        Where ever he is now…\p
-        I just hope he's finally been woken up\n
-        from those bad dreams…", MSGBOX_AUTOCLOSE)
+        And what were you doing here? No one\n
+        has lived here for 50 years.\p
+        Not since that young boy was cursed…\n
+        With eternal nightmares…\p
+        His parents tried to find the LUNAR\n
+        WING, but they failed.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(8, Common_Movement_WalkInPlaceDown)
+    applymovement(8, Common_Movement_FaceDown)
+    waitmovement(8)
+    msgbox("…\n
+        …\l
+        Wherever he is now…\p
+        I just hope… he's finally been set\n
+        free from those bad dreams…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(8, Common_Movement_FaceUp)
+    waitmovement(8)
+    msgbox("I'm…\n
+        I'm sorry.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(8, Common_Movement_FaceDown)
     waitmovement(8)
     hideobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
     delay(8)
@@ -47,13 +55,13 @@ script TheUnder_CanyonLake_EventScript_NewmoonIslandMan{
     waitmovement(8)
     removeobject(8)
     setvar(VAR_NEWMOON_ISLAND_STATE, 6)
+    fadeinbgm(0)
     releaseall
     end
 }
 
 movement TheUnder_CanyonLake_Movement_ManLeaves{
-    walk_slow_down
     lock_anim
-    delay_16
+    walk_slow_down
     walk_down * 8
 }

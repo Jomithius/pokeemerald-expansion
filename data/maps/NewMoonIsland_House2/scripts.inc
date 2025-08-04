@@ -40,7 +40,7 @@ NewMoonIsland_House2_EventScript_TriggerTrap::
 # 29 "data/maps/NewMoonIsland_House2/scripts.pory"
 	removeobject 9
 # 30 "data/maps/NewMoonIsland_House2/scripts.pory"
-	goto_if_ge VAR_RAT_CAVE_STATE 11, NewMoonIsland_House2_EventScript_SpawnChanneler
+	goto_if_ge VAR_RAT_CAVE_STATE 9, NewMoonIsland_House2_EventScript_SpawnChanneler
 # 31 "data/maps/NewMoonIsland_House2/scripts.pory"
 	addobject 5
 # 32 "data/maps/NewMoonIsland_House2/scripts.pory"

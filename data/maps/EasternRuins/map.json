@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CHANNELER",
       "x": 11,
-      "y": 6,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
@@ -56,7 +56,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CHANNELER",
       "x": 20,
-      "y": 7,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 5,

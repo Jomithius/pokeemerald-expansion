@@ -1027,6 +1027,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_RivalRematch{
             Let me know if you change your mind!", MSGBOX_AUTOCLOSE)    
     }
     waitmessage
+	fadedefaultbgm
     release
     end
 }
@@ -1038,7 +1039,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_MayBattle{
     waitmessage
     trainerbattle_no_intro(TRAINER_MAY_PLACEHOLDER, "Wow, {PLAYER}.\nYou've gotten this strong!")
     setflag(FLAG_DEFEATED_RIVAL_BIRCH_LAB)
-    goto(LittlerootTown_ProfessorBirchsLab_EventScript_RivalFuturePlans)
+    goto(LittlerootTown_ProfessorBirchsLab_EventScript_MayPostBattle)
     end
 }
 
@@ -1049,6 +1050,22 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle{
     waitmessage
     trainerbattle_no_intro(TRAINER_BRENDAN_PLACEHOLDER, "Wow, {PLAYER}.\nYou've gotten this strong?")
     setflag(FLAG_DEFEATED_RIVAL_BIRCH_LAB)
-    goto(LittlerootTown_ProfessorBirchsLab_EventScript_RivalFuturePlans)
+    goto(LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle)
     end
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_MayPostBattle{
+	msgbox("I can see why you're the CHAMPION,\n
+		{PLAYER}.\p
+		I think I'll stick to what I'm good at…\n
+		catching POKéMON!", MSGBOX_DEFAULT)
+	end
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle{
+	msgbox("I can see why you're the CHAMPION,\n
+		{PLAYER}.\p
+		I think I'll stick to what I'm good at…\n
+		raising POKéMON!", MSGBOX_DEFAULT)
+	end
 }

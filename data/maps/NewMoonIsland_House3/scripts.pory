@@ -69,13 +69,13 @@ script NewMoonIsland_House3_EventScript_Poobles{
 
 script NewMoonIsland_House3_EventScript_Aria{
     lock
-    playbgm(MUS_NONE, FALSE)
-    playmoncry(SPECIES_ETERNATUS, CRY_MODE_GROWL_1)
-    waitmoncry
+    fadeoutbgm(0)
+    delay(20)
+    playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH! AAAAAARGH!\n
         AAAUUAUUAAAUGH!", MSGBOX_AUTOCLOSE)
     waitmessage
-    delay(16)
+    waitmoncry
     playse(SE_PIN)
     applymovement(4, Common_Movement_ExclamationMark)
     waitmovement(4)
@@ -87,6 +87,7 @@ script NewMoonIsland_House3_EventScript_Aria{
     waitmessage
     applymovement(4, Common_Movement_FaceOriginalDirection)
     waitmovement(4)
+    fadeinbgm(0)
     release
     end
 }
@@ -99,7 +100,10 @@ text NewMoonIsland_House3_Text_James{
     So you were also pulled into the abyss…\p
     There's no saving us then…\p
     At least now I can tell you that the\n
-    other me is a fake."
+    other me, the one you battled at\l
+    EVERGRANDE CITY, is a fake…\p
+    If we ever get out of here…\n
+    DON'T ever trust him."
 }
 
 text NewMoonIsland_House3_Text_Momo{

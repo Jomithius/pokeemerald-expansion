@@ -43,7 +43,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_Clerk::
 # 22 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 Route110_SeasideCyclingRoadNorthEntrance_UpdateMusic::
 # 23 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	playbgm MUS_RG_SILPH, TRUE
+	savebgm MUS_RG_SILPH
 # 24 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	return
 # 25 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"

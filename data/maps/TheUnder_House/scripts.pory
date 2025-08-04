@@ -49,13 +49,12 @@ script TheUnder_House_Eventscript_BedRight{
 
 script TheUnder_House_OutOfCenterPartyHeal{
     fadenewbgm(MUS_DUMMY)
-    delay(30)
+    delay(60)
     fadescreenspeed(FADE_TO_BLACK, 2)
     delay(30)
 	playfanfare(MUS_HEAL)
 	waitfanfare
 	special(HealPlayerParty)
-	callnative(UpdateFollowingPokemon)
     delay(60)
     warpsilent(MAP_THE_UNDER_SHADY_HOUSE, 11, 2)
     waitstate

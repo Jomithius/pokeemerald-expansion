@@ -8,6 +8,7 @@ LilycoveCity_Harbor_MapScripts::
 	.byte 0
 
 LilycoveCity_Harbor_OnTransition:
+	setflag FLAG_TEMP_E
 	setescapewarp MAP_LILYCOVE_CITY, 12, 33
 	end
 

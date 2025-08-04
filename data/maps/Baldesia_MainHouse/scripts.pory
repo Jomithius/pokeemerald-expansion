@@ -26,10 +26,16 @@ script Baldesia_MainHouse_OnTransition{
     end
 }
 
-script Baldesia_MainHouse_OnWarp{
-    turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
-    end
-}
+raw`
+Baldesia_MainHouse_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, Baldesia_MainHouse_EventScript_TurnPlayerNorth
+	.2byte 0
+
+Baldesia_MainHouse_EventScript_TurnPlayerNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+`
 
 script Baldesia_MainHouse_UpdateNPCPos{
     setobjectxyperm(LOCALID_ARIA, 19, 9)
@@ -358,8 +364,6 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
 
 script Baldesia_MainHouse_EventScript_LohanThanks{
     lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
-    waitmovement(0)
     msgbox(Baldesia_MainHouse_Text_LohanThankYou, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_BRO, Common_Movement_WalkDown2)

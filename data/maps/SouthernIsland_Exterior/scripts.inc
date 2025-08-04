@@ -34,11 +34,19 @@ SouthernIsland_Exterior_EventScript_AsYouLike::
 	end
 
 Ferry_EventScript_DepartIslandSouth::
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+	waitmovement 0
+	callnative RemoveFollowingPokemon
+	delay 16
 	applymovement OBJ_EVENT_ID_PLAYER, Ferry_Movement_DepartIslandBoardSouth
 	waitmovement 0
 	return
 
 Ferry_EventScript_DepartIslandWest::
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+	waitmovement 0
+	callnative RemoveFollowingPokemon
+	delay 16
 	applymovement OBJ_EVENT_ID_PLAYER, Ferry_Movement_DepartIslandBoardWest
 	waitmovement 0
 	return

@@ -1895,7 +1895,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
     {
         // Change stuff like this to get the levels you want
         static const u8 minDynamicLevel = 75;
-        static const u8 maxDynamicLevel = 98;
+        static const u8 maxDynamicLevel = 97;
         //static const u8 levelDifference = 2;
 
         // Calculates Average of your party's levels
@@ -5554,6 +5554,7 @@ static void HandleEndTurn_BattleWon(void)
             break;
             }
         case TRAINER_CLASS_CEO:
+        case TRAINER_CLASS_NIGHTMARE:
             PlayBGM(MUS_NONE);
             break;
         case TRAINER_CLASS_TEAM_AQUA:

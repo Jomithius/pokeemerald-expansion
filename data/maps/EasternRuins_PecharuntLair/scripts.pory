@@ -1,1 +1,82 @@
-mapscripts EasternRuins_PecharuntLair_MapScripts {}
+mapscripts EasternRuins_PecharuntLair_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: EasternRuins_PecharuntLair_OnTransition
+    MAP_SCRIPT_ON_RESUME: EasternRuins_PecharuntLair_OnResume
+}
+
+script EasternRuins_PecharuntLair_OnResume{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+    removeobject(VAR_LAST_TALKED)
+    end
+}
+
+script EasternRuins_PecharuntLair_OnTransition{
+    call_if_eq(VAR_PECHARUNT_STATE, 3, EasternRuins_PecharuntLair_TrySpawnOgerpon)
+    end
+}
+
+script EasternRuins_PecharuntLair_TrySpawnOgerpon{
+    clearflag(FLAG_DEFEATED_OGERPON)
+    setvar(VAR_PECHARUNT_STATE, 4)
+    return
+}
+
+script EasternRuins_PecharuntLair_EventScript_Fezandipiti{
+    lock
+    faceplayer
+    playmoncry(SPECIES_FEZANDIPITI, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_FEZANDIPITI, 75, ITEM_CORNERSTONE_MASK)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        addvar(VAR_PECHARUNT_STATE, 1)
+	}
+    release
+    end
+}
+
+script EasternRuins_PecharuntLair_EventScript_Munkidori{
+    lock
+    faceplayer
+    playmoncry(SPECIES_MUNKIDORI, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_MUNKIDORI, 75, ITEM_WELLSPRING_MASK)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        addvar(VAR_PECHARUNT_STATE, 1)
+	}
+    release
+    end
+}
+
+script EasternRuins_PecharuntLair_EventScript_Pecharunt{
+    lock
+    faceplayer
+    playmoncry(SPECIES_PECHARUNT, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_PECHARUNT, 75, ITEM_HEARTHFLAME_MASK)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        addvar(VAR_PECHARUNT_STATE, 1)
+	}
+    release
+    end
+}
+
+script EasternRuins_PecharuntLair_EventScript_Ogerpon{
+    lock
+    faceplayer
+    playmoncry(SPECIES_OGERPON, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_OGERPON, 75)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    release
+    end
+}

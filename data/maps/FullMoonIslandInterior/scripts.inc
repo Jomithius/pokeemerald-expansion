@@ -85,21 +85,21 @@ FullMoonIslandInterior_EventScript_RatduardoBattle::
 # 46 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmovement 1
 # 47 "data/maps/FullMoonIslandInterior/scripts.pory"
-	msgbox FullMoonIslandInterior_Text_CresseliaMyThanks, MSGBOX_YESNO
+	setvar VAR_RAT_CAVE_STATE, 11
 # 48 "data/maps/FullMoonIslandInterior/scripts.pory"
-	waitmessage
+	addvar VAR_FINAL_REMATCH_STATE, 1
 # 49 "data/maps/FullMoonIslandInterior/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty
+	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
 # 50 "data/maps/FullMoonIslandInterior/scripts.pory"
-	msgbox FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE
+	msgbox FullMoonIslandInterior_Text_CresseliaMyThanks, MSGBOX_YESNO
 # 51 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmessage
 # 52 "data/maps/FullMoonIslandInterior/scripts.pory"
-	setvar VAR_RAT_CAVE_STATE, 11
+	goto_if_eq VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty
 # 53 "data/maps/FullMoonIslandInterior/scripts.pory"
-	addvar VAR_FINAL_REMATCH_STATE, 1
+	msgbox FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE
 # 54 "data/maps/FullMoonIslandInterior/scripts.pory"
-	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
+	waitmessage
 # 55 "data/maps/FullMoonIslandInterior/scripts.pory"
 	release
 	end

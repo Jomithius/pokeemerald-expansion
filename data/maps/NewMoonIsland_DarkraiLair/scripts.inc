@@ -82,9 +82,9 @@ NewMoonIsland_DarkraiLair_EventScript_Darkrai_1:
 # 45 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	setrespawn HEAL_LOCATION_THE_UNDER
 # 46 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	clearflag FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE
+	goto_if_eq VAR_RAT_CAVE_STATE, 8, NewMoonIsland_DarkraiLair_TryUpdateRatCaveState
 # 47 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	call_if_eq VAR_RAT_CAVE_STATE, 8, NewMoonIsland_DarkraiLair_TryUpdateRatCaveState
+	clearflag FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE
 # 48 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	warpsilent MAP_THE_UNDER_HOUSE, 11, 2
 # 49 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
@@ -107,14 +107,16 @@ NewMoonIsland_DarkraiLair_TryUpdateRatCaveState::
 # 58 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	setvar VAR_NEWMOON_ISLAND_STATE, 6
 # 59 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	setflag FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE
-# 60 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	addvar VAR_FINAL_REMATCH_STATE, 1
-# 61 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+# 60 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
-	return
+# 61 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+	warpsilent MAP_THE_UNDER_HOUSE, 11, 2
+# 62 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+	waitstate
+	end
 
 
 NewMoonIsland_DarkraiLair_Text_PostDarkrai::
-# 65 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+# 66 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	.string "…A voice called out from somehere…\p ???: DARKRAI…\n Your power is strong.\p Though you don't will it, you make\n people and POKEMON around you see\l terrible nightmares…\p That is why you came here…\n NEWMOON ISLAND…\p There should be none that can be\n drawn into your nightmares…\p If anyone were to fall into a nightmare,\n FULLMOON ISLAND would be their only…\p …\n …$"

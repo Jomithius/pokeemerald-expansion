@@ -3,7 +3,7 @@ mapscripts PetalburgCity_Luna_House_MapScripts {}
 script Luna_House_EventScript_Pokeball{
 
     lockall
-    showmonpic(SPECIES_MOTHIM, 10,4)
+    showmonpic(SPECIES_MOTHIM, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     It contained the POKéMON\n
     MOTHIM.\p

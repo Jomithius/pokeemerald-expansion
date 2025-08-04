@@ -1093,3 +1093,14 @@ text LilycoveCity_Text_StaffEmployee3{
 	"Ah, CHAMPION {PLAYER}! My apologies.\n
 	Please, go ahead."
 }
+
+script LilycoveCity_EventScript_MysteryGiftMan{
+	lock
+	faceplayer
+	goto_if_unset(FLAG_RECEIVED_OLD_SEA_MAP, MysteryGiftScript_OldSeaMap) // mew
+	goto_if_unset(FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, CableClub_EventScript_DistributeEonTicket) // southern island
+	goto_if_unset(FLAG_RECEIVED_AURORA_TICKET, MysteryGiftScript_AuroraTicket) // deoxys
+	goto_if_unset(FLAG_RECEIVED_MYSTIC_TICKET, MysteryGiftScript_MysticTicket) // hooh and lugia
+	goto(CableClub_EventScript_MysteryGiftThankYou2)
+	end
+}

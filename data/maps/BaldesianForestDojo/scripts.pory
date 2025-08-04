@@ -350,7 +350,7 @@ script BaldesianForestDojo_EventScript_GiveScroll{
         down in our family for generations.\p
         Which one would you like?\n
         Choose wisely.", MSGBOX_DEFAULT)
-    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Scroll of Darkness", "Scroll of Waters")
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_SHOW_ITEM, ITEM_SCROLL_OF_DARKNESS, ITEM_SCROLL_OF_WATERS)
     if(var(VAR_RESULT) == 0){
         giveitem(ITEM_SCROLL_OF_DARKNESS)
         waitmessage

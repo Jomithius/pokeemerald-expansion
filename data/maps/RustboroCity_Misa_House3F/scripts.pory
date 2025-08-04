@@ -33,7 +33,7 @@ script RustboroCity_Misa_House3F_Emo{
 
 script RustboroCity_Misa_House3F_Togepi{
     lockall
-    showmonpic(SPECIES_TOGEPI, 10,4)
+    showmonpic(SPECIES_TOGEPI, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     It contained the POKéMON\n
     TOGEPI.\p

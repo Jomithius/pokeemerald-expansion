@@ -1534,16 +1534,15 @@ movement SlateportFacePlayer{
 
 script SlateportCity_EventScript_Psyduck {
     lock
-    applymovement(37, SlateportFacePlayer)
-    waitmovement(37)
+    applymovement(VAR_LAST_TALKED, SlateportFacePlayer)
+    waitmovement(VAR_LAST_TALKED)
     delay(30)
     playse(SE_BIKE_HOP)
-    applymovement(37, SlateportConfused)
-    waitmovement(37)
+    applymovement(VAR_LAST_TALKED, SlateportConfused)
+    waitmovement(VAR_LAST_TALKED)
     delay(10)
     playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
-	msgbox("PSYDUCK: Psy?" MSGBOX_AUTOCLOSE)
-    waitmessage
+	waitmoncry
     release
 	end
 }
@@ -1558,5 +1557,4 @@ script SlateportCity_EventScript_GymSign {
 
 text SlateportGymSign{"SLATEPORT CITY POKéMON GYM\n
 LEADER: LIAM\l
-“Experience the power of POOBLES!”"
-}
+“Experience the power of POOBLES!”"}

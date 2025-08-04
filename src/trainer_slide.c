@@ -75,7 +75,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAY_RUSTBORO_TORCHIC] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow, {PLAYER}!\n You're this strong already!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow, {B_PLAYER_NAME}!\n You're this strong already!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
         {
@@ -111,7 +111,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAY_ROUTE_119_TORCHIC] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow {PLAYER}!\nYou're stronger than ever!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow {B_PLAYER_NAME}!\nYou're stronger than ever!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRENDAN_ROUTE_119_TREECKO] =
         {
@@ -143,8 +143,8 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_JOMITHIUS_4] = // James
         {
-            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("{PLAYER}…\nI respect your strength.\pThat's why we're not going to hold\nanything back.{PAUSE_UNTIL_PRESS}"),
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("{PLAYER}!\nLet me show you our new strength!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("{B_PLAYER_NAME}…\nI respect your strength.\pThat's why we're not going to hold\nanything back.{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, TYPHLOSION!\nShow {B_PLAYER_NAME} your new strength!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_ROXANNE_2] = // Steven
         {
@@ -247,7 +247,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_CHANNELER_NEWMOON_ISLAND] = // Nightmare
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("You… Can't escape…{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("{B_PLAYER_NAME}!\nYOU WILL NEVER ESCAPE…{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BENNIS_4] = // Bennis
         {
@@ -269,13 +269,21 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GARDEVOIR!\nGo!{PAUSE_UNTIL_PRESS}"),
         },
-        [TRAINER_BRENDAN_PLACEHOLDER] =
+        [TRAINER_BRENDAN_PLACEHOLDER] = // birchslab
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Let's go, SCEPTILE!{PAUSE_UNTIL_PRESS}"),
         },
-        [TRAINER_MAY_PLACEHOLDER] =
+        [TRAINER_MAY_PLACEHOLDER] = // birchs lab
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay then!\n Let's go, BLAZIKEN!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_MAE_3] = // wachun
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("YASSSS, PIDGEOT! SLAAAYYYYY!\nPERIODDDT!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_SPEEDWAGON_3] = // wachun
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("You can't stop the MISSISSWUAGWA RIDERS!{PAUSE_UNTIL_PRESS}"),
         },
     },
 };
