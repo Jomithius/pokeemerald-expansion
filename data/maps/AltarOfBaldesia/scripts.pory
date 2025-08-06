@@ -514,6 +514,8 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
 
 script AltarOfBaldesia_EventScript_Jirachi{
     lock
+    checkitem(ITEM_POKE_FLUTE)
+    goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_NopReturn)
     goto_if_eq(VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle) // if player somehow lost
     goto_if_eq(VAR_JIRACHI_COUNTER, 10, AltarOfBaldesia_EventScript_ShouldntTryAgain) // locks player out if they ko'd jirachi
     msgbox("JIRACHI is in a deep slumber.\n

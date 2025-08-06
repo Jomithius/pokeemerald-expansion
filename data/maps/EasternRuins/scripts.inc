@@ -99,39 +99,47 @@ EasternRuins_EventScript_HexManiacMaliciousArmor::
 # 81 "data/maps/EasternRuins/scripts.pory"
 	goto_if_ne VAR_RESULT, TRUE, EasternRuins_EventScript_HexManiacShowMeAGhostType
 # 82 "data/maps/EasternRuins/scripts.pory"
-	msgbox EasternRuins_EventScript_HexManiacMaliciousArmor_Text_1, MSGBOX_DEFAULT
+	playse SE_PIN
+# 83 "data/maps/EasternRuins/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
+# 84 "data/maps/EasternRuins/scripts.pory"
+	waitmovement 0
 # 85 "data/maps/EasternRuins/scripts.pory"
-	checkitemspace ITEM_MALICIOUS_ARMOR
+	waitse
 # 86 "data/maps/EasternRuins/scripts.pory"
+	msgbox EasternRuins_EventScript_HexManiacMaliciousArmor_Text_1, MSGBOX_DEFAULT
+# 89 "data/maps/EasternRuins/scripts.pory"
+	checkitemspace ITEM_MALICIOUS_ARMOR
+# 90 "data/maps/EasternRuins/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq EasternRuins_EventScript_HexManiacMaliciousArmor_2
-# 92 "data/maps/EasternRuins/scripts.pory"
+# 96 "data/maps/EasternRuins/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 EasternRuins_EventScript_HexManiacMaliciousArmor_1:
-# 94 "data/maps/EasternRuins/scripts.pory"
+# 98 "data/maps/EasternRuins/scripts.pory"
 	msgbox EasternRuins_EventScript_HexManiacMaliciousArmor_Text_2, MSGBOX_AUTOCLOSE
-# 96 "data/maps/EasternRuins/scripts.pory"
+# 100 "data/maps/EasternRuins/scripts.pory"
 	waitmessage
 	end
 
 EasternRuins_EventScript_HexManiacMaliciousArmor_2:
-# 87 "data/maps/EasternRuins/scripts.pory"
+# 91 "data/maps/EasternRuins/scripts.pory"
 	giveitem ITEM_MALICIOUS_ARMOR
-# 88 "data/maps/EasternRuins/scripts.pory"
+# 92 "data/maps/EasternRuins/scripts.pory"
 	setflag FLAG_RECEIVED_MALICIOUS_ARMOR
-# 89 "data/maps/EasternRuins/scripts.pory"
+# 93 "data/maps/EasternRuins/scripts.pory"
 	waitmessage
 	goto EasternRuins_EventScript_HexManiacMaliciousArmor_1
 
 
 EasternRuins_EventScript_HexManiacShowMeAGhostType::
-# 101 "data/maps/EasternRuins/scripts.pory"
+# 105 "data/maps/EasternRuins/scripts.pory"
 	msgbox EasternRuins_EventScript_HexManiacShowMeAGhostType_Text_0, MSGBOX_NPC
 	end
 
 
 EasternRuins_EventScript_HexManiacThanks::
-# 107 "data/maps/EasternRuins/scripts.pory"
+# 111 "data/maps/EasternRuins/scripts.pory"
 	msgbox EasternRuins_EventScript_HexManiacThanks_Text_0, MSGBOX_NPC
 	end
 
@@ -198,20 +206,20 @@ EasternRuins_EventScript_KleavorHint_Text_0:
 
 EasternRuins_EventScript_HexManiacMaliciousArmor_Text_0:
 # 76 "data/maps/EasternRuins/scripts.pory"
-	.string "I-I love GHOST TYPE P-POKéMON…\n show me one a-and I'll…\l g-give you a gift…$"
+	.string "I-I love GHOST TYPE P-POKéMON…\p Show me one a-and I'll…\n g-give you a gift…$"
 
 EasternRuins_EventScript_HexManiacMaliciousArmor_Text_1:
-# 82 "data/maps/EasternRuins/scripts.pory"
+# 86 "data/maps/EasternRuins/scripts.pory"
 	.string "T-Thanks for s-showing me a\n G-GHOST TYPE P-POKéMON…\p H-Here.$"
 
 EasternRuins_EventScript_HexManiacMaliciousArmor_Text_2:
-# 94 "data/maps/EasternRuins/scripts.pory"
+# 98 "data/maps/EasternRuins/scripts.pory"
 	.string "I hope t-that armor suits you\n w-well…$"
 
 EasternRuins_EventScript_HexManiacShowMeAGhostType_Text_0:
-# 101 "data/maps/EasternRuins/scripts.pory"
+# 105 "data/maps/EasternRuins/scripts.pory"
 	.string "O-Oh…\n You d-don't have a GHOST T-TYPE?$"
 
 EasternRuins_EventScript_HexManiacThanks_Text_0:
-# 107 "data/maps/EasternRuins/scripts.pory"
+# 111 "data/maps/EasternRuins/scripts.pory"
 	.string "T-Thanks for s-showing me a\n G-GHOST TYPE P-POKéMON…\p I hope t-that armor suits you\n w-well…$"

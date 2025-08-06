@@ -8,6 +8,7 @@ mapscripts Ultra_Space_MapScripts {
     ]
     MAP_SCRIPT_ON_LOAD: Ultra_Space_UpdatePCMetatiles
     MAP_SCRIPT_ON_RESUME: Ultra_Space_UpdateUltraBeasts
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE: Ultra_Space_OnWarp
 }
 
 script Ultra_Space_UpdatePCMetatiles{
@@ -18,7 +19,7 @@ script Ultra_Space_UpdatePCMetatiles{
 script Ultra_Space_UpdateUltraBeasts{
     call_if_set(FLAG_DEFEATED_BLACEPHALON, Ultra_Space_RemoveBlacephalon)
     call_if_set(FLAG_DEFEATED_NECROZMA, Ultra_Space_RemoveNecrozma)
-    call_if_ge(VAR_ULTRA_SPACE_STATE, 3, UltraSpace_TryRemoveUltraBeast)
+    call_if_ge(VAR_ULTRA_SPACE_STATE, 3, Ultra_Space_TryRemoveUltraBeast)
     end
 }
 
@@ -32,7 +33,7 @@ script Ultra_Space_RemoveNecrozma{
     return
 }
 
-script UltraSpace_TryRemoveUltraBeast{
+script Ultra_Space_TryRemoveUltraBeast{
     specialvar(VAR_RESULT, GetBattleOutcome)
     goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
@@ -45,6 +46,16 @@ script UltraSpace_TryRemoveUltraBeast{
     }
     return
 }
+
+raw`
+Ultra_Space_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, Ultra_Space_EventScript_TurnPlayerNorth
+	.2byte 0
+
+Ultra_Space_EventScript_TurnPlayerNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+`
 
 script Ultra_Space_EventScript_ArrivedInUltraSpace{
     lockall
@@ -601,9 +612,9 @@ movement Ultra_Space_Movement_JamesLookAround{
 }
 
 movement Ultra_Space_Movement_PlayerLookAround{
-    walk_in_place_up
-    delay_16
     walk_in_place_down
+    delay_16
+    walk_in_place_up
     delay_16
     walk_in_place_left
     delay_16

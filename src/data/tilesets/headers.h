@@ -834,7 +834,7 @@ const struct Tileset gTileset_Snow =
     .palettes = gTilesetPalettes_Snow,
     .metatiles = gMetatiles_Snow,
     .metatileAttributes = gMetatileAttributes_Snow,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_Void =
@@ -845,7 +845,7 @@ const struct Tileset gTileset_Void =
     .palettes = gTilesetPalettes_Void,
     .metatiles = gMetatiles_Void,
     .metatileAttributes = gMetatileAttributes_Void,
-    .callback = NULL,
+    .callback = InitTilesetAnim_Void,
 };
 
 const struct Tileset gTileset_Sewer =
@@ -900,7 +900,7 @@ const struct Tileset gTileset_LugiaAltar =
     .palettes = gTilesetPalettes_LugiaAltar,
     .metatiles = gMetatiles_LugiaAltar,
     .metatileAttributes = gMetatileAttributes_LugiaAltar,
-    .callback = NULL,
+    .callback = InitTilesetAnim_LugiaAltar,
 };
 
 const struct Tileset gTileset_SmallTownWithLab =

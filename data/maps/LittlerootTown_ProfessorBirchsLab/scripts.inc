@@ -2025,6 +2025,8 @@ LittlerootTown_ProfessorBirchsLab_EventScript_RivalRematch_1:
 # 1029 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
 # 1030 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	fadedefaultbgm
+# 1031 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	end
 
@@ -2043,30 +2045,42 @@ LittlerootTown_ProfessorBirchsLab_EventScript_RivalRematch_2:
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_MayBattle::
-# 1035 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1036 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_MayBattle_Text_0, MSGBOX_AUTOCLOSE
-# 1038 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmessage
 # 1039 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	trainerbattle_no_intro TRAINER_MAY_PLACEHOLDER, LittlerootTown_ProfessorBirchsLab_EventScript_MayBattle_Text_1
+	waitmessage
 # 1040 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_DEFEATED_RIVAL_BIRCH_LAB
+	trainerbattle_no_intro TRAINER_MAY_PLACEHOLDER, LittlerootTown_ProfessorBirchsLab_EventScript_MayBattle_Text_1
 # 1041 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_RivalFuturePlans
+	setflag FLAG_DEFEATED_RIVAL_BIRCH_LAB
+# 1042 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_MayPostBattle
 	end
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle::
-# 1046 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1047 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle_Text_0, MSGBOX_AUTOCLOSE
-# 1049 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmessage
 # 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRENDAN_PLACEHOLDER, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle_Text_1
+	waitmessage
 # 1051 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_DEFEATED_RIVAL_BIRCH_LAB
+	trainerbattle_no_intro TRAINER_BRENDAN_PLACEHOLDER, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle_Text_1
 # 1052 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_RivalFuturePlans
+	setflag FLAG_DEFEATED_RIVAL_BIRCH_LAB
+# 1053 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle
+	end
+
+
+LittlerootTown_ProfessorBirchsLab_EventScript_MayPostBattle::
+# 1058 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_MayPostBattle_Text_0, MSGBOX_DEFAULT
+	end
+
+
+LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle::
+# 1066 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle_Text_0, MSGBOX_DEFAULT
 	end
 
 
@@ -2083,17 +2097,25 @@ LittlerootTown_ProfessorBirchsLab_EventScript_RivalRematch_Text_2:
 	.string "BRENDAN: Hey, {PLAYER}!\n You look like you've gotten stronger…\p You know, I've been training too.\n How about a rematch?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_MayBattle_Text_0:
-# 1035 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1036 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Great!\n I might not be great at battling,\l but don't underestimate me!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_MayBattle_Text_1:
-# 1039 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1040 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Wow, {PLAYER}.\nYou've gotten this strong!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle_Text_0:
-# 1046 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1047 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Great!\n I'm not going to lose just because\l you're the CHAMPION!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle_Text_1:
-# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1051 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Wow, {PLAYER}.\nYou've gotten this strong?$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_MayPostBattle_Text_0:
+# 1058 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "I can see why you're the CHAMPION,\n {PLAYER}.\p I think I'll stick to what I'm good at…\n catching POKéMON!$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle_Text_0:
+# 1066 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "I can see why you're the CHAMPION,\n {PLAYER}.\p I think I'll stick to what I'm good at…\n raising POKéMON!$"

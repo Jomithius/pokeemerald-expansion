@@ -43,6 +43,8 @@ static void TilesetAnim_MauvilleGym(u16);
 static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
+static void TilesetAnim_LugiaAltar(u16);
+static void TilesetAnim_Void(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -73,6 +75,14 @@ static void QueueAnimTiles_MauvilleGym_ElectricGates(u16);
 static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
+static void QueueAnimTiles_LugiaAltar_Fire(u16);
+static void QueueAnimTiles_LugiaAltar_Torch(u16);
+static void QueueAnimTiles_Void_FallingStar(u16);
+static void QueueAnimTiles_Void_FallingStarTrail(u16);
+static void QueueAnimTiles_Void_Star1(u16);
+static void QueueAnimTiles_Void_Star2(u16);
+static void QueueAnimTiles_Void_Star3(u16);
+static void QueueAnimTiles_Void_Star4(u16);
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -544,6 +554,117 @@ static const u16 *const sTilesetAnims_BattleDomeFloorLightPals[] = {
     gTilesetAnims_BattleDomePals0_3,
 };
 
+const u16 gTilesetAnims_LugiaAltar_Fire_Frame0[] = INCBIN_U16("data/tilesets/secondary/lugia_altar/anim/fire/0.4bpp");
+const u16 gTilesetAnims_LugiaAltar_Fire_Frame1[] = INCBIN_U16("data/tilesets/secondary/lugia_altar/anim/fire/1.4bpp");
+const u16 gTilesetAnims_LugiaAltar_Fire_Frame2[] = INCBIN_U16("data/tilesets/secondary/lugia_altar/anim/fire/2.4bpp");
+const u16 tileset_anims_space_12[16] = {};
+
+const u16 *const gTilesetAnims_LugiaAltar_Fire[] = {
+    gTilesetAnims_LugiaAltar_Fire_Frame0,
+    gTilesetAnims_LugiaAltar_Fire_Frame1,
+    gTilesetAnims_LugiaAltar_Fire_Frame2
+};
+
+const u16 gTilesetAnims_LugiaAltar_Torch_Frame0[] = INCBIN_U16("data/tilesets/secondary/lugia_altar/anim/torch/0.4bpp");
+const u16 gTilesetAnims_LugiaAltar_Torch_Frame1[] = INCBIN_U16("data/tilesets/secondary/lugia_altar/anim/torch/1.4bpp");
+const u16 gTilesetAnims_LugiaAltar_Torch_Frame2[] = INCBIN_U16("data/tilesets/secondary/lugia_altar/anim/torch/2.4bpp");
+const u16 tileset_anims_space_13[16] = {};
+
+const u16 *const gTilesetAnims_LugiaAltar_Torch[] = {
+    gTilesetAnims_LugiaAltar_Torch_Frame0,
+    gTilesetAnims_LugiaAltar_Torch_Frame1,
+    gTilesetAnims_LugiaAltar_Torch_Frame2
+};
+
+const u16 gTilesetAnims_Void_FallingStar_Frame0[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstar/0.4bpp");
+const u16 gTilesetAnims_Void_FallingStar_Frame1[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstar/1.4bpp");
+const u16 gTilesetAnims_Void_FallingStar_Frame2[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstar/2.4bpp");
+const u16 gTilesetAnims_Void_FallingStar_Frame3[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstar/3.4bpp");
+const u16 gTilesetAnims_Void_FallingStar_Frame4[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstar/4.4bpp");
+const u16 gTilesetAnims_Void_FallingStar_Frame5[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstar/5.4bpp");
+const u16 gTilesetAnims_Void_FallingStar_Frame6[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstar/6.4bpp");
+const u16 gTilesetAnims_Void_FallingStar_Frame7[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstar/7.4bpp");
+const u16 tileset_anims_space_14[16] = {};
+
+const u16 *const gTilesetAnims_Void_FallingStar[] = {
+    gTilesetAnims_Void_FallingStar_Frame0,
+    gTilesetAnims_Void_FallingStar_Frame1,
+    gTilesetAnims_Void_FallingStar_Frame2,
+    gTilesetAnims_Void_FallingStar_Frame3,
+    gTilesetAnims_Void_FallingStar_Frame4,
+    gTilesetAnims_Void_FallingStar_Frame5,
+    gTilesetAnims_Void_FallingStar_Frame6,
+    gTilesetAnims_Void_FallingStar_Frame7
+};
+
+const u16 gTilesetAnims_Void_FallingStarTrail_Frame0[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstartrail/0.4bpp");
+const u16 gTilesetAnims_Void_FallingStarTrail_Frame1[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstartrail/1.4bpp");
+const u16 gTilesetAnims_Void_FallingStarTrail_Frame2[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstartrail/2.4bpp");
+const u16 gTilesetAnims_Void_FallingStarTrail_Frame3[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstartrail/3.4bpp");
+const u16 gTilesetAnims_Void_FallingStarTrail_Frame4[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstartrail/4.4bpp");
+const u16 gTilesetAnims_Void_FallingStarTrail_Frame5[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstartrail/5.4bpp");
+const u16 gTilesetAnims_Void_FallingStarTrail_Frame6[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstartrail/6.4bpp");
+const u16 gTilesetAnims_Void_FallingStarTrail_Frame7[] = INCBIN_U16("data/tilesets/secondary/void/anim/fallingstartrail/7.4bpp");
+const u16 tileset_anims_space_15[16] = {};
+
+const u16 *const gTilesetAnims_Void_FallingStarTrail[] = {
+    gTilesetAnims_Void_FallingStarTrail_Frame0,
+    gTilesetAnims_Void_FallingStarTrail_Frame1,
+    gTilesetAnims_Void_FallingStarTrail_Frame2,
+    gTilesetAnims_Void_FallingStarTrail_Frame3,
+    gTilesetAnims_Void_FallingStarTrail_Frame4,
+    gTilesetAnims_Void_FallingStarTrail_Frame5,
+    gTilesetAnims_Void_FallingStarTrail_Frame6,
+    gTilesetAnims_Void_FallingStarTrail_Frame7
+};
+
+const u16 gTilesetAnims_Void_Star1_Frame0[] = INCBIN_U16("data/tilesets/secondary/void/anim/star1/0.4bpp");
+const u16 gTilesetAnims_Void_Star1_Frame1[] = INCBIN_U16("data/tilesets/secondary/void/anim/star1/1.4bpp");
+const u16 gTilesetAnims_Void_Star1_Frame2[] = INCBIN_U16("data/tilesets/secondary/void/anim/star1/2.4bpp");
+const u16 tileset_anims_space_16[16] = {};
+
+const u16 *const gTilesetAnims_Void_Star1[] = {
+    gTilesetAnims_Void_Star1_Frame0,
+    gTilesetAnims_Void_Star1_Frame1,
+    gTilesetAnims_Void_Star1_Frame2,
+    gTilesetAnims_Void_Star1_Frame1
+};
+
+const u16 gTilesetAnims_Void_Star2_Frame0[] = INCBIN_U16("data/tilesets/secondary/void/anim/star2/0.4bpp");
+const u16 gTilesetAnims_Void_Star2_Frame1[] = INCBIN_U16("data/tilesets/secondary/void/anim/star2/1.4bpp");
+const u16 gTilesetAnims_Void_Star2_Frame2[] = INCBIN_U16("data/tilesets/secondary/void/anim/star2/2.4bpp");
+const u16 tileset_anims_space_17[16] = {};
+
+const u16 *const gTilesetAnims_Void_Star2[] = {
+    gTilesetAnims_Void_Star2_Frame0,
+    gTilesetAnims_Void_Star2_Frame1,
+    gTilesetAnims_Void_Star2_Frame2
+};
+
+const u16 gTilesetAnims_Void_Star3_Frame0[] = INCBIN_U16("data/tilesets/secondary/void/anim/star3/0.4bpp");
+const u16 gTilesetAnims_Void_Star3_Frame1[] = INCBIN_U16("data/tilesets/secondary/void/anim/star3/1.4bpp");
+const u16 gTilesetAnims_Void_Star3_Frame2[] = INCBIN_U16("data/tilesets/secondary/void/anim/star3/2.4bpp");
+const u16 tileset_anims_space_18[16] = {};
+
+const u16 *const gTilesetAnims_Void_Star3[] = {
+    gTilesetAnims_Void_Star3_Frame0,
+    gTilesetAnims_Void_Star3_Frame1,
+    gTilesetAnims_Void_Star3_Frame2
+};
+
+const u16 gTilesetAnims_Void_Star4_Frame0[] = INCBIN_U16("data/tilesets/secondary/void/anim/star4/0.4bpp");
+const u16 gTilesetAnims_Void_Star4_Frame1[] = INCBIN_U16("data/tilesets/secondary/void/anim/star4/1.4bpp");
+const u16 gTilesetAnims_Void_Star4_Frame2[] = INCBIN_U16("data/tilesets/secondary/void/anim/star4/2.4bpp");
+const u16 gTilesetAnims_Void_Star4_Frame3[] = INCBIN_U16("data/tilesets/secondary/void/anim/star4/3.4bpp");
+const u16 tileset_anims_space_19[16] = {};
+
+const u16 *const gTilesetAnims_Void_Star4[] = {
+    gTilesetAnims_Void_Star4_Frame0,
+    gTilesetAnims_Void_Star4_Frame1,
+    gTilesetAnims_Void_Star4_Frame2,
+    gTilesetAnims_Void_Star4_Frame3
+};
+
 static void ResetTilesetAnimBuffer(void)
 {
     sTilesetDMA3TransferBufferSize = 0;
@@ -834,6 +955,20 @@ void InitTilesetAnim_BattleDome(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_BattleDome;
 }
 
+void InitTilesetAnim_LugiaAltar(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_LugiaAltar;
+}
+
+void InitTilesetAnim_Void(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Void;
+}
+
 static void TilesetAnim_Rustboro(u16 timer)
 {
     if (timer % 8 == 0)
@@ -1110,6 +1245,35 @@ static void TilesetAnim_BattleDome2(u16 timer)
         BlendAnimPalette_BattleDome_FloorLightsNoBlend(timer / 4);
 }
 
+static void TilesetAnim_LugiaAltar(u16 timer)
+{
+    if (timer % 12 == 0)
+    {
+        QueueAnimTiles_LugiaAltar_Fire(timer / 12);
+        QueueAnimTiles_LugiaAltar_Torch(timer / 12);
+    }
+}
+
+static void TilesetAnim_Void(u16 timer)
+{
+    if (timer % 16 == 0)
+    {
+        QueueAnimTiles_Void_Star1(timer / 16);
+    }
+    if (timer % 24 == 1)
+    {
+        QueueAnimTiles_Void_Star2(timer / 24);
+    }
+    if (timer % 36 == 2)
+    {
+        QueueAnimTiles_Void_Star3(timer / 36);
+    }
+    if (timer % 48 == 3)
+    {
+        QueueAnimTiles_Void_Star4(timer / 48);
+    }
+}
+
 static void QueueAnimTiles_Building_TVTurnedOn(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Building_TvTurnedOn);
@@ -1185,4 +1349,52 @@ static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16 timer)
         if (!--sSecondaryTilesetAnimCounterMax)
             sSecondaryTilesetAnimCallback = NULL;
     }
+}
+
+static void QueueAnimTiles_LugiaAltar_Fire(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_LugiaAltar_Fire);
+    AppendTilesetAnimToBuffer(gTilesetAnims_LugiaAltar_Fire[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 294)), 6 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_LugiaAltar_Torch(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_LugiaAltar_Torch);
+    AppendTilesetAnimToBuffer(gTilesetAnims_LugiaAltar_Torch[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 310)), 6 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Void_FallingStar(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_FallingStar);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Void_FallingStar[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 195)), 8 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Void_FallingStarTrail(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_FallingStarTrail);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Void_FallingStarTrail[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 215)), 8 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Void_Star1(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_Star1);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Void_Star1[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 85)), 3 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Void_Star2(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_Star2);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Void_Star2[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 20)), 3 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Void_Star3(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_Star3);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Void_Star3[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 23)), 3 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Void_Star4(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_Star4);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Void_Star4[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 16)), 4 * TILE_SIZE_4BPP);
 }
