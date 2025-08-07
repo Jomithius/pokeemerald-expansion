@@ -77,7 +77,7 @@ Ultra_Space_TryRemoveUltraBeast_2:
 # 51 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_OnWarp:
 # 52 "data/maps/Ultra_Space/scripts.pory"
-	map_script_2 VAR_TEMP_1, 0, Ultra_Space_EventScript_TurnPlayerNorth
+	map_script_2 VAR_ULTRA_SPACE_STATE, 1, Ultra_Space_EventScript_TurnPlayerNorth
 # 53 "data/maps/Ultra_Space/scripts.pory"
 	.2byte 0
 # 54 "data/maps/Ultra_Space/scripts.pory"

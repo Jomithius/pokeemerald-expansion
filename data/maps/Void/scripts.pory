@@ -7,6 +7,7 @@ raw`Void_MapScripts::
 
 script Void_OnTransition{
     setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_TEMP_8)
     end
 }
@@ -52,7 +53,7 @@ script Void_EventScript_FinalBattle{
         ULTRA SPACE.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(1, Void_Movement_WalkToPlayer)
-    delay(32)
+    delay(45)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(1)
     msgbox("{PLAYER}, I wanted to show you this\n

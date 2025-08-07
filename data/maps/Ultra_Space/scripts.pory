@@ -49,7 +49,7 @@ script Ultra_Space_TryRemoveUltraBeast{
 
 raw`
 Ultra_Space_OnWarp:
-	map_script_2 VAR_TEMP_1, 0, Ultra_Space_EventScript_TurnPlayerNorth
+	map_script_2 VAR_ULTRA_SPACE_STATE, 1, Ultra_Space_EventScript_TurnPlayerNorth
 	.2byte 0
 
 Ultra_Space_EventScript_TurnPlayerNorth::

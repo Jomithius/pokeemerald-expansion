@@ -77,8 +77,6 @@ static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
 static void QueueAnimTiles_LugiaAltar_Fire(u16);
 static void QueueAnimTiles_LugiaAltar_Torch(u16);
-static void QueueAnimTiles_Void_FallingStar(u16);
-static void QueueAnimTiles_Void_FallingStarTrail(u16);
 static void QueueAnimTiles_Void_Star1(u16);
 static void QueueAnimTiles_Void_Star2(u16);
 static void QueueAnimTiles_Void_Star3(u16);
@@ -1361,18 +1359,6 @@ static void QueueAnimTiles_LugiaAltar_Torch(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_LugiaAltar_Torch);
     AppendTilesetAnimToBuffer(gTilesetAnims_LugiaAltar_Torch[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 310)), 6 * TILE_SIZE_4BPP);
-}
-
-static void QueueAnimTiles_Void_FallingStar(u16 timer)
-{
-    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_FallingStar);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Void_FallingStar[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 195)), 8 * TILE_SIZE_4BPP);
-}
-
-static void QueueAnimTiles_Void_FallingStarTrail(u16 timer)
-{
-    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_FallingStarTrail);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Void_FallingStarTrail[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 215)), 8 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Void_Star1(u16 timer)

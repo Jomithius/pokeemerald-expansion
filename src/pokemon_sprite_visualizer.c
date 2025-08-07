@@ -384,6 +384,10 @@ const u8 gBattleBackgroundNames[][30] =
     [MAP_BATTLE_SCENE_GROUDON]  = _("GROUDON                 "),
     [MAP_BATTLE_SCENE_KYOGRE]   = _("KYOGRE                  "),
     [MAP_BATTLE_SCENE_RAYQUAZA] = _("RAYQUAZA                "),
+    [MAP_BATTLE_SCENE_ULTRA_SPACE] = _("ULTRA SPACE          "),
+    [MAP_BATTLE_SCENE_SNOW]     = _("SNOW                    "),
+    [MAP_BATTLE_SCENE_VOID]     = _("VOID                    "),
+    [MAP_BATTLE_SCENE_STADIUM2] = _("STADIUM TWO             "),
 };
 const u8 gBattleBackgroundTerrainNames[][26] =
 {
@@ -397,6 +401,9 @@ const u8 gBattleBackgroundTerrainNames[][26] =
     [BATTLE_ENVIRONMENT_CAVE]       = _("NORMAL - CAVE            "),
     [BATTLE_ENVIRONMENT_BUILDING]   = _("NORMAL - BUILDING        "),
     [BATTLE_ENVIRONMENT_PLAIN]      = _("NORMAL - PLAIN           "),
+    [BATTLE_ENVIRONMENT_ULTRA_SPACE] = _("NORMAL - ULTRA SPACE    "),
+    [BATTLE_ENVIRONMENT_SNOW]       = _("NORMAL - SNOW            "),
+    [BATTLE_ENVIRONMENT_STADIUM2]   = _("NORMAL - STADIUM TWO     "),
 };
 const u8 sShadowSizeLabels[][4] =
 {
@@ -997,6 +1004,26 @@ static void LoadBattleBg(u8 battleBgType, u8 battleEnvironment)
         LZDecompressVram(gBattleEnvironmentTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
         LZDecompressVram(gBattleEnvironmentTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
         LoadCompressedPalette(gBattleEnvironmentPalette_Rayquaza, 0x20, 0x60);
+        break;
+    case MAP_BATTLE_SCENE_ULTRA_SPACE:
+        LZDecompressVram(gBattleEnvironmentTiles_UltraSpace, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_UltraSpace, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_UltraSpace, 0x20, 0x60);
+        break;
+    case MAP_BATTLE_SCENE_SNOW:
+        LZDecompressVram(gBattleEnvironmentTiles_Snow, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Snow, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_Snow, 0x20, 0x60);
+        break;
+    case MAP_BATTLE_SCENE_VOID:
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Purple, 0x20, 0x60);
+        break;
+    case MAP_BATTLE_SCENE_STADIUM2:
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Brown, 0x20, 0x60);
         break;
     }
 }

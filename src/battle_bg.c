@@ -27,6 +27,7 @@
 #include "constants/trainers.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_partner.h"
+#include "string_util.h"
 
 // .rodata
 
@@ -701,6 +702,33 @@ const struct BattleBackground sBattleEnvironmentTable[] =
         .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
         .palette = gBattleEnvironmentPalette_Plain,
     },
+
+    [BATTLE_ENVIRONMENT_ULTRA_SPACE] =
+    {
+        .tileset = gBattleEnvironmentTiles_UltraSpace,
+        .tilemap = gBattleEnvironmentTilemap_UltraSpace,
+        .entryTileset = gBattleEnvironmentAnimTiles_UltraSpace,
+        .entryTilemap = gBattleEnvironmentAnimTilemap_UltraSpace,
+        .palette = gBattleEnvironmentPalette_UltraSpace,
+    },
+
+    [BATTLE_ENVIRONMENT_SNOW] =
+    {
+        .tileset = gBattleEnvironmentTiles_Snow,
+        .tilemap = gBattleEnvironmentTilemap_Snow,
+        .entryTileset = gBattleEnvironmentAnimTiles_Snow,
+        .entryTilemap = gBattleEnvironmentAnimTilemap_Snow,
+        .palette = gBattleEnvironmentPalette_Snow,
+    },
+
+    [BATTLE_ENVIRONMENT_STADIUM2] =
+    {
+        .tileset = gBattleEnvironmentTiles_Stadium2,
+        .tilemap = gBattleEnvironmentTilemap_Stadium2,
+        .entryTileset = gBattleEnvironmentAnimTiles_Building,
+        .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
+        .palette = gBattleEnvironmentPalette_Stadium2Brown,
+    },
 };
 
 void BattleInitBgsAndWindows(void)
@@ -796,11 +824,70 @@ void DrawMainBattleBackground(void)
                 LoadCompressedPalette(gBattleEnvironmentPalette_BuildingLeader, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 return;
             }
+            else if (trainerClass == TRAINER_CLASS_KNIGHT && !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleAriaName))
+            {
+                LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2DarkBlue, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                return;
+            }
+            else if (trainerClass == TRAINER_CLASS_NINJA && !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
+            {
+                LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2DarkBlue, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                return;
+            }
+            else if (trainerClass == TRAINER_CLASS_ELITE_FOUR && !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleEugeniaName))
+            {
+                LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Pink, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                return;
+            }
+            else if (trainerClass == TRAINER_CLASS_CHIEF)
+            {
+                LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Brown, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                return;
+            }
             else if (trainerClass == TRAINER_CLASS_CHAMPION)
             {
-                LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
-                LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
-                LoadCompressedPalette(gBattleEnvironmentPalette_StadiumWallace, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                if(!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleCynthiaName))
+                {
+                    LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+                    LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+                    LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Brown, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    return;  
+                }
+                if(!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleRedName))
+                {
+                    LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+                    LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+                    LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Pink, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    return;  
+                }
+                else
+                {
+                    LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
+                    LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
+                    LoadCompressedPalette(gBattleEnvironmentPalette_StadiumWallace, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    return;
+                }
+            }
+            else if (trainerClass == TRAINER_CLASS_CEO)
+            {
+                LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Purple, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                return;
+            }
+            else if (trainerClass == TRAINER_CLASS_BLACK_MAGE)
+            {
+                LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Gray, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 return;
             }
         }
@@ -852,6 +939,26 @@ void DrawMainBattleBackground(void)
             LZDecompressVram(gBattleEnvironmentTiles_Building, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleEnvironmentTilemap_Building, (void *)(BG_SCREEN_ADDR(26)));
             LoadCompressedPalette(gBattleEnvironmentPalette_Frontier, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            break;
+        case MAP_BATTLE_SCENE_ULTRA_SPACE:
+            LZDecompressVram(gBattleEnvironmentTiles_UltraSpace, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(gBattleEnvironmentTilemap_UltraSpace, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleEnvironmentPalette_UltraSpace, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            break;
+        case MAP_BATTLE_SCENE_SNOW:
+            LZDecompressVram(gBattleEnvironmentTiles_Snow, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(gBattleEnvironmentTilemap_Snow, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleEnvironmentPalette_Snow, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            break;
+        case MAP_BATTLE_SCENE_VOID:
+            LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Purple, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            break;
+        case MAP_BATTLE_SCENE_STADIUM2:
+            LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Brown, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         }
     }
@@ -1263,6 +1370,11 @@ bool8 LoadChosenBattleElement(u8 caseId)
                 else if (trainerClass == TRAINER_CLASS_CHAMPION)
                 {
                     LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
+                    break;
+                }
+                else if (trainerClass == TRAINER_CLASS_CEO || trainerClass == TRAINER_CLASS_BLACK_MAGE)
+                {
+                    LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
                     break;
                 }
             }

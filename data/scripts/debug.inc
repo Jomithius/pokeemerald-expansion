@@ -191,6 +191,8 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
+	warp MAP_ULTRA_SPACE, 27, 40
+	waitstate
 	release
 	end
 

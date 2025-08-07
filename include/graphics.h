@@ -280,6 +280,23 @@ extern const u32 gBattleEnvironmentPalette_StadiumPhoebe[];
 extern const u32 gBattleEnvironmentPalette_StadiumGlacia[];
 extern const u32 gBattleEnvironmentPalette_StadiumDrake[];
 extern const u32 gBattleEnvironmentPalette_StadiumWallace[];
+extern const u32 gBattleEnvironmentTiles_UltraSpace[];
+extern const u32 gBattleEnvironmentTilemap_UltraSpace[];
+extern const u32 gBattleEnvironmentAnimTiles_UltraSpace[];
+extern const u32 gBattleEnvironmentAnimTilemap_UltraSpace[];
+extern const u32 gBattleEnvironmentPalette_UltraSpace[];
+extern const u32 gBattleEnvironmentTiles_Snow[];
+extern const u32 gBattleEnvironmentTilemap_Snow[];
+extern const u32 gBattleEnvironmentAnimTiles_Snow[];
+extern const u32 gBattleEnvironmentAnimTilemap_Snow[];
+extern const u32 gBattleEnvironmentPalette_Snow[];
+extern const u32 gBattleEnvironmentTiles_Stadium2[];
+extern const u32 gBattleEnvironmentTilemap_Stadium2[];
+extern const u32 gBattleEnvironmentPalette_Stadium2Purple[];
+extern const u32 gBattleEnvironmentPalette_Stadium2DarkBlue[];
+extern const u32 gBattleEnvironmentPalette_Stadium2Brown[];
+extern const u32 gBattleEnvironmentPalette_Stadium2Pink[];
+extern const u32 gBattleEnvironmentPalette_Stadium2Gray[];
 
 // Pokédex
 extern const u32 gPokedexInterface_Gfx[];

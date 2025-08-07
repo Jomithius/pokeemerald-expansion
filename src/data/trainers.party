@@ -17331,8 +17331,6 @@ Impish Nature
 - Toxic  
 - Recover
 
-
-
 Audino (F) @ Audinite  
 Ability: Regenerator  
 Level: 100    
@@ -17589,7 +17587,7 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
 
-Leafeon (F) @ Sitrus Berry
+Leafeon (F) @ Salac Berry
 Ability: Chlorophyll  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -17627,7 +17625,7 @@ Naive Nature
 - Destiny Bond  
 - Vacuum Wave
 
-Orthworm @ Leftovers  
+Orthworm @ Sitrus Berry 
 Ability: Earth Eater  
 Tera Type: Electric  
 EVs: 248 HP / 8 Atk / 252 Def  
@@ -17692,7 +17690,7 @@ Jolly Nature
 
 Mew @ Leftovers  
 Ability: Synchronize  
-Tera Type: Flying  
+Tera Type: Fairy  
 IVs: 0 Atk  
 - Calm Mind  
 - Draco Meteor  

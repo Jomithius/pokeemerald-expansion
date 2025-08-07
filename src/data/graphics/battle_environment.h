@@ -86,3 +86,23 @@ const u32 gBattleEnvironmentAnimTilemap_Building[] = INCBIN_U32("graphics/battle
 
 const u32 gBattleEnvironmentAnimTiles_Rayquaza[] = INCBIN_U32("graphics/battle_environment/sky/anim_tiles.4bpp.lz");
 const u32 gBattleEnvironmentAnimTilemap_Rayquaza[] = INCBIN_U32("graphics/battle_environment/sky/anim_map.bin.lz");
+
+const u32 gBattleEnvironmentTiles_UltraSpace[] = INCBIN_U32("graphics/battle_environment/ultraspace/tiles.4bpp.lz");
+const u32 gBattleEnvironmentTilemap_UltraSpace[] = INCBIN_U32("graphics/battle_environment/ultraspace/map.bin.lz");
+const u32 gBattleEnvironmentAnimTiles_UltraSpace[] = INCBIN_U32("graphics/battle_environment/ultraspace/anim_tiles.4bpp.lz");
+const u32 gBattleEnvironmentAnimTilemap_UltraSpace[] = INCBIN_U32("graphics/battle_environment/ultraspace/anim_map.bin.lz");
+const u32 gBattleEnvironmentPalette_UltraSpace[] = INCBIN_U32("graphics/battle_environment/ultraspace/palette.gbapal.lz");
+
+const u32 gBattleEnvironmentTiles_Snow[] = INCBIN_U32("graphics/battle_environment/snow/tiles.4bpp.lz");
+const u32 gBattleEnvironmentTilemap_Snow[] = INCBIN_U32("graphics/battle_environment/snow/map.bin.lz");
+const u32 gBattleEnvironmentAnimTiles_Snow[] = INCBIN_U32("graphics/battle_environment/snow/anim_tiles.4bpp.lz");
+const u32 gBattleEnvironmentAnimTilemap_Snow[] = INCBIN_U32("graphics/battle_environment/snow/anim_map.bin.lz");
+const u32 gBattleEnvironmentPalette_Snow[] = INCBIN_U32("graphics/battle_environment/snow/palette.gbapal.lz");
+
+const u32 gBattleEnvironmentTiles_Stadium2[] = INCBIN_U32("graphics/battle_environment/stadium2/tiles.4bpp.lz");
+const u32 gBattleEnvironmentTilemap_Stadium2[] = INCBIN_U32("graphics/battle_environment/stadium2/map.bin.lz");
+const u32 gBattleEnvironmentPalette_Stadium2Purple[] = INCBIN_U32("graphics/battle_environment/stadium2/purple.gbapal.lz");
+const u32 gBattleEnvironmentPalette_Stadium2DarkBlue[] = INCBIN_U32("graphics/battle_environment/stadium2/dark_blue.gbapal.lz");
+const u32 gBattleEnvironmentPalette_Stadium2Brown[] = INCBIN_U32("graphics/battle_environment/stadium2/brown.gbapal.lz");
+const u32 gBattleEnvironmentPalette_Stadium2Pink[] = INCBIN_U32("graphics/battle_environment/stadium2/pink.gbapal.lz");
+const u32 gBattleEnvironmentPalette_Stadium2Gray[] = INCBIN_U32("graphics/battle_environment/stadium2/gray.gbapal.lz");
