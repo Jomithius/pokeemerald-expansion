@@ -687,6 +687,8 @@ u8 BattleSetup_GetEnvironmentId(void)
         return BATTLE_ENVIRONMENT_GRASS;
     if (MetatileBehavior_IsSnowTallGrass(tileBehavior)) // Snow terrain
         return BATTLE_ENVIRONMENT_SNOW;
+    if (MetatileBehavior_IsUltraSpaceTallGrass(tileBehavior)) // Ultra Space
+        return BATTLE_ENVIRONMENT_ULTRA_SPACE;
     if (MetatileBehavior_IsLongGrass(tileBehavior))
         return BATTLE_ENVIRONMENT_LONG_GRASS;
     if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))

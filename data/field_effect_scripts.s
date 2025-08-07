@@ -84,6 +84,7 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_SnowTallGrass             @ FLDEFF_SNOW_TALL_GRASS
 	.4byte gFieldEffectScript_Snow                      @ FLDEFF_SNOW
 	.4byte gFieldEffectScript_SnowBikeTireTracks        @ FLDEFF_SNOW_BIKE_TIRE_TRACKS
+	.4byte gFieldEffectScript_UltraSpaceTallGrass       @ FLDEFF_ULTRA_SPACE_TALL_GRASS
     
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -107,6 +108,10 @@ gFieldEffectScript_TallGrass::
 
 gFieldEffectScript_SnowTallGrass::
 	field_eff_loadfadedpal_callnative gSpritePalette_SnowFieldEffect, FldEff_SnowTallGrass
+	field_eff_end
+
+gFieldEffectScript_UltraSpaceTallGrass::
+	field_eff_loadfadedpal_callnative gSpritePalette_UltraSpaceFieldEffect, FldEff_UltraSpaceTallGrass
 	field_eff_end
 
 gFieldEffectScript_Ripple::

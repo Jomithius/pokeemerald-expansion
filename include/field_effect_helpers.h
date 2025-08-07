@@ -29,6 +29,7 @@ void UpdateRayquazaSpotlightEffect(struct Sprite *);
 void UpdateShadowFieldEffect(struct Sprite *);
 void UpdateTallGrassFieldEffect(struct Sprite *);
 void UpdateSnowTallGrassFieldEffect(struct Sprite *);
+void UpdateUltraSpaceTallGrassFieldEffect(struct Sprite *);
 void WaitFieldEffectSpriteAnim(struct Sprite *);
 void UpdateAshFieldEffect(struct Sprite *);
 void UpdateSnowFieldEffect(struct Sprite *);

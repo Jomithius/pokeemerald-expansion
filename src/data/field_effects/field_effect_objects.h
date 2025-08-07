@@ -1,7 +1,7 @@
 const struct SpritePalette gSpritePalette_GeneralFieldEffect0 = {gFieldEffectObjectPalette0, FLDEFF_PAL_TAG_GENERAL_0};
 const struct SpritePalette gSpritePalette_GeneralFieldEffect1 = {gFieldEffectObjectPalette1, FLDEFF_PAL_TAG_GENERAL_1};
 const struct SpritePalette gSpritePalette_SnowFieldEffect = {gFieldEffectObjectPaletteSnow, FLDEFF_PAL_TAG_SNOW};
-
+const struct SpritePalette gSpritePalette_UltraSpaceFieldEffect = {gFieldEffectObjectPaletteUltraSpace, FLDEFF_PAL_TAG_ULTRA_SPACE};
 
 static const union AnimCmd sAnim_Shadow[] =
 {
@@ -134,6 +134,39 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_SnowTallGrass = {
     .images = sPicTable_SnowTallGrass,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = UpdateSnowTallGrassFieldEffect,
+};
+
+static const struct SpriteFrameImage sPicTable_UltraSpaceTallGrass[] = {
+    overworld_frame(gFieldEffectObjectPic_UltraSpaceTallGrass, 2, 2, 0),
+    overworld_frame(gFieldEffectObjectPic_UltraSpaceTallGrass, 2, 2, 1),
+    overworld_frame(gFieldEffectObjectPic_UltraSpaceTallGrass, 2, 2, 2),
+    overworld_frame(gFieldEffectObjectPic_UltraSpaceTallGrass, 2, 2, 3),
+    overworld_frame(gFieldEffectObjectPic_UltraSpaceTallGrass, 2, 2, 4),
+};
+
+static const union AnimCmd sAnim_UltraSpaceTallGrass[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(2, 10),
+    ANIMCMD_FRAME(3, 10),
+    ANIMCMD_FRAME(4, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnimTable_UltraSpaceTallGrass[] =
+{
+    sAnim_UltraSpaceTallGrass,
+};
+
+const struct SpriteTemplate gFieldEffectObjectTemplate_UltraSpaceTallGrass = {
+    .tileTag = TAG_NONE,
+    .paletteTag = FLDEFF_PAL_TAG_ULTRA_SPACE,
+    .oam = &gObjectEventBaseOam_16x16,
+    .anims = sAnimTable_UltraSpaceTallGrass,
+    .images = sPicTable_UltraSpaceTallGrass,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = UpdateUltraSpaceTallGrassFieldEffect,
 };
 
 static const struct SpriteFrameImage sPicTable_Ripple[] = {

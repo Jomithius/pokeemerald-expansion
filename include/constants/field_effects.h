@@ -80,6 +80,7 @@
 #define FLDEFF_SNOW_TALL_GRASS           75
 #define FLDEFF_SNOW                      76
 #define FLDEFF_SNOW_BIKE_TIRE_TRACKS     77
+#define FLDEFF_ULTRA_SPACE_TALL_GRASS    78
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1
@@ -126,6 +127,7 @@
 #define FLDEFFOBJ_SNOW_TALL_GRASS       42
 #define FLDEFFOBJ_SNOW                  43
 #define FLDEFFOBJ_SNOW_BIKE_TIRE_TRACKS 44
+#define FLDEFFOBJ_ULTRA_SPACE_TALL_GRASS 45
 
 #define FLDEFF_PAL_TAG_CUT_GRASS          0x1000
 #define FLDEFF_PAL_TAG_SECRET_POWER_TREE  0x1003
@@ -141,5 +143,6 @@
 #define FLDEFF_PAL_TAG_UNKNOWN            0x1011
 #define FLDEFF_PAL_TAG_CAVE_DUST          0x1012
 #define FLDEFF_PAL_TAG_SNOW               0x1013
+#define FLDEFF_PAL_TAG_ULTRA_SPACE        0x1014
 
 #endif // GUARD_FIELD_EFFECT_CONSTANTS_H
