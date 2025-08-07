@@ -50,6 +50,7 @@ struct PacifidlogMetatileOffsets
 
 static void DummyPerStepCallback(u8);
 static void AshGrassPerStepCallback(u8);
+static void SnowGrassPerStepCallback(u8);
 static void FortreeBridgePerStepCallback(u8);
 static void PacifidlogBridgePerStepCallback(u8);
 static void SootopolisGymIcePerStepCallback(u8);
@@ -65,7 +66,8 @@ static const TaskFunc sPerStepCallbacks[] =
     [STEP_CB_SOOTOPOLIS_ICE]    = SootopolisGymIcePerStepCallback,
     [STEP_CB_TRUCK]             = EndTruckSequence,
     [STEP_CB_SECRET_BASE]       = SecretBasePerStepCallback,
-    [STEP_CB_CRACKED_FLOOR]     = CrackedFloorPerStepCallback
+    [STEP_CB_CRACKED_FLOOR]     = CrackedFloorPerStepCallback,
+    [STEP_CB_SNOW]              = SnowGrassPerStepCallback
 };
 
 // Each array has 4 pairs of data, each pair representing two metatiles of a log and their relative position.
@@ -838,6 +840,28 @@ static void CrackedFloorPerStepCallback(u8 taskId)
             tFloor2X = x;
             tFloor2Y = y;
         }
+    }
+}
+
+static void SnowGrassPerStepCallback(u8 taskId)
+{
+    s16 x, y;
+    s16 *data = gTasks[taskId].data;
+    PlayerGetDestCoords(&x, &y);
+
+    // End if player hasn't moved
+    if (x == tPrevX && y == tPrevY)
+        return;
+
+    tPrevX = x;
+    tPrevY = y;
+    if (MetatileBehavior_IsSnowGrass(MapGridGetMetatileBehaviorAt(x, y)))
+    {
+        // Remove snow from grass
+        if (MapGridGetMetatileIdAt(x, y) == METATILE_Snow_SnowGrass)
+            StartSnowFieldEffect(x, y, METATILE_Rustboro_NormalGrass, 4);
+        else
+            StartSnowFieldEffect(x, y, METATILE_Rustboro_NormalGrass, 4);
     }
 }
 

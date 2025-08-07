@@ -15291,63 +15291,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_CETODDLE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_AVALUGG"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_AVALUGG_HISUI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_BEARTIC"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_ALAKAZAM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_GENGAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_MACHAMP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_GLIMMORA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_ELECTIVIRE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_CORVIKNIGHT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_FRIGIBAX"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 80,
                 "species": "SPECIES_ARCTIBAX"
               }
             ]
@@ -15368,7 +15368,7 @@
               {
                 "min_level": 65,
                 "max_level": 70,
-                "species": "SPECIES_VELUZA"
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
               },
               {
                 "min_level": 1,
@@ -15742,6 +15742,95 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_MUK_ALOLA"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SNOWDRIFT_CITY",
+          "base_label": "gSnowdriftCity0",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 1,
+                "max_level": 65,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 1,
+                "max_level": 65,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_DRAGONAIR"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_DRAGONAIR"
               }
             ]
           }

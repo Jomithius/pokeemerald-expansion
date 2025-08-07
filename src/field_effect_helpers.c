@@ -31,10 +31,15 @@ static void LoadObjectRegularReflectionPalette(struct ObjectEvent *, struct Spri
 static void UpdateGrassFieldEffectSubpriority(struct Sprite *, u8, u8);
 static void FadeFootprintsTireTracks_Step0(struct Sprite *);
 static void FadeFootprintsTireTracks_Step1(struct Sprite *);
+static void FadeSnowTracks_Step0(struct Sprite *);
+static void FadeSnowTracks_Step1(struct Sprite *);
 static void UpdateFeetInFlowingWaterFieldEffect(struct Sprite *);
 static void UpdateAshFieldEffect_Wait(struct Sprite *);
 static void UpdateAshFieldEffect_Show(struct Sprite *);
 static void UpdateAshFieldEffect_End(struct Sprite *);
+static void UpdateSnowFieldEffect_Wait(struct Sprite *);
+static void UpdateSnowFieldEffect_Show(struct Sprite *);
+static void UpdateSnowFieldEffect_End(struct Sprite *);
 static void SynchroniseSurfAnim(struct ObjectEvent *, struct Sprite *);
 static void SynchroniseSurfPosition(struct ObjectEvent *, struct Sprite *);
 static void UpdateBobbingEffect(struct ObjectEvent *, struct Sprite *, struct Sprite *);
@@ -574,6 +579,83 @@ void UpdateLongGrassFieldEffect(struct Sprite *sprite)
     }
 }
 
+u32 FldEff_SnowTallGrass(void)
+{
+    s16 x;
+    s16 y;
+    u8 spriteId;
+    struct Sprite *sprite;
+
+    x = gFieldEffectArguments[0];
+    y = gFieldEffectArguments[1];
+    SetSpritePosToOffsetMapCoords(&x, &y, 8, 8);
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SNOW_TALL_GRASS], x, y, 0);
+    if (spriteId != MAX_SPRITES)
+    {
+        sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gFieldEffectArguments[3];
+        sprite->sElevation = gFieldEffectArguments[2];
+        sprite->sX = gFieldEffectArguments[0];
+        sprite->sY = gFieldEffectArguments[1];
+        sprite->sMapNum = gFieldEffectArguments[4]; // Also sLocalId
+        sprite->sMapGroup = gFieldEffectArguments[5];
+        sprite->sCurrentMap = gFieldEffectArguments[6];
+
+        if (gFieldEffectArguments[7])
+            SeekSpriteAnim(sprite, 4); // Skip to end of anim
+    }
+    return 0;
+}
+
+void UpdateSnowTallGrassFieldEffect(struct Sprite *sprite)
+{
+    u8 mapNum;
+    u8 mapGroup;
+    u8 metatileBehavior;
+    u8 localId;
+    u8 objectEventId;
+    struct ObjectEvent *objectEvent;
+
+    mapNum = sprite->sCurrentMap >> 8;
+    mapGroup = sprite->sCurrentMap;
+    if (gCamera.active && (gSaveBlock1Ptr->location.mapNum != mapNum || gSaveBlock1Ptr->location.mapGroup != mapGroup))
+    {
+        sprite->sX -= gCamera.x;
+        sprite->sY -= gCamera.y;
+        sprite->sCurrentMap = ((u8)gSaveBlock1Ptr->location.mapNum << 8) | (u8)gSaveBlock1Ptr->location.mapGroup;
+    }
+    localId = sprite->sLocalId;
+    mapNum = sprite->sMapNum;
+    mapGroup = sprite->sMapGroup;
+    metatileBehavior = MapGridGetMetatileBehaviorAt(sprite->sX, sprite->sY);
+
+    if (TryGetObjectEventIdByLocalIdAndMap(localId, mapNum, mapGroup, &objectEventId)
+     || !MetatileBehavior_IsSnowTallGrass(metatileBehavior)
+     || (sprite->sObjectMoved && sprite->animEnded))
+    {
+        FieldEffectStop(sprite, FLDEFF_SNOW_TALL_GRASS);
+    }
+    else
+    {
+        // Check if the object that triggered the effect has moved away
+        objectEvent = &gObjectEvents[objectEventId];
+        if ((objectEvent->currentCoords.x != sprite->sX
+          || objectEvent->currentCoords.y != sprite->sY)
+        && (objectEvent->previousCoords.x != sprite->sX
+         || objectEvent->previousCoords.y != sprite->sY))
+            sprite->sObjectMoved = TRUE;
+
+        // Metatile behavior var re-used as subpriority
+        metatileBehavior = 0;
+        if (sprite->animCmdIndex == 0)
+            metatileBehavior = 4;
+
+        UpdateObjectEventSpriteInvisibility(sprite, FALSE);
+        UpdateGrassFieldEffectSubpriority(sprite, sprite->sElevation, metatileBehavior);
+    }
+}
+
 #undef sElevation
 #undef sX
 #undef sY
@@ -688,6 +770,24 @@ u32 FldEff_SandFootprints(void)
     return 0;
 }
 
+u32 FldEff_SnowTracks(void)
+{
+    u8 spriteId;
+    struct Sprite *sprite;
+
+    SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SNOW_TRACKS], gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    if (spriteId != MAX_SPRITES)
+    {
+        sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gFieldEffectArguments[3];
+        sprite->data[7] = FLDEFF_SNOW_TRACKS;
+        StartSpriteAnim(sprite, gFieldEffectArguments[4]);
+    }
+    return 0;
+}
+
 u32 FldEff_DeepSandFootprints(void)
 {
     u8 spriteId;
@@ -776,6 +876,24 @@ u32 FldEff_TracksSlither(void)
     return spriteId;
 }
 
+u32 FldEff_SnowBikeTireTracks(void)
+{
+    u8 spriteId;
+    struct Sprite *sprite;
+
+    SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SNOW_BIKE_TIRE_TRACKS], gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    if (spriteId != MAX_SPRITES)
+    {
+        sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gFieldEffectArguments[3];
+        sprite->data[7] = FLDEFF_SNOW_BIKE_TIRE_TRACKS;
+        StartSpriteAnim(sprite, gFieldEffectArguments[4]);
+    }
+    return spriteId;
+}
+
 void (*const gFadeFootprintsTireTracksFuncs[])(struct Sprite *) = {
     FadeFootprintsTireTracks_Step0,
     FadeFootprintsTireTracks_Step1
@@ -802,6 +920,36 @@ static void FadeFootprintsTireTracks_Step1(struct Sprite *sprite)
     UpdateObjectEventSpriteInvisibility(sprite, sprite->invisible);
     if (sprite->sTimer > 56)
         FieldEffectStop(sprite, sprite->sFldEff);
+}
+
+void (*const gFadeSnowTracksFuncs[])(struct Sprite *) = {
+    FadeSnowTracks_Step0,
+    FadeSnowTracks_Step1
+};
+
+void UpdateSnowTracksFieldEffect(struct Sprite *sprite)
+{
+    gFadeFootprintsTireTracksFuncs[sprite->data[0]](sprite);
+}
+
+static void FadeSnowTracks_Step0(struct Sprite *sprite)
+{
+    // Wait 40 frames before the flickering starts.
+    if (++sprite->data[1] > 40)
+        sprite->data[0] = 1;
+
+    UpdateObjectEventSpriteInvisibility(sprite, FALSE);
+}
+
+static void FadeSnowTracks_Step1(struct Sprite *sprite)
+{
+    sprite->invisible ^= 1;
+    sprite->data[1]++;
+    UpdateObjectEventSpriteInvisibility(sprite, sprite->invisible);
+    if (sprite->data[1] > 56)
+    {
+        FieldEffectStop(sprite, sprite->data[7]);
+    }
 }
 
 #undef sState
@@ -1082,7 +1230,7 @@ u32 FldEff_WaterSurfacing(void)
     return spriteId;
 }
 
-// Sprite data for FLDEFF_ASH
+// Sprite data for FLDEFF_ASH and FLDEFF_SNOW
 #define sState      data[0]
 #define sX          data[1]
 #define sY          data[2]
@@ -1155,6 +1303,77 @@ static void UpdateAshFieldEffect_End(struct Sprite *sprite)
     UpdateObjectEventSpriteInvisibility(sprite, FALSE);
     if (sprite->animEnded)
         FieldEffectStop(sprite, FLDEFF_ASH);
+}
+
+void StartSnowFieldEffect(s16 x, s16 y, u16 metatileId, s16 delay)
+{
+    gFieldEffectArguments[0] = x;
+    gFieldEffectArguments[1] = y;
+    gFieldEffectArguments[2] = 82; // subpriority
+    gFieldEffectArguments[3] = 1; // priority
+    gFieldEffectArguments[4] = metatileId;
+    gFieldEffectArguments[5] = delay;
+    FieldEffectStart(FLDEFF_SNOW);
+}
+
+u32 FldEff_Snow(void)
+{
+    s16 x;
+    s16 y;
+    u8 spriteId;
+    struct Sprite *sprite;
+
+    x = gFieldEffectArguments[0];
+    y = gFieldEffectArguments[1];
+    SetSpritePosToOffsetMapCoords(&x, &y, 8, 8);
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SNOW], x, y, gFieldEffectArguments[2]);
+    if (spriteId != MAX_SPRITES)
+    {
+        sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gFieldEffectArguments[3];
+        sprite->sX = gFieldEffectArguments[0];
+        sprite->sY = gFieldEffectArguments[1];
+        sprite->sMetatileId = gFieldEffectArguments[4];
+        sprite->sDelay = gFieldEffectArguments[5];
+    }
+    return 0;
+}
+
+void (*const gSnowFieldEffectFuncs[])(struct Sprite *) = {
+    UpdateSnowFieldEffect_Wait,
+    UpdateSnowFieldEffect_Show,
+    UpdateSnowFieldEffect_End
+};
+
+void UpdateSnowFieldEffect(struct Sprite *sprite)
+{
+    gSnowFieldEffectFuncs[sprite->sState](sprite);
+}
+
+static void UpdateSnowFieldEffect_Wait(struct Sprite *sprite)
+{
+    sprite->invisible = TRUE;
+    sprite->animPaused = TRUE;
+    if (--sprite->sDelay == 0)
+        sprite->sState = 1;
+}
+
+static void UpdateSnowFieldEffect_Show(struct Sprite *sprite)
+{
+    sprite->invisible = FALSE;
+    sprite->animPaused = FALSE;
+    MapGridSetMetatileIdAt(sprite->sX, sprite->sY, sprite->sMetatileId);
+    CurrentMapDrawMetatileAt(sprite->sX, sprite->sY);
+    gObjectEvents[gPlayerAvatar.objectEventId].triggerGroundEffectsOnMove = TRUE;
+    sprite->sState = 2;
+}
+
+static void UpdateSnowFieldEffect_End(struct Sprite *sprite)
+{
+    UpdateObjectEventSpriteInvisibility(sprite, FALSE);
+    if (sprite->animEnded)
+        FieldEffectStop(sprite, FLDEFF_SNOW);
 }
 
 #undef sState

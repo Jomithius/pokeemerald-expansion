@@ -3,13 +3,16 @@ extern const struct SpriteTemplate gFieldEffectObjectTemplate_ShadowMedium;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_ShadowLarge;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_ShadowExtraLarge;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_TallGrass;
+extern const struct SpriteTemplate gFieldEffectObjectTemplate_SnowTallGrass;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_Ripple;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_Ash;
+extern const struct SpriteTemplate gFieldEffectObjectTemplate_Snow;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_SurfBlob;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_Arrow;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_GroundImpactDust;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_JumpTallGrass;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_SandFootprints;
+extern const struct SpriteTemplate gFieldEffectObjectTemplate_SnowTracks;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_JumpBigSplash;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_Splash;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_JumpSmallSplash;
@@ -26,6 +29,7 @@ extern const struct SpriteTemplate gFieldEffectObjectTemplate_TreeDisguise;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_MountainDisguise;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_Bird;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_BikeTireTracks;
+extern const struct SpriteTemplate gFieldEffectObjectTemplate_SnowBikeTireTracks;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_SandDisguisePlaceholder;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_SandPile;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_ShortGrass;
@@ -82,4 +86,8 @@ const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[] = {
     [FLDEFFOBJ_TRACKS_SPOT]           = &gFieldEffectObjectTemplate_SpotTracks,
     [FLDEFFOBJ_TRACKS_BUG]            = &gFieldEffectObjectTemplate_BugTracks,
     [FLDEFFOBJ_CAVE_DUST]             = &gFieldEffectObjectTemplate_CaveDust,
+    [FLDEFFOBJ_SNOW_TRACKS]           = &gFieldEffectObjectTemplate_SnowTracks,
+    [FLDEFFOBJ_SNOW_TALL_GRASS]       = &gFieldEffectObjectTemplate_SnowTallGrass,
+    [FLDEFFOBJ_SNOW]                  = &gFieldEffectObjectTemplate_Snow,
+    [FLDEFFOBJ_SNOW_BIKE_TIRE_TRACKS] = &gFieldEffectObjectTemplate_SnowBikeTireTracks,
 };

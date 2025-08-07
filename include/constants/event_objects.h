@@ -330,6 +330,8 @@
 #define TRACKS_SLITHER    3
 #define TRACKS_SPOT       4
 #define TRACKS_BUG        5
+#define TRACKS_SNOW       6
+#define TRACKS_SNOW_BIKE  7
 
 #define FIRST_DECORATION_SPRITE_GFX OBJ_EVENT_GFX_PICHU_DOLL
 

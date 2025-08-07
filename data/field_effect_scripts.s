@@ -80,6 +80,10 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_TracksBug                 @ FLDEFF_TRACKS_BUG
 	.4byte gFieldEffectScript_TracksSpot                @ FLDEFF_TRACKS_SPOT
 	.4byte gFieldEffectScript_CaveDust                  @ FLDEFF_CAVE_DUST
+	.4byte gFieldEffectScript_SnowTracks	            @ FLDEFF_SNOW_TRACKS
+	.4byte gFieldEffectScript_SnowTallGrass             @ FLDEFF_SNOW_TALL_GRASS
+	.4byte gFieldEffectScript_Snow                      @ FLDEFF_SNOW
+	.4byte gFieldEffectScript_SnowBikeTireTracks        @ FLDEFF_SNOW_BIKE_TIRE_TRACKS
     
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -101,6 +105,10 @@ gFieldEffectScript_TallGrass::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect1, FldEff_TallGrass
 	field_eff_end
 
+gFieldEffectScript_SnowTallGrass::
+	field_eff_loadfadedpal_callnative gSpritePalette_SnowFieldEffect, FldEff_SnowTallGrass
+	field_eff_end
+
 gFieldEffectScript_Ripple::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect1, FldEff_Ripple
 	field_eff_end
@@ -111,6 +119,10 @@ gFieldEffectScript_FieldMoveShowMon::
 
 gFieldEffectScript_Ash::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect1, FldEff_Ash
+	field_eff_end
+
+gFieldEffectScript_Snow::
+	field_eff_loadfadedpal_callnative gSpritePalette_SnowFieldEffect, FldEff_Snow
 	field_eff_end
 
 gFieldEffectScript_SurfBlob::
@@ -135,6 +147,10 @@ gFieldEffectScript_JumpTallGrass::
 
 gFieldEffectScript_SandFootprints::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect0, FldEff_SandFootprints
+	field_eff_end
+
+gFieldEffectScript_SnowTracks::
+	field_eff_loadfadedpal_callnative gSpritePalette_SnowFieldEffect, FldEff_SnowTracks
 	field_eff_end
 
 gFieldEffectScript_JumpBigSplash::
@@ -224,6 +240,10 @@ gFieldEffectScript_FeetInFlowingWater::
 
 gFieldEffectScript_BikeTireTracks::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect0, FldEff_BikeTireTracks
+	field_eff_end
+
+gFieldEffectScript_SnowBikeTireTracks::
+	field_eff_loadfadedpal_callnative gSpritePalette_SnowFieldEffect, FldEff_SnowBikeTireTracks
 	field_eff_end
 
 gFieldEffectScript_SandDisguisePlaceholder::
