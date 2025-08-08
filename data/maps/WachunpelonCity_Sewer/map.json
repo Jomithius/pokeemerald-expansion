@@ -226,6 +226,13 @@
   "warp_events": [
     {
       "x": 26,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_WACHUNPELON_CITY",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 26,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_WACHUNPELON_CITY",

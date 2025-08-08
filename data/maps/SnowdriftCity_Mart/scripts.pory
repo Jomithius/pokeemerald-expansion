@@ -38,7 +38,8 @@ script SnowdriftCity_Mart_EventScript_Hiker{
 script SnowdriftCity_Mart_EventScript_StaffEmployee{
     msgbox("I like to come up here when I have\n
         time off.\p
-        I enjoy skiing in my free time.", MSGBOX_NPC)
+        This is the only place in HOENN where\n
+        you can go skiing.", MSGBOX_NPC)
     end
 }
 

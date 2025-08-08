@@ -87,14 +87,10 @@ script EasternRuins_EventScript_HexManiacMaliciousArmor{
         G-GHOST TYPE P-POKéMON…\p
         H-Here.", MSGBOX_DEFAULT)
     checkitemspace(ITEM_MALICIOUS_ARMOR)
-    if(var(VAR_RESULT) == TRUE){
-        giveitem(ITEM_MALICIOUS_ARMOR)
-        setflag(FLAG_RECEIVED_MALICIOUS_ARMOR)
-        waitmessage
-    }
-    else{
-        goto(Common_EventScript_ShowBagIsFull)
-    }
+    goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+    giveitem(ITEM_MALICIOUS_ARMOR)
+    setflag(FLAG_RECEIVED_MALICIOUS_ARMOR)
+    waitmessage
     msgbox("I hope t-that armor suits you\n
         w-well…", MSGBOX_AUTOCLOSE)
     waitmessage

@@ -263,6 +263,8 @@ script BaldesianForest_EventScript_Expert_F_RevealGlass{
     goto_if_set(FLAG_RECEIVED_REVEAL_GLASS, BaldesianForest_EventScript_Expert_F_ExplainRevealGlass)
     msgbox("Wow! You actually did it?\n
         As promised, you can have this.", MSGBOX_DEFAULT)
+    checkitemspace(ITEM_REVEAL_GLASS)
+    goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
     giveitem(ITEM_REVEAL_GLASS)
     waitmessage
     setflag(FLAG_RECEIVED_REVEAL_GLASS)
@@ -294,12 +296,12 @@ script BaldesianForest_EventScript_OldManDojoGiveTeaCup{
     if(var(VAR_RESULT) == YES){
         msgbox("Gahaha!\n
             Alright!\p
-            I'm holding something in my hands.
+            I'm holding something in my hands.\n
             Left or right?", MSGBOX_DEFAULT)
         dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Left!", "Right!")
             if(var(VAR_RESULT) == 0){
                 msgbox("Gahaha! You win!", MSGBOX_DEFAULT)
-                checkitem(ITEM_MASTERPIECE_TEACUP)
+                checkitemspace(ITEM_MASTERPIECE_TEACUP)
                 goto_if_ne(VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull)
                 giveitem(ITEM_MASTERPIECE_TEACUP)
                 waitmessage
@@ -307,7 +309,7 @@ script BaldesianForest_EventScript_OldManDojoGiveTeaCup{
             }
             else{
                 msgbox("Gahaha!\nBetter luck next time!", MSGBOX_DEFAULT)
-                checkitem(ITEM_UNREMARKABLE_TEACUP)
+                checkitemspace(ITEM_UNREMARKABLE_TEACUP)
                 goto_if_ne(VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull)
                 giveitem(ITEM_UNREMARKABLE_TEACUP)
                 waitmessage

@@ -64,7 +64,7 @@ SnowdriftCity_Mart_EventScript_StaffEmployee::
 
 
 SnowdriftCity_Mart_EventScript_Woman::
-# 46 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 47 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	msgbox SnowdriftCity_Mart_EventScript_Woman_Text_0, MSGBOX_NPC
 	end
 
@@ -75,8 +75,8 @@ SnowdriftCity_Mart_EventScript_Hiker_Text_0:
 
 SnowdriftCity_Mart_EventScript_StaffEmployee_Text_0:
 # 39 "data/maps/SnowdriftCity_Mart/scripts.pory"
-	.string "I like to come up here when I have\n time off.\p I enjoy skiing in my free time.$"
+	.string "I like to come up here when I have\n time off.\p This is the only place in HOENN where\n you can go skiing.$"
 
 SnowdriftCity_Mart_EventScript_Woman_Text_0:
-# 46 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 47 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.string "I want to buy some of these new\n TERA SHARDS, but I can't decide\l what TERA TYPE to make my POKéMON…$"

@@ -139,6 +139,9 @@
 #define METATILE_Contest_FloorShadow         0x261
 #define METATILE_Contest_WallShadow          0x221
 
+// gTileset_DesertVillage
+#define METATILE_DesertVillage_Door_WachunpelonCity  0x3F8
+
 // gTileset_Dewford
 #define METATILE_Dewford_Door              0x225
 #define METATILE_Dewford_Door_BattleTower  0x25D
@@ -146,6 +149,9 @@
 // gTileset_DistortionWorld
 #define METATILE_DistortionWorld_Ultra_Space_PC_Bottom  0x2AF
 #define METATILE_DistortionWorld_Ultra_Space_PC_Top     0x29F
+
+// gTileset_DojoExterior
+#define METATILE_DojoExterior_Door_DojoExterior  0x360
 
 // gTileset_EliteFour
 #define METATILE_EliteFour_EntryDoor_ClosedBottom    0x20E
@@ -733,6 +739,10 @@
 // gTileset_Slateport
 #define METATILE_Slateport_Door             0x2DC
 #define METATILE_Slateport_Door_BattleTent  0x393
+
+// gTileset_SmallTownWithLab
+#define METATILE_SmallTownWithLab_Door_Route135      0x378
+#define METATILE_SmallTownWithLab_Door_Route135_Lab  0x373
 
 // gTileset_Snow
 #define METATILE_Snow_SnowGrass  0x00D
