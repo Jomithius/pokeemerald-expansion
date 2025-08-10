@@ -12,7 +12,6 @@ script SnowdriftCity_Mart_EventScript_Clerk{
 }
 
 mart SnowdriftCity_Mart_Pokemart{
-    ITEM_SNOWBALL
     ITEM_FULL_RESTORE
     ITEM_FULL_HEAL
     ITEM_ABILITY_CAPSULE
@@ -25,6 +24,7 @@ mart SnowdriftCity_Mart_Pokemart{
     ITEM_ULTRA_BALL
     ITEM_DUSK_BALL
     ITEM_TIMER_BALL
+    ITEM_SNOWBALL
 }
 
 script SnowdriftCity_Mart_EventScript_Hiker{

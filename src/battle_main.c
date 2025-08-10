@@ -4412,6 +4412,23 @@ static void HandleTurnActionSelectionState(void)
                         return;
                     }
 
+                    if (FlagGet(FLAG_SYS_HARD_MODE) && gBattleTypeFlags & (BATTLE_TYPE_LINK
+                                            | BATTLE_TYPE_FRONTIER_NO_PYRAMID
+                                            | BATTLE_TYPE_EREADER_TRAINER
+                                            | BATTLE_TYPE_DOUBLE
+                                            | BATTLE_TYPE_TRAINER
+                                            | BATTLE_TYPE_TWO_OPPONENTS
+                                            | BATTLE_TWO_VS_ONE_OPPONENT
+                                            | BATTLE_TYPE_RECORDED_LINK))
+                    {
+                        RecordedBattle_ClearBattlerAction(battler, 1);
+                        gSelectionBattleScripts[battler] = BattleScript_ActionSelectionItemsCantBeUsed;
+                        gBattleCommunication[battler] = STATE_SELECTION_SCRIPT;
+                        gBattleStruct->selectionScriptFinished[battler] = FALSE;
+                        gBattleStruct->stateIdAfterSelScript[battler] = STATE_BEFORE_ACTION_CHOSEN;
+                        return;
+                    }
+
                     if (((gBattleTypeFlags & (BATTLE_TYPE_LINK
                                             | BATTLE_TYPE_FRONTIER_NO_PYRAMID
                                             | BATTLE_TYPE_EREADER_TRAINER

@@ -76,6 +76,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "ui_stat_editor.h"
+#include "constants/items.h"
 
 enum {
     MENU_SUMMARY,
@@ -487,8 +488,8 @@ static void ShiftMoveSlot(struct Pokemon *, u8, u8);
 static void BlitBitmapToPartyWindow_LeftColumn(u8, u8, u8, u8, u8, bool8);
 static void BlitBitmapToPartyWindow_RightColumn(u8, u8, u8, u8, u8, bool8);
 static void CursorCb_Summary(u8);
-static void CursorCb_StatEdit(u8);
 static void CursorCb_Switch(u8);
+static void CursorCb_StatEdit(u8);
 static void CursorCb_Cancel1(u8);
 static void CursorCb_Item(u8);
 static void CursorCb_Give(u8);
@@ -1439,6 +1440,9 @@ void Task_HandleChooseMonInput(u8 taskId)
         case B_BUTTON: // Selected Cancel / pressed B
             HandleChooseMonCancel(taskId, slotPtr);
             break;
+        case SELECT_BUTTON: // Quick Swap
+            DestroyTask(taskId);
+            break;
         case START_BUTTON:
             if (sPartyMenuInternal->chooseHalf)
             {
@@ -1688,6 +1692,21 @@ static void Task_HandleCancelChooseMonYesNoInput(u8 taskId)
     }
 }
 
+static bool8 IsInvalidPartyMenuActionType(u8 partyMenuType)
+{
+    return (partyMenuType == PARTY_ACTION_SEND_OUT
+         || partyMenuType == PARTY_ACTION_CANT_SWITCH
+         || partyMenuType == PARTY_ACTION_USE_ITEM
+         || partyMenuType == PARTY_ACTION_ABILITY_PREVENTS
+         || partyMenuType == PARTY_ACTION_GIVE_ITEM
+         || partyMenuType == PARTY_ACTION_GIVE_PC_ITEM
+         || partyMenuType == PARTY_ACTION_GIVE_MAILBOX_MAIL
+         || partyMenuType == PARTY_ACTION_SOFTBOILED
+         || partyMenuType == PARTY_ACTION_CHOOSE_AND_CLOSE
+         || partyMenuType == PARTY_ACTION_MOVE_TUTOR
+         || partyMenuType == PARTY_ACTION_MINIGAME);
+}
+
 static u16 PartyMenuButtonHandler(s8 *slotPtr)
 {
     s8 movementDir;
@@ -1724,6 +1743,20 @@ static u16 PartyMenuButtonHandler(s8 *slotPtr)
 
     if (JOY_NEW(START_BUTTON))
         return START_BUTTON;
+
+    if (JOY_NEW(SELECT_BUTTON) && CalculatePlayerPartyCount() >= 2 && !IsInvalidPartyMenuActionType(gPartyMenu.action))
+    {
+        if (gPartyMenu.menuType != PARTY_MENU_TYPE_FIELD)
+            return 0;
+        if (*slotPtr == PARTY_SIZE + 1)
+            return 0;
+        if (gPartyMenu.action != PARTY_ACTION_SWITCH)
+        {
+            CreateTask(CursorCb_Switch, 1);
+            return SELECT_BUTTON;
+        }
+        return A_BUTTON; // Select is allowed to act as the A Button while CursorCb_Switch is active.
+    }
 
     if (movementDir && gPlayerPartyCount != 0)
     {
@@ -2881,11 +2914,26 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         {
             if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == sFieldMoves[j])
             {
-                AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+                // If Mon already knows FLY and the HM is in the bag, prevent it from being added to action list
+                if (sFieldMoves[j] != MOVE_FLY || !CheckBagHasItem(ITEM_HM_FLY, 1))
+                {
+                    // If Mon already knows FLASH and the HM is in the bag, prevent it from being added to action list
+                    if (sFieldMoves[j] != MOVE_FLASH || !CheckBagHasItem(ITEM_HM_FLASH, 1))
+                    { 
+                        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+                    }
+                }
                 break;
             }
         }
     }
+
+    // If Mon can learn HM02 and action list consists of < 4 moves, add FLY to action list
+    if (sPartyMenuInternal->numActions < 5 && CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_FLY) && CheckBagHasItem(ITEM_HM_FLY, 1) && FlagGet(FLAG_BADGE06_GET)) 
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
+    // If Mon can learn HM05 and action list consists of < 4 moves, add FLASH to action list
+    if (sPartyMenuInternal->numActions < 5 && CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), ITEM_HM05 - ITEM_TM01) && CheckBagHasItem(ITEM_HM_FLASH, 1) && FlagGet(FLAG_BADGE02_GET)) 
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 1 + MENU_FIELD_MOVES);
 
     if (!InBattlePike())
     {
@@ -4514,6 +4562,7 @@ static void ChangePokemonStatsPartyScreen(void)
 {
     StatEditor_Init(ChangePokemonStatsPartyScreen_CB);
 }
+
 static void CursorCb_StatEdit(u8 taskId)
 {
     PlaySE(SE_SELECT);
@@ -5370,6 +5419,45 @@ bool8 MonKnowsMove(struct Pokemon *mon, u16 move)
             return TRUE;
     }
     return FALSE;
+}
+
+bool8 PlayerHasMove(u16 move)
+{
+    u16 item;
+    switch (move)
+    {
+    case MOVE_SECRET_POWER:
+        item = ITEM_TM43;
+        break;
+    case MOVE_CUT:
+        item = ITEM_HM01;
+        break;
+    case MOVE_FLY:
+        item = ITEM_HM02;
+        break;
+    case MOVE_SURF:
+        item = ITEM_HM03;
+        break;
+    case MOVE_STRENGTH:
+        item = ITEM_HM04;
+        break;
+    case MOVE_FLASH:
+        item = ITEM_HM05;
+        break;
+    case MOVE_ROCK_SMASH:
+        item = ITEM_HM06;
+        break;
+    case MOVE_WATERFALL:
+        item = ITEM_HM07;
+        break;
+    case MOVE_DIVE:
+        item = ITEM_HM08;
+        break;
+    default:
+        return FALSE;
+        break;
+    }
+    return CheckBagHasItem(item, 1);
 }
 
 bool8 BoxMonKnowsMove(struct BoxPokemon *boxMon, u16 move)
@@ -7937,4 +8025,33 @@ static bool8 CreateMapSelectionWindow(u8 taskId)
     DisplayPartyMenuStdMessage(PARTY_MSG_DO_WHAT_WITH_MON);
 
     return TRUE;
+}
+
+void ItemUseCB_PokeBall(u8 taskId, TaskFunc task)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 currBall = GetMonData(mon, MON_DATA_POKEBALL);
+    u16 newBall = gSpecialVar_ItemId;
+    static const u8 sText_MonBallWasChanged[] = _("{STR_VAR_1} was put in the {STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
+
+    if (currBall == newBall)
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+    }
+    else
+    {
+        GetMonNickname(mon, gStringVar1);
+        CopyItemName(newBall, gStringVar2);
+        PlaySE(SE_SELECT);
+        gPartyMenuUseExitCallback = TRUE;
+        SetMonData(mon, MON_DATA_POKEBALL, &newBall);
+        StringExpandPlaceholders(gStringVar4, sText_MonBallWasChanged);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+        RemoveBagItem(newBall, 1);
+    }
 }

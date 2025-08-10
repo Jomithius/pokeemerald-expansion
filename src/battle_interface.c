@@ -2069,6 +2069,7 @@ s32 MoveBattleBar(u8 battlerId, u8 healthboxSpriteId, u8 whichBar, u8 unused)
                     gBattleSpritesDataPtr->battleBars[battlerId].receivedValue,
                     &gBattleSpritesDataPtr->battleBars[battlerId].currValue,
                     B_HEALTHBAR_PIXELS / 8, hpFraction);
+                    //B_HEALTHBAR_PIXELS / 8, max(gBattleSpritesDataPtr->battleBars[battlerId].maxValue / 32, 1)); also comment out u16 hpFraction
     }
     else // exp bar
     {

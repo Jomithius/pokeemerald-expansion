@@ -1535,7 +1535,7 @@
 #define FLAG_DEFEATED_CEO                           (SYSTEM_FLAGS + 0x9F) // For E4 Final Battles
 #define FLAG_DEFEATED_RIVAL_BIRCH_LAB               (SYSTEM_FLAGS + 0xA0) // Rematch post game
 #define FLAG_DEFEATED_EUGENIA                       (SYSTEM_FLAGS + 0xA1) // For E4 Final Battles
-#define FLAG_UNUSED_0x902                           (SYSTEM_FLAGS + 0xA2) // Unused Flag
+#define FLAG_SYS_HARD_MODE                          (SYSTEM_FLAGS + 0xA2) // Unused Flag
 #define FLAG_UNUSED_0x903                           (SYSTEM_FLAGS + 0xA3) // Unused Flag
 #define FLAG_UNUSED_0x904                           (SYSTEM_FLAGS + 0xA4) // Unused Flag
 #define FLAG_UNUSED_0x905                           (SYSTEM_FLAGS + 0xA5) // Unused Flag

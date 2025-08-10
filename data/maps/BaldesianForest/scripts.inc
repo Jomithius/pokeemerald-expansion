@@ -488,94 +488,98 @@ BaldesianForest_EventScript_Expert_F_RevealGlass::
 # 264 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_Expert_F_RevealGlass_Text_0, MSGBOX_DEFAULT
 # 266 "data/maps/BaldesianForest/scripts.pory"
-	giveitem ITEM_REVEAL_GLASS
+	checkitemspace ITEM_REVEAL_GLASS
 # 267 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 268 "data/maps/BaldesianForest/scripts.pory"
-	setflag FLAG_RECEIVED_REVEAL_GLASS
+	giveitem ITEM_REVEAL_GLASS
 # 269 "data/maps/BaldesianForest/scripts.pory"
-	goto BaldesianForest_EventScript_Expert_F_ExplainRevealGlass
+	waitmessage
 # 270 "data/maps/BaldesianForest/scripts.pory"
+	setflag FLAG_RECEIVED_REVEAL_GLASS
+# 271 "data/maps/BaldesianForest/scripts.pory"
+	goto BaldesianForest_EventScript_Expert_F_ExplainRevealGlass
+# 272 "data/maps/BaldesianForest/scripts.pory"
 	release
 	end
 
 
 BaldesianForest_EventScript_Expert_F_DefeatBruno::
-# 275 "data/maps/BaldesianForest/scripts.pory"
+# 277 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_Expert_F_DefeatBruno_Text_0, MSGBOX_NPC
 	end
 
 
 BaldesianForest_EventScript_Expert_F_ExplainRevealGlass::
-# 283 "data/maps/BaldesianForest/scripts.pory"
+# 285 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_Expert_F_ExplainRevealGlass_Text_0, MSGBOX_NPC
 	end
 
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup::
-# 289 "data/maps/BaldesianForest/scripts.pory"
-	lock
-# 290 "data/maps/BaldesianForest/scripts.pory"
-	faceplayer
 # 291 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_0, MSGBOX_YESNO
+	lock
+# 292 "data/maps/BaldesianForest/scripts.pory"
+	faceplayer
 # 293 "data/maps/BaldesianForest/scripts.pory"
+	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_0, MSGBOX_YESNO
+# 295 "data/maps/BaldesianForest/scripts.pory"
 	waitmessage
-# 294 "data/maps/BaldesianForest/scripts.pory"
+# 296 "data/maps/BaldesianForest/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BaldesianForest_EventScript_OldManDojoGiveTeaCup_2
-# 320 "data/maps/BaldesianForest/scripts.pory"
+# 322 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_6, MSGBOX_AUTOCLOSE
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_1:
-# 323 "data/maps/BaldesianForest/scripts.pory"
+# 325 "data/maps/BaldesianForest/scripts.pory"
 	waitmessage
-# 324 "data/maps/BaldesianForest/scripts.pory"
+# 326 "data/maps/BaldesianForest/scripts.pory"
 	release
 	end
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_2:
-# 295 "data/maps/BaldesianForest/scripts.pory"
+# 297 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_1, MSGBOX_DEFAULT
-# 299 "data/maps/BaldesianForest/scripts.pory"
+# 301 "data/maps/BaldesianForest/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_2, BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_3
-# 300 "data/maps/BaldesianForest/scripts.pory"
+# 302 "data/maps/BaldesianForest/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq BaldesianForest_EventScript_OldManDojoGiveTeaCup_6
-# 309 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_5, MSGBOX_DEFAULT
-# 310 "data/maps/BaldesianForest/scripts.pory"
-	checkitem ITEM_UNREMARKABLE_TEACUP
 # 311 "data/maps/BaldesianForest/scripts.pory"
-	goto_if_ne VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull
+	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_5, MSGBOX_DEFAULT
 # 312 "data/maps/BaldesianForest/scripts.pory"
-	giveitem ITEM_UNREMARKABLE_TEACUP
+	checkitemspace ITEM_UNREMARKABLE_TEACUP
 # 313 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
+	goto_if_ne VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull
 # 314 "data/maps/BaldesianForest/scripts.pory"
+	giveitem ITEM_UNREMARKABLE_TEACUP
+# 315 "data/maps/BaldesianForest/scripts.pory"
+	waitmessage
+# 316 "data/maps/BaldesianForest/scripts.pory"
 	setflag FLAG_RECEIVED_TEACUP
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_5:
-# 316 "data/maps/BaldesianForest/scripts.pory"
+# 318 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_OldManDojo_Text_0, MSGBOX_AUTOCLOSE
 	goto BaldesianForest_EventScript_OldManDojoGiveTeaCup_1
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_6:
-# 301 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_4, MSGBOX_DEFAULT
-# 302 "data/maps/BaldesianForest/scripts.pory"
-	checkitem ITEM_MASTERPIECE_TEACUP
 # 303 "data/maps/BaldesianForest/scripts.pory"
-	goto_if_ne VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull
+	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_4, MSGBOX_DEFAULT
 # 304 "data/maps/BaldesianForest/scripts.pory"
-	giveitem ITEM_MASTERPIECE_TEACUP
+	checkitemspace ITEM_MASTERPIECE_TEACUP
 # 305 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
+	goto_if_ne VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull
 # 306 "data/maps/BaldesianForest/scripts.pory"
+	giveitem ITEM_MASTERPIECE_TEACUP
+# 307 "data/maps/BaldesianForest/scripts.pory"
+	waitmessage
+# 308 "data/maps/BaldesianForest/scripts.pory"
 	setflag FLAG_RECEIVED_TEACUP
 	goto BaldesianForest_EventScript_OldManDojoGiveTeaCup_5
 
 
 BaldesianForest_EventScript_KimonoGirl::
-# 329 "data/maps/BaldesianForest/scripts.pory"
+# 331 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_KimonoGirl_Text_0, MSGBOX_NPC
 	end
 
@@ -693,41 +697,41 @@ BaldesianForest_EventScript_Expert_F_RevealGlass_Text_0:
 	.string "Wow! You actually did it?\n As promised, you can have this.$"
 
 BaldesianForest_EventScript_Expert_F_DefeatBruno_Text_0:
-# 275 "data/maps/BaldesianForest/scripts.pory"
+# 277 "data/maps/BaldesianForest/scripts.pory"
 	.string "Hm…\n You seem strong.\p Tell you what: beat BRUNO\n and I'll give you a prize.$"
 
 BaldesianForest_EventScript_Expert_F_ExplainRevealGlass_Text_0:
-# 283 "data/maps/BaldesianForest/scripts.pory"
+# 285 "data/maps/BaldesianForest/scripts.pory"
 	.string "That artifact is said to reveal\n the true form of the forces of nature.$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_0:
-# 291 "data/maps/BaldesianForest/scripts.pory"
+# 293 "data/maps/BaldesianForest/scripts.pory"
 	.string "Hey!\n You like gambling?$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_1:
-# 295 "data/maps/BaldesianForest/scripts.pory"
-	.string "Gahaha!\n Alright!\p I'm holding something in my hands. Left or right?$"
+# 297 "data/maps/BaldesianForest/scripts.pory"
+	.string "Gahaha!\n Alright!\p I'm holding something in my hands.\n Left or right?$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_2:
-# 299 "data/maps/BaldesianForest/scripts.pory"
+# 301 "data/maps/BaldesianForest/scripts.pory"
 	.string "Left!$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_3:
-# 299 "data/maps/BaldesianForest/scripts.pory"
+# 301 "data/maps/BaldesianForest/scripts.pory"
 	.string "Right!$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_4:
-# 301 "data/maps/BaldesianForest/scripts.pory"
+# 303 "data/maps/BaldesianForest/scripts.pory"
 	.string "Gahaha! You win!$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_5:
-# 309 "data/maps/BaldesianForest/scripts.pory"
+# 311 "data/maps/BaldesianForest/scripts.pory"
 	.string "Gahaha!\nBetter luck next time!$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_6:
-# 320 "data/maps/BaldesianForest/scripts.pory"
+# 322 "data/maps/BaldesianForest/scripts.pory"
 	.string "… Oh.\n Nevermind then.$"
 
 BaldesianForest_EventScript_KimonoGirl_Text_0:
-# 329 "data/maps/BaldesianForest/scripts.pory"
+# 331 "data/maps/BaldesianForest/scripts.pory"
 	.string "My grandpa used to train here\n when he was younger.\p He was one of the former MASTER's\n top disciples.$"

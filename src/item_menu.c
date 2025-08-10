@@ -302,7 +302,7 @@ static const u8 sContextMenuItems_KeyItemsPocket[] = {
 };
 
 static const u8 sContextMenuItems_BallsPocket[] = {
-    ACTION_GIVE,        ACTION_DUMMY,
+    ACTION_USE,         ACTION_GIVE,
     ACTION_TOSS,        ACTION_CANCEL
 };
 
@@ -344,6 +344,10 @@ static const u8 sContextMenuItems_FavorLady[] = {
 
 static const u8 sContextMenuItems_QuizLady[] = {
     ACTION_CONFIRM_QUIZ_LADY, ACTION_CANCEL
+};
+
+static const u8 sContextMenuItems_NoReg[] = {
+    ACTION_USE, ACTION_CANCEL
 };
 
 static const TaskFunc sContextMenuFuncs[] = {
@@ -1642,8 +1646,16 @@ static void OpenContextMenu(u8 taskId)
                 break;
             case KEYITEMS_POCKET:
                 gBagMenu->contextMenuItemsPtr = gBagMenu->contextMenuItemsBuffer;
-                gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_KeyItemsPocket);
-                memcpy(&gBagMenu->contextMenuItemsBuffer, &sContextMenuItems_KeyItemsPocket, sizeof(sContextMenuItems_KeyItemsPocket));
+                if (ItemId_GetFieldFunc(gSpecialVar_ItemId) == ItemUseOutOfBattle_CannotUse)
+                {
+                    gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_NoReg);
+                    memcpy(&gBagMenu->contextMenuItemsBuffer, &sContextMenuItems_NoReg, sizeof(sContextMenuItems_NoReg));
+                }
+                else
+                {
+                    gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_KeyItemsPocket);
+                    memcpy(&gBagMenu->contextMenuItemsBuffer, &sContextMenuItems_KeyItemsPocket, sizeof(sContextMenuItems_KeyItemsPocket));
+                }
                 if (gSaveBlock1Ptr->registeredItem == gSpecialVar_ItemId)
                     gBagMenu->contextMenuItemsBuffer[1] = ACTION_DESELECT;
                 if (gSpecialVar_ItemId == ITEM_MACH_BIKE || gSpecialVar_ItemId == ITEM_ACRO_BIKE)

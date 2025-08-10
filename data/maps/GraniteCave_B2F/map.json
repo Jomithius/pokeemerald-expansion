@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 29,
-      "y": 4,
+      "x": 15,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -162,18 +162,18 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 28,
-      "y": 6,
+      "x": 14,
+      "y": 11,
       "elevation": 3,
       "item": "ITEM_EVERSTONE",
       "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_1"
     },
     {
       "type": "hidden_item",
-      "x": 15,
+      "x": 16,
       "y": 11,
       "elevation": 3,
-      "item": "ITEM_EVERSTONE",
+      "item": "ITEM_EVIOLITE",
       "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_2"
     }
   ]

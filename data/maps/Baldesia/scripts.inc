@@ -1902,7 +1902,7 @@ Baldesia_Text_Bennis3::
 
 Baldesia_Text_Bennis4::
 # 844 "data/maps/Baldesia/scripts.pory"
-	.string "MASTER BENNIS: {PLAYER}? Hm.\p ASAK: Huh… I just realized we never knew\n your name.\l And you also know Lady ASAKURA…\l I'm surprised.$"
+	.string "MASTER BENNIS: {PLAYER}? Hm.\p ASAK: Huh… I just realized we never knew\n your name.\l And you also know LADY ASAKURA…\l I'm surprised.$"
 
 Baldesia_Text_Bennis5::
 # 852 "data/maps/Baldesia/scripts.pory"

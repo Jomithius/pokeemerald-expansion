@@ -40,6 +40,7 @@
 #include "constants/metatile_behaviors.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "constants/hold_effects.h"
 
 #define TAG_SCROLL_ARROW   2100
 #define TAG_ITEM_ICON_BASE 2110
@@ -1029,6 +1030,18 @@ static void Task_BuyMenu(u8 taskId)
             else if (!IsEnoughMoney(&gSaveBlock1Ptr->money, sShopData->totalCost))
             {
                 BuyMenuDisplayMessage(taskId, gText_YouDontHaveMoney, BuyMenuReturnToItemList);
+            }
+            else if (ItemId_GetPocket(itemId) == POCKET_TM_HM && CheckBagHasItem(itemId, 1))
+            {
+                BuyMenuDisplayMessage(taskId, gText_YouAlreadyHaveThis, BuyMenuReturnToItemList);
+            }
+            else if ((ItemId_GetHoldEffect(itemId) == HOLD_EFFECT_DRIVE && CheckBagHasItem(itemId, 1)) || (ItemId_GetHoldEffect(itemId) == HOLD_EFFECT_DRIVE && CheckPCHasItem(itemId, 1)))
+            {
+                BuyMenuDisplayMessage(taskId, gText_YouAlreadyHaveThis, BuyMenuReturnToItemList);
+            }
+            else if ((ItemId_GetHoldEffect(itemId) == HOLD_EFFECT_MEMORY && CheckBagHasItem(itemId, 1)) || (ItemId_GetHoldEffect(itemId) == HOLD_EFFECT_MEMORY && CheckPCHasItem(itemId, 1)))
+            {
+                BuyMenuDisplayMessage(taskId, gText_YouAlreadyHaveThis, BuyMenuReturnToItemList);
             }
             else
             {

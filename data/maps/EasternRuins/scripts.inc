@@ -111,35 +111,28 @@ EasternRuins_EventScript_HexManiacMaliciousArmor::
 # 89 "data/maps/EasternRuins/scripts.pory"
 	checkitemspace ITEM_MALICIOUS_ARMOR
 # 90 "data/maps/EasternRuins/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq EasternRuins_EventScript_HexManiacMaliciousArmor_2
-# 96 "data/maps/EasternRuins/scripts.pory"
-	goto Common_EventScript_ShowBagIsFull
-EasternRuins_EventScript_HexManiacMaliciousArmor_1:
-# 98 "data/maps/EasternRuins/scripts.pory"
-	msgbox EasternRuins_EventScript_HexManiacMaliciousArmor_Text_2, MSGBOX_AUTOCLOSE
-# 100 "data/maps/EasternRuins/scripts.pory"
-	waitmessage
-	end
-
-EasternRuins_EventScript_HexManiacMaliciousArmor_2:
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 91 "data/maps/EasternRuins/scripts.pory"
 	giveitem ITEM_MALICIOUS_ARMOR
 # 92 "data/maps/EasternRuins/scripts.pory"
 	setflag FLAG_RECEIVED_MALICIOUS_ARMOR
 # 93 "data/maps/EasternRuins/scripts.pory"
 	waitmessage
-	goto EasternRuins_EventScript_HexManiacMaliciousArmor_1
+# 94 "data/maps/EasternRuins/scripts.pory"
+	msgbox EasternRuins_EventScript_HexManiacMaliciousArmor_Text_2, MSGBOX_AUTOCLOSE
+# 96 "data/maps/EasternRuins/scripts.pory"
+	waitmessage
+	end
 
 
 EasternRuins_EventScript_HexManiacShowMeAGhostType::
-# 105 "data/maps/EasternRuins/scripts.pory"
+# 101 "data/maps/EasternRuins/scripts.pory"
 	msgbox EasternRuins_EventScript_HexManiacShowMeAGhostType_Text_0, MSGBOX_NPC
 	end
 
 
 EasternRuins_EventScript_HexManiacThanks::
-# 111 "data/maps/EasternRuins/scripts.pory"
+# 107 "data/maps/EasternRuins/scripts.pory"
 	msgbox EasternRuins_EventScript_HexManiacThanks_Text_0, MSGBOX_NPC
 	end
 
@@ -213,13 +206,13 @@ EasternRuins_EventScript_HexManiacMaliciousArmor_Text_1:
 	.string "T-Thanks for s-showing me a\n G-GHOST TYPE P-POKéMON…\p H-Here.$"
 
 EasternRuins_EventScript_HexManiacMaliciousArmor_Text_2:
-# 98 "data/maps/EasternRuins/scripts.pory"
+# 94 "data/maps/EasternRuins/scripts.pory"
 	.string "I hope t-that armor suits you\n w-well…$"
 
 EasternRuins_EventScript_HexManiacShowMeAGhostType_Text_0:
-# 105 "data/maps/EasternRuins/scripts.pory"
+# 101 "data/maps/EasternRuins/scripts.pory"
 	.string "O-Oh…\n You d-don't have a GHOST T-TYPE?$"
 
 EasternRuins_EventScript_HexManiacThanks_Text_0:
-# 111 "data/maps/EasternRuins/scripts.pory"
+# 107 "data/maps/EasternRuins/scripts.pory"
 	.string "T-Thanks for s-showing me a\n G-GHOST TYPE P-POKéMON…\p I hope t-that armor suits you\n w-well…$"

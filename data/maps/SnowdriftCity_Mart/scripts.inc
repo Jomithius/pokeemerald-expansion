@@ -24,31 +24,31 @@ SnowdriftCity_Mart_EventScript_Clerk::
 # 14 "data/maps/SnowdriftCity_Mart/scripts.pory"
 SnowdriftCity_Mart_Pokemart:
 # 15 "data/maps/SnowdriftCity_Mart/scripts.pory"
-	.2byte ITEM_SNOWBALL
-# 16 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_FULL_RESTORE
-# 17 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 16 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_FULL_HEAL
-# 18 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 17 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_ABILITY_CAPSULE
-# 19 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 18 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_ABILITY_PATCH
-# 20 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 19 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_MAX_REVIVE
-# 21 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 20 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_MAX_REPEL
-# 22 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 21 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_MAX_LURE
-# 23 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 22 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_ELIXIR
-# 24 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 23 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_QUICK_BALL
-# 25 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 24 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_ULTRA_BALL
-# 26 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 25 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_DUSK_BALL
-# 27 "data/maps/SnowdriftCity_Mart/scripts.pory"
+# 26 "data/maps/SnowdriftCity_Mart/scripts.pory"
 	.2byte ITEM_TIMER_BALL
+# 27 "data/maps/SnowdriftCity_Mart/scripts.pory"
+	.2byte ITEM_SNOWBALL
 	.2byte ITEM_NONE
 
 SnowdriftCity_Mart_EventScript_Hiker::

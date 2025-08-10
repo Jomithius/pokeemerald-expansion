@@ -164,6 +164,7 @@ const struct Item gItemsInfo[] =
             "space and time."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_STRANGE,
         .iconPic = gItemIcon_StrangeBall,
@@ -180,6 +181,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_POKE,
         .iconPic = gItemIcon_PokeBall,
@@ -196,6 +198,7 @@ const struct Item gItemsInfo[] =
             "than a Poké Ball."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_GREAT,
         .iconPic = gItemIcon_GreatBall,
@@ -212,6 +215,7 @@ const struct Item gItemsInfo[] =
             "than a Great Ball."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_ULTRA,
         .iconPic = gItemIcon_UltraBall,
@@ -228,6 +232,7 @@ const struct Item gItemsInfo[] =
             "without fail."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_MASTER,
         .iconPic = gItemIcon_MasterBall,
@@ -244,6 +249,7 @@ const struct Item gItemsInfo[] =
             "of some event."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_PREMIER,
         .iconPic = gItemIcon_PremierBall,
@@ -260,6 +266,7 @@ const struct Item gItemsInfo[] =
             "caught Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_HEAL,
         .iconPic = gItemIcon_HealBall,
@@ -276,6 +283,7 @@ const struct Item gItemsInfo[] =
             "Bug-type Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_NET,
         .iconPic = gItemIcon_NetBall,
@@ -292,6 +300,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_NEST,
         .iconPic = gItemIcon_NestBall,
@@ -308,6 +317,7 @@ const struct Item gItemsInfo[] =
             "on the ocean floor."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_DIVE,
         .iconPic = gItemIcon_DiveBall,
@@ -324,6 +334,7 @@ const struct Item gItemsInfo[] =
             "dark place."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_DUSK,
         .iconPic = gItemIcon_DuskBall,
@@ -340,6 +351,7 @@ const struct Item gItemsInfo[] =
             "taking many turns."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_TIMER,
         .iconPic = gItemIcon_TimerBall,
@@ -356,6 +368,7 @@ const struct Item gItemsInfo[] =
             "first turn."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_QUICK,
         .iconPic = gItemIcon_QuickBall,
@@ -372,6 +385,7 @@ const struct Item gItemsInfo[] =
             "caught before."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_REPEAT,
         .iconPic = gItemIcon_RepeatBall,
@@ -388,6 +402,7 @@ const struct Item gItemsInfo[] =
             "more friendly."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_LUXURY,
         .iconPic = gItemIcon_LuxuryBall,
@@ -404,6 +419,7 @@ const struct Item gItemsInfo[] =
             "level Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_LEVEL,
         .iconPic = gItemIcon_LevelBall,
@@ -420,6 +436,7 @@ const struct Item gItemsInfo[] =
             "up Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_LURE,
         .iconPic = gItemIcon_LureBall,
@@ -436,6 +453,7 @@ const struct Item gItemsInfo[] =
             "Stone users."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_MOON,
         .iconPic = gItemIcon_MoonBall,
@@ -452,6 +470,7 @@ const struct Item gItemsInfo[] =
             "when caught."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_FRIEND,
         .iconPic = gItemIcon_FriendBall,
@@ -468,6 +487,7 @@ const struct Item gItemsInfo[] =
             "opposite gender."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_LOVE,
         .iconPic = gItemIcon_LoveBall,
@@ -484,6 +504,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_FAST,
         .iconPic = gItemIcon_FastBall,
@@ -500,6 +521,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_HEAVY,
         .iconPic = gItemIcon_HeavyBall,
@@ -521,6 +543,7 @@ const struct Item gItemsInfo[] =
         #endif
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_DREAM,
         .iconPic = gItemIcon_DreamBall,
@@ -537,6 +560,7 @@ const struct Item gItemsInfo[] =
             "Safari Zone."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_SAFARI,
         .iconPic = gItemIcon_SafariBall,
@@ -553,6 +577,7 @@ const struct Item gItemsInfo[] =
             "Catching Contest."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_SPORT,
         .iconPic = gItemIcon_SportBall,
@@ -568,6 +593,7 @@ const struct Item gItemsInfo[] =
             "the Pal Park."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_PARK,
         .iconPic = gItemIcon_ParkBall,
@@ -583,6 +609,7 @@ const struct Item gItemsInfo[] =
             "catch Ultra Beasts."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_BEAST,
         .iconPic = gItemIcon_BeastBall,
@@ -599,6 +626,7 @@ const struct Item gItemsInfo[] =
             "of some event."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_CHERISH,
         .iconPic = gItemIcon_CherishBall,
@@ -4456,7 +4484,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FLAME_PLATE] =
     {
         .name = _("Flame Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4475,7 +4503,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SPLASH_PLATE] =
     {
         .name = _("Splash Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4494,7 +4522,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ZAP_PLATE] =
     {
         .name = _("Zap Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4513,7 +4541,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MEADOW_PLATE] =
     {
         .name = _("Meadow Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4532,7 +4560,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ICICLE_PLATE] =
     {
         .name = _("Icicle Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4551,7 +4579,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FIST_PLATE] =
     {
         .name = _("Fist Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4570,7 +4598,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TOXIC_PLATE] =
     {
         .name = _("Toxic Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4589,7 +4617,7 @@ const struct Item gItemsInfo[] =
     [ITEM_EARTH_PLATE] =
     {
         .name = _("Earth Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4608,7 +4636,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SKY_PLATE] =
     {
         .name = _("Sky Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4627,7 +4655,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MIND_PLATE] =
     {
         .name = _("Mind Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4646,7 +4674,7 @@ const struct Item gItemsInfo[] =
     [ITEM_INSECT_PLATE] =
     {
         .name = _("Insect Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4665,7 +4693,7 @@ const struct Item gItemsInfo[] =
     [ITEM_STONE_PLATE] =
     {
         .name = _("Stone Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4684,7 +4712,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SPOOKY_PLATE] =
     {
         .name = _("Spooky Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4703,7 +4731,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DRACO_PLATE] =
     {
         .name = _("Draco Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4722,7 +4750,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DREAD_PLATE] =
     {
         .name = _("Dread Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4741,7 +4769,7 @@ const struct Item gItemsInfo[] =
     [ITEM_IRON_PLATE] =
     {
         .name = _("Iron Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4760,7 +4788,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PIXIE_PLATE] =
     {
         .name = _("Pixie Plate"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -4781,7 +4809,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DOUSE_DRIVE] =
     {
         .name = _("Douse Drive"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 1000,
+        .price = (I_PRICE >= GEN_7) ? 10000 : 10000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
             "Changes Genesect's\n"
@@ -4799,7 +4827,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SHOCK_DRIVE] =
     {
         .name = _("Shock Drive"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 1000,
+        .price = (I_PRICE >= GEN_7) ? 10000 : 10000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
             "Changes Genesect's\n"
@@ -4817,7 +4845,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BURN_DRIVE] =
     {
         .name = _("Burn Drive"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 1000,
+        .price = (I_PRICE >= GEN_7) ? 10000 : 10000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
             "Changes Genesect's\n"
@@ -4835,7 +4863,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CHILL_DRIVE] =
     {
         .name = _("Chill Drive"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 1000,
+        .price = (I_PRICE >= GEN_7) ? 10000 : 10000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
             "Changes Genesect's\n"
@@ -4856,7 +4884,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Fire Memory"),
         .pluralName = _("Fire Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -4876,7 +4904,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Water Memory"),
         .pluralName = _("Water Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -4896,7 +4924,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Electric Memory"),
         .pluralName = _("Electric Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -4916,7 +4944,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Grass Memory"),
         .pluralName = _("Grass Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -4936,7 +4964,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Ice Memory"),
         .pluralName = _("Ice Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -4956,7 +4984,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Fighting Memory"),
         .pluralName = _("Fighting Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -4976,7 +5004,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Poison Memory"),
         .pluralName = _("Poison Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -4996,7 +5024,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Ground Memory"),
         .pluralName = _("Ground Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5016,7 +5044,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Flying Memory"),
         .pluralName = _("Flying Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5036,7 +5064,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Psychic Memory"),
         .pluralName = _("Psychic Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5056,7 +5084,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Bug Memory"),
         .pluralName = _("Bug Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5076,7 +5104,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Rock Memory"),
         .pluralName = _("Rock Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5096,7 +5124,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Ghost Memory"),
         .pluralName = _("Ghost Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5116,7 +5144,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Dragon Memory"),
         .pluralName = _("Dragon Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5136,7 +5164,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Dark Memory"),
         .pluralName = _("Dark Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5156,7 +5184,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Steel Memory"),
         .pluralName = _("Steel Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5176,7 +5204,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Fairy Memory"),
         .pluralName = _("Fairy Memories"),
-        .price = 1000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -5261,7 +5289,7 @@ const struct Item gItemsInfo[] =
     [ITEM_VENUSAURITE] =
     {
         .name = _("Venusaurite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5279,7 +5307,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Charizardite X"),
         .pluralName = _("Charizardites X"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sCharizarditeDesc,
         .pocket = POCKET_ITEMS,
@@ -5294,7 +5322,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Charizardite Y"),
         .pluralName = _("Charizardites Y"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sCharizarditeDesc,
         .pocket = POCKET_ITEMS,
@@ -5308,7 +5336,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BLASTOISINITE] =
     {
         .name = _("Blastoisinite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5325,7 +5353,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BEEDRILLITE] =
     {
         .name = _("Beedrillite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5342,7 +5370,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PIDGEOTITE] =
     {
         .name = _("Pidgeotite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5359,7 +5387,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ALAKAZITE] =
     {
         .name = _("Alakazite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5376,7 +5404,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SLOWBRONITE] =
     {
         .name = _("Slowbronite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5393,7 +5421,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GENGARITE] =
     {
         .name = _("Gengarite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5410,7 +5438,7 @@ const struct Item gItemsInfo[] =
     [ITEM_KANGASKHANITE] =
     {
         .name = _("Kangaskhanite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5427,7 +5455,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PINSIRITE] =
     {
         .name = _("Pinsirite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5444,7 +5472,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GYARADOSITE] =
     {
         .name = _("Gyaradosite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5461,7 +5489,7 @@ const struct Item gItemsInfo[] =
     [ITEM_AERODACTYLITE] =
     {
         .name = _("Aerodactylite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5508,7 +5536,7 @@ const struct Item gItemsInfo[] =
     [ITEM_AMPHAROSITE] =
     {
         .name = _("Ampharosite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5525,7 +5553,7 @@ const struct Item gItemsInfo[] =
     [ITEM_STEELIXITE] =
     {
         .name = _("Steelixite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5542,7 +5570,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SCIZORITE] =
     {
         .name = _("Scizorite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5559,7 +5587,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HERACRONITE] =
     {
         .name = _("Heracronite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5576,7 +5604,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HOUNDOOMINITE] =
     {
         .name = _("Houndoominite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5593,7 +5621,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TYRANITARITE] =
     {
         .name = _("Tyranitarite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5610,7 +5638,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SCEPTILITE] =
     {
         .name = _("Sceptilite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5627,7 +5655,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BLAZIKENITE] =
     {
         .name = _("Blazikenite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5644,7 +5672,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SWAMPERTITE] =
     {
         .name = _("Swampertite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5661,7 +5689,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GARDEVOIRITE] =
     {
         .name = _("Gardevoirite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5678,7 +5706,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SABLENITE] =
     {
         .name = _("Sablenite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5695,7 +5723,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MAWILITE] =
     {
         .name = _("Mawilite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5712,7 +5740,7 @@ const struct Item gItemsInfo[] =
     [ITEM_AGGRONITE] =
     {
         .name = _("Aggronite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5729,7 +5757,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MEDICHAMITE] =
     {
         .name = _("Medichamite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5746,7 +5774,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MANECTITE] =
     {
         .name = _("Manectite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5763,7 +5791,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SHARPEDONITE] =
     {
         .name = _("Sharpedonite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5780,7 +5808,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CAMERUPTITE] =
     {
         .name = _("Cameruptite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5797,7 +5825,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ALTARIANITE] =
     {
         .name = _("Altarianite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5814,7 +5842,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BANETTITE] =
     {
         .name = _("Banettite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5831,7 +5859,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ABSOLITE] =
     {
         .name = _("Absolite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5848,7 +5876,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GLALITITE] =
     {
         .name = _("Glalitite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5865,7 +5893,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SALAMENCITE] =
     {
         .name = _("Salamencite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5882,7 +5910,7 @@ const struct Item gItemsInfo[] =
     [ITEM_METAGROSSITE] =
     {
         .name = _("Metagrossite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5933,7 +5961,7 @@ const struct Item gItemsInfo[] =
     [ITEM_LOPUNNITE] =
     {
         .name = _("Lopunnite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5950,7 +5978,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GARCHOMPITE] =
     {
         .name = _("Garchompite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5967,7 +5995,7 @@ const struct Item gItemsInfo[] =
     [ITEM_LUCARIONITE] =
     {
         .name = _("Lucarionite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -5984,7 +6012,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ABOMASITE] =
     {
         .name = _("Abomasite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -6001,7 +6029,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GALLADITE] =
     {
         .name = _("Galladite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
@@ -6018,7 +6046,7 @@ const struct Item gItemsInfo[] =
     [ITEM_AUDINITE] =
     {
         .name = _("Audinite"),
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"

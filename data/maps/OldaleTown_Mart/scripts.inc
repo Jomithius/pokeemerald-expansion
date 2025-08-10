@@ -54,6 +54,9 @@ OldaleTown_Mart_Text_PokeBallsAreSoldOut:
 	.string "I can't buy any POKé BALLS.$"
 
 OldaleTown_Mart_Text_ImGoingToBuyPokeBalls:
+	.string "Hey, did you know that you can\n"
+	.string "put your POKéMON in a different\l"
+	.string "POKé BALL after catching it?\p"
 	.string "I'm going to buy a bunch of POKé BALLS\n"
 	.string "and catch a bunch of POKéMON!$"
 

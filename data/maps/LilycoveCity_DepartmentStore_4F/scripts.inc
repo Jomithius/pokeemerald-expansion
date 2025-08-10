@@ -36,9 +36,8 @@ LilycoveCity_DepartmentStore_4F_Pokemart_EvoItems:
 	.2byte ITEM_SHINY_STONE
 	.2byte ITEM_DUSK_STONE
 	.2byte ITEM_DAWN_STONE
-	.2byte ITEM_SWEET_APPLE
-	.2byte ITEM_TART_APPLE
 	.2byte ITEM_CRACKED_POT
+	.2byte ITEM_CHIPPED_POT
 	.2byte ITEM_GALARICA_CUFF
 	.2byte ITEM_GALARICA_WREATH
 	.2byte ITEM_DRAGON_SCALE
@@ -83,6 +82,8 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	.2byte ITEM_TM_STEALTH_ROCK
 	.2byte ITEM_TM_SPIKES
 	.2byte ITEM_TM_TOXIC_SPIKES
+	.2byte ITEM_TM_PSYCHIC
+	.2byte ITEM_TM_FLAMETHROWER
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkMiddle::
