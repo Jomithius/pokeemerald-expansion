@@ -4931,7 +4931,7 @@ Level: 75
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Draco Meteor  
+- Dragon Pulse 
 - Dark Pulse  
 - Earth Power  
 - Focus Blast  
@@ -17919,26 +17919,57 @@ Sassy Nature
 - High Jump Kick  
 - Triple Axel  
 
-=== TRAINER_FERNANDO_3 === /* FREE */
-Name: FERNANDO
-Class: Guitarist
-Pic: Guitarist
+=== TRAINER_WILEY ===
+Name: WILEY
+Class: Expert
+Pic: Expert M
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Electrike
-Level: 37
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Kommo-o  
+Ability: Bulletproof  
+Tera Type: Dragon  
+IVs: 0 Atk  
+- Draco Meteor  
+- Clangorous Soul  
+- Aura Sphere  
 
-Manectric
-Level: 37
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Archaludon @ White Herb  
+Ability: Stamina  
+Tera Type: Dragon  
+IVs: 0 Atk  
+- Draco Meteor  
+- Meteor Beam  
+- Electro Shot  
+- Steel Beam  
 
-Loudred
-Level: 37
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Cyclizar @ White Herb  
+Ability: Regenerator  
+Tera Type: Fire  
+EVs: 252 SpA  
+Modest Nature  
+- Draco Meteor  
+- Hyper Voice  
+- Overheat  
+- Tera Blast
+
+Dragalge @ White Herb  
+Ability: Adaptability  
+Tera Type: Poison  
+EVs: 216 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Draco Meteor  
+- Sludge Bomb  
+
+Salamence @ Salamencite  
+Ability: Intimidate 
+IVs: 0 Atk  
+- Draco Meteor  
+- Flamethrower
+- Hurricane
 
 === TRAINER_FERNANDO_4 === /* FREE */
 Name: FERNANDO

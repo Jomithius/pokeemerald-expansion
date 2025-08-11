@@ -1,1 +1,66 @@
 mapscripts AzureMountain_Fork_MapScripts {}
+
+script AzureMountain_Fork_EventScript_DracoMeteorTutor{
+    lock
+	faceplayer
+	goto_if_not_defeated(TRAINER_WILEY, AzureMountain_Fork_EventScript_TrainerWiley)
+    goto(AzureMountain_Fork_EventScript_TeachDracoMeteor)
+	end
+}
+
+script AzureMountain_Fork_EventScript_TrainerWiley{
+    playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+    msgbox("Hm…\n
+        To have climbed such a treacherous\l
+        mountain… Well done.\p
+        You may be able to learn my secret move.\n
+        But first, I must test your strength!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_WILEY, "You have proven yourself well,\nyoung one.")
+    goto(AzureMountain_Fork_EventScript_TeachDracoMeteor)
+    end
+}
+
+script AzureMountain_Fork_EventScript_TeachDracoMeteor{
+    msgbox(AzureMountain_Fork_Text_DracoMeteorTeach, MSGBOX_YESNO)
+    waitmessage
+	goto_if_eq(VAR_RESULT, NO, MoveTutor_EventScript_DracoMeteorDeclined)
+	msgbox(AzureMountain_Fork_Text_DracoMeteorWhichMon, MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_DRACO_METEOR)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MoveTutor_EventScript_DracoMeteorDeclined)
+	goto(MoveTutor_EventScript_DracoMeteorTaught)
+    end
+}
+
+script MoveTutor_EventScript_DracoMeteorDeclined{
+    lock
+    msgbox("So you have chosen not to learn\n
+        such a powerful technique…\p
+        Come back if you change your mind.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script MoveTutor_EventScript_DracoMeteorTaught{
+    lock
+    msgbox("You now are the wielder of an\n
+        ultimate dragon technique.\p
+        Use it wisely, young one.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+text AzureMountain_Fork_Text_DracoMeteorTeach{
+    "You have proven yourself worthy\n
+    of the all-powerful dragon move,\l
+    DRACO METEOR.\p
+    Would you like to teach this technique\n
+    to one of your dragons?"
+}
+
+text AzureMountain_Fork_Text_DracoMeteorWhichMon{
+    "Which dragon will learn this move?"
+}
