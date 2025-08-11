@@ -163,7 +163,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_LinaEevee{
     playse(SE_SUDOWOODO_SHAKE)
     waitse
     fadescreenswapbuffers(FADE_FROM_BLACK)
-    goto_if_eq(VAR_RESULT, TRUE, EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle)
+    goto_if_eq(VAR_RESULT, TRUE, EverGrandeCity_PhoebesRoom_EventScript_EugeniaEeveeTrue)
 	goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
     end
 }
@@ -182,9 +182,59 @@ script EverGrandeCity_PhoebesRoom_EventScript_LinaReally{
     playse(SE_SUDOWOODO_SHAKE)
     waitse
     fadescreenswapbuffers(FADE_FROM_BLACK)
-    goto_if_eq(VAR_RESULT, TRUE, EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle)
+    goto_if_eq(VAR_RESULT, TRUE, EverGrandeCity_PhoebesRoom_EventScript_EugeniaEeveeTrue)
 	goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
     end
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_EugeniaEeveeTrue{
+    playbgm(MUS_ENCOUNTER_EXDEATH, FALSE)
+    msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaIntro, MSGBOX_DEFAULT)
+    waitmessage
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "……………", "I'm sorry! I won't do it again!")
+    goto_if_eq(VAR_RESULT, 1, EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry)
+    closemessage
+    clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    call(EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
+	waitmoncry
+    setflag(FLAG_DEFEATED_EUGENIA)
+	trainerbattle_no_intro(TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated)
+    end
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry{
+    fadeoutbgm(0)
+    delay(16)
+    msgbox("Are you really sorry?", MSGBOX_DEFAULT)
+    waitmessage
+    checkplayergender
+    if(var(VAR_RESULT) == MALE){
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Actually, no. I'm not!", "Yes! I was a bad boy!")
+    }
+    else{
+       dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Actually, no. I'm not!", "Yes! I was a bad girl!") 
+    }
+    goto_if_eq(VAR_RESULT, 1, EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
+    fadeinbgm(0)
+    msgbox("Hmph!\n
+        You're a terrible person.\p
+        No more second chances!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    call(EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
+	waitmoncry
+    setflag(FLAG_DEFEATED_EUGENIA)
+	trainerbattle_no_intro(TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated)
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle{
