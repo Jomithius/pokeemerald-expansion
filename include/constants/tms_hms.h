@@ -87,7 +87,7 @@
     F(HEX) \
     F(POLTERGEIST) \
     F(DRAGON_DANCE) \
-    F(BOOMBURST) \
+    F(PLAY_ROUGH) \
     F(SCALE_SHOT) \
     F(STORED_POWER) \
     F(SMART_STRIKE) \
