@@ -449,11 +449,11 @@ MoveTutor_EventScript_LiquidationTaught::
 
 LilycoveCity_DepartmentStore_1F_EventScript_LiquidationTutor_Text_0:
 # 191 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	.string "No, no, no!\n They're too far behind!\p Just liquidate their assets and terminate\n the contract! Goodbye!$"
+	.string "No, no, no!\n They're too far behind!\p Just liquidate their assets and\n cancel the contract! Goodbye!$"
 
 LilycoveCity_DepartmentStore_1F_EventScript_LiquidationTutor_Text_1:
 # 205 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	.string "Which POKéMON wants to learn LIQUIDATION?$"
+	.string "Which POKéMON do you want to\nteach LIQUIDATION to?$"
 
 MoveTutor_EventScript_LiquidationTeach_Text_0:
 # 214 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"

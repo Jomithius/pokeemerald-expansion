@@ -1299,21 +1299,65 @@ MossdeepCity_EventScript_AriaSword::
 	end
 
 
+MossdeepCity_EventScript_RecoverTutor::
+# 711 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 712 "data/maps/MossdeepCity/scripts.pory"
+	faceplayer
+# 713 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_Text_RecoverTeach, MSGBOX_YESNO
+# 714 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 715 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RecoverDeclined
+# 716 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_RecoverTutor_Text_0, MSGBOX_DEFAULT
+# 717 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_RECOVER
+# 718 "data/maps/MossdeepCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 719 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_RecoverDeclined
 # 720 "data/maps/MossdeepCity/scripts.pory"
+	goto MoveTutor_EventScript_RecoverTaught
+	end
+
+
+MoveTutor_EventScript_RecoverDeclined::
+# 725 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MoveTutor_EventScript_RecoverDeclined_Text_0, MSGBOX_AUTOCLOSE
+# 727 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 728 "data/maps/MossdeepCity/scripts.pory"
+	release
+	end
+
+
+MoveTutor_EventScript_RecoverTaught::
+# 733 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MoveTutor_EventScript_RecoverTaught_Text_0, MSGBOX_AUTOCLOSE
+# 736 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 737 "data/maps/MossdeepCity/scripts.pory"
+	release
+	end
+
+
+# 760 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_Movement_MomoClone:
-# 721 "data/maps/MossdeepCity/scripts.pory"
+# 761 "data/maps/MossdeepCity/scripts.pory"
 	walk_fast_down
-# 722 "data/maps/MossdeepCity/scripts.pory"
+# 762 "data/maps/MossdeepCity/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 725 "data/maps/MossdeepCity/scripts.pory"
+# 765 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_Movement_MomoClone2:
-# 726 "data/maps/MossdeepCity/scripts.pory"
+# 766 "data/maps/MossdeepCity/scripts.pory"
 	walk_fast_down
-# 727 "data/maps/MossdeepCity/scripts.pory"
+# 767 "data/maps/MossdeepCity/scripts.pory"
 	walk_fast_left
-# 728 "data/maps/MossdeepCity/scripts.pory"
+# 768 "data/maps/MossdeepCity/scripts.pory"
 	walk_in_place_right
 	step_end
 
@@ -1401,6 +1445,22 @@ MossdeepCity_EventScript_AriaSword_Text_0:
 # 700 "data/maps/MossdeepCity/scripts.pory"
 	.string "They're swinging a sword.\n It looks dangerous to approach them\l from the front.$"
 
+MossdeepCity_EventScript_RecoverTutor_Text_0:
+# 716 "data/maps/MossdeepCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach RECOVER to?$"
+
+MoveTutor_EventScript_RecoverDeclined_Text_0:
+# 725 "data/maps/MossdeepCity/scripts.pory"
+	.string "Well, alright.\n Don't overexert yourself.$"
+
+MoveTutor_EventScript_RecoverTaught_Text_0:
+# 733 "data/maps/MossdeepCity/scripts.pory"
+	.string "Alright.\p Come back if you want to recover\n from your training.$"
+
+MossdeepCity_Text_RecoverTeach::
+# 741 "data/maps/MossdeepCity/scripts.pory"
+	.string "Pfft. Those meatheads on the beach\n spend all day training.\p Giving your muscles time to recover is\n is important too.\p If you want, I could teach your POKéMON\n how to RECOVER.$"
+
 MossdeepCity_Text_GymLeaderGone::
-# 710 "data/maps/MossdeepCity/scripts.pory"
+# 750 "data/maps/MossdeepCity/scripts.pory"
 	.string "Well met, challenger. Here to take on\n the GYM, I presume.\p The knight commander has left with their\n Order to train in SHOAL CAVE.\p You'll have to wait until they return,\n unless you're brave enough to go\l get them yourself…$"

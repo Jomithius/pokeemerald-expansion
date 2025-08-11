@@ -707,6 +707,46 @@ script MossdeepCity_EventScript_AriaSword{
     end
 }
 
+script MossdeepCity_EventScript_RecoverTutor{
+    lock
+	faceplayer
+    msgbox(MossdeepCity_Text_RecoverTeach, MSGBOX_YESNO)
+	waitmessage
+    goto_if_eq(VAR_RESULT, NO, MoveTutor_EventScript_RecoverDeclined)
+	msgbox("Which POKéMON do you want to\nteach RECOVER to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_RECOVER)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MoveTutor_EventScript_RecoverDeclined)
+	goto(MoveTutor_EventScript_RecoverTaught)
+	end
+}
+
+script MoveTutor_EventScript_RecoverDeclined{
+	msgbox("Well, alright.\n
+		Don't overexert yourself.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script MoveTutor_EventScript_RecoverTaught{
+	msgbox("Alright.\p
+		Come back if you want to recover\n
+		from your training.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+text MossdeepCity_Text_RecoverTeach{
+	"Pfft. Those meatheads on the beach\n
+	spend all day training.\p
+	Giving your muscles time to recover is\n
+	is important too.\p
+	If you want, I could teach your POKéMON\n
+	how to RECOVER."
+}
+
 text MossdeepCity_Text_GymLeaderGone{
     "Well met, challenger. Here to take on\n
     the GYM, I presume.\p

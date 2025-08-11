@@ -82,7 +82,7 @@ AzureMountain_Fork_EventScript_TrainerWiley_Text_1:
 
 MoveTutor_EventScript_DracoMeteorDeclined_Text_0:
 # 38 "data/maps/AzureMountain_Fork/scripts.pory"
-	.string "So you would choose not to learn\n such a power technique.\p Come back if you change your mind.$"
+	.string "So you have chosen not to learn\n such a powerful technique…\p Come back if you change your mind.$"
 
 MoveTutor_EventScript_DracoMeteorTaught_Text_0:
 # 48 "data/maps/AzureMountain_Fork/scripts.pory"
@@ -90,7 +90,7 @@ MoveTutor_EventScript_DracoMeteorTaught_Text_0:
 
 AzureMountain_Fork_Text_DracoMeteorTeach::
 # 56 "data/maps/AzureMountain_Fork/scripts.pory"
-	.string "You have proved yourself worthy\n of the all-powerful dragon move,\l DRACO METEOR.\p Would you like to teach this technique to\n one of your dragons?$"
+	.string "You have proven yourself worthy\n of the all-powerful dragon move,\l DRACO METEOR.\p Would you like to teach this technique\n to one of your dragons?$"
 
 AzureMountain_Fork_Text_DracoMeteorWhichMon::
 # 64 "data/maps/AzureMountain_Fork/scripts.pory"
