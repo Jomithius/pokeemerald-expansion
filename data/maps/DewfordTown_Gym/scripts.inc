@@ -850,57 +850,55 @@ DewfordTown_Gym_EventScript_GiveDazzlingGleam::
 	msgbox ExplainDazzlingGleam, MSGBOX_AUTOCLOSE
 # 427 "data/maps/DewfordTown_Gym/scripts.pory"
 	waitmessage
-# 428 "data/maps/DewfordTown_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_TM_DAZZLING_GLEAM
 	return
 
 
 DewfordTown_Gym_EventScript_Poobles::
-# 438 "data/maps/DewfordTown_Gym/scripts.pory"
+# 437 "data/maps/DewfordTown_Gym/scripts.pory"
 	lock
-# 439 "data/maps/DewfordTown_Gym/scripts.pory"
+# 438 "data/maps/DewfordTown_Gym/scripts.pory"
 	playmoncry SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER
-# 440 "data/maps/DewfordTown_Gym/scripts.pory"
+# 439 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_EventScript_Poobles_Text_0, MSGBOX_AUTOCLOSE
-# 441 "data/maps/DewfordTown_Gym/scripts.pory"
+# 440 "data/maps/DewfordTown_Gym/scripts.pory"
 	waitmessage
-# 442 "data/maps/DewfordTown_Gym/scripts.pory"
+# 441 "data/maps/DewfordTown_Gym/scripts.pory"
 	release
 	end
 
 
 DewfordTown_Gym_EventScript_PooblesDugtrio::
-# 447 "data/maps/DewfordTown_Gym/scripts.pory"
+# 446 "data/maps/DewfordTown_Gym/scripts.pory"
 	lock
-# 448 "data/maps/DewfordTown_Gym/scripts.pory"
+# 447 "data/maps/DewfordTown_Gym/scripts.pory"
 	playmoncry SPECIES_DUGTRIO_ALOLA, CRY_MODE_ENCOUNTER
-# 449 "data/maps/DewfordTown_Gym/scripts.pory"
+# 448 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_EventScript_PooblesDugtrio_Text_0, MSGBOX_AUTOCLOSE
-# 450 "data/maps/DewfordTown_Gym/scripts.pory"
+# 449 "data/maps/DewfordTown_Gym/scripts.pory"
 	waitmessage
-# 451 "data/maps/DewfordTown_Gym/scripts.pory"
+# 450 "data/maps/DewfordTown_Gym/scripts.pory"
 	release
 	end
 
 
 DewfordTown_Gym_EventScript_Brawly_FinalBattle::
-# 456 "data/maps/DewfordTown_Gym/scripts.pory"
+# 455 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_BRAWLY_2, DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_0, DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_1, DewfordTown_Gym_EventScript_BrawlyDefeatedFinal
 	end
 
 
 DewfordTown_Gym_EventScript_BrawlyDefeatedFinal::
-# 461 "data/maps/DewfordTown_Gym/scripts.pory"
+# 460 "data/maps/DewfordTown_Gym/scripts.pory"
 	addvar VAR_GYM_LEADER_COUNT, 1
-# 462 "data/maps/DewfordTown_Gym/scripts.pory"
+# 461 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_EventScript_BrawlyDefeatedFinal_Text_0, MSGBOX_NPC
-# 466 "data/maps/DewfordTown_Gym/scripts.pory"
+# 465 "data/maps/DewfordTown_Gym/scripts.pory"
 	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
 	end
 
 
 DewfordTown_Gym_EventScript_BrawlyDefeatedFinal2::
-# 471 "data/maps/DewfordTown_Gym/scripts.pory"
+# 470 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_EventScript_BrawlyDefeatedFinal_Text_0, MSGBOX_NPC
 	end
 
@@ -910,25 +908,25 @@ DewfordTown_Gym_EventScript_GiveDazzlingGleam_Text_0:
 	.string "Please take this, too.$"
 
 DewfordTown_Gym_EventScript_Poobles_Text_0:
-# 440 "data/maps/DewfordTown_Gym/scripts.pory"
+# 439 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "POOBLES: Poooobs!$"
 
 DewfordTown_Gym_EventScript_PooblesDugtrio_Text_0:
-# 449 "data/maps/DewfordTown_Gym/scripts.pory"
+# 448 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "POOBLES: POOOOOBS!$"
 
 DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_0:
-# 456 "data/maps/DewfordTown_Gym/scripts.pory"
+# 455 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "Hello, {PLAYER}.\nCongratulations on becoming CHAMPION.\pAlright! It's time to show you how strong\n POOBLES and I have gotten!$"
 
 DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_1:
-# 456 "data/maps/DewfordTown_Gym/scripts.pory"
+# 455 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "How could you do that to POOBLES…$"
 
 DewfordTown_Gym_EventScript_BrawlyDefeatedFinal_Text_0:
-# 462 "data/maps/DewfordTown_Gym/scripts.pory"
+# 461 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "Wow.\n That was impressive, {PLAYER}!\p You even beat POOBLES at\n full power!$"
 
 ExplainDazzlingGleam::
-# 432 "data/maps/DewfordTown_Gym/scripts.pory"
+# 431 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "TM54, DAZZLING GLEAM, hits adjacent\n foes with a flash of light.$"

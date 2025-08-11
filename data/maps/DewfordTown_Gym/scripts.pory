@@ -425,7 +425,6 @@ script DewfordTown_Gym_EventScript_GiveDazzlingGleam{
     waitmessage
     msgbox(ExplainDazzlingGleam, MSGBOX_AUTOCLOSE)
     waitmessage
-    setflag(FLAG_RECEIVED_TM_DAZZLING_GLEAM)
     return
 }
 

@@ -98,7 +98,7 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_RECEIVED_TM_FREEZE_DRY          0x54  // Sootopolis Gym
+#define FLAG_UNUSED_0x54          0x54  // Unused
 #define FLAG_RECEIVED_REVEAL_GLASS           0x55  // Baldesia Forest
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
@@ -184,14 +184,14 @@
 #define FLAG_CUTE_PAINTING_MADE              0xA2
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
-#define FLAG_RECEIVED_TM_ROCK_TOMB           0xA5
-#define FLAG_RECEIVED_TM_BULK_UP             0xA6
-#define FLAG_RECEIVED_TM_CHARGE_BEAM         0xA7
-#define FLAG_RECEIVED_TM_OVERHEAT            0xA8
-#define FLAG_RECEIVED_TM_FACADE              0xA9
-#define FLAG_RECEIVED_TM_AERIAL_ACE          0xAA
-#define FLAG_RECEIVED_TM_CALM_MIND           0xAB
-#define FLAG_RECEIVED_TM_WATER_PULSE         0xAC
+#define FLAG_UNUSED_0xA5            0xA5 // Unused
+#define FLAG_UNUSED_0xA6             0xA6 // Unused
+#define FLAG_UNUSED_0xA7          0xA7 // Unused
+#define FLAG_UNUSED_0xA8             0xA8 // Unused
+#define FLAG_UNUSED_0xA9              0xA9 // Unused
+#define FLAG_UNUSED_0xAA           0xAA // Unused
+#define FLAG_UNUSED_0xAB            0xAB // Unused
+#define FLAG_UNUSED_0xAC         0xAC // Unused
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
 #define FLAG_DECORATION_1                    0xAE
 #define FLAG_DECORATION_2                    0xAF
@@ -657,9 +657,9 @@
 
 // Static Encounters Legendaries, Mythicals, Paradox and Ultra Beasts
 #define FLAG_RECEIVED_TM_DEFOG           0x264 // Rusturf Tunnel 3F
-#define FLAG_RECEIVED_TM_DAZZLING_GLEAM  0x265 // Slateport Gym
+#define FLAG_RECEIVED_TM_DAZZLING_GLEAM  0x265 // Unused
 #define FLAG_RECEIVED_TM_CLOSE_COMBAT    0x266 // Sootopolis City House 1
-#define FLAG_RECEIVED_TM_VOLT_SWITCH     0x267 // Mauville Gym
+#define FLAG_RECEIVED_TM_VOLT_SWITCH     0x267 // Unused
 #define FLAG_FOUND_TM_ROCK_SLIDE         0x268 // Fallarbor Rat Cave
 #define FLAG_HIDE_ENTEI                  0x269 // Scorched Slab
 #define FLAG_HIDE_RAIKOU                 0x26A // New Mauville
@@ -1223,7 +1223,7 @@
 
 // custom flags
 #define FLAG_LINA_HOUSE_EEVEE                                       0x493 // Gift Eevee
-#define FLAG_LUNA_HOUSE_MOTHIM                                      0x494 // Gift Mothim
+#define FLAG_LUNA_HOUSE_MOTHIM                                      0x494 // Unused
 #define FLAG_HIDE_MISA_LILYCOVE_DEPT_5F                             0x495 // Misa Lilycove 5F
 #define FLAG_PETALBURG_RATICATE                                     0x496 // Rat Cave Petalburg
 #define FLAG_PETALBURG_RATICATE_ALOLA                               0x497 // Rat Cave Petalburg
@@ -1537,15 +1537,15 @@
 #define FLAG_DEFEATED_EUGENIA                       (SYSTEM_FLAGS + 0xA1) // For E4 Final Battles
 #define FLAG_SYS_HARD_MODE                          (SYSTEM_FLAGS + 0xA2) // Difficulty
 #define FLAG_TALKED_TO_LIQUIDATION_TUTOR            (SYSTEM_FLAGS + 0xA3) // Lilycove Dept Store
-#define FLAG_UNUSED_0x904                           (SYSTEM_FLAGS + 0xA4) // Unused Flag
-#define FLAG_UNUSED_0x905                           (SYSTEM_FLAGS + 0xA5) // Unused Flag
-#define FLAG_UNUSED_0x906                           (SYSTEM_FLAGS + 0xA6) // Unused Flag
-#define FLAG_UNUSED_0x907                           (SYSTEM_FLAGS + 0xA7) // Unused Flag
-#define FLAG_UNUSED_0x908                           (SYSTEM_FLAGS + 0xA8) // Unused Flag
-#define FLAG_UNUSED_0x909                           (SYSTEM_FLAGS + 0xA9) // Unused Flag
-#define FLAG_UNUSED_0x90A                           (SYSTEM_FLAGS + 0xAA) // Unused Flag
-#define FLAG_UNUSED_0x90B                           (SYSTEM_FLAGS + 0xAB) // Unused Flag
-#define FLAG_UNUSED_0x90C                           (SYSTEM_FLAGS + 0xAC) // Unused Flag
+#define FLAG_RECEIVED_TM_ROCK_TOMB                  (SYSTEM_FLAGS + 0xA4) // Rustboro Gym
+#define FLAG_RECEIVED_TM_BULK_UP                    (SYSTEM_FLAGS + 0xA5) // Dewford Gym
+#define FLAG_RECEIVED_TM_CHARGE_BEAM                (SYSTEM_FLAGS + 0xA6) // Mauville Gym
+#define FLAG_RECEIVED_TM_OVERHEAT                   (SYSTEM_FLAGS + 0xA7) // Lavaridge Gym
+#define FLAG_RECEIVED_TM_FACADE                     (SYSTEM_FLAGS + 0xA8) // Petalburg Gym
+#define FLAG_RECEIVED_TM_AERIAL_ACE                 (SYSTEM_FLAGS + 0xA9) // Fortree Gym
+#define FLAG_RECEIVED_TM_CALM_MIND                  (SYSTEM_FLAGS + 0xAA) // Mossdeep Gym
+#define FLAG_RECEIVED_TM_WATER_PULSE                (SYSTEM_FLAGS + 0xAB) // Rustboro City
+#define FLAG_RECEIVED_TM_FREEZE_DRY                 (SYSTEM_FLAGS + 0xAC) // Sootopolis City
 #define FLAG_UNUSED_0x90D                           (SYSTEM_FLAGS + 0xAD) // Unused Flag
 #define FLAG_UNUSED_0x90E                           (SYSTEM_FLAGS + 0xAE) // Unused Flag
 #define FLAG_UNUSED_0x90F                           (SYSTEM_FLAGS + 0xAF) // Unused Flag

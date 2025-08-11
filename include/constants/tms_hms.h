@@ -82,6 +82,26 @@
     F(ENCORE) \
     F(ICE_SPINNER) \
     F(RAPID_SPIN) \
+    F(PARTING_SHOT) \
+    F(WILL_O_WISP) \
+    F(HEX) \
+    F(POLTERGEIST) \
+    F(DRAGON_DANCE) \
+    F(BOOMBURST) \
+    F(SCALE_SHOT) \
+    F(STORED_POWER) \
+    F(SMART_STRIKE) \
+    F(EARTH_POWER) \
+    F(FALSE_SWIPE) \
+    F(FLIP_TURN) \
+    F(FOUL_PLAY) \
+    F(ZEN_HEADBUTT) \
+    F(SEED_BOMB) \
+    F(ICICLE_CRASH) \
+    F(TERA_BLAST) \
+    F(BODY_PRESS) \
+    F(FLASH_CANNON) \
+    F(DARK_PULSE) \
 
 
 #define FOREACH_HM(F) \

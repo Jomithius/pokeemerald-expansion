@@ -45,7 +45,7 @@ RustboroCity_Gym_EventScript_Roxanne::
 # 23 "data/maps/RustboroCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
 # 24 "data/maps/RustboroCity_Gym/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
+	@ goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
 # 25 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
 # 26 "data/maps/RustboroCity_Gym/scripts.pory"
@@ -91,7 +91,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 # 46 "data/maps/RustboroCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 47 "data/maps/RustboroCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_TM_ROCK_TOMB
+	@ setflag FLAG_RECEIVED_TM_ROCK_TOMB
 # 48 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 # 49 "data/maps/RustboroCity_Gym/scripts.pory"

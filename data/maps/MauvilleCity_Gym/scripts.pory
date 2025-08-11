@@ -415,7 +415,6 @@ script MauvilleCity_Gym_EventScript_GiveVoltSwitch{
     waitmessage
     msgbox(MauvilleCity_Gym_Text_ExplainVoltSwitch, MSGBOX_AUTOCLOSE)
     waitmessage
-    setflag(FLAG_RECEIVED_TM_VOLT_SWITCH)
 	setvar(VAR_SPEEDWAGON_STATE, 1)
 	setvar(VAR_MISA_STATE, 5)
     return
