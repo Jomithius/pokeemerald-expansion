@@ -360,4 +360,3 @@ movement EvergrandeCity_Movement_PlayerRightTrigger {
     walk_left
     walk_up
 }
-

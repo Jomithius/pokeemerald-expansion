@@ -15834,6 +15834,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_AZURE_MOUNTAIN_UP5",
+          "base_label": "gAzureMountain_Up50",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_ABOMASNOW"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_FROSMOTH"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_FROSLASS"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_BEARTIC"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_CRYOGONAL"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_GLALIE"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_CRABOMINABLE"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_GLIMMORA"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_ELECTIVIRE"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_TINKATON"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_FRIGIBAX"
+              },
+              {
+                "min_level": 65,
+                "max_level": 80,
+                "species": "SPECIES_ARCTIBAX"
+              }
+            ]
+          }
         }
       ]
     },

@@ -76,6 +76,7 @@ DewfordTown_EventScript_TownSign::
 	end
 
 DewfordTown_EventScript_GymSign::
+	goto_if_ge VAR_BENNIS_DOJO_STATE, 5, DewfordTown_EventScript_GymSignUpdated
 	msgbox DewfordTown_Text_GymSign, MSGBOX_SIGN
 	end
 
@@ -97,6 +98,7 @@ DewfordTown_EventScript_GiveOldRod::
 	giveitem ITEM_OLD_ROD
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_OLD_ROD
+	setvar VAR_ROUTE106_STATE, 1
 	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -717,14 +719,9 @@ DewfordTown_Text_GiveYouOneOfMyRods:
 DewfordTown_Text_ThrowInFishingAdvice:
 	.string "And, as an added bonus, I'll even throw\n"
 	.string "in a little fishing advice!\p"
-	.string "First, you want to face the water,\n"
-	.string "then use the ROD.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull on the ROD.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your ROD\l"
-	.string "to haul them in.$"
+	.string "On ROUTE 106, northeast of GRANITE\n"
+	.string "CAVE, right by the rock on the\l"
+	.string "beach, you might find a rare catch!$"
 
 DewfordTown_Text_ThatsTooBadThen:
 	.string "Oh, is that so?\n"
@@ -830,6 +827,12 @@ script DewfordTown_EventScript_ReturnToPetalburgPrompt2{
 		Go ahead and challenge them!\n
 		I'll be here waiting.", MSGBOX_DEFAULT)
 	release
+	end
+}
+
+script DewfordTown_EventScript_GymSignUpdated{
+	msgbox("MASTER BENNIS's DOJO\n
+		Challengers welcome!", MSGBOX_SIGN)
 	end
 }
 

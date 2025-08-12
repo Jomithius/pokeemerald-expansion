@@ -1,1 +1,69 @@
 mapscripts AzureMountain_RestStop_MapScripts {}
+
+script AzureMountain_RestStop_EventScript_Hiker{
+    msgbox("It's so nice of this family to\n
+        let us warm up in here.", MSGBOX_NPC)
+    end
+}
+
+script AzureMountain_RestStop_EventScript_Cooltrainer{
+    msgbox("It was tough getting up here.\n
+        There's so many strong TRAINERS!", MSGBOX_NPC)
+    end
+}
+
+script AzureMountain_RestStop_EventScript_Woman3{
+    msgbox("I wanted to go ice skating on the\n
+        lake, but there's so many ice\l
+        blocks and snow piles right now.", MSGBOX_NPC)
+    end
+}
+
+script AzureMountain_RestStop_EventScript_BlackBelt{
+    msgbox("UWOOOOH!\p
+        The best way to warm up is\n
+        by activating your muscles!", MSGBOX_SIGN)
+    end
+}
+
+script AzureMountain_RestStop_EventScript_Girl1{
+    msgbox("This year's been crazy!\p
+        We've never had this many
+        people come through here before.\p
+        It must be easier to get all the\n
+        way out here now or something.", MSGBOX_NPC)
+    end
+}
+
+script AzureMountain_RestStop_EventScript_Man_4{
+    msgbox("We've had this rest stop for years.\p
+        I also occasionally go out on rescue\n
+        missions with STOUTLAND.\p
+        Luckily not too many people get\n
+        stranded on the mountain.", MSGBOX_NPC)
+    end
+}
+
+script AzureMountain_RestStop_EventScript_WomanHeal{
+    lock
+    faceplayer
+    msgbox("You and your POKéMON look tired.\n
+        Come reest for awhile.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(Common_EventScript_OutOfCenterPartyHeal)
+    msgbox("You can stay as long as you need!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script AzureMountain_RestStop_EventScript_Stoutland{
+    lock
+    faceplayer
+    playmoncry(SPECIES_STOUTLAND, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    release
+    end
+}

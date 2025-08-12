@@ -18225,85 +18225,65 @@ Swellow
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_THALIA_2 === /* FREE */
-Name: THALIA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
+=== TRAINER_WILEY ===
+Name: WILEY
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wailmer
-Level: 34
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Cetoddle
 
-Horsea
-Level: 34
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Espathra
 
-=== TRAINER_THALIA_3 === /* FREE */
-Name: THALIA
-Class: Beauty
-Pic: Beauty
+=== TRAINER_SHURLEY ===
+Name: SHURLEY
+Class: Triathlete
+Pic: Running Triathlete F
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Luvdisc
-Level: 36
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Slowbro @ Slowbronite
 
-Wailmer
-Level: 36
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Maushold
 
-Seadra
-Level: 36
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Dachsbun
 
-=== TRAINER_THALIA_4 === /* FREE */
-Name: THALIA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
+=== TRAINER_WILSON ===
+Name: WILSON
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Luvdisc
-Level: 38
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Sharpedo @ Sharpedonite
 
-Wailmer
-Level: 38
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Veluza
 
-Seadra
-Level: 38
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Bellibolt
 
-=== TRAINER_THALIA_5 === /* FREE */
-Name: THALIA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
+Walrein
+
+=== TRAINER_ITOSHI ===
+Name: ITOSHI
+Class: Black Belt
+Pic: Black Belt Fr
+Gender: Male
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Luvdisc
-Level: 40
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Flamigo
 
-Wailord
-Level: 40
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Cyclizar
 
-Kingdra
-Level: 40
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Pawmot
 
 === TRAINER_MARIELA ===
 Name: MARIELA

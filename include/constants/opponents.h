@@ -847,10 +847,10 @@
 #define TRAINER_GABRIELLE_3                 841
 #define TRAINER_GABRIELLE_4                 842
 #define TRAINER_GABRIELLE_5                 843
-#define TRAINER_THALIA_2                    844 // free
-#define TRAINER_THALIA_3                    845 // free
-#define TRAINER_THALIA_4                    846 // free
-#define TRAINER_THALIA_5                    847 // free
+#define TRAINER_WILEY                       844
+#define TRAINER_SHURLEY                     845
+#define TRAINER_WILSON                      846
+#define TRAINER_ITOSHI                      847
 #define TRAINER_MARIELA                     848
 #define TRAINER_ALVARO                      849
 #define TRAINER_EVERETT                     850
