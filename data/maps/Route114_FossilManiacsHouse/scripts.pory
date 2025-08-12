@@ -1,0 +1,96 @@
+raw`Route114_FossilManiacsHouse_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route114_FossilManiacsHouse_OnTransition
+	.byte 0
+
+Route114_FossilManiacsHouse_OnTransition:
+	setflag FLAG_LANDMARK_FOSSIL_MANIACS_HOUSE
+	end
+
+Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_TM_DIG, Route114_FossilManiacsHouse_EventScript_ReceivedDig
+	msgbox Route114_FossilManiacsHouse_Text_HaveThisToDigLikeMyBrother, MSGBOX_DEFAULT
+	giveitem ITEM_TM_DIG
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_TM_DIG
+	release
+	end
+
+Route114_FossilManiacsHouse_EventScript_ReceivedDig::
+	msgbox Route114_FossilManiacsHouse_Text_DigReturnsYouToEntrance, MSGBOX_DEFAULT
+	release
+	end
+
+Route114_FossilManiacsHouse_EventScript_RockDisplay::
+	msgbox Route114_FossilManiacsHouse_Text_RocksFillDisplayCase, MSGBOX_SIGN
+	end
+
+Route114_FossilManiacsHouse_EventScript_Bookshelf::
+	msgbox Route114_FossilManiacsHouse_Text_CrammedWithBooks, MSGBOX_SIGN
+	end
+
+Route114_FossilManiacsHouse_Text_HaveThisToDigLikeMyBrother:
+	.string "My big brother's the FOSSIL MANIAC…\n"
+	.string "He's a nice guy who loves FOSSILS…\p"
+	.string "He loves digging holes, too…\n"
+	.string "He dug this hole by himself…\p"
+	.string "You can have this, so you can DIG\n"
+	.string "holes just like my big brother…$"
+
+Route114_FossilManiacsHouse_Text_DigReturnsYouToEntrance:
+	.string "If you make a POKéMON DIG inside a\n"
+	.string "cave, you're returned to the entrance…$"
+
+Route114_FossilManiacsHouse_Text_RocksFillDisplayCase:
+	.string "Rocks in peculiar shapes fill\n"
+	.string "the display case…$"
+
+Route114_FossilManiacsHouse_Text_CrammedWithBooks:
+	.string "THE COMPOSITION OF STRATA…\n"
+	.string "HOW RAIN SHAPES THE LAND…\l"
+	.string "STONES, SOIL, AND ROCK…\p"
+	.string "It's crammed with books.$"
+
+`
+
+script Route114_FossilManiacsHouse_EventScript_DrillRunTutor{
+	lock
+	faceplayer
+	msgbox("Digging is good and all, but\n
+        drilling is even better!\p
+        I wish we could drill here, but\n
+        it's too dangerous.\p
+        But if you want, I could teach your\n
+        POKéMON how to drill.", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MoveTutor_EventScript_DrillRunTeach)
+	goto(Route114_FossilManiacsHouse_EventScript_TutorDecline)
+	release
+	end
+}
+
+script MoveTutor_EventScript_DrillRunTeach{
+	msgbox("Which POKéMON do you want me to\nteach DRILL RUN?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_DRILL_RUN)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, Route114_FossilManiacsHouse_EventScript_TutorDecline)
+	goto(Route114_FossilManiacsHouse_EventScript_DrillRunTaught)
+	end
+}
+
+script Route114_FossilManiacsHouse_EventScript_TutorDecline{
+    msgbox("Oh, okay.\n
+        Well, digging is the safer option.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script Route114_FossilManiacsHouse_EventScript_DrillRunTaught{
+    msgbox("Let me know if you want to teach more\n
+        POKéMON how to drill!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}

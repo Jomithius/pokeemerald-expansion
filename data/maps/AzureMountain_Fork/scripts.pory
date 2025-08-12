@@ -3,7 +3,7 @@ mapscripts AzureMountain_Fork_MapScripts {}
 script AzureMountain_Fork_EventScript_DracoMeteorTutor{
     lock
 	faceplayer
-	goto_if_not_defeated(TRAINER_WILEY, AzureMountain_Fork_EventScript_TrainerWiley)
+	goto_if_not_defeated(TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerWiley)
     goto(AzureMountain_Fork_EventScript_TeachDracoMeteor)
 	end
 }
@@ -16,7 +16,7 @@ script AzureMountain_Fork_EventScript_TrainerWiley{
         You may be able to learn my secret move.\n
         But first, I must test your strength!", MSGBOX_AUTOCLOSE)
     waitmessage
-    trainerbattle_no_intro(TRAINER_WILEY, "You have proven yourself well,\nyoung one.")
+    trainerbattle_no_intro(TRAINER_DRAY, "You have proven yourself well,\nyoung one.")
     goto(AzureMountain_Fork_EventScript_TeachDracoMeteor)
     end
 }

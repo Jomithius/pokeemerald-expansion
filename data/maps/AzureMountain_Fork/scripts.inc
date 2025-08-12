@@ -8,7 +8,7 @@ AzureMountain_Fork_EventScript_DracoMeteorTutor::
 # 5 "data/maps/AzureMountain_Fork/scripts.pory"
 	faceplayer
 # 6 "data/maps/AzureMountain_Fork/scripts.pory"
-	goto_if_not_defeated TRAINER_WILEY, AzureMountain_Fork_EventScript_TrainerWiley
+	goto_if_not_defeated TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerWiley
 # 7 "data/maps/AzureMountain_Fork/scripts.pory"
 	goto AzureMountain_Fork_EventScript_TeachDracoMeteor
 	end
@@ -22,7 +22,7 @@ AzureMountain_Fork_EventScript_TrainerWiley::
 # 18 "data/maps/AzureMountain_Fork/scripts.pory"
 	waitmessage
 # 19 "data/maps/AzureMountain_Fork/scripts.pory"
-	trainerbattle_no_intro TRAINER_WILEY, AzureMountain_Fork_EventScript_TrainerWiley_Text_1
+	trainerbattle_no_intro TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerWiley_Text_1
 # 20 "data/maps/AzureMountain_Fork/scripts.pory"
 	goto AzureMountain_Fork_EventScript_TeachDracoMeteor
 	end

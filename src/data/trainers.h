@@ -43473,7 +43473,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHADOW_CLONE_MOMO] =
     {
 #line 16768
-        .trainerName = _("MOMO"),
+        .trainerName = _("MOMOMO"),
 #line 16769
         .trainerClass = TRAINER_CLASS_SHADOW_CLONE,
 #line 16770
@@ -46424,10 +46424,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17922
-    [DIFFICULTY_NORMAL][TRAINER_WILEY] =
+    [DIFFICULTY_NORMAL][TRAINER_DRAY] =
     {
 #line 17923
-        .trainerName = _("WILEY"),
+        .trainerName = _("DRAY"),
 #line 17924
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 17925
@@ -46563,21 +46563,21 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17974
-    [DIFFICULTY_NORMAL][TRAINER_FERNANDO_4] =
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_AZURE_MOUNTAIN] =
     {
 #line 17975
-        .trainerName = _("FERNANDO"),
+        .trainerName = _("BRENDAN"),
 #line 17976
-        .trainerClass = TRAINER_CLASS_GUITARIST,
+        .trainerClass = TRAINER_CLASS_RIVAL,
 #line 17977
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
 #line 17979
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17980
         .doubleBattle = FALSE,
 #line 17981
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -46617,21 +46617,23 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17995
-    [DIFFICULTY_NORMAL][TRAINER_FERNANDO_5] =
+    [DIFFICULTY_NORMAL][TRAINER_MAY_AZURE_MOUNTAIN] =
     {
 #line 17996
-        .trainerName = _("FERNANDO"),
+        .trainerName = _("MAY"),
 #line 17997
-        .trainerClass = TRAINER_CLASS_GUITARIST,
+        .trainerClass = TRAINER_CLASS_RIVAL,
 #line 17998
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
+#line 17999
+F_TRAINER_FEMALE | 
 #line 18000
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 18001
         .doubleBattle = FALSE,
 #line 18002
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {

@@ -25,8 +25,8 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 3,
-      "y": 3,
+      "x": 4,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_AZURE_MOUNTAIN_UP5",
       "dest_warp_id": "0"

@@ -34,6 +34,8 @@ script TheUnder_EventScript_Luna{
     waitmessage
     giveitem(ITEM_TERA_ORB)
     waitmessage
+    giveitem(ITEM_TM_TERA_BLAST)
+    waitmessage
     msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}Do you want an explanation of TERA?", MSGBOX_YESNO)
     waitmessage
     if(var(VAR_RESULT) == YES){

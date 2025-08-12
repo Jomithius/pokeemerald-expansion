@@ -5374,9 +5374,9 @@
     {
       "id": "LAYOUT_AZURE_MOUNTAIN_UP5",
       "name": "AzureMountain_Up5_Layout",
-      "width": 9,
-      "height": 8,
-      "primary_tileset": "gTileset_General",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AzureMountain_Up5/border.bin",
       "blockdata_filepath": "data/layouts/AzureMountain_Up5/map.bin"
@@ -5640,6 +5640,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AzureMountain_FromChasm/border.bin",
       "blockdata_filepath": "data/layouts/AzureMountain_FromChasm/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_ZACIAN_ZAMA_LAIR",
+      "name": "AzureMountain_ZacianZamaLair_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AzureMountain_ZacianZamaLair/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_ZacianZamaLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_MOUNTAIN_REST_STOP",
+      "name": "AzureMountain_RestStop_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/AzureMountain_RestStop/border.bin",
+      "blockdata_filepath": "data/layouts/AzureMountain_RestStop/map.bin"
     }
   ]
 }

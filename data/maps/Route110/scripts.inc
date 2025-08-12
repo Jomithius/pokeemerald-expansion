@@ -2365,8 +2365,6 @@ Route110_WalkLeft:
 
 Route110_EventScript_SaveBikerMusic::
 # 1261 "data/maps/Route110/scripts.pory"
-	fadenewbgm MUS_RG_SILPH
-# 1262 "data/maps/Route110/scripts.pory"
 	savebgm MUS_RG_SILPH
 	return
 

@@ -45,7 +45,7 @@ RustboroCity_Gym_EventScript_Roxanne::
 # 23 "data/maps/RustboroCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
 # 24 "data/maps/RustboroCity_Gym/scripts.pory"
-	@ goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
+	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
 # 25 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
 # 26 "data/maps/RustboroCity_Gym/scripts.pory"
@@ -91,7 +91,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 # 46 "data/maps/RustboroCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 47 "data/maps/RustboroCity_Gym/scripts.pory"
-	@ setflag FLAG_RECEIVED_TM_ROCK_TOMB
+	setflag FLAG_RECEIVED_TM_ROCK_TOMB
 # 48 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 # 49 "data/maps/RustboroCity_Gym/scripts.pory"
@@ -461,198 +461,200 @@ RustboroCity_Gym_Text_RoxannePostBattle:
 # 231 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "challenge other GYM LEADERS.\p"
 # 232 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "The next GYM is in SLATEPORT, I think.$"
+	.string "The next GYM is in SLATEPORT, I think.\n"
 # 233 "data/maps/RustboroCity_Gym/scripts.pory"
-
+	.string "Or was it DEWFORD? I don't remember.$"
 # 234 "data/maps/RustboroCity_Gym/scripts.pory"
-RustboroCity_Gym_Text_GymStatue:
+
 # 235 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "RUSTBORO CITY POKéMON GYM$"
+RustboroCity_Gym_Text_GymStatue:
 # 236 "data/maps/RustboroCity_Gym/scripts.pory"
-
+	.string "RUSTBORO CITY POKéMON GYM$"
 # 237 "data/maps/RustboroCity_Gym/scripts.pory"
-RustboroCity_Gym_Text_GymStatueCertified:
+
 # 238 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "RUSTBORO CITY POKéMON GYM\p"
+RustboroCity_Gym_Text_GymStatueCertified:
 # 239 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "STEVE'S CERTIFIED TRAINERS:\n"
+	.string "RUSTBORO CITY POKéMON GYM\p"
 # 240 "data/maps/RustboroCity_Gym/scripts.pory"
-    .string "JAMES\p"
+	.string "STEVE'S CERTIFIED TRAINERS:\n"
 # 241 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "{PLAYER}$"
+    .string "JAMES\p"
 # 242 "data/maps/RustboroCity_Gym/scripts.pory"
-
+	.string "{PLAYER}$"
 # 243 "data/maps/RustboroCity_Gym/scripts.pory"
-RustboroCity_Gym_Text_RoxanneRegisterCall:
+
 # 244 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "… … … … … …\n"
+RustboroCity_Gym_Text_RoxanneRegisterCall:
 # 245 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "… … … … … Beep!\p"
-# 246 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "STEVE: Yo, {PLAYER}!\n"
-# 247 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "This is STEVE from RUSTBORO.\p"
-# 248 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "I heard that you're moving\n"
-# 249 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "up through the ranks of\l"
-# 250 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "TRAINERS at an blazing speed.\p"
-# 251 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "Well, I'm glad to hear it!\l"
-# 252 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "Me and MAGMORTAR are excited\n"
-# 253 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "to see how strong you'll get.\p"
-# 254 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "I'm fired up!\p"
-# 255 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "… … … … … …\n"
+# 246 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "… … … … … Beep!\p"
+# 247 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "STEVE: Yo, {PLAYER}!\n"
+# 248 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "This is STEVE from RUSTBORO.\p"
+# 249 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "I heard that you're moving\n"
+# 250 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "up through the ranks of\l"
+# 251 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "TRAINERS at an blazing speed.\p"
+# 252 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Well, I'm glad to hear it!\l"
+# 253 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Me and MAGMORTAR are excited\n"
+# 254 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "to see how strong you'll get.\p"
+# 255 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "I'm fired up!\p"
 # 256 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "… … … … … Click!$"
+	.string "… … … … … …\n"
 # 257 "data/maps/RustboroCity_Gym/scripts.pory"
-
+	.string "… … … … … Click!$"
 # 258 "data/maps/RustboroCity_Gym/scripts.pory"
-RustboroCity_Gym_Text_RegisteredRoxanne:
+
 # 259 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "Registered GYM LEADER STEVE\n"
+RustboroCity_Gym_Text_RegisteredRoxanne:
 # 260 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "in the POKéNAV.$"
+	.string "Registered GYM LEADER STEVE\n"
 # 261 "data/maps/RustboroCity_Gym/scripts.pory"
-
+	.string "in the POKéNAV.$"
 # 262 "data/maps/RustboroCity_Gym/scripts.pory"
-RustboroCity_Gym_Text_RoxannePreRematch:
+
 # 263 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "ROXANNE: I'm so glad to see you again.\n"
+RustboroCity_Gym_Text_RoxannePreRematch:
 # 264 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
-# 265 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "I'm sure we've both experienced many\n"
-# 266 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "battles since we last met.\p"
-# 267 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "I would like to see how much better\n"
-# 268 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "we've become. Let us battle!$"
-# 269 "data/maps/RustboroCity_Gym/scripts.pory"
-
-# 270 "data/maps/RustboroCity_Gym/scripts.pory"
-RustboroCity_Gym_Text_RoxanneRematchDefeat:
-# 271 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "Grr…\n"
-# 272 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "Again, I have lost…$"
-# 273 "data/maps/RustboroCity_Gym/scripts.pory"
-
-# 274 "data/maps/RustboroCity_Gym/scripts.pory"
-RustboroCity_Gym_Text_RoxannePostRematch:
-# 275 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "ROXANNE: I still have much to learn\n"
-# 276 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "when it comes to battling POKéMON.\p"
-# 277 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "That awareness makes me love battling\n"
-# 278 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "all that much more!$"
-# 279 "data/maps/RustboroCity_Gym/scripts.pory"
-
-# 280 "data/maps/RustboroCity_Gym/scripts.pory"
-RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-# 281 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "ROXANNE: I'm so glad to see you again.\n"
-# 282 "data/maps/RustboroCity_Gym/scripts.pory"
+# 265 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "I'm ROXANNE, the GYM LEADER here.\p"
-# 283 "data/maps/RustboroCity_Gym/scripts.pory"
+# 266 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "I'm sure we've both experienced many\n"
-# 284 "data/maps/RustboroCity_Gym/scripts.pory"
+# 267 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "battles since we last met.\p"
-# 285 "data/maps/RustboroCity_Gym/scripts.pory"
+# 268 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "I would like to see how much better\n"
+# 269 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "we've become. Let us battle!$"
+# 270 "data/maps/RustboroCity_Gym/scripts.pory"
+
+# 271 "data/maps/RustboroCity_Gym/scripts.pory"
+RustboroCity_Gym_Text_RoxanneRematchDefeat:
+# 272 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Grr…\n"
+# 273 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Again, I have lost…$"
+# 274 "data/maps/RustboroCity_Gym/scripts.pory"
+
+# 275 "data/maps/RustboroCity_Gym/scripts.pory"
+RustboroCity_Gym_Text_RoxannePostRematch:
+# 276 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "ROXANNE: I still have much to learn\n"
+# 277 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "when it comes to battling POKéMON.\p"
+# 278 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "That awareness makes me love battling\n"
+# 279 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "all that much more!$"
+# 280 "data/maps/RustboroCity_Gym/scripts.pory"
+
+# 281 "data/maps/RustboroCity_Gym/scripts.pory"
+RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
+# 282 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "ROXANNE: I'm so glad to see you again.\n"
+# 283 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "I'm ROXANNE, the GYM LEADER here.\p"
+# 284 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "I'm sure we've both experienced many\n"
+# 285 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "battles since we last met.\p"
 # 286 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "we've become…\p"
+	.string "I would like to see how much better\n"
 # 287 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "Oh, no…\n"
+	.string "we've become…\p"
 # 288 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "You only have one POKéMON with you?\p"
+	.string "Oh, no…\n"
 # 289 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "Please return with at least one more\n"
+	.string "You only have one POKéMON with you?\p"
 # 290 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Please return with at least one more\n"
+# 291 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "POKéMON.$"
 
 RustboroCity_Gym_EventScript_GiveChillingWater::
-# 295 "data/maps/RustboroCity_Gym/scripts.pory"
+# 296 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_EventScript_GiveChillingWater_Text_0, MSGBOX_AUTOCLOSE
-# 297 "data/maps/RustboroCity_Gym/scripts.pory"
-	waitmessage
 # 298 "data/maps/RustboroCity_Gym/scripts.pory"
-	giveitem ITEM_TM_CHILLING_WATER
+	waitmessage
 # 299 "data/maps/RustboroCity_Gym/scripts.pory"
-	waitmessage
+	giveitem ITEM_TM_CHILLING_WATER
 # 300 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_Text_ExplainChillingWater, MSGBOX_AUTOCLOSE
-# 301 "data/maps/RustboroCity_Gym/scripts.pory"
 	waitmessage
+# 301 "data/maps/RustboroCity_Gym/scripts.pory"
+	msgbox RustboroCity_Gym_Text_ExplainChillingWater, MSGBOX_AUTOCLOSE
 # 302 "data/maps/RustboroCity_Gym/scripts.pory"
-	setvar VAR_MISA_STATE, 3
+	waitmessage
 # 303 "data/maps/RustboroCity_Gym/scripts.pory"
-	setflag FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE
+	setvar VAR_MISA_STATE, 3
 # 304 "data/maps/RustboroCity_Gym/scripts.pory"
-	setrespawn HEAL_LOCATION_RUSTBORO_CITY
+	setflag FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE
 # 305 "data/maps/RustboroCity_Gym/scripts.pory"
+	setrespawn HEAL_LOCATION_RUSTBORO_CITY
+# 306 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 	end
 
 
 RustboroCity_Gym_Magmortar::
-# 318 "data/maps/RustboroCity_Gym/scripts.pory"
-	lock
 # 319 "data/maps/RustboroCity_Gym/scripts.pory"
-	playmoncry SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER
+	lock
 # 320 "data/maps/RustboroCity_Gym/scripts.pory"
-	delay 20
+	playmoncry SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER
 # 321 "data/maps/RustboroCity_Gym/scripts.pory"
+	delay 20
+# 322 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 	end
 
 
 RustboroCity_Gym_EventScript_Roxanne_FinalBattle::
-# 326 "data/maps/RustboroCity_Gym/scripts.pory"
+# 327 "data/maps/RustboroCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_ROXANNE_2, RustboroCity_Gym_EventScript_Roxanne_FinalBattle_Text_0, RustboroCity_Gym_EventScript_Roxanne_FinalBattle_Text_1, RustboroCity_Gym_EventScript_RoxanneDefeatedFinal
 	end
 
 
 RustboroCity_Gym_EventScript_RoxanneDefeatedFinal::
-# 331 "data/maps/RustboroCity_Gym/scripts.pory"
-	addvar VAR_GYM_LEADER_COUNT, 1
 # 332 "data/maps/RustboroCity_Gym/scripts.pory"
+	addvar VAR_GYM_LEADER_COUNT, 1
+# 333 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_EventScript_RoxanneDefeatedFinal_Text_0, MSGBOX_NPC
-# 336 "data/maps/RustboroCity_Gym/scripts.pory"
+# 337 "data/maps/RustboroCity_Gym/scripts.pory"
 	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
 	end
 
 
 RustboroCity_Gym_EventScript_RoxanneDefeatedFinal2::
-# 341 "data/maps/RustboroCity_Gym/scripts.pory"
+# 342 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_EventScript_RoxanneDefeatedFinal_Text_0, MSGBOX_NPC
 	end
 
 
 RustboroCity_Gym_EventScript_GiveChillingWater_Text_0:
-# 295 "data/maps/RustboroCity_Gym/scripts.pory"
+# 296 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "And because you were on fire,\n take this to cool off!$"
 
 RustboroCity_Gym_EventScript_Roxanne_FinalBattle_Text_0:
-# 326 "data/maps/RustboroCity_Gym/scripts.pory"
+# 327 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Yo, {PLAYER}!\nI'm all fired up and ready to go!\pLet's get right to it!$"
 
 RustboroCity_Gym_EventScript_Roxanne_FinalBattle_Text_1:
-# 326 "data/maps/RustboroCity_Gym/scripts.pory"
+# 327 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Haha!\nI'm all burnt out!$"
 
 RustboroCity_Gym_EventScript_RoxanneDefeatedFinal_Text_0:
-# 332 "data/maps/RustboroCity_Gym/scripts.pory"
+# 333 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Haha!\n That was a great battle, {PLAYER}!\p You've gotten so strong now.\n You were really on fire!$"
 
 RustboroCity_Gym_Text_ExplainChillingWater::
-# 310 "data/maps/RustboroCity_Gym/scripts.pory"
+# 311 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "That TECHNICAL MACHINE, TM52,\n contains CHILLING WATER.\l It's a good way to put out a POKéMON\l that's on fire!$"

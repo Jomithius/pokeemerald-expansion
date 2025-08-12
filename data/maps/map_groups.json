@@ -725,7 +725,9 @@
     "AzureMountain_FromChasm",
     "BeachsideCave",
     "BeachsideCave_InteriorRoom",
-    "BeachsideCave_Room2"
+    "BeachsideCave_Room2",
+    "AzureMountain_ZacianZamaLair",
+    "AzureMountain_RestStop"
   ],
   "gMapGroup_IndoorTheUnder": [
     "BaseCamp",

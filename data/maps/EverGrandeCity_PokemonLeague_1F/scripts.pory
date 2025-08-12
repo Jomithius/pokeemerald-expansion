@@ -166,9 +166,162 @@ EverGrandeCity_PokemonLeague_1F_Text_TheEliteFourIsntHere:
 `
 
 script EverGrandeCity_PokemonLeague_1F_EventScript_Expert_M{
+	lock
+	faceplayer
+	goto_if_set(FLAG_SYS_TALKED_TO_E4_TUTOR, EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices)
 	msgbox("I still remember my GYM CHALLENGE,\n
-		all those years ago…\p
-		You did well to get this far!", MSGBOX_NPC)
+		all those years ago…\l
+		You did well to get this far.\p
+		If you want, I can teach your\n
+		POKéMON some moves to help you\l
+		with the ELITE FOUR.", MSGBOX_YESNO)
+	waitmessage
+	setflag(FLAG_SYS_TALKED_TO_E4_TUTOR)
+	goto_if_eq(VAR_RESULT, YES, EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	release
+	end
+}
+
+script EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline{
+	lock
+	msgbox("Okay.\n
+		Good luck on your journey.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
+	lock
+	message("What move do you want me\nto teach?")
+	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "PSYCHIC NOISE", "EXPANDING FORCE", "BREAKING SWIPE", "SLUDGE WAVE", 
+		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			goto(MoveTutor_EventScript_PsychicNoiseTeach)
+		case 1:
+			goto(MoveTutor_EventScript_ExpandingForceTeach)
+		case 2:
+			goto(MoveTutor_EventScript_BreakingSwipeTeach)
+		case 3:
+			goto(MoveTutor_EventScript_SludgeWaveTeach)
+		case 4:
+			goto(MoveTutor_EventScript_ScorchingSandsTeach)
+		case 5:
+			goto(MoveTutor_EventScript_PollenPuffTeach)
+		case 6:
+			goto(MoveTutor_EventScript_EnergyBallTeach)
+		case 7:
+			goto(MoveTutor_EventScript_GunkShotTeach)
+		case 8:
+			goto(MoveTutor_EventScript_MeteorBeamTeach)
+		case 9:
+			goto(MoveTutor_EventScript_DragonPulseTeach)
+		case 10:
+			goto(MoveTutor_EventScript_TeleportTeach)
+		default:
+			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	}
+	end
+}
+
+script MoveTutor_EventScript_PsychicNoiseTeach{
+	msgbox("Which POKéMON do you want to\nteach PSYCHIC NOISE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_PSYCHIC_NOISE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_ExpandingForceTeach{
+	msgbox("Which POKéMON do you want to\nteach EXPANDING FORCE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_EXPANDING_FORCE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_BreakingSwipeTeach{
+	msgbox("Which POKéMON do you want to\nteach BREAKING SWIPE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_BREAKING_SWIPE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_SludgeWaveTeach{
+	msgbox("Which POKéMON do you want to\nteach SLUDGE WAVE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_SLUDGE_WAVE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_ScorchingSandsTeach{
+	msgbox("Which POKéMON do you want to\nteach SCORCHING SANDS to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_SCORCHING_SANDS)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_PollenPuffTeach{
+	msgbox("Which POKéMON do you want to\nteach POLLEN PUFF to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_POLLEN_PUFF)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_EnergyBallTeach{
+	msgbox("Which POKéMON do you want to\nteach ENERGY BALL to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_ENERGY_BALL)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_GunkShotTeach{
+	msgbox("Which POKéMON do you want to\nteach GUNK SHOT to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_GUNK_SHOT)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_MeteorBeamTeach{
+	msgbox("Which POKéMON do you want to\nteach METEOR BEAM to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_METEOR_BEAM)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_DragonPulseTeach{
+	msgbox("Which POKéMON do you want to\nteach DRAGON PULSE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_DRAGON_PULSE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_TeleportTeach{
+	msgbox("Which POKéMON do you want to\nteach TELEPORT to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_TELEPORT)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 	end
 }
 

@@ -1566,3 +1566,7 @@ gText_TheEliteFourAreReady::
 	.include "data/maps/AzureMountain_KyuremLair/scripts.inc"
 
 	.include "data/maps/AzureMountain_FromChasm/scripts.inc"
+
+	.include "data/maps/AzureMountain_ZacianZamaLair/scripts.inc"
+
+	.include "data/maps/AzureMountain_RestStop/scripts.inc"

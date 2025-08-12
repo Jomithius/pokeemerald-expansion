@@ -98,7 +98,7 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x54          0x54  // Unused
+#define FLAG_HIDE_RIVAL_AZURE_MOUNTAIN       0x54  // Brendan/May
 #define FLAG_RECEIVED_REVEAL_GLASS           0x55  // Baldesia Forest
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
@@ -184,14 +184,14 @@
 #define FLAG_CUTE_PAINTING_MADE              0xA2
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
-#define FLAG_UNUSED_0xA5            0xA5 // Unused
-#define FLAG_UNUSED_0xA6             0xA6 // Unused
-#define FLAG_UNUSED_0xA7          0xA7 // Unused
-#define FLAG_UNUSED_0xA8             0xA8 // Unused
-#define FLAG_UNUSED_0xA9              0xA9 // Unused
-#define FLAG_UNUSED_0xAA           0xAA // Unused
-#define FLAG_UNUSED_0xAB            0xAB // Unused
-#define FLAG_UNUSED_0xAC         0xAC // Unused
+#define FLAG_AZURE_MOUNTAIN_ICICLE_CRASH     0xA5 // Azure Mountain Up5
+#define FLAG_AZURE_MOUNTAIN_SCALE_SHOT       0xA6 // Azure Mountain Up5
+#define FLAG_BEACHSIDE_CAVE_FLIP_TURN        0xA7 // Beachside Cave
+#define FLAG_FOUND_TM_POLTERGEIST            0xA8 // Newmoon Island or Eastern Ruins
+#define FLAG_MT_PYRE_1F_WILL_O_WISP          0xA9 // Mt Pyre
+#define FLAG_VICTORY_ROAD_1F_DRAGON_DANCE    0xAA // Victory Road
+#define FLAG_SHOAL_CAVE_SMART_STRIKE         0xAB // Shoal Cave Low Tide Lower Room
+#define FLAG_HIDE_WISHIWASHI_ROUTE_106       0xAC // Route 106
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
 #define FLAG_DECORATION_1                    0xAE
 #define FLAG_DECORATION_2                    0xAF
@@ -1071,7 +1071,7 @@
 #define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
 #define FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY                           0x3FC // Final Rematches
 #define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD // changed
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
+#define FLAG_ITEM_ROUTE_117_ICY_WIND                              0x3FE
 #define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
 #define FLAG_HIDE_DRIVES_CLERK                                      0x400 // Evergrande City
 #define FLAG_ITEM_ROUTE_119_ZINC                                    0x401 // changed
@@ -1094,7 +1094,7 @@
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
 #define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_STEALTH_ROCK                   0x415
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
@@ -1122,7 +1122,7 @@
 #define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0x42E // knock off
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
 #define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0x431
+#define FLAG_ITEM_MT_PYRE_EXTERIOR_FOUL_PLAY                       0x431
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP                    0x432
 #define FLAG_ITEM_NEW_MAUVILLE_ULTRA_BALL                           0x433
 #define FLAG_ITEM_NEW_MAUVILLE_ESCAPE_ROPE                          0x434
@@ -1135,8 +1135,8 @@
 #define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_TM_ICE_BEAM                0x43B
 #define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
 #define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
-#define FLAG_ITEM_VICTORY_ROAD_B1F_TM_PSYCHIC                       0x43E
-#define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
+#define FLAG_ITEM_VICTORY_ROAD_B1F_EARTH_POWER                      0x43E
+#define FLAG_ITEM_VICTORY_ROAD_B1F_PLAY_ROUGH                       0x43F
 #define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
 #define FLAG_ITEM_MT_PYRE_6F_TM_SHADOW_BALL                         0x441
 #define FLAG_ITEM_SEAFLOOR_CAVERN_ROOM_9_TM_EARTHQUAKE              0x442
@@ -1178,7 +1178,7 @@
 #define FLAG_ITEM_AZURE_CHASM_ICE_SPINNER                           0x466 // Azure Chasm
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_RECEIVED_MALICIOUS_ARMOR                               0x468 // Eastern Ruins
-#define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
+#define FLAG_ITEM_MT_PYRE_2F_HEX                             0x469
 #define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET                           0x46C
@@ -1546,8 +1546,8 @@
 #define FLAG_RECEIVED_TM_CALM_MIND                  (SYSTEM_FLAGS + 0xAA) // Mossdeep Gym
 #define FLAG_RECEIVED_TM_WATER_PULSE                (SYSTEM_FLAGS + 0xAB) // Rustboro City
 #define FLAG_RECEIVED_TM_FREEZE_DRY                 (SYSTEM_FLAGS + 0xAC) // Sootopolis City
-#define FLAG_UNUSED_0x90D                           (SYSTEM_FLAGS + 0xAD) // Unused Flag
-#define FLAG_UNUSED_0x90E                           (SYSTEM_FLAGS + 0xAE) // Unused Flag
+#define FLAG_SYS_SLEEP_CLAUSE                       (SYSTEM_FLAGS + 0xAD) // Set if Hard Mode
+#define FLAG_SYS_TALKED_TO_E4_TUTOR                 (SYSTEM_FLAGS + 0xAE) // Unused Flag
 #define FLAG_UNUSED_0x90F                           (SYSTEM_FLAGS + 0xAF) // Unused Flag
 #define FLAG_UNUSED_0x910                           (SYSTEM_FLAGS + 0xB0) // Unused Flag
 #define FLAG_UNUSED_0x911                           (SYSTEM_FLAGS + 0xB1) // Unused Flag

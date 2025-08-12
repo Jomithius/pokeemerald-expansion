@@ -2053,6 +2053,90 @@ LilycoveCity_EventScript_MysteryGiftMan::
 	end
 
 
+LilycoveCity_EventScript_BellyDrumTutor::
+# 1109 "data/maps/LilycoveCity/scripts.pory"
+	lock
+# 1110 "data/maps/LilycoveCity/scripts.pory"
+	faceplayer
+# 1111 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_BellyDrumTutor_Text_0, MSGBOX_YESNO
+# 1115 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1116 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_BellyDrumTeach
+# 1117 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_TutorDecline
+# 1118 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
+MoveTutor_EventScript_BellyDrumTeach::
+# 1123 "data/maps/LilycoveCity/scripts.pory"
+	msgbox MoveTutor_EventScript_BellyDrumTeach_Text_0, MSGBOX_DEFAULT
+# 1124 "data/maps/LilycoveCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_BELLY_DRUM
+# 1125 "data/maps/LilycoveCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1126 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, LilycoveCity_EventScript_TutorDecline
+# 1127 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_BellyDrumTaught
+	end
+
+
+LilycoveCity_EventScript_TutorDecline::
+# 1132 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_TutorDecline_Text_0, MSGBOX_AUTOCLOSE
+# 1133 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1134 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
+LilycoveCity_EventScript_BellyDrumTaught::
+# 1139 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_BellyDrumTaught_Text_0
+# 1141 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1142 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
+LilycoveCity_EventScript_IronDefenseTutor::
+# 1147 "data/maps/LilycoveCity/scripts.pory"
+	lock
+# 1148 "data/maps/LilycoveCity/scripts.pory"
+	faceplayer
+# 1149 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_IronDefenseTutor_Text_0, MSGBOX_YESNO
+# 1153 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1154 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_IronDefenseTeach
+# 1155 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_TutorDecline
+# 1156 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
+MoveTutor_EventScript_IronDefenseTeach::
+# 1161 "data/maps/LilycoveCity/scripts.pory"
+	msgbox MoveTutor_EventScript_IronDefenseTeach_Text_0, MSGBOX_DEFAULT
+# 1162 "data/maps/LilycoveCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_IRON_DEFENSE
+# 1163 "data/maps/LilycoveCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1164 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, LilycoveCity_EventScript_TutorDecline
+# 1165 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_BellyDrumTaught
+	end
+
+
 LilycoveCity_EventScript_EmoBully_Text_0:
 # 801 "data/maps/LilycoveCity/scripts.pory"
 	.string "L-Let's get out of here!$"
@@ -2068,6 +2152,30 @@ LilycoveCity_EventScript_EmoBully_Text_2:
 LilycoveCity_EventScript_StaffEmployee_Text_0:
 # 1055 "data/maps/LilycoveCity/scripts.pory"
 	.string "…$"
+
+LilycoveCity_EventScript_BellyDrumTutor_Text_0:
+# 1111 "data/maps/LilycoveCity/scripts.pory"
+	.string "Offense is the best defense!\n Don't you agree?!\p If you want, I'll teach your\n POKéMON a great offensive move!$"
+
+MoveTutor_EventScript_BellyDrumTeach_Text_0:
+# 1123 "data/maps/LilycoveCity/scripts.pory"
+	.string "Which POKéMON do you want me to\nteach BELLY DRUM?$"
+
+LilycoveCity_EventScript_TutorDecline_Text_0:
+# 1132 "data/maps/LilycoveCity/scripts.pory"
+	.string "Oh, okay.$"
+
+LilycoveCity_EventScript_BellyDrumTaught_Text_0:
+# 1139 "data/maps/LilycoveCity/scripts.pory"
+	.string "Come back if you need to train\n more POKéMON!$"
+
+LilycoveCity_EventScript_IronDefenseTutor_Text_0:
+# 1149 "data/maps/LilycoveCity/scripts.pory"
+	.string "Defense is the best offense!\n Don't you agree?!\p If you want, I'll teach your\n POKéMON a great defensive move!$"
+
+MoveTutor_EventScript_IronDefenseTeach_Text_0:
+# 1161 "data/maps/LilycoveCity/scripts.pory"
+	.string "Which POKéMON do you want me to\nteach IRON DEFENSE?$"
 
 LilycoveCity_Text_BullyMan1::
 # 866 "data/maps/LilycoveCity/scripts.pory"

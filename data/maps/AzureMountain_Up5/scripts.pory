@@ -1,1 +1,61 @@
-mapscripts AzureMountain_Up5_MapScripts {}
+mapscripts AzureMountain_Up5_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: AzureMountain_Up5_OnTransition
+}
+
+script AzureMountain_Up5_OnTransition{
+    call(Common_EventScript_SetupRivalGfxId)
+    end
+}
+
+script AzureMountain_Up5_EventScript_Expert_M{
+	lock
+	faceplayer
+	msgbox("The best way to outplay your\n
+        opponent is to predict them!\p
+        Don't you agree?", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MoveTutor_EventScript_FutureSightTeach)
+	goto(AzureMountain_Up5_EventScript_TutorDecline)
+	release
+	end
+}
+
+script MoveTutor_EventScript_FutureSightTeach{
+	msgbox("I knew you would say that.\p
+        Which POKéMON do you want to\nteach FUTURE SIGHT to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_FUTURE_SIGHT)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script AzureMountain_Up5_EventScript_OldManDojo{
+	lock
+	faceplayer
+	msgbox("The best way to outplay your\n
+        opponent is to get the upper hand!\p
+        Don't you agree?", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MoveTutor_EventScript_UpperHandTeach)
+	goto(AzureMountain_Up5_EventScript_TutorDecline)
+	release
+	end
+}
+
+script MoveTutor_EventScript_UpperHandTeach{
+	msgbox("I knew you would say that.\p
+        Which POKéMON do you want to\nteach UPPER HAND to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_UPPER_HAND)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script AzureMountain_Up5_EventScript_TutorDecline{
+    msgbox("I see.\n
+        You still have much to learn.", MSGBOX_AUTOCLOSE)
+    release
+    end
+}

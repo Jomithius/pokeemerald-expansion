@@ -23,6 +23,7 @@ DewfordTown_EventScript_Briney::
 	lock
 	faceplayer
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
+	goto_if_not_defeated TRAINER_BENNIS_1, DewfordTown_EventScript_ReturnToPetalburgPrompt2
 	message DewfordTown_Text_WhereAreWeBound
 	waitmessage
 	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE
@@ -822,6 +823,16 @@ script DewfordTown_EventScript_Man{
 	end
 }
 
+script DewfordTown_EventScript_ReturnToPetalburgPrompt2{
+	msgbox(DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO)
+	goto_if_eq(VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg)
+	msgbox("Did you challenge the GYM here yet?\p
+		Go ahead and challenge them!\n
+		I'll be here waiting.", MSGBOX_DEFAULT)
+	release
+	end
+}
+
 text DewfordTown_Text_BennisDojoHint{
 	"The POKéMON GYM was relocated to\n
 	SLATEPORT CITY around a year ago.\p
@@ -846,4 +857,5 @@ text DewfordTown_Text_GYM_Relocated{
 	"The POKéMON GYM was relocated to\n
 	SLATEPORT CITY around a year ago.\p
 	That was the only interesting thing our\n
-	small town had…"}
+	small town had…"
+}

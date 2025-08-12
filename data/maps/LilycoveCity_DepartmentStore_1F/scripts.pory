@@ -193,6 +193,9 @@ script LilycoveCity_DepartmentStore_1F_EventScript_LiquidationTutor{
         Just liquidate their assets and\n
         cancel the contract! Goodbye!", MSGBOX_AUTOCLOSE)
     waitmessage
+	playse(SE_POKENAV_HANG_UP)
+	waitse
+	delay(16)
     playse(SE_PIN)
     applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
     waitmovement(0)

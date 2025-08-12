@@ -1104,3 +1104,64 @@ script LilycoveCity_EventScript_MysteryGiftMan{
 	goto(CableClub_EventScript_MysteryGiftThankYou2)
 	end
 }
+
+script LilycoveCity_EventScript_BellyDrumTutor{
+	lock
+	faceplayer
+	msgbox("Offense is the best defense!\n
+		Don't you agree?!\p
+		If you want, I'll teach your\n
+		POKéMON a great offensive move!", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MoveTutor_EventScript_BellyDrumTeach)
+	goto(LilycoveCity_EventScript_TutorDecline)
+	release
+	end
+}
+
+script MoveTutor_EventScript_BellyDrumTeach{
+	msgbox("Which POKéMON do you want me to\nteach BELLY DRUM?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_BELLY_DRUM)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, LilycoveCity_EventScript_TutorDecline)
+	goto(LilycoveCity_EventScript_BellyDrumTaught)
+	end
+}
+
+script LilycoveCity_EventScript_TutorDecline{
+    msgbox("Oh, okay.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script LilycoveCity_EventScript_BellyDrumTaught{
+    msgbox("Come back if you need to train\n
+		more POKéMON!" MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+    end
+}
+
+script LilycoveCity_EventScript_IronDefenseTutor{
+	lock
+	faceplayer
+	msgbox("Defense is the best offense!\n
+		Don't you agree?!\p
+		If you want, I'll teach your\n
+		POKéMON a great defensive move!", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MoveTutor_EventScript_IronDefenseTeach)
+	goto(LilycoveCity_EventScript_TutorDecline)
+	release
+	end
+}
+
+script MoveTutor_EventScript_IronDefenseTeach{
+	msgbox("Which POKéMON do you want me to\nteach IRON DEFENSE?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_IRON_DEFENSE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, LilycoveCity_EventScript_TutorDecline)
+	goto(LilycoveCity_EventScript_BellyDrumTaught)
+	end
+}

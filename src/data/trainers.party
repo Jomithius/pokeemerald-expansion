@@ -16765,7 +16765,7 @@ Dragonite @ Dragoniteite
 Level: 5
 
 === TRAINER_SHADOW_CLONE_MOMO ===
-Name: MOMO
+Name: MOMOMO
 Class: Shadow Clone
 Pic: Momo
 Gender: Female
@@ -17919,8 +17919,8 @@ Sassy Nature
 - High Jump Kick  
 - Triple Axel  
 
-=== TRAINER_WILEY ===
-Name: WILEY
+=== TRAINER_DRAY ===
+Name: DRAY
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -17971,14 +17971,14 @@ IVs: 0 Atk
 - Flamethrower
 - Hurricane
 
-=== TRAINER_FERNANDO_4 === /* FREE */
-Name: FERNANDO
-Class: Guitarist
-Pic: Guitarist
+=== TRAINER_BRENDAN_AZURE_MOUNTAIN ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
 Gender: Male
-Music: Intense
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
 Manectric
 Level: 39
@@ -17992,14 +17992,14 @@ Loudred
 Level: 39
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_FERNANDO_5 === /* FREE */
-Name: FERNANDO
-Class: Guitarist
-Pic: Guitarist
-Gender: Male
-Music: Intense
+=== TRAINER_MAY_AZURE_MOUNTAIN ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
 Manectric
 Level: 41
