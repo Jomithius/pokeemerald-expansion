@@ -191,8 +191,10 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	warp MAP_ULTRA_SPACE, 27, 40
-	waitstate
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL 
+	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1
+	setvar VAR_SPEEDWAGON_STATE, 1
+	setvar VAR_BIRCH_LAB_STATE, 5
 	release
 	end
 

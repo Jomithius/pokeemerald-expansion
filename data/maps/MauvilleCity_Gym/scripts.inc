@@ -829,40 +829,42 @@ MauvilleCity_Gym_EventScript_GiveVoltSwitch::
 # 418 "data/maps/MauvilleCity_Gym/scripts.pory"
 	setvar VAR_SPEEDWAGON_STATE, 1
 # 419 "data/maps/MauvilleCity_Gym/scripts.pory"
+	setrespawn HEAL_LOCATION_MAUVILLE_CITY
+# 420 "data/maps/MauvilleCity_Gym/scripts.pory"
 	setvar VAR_MISA_STATE, 5
 	return
 
 
 MauvilleCity_Gym_EventScript_Jolteon::
-# 430 "data/maps/MauvilleCity_Gym/scripts.pory"
-	lock
 # 431 "data/maps/MauvilleCity_Gym/scripts.pory"
-	playmoncry SPECIES_JOLTEON, CRY_MODE_ENCOUNTER
+	lock
 # 432 "data/maps/MauvilleCity_Gym/scripts.pory"
-	delay 20
+	playmoncry SPECIES_JOLTEON, CRY_MODE_ENCOUNTER
 # 433 "data/maps/MauvilleCity_Gym/scripts.pory"
+	delay 20
+# 434 "data/maps/MauvilleCity_Gym/scripts.pory"
 	release
 	end
 
 
 MauvilleCity_Gym_EventScript_Wattson_FinalBattle::
-# 438 "data/maps/MauvilleCity_Gym/scripts.pory"
+# 439 "data/maps/MauvilleCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_WATTSON_2, MauvilleCity_Gym_EventScript_Wattson_FinalBattle_Text_0, MauvilleCity_Gym_Text_DacaDefeat, MauvilleCity_Gym_EventScript_WattsonDefeatedFinal
 	end
 
 
 MauvilleCity_Gym_EventScript_WattsonDefeatedFinal::
-# 443 "data/maps/MauvilleCity_Gym/scripts.pory"
-	addvar VAR_GYM_LEADER_COUNT, 1
 # 444 "data/maps/MauvilleCity_Gym/scripts.pory"
+	addvar VAR_GYM_LEADER_COUNT, 1
+# 445 "data/maps/MauvilleCity_Gym/scripts.pory"
 	msgbox MauvilleCity_Gym_EventScript_WattsonDefeatedFinal_Text_0, MSGBOX_NPC
-# 451 "data/maps/MauvilleCity_Gym/scripts.pory"
+# 452 "data/maps/MauvilleCity_Gym/scripts.pory"
 	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
 	end
 
 
 MauvilleCity_Gym_EventScript_WattsonDefeatedFinal2::
-# 456 "data/maps/MauvilleCity_Gym/scripts.pory"
+# 457 "data/maps/MauvilleCity_Gym/scripts.pory"
 	msgbox MauvilleCity_Gym_EventScript_WattsonDefeatedFinal_Text_0, MSGBOX_NPC
 	end
 
@@ -872,17 +874,17 @@ MauvilleCity_Gym_EventScript_GiveVoltSwitch_Text_0:
 	.string "One more thing! Here!$"
 
 MauvilleCity_Gym_EventScript_Wattson_FinalBattle_Text_0:
-# 438 "data/maps/MauvilleCity_Gym/scripts.pory"
+# 439 "data/maps/MauvilleCity_Gym/scripts.pory"
 	.string "{PLAYER}!\nHere at last!\pIt's time to party!$"
 
 MauvilleCity_Gym_EventScript_WattsonDefeatedFinal_Text_0:
-# 444 "data/maps/MauvilleCity_Gym/scripts.pory"
+# 445 "data/maps/MauvilleCity_Gym/scripts.pory"
 	.string "Hahaha!\n That was fun!\p But let's be honest.\n The only reason I lost was to fit a\l narrative.\p You're lucky you're destined to\n never lose.$"
 
 MauvilleCity_Gym_Text_ExplainVoltSwitch::
-# 423 "data/maps/MauvilleCity_Gym/scripts.pory"
+# 424 "data/maps/MauvilleCity_Gym/scripts.pory"
 	.string "That TM56, VOLT SWITCH, is perfect for\n getting out of shocking situations!\l Hahaha!$"
 
 MauvilleCity_Gym_Text_DacaDefeat::
-# 466 "data/maps/MauvilleCity_Gym/scripts.pory"
+# 467 "data/maps/MauvilleCity_Gym/scripts.pory"
 	.string "Hahaha!\n Now THAT was a PARTY!$"

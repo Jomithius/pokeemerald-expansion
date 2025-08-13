@@ -58,6 +58,7 @@ script MtPyre_Exterior_EventScript_Emo{
     delay(15)
     removeobject(3)
     waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     setvar(VAR_MISA_STATE, 7)
     setflag(FLAG_HIDE_EMO_MT_PYRE)
@@ -98,6 +99,7 @@ script MtPyre_Exterior_EventScript_Emo2{
     delay(15)
     removeobject(3)
     waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     setvar(VAR_MISA_STATE, 7)
     setflag(FLAG_HIDE_EMO_MT_PYRE)

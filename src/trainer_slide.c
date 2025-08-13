@@ -269,11 +269,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GARDEVOIR!\nGo!{PAUSE_UNTIL_PRESS}"),
         },
-        [TRAINER_BRENDAN_PLACEHOLDER] = // birchslab
+        [TRAINER_BRENDAN_AZURE_MOUNTAIN] = // Up5
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Let's go, SCEPTILE!{PAUSE_UNTIL_PRESS}"),
         },
-        [TRAINER_MAY_PLACEHOLDER] = // birchs lab
+        [TRAINER_MAY_AZURE_MOUNTAIN] = // Up5
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay then!\n Let's go, BLAZIKEN!{PAUSE_UNTIL_PRESS}"),
         },

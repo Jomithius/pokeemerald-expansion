@@ -98,7 +98,7 @@ DewfordTown_EventScript_GiveOldRod::
 	giveitem ITEM_OLD_ROD
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_OLD_ROD
-	setvar VAR_ROUTE106_STATE, 1
+	clearflag FLAG_HIDE_WISHIWASHI_ROUTE_106
 	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -720,8 +720,8 @@ DewfordTown_Text_ThrowInFishingAdvice:
 	.string "And, as an added bonus, I'll even throw\n"
 	.string "in a little fishing advice!\p"
 	.string "On ROUTE 106, northeast of GRANITE\n"
-	.string "CAVE, right by the rock on the\l"
-	.string "beach, you might find a rare catch!$"
+	.string "CAVE, right by the rock on the beach,\l"
+	.string "you might find a rare catch!$"
 
 DewfordTown_Text_ThatsTooBadThen:
 	.string "Oh, is that so?\n"

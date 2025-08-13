@@ -79,41 +79,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(WISHIWASHI)",
-      "x": 52,
-      "y": 10,
+      "x": 43,
+      "y": 11,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_WISHIWASHI_ROUTE_106"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WISHIWASHI)",
-      "x": 53,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_WISHIWASHI_ROUTE_106"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WISHIWASHI)",
-      "x": 54,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route106_EventScript_Wishiwashi",
       "flag": "FLAG_HIDE_WISHIWASHI_ROUTE_106"
     }
   ],
@@ -127,15 +101,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 53,
-      "y": 11,
-      "elevation": 0,
-      "var": "VAR_ROUTE106_STATE",
-      "var_value": "1",
-      "script": "NULL"
-    }
+
   ],
   "bg_events": [
     {

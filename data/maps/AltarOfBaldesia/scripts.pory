@@ -626,6 +626,7 @@ script AltarOfBaldesia_EventScript_JirachiBattle{
         waitmessage
         addvar(VAR_JIRACHI_COUNTER, 1) // sets var to 10, locking player from trying again
     }
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     release
     end

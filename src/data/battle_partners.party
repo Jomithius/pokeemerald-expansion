@@ -18,9 +18,9 @@ Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 252 Def / 6 SpA
 - Light Screen
-- Psychic
+- Zen Headbutt
 - Reflect
-- Metal Claw
+- Iron Head
 
 Skarmory
 Impish Nature
@@ -36,11 +36,11 @@ Aggron
 Adamant Nature
 Level: 44
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 SpA / 6 SpD
-- Thunder
+EVs: 252 Atk / 252 SpD / 6 Def
+- Iron Head
 - Protect
-- Solar Beam
-- Dragon Claw
+- Rock Slide
+- Bulldoze
 
 === PARTNER_MOMO ===
 Name: MOMO
@@ -49,32 +49,35 @@ Pic: Momo
 Gender: Female
 Music: Female
 
-Poliwrath (M) @ Sitrus Berry  
-Ability: Swift Swim  
-Level: 100  
-EVs: 252 Atk / 4 SpD / 252 Spe  
-Adamant Nature  
-- Substitute  
-- Drain Punch  
-- Jet Punch  
-- Rock Slide  
+Greninja-Bond (M) @ Assault Vest  
+Ability: Battle Bond   
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+Level: 100
+- Water Shuriken  
+- Blizzard  
+- Dark Pulse  
+- Sludge Wave
 
 Skeledirge @ Throat Spray 
-Ability: Unaware  
-Shiny: Yes  
-Tera Type: Fairy  
+Ability: Unaware
+Tera Type: Fairy
+Level: 100   
+Shiny: Yes    
 EVs: 248 HP / 8 SpA / 252 SpD  
 Calm Nature  
 IVs: 0 Atk  
 - Torch Song  
 - Hex  
-- Slack Off  
+- Ominous Wind  
 - Will-O-Wisp 
 
 Krookodile (M) @ Leftovers  
-Ability: Moxie  
+Ability: Intimidate
+Tera Type: Ground 
+Level: 100  
 Shiny: Yes    
-- Thunder Fang  
-- Stone Edge  
+- Breaking Swipe  
+- Rock Slide  
 - Darkest Lariat  
 - Earthquake  

@@ -49,6 +49,14 @@ Route110_SeasideCyclingRoadNorthEntrance_Movement_PushPlayerBackFromCounter:
 	walk_left
 	step_end
 
+Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad::
+	lockall
+	setvar VAR_CYCLING_CHALLENGE_STATE, 0
+	clearflag FLAG_SYS_CYCLING_ROAD
+	setvar VAR_TEMP_1, 0
+	releaseall
+	end
+
 Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad:
 	.string "On CYCLING ROAD, you can go all out\n"
 	.string "and cycle as fast as you'd like.\p"
@@ -61,36 +69,33 @@ Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk:
 	.string "Please come back with a BIKE.$"
 `
 
-script Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad{
+script Route110_SeasideCyclingRoadNorthEntrance_EventScript_AreYouCrazy{
 	lockall
-    if(var(VAR_SPEEDWAGON_STATE) == 4){
-        applymovement(1, Common_Movement_FacePlayer)
-        waitmovement(1)
-        msgbox(Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy, MSGBOX_AUTOCLOSE)
-        waitmessage
-        playse(SE_PIN)
-        applymovement(1, Common_Movement_ExclamationMark)
-        waitmovement(1)
-		delay(20)
-        msgbox(Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge)
-        waitmessage
-        applymovement(1, Common_Movement_FaceOriginalDirection)
-        waitmovement(1)
-        setvar(VAR_SPEEDWAGON_STATE, 5)
-    }
-    elif(var(VAR_SPEEDWAGON_STATE) == 5){
-        applymovement(1, Common_Movement_FacePlayer)
-        waitmovement(1)
-        msgbox("Please, help us!", MSGBOX_AUTOCLOSE)
-        waitmessage
-        applymovement(1, Common_Movement_FaceOriginalDirection)
-        waitmovement(1)
-    }
-    else{
-	    setvar(VAR_CYCLING_CHALLENGE_STATE, 0)
-	    clearflag(FLAG_SYS_CYCLING_ROAD)
-	    setvar(VAR_TEMP_1, 0)
-    }
+	applymovement(1, Common_Movement_FacePlayer)
+    waitmovement(1)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+    msgbox(Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy, MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+	delay(20)
+    msgbox(Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge)
+    waitmessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(1)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+    setvar(VAR_SPEEDWAGON_STATE, 5)
+	setvar(VAR_CYCLING_CHALLENGE_STATE, 0) // to stop cycling challenge from triggering
+	releaseall
+	end
+}
+
+script Route110_SeasideCyclingRoadNorthEntrance_EventScript_PleaseHelpUs{
+	lockall
+	setvar(VAR_CYCLING_CHALLENGE_STATE, 0) // to stop cycling challenge from triggering
 	releaseall
 	end
 }
@@ -104,7 +109,7 @@ text Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy{
 text Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge{
     "That BADGE…! You must be a strong\n
     TRAINER.\p
-    Okay, I won't stop you.\n
+    Okay. I won't stop you.\n
 	Please, help us!"
 }
 

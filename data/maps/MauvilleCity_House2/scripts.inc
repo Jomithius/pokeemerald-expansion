@@ -1,5 +1,10 @@
 MauvilleCity_House2_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_House2_OnTransition
 	.byte 0
+
+MauvilleCity_House2_OnTransition:
+	call_if_set FLAG_SYS_BIKERS_ROUTE_110, MauvilleCity_EventScript_SaveBikerMusic
+	end
 
 MauvilleCity_House2_EventScript_Woman::
 	lock

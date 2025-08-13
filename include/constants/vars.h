@@ -118,7 +118,7 @@
 #define VAR_ROUTE103_STATE                               0x4062 // Unused Var
 #define VAR_ROUTE104_STATE                               0x4063
 #define VAR_ROUTE105_STATE                               0x4064 // Unused Var
-#define VAR_ROUTE106_STATE                               0x4065 // Used for wishiwashi trigger
+#define VAR_ROUTE106_STATE                               0x4065 // Unused Var
 #define VAR_ROUTE107_STATE                               0x4066 // Unused Var
 #define VAR_ROUTE108_STATE                               0x4067 // Unused Var
 #define VAR_ROUTE109_STATE                               0x4068 // Unused Var
@@ -143,7 +143,7 @@
 #define VAR_ROUTE128_STATE                               0x407B
 #define VAR_ROUTE129_STATE                               0x407C // Unused Var
 #define VAR_ROUTE130_STATE                               0x407D // Unused Var
-#define VAR_ROUTE131_STATE                               0x407E // Unused Var
+#define VAR_AZURE_MOUNTAIN_RIVAL_STATE                   0x407E // For Brendan/May battle Azure Mountain
 #define VAR_GYM_LEADER_COUNT                             0x407F // For final rematches
 #define VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER        0x4080 // For unlocking rematches post game
 #define VAR_FINAL_REMATCH_STATE                          0x4081 // For unlocking rematches post game

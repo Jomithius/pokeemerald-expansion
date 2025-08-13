@@ -657,9 +657,9 @@
 
 // Static Encounters Legendaries, Mythicals, Paradox and Ultra Beasts
 #define FLAG_RECEIVED_TM_DEFOG           0x264 // Rusturf Tunnel 3F
-#define FLAG_RECEIVED_TM_DAZZLING_GLEAM  0x265 // Unused
+#define FLAG_HIDE_MAROWAK_JAGGED_PASS    0x265 // Jagged Pass
 #define FLAG_RECEIVED_TM_CLOSE_COMBAT    0x266 // Sootopolis City House 1
-#define FLAG_RECEIVED_TM_VOLT_SWITCH     0x267 // Unused
+#define FLAG_HIDE_LURANTIS_ROUTE_119     0x267 // Route 119
 #define FLAG_FOUND_TM_ROCK_SLIDE         0x268 // Fallarbor Rat Cave
 #define FLAG_HIDE_ENTEI                  0x269 // Scorched Slab
 #define FLAG_HIDE_RAIKOU                 0x26A // New Mauville

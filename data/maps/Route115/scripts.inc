@@ -1229,7 +1229,7 @@ Route115Emo1::
 
 Route115Emo2::
 # 539 "data/maps/Route115/scripts.pory"
-	.string "Sorry. It's hard to control this power.\n Any closer and you could've been\l pulled into the void…\p Anyways, who are you?\n …\p {PLAYER}, huh?\n And my mother sent you?\l I see…\l  So that means you're also a trainer…$"
+	.string "Sorry. It's hard to control this power.\n Any closer and you could've been\l pulled into the void…\p Anyways, who are you?\n …\p {PLAYER}, huh?\n And my mother sent you?\l I see…\l  So that means you're also a TRAINER…$"
 
 Route115Emo3::
 # 549 "data/maps/Route115/scripts.pory"

@@ -15604,57 +15604,57 @@
                 "species": "SPECIES_KOFFING"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_KOFFING"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_GRIMER"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_GRIMER_ALOLA"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_GARBODOR"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_GARBODOR"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_TRUBBISH"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_TRUBBISH"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_MUK"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_MUK"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_MUK_ALOLA"
               },
               {
-                "min_level": 5,
+                "min_level": 65,
                 "max_level": 70,
                 "species": "SPECIES_MUK_ALOLA"
               }
@@ -15664,28 +15664,28 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_GRIMER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_GRIMER_ALOLA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GRIMER_ALOLA"
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_MUK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_MUK_ALOLA"
               }
             ]
@@ -15694,53 +15694,53 @@
             "encounter_rate": 30,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_GRIMER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GRIMER"
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_GRIMER_ALOLA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_GRIMER_ALOLA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GRIMER_ALOLA"
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_TENTACRUEL"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_MUK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_MUK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_MUK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_MUK_ALOLA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 65,
+                "max_level": 70,
                 "species": "SPECIES_MUK_ALOLA"
               }
             ]
@@ -15844,7 +15844,7 @@
               {
                 "min_level": 65,
                 "max_level": 80,
-                "species": "SPECIES_ABOMASNOW"
+                "species": "SPECIES_FROSLASS"
               },
               {
                 "min_level": 65,
@@ -15854,7 +15854,7 @@
               {
                 "min_level": 65,
                 "max_level": 80,
-                "species": "SPECIES_FROSLASS"
+                "species": "SPECIES_SNOVER"
               },
               {
                 "min_level": 65,

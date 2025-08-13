@@ -1301,7 +1301,7 @@ script RustboroCity_EventScript_Misa{
     playbgm(MUS_MISA_THEME, FALSE)
     delay(10)
 	bufferleadmonspeciesname(STR_VAR_1)
-    msgbox(RustboroMisa1, MSGBOX_AUTOCLOSE)
+    msgbox(RustboroMisa1, MSGBOX_DEFAULT)
     waitmessage
     goto(MisaPlayerMeetRival)
 }
@@ -1415,7 +1415,7 @@ script RustboroCityGym_EventScript_Misa{
     playbgm(MUS_MISA_THEME, FALSE)
     delay(10)
 	bufferleadmonspeciesname(STR_VAR_1)
-    msgbox(RustboroMisa1, MSGBOX_AUTOCLOSE)
+    msgbox(RustboroMisa1, MSGBOX_DEFAULT)
     waitmessage
     goto(MisaPlayerMeetRival)
 }

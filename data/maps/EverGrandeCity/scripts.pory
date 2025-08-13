@@ -95,6 +95,7 @@ script EverGrandeCity_EventScript_BennisTrigger{
     playse(SE_FLEE)
     fadescreenspeed(FADE_FROM_BLACK, 3)
     delay(20)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     releaseall
     end
@@ -146,6 +147,7 @@ script EverGrandeCity_EventScript_BennisTriggerRight{
     playse(SE_FLEE)
     fadescreenspeed(FADE_FROM_BLACK, 3)
     delay(20)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     releaseall
     end
@@ -293,6 +295,7 @@ script EverGrandeCity_EventScript_James{
     clearflag(FLAG_ENABLED_JOMITHIUS_MATCH_CALL)
     setflag(FLAG_ENABLED_JAMES_MATCH_CALL) // update match call to match new sprite.
     setvar(VAR_MISA_STATE, 10)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     releaseall
     end

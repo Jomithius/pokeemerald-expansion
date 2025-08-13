@@ -13,8 +13,8 @@ LittlerootTown_ProfessorBirchsLab_MapScripts::
 
 	@ State descriptions for VAR_DEX_UPGRADE_JOHTO_STARTER_STATE
 	@ 1: Beat Elite Four, Dex upgrade ready
-	@ 2: Received National Dex
-	@ 3: Left lab after receiving National Dex
+	@ 2: Received Shiny Charm, changed from Nat Dex
+	@ 3: Left lab after receiving Shiny Charm, changed from Nat Dex
 	@ 4: Entered lab after catching all Hoenn mons
 	@ 5: Birch told player to choose Johto starter
 	@ 6: Chose Johto starter
@@ -196,17 +196,27 @@ LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone, MSGBOX_DEFAULT
-	playfanfare MUS_OBTAIN_ITEM
-	message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
+	@ playfanfare MUS_OBTAIN_ITEM
+	giveitem ITEM_SHINY_CHARM
+	@ message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
 	waitmessage
-	waitfanfare
-	setflag FLAG_SYS_NATIONAL_DEX
-	special EnableNationalPokedex
+	@ waitfanfare
+	@ setflag FLAG_SYS_NATIONAL_DEX
+	@ special EnableNationalPokedex
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIllBeCountingOnYou, MSGBOX_DEFAULT
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_RivalImExcitedForNewDiscoveries, MSGBOX_DEFAULT
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2
+	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 1
 	setvar VAR_SCOTT_BF_CALL_STEP_COUNTER, 0
 	setflag FLAG_SCOTT_CALL_BATTLE_FRONTIER
 	releaseall
@@ -554,6 +564,8 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex::
 	special SetUnlockedPokedexFlags
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_PokemonAwait::
@@ -581,8 +593,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Machine::
 LittlerootTown_ProfessorBirchsLab_EventScript_Rival::
 	lock
 	faceplayer
-    goto_if_set FLAG_DEFEATED_RIVAL_BIRCH_LAB, LittlerootTown_ProfessorBirchsLab_EventScript_RivalFuturePlans
-	goto_if_set FLAG_SYS_FINAL_REMATCH, LittlerootTown_ProfessorBirchsLab_EventScript_RivalRematch
+    @ goto_if_set FLAG_DEFEATED_RIVAL_BIRCH_LAB, LittlerootTown_ProfessorBirchsLab_EventScript_RivalFuturePlans
+	@ goto_if_set FLAG_SYS_FINAL_REMATCH, LittlerootTown_ProfessorBirchsLab_EventScript_RivalRematch
+	goto_if_eq VAR_AZURE_MOUNTAIN_RIVAL_STATE, 1, LittlerootTown_ProfessorBirchsLab_EventScript_IHaveToPrepare
 	goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 5, LittlerootTown_ProfessorBirchsLab_EventScript_RivalFuturePlans
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_RivalHaveYouGoneToBattleFrontier
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_RivalTakeBreakFromFieldwork
@@ -831,28 +844,31 @@ LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "Thanks to your help, new facts\n"
 	.string "are coming to light.\p"
 	.string "It appears that in the HOENN region,\n"
-	.string "there are also POKéMON from other\l"
-	.string "regions.\p"
+	.string "there are also POKéMON that can\l"
+	.string "look different from usual.\p"
+	.string "I've come to call these colored\n"
+	.string "variants SHINY POKéMON.\p"
 	.string "It goes to show how rich and varied\n"
 	.string "the natural environments of HOENN\l"
 	.string "happen to be.\p"
 	.string "That's why I think it's necessary for\n"
 	.string "me to upgrade your POKéDEX to\l"
-	.string "the NATIONAL Mode.\p"
+	.string "make SHINY POKéMON more likely\l"
+	.string "to appear.\l"
 	.string "Here, let me see your POKéDEX units.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
 	.string "MAY: Eheheh!\p"
 	.string "It's so cool that even my POKéDEX\n"
-	.string "is getting updated!\p"
+	.string "is getting upgraded!\p"
 	.string "It's because you went out and caught\n"
 	.string "so many POKéMON, {PLAYER}{KUN}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
 	.string "BRENDAN: I went out all over HOENN\n"
 	.string "and checked out POKéMON.\p"
-	.string "You can thank me for getting\n"
-	.string "the NATIONAL Mode POKéDEX.\p"
+	.string "You can thank me for finding out\n"
+	.string "about SHINIES.\p"
 	.string "Yep, you're lucky, {PLAYER}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
@@ -860,7 +876,7 @@ LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
 
 LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
 	.string "{PLAYER}'s POKéDEX was upgraded\n"
-	.string "to the NATIONAL Mode!$"
+	.string "with a SHINY CHARM!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "PROF. BIRCH: But listen.\n"
@@ -1002,6 +1018,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 `
+// unused
 script LittlerootTown_ProfessorBirchsLab_EventScript_RivalRematch{
     checkplayergender
     if(var(VAR_RESULT) == MALE){
@@ -1068,4 +1085,46 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle{
 		I think I'll stick to what I'm good at…\n
 		raising POKéMON!", MSGBOX_DEFAULT)
 	end
+}
+// unused
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_IHaveToPrepare{
+	checkplayergender
+	if(var(VAR_RESULT) == MALE){
+		msgbox(LittlerootTown_ProfessorBirchsLab_Text_MayIHaveToPrepare, MSGBOX_NPC)
+	}
+	else{
+		msgbox(LittlerootTown_ProfessorBirchsLab_Text_BrendanIHaveToPrepare, MSGBOX_NPC)
+	}
+	end
+}
+
+text LittlerootTown_ProfessorBirchsLab_Text_RivalImExcitedForNewDiscoveries{
+	"{RIVAL}: {PLAYER}, you didn't hear\n
+	the news yet, right?\p
+	Well, you'll probably find out\n
+	soon enough.\p
+	Either way, I'm excited to go and\n
+	catch more rare POKéMON!"
+}
+
+text LittlerootTown_ProfessorBirchsLab_Text_MayIHaveToPrepare{
+	"MAY: I'm so excited!\n
+	I have to go get prepared to head out…\p
+	Huh? What am I hyped for?\n
+	Heheh, it's a secret!"
+}
+
+text LittlerootTown_ProfessorBirchsLab_Text_BrendanIHaveToPrepare{
+	"BRENDAN: Alright!\n
+	I have to go get prepared to head out…\p
+	Huh? What am I hyped for?\n
+	You'll find out soon enough."
+}
+
+text LittlerootTown_ProfessorBirchsLab_Text_BirchIllBeCountingOnYou{
+	"Now, if the reports I've recieved\n
+	are true, we're going to be very\l
+	busy for a while.\p
+	I'll be counting on you, {RIVAL}."
 }

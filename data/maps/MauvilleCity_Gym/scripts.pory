@@ -416,6 +416,7 @@ script MauvilleCity_Gym_EventScript_GiveVoltSwitch{
     msgbox(MauvilleCity_Gym_Text_ExplainVoltSwitch, MSGBOX_AUTOCLOSE)
     waitmessage
 	setvar(VAR_SPEEDWAGON_STATE, 1)
+	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	setvar(VAR_MISA_STATE, 5)
     return
 }

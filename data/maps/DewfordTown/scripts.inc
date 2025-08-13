@@ -199,7 +199,7 @@ DewfordTown_EventScript_GiveOldRod::
 # 100 "data/maps/DewfordTown/scripts.pory"
 	setflag FLAG_RECEIVED_OLD_ROD
 # 101 "data/maps/DewfordTown/scripts.pory"
-	setvar VAR_ROUTE106_STATE, 1
+	clearflag FLAG_HIDE_WISHIWASHI_ROUTE_106
 # 102 "data/maps/DewfordTown/scripts.pory"
 	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
 # 103 "data/maps/DewfordTown/scripts.pory"
@@ -1443,9 +1443,9 @@ DewfordTown_Text_ThrowInFishingAdvice:
 # 722 "data/maps/DewfordTown/scripts.pory"
 	.string "On ROUTE 106, northeast of GRANITE\n"
 # 723 "data/maps/DewfordTown/scripts.pory"
-	.string "CAVE, right by the rock on the\l"
+	.string "CAVE, right by the rock on the beach,\l"
 # 724 "data/maps/DewfordTown/scripts.pory"
-	.string "beach, you might find a rare catch!$"
+	.string "you might find a rare catch!$"
 # 725 "data/maps/DewfordTown/scripts.pory"
 
 # 726 "data/maps/DewfordTown/scripts.pory"

@@ -5760,7 +5760,7 @@ Name: SPEEDWAGON
 Class: Biker
 Pic: Speedwagon
 Gender: Male
-Music: Male
+Music: Biker
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Yellow
@@ -7082,7 +7082,7 @@ Name: DALE
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Basic Trainer
 
@@ -10033,7 +10033,7 @@ Name: EDWIN
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Check Bad Move
 
@@ -10108,7 +10108,7 @@ Name: DARWIN
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: Yes
 AI: Basic Trainer
 
@@ -10133,7 +10133,7 @@ Name: DAN
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Check Bad Move
 
@@ -10168,7 +10168,7 @@ Name: ROB
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Check Bad Move
 
@@ -10197,7 +10197,7 @@ Name: STEPHEN
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: Yes
 AI: Basic Trainer
 
@@ -10404,7 +10404,7 @@ Name: SPEEDWAGON
 Class: Biker
 Pic: Speedwagon
 Gender: Male
-Music: Male
+Music: Biker
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Yellow
@@ -12130,10 +12130,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAROLDINA ===
 Name: LAROLDINA
-Class: Battle Girl
+Class: Disciple
 Pic: Battle Girl
 Gender: Female
-Music: Intense
+Music: Disciple
 Double Battle: No
 AI: Basic Trainer
 
@@ -12147,7 +12147,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_CORNELIUS ===
 Name: CORNELIUS
-Class: Nerd
+Class: Disciple
 Pic: Nerd
 Gender: Male
 Music: Suspicious
@@ -12897,7 +12897,7 @@ Name: ROB
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Check Bad Move
 
@@ -12934,7 +12934,7 @@ Name: DALE
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Basic Trainer
 
@@ -12964,7 +12964,7 @@ Name: STEPHEN
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Basic Trainer
 
@@ -13013,7 +13013,7 @@ Name: SPEEDWAGON
 Class: Biker
 Pic: Speedwagon
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Yellow
@@ -13607,7 +13607,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_ASAK_2 ===
 Name: ASAK
-Class: Black Belt
+Class: Disciple
 Pic: Black Belt Fr
 Gender: Male
 Music: Intense
@@ -14497,7 +14497,7 @@ Name: AL
 Class: Biker
 Pic: Biker
 Gender: Male
-Music: Intense
+Music: Biker
 Double Battle: No
 AI: Basic Trainer
 
@@ -17808,7 +17808,7 @@ Name: BERTHO
 Class: Disciple
 Pic: Black Belt
 Gender: Male
-Music: Kimono
+Music: Disciple
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
@@ -17821,7 +17821,7 @@ Name: BENSON
 Class: Disciple
 Pic: Black Belt Fr
 Gender: Male
-Music: Kimono
+Music: Disciple
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
@@ -17978,19 +17978,10 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Basic Trainer
 
-Manectric
-Level: 39
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Manectric
-Level: 39
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Loudred
-Level: 39
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Sceptile @ Sceptilite
+Level: 5
 
 === TRAINER_MAY_AZURE_MOUNTAIN ===
 Name: MAY
@@ -17999,19 +17990,10 @@ Pic: May
 Gender: Female
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Basic Trainer
 
-Manectric
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Manectric
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Exploud
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Blaziken @ Blazikenite
+Level: 5
 
 === TRAINER_SAWYER_2 ===
 Name: SAWYER
@@ -18415,7 +18397,7 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER ===
+=== TRAINER_BRENDAN_PLACEHOLDER === /* FUNCTIONALLY FREE */
 Name: BRENDAN
 Class: Rival
 Pic: RS Brendan
@@ -18427,7 +18409,7 @@ Sceptile @ Sceptilite
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_PLACEHOLDER ===
+=== TRAINER_MAY_PLACEHOLDER === /* FUNCTIONALLY FREE */
 Name: MAY
 Class: Rival
 Pic: RS May
@@ -18480,10 +18462,10 @@ Jolly Nature
 
 === TRAINER_ASAK ===
 Name: ASAK
-Class: Black Belt
+Class: Disciple
 Pic: Black Belt Fr
 Gender: Male
-Music: Intense
+Music: Disciple
 Double Battle: Yes
 AI: Basic Trainer
 
@@ -18574,7 +18556,7 @@ Jolly Nature
 
 Meditite (M) @ Oran Berry  
 Ability: Pure Power  
-Level: 18  
+Level: 17  
 EVs: 84 HP / 180 Atk / 244 Spe  
 Adamant Nature  
 - Force Palm  
@@ -18584,7 +18566,7 @@ Adamant Nature
 
 Monferno (M) @ Expert Belt  
 Ability: Iron Fist  
-Level: 19  
+Level: 18  
 EVs: 20 HP / 244 Atk / 240 Spe  
 Adamant Nature  
 - Mach Punch  

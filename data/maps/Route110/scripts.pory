@@ -17,7 +17,7 @@ Route110_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call Common_EventScript_SetupRivalOnBikeGfxId
 	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 1, Route110_EventScript_SaveCyclingMusic
-	call_if_set FLAG_ROUTE110_HIDE_CYCLIST, Route110_EventScript_SaveBikerMusic
+	call_if_set FLAG_SYS_BIKERS_ROUTE_110, Route110_EventScript_SaveBikerMusic
 	end
 
 Route110_EventScript_SaveCyclingMusic::
@@ -948,9 +948,12 @@ script Route110_EventScript_Biker1{
 
 script Route110_EventScript_Dale{
 	lock
-	msgbox("Don't get in my way!")
+	playbgm(MUS_RG_ENCOUNTER_ROCKET, FALSE)
+	msgbox("Don't get in my way!", MSGBOX_AUTOCLOSE)
+	waitmessage
 	trainerbattle_no_intro(TRAINER_DALE, Route110_BikerDefeat)
-	msgbox("I'll remember this!")
+	msgbox("I'll remember this!", MSGBOX_AUTOCLOSE)
+	waitmessage
 	fadescreen(FADE_TO_BLACK)
 	playse(SE_THUNDERSTORM)
 	delay(30)
@@ -961,7 +964,6 @@ script Route110_EventScript_Dale{
 	fadescreenspeed(FADE_FROM_BLACK, 3)
 	setflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setvar(VAR_SPEEDWAGON_STATE, 4)
-	setflag(FLAG_SYS_BIKERS_ROUTE_110)
 	release
 	end
 }
@@ -1030,6 +1032,7 @@ script Route110_EventScript_Biker7{
 
 script Route110_EventScript_Speedwagon{
 	lock
+	playbgm(MUS_RG_ENCOUNTER_ROCKET, FALSE)
 	msgbox(Route110_Text_Speedwagon, MSGBOX_AUTOCLOSE)
 	waitmessage
 	trainerbattle_no_intro(TRAINER_SPEEDWAGON, Route110_SpeedwagonDefeat)
@@ -1060,10 +1063,13 @@ script Route110_EventScript_Speedwagon{
 	delay(10)
 	fadescreenspeed(FADE_FROM_BLACK, 3)
 	delay(10)
+	savebgm(MUS_DUMMY)
 	fadedefaultbgm
+	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	setvar(VAR_SPEEDWAGON_STATE, 6)
 	setflag(FLAG_ROUTE110_HIDE_BIKERS)
-	clearflag(FLAG_SYS_BIKERS_ROUTE_110)
+	clearflag(FLAG_SYS_BIKERS_ROUTE_110) // for overworld music
+	clearflag(FLAG_DONT_TRANSITION_MUSIC)
 	release
 	end
 }
@@ -1088,7 +1094,7 @@ text Route110_Text_Speedwagon_PostBattle{
 }
 
 script Route110_Policeman_GiveUturn{
-	lock
+	lockall
 	msgbox("Wait!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	clearflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
@@ -1105,7 +1111,7 @@ script Route110_Policeman_GiveUturn{
 		waitmovement(0)
 	}
 	delay(10)
-	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_AUTOCLOSE)
+	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_DEFAULT)
 	waitmessage
 	giveitem(ITEM_TM_U_TURN)
 	waitmessage
@@ -1116,12 +1122,12 @@ script Route110_Policeman_GiveUturn{
 	removeobject(46)
 	setflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
 	setvar(VAR_SPEEDWAGON_STATE, 8)
-	release
+	releaseall
 	end
 }
 
 script Route110_Policeman_GiveUturnNorth{
-	lock
+	lockall
 	msgbox("Wait!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	clearflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
@@ -1138,7 +1144,7 @@ script Route110_Policeman_GiveUturnNorth{
 		waitmovement(0)
 	}
 	delay(10)
-	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_AUTOCLOSE)
+	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_DEFAULT)
 	waitmessage
 	giveitem(ITEM_TM_U_TURN)
 	waitmessage
@@ -1149,7 +1155,7 @@ script Route110_Policeman_GiveUturnNorth{
 	removeobject(47)
 	setflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
 	setvar(VAR_SPEEDWAGON_STATE, 8)
-	release
+	releaseall
 	end
 }
 
@@ -1241,7 +1247,7 @@ script Route110_EventScript_PolicemanHelpTrigger1{
 
 script Route110_EventScript_PolicemanHelpTrigger2{
 	lock
-	msgbox("Help!", MSGBOX_AUTOCLOSE)
+	msgbox("I can't just leave things\nlike this!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
 	waitmovement(0)
@@ -1259,5 +1265,8 @@ movement Route110_WalkLeft{
 
 script Route110_EventScript_SaveBikerMusic{
 	savebgm(MUS_RG_SILPH)
+	// playbgm(MUS_RG_SILPH, TRUE)
+	setflag(FLAG_DONT_TRANSITION_MUSIC)
+	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	return
 }

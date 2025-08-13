@@ -2601,7 +2601,7 @@ RustboroCity_EventScript_Misa::
 # 1303 "data/maps/RustboroCity/scripts.pory"
 	bufferleadmonspeciesname STR_VAR_1
 # 1304 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroMisa1, MSGBOX_AUTOCLOSE
+	msgbox RustboroMisa1, MSGBOX_DEFAULT
 # 1305 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
 # 1306 "data/maps/RustboroCity/scripts.pory"
@@ -2815,7 +2815,7 @@ RustboroCityGym_EventScript_Misa::
 # 1417 "data/maps/RustboroCity/scripts.pory"
 	bufferleadmonspeciesname STR_VAR_1
 # 1418 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroMisa1, MSGBOX_AUTOCLOSE
+	msgbox RustboroMisa1, MSGBOX_DEFAULT
 # 1419 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
 # 1420 "data/maps/RustboroCity/scripts.pory"

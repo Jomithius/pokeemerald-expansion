@@ -1,5 +1,10 @@
 MauvilleCity_BikeShop_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_BikeShop_OnTransition
 	.byte 0
+
+MauvilleCity_BikeShop_OnTransition:
+	call_if_set FLAG_SYS_BIKERS_ROUTE_110, MauvilleCity_EventScript_SaveBikerMusic
+	end
 
 MauvilleCity_BikeShop_EventScript_Rydel::
 	lock

@@ -212,6 +212,7 @@ script LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves{
     setvar(VAR_CEO_STATE, 2)
     setflag(FLAG_CALL_FROM_CEO)
     setflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
+    setflag(FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL)
     call(LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags)
     warp(MAP_LILYCOVE_CITY, 51, 7)
     waitstate
@@ -242,7 +243,7 @@ script LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags{
     clearflag(FLAG_DEFEATED_REGIDRAGO)
     clearflag(FLAG_DEFEATED_REGIELEKI)
     clearflag(FLAG_DEFEATED_ZARUDE)
-    clearflag(FLAG_HIDE_MYSTERY_GIFT_MAN) // slateport and lilycove
+    clearflag(FLAG_HIDE_MYSTERY_GIFT_MAN) // lilycove harbor
     return
 }
 

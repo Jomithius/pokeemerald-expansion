@@ -5567,8 +5567,8 @@ static void HandleEndTurn_BattleWon(void)
             }
             else
             {
-            PlayBGM(MUS_VICTORY_LEAGUE);
-            break;
+                PlayBGM(MUS_VICTORY_LEAGUE);
+                break;
             }
         case TRAINER_CLASS_CEO:
         case TRAINER_CLASS_NIGHTMARE:
@@ -5602,8 +5602,8 @@ static void HandleEndTurn_BattleWon(void)
             }
             else
             {
-            PlayBGM(MUS_RG_VICTORY_TRAINER);
-            break;
+                PlayBGM(MUS_RG_VICTORY_TRAINER);
+                break;
             }
         default:
             PlayBGM(MUS_VICTORY_TRAINER);

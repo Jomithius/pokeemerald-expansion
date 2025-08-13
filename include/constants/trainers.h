@@ -409,7 +409,9 @@
 #define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // used for other trainer classes too
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
-#define TRAINER_ENCOUNTER_MUSIC_KIMONO      14 // Kimono Lady and Woman 
+#define TRAINER_ENCOUNTER_MUSIC_KIMONO      14 // Kimono Lady and Woman and Ninja
+#define TRAINER_ENCOUNTER_MUSIC_BIKER       15 // Bikers only 
+#define TRAINER_ENCOUNTER_MUSIC_DISCIPLE    16 // Black belts in Baldesia
 
 #define F_TRAINER_FEMALE (1 << 7)
 

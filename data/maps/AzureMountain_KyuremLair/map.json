@@ -45,9 +45,9 @@
     {
       "x": 5,
       "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_AZURE_MOUNTAIN_FROM_CHASM",
-      "dest_warp_id": "1"
+      "elevation": 3,
+      "dest_map": "MAP_AZURE_MOUNTAIN_UP5",
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

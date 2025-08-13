@@ -18,7 +18,7 @@
   ],
   "warp_events": [
     {
-      "x": 5,
+      "x": 4,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_AZURE_MOUNTAIN_UP5",

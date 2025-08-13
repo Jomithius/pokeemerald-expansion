@@ -70,7 +70,7 @@
     },
     {
       "type": "trigger",
-      "x": 9,
+      "x": 5,
       "y": 4,
       "elevation": 3,
       "var": "VAR_TEMP_1",
@@ -79,12 +79,30 @@
     },
     {
       "type": "trigger",
-      "x": 5,
+      "x": 9,
       "y": 4,
       "elevation": 0,
       "var": "VAR_SPEEDWAGON_STATE",
       "var_value": "6",
       "script": "Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "4",
+      "script": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_AreYouCrazy"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_SPEEDWAGON_STATE",
+      "var_value": "5",
+      "script": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_PleaseHelpUs"
     }
   ],
   "bg_events": [

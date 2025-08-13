@@ -5626,7 +5626,7 @@
       "name": "AzureMountain_KyuremLair_Layout",
       "width": 11,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AzureMountain_KyuremLair/border.bin",
       "blockdata_filepath": "data/layouts/AzureMountain_KyuremLair/map.bin"

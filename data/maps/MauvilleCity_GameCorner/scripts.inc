@@ -1,5 +1,10 @@
 MauvilleCity_GameCorner_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_GameCorner_OnTransition
 	.byte 0
+
+MauvilleCity_GameCorner_OnTransition:
+	call_if_set FLAG_SYS_BIKERS_ROUTE_110, MauvilleCity_EventScript_SaveBikerMusic
+	end
 
     @ Game Corner prices
 	.set TM_DOUBLE_TEAM_COINS, 1500

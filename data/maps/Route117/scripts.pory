@@ -7,7 +7,6 @@ Route117_MapScripts::
 	.byte 0
 
 Route117_OnTransition:
-	call_if_set FLAG_ROUTE110_HIDE_CYCLIST, Route117_EventScript_SaveBikerMusic
 	call Route117_EventScript_TryMoveDayCareMan
 	@ set flags for OW daycare mons
 	setflag FLAG_TEMP_1
@@ -363,7 +362,7 @@ text Route117_Text_MisaLeftovers{
 }
 
 script Route117_EventScript_SaveBikerMusic {
-	playbgm(MUS_RG_SILPH, TRUE)
+	savebgm(MUS_RG_SILPH)
 	return
 }
 

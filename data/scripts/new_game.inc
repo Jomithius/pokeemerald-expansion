@@ -151,6 +151,7 @@ EventScript_ResetAllLegendaries::
 	setflag FLAG_DEFEATED_NECROZMA @ Here bc its used on NPCs in Ultra Space too
 	setflag FLAG_DEFEATED_OGERPON
 	setflag FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM
+	setflag FLAG_HIDE_WISHIWASHI_ROUTE_106
 	return
 
 EventScript_ResetAllMapFlags::

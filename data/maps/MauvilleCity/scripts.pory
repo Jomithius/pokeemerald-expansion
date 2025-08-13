@@ -4,6 +4,7 @@ raw `.set LOCALID_WALLY, 6
 
 MauvilleCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, MauvilleCity_OnFrame
 	.byte 0
 
 MauvilleCity_OnTransition:
@@ -15,7 +16,12 @@ MauvilleCity_OnTransition:
 	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
 	setvar VAR_MAUVILLE_GYM_STATE, 0
 	call_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym
+	call_if_set FLAG_SYS_BIKERS_ROUTE_110, MauvilleCity_EventScript_SaveBikerMusic
 	end
+
+MauvilleCity_OnFrame:
+	map_script_2 VAR_SPEEDWAGON_STATE, 6, MauvilleCity_EventScript_PolicemanGivesUturn
+	.2byte 0
 
 MauvilleCity_EventScript_MoveWattsonBackToGym::
 	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
@@ -594,11 +600,11 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "NEW MAUVILLE.$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "DACA: Don't you worry about it.\n"
+	.string "DACA: Don't worry about it.\n"
 	.string "It won't be a challenge to you.\p"
 	.string "The entrance to NEW MAUVILLE is just\n"
 	.string "a short SURF away from ROUTE 110.\p"
-	.string "That's it, then, go have fun!\n"
+	.string "That's it, then, go party!\n"
 	.string "Hahaha!$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
@@ -688,9 +694,8 @@ text MauvilleCity_Text_DacaGone {
     Maybe you could go get her for me?"
 }
 
-
 script MauvilleCity_Trigger_Bikers1{
-	lock
+	lockall
 	playbgm(MUS_DUMMY, FALSE)
 	addobject(13)
 	addobject(14)
@@ -731,12 +736,12 @@ script MauvilleCity_Trigger_Bikers1{
 	removeobject(14)
 	removeobject(15)
 	addobject(16)
-	release
+	releaseall
 	end
 }
 
 script MauvilleCity_Trigger_Bikers2{
-	lock
+	lockall
 	playbgm(MUS_DUMMY, FALSE)
 	addobject(13)
 	addobject(14)
@@ -777,12 +782,12 @@ script MauvilleCity_Trigger_Bikers2{
 	removeobject(14)
 	removeobject(15)
 	addobject(16)
-	release
+	releaseall
 	end
 }
 
 script MauvilleCity_Trigger_Bikers3{
-	lock
+	lockall
 	playbgm(MUS_DUMMY, FALSE)
 	addobject(13)
 	addobject(14)
@@ -821,12 +826,12 @@ script MauvilleCity_Trigger_Bikers3{
 	removeobject(14)
 	removeobject(15)
 	addobject(16)
-	release
+	releaseall
 	end
 }
 
 script MauvilleCity_Trigger_Bikers4{
-	lock
+	lockall
 	playbgm(MUS_DUMMY, FALSE)
 	addobject(13)
 	addobject(14)
@@ -865,7 +870,7 @@ script MauvilleCity_Trigger_Bikers4{
 	removeobject(14)
 	removeobject(15)
 	addobject(16)
-	release
+	releaseall
 	end
 }
 
@@ -898,7 +903,7 @@ text MauvilleCity_Text_Police{
 }
 
 script MauvilleCity_EventScript_Bikers_WomanWarn{
-	lock
+	lockall
 	playse(SE_PIN)
 	applymovement(16, Common_Movement_ExclamationMark)
 	waitmovement(16)
@@ -911,8 +916,13 @@ script MauvilleCity_EventScript_Bikers_WomanWarn{
 	waitmessage
 	applymovement(16, Common_Movement_WalkInPlaceDown)
 	waitmovement(16)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	waitmovement(0)
 	setvar(VAR_SPEEDWAGON_STATE, 3)
-	release
+	setflag(FLAG_SYS_BIKERS_ROUTE_110)
+	playbgm(MUS_RG_SILPH, TRUE)
+	setflag(FLAG_DONT_TRANSITION_MUSIC)
+	releaseall
 	end
 }
 
@@ -931,13 +941,40 @@ script MauvilleCity_EventScript_Bikers_WomanWarnText{
 }
 
 script MauvileCity_EventScript_SeeWhatsGoingOn{
-	lock
+	lockall
 	msgbox("I should see what's happening\n
 	on ROUTE 110.", MSGBOX_AUTOCLOSE)
 	waitmessage
+	getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_0)
+	if(var(VAR_TEMP_0) == DIR_WEST){
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+		waitmovement(0)
+	}
+	else{
+		applymovement(OBJ_EVENT_ID_PLAYER, MauvileCity_Movement_WalkDown)
+		waitmovement(0)
+	}
+	releaseall
+	end
+}
+
+script MauvileCity_EventScript_ICantLeaveLikeThis{
+	lockall
+	msgbox("I can't just abandon that Policeman!", MSGBOX_AUTOCLOSE)
+	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, MauvileCity_Movement_WalkDown)
 	waitmovement(0)
-	release
+	releaseall
+	end
+}
+
+script MauvileCity_EventScript_ICantLeaveLikeThisEast{
+	lockall
+	msgbox("I can't just abandon that Policeman!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+	waitmovement(0)
+	releaseall
 	end
 }
 
@@ -946,6 +983,44 @@ movement MauvileCity_Movement_WalkDown{
 }
 
 script MauvilleCity_EventScript_SaveBikerMusic{
-	playbgm(MUS_RG_SILPH, TRUE)
+	savebgm(MUS_RG_SILPH)
+	setflag(FLAG_DONT_TRANSITION_MUSIC)
+	// playbgm(MUS_RG_SILPH, TRUE)
 	return
+}
+
+script MauvilleCity_EventScript_PolicemanGivesUturn{
+	lockall
+	msgbox("Wait!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	clearflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
+	addobject(17)
+	applymovement(17, MauvilleCity_Movement_PolicemanApproachesPlayer)
+	waitmovement(17)
+	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_DEFAULT)
+	waitmessage
+	giveitem(ITEM_TM_U_TURN)
+	waitmessage
+	msgbox(Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(17, MauvilleCity_Movement_PolicemanLeaves)
+	waitmovement(17)
+	removeobject(17)
+	clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	setflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
+	setvar(VAR_SPEEDWAGON_STATE, 8)
+	releaseall
+	end
+}
+
+movement MauvilleCity_Movement_PolicemanApproachesPlayer{
+	walk_up * 3
+	walk_left * 6
+	walk_up * 2
+}
+
+movement MauvilleCity_Movement_PolicemanLeaves{
+	walk_down * 2
+	walk_right * 6
+	walk_down * 4
 }

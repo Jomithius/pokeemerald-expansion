@@ -101,127 +101,152 @@ Route110_SeasideCyclingRoadNorthEntrance_Movement_PushPlayerBackFromCounter:
 # 51 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 
 # 52 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad:
+Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad::
 # 53 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	.string "On CYCLING ROAD, you can go all out\n"
+	lockall
 # 54 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	.string "and cycle as fast as you'd like.\p"
+	setvar VAR_CYCLING_CHALLENGE_STATE, 0
 # 55 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	.string "It feels great to go that fast, but try\n"
+	clearflag FLAG_SYS_CYCLING_ROAD
 # 56 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	.string "not to crash into anyone!$"
+	setvar VAR_TEMP_1, 0
 # 57 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-
+	releaseall
 # 58 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk:
+	end
 # 59 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	.string "Sorry, you can't walk on CYCLING\n"
+
 # 60 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	.string "ROAD. It's too dangerous.\p"
+Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad:
 # 61 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	.string "On CYCLING ROAD, you can go all out\n"
+# 62 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	.string "and cycle as fast as you'd like.\p"
+# 63 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	.string "It feels great to go that fast, but try\n"
+# 64 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	.string "not to crash into anyone!$"
+# 65 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+
+# 66 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk:
+# 67 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	.string "Sorry, you can't walk on CYCLING\n"
+# 68 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	.string "ROAD. It's too dangerous.\p"
+# 69 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	.string "Please come back with a BIKE.$"
 
-Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad::
-# 65 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	lockall
-# 66 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	compare VAR_SPEEDWAGON_STATE, 4
-	goto_if_eq Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_2
-# 81 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	compare VAR_SPEEDWAGON_STATE, 5
-	goto_if_eq Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_3
-# 90 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	setvar VAR_CYCLING_CHALLENGE_STATE, 0
-# 91 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	clearflag FLAG_SYS_CYCLING_ROAD
-# 92 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	setvar VAR_TEMP_1, 0
-Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_1:
-# 94 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	releaseall
-	end
-
-Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_2:
-# 67 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	applymovement 1, Common_Movement_FacePlayer
-# 68 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	waitmovement 1
-# 69 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	msgbox Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy, MSGBOX_AUTOCLOSE
-# 70 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	waitmessage
-# 71 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	playse SE_PIN
-# 72 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
+Route110_SeasideCyclingRoadNorthEntrance_EventScript_AreYouCrazy::
 # 73 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	waitmovement 1
+	lockall
 # 74 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	delay 20
-# 75 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	msgbox Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge
-# 76 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	waitmessage
-# 77 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	applymovement 1, Common_Movement_FaceOriginalDirection
-# 78 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	waitmovement 1
-# 79 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 5
-	goto Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_1
-
-Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_3:
-# 82 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	applymovement 1, Common_Movement_FacePlayer
-# 83 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 75 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	waitmovement 1
+# 76 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 77 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	waitmovement 0
+# 78 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	msgbox Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy, MSGBOX_AUTOCLOSE
+# 79 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	waitmessage
+# 80 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	playse SE_PIN
+# 81 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	applymovement 1, Common_Movement_ExclamationMark
+# 82 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	waitmovement 1
+# 83 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	delay 20
 # 84 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	msgbox Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_Text_0, MSGBOX_AUTOCLOSE
+	msgbox Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge
 # 85 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	waitmessage
 # 86 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	applymovement 1, Common_Movement_FaceOriginalDirection
 # 87 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	waitmovement 1
-	goto Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_1
+# 88 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 89 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	waitmovement 0
+# 90 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 5
+# 91 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	setvar VAR_CYCLING_CHALLENGE_STATE, 0
+# 92 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	clearflag FLAG_SYS_CYCLING_ROAD
+# 93 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	setvar VAR_TEMP_1, 0
+# 94 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	releaseall
+	end
+
+
+Route110_SeasideCyclingRoadNorthEntrance_EventScript_PleaseHelpUs::
+# 99 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	lockall
+# 100 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	applymovement 1, Common_Movement_FacePlayer
+# 101 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	waitmovement 1
+# 102 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	msgbox Route110_SeasideCyclingRoadNorthEntrance_EventScript_PleaseHelpUs_Text_0, MSGBOX_AUTOCLOSE
+# 103 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	waitmessage
+# 104 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	applymovement 1, Common_Movement_FaceOriginalDirection
+# 105 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	waitmovement 1
+# 106 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	setvar VAR_CYCLING_CHALLENGE_STATE, 0
+# 107 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	clearflag FLAG_SYS_CYCLING_ROAD
+# 108 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	setvar VAR_TEMP_1, 0
+# 109 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	releaseall
+	end
 
 
 Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou::
-# 112 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 127 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	lock
-# 113 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 128 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	applymovement 1, Common_Movement_FacePlayer
-# 114 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 129 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	waitmovement 1
-# 115 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 130 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	msgbox Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou_Text_0, MSGBOX_AUTOCLOSE
-# 116 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 131 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	waitmessage
-# 117 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 132 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	applymovement 1, Common_Movement_FaceOriginalDirection
-# 118 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 133 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	waitmovement 1
-# 119 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 134 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	setvar VAR_SPEEDWAGON_STATE, 7
-# 120 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 135 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	clearflag FLAG_ROUTE110_HIDE_CYCLIST
-# 121 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 136 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	release
 	end
 
 
-Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad_Text_0:
-# 84 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+Route110_SeasideCyclingRoadNorthEntrance_EventScript_PleaseHelpUs_Text_0:
+# 102 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	.string "Please, help us!$"
 
 Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou_Text_0:
-# 115 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 130 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	.string "Thank you for getting rid of them!$"
 
 Route110_SeasideCyclingRoadNorthEntrance_Text_AreYouCrazy::
-# 98 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+# 113 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	.string "Wait!\p You're gonna go confront them?!\n Are you insane?!$"
 
 Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge::
-# 104 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	.string "That BADGE…! You must be a strong\n TRAINER.\p Okay, I won't stop you.\n Please, help us!$"
+# 119 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
+	.string "That BADGE…! You must be a strong\n TRAINER.\p Okay. I won't stop you.\n Please, help us!$"

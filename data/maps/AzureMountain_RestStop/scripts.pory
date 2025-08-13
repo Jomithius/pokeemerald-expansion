@@ -7,15 +7,17 @@ script AzureMountain_RestStop_EventScript_Hiker{
 }
 
 script AzureMountain_RestStop_EventScript_Cooltrainer{
-    msgbox("It was tough getting up here.\n
-        There's so many strong TRAINERS!", MSGBOX_NPC)
+    msgbox("Who put all those ice blocks and\n
+        piles of snow on the lake in a such\l
+        a specific layout?\p
+        They ruined the lake!", MSGBOX_NPC)
     end
 }
 
 script AzureMountain_RestStop_EventScript_Woman3{
     msgbox("I wanted to go ice skating on the\n
-        lake, but there's so many ice\l
-        blocks and snow piles right now.", MSGBOX_NPC)
+        lake with my boyfriend, but there's so\l
+        many ice blocks and piles of snow.", MSGBOX_NPC)
     end
 }
 
@@ -28,7 +30,7 @@ script AzureMountain_RestStop_EventScript_BlackBelt{
 
 script AzureMountain_RestStop_EventScript_Girl1{
     msgbox("This year's been crazy!\p
-        We've never had this many
+        We've never had this many\n
         people come through here before.\p
         It must be easier to get all the\n
         way out here now or something.", MSGBOX_NPC)
@@ -39,7 +41,7 @@ script AzureMountain_RestStop_EventScript_Man_4{
     msgbox("We've had this rest stop for years.\p
         I also occasionally go out on rescue\n
         missions with STOUTLAND.\p
-        Luckily not too many people get\n
+        Luckily, not too many people get\n
         stranded on the mountain.", MSGBOX_NPC)
     end
 }
@@ -48,7 +50,7 @@ script AzureMountain_RestStop_EventScript_WomanHeal{
     lock
     faceplayer
     msgbox("You and your POKéMON look tired.\n
-        Come reest for awhile.", MSGBOX_AUTOCLOSE)
+        Come rest for awhile.", MSGBOX_AUTOCLOSE)
     waitmessage
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox("You can stay as long as you need!", MSGBOX_AUTOCLOSE)

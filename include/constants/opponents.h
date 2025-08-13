@@ -856,8 +856,8 @@
 #define TRAINER_EVERETT                     850
 #define TRAINER_RED                         851
 #define TRAINER_LEAF                        852
-#define TRAINER_BRENDAN_PLACEHOLDER         853
-#define TRAINER_MAY_PLACEHOLDER             854
+#define TRAINER_BRENDAN_PLACEHOLDER         853 // functionally free
+#define TRAINER_MAY_PLACEHOLDER             854 // functionally free
 #define TRAINER_RATDUARDO_1                 855
 #define TRAINER_ASAK                        856
 #define TRAINER_PANINI                      857

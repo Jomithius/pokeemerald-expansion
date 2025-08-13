@@ -254,6 +254,7 @@ script Route114_EventScript_Bennis{
     playse(SE_FLEE)
     fadescreenspeed(FADE_FROM_BLACK, 3)
     delay(20)
+	savebgm(MUS_DUMMY)
     fadedefaultbgm
     releaseall
     end

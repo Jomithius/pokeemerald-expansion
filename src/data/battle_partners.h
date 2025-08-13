@@ -54,9 +54,9 @@
             .moves = {
 #line 20
                 MOVE_LIGHT_SCREEN,
-                MOVE_PSYCHIC,
+                MOVE_ZEN_HEADBUTT,
                 MOVE_REFLECT,
-                MOVE_METAL_CLAW,
+                MOVE_IRON_HEAD,
             },
             },
             {
@@ -85,7 +85,7 @@
             .species = SPECIES_AGGRON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 39
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 252, 6),
+            .ev = TRAINER_PARTY_EVS(0, 252, 6, 0, 0, 252),
 #line 38
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 37
@@ -95,10 +95,10 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 40
-                MOVE_THUNDER,
+                MOVE_IRON_HEAD,
                 MOVE_PROTECT,
-                MOVE_SOLAR_BEAM,
-                MOVE_DRAGON_CLAW,
+                MOVE_ROCK_SLIDE,
+                MOVE_BULLDOZE,
             },
             },
         },
@@ -122,28 +122,28 @@ F_TRAINER_FEMALE |
         {
             {
 #line 52
-            .species = SPECIES_POLIWRATH,
+            .species = SPECIES_GRENINJA_BOND,
 #line 52
             .gender = TRAINER_MON_MALE,
 #line 52
-            .heldItem = ITEM_SITRUS_BERRY,
-#line 55
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
+            .heldItem = ITEM_ASSAULT_VEST,
+#line 54
+            .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 4),
 #line 57
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 53
-            .ability = ABILITY_SWIFT_SWIM,
-#line 54
-            .lvl = 100,
+            .ability = ABILITY_BATTLE_BOND,
 #line 56
-            .nature = NATURE_ADAMANT,
+            .lvl = 100,
+#line 55
+            .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 57
-                MOVE_SUBSTITUTE,
-                MOVE_DRAIN_PUNCH,
-                MOVE_JET_PUNCH,
-                MOVE_ROCK_SLIDE,
+                MOVE_WATER_SHURIKEN,
+                MOVE_BLIZZARD,
+                MOVE_DARK_PULSE,
+                MOVE_SLUDGE_WAVE,
             },
             },
             {
@@ -152,50 +152,52 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 62
             .heldItem = ITEM_THROAT_SPRAY,
-#line 66
+#line 67
             .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
-#line 68
+#line 69
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 63
             .ability = ABILITY_UNAWARE,
-#line 69
+#line 65
             .lvl = 100,
-#line 67
+#line 68
             .nature = NATURE_CALM,
-#line 64
+#line 66
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 65
+#line 64
             .teraType = TYPE_FAIRY,
             .moves = {
-#line 69
+#line 70
                 MOVE_TORCH_SONG,
                 MOVE_HEX,
-                MOVE_SLACK_OFF,
+                MOVE_OMINOUS_WIND,
                 MOVE_WILL_O_WISP,
             },
             },
             {
-#line 74
-            .species = SPECIES_KROOKODILE,
-#line 74
-            .gender = TRAINER_MON_MALE,
-#line 74
-            .heldItem = ITEM_LEFTOVERS,
-#line 77
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 75
-            .ability = ABILITY_MOXIE,
-#line 77
+            .species = SPECIES_KROOKODILE,
+#line 75
+            .gender = TRAINER_MON_MALE,
+#line 75
+            .heldItem = ITEM_LEFTOVERS,
+#line 80
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 76
+            .ability = ABILITY_INTIMIDATE,
+#line 78
             .lvl = 100,
             .nature = NATURE_HARDY,
-#line 76
+#line 79
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
 #line 77
-                MOVE_THUNDER_FANG,
-                MOVE_STONE_EDGE,
+            .teraType = TYPE_GROUND,
+            .moves = {
+#line 80
+                MOVE_BREAKING_SWIPE,
+                MOVE_ROCK_SLIDE,
                 MOVE_DARKEST_LARIAT,
                 MOVE_EARTHQUAKE,
             },

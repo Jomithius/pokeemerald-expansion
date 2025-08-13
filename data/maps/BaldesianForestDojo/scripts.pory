@@ -438,14 +438,14 @@ script BaldesianForestDojo_EventScript_AsakTrigger{
     applymovement(LOCALID_ASAK, Common_Movement_ExclamationMark)
     waitmovement(0)
     waitse
-    if(flag(FLAG_TEMP_5) == TRUE){
+    if(flag(FLAG_TEMP_5)){
         applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakToPlayerLeft)
     }
     else{
         applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakToPlayer)
     }
     waitmovement(0)
-    if(flag(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR) == FALSE){
+    if(!flag(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR)){
         msgbox("ASAK: {PLAYER}?\n
         What are you doing here?\l
         What about the ritual?", MSGBOX_DEFAULT)
@@ -457,7 +457,7 @@ script BaldesianForestDojo_EventScript_AsakTrigger{
             Talk to the old hag over there.\n
             She'll get everything set up.", MSGBOX_AUTOCLOSE)
         waitmessage
-        if(flag(FLAG_TEMP_5) == TRUE){
+        if(flag(FLAG_TEMP_5)){
             applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturnsLeft)
         }
         else{
@@ -509,7 +509,7 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
     waitmovement(0)
     fadescreen(FADE_FROM_WHITE)
-    playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+    playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
     msgbox("I'm first!\p
         You gotta get through me before you\n
         even think about battling BRUNO!", MSGBOX_AUTOCLOSE)
@@ -554,6 +554,7 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     addobject(25)
     fadescreen(FADE_FROM_WHITE)
     waitse
+    playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
     msgbox("{PLAYER}.\p
         I'll show you how much stronger\n
         I've gotten!", MSGBOX_AUTOCLOSE)
@@ -562,7 +563,7 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     playse(SE_ARENA_TIMEUP2)
     waitse
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-    msgbox("OLD MAN: Winner: Challenger!", MSGBOX_AUTOCLOSE)
+    msgbox("OLD MAN: Winner: {PLAYER}!", MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 3)
     applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturnsToSeat)
@@ -577,8 +578,8 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
         Finally, it's my turn.\p
         Will you be the first one to defeat me?", MSGBOX_AUTOCLOSE)
     waitmessage
+    playbgm(MUS_NONE, TRUE)
     trainerbattle_no_intro(TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat)
-    playbgm(MUS_NONE, FALSE)
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     delay(30)
     playse(SE_PIN)
@@ -589,6 +590,7 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     waitmessage
     playfanfare(MUS_RG_CAUGHT_INTRO)
     waitfanfare
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     applymovement(LOCALID_BRUNO, Common_Movement_WalkInPlaceUp)
     waitmovement(0)

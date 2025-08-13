@@ -1,3 +1,5 @@
+const LOCALID_RIVAL = 1
+
 mapscripts AzureMountain_Up5_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: AzureMountain_Up5_OnTransition
 }
@@ -24,9 +26,8 @@ script AzureMountain_Up5_EventScript_Shurley{
 
 script AzureMountain_Up5_EventScript_Wilson{
     trainerbattle_single(TRAINER_WILSON, "What happened to the ice lake?", "I wanted to go ice skating!")
-    msgbox("Who put all these ice blocks\n
-        here in a such a specific layout?\p
-        They ruined the lake!", MSGBOX_NPC)
+    msgbox("It was hard getting up here.\n
+        There's so many strong TRAINERS!", MSGBOX_NPC)
 	end
 }
 
@@ -39,8 +40,7 @@ script AzureMountain_Up5_EventScript_Itoshi{
 script AzureMountain_Up5_EventScript_Hiker{
     msgbox("It's way colder over here!\p
         I guess the geothermal heat doesn't\n
-        reach this side of the mountain.", MSGBOX_AUTOCLOSE)
-    release
+        reach this side of the mountain.", MSGBOX_NPC)
     end
 }
 
@@ -102,4 +102,114 @@ script AzureMountain_Up5_EventScript_TutorDecline{
         You still have much to learn.", MSGBOX_AUTOCLOSE)
     release
     end
+}
+
+script AzureMountain_Up5_EventScript_RivalBattle{
+    lockall
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, AzureMountain_Up5_EventScript_MayBattle)
+    playse(SE_PIN)
+    applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    call(AzureMountain_Up5_EventScript_RivalMovementVar)
+    playbgm(MUS_ENCOUNTER_BRENDAN, TRUE)
+    msgbox("BRENDAN: Hey, {PLAYER}.\n
+        So you came all the way out here, too.\p
+        How's it going?\n
+        There's so many cool new POKéMON\l
+        I've never seen before.\p
+        Have you been raising any new POKéMON?\n
+        I'll check for you.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_BRENDAN_AZURE_MOUNTAIN, "Wow, {PLAYER}.\nYou've gotten this strong?")
+    msgbox("BRENDAN: I can see why you're the\n
+		CHAMPION, {PLAYER}.\p
+		I think I'll stick to what I'm good at…\n
+		raising POKéMON.\p
+        Okay, I'm going to head back to lab to\n
+        give a report.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_RIVAL, Common_Movement_WalkLeft)
+    waitmovement(0)
+    setfieldeffectargument(0, 1)
+	dofieldeffect(FLDEFF_NPCFLY_OUT)
+	delay(15)
+	removeobject(LOCALID_RIVAL)
+	waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    clearflag(FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL)
+    setvar(VAR_AZURE_MOUNTAIN_RIVAL_STATE, 2)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+script AzureMountain_Up5_EventScript_MayBattle{
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    call(AzureMountain_Up5_EventScript_RivalMovementVar)
+    playbgm(MUS_ENCOUNTER_MAY, TRUE)
+    msgbox("MAY: Hi, {PLAYER}!\n
+        So you came all the way out here, too!\p
+        How's it going?\n
+        There's so many cool new POKéMON\l
+        I've never seen before!\p
+        Anyways, while I've been out here\n
+        searching for new POKéMON, mine have\l
+        grown way stronger.\p
+        So…\n
+        How about a little battle?", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_MAY_AZURE_MOUNTAIN, "Wow, {PLAYER}!\nYou've gotten this strong!")
+    msgbox("MAY: I can see why you're the CHAMPION,\n
+		{PLAYER}.\p
+		I think I'll stick to what I'm good at…\n
+		catching POKéMON!\p
+        I should probably head back to the lab\n
+        and share my findings with the PROF.\p
+        Okay, {PLAYER}{KUN}, let's meet again!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LOCALID_RIVAL, Common_Movement_WalkRight)
+    waitmovement(0)
+    setfieldeffectargument(0, 1)
+	dofieldeffect(FLDEFF_NPCFLY_OUT)
+	delay(15)
+	removeobject(LOCALID_RIVAL)
+	waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    clearflag(FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL)
+    setvar(VAR_AZURE_MOUNTAIN_RIVAL_STATE, 2)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+script AzureMountain_Up5_EventScript_RivalMovementVar{
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    switch(var(VAR_TEMP_0)){
+        case 40:
+            applymovement(LOCALID_RIVAL, AzureMountain_Up5_MovementRivalLeftDown)
+        case 41:
+            applymovement(LOCALID_RIVAL, Common_Movement_WalkDown)
+        case 42:
+            applymovement(LOCALID_RIVAL, AzureMountain_Up5_MovementRivalRightDown)
+        default:
+            applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceDown)
+    }
+    waitmovement(0)
+    return
+}
+
+movement AzureMountain_Up5_MovementRivalLeftDown{
+    walk_left
+    walk_down
+}
+
+movement AzureMountain_Up5_MovementRivalRightDown{
+    walk_right
+    walk_down
 }

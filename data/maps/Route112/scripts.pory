@@ -177,6 +177,7 @@ script Route112_EventScript_Emo{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(14)
     removeobject(14)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     setflag(FLAG_EMO_ROUTE_112)
     setvar(VAR_MISA_STATE, 6)
@@ -235,6 +236,7 @@ script Route112_EventScript_Emo_West{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     waitmovement(14)
     removeobject(14)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     setflag(FLAG_EMO_ROUTE_112)
     setvar(VAR_MISA_STATE, 6)

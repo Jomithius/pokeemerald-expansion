@@ -1494,6 +1494,12 @@ void PlayTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_KIMONO:
             music = MUS_KIMONO_DANCE;
             break;
+        case TRAINER_ENCOUNTER_MUSIC_BIKER:
+            music = MUS_RG_ENCOUNTER_ROCKET;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_DISCIPLE:
+            music = MUS_RG_ENCOUNTER_BOY;
+            break;
         default:
             music = MUS_ENCOUNTER_SUSPICIOUS;
         }
