@@ -1013,7 +1013,7 @@ BaldesianForestDojo_EventScript_ChallengeBruno::
 # 649 "data/maps/BaldesianForestDojo/scripts.pory"
 	msgbox BaldesianForestDojo_EventScript_DojoChallenge_Text_6, MSGBOX_AUTOCLOSE
 # 650 "data/maps/BaldesianForestDojo/scripts.pory"
-	playfanfare MUS_RG_CAUGHT_INTRO
+	playfanfare MUS_OBTAIN_B_POINTS
 # 651 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitfanfare
 # 652 "data/maps/BaldesianForestDojo/scripts.pory"

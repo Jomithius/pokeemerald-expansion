@@ -263,7 +263,7 @@ EventScript_FinalRematchesUnlocked::
 # 183 "data/maps/Void/scripts.pory"
 	delay 30
 # 184 "data/maps/Void/scripts.pory"
-	playfanfare MUS_OBTAIN_BADGE
+	playfanfare MUS_OBTAIN_SYMBOL
 # 185 "data/maps/Void/scripts.pory"
 	waitfanfare
 # 186 "data/maps/Void/scripts.pory"

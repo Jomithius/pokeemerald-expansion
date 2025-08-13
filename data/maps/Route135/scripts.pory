@@ -44,16 +44,40 @@ script Route135_EventScript_Denjamin{
 	end
 }
 
-script Route135_EventScript_Pamuel{
-    trainerbattle_single(TRAINER_PAMUEL, "Gosh, I'm so bored.\nEntertain me with a battle!", "That was fun!", Route135_EventScript_GiveMiltankite)
+script Route135_EventScript_Whitney{
+    goto_if_not_defeated(TRAINER_WHITNEY, Route135_EventScript_WhitneyBattle)
     goto_if_unset(FLAG_RECEIVED_MILTANKITE, Route135_EventScript_GiveMiltankite)
-    msgbox("I've lived out here all my life.\n
-        I wonder what the city's like.", MSGBOX_NPC)
+    msgbox("Gosh, I'm so bored!\p
+        I want to go back to GOLDENROD\n
+        CITY already!", MSGBOX_NPC)
 	end
+}
+
+script Route135_EventScript_WhitneyBattle{
+    lock
+    msgbox("Gosh, it's so boring out here!\n
+        Why did we have to visit our family\l
+        out in HOENN's countryside…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    playbgm(MUS_ENCOUNTER_GIRL, FALSE)
+    msgbox("Huh? Who are you?\n
+        A TRAINER?\p
+        Perfect timing!\n
+        Help me have some fun with a battle!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_WHITNEY, "That was fun!")
+    goto(Route135_EventScript_GiveMiltankite)
+    end
 }
 
 script Route135_EventScript_GiveMiltankite{
     lock
+    faceplayer
     msgbox("That was a lot of fun!\n
         Did my MILTANK surprise you? Hehe!\p
         Here. I have an extra stone you can\n
@@ -64,7 +88,11 @@ script Route135_EventScript_GiveMiltankite{
     giveitem(ITEM_MILTANKITE)
     setflag(FLAG_RECEIVED_MILTANKITE)
     waitmessage
-    closemessage
+    msgbox("I hope I can go back to GOLDENROD\n
+        CITY soon.\p
+        I want to go shopping at the DEPT.\n
+        STORE!", MSGBOX_AUTOCLOSE)
+    waitmessage
     release
     end
 }

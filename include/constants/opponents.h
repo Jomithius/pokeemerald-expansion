@@ -816,7 +816,7 @@
 #define TRAINER_LUCY                        810
 #define TRAINER_BRANDON                     811
 #define TRAINER_GOHANA                      812
-#define TRAINER_PAMUEL                      813
+#define TRAINER_WHITNEY                     813
 #define TRAINER_JASON                       814
 #define TRAINER_MISA_2                      815
 #define TRAINER_CORY_2                      816

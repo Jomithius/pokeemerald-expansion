@@ -17234,26 +17234,73 @@ Level: 100
 Baxcalibur
 Level: 100
 
-=== TRAINER_PAMUEL ===
-Name: PAMUEL
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+=== TRAINER_WHITNEY ===
+Name: WHITNEY
+Class: Leader
+Pic: Whitney
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
+Mugshot: Pink
 
-Tauros-Paldea-Combat
-Level: 100
+Clefable (F) @ Leftovers  
+Ability: Magic Guard   
+EVs: 252 HP / 4 Atk / 252 SpD  
+Sassy Nature  
+- Stealth Rock  
+- Moonblast  
+- Soft-Boiled  
+- Knock Off  
 
-Bouffalant
-Level: 100
+Tauros-Paldea-Blaze @ Rocky Helmet  
+Ability: Intimidate  
+Tera Type: Water  
+EVs: 136 Atk / 152 SpD / 220 Spe  
+Adamant Nature  
+- Bulk Up  
+- Raging Bull  
+- Close Combat  
+- Trailblaze  
 
-Furfrou
-Level: 100
+Lickilicky (M) @ Life Orb  
+Ability: Own Tempo  
+Tera Type: Ghost  
+EVs: 248 HP / 252 SpA / 8 SpD  
+Modest Nature  
+- Fire Blast  
+- Thunder  
+- Tera Blast  
+- Hydro Pump  
 
-Miltank @ Miltankite
-Level: 100
+Farigiraf (F) @ Sitrus Berry  
+Ability: Cud Chew  
+Tera Type: Electric  
+EVs: 248 HP / 8 Def / 252 SpA  
+Modest Nature  
+- Calm Mind  
+- Twin Beam  
+- Hyper Voice  
+- Tera Blast  
+
+Sawsbuck-Summer @ Salac Berry  
+Ability: Serene Grace  
+Tera Type: Fairy  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Headbutt  
+- Zen Headbutt  
+- High Horsepower  
+- Horn Leech  
+
+Miltank (F)  @ Miltankite
+Ability: Thick Fat   
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Rollout  
+- Defense Curl  
+- Milk Drink  
+- Body Slam  
 
 === TRAINER_JASON ===
 Name: JASON

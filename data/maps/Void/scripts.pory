@@ -181,7 +181,7 @@ script EventScript_FinalRematchesUnlocked{
     pokenavcall(PokenavText_FinalMatches)
     waitmessage
     delay(30)
-    playfanfare(MUS_OBTAIN_BADGE)
+    playfanfare(MUS_OBTAIN_SYMBOL)
     waitfanfare
     msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS and ELITE FOUR are now\n
         ready for their final rematches.\p

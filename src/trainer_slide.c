@@ -283,7 +283,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_SPEEDWAGON_3] = // wachun
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("You can't stop the MISSISSWUAGWA RIDERS!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("You can't stop the\nMISSISSWUAGWA RIDERS!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WHITNEY] = // Route135
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, MILTANK!\nShow 'em how it's done!{PAUSE_UNTIL_PRESS}"),
         },
     },
 };

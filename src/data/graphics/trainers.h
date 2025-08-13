@@ -344,6 +344,9 @@ const u32 gTrainerPalette_Nightmare[] = INCBIN_U32("graphics/trainers/palettes/n
 const u32 gTrainerFrontPic_Cynthia[] = INCBIN_U32("graphics/trainers/front_pics/cynthia.4bpp.lz");
 const u32 gTrainerPalette_Cynthia[] = INCBIN_U32("graphics/trainers/palettes/cynthia.gbapal.lz");
 
+const u32 gTrainerFrontPic_Whitney[] = INCBIN_U32("graphics/trainers/front_pics/whitney.4bpp.lz");
+const u32 gTrainerPalette_Whitney[] = INCBIN_U32("graphics/trainers/palettes/whitney.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -489,6 +492,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_NIGHTMARE_RATDUARDO, gTrainerFrontPic_NightmareRatduardo, gTrainerPalette_Nightmare),
     TRAINER_SPRITE(TRAINER_PIC_NIGHTMARE, gTrainerFrontPic_Nightmare, gTrainerPalette_Nightmare),
     TRAINER_SPRITE(TRAINER_PIC_CYNTHIA, gTrainerFrontPic_Cynthia, gTrainerPalette_Cynthia),
+    TRAINER_SPRITE(TRAINER_PIC_WHITNEY, gTrainerFrontPic_Whitney, gTrainerPalette_Whitney),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

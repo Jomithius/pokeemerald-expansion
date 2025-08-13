@@ -182,6 +182,10 @@ static const struct SpriteFrameImage sPicTable_Aria[] = {
     overworld_ascending_frames(gObjectEventPic_Aria, 2, 4)
 };
 
+static const struct SpriteFrameImage sPicTable_Whitney[] = {
+    overworld_ascending_frames(gObjectEventPic_Whitney, 2, 4)
+};
+
 static const struct SpriteFrameImage sPicTable_QuintyPlump[] = {
     overworld_ascending_frames(gObjectEventPic_QuintyPlump, 4, 4),
 };

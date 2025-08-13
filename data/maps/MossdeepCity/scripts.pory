@@ -683,7 +683,7 @@ script MossdeepCity_EventScript_GiveTotodile{
 	setobjectnewmovementtype(21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
 	applymovement(21, Common_Movement_WalkInPlaceDown)
 	waitmovement(21)
-	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch) // should be functionally unused
+	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch) // should be functionally unused here
 	release
 	end
 }

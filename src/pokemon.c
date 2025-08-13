@@ -5815,10 +5815,12 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_MAGMA_ADMIN:
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_LEADER:
-            if (FlagGet(FLAG_SYS_FINAL_REMATCH))
-                return MUS_FINAL_BATTLE;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWhitneyName))
+                return MUS_VS_TRAINER;
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_GYM_LEADER;
+            if (FlagGet(FLAG_SYS_FINAL_REMATCH))
+                return MUS_FINAL_BATTLE;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleLunaName))
                 return MUS_VS_CHAMPION_NEMONA;
             return MUS_VS_GYM_LEADER;

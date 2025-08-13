@@ -5586,8 +5586,16 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_SHADOW_CLONE:
         case TRAINER_CLASS_LEADER:
         case TRAINER_CLASS_MASTER:
-            PlayBGM(MUS_VICTORY_GYM_LEADER);
-            break;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWhitneyName))
+            {
+                PlayBGM(MUS_VICTORY_TRAINER);
+                break;
+            }
+            else
+            {
+                PlayBGM(MUS_VICTORY_GYM_LEADER);
+                break;
+            }
         case TRAINER_CLASS_CHANNELER:
         case TRAINER_CLASS_KNIGHT:
         case TRAINER_CLASS_KIMONO_LADY:

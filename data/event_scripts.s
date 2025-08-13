@@ -1253,7 +1253,7 @@ gText_YouDrankTheFantasia::
 
 EventScript_UnlockEliteFourFinalRematch::
 	clearflag FLAG_SYS_BEFORE_ELITE_4_REMATCH
-	playfanfare MUS_OBTAIN_BADGE
+	playfanfare MUS_OBTAIN_B_POINTS
 	waitfanfare
 	msgbox gText_TheEliteFourAreReady, MSGBOX_DEFAULT
 	waitmessage
@@ -1263,7 +1263,7 @@ EventScript_UnlockEliteFourFinalRematch::
 
 gText_TheEliteFourAreReady::
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The ELITE FOUR are now ready\n"
-	.string "for the final battles.$"
+	.string "for their final battles.$"
 
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
