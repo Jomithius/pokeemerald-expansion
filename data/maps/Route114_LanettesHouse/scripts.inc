@@ -58,9 +58,10 @@ Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
 
 Route114_LanettesHouse_Text_ExplainPCBoxLink:
 	.string "LANETTE: That is a new piece of\n"
-	.string "technology that let's you access\l"
-	.string "your PC BOX from anywhere!\l"
-	.string "Isn't that amazing?$"
+	.string "technology I developed that lets you\l"
+	.string "access your PC BOXES remotely.\l"
+	.string "Isn't that amazing?\p"
+	.string "Here. You may have this as well.$"
 
 Route114_LanettesHouse_Text_OrganizeYourBoxes:
 	.string "May I offer advice about my POKéMON\n"
@@ -74,6 +75,8 @@ Route114_LanettesHouse_Text_ResearchNotesPage1:
 	.string "Design BOXES to hold 30 POKéMON each.\p"
 	.string "Each TRAINER should be able to store\n"
 	.string "420 POKéMON on the PC system.\p"
+	.string "Unfortunately, due to limitations,\n"
+	.string "I'm unable to increase this number.\p"
 	.string "Keep reading?$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage2:

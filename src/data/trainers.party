@@ -15699,8 +15699,66 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Yellow
 
-Pinsir @ Pinsirite
-Level: 5
+Toedscruel @ White Herb  
+Ability: Mycelium Might  
+EVs: 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Spikes  
+- Earth Power  
+- Leaf Storm  
+- Spore  
+
+Nidoking @ Life Orb  
+Ability: Sheer Force  
+Tera Type: Ground  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Earth Power  
+- Ice Beam  
+- Flamethrower  
+- Sludge Wave  
+
+Braviary-Hisui (M) @ Razor Claw  
+Ability: Tinted Lens  
+Tera Type: Psychic  
+EVs: 248 HP / 8 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Calm Mind  
+- Esper Wing  
+- Defog  
+- Air Slash  
+
+Slowking @ Heavy-Duty Boots  
+Ability: Regenerator  
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Future Sight  
+- Chilly Reception  
+- Scald  
+- Psychic  
+
+Magmortar @ Assault Vest  
+Ability: Flame Body  
+Tera Type: Water  
+EVs: 4 Def / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Psychic  
+- Earth Power  
+- Overheat  
+- Thunderbolt  
+
+Pinsir-Mega @ Pinsirite  
+Ability: Aerilate  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Bulk Up  
+- Return  
+- Earthquake  
+- X-Scissor  
 
 === TRAINER_ROXANNE_3 ===
 Name: ROXANNE
@@ -17792,7 +17850,6 @@ Mugshot: Blue
 
 Breloom @ Toxic Orb  
 Ability: Poison Heal  
-Tera Type: Fighting
 EVs: 252 HP / 248 Atk / 8 SpD  
 Adamant Nature  
 - Swords Dance  
@@ -17802,13 +17859,13 @@ Adamant Nature
 
 Pangoro @ Assault Vest  
 Ability: Iron Fist   
-Tera Type: Water  
+Tera Type: Steel
 EVs: 248 HP / 248 Atk / 4 Def / 8 SpD  
 Adamant Nature  
 - Bullet Punch  
 - Sucker Punch  
 - Drain Punch  
-- Ice Punch  
+- Bulk Up  
 
 Toxicroak @ Black Sludge  
 Ability: Poison Touch  

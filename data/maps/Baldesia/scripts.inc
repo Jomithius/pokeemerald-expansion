@@ -1080,7 +1080,7 @@ Baldesia_EventScript_HisuianZoruaTrigger_1:
 # 666 "data/maps/Baldesia/scripts.pory"
 	waitmovement 24
 # 667 "data/maps/Baldesia/scripts.pory"
-	setwildbattle SPECIES_ZORUA_HISUI, 50
+	setwildbattle SPECIES_ZORUA_HISUI, 70
 # 668 "data/maps/Baldesia/scripts.pory"
 	dowildbattle
 # 669 "data/maps/Baldesia/scripts.pory"

@@ -664,7 +664,7 @@ script Baldesia_EventScript_HisuianZoruaTrigger{
     waitmessage
     applymovement(24, Common_Movement_WalkRight)
     waitmovement(24)
-    setwildbattle(SPECIES_ZORUA_HISUI, 50)
+    setwildbattle(SPECIES_ZORUA_HISUI, 70)
     dowildbattle
     applymovement(LOCALID_PANINI, Baldesia_Movement_PaniniFaceBennis)
     waitmovement(0)
