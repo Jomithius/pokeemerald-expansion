@@ -140,8 +140,8 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 57
-                MOVE_WATER_SHURIKEN,
-                MOVE_BLIZZARD,
+                MOVE_SURF,
+                MOVE_ICY_WIND,
                 MOVE_DARK_PULSE,
                 MOVE_SLUDGE_WAVE,
             },

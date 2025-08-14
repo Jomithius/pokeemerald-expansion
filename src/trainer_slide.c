@@ -226,12 +226,12 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_WALLACE] = // Jimmy
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION!\nShow them the power of a CEO!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You've done well so far…\nBut are you ready for this?{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_JIMMY] = // Jimmy
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION!\nShow them the power of a CEO!{PAUSE_UNTIL_PRESS}"),
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You've done well so far…\nBut are you ready for this?{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is it, {B_PLAYER_NAME}!\nI'll show you the power of the void!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRUNO] = // Bruno
         {
@@ -275,7 +275,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAY_AZURE_MOUNTAIN] = // Up5
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay then!\n Let's go, BLAZIKEN!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("I bet this will surprise you, {B_PLAYER_NAME}!\nLet's go, BLAZIKEN!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_MAE_3] = // wachun
         {

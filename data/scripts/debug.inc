@@ -178,7 +178,7 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_MOMO_ARIA_STATE, 10
+	setvar VAR_MOMO_ARIA_STATE, 6
 	warp MAP_EASTERN_RUINS, 16, 4
 	waitstate
 	release

@@ -311,7 +311,7 @@ Route139_EventScript_Morgan_2:
 # 232 "data/maps/Route139/scripts.pory"
 	faceplayer
 # 233 "data/maps/Route139/scripts.pory"
-	playbgm MUS_ENCOUNTER_INTENSE, FALSE
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 234 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
 # 236 "data/maps/Route139/scripts.pory"
@@ -373,7 +373,7 @@ Route139_EventScript_Dinwiddle_2:
 # 259 "data/maps/Route139/scripts.pory"
 	faceplayer
 # 260 "data/maps/Route139/scripts.pory"
-	playbgm MUS_ENCOUNTER_INTENSE, FALSE
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 261 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
 # 263 "data/maps/Route139/scripts.pory"
@@ -435,7 +435,7 @@ Route139_EventScript_Widdledin_2:
 # 286 "data/maps/Route139/scripts.pory"
 	faceplayer
 # 287 "data/maps/Route139/scripts.pory"
-	playbgm MUS_ENCOUNTER_INTENSE, FALSE
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 288 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
 # 290 "data/maps/Route139/scripts.pory"
@@ -497,7 +497,7 @@ Route139_EventScript_Johnald_2:
 # 313 "data/maps/Route139/scripts.pory"
 	faceplayer
 # 314 "data/maps/Route139/scripts.pory"
-	playbgm MUS_ENCOUNTER_INTENSE, FALSE
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 315 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
 # 317 "data/maps/Route139/scripts.pory"
@@ -559,7 +559,7 @@ Route139_EventScript_Fredward_2:
 # 340 "data/maps/Route139/scripts.pory"
 	faceplayer
 # 341 "data/maps/Route139/scripts.pory"
-	playbgm MUS_ENCOUNTER_INTENSE, FALSE
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 342 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_Fredward_Text_0, MSGBOX_AUTOCLOSE
 # 346 "data/maps/Route139/scripts.pory"
