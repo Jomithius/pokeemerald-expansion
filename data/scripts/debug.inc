@@ -142,6 +142,11 @@ Debug_EventScript_Script_1::
 	setflag FLAG_LANDMARK_WACHUNPELON
 	setflag FLAG_LANDMARK_BALDESIA 
 	setflag FLAG_LANDMARK_SNOWDRIFT_CITY
+	setflag FLAG_SYS_POKENAV_GET
+	setflag FLAG_HAS_MATCH_CALL
+	setflag FLAG_SYS_STAT_EDIT_GET
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
 	release
 	end
 
@@ -169,18 +174,14 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setflag FLAG_SYS_POKENAV_GET
-	setflag FLAG_HAS_MATCH_CALL
-	setflag FLAG_SYS_STAT_EDIT_GET
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
+	setvar VAR_DIFFICULTY, DIFFICULTY_NORMAL
+	msgbox Debug_DifficultySetToHard, MSGBOX_DEFAULT
 	release
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_MOMO_ARIA_STATE, 6
-	warp MAP_EASTERN_RUINS, 16, 4
-	waitstate
+	setvar VAR_DIFFICULTY, DIFFICULTY_EASY
+	msgbox Debug_DifficultySetToEasy, MSGBOX_DEFAULT
 	release
 	end
 
@@ -199,6 +200,9 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
+	setvar VAR_MOMO_ARIA_STATE, 6
+	warp MAP_EASTERN_RUINS, 16, 4
+	waitstate
 	release
 	end
 
@@ -213,6 +217,12 @@ Debug_CheckSaveBlock::
 	msgbox Debug_PokemonStorageSize, MSGBOX_DEFAULT
 	release
 	end
+
+Debug_DifficultySetToHard::
+	.string "Difficulty set to hard.$"
+
+Debug_DifficultySetToEasy::
+	.string "Difficulty set to easy.$"
 
 Debug_SaveBlock1Size::
 	.string "SaveBlock1 size: {STR_VAR_1}b/{STR_VAR_2}b.\n"

@@ -142,7 +142,7 @@
 #define VAR_ROUTE127_STATE                               0x407A // Unused Var
 #define VAR_ROUTE128_STATE                               0x407B
 #define VAR_ROUTE129_STATE                               0x407C // Unused Var
-#define VAR_ROUTE130_STATE                               0x407D // Unused Var
+#define VAR_DIFFICULTY                                   0x407D // For difficulty state, easy or normal (but listed as normal or hard for player)
 #define VAR_AZURE_MOUNTAIN_RIVAL_STATE                   0x407E // For Brendan/May battle Azure Mountain
 #define VAR_GYM_LEADER_COUNT                             0x407F // For final rematches
 #define VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER        0x4080 // For unlocking rematches post game

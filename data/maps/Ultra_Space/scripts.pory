@@ -59,7 +59,6 @@ Ultra_Space_EventScript_TurnPlayerNorth::
 
 script Ultra_Space_EventScript_ArrivedInUltraSpace{
     lockall
-    setflag(FLAG_VISITED_ULTRA_SPACE)
     setrespawn(HEAL_LOCATION_ULTRA_SPACE)
     playse(SE_PIN)
     applymovement(2, Common_Movement_ExclamationMark)

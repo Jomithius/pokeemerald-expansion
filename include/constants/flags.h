@@ -1387,10 +1387,10 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_VISITED_ULTRA_SPACE                    (SYSTEM_FLAGS + 0x21) // custom
+#define FLAG_VISITED_ULTRA_SPACE                    (SYSTEM_FLAGS + 0x21) // custom, functionally unused
 #define FLAG_REGISTERED_LUNA_POKENAV                (SYSTEM_FLAGS + 0x22) // to replace luna's sprite
 #define FLAG_I_EXP_SHARE                            (SYSTEM_FLAGS + 0x23) // Exp Share gen 6
-#define FLAG_SYS_NO_BAG_USE                         (SYSTEM_FLAGS + 0x24) // No Item Use
+#define FLAG_SYS_NO_BAG_USE                         (SYSTEM_FLAGS + 0x24) // No Item Use functionally unused
 #define FLAG_SYS_DYNAMIC_LEVELS                     (SYSTEM_FLAGS + 0x25) // Dynamic Leveling for postgame
 #define FLAG_DEFEATED_JAMES_EVERGRANDE              (SYSTEM_FLAGS + 0x26) // Level Cap for James evergrande city
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag

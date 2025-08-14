@@ -1120,9 +1120,16 @@ Common_EventScript_ExpCandyClerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	goto_if_set FLAG_BADGE06_GET, Common_EventScript_ExpCandyClerkXL
-	goto_if_set FLAG_BADGE04_GET, Common_EventScript_ExpCandyClerkL
+	goto_if_set FLAG_BADGE07_GET, Common_EventScript_ExpCandyClerkXL
+	goto_if_set FLAG_BADGE05_GET, Common_EventScript_ExpCandyClerkL
+	goto_if_set FLAG_BADGE03_GET, Common_EventScript_ExpCandyClerkM
 	pokemart ExpCandy_Pokemart
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Common_EventScript_ExpCandyClerkM::
+	pokemart ExpCandy_PokemartM
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
@@ -1143,8 +1150,17 @@ Common_EventScript_ExpCandyClerkXL::
 ExpCandy_Pokemart:
 	.2byte ITEM_EXP_CANDY_XS
 	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_SERIOUS_MINT
+	pokemartlistend
+
+	.align 2
+ExpCandy_PokemartM:
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
 	.2byte ITEM_EXP_CANDY_M
 	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_MODEST_MINT
 	pokemartlistend
 
 	.align 2

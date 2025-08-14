@@ -1962,7 +1962,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Exp. Candy XS"),
         .pluralName = _("Exp. Candies XS"),
-        .price = 20,
+        .price = 200,
         .holdEffectParam = EXP_100,
         .description = COMPOUND_STRING(
             "Gives a very small\n"
@@ -1981,7 +1981,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Exp. Candy S"),
         .pluralName = _("Exp. Candies S"),
-        .price = 250,
+        .price = 1000,
         .holdEffectParam = EXP_800,
         .description = COMPOUND_STRING(
             "Gives a small\n"
@@ -2000,7 +2000,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Exp. Candy M"),
         .pluralName = _("Exp. Candies M"),
-        .price = 500,
+        .price = 2000,
         .holdEffectParam = EXP_3000,
         .description = COMPOUND_STRING(
             "Gives a moderate\n"
@@ -2019,7 +2019,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Exp. Candy L"),
         .pluralName = _("Exp. Candies L"),
-        .price = 1500,
+        .price = 5000,
         .holdEffectParam = EXP_10000,
         .description = COMPOUND_STRING(
             "Gives a large\n"
@@ -2038,7 +2038,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Exp. Candy XL"),
         .pluralName = _("Exp. Candies XL"),
-        .price = 3500,
+        .price = 8000,
         .holdEffectParam = EXP_30000,
         .description = COMPOUND_STRING(
             "Gives a very large\n"

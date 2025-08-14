@@ -5828,7 +5828,7 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     u8 holdEffectParam = ItemId_GetHoldEffectParam(*itemPtr);
 
     sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
-    if ((B_RARE_CANDY_CAP)) // was (!(B_RARE_CANDY_CAP && sInitialLevel >= GetCurrentLevelCap()))
+    if (!(B_RARE_CANDY_CAP && sInitialLevel >= GetCurrentLevelCap() && !(holdEffectParam == 0))) // was (!(B_RARE_CANDY_CAP && sInitialLevel >= GetCurrentLevelCap())), changed so rare candy works over level cap
     {
         BufferMonStatsToTaskData(mon, arrayPtr);
         cannotUseEffect = ExecuteTableBasedItemEffect(mon, *itemPtr, gPartyMenu.slotId, 0);

@@ -1,39 +1,25 @@
 mapscripts RustboroCity_Misa_House1F_MapScripts {}
 
-script Rustboro_Misa_Text_EventScript{
+script RustboroCity_Misa_House1F_EventScript_Misa{
     lock
-    if(flag(FLAG_RUSTBORO_MISA_HOUSE_RARECANDY) == TRUE){
-        goto(Misa_House1F_EventScript_Text2)
-    }
-    else{
-        goto(RustboroCity_Misa_House1F_MisaGiveItem)
-    }
+    goto_if_unset(FLAG_RUSTBORO_MISA_HOUSE_RARECANDY, RustboroCity_Misa_House1F_MisaGiveItem)
+    goto(Misa_House1F_EventScript_Text2)
+    end
 }
 
 script RustboroCity_Misa_House1F_MisaGiveItem{
     lock
     applymovement(1, MisaHouse1F_FacePlayer)
     waitmovement(0)
-    msgbox(MisaHouse1F_1, MSGBOX_AUTOCLOSE)
-    call(RustboroCity_Misa_House1F_GiveRareCandy)
+    msgbox(MisaHouse1F_1, MSGBOX_DEFAULT)
     waitmessage
-    msgbox(MisaHouse1F_2, MSGBOX_NPC)
+    giveitem(ITEM_RARE_CANDY, 10)
+    goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+    setflag(FLAG_RUSTBORO_MISA_HOUSE_RARECANDY)
+    msgbox(MisaHouse1F_2, MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
-}
-
-script RustboroCity_Misa_House1F_GiveRareCandy{
-    if(checkitemspace(ITEM_RARE_CANDY) >= 99){
-        msgbox(MisaHouseCantCarryCandy, MSGBOX_AUTOCLOSE)
-        waitmessage
-        end
-    }
-    else{
-        giveitem(ITEM_RARE_CANDY, 10)
-        setflag(FLAG_RUSTBORO_MISA_HOUSE_RARECANDY)
-    }
-    return
 }
 
 script Misa_House1F_EventScript_Text2{
