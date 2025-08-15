@@ -14450,6 +14450,7 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Houndoominite,
         .iconPalette = gItemIconPalette_Houndoominite,
     },
+
     [ITEM_RATTATITE] =
     {
         .name = _("Rattatite"),
@@ -14466,6 +14467,7 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Aerodactylite,
         .iconPalette = gItemIconPalette_Aerodactylite,
     },
+
     [ITEM_MILTANKITE] =
     {
         .name = _("Miltankite"),
@@ -14482,6 +14484,7 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Audinite,
         .iconPalette = gItemIconPalette_Audinite,
     },
+
     [ITEM_DRAGONITEITE] =
     {
         .name = _("Dragoniteite"),
@@ -14497,5 +14500,21 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
         .iconPic = gItemIcon_Sharpedonite,
         .iconPalette = gItemIconPalette_Sharpedonite,
+    },
+
+    [ITEM_MODE_SWITCHER] =
+    {
+        .name = _("Mode Switcher"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A device that\n"
+            "changes the game's\n"
+            "difficulty."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ModeSwitcher,
+        .iconPic = gItemIcon_PokeRadar,
+        .iconPalette = gItemIconPalette_PokeRadar,
     },
 };

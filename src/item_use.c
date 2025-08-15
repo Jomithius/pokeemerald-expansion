@@ -1641,6 +1641,28 @@ void ItemUseOutOfBattle_Fantasia(u8 taskId)
     }
 }
 
+static void ItemUseCB_ModeSwitcher(u8 taskId)
+{
+    ScriptContext_SetupScript(EventScript_ChangeDifficulty);
+    DestroyTask(taskId);
+}
+
+void ItemUseOutOfBattle_ModeSwitcher(u8 taskId)
+{
+    if (!gTasks[taskId].tUsingRegisteredKeyItem)
+    {
+        sItemUseOnFieldCB = ItemUseCB_ModeSwitcher;
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
+    }
+    else
+    {
+        // TODO: handle key items with callbacks to menus allow to be used by registering them.
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+    }
+}
+
 #undef tUsingRegisteredKeyItem
 
 void ItemUseOutOfBattle_PokeBall(u8 taskId)

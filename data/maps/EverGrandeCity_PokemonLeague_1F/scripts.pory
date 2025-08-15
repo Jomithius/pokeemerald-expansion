@@ -194,9 +194,10 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline{
 
 script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 	lock
-	message("What move do you want me\nto teach?")
+	msgbox("What move do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "PSYCHIC NOISE", "EXPANDING FORCE", "BREAKING SWIPE", "SLUDGE WAVE", 
-		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT")
+		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT", "BRAVE BIRD",
+		"RISING VOLTAGE")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_PsychicNoiseTeach)
@@ -220,6 +221,12 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 			goto(MoveTutor_EventScript_DragonPulseTeach)
 		case 10:
 			goto(MoveTutor_EventScript_TeleportTeach)
+		case 11:
+			goto(MoveTutor_EventScript_BraveBirdTeach)
+		case 12:
+			goto(MoveTutor_EventScript_RisingVoltageTeach)
+		case MULTI_B_PRESSED:
+			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 		default:
 			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 	}
@@ -325,9 +332,29 @@ script MoveTutor_EventScript_TeleportTeach{
 	end
 }
 
+script MoveTutor_EventScript_BraveBirdTeach{
+	msgbox("Which POKéMON do you want to\nteach BRAVE BIRD to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_BRAVE_BIRD)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_RisingVoltageTeach{
+	msgbox("Which POKéMON do you want to\nteach RISING VOLTAGE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_RISING_VOLTAGE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
 script EverGrandeCity_PokemonLeague_1F_EventScript_Youngster{
 	msgbox("I made it here, but the\n
-		ELITE FOUR is way too strong!", MSGBOX_NPC)
+		ELITE FOUR is way too strong!\p
+		At least the first one is always\n
+		really nice to me.", MSGBOX_NPC)
 	end
 }
 
@@ -338,7 +365,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_Woman{
 		She's always playing a game or\n
 		reading a stupid book.\p
 		I don't know how she beats me\n
-		while being distracted like that.", MSGBOX_NPC)
+		while being distracted like that…", MSGBOX_NPC)
 	end
 }
 
@@ -490,4 +517,8 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning{
 	setvar(VAR_FINAL_REMATCH_STATE, 6)
 	releaseall
 	end
+}
+
+text EverGrandeCity_PokemonLeague_1F_Text_WhichPkmnDoYouWantToTeach{
+	"Which POKéMON do you want to\nteach {STR_VAR_1} to?"
 }

@@ -71,6 +71,9 @@ PlayersHouse_2F_EventScript_WallClock::
 	call_if_eq VAR_RESULT, FEMALE, PlayersHouse_2F_EventScript_MomComesUpstairsFemale
 	playse SE_EXIT
 	removeobject VAR_0x8008
+	waitse
+	delay 16
+	goto PlayersHouse_2F_EventScript_ChooseDifficulty @ script is written in LittlerootTown_BrendansHouse_2F
 	releaseall
 	end
 

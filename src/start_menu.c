@@ -51,6 +51,8 @@
 #include "constants/songs.h"
 #include "ui_stat_editor.h"
 
+// extern u8 EventScript_ChangeDifficulty[];
+
 // Menu actions
 enum
 {
@@ -70,6 +72,7 @@ enum
     MENU_ACTION_STAT_EDITOR,
     MENU_ACTION_DEBUG,
     MENU_ACTION_DEXNAV,
+    MENU_ACTION_MODE_SWITCH,
 };
 
 // Save status
@@ -113,6 +116,7 @@ static bool8 StartMenuBattlePyramidBagCallback(void);
 static bool8 StartMenuStatEditorCallback(void);
 static bool8 StartMenuDebugCallback(void);
 static bool8 StartMenuDexNavCallback(void);
+static bool8 StartMenuModeSwitchCallback(void);
 
 // Menu callbacks
 static bool8 SaveStartCallback(void);
@@ -209,6 +213,7 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_STAT_EDITOR]     = {gText_StatEditor,  {.u8_void = StartMenuStatEditorCallback}},
     [MENU_ACTION_DEBUG]           = {sText_MenuDebug,   {.u8_void = StartMenuDebugCallback}},
     [MENU_ACTION_DEXNAV]          = {gText_MenuDexNav,  {.u8_void = StartMenuDexNavCallback}},
+    [MENU_ACTION_MODE_SWITCH]     = {gText_MenuModeSwitch,  {.u8_void = StartMenuModeSwitchCallback}},
 };
 
 static const struct BgTemplate sBgTemplates_LinkBattleSave[] =
@@ -282,6 +287,7 @@ static void ShowSaveInfoWindow(void);
 static void RemoveSaveInfoWindow(void);
 static void HideStartMenuWindow(void);
 static void HideStartMenuDebug(void);
+static void SetBattleStyleToSetMode(void);
 
 void SetDexPokemonPokenavFlags(void) // unused
 {
@@ -354,6 +360,8 @@ static void BuildNormalStartMenu(void)
     AddStartMenuAction(MENU_ACTION_PLAYER);
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
+    //if (FlagGet(FLAG_SYS_DIFFICULTY_SET) == TRUE)
+        //AddStartMenuAction(MENU_ACTION_MODE_SWITCH);
     AddStartMenuAction(MENU_ACTION_EXIT);
 }
 
@@ -658,7 +666,8 @@ static bool8 HandleStartMenuInput(void)
             && gMenuCallback != StartMenuExitCallback
             && gMenuCallback != StartMenuDebugCallback
             && gMenuCallback != StartMenuSafariZoneRetireCallback
-            && gMenuCallback != StartMenuBattlePyramidRetireCallback)
+            && gMenuCallback != StartMenuBattlePyramidRetireCallback
+            && gMenuCallback != StartMenuModeSwitchCallback)
         {
            FadeScreen(FADE_TO_BLACK, 0);
         }
@@ -1508,6 +1517,21 @@ static bool8 StartMenuStatEditorCallback(void)
 static bool8 StartMenuDexNavCallback(void)
 {
     CreateTask(Task_OpenDexNavFromStartMenu, 0);
+    return TRUE;
+}
+
+static void SetBattleStyleToSetMode(void)
+{
+    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SET;
+}
+
+static bool8 StartMenuModeSwitchCallback(void)
+{
+    RemoveExtraStartMenuWindows();
+    HideStartMenu();
+    SetBattleStyleToSetMode();
+    ScriptContext_SetupScript(EventScript_ChangeDifficulty);
+
     return TRUE;
 }
 

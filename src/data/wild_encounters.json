@@ -15596,7 +15596,7 @@
           "map": "MAP_WACHUNPELON_CITY_SEWER",
           "base_label": "gWachunpelonCity_Sewer0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 65,

@@ -933,7 +933,7 @@ const struct Tileset gTileset_DesertVillage =
     .palettes = gTilesetPalettes_DesertVillage,
     .metatiles = gMetatiles_DesertVillage,
     .metatileAttributes = gMetatileAttributes_DesertVillage,
-    .callback = NULL,
+    .callback = InitTilesetAnim_DesertVillage,
 };
 
 const struct Tileset gTileset_DistortionWorld =

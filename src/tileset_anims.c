@@ -45,6 +45,7 @@ static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
 static void TilesetAnim_LugiaAltar(u16);
 static void TilesetAnim_Void(u16);
+static void TilesetAnim_DesertVillage(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -81,6 +82,8 @@ static void QueueAnimTiles_Void_Star1(u16);
 static void QueueAnimTiles_Void_Star2(u16);
 static void QueueAnimTiles_Void_Star3(u16);
 static void QueueAnimTiles_Void_Star4(u16);
+static void QueueAnimTiles_DesertVillage_Leaf1(u16);
+static void QueueAnimTiles_DesertVillage_Leaf2(u16);
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -663,6 +666,30 @@ const u16 *const gTilesetAnims_Void_Star4[] = {
     gTilesetAnims_Void_Star4_Frame3
 };
 
+const u16 gTilesetAnims_DesertVillage_Leaf1_Frame0[] = INCBIN_U16("data/tilesets/secondary/desert_village/anim/leaf1/0.4bpp");
+const u16 gTilesetAnims_DesertVillage_Leaf1_Frame1[] = INCBIN_U16("data/tilesets/secondary/desert_village/anim/leaf1/1.4bpp");
+const u16 gTilesetAnims_DesertVillage_Leaf1_Frame2[] = INCBIN_U16("data/tilesets/secondary/desert_village/anim/leaf1/2.4bpp");
+const u16 tileset_anims_space_20[16] = {};
+
+const u16 *const gTilesetAnims_DesertVillage_Leaf1[] = {
+    gTilesetAnims_DesertVillage_Leaf1_Frame0,
+    gTilesetAnims_DesertVillage_Leaf1_Frame1,
+    gTilesetAnims_DesertVillage_Leaf1_Frame2,
+    gTilesetAnims_DesertVillage_Leaf1_Frame1
+};
+
+const u16 gTilesetAnims_DesertVillage_Leaf2_Frame0[] = INCBIN_U16("data/tilesets/secondary/desert_village/anim/leaf2/0.4bpp");
+const u16 gTilesetAnims_DesertVillage_Leaf2_Frame1[] = INCBIN_U16("data/tilesets/secondary/desert_village/anim/leaf2/1.4bpp");
+const u16 gTilesetAnims_DesertVillage_Leaf2_Frame2[] = INCBIN_U16("data/tilesets/secondary/desert_village/anim/leaf2/2.4bpp");
+const u16 tileset_anims_space_21[16] = {};
+
+const u16 *const gTilesetAnims_DesertVillage_Leaf2[] = {
+    gTilesetAnims_DesertVillage_Leaf2_Frame0,
+    gTilesetAnims_DesertVillage_Leaf2_Frame1,
+    gTilesetAnims_DesertVillage_Leaf2_Frame2,
+    gTilesetAnims_DesertVillage_Leaf2_Frame1
+};
+
 static void ResetTilesetAnimBuffer(void)
 {
     sTilesetDMA3TransferBufferSize = 0;
@@ -965,6 +992,13 @@ void InitTilesetAnim_Void(void)
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
     sSecondaryTilesetAnimCallback = TilesetAnim_Void;
+}
+
+void InitTilesetAnim_DesertVillage(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_DesertVillage;
 }
 
 static void TilesetAnim_Rustboro(u16 timer)
@@ -1272,6 +1306,18 @@ static void TilesetAnim_Void(u16 timer)
     }
 }
 
+static void TilesetAnim_DesertVillage(u16 timer)
+{
+    if (timer % 32 == 0)
+    {
+        QueueAnimTiles_DesertVillage_Leaf1(timer / 32);
+    }
+    if (timer % 32 == 1)
+    {
+        QueueAnimTiles_DesertVillage_Leaf2(timer / 32);
+    }
+}
+
 static void QueueAnimTiles_Building_TVTurnedOn(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Building_TvTurnedOn);
@@ -1383,4 +1429,16 @@ static void QueueAnimTiles_Void_Star4(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Void_Star4);
     AppendTilesetAnimToBuffer(gTilesetAnims_Void_Star4[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 16)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_DesertVillage_Leaf1(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_DesertVillage_Leaf1);
+    AppendTilesetAnimToBuffer(gTilesetAnims_DesertVillage_Leaf1[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 44)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_DesertVillage_Leaf2(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_DesertVillage_Leaf2);
+    AppendTilesetAnimToBuffer(gTilesetAnims_DesertVillage_Leaf2[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 100)), 4 * TILE_SIZE_4BPP);
 }

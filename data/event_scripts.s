@@ -58,6 +58,7 @@
 #include "constants/union_room.h"
 #include "constants/vars.h"
 #include "constants/weather.h"
+#include "constants/difficulty.h"
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"
@@ -1280,6 +1281,52 @@ EventScript_UnlockEliteFourFinalRematch::
 gText_TheEliteFourAreReady::
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The ELITE FOUR are now ready\n"
 	.string "for their final battles.$"
+
+EventScript_ChangeDifficulty::
+	msgbox gText_ChangeDifficulty, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, EventScript_SetNewDifficulty
+	closemessage
+	releaseall
+	end
+
+gText_ChangeDifficulty::
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Change difficulty?$"
+
+EventScript_SetNewDifficulty::
+	goto_if_set FLAG_SYS_HARD_MODE, EventScript_SetToNormalDifficulty
+	goto EventScript_SetToHardDifficulty
+	end
+
+EventScript_SetToNormalDifficulty::
+    lockall
+    playfanfare MUS_LEVEL_UP
+    waitfanfare
+    msgbox gText_DifficultySetToNormal, MSGBOX_DEFAULT
+    closemessage
+    setdifficulty DIFFICULTY_EASY
+    clearflag FLAG_SYS_HARD_MODE
+	clearflag FLAG_SYS_SLEEP_CLAUSE
+    releaseall
+    end
+
+gText_DifficultySetToNormal::
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Set to NORMAL MODE.$"
+
+EventScript_SetToHardDifficulty::
+    lockall
+    playfanfare MUS_LEVEL_UP
+    waitfanfare
+    msgbox gText_DifficultySetToHard, MSGBOX_DEFAULT
+    closemessage
+    setdifficulty DIFFICULTY_NORMAL
+    setflag FLAG_SYS_HARD_MODE
+	setflag FLAG_SYS_SLEEP_CLAUSE
+    releaseall
+    end
+
+gText_DifficultySetToHard::
+	.string "{COLOR RED}{SHADOW LIGHT_RED}Set to HARD MODE.$"
+
 
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"

@@ -15,6 +15,7 @@
 #include "window.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
+#include "event_data.h"
 
 #define tMenuSelection data[0]
 #define tTextSpeed data[1]
@@ -466,10 +467,17 @@ static void BattleScene_DrawChoices(u8 selection)
 
 static u8 BattleStyle_ProcessInput(u8 selection)
 {
+    
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
-        selection ^= 1;
-        sArrowPressed = TRUE;
+        if(FlagGet(FLAG_SYS_HARD_MODE))
+        {
+            sArrowPressed = FALSE;
+        }
+        else{
+            selection ^= 1;
+            sArrowPressed = TRUE;
+        }
     }
 
     return selection;

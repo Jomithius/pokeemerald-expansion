@@ -668,5 +668,6 @@ extern const u8 EventScript_MovedTooFast[];
 extern const u8 EventScript_Fantasia[];
 extern const u8 EventScript_RegionMapNHoenn[];
 extern const u8 EventScript_UnlockEliteFourFinalRematch[];
+extern const u8 EventScript_ChangeDifficulty[];
 
 #endif // GUARD_EVENT_SCRIPTS_H
