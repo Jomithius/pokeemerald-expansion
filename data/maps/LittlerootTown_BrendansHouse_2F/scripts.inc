@@ -629,7 +629,7 @@ PlayersHouse_2F_EventScript_SetToNormalDifficulty::
 # 319 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitfanfare
 # 320 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0, MSGBOX_AUTOCLOSE
+	msgbox PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0, MSGBOX_DEFAULT
 # 322 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmessage
 # 323 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -650,12 +650,14 @@ PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo::
 	lockall
 # 333 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	msgbox PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo_Text_0, MSGBOX_YESNO
-# 339 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 338 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmessage
+# 339 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, PlayersHouse_2F_EventScript_SetToHardDifficulty
 # 340 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, PlayersHouse_2F_EventScript_SetToNormalDifficulty
+	closemessage
 # 341 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	goto PlayersHouse_2F_EventScript_SetToHardDifficulty
+	goto PlayersHouse_2F_EventScript_SetToNormalDifficulty
 	end
 
 
@@ -667,7 +669,7 @@ PlayersHouse_2F_EventScript_SetToHardDifficulty::
 # 348 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitfanfare
 # 349 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0, MSGBOX_AUTOCLOSE
+	msgbox PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0, MSGBOX_DEFAULT
 # 351 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmessage
 # 352 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -701,7 +703,7 @@ PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0:
 
 PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo_Text_0:
 # 333 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "{COLOR RED}{SHADOW LIGHT_RED}Set to HARD MODE.\p HARD MODE gives better AI to TRAINERS,\n EVs to boss TRAINER POKéMON,\l forces SET MODE and SLEEP CLAUSE, and\l disables bag use in TRAINER battles.\p Is this the difficulty you want?$"
+	.string "{COLOR RED}{SHADOW LIGHT_RED}HARD MODE gives better AI to TRAINERS,\n EVs to boss TRAINER POKéMON, forces\l SET MODE and SLEEP CLAUSE, and turns\l off bag use during TRAINER battles.\p Is this the difficulty you want?$"
 
 PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0:
 # 349 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"

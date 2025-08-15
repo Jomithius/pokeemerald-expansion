@@ -156,7 +156,7 @@ script BaldesianForestDojo_EventScript_ExplainDojo{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     msgbox("Kahaha!\n
-        Alright! Good luck!", MSGBOX_AUTOCLOSE)
+        All right! Good luck!", MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 2)
     special(HealPlayerParty)
@@ -186,13 +186,13 @@ script BaldesianForestDojo_EventScript_ReadyToChallenge{
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
         waitmovement(0)
         msgbox("Kahahaha!\n
-            Alright! Good luck!", MSGBOX_AUTOCLOSE)
+            All right! Good luck!", MSGBOX_AUTOCLOSE)
         waitmessage
         special(HealPlayerParty)
         goto(BaldesianForestDojo_EventScript_DojoChallenge)
     }
     else{
-        msgbox("Alright.\n
+        msgbox("All right.\n
             Let me know when you're ready.", MSGBOX_AUTOCLOSE)
         waitmessage
     }
@@ -222,13 +222,13 @@ script BaldesianForestDojo_EventScript_ReadyToChallengeBruno{
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
         waitmovement(0)
         msgbox("Kahahaha!\n
-            Alright! Good luck!", MSGBOX_AUTOCLOSE)
+            All right! Good luck!", MSGBOX_AUTOCLOSE)
         waitmessage
         special(HealPlayerParty)
         goto(BaldesianForestDojo_EventScript_ChallengeBruno)
     }
     else{
-        msgbox("Alright.\n
+        msgbox("All right.\n
             Let me know when you're ready.", MSGBOX_AUTOCLOSE)
         waitmessage
     }

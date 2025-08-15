@@ -471,7 +471,7 @@ MoveTutor_EventScript_LiquidationDeclined_Text_0:
 
 MoveTutor_EventScript_LiquidationTaught_Text_0:
 # 238 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	.string "Alright!\p Come back if you ever want to do\n business again!$"
+	.string "All right!\p Come back if you ever want to do\n business again!$"
 
 LilycoveCity_DepartmentStore_1F_Text_LiquidationTeach::
 # 246 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"

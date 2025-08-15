@@ -93,7 +93,7 @@ EverGrandeCity_SidneysRoom_Text_IntroSpeech:
     .string "{PLAYER}. I really mean it.$"
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech2:
-    .string "Alright, time for me to be professional!\n"
+    .string "Okay, time for me to be professional!\n"
 	.string "Welcome to the POKéMON LEAGUE!\p"
     .string "I'm MISA of the ELITE FOUR.\n"
     .string "ARE YOU READY TO GET S-MOTHERED?$"

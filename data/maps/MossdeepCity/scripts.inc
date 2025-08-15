@@ -1407,7 +1407,7 @@ MossdeepCity_EventScript_AriaBattle_Text_0:
 
 MossdeepCity_EventScript_AriaBattle_Text_1:
 # 574 "data/maps/MossdeepCity/scripts.pory"
-	.string "{PLAYER}!\n You scared me!\p Wait…\n This murderous intent…!\l I see… So you would challenge this KNIGHT?\p Alright! I'll show you the power\n of the SACRED BLADE!$"
+	.string "{PLAYER}!\n You scared me!\p Wait…\n This murderous intent…!\l I see… So you would challenge this KNIGHT?\p All right! I'll show you the power of\n the SACRED BLADE!$"
 
 MossdeepCity_EventScript_AriaBattle_Text_2:
 # 582 "data/maps/MossdeepCity/scripts.pory"
@@ -1455,7 +1455,7 @@ MoveTutor_EventScript_RecoverDeclined_Text_0:
 
 MoveTutor_EventScript_RecoverTaught_Text_0:
 # 733 "data/maps/MossdeepCity/scripts.pory"
-	.string "Alright.\p Come back if you want to recover\n from your training.$"
+	.string "All right.\p Come back if you ever need to recover\n from your training.$"
 
 MossdeepCity_Text_RecoverTeach::
 # 741 "data/maps/MossdeepCity/scripts.pory"

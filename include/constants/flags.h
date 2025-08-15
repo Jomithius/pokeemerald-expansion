@@ -1393,7 +1393,7 @@
 #define FLAG_SYS_NO_BAG_USE                         (SYSTEM_FLAGS + 0x24) // No Item Use functionally unused
 #define FLAG_SYS_DYNAMIC_LEVELS                     (SYSTEM_FLAGS + 0x25) // Dynamic Leveling for postgame
 #define FLAG_DEFEATED_JAMES_EVERGRANDE              (SYSTEM_FLAGS + 0x26) // Level Cap for James evergrande city
-#define FLAG_SYS_DIFFICULTY_SET                     (SYSTEM_FLAGS + 0x27) // For MODE option in start menu
+#define FLAG_SYS_DIFFICULTY_SET                     (SYSTEM_FLAGS + 0x27) // For MODE option in start menu 2183
 
 #define FLAG_SYS_USE_FLASH                          (SYSTEM_FLAGS + 0x28)
 #define FLAG_SYS_USE_STRENGTH                       (SYSTEM_FLAGS + 0x29)

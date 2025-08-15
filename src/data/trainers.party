@@ -4890,16 +4890,15 @@ IVs: 0 Atk
 - Reflect  
 - Light Screen  
 
-Gastrodon (M) @ Leftovers  
-Ability: Storm Drain  
+Quagsire @ Rocky Helmet  
+Ability: Unaware  
 Level: 75   
-EVs: 252 HP / 252 SpA / 4 SpD  
-Modest Nature  
-IVs: 0 Atk  
-- Earth Power  
-- Scald  
-- Pain Split  
-- Sludge Bomb  
+EVs: 252 HP / 4 Atk / 252 Def  
+Impish Nature  
+- Stealth Rock  
+- Liquidation  
+- Earthquake  
+- Recover 
 
 Hydreigon (M) @ Assault Vest  
 Ability: Levitate  
@@ -5030,24 +5029,24 @@ Mugshot: Yellow
 Carbink  
 Ability: Clear Body  
 Level: 13   
-EVs: 32 HP / 92 Atk / 124 SpD  
+EVs: 32 HP 
+Impish Nature  
 - Rock Tomb  
 - Flail  
 - Sharpen  
 
 Rufflet  
 Ability: Hustle  
-Level: 12   
-EVs: 56 HP / 44 Atk / 76 Spe  
+Level: 12
+Adamant Nature     
 - Work Up  
 - Cut  
 - Pluck  
 
 Clobbopus  
 Ability: Technician  
-Level: 12   
-EVs: 76 HP / 104 Atk / 76 SpD  
-- Bulk Up  
+Level: 12 
+Adamant Nature    
 - Rock Smash  
 - Detect  
 - Feint  
@@ -5055,7 +5054,6 @@ EVs: 76 HP / 104 Atk / 76 SpD
 Cubone  
 Ability: Battle Armor  
 Level: 14   
-EVs: 192 HP / 136 Atk / 32 Def / 108 SpD  
 Quiet Nature  
 - Bonemerang  
 - Rock Tomb  
@@ -5063,8 +5061,7 @@ Quiet Nature
 
 Tentacool @ Oran Berry  
 Ability: Liquid Ooze  
-Level: 15   
-EVs: 100 HP / 112 Def / 164 SpA  
+Level: 15    
 Lax Nature  
 IVs: 0 Atk  
 - Chilling Water  
@@ -5074,7 +5071,6 @@ IVs: 0 Atk
 Magby @ Sitrus Berry  
 Ability: Flame Body  
 Level: 16   
-EVs: 104 HP / 60 Def / 196 SpA / 148 Spe  
 Modest Nature  
 IVs: 0 Atk  
 - Incinerate  
@@ -10760,10 +10756,11 @@ AI: Basic Trainer
 Wartortle
 Level: 30
 
-Lombre
+Beautifly
 Level: 32
 
 Eevee
+Ability: Adaptability
 Level: 32
 
 Munchlax
@@ -15776,6 +15773,7 @@ IVs: 0 Atk
 
 Rotom-Wash @ Rocky Helmet  
 Ability: Levitate  
+Shiny: Yes  
 Tera Type: Water  
 EVs: 252 HP / 252 Def / 4 SpD  
 Bold Nature  
@@ -15783,7 +15781,7 @@ IVs: 0 Atk
 - Volt Switch  
 - Hydro Pump  
 - Pain Split  
-- Discharge  
+- Discharge
 
 Magmortar @ Heavy-Duty Boots  
 Ability: Flame Body  
@@ -17767,7 +17765,7 @@ Level: 100
 Mudsdale
 Level: 100
 
-Rotom-Wash
+Rotom-Fan
 Level: 100
 
 Baxcalibur
@@ -24547,15 +24545,14 @@ IVs: 0 Atk
 - Reflect  
 - Light Screen  
 
-Gastrodon (M) @ Leftovers  
-Ability: Storm Drain  
+Quagsire @ Rocky Helmet  
+Ability: Unaware  
 Level: 75   
-Modest Nature  
-IVs: 0 Atk  
-- Earth Power  
-- Scald  
-- Pain Split  
-- Sludge Bomb  
+Impish Nature  
+- Stealth Rock  
+- Liquidation  
+- Earthquake  
+- Spikes
 
 Hydreigon (M) @ Assault Vest  
 Ability: Levitate  
@@ -35736,13 +35733,14 @@ IVs: 0 Atk
 
 Rotom-Wash @ Rocky Helmet  
 Ability: Levitate  
+Shiny: Yes  
 Tera Type: Water  
 Bold Nature  
 IVs: 0 Atk  
 - Volt Switch  
 - Hydro Pump  
 - Pain Split  
-- Discharge  
+- Discharge 
 
 Magmortar @ Heavy-Duty Boots  
 Ability: Flame Body  
@@ -37715,7 +37713,7 @@ Level: 100
 Mudsdale
 Level: 100
 
-Rotom-Wash
+Rotom-Fan
 Level: 100
 
 Baxcalibur

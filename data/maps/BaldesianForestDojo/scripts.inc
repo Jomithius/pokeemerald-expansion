@@ -1341,7 +1341,7 @@ BaldesianForestDojo_EventScript_ExplainDojo_Text_0:
 
 BaldesianForestDojo_EventScript_ExplainDojo_Text_1:
 # 158 "data/maps/BaldesianForestDojo/scripts.pory"
-	.string "Kahaha!\n Alright! Good luck!$"
+	.string "Kahaha!\n All right! Good luck!$"
 
 BaldesianForestDojo_EventScript_ReadyToChallenge_Text_0:
 # 170 "data/maps/BaldesianForestDojo/scripts.pory"
@@ -1349,11 +1349,11 @@ BaldesianForestDojo_EventScript_ReadyToChallenge_Text_0:
 
 BaldesianForestDojo_EventScript_ReadyToChallenge_Text_1:
 # 188 "data/maps/BaldesianForestDojo/scripts.pory"
-	.string "Kahahaha!\n Alright! Good luck!$"
+	.string "Kahahaha!\n All right! Good luck!$"
 
 BaldesianForestDojo_EventScript_ReadyToChallenge_Text_2:
 # 195 "data/maps/BaldesianForestDojo/scripts.pory"
-	.string "Alright.\n Let me know when you're ready.$"
+	.string "All right.\n Let me know when you're ready.$"
 
 BaldesianForestDojo_EventScript_ReadyToChallengeBruno_Text_0:
 # 205 "data/maps/BaldesianForestDojo/scripts.pory"

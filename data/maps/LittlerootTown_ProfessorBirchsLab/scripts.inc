@@ -2179,7 +2179,7 @@ LittlerootTown_ProfessorBirchsLab_Text_MayIHaveToPrepare::
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanIHaveToPrepare::
 # 1118 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	.string "BRENDAN: Alright!\n I have to go get prepared to head out…\p Huh? What am I hyped for?\n You'll find out soon enough.$"
+	.string "BRENDAN: All right!\n I have to go get prepared to head out…\p Huh? What am I hyped for?\n You'll find out soon enough.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchIllBeCountingOnYou::
 # 1125 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

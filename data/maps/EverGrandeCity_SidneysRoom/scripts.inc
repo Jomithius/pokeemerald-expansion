@@ -189,7 +189,7 @@ EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 # 95 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 EverGrandeCity_SidneysRoom_Text_IntroSpeech2:
 # 96 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "Alright, time for me to be professional!\n"
+    .string "Okay, time for me to be professional!\n"
 # 97 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "Welcome to the POKéMON LEAGUE!\p"
 # 98 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"

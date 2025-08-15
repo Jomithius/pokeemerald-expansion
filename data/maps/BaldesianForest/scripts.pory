@@ -295,7 +295,7 @@ script BaldesianForest_EventScript_OldManDojoGiveTeaCup{
     waitmessage
     if(var(VAR_RESULT) == YES){
         msgbox("Gahaha!\n
-            Alright!\p
+            All right!\p
             I'm holding something in my hands.\n
             Left or right?", MSGBOX_DEFAULT)
         dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Left!", "Right!")

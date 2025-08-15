@@ -232,7 +232,7 @@ script Route139_EventScript_Morgan{
         faceplayer
         playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
         msgbox("Huh? The boss said we should battle?\n
-            Alright, sounds fun!", MSGBOX_AUTOCLOSE)
+            All right, sounds fun!", MSGBOX_AUTOCLOSE)
         waitmessage
         trainerbattle_no_intro(TRAINER_MORGAN, Route139_Text_WorkerDefeat)
         msgbox("Okay!\n
@@ -259,7 +259,7 @@ script Route139_EventScript_Dinwiddle{
         faceplayer
         playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
         msgbox("Huh? The boss said we should battle?\n
-            Alright, sounds fun!", MSGBOX_AUTOCLOSE)
+            All right, sounds fun!", MSGBOX_AUTOCLOSE)
         waitmessage
         trainerbattle_no_intro(TRAINER_DINWIDDLE, Route139_Text_WorkerDefeat)
         msgbox("Okay!\n
@@ -286,7 +286,7 @@ script Route139_EventScript_Widdledin{
         faceplayer
         playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
         msgbox("Huh? The boss said we should battle?\n
-            Alright, sounds fun!", MSGBOX_AUTOCLOSE)
+            All right, sounds fun!", MSGBOX_AUTOCLOSE)
         waitmessage
         trainerbattle_no_intro(TRAINER_WIDDLEDIN, Route139_Text_WorkerDefeat)
         msgbox("Okay!\n
@@ -313,7 +313,7 @@ script Route139_EventScript_Johnald{
         faceplayer
         playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
         msgbox("Huh? The boss said we should battle?\n
-            Alright, sounds fun!", MSGBOX_AUTOCLOSE)
+            All right, sounds fun!", MSGBOX_AUTOCLOSE)
         waitmessage
         trainerbattle_no_intro(TRAINER_JOHNALD, Route139_Text_WorkerDefeat)
         msgbox("Okay!\n
@@ -340,7 +340,7 @@ script Route139_EventScript_Fredward{
         faceplayer
         playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
         msgbox("Huh? The boss said we should battle?\n
-            Alright!\p
+            All right!\p
             Just warning you, I'm the strongest out\n
             of all of us!", MSGBOX_AUTOCLOSE)
         waitmessage

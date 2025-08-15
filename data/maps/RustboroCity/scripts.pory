@@ -1392,8 +1392,8 @@ script RustboroCity_Eventscript_Promise_To_Misa{
 }
 
 script RustboroCityGym_EventScript_Misa{
-    setflag(FLAG_TEMP_5)
 	lockall
+	setflag(FLAG_TEMP_5)
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, RustboroPlayerStepBack)
@@ -1424,7 +1424,7 @@ text RustboroMisa1{"Oh! Excuse me. I didn't see you there.\l
 It's nice to meet you.\n
 My name's MISA.\p
 MISA: That {STR_VAR_1}… So cute!\n
-So you're a new trainer? That's great!\l 
+So you're a new TRAINER? That's great!\l 
 It looks like you're already raising\l 
 your POKéMON with love and care.\p
 I actually have a son around the\n

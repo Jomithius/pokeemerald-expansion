@@ -80,7 +80,7 @@ script MoveTutor_EventScript_RoostDeclined{
 }
 
 script MoveTutor_EventScript_RoostTaught{
-	msgbox("Alright!\p
+	msgbox("All right!\p
 		Come back if you have more birds!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release

@@ -576,8 +576,8 @@ script MossdeepCity_EventScript_AriaBattle{
 		Wait…\n
 		This murderous intent…!\l
 		I see… So you would challenge this KNIGHT?\p
-		Alright! I'll show you the power\n
-		of the SACRED BLADE!", MSGBOX_AUTOCLOSE)
+		All right! I'll show you the power of\n
+		the SACRED BLADE!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	trainerbattle_no_intro(TRAINER_ARIA, "M-My lord…")
 	msgbox("ARRGGGHH!\n
@@ -730,8 +730,8 @@ script MoveTutor_EventScript_RecoverDeclined{
 }
 
 script MoveTutor_EventScript_RecoverTaught{
-	msgbox("Alright.\p
-		Come back if you want to recover\n
+	msgbox("All right.\p
+		Come back if you ever need to recover\n
 		from your training.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release

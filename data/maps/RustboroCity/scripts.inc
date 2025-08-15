@@ -2769,9 +2769,9 @@ RustboroCity_Eventscript_Promise_To_Misa::
 
 RustboroCityGym_EventScript_Misa::
 # 1395 "data/maps/RustboroCity/scripts.pory"
-	setflag FLAG_TEMP_5
-# 1396 "data/maps/RustboroCity/scripts.pory"
 	lockall
+# 1396 "data/maps/RustboroCity/scripts.pory"
+	setflag FLAG_TEMP_5
 # 1397 "data/maps/RustboroCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 1398 "data/maps/RustboroCity/scripts.pory"
@@ -2943,7 +2943,7 @@ RustboroCity_Eventscript_Promise_To_Misa_Text_0:
 
 RustboroMisa1::
 # 1423 "data/maps/RustboroCity/scripts.pory"
-	.string "Oh! Excuse me. I didn't see you there.\l It's nice to meet you.\n My name's MISA.\p MISA: That {STR_VAR_1}… So cute!\n So you're a new trainer? That's great!\l  It looks like you're already raising\l  your POKéMON with love and care.\p I actually have a son around the\n same age as you.\p He's also starting his journey soon.\n He should be on ROUTE 115 preparing.$"
+	.string "Oh! Excuse me. I didn't see you there.\l It's nice to meet you.\n My name's MISA.\p MISA: That {STR_VAR_1}… So cute!\n So you're a new TRAINER? That's great!\l  It looks like you're already raising\l  your POKéMON with love and care.\p I actually have a son around the\n same age as you.\p He's also starting his journey soon.\n He should be on ROUTE 115 preparing.$"
 
 RustboroMisa4::
 # 1435 "data/maps/RustboroCity/scripts.pory"

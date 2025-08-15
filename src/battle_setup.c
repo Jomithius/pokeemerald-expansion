@@ -687,6 +687,8 @@ u8 BattleSetup_GetEnvironmentId(void)
         return BATTLE_ENVIRONMENT_GRASS;
     if (MetatileBehavior_IsSnowTallGrass(tileBehavior)) // Snow terrain
         return BATTLE_ENVIRONMENT_SNOW;
+    if (MetatileBehavior_IsSnow(tileBehavior)) // Snow terrain
+        return BATTLE_ENVIRONMENT_SNOW;
     if (MetatileBehavior_IsUltraSpaceTallGrass(tileBehavior)) // Ultra Space
         return BATTLE_ENVIRONMENT_ULTRA_SPACE;
     if (MetatileBehavior_IsLongGrass(tileBehavior))
@@ -1936,4 +1938,16 @@ u16 CountBattledRematchTeams(u16 trainerId)
     }
 
     return i;
+}
+
+void SetStarterIVs(void)
+{
+    u16 value = 31;
+    SetMonData(&gPlayerParty[0], MON_DATA_HP_IV, &value);
+    SetMonData(&gPlayerParty[0], MON_DATA_ATK_IV, &value);
+    SetMonData(&gPlayerParty[0], MON_DATA_DEF_IV, &value);
+    SetMonData(&gPlayerParty[0], MON_DATA_SPEED_IV, &value);
+    SetMonData(&gPlayerParty[0], MON_DATA_SPATK_IV, &value);
+    SetMonData(&gPlayerParty[0], MON_DATA_SPDEF_IV, &value);
+    CalculateMonStats(&gPlayerParty[0]);
 }

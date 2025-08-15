@@ -710,7 +710,7 @@ BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_0:
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_1:
 # 297 "data/maps/BaldesianForest/scripts.pory"
-	.string "Gahaha!\n Alright!\p I'm holding something in my hands.\n Left or right?$"
+	.string "Gahaha!\n All right!\p I'm holding something in my hands.\n Left or right?$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_2:
 # 301 "data/maps/BaldesianForest/scripts.pory"

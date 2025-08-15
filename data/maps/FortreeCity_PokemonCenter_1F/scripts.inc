@@ -165,7 +165,7 @@ MoveTutor_EventScript_RoostDeclined_Text_0:
 
 MoveTutor_EventScript_RoostTaught_Text_0:
 # 83 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	.string "Alright!\p Come back if you have more birds!$"
+	.string "All right!\p Come back if you have more birds!$"
 
 FortreeCity_PokemonCenter_1F_Text_RoostTeach::
 # 90 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"

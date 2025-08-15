@@ -798,7 +798,7 @@ Route139_EventScript_GiveSyrupyApple_Text_1:
 
 Route139_EventScript_Morgan_Text_0:
 # 234 "data/maps/Route139/scripts.pory"
-	.string "Huh? The boss said we should battle?\n Alright, sounds fun!$"
+	.string "Huh? The boss said we should battle?\n All right, sounds fun!$"
 
 Route139_EventScript_Morgan_Text_1:
 # 238 "data/maps/Route139/scripts.pory"
@@ -806,7 +806,7 @@ Route139_EventScript_Morgan_Text_1:
 
 Route139_EventScript_Fredward_Text_0:
 # 342 "data/maps/Route139/scripts.pory"
-	.string "Huh? The boss said we should battle?\n Alright!\p Just warning you, I'm the strongest out\n of all of us!$"
+	.string "Huh? The boss said we should battle?\n All right!\p Just warning you, I'm the strongest out\n of all of us!$"
 
 Route139_EventScript_WorkerFiredUp_Text_0:
 # 368 "data/maps/Route139/scripts.pory"

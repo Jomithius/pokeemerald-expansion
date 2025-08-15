@@ -614,7 +614,7 @@ LilycoveCity_DepartmentStore_2F_Text_MaeDefeat::
 
 LilycoveCity_DepartmentStore_2F_Text_Cook::
 # 242 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	.string "You can't battle in here!\n Please leave!\p MAE: Alright, whatever!\n I'll shop somewhere else!$"
+	.string "You can't battle in here!\n Please leave!\p MAE: All right, whatever!\n I'll shop somewhere else!$"
 
 LilycoveCity_DepartmentStore_2F_Text_Cook2::
 # 249 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"

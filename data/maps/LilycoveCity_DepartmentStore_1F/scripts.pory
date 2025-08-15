@@ -235,7 +235,7 @@ script MoveTutor_EventScript_LiquidationDeclined{
 }
 
 script MoveTutor_EventScript_LiquidationTaught{
-	msgbox("Alright!\p
+	msgbox("All right!\p
 		Come back if you ever want to do\n
 		business again!", MSGBOX_AUTOCLOSE)
 	waitmessage

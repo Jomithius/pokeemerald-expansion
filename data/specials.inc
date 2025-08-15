@@ -571,3 +571,4 @@ gSpecials::
 	def_special IsGhostTypeInParty
 	def_special FieldShowRegionMapNHoenn
 	def_special IsEeveeInParty
+	def_special SetStarterIVs

@@ -152,7 +152,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_BRAWLY_2] = // Liam
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Alright, POOBS!\nTime to show your true power!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("All right, POOBS!\nTime to show your true power!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WATTSON_2] = // Daca
         {
@@ -263,7 +263,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_STEVEN] = // Steven
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Alright!\nMy POKéMON are ROCK HARD!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("All right!\nMy POKéMON are ROCK HARD!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WALLY_VR_2] = // Wally
         {
