@@ -3,6 +3,7 @@ mapscripts BennisDojo_MapScripts {
 }
 
 script BennisDojo_OnTransition{
+    //setflag(FLAG_TEMP_E)
     call_if_unset(FLAG_HIDE_ASAK_BENNIS_DOJO, BennisDojo_UpdateAsakPos)
     call_if_defeated(TRAINER_BENNIS_4, BennisDojo_UpdateDisciplesPos)
     call_if_set(FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO, BennisDojoHideMedicham)
@@ -333,9 +334,13 @@ script DojoBattleTrigger{
     msgbox(Asak1, MSGBOX_AUTOCLOSE)
     waitmessage
     call(BennisDojo_EventScript_AsakBattle)
+    if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
+        special(HealPlayerParty)
+    }
     msgbox("ASAK: Impossible…", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(1, faceup)
+    waitmovement(0)
     msgbox("PANINI!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, faceup)
@@ -346,16 +351,19 @@ script DojoBattleTrigger{
     waitmovement(0)
     applymovement(1, faceleft)
     waitmovement(1)
-    msgbox("PANINI: Panini?", MSGBOX_AUTOCLOSE)
+    msgbox("PANINI: Panini?", MSGBOX_DEFAULT)
     waitmessage
-    msgbox(Asak2, MSGBOX_AUTOCLOSE)
+    msgbox(Asak2, MSGBOX_DEFAULT)
     waitmessage
     msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
     waitmessage
     call(BennisDojo_EventScript_PaniniBattle)
-    msgbox("PANINI: P-Panini…", MSGBOX_AUTOCLOSE)
+    if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
+        special(HealPlayerParty)
+    }
+    msgbox("PANINI: P-Panini…", MSGBOX_DEFAULT)
     waitmessage
-    msgbox(AsakPaniniLoss, MSGBOX_AUTOCLOSE)
+    msgbox(AsakPaniniLoss, MSGBOX_DEFAULT)
     waitmessage
     msgbox("What's all this noise?", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -376,7 +384,7 @@ script DojoBattleTrigger{
     waitmessage
     applymovement(1, facedown)
     waitmovement(1)
-    msgbox(Asak3_5, MSGBOX_AUTOCLOSE)
+    msgbox(Asak3_5, MSGBOX_DEFAULT)
     waitmessage
     msgbox("MASTER BENNIS: Hm.\n 
     I'll take you on.", MSGBOX_AUTOCLOSE)
@@ -396,7 +404,6 @@ script DojoBattleTrigger{
     applymovement(OBJ_EVENT_ID_PLAYER, faceup)
     waitmovement(0)
     call(BennisBattleStart)
-
 }
 
 script Dojo_EarlierAnswerNO{
@@ -453,7 +460,7 @@ script BennisBattleStart{
 
 script BennisEnd{
     lock
-    msgbox(Bennis2, MSGBOX_AUTOCLOSE)
+    msgbox(Bennis2, MSGBOX_DEFAULT)
     waitmessage
     msgbox("PANINI: P-Panini?!", MSGBOX_AUTOCLOSE)
     waitmessage

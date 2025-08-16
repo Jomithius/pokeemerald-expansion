@@ -117,8 +117,8 @@ script TheUnder_EventScript_Samothy{
 	end
 }
 
-script TheUnder_EventScript_Trevor{
-    trainerbattle_single(TRAINER_TREVOR, "They can have the ground.\nI own the sky!", "Mayday!\n Crashing and burning over here!")
+script TheUnder_EventScript_Jason{
+    trainerbattle_single(TRAINER_JASON, "They can have the ground.\nI own the sky!", "Mayday!\n Crashing and burning over here!")
     msgbox("I work for SNOWDRIFT CITY's\n
         CORVIKNIGHT service.\p
         We bring people up and down the\n
@@ -136,9 +136,10 @@ script TheUnder_EventScript_Woman{
     end
 }
 
-script TheUnder_EventScript_Jason{
-    trainerbattle_single(TRAINER_JASON, "Look at this cool POKéMON!", "I've never seen a POKéMON like that!")
-    msgbox("I've never seen a POKéMON like that!", MSGBOX_NPC)
+script TheUnder_EventScript_Trevor{
+    trainerbattle_single(TRAINER_TREVOR, "Look at this cool POKéMON!", "I've never seen a POKéMON like that!")
+    msgbox("There's so many great catches\n
+        out here!", MSGBOX_NPC)
 	end
 }
 

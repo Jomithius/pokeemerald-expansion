@@ -5,11 +5,10 @@ script RusturfTunnel_3F_EventScript_DefogMan{
     applymovement(3, Common_Movement_FacePlayer)
     waitmovement(3)
     if(flag(FLAG_RECEIVED_TM_DEFOG) == TRUE){
-        msgbox("DEFOG doesn't only clear hazards, it\n
-        also like, lowers the foe's evasion.", MSGBOX_NPC)
+        msgbox("Huh?\n
+            “Why is it still foggy in here?”\p
+            Like, this isn't fog, dude!", MSGBOX_NPC)
         waitmessage
-        release
-        end
     }
     else{
         msgbox("Dude, if you gotta like, air a room\n
@@ -21,9 +20,9 @@ script RusturfTunnel_3F_EventScript_DefogMan{
         also like, lowers the foe's evasion.", MSGBOX_NPC)
         waitmessage
         setflag(FLAG_RECEIVED_TM_DEFOG)
-        release
-        end
     }
+    release
+    end
 }
 
 script RusturfTunnel_3F_EventScript_Sarah{

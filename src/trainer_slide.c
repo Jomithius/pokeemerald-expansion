@@ -289,6 +289,10 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, MILTANK!\nShow 'em how it's done!{PAUSE_UNTIL_PRESS}"),
         },
+        [TRAINER_JAMES_FINAL] = // James
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, TYPHLOSION!\nWe're going all out from the start!{PAUSE_UNTIL_PRESS}"),
+        },
     },
 };
 

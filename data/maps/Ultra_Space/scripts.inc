@@ -595,616 +595,618 @@ Ultra_Space_EventScript_Necrozma::
 # 332 "data/maps/Ultra_Space/scripts.pory"
 	setflag FLAG_HIDE_PROF_ROUTE_135_LAB
 # 333 "data/maps/Ultra_Space/scripts.pory"
-	setflag FLAG_HIDE_JAMES_ULTRA_SPACE
+	setflag FLAG_HIDE_JAMES_ROUTE_135_LAB
 # 334 "data/maps/Ultra_Space/scripts.pory"
-	setflag FLAG_DEFEATED_BLACEPHALON
+	setflag FLAG_HIDE_JAMES_ULTRA_SPACE
 # 335 "data/maps/Ultra_Space/scripts.pory"
-	warpwhitefade MAP_ROUTE135_LAB, 7, 9
+	setflag FLAG_DEFEATED_BLACEPHALON
 # 336 "data/maps/Ultra_Space/scripts.pory"
-	waitstate
+	warpwhitefade MAP_ROUTE135_LAB, 7, 9
 # 337 "data/maps/Ultra_Space/scripts.pory"
+	waitstate
+# 338 "data/maps/Ultra_Space/scripts.pory"
 	releaseall
 	end
 
 
 Ultra_Space_EventScript_Buzzwole::
-# 342 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 343 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 344 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_BUZZWOLE, CRY_MODE_ENCOUNTER
+	faceplayer
 # 345 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_BUZZWOLE, CRY_MODE_ENCOUNTER
 # 346 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_BUZZWOLE, 75
+	waitmoncry
 # 347 "data/maps/Ultra_Space/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_BUZZWOLE, 75
 # 348 "data/maps/Ultra_Space/scripts.pory"
+	dowildbattle
+# 349 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_EventScript_Pheromosa::
-# 353 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 354 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 355 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_PHEROMOSA, CRY_MODE_ENCOUNTER
+	faceplayer
 # 356 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_PHEROMOSA, CRY_MODE_ENCOUNTER
 # 357 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_PHEROMOSA, 75
+	waitmoncry
 # 358 "data/maps/Ultra_Space/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_PHEROMOSA, 75
 # 359 "data/maps/Ultra_Space/scripts.pory"
+	dowildbattle
+# 360 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_EventScript_Guzzlord::
-# 364 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 365 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 366 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_GUZZLORD, CRY_MODE_ENCOUNTER
+	faceplayer
 # 367 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_GUZZLORD, CRY_MODE_ENCOUNTER
 # 368 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_GUZZLORD, 75
+	waitmoncry
 # 369 "data/maps/Ultra_Space/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_GUZZLORD, 75
 # 370 "data/maps/Ultra_Space/scripts.pory"
+	dowildbattle
+# 371 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_EventScript_Stakataka::
-# 375 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 376 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 377 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_STAKATAKA, CRY_MODE_ENCOUNTER
+	faceplayer
 # 378 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_STAKATAKA, CRY_MODE_ENCOUNTER
 # 379 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_STAKATAKA, 75
+	waitmoncry
 # 380 "data/maps/Ultra_Space/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_STAKATAKA, 75
 # 381 "data/maps/Ultra_Space/scripts.pory"
+	dowildbattle
+# 382 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_EventScript_Kartana::
-# 386 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 387 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 388 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_KARTANA, CRY_MODE_ENCOUNTER
+	faceplayer
 # 389 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_KARTANA, CRY_MODE_ENCOUNTER
 # 390 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_KARTANA, 75
+	waitmoncry
 # 391 "data/maps/Ultra_Space/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_KARTANA, 75
 # 392 "data/maps/Ultra_Space/scripts.pory"
+	dowildbattle
+# 393 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_EventScript_Xurkitree::
-# 397 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 398 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 399 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_XURKITREE, CRY_MODE_ENCOUNTER
+	faceplayer
 # 400 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_XURKITREE, CRY_MODE_ENCOUNTER
 # 401 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_XURKITREE, 75
+	waitmoncry
 # 402 "data/maps/Ultra_Space/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_XURKITREE, 75
 # 403 "data/maps/Ultra_Space/scripts.pory"
+	dowildbattle
+# 404 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_EventScript_Celesteela::
-# 408 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 409 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 410 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_CELESTEELA, CRY_MODE_ENCOUNTER
+	faceplayer
 # 411 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_CELESTEELA, CRY_MODE_ENCOUNTER
 # 412 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_CELESTEELA, 75
+	waitmoncry
 # 413 "data/maps/Ultra_Space/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_CELESTEELA, 75
 # 414 "data/maps/Ultra_Space/scripts.pory"
+	dowildbattle
+# 415 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_EventScript_Lunala::
-# 419 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 420 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 421 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_LUNALA, CRY_MODE_ENCOUNTER
+	faceplayer
 # 422 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_LUNALA, CRY_MODE_ENCOUNTER
 # 423 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_LUNALA, 75
+	waitmoncry
 # 424 "data/maps/Ultra_Space/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_LUNALA, 75
 # 425 "data/maps/Ultra_Space/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 426 "data/maps/Ultra_Space/scripts.pory"
+	waitstate
+# 427 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_EventScript_Solgaleo::
-# 431 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 432 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 433 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_SOLGALEO, CRY_MODE_ENCOUNTER
+	faceplayer
 # 434 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_SOLGALEO, CRY_MODE_ENCOUNTER
 # 435 "data/maps/Ultra_Space/scripts.pory"
-	setwildbattle SPECIES_SOLGALEO, 75
+	waitmoncry
 # 436 "data/maps/Ultra_Space/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_SOLGALEO, 75
 # 437 "data/maps/Ultra_Space/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 438 "data/maps/Ultra_Space/scripts.pory"
+	waitstate
+# 439 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 
 Ultra_Space_Shake::
-# 443 "data/maps/Ultra_Space/scripts.pory"
-	delay 30
 # 444 "data/maps/Ultra_Space/scripts.pory"
-	setvar VAR_0x8004, 2
+	delay 30
 # 445 "data/maps/Ultra_Space/scripts.pory"
-	setvar VAR_0x8005, 6
+	setvar VAR_0x8004, 2
 # 446 "data/maps/Ultra_Space/scripts.pory"
-	setvar VAR_0x8006, 8
+	setvar VAR_0x8005, 6
 # 447 "data/maps/Ultra_Space/scripts.pory"
-	setvar VAR_0x8007, 4
+	setvar VAR_0x8006, 8
 # 448 "data/maps/Ultra_Space/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 4
 # 449 "data/maps/Ultra_Space/scripts.pory"
-	waitstate
+	special ShakeCamera
 # 450 "data/maps/Ultra_Space/scripts.pory"
-	delay 60
+	waitstate
 # 451 "data/maps/Ultra_Space/scripts.pory"
-	playse SE_M_THUNDER_WAVE
+	delay 60
 # 452 "data/maps/Ultra_Space/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 453 "data/maps/Ultra_Space/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 454 "data/maps/Ultra_Space/scripts.pory"
-	delay 20
-# 455 "data/maps/Ultra_Space/scripts.pory"
 	playse SE_M_THUNDER_WAVE
-# 456 "data/maps/Ultra_Space/scripts.pory"
+# 453 "data/maps/Ultra_Space/scripts.pory"
 	fadescreen FADE_TO_WHITE
-# 457 "data/maps/Ultra_Space/scripts.pory"
+# 454 "data/maps/Ultra_Space/scripts.pory"
 	fadescreen FADE_FROM_WHITE
+# 455 "data/maps/Ultra_Space/scripts.pory"
+	delay 20
+# 456 "data/maps/Ultra_Space/scripts.pory"
+	playse SE_M_THUNDER_WAVE
+# 457 "data/maps/Ultra_Space/scripts.pory"
+	fadescreen FADE_TO_WHITE
 # 458 "data/maps/Ultra_Space/scripts.pory"
-	delay 10
+	fadescreen FADE_FROM_WHITE
 # 459 "data/maps/Ultra_Space/scripts.pory"
-	waitse
+	delay 10
 # 460 "data/maps/Ultra_Space/scripts.pory"
-	playse SE_INTRO_BLAST
+	waitse
 # 461 "data/maps/Ultra_Space/scripts.pory"
+	playse SE_INTRO_BLAST
+# 462 "data/maps/Ultra_Space/scripts.pory"
 	delay 20
 	return
 
 
 Ultra_Space_EventScript_Cosmog::
-# 466 "data/maps/Ultra_Space/scripts.pory"
-	lock
 # 467 "data/maps/Ultra_Space/scripts.pory"
-	faceplayer
+	lock
 # 468 "data/maps/Ultra_Space/scripts.pory"
-	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
+	faceplayer
 # 469 "data/maps/Ultra_Space/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
 # 470 "data/maps/Ultra_Space/scripts.pory"
-	msgbox UltraSpace_Text_WouldYouLikeToReturn, MSGBOX_YESNO
+	waitmoncry
 # 471 "data/maps/Ultra_Space/scripts.pory"
-	waitmessage
+	msgbox UltraSpace_Text_WouldYouLikeToReturn, MSGBOX_YESNO
 # 472 "data/maps/Ultra_Space/scripts.pory"
+	waitmessage
+# 473 "data/maps/Ultra_Space/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Ultra_Space_EventScript_Cosmog_2
-# 479 "data/maps/Ultra_Space/scripts.pory"
+# 480 "data/maps/Ultra_Space/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 Ultra_Space_EventScript_Cosmog_1:
-# 481 "data/maps/Ultra_Space/scripts.pory"
+# 482 "data/maps/Ultra_Space/scripts.pory"
 	release
 	end
 
 Ultra_Space_EventScript_Cosmog_2:
-# 473 "data/maps/Ultra_Space/scripts.pory"
-	closemessage
 # 474 "data/maps/Ultra_Space/scripts.pory"
-	call Ultra_Space_Shake
+	closemessage
 # 475 "data/maps/Ultra_Space/scripts.pory"
-	warpwhitefade MAP_ROUTE135_LAB, 10, 9
+	call Ultra_Space_Shake
 # 476 "data/maps/Ultra_Space/scripts.pory"
+	warpwhitefade MAP_ROUTE135_LAB, 10, 9
+# 477 "data/maps/Ultra_Space/scripts.pory"
 	waitstate
 	goto Ultra_Space_EventScript_Cosmog_1
 
 
-# 587 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_ManiacPanic:
 # 588 "data/maps/Ultra_Space/scripts.pory"
-	walk_fast_right
+Ultra_Space_Movement_ManiacPanic:
 # 589 "data/maps/Ultra_Space/scripts.pory"
-	delay_8
+	walk_fast_right
 # 590 "data/maps/Ultra_Space/scripts.pory"
-	walk_fast_up
+	delay_8
 # 591 "data/maps/Ultra_Space/scripts.pory"
-	delay_8
+	walk_fast_up
 # 592 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_fast_left
+	delay_8
 # 593 "data/maps/Ultra_Space/scripts.pory"
-	delay_8
+	walk_in_place_fast_left
 # 594 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_fast_right
-# 595 "data/maps/Ultra_Space/scripts.pory"
 	delay_8
+# 595 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_fast_right
 # 596 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_fast_up
+	delay_8
 # 597 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_fast_up
+# 598 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 	step_end
 
-# 600 "data/maps/Ultra_Space/scripts.pory"
+# 601 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_Maniac1:
-# 601 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
-# 601 "data/maps/Ultra_Space/scripts.pory"
+# 602 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
 # 602 "data/maps/Ultra_Space/scripts.pory"
+	walk_left
+# 603 "data/maps/Ultra_Space/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 605 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_JamesLookAround:
 # 606 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_left
+Ultra_Space_Movement_JamesLookAround:
 # 607 "data/maps/Ultra_Space/scripts.pory"
-	delay_16
-# 608 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_right
-# 609 "data/maps/Ultra_Space/scripts.pory"
-	delay_16
-# 610 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_up
-	step_end
-
-# 613 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_PlayerLookAround:
-# 614 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_down
-# 615 "data/maps/Ultra_Space/scripts.pory"
-	delay_16
-# 616 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_up
-# 617 "data/maps/Ultra_Space/scripts.pory"
-	delay_16
-# 618 "data/maps/Ultra_Space/scripts.pory"
 	walk_in_place_left
-# 619 "data/maps/Ultra_Space/scripts.pory"
+# 608 "data/maps/Ultra_Space/scripts.pory"
 	delay_16
+# 609 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_right
+# 610 "data/maps/Ultra_Space/scripts.pory"
+	delay_16
+# 611 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_up
+	step_end
+
+# 614 "data/maps/Ultra_Space/scripts.pory"
+Ultra_Space_Movement_PlayerLookAround:
+# 615 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_down
+# 616 "data/maps/Ultra_Space/scripts.pory"
+	delay_16
+# 617 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_up
+# 618 "data/maps/Ultra_Space/scripts.pory"
+	delay_16
+# 619 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_left
 # 620 "data/maps/Ultra_Space/scripts.pory"
+	delay_16
+# 621 "data/maps/Ultra_Space/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 623 "data/maps/Ultra_Space/scripts.pory"
+# 624 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_ManiacToCentralArea:
-# 624 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 624 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 624 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 624 "data/maps/Ultra_Space/scripts.pory"
+# 625 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 625 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 625 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 625 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 626 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
-# 625 "data/maps/Ultra_Space/scripts.pory"
+# 626 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
 	step_end
 
-# 628 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_JamesToCentralArea:
 # 629 "data/maps/Ultra_Space/scripts.pory"
+Ultra_Space_Movement_JamesToCentralArea:
+# 630 "data/maps/Ultra_Space/scripts.pory"
 	walk_right
-# 630 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 630 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 630 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 630 "data/maps/Ultra_Space/scripts.pory"
+# 631 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 631 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
-# 632 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 631 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 631 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 632 "data/maps/Ultra_Space/scripts.pory"
+	walk_left
+# 633 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 633 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 	step_end
 
-# 635 "data/maps/Ultra_Space/scripts.pory"
+# 636 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_PlayerToCentralArea:
-# 636 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 636 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 636 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 636 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 636 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 636 "data/maps/Ultra_Space/scripts.pory"
+# 637 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 637 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 637 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 637 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 637 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 637 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 638 "data/maps/Ultra_Space/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 640 "data/maps/Ultra_Space/scripts.pory"
+# 641 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_ManiacToPortal:
-# 641 "data/maps/Ultra_Space/scripts.pory"
+# 642 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
-# 641 "data/maps/Ultra_Space/scripts.pory"
+# 642 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
-# 641 "data/maps/Ultra_Space/scripts.pory"
+# 642 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
-# 641 "data/maps/Ultra_Space/scripts.pory"
+# 642 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
 	step_end
 
-# 644 "data/maps/Ultra_Space/scripts.pory"
+# 645 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_ManiacRunToPlayer:
-# 645 "data/maps/Ultra_Space/scripts.pory"
-	walk_fast_down
-# 645 "data/maps/Ultra_Space/scripts.pory"
+# 646 "data/maps/Ultra_Space/scripts.pory"
 	walk_fast_down
 # 646 "data/maps/Ultra_Space/scripts.pory"
-	walk_fast_right
-# 646 "data/maps/Ultra_Space/scripts.pory"
+	walk_fast_down
+# 647 "data/maps/Ultra_Space/scripts.pory"
 	walk_fast_right
 # 647 "data/maps/Ultra_Space/scripts.pory"
-	walk_fast_down
+	walk_fast_right
 # 648 "data/maps/Ultra_Space/scripts.pory"
+	walk_fast_down
+# 649 "data/maps/Ultra_Space/scripts.pory"
 	walk_in_place_fast_up
 	step_end
 
-# 651 "data/maps/Ultra_Space/scripts.pory"
+# 652 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_Blacephalon:
-# 652 "data/maps/Ultra_Space/scripts.pory"
-	walk_down
-# 652 "data/maps/Ultra_Space/scripts.pory"
+# 653 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 # 653 "data/maps/Ultra_Space/scripts.pory"
+	walk_down
+# 654 "data/maps/Ultra_Space/scripts.pory"
 	walk_right
-# 654 "data/maps/Ultra_Space/scripts.pory"
+# 655 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
-# 654 "data/maps/Ultra_Space/scripts.pory"
+# 655 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
-# 654 "data/maps/Ultra_Space/scripts.pory"
+# 655 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 	step_end
 
-# 657 "data/maps/Ultra_Space/scripts.pory"
+# 658 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_BlacephalonApproachesPlayer:
-# 658 "data/maps/Ultra_Space/scripts.pory"
-	walk_right
-# 658 "data/maps/Ultra_Space/scripts.pory"
-	walk_right
-# 658 "data/maps/Ultra_Space/scripts.pory"
+# 659 "data/maps/Ultra_Space/scripts.pory"
 	walk_right
 # 659 "data/maps/Ultra_Space/scripts.pory"
+	walk_right
+# 659 "data/maps/Ultra_Space/scripts.pory"
+	walk_right
+# 660 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 	step_end
 
-# 662 "data/maps/Ultra_Space/scripts.pory"
+# 663 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_ManiacFacePlayer:
-# 663 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 663 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 663 "data/maps/Ultra_Space/scripts.pory"
+# 664 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 664 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_left
+	walk_up
+# 664 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
 # 665 "data/maps/Ultra_Space/scripts.pory"
-	delay_16
+	walk_in_place_left
 # 666 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_right
-# 667 "data/maps/Ultra_Space/scripts.pory"
 	delay_16
+# 667 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_right
 # 668 "data/maps/Ultra_Space/scripts.pory"
-	walk_right
-# 668 "data/maps/Ultra_Space/scripts.pory"
+	delay_16
+# 669 "data/maps/Ultra_Space/scripts.pory"
 	walk_right
 # 669 "data/maps/Ultra_Space/scripts.pory"
+	walk_right
+# 670 "data/maps/Ultra_Space/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 672 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_ManiacGoesToPermSpot:
 # 673 "data/maps/Ultra_Space/scripts.pory"
+Ultra_Space_Movement_ManiacGoesToPermSpot:
+# 674 "data/maps/Ultra_Space/scripts.pory"
 	walk_right
-# 674 "data/maps/Ultra_Space/scripts.pory"
-	walk_down
-# 674 "data/maps/Ultra_Space/scripts.pory"
-	walk_down
-# 674 "data/maps/Ultra_Space/scripts.pory"
-	walk_down
-# 674 "data/maps/Ultra_Space/scripts.pory"
+# 675 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 # 675 "data/maps/Ultra_Space/scripts.pory"
+	walk_down
+# 675 "data/maps/Ultra_Space/scripts.pory"
+	walk_down
+# 675 "data/maps/Ultra_Space/scripts.pory"
+	walk_down
+# 676 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
-# 676 "data/maps/Ultra_Space/scripts.pory"
+# 677 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
-# 676 "data/maps/Ultra_Space/scripts.pory"
+# 677 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
-# 676 "data/maps/Ultra_Space/scripts.pory"
+# 677 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
-# 676 "data/maps/Ultra_Space/scripts.pory"
+# 677 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 	step_end
 
-# 679 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_JamesGoesToPermSpot:
 # 680 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
+Ultra_Space_Movement_JamesGoesToPermSpot:
 # 681 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
-# 681 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
-# 681 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
-# 681 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
-# 682 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 682 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
+	walk_left
 # 682 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
+	walk_left
 # 682 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 683 "data/maps/Ultra_Space/scripts.pory"
+	walk_left
+# 682 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
 # 683 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
+	walk_up
 # 683 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
-# 684 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 683 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 683 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 684 "data/maps/Ultra_Space/scripts.pory"
+	walk_left
+# 684 "data/maps/Ultra_Space/scripts.pory"
+	walk_left
+# 684 "data/maps/Ultra_Space/scripts.pory"
+	walk_left
+# 685 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 685 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 	step_end
 
-# 687 "data/maps/Ultra_Space/scripts.pory"
+# 688 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_JamesGoesToNecrozma:
-# 688 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 688 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 688 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 688 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 688 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 688 "data/maps/Ultra_Space/scripts.pory"
+# 689 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 689 "data/maps/Ultra_Space/scripts.pory"
-	walk_right
+	walk_up
+# 689 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 689 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 689 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 689 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
 # 690 "data/maps/Ultra_Space/scripts.pory"
+	walk_right
+# 691 "data/maps/Ultra_Space/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 693 "data/maps/Ultra_Space/scripts.pory"
+# 694 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_ManiacGoesToNecrozma:
-# 694 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 694 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 694 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 694 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 694 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 694 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 694 "data/maps/Ultra_Space/scripts.pory"
+# 695 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 695 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
+	walk_up
+# 695 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 695 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 695 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 695 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 695 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
 # 696 "data/maps/Ultra_Space/scripts.pory"
+	walk_left
+# 697 "data/maps/Ultra_Space/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 699 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_Cosmog:
 # 700 "data/maps/Ultra_Space/scripts.pory"
-	walk_down
+Ultra_Space_Movement_Cosmog:
 # 701 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
-# 702 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 # 702 "data/maps/Ultra_Space/scripts.pory"
+	walk_left
+# 703 "data/maps/Ultra_Space/scripts.pory"
+	walk_down
+# 703 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 	step_end
 
-# 705 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_ManiacInvestigate:
 # 706 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
+Ultra_Space_Movement_ManiacInvestigate:
 # 707 "data/maps/Ultra_Space/scripts.pory"
-	delay_8
+	walk_up
 # 708 "data/maps/Ultra_Space/scripts.pory"
-	walk_right
-# 709 "data/maps/Ultra_Space/scripts.pory"
 	delay_8
+# 709 "data/maps/Ultra_Space/scripts.pory"
+	walk_right
 # 710 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_left
+	delay_8
 # 711 "data/maps/Ultra_Space/scripts.pory"
-	delay_2
+	walk_in_place_left
 # 712 "data/maps/Ultra_Space/scripts.pory"
-	walk_in_place_right
-# 713 "data/maps/Ultra_Space/scripts.pory"
 	delay_2
+# 713 "data/maps/Ultra_Space/scripts.pory"
+	walk_in_place_right
 # 714 "data/maps/Ultra_Space/scripts.pory"
-	walk_left
+	delay_2
 # 715 "data/maps/Ultra_Space/scripts.pory"
-	delay_16
+	walk_left
 # 716 "data/maps/Ultra_Space/scripts.pory"
+	delay_16
+# 717 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 	step_end
 
-# 719 "data/maps/Ultra_Space/scripts.pory"
-Ultra_Space_Movement_Necrozma:
 # 720 "data/maps/Ultra_Space/scripts.pory"
+Ultra_Space_Movement_Necrozma:
+# 721 "data/maps/Ultra_Space/scripts.pory"
 	levitate
-# 721 "data/maps/Ultra_Space/scripts.pory"
-	walk_slow_down
-# 721 "data/maps/Ultra_Space/scripts.pory"
+# 722 "data/maps/Ultra_Space/scripts.pory"
 	walk_slow_down
 # 722 "data/maps/Ultra_Space/scripts.pory"
+	walk_slow_down
+# 723 "data/maps/Ultra_Space/scripts.pory"
 	stop_levitate
 	step_end
 
-# 725 "data/maps/Ultra_Space/scripts.pory"
+# 726 "data/maps/Ultra_Space/scripts.pory"
 Ultra_Space_Movement_PlayerWalksDown:
-# 726 "data/maps/Ultra_Space/scripts.pory"
+# 727 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
-# 726 "data/maps/Ultra_Space/scripts.pory"
+# 727 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
-# 726 "data/maps/Ultra_Space/scripts.pory"
+# 727 "data/maps/Ultra_Space/scripts.pory"
 	walk_down
 	step_end
 
@@ -1257,53 +1259,53 @@ Ultra_Space_EventScript_Necrozma_Text_2:
 	.string "Quite fortuitous, indeed!\n Now COSMOG, if you will.\l Please get us out of here!$"
 
 UltraSpace_Text_WouldYouLikeToReturn::
-# 485 "data/maps/Ultra_Space/scripts.pory"
+# 486 "data/maps/Ultra_Space/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Would you like to return to the LAB?$"
 
 Ultra_Space_Text_DoYouNeedMedicalAssistance::
-# 489 "data/maps/Ultra_Space/scripts.pory"
+# 490 "data/maps/Ultra_Space/scripts.pory"
 	.string "Ah, intern.\n You require medical assistance, yes?$"
 
 Ultra_Space_Text_LetMeKnowIfYouMakeAnyDiscoveries::
-# 494 "data/maps/Ultra_Space/scripts.pory"
+# 495 "data/maps/Ultra_Space/scripts.pory"
 	.string "Let me know if you find anything\n significant, okay?$"
 
 Ultra_Space_Text_InvisiblePathHint::
-# 499 "data/maps/Ultra_Space/scripts.pory"
+# 500 "data/maps/Ultra_Space/scripts.pory"
 	.string "Oh, {PLAYER}. Did you find anything yet?\n In the distance I can see another island.\p But I can't figure out how to get over\n there.\p I almost want to just try and run there\n from here…$"
 
 Ultra_Space_Text_Maniac1::
-# 508 "data/maps/Ultra_Space/scripts.pory"
+# 509 "data/maps/Ultra_Space/scripts.pory"
 	.string "This wasn't supposed to happen…\n It appears we've been pulled into\l the rift.\p I'm not sure if we'll ever be able\n to return to our world…$"
 
 Ultra_Space_Text_James1::
-# 516 "data/maps/Ultra_Space/scripts.pory"
+# 517 "data/maps/Ultra_Space/scripts.pory"
 	.string "But I think if we head north we might\n find something.$"
 
 Ultra_Space_Text_Maniac2::
-# 521 "data/maps/Ultra_Space/scripts.pory"
+# 522 "data/maps/Ultra_Space/scripts.pory"
 	.string "MANIAC: …Intruiging.\n Perhaps you had stumbled across a rift\l in the past…\p Although I've never heard reports of\n such an occurence happening to anyone.$"
 
 Ultra_Space_Text_Maniac3::
-# 529 "data/maps/Ultra_Space/scripts.pory"
+# 530 "data/maps/Ultra_Space/scripts.pory"
 	.string "MANIAC: Hm… Intruiging.\n It appears as though these caves\l are a means of connection to the\l other floating islands…\l Perhaps we can find another rift\l through them…\p I must get a closer look!$"
 
 Ultra_Space_Text_Maniac4::
-# 539 "data/maps/Ultra_Space/scripts.pory"
+# 540 "data/maps/Ultra_Space/scripts.pory"
 	.string "MANIAC: T-That was close!\n But still! A new discovery!\p This will push my research forward at\n lightspeed!\p Now that we know there's undiscovered\n POKéMON here, we can test the new\l POKé BALL I designed…\p Assistant, please give some of them\n to the intern.$"
 
 Ultra_Space_Text_Maniac5::
-# 551 "data/maps/Ultra_Space/scripts.pory"
+# 552 "data/maps/Ultra_Space/scripts.pory"
 	.string "MANIAC: Now, while that was a riveting\n experience, I'd rather be safe than\l sorry.\p I'll leave the exploration to you two\n while I try to analyze the area as much\l as I can with what I have on hand.\p Call for me if you find anything\n significant or require medical aid.$"
 
 Ultra_Space_Text_JamesGoingToExplore::
-# 562 "data/maps/Ultra_Space/scripts.pory"
+# 563 "data/maps/Ultra_Space/scripts.pory"
 	.string "JAMES: I'm going to survey this central\n area and make sure the PROF. is safe.\p Maybe there's a clue on how to get\n out of here.$"
 
 Ultra_Space_Text_ThatWasCrazy::
-# 569 "data/maps/Ultra_Space/scripts.pory"
+# 570 "data/maps/Ultra_Space/scripts.pory"
 	.string "JAMES: I saw you walk across the sky\n and went to get the PROF.\l That was crazy!\p MANIAC: Yes, maniacal indeed…\n Unfortunately, there's still no rift\l over here.$"
 
 Ultra_Space_Text_Maniac6::
-# 578 "data/maps/Ultra_Space/scripts.pory"
+# 579 "data/maps/Ultra_Space/scripts.pory"
 	.string "MANIAC: You came for us?!\n R-RESPLENDENT!\p I had no idea it had the ability\n to traverse the ULTRA SPACE!\p COSMOG, are you able to take us\n back to the lab?$"

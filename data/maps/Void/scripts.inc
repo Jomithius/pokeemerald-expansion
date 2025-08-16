@@ -287,33 +287,35 @@ EventScript_FinalRematchesUnlocked::
 # 200 "data/maps/Void/scripts.pory"
 	clearflag FLAG_HIDE_STAFF_EMPLOYEE_MERCHANTS
 # 201 "data/maps/Void/scripts.pory"
-	setvar VAR_MOMO_ARIA_STATE, 10
+	setflag FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST
 # 202 "data/maps/Void/scripts.pory"
+	setvar VAR_MOMO_ARIA_STATE, 10
+# 203 "data/maps/Void/scripts.pory"
 	releaseall
 	end
 
 
-# 227 "data/maps/Void/scripts.pory"
+# 228 "data/maps/Void/scripts.pory"
 Void_Movement_WalkToEdge:
-# 228 "data/maps/Void/scripts.pory"
-	walk_right
-# 228 "data/maps/Void/scripts.pory"
+# 229 "data/maps/Void/scripts.pory"
 	walk_right
 # 229 "data/maps/Void/scripts.pory"
-	walk_down
+	walk_right
 # 230 "data/maps/Void/scripts.pory"
+	walk_down
+# 231 "data/maps/Void/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 233 "data/maps/Void/scripts.pory"
-Void_Movement_WalkToPlayer:
 # 234 "data/maps/Void/scripts.pory"
+Void_Movement_WalkToPlayer:
+# 235 "data/maps/Void/scripts.pory"
 	walk_up
-# 235 "data/maps/Void/scripts.pory"
-	walk_left
-# 235 "data/maps/Void/scripts.pory"
+# 236 "data/maps/Void/scripts.pory"
 	walk_left
 # 236 "data/maps/Void/scripts.pory"
+	walk_left
+# 237 "data/maps/Void/scripts.pory"
 	walk_in_place_down
 	step_end
 
@@ -327,7 +329,7 @@ Void_EventScript_FinalBattle_Text_1:
 
 Void_EventScript_FinalBattle_Text_2:
 # 47 "data/maps/Void/scripts.pory"
-	.string "Haha, JAMES would probably freak out if\n he knew it was real!\p But MISA would kill me if I showed him\n and he turned back into an edgelord.\p Well, maybe he'll come across it during\n one of his investigations into the\l ULTRA SPACE.$"
+	.string "Haha, JAMES would probably freak out if\n he knew it was real!\p But MISA would kill me if I showed him\n and he started full larping again.\p Well, maybe he'll come across it during\n one of his investigations into the\l ULTRA SPACE.$"
 
 Void_EventScript_FinalBattle_Text_3:
 # 59 "data/maps/Void/scripts.pory"
@@ -370,5 +372,5 @@ EventScript_FinalRematchesUnlocked_Text_0:
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS and ELITE FOUR are now\n ready for their final rematches.\p The GYM LEADERS can be battled in any\n order.\p The ELITE FOUR can't be challenged until\n all GYM LEADERS are defeated.$"
 
 PokenavText_FinalMatches::
-# 206 "data/maps/Void/scripts.pory"
+# 207 "data/maps/Void/scripts.pory"
 	.string "… … … … … …\n … … … … … Beep!\p {PLAYER}!\n It's JIMMY.\p My staff has been giving me\n updates about you!\p Sounds like you've gotten a\n lot done out there, so…\p It's time! I'll tell all the\n LEADERS to get ready!\p And, as an extra bonus, I sent\n some of my staff members out to\l POKéMON CENTERS to help you\l prepare for the battles.\p I'm looking forward to\n seeing how strong you are now!\p … … … … … …\n … … … … … Click!$"

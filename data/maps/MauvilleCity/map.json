@@ -639,7 +639,7 @@
       "y": 3,
       "elevation": 0,
       "var": "VAR_SPEEDWAGON_STATE",
-      "var_value": "0",
+      "var_value": "4",
       "script": "MauvileCity_EventScript_ICantLeaveLikeThis"
     },
     {
@@ -684,7 +684,7 @@
       "y": 2,
       "elevation": 0,
       "var": "VAR_SPEEDWAGON_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "MauvileCity_EventScript_ICantLeaveLikeThis"
     },
     {

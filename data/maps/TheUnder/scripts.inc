@@ -156,11 +156,11 @@ TheUnder_EventScript_Samothy::
 	end
 
 
-TheUnder_EventScript_Trevor::
+TheUnder_EventScript_Jason::
 # 121 "data/maps/TheUnder/scripts.pory"
-	trainerbattle_single TRAINER_TREVOR, TheUnder_EventScript_Trevor_Text_0, TheUnder_EventScript_Trevor_Text_1
+	trainerbattle_single TRAINER_JASON, TheUnder_EventScript_Jason_Text_0, TheUnder_EventScript_Jason_Text_1
 # 122 "data/maps/TheUnder/scripts.pory"
-	msgbox TheUnder_EventScript_Trevor_Text_2, MSGBOX_NPC
+	msgbox TheUnder_EventScript_Jason_Text_2, MSGBOX_NPC
 	end
 
 
@@ -170,57 +170,57 @@ TheUnder_EventScript_Woman::
 	end
 
 
-TheUnder_EventScript_Jason::
+TheUnder_EventScript_Trevor::
 # 140 "data/maps/TheUnder/scripts.pory"
-	trainerbattle_single TRAINER_JASON, TheUnder_EventScript_Jason_Text_0, TheUnder_EventScript_Jason_Text_1
+	trainerbattle_single TRAINER_TREVOR, TheUnder_EventScript_Trevor_Text_0, TheUnder_EventScript_Trevor_Text_1
 # 141 "data/maps/TheUnder/scripts.pory"
-	msgbox TheUnder_EventScript_Jason_Text_1, MSGBOX_NPC
+	msgbox TheUnder_EventScript_Trevor_Text_2, MSGBOX_NPC
 	end
 
 
-# 194 "data/maps/TheUnder/scripts.pory"
+# 195 "data/maps/TheUnder/scripts.pory"
 TheUnder_Movement_Luna:
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 195 "data/maps/TheUnder/scripts.pory"
+# 196 "data/maps/TheUnder/scripts.pory"
 	walk_left
 	step_end
 
-# 198 "data/maps/TheUnder/scripts.pory"
-TheUnder_Movement_LunaSouth:
 # 199 "data/maps/TheUnder/scripts.pory"
+TheUnder_Movement_LunaSouth:
+# 200 "data/maps/TheUnder/scripts.pory"
 	walk_down
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
-# 200 "data/maps/TheUnder/scripts.pory"
+# 201 "data/maps/TheUnder/scripts.pory"
 	walk_left
 	step_end
 
@@ -280,15 +280,15 @@ TheUnder_EventScript_Samothy_Text_2:
 # 115 "data/maps/TheUnder/scripts.pory"
 	.string "There's a lot of weird POKéMON\n out here.$"
 
-TheUnder_EventScript_Trevor_Text_0:
+TheUnder_EventScript_Jason_Text_0:
 # 121 "data/maps/TheUnder/scripts.pory"
 	.string "They can have the ground.\nI own the sky!$"
 
-TheUnder_EventScript_Trevor_Text_1:
+TheUnder_EventScript_Jason_Text_1:
 # 121 "data/maps/TheUnder/scripts.pory"
 	.string "Mayday!\n Crashing and burning over here!$"
 
-TheUnder_EventScript_Trevor_Text_2:
+TheUnder_EventScript_Jason_Text_2:
 # 122 "data/maps/TheUnder/scripts.pory"
 	.string "I work for SNOWDRIFT CITY's\n CORVIKNIGHT service.\p We bring people up and down the\n mountain, but we have to be careful\l of the TINKATON.$"
 
@@ -296,26 +296,30 @@ TheUnder_EventScript_Woman_Text_0:
 # 131 "data/maps/TheUnder/scripts.pory"
 	.string "I love coming here during my days off.\n The sound of the waterfall relaxes me.\p If you have a chance, you should stop\n by LUSH ACREAGE and try our famous\l MOOMOO MILK!$"
 
-TheUnder_EventScript_Jason_Text_0:
+TheUnder_EventScript_Trevor_Text_0:
 # 140 "data/maps/TheUnder/scripts.pory"
 	.string "Look at this cool POKéMON!$"
 
-TheUnder_EventScript_Jason_Text_1:
+TheUnder_EventScript_Trevor_Text_1:
 # 140 "data/maps/TheUnder/scripts.pory"
 	.string "I've never seen a POKéMON like that!$"
 
+TheUnder_EventScript_Trevor_Text_2:
+# 141 "data/maps/TheUnder/scripts.pory"
+	.string "There's so many great catches\n out here!$"
+
 TheUnder_Text_CarsonIntro::
-# 145 "data/maps/TheUnder/scripts.pory"
+# 146 "data/maps/TheUnder/scripts.pory"
 	.string "There's some RATICATE blocking the\n path in the tunnel!\p I tried battling them, but for some\n reason my POKéMON were scared.$"
 
 TheUnder_Text_CarsonDefeat::
-# 152 "data/maps/TheUnder/scripts.pory"
+# 153 "data/maps/TheUnder/scripts.pory"
 	.string "Huh… Why weren't they scared now?$"
 
 TheUnder_Text_CarsonPostBattle::
-# 156 "data/maps/TheUnder/scripts.pory"
+# 157 "data/maps/TheUnder/scripts.pory"
 	.string "If only I could figure out why my\n POKéMON are so scared of those\l RATICATE…$"
 
 Common_Text_ExplainTera::
-# 162 "data/maps/TheUnder/scripts.pory"
+# 163 "data/maps/TheUnder/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}TERASTALLIZATION is a battle mechanic\n that allows you to change your\l POKéMON's TYPE temporarily during a\l battle.\p Similar to MEGA EVOLUTION, the TYPE\n the POKéMON TERASTALLIZED into will\l last until the end of the battle, or\l until the POKéMON faints.\p Only one POKéMON can TERA during a\n battle, and two gimmicks can't be\l used on the same POKéMON.\p To TERASTALLIZE, press START before\n selecting your move.\p While TERASTALLIZED, POKéMON receive\n  STAB (Same Type Attack Bonus) on\l moves matching their TERA TYPE,\l in addition to moves matching their\l  original TYPES.\p A POKéMON's TERA TYPE can be viewed\n in the summary screen.\p It will default to an existing TYPE\n the POKéMON has. Such as:\p A mono TYPE will have that TYPE as\n its TERA, while a DUAL TYPE could\l have either TYPE as the TERA.\p TERA SHARDS are required to change\n a POKéMON's TERA TYPE.\p They can be bought from new vendors\n in POKé MARTS.$"

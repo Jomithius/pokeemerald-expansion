@@ -225,7 +225,7 @@ script Route114_EventScript_Bennis{
     playbgm(MUS_BENNIS_DOJO, TRUE)
     delay(20)
     call(BennisFollowersMovementVar)
-    msgbox(Route114_Text_ASAK1, MSGBOX_AUTOCLOSE)
+    msgbox(Route114_Text_ASAK1, MSGBOX_DEFAULT)
     waitmessage
     msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
     waitmessage

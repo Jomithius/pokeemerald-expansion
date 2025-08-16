@@ -4165,7 +4165,7 @@ Adamant Nature
 - Bulk Up  
 - Supercell Slam  
 - Cross Chop  
-- Trailblaze   
+- Giga Impact  
 
 Haxorus (M) @ Leftovers  
 Ability: Rivalry  
@@ -19533,6 +19533,26 @@ IVs: 0 Atk
 - Mega Drain  
 - Leech Seed
 
+=== TRAINER_JAMES_FINAL ===
+Name: JAMES
+Class: Rival
+Pic: James
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Blue
+
+Petilil (F)  
+Ability: Chlorophyll  
+Level: 16  
+EVs: 16 HP / 4 Def / 252 SpD / 236 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Stun Spore  
+- Mega Drain  
+- Leech Seed
+
 /*Easy Difficulty*/
 
 === TRAINER_SAWYER_1 ===
@@ -23828,7 +23848,7 @@ Adamant Nature
 - Bulk Up  
 - Supercell Slam  
 - Cross Chop  
-- Trailblaze   
+- Giga Impact  
 
 Haxorus (M) @ Leftovers  
 Ability: Rivalry  
@@ -39440,6 +39460,27 @@ Jolly Nature
 Petilil (F)  
 Ability: Chlorophyll  
 Level: 16  
+Timid Nature  
+IVs: 0 Atk  
+- Stun Spore  
+- Mega Drain  
+- Leech Seed
+
+=== TRAINER_JAMES_FINAL ===
+Name: JAMES
+Class: Rival
+Pic: James
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Blue
+Difficulty: Easy
+
+Petilil (F)  
+Ability: Chlorophyll  
+Level: 16  
+EVs: 16 HP / 4 Def / 252 SpD / 236 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Stun Spore  

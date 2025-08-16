@@ -13480,7 +13480,12 @@
               {
                 "min_level": 65,
                 "max_level": 70,
-                "species": "SPECIES_WIGLETT"
+                "species": "SPECIES_QWILFISH"
+              },
+              {
+                "min_level": 65,
+                "max_level": 70,
+                "species": "SPECIES_QWILFISH"
               },
               {
                 "min_level": 65,
@@ -13495,12 +13500,7 @@
               {
                 "min_level": 65,
                 "max_level": 70,
-                "species": "SPECIES_WUGTRIO"
-              },
-              {
-                "min_level": 65,
-                "max_level": 70,
-                "species": "SPECIES_WUGTRIO"
+                "species": "SPECIES_QWILFISH"
               },
               {
                 "min_level": 65,

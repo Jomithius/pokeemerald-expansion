@@ -5831,10 +5831,12 @@ u16 GetBattleBGM(void)
                 return MUS_VS_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
                 return MUS_VS_TRAINER;
+            //if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJomithiusName) && FlagGet(FLAG_BADGE05_GET))
+                //return MUS_WATERFALL_COLOSSEUM;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJomithiusName))
                 return MUS_VS_CIPHER_ADMIN;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJamesName))
-                return MUS_VS_FRONTIER_BRAIN;
+                return MUS_WATERFALL_COLOSSEUM;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleEugeniaName))
@@ -5852,10 +5854,10 @@ u16 GetBattleBGM(void)
             return MUS_EXDEATH; 
         case TRAINER_CLASS_MASTER:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBrunoName))
-                return MUS_RG_VS_GYM_LEADER;
+                return MUS_BENNIS;
             if(FlagGet(FLAG_SYS_BENNIS_FINAL_REMATCH) && !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBennisName))
                 return MUS_VS_GILGAMESH;
-            return MUS_BENNIS; 
+            return MUS_VS_MIROR_B; 
         case TRAINER_CLASS_CHIEF:
             return MUS_RG_VS_GYM_LEADER;
         case TRAINER_CLASS_NINJA:

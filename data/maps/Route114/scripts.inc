@@ -439,7 +439,7 @@ Route114_EventScript_Bennis::
 # 227 "data/maps/Route114/scripts.pory"
 	call BennisFollowersMovementVar
 # 228 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_ASAK1, MSGBOX_AUTOCLOSE
+	msgbox Route114_Text_ASAK1, MSGBOX_DEFAULT
 # 229 "data/maps/Route114/scripts.pory"
 	waitmessage
 # 230 "data/maps/Route114/scripts.pory"

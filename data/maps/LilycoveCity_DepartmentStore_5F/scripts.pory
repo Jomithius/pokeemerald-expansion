@@ -236,15 +236,19 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Lina{
     delay(20)
     applymovement(9, Common_Movement_FacePlayer)
     waitmovement(9)
-    if(var(VAR_LINA_TALKED_TO) == 1){
+    if(var(VAR_LINA_TALKED_TO) == 1 && flag(FLAG_TALKED_TO_LINA_LAVARIDGE)){
         msgbox(LilcoveCity_DepartmentStore_5F_Text_Lina2, MSGBOX_AUTOCLOSE) 
         setvar(VAR_LINA_TALKED_TO, 2)  
+    }
+	elif(var(VAR_LINA_TALKED_TO) == 1){
+        msgbox(LilcoveCity_DepartmentStore_5F_Text_Lina2, MSGBOX_AUTOCLOSE) 
     }
     elif(var(VAR_LINA_TALKED_TO) == 2){
         msgbox(LilcoveCity_DepartmentStore_5F_Text_Lina2, MSGBOX_AUTOCLOSE) 
     }
     else{
         msgbox(LilcoveCity_DepartmentStore_5F_Text_Lina3, MSGBOX_AUTOCLOSE)
+		setvar(VAR_LINA_TALKED_TO, 1)
     }
     waitmessage
     applymovement(9, Common_Movement_FaceOriginalDirection)

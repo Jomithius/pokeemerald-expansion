@@ -450,7 +450,7 @@ MtPyre_Exterior_Text_Emo1::
 
 MtPyre_Exterior_Text_Emo2::
 # 124 "data/maps/MtPyre_Exterior/scripts.pory"
-	.string "JAMES: Hm…\n You've become stronger than I thought.\p As expected of my adversary.\n Here, you can have this.$"
+	.string "JAMES: Hm… You've become\n stronger than I thought.\p As expected of my adversary.\n Here, you can have this.$"
 
 MtPyre_Exterior_Text_Emo3::
 # 131 "data/maps/MtPyre_Exterior/scripts.pory"

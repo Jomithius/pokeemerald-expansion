@@ -4575,7 +4575,7 @@
       "id": "LAYOUT_RUSTURF_TUNNEL_2F",
       "name": "RusturfTunnel_2F_Layout",
       "width": 24,
-      "height": 36,
+      "height": 39,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_RusturfTunnel",
       "border_filepath": "data/layouts/RusturfTunnel_2F/border.bin",

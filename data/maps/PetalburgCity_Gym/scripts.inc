@@ -2581,7 +2581,7 @@ PetalburgCity_Gym_Text_NormanIntro:
 # 1291 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "I “look different”?\p"
 # 1292 "data/maps/PetalburgCity_Gym/scripts.pory"
-	.string "I have no idea what you're talking about.\p"
+	.string "I don't know what you're talking about.\p"
 # 1293 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Just don't think about it too much.\n"
 # 1294 "data/maps/PetalburgCity_Gym/scripts.pory"

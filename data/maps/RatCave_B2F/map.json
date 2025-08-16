@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_RATDUARDO",
       "x": 5,
-      "y": 10,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -95,7 +95,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
       "x": 8,
-      "y": 13,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -123,15 +123,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 5,
-      "y": 16,
-      "elevation": 0,
-      "var": "VAR_RAT_CAVE_STATE",
-      "var_value": "3",
-      "script": "Ratduardo1_BattleTrigger"
-    }
+
   ],
   "bg_events": [
 

@@ -46,11 +46,172 @@ script Route135_Lab_EventScript_Maniac{
 
 script Route135_Lab_EventScript_James{
     lock
+    if(var(VAR_ULTRA_SPACE_STATE) >= 6 && flag(FLAG_SYS_FINAL_REMATCH) && !flag(FLAG_SYS_DEFEATED_JAMES)){
+        goto(Route_135_EventScript_JamesBattle)
+    }
+    if(flag(FLAG_SYS_DEFEATED_JAMES)){
+        goto(Route_135_EventScript_JamesGoFinishTheGame)
+    }
     faceplayer
-    msgbox(Route_135_Lab_Text_ImGoingToStayHere, MSGBOX_AUTOCLOSE)
-    waitmessage
+    if(var(VAR_ULTRA_SPACE_STATE) == 5){
+        msgbox("What's up, {PLAYER}.\n
+            The PROF. is waiting for you.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_ULTRA_SPACE_STATE) == 6){
+        msgbox("How did the expedition go?\n
+            I surveyed that place too.\p
+            It's crazy to think there's whole\n
+            other worlds and civilizations out\l
+            there parallel to ours.\p
+            Maybe the void could actually be\n
+            real…\p
+            Don't worry, I'm not going to\n
+            go back to my phase.\p
+            I'm just thinking out loud.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    else{
+        msgbox(Route_135_Lab_Text_ImGoingToStayHere, MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
     applymovement(2, Common_Movement_WalkInPlaceUp)
     waitmovement(2)
+    release
+    end
+}
+
+script Route_135_EventScript_JamesGoFinishTheGame{
+    lock
+    delay(30)
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    if(var(VAR_LINA_TALKED_TO) == 2){
+            msgbox("Oh, {PLAYER}? Wow.\n
+            Uh, this is kind of awkward…\p
+            Honestly, I didn't expect to see\n
+            you again after that last battle.\p
+            Um…\l
+            …\p
+            You're the type of person who needs\n
+            to see EVERYTHING in a game. I see…\p
+            Well, there's nothing really left for\n
+            you here, unless you want to go back\l
+            to ULTRA SPACE or AREA ZERO for some\l
+            reason.\p
+            But you know, I felt like that last\n
+            battle was a good end to my story, and\l
+            you just made it weird by coming back\l
+            here to talk to me again.\p
+            You didn't even know if there would be\n
+            any different dialogue, you weirdo.\p
+            You're at the end of the game, {PLAYER}.\n
+            Hurry up and do what you need to do.\p
+            Oh, and here's a hint: your exploration\n
+            throughout the game paid off.\p
+            You'll be able to challenge the\n
+            “secret” superboss. Good luck.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    else{
+        msgbox("Oh, {PLAYER}? Wow.\n
+            Uh, this is kind of awkward…\p
+            Honestly, I didn't expect to see\n
+            you again after that last battle.\p
+            Um…\l
+            …\p
+            You're the type of person who needs\n
+            to see EVERYTHING in a game. I see…\p
+            Well, there's nothing really left for\n
+            you here, unless you want to go back\l
+            to ULTRA SPACE or AREA ZERO for some\l
+            reason.\p
+            But you know, I felt like that last\n
+            battle was a good end to my story, and\l
+            you just made it weird by coming back\l
+            here to talk to me again.\p
+            You didn't even know if there would be\n
+            any different dialogue, you weirdo.", MSGBOX_DEFAULT)
+        waitmessage
+        msgbox("You know what, though?\p
+            It sucks you didn't keep this same\n
+            energy throughout the whole game,\l
+            because you didn't unlock the “secret” \l
+            superboss.\p
+            But you know what? As a favor,\n
+            I'll make it so you have a chance\l
+            to battle them.\p
+            Good luck, {PLAYER}.\n
+            Go finish the game.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        playfanfare(MUS_OBTAIN_B_POINTS)
+        message("{COLOR BLUE}{SHADOW LIGHT_BLUE}You're now able to challenge\n
+            the superboss!")
+        waitfanfare
+        closemessage
+        setvar(VAR_LINA_TALKED_TO, 2)
+    }
+    applymovement(2, Common_Movement_WalkInPlaceUp)
+    waitmovement(2)
+    release
+    end
+}
+
+script Route_135_EventScript_JamesBattle{
+    lock
+    delay(30)
+    playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    faceplayer
+    msgbox("Oh, {PLAYER}.\n
+        Sorry, I was focused on my research.\p
+        What's up?", MSGBOX_DEFAULT)
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Want to battle?", "Nevermind.")
+    goto_if_eq(VAR_RESULT, 1, Route_135_EventScript_JamesBattleChoseNo)
+    msgbox("A battle?\p
+        Well, it HAS been a while since\n
+        the last time we did.\l
+        …\l
+        Sure.\p
+        I was actually going to head home for\n
+        a bit to take care of some things.\p
+        Could you meet me on ROUTE 115?\n
+        I'll wait for you there.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_RESULT)
+    switch(var(VAR_RESULT)){
+        case DIR_WEST:
+            applymovement(2, Route_135_Lab_Movement_JamesLeavesPlayer)
+        case DIR_EAST:
+            applymovement(2, Route_135_Lab_Movement_JamesLeavesPlayer)
+        case DIR_NORTH:
+            applymovement(2, Route_135_Lab_Movement_JamesLeavesPlayerNorth)
+        default:
+            applymovement(2, Route_135_Lab_Movement_JamesLeavesPlayer)
+    }
+    delay(24)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(2)
+    removeobject(2)
+    playse(SE_EXIT)
+    waitse
+    clearflag(FLAG_HIDE_JAMES_ROUTE_115)
+    setvar(VAR_MISA_STATE, 11)
+    release
+    end    
+}
+
+script Route_135_EventScript_JamesBattleChoseNo{
+    msgbox("Oh, okay.\n
+        I'm kind of busy right now, so…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
     release
     end
 }
@@ -233,6 +394,7 @@ script Route135_Lab_EventScript_EndUltraSpace{
     removeobject(5)
     setflag(FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE)
     clearflag(FLAG_HIDE_PROF_ROUTE_135_LAB)
+    clearflag(FLAG_HIDE_JAMES_ROUTE_135_LAB)
     setvar(VAR_ULTRA_SPACE_STATE, 4)
     setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0) // if player already defeated Red before ultra space. for field special
     addvar(VAR_FINAL_REMATCH_STATE, 1)
@@ -721,4 +883,15 @@ script Route_135_Lab_EventScript_TypeNull{
     waitmessage
     releaseall
     end
+}
+
+movement Route_135_Lab_Movement_JamesLeavesPlayer{
+    walk_down * 2
+    walk_right
+    walk_down * 9
+}
+
+movement Route_135_Lab_Movement_JamesLeavesPlayerNorth{
+    walk_right
+    walk_down * 11
 }

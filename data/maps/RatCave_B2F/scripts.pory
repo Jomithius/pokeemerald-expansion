@@ -1,4 +1,8 @@
-mapscripts RatCave_B2F_MapScripts {}
+mapscripts RatCave_B2F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_RAT_CAVE_STATE, 3: Ratduardo1_BattleTrigger 
+    ]
+}
 
 script Petalburg_RatCave_Rock {
     lock
@@ -40,8 +44,14 @@ script Ratduardo1_BattleTrigger{
     fadescreenspeed(FADE_TO_BLACK, 2)
     addobject(5)
     fadescreenspeed(FADE_FROM_BLACK, 2)
-    call(RatCave_B2F_EventScript_RatduardoBattle)
-    call(Ratduardo1_BattleOver)
+    trainerbattle_no_intro(TRAINER_RATDUARDO_1, Ratduardo_Outro)
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    removeobject(5)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes:\p
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… try… to follow…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setflag(FLAG_RATDUARDO_RAT_CAVE_1)
     call(RatCaveShake)
     setvar(VAR_RAT_CAVE_STATE, 4)
     releaseall
@@ -74,26 +84,8 @@ movement RattataRun{
    walk_fast_left * 6
 }
 
-script RatCave_B2F_EventScript_RatduardoBattle{
-    trainerbattle_no_intro(TRAINER_RATDUARDO_1, Ratduardo_Outro)
-    lockall
-    return
-}
-
 text Ratduardo_Outro{
     "…"
-}
-
-script Ratduardo1_BattleOver{
-    lockall
-    fadescreenspeed(FADE_TO_BLACK, 2)
-    removeobject(5)
-    fadescreenspeed(FADE_FROM_BLACK, 3)
-    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes:\p
-    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… try… to follow…", MSGBOX_AUTOCLOSE)
-    waitmessage
-    setflag(FLAG_RATDUARDO_RAT_CAVE_1)
-    return
 }
 
 script RatCaveShake{

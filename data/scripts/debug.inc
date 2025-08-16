@@ -174,19 +174,24 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setvar VAR_DIFFICULTY, DIFFICULTY_NORMAL
-	msgbox Debug_DifficultySetToHard, MSGBOX_DEFAULT
+	warp MAP_ULTRA_SPACE, 46, 49 
+	waitstate
 	release
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_DIFFICULTY, DIFFICULTY_EASY
-	msgbox Debug_DifficultySetToEasy, MSGBOX_DEFAULT
+	setvar VAR_ULTRA_SPACE_STATE, 7
+	clearflag FLAG_SYS_DEFEATED_JAMES
+	setflag FLAG_HIDE_TYPHLOSION_ROUTE_115
+	setflag FLAG_SYS_FINAL_REMATCH
+	setflag FLAG_HIDE_RIVAL_ROUTE115
+	warp MAP_ROUTE135, 8, 10
+	waitstate
 	release
 	end
 
 Debug_EventScript_Script_6::
-	warp MAP_VOID, 9, 32
+	warp MAP_AZURE_MOUNTAIN_UP5, 22, 17
 	waitstate
 	release
 	end

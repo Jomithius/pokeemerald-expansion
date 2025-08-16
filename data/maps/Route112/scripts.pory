@@ -150,19 +150,27 @@ script Route112_EventScript_Emo{
     waitmovement(14)
     delay(40)
     playbgm(MUS_PYRITE_THEME, TRUE)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     msgbox(Route112_Text_Emo1, MSGBOX_AUTOCLOSE)
     waitmessage
-    call(Route112_EventScript_RivalBattle)
+    trainerbattle_no_intro(TRAINER_JOMITHIUS_2, Route112_EmoDefeat)
     msgbox(Route112_Text_Emo2, MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_TM_ACROBATICS)
     waitmessage
     delay(10)
-    applymovement(14, Common_Movement_FaceRight)
+    msgbox("I see you also got a POKéNAV…\n
+        … … … … …", MSGBOX_DEFAULT)
+    waitmessage
+    playfanfare(MUS_REGISTER_MATCH_CALL)
+    msgbox("Registered JOMITHIUS in the POKéNAV.", MSGBOX_AUTOCLOSE)
+    waitfanfare
+    waitmessage
+    setflag(FLAG_ENABLED_JOMITHIUS_MATCH_CALL)
+    applymovement(14, Common_Movement_WalkInPlaceRight)
     waitmovement(14)
-    msgbox(Route112_Text_Emo3, MSGBOX_AUTOCLOSE)
+    msgbox(Route112_Text_Emo3, MSGBOX_DEFAULT)
     waitmessage
     delay(20)
     msgbox("…", MSGBOX_AUTOCLOSE)
@@ -203,7 +211,9 @@ script Route112_EventScript_Emo_West{
     playbgm(MUS_PYRITE_THEME, TRUE)
     msgbox(Route112_Text_Emo1, MSGBOX_AUTOCLOSE)
     waitmessage
-    call(Route112_EventScript_RivalBattle)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    trainerbattle_no_intro(TRAINER_JOMITHIUS_2, Route112_EmoDefeat)
     msgbox(Route112_Text_Emo2, MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_TM_ACROBATICS)
@@ -219,7 +229,7 @@ script Route112_EventScript_Emo_West{
     setflag(FLAG_ENABLED_JOMITHIUS_MATCH_CALL)
     applymovement(14, Common_Movement_WalkInPlaceDown)
     waitmovement(14)
-    msgbox(Route112_Text_Emo3, MSGBOX_AUTOCLOSE)
+    msgbox(Route112_Text_Emo3, MSGBOX_DEFAULT)
     waitmessage
     delay(20)
     msgbox("…", MSGBOX_AUTOCLOSE)
@@ -243,12 +253,6 @@ script Route112_EventScript_Emo_West{
     releaseall
     end
 }
-
-script Route112_EventScript_RivalBattle{
-    trainerbattle_no_intro(TRAINER_JOMITHIUS_2, Route112_EmoDefeat)
-    return
-}
-
 
 text Route112_Text_Emo1{
     "JAMES: {PLAYER}…\n
@@ -274,9 +278,8 @@ text Route112_Text_Emo2{
 }
 
 text Route112_Text_Emo3{
-    "I'm going to challenge the\n
-    LAVARIDGE GYM after exploring\l
-    the DESERT.\p
+    "I'm going to challenge the LAVARIDGE\n
+    GYM after exploring the DESERT.\p
     If you're going to head north,\n
     be careful.\p
     There's been a lot of weirdos\n
@@ -284,7 +287,7 @@ text Route112_Text_Emo3{
 }
 
 text Route112_Text_Emo4{
-    "JAMES: .. What?\p
+    "JAMES: What?\p
     Well, see ya, {PLAYER}.\n
     Next time, I won't lose."
 }

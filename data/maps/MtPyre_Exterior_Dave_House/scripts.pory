@@ -67,12 +67,13 @@ script MtPyre_Exterior_Dave_House_EventScript_GiveFantasia{
 }
 
 text MtPyre_Exterior_Dave_House_Text_Fantasia{
-    "Oh yes, hello.\n
+    "Oh, yes, hello.\n
     Who are you?\l
     … … … …\p
     Oh. Nice to meet you, {PLAYER}.\n
-    I'm DAVE, a member of the ELITE FOUR.\l
-    So? Why'd you come all the way out here?\p
+    I'm DAVE, a member of the ELITE FOUR.\p
+    So?\n
+    Why'd you come all the way out here?\p
     … … … …\p
     Oh, I see.\p
     Well, I can tell you're a good TRAINER.\n
@@ -86,10 +87,10 @@ text MtPyre_Exterior_Dave_House_Text_Fantasia{
 
 text MtPyre_Exterior_Dave_House_Text_WarnFantasia{
     "{COLOR BLUE}{SHADOW LIGHT_BLUE}WARNING\p
-    Using the FANTASIA before the post game\n
-    may cause a few visual bugs in\l
-    a couple cutscenes.\p
+    Using the FANTASIA before post game\n
+    may cause a few visual bugs in a\l
+    couple cutscenes.\l
     Check the README for more details.\p
     {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}If we have to battle in the future, do\n
-    me a favor and lose. Okay?"
+    me a favor and lose, okay?"
 }

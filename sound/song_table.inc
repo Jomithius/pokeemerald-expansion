@@ -662,6 +662,7 @@ gSongTable::
 	song mus_vs_ff_boss, 0, 0
 	song mus_vs_gilgamesh, 0, 0
 	song mus_encounter_exdeath, 0, 0
+	song mus_vs_miror_b, 0, 0
 
 	.align 2
 dummy_song_header:

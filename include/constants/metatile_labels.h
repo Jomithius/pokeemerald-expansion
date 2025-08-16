@@ -745,7 +745,8 @@
 #define METATILE_SmallTownWithLab_Door_Route135_Lab  0x373
 
 // gTileset_Snow
-#define METATILE_Snow_SnowGrass  0x00D
+#define METATILE_Snow_NormalGrass  0x10C
+#define METATILE_Snow_SnowGrass    0x00D
 
 // gTileset_Sootopolis
 #define METATILE_Sootopolis_Door             0x21E

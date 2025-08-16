@@ -273,7 +273,7 @@ script EverGrandeCity_EventScript_James{
     waitmessage
     applymovement(5, Common_Movement_WalkDown)
     waitmovement(5)
-    msgbox(EverGrandeCity_Text_James4, MSGBOX_AUTOCLOSE)
+    msgbox(EverGrandeCity_Text_James4, MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_MEGA_RING)
     waitmessage

@@ -255,7 +255,7 @@ Route135_EventScript_FirstMoo::
 # 189 "data/maps/Route135/scripts.pory"
 	delay 60
 # 190 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_MILTANK, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
 # 191 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_FirstMoo_Text_1, MSGBOX_AUTOCLOSE
 # 192 "data/maps/Route135/scripts.pory"
@@ -305,7 +305,7 @@ Route135_EventScript_Lechonk::
 # 224 "data/maps/Route135/scripts.pory"
 	faceplayer
 # 225 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_LECHONK, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_LECHONK, CRY_MODE_NORMAL
 # 226 "data/maps/Route135/scripts.pory"
 	waitmoncry
 # 227 "data/maps/Route135/scripts.pory"
@@ -319,7 +319,7 @@ Route135_EventScript_Oinkologne::
 # 233 "data/maps/Route135/scripts.pory"
 	faceplayer
 # 234 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_OINKOLOGNE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_OINKOLOGNE, CRY_MODE_NORMAL
 # 235 "data/maps/Route135/scripts.pory"
 	waitmoncry
 # 236 "data/maps/Route135/scripts.pory"
@@ -333,7 +333,7 @@ Route135_EventScript_Mudbray::
 # 242 "data/maps/Route135/scripts.pory"
 	faceplayer
 # 243 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_MUDBRAY, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MUDBRAY, CRY_MODE_NORMAL
 # 244 "data/maps/Route135/scripts.pory"
 	waitmoncry
 # 245 "data/maps/Route135/scripts.pory"
@@ -347,7 +347,7 @@ Route135_EventScript_Mudsdale::
 # 251 "data/maps/Route135/scripts.pory"
 	faceplayer
 # 252 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_MUDSDALE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MUDSDALE, CRY_MODE_NORMAL
 # 253 "data/maps/Route135/scripts.pory"
 	waitmoncry
 # 254 "data/maps/Route135/scripts.pory"
@@ -361,7 +361,7 @@ Route135_EventScript_Tauros::
 # 260 "data/maps/Route135/scripts.pory"
 	faceplayer
 # 261 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_TAUROS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_TAUROS, CRY_MODE_NORMAL
 # 262 "data/maps/Route135/scripts.pory"
 	waitmoncry
 # 263 "data/maps/Route135/scripts.pory"
@@ -375,7 +375,7 @@ Route135_EventScript_Miltank::
 # 269 "data/maps/Route135/scripts.pory"
 	faceplayer
 # 270 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_MILTANK, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
 # 271 "data/maps/Route135/scripts.pory"
 	waitmoncry
 # 272 "data/maps/Route135/scripts.pory"

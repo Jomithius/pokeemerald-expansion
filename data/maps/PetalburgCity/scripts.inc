@@ -1989,4 +1989,4 @@ PetalburgCity_LunaText3::
 
 LunaGone_FantasiaHint::
 # 959 "data/maps/PetalburgCity/scripts.pory"
-	.string "MAN: LUNA's still not back.\n He said he was meeting somebody\l at MT. PYRE.\p I have no idea why he would want to\n go to such a haunted place.$"
+	.string "LUNA's still not back.\n He said he was meeting somebody\l at MT. PYRE.\p I have no idea why he would want to\n go to such a haunted place.$"

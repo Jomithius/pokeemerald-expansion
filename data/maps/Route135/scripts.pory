@@ -187,7 +187,7 @@ script Route135_EventScript_FirstMoo{
     waitmovement(0)
     fadeoutbgm(1)
     delay(60)
-    playmoncry(SPECIES_MILTANK, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_MILTANK, CRY_MODE_NORMAL)
     msgbox("MILTANK: Moooooo!", MSGBOX_AUTOCLOSE)
     waitmoncry
     waitmessage
@@ -222,7 +222,7 @@ script Route135_EventScript_Gentleman{
 script Route135_EventScript_Lechonk{
     lock
     faceplayer
-    playmoncry(SPECIES_LECHONK, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_LECHONK, CRY_MODE_NORMAL)
     waitmoncry
     release
     end
@@ -231,7 +231,7 @@ script Route135_EventScript_Lechonk{
 script Route135_EventScript_Oinkologne{
     lock
     faceplayer
-    playmoncry(SPECIES_OINKOLOGNE, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_OINKOLOGNE, CRY_MODE_NORMAL)
     waitmoncry
     release
     end
@@ -240,7 +240,7 @@ script Route135_EventScript_Oinkologne{
 script Route135_EventScript_Mudbray{
     lock
     faceplayer
-    playmoncry(SPECIES_MUDBRAY, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_MUDBRAY, CRY_MODE_NORMAL)
     waitmoncry
     release
     end
@@ -249,7 +249,7 @@ script Route135_EventScript_Mudbray{
 script Route135_EventScript_Mudsdale{
     lock
     faceplayer
-    playmoncry(SPECIES_MUDSDALE, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_MUDSDALE, CRY_MODE_NORMAL)
     waitmoncry
     release
     end
@@ -258,7 +258,7 @@ script Route135_EventScript_Mudsdale{
 script Route135_EventScript_Tauros{
     lock
     faceplayer
-    playmoncry(SPECIES_TAUROS, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_TAUROS, CRY_MODE_NORMAL)
     waitmoncry
     release
     end
@@ -267,7 +267,7 @@ script Route135_EventScript_Tauros{
 script Route135_EventScript_Miltank{
     lock
     faceplayer
-    playmoncry(SPECIES_MILTANK, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_MILTANK, CRY_MODE_NORMAL)
     waitmoncry
     release
     end

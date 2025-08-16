@@ -137,7 +137,7 @@ CaveOfOrigin_B1F_Text_WallaceStory:
 # 69 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	.string "SOOTOPOLIS, but something came up.\p"
 # 70 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "So now, I've entrusted my mentor JUAN\n"
+	.string "So now, I've entrusted LEADER JOEY\n"
 # 71 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	.string "with the GYM's operation.\p"
 # 72 "data/maps/CaveOfOrigin_B1F/scripts.pory"

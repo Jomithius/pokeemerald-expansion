@@ -280,24 +280,23 @@ script Route117_EventScript_MisaBattle{
     }
     else{
         if(flag(FLAG_ROUTE117_RECEIVED_LEFTOVERS) == TRUE){
-        msgbox(Route117_Text_MisaFlowers, MSGBOX_AUTOCLOSE)   
+        msgbox(Route117_Text_MisaFlowers, MSGBOX_AUTOCLOSE)
+		waitmessage   
         }
         else{
-            msgbox(Route117_Text_MisaLeftovers, MSGBOX_AUTOCLOSE)
+            msgbox(Route117_Text_MisaLeftovers, MSGBOX_DEFAULT)
             waitmessage
             giveitem(ITEM_LEFTOVERS)
             waitmessage
             setflag(FLAG_ROUTE117_RECEIVED_LEFTOVERS)
-            release
-            end
         }
-    waitmessage
-    applymovement(27, Common_Movement_FaceUp)
-    waitmovement(27)
-    delay(30)
-    release
-    end 
+		applymovement(27, Common_Movement_FaceUp)
+		waitmovement(27)
+		delay(30)
+		release
+		end 
     }
+	end
 }
 
 script Route117_MisaFriendlyBattle {
@@ -352,7 +351,7 @@ text Route117_MisaPostBattle{
     "Wow! I can tell you and your\n
     POKéMON really share a strong bond.\p
     I'm excited to see how much more\n
-    you'll grow!\p"
+    you'll grow!"
 }
 
 text Route117_Text_MisaLeftovers{

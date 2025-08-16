@@ -855,13 +855,13 @@ static void SnowGrassPerStepCallback(u8 taskId)
 
     tPrevX = x;
     tPrevY = y;
-    if (MetatileBehavior_IsSnowGrass(MapGridGetMetatileBehaviorAt(x, y)))
+    if (MetatileBehavior_IsSnowTallGrass(MapGridGetMetatileBehaviorAt(x, y)))
     {
         // Remove snow from grass
         if (MapGridGetMetatileIdAt(x, y) == METATILE_Snow_SnowGrass)
-            StartSnowFieldEffect(x, y, METATILE_Rustboro_NormalGrass, 4);
+            StartSnowFieldEffect(x, y, METATILE_Snow_NormalGrass, 4);
         else
-            StartSnowFieldEffect(x, y, METATILE_Rustboro_NormalGrass, 4);
+            StartSnowFieldEffect(x, y, METATILE_Snow_NormalGrass, 4);
     }
 }
 

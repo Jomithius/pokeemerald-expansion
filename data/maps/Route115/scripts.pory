@@ -2,6 +2,7 @@ raw`Route115_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Route115_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, Route115_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route115_OnFrame
+    map_script MAP_SCRIPT_ON_RESUME, Route115_OnResume
 	.byte 0
 
 Route115_OnLoad:
@@ -18,6 +19,14 @@ Route115_OnTransition:
 Route115_OnFrame:
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
+
+Route115_OnResume:
+    call_if_defeated TRAINER_JAMES_FINAL, Route115_RemoveJamesPokemon
+    end
+
+Route115_RemoveJamesPokemon:
+    removeobject 25
+    return
 
 Route115_EventScript_Woman::
 	msgbox Route115_Text_NeverKnowWhenCavePokemonWillAppear, MSGBOX_NPC
@@ -146,7 +155,7 @@ Route115_Text_MeteorFallsSign:
 script Route115_EventScript_Trigger_RivalEmo{
     lockall
     playbgm(MUS_DUMMY, FALSE)
-    msgbox("WAIT! It's dangerous!", MSGBOX_AUTOCLOSE)
+    msgbox("???: WAIT!\nIt's dangerous!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Exclaim)
@@ -195,9 +204,9 @@ script Route115_EventScript_Trigger_RivalEmo{
     call(Route115_RivalBattle)
     clearflag(FLAG_HIDE_MISA_ROUTE115)
     addobject(23)
-    msgbox(Route115Emo6, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo6, MSGBOX_DEFAULT)
     waitmessage
-    msgbox("Oh, you're still out here!", MSGBOX_AUTOCLOSE)
+    msgbox("???: Oh, you're still out here!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(22, Route115Exclaim)
@@ -214,7 +223,7 @@ script Route115_EventScript_Trigger_RivalEmo{
     waitmessage
     applymovement(22, Route115FaceLeft)
     waitmovement(22)
-    msgbox(Route115Emo7, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo7, MSGBOX_DEFAULT)
     waitmessage
     msgbox(Route115Misa1, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -235,14 +244,14 @@ script Route115_EventScript_Trigger_RivalEmo{
     waitmovement(0)
     delay(60)
     msgbox("MISA: …Oh! Um… I mean… JOMITHIUS,\n
-    right?" MSGBOX_AUTOCLOSE)
+        right?" MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(22, Route115FaceDown)
     waitmovement(22)
     delay(60)
     playbgm(MUS_PYRITE_THEME, FALSE)
     delay(20)
-    msgbox(Route115Emo8, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo8, MSGBOX_DEFAULT)
     waitmessage
     msgbox(Route115Misa2, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -256,7 +265,7 @@ script Route115_EventScript_Trigger_RivalEmo{
     waitmovement(0)
     msgbox(Route115Emo9, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(22, Route115MisaLeave)
+    applymovement(22, Route115RivalLeave)
     waitmovement(22)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
     waitmovement(0)
@@ -274,7 +283,7 @@ script Route115_EventScript_Trigger_RivalEmo{
 script Route115_EventScript_TriggerRight_RivalEmo{
     lockall
     playbgm(MUS_DUMMY, FALSE)
-    msgbox("WAIT! It's dangerous!", MSGBOX_AUTOCLOSE)
+    msgbox("???: WAIT!\nIt's dangerous!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Exclaim)
@@ -323,9 +332,9 @@ script Route115_EventScript_TriggerRight_RivalEmo{
     call(Route115_RivalBattle)
     clearflag(FLAG_HIDE_MISA_ROUTE115)
     addobject(23)
-    msgbox(Route115Emo6, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo6, MSGBOX_DEFAULT)
     waitmessage
-    msgbox("Oh, you're still out here!", MSGBOX_AUTOCLOSE)
+    msgbox("???: Oh, you're still out here!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(22, Route115Exclaim)
@@ -342,7 +351,7 @@ script Route115_EventScript_TriggerRight_RivalEmo{
     waitmessage
     applymovement(22, Route115FaceLeft)
     waitmovement(22)
-    msgbox(Route115Emo7, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo7, MSGBOX_DEFAULT)
     waitmessage
     msgbox(Route115Misa1, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -363,14 +372,14 @@ script Route115_EventScript_TriggerRight_RivalEmo{
     waitmovement(0)
     delay(60)
     msgbox("MISA: …Oh! Um… I mean… JOMITHIUS,\n
-    right?" MSGBOX_AUTOCLOSE)
+        right?" MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(22, Route115FaceDown)
     waitmovement(22)
     delay(60)
     playbgm(MUS_PYRITE_THEME, FALSE)
     delay(20)
-    msgbox(Route115Emo8, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo8, MSGBOX_DEFAULT)
     waitmessage
     msgbox(Route115Misa2, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -384,7 +393,7 @@ script Route115_EventScript_TriggerRight_RivalEmo{
     waitmovement(0)
     msgbox(Route115Emo9, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(22, Route115MisaLeave)
+    applymovement(22, Route115RivalLeave)
     waitmovement(22)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
     waitmovement(0)
@@ -402,7 +411,7 @@ script Route115_EventScript_TriggerRight_RivalEmo{
 script Route115_EventScript_TriggerLeft_RivalEmo{
     lockall
     playbgm(MUS_DUMMY, FALSE)
-    msgbox("WAIT! It's dangerous!", MSGBOX_AUTOCLOSE)
+    msgbox("???: WAIT! It's dangerous!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115Exclaim)
@@ -451,9 +460,9 @@ script Route115_EventScript_TriggerLeft_RivalEmo{
     call(Route115_RivalBattle)
     clearflag(FLAG_HIDE_MISA_ROUTE115)
     addobject(23)
-    msgbox(Route115Emo6, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo6, MSGBOX_DEFAULT)
     waitmessage
-    msgbox("Oh, you're still out here!", MSGBOX_AUTOCLOSE)
+    msgbox("???: Oh, you're still out here!", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(22, Route115Exclaim)
@@ -470,7 +479,7 @@ script Route115_EventScript_TriggerLeft_RivalEmo{
     waitmessage
     applymovement(22, Route115FaceRight)
     waitmovement(22)
-    msgbox(Route115Emo7, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo7, MSGBOX_DEFAULT)
     waitmessage
     msgbox(Route115Misa1, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -491,14 +500,14 @@ script Route115_EventScript_TriggerLeft_RivalEmo{
     waitmovement(0)
     delay(60)
     msgbox("MISA: …Oh! Um… I mean… JOMITHIUS,\n
-    right?" MSGBOX_AUTOCLOSE)
+        right?" MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(22, Route115FaceDown)
     waitmovement(22)
     delay(60)
     playbgm(MUS_PYRITE_THEME, FALSE)
     delay(20)
-    msgbox(Route115Emo8, MSGBOX_AUTOCLOSE)
+    msgbox(Route115Emo8, MSGBOX_DEFAULT)
     waitmessage
     msgbox(Route115Misa2, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -512,7 +521,7 @@ script Route115_EventScript_TriggerLeft_RivalEmo{
     waitmovement(0)
     msgbox(Route115Emo9, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(22, Route115MisaLeave)
+    applymovement(22, Route115RivalLeave)
     waitmovement(22)
     applymovement(OBJ_EVENT_ID_PLAYER, Route115FaceDown)
     waitmovement(0)
@@ -532,6 +541,123 @@ script Route115_RivalBattle{
     trainerbattle_no_intro(TRAINER_JOMITHIUS, Jomithius_Outro)
     lockall
     return
+}
+
+script Route115_EventScript_JamesBattle{
+    lockall
+    checkobjectat(8, 65)
+    if(var(VAR_RESULT) == TRUE){
+        applymovement(OBJ_EVENT_ID_PLAYER, Route115_Movement_PlayerToJamesRightTrigger)
+    }
+    checkobjectat(6, 65)
+    if(var(VAR_RESULT) == TRUE){
+        applymovement(OBJ_EVENT_ID_PLAYER, Route115_Movement_PlayerToJamesLeftTrigger)
+    }
+    checkobjectat(7, 65)
+    if(var(VAR_RESULT) == TRUE){
+       applymovement(OBJ_EVENT_ID_PLAYER, Route115_Movement_PlayerToJamesMiddleTrigger) 
+    }
+    waitmovement(0)
+    fadeoutbgm(0)
+    msgbox("This is kind of nostalgic, isn't it?\p
+        It really feels like it's been forever\n
+        since I've been out here.", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(24, Common_Movement_WalkInPlaceDown)
+    waitmovement(24)
+    msgbox("I used to come out here every time I\n
+        was bullied. It was the same on the\l
+        day that we met.", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(24, Common_Movement_WalkInPlaceLeft)
+    waitmovement(24)
+    msgbox("God, I wish I could forget how cringe\n
+        I was…", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(24, Common_Movement_WalkInPlaceDown)
+    waitmovement(24)
+    msgbox("But still, the battle we had that day\n
+        helped me get my mind off of things.\p
+        And now, all those worries I had back\n
+        then seem so insignificant.\p
+        Haha, sorry for yapping so much.\n
+        You came here for a battle.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(Route115_EventScript_PlayerGetsInPosition)
+    playfirstmoncry
+    waitmoncry
+    playmoncry(SPECIES_TYPHLOSION_HISUI, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    playbgm(MUS_PYRITE_THEME, FALSE)
+    msgbox("All right, rival!\n
+        For real this time!\p
+        One last battle.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    trainerbattle_no_intro(TRAINER_JAMES_FINAL, "You're still strong as\never, {PLAYER}.")
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+    msgbox("That was fun!\n
+        I'm glad you asked me to battle again.\p
+        It's not every day the CHAMPION\n
+        asks you for a battle!\p
+        All right! That was a good break\n
+        from all the research, but I should\l
+        get back to the lab now.\p
+        See ya, {PLAYER}.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(24, Common_Movement_WalkInPlaceUp)
+    waitmovement(24)
+    fadeoutbgm(0)
+    msgbox("Actually, one more thing.", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(24, Common_Movement_WalkInPlaceDown)
+    waitmovement(24)
+    msgbox("Thanks for being my friend, {PLAYER}.\n
+        It… really means a lot to me.\l
+        …\p
+        Okay, see ya.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(24, Common_Movement_WalkInPlaceUp)
+    waitmovement(24)
+    setfieldeffectargument(0, 1)
+	dofieldeffect(FLDEFF_NPCFLY_OUT)
+	delay(15)
+	removeobject(24)
+	waitfieldeffect(FLDEFF_NPCFLY_OUT)
+    fadeinbgm(0)
+    clearflag(FLAG_HIDE_JAMES_ROUTE_135_LAB)
+    setvar(VAR_MISA_STATE, 12)
+    setflag(FLAG_SYS_DEFEATED_JAMES)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    callnative(UpdateFollowingPokemon)
+    releaseall
+    end
+}
+
+script Route115_EventScript_PlayerGetsInPosition{
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth)
+    waitmovement(0)
+	callnative(UpdateFollowingPokemon)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    addobject(25)
+    setobjectxy(OBJ_EVENT_ID_FOLLOWER, 7, 64)
+    clearflag(FLAG_HIDE_TYPHLOSION_ROUTE_115)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
+    waitmovement(0)
+	fadescreen(FADE_FROM_WHITE)
+	applymovement(25, EverGrandeCity_Movement_EliteFourPokemonGetsInPosition)
+	delay(8)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_Movement_PlayerPokemonGetsInPosition)
+	waitmovement(0)
+	delay(30)
+	return
 }
 
 text Route115Emo1{"Don't come any closer. Hold on…"}
@@ -628,9 +754,27 @@ movement Route115MisaWalkUpRight{
 }
 
 movement Route115MisaLeave{
+    walk_down * 4
+    walk_right * 4
+    walk_up * 4
+    walk_right * 7
+}
+
+movement Route115RivalLeave{
     walk_down * 5
     walk_right
     walk_down
+    walk_right * 3
+    walk_up * 4
+    walk_right * 7
+}
+
+movement Route115MisaLeaveLeftTrigger{
+    walk_down * 5
+    walk_right
+    walk_down
+    walk_right * 3
+    walk_right * 7
 }
 
 movement Route115Confused{
@@ -661,10 +805,18 @@ movement Route115MoveRight{
     walk_right
 }
 
-script Route115_EventScript_EmoRivalVar0{
-    lock
-    msgbox("…", MSGBOX_AUTOCLOSE)
-    waitmessage
-    release
-    end
+movement Route115_Movement_PlayerToJamesRightTrigger{
+    walk_up * 2
+    walk_left
+    walk_up
+}
+
+movement Route115_Movement_PlayerToJamesLeftTrigger{
+    walk_up * 2
+    walk_right
+    walk_up
+}
+
+movement Route115_Movement_PlayerToJamesMiddleTrigger{
+    walk_up * 3
 }

@@ -1071,7 +1071,7 @@
 #define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
 #define FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY                           0x3FC // Final Rematches
 #define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD // changed
-#define FLAG_ITEM_ROUTE_117_ICY_WIND                              0x3FE
+#define FLAG_ITEM_ROUTE_117_ICY_WIND                                0x3FE
 #define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
 #define FLAG_HIDE_DRIVES_CLERK                                      0x400 // Evergrande City
 #define FLAG_ITEM_ROUTE_119_ZINC                                    0x401 // changed
@@ -1152,7 +1152,7 @@
 #define FLAG_ITEM_ABANDONED_SHIP_CAPTAINS_OFFICE_STORAGE_KEY        0x44C
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_3_WATER_STONE    0x44D
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_1_TM_RAIN_DANCE  0x44E
-#define FLAG_ITEM_ROUTE_121_CARBOS                                  0x44F // Unused
+#define FLAG_HIDE_JAMES_ROUTE_135_LAB                               0x44F // Ultra Space and final James battles
 #define FLAG_ITEM_ROUTE_123_ULTRA_BALL                              0x450
 #define FLAG_ITEM_ROUTE_126_GREEN_SHARD                             0x451
 #define FLAG_ITEM_ROUTE_119_HYPER_POTION_2                          0x452
@@ -1169,7 +1169,7 @@
 #define FLAG_ITEM_PETALBURG_WOODS_PARALYZE_HEAL                     0x45D
 #define FLAG_ITEM_ROUTE_115_GREAT_BALL                              0x45E
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_CALCIUM                         0x45F // changed
-#define FLAG_ITEM_MT_PYRE_3F_SUPER_REPEL                            0x460 // Unused
+#define FLAG_HIDE_JAMES_ROUTE_115                                   0x460 // Final James Battle
 #define FLAG_ITEM_ROUTE_118_HYPER_POTION                            0x461
 #define FLAG_ITEM_NEW_MAUVILLE_FULL_HEAL                            0x462
 #define FLAG_ITEM_NEW_MAUVILLE_PARALYZE_HEAL                        0x463 // changed to venoshock
@@ -1199,7 +1199,7 @@
 #define FLAG_ITEM_ROUTE_119_ELIXIR_2                                0x47B
 #define FLAG_ITEM_ROUTE_120_REVIVE                                  0x47C
 #define FLAG_ITEM_ROUTE_121_REVIVE                                  0x47D
-#define FLAG_ITEM_ROUTE_121_ZINC                                    0x47E // Unused
+#define FLAG_HIDE_TYPHLOSION_ROUTE_115                              0x47E // James battle route 115
 #define FLAG_ITEM_MAGMA_HIDEOUT_1F_RARE_CANDY                       0x47F
 #define FLAG_ITEM_ROUTE_123_PP_UP                                   0x480
 #define FLAG_ITEM_ROUTE_123_REVIVAL_HERB                            0x481
@@ -1207,7 +1207,7 @@
 #define FLAG_ITEM_ROUTE_127_RARE_CANDY                              0x483
 #define FLAG_ITEM_ROUTE_132_PROTEIN                                 0x484
 #define FLAG_ITEM_ROUTE_133_MAX_REVIVE                              0x485
-#define FLAG_ITEM_ROUTE_134_CARBOS                                  0x486 // Unused
+#define FLAG_ITEM_LILYCOVE_RAT_CAVE_TOXIC_ORB                       0x486 // Rat Cave Lilycove
 #define FLAG_ITEM_ROUTE_134_STAR_PIECE                              0x487
 #define FLAG_ITEM_ROUTE_114_TM_DRAIN_PUNCH                          0x488
 #define FLAG_ITEM_ROUTE_115_PP_UP                                   0x489
@@ -1547,8 +1547,8 @@
 #define FLAG_RECEIVED_TM_WATER_PULSE                (SYSTEM_FLAGS + 0xAB) // Rustboro City
 #define FLAG_RECEIVED_TM_FREEZE_DRY                 (SYSTEM_FLAGS + 0xAC) // Sootopolis City
 #define FLAG_SYS_SLEEP_CLAUSE                       (SYSTEM_FLAGS + 0xAD) // Set if Hard Mode
-#define FLAG_SYS_TALKED_TO_E4_TUTOR                 (SYSTEM_FLAGS + 0xAE) // Unused Flag
-#define FLAG_UNUSED_0x90F                           (SYSTEM_FLAGS + 0xAF) // Unused Flag
+#define FLAG_SYS_TALKED_TO_E4_TUTOR                 (SYSTEM_FLAGS + 0xAE) //
+#define FLAG_SYS_DEFEATED_JAMES                     (SYSTEM_FLAGS + 0xAF) // James Final Battle
 #define FLAG_UNUSED_0x910                           (SYSTEM_FLAGS + 0xB0) // Unused Flag
 #define FLAG_UNUSED_0x911                           (SYSTEM_FLAGS + 0xB1) // Unused Flag
 #define FLAG_UNUSED_0x912                           (SYSTEM_FLAGS + 0xB2) // Unused Flag

@@ -2938,6 +2938,21 @@ MatchCall_Text_Emo2::
 
 MatchCall_Text_Emo3::
 	.string "… … … … … …\n"
+	.string "{PLAYER}?\l"
+	.string "I'm heading to LILYCOVE.\p"
+	.string "I heard that the DEPT. STORE\n"
+	.string "there has a lot of rare items.\p"
+	.string "There's also a spot I like to\n"
+	.string "go to when I visit here, near\l"
+	.string "the weird lighthouse thing in\l"
+	.string "the southeastern part of town.\p"
+	.string "You should check it out when\n"
+	.string "you're there.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+MatchCall_Text_Emo4::
+	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "It looks like nobody's\n"
 	.string "answering right now.$"

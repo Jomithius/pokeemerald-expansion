@@ -47,7 +47,7 @@ script Void_EventScript_FinalBattle{
     msgbox("Haha, JAMES would probably freak out if\n
         he knew it was real!\p
         But MISA would kill me if I showed him\n
-        and he turned back into an edgelord.\p
+        and he started full larping again.\p
         Well, maybe he'll come across it during\n
         one of his investigations into the\l
         ULTRA SPACE.", MSGBOX_AUTOCLOSE)
@@ -198,6 +198,7 @@ script EventScript_FinalRematchesUnlocked{
     clearflag(FLAG_HIDE_MAUVILLE_GYM_WATTSON)
     clearflag(FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY)
     clearflag(FLAG_HIDE_STAFF_EMPLOYEE_MERCHANTS)
+    setflag(FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST) // npc blocking gym door
     setvar(VAR_MOMO_ARIA_STATE, 10) // for aria in mossdeep
     releaseall
     end

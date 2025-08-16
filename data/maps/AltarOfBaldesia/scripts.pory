@@ -226,7 +226,9 @@ script AltarOfBaldesia_EventScript_DoLohanMultiBattle{
 
 script AltarOfBaldesia_EventScript_PecharuntAmbush{
     lockall
-    special(HealPlayerParty)
+    if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
+        special(HealPlayerParty)
+    }
     playse(SE_FLEE)
     fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_LOHAN)

@@ -718,6 +718,8 @@ Common_ShowEasyChatScreen::
 Common_EventScript_ReadyPetalburgGymForBattle::
 	clearflag FLAG_HIDE_PETALBURG_GYM_GREETER
 	setflag FLAG_PETALBURG_MART_EXPANDED_ITEMS
+	setflag FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST
+	setflag FLAG_HIDE_PETALBURG_GYM_NORMAN
 	return
 
 Common_EventScript_BufferTrendyPhrase::

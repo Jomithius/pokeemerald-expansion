@@ -328,7 +328,8 @@ static const struct MatchCallRival sBrendanMatchCallHeader =
 static const match_call_text_data_t sJomithiusTextScripts[] = {
     { MatchCall_Text_Emo1, 0xFFFF,                              0xFFFF },
     { MatchCall_Text_Emo2, FLAG_BADGE06_GET,                    0xFFFF },
-    { MatchCall_Text_Emo3, FLAG_JOMITHIUS_UNAVAILABLE,          0xFFFF },
+    { MatchCall_Text_Emo3, FLAG_HIDE_EMO_MT_PYRE,               0xFFFF },
+    { MatchCall_Text_Emo4, FLAG_JOMITHIUS_UNAVAILABLE,          0xFFFF },
     { NULL,                   0xFFFF,                           0xFFFF },
 };
 

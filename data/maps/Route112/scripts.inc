@@ -291,7 +291,7 @@ Route112_EventScript_Emo::
 # 152 "data/maps/Route112/scripts.pory"
 	playbgm MUS_PYRITE_THEME, TRUE
 # 153 "data/maps/Route112/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 # 154 "data/maps/Route112/scripts.pory"
 	waitmovement 0
 # 155 "data/maps/Route112/scripts.pory"
@@ -299,7 +299,7 @@ Route112_EventScript_Emo::
 # 156 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 157 "data/maps/Route112/scripts.pory"
-	call Route112_EventScript_RivalBattle
+	trainerbattle_no_intro TRAINER_JOMITHIUS_2, Route112_EmoDefeat
 # 158 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_Emo2, MSGBOX_DEFAULT
 # 159 "data/maps/Route112/scripts.pory"
@@ -311,276 +311,288 @@ Route112_EventScript_Emo::
 # 162 "data/maps/Route112/scripts.pory"
 	delay 10
 # 163 "data/maps/Route112/scripts.pory"
-	applymovement 14, Common_Movement_FaceRight
-# 164 "data/maps/Route112/scripts.pory"
-	waitmovement 14
+	msgbox Route112_EventScript_Emo_Text_0, MSGBOX_DEFAULT
 # 165 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_Emo3, MSGBOX_AUTOCLOSE
-# 166 "data/maps/Route112/scripts.pory"
 	waitmessage
+# 166 "data/maps/Route112/scripts.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
 # 167 "data/maps/Route112/scripts.pory"
-	delay 20
+	msgbox Route112_EventScript_Emo_Text_1, MSGBOX_AUTOCLOSE
 # 168 "data/maps/Route112/scripts.pory"
-	msgbox Route112_EventScript_Emo_Text_0, MSGBOX_AUTOCLOSE
+	waitfanfare
 # 169 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 170 "data/maps/Route112/scripts.pory"
-	delay 30
+	setflag FLAG_ENABLED_JOMITHIUS_MATCH_CALL
 # 171 "data/maps/Route112/scripts.pory"
-	applymovement 14, Common_Movement_FacePlayer
+	applymovement 14, Common_Movement_WalkInPlaceRight
 # 172 "data/maps/Route112/scripts.pory"
 	waitmovement 14
 # 173 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_Emo4, MSGBOX_AUTOCLOSE
+	msgbox Route112_Text_Emo3, MSGBOX_DEFAULT
 # 174 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 175 "data/maps/Route112/scripts.pory"
-	applymovement 14, Route112_Movement_EmoLeave
+	delay 20
 # 176 "data/maps/Route112/scripts.pory"
-	delay 30
+	msgbox Route112_EventScript_Emo_Text_2, MSGBOX_AUTOCLOSE
 # 177 "data/maps/Route112/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	waitmessage
 # 178 "data/maps/Route112/scripts.pory"
-	waitmovement 14
+	delay 30
 # 179 "data/maps/Route112/scripts.pory"
-	removeobject 14
+	applymovement 14, Common_Movement_FacePlayer
 # 180 "data/maps/Route112/scripts.pory"
-	savebgm MUS_DUMMY
+	waitmovement 14
 # 181 "data/maps/Route112/scripts.pory"
-	fadedefaultbgm
+	msgbox Route112_Text_Emo4, MSGBOX_AUTOCLOSE
 # 182 "data/maps/Route112/scripts.pory"
-	setflag FLAG_EMO_ROUTE_112
+	waitmessage
 # 183 "data/maps/Route112/scripts.pory"
-	setvar VAR_MISA_STATE, 6
+	applymovement 14, Route112_Movement_EmoLeave
 # 184 "data/maps/Route112/scripts.pory"
+	delay 30
+# 185 "data/maps/Route112/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 186 "data/maps/Route112/scripts.pory"
+	waitmovement 14
+# 187 "data/maps/Route112/scripts.pory"
+	removeobject 14
+# 188 "data/maps/Route112/scripts.pory"
+	savebgm MUS_DUMMY
+# 189 "data/maps/Route112/scripts.pory"
+	fadedefaultbgm
+# 190 "data/maps/Route112/scripts.pory"
+	setflag FLAG_EMO_ROUTE_112
+# 191 "data/maps/Route112/scripts.pory"
+	setvar VAR_MISA_STATE, 6
+# 192 "data/maps/Route112/scripts.pory"
 	releaseall
 	end
 
 
 Route112_EventScript_Emo_West::
-# 189 "data/maps/Route112/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route112_PlayerWalkBackWest
-# 190 "data/maps/Route112/scripts.pory"
-	waitmovement 0
-# 191 "data/maps/Route112/scripts.pory"
-	playse SE_EXIT
-# 192 "data/maps/Route112/scripts.pory"
-	clearflag FLAG_EMO_ROUTE_112
-# 193 "data/maps/Route112/scripts.pory"
-	addobject 14
-# 194 "data/maps/Route112/scripts.pory"
-	applymovement 14, Common_Movement_WalkDown
-# 195 "data/maps/Route112/scripts.pory"
-	waitmovement 14
-# 196 "data/maps/Route112/scripts.pory"
-	applymovement 14, Common_Movement_WalkInPlaceRight
 # 197 "data/maps/Route112/scripts.pory"
-	waitmovement 14
+	applymovement OBJ_EVENT_ID_PLAYER, Route112_PlayerWalkBackWest
 # 198 "data/maps/Route112/scripts.pory"
-	delay 40
+	waitmovement 0
 # 199 "data/maps/Route112/scripts.pory"
-	playse SE_PIN
+	playse SE_EXIT
 # 200 "data/maps/Route112/scripts.pory"
-	applymovement 14, Common_Movement_ExclamationMark
+	clearflag FLAG_EMO_ROUTE_112
 # 201 "data/maps/Route112/scripts.pory"
-	waitmovement 14
+	addobject 14
 # 202 "data/maps/Route112/scripts.pory"
-	delay 40
+	applymovement 14, Common_Movement_WalkDown
 # 203 "data/maps/Route112/scripts.pory"
-	playbgm MUS_PYRITE_THEME, TRUE
+	waitmovement 14
 # 204 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_Emo1, MSGBOX_AUTOCLOSE
+	applymovement 14, Common_Movement_WalkInPlaceRight
 # 205 "data/maps/Route112/scripts.pory"
-	waitmessage
+	waitmovement 14
 # 206 "data/maps/Route112/scripts.pory"
-	call Route112_EventScript_RivalBattle
+	delay 40
 # 207 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_Emo2, MSGBOX_DEFAULT
+	playse SE_PIN
 # 208 "data/maps/Route112/scripts.pory"
-	waitmessage
+	applymovement 14, Common_Movement_ExclamationMark
 # 209 "data/maps/Route112/scripts.pory"
-	giveitem ITEM_TM_ACROBATICS
+	waitmovement 14
 # 210 "data/maps/Route112/scripts.pory"
-	delay 10
+	delay 40
 # 211 "data/maps/Route112/scripts.pory"
-	waitmessage
+	playbgm MUS_PYRITE_THEME, TRUE
 # 212 "data/maps/Route112/scripts.pory"
-	msgbox Route112_EventScript_Emo_West_Text_0, MSGBOX_DEFAULT
-# 214 "data/maps/Route112/scripts.pory"
+	msgbox Route112_Text_Emo1, MSGBOX_AUTOCLOSE
+# 213 "data/maps/Route112/scripts.pory"
 	waitmessage
+# 214 "data/maps/Route112/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 # 215 "data/maps/Route112/scripts.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
+	waitmovement 0
 # 216 "data/maps/Route112/scripts.pory"
-	msgbox Route112_EventScript_Emo_West_Text_1, MSGBOX_AUTOCLOSE
+	trainerbattle_no_intro TRAINER_JOMITHIUS_2, Route112_EmoDefeat
 # 217 "data/maps/Route112/scripts.pory"
-	waitfanfare
+	msgbox Route112_Text_Emo2, MSGBOX_DEFAULT
 # 218 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 219 "data/maps/Route112/scripts.pory"
-	setflag FLAG_ENABLED_JOMITHIUS_MATCH_CALL
+	giveitem ITEM_TM_ACROBATICS
 # 220 "data/maps/Route112/scripts.pory"
-	applymovement 14, Common_Movement_WalkInPlaceDown
+	delay 10
 # 221 "data/maps/Route112/scripts.pory"
-	waitmovement 14
+	waitmessage
 # 222 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_Emo3, MSGBOX_AUTOCLOSE
-# 223 "data/maps/Route112/scripts.pory"
-	waitmessage
+	msgbox Route112_EventScript_Emo_Text_0, MSGBOX_DEFAULT
 # 224 "data/maps/Route112/scripts.pory"
-	delay 20
+	waitmessage
 # 225 "data/maps/Route112/scripts.pory"
-	msgbox Route112_EventScript_Emo_Text_0, MSGBOX_AUTOCLOSE
+	playfanfare MUS_REGISTER_MATCH_CALL
 # 226 "data/maps/Route112/scripts.pory"
-	waitmessage
+	msgbox Route112_EventScript_Emo_Text_1, MSGBOX_AUTOCLOSE
 # 227 "data/maps/Route112/scripts.pory"
-	delay 30
+	waitfanfare
 # 228 "data/maps/Route112/scripts.pory"
-	applymovement 14, Common_Movement_FacePlayer
-# 229 "data/maps/Route112/scripts.pory"
-	waitmovement 14
-# 230 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_Emo4, MSGBOX_AUTOCLOSE
-# 231 "data/maps/Route112/scripts.pory"
 	waitmessage
-# 232 "data/maps/Route112/scripts.pory"
-	applymovement 14, Route112_Movement_EmoLeaveWest
-# 233 "data/maps/Route112/scripts.pory"
-	delay 30
-# 234 "data/maps/Route112/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
-# 235 "data/maps/Route112/scripts.pory"
-	delay 20
-# 236 "data/maps/Route112/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
-# 237 "data/maps/Route112/scripts.pory"
+# 229 "data/maps/Route112/scripts.pory"
+	setflag FLAG_ENABLED_JOMITHIUS_MATCH_CALL
+# 230 "data/maps/Route112/scripts.pory"
+	applymovement 14, Common_Movement_WalkInPlaceDown
+# 231 "data/maps/Route112/scripts.pory"
 	waitmovement 14
+# 232 "data/maps/Route112/scripts.pory"
+	msgbox Route112_Text_Emo3, MSGBOX_DEFAULT
+# 233 "data/maps/Route112/scripts.pory"
+	waitmessage
+# 234 "data/maps/Route112/scripts.pory"
+	delay 20
+# 235 "data/maps/Route112/scripts.pory"
+	msgbox Route112_EventScript_Emo_Text_2, MSGBOX_AUTOCLOSE
+# 236 "data/maps/Route112/scripts.pory"
+	waitmessage
+# 237 "data/maps/Route112/scripts.pory"
+	delay 30
 # 238 "data/maps/Route112/scripts.pory"
-	removeobject 14
+	applymovement 14, Common_Movement_FacePlayer
 # 239 "data/maps/Route112/scripts.pory"
-	savebgm MUS_DUMMY
+	waitmovement 14
 # 240 "data/maps/Route112/scripts.pory"
-	fadedefaultbgm
+	msgbox Route112_Text_Emo4, MSGBOX_AUTOCLOSE
 # 241 "data/maps/Route112/scripts.pory"
-	setflag FLAG_EMO_ROUTE_112
+	waitmessage
 # 242 "data/maps/Route112/scripts.pory"
-	setvar VAR_MISA_STATE, 6
+	applymovement 14, Route112_Movement_EmoLeaveWest
 # 243 "data/maps/Route112/scripts.pory"
+	delay 30
+# 244 "data/maps/Route112/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+# 245 "data/maps/Route112/scripts.pory"
+	delay 20
+# 246 "data/maps/Route112/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 247 "data/maps/Route112/scripts.pory"
+	waitmovement 14
+# 248 "data/maps/Route112/scripts.pory"
+	removeobject 14
+# 249 "data/maps/Route112/scripts.pory"
+	savebgm MUS_DUMMY
+# 250 "data/maps/Route112/scripts.pory"
+	fadedefaultbgm
+# 251 "data/maps/Route112/scripts.pory"
+	setflag FLAG_EMO_ROUTE_112
+# 252 "data/maps/Route112/scripts.pory"
+	setvar VAR_MISA_STATE, 6
+# 253 "data/maps/Route112/scripts.pory"
 	releaseall
 	end
 
 
-Route112_EventScript_RivalBattle::
-# 248 "data/maps/Route112/scripts.pory"
-	trainerbattle_no_intro TRAINER_JOMITHIUS_2, Route112_EmoDefeat
-	return
-
-
-# 292 "data/maps/Route112/scripts.pory"
+# 295 "data/maps/Route112/scripts.pory"
 Route112_Movement_EmoLeave:
-# 293 "data/maps/Route112/scripts.pory"
+# 296 "data/maps/Route112/scripts.pory"
 	walk_right
-# 293 "data/maps/Route112/scripts.pory"
+# 296 "data/maps/Route112/scripts.pory"
 	walk_right
-# 293 "data/maps/Route112/scripts.pory"
+# 296 "data/maps/Route112/scripts.pory"
 	walk_right
-# 293 "data/maps/Route112/scripts.pory"
+# 296 "data/maps/Route112/scripts.pory"
 	walk_right
-# 293 "data/maps/Route112/scripts.pory"
+# 296 "data/maps/Route112/scripts.pory"
 	walk_right
-# 293 "data/maps/Route112/scripts.pory"
+# 296 "data/maps/Route112/scripts.pory"
 	walk_right
-# 294 "data/maps/Route112/scripts.pory"
+# 297 "data/maps/Route112/scripts.pory"
 	walk_down
-# 294 "data/maps/Route112/scripts.pory"
+# 297 "data/maps/Route112/scripts.pory"
 	walk_down
-# 295 "data/maps/Route112/scripts.pory"
-	walk_right
-# 295 "data/maps/Route112/scripts.pory"
-	walk_right
-	step_end
-
 # 298 "data/maps/Route112/scripts.pory"
+	walk_right
+# 298 "data/maps/Route112/scripts.pory"
+	walk_right
+	step_end
+
+# 301 "data/maps/Route112/scripts.pory"
 Route112_Movement_EmoLeaveWest:
-# 299 "data/maps/Route112/scripts.pory"
+# 302 "data/maps/Route112/scripts.pory"
 	walk_down
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 300 "data/maps/Route112/scripts.pory"
+# 303 "data/maps/Route112/scripts.pory"
 	walk_right
-# 301 "data/maps/Route112/scripts.pory"
+# 304 "data/maps/Route112/scripts.pory"
 	walk_down
-# 301 "data/maps/Route112/scripts.pory"
+# 304 "data/maps/Route112/scripts.pory"
 	walk_down
-# 301 "data/maps/Route112/scripts.pory"
+# 304 "data/maps/Route112/scripts.pory"
 	walk_down
 	step_end
 
-# 304 "data/maps/Route112/scripts.pory"
-Route112_PlayerWalkBack:
-# 305 "data/maps/Route112/scripts.pory"
-	lock_facing_direction
-# 306 "data/maps/Route112/scripts.pory"
-	walk_down
 # 307 "data/maps/Route112/scripts.pory"
-	delay_16
+Route112_PlayerWalkBack:
 # 308 "data/maps/Route112/scripts.pory"
+	lock_facing_direction
+# 309 "data/maps/Route112/scripts.pory"
+	walk_down
+# 310 "data/maps/Route112/scripts.pory"
+	delay_16
+# 311 "data/maps/Route112/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 311 "data/maps/Route112/scripts.pory"
-Route112_PlayerWalkBackWest:
-# 312 "data/maps/Route112/scripts.pory"
-	lock_facing_direction
-# 313 "data/maps/Route112/scripts.pory"
-	walk_right
 # 314 "data/maps/Route112/scripts.pory"
-	delay_16
+Route112_PlayerWalkBackWest:
 # 315 "data/maps/Route112/scripts.pory"
+	lock_facing_direction
+# 316 "data/maps/Route112/scripts.pory"
+	walk_right
+# 317 "data/maps/Route112/scripts.pory"
+	delay_16
+# 318 "data/maps/Route112/scripts.pory"
 	unlock_facing_direction
 	step_end
 
 Route112_EventScript_Emo_Text_0:
-# 168 "data/maps/Route112/scripts.pory"
-	.string "…$"
-
-Route112_EventScript_Emo_West_Text_0:
-# 212 "data/maps/Route112/scripts.pory"
+# 163 "data/maps/Route112/scripts.pory"
 	.string "I see you also got a POKéNAV…\n … … … … …$"
 
-Route112_EventScript_Emo_West_Text_1:
-# 216 "data/maps/Route112/scripts.pory"
+Route112_EventScript_Emo_Text_1:
+# 167 "data/maps/Route112/scripts.pory"
 	.string "Registered JOMITHIUS in the POKéNAV.$"
 
+Route112_EventScript_Emo_Text_2:
+# 176 "data/maps/Route112/scripts.pory"
+	.string "…$"
+
 Route112_Text_Emo1::
-# 253 "data/maps/Route112/scripts.pory"
+# 257 "data/maps/Route112/scripts.pory"
 	.string "JAMES: {PLAYER}…\n We meet again.\p My power has increased since we\n last battled.\p My eye… It now burns hotter than\n the FIERY PATH..\p This time, I, JOMITHIUS, will\n achieve victory!$"
 
 Route112_EmoDefeat::
-# 264 "data/maps/Route112/scripts.pory"
+# 268 "data/maps/Route112/scripts.pory"
 	.string "I'm in my abyss…$"
 
 Route112_Text_Emo2::
-# 268 "data/maps/Route112/scripts.pory"
+# 272 "data/maps/Route112/scripts.pory"
 	.string "JAMES: So victory still eludes\n me…\l You're a worthy adversary.\p Out of respect for your\n power, I'll give you this.$"
 
 Route112_Text_Emo3::
-# 276 "data/maps/Route112/scripts.pory"
-	.string "I'm going to challenge the\n LAVARIDGE GYM after exploring\l the DESERT.\p If you're going to head north,\n be careful.\p There's been a lot of weirdos\n lurking around here lately.$"
+# 280 "data/maps/Route112/scripts.pory"
+	.string "I'm going to challenge the LAVARIDGE\n GYM after exploring the DESERT.\p If you're going to head north,\n be careful.\p There's been a lot of weirdos\n lurking around here lately.$"
 
 Route112_Text_Emo4::
-# 286 "data/maps/Route112/scripts.pory"
-	.string "JAMES: .. What?\p Well, see ya, {PLAYER}.\n Next time, I won't lose.$"
+# 289 "data/maps/Route112/scripts.pory"
+	.string "JAMES: What?\p Well, see ya, {PLAYER}.\n Next time, I won't lose.$"

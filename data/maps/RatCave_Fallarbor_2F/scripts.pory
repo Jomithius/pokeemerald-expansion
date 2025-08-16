@@ -1,4 +1,8 @@
-mapscripts RatCave_Fallarbor_2F_MapScripts {}
+mapscripts RatCave_Fallarbor_2F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_RAT_CAVE_STATE, 5: RatCave_Fallarbor_2F_EventScript_Ratduardo
+    ]
+}
 
 script RatCave_Fallarbor_2F_EventScript_Raticate{
     lock
@@ -16,10 +20,21 @@ script RatCave_Fallarbor_2F_EventScript_RaticateAlola{
 
 script RatCave_Fallarbor_2F_EventScript_Ratduardo{
     lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+    playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
     msgbox(RatCave_Fallarbor_2F_Text_RatduardoIntro, MSGBOX_AUTOCLOSE)
     waitmessage
     trainerbattle_no_intro(TRAINER_RATDUARDO_2, RatCave_Fallarbor_2F_Text_RatduardoDefeat)
-    call(RatCave_Fallarbor_2F_BattleOver)
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    fadescreenspeed(FADE_FROM_BLACK, 3)
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes again:\p
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… get… in my way…!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setflag(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR)
     call(FallarborRatCaveShake)
     setvar(VAR_RAT_CAVE_STATE, 6)
     releaseall
@@ -33,20 +48,6 @@ text RatCave_Fallarbor_2F_Text_RatduardoIntro{
 
 text RatCave_Fallarbor_2F_Text_RatduardoDefeat{
     "…"
-}
-
-script RatCave_Fallarbor_2F_BattleOver{
-    lockall
-    fadescreenspeed(FADE_TO_BLACK, 2)
-    removeobject(1)
-    removeobject(2)
-    removeobject(3)
-    fadescreenspeed(FADE_FROM_BLACK, 3)
-    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes again:\p
-    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… get… in my way…!", MSGBOX_AUTOCLOSE)
-    waitmessage
-    setflag(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR)
-    return
 }
 
 script FallarborRatCaveShake{

@@ -1289,7 +1289,7 @@ PetalburgCity_Gym_Text_NormanIntro:
 	.string "I'm LUNA.\p"
 	.string "…\p"
 	.string "I “look different”?\p"
-	.string "I have no idea what you're talking about.\p"
+	.string "I don't know what you're talking about.\p"
 	.string "Just don't think about it too much.\n"
 	.string "Come on, let's battle.$"
 

@@ -432,7 +432,7 @@ EverGrandeCity_EventScript_James_1:
 # 275 "data/maps/EverGrandeCity/scripts.pory"
 	waitmovement 5
 # 276 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EverGrandeCity_Text_James4, MSGBOX_AUTOCLOSE
+	msgbox EverGrandeCity_Text_James4, MSGBOX_DEFAULT
 # 277 "data/maps/EverGrandeCity/scripts.pory"
 	waitmessage
 # 278 "data/maps/EverGrandeCity/scripts.pory"

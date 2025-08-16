@@ -308,7 +308,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route115_EventScript_EmoRivalVar0",
+      "script": "NULL",
       "flag": "FLAG_HIDE_RIVAL_ROUTE115"
     },
     {
@@ -323,6 +323,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_MISA_ROUTE115"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_JAMES",
+      "x": 7,
+      "y": 61,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_JAMES_ROUTE_115"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TYPHLOSION_HISUI)",
+      "x": 6,
+      "y": 61,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TYPHLOSION_ROUTE_115"
     }
   ],
   "warp_events": [
@@ -375,6 +401,33 @@
       "var": "VAR_MISA_STATE",
       "var_value": "1",
       "script": "Route115_EventScript_TriggerLeft_RivalEmo"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 65,
+      "elevation": 0,
+      "var": "VAR_MISA_STATE",
+      "var_value": "11",
+      "script": "Route115_EventScript_JamesBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 65,
+      "elevation": 0,
+      "var": "VAR_MISA_STATE",
+      "var_value": "11",
+      "script": "Route115_EventScript_JamesBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 65,
+      "elevation": 0,
+      "var": "VAR_MISA_STATE",
+      "var_value": "11",
+      "script": "Route115_EventScript_JamesBattle"
     }
   ],
   "bg_events": [

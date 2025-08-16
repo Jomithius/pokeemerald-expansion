@@ -330,6 +330,7 @@ script Ultra_Space_EventScript_Necrozma{
     clearflag(FLAG_HIDE_NPCS_RETURNED_FROM_ULTRA_SPACE)
     clearflag(FLAG_HIDE_COSMOG_ULTRA_SPACE)
     setflag(FLAG_HIDE_PROF_ROUTE_135_LAB)
+    setflag(FLAG_HIDE_JAMES_ROUTE_135_LAB)
     setflag(FLAG_HIDE_JAMES_ULTRA_SPACE)
     setflag(FLAG_DEFEATED_BLACEPHALON)
     warpwhitefade(MAP_ROUTE135_LAB, 7, 9)
