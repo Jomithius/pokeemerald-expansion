@@ -181,7 +181,7 @@ Route138_EventScript_Mana_Text_1:
 
 Route138_EventScript_Mana_Text_2:
 # 24 "data/maps/Route138_2/scripts.pory"
-	.string "My husband is a ninja.\n He likes training around here.$"
+	.string "My husband is a NINJA.\n He likes training around here.$"
 
 Route138_EventScript_Kohaku_Text_0:
 # 30 "data/maps/Route138_2/scripts.pory"
@@ -193,7 +193,7 @@ Route138_EventScript_Kohaku_Text_1:
 
 Route138_EventScript_Kohaku_Text_2:
 # 31 "data/maps/Route138_2/scripts.pory"
-	.string "A ninja's all about being a\n master of deception!$"
+	.string "A NINJA's all about being a\n master of deception!$"
 
 Route138_EventScript_Ryuu_Text_0:
 # 37 "data/maps/Route138_2/scripts.pory"
@@ -245,7 +245,7 @@ Route138_EventScript_Hagerou_Text_1:
 
 Route138_EventScript_Hagerou_Text_2:
 # 63 "data/maps/Route138_2/scripts.pory"
-	.string "Most ninjas are bald in respect to\n LADY ASAKURA!$"
+	.string "Most NINJAS are bald in respect to\n LADY ASAKURA.$"
 
 Route138_EventScript_Jurou_Text_0:
 # 69 "data/maps/Route138_2/scripts.pory"

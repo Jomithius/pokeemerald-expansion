@@ -313,7 +313,7 @@ script Baldesia_EventScript_NinjaBoy5{
     }
     else{
         faceplayer
-        msgbox("I'm training to be a great ninja\n
+        msgbox("I'm training to be a great NINJA\n
         like MASTER BENNIS!\p
         It's not fair that only PANINI gets to\n
         be his disciple!", MSGBOX_AUTOCLOSE)
@@ -405,7 +405,7 @@ script Baldesia_EventScript_KimonoLady2{
 
 script Baldesia_EventScript_Ninja{
     msgbox("This land has been home to\n
-        ninjas for many generations.", MSGBOX_NPC)
+        NINJAS for many generations.", MSGBOX_NPC)
     end
 } 
 

@@ -14627,26 +14627,54 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5465
-            .species = SPECIES_GRENINJA,
+            .species = SPECIES_POLITOED,
 #line 5465
             .gender = TRAINER_MON_MALE,
 #line 5465
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_EJECT_BUTTON,
 #line 5469
-            .ev = TRAINER_PARTY_EVS(84, 0, 28, 140, 252, 4),
+            .ev = TRAINER_PARTY_EVS(252, 0, 212, 0, 44, 0),
 #line 5471
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 5466
-            .ability = ABILITY_PROTEAN,
+            .ability = ABILITY_DRIZZLE,
 #line 5467
             .lvl = 42,
-#line 5468
-            .friendship = 0,
 #line 5470
-            .nature = NATURE_MODEST,
+            .nature = NATURE_BOLD,
+#line 5468
+            .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5472
+                MOVE_ICY_WIND,
+                MOVE_HELPING_HAND,
+                MOVE_PROTECT,
+                MOVE_MUDDY_WATER,
+            },
+            },
+            {
+#line 5477
+            .species = SPECIES_GRENINJA,
+#line 5477
+            .gender = TRAINER_MON_MALE,
+#line 5477
+            .heldItem = ITEM_LIFE_ORB,
+#line 5481
+            .ev = TRAINER_PARTY_EVS(84, 0, 28, 140, 252, 4),
+#line 5483
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 5478
+            .ability = ABILITY_PROTEAN,
+#line 5479
+            .lvl = 42,
+#line 5480
+            .friendship = 0,
+#line 5482
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 5484
                 MOVE_SURF,
                 MOVE_DARK_PULSE,
                 MOVE_TOXIC_SPIKES,
@@ -14654,57 +14682,29 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 5477
+#line 5489
             .species = SPECIES_PIKACHU,
-#line 5477
+#line 5489
             .gender = TRAINER_MON_FEMALE,
-#line 5477
+#line 5489
             .heldItem = ITEM_LIGHT_BALL,
-#line 5480
+#line 5492
             .ev = TRAINER_PARTY_EVS(8, 0, 0, 244, 252, 0),
-#line 5482
+#line 5494
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 5478
+#line 5490
             .ability = ABILITY_LIGHTNING_ROD,
-#line 5479
+#line 5491
             .lvl = 42,
-#line 5481
+#line 5493
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 5482
+#line 5494
                 MOVE_NASTY_PLOT,
                 MOVE_DISCHARGE,
                 MOVE_FAKE_OUT,
                 MOVE_SURF,
-            },
-            },
-            {
-#line 5487
-            .species = SPECIES_POLITOED,
-#line 5487
-            .gender = TRAINER_MON_MALE,
-#line 5487
-            .heldItem = ITEM_EJECT_BUTTON,
-#line 5491
-            .ev = TRAINER_PARTY_EVS(252, 0, 212, 0, 44, 0),
-#line 5493
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 5488
-            .ability = ABILITY_DRIZZLE,
-#line 5489
-            .lvl = 42,
-#line 5492
-            .nature = NATURE_BOLD,
-#line 5490
-            .isShiny = TRUE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 5494
-                MOVE_ICY_WIND,
-                MOVE_HELPING_HAND,
-                MOVE_PROTECT,
-                MOVE_MUDDY_WATER,
             },
             },
             {
@@ -65499,24 +65499,50 @@ F_TRAINER_FEMALE |
             },
             {
 #line 25103
-            .species = SPECIES_GRENINJA,
+            .species = SPECIES_POLITOED,
 #line 25103
             .gender = TRAINER_MON_MALE,
 #line 25103
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_EJECT_BUTTON,
 #line 25108
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 25104
-            .ability = ABILITY_PROTEAN,
+            .ability = ABILITY_DRIZZLE,
 #line 25105
             .lvl = 42,
-#line 25106
-            .friendship = 0,
 #line 25107
-            .nature = NATURE_MODEST,
+            .nature = NATURE_BOLD,
+#line 25106
+            .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 25109
+                MOVE_ICY_WIND,
+                MOVE_HELPING_HAND,
+                MOVE_PROTECT,
+                MOVE_MUDDY_WATER,
+            },
+            },
+            {
+#line 25114
+            .species = SPECIES_GRENINJA,
+#line 25114
+            .gender = TRAINER_MON_MALE,
+#line 25114
+            .heldItem = ITEM_LIFE_ORB,
+#line 25119
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 25115
+            .ability = ABILITY_PROTEAN,
+#line 25116
+            .lvl = 42,
+#line 25117
+            .friendship = 0,
+#line 25118
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 25120
                 MOVE_SURF,
                 MOVE_DARK_PULSE,
                 MOVE_TOXIC_SPIKES,
@@ -65524,53 +65550,27 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 25114
+#line 25125
             .species = SPECIES_PIKACHU,
-#line 25114
+#line 25125
             .gender = TRAINER_MON_FEMALE,
-#line 25114
+#line 25125
             .heldItem = ITEM_LIGHT_BALL,
-#line 25118
+#line 25129
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 25115
+#line 25126
             .ability = ABILITY_LIGHTNING_ROD,
-#line 25116
+#line 25127
             .lvl = 42,
-#line 25117
+#line 25128
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 25118
+#line 25129
                 MOVE_NASTY_PLOT,
                 MOVE_DISCHARGE,
                 MOVE_FAKE_OUT,
                 MOVE_SURF,
-            },
-            },
-            {
-#line 25123
-            .species = SPECIES_POLITOED,
-#line 25123
-            .gender = TRAINER_MON_MALE,
-#line 25123
-            .heldItem = ITEM_EJECT_BUTTON,
-#line 25128
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 25124
-            .ability = ABILITY_DRIZZLE,
-#line 25125
-            .lvl = 42,
-#line 25127
-            .nature = NATURE_BOLD,
-#line 25126
-            .isShiny = TRUE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 25129
-                MOVE_ICY_WIND,
-                MOVE_HELPING_HAND,
-                MOVE_PROTECT,
-                MOVE_MUDDY_WATER,
             },
             },
             {

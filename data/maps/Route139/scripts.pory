@@ -40,7 +40,7 @@ script Route139_UpdateWorkerFredward{
 script Route139_EventScript_Satoshi{
     trainerbattle_single(TRAINER_SATOSHI, "Ha!\nYou fell for my trap!", "I still lost…")
     msgbox("The Chief and MASTER BENNIS are some\n
-        of the greatest ninjas to ever live.", MSGBOX_NPC)
+        of the greatest NINJAS to ever live.", MSGBOX_NPC)
 	end
 }
 
@@ -53,9 +53,9 @@ script Route139_EventScript_Yoshio{
 }
 
 script Route139_EventScript_Katashi{
-    trainerbattle_single(TRAINER_KATASHI, "A ninja must be calm, swift,\nand decisive.", "Impressive.")
+    trainerbattle_single(TRAINER_KATASHI, "A NINJA must be calm, swift,\nand decisive.", "Impressive.")
     msgbox("LADY ASAKURA was able to become\n
-        a full-fledged ninja at a very\l
+        a full-fledged NINJA at a very\l
         young age.\p
         She's an inspiration to us all.", MSGBOX_NPC)
 	end

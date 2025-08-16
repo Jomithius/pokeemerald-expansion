@@ -71,7 +71,7 @@ text ShoalCave_LowTideLowerRoom_Text_NicholasIntro{
 
 text ShoalCave_LowTideLowerRoom_Text_NicholasDefeat{
     "Kuh…\n
-    You've wounded a knights pride.."
+    You've wounded a KNIGHT's pride.."
 }
 
 text ShoalCave_LowTideLowerRoom_Text_NicholasPostBattle{

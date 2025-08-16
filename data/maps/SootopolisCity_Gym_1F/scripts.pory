@@ -91,7 +91,7 @@ SootopolisCity_Gym_1F_EventScript_Juan::
 	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, SootopolisCity_Gym_1F_EventScript_JuanRematch
-	goto_if_unset FLAG_RECEIVED_TM_WATER_PULSE, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
+	goto_if_unset FLAG_RECEIVED_TM_FREEZE_DRY, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
 	release
@@ -131,6 +131,7 @@ SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_ExplainFreezeDry, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_FREEZE_DRY
+	setflag FLAG_RECEIVED_TM_WATER_PULSE
 	return
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2::
@@ -138,6 +139,7 @@ SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_ExplainFreezeDry, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_FREEZE_DRY
+	setflag FLAG_RECEIVED_TM_WATER_PULSE
 	release
 	end
 
@@ -236,8 +238,8 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 SootopolisCity_Gym_1F_Text_ExplainFreezeDry:
 	.string "The TECHNICAL MACHINE I yeeted you\n"
 	.string "contains FREEZE DRY.\p"
-	.string "It freezes everything, even\n"
-	.string "WATER types, yeaaah.\p"
+	.string "It freezes everything, even WATER\n"
+	.string "TYPES. Yeheheheaaeaaah.\p"
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
@@ -248,7 +250,7 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle:
 	.string "Yeaheheaaaaaaaaaah…\n"
 	.string "You got 8 GYM BADGES now.\l"
 	.string "Next is the POKéMON LEAGUE.\p"
-	.string "Travel to the easternmost reaches\n"
+	.string "Travel to the easternmost part\n"
 	.string "of HOENN, to the island EVER GRANDE.\p"
 	.string "There, you'll find the POKéMON\n"
 	.string "LEAGUE. Yeaaah.$"

@@ -1588,7 +1588,7 @@ Route113_Text_LaoPostBattle:
 	.string "I bid thee farewell.$"
 
 Route113_Text_LaoRegister:
-	.string "Yiiyaah! Witness the ancient ninja\n"
+	.string "Yiiyaah! Witness the ancient NINJA\n"
 	.string "technique of POKéNAV registration!$"
 
 Route113_Text_LaoRematchIntro:
@@ -2036,7 +2036,7 @@ Route115_Text_KyraPostBattle:
 
 Route115_Text_JaidenIntro:
 	.string "Take that!\n"
-	.string "Ultra POKéMON ninja attack!$"
+	.string "Ultra POKéMON NINJA attack!$"
 
 Route115_Text_JaidenDefeat:
 	.string "Waaah!\n"
@@ -2936,18 +2936,18 @@ Route120_Text_AngelicaPostBattle:
 
 Route120_Text_KeigoIntro:
 	.string "I will adopt the movements of POKéMON\n"
-	.string "and create new ninja techniques.$"
+	.string "and create new NINJA techniques.$"
 
 Route120_Text_KeigoDefeat:
-	.string "The creation of new ninja techniques\n"
+	.string "The creation of new NINJA techniques\n"
 	.string "is but a distant dream…$"
 
 Route120_Text_KeigoPostBattle:
 	.string "Perhaps I ought to apprentice under\n"
-	.string "a ninja sensei.$"
+	.string "a NINJA sensei.$"
 
 Route120_Text_RileyIntro:
-	.string "We ninja conceal ourselves under our\n"
+	.string "We NINJA conceal ourselves under our\n"
 	.string "camouflage cloaks.\l"
 	.string "I bet you didn't know where I was!$"
 
@@ -3387,7 +3387,7 @@ Route123_Text_JonasIntro:
 
 Route123_Text_JonasDefeat:
 	.string "If you don't lose, how am I supposed\n"
-	.string "to have fun playing ninja?$"
+	.string "to have fun playing NINJA?$"
 
 Route123_Text_JonasPostBattle:
 	.string "I'm going to ambush a weaker-looking\n"

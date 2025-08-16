@@ -1750,7 +1750,7 @@ Baldesia_EventScript_NinjaBoy5_Text_0:
 
 Baldesia_EventScript_NinjaBoy5_Text_1:
 # 316 "data/maps/Baldesia/scripts.pory"
-	.string "I'm training to be a great ninja\n like MASTER BENNIS!\p It's not fair that only PANINI gets to\n be his disciple!$"
+	.string "I'm training to be a great NINJA\n like MASTER BENNIS!\p It's not fair that only PANINI gets to\n be his disciple!$"
 
 Baldesia_EventScript_NinjaBoy6_Text_0:
 # 337 "data/maps/Baldesia/scripts.pory"
@@ -1782,7 +1782,7 @@ Baldesia_EventScript_KimonoLady2_Text_0:
 
 Baldesia_EventScript_Ninja_Text_0:
 # 407 "data/maps/Baldesia/scripts.pory"
-	.string "This land has been home to\n ninjas for many generations.$"
+	.string "This land has been home to\n NINJAS for many generations.$"
 
 Baldesia_EventScript_EntranceGuard_Text_0:
 # 415 "data/maps/Baldesia/scripts.pory"

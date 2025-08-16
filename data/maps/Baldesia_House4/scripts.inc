@@ -51,7 +51,7 @@ Baldesia_House4_EventScript_KimonoLady::
 
 Baldesia_House4_EventScript_Ninja_Text_0:
 # 6 "data/maps/Baldesia_House4/scripts.pory"
-	.string "MASTER BENNIS is one of the greatest\n ninjas to ever live.\p Wouldn't you agree?$"
+	.string "MASTER BENNIS is one of the greatest\n NINJAS to ever live.\p Wouldn't you agree?$"
 
 Baldesia_House4_EventScript_Ninja_Text_1:
 # 11 "data/maps/Baldesia_House4/scripts.pory"

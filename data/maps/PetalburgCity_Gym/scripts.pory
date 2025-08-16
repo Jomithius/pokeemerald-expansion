@@ -1304,14 +1304,14 @@ PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 	.string "from LUNA!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "LUNA: With that BADGE, the POKéMON\n"
-	.string "that know the HM move SURF\n"
+	.string "With that BADGE, the POKéMON\n"
+	.string "that know the HM move SURF\l"
 	.string "will be able to travel over water.\p"
-	.string "Also I don't have room, so {PLAYER},\n"
+	.string "Also I don't have room. So {PLAYER},\n"
 	.string "take this.$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
-	.string "LUNA: TM42 contains FACADE.\p"
+	.string "TM42 contains FACADE.\p"
 	.string "It doubles the power of moves if\n"
 	.string "the POKéMON is poisoned, paralyzed,\l"
 	.string "or burned.\p"
@@ -1320,7 +1320,7 @@ PetalburgCity_Gym_Text_ExplainFacade:
 	.string "Actually, take this too.$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
-	.string "LUNA: As the GYM LEADER, I can't\n"
+	.string "As the GYM LEADER, I can't\n"
 	.string "express how…$"
 
 PetalburgCity_Gym_Text_PleaseComeWithMe:

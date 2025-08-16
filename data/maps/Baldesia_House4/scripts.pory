@@ -4,7 +4,7 @@ script Baldesia_House4_EventScript_Ninja{
     lock
     faceplayer
     msgbox("MASTER BENNIS is one of the greatest\n
-        ninjas to ever live.\p
+        NINJAS to ever live.\p
         Wouldn't you agree?", MSGBOX_YESNO)
     waitmessage
     if(var(VAR_RESULT) == YES){

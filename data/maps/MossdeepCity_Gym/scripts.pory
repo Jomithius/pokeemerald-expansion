@@ -471,7 +471,7 @@ MossdeepCity_Gym_Text_SylviaPostBattle:
 
 MossdeepCity_Gym_Text_NateIntro:
 	.string "We meet'th again.\p"
-	.string "On thy honor as a knight, I shan't\n"
+	.string "On thy honor as a KNIGHT, I shan't\n"
 	.string "lose'th twice'th'nt!$"
 
 MossdeepCity_Gym_Text_NateDefeat:
@@ -530,7 +530,7 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
 	.string "ARIA: Greetings, challenger.\n"
-    .string "I'm the knight of this land, ARIA.\l"
+    .string "I'm the KNIGHT of this land, ARIA.\l"
     .string "And this is…\p"
 	.string "…\n"
 	.string "…\p"
@@ -538,16 +538,16 @@ MossdeepCity_Gym_Text_TateAndLizaIntro:
     .string "yourself properly.\p"
 	.string "MOMO: … Beef.\p"
 	.string "ARIA: We're the GYM LEADERS of\n"
-	.string "MOSSDEEP CITY\p."
+	.string "MOSSDEEP CITY.\p"
 	.string "MOMO: …\p"
 	.string "ARIA: We might not look like it, but\n"
 	.string "we have really good teamwork.\p"
 	.string "MOMO: …\p"
-	.string "ARIA: …\n"
-    .string "ARIA: Prepare yourself, challenger!\n"
+	.string "ARIA: Uh…\l"
+    .string "Prepare yourself, challenger!\n"
     .string "By the power of my SACRED BLADE, I shall-\p"
     .string "MOMO: … Can you stop talking so we\n"
-    .string "MOMO: can battle already?$"
+    .string "can battle already?$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
 	.string "ARIA: Ah… I-Impossible…\p"
@@ -583,7 +583,7 @@ MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 
 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 	.string "ARIA: Only one POKéMON?\n"
-    .string "A weak challenge for a knight such\l"
+    .string "A weak challenge for a KNIGHT such\l"
     .string "as myself!$"
 
 MossdeepCity_Gym_Text_GymStatue:

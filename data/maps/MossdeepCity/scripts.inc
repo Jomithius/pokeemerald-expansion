@@ -1463,4 +1463,4 @@ MossdeepCity_Text_RecoverTeach::
 
 MossdeepCity_Text_GymLeaderGone::
 # 750 "data/maps/MossdeepCity/scripts.pory"
-	.string "Well met, challenger. Here to take on\n the GYM, I presume.\p The knight commander has left with their\n Order to train in SHOAL CAVE.\p You'll have to wait until they return,\n unless you're brave enough to go\l get them yourself…$"
+	.string "Well met, challenger. Here to take on\n the GYM, I presume.\p The KNIGHT commander has left with their\n Order to train in SHOAL CAVE.\p You'll have to wait until they return,\n unless you're brave enough to go\l get them yourself…$"

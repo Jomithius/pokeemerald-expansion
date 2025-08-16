@@ -21,14 +21,14 @@ script Route138_EventScript_Ayumi{
 
 script Route138_EventScript_Mana{
     trainerbattle_single(TRAINER_AYUMI, "Ara.\nI've never seen you around here before.", "Ara.\nYou're pretty strong.")
-    msgbox("My husband is a ninja.\n
+    msgbox("My husband is a NINJA.\n
         He likes training around here.", MSGBOX_NPC)
 	end
 }
 
 script Route138_EventScript_Kohaku{
     trainerbattle_single(TRAINER_KOHAKU, "Rule one!\nDecieve your enemy!", "Rule two:\nDon't take fights you can't win…")
-    msgbox("A ninja's all about being a\n
+    msgbox("A NINJA's all about being a\n
         master of deception!", MSGBOX_NPC)
 	end
 }
@@ -53,15 +53,15 @@ script Route138_EventScript_Iwao{
 
 script Route138_EventScript_Katsumi{
     trainerbattle_single(TRAINER_KATSUMI, "Ahaha! You FOOL!\nYou fell for my trap!", "I guess it didn't matter…")
-    msgbox("A ninja's all about being a\n
+    msgbox("A NINJA's all about being a\n
         master of deception!", MSGBOX_NPC)
 	end
 }
 
 script Route138_EventScript_Hagerou{
     trainerbattle_single(TRAINER_HAGEROU, "Time to remove your hair follicles!", "You can keep them…")
-    msgbox("Most ninjas are bald in respect to\n
-        LADY ASAKURA!", MSGBOX_NPC)
+    msgbox("Most NINJAS are bald in respect to\n
+        LADY ASAKURA.", MSGBOX_NPC)
 	end
 }
 

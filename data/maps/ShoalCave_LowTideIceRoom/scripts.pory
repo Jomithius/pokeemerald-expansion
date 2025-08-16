@@ -181,7 +181,7 @@ text ShoalCave_LowTideIceRoom_Text_Sylvia{
 }
 
 text ShoalCave_LowTideIceRoom_Text_BlakeIntro{
-    "For a knight, offense is the best\n
+    "For a KNIGHT, offense is the best\n
     defense!"
 }
 
@@ -221,7 +221,7 @@ text ShoalCave_LowTideIceRoom_Text_Aria1{
     POKéMON GYM and PROTECTOR of the\l
     SACRED BLADE.\p
     ARIA: I can stop my training here.\n
-    Me and my knights shall await you\l
+    Me and my KNIGHTS shall await you\l
     at the GYM."
 }
 

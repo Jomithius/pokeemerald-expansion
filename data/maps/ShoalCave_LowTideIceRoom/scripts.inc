@@ -462,7 +462,7 @@ ShoalCave_LowTideIceRoom_Text_Sylvia::
 
 ShoalCave_LowTideIceRoom_Text_BlakeIntro::
 # 183 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	.string "For a knight, offense is the best\n defense!$"
+	.string "For a KNIGHT, offense is the best\n defense!$"
 
 ShoalCave_LowTideIceRoom_Text_BlakeDefeat::
 # 188 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
@@ -486,4 +486,4 @@ ShoalCave_LowTideIceRoom_Text_NatePostBattle::
 
 ShoalCave_LowTideIceRoom_Text_Aria1::
 # 215 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	.string "You scared me!\n  Who are you?\p … … … …\n Oh. A challenger?\p I'm ARIA. LEADER of the MOSSDEEP\n POKéMON GYM and PROTECTOR of the\l SACRED BLADE.\p ARIA: I can stop my training here.\n Me and my knights shall await you\l at the GYM.$"
+	.string "You scared me!\n  Who are you?\p … … … …\n Oh. A challenger?\p I'm ARIA. LEADER of the MOSSDEEP\n POKéMON GYM and PROTECTOR of the\l SACRED BLADE.\p ARIA: I can stop my training here.\n Me and my KNIGHTS shall await you\l at the GYM.$"

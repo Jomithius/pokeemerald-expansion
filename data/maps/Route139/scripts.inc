@@ -706,7 +706,7 @@ Route139_EventScript_Satoshi_Text_1:
 
 Route139_EventScript_Satoshi_Text_2:
 # 42 "data/maps/Route139/scripts.pory"
-	.string "The Chief and MASTER BENNIS are some\n of the greatest ninjas to ever live.$"
+	.string "The Chief and MASTER BENNIS are some\n of the greatest NINJAS to ever live.$"
 
 Route139_EventScript_Yoshio_Text_0:
 # 48 "data/maps/Route139/scripts.pory"
@@ -722,7 +722,7 @@ Route139_EventScript_Yoshio_Text_2:
 
 Route139_EventScript_Katashi_Text_0:
 # 56 "data/maps/Route139/scripts.pory"
-	.string "A ninja must be calm, swift,\nand decisive.$"
+	.string "A NINJA must be calm, swift,\nand decisive.$"
 
 Route139_EventScript_Katashi_Text_1:
 # 56 "data/maps/Route139/scripts.pory"
@@ -730,7 +730,7 @@ Route139_EventScript_Katashi_Text_1:
 
 Route139_EventScript_Katashi_Text_2:
 # 57 "data/maps/Route139/scripts.pory"
-	.string "LADY ASAKURA was able to become\n a full-fledged ninja at a very\l young age.\p She's an inspiration to us all.$"
+	.string "LADY ASAKURA was able to become\n a full-fledged NINJA at a very\l young age.\p She's an inspiration to us all.$"
 
 Route139_EventScript_Naoki_Text_0:
 # 65 "data/maps/Route139/scripts.pory"

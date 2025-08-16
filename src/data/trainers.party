@@ -5462,6 +5462,18 @@ Adamant Nature
 - Bulk Up  
 - Rock Slide  
 
+Politoed (M) @ Eject Button  
+Ability: Drizzle  
+Level: 42  
+Shiny: Yes  
+EVs: 252 HP / 212 Def / 44 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Icy Wind  
+- Helping Hand  
+- Protect  
+- Muddy Water  
+
 Greninja (M) @ Life Orb  
 Ability: Protean  
 Level: 42  
@@ -5483,18 +5495,6 @@ Timid Nature
 - Discharge  
 - Fake Out  
 - Surf
-
-Politoed (M) @ Eject Button  
-Ability: Drizzle  
-Level: 42  
-Shiny: Yes  
-EVs: 252 HP / 212 Def / 44 SpA  
-Bold Nature  
-IVs: 0 Atk  
-- Icy Wind  
-- Helping Hand  
-- Protect  
-- Muddy Water  
 
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  
@@ -25100,6 +25100,17 @@ Adamant Nature
 - Bulk Up  
 - Rock Slide  
 
+Politoed (M) @ Eject Button  
+Ability: Drizzle  
+Level: 42  
+Shiny: Yes  
+Bold Nature  
+IVs: 0 Atk  
+- Icy Wind  
+- Helping Hand  
+- Protect  
+- Muddy Water  
+
 Greninja (M) @ Life Orb  
 Ability: Protean  
 Level: 42  
@@ -25119,17 +25130,6 @@ Timid Nature
 - Discharge  
 - Fake Out  
 - Surf
-
-Politoed (M) @ Eject Button  
-Ability: Drizzle  
-Level: 42  
-Shiny: Yes  
-Bold Nature  
-IVs: 0 Atk  
-- Icy Wind  
-- Helping Hand  
-- Protect  
-- Muddy Water  
 
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  

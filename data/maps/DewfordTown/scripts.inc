@@ -1676,7 +1676,7 @@ DewfordTown_Text_BennisLeft::
 
 DewfordTown_Text_BennisReturn::
 # 853 "data/maps/DewfordTown/scripts.pory"
-	.string "Those ninjas are back again!\n Did they really like this quiet town\l that much?$"
+	.string "Those NINJAS are back again!\n Did they really like this quiet town\l that much?$"
 
 DewfordTown_Text_GYM_Relocated::
 # 859 "data/maps/DewfordTown/scripts.pory"

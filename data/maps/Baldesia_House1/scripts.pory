@@ -35,7 +35,7 @@ script Baldesia_House1_EventScript_OldMan{
     faceplayer
     msgbox("MASTER BENNIS is not only the head\n
     retainer for the ASAKURA family.\p
-    He's also the leader of the ninjas.", MSGBOX_AUTOCLOSE)
+    He's also the leader of the NINJAS.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
@@ -92,7 +92,7 @@ script Baldesia_House1_EventScript_Panini{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(2)
     msgbox("Oh! There she goes again, leaving like a\n
-        ninja. They grow up so fast!", MSGBOX_AUTOCLOSE)
+        NINJA. They grow up so fast!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(2, Common_Movement_WalkInPlaceLeft)
     waitmovement(2)
