@@ -213,7 +213,7 @@ RustboroCity_PokemonSchool_Text_ExplainPoison:
 	.string "a battle.\p"
 	.string "A poisoned POKéMON's HP will drop\n"
 	.string "while it is traveling.\p"
-	.string "Heal a poisoning using an ANTIDOTE.$"
+	.string "Heal a poisoning using an FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainParalysis:
 	.string "If a POKéMON becomes paralyzed,\n"
@@ -221,7 +221,7 @@ RustboroCity_PokemonSchool_Text_ExplainParalysis:
 	.string "It may also not be able to move while\n"
 	.string "it is in battle.\p"
 	.string "Paralysis remains after battle.\n"
-	.string "Cure it using a PARLYZ HEAL.$"
+	.string "Cure it using a FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainSleep:
 	.string "If a POKéMON falls asleep, it will be\n"
@@ -229,19 +229,19 @@ RustboroCity_PokemonSchool_Text_ExplainSleep:
 	.string "A POKéMON may wake up on its own,\n"
 	.string "but if a battle ends while it is\l"
 	.string "sleeping, it will stay asleep.\p"
-	.string "Wake it up using an AWAKENING.$"
+	.string "Wake it up using an FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainBurn:
 	.string "A burn reduces ATTACK power, and it\n"
 	.string "steadily reduces the victim's HP.\p"
 	.string "A burn lingers after battle.\n"
-	.string "Cure a burn using a BURN HEAL.$"
+	.string "Cure a burn using a FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainFreeze:
-	.string "If a POKéMON is frozen, it becomes\n"
-	.string "completely helpless.\p"
-	.string "It will remain frozen after battle.\n"
-	.string "Thaw it out using an ICE HEAL.$"
+	.string "If a POKéMON is frostbitten, its\n"
+	.string "SP. ATK is reduced.\p"
+	.string "It will remain frostbitten after battle.\n"
+	.string "Thaw it out using an FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
 	.string "Students who don't study get a little\n"
@@ -270,7 +270,7 @@ RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
 RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems:
 	.string "POKéMON can hold items, but they\n"
 	.string "don't know what to do with man-made\l"
-	.string "items like POTION and ANTIDOTE.$"
+	.string "items like POTION and FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself:
 	.string "You know how some POKéMON moves can\n"

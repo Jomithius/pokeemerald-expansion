@@ -303,7 +303,7 @@ SlateportCity_EventScript_EnergyGuru::
 # 152 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_Pokemart_EnergyGuru:
 # 153 "data/maps/SlateportCity/scripts.pory"
-.2byte ITEM_ORAN_BERRY
+	.2byte ITEM_ORAN_BERRY
 # 154 "data/maps/SlateportCity/scripts.pory"
 	.2byte ITEM_LUM_BERRY
 # 155 "data/maps/SlateportCity/scripts.pory"

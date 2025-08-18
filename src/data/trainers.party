@@ -5028,7 +5028,7 @@ Mugshot: Yellow
 
 Carbink  
 Ability: Clear Body  
-Level: 13   
+Level: 12   
 EVs: 32 HP 
 Impish Nature  
 - Rock Tomb  
@@ -5065,7 +5065,7 @@ Level: 15
 Lax Nature  
 IVs: 0 Atk  
 - Chilling Water  
-- Acid Spray  
+- Acid  
 - Acid Armor 
 
 Magby @ Sitrus Berry  
@@ -10348,7 +10348,7 @@ Level: 32
 Lairon
 Level: 31
 
-Grovyle
+Sceptile
 Level: 33
 
 === TRAINER_DAQUAVIUS ===
@@ -10749,6 +10749,9 @@ Level: 18
 Eevee
 Level: 18
 
+Wartortle
+Level: 18
+
 Combusken
 Level: 20
 
@@ -10774,8 +10777,8 @@ Level: 32
 Munchlax
 Level: 32
 
-Marshtomp
-Level: 33
+Blaziken
+Level: 36
 
 === TRAINER_ISAAC_1 ===
 Name: ISAAC
@@ -11982,13 +11985,16 @@ Double Battle: No
 AI: Basic Trainer 
 
 Taillow
-Level: 13
+Level: 16
 
 Seedot
-Level: 14
+Level: 16
 
-Treecko
-Level: 15
+Aron
+Level: 16
+
+Grovyle
+Level: 16
 
 === TRAINER_FREDWARD ===
 Name: FREDWARD
@@ -15729,13 +15735,17 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer 
 
-Torkoal
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Beautifly
+Level: 16
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Munchlax
+Level: 16
+
+Wartortle
+Level: 16
+
+Combusken
+Level: 16
 
 === TRAINER_ROXANNE_2 ===
 Name: STEVE
@@ -18746,7 +18756,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer 
 
-Munchlax (M) @ Eviolite  
+Snorlax (M) @ Leftovers
 Ability: Thick Fat   
 EVs: 244 HP / 252 Atk / 4 Def  
 Adamant Nature  
@@ -19405,7 +19415,6 @@ IVs: 0 Atk
 Eevee (F)  
 Ability: Adaptability  
 Level: 18  
-EVs: 192 Atk / 192 Spe  
 Sassy Nature  
 - Quick Attack  
 - Bite  
@@ -19414,7 +19423,6 @@ Sassy Nature
 Nidorina 
 Ability: Rivalry  
 Level: 18  
-EVs: 56 HP / 116 Atk / 56 Def / 76 SpA / 72 SpD  
 Sassy Nature  
 - Poison Tail  
 - Body Slam  
@@ -19422,8 +19430,7 @@ Sassy Nature
 
 Tsareena  
 Ability: Queenly Majesty  
-Level: 19  
-EVs: 96 Atk / 84 Def / 100 Spe  
+Level: 19   
 Sassy Nature  
 - Stomp  
 - Trop Kick  
@@ -24756,19 +24763,16 @@ Ability: Clear Body
 Level: 13    
 - Rock Tomb  
 - Flail  
-- Sharpen  
 
 Rufflet  
 Ability: Hustle  
-Level: 12   
-- Work Up  
+Level: 12    
 - Cut  
 - Pluck  
 
 Clobbopus  
 Ability: Technician  
-Level: 12    
-- Bulk Up  
+Level: 12     
 - Rock Smash  
 - Detect  
 - Feint  
@@ -24779,7 +24783,6 @@ Level: 14
 Quiet Nature  
 - Bonemerang  
 - Rock Tomb  
-- Focus Energy  
 
 Tentacool @ Oran Berry  
 Ability: Liquid Ooze  
@@ -24787,7 +24790,7 @@ Level: 15
 Lax Nature  
 IVs: 0 Atk  
 - Chilling Water  
-- Acid Spray  
+- Acid 
 - Acid Armor 
 
 Magby @ Sitrus Berry  
@@ -24796,7 +24799,7 @@ Level: 16
 Modest Nature  
 IVs: 0 Atk  
 - Incinerate  
-- Acid Spray  
+- Acid 
 - Will-O-Wisp 
 
 === TRAINER_BRAWLY_1 ===
@@ -30249,8 +30252,8 @@ Level: 32
 Lairon
 Level: 31
 
-Grovyle
-Level: 33
+Sceptile
+Level: 36
 
 === TRAINER_DAQUAVIUS ===
 Name: DAQUAVIUS
@@ -30637,6 +30640,9 @@ Level: 18
 Eevee
 Level: 18
 
+Wartortle
+Level: 17
+
 Combusken
 Level: 20
 
@@ -30653,7 +30659,7 @@ Difficulty: Easy
 Wartortle
 Level: 30
 
-Lombre
+Beautifly
 Level: 32
 
 Eevee
@@ -30662,7 +30668,7 @@ Level: 32
 Munchlax
 Level: 32
 
-Marshtomp
+Combusken
 Level: 33
 
 === TRAINER_ISAAC_1 ===
@@ -31905,13 +31911,16 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Taillow
-Level: 13
+Level: 16
 
 Seedot
-Level: 14
+Level: 16
 
-Treecko
-Level: 15
+Aron
+Level: 16
+
+Grovyle
+Level: 16
 
 === TRAINER_FREDWARD ===
 Name: FREDWARD
@@ -35769,12 +35778,18 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Torkoal
-Level: 13
+Beautifly
+Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Mudkip
-Level: 15
+Munchlax
+Level: 16
+
+Wartortle
+Level:16
+
+Combusken
+Level: 16
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ROXANNE_2 ===

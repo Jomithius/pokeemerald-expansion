@@ -214,10 +214,44 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry{
     waitmessage
     checkplayergender
     if(var(VAR_RESULT) == MALE){
-        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Actually, no. I'm not!", "Yes! I was a bad boy!")
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Yeah, I'm “soooo” sorry!", "Yes! I was a bad boy!")
     }
     else{
-       dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Actually, no. I'm not!", "Yes! I was a bad girl!") 
+       dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Yeah, I'm “soooo” sorry!", "Yes! I was a bad girl!") 
+    }
+    goto_if_eq(VAR_RESULT, 1, EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished)
+    fadeinbgm(0)
+    msgbox("Hmph!\n
+        You're a terrible person.\p
+        No more second chances!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    call(EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
+	waitmoncry
+    setflag(FLAG_DEFEATED_EUGENIA)
+	trainerbattle_no_intro(TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat)
+	goto(EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated)
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished{
+    checkplayergender
+    if(var(VAR_RESULT) == MALE){
+        msgbox("Hmph!\n
+            Well, bad boys need to be punished.\p
+            You shouldn't have stolen my EEVEE!", MSGBOX_DEFAULT)
+        waitmessage
+        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "You know what? I take it back.", "Okay, okay! I'm a good boy!")
+    }
+    else{
+        msgbox("Hmph!\n
+            Well, bad girls need to be punished.\p
+            You shouldn't have stolen my EEVEE!", MSGBOX_DEFAULT)
+        waitmessage
+       dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "You know what? I take it back.", "Okay, okay! I'm a good girl!") 
     }
     goto_if_eq(VAR_RESULT, 1, EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
     fadeinbgm(0)

@@ -275,6 +275,7 @@ script Route115_EventScript_Trigger_RivalEmo{
 	fadedefaultbgm
     setflag(FLAG_HIDE_RIVAL_ROUTE115)
     setflag(FLAG_HIDE_MISA_ROUTE115)
+    clearflag(FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE)
     setvar(VAR_MISA_STATE, 2)
     releaseall
     end
@@ -403,6 +404,7 @@ script Route115_EventScript_TriggerRight_RivalEmo{
 	fadedefaultbgm
     setflag(FLAG_HIDE_RIVAL_ROUTE115)
     setflag(FLAG_HIDE_MISA_ROUTE115)
+    clearflag(FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE)
     setvar(VAR_MISA_STATE, 2)
     releaseall
     end
