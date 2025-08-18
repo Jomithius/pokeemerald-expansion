@@ -1650,8 +1650,11 @@
 #define SPECIES_RATICATE_MEGA                           1534
 #define SPECIES_MILTANK_MEGA                            1535
 #define SPECIES_DRAGONITE_MEGA                          1536
+#define SPECIES_KABUTOPS_FOSSIL                         1537
+#define SPECIES_AERODACTYL_FOSSIL                       1538
+#define SPECIES_MISSINGNO                               1539
 
-#define SPECIES_EGG                                     (SPECIES_DRAGONITE_MEGA + 1)
+#define SPECIES_EGG                                     (SPECIES_MISSINGNO + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

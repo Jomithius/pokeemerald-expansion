@@ -591,7 +591,7 @@ script Route115_EventScript_JamesBattle{
     playbgm(MUS_PYRITE_THEME, FALSE)
     msgbox("All right, rival!\n
         For real this time!\p
-        One last battle.", MSGBOX_AUTOCLOSE)
+        One last battle!", MSGBOX_AUTOCLOSE)
     waitmessage
     trainerbattle_no_intro(TRAINER_JAMES_FINAL, "You're still strong as\never, {PLAYER}.")
     applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)

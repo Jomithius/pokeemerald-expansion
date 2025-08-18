@@ -18690,6 +18690,74 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sKabutopsLevelUpLearnset,
         .teachableLearnset = sKabutopsTeachableLearnset,
     },
+
+    [SPECIES_KABUTOPS_FOSSIL] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 115,
+        .baseDefense   = 105,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_WATER),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 173,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_4
+        .expYield = 199,
+    #else
+        .expYield = 201,
+    #endif
+        .evYield_Attack = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_BATTLE_ARMOR, ABILITY_WEAK_ARMOR },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Kabutops"),
+        .cryId = CRY_KABUTOPS,
+        .natDexNum = NATIONAL_DEX_KABUTOPS,
+        .categoryName = _("Shellfish"),
+        .height = 13,
+        .weight = 405,
+        .description = COMPOUND_STRING(
+            "Kabutops once swam underwater to hunt \n"
+            "for prey. It was apparently evolving from\n"
+            "being a water dweller to living on land as\n"
+            "evident from changes in its gills and legs."),
+        .pokemonScale = 271,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_KabutopsFossil,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_GLOW_BLACK,
+        .backPic = gMonBackPic_Kabutops,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 6,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_MissingNo,
+        .shinyPalette = gMonShinyPalette_MissingNo,
+        .iconSprite = gMonIcon_Kabutops,
+        .iconPalIndex = 2,
+        SHADOW(1, 7, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Kabutops)
+        OVERWORLD(
+            sPicTable_Kabutops,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Kabutops,
+            gShinyOverworldPalette_Kabutops
+        )
+        .levelUpLearnset = sKabutopsLevelUpLearnset,
+        .teachableLearnset = sKabutopsTeachableLearnset,
+    },
 #endif //P_FAMILY_KABUTO
 
 #if P_FAMILY_AERODACTYL
@@ -18812,7 +18880,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_AerodactylMega,
         .iconSprite = gMonIcon_AerodactylMega,
         .iconPalIndex = 2,
-        SHADOW(-2, 16, SHADOW_SIZE_M)
+        SHADOW(-2, 16, SHADOW_SIZE_L)
         FOOTPRINT(Aerodactyl)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
@@ -18833,6 +18901,70 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sAerodactylFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
+
+[SPECIES_AERODACTYL_FOSSIL] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 105,
+        .baseDefense   = 65,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 180 : 202,
+        .evYield_Speed = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 35,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_PRESSURE, ABILITY_UNNERVE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Aerodactyl"),
+        .cryId = CRY_AERODACTYL,
+        .natDexNum = NATIONAL_DEX_AERODACTYL,
+        .categoryName = _("Fossil"),
+        .height = 18,
+        .weight = 590,
+        .description = COMPOUND_STRING(
+            "Aerodactyl is a Pokémon from the age\n"
+            "of dinosaurs. It was regenerated from DNA\n"
+            "extracted from amber. It is imagined to\n"
+            "have been the king of the skies."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 302,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_AerodactylFossil,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_GLOW_BLACK,
+        .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 7 : 9,
+        .backPic = gMonBackPic_Aerodactyl,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 10,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_MissingNo,
+        .shinyPalette = gMonShinyPalette_MissingNo,
+        .iconSprite = gMonIcon_Aerodactyl,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        SHADOW(-2, 16, SHADOW_SIZE_M)
+        FOOTPRINT(Aerodactyl)
+        OVERWORLD(
+            sPicTable_Aerodactyl,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Aerodactyl,
+            gShinyOverworldPalette_Aerodactyl
+        )
+        .levelUpLearnset = sAerodactylLevelUpLearnset,
+        .teachableLearnset = sAerodactylTeachableLearnset,
+        .eggMoveLearnset = sAerodactylEggMoveLearnset,
+    },
 #endif //P_FAMILY_AERODACTYL
 
 #if P_FAMILY_SNORLAX
@@ -20093,6 +20225,89 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Mew,
             gShinyOverworldPalette_Mew
         )
+        .isMythical = TRUE,
+        .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sMewLevelUpLearnset,
+        .teachableLearnset = sMewTeachableLearnset,
+    },
+
+    [SPECIES_MISSINGNO] =
+    {
+        .baseHP        = 178,
+        .baseAttack    = 136,
+        .baseDefense   = 11,
+        .baseSpeed     = 29,
+        .baseSpAttack  = 29,
+        .baseSpDefense = 92,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_NORMAL),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 300,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 270,
+    #else
+        .expYield = 64,
+    #endif
+        .evYield_HP = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_UNNERVE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("MissingNo"),
+        .cryId = CRY_NIDORAN_M,
+        .natDexNum = NATIONAL_DEX_MEW,
+        .categoryName = _("New Species"),
+        .height = 4,
+        .weight = 40,
+        .description = COMPOUND_STRING(
+            "A Mew is said to possess the genes of all\n"
+            "Pokémon. It is capable of making itself\n"
+            "invisible at will, so it entirely avoids\n"
+            "notice even if it approaches people."),
+        .pokemonScale = 457,
+        .pokemonOffset = -2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MissingNo,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_GLOW_BLACK,
+        .enemyMonElevation = 0,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicSize = MON_COORDS_SIZE(40, 40),
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_MissingNo,
+        .shinyPalette = gMonShinyPalette_MissingNo,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 0,
+        //SHADOW(0, 0, SHADOW_SIZE_NONE)
+        FOOTPRINT(QuestionMark)
+    #if OW_POKEMON_OBJECT_EVENTS
+        .overworldData = {
+            .tileTag = TAG_NONE,
+            .paletteTag = OBJ_EVENT_PAL_TAG_SUBSTITUTE,
+            .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+            .size = 512,
+            .width = 32,
+            .height = 32,
+            .paletteSlot = PALSLOT_NPC_1,
+            .shadowSize = SHADOW_SIZE_M,
+            .inanimate = FALSE,
+            .compressed = COMP,
+            .tracks = TRACKS_FOOT,
+            .oam = &gObjectEventBaseOam_32x32,
+            .subspriteTables = sOamTables_32x32,
+            .anims = sAnimTable_Following,
+            .images = sPicTable_Substitute,
+            .affineAnims = gDummySpriteAffineAnimTable,
+        },
+    #endif
         .isMythical = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,

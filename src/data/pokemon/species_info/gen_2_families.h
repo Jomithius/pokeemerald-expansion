@@ -700,7 +700,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_TyphlosionHisuiMega,
         .iconSprite = gMonIcon_TyphlosionHisuiMega,
         .iconPalIndex = 1,
-        SHADOW(-2, 14, SHADOW_SIZE_L)
+        SHADOW(-2, 13, SHADOW_SIZE_L)
         FOOTPRINT(Typhlosion)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
@@ -887,7 +887,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SHARPNESS, ABILITY_SHARPNESS, ABILITY_SHARPNESS },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Totodile"),
+        .speciesName = _("Totoknight"),
         .cryId = CRY_TOTODILE,
         .natDexNum = NATIONAL_DEX_TOTODILE,
         .categoryName = _("Big Jaw"),
@@ -897,7 +897,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "A special Totodile that has learned the way\n"
             "of the sacred blade.\n"
             "This Pokémon has attained true Knighthood, and\n"
-            "will cut down any foes in it's path."),
+            "will cut down any foes in its path."),
         .pokemonScale = 487,
         .pokemonOffset = 20,
         .trainerScale = 256,

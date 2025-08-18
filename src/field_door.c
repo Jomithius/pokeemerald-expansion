@@ -143,6 +143,8 @@ static const u8 sDoorAnimTiles_WachunpelonCity[] = INCBIN_U8("graphics/door_anim
 static const u16 sDoorNullPalette52[16] = {};
 static const u8 sDoorAnimTiles_DojoExterior[] = INCBIN_U8("graphics/door_anims/small/dojo_exterior.4bpp");
 static const u16 sDoorNullPalette53[16] = {};
+static const u8 sDoorAnimTiles_ShadyForest[] = INCBIN_U8("graphics/door_anims/small/shady_forest.4bpp");
+static const u16 sDoorNullPalette54[16] = {};
 
 static const struct DoorAnimFrame sDoorOpenAnimFrames[] =
 {
@@ -252,6 +254,7 @@ static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7,
 static const u8 sDoorAnimPalettes_Route135[] = {6, 6, 6, 6, 6, 6, 6, 6};
 static const u8 sDoorAnimPalettes_WachunpelonCity[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_DojoExterior[] = {6, 6, 6, 6, 6, 6, 6, 6};
+static const u8 sDoorAnimPalettes_ShadyForest[] = {9, 9, 9, 9, 9, 9, 9, 9};
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -313,7 +316,8 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_SmallTownWithLab_Door_Route135_Lab,           DOOR_SOUND_SLIDING, SMALL_DOOR,  sDoorAnimTiles_Route135_Lab, sDoorAnimPalettes_Route135},
     {METATILE_SmallTownWithLab_Door_Route135,               DOOR_SOUND_NORMAL,  SMALL_DOOR,  sDoorAnimTiles_Route135, sDoorAnimPalettes_Route135},
     {METATILE_DesertVillage_Door_WachunpelonCity,           DOOR_SOUND_NORMAL,  SMALL_DOOR,  sDoorAnimTiles_WachunpelonCity, sDoorAnimPalettes_WachunpelonCity},
-    {METATILE_DojoExterior_Door_DojoExterior,               DOOR_SOUND_NORMAL,   SMALL_DOOR,  sDoorAnimTiles_DojoExterior, sDoorAnimPalettes_DojoExterior},
+    {METATILE_DojoExterior_Door_DojoExterior,               DOOR_SOUND_NORMAL,  SMALL_DOOR,  sDoorAnimTiles_DojoExterior, sDoorAnimPalettes_DojoExterior},
+    {METATILE_ShadyForest_Door_NewmoonIsland,               DOOR_SOUND_NORMAL,  SMALL_DOOR,  sDoorAnimTiles_ShadyForest, sDoorAnimPalettes_ShadyForest},
     {},
 };
 

@@ -191,7 +191,9 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	warp MAP_AZURE_MOUNTAIN_UP5, 22, 17
+	setvar VAR_NEWMOON_ISLAND_STATE, 1
+	setvar VAR_RAT_CAVE_STATE, 9
+	warp MAP_THE_UNDER_CANYON_LAKE, 14, 5
 	waitstate
 	release
 	end

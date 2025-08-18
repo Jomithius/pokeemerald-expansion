@@ -1584,7 +1584,7 @@ Route115_EventScript_JamesBattle_Text_3:
 
 Route115_EventScript_JamesBattle_Text_4:
 # 592 "data/maps/Route115/scripts.pory"
-	.string "All right, rival!\n For real this time!\p One last battle.$"
+	.string "All right, rival!\n For real this time!\p One last battle!$"
 
 Route115_EventScript_JamesBattle_Text_5:
 # 596 "data/maps/Route115/scripts.pory"

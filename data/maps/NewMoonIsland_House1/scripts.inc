@@ -71,7 +71,7 @@ NewMoonIsland_House1_EventScript_GimmighoulCoins::
 # 37 "data/maps/NewMoonIsland_House1/scripts.pory"
 	lock
 # 38 "data/maps/NewMoonIsland_House1/scripts.pory"
-	msgbox NewMoonIsland_House1_EventScript_GimmighoulCoins_Text_0, MSGBOX_AUTOCLOSE
+	msgbox NewMoonIsland_House1_EventScript_GimmighoulCoins_Text_0, MSGBOX_DEFAULT
 # 40 "data/maps/NewMoonIsland_House1/scripts.pory"
 	waitmessage
 # 41 "data/maps/NewMoonIsland_House1/scripts.pory"

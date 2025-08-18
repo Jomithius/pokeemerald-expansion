@@ -26800,3 +26800,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_MiltankMega[] = INCBIN_U32("graphics/pokemon/miltank/mega/back.4bpp.lz");
     // const u32 gMonShinyPalette_MiltankMega[] = INCBIN_U32("graphics/pokemon/miltank/mega/shiny.gbapal.lz");
     const u8 gMonIcon_MiltankMega[] = INCBIN_U8("graphics/pokemon/miltank/mega/icon.4bpp");
+
+    const u32 gMonFrontPic_KabutopsFossil[] = INCBIN_U32("graphics/pokemon/kabutops/fossil/front.4bpp.lz");
+    const u32 gMonFrontPic_AerodactylFossil[] = INCBIN_U32("graphics/pokemon/aerodactyl/fossil/front.4bpp.lz");
+
+    const u32 gMonFrontPic_MissingNo[] = INCBIN_U32("graphics/pokemon/missingno/front.4bpp.lz");
+    const u32 gMonPalette_MissingNo[] = INCBIN_U32("graphics/pokemon/missingno/normal.gbapal.lz");
+    const u32 gMonShinyPalette_MissingNo[] = INCBIN_U32("graphics/pokemon/missingno/shiny.gbapal.lz");
+
+

@@ -10527,8 +10527,7 @@ AI: Smart Trainer
 
 Clefable @ Leftovers  
 Ability: Magic Guard
-Level: 100
-Tera Type: Fairy     
+Level: 100    
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -10537,28 +10536,25 @@ IVs: 0 Atk
 - Chilling Water  
 - Stealth Rock  
 
-Cursola @ Fairy Feather  
-Ability: Perish Body
-Level: 100
-Tera Type: Water     
-EVs: 252 HP / 252 SpA / 4 SpD  
-Modest Nature  
-IVs: 0 Atk  
-- Curse  
-- Destiny Bond  
-- Shadow Ball  
-- Nature Power  
-
-Mimikyu  
-Ability: Disguise
-Level: 100
-Tera Type: Ghost    
-EVs: 252 Atk / 252 Spe  
-Adamant Nature  
+Kabutops-Fossil @ Focus Sash  
+Ability: Weak Armor  
+Tera Type: Ghost 
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
 - Swords Dance  
-- Play Rough  
-- Shadow Sneak  
-- Curse  
+- Liquidation  
+- Stone Edge  
+- Flip Turn  
+
+Aerodactyl-Fossil @ Life Orb  
+Ability: Unnerve  
+Tera Type: Ghost  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Aqua Tail  
+- Dual Wingbeat  
+- Stone Edge  
+- Psychic Fangs  
 
 Slowking-Galar @ Heavy-Duty Boots  
 Ability: Regenerator 
@@ -10571,6 +10567,18 @@ IVs: 0 Atk
 - Chilly Reception  
 - Eerie Spell  
 - Hex  
+
+MissingNo
+Ability: Unnerve 
+Level: 100
+Tera Type: Ghost
+EVs: 252 HP / 252 Atk / 4 SpD     
+Adamant Nature  
+IVs: 0 SpA 
+- Water Gun  
+- Sky Attack  
+- Mega Punch  
+- Poltergeist  
 
 Sableye @ Sablenite  
 Ability: Prankster  
@@ -19543,15 +19551,66 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
 
-Petilil (F)  
-Ability: Chlorophyll  
-Level: 16  
-EVs: 16 HP / 4 Def / 252 SpD / 236 Spe  
+Typhlosion-Hisui (M) @ Typhlosionite 
+Ability: Frisk   
+EVs: 4 Def / 252 SpA / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Stun Spore  
-- Mega Drain  
-- Leech Seed
+- Heat Wave  
+- Endure  
+- Earth Power  
+- Infernal Parade  
+
+Grimmsnarl (M) @ Light Clay  
+Ability: Prankster  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Light Screen  
+- Reflect  
+- Foul Play  
+- Thunder Wave  
+
+Great Tusk @ Eject Pack  
+Ability: Protosynthesis   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Stealth Rock  
+- Headlong Rush  
+- Close Combat  
+- Rapid Spin  
+
+Celesteela @ Power Herb  
+Ability: Beast Boost  
+Tera Type: Water  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Flash Cannon  
+- Air Slash  
+- Meteor Beam  
+- Leech Seed  
+
+Iron Hands @ Booster Energy  
+Ability: Quark Drive  
+Tera Type: Flying 
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Supercell Slam  
+- Close Combat  
+- Earthquake  
+- Fake Out  
+
+Naganadel @ Choice Specs  
+Ability: Beast Boost  
+Tera Type: Dragon 
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Draco Meteor  
+- Sludge Wave  
+- Heat Wave  
+- Thunderbolt  
 
 /*Easy Difficulty*/
 
@@ -24001,7 +24060,7 @@ Pic: Elite Four Phoebe
 Gender: Female
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer
+AI: Basic Trainer
 Difficulty: Easy 
 Mugshot: Pink
 
@@ -30359,10 +30418,9 @@ Double Battle: No
 AI: Basic Trainer  
 Difficulty: Easy
 
-Clefable @ Leftovers  
+Clefable  
 Ability: Magic Guard
-Level: 100
-Tera Type: Fairy     
+Level: 100  
 Modest Nature  
 IVs: 0 Atk  
 - Misty Explosion  
@@ -30370,28 +30428,25 @@ IVs: 0 Atk
 - Chilling Water  
 - Stealth Rock  
 
-Cursola @ Fairy Feather  
-Ability: Perish Body
-Level: 100
-Tera Type: Water     
-Modest Nature  
-IVs: 0 Atk  
-- Curse  
-- Destiny Bond  
-- Shadow Ball  
-- Nature Power  
-
-Mimikyu  
-Ability: Disguise
-Level: 100
-Tera Type: Ghost    
-Adamant Nature  
+Kabutops-Fossil
+Ability: Weak Armor  
+Tera Type: Ghost  
+Jolly Nature  
 - Swords Dance  
-- Play Rough  
-- Shadow Sneak  
-- Curse  
+- Liquidation  
+- Stone Edge  
+- Flip Turn  
 
-Slowking-Galar @ Heavy-Duty Boots  
+Aerodactyl-Fossil  
+Ability: Unnerve  
+Tera Type: Ghost  
+Jolly Nature  
+- Aqua Tail  
+- Dual Wingbeat  
+- Stone Edge  
+- Psychic Fangs  
+
+Slowking-Galar
 Ability: Regenerator 
 Level: 100
 Tera Type: Water    
@@ -30400,6 +30455,17 @@ IVs: 0 Atk
 - Sludge Bomb  
 - Chilly Reception  
 - Eerie Spell  
+- Hex  
+
+MissingNo
+Ability: Unnerve 
+Level: 100
+Tera Type: Ghost   
+Adamant Nature  
+IVs: 0 SpA 
+- Water Gun  
+- Sky Attack  
+- Mega Punch  
 - Hex  
 
 Sableye @ Sablenite  
@@ -38273,7 +38339,7 @@ Pic: Champion Wallace
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer Ace
+AI: Basic Trainer Ace
 Difficulty: Easy
 Mugshot: Purple
 
@@ -39477,12 +39543,57 @@ AI: Basic Trainer
 Mugshot: Blue
 Difficulty: Easy
 
-Petilil (F)  
-Ability: Chlorophyll  
-Level: 16  
-EVs: 16 HP / 4 Def / 252 SpD / 236 Spe  
+Typhlosion-Hisui (M) @ Typhlosionite 
+Ability: Frisk   
 Timid Nature  
 IVs: 0 Atk  
-- Stun Spore  
-- Mega Drain  
-- Leech Seed
+- Heat Wave  
+- Endure  
+- Earth Power  
+- Infernal Parade  
+
+Grimmsnarl (M) @ Light Clay  
+Ability: Prankster  
+Calm Nature  
+IVs: 0 Atk  
+- Light Screen  
+- Reflect  
+- Foul Play  
+- Thunder Wave  
+
+Great Tusk @ Eject Pack  
+Ability: Protosynthesis   
+Jolly Nature  
+- Stealth Rock  
+- Headlong Rush  
+- Close Combat  
+- Rapid Spin  
+
+Celesteela @ Power Herb  
+Ability: Beast Boost  
+Tera Type: Water  
+Modest Nature  
+IVs: 0 Atk  
+- Flash Cannon  
+- Air Slash  
+- Meteor Beam  
+- Leech Seed  
+
+Iron Hands @ Booster Energy  
+Ability: Quark Drive  
+Tera Type: Flying 
+Adamant Nature  
+- Supercell Slam  
+- Close Combat  
+- Earthquake  
+- Fake Out  
+
+Naganadel @ Choice Specs  
+Ability: Beast Boost  
+Tera Type: Dragon 
+Adamant Nature  
+IVs: 0 SpA 
+- Draco Meteor  
+- Sludge Wave  
+- Heat Wave  
+- Thunderbolt  
