@@ -5774,6 +5774,9 @@ static void Task_HandleStopLearningMoveYesNoInput(u8 taskId)
 
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
+    case MENU_B_PRESSED:
+       PlaySE(SE_SELECT);
+       // fallthrough
     case 0:
         GetMonNickname(mon, gStringVar1);
         StringCopy(gStringVar2, GetMoveName(gPartyMenu.data1));
@@ -5790,9 +5793,6 @@ static void Task_HandleStopLearningMoveYesNoInput(u8 taskId)
             gTasks[taskId].func = Task_ClosePartyMenuAfterText;
         }
         break;
-    case MENU_B_PRESSED:
-        PlaySE(SE_SELECT);
-        // fallthrough
     case 1:
         GetMonNickname(mon, gStringVar1);
         StringCopy(gStringVar2, GetMoveName(gPartyMenu.data1));
