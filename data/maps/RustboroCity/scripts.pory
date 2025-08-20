@@ -97,6 +97,9 @@ RustboroCity_EventScript_MatchCallTutorial::
 	special OpenPokenavForTutorial
 	waitstate
 	delay 20
+	msgbox RustboroCity_Text_AddedStatEdits, MSGBOX_YESNO
+	waitmessage
+	call_if_eq VAR_RESULT, YES, RustboroCity_EventScript_ExplainIVsEVs
 	msgbox RustboroCity_Text_IdBetterGetBackToWork, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SCIENTIST, RustboroCity_Movement_ScientistLeave
@@ -603,8 +606,11 @@ RustboroCity_EventScript_ReturnGoods::
 	call_if_eq VAR_TEMP_1, 3, RustboroCity_EventScript_EmployeeApproachPlayerDown2
 	call_if_eq VAR_TEMP_1, 4, RustboroCity_EventScript_EmployeeFacePlayerRight
 	msgbox RustboroCity_Text_YouGotItThankYou, MSGBOX_DEFAULT
-	giveitem ITEM_GREAT_BALL
+	giveitem ITEM_EXP_SHARE
+	setflag FLAG_RECEIVED_EXP_SHARE
+	setflag FLAG_I_EXP_SHARE
 	call_if_eq VAR_RESULT, FALSE, RustboroCity_EventScript_BagFull
+	msgbox RustboroCity_DevonCorp_3F_Text_ExplainExpShare, MSGBOX_DEFAULT
 	msgbox RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_RETURNED_DEVON_GOODS
@@ -1097,7 +1103,7 @@ RustboroCity_Text_YouGotItThankYou:
 	.string "You got them back!\p"
 	.string "You really are a great TRAINER!\p"
 	.string "I know! As my thanks, I'll give you\n"
-	.string "another GREAT BALL!$"
+	.string "this item I've developed!$"
 
 RustboroCity_Text_YoureLoadedWithItems:
 	.string "You're loaded with items.\n"
@@ -1257,13 +1263,17 @@ RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
 RustboroCity_Text_PleaseSelectPokenav:
 	.string "Please select the POKéNAV.$"
 
-RustboroCity_Text_IdBetterGetBackToWork:
+RustboroCity_Text_AddedStatEdits:
 	.string "I also added another feature named\n"
 	.string "EDIT STATS to your POKéNAV.\p"
 	.string "You can use it to edit the IVs\n"
 	.string "and EVs of your POKéMON.\p"
 	.string "To use it, just select a POKéMON\n"
 	.string "from within the party menu.\p"
+	.string "Would you like an explanation\n"
+	.string "of IVs and EVs?$"
+
+RustboroCity_Text_IdBetterGetBackToWork:
 	.string "Okay, I'd better get back to work.\n"
 	.string "Please take care, {PLAYER}!$"
 
@@ -1469,6 +1479,28 @@ text RustboroCity_LunaDexNavText{
 	CENTER.\p
 	… … … … … …\n
 	… … … … … Click!"}
+
+script RustboroCity_EventScript_ExplainIVsEVs{
+	msgbox("IVs, or INDIVIDUAL VALUES, are\n
+		the inherent talents of a POKéMON and\l
+		can range from 0-31.\p
+		This stat is determined from birth.\p
+		Luckily, all POKéMON in HOENN are\n
+		born equal in this regard.\p
+		EVs, or EFFORT VALUES, are gained\n
+		from battling POKéMON.\p
+		Each stat, such as HP, ATK, etc.,\n
+		can gain EVs from defeating certain\l
+		POKéMON.\p
+		A POKéMON can have up to 510 EVs total,\n
+		with a maximum of 252 in a single stat.\p
+		A POKéMON with EVs can be much stronger\n
+		stronger than one without any!\p
+		I recommend you take a look\n
+		at the STAT EDITOR.", MSGBOX_DEFAULT)
+	waitmessage
+	return
+}
 
 movement RustboroExclaim {emote_exclamation_mark}
 

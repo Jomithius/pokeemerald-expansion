@@ -19788,6 +19788,9 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nickit
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Quick Attack
+- Beat Up
+- Tail Whip
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -22123,6 +22126,10 @@ Difficulty: Easy
 Meowth-Galar @ Nugget
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fake Out
+- Scratch
+- Growl
+- Pay Day
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE

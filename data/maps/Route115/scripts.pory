@@ -701,9 +701,9 @@ I'll be heading back soon."}
 
 text Route115Misa2{"MISA: Great! I made a feast since\n
 you're starting your journey tomorrow.\l
-Hurry back soon, JAMES.\l
-{PLAYER}, you're more than welcome\l
-to stop by anytime!"}
+Hurry back soon, JAMES.\p
+{PLAYER}, you're more than welcome\n
+to stop by anytime as well!"}
 
 text Route115Emo9 {"Definitely JAMES: …\p
 I should head back then.\n

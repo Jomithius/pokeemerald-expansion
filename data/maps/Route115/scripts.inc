@@ -1644,7 +1644,7 @@ Route115Emo8::
 
 Route115Misa2::
 # 702 "data/maps/Route115/scripts.pory"
-	.string "MISA: Great! I made a feast since\n you're starting your journey tomorrow.\l Hurry back soon, JAMES.\l {PLAYER}, you're more than welcome\l to stop by anytime!$"
+	.string "MISA: Great! I made a feast since\n you're starting your journey tomorrow.\l Hurry back soon, JAMES.\p {PLAYER}, you're more than welcome\n to stop by anytime as well!$"
 
 Route115Emo9::
 # 708 "data/maps/Route115/scripts.pory"

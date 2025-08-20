@@ -75,11 +75,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAY_RUSTBORO_TORCHIC] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow, {B_PLAYER_NAME}!\n You're this strong already!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Okay, {B_OPPONENT_MON1_NAME}!\n We haven't lost yet!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You're this strong already?!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You're this strong already?{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRAWLY_1] = // Liam
         {
@@ -87,11 +87,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAY_ROUTE_110_TORCHIC] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Haha…\nI might lose again!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Eheheh…\nI might lose again!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I might lose again?!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I might lose again?{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WATTSON_1] = // Daca
         {
@@ -127,7 +127,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAY_LILYCOVE_TORCHIC] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Haha, uh-oh…\nThis might be it!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Okay, {B_OPPONENT_MON1_NAME}!\nIt's up to you!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRENDAN_LILYCOVE_TREECKO] =
         {

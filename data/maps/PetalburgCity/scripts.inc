@@ -1487,7 +1487,7 @@ PetalburgCity_Text_GymSign:
 # 744 "data/maps/PetalburgCity/scripts.pory"
 	.string "LEADER: LUNA\l"
 # 745 "data/maps/PetalburgCity/scripts.pory"
-	.string "“A man in pursuit of fantasia!”$"
+	.string "“Mucho texto.”$"
 # 746 "data/maps/PetalburgCity/scripts.pory"
 
 # 747 "data/maps/PetalburgCity/scripts.pory"

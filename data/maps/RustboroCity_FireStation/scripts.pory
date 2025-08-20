@@ -4,9 +4,9 @@ script RustboroCity_FireStation_Maniac1{
     lock
     applymovement(1, FireStationFacePlayer)
     waitmovement(1)
-    msgbox("I'm researching ROTOM. We're testing\n
+    msgbox("I'm researching ROTOM. I've tested\n
     what appliances they can inhabit.\p
-    We've discovered that they can change\n
+    It seems that they can change\n
     form just from looking at a catalog.\l
     Isn't that amazing?", MSGBOX_NPC)
     applymovement(1, FireStationFaceUp)
@@ -20,7 +20,7 @@ script RustboroCity_FireStation_Maniac2{
     lock
     applymovement(2, FireStationFacePlayer)
     waitmovement(2)
-    msgbox("We're working with the LEAGUE to \n
+    msgbox("I'm working with the LEAGUE to\n
     investigate strange tremors in the\l
     area recently.\p
     I don't know what's going on, but\n
@@ -28,7 +28,6 @@ script RustboroCity_FireStation_Maniac2{
     applymovement(2, FireStationFaceUp)
     waitmovement(2)
     waitmessage
-    setvar(VAR_ULTRA_SPACE_STATE, 1)
     release
     end
 }
@@ -47,7 +46,7 @@ script RustboroCity_FireStation_Man{
 
 script RustboroCity_FireStation_FatMan{
     lock
-    msgbox("Ah, MISA's back in town…\l
+    msgbox("Ah, MISA's back in town…\n
     I wish she would smother me…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
@@ -97,23 +96,21 @@ script RustboroCity_FireStation_Camper{
     waitmovement(7)
     if(flag(FLAG_RECEIVED_TM_WATER_PULSE) == TRUE){
         msgbox("WATER PULSE damages the foe,\n
-        while also has a chance to confuse it!")
+        while also having a chance to confuse!", MSGBOX_AUTOCLOSE)
         waitmessage
-        release
-        end
     }
     else{
-        msgbox("In case of a fire, use this!", MSGBOX_NPC)
+        msgbox("In case of a fire, use this!", MSGBOX_DEFAULT)
         waitmessage
         giveitem(ITEM_TM_WATER_PULSE)
         waitmessage
         msgbox("WATER PULSE damages the foe,\n
-        while also has a chance to confuse it!")
+        while also having a chance to confuse!")
         waitmessage
         setflag(FLAG_RECEIVED_TM_WATER_PULSE)
-        release
-        end
     }
+    release
+    end
 }
 
 movement FireStationSurprised{

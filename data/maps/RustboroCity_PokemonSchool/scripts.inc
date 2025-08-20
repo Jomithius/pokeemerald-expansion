@@ -213,7 +213,7 @@ RustboroCity_PokemonSchool_Text_ExplainPoison:
 	.string "a battle.\p"
 	.string "A poisoned POKéMON's HP will drop\n"
 	.string "while it is traveling.\p"
-	.string "Heal a poisoning using an FULL HEAL.$"
+	.string "Heal a poisoning using a FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainParalysis:
 	.string "If a POKéMON becomes paralyzed,\n"
@@ -229,7 +229,7 @@ RustboroCity_PokemonSchool_Text_ExplainSleep:
 	.string "A POKéMON may wake up on its own,\n"
 	.string "but if a battle ends while it is\l"
 	.string "sleeping, it will stay asleep.\p"
-	.string "Wake it up using an FULL HEAL.$"
+	.string "Wake it up using a FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainBurn:
 	.string "A burn reduces ATTACK power, and it\n"
@@ -241,7 +241,7 @@ RustboroCity_PokemonSchool_Text_ExplainFreeze:
 	.string "If a POKéMON is frostbitten, its\n"
 	.string "SP. ATK is reduced.\p"
 	.string "It will remain frostbitten after battle.\n"
-	.string "Thaw it out using an FULL HEAL.$"
+	.string "Thaw it out using a FULL HEAL.$"
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
 	.string "Students who don't study get a little\n"
