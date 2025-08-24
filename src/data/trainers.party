@@ -1112,11 +1112,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Wimpod
-Level: 12
+Level: 14
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Azurill
-Level: 12
+Level: 14
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_AUSTINA ===
@@ -1208,7 +1208,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Pikachu
-Level: 13
+Level: 15
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Sand Attack
 - Headbutt
@@ -2460,7 +2460,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Meowth-Galar @ Nugget
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MOLLIE ===
@@ -5028,7 +5028,7 @@ Mugshot: Yellow
 
 Carbink  
 Ability: Clear Body  
-Level: 12   
+Level: 13   
 EVs: 32 HP 
 Impish Nature  
 - Rock Tomb  
@@ -5089,7 +5089,7 @@ Mugshot: Green
 
 Drifloon @ Sitrus Berry  
 Ability: Unburden  
-Level: 18  
+Level: 20 
 EVs: 68 Def / 176 SpA / 12 SpD / 244 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -5100,7 +5100,7 @@ IVs: 0 Atk
 
 Skiddo @ Coba Berry  
 Ability: Sap Sipper  
-Level: 17  
+Level: 21  
 EVs: 244 Atk / 20 Def / 244 SpD  
 Adamant Nature  
 - Bulk Up  
@@ -5110,7 +5110,7 @@ Adamant Nature
 
 Ponyta-Galar @ Wiki Berry  
 Ability: Pastel Veil  
-Level: 19  
+Level: 20  
 EVs: 4 HP / 144 Atk / 8 Def / 96 SpA / 252 Spe  
 Naive Nature  
 - Stomp  
@@ -5120,7 +5120,7 @@ Naive Nature
 
 Dartrix @ Miracle Seed  
 Ability: Long Reach  
-Level: 19  
+Level: 21  
 EVs: 248 Atk / 12 SpD / 240 Spe  
 Adamant Nature  
 - Dual Wingbeat  
@@ -5130,7 +5130,7 @@ Adamant Nature
 
 Cinccino 
 Ability: Cute Charm 
-Level: 19  
+Level: 21  
 EVs: 248 HP / 128 Atk
 Adamant Nature  
 IVs: 0 SpA  
@@ -5140,7 +5140,7 @@ IVs: 0 SpA
 
 POOBLES (Diglett-Alola) @ Rocky Helmet  
 Ability: Tangling Hair  
-Level: 20  
+Level: 21  
 EVs: 8 HP / 236 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Metal Claw  
@@ -5192,7 +5192,7 @@ IVs: 0 Atk
 
 Scrafty @ Salac Berry  
 Ability: Intimidate  
-Level: 25  
+Level: 24  
 EVs: 252 HP / 240 Atk / 12 Def / 4 Spe  
 Naughty Nature  
 - Fake Out  
@@ -5202,7 +5202,7 @@ Naughty Nature
 
 Drakloak @ Dragon Fang  
 Ability: Cursed Body  
-Level: 25  
+Level: 24  
 EVs: 16 HP / 236 Atk / 248 SpA / 4 Spe  
 Mild Nature  
 IVs: 21 SpD / 0 Spe  
@@ -5831,7 +5831,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Cottonee
-Level: 9
+Level: 10
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_GEORGIA ===
@@ -6559,13 +6559,13 @@ AI: Basic Trainer
 
 Geodude-Alola  
 Ability: Galvanize
-Level: 10  
+Level: 11  
 - Tackle  
 - Rock Throw  
 
 Onix  
 Ability: Rock Head  
-Level: 10  
+Level: 11  
 EVs: 64 Atk / 80 Spe  
 Hasty Nature  
 - Rock Throw  
@@ -6574,14 +6574,12 @@ Hasty Nature
 
 Rolycoly  
 Ability: Steam Engine  
-Level: 11   
-EVs: 36 HP / 32 Atk / 24 Def / 32 SpA / 24 SpD / 76 Spe  
+Level: 12   
 - Rock Blast  
 - Incinerate
 
 Pansage
 Level: 13
-EVs: 36 HP / 32 Atk / 24 Def / 32 SpA / 24 SpD / 76 Spe  
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6595,19 +6593,16 @@ AI: Basic Trainer
 Charmander 
 Ability: Blaze  
 Level: 12    
-EVs: 160 Atk / 56 Def / 112 SpA  
 Relaxed Nature  
 - Incinerate 
 - Scratch 
 
 Pansear
 Level: 12    
-EVs: 160 Atk / 56 Def / 112 SpA  
 
 Silicobra  
 Ability: Shed Skin  
-Level: 12  
-EVs: 128 HP / 44 Def / 112 SpD  
+Level: 13  
 Sassy Nature  
 - Mud-Slap  
 - Sand Tomb  
@@ -8488,7 +8483,7 @@ IVs: 0 Atk
 - Protect  
 - Swift  
 
-Electabuzz @ Oran Berry  
+Elekid @ Oran Berry  
 Ability: Static  
 Level: 19   
 EVs: 232 HP / 20 Def / 16 SpA / 236 Spe  
@@ -9473,11 +9468,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Pidgey
-Level: 6
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spearow
-Level: 6
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIU_AND_YUKI ===
@@ -9620,11 +9615,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Dwebble
-Level: 12
+Level: 14
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Panpour
-Level: 12
+Level: 14
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_EDMOND ===
@@ -9637,7 +9632,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Oricorio
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ERNEST_1 ===
@@ -11497,14 +11492,12 @@ AI: Basic Trainer
 Chewtle  
 Ability: Strong Jaw  
 Level: 12   
-EVs: 112 HP / 64 Atk / 44 Def / 8 SpA / 72 SpD  
 - Water Pulse  
 - Bite  
 
 Growlithe  
 Ability: Intimidate  
-Level: 12  
-EVs: 72 HP / 52 Atk / 84 SpA / 64 Spe  
+Level: 12   
 Naughty Nature  
 - Fire Spin  
 - Will-O-Wisp  
@@ -11512,8 +11505,7 @@ Naughty Nature
 
 Lillipup  
 Ability: Vital Spirit  
-Level: 10   
-EVs: 76 HP / 116 Atk / 36 SpD / 116 Spe  
+Level: 13   
 Lonely Nature  
 - Covet  
 - Mud-Slap  
@@ -11522,7 +11514,6 @@ Lonely Nature
 Panpour @ Oran Berry  
 Ability: Gluttony  
 Level: 13   
-EVs: 92 HP / 100 Atk / 68 SpA
 Lonely Nature  
 - Water Sport  
 - Water Pulse  
@@ -12236,11 +12227,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Lotad
-Level: 6
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Shroomish
-Level: 6
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JANICE ===
@@ -12437,19 +12428,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Wurmple
-Level: 3
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Weedle
-Level: 3
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Metapod
-Level: 3
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Caterpie
-Level: 3
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===
@@ -12526,11 +12517,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Nincada
-Level: 6
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Snom
-Level: 6
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JAMES_2 ===
@@ -14495,7 +14486,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Corsola
-Level: 13
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANDLER ===
@@ -14508,11 +14499,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacool
-Level: 12
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 12
+Mareanie
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KALEB ===
@@ -17254,7 +17245,7 @@ IVs: 0 Atk
 - Hyper Voice  
 - Air Cutter  
 
-Skeledirge @ Heavy-Duty Boots  
+Skeledirge @ Throat Spray  
 Ability: Unaware  
 Shiny: Yes  
 Tera Type: Normal  
@@ -19254,20 +19245,20 @@ Mugshot: Green
 
 Rattata-Alola  
 Ability: Gluttony  
-Level: 14  
+Level: 16  
 - Assurance  
 - Super Fang  
 
 Rattata  
 Ability: Run Away  
-Level: 15  
+Level: 16  
 - Quick Attack  
 - Bite
 
 Raticate (M) @ Oran Berry  
 Ability: Hustle  
 EVs: 80 Atk / 152 Spe  
-Level: 16  
+Level: 18  
 - Pursuit  
 - Quick Attack  
 - Headbutt
@@ -19376,7 +19367,7 @@ Jolly Nature
 
 Meditite (M) @ Oran Berry  
 Ability: Pure Power  
-Level: 17  
+Level: 18  
 EVs: 84 HP / 180 Atk / 244 Spe  
 Adamant Nature  
 - Force Palm  
@@ -19386,7 +19377,7 @@ Adamant Nature
 
 Monferno (M) @ Expert Belt  
 Ability: Iron Fist  
-Level: 18  
+Level: 19  
 EVs: 20 HP / 244 Atk / 240 Spe  
 Adamant Nature  
 - Mach Punch  
@@ -19493,7 +19484,7 @@ Mugshot: Yellow
 
 Zigzagoon @ Oran Berry  
 Ability: Gluttony  
-Level: 13  
+Level: 14  
 EVs: 124 Atk / 64 Def / 92 SpD / 140 Spe  
 Adamant Nature  
 - Covet  
@@ -19502,7 +19493,7 @@ Adamant Nature
 
 Salandit (F)  
 Ability: Corrosion  
-Level: 14   
+Level: 15   
 EVs: 140 SpA / 32 Spe  
 Mild Nature  
 IVs: 0 Atk  
@@ -19512,7 +19503,7 @@ IVs: 0 Atk
 
 Golett  
 Ability: Iron Fist  
-Level: 14  
+Level: 15  
 - Astonish  
 - Rock Tomb  
 - Bulldoze  
@@ -20700,11 +20691,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Wimpod
-Level: 12
+Level: 13
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Azurill
-Level: 12
+Level: 13
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_AUSTINA ===
@@ -20803,7 +20794,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Pikachu
-Level: 13
+Level: 14
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Sand Attack
 - Headbutt
@@ -22124,7 +22115,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Meowth-Galar @ Nugget
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fake Out
 - Scratch
@@ -24767,7 +24758,7 @@ Mugshot: Yellow
 
 Carbink  
 Ability: Clear Body  
-Level: 13    
+Level: 12    
 - Rock Tomb  
 - Flail  
 
@@ -24786,14 +24777,14 @@ Level: 12
 
 Cubone  
 Ability: Battle Armor  
-Level: 14   
+Level: 13  
 Quiet Nature  
 - Bonemerang  
 - Rock Tomb  
 
 Tentacool @ Oran Berry  
 Ability: Liquid Ooze  
-Level: 15   
+Level: 14   
 Lax Nature  
 IVs: 0 Atk  
 - Chilling Water  
@@ -24802,7 +24793,7 @@ IVs: 0 Atk
 
 Magby @ Sitrus Berry  
 Ability: Flame Body  
-Level: 16   
+Level: 15   
 Modest Nature  
 IVs: 0 Atk  
 - Incinerate  
@@ -24822,7 +24813,7 @@ Mugshot: Green
 
 Drifloon @ Sitrus Berry  
 Ability: Unburden  
-Level: 18  
+Level: 19  
 Modest Nature  
 IVs: 0 Atk  
 - Destiny Bond  
@@ -24832,7 +24823,7 @@ IVs: 0 Atk
 
 Skiddo @ Coba Berry  
 Ability: Sap Sipper  
-Level: 17  
+Level: 20 
 Adamant Nature  
 - Bulk Up  
 - Razor Leaf  
@@ -24850,7 +24841,7 @@ Naive Nature
 
 Dartrix @ Miracle Seed  
 Ability: Long Reach  
-Level: 19  
+Level: 20  
 Adamant Nature  
 - Dual Wingbeat  
 - Steel Wing  
@@ -24868,7 +24859,8 @@ IVs: 0 SpA
 
 POOBLES (Diglett-Alola) @ Rocky Helmet  
 Ability: Tangling Hair  
-Level: 20  
+Level: 21  
+EVs: 252 HP
 Jolly Nature  
 - Metal Claw  
 - Aerial Ace  
@@ -24888,7 +24880,7 @@ Mugshot: Green
 
 Pumpkaboo-Super @ Big Root  
 Ability: Insomnia  
-Level: 25   
+Level: 24   
 Impish Nature  
 - Destiny Bond  
 - Leech Seed  
@@ -24897,7 +24889,7 @@ Impish Nature
 
 Duosion @ Sticky Barb  
 Ability: Magic Guard  
-Level: 25  
+Level: 24  
 Bold Nature  
 IVs: 0 Atk  
 - Psyshock  
@@ -24907,7 +24899,7 @@ IVs: 0 Atk
 
 Palpitoad @ Rocky Helmet  
 Ability: Water Absorb  
-Level: 25  
+Level: 24  
 Modest Nature  
 IVs: 0 Atk  
 - Water Pulse  
@@ -24915,9 +24907,9 @@ IVs: 0 Atk
 - Icy Wind  
 - Aqua Ring  
 
-Scrafty @ Salac Berry  
+Scrafty 
 Ability: Intimidate  
-Level: 25  
+Level: 24  
 Naughty Nature  
 - Fake Out  
 - Lash Out  
@@ -24926,7 +24918,7 @@ Naughty Nature
 
 Drakloak @ Dragon Fang  
 Ability: Cursed Body  
-Level: 25  
+Level: 24  
 Mild Nature  
 IVs: 21 SpD / 0 Spe  
 - Will-O-Wisp  
@@ -25522,7 +25514,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Cottonee
-Level: 9
+Level: 10
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_GEORGIA ===
@@ -26290,13 +26282,13 @@ Difficulty: Easy
 
 Geodude-Alola  
 Ability: Galvanize
-Level: 10  
+Level: 11  
 - Tackle  
 - Rock Throw  
 
 Onix  
 Ability: Rock Head  
-Level: 10  
+Level: 11  
 Hasty Nature  
 - Rock Throw  
 - Defense Curl  
@@ -26304,7 +26296,7 @@ Hasty Nature
 
 Rolycoly  
 Ability: Steam Engine  
-Level: 11     
+Level: 12     
 - Rock Blast  
 - Incinerate
 
@@ -26333,7 +26325,7 @@ Level: 12
 
 Silicobra  
 Ability: Shed Skin  
-Level: 12    
+Level: 13    
 Sassy Nature  
 - Mud-Slap  
 - Sand Tomb  
@@ -28314,7 +28306,7 @@ IVs: 0 Atk
 - Protect  
 - Swift  
 
-Electabuzz @ Oran Berry  
+Elekid @ Oran Berry  
 Ability: Static  
 Level: 19    
 Timid Nature  
@@ -29352,11 +29344,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Pidgey
-Level: 6
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spearow
-Level: 6
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIU_AND_YUKI ===
@@ -29506,11 +29498,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Dwebble
-Level: 12
+Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Panpour
-Level: 12
+Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_EDMOND ===
@@ -29524,7 +29516,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Oricorio
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ERNEST_1 ===
@@ -31442,7 +31434,7 @@ Naughty Nature
 
 Lillipup  
 Ability: Vital Spirit  
-Level: 10   
+Level: 13   
 Lonely Nature  
 - Covet  
 - Mud-Slap  
@@ -31607,28 +31599,20 @@ Adamant Nature
 - Force Palm 
 
 Diglett  
-Ability: Arena Trap  
+Ability: Sand Veil 
 Level: 19  
 Lonely Nature  
 - Magnitude  
 - Smack Down  
 
 Kadabra  
-Ability: Magic Guard  
+Ability: Synchronize 
 Level: 18   
 Timid Nature  
 IVs: 0 Atk  
 - Dazzling Gleam  
 - Psybeam  
 - Night Shade  
-
-Falinks  
-Ability: Battle Armor  
-Level: 18    
-Jolly Nature  
-- Bulk Up  
-- Beat Up  
-- Revenge  
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
@@ -32181,11 +32165,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Lotad
-Level: 6
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Shroomish
-Level: 6
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JANICE ===
@@ -32394,19 +32378,19 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Wurmple
-Level: 3
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Weedle
-Level: 3
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Metapod
-Level: 3
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Caterpie
-Level: 3
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===
@@ -32488,11 +32472,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Nincada
-Level: 6
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Snom
-Level: 6
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JAMES_2 ===
@@ -34483,7 +34467,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Corsola
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANDLER ===
@@ -34497,11 +34481,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Tentacool
-Level: 12
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 12
+Mareanie
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KALEB ===
@@ -37250,9 +37234,8 @@ Adamant Nature
 - Extreme Speed  
 - Dragon Cheer  
 
-Greninja-Bond @ Expert Belt  
-Ability: Battle Bond  
-Tera Type: Water  
+Greninja-Bond 
+Ability: Battle Bond   
 Timid Nature  
 - Water Shuriken  
 - Dark Pulse  
@@ -37261,7 +37244,7 @@ Timid Nature
 
 Okidogi @ Punching Glove  
 Ability: Toxic Chain  
-Tera Type: Ice   
+Tera Type: Poison 
 Jolly Nature  
 - Fire Punch  
 - Ice Punch  
@@ -37281,13 +37264,12 @@ Difficulty: Easy
 Altaria @ Altarianite  
 Ability: Cloud Nine   
 Timid Nature  
-IVs: 0 Atk  
-- Perish Song  
+IVs: 0 Atk   
 - Heat Wave  
 - Hyper Voice  
 - Air Cutter  
 
-Skeledirge @ Heavy-Duty Boots  
+Skeledirge
 Ability: Unaware  
 Shiny: Yes  
 Tera Type: Normal   
@@ -39388,7 +39370,7 @@ Jolly Nature
 
 Meditite (M) @ Oran Berry  
 Ability: Pure Power  
-Level: 17   
+Level: 18  
 Adamant Nature  
 - Force Palm  
 - Bullet Punch  
@@ -39397,7 +39379,7 @@ Adamant Nature
 
 Monferno (M) @ Expert Belt  
 Ability: Iron Fist  
-Level: 18  
+Level: 19  
 Adamant Nature  
 - Mach Punch  
 - Fire Punch  
@@ -39504,7 +39486,7 @@ Mugshot: Yellow
 
 Zigzagoon @ Oran Berry  
 Ability: Gluttony  
-Level: 13  
+Level: 14  
 Adamant Nature  
 - Covet  
 - Odor Sleuth  
@@ -39512,16 +39494,16 @@ Adamant Nature
 
 Salandit (F)  
 Ability: Corrosion  
-Level: 14   
+Level: 15   
 Mild Nature  
 IVs: 0 Atk  
 - Incinerate  
-- Acid Spray  
+- Acid  
 - Sand Attack  
 
 Golett  
 Ability: Iron Fist  
-Level: 14  
+Level: 15  
 - Astonish  
 - Rock Tomb  
 - Bulldoze  

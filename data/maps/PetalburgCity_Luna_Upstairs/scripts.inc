@@ -6,7 +6,7 @@ Luna_House_EventScript_Cup::
 # 4 "data/maps/PetalburgCity_Luna_Upstairs/scripts.pory"
 	lock
 # 5 "data/maps/PetalburgCity_Luna_Upstairs/scripts.pory"
-	msgbox Luna_House_EventScript_Cup_Text_0
+	msgbox Luna_House_EventScript_Cup_Text_0, MSGBOX_AUTOCLOSE
 # 10 "data/maps/PetalburgCity_Luna_Upstairs/scripts.pory"
 	waitmessage
 # 11 "data/maps/PetalburgCity_Luna_Upstairs/scripts.pory"
@@ -18,7 +18,7 @@ Luna_House_EventScript_TV::
 # 16 "data/maps/PetalburgCity_Luna_Upstairs/scripts.pory"
 	lockall
 # 17 "data/maps/PetalburgCity_Luna_Upstairs/scripts.pory"
-	msgbox Luna_House_EventScript_TV_Text_0
+	msgbox Luna_House_EventScript_TV_Text_0, MSGBOX_AUTOCLOSE
 # 19 "data/maps/PetalburgCity_Luna_Upstairs/scripts.pory"
 	waitmessage
 # 20 "data/maps/PetalburgCity_Luna_Upstairs/scripts.pory"

@@ -2866,102 +2866,102 @@ RustboroCity_LunaDexNav::
 RustboroCity_EventScript_ExplainIVsEVs::
 # 1484 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroCity_EventScript_ExplainIVsEVs_Text_0, MSGBOX_DEFAULT
-# 1502 "data/maps/RustboroCity/scripts.pory"
+# 1501 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
 	return
 
 
-# 1506 "data/maps/RustboroCity/scripts.pory"
+# 1505 "data/maps/RustboroCity/scripts.pory"
 RustboroExclaim:
-# 1506 "data/maps/RustboroCity/scripts.pory"
+# 1505 "data/maps/RustboroCity/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 1508 "data/maps/RustboroCity/scripts.pory"
+# 1507 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceLeft:
-# 1508 "data/maps/RustboroCity/scripts.pory"
+# 1507 "data/maps/RustboroCity/scripts.pory"
 	face_left
 	step_end
 
-# 1510 "data/maps/RustboroCity/scripts.pory"
+# 1509 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceRight:
-# 1511 "data/maps/RustboroCity/scripts.pory"
+# 1510 "data/maps/RustboroCity/scripts.pory"
 	face_right
 	step_end
 
-# 1514 "data/maps/RustboroCity/scripts.pory"
+# 1513 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceUp:
-# 1515 "data/maps/RustboroCity/scripts.pory"
+# 1514 "data/maps/RustboroCity/scripts.pory"
 	face_up
 	step_end
 
-# 1518 "data/maps/RustboroCity/scripts.pory"
+# 1517 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeave1:
+# 1518 "data/maps/RustboroCity/scripts.pory"
+	walk_right
 # 1519 "data/maps/RustboroCity/scripts.pory"
-	walk_right
-# 1520 "data/maps/RustboroCity/scripts.pory"
 	walk_down
 	step_end
 
-# 1523 "data/maps/RustboroCity/scripts.pory"
+# 1522 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeave2:
-# 1524 "data/maps/RustboroCity/scripts.pory"
+# 1523 "data/maps/RustboroCity/scripts.pory"
+	walk_right
+# 1523 "data/maps/RustboroCity/scripts.pory"
+	walk_right
+# 1523 "data/maps/RustboroCity/scripts.pory"
 	walk_right
 # 1524 "data/maps/RustboroCity/scripts.pory"
-	walk_right
+	walk_up
 # 1524 "data/maps/RustboroCity/scripts.pory"
-	walk_right
-# 1525 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1525 "data/maps/RustboroCity/scripts.pory"
+# 1524 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1525 "data/maps/RustboroCity/scripts.pory"
+# 1524 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1525 "data/maps/RustboroCity/scripts.pory"
+# 1524 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1525 "data/maps/RustboroCity/scripts.pory"
-	walk_up
-# 1525 "data/maps/RustboroCity/scripts.pory"
+# 1524 "data/maps/RustboroCity/scripts.pory"
 	walk_up
 	step_end
 
-# 1528 "data/maps/RustboroCity/scripts.pory"
+# 1527 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeaveGym1:
+# 1528 "data/maps/RustboroCity/scripts.pory"
+	walk_left
 # 1529 "data/maps/RustboroCity/scripts.pory"
-	walk_left
-# 1530 "data/maps/RustboroCity/scripts.pory"
 	walk_down
 	step_end
 
-# 1533 "data/maps/RustboroCity/scripts.pory"
+# 1532 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeaveGym2:
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 	walk_left
 	step_end
 
-# 1537 "data/maps/RustboroCity/scripts.pory"
+# 1536 "data/maps/RustboroCity/scripts.pory"
 RustboroPlayerStepBack:
-# 1538 "data/maps/RustboroCity/scripts.pory"
+# 1537 "data/maps/RustboroCity/scripts.pory"
 	lock_facing_direction
-# 1539 "data/maps/RustboroCity/scripts.pory"
+# 1538 "data/maps/RustboroCity/scripts.pory"
 	walk_down
-# 1540 "data/maps/RustboroCity/scripts.pory"
+# 1539 "data/maps/RustboroCity/scripts.pory"
 	delay_16
-# 1541 "data/maps/RustboroCity/scripts.pory"
+# 1540 "data/maps/RustboroCity/scripts.pory"
 	unlock_facing_direction
 	step_end
 
@@ -2971,7 +2971,7 @@ RustboroCity_Eventscript_Promise_To_Misa_Text_0:
 
 RustboroCity_EventScript_ExplainIVsEVs_Text_0:
 # 1484 "data/maps/RustboroCity/scripts.pory"
-	.string "IVs, or INDIVIDUAL VALUES, are\n the inherent talents of a POKéMON and\l can range from 0-31.\p This stat is determined from birth.\p Luckily, all POKéMON in HOENN are\n born equal in this regard.\p EVs, or EFFORT VALUES, are gained\n from battling POKéMON.\p Each stat, such as HP, ATK, etc.,\n can gain EVs from defeating\l certain POKéMON.\p A POKéMON can have up to 510 EVs\n total, with a maximum of 252\l in a singular stat.\p A POKéMON with EVs can be much\n stronger than one without any!\p I recommend you take a look\n at the STAT EDITOR.$"
+	.string "IVs, or INDIVIDUAL VALUES, are\n the inherent talents of a POKéMON and\l can range from 0-31.\p This stat is determined from birth.\p Luckily, all POKéMON in HOENN are\n born equal in this regard.\p EVs, or EFFORT VALUES, are gained\n from battling POKéMON.\p Each stat, such as HP, ATK, etc.,\n can gain EVs from defeating certain\l POKéMON.\p A POKéMON can have up to 510 EVs total,\n with a maximum of 252 in a single stat.\p A POKéMON with EVs can be much stronger\n stronger than one without any!\p I recommend you take a look\n at the STAT EDITOR.$"
 
 RustboroMisa1::
 # 1433 "data/maps/RustboroCity/scripts.pory"

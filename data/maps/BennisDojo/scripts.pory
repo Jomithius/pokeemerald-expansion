@@ -302,25 +302,25 @@ script BennisDojo_EventScript_BaldyBaldyOverThere{
 }
 
 script BennisDojo_ExpertBelt {
-    lockall
+    lock
     setflag(FLAG_ITEM_BENNIS_DOJO_EXPERT_BELT)
     finditem(ITEM_EXPERT_BELT, 1)
     waitmessage
-    releaseall
+    release
     end
 }
 
 script BennisDojo_FocusSash {
-    lockall
+    lock
     setflag(FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH)
     finditem(ITEM_FOCUS_SASH, 1)
     waitmessage
-    releaseall
+    release
     end
 }
 
 script DojoBattleTrigger{
-    lock
+    lockall
     playse(SE_PIN)
     applymovement(1, exclaim)
     waitmovement(1)
@@ -333,7 +333,7 @@ script DojoBattleTrigger{
     waitmovement(0)
     msgbox(Asak1, MSGBOX_AUTOCLOSE)
     waitmessage
-    call(BennisDojo_EventScript_AsakBattle)
+    trainerbattle_no_intro(TRAINER_ASAK, Asak_Outro)
     if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
         special(HealPlayerParty)
     }
@@ -357,7 +357,7 @@ script DojoBattleTrigger{
     waitmessage
     msgbox("PANINI: Panini!", MSGBOX_AUTOCLOSE)
     waitmessage
-    call(BennisDojo_EventScript_PaniniBattle)
+    trainerbattle_no_intro(TRAINER_PANINI, Panini_Outro)
     if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
         special(HealPlayerParty)
     }
@@ -365,7 +365,7 @@ script DojoBattleTrigger{
     waitmessage
     msgbox(AsakPaniniLoss, MSGBOX_DEFAULT)
     waitmessage
-    msgbox("What's all this noise?", MSGBOX_AUTOCLOSE)
+    msgbox("???: What's all this noise?", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(1, exclaim)
@@ -403,11 +403,12 @@ script DojoBattleTrigger{
     setvar(VAR_BENNIS_DOJO_STATE, 1)
     applymovement(OBJ_EVENT_ID_PLAYER, faceup)
     waitmovement(0)
-    call(BennisBattleStart)
+    goto(BennisBattleStart)
+    end
 }
 
 script Dojo_EarlierAnswerNO{
-    lock
+    lockall
     playse(SE_PIN)
     applymovement(1, exclaim)
     waitmovement(1)
@@ -427,21 +428,19 @@ script Dojo_EarlierAnswerNO{
     waitmovement(3)
     applymovement(OBJ_EVENT_ID_PLAYER, faceup)
     waitmovement(0)
-    call(BennisBattleStart)
+    goto(BennisBattleStart)
 }
 
 script BennisBattleStart{
-    lock
+    lockall
     msgbox("MASTER BENNIS: Are you ready now?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         msgbox(Bennis_Intro, MSGBOX_AUTOCLOSE)
-        call(BennisDojo_EventScript_BennisBattle1)
+        trainerbattle_no_intro(TRAINER_BENNIS_1, Bennis_Outro)
         waitmessage
-        call(BennisEnd)
-        release
-        end
+        goto(BennisEnd)
     }
-    if(var(VAR_RESULT) == NO){
+    else{
         msgbox(BennisIfNo, MSGBOX_AUTOCLOSE)
         waitmessage
         applymovement(3, BennisLeave)
@@ -452,14 +451,15 @@ script BennisBattleStart{
         waitmovement(1)
         applymovement(OBJ_EVENT_ID_PLAYER, PlayerLeaves)
         waitmovement(0)
-        release
-        end
+        warp(MAP_DEWFORD_TOWN, 8, 18)
+        waitstate
     }
-
+    releaseall
+    end
 }
 
 script BennisEnd{
-    lock
+    lockall
     msgbox(Bennis2, MSGBOX_DEFAULT)
     waitmessage
     msgbox("PANINI: P-Panini?!", MSGBOX_AUTOCLOSE)
@@ -468,33 +468,18 @@ script BennisEnd{
     waitmovement(0)
     msgbox(Asak5, MSGBOX_AUTOCLOSE)
     waitmessage
+    playbgm(MUS_NONE, FALSE)
     fadescreenspeed(FADE_TO_BLACK, 2)
     playse(SE_FLEE)
     setflag(FLAG_BENNIS_DOJO_1)
     setvar(VAR_BENNIS_DOJO_STATE, 2)
+    fadedefaultbgm
     removeobject(1)
     removeobject(2)
     removeobject(3)
     fadescreenspeed(FADE_FROM_BLACK, 3)
-    return
-}
-
-script BennisDojo_EventScript_AsakBattle{
-    trainerbattle_no_intro(TRAINER_ASAK, Asak_Outro)
-    lock
-    return
-}
-
-script BennisDojo_EventScript_PaniniBattle{
-    trainerbattle_no_intro(TRAINER_PANINI, Panini_Outro)
-    lock
-    return
-}
-
-script BennisDojo_EventScript_BennisBattle1{
-    trainerbattle_no_intro(TRAINER_BENNIS_1, Bennis_Outro)
-    lock
-    return
+    releaseall
+    end
 }
 
 movement exclaim {
@@ -507,7 +492,7 @@ movement AsakMove1{
     face_player
 }
 
-text Asak1{"Who are you? Another goofball trainer?\n
+text Asak1{"Who are you? Another goofball TRAINER?\n
 Didn't you see the sign?\p
 How rude of you to barge into our dojo\n
 when MASTER BENNIS is meditating.\p
@@ -536,7 +521,7 @@ even beaten Panini…"
 
 text Asak3{"ASAK: MASTER BENNIS! I'm sorry for\n
 disturbing you.\p
-This trainer was intruding on\n
+This TRAINER was intruding on\n
 our dojo."}
 
 text Asak3_5{"We tried to get rid of them, but\n

@@ -4775,7 +4775,7 @@
       "id": "LAYOUT_RAT_CAVE_TO_UNDER",
       "name": "RatCave_ToUnder_Layout",
       "width": 20,
-      "height": 13,
+      "height": 15,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/RatCave_ToUnder/border.bin",

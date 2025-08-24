@@ -240,7 +240,7 @@ script BaldesianForestDojo_EventScript_GiveProtectivePads{
     lock
     msgbox("Kahahaha! Great job!\n
         You actually beat BRUNO!\p
-        Here's your prize!", MSGBOX_AUTOCLOSE)
+        Here's your prize!", MSGBOX_DEFAULT)
     waitmessage
     checkitemspace(ITEM_PROTECTIVE_PADS)
     if(var(VAR_RESULT) == TRUE){
@@ -267,9 +267,12 @@ script BaldesianForestDojo_EventScript_Bruno{
     goto_if_unset(FLAG_SYS_DEFEATED_BRUNO, BaldesianForestDojo_EventScript_GiveKubfu)
     goto_if_eq(VAR_BALDESIA_FOREST_DOJO_STATE, 4, BaldesianForestDojo_EventScript_GiveScroll)
     msgbox("I'll keep training.\n
-        Our battle re-inspired me.\p
+        Our battle inspired me.\p
         There's also still the pressing issue\n
-        of finding a sucessor…\p
+        of finding a successor…\p
+        Don't worry. I can tell\n
+        you're too busy to take over.\l
+        You still have a journey to finish.\p
         If only my younger brother wasn't\n
         MASTER BENNIS's disciple.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -283,7 +286,7 @@ script BaldesianForestDojo_EventScript_BrunoGoRecieveYourPrize{
     lock
     faceplayer
     msgbox("Hm?\n
-        {PLAYER}, did you get your prize already?\p
+        Did you get your prize already?\p
         If you didn't, go talk to my mother at\n
         the reception desk.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -318,26 +321,27 @@ script BaldesianForestDojo_EventScript_GiveKubfu{
     lock
     msgbox("That was a great battle.\n
         As acknowledgement of your strength,\l
-        I want you to accept this KUBFU.", MSGBOX_AUTOCLOSE)
+        I want you to accept this KUBFU.", MSGBOX_DEFAULT)
     waitmessage
     givemon(SPECIES_KUBFU, 70)
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_KUBFU)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("{PLAYER} received KUBFU!", MSGBOX_AUTOCLOSE)
+        msgbox("{PLAYER} received KUBFU!", MSGBOX_DEFAULT)
         waitmessage
         setflag(FLAG_SYS_DEFEATED_BRUNO)
     }
     elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("{PLAYER} received KUBFU!\p
-            KUBFU was sent to the PC.", MSGBOX_AUTOCLOSE)
+        msgbox("{PLAYER} received KUBFU!\n
+            KUBFU was sent to the PC.", MSGBOX_DEFAULT)
         waitmessage
         setflag(FLAG_SYS_DEFEATED_BRUNO)
     }
     else{
         goto(Common_EventScript_NoMoreRoomForPokemon)
     }
+    goto(BaldesianForestDojo_EventScript_GiveScroll)
     release
     end
 }
@@ -345,18 +349,21 @@ script BaldesianForestDojo_EventScript_GiveKubfu{
 script BaldesianForestDojo_EventScript_GiveScroll{
     lock
     faceplayer
-    msgbox("I'll also give you one scroll.\n
-        It contains secret techniques passed\l
+    msgbox("I'll also give you one scroll.\p
+        It contains secret techniques passed\n
         down in our family for generations.\p
         Which one would you like?\n
         Choose wisely.", MSGBOX_DEFAULT)
-    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_SHOW_ITEM, ITEM_SCROLL_OF_DARKNESS, ITEM_SCROLL_OF_WATERS)
-    if(var(VAR_RESULT) == 0){
+    dynmultipush("SCROLL OF DARKNESS", ITEM_SCROLL_OF_DARKNESS)
+    dynmultipush("SCROLL OF WATERS", ITEM_SCROLL_OF_WATERS)
+    dynmultistack(0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+    //dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "SCROLL OF DARKNESS", "SCROLL OF WATERS")
+    if(var(VAR_RESULT) == ITEM_SCROLL_OF_DARKNESS){
         giveitem(ITEM_SCROLL_OF_DARKNESS)
         waitmessage
         setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 5)
     }
-    elif(var(VAR_RESULT) == 1){
+    elif(var(VAR_RESULT) == ITEM_SCROLL_OF_WATERS){
         giveitem(ITEM_SCROLL_OF_WATERS)
         waitmessage
         setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 5)
@@ -371,18 +378,27 @@ script BaldesianForestDojo_EventScript_GiveScroll{
 }
 
 script BaldesianForestDojo_EventScript_Disciple{
+    lock
     msgbox("They're busy training.\n
-    It's probably a bad idea to disturb them.", MSGBOX_SIGN)
+        It's probably a bad idea to disturb them.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
     end
 }
 
 script BaldesianForestDojo_EventScript_OldManDojo{
     lock
     faceplayer
-    msgbox("I'm the referee for the battles\n
-        during dojo challenges.\p
-        Nothing will get past me, so\n
-        don't even think about cheating!", MSGBOX_AUTOCLOSE)
+    if(var(VAR_BALDESIA_FOREST_DOJO_STATE) >= 4){
+        msgbox("Those were some great battles,\n
+            {PLAYER}!", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("I'm the referee for the battles\n
+            during dojo challenges.\p
+            Nothing will get past me, so\n
+            don't even think about cheating!", MSGBOX_AUTOCLOSE)
+    }
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
@@ -419,9 +435,12 @@ script BaldesianForestDojo_EventScript_Asak{
 }
 
 script BaldesianForestDojo_EventScript_Nerd{
+    lock
     msgbox("Huff… Huff…\p
         Even though I look like this, I\n
-        love training in the martial arts.", MSGBOX_SIGN)
+        love training in the martial arts.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
     end
 }
 
@@ -526,9 +545,15 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     waitmovement(21)
     delay(60)
     special(HealPlayerParty)
+    callnative(UpdateFollowingPokemon)
     playse(SE_BALL_OPEN)
     fadescreen(FADE_TO_WHITE)
     addobject(24)
+    setobjectxy(OBJ_EVENT_ID_FOLLOWER, 8, 11)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
+    waitmovement(0)
     fadescreen(FADE_FROM_WHITE)
     waitse
     playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
@@ -549,13 +574,23 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     waitmovement(LOCALID_ASAK)
     delay(60)
     special(HealPlayerParty)
+    callnative(UpdateFollowingPokemon)
     playse(SE_BALL_OPEN)
     fadescreen(FADE_TO_WHITE)
     addobject(25)
+    setobjectxy(OBJ_EVENT_ID_FOLLOWER, 8, 11)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
+    waitmovement(0)
     fadescreen(FADE_FROM_WHITE)
     waitse
     playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
     msgbox("{PLAYER}.\p
+        I have to admit I have newfound\n
+        respect for your strength.\p
+        But I've also traveled HOENN, training\n
+        since our battle in DEWFORD TOWN.\p
         I'll show you how much stronger\n
         I've gotten!", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -573,6 +608,16 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     applymovement(2, Common_Movement_WalkDown4)
     waitmovement(2)
     special(HealPlayerParty)
+    callnative(UpdateFollowingPokemon)
+    playse(SE_BALL_OPEN)
+    fadescreen(FADE_TO_WHITE)
+    setobjectxy(OBJ_EVENT_ID_FOLLOWER, 8, 11)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
+    waitmovement(0)
+    fadescreen(FADE_FROM_WHITE)
+    waitse
     playbgm(MUS_RG_ENCOUNTER_GYM_LEADER, FALSE)
     msgbox("BRUNO: Those were impressive battles.\n
         Finally, it's my turn.\p
@@ -588,7 +633,7 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     waitse
     msgbox("OLD MAN: T-The winner is {PLAYER}!", MSGBOX_AUTOCLOSE)
     waitmessage
-    playfanfare(MUS_RG_CAUGHT_INTRO)
+    playfanfare(MUS_OBTAIN_B_POINTS)
     waitfanfare
     savebgm(MUS_DUMMY)
     fadedefaultbgm
@@ -650,6 +695,7 @@ script BaldesianForestDojo_EventScript_ChallengeBruno{
     playfanfare(MUS_OBTAIN_B_POINTS)
     waitfanfare
     waitmessage
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     applymovement(LOCALID_BRUNO, Common_Movement_WalkInPlaceUp)
     waitmovement(0)

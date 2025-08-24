@@ -25,7 +25,7 @@ Lina_House_EventScript_Pokeball_1:
 
 Lina_House_EventScript_Pokeball_2:
 # 11 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	givemon SPECIES_EEVEE, 15, ITEM_ABILITY_CAPSULE
+	givemon SPECIES_EEVEE, 18, ITEM_ABILITY_CAPSULE
 # 12 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_EEVEE
 # 13 "data/maps/SlateportCity_Lina_House/scripts.pory"

@@ -18,15 +18,15 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 7,
+      "x": 6,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_RAT_CAVE_CENTRAL",
       "dest_warp_id": "3"
     },
     {
-      "x": 16,
-      "y": 7,
+      "x": 15,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_THE_UNDER",
       "dest_warp_id": "0"

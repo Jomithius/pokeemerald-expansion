@@ -50,6 +50,7 @@ Route106_Text_TrainerTips:
 
 script Route106_EventScript_Wishiwashi{
     lock
+	faceplayer
     playmoncry(SPECIES_WISHIWASHI, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry

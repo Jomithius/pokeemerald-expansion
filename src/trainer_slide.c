@@ -143,7 +143,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_JOMITHIUS_4] = // James
         {
-            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("{B_PLAYER_NAME}…\nI respect your strength.\pThat's why we're not going to hold\nanything back.{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("{B_PLAYER_NAME}…\nI don't want to lose again.\pThat's why we're not going to hold\nanything back.{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, TYPHLOSION!\nShow {B_PLAYER_NAME} your new strength!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_ROXANNE_2] = // Steven
@@ -172,7 +172,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MOMO] = // Momo
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Oho. I'm gettin' good vibrations from\nthis place.{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("… This technique also clones my\nMEGA RING.{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_SHADOW_CLONE_MOMO] = // Momo
         {
@@ -184,7 +184,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_JUAN_2] = // Joey
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Yeheheeeaaaaaaaaaaaaaaaah!\nYAH YEEEET!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Yeheheeeaaaaaaaaaaaaaaaah!\nYAH YEET!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_SIDNEY] = // Misa
         {
@@ -230,7 +230,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_JIMMY] = // Jimmy
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION!\nShow them the power of a CEO!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION!\nShow them what it means to be CEO!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is it, {B_PLAYER_NAME}!\nI'll show you the power of the void!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRUNO] = // Bruno
@@ -263,11 +263,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_STEVEN] = // Steven
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("All right!\nMy POKéMON are ROCK HARD!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("All right!\nMy POKéMON are ROCK. HARD.{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WALLY_VR_2] = // Wally
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GARDEVOIR!\nGo!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GALLADE!\nGo!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRENDAN_AZURE_MOUNTAIN] = // Up5
         {

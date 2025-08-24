@@ -306,6 +306,7 @@ PlayersHouse_2F_Text_ItsAGameCube:
 
 script PlayersHouse_2F_EventScript_ChooseDifficulty{
     setflag(FLAG_SYS_DIFFICULTY_SET)
+	clearflag(FLAG_SYS_NO_BAG_USE) // shouldn't ever be set anywhere, but just in case
     msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}Please select your difficulty.", MSGBOX_DEFAULT)
     dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "NORMAL", "HARD")
     goto_if_eq(VAR_RESULT, 0, PlayersHouse_2F_EventScript_SetToNormalDifficulty)

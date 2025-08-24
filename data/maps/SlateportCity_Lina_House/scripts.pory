@@ -8,7 +8,7 @@ script Lina_House_EventScript_Pokeball{
     EEVEE.\p
     Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_EEVEE, 15, ITEM_ABILITY_CAPSULE)
+        givemon(SPECIES_EEVEE, 18, ITEM_ABILITY_CAPSULE)
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_EEVEE)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)

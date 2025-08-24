@@ -269,6 +269,12 @@ script EverGrandeCity_EventScript_James{
     waitmovement(5)
     delay(30)
     playbgm(MUS_THE_DAY_WILL_COME, FALSE)
+    msgbox("JAMES: …\n
+        It feels like I was somehow always\l
+        destined to lose to you, {PLAYER}.", MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(5, Common_Movement_WalkInPlaceDown)
+    waitmovement(5)
     msgbox(EverGrandeCity_Text_James3, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(5, Common_Movement_WalkDown)
@@ -324,10 +330,7 @@ text EvergrandeCity_JamesDefeat{
 }
 
 text EverGrandeCity_Text_James3{
-    "JAMES: …\n
-    It feels like I was somehow always\l
-    destined to lose to you, {PLAYER}.\p
-    Even so, I'm glad my mom had me\n
+    "Even so, I'm glad my mom had me\n
     go on this journey.\p
     I won't challenge the ELITE FOUR yet.\n
     But I know you're going to."}
