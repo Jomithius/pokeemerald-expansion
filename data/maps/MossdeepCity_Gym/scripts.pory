@@ -529,7 +529,7 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "invincible POKéMON power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "ARIA: Greetings, challenger.\n"
+	.string "ARIA: Greetings, {PLAYER}.\n"
     .string "I'm the KNIGHT of this land, ARIA.\l"
     .string "And this is…\p"
 	.string "…\n"
@@ -550,10 +550,11 @@ MossdeepCity_Gym_Text_TateAndLizaIntro:
     .string "can battle already?$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
-	.string "ARIA: Ah… I-Impossible…\p"
+	.string "ARIA: Ah… I-Impossible…\n"
 	.string "MOMO: …\p"
-	.string "ARIA: Your… P-Power was too much for me…\n"
-	.string "MOMO: Can you stop talking? Here.$"
+	.string "ARIA: Your… P-Power was too much for me…\p"
+	.string "MOMO: Can you stop talking?\n"
+	.string "……… Here, {PLAYER}.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "{PLAYER} received the MIND BADGE\n"
@@ -562,7 +563,7 @@ MossdeepCity_Gym_Text_ReceivedMindBadge:
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "ARIA: You have to tell them what\n"
 	.string "the badge does.\p"
-	.string "MOMO: … No. Take this too.$"
+	.string "MOMO: … Use your brain. Take this too.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "ARIA: W-Wow! That TM04 contains\n"

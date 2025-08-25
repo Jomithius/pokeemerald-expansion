@@ -231,7 +231,7 @@ static const union AnimCmd sAnim_FaceEast_AsymNPC[] =
 
 static const union AnimCmd sAnim_FaceEast_AsymNPC_NoWalk[] =
 {
-    ANIMCMD_FRAME(4, 16),
+    ANIMCMD_FRAME(3, 16),
     ANIMCMD_JUMP(0),
 };
 

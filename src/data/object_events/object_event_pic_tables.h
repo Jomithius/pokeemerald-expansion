@@ -668,6 +668,9 @@ static const struct SpriteFrameImage sPicTable_Glacia[] = {
     overworld_frame(gObjectEventPic_Glacia, 2, 4, 1),
     overworld_frame(gObjectEventPic_Glacia, 2, 4, 2),
     overworld_frame(gObjectEventPic_Glacia, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Glacia, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Glacia, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Glacia, 2, 4, 3),
 };
 
 static const struct SpriteFrameImage sPicTable_Drake[] = {
@@ -724,9 +727,6 @@ static const struct SpriteFrameImage sPicTable_Flannery[] = {
 
 static const struct SpriteFrameImage sPicTable_Norman[] = {
     overworld_ascending_frames(gObjectEventPic_Norman, 4, 4),
-    overworld_frame(gObjectEventPic_Norman, 4, 4, 6),
-    overworld_frame(gObjectEventPic_Norman, 4, 4, 7),
-    overworld_frame(gObjectEventPic_Norman, 4, 4, 8),
 };
 
 static const struct SpriteFrameImage sPicTable_Winona[] = {
@@ -739,6 +739,9 @@ static const struct SpriteFrameImage sPicTable_Winona[] = {
     overworld_frame(gObjectEventPic_Winona, 2, 4, 1),
     overworld_frame(gObjectEventPic_Winona, 2, 4, 2),
     overworld_frame(gObjectEventPic_Winona, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Winona, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Winona, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Winona, 2, 4, 3),
 };
 
 static const struct SpriteFrameImage sPicTable_Liza[] = {
@@ -1138,7 +1141,18 @@ static const struct SpriteFrameImage sPicTable_Scott[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Juan[] = {
-    overworld_ascending_frames(gObjectEventPic_Juan, 2, 4),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Juan, 2, 4, 3),
 };
 
 static const struct SpriteFrameImage sPicTable_MysteryEventDeliveryman[] = {

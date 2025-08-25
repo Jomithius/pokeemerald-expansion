@@ -193,7 +193,7 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
 }
 
 text LilycoveCity_DepartmentStore_5F_Text_Misa1{
-    "MISA: Oh, {PLAYER}!\p
+    "Oh, {PLAYER}!\p
 	It's nice to see you again!\n
     I had to stop by the DEPT. STORE\l
     before I went back to work.\l
@@ -205,7 +205,7 @@ text LilycoveCity_DepartmentStore_5F_Text_Misa1{
 }
 
 text LilycoveCity_DepartmentStore_5F_Text_Misa2{
-    "MISA: I ran into JAMES earlier.\n
+    "I ran into JAMES earlier.\n
     He seems really motivated since\l
     meeting you.\p
     I also his noticed his… behavior\n

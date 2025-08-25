@@ -12,13 +12,13 @@ script RustboroCity_Misa_House3F_TV{
 script RustboroCity_Misa_House3F_Emo{
     lock
     if(flag(FLAG_TEMP_5) == TRUE){
-        msgbox("JAMES: AUDIO?!\n
+        msgbox("AUDIO?!\n
         WHERE'S THE AUDIO?",MSGBOX_SIGN)
     }
     else{
         applymovement(1, MisaHouse3F_FacePlayer)
         waitmovement(1)
-        msgbox("JAMES: {PLAYER}…\n
+        msgbox("{PLAYER}…\n
             We meet again.\p
             Did you challenge the GYM LEADER yet?\n
             I already did.\p
@@ -103,7 +103,7 @@ script RustboroCity_Misa_House3F_James{
     applymovement(3, MisaHouse3F_FacePlayer)
     waitmovement(3)
     if(flag(FLAG_IS_CHAMPION)){
-        msgbox("JAMES: {PLAYER}!\p
+        msgbox("{PLAYER}!\p
             I heard the news from my mom.\n
             Congratulations!\p
             … It's going to be a while until\n
@@ -113,9 +113,14 @@ script RustboroCity_Misa_House3F_James{
             I'm going to go meet him soon.", MSGBOX_AUTOCLOSE)
     }
     else{
-        msgbox("JAMES: {PLAYER}.\p
+        msgbox("{PLAYER}?\n
+            What are you doing here?\p
+            I'm glad you came to check on me,\n
+            but I'm fine.\p
             I lost again, but I'm not gonna give up.\n
-            We're gonna get even stronger.", MSGBOX_AUTOCLOSE)
+            We're gonna get even stronger.\p
+            So don't worry about me.\n
+            Go take on the ELITE FOUR.", MSGBOX_AUTOCLOSE)
         }
     waitmessage
     applymovement(3, MisaHouse3F_FaceUp)

@@ -27,7 +27,7 @@ text VerdanturfTown_House_Text_Xion{
     Oh, {PLAYER}!\n
     It's nice to meet you!\p
     I'm XION.\p
-    XION: That's funny! MISA was telling\n
+    That's funny! MISA was telling\n
     me about you before she left.\p
     She's so happy her son finally\n
     made a friend.\p
@@ -40,7 +40,7 @@ text VerdanturfTown_House_Text_Xion{
 }
 
 text VerdanturfTown_House_Text_Xion3{
-    "XION: MISA also said you're\n
+    "MISA also said you're\n
     a promising TRAINER!\l
     I'm sure we'll meet again."
 }

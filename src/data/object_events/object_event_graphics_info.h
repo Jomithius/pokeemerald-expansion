@@ -2843,7 +2843,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glacia = {
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
-    .anims = sAnimTable_AsymNPC_NoWalk,
+    .anims = sAnimTable_AsymNPC,
     .images = sPicTable_Glacia,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -2976,7 +2976,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Winona = {
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
-    .anims = sAnimTable_AsymNPC_NoWalk,
+    .anims = sAnimTable_AsymNPC,
     .images = sPicTable_Winona,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -4686,7 +4686,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juan = {
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
-    .anims = sAnimTable_AsymNPC_NoWalk,
+    .anims = sAnimTable_AsymNPC,
     .images = sPicTable_Juan,
     .affineAnims = gDummySpriteAffineAnimTable,
 };

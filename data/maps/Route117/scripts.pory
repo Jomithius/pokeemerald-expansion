@@ -314,7 +314,7 @@ script Route117_MisaFriendlyBattle {
 }
 
 text Route117_MisaHello{
-    "MISA: Oh! {PLAYER}!\n
+    "Oh! {PLAYER}!\n
     It's so good to see you again!\p
     I stopped by a friend's house in\n
     VERDANTURF on my way back to\l
@@ -329,7 +329,7 @@ text Route117_MisaHello{
 }
 
 text Route117_Text_MisaFlowers{
-    "MISA: I still have a bit of vacation\n
+    "I still have a bit of vacation\n
     time, so I'm taking a scenic route back.\p
     I just love the flowers here!"
 }
@@ -339,7 +339,7 @@ text Route117_MisaAnotherTime{
     Maybe another time, then!"}
 
 text Route117_MisaAboutTheBattle{
-    "MISA: So?\n
+    "So?\n
     Did you change your mind?"}
 
 text Route117_MisaDefeat{
@@ -354,9 +354,10 @@ text Route117_MisaPostBattle{
 }
 
 text Route117_Text_MisaLeftovers{
-    "MISA: Have you been eating properly?\n
-    I have some food from the meal\l
-    I had in VERDANTURF."
+    "Have you been eating properly?\n
+    I have some food from the meal I had\l
+    in VERDANTURF.\p
+	You can have it!"
 }
 
 script Route117_EventScript_SaveBikerMusic {
