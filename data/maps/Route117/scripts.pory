@@ -373,7 +373,7 @@ script Route117_EventScript_Araquanid{
     playmoncry(SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_ARAQUANID_TOTEM, 17, ITEM_MYSTIC_WATER)
+    setwildbattle(SPECIES_ARAQUANID_TOTEM, 21)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){

@@ -319,7 +319,7 @@ SlateportCity_OceanicMuseum_2F_Text_MeddlingKid:
 SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 	.string "I came to see what was taking so\n"
 	.string "long to snatch some parts, and you\l"
-	.string "simps are held up by a mere child?$"
+	.string "idiots are held up by a mere child?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "We are TEAM AQUA,\n"

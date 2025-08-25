@@ -1276,7 +1276,7 @@
 #define FLAG_MIMIKYU_TOTEM                                          0x4C6 // Mt Pyre Summit
 #define FLAG_VIKAVOLT_TOTEM                                         0x4C7 // Route 120
 #define FLAG_KOMMO_O_TOTEM                                          0x4C8 // Victory Road
-#define FLAG_ARAQUANID_TOTEM                                        0x4C9 // Route 107
+#define FLAG_ARAQUANID_TOTEM                                        0x4C9 // unused
 #define FLAG_BALDESIA_MINI_GAME_START                               0x4CA // To start Minigame in Baldesia
 #define FLAG_RECEIVED_FANTASIA                                      0x4CB // From Dave in Mt Pyre Summit
 #define FLAG_UNUSED_0x4CC                                           0x4CC // Unused

@@ -632,7 +632,7 @@ Route117_EventScript_Araquanid::
 # 375 "data/maps/Route117/scripts.pory"
 	waitmoncry
 # 376 "data/maps/Route117/scripts.pory"
-	setwildbattle SPECIES_ARAQUANID_TOTEM, 17, ITEM_MYSTIC_WATER
+	setwildbattle SPECIES_ARAQUANID_TOTEM, 21
 # 377 "data/maps/Route117/scripts.pory"
 	dowildbattle
 # 378 "data/maps/Route117/scripts.pory"

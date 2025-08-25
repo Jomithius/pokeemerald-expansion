@@ -2066,6 +2066,90 @@ MauvilleCity_Movement_PolicemanLeaves:
 	walk_down
 	step_end
 
+MauvilleCity_EventScript_BikerLeave::
+# 1036 "data/maps/MauvilleCity/scripts.pory"
+	lockall
+# 1037 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 1038 "data/maps/MauvilleCity/scripts.pory"
+	applymovement 48, Common_Movement_ExclamationMark
+# 1039 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 1040 "data/maps/MauvilleCity/scripts.pory"
+	waitse
+# 1041 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_EventScript_BikerLeave_Text_0, MSGBOX_AUTOCLOSE
+# 1043 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 1044 "data/maps/MauvilleCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 1045 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 1046 "data/maps/MauvilleCity/scripts.pory"
+	releaseall
+	end
+
+
+MauvilleCity_EventScript_BikerLeft::
+# 1051 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 1052 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_EventScript_BikerLeft_Text_0, MSGBOX_AUTOCLOSE
+# 1054 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 1055 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 1056 "data/maps/MauvilleCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
+# 1057 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 1058 "data/maps/MauvilleCity/scripts.pory"
+	waitse
+# 1059 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 1060 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_EventScript_BikerLeave_Text_0, MSGBOX_AUTOCLOSE
+# 1062 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 1063 "data/maps/MauvilleCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 1064 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 1065 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_EventScript_BikerRight::
+# 1070 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 1071 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_EventScript_BikerRight_Text_0, MSGBOX_AUTOCLOSE
+# 1076 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 1077 "data/maps/MauvilleCity/scripts.pory"
+	playse SE_PIN
+# 1078 "data/maps/MauvilleCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
+# 1079 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 1080 "data/maps/MauvilleCity/scripts.pory"
+	waitse
+# 1081 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 1082 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_EventScript_BikerLeave_Text_0, MSGBOX_AUTOCLOSE
+# 1084 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 1085 "data/maps/MauvilleCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 1086 "data/maps/MauvilleCity/scripts.pory"
+	waitmovement 0
+# 1087 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
 MauvilleCity_Trigger_Bikers1_Text_0:
 # 710 "data/maps/MauvilleCity/scripts.pory"
 	.string "LOOK OUT!$"
@@ -2085,6 +2169,18 @@ MauvileCity_EventScript_ICantLeaveLikeThis_Text_0:
 MauvilleCity_EventScript_PolicemanGivesUturn_Text_0:
 # 1001 "data/maps/MauvilleCity/scripts.pory"
 	.string "Wait!$"
+
+MauvilleCity_EventScript_BikerLeave_Text_0:
+# 1041 "data/maps/MauvilleCity/scripts.pory"
+	.string "Hey, don't you see us talking?\n Get out of here!$"
+
+MauvilleCity_EventScript_BikerLeft_Text_0:
+# 1052 "data/maps/MauvilleCity/scripts.pory"
+	.string "The boss is going to be here\n soon, right?$"
+
+MauvilleCity_EventScript_BikerRight_Text_0:
+# 1071 "data/maps/MauvilleCity/scripts.pory"
+	.string "Yeah…\p I think that pig's still\n on our trail.\p Hopefully we distracted him\n for long enough.$"
 
 MauvilleCity_Text_DacaGone::
 # 695 "data/maps/MauvilleCity/scripts.pory"

@@ -393,8 +393,8 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 15
+Arrokuda
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MUSEUM_2 ===
@@ -407,11 +407,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Zubat
-Level: 14
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 14
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
@@ -687,11 +687,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Shroomish
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Roselia
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROSE_1 ===
@@ -704,15 +704,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Bellsprout
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Sunflora
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Paras
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FELIX ===
@@ -3394,11 +3394,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb-Hisui
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Toxel
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATASHI ===
@@ -3731,7 +3731,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Hippopotas
-Level: 18
+Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHESTIRD === 
@@ -3953,12 +3953,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Abra
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hidden Power
 
 Mareep
-Level: 15
+Level: 19
 
 === TRAINER_PRESTON ===
 Name: PRESTON
@@ -6074,11 +6074,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Pidove @ Oran Berry
-Level: 16
+Level: 19
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Glameow @ Oran Berry
-Level: 16
+Level: 19
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIGUEL_1 ===
@@ -6091,7 +6091,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Skitty @ Oran Berry
-Level: 15
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COLTON ===
@@ -6213,7 +6213,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 
 Mareanie @ Oran Berry
-Level: 17
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VANESSA ===
@@ -6257,11 +6257,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Plusle @ Oran Berry
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Minun @ Oran Berry
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ISABEL_2 ===
@@ -6423,7 +6423,7 @@ Double Battle: No
 AI: Basic Trainer 
 
 Meditite
-Level: 18
+Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - High Jump Kick
 - Meditate
@@ -6431,7 +6431,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Detect
 
 Carnivine
-Level: 18
+Level: 21
 
 === TRAINER_SHELBY_1 ===
 Name: SHELBY
@@ -6866,11 +6866,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Timburr
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Gothita
-Level: 13
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLACE ===
@@ -9333,11 +9333,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Venonat
-Level: 17
+Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tangela
-Level: 17
+Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DIANA_2 ===
@@ -10238,12 +10238,15 @@ Level: 45
 - Flash Cannon
 - Charge Beam
 
-Gardevoir @ Leftovers
-Level: 48
-- Dazzling Gleam
-- Calm Mind
-- Psychic
-- Future Sight
+Gallade  
+Ability: Sharpness  
+Level: 45  
+EVs: 252 Atk / 8 SpD / 248 Spe  
+Jolly Nature  
+- Psycho Cut  
+- Sacred Sword  
+- Bulk Up  
+- Leaf Blade
 
 === TRAINER_NICHOLAS_SHOAL_CAVE ===
 Name: NICHOLAS
@@ -10297,7 +10300,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Treecko
+Treecko (M)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10310,17 +10313,17 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer 
 
-Lairon
-Level: 18
-
-Swellow
+Lairon (M) @ Hard Stone
 Level: 20
 
-Nuzleaf
-Level: 18
+Swellow (F) @ Silk Scarf
+Level: 21
 
-Grovyle
+Nuzleaf (M) @ Sitrus Berry
 Level: 20
+
+Grovyle (M) @ Miracle Seed
+Level: 21
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -10331,19 +10334,19 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer 
 
-Swellow
+Swellow (F) @ Sharp Beak
 Level: 32
 
-Tropius
+Tropius (M) @ Sitrus Berry
 Level: 29
 
-Nuzleaf
+Nuzleaf (M) @ Eviolite
 Level: 32
 
-Lairon
+Lairon (M) @ Hard Stone
 Level: 31
 
-Sceptile
+Sceptile (M) @ Miracle Seed
 Level: 33
 
 === TRAINER_DAQUAVIUS ===
@@ -10722,7 +10725,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Torchic
+Torchic (M)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10735,20 +10738,21 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer 
 
-Beautifly
-Level: 19
-
-Munchlax
-Level: 18
-
-Eevee
-Level: 18
-
-Wartortle
-Level: 18
-
-Combusken
+Beautifly (F) @ Silver Powder
 Level: 20
+
+Munchlax (M) @ Leftovers
+Level: 21
+
+Eevee (F) @ Silk Scarf
+Ability: Adaptability
+Level: 20
+
+Wartortle (M)
+Level: 21
+
+Combusken (M) @ Sitrus Berry
+Level: 22
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
@@ -10759,20 +10763,20 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer 
 
-Wartortle
+Wartortle (M) @ Mystic Water
 Level: 30
 
-Beautifly
+Beautifly (F) @ Silver Powder
 Level: 32
 
-Eevee
+Eevee (F) @ Eviolite
 Ability: Adaptability
 Level: 32
 
-Munchlax
+Munchlax (M) @ Leftovers
 Level: 32
 
-Blaziken
+Blaziken (M) @ Charcoal
 Level: 36
 
 === TRAINER_ISAAC_1 ===
@@ -10785,27 +10789,27 @@ Double Battle: No
 AI: Check Bad Move
 
 Whismur
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zigzagoon
-Level: 11
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Aron
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Poochyena
-Level: 11
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Taillow
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Makuhita
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAVIS ===
@@ -10988,27 +10992,27 @@ Double Battle: No
 AI: Check Bad Move
 
 Rookidee
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Foongus
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Buizel
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Morelull
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Chansey
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Goldeen
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HALLE ===
@@ -11975,16 +11979,16 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer 
 
-Taillow
+Taillow (F)
 Level: 16
 
-Seedot
+Seedot (M)
 Level: 16
 
-Aron
+Aron (M)
 Level: 16
 
-Grovyle
+Grovyle (M)
 Level: 16
 
 === TRAINER_FREDWARD ===
@@ -12257,15 +12261,15 @@ Double Battle: No
 AI: Basic Trainer 
 
 Sobble
-Level: 15
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Amaura
-Level: 15
+Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sizzlipede
-Level: 15
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HALEY_2 ===
@@ -13359,13 +13363,13 @@ Double Battle: No
 AI: Basic Trainer 
 
 Swablu (F) @ Oran Berry
-Level:16
+Level: 17
 
 Magnemite
 Level: 16
 
 Kirlia (F) @ Sitrus Berry
-Level: 16
+Level: 18
 
 
 === TRAINER_WALLY_VR_2 ===
@@ -13409,13 +13413,15 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Tri Attack
 - Screech
 
-Gardevoir
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Team
-- Calm Mind
-- Psychic
-- Future Sight
+Gallade  
+Ability: Sharpness  
+Level: 48  
+EVs: 252 Atk / 8 SpD / 248 Spe  
+Jolly Nature  
+- Psycho Cut  
+- Sacred Sword  
+- Bulk Up  
+- Leaf Blade
 
 === TRAINER_WALLY_VR_3 ===
 Name: WALLY
@@ -14516,11 +14522,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Minun @ Oran Berry
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Plusle @ Oran Berry
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSEPH ===
@@ -14533,11 +14539,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Timburr
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Shinx
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALYSSA ===
@@ -14579,7 +14585,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb
-Level: 15
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RHETT ===
@@ -14592,7 +14598,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Aipom
-Level: 15
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TYRON ===
@@ -14631,7 +14637,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Deerling
-Level: 18
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HAYDEN ===
@@ -14644,7 +14650,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Magby
-Level: 18
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SOPHIE ===
@@ -14768,15 +14774,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Sentret
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Aron
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Yamper
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
@@ -15726,16 +15732,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer 
 
-Beautifly
+Beautifly (F)
 Level: 16
 
-Munchlax
+Munchlax (M)
 Level: 16
 
-Wartortle
+Wartortle (M)
 Level: 16
 
-Combusken
+Combusken (M)
 Level: 16
 
 === TRAINER_ROXANNE_2 ===
@@ -18681,7 +18687,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer 
 
-Aggron @ Muscle Band  
+Aggron (M) @ Muscle Band  
 Ability: Rock Head   
 EVs: 248 HP / 252 Atk / 8 SpD  
 Adamant Nature  
@@ -18719,7 +18725,7 @@ Adamant Nature
 - Trailblaze  
 - Stone Edge  
 
-Sceptile @ Sceptilite  
+Sceptile (M) @ Sceptilite  
 Ability: Overgrow  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -19947,8 +19953,8 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Carvanha
-Level: 15
+Arrokuda
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MUSEUM_2 ===
@@ -19962,11 +19968,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Zubat
-Level: 14
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 14
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
@@ -20251,11 +20257,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Shroomish
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Roselia
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROSE_1 ===
@@ -20269,15 +20275,15 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Bellsprout
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Sunflora
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Paras
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FELIX ===
@@ -20575,11 +20581,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Magnemite
-Level: 17
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Whismur
-Level: 17
+Loudred
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_GABBY_AND_TY_2 ===
@@ -23108,11 +23114,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Voltorb-Hisui
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Toxel
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATASHI ===
@@ -23467,7 +23473,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Hippopotas
-Level: 18
+Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHESTIRD === 
@@ -23703,12 +23709,12 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Abra
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hidden Power
 
 Mareep
-Level: 15
+Level: 17
 
 === TRAINER_PRESTON ===
 Name: PRESTON
@@ -24910,7 +24916,8 @@ IVs: 0 Atk
 Scrafty 
 Ability: Intimidate  
 Level: 24  
-Naughty Nature  
+Naughty Nature
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe  
 - Fake Out  
 - Lash Out  
 - Bulk Up  
@@ -25769,11 +25776,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Pidove @ Oran Berry
-Level: 16
+Level: 19
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Glameow @ Oran Berry
-Level: 16
+Level: 19
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIGUEL_1 ===
@@ -25787,7 +25794,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Skitty @ Oran Berry
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COLTON ===
@@ -25915,7 +25922,7 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy 
 
 Mareanie @ Oran Berry
-Level: 17
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VANESSA ===
@@ -26138,7 +26145,7 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Meditite
-Level: 18
+Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - High Jump Kick
 - Meditate
@@ -26146,7 +26153,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Detect
 
 Carnivine
-Level: 18
+Level: 21
 
 === TRAINER_SHELBY_1 ===
 Name: SHELBY
@@ -26597,11 +26604,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Timburr
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Gothita
-Level: 13
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLACE ===
@@ -29202,11 +29209,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Venonat
-Level: 17
+Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tangela
-Level: 17
+Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DIANA_2 ===
@@ -29308,11 +29315,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Klink
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Dedenne
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AMY_AND_LIV_2 ===
@@ -30140,12 +30147,14 @@ Level: 45
 - Flash Cannon
 - Charge Beam
 
-Gardevoir @ Leftovers
-Level: 48
-- Dazzling Gleam
-- Calm Mind
-- Psychic
-- Future Sight
+Gallade  
+Ability: Sharpness  
+Level: 45  
+Jolly Nature  
+- Psycho Cut  
+- Sacred Sword  
+- Bulk Up  
+- Leaf Blade
 
 === TRAINER_NICHOLAS_SHOAL_CAVE ===
 Name: NICHOLAS
@@ -30203,7 +30212,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 Difficulty: Easy
 
-Treecko
+Treecko (M)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -30217,17 +30226,17 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Lairon
-Level: 18
-
-Swellow
+Lairon (M)
 Level: 20
 
-Nuzleaf
-Level: 18
+Swellow (F)
+Level: 21
 
-Grovyle
+Nuzleaf (M)
 Level: 20
+
+Grovyle (M)
+Level: 21
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -30239,19 +30248,19 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint 
 Difficulty: Easy
 
-Swellow
+Swellow (F)
 Level: 32
 
-Tropius
+Tropius (M)
 Level: 29
 
-Nuzleaf
+Nuzleaf (M)
 Level: 32
 
-Lairon
+Lairon (M)
 Level: 31
 
-Sceptile
+Sceptile (M)
 Level: 36
 
 === TRAINER_DAQUAVIUS ===
@@ -30616,7 +30625,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 Difficulty: Easy
 
-Torchic
+Torchic (M)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -30630,20 +30639,20 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Beautifly
-Level: 19
-
-Munchlax
-Level: 18
-
-Eevee
-Level: 18
-
-Wartortle
-Level: 17
-
-Combusken
+Beautifly (F)
 Level: 20
+
+Munchlax (M)
+Level: 21
+
+Eevee (F)
+Level: 20
+
+Wartortle (M)
+Level: 20
+
+Combusken (M)
+Level: 22
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
@@ -30655,19 +30664,19 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Wartortle
+Wartortle (M)
 Level: 30
 
-Beautifly
+Beautifly (F)
 Level: 32
 
-Eevee
+Eevee (F)
 Level: 32
 
-Munchlax
+Munchlax (M)
 Level: 32
 
-Combusken
+Combusken (M)
 Level: 33
 
 === TRAINER_ISAAC_1 ===
@@ -30681,27 +30690,27 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Whismur
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zigzagoon
-Level: 11
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Aron
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Poochyena
-Level: 11
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Taillow
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Makuhita
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAVIS ===
@@ -30891,27 +30900,27 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Rookidee
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Foongus
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Buizel
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Morelull
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Chansey
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Goldeen
-Level: 11
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HALLE ===
@@ -31901,16 +31910,16 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Taillow
+Taillow (F)
 Level: 16
 
-Seedot
+Seedot (M)
 Level: 16
 
-Aron
+Aron (M)
 Level: 16
 
-Grovyle
+Grovyle (M)
 Level: 16
 
 === TRAINER_FREDWARD ===
@@ -32197,15 +32206,15 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Sobble
-Level: 15
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Amaura
-Level: 15
+Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sizzlipede
-Level: 15
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HALEY_2 ===
@@ -33329,13 +33338,13 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Swablu (F) @ Oran Berry
-Level:16
+Level:17
 
 Magnemite
 Level: 16
 
 Kirlia (F) @ Sitrus Berry
-Level: 16
+Level: 18
 
 
 === TRAINER_WALLY_VR_2 ===
@@ -33380,13 +33389,14 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Tri Attack
 - Screech
 
-Gardevoir
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Team
-- Calm Mind
-- Psychic
-- Future Sight
+Gallade  
+Ability: Sharpness  
+Level: 48  
+Jolly Nature  
+- Psycho Cut  
+- Sacred Sword  
+- Bulk Up  
+- Leaf Blade
 
 === TRAINER_WALLY_VR_3 ===
 Name: WALLY
@@ -33430,13 +33440,14 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Tri Attack
 - Screech
 
-Gardevoir
-Level: 51
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Team
-- Calm Mind
-- Psychic
-- Future Sight
+Gallade  
+Ability: Sharpness  
+Level: 51  
+Jolly Nature  
+- Psycho Cut  
+- Sacred Sword  
+- Bulk Up  
+- Leaf Blade
 
 === TRAINER_WALLY_VR_4 ===
 Name: WALLY
@@ -34517,11 +34528,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Timburr
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Shinx
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALYSSA ===
@@ -34563,7 +34574,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Voltorb
-Level: 15
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RHETT ===
@@ -34577,7 +34588,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Aipom
-Level: 15
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TYRON ===
@@ -34619,7 +34630,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Deerling
-Level: 18
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HAYDEN ===
@@ -34633,7 +34644,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Magby
-Level: 18
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SOPHIE ===
@@ -34765,15 +34776,15 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Sentret
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Aron
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Yamper
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
@@ -35769,17 +35780,17 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Beautifly
+Beautifly (F)
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Munchlax
+Munchlax (M)
 Level: 16
 
-Wartortle
+Wartortle (M)
 Level:16
 
-Combusken
+Combusken (M)
 Level: 16
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -38681,7 +38692,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Aggron @ Muscle Band  
+Aggron (M) @ Muscle Band  
 Ability: Rock Head    
 Adamant Nature  
 - Stealth Rock  
@@ -38715,7 +38726,7 @@ Adamant Nature
 - Trailblaze  
 - Stone Edge  
 
-Sceptile @ Sceptilite  
+Sceptile (M) @ Sceptilite  
 Ability: Overgrow  
 Adamant Nature  
 - Dragon Dance  
@@ -38723,7 +38734,7 @@ Adamant Nature
 - Dragon Claw  
 - Earthquake  
 
-Torkoal  
+Torkoal @ Rocky Helmet  
 Ability: Shell Armor  
 Tera Type: Ice  
 Modest Nature  
@@ -38761,7 +38772,7 @@ IVs: 0 Atk
 - Dragon Pulse  
 
 Glaceon (F) @ Choice Specs  
-Ability: Snow Cloak  
+Ability: Ice Body 
 Tera Type: Ice  
 Modest Nature  
 IVs: 0 Atk  
@@ -38779,7 +38790,7 @@ Mild Nature
 - Hyper Voice  
 - U-turn  
 
-Dachsbun  
+Dachsbun @ Rocky Helmet
 Ability: Well-Baked Body  
 Tera Type: Fairy  
 Adamant Nature  

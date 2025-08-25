@@ -2,14 +2,13 @@ mapscripts VerdanturfTown_House_MapScripts{}
 
 script VerdanturfTown_House_Xion{
     lock
-    applymovement(1, Common_Movement_FacePlayer)
-    waitmovement(1)
+    faceplayer
     if(flag(FLAG_RECEIVED_CHOICE_SCARF_XION) == TRUE){
         msgbox(VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE)
         waitmessage
     }
     else{
-        msgbox(VerdanturfTown_House_Text_Xion, MSGBOX_NPC)
+        msgbox(VerdanturfTown_House_Text_Xion, MSGBOX_DEFAULT)
         waitmessage
         giveitem(ITEM_CHOICE_SCARF)
         waitmessage

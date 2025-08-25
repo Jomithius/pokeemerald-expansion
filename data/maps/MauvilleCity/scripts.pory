@@ -1031,3 +1031,59 @@ movement MauvilleCity_Movement_PolicemanLeaves{
 	walk_right * 6
 	walk_down * 4
 }
+
+script MauvilleCity_EventScript_BikerLeave{ // for route 112, i was just lazy
+	lockall
+	playse(SE_PIN)
+    applymovement(48, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+	msgbox("Hey, don't you see us talking?\n
+		Get out of here!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+script MauvilleCity_EventScript_BikerLeft{ // for route 112, i was just lazy
+	lock
+	msgbox("The boss is going to be here\n
+		soon, right?", MSGBOX_AUTOCLOSE)
+	waitmessage
+	playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+	faceplayer
+	msgbox("Hey, don't you see us talking?\n
+		Get out of here!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+	release
+	end
+}
+
+script MauvilleCity_EventScript_BikerRight{ // for route 112, i was just lazy
+	lock
+	msgbox("Yeah…\p
+		I think that pig's still\n
+		on our trail.\p
+		Hopefully we distracted him\n
+		for long enough.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	playse(SE_PIN)
+    applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+	faceplayer
+	msgbox("Hey, don't you see us talking?\n
+		Get out of here!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+	release
+	end
+}
