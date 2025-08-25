@@ -36,8 +36,8 @@ VerdanturfTown_House_EventScript_GiveChoiceScarf::
 
 VerdanturfTown_House_Text_Xion::
 # 23 "data/maps/VerdanturfTown_House/scripts.pory"
-	.string "Oh, hello.\n Who are you?\p … … … …\p Oh, {PLAYER}!\n It's nice to meet you!\p I'm XION.\p XION: That's funny! MISA was telling\n me about you before she left.\p She's so happy her son finally\n made a friend.\p So?\n What are you up to now?\p … … … …\p Oh, MAUVILLE's GYM?\n The LEADER there's pretty strong.\p Here, maybe this'll help you.$"
+	.string "Oh, hello.\n Who are you?\p … … … …\p Oh, {PLAYER}!\n It's nice to meet you!\p I'm XION.\p That's funny! MISA was telling\n me about you before she left.\p She's so happy her son finally\n made a friend.\p So?\n What are you up to now?\p … … … …\p Oh, MAUVILLE's GYM?\n The LEADER there's pretty strong.\p Here, maybe this'll help you.$"
 
 VerdanturfTown_House_Text_Xion3::
 # 42 "data/maps/VerdanturfTown_House/scripts.pory"
-	.string "XION: MISA also said you're\n a promising TRAINER!\l I'm sure we'll meet again.$"
+	.string "MISA also said you're\n a promising TRAINER!\l I'm sure we'll meet again.$"

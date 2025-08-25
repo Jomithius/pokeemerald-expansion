@@ -1061,7 +1061,7 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 # 531 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_TateAndLizaIntro:
 # 532 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "ARIA: Greetings, challenger.\n"
+	.string "ARIA: Greetings, {PLAYER}.\n"
 # 533 "data/maps/MossdeepCity_Gym/scripts.pory"
     .string "I'm the KNIGHT of this land, ARIA.\l"
 # 534 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -1103,170 +1103,172 @@ MossdeepCity_Gym_Text_TateAndLizaIntro:
 # 552 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
 # 553 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "ARIA: Ah… I-Impossible…\p"
+	.string "ARIA: Ah… I-Impossible…\n"
 # 554 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "MOMO: …\p"
 # 555 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "ARIA: Your… P-Power was too much for me…\n"
+	.string "ARIA: Your… P-Power was too much for me…\p"
 # 556 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "MOMO: Can you stop talking? Here.$"
+	.string "MOMO: Can you stop talking?\n"
 # 557 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "……… Here, {PLAYER}.$"
 # 558 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_ReceivedMindBadge:
+
 # 559 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "{PLAYER} received the MIND BADGE\n"
+MossdeepCity_Gym_Text_ReceivedMindBadge:
 # 560 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "from MOMO and ARIA.$"
+	.string "{PLAYER} received the MIND BADGE\n"
 # 561 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "from MOMO and ARIA.$"
 # 562 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
+
 # 563 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "ARIA: You have to tell them what\n"
+MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 # 564 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "the badge does.\p"
+	.string "ARIA: You have to tell them what\n"
 # 565 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "MOMO: … No. Take this too.$"
+	.string "the badge does.\p"
 # 566 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "MOMO: … Use your brain. Take this too.$"
 # 567 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_ExplainCalmMind:
+
 # 568 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "ARIA: W-Wow! That TM04 contains\n"
+MossdeepCity_Gym_Text_ExplainCalmMind:
 # 569 "data/maps/MossdeepCity_Gym/scripts.pory"
-    .string "CALM MIND! It raises SP. ATK and\l"
+	.string "ARIA: W-Wow! That TM04 contains\n"
 # 570 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "SP. DEF! As expected of the mentor!\p"
+    .string "CALM MIND! It raises SP. ATK and\l"
 # 571 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "MOMO: … Can you stop? Here.$"
+	.string "SP. DEF! As expected of the mentor!\p"
 # 572 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "MOMO: … Can you stop? Here.$"
 # 573 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_RegisteredTateAndLiza:
+
 # 574 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "Registered GYM LEADERS MOMO & ARIA\n"
+MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 # 575 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "in the POKéNAV.$"
+	.string "Registered GYM LEADERS MOMO & ARIA\n"
 # 576 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "in the POKéNAV.$"
 # 577 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_TateAndLizaPostBattle:
+
 # 578 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "ARIA: Looks like the bond between you\n"
+MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 # 579 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "and your POKéMON is far stronger than\l"
+	.string "ARIA: Looks like the bond between you\n"
 # 580 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "the bond I share with my blade.\p"
+	.string "and your POKéMON is far stronger than\l"
 # 581 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "MOMO: …\n"
+	.string "the bond I share with my blade.\p"
 # 582 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "Beefy.$"
+	.string "MOMO: …\n"
 # 583 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "Beefy.$"
 # 584 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
+
 # 585 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "ARIA: Only one POKéMON?\n"
+MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 # 586 "data/maps/MossdeepCity_Gym/scripts.pory"
-    .string "A weak challenge for a KNIGHT such\l"
+	.string "ARIA: Only one POKéMON?\n"
 # 587 "data/maps/MossdeepCity_Gym/scripts.pory"
-    .string "as myself!$"
+    .string "A weak challenge for a KNIGHT such\l"
 # 588 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+    .string "as myself!$"
 # 589 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_GymStatue:
+
 # 590 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "MOSSDEEP CITY POKéMON GYM$"
+MossdeepCity_Gym_Text_GymStatue:
 # 591 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "MOSSDEEP CITY POKéMON GYM$"
 # 592 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_GymStatueCertified:
+
 # 593 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "MOSSDEEP CITY POKéMON GYM\p"
+MossdeepCity_Gym_Text_GymStatueCertified:
 # 594 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "MOMO AND ARIA'S CERTIFIED TRAINERS:\n"
+	.string "MOSSDEEP CITY POKéMON GYM\p"
 # 595 "data/maps/MossdeepCity_Gym/scripts.pory"
-    .string "JAMES\p"
+	.string "MOMO AND ARIA'S CERTIFIED TRAINERS:\n"
 # 596 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "{PLAYER}$"
+    .string "JAMES\p"
 # 597 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "{PLAYER}$"
 # 598 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_TateAndLizaPreRematch:
+
 # 599 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: POKéMON…\n"
+MossdeepCity_Gym_Text_TateAndLizaPreRematch:
 # 600 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: POKéMON…\p"
+	.string "TATE: POKéMON…\n"
 # 601 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: By changing the party's mix…\n"
+	.string "LIZA: POKéMON…\p"
 # 602 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: The battle style changes.\p"
+	.string "TATE: By changing the party's mix…\n"
 # 603 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: But me…\n"
+	.string "LIZA: The battle style changes.\p"
 # 604 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: But me…\p"
+	.string "TATE: But me…\n"
 # 605 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: I'll always be with LIZA!\n"
+	.string "LIZA: But me…\p"
 # 606 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: I'll always be with TATE!\p"
+	.string "TATE: I'll always be with LIZA!\n"
 # 607 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: Our combination…\n"
+	.string "LIZA: I'll always be with TATE!\p"
 # 608 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: We'll show you again and again!$"
+	.string "TATE: Our combination…\n"
 # 609 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "LIZA: We'll show you again and again!$"
 # 610 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
+
 # 611 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: You and your POKéMON…\n"
+MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
 # 612 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: It's as if you were siblings!$"
+	.string "TATE: You and your POKéMON…\n"
 # 613 "data/maps/MossdeepCity_Gym/scripts.pory"
-
+	.string "LIZA: It's as if you were siblings!$"
 # 614 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_TateAndLizaPostRematch:
-# 615 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: You can knock us down,\n"
-# 616 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "but we'll never stay down!\p"
-# 617 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: Because the two of us,\n"
-# 618 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "we always support each other!$"
-# 619 "data/maps/MossdeepCity_Gym/scripts.pory"
 
+# 615 "data/maps/MossdeepCity_Gym/scripts.pory"
+MossdeepCity_Gym_Text_TateAndLizaPostRematch:
+# 616 "data/maps/MossdeepCity_Gym/scripts.pory"
+	.string "TATE: You can knock us down,\n"
+# 617 "data/maps/MossdeepCity_Gym/scripts.pory"
+	.string "but we'll never stay down!\p"
+# 618 "data/maps/MossdeepCity_Gym/scripts.pory"
+	.string "LIZA: Because the two of us,\n"
+# 619 "data/maps/MossdeepCity_Gym/scripts.pory"
+	.string "we always support each other!$"
 # 620 "data/maps/MossdeepCity_Gym/scripts.pory"
-MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
+
 # 621 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: You're back again…\n"
+MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
 # 622 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: You're back again…\p"
+	.string "TATE: You're back again…\n"
 # 623 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: To give us a rematch.\n"
+	.string "LIZA: You're back again…\p"
 # 624 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: To give us a rematch.\p"
+	.string "TATE: To give us a rematch.\n"
 # 625 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: But…\n"
+	.string "LIZA: To give us a rematch.\p"
 # 626 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: For our match…\p"
+	.string "TATE: But…\n"
 # 627 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: You brought just one POKéMON!\n"
+	.string "LIZA: For our match…\p"
 # 628 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: You brought just one POKéMON!\p"
+	.string "TATE: You brought just one POKéMON!\n"
 # 629 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: We need you to bring at least…\n"
+	.string "LIZA: You brought just one POKéMON!\p"
 # 630 "data/maps/MossdeepCity_Gym/scripts.pory"
+	.string "TATE: We need you to bring at least…\n"
+# 631 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "LIZA: Two POKéMON when you come back.$"
 
 MossdeepCity_Gym_EventScript_GiveNastyPlot::
-# 634 "data/maps/MossdeepCity_Gym/scripts.pory"
-	giveitem ITEM_TM_NASTY_PLOT
 # 635 "data/maps/MossdeepCity_Gym/scripts.pory"
+	giveitem ITEM_TM_NASTY_PLOT
+# 636 "data/maps/MossdeepCity_Gym/scripts.pory"
 	msgbox MossdeepCity_Gym_Text_ExplainNastyPlot, MSGBOX_DEFAULT
 	return
 
 
 MossdeepCity_Gym_Text_ExplainNastyPlot::
-# 639 "data/maps/MossdeepCity_Gym/scripts.pory"
+# 640 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "MOMO: … Use your brain.\n … … … … … …$"

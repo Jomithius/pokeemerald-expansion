@@ -163,13 +163,13 @@ RustboroCity_Misa_House3F_James::
 # 116 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	msgbox RustboroCity_Misa_House3F_James_Text_1, MSGBOX_AUTOCLOSE
 RustboroCity_Misa_House3F_James_1:
-# 120 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 125 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	waitmessage
-# 121 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 126 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	applymovement 3, MisaHouse3F_FaceUp
-# 122 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 127 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	waitmovement 3
-# 123 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 128 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	release
 	end
 
@@ -179,15 +179,15 @@ RustboroCity_Misa_House3F_James_2:
 	goto RustboroCity_Misa_House3F_James_1
 
 
-# 127 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 132 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 MisaHouse3F_FacePlayer:
-# 127 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 132 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	face_player
 	step_end
 
-# 129 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 134 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 MisaHouse3F_FaceUp:
-# 129 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 134 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	face_up
 	step_end
 
@@ -197,11 +197,11 @@ RustboroCity_Misa_House3F_TV_Text_0:
 
 RustboroCity_Misa_House3F_Emo_Text_0:
 # 15 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "JAMES: AUDIO?!\n WHERE'S THE AUDIO?$"
+	.string "AUDIO?!\n WHERE'S THE AUDIO?$"
 
 RustboroCity_Misa_House3F_Emo_Text_1:
 # 21 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "JAMES: {PLAYER}…\n We meet again.\p Did you challenge the GYM LEADER yet?\n I already did.\p I'll wait for you to catch up.$"
+	.string "{PLAYER}…\n We meet again.\p Did you challenge the GYM LEADER yet?\n I already did.\p I'll wait for you to catch up.$"
 
 RustboroCity_Misa_House3F_Togepi_Text_0:
 # 38 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
@@ -217,11 +217,11 @@ NicknamePartyTogepi_Text_0:
 
 RustboroCity_Misa_House3F_James_Text_0:
 # 106 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "JAMES: {PLAYER}!\p I heard the news from my mom.\n Congratulations!\p … It's going to be a while until\n I challenge the ELITE FOUR.\p Apparently JIMMY has an important\n job for me.\p I'm going to go meet him soon.$"
+	.string "{PLAYER}!\p I heard the news from my mom.\n Congratulations!\p … It's going to be a while until\n I challenge the ELITE FOUR.\p Apparently JIMMY has an important\n job for me.\p I'm going to go meet him soon.$"
 
 RustboroCity_Misa_House3F_James_Text_1:
 # 116 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "JAMES: {PLAYER}.\p I lost again, but I'm not gonna give up.\n We're gonna get even stronger.$"
+	.string "{PLAYER}?\n What are you doing here?\p I'm glad you came to check on me,\n but I'm fine.\p I lost again, but I'm not gonna give up.\n We're gonna get even stronger.\p So don't worry about me.\n Go take on the ELITE FOUR.$"
 
 MisaHouse_NotChosen::
 # 96 "data/maps/RustboroCity_Misa_House3F/scripts.pory"

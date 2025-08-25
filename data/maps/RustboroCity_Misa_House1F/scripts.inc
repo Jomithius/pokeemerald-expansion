@@ -62,7 +62,7 @@ MisaHouse1F_FacePlayer:
 
 MisaHouse1F_1::
 # 35 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "MISA: {PLAYER}!\n I'm glad you stopped by.\p JAMES is upstairs in his room.\n Thanks again for becoming his friend.\l I hope you two can help each other\l out on your journey.\p Have you eaten yet? We already put away\n the leftovers, but I have some candy.$"
+	.string "{PLAYER}!\n I'm glad you stopped by.\p JAMES is upstairs in his room.\n Thanks again for becoming his friend.\p I hope you two can help each other\n out on your journey.\p Have you eaten yet? We already put away\n the leftovers, but I have some candy.$"
 
 MisaHouse1F_2::
 # 45 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
@@ -70,7 +70,7 @@ MisaHouse1F_2::
 
 MisaHouse1F_3::
 # 50 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "MISA: Did you challenge the GYM yet?\p You're already a wonderful trainer, so\n you should be able to beat them.\p Good luck!$"
+	.string "Did you challenge the GYM yet?\p You're already a wonderful trainer, so\n you should be able to beat them.\p Good luck!$"
 
 MisaHouseCantCarryCandy::
 # 55 "data/maps/RustboroCity_Misa_House1F/scripts.pory"

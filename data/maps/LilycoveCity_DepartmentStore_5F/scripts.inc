@@ -446,11 +446,11 @@ LilycoveCity_DepartmentStore_5F_EventScript_Lina_8:
 
 LilycoveCity_DepartmentStore_5F_Text_Misa1::
 # 195 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "MISA: Oh, {PLAYER}!\p It's nice to see you again!\n I had to stop by the DEPT. STORE\l before I went back to work.\l I just love the POKé DOLLS here!\p Have you eaten?\n I bought some candy earlier, but I\l got too much.\l Here, you can take the rest!$"
+	.string "Oh, {PLAYER}!\p It's nice to see you again!\n I had to stop by the DEPT. STORE\l before I went back to work.\l I just love the POKé DOLLS here!\p Have you eaten?\n I bought some candy earlier, but I\l got too much.\l Here, you can take the rest!$"
 
 LilycoveCity_DepartmentStore_5F_Text_Misa2::
 # 207 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "MISA: I ran into JAMES earlier.\n He seems really motivated since\l meeting you.\p I also his noticed his… behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on this journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
+	.string "I ran into JAMES earlier.\n He seems really motivated since\l meeting you.\p I also his noticed his… behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on this journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
 
 LilycoveCity_DepartmentStore_5F_Text_Misa3::
 # 221 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
