@@ -5168,7 +5168,7 @@ Impish Nature
 - Seed Bomb  
 - Shadow Sneak  
 
-Duosion @ Sticky Barb  
+Duosion @ Toxic Orb  
 Ability: Magic Guard  
 Level: 25  
 EVs: 244 HP / 76 Def / 164 SpD  
@@ -5203,15 +5203,14 @@ Naughty Nature
 Drakloak @ Dragon Fang  
 Ability: Cursed Body  
 Level: 24  
-EVs: 16 HP / 236 Atk / 248 SpA / 4 Spe  
-Mild Nature  
-IVs: 21 SpD / 0 Spe  
+EVs: 236 Atk / 248 SpA / 20 Spe  
+Mild Nature   
 - Will-O-Wisp  
 - Hex  
 - Breaking Swipe  
 - Thief  
 
-Jolteon @ Magnet  
+Jolteon @ Air Balloon  
 Ability: Volt Absorb  
 Level: 25  
 EVs: 8 HP / 252 SpA / 236 Spe  

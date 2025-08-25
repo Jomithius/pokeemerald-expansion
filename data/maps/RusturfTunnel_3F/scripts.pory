@@ -2,8 +2,7 @@ mapscripts RusturfTunnel_3F_MapScripts {}
 
 script RusturfTunnel_3F_EventScript_DefogMan{
     lock
-    applymovement(3, Common_Movement_FacePlayer)
-    waitmovement(3)
+    faceplayer
     if(flag(FLAG_RECEIVED_TM_DEFOG) == TRUE){
         msgbox("Huh?\n
             “Why is it still foggy in here?”\p
@@ -12,7 +11,7 @@ script RusturfTunnel_3F_EventScript_DefogMan{
     }
     else{
         msgbox("Dude, if you gotta like, air a room\n
-        out quick, you can use this.", MSGBOX_AUTOCLOSE)
+        out quick, you can use this.", MSGBOX_DEFAULT)
         waitmessage
         giveitem(ITEM_TM_DEFOG)
         waitmessage

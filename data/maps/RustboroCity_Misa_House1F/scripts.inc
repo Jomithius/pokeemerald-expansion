@@ -54,24 +54,24 @@ Misa_House1F_EventScript_Text2::
 	end
 
 
-# 58 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-MisaHouse1F_FacePlayer:
 # 59 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+MisaHouse1F_FacePlayer:
+# 60 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	face_player
 	step_end
 
 MisaHouse1F_1::
 # 35 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "{PLAYER}! I'm glad you stopped by.\n JAMES is upstairs in his room.\l Thanks again for becoming his friend.\l I hope you two can help each other\l out on your journey.\p Have you eaten yet? We already put away\n the leftovers, but I have some candy.$"
+	.string "MISA: {PLAYER}!\n I'm glad you stopped by.\p JAMES is upstairs in his room.\n Thanks again for becoming his friend.\l I hope you two can help each other\l out on your journey.\p Have you eaten yet? We already put away\n the leftovers, but I have some candy.$"
 
 MisaHouse1F_2::
-# 44 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+# 45 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	.string "I'll be leaving soon too.\n I took time off because I was worried\l about JAMES, but now I'll be heading\l back to work in EVER GRANDE CITY.$"
 
 MisaHouse1F_3::
-# 49 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "Did you challenge the GYM yet?\n You're already a wonderful trainer, so\l you should be able to beat them.\l Good luck!$"
+# 50 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+	.string "MISA: Did you challenge the GYM yet?\p You're already a wonderful trainer, so\n you should be able to beat them.\p Good luck!$"
 
 MisaHouseCantCarryCandy::
-# 54 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+# 55 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	.string "Oh, it looks like you already have some.$"

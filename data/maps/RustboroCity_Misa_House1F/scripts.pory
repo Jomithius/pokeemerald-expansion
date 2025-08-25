@@ -32,8 +32,9 @@ script Misa_House1F_EventScript_Text2{
     end
 }
 
-text MisaHouse1F_1{"{PLAYER}! I'm glad you stopped by.\n
-JAMES is upstairs in his room.\l
+text MisaHouse1F_1{"MISA: {PLAYER}!\n
+I'm glad you stopped by.\p
+JAMES is upstairs in his room.\n
 Thanks again for becoming his friend.\l
 I hope you two can help each other\l
 out on your journey.\p
@@ -46,9 +47,9 @@ I took time off because I was worried\l
 about JAMES, but now I'll be heading\l
 back to work in EVER GRANDE CITY."}
 
-text MisaHouse1F_3{"Did you challenge the GYM yet?\n
-You're already a wonderful trainer, so\l
-you should be able to beat them.\l
+text MisaHouse1F_3{"MISA: Did you challenge the GYM yet?\p
+You're already a wonderful trainer, so\n
+you should be able to beat them.\p
 Good luck!"}
 
 text MisaHouseCantCarryCandy {

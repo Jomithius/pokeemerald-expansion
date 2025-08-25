@@ -1,6 +1,7 @@
 raw`.set LOCALID_DAYCARE_MAN, 3
-.set LOCALID_DAYCARE_MON_0, 25
-.set LOCALID_DAYCARE_MON_1, 26
+.set LOCALID_DAYCARE_MON_0, 22
+.set LOCALID_DAYCARE_MON_1, 23
+.set LOCALID_MISA, 25
 
 Route117_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route117_OnTransition
@@ -244,8 +245,7 @@ Route117_Text_DayCareSign:
 `
 script Route117_EventScript_MisaBattle{
     lock
-    applymovement(27, Common_Movement_FacePlayer)
-    waitmovement(27)
+    faceplayer
     if(var(VAR_MISA_STATE) == 3){
         playbgm(MUS_MISA_THEME, FALSE)
         msgbox(Route117_MisaHello, MSGBOX_YESNO)
@@ -257,8 +257,8 @@ script Route117_EventScript_MisaBattle{
             waitmessage
             setvar(VAR_MISA_STATE, 4)
             fadedefaultbgm
-            applymovement(27, Common_Movement_FaceUp)
-            waitmovement(27)
+            applymovement(LOCALID_MISA, Common_Movement_FaceUp)
+            waitmovement(LOCALID_MISA)
             release
             end
         }
@@ -271,8 +271,8 @@ script Route117_EventScript_MisaBattle{
         else{
             msgbox(Route117_MisaAnotherTime, MSGBOX_AUTOCLOSE)
             waitmessage
-            applymovement(27, Common_Movement_FaceUp)
-            waitmovement(27)
+            applymovement(LOCALID_MISA, Common_Movement_FaceUp)
+            waitmovement(LOCALID_MISA)
             release
             end
         }
@@ -290,8 +290,8 @@ script Route117_EventScript_MisaBattle{
             waitmessage
             setflag(FLAG_ROUTE117_RECEIVED_LEFTOVERS)
         }
-		applymovement(27, Common_Movement_FaceUp)
-		waitmovement(27)
+		applymovement(LOCALID_MISA, Common_Movement_FaceUp)
+		waitmovement(LOCALID_MISA)
 		delay(30)
 		release
 		end 
@@ -303,12 +303,11 @@ script Route117_MisaFriendlyBattle {
     msgbox("Great!\n
     Go easy on me!", MSGBOX_AUTOCLOSE)
     trainerbattle_no_intro(TRAINER_MISA, Route117_MisaDefeat)
-    lock
     msgbox(Route117_MisaPostBattle, MSGBOX_AUTOCLOSE)
     waitmessage
     delay(10)
-    applymovement(27, Common_Movement_FaceUp)
-    waitmovement(27)
+    applymovement(LOCALID_MISA, Common_Movement_FaceUp)
+    waitmovement(LOCALID_MISA)
     setvar(VAR_MISA_STATE, 5)
     release
     end
@@ -330,8 +329,8 @@ text Route117_MisaHello{
 }
 
 text Route117_Text_MisaFlowers{
-    "I still have a bit of vacation time,\n
-    so I'm taking the scenic route back.\p
+    "MISA: I still have a bit of vacation\n
+    time, so I'm taking a scenic route back.\p
     I just love the flowers here!"
 }
 
@@ -340,7 +339,7 @@ text Route117_MisaAnotherTime{
     Maybe another time, then!"}
 
 text Route117_MisaAboutTheBattle{
-    "So?\n
+    "MISA: So?\n
     Did you change your mind?"}
 
 text Route117_MisaDefeat{
@@ -355,7 +354,7 @@ text Route117_MisaPostBattle{
 }
 
 text Route117_Text_MisaLeftovers{
-    "Have you been eating properly?\n
+    "MISA: Have you been eating properly?\n
     I have some food from the meal\l
     I had in VERDANTURF."
 }
@@ -366,10 +365,10 @@ script Route117_EventScript_SaveBikerMusic {
 }
 
 script Route117_EventScript_Araquanid{
-    lockall
+    lock
     setflag(FLAG_ARAQUANID_TOTEM)
-    applymovement(28, Common_Movement_FacePlayer)
-    waitmovement(28)
+    applymovement(VAR_LAST_TALKED, Common_Movement_FacePlayer)
+    waitmovement(VAR_LAST_TALKED)
     playmoncry(SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -389,13 +388,13 @@ script Route117_EventScript_Araquanid{
 		call(AraquanidFailed)
 	}
     waitmessage
-	releaseall
+	release
     end
 }
  
 script AraquanidWon_Caught {
     fadescreen(FADE_TO_BLACK)
-    removeobject(28)
+    removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
 	return
 }
@@ -404,7 +403,7 @@ script AraquanidFailed {
 	playmoncry(SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER)
 	delay(20)
 	fadescreen(FADE_TO_BLACK)
-	removeobject(28)
+	removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
     msgbox("The ARAQUANID disappeared…")
 	return

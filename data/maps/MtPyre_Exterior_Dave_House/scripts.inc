@@ -108,11 +108,11 @@ MtPyre_Exterior_Dave_House_EventScript_GiveFantasia::
 
 MtPyre_Exterior_Dave_House_EventScript_Dave_Text_0:
 # 43 "data/maps/MtPyre_Exterior_Dave_House/scripts.pory"
-	.string "If we have to battle in the future, do\n me a favor and lose, okay?$"
+	.string "DAVE: If we have to battle in the\n future, do me a favor and lose, okay?$"
 
 MtPyre_Exterior_Dave_House_Text_Fantasia::
 # 69 "data/maps/MtPyre_Exterior_Dave_House/scripts.pory"
-	.string "Oh, yes, hello.\n Who are you?\l … … … …\p Oh. Nice to meet you, {PLAYER}.\n I'm DAVE, a member of the ELITE FOUR.\p So?\n Why'd you come all the way out here?\p … … … …\p Oh, I see.\p Well, I can tell you're a good TRAINER.\n Your {STR_VAR_1} looks strong.\p Usually I sell these, but I'll give you\n one for free.\p There's a guy that recently bought out\n almost all my stock, so I'm feeling\l generous today.$"
+	.string "Oh, yes, hello.\n Who are you?\l … … … …\p Oh. Nice to meet you, {PLAYER}.\n I'm DAVE, a member of the ELITE FOUR.\p DAVE: So?\n Why'd you come all the way out here?\p … … … …\p Oh, I see.\p Well, I can tell you're a good TRAINER.\n Your {STR_VAR_1} looks strong.\p Usually I sell these, but I'll give you\n one for free.\p There's a guy that recently bought out\n almost all my stock, so I'm feeling\l generous today.$"
 
 MtPyre_Exterior_Dave_House_Text_WarnFantasia::
 # 88 "data/maps/MtPyre_Exterior_Dave_House/scripts.pory"

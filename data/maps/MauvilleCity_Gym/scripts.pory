@@ -409,7 +409,7 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 `
 
 script MauvilleCity_Gym_EventScript_GiveVoltSwitch{
-    msgbox("One more thing! Here!", MSGBOX_AUTOCLOSE)
+    msgbox("One more thing! Here!", MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_TM_VOLT_SWITCH)
     waitmessage
@@ -417,7 +417,7 @@ script MauvilleCity_Gym_EventScript_GiveVoltSwitch{
     waitmessage
 	setvar(VAR_SPEEDWAGON_STATE, 1)
 	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
-	setvar(VAR_MISA_STATE, 5)
+	setvar(VAR_MISA_STATE, 5) // if the player skips misa battle on route 117
     return
 }
 
@@ -430,7 +430,7 @@ text MauvilleCity_Gym_Text_ExplainVoltSwitch{
 script MauvilleCity_Gym_EventScript_Jolteon{
     lock
     playmoncry(SPECIES_JOLTEON, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     release
     end
 }

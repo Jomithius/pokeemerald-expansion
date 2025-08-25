@@ -12,16 +12,17 @@ script RustboroCity_Misa_House3F_TV{
 script RustboroCity_Misa_House3F_Emo{
     lock
     if(flag(FLAG_TEMP_5) == TRUE){
-        msgbox("AUDIO?!\n
+        msgbox("JAMES: AUDIO?!\n
         WHERE'S THE AUDIO?",MSGBOX_SIGN)
     }
     else{
         applymovement(1, MisaHouse3F_FacePlayer)
         waitmovement(1)
-        msgbox("{PLAYER}… We meet again.\n
-        Did you challenge the GYM LEADER yet?\l
-        I already did.\l
-        I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
+        msgbox("JAMES: {PLAYER}…\n
+            We meet again.\p
+            Did you challenge the GYM LEADER yet?\n
+            I already did.\p
+            I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
         waitmessage
         applymovement(1, MisaHouse3F_FaceUp)
         waitmovement(1)
@@ -101,9 +102,21 @@ script RustboroCity_Misa_House3F_James{
     lock
     applymovement(3, MisaHouse3F_FacePlayer)
     waitmovement(3)
-    msgbox("JAMES: {PLAYER}!\p
-    I lost again, but I'm not gonna give up.\n
-    We're gonna get even stronger.", MSGBOX_AUTOCLOSE)
+    if(flag(FLAG_IS_CHAMPION)){
+        msgbox("JAMES: {PLAYER}!\p
+            I heard the news from my mom.\n
+            Congratulations!\p
+            … It's going to be a while until\n
+            I challenge the ELITE FOUR.\p
+            Apparently JIMMY has an important\n
+            job for me.\p
+            I'm going to go meet him soon.", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("JAMES: {PLAYER}.\p
+            I lost again, but I'm not gonna give up.\n
+            We're gonna get even stronger.", MSGBOX_AUTOCLOSE)
+        }
     waitmessage
     applymovement(3, MisaHouse3F_FaceUp)
     waitmovement(3)

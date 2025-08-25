@@ -1,23 +1,21 @@
 mapscripts VerdanturfTown_House_MapScripts{}
 
-script VerdanturfTown_House_Xion{
+script VerdanturfTown_House_EventScript_Xion{
+    goto_if_unset(FLAG_RECEIVED_CHOICE_SCARF_XION, VerdanturfTown_House_EventScript_GiveChoiceScarf)
+    msgbox(VerdanturfTown_House_Text_Xion3, MSGBOX_NPC)
+    end
+}
+
+script VerdanturfTown_House_EventScript_GiveChoiceScarf{
     lock
     faceplayer
-    if(flag(FLAG_RECEIVED_CHOICE_SCARF_XION) == TRUE){
-        msgbox(VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE)
-        waitmessage
-    }
-    else{
-        msgbox(VerdanturfTown_House_Text_Xion, MSGBOX_DEFAULT)
-        waitmessage
-        giveitem(ITEM_CHOICE_SCARF)
-        waitmessage
-        msgbox(VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE)
-        waitmessage
-        setflag(FLAG_RECEIVED_CHOICE_SCARF_XION)
-    }
-    applymovement(1, Common_Movement_FaceOriginalDirection)
-    waitmovement(1)
+    msgbox(VerdanturfTown_House_Text_Xion, MSGBOX_DEFAULT)
+    waitmessage
+    giveitem(ITEM_CHOICE_SCARF)
+    waitmessage
+    msgbox(VerdanturfTown_House_Text_Xion3, MSGBOX_AUTOCLOSE)
+    waitmessage
+    setflag(FLAG_RECEIVED_CHOICE_SCARF_XION)
     release
     end
 }
@@ -42,7 +40,7 @@ text VerdanturfTown_House_Text_Xion{
 }
 
 text VerdanturfTown_House_Text_Xion3{
-    "MISA also said you're a\n
-    promising TRAINER!\l
+    "XION: MISA also said you're\n
+    a promising TRAINER!\l
     I'm sure we'll meet again."
 }

@@ -815,7 +815,7 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 
 MauvilleCity_Gym_EventScript_GiveVoltSwitch::
 # 412 "data/maps/MauvilleCity_Gym/scripts.pory"
-	msgbox MauvilleCity_Gym_EventScript_GiveVoltSwitch_Text_0, MSGBOX_AUTOCLOSE
+	msgbox MauvilleCity_Gym_EventScript_GiveVoltSwitch_Text_0, MSGBOX_DEFAULT
 # 413 "data/maps/MauvilleCity_Gym/scripts.pory"
 	waitmessage
 # 414 "data/maps/MauvilleCity_Gym/scripts.pory"
@@ -841,7 +841,7 @@ MauvilleCity_Gym_EventScript_Jolteon::
 # 432 "data/maps/MauvilleCity_Gym/scripts.pory"
 	playmoncry SPECIES_JOLTEON, CRY_MODE_ENCOUNTER
 # 433 "data/maps/MauvilleCity_Gym/scripts.pory"
-	delay 20
+	waitmoncry
 # 434 "data/maps/MauvilleCity_Gym/scripts.pory"
 	release
 	end
