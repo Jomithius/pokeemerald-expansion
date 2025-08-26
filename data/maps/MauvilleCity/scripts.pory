@@ -967,7 +967,7 @@ script MauvileCity_EventScript_SeeWhatsGoingOn{
 
 script MauvileCity_EventScript_ICantLeaveLikeThis{
 	lockall
-	msgbox("I can't just abandon that Policeman!", MSGBOX_AUTOCLOSE)
+	msgbox("I can't just abandon that policeman!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, MauvileCity_Movement_WalkDown)
 	waitmovement(0)
@@ -977,7 +977,7 @@ script MauvileCity_EventScript_ICantLeaveLikeThis{
 
 script MauvileCity_EventScript_ICantLeaveLikeThisEast{
 	lockall
-	msgbox("I can't just abandon that Policeman!", MSGBOX_AUTOCLOSE)
+	msgbox("I can't just abandon that policeman!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
 	waitmovement(0)

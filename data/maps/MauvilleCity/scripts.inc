@@ -2164,7 +2164,7 @@ MauvileCity_EventScript_SeeWhatsGoingOn_Text_0:
 
 MauvileCity_EventScript_ICantLeaveLikeThis_Text_0:
 # 970 "data/maps/MauvilleCity/scripts.pory"
-	.string "I can't just abandon that Policeman!$"
+	.string "I can't just abandon that policeman!$"
 
 MauvilleCity_EventScript_PolicemanGivesUturn_Text_0:
 # 1001 "data/maps/MauvilleCity/scripts.pory"

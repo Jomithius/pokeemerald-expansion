@@ -1192,8 +1192,8 @@ text Route110_Biker_Intro2{
 }
 
 text Route110_Biker_Intro3{
-	"The CYCLING ROAD belongs\n
-	to us now!"
+	"The CYCLING ROAD belongs to the\n
+	MISSISSWUAGWA RIDERS now!"
 }
 
 text Route110_BikerDefeat{
@@ -1205,7 +1205,7 @@ text Route110_BikerDefeat2{
 }
 
 text Route110_BikerDefeat3{
-	"BRRRRUBBB BRRRUB…."
+	"BRRRRUBBB BRRRUB…"
 }
 
 movement Route110_Policeman_North{

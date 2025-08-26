@@ -2447,7 +2447,7 @@ Route110_Biker_Intro2::
 
 Route110_Biker_Intro3::
 # 1194 "data/maps/Route110/scripts.pory"
-	.string "The CYCLING ROAD belongs\n to us now!$"
+	.string "The CYCLING ROAD belongs to the\n MISSISSWUAGWA RIDERS now!$"
 
 Route110_BikerDefeat::
 # 1199 "data/maps/Route110/scripts.pory"
@@ -2459,4 +2459,4 @@ Route110_BikerDefeat2::
 
 Route110_BikerDefeat3::
 # 1207 "data/maps/Route110/scripts.pory"
-	.string "BRRRRUBBB BRRRUB….$"
+	.string "BRRRRUBBB BRRRUB…$"

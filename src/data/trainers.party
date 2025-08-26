@@ -5737,7 +5737,7 @@ Mugshot: Yellow
 
 Stunfisk-Galar @ Sitrus Berry  
 Ability: Mimicry  
-Level: 22   
+Level: 25   
 EVs: 252 HP / 156 Atk / 76 Def / 20 SpD / 4 Spe  
 Impish Nature  
 - Stealth Rock  
@@ -5757,7 +5757,7 @@ Jolly Nature
 
 Slowpoke-Galar (M) @ Quick Claw  
 Ability: Regenerator  
-Level: 25   
+Level: 26   
 EVs: 244 HP / 108 Atk / 148 SpA / 4 SpD  
 Brave Nature  
 IVs: 0 Atk  
@@ -5768,7 +5768,7 @@ IVs: 0 Atk
 
 Darumaka-Galar (M) @ Wide Lens  
 Ability: Hustle  
-Level: 23   
+Level: 25  
 EVs: 240 HP / 148 Atk / 108 Def / 12 SpD  
 Adamant Nature  
 - Ice Punch  
@@ -5777,7 +5777,7 @@ Adamant Nature
 
 Meowth-Galar (M) @ Metal Coat  
 Ability: Tough Claws  
-Level: 25  
+Level: 27 
 EVs: 244 HP / 252 Atk / 4 SpD / 4 Spe  
 Adamant Nature  
 - Payback  
@@ -5787,7 +5787,7 @@ Adamant Nature
 
 Mr. Mime-Galar (M)
 Ability: Screen Cleaner  
-Level: 25   
+Level: 27   
 EVs: 20 HP / 244 SpA / 244 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -10073,7 +10073,7 @@ Music: Biker
 Double Battle: Yes
 AI: Basic Trainer 
 
-Shedinja  
+Shedinja
 Ability: Wonder Guard  
 Level: 24  
 - Leech Life  
@@ -10085,7 +10085,7 @@ Ability: Power Spot
 Level: 24  
 EVs: 244 HP / 252 SpD  
 Careful Nature  
-- Stomping Tantrum  
+- Bulldoze 
 - Brutal Swing  
 - Rock Slide  
 
@@ -10143,10 +10143,9 @@ Jolly Nature
 - Throat Chop  
 - Quick Attack  
 
-Garbodor  
-Ability: Stench  
+Koffing  
+Ability: Neutralizing Gas 
 Level: 24   
-EVs: 236 HP / 100 Atk / 120 Def / 48 SpA  
 Naughty Nature  
 - Clear Smog  
 - Cross Poison  
@@ -25430,7 +25429,7 @@ Mugshot: Yellow
 
 Stunfisk-Galar @ Sitrus Berry  
 Ability: Mimicry  
-Level: 22    
+Level: 24    
 Impish Nature  
 - Stealth Rock  
 - Metal Claw  
@@ -25458,7 +25457,7 @@ IVs: 0 Atk
 
 Darumaka-Galar (M) @ Wide Lens  
 Ability: Hustle  
-Level: 23    
+Level: 24    
 Adamant Nature  
 - Ice Punch  
 - Brick Break  
@@ -25475,7 +25474,7 @@ Adamant Nature
 
 Mr. Mime-Galar (M)
 Ability: Screen Cleaner  
-Level: 25    
+Level: 26    
 Modest Nature  
 IVs: 0 Atk  
 - Icy Wind  
@@ -29997,9 +29996,10 @@ Stonjourner
 Ability: Power Spot  
 Level: 24  
 Careful Nature  
-- Stomping Tantrum  
+- Bulldoze 
 - Brutal Swing  
-- Rock Slide  
+- Rock Slide
+- Sandstorm  
 
 === TRAINER_DAN ===
 Name: DAN
@@ -30055,14 +30055,14 @@ Jolly Nature
 - Throat Chop  
 - Quick Attack  
 
-Garbodor  
-Ability: Stench  
-Level: 24    
+Koffing  
+Ability: Neutralizing Gas 
+Level: 24   
 Naughty Nature  
 - Clear Smog  
 - Cross Poison  
 - Rock Polish  
-- Self-Destruct  
+- Self-Destruct   
 
 === TRAINER_STEPHEN ===
 Name: STEPHEN
