@@ -2279,7 +2279,7 @@ Route104_EventScript_SeeWhatLunaWants::
 # 1144 "data/maps/Route104/scripts.pory"
 	lockall
 # 1145 "data/maps/Route104/scripts.pory"
-	msgbox Route104_EventScript_SeeWhatLunaWants_Text_0
+	msgbox Route104_EventScript_SeeWhatLunaWants_Text_0, MSGBOX_AUTOCLOSE
 # 1146 "data/maps/Route104/scripts.pory"
 	waitmessage
 # 1147 "data/maps/Route104/scripts.pory"
@@ -2291,10 +2291,30 @@ Route104_EventScript_SeeWhatLunaWants::
 	end
 
 
+Route104_EventScript_FavorToLuna::
+# 1154 "data/maps/Route104/scripts.pory"
+	lockall
+# 1155 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_FavorToLuna_Text_0, MSGBOX_AUTOCLOSE
+# 1156 "data/maps/Route104/scripts.pory"
+	waitmessage
+# 1157 "data/maps/Route104/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 1158 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1159 "data/maps/Route104/scripts.pory"
+	releaseall
+	end
+
+
 Route104_EventScript_SeeWhatLunaWants_Text_0:
 # 1145 "data/maps/Route104/scripts.pory"
 	.string "I should probably see what LUNA wants\nfirst.$"
 
+Route104_EventScript_FavorToLuna_Text_0:
+# 1155 "data/maps/Route104/scripts.pory"
+	.string "I should probably take care of that\nfavor for LUNA first.$"
+
 Route104_LunaDexNavText::
-# 1153 "data/maps/Route104/scripts.pory"
+# 1163 "data/maps/Route104/scripts.pory"
 	.string "… … … … … …\n … … … … … Beep!\p {PLAYER}? It's LUNA.\n Are you still in the area?\p I need a favor. Meet me in front of\n my house in PETALBURG.\p It's the one north of the POKéMON\n CENTER.\p Huh? How did I get your number\n already?\l Don't worry about it.\p … … … … … …\n … … … … … Click!$"

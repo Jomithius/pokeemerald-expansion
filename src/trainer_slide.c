@@ -226,11 +226,12 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_WALLACE] = // Jimmy
         {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION! Show them what it means\n to be CHAMPION!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You've done well so far…\nBut are you ready for this?{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_JIMMY] = // Jimmy
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION!\nShow them what it means to be CEO!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("This is what it means to be a CEO!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is it, {B_PLAYER_NAME}!\nI'll show you the power of the void!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRUNO] = // Bruno
@@ -266,6 +267,18 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("All right!\nMy POKéMON are ROCK. HARD.{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WALLY_VR_2] = // Wally
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GALLADE!\nGo!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WALLY_VR_3] = // Wally
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GALLADE!\nGo!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WALLY_VR_4] = // Wally
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GALLADE!\nGo!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_WALLY_VR_5] = // Wally
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("That's it, GALLADE!\nGo!{PAUSE_UNTIL_PRESS}"),
         },

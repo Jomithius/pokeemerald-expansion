@@ -12,35 +12,36 @@ Pic: Steven
 Gender: Male
 Music: Male
 
-Metang
+Metagross @ Metal Coat
 Brave Nature
-Level: 42
+Level: 47
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 252 Def / 6 SpA
 - Light Screen
 - Zen Headbutt
 - Reflect
-- Iron Head
+- Meteor Mash
 
-Skarmory
+Skarmory @ Rocky Helmet
 Impish Nature
-Level: 43
+Level: 46
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 6 SpA / 252 SpD
 - Toxic
-- Aerial Ace
+- Air Slash
 - Protect
-- Steel Wing
+- Iron Head
 
-Aggron
+Aggron @ Hard Stone
+Ability: Heavy Metal
 Adamant Nature
-Level: 44
+Level: 47
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 252 SpD / 6 Def
-- Iron Head
+- Heavy Slam
 - Protect
 - Rock Slide
-- Bulldoze
+- Body Press
 
 === PARTNER_MOMO ===
 Name: MOMO
@@ -53,7 +54,7 @@ Greninja-Bond (M) @ Assault Vest
 Ability: Battle Bond   
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-Level: 100
+Level: 90
 - Water Shuriken 
 - Icy Wind  
 - Dark Pulse  
@@ -62,7 +63,7 @@ Level: 100
 Skeledirge @ Throat Spray 
 Ability: Unaware
 Tera Type: Fairy
-Level: 100   
+Level: 90  
 Shiny: Yes    
 EVs: 248 HP / 8 SpA / 252 SpD  
 Calm Nature  
@@ -75,7 +76,7 @@ IVs: 0 Atk
 Krookodile (M) @ Leftovers  
 Ability: Intimidate
 Tera Type: Ground 
-Level: 100  
+Level: 90  
 Shiny: Yes    
 - Breaking Swipe  
 - Rock Slide  

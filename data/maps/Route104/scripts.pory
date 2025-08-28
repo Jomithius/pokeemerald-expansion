@@ -1142,7 +1142,17 @@ script Route104_EventScript_LunaDexNav {
 
 script Route104_EventScript_SeeWhatLunaWants{
     lockall
-    msgbox("I should probably see what LUNA wants\nfirst.")
+    msgbox("I should probably see what LUNA wants\nfirst.", MSGBOX_AUTOCLOSE)
+    waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+	waitmovement(0)
+    releaseall
+    end
+}
+
+script Route104_EventScript_FavorToLuna{
+    lockall
+    msgbox("I should probably take care of that\nfavor for LUNA first.", MSGBOX_AUTOCLOSE)
     waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
 	waitmovement(0)

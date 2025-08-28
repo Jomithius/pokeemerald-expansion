@@ -109,14 +109,13 @@ VictoryRoad_B2F_Text_DiannePostBattle:
 `
 
 script VictoryRoad_B2F_EventScript_Kommo_o{
-    lockall
+    lock
     setflag(FLAG_KOMMO_O_TOTEM)
-    applymovement(8, Common_Movement_FacePlayer)
-    waitmovement(8)
+    faceplayer
     playmoncry(SPECIES_KOMMO_O, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_KOMMO_O_TOTEM, 49, ITEM_DRAGON_SCALE)
+    setwildbattle(SPECIES_KOMMO_O_TOTEM, 50, ITEM_DRAGON_SCALE)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
@@ -132,24 +131,24 @@ script VictoryRoad_B2F_EventScript_Kommo_o{
 		call(KommoOFailed)
 	}
     waitmessage
-	releaseall
+	release
     end
 }
  
 script KommoOWon_Caught {
     fadescreen(FADE_TO_BLACK)
-    removeobject(8)
+    removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
 	return
 }
  
 script KommoOFailed {
 	playmoncry(SPECIES_KOMMO_O, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	fadescreen(FADE_TO_BLACK)
-	removeobject(8)
+	removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The KOMMO-O disappeared…")
+    msgbox("The KOMMO-O disappeared…", MSGBOX_AUTOCLOSE)
 	return
 }
 

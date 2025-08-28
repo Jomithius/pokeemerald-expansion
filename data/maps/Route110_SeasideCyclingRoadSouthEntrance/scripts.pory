@@ -52,6 +52,9 @@ script Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad{
         waitmovement(1)
         setvar(VAR_SPEEDWAGON_STATE, 7)
 		clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
+		setvar(VAR_CYCLING_CHALLENGE_STATE, 0)
+	    clearflag(FLAG_SYS_CYCLING_ROAD)
+	    setvar(VAR_TEMP_1, 0)
     }
     else{
 	    setvar(VAR_CYCLING_CHALLENGE_STATE, 0)

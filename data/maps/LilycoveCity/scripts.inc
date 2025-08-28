@@ -1947,7 +1947,7 @@ LilycoveCity_EventScript_RatCaveShake::
 # 1021 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 8
 # 1022 "data/maps/LilycoveCity/scripts.pory"
-	release
+	releaseall
 	end
 
 

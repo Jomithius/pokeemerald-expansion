@@ -110,7 +110,7 @@ script FallarborTown_EventScript_RatCaveShake{
     delay(60)
     fadedefaultbgm
     setvar(VAR_RAT_CAVE_STATE, 5)
-    release
+    releaseall
     end
 }
 

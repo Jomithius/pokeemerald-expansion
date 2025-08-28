@@ -1949,7 +1949,7 @@ Route110_EventScript_Biker2::
 # 998 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_EDWIN_1, Route110_Biker_Intro, Route110_BikerDefeat
 # 999 "data/maps/Route110/scripts.pory"
-	msgbox Route110_BikerDefeat2, MSGBOX_AUTOCLOSE
+	msgbox Route110_Biker_Intro3, MSGBOX_AUTOCLOSE
 	end
 
 
@@ -1957,7 +1957,7 @@ Route110_EventScript_Biker3::
 # 1004 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_DARWIN, Route110_Biker_Intro3, Route110_BikerDefeat2
 # 1005 "data/maps/Route110/scripts.pory"
-	msgbox Route110_BikerDefeat, MSGBOX_AUTOCLOSE
+	msgbox Route110_Biker_Intro3, MSGBOX_AUTOCLOSE
 	end
 
 
@@ -1965,7 +1965,7 @@ Route110_EventScript_Biker4::
 # 1010 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_DAN, Route110_Biker_Intro2, Route110_BikerDefeat3
 # 1011 "data/maps/Route110/scripts.pory"
-	msgbox Route110_BikerDefeat, MSGBOX_AUTOCLOSE
+	msgbox Route110_Biker_Intro3, MSGBOX_AUTOCLOSE
 	end
 
 
@@ -1973,7 +1973,7 @@ Route110_EventScript_Biker5::
 # 1016 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_ROB, Route110_Biker_Intro3, Route110_BikerDefeat2
 # 1017 "data/maps/Route110/scripts.pory"
-	msgbox Route110_BikerDefeat3, MSGBOX_AUTOCLOSE
+	msgbox Route110_Biker_Intro3, MSGBOX_AUTOCLOSE
 	end
 
 
@@ -1981,7 +1981,7 @@ Route110_EventScript_Biker6::
 # 1022 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_ALYSSA, Route110_Biker_Intro2, Route110_BikerDefeat
 # 1023 "data/maps/Route110/scripts.pory"
-	msgbox Route110_BikerDefeat, MSGBOX_AUTOCLOSE
+	msgbox Route110_Biker_Intro3, MSGBOX_AUTOCLOSE
 	end
 
 
@@ -1989,7 +1989,7 @@ Route110_EventScript_Biker7::
 # 1028 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_STEPHEN, Route110_Biker_Intro, Route110_BikerDefeat3
 # 1029 "data/maps/Route110/scripts.pory"
-	msgbox Route110_BikerDefeat2, MSGBOX_AUTOCLOSE
+	msgbox Route110_Biker_Intro3, MSGBOX_AUTOCLOSE
 	end
 
 
@@ -2387,7 +2387,7 @@ Route110_EventScript_SaveBikerMusic::
 
 Route110_EventScript_Biker1_Text_0:
 # 942 "data/maps/Route110/scripts.pory"
-	.string "The CYCLING ROAD belongs\n to us now!$"
+	.string "The CYCLING ROAD belongs to the\n MISSISSWUAGWA RIDERS now!$"
 
 Route110_EventScript_Dale_Text_0:
 # 952 "data/maps/Route110/scripts.pory"

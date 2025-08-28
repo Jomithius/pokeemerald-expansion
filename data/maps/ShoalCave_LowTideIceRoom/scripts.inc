@@ -296,151 +296,153 @@ ShoalCave_LowTideIceRoom_EventScript_AriaNorth::
 # 170 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	setflag FLAG_HIDE_EMO_LILYCOVE
 # 171 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	setflag FLAG_JOMITHIUS_UNAVAILABLE
+# 172 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	release
 	end
 
 
-# 229 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-ShoalCave_LowTideIceRoom_Movement_WalkBackDown:
 # 230 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	lock_facing_direction
+ShoalCave_LowTideIceRoom_Movement_WalkBackDown:
 # 231 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_fast_down
+	lock_facing_direction
 # 232 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_fast_down
+# 233 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 235 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-ShoalCave_LowTideIceRoom_Movement_WalkBackLeft:
 # 236 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	lock_facing_direction
+ShoalCave_LowTideIceRoom_Movement_WalkBackLeft:
 # 237 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_fast_left
-# 238 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	unlock_facing_direction
-	step_end
-
-# 241 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-ShoalCave_LowTideIceRoom_Movement_WalkBackRight:
-# 242 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	lock_facing_direction
-# 243 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_fast_right
-# 244 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 238 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_fast_left
+# 239 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 247 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-ShoalCave_LowTideIceRoom_Movement_AriaLeaveUp:
+# 242 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+ShoalCave_LowTideIceRoom_Movement_WalkBackRight:
+# 243 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	lock_facing_direction
+# 244 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_fast_right
+# 245 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	unlock_facing_direction
+	step_end
+
 # 248 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_left
+ShoalCave_LowTideIceRoom_Movement_AriaLeaveUp:
 # 249 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 249 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 249 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 249 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 250 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_left
 # 250 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 250 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 250 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 250 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 251 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_left
 # 251 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_left
+# 252 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 251 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 252 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 251 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 252 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 251 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 252 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
 	step_end
 
-# 254 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 255 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 ShoalCave_LowTideIceRoom_Movement_AriaLeaveLeft:
-# 255 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 255 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 255 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 255 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 256 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
 # 256 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_left
+	walk_up
 # 256 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_left
+	walk_up
 # 256 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 257 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_left
 # 257 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
+	walk_left
 # 257 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_left
+# 258 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 257 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 258 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 257 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 258 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 258 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
 	step_end
 
-# 260 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 261 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 ShoalCave_LowTideIceRoom_Movement_AriaLeaveRight:
-# 261 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 261 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 262 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
 # 262 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_left
-# 263 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
 # 263 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 264 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_left
 # 264 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 264 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 265 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_left
 # 265 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_left
+# 266 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 265 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 266 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 265 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 266 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 265 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 266 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
 	step_end
 
-# 268 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-ShoalCave_LowTideIceRoom_Movement_WalkBackUp:
 # 269 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+ShoalCave_LowTideIceRoom_Movement_WalkBackUp:
+# 270 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	lock_facing_direction
-# 270 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_fast_up
-# 270 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 271 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_fast_up
 # 271 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_fast_up
+# 272 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 274 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-ShoalCave_LowTideIceRoom_Movement_AriaLeaveNorth:
 # 275 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_left
+ShoalCave_LowTideIceRoom_Movement_AriaLeaveNorth:
 # 276 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 276 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 276 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	walk_up
-# 277 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_left
 # 277 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 277 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 277 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_up
+# 278 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_left
 # 278 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	walk_left
+# 279 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 278 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 279 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 278 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 279 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
-# 278 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 279 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	walk_up
 	step_end
 
@@ -457,33 +459,33 @@ ShoalCave_LowTideIceRoom_EventScript_Aria_Text_1:
 	.string "AH!$"
 
 ShoalCave_LowTideIceRoom_Text_Sylvia::
-# 176 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 177 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	.string "If you're gonna try to get the\n commander's attention, don't sneak\l up on them!\p They scare easily.$"
 
 ShoalCave_LowTideIceRoom_Text_BlakeIntro::
-# 183 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 184 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	.string "For a KNIGHT, offense is the best\n defense!$"
 
 ShoalCave_LowTideIceRoom_Text_BlakeDefeat::
-# 188 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 189 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	.string "H-How did you withstand my\n relentless offense…$"
 
 ShoalCave_LowTideIceRoom_Text_BlakePostBattle::
-# 193 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 194 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	.string "People think our commander is larping,\n but the armor is real.$"
 
 ShoalCave_LowTideIceRoom_Text_NateIntro::
-# 198 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 199 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	.string "The greatest'th offense'th be a great\n defense!\p Dost thoust agree'th?$"
 
 ShoalCave_LowTideIceRoom_Text_NateDefeat::
-# 204 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 205 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	.string "Thoust'th broketh thru'th thine\p defenses'th'snt'nt…$"
 
 ShoalCave_LowTideIceRoom_Text_NatePostBattle::
-# 209 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 210 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	.string "I surmise thoust seeketh to joineth\n the PROTECTORS? If'th so, thou must\l speaketh to thine commander.$"
 
 ShoalCave_LowTideIceRoom_Text_Aria1::
-# 215 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+# 216 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	.string "You scared me!\n  Who are you?\l … … … …\p Oh. A challenger?\n Nice to meet you, {PLAYER}.\p I'm ARIA. LEADER of the MOSSDEEP\n POKéMON GYM and PROTECTOR of the\l SACRED BLADE.\p I can stop my training here.\p Me and my KNIGHTS shall await you\n at the GYM.$"

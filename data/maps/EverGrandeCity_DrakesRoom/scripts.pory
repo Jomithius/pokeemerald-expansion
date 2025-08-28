@@ -202,8 +202,8 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
     callnative(RemoveFollowingPokemon)
     setflag(FLAG_TEMP_E)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-	msgbox("Bitch.\n
-		I'm really glad I get to do this.\p
+	msgbox("Well, you won again. Congrats.\n
+		Here's your prize.\p
 		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	setvar(VAR_RESULT, 3)
@@ -237,10 +237,16 @@ script EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning{
 		Here, I'll help you out then.\n
 		I hope you saved.", MSGBOX_DEFAULT)
 	waitmessage
+	call_if_eq(VAR_LINA_TALKED_TO, 3, EverGrandeCity_EventScript_ResetEugeniaBattle)
 	call(EverGrandeCity_HallOfFame_EventScript_ResetEliteFour)
 	goto(EventScript_FieldWhiteOut)
 	release
 	end
+}
+
+script EverGrandeCity_EventScript_ResetEugeniaBattle{
+	setvar(VAR_LINA_TALKED_TO, 2)
+	return
 }
 
 script EverGrandeCity_DrakesRoom_Shake{

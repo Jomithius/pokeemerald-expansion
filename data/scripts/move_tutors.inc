@@ -286,4 +286,7 @@ MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_DRACO_METEOR
 	setvar VAR_0x8005, MOVE_ROOST
 	setvar VAR_0x8005, MOVE_RECOVER
+	setvar VAR_0x8005, MOVE_GRASS_KNOT
+	setvar VAR_0x8005, MOVE_HYPER_VOICE
+	setvar VAR_0x8005, MOVE_WEATHER_BALL
 	end

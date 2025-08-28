@@ -1019,7 +1019,7 @@ script LilycoveCity_EventScript_RatCaveShake{
     delay(60)
     fadedefaultbgm
     setvar(VAR_RAT_CAVE_STATE, 8)
-    release
+    releaseall
     end
 }
 

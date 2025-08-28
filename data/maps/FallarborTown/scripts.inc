@@ -217,7 +217,7 @@ FallarborTown_EventScript_RatCaveShake::
 # 112 "data/maps/FallarborTown/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 5
 # 113 "data/maps/FallarborTown/scripts.pory"
-	release
+	releaseall
 	end
 
 

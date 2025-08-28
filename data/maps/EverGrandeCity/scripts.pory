@@ -216,11 +216,13 @@ text EverGrandeCity_Text_Nurse2{
 }
 
 script EverGrandeCity_EventTrigger_JamesLeft{
+    lockall
     setvar(VAR_TEMP_1, 1)
     goto(EverGrandeCity_EventScript_James)
 }
 
 script EverGrandeCity_EventTrigger_JamesRight{
+    lockall
     setvar(VAR_TEMP_1, 2)
     goto(EverGrandeCity_EventScript_James)
 }
@@ -282,6 +284,8 @@ script EverGrandeCity_EventScript_James{
     msgbox(EverGrandeCity_Text_James4, MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_MEGA_RING)
+    waitmessage
+    giveitem(ITEM_EXP_CANDY_XL, 30)
     waitmessage
     msgbox(EverGrandeCity_Text_James5, MSGBOX_AUTOCLOSE)
     waitmessage

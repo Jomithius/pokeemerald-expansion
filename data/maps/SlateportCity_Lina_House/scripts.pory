@@ -1,7 +1,7 @@
 mapscripts SlateportCity_Lina_House_MapScripts {}
 
 script Lina_House_EventScript_Pokeball{
-    lockall
+    lock
     showmonpic(SPECIES_EEVEE, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     It contained the POKéMON\n
@@ -34,7 +34,7 @@ script Lina_House_EventScript_Pokeball{
         msgbox(LinaHouse_NotChosen)
     }
     waitmessage
-    releaseall
+    release
     end
 
 }
@@ -46,7 +46,7 @@ script NicknamePartyMon{
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
-    releaseall
+    release
     end
 }
 
@@ -57,7 +57,7 @@ script NicknameBoxMon{
         call(Common_EventScript_NameReceivedBoxMon)
     }
     call(Common_EventScript_TransferredToPC)
-    releaseall
+    release
     end
 }
 
@@ -67,7 +67,7 @@ text LinaHouse_NotChosen{
 }
 
 script Lina_House_EventScript_Bookshelf {
-    lockall
+    lock
     msgbox("A bookshelf. \p
     You grab a random book \n
     and look at the title.")
@@ -77,14 +77,14 @@ script Lina_House_EventScript_Bookshelf {
     waitmessage
     hidemonpic
     msgbox("……… \p
-    You put the book back.")
+    You put the book back.", MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
+    release
     end
 }
 
 script Lina_House_EventScript_TV {
-    lockall
+    lock
     msgbox ("There's something playing on the TV. \p
     It looks like a romance game.")
     waitmessage
@@ -93,8 +93,23 @@ script Lina_House_EventScript_TV {
     waitmessage
     hidemonpic
     msgbox("You decide it's better to not look \n
-    anymore.")
+    anymore.", MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
+    release
+    end
+}
+
+script SlateportCity_Lina_House_EventScript_LinasFursuit{
+    lock
+    msgbox("A very realistic… suit?\n
+        ……………\p
+        There's a letter attached to\n
+        the front:\p
+        “Valued patron, thank you for your\n
+        continued support of our work.\p
+        We hope you enjoy this fur suit as\n
+        thanks for being a top supporter.”", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
     end
 }

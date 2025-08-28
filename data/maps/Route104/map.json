@@ -572,6 +572,33 @@
       "var": "VAR_RAT_CAVE_STATE",
       "var_value": "2",
       "script": "Route104_EventScript_SeeWhatLunaWants"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 51,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "3",
+      "script": "Route104_EventScript_FavorToLuna"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 52,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "3",
+      "script": "Route104_EventScript_FavorToLuna"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 51,
+      "elevation": 0,
+      "var": "VAR_RAT_CAVE_STATE",
+      "var_value": "3",
+      "script": "Route104_EventScript_FavorToLuna"
     }
   ],
   "bg_events": [

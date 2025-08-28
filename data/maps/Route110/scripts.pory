@@ -939,8 +939,8 @@ Route110_Text_KeepAnEyeOutForRival:
 
 script Route110_EventScript_Biker1{
 	lock
-	msgbox("The CYCLING ROAD belongs\n
-	to us now!", MSGBOX_NPC)
+	msgbox("The CYCLING ROAD belongs to the\n
+	MISSISSWUAGWA RIDERS now!", MSGBOX_NPC)
 	waitmessage
 	release
 	end
@@ -996,37 +996,37 @@ text Route110_Text_PolicemanPleaseHelp{
 
 script Route110_EventScript_Biker2{
 	trainerbattle_single(TRAINER_EDWIN_1, Route110_Biker_Intro, Route110_BikerDefeat)
-	msgbox(Route110_BikerDefeat2, MSGBOX_AUTOCLOSE)
+	msgbox(Route110_Biker_Intro3, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker3{
 	trainerbattle_single(TRAINER_DARWIN, Route110_Biker_Intro3, Route110_BikerDefeat2)
-	msgbox(Route110_BikerDefeat, MSGBOX_AUTOCLOSE)
+	msgbox(Route110_Biker_Intro3, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker4{
 	trainerbattle_single(TRAINER_DAN, Route110_Biker_Intro2, Route110_BikerDefeat3)
-	msgbox(Route110_BikerDefeat, MSGBOX_AUTOCLOSE)
+	msgbox(Route110_Biker_Intro3, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker5{
 	trainerbattle_single(TRAINER_ROB, Route110_Biker_Intro3, Route110_BikerDefeat2)
-	msgbox(Route110_BikerDefeat3, MSGBOX_AUTOCLOSE)
+	msgbox(Route110_Biker_Intro3, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker6{
 	trainerbattle_single(TRAINER_ALYSSA, Route110_Biker_Intro2, Route110_BikerDefeat)
-	msgbox(Route110_BikerDefeat, MSGBOX_AUTOCLOSE)
+	msgbox(Route110_Biker_Intro3, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route110_EventScript_Biker7{
 	trainerbattle_single(TRAINER_STEPHEN, Route110_Biker_Intro, Route110_BikerDefeat3)
-	msgbox(Route110_BikerDefeat2, MSGBOX_AUTOCLOSE)
+	msgbox(Route110_Biker_Intro3, MSGBOX_AUTOCLOSE)
 	end
 }
 

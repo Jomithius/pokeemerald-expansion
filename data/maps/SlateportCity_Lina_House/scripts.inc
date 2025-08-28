@@ -4,7 +4,7 @@ SlateportCity_Lina_House_MapScripts::
 
 Lina_House_EventScript_Pokeball::
 # 4 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	lockall
+	lock
 # 5 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	showmonpic SPECIES_EEVEE, 10, 4
 # 6 "data/maps/SlateportCity_Lina_House/scripts.pory"
@@ -20,7 +20,7 @@ Lina_House_EventScript_Pokeball_1:
 # 36 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
 # 37 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	releaseall
+	release
 	end
 
 Lina_House_EventScript_Pokeball_2:
@@ -77,7 +77,7 @@ NicknamePartyMon::
 	goto_if_eq NicknamePartyMon_2
 NicknamePartyMon_1:
 # 49 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	releaseall
+	release
 	end
 
 NicknamePartyMon_2:
@@ -100,7 +100,7 @@ NicknameBoxMon_1:
 # 59 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	call Common_EventScript_TransferredToPC
 # 60 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	releaseall
+	release
 	end
 
 NicknameBoxMon_2:
@@ -111,7 +111,7 @@ NicknameBoxMon_2:
 
 Lina_House_EventScript_Bookshelf::
 # 70 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	lockall
+	lock
 # 71 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox Lina_House_EventScript_Bookshelf_Text_0
 # 74 "data/maps/SlateportCity_Lina_House/scripts.pory"
@@ -125,17 +125,17 @@ Lina_House_EventScript_Bookshelf::
 # 78 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	hidemonpic
 # 79 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_Bookshelf_Text_2
+	msgbox Lina_House_EventScript_Bookshelf_Text_2, MSGBOX_AUTOCLOSE
 # 81 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
 # 82 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	releaseall
+	release
 	end
 
 
 Lina_House_EventScript_TV::
 # 87 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	lockall
+	lock
 # 88 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox Lina_House_EventScript_TV_Text_0
 # 90 "data/maps/SlateportCity_Lina_House/scripts.pory"
@@ -149,11 +149,23 @@ Lina_House_EventScript_TV::
 # 94 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	hidemonpic
 # 95 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_TV_Text_2
+	msgbox Lina_House_EventScript_TV_Text_2, MSGBOX_AUTOCLOSE
 # 97 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
 # 98 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	releaseall
+	release
+	end
+
+
+SlateportCity_Lina_House_EventScript_LinasFursuit::
+# 103 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	lock
+# 104 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	msgbox SlateportCity_Lina_House_EventScript_LinasFursuit_Text_0, MSGBOX_AUTOCLOSE
+# 111 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	waitmessage
+# 112 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	release
 	end
 
 
@@ -192,6 +204,10 @@ Lina_House_EventScript_TV_Text_1:
 Lina_House_EventScript_TV_Text_2:
 # 95 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "You decide it's better to not look \n anymore.$"
+
+SlateportCity_Lina_House_EventScript_LinasFursuit_Text_0:
+# 104 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	.string "A very realistic… suit?\n ……………\l There's a message attached to the front:\p “Valued patron, thank you for your\n continued support of our work.\p We hope you enjoy this fur suit as\n thanks for being a top supporter.”$"
 
 LinaHouse_NotChosen::
 # 64 "data/maps/SlateportCity_Lina_House/scripts.pory"

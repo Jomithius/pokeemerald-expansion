@@ -215,91 +215,89 @@ VictoryRoad_B2F_Text_DiannePostBattle:
 
 VictoryRoad_B2F_EventScript_Kommo_o::
 # 112 "data/maps/VictoryRoad_B2F/scripts.pory"
-	lockall
+	lock
 # 113 "data/maps/VictoryRoad_B2F/scripts.pory"
 	setflag FLAG_KOMMO_O_TOTEM
 # 114 "data/maps/VictoryRoad_B2F/scripts.pory"
-	applymovement 8, Common_Movement_FacePlayer
+	faceplayer
 # 115 "data/maps/VictoryRoad_B2F/scripts.pory"
-	waitmovement 8
-# 116 "data/maps/VictoryRoad_B2F/scripts.pory"
 	playmoncry SPECIES_KOMMO_O, CRY_MODE_ENCOUNTER
-# 117 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 116 "data/maps/VictoryRoad_B2F/scripts.pory"
 	delay 40
-# 118 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 117 "data/maps/VictoryRoad_B2F/scripts.pory"
 	waitmoncry
+# 118 "data/maps/VictoryRoad_B2F/scripts.pory"
+	setwildbattle SPECIES_KOMMO_O_TOTEM, 50, ITEM_DRAGON_SCALE
 # 119 "data/maps/VictoryRoad_B2F/scripts.pory"
-	setwildbattle SPECIES_KOMMO_O_TOTEM, 49, ITEM_DRAGON_SCALE
-# 120 "data/maps/VictoryRoad_B2F/scripts.pory"
 	dowildbattle
-# 121 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 120 "data/maps/VictoryRoad_B2F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 122 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 121 "data/maps/VictoryRoad_B2F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq VictoryRoad_B2F_EventScript_Kommo_o_2
-# 125 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 124 "data/maps/VictoryRoad_B2F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq VictoryRoad_B2F_EventScript_Kommo_o_3
-# 128 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 127 "data/maps/VictoryRoad_B2F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq VictoryRoad_B2F_EventScript_Kommo_o_4
-# 131 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 130 "data/maps/VictoryRoad_B2F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq VictoryRoad_B2F_EventScript_Kommo_o_5
 VictoryRoad_B2F_EventScript_Kommo_o_1:
-# 134 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 133 "data/maps/VictoryRoad_B2F/scripts.pory"
 	waitmessage
-# 135 "data/maps/VictoryRoad_B2F/scripts.pory"
-	releaseall
+# 134 "data/maps/VictoryRoad_B2F/scripts.pory"
+	release
 	end
 
 VictoryRoad_B2F_EventScript_Kommo_o_2:
-# 123 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 122 "data/maps/VictoryRoad_B2F/scripts.pory"
 	call KommoOWon_Caught
 	goto VictoryRoad_B2F_EventScript_Kommo_o_1
 
 VictoryRoad_B2F_EventScript_Kommo_o_3:
-# 126 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 125 "data/maps/VictoryRoad_B2F/scripts.pory"
 	call KommoOWon_Caught
 	goto VictoryRoad_B2F_EventScript_Kommo_o_1
 
 VictoryRoad_B2F_EventScript_Kommo_o_4:
-# 129 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 128 "data/maps/VictoryRoad_B2F/scripts.pory"
 	call KommoOFailed
 	goto VictoryRoad_B2F_EventScript_Kommo_o_1
 
 VictoryRoad_B2F_EventScript_Kommo_o_5:
-# 132 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 131 "data/maps/VictoryRoad_B2F/scripts.pory"
 	call KommoOFailed
 	goto VictoryRoad_B2F_EventScript_Kommo_o_1
 
 
 KommoOWon_Caught::
-# 140 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 139 "data/maps/VictoryRoad_B2F/scripts.pory"
 	fadescreen FADE_TO_BLACK
+# 140 "data/maps/VictoryRoad_B2F/scripts.pory"
+	removeobject VAR_LAST_TALKED
 # 141 "data/maps/VictoryRoad_B2F/scripts.pory"
-	removeobject 8
-# 142 "data/maps/VictoryRoad_B2F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	return
 
 
 KommoOFailed::
-# 147 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 146 "data/maps/VictoryRoad_B2F/scripts.pory"
 	playmoncry SPECIES_KOMMO_O, CRY_MODE_ENCOUNTER
+# 147 "data/maps/VictoryRoad_B2F/scripts.pory"
+	waitmoncry
 # 148 "data/maps/VictoryRoad_B2F/scripts.pory"
-	delay 20
-# 149 "data/maps/VictoryRoad_B2F/scripts.pory"
 	fadescreen FADE_TO_BLACK
+# 149 "data/maps/VictoryRoad_B2F/scripts.pory"
+	removeobject VAR_LAST_TALKED
 # 150 "data/maps/VictoryRoad_B2F/scripts.pory"
-	removeobject 8
-# 151 "data/maps/VictoryRoad_B2F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 152 "data/maps/VictoryRoad_B2F/scripts.pory"
-	msgbox KommoOFailed_Text_0
+# 151 "data/maps/VictoryRoad_B2F/scripts.pory"
+	msgbox KommoOFailed_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 KommoOFailed_Text_0:
-# 152 "data/maps/VictoryRoad_B2F/scripts.pory"
+# 151 "data/maps/VictoryRoad_B2F/scripts.pory"
 	.string "The KOMMO-O disappeared…$"

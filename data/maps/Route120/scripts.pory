@@ -431,21 +431,20 @@ Route120_Text_RouteSign121:
 `
 
 script Route120_EventScript_Vikavolt{
-    lockall
+    lock
     setflag(FLAG_VIKAVOLT_TOTEM)
-    applymovement(45, Common_Movement_FacePlayer)
-    waitmovement(45)
+    faceplayer
     playmoncry(SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_VIKAVOLT_TOTEM, 35, ITEM_MAGNET)
+    setwildbattle(SPECIES_VIKAVOLT_TOTEM, 35, ITEM_HEAVY_DUTY_BOOTS)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
         call(VikavoltWon_Caught)
 	}
 	elif(var(VAR_RESULT) == B_OUTCOME_WON){
-        call(VikavoltWon_Caught)
+        call(VikavoltFailed)
 	}
 	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
 		call(VikavoltFailed)
@@ -454,13 +453,13 @@ script Route120_EventScript_Vikavolt{
 		call(VikavoltFailed)
 	}
     waitmessage
-	releaseall
+	release
     end
 }
  
 script VikavoltWon_Caught {
     fadescreen(FADE_TO_BLACK)
-    removeobject(45)
+    removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
 	return
 }
@@ -469,7 +468,7 @@ script VikavoltFailed {
 	playmoncry(SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER)
 	delay(20)
 	fadescreen(FADE_TO_BLACK)
-	removeobject(45)
+	removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
     msgbox("The VIKAVOLT disappeared…")
 	return

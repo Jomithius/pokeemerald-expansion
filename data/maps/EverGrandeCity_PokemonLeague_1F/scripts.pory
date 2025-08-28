@@ -197,7 +197,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 	msgbox("What move do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "PSYCHIC NOISE", "EXPANDING FORCE", "BREAKING SWIPE", "SLUDGE WAVE", 
 		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT", "BRAVE BIRD",
-		"RISING VOLTAGE")
+		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "WEATHER BALL")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_PsychicNoiseTeach)
@@ -225,6 +225,12 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 			goto(MoveTutor_EventScript_BraveBirdTeach)
 		case 12:
 			goto(MoveTutor_EventScript_RisingVoltageTeach)
+		case 13:
+			goto(MoveTutor_EventScript_GrassKnotTeach)
+		case 14:
+			goto(MoveTutor_EventScript_HyperVoiceTeach)
+		case 15:
+			goto(MoveTutor_EventScript_WeatherBallTeach)
 		case MULTI_B_PRESSED:
 			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 		default:
@@ -344,6 +350,33 @@ script MoveTutor_EventScript_BraveBirdTeach{
 script MoveTutor_EventScript_RisingVoltageTeach{
 	msgbox("Which POKéMON do you want to\nteach RISING VOLTAGE to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_RISING_VOLTAGE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_GrassKnotTeach{
+	msgbox("Which POKéMON do you want to\nteach GRASS KNOT to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_GRASS_KNOT)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_HyperVoiceTeach{
+	msgbox("Which POKéMON do you want to\nteach HYPER VOICE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_HYPER_VOICE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_WeatherBallTeach{
+	msgbox("Which POKéMON do you want to\nteach WEATHER BALL to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_WEATHER_BALL)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)

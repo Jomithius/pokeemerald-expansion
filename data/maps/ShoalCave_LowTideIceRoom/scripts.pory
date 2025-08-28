@@ -168,6 +168,7 @@ script ShoalCave_LowTideIceRoom_EventScript_AriaNorth{
     setflag(FLAG_HIDE_MISA_LILYCOVE_DEPT_5F) // if player misses Misa in Lilycove
     setvar(VAR_MISA_STATE, 8)
     setflag(FLAG_HIDE_EMO_LILYCOVE) // if player misses cutscene in Lilycove
+    setflag(FLAG_JOMITHIUS_UNAVAILABLE) // if player misses cutscene in Lilycove
     release
     end
 } 
