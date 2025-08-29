@@ -248,7 +248,7 @@ AzureMountain_Up5_EventScript_RivalMovementVar::
 # 198 "data/maps/AzureMountain_Up5/scripts.pory"
 	case 42, AzureMountain_Up5_EventScript_RivalMovementVar_5
 # 201 "data/maps/AzureMountain_Up5/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceDown
+	applymovement 1, Common_Movement_WalkDown
 AzureMountain_Up5_EventScript_RivalMovementVar_1:
 # 203 "data/maps/AzureMountain_Up5/scripts.pory"
 	waitmovement 0

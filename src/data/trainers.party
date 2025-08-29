@@ -885,10 +885,6 @@ AI: Check Bad Move
 Gible
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
 === TRAINER_CHIP ===
 Name: CHIP
@@ -1495,15 +1491,15 @@ Double Battle: No
 AI: Basic Trainer 
 
 Helioptile
-Level: 24
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sandile
-Level: 23
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Swinub
-Level: 26
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_EDGAR ===
@@ -1824,15 +1820,15 @@ Double Battle: No
 AI: Basic Trainer 
 
 Wingull
-Level: 23
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Numel
-Level: 24
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Roselia
-Level: 25
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JENNIFER ===
@@ -2548,7 +2544,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Archen
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_THALIA_1 ===
@@ -2591,7 +2587,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Carkol
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MASATO ===
@@ -3126,11 +3122,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Mienfoo
-Level: 27
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Machoke
-Level: 28
+Level: 30
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_NOB_1 ===
@@ -3143,7 +3139,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Primeape
-Level: 29
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JUROU ===
@@ -3522,11 +3518,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Swablu
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Donphan
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AKIKO ===
@@ -3597,7 +3593,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wormadam-Sandy
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAU ===
@@ -3611,7 +3607,7 @@ AI: Check Bad Move
 
 Forretress
 Ability: Sturdy
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
 - Mud Slap
@@ -3620,11 +3616,11 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Duosion
 Ability: Magic Guard
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Baltoy
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
 - Mud Slap
@@ -3641,7 +3637,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Nuzleaf
-Level: 24
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHANE ===
@@ -3654,11 +3650,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Tyrunt
-Level: 28
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Amaura
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUSTIN ===
@@ -3684,11 +3680,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Gumshoos
-Level: 30
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Skiddo
-Level: 30
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AUTUMN ===
@@ -3701,7 +3697,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Maractus
-Level: 29
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TRAVIS ===
@@ -3714,7 +3710,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Hippopotas
-Level: 25
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHESTIRD === 
@@ -6323,7 +6319,7 @@ Double Battle: No
 AI: Basic Trainer 
 
 Hariyama
-Level: 29
+Level: 31
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_TIMOTHY_2 ===
@@ -6714,7 +6710,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Trapinch
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DILLON ===
@@ -6727,7 +6723,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Skarmory
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CALVIN_2 ===
@@ -7057,7 +7053,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Whiscash
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BARNY ===
@@ -8250,23 +8246,23 @@ Music: Suspicious
 Double Battle: No
 
 Koffing
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Gas
-- Tackle
-- Smog
-- Self Destruct
-
-Koffing
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Gas
-- Tackle
-- Smog
-- Self Destruct
-
-Koffing
 Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Poison Gas
+- Tackle
+- Smog
+- Self Destruct
+
+Koffing
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Poison Gas
+- Tackle
+- Smog
+- Self Destruct
+
+Koffing
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Gas
 - Tackle
@@ -8282,11 +8278,11 @@ Music: Suspicious
 Double Battle: No
 
 Fletchinder
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Ninjask
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAO_2 ===
@@ -8615,9 +8611,9 @@ Double Battle: No
 AI: Check Bad Move
 
 Numel
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Ember
+- Flame Burst
 - Tackle
 - Magnitude
 - Sunny Day
@@ -9170,7 +9166,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Trapinch
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dig
 - Sand Attack
@@ -9178,7 +9174,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Slash
 
 Baltoy
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
 - Mud Slap
@@ -9195,20 +9191,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Nuzleaf
-Level: 32
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sand Attack
-- Poison Sting
-- Slash
-- Dig
 
 Nidorino
-Level: 32
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rollout
-- Bubble Beam
-- Tail Whip
-- Defense Curl
 
 === TRAINER_CAROL ===
 Name: CAROL
@@ -9220,11 +9208,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Maractus
-Level: 23
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lombre
-Level: 24
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NANCY ===
@@ -9237,11 +9225,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Minior
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seviper
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARTHA ===
@@ -9275,11 +9263,11 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Gloom
-Level: 29
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swablu
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDRIC ===
@@ -9304,11 +9292,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Venonat
-Level: 24
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tangela
-Level: 25
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DIANA_2 ===
@@ -10008,11 +9996,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Zangoose
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seviper
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MOSSDEEP ===
@@ -11382,7 +11370,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Durant
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
@@ -11504,7 +11492,7 @@ Mugshot: Blue
 
 Pancham (M) @ Eviolite  
 Ability: Scrappy  
-Level: 28   
+Level: 29   
 EVs: 248 HP / 248 Atk / 4 Spe  
 Adamant Nature  
 - Bulk Up  
@@ -11514,7 +11502,7 @@ Adamant Nature
 
 Meditite (M) @ Expert Belt  
 Ability: Pure Power  
-Level: 29    
+Level: 30    
 EVs: 244 HP / 240 Atk / 16 Def / 4 Spe  
 Adamant Nature  
 - Bullet Punch  
@@ -11524,7 +11512,7 @@ Adamant Nature
 
 Croagunk (F) @ Poison Barb  
 Ability: Poison Touch  
-Level: 29   
+Level: 30   
 EVs: 240 Atk / 24 SpD / 244 Spe  
 Jolly Nature  
 - Fake Out  
@@ -11534,7 +11522,7 @@ Jolly Nature
 
 Hitmonchan @ Muscle Band  
 Ability: Iron Fist  
-Level: 28    
+Level: 29    
 EVs: 248 HP / 252 Atk / 8 Spe  
 Adamant Nature  
 - Mega Punch  
@@ -11544,7 +11532,7 @@ Adamant Nature
 
 Monferno (M) @ Leftovers  
 Ability: Blaze  
-Level: 30    
+Level: 31    
 EVs: 12 HP / 252 Atk / 244 Spe  
 Jolly Nature  
 - Fire Punch  
@@ -11554,7 +11542,7 @@ Jolly Nature
 
 Primeape (M) @ Sitrus Berry  
 Ability: Defiant  
-Level: 30    
+Level: 31    
 EVs: 244 HP / 136 Atk / 12 Def / 116 Spe  
 Adamant Nature  
 - Acrobatics  
@@ -11574,7 +11562,7 @@ Mugshot: Purple
 
 Boldore (M) @ Rocky Helmet  
 Ability: Sturdy  
-Level: 27  
+Level: 29  
 Shiny: Yes  
 EVs: 224 HP / 52 Atk / 208 Def / 20 SpD  
 Impish Nature  
@@ -11585,7 +11573,7 @@ Impish Nature
 
 Mienfoo (M)  
 Ability: Regenerator  
-Level: 28  
+Level: 30  
 EVs: 8 HP / 248 Atk / 4 SpD / 248 Spe  
 Jolly Nature  
 - Fake Out  
@@ -11595,7 +11583,7 @@ Jolly Nature
 
 Emolga (F) @ Sitrus Berry  
 Ability: Static  
-Level: 27  
+Level: 29  
 EVs: 8 HP / 248 SpA / 252 Spe  
 Timid Nature  
 - Acrobatics  
@@ -11605,7 +11593,7 @@ Timid Nature
 
 Axew (M) @ Dragon Fang  
 Ability: Rivalry  
-Level: 28  
+Level: 30  
 EVs: 252 Atk / 252 Spe  
 Jolly Nature  
 - Bulldoze  
@@ -11615,7 +11603,7 @@ Jolly Nature
 
 Morgrem @ Eviolite  
 Ability: Prankster  
-Level: 29  
+Level: 31  
 EVs: 12 Atk / 248 SpA / 248 Spe  
 Hasty Nature  
 - Fake Out  
@@ -11625,7 +11613,7 @@ Hasty Nature
 
 Quilava (M) @ Charcoal  
 Ability: Flash Fire  
-Level: 29  
+Level: 31  
 EVs: 36 Def / 236 SpA / 236 Spe  
 Timid Nature  
 IVs: 0 Atk / 30 Def  
@@ -11758,11 +11746,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Golbat
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Noibat
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CLARENCE ===
@@ -12159,19 +12147,19 @@ Double Battle: No
 AI: Basic Trainer 
 
 Mightyena
-Level: 30
+Level: 32
 
 Golbat
-Level: 30
+Level: 32
 
 Cacturne
-Level: 29
+Level: 32
 
 Trapinch
-Level: 29
+Level: 32
 
 Camerupt
-Level: 30
+Level: 32
 
 === TRAINER_TIANA ===
 Name: TIANA
@@ -12608,11 +12596,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Numel
-Level: 23
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Machoke
-Level: 24
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOMITHIUS_3 ===
@@ -12697,11 +12685,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Graveler
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Diggersby
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LUCAS_1 ===
@@ -12714,11 +12702,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Graveler-Alola
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Numel
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALAN ===
@@ -12765,11 +12753,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Deerling-Winter
-Level: 30
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spoink
-Level: 30
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LUCAS_2 ===
@@ -14045,11 +14033,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Spinda
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spinda
-Level: 27
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KIM_AND_IRIS ===
@@ -14083,7 +14071,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Exeggcute
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growth
 - Stun Spore
@@ -14091,7 +14079,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leech Seed
 
 Graveler
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Defense Curl
 - Rollout
@@ -14610,11 +14598,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Whiscash
-Level: 27
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tyrunt
-Level: 26
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COBY ===
@@ -14627,11 +14615,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Skarmory
-Level: 28
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swellow
-Level: 27
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAWRENCE ===
@@ -14644,11 +14632,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Heatmor
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Durant
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WYATT ===
@@ -14661,11 +14649,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Salandit
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Elgyem
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANGELINA ===
@@ -14682,7 +14670,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Onix
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KAI ===
@@ -14695,7 +14683,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Basculin
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHARLOTTE ===
@@ -14708,7 +14696,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Yanma
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEANDRE ===
@@ -15171,11 +15159,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Silicobra
-Level: 32
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Darumaka
-Level: 32
+Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRYAN ===
@@ -15205,11 +15193,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Vullaby
-Level: 32
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Cacturne
-Level: 32
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRYANT ===
@@ -15222,11 +15210,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Heatmor
-Level: 24
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Slugma
-Level: 24
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHAYLA ===
@@ -15239,11 +15227,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Ponyta
-Level: 25
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Ponyta-Galar
-Level: 25
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KYRA ===
@@ -15256,11 +15244,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Chingling
-Level: 29
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Dodrio
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JAIDEN ===
@@ -15273,11 +15261,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Trubbish
-Level: 29
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swalot
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALIX ===
@@ -15290,7 +15278,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Kadabra
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Espurr
@@ -15311,7 +15299,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Combusken
-Level: 29
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARLENE ===
@@ -15324,7 +15312,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Gurdurr
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spoink
@@ -16375,7 +16363,7 @@ Ability: Mold Breaker
 Tera Type: Electric  
 EVs: 248 HP / 252 SpA / 8 SpD  
 Modest Nature  
-IVs: 0 Atk  
+IVs: 0 Atk / 30 Def   
 - Dragon Pulse  
 - Thunderbolt  
 - Focus Blast  
@@ -20341,10 +20329,6 @@ Difficulty: Easy
 Gible
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
 === TRAINER_CHIP ===
 Name: CHIP
@@ -20981,15 +20965,15 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Helioptile
-Level: 24
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sandile
-Level: 23
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Swinub
-Level: 26
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_EDGAR ===
@@ -21329,15 +21313,15 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Wingull
-Level: 23
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Numel
-Level: 24
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Roselia
-Level: 25
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JENNIFER ===
@@ -22107,7 +22091,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Archen
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_THALIA_1 ===
@@ -22153,7 +22137,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Carkol
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MASATO ===
@@ -22723,11 +22707,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Mienfoo
-Level: 27
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Machoke
-Level: 28
+Level: 30
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_NOB_1 ===
@@ -22741,7 +22725,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Primeape
-Level: 29
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JUROU ===
@@ -23139,11 +23123,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Swablu
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Donphan
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AKIKO ===
@@ -23219,7 +23203,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Wormadam-Sandy
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAU ===
@@ -23234,7 +23218,7 @@ Difficulty: Easy
 
 Forretress
 Ability: Overcoat
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
 - Mud Slap
@@ -23242,11 +23226,11 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Tomb
 
 Duosion
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Baltoy
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
 - Mud Slap
@@ -23264,7 +23248,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Nuzleaf
-Level: 24
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHANE ===
@@ -23278,11 +23262,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Tyrunt
-Level: 28
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Amaura
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUSTIN ===
@@ -23310,11 +23294,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Gumshoos
-Level: 30
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Skiddo
-Level: 30
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AUTUMN ===
@@ -23328,7 +23312,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Maractus
-Level: 29
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TRAVIS ===
@@ -23342,7 +23326,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Hippopotas
-Level: 25
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHESTIRD === 
@@ -24805,7 +24789,7 @@ Jolteon @ Magnet
 Ability: Volt Absorb  
 Level: 25  
 Timid Nature  
-IVs: 0 Atk / 30 Def / 30 SpA  
+IVs: 0 Atk / 30 Def  
 - Charge Beam  
 - Thunder Wave  
 - Hidden Power  
@@ -25928,7 +25912,7 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Hariyama
-Level: 29
+Level: 31
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_TIMOTHY_2 ===
@@ -26332,7 +26316,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Trapinch
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DILLON ===
@@ -26346,7 +26330,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Skarmory
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CALVIN_2 ===
@@ -26665,7 +26649,6 @@ Jolly Nature
 - Avalanche  
 - Assurance  
 
-
 Basculin  
 Ability: Adaptability  
 Level: 24   
@@ -26685,7 +26668,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Whiscash
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BARNY ===
@@ -27958,23 +27941,23 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy 
 
 Koffing
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Gas
-- Tackle
-- Smog
-- Self Destruct
-
-Koffing
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Gas
-- Tackle
-- Smog
-- Self Destruct
-
-Koffing
 Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Poison Gas
+- Tackle
+- Smog
+- Self Destruct
+
+Koffing
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Poison Gas
+- Tackle
+- Smog
+- Self Destruct
+
+Koffing
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Gas
 - Tackle
@@ -27992,11 +27975,11 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy 
 
 Fletchinder
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Ninjask
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAO_2 ===
@@ -28337,9 +28320,9 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Numel
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Ember
+- Flame Burst
 - Tackle
 - Magnitude
 - Sunny Day
@@ -28927,7 +28910,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Trapinch
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dig
 - Sand Attack
@@ -28935,7 +28918,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Slash
 
 Baltoy
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
 - Mud Slap
@@ -28953,20 +28936,12 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Nuzleaf
-Level: 32
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sand Attack
-- Poison Sting
-- Slash
-- Dig
 
 Nidorino
-Level: 32
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rollout
-- Bubble Beam
-- Tail Whip
-- Defense Curl
 
 === TRAINER_CAROL ===
 Name: CAROL
@@ -28997,11 +28972,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Minior
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seviper
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARTHA ===
@@ -29068,11 +29043,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Venonat
-Level: 24
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tangela
-Level: 25
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DIANA_2 ===
@@ -29807,11 +29782,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Zangoose
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seviper
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MOSSDEEP ===
@@ -31200,7 +31175,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Durant
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
@@ -31328,7 +31303,7 @@ Mugshot: Blue
 
 Pancham (M) @ Eviolite  
 Ability: Scrappy  
-Level: 27    
+Level: 28    
 Adamant Nature  
 - Bulk Up  
 - Mega Punch  
@@ -31337,7 +31312,7 @@ Adamant Nature
 
 Meditite (M) @ Expert Belt  
 Ability: Pure Power  
-Level: 28    
+Level: 29    
 Adamant Nature  
 - Bullet Punch  
 - Thunder Punch  
@@ -31346,7 +31321,7 @@ Adamant Nature
 
 Croagunk (F) @ Poison Barb  
 Ability: Poison Touch  
-Level: 27   
+Level: 28   
 Jolly Nature  
 - Fake Out  
 - Poison Jab  
@@ -31355,7 +31330,7 @@ Jolly Nature
 
 Hitmonchan @ Muscle Band 
 Ability: Iron Fist  
-Level: 27     
+Level: 28     
 Adamant Nature  
 - Mega Punch  
 - Dizzy Punch  
@@ -31364,7 +31339,7 @@ Adamant Nature
 
 Monferno (M) @ Leftovers  
 Ability: Blaze  
-Level: 29    
+Level: 30    
 Jolly Nature  
 - Fire Punch  
 - Brick Break  
@@ -31373,7 +31348,7 @@ Jolly Nature
 
 Primeape (M)  
 Ability: Defiant  
-Level: 29     
+Level: 30     
 Adamant Nature  
 - Acrobatics  
 - Brick Break  
@@ -31393,7 +31368,7 @@ Mugshot: Purple
 
 Boldore (M) @ Rocky Helmet  
 Ability: Sturdy  
-Level: 27  
+Level: 28  
 Shiny: Yes  
 Impish Nature  
 - Stealth Rock  
@@ -31403,7 +31378,7 @@ Impish Nature
 
 Mienfoo (M) @ Heavy-Duty Boots  
 Ability: Regenerator  
-Level: 28  
+Level: 29  
 Jolly Nature  
 - Fake Out  
 - U-turn  
@@ -31412,7 +31387,7 @@ Jolly Nature
 
 Emolga (F) @ Sitrus Berry  
 Ability: Static  
-Level: 27  
+Level: 30  
 Timid Nature  
 - Acrobatics  
 - Volt Switch  
@@ -31421,7 +31396,7 @@ Timid Nature
 
 Axew (M) @ Dragon Fang  
 Ability: Rivalry  
-Level: 28   
+Level: 29   
 Jolly Nature  
 - Bulldoze  
 - Dig  
@@ -31439,7 +31414,7 @@ Hasty Nature
 
 Quilava (M) @ Charcoal  
 Ability: Flash Fire  
-Level: 29   
+Level: 30   
 Timid Nature  
 IVs: 0 Atk / 30 Def  
 - Flame Burst  
@@ -31565,11 +31540,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Golbat
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Noibat
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CLARENCE ===
@@ -31992,16 +31967,16 @@ Mightyena
 Level: 30
 
 Golbat
-Level: 30
+Level: 31
 
 Cacturne
-Level: 29
+Level: 32
 
 Trapinch
-Level: 29
+Level: 31
 
 Camerupt
-Level: 30
+Level: 32
 
 === TRAINER_TIANA ===
 Name: TIANA
@@ -32462,11 +32437,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Numel
-Level: 23
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Machoke
-Level: 24
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOMITHIUS_3 ===
@@ -32547,11 +32522,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Graveler
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Diggersby
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LUCAS_1 ===
@@ -32565,11 +32540,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Graveler-Alola
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Numel
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALAN ===
@@ -32619,11 +32594,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Deerling-Winter
-Level: 30
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spoink
-Level: 30
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LUCAS_2 ===
@@ -33889,11 +33864,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Spinda
-Level: 27
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spinda
-Level: 26
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KIM_AND_IRIS ===
@@ -33929,7 +33904,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Exeggcute
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growth
 - Stun Spore
@@ -33937,7 +33912,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leech Seed
 
 Graveler
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Defense Curl
 - Rollout
@@ -34479,11 +34454,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Whiscash
-Level: 27
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tyrunt
-Level: 26
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COBY ===
@@ -34497,11 +34472,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Skarmory
-Level: 228
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swellow
-Level: 27
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAWRENCE ===
@@ -34515,11 +34490,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Heatmor
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Durant
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WYATT ===
@@ -34533,11 +34508,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Salandit
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Elgyem
-Level: 26
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANGELINA ===
@@ -34555,7 +34530,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Onix
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KAI ===
@@ -34569,7 +34544,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Basculin
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHARLOTTE ===
@@ -34583,7 +34558,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Yanma
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEANDRE ===
@@ -35093,11 +35068,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Yamask
-Level: 32
+Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Yamask-Galar
-Level: 32
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRANDEN ===
@@ -35129,11 +35104,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Heatmor
-Level: 24
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Slugma
-Level: 24
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHAYLA ===
@@ -35147,11 +35122,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Ponyta
-Level: 25
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Ponyta-Galar
-Level: 25
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KYRA ===
@@ -35165,11 +35140,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Chingling
-Level: 29
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Dodrio
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JAIDEN ===
@@ -35183,11 +35158,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Trubbish
-Level: 29
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swalot
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALIX ===
@@ -35201,7 +35176,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Kadabra
-Level: 29
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Espurr
@@ -35223,7 +35198,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Combusken
-Level: 29
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARLENE ===
@@ -35237,7 +35212,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Gurdurr
-Level: 28
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spoink
@@ -36296,7 +36271,7 @@ Ampharos-Mega @ Ampharosite
 Ability: Mold Breaker  
 Tera Type: Electric  
 Modest Nature  
-IVs: 0 Atk  
+IVs: 0 Atk / 30 Def  
 - Dragon Pulse  
 - Thunderbolt  
 - Focus Blast  

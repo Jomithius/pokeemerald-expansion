@@ -162,9 +162,9 @@ SlateportCity_Lina_House_EventScript_LinasFursuit::
 	lock
 # 104 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox SlateportCity_Lina_House_EventScript_LinasFursuit_Text_0, MSGBOX_AUTOCLOSE
-# 111 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	waitmessage
 # 112 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	waitmessage
+# 113 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	release
 	end
 
@@ -207,7 +207,7 @@ Lina_House_EventScript_TV_Text_2:
 
 SlateportCity_Lina_House_EventScript_LinasFursuit_Text_0:
 # 104 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	.string "A very realistic… suit?\n ……………\l There's a message attached to the front:\p “Valued patron, thank you for your\n continued support of our work.\p We hope you enjoy this fur suit as\n thanks for being a top supporter.”$"
+	.string "A very realistic… suit?\n ……………\p There's a letter attached to\n the front:\p “Valued patron, thank you for your\n continued support of our work.\p We hope you enjoy this fur suit as\n thanks for being a top supporter.”$"
 
 LinaHouse_NotChosen::
 # 64 "data/maps/SlateportCity_Lina_House/scripts.pory"

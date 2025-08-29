@@ -198,7 +198,7 @@ script AzureMountain_Up5_EventScript_RivalMovementVar{
         case 42:
             applymovement(LOCALID_RIVAL, AzureMountain_Up5_MovementRivalRightDown)
         default:
-            applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceDown)
+            applymovement(LOCALID_RIVAL, Common_Movement_WalkDown)
     }
     waitmovement(0)
     return
