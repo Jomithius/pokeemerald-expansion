@@ -83,7 +83,7 @@ Route104_Text_DadPokenavCall:
 	.string "It sounds windy wherever you are.\p"
 	.string "Did you take care of that problem?\n"
 	.string "… … … … … …\l"
-	.string "Huh? A giant rat?\p"
+	.string "Huh? A giant… rat man?\p"
 	.string "That's…\n"
 	.string "Huh. Okay.\p"
 	.string "Well, I realized that before\n"

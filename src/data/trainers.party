@@ -617,7 +617,7 @@ Bold Nature
 - Roost  
 - U-turn  
 
-Obstagoon  
+Obstagoon @ Sitrus Berry
 Ability: Defiant  
 Level: 48    
 EVs: 252 Atk / 8 Def / 248 Spe  
@@ -627,7 +627,7 @@ Jolly Nature
 - Lash Out  
 - Parting Shot  
 
-Crabominable  
+Crabominable @ Muscle Band 
 Ability: Iron Fist  
 Level: 48 
 EVs: 244 HP / 252 Atk / 4 Def / 8 SpD  
@@ -636,7 +636,7 @@ Adamant Nature
 - Drain Punch  
 - Dizzy Punch  
 
-Wailord  
+Wailord @ Leftovers 
 Ability: Oblivious  
 Level: 49    
 EVs: 244 HP / 152 Def / 112 SpD  
@@ -646,7 +646,7 @@ Relaxed Nature
 - Body Press  
 - Rain Dance  
 
-Armaldo  
+Armaldo @ Silver Powder  
 Ability: Swift Swim  
 Level: 47 
 EVs: 248 Atk / 8 SpD / 248 Spe  
@@ -656,7 +656,7 @@ Adamant Nature
 - Stealth Rock  
 - Aqua Tail
 
-Sharpedo  
+Sharpedo @ Black Glasses 
 Ability: Speed Boost  
 Level: 50 
 EVs: 164 HP / 248 Atk / 96 Spe  
@@ -4178,7 +4178,7 @@ Mugshot: Green
 
 Togedemaru (M) @ Terrain Extender  
 Ability: Iron Barbs  
-Level: 34    
+Level: 42    
 EVs: 240 HP / 12 Atk / 252 Spe  
 Jolly Nature  
 - Spiky Shield  
@@ -4188,7 +4188,7 @@ Jolly Nature
 
 Raticate-Alola-Totem (M) @ Sitrus Berry  
 Ability: Thick Fat  
-Level: 36    
+Level: 42    
 EVs: 244 HP / 252 Atk / 4 SpD / 4 Spe  
 Adamant Nature  
 - Bulk Up  
@@ -4198,7 +4198,7 @@ Adamant Nature
 
 Marill (F) @ Sitrus Berry  
 Ability: Huge Power  
-Level: 34   
+Level: 42   
 EVs: 248 HP / 248 Atk / 8 SpD / 4 Spe  
 Adamant Nature  
 - Aqua Jet  
@@ -4208,7 +4208,7 @@ Adamant Nature
 
 Morpeko (F) @ Leftovers  
 Ability: Hunger Switch  
-Level: 36   
+Level: 42   
 EVs: 252 Atk / 4 SpD / 248 Spe  
 Jolly Nature  
 - Fake Out  
@@ -4218,7 +4218,7 @@ Jolly Nature
 
 Raticate (M) @ Flame Orb  
 Ability: Guts  
-Level: 36   
+Level: 42   
 EVs: 4 HP / 252 Atk / 248 Spe  
 Jolly Nature  
 - Crunch  
@@ -4228,7 +4228,7 @@ Jolly Nature
 
 Raichu-Alola  
 Ability: Surge Surfer  
-Level: 36  
+Level: 42  
 EVs: 252 SpA / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -6607,17 +6607,18 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Green
 
-Plusle (F)  
+Plusle (F) @ Wise Glasses 
 Ability: Lightning Rod  
-Level: 26    
+Level: 30    
 EVs: 16 Atk / 244 SpA / 240 Spe  
 Hasty Nature  
 - Discharge  
-- Alluring Voice  
+- Alluring Voice
+- Grass Knot    
 
-Minun  
+Minun @ Magnet
 Ability: Volt Absorb  
-Level: 26    
+Level: 30    
 EVs: 248 SpA / 12 SpD / 240 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -6626,17 +6627,18 @@ IVs: 0 Atk
 - Encore  
 - Grass Knot  
 
-Patrat  
+Watchog @ Silk Scarf
 Ability: Keen Eye  
-Level: 26    
+Level: 29    
 EVs: 252 Atk / 248 Spe  
 Jolly Nature  
 - Super Fang  
-- Hyper Fang  
+- Hyper Fang
+- Quick Attack  
 
-Raticate (M)
+Raticate (M) @ Wide Lens
 Ability: Hustle  
-Level: 27    
+Level: 31   
 EVs: 252 Atk / 244 Spe  
 Jolly Nature  
 - Zen Headbutt  
@@ -6644,9 +6646,9 @@ Jolly Nature
 - Quick Attack  
 - U-turn  
 
-Raticate-Alola-Totem (M)
+Raticate-Alola-Totem (M) @ Sitrus Berry
 Ability: Thick Fat  
-Level: 27   
+Level: 31   
 EVs: 240 HP / 244 Atk / 24 SpD  
 Adamant Nature  
 - Bulk Up  
@@ -10012,14 +10014,14 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Torkoal
+Torkoal (M)
 Ability: Drought
 Level: 46
 
-Pyroar
+Pyroar (M)
 Level: 45
 
-Talonflame
+Talonflame (M)
 Ability: Gale Wings
 Level: 46
 
@@ -11493,7 +11495,7 @@ Mugshot: Blue
 Pancham (M) @ Eviolite  
 Ability: Scrappy  
 Level: 29   
-EVs: 248 HP / 248 Atk / 4 Spe  
+EVs: 248 HP / 248 Atk / 4 SpD  
 Adamant Nature  
 - Bulk Up  
 - Mega Punch  
@@ -11503,14 +11505,14 @@ Adamant Nature
 Meditite (M) @ Expert Belt  
 Ability: Pure Power  
 Level: 30    
-EVs: 244 HP / 240 Atk / 16 Def / 4 Spe  
+EVs: 244 HP / 240 Atk / 16 Def / 4 SpD  
 Adamant Nature  
 - Bullet Punch  
 - Thunder Punch  
 - Fire Punch  
 - Ice Punch  
 
-Croagunk (F) @ Poison Barb  
+Croagunk (F) @ Black Sludge
 Ability: Poison Touch  
 Level: 30   
 EVs: 240 Atk / 24 SpD / 244 Spe  
@@ -11540,7 +11542,7 @@ Jolly Nature
 - Mach Punch  
 - Bulk Up 
 
-Primeape (M) @ Sitrus Berry  
+Primeape (M) @ Blunder Policy
 Ability: Defiant  
 Level: 31    
 EVs: 244 HP / 136 Atk / 12 Def / 116 Spe  
@@ -11609,7 +11611,7 @@ Hasty Nature
 - Fake Out  
 - Dazzling Gleam  
 - Dark Pulse  
-- Taunt
+- Thunder Wave
 
 Quilava (M) @ Charcoal  
 Ability: Flash Fire  
@@ -12017,17 +12019,34 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer 
 
-Numel
-Level: 29
+Litleo (M)
+Level: 30  
+Ability: Rivalry   
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Incinerate  
+- Echoed Voice  
 
-Litleo
-Level: 30
-
-Maractus
-Level: 29
+Fletchinder (M)
+Level: 31    
+Ability: Flame Body 
+IVs: 0 Atk  
+- Flame Charge 
+- Wing Attack
 
 Golbat
 Level: 30
+
+Turtonator (M)
+Level: 31  
+Ability: Shell Armor  
+Tera Type: Fire  
+EVs: 252 HP / 152 SpA / 104 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Dragon Pulse  
+- Incinerate  
 
 === TRAINER_JONATHAN ===
 Name: JONATHAN
@@ -12097,7 +12116,7 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer 
 
-Mightyena (M)  
+Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
 Level: 39 
 Jolly Nature  
@@ -12106,7 +12125,7 @@ Jolly Nature
 - Psychic Fangs  
 - Sucker Punch  
 
-Crobat (M)  
+Crobat (F) @ Poison Barb 
 Ability: Infiltrator  
 Level: 40  
 Jolly Nature  
@@ -12115,19 +12134,19 @@ Jolly Nature
 - Cross Poison  
 - Leech Life  
 
-Cacturne (M)  
+Cacturne (M) @ Miracle Seed 
 Ability: Water Absorb  
 Level: 39 
 Adamant Nature  
 - Drain Punch  
-- Knock Off  
+- Sucker Punch  
 - Lunge  
 - Seed Bomb  
 
-Vibrava (M)  
+Vibrava (M) @ Eviolite 
 Level: 39  
 
-Camerupt (M)  
+Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
 Level: 40  
 Modest Nature  
@@ -12146,20 +12165,55 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer 
 
-Mightyena
-Level: 32
+Mightyena (M) @ Sitrus Berry  
+Ability: Intimidate  
+Level: 32  
+EVs: 192 HP / 244 Atk / 68 Spe  
+Adamant Nature  
+- Crunch  
+- Ice Fang  
+- Fire Fang  
 
-Golbat
-Level: 32
+Golbat (F)  
+Ability: Infiltrator
+Level: 32  
 
-Cacturne
-Level: 32
+Cacturne (F) @ Black Glasses  
+Ability: Water Absorb  
+Level: 32  
+EVs: 156 HP / 184 Atk / 164 Spe  
+Adamant Nature  
+- Stomping Tantrum  
+- Seed Bomb  
+- Thief 
+- Brick Break  
 
-Trapinch
-Level: 32
+Trapinch (M)  
+Ability: Sheer Force  
+Level: 32  
+EVs: 244 HP / 116 Atk / 44 Def / 104 SpD  
+Adamant Nature  
+- Quick Attack  
+- Rock Slide  
+- Bulldoze  
 
-Camerupt
-Level: 32
+Drilbur (M) @ Wide Lens  
+Ability: Mold Breaker  
+EVs: 172 HP / 144 Atk / 192 Spe  
+Jolly Nature  
+- Drill Run  
+- Rock Slide  
+- Rapid Spin  
+
+Camerupt (M) @ Soft Sand  
+Ability: Solid Rock  
+Level: 32  
+EVs: 216 HP / 68 Def / 224 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Ancient Power  
+- Flame Burst  
+- Mud Bomb  
 
 === TRAINER_TIANA ===
 Name: TIANA
@@ -14634,6 +14688,9 @@ AI: Check Bad Move
 Heatmor
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Incinerate
+- Bug Bite
+- Fury Swipes
 
 Durant
 Level: 29
@@ -14951,10 +15008,10 @@ Level: 36
 Marowak-Alola
 Level: 38
 
-Maractus
+Pyroar (M)
 Level: 39
 
-Talonflame
+Talonflame (M)
 Level: 37
 
 Camerupt
@@ -14986,7 +15043,7 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer 
 
-Mightyena (M)  
+Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
 Level: 46   
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -14996,7 +15053,7 @@ Jolly Nature
 - Psychic Fangs  
 - Sucker Punch  
 
-Flygon (M)  
+Flygon (M) @ Dragon Fang  
 Ability: Levitate  
 Level: 46   
 EVs: 252 Atk / 252 Spe  
@@ -15006,7 +15063,7 @@ Adamant Nature
 - Crunch  
 - First Impression  
 
-Camerupt (M)  
+Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
 Level: 46   
 EVs: 244 HP / 248 SpA / 16 SpD  
@@ -15212,6 +15269,9 @@ AI: Check Bad Move
 Heatmor
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Incinerate
+- Bug Bite
+- Fury Swipes
 
 Slugma
 Level: 29
@@ -19442,15 +19502,14 @@ IVs: 0 Atk
 - Earth Power  
 - Infernal Parade  
 
-Grimmsnarl (M) @ Light Clay  
+Grimmsnarl (M) @ Mirror Herb  
 Ability: Prankster  
-EVs: 252 HP / 4 Def / 252 SpD  
-Calm Nature  
-IVs: 0 Atk  
-- Light Screen  
-- Reflect  
-- Foul Play  
-- Thunder Wave  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Swagger  
+- Bulk Up  
+- False Surrender  
+- Spirit Break
 
 Great Tusk @ Eject Pack  
 Ability: Protosynthesis   
@@ -20064,15 +20123,16 @@ Bold Nature
 - Scald   
 - U-turn  
 
-Obstagoon  
+Obstagoon
 Ability: Defiant  
 Level: 48    
 Jolly Nature  
 - Bulk Up  
 - Body Slam  
 - Lash Out  
+- Parting Shot  
 
-Crabominable  
+Crabominable @ Muscle Band 
 Ability: Iron Fist  
 Level: 48 
 Adamant Nature  
@@ -20080,7 +20140,7 @@ Adamant Nature
 - Drain Punch  
 - Dizzy Punch  
 
-Wailord  
+Wailord @ Leftovers 
 Ability: Oblivious  
 Level: 49    
 Relaxed Nature  
@@ -20089,7 +20149,7 @@ Relaxed Nature
 - Body Press  
 - Rain Dance  
 
-Armaldo  
+Armaldo @ Silver Powder  
 Ability: Swift Swim  
 Level: 47 
 Adamant Nature  
@@ -20098,12 +20158,13 @@ Adamant Nature
 - Stealth Rock  
 - Aqua Tail
 
-Sharpedo  
+Sharpedo
 Ability: Speed Boost  
 Level: 50 
 Adamant Nature  
 - Aqua Jet  
-- Crunch   
+- Crunch  
+- Substitute  
 - Psychic Fangs  
 
 === TRAINER_LEAH ===
@@ -23804,7 +23865,7 @@ Mugshot: Green
 
 Togedemaru (M) @ Terrain Extender  
 Ability: Iron Barbs  
-Level: 34    
+Level: 41    
 Jolly Nature  
 - Spiky Shield  
 - Reflect  
@@ -23813,7 +23874,7 @@ Jolly Nature
 
 Raticate-Alola-Totem (M) @ Sitrus Berry  
 Ability: Thick Fat  
-Level: 36    
+Level: 41   
 Adamant Nature  
 - Bulk Up  
 - Hyper Fang  
@@ -23822,7 +23883,7 @@ Adamant Nature
 
 Marill (F) @ Sitrus Berry  
 Ability: Huge Power  
-Level: 34   
+Level: 41   
 Adamant Nature  
 - Aqua Jet  
 - Liquidation  
@@ -23831,7 +23892,7 @@ Adamant Nature
 
 Morpeko (F) @ Leftovers  
 Ability: Hunger Switch  
-Level: 36    
+Level: 41    
 Jolly Nature  
 - Fake Out  
 - Crunch  
@@ -23840,7 +23901,7 @@ Jolly Nature
 
 Raticate (M) @ Flame Orb  
 Ability: Guts  
-Level: 36   
+Level: 41   
 Jolly Nature  
 - Crunch  
 - Quick Attack  
@@ -23849,7 +23910,7 @@ Jolly Nature
 
 Raichu-Alola  
 Ability: Surge Surfer  
-Level: 36  
+Level: 41  
 Timid Nature  
 IVs: 0 Atk  
 - Alluring Voice  
@@ -26215,16 +26276,16 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Green
 
-Plusle (F)  
+Plusle (F) @ Wise Glasses
 Ability: Lightning Rod  
-Level: 26    
+Level: 30    
 Hasty Nature  
 - Discharge  
 - Alluring Voice  
 
-Minun  
+Minun @ Magnet 
 Ability: Volt Absorb  
-Level: 26    
+Level: 30    
 Timid Nature  
 IVs: 0 Atk  
 - Wish  
@@ -26232,25 +26293,25 @@ IVs: 0 Atk
 - Encore  
 - Grass Knot  
 
-Patrat  
+Watchog
 Ability: Keen Eye  
-Level: 26     
+Level: 28     
 Jolly Nature  
 - Super Fang  
 - Hyper Fang  
 
 Raticate (M)
 Ability: Hustle  
-Level: 27      
+Level: 31      
 Jolly Nature  
 - Zen Headbutt  
 - Hyper Fang  
 - Quick Attack  
 - U-turn  
 
-Raticate-Alola-Totem (M)
+Raticate-Alola-Totem (M) @ Sitrus Berry
 Ability: Thick Fat  
-Level: 27     
+Level: 31    
 Adamant Nature  
 - Bulk Up  
 - Knock Off  
@@ -29799,14 +29860,15 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Torkoal
+Torkoal (M)
 Ability: Drought
 Level: 46
 
-Pyroar
+Pyroar (M)
 Level: 45
 
-Talonflame
+Talonflame (M)
+Ability: Flame Body
 Level: 46
 
 === TRAINER_DARWIN ===
@@ -31829,17 +31891,31 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Numel
-Level: 29
+Litleo (M)
+Level: 30   
+Ability: Rivalry 
+Modest Nature  
+IVs: 0 Atk  
+- Incinerate  
+- Echoed Voice  
 
-Litleo
-Level: 30
-
-Maractus
-Level: 29
+Fletchinder (M)
+Level: 31    
+Ability: Flame Body 
+IVs: 0 Atk  
+- Flame Charge 
+- Wing Attack
 
 Golbat
 Level: 30
+
+Turtonator (M)
+Level: 31   
+Ability: Shell Armor  
+Modest Nature  
+IVs: 0 Atk  
+- Dragon Pulse  
+- Incinerate  
 
 === TRAINER_JONATHAN ===
 Name: JONATHAN
@@ -31913,7 +31989,7 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Easy 
 
-Mightyena (M)  
+Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
 Level: 39  
 Jolly Nature  
@@ -31922,7 +31998,7 @@ Jolly Nature
 - Psychic Fangs  
 - Sucker Punch  
 
-Crobat (M)  
+Crobat (F) @ Muscle Band 
 Ability: Infiltrator  
 Level: 38  
 Jolly Nature  
@@ -31931,19 +32007,19 @@ Jolly Nature
 - Cross Poison  
 - Leech Life  
 
-Cacturne (M)  
+Cacturne (M) @ Miracle Seed
 Ability: Water Absorb  
 Level: 39  
 Adamant Nature  
 - Drain Punch  
-- Knock Off  
+- Sucker Punch  
 - Lunge  
 - Seed Bomb  
 
-Vibrava (M)  
+Vibrava (M) @ Eviolite  
 Level: 37  
 
-Camerupt (M)  
+Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
 Level: 40  
 Modest Nature  
@@ -31963,20 +32039,50 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Easy 
 
-Mightyena
-Level: 30
+Mightyena (M) @ Sitrus Berry  
+Ability: Intimidate  
+Level: 32  
+Adamant Nature  
+- Crunch  
+- Ice Fang  
+- Fire Fang  
 
-Golbat
-Level: 31
+Golbat (F)  
+Ability: Infiltrator
+Level: 32  
 
-Cacturne
-Level: 32
+Cacturne (M) @ Black Glasses  
+Ability: Water Absorb  
+Level: 32  
+Adamant Nature  
+- Stomping Tantrum  
+- Seed Bomb  
+- Sucker Punch  
+- Brick Break  
 
-Trapinch
-Level: 31
+Trapinch (M)  
+Ability: Sheer Force  
+Level: 32  
+Adamant Nature  
+- Quick Attack  
+- Rock Slide  
+- Bulldoze  
 
-Camerupt
-Level: 32
+Drilbur (M) @ Wide Lens  
+Ability: Mold Breaker  
+Jolly Nature  
+- Drill Run  
+- Rock Slide  
+- Rapid Spin  
+
+Camerupt (M) @ Soft Sand  
+Ability: Solid Rock  
+Level: 32   
+Bold Nature  
+IVs: 0 Atk  
+- Ancient Power  
+- Flame Burst  
+- Mud Bomb
 
 === TRAINER_TIANA ===
 Name: TIANA
@@ -34492,6 +34598,9 @@ Difficulty: Easy
 Heatmor
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Incinerate
+- Bug Bite
+- Fury Swipes
 
 Durant
 Level: 29
@@ -34831,10 +34940,10 @@ Level: 36
 Marowak-Alola
 Level: 38
 
-Maractus
+Pyroar (M)
 Level: 39
 
-Talonflame
+Talonflame (M)
 Level: 37
 
 Camerupt
@@ -34868,7 +34977,7 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Easy 
 
-Mightyena (M)  
+Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
 Level: 46   
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -34878,7 +34987,7 @@ Jolly Nature
 - Psychic Fangs  
 - Sucker Punch  
 
-Flygon (M)  
+Flygon (M) @ Dragon Fang
 Ability: Levitate  
 Level: 46   
 EVs: 252 Atk / 252 Spe  
@@ -34888,7 +34997,7 @@ Adamant Nature
 - Crunch  
 - First Impression  
 
-Camerupt (M)  
+Camerupt (M) @ Charcoal  
 Ability: Solid Rock  
 Level: 47   
 EVs: 244 HP / 248 SpA / 16 SpD  
@@ -35106,6 +35215,9 @@ Difficulty: Easy
 Heatmor
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Incinerate
+- Bug Bite
+- Fury Swipes
 
 Slugma
 Level: 29

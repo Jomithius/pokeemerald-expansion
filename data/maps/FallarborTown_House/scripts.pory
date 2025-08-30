@@ -1,5 +1,31 @@
-mapscripts FallarborTown_House_MapScripts {}
+mapscripts FallarborTown_House_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE[VAR_RAT_CAVE_STATE, 6: FallarborTown_House_EventScript_OldMan_PostRatCave]
+}
 
+script FallarborTown_House_EventScript_OldMan_PostRatCave{
+    lockall
+    checkobjectat(3,7)
+    if(var(VAR_RESULT) == TRUE){
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3)
+    }
+    else{
+       applymovement(OBJ_EVENT_ID_PLAYER, FallarborTown_House_Movement_PlayerToOldMan) 
+    }
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    waitse
+    applymovement(1, Common_Movement_FacePlayer)
+    waitmovement(1)
+    msgbox(FallarborTown_House_Old_Man_RatCavePost, MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(1)
+    setvar(VAR_RAT_CAVE_STATE, 7)
+    releaseall
+    end
+}
 
 script FallarborTown_House_EventScript_Old_Man{
     lock
@@ -40,10 +66,11 @@ text FallarborTown_House_Old_Man_RatCaveHint{
 text FallarborTown_House_Old_Man_RatCavePost{
     "Huh?\p
     What?\p
+    Oh!\n
     Did you take care of it?\p
     … … … …\p
     What?\n
-    There was a giant rat?\p
+    There was a giant… rat man?\p
     Your eyes must be worse than mine,\n
     youngster."
 }
@@ -66,4 +93,9 @@ text FallarborTown_House_Text_Old_Lady{
     of nightmares.\p
     I wonder if it's something in\n
     the water."
+}
+
+movement FallarborTown_House_Movement_PlayerToOldMan{
+    walk_right
+    walk_in_place_down
 }

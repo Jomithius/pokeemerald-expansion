@@ -57,9 +57,9 @@ Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
 	.string "this a secret in exchange for these.$"
 
 Route114_LanettesHouse_Text_ExplainPCBoxLink:
-	.string "LANETTE: That is a new piece of\n"
-	.string "technology I developed that lets you\l"
-	.string "access your PC BOXES remotely.\l"
+	.string "That is a new piece of technology\n"
+	.string "I developed that lets you access\l"
+	.string "your PC BOXES remotely.\l"
 	.string "Isn't that amazing?\p"
 	.string "Here. You may have this as well.$"
 

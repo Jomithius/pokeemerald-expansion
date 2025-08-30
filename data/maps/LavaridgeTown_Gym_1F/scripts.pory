@@ -416,8 +416,10 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
 
 script LavaridgeTown_Gym_1F_EventScript_GiveMysticalFire{
 	giveitem(ITEM_TM_MYSTICAL_FIRE)
-	call_if_unset(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR, LavaridgeTown_Gym_1F_TryUpdateRatCaveState)
-	call_if_eq(VAR_RAT_CAVE_STATE, 6, LavaridgeTown_Gym_1F_TryUpdateRatCaveState)
+	//call_if_unset(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR, LavaridgeTown_Gym_1F_TryUpdateRatCaveState)
+	//call_if_eq(VAR_RAT_CAVE_STATE, 6, LavaridgeTown_Gym_1F_TryUpdateRatCaveState)
+	setvar(VAR_RAT_CAVE_STATE, 7)
+	setflag(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR)
 	msgbox(LavaridgeTown_Gym_1F_Text_ExplainMysticalFire, MSGBOX_DEFAULT)
 	return
 }
