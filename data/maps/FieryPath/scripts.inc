@@ -41,7 +41,7 @@ FieryPath_EventScript_Salazzle::
 # 23 "data/maps/FieryPath/scripts.pory"
 	waitmoncry
 # 24 "data/maps/FieryPath/scripts.pory"
-	setwildbattle SPECIES_SALAZZLE_TOTEM, 30, ITEM_CHARCOAL
+	setwildbattle SPECIES_SALAZZLE_TOTEM, 35, ITEM_POISON_BARB
 # 25 "data/maps/FieryPath/scripts.pory"
 	dowildbattle
 # 26 "data/maps/FieryPath/scripts.pory"

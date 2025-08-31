@@ -103,7 +103,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_FLANNERY_1] = // Kai
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow!\nI'm in HELL'S KITCHEN!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow!\nI'm in Hell's Kitchen!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_NORMAN_1] = // Luna
         {

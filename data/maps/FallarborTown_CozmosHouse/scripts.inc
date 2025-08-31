@@ -21,6 +21,7 @@ FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite::
 	setvar VAR_0x8004, ITEM_METEORITE
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_RECEIVED_TM_RETURN
+	clearflag FLAG_ITEM_METEOR_FALLS_1F_1R_METEORITE
 	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
 	release
 	end

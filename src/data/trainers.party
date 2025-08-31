@@ -605,7 +605,7 @@ Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Basic Trainer 
+AI: Smart Trainer 
 
 Pelipper @ Eject Button  
 Ability: Drizzle  
@@ -648,7 +648,7 @@ Relaxed Nature
 
 Armaldo @ Silver Powder  
 Ability: Swift Swim  
-Level: 47 
+Level: 48 
 EVs: 248 Atk / 8 SpD / 248 Spe  
 Adamant Nature  
 - X-Scissor  
@@ -658,7 +658,7 @@ Adamant Nature
 
 Sharpedo @ Black Glasses 
 Ability: Speed Boost  
-Level: 50 
+Level: 49 
 EVs: 164 HP / 248 Atk / 96 Spe  
 Adamant Nature  
 - Aqua Jet  
@@ -3490,7 +3490,7 @@ AI: Check Bad Move
 Centiskorch
 Level: 32
 
-Litleo
+Rapidash
 Level: 31
 
 === TRAINER_KEEGAN ===
@@ -3505,7 +3505,7 @@ AI: Check Bad Move
 Larvesta
 Level: 32
 
-Carkol
+Simisear
 Level: 31
 
 === TRAINER_BERNIE_1 ===
@@ -5268,7 +5268,7 @@ Ability: Static
 Level: 34  
 EVs: 248 HP / 24 Def / 228 SpA  
 Modest Nature  
-IVs: 0 Atk / 30 SpA  
+IVs: 0 Atk
 - Discharge  
 - Power Gem  
 - Swift  
@@ -9782,11 +9782,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Carkol
-Level: 23
+Darumaka
+Level: 31
 
 Carnivine
-Level: 23
+Level: 31
 
 === TRAINER_ANNIKA ===
 Name: ANNIKA
@@ -10012,7 +10012,7 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Torkoal (M)
 Ability: Drought
@@ -11436,11 +11436,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 22
+Level: 30
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Numel
-Level: 22
+Level: 30
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_MARC ===
@@ -12114,7 +12114,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Basic Trainer 
+AI: Smart Trainer 
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
@@ -12163,7 +12163,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Basic Trainer 
+AI: Smart Trainer 
 
 Mightyena (M) @ Sitrus Berry  
 Ability: Intimidate  
@@ -12198,7 +12198,8 @@ Adamant Nature
 - Bulldoze  
 
 Drilbur (M) @ Wide Lens  
-Ability: Mold Breaker  
+Ability: Mold Breaker 
+Level: 32   
 EVs: 172 HP / 144 Atk / 192 Spe  
 Jolly Nature  
 - Drill Run  
@@ -13246,14 +13247,14 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 25
+Level: 31
 - Bide
 - Detect
 - Confusion
 - Fire Punch
 
 Combusken
-Level: 25
+Level: 32
 
 === TRAINER_HIDEO ===
 Name: HIDEO
@@ -14999,7 +15000,7 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Coalossal
 Level: 36
@@ -15040,7 +15041,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Basic Trainer 
+AI: Smart Trainer 
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
@@ -17072,7 +17073,6 @@ Mugshot: Blue
 
 Escavalier @ Assault Vest  
 Ability: Shell Armor  
-Tera Type: Bug  
 EVs: 248 HP / 36 Atk / 216 Def / 8 SpD  
 Impish Nature  
 - Megahorn  
@@ -17119,7 +17119,7 @@ Adamant Nature
 - Aqua Cutter  
 - Psyblade  
 
-Lucario @ Air Balloon  
+Lucario @ Wise Glasses  
 Ability: Inner Focus  
 Tera Type: Fighting  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -17161,7 +17161,7 @@ Timid Nature
 
 Okidogi @ Punching Glove  
 Ability: Toxic Chain  
-Tera Type: Ice  
+Tera Type: Flying
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Fire Punch  
@@ -20159,7 +20159,7 @@ Adamant Nature
 
 Sharpedo
 Ability: Speed Boost  
-Level: 50 
+Level: 49 
 Adamant Nature  
 - Aqua Jet  
 - Crunch  
@@ -23153,7 +23153,7 @@ Difficulty: Easy
 Centiskorch
 Level: 32
 
-Litleo
+Rapidash
 Level: 31
 
 === TRAINER_KEEGAN ===
@@ -23169,7 +23169,7 @@ Difficulty: Easy
 Larvesta
 Level: 32
 
-Carkol
+Simisear
 Level: 31
 
 === TRAINER_BERNIE_1 ===
@@ -29616,7 +29616,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Carkol
+Darumaka
 Level: 32
 
 Carnivine
@@ -29856,7 +29856,7 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move 
+AI: Check Bad Move / Try To Faint 
 Difficulty: Easy
 
 Torkoal (M)
@@ -31304,11 +31304,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Poochyena
-Level: 22
+Level: 30
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Numel
-Level: 22
+Level: 30
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_MARC ===
@@ -32068,7 +32068,8 @@ Adamant Nature
 - Bulldoze  
 
 Drilbur (M) @ Wide Lens  
-Ability: Mold Breaker  
+Ability: Mold Breaker 
+Level: 32   
 Jolly Nature  
 - Drill Run  
 - Rock Slide  
@@ -33142,14 +33143,14 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Meditite
-Level: 25
+Level: 31
 - Bide
 - Detect
 - Confusion
 - Fire Punch
 
 Combusken
-Level: 25
+Level: 32
 
 === TRAINER_HIDEO ===
 Name: HIDEO
@@ -34929,7 +34930,7 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move 
+AI: Check Bad Move / Try To Faint 
 Difficulty: Easy
 
 Coalossal
@@ -37031,7 +37032,6 @@ Mugshot: Blue
 
 Escavalier @ Assault Vest  
 Ability: Shell Armor  
-Tera Type: Bug  
 Impish Nature  
 - Megahorn  
 - Iron Head  
@@ -37074,8 +37074,7 @@ Adamant Nature
 - Psyblade  
 
 Lucario @ Air Balloon  
-Ability: Inner Focus  
-Tera Type: Fighting  
+Ability: Inner Focus   
 Timid Nature  
 IVs: 0 Atk  
 - Calm Mind  
@@ -37112,7 +37111,7 @@ Timid Nature
 
 Okidogi @ Punching Glove  
 Ability: Toxic Chain  
-Tera Type: Poison 
+Tera Type: Flying
 Jolly Nature  
 - Fire Punch  
 - Ice Punch  

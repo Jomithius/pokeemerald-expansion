@@ -559,23 +559,26 @@ script MossdeepCity_EventScript_AriaBattle{
     applymovement(21, Common_Movement_ExclamationMark)
     waitmovement(21)
     waitse
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_NONE)
     applymovement(21, Common_Movement_FacePlayer)
     waitmovement(21)
     delay(40)
-    playse(SE_M_YAWN)
+    //playse(SE_M_YAWN)
+	playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
     waitmovement(21)
     msgbox("AH!", MSGBOX_AUTOCLOSE)
     waitmessage
+	waitmoncry
 	playbgm(MUS_ENCOUNTER_COOL, FALSE)
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
     waitmovement(21)
-	setobjectnewmovementtype(21, MOVEMENT_TYPE_NONE)
 	msgbox("{PLAYER}!\n
 		You scared me!\p
 		Wait…\n
-		This murderous intent…!\l
-		I see… So you would challenge this KNIGHT?\p
+		This murderous intent…!\p
+		I see…\n
+		So you would challenge this KNIGHT?\p
 		All right! I'll show you the power of\n
 		the SACRED BLADE!", MSGBOX_AUTOCLOSE)
 	waitmessage
@@ -662,18 +665,20 @@ script MossdeepCity_EventScript_GiveTotodile{
     applymovement(21, Common_Movement_ExclamationMark)
     waitmovement(21)
     waitse
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_NONE)
     applymovement(21, Common_Movement_FacePlayer)
     waitmovement(21)
     delay(40)
-    playse(SE_M_YAWN)
+    //playse(SE_M_YAWN)
+	playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
     waitmovement(21)
     msgbox("AH!", MSGBOX_AUTOCLOSE)
     waitmessage
+	waitmoncry
     fadedefaultbgm
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
     waitmovement(21)
-	setobjectnewmovementtype(21, MOVEMENT_TYPE_NONE)
 	msgbox("{PLAYER}!\n
 		You scared me again!", MSGBOX_DEFAULT)
 	waitmessage

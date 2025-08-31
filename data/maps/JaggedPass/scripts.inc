@@ -541,7 +541,7 @@ JaggedPass_EventScript_Marowak::
 # 274 "data/maps/JaggedPass/scripts.pory"
 	waitmoncry
 # 275 "data/maps/JaggedPass/scripts.pory"
-	setwildbattle SPECIES_MAROWAK_ALOLA_TOTEM, 24, ITEM_THICK_CLUB
+	setwildbattle SPECIES_MAROWAK_ALOLA_TOTEM, 32, ITEM_THICK_CLUB
 # 276 "data/maps/JaggedPass/scripts.pory"
 	dowildbattle
 # 277 "data/maps/JaggedPass/scripts.pory"

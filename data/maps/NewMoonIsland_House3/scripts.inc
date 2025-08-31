@@ -120,21 +120,21 @@ NewMoonIsland_House3_EventScript_Aria::
 	waitse
 # 83 "data/maps/NewMoonIsland_House3/scripts.pory"
 	faceplayer
-# 84 "data/maps/NewMoonIsland_House3/scripts.pory"
-	playse SE_M_YAWN
-# 85 "data/maps/NewMoonIsland_House3/scripts.pory"
-	waitse
 # 86 "data/maps/NewMoonIsland_House3/scripts.pory"
-	msgbox NewMoonIsland_House3_EventScript_Aria_Text_1, MSGBOX_AUTOCLOSE
+	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
 # 87 "data/maps/NewMoonIsland_House3/scripts.pory"
-	waitmessage
+	msgbox NewMoonIsland_House3_EventScript_Aria_Text_1, MSGBOX_AUTOCLOSE
 # 88 "data/maps/NewMoonIsland_House3/scripts.pory"
-	applymovement 4, Common_Movement_FaceOriginalDirection
+	waitmessage
 # 89 "data/maps/NewMoonIsland_House3/scripts.pory"
-	waitmovement 4
+	waitmoncry
 # 90 "data/maps/NewMoonIsland_House3/scripts.pory"
-	fadeinbgm 0
+	applymovement 4, Common_Movement_FaceOriginalDirection
 # 91 "data/maps/NewMoonIsland_House3/scripts.pory"
+	waitmovement 4
+# 92 "data/maps/NewMoonIsland_House3/scripts.pory"
+	fadeinbgm 0
+# 93 "data/maps/NewMoonIsland_House3/scripts.pory"
 	release
 	end
 
@@ -160,13 +160,13 @@ NewMoonIsland_House3_EventScript_Aria_Text_0:
 	.string "ARGH! AAAAAARGH!\n AAAUUAUUAAAUGH!$"
 
 NewMoonIsland_House3_EventScript_Aria_Text_1:
-# 86 "data/maps/NewMoonIsland_House3/scripts.pory"
+# 87 "data/maps/NewMoonIsland_House3/scripts.pory"
 	.string "MA-AH!$"
 
 NewMoonIsland_House3_Text_James::
-# 95 "data/maps/NewMoonIsland_House3/scripts.pory"
+# 97 "data/maps/NewMoonIsland_House3/scripts.pory"
 	.string "{PLAYER}?!\n What are you doing here?\p … … … …\p I see…\n So you were also pulled into the abyss…\p There's no saving us then…\p At least now I can tell you that the\n other me, the one you battled at\l EVERGRANDE CITY, is a fake…\p If we ever get out of here…\n DON'T ever trust him.$"
 
 NewMoonIsland_House3_Text_Momo::
-# 109 "data/maps/NewMoonIsland_House3/scripts.pory"
+# 111 "data/maps/NewMoonIsland_House3/scripts.pory"
 	.string "…\n …\l …\p BARK BARK RUGF RUGG FHHHHERGRGRGRRRR\n GRRRRRRRR\p AAAAAARAAAAAAAA AAAAA GRE\n RGRERRRRR GRRR\p HRHEHEHEGRGRGRGRGR\n GRGRGRGRGRGR\p HSISSSSS HISSSSSS BITE\n BITE SNARL SNARL\p sniff sniff\n GRRRRRRRRR…$"

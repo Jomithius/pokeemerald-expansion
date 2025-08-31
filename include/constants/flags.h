@@ -1278,8 +1278,8 @@
 #define FLAG_KOMMO_O_TOTEM                                          0x4C8 // Victory Road
 #define FLAG_ARAQUANID_TOTEM                                        0x4C9 // unused
 #define FLAG_BALDESIA_MINI_GAME_START                               0x4CA // To start Minigame in Baldesia
-#define FLAG_RECEIVED_FANTASIA                                      0x4CB // From Dave in Mt Pyre Summit
-#define FLAG_UNUSED_0x4CC                                           0x4CC // Unused
+#define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_METEORITE                      0x4CC // Meteor Falls
 #define FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM                             0x4CD // For Eugenia Superboss
 #define FLAG_HIDE_GYM_LEADERS                                       0x4CE // For postgame when gym leaders are out
 #define FLAG_HIDE_RATDUARDO_NEWMOON_ISLAND                          0x4CF // Channeler Cutscene Newmoon Island
@@ -1390,7 +1390,7 @@
 #define FLAG_VISITED_ULTRA_SPACE                    (SYSTEM_FLAGS + 0x21) // custom, functionally unused
 #define FLAG_REGISTERED_LUNA_POKENAV                (SYSTEM_FLAGS + 0x22) // to replace luna's sprite
 #define FLAG_I_EXP_SHARE                            (SYSTEM_FLAGS + 0x23) // Exp Share gen 6
-#define FLAG_SYS_NO_BAG_USE                         (SYSTEM_FLAGS + 0x24) // No Item Use functionally unused
+#define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // No Item Use functionally unused. was B_FLAG_NO_BAG_USE 2180
 #define FLAG_SYS_DYNAMIC_LEVELS                     (SYSTEM_FLAGS + 0x25) // Dynamic Leveling for postgame
 #define FLAG_DEFEATED_JAMES_EVERGRANDE              (SYSTEM_FLAGS + 0x26) // Level Cap for James evergrande city
 #define FLAG_SYS_DIFFICULTY_SET                     (SYSTEM_FLAGS + 0x27) // For MODE option in start menu 2183
@@ -1403,7 +1403,7 @@
 #define FLAG_SYS_CRUISE_MODE                        (SYSTEM_FLAGS + 0x2D)
 
 #define FLAG_RECEIVED_BIG_NUGGETS                   (SYSTEM_FLAGS + 0x2E) // Unused Flag
-#define FLAG_UNUSED_0x88F                           (SYSTEM_FLAGS + 0x2F) // Unused Flag
+#define FLAG_RECEIVED_FANTASIA                      (SYSTEM_FLAGS + 0x2F) // From Dave Mt. Pyre
 
 #define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30)
 #define FLAG_SYS_TV_WATCH                           (SYSTEM_FLAGS + 0x31)

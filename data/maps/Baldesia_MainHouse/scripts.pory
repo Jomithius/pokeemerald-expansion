@@ -195,10 +195,12 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_ARIA, Common_Movement_ExclamationMark)
     waitmovement(0)
     waitse
-    playse(SE_M_YAWN)
+    //playse(SE_M_YAWN)
+    playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_WalkBackDown)
     waitmovement(0)
-    waitse
+    //waitse
+    waitmoncry
     playse(SE_M_DOUBLE_TEAM)
     addobject(9)
     delay(30)
@@ -210,7 +212,8 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_ARIA, Common_Movement_ExclamationMark)
     waitmovement(0)
     waitse
-    playse(SE_M_YAWN)
+    //playse(SE_M_YAWN)
+    playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_WalkBackUp)
     delay(8)
     applymovement(9, Common_Movement_WalkUp)
@@ -219,7 +222,8 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(16,  Baldesia_MainHouse_Movement_RightGuard)
     waitmovement(16)
     delay(30)
-    waitse
+    //waitse
+    waitmoncry
     applymovement(LOCALID_ARIA, Common_Movement_LookAround)
     waitmovement(LOCALID_ARIA)
     msgbox("ARIA: AAAARGGHH!", MSGBOX_AUTOCLOSE)

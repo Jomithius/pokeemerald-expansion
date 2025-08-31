@@ -272,7 +272,7 @@ script JaggedPass_EventScript_Marowak{
     playmoncry(SPECIES_MAROWAK_ALOLA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_MAROWAK_ALOLA_TOTEM, 24, ITEM_THICK_CLUB)
+    setwildbattle(SPECIES_MAROWAK_ALOLA_TOTEM, 32, ITEM_THICK_CLUB)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){

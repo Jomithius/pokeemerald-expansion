@@ -81,10 +81,12 @@ script NewMoonIsland_House3_EventScript_Aria{
     waitmovement(4)
     waitse
     faceplayer
-    playse(SE_M_YAWN)
-    waitse
+    //playse(SE_M_YAWN)
+    //waitse
+    playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     msgbox("MA-AH!", MSGBOX_AUTOCLOSE)
     waitmessage
+    waitmoncry
     applymovement(4, Common_Movement_FaceOriginalDirection)
     waitmovement(4)
     fadeinbgm(0)
