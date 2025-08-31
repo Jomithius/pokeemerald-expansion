@@ -830,75 +830,77 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
 LavaridgeTown_Gym_1F_EventScript_GiveMysticalFire::
 # 418 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	giveitem ITEM_TM_MYSTICAL_FIRE
-# 419 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	call_if_unset FLAG_RATDUARDO_RAT_CAVE_FALLARBOR, LavaridgeTown_Gym_1F_TryUpdateRatCaveState
-# 420 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	call_if_eq VAR_RAT_CAVE_STATE, 6, LavaridgeTown_Gym_1F_TryUpdateRatCaveState
 # 421 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	setvar VAR_RAT_CAVE_STATE, 7
+# 422 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	setflag FLAG_RATDUARDO_RAT_CAVE_FALLARBOR
+# 423 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	setflag FLAG_HIDE_JOEY_LAVARIDGE_TOWN
+# 424 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	msgbox LavaridgeTown_Gym_1F_Text_ExplainMysticalFire, MSGBOX_DEFAULT
 	return
 
 
 LavaridgeTown_Gym_1F_EventScript_Ninetales::
-# 435 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	lock
-# 436 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	playmoncry SPECIES_NINETALES, CRY_MODE_ENCOUNTER
-# 437 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	delay 24
 # 438 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	lock
+# 439 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	playmoncry SPECIES_NINETALES, CRY_MODE_ENCOUNTER
+# 440 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	delay 24
+# 441 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	release
 	end
 
 
 LavaridgeTown_Gym_1F_TryUpdateRatCaveState::
-# 444 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 447 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	setflag FLAG_RATDUARDO_RAT_CAVE_FALLARBOR
-# 445 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 448 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 7
 	return
 
 
 LavaridgeTown_Gym_1F_UpdateMetatiles::
-# 450 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 453 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	setmetatile 13, 13, METATILE_LavaridgeGym_FloorTile, FALSE
 	return
 
 
 LavaridgeTown_Gym_1F_EventScript_Flannery_FinalBattle::
-# 455 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 458 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle_single TRAINER_FLANNERY_2, LavaridgeTown_Gym_1F_EventScript_Flannery_FinalBattle_Text_0, LavaridgeTown_Gym_1F_EventScript_Flannery_FinalBattle_Text_1, LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal
 	end
 
 
 LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal::
-# 460 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 463 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	addvar VAR_GYM_LEADER_COUNT, 1
-# 461 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal_Text_0, MSGBOX_NPC
 # 464 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	msgbox LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal_Text_0, MSGBOX_NPC
+# 467 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
 	end
 
 
 LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal2::
-# 469 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 472 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	msgbox LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal_Text_0, MSGBOX_NPC
 	end
 
 
 LavaridgeTown_Gym_1F_EventScript_Flannery_FinalBattle_Text_0:
-# 455 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 458 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "{PLAYER}!\nGet ready!\pI cooked up some new strategies!$"
 
 LavaridgeTown_Gym_1F_EventScript_Flannery_FinalBattle_Text_1:
-# 455 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 458 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "Looks like I'm cooked!$"
 
 LavaridgeTown_Gym_1F_EventScript_FlanneryDefeatedFinal_Text_0:
-# 461 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 464 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "You cooked me again, {PLAYER}.\p Next time I'll come up with a\n winning recipe!$"
 
 LavaridgeTown_Gym_1F_Text_ExplainMysticalFire::
-# 425 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 428 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "That TM61 contains MYSTICAL FIRE.\n Not only does it do damage, it also\l lowers the foes Sp. Atk.\p It's great for cooking your opponents\n in a magical way!\p … … … … … …$"

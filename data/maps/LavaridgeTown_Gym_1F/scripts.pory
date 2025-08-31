@@ -420,6 +420,7 @@ script LavaridgeTown_Gym_1F_EventScript_GiveMysticalFire{
 	//call_if_eq(VAR_RAT_CAVE_STATE, 6, LavaridgeTown_Gym_1F_TryUpdateRatCaveState)
 	setvar(VAR_RAT_CAVE_STATE, 7)
 	setflag(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR)
+	setflag(FLAG_HIDE_JOEY_LAVARIDGE_TOWN)
 	msgbox(LavaridgeTown_Gym_1F_Text_ExplainMysticalFire, MSGBOX_DEFAULT)
 	return
 }

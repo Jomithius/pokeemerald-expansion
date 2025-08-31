@@ -1176,9 +1176,9 @@
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
 #define FLAG_ROUTE_135_ITEM_TRAILBLAZE                              0x465 // Route 135
 #define FLAG_ITEM_AZURE_CHASM_ICE_SPINNER                           0x466 // Azure Chasm
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
+#define FLAG_HIDE_JOEY_LAVARIDGE_TOWN                               0x467 //
 #define FLAG_RECEIVED_MALICIOUS_ARMOR                               0x468 // Eastern Ruins
-#define FLAG_ITEM_MT_PYRE_2F_HEX                             0x469
+#define FLAG_ITEM_MT_PYRE_2F_HEX                                    0x469
 #define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET                           0x46C

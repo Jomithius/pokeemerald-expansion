@@ -2971,7 +2971,7 @@ RustboroCity_Eventscript_Promise_To_Misa_Text_0:
 
 RustboroCity_EventScript_ExplainIVsEVs_Text_0:
 # 1484 "data/maps/RustboroCity/scripts.pory"
-	.string "IVs, or INDIVIDUAL VALUES, are\n the inherent talents of a POKéMON and\l can range from 0-31.\p This stat is determined from birth.\p Luckily, all POKéMON in HOENN are\n born equal in this regard.\p EVs, or EFFORT VALUES, are gained\n from battling POKéMON.\p Each stat, such as HP, ATK, etc.,\n can gain EVs from defeating certain\l POKéMON.\p A POKéMON can have up to 510 EVs total,\n with a maximum of 252 in a single stat.\p A POKéMON with EVs can be much stronger\n stronger than one without any!\p I recommend you take a look\n at the STAT EDITOR.$"
+	.string "IVs, or INDIVIDUAL VALUES, are\n the inherent talents of a POKéMON and\l can range from 0-31.\p This stat is determined from birth.\p Luckily, most POKéMON in HOENN are\n born equal in this regard.\p EVs, or EFFORT VALUES, are gained\n from battling POKéMON.\p Each stat, such as HP, ATK, etc.,\n can gain EVs from defeating certain\l POKéMON.\p A POKéMON can have up to 510 EVs total,\n with a maximum of 252 in a single stat.\p A POKéMON with EVs can be much stronger\n stronger than one without any!\p I recommend you take a look\n at the STAT EDITOR.$"
 
 RustboroMisa1::
 # 1433 "data/maps/RustboroCity/scripts.pory"

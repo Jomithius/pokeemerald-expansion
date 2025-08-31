@@ -16,35 +16,35 @@ RustboroCity_Misa_House1F_MisaGiveItem::
 # 11 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	lock
 # 12 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	applymovement 1, MisaHouse1F_FacePlayer
+	faceplayer
 # 13 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	waitmovement 0
-# 14 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	msgbox MisaHouse1F_1, MSGBOX_DEFAULT
+# 14 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+	waitmessage
 # 15 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	waitmessage
+	giveitem ITEM_RARE_CANDY, 5
 # 16 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	giveitem ITEM_RARE_CANDY, 10
-# 17 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 18 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+# 17 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	setflag FLAG_RUSTBORO_MISA_HOUSE_RARECANDY
+# 18 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+	msgbox RustboroCity_Misa_House1F_Text_ExplainCandies, MSGBOX_DEFAULT
 # 19 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	msgbox MisaHouse1F_2, MSGBOX_AUTOCLOSE
-# 20 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	waitmessage
+# 20 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+	msgbox MisaHouse1F_2, MSGBOX_AUTOCLOSE
 # 21 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+	waitmessage
+# 22 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	release
 	end
 
 
 Misa_House1F_EventScript_Text2::
-# 26 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	lock
 # 27 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	applymovement 1, MisaHouse1F_FacePlayer
+	lock
 # 28 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	waitmovement 0
+	faceplayer
 # 29 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	msgbox MisaHouse1F_3
 # 30 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
@@ -54,19 +54,13 @@ Misa_House1F_EventScript_Text2::
 	end
 
 
-# 59 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-MisaHouse1F_FacePlayer:
-# 60 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	face_player
-	step_end
-
 MisaHouse1F_1::
 # 35 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	.string "{PLAYER}!\n I'm glad you stopped by.\p JAMES is upstairs in his room.\n Thanks again for becoming his friend.\p I hope you two can help each other\n out on your journey.\p Have you eaten yet? We already put away\n the leftovers, but I have some candy.$"
 
 MisaHouse1F_2::
 # 45 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "I'll be leaving soon too.\n I took time off because I was worried\l about JAMES, but now I'll be heading\l back to work in EVER GRANDE CITY.$"
+	.string "I'll be leaving soon too.\p I took time off because I was worried\n about JAMES, but now I'll be heading\l back to work in EVER GRANDE CITY.$"
 
 MisaHouse1F_3::
 # 50 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
@@ -75,3 +69,7 @@ MisaHouse1F_3::
 MisaHouseCantCarryCandy::
 # 55 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	.string "Oh, it looks like you already have some.$"
+
+RustboroCity_Misa_House1F_Text_ExplainCandies::
+# 59 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
+	.string "Don't eat them all at once!\p {COLOR BLUE}{SHADOW LIGHT_BLUE} Unlike EXP CANDIES, RARE CANDIES can\n be used to go over the level cap but are\l extremely limited.\p It's recommended to only use them if\n absolutely needed.$"

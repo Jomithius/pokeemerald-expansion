@@ -821,12 +821,58 @@ LavaridgeTown_EventScript_Joey::
 # 414 "data/maps/LavaridgeTown/scripts.pory"
 	lock
 # 415 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_EventScript_Joey_Text_0, MSGBOX_SIGN
+	msgbox LavaridgeTown_EventScript_Joey_Text_0, MSGBOX_AUTOCLOSE
+# 416 "data/maps/LavaridgeTown/scripts.pory"
+	waitmessage
+# 417 "data/maps/LavaridgeTown/scripts.pory"
+	playse SE_PIN
+# 418 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
 # 419 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 420 "data/maps/LavaridgeTown/scripts.pory"
+	waitse
+# 421 "data/maps/LavaridgeTown/scripts.pory"
+	delay 16
+# 422 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterLeft
+# 423 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 424 "data/maps/LavaridgeTown/scripts.pory"
+	delay 16
+# 425 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight
+# 426 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 427 "data/maps/LavaridgeTown/scripts.pory"
+	delay 16
+# 428 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
+# 429 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 430 "data/maps/LavaridgeTown/scripts.pory"
+	msgbox LavaridgeTown_EventScript_Joey_Text_1, MSGBOX_AUTOCLOSE
+# 434 "data/maps/LavaridgeTown/scripts.pory"
+	waitmessage
+# 435 "data/maps/LavaridgeTown/scripts.pory"
+	setfieldeffectargument 0, 1
+# 436 "data/maps/LavaridgeTown/scripts.pory"
+	dofieldeffect FLDEFF_NPCFLY_OUT
+# 437 "data/maps/LavaridgeTown/scripts.pory"
+	delay 15
+# 438 "data/maps/LavaridgeTown/scripts.pory"
+	removeobject 10
+# 439 "data/maps/LavaridgeTown/scripts.pory"
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+# 440 "data/maps/LavaridgeTown/scripts.pory"
 	release
 	end
 
 
 LavaridgeTown_EventScript_Joey_Text_0:
 # 415 "data/maps/LavaridgeTown/scripts.pory"
-	.string "Yeheaahh…\p …\p It looks like they're too relaxed\n to notice you.$"
+	.string "Yeheheaahh…$"
+
+LavaridgeTown_EventScript_Joey_Text_1:
+# 430 "data/maps/LavaridgeTown/scripts.pory"
+	.string "Huh?\n What?\p Aw, man… I was chillin' for too long.\n I gotta get back to the GYM!$"

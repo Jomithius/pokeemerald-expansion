@@ -42,7 +42,7 @@ RustboroCity_CuttersHouse_Text_ExplainCut:
 	.string "down thin trees if the TRAINER\l"
 	.string "has earned the STONE BADGE.\p"
 	.string "You don't even have to teach\n"
-	.string "it to your POKéMON.$"
+	.string "it to your POKéMON!$"
 
 RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees:
 	.string "When they were expanding the city of\n"
