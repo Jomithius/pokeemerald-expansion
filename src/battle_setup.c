@@ -537,6 +537,7 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_GENESECT:
     case SPECIES_VICTINI:
     case SPECIES_KELDEO:
+    case SPECIES_VOLCARONA:
         CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_BW_VS_LEGENDARY);
         break;
     case SPECIES_PECHARUNT:

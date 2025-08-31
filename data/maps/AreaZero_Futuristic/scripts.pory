@@ -3,17 +3,21 @@ mapscripts AreaZero_Futuristic_MapScripts {
 }
 
 script AreaZero_Futuristic_TryRemoveParadoxMons{
-    specialvar(VAR_RESULT, GetBattleOutcome)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
-    removeobject(VAR_LAST_TALKED)
+    if(flag(FLAG_SYS_CTRL_OBJ_DELETE)){
+        clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+        specialvar(VAR_RESULT, GetBattleOutcome)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+        removeobject(VAR_LAST_TALKED)
+    }
     end
 }
 
 script AreaZero_Futuristic_EventScript_IronValiant{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_IRON_VALIANT, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_IRON_VALIANT, 75)
@@ -25,6 +29,7 @@ script AreaZero_Futuristic_EventScript_IronValiant{
 script AreaZero_Futuristic_EventScript_IronHands{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_IRON_HANDS, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_IRON_HANDS, 75)
@@ -36,6 +41,7 @@ script AreaZero_Futuristic_EventScript_IronHands{
 script AreaZero_Futuristic_EventScript_IronBundle{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_IRON_BUNDLE, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_IRON_BUNDLE, 75)
@@ -47,6 +53,7 @@ script AreaZero_Futuristic_EventScript_IronBundle{
 script AreaZero_Futuristic_EventScript_IronTreads{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_IRON_TREADS, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_IRON_TREADS, 75)
@@ -58,6 +65,7 @@ script AreaZero_Futuristic_EventScript_IronTreads{
 script AreaZero_Futuristic_EventScript_IronLeaves{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_IRON_LEAVES, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_IRON_LEAVES, 75)
@@ -69,6 +77,7 @@ script AreaZero_Futuristic_EventScript_IronLeaves{
 script AreaZero_Futuristic_EventScript_IronBoulder{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_IRON_BOULDER, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_IRON_BOULDER, 75)
@@ -80,6 +89,7 @@ script AreaZero_Futuristic_EventScript_IronBoulder{
 script AreaZero_Futuristic_EventScript_IronCrown{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_IRON_CROWN, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_IRON_CROWN, 75)

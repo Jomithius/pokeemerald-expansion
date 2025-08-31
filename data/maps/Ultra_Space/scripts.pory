@@ -34,15 +34,18 @@ script Ultra_Space_RemoveNecrozma{
 }
 
 script Ultra_Space_TryRemoveUltraBeast{
-    specialvar(VAR_RESULT, GetBattleOutcome)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
-    if(var(VAR_LAST_TALKED) == LOCALID_JAMES || var(VAR_LAST_TALKED) == LOCALID_PROF || var(VAR_LAST_TALKED) == LOCALID_COSMOG){
-        goto(Common_EventScript_NopReturn) // on the chance player talks to one of these npcs then gets into a wild battle in grass
-    }
-    else{
-        removeobject(VAR_LAST_TALKED)
+    if(flag(FLAG_SYS_CTRL_OBJ_DELETE)){
+        clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+        specialvar(VAR_RESULT, GetBattleOutcome)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+        if(var(VAR_LAST_TALKED) == LOCALID_JAMES || var(VAR_LAST_TALKED) == LOCALID_PROF || var(VAR_LAST_TALKED) == LOCALID_COSMOG){
+            goto(Common_EventScript_NopReturn) // on the chance player talks to one of these npcs then gets into a wild battle in grass
+        }
+        else{
+            removeobject(VAR_LAST_TALKED)
+        }
     }
     return
 }
@@ -60,6 +63,7 @@ Ultra_Space_EventScript_TurnPlayerNorth::
 script Ultra_Space_EventScript_ArrivedInUltraSpace{
     lockall
     setrespawn(HEAL_LOCATION_ULTRA_SPACE)
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playse(SE_PIN)
     applymovement(2, Common_Movement_ExclamationMark)
     delay(10)
@@ -342,6 +346,7 @@ script Ultra_Space_EventScript_Necrozma{
 script Ultra_Space_EventScript_Buzzwole{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_BUZZWOLE, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_BUZZWOLE, 75)
@@ -353,6 +358,7 @@ script Ultra_Space_EventScript_Buzzwole{
 script Ultra_Space_EventScript_Pheromosa{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_PHEROMOSA, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_PHEROMOSA, 75)
@@ -364,6 +370,7 @@ script Ultra_Space_EventScript_Pheromosa{
 script Ultra_Space_EventScript_Guzzlord{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_GUZZLORD, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_GUZZLORD, 75)
@@ -375,6 +382,7 @@ script Ultra_Space_EventScript_Guzzlord{
 script Ultra_Space_EventScript_Stakataka{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_STAKATAKA, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_STAKATAKA, 75)
@@ -386,6 +394,7 @@ script Ultra_Space_EventScript_Stakataka{
 script Ultra_Space_EventScript_Kartana{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_KARTANA, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_KARTANA, 75)
@@ -397,6 +406,7 @@ script Ultra_Space_EventScript_Kartana{
 script Ultra_Space_EventScript_Xurkitree{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_XURKITREE, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_XURKITREE, 75)
@@ -408,6 +418,7 @@ script Ultra_Space_EventScript_Xurkitree{
 script Ultra_Space_EventScript_Celesteela{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_CELESTEELA, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_CELESTEELA, 75)
@@ -419,6 +430,7 @@ script Ultra_Space_EventScript_Celesteela{
 script Ultra_Space_EventScript_Lunala{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_LUNALA, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_LUNALA, 75)
@@ -431,6 +443,7 @@ script Ultra_Space_EventScript_Lunala{
 script Ultra_Space_EventScript_Solgaleo{
     lock
     faceplayer
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_SOLGALEO, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_SOLGALEO, 75)

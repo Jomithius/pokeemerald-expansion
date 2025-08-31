@@ -338,22 +338,22 @@
     },
     {
       "type": "weather",
-      "x": 10,
-      "y": 8,
+      "x": 9,
+      "y": 7,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SHADE"
     },
     {
       "type": "weather",
       "x": 12,
-      "y": 8,
+      "y": 7,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SHADE"
     },
     {
       "type": "weather",
-      "x": 11,
-      "y": 9,
+      "x": 10,
+      "y": 7,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SHADE"
     }

@@ -1223,7 +1223,7 @@
 
 // custom flags
 #define FLAG_LINA_HOUSE_EEVEE                                       0x493 // Gift Eevee
-#define FLAG_LUNA_HOUSE_MOTHIM                                      0x494 // Unused
+#define FLAG_DEFEATED_VOLCARONA                                     0x494 // Mirage Tower 4f
 #define FLAG_HIDE_MISA_LILYCOVE_DEPT_5F                             0x495 // Misa Lilycove 5F
 #define FLAG_PETALBURG_RATICATE                                     0x496 // Rat Cave Petalburg
 #define FLAG_PETALBURG_RATICATE_ALOLA                               0x497 // Rat Cave Petalburg

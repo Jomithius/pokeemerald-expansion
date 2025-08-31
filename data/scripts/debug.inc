@@ -174,7 +174,8 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	clearflag FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY
+	warp MAP_THE_UNDER, 9, 43
+	waitstate
 	release
 	end
 

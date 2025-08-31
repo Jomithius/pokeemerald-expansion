@@ -1,0 +1,74 @@
+raw`.set LOCALID_ROOT_FOSSIL, 3
+.set LOCALID_CLAW_FOSSIL, 4
+
+MirageTower_3F_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole
+	map_script MAP_SCRIPT_ON_TRANSITION, CaveHole_FixCrackedGround
+	map_script MAP_SCRIPT_ON_RESUME, MirageTower_3F_SetHoleWarp
+	.byte 0
+
+MirageTower_3F_SetHoleWarp:
+	setstepcallback STEP_CB_CRACKED_FLOOR
+	setholewarp MAP_MIRAGE_TOWER_2F
+	end
+
+MirageTower_3F_EventScript_RootFossil::
+	lock
+	faceplayer
+	msgbox MirageTower_4F_Text_TakeRootFossil, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveRootFossil
+	giveitem ITEM_ROOT_FOSSIL
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	closemessage
+	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
+	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
+	removeobject LOCALID_ROOT_FOSSIL
+	delay 30
+	setflag FLAG_CHOSE_ROOT_FOSSIL
+	goto MirageTower_3F_EventScript_OtherFossilDisappeared
+	end
+
+MirageTower_3F_EventScript_LeaveRootFossil::
+	msgbox MirageTower_4F_Text_LeftRootFossilAlone, MSGBOX_DEFAULT
+	release
+	end
+
+MirageTower_3F_EventScript_ClawFossil::
+	lock
+	faceplayer
+	msgbox MirageTower_4F_Text_TakeClawFossil, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveClawFossil
+	giveitem ITEM_CLAW_FOSSIL
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	closemessage
+	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
+	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
+	removeobject LOCALID_CLAW_FOSSIL
+	delay 30
+	setflag FLAG_CHOSE_CLAW_FOSSIL
+	goto MirageTower_3F_EventScript_OtherFossilDisappeared
+	end
+
+MirageTower_3F_EventScript_LeaveClawFossil::
+	msgbox MirageTower_4F_Text_LeaveClawFossilAlone, MSGBOX_DEFAULT
+	release
+	end
+`
+
+script MirageTower_3F_EventScript_OtherFossilDisappeared {
+    if(flag(FLAG_CHOSE_CLAW_FOSSIL)){
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        removeobject(LOCALID_ROOT_FOSSIL)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("The ROOT FOSSIL disappeared…", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        removeobject(LOCALID_CLAW_FOSSIL)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("The CLAW FOSSIL disappeared…", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    release
+    end
+}

@@ -5,6 +5,40 @@ mapscripts Route135_MapScripts {
 script Route135_OnTransition{
     setflag(FLAG_ENABLED_JAMES_MATCH_CALL)
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
+    call(Route135_CheckEnterFromLab)
+    end
+}
+
+script Route135_CheckEnterFromLab{
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    goto_if_le(VAR_TEMP_0, 8, Route135_EnteredFromLab)
+    return
+}
+
+//unused
+script Route135_TryUpdateMusic{
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+    goto_if_eq(VAR_RESULT, DIR_EAST, Route135_UpdateMusicLushAcreage)
+    goto_if_eq(VAR_RESULT, DIR_NORTH, Route135_UpdateMusicLushAcreage)
+    goto_if_eq(VAR_RESULT, DIR_WEST, Route135_UpdateDefaultMusic)
+    goto_if_eq(VAR_RESULT, DIR_SOUTH, Route135_UpdateDefaultMusic)
+    end
+}
+
+script Route135_UpdateMusicLushAcreage{
+    fadenewbgm(MUS_ETERNA_CITY_NIGHT)
+    savebgm(MUS_ETERNA_CITY_NIGHT)
+    end
+}
+
+script Route135_UpdateDefaultMusic{
+    fadedefaultbgm
+    savebgm(MUS_ROWANS_LAB)
+    end
+}
+
+script Route135_EnteredFromLab{
+    savebgm(MUS_ETERNA_CITY_NIGHT)
     end
 }
 
@@ -47,7 +81,7 @@ script Route135_EventScript_Denjamin{
 script Route135_EventScript_Whitney{
     goto_if_not_defeated(TRAINER_WHITNEY, Route135_EventScript_WhitneyBattle)
     goto_if_unset(FLAG_RECEIVED_MILTANKITE, Route135_EventScript_GiveMiltankite)
-    msgbox("Gosh, I'm so bored!\p
+    msgbox("I'm so bored!\p
         I want to go back to GOLDENROD\n
         CITY already!", MSGBOX_NPC)
 	end
@@ -127,7 +161,11 @@ script Route135_EventScript_Man4{
 }
 
 script Route135_EventScript_Man1{
-    msgbox("I lost my gosh darn hat!", MSGBOX_NPC)
+    lock
+    faceplayer
+    msgbox("I lost my gosh darn hat!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
     end
 }
 

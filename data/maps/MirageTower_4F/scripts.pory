@@ -1,0 +1,127 @@
+raw`MirageTower_4F_MapScripts::
+    map_script MAP_SCRIPT_ON_RESUME, MirageTower_4F_RemoveVolcarona
+	.byte 0
+
+MirageTower_4F_EventScript_RootFossil::
+	lock
+	faceplayer
+	msgbox MirageTower_4F_Text_TakeRootFossil, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveRootFossil
+	giveitem ITEM_ROOT_FOSSIL
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	closemessage
+	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
+	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
+	removeobject LOCALID_ROOT_FOSSIL
+	delay 30
+	setflag FLAG_CHOSE_ROOT_FOSSIL
+	goto MirageTower_4F_EventScript_CollapseMirageTower
+	end
+
+MirageTower_4F_EventScript_LeaveRootFossil::
+	msgbox MirageTower_4F_Text_LeftRootFossilAlone, MSGBOX_DEFAULT
+	release
+	end
+
+MirageTower_4F_EventScript_ClawFossil::
+	lock
+	faceplayer
+	msgbox MirageTower_4F_Text_TakeClawFossil, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveClawFossil
+	giveitem ITEM_CLAW_FOSSIL
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	closemessage
+	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
+	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
+	removeobject LOCALID_CLAW_FOSSIL
+	delay 30
+	setflag FLAG_CHOSE_CLAW_FOSSIL
+	goto MirageTower_4F_EventScript_CollapseMirageTower
+	end
+
+MirageTower_4F_EventScript_LeaveClawFossil::
+	msgbox MirageTower_4F_Text_LeaveClawFossilAlone, MSGBOX_DEFAULT
+	release
+	end
+
+MirageTower_4F_EventScript_CollapseMirageTower::
+	setvar VAR_0x8004, 1   @ vertical pan
+	setvar VAR_0x8005, 1   @ horizontal pan
+	setvar VAR_0x8006, 32  @ num shakes
+	setvar VAR_0x8007, 2   @ shake delay
+	special ShakeCamera
+	waitstate
+	special DoMirageTowerCeilingCrumble
+	waitstate
+	setvar VAR_MIRAGE_TOWER_STATE, 1
+	clearflag FLAG_LANDMARK_MIRAGE_TOWER
+	warp MAP_ROUTE111, 19, 59
+	waitstate
+	release
+	end
+
+MirageTower_4F_Text_TakeRootFossil:
+	.string "You found the ROOT FOSSIL.\p"
+	.string "If this FOSSIL is taken, the other\n"
+	.string "will likely fall into the sand…\p"
+	.string "Take the ROOT FOSSIL anyway?$"
+
+MirageTower_4F_Text_LeftRootFossilAlone:
+	.string "{PLAYER} left the ROOT FOSSIL alone.$"
+
+MirageTower_4F_Text_TakeClawFossil:
+	.string "You found the CLAW FOSSIL.\p"
+	.string "If this FOSSIL is taken, the other\n"
+	.string "will likely fall into the sand…\p"
+	.string "Take the CLAW FOSSIL anyway?$"
+
+MirageTower_4F_Text_LeaveClawFossilAlone:
+	.string "{PLAYER} left the CLAW FOSSIL alone.$"
+
+`
+
+script MirageTower_4F_RemoveVolcarona{
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_WON, Common_EventScript_NopReturn)
+    removeobject(1)
+    end
+}
+
+script MirageTower_4F_EventScript_Volcarona{
+    lock
+    faceplayer
+    setflag(FLAG_DEFEATED_VOLCARONA)
+    playmoncry(SPECIES_VOLCARONA, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_VOLCARONA, 35)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+        playmoncry(SPECIES_VOLCARONA, CRY_MODE_ENCOUNTER)
+        waitmoncry
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        removeobject(1)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("The VOLCARONA disappeared…", MSGBOX_AUTOCLOSE)
+        waitmessage
+        goto(MirageTower_4F_EventScript_CollapseMirageTower)
+    }
+    elif(var(VAR_RESULT) == B_OUTCOME_WON){
+        playmoncry(SPECIES_VOLCARONA, CRY_MODE_FAINT)
+        waitmoncry
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        removeobject(1)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("The VOLCARONA disappeared…", MSGBOX_AUTOCLOSE)
+        waitmessage
+        goto(MirageTower_4F_EventScript_CollapseMirageTower)
+    }
+    else{
+        goto(MirageTower_4F_EventScript_CollapseMirageTower)
+    }
+    end
+}

@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE135",
   "name": "Route135",
   "layout": "LAYOUT_ROUTE135",
-  "music": "MUS_ETERNA_CITY_NIGHT",
+  "music": "MUS_ROWANS_LAB",
   "region_map_section": "MAPSEC_ROUTE_135",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -48,10 +48,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 18,
+      "x": 21,
       "y": 32,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -404,6 +404,114 @@
       "var": "VAR_TEMP_7",
       "var_value": "0",
       "script": "Route135_EventScript_FirstMoo"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 38,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateMusicLushAcreage"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 38,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateMusicLushAcreage"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 38,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateMusicLushAcreage"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 8,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateMusicLushAcreage"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 9,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateMusicLushAcreage"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 10,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateMusicLushAcreage"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 41,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateDefaultMusic"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 41,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateDefaultMusic"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 41,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateDefaultMusic"
+    },
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 8,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateDefaultMusic"
+    },
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 9,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateDefaultMusic"
+    },
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 10,
+      "elevation": 0,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "Route135_UpdateDefaultMusic"
     }
   ],
   "bg_events": [
