@@ -68,7 +68,8 @@ script MirageTower_3F_EventScript_OtherFossilDisappeared {
         fadescreenswapbuffers(FADE_FROM_BLACK)
         msgbox("The CLAW FOSSIL disappeared…", MSGBOX_AUTOCLOSE)
     }
-    waitmessage
+	waitmessage
+	goto_if_set(FLAG_DEFEATED_VOLCARONA, MirageTower_4F_EventScript_CollapseMirageTower)
     release
     end
 }

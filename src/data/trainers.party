@@ -5289,7 +5289,7 @@ Ability: Gluttony
 Level: 36  
 EVs: 248 Atk / 8 Def / 252 Spe  
 Jolly Nature  
-- Hone Claws  
+- Swords Dance  
 - Extreme Speed  
 - Facade  
 - Shadow Claw  
@@ -5308,11 +5308,11 @@ IVs: 0 Atk
 Salazzle-Totem @ Charcoal  
 Ability: Corrosion  
 Level: 36  
-EVs: 96 HP / 48 Def / 100 SpA / 56 SpD / 208 Spe  
+EVs: 248 SpA / 4 SpD / 248 Spe  
 Modest Nature  
 IVs: 0 Atk / 30 Def  
 - Flame Burst  
-- Venoshock  
+- Sludge Bomb  
 - Toxic  
 - Fake Out
 
@@ -5340,7 +5340,7 @@ IVs: 0 Atk
 Lopunny (F) @ Silk Scarf  
 Ability: Cute Charm  
 Level: 36  
-EVs: 108 HP / 64 Atk / 124 Def / 48 SpD / 148 Spe  
+EVs: 248 Atk / 4 SpD / 248 Spe  
 Naughty Nature  
 - Facade  
 - Drain Punch  

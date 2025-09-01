@@ -124,6 +124,8 @@ MirageTower_3F_EventScript_OtherFossilDisappeared_1:
 # 71 "data/maps/MirageTower_3F/scripts.pory"
 	waitmessage
 # 72 "data/maps/MirageTower_3F/scripts.pory"
+	goto_if_set FLAG_DEFEATED_VOLCARONA, MirageTower_4F_EventScript_CollapseMirageTower
+# 73 "data/maps/MirageTower_3F/scripts.pory"
 	release
 	end
 

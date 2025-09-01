@@ -174,7 +174,7 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	warp MAP_THE_UNDER, 9, 43
+	warp MAP_MIRAGE_TOWER_4F, 6, 5
 	waitstate
 	release
 	end

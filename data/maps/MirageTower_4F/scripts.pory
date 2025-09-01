@@ -108,7 +108,8 @@ script MirageTower_4F_EventScript_Volcarona{
         fadescreenswapbuffers(FADE_FROM_BLACK)
         msgbox("The VOLCARONA disappeared…", MSGBOX_AUTOCLOSE)
         waitmessage
-        goto(MirageTower_4F_EventScript_CollapseMirageTower)
+        goto_if_set(FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower)
+		goto_if_set(FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower)
     }
     elif(var(VAR_RESULT) == B_OUTCOME_WON){
         playmoncry(SPECIES_VOLCARONA, CRY_MODE_FAINT)
@@ -118,10 +119,13 @@ script MirageTower_4F_EventScript_Volcarona{
         fadescreenswapbuffers(FADE_FROM_BLACK)
         msgbox("The VOLCARONA disappeared…", MSGBOX_AUTOCLOSE)
         waitmessage
-        goto(MirageTower_4F_EventScript_CollapseMirageTower)
+        goto_if_set(FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower)
+		goto_if_set(FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower)
     }
     else{
-        goto(MirageTower_4F_EventScript_CollapseMirageTower)
+        goto_if_set(FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower)
+		goto_if_set(FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower)
     }
+	release
     end
 }

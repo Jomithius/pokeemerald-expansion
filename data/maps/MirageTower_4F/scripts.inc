@@ -198,12 +198,16 @@ MirageTower_4F_EventScript_Volcarona::
 # 103 "data/maps/MirageTower_4F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MirageTower_4F_EventScript_Volcarona_2
-# 113 "data/maps/MirageTower_4F/scripts.pory"
+# 114 "data/maps/MirageTower_4F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MirageTower_4F_EventScript_Volcarona_3
-# 124 "data/maps/MirageTower_4F/scripts.pory"
-	goto MirageTower_4F_EventScript_CollapseMirageTower
+# 126 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
+# 127 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
 MirageTower_4F_EventScript_Volcarona_1:
+# 129 "data/maps/MirageTower_4F/scripts.pory"
+	release
 	end
 
 MirageTower_4F_EventScript_Volcarona_2:
@@ -222,26 +226,30 @@ MirageTower_4F_EventScript_Volcarona_2:
 # 110 "data/maps/MirageTower_4F/scripts.pory"
 	waitmessage
 # 111 "data/maps/MirageTower_4F/scripts.pory"
-	goto MirageTower_4F_EventScript_CollapseMirageTower
+	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
+# 112 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
 	goto MirageTower_4F_EventScript_Volcarona_1
 
 MirageTower_4F_EventScript_Volcarona_3:
-# 114 "data/maps/MirageTower_4F/scripts.pory"
-	playmoncry SPECIES_VOLCARONA, CRY_MODE_FAINT
 # 115 "data/maps/MirageTower_4F/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_VOLCARONA, CRY_MODE_FAINT
 # 116 "data/maps/MirageTower_4F/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	waitmoncry
 # 117 "data/maps/MirageTower_4F/scripts.pory"
-	removeobject 1
+	fadescreenswapbuffers FADE_TO_BLACK
 # 118 "data/maps/MirageTower_4F/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	removeobject 1
 # 119 "data/maps/MirageTower_4F/scripts.pory"
-	msgbox MirageTower_4F_EventScript_Volcarona_Text_0, MSGBOX_AUTOCLOSE
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 120 "data/maps/MirageTower_4F/scripts.pory"
-	waitmessage
+	msgbox MirageTower_4F_EventScript_Volcarona_Text_0, MSGBOX_AUTOCLOSE
 # 121 "data/maps/MirageTower_4F/scripts.pory"
-	goto MirageTower_4F_EventScript_CollapseMirageTower
+	waitmessage
+# 122 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
+# 123 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
 	goto MirageTower_4F_EventScript_Volcarona_1
 
 

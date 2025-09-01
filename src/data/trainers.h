@@ -14241,7 +14241,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5292
-                MOVE_HONE_CLAWS,
+                MOVE_SWORDS_DANCE,
                 MOVE_EXTREME_SPEED,
                 MOVE_FACADE,
                 MOVE_SHADOW_CLAW,
@@ -14279,7 +14279,7 @@ F_TRAINER_FEMALE |
 #line 5308
             .heldItem = ITEM_CHARCOAL,
 #line 5311
-            .ev = TRAINER_PARTY_EVS(96, 0, 48, 208, 100, 56),
+            .ev = TRAINER_PARTY_EVS(0, 0, 0, 248, 248, 4),
 #line 5313
             .iv = TRAINER_PARTY_IVS(31, 0, 30, 31, 31, 31),
 #line 5309
@@ -14292,7 +14292,7 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 5314
                 MOVE_FLAME_BURST,
-                MOVE_VENOSHOCK,
+                MOVE_SLUDGE_BOMB,
                 MOVE_TOXIC,
                 MOVE_FAKE_OUT,
             },
@@ -14355,7 +14355,7 @@ F_TRAINER_FEMALE |
 #line 5340
             .heldItem = ITEM_SILK_SCARF,
 #line 5343
-            .ev = TRAINER_PARTY_EVS(108, 64, 124, 148, 0, 48),
+            .ev = TRAINER_PARTY_EVS(0, 248, 0, 248, 0, 4),
 #line 5345
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 5341

@@ -1307,8 +1307,8 @@ PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
 	.string "With that BADGE, the POKéMON\n"
 	.string "that know the HM move SURF\l"
 	.string "will be able to travel over water.\p"
-	.string "Also I don't have room. So {PLAYER},\n"
-	.string "take this.$"
+	.string "Also, I don't have any room.\n"
+	.string "So you can take this TM.$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
 	.string "TM42 contains FACADE.\p"
@@ -1507,9 +1507,9 @@ PetalburgCity_Gym_Text_JodyPostBattle:
 	.string "in the next room.$"
 
 PetalburgCity_Gym_Text_JodyPostBadge:
-	.string "Here's another secret…\n"
-	.string "The reason this GYM's theme is\l"
-	.string "using items is because LUNA said\l"
+	.string "Here's another secret…\p"
+	.string "The reason this GYM's theme is\n"
+	.string "item based is because LUNA said\l"
 	.string "he didn't have any room to store\l"
 	.string "them anymore.\p"
 	.string "He just dumped all of them on us\n"
@@ -1563,7 +1563,7 @@ PetalburgCity_Gym_Text_GymStatue:
 
 PetalburgCity_Gym_Text_GymStatueCertified:
 	.string "PETALBURG CITY POKéMON GYM\p"
-	.string "NORMAN'S CERTIFIED TRAINERS:\p"
+	.string "LUNA'S CERTIFIED TRAINERS:\p"
 	.string "JAMES\n"
 	.string "{PLAYER}$"
 
