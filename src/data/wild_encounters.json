@@ -1951,7 +1951,7 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_SLAKOTH"
+                "species": "SPECIES_PIKACHU_STARTER"
               }
             ]
           }
@@ -3401,63 +3401,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 24,
-                "max_level": 24,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 24,
-                "max_level": 24,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_CHARJABUG"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_EMOLGA"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_DEDENNE"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_MORPEKO"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_MORPEKO"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_MORPEKO"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_PIKACHU"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_PIKACHU"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_PIKACHU_ALOLA"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_PIKACHU_HOENN"
               }
             ]

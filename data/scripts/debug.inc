@@ -174,8 +174,8 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	warp MAP_MIRAGE_TOWER_4F, 6, 5
-	waitstate
+	setvar VAR_MAUVILLE_CITY_STATE, 1
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
 	release
 	end
 

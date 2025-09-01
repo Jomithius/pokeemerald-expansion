@@ -1,6 +1,7 @@
 raw `.set LOCALID_WALLY, 6
 .set LOCALID_WALLYS_UNCLE, 7
-.set LOCALID_SCOTT, 11
+.set LOCALID_SCOTT, 1
+.set LOCALID_DACA, 8
 
 MauvilleCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_OnTransition
@@ -439,6 +440,7 @@ MauvilleCity_EventScript_Wattson::
 	giveitem ITEM_BASEMENT_KEY
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_GOT_BASEMENT_KEY_FROM_WATTSON
+	setvar VAR_MAUVILLE_CITY_STATE, 2 @ Custom for new mauville triggers
 	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
 	release
 	end
@@ -453,8 +455,10 @@ MauvilleCity_EventScript_CompletedNewMauville::
 	giveitem ITEM_TM_THUNDERBOLT
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON
+	setvar VAR_MAUVILLE_CITY_STATE, 3 @ Custom for New Mauville triggers
 	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
-	release
+	goto MauvilleCity_EventScript_DacaGoesBackToGym
+	@ release
 	end
 
 MauvilleCity_EventScript_ReceivedThunderbolt::
@@ -562,7 +566,6 @@ MauvilleCity_Text_UncleVisitUsSometime:
 	.string "sometime?\l"
 	.string "I'm sure WALLY would enjoy it.$"
 
-
 MauvilleCity_Text_WallyPokenavCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
@@ -599,33 +602,35 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "I need a favor, {PLAYER}{KUN}!\p"
 	.string "MAUVILLE CITY has an underground\n"
 	.string "sector called NEW MAUVILLE.\p"
+	.string "We used to party there, but it's\n"
+	.string "abandoned now.\p"
 	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
 	.string "switch off the GENERATOR.\p"
-	.string "The GENERATOR has been running a bit\n"
-	.string "haywire. It's getting unsafe.\p"
+	.string "It's been running a bit haywire.\n"
+	.string "It's getting unsafe.\p"
 	.string "Here, this is the KEY to get into\n"
 	.string "NEW MAUVILLE.$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "DACA: Don't worry about it.\n"
+	.string "Don't be nervous.\n"
 	.string "It won't be a challenge to you.\p"
 	.string "The entrance to NEW MAUVILLE is just\n"
 	.string "a short SURF away from ROUTE 110.\p"
-	.string "That's it, then, go party!\n"
+	.string "That's it, then! Go party!\n"
 	.string "Hahaha!$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "DACA: Hahaha!\p"
-	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
+	.string "Thanks, {PLAYER}{KUN}! I knew it was\n"
 	.string "the right choice asking you!\p"
-	.string "This is my thanks--a TM containing\n"
-	.string "THUNDERBOLT!\p"
+	.string "Take this for your trouble: a TM\n"
+	.string "containing THUNDERBOLT!\p"
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
-	.string "DACA: Hahaha!\p"
-	.string "It pleases me to no end to see\n"
-	.string "people party!$"
+	.string "Hahaha!\p"
+	.string "Let's party again soon,\n"
+	.string "{PLAYER}!$"
 
 MauvilleCity_Text_NurseHurtMonBackToHealth:
 	.string "You know, it's cool to have POKéMON\n"
@@ -1087,3 +1092,119 @@ script MauvilleCity_EventScript_BikerRight{ // for route 112, i was just lazy
 	release
 	end
 }
+
+script MauvilleCity_EventScript_NewMauvilleStartTrigger{
+	lockall
+	setobjectnewmovementtype(LOCALID_DACA, MOVEMENT_TYPE_NONE)
+	playse(SE_PIN)
+    applymovement(LOCALID_DACA, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+	applymovement(LOCALID_DACA, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement(0)
+	msgbox("DACA: {PLAYER}!", MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	waitmovement(0)
+	msgbox("Over here!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+	switch(var(VAR_TEMP_1)){
+		case 7:
+			applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerToDaca7)
+		case 8:
+			applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerToDaca8)
+		case 9:
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft2)
+		case 10:
+			applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerToDaca10)
+		case 11:
+			applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerToDaca11)
+		default:
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	}
+	waitmovement(0)
+	goto(MauvilleCity_EventScript_WattsonNewMauvilleTrigger)
+	end
+}
+
+script MauvilleCity_EventScript_WattsonNewMauvilleTrigger{
+	msgbox(MauvilleCity_Text_WattsonNeedFavorTakeKey, MSGBOX_DEFAULT)
+	waitmessage
+	giveitem(ITEM_BASEMENT_KEY)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+	setflag(FLAG_GOT_BASEMENT_KEY_FROM_WATTSON)
+	setvar(VAR_MAUVILLE_CITY_STATE, 2) // Custom for new mauville triggers
+	msgbox(MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_AUTOCLOSE)
+	waitmessage
+	releaseall
+	end
+}
+
+script MauvilleCity_EventScript_TakeCareOfFavorToDaca{
+	lockall
+	msgbox("I should take care of that\n
+		favor for DACA first.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+script MauvilleCity_EventScript_DacaGoesBackToGym{
+	closemessage
+	switch(var(VAR_FACING)){
+		case DIR_NORTH:
+		case DIR_SOUTH:
+			applymovement(LOCALID_DACA, MauvilleCity_Movement_DacaLeavesPlayerFaceNorthSouth)
+			delay(16)
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		case DIR_EAST:
+			applymovement(LOCALID_DACA, MauvilleCity_Movement_DacaLeavesPlayerFaceEast)
+			delay(24)
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		case DIR_WEST:
+			applymovement(LOCALID_DACA, MauvilleCity_Movement_DacaLeavesPlayerFaceNorthSouth)
+		default:
+			applymovement(LOCALID_DACA, MauvilleCity_Movement_DacaLeavesPlayerFaceNorthSouth)
+	}
+	waitmovement(LOCALID_DACA)
+	removeobject(LOCALID_DACA)
+	release
+	end
+}
+
+movement MauvilleCity_Movement_PlayerToDaca7{
+	walk_left
+	walk_down * 2
+	walk_left
+}
+
+movement MauvilleCity_Movement_PlayerToDaca8{
+	walk_left * 2
+	walk_down
+	walk_in_place_left
+}
+
+movement MauvilleCity_Movement_PlayerToDaca10{
+	walk_left * 2
+	walk_up
+	walk_in_place_left
+}
+
+movement MauvilleCity_Movement_PlayerToDaca11{
+	walk_left
+	walk_up * 2
+	walk_left
+}
+
+movement MauvilleCity_Movement_DacaLeavesPlayerFaceNorthSouth{
+	walk_left * 9
+}
+
+movement MauvilleCity_Movement_DacaLeavesPlayerFaceEast{
+	walk_up
+	walk_left * 10
+}
+

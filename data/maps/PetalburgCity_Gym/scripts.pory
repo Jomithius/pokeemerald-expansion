@@ -1613,6 +1613,7 @@ script PetalburgCity_Gym_EventScript_GiveSwordsDance{
 	clearflag(FLAG_ENABLE_NORMAN_MATCH_CALL)
 	setflag(FLAG_REGISTERED_LUNA_POKENAV) // changes match call to reflect updated sprite.
 	clearflag(FLAG_HIDE_FANTASIA_LUNAS_HOUSE) // just for lore
+	setvar(VAR_MAUVILLE_CITY_STATE, 1) // for new mauville sidequest
 	return
 }
 

@@ -541,7 +541,7 @@ NewMauville_Inside_EventScript_Togedemaru::
 # 273 "data/maps/NewMauville_Inside/scripts.pory"
 	waitmoncry
 # 274 "data/maps/NewMauville_Inside/scripts.pory"
-	setwildbattle SPECIES_TOGEDEMARU_TOTEM, 20, ITEM_ROCKY_HELMET
+	setwildbattle SPECIES_TOGEDEMARU_TOTEM, 36, ITEM_ROCKY_HELMET
 # 275 "data/maps/NewMauville_Inside/scripts.pory"
 	dowildbattle
 # 276 "data/maps/NewMauville_Inside/scripts.pory"

@@ -794,6 +794,96 @@
       "var": "VAR_SPEEDWAGON_STATE",
       "var_value": "5",
       "script": "MauvileCity_EventScript_ICantLeaveLikeThisEast"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "1",
+      "script": "MauvilleCity_EventScript_NewMauvilleStartTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "1",
+      "script": "MauvilleCity_EventScript_NewMauvilleStartTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "1",
+      "script": "MauvilleCity_EventScript_NewMauvilleStartTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "1",
+      "script": "MauvilleCity_EventScript_NewMauvilleStartTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "1",
+      "script": "MauvilleCity_EventScript_NewMauvilleStartTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "2",
+      "script": "MauvilleCity_EventScript_TakeCareOfFavorToDaca"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "2",
+      "script": "MauvilleCity_EventScript_TakeCareOfFavorToDaca"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "2",
+      "script": "MauvilleCity_EventScript_TakeCareOfFavorToDaca"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "2",
+      "script": "MauvilleCity_EventScript_TakeCareOfFavorToDaca"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "2",
+      "script": "MauvilleCity_EventScript_TakeCareOfFavorToDaca"
     }
   ],
   "bg_events": [

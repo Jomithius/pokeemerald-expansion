@@ -271,7 +271,7 @@ script NewMauville_Inside_EventScript_Togedemaru{
     playmoncry(SPECIES_TOGEDEMARU, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_TOGEDEMARU_TOTEM, 20, ITEM_ROCKY_HELMET)
+    setwildbattle(SPECIES_TOGEDEMARU_TOTEM, 36, ITEM_ROCKY_HELMET)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){

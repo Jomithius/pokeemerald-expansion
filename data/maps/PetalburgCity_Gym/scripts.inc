@@ -3218,43 +3218,45 @@ PetalburgCity_Gym_EventScript_GiveSwordsDance::
 	setflag FLAG_REGISTERED_LUNA_POKENAV
 # 1615 "data/maps/PetalburgCity_Gym/scripts.pory"
 	clearflag FLAG_HIDE_FANTASIA_LUNAS_HOUSE
+# 1616 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setvar VAR_MAUVILLE_CITY_STATE, 1
 	return
 
 
 PetalburgCity_Gym_EventScript_Norman_FinalBattle::
-# 1625 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1626 "data/maps/PetalburgCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_NORMAN_2, PetalburgCity_Gym_EventScript_Norman_FinalBattle_Text_0, PetalburgCity_Gym_EventScript_Norman_FinalBattle_Text_1, PetalburgCity_Gym_EventScript_NormanDefeatedFinal
 	end
 
 
 PetalburgCity_Gym_EventScript_NormanDefeatedFinal::
-# 1630 "data/maps/PetalburgCity_Gym/scripts.pory"
-	addvar VAR_GYM_LEADER_COUNT, 1
 # 1631 "data/maps/PetalburgCity_Gym/scripts.pory"
+	addvar VAR_GYM_LEADER_COUNT, 1
+# 1632 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanDefeatedFinal_Text_0, MSGBOX_NPC
-# 1633 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1634 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
 	end
 
 
 PetalburgCity_Gym_EventScript_NormanDefeatedFinal2::
-# 1638 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1639 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanDefeatedFinal_Text_0, MSGBOX_NPC
 	end
 
 
 PetalburgCity_Gym_EventScript_Norman_FinalBattle_Text_0:
-# 1625 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1626 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "{PLAYER}.\nWelcome back.\pEh, mucho texto.\nLet's just get to the battle.$"
 
 PetalburgCity_Gym_EventScript_Norman_FinalBattle_Text_1:
-# 1625 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1626 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "It's hard to be strong enough\nto admit that you're weak… you know?$"
 
 PetalburgCity_Gym_EventScript_NormanDefeatedFinal_Text_0:
-# 1631 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1632 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "You beat me again, {PLAYER}.\n Great job.$"
 
 PetalburgCity_Gym_Text_ExplainSwordsDance::
-# 1619 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1620 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "That TM63, SWORDS DANCE, sharply\n raises the user's ATTACK.$"
