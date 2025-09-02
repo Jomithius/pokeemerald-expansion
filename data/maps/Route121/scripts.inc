@@ -36,6 +36,24 @@ Route121_EventScript_AquaGruntsMoveOut::
 	releaseall
 	end
 
+Route121_EventScript_SeeWhatsGoingOnAtMtPyre::
+	lockall
+	msgbox Route121_Text_SeeWhatsGoingOnAtMtPyre, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
+	waitmovement 0
+	releaseall
+	end
+
+Route121_EventScript_SeeWhatsGoingOnAtMtPyreNorth::
+	lockall
+	msgbox Route121_Text_SeeWhatsGoingOnAtMtPyre, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	waitmovement 0
+	releaseall
+	end
+
 Route121_Movement_Grunt1Exit:
 	walk_down
 	walk_down
@@ -171,6 +189,10 @@ Route121_EventScript_RematchCristin::
 Route121_Text_OkayMoveOutToMtPyre:
 	.string "Okay!\n"
 	.string "We're to move out to MT. PYRE!$"
+
+Route121_Text_SeeWhatsGoingOnAtMtPyre:
+	.string "I should see what's going\n"
+	.string "on at MT. PYRE.$"
 
 Route121_Text_AheadLoomsMtPyre:
 	.string "Ahead looms MT. PYRE…\p"

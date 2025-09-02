@@ -249,11 +249,11 @@ Double Battle: No
 AI: Basic Trainer 
 
 Zebstrika
-Level: 39
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Eldegoss
-Level: 39
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ALBERTO ===
@@ -4609,7 +4609,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Manectric
-Level: 39
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MICAH ===
@@ -12766,7 +12766,7 @@ Careful Nature
 
 Typhlosion-Hisui (M) @ Assault Vest  
 Ability: Frisk  
-Level: 42    
+Level: 41    
 EVs: 8 HP / 4 Def / 252 SpA / 244 Spe  
 Timid Nature  
 IVs: 0 Atk / 30 Def  
@@ -15617,15 +15617,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Elekid
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Comfey
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_PAT ===
@@ -15638,15 +15638,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Ribombee
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Whimsicott
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Klefki
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_CRISTIN_1 ===
@@ -15659,11 +15659,11 @@ Double Battle: No
 AI: Basic Trainer 
 
 Wigglytuff
-Level: 39
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Trevenant
-Level: 39
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CARSON ===
@@ -19779,11 +19779,11 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Zebstrika
-Level: 39
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Eldegoss
-Level: 39
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ALBERTO ===
@@ -24336,7 +24336,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Manectric
-Level: 39
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MICAH ===
@@ -32699,7 +32699,7 @@ Careful Nature
 
 Typhlosion-Hisui (M) @ Assault Vest  
 Ability: Frisk  
-Level: 42     
+Level: 41     
 Timid Nature  
 IVs: 0 Atk / 30 Def  
 - Infernal Parade  
@@ -35626,15 +35626,15 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Makuhita
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Elekid
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Comfey
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_PAT ===
@@ -35648,15 +35648,15 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Ribombee
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Whimsicott
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Klefki
-Level: 35
+Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_CRISTIN_1 ===
@@ -35670,11 +35670,11 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Wigglytuff
-Level: 39
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Trevenant
-Level: 39
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CARSON ===

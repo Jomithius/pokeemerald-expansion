@@ -125,511 +125,511 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 # 63 "data/maps/MtPyre_Summit/scripts.pory"
 	setvar VAR_MT_PYRE_STATE, 1
 # 64 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_OldLadyApproachPlayer0
+	setvar VAR_ROUTE121_STATE, 2
 # 65 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_OldLadyApproachPlayer1
+	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_OldLadyApproachPlayer0
 # 66 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_OldLadyApproachPlayer2
+	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_OldLadyApproachPlayer1
 # 67 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis, MSGBOX_DEFAULT
+	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_OldLadyApproachPlayer2
 # 68 "data/maps/MtPyre_Summit/scripts.pory"
-	giveitem ITEM_MAGMA_EMBLEM
+	msgbox MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis, MSGBOX_DEFAULT
 # 69 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_RECEIVED_RED_OR_BLUE_ORB
+	giveitem ITEM_MAGMA_EMBLEM
 # 70 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD
+	setflag FLAG_RECEIVED_RED_OR_BLUE_ORB
 # 71 "data/maps/MtPyre_Summit/scripts.pory"
-	releaseall
+	setflag FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD
 # 72 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	releaseall
 # 73 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 74 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieFacePlayer0::
+
 # 75 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer0
+MtPyre_Summit_EventScript_ArchieFacePlayer0::
 # 76 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer0
 # 77 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 78 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 79 "data/maps/MtPyre_Summit/scripts.pory"
-@ Archie is already facing player
+
 # 80 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieFacePlayer1::
+@ Archie is already facing player
 # 81 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+MtPyre_Summit_EventScript_ArchieFacePlayer1::
 # 82 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 83 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieFacePlayer2::
+
 # 84 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer2
+MtPyre_Summit_EventScript_ArchieFacePlayer2::
 # 85 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer2
 # 86 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 87 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 88 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldLadyApproachPlayer0::
+
 # 89 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer0
+MtPyre_Summit_EventScript_OldLadyApproachPlayer0::
 # 90 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer0
 # 91 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
 # 92 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 # 93 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 94 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 95 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldLadyApproachPlayer1::
+
 # 96 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer1
+MtPyre_Summit_EventScript_OldLadyApproachPlayer1::
 # 97 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer1
 # 98 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 99 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 100 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldLadyApproachPlayer2::
-# 101 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer2
-# 102 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 103 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-# 104 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 105 "data/maps/MtPyre_Summit/scripts.pory"
 	return
-# 106 "data/maps/MtPyre_Summit/scripts.pory"
+# 100 "data/maps/MtPyre_Summit/scripts.pory"
 
+# 101 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_OldLadyApproachPlayer2::
+# 102 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer2
+# 103 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 104 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+# 105 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 106 "data/maps/MtPyre_Summit/scripts.pory"
+	return
 # 107 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_OldLadyApproachPlayer0:
+
 # 108 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_down
+MtPyre_Summit_Movement_OldLadyApproachPlayer0:
 # 109 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 110 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_left
+	walk_down
 # 111 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
+	walk_in_place_faster_left
 # 112 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 113 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_OldLadyApproachPlayer1:
-# 114 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_down
-# 115 "data/maps/MtPyre_Summit/scripts.pory"
 	step_end
-# 116 "data/maps/MtPyre_Summit/scripts.pory"
+# 113 "data/maps/MtPyre_Summit/scripts.pory"
 
-# 117 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_OldLadyApproachPlayer2:
-# 118 "data/maps/MtPyre_Summit/scripts.pory"
+# 114 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_OldLadyApproachPlayer1:
+# 115 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
+# 116 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
+# 117 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 118 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_OldLadyApproachPlayer2:
 # 119 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 120 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_right
+	walk_down
 # 121 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
+	walk_in_place_faster_right
 # 122 "data/maps/MtPyre_Summit/scripts.pory"
-
+	step_end
 # 123 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_ArchieFacePlayer0:
+
 # 124 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_left
+MtPyre_Summit_Movement_ArchieFacePlayer0:
 # 125 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_down
+	walk_left
 # 126 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 127 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 128 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_ArchieFacePlayer2:
-# 129 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_right
-# 130 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_in_place_faster_down
-# 131 "data/maps/MtPyre_Summit/scripts.pory"
+# 127 "data/maps/MtPyre_Summit/scripts.pory"
 	step_end
+# 128 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 129 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_ArchieFacePlayer2:
+# 130 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_right
+# 131 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_down
 # 132 "data/maps/MtPyre_Summit/scripts.pory"
-
+	step_end
 # 133 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldMan::
+
 # 134 "data/maps/MtPyre_Summit/scripts.pory"
-	lock
+MtPyre_Summit_EventScript_OldMan::
 # 135 "data/maps/MtPyre_Summit/scripts.pory"
-	faceplayer
-# 136 "data/maps/MtPyre_Summit/scripts.pory"
-	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, MtPyre_Summit_EventScript_OldManAfterRayquaza
-# 137 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_WillYouHearOutMyTale, MSGBOX_YESNO
-# 138 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_RESULT, YES, MtPyre_Summit_EventScript_OldManTale
-# 139 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_RESULT, NO, MtPyre_Summit_EventScript_DeclineOldManTale
-# 140 "data/maps/MtPyre_Summit/scripts.pory"
-	release
-# 141 "data/maps/MtPyre_Summit/scripts.pory"
-	end
-# 142 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 143 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldManAfterRayquaza::
-# 144 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_HearTheNewLegendOfHoenn, MSGBOX_YESNO
-# 145 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_RESULT, YES, MtPyre_Summit_EventScript_OldManNewTale
-# 146 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_RESULT, NO, MtPyre_Summit_EventScript_DeclineOldManTale
-# 147 "data/maps/MtPyre_Summit/scripts.pory"
-	release
-# 148 "data/maps/MtPyre_Summit/scripts.pory"
-	end
-# 149 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 150 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldManTale::
-# 151 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_GroudonKyogreTale, MSGBOX_DEFAULT
-# 152 "data/maps/MtPyre_Summit/scripts.pory"
-	return
-# 153 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 154 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_DeclineOldManTale::
-# 155 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_WellThatTooIsFine, MSGBOX_DEFAULT
-# 156 "data/maps/MtPyre_Summit/scripts.pory"
-	return
-# 157 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 158 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldManNewTale::
-# 159 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_HoennTrioTale, MSGBOX_DEFAULT
-# 160 "data/maps/MtPyre_Summit/scripts.pory"
-	return
-# 161 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 162 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldLady::
-# 163 "data/maps/MtPyre_Summit/scripts.pory"
 	lock
-# 164 "data/maps/MtPyre_Summit/scripts.pory"
+# 136 "data/maps/MtPyre_Summit/scripts.pory"
 	faceplayer
+# 137 "data/maps/MtPyre_Summit/scripts.pory"
+	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, MtPyre_Summit_EventScript_OldManAfterRayquaza
+# 138 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_WillYouHearOutMyTale, MSGBOX_YESNO
+# 139 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_RESULT, YES, MtPyre_Summit_EventScript_OldManTale
+# 140 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_RESULT, NO, MtPyre_Summit_EventScript_DeclineOldManTale
+# 141 "data/maps/MtPyre_Summit/scripts.pory"
+	release
+# 142 "data/maps/MtPyre_Summit/scripts.pory"
+	end
+# 143 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 144 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_OldManAfterRayquaza::
+# 145 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_HearTheNewLegendOfHoenn, MSGBOX_YESNO
+# 146 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_RESULT, YES, MtPyre_Summit_EventScript_OldManNewTale
+# 147 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_RESULT, NO, MtPyre_Summit_EventScript_DeclineOldManTale
+# 148 "data/maps/MtPyre_Summit/scripts.pory"
+	release
+# 149 "data/maps/MtPyre_Summit/scripts.pory"
+	end
+# 150 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 151 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_OldManTale::
+# 152 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_GroudonKyogreTale, MSGBOX_DEFAULT
+# 153 "data/maps/MtPyre_Summit/scripts.pory"
+	return
+# 154 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 155 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_DeclineOldManTale::
+# 156 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_WellThatTooIsFine, MSGBOX_DEFAULT
+# 157 "data/maps/MtPyre_Summit/scripts.pory"
+	return
+# 158 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 159 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_OldManNewTale::
+# 160 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_HoennTrioTale, MSGBOX_DEFAULT
+# 161 "data/maps/MtPyre_Summit/scripts.pory"
+	return
+# 162 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 163 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_OldLady::
+# 164 "data/maps/MtPyre_Summit/scripts.pory"
+	lock
 # 165 "data/maps/MtPyre_Summit/scripts.pory"
-	goto_if_set FLAG_RETURNED_RED_OR_BLUE_ORB, MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned
+	faceplayer
 # 166 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_ge VAR_MT_PYRE_STATE, 3, MtPyre_Summit_EventScript_OldLadyOrbsReturned
+	goto_if_set FLAG_RETURNED_RED_OR_BLUE_ORB, MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned
 # 167 "data/maps/MtPyre_Summit/scripts.pory"
-	goto_if_set FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, MtPyre_Summit_EventScript_OldLadyLegendariesAwake
+	call_if_ge VAR_MT_PYRE_STATE, 3, MtPyre_Summit_EventScript_OldLadyOrbsReturned
 # 168 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_OrbsHaveBeenTaken, MSGBOX_DEFAULT
+	goto_if_set FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, MtPyre_Summit_EventScript_OldLadyLegendariesAwake
 # 169 "data/maps/MtPyre_Summit/scripts.pory"
-	release
+	msgbox MtPyre_Summit_Text_OrbsHaveBeenTaken, MSGBOX_DEFAULT
 # 170 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	release
 # 171 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 172 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldLadyOrbsReturned::
+
 # 173 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs, MSGBOX_DEFAULT
+MtPyre_Summit_EventScript_OldLadyOrbsReturned::
 # 174 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_RETURNED_RED_OR_BLUE_ORB
+	msgbox MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs, MSGBOX_DEFAULT
 # 175 "data/maps/MtPyre_Summit/scripts.pory"
-	release
+	setflag FLAG_RETURNED_RED_OR_BLUE_ORB
 # 176 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	release
 # 177 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 178 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldLadyLegendariesAwake::
+
 # 179 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_GroudonKyogreAwakened, MSGBOX_DEFAULT
+MtPyre_Summit_EventScript_OldLadyLegendariesAwake::
 # 180 "data/maps/MtPyre_Summit/scripts.pory"
-	release
+	msgbox MtPyre_Summit_Text_GroudonKyogreAwakened, MSGBOX_DEFAULT
 # 181 "data/maps/MtPyre_Summit/scripts.pory"
-	end
-# 182 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 183 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned::
-# 184 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_SuperAncientPokemonTaughtUs, MSGBOX_DEFAULT
-# 185 "data/maps/MtPyre_Summit/scripts.pory"
 	release
+# 182 "data/maps/MtPyre_Summit/scripts.pory"
+	end
+# 183 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 184 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned::
+# 185 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_SuperAncientPokemonTaughtUs, MSGBOX_DEFAULT
 # 186 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	release
 # 187 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 188 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieMaxieTrigger0::
+
 # 189 "data/maps/MtPyre_Summit/scripts.pory"
-	lockall
+MtPyre_Summit_EventScript_ArchieMaxieTrigger0::
 # 190 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_0x8008, 0
+	lockall
 # 191 "data/maps/MtPyre_Summit/scripts.pory"
-	goto MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs
+	setvar VAR_0x8008, 0
 # 192 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	goto MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs
 # 193 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 194 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieMaxieTrigger1::
+
 # 195 "data/maps/MtPyre_Summit/scripts.pory"
-	lockall
+MtPyre_Summit_EventScript_ArchieMaxieTrigger1::
 # 196 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_0x8008, 1
-# 197 "data/maps/MtPyre_Summit/scripts.pory"
-	goto MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs
-# 198 "data/maps/MtPyre_Summit/scripts.pory"
-	end
-# 199 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 200 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieMaxieTrigger2::
-# 201 "data/maps/MtPyre_Summit/scripts.pory"
 	lockall
-# 202 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_0x8008, 2
-# 203 "data/maps/MtPyre_Summit/scripts.pory"
+# 197 "data/maps/MtPyre_Summit/scripts.pory"
+	setvar VAR_0x8008, 1
+# 198 "data/maps/MtPyre_Summit/scripts.pory"
 	goto MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs
+# 199 "data/maps/MtPyre_Summit/scripts.pory"
+	end
+# 200 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 201 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_ArchieMaxieTrigger2::
+# 202 "data/maps/MtPyre_Summit/scripts.pory"
+	lockall
+# 203 "data/maps/MtPyre_Summit/scripts.pory"
+	setvar VAR_0x8008, 2
 # 204 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	goto MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs
 # 205 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 206 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
-# 207 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-# 208 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 209 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 60
-# 210 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_ArchieMaxieBeginExit0
-# 211 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_ArchieMaxieBeginExit1
-# 212 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieMaxieBeginExit2
-# 213 "data/maps/MtPyre_Summit/scripts.pory"
-	playse SE_PIN
-# 214 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, Common_Movement_ExclamationMark
-# 215 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 216 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, Common_Movement_Delay48
-# 217 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 218 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 30
-# 219 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_MaxieApproachPlayer0
-# 220 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_MaxieApproachPlayer1
-# 221 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_MaxieApproachPlayer2
-# 222 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_MaxieSilence, MSGBOX_DEFAULT
-# 223 "data/maps/MtPyre_Summit/scripts.pory"
-	closemessage
-# 224 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_MaxieApproachArchie0
-# 225 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_MaxieApproachArchie1
-# 226 "data/maps/MtPyre_Summit/scripts.pory"
-	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_MaxieApproachArchie2
-# 227 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 30
-# 228 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-# 229 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
-# 230 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 231 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject LOCALID_ARCHIE
-# 232 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject LOCALID_MAXIE
-# 233 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_MT_PYRE_STATE, 3
-# 234 "data/maps/MtPyre_Summit/scripts.pory"
-	releaseall
-# 235 "data/maps/MtPyre_Summit/scripts.pory"
 	end
+# 206 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 207 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
+# 208 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+# 209 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 210 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 60
+# 211 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_ArchieMaxieBeginExit0
+# 212 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_ArchieMaxieBeginExit1
+# 213 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieMaxieBeginExit2
+# 214 "data/maps/MtPyre_Summit/scripts.pory"
+	playse SE_PIN
+# 215 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_MAXIE, Common_Movement_ExclamationMark
+# 216 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 217 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_MAXIE, Common_Movement_Delay48
+# 218 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 219 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 30
+# 220 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_MaxieApproachPlayer0
+# 221 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_MaxieApproachPlayer1
+# 222 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_MaxieApproachPlayer2
+# 223 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_MaxieSilence, MSGBOX_DEFAULT
+# 224 "data/maps/MtPyre_Summit/scripts.pory"
+	closemessage
+# 225 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_MaxieApproachArchie0
+# 226 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_MaxieApproachArchie1
+# 227 "data/maps/MtPyre_Summit/scripts.pory"
+	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_MaxieApproachArchie2
+# 228 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 30
+# 229 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
+# 230 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
+# 231 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 232 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject LOCALID_ARCHIE
+# 233 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject LOCALID_MAXIE
+# 234 "data/maps/MtPyre_Summit/scripts.pory"
+	setvar VAR_MT_PYRE_STATE, 3
+# 235 "data/maps/MtPyre_Summit/scripts.pory"
+	releaseall
 # 236 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 237 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieMaxieBeginExit0::
+
 # 238 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit0
+MtPyre_Summit_EventScript_ArchieMaxieBeginExit0::
 # 239 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit0
 # 240 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
+	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
 # 241 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
 # 242 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 243 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 244 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieMaxieBeginExit1::
+
 # 245 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit1
+MtPyre_Summit_EventScript_ArchieMaxieBeginExit1::
 # 246 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit1
 # 247 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
-# 248 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 249 "data/maps/MtPyre_Summit/scripts.pory"
-	return
-# 250 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 251 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_ArchieMaxieBeginExit2::
-# 252 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit2
-# 253 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-# 254 "data/maps/MtPyre_Summit/scripts.pory"
+# 248 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
+# 249 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 250 "data/maps/MtPyre_Summit/scripts.pory"
+	return
+# 251 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 252 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_ArchieMaxieBeginExit2::
+# 253 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit2
+# 254 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
 # 255 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
 # 256 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 257 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 258 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_MaxieApproachPlayer0::
+
 # 259 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie0
+MtPyre_Summit_EventScript_MaxieApproachPlayer0::
 # 260 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
+	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie0
 # 261 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer0
+	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
 # 262 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer0
 # 263 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 264 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 265 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_MaxieApproachPlayer1::
+
 # 266 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie
+MtPyre_Summit_EventScript_MaxieApproachPlayer1::
 # 267 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
-# 268 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer1
-# 269 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 270 "data/maps/MtPyre_Summit/scripts.pory"
-	return
-# 271 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 272 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_MaxieApproachPlayer2::
-# 273 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie
-# 274 "data/maps/MtPyre_Summit/scripts.pory"
+# 268 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
+# 269 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer1
+# 270 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 271 "data/maps/MtPyre_Summit/scripts.pory"
+	return
+# 272 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 273 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_MaxieApproachPlayer2::
+# 274 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie
 # 275 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer2
+	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
 # 276 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer2
 # 277 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 278 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 279 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_MaxieApproachArchie0::
+
 # 280 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
+MtPyre_Summit_EventScript_MaxieApproachArchie0::
 # 281 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie0
+	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
 # 282 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie0
 # 283 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
 # 284 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
 # 285 "data/maps/MtPyre_Summit/scripts.pory"
-	return
+	waitmovement 0
 # 286 "data/maps/MtPyre_Summit/scripts.pory"
-
+	return
 # 287 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_MaxieApproachArchie1::
+
 # 288 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
+MtPyre_Summit_EventScript_MaxieApproachArchie1::
 # 289 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie1
-# 290 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 291 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
-# 292 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 293 "data/maps/MtPyre_Summit/scripts.pory"
-	return
-# 294 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 295 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_MaxieApproachArchie2::
-# 296 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
-# 297 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie2
-# 298 "data/maps/MtPyre_Summit/scripts.pory"
+# 290 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie1
+# 291 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmovement 0
-# 299 "data/maps/MtPyre_Summit/scripts.pory"
+# 292 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
-# 300 "data/maps/MtPyre_Summit/scripts.pory"
+# 293 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmovement 0
-# 301 "data/maps/MtPyre_Summit/scripts.pory"
+# 294 "data/maps/MtPyre_Summit/scripts.pory"
 	return
-# 302 "data/maps/MtPyre_Summit/scripts.pory"
+# 295 "data/maps/MtPyre_Summit/scripts.pory"
 
+# 296 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_MaxieApproachArchie2::
+# 297 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
+# 298 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie2
+# 299 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 300 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+# 301 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 302 "data/maps/MtPyre_Summit/scripts.pory"
+	return
 # 303 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_PlayerFaceMaxie0:
+
 # 304 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_16
+MtPyre_Summit_Movement_PlayerFaceMaxie0:
 # 305 "data/maps/MtPyre_Summit/scripts.pory"
 	delay_16
 # 306 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_right
-# 307 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 308 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 309 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_PlayerFaceMaxie:
-# 310 "data/maps/MtPyre_Summit/scripts.pory"
 	delay_16
+# 307 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_right
+# 308 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
+# 309 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 310 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_PlayerFaceMaxie:
 # 311 "data/maps/MtPyre_Summit/scripts.pory"
 	delay_16
 # 312 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_left
+	delay_16
 # 313 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
+	walk_in_place_faster_left
 # 314 "data/maps/MtPyre_Summit/scripts.pory"
-
+	step_end
 # 315 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_ArchieExit:
+
 # 316 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_down
+MtPyre_Summit_Movement_ArchieExit:
 # 317 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 318 "data/maps/MtPyre_Summit/scripts.pory"
@@ -641,13 +641,13 @@ MtPyre_Summit_Movement_ArchieExit:
 # 321 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 322 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 323 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 324 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_MaxieExit:
-# 325 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
+# 323 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
+# 324 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 325 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_MaxieExit:
 # 326 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 327 "data/maps/MtPyre_Summit/scripts.pory"
@@ -659,783 +659,785 @@ MtPyre_Summit_Movement_MaxieExit:
 # 330 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 331 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
+	walk_down
 # 332 "data/maps/MtPyre_Summit/scripts.pory"
-
+	step_end
 # 333 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit0:
+
 # 334 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_16
+MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit0:
 # 335 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_8
+	delay_16
 # 336 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_left
+	delay_8
 # 337 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_right
+	walk_left
 # 338 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_16
+	walk_in_place_faster_right
 # 339 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_down
+	delay_16
 # 340 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
+	walk_in_place_faster_down
 # 341 "data/maps/MtPyre_Summit/scripts.pory"
-
+	step_end
 # 342 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit1:
+
 # 343 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_16
+MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit1:
 # 344 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_8
+	delay_16
 # 345 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_right
-# 346 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_left
-# 347 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_16
-# 348 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_down
-# 349 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 350 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 351 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit2:
-# 352 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_16
-# 353 "data/maps/MtPyre_Summit/scripts.pory"
 	delay_8
-# 354 "data/maps/MtPyre_Summit/scripts.pory"
+# 346 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_right
+# 347 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_in_place_faster_left
-# 355 "data/maps/MtPyre_Summit/scripts.pory"
+# 348 "data/maps/MtPyre_Summit/scripts.pory"
 	delay_16
-# 356 "data/maps/MtPyre_Summit/scripts.pory"
+# 349 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_in_place_faster_down
-# 357 "data/maps/MtPyre_Summit/scripts.pory"
+# 350 "data/maps/MtPyre_Summit/scripts.pory"
 	step_end
-# 358 "data/maps/MtPyre_Summit/scripts.pory"
+# 351 "data/maps/MtPyre_Summit/scripts.pory"
 
+# 352 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit2:
+# 353 "data/maps/MtPyre_Summit/scripts.pory"
+	delay_16
+# 354 "data/maps/MtPyre_Summit/scripts.pory"
+	delay_8
+# 355 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_left
+# 356 "data/maps/MtPyre_Summit/scripts.pory"
+	delay_16
+# 357 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_down
+# 358 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
 # 359 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_MaxieApproachPlayer0:
+
 # 360 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_up
+MtPyre_Summit_Movement_MaxieApproachPlayer0:
 # 361 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_up
 # 362 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_up
 # 363 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_left
-# 364 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 365 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 366 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_MaxieApproachPlayer1:
-# 367 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_up
+# 364 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_left
+# 365 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
+# 366 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 367 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_MaxieApproachPlayer1:
 # 368 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_up
 # 369 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_up
 # 370 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_right
-# 371 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 372 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 373 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_MaxieApproachPlayer2:
-# 374 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_up
+# 371 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_right
+# 372 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
+# 373 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 374 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_MaxieApproachPlayer2:
 # 375 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_up
 # 376 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_up
 # 377 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_right
+	walk_up
 # 378 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
+	walk_in_place_faster_right
 # 379 "data/maps/MtPyre_Summit/scripts.pory"
-
+	step_end
 # 380 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_ArchieWatchMaxie:
+
 # 381 "data/maps/MtPyre_Summit/scripts.pory"
-	delay_16
+MtPyre_Summit_Movement_ArchieWatchMaxie:
 # 382 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_up
-# 383 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 384 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 385 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_PlayerWatchMaxie:
-# 386 "data/maps/MtPyre_Summit/scripts.pory"
 	delay_16
-# 387 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_down
-# 388 "data/maps/MtPyre_Summit/scripts.pory"
+# 383 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_up
+# 384 "data/maps/MtPyre_Summit/scripts.pory"
 	step_end
-# 389 "data/maps/MtPyre_Summit/scripts.pory"
+# 385 "data/maps/MtPyre_Summit/scripts.pory"
 
+# 386 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_PlayerWatchMaxie:
+# 387 "data/maps/MtPyre_Summit/scripts.pory"
+	delay_16
+# 388 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_down
+# 389 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
 # 390 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_MaxieApproachArchie0:
+
 # 391 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_down
+MtPyre_Summit_Movement_MaxieApproachArchie0:
 # 392 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_right
-# 393 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
+# 393 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_right
 # 394 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 395 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_left
-# 396 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 397 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 398 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_MaxieApproachArchie1:
-# 399 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
+# 396 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_left
+# 397 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
+# 398 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 399 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_MaxieApproachArchie1:
 # 400 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 401 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 402 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_left
-# 403 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
-# 404 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 405 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Movement_MaxieApproachArchie2:
-# 406 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
+# 403 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_in_place_faster_left
+# 404 "data/maps/MtPyre_Summit/scripts.pory"
+	step_end
+# 405 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 406 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Movement_MaxieApproachArchie2:
 # 407 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 408 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_down
 # 409 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_in_place_faster_left
+	walk_down
 # 410 "data/maps/MtPyre_Summit/scripts.pory"
-	step_end
+	walk_in_place_faster_left
 # 411 "data/maps/MtPyre_Summit/scripts.pory"
-
+	step_end
 # 412 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_Grunt1::
+
 # 413 "data/maps/MtPyre_Summit/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_MT_PYRE_1, MtPyre_Summit_Text_Grunt1Intro, MtPyre_Summit_Text_Grunt1Defeat
+MtPyre_Summit_EventScript_Grunt1::
 # 414 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_GRUNT_MT_PYRE_1, MtPyre_Summit_Text_Grunt1Intro, MtPyre_Summit_Text_Grunt1Defeat
 # 415 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	msgbox MtPyre_Summit_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 # 416 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 417 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_Grunt2::
+
 # 418 "data/maps/MtPyre_Summit/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_MT_PYRE_2, MtPyre_Summit_Text_Grunt2Intro, MtPyre_Summit_Text_Grunt2Defeat
+MtPyre_Summit_EventScript_Grunt2::
 # 419 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_GRUNT_MT_PYRE_2, MtPyre_Summit_Text_Grunt2Intro, MtPyre_Summit_Text_Grunt2Defeat
 # 420 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	msgbox MtPyre_Summit_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 # 421 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 422 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_Grunt3::
+
 # 423 "data/maps/MtPyre_Summit/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_MT_PYRE_3, MtPyre_Summit_Text_Grunt3Intro, MtPyre_Summit_Text_Grunt3Defeat
+MtPyre_Summit_EventScript_Grunt3::
 # 424 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_GRUNT_MT_PYRE_3, MtPyre_Summit_Text_Grunt3Intro, MtPyre_Summit_Text_Grunt3Defeat
 # 425 "data/maps/MtPyre_Summit/scripts.pory"
-	end
+	msgbox MtPyre_Summit_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 # 426 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 427 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_EventScript_Grunt4::
-# 428 "data/maps/MtPyre_Summit/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_MT_PYRE_4, MtPyre_Summit_Text_Grunt4Intro, MtPyre_Summit_Text_Grunt4Defeat
-# 429 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
-# 430 "data/maps/MtPyre_Summit/scripts.pory"
 	end
+# 427 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 428 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_Grunt4::
+# 429 "data/maps/MtPyre_Summit/scripts.pory"
+	trainerbattle_single TRAINER_GRUNT_MT_PYRE_4, MtPyre_Summit_Text_Grunt4Intro, MtPyre_Summit_Text_Grunt4Defeat
+# 430 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 # 431 "data/maps/MtPyre_Summit/scripts.pory"
-
+	end
 # 432 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt1Intro:
+
 # 433 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "No! Those TEAM MAGMA goons got\n"
+MtPyre_Summit_Text_Grunt1Intro:
 # 434 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "here ahead of us!\p"
+	.string "No! Those TEAM MAGMA goons got\n"
 # 435 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "We can't fall behind!$"
+	.string "here ahead of us!\p"
 # 436 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "We can't fall behind!$"
 # 437 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt1Defeat:
+
 # 438 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "I thought you were one of the MAGMAS\n"
+MtPyre_Summit_Text_Grunt1Defeat:
 # 439 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "who happened to come back…$"
+	.string "I thought you were one of the MAGMAS\n"
 # 440 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "who happened to come back…$"
 # 441 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt1PostBattle:
+
 # 442 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Yeah, so you are strong…\n"
+MtPyre_Summit_Text_Grunt1PostBattle:
 # 443 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "But there're a lot of us!$"
+	.string "Yeah, so you are strong…\n"
 # 444 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "But there're a lot of us!$"
 # 445 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt2Intro:
+
 # 446 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Hah!\n"
+MtPyre_Summit_Text_Grunt2Intro:
 # 447 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Too bad for you!\p"
+	.string "Hah!\n"
 # 448 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "If you came earlier, you only would've\n"
+	.string "Too bad for you!\p"
 # 449 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "had to battle the wimpy TEAM MAGMA.\p"
+	.string "If you came earlier, you only would've\n"
 # 450 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "But since you arrived now, you have\n"
+	.string "had to battle the wimpy TEAM MAGMA.\p"
 # 451 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "to take on us toughies!$"
+	.string "But since you arrived now, you have\n"
 # 452 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "to take on us toughies!$"
 # 453 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt2Defeat:
+
 # 454 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Urgh… I should've let you take on\n"
+MtPyre_Summit_Text_Grunt2Defeat:
 # 455 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "TEAM MAGMA first…$"
+	.string "Urgh… I should've let you take on\n"
 # 456 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "TEAM MAGMA first…$"
 # 457 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt2PostBattle:
+
 # 458 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "You don't know anything!\n"
+MtPyre_Summit_Text_Grunt2PostBattle:
 # 459 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "So why are you messing with us?$"
+	.string "You don't know anything!\n"
 # 460 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "So why are you messing with us?$"
 # 461 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt3Intro:
+
 # 462 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "You…\n"
+MtPyre_Summit_Text_Grunt3Intro:
 # 463 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "We saw you at MT. CHIMNEY.\p"
+	.string "You…\n"
 # 464 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "You don't belong to either TEAM,\n"
+	.string "We saw you at MT. CHIMNEY.\p"
 # 465 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "so why would you be here?$"
+	.string "You don't belong to either TEAM,\n"
 # 466 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "so why would you be here?$"
 # 467 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt3Defeat:
+
 # 468 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "If you're going to mess with anyone,\n"
+MtPyre_Summit_Text_Grunt3Defeat:
 # 469 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "let it be TEAM MAGMA…$"
+	.string "If you're going to mess with anyone,\n"
 # 470 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "let it be TEAM MAGMA…$"
 # 471 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt3PostBattle:
+
 # 472 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Heh, it doesn't matter!\n"
+MtPyre_Summit_Text_Grunt3PostBattle:
 # 473 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "We bought ourselves some time!\p"
+	.string "Heh, it doesn't matter!\n"
 # 474 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The BOSS should have snatched what\n"
+	.string "We bought ourselves some time!\p"
 # 475 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "he was after!$"
+	.string "The BOSS should have snatched what\n"
 # 476 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "he was after!$"
 # 477 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt4Intro:
+
 # 478 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Oh, I know!\n"
+MtPyre_Summit_Text_Grunt4Intro:
 # 479 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "You tried to join TEAM MAGMA,\l"
+	.string "Oh, I know!\n"
 # 480 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "but they wouldn't have you!\p"
+	.string "You tried to join TEAM MAGMA,\l"
 # 481 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Well, don't think that we'll let you\n"
+	.string "but they wouldn't have you!\p"
 # 482 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "join our TEAM AQUA!$"
+	.string "Well, don't think that we'll let you\n"
 # 483 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "join our TEAM AQUA!$"
 # 484 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt4Defeat:
+
 # 485 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "If you want to join TEAM AQUA that\n"
+MtPyre_Summit_Text_Grunt4Defeat:
 # 486 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "badly, we can consider it…$"
+	.string "If you want to join TEAM AQUA that\n"
 # 487 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "badly, we can consider it…$"
 # 488 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_Grunt4PostBattle:
+
 # 489 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "We have a great combination going\n"
+MtPyre_Summit_Text_Grunt4PostBattle:
 # 490 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "with us members and our leader.$"
+	.string "We have a great combination going\n"
 # 491 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "with us members and our leader.$"
 # 492 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
+
 # 493 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
+MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
 # 494 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "of us, but we also got what we wanted.\p"
+	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
 # 495 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The RED ORB preserved at MT. PYRE…\n"
+	.string "of us, but we also got what we wanted.\p"
 # 496 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "I, ARCHIE, now have it in my possession!\p"
+	.string "The RED ORB preserved at MT. PYRE…\n"
 # 497 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Fufufu… Now we can bring our ultimate\n"
+	.string "I, ARCHIE, now have it in my possession!\p"
 # 498 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "objective to fruition!\p"
+	.string "Fufufu… Now we can bring our ultimate\n"
 # 499 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Okay, TEAM!\n"
+	.string "objective to fruition!\p"
 # 500 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "We're pulling out!$"
+	.string "Okay, TEAM!\n"
 # 501 "data/maps/MtPyre_Summit/scripts.pory"
-
+	.string "We're pulling out!$"
 # 502 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
+
 # 503 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Oh, no…\n"
+MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 # 504 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "This cannot happen…\p"
+	.string "Oh, no…\n"
 # 505 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Not only the BLUE ORB, but even\n"
+	.string "This cannot happen…\p"
 # 506 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "the RED ORB has been taken…\p"
+	.string "Not only the BLUE ORB, but even\n"
 # 507 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The BLUE ORB and RED ORB must never\n"
+	.string "the RED ORB has been taken…\p"
 # 508 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "be separated. They belong together.\p"
+	.string "The BLUE ORB and RED ORB must never\n"
 # 509 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "What are those men trying to do with\n"
+	.string "be separated. They belong together.\p"
 # 510 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "the two ORBS?\p"
+	.string "What are those men trying to do with\n"
 # 511 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "… … … … … …\n"
+	.string "the two ORBS?\p"
 # 512 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "… … … … … …\p"
-# 513 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Oh, yes. Was it TEAM MAGMA who came\n"
-# 514 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "and took the BLUE ORB first?\p"
-# 515 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Well, in their haste, they left this\n"
-# 516 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "behind.\p"
-# 517 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "I couldn't imagine what exactly it\n"
-# 518 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "could be.\p"
-# 519 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "I would like you to have it.\n"
-# 520 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Perhaps it will be useful in some way.$"
-# 521 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 522 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_OrbsHaveBeenTaken:
-# 523 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The BLUE ORB and RED ORB taken by\n"
-# 524 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "those sinister men…\p"
-# 525 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "They must never be apart…\n"
-# 526 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "I fear something terrible will happen…$"
-# 527 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 528 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_GroudonKyogreAwakened:
-# 529 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Oh, my goodness…\p"
-# 530 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "You say that both GROUDON and KYOGRE\n"
-# 531 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "have been awakened?\p"
-# 532 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "It is said that the BLUE ORB and\n"
-# 533 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "the RED ORB quelled the rage of\l"
-# 534 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "the two POKéMON…\p"
-# 535 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "It is also said that the true owner\n"
-# 536 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "of the ORBS still exists.\p"
-# 537 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "However, no one knows who, or what\n"
-# 538 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "exactly, the ORBS belong to.\p"
-# 539 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "It could be a human, or perhaps\n"
-# 540 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "a POKéMON, but no one knows.$"
-# 541 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 542 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
-# 543 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The two men who took the ORBS came\n"
-# 544 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "back to return them on their own.\p"
-# 545 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Those men…\n"
-# 546 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Perhaps they are not so evil after all…$"
-# 547 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 548 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
-# 549 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The embodiments of the land, sea,\n"
-# 550 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "and the sky…\p"
-# 551 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "That is said to be the identities of\n"
-# 552 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "the super-ancient POKéMON…\p"
-# 553 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "In the same way that we humans and\n"
-# 554 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "POKéMON have life, our world, too,\l"
-# 555 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "is alive…\p"
-# 556 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The super-ancient POKéMON have\n"
-# 557 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "taught us that…$"
-# 558 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 559 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_WillYouHearOutMyTale:
-# 560 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "MT. PYRE is where we calm the spirits\n"
-# 561 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "of POKéMON that have passed on…\p"
-# 562 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "This is a high place where one can\n"
-# 563 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "see all of HOENN…\p"
-# 564 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The disembodied spirits of POKéMON\n"
-# 565 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "must find solace here…\p"
-# 566 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Is it coincidence that you are here…\p"
-# 567 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Will you hear out my tale? A tale long\n"
-# 568 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "told in the HOENN region?$"
-# 569 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 570 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_GroudonKyogreTale:
-# 571 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "It happened long, long ago…\p"
-# 572 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The world was wracked by a ferocious\n"
-# 573 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "clash between the POKéMON of the land\l"
-# 574 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "and the POKéMON of the sea…\p"
-# 575 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The POKéMON of the land raised\n"
-# 576 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "mountains and created continents…\p"
-# 577 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The POKéMON of the sea raised huge\n"
-# 578 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "waves and carved out oceans…\p"
-# 579 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Their fierce duel raged without end.\p"
-# 580 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The world was engulfed in massive\n"
-# 581 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "infernos and vicious storms.\p"
-# 582 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The BLUE ORB and the RED ORB brought\n"
-# 583 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "an end to the calamity.\p"
-# 584 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Light poured from the two ORBS and\n"
-# 585 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "becalmed the enraged adversaries.\p"
-# 586 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The pair, made docile, dove deep into\n"
-# 587 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "the sea where eventually they\l"
-# 588 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "disappeared…$"
-# 589 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 590 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_WellThatTooIsFine:
-# 591 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "I see…\n"
-# 592 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Well, that, too, is fine…$"
-# 593 "data/maps/MtPyre_Summit/scripts.pory"
-
-# 594 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_MaxieSilence:
-# 595 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "MAXIE: {PLAYER}…\p"
-# 596 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "… … … … … …\n"
-# 597 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "… … … … … …$"
-# 598 "data/maps/MtPyre_Summit/scripts.pory"
+# 513 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "… … … … … …\p"
+# 514 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Oh, yes. Was it TEAM MAGMA who came\n"
+# 515 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "and took the BLUE ORB first?\p"
+# 516 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Well, in their haste, they left this\n"
+# 517 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "behind.\p"
+# 518 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "I couldn't imagine what exactly it\n"
+# 519 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "could be.\p"
+# 520 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "I would like you to have it.\n"
+# 521 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Perhaps it will be useful in some way.$"
+# 522 "data/maps/MtPyre_Summit/scripts.pory"
 
-# 599 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
-# 600 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "It is my role to pass on the legends\n"
-# 601 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "of HOENN to future generations.\p"
-# 602 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "And the crisis that just ended in\n"
-# 603 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "SOOTOPOLIS rewrote a legend…\p"
-# 604 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Have you the time to hear the new\n"
-# 605 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "legend of HOENN?$"
-# 606 "data/maps/MtPyre_Summit/scripts.pory"
+# 523 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_OrbsHaveBeenTaken:
+# 524 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The BLUE ORB and RED ORB taken by\n"
+# 525 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "those sinister men…\p"
+# 526 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "They must never be apart…\n"
+# 527 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "I fear something terrible will happen…$"
+# 528 "data/maps/MtPyre_Summit/scripts.pory"
 
-# 607 "data/maps/MtPyre_Summit/scripts.pory"
-MtPyre_Summit_Text_HoennTrioTale:
-# 608 "data/maps/MtPyre_Summit/scripts.pory"
+# 529 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_GroudonKyogreAwakened:
+# 530 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Oh, my goodness…\p"
+# 531 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "You say that both GROUDON and KYOGRE\n"
+# 532 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "have been awakened?\p"
+# 533 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "It is said that the BLUE ORB and\n"
+# 534 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "the RED ORB quelled the rage of\l"
+# 535 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "the two POKéMON…\p"
+# 536 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "It is also said that the true owner\n"
+# 537 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "of the ORBS still exists.\p"
+# 538 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "However, no one knows who, or what\n"
+# 539 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "exactly, the ORBS belong to.\p"
+# 540 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "It could be a human, or perhaps\n"
+# 541 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "a POKéMON, but no one knows.$"
+# 542 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 543 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
+# 544 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The two men who took the ORBS came\n"
+# 545 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "back to return them on their own.\p"
+# 546 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Those men…\n"
+# 547 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Perhaps they are not so evil after all…$"
+# 548 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 549 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
+# 550 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The embodiments of the land, sea,\n"
+# 551 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "and the sky…\p"
+# 552 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "That is said to be the identities of\n"
+# 553 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "the super-ancient POKéMON…\p"
+# 554 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "In the same way that we humans and\n"
+# 555 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "POKéMON have life, our world, too,\l"
+# 556 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "is alive…\p"
+# 557 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The super-ancient POKéMON have\n"
+# 558 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "taught us that…$"
+# 559 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 560 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_WillYouHearOutMyTale:
+# 561 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "MT. PYRE is where we calm the spirits\n"
+# 562 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "of POKéMON that have passed on…\p"
+# 563 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "This is a high place where one can\n"
+# 564 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "see all of HOENN…\p"
+# 565 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The disembodied spirits of POKéMON\n"
+# 566 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "must find solace here…\p"
+# 567 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Is it coincidence that you are here…\p"
+# 568 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Will you hear out my tale? A tale long\n"
+# 569 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "told in the HOENN region?$"
+# 570 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 571 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_GroudonKyogreTale:
+# 572 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "It happened long, long ago…\p"
-# 609 "data/maps/MtPyre_Summit/scripts.pory"
+# 573 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "The world was wracked by a ferocious\n"
-# 610 "data/maps/MtPyre_Summit/scripts.pory"
+# 574 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "clash between the POKéMON of the land\l"
-# 611 "data/maps/MtPyre_Summit/scripts.pory"
+# 575 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "and the POKéMON of the sea…\p"
-# 612 "data/maps/MtPyre_Summit/scripts.pory"
+# 576 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "The POKéMON of the land raised\n"
-# 613 "data/maps/MtPyre_Summit/scripts.pory"
+# 577 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "mountains and created continents…\p"
-# 614 "data/maps/MtPyre_Summit/scripts.pory"
+# 578 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "The POKéMON of the sea raised huge\n"
-# 615 "data/maps/MtPyre_Summit/scripts.pory"
+# 579 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "waves and carved out oceans…\p"
-# 616 "data/maps/MtPyre_Summit/scripts.pory"
+# 580 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Their fierce duel raged without end.\p"
-# 617 "data/maps/MtPyre_Summit/scripts.pory"
+# 581 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "The world was engulfed in massive\n"
+# 582 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "infernos and vicious storms.\p"
+# 583 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The BLUE ORB and the RED ORB brought\n"
+# 584 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "an end to the calamity.\p"
+# 585 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Light poured from the two ORBS and\n"
+# 586 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "becalmed the enraged adversaries.\p"
+# 587 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The pair, made docile, dove deep into\n"
+# 588 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "the sea where eventually they\l"
+# 589 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "disappeared…$"
+# 590 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 591 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_WellThatTooIsFine:
+# 592 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "I see…\n"
+# 593 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Well, that, too, is fine…$"
+# 594 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 595 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_MaxieSilence:
+# 596 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "MAXIE: {PLAYER}…\p"
+# 597 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "… … … … … …\n"
+# 598 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "… … … … … …$"
+# 599 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 600 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
+# 601 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "It is my role to pass on the legends\n"
+# 602 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "of HOENN to future generations.\p"
+# 603 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "And the crisis that just ended in\n"
+# 604 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "SOOTOPOLIS rewrote a legend…\p"
+# 605 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Have you the time to hear the new\n"
+# 606 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "legend of HOENN?$"
+# 607 "data/maps/MtPyre_Summit/scripts.pory"
+
+# 608 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_Text_HoennTrioTale:
+# 609 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "It happened long, long ago…\p"
+# 610 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The world was wracked by a ferocious\n"
+# 611 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "clash between the POKéMON of the land\l"
+# 612 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "and the POKéMON of the sea…\p"
+# 613 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The POKéMON of the land raised\n"
+# 614 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "mountains and created continents…\p"
+# 615 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "The POKéMON of the sea raised huge\n"
+# 616 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "waves and carved out oceans…\p"
+# 617 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Their fierce duel raged without end.\p"
 # 618 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "fires and vicious storms.\p"
+	.string "The world was engulfed in massive\n"
 # 619 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "It was then that the POKéMON of\n"
+	.string "fires and vicious storms.\p"
 # 620 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "the sky descended from a storm.\p"
+	.string "It was then that the POKéMON of\n"
 # 621 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "The POKéMON, shining a vivid green,\n"
+	.string "the sky descended from a storm.\p"
 # 622 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "becalmed the two enraged POKéMON.\p"
+	.string "The POKéMON, shining a vivid green,\n"
 # 623 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Then, its duty done, the green POKéMON\n"
+	.string "becalmed the two enraged POKéMON.\p"
 # 624 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Then, its duty done, the green POKéMON\n"
+# 625 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "flew off into the wild blue yonder…$"
 
 MtPyre_Summit_EventScript_Mimikyu::
-# 629 "data/maps/MtPyre_Summit/scripts.pory"
-	lockall
 # 630 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_MIMIKYU_TOTEM
+	lockall
 # 631 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement 9, Common_Movement_FacePlayer
+	setflag FLAG_MIMIKYU_TOTEM
 # 632 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 9
+	applymovement 9, Common_Movement_FacePlayer
 # 633 "data/maps/MtPyre_Summit/scripts.pory"
-	playmoncry SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER
+	waitmovement 9
 # 634 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 40
+	playmoncry SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER
 # 635 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmoncry
+	delay 40
 # 636 "data/maps/MtPyre_Summit/scripts.pory"
-	setwildbattle SPECIES_MIMIKYU_TOTEM, 41, ITEM_SPELL_TAG
+	waitmoncry
 # 637 "data/maps/MtPyre_Summit/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_MIMIKYU_TOTEM, 41, ITEM_SPELL_TAG
 # 638 "data/maps/MtPyre_Summit/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	dowildbattle
 # 639 "data/maps/MtPyre_Summit/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 640 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MtPyre_Summit_EventScript_Mimikyu_2
-# 642 "data/maps/MtPyre_Summit/scripts.pory"
+# 643 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MtPyre_Summit_EventScript_Mimikyu_3
-# 645 "data/maps/MtPyre_Summit/scripts.pory"
+# 646 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq MtPyre_Summit_EventScript_Mimikyu_4
-# 648 "data/maps/MtPyre_Summit/scripts.pory"
+# 649 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MtPyre_Summit_EventScript_Mimikyu_5
 MtPyre_Summit_EventScript_Mimikyu_1:
-# 651 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
 # 652 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmessage
+# 653 "data/maps/MtPyre_Summit/scripts.pory"
 	releaseall
 	end
 
 MtPyre_Summit_EventScript_Mimikyu_2:
-# 640 "data/maps/MtPyre_Summit/scripts.pory"
+# 641 "data/maps/MtPyre_Summit/scripts.pory"
 	call MimikyuWon_Caught
 	goto MtPyre_Summit_EventScript_Mimikyu_1
 
 MtPyre_Summit_EventScript_Mimikyu_3:
-# 643 "data/maps/MtPyre_Summit/scripts.pory"
+# 644 "data/maps/MtPyre_Summit/scripts.pory"
 	call MimikyuWon_Caught
 	goto MtPyre_Summit_EventScript_Mimikyu_1
 
 MtPyre_Summit_EventScript_Mimikyu_4:
-# 646 "data/maps/MtPyre_Summit/scripts.pory"
+# 647 "data/maps/MtPyre_Summit/scripts.pory"
 	call MimikyuFailed
 	goto MtPyre_Summit_EventScript_Mimikyu_1
 
 MtPyre_Summit_EventScript_Mimikyu_5:
-# 649 "data/maps/MtPyre_Summit/scripts.pory"
+# 650 "data/maps/MtPyre_Summit/scripts.pory"
 	call MimikyuFailed
 	goto MtPyre_Summit_EventScript_Mimikyu_1
 
 
 MimikyuWon_Caught::
-# 657 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 658 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject 9
+	fadescreen FADE_TO_BLACK
 # 659 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject 9
+# 660 "data/maps/MtPyre_Summit/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	return
 
 
 MimikyuFailed::
-# 664 "data/maps/MtPyre_Summit/scripts.pory"
-	playmoncry SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER
 # 665 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 20
+	playmoncry SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER
 # 666 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	delay 20
 # 667 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject 9
+	fadescreen FADE_TO_BLACK
 # 668 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 5
+	removeobject 9
 # 669 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+# 670 "data/maps/MtPyre_Summit/scripts.pory"
 	msgbox MimikyuFailed_Text_0
 	return
 
 
 MtPyre_Summit_EventScript_Giratina::
-# 674 "data/maps/MtPyre_Summit/scripts.pory"
-	lock
 # 675 "data/maps/MtPyre_Summit/scripts.pory"
-	faceplayer
+	lock
 # 676 "data/maps/MtPyre_Summit/scripts.pory"
-	playmoncry SPECIES_GIRATINA, CRY_MODE_ENCOUNTER
+	faceplayer
 # 677 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 40
+	playmoncry SPECIES_GIRATINA, CRY_MODE_ENCOUNTER
 # 678 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmoncry
+	delay 40
 # 679 "data/maps/MtPyre_Summit/scripts.pory"
-	setwildbattle SPECIES_GIRATINA, 75, ITEM_GRISEOUS_CORE
+	waitmoncry
 # 680 "data/maps/MtPyre_Summit/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_GIRATINA, 75, ITEM_GRISEOUS_CORE
 # 681 "data/maps/MtPyre_Summit/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 682 "data/maps/MtPyre_Summit/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 683 "data/maps/MtPyre_Summit/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 684 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MtPyre_Summit_EventScript_Giratina_2
-# 683 "data/maps/MtPyre_Summit/scripts.pory"
+# 684 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MtPyre_Summit_EventScript_Giratina_2
-# 688 "data/maps/MtPyre_Summit/scripts.pory"
+# 689 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq MtPyre_Summit_EventScript_Giratina_3
-# 688 "data/maps/MtPyre_Summit/scripts.pory"
+# 689 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MtPyre_Summit_EventScript_Giratina_3
 MtPyre_Summit_EventScript_Giratina_1:
-# 691 "data/maps/MtPyre_Summit/scripts.pory"
+# 692 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 	end
 
 MtPyre_Summit_EventScript_Giratina_2:
-# 684 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 685 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreen FADE_TO_BLACK
 # 686 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 687 "data/maps/MtPyre_Summit/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto MtPyre_Summit_EventScript_Giratina_1
 
 MtPyre_Summit_EventScript_Giratina_3:
-# 689 "data/maps/MtPyre_Summit/scripts.pory"
+# 690 "data/maps/MtPyre_Summit/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto MtPyre_Summit_EventScript_Giratina_1
 
 
 MtPyre_Summit_EventScript_MoltresGalar::
-# 696 "data/maps/MtPyre_Summit/scripts.pory"
-	lock
 # 697 "data/maps/MtPyre_Summit/scripts.pory"
-	faceplayer
+	lock
 # 698 "data/maps/MtPyre_Summit/scripts.pory"
-	playmoncry SPECIES_MOLTRES_GALAR, CRY_MODE_ENCOUNTER
+	faceplayer
 # 699 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 40
+	playmoncry SPECIES_MOLTRES_GALAR, CRY_MODE_ENCOUNTER
 # 700 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmoncry
+	delay 40
 # 701 "data/maps/MtPyre_Summit/scripts.pory"
-	setwildbattle SPECIES_MOLTRES_GALAR, 75
+	waitmoncry
 # 702 "data/maps/MtPyre_Summit/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_MOLTRES_GALAR, 75
 # 703 "data/maps/MtPyre_Summit/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 704 "data/maps/MtPyre_Summit/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 705 "data/maps/MtPyre_Summit/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 706 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MtPyre_Summit_EventScript_MoltresGalar_2
-# 705 "data/maps/MtPyre_Summit/scripts.pory"
+# 706 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MtPyre_Summit_EventScript_MoltresGalar_2
-# 710 "data/maps/MtPyre_Summit/scripts.pory"
+# 711 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq MtPyre_Summit_EventScript_MoltresGalar_3
-# 710 "data/maps/MtPyre_Summit/scripts.pory"
+# 711 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq MtPyre_Summit_EventScript_MoltresGalar_3
 MtPyre_Summit_EventScript_MoltresGalar_1:
-# 713 "data/maps/MtPyre_Summit/scripts.pory"
+# 714 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 	end
 
 MtPyre_Summit_EventScript_MoltresGalar_2:
-# 706 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 707 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreen FADE_TO_BLACK
 # 708 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 709 "data/maps/MtPyre_Summit/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto MtPyre_Summit_EventScript_MoltresGalar_1
 
 MtPyre_Summit_EventScript_MoltresGalar_3:
-# 711 "data/maps/MtPyre_Summit/scripts.pory"
+# 712 "data/maps/MtPyre_Summit/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto MtPyre_Summit_EventScript_MoltresGalar_1
 
 
 MimikyuFailed_Text_0:
-# 669 "data/maps/MtPyre_Summit/scripts.pory"
+# 670 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "The MIMIKYU disappeared…$"
