@@ -1365,6 +1365,175 @@ MossdeepCity_Movement_MomoClone2:
 	walk_in_place_right
 	step_end
 
+MossdeepCity_EventScript_PunchesTutor::
+# 777 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 778 "data/maps/MossdeepCity/scripts.pory"
+	faceplayer
+# 779 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_PunchesTutor_Text_0, MSGBOX_YESNO
+# 784 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 785 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, MossdeepCity_EventScript_PunchesTutorChoices
+# 786 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorDecline
+# 787 "data/maps/MossdeepCity/scripts.pory"
+	release
+	end
+
+
+MossdeepCity_EventScript_PunchesTutorChoices::
+# 792 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 793 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_PunchesTutorChoices_Text_0, MSGBOX_DEFAULT
+# 794 "data/maps/MossdeepCity/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, MossdeepCity_EventScript_PunchesTutorChoices_Text_1, MossdeepCity_EventScript_PunchesTutorChoices_Text_2, MossdeepCity_EventScript_PunchesTutorChoices_Text_3, MossdeepCity_EventScript_PunchesTutorChoices_Text_4, MossdeepCity_EventScript_PunchesTutorChoices_Text_5
+# 795 "data/maps/MossdeepCity/scripts.pory"
+	switch VAR_RESULT
+# 796 "data/maps/MossdeepCity/scripts.pory"
+	case 0, MossdeepCity_EventScript_PunchesTutorChoices_3
+# 798 "data/maps/MossdeepCity/scripts.pory"
+	case 1, MossdeepCity_EventScript_PunchesTutorChoices_4
+# 800 "data/maps/MossdeepCity/scripts.pory"
+	case 2, MossdeepCity_EventScript_PunchesTutorChoices_5
+# 802 "data/maps/MossdeepCity/scripts.pory"
+	case 3, MossdeepCity_EventScript_PunchesTutorChoices_6
+# 804 "data/maps/MossdeepCity/scripts.pory"
+	case 4, MossdeepCity_EventScript_PunchesTutorChoices_7
+# 806 "data/maps/MossdeepCity/scripts.pory"
+	case MULTI_B_PRESSED, MossdeepCity_EventScript_PunchesTutorChoices_8
+# 809 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorDecline
+MossdeepCity_EventScript_PunchesTutorChoices_1:
+	end
+
+MossdeepCity_EventScript_PunchesTutorChoices_3:
+# 797 "data/maps/MossdeepCity/scripts.pory"
+	goto MoveTutor_EventScript_FirePunchTeach
+	goto MossdeepCity_EventScript_PunchesTutorChoices_1
+
+MossdeepCity_EventScript_PunchesTutorChoices_4:
+# 799 "data/maps/MossdeepCity/scripts.pory"
+	goto MoveTutor_EventScript_IcePunchTeach
+	goto MossdeepCity_EventScript_PunchesTutorChoices_1
+
+MossdeepCity_EventScript_PunchesTutorChoices_5:
+# 801 "data/maps/MossdeepCity/scripts.pory"
+	goto MoveTutor_EventScript_ThunderPunchTeach
+	goto MossdeepCity_EventScript_PunchesTutorChoices_1
+
+MossdeepCity_EventScript_PunchesTutorChoices_6:
+# 803 "data/maps/MossdeepCity/scripts.pory"
+	goto MoveTutor_EventScript_BulletPunchTeach
+	goto MossdeepCity_EventScript_PunchesTutorChoices_1
+
+MossdeepCity_EventScript_PunchesTutorChoices_7:
+# 805 "data/maps/MossdeepCity/scripts.pory"
+	goto MoveTutor_EventScript_SuckerPunchTeach
+	goto MossdeepCity_EventScript_PunchesTutorChoices_1
+
+MossdeepCity_EventScript_PunchesTutorChoices_8:
+# 807 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorDecline
+	goto MossdeepCity_EventScript_PunchesTutorChoices_1
+
+
+MoveTutor_EventScript_FirePunchTeach::
+# 815 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MoveTutor_EventScript_FirePunchTeach_Text_0, MSGBOX_DEFAULT
+# 816 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_FIRE_PUNCH
+# 817 "data/maps/MossdeepCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 818 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 819 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorTaught
+	end
+
+
+MoveTutor_EventScript_IcePunchTeach::
+# 824 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MoveTutor_EventScript_IcePunchTeach_Text_0, MSGBOX_DEFAULT
+# 825 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_ICE_PUNCH
+# 826 "data/maps/MossdeepCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 827 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 828 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorTaught
+	end
+
+
+MoveTutor_EventScript_ThunderPunchTeach::
+# 833 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MoveTutor_EventScript_ThunderPunchTeach_Text_0, MSGBOX_DEFAULT
+# 834 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_THUNDER_PUNCH
+# 835 "data/maps/MossdeepCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 836 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 837 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorTaught
+	end
+
+
+MoveTutor_EventScript_BulletPunchTeach::
+# 842 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MoveTutor_EventScript_BulletPunchTeach_Text_0, MSGBOX_DEFAULT
+# 843 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_BULLET_PUNCH
+# 844 "data/maps/MossdeepCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 845 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 846 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorTaught
+	end
+
+
+MoveTutor_EventScript_SuckerPunchTeach::
+# 851 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MoveTutor_EventScript_SuckerPunchTeach_Text_0, MSGBOX_DEFAULT
+# 852 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_SUCKER_PUNCH
+# 853 "data/maps/MossdeepCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 854 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 855 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorTaught
+	end
+
+
+MossdeepCity_EventScript_PunchesTutorDecline::
+# 861 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 862 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_PunchesTutorDecline_Text_0, MSGBOX_AUTOCLOSE
+# 865 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 866 "data/maps/MossdeepCity/scripts.pory"
+	release
+	end
+
+
+MossdeepCity_EventScript_PunchesTutorTaught::
+# 871 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 872 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_PunchesTutorTaught_Text_0, MSGBOX_AUTOCLOSE
+# 874 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 875 "data/maps/MossdeepCity/scripts.pory"
+	release
+	end
+
+
 MossdeepCity_EventScript_Momo_Text_0:
 # 452 "data/maps/MossdeepCity/scripts.pory"
 	.string "{PLAYER}, if you're going to see ARIA\n can you tell them to hurry up and\l finish their training?$"
@@ -1460,6 +1629,62 @@ MoveTutor_EventScript_RecoverDeclined_Text_0:
 MoveTutor_EventScript_RecoverTaught_Text_0:
 # 738 "data/maps/MossdeepCity/scripts.pory"
 	.string "All right.\p Come back if you ever need to recover\n from your training.$"
+
+MossdeepCity_EventScript_PunchesTutor_Text_0:
+# 779 "data/maps/MossdeepCity/scripts.pory"
+	.string "They called me the fisting avatar\n in my prime because of my\l elemental fists.\p I can teach your POKéMON how to\n fist too, if you'd like.$"
+
+MossdeepCity_EventScript_PunchesTutorChoices_Text_0:
+# 793 "data/maps/MossdeepCity/scripts.pory"
+	.string "Which punch do you want me\nto teach?$"
+
+MossdeepCity_EventScript_PunchesTutorChoices_Text_1:
+# 794 "data/maps/MossdeepCity/scripts.pory"
+	.string "FIRE PUNCH$"
+
+MossdeepCity_EventScript_PunchesTutorChoices_Text_2:
+# 794 "data/maps/MossdeepCity/scripts.pory"
+	.string "ICE PUNCH$"
+
+MossdeepCity_EventScript_PunchesTutorChoices_Text_3:
+# 794 "data/maps/MossdeepCity/scripts.pory"
+	.string "THUNDER PUNCH$"
+
+MossdeepCity_EventScript_PunchesTutorChoices_Text_4:
+# 794 "data/maps/MossdeepCity/scripts.pory"
+	.string "BULLET PUNCH$"
+
+MossdeepCity_EventScript_PunchesTutorChoices_Text_5:
+# 794 "data/maps/MossdeepCity/scripts.pory"
+	.string "SUCKER PUNCH$"
+
+MoveTutor_EventScript_FirePunchTeach_Text_0:
+# 815 "data/maps/MossdeepCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach FIRE PUNCH to?$"
+
+MoveTutor_EventScript_IcePunchTeach_Text_0:
+# 824 "data/maps/MossdeepCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach ICE PUNCH to?$"
+
+MoveTutor_EventScript_ThunderPunchTeach_Text_0:
+# 833 "data/maps/MossdeepCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach THUNDER PUNCH to?$"
+
+MoveTutor_EventScript_BulletPunchTeach_Text_0:
+# 842 "data/maps/MossdeepCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach BULLET PUNCH to?$"
+
+MoveTutor_EventScript_SuckerPunchTeach_Text_0:
+# 851 "data/maps/MossdeepCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach SUCKER PUNCH to?$"
+
+MossdeepCity_EventScript_PunchesTutorDecline_Text_0:
+# 862 "data/maps/MossdeepCity/scripts.pory"
+	.string "I see.\n Come back if you want to teach your\n POKéMON the way of the elemental fist.$"
+
+MossdeepCity_EventScript_PunchesTutorTaught_Text_0:
+# 872 "data/maps/MossdeepCity/scripts.pory"
+	.string "Come back if you want to teach more\n POKéMON the way of the elemental fist.$"
 
 MossdeepCity_Text_RecoverTeach::
 # 746 "data/maps/MossdeepCity/scripts.pory"

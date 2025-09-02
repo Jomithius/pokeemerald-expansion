@@ -2668,9 +2668,8 @@ MatchCall_Text_Norman3::
 
 MatchCall_Text_Norman4::
 	.string "LUNA: {PLAYER}! You'd better go visit\n"
-	.string "your Mom every so often.\p"
-	.string "I've been keep her company, but still.\n"
-	.string "At least give her a call.\p"
+	.string "your MOM every so often.\p"
+	.string "Or at least give her a call.\p"
 	.string "She told me that she misses\n"
 	.string "hearing from you.$"
 

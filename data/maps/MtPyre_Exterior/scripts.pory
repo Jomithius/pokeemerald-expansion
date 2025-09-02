@@ -45,14 +45,14 @@ script MtPyre_Exterior_EventScript_Emo{
     applymovement(3, Common_Movement_WalkLeft)
     waitmovement(3)
     trainerbattle_no_intro(TRAINER_JOMITHIUS_3, MtPyre_Exterior_Text_RivalDefeat)
-    msgbox(MtPyre_Exterior_Text_Emo2, MSGBOX_AUTOCLOSE)
+    msgbox(MtPyre_Exterior_Text_Emo2, MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_ASSAULT_VEST)
     waitmessage
-    applymovement(3, Common_Movement_WalkRight)
-    waitmovement(3)
     msgbox(MtPyre_Exterior_Text_Emo3, MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(3, Common_Movement_WalkRight)
+    waitmovement(3)
     setfieldeffectargument(0, 1)
     dofieldeffect(FLDEFF_NPCFLY_OUT)
     delay(15)
@@ -86,14 +86,14 @@ script MtPyre_Exterior_EventScript_Emo2{
     applymovement(3, Common_Movement_WalkLeft)
     waitmovement(3)
     trainerbattle_no_intro(TRAINER_JOMITHIUS_3, MtPyre_Exterior_Text_RivalDefeat)
-    msgbox(MtPyre_Exterior_Text_Emo2, MSGBOX_AUTOCLOSE)
+    msgbox(MtPyre_Exterior_Text_Emo2, MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_ASSAULT_VEST)
     waitmessage
-    applymovement(3, Common_Movement_WalkRight)
-    waitmovement(3)
     msgbox(MtPyre_Exterior_Text_Emo3, MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(3, Common_Movement_WalkRight)
+    waitmovement(3)
     setfieldeffectargument(0, 1)
     dofieldeffect(FLDEFF_NPCFLY_OUT)
     delay(15)
@@ -114,8 +114,8 @@ text MtPyre_Exterior_Text_Emo1{
     I wouldn't expect you to come here.\p
     Are you a fan of the occult?\n
     That's surprising.\p
-    Well, since you're here, how\n
-    about a battle?\p
+    Well, since you're here…\n
+    How about a battle?\p
     The energy in this place has caused\n
     QUILAVA to become even stronger.\p
     I don't think even YOU can\n

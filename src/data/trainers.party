@@ -104,7 +104,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Clauncher
-Level: 41
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
@@ -117,11 +117,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Swanna
-Level: 41
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Marshtomp
-Level: 41
+Swampert
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
@@ -134,7 +134,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Seaking
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
@@ -147,7 +147,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Kabutops
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
@@ -266,11 +266,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Pelipper
-Level: 38
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Xatu
-Level: 37
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ED ===
@@ -283,11 +283,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Durant
-Level: 38
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seviper
-Level: 39
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
@@ -493,7 +493,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Huntail
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
@@ -506,7 +506,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Gorebyss
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FREDRICK ===
@@ -518,12 +518,12 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer 
 
-Tyrogue
-Level: 30
+Hitmontop
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Riolu
-Level: 30
+Lucario
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MATT ===
@@ -535,11 +535,26 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer 
 
+Huntail @ Damp Rock  
+Ability: Swift Swim  
+Level: 45  
+IVs: 0 Atk  
+- Rain Dance  
+- Liquidation  
+- Toxic
+
 Araquanid
-Level: 34
+Level: 45
 
 Alomomola
-Level: 34
+Level: 45
+
+Cramorant
+Level: 45
+
+Crawdaunt
+Ability: Adaptability
+Level: 45
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -1447,7 +1462,7 @@ Double Battle: No
 AI: Basic Trainer 
 
 Swellow
-Level: 38
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Energy
 - Quick Attack
@@ -1455,11 +1470,11 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Endeavor
 
 Golem
-Level: 38
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Croconaw
-Level: 34
+Feraligatr
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rollout
 - Whirlpool
@@ -1467,7 +1482,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Pulse
 
 Magneton
-Level: 36
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunderbolt
 - Supersonic
@@ -1475,7 +1490,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Sonic Boom
 
 Shiftry
-Level: 38
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Giga Drain
 - Feint Attack
@@ -1809,7 +1824,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
 Mawile
-Level: 39
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Baton Pass
 - Feint Attack
@@ -1817,7 +1832,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bite
 
 Tsareena
-Level: 39
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Stomp
 - Magical Leaf
@@ -1825,7 +1840,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leech Seed
 
 Pelipper
-Level: 39
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fly
 - Water Pulse
@@ -2051,11 +2066,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Duskull
-Level: 39
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lampent
-Level: 39
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TAMMY ===
@@ -3321,11 +3336,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Clamperl
-Level: 41
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Chinchou
-Level: 41
+Lanturn
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
@@ -3338,7 +3353,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Floatzel
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHAWN ===
@@ -3399,7 +3414,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Manectric
-Level: 38
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Exploud
@@ -3988,10 +4003,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Gardevoir
-Level: 42
+Level: 46  
 
 Ninetales-Alola
-Level: 43
+Level: 46  
 
 === TRAINER_VIRGIL ===
 Name: VIRGIL
@@ -4003,10 +4018,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Gallade
-Level: 44
+Level: 46  
 
 Hitmonlee
-Level: 44
+Level: 46  
 
 === TRAINER_BLAKE ===
 Name: BLAKE
@@ -4018,10 +4033,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Rampardos (M)
-Level: 44
+Level: 46  
 
 Doublade
-Level: 44
+Level: 46  
 
 === TRAINER_WILLIAM ===
 Name: WILLIAM
@@ -4185,7 +4200,7 @@ Adamant Nature
 - Giga Impact  
 
 Haxorus (M) @ Leftovers  
-Ability: Rivalry  
+Ability: Mold Breaker
 Level: 55    
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -4434,10 +4449,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Conkeldurr
-Level: 42
+Level: 46  
 
 Lucario
-Level: 43
+Level: 46  
 
 === TRAINER_SAMANTHA ===
 Name: SAMANTHA
@@ -4464,7 +4479,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Medicham
-Level: 43
+Level: 46  
 
 === TRAINER_KAYLA ===
 Name: KAYLA
@@ -4514,11 +4529,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Solrock
-Level: 30
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lunatone
-Level: 30
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HURLEY ===
@@ -5470,7 +5485,7 @@ Mugshot: Blue
 
 Poliwrath (M) @ Blunder Policy  
 Ability: Swift Swim  
-Level: 42  
+Level: 47  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Substitute  
@@ -5480,7 +5495,7 @@ Adamant Nature
 
 Politoed (M) @ Eject Button  
 Ability: Drizzle  
-Level: 42  
+Level: 47  
 Shiny: Yes  
 EVs: 252 HP / 212 Def / 44 SpA  
 Bold Nature  
@@ -5492,7 +5507,7 @@ IVs: 0 Atk
 
 Greninja (M) @ Life Orb  
 Ability: Protean  
-Level: 42  
+Level: 47  
 Happiness: 0  
 EVs: 84 HP / 28 Def / 252 SpA / 4 SpD / 140 Spe  
 Modest Nature  
@@ -5504,7 +5519,7 @@ IVs: 0 Atk
 
 Pikachu (F) @ Light Ball  
 Ability: Lightning Rod  
-Level: 42  
+Level: 47  
 EVs: 8 HP / 252 SpA / 244 Spe  
 Timid Nature  
 - Nasty Plot  
@@ -5514,7 +5529,7 @@ Timid Nature
 
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  
-Level: 42  
+Level: 47  
 EVs: 16 HP / 244 SpA / 248 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -5525,7 +5540,7 @@ IVs: 0 Atk
 
 Goodra (M) @ Damp Rock  
 Ability: Hydration  
-Level: 42  
+Level: 47 
 EVs: 252 HP / 212 Def / 44 SpA  
 Quiet Nature  
 - Rest  
@@ -5823,7 +5838,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Bastiodon (M)
-Level: 42
+Level: 44
 
 === TRAINER_BLAKE_SHOAL_CAVE ===
 Name: BLAKE
@@ -5835,7 +5850,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Rampardos (M)
-Level: 42
+Level: 44
 
 === TRAINER_KAREN_1 ===
 Name: KAREN
@@ -10058,7 +10073,7 @@ Ability: Drought
 Level: 46
 
 Pyroar (M)
-Level: 45
+Level: 46
 
 Talonflame (M)
 Ability: Gale Wings
@@ -10257,7 +10272,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Honedge
-Level: 41
+Level: 44
 
 === TRAINER_BINGLETON ===
 Name: BINGLETON
@@ -10272,7 +10287,7 @@ Golem-Alola
 Level: 42
 
 Swoobat
-Level: 41
+Level: 43
 
 === TRAINER_BUNGLETON ===
 Name: BUNGLETON
@@ -11724,10 +11739,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Runerigus
-Level: 42
+Level: 46  
 
 Meowstic-F (F) 
-Level: 43
+Level: 46  
 
 === TRAINER_LEONARDO ===
 Name: LEONARDO
@@ -11836,10 +11851,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Bastiodon (M)
-Level: 44
+Level: 46  
 
 Steelix
-Level: 44
+Level: 46  
 
 === TRAINER_KATHLEEN ===
 Name: KATHLEEN
@@ -11851,10 +11866,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Alakazam
-Level: 42
+Level: 46  
 
 Cofagrigus
-Level: 43
+Level: 46  
 
 === TRAINER_CLIFFORD ===
 Name: CLIFFORD
@@ -11866,10 +11881,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Machoke
-Level: 43
+Level: 46  
 
 Grapploct
-Level: 44
+Level: 46  
 
 === TRAINER_NICHOLAS ===
 Name: NICHOLAS
@@ -11881,14 +11896,14 @@ Double Battle: No
 AI: Check Bad Move
 
 Honedge
-Level: 44
+Level: 46  
 
 Wobbuffet
-Level: 42
+Level: 46  
 
 Farfetch'd-Galar  
 Ability: Scrappy
-Level: 43  
+Level: 46  
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
 Name: GRUNT
@@ -11969,10 +11984,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Scrafty
-Level: 43
+Level: 46  
 
 Hitmonchan
-Level: 44
+Level: 46  
 
 === TRAINER_BRENDAN_RUSTBORO_TREECKO ===
 Name: BRENDAN
@@ -12163,7 +12178,7 @@ AI: Smart Trainer
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
-Level: 39 
+Level: 44
 Jolly Nature  
 - Lash Out  
 - Iron Tail  
@@ -12172,7 +12187,7 @@ Jolly Nature
 
 Crobat (F) @ Poison Barb 
 Ability: Infiltrator  
-Level: 40  
+Level: 44 
 Jolly Nature  
 - Poison Fang  
 - Acrobatics  
@@ -12181,7 +12196,7 @@ Jolly Nature
 
 Cacturne (M) @ Miracle Seed 
 Ability: Water Absorb  
-Level: 39 
+Level: 44 
 Adamant Nature  
 - Drain Punch  
 - Sucker Punch  
@@ -12189,11 +12204,11 @@ Adamant Nature
 - Seed Bomb  
 
 Vibrava (M) @ Eviolite 
-Level: 39  
+Level: 44  
 
 Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
-Level: 40  
+Level: 44 
 Modest Nature  
 IVs: 0 Atk  
 - Scorching Sands  
@@ -12720,23 +12735,23 @@ Shiny: Yes
 EVs: 244 HP / 248 Def / 16 SpD  
 Impish Nature  
 - Stealth Rock  
-- Bulldoze  
-- Rock Slide  
+- Stomping Tantrum
+- Stone Edge  
 - Iron Head  
 
 Fraxure (M) @ Dragon Fang 
-Ability: Rivalry 
+Ability: Mold Breaker 
 Level: 40   
 EVs: 248 Atk / 12 SpD / 248 Spe  
 Jolly Nature  
 - Dragon Claw  
-- Bulldoze  
-- Rock Slide  
-- Iron Head 
+- Swords Dance  
+- Stone Edge 
+- Stomping Tantrum
 
 Emolga (F) @ Heavy-Duty Boots  
 Ability: Static  
-Level: 40    
+Level: 41    
 EVs: 248 SpA / 8 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -12747,14 +12762,14 @@ IVs: 0 Atk
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
-Level: 39   
+Level: 40   
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Icicle Spear  
 - Rock Blast  
 - Ice Shard  
 
-Morgrem @ Light Clay  
+Morgrem @ Eviolite  
 Ability: Prankster  
 Level: 41    
 EVs: 240 HP / 8 Atk / 12 Def / 248 SpD  
@@ -12928,7 +12943,7 @@ AI: Check Bad Move
 
 Liepard  
 Ability: Prankster  
-Level: 36   
+Level: 40   
 EVs: 80 HP / 148 Atk / 16 Def / 16 SpD / 248 Spe  
 Jolly Nature  
 - Fake Out  
@@ -12938,7 +12953,7 @@ Jolly Nature
 
 Garbodor  
 Ability: Stench  
-Level: 36   
+Level: 40   
 EVs: 236 HP / 100 Atk / 120 Def / 48 SpA  
 Naughty Nature  
 - Clear Smog  
@@ -12948,7 +12963,7 @@ Naughty Nature
 
 Grimer  
 Ability: Poison Touch  
-Level: 36   
+Level: 40   
 EVs: 248 HP / 248 Atk / 12 SpD  
 Adamant Nature  
 - Body Slam  
@@ -12995,7 +13010,7 @@ AI: Basic Trainer
 
 Honchkrow  
 Ability: Super Luck  
-Level: 40   
+Level: 41   
 EVs: 244 HP / 252 Atk / 12 SpD  
 Adamant Nature  
 - Drill Peck  
@@ -13005,7 +13020,7 @@ Adamant Nature
 
 Corsola
 Ability: Hustle  
-Level: 40   
+Level: 41   
 EVs: 244 HP / 248 Atk / 16 SpD  
 Adamant Nature  
 - Icicle Spear  
@@ -13015,7 +13030,7 @@ Adamant Nature
 
 Seviper  
 Ability: Shed Skin  
-Level: 40   
+Level: 41   
 EVs: 244 HP / 244 Atk / 16 SpD  
 Adamant Nature  
 - Poison Tail  
@@ -13025,7 +13040,7 @@ Adamant Nature
 
 Scyther @ Black Glasses  
 Ability: Technician  
-Level: 40   
+Level: 41   
 EVs: 8 HP / 252 Atk / 248 Spe  
 Jolly Nature  
 - Acrobatics  
@@ -13045,7 +13060,7 @@ Mugshot: Yellow
 
 Stunfisk-Galar @ Sitrus Berry  
 Ability: Mimicry  
-Level: 41    
+Level: 44    
 EVs: 248 HP / 8 Atk / 244 SpA / 4 SpD  
 Quiet Nature  
 - Stealth Rock  
@@ -13055,7 +13070,7 @@ Quiet Nature
 
 Obstagoon (M) @ Flame Orb  
 Ability: Guts  
-Level: 41  
+Level: 44  
 EVs: 248 Atk / 8 SpD / 252 Spe  
 Jolly Nature  
 - Bulk Up  
@@ -13065,7 +13080,7 @@ Jolly Nature
 
 Slowbro-Galar (M) @ Quick Claw 
 Ability: Quick Draw  
-Level: 41    
+Level: 44    
 EVs: 252 HP / 244 Atk / 12 SpA  
 Brave Nature  
 - Zen Headbutt  
@@ -13075,7 +13090,7 @@ Brave Nature
 
 Darmanitan-Galar @ Chople Berry  
 Ability: Zen Mode  
-Level: 38  
+Level: 41  
 EVs: 208 HP / 144 Atk / 156 Spe  
 Adamant Nature  
 - Zen Headbutt  
@@ -13085,7 +13100,7 @@ Adamant Nature
 
 Perrserker (M) @ Metal Coat  
 Ability: Tough Claws  
-Level: 40   
+Level: 44   
 EVs: 248 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Iron Tail  
@@ -13095,7 +13110,7 @@ Adamant Nature
 
 Mr. Mime-Galar (M) @ Never-Melt Ice  
 Ability: Screen Cleaner  
-Level: 41  
+Level: 44  
 EVs: 16 Atk / 248 SpA / 244 Spe  
 Hasty Nature  
 - Freeze-Dry  
@@ -14832,7 +14847,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Swoobat
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
@@ -14845,7 +14860,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Tauros
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
@@ -14858,7 +14873,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Skuntank
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
@@ -14871,11 +14886,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Liepard
-Level: 38
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Simisear
-Level: 38
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
@@ -14888,11 +14903,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Gligar
-Level: 38
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Sableye
-Level: 38
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
@@ -14905,7 +14920,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Murkrow
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
@@ -14918,7 +14933,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Quagsire
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
@@ -14931,7 +14946,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Mudbray
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
@@ -14944,7 +14959,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Houndour
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
@@ -14957,7 +14972,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Mightyena
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
@@ -14970,7 +14985,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Scraggy
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
@@ -14983,7 +14998,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Dugtrio
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
@@ -14996,7 +15011,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Dugtrio-Alola
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
@@ -15009,7 +15024,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Persian-Alola
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
@@ -15022,7 +15037,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Numel
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
@@ -15035,7 +15050,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Baltoy
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
@@ -15048,19 +15063,19 @@ Double Battle: No
 AI: Basic Trainer
 
 Coalossal
-Level: 36
+Level: 43
 
 Marowak-Alola
-Level: 38
+Level: 43
 
 Pyroar (M)
-Level: 39
+Level: 43
 
 Talonflame (M)
-Level: 37
+Level: 43
 
 Camerupt
-Level: 39
+Level: 43
 
 === TRAINER_DARCY ===
 Name: DARCY
@@ -15090,7 +15105,7 @@ AI: Smart Trainer
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
-Level: 46   
+Level: 47   
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Lash Out  
@@ -15100,7 +15115,7 @@ Jolly Nature
 
 Flygon (M) @ Dragon Fang  
 Ability: Levitate  
-Level: 46   
+Level: 47   
 EVs: 252 Atk / 252 Spe  
 Adamant Nature  
 - Dragon Dance  
@@ -15110,7 +15125,7 @@ Adamant Nature
 
 Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
-Level: 46   
+Level: 47   
 EVs: 244 HP / 248 SpA / 16 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -18320,15 +18335,14 @@ Double Battle: No
 AI: Smart Trainer Ace
 Mugshot: Purple
 
-Torkoal (M) @ Heat Rock  
-Ability: Drought   
-EVs: 248 HP / 8 SpA / 252 SpD  
-Sassy Nature  
-IVs: 0 Atk  
+Garganacl @ Leftovers  
+Ability: Purifying Salt  
+EVs: 252 HP / 4 Atk / 252 Def  
+Impish Nature  
 - Stealth Rock  
-- Scorching Sands  
-- Lava Plume  
-- Rapid Spin
+- Salt Cure  
+- Recover  
+- Earthquake
 
 Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire  
@@ -19622,7 +19636,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Clawitzer
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
@@ -19636,11 +19650,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Swanna
-Level: 41
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swampert
-Level: 41
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
@@ -19654,7 +19668,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Seaking
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
@@ -19668,7 +19682,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Kabutops
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
@@ -19797,11 +19811,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Pelipper
-Level: 38
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Xatu
-Level: 37
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ED ===
@@ -19815,11 +19829,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Durant
-Level: 30
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seviper
-Level: 30
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
@@ -20039,7 +20053,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Huntail
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
@@ -20053,7 +20067,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Gorebyss
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FREDRICK ===
@@ -20066,12 +20080,12 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Tyrogue
-Level: 30
+Hitmontop
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Riolu
-Level: 30
+Lucario
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MATT ===
@@ -20084,11 +20098,26 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
+Huntail 
+Ability: Swift Swim  
+Level: 45  
+IVs: 0 Atk  
+- Rain Dance  
+- Water Pulse  
+- Toxic
+
 Araquanid
-Level: 34
+Level: 45
 
 Alomomola
-Level: 34
+Level: 45
+
+Cramorant
+Level: 45
+
+Crawdaunt
+Ability: Adaptability
+Level: 45
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -21022,7 +21051,7 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Swellow
-Level: 38
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Energy
 - Quick Attack
@@ -21030,11 +21059,11 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Endeavor
 
 Golem
-Level: 38
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Croconaw
-Level: 34
+Feraligatr
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rollout
 - Whirlpool
@@ -21042,7 +21071,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Pulse
 
 Magneton
-Level: 36
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunderbolt
 - Supersonic
@@ -21050,7 +21079,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Sonic Boom
 
 Shiftry
-Level: 38
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Giga Drain
 - Feint Attack
@@ -21404,7 +21433,7 @@ AI: Check Bad Move / Try To Faint / Force Setup First Turn
 Difficulty: Easy
 
 Mawile
-Level: 39
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Baton Pass
 - Feint Attack
@@ -21412,7 +21441,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bite
 
 Tsareena
-Level: 39
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Stomp
 - Magical Leaf
@@ -21420,7 +21449,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leech Seed
 
 Pelipper
-Level: 39
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fly
 - Water Pulse
@@ -21660,11 +21689,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Duskull
-Level: 39
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lampent
-Level: 39
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TAMMY ===
@@ -23020,11 +23049,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Clamperl
-Level: 41
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Chinchou
-Level: 41
+Lanturn
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
@@ -23038,7 +23067,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Floatzel
-Level: 42
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHAWN ===
@@ -23097,7 +23126,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Manectric
-Level: 38
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Exploud
@@ -23723,10 +23752,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Gardevoir
-Level: 42
+Level: 46  
 
 Ninetales-Alola
-Level: 43
+Level: 46  
 
 === TRAINER_VIRGIL ===
 Name: VIRGIL
@@ -23755,10 +23784,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Rampardos (M)
-Level: 44
+Level: 46  
 
 Doublade
-Level: 44
+Level: 46  
 
 === TRAINER_WILLIAM ===
 Name: WILLIAM
@@ -24183,7 +24212,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Medicham
-Level: 43
+Level: 46  
 
 === TRAINER_KAYLA ===
 Name: KAYLA
@@ -24236,11 +24265,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Solrock
-Level: 30
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lunatone
-Level: 30
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HURLEY ===
@@ -25157,16 +25186,16 @@ Mugshot: Blue
 
 Poliwrath (M) @ Blunder Policy  
 Ability: Swift Swim  
-Level: 42  
+Level: 47  
 Adamant Nature  
 - Substitute  
 - Dynamic Punch  
 - Bulk Up  
-- Rock Slide  
+- Bulldoze 
 
 Politoed (M) @ Eject Button  
 Ability: Drizzle  
-Level: 42  
+Level: 47 
 Shiny: Yes  
 Bold Nature  
 IVs: 0 Atk  
@@ -25177,7 +25206,7 @@ IVs: 0 Atk
 
 Greninja (M) @ Life Orb  
 Ability: Protean  
-Level: 42  
+Level: 47  
 Happiness: 0  
 Modest Nature  
 IVs: 0 Atk  
@@ -25188,7 +25217,7 @@ IVs: 0 Atk
 
 Pikachu (F) @ Light Ball  
 Ability: Lightning Rod  
-Level: 42   
+Level: 47  
 Timid Nature  
 - Nasty Plot  
 - Discharge  
@@ -25197,7 +25226,7 @@ Timid Nature
 
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  
-Level: 42  
+Level: 47  
 Modest Nature  
 IVs: 0 Atk  
 - Hurricane  
@@ -25207,7 +25236,7 @@ IVs: 0 Atk
 
 Goodra (M) @ Damp Rock  
 Ability: Hydration  
-Level: 42    
+Level: 47    
 Quiet Nature  
 - Rest  
 - Rain Dance  
@@ -25492,7 +25521,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Bastiodon (M)
-Level: 42
+Level: 44
 
 === TRAINER_BLAKE_SHOAL_CAVE ===
 Name: BLAKE
@@ -25505,7 +25534,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Rampardos (M)
-Level: 42
+Level: 44
 
 === TRAINER_KAREN_1 ===
 Name: KAREN
@@ -29948,7 +29977,7 @@ Ability: Drought
 Level: 46
 
 Pyroar (M)
-Level: 45
+Level: 46
 
 Talonflame (M)
 Ability: Flame Body
@@ -30146,7 +30175,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Honedge
-Level: 41
+Level: 44
 
 === TRAINER_BINGLETON ===
 Name: BINGLETON
@@ -30162,7 +30191,7 @@ Golem-Alola
 Level: 42
 
 Swoobat
-Level: 41
+Level: 43
 
 === TRAINER_BUNGLETON ===
 Name: BUNGLETON
@@ -31618,10 +31647,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Runerigus
-Level: 42
+Level: 46  
 
 Meowstic-F (F)  
-Level: 43
+Level: 46  
 
 === TRAINER_LEONARDO ===
 Name: LEONARDO
@@ -31737,10 +31766,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Bastiodon (M)
-Level: 44
+Level: 46  
 
 Steelix
-Level: 44
+Level: 46  
 
 === TRAINER_KATHLEEN ===
 Name: KATHLEEN
@@ -31753,10 +31782,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Alakazam
-Level: 42
+Level: 46  
 
 Cofagrigus
-Level: 43
+Level: 46  
 
 === TRAINER_CLIFFORD ===
 Name: CLIFFORD
@@ -31769,10 +31798,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Machoke
-Level: 43
+Level: 46  
 
 Grapploct
-Level: 44
+Level: 46  
 
 === TRAINER_NICHOLAS ===
 Name: NICHOLAS
@@ -31785,14 +31814,14 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Honedge
-Level: 44
+Level: 46  
 
 Wobbuffet
-Level: 42
+Level: 46  
 
 Farfetch'd-Galar  
 Ability: Scrappy
-Level: 43  
+Level: 46  
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
 Name: GRUNT
@@ -31879,10 +31908,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Scrafty
-Level: 43
+Level: 46  
 
 Hitmonchan
-Level: 44
+Level: 46  
 
 === TRAINER_BRENDAN_RUSTBORO_TREECKO ===
 Name: BRENDAN
@@ -32080,7 +32109,7 @@ Difficulty: Easy
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
-Level: 39  
+Level: 43  
 Jolly Nature  
 - Lash Out  
 - Iron Tail  
@@ -32089,7 +32118,7 @@ Jolly Nature
 
 Crobat (F) @ Muscle Band 
 Ability: Infiltrator  
-Level: 38  
+Level: 43  
 Jolly Nature  
 - Poison Fang  
 - Acrobatics  
@@ -32098,7 +32127,7 @@ Jolly Nature
 
 Cacturne (M) @ Miracle Seed
 Ability: Water Absorb  
-Level: 39  
+Level: 43  
 Adamant Nature  
 - Drain Punch  
 - Sucker Punch  
@@ -32106,11 +32135,11 @@ Adamant Nature
 - Seed Bomb  
 
 Vibrava (M) @ Eviolite  
-Level: 37  
+Level: 43  
 
 Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
-Level: 40  
+Level: 43  
 Modest Nature  
 IVs: 0 Atk  
 - Scorching Sands  
@@ -32666,8 +32695,8 @@ Ability: Rivalry
 Level: 39    
 Jolly Nature  
 - Dragon Claw  
-- Bulldoze  
-- Rock Slide  
+- Stomping Tantrum
+- Stone Edge  
 - Iron Head 
 
 Emolga (F) @ Heavy-Duty Boots  
@@ -32682,13 +32711,14 @@ IVs: 0 Atk
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
-Level: 38    
-Adamant Nature  
+Level: 39
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe    
+Serious Nature  
 - Icicle Spear  
 - Rock Blast  
 - Ice Shard  
 
-Morgrem @ Light Clay  
+Morgrem @ Eviolite 
 Ability: Prankster  
 Level: 41     
 Careful Nature  
@@ -32935,7 +32965,7 @@ Difficulty: Easy
 
 Honchkrow  
 Ability: Super Luck  
-Level: 39   
+Level: 41   
 Adamant Nature  
 - Drill Peck  
 - Night Slash  
@@ -32944,7 +32974,7 @@ Adamant Nature
 
 Corsola
 Ability: Hustle  
-Level: 39   
+Level: 41   
 Adamant Nature  
 - Icicle Spear  
 - Rock Blast  
@@ -32953,7 +32983,7 @@ Adamant Nature
 
 Seviper  
 Ability: Shed Skin  
-Level: 39    
+Level: 41    
 Adamant Nature  
 - Poison Tail  
 - Brick Break  
@@ -32962,7 +32992,7 @@ Adamant Nature
 
 Scyther @ Black Glasses  
 Ability: Technician  
-Level: 39    
+Level: 41    
 Jolly Nature  
 - Acrobatics  
 - Focus Energy  
@@ -32982,7 +33012,7 @@ Mugshot: Yellow
 
 Stunfisk-Galar @ Sitrus Berry  
 Ability: Mimicry  
-Level: 40     
+Level: 43     
 Quiet Nature  
 - Stealth Rock  
 - Flash Cannon  
@@ -32991,7 +33021,7 @@ Quiet Nature
 
 Obstagoon (M) @ Toxic Orb  
 Ability: Guts  
-Level: 39    
+Level: 43    
 Jolly Nature  
 - Bulk Up  
 - Facade  
@@ -33000,7 +33030,7 @@ Jolly Nature
 
 Slowbro-Galar (M) @ Black Glasses  
 Ability: Quick Draw  
-Level: 39     
+Level: 43     
 Brave Nature  
 - Zen Headbutt  
 - Razor Shell  
@@ -33009,7 +33039,7 @@ Brave Nature
 
 Darmanitan-Galar @ Chople Berry  
 Ability: Zen Mode  
-Level: 38  
+Level: 40  
 Adamant Nature  
 - Zen Headbutt  
 - Fire Punch  
@@ -33018,7 +33048,7 @@ Adamant Nature
 
 Perrserker (M) @ Metal Coat  
 Ability: Tough Claws  
-Level: 39   
+Level: 43   
 Adamant Nature  
 - Iron Tail  
 - Brick Break  
@@ -33027,7 +33057,7 @@ Adamant Nature
 
 Mr. Mime-Galar (M) @ Never-Melt Ice  
 Ability: Screen Cleaner  
-Level: 40  
+Level: 43  
 Hasty Nature  
 - Freeze-Dry  
 - Psyshock  
@@ -34792,7 +34822,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Swoobat
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
@@ -34806,7 +34836,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Tauros
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
@@ -34820,7 +34850,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Skuntank
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
@@ -34834,11 +34864,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Liepard
-Level: 38
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Simisear
-Level: 38
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
@@ -34852,11 +34882,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Gligar
-Level: 38
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Sableye
-Level: 38
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
@@ -34870,7 +34900,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Murkrow
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
@@ -34884,7 +34914,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Quagsire
-Level: 39
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
@@ -34898,7 +34928,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Mudbray
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
@@ -34912,7 +34942,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Houndour
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
@@ -34926,7 +34956,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Mightyena
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
@@ -34940,7 +34970,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Scraggy
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
@@ -34954,7 +34984,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Dugtrio
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
@@ -34968,7 +34998,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Dugtrio-Alola
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
@@ -34982,7 +35012,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Persian-Alola
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
@@ -34996,7 +35026,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Numel
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
@@ -35010,7 +35040,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Baltoy
-Level: 39
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
@@ -35024,19 +35054,19 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Coalossal
-Level: 36
+Level: 43
 
 Marowak-Alola
-Level: 38
+Level: 43
 
 Pyroar (M)
-Level: 39
+Level: 43
 
 Talonflame (M)
-Level: 37
+Level: 43
 
 Camerupt
-Level: 39
+Level: 43
 
 === TRAINER_DARCY ===
 Name: DARCY
@@ -35068,7 +35098,7 @@ Difficulty: Easy
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
-Level: 46   
+Level: 47   
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Lash Out  
@@ -35078,7 +35108,7 @@ Jolly Nature
 
 Flygon (M) @ Dragon Fang
 Ability: Levitate  
-Level: 46   
+Level: 47   
 EVs: 252 Atk / 252 Spe  
 Adamant Nature  
 - Dragon Dance  
@@ -37201,7 +37231,7 @@ Timid Nature
 
 Okidogi @ Punching Glove  
 Ability: Toxic Chain  
-Tera Type: Flying
+Tera Type: Poison
 Jolly Nature  
 - Fire Punch  
 - Ice Punch  
@@ -38304,14 +38334,13 @@ AI: Basic Trainer Ace
 Difficulty: Easy
 Mugshot: Purple
 
-Torkoal (M) @ Heat Rock  
-Ability: Drought  
-Sassy Nature  
-IVs: 0 Atk  
+Garganacl @ Leftovers  
+Ability: Purifying Salt  
+Impish Nature  
 - Stealth Rock  
-- Scorching Sands  
-- Lava Plume  
-- Will-O-Wisp  
+- Salt Cure  
+- Recover  
+- Earthquake
 
 Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire  

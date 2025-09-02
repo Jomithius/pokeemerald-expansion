@@ -87,7 +87,7 @@ MtPyre_Exterior_EventScript_Emo::
 # 47 "data/maps/MtPyre_Exterior/scripts.pory"
 	trainerbattle_no_intro TRAINER_JOMITHIUS_3, MtPyre_Exterior_Text_RivalDefeat
 # 48 "data/maps/MtPyre_Exterior/scripts.pory"
-	msgbox MtPyre_Exterior_Text_Emo2, MSGBOX_AUTOCLOSE
+	msgbox MtPyre_Exterior_Text_Emo2, MSGBOX_DEFAULT
 # 49 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
 # 50 "data/maps/MtPyre_Exterior/scripts.pory"
@@ -95,13 +95,13 @@ MtPyre_Exterior_EventScript_Emo::
 # 51 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
 # 52 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, Common_Movement_WalkRight
-# 53 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmovement 3
-# 54 "data/maps/MtPyre_Exterior/scripts.pory"
 	msgbox MtPyre_Exterior_Text_Emo3, MSGBOX_AUTOCLOSE
-# 55 "data/maps/MtPyre_Exterior/scripts.pory"
+# 53 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
+# 54 "data/maps/MtPyre_Exterior/scripts.pory"
+	applymovement 3, Common_Movement_WalkRight
+# 55 "data/maps/MtPyre_Exterior/scripts.pory"
+	waitmovement 3
 # 56 "data/maps/MtPyre_Exterior/scripts.pory"
 	setfieldeffectargument 0, 1
 # 57 "data/maps/MtPyre_Exterior/scripts.pory"
@@ -165,7 +165,7 @@ MtPyre_Exterior_EventScript_Emo2::
 # 88 "data/maps/MtPyre_Exterior/scripts.pory"
 	trainerbattle_no_intro TRAINER_JOMITHIUS_3, MtPyre_Exterior_Text_RivalDefeat
 # 89 "data/maps/MtPyre_Exterior/scripts.pory"
-	msgbox MtPyre_Exterior_Text_Emo2, MSGBOX_AUTOCLOSE
+	msgbox MtPyre_Exterior_Text_Emo2, MSGBOX_DEFAULT
 # 90 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
 # 91 "data/maps/MtPyre_Exterior/scripts.pory"
@@ -173,13 +173,13 @@ MtPyre_Exterior_EventScript_Emo2::
 # 92 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
 # 93 "data/maps/MtPyre_Exterior/scripts.pory"
-	applymovement 3, Common_Movement_WalkRight
-# 94 "data/maps/MtPyre_Exterior/scripts.pory"
-	waitmovement 3
-# 95 "data/maps/MtPyre_Exterior/scripts.pory"
 	msgbox MtPyre_Exterior_Text_Emo3, MSGBOX_AUTOCLOSE
-# 96 "data/maps/MtPyre_Exterior/scripts.pory"
+# 94 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmessage
+# 95 "data/maps/MtPyre_Exterior/scripts.pory"
+	applymovement 3, Common_Movement_WalkRight
+# 96 "data/maps/MtPyre_Exterior/scripts.pory"
+	waitmovement 3
 # 97 "data/maps/MtPyre_Exterior/scripts.pory"
 	setfieldeffectargument 0, 1
 # 98 "data/maps/MtPyre_Exterior/scripts.pory"
@@ -446,7 +446,7 @@ MtPyre_Exterior_EventScript_ArticunoGalar_3:
 
 MtPyre_Exterior_Text_Emo1::
 # 112 "data/maps/MtPyre_Exterior/scripts.pory"
-	.string "JAMES: {PLAYER}?\n I wouldn't expect you to come here.\p Are you a fan of the occult?\n That's surprising.\p Well, since you're here, how\n about a battle?\p The energy in this place has caused\n QUILAVA to become even stronger.\p I don't think even YOU can\n withstand this strength!$"
+	.string "JAMES: {PLAYER}?\n I wouldn't expect you to come here.\p Are you a fan of the occult?\n That's surprising.\p Well, since you're here…\n How about a battle?\p The energy in this place has caused\n QUILAVA to become even stronger.\p I don't think even YOU can\n withstand this strength!$"
 
 MtPyre_Exterior_Text_Emo2::
 # 125 "data/maps/MtPyre_Exterior/scripts.pory"

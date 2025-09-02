@@ -772,3 +772,106 @@ movement MossdeepCity_Movement_MomoClone2{
 	walk_fast_left
 	walk_in_place_right
 }
+
+script MossdeepCity_EventScript_PunchesTutor{
+	lock
+	faceplayer
+	msgbox("They called me the fisting avatar\n
+		in my prime because of my\l
+		elemental fists.\p
+		I can teach your POKéMON how to\n
+		fist too, if you'd like.", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MossdeepCity_EventScript_PunchesTutorChoices)
+	goto(MossdeepCity_EventScript_PunchesTutorDecline)
+	release
+	end
+}
+
+script MossdeepCity_EventScript_PunchesTutorChoices{
+	lock
+	msgbox("Which punch do you want me\nto teach?", MSGBOX_DEFAULT)
+	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FIRE PUNCH", "ICE PUNCH", "THUNDER PUNCH", "BULLET PUNCH", "SUCKER PUNCH")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			goto(MoveTutor_EventScript_FirePunchTeach)
+		case 1:
+			goto(MoveTutor_EventScript_IcePunchTeach)
+		case 2:
+			goto(MoveTutor_EventScript_ThunderPunchTeach)
+		case 3:
+			goto(MoveTutor_EventScript_BulletPunchTeach)
+		case 4:
+			goto(MoveTutor_EventScript_SuckerPunchTeach)
+		case MULTI_B_PRESSED:
+			goto(MossdeepCity_EventScript_PunchesTutorDecline)
+		default:
+			goto(MossdeepCity_EventScript_PunchesTutorDecline)
+	}
+	end
+}
+
+script MoveTutor_EventScript_FirePunchTeach{
+	msgbox("Which POKéMON do you want to\nteach FIRE PUNCH to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_FIRE_PUNCH)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline)
+	goto(MossdeepCity_EventScript_PunchesTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_IcePunchTeach{
+	msgbox("Which POKéMON do you want to\nteach ICE PUNCH to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_ICE_PUNCH)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline)
+	goto(MossdeepCity_EventScript_PunchesTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_ThunderPunchTeach{
+	msgbox("Which POKéMON do you want to\nteach THUNDER PUNCH to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_THUNDER_PUNCH)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline)
+	goto(MossdeepCity_EventScript_PunchesTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_BulletPunchTeach{
+	msgbox("Which POKéMON do you want to\nteach BULLET PUNCH to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_BULLET_PUNCH)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline)
+	goto(MossdeepCity_EventScript_PunchesTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_SuckerPunchTeach{
+	msgbox("Which POKéMON do you want to\nteach SUCKER PUNCH to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_SUCKER_PUNCH)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline)
+	goto(MossdeepCity_EventScript_PunchesTutorTaught)
+	end
+}
+
+
+script MossdeepCity_EventScript_PunchesTutorDecline{
+	lock
+	msgbox("I see.\n
+		Come back if you want to teach your\n
+		POKéMON the way of the elemental fist.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script MossdeepCity_EventScript_PunchesTutorTaught{
+	lock
+	msgbox("Come back if you want to teach more\n
+		POKéMON the way of the elemental fist.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}

@@ -203,7 +203,7 @@ static const struct MatchCallStructTrainer sNormanMatchCallHeader =
     .mapSec = MAPSEC_PETALBURG_CITY,
     .flag = FLAG_ENABLE_NORMAN_MATCH_CALL,
     .rematchTableIdx = REMATCH_NORMAN,
-    .desc = COMPOUND_STRING("THAT GUY"),
+    .desc = COMPOUND_STRING("BLODMANE"),
     .name = COMPOUND_STRING("LUNA"),
     .textData = sNormanTextScripts
 };
@@ -213,7 +213,7 @@ static const struct MatchCallStructNPC sLunaMatchCallHeader =
     .type = MC_TYPE_NPC,
     .mapSec = MAPSEC_PETALBURG_CITY,
     .flag = FLAG_REGISTERED_LUNA_POKENAV,
-    .desc = COMPOUND_STRING("LULU(RUBRUB)"),
+    .desc = COMPOUND_STRING("LULU"),
     .name = COMPOUND_STRING("LUNA"),
     .textData = sNormanTextScripts
 };

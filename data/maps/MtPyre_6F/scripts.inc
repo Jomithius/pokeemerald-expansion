@@ -159,7 +159,7 @@ MtPyre_6F_EventScript_Nurse::
 
 MtPyre_6F_Text_Nurse::
 # 85 "data/maps/MtPyre_6F/scripts.pory"
-	.string "You and your POKéMON look tired.\n Please, take a quick break.$"
+	.string "You and your POKéMON look tired…\n Please, take a quick break.$"
 
 MtPyre_6F_Text_Nurse2::
 # 90 "data/maps/MtPyre_6F/scripts.pory"

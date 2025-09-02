@@ -83,7 +83,7 @@ script MtPyre_6F_EventScript_Nurse{
 }
 
 text MtPyre_6F_Text_Nurse{
-    "You and your POKéMON look tired.\n
+    "You and your POKéMON look tired…\n
     Please, take a quick break."
 }
 

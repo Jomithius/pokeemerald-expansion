@@ -72,7 +72,7 @@
 #line 28
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 27
-            .lvl = 46,
+            .lvl = 47,
 #line 26
             .nature = NATURE_IMPISH,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
