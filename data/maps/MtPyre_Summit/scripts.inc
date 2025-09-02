@@ -1263,7 +1263,7 @@ MtPyre_Summit_EventScript_Mimikyu::
 # 635 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmoncry
 # 636 "data/maps/MtPyre_Summit/scripts.pory"
-	setwildbattle SPECIES_MIMIKYU_TOTEM, 38, ITEM_SPELL_TAG
+	setwildbattle SPECIES_MIMIKYU_TOTEM, 41, ITEM_SPELL_TAG
 # 637 "data/maps/MtPyre_Summit/scripts.pory"
 	dowildbattle
 # 638 "data/maps/MtPyre_Summit/scripts.pory"

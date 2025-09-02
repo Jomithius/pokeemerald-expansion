@@ -563,17 +563,20 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer 
 
-Swanna 
-Level: 36
+Swanna (F)
+Level: 37
 
-Carvanha
-Level: 36
+Gorebyss (F)
+Level: 37
 
-Bruxish
-Level: 36
+Bruxish (F)
+Level: 37
 
-Wishiwashi  
-Level: 36
+Barraskewda (M)
+Level: 37
+
+Wishiwashi (M) 
+Level: 37
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: SHELLY
@@ -584,19 +587,55 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer 
 
-Pelipper
-Ability: Drizzle
-Level: 48
+Gorebyss (F) @ Damp Rock  
+Ability: Swift Swim  
+Level: 48  
+Calm Nature  
+IVs: 0 Atk  
+- Rain Dance  
+- Scald  
+- Draining Kiss  
 
-Sharpedo
-Level: 48
+Swanna (F)  
+Ability: Hydration  
+Level: 48  
+Modest Nature  
+IVs: 0 Atk  
+- Air Slash  
+- Roost  
+- Surf  
+- Tailwind  
 
-Barraskewda
-Ability: Swift Swim
-Level: 47
+Bruxish (F) 
+Ability: Wonder Skin  
+Level: 48  
+Jolly Nature  
+- Aqua Jet  
+- Aqua Tail  
+- Psychic Fangs  
 
-Wishiwashi
-Level: 48
+Wishiwashi (M) 
+Ability: Schooling  
+Level: 48  
+EVs: 252 HP  
+Adamant Nature  
+- Liquidation  
+- Iron Tail  
+- U-turn  
+
+Barraskewda (M)  
+Ability: Swift Swim  
+Level: 48  
+- Liquidation  
+- Drill Run  
+
+Arctovish  
+Ability: Water Absorb  
+Level: 48  
+Jolly Nature  
+- Fishious Rend  
+- Icicle Spear  
+- Super Fang  
 
 === TRAINER_ARCHIE ===
 Name: ARCHIE
@@ -5384,14 +5423,14 @@ Level: 38
 EVs: 248 Atk / 8 Def / 8 SpD / 244 Spe  
 Jolly Nature  
 - Howl  
-- Psychic Fangs  
+- Volt Switch 
 - Fire Fang  
 - Thunder Fang  
 
 Obstagoon (M) @ Silk Scarf  
 Ability: Reckless  
 Level: 38  
-EVs: 248 Atk / 8 SpD / 252 Spe  
+EVs: 248 HP / 248 Atk / 8 SpD
 Jolly Nature  
 - Double-Edge  
 - Knock Off  
@@ -5405,9 +5444,9 @@ EVs: 248 SpA / 8 SpD / 252 Spe
 Timid Nature  
 IVs: 0 Atk  
 - Calm Mind  
-- Dazzling Gleam  
 - Psyshock  
-- Shadow Ball  
+- Shadow Ball 
+- Psychic 
 
 Lycanroc-Dusk (M) @ Hard Stone  
 Ability: Tough Claws  
@@ -8630,11 +8669,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Arbok
-Level: 28
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Feebas
-Level: 28
+Milotic
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANGELICA ===
@@ -10293,17 +10332,20 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer 
 
+Torkoal (M) @ Charcoal
+Level: 37
+
 Swellow (F) @ Sharp Beak
-Level: 34
+Level: 37
 
 Tropius (M) @ Sitrus Berry
-Level: 34
+Level: 37
 
 Nuzleaf (M) @ Eviolite
-Level: 35
+Level: 37
 
 Aggron (M) @ Hard Stone
-Level: 36
+Level: 37
 
 Sceptile (M) @ Miracle Seed
 Level: 38
@@ -10723,10 +10765,13 @@ Double Battle: No
 AI: Basic Trainer 
 
 Wartortle (M) @ Mystic Water
-Level: 35
+Level: 37
 
 Beautifly (F) @ Silver Powder
-Level: 36
+Level: 37
+
+Ivysaur (F) @ Miracle Seed
+Level: 35
 
 Eevee (F) @ Eviolite
 Ability: Adaptability
@@ -18276,15 +18321,14 @@ AI: Smart Trainer Ace
 Mugshot: Purple
 
 Torkoal (M) @ Heat Rock  
-Ability: Drought  
-Tera Type: Ground  
+Ability: Drought   
 EVs: 248 HP / 8 SpA / 252 SpD  
 Sassy Nature  
 IVs: 0 Atk  
 - Stealth Rock  
 - Scorching Sands  
 - Lava Plume  
-- Will-O-Wisp  
+- Rapid Spin
 
 Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire  
@@ -18309,17 +18353,17 @@ Jolly Nature
 
 Walking Wake @ Booster Energy  
 Ability: Protosynthesis  
-Tera Type: Dragon  
+Tera Type: Fairy 
 EVs: 8 HP / 244 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 - Hydro Steam  
 - Draco Meteor  
 - Flamethrower  
-- Flip Turn  
+- Dragon Pulse  
 
-Hydrapple @ Leftovers  
-Ability: Sticky Hold  
-Tera Type: Grass  
+Hydrapple @ White Herb  
+Ability: Supersweet Syrup  
+Tera Type: Dragon 
 EVs: 252 HP / 252 Def / 4 SpA  
 Bold Nature  
 IVs: 0 Atk  
@@ -18328,7 +18372,7 @@ IVs: 0 Atk
 - Recover  
 - Leaf Storm  
 
-Avatar @ Covert Cloak
+Avatar @ Blunder Policy
 Ability: Dark Aura
 EVs: 252 SpA / 252 Spe / 4 Def
 Modest Nature
@@ -19491,15 +19535,14 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Blue
 
-Typhlosion-Hisui (M) @ Typhlosionite 
-Ability: Frisk   
-EVs: 4 Def / 252 SpA / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Heat Wave  
-- Endure  
-- Earth Power  
-- Infernal Parade  
+Great Tusk @ Eject Pack  
+Ability: Protosynthesis   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Stealth Rock  
+- Headlong Rush  
+- Close Combat  
+- Rapid Spin  
 
 Grimmsnarl (M) @ Mirror Herb  
 Ability: Prankster  
@@ -19509,15 +19552,6 @@ Adamant Nature
 - Bulk Up  
 - False Surrender  
 - Spirit Break
-
-Great Tusk @ Eject Pack  
-Ability: Protosynthesis   
-EVs: 252 Atk / 4 SpD / 252 Spe  
-Jolly Nature  
-- Stealth Rock  
-- Headlong Rush  
-- Close Combat  
-- Rapid Spin  
 
 Celesteela @ Power Herb  
 Ability: Beast Boost  
@@ -19550,6 +19584,16 @@ IVs: 0 Atk
 - Sludge Wave  
 - Heat Wave  
 - Thunderbolt  
+
+Typhlosion-Hisui (M) @ Typhlosionite 
+Ability: Frisk   
+EVs: 4 Def / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Heat Wave  
+- Endure  
+- Earth Power  
+- Infernal Parade  
 
 /*Easy Difficulty*/
 
@@ -20070,16 +20114,19 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Easy
 
-Swanna 
+Swanna (F)
 Level: 36
 
-Carvanha
+Gorebyss (F)
 Level: 36
 
-Bruxish
+Bruxish (F)
 Level: 36
 
-Wishiwashi  
+Barraskewda (M)
+Level: 36
+
+Wishiwashi (M) 
 Level: 36
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
@@ -20092,17 +20139,53 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Easy
 
-Pelipper 
-Level: 48
+Gorebyss (F)  
+Ability: Swift Swim  
+Level: 48  
+Calm Nature  
+IVs: 0 Atk  
+- Rain Dance  
+- Scald  
+- Draining Kiss  
 
-Sharpedo
-Level: 48
+Swanna (F)  
+Ability: Hydration  
+Level: 48  
+Modest Nature  
+IVs: 0 Atk  
+- Air Slash   
+- Surf  
 
-Barraskewda
-Level: 47
+Bruxish (F) 
+Ability: Wonder Skin  
+Level: 48  
+Jolly Nature  
+- Aqua Jet  
+- Aqua Tail  
+- Psychic Fangs  
 
-Wishiwashi
-Level: 48
+Wishiwashi (M) 
+Ability: Schooling  
+Level: 48  
+EVs: 252 HP  
+Adamant Nature  
+- Liquidation  
+- Iron Tail  
+- U-turn  
+
+Barraskewda (M)  
+Ability: Swift Swim  
+Level: 48  
+- Liquidation  
+- Drill Run  
+
+Arctovish  
+Ability: Water Absorb  
+Level: 48  
+Jolly Nature  
+- Fishious Rend  
+- Icicle Spear  
+- Super Fang  
 
 === TRAINER_ARCHIE ===
 Name: ARCHIE
@@ -25025,7 +25108,8 @@ Jolly Nature
 
 Boltund (F) @ Magnet  
 Ability: Strong Jaw  
-Level: 38    
+Level: 38  
+IVs: 0 HP / 30 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
 Jolly Nature  
 - Howl  
 - Psychic Fangs  
@@ -25034,28 +25118,28 @@ Jolly Nature
 
 Obstagoon (M) @ Silk Scarf  
 Ability: Reckless  
-Level: 38   
+Level: 38
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 Jolly Nature  
 - Double-Edge  
 - Knock Off  
 - Obstruct  
 - Parting Shot  
 
-Espeon (F) @ Twisted Spoon  
-Ability: Magic Bounce  
+Granbull @ Rocky Helmet  
+Ability: Intimidate  
 Level: 38  
-Timid Nature  
-IVs: 0 Atk  
-- Calm Mind  
-- Dazzling Gleam  
-- Psyshock  
-- Shadow Ball  
+Adamant Nature  
+- Play Rough  
+- Brick Break  
+- Rock Slide  
+- Roar
 
 Lycanroc-Dusk (M) @ Hard Stone  
 Ability: Tough Claws  
-Level: 38  
+Level: 38 
+IVs: 0 Spe    
 Adamant Nature  
-- Swords Dance  
 - Accelerock  
 - Stone Edge  
 - Zen Headbutt   
@@ -28398,11 +28482,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Arbok
-Level: 38
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Feebas
-Level: 38
+Milotic
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANGELICA ===
@@ -30142,14 +30226,17 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint 
 Difficulty: Easy
 
+Torkoal (M)
+Level: 37
+
 Swellow (F)
-Level: 34
+Level: 37
 
 Tropius (M)
-Level: 34
+Level: 36
 
 Nuzleaf (M)
-Level: 35
+Level: 37
 
 Aggron (M)
 Level: 36
@@ -30559,6 +30646,9 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Wartortle (M)
+Level: 35
+
+Ivysaur (F)
 Level: 35
 
 Beautifly (F)
@@ -38216,7 +38306,6 @@ Mugshot: Purple
 
 Torkoal (M) @ Heat Rock  
 Ability: Drought  
-Tera Type: Ground  
 Sassy Nature  
 IVs: 0 Atk  
 - Stealth Rock  
@@ -38245,7 +38334,7 @@ Jolly Nature
 
 Walking Wake @ Booster Energy  
 Ability: Protosynthesis  
-Tera Type: Dragon  
+Tera Type: Fairy  
 Timid Nature  
 - Hydro Steam  
 - Draco Meteor  
@@ -38254,7 +38343,7 @@ Timid Nature
 
 Hydrapple @ Leftovers  
 Ability: Sticky Hold  
-Tera Type: Grass    
+Tera Type: Dragon   
 Bold Nature  
 IVs: 0 Atk  
 - Nasty Plot  
@@ -39413,31 +39502,22 @@ AI: Basic Trainer
 Mugshot: Blue
 Difficulty: Easy
 
-Typhlosion-Hisui (M) @ Typhlosionite 
-Ability: Frisk   
-Timid Nature  
-IVs: 0 Atk  
-- Heat Wave  
-- Endure  
-- Earth Power  
-- Infernal Parade  
-
-Grimmsnarl (M) @ Light Clay  
-Ability: Prankster  
-Calm Nature  
-IVs: 0 Atk  
-- Light Screen  
-- Reflect  
-- Foul Play  
-- Thunder Wave  
-
 Great Tusk @ Eject Pack  
 Ability: Protosynthesis   
 Jolly Nature  
 - Stealth Rock  
 - Headlong Rush  
 - Close Combat  
-- Rapid Spin  
+- Rapid Spin   
+
+Grimmsnarl (M) @ Light Clay  
+Ability: Prankster  
+Calm Nature  
+IVs: 0 Atk  
+- Reflect  
+- Fake Out  
+- Foul Play  
+- Spirit Break  
 
 Celesteela @ Power Herb  
 Ability: Beast Boost  
@@ -39466,4 +39546,13 @@ IVs: 0 SpA
 - Draco Meteor  
 - Sludge Wave  
 - Heat Wave  
-- Thunderbolt  
+- Thunderbolt
+
+Typhlosion-Hisui (M) @ Typhlosionite 
+Ability: Frisk   
+Timid Nature  
+IVs: 0 Atk  
+- Heat Wave  
+- Endure  
+- Earth Power  
+- Infernal Parade 

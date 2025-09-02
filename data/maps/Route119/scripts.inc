@@ -1187,7 +1187,7 @@ Route119_EventScript_Lurantis::
 # 596 "data/maps/Route119/scripts.pory"
 	waitmoncry
 # 597 "data/maps/Route119/scripts.pory"
-	setwildbattle SPECIES_LURANTIS_TOTEM, 33, ITEM_MIRACLE_SEED
+	setwildbattle SPECIES_LURANTIS_TOTEM, 37, ITEM_ABILITY_CAPSULE
 # 598 "data/maps/Route119/scripts.pory"
 	dowildbattle
 # 599 "data/maps/Route119/scripts.pory"

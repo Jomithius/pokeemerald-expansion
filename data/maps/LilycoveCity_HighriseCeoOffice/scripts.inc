@@ -21,7 +21,7 @@ LilycoveCity_HighriseCeoOffice_OnTransition::
 
 LilycoveCity_HighriseFloor2_EventScript_CeoMeeting::
 # 15 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	lock
+	lockall
 # 16 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 # 17 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
@@ -389,7 +389,7 @@ LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves::
 # 218 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	waitstate
 # 219 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	release
+	releaseall
 	end
 
 

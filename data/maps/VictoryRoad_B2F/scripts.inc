@@ -227,7 +227,7 @@ VictoryRoad_B2F_EventScript_Kommo_o::
 # 117 "data/maps/VictoryRoad_B2F/scripts.pory"
 	waitmoncry
 # 118 "data/maps/VictoryRoad_B2F/scripts.pory"
-	setwildbattle SPECIES_KOMMO_O_TOTEM, 50, ITEM_DRAGON_SCALE
+	setwildbattle SPECIES_KOMMO_O_TOTEM, 54, ITEM_DRAGON_SCALE
 # 119 "data/maps/VictoryRoad_B2F/scripts.pory"
 	dowildbattle
 # 120 "data/maps/VictoryRoad_B2F/scripts.pory"

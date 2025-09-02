@@ -633,7 +633,7 @@ script MtPyre_Summit_EventScript_Mimikyu{
     playmoncry(SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_MIMIKYU_TOTEM, 38, ITEM_SPELL_TAG)
+    setwildbattle(SPECIES_MIMIKYU_TOTEM, 41, ITEM_SPELL_TAG)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){

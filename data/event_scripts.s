@@ -1174,6 +1174,8 @@ ExpCandy_PokemartL:
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_ADAMANT_MINT
 	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_JOLLY_MINT
+	.2byte ITEM_TIMID_MINT
 	.2byte ITEM_BOLD_MINT
 	.2byte ITEM_IMPISH_MINT
 	.2byte ITEM_CALM_MINT
@@ -1306,6 +1308,7 @@ EventScript_SetToNormalDifficulty::
     msgbox gText_DifficultySetToNormal, MSGBOX_DEFAULT
     closemessage
     setdifficulty DIFFICULTY_EASY
+	addvar VAR_DIFFICULTY_SWITCH_COUNTER, 1
     clearflag FLAG_SYS_HARD_MODE
 	clearflag FLAG_SYS_SLEEP_CLAUSE
     releaseall
@@ -1321,6 +1324,7 @@ EventScript_SetToHardDifficulty::
     msgbox gText_DifficultySetToHard, MSGBOX_DEFAULT
     closemessage
     setdifficulty DIFFICULTY_NORMAL
+	addvar VAR_DIFFICULTY_SWITCH_COUNTER, 1
     setflag FLAG_SYS_HARD_MODE
 	setflag FLAG_SYS_SLEEP_CLAUSE
     releaseall

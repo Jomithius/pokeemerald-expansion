@@ -437,7 +437,7 @@ script Route120_EventScript_Vikavolt{
     playmoncry(SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_VIKAVOLT_TOTEM, 35, ITEM_HEAVY_DUTY_BOOTS)
+    setwildbattle(SPECIES_VIKAVOLT_TOTEM, 40, ITEM_HEAVY_DUTY_BOOTS)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){

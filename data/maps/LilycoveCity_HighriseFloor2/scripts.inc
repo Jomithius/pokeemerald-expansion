@@ -11,7 +11,7 @@ LilycoveCity_HighriseFloor2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 LilycoveCity_HighriseFloor2_EventScript_ToOffice::
 # 8 "data/maps/LilycoveCity_HighriseFloor2/scripts.pory"
-	lock
+	lockall
 # 9 "data/maps/LilycoveCity_HighriseFloor2/scripts.pory"
 	applymovement 1, LilycoveCity_HighriseFloor2_Movement_Attendant1
 # 10 "data/maps/LilycoveCity_HighriseFloor2/scripts.pory"
@@ -51,7 +51,7 @@ LilycoveCity_HighriseFloor2_EventScript_ToOffice::
 # 27 "data/maps/LilycoveCity_HighriseFloor2/scripts.pory"
 	waitstate
 # 28 "data/maps/LilycoveCity_HighriseFloor2/scripts.pory"
-	release
+	releaseall
 	end
 
 

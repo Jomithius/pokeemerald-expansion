@@ -5,7 +5,7 @@ mapscripts LilycoveCity_HighriseFloor2_MapScripts {
 }
 
 script LilycoveCity_HighriseFloor2_EventScript_ToOffice{
-    lock
+    lockall
     applymovement(1, LilycoveCity_HighriseFloor2_Movement_Attendant1)
     delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_HighriseFloor2_Movement_Player1)
@@ -25,7 +25,7 @@ script LilycoveCity_HighriseFloor2_EventScript_ToOffice{
     waitmovement(0)
     warp(MAP_LILYCOVE_CITY_HIGHRISE_CEO_OFFICE, 7, 13)
     waitstate
-    release
+    releaseall
     end
 }
 

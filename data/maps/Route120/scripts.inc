@@ -873,7 +873,7 @@ Route120_EventScript_Vikavolt::
 # 439 "data/maps/Route120/scripts.pory"
 	waitmoncry
 # 440 "data/maps/Route120/scripts.pory"
-	setwildbattle SPECIES_VIKAVOLT_TOTEM, 35, ITEM_HEAVY_DUTY_BOOTS
+	setwildbattle SPECIES_VIKAVOLT_TOTEM, 40, ITEM_HEAVY_DUTY_BOOTS
 # 441 "data/maps/Route120/scripts.pory"
 	dowildbattle
 # 442 "data/maps/Route120/scripts.pory"

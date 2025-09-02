@@ -12,7 +12,7 @@ script LilycoveCity_HighriseCeoOffice_OnTransition{
 }
 
 script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
-    lock
+    lockall
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
     delay(10)
     applymovement(4, LilycoveCity_HighriseFloor2_Movement_Attendant)
@@ -216,7 +216,7 @@ script LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves{
     call(LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags)
     warp(MAP_LILYCOVE_CITY, 51, 7)
     waitstate
-    release
+    releaseall
     end
 }
 

@@ -5,7 +5,7 @@ mapscripts LilycoveCity_HighriseElevator_MapScripts {
 }
 
 script LilycoveCity_HighriseElevator_EventScript_ToFloor2{
-    lock
+    lockall
     applymovement(1, LilycoveCity_HighriseElevator_Movement_OperateElevator)
     delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_HighriseElevator_Movement_EnterElevator)
@@ -23,7 +23,7 @@ script LilycoveCity_HighriseElevator_EventScript_ToFloor2{
     waitmovement(0)
     warp(MAP_LILYCOVE_CITY_HIGHRISE_FLOOR2, 2, 16)
     waitstate
-    release
+    releaseall
     end
 }
 

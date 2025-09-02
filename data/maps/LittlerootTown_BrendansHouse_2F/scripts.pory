@@ -321,6 +321,7 @@ script PlayersHouse_2F_EventScript_SetToNormalDifficulty{
         This can be changed at any time using\nthe MODE SWITCHER.", MSGBOX_DEFAULT)
     waitmessage
     setdifficulty(DIFFICULTY_EASY)
+	setvar(VAR_DIFFICULTY_SWITCH_COUNTER, 1)
     clearflag(FLAG_SYS_HARD_MODE)
     clearflag(FLAG_SYS_SLEEP_CLAUSE)
     giveitem(ITEM_MODE_SWITCHER)
@@ -350,6 +351,7 @@ script PlayersHouse_2F_EventScript_SetToHardDifficulty{
         This can be changed at any time using\nthe MODE SWITCHER.", MSGBOX_DEFAULT)
     waitmessage
     setdifficulty(DIFFICULTY_NORMAL)
+	setvar(VAR_DIFFICULTY_SWITCH_COUNTER, 0)
     setflag(FLAG_SYS_HARD_MODE)
     setflag(FLAG_SYS_SLEEP_CLAUSE)
     giveitem(ITEM_MODE_SWITCHER)

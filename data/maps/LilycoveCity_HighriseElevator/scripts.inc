@@ -11,7 +11,7 @@ LilycoveCity_HighriseElevator_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 LilycoveCity_HighriseElevator_EventScript_ToFloor2::
 # 8 "data/maps/LilycoveCity_HighriseElevator/scripts.pory"
-	lock
+	lockall
 # 9 "data/maps/LilycoveCity_HighriseElevator/scripts.pory"
 	applymovement 1, LilycoveCity_HighriseElevator_Movement_OperateElevator
 # 10 "data/maps/LilycoveCity_HighriseElevator/scripts.pory"
@@ -47,7 +47,7 @@ LilycoveCity_HighriseElevator_EventScript_ToFloor2::
 # 25 "data/maps/LilycoveCity_HighriseElevator/scripts.pory"
 	waitstate
 # 26 "data/maps/LilycoveCity_HighriseElevator/scripts.pory"
-	release
+	releaseall
 	end
 
 

@@ -111,11 +111,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAY_ROUTE_119_TORCHIC] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Wow {B_PLAYER_NAME}!\nYou're stronger than ever!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("We haven't lost yet, {B_PLAYER_NAME}!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRENDAN_ROUTE_119_TREECKO] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You're stronger than ever!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I haven't lost yet!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WINONA_1] = // Mickey
         {

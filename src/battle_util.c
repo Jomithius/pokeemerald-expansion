@@ -2066,6 +2066,7 @@ u8 DoFieldEndTurnEffects(void)
             for (gBattlerAttacker = 0; gBattlerAttacker < gBattlersCount; gBattlerAttacker++)
             {
                 if (B_AFFECTION_MECHANICS == TRUE
+                 && !FlagGet(FLAG_SYS_HARD_MODE)
                  && GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER
                  && GetBattlerAffectionHearts(gBattlerAttacker) >= AFFECTION_FOUR_HEARTS
                  && (Random() % 100 < 20))

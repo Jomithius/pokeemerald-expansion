@@ -11,12 +11,23 @@ script LilycoveCity_HighriseGroundFloor_OnTransition{
 }
 
 script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
-    lock
+    lockall
     applymovement(6, Common_Movement_WalkDown)
     waitmovement(6)
-    msgbox(LilycoveCity_HighriseGroundFloor_Text_Attendant, MSGBOX_AUTOCLOSE)
-    waitmessage
-    giveitem(ITEM_BIG_NUGGET, 50)
+    if(var(VAR_DIFFICULTY_SWITCH_COUNTER) == 0){
+        msgbox(LilycoveCity_HighriseGroundFloor_Text_AttendantHardMode, MSGBOX_DEFAULT)
+        waitmessage
+        giveitem(ITEM_BIG_NUGGET, 50)
+        msgbox("That is worth more money than\n
+            you can hold.\p
+            We recommend not spending it\n
+            all at once.", MSGBOX_DEFAULT)
+    }
+    else{
+        msgbox(LilycoveCity_HighriseGroundFloor_Text_Attendant, MSGBOX_DEFAULT)
+        waitmessage
+        giveitem(ITEM_BIG_NUGGET, 25)
+    }
     waitmessage
     msgbox("Now, please allow me to\n
         show you to the CEO's office.", MSGBOX_AUTOCLOSE)
@@ -31,25 +42,38 @@ script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
     applymovement(6, Common_Movement_WalkUp)
     waitmovement(6)
     removeobject(6)
-    closedoor(8, 1)
-    waitdooranim
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
     waitmovement(0)
+    hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR)
+    closedoor(8, 1)
+    waitdooranim
     warpdoor(MAP_LILYCOVE_CITY_HIGHRISE_ELEVATOR, 2, 6)
     waitstate
-    release
+    releaseall
     end  
 }
 
 text LilycoveCity_HighriseGroundFloor_Text_Attendant{
     "Welcome, {PLAYER}.\n
     We have been expecting you.\p
-    Please, accept this gift from the CEO\n
+    Please accept this gift from the CEO\n
     for becoming CHAMPION."
 }
 
+text LilycoveCity_HighriseGroundFloor_Text_AttendantHardMode{
+    "Welcome, {PLAYER}.\n
+    We have been expecting you.\p
+    Please accept this gift from the CEO\n
+    for becoming CHAMPION, along with\l
+    this added message:\p
+    “I'm really impressed with the skill\n
+    that you've shown in your battles.\p
+    You truly are one of the best\n
+    TRAINERS in the region.”"
+}
+
 script LilycoveCity_HighriseGroundFloor_EventScript_NoEntry{
-	lock
+	lockall
 	playse(SE_PIN)
 	applymovement(2, Common_Movement_ExclamationMark)
 	waitmovement(2)
@@ -63,7 +87,7 @@ script LilycoveCity_HighriseGroundFloor_EventScript_NoEntry{
     waitmovement(0)
 	applymovement(2, Common_Movement_WalkInPlaceDown)
 	waitmovement(2)
-	release
+	releaseall
 	end
 }
 

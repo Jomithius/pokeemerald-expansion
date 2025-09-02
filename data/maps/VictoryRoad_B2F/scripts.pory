@@ -115,7 +115,7 @@ script VictoryRoad_B2F_EventScript_Kommo_o{
     playmoncry(SPECIES_KOMMO_O, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_KOMMO_O_TOTEM, 50, ITEM_DRAGON_SCALE)
+    setwildbattle(SPECIES_KOMMO_O_TOTEM, 54, ITEM_DRAGON_SCALE)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
