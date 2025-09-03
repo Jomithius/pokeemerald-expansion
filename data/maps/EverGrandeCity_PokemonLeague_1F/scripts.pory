@@ -197,7 +197,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 	msgbox("What move do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "PSYCHIC NOISE", "EXPANDING FORCE", "BREAKING SWIPE", "SLUDGE WAVE", 
 		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT", "BRAVE BIRD",
-		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "WEATHER BALL", "POLTERGEIST")
+		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "WEATHER BALL", "POLTERGEIST", "SWAGGER")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_PsychicNoiseTeach)
@@ -233,6 +233,8 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 			goto(MoveTutor_EventScript_WeatherBallTeach)
 		case 16:
 			goto(MoveTutor_EventScript_PoltergeistTeach)
+		case 17:
+			goto(MoveTutor_EventScript_SwaggerTeach)
 		case MULTI_B_PRESSED:
 			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 		default:
@@ -388,6 +390,15 @@ script MoveTutor_EventScript_WeatherBallTeach{
 script MoveTutor_EventScript_PoltergeistTeach{
 	msgbox("Which POKéMON do you want to\nteach POLTERGEIST to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_POLTERGEIST)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_SwaggerTeach{
+	msgbox("Which POKéMON do you want to\nteach SWAGGER to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_SWAGGER)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)

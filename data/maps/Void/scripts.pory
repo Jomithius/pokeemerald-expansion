@@ -149,8 +149,8 @@ script Void_EventScript_GameEnd{
     waitmessage
     call(EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags)
 	checkplayergender
-	goto_if_eq(VAR_RESULT, MALE, EverGrandeCity_HallOfFame_EventScript_GameClearMale)
-	goto_if_eq(VAR_RESULT, FEMALE, EverGrandeCity_HallOfFame_EventScript_GameClearFemale)
+	goto_if_set(FLAG_SYS_STARTED_AS_BOY, EverGrandeCity_HallOfFame_EventScript_GameClearMale)
+	goto_if_set(FLAG_SYS_STARTED_AS_GIRL, EverGrandeCity_HallOfFame_EventScript_GameClearFemale)
     releaseall
     end
 }

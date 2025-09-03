@@ -639,7 +639,7 @@ FortreeCity_Gym_EventScript_Lycanroc::
 # 322 "data/maps/FortreeCity_Gym/scripts.pory"
 	playmoncry SPECIES_LYCANROC, CRY_MODE_ENCOUNTER
 # 323 "data/maps/FortreeCity_Gym/scripts.pory"
-	delay 24
+	waitmoncry
 # 324 "data/maps/FortreeCity_Gym/scripts.pory"
 	release
 	end
@@ -651,7 +651,7 @@ FortreeCity_Gym_EventScript_Rockruff::
 # 330 "data/maps/FortreeCity_Gym/scripts.pory"
 	playmoncry SPECIES_ROCKRUFF, CRY_MODE_ENCOUNTER
 # 331 "data/maps/FortreeCity_Gym/scripts.pory"
-	delay 24
+	waitmoncry
 # 332 "data/maps/FortreeCity_Gym/scripts.pory"
 	release
 	end
@@ -661,54 +661,56 @@ FortreeCity_Gym_EventScript_GiveStoneEdge::
 # 337 "data/maps/FortreeCity_Gym/scripts.pory"
 	giveitem ITEM_TM_STONE_EDGE
 # 338 "data/maps/FortreeCity_Gym/scripts.pory"
+	setvar VAR_ROUTE120_STATE, 1
+# 339 "data/maps/FortreeCity_Gym/scripts.pory"
 	msgbox FortreeCity_Gym_Text_ExplainStoneEdge, MSGBOX_DEFAULT
 	return
 
 
 FortreeCity_Gym_UpdateMetatiles::
-# 352 "data/maps/FortreeCity_Gym/scripts.pory"
-	setmetatile 15, 17, METATILE_FortreeGym_FloorTile, FALSE
 # 353 "data/maps/FortreeCity_Gym/scripts.pory"
-	setmetatile 15, 12, METATILE_FortreeGym_FloorTile, FALSE
+	setmetatile 15, 17, METATILE_FortreeGym_FloorTile, FALSE
 # 354 "data/maps/FortreeCity_Gym/scripts.pory"
+	setmetatile 15, 12, METATILE_FortreeGym_FloorTile, FALSE
+# 355 "data/maps/FortreeCity_Gym/scripts.pory"
 	setmetatile 15, 6, METATILE_FortreeGym_FloorTile, FALSE
 	return
 
 
 FortreeCity_Gym_EventScript_Winona_FinalBattle::
-# 359 "data/maps/FortreeCity_Gym/scripts.pory"
+# 360 "data/maps/FortreeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_WINONA_2, FortreeCity_Gym_EventScript_Winona_FinalBattle_Text_0, FortreeCity_Gym_EventScript_Winona_FinalBattle_Text_1, FortreeCity_Gym_EventScript_WinonaDefeatedFinal
 	end
 
 
 FortreeCity_Gym_EventScript_WinonaDefeatedFinal::
-# 364 "data/maps/FortreeCity_Gym/scripts.pory"
-	addvar VAR_GYM_LEADER_COUNT, 1
 # 365 "data/maps/FortreeCity_Gym/scripts.pory"
+	addvar VAR_GYM_LEADER_COUNT, 1
+# 366 "data/maps/FortreeCity_Gym/scripts.pory"
 	msgbox FortreeCity_Gym_EventScript_WinonaDefeatedFinal_Text_0, MSGBOX_NPC
-# 368 "data/maps/FortreeCity_Gym/scripts.pory"
+# 369 "data/maps/FortreeCity_Gym/scripts.pory"
 	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
 	end
 
 
 FortreeCity_Gym_EventScript_WinonaDefeatedFinal2::
-# 373 "data/maps/FortreeCity_Gym/scripts.pory"
+# 374 "data/maps/FortreeCity_Gym/scripts.pory"
 	msgbox FortreeCity_Gym_EventScript_WinonaDefeatedFinal_Text_0, MSGBOX_NPC
 	end
 
 
 FortreeCity_Gym_EventScript_Winona_FinalBattle_Text_0:
-# 359 "data/maps/FortreeCity_Gym/scripts.pory"
+# 360 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "{PLAYER}!\nGood to see you again!\pIt's time to let the dogs out!$"
 
 FortreeCity_Gym_EventScript_Winona_FinalBattle_Text_1:
-# 359 "data/maps/FortreeCity_Gym/scripts.pory"
+# 360 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "Doggone it…$"
 
 FortreeCity_Gym_EventScript_WinonaDefeatedFinal_Text_0:
-# 365 "data/maps/FortreeCity_Gym/scripts.pory"
+# 366 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "You beat me again, {PLAYER}!\p Well, at least I got my dogs with\n me! AWOOOOOOOO!$"
 
 FortreeCity_Gym_Text_ExplainStoneEdge::
-# 342 "data/maps/FortreeCity_Gym/scripts.pory"
+# 343 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "TM62, STONE EDGE, hits your foe\n with sharp rocks and has a high\l chance to crit.\p It's good for knocking birds out\n of the sky!\p … … … … … …$"

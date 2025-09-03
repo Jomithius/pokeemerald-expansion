@@ -118,10 +118,20 @@ script SnowdriftCity_House3_EventScript_CynthiaBattle{
     waitmessage
     applymovement(1, SnowdriftCity_House3_Movement_CynthiaReturnsToSeat)
     waitmovement(1)
+    setflag(FLAG_SYS_DEFEATED_CYNTHIA)
     setvar(VAR_CYNTHIA_STATE, 2)
+    call_if_eq(VAR_ULTRA_SPACE_STATE, 4, SnowdriftCity_House3_EventScriptTryUnlockAreaZero)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     releaseall
     end
+}
+
+script SnowdriftCity_House3_EventScriptTryUnlockAreaZero{
+    if(!flag(FLAG_SYS_UNLOCKED_AREA_ZERO)){
+        setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0)
+    }
+    return
 }
 
 script SnowdriftCity_House3_EventScript_Cynthia{
@@ -136,7 +146,7 @@ script SnowdriftCity_House3_EventScript_Cynthia{
         much to investigate in SINNOH, as well.\p
         Though I've heard in HOENN there's six\n
         legendary golems, compared to the four\l
-        in SINNOH…", MSGBOX_AUTOCLOSE)
+        in SINNOH.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)

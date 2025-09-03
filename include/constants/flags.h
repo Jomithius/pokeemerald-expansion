@@ -1549,10 +1549,10 @@
 #define FLAG_SYS_SLEEP_CLAUSE                       (SYSTEM_FLAGS + 0xAD) // Set if Hard Mode
 #define FLAG_SYS_TALKED_TO_E4_TUTOR                 (SYSTEM_FLAGS + 0xAE) //
 #define FLAG_SYS_DEFEATED_JAMES                     (SYSTEM_FLAGS + 0xAF) // James Final Battle
-#define FLAG_UNUSED_0x910                           (SYSTEM_FLAGS + 0xB0) // Unused Flag
-#define FLAG_UNUSED_0x911                           (SYSTEM_FLAGS + 0xB1) // Unused Flag
-#define FLAG_UNUSED_0x912                           (SYSTEM_FLAGS + 0xB2) // Unused Flag
-#define FLAG_UNUSED_0x913                           (SYSTEM_FLAGS + 0xB3) // Unused Flag
+#define FLAG_SYS_UNLOCKED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB0) // For Unlocking Area Zero since it can unlocked thru Red or Cynthia
+#define FLAG_SYS_DEFEATED_CYNTHIA                   (SYSTEM_FLAGS + 0xB1) // For unlocking area zero
+#define FLAG_SYS_STARTED_AS_BOY                     (SYSTEM_FLAGS + 0xB2) // For Fantasia debugging
+#define FLAG_SYS_STARTED_AS_GIRL                    (SYSTEM_FLAGS + 0xB3) // For Fantasia debugging
 #define FLAG_UNUSED_0x914                           (SYSTEM_FLAGS + 0xB4) // Unused Flag
 #define FLAG_UNUSED_0x915                           (SYSTEM_FLAGS + 0xB5) // Unused Flag
 #define FLAG_UNUSED_0x916                           (SYSTEM_FLAGS + 0xB6) // Unused Flag

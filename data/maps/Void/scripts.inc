@@ -207,9 +207,9 @@ Void_EventScript_GameEnd::
 # 151 "data/maps/Void/scripts.pory"
 	checkplayergender
 # 152 "data/maps/Void/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, EverGrandeCity_HallOfFame_EventScript_GameClearMale
+	goto_if_set FLAG_SYS_STARTED_AS_BOY, EverGrandeCity_HallOfFame_EventScript_GameClearMale
 # 153 "data/maps/Void/scripts.pory"
-	goto_if_eq VAR_RESULT, FEMALE, EverGrandeCity_HallOfFame_EventScript_GameClearFemale
+	goto_if_set FLAG_SYS_STARTED_AS_GIRL, EverGrandeCity_HallOfFame_EventScript_GameClearFemale
 # 154 "data/maps/Void/scripts.pory"
 	releaseall
 	end

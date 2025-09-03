@@ -760,6 +760,24 @@
       "y": 75,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_ROUTE120_STATE",
+      "var_value": "0",
+      "script": "Route120_EventScript_ChallengeTheGym"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_ROUTE120_STATE",
+      "var_value": "0",
+      "script": "Route120_EventScript_ChallengeTheGym"
     }
   ],
   "bg_events": [

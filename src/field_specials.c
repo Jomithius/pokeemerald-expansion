@@ -4533,6 +4533,21 @@ bool32 ShouldDoAreaZeroCall(void)
             return FALSE;
         }
     }
+    else if (VarGet(VAR_ULTRA_SPACE_STATE) == 4 && FlagGet(FLAG_SYS_DEFEATED_CYNTHIA) == TRUE)
+    {
+        switch (gMapHeader.mapType)
+        {
+        case MAP_TYPE_TOWN:
+        case MAP_TYPE_CITY:
+        case MAP_TYPE_ROUTE:
+        case MAP_TYPE_OCEAN_ROUTE:
+            if (++(*GetVarPointer(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER)) < 30)
+                return FALSE;
+            break;
+        default:
+            return FALSE;
+        }
+    }
     else
     {
         return FALSE;

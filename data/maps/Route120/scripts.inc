@@ -944,6 +944,26 @@ VikavoltFailed::
 	return
 
 
+Route120_EventScript_ChallengeTheGym::
+# 478 "data/maps/Route120/scripts.pory"
+	lockall
+# 479 "data/maps/Route120/scripts.pory"
+	msgbox Route120_EventScript_ChallengeTheGym_Text_0, MSGBOX_AUTOCLOSE
+# 480 "data/maps/Route120/scripts.pory"
+	waitmessage
+# 481 "data/maps/Route120/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
+# 482 "data/maps/Route120/scripts.pory"
+	waitmovement 0
+# 483 "data/maps/Route120/scripts.pory"
+	releaseall
+	end
+
+
 VikavoltFailed_Text_0:
 # 473 "data/maps/Route120/scripts.pory"
 	.string "The VIKAVOLT disappeared…$"
+
+Route120_EventScript_ChallengeTheGym_Text_0:
+# 479 "data/maps/Route120/scripts.pory"
+	.string "I should challenge the GYM first.$"

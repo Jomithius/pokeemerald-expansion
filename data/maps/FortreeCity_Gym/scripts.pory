@@ -320,7 +320,7 @@ FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
 script FortreeCity_Gym_EventScript_Lycanroc{
     lock
     playmoncry(SPECIES_LYCANROC, CRY_MODE_ENCOUNTER)
-    delay(24)
+    waitmoncry
     release
     end
 }
@@ -328,13 +328,14 @@ script FortreeCity_Gym_EventScript_Lycanroc{
 script FortreeCity_Gym_EventScript_Rockruff{
     lock
     playmoncry(SPECIES_ROCKRUFF, CRY_MODE_ENCOUNTER)
-    delay(24)
+    waitmoncry
     release
     end
 }
 
 script FortreeCity_Gym_EventScript_GiveStoneEdge{
     giveitem(ITEM_TM_STONE_EDGE)
+	setvar(VAR_ROUTE120_STATE, 1) // made it so you have to beat gym before progressing
 	msgbox(FortreeCity_Gym_Text_ExplainStoneEdge, MSGBOX_DEFAULT)
 	return
 }

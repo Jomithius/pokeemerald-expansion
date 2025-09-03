@@ -611,104 +611,121 @@ PlayersHouse_2F_EventScript_ChooseDifficulty::
 # 308 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	setflag FLAG_SYS_DIFFICULTY_SET
 # 309 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_EventScript_ChooseDifficulty_Text_0, MSGBOX_DEFAULT
+	checkplayergender
 # 310 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	compare VAR_RESULT, MALE
+	goto_if_eq PlayersHouse_2F_EventScript_ChooseDifficulty_2
+# 315 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setflag FLAG_SYS_STARTED_AS_GIRL
+# 316 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	clearflag FLAG_SYS_STARTED_AS_BOY
+PlayersHouse_2F_EventScript_ChooseDifficulty_1:
+# 318 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_EventScript_ChooseDifficulty_Text_0, MSGBOX_DEFAULT
+# 319 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, PlayersHouse_2F_EventScript_ChooseDifficulty_Text_1, PlayersHouse_2F_EventScript_ChooseDifficulty_Text_2
-# 311 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 320 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, PlayersHouse_2F_EventScript_SetToNormalDifficulty
-# 312 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 321 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	goto PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo
 	end
 
+PlayersHouse_2F_EventScript_ChooseDifficulty_2:
+# 311 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setflag FLAG_SYS_STARTED_AS_BOY
+# 312 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	clearflag FLAG_SYS_STARTED_AS_GIRL
+	goto PlayersHouse_2F_EventScript_ChooseDifficulty_1
+
 
 PlayersHouse_2F_EventScript_SetToNormalDifficulty::
-# 317 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	lockall
-# 318 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	playfanfare MUS_LEVEL_UP
-# 319 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	waitfanfare
-# 320 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0, MSGBOX_DEFAULT
-# 322 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	waitmessage
-# 323 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setdifficulty DIFFICULTY_EASY
-# 324 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setvar VAR_DIFFICULTY_SWITCH_COUNTER, 1
-# 325 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	clearflag FLAG_SYS_HARD_MODE
 # 326 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	clearflag FLAG_SYS_SLEEP_CLAUSE
+	lockall
 # 327 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	giveitem ITEM_MODE_SWITCHER
+	playfanfare MUS_LEVEL_UP
 # 328 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	waitfanfare
+# 329 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0, MSGBOX_DEFAULT
+# 331 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	waitmessage
+# 332 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setdifficulty DIFFICULTY_EASY
+# 333 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setvar VAR_DIFFICULTY_SWITCH_COUNTER, 1
+# 334 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	clearflag FLAG_SYS_HARD_MODE
+# 335 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	clearflag FLAG_SYS_SLEEP_CLAUSE
+# 336 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	giveitem ITEM_MODE_SWITCHER
+# 337 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	releaseall
 	end
 
 
 PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo::
-# 333 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	lockall
-# 334 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo_Text_0, MSGBOX_YESNO
-# 339 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	waitmessage
-# 340 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, PlayersHouse_2F_EventScript_SetToHardDifficulty
-# 341 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	closemessage
 # 342 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	lockall
+# 343 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo_Text_0, MSGBOX_YESNO
+# 348 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	waitmessage
+# 349 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, PlayersHouse_2F_EventScript_SetToHardDifficulty
+# 350 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	closemessage
+# 351 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	goto PlayersHouse_2F_EventScript_SetToNormalDifficulty
 	end
 
 
 PlayersHouse_2F_EventScript_SetToHardDifficulty::
-# 347 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	lockall
-# 348 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	playfanfare MUS_LEVEL_UP
-# 349 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	waitfanfare
-# 350 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0, MSGBOX_DEFAULT
-# 352 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	waitmessage
-# 353 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setdifficulty DIFFICULTY_NORMAL
-# 354 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setvar VAR_DIFFICULTY_SWITCH_COUNTER, 0
-# 355 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setflag FLAG_SYS_HARD_MODE
 # 356 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setflag FLAG_SYS_SLEEP_CLAUSE
+	lockall
 # 357 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	giveitem ITEM_MODE_SWITCHER
+	playfanfare MUS_LEVEL_UP
 # 358 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	waitfanfare
+# 359 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0, MSGBOX_DEFAULT
+# 361 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	waitmessage
+# 362 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setdifficulty DIFFICULTY_NORMAL
+# 363 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setvar VAR_DIFFICULTY_SWITCH_COUNTER, 0
+# 364 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setflag FLAG_SYS_HARD_MODE
+# 365 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setflag FLAG_SYS_SLEEP_CLAUSE
+# 366 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	giveitem ITEM_MODE_SWITCHER
+# 367 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	releaseall
 	end
 
 
 PlayersHouse_2F_EventScript_ChooseDifficulty_Text_0:
-# 309 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 318 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Please select your difficulty.$"
 
 PlayersHouse_2F_EventScript_ChooseDifficulty_Text_1:
-# 310 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 319 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "NORMAL$"
 
 PlayersHouse_2F_EventScript_ChooseDifficulty_Text_2:
-# 310 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 319 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "HARD$"
 
 PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0:
-# 320 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 329 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Difficulty set to NORMAL.\p This can be changed at any time using\nthe MODE SWITCHER.$"
 
 PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo_Text_0:
-# 334 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 343 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}HARD MODE gives better AI to TRAINERS,\n EVs to boss TRAINER POKéMON, forces\l SET MODE and SLEEP CLAUSE, and turns\l off bag use during TRAINER battles.\p Is this the difficulty you want?$"
 
 PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0:
-# 350 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 359 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Difficulty set to HARD.\p This can be changed at any time using\nthe MODE SWITCHER.$"

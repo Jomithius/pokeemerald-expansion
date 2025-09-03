@@ -262,6 +262,7 @@ MoveTutor_EventScript_CanOnlyBeLearnedOnce::
 @ all my added move tutors
 MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_TRICK
+	setvar VAR_0x8005, MOVE_SWAGGER
 	setvar VAR_0x8005, MOVE_DRILL_RUN
 	setvar VAR_0x8005, MOVE_X_SCISSOR
 	setvar VAR_0x8005, MOVE_IRON_DEFENSE
@@ -289,7 +290,6 @@ MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_GRASS_KNOT
 	setvar VAR_0x8005, MOVE_HYPER_VOICE
 	setvar VAR_0x8005, MOVE_WEATHER_BALL
-	setvar VAR_0x8005, MOVE_TRICK_ROOM
 	setvar VAR_0x8005, MOVE_SUCKER_PUNCH
 	setvar VAR_0x8005, MOVE_BULLDOZE
 	setvar VAR_0x8005, MOVE_FIRE_FANG

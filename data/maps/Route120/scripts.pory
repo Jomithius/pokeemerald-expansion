@@ -474,3 +474,13 @@ script VikavoltFailed {
 	return
 }
 
+script Route120_EventScript_ChallengeTheGym{
+	lockall
+	msgbox("I should challenge the GYM first.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+	waitmovement(0)
+	releaseall
+	end
+}
+

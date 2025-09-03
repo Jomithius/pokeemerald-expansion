@@ -46,7 +46,7 @@ script Route135_Lab_EventScript_Maniac{
 
 script Route135_Lab_EventScript_James{
     lock
-    if(var(VAR_ULTRA_SPACE_STATE) >= 6 && flag(FLAG_SYS_FINAL_REMATCH) && !flag(FLAG_SYS_DEFEATED_JAMES)){
+    if(var(VAR_ULTRA_SPACE_STATE) >= 7 && flag(FLAG_SYS_FINAL_REMATCH) && !flag(FLAG_SYS_DEFEATED_JAMES)){
         goto(Route_135_EventScript_JamesBattle)
     }
     if(flag(FLAG_SYS_DEFEATED_JAMES)){
@@ -467,6 +467,7 @@ script Route135_Lab_EventScript_JamesCallsPlayerAreaZero{
     waitmessage
     delay(30)
     setvar(VAR_ULTRA_SPACE_STATE, 5)
+    setflag(FLAG_SYS_UNLOCKED_AREA_ZERO)
     releaseall
     end
 }
