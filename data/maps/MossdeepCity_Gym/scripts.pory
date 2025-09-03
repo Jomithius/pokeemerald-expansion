@@ -457,17 +457,15 @@ MossdeepCity_Gym_Text_MauraPostBattle:
 	.string "What goes around comes around…$"
 
 MossdeepCity_Gym_Text_SylviaIntro:
-	.string "Even at the risk of life, I will win\n"
-	.string "this battle!$"
+	.string "It's you! You really scared ARIA\n"
+	.string "back in SHOAL CAVE!$"
 
 MossdeepCity_Gym_Text_SylviaDefeat:
-	.string "What you do…\n"
-	.string "It horrifies me…$"
+	.string "AH!$"
 
 MossdeepCity_Gym_Text_SylviaPostBattle:
-	.string "How dare you beat me…\p"
-	.string "It won't be my fault if something\n"
-	.string "horrible befalls you…$"
+	.string "That scream rang through the\n"
+	.string "whole cave…$"
 
 MossdeepCity_Gym_Text_NateIntro:
 	.string "We meet'th again.\p"

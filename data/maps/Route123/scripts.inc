@@ -377,13 +377,13 @@ Route123_EventScript_Speedwagon::
 # 199 "data/maps/Route123/scripts.pory"
 	lock
 # 200 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_Speedwagon1, MSGBOX_AUTOCLOSE
+	playbgm MUS_RG_ENCOUNTER_ROCKET, FALSE
 # 201 "data/maps/Route123/scripts.pory"
-	waitmessage
+	msgbox Route123_Text_Speedwagon1, MSGBOX_AUTOCLOSE
 # 202 "data/maps/Route123/scripts.pory"
-	trainerbattle_no_intro TRAINER_SPEEDWAGON_2, Route123_SpeedwagonDefeat
+	waitmessage
 # 203 "data/maps/Route123/scripts.pory"
-	lock
+	trainerbattle_no_intro TRAINER_SPEEDWAGON_2, Route123_SpeedwagonDefeat
 # 204 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_Speedwagon2, MSGBOX_AUTOCLOSE
 # 205 "data/maps/Route123/scripts.pory"
@@ -569,7 +569,7 @@ Route123_BikerDefeat2::
 
 Route123_BikerDefeat3::
 # 314 "data/maps/Route123/scripts.pory"
-	.string "BRRRRUBBB BRRRUB….$"
+	.string "BRRRRUBBB BRRRUB…$"
 
 Route123_SpeedwagonDefeat::
 # 318 "data/maps/Route123/scripts.pory"

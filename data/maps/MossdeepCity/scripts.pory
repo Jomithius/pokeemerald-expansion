@@ -340,12 +340,12 @@ MossdeepCity_Text_WhatToDoWithWeirdRock:
 	.string "supposed to do with some weird rock?$"
 
 MossdeepCity_Text_WailmerWatching:
-	.string "Around MOSSDEEP, you can see wild\n"
-	.string "WAILMER.\p"
-	.string "It's called, uh…\n"
-	.string "What was it now…\p"
-	.string "WAI, WAI, WAI…\p"
-	.string "WAILMER watching!$"
+	.string "The GYM LEADER here wears a\n"
+	.string "real suit of armor!\p"
+	.string "My Mom said they have to wear it\n"
+	.string "to protect their glass bones!\p"
+	.string "Hahaha! How can they train\n"
+	.string "so much with glass bones?$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
 	.string "The island's SPACE CENTER has been\n"
@@ -410,7 +410,8 @@ MossdeepCity_Text_ItsAWhiteRock:
 MossdeepCity_Text_GymSign:
 	.string "MOSSDEEP CITY POKéMON GYM\n"
 	.string "LEADERS: MOMO & ARIA\p"
-	.string "“The bald and brave!”$"
+	.string "“The bald NINJA and KNIGHT\n"
+	.string "of the SACRED BLADE!”$"
 
 MossdeepCity_Text_CitySign:
 	.string "MOSSDEEP CITY\n"

@@ -89,7 +89,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
     waitmovement(0)
     waitse
     faceplayer
-    if(var(VAR_LINA_TALKED_TO) == 2){
+    if(var(VAR_LINA_TALKED_TO) == 2 && flag(FLAG_LINA_HOUSE_EEVEE)){
             msgbox("Oh, {PLAYER}? Wow.\n
             Uh, this is kind of awkward…\p
             Honestly, I didn't expect to see\n
@@ -108,7 +108,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             here to talk to me again.\p
             You didn't even know if there would be\n
             any different dialogue, you weirdo.\p
-            You're at the end of the game, {PLAYER}.\n
+            You're at the end, {PLAYER}.\n
             Hurry up and do what you need to do.\p
             Oh, and here's a hint: your exploration\n
             throughout the game paid off.\p
@@ -116,7 +116,39 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             “secret” superboss. Good luck.", MSGBOX_AUTOCLOSE)
         waitmessage
     }
-    else{
+    elif(var(VAR_LINA_TALKED_TO) == 1 && !flag(FLAG_LINA_HOUSE_EEVEE)){
+        msgbox("Oh, {PLAYER}? Wow.\n
+            Uh, this is kind of awkward…\p
+            Honestly, I didn't expect to see\n
+            you again after that last battle.\p
+            Um…\l
+            …\p
+            You're the type of person who needs\n
+            to see EVERYTHING in a game. I see…\p
+            Well, there's nothing really left for\n
+            you here, unless you want to go back\l
+            to ULTRA SPACE or AREA ZERO for some\l
+            reason.\p
+            But you know, I felt like that last\n
+            battle was a good end to my story, and\l
+            you just made it weird by coming back\l
+            here to talk to me again.\p
+            You didn't even know if there would be\n
+            any different dialogue, you weirdo.", MSGBOX_DEFAULT)
+        waitmessage
+        msgbox("You know what, though?\p
+            It sucks you didn't keep this same\n
+            energy throughout the whole game,\l
+            because you didn't unlock the “secret” \l
+            superboss.\p
+            But you know what? As a favor,\n
+            I'll give you a hint:\p
+            Go back to SLATEPORT, steal a POKéMON\n
+            and come back and talk to me.\p
+            Good luck, {PLAYER}.", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_LINA_TALKED_TO) == 1 && flag(FLAG_LINA_HOUSE_EEVEE)){
         msgbox("Oh, {PLAYER}? Wow.\n
             Uh, this is kind of awkward…\p
             Honestly, I didn't expect to see\n
@@ -153,6 +185,29 @@ script Route_135_EventScript_JamesGoFinishTheGame{
         waitfanfare
         closemessage
         setvar(VAR_LINA_TALKED_TO, 2)
+    }
+    else{
+        msgbox("Oh, {PLAYER}? Wow.\n
+            Uh, this is kind of awkward…\p
+            Honestly, I didn't expect to see\n
+            you again after that last battle.\p
+            Um…\l
+            …\p
+            You're the type of person who needs\n
+            to see EVERYTHING in a game. I see…\p
+            Well, there's nothing really left for\n
+            you here, unless you want to go back\l
+            to ULTRA SPACE or AREA ZERO for some\l
+            reason.\p
+            But you know, I felt like that last\n
+            battle was a good end to my story, and\l
+            you just made it weird by coming back\l
+            here to talk to me again.\p
+            You didn't even know if there would be\n
+            any different dialogue, you weirdo.\p
+            You're at the end, {PLAYER}.\n
+            Hurry up and do what you need to do.", MSGBOX_AUTOCLOSE)
+        waitmessage
     }
     applymovement(2, Common_Movement_WalkInPlaceUp)
     waitmovement(2)

@@ -3,8 +3,8 @@ mapscripts WachunpelonCity_SmallHouse3_MapScripts {}
 script WachunpelonCity_SmallHouse3_EventScript_Lina{
     lock
     faceplayer
-    goto_if_eq(VAR_LINA_TALKED_TO, 1, WachunpelonCity_SmallHouse3_EventScript_LinaAddVar)
-    msgbox("I'm on vacation! Shoo!", MSGBOX_AUTOCLOSE)
+    goto_if_eq(VAR_LINA_TALKED_TO, 1, WachunpelonCity_SmallHouse3_EventScript_LinaTryAddVar)
+    msgbox("I'm on vacation!\nShoo!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
@@ -12,17 +12,24 @@ script WachunpelonCity_SmallHouse3_EventScript_Lina{
     end
 }
 
-script WachunpelonCity_SmallHouse3_EventScript_LinaAddVar{
+script WachunpelonCity_SmallHouse3_EventScript_LinaTryAddVar{
     lock
-    if(flag(FLAG_TALKED_TO_LINA_LAVARIDGE) == TRUE){
+    if(flag(FLAG_TALKED_TO_LINA_LAVARIDGE) && flag(FLAG_LINA_HOUSE_EEVEE)){
         msgbox("Oh, look who's barging into random\n
-        peoples' houses again. Hmph!\p
-        I'm on vacation! Shoo!", MSGBOX_AUTOCLOSE)
+        peoples' houses again.\p
+        There's nothing for you to take here!\n
+        Hmph!\p
+        I'm on vacation!\nShoo!", MSGBOX_AUTOCLOSE)
         setvar(VAR_LINA_TALKED_TO, 2)
     }
+    elif(flag(FLAG_TALKED_TO_LINA_LAVARIDGE)){
+        msgbox("Oh, look who's barging into random\n
+        peoples' houses again. Hmph!\p
+        I'm on vacation!\nShoo!", MSGBOX_AUTOCLOSE)
+    }
     else{
-        msgbox("Oh, you again.\n
-        I'm on vacation! Shoo!", MSGBOX_AUTOCLOSE) 
+        msgbox("Oh, it's you again.\n
+        I'm on vacation!\nShoo!", MSGBOX_AUTOCLOSE) 
     }
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)

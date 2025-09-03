@@ -398,7 +398,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_Lina::
 	waitmovement 9
 # 239 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	compare VAR_LINA_TALKED_TO, 1
-	goto_if_eq LilycoveCity_DepartmentStore_5F_EventScript_Lina_8
+	goto_if_eq LilycoveCity_DepartmentStore_5F_EventScript_Lina_9
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_7:
 # 243 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	compare VAR_LINA_TALKED_TO, 1
@@ -440,7 +440,12 @@ LilycoveCity_DepartmentStore_5F_EventScript_Lina_4:
 
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_8:
 # 239 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	goto_if_set FLAG_TALKED_TO_LINA_LAVARIDGE, LilycoveCity_DepartmentStore_5F_EventScript_Lina_2
+	goto_if_set FLAG_LINA_HOUSE_EEVEE, LilycoveCity_DepartmentStore_5F_EventScript_Lina_2
+	goto LilycoveCity_DepartmentStore_5F_EventScript_Lina_7
+
+LilycoveCity_DepartmentStore_5F_EventScript_Lina_9:
+# 239 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	goto_if_set FLAG_TALKED_TO_LINA_LAVARIDGE, LilycoveCity_DepartmentStore_5F_EventScript_Lina_8
 	goto LilycoveCity_DepartmentStore_5F_EventScript_Lina_7
 
 
@@ -462,7 +467,7 @@ LilcoveCity_DepartmentStore_5F_Text_Lina1::
 
 LilcoveCity_DepartmentStore_5F_Text_Lina2::
 # 266 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "Wha-\n You again?!\p Why are you eavesdropping?!\n Shoo!$"
+	.string "Wha-\n You again?!\p W-Why are you eavesdropping?!\n Shoo!$"
 
 LilcoveCity_DepartmentStore_5F_Text_Lina3::
 # 273 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

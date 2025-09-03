@@ -73,7 +73,7 @@ script FortreeCity_PokemonCenter_1F_EventScript_RoostTutor{
 
 script MoveTutor_EventScript_RoostDeclined{
 	msgbox("Well, alright.\n
-		Come back if you have more birds!", MSGBOX_AUTOCLOSE)
+		Come back if you have more birds.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release
 	end
@@ -110,7 +110,7 @@ script FortreeCity_PokemonCenter_1F_EventScript_FangsTutor{
 script FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices{
 	lock
 	msgbox("What move do you want me\nto teach?", MSGBOX_DEFAULT)
-	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FIRE FANG", "ICE FANG", "THUNDER FANG", "PSYCHIC FANGS")
+	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FIRE FANG", "ICE FANG", "THUNDER FANG", "POISON FANG", "PSYCHIC FANGS")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_FireFangTeach)
@@ -119,6 +119,8 @@ script FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices{
 		case 2:
 			goto(MoveTutor_EventScript_ThunderFangTeach)
 		case 3:
+			goto(MoveTutor_EventScript_PoisonFangTeach)
+		case 4:
 			goto(MoveTutor_EventScript_PsychicFangsTeach)
 		case MULTI_B_PRESSED:
 			goto(FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline)
@@ -129,7 +131,7 @@ script FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices{
 }
 
 script MoveTutor_EventScript_FireFangTeach{
-	msgbox("Which POKéMON do you want to\nteach FIRE FANG to?", MSGBOX_DEFAULT)
+	msgbox("Which dog do you want to\nteach FIRE FANG to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_FIRE_FANG)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline)
@@ -138,7 +140,7 @@ script MoveTutor_EventScript_FireFangTeach{
 }
 
 script MoveTutor_EventScript_IceFangTeach{
-	msgbox("Which POKéMON do you want to\nteach ICE FANG to?", MSGBOX_DEFAULT)
+	msgbox("Which dog do you want to\nteach ICE FANG to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_ICE_FANG)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline)
@@ -147,7 +149,7 @@ script MoveTutor_EventScript_IceFangTeach{
 }
 
 script MoveTutor_EventScript_ThunderFangTeach{
-	msgbox("Which POKéMON do you want to\nteach THUNDER FANG to?", MSGBOX_DEFAULT)
+	msgbox("Which dog do you want to\nteach THUNDER FANG to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_THUNDER_FANG)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline)
@@ -155,15 +157,23 @@ script MoveTutor_EventScript_ThunderFangTeach{
 	end
 }
 
-script MoveTutor_EventScript_PsychicFangsTeach{
-	msgbox("Which POKéMON do you want to\nteach PSYCHIC FANGS to?", MSGBOX_DEFAULT)
-	setvar(VAR_0x8005, MOVE_PSYCHIC_FANGS)
+script MoveTutor_EventScript_PoisonFangTeach{
+	msgbox("Which dog do you want to\nteach POISON FANG to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_POISON_FANG)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline)
 	goto(FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught)
 	end
 }
 
+script MoveTutor_EventScript_PsychicFangsTeach{
+	msgbox("Which dog do you want to\nteach PSYCHIC FANGS to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_PSYCHIC_FANGS)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline)
+	goto(FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught)
+	end
+}
 
 script FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline{
 	lock
@@ -175,7 +185,7 @@ script FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline{
 
 script FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught{
 	lock
-	msgbox("Awooo!\p
+	msgbox("Awooohooo!\p
 		Come back if you\n
 		have more MAD DOGS!", MSGBOX_AUTOCLOSE)
 	waitmessage

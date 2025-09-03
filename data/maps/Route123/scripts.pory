@@ -197,10 +197,10 @@ script Route123_EventScript_BikerMob{
 
 script Route123_EventScript_Speedwagon{
     lock
+	playbgm(MUS_RG_ENCOUNTER_ROCKET, FALSE)
     msgbox(Route123_Text_Speedwagon1, MSGBOX_AUTOCLOSE)
     waitmessage
     trainerbattle_no_intro(TRAINER_SPEEDWAGON_2, Route123_SpeedwagonDefeat)
-    lock
     msgbox(Route123_Text_Speedwagon2, MSGBOX_AUTOCLOSE)
     waitmessage
     delay(30)
@@ -312,7 +312,7 @@ text Route123_BikerDefeat2{
 }
 
 text Route123_BikerDefeat3{
-	"BRRRRUBBB BRRRUB…."
+	"BRRRRUBBB BRRRUB…"
 }
 
 text Route123_SpeedwagonDefeat{

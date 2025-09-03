@@ -244,6 +244,7 @@ script LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags{
     clearflag(FLAG_DEFEATED_REGIELEKI)
     clearflag(FLAG_DEFEATED_ZARUDE)
     clearflag(FLAG_HIDE_MYSTERY_GIFT_MAN) // lilycove harbor
+    setflag(FLAG_MIMIKYU_TOTEM)
     return
 }
 

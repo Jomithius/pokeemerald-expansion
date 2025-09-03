@@ -236,7 +236,7 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Lina{
     delay(20)
     applymovement(9, Common_Movement_FacePlayer)
     waitmovement(9)
-    if(var(VAR_LINA_TALKED_TO) == 1 && flag(FLAG_TALKED_TO_LINA_LAVARIDGE)){
+    if(var(VAR_LINA_TALKED_TO) == 1 && flag(FLAG_TALKED_TO_LINA_LAVARIDGE) && flag(FLAG_LINA_HOUSE_EEVEE)){
         msgbox(LilcoveCity_DepartmentStore_5F_Text_Lina2, MSGBOX_AUTOCLOSE) 
         setvar(VAR_LINA_TALKED_TO, 2)  
     }
@@ -266,7 +266,7 @@ text LilcoveCity_DepartmentStore_5F_Text_Lina1{
 text LilcoveCity_DepartmentStore_5F_Text_Lina2{
     "Wha-\n
     You again?!\p
-    Why are you eavesdropping?!\n
+    W-Why are you eavesdropping?!\n
     Shoo!"
 }
 

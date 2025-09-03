@@ -179,7 +179,7 @@ FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices::
 # 112 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	msgbox FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_0, MSGBOX_DEFAULT
 # 113 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_1, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_2, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_3, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_4
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_1, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_2, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_3, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_4, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_5
 # 114 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	switch VAR_RESULT
 # 115 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
@@ -191,8 +191,10 @@ FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices::
 # 121 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	case 3, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_6
 # 123 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	case MULTI_B_PRESSED, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_7
-# 126 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	case 4, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_7
+# 125 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	case MULTI_B_PRESSED, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_8
+# 128 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
 FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_1:
 	end
@@ -214,91 +216,110 @@ FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_5:
 
 FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_6:
 # 122 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	goto MoveTutor_EventScript_PsychicFangsTeach
+	goto MoveTutor_EventScript_PoisonFangTeach
 	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_1
 
 FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_7:
 # 124 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	goto MoveTutor_EventScript_PsychicFangsTeach
+	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_1
+
+FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_8:
+# 126 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
 	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_1
 
 
 MoveTutor_EventScript_FireFangTeach::
-# 132 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	msgbox MoveTutor_EventScript_FireFangTeach_Text_0, MSGBOX_DEFAULT
-# 133 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x8005, MOVE_FIRE_FANG
 # 134 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	msgbox MoveTutor_EventScript_FireFangTeach_Text_0, MSGBOX_DEFAULT
 # 135 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
+	setvar VAR_0x8005, MOVE_FIRE_FANG
 # 136 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 137 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
+# 138 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught
 	end
 
 
 MoveTutor_EventScript_IceFangTeach::
-# 141 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	msgbox MoveTutor_EventScript_IceFangTeach_Text_0, MSGBOX_DEFAULT
-# 142 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x8005, MOVE_ICE_FANG
 # 143 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	msgbox MoveTutor_EventScript_IceFangTeach_Text_0, MSGBOX_DEFAULT
 # 144 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
+	setvar VAR_0x8005, MOVE_ICE_FANG
 # 145 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 146 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
+# 147 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught
 	end
 
 
 MoveTutor_EventScript_ThunderFangTeach::
-# 150 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	msgbox MoveTutor_EventScript_ThunderFangTeach_Text_0, MSGBOX_DEFAULT
-# 151 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x8005, MOVE_THUNDER_FANG
 # 152 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	msgbox MoveTutor_EventScript_ThunderFangTeach_Text_0, MSGBOX_DEFAULT
 # 153 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
+	setvar VAR_0x8005, MOVE_THUNDER_FANG
 # 154 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 155 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
+# 156 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught
+	end
+
+
+MoveTutor_EventScript_PoisonFangTeach::
+# 161 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	msgbox MoveTutor_EventScript_PoisonFangTeach_Text_0, MSGBOX_DEFAULT
+# 162 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	setvar VAR_0x8005, MOVE_POISON_FANG
+# 163 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 164 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
+# 165 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught
 	end
 
 
 MoveTutor_EventScript_PsychicFangsTeach::
-# 159 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 170 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	msgbox MoveTutor_EventScript_PsychicFangsTeach_Text_0, MSGBOX_DEFAULT
-# 160 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 171 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
-# 161 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 172 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 162 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 173 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline
-# 163 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 174 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	goto FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught
 	end
 
 
 FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline::
-# 169 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 179 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	lock
-# 170 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 180 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	msgbox FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline_Text_0, MSGBOX_AUTOCLOSE
-# 171 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 181 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	waitmessage
-# 172 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 182 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	release
 	end
 
 
 FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught::
-# 177 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 187 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	lock
-# 178 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 188 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	msgbox FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught_Text_0, MSGBOX_AUTOCLOSE
-# 181 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 191 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	waitmessage
-# 182 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 192 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	release
 	end
 
@@ -309,7 +330,7 @@ FortreeCity_PokemonCenter_1F_EventScript_RoostTutor_Text_0:
 
 MoveTutor_EventScript_RoostDeclined_Text_0:
 # 75 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	.string "Well, alright.\n Come back if you have more birds!$"
+	.string "Well, alright.\n Come back if you have more birds.$"
 
 MoveTutor_EventScript_RoostTaught_Text_0:
 # 83 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
@@ -337,31 +358,39 @@ FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_3:
 
 FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_4:
 # 113 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	.string "POISON FANG$"
+
+FortreeCity_PokemonCenter_1F_EventScript_FangsTutorChoices_Text_5:
+# 113 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	.string "PSYCHIC FANGS$"
 
 MoveTutor_EventScript_FireFangTeach_Text_0:
-# 132 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	.string "Which POKéMON do you want to\nteach FIRE FANG to?$"
+# 134 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	.string "Which dog do you want to\nteach FIRE FANG to?$"
 
 MoveTutor_EventScript_IceFangTeach_Text_0:
-# 141 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	.string "Which POKéMON do you want to\nteach ICE FANG to?$"
+# 143 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	.string "Which dog do you want to\nteach ICE FANG to?$"
 
 MoveTutor_EventScript_ThunderFangTeach_Text_0:
-# 150 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	.string "Which POKéMON do you want to\nteach THUNDER FANG to?$"
+# 152 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	.string "Which dog do you want to\nteach THUNDER FANG to?$"
+
+MoveTutor_EventScript_PoisonFangTeach_Text_0:
+# 161 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	.string "Which dog do you want to\nteach POISON FANG to?$"
 
 MoveTutor_EventScript_PsychicFangsTeach_Text_0:
-# 159 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	.string "Which POKéMON do you want to\nteach PSYCHIC FANGS to?$"
+# 170 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	.string "Which dog do you want to\nteach PSYCHIC FANGS to?$"
 
 FortreeCity_PokemonCenter_1F_EventScript_FangsTutorDecline_Text_0:
-# 170 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+# 180 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	.string "Grrr…$"
 
 FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught_Text_0:
-# 178 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	.string "Awooo!\p Come back if you\n have more MAD DOGS!$"
+# 188 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
+	.string "Awooohooo!\p Come back if you\n have more MAD DOGS!$"
 
 FortreeCity_PokemonCenter_1F_Text_RoostTeach::
 # 90 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"

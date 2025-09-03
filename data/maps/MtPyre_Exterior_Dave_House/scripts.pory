@@ -40,7 +40,7 @@ script MtPyre_Exterior_Dave_House_EventScript_Dave{
     lock
     faceplayer
     goto_if_unset(FLAG_RECEIVED_FANTASIA, MtPyre_Exterior_Dave_House_EventScript_GiveFantasia)
-    msgbox("DAVE: If we have to battle in the\n
+    msgbox("If we have to battle in the\n
         future, do me a favor and lose, okay?", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
@@ -72,7 +72,7 @@ text MtPyre_Exterior_Dave_House_Text_Fantasia{
     … … … …\p
     Oh. Nice to meet you, {PLAYER}.\n
     I'm DAVE, a member of the ELITE FOUR.\p
-    DAVE: So?\n
+    So?\n
     Why'd you come all the way out here?\p
     … … … …\p
     Oh, I see.\p
@@ -91,6 +91,6 @@ text MtPyre_Exterior_Dave_House_Text_WarnFantasia{
     may cause a few visual bugs in a\l
     couple cutscenes.\l
     Check the README for more details.\p
-    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}If we have to battle in the future, do\n
-    me a favor and lose, okay?"
+    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}DAVE: If we have to battle in the\n
+    future, do me a favor and lose, okay?"
 }
