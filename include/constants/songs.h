@@ -576,11 +576,11 @@
 #define MUS_ECRUTEAK_CITY           638
 #define MUS_KIMONO_DANCE            639
 #define MUS_ENCOUNTER_KIMONO        640
-#define MUS_GOLD_BATTLE             641
-#define MUS_VICTORY_GOLD            642
-#define MUS_ENCOUNTER_GOLD          643
-#define MUS_GOLD_27                 644
-#define MUS_GOLD_12                 645
+#define MUS_HG_VS_TRAINER           641 
+#define MUS_HG_VS_GYM_LEADER        642 
+#define MUS_HG_VS_CHAMPION          643 
+#define MUS_HG_VICTORY_TRAINER      644 
+#define MUS_HG_VICTORY_GYM_LEADER   645 
 #define MUS_AREA_ZERO               646
 #define MUS_AREA_ZERO_WILD_BATTLE   647
 #define MUS_LEGENDARY_QUARTET       648
@@ -597,6 +597,14 @@
 #define MUS_VS_GILGAMESH            659
 #define MUS_ENCOUNTER_EXDEATH       660
 #define MUS_VS_MIROR_B              661
+#define MUS_PECHARUNT               662 // HG_ROCKET
+#define MUS_HG_VS_WILD              663
+#define MUS_HG_VICTORY_WILD         664
+#define MUS_HG_GYM                  665
+#define MUS_HG_NATIONAL_PARK        666
+#define MUS_HG_POKE_MART            667
+#define MUS_BALDESIA_MART           668
+
 
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

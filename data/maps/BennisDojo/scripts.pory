@@ -1,12 +1,19 @@
 mapscripts BennisDojo_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: BennisDojo_OnTransition
+    MAP_SCRIPT_ON_RESUME: BennisDojo_OnResume
 }
 
 script BennisDojo_OnTransition{
     //setflag(FLAG_TEMP_E)
     call_if_unset(FLAG_HIDE_ASAK_BENNIS_DOJO, BennisDojo_UpdateAsakPos)
     call_if_defeated(TRAINER_BENNIS_4, BennisDojo_UpdateDisciplesPos)
-    call_if_set(FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO, BennisDojoHideMedicham)
+    call_if_le(VAR_BENNIS_DOJO_STATE, 4, BennisDojoHideMedicham)
+    call_if_eq(VAR_BENNIS_DOJO_STATE, 5, BennisDojoUpdateMusic)
+    end
+}
+
+script BennisDojo_OnResume{
+    call_if_set(FLAG_TEMP_5, BennisDojoHideMedicham)
     end
 }
 
@@ -27,6 +34,12 @@ script BennisDojo_UpdateAsakPos{
 
 script BennisDojoHideMedicham{
     removeobject(10)
+    setflag(FLAG_TEMP_7)
+    return
+}
+
+script BennisDojoUpdateMusic{
+    savebgm(MUS_HG_GYM)
     return
 }
 
@@ -56,7 +69,6 @@ script BennisDojo_EventScript_Panini{
 
 script BennisDojo_EventScript_Bennis{
     goto_if_not_defeated(TRAINER_PANINI_2, BennisDojo_EventScript_NoCheating)
-    setflag(FLAG_TEMP_7)
     goto_if_not_defeated(TRAINER_BENNIS_4, BennisDojo_EventScript_BennisFinalBattle)
     msgbox("Hm.\n
         Those were some good vibrations.\p
@@ -83,7 +95,8 @@ script BennisDojo_EventScript_Medicham{
 script BennisDojo_EventScript_BennisFinalBattle{
     lock
     faceplayer
-    playbgm(MUS_ENCOUNTER_CHAMPION, FALSE)
+    setflag(FLAG_TEMP_5)
+    playbgm(MUS_KIMONO_DANCE, FALSE)
     msgbox("{PLAYER}. I'm glad you showed up for\n
         a proper challenge of my dojo.\p
         You've turned into a fine TRAINER.\n
@@ -99,6 +112,7 @@ script BennisDojo_EventScript_BennisFinalBattle{
         the ritual.\p
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
+    setvar(VAR_BENNIS_DOJO_STATE, 6) // for music
     release
     end   
 }
@@ -159,6 +173,7 @@ script BennisDojo_EventScript_AsakReturn{
         Well, it was a good battle.\l
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
+    setvar(VAR_BENNIS_DOJO_STATE, 6)
     release
     end
 }
@@ -215,6 +230,7 @@ script BennisDojo_EventScript_AsakReturnEast{
         Well, it was a good battle.\l
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
+    setvar(VAR_BENNIS_DOJO_STATE, 6)
     release
     end
 }
@@ -276,6 +292,7 @@ script BennisDojo_EventScript_AsakReturnNorth{
         Well, it was a good battle.\l
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
+    setvar(VAR_BENNIS_DOJO_STATE, 6)
     release
     end
 }
@@ -288,7 +305,7 @@ script BennisDojo_EventScript_NoCheating{
 
 script BennisDojo_EventScript_NoCheatingPanini{
     msgbox("Panini?\n
-        Papanini pani.", MSGBOX_NPC)
+        Papanini panini.", MSGBOX_NPC)
     end
 }
 
@@ -429,6 +446,7 @@ script Dojo_EarlierAnswerNO{
     applymovement(OBJ_EVENT_ID_PLAYER, faceup)
     waitmovement(0)
     goto(BennisBattleStart)
+    end
 }
 
 script BennisBattleStart{
@@ -468,16 +486,18 @@ script BennisEnd{
     waitmovement(0)
     msgbox(Asak5, MSGBOX_AUTOCLOSE)
     waitmessage
-    playbgm(MUS_NONE, FALSE)
-    fadescreenspeed(FADE_TO_BLACK, 2)
+    fadeoutbgm(0)
+    delay(16)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     playse(SE_FLEE)
     setflag(FLAG_BENNIS_DOJO_1)
     setvar(VAR_BENNIS_DOJO_STATE, 2)
-    fadedefaultbgm
     removeobject(1)
     removeobject(2)
     removeobject(3)
-    fadescreenspeed(FADE_FROM_BLACK, 3)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(24)
+    fadeinbgm(0)
     releaseall
     end
 }

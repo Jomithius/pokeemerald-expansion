@@ -2,7 +2,7 @@
   "id": "MAP_SNOWDRIFT_CITY_POKEMON_CENTER",
   "name": "SnowdriftCity_PokemonCenter",
   "layout": "LAYOUT_SNOWDRIFT_CITY_POKEMON_CENTER",
-  "music": "MUS_POKE_CENTER",
+  "music": "MUS_RG_NET_CENTER",
   "region_map_section": "MAPSEC_SNOWDRIFT_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

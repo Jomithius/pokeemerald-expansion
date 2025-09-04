@@ -177,7 +177,7 @@ script AltarOfBaldesia_EventScript_AltarRitual{
     applymovement(4, AltarOfBaldesia_Movement_MochiDance4)
     waitmovement(4)
     waitse
-    playbgm(MUS_KIMONO_DANCE, TRUE)
+    playbgm(MUS_PECHARUNT, TRUE)
     msgbox("MOMO: ………………………\p
         I knew it.\n
         This is bad.", MSGBOX_AUTOCLOSE)
@@ -249,7 +249,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
     waitmovement(0)
     waitse
-    playbgm(MUS_WEATHER_GROUDON, FALSE)
+    playbgm(MUS_PECHARUNT, FALSE)
     applymovement(8, AltarOfBaldesia_Movement_Fezandipiti)
     applymovement(9, AltarOfBaldesia_Movement_Munkidori)
     delay(8)
@@ -278,7 +278,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     applymovement(8, AltarOfBaldesia_Movement_FezStepsBack)
     waitmovement(8)
     msgbox("???: Hold on, my shiny crystal ball!\n
-        Your KNIGHT is here!", MSGBOX_AUTOCLOSE)
+        Your little POOFBALL is here!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_ARIA, AltarOfBaldesia_Movement_AriaEnters)
     waitmovement(0)
@@ -609,7 +609,7 @@ script AltarOfBaldesia_EventScript_JirachiBattle{
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
-        playmoncry(SPECIES_JIRACHI, CRY_MODE_FAINT)
+        playmoncry(SPECIES_JIRACHI, CRY_MODE_WEAK)
         waitmoncry
         fadescreenswapbuffers(FADE_TO_BLACK)
         setobjectnewmovementtype(LOCALID_JIRACHI, MOVEMENT_TYPE_NONE)
@@ -624,7 +624,7 @@ script AltarOfBaldesia_EventScript_JirachiBattle{
         fadescreenswapbuffers(FADE_TO_BLACK)
         setobjectnewmovementtype(LOCALID_JIRACHI, MOVEMENT_TYPE_NONE)
         fadescreenswapbuffers(FADE_FROM_BLACK)
-        msgbox("JIRACHI went back into a deep slumber…", MSGBOX_AUTOCLOSE)
+        msgbox("JIRACHI fell into a deep slumber…", MSGBOX_AUTOCLOSE)
         waitmessage
         addvar(VAR_JIRACHI_COUNTER, 1) // sets var to 10, locking player from trying again
     }
@@ -638,7 +638,7 @@ text AltarOfBaldesia_Text_MomoAndLohan{
     "MOMO: B-Brother…?!\n
     ……\l
     Why are you here?\p
-    Only the Maiden and her guards are\n
+    Only the MAIDEN and her guards are\n
     allowed to be at the altar during\l
     the ritual.\p
     LOHAN: MO………"

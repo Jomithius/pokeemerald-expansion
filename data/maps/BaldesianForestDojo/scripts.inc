@@ -950,7 +950,7 @@ BaldesianForestDojo_EventScript_DojoChallenge::
 # 620 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitse
 # 621 "data/maps/BaldesianForestDojo/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, FALSE
+	playbgm MUS_KIMONO_DANCE, FALSE
 # 622 "data/maps/BaldesianForestDojo/scripts.pory"
 	msgbox BaldesianForestDojo_EventScript_DojoChallenge_Text_5, MSGBOX_AUTOCLOSE
 # 625 "data/maps/BaldesianForestDojo/scripts.pory"
@@ -1060,7 +1060,7 @@ BaldesianForestDojo_EventScript_ChallengeBruno::
 # 680 "data/maps/BaldesianForestDojo/scripts.pory"
 	fadescreen FADE_FROM_WHITE
 # 681 "data/maps/BaldesianForestDojo/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, FALSE
+	playbgm MUS_KIMONO_DANCE, FALSE
 # 682 "data/maps/BaldesianForestDojo/scripts.pory"
 	msgbox BaldesianForestDojo_EventScript_ChallengeBruno_Text_0, MSGBOX_AUTOCLOSE
 # 685 "data/maps/BaldesianForestDojo/scripts.pory"

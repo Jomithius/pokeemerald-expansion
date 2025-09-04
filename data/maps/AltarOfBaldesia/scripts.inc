@@ -259,7 +259,7 @@ AltarOfBaldesia_EventScript_AltarRitual::
 # 179 "data/maps/AltarOfBaldesia/scripts.pory"
 	waitse
 # 180 "data/maps/AltarOfBaldesia/scripts.pory"
-	playbgm MUS_KIMONO_DANCE, TRUE
+	playbgm MUS_PECHARUNT, TRUE
 # 181 "data/maps/AltarOfBaldesia/scripts.pory"
 	msgbox AltarOfBaldesia_EventScript_AltarRitual_Text_6, MSGBOX_AUTOCLOSE
 # 184 "data/maps/AltarOfBaldesia/scripts.pory"
@@ -385,7 +385,7 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_1:
 # 251 "data/maps/AltarOfBaldesia/scripts.pory"
 	waitse
 # 252 "data/maps/AltarOfBaldesia/scripts.pory"
-	playbgm MUS_WEATHER_GROUDON, FALSE
+	playbgm MUS_PECHARUNT, FALSE
 # 253 "data/maps/AltarOfBaldesia/scripts.pory"
 	applymovement 8, AltarOfBaldesia_Movement_Fezandipiti
 # 254 "data/maps/AltarOfBaldesia/scripts.pory"
@@ -1060,7 +1060,7 @@ AltarOfBaldesia_EventScript_JirachiBattle_1:
 
 AltarOfBaldesia_EventScript_JirachiBattle_2:
 # 612 "data/maps/AltarOfBaldesia/scripts.pory"
-	playmoncry SPECIES_JIRACHI, CRY_MODE_FAINT
+	playmoncry SPECIES_JIRACHI, CRY_MODE_WEAK
 # 613 "data/maps/AltarOfBaldesia/scripts.pory"
 	waitmoncry
 # 614 "data/maps/AltarOfBaldesia/scripts.pory"
@@ -1511,7 +1511,7 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_Text_2:
 
 AltarOfBaldesia_EventScript_PecharuntAmbush_Text_3:
 # 280 "data/maps/AltarOfBaldesia/scripts.pory"
-	.string "???: Hold on, my shiny crystal ball!\n Your KNIGHT is here!$"
+	.string "???: Hold on, my shiny crystal ball!\n Your little POOFBALL is here!$"
 
 AltarOfBaldesia_EventScript_PecharuntAmbush_Text_4:
 # 285 "data/maps/AltarOfBaldesia/scripts.pory"
@@ -1607,11 +1607,11 @@ AltarOfBaldesia_EventScript_JirachiBattle_Text_1:
 
 AltarOfBaldesia_EventScript_JirachiBattle_Text_2:
 # 627 "data/maps/AltarOfBaldesia/scripts.pory"
-	.string "JIRACHI went back into a deep slumber…$"
+	.string "JIRACHI fell into a deep slumber…$"
 
 AltarOfBaldesia_Text_MomoAndLohan::
 # 637 "data/maps/AltarOfBaldesia/scripts.pory"
-	.string "MOMO: B-Brother…?!\n ……\l Why are you here?\p Only the Maiden and her guards are\n allowed to be at the altar during\l the ritual.\p LOHAN: MO………$"
+	.string "MOMO: B-Brother…?!\n ……\l Why are you here?\p Only the MAIDEN and her guards are\n allowed to be at the altar during\l the ritual.\p LOHAN: MO………$"
 
 AltarOfBaldesia_Text_LohanIntro::
 # 647 "data/maps/AltarOfBaldesia/scripts.pory"

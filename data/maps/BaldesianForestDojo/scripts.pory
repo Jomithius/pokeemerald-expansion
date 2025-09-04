@@ -618,7 +618,7 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     waitmovement(0)
     fadescreen(FADE_FROM_WHITE)
     waitse
-    playbgm(MUS_RG_ENCOUNTER_GYM_LEADER, FALSE)
+    playbgm(MUS_KIMONO_DANCE, FALSE)
     msgbox("BRUNO: Those were impressive battles.\n
         Finally, it's my turn.\p
         Will you be the first one to defeat me?", MSGBOX_AUTOCLOSE)
@@ -678,7 +678,7 @@ script BaldesianForestDojo_EventScript_ChallengeBruno{
     applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)
     waitmovement(0)
     fadescreen(FADE_FROM_WHITE)
-    playbgm(MUS_RG_ENCOUNTER_GYM_LEADER, FALSE)
+    playbgm(MUS_KIMONO_DANCE, FALSE)
     msgbox("BRUNO: So you've come to challenge\n
         me again. Very well.\p
         Will you be the first one to defeat me?", MSGBOX_AUTOCLOSE)

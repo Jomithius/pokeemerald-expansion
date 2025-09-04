@@ -142,7 +142,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BennisDojo_EventScript_Medicham",
-      "flag": "FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO"
+      "flag": "FLAG_TEMP_7"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",

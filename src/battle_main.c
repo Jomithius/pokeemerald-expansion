@@ -5533,10 +5533,8 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_MAGMA_LEADER:
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
-        case TRAINER_CLASS_CHIEF:
         case TRAINER_CLASS_SHADOW_CLONE:
         case TRAINER_CLASS_LEADER:
-        case TRAINER_CLASS_MASTER:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWhitneyName))
             {
                 PlayBGM(MUS_VICTORY_TRAINER);
@@ -5547,21 +5545,42 @@ static void HandleEndTurn_BattleWon(void)
                 PlayBGM(MUS_VICTORY_GYM_LEADER);
                 break;
             }
+        case TRAINER_CLASS_CHIEF:
+        case TRAINER_CLASS_MASTER:
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBennisName) && !FlagGet(FLAG_SYS_FINAL_REMATCH))
+            {
+                PlayBGM(MUS_HG_VICTORY_TRAINER);
+                break;
+            }
+            else
+            {
+                PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
+                break;
+            }
         case TRAINER_CLASS_CHANNELER:
-        case TRAINER_CLASS_KNIGHT:
         case TRAINER_CLASS_KIMONO_LADY:
         case TRAINER_CLASS_KIMONO_WOMAN:
         case TRAINER_CLASS_NINJA:
-        case TRAINER_CLASS_BIKER:
         case TRAINER_CLASS_DISCIPLE:
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName) || !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleAriaName))
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
+            {
+                PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
+                break;
+            }
+            else
+            {
+                PlayBGM(MUS_HG_VICTORY_TRAINER);
+                break;
+            }
+        case TRAINER_CLASS_KNIGHT:
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleAriaName))
             {
                 PlayBGM(MUS_VICTORY_GYM_LEADER);
                 break;
             }
             else
             {
-                PlayBGM(MUS_RG_VICTORY_TRAINER);
+                PlayBGM(MUS_VICTORY_TRAINER);
                 break;
             }
         case TRAINER_CLASS_RIVAL:

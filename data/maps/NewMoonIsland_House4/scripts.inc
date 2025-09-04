@@ -44,7 +44,7 @@ NewMoonIsland_House4_EventScript_Togedemaru::
 # 37 "data/maps/NewMoonIsland_House4/scripts.pory"
 	faceplayer
 # 38 "data/maps/NewMoonIsland_House4/scripts.pory"
-	fadenewbgm MUS_POKE_MART
+	fadenewbgm MUS_HG_POKE_MART
 # 39 "data/maps/NewMoonIsland_House4/scripts.pory"
 	message NewMoonIsland_House4_EventScript_Togedemaru_Text_0
 # 41 "data/maps/NewMoonIsland_House4/scripts.pory"
@@ -54,36 +54,38 @@ NewMoonIsland_House4_EventScript_Togedemaru::
 # 43 "data/maps/NewMoonIsland_House4/scripts.pory"
 	msgbox NewMoonIsland_House4_EventScript_Togedemaru_Text_1, MSGBOX_DEFAULT
 # 44 "data/maps/NewMoonIsland_House4/scripts.pory"
-	fadedefaultbgm
+	savebgm MUS_DUMMY
 # 45 "data/maps/NewMoonIsland_House4/scripts.pory"
+	fadedefaultbgm
+# 46 "data/maps/NewMoonIsland_House4/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 49 "data/maps/NewMoonIsland_House4/scripts.pory"
-NewMoonIsland_House4_Pokemart:
 # 50 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_FULL_RESTORE
+NewMoonIsland_House4_Pokemart:
 # 51 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_FULL_RESTORE
 # 52 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_MAX_REVIVE
+	.2byte ITEM_FULL_HEAL
 # 53 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_MAX_REVIVE
 # 54 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_MAX_LURE
+	.2byte ITEM_MAX_REPEL
 # 55 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_ELIXIR
+	.2byte ITEM_MAX_LURE
 # 56 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_POKE_BALL
+	.2byte ITEM_ELIXIR
 # 57 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_POKE_BALL
 # 58 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
 # 59 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_ULTRA_BALL
 # 60 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_DUSK_BALL
+# 61 "data/maps/NewMoonIsland_House4/scripts.pory"
 	.2byte ITEM_TIMER_BALL
 	.2byte ITEM_NONE
 

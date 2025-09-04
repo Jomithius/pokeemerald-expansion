@@ -5854,25 +5854,25 @@ u16 GetBattleBGM(void)
             return MUS_EXDEATH; 
         case TRAINER_CLASS_MASTER:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBrunoName))
-                return MUS_BENNIS;
+                return MUS_HG_VS_CHAMPION;
             if(FlagGet(FLAG_SYS_BENNIS_FINAL_REMATCH) && !StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBennisName))
-                return MUS_VS_GILGAMESH;
+                return MUS_HG_VS_GYM_LEADER;
             return MUS_VS_MIROR_B; 
         case TRAINER_CLASS_CHIEF:
-            return MUS_RG_VS_GYM_LEADER;
+            return MUS_HG_VS_GYM_LEADER;
         case TRAINER_CLASS_NINJA:
         case TRAINER_CLASS_DISCIPLE:
         case TRAINER_CLASS_CHANNELER:
         case TRAINER_CLASS_KIMONO_LADY:
         case TRAINER_CLASS_KIMONO_WOMAN:   
-        case TRAINER_CLASS_BIKER:
-            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-                return MUS_RG_VS_TRAINER;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleSpeedwagonName))
-                return MUS_RG_VS_GYM_LEADER;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
                 return MUS_VS_GILGAMESH;
-            return MUS_RG_VS_TRAINER; 
+            return MUS_HG_VS_TRAINER;
+        case TRAINER_CLASS_BIKER:
+            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
+                return MUS_HG_VS_TRAINER;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleSpeedwagonName))
+                return MUS_RG_VS_GYM_LEADER; 
         case TRAINER_CLASS_NIGHTMARE:
             return MUS_RG_LAVENDER;
         case TRAINER_CLASS_KNIGHT:
@@ -5906,17 +5906,17 @@ u16 GetBattleBGM(void)
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(AREA_ZERO_FUTURISTIC) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(AREA_ZERO_FUTURISTIC))
             return MUS_AREA_ZERO_WILD_BATTLE;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE138) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE138))
-            return MUS_RG_VS_WILD;
+            return MUS_HG_VS_WILD;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE138_2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE138_2))
-            return MUS_RG_VS_WILD;
+            return MUS_HG_VS_WILD;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE139) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE139))
-            return MUS_RG_VS_WILD;
+            return MUS_HG_VS_WILD;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE139_TUNNEL) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE139_TUNNEL))
-            return MUS_RG_VS_WILD;
+            return MUS_HG_VS_WILD;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BALDESIAN_FOREST) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BALDESIAN_FOREST))
-            return MUS_RG_VS_WILD;
+            return MUS_HG_VS_WILD;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(EASTERN_RUINS) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(EASTERN_RUINS))
-            return MUS_RG_VS_WILD;
+            return MUS_HG_VS_WILD;
         return MUS_VS_WILD;
     }
 }

@@ -55,10 +55,13 @@ script Baldesia_MainHouse_UpdateAriaPos{
 script Baldesia_MainHouse_EventScript_Clerk{
     lock
     faceplayer
+    fadenewbgm(MUS_BALDESIA_MART)
     message(gText_HowMayIServeYou)
 	waitmessage
 	pokemart(Baldesia_MainHouse_Pokemart)
 	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
 	release
 	end
 }
@@ -81,10 +84,13 @@ mart Baldesia_MainHouse_Pokemart{
 script Baldesia_MainHouse_EventScript_MochiClerk{
     lock
     faceplayer
+    fadenewbgm(MUS_BALDESIA_MART)
     message("Hello.\nI'm selling mochi.")
 	waitmessage
 	pokemart(Baldesia_MainHouse_PokemartMochi)
 	msgbox("Thank you for your patronage.", MSGBOX_DEFAULT)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
 	release
 	end
 }
@@ -160,6 +166,8 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     waitmovement(0)
     msgbox(Baldesia_MainHouse_TextLohan, MSGBOX_AUTOCLOSE)
     waitmessage
+    playbgm(MUS_PECHARUNT, FALSE)
+    delay(16)
     playse(SE_PIN)
     applymovement(LOCALID_BENNIS, Common_Movement_ExclamationMark)
     delay(6)
@@ -544,8 +552,8 @@ script Baldesia_MainHouse_EventScript_OldMan{
     msgbox("While we say that JIRACHI is going\n
         to awaken, the truth is it's only coming\l
         out of a deeper state of sleep.\p
-        During this time, the Maiden needs to\n
-        play the POKé FLUTE to truly wake it up.", MSGBOX_NPC)
+        During this time, the BALD MAIDEN needs\n
+        to play the POKé FLUTE to wake it up.", MSGBOX_NPC)
     end
 }
 
@@ -577,6 +585,7 @@ script Baldesia_MainHouse_EventScript_Lindsay{
 script Baldesia_MainHouse_EventScript_KimonoGirl{
     lock
     faceplayer
+    fadenewbgm(MUS_RG_NET_CENTER)
     msgbox(gText_WouldYouLikeToRestYourPkmn, MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         incrementgamestat(GAME_STAT_USED_POKECENTER)
@@ -589,6 +598,8 @@ script Baldesia_MainHouse_EventScript_KimonoGirl{
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
     release
     end
 }
@@ -601,9 +612,10 @@ text Baldesia_MainHouse_TextLohan{
     my sister as well. Quite impressive.\p
     Anyways, as you may have heard, JIRACHI\n
     is going to awaken soon.\p
-    During this time, the Maiden of the\n
-    ASAKURA family is required to travel\l
-    to the altar to perform a sacred ritual.\p
+    During this time, the BALD MAIDEN of\n
+    the ASAKURA family is required to\l
+    travel to the altar to perform a\l
+    sacred ritual.\p
     I want you to be her bodyguard while\n
     it's taking place."
 }
@@ -624,7 +636,7 @@ text Baldesia_MainHouse_TextAsak{
 }
 
 text Baldesia_MainHouse_TextAsak2{"
-    LOHAN: MOMO and the HOENN CHAMPION\n
+    LOHAN: MOMO and HOENN's CHAMPION\n
     should be more than enough to deter\l
     anybody with ill intentions.\p
     Since MOMO procrastinated, there's not\n
@@ -698,7 +710,7 @@ text Baldesia_MainHouse_Text_ThankYouForWaiting{
     "Thank you for waiting.\p
 	We've restored your POKéMON\n
 	to full health.\p
-    We hope to see you again!"
+    We hope to see you again."
 }
 
 movement Baldesia_MainHouse_Movement_AsakGoesToChief{

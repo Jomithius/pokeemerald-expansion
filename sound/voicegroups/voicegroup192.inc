@@ -7,7 +7,7 @@ voicegroup192::
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 165, 180, 165
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_high, 255, 137, 154, 165
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_koto_low, 255, 0, 206, 242
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_unknown_koto_low, 255, 0, 206, 242
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_koto_low, 255, 0, 206, 242
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tubular_bell, 255, 216, 90, 242
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -15,7 +15,7 @@ voicegroup192::
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_glockenspiel, 255, 165, 51, 235
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_xylophone, 255, 235, 0, 204
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tubular_bell, 255, 216, 90, 242
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar, 255, 249, 25, 76 @ Dulcimer
     voice_directsound 60, 0, DirectSoundWaveData_sc88pro_organ2, 255, 0, 255, 127
     voice_directsound 60, 0, DirectSoundWaveData_sc88pro_organ2, 255, 0, 255, 127
     voice_directsound 60, 0, DirectSoundWaveData_sc88pro_organ2, 255, 0, 255, 127
@@ -75,7 +75,7 @@ voicegroup192::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_flute, 255, 0, 255, 127
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_flute, 255, 0, 255, 127
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_oboe, 43, 188, 103, 165
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_female_voice, 128, 165, 128, 204 @ Blown Bottle
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_shakuhachi, 255, 0, 255, 204
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_flute, 255, 0, 255, 127

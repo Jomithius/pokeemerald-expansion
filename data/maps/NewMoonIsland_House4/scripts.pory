@@ -35,12 +35,13 @@ text NewMoonIsland_House4_Text_RestHereAnytime{
 script NewMoonIsland_House4_EventScript_Togedemaru{
     lock
     faceplayer
-    fadenewbgm(MUS_POKE_MART)
+    fadenewbgm(MUS_HG_POKE_MART)
     message("I got items you couldn't even\n
         DREAM of!")
 	waitmessage
 	pokemart(NewMoonIsland_House4_Pokemart)
 	msgbox("Thank you…", MSGBOX_DEFAULT)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
 	release
 	end

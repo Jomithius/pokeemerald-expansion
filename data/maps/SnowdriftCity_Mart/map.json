@@ -2,7 +2,7 @@
   "id": "MAP_SNOWDRIFT_CITY_MART",
   "name": "SnowdriftCity_Mart",
   "layout": "LAYOUT_SNOWDRIFT_CITY_MART",
-  "music": "MUS_POKE_MART",
+  "music": "MUS_HG_POKE_MART",
   "region_map_section": "MAPSEC_SNOWDRIFT_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

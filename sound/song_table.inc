@@ -642,11 +642,11 @@ gSongTable::
 	song mus_ecruteak_city, 0, 0
 	song mus_kimono_dance, 0, 0
 	song mus_encounter_kimono, 0, 0
-	song mus_gold_battle, 0, 0
-	song mus_victory_gold, 0, 0
-	song mus_encounter_gold, 0, 0
-	song mus_gold_27, 0, 0
-	song mus_gold_12, 0, 0
+	song mus_hg_vs_trainer, 0, 0
+	song mus_hg_vs_gym_leader, 0, 0
+	song mus_hg_vs_champion, 0, 0
+	song mus_hg_victory_trainer, 0, 0
+	song mus_hg_victory_gym_leader, 0, 0
 	song mus_area_zero, 0, 0
 	song mus_area_zero_wild_battle, 0, 0
 	song mus_legendary_quartet, 0, 0
@@ -663,6 +663,13 @@ gSongTable::
 	song mus_vs_gilgamesh, 0, 0
 	song mus_encounter_exdeath, 0, 0
 	song mus_vs_miror_b, 0, 0
+	song mus_pecharunt, 0, 0
+	song mus_hg_vs_wild, 0, 0
+	song mus_hg_victory_wild, 0, 0
+	song mus_hg_gym, 0, 0
+	song mus_hg_national_park, 0, 0
+	song mus_hg_poke_mart, 0, 0
+	song mus_baldesia_mart, 0, 0
 
 	.align 2
 dummy_song_header:

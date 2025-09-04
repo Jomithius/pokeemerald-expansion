@@ -37,6 +37,23 @@ script Route139_UpdateWorkerFredward{
     return
 }
 
+script Route139_EventScript_KimonoLady{
+    msgbox("The men of the village work hard\n
+        maintaining this forest.\p
+        All of the lumber is used to expand\n
+        the village.\p
+        None of it is wasted.", MSGBOX_NPC)
+	end
+}
+
+script Route139_EventScript_LittleBoy{
+    msgbox("When I grow up, I want to\n
+        help maintain the forest too!\p
+        I'm starting my training now!", MSGBOX_NPC)
+	end
+}
+
+
 script Route139_EventScript_Satoshi{
     trainerbattle_single(TRAINER_SATOSHI, "Ha!\nYou fell for my trap!", "I still lost…")
     msgbox("The Chief and MASTER BENNIS are some\n

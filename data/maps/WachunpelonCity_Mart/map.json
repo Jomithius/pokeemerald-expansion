@@ -2,7 +2,7 @@
   "id": "MAP_WACHUNPELON_CITY_MART",
   "name": "WachunpelonCity_Mart",
   "layout": "LAYOUT_WACHUNPELON_CITY_MART",
-  "music": "MUS_POKE_MART",
+  "music": "MUS_HG_POKE_MART",
   "region_map_section": "MAPSEC_WACHUNPELON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
