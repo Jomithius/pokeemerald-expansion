@@ -130,24 +130,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 5,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_TEMP_1",
-      "var_value": "0",
-      "script": "LilycoveCity_DepartmentStore_2F_VarTempTrigger"
-    },
-    {
-      "type": "trigger",
-      "x": 4,
-      "y": 4,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "LilycoveCity_DepartmentStore_2F_VarTempTrigger2"
-    }
+
   ],
   "bg_events": [
     {

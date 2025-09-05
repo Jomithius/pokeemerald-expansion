@@ -537,23 +537,23 @@ AI: Basic Trainer
 
 Huntail
 Ability: Swift Swim  
-Level: 46  
+Level: 49 
 IVs: 0 Atk  
 - Liquidation  
 - Toxic
 
 Araquanid
-Level: 46
+Level: 49
 
 Alomomola
-Level: 46
+Level: 49
 
 Cramorant
-Level: 46
+Level: 49
 
 Crawdaunt
 Ability: Adaptability
-Level: 46
+Level: 49
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -4302,7 +4302,7 @@ Mugshot: Pink
 
 Psyduck (F) @ Eviolite  
 Ability: Swift Swim 
-Level: 37    
+Level: 46    
 EVs: 244 HP / 244 SpA / 20 SpD  
 Sassy Nature  
 IVs: 0 Atk  
@@ -4313,17 +4313,16 @@ IVs: 0 Atk
 
 Flareon (F) @ Toxic Orb  
 Ability: Guts  
-Level: 36   
+Level: 45  
 EVs: 248 Atk / 8 SpD / 248 Spe  
 Sassy Nature  
-- Flame Charge  
-- Trailblaze  
+- Flame Charge   
 - Iron Tail  
 - Fire Fang  
 
 Nidoqueen @ Life Orb  
 Ability: Sheer Force  
-Level: 36   
+Level: 45  
 EVs: 4 HP / 4 Def / 244 SpA / 8 SpD / 248 Spe  
 Sassy Nature  
 IVs: 0 Atk  
@@ -4334,7 +4333,7 @@ IVs: 0 Atk
 
 Tsareena @ Leftovers  
 Ability: Queenly Majesty  
-Level: 36    
+Level: 45   
 EVs: 248 HP / 252 Atk / 4 Def / 4 SpD  
 Sassy Nature  
 - Acupressure  
@@ -4344,7 +4343,7 @@ Sassy Nature
 
 Froslass @ Focus Sash  
 Ability: Cursed Body  
-Level: 36   
+Level: 45   
 EVs: 248 SpA / 8 SpD / 252 Spe  
 Sassy Nature  
 IVs: 0 Atk  
@@ -5484,7 +5483,7 @@ Mugshot: Blue
 
 Poliwrath (M) @ Blunder Policy  
 Ability: Swift Swim  
-Level: 50  
+Level: 52  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Substitute  
@@ -5494,7 +5493,7 @@ Adamant Nature
 
 Politoed (M) @ Eject Button  
 Ability: Drizzle  
-Level: 50  
+Level: 52  
 Shiny: Yes  
 EVs: 252 HP / 212 Def / 44 SpA  
 Bold Nature  
@@ -5506,19 +5505,18 @@ IVs: 0 Atk
 
 Greninja (M) @ Life Orb  
 Ability: Protean  
-Level: 50  
-Happiness: 0  
+Level: 52  
 EVs: 84 HP / 28 Def / 252 SpA / 4 SpD / 140 Spe  
 Modest Nature  
 IVs: 0 Atk  
 - Surf  
 - Dark Pulse  
-- Toxic Spikes  
+- Icy Wind  
 - Blizzard  
 
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  
-Level: 50  
+Level: 52 
 EVs: 16 HP / 244 SpA / 248 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -5529,7 +5527,7 @@ IVs: 0 Atk
 
 Pikachu (F) @ Light Ball  
 Ability: Lightning Rod  
-Level: 50  
+Level: 52  
 EVs: 8 HP / 252 SpA / 244 Spe  
 Timid Nature  
 - Nasty Plot  
@@ -5539,7 +5537,7 @@ Timid Nature
 
 Goodra (M) @ Damp Rock  
 Ability: Hydration  
-Level: 50 
+Level: 52 
 EVs: 252 HP / 212 Def / 44 SpA  
 Quiet Nature  
 - Rest  
@@ -12170,7 +12168,7 @@ AI: Smart Trainer
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
-Level: 46
+Level: 50
 Jolly Nature  
 - Lash Out  
 - Iron Tail  
@@ -12179,7 +12177,7 @@ Jolly Nature
 
 Crobat (F) @ Poison Barb 
 Ability: Infiltrator  
-Level: 46 
+Level: 50
 Jolly Nature  
 - Poison Fang  
 - Acrobatics  
@@ -12188,7 +12186,7 @@ Jolly Nature
 
 Cacturne (M) @ Miracle Seed 
 Ability: Water Absorb  
-Level: 46
+Level: 50
 Adamant Nature  
 - Drain Punch  
 - Sucker Punch  
@@ -12196,11 +12194,11 @@ Adamant Nature
 - Seed Bomb  
 
 Vibrava (M) @ Eviolite 
-Level: 46  
+Level: 50  
 
 Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
-Level: 46
+Level: 50
 Modest Nature  
 IVs: 0 Atk  
 - Scorching Sands  
@@ -15054,19 +15052,19 @@ Double Battle: No
 AI: Basic Trainer
 
 Coalossal
-Level: 45
+Level: 48
 
 Marowak-Alola
-Level: 45
+Level: 48
 
 Pyroar (M)
-Level: 45
+Level: 48
 
 Talonflame (M)
-Level: 45
+Level: 48
 
 Camerupt
-Level: 45
+Level: 48
 
 === TRAINER_DARCY ===
 Name: DARCY
@@ -20091,23 +20089,23 @@ Difficulty: Easy
 
 Huntail 
 Ability: Swift Swim  
-Level: 45  
+Level: 48  
 IVs: 0 Atk  
 - Water Pulse  
 - Toxic
 
 Araquanid
-Level: 45
+Level: 48
 
 Alomomola
-Level: 45
+Level: 48
 
 Cramorant
-Level: 45
+Level: 48
 
 Crawdaunt
 Ability: Adaptability
-Level: 45
+Level: 48
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -24030,45 +24028,41 @@ Mugshot: Pink
 
 Psyduck (F) @ Eviolite  
 Ability: Swift Swim 
-Level: 37    
+Level: 45    
 Sassy Nature  
 IVs: 0 Atk  
 - Surf  
 - Psychic  
-- Yawn  
 - Ice Beam  
 
 Flareon (F) @ Toxic Orb  
 Ability: Guts  
-Level: 36   
+Level: 44   
 Sassy Nature  
 - Flame Charge  
-- Trailblaze  
 - Iron Tail  
 - Fire Fang  
 
 Nidoqueen @ Life Orb  
 Ability: Sheer Force  
-Level: 36   
+Level: 44   
 Sassy Nature  
 IVs: 0 Atk  
 - Scorching Sands  
 - Sludge Bomb  
-- Toxic Spikes  
 - Thunderbolt  
 
 Tsareena @ Leftovers  
 Ability: Queenly Majesty  
-Level: 36    
-Sassy Nature  
-- Acupressure  
+Level: 44    
+Sassy Nature   
 - Trop Kick  
 - High Jump Kick  
 - Attract  
 
 Froslass @ Focus Sash  
 Ability: Cursed Body  
-Level: 36   
+Level: 44   
 Sassy Nature  
 IVs: 0 Atk  
 - Destiny Bond  
@@ -25172,9 +25166,9 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Blue
 
-Poliwrath (M) @ Blunder Policy  
+Poliwrath (M)
 Ability: Swift Swim  
-Level: 50  
+Level: 52  
 Adamant Nature  
 - Substitute  
 - Dynamic Punch  
@@ -25183,7 +25177,7 @@ Adamant Nature
 
 Politoed (M) @ Eject Button  
 Ability: Drizzle  
-Level: 50 
+Level: 52 
 Shiny: Yes  
 Bold Nature  
 IVs: 0 Atk  
@@ -25192,20 +25186,19 @@ IVs: 0 Atk
 - Protect  
 - Muddy Water  
 
-Greninja (M) @ Life Orb  
-Ability: Protean  
-Level: 50 
-Happiness: 0  
+Greninja (M) 
+Ability: Torrent  
+Level: 52 
 Modest Nature  
 IVs: 0 Atk  
 - Surf  
 - Dark Pulse  
-- Toxic Spikes  
+- Water Shuriken
 - Blizzard  
 
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  
-Level: 50 
+Level: 52 
 Modest Nature  
 IVs: 0 Atk  
 - Hurricane  
@@ -25215,7 +25208,7 @@ IVs: 0 Atk
 
 Pikachu (F) @ Light Ball  
 Ability: Lightning Rod  
-Level: 50  
+Level: 52  
 Timid Nature  
 - Nasty Plot  
 - Discharge  
@@ -25224,7 +25217,7 @@ Timid Nature
 
 Goodra (M) @ Damp Rock  
 Ability: Gooey  
-Level: 50    
+Level: 52    
 Quiet Nature  
 - Rest  
 - Rain Dance  
@@ -32093,7 +32086,7 @@ Difficulty: Easy
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
-Level: 45 
+Level: 49 
 Jolly Nature  
 - Lash Out  
 - Iron Tail  
@@ -32102,7 +32095,7 @@ Jolly Nature
 
 Crobat (F) @ Muscle Band 
 Ability: Infiltrator  
-Level: 45  
+Level: 49  
 Jolly Nature  
 - Poison Fang  
 - Acrobatics  
@@ -32111,7 +32104,7 @@ Jolly Nature
 
 Cacturne (M) @ Miracle Seed
 Ability: Water Absorb  
-Level: 45 
+Level: 49 
 Adamant Nature  
 - Drain Punch  
 - Sucker Punch  
@@ -32119,11 +32112,11 @@ Adamant Nature
 - Seed Bomb  
 
 Vibrava (M) @ Eviolite  
-Level: 45  
+Level: 49 
 
 Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
-Level: 45  
+Level: 49  
 Modest Nature  
 IVs: 0 Atk  
 - Scorching Sands  
@@ -35037,19 +35030,19 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Coalossal
-Level: 44
+Level: 47
 
 Marowak-Alola
-Level: 44
+Level: 47
 
 Pyroar (M)
-Level: 44
+Level: 47
 
 Talonflame (M)
-Level: 44
+Level: 47
 
 Camerupt
-Level: 44
+Level: 47
 
 === TRAINER_DARCY ===
 Name: DARCY

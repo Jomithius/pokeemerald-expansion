@@ -985,7 +985,7 @@ movement LilycoveCity_Movement_WalkBackUp{
 
 movement LilycoveCity_Movement_WalkBackDown{
 	lock_facing_direction
-	walk_down
+	walk_fast_down
 	unlock_facing_direction
 }
 
@@ -1024,7 +1024,13 @@ script LilycoveCity_EventScript_RatCaveShake{
 }
 
 script LilycoveCity_EventScript_Man4{
-	msgbox(LilycoveCity_Text_Man4, MSGBOX_NPC)
+	lock
+	faceplayer
+	msgbox(LilycoveCity_Text_Man4, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
 	end
 }
 
@@ -1035,7 +1041,7 @@ text LilycoveCity_Text_Man4{
 }
 
 script LilycoveCity_EventScript_CEO_HighriseNoEntry{
-	lock
+	lockall
 	playse(SE_PIN)
 	applymovement(30, Common_Movement_ExclamationMark)
 	waitmovement(30)
@@ -1047,7 +1053,7 @@ script LilycoveCity_EventScript_CEO_HighriseNoEntry{
 	waitmessage
 	applymovement(30, LilycoveCity_Movement_StaffEmployee2)
 	waitmovement(30)
-	release
+	releaseall
 	end
 }
 
@@ -1057,12 +1063,12 @@ script LilycoveCity_EventScript_StaffEmployee{
 }
 
 text LilycoveCity_Text_StaffEmployee{
-	"Sorry. This area is restricted.\n
+	"Sorry, this area is restricted.\n
 	Cleared personnel only."
 }
 
 script LilycoveCity_EventScript_CEO_HighriseWelcome{
-	lock
+	lockall
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
 	waitmovement(0)
 	applymovement(30, Common_Movement_WalkInPlaceRight)
@@ -1080,7 +1086,7 @@ script LilycoveCity_EventScript_CEO_HighriseWelcome{
 	closemessage
 	warpdoor(MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR, 8, 7)
 	waitstate
-	release
+	releaseall
 	end
 }
 

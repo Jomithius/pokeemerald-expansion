@@ -1888,7 +1888,7 @@ LilycoveCity_Movement_WalkBackDown:
 # 987 "data/maps/LilycoveCity/scripts.pory"
 	lock_facing_direction
 # 988 "data/maps/LilycoveCity/scripts.pory"
-	walk_down
+	walk_fast_down
 # 989 "data/maps/LilycoveCity/scripts.pory"
 	unlock_facing_direction
 	step_end
@@ -1953,186 +1953,198 @@ LilycoveCity_EventScript_RatCaveShake::
 
 LilycoveCity_EventScript_Man4::
 # 1027 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_Man4, MSGBOX_NPC
-	end
-
-
-LilycoveCity_EventScript_CEO_HighriseNoEntry::
-# 1038 "data/maps/LilycoveCity/scripts.pory"
 	lock
-# 1039 "data/maps/LilycoveCity/scripts.pory"
-	playse SE_PIN
-# 1040 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 30, Common_Movement_ExclamationMark
-# 1041 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 30
-# 1042 "data/maps/LilycoveCity/scripts.pory"
-	delay 10
-# 1043 "data/maps/LilycoveCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Movement_WalkBackDown
-# 1044 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 30, LilycoveCity_Movement_StaffEmployee
-# 1045 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 0
-# 1046 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_StaffEmployee, MSGBOX_DEFAULT
-# 1047 "data/maps/LilycoveCity/scripts.pory"
+# 1028 "data/maps/LilycoveCity/scripts.pory"
+	faceplayer
+# 1029 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_Text_Man4, MSGBOX_AUTOCLOSE
+# 1030 "data/maps/LilycoveCity/scripts.pory"
 	waitmessage
-# 1048 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 30, LilycoveCity_Movement_StaffEmployee2
-# 1049 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 30
-# 1050 "data/maps/LilycoveCity/scripts.pory"
+# 1031 "data/maps/LilycoveCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 1032 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 1033 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
-LilycoveCity_EventScript_StaffEmployee::
+LilycoveCity_EventScript_CEO_HighriseNoEntry::
+# 1044 "data/maps/LilycoveCity/scripts.pory"
+	lockall
+# 1045 "data/maps/LilycoveCity/scripts.pory"
+	playse SE_PIN
+# 1046 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, Common_Movement_ExclamationMark
+# 1047 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 30
+# 1048 "data/maps/LilycoveCity/scripts.pory"
+	delay 10
+# 1049 "data/maps/LilycoveCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Movement_WalkBackDown
+# 1050 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, LilycoveCity_Movement_StaffEmployee
+# 1051 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 1052 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_Text_StaffEmployee, MSGBOX_DEFAULT
+# 1053 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1054 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, LilycoveCity_Movement_StaffEmployee2
 # 1055 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 30
+# 1056 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+
+LilycoveCity_EventScript_StaffEmployee::
+# 1061 "data/maps/LilycoveCity/scripts.pory"
 	msgbox LilycoveCity_EventScript_StaffEmployee_Text_0, MSGBOX_SIGN
 	end
 
 
 LilycoveCity_EventScript_CEO_HighriseWelcome::
-# 1065 "data/maps/LilycoveCity/scripts.pory"
-	lock
-# 1066 "data/maps/LilycoveCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
-# 1067 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 0
-# 1068 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 30, Common_Movement_WalkInPlaceRight
-# 1069 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 30
-# 1070 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_StaffEmployee2, MSGBOX_DEFAULT
 # 1071 "data/maps/LilycoveCity/scripts.pory"
-	waitmessage
+	lockall
 # 1072 "data/maps/LilycoveCity/scripts.pory"
-	playse SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 1073 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 30, Common_Movement_ExclamationMark
+	waitmovement 0
 # 1074 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 30
+	applymovement 30, Common_Movement_WalkInPlaceRight
 # 1075 "data/maps/LilycoveCity/scripts.pory"
-	waitse
+	waitmovement 30
 # 1076 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_StaffEmployee3, MSGBOX_DEFAULT
+	msgbox LilycoveCity_Text_StaffEmployee2, MSGBOX_DEFAULT
 # 1077 "data/maps/LilycoveCity/scripts.pory"
 	waitmessage
 # 1078 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 30, Common_Movement_FaceOriginalDirection
+	playse SE_PIN
 # 1079 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 30
+	applymovement 30, Common_Movement_ExclamationMark
 # 1080 "data/maps/LilycoveCity/scripts.pory"
-	closemessage
+	waitmovement 30
 # 1081 "data/maps/LilycoveCity/scripts.pory"
-	warpdoor MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR, 8, 7
+	waitse
 # 1082 "data/maps/LilycoveCity/scripts.pory"
-	waitstate
+	msgbox LilycoveCity_Text_StaffEmployee3, MSGBOX_DEFAULT
 # 1083 "data/maps/LilycoveCity/scripts.pory"
-	release
+	waitmessage
+# 1084 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 30, Common_Movement_FaceOriginalDirection
+# 1085 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 30
+# 1086 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 1087 "data/maps/LilycoveCity/scripts.pory"
+	warpdoor MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR, 8, 7
+# 1088 "data/maps/LilycoveCity/scripts.pory"
+	waitstate
+# 1089 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
 	end
 
 
 LilycoveCity_EventScript_MysteryGiftMan::
-# 1098 "data/maps/LilycoveCity/scripts.pory"
-	lock
-# 1099 "data/maps/LilycoveCity/scripts.pory"
-	faceplayer
-# 1100 "data/maps/LilycoveCity/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_OLD_SEA_MAP, MysteryGiftScript_OldSeaMap
-# 1101 "data/maps/LilycoveCity/scripts.pory"
-	goto_if_unset FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, CableClub_EventScript_DistributeEonTicket
-# 1102 "data/maps/LilycoveCity/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_AURORA_TICKET, MysteryGiftScript_AuroraTicket
-# 1103 "data/maps/LilycoveCity/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_MYSTIC_TICKET, MysteryGiftScript_MysticTicket
 # 1104 "data/maps/LilycoveCity/scripts.pory"
+	lock
+# 1105 "data/maps/LilycoveCity/scripts.pory"
+	faceplayer
+# 1106 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_OLD_SEA_MAP, MysteryGiftScript_OldSeaMap
+# 1107 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, CableClub_EventScript_DistributeEonTicket
+# 1108 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_AURORA_TICKET, MysteryGiftScript_AuroraTicket
+# 1109 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_MYSTIC_TICKET, MysteryGiftScript_MysticTicket
+# 1110 "data/maps/LilycoveCity/scripts.pory"
 	goto CableClub_EventScript_MysteryGiftThankYou2
 	end
 
 
 LilycoveCity_EventScript_BellyDrumTutor::
-# 1109 "data/maps/LilycoveCity/scripts.pory"
-	lock
-# 1110 "data/maps/LilycoveCity/scripts.pory"
-	faceplayer
-# 1111 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_EventScript_BellyDrumTutor_Text_0, MSGBOX_YESNO
 # 1115 "data/maps/LilycoveCity/scripts.pory"
-	waitmessage
+	lock
 # 1116 "data/maps/LilycoveCity/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_BellyDrumTeach
+	faceplayer
 # 1117 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_BellyDrumTutor_Text_0, MSGBOX_YESNO
+# 1121 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1122 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_BellyDrumTeach
+# 1123 "data/maps/LilycoveCity/scripts.pory"
 	goto LilycoveCity_EventScript_TutorDecline
-# 1118 "data/maps/LilycoveCity/scripts.pory"
+# 1124 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
 MoveTutor_EventScript_BellyDrumTeach::
-# 1123 "data/maps/LilycoveCity/scripts.pory"
+# 1129 "data/maps/LilycoveCity/scripts.pory"
 	msgbox MoveTutor_EventScript_BellyDrumTeach_Text_0, MSGBOX_DEFAULT
-# 1124 "data/maps/LilycoveCity/scripts.pory"
+# 1130 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_0x8005, MOVE_BELLY_DRUM
-# 1125 "data/maps/LilycoveCity/scripts.pory"
+# 1131 "data/maps/LilycoveCity/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 1126 "data/maps/LilycoveCity/scripts.pory"
+# 1132 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_EventScript_TutorDecline
-# 1127 "data/maps/LilycoveCity/scripts.pory"
+# 1133 "data/maps/LilycoveCity/scripts.pory"
 	goto LilycoveCity_EventScript_BellyDrumTaught
 	end
 
 
 LilycoveCity_EventScript_TutorDecline::
-# 1132 "data/maps/LilycoveCity/scripts.pory"
+# 1138 "data/maps/LilycoveCity/scripts.pory"
 	msgbox LilycoveCity_EventScript_TutorDecline_Text_0, MSGBOX_AUTOCLOSE
-# 1133 "data/maps/LilycoveCity/scripts.pory"
+# 1139 "data/maps/LilycoveCity/scripts.pory"
 	waitmessage
-# 1134 "data/maps/LilycoveCity/scripts.pory"
+# 1140 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
 LilycoveCity_EventScript_BellyDrumTaught::
-# 1139 "data/maps/LilycoveCity/scripts.pory"
+# 1145 "data/maps/LilycoveCity/scripts.pory"
 	msgbox LilycoveCity_EventScript_BellyDrumTaught_Text_0
-# 1141 "data/maps/LilycoveCity/scripts.pory"
+# 1147 "data/maps/LilycoveCity/scripts.pory"
 	waitmessage
-# 1142 "data/maps/LilycoveCity/scripts.pory"
+# 1148 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
 LilycoveCity_EventScript_IronDefenseTutor::
-# 1147 "data/maps/LilycoveCity/scripts.pory"
-	lock
-# 1148 "data/maps/LilycoveCity/scripts.pory"
-	faceplayer
-# 1149 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_EventScript_IronDefenseTutor_Text_0, MSGBOX_YESNO
 # 1153 "data/maps/LilycoveCity/scripts.pory"
-	waitmessage
+	lock
 # 1154 "data/maps/LilycoveCity/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_IronDefenseTeach
+	faceplayer
 # 1155 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_IronDefenseTutor_Text_0, MSGBOX_YESNO
+# 1159 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 1160 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_IronDefenseTeach
+# 1161 "data/maps/LilycoveCity/scripts.pory"
 	goto LilycoveCity_EventScript_TutorDecline
-# 1156 "data/maps/LilycoveCity/scripts.pory"
+# 1162 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
 MoveTutor_EventScript_IronDefenseTeach::
-# 1161 "data/maps/LilycoveCity/scripts.pory"
+# 1167 "data/maps/LilycoveCity/scripts.pory"
 	msgbox MoveTutor_EventScript_IronDefenseTeach_Text_0, MSGBOX_DEFAULT
-# 1162 "data/maps/LilycoveCity/scripts.pory"
+# 1168 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_0x8005, MOVE_IRON_DEFENSE
-# 1163 "data/maps/LilycoveCity/scripts.pory"
+# 1169 "data/maps/LilycoveCity/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 1164 "data/maps/LilycoveCity/scripts.pory"
+# 1170 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_EventScript_TutorDecline
-# 1165 "data/maps/LilycoveCity/scripts.pory"
+# 1171 "data/maps/LilycoveCity/scripts.pory"
 	goto LilycoveCity_EventScript_BellyDrumTaught
 	end
 
@@ -2150,31 +2162,31 @@ LilycoveCity_EventScript_EmoBully_Text_2:
 	.string "JAMES: …\p So you saw that.$"
 
 LilycoveCity_EventScript_StaffEmployee_Text_0:
-# 1055 "data/maps/LilycoveCity/scripts.pory"
+# 1061 "data/maps/LilycoveCity/scripts.pory"
 	.string "…$"
 
 LilycoveCity_EventScript_BellyDrumTutor_Text_0:
-# 1111 "data/maps/LilycoveCity/scripts.pory"
+# 1117 "data/maps/LilycoveCity/scripts.pory"
 	.string "Offense is the best defense!\n Don't you agree?!\p If you want, I'll teach your\n POKéMON a great offensive move!$"
 
 MoveTutor_EventScript_BellyDrumTeach_Text_0:
-# 1123 "data/maps/LilycoveCity/scripts.pory"
+# 1129 "data/maps/LilycoveCity/scripts.pory"
 	.string "Which POKéMON do you want me to\nteach BELLY DRUM?$"
 
 LilycoveCity_EventScript_TutorDecline_Text_0:
-# 1132 "data/maps/LilycoveCity/scripts.pory"
+# 1138 "data/maps/LilycoveCity/scripts.pory"
 	.string "Oh, okay.$"
 
 LilycoveCity_EventScript_BellyDrumTaught_Text_0:
-# 1139 "data/maps/LilycoveCity/scripts.pory"
+# 1145 "data/maps/LilycoveCity/scripts.pory"
 	.string "Come back if you need to train\n more POKéMON!$"
 
 LilycoveCity_EventScript_IronDefenseTutor_Text_0:
-# 1149 "data/maps/LilycoveCity/scripts.pory"
+# 1155 "data/maps/LilycoveCity/scripts.pory"
 	.string "Defense is the best offense!\n Don't you agree?!\p If you want, I'll teach your\n POKéMON a great defensive move!$"
 
 MoveTutor_EventScript_IronDefenseTeach_Text_0:
-# 1161 "data/maps/LilycoveCity/scripts.pory"
+# 1167 "data/maps/LilycoveCity/scripts.pory"
 	.string "Which POKéMON do you want me to\nteach IRON DEFENSE?$"
 
 LilycoveCity_Text_BullyMan1::
@@ -2214,17 +2226,17 @@ LilycoveCity_Text_Emo4::
 	.string "I'm gonna go.\p See ya.$"
 
 LilycoveCity_Text_Man4::
-# 1031 "data/maps/LilycoveCity/scripts.pory"
+# 1037 "data/maps/LilycoveCity/scripts.pory"
 	.string "I've been hearing weird noises coming\n from that houses for a few days now.\p But nobody's lived there for years.$"
 
 LilycoveCity_Text_StaffEmployee::
-# 1059 "data/maps/LilycoveCity/scripts.pory"
-	.string "Sorry. This area is restricted.\n Cleared personnel only.$"
+# 1065 "data/maps/LilycoveCity/scripts.pory"
+	.string "Sorry, this area is restricted.\n Cleared personnel only.$"
 
 LilycoveCity_Text_StaffEmployee2::
-# 1087 "data/maps/LilycoveCity/scripts.pory"
+# 1093 "data/maps/LilycoveCity/scripts.pory"
 	.string "Sorry, could I see your TRAINER CARD?\n … … … … … …$"
 
 LilycoveCity_Text_StaffEmployee3::
-# 1092 "data/maps/LilycoveCity/scripts.pory"
+# 1098 "data/maps/LilycoveCity/scripts.pory"
 	.string "Ah, CHAMPION {PLAYER}! My apologies.\n Please, go ahead.$"

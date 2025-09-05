@@ -2,8 +2,7 @@ mapscripts Route116_RusturfTunnel_Peak_MapScripts {}
 
 script Route116_RusturfTunnel_Peak_Jolteon {
     lock
-    applymovement(3, Common_Movement_FacePlayer)
-    waitmovement(3)
+    faceplayer
     playmoncry(SPECIES_JOLTEON, CRY_MODE_ENCOUNTER)
     delay(20)
     release
@@ -12,8 +11,7 @@ script Route116_RusturfTunnel_Peak_Jolteon {
 
 script Route116_RusturfTunnel_Peak_Pumpkaboo{
     lock
-    applymovement(3, Common_Movement_FacePlayer)
-    waitmovement(3)
+    faceplayer
     playmoncry(SPECIES_PUMPKABOO, CRY_MODE_ENCOUNTER)
     delay(20)
     release
@@ -21,10 +19,9 @@ script Route116_RusturfTunnel_Peak_Pumpkaboo{
 }
 
 script Route116_RusturfTunnel_Peak_Ribombee{
-    lockall
+    lock
     setflag(FLAG_RIBOMBEE_TOTEM)
-    applymovement(4, Common_Movement_FacePlayer)
-    waitmovement(4)
+    faceplayer
     playmoncry(SPECIES_RIBOMBEE, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
@@ -44,7 +41,7 @@ script Route116_RusturfTunnel_Peak_Ribombee{
 		call(RibombeeFailed)
 	}
     waitmessage
-	releaseall
+	release
     end
 }
  
@@ -77,6 +74,7 @@ script Route116_RusturfTunnel_Peak_Daca{
     msgbox(Route116_RusturfTunnel_Peak_DacaText1, MSGBOX_AUTOCLOSE)
     waitmessage
     goto(Route116_RusturfTunnel_Peak_DacaLeave)
+    end
 }
 
 text Route116_RusturfTunnel_Peak_DacaText1{
@@ -84,7 +82,8 @@ text Route116_RusturfTunnel_Peak_DacaText1{
     Who are you?\l
     … … … …\p
     Oh, a challenger?\n
-    Hahaha, my bad!\p
+    Hahaha, my bad!\l
+    It's nice to meet you, {PLAYER}!\p
     I'm DACA, LEADER of the MAUVILLE CITY\n
     POKéMON GYM.\p
     I was grabbing some rare herbs\n 
@@ -97,8 +96,8 @@ text Route116_RusturfTunnel_Peak_DacaText1{
 }
 
 script Route116_RusturfTunnel_Peak_DacaLeave{
-    getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
-    if(var(VAR_TEMP_1) == DIR_NORTH){
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+    if(var(VAR_RESULT) == DIR_NORTH){
         applymovement(1, RusturfTunnel_Peak_ReturnToPokeball)
         waitmovement(1)
         removeobject(1)
@@ -107,14 +106,6 @@ script Route116_RusturfTunnel_Peak_DacaLeave{
         removeobject(3)
         delay(20)
         applymovement(2, Route116_RusturfTunnel_Peak_DacaLeave1)
-        delay(20)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
-        waitmovement(2)
-        delay(30)
-        removeobject(2)
-        setflag(FLAG_HIDE_DACA_RUSTURF_PEAK)
-        release
-        end
     }
     else{
         applymovement(1, RusturfTunnel_Peak_ReturnToPokeball)
@@ -125,15 +116,15 @@ script Route116_RusturfTunnel_Peak_DacaLeave{
         removeobject(3)
         delay(20)
         applymovement(2, Route116_RusturfTunnel_Peak_DacaLeave2)
-        delay(20)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
-        waitmovement(2)
-        delay(30)
-        removeobject(2)
-        setflag(FLAG_HIDE_DACA_RUSTURF_PEAK)
-        release
-        end
     }
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+    waitmovement(2)
+    delay(30)
+    removeobject(2)
+    setflag(FLAG_HIDE_DACA_RUSTURF_PEAK)
+    release
+    end
 }
 
 movement Route116_RusturfTunnel_Peak_DacaLeave1{

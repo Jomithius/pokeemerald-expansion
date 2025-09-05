@@ -594,7 +594,7 @@
     },
     {
       "type": "trigger",
-      "x": 16,
+      "x": 10,
       "y": 18,
       "elevation": 0,
       "var": "VAR_RAT_CAVE_STATE",
@@ -603,7 +603,7 @@
     },
     {
       "type": "trigger",
-      "x": 16,
+      "x": 10,
       "y": 17,
       "elevation": 0,
       "var": "VAR_RAT_CAVE_STATE",
@@ -612,7 +612,7 @@
     },
     {
       "type": "trigger",
-      "x": 16,
+      "x": 10,
       "y": 16,
       "elevation": 0,
       "var": "VAR_RAT_CAVE_STATE",
@@ -621,7 +621,7 @@
     },
     {
       "type": "trigger",
-      "x": 16,
+      "x": 10,
       "y": 15,
       "elevation": 0,
       "var": "VAR_RAT_CAVE_STATE",

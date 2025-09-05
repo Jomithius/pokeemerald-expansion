@@ -1,4 +1,17 @@
-mapscripts RatCave_Lilycove_2F_MapScripts {}
+mapscripts RatCave_Lilycove_2F_MapScripts {
+    MAP_SCRIPT_ON_RESUME: RatCave_Lilycove_2F_OnResume
+}
+
+script RatCave_Lilycove_2F_OnResume{
+    call_if_set(FLAG_TEMP_7, RatCave_Lilycove_2F_RemoveRaticate)
+    end
+}
+
+script RatCave_Lilycove_2F_RemoveRaticate{
+    removeobject(4)
+    removeobject(5)
+    return
+}
 
 script LilycoveCity_RatCave_Rock {
     lock
@@ -10,18 +23,24 @@ script LilycoveCity_RatCave_Rock {
 }
 
 script RatCave_LilycoveCity_2F_EventScript_Ratduardo{
-    lockall
+    lock
     delay(20)
     playse(SE_PIN)
     applymovement(3, Common_Movement_ExclamationMark)
     waitmovement(3)
-    delay(20)
-    applymovement(3, Common_Movement_FacePlayer)
-    waitmovement(3)
+    waitse
+    faceplayer
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+    if(var(VAR_RESULT) == DIR_NORTH){
+        applymovement(4, Common_Movement_WalkDown)
+        applymovement(5, Common_Movement_WalkDown)
+        waitmovement(5)
+    }
+    setflag(FLAG_TEMP_7)
     trainerbattle_no_intro(TRAINER_RATDUARDO_3, RatCave_LilycoveCity_2F_Text_RatduardoDefeat)
     call(RatCave_LilycoveCity_2F_BattleOver)
     call(LilycoveCityRatCaveShake)
-    releaseall
+    release
     end
 }
 
@@ -35,7 +54,6 @@ text RatCave_LilycoveCity_2F_Text_RatduardoDefeat{
 }
 
 script RatCave_LilycoveCity_2F_BattleOver{
-    lockall
     fadescreenspeed(FADE_TO_BLACK, 2)
     removeobject(3)
     removeobject(4)

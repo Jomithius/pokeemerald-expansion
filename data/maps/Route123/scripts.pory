@@ -203,8 +203,8 @@ script Route123_EventScript_Speedwagon{
     trainerbattle_no_intro(TRAINER_SPEEDWAGON_2, Route123_SpeedwagonDefeat)
     msgbox(Route123_Text_Speedwagon2, MSGBOX_AUTOCLOSE)
     waitmessage
+	fadeoutbgm(0)
     delay(30)
-	playbgm(MUS_DUMMY, FALSE)
 	fadescreen(FADE_TO_BLACK)
 	playse(SE_THUNDERSTORM)
 	delay(120)
@@ -219,7 +219,7 @@ script Route123_EventScript_Speedwagon{
 	removeobject(49)
 	delay(10)
 	fadescreenspeed(FADE_FROM_BLACK, 3)
-    fadedefaultbgm
+	fadeinbgm(0)
 	delay(10)
 	setflag(FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123)
     setflag(FLAG_HIDE_BIKERS_ROUTE_123)
@@ -272,7 +272,7 @@ script Route123_EventScript_Zarude{
 }
 
 text Route123_Text_Speedwagon1{
-    "SPEEDWAGON: Huh?\n
+    "Huh?!\n
     YOU again?!\p
     Some of my members got arrested\n
     because of you!\p

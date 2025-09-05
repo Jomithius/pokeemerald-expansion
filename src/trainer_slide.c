@@ -81,6 +81,10 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You're this strong already?{PAUSE_UNTIL_PRESS}"),
         },
+        [TRAINER_BENNIS_1] = // Dewford
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Oho.\nI'm feelin' the vibrations.{PAUSE_UNTIL_PRESS}"),
+        },
         [TRAINER_BRAWLY_1] = // Liam
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I may be down, but not out!\nLet's do this, POOBLES!{PAUSE_UNTIL_PRESS}"),
@@ -97,9 +101,17 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hahaha!\nNow it's really a party!{PAUSE_UNTIL_PRESS}"),
         },
+        [TRAINER_SPEEDWAGON] = // Route 110
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You can't stop the\nMISSISSWUAGWA RIDERS!{PAUSE_UNTIL_PRESS}"),
+        },
         [TRAINER_JOMITHIUS_2] = // Jomithius Route 112
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is the moment where I reveal\nmy true power!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BENNIS_2] = // Route 114
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Oho.\nI'm feelin' the vibrations.{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_FLANNERY_1] = // Kai
         {
@@ -125,6 +137,10 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I still haven't lost yet!{PAUSE_UNTIL_PRESS}"),
         },
+        [TRAINER_SPEEDWAGON_2] = // Route 123
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You can't stop the\nMISSISSWUAGWA RIDERS!{PAUSE_UNTIL_PRESS}"),
+        },
         [TRAINER_MAY_LILYCOVE_TORCHIC] =
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Okay, {B_OPPONENT_MON1_NAME}!\nIt's up to you!{PAUSE_UNTIL_PRESS}"),
@@ -140,6 +156,10 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         [TRAINER_JUAN_1] = // Joey
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Yeheeaaaaaaaaaaaah!{PAUSE_UNTIL_PRESS}"),
+        },
+        [TRAINER_BENNIS_3] = // Victory Road
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Oho.\nI'm feelin' the vibrations.{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_JOMITHIUS_4] = // James
         {
@@ -204,7 +224,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_EUGENIA] = // Eugenia
         {
-            [TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("Hmph!\nThat's karma, you little rat!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("Hmph!\nThat's karma, you little thief!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("SHENRON!\nMake them pay!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hmph!{PAUSE_UNTIL_PRESS}"),
         },

@@ -4,20 +4,6 @@ mapscripts RatCave_Fallarbor_2F_MapScripts {
     ]
 }
 
-script RatCave_Fallarbor_2F_EventScript_Raticate{
-    lock
-    playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
-    delay(20)
-    release
-}
-
-script RatCave_Fallarbor_2F_EventScript_RaticateAlola{
-    lock
-    playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
-    delay(20)
-    release
-}
-
 script RatCave_Fallarbor_2F_EventScript_Ratduardo{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)

@@ -389,9 +389,9 @@ Route123_EventScript_Speedwagon::
 # 205 "data/maps/Route123/scripts.pory"
 	waitmessage
 # 206 "data/maps/Route123/scripts.pory"
-	delay 30
+	fadeoutbgm 0
 # 207 "data/maps/Route123/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	delay 30
 # 208 "data/maps/Route123/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 209 "data/maps/Route123/scripts.pory"
@@ -421,7 +421,7 @@ Route123_EventScript_Speedwagon::
 # 221 "data/maps/Route123/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 3
 # 222 "data/maps/Route123/scripts.pory"
-	fadedefaultbgm
+	fadeinbgm 0
 # 223 "data/maps/Route123/scripts.pory"
 	delay 10
 # 224 "data/maps/Route123/scripts.pory"
@@ -537,7 +537,7 @@ Route123_EventScript_Zarude_3:
 
 Route123_Text_Speedwagon1::
 # 274 "data/maps/Route123/scripts.pory"
-	.string "SPEEDWAGON: Huh?\n YOU again?!\p Some of my members got arrested\n because of you!\p This is for them!\n Come on!$"
+	.string "Huh?!\n YOU again?!\p Some of my members got arrested\n because of you!\p This is for them!\n Come on!$"
 
 Route123_Text_Speedwagon2::
 # 283 "data/maps/Route123/scripts.pory"
