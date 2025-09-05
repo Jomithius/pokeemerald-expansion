@@ -214,6 +214,7 @@ script LilycoveCity_DepartmentStore_1F_EventScript_LiquidationTutor{
 }
 
 script MoveTutor_EventScript_LiquidationTeach{
+	faceplayer
 	msgbox("Oh, it's you again!\nBack for more business?", MSGBOX_YESNO)
 	waitmessage
     goto_if_eq(VAR_RESULT, NO, MoveTutor_EventScript_LiquidationDeclined)

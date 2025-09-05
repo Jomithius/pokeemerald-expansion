@@ -415,40 +415,42 @@ LilycoveCity_DepartmentStore_1F_EventScript_LiquidationTutor::
 
 MoveTutor_EventScript_LiquidationTeach::
 # 217 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	msgbox MoveTutor_EventScript_LiquidationTeach_Text_0, MSGBOX_YESNO
+	faceplayer
 # 218 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	waitmessage
+	msgbox MoveTutor_EventScript_LiquidationTeach_Text_0, MSGBOX_YESNO
 # 219 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_LiquidationDeclined
+	waitmessage
 # 220 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_1F_EventScript_LiquidationTutor_Text_1, MSGBOX_DEFAULT
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_LiquidationDeclined
 # 221 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	setvar VAR_0x8005, MOVE_LIQUIDATION
+	msgbox LilycoveCity_DepartmentStore_1F_EventScript_LiquidationTutor_Text_1, MSGBOX_DEFAULT
 # 222 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_LIQUIDATION
 # 223 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_LiquidationDeclined
+	call MoveTutor_EventScript_OpenPartyMenu
 # 224 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_LiquidationDeclined
+# 225 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	goto MoveTutor_EventScript_LiquidationTaught
 	end
 
 
 MoveTutor_EventScript_LiquidationDeclined::
-# 229 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+# 230 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	msgbox MoveTutor_EventScript_LiquidationDeclined_Text_0, MSGBOX_AUTOCLOSE
-# 232 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	waitmessage
 # 233 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+	waitmessage
+# 234 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	release
 	end
 
 
 MoveTutor_EventScript_LiquidationTaught::
-# 238 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+# 239 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	msgbox MoveTutor_EventScript_LiquidationTaught_Text_0, MSGBOX_AUTOCLOSE
-# 241 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	waitmessage
 # 242 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+	waitmessage
+# 243 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	release
 	end
 
@@ -462,17 +464,17 @@ LilycoveCity_DepartmentStore_1F_EventScript_LiquidationTutor_Text_1:
 	.string "Which POKéMON do you want to\nteach LIQUIDATION to?$"
 
 MoveTutor_EventScript_LiquidationTeach_Text_0:
-# 217 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+# 218 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	.string "Oh, it's you again!\nBack for more business?$"
 
 MoveTutor_EventScript_LiquidationDeclined_Text_0:
-# 229 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+# 230 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	.string "Well, alright.\p Come back if you ever want to do\n business!$"
 
 MoveTutor_EventScript_LiquidationTaught_Text_0:
-# 238 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+# 239 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	.string "All right!\p Come back if you ever want to do\n business again!$"
 
 LilycoveCity_DepartmentStore_1F_Text_LiquidationTeach::
-# 246 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
+# 247 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	.string "Oh, are you interested in business?\p Whenever a company falls behind on\n their payments, I end up having to\l liquidate their assets.\p If you want, I could teach one of your\n POKéMON how to liquidate as well.$"

@@ -10063,14 +10063,14 @@ AI: Basic Trainer
 
 Torkoal (M)
 Ability: Drought
-Level: 49
+Level: 50
 
 Pyroar (M)
-Level: 49
+Level: 50
 
 Talonflame (M)
 Ability: Gale Wings
-Level: 49
+Level: 50
 
 === TRAINER_DARWIN ===
 Name: DARWIN
@@ -15094,7 +15094,7 @@ AI: Smart Trainer
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
-Level: 50   
+Level: 52   
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Lash Out  
@@ -15104,7 +15104,7 @@ Jolly Nature
 
 Flygon (M) @ Dragon Fang  
 Ability: Levitate  
-Level: 50    
+Level: 52   
 EVs: 252 Atk / 252 Spe  
 Adamant Nature  
 - Dragon Dance  
@@ -15114,7 +15114,7 @@ Adamant Nature
 
 Camerupt (M) @ Charcoal 
 Ability: Solid Rock  
-Level: 50     
+Level: 52    
 EVs: 244 HP / 248 SpA / 16 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -29951,14 +29951,14 @@ Difficulty: Easy
 
 Torkoal (M)
 Ability: Drought
-Level: 49
+Level: 50
 
 Pyroar (M)
-Level: 49
+Level: 50
 
 Talonflame (M)
 Ability: Flame Body
-Level: 49
+Level: 50
 
 === TRAINER_DARWIN ===
 Name: DARWIN
@@ -35074,7 +35074,7 @@ Difficulty: Easy
 
 Mightyena (M) @ Sitrus Berry 
 Ability: Intimidate  
-Level: 50   
+Level: 52   
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Lash Out  
@@ -35084,7 +35084,7 @@ Jolly Nature
 
 Flygon (M) @ Dragon Fang
 Ability: Levitate  
-Level: 50     
+Level: 52    
 EVs: 252 Atk / 252 Spe  
 Adamant Nature  
 - Dragon Dance  
@@ -35094,7 +35094,7 @@ Adamant Nature
 
 Camerupt (M) @ Charcoal  
 Ability: Solid Rock  
-Level: 50     
+Level: 52     
 EVs: 244 HP / 248 SpA / 16 SpD  
 Modest Nature  
 IVs: 0 Atk  
