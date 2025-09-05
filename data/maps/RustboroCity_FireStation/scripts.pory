@@ -66,8 +66,7 @@ script RustboroCity_FireStation_FatMan{
 
 script RustboroCity_FireStation_Rotom{
     lock
-    applymovement(3, FireStationFacePlayer)
-    waitmovement(3)
+    faceplayer
     playmoncry(SPECIES_ROTOM, CRY_MODE_ENCOUNTER)
     delay(20)
     release

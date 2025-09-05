@@ -777,9 +777,8 @@ movement MossdeepCity_Movement_MomoClone2{
 script MossdeepCity_EventScript_PunchesTutor{
 	lock
 	faceplayer
-	msgbox("They called me the fisting avatar\n
-		in my prime because of my\l
-		elemental fists.\p
+	msgbox("They called me the fisting avatar in my\n
+		prime because of my elemental fists.\p
 		I can teach your POKéMON how to\n
 		fist too, if you'd like.", MSGBOX_YESNO)
 	waitmessage
@@ -860,7 +859,7 @@ script MoveTutor_EventScript_SuckerPunchTeach{
 
 script MossdeepCity_EventScript_PunchesTutorDecline{
 	lock
-	msgbox("I see.\n
+	msgbox("I see.\p
 		Come back if you want to teach your\n
 		POKéMON the way of the elemental fist.", MSGBOX_AUTOCLOSE)
 	waitmessage

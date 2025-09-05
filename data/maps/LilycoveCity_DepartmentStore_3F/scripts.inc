@@ -50,7 +50,6 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
 LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH
-	.2byte ITEM_LIGHT_BALL
 	.2byte ITEM_X_SPEED
 	.2byte ITEM_X_SP_ATK
 	.2byte ITEM_X_ATTACK

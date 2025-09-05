@@ -8,7 +8,7 @@ const LOCALID_ARIA = 7
   
 mapscripts Baldesia_MainHouse_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Baldesia_MainHouse_OnTransition
-    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+    // MAP_SCRIPT_ON_RESUME: CableClub_OnResume
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_MOMO_ARIA_STATE, 3: Baldesia_MainHouse_EventScript_GoToChief
         VAR_MOMO_ARIA_STATE, 4: Baldesia_MainHouse_EventScript_GoToAltar
@@ -586,14 +586,17 @@ script Baldesia_MainHouse_EventScript_KimonoGirl{
     lock
     faceplayer
     fadenewbgm(MUS_RG_NET_CENTER)
-    msgbox(gText_WouldYouLikeToRestYourPkmn, MSGBOX_YESNO)
+    msgbox("Hello, and welcome.\p
+        I can restore your tired POKéMON\n
+        to full health.\p
+        Would you like to rest your POKéMON?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         incrementgamestat(GAME_STAT_USED_POKECENTER)
         call(Common_EventScript_OutOfCenterPartyHeal)
         msgbox(Baldesia_MainHouse_Text_ThankYouForWaiting, MSGBOX_DEFAULT)
     }
     else{
-        msgbox(gText_WeHopeToSeeYouAgain, MSGBOX_DEFAULT)
+        msgbox("I hope to see you again.", MSGBOX_DEFAULT)
     }
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
@@ -708,9 +711,9 @@ text Baldesia_MainHouse_Text_AriaRecievesArmor{
 
 text Baldesia_MainHouse_Text_ThankYouForWaiting{
     "Thank you for waiting.\p
-	We've restored your POKéMON\n
+	I've restored your POKéMON\n
 	to full health.\p
-    We hope to see you again."
+    I hope to see you again."
 }
 
 movement Baldesia_MainHouse_Movement_AsakGoesToChief{

@@ -271,6 +271,14 @@ script Route123_EventScript_Zarude{
 	end
 }
 
+script Route123_EventScript_Man{
+	msgbox("I've heard what sounds like\n
+		motorcycles by MT. PYRE recently.\p
+		But there's no way anybody would ride\n
+		around here, right?", MSGBOX_NPC)
+	end
+}
+
 text Route123_Text_Speedwagon1{
     "Huh?!\n
     YOU again?!\p

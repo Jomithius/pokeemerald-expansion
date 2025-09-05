@@ -535,42 +535,52 @@ Route123_EventScript_Zarude_3:
 	goto Route123_EventScript_Zarude_1
 
 
+Route123_EventScript_Man::
+# 275 "data/maps/Route123/scripts.pory"
+	msgbox Route123_EventScript_Man_Text_0, MSGBOX_NPC
+	end
+
+
+Route123_EventScript_Man_Text_0:
+# 275 "data/maps/Route123/scripts.pory"
+	.string "I've heard what sounds like\n motorcycles by MT. PYRE recently.\p But there's no way anybody would ride\n around here, right?$"
+
 Route123_Text_Speedwagon1::
-# 274 "data/maps/Route123/scripts.pory"
+# 282 "data/maps/Route123/scripts.pory"
 	.string "Huh?!\n YOU again?!\p Some of my members got arrested\n because of you!\p This is for them!\n Come on!$"
 
 Route123_Text_Speedwagon2::
-# 283 "data/maps/Route123/scripts.pory"
+# 291 "data/maps/Route123/scripts.pory"
 	.string "H-How are you still stronger?!\n Let's get out of here, boys!$"
 
 Route123_Dale_Intro::
-# 288 "data/maps/Route123/scripts.pory"
+# 296 "data/maps/Route123/scripts.pory"
 	.string "You!\n My friend's locked up because of you!$"
 
 Route123_DaleDefeat::
-# 293 "data/maps/Route123/scripts.pory"
+# 301 "data/maps/Route123/scripts.pory"
 	.string "I won't forget this!$"
 
 Route123_Biker_Intro::
-# 297 "data/maps/Route123/scripts.pory"
+# 305 "data/maps/Route123/scripts.pory"
 	.string "BRRRRUBBB BRRRRUB\n BRRRUBRUBRRRRUB!$"
 
 Route123_Biker_Intro2::
-# 302 "data/maps/Route123/scripts.pory"
+# 310 "data/maps/Route123/scripts.pory"
 	.string "Get out of my way!$"
 
 Route123_BikerDefeat::
-# 306 "data/maps/Route123/scripts.pory"
+# 314 "data/maps/Route123/scripts.pory"
 	.string "All outta gas…$"
 
 Route123_BikerDefeat2::
-# 310 "data/maps/Route123/scripts.pory"
+# 318 "data/maps/Route123/scripts.pory"
 	.string "You messed up my ride!$"
 
 Route123_BikerDefeat3::
-# 314 "data/maps/Route123/scripts.pory"
+# 322 "data/maps/Route123/scripts.pory"
 	.string "BRRRRUBBB BRRRUB…$"
 
 Route123_SpeedwagonDefeat::
-# 318 "data/maps/Route123/scripts.pory"
+# 326 "data/maps/Route123/scripts.pory"
 	.string "Dress for the slide,\n not the ride…$"

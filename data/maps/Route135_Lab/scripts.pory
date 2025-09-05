@@ -864,7 +864,7 @@ text Route_135_Lab_PokenavText_JamesComeBackToTheLab{
 }
 
 script Route_135_Lab_EventScript_Meltan{
-    lockall
+    lock
     showmonpic(SPECIES_MELTAN, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     	It contained the POKéMON\n
@@ -898,12 +898,12 @@ script Route_135_Lab_EventScript_Meltan{
     	POKéMON.")
     }
     waitmessage
-    releaseall
+    release
     end
 }
 
 script Route_135_Lab_EventScript_TypeNull{
-    lockall
+    lock
     showmonpic(SPECIES_TYPE_NULL, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     	It contained the POKéMON\n
@@ -937,7 +937,7 @@ script Route_135_Lab_EventScript_TypeNull{
     	POKéMON.")
     }
     waitmessage
-    releaseall
+    release
     end
 }
 

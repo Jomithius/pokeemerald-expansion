@@ -329,146 +329,144 @@ LilycoveCity_DepartmentStore_5F_EventScript_Misa::
 # 167 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	lock
 # 168 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	applymovement 8, Common_Movement_FacePlayer
+	faceplayer
 # 169 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	waitmovement 8
-# 170 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT, LilycoveCity_DepartmentStore_5F_EventScript_Misa_2
-# 186 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 185 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilycoveCity_DepartmentStore_5F_Text_Misa3, MSGBOX_AUTOCLOSE
-# 187 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 186 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmessage
 LilycoveCity_DepartmentStore_5F_EventScript_Misa_1:
-# 189 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 188 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	applymovement 8, Common_Movement_FaceOriginalDirection
-# 190 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 189 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmovement 8
-# 191 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 190 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	release
 	end
 
 LilycoveCity_DepartmentStore_5F_EventScript_Misa_2:
-# 171 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 170 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	playse SE_PIN
-# 172 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 171 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	applymovement 8, Common_Movement_ExclamationMark
-# 173 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 172 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmovement 8
+# 173 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	waitse
 # 174 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	delay 20
-# 175 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	playbgm MUS_MISA_THEME, FALSE
-# 176 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 175 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	delay 10
+# 176 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	msgbox LilycoveCity_DepartmentStore_5F_Text_Misa1, MSGBOX_DEFAULT
 # 177 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_5F_Text_Misa1, MSGBOX_AUTOCLOSE
+	waitmessage
 # 178 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	waitmessage
-# 179 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	giveitem ITEM_RARE_CANDY, 10
-# 180 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 179 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilycoveCity_DepartmentStore_5F_Text_Misa2, MSGBOX_AUTOCLOSE
-# 181 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 180 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmessage
-# 182 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 181 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	fadedefaultbgm
-# 183 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 182 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	setflag FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT
 	goto LilycoveCity_DepartmentStore_5F_EventScript_Misa_1
 
 
 LilycoveCity_DepartmentStore_5F_EventScript_Lina::
-# 230 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 229 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	lock
-# 231 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 230 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilcoveCity_DepartmentStore_5F_Text_Lina1, MSGBOX_AUTOCLOSE
-# 232 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 231 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmessage
-# 233 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 232 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	playse SE_PIN
-# 234 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 233 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	applymovement 9, Common_Movement_ExclamationMark
+# 234 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	waitmovement 9
 # 235 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	waitmovement 9
-# 236 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	delay 20
-# 237 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 236 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	applymovement 9, Common_Movement_FacePlayer
-# 238 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 237 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmovement 9
-# 239 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 238 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	compare VAR_LINA_TALKED_TO, 1
 	goto_if_eq LilycoveCity_DepartmentStore_5F_EventScript_Lina_9
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_7:
-# 243 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 242 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	compare VAR_LINA_TALKED_TO, 1
 	goto_if_eq LilycoveCity_DepartmentStore_5F_EventScript_Lina_3
-# 246 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 245 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	compare VAR_LINA_TALKED_TO, 2
 	goto_if_eq LilycoveCity_DepartmentStore_5F_EventScript_Lina_4
-# 250 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 249 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilcoveCity_DepartmentStore_5F_Text_Lina3, MSGBOX_AUTOCLOSE
-# 251 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 250 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	setvar VAR_LINA_TALKED_TO, 1
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_1:
-# 253 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 252 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmessage
-# 254 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 253 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	applymovement 9, Common_Movement_FaceOriginalDirection
-# 255 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 254 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmovement 9
-# 256 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 255 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	release
 	end
 
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_2:
-# 240 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 239 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilcoveCity_DepartmentStore_5F_Text_Lina2, MSGBOX_AUTOCLOSE
-# 241 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 240 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	setvar VAR_LINA_TALKED_TO, 2
 	goto LilycoveCity_DepartmentStore_5F_EventScript_Lina_1
 
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_3:
-# 244 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 243 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilcoveCity_DepartmentStore_5F_Text_Lina2, MSGBOX_AUTOCLOSE
 	goto LilycoveCity_DepartmentStore_5F_EventScript_Lina_1
 
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_4:
-# 247 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 246 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	msgbox LilcoveCity_DepartmentStore_5F_Text_Lina2, MSGBOX_AUTOCLOSE
 	goto LilycoveCity_DepartmentStore_5F_EventScript_Lina_1
 
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_8:
-# 239 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 238 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	goto_if_set FLAG_LINA_HOUSE_EEVEE, LilycoveCity_DepartmentStore_5F_EventScript_Lina_2
 	goto LilycoveCity_DepartmentStore_5F_EventScript_Lina_7
 
 LilycoveCity_DepartmentStore_5F_EventScript_Lina_9:
-# 239 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 238 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	goto_if_set FLAG_TALKED_TO_LINA_LAVARIDGE, LilycoveCity_DepartmentStore_5F_EventScript_Lina_8
 	goto LilycoveCity_DepartmentStore_5F_EventScript_Lina_7
 
 
 LilycoveCity_DepartmentStore_5F_Text_Misa1::
-# 195 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "Oh, {PLAYER}!\p It's nice to see you again!\n I had to stop by the DEPT. STORE\l before I went back to work.\l I just love the POKé DOLLS here!\p Have you eaten?\n I bought some candy earlier, but I\l got too much.\l Here, you can take the rest!$"
+# 194 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	.string "Oh, {PLAYER}!\p It's nice to see you again!\n I had to stop by the DEPT. STORE\l before I went back to work.\l I just love the POKé DOLLS here!\p Have you eaten? I bought some\n candy earlier, but I got too much.\p Here.\n You can take the rest!$"
 
 LilycoveCity_DepartmentStore_5F_Text_Misa2::
-# 207 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "I ran into JAMES earlier.\n He seems really motivated since\l meeting you.\p I also his noticed his… behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on this journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
+# 206 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	.string "By the way, I ran into JAMES earlier.\n He seems really motivated since\l meeting you.\p I also his noticed his… behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on his journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
 
 LilycoveCity_DepartmentStore_5F_Text_Misa3::
-# 221 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 220 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.string "Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
 
 LilcoveCity_DepartmentStore_5F_Text_Lina1::
-# 260 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 259 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.string "What?\n The next “Muscles & Monsters” still\l isn't in yet…$"
 
 LilcoveCity_DepartmentStore_5F_Text_Lina2::
-# 266 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 265 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.string "Wha-\n You again?!\p W-Why are you eavesdropping?!\n Shoo!$"
 
 LilcoveCity_DepartmentStore_5F_Text_Lina3::
-# 273 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+# 272 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.string "Wha-\n W-Why are you eavesdropping?!\p Shoo!$"

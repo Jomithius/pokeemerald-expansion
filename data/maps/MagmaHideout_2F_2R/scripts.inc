@@ -21,6 +21,13 @@ MagmaHideout_2F_2R_EventScript_Grunt8::
 	msgbox MagmaHideout_2F_2R_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+MagmaHideout_2F_2R_EventScript_ExpCandies::
+	lock
+	finditem ITEM_EXP_CANDY_L, 10
+	waitmessage
+	release
+	end
+
 MagmaHideout_2F_2R_Text_Grunt15Intro:
 	.string "I don't have a bone to pick with you.\n"
 	.string "I'm just following orders!$"

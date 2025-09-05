@@ -185,7 +185,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KIMONOGIRL",
-      "x": 1,
+      "x": 2,
       "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",

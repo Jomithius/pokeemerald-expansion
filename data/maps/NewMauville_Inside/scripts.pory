@@ -397,7 +397,7 @@ script NewMauville_Inside_EventScript_Zapdos{
 }
 
 script NewMauville_Inside_EventScript_Genesect{
-    lockall
+    lock
     showmonpic(SPECIES_GENESECT, 10, 4)
     msgbox("{PLAYER} checked the POKé BALL.\p
     	It contained the POKéMON\n
@@ -432,7 +432,7 @@ script NewMauville_Inside_EventScript_Genesect{
     	POKéMON.")
     }
     waitmessage
-    releaseall
+    release
     end
 }
 
@@ -443,7 +443,7 @@ script Common_EventScript_NicknameRecievedMon{
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
-	releaseall
+	release
 	end
 }
 
@@ -454,6 +454,6 @@ script Common_EventScript_NicknameRecievedMonBox{
         call(Common_EventScript_NameReceivedBoxMon)
     }
     call(Common_EventScript_TransferredToPC)
-	releaseall
+	release
 	end
 }

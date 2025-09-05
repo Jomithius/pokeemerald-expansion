@@ -11607,7 +11607,7 @@ const struct Item gItemsInfo[] =
         .price = 5000,
         .description = COMPOUND_STRING(
             "The user forces\n"
-            "the foes to select\n"
+            "the foe to select\n"
             "its last used move."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,

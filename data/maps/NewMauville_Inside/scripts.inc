@@ -818,7 +818,7 @@ NewMauville_Inside_EventScript_Zapdos_3:
 
 NewMauville_Inside_EventScript_Genesect::
 # 400 "data/maps/NewMauville_Inside/scripts.pory"
-	lockall
+	lock
 # 401 "data/maps/NewMauville_Inside/scripts.pory"
 	showmonpic SPECIES_GENESECT, 10, 4
 # 402 "data/maps/NewMauville_Inside/scripts.pory"
@@ -834,7 +834,7 @@ NewMauville_Inside_EventScript_Genesect_1:
 # 434 "data/maps/NewMauville_Inside/scripts.pory"
 	waitmessage
 # 435 "data/maps/NewMauville_Inside/scripts.pory"
-	releaseall
+	release
 	end
 
 NewMauville_Inside_EventScript_Genesect_2:
@@ -893,7 +893,7 @@ Common_EventScript_NicknameRecievedMon::
 	goto_if_eq Common_EventScript_NicknameRecievedMon_2
 Common_EventScript_NicknameRecievedMon_1:
 # 446 "data/maps/NewMauville_Inside/scripts.pory"
-	releaseall
+	release
 	end
 
 Common_EventScript_NicknameRecievedMon_2:
@@ -916,7 +916,7 @@ Common_EventScript_NicknameRecievedMonBox_1:
 # 456 "data/maps/NewMauville_Inside/scripts.pory"
 	call Common_EventScript_TransferredToPC
 # 457 "data/maps/NewMauville_Inside/scripts.pory"
-	releaseall
+	release
 	end
 
 Common_EventScript_NicknameRecievedMonBox_2:

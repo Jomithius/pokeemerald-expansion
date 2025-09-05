@@ -479,7 +479,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_RotomCatalog::
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon::
 # 254 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	lockall
+	lock
 # 255 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	showmonpic SPECIES_PORYGON, 10, 4
 # 256 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
@@ -495,12 +495,12 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_1:
 # 287 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	waitmessage
 # 288 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	releaseall
+	release
 	end
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_2:
 # 261 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	givemon SPECIES_PORYGON, 40
+	givemon SPECIES_PORYGON, 45
 # 262 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PORYGON
 # 263 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"

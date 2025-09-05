@@ -1151,7 +1151,7 @@ Route135_Lab_Movement_PlayerGoesToCosmogNorth:
 
 Route_135_Lab_EventScript_Meltan::
 # 867 "data/maps/Route135_Lab/scripts.pory"
-	lockall
+	lock
 # 868 "data/maps/Route135_Lab/scripts.pory"
 	showmonpic SPECIES_MELTAN, 10, 4
 # 869 "data/maps/Route135_Lab/scripts.pory"
@@ -1167,7 +1167,7 @@ Route_135_Lab_EventScript_Meltan_1:
 # 900 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
 # 901 "data/maps/Route135_Lab/scripts.pory"
-	releaseall
+	release
 	end
 
 Route_135_Lab_EventScript_Meltan_2:
@@ -1216,7 +1216,7 @@ Route_135_Lab_EventScript_Meltan_6:
 
 Route_135_Lab_EventScript_TypeNull::
 # 906 "data/maps/Route135_Lab/scripts.pory"
-	lockall
+	lock
 # 907 "data/maps/Route135_Lab/scripts.pory"
 	showmonpic SPECIES_TYPE_NULL, 10, 4
 # 908 "data/maps/Route135_Lab/scripts.pory"
@@ -1232,7 +1232,7 @@ Route_135_Lab_EventScript_TypeNull_1:
 # 939 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
 # 940 "data/maps/Route135_Lab/scripts.pory"
-	releaseall
+	release
 	end
 
 Route_135_Lab_EventScript_TypeNull_2:

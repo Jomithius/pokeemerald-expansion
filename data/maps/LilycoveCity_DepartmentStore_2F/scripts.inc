@@ -302,7 +302,7 @@ LilycoveCity_DepartmentStore_2F_MaeMovementVar::
 # 172 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	applymovement 6, LilycoveCity_DepartmentStore_2F_Movement_MaeLeave1
 # 173 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	delay 10
+	delay 40
 # 174 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 # 175 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
