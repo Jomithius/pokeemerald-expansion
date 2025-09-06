@@ -1747,7 +1747,7 @@ script SootopolisCity_EventScript_RecoilMovesTutorChoices{
 	lock
     goto_if_set(FLAG_LANDMARK_THE_UNDER, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9)
 	msgbox("Which move do you want me\nto teach?", MSGBOX_DEFAULT)
-	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FLARE BLITZ", "WILD CHARGE", "HEAD SMASH", "WOOD HAMMER", "SELF DESTRUCT", "BRAVE BIRD", "DOUBLE EDGE")
+	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FLARE BLITZ", "WILD CHARGE", "HEAD SMASH", "WOOD HAMMER", "SELF DESTRUCT", "BRAVE BIRD", "HIGH JUMP KICK", "DOUBLE EDGE")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_FlareBlitzTeach)
@@ -1761,7 +1761,9 @@ script SootopolisCity_EventScript_RecoilMovesTutorChoices{
 			goto(MoveTutor_EventScript_SelfDestructTeach)
 		case 5:
 			goto(MoveTutor_EventScript_BraveBirdSootopolisTeach)
-        case 6:
+		case 6:
+			goto(MoveTutor_EventScript_HighJumpKickTeach)
+		case 7:
 			goto(MoveTutor_EventScript_DoubleEdgeTeach)
 		case MULTI_B_PRESSED:
 			goto(SootopolisCity_EventScript_RecoilMovesTutorDecline)
@@ -1774,7 +1776,7 @@ script SootopolisCity_EventScript_RecoilMovesTutorChoices{
 script SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9{
 	lock
 	msgbox("Which move do you want me\nto teach?", MSGBOX_DEFAULT)
-	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FLARE BLITZ", "WILD CHARGE", "HEAD SMASH", "WOOD HAMMER", "SELF DESTRUCT", "BRAVE BIRD", "WAVE CRASH", "SUPERCELL SLAM", "DOUBLE EDGE")
+	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FLARE BLITZ", "WILD CHARGE", "HEAD SMASH", "WOOD HAMMER", "SELF DESTRUCT", "BRAVE BIRD", "HIGH JUMP KICK", "DOUBLE EDGE", "WAVE CRASH", "SUPERCELL SLAM")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_FlareBlitzTeach)
@@ -1788,12 +1790,14 @@ script SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9{
 			goto(MoveTutor_EventScript_SelfDestructTeach)
 		case 5:
 			goto(MoveTutor_EventScript_BraveBirdSootopolisTeach)
-        case 6:
-			goto(MoveTutor_EventScript_WaveCrashTeach)
-        case 7:
-			goto(MoveTutor_EventScript_SupercellSlamTeach)
-        case 8:
+		case 6:
+			goto(MoveTutor_EventScript_HighJumpKickTeach)
+		case 7:
 			goto(MoveTutor_EventScript_DoubleEdgeTeach)
+        case 8:
+			goto(MoveTutor_EventScript_WaveCrashTeach)
+        case 9:
+			goto(MoveTutor_EventScript_SupercellSlamTeach)
 		case MULTI_B_PRESSED:
 			goto(SootopolisCity_EventScript_RecoilMovesTutorDecline)
 		default:
@@ -1856,6 +1860,24 @@ script MoveTutor_EventScript_BraveBirdSootopolisTeach{
 	end
 }
 
+script MoveTutor_EventScript_HighJumpKickTeach{
+	msgbox("Which POKéMON do you want to\nteach HIGH JUMP KICK to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_HIGH_JUMP_KICK)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline)
+	goto(SootopolisCity_EventScript_RecoilMovesTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_DoubleEdgeTeach{
+	msgbox("Which POKéMON do you want to\nteach DOUBLE EDGE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_DOUBLE_EDGE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline)
+	goto(SootopolisCity_EventScript_RecoilMovesTutorTaught)
+	end
+}
+
 script MoveTutor_EventScript_WaveCrashTeach{
 	msgbox("Which POKéMON do you want to\nteach WAVE CRASH to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_WAVE_CRASH)
@@ -1868,15 +1890,6 @@ script MoveTutor_EventScript_WaveCrashTeach{
 script MoveTutor_EventScript_SupercellSlamTeach{
 	msgbox("Which POKéMON do you want to\nteach SUPERCELL SLAM to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_SUPERCELL_SLAM)
-	call(MoveTutor_EventScript_OpenPartyMenu)
-	goto_if_eq(VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline)
-	goto(SootopolisCity_EventScript_RecoilMovesTutorTaught)
-	end
-}
-
-script MoveTutor_EventScript_DoubleEdgeTeach{
-	msgbox("Which POKéMON do you want to\nteach DOUBLE EDGE to?", MSGBOX_DEFAULT)
-	setvar(VAR_0x8005, MOVE_DOUBLE_EDGE)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline)
 	goto(SootopolisCity_EventScript_RecoilMovesTutorTaught)
@@ -1967,6 +1980,56 @@ script SootopolisCity_EventScript_RecoilMovesTutorTaught{
 	lock
 	msgbox("High risk, high reward!\n
 		Come back if you have more POKéMON!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script SootopolisCity_EventScript_PainSplitTutor{
+	lock
+	faceplayer
+	goto_if_set(FLAG_TALKED_TO_PAIN_SPLIT_TUTOR, SootopolisCity_EventScript_PainSplitTutor2)
+	msgbox("Hey.\n
+		See those two idiots over there?\l
+        They're my brothers.\p
+		They always yap about powering through\n
+		the pain, but you gotta know how\l
+		to handle it.\p
+        I can teach your POKéMON how to\n
+        handle pain, if you want.", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach)
+	goto(SootopolisCity_EventScript_PainSplitTutorDecline)
+	release
+	end
+}
+
+script SootopolisCity_EventScript_PainSplitTutor2{
+	lock
+	faceplayer
+	msgbox("Hi again.\n
+        Want to teach your POKéMON how to\n
+        handle some pain?", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach)
+	goto(SootopolisCity_EventScript_PainSplitTutorDecline)
+	release
+	end
+}
+
+script MoveTutor_EventScript_PainSplitTeach{
+	msgbox("Which POKéMON do you want to\nteach PAIN SPLIT to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_PAIN_SPLIT)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, SootopolisCity_EventScript_PainSplitTutorDecline)
+	goto(SootopolisCity_EventScript_PainSplitTutorDecline)
+	end
+}
+
+script SootopolisCity_EventScript_PainSplitTutorDecline{
+	lock
+	msgbox("Don't listen to my idiot brothers.\n
+		It's okay to be afraid of pain.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release
 	end

@@ -636,13 +636,6 @@ Jolly Nature
 - Aqua Tail  
 - Psychic Fangs  
 
-Walrein (M) 
-Ability: Ice Body  
-Level: 56
-IVs: 0 Atk  
-- Surf  
-- Ice Beam
-
 Arctovish  
 Ability: Water Absorb  
 Level: 56
@@ -1906,7 +1899,15 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer 
 
-Roserade
+Zebstrika
+Level: 60
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Scolipede
+Level: 60
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Archeops
 Level: 60
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2918,7 +2919,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Gyarados
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RICHARD ===
@@ -2931,7 +2932,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Kingler
-Level: 50
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HERMAN ===
@@ -2944,11 +2945,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Blastoise
-Level: 48
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Barbaracle
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SANTIAGO ===
@@ -2961,11 +2962,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacruel
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wailord
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GILBERT ===
@@ -2978,7 +2979,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Sharpedo
-Level: 50
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FRANKLIN ===
@@ -3004,7 +3005,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Vaporeon
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JACK ===
@@ -3163,7 +3164,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Poliwrath
-Level: 50
+Level: 52
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KOICHI ===
@@ -7259,7 +7260,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Primarina
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Gyarados
@@ -7659,11 +7660,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Araquanid
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wishiwashi
-Level: 49
+Level: 51
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_ISAIAH_2 ===
@@ -7758,7 +7759,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Starmie
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATELYN_1 ===
@@ -7771,7 +7772,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Cloyster
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALLISON ===
@@ -7784,11 +7785,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Bruxish
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Milotic
-Level: 49
+Level: 51
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
 === TRAINER_KATELYN_2 ===
@@ -9002,11 +9003,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Toxapex
-Level: 43
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Kingler
-Level: 43
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUSIE ===
@@ -9019,7 +9020,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Jellicent
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KARA ===
@@ -9032,7 +9033,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Seaking
-Level: 48
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DANA ===
@@ -9045,7 +9046,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Greninja
-Level: 50
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIENNA ===
@@ -9139,7 +9140,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Gastrodon-East
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JENNY_2 ===
@@ -11786,7 +11787,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Inteleon
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 ===
@@ -11816,7 +11817,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Carracosta
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TERRY ===
@@ -12027,7 +12028,7 @@ Double Battle: No
 AI: Basic Trainer 
 
 Pidgeot
-Level: 48
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Breloom
@@ -12116,7 +12117,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Golisopod
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAROLDINA ===
@@ -13837,30 +13838,28 @@ AI: Basic Trainer
 
 Tatsugiri  
 Ability: Commander  
-Tera Type: Dragon  
 Timid Nature  
 IVs: 0 Atk  
 - Surf  
 - Draco Meteor  
 
-Armarouge @ Focus Sash  
-Ability: Weak Armor  
-Tera Type: Fire  
-Modest Nature  
-IVs: 0 Atk  
-- Expanding Force  
-- Calm Mind  
-- Armor Cannon  
-
 Feraligatr @ Feraligite
 Ability: Sheer Force  
-Tera Type: Water  
 EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
 - Ice Fang  
 - Psychic Fangs  
 - Fishious Rend  
 - Aqua Jet  
+
+Kingambit  
+Ability: Supreme Overlord  
+Tera Type: Flying 
+Adamant Nature  
+- Swords Dance  
+- Kowtow Cleave  
+- Iron Head  
+- Low Kick
 
 === TRAINER_LINDSAY ===
 Name: LINDSAY
@@ -13869,29 +13868,27 @@ Pic: Kimono Woman
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer  / Risky
+AI: Basic Trainer
 
 Dondozo  
-Ability: Oblivious  
-Tera Type: Water  
+Ability: Oblivious   
 - Wave Crash  
 - Earthquake  
 - Rock Slide  
 - Order Up  
 
-Hatterene (F)  
-Ability: Healer  
-Tera Type: Psychic  
-Calm Nature  
+Hydrapple @ White Herb  
+Ability: Supersweet Syrup  
+Tera Type: Dragon 
+Bold Nature  
 IVs: 0 Atk  
-- Psychic Terrain  
-- Dazzling Gleam  
-- Expanding Force  
-- Reflect  
+- Nasty Plot  
+- Fickle Beam  
+- Recover  
+- Leaf Storm 
 
 Roserade @ Roserite
 Ability: Technician  
-Tera Type: Grass  
 EVs: 252 SpA / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -14125,11 +14122,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Dewgong
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Slowking
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TISHA ===
@@ -14142,7 +14139,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Eelektross
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TORI_AND_TIA ===
@@ -14334,11 +14331,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Azumarill
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Pelipper
-Level: 46
+Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LILA_AND_ROY_1 ===
@@ -15095,7 +15092,7 @@ Double Battle: No
 AI: Basic Trainer 
 
 Seismitoad
-Level: 48
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Camerupt
@@ -15530,10 +15527,10 @@ Double Battle: No
 AI: Basic Trainer 
 
 Tangrowth
-Level: 48
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Medicham
+Scizor
 Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -18383,16 +18380,16 @@ Timid Nature
 - Flamethrower  
 - Dragon Pulse  
 
-Hydrapple @ White Herb  
-Ability: Supersweet Syrup  
-Tera Type: Dragon 
-EVs: 252 HP / 252 Def / 4 SpA  
-Bold Nature  
+Archaludon @ Power Herb  
+Ability: Stamina  
+Tera Type: Electric  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Calm Nature  
 IVs: 0 Atk  
-- Nasty Plot  
-- Fickle Beam  
-- Recover  
-- Leaf Storm  
+- Draco Meteor  
+- Electro Shot  
+- Steel Beam  
+- Body Press
 
 Avatar @ Blunder Policy
 Ability: Dark Aura
@@ -20177,7 +20174,7 @@ Difficulty: Easy
 
 Alomomola (F) @ Icy Rock  
 Ability: Regenerator  
-Level: 54  
+Level: 56 
 IVs: 0 Atk  
 - Snowscape  
 - Scald  
@@ -20185,7 +20182,7 @@ IVs: 0 Atk
 
 Gorebyss (F)  
 Ability: Swift Swim  
-Level: 54 
+Level: 56
 Calm Nature  
 IVs: 0 Atk  
 - Scald  
@@ -20193,7 +20190,7 @@ IVs: 0 Atk
 
 Swanna (F)  
 Ability: Hydration  
-Level: 54 
+Level: 56
 Modest Nature  
 IVs: 0 Atk  
 - Air Slash   
@@ -20201,22 +20198,15 @@ IVs: 0 Atk
 
 Bruxish (F) 
 Ability: Wonder Skin  
-Level: 54 
+Level: 56 
 Jolly Nature  
 - Aqua Jet  
 - Aqua Tail  
 - Psychic Fangs  
 
-Walrein (M) 
-Ability: Ice Body  
-Level: 54 
-IVs: 0 Atk  
-- Surf  
-- Ice Beam
-
 Arctovish  
 Ability: Water Absorb  
-Level: 54 
+Level: 56 
 Jolly Nature  
 - Fishious Rend  
 - Icicle Spear  
@@ -21526,7 +21516,15 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Roserade
+Zebstrika
+Level: 60
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Scolipede
+Level: 60
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Archeops
 Level: 60
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -22613,7 +22611,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Gyarados
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RICHARD ===
@@ -22627,7 +22625,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Kingler
-Level: 50
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HERMAN ===
@@ -22641,11 +22639,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Blastoise
-Level: 48
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Barbaracle
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SANTIAGO ===
@@ -22659,11 +22657,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Tentacruel
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wailord
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GILBERT ===
@@ -22677,7 +22675,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Sharpedo
-Level: 50
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FRANKLIN ===
@@ -22705,7 +22703,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Vaporeon
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JACK ===
@@ -22873,7 +22871,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Poliwrath
-Level: 50
+Level: 52
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KOICHI ===
@@ -27004,7 +27002,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Primarina
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Gyarados
@@ -27432,11 +27430,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Araquanid
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wishiwashi
-Level: 49
+Level: 51
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_ISAIAH_2 ===
@@ -27538,7 +27536,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Starmie
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATELYN_1 ===
@@ -27552,7 +27550,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Cloyster
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALLISON ===
@@ -27566,11 +27564,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Bruxish
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Milotic
-Level: 49
+Level: 51
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
 === TRAINER_KATELYN_2 ===
@@ -28854,11 +28852,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Toxapex
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Kingler
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUSIE ===
@@ -28872,7 +28870,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Jellicent
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KARA ===
@@ -28886,7 +28884,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Seaking
-Level: 48
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DANA ===
@@ -28900,7 +28898,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Greninja
-Level: 50
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIENNA ===
@@ -29000,7 +28998,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Gastrodon-East
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JENNY_2 ===
@@ -31704,7 +31702,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Inteleon
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 ===
@@ -31736,7 +31734,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Carracosta
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TERRY ===
@@ -31961,7 +31959,7 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Pidgeot
-Level: 48
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Breloom
@@ -32051,7 +32049,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Golisopod
-Level: 49
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAROLDINA ===
@@ -33788,15 +33786,6 @@ IVs: 0 Atk
 - Surf  
 - Draco Meteor  
 
-Armarouge @ Focus Sash  
-Ability: Weak Armor  
-Tera Type: Fire  
-Modest Nature  
-IVs: 0 Atk  
-- Expanding Force  
-- Calm Mind  
-- Armor Cannon  
-
 Feraligatr @ Feraligite
 Ability: Sheer Force  
 Tera Type: Water  
@@ -33804,7 +33793,15 @@ Adamant Nature
 - Ice Fang  
 - Psychic Fangs  
 - Fishious Rend  
-- Aqua Jet  
+- Aqua Jet 
+
+Kingambit
+Ability: Supreme Overlord  
+Tera Type: Flying 
+Adamant Nature   
+- Kowtow Cleave  
+- Iron Head  
+- Low Kick
 
 === TRAINER_LINDSAY ===
 Name: LINDSAY
@@ -33817,26 +33814,24 @@ AI: Check Bad Move / Try To Faint / Risky
 Difficulty: Easy 
 
 Dondozo  
-Ability: Oblivious  
-Tera Type: Water  
+Ability: Oblivious   
 - Wave Crash  
 - Earthquake  
 - Rock Slide  
 - Order Up  
 
-Hatterene (F)  
-Ability: Healer  
-Tera Type: Psychic  
-Calm Nature  
+Hydrapple @ White Herb  
+Ability: Supersweet Syrup  
+Tera Type: Dragon 
+Bold Nature  
 IVs: 0 Atk  
-- Psychic Terrain  
-- Dazzling Gleam  
-- Expanding Force  
-- Reflect  
+- Nasty Plot  
+- Fickle Beam  
+- Recover  
+- Leaf Storm 
 
 Roserade @ Roserite
 Ability: Technician  
-Tera Type: Grass  
 Timid Nature  
 IVs: 0 Atk  
 - Sludge Bomb  
@@ -34088,7 +34083,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Eelektross
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TORI_AND_TIA ===
@@ -34290,11 +34285,11 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Azumarill
-Level: 49
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Pelipper
-Level: 46
+Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LILA_AND_ROY_1 ===
@@ -35092,7 +35087,7 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Seismitoad
-Level: 48
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Camerupt
@@ -35551,10 +35546,10 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Tangrowth
-Level: 48
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Medicham
+Scizor
 Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -38382,15 +38377,15 @@ Timid Nature
 - Flamethrower  
 - Flip Turn  
 
-Hydrapple @ Leftovers  
-Ability: Sticky Hold  
-Tera Type: Dragon   
-Bold Nature  
-IVs: 0 Atk  
-- Nasty Plot  
-- Fickle Beam  
-- Recover  
-- Leaf Storm  
+Archaludon @ Power Herb  
+Ability: Stamina  
+Tera Type: Steel  
+Calm Nature  
+IVs: 0 Atk / 0 SpA  
+- Draco Meteor  
+- Electro Shot  
+- Steel Beam  
+- Body Press
 
 Avatar @ Covert Cloak
 Ability: Dark Aura

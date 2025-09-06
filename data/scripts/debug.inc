@@ -174,9 +174,7 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setvar VAR_MISA_STATE, 7
-	clearflag FLAG_HIDE_EMO_LILYCOVE
-	warp MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM, 11, 17
+	warp MAP_SKY_PILLAR_5F, 3, 2
 	waitstate
 	release
 	end

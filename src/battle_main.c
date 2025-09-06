@@ -5549,7 +5549,7 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_MASTER:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleBennisName) && !FlagGet(FLAG_SYS_FINAL_REMATCH))
             {
-                PlayBGM(MUS_HG_VICTORY_TRAINER);
+                PlayBGM(MUS_VICTORY_TRAINER);
                 break;
             }
             else

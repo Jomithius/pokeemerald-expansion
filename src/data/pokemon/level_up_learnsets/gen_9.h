@@ -12628,7 +12628,8 @@ static const struct LevelUpMove sLilligantHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE( 5, MOVE_AXE_KICK),
+    LEVEL_UP_MOVE( 1, MOVE_HIGH_JUMP_KICK),
+    LEVEL_UP_MOVE( 76, MOVE_AXE_KICK),
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS

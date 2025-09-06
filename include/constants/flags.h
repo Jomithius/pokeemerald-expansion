@@ -1554,7 +1554,7 @@
 #define FLAG_SYS_STARTED_AS_BOY                     (SYSTEM_FLAGS + 0xB2) // For Fantasia debugging (fly and GameClear)
 #define FLAG_SYS_STARTED_AS_GIRL                    (SYSTEM_FLAGS + 0xB3) // For Fantasia debugging (fly and GameClear)
 #define FLAG_BALDESIA_MINI_GAME_START               (SYSTEM_FLAGS + 0xB4) // Ninja Mini Game
-#define FLAG_UNUSED_0x915                           (SYSTEM_FLAGS + 0xB5) // Unused Flag
+#define FLAG_TALKED_TO_PAIN_SPLIT_TUTOR             (SYSTEM_FLAGS + 0xB5) // to shorten text
 #define FLAG_UNUSED_0x916                           (SYSTEM_FLAGS + 0xB6) // Unused Flag
 #define FLAG_UNUSED_0x917                           (SYSTEM_FLAGS + 0xB7) // Unused Flag
 #define FLAG_UNUSED_0x918                           (SYSTEM_FLAGS + 0xB8) // Unused Flag

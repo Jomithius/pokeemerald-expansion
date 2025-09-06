@@ -3481,7 +3481,7 @@ SootopolisCity_EventScript_RecoilMovesTutorChoices::
 # 1749 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_0, MSGBOX_DEFAULT
 # 1750 "data/maps/SootopolisCity/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_1, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_2, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_3, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_4, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_5, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_6, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_7
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_1, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_2, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_3, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_4, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_5, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_6, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_7, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_8
 # 1751 "data/maps/SootopolisCity/scripts.pory"
 	switch VAR_RESULT
 # 1752 "data/maps/SootopolisCity/scripts.pory"
@@ -3499,8 +3499,10 @@ SootopolisCity_EventScript_RecoilMovesTutorChoices::
 # 1764 "data/maps/SootopolisCity/scripts.pory"
 	case 6, SootopolisCity_EventScript_RecoilMovesTutorChoices_9
 # 1766 "data/maps/SootopolisCity/scripts.pory"
-	case MULTI_B_PRESSED, SootopolisCity_EventScript_RecoilMovesTutorChoices_10
-# 1769 "data/maps/SootopolisCity/scripts.pory"
+	case 7, SootopolisCity_EventScript_RecoilMovesTutorChoices_10
+# 1768 "data/maps/SootopolisCity/scripts.pory"
+	case MULTI_B_PRESSED, SootopolisCity_EventScript_RecoilMovesTutorChoices_11
+# 1771 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorDecline
 SootopolisCity_EventScript_RecoilMovesTutorChoices_1:
 	end
@@ -3537,370 +3539,460 @@ SootopolisCity_EventScript_RecoilMovesTutorChoices_8:
 
 SootopolisCity_EventScript_RecoilMovesTutorChoices_9:
 # 1765 "data/maps/SootopolisCity/scripts.pory"
-	goto MoveTutor_EventScript_DoubleEdgeTeach
+	goto MoveTutor_EventScript_HighJumpKickTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoices_1
 
 SootopolisCity_EventScript_RecoilMovesTutorChoices_10:
 # 1767 "data/maps/SootopolisCity/scripts.pory"
+	goto MoveTutor_EventScript_DoubleEdgeTeach
+	goto SootopolisCity_EventScript_RecoilMovesTutorChoices_1
+
+SootopolisCity_EventScript_RecoilMovesTutorChoices_11:
+# 1769 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorDecline
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoices_1
 
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9::
-# 1775 "data/maps/SootopolisCity/scripts.pory"
-	lock
-# 1776 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_0, MSGBOX_DEFAULT
 # 1777 "data/maps/SootopolisCity/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_1, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_2, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_3, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_4, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_5, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_6, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_Text_0, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_Text_1, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_7
+	lock
 # 1778 "data/maps/SootopolisCity/scripts.pory"
-	switch VAR_RESULT
+	msgbox SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_0, MSGBOX_DEFAULT
 # 1779 "data/maps/SootopolisCity/scripts.pory"
-	case 0, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_3
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_1, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_2, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_3, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_4, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_5, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_6, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_7, SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_8, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_Text_0, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_Text_1
+# 1780 "data/maps/SootopolisCity/scripts.pory"
+	switch VAR_RESULT
 # 1781 "data/maps/SootopolisCity/scripts.pory"
-	case 1, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_4
+	case 0, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_3
 # 1783 "data/maps/SootopolisCity/scripts.pory"
-	case 2, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_5
+	case 1, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_4
 # 1785 "data/maps/SootopolisCity/scripts.pory"
-	case 3, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_6
+	case 2, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_5
 # 1787 "data/maps/SootopolisCity/scripts.pory"
-	case 4, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_7
+	case 3, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_6
 # 1789 "data/maps/SootopolisCity/scripts.pory"
-	case 5, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_8
+	case 4, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_7
 # 1791 "data/maps/SootopolisCity/scripts.pory"
-	case 6, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_9
+	case 5, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_8
 # 1793 "data/maps/SootopolisCity/scripts.pory"
-	case 7, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_10
+	case 6, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_9
 # 1795 "data/maps/SootopolisCity/scripts.pory"
-	case 8, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_11
+	case 7, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_10
 # 1797 "data/maps/SootopolisCity/scripts.pory"
-	case MULTI_B_PRESSED, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_12
-# 1800 "data/maps/SootopolisCity/scripts.pory"
+	case 8, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_11
+# 1799 "data/maps/SootopolisCity/scripts.pory"
+	case 9, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_12
+# 1801 "data/maps/SootopolisCity/scripts.pory"
+	case MULTI_B_PRESSED, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_13
+# 1804 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorDecline
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1:
 	end
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_3:
-# 1780 "data/maps/SootopolisCity/scripts.pory"
+# 1782 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_FlareBlitzTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_4:
-# 1782 "data/maps/SootopolisCity/scripts.pory"
+# 1784 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_WildChargeTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_5:
-# 1784 "data/maps/SootopolisCity/scripts.pory"
+# 1786 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_HeadSmashTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_6:
-# 1786 "data/maps/SootopolisCity/scripts.pory"
+# 1788 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_WoodHammerTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_7:
-# 1788 "data/maps/SootopolisCity/scripts.pory"
+# 1790 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_SelfDestructTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_8:
-# 1790 "data/maps/SootopolisCity/scripts.pory"
+# 1792 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_BraveBirdSootopolisTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_9:
-# 1792 "data/maps/SootopolisCity/scripts.pory"
-	goto MoveTutor_EventScript_WaveCrashTeach
+# 1794 "data/maps/SootopolisCity/scripts.pory"
+	goto MoveTutor_EventScript_HighJumpKickTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_10:
-# 1794 "data/maps/SootopolisCity/scripts.pory"
-	goto MoveTutor_EventScript_SupercellSlamTeach
-	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
-
-SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_11:
 # 1796 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_DoubleEdgeTeach
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
-SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_12:
+SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_11:
 # 1798 "data/maps/SootopolisCity/scripts.pory"
+	goto MoveTutor_EventScript_WaveCrashTeach
+	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
+
+SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_12:
+# 1800 "data/maps/SootopolisCity/scripts.pory"
+	goto MoveTutor_EventScript_SupercellSlamTeach
+	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
+
+SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_13:
+# 1802 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorDecline
 	goto SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_1
 
 
 MoveTutor_EventScript_FlareBlitzTeach::
-# 1806 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_FlareBlitzTeach_Text_0, MSGBOX_DEFAULT
-# 1807 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_FLARE_BLITZ
-# 1808 "data/maps/SootopolisCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
-# 1809 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
 # 1810 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_FlareBlitzTeach_Text_0, MSGBOX_DEFAULT
+# 1811 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_FLARE_BLITZ
+# 1812 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1813 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1814 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_WildChargeTeach::
-# 1815 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_WildChargeTeach_Text_0, MSGBOX_DEFAULT
-# 1816 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_WILD_CHARGE
-# 1817 "data/maps/SootopolisCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
-# 1818 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
 # 1819 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_WildChargeTeach_Text_0, MSGBOX_DEFAULT
+# 1820 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_WILD_CHARGE
+# 1821 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1822 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1823 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_HeadSmashTeach::
-# 1824 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_HeadSmashTeach_Text_0, MSGBOX_DEFAULT
-# 1825 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_HEAD_SMASH
-# 1826 "data/maps/SootopolisCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
-# 1827 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
 # 1828 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_HeadSmashTeach_Text_0, MSGBOX_DEFAULT
+# 1829 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_HEAD_SMASH
+# 1830 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1831 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1832 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_WoodHammerTeach::
-# 1833 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_WoodHammerTeach_Text_0, MSGBOX_DEFAULT
-# 1834 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_WOOD_HAMMER
-# 1835 "data/maps/SootopolisCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
-# 1836 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
 # 1837 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_WoodHammerTeach_Text_0, MSGBOX_DEFAULT
+# 1838 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_WOOD_HAMMER
+# 1839 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1840 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1841 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_SelfDestructTeach::
-# 1842 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_SelfDestructTeach_Text_0, MSGBOX_DEFAULT
-# 1843 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_SELF_DESTRUCT
-# 1844 "data/maps/SootopolisCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
-# 1845 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
 # 1846 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_SelfDestructTeach_Text_0, MSGBOX_DEFAULT
+# 1847 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_SELF_DESTRUCT
+# 1848 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1849 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1850 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_BraveBirdSootopolisTeach::
-# 1851 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_BraveBirdSootopolisTeach_Text_0, MSGBOX_DEFAULT
-# 1852 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_BRAVE_BIRD
-# 1853 "data/maps/SootopolisCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
-# 1854 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
 # 1855 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_BraveBirdSootopolisTeach_Text_0, MSGBOX_DEFAULT
+# 1856 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_BRAVE_BIRD
+# 1857 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1858 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1859 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
-MoveTutor_EventScript_WaveCrashTeach::
-# 1860 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_WaveCrashTeach_Text_0, MSGBOX_DEFAULT
-# 1861 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_WAVE_CRASH
-# 1862 "data/maps/SootopolisCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
-# 1863 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+MoveTutor_EventScript_HighJumpKickTeach::
 # 1864 "data/maps/SootopolisCity/scripts.pory"
-	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
-	end
-
-
-MoveTutor_EventScript_SupercellSlamTeach::
-# 1869 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_SupercellSlamTeach_Text_0, MSGBOX_DEFAULT
-# 1870 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_SUPERCELL_SLAM
-# 1871 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_HighJumpKickTeach_Text_0, MSGBOX_DEFAULT
+# 1865 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_HIGH_JUMP_KICK
+# 1866 "data/maps/SootopolisCity/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 1872 "data/maps/SootopolisCity/scripts.pory"
+# 1867 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
-# 1873 "data/maps/SootopolisCity/scripts.pory"
+# 1868 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_DoubleEdgeTeach::
-# 1878 "data/maps/SootopolisCity/scripts.pory"
+# 1873 "data/maps/SootopolisCity/scripts.pory"
 	msgbox MoveTutor_EventScript_DoubleEdgeTeach_Text_0, MSGBOX_DEFAULT
-# 1879 "data/maps/SootopolisCity/scripts.pory"
+# 1874 "data/maps/SootopolisCity/scripts.pory"
 	setvar VAR_0x8005, MOVE_DOUBLE_EDGE
-# 1880 "data/maps/SootopolisCity/scripts.pory"
+# 1875 "data/maps/SootopolisCity/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 1881 "data/maps/SootopolisCity/scripts.pory"
+# 1876 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1877 "data/maps/SootopolisCity/scripts.pory"
+	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
+	end
+
+
+MoveTutor_EventScript_WaveCrashTeach::
 # 1882 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_WaveCrashTeach_Text_0, MSGBOX_DEFAULT
+# 1883 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_WAVE_CRASH
+# 1884 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1885 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1886 "data/maps/SootopolisCity/scripts.pory"
+	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
+	end
+
+
+MoveTutor_EventScript_SupercellSlamTeach::
+# 1891 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_SupercellSlamTeach_Text_0, MSGBOX_DEFAULT
+# 1892 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_SUPERCELL_SLAM
+# 1893 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 1894 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
+# 1895 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 SootopolisCity_EventScript_FatigueMovesTutor::
-# 1887 "data/maps/SootopolisCity/scripts.pory"
+# 1900 "data/maps/SootopolisCity/scripts.pory"
 	lock
-# 1888 "data/maps/SootopolisCity/scripts.pory"
+# 1901 "data/maps/SootopolisCity/scripts.pory"
 	faceplayer
-# 1889 "data/maps/SootopolisCity/scripts.pory"
+# 1902 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_FatigueMovesTutor_Text_0, MSGBOX_YESNO
-# 1893 "data/maps/SootopolisCity/scripts.pory"
+# 1906 "data/maps/SootopolisCity/scripts.pory"
 	waitmessage
-# 1894 "data/maps/SootopolisCity/scripts.pory"
+# 1907 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, SootopolisCity_EventScript_FatigueMovesTutorChoices
-# 1895 "data/maps/SootopolisCity/scripts.pory"
+# 1908 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorDecline
-# 1896 "data/maps/SootopolisCity/scripts.pory"
+# 1909 "data/maps/SootopolisCity/scripts.pory"
 	release
 	end
 
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices::
-# 1901 "data/maps/SootopolisCity/scripts.pory"
+# 1914 "data/maps/SootopolisCity/scripts.pory"
 	lock
-# 1902 "data/maps/SootopolisCity/scripts.pory"
+# 1915 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_0, MSGBOX_DEFAULT
-# 1903 "data/maps/SootopolisCity/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_0, SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_1, SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_2, SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_3
-# 1904 "data/maps/SootopolisCity/scripts.pory"
-	switch VAR_RESULT
-# 1905 "data/maps/SootopolisCity/scripts.pory"
-	case 0, SootopolisCity_EventScript_FatigueMovesTutorChoices_3
-# 1907 "data/maps/SootopolisCity/scripts.pory"
-	case 1, SootopolisCity_EventScript_FatigueMovesTutorChoices_4
-# 1909 "data/maps/SootopolisCity/scripts.pory"
-	case 2, SootopolisCity_EventScript_FatigueMovesTutorChoices_5
-# 1911 "data/maps/SootopolisCity/scripts.pory"
-	case 3, SootopolisCity_EventScript_FatigueMovesTutorChoices_6
-# 1913 "data/maps/SootopolisCity/scripts.pory"
-	case MULTI_B_PRESSED, SootopolisCity_EventScript_FatigueMovesTutorChoices_7
 # 1916 "data/maps/SootopolisCity/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_0, SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_1, SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_2, SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_3
+# 1917 "data/maps/SootopolisCity/scripts.pory"
+	switch VAR_RESULT
+# 1918 "data/maps/SootopolisCity/scripts.pory"
+	case 0, SootopolisCity_EventScript_FatigueMovesTutorChoices_3
+# 1920 "data/maps/SootopolisCity/scripts.pory"
+	case 1, SootopolisCity_EventScript_FatigueMovesTutorChoices_4
+# 1922 "data/maps/SootopolisCity/scripts.pory"
+	case 2, SootopolisCity_EventScript_FatigueMovesTutorChoices_5
+# 1924 "data/maps/SootopolisCity/scripts.pory"
+	case 3, SootopolisCity_EventScript_FatigueMovesTutorChoices_6
+# 1926 "data/maps/SootopolisCity/scripts.pory"
+	case MULTI_B_PRESSED, SootopolisCity_EventScript_FatigueMovesTutorChoices_7
+# 1929 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorDecline
 SootopolisCity_EventScript_FatigueMovesTutorChoices_1:
 	end
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_3:
-# 1906 "data/maps/SootopolisCity/scripts.pory"
+# 1919 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_OutrageTeach
 	goto SootopolisCity_EventScript_FatigueMovesTutorChoices_1
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_4:
-# 1908 "data/maps/SootopolisCity/scripts.pory"
+# 1921 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_PetalDanceTeach
 	goto SootopolisCity_EventScript_FatigueMovesTutorChoices_1
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_5:
-# 1910 "data/maps/SootopolisCity/scripts.pory"
+# 1923 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_RagingFuryTeach
 	goto SootopolisCity_EventScript_FatigueMovesTutorChoices_1
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_6:
-# 1912 "data/maps/SootopolisCity/scripts.pory"
+# 1925 "data/maps/SootopolisCity/scripts.pory"
 	goto MoveTutor_EventScript_ThrashTeach
 	goto SootopolisCity_EventScript_FatigueMovesTutorChoices_1
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_7:
-# 1914 "data/maps/SootopolisCity/scripts.pory"
+# 1927 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorDecline
 	goto SootopolisCity_EventScript_FatigueMovesTutorChoices_1
 
 
 MoveTutor_EventScript_OutrageTeach::
-# 1922 "data/maps/SootopolisCity/scripts.pory"
+# 1935 "data/maps/SootopolisCity/scripts.pory"
 	msgbox MoveTutor_EventScript_OutrageTeach_Text_0, MSGBOX_DEFAULT
-# 1923 "data/maps/SootopolisCity/scripts.pory"
+# 1936 "data/maps/SootopolisCity/scripts.pory"
 	setvar VAR_0x8005, MOVE_OUTRAGE
-# 1924 "data/maps/SootopolisCity/scripts.pory"
+# 1937 "data/maps/SootopolisCity/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 1925 "data/maps/SootopolisCity/scripts.pory"
+# 1938 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
-# 1926 "data/maps/SootopolisCity/scripts.pory"
+# 1939 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_PetalDanceTeach::
-# 1931 "data/maps/SootopolisCity/scripts.pory"
+# 1944 "data/maps/SootopolisCity/scripts.pory"
 	msgbox MoveTutor_EventScript_PetalDanceTeach_Text_0, MSGBOX_DEFAULT
-# 1932 "data/maps/SootopolisCity/scripts.pory"
+# 1945 "data/maps/SootopolisCity/scripts.pory"
 	setvar VAR_0x8005, MOVE_PETAL_DANCE
-# 1933 "data/maps/SootopolisCity/scripts.pory"
+# 1946 "data/maps/SootopolisCity/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 1934 "data/maps/SootopolisCity/scripts.pory"
+# 1947 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
-# 1935 "data/maps/SootopolisCity/scripts.pory"
+# 1948 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_RagingFuryTeach::
-# 1940 "data/maps/SootopolisCity/scripts.pory"
+# 1953 "data/maps/SootopolisCity/scripts.pory"
 	msgbox MoveTutor_EventScript_RagingFuryTeach_Text_0, MSGBOX_DEFAULT
-# 1941 "data/maps/SootopolisCity/scripts.pory"
+# 1954 "data/maps/SootopolisCity/scripts.pory"
 	setvar VAR_0x8005, MOVE_RAGING_FURY
-# 1942 "data/maps/SootopolisCity/scripts.pory"
+# 1955 "data/maps/SootopolisCity/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 1943 "data/maps/SootopolisCity/scripts.pory"
+# 1956 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
-# 1944 "data/maps/SootopolisCity/scripts.pory"
+# 1957 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 MoveTutor_EventScript_ThrashTeach::
-# 1949 "data/maps/SootopolisCity/scripts.pory"
+# 1962 "data/maps/SootopolisCity/scripts.pory"
 	msgbox MoveTutor_EventScript_ThrashTeach_Text_0, MSGBOX_DEFAULT
-# 1950 "data/maps/SootopolisCity/scripts.pory"
+# 1963 "data/maps/SootopolisCity/scripts.pory"
 	setvar VAR_0x8005, MOVE_THRASH
-# 1951 "data/maps/SootopolisCity/scripts.pory"
+# 1964 "data/maps/SootopolisCity/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 1952 "data/maps/SootopolisCity/scripts.pory"
+# 1965 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline
-# 1953 "data/maps/SootopolisCity/scripts.pory"
+# 1966 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_RecoilMovesTutorTaught
 	end
 
 
 SootopolisCity_EventScript_RecoilMovesTutorDecline::
-# 1958 "data/maps/SootopolisCity/scripts.pory"
+# 1971 "data/maps/SootopolisCity/scripts.pory"
 	lock
-# 1959 "data/maps/SootopolisCity/scripts.pory"
+# 1972 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_RecoilMovesTutorDecline_Text_0, MSGBOX_AUTOCLOSE
-# 1961 "data/maps/SootopolisCity/scripts.pory"
+# 1974 "data/maps/SootopolisCity/scripts.pory"
 	waitmessage
-# 1962 "data/maps/SootopolisCity/scripts.pory"
+# 1975 "data/maps/SootopolisCity/scripts.pory"
 	release
 	end
 
 
 SootopolisCity_EventScript_RecoilMovesTutorTaught::
-# 1967 "data/maps/SootopolisCity/scripts.pory"
+# 1980 "data/maps/SootopolisCity/scripts.pory"
 	lock
-# 1968 "data/maps/SootopolisCity/scripts.pory"
+# 1981 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_RecoilMovesTutorTaught_Text_0, MSGBOX_AUTOCLOSE
-# 1970 "data/maps/SootopolisCity/scripts.pory"
+# 1983 "data/maps/SootopolisCity/scripts.pory"
 	waitmessage
-# 1971 "data/maps/SootopolisCity/scripts.pory"
+# 1984 "data/maps/SootopolisCity/scripts.pory"
+	release
+	end
+
+
+SootopolisCity_EventScript_PainSplitTutor::
+# 1989 "data/maps/SootopolisCity/scripts.pory"
+	lock
+# 1990 "data/maps/SootopolisCity/scripts.pory"
+	faceplayer
+# 1991 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_set FLAG_TALKED_TO_PAIN_SPLIT_TUTOR, SootopolisCity_EventScript_PainSplitTutor2
+# 1992 "data/maps/SootopolisCity/scripts.pory"
+	msgbox SootopolisCity_EventScript_PainSplitTutor_Text_0, MSGBOX_YESNO
+# 2000 "data/maps/SootopolisCity/scripts.pory"
+	waitmessage
+# 2001 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach
+# 2002 "data/maps/SootopolisCity/scripts.pory"
+	goto SootopolisCity_EventScript_PainSplitTutorDecline
+# 2003 "data/maps/SootopolisCity/scripts.pory"
+	release
+	end
+
+
+SootopolisCity_EventScript_PainSplitTutor2::
+# 2008 "data/maps/SootopolisCity/scripts.pory"
+	lock
+# 2009 "data/maps/SootopolisCity/scripts.pory"
+	faceplayer
+# 2010 "data/maps/SootopolisCity/scripts.pory"
+	msgbox SootopolisCity_EventScript_PainSplitTutor2_Text_0, MSGBOX_YESNO
+# 2013 "data/maps/SootopolisCity/scripts.pory"
+	waitmessage
+# 2014 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach
+# 2015 "data/maps/SootopolisCity/scripts.pory"
+	goto SootopolisCity_EventScript_PainSplitTutorDecline
+# 2016 "data/maps/SootopolisCity/scripts.pory"
+	release
+	end
+
+
+MoveTutor_EventScript_PainSplitTeach::
+# 2021 "data/maps/SootopolisCity/scripts.pory"
+	msgbox MoveTutor_EventScript_PainSplitTeach_Text_0, MSGBOX_DEFAULT
+# 2022 "data/maps/SootopolisCity/scripts.pory"
+	setvar VAR_0x8005, MOVE_PAIN_SPLIT
+# 2023 "data/maps/SootopolisCity/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 2024 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_PainSplitTutorDecline
+# 2025 "data/maps/SootopolisCity/scripts.pory"
+	goto SootopolisCity_EventScript_PainSplitTutorDecline
+	end
+
+
+SootopolisCity_EventScript_PainSplitTutorDecline::
+# 2030 "data/maps/SootopolisCity/scripts.pory"
+	lock
+# 2031 "data/maps/SootopolisCity/scripts.pory"
+	msgbox SootopolisCity_EventScript_PainSplitTutorDecline_Text_0, MSGBOX_AUTOCLOSE
+# 2033 "data/maps/SootopolisCity/scripts.pory"
+	waitmessage
+# 2034 "data/maps/SootopolisCity/scripts.pory"
 	release
 	end
 
@@ -3939,92 +4031,116 @@ SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_6:
 
 SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_7:
 # 1750 "data/maps/SootopolisCity/scripts.pory"
+	.string "HIGH JUMP KICK$"
+
+SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_8:
+# 1750 "data/maps/SootopolisCity/scripts.pory"
 	.string "DOUBLE EDGE$"
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_Text_0:
-# 1777 "data/maps/SootopolisCity/scripts.pory"
+# 1779 "data/maps/SootopolisCity/scripts.pory"
 	.string "WAVE CRASH$"
 
 SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9_Text_1:
-# 1777 "data/maps/SootopolisCity/scripts.pory"
+# 1779 "data/maps/SootopolisCity/scripts.pory"
 	.string "SUPERCELL SLAM$"
 
 MoveTutor_EventScript_FlareBlitzTeach_Text_0:
-# 1806 "data/maps/SootopolisCity/scripts.pory"
+# 1810 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach FLARE BLITZ to?$"
 
 MoveTutor_EventScript_WildChargeTeach_Text_0:
-# 1815 "data/maps/SootopolisCity/scripts.pory"
+# 1819 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach WILD CHARGE to?$"
 
 MoveTutor_EventScript_HeadSmashTeach_Text_0:
-# 1824 "data/maps/SootopolisCity/scripts.pory"
+# 1828 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach HEAD SMASH to?$"
 
 MoveTutor_EventScript_WoodHammerTeach_Text_0:
-# 1833 "data/maps/SootopolisCity/scripts.pory"
+# 1837 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach WOOD HAMMER to?$"
 
 MoveTutor_EventScript_SelfDestructTeach_Text_0:
-# 1842 "data/maps/SootopolisCity/scripts.pory"
+# 1846 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach SELF DESTRUCT to?$"
 
 MoveTutor_EventScript_BraveBirdSootopolisTeach_Text_0:
-# 1851 "data/maps/SootopolisCity/scripts.pory"
+# 1855 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach BRAVE BIRD to?$"
 
+MoveTutor_EventScript_HighJumpKickTeach_Text_0:
+# 1864 "data/maps/SootopolisCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach HIGH JUMP KICK to?$"
+
+MoveTutor_EventScript_DoubleEdgeTeach_Text_0:
+# 1873 "data/maps/SootopolisCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach DOUBLE EDGE to?$"
+
 MoveTutor_EventScript_WaveCrashTeach_Text_0:
-# 1860 "data/maps/SootopolisCity/scripts.pory"
+# 1882 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach WAVE CRASH to?$"
 
 MoveTutor_EventScript_SupercellSlamTeach_Text_0:
-# 1869 "data/maps/SootopolisCity/scripts.pory"
+# 1891 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach SUPERCELL SLAM to?$"
 
-MoveTutor_EventScript_DoubleEdgeTeach_Text_0:
-# 1878 "data/maps/SootopolisCity/scripts.pory"
-	.string "Which POKéMON do you want to\nteach DOUBLE EDGE to?$"
-
 SootopolisCity_EventScript_FatigueMovesTutor_Text_0:
-# 1889 "data/maps/SootopolisCity/scripts.pory"
+# 1902 "data/maps/SootopolisCity/scripts.pory"
 	.string "Hey, Ace!\n I'm ready to go THRASH!\p If you want, I can teach your POKéMON\n some thrashing moves too!$"
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_0:
-# 1903 "data/maps/SootopolisCity/scripts.pory"
+# 1916 "data/maps/SootopolisCity/scripts.pory"
 	.string "OUTRAGE$"
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_1:
-# 1903 "data/maps/SootopolisCity/scripts.pory"
+# 1916 "data/maps/SootopolisCity/scripts.pory"
 	.string "PETAL DANCE$"
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_2:
-# 1903 "data/maps/SootopolisCity/scripts.pory"
+# 1916 "data/maps/SootopolisCity/scripts.pory"
 	.string "RAGING FURY$"
 
 SootopolisCity_EventScript_FatigueMovesTutorChoices_Text_3:
-# 1903 "data/maps/SootopolisCity/scripts.pory"
+# 1916 "data/maps/SootopolisCity/scripts.pory"
 	.string "THRASH$"
 
 MoveTutor_EventScript_OutrageTeach_Text_0:
-# 1922 "data/maps/SootopolisCity/scripts.pory"
+# 1935 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach OUTRAGE to?$"
 
 MoveTutor_EventScript_PetalDanceTeach_Text_0:
-# 1931 "data/maps/SootopolisCity/scripts.pory"
+# 1944 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach PETAL DANCE to?$"
 
 MoveTutor_EventScript_RagingFuryTeach_Text_0:
-# 1940 "data/maps/SootopolisCity/scripts.pory"
+# 1953 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach RAGING FURY to?$"
 
 MoveTutor_EventScript_ThrashTeach_Text_0:
-# 1949 "data/maps/SootopolisCity/scripts.pory"
+# 1962 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach THRASH to?$"
 
 SootopolisCity_EventScript_RecoilMovesTutorDecline_Text_0:
-# 1959 "data/maps/SootopolisCity/scripts.pory"
+# 1972 "data/maps/SootopolisCity/scripts.pory"
 	.string "Don't be afraid of a little pain!\n High risk, high reward!$"
 
 SootopolisCity_EventScript_RecoilMovesTutorTaught_Text_0:
-# 1968 "data/maps/SootopolisCity/scripts.pory"
+# 1981 "data/maps/SootopolisCity/scripts.pory"
 	.string "High risk, high reward!\n Come back if you have more POKéMON!$"
+
+SootopolisCity_EventScript_PainSplitTutor_Text_0:
+# 1992 "data/maps/SootopolisCity/scripts.pory"
+	.string "Hey.\n See those two idiots over there?\l They're my brothers.\p They always yap about powering through\n the pain, but you gotta know how\l to handle it.\p I can teach your POKéMON how to\n handle pain, if you want.$"
+
+SootopolisCity_EventScript_PainSplitTutor2_Text_0:
+# 2010 "data/maps/SootopolisCity/scripts.pory"
+	.string "Hi again.\n Want to teach your POKéMON how to\n handle some pain?$"
+
+MoveTutor_EventScript_PainSplitTeach_Text_0:
+# 2021 "data/maps/SootopolisCity/scripts.pory"
+	.string "Which POKéMON do you want to\nteach PAIN SPLIT to?$"
+
+SootopolisCity_EventScript_PainSplitTutorDecline_Text_0:
+# 2031 "data/maps/SootopolisCity/scripts.pory"
+	.string "Don't listen to my idiot brothers.\n It's okay to be afraid of pain.$"

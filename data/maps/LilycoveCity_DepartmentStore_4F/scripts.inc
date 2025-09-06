@@ -363,16 +363,16 @@ LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
 
 LilycoveCity_DepartmentStore_4F_Text_EvoItems::
 # 185 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "Welcome!\n I sell a bunch of EVOLUTION items!$"
+	.string "Welcome!\p I sell a bunch of EVOLUTION items!$"
 
 LilycoveCity_DepartmentStore_4F_Text_WeatherItems::
 # 190 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "Welcome!\n Get your field setting items here!$"
+	.string "Welcome!\p Get your field setting items here!$"
 
 LilycoveCity_DepartmentStore_4F_Text_HoldItems::
 # 195 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "I got MUST-HAVE hold items for sale!\n Guaranteed to upgrade your battling!$"
+	.string "Welcome, welcome!\p I got MUST-HAVE hold items for sale!\n Guaranteed to upgrade your battling!$"
 
 LilycoveCity_DepartmentStore_4F_Text_TMs::
-# 200 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 201 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "TMs! Get your TMs here!\n We have tons of rare TMs!$"

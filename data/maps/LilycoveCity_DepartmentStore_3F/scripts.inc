@@ -281,16 +281,16 @@ LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon:
 
 LilycoveCity_DepartmentStore_3F_GetYourTypeBoosting::
 # 143 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
-	.string "Welcome!\nGet your TYPE boosting items here!$"
+	.string "Welcome!\pGet your TYPE boosting items here!$"
 
 LilycoveCity_DepartmentStore_3F_ItemsForSpecificPokemon::
 # 147 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
-	.string "Welcome!\nI got items for specific POKéMON!$"
+	.string "Welcome!\pI got items for specific POKéMON!$"
 
 LilycoveCity_DepartmentStore_3F_StatBoosters::
 # 151 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
-	.string "Welcome!\nGet your STAT BOOSTERS here!$"
+	.string "Welcome!\pGet your STAT BOOSTERS here!$"
 
 LilycoveCity_DepartmentStore_3F_GetYourMints::
 # 156 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
-	.string "Welcome!\nGet your NATURE MINTS here!$"
+	.string "Welcome!\pGet your NATURE MINTS here!$"
