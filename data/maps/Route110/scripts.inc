@@ -2435,7 +2435,7 @@ Route110_Text_PolicemanThankYou::
 
 Route110_Text_PolicemanThankYou2::
 # 1169 "data/maps/Route110/scripts.pory"
-	.string "Well, I need to go file a report\n and help gather forces to hunt down\l all the bikers that got away.\p Take care.$"
+	.string "Well, I need to go file a report\n and help gather forces to hunt down\l all the BIKERS that got away.\p Take care.$"
 
 Route110_Biker_Intro::
 # 1185 "data/maps/Route110/scripts.pory"

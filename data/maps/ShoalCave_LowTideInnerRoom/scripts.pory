@@ -188,10 +188,10 @@ text ShoalCave_LowTideInnerRoom_Text_DaquaviusIntro{
 }
 
 text ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat{
-    "Look like I need more training…"
+    "Looks like I need more training…"
 }
 
 text ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle{
     "The GYM LEADER has powerful fists!\n
-    I gotta train even more!"
+    I must train even more!"
 }

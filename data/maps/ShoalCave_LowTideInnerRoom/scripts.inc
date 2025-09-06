@@ -329,8 +329,8 @@ ShoalCave_LowTideInnerRoom_Text_DaquaviusIntro::
 
 ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat::
 # 190 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "Look like I need more training…$"
+	.string "Looks like I need more training…$"
 
 ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle::
 # 194 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "The GYM LEADER has powerful fists!\n I gotta train even more!$"
+	.string "The GYM LEADER has powerful fists!\n I must train even more!$"

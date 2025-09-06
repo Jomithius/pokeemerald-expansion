@@ -426,15 +426,15 @@ MossdeepCity_Gym_Text_HannahDefeat:
 	.string "You're just too strong!$"
 
 MossdeepCity_Gym_Text_HannahPostBattle:
-	.string "I heard there's a dojo in DEWFORD\n"
-	.string "TOWN with a super strong mentor.\p"
-    .string "I'm think about training there.$"
+	.string "I heard there's a dojo to the NORTH\n"
+	.string "with a super strong sensei.\p"
+    .string "I'm thinking about training there.$"
 
 MossdeepCity_Gym_Text_SamanthaIntro:
-	.string "All I wanna do is PUNCH!$"
+	.string "All I wanna do is FIST!$"
 
 MossdeepCity_Gym_Text_SamanthaDefeat:
-	.string "I surrender!$"
+	.string "I mean PUNCH!$"
 
 MossdeepCity_Gym_Text_SamanthaPostBattle:
 	.string "I learned how to fight from MOMO.\p"
@@ -461,7 +461,7 @@ MossdeepCity_Gym_Text_SylviaIntro:
 	.string "back in SHOAL CAVE!$"
 
 MossdeepCity_Gym_Text_SylviaDefeat:
-	.string "AH!$"
+	.string "MA-AH!$"
 
 MossdeepCity_Gym_Text_SylviaPostBattle:
 	.string "That scream rang through the\n"

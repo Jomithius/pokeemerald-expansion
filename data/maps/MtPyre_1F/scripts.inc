@@ -25,6 +25,15 @@ MtPyre_1F_EventScript_Man::
 	msgbox MtPyre_1F_Text_RestingPlaceOfZigzagoon, MSGBOX_NPC
 	end
 
+MtPyre_1F_EventScript_PokefanM::
+	goto_if_unset FLAG_HIDE_BIKERS_ROUTE_123, MtPyre_1F_EventScript_SpeedwagonHint
+	msgbox MtPyre_1F_Text_ItsBeenQuiet, MSGBOX_NPC
+	end
+
+MtPyre_1F_EventScript_SpeedwagonHint::
+	msgbox MtPyre_1F_Text_HeardMotorcyclesRoute123, MSGBOX_NPC
+	end
+
 MtPyre_1F_Text_TakeThisForYourOwnGood:
 	.string "All sorts of beings wander the slopes\n"
 	.string "of MT. PYRE…\p"
@@ -45,3 +54,14 @@ MtPyre_1F_Text_RestingPlaceOfZigzagoon:
 	.string "This is the final resting place of my\n"
 	.string "ZIGZAGOON. I cherished it…$"
 
+MtPyre_1F_Text_ItsBeenQuiet:
+	.string "It's been much quieter lately.\n"
+	.string "Did those BIKERS leave?\p"
+	.string "Now the people can mourn their\n"
+	.string "lost POKéMON in peace.$"
+
+MtPyre_1F_Text_HeardMotorcyclesRoute123:
+	.string "Lately there's been loud motorcyles\n"
+	.string "to the south of here.\p"
+	.string "They're disturbing the people\n"
+	.string "mourning their POKéMON.$"

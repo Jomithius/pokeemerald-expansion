@@ -131,7 +131,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle{
 	goto_if_eq(VAR_RESULT, YES, EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning)
 	msgbox("…\p
 		You know, I also heard about what\n
-		you did to that biker gang.\p
+		you did to that BIKER gang.\p
 		Just so you know… my brother was one\n
 		of the people you helped lock up.", MSGBOX_AUTOCLOSE)
 	waitmessage
@@ -179,7 +179,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
 	playbgm(MUS_ENCOUNTER_CHAMPION, FALSE)
 	msgbox("…\p
 		You know, I also heard about what\n
-		you did to that biker gang.\p
+		you did to that BIKER gang.\p
 		Just so you know… my brother was one\n
 		of the people you helped lock up.", MSGBOX_AUTOCLOSE)
 	waitmessage

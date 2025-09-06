@@ -307,9 +307,9 @@ script WachunpelonCity_EventScript_PolicemanEast{
 text WachunpelonCity_Text_Policeman1{
     "It's you! Thanks again for your help on\n
     ROUTE 110.\p
-    Most of the bikers have been arrested\n
-    already.\l
-    Only the boss along with a couple of\l
+    Most of the BIKERS have been arrested\n
+    already.\p
+    Only the boss along with a couple of\n
     members are left now, and I've tracked\l
     them to their hideout here.\p
     Backup's actually coming this time, but\n
@@ -327,8 +327,8 @@ text WachunpelonCity_Text_PolicemanBikersRoute123{
     I heard you drove those thugs away from\n
     ROUTE 123 as well.\p
     Most of them have been arrested\n
-    already.\l
-    Only the boss along with a couple of\l
+    already.\p
+    Only the boss along with a couple of\n
     members are left now, and I've tracked\l
     them to their hideout here.\p
     Backup's actually coming this time, but\n
@@ -342,7 +342,7 @@ text WachunpelonCity_Text_PolicemanBikersRoute123{
 
 text WachunpelonCity_Text_PolicemanNo{
     "Come on. You've already helped me\n
-    on this case before.\l
+    on this case before.\p
     This will be the last time."
 }
 

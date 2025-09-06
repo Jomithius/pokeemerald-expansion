@@ -602,15 +602,15 @@ WachunpelonCity_EventScript_Cook_Text_1:
 
 WachunpelonCity_Text_Policeman1::
 # 307 "data/maps/WachunpelonCity/scripts.pory"
-	.string "It's you! Thanks again for your help on\n ROUTE 110.\p Most of the bikers have been arrested\n already.\l Only the boss along with a couple of\l members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
+	.string "It's you! Thanks again for your help on\n ROUTE 110.\p Most of the BIKERS have been arrested\n already.\p Only the boss along with a couple of\n members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
 
 WachunpelonCity_Text_PolicemanBikersRoute123::
 # 324 "data/maps/WachunpelonCity/scripts.pory"
-	.string "It's you! Thanks again for your help on\n ROUTE 110.\p I heard you drove those thugs away from\n ROUTE 123 as well.\p Most of them have been arrested\n already.\l Only the boss along with a couple of\l members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
+	.string "It's you! Thanks again for your help on\n ROUTE 110.\p I heard you drove those thugs away from\n ROUTE 123 as well.\p Most of them have been arrested\n already.\p Only the boss along with a couple of\n members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
 
 WachunpelonCity_Text_PolicemanNo::
 # 343 "data/maps/WachunpelonCity/scripts.pory"
-	.string "Come on. You've already helped me\n on this case before.\l This will be the last time.$"
+	.string "Come on. You've already helped me\n on this case before.\p This will be the last time.$"
 
 WachunpelonCity_Text_Policeman2::
 # 349 "data/maps/WachunpelonCity/scripts.pory"

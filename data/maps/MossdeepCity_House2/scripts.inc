@@ -55,7 +55,7 @@ MossdeepCity_House2_Movement_WingullExitEast:
 
 MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree:
 	.string "My little sister exchanges MAIL with\n"
-	.string "her boyfriend in FORTREE.\p"
+	.string "her friend in FORTREE.\p"
 	.string "I don't envy her one bit at all.$"
 
 MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth:

@@ -457,7 +457,7 @@ EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_1:
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_2:
 # 132 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	.string "…\p You know, I also heard about what\n you did to that biker gang.\p Just so you know… my brother was one\n of the people you helped lock up.$"
+	.string "…\p You know, I also heard about what\n you did to that BIKER gang.\p Just so you know… my brother was one\n of the people you helped lock up.$"
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_3:
 # 145 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"

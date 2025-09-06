@@ -174,8 +174,10 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setvar VAR_MAUVILLE_CITY_STATE, 1
-	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
+	setvar VAR_MISA_STATE, 7
+	clearflag FLAG_HIDE_EMO_LILYCOVE
+	warp MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM, 11, 17
+	waitstate
 	release
 	end
 

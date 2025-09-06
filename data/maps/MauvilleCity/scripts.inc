@@ -2474,4 +2474,4 @@ MauvilleCity_Text_Police::
 
 MauvilleCity_Text_WomanBikersRoute110::
 # 941 "data/maps/MauvilleCity/scripts.pory"
-	.string "A biker gang took over the CYCLING\n ROAD!\l That poor policeman is outnumbered!$"
+	.string "A BIKER gang took over the CYCLING\n ROAD!\l That poor policeman is outnumbered!$"

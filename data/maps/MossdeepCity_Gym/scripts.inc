@@ -855,23 +855,23 @@ MossdeepCity_Gym_Text_HannahDefeat:
 # 428 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_HannahPostBattle:
 # 429 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "I heard there's a dojo in DEWFORD\n"
+	.string "I heard there's a dojo to the NORTH\n"
 # 430 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TOWN with a super strong mentor.\p"
+	.string "with a super strong sensei.\p"
 # 431 "data/maps/MossdeepCity_Gym/scripts.pory"
-    .string "I'm think about training there.$"
+    .string "I'm thinking about training there.$"
 # 432 "data/maps/MossdeepCity_Gym/scripts.pory"
 
 # 433 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_SamanthaIntro:
 # 434 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "All I wanna do is PUNCH!$"
+	.string "All I wanna do is FIST!$"
 # 435 "data/maps/MossdeepCity_Gym/scripts.pory"
 
 # 436 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_SamanthaDefeat:
 # 437 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "I surrender!$"
+	.string "I mean PUNCH!$"
 # 438 "data/maps/MossdeepCity_Gym/scripts.pory"
 
 # 439 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -925,7 +925,7 @@ MossdeepCity_Gym_Text_SylviaIntro:
 # 463 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_SylviaDefeat:
 # 464 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "AH!$"
+	.string "MA-AH!$"
 # 465 "data/maps/MossdeepCity_Gym/scripts.pory"
 
 # 466 "data/maps/MossdeepCity_Gym/scripts.pory"

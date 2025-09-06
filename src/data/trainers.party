@@ -5484,7 +5484,7 @@ Mugshot: Blue
 
 Poliwrath (M) @ Blunder Policy  
 Ability: Swift Swim  
-Level: 52  
+Level: 55
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Substitute  
@@ -5494,7 +5494,7 @@ Adamant Nature
 
 Politoed (M) @ Eject Button  
 Ability: Drizzle  
-Level: 52  
+Level: 55  
 Shiny: Yes  
 EVs: 252 HP / 212 Def / 44 SpA  
 Bold Nature  
@@ -5506,7 +5506,7 @@ IVs: 0 Atk
 
 Greninja (M) @ Life Orb  
 Ability: Protean  
-Level: 52  
+Level: 55  
 EVs: 84 HP / 28 Def / 252 SpA / 4 SpD / 140 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -5517,7 +5517,7 @@ IVs: 0 Atk
 
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  
-Level: 52 
+Level: 55 
 EVs: 16 HP / 244 SpA / 248 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -5528,7 +5528,7 @@ IVs: 0 Atk
 
 Pikachu (F) @ Light Ball  
 Ability: Lightning Rod  
-Level: 52  
+Level: 55  
 EVs: 8 HP / 252 SpA / 244 Spe  
 Timid Nature  
 - Nasty Plot  
@@ -5538,7 +5538,7 @@ Timid Nature
 
 Goodra (M) @ Damp Rock  
 Ability: Hydration  
-Level: 52 
+Level: 55 
 EVs: 252 HP / 212 Def / 44 SpA  
 Quiet Nature  
 - Rest  
@@ -5836,7 +5836,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Bastiodon (M)
-Level: 49
+Level: 52
 
 === TRAINER_BLAKE_SHOAL_CAVE ===
 Name: BLAKE
@@ -5848,7 +5848,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Rampardos (M)
-Level: 49
+Level: 52
 
 === TRAINER_KAREN_1 ===
 Name: KAREN
@@ -10263,7 +10263,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Honedge
-Level: 48
+Level: 52
 
 === TRAINER_BINGLETON ===
 Name: BINGLETON
@@ -12197,8 +12197,15 @@ Adamant Nature
 - Lunge  
 - Seed Bomb  
 
-Vibrava (M) @ Eviolite 
+Vibrava (M) @ Eviolite  
+Ability: Levitate  
 Level: 50 
+EVs: 252 HP  
+IVs: 0 Atk  
+- Giga Drain  
+- Dragon Pulse  
+- Scorching Sands  
+- Bug Buzz
 
 Excadrill (M) @ Metal Coat
 Ability: Mold Breaker  
@@ -25186,7 +25193,7 @@ Mugshot: Blue
 
 Poliwrath (M)
 Ability: Swift Swim  
-Level: 52  
+Level: 55  
 Adamant Nature  
 - Substitute  
 - Dynamic Punch  
@@ -25195,7 +25202,7 @@ Adamant Nature
 
 Politoed (M) @ Eject Button  
 Ability: Drizzle  
-Level: 52 
+Level: 55
 Shiny: Yes  
 Bold Nature  
 IVs: 0 Atk  
@@ -25206,7 +25213,7 @@ IVs: 0 Atk
 
 Greninja (M) 
 Ability: Torrent  
-Level: 52 
+Level: 55 
 Modest Nature  
 IVs: 0 Atk  
 - Surf  
@@ -25216,7 +25223,7 @@ IVs: 0 Atk
 
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  
-Level: 52 
+Level: 55 
 Modest Nature  
 IVs: 0 Atk  
 - Hurricane  
@@ -25226,7 +25233,7 @@ IVs: 0 Atk
 
 Pikachu (F) @ Light Ball  
 Ability: Lightning Rod  
-Level: 52  
+Level: 55  
 Timid Nature  
 - Nasty Plot  
 - Discharge  
@@ -25235,7 +25242,7 @@ Timid Nature
 
 Goodra (M) @ Damp Rock  
 Ability: Gooey  
-Level: 52    
+Level: 55    
 Quiet Nature  
 - Rest  
 - Rain Dance  
@@ -25517,7 +25524,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Bastiodon (M)
-Level: 49
+Level: 52
 
 === TRAINER_BLAKE_SHOAL_CAVE ===
 Name: BLAKE
@@ -25530,7 +25537,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Rampardos (M)
-Level: 49
+Level: 52
 
 === TRAINER_KAREN_1 ===
 Name: KAREN
@@ -30166,7 +30173,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Honedge
-Level: 48
+Level: 52
 
 === TRAINER_BINGLETON ===
 Name: BINGLETON
@@ -32129,7 +32136,13 @@ Adamant Nature
 - Seed Bomb  
 
 Vibrava (M) @ Eviolite  
-Level: 49 
+Ability: Levitate  
+Level: 49  
+IVs: 0 Atk  
+- Giga Drain  
+- Dragon Pulse  
+- Scorching Sands  
+- Bug Buzz
 
 Excadrill (M) @ Metal Coat
 Ability: Mold Breaker  

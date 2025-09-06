@@ -38,6 +38,9 @@ script ShoalCave_LowTideIceRoom_Trigger_Aria{
 
 script ShoalCave_LowTideIceRoom_EventScript_Aria{
     lock
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
     getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
     playbgm(MUS_NONE, FALSE)
     delay(20)
@@ -75,6 +78,7 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
     removeobject(5)
     removeobject(6)
     fadescreenspeed(FADE_FROM_BLACK, 2)
+    callnative(UpdateFollowingPokemon)
     setflag(FLAG_HIDE_ARIA_SHOAL_CAVE)
     setvar(VAR_MOMO_ARIA_STATE, 1)
     setflag(FLAG_HIDE_MISA_LILYCOVE_DEPT_5F) // if player misses Misa in Lilycove
@@ -202,18 +206,18 @@ text ShoalCave_LowTideIceRoom_Text_BlakePostBattle{
 text ShoalCave_LowTideIceRoom_Text_NateIntro{
     "The greatest'th offense'th be a great\n
     defense!\p
-    Dost thoust agree'th?"
+    Doth thoust agree'th?"
 }
 
 text ShoalCave_LowTideIceRoom_Text_NateDefeat{
-    "Thoust'th broketh thru'th thine\p
+    "Thoust'th broketh thru'th thine\n
     defenses'th'snt'nt…"
 }
 
 text ShoalCave_LowTideIceRoom_Text_NatePostBattle{
     "I surmise thoust seeketh to joineth\n
     the PROTECTORS? If'th so, thou must\l
-    speaketh to thine commander."
+    speaketh to the KNIGHT commander."
 }
 
 text ShoalCave_LowTideIceRoom_Text_Aria1{

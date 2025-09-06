@@ -939,7 +939,7 @@ script MauvilleCity_EventScript_Bikers_WomanWarn{
 }
 
 text MauvilleCity_Text_WomanBikersRoute110{
-	"A biker gang took over the CYCLING\n
+	"A BIKER gang took over the CYCLING\n
 	ROAD!\l
 	That poor policeman is outnumbered!"
 }

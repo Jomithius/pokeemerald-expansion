@@ -342,7 +342,7 @@ MossdeepCity_Text_WhatToDoWithWeirdRock:
 MossdeepCity_Text_WailmerWatching:
 	.string "The GYM LEADER here wears a\n"
 	.string "real suit of armor!\p"
-	.string "My Mom said they have to wear it\n"
+	.string "My mom said they have to wear it\n"
 	.string "to protect their glass bones!\p"
 	.string "Hahaha! How can they train\n"
 	.string "so much with glass bones?$"
@@ -756,11 +756,11 @@ text MossdeepCity_Text_RecoverTeach{
 text MossdeepCity_Text_GymLeaderGone{
     "Well met, challenger. Here to take on\n
     the GYM, I presume.\p
-    The KNIGHT commander has left with their\n
-    Order to train in SHOAL CAVE.\p
-    You'll have to wait until they return,\n
-    unless you're brave enough to go\l
-	get them yourself…"
+    The KNIGHT commander has left with the\n
+    PROTECTORS to train in SHOAL CAVE.\l
+    You'll have to wait until they return.\p
+    That is, unless you're brave enough\n
+	to go get them yourself…"
 }
 
 movement MossdeepCity_Movement_MomoClone{
@@ -777,8 +777,8 @@ movement MossdeepCity_Movement_MomoClone2{
 script MossdeepCity_EventScript_PunchesTutor{
 	lock
 	faceplayer
-	msgbox("They called me the fisting avatar in my\n
-		prime because of my elemental fists.\p
+	msgbox("They called me the FISTING AVATAR in\n
+		my prime because of my elemental fists.\p
 		I can teach your POKéMON how to\n
 		fist too, if you'd like.", MSGBOX_YESNO)
 	waitmessage
@@ -791,7 +791,7 @@ script MossdeepCity_EventScript_PunchesTutor{
 script MossdeepCity_EventScript_PunchesTutorChoices{
 	lock
 	msgbox("Which punch do you want me\nto teach?", MSGBOX_DEFAULT)
-	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FIRE PUNCH", "ICE PUNCH", "THUNDER PUNCH", "BULLET PUNCH", "SUCKER PUNCH")
+	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FIRE PUNCH", "ICE PUNCH", "THUNDER PUNCH", "BULLET PUNCH", "SUCKER PUNCH", "FAKE OUT")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_FirePunchTeach)
@@ -803,6 +803,8 @@ script MossdeepCity_EventScript_PunchesTutorChoices{
 			goto(MoveTutor_EventScript_BulletPunchTeach)
 		case 4:
 			goto(MoveTutor_EventScript_SuckerPunchTeach)
+		case 5:
+			goto(MoveTutor_EventScript_FakeOutTeach)
 		case MULTI_B_PRESSED:
 			goto(MossdeepCity_EventScript_PunchesTutorDecline)
 		default:
@@ -856,6 +858,14 @@ script MoveTutor_EventScript_SuckerPunchTeach{
 	end
 }
 
+script MoveTutor_EventScript_FakeOutTeach{
+	msgbox("Which POKéMON do you want to\nteach FAKE OUT to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_FAKE_OUT)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline)
+	goto(MossdeepCity_EventScript_PunchesTutorTaught)
+	end
+}
 
 script MossdeepCity_EventScript_PunchesTutorDecline{
 	lock

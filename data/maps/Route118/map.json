@@ -414,7 +414,7 @@
       "x": 12,
       "y": 14,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
+      "item": "ITEM_BIG_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_HEART_SCALE"
     }
   ]
