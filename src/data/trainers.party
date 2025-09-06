@@ -5507,7 +5507,7 @@ IVs: 0 Atk
 Greninja (M) @ Life Orb  
 Ability: Protean  
 Level: 55  
-EVs: 84 HP / 28 Def / 252 SpA / 4 SpD / 140 Spe  
+EVs: 168 HP / 28 Def / 168 SpA / 4 SpD / 140 Spe  
 Modest Nature  
 IVs: 0 Atk  
 - Surf  
@@ -5539,7 +5539,7 @@ Timid Nature
 Goodra (M) @ Damp Rock  
 Ability: Hydration  
 Level: 55 
-EVs: 252 HP / 212 Def / 44 SpA  
+EVs: 252 HP / 212 Def / 44 Atk  
 Quiet Nature  
 - Rest  
 - Rain Dance  
@@ -18336,7 +18336,7 @@ Careful Nature
 === TRAINER_JIMMY ===
 Name: JIMMY
 Class: Ceo
-Pic: Champion Wallace
+Pic: Ceo
 Gender: Male
 Music: Male
 Double Battle: No
@@ -25224,7 +25224,7 @@ IVs: 0 Atk
 Noivern (F) @ Heavy-Duty Boots  
 Ability: Telepathy  
 Level: 55 
-Modest Nature  
+Serious Nature  
 IVs: 0 Atk  
 - Hurricane  
 - Dragon Pulse  
@@ -38338,7 +38338,7 @@ Careful Nature
 === TRAINER_JIMMY ===
 Name: JIMMY
 Class: Ceo
-Pic: Champion Wallace
+Pic: Ceo
 Gender: Male
 Music: Male
 Double Battle: No
@@ -38346,12 +38346,12 @@ AI: Basic Trainer Ace
 Difficulty: Easy
 Mugshot: Purple
 
-Garganacl @ Leftovers  
+Garganacl @ Leftovers
 Ability: Purifying Salt  
 Impish Nature  
 - Stealth Rock  
 - Salt Cure  
-- Recover  
+- Explosion  
 - Earthquake
 
 Typhlosion (M) @ Typhlosionite

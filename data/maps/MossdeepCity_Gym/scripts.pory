@@ -541,16 +541,16 @@ MossdeepCity_Gym_Text_TateAndLizaIntro:
 	.string "ARIA: We might not look like it, but\n"
 	.string "we have really good teamwork.\p"
 	.string "MOMO: …\p"
-	.string "ARIA: Uh…\l"
-    .string "Prepare yourself, challenger!\n"
-    .string "By the power of my SACRED BLADE, I shall-\p"
+	.string "ARIA: Um…\p"
+    .string "P-Prepare yourself, challenger!\n"
+    .string "By the power of the SACRED BLADE, I-\p"
     .string "MOMO: … Can you stop talking so we\n"
     .string "can battle already?$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
-	.string "ARIA: Ah… I-Impossible…\n"
+	.string "ARIA: Ah… I-Impossible…!\n"
 	.string "MOMO: …\p"
-	.string "ARIA: Your… P-Power was too much for me…\p"
+	.string "ARIA: Your… P-Power was too much…\p"
 	.string "MOMO: Can you stop talking?\n"
 	.string "……… Here, {PLAYER}.$"
 
@@ -559,15 +559,15 @@ MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "from MOMO and ARIA.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
-	.string "ARIA: You have to tell them what\n"
-	.string "the badge does.\p"
-	.string "MOMO: … Use your brain. Take this too.$"
+	.string "ARIA: MOMO, you have to tell them\n"
+	.string "what the badge does.\p"
+	.string "MOMO: … Figure it out.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "ARIA: W-Wow! That TM04 contains\n"
     .string "CALM MIND! It raises SP. ATK and\l"
 	.string "SP. DEF! As expected of the mentor!\p"
-	.string "MOMO: … Can you stop? Here.$"
+	.string "MOMO: … Can you stop? Here, {PLAYER}.$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 	.string "Registered GYM LEADERS MOMO & ARIA\n"

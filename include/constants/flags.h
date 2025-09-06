@@ -1276,9 +1276,9 @@
 #define FLAG_MIMIKYU_TOTEM                                          0x4C6 // Mt Pyre Summit
 #define FLAG_VIKAVOLT_TOTEM                                         0x4C7 // Route 120
 #define FLAG_KOMMO_O_TOTEM                                          0x4C8 // Victory Road
-#define FLAG_ARAQUANID_TOTEM                                        0x4C9 // unused
-#define FLAG_BALDESIA_MINI_GAME_START                               0x4CA // To start Minigame in Baldesia
-#define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
+#define FLAG_ARAQUANID_TOTEM                                        0x4C9 // Route 117
+#define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
+#define FLAG_MIRAGE_TOWER_LINKING_CABLE                             0x4CB // Mirage Tower or New Mauville
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_METEORITE                      0x4CC // Meteor Falls
 #define FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM                             0x4CD // For Eugenia Superboss
 #define FLAG_HIDE_GYM_LEADERS                                       0x4CE // For postgame when gym leaders are out
@@ -1402,7 +1402,7 @@
 #define FLAG_SYS_SAFARI_MODE                        (SYSTEM_FLAGS + 0x2C)
 #define FLAG_SYS_CRUISE_MODE                        (SYSTEM_FLAGS + 0x2D)
 
-#define FLAG_RECEIVED_BIG_NUGGETS                   (SYSTEM_FLAGS + 0x2E) // Unused Flag
+#define FLAG_RECEIVED_BIG_NUGGETS                   (SYSTEM_FLAGS + 0x2E) // Devon Corp after delivering letter
 #define FLAG_RECEIVED_FANTASIA                      (SYSTEM_FLAGS + 0x2F) // From Dave Mt. Pyre
 
 #define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30)
@@ -1551,9 +1551,9 @@
 #define FLAG_SYS_DEFEATED_JAMES                     (SYSTEM_FLAGS + 0xAF) // James Final Battle
 #define FLAG_SYS_UNLOCKED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB0) // For Unlocking Area Zero since it can unlocked thru Red or Cynthia
 #define FLAG_SYS_DEFEATED_CYNTHIA                   (SYSTEM_FLAGS + 0xB1) // For unlocking area zero
-#define FLAG_SYS_STARTED_AS_BOY                     (SYSTEM_FLAGS + 0xB2) // For Fantasia debugging
-#define FLAG_SYS_STARTED_AS_GIRL                    (SYSTEM_FLAGS + 0xB3) // For Fantasia debugging
-#define FLAG_UNUSED_0x914                           (SYSTEM_FLAGS + 0xB4) // Unused Flag
+#define FLAG_SYS_STARTED_AS_BOY                     (SYSTEM_FLAGS + 0xB2) // For Fantasia debugging (fly and GameClear)
+#define FLAG_SYS_STARTED_AS_GIRL                    (SYSTEM_FLAGS + 0xB3) // For Fantasia debugging (fly and GameClear)
+#define FLAG_BALDESIA_MINI_GAME_START               (SYSTEM_FLAGS + 0xB4) // Ninja Mini Game
 #define FLAG_UNUSED_0x915                           (SYSTEM_FLAGS + 0xB5) // Unused Flag
 #define FLAG_UNUSED_0x916                           (SYSTEM_FLAGS + 0xB6) // Unused Flag
 #define FLAG_UNUSED_0x917                           (SYSTEM_FLAGS + 0xB7) // Unused Flag

@@ -14788,7 +14788,7 @@ F_TRAINER_FEMALE |
 #line 5507
             .heldItem = ITEM_LIFE_ORB,
 #line 5510
-            .ev = TRAINER_PARTY_EVS(84, 0, 28, 140, 252, 4),
+            .ev = TRAINER_PARTY_EVS(168, 0, 28, 140, 168, 4),
 #line 5512
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 5508
@@ -14866,7 +14866,7 @@ F_TRAINER_FEMALE |
 #line 5539
             .heldItem = ITEM_DAMP_ROCK,
 #line 5542
-            .ev = TRAINER_PARTY_EVS(252, 0, 212, 0, 44, 0),
+            .ev = TRAINER_PARTY_EVS(252, 44, 212, 0, 0, 0),
 #line 5544
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 5540
@@ -47885,7 +47885,7 @@ F_TRAINER_FEMALE |
 #line 18338
         .trainerClass = TRAINER_CLASS_CEO,
 #line 18339
-        .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
+        .trainerPic = TRAINER_PIC_CEO,
         .encounterMusic_gender =
 #line 18341
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -66140,7 +66140,7 @@ F_TRAINER_FEMALE |
 #line 25226
             .lvl = 55,
 #line 25227
-            .nature = NATURE_MODEST,
+            .nature = NATURE_SERIOUS,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 25229
@@ -99192,7 +99192,7 @@ F_TRAINER_FEMALE |
 #line 38340
         .trainerClass = TRAINER_CLASS_CEO,
 #line 38341
-        .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
+        .trainerPic = TRAINER_PIC_CEO,
         .encounterMusic_gender =
 #line 38343
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -99224,7 +99224,7 @@ F_TRAINER_FEMALE |
 #line 38352
                 MOVE_STEALTH_ROCK,
                 MOVE_SALT_CURE,
-                MOVE_RECOVER,
+                MOVE_EXPLOSION,
                 MOVE_EARTHQUAKE,
             },
             },

@@ -1840,7 +1840,7 @@ script MoveTutor_EventScript_WoodHammerTeach{
 
 script MoveTutor_EventScript_SelfDestructTeach{
 	msgbox("Which POKéMON do you want to\nteach SELF DESTRUCT to?", MSGBOX_DEFAULT)
-	setvar(VAR_0x8005, MOVE_WOOD_HAMMER)
+	setvar(VAR_0x8005, MOVE_SELF_DESTRUCT)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, SootopolisCity_EventScript_RecoilMovesTutorDecline)
 	goto(SootopolisCity_EventScript_RecoilMovesTutorTaught)

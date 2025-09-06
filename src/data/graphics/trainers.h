@@ -290,7 +290,7 @@ const u32 gTrainerFrontPic_Emo[] = INCBIN_U32("graphics/trainers/front_pics/emo.
 const u32 gTrainerPalette_Emo[] = INCBIN_U32("graphics/trainers/palettes/emo.gbapal.lz");
 
 const u32 gTrainerFrontPic_Ceo[] = INCBIN_U32("graphics/trainers/front_pics/ceo.4bpp.lz");
-const u32 gTrainerPalette_Ceo[] = INCBIN_U32("graphics/trainers/palettes/champion_wallace.gbapal.lz");
+const u32 gTrainerPalette_Ceo[] = INCBIN_U32("graphics/trainers/palettes/ceo.gbapal.lz");
 
 const u32 gTrainerFrontPic_Aria[] = INCBIN_U32("graphics/trainers/front_pics/aria.4bpp.lz");
 const u32 gTrainerPalette_Aria[] = INCBIN_U32("graphics/trainers/palettes/aria.gbapal.lz");
@@ -473,7 +473,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_RATDUARDO, gTrainerFrontPic_Ratduardo, gTrainerPalette_Ratduardo),
     TRAINER_SPRITE(TRAINER_PIC_BENNIS, gTrainerFrontPic_Bennis, gTrainerPalette_Bennis, 0, 7, 0x188),
     TRAINER_SPRITE(TRAINER_PIC_EMO, gTrainerFrontPic_Emo, gTrainerPalette_Emo),
-    TRAINER_SPRITE(TRAINER_PIC_CEO, gTrainerFrontPic_Ceo, gTrainerPalette_Ceo, 0, 5, 0x1A0),
+    TRAINER_SPRITE(TRAINER_PIC_CEO, gTrainerFrontPic_Ceo, gTrainerPalette_Ceo), // 0, 5, 0x1A0
     TRAINER_SPRITE(TRAINER_PIC_ARIA, gTrainerFrontPic_Aria, gTrainerPalette_Aria),
     TRAINER_SPRITE(TRAINER_PIC_MOMO, gTrainerFrontPic_Momo, gTrainerPalette_Momo, -4, 4, 0x1B0),
     TRAINER_SPRITE(TRAINER_PIC_MISA, gTrainerFrontPic_Misa, gTrainerPalette_Misa),
