@@ -114,16 +114,6 @@ LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
 
 `
 
-script LilycoveCity_DepartmentStore_2F_VarTempTrigger{
-    setvar(VAR_TEMP_1, 1)
-    end
-}
-
-script LilycoveCity_DepartmentStore_2F_VarTempTrigger2{
-    setvar(VAR_TEMP_1, 0)
-    end
-}
-
 script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
     lock
     msgbox(LilycoveCity_DepartmentStore_2F_Text_Mae1, MSGBOX_AUTOCLOSE)

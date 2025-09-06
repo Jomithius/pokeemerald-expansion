@@ -1,0 +1,204 @@
+raw`LilycoveCity_DepartmentStore_4F_MapScripts::
+	.byte 0
+
+LilycoveCity_DepartmentStore_4F_EventScript_Gentleman::
+	msgbox LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_Woman::
+	msgbox LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_Youngster::
+	msgbox LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
+	lock
+	faceplayer
+	message LilycoveCity_DepartmentStore_4F_Text_EvoItems
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_EvoItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_EvoItems:
+	.2byte ITEM_LINKING_CORD
+	.2byte ITEM_FIRE_STONE
+	.2byte ITEM_WATER_STONE
+	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_ICE_STONE
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_DAWN_STONE
+	.2byte ITEM_CRACKED_POT
+	.2byte ITEM_CHIPPED_POT
+	.2byte ITEM_GALARICA_CUFF
+	.2byte ITEM_GALARICA_WREATH
+    .2byte ITEM_RAZOR_FANG
+    .2byte ITEM_RAZOR_CLAW
+	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_UPGRADE
+	.2byte ITEM_PROTECTOR
+	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_DUBIOUS_DISC
+	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_WHIPPED_DREAM
+	.2byte ITEM_SACHET
+	.2byte ITEM_OVAL_STONE
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
+	lock
+	faceplayer
+	message LilycoveCity_DepartmentStore_4F_Text_TMs
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
+	.2byte ITEM_TM_PROTECT
+	.2byte ITEM_TM_REFLECT
+	.2byte ITEM_TM_LIGHT_SCREEN
+	.2byte ITEM_TM_FIRE_BLAST
+	.2byte ITEM_TM_THUNDER
+	.2byte ITEM_TM_BLIZZARD
+	.2byte ITEM_TM_HYPER_BEAM
+	.2byte ITEM_TM_FOCUS_BLAST
+	.2byte ITEM_TM_SCALD
+	.2byte ITEM_TM_HIGH_HORSEPOWER
+	.2byte ITEM_TM_STORED_POWER
+	.2byte ITEM_TM_WEATHER_BALL
+	.2byte ITEM_TM_HURRICANE
+	.2byte ITEM_TM_FALSE_SWIPE
+	.2byte ITEM_TM_PARTING_SHOT
+	.2byte ITEM_TM_SEED_BOMB
+	.2byte ITEM_TM_ZEN_HEADBUTT
+	.2byte ITEM_TM_FLASH_CANNON
+	.2byte ITEM_TM_DARK_PULSE
+	.2byte ITEM_TM_TRICK_ROOM
+	.2byte ITEM_TM_ENCORE
+	.2byte ITEM_TM_RAPID_SPIN
+	.2byte ITEM_TM_SPIKES
+	.2byte ITEM_TM_TOXIC_SPIKES
+	.2byte ITEM_TM_PSYCHIC
+	.2byte ITEM_TM_BODY_PRESS
+	.2byte ITEM_TM_FLAMETHROWER
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_4F_EventScript_ClerkMiddle::
+	lock
+	faceplayer
+	message LilycoveCity_DepartmentStore_4F_Text_HoldItems
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_BAND
+	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_AIR_BALLOON
+	.2byte ITEM_ASSAULT_VEST
+	.2byte ITEM_THROAT_SPRAY
+	.2byte ITEM_BLACK_SLUDGE
+	.2byte ITEM_BLUNDER_POLICY
+	.2byte ITEM_DESTINY_KNOT
+	.2byte ITEM_EJECT_BUTTON
+	.2byte ITEM_EJECT_PACK
+	.2byte ITEM_EXPERT_BELT
+	.2byte ITEM_HEAVY_DUTY_BOOTS
+	.2byte ITEM_LIFE_ORB
+    .2byte ITEM_FLAME_ORB
+	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_LEFTOVERS
+	.2byte ITEM_LIGHT_CLAY
+	.2byte ITEM_ROCKY_HELMET
+	.2byte ITEM_RED_CARD
+	.2byte ITEM_SHED_SHELL
+	.2byte ITEM_EVIOLITE
+    .2byte ITEM_WIDE_LENS
+    .2byte ITEM_SCOPE_LENS
+    .2byte ITEM_ZOOM_LENS
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_4F_EventScript_MartEmployee::
+	lock
+	faceplayer
+	message LilycoveCity_DepartmentStore_4F_Text_WeatherItems
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_AbsorbItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_AbsorbItems:
+	.2byte ITEM_DAMP_ROCK
+	.2byte ITEM_HEAT_ROCK
+	.2byte ITEM_SMOOTH_ROCK
+	.2byte ITEM_ICY_ROCK
+	.2byte ITEM_TERRAIN_EXTENDER
+	.2byte ITEM_ELECTRIC_SEED
+	.2byte ITEM_PSYCHIC_SEED
+	.2byte ITEM_MISTY_SEED
+	.2byte ITEM_GRASSY_SEED
+	.2byte ITEM_ABSORB_BULB
+	.2byte ITEM_CELL_BATTERY
+	.2byte ITEM_LUMINOUS_MOSS
+	.2byte ITEM_SNOWBALL
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
+	.string "Hmm…\p"
+	.string "An attacking move…\n"
+	.string "Or a defensive move…\p"
+	.string "It's no easy matter to decide which TM\n"
+	.string "moves should be taught to POKéMON…$"
+
+LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
+	.string "There are so many different kinds of\n"
+	.string "TM moves.\p"
+	.string "A catalog I read said there are 100\n"
+	.string "different kinds.$"
+
+LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
+	.string "I'd like to get all the different TMs,\n"
+	.string "but a POKéMON learns only four moves.$"
+
+`
+
+text LilycoveCity_DepartmentStore_4F_Text_EvoItems{
+    "Welcome!\p
+    I sell a bunch of EVOLUTION items!"
+}
+
+text LilycoveCity_DepartmentStore_4F_Text_WeatherItems{
+    "Welcome!\p
+    Get your field setting items here!"
+}
+
+text LilycoveCity_DepartmentStore_4F_Text_HoldItems{
+    "Welcome, welcome!\p
+    I got MUST-HAVE hold items for sale!\n
+    Guaranteed to upgrade your battling!"
+}
+
+text LilycoveCity_DepartmentStore_4F_Text_TMs{
+    "TMs! Get your TMs here!\n
+    We have tons of rare TMs!"
+}

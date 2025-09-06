@@ -310,4 +310,5 @@ MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_PETAL_DANCE
 	setvar VAR_0x8005, MOVE_RAGING_FURY
 	setvar VAR_0x8005, MOVE_THRASH
+	setvar VAR_0x8005, MOVE_FAKE_OUT
 	end

@@ -8876,7 +8876,7 @@ const struct Item gItemsInfo[] =
     [ITEM_AIR_BALLOON] =
     {
         .name = _("Air Balloon"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .holdEffect = HOLD_EFFECT_AIR_BALLOON,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -8984,7 +8984,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ASSAULT_VEST] =
     {
         .name = _("Assault Vest"),
-        .price = (I_PRICE >= GEN_9) ? 5000 : 1000,
+        .price = (I_PRICE >= GEN_9) ? 15000 : 1000,
         .holdEffect = HOLD_EFFECT_ASSAULT_VEST,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(

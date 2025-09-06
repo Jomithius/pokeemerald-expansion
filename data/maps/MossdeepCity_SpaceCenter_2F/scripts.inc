@@ -21,6 +21,7 @@ MossdeepCity_SpaceCenter_2F_OnTransition:
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
 	clearflag FLAG_INTERACTED_WITH_STEVEN_SPACE_CENTER
+	setflag FLAG_TEMP_E
 	setobjectxyperm LOCALID_SCIENTIST, 5, 3
 	setobjectmovementtype LOCALID_SCIENTIST, MOVEMENT_TYPE_FACE_RIGHT
 	setobjectxyperm LOCALID_RICH_BOY, 3, 2
