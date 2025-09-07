@@ -21,7 +21,7 @@ script WachunpelonCity_EventScript_Mae{
 
 script WachunpelonCity_EventScript_MaePostBattle{
     lock
-    msgbox("Usually this is the part where\n
+    msgbox("MAE: Usually this is the part where\n
         somebody would kick me out, right?\p
         But this time we're just on a beach.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -33,7 +33,7 @@ script WachunpelonCity_EventScript_MaePostBattle{
     waitse
     applymovement(17, WachunpelonCity_Movement_OldMan1)
     waitmovement(0)
-    msgbox("Excuse me!", MSGBOX_DEFAULT)
+    msgbox("OLD MAN: Excuse me!", MSGBOX_DEFAULT)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
@@ -51,7 +51,7 @@ script WachunpelonCity_EventScript_MaePostBattle{
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("…\n
+    msgbox("MAE: …\n
         I'm still not leaving.", MSGBOX_AUTOCLOSE)
     waitmessage
     release
@@ -205,25 +205,28 @@ script WachunpelonCity_EventScript_PolicemanTrigger{
     waitmovement(0)
     applymovement(1, Common_Movement_WalkLeft)
     waitmovement(0)
+    applymovement(1, Common_Movement_WalkInPlaceUp)
+    waitmovement(1)
     opendoor(46, 14)
     waitdooranim
     applymovement(1, Common_Movement_WalkUp)
     waitmovement(1)
     removeobject(1)
-    closedoor(46, 14)
-    waitdooranim
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
     waitmovement(0)
+    hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY)
+    closedoor(46, 14)
+    waitdooranim
     setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
     setvar(VAR_SPEEDWAGON_STATE, 9)
-    warpdoor(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
+    warp(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
     waitstate
     releaseall
     end
 }
 
 script WachunpelonCity_EventScript_Policeman{
-    lockall
+    lock
     getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
     if(var(VAR_TEMP_1) == DIR_NORTH){
         goto(WachunpelonCity_EventScript_PolicemanNorth)
@@ -235,7 +238,7 @@ script WachunpelonCity_EventScript_Policeman{
 }
 
 script WachunpelonCity_EventScript_PolicemanNorth{
-    lockall
+    lock
     if(flag(FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123) == TRUE){
         msgbox(WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO)
     }
@@ -249,25 +252,28 @@ script WachunpelonCity_EventScript_PolicemanNorth{
     waitmessage
     applymovement(1, Common_Movement_WalkLeft)
     waitmovement(0)
+    applymovement(1, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
     opendoor(46, 14)
     waitdooranim
     applymovement(1, Common_Movement_WalkUp)
     waitmovement(1)
     removeobject(1)
-    closedoor(46, 14)
-    waitdooranim
     applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerNorth)
     waitmovement(0)
+    hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY)
+    closedoor(46, 14)
+    waitdooranim
     setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
     setvar(VAR_SPEEDWAGON_STATE, 9)
-    warpdoor(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
+    warp(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
     waitstate
-    releaseall
+    release
     end
 }
 
 script WachunpelonCity_EventScript_PolicemanEast{
-    lockall
+    lock
     playse(SE_PIN)
     applymovement(1, Common_Movement_ExclamationMark)
     waitmovement(1)
@@ -287,20 +293,23 @@ script WachunpelonCity_EventScript_PolicemanEast{
     waitmessage
     applymovement(1, Common_Movement_WalkLeft)
     waitmovement(0)
+    applymovement(1, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
     opendoor(46, 14)
     waitdooranim
     applymovement(1, Common_Movement_WalkUp)
     waitmovement(1)
     removeobject(1)
-    closedoor(46, 14)
-    waitdooranim
     applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerEast)
     waitmovement(0)
+    hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY)
+    closedoor(46, 14)
+    waitdooranim
     setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
     setvar(VAR_SPEEDWAGON_STATE, 9)
-    warpdoor(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
+    warp(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
     waitstate
-    releaseall
+    release
     end
 }
 

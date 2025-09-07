@@ -52,12 +52,12 @@ script FullMoonIslandInterior_EventScript_RatduardoBattle{
     goto_if_eq(VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty)
     msgbox(FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE)
     waitmessage
-    release
+    releaseall
     end
 }
 
 script FullMoonIslandInterior_EventScript_CresseliaJoinsParty{
-    msgbox("Thank you, {PLAYER}.\n
+    msgbox("Thank you.\n
         I'll be in your care.", MSGBOX_AUTOCLOSE)
     waitmessage
     givemon(SPECIES_CRESSELIA, 75)
@@ -66,9 +66,8 @@ script FullMoonIslandInterior_EventScript_CresseliaJoinsParty{
         removeobject(1)
         fadescreen(FADE_FROM_BLACK)
         playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("CRESSELIA joined the party!", MSGBOX_DEFAULT)
         waitfanfare
-        msgbox("CRESSELIA joined the party!", MSGBOX_AUTOCLOSE)
-        waitmessage
         setflag(FLAG_DEFEATED_CRESSELIA)
         setvar(VAR_RAT_CAVE_STATE, 12)
     }
@@ -77,28 +76,60 @@ script FullMoonIslandInterior_EventScript_CresseliaJoinsParty{
         removeobject(1)
         fadescreen(FADE_FROM_BLACK)
         playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("CRESSELIA was sent to the PC!", MSGBOX_DEFAULT)
         waitfanfare
-        msgbox("CRESSELIA was sent to the PC!", MSGBOX_AUTOCLOSE)
-        waitmessage
         setflag(FLAG_DEFEATED_CRESSELIA)
         setvar(VAR_RAT_CAVE_STATE, 12)
     }
     else{
         goto(Common_EventScript_NoMoreRoomForPokemon)
     }
-    release
+    closemessage
+    releaseall
     end   
 }
-
 script FullMoonIslandInterior_EventScript_CresseliaChangeMind{
     lock
-    msgbox("{PLAYER}.\n
+    msgbox("Hello again, {PLAYER}.\n
         Have you reconsidered my offer?", MSGBOX_YESNO)
-    goto_if_eq(VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty)
+    goto_if_eq(VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty2)
     msgbox(FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
+}
+
+script FullMoonIslandInterior_EventScript_CresseliaJoinsParty2{
+    msgbox("Thank you.\n
+        I'll be in your care.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    givemon(SPECIES_CRESSELIA, 75)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(1)
+        fadescreen(FADE_FROM_BLACK)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("CRESSELIA joined the party!", MSGBOX_DEFAULT)
+        waitfanfare
+        setflag(FLAG_DEFEATED_CRESSELIA)
+        setvar(VAR_RAT_CAVE_STATE, 12)
+    }
+    elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(1)
+        fadescreen(FADE_FROM_BLACK)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("CRESSELIA was sent to the PC!", MSGBOX_DEFAULT)
+        waitfanfare
+        setflag(FLAG_DEFEATED_CRESSELIA)
+        setvar(VAR_RAT_CAVE_STATE, 12)
+    }
+    else{
+        goto(Common_EventScript_NoMoreRoomForPokemon)
+    }
+    closemessage
+    release
+    end   
 }
 
 script FullMoonIslandInterior_EventScript_Cresselia{

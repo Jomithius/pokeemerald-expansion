@@ -20,4 +20,4 @@ Route135_House2_Man_Text_0:
 
 Route135_House2_Woman_Text_0:
 # 12 "data/maps/Route135_House2/scripts.pory"
-	.string "We've lived here all our lives.\n It really feels so far away from\l the rest of the region.$"
+	.string "We've lived here all our lives.\p It really feels so far away from\n the rest of the region.$"

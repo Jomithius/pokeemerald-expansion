@@ -26,7 +26,7 @@ WachunpelonCity_PokemonCenter_EventScript_Nurse::
 	end
 
 
-WachunpelonCity_PokemonCenter_EventScript_Man_5::
+WachunpelonCity_PokemonCenter_EventScript_PeatBlock::
 # 21 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	lock
 # 22 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
@@ -34,24 +34,24 @@ WachunpelonCity_PokemonCenter_EventScript_Man_5::
 # 23 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	goto_if_set FLAG_RECEIVED_PEAT_BLOCK, WachunpelonCity_PokemonCenter_EventScript_UrsalunaHint
 # 24 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
-	msgbox WachunpelonCity_PokemonCenter_EventScript_Man_5_Text_0, MSGBOX_DEFAULT
+	msgbox WachunpelonCity_PokemonCenter_EventScript_PeatBlock_Text_0, MSGBOX_DEFAULT
 # 29 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	waitmessage
 # 30 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	checkitemspace ITEM_PEAT_BLOCK
 # 31 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	compare VAR_RESULT, TRUE
-	goto_if_eq WachunpelonCity_PokemonCenter_EventScript_Man_5_2
+	goto_if_eq WachunpelonCity_PokemonCenter_EventScript_PeatBlock_2
 # 38 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
-WachunpelonCity_PokemonCenter_EventScript_Man_5_1:
+WachunpelonCity_PokemonCenter_EventScript_PeatBlock_1:
 # 40 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
-	msgbox WachunpelonCity_PokemonCenter_EventScript_Man_5_Text_1, MSGBOX_AUTOCLOSE
+	msgbox WachunpelonCity_PokemonCenter_EventScript_PeatBlock_Text_1, MSGBOX_AUTOCLOSE
 # 44 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	waitmessage
 	end
 
-WachunpelonCity_PokemonCenter_EventScript_Man_5_2:
+WachunpelonCity_PokemonCenter_EventScript_PeatBlock_2:
 # 32 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	giveitem ITEM_PEAT_BLOCK
 # 33 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
@@ -60,7 +60,7 @@ WachunpelonCity_PokemonCenter_EventScript_Man_5_2:
 	waitmessage
 # 35 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	clearflag FLAG_DEFEATED_URSALUNA_BLOODMOON
-	goto WachunpelonCity_PokemonCenter_EventScript_Man_5_1
+	goto WachunpelonCity_PokemonCenter_EventScript_PeatBlock_1
 
 
 WachunpelonCity_PokemonCenter_EventScript_UrsalunaHint::
@@ -81,11 +81,11 @@ WachunpelonCity_PokemonCenter_EventScript_DevonEmployee::
 	end
 
 
-WachunpelonCity_PokemonCenter_EventScript_Man_5_Text_0:
+WachunpelonCity_PokemonCenter_EventScript_PeatBlock_Text_0:
 # 24 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
-	.string "You're a TRAINER, aren't you?\n I found this weird rock in PETALBURG\l WOODS.\p I couldn't find a use for it, but maybe\n you can.$"
+	.string "You're a TRAINER, aren't you?\p I found this weird rock in PETALBURG\n WOODS.\p I couldn't find a use for it, but maybe\n you can.$"
 
-WachunpelonCity_PokemonCenter_EventScript_Man_5_Text_1:
+WachunpelonCity_PokemonCenter_EventScript_PeatBlock_Text_1:
 # 40 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	.string "There was also a scary looking POKéMON\n I've never seen before!\p It's probably still there, but I'm too\n scared to go back.$"
 

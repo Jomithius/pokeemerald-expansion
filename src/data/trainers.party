@@ -10627,7 +10627,6 @@ Mugshot: Green
 Azumarill (F) @ Sitrus Berry  
 Ability: Huge Power  
 Level: 100
-Tera Type: Water 
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Belly Drum  
@@ -10666,12 +10665,12 @@ Jolly Nature
 - Zen Headbutt  
 - Sucker Punch  
 
-Dedenne @ Petaya Berry  
+Dedenne @ Salac Berry  
 Ability: Cheek Pouch
 Level: 100
 Tera Type: Flying   
 EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
+Modest Nature  
 IVs: 0 Atk  
 - Parabolic Charge  
 - Endure  
@@ -30539,13 +30538,11 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Green
 
-Azumarill (F) @ Sitrus Berry  
+Azumarill (F)
 Ability: Huge Power  
 Level: 100
-Tera Type: Water 
 Adamant Nature  
-- Belly Drum  
-- Aqua Jet  
+- Belly Drum   
 - Play Rough  
 - Liquidation  
 

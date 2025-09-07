@@ -2,7 +2,7 @@
   "id": "MAP_BASE_CAMP",
   "name": "BaseCamp",
   "layout": "LAYOUT_BASE_CAMP",
-  "music": "MUS_RG_NET_CENTER",
+  "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_THE_UNDER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

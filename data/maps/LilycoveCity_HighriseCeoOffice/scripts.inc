@@ -383,86 +383,74 @@ LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves::
 # 215 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 # 216 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	call LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags
+	setvar VAR_ULTRA_SPACE_STATE, 0
 # 217 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	warp MAP_LILYCOVE_CITY, 51, 7
+	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 0
 # 218 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitstate
+	call LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags
 # 219 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	warp MAP_LILYCOVE_CITY, 51, 7
+# 220 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	waitstate
+# 221 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	releaseall
 	end
 
 
 LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags::
-# 224 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_ENTEI
-# 225 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_RAIKOU
 # 226 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_SUICUNE
+	clearflag FLAG_HIDE_ENTEI
 # 227 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_MOLTRES
+	clearflag FLAG_HIDE_RAIKOU
 # 228 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_ARTICUNO
+	clearflag FLAG_HIDE_SUICUNE
 # 229 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_ZAPDOS
+	clearflag FLAG_HIDE_MOLTRES
 # 230 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_GALARIAN_MOLTRES
+	clearflag FLAG_HIDE_ARTICUNO
 # 231 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_GALARIAN_ZAPDOS
+	clearflag FLAG_HIDE_ZAPDOS
 # 232 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_GALARIAN_ARTICUNO
+	clearflag FLAG_HIDE_GALARIAN_MOLTRES
 # 233 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_ARCEUS
+	clearflag FLAG_HIDE_GALARIAN_ZAPDOS
 # 234 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_DIALGA
+	clearflag FLAG_HIDE_GALARIAN_ARTICUNO
 # 235 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_PALKIA
+	clearflag FLAG_HIDE_ARCEUS
 # 236 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_GIRATINA
+	clearflag FLAG_HIDE_DIALGA
 # 237 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_MARSHADOW
+	clearflag FLAG_HIDE_PALKIA
 # 238 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_ZERAORA
+	clearflag FLAG_HIDE_GIRATINA
 # 239 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_DEFEATED_SPECTRIER
+	clearflag FLAG_HIDE_MARSHADOW
 # 240 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_DEFEATED_GENESECT
+	clearflag FLAG_HIDE_ZERAORA
 # 241 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_DEFEATED_RESHIRAM
+	clearflag FLAG_DEFEATED_SPECTRIER
 # 242 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_DEFEATED_ZEKROM
+	clearflag FLAG_DEFEATED_GENESECT
 # 243 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_DEFEATED_REGIDRAGO
+	clearflag FLAG_DEFEATED_RESHIRAM
 # 244 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_DEFEATED_REGIELEKI
+	clearflag FLAG_DEFEATED_ZEKROM
 # 245 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_DEFEATED_ZARUDE
+	clearflag FLAG_DEFEATED_REGIDRAGO
 # 246 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_MYSTERY_GIFT_MAN
+	clearflag FLAG_DEFEATED_REGIELEKI
 # 247 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	clearflag FLAG_DEFEATED_ZARUDE
+# 248 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	clearflag FLAG_HIDE_MYSTERY_GIFT_MAN
+# 249 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	setflag FLAG_MIMIKYU_TOTEM
 	return
 
 
-# 251 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 253 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 LilycoveCity_HighriseFloor2_Movement_Attendant:
-# 252 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 252 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 252 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 252 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 253 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_left
-# 253 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_left
-# 253 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_left
-# 254 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
 # 254 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_up
 # 254 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
@@ -472,132 +460,148 @@ LilycoveCity_HighriseFloor2_Movement_Attendant:
 # 254 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_up
 # 255 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_right
+	walk_left
+# 255 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_left
+# 255 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_left
 # 256 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 256 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 256 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 256 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 256 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 257 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_right
+# 258 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 259 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-LilycoveCity_HighriseFloor2_Movement_Scientist:
-# 260 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	lock_facing_direction
 # 261 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
+LilycoveCity_HighriseFloor2_Movement_Scientist:
 # 262 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	lock_facing_direction
+# 263 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 264 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 265 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-LilycoveCity_HighriseFloor2_Movement_PlayerPanic:
-# 266 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	emote_exclamation_mark
 # 267 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_in_place_fast_right
+LilycoveCity_HighriseFloor2_Movement_PlayerPanic:
 # 268 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	delay_16
+	emote_exclamation_mark
 # 269 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_in_place_fast_right
+# 270 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	delay_16
+# 271 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_in_place_fast_left
 	step_end
 
-# 272 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 274 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 LilycoveCity_HighriseFloor2_Movement_PlayerLeave:
-# 273 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 275 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_down
-# 273 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 275 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_down
-# 273 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 275 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_down
-# 273 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 275 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_down
-# 273 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 275 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_down
-# 273 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 275 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_down
-# 273 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 275 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_down
 	step_end
 
-# 276 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-LilycoveCity_HighriseFloor2_Movement_StaffMember:
-# 277 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_fast_down
-# 277 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_fast_down
-# 277 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_fast_down
-# 277 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_fast_down
 # 278 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+LilycoveCity_HighriseFloor2_Movement_StaffMember:
+# 279 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_fast_down
+# 279 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_fast_down
+# 279 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_fast_down
+# 279 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_fast_down
+# 280 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 281 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 283 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 LilycoveCity_HighriseFloor2_Movement_StaffMemberReturn:
-# 282 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_right
-# 283 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 283 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 283 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 283 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
 # 284 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_right
+# 285 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 285 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 285 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 285 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 286 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 287 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-LilycoveCity_HighriseFloor2_Movement_StaffMember2:
-# 288 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_fast_down
-# 288 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_fast_down
-# 288 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_fast_down
-# 288 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_fast_down
 # 289 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+LilycoveCity_HighriseFloor2_Movement_StaffMember2:
+# 290 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_fast_down
+# 290 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_fast_down
+# 290 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_fast_down
+# 290 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_fast_down
+# 291 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 292 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 294 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 LilycoveCity_HighriseFloor2_Movement_StaffMember2Return:
-# 293 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_left
-# 294 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 294 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 294 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
-# 294 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_up
 # 295 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_in_place_down
-	step_end
-
-# 298 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-LilycoveCity_HighriseFloor2_Movement_ScientistPlacesBag:
-# 299 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_down
-# 300 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_left
-# 300 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_left
-# 301 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_in_place_down
-	step_end
-
-# 304 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-LilycoveCity_HighriseFloor2_Movement_ScientistReturnsPostStarter:
-# 305 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_right
-# 305 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	walk_right
-# 306 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 296 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_up
+# 296 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 296 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 296 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 297 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_in_place_down
+	step_end
+
+# 300 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+LilycoveCity_HighriseFloor2_Movement_ScientistPlacesBag:
+# 301 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_down
+# 302 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_left
+# 302 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_left
+# 303 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_in_place_down
+	step_end
+
+# 306 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+LilycoveCity_HighriseFloor2_Movement_ScientistReturnsPostStarter:
 # 307 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_right
+# 307 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_right
+# 308 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	walk_up
+# 309 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	walk_in_place_down
 	step_end
 
@@ -690,25 +694,25 @@ LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_Text_1:
 	.string "{PLAYER} received QUAXLY!\p QUAXLY was sent to the PC.$"
 
 LilycoveCity_HighriseFloor2_Text_Jimmy1::
-# 310 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 312 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	.string "JIMMY: {PLAYER}! Good to see you.\n I'll get to the point.\p I'm sure you noticed random tremors\n in the region during your travels.\p Well, the LEAGUE's investigation around\n the cause of those earthquakes has\l concluded.\p My subordinate will give you the finer\n details.$"
 
 LilycoveCity_HighriseFloor2_Text_Scientist::
-# 322 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 324 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	.string "We have discovered that the source of\n seismic disturbances have primarily\l come from a MANIAC and his RATTATAs\l creating tunnels all throughout the\l region.\p Surprisingly, it had nothing to do\n with the actions of TEAM MAGMA.\p We have surveyed the tunnel systems\n and have discovered their origin lies\l in NORTHERN HOENN.\p It's difficult to continue monitoring\n seismic activity due to GROUDON being\l awakened, but we believe the RATTATA\l are no longer being ordered to dig.\p We presume that he has finally found\n whatever he has been looking for.\p Furthermore, there have been reports\n of extremely rare POKéMON now being\l seen in the region.\p Notable reports have come from: the\n SCORCHED SLAB, MT. PYRE, FIERY PATH,\l METEOR FALLS, ROUTE 123, NEW MAUVILLE,\l SKY PILLAR, and the CAVE OF ORIGIN.\p Please register me in your POKéNAV\n so I can give you future updates.$"
 
 LilycoveCity_HighriseFloor2_Text_Jimmy2::
-# 350 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 352 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	.string "JIMMY: That's pretty much it.\p That rat weirdo isn't much of a threat\n to the region's security at this point.\p Still, I'd like you to go and do your\n own general investigation of the area.$"
 
 LilycoveCity_HighriseFloor2_Text_Jimmy3::
-# 358 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 360 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	.string "{PLAYER}, you can do what you want.\n But it's in your best interest to go.\p In that remote part of the region, there\n are POKéMON you've never seen before.\p You may be CHAMPION, but there's still\n parts of this region to explore.\l After you return, I want you to go and\l challenge all the GYM LEADERS again.\l And, of course, the ELITE FOUR.\l Next time, they won't hold back.$"
 
 LilycoveCity_HighriseFloor2_Text_Jimmy4::
-# 371 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 373 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	.string "I knew you'd be down for an adventure!\n JAMES is already out there on another\l job I asked him to work on.\l You'll probably run into him at some\l  point.\p Then, after you return, I want you to\n challenge all the GYM LEADERS again.\l And, of course, the ELITE FOUR.\l Next time, they won't hold back.$"
 
 LilycoveCity_HighriseFloor2_Text_JimmyIExpectGoodNews::
-# 383 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+# 385 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	.string "JIMMY: Well, {PLAYER}, I won't hold you\n any longer. You got things to do!\p You should be able to reach NORTHERN\n HOENN through the tunnel system.\l I expect good news!$"

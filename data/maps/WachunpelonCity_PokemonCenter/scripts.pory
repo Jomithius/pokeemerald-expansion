@@ -17,12 +17,12 @@ script WachunpelonCity_PokemonCenter_EventScript_Nurse{
     end
 }
 
-script WachunpelonCity_PokemonCenter_EventScript_Man_5{
+script WachunpelonCity_PokemonCenter_EventScript_PeatBlock{
     lock
     faceplayer
     goto_if_set(FLAG_RECEIVED_PEAT_BLOCK, WachunpelonCity_PokemonCenter_EventScript_UrsalunaHint)
-    msgbox("You're a TRAINER, aren't you?\n
-        I found this weird rock in PETALBURG\l
+    msgbox("You're a TRAINER, aren't you?\p
+        I found this weird rock in PETALBURG\n
         WOODS.\p
         I couldn't find a use for it, but maybe\n
         you can.", MSGBOX_DEFAULT)

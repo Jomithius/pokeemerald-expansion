@@ -121,7 +121,7 @@ script Route137_EventScript_Tuber_F_2{
 }
 
 script Route137_EventScript_Joey{
-    msgbox("Ahaha… Yeeeeaaaah…\p
+    msgbox("Ahaha… Yeeheheaaaaaah…\p
         ……………………\p
         They're too relaxed to notice you.", MSGBOX_SIGN)
     end

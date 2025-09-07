@@ -336,7 +336,7 @@ Route137_EventScript_Tuber_F_2_Text_0:
 
 Route137_EventScript_Joey_Text_0:
 # 124 "data/maps/NewMap2/scripts.pory"
-	.string "Ahaha… Yeeeeaaaah…\p ……………………\p They're too relaxed to notice you.$"
+	.string "Ahaha… Yeeheheaaaaaah…\p ……………………\p They're too relaxed to notice you.$"
 
 Route137_EventScript_Beauty_Text_0:
 # 133 "data/maps/NewMap2/scripts.pory"

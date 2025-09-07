@@ -141,7 +141,7 @@ Route137_SeasideHouse_EventScript_Woman_4::
 
 Route137_SeasideHouse_EventScript_Beauty::
 # 115 "data/maps/Route137_SeasideHouse/scripts.pory"
-	msgbox Route137_SeasideHouse_EventScript_Beauty_Text_0, MSGBOX_SIGN
+	msgbox Route137_SeasideHouse_EventScript_Beauty_Text_0, MSGBOX_NPC
 	end
 
 
@@ -215,7 +215,7 @@ Route137_SeasideHouse_EventScript_Man_Text_0:
 
 Route137_SeasideHouse_EventScript_Man_4_Text_0:
 # 133 "data/maps/Route137_SeasideHouse/scripts.pory"
-	.string "I live in LUSH ACREAGE.\n The ice cream here uses milk from the\l MILTANKS we raise.$"
+	.string "I live in LUSH ACREAGE.\p The ice cream here uses milk from the\n MILTANKS we raise.$"
 
 Route137_SeasideHouse_EventScript_Gentleman_Text_0:
 # 140 "data/maps/Route137_SeasideHouse/scripts.pory"

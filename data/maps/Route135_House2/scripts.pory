@@ -9,8 +9,8 @@ script Route135_House2_Man{
 }
 
 script Route135_House2_Woman{
-    msgbox("We've lived here all our lives.\n
-        It really feels so far away from\l
+    msgbox("We've lived here all our lives.\p
+        It really feels so far away from\n
         the rest of the region.", MSGBOX_NPC)
     end
 }

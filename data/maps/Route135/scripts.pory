@@ -11,7 +11,7 @@ script Route135_OnTransition{
 
 script Route135_CheckEnterFromLab{
     getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
-    goto_if_le(VAR_TEMP_0, 8, Route135_EnteredFromLab)
+    call_if_le(VAR_TEMP_0, 28, Route135_EnteredFromLab) // checks for both houses too
     return
 }
 
@@ -37,9 +37,14 @@ script Route135_UpdateDefaultMusic{
     end
 }
 
+script Route135_OnlySaveDefaultMusic{
+    savebgm(MUS_ROWANS_LAB)
+    end
+}
+
 script Route135_EnteredFromLab{
     savebgm(MUS_ETERNA_CITY_NIGHT)
-    end
+    return
 }
 
 script Route135_EventScript_Danny{

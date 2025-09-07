@@ -113,7 +113,7 @@ script Route137_SeasideHouse_EventScript_Woman_4{
 
 script Route137_SeasideHouse_EventScript_Beauty{
     msgbox("I know it's bad for my figure…\n
-        But I just love ice cream.", MSGBOX_SIGN)
+        But I just love ice cream.", MSGBOX_NPC)
     end
 }
 
@@ -130,8 +130,8 @@ script Route137_SeasideHouse_EventScript_Man{
 }
 
 script Route137_SeasideHouse_EventScript_Man_4{
-    msgbox("I live in LUSH ACREAGE.\n
-        The ice cream here uses milk from the\l
+    msgbox("I live in LUSH ACREAGE.\p
+        The ice cream here uses milk from the\n
         MILTANKS we raise.", MSGBOX_NPC)
     end
 }
