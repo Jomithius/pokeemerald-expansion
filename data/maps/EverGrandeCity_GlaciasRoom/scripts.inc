@@ -145,7 +145,7 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 # 73 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "Are you the TRAINER that MISA\n"
 # 74 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "had talked to me about?\p"
+	.string "had talked about?\p"
 # 75 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "Not many TRAINERS can usually\n"
 # 76 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
@@ -197,80 +197,82 @@ EverGrandeCity_GlaciasRoom_EventScript_Leafeon::
 # 111 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	applymovement 2, Common_Movement_FaceOriginalDirection
 # 112 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	waitmovement 2
+# 113 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch::
-# 118 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	lock
 # 119 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	lock
 # 120 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 121 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	clearflag FLAG_TEMP_E
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 122 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	clearflag FLAG_TEMP_E
+# 123 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	msgbox EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_0, MSGBOX_AUTOCLOSE
-# 126 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmessage
 # 127 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	call EliteFour_EventScript_PlayerGetsInPosition
-# 128 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	playfirstmoncry
-# 129 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmoncry
-# 130 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	playmoncry SPECIES_LEAFEON, CRY_MODE_ENCOUNTER
-# 131 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmoncry
-# 132 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	msgbox EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_1, MSGBOX_AUTOCLOSE
-# 133 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	waitmessage
+# 128 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	call EliteFour_EventScript_PlayerGetsInPosition
+# 129 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	playfirstmoncry
+# 130 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	waitmoncry
+# 131 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	playmoncry SPECIES_LEAFEON, CRY_MODE_ENCOUNTER
+# 132 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	waitmoncry
+# 133 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	msgbox EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_1, MSGBOX_AUTOCLOSE
 # 134 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	setflag FLAG_DEFEATED_ELITE_4_GLACIA
+	waitmessage
 # 135 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	setflag FLAG_DEFEATED_XION
+	setflag FLAG_DEFEATED_ELITE_4_GLACIA
 # 136 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_XION, EverGrandeCity_GlaciasRoom_Text_Defeat
+	setflag FLAG_DEFEATED_XION
 # 137 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+	trainerbattle_no_intro TRAINER_XION, EverGrandeCity_GlaciasRoom_Text_Defeat
 # 138 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
 # 139 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	callnative RemoveFollowingPokemon
+	waitmovement 0
 # 140 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	setflag FLAG_TEMP_E
+	callnative RemoveFollowingPokemon
 # 141 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	setflag FLAG_TEMP_E
 # 142 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 143 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+# 144 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	goto EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech
 	end
 
 
 EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech::
-# 148 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 149 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	msgbox EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech_Text_0, MSGBOX_DEFAULT
-# 154 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 155 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_0:
-# 122 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 123 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "{PLAYER}!\n You look well. I'm glad.\p It seems like your travels have\n caused you to get even stronger!$"
 
 EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_1:
-# 132 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 133 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "Let's see if you can match my freak!$"
 
 EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech_Text_0:
-# 148 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "I'm impressed, {PLAYER}!\n You really beat me.\p Be careful on your next battle.\n DAVE was pretty mad when he lost\l to you last time.\p He might be planning something.$"
+# 149 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	.string "I'm impressed, {PLAYER}!\n You really beat me.\p Be careful on your next battle.\p DAVE was pretty mad when he lost\n to you last time.\p He might be planning something.$"
 
 EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech::
 # 98 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "Oh, you're that TRAINER I met in\n VERDANTURF! So you made it this far.\l Again, I'm XION of the ELITE FOUR.\p Let me see how strong the TRAINER\n that MISA believed in really is!$"
+	.string "Oh, you're that TRAINER I met in\n VERDANTURF! So you made it this far.\l Again, I'm XION of the ELITE FOUR.\p Let me see how strong you've\n gotten since then!$"

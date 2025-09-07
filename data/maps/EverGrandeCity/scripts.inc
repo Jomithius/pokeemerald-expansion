@@ -448,7 +448,7 @@ EverGrandeCity_EventScript_James_1:
 # 285 "data/maps/EverGrandeCity/scripts.pory"
 	waitmessage
 # 286 "data/maps/EverGrandeCity/scripts.pory"
-	giveitem ITEM_EXP_CANDY_XL, 50
+	giveitem ITEM_EXP_CANDY_XL, 99
 # 287 "data/maps/EverGrandeCity/scripts.pory"
 	waitmessage
 # 288 "data/maps/EverGrandeCity/scripts.pory"
@@ -542,7 +542,7 @@ EverGrandeCity_EventScript_James_Text_0:
 
 EverGrandeCity_EventScript_James_Text_1:
 # 272 "data/maps/EverGrandeCity/scripts.pory"
-	.string "JAMES: …\n It feels like… I was always\l destined to lose to you, {PLAYER}.$"
+	.string "JAMES: …\p It feels like… I was always\n destined to lose to you, {PLAYER}.$"
 
 EverGrandeCity_Text_Asak1::
 # 158 "data/maps/EverGrandeCity/scripts.pory"

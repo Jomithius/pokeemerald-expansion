@@ -163,7 +163,7 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 # 82 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 EverGrandeCity_DrakesRoom_Text_Defeat:
 # 83 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	.string "I swear to God dude…$"
+	.string "I swear to God, dude…$"
 # 84 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 
 # 85 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
@@ -195,294 +195,296 @@ EverGrandeCity_DrakesRoom_EventScript_Banette::
 # 110 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	delay 24
 # 111 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	applymovement 2, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 112 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitmovement VAR_LAST_TALKED
+# 113 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle::
-# 117 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 # 118 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
+# 119 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	goto_if_set FLAG_RECEIVED_FANTASIA, EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_2
-# 126 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 127 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_1, MSGBOX_YESNO
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_1:
-# 130 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmessage
 # 131 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning
+	waitmessage
 # 132 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning
+# 133 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_2, MSGBOX_AUTOCLOSE
-# 137 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmessage
 # 138 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	clearflag FLAG_TEMP_E
+	waitmessage
 # 139 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	clearflag FLAG_TEMP_E
 # 140 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	call EliteFour_EventScript_PlayerGetsInPosition
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 141 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playfirstmoncry
+	call EliteFour_EventScript_PlayerGetsInPosition
 # 142 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmoncry
+	playfirstmoncry
 # 143 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playmoncry SPECIES_BANETTE, CRY_MODE_ENCOUNTER
-# 144 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitmoncry
+# 144 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playmoncry SPECIES_BANETTE, CRY_MODE_ENCOUNTER
 # 145 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitmoncry
+# 146 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_3, MSGBOX_AUTOCLOSE
-# 147 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmessage
 # 148 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setflag FLAG_DEFEATED_ELITE_4_DRAKE
-# 149 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setflag FLAG_DEFEATED_DAVE
-# 150 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playbgm MUS_NONE, TRUE
-# 151 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_DAVE, EverGrandeCity_DrakesRoom_Text_DaveCrashOut
-# 152 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
-# 153 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmovement 0
-# 154 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	callnative RemoveFollowingPokemon
-# 155 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setflag FLAG_TEMP_E
-# 156 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 157 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_4, MSGBOX_AUTOCLOSE
-# 160 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitmessage
+# 149 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	setflag FLAG_DEFEATED_ELITE_4_DRAKE
+# 150 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	setflag FLAG_DEFEATED_DAVE
+# 151 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playbgm MUS_NONE, TRUE
+# 152 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_DAVE, EverGrandeCity_DrakesRoom_Text_DaveCrashOut
+# 153 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+# 154 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitmovement 0
+# 155 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	callnative RemoveFollowingPokemon
+# 156 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	setflag FLAG_TEMP_E
+# 157 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+# 158 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_4, MSGBOX_AUTOCLOSE
 # 161 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setvar VAR_RESULT, 3
+	waitmessage
 # 162 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playse SE_ORB
+	setvar VAR_RESULT, 3
 # 163 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	special DoOrbEffect
+	playse SE_ORB
 # 164 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	delay 150
+	special DoOrbEffect
 # 165 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitstate
-# 166 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	special FadeOutOrbEffect
-# 167 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitstate
-# 168 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	delay 150
-# 169 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	call EverGrandeCity_DrakesRoom_Shake
-# 170 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setrespawn HEAL_LOCATION_VOID
-# 171 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	warpwhitefade MAP_VOID, 9, 32
-# 172 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 166 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitstate
+# 167 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	special FadeOutOrbEffect
+# 168 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitstate
+# 169 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	delay 150
+# 170 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	call EverGrandeCity_DrakesRoom_Shake
+# 171 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	setrespawn HEAL_LOCATION_VOID
+# 172 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	warpwhitefade MAP_VOID, 9, 32
 # 173 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitstate
+# 174 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	release
 	end
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_2:
-# 119 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 120 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_0, MSGBOX_YESNO
 	goto EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_1
 
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2::
-# 178 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	lock
 # 179 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
+	lock
 # 180 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
+# 181 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_2, MSGBOX_AUTOCLOSE
-# 185 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmessage
 # 186 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	clearflag FLAG_TEMP_E
+	waitmessage
 # 187 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	clearflag FLAG_TEMP_E
 # 188 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	call EliteFour_EventScript_PlayerGetsInPosition
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 189 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playfirstmoncry
+	call EliteFour_EventScript_PlayerGetsInPosition
 # 190 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmoncry
+	playfirstmoncry
 # 191 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playmoncry SPECIES_BANETTE, CRY_MODE_ENCOUNTER
-# 192 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitmoncry
+# 192 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playmoncry SPECIES_BANETTE, CRY_MODE_ENCOUNTER
 # 193 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitmoncry
+# 194 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_3, MSGBOX_AUTOCLOSE
-# 195 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmessage
 # 196 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setflag FLAG_DEFEATED_ELITE_4_DRAKE
-# 197 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setflag FLAG_DEFEATED_DAVE
-# 198 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playbgm MUS_NONE, TRUE
-# 199 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_DAVE, EverGrandeCity_DrakesRoom_Text_DaveCrashOut
-# 200 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
-# 201 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmovement 0
-# 202 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	callnative RemoveFollowingPokemon
-# 203 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setflag FLAG_TEMP_E
-# 204 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 205 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2_Text_0, MSGBOX_AUTOCLOSE
-# 208 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitmessage
+# 197 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	setflag FLAG_DEFEATED_ELITE_4_DRAKE
+# 198 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	setflag FLAG_DEFEATED_DAVE
+# 199 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playbgm MUS_NONE, TRUE
+# 200 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_DAVE, EverGrandeCity_DrakesRoom_Text_DaveCrashOut
+# 201 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+# 202 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitmovement 0
+# 203 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	callnative RemoveFollowingPokemon
+# 204 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	setflag FLAG_TEMP_E
+# 205 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+# 206 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	msgbox EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2_Text_0, MSGBOX_AUTOCLOSE
 # 209 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setvar VAR_RESULT, 3
+	waitmessage
 # 210 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playse SE_ORB
+	setvar VAR_RESULT, 3
 # 211 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	special DoOrbEffect
+	playse SE_ORB
 # 212 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	delay 150
+	special DoOrbEffect
 # 213 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitstate
-# 214 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	special FadeOutOrbEffect
-# 215 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitstate
-# 216 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	delay 150
-# 217 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	call EverGrandeCity_DrakesRoom_Shake
-# 218 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setrespawn HEAL_LOCATION_VOID
-# 219 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	warpwhitefade MAP_VOID, 9, 32
-# 220 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 214 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitstate
+# 215 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	special FadeOutOrbEffect
+# 216 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitstate
+# 217 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	delay 150
+# 218 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	call EverGrandeCity_DrakesRoom_Shake
+# 219 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	setrespawn HEAL_LOCATION_VOID
+# 220 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	warpwhitefade MAP_VOID, 9, 32
 # 221 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitstate
+# 222 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning::
-# 226 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playbgm MUS_NONE, FALSE
 # 227 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 228 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning_Text_0, MSGBOX_YESNO
-# 231 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitmessage
 # 232 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2
-# 233 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	msgbox EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning_Text_1, MSGBOX_DEFAULT
-# 239 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitmessage
+# 233 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2
+# 234 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	msgbox EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning_Text_1, MSGBOX_DEFAULT
 # 240 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	call_if_eq VAR_LINA_TALKED_TO, 3, EverGrandeCity_EventScript_ResetEugeniaBattle
+	waitmessage
 # 241 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
+	call_if_eq VAR_LINA_TALKED_TO, 3, EverGrandeCity_EventScript_ResetEugeniaBattle
 # 242 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	goto EventScript_FieldWhiteOut
+	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
 # 243 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	goto EventScript_FieldWhiteOut
+# 244 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_EventScript_ResetEugeniaBattle::
-# 248 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 249 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	setvar VAR_LINA_TALKED_TO, 2
 	return
 
 
 EverGrandeCity_DrakesRoom_Shake::
-# 253 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	delay 30
 # 254 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setvar VAR_0x8004, 2
+	delay 30
 # 255 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setvar VAR_0x8005, 6
+	setvar VAR_0x8004, 2
 # 256 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setvar VAR_0x8006, 8
+	setvar VAR_0x8005, 6
 # 257 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	setvar VAR_0x8007, 4
+	setvar VAR_0x8006, 8
 # 258 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 4
 # 259 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitstate
-# 260 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	delay 60
-# 261 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	special ShakeCamera
-# 262 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 260 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitstate
-# 263 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 261 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	delay 60
+# 262 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	special ShakeCamera
+# 263 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	waitstate
 # 264 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playse SE_M_THUNDER_WAVE
+	delay 60
 # 265 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 266 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 267 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	delay 20
-# 268 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	playse SE_M_THUNDER_WAVE
-# 269 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 266 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	fadescreen FADE_TO_WHITE
-# 270 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 267 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	fadescreen FADE_FROM_WHITE
+# 268 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	delay 20
+# 269 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playse SE_M_THUNDER_WAVE
+# 270 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	fadescreen FADE_TO_WHITE
 # 271 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	delay 10
+	fadescreen FADE_FROM_WHITE
 # 272 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	waitse
+	delay 10
 # 273 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playse SE_INTRO_BLAST
+	waitse
 # 274 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playse SE_INTRO_BLAST
+# 275 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	delay 20
 	return
 
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_0:
-# 119 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 120 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "Oh, look who it is.\n Are you going to keep your promise\l to me this time?\p Remember, you said you would lose\n to me if we ever battled.$"
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_1:
-# 126 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 127 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "Oh, look who it is.\n Are you going to do me a favor\l and lose to me this time?$"
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_2:
-# 132 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 133 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "…\p You know, I also heard about what\n you did to that BIKER gang.\p Just so you know… my brother was one\n of the people you helped lock up.$"
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_3:
-# 145 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 146 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "I'm going to do everything I can\n to stop you here.$"
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_4:
-# 157 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 158 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "Bitch.\n I'm really glad I get to do this.\p {COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!$"
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2_Text_0:
-# 205 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 206 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "Well, you won again. Congrats.\n Here's your prize.\p {COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!$"
 
 EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning_Text_0:
-# 227 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 228 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "Oh, wow.\n Uh…\p Really?\n Are you sure?$"
 
 EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning_Text_1:
-# 233 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 234 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "Wow.\n I… didn't expect that.\p Well, um… okay.\n Thanks.\p Here, I'll help you out then.\n I hope you saved.$"
 
 EverGrandeCity_DrakesRoom_Text_DaveIntro::
 # 99 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	.string "Oh, hello again.\n Good job on making it this far.\p Once again, I'm DAVE of the ELITE FOUR.\n Keep your promise and lose to me, okay?$"
+	.string "Oh, yes. Hello, {PLAYER}.\n Good job on making it this far.\p Once again, I'm DAVE of the ELITE FOUR.\n Keep your promise and lose to me, okay?$"
 
 EverGrandeCity_DrakesRoom_Text_DaveCrashOut::
-# 278 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 279 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "I swear to God…\n Fuck you, dude.$"

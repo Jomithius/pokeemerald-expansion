@@ -748,23 +748,25 @@ EverGrandeCity_PhoebesRoom_EventScript_Luxray::
 # 471 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement 2, Common_Movement_FaceOriginalDirection
 # 472 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmovement 2
+# 473 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	release
 	end
 
 
-# 476 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-EverGrandeCity_PhoebesRoom_Movement_PlayerStepBack:
 # 477 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	lock_facing_direction
+EverGrandeCity_PhoebesRoom_Movement_PlayerStepBack:
 # 478 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	walk_fast_down
+	lock_facing_direction
 # 479 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	walk_fast_down
+# 480 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 482 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-EverGrandeCity_PhoebesRoom_Movement_FaceAwayPlayer:
 # 483 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+EverGrandeCity_PhoebesRoom_Movement_FaceAwayPlayer:
+# 484 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	face_away_player
 	step_end
 
