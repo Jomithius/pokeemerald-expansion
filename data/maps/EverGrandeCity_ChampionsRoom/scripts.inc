@@ -243,11 +243,11 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "region, but I heard about you.\p"
 	.string "Thanks for dealing with that incident\n"
 	.string "in SOOTOPOLIS while I was gone.\p"
-	.string "Did you have fun on your journey?\n"
-	.string "There's a lot of interesting and\l"
+	.string "Did you have fun on your journey?\p"
+	.string "There's a lot of interesting and\n"
 	.string "wonderful people in our region.\p"
-	.string "Well, that's enough yapping.\n"
-	.string "You came here to battle. Come on!$"
+	.string "Alright! Show me how strong you\n"
+	.string "and your POKéMON have become!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "I, the CEO, was defeated…\p"

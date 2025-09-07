@@ -269,8 +269,8 @@ script EverGrandeCity_EventScript_James{
     waitmovement(5)
     delay(30)
     playbgm(MUS_THE_DAY_WILL_COME, FALSE)
-    msgbox("JAMES: …\n
-        It feels like… I was always\l
+    msgbox("JAMES: …\p
+        It feels like… I was always\n
         destined to lose to you, {PLAYER}.", MSGBOX_DEFAULT)
     waitmessage
     applymovement(5, Common_Movement_WalkInPlaceDown)
@@ -283,7 +283,7 @@ script EverGrandeCity_EventScript_James{
     waitmessage
     giveitem(ITEM_MEGA_RING)
     waitmessage
-    giveitem(ITEM_EXP_CANDY_XL, 50)
+    giveitem(ITEM_EXP_CANDY_XL, 99)
     waitmessage
     msgbox(EverGrandeCity_Text_James5, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -299,7 +299,7 @@ script EverGrandeCity_EventScript_James{
     setflag(FLAG_HIDE_RIVAL_EVERGRANDE_CITY)
     setflag(FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY)
     clearflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
-    setflag(FLAG_DEFEATED_JAMES_EVERGRANDE) // level cap from 60 to 75
+    setflag(FLAG_DEFEATED_JAMES_EVERGRANDE) // level cap from 65 to 75
     clearflag(FLAG_ENABLED_JOMITHIUS_MATCH_CALL)
     setflag(FLAG_ENABLED_JAMES_MATCH_CALL) // update match call to match new sprite.
     setvar(VAR_MISA_STATE, 10)

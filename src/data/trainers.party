@@ -5024,8 +5024,8 @@ EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly Nature  
 - Swords Dance  
 - Play Rough  
-- Shadow Sneak  
-- Shadow Claw  
+- Shadow Claw 
+- Wood Hammer 
 
 Eiscue (M) @ Sitrus Berry  
 Ability: Ice Face  
@@ -6945,7 +6945,8 @@ Jolly Nature
 - Knock Off  
 
 Typhlosion (M) @ Typhlosionite
-Ability: Flash Fire  
+Ability: Flash Fire 
+Level: 75   
 Shiny: Yes  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -6957,6 +6958,7 @@ IVs: 0 Atk
 
 Dragalge @ Assault Vest  
 Ability: Adaptability  
+Level: 75  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 - Dragon Pulse  
@@ -6973,7 +6975,6 @@ Adamant Nature
 - Bulk Up  
 - Jet Punch  
 - Drain Punch  
-- Flip Turn   
 
 === TRAINER_ANDREW ===
 Name: ANDREW
@@ -24748,13 +24749,12 @@ IVs: 0 Atk
 - Recover  
 - Focus Blast  
 
-Mimikyu (F) @ Life Orb  
+Mimikyu (F)
 Ability: Disguise  
 Level: 75   
 Jolly Nature  
-- Swords Dance  
+- Hone Claws
 - Play Rough  
-- Shadow Sneak  
 - Shadow Claw  
 
 Eiscue (M) @ Sitrus Berry  
@@ -26676,7 +26676,8 @@ Jolly Nature
 - Knock Off  
 
 Typhlosion (M) @ Typhlosionite
-Ability: Flash Fire  
+Ability: Flash Fire 
+Level: 75   
 Shiny: Yes  
 Timid Nature  
 IVs: 0 Atk  
@@ -26686,7 +26687,8 @@ IVs: 0 Atk
 - Overheat 
 
 Dragalge @ Assault Vest  
-Ability: Adaptability   
+Ability: Adaptability 
+Level: 75    
 Modest Nature  
 - Dragon Pulse  
 - Sludge Wave  
@@ -26700,8 +26702,7 @@ Shiny: Yes
 Adamant Nature  
 - Bulk Up  
 - Jet Punch  
-- Drain Punch  
-- Flip Turn   
+- Close Combat
 
 === TRAINER_ANDREW ===
 Name: ANDREW

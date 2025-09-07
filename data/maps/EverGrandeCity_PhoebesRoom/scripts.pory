@@ -469,6 +469,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_Luxray{
 	playmoncry(SPECIES_LUXRAY, CRY_MODE_ENCOUNTER)
 	delay(24)
 	applymovement(2, Common_Movement_FaceOriginalDirection)
+    waitmovement(2)
 	release
 	end
 }

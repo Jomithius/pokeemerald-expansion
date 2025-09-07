@@ -71,7 +71,7 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 	.string "Welcome! I'm XION\n"
 	.string "of the ELITE FOUR.\p"
 	.string "Are you the TRAINER that MISA\n"
-	.string "had talked to me about?\p"
+	.string "had talked about?\p"
 	.string "Not many TRAINERS can usually\n"
 	.string "make it this far.\p"
 	.string "Let me find out if you're\n"
@@ -99,8 +99,8 @@ text EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech{
     "Oh, you're that TRAINER I met in\n
     VERDANTURF! So you made it this far.\l
     Again, I'm XION of the ELITE FOUR.\p
-    Let me see how strong the TRAINER\n
-    that MISA believed in really is!"
+    Let me see how strong you've\n
+    gotten since then!"
 }
 
 script EverGrandeCity_GlaciasRoom_EventScript_Leafeon{
@@ -109,6 +109,7 @@ script EverGrandeCity_GlaciasRoom_EventScript_Leafeon{
 	playmoncry(SPECIES_LEAFEON, CRY_MODE_ENCOUNTER)
 	delay(24)
 	applymovement(2, Common_Movement_FaceOriginalDirection)
+	waitmovement(2)
 	release
 	end
 }
@@ -147,8 +148,8 @@ script EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch{
 script EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech{
 	msgbox("I'm impressed, {PLAYER}!\n
 		You really beat me.\p
-		Be careful on your next battle.\n
-		DAVE was pretty mad when he lost\l
+		Be careful on your next battle.\p
+		DAVE was pretty mad when he lost\n
 		to you last time.\p
 		He might be planning something.", MSGBOX_DEFAULT)
 	release

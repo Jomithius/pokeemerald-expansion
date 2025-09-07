@@ -99,7 +99,7 @@ EverGrandeCity_SidneysRoom_Text_IntroSpeech2:
     .string "ARE YOU READY TO GET S-MOTHERED?$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
-	.string "Wow, you did great! I lost!\n"
+	.string "Wow, {PLAYER}! I lost!\n"
 	.string "You've grown so much!$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
@@ -117,6 +117,7 @@ script EverGrandeCity_SidneysRoom_EventScript_Togekiss{
 	playmoncry(SPECIES_TOGEKISS, CRY_MODE_ENCOUNTER)
 	delay(24)
 	applymovement(2, Common_Movement_FaceOriginalDirection)
+	waitmovement(2)
 	release
 	end
 }

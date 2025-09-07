@@ -80,7 +80,7 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "Thank.$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat:
-	.string "I swear to God dude…$"
+	.string "I swear to God, dude…$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "Oh, well.\n"
@@ -97,7 +97,7 @@ script EverGrandeCity_DrakesRoom_EventScript_Dave{
 }
 
 text EverGrandeCity_DrakesRoom_Text_DaveIntro{
-    "Oh, hello again.\n
+    "Oh, yes. Hello, {PLAYER}.\n
     Good job on making it this far.\p
     Once again, I'm DAVE of the ELITE FOUR.\n
     Keep your promise and lose to me, okay?"
@@ -108,7 +108,8 @@ script EverGrandeCity_DrakesRoom_EventScript_Banette{
 	faceplayer
 	playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
 	delay(24)
-	applymovement(2, Common_Movement_FaceOriginalDirection)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(VAR_LAST_TALKED)
 	release
 	end
 }
