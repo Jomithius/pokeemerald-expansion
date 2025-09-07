@@ -6,7 +6,7 @@ RatCave_Central_MapScripts::
 
 RatCave_Central_OnTransition::
 # 6 "data/maps/RatCave_Central/scripts.pory"
-	setflag FLAG_SYS_DYNAMIC_LEVELS
+	clearflag FLAG_SYS_DYNAMIC_LEVELS
 	end
 
 

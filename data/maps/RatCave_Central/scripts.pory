@@ -3,7 +3,7 @@ mapscripts RatCave_Central_MapScripts {
 }
 
 script RatCave_Central_OnTransition{
-    setflag(FLAG_SYS_DYNAMIC_LEVELS)
+    clearflag(FLAG_SYS_DYNAMIC_LEVELS)
     end
 }
 

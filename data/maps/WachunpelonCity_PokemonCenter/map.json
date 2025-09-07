@@ -2,7 +2,7 @@
   "id": "MAP_WACHUNPELON_CITY_POKEMON_CENTER",
   "name": "WachunpelonCity_PokemonCenter",
   "layout": "LAYOUT_WACHUNPELON_CITY_POKEMON_CENTER",
-  "music": "MUS_RG_NET_CENTER",
+  "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_WACHUNPELON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

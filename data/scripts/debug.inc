@@ -174,7 +174,14 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	warp MAP_SKY_PILLAR_5F, 3, 2
+	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
+	setflag FLAG_DEFEATED_MISA
+	setflag FLAG_SYS_FINAL_REMATCH
+	clearflag FLAG_DEFEATED_EUGENIA
+	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
+	setvar VAR_LINA_TALKED_TO, 2
+	setflag FLAG_LINA_HOUSE_EEVEE 
+	warp MAP_EVER_GRANDE_CITY_HALL1, 3, 2
 	waitstate
 	release
 	end
@@ -207,9 +214,8 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-	setvar VAR_MOMO_ARIA_STATE, 6
-	warp MAP_EASTERN_RUINS, 16, 4
-	waitstate
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3
+	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
 	release
 	end
 

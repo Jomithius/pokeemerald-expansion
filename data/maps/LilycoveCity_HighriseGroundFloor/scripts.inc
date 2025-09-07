@@ -27,54 +27,54 @@ LilycoveCity_HighriseGroundFloor_EventScript_ToElevator::
 # 17 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	compare VAR_DIFFICULTY_SWITCH_COUNTER, 0
 	goto_if_eq LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_2
-# 30 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 25 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	msgbox LilycoveCity_HighriseGroundFloor_Text_Attendant, MSGBOX_DEFAULT
-# 31 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 26 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmessage
-# 32 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	giveitem ITEM_BIG_NUGGET, 30
+# 27 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	giveitem ITEM_BIG_NUGGET, 75
 LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_1:
-# 34 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 29 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmessage
-# 35 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	msgbox LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_Text_1, MSGBOX_AUTOCLOSE
+# 30 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	msgbox LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_Text_0, MSGBOX_AUTOCLOSE
+# 36 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	waitmessage
 # 37 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	waitmessage
-# 38 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	playbgm MUS_FOLLOW_ME, FALSE
-# 39 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 38 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement 6, Common_Movement_WalkUp4
-# 40 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 39 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	delay 20
-# 41 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 40 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
+# 41 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	waitmovement 0
 # 42 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	waitmovement 0
-# 43 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	opendoor 8, 1
+# 43 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	waitdooranim
 # 44 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	waitdooranim
-# 45 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement 6, Common_Movement_WalkUp
-# 46 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 45 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmovement 6
-# 47 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 46 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	removeobject 6
-# 48 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 47 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
-# 49 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 48 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmovement 0
-# 50 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 49 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR
-# 51 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 50 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	closedoor 8, 1
-# 52 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 51 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitdooranim
-# 53 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 52 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	warpdoor MAP_LILYCOVE_CITY_HIGHRISE_ELEVATOR, 2, 6
-# 54 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 53 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitstate
-# 55 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 54 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	releaseall
 	end
 
@@ -84,108 +84,100 @@ LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_2:
 # 19 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmessage
 # 20 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	giveitem ITEM_BIG_NUGGET, 50
+	giveitem ITEM_BIG_NUGGET, 75
 # 21 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmessage
 # 22 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	giveitem ITEM_CHERISH_BALL, 50
-# 23 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	waitmessage
-# 24 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	msgbox LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_Text_0, MSGBOX_DEFAULT
 	goto LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_1
 
 
 LilycoveCity_HighriseGroundFloor_EventScript_NoEntry::
-# 81 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 80 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	lockall
-# 82 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 81 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	playse SE_PIN
-# 83 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 82 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement 2, Common_Movement_ExclamationMark
+# 83 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	waitmovement 2
 # 84 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	waitmovement 2
-# 85 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	delay 10
-# 86 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 85 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
-# 87 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 86 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement 2, Common_Movement_WalkInPlaceRight
+# 87 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	waitmovement 2
 # 88 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	waitmovement 2
-# 89 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	msgbox LilycoveCity_HighriseGroundFloor_Text_StaffEmployee, MSGBOX_AUTOCLOSE
-# 90 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 89 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmessage
-# 91 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 90 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
-# 92 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 91 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmovement 0
-# 93 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 92 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	applymovement 2, Common_Movement_WalkInPlaceDown
-# 94 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 93 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmovement 2
-# 95 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 94 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	releaseall
 	end
 
 
 LilycoveCity_HighriseGroundFloor_EventScript_Woman::
-# 105 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 104 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	msgbox LilycoveCity_HighriseGroundFloor_EventScript_Woman_Text_0, MSGBOX_NPC
 	end
 
 
 LilycoveCity_HighriseGroundFloor_EventScript_StaffMember::
-# 111 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 110 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	msgbox LilycoveCity_HighriseGroundFloor_EventScript_StaffMember_Text_0, MSGBOX_SIGN
 	end
 
 
 LilycoveCity_HighriseGroundFloor_EventScript_Gentleman::
-# 116 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 115 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	msgbox LilycoveCity_HighriseGroundFloor_EventScript_Gentleman_Text_0, MSGBOX_NPC
 	end
 
 
 LilycoveCity_HighriseGroundFloor_EventScript_Maniac::
-# 122 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 121 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	msgbox LilycoveCity_HighriseGroundFloor_EventScript_Maniac_Text_0, MSGBOX_NPC
 	end
 
 
 LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_Text_0:
-# 24 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	.string "That is worth more money than\n you can hold.\p We recommend not selling it\n all at once.$"
-
-LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_Text_1:
-# 35 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	.string "Now, please allow me to\n show you to the CEO's office.$"
+# 30 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	.string "That is worth more money than\n you can hold.\p We recommend not selling it\n all at once.\p Now, please allow me to\n show you to the CEO's office.$"
 
 LilycoveCity_HighriseGroundFloor_EventScript_Woman_Text_0:
-# 105 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 104 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	.string "They said my meeting would be in “like\n an hour”, but that was two hours ago…$"
 
 LilycoveCity_HighriseGroundFloor_EventScript_StaffMember_Text_0:
-# 111 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 110 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	.string "…$"
 
 LilycoveCity_HighriseGroundFloor_EventScript_Gentleman_Text_0:
-# 116 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 115 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	.string "I finally get to meet with the CEO.\n I can't wait.$"
 
 LilycoveCity_HighriseGroundFloor_EventScript_Maniac_Text_0:
-# 122 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 121 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	.string "I heard rumors that the CEO has\n experience with things of the occult.\l Namely, the void…\l I'm going to ask him about it.$"
 
 LilycoveCity_HighriseGroundFloor_Text_Attendant::
-# 59 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 58 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	.string "Welcome, {PLAYER}.\n We have been expecting you.\p Please accept this gift from the CEO\n for becoming CHAMPION.$"
 
 LilycoveCity_HighriseGroundFloor_Text_AttendantHardMode::
-# 66 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	.string "Welcome, {PLAYER}.\n We have been expecting you.\p Please accept this gift from the CEO\n for becoming CHAMPION, along with\l this added message:\p “I'm really impressed with the skill\n that you've shown in your battles.\p You truly are one of the best\n TRAINERS in the region.\p In respect for your skill, take these extra gifts.”$"
+# 65 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	.string "Welcome, {PLAYER}.\n We have been expecting you.\p Please accept this gift from the CEO\n for becoming CHAMPION, along with\l this added message:\p “I'm really impressed with the skill\n that you've shown in your battles.\p You truly are one of the best\n TRAINERS in the region.\p In respect for your skill, take\n this extra gift.”$"
 
 LilycoveCity_HighriseGroundFloor_Text_StaffEmployee::
-# 99 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+# 98 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	.string "I'm sorry CHAMPION, but you're not\n scheduled to meet with the CEO.$"

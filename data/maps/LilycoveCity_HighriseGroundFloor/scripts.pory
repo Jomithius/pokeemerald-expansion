@@ -17,23 +17,22 @@ script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
     if(var(VAR_DIFFICULTY_SWITCH_COUNTER) == 0){
         msgbox(LilycoveCity_HighriseGroundFloor_Text_AttendantHardMode, MSGBOX_DEFAULT)
         waitmessage
-        giveitem(ITEM_BIG_NUGGET, 50)
+        giveitem(ITEM_BIG_NUGGET, 75)
         waitmessage
         giveitem(ITEM_CHERISH_BALL, 50)
-        waitmessage
-        msgbox("That is worth more money than\n
-            you can hold.\p
-            We recommend not selling it\n
-            all at once.", MSGBOX_DEFAULT)
     }
     else{
         msgbox(LilycoveCity_HighriseGroundFloor_Text_Attendant, MSGBOX_DEFAULT)
         waitmessage
-        giveitem(ITEM_BIG_NUGGET, 30)
+        giveitem(ITEM_BIG_NUGGET, 75)
     }
     waitmessage
-    msgbox("Now, please allow me to\n
-        show you to the CEO's office.", MSGBOX_AUTOCLOSE)
+    msgbox("That is worth more money than\n
+            you can hold.\p
+            We recommend not selling it\n
+            all at once.\p
+            Now, please allow me to\n
+            show you to the CEO's office.", MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_FOLLOW_ME, FALSE)
     applymovement(6, Common_Movement_WalkUp4)
@@ -73,8 +72,8 @@ text LilycoveCity_HighriseGroundFloor_Text_AttendantHardMode{
     that you've shown in your battles.\p
     You truly are one of the best\n
     TRAINERS in the region.\p
-    In respect for your skill, take
-    these extra gifts.”"
+    In respect for your skill, take\n
+    this extra gift.”"
 }
 
 script LilycoveCity_HighriseGroundFloor_EventScript_NoEntry{

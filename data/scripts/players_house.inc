@@ -425,9 +425,14 @@ PlayersHouse_1F_Movement_MovePlayerAwayFromDoor:
 
 PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	lockall
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale
-	call_if_eq VAR_RESULT, FEMALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale
+	@ checkplayergender
+	@ call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale
+	@ call_if_eq VAR_RESULT, FEMALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale
+	@ call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_PlayerEnterRoomMale
+	@ call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_PlayerEnterRoomFemale
+	@ custom in case of fantasia usage
+	call_if_set FLAG_SYS_STARTED_AS_BOY, PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale
+	call_if_set FLAG_SYS_STARTED_AS_GIRL, PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale
 	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_PlayerEnterRoomMale
 	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_PlayerEnterRoomFemale
 	applymovement VAR_0x8009, Common_Movement_FacePlayer

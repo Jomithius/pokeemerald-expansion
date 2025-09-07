@@ -1911,7 +1911,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             fixedLVL /= 10 + gPlayerPartyCount - 1;
 
         // to stop cheesing levels by having one or two low leveled pkmn    
-        if (fixedLVL <= 75)
+        if (fixedLVL <= 73)
             fixedLVL = 75;
 
         //if (fixedLVL < 2)

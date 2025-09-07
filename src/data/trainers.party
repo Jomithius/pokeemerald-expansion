@@ -884,10 +884,13 @@ Double Battle: No
 AI: Check Bad Move
 
 Naclstack
+Level: 70
 
 Probopass
+Level: 70
 
 Gigalith
+Level: 70
 
 === TRAINER_BAROLD === 
 Name: BAROLD
@@ -899,13 +902,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Carbink
+Level: 70
 
 Crustle
+Level: 70
 
 Archeops
+Level: 70
 
 === TRAINER_SAMSON ===
-Name: BAROLD
+Name: SAMSON
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -914,10 +920,13 @@ Double Battle: No
 AI: Check Bad Move
 
 Lycanroc-Midday
+Level: 70
 
 Lycanroc-Midnight
+Level: 70
 
 Lycanroc-Dusk
+Level: 70
 
 === TRAINER_DUSTY_1 ===
 Name: DUSTY
@@ -1007,8 +1016,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Orthworm
+Level: 70
 
 Hawlucha
+Level: 70
 
 === TRAINER_PAMMY ===
 Name: PAMMY
@@ -1020,6 +1031,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Pawmot
+Level: 73
 
 === TRAINER_SAMMY ===
 Name: SAMMY
@@ -1031,8 +1043,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Heracross
+Level: 70
 
 Lilligant-Hisui
+Level: 70
 
 === TRAINER_GABBY_AND_TY_1 ===
 Name: GABBY & TY
@@ -1197,8 +1211,10 @@ Double Battle: No
 AI: Basic Trainer 
 
 Samurott-Hisui
+Level: 72
 
 Lokix
+Level: 72
 
 === TRAINER_MAXIMILLIAN ===
 Name: MAXIMILL
@@ -6923,7 +6939,7 @@ IVs: 0 Atk
 - Night Shade  
 - Toxic  
 
-Samurott-Hisui (M) @ Life Orb  
+Samurott-Hisui (M) @ Choice Band
 Ability: Sharpness  
 Level: 75  
 Shiny: Yes  
@@ -17796,7 +17812,7 @@ Pic: Whitney
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer 
+AI: Smart Trainer 
 Mugshot: Pink
 
 Clefable (F) @ Leftovers  
@@ -20448,10 +20464,13 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Naclstack
+Level: 70
 
 Probopass
+Level: 70
 
 Gigalith
+Level: 70
 
 === TRAINER_BAROLD === 
 Name: BAROLD
@@ -20464,13 +20483,16 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Carbink
+Level: 70
 
 Crustle
+Level: 70
 
 Archeops
+Level: 70
 
 === TRAINER_SAMSON ===
-Name: BAROLD
+Name: SAMSON
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -20480,10 +20502,13 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Lycanroc-Midday
+Level: 70
 
 Lycanroc-Midnight
+Level: 70
 
 Lycanroc-Dusk
+Level: 70
 
 === TRAINER_DUSTY_1 ===
 Name: DUSTY
@@ -20578,8 +20603,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Orthworm
+Level: 70
 
 Hawlucha
+Level: 70
 
 === TRAINER_PAMMY ===
 Name: PAMMY
@@ -20592,6 +20619,7 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Pawmot
+Level: 73
 
 === TRAINER_SAMMY ===
 Name: SAMMY
@@ -20604,8 +20632,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Heracross
+Level: 70
 
 Lilligant-Hisui
+Level: 70
 
 === TRAINER_GABBY_AND_TY_1 ===
 Name: GABBY & TY
@@ -20780,8 +20810,10 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Samurott-Hisui
+Level: 72
 
 Lokix
+Level: 72
 
 === TRAINER_MAXIMILLIAN ===
 Name: MAXIMILL
@@ -26656,7 +26688,7 @@ IVs: 0 Atk
 - Night Shade  
 - Toxic  
 
-Samurott-Hisui (M) @ Life Orb  
+Samurott-Hisui (M) @ Choice Band
 Ability: Sharpness  
 Level: 75  
 Shiny: Yes   

@@ -1682,7 +1682,7 @@
     },
     {
       "map_section": "MAPSEC_ALTERING_CAVE",
-      "name": "ALTERING CAVE",
+      "name": "STARTER CAVE",
       "x": 6,
       "y": 8,
       "width": 1,
@@ -3556,7 +3556,7 @@
     },
     {
       "map_section": "MAPSEC_ALTERING_CAVE",
-      "name": "ALTERING CAVE",
+      "name": "STARTER CAVE",
       "x": 0,
       "y": 0,
       "width": 1,
