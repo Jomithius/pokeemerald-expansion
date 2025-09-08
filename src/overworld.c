@@ -1173,6 +1173,17 @@ u16 GetCurrLocationDefaultMusic(void)
      && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE111)
      && GetSavedWeather() == WEATHER_SANDSTORM)
         return MUS_DESERT;
+    // Play eterna city night theme only in the ranch. sectioned because of map layout    
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE135)
+        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE135) 
+        && gSaveBlock1Ptr->pos.x < 34 && gSaveBlock1Ptr->pos.y < 40
+        && !TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
+        return MUS_ETERNA_CITY_NIGHT;
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE135)
+        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE135) 
+        && gSaveBlock1Ptr->pos.x < 45 && gSaveBlock1Ptr->pos.x > 33
+        && gSaveBlock1Ptr->pos.y < 17)
+        return MUS_ETERNA_CITY_NIGHT;
 
     music = GetLocationMusic(&gSaveBlock1Ptr->location);
     if (music != MUS_ROUTE118)
@@ -1250,6 +1261,13 @@ static void TransitionMapMusic(void)
                 return;
             if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
                 newMusic = MUS_SURF;
+            // for lush acreage houses
+            if (currentMusic == MUS_ETERNA_CITY_NIGHT
+            && sWarpDestination.mapGroup == MAP_GROUP(ROUTE135)
+            && sWarpDestination.mapNum == MAP_NUM(ROUTE135)
+            && sWarpDestination.x <= 28
+            && sWarpDestination.y <= 9)
+            return;
         }
         if (newMusic != currentMusic)
         {
@@ -1298,6 +1316,12 @@ void TryFadeOutOldMapMusic(void)
             && sWarpDestination.mapNum == MAP_NUM(SOOTOPOLIS_CITY)
             && sWarpDestination.x == 29
             && sWarpDestination.y == 53)
+            return;
+        if (currentMusic == MUS_ETERNA_CITY_NIGHT
+            && sWarpDestination.mapGroup == MAP_GROUP(ROUTE135)
+            && sWarpDestination.mapNum == MAP_NUM(ROUTE135)
+            && sWarpDestination.x <= 28
+            && sWarpDestination.y <= 9)
             return;
         FadeOutMapMusic(GetMapMusicFadeoutSpeed());
     }

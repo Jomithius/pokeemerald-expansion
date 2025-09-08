@@ -175,7 +175,7 @@
       "x": 24,
       "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -185,8 +185,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 44,
-      "y": 3,
+      "x": 48,
+      "y": 62,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -299,6 +299,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "AreaZero_EventScript_Cosmog",
       "flag": "FLAG_HIDE_COSMOG_ULTRA_SPACE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 47,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_Z_POWER_RING",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ULTRA_SPACE_Z_POWER_RING"
     }
   ],
   "warp_events": [

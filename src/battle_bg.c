@@ -805,6 +805,13 @@ void DrawMainBattleBackground(void)
             LZDecompressVram(gBattleEnvironmentTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
             LoadCompressedPalette(gBattleEnvironmentPalette_Rayquaza, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
+        case SPECIES_SOLGALEO:
+        case SPECIES_LUNALA:
+        case SPECIES_NECROZMA:
+            LZDecompressVram(gBattleEnvironmentTiles_UltraSpace, (void*)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(gBattleEnvironmentTilemap_UltraSpace, (void*)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleEnvironmentPalette_UltraSpace, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            break;
         default:
             LZDecompressVram(sBattleEnvironmentTable[gBattleEnvironment].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleEnvironmentTable[gBattleEnvironment].tilemap, (void *)(BG_SCREEN_ADDR(26)));
