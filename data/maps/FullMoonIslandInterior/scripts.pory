@@ -38,7 +38,9 @@ script FullMoonIslandInterior_EventScript_RatduardoBattle{
     msgbox(FullMoonIslandInterior_Text_Ratduardo, MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_TEMP_5)
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_Text_RatduardoDefeat)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreenspeed(FADE_FROM_BLACK, 2)

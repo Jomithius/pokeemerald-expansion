@@ -624,7 +624,9 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
         Will you be the first one to defeat me?", MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_NONE, TRUE)
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     delay(30)
     playse(SE_PIN)
@@ -683,7 +685,9 @@ script BaldesianForestDojo_EventScript_ChallengeBruno{
         me again. Very well.\p
         Will you be the first one to defeat me?", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     playbgm(MUS_NONE, FALSE)
     delay(30)
     playse(SE_PIN)

@@ -155,79 +155,83 @@ SnowdriftCity_House3_EventScript_CynthiaBattle::
 # 109 "data/maps/SnowdriftCity_House3/scripts.pory"
 	waitmessage
 # 110 "data/maps/SnowdriftCity_House3/scripts.pory"
-	trainerbattle_no_intro TRAINER_CYNTHIA, SnowdriftCity_House3_Text_CynthiaLoss
+	setflag FLAG_SYS_BOSS_BATTLE
 # 111 "data/maps/SnowdriftCity_House3/scripts.pory"
+	trainerbattle_no_intro TRAINER_CYNTHIA, SnowdriftCity_House3_Text_CynthiaLoss
+# 112 "data/maps/SnowdriftCity_House3/scripts.pory"
+	clearflag FLAG_SYS_BOSS_BATTLE
+# 113 "data/maps/SnowdriftCity_House3/scripts.pory"
 	msgbox SnowdriftCity_House3_EventScript_CynthiaBattle_Text_1, MSGBOX_AUTOCLOSE
-# 118 "data/maps/SnowdriftCity_House3/scripts.pory"
-	waitmessage
-# 119 "data/maps/SnowdriftCity_House3/scripts.pory"
-	applymovement 1, SnowdriftCity_House3_Movement_CynthiaReturnsToSeat
 # 120 "data/maps/SnowdriftCity_House3/scripts.pory"
-	waitmovement 1
+	waitmessage
 # 121 "data/maps/SnowdriftCity_House3/scripts.pory"
-	setflag FLAG_SYS_DEFEATED_CYNTHIA
+	applymovement 1, SnowdriftCity_House3_Movement_CynthiaReturnsToSeat
 # 122 "data/maps/SnowdriftCity_House3/scripts.pory"
-	setvar VAR_CYNTHIA_STATE, 2
+	waitmovement 1
 # 123 "data/maps/SnowdriftCity_House3/scripts.pory"
-	call_if_eq VAR_ULTRA_SPACE_STATE, 4, SnowdriftCity_House3_EventScriptTryUnlockAreaZero
+	setflag FLAG_SYS_DEFEATED_CYNTHIA
 # 124 "data/maps/SnowdriftCity_House3/scripts.pory"
-	savebgm MUS_DUMMY
+	setvar VAR_CYNTHIA_STATE, 2
 # 125 "data/maps/SnowdriftCity_House3/scripts.pory"
-	fadedefaultbgm
+	call_if_eq VAR_ULTRA_SPACE_STATE, 4, SnowdriftCity_House3_EventScriptTryUnlockAreaZero
 # 126 "data/maps/SnowdriftCity_House3/scripts.pory"
+	savebgm MUS_DUMMY
+# 127 "data/maps/SnowdriftCity_House3/scripts.pory"
+	fadedefaultbgm
+# 128 "data/maps/SnowdriftCity_House3/scripts.pory"
 	releaseall
 	end
 
 
 SnowdriftCity_House3_EventScriptTryUnlockAreaZero::
-# 131 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 133 "data/maps/SnowdriftCity_House3/scripts.pory"
 	goto_if_unset FLAG_SYS_UNLOCKED_AREA_ZERO, SnowdriftCity_House3_EventScriptTryUnlockAreaZero_2
 SnowdriftCity_House3_EventScriptTryUnlockAreaZero_1:
 	return
 
 SnowdriftCity_House3_EventScriptTryUnlockAreaZero_2:
-# 132 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 134 "data/maps/SnowdriftCity_House3/scripts.pory"
 	setvar VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0
 	goto SnowdriftCity_House3_EventScriptTryUnlockAreaZero_1
 
 
 SnowdriftCity_House3_EventScript_Cynthia::
-# 138 "data/maps/SnowdriftCity_House3/scripts.pory"
-	lock
-# 139 "data/maps/SnowdriftCity_House3/scripts.pory"
-	faceplayer
 # 140 "data/maps/SnowdriftCity_House3/scripts.pory"
+	lock
+# 141 "data/maps/SnowdriftCity_House3/scripts.pory"
+	faceplayer
+# 142 "data/maps/SnowdriftCity_House3/scripts.pory"
 	msgbox SnowdriftCity_House3_EventScript_Cynthia_Text_0, MSGBOX_AUTOCLOSE
-# 150 "data/maps/SnowdriftCity_House3/scripts.pory"
-	waitmessage
-# 151 "data/maps/SnowdriftCity_House3/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 152 "data/maps/SnowdriftCity_House3/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 153 "data/maps/SnowdriftCity_House3/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 154 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmovement 0
+# 155 "data/maps/SnowdriftCity_House3/scripts.pory"
 	release
 	end
 
 
-# 163 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 165 "data/maps/SnowdriftCity_House3/scripts.pory"
 SnowdriftCity_House3_Movement_CynthiaReturnsToSeat:
-# 164 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 166 "data/maps/SnowdriftCity_House3/scripts.pory"
 	walk_up
-# 164 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 166 "data/maps/SnowdriftCity_House3/scripts.pory"
 	walk_up
-# 165 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 167 "data/maps/SnowdriftCity_House3/scripts.pory"
 	walk_right
-# 165 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 167 "data/maps/SnowdriftCity_House3/scripts.pory"
 	walk_right
 	step_end
 
-# 168 "data/maps/SnowdriftCity_House3/scripts.pory"
-SnowdriftCity_House3_Movement_CynthiaApproachesPlayer:
-# 169 "data/maps/SnowdriftCity_House3/scripts.pory"
-	walk_left
-# 169 "data/maps/SnowdriftCity_House3/scripts.pory"
-	walk_left
 # 170 "data/maps/SnowdriftCity_House3/scripts.pory"
+SnowdriftCity_House3_Movement_CynthiaApproachesPlayer:
+# 171 "data/maps/SnowdriftCity_House3/scripts.pory"
+	walk_left
+# 171 "data/maps/SnowdriftCity_House3/scripts.pory"
+	walk_left
+# 172 "data/maps/SnowdriftCity_House3/scripts.pory"
 	walk_down
 	step_end
 
@@ -276,13 +280,13 @@ SnowdriftCity_House3_EventScript_CynthiaBattle_Text_0:
 	.string "Before I send out my POKéMON,\n my heart always begins to race…\p Interesting…\n My POKéMON in their POKé BALLS are\l radiating a happy feeling.\p Are you the reason?\n What are you?$"
 
 SnowdriftCity_House3_EventScript_CynthiaBattle_Text_1:
-# 111 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 113 "data/maps/SnowdriftCity_House3/scripts.pory"
 	.string "That was beyond my expectation!\n What an exceptional battle!\l I love being visiting HOENN.\p I can't stay all year, because there's so\n much to investigate in SINNOH, as well.\p You're a great TRAINER, and it would\n make me happy to see you again sometime.$"
 
 SnowdriftCity_House3_EventScript_Cynthia_Text_0:
-# 140 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 142 "data/maps/SnowdriftCity_House3/scripts.pory"
 	.string "You certainly bear a resemblance\n to that TRAINER who faced GIRATINA…\p Oh, pardon me.\n I was just thinking out loud.\p I love visiting HOENN.\p I can't stay all year, because there's so\n much to investigate in SINNOH, as well.\p Though I've heard in HOENN there's six\n legendary golems, compared to the four\l in SINNOH.$"
 
 SnowdriftCity_House3_Text_CynthiaLoss::
-# 157 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 159 "data/maps/SnowdriftCity_House3/scripts.pory"
 	.string "My heart is pounding so hard because I\n had such a heated battle with you.\p You're a really great TRAINER!!$"

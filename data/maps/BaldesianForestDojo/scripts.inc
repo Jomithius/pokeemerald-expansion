@@ -958,449 +958,457 @@ BaldesianForestDojo_EventScript_DojoChallenge::
 # 626 "data/maps/BaldesianForestDojo/scripts.pory"
 	playbgm MUS_NONE, TRUE
 # 627 "data/maps/BaldesianForestDojo/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat
+	setflag FLAG_SYS_BOSS_BATTLE
 # 628 "data/maps/BaldesianForestDojo/scripts.pory"
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	trainerbattle_no_intro TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat
 # 629 "data/maps/BaldesianForestDojo/scripts.pory"
-	delay 30
+	clearflag FLAG_SYS_BOSS_BATTLE
 # 630 "data/maps/BaldesianForestDojo/scripts.pory"
-	playse SE_PIN
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 631 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 23, Common_Movement_ExclamationMark
+	delay 30
 # 632 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 23
+	playse SE_PIN
 # 633 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitse
+	applymovement 23, Common_Movement_ExclamationMark
 # 634 "data/maps/BaldesianForestDojo/scripts.pory"
-	msgbox BaldesianForestDojo_EventScript_DojoChallenge_Text_6, MSGBOX_AUTOCLOSE
+	waitmovement 23
 # 635 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmessage
+	waitse
 # 636 "data/maps/BaldesianForestDojo/scripts.pory"
-	playfanfare MUS_OBTAIN_B_POINTS
+	msgbox BaldesianForestDojo_EventScript_DojoChallenge_Text_6, MSGBOX_AUTOCLOSE
 # 637 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitfanfare
-# 638 "data/maps/BaldesianForestDojo/scripts.pory"
-	savebgm MUS_DUMMY
-# 639 "data/maps/BaldesianForestDojo/scripts.pory"
-	fadedefaultbgm
-# 640 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceUp
-# 641 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 0
-# 642 "data/maps/BaldesianForestDojo/scripts.pory"
-	msgbox BaldesianForestDojo_EventScript_DojoChallenge_Text_7, MSGBOX_AUTOCLOSE
-# 644 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmessage
-# 645 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 1, Common_Movement_WalkUp4
+# 638 "data/maps/BaldesianForestDojo/scripts.pory"
+	playfanfare MUS_OBTAIN_B_POINTS
+# 639 "data/maps/BaldesianForestDojo/scripts.pory"
+	waitfanfare
+# 640 "data/maps/BaldesianForestDojo/scripts.pory"
+	savebgm MUS_DUMMY
+# 641 "data/maps/BaldesianForestDojo/scripts.pory"
+	fadedefaultbgm
+# 642 "data/maps/BaldesianForestDojo/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceUp
+# 643 "data/maps/BaldesianForestDojo/scripts.pory"
+	waitmovement 0
+# 644 "data/maps/BaldesianForestDojo/scripts.pory"
+	msgbox BaldesianForestDojo_EventScript_DojoChallenge_Text_7, MSGBOX_AUTOCLOSE
 # 646 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 647 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 1, Common_Movement_FaceDown
+	applymovement 1, Common_Movement_WalkUp4
 # 648 "data/maps/BaldesianForestDojo/scripts.pory"
-	delay 8
+	waitmovement 0
 # 649 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+	applymovement 1, Common_Movement_FaceDown
 # 650 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 0
+	delay 8
 # 651 "data/maps/BaldesianForestDojo/scripts.pory"
-	callnative RemoveFollowingPokemon
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
 # 652 "data/maps/BaldesianForestDojo/scripts.pory"
-	setflag FLAG_TEMP_E
-# 653 "data/maps/BaldesianForestDojo/scripts.pory"
-	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 654 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerReturns
-# 655 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmovement 0
+# 653 "data/maps/BaldesianForestDojo/scripts.pory"
+	callnative RemoveFollowingPokemon
+# 654 "data/maps/BaldesianForestDojo/scripts.pory"
+	setflag FLAG_TEMP_E
+# 655 "data/maps/BaldesianForestDojo/scripts.pory"
+	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 656 "data/maps/BaldesianForestDojo/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	applymovement OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerReturns
 # 657 "data/maps/BaldesianForestDojo/scripts.pory"
-	call BaldesianForestDojo_ResetDisciplePositions
+	waitmovement 0
 # 658 "data/maps/BaldesianForestDojo/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
 # 659 "data/maps/BaldesianForestDojo/scripts.pory"
-	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 4
+	call BaldesianForestDojo_ResetDisciplePositions
 # 660 "data/maps/BaldesianForestDojo/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 661 "data/maps/BaldesianForestDojo/scripts.pory"
+	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 4
+# 662 "data/maps/BaldesianForestDojo/scripts.pory"
 	release
 	end
 
 
 BaldesianForestDojo_EventScript_ChallengeBruno::
-# 665 "data/maps/BaldesianForestDojo/scripts.pory"
-	lock
-# 666 "data/maps/BaldesianForestDojo/scripts.pory"
-	clearflag FLAG_TEMP_E
 # 667 "data/maps/BaldesianForestDojo/scripts.pory"
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	lock
 # 668 "data/maps/BaldesianForestDojo/scripts.pory"
-	callnative UpdateFollowingPokemon
+	clearflag FLAG_TEMP_E
 # 669 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerGoesToGauntlet
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 670 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 0
+	callnative UpdateFollowingPokemon
 # 671 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 1, Common_Movement_WalkDown4
+	applymovement OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerGoesToGauntlet
 # 672 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 2, Common_Movement_WalkDown4
+	waitmovement 0
 # 673 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 0
+	applymovement 1, Common_Movement_WalkDown4
 # 674 "data/maps/BaldesianForestDojo/scripts.pory"
-	playse SE_BALL_OPEN
+	applymovement 2, Common_Movement_WalkDown4
 # 675 "data/maps/BaldesianForestDojo/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 676 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball
-# 677 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmovement 0
+# 676 "data/maps/BaldesianForestDojo/scripts.pory"
+	playse SE_BALL_OPEN
+# 677 "data/maps/BaldesianForestDojo/scripts.pory"
+	fadescreen FADE_TO_WHITE
 # 678 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball
 # 679 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmovement 0
 # 680 "data/maps/BaldesianForestDojo/scripts.pory"
-	fadescreen FADE_FROM_WHITE
+	applymovement OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer
 # 681 "data/maps/BaldesianForestDojo/scripts.pory"
-	playbgm MUS_KIMONO_DANCE, FALSE
+	waitmovement 0
 # 682 "data/maps/BaldesianForestDojo/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 683 "data/maps/BaldesianForestDojo/scripts.pory"
+	playbgm MUS_KIMONO_DANCE, FALSE
+# 684 "data/maps/BaldesianForestDojo/scripts.pory"
 	msgbox BaldesianForestDojo_EventScript_ChallengeBruno_Text_0, MSGBOX_AUTOCLOSE
-# 685 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmessage
-# 686 "data/maps/BaldesianForestDojo/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat
 # 687 "data/maps/BaldesianForestDojo/scripts.pory"
-	playbgm MUS_NONE, FALSE
+	waitmessage
 # 688 "data/maps/BaldesianForestDojo/scripts.pory"
-	delay 30
+	setflag FLAG_SYS_BOSS_BATTLE
 # 689 "data/maps/BaldesianForestDojo/scripts.pory"
-	playse SE_PIN
+	trainerbattle_no_intro TRAINER_BRUNO, BaldesianForestDojo_Text_BrunoDefeat
 # 690 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 23, Common_Movement_ExclamationMark
+	clearflag FLAG_SYS_BOSS_BATTLE
 # 691 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 23
+	playbgm MUS_NONE, FALSE
 # 692 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitse
+	delay 30
 # 693 "data/maps/BaldesianForestDojo/scripts.pory"
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	playse SE_PIN
 # 694 "data/maps/BaldesianForestDojo/scripts.pory"
-	msgbox BaldesianForestDojo_EventScript_DojoChallenge_Text_6, MSGBOX_AUTOCLOSE
+	applymovement 23, Common_Movement_ExclamationMark
 # 695 "data/maps/BaldesianForestDojo/scripts.pory"
-	playfanfare MUS_OBTAIN_B_POINTS
+	waitmovement 23
 # 696 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitfanfare
+	waitse
 # 697 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmessage
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 698 "data/maps/BaldesianForestDojo/scripts.pory"
-	savebgm MUS_DUMMY
+	msgbox BaldesianForestDojo_EventScript_DojoChallenge_Text_6, MSGBOX_AUTOCLOSE
 # 699 "data/maps/BaldesianForestDojo/scripts.pory"
-	fadedefaultbgm
+	playfanfare MUS_OBTAIN_B_POINTS
 # 700 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceUp
+	waitfanfare
 # 701 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 0
-# 702 "data/maps/BaldesianForestDojo/scripts.pory"
-	msgbox BaldesianForestDojo_EventScript_ChallengeBruno_Text_1, MSGBOX_AUTOCLOSE
-# 704 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmessage
+# 702 "data/maps/BaldesianForestDojo/scripts.pory"
+	savebgm MUS_DUMMY
+# 703 "data/maps/BaldesianForestDojo/scripts.pory"
+	fadedefaultbgm
+# 704 "data/maps/BaldesianForestDojo/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceUp
 # 705 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 1, Common_Movement_WalkUp4
+	waitmovement 0
 # 706 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmovement 0
-# 707 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement 1, Common_Movement_FaceDown
+	msgbox BaldesianForestDojo_EventScript_ChallengeBruno_Text_1, MSGBOX_AUTOCLOSE
 # 708 "data/maps/BaldesianForestDojo/scripts.pory"
-	delay 8
+	waitmessage
 # 709 "data/maps/BaldesianForestDojo/scripts.pory"
-	callnative RemoveFollowingPokemon
+	applymovement 1, Common_Movement_WalkUp4
 # 710 "data/maps/BaldesianForestDojo/scripts.pory"
-	setflag FLAG_TEMP_E
-# 711 "data/maps/BaldesianForestDojo/scripts.pory"
-	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 712 "data/maps/BaldesianForestDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerReturns
-# 713 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmovement 0
+# 711 "data/maps/BaldesianForestDojo/scripts.pory"
+	applymovement 1, Common_Movement_FaceDown
+# 712 "data/maps/BaldesianForestDojo/scripts.pory"
+	delay 8
+# 713 "data/maps/BaldesianForestDojo/scripts.pory"
+	callnative RemoveFollowingPokemon
 # 714 "data/maps/BaldesianForestDojo/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_E
 # 715 "data/maps/BaldesianForestDojo/scripts.pory"
-	call BaldesianForestDojo_ResetDisciplePositions
+	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 716 "data/maps/BaldesianForestDojo/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	applymovement OBJ_EVENT_ID_PLAYER, BaldesianForestDojo_Movement_PlayerReturns
 # 717 "data/maps/BaldesianForestDojo/scripts.pory"
-	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 4
+	waitmovement 0
 # 718 "data/maps/BaldesianForestDojo/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 719 "data/maps/BaldesianForestDojo/scripts.pory"
+	call BaldesianForestDojo_ResetDisciplePositions
+# 720 "data/maps/BaldesianForestDojo/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 721 "data/maps/BaldesianForestDojo/scripts.pory"
+	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 4
+# 722 "data/maps/BaldesianForestDojo/scripts.pory"
 	release
 	end
 
 
-# 722 "data/maps/BaldesianForestDojo/scripts.pory"
+# 726 "data/maps/BaldesianForestDojo/scripts.pory"
 BaldesianForestDojo_Movement_AsakToPlayer:
-# 723 "data/maps/BaldesianForestDojo/scripts.pory"
+# 727 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_down
-# 723 "data/maps/BaldesianForestDojo/scripts.pory"
+# 727 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_down
-# 724 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 724 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 724 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 724 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 724 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 724 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 725 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_in_place_down
-	step_end
-
 # 728 "data/maps/BaldesianForestDojo/scripts.pory"
-BaldesianForestDojo_Movement_AsakToPlayerLeft:
+	walk_left
+# 728 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 728 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 728 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 728 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 728 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
 # 729 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 729 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 730 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 730 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 730 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 730 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 730 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 730 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 730 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 731 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_in_place_down
 	step_end
 
+# 732 "data/maps/BaldesianForestDojo/scripts.pory"
+BaldesianForestDojo_Movement_AsakToPlayerLeft:
+# 733 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 733 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
 # 734 "data/maps/BaldesianForestDojo/scripts.pory"
-BaldesianForestDojo_Movement_AsakReturns:
-# 735 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 735 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 735 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 735 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 735 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 735 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 736 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 736 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 737 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_in_place_left
-	step_end
-
-# 740 "data/maps/BaldesianForestDojo/scripts.pory"
-BaldesianForestDojo_Movement_AsakReturnsLeft:
-# 741 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 741 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 741 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 741 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 741 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 741 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 741 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 742 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 742 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 743 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_in_place_left
-	step_end
-
-# 746 "data/maps/BaldesianForestDojo/scripts.pory"
-BaldesianForestDojo_Movement_PlayerGoesToGauntlet:
-# 747 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 747 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 747 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 748 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 748 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 749 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 749 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 749 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 749 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 750 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 750 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 750 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-	step_end
-
-# 753 "data/maps/BaldesianForestDojo/scripts.pory"
-BaldesianForestDojo_Movement_FollowerBesidePlayer:
-# 754 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_left
-# 755 "data/maps/BaldesianForestDojo/scripts.pory"
+# 734 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 734 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 734 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 734 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 734 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 734 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 735 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_in_place_down
+	step_end
+
+# 738 "data/maps/BaldesianForestDojo/scripts.pory"
+BaldesianForestDojo_Movement_AsakReturns:
+# 739 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 739 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 739 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 739 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 739 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 739 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 740 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 740 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 741 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_in_place_left
+	step_end
+
+# 744 "data/maps/BaldesianForestDojo/scripts.pory"
+BaldesianForestDojo_Movement_AsakReturnsLeft:
+# 745 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 745 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 745 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 745 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 745 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 745 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 745 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 746 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 746 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 747 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_in_place_left
+	step_end
+
+# 750 "data/maps/BaldesianForestDojo/scripts.pory"
+BaldesianForestDojo_Movement_PlayerGoesToGauntlet:
+# 751 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 751 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 751 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 752 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 752 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 753 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 753 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 753 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 753 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 754 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 754 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 754 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+	step_end
+
+# 757 "data/maps/BaldesianForestDojo/scripts.pory"
+BaldesianForestDojo_Movement_FollowerBesidePlayer:
+# 758 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 759 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 758 "data/maps/BaldesianForestDojo/scripts.pory"
-BaldesianForestDojo_Movement_LaroldinaGoesToSeat:
-# 759 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 759 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 759 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 759 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 759 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 759 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 760 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 760 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 761 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
 # 762 "data/maps/BaldesianForestDojo/scripts.pory"
+BaldesianForestDojo_Movement_LaroldinaGoesToSeat:
+# 763 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 763 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 763 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 763 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 763 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 763 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 764 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 764 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 765 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 766 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 765 "data/maps/BaldesianForestDojo/scripts.pory"
+# 769 "data/maps/BaldesianForestDojo/scripts.pory"
 BaldesianForestDojo_Movement_CorneliusGoesToStage:
-# 766 "data/maps/BaldesianForestDojo/scripts.pory"
+# 770 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_left
-# 766 "data/maps/BaldesianForestDojo/scripts.pory"
+# 770 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_left
-# 766 "data/maps/BaldesianForestDojo/scripts.pory"
+# 770 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_left
-# 766 "data/maps/BaldesianForestDojo/scripts.pory"
+# 770 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_left
-# 766 "data/maps/BaldesianForestDojo/scripts.pory"
+# 770 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_left
-# 766 "data/maps/BaldesianForestDojo/scripts.pory"
+# 770 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_left
-# 767 "data/maps/BaldesianForestDojo/scripts.pory"
+# 771 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_down
 	step_end
 
-# 770 "data/maps/BaldesianForestDojo/scripts.pory"
+# 774 "data/maps/BaldesianForestDojo/scripts.pory"
 BaldesianForestDojo_Movement_CorneliusGoesToSeat:
-# 771 "data/maps/BaldesianForestDojo/scripts.pory"
+# 775 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_up
-# 772 "data/maps/BaldesianForestDojo/scripts.pory"
+# 776 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_right
-# 772 "data/maps/BaldesianForestDojo/scripts.pory"
+# 776 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_right
-# 772 "data/maps/BaldesianForestDojo/scripts.pory"
+# 776 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_right
-# 772 "data/maps/BaldesianForestDojo/scripts.pory"
+# 776 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_right
-# 772 "data/maps/BaldesianForestDojo/scripts.pory"
+# 776 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_right
-# 772 "data/maps/BaldesianForestDojo/scripts.pory"
+# 776 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_right
-# 773 "data/maps/BaldesianForestDojo/scripts.pory"
+# 777 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 776 "data/maps/BaldesianForestDojo/scripts.pory"
-BaldesianForestDojo_Movement_AsakGoesToStage:
-# 777 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 778 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 778 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 778 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 778 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_up
-# 779 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 779 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 779 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 779 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 779 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
 # 780 "data/maps/BaldesianForestDojo/scripts.pory"
+BaldesianForestDojo_Movement_AsakGoesToStage:
+# 781 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 782 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 782 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 782 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 782 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_up
+# 783 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 783 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 783 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 783 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 783 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 784 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 783 "data/maps/BaldesianForestDojo/scripts.pory"
-BaldesianForestDojo_Movement_AsakReturnsToSeat:
-# 784 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 784 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 784 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 784 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 784 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
-# 785 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 785 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 785 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 785 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 786 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_right
 # 787 "data/maps/BaldesianForestDojo/scripts.pory"
+BaldesianForestDojo_Movement_AsakReturnsToSeat:
+# 788 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 788 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 788 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 788 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 788 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 789 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 789 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 789 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 789 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 790 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_right
+# 791 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 790 "data/maps/BaldesianForestDojo/scripts.pory"
+# 794 "data/maps/BaldesianForestDojo/scripts.pory"
 BaldesianForestDojo_Movement_PlayerReturns:
-# 791 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 791 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 791 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 792 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 792 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 792 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 792 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 793 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 793 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_down
-# 794 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 794 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
-# 794 "data/maps/BaldesianForestDojo/scripts.pory"
-	walk_left
 # 795 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 795 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 795 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 796 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 796 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 796 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 796 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 797 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 797 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_down
+# 798 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 798 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 798 "data/maps/BaldesianForestDojo/scripts.pory"
+	walk_left
+# 799 "data/maps/BaldesianForestDojo/scripts.pory"
 	walk_in_place_up
 	step_end
 
@@ -1565,37 +1573,37 @@ BaldesianForestDojo_EventScript_DojoChallenge_Text_5:
 	.string "BRUNO: Those were impressive battles.\n Finally, it's my turn.\p Will you be the first one to defeat me?$"
 
 BaldesianForestDojo_EventScript_DojoChallenge_Text_6:
-# 634 "data/maps/BaldesianForestDojo/scripts.pory"
+# 636 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "OLD MAN: T-The winner is {PLAYER}!$"
 
 BaldesianForestDojo_EventScript_DojoChallenge_Text_7:
-# 642 "data/maps/BaldesianForestDojo/scripts.pory"
+# 644 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "{PLAYER}, was it? After you receive\n your prize, come talk to me.$"
 
 BaldesianForestDojo_EventScript_ChallengeBruno_Text_0:
-# 682 "data/maps/BaldesianForestDojo/scripts.pory"
+# 684 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "BRUNO: So you've come to challenge\n me again. Very well.\p Will you be the first one to defeat me?$"
 
 BaldesianForestDojo_EventScript_ChallengeBruno_Text_1:
-# 702 "data/maps/BaldesianForestDojo/scripts.pory"
+# 706 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "…{PLAYER}, was it? After you receive\n your prize, come talk to me.$"
 
 BaldesianForestDojo_Text_ExplainDojo::
-# 799 "data/maps/BaldesianForestDojo/scripts.pory"
+# 803 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "Oh, a challenger? Kahaha, good!\n We haven't been getting many lately.\p The way the challenge works is simple:\n beat three of our disciples in a row.\l Only then can you challenge BRUNO.\p Easy, right? Kahahaha!\n Let's get everything set up for you!$"
 
 BaldesianForestDojo_Text_BattleGirlDefeat::
-# 809 "data/maps/BaldesianForestDojo/scripts.pory"
+# 813 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "Maybe you can think about battling\n him…$"
 
 BaldesianForestDojo_Text_NerdDefeat::
-# 814 "data/maps/BaldesianForestDojo/scripts.pory"
+# 818 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "I should've become a KNIGHT instead.$"
 
 BaldesianForestDojo_Text_AsakDefeat::
-# 818 "data/maps/BaldesianForestDojo/scripts.pory"
+# 822 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "…… As expected of the one\n acknowledged by MASTER BENNIS.$"
 
 BaldesianForestDojo_Text_BrunoDefeat::
-# 823 "data/maps/BaldesianForestDojo/scripts.pory"
+# 827 "data/maps/BaldesianForestDojo/scripts.pory"
 	.string "… I was finally defeated……\n Impressive. Truly impressive.$"

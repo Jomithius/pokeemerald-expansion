@@ -52,46 +52,50 @@ AzureMountain_Peak_EventScript_Red::
 # 32 "data/maps/AzureMountain_Peak/scripts.pory"
 	waitmessage
 # 33 "data/maps/AzureMountain_Peak/scripts.pory"
-	trainerbattle_no_intro TRAINER_RED, AzureMountain_Peak_Text_Red
+	setflag FLAG_SYS_BOSS_BATTLE
 # 34 "data/maps/AzureMountain_Peak/scripts.pory"
-	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	trainerbattle_no_intro TRAINER_RED, AzureMountain_Peak_Text_Red
 # 35 "data/maps/AzureMountain_Peak/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceUp
+	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 36 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmovement 1
+	clearflag FLAG_SYS_BOSS_BATTLE
 # 37 "data/maps/AzureMountain_Peak/scripts.pory"
-	msgbox AzureMountain_Peak_Text_Red, MSGBOX_AUTOCLOSE
+	applymovement 1, Common_Movement_WalkInPlaceUp
 # 38 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitmessage
+	waitmovement 1
 # 39 "data/maps/AzureMountain_Peak/scripts.pory"
-	setfieldeffectargument 0, 1
+	msgbox AzureMountain_Peak_Text_Red, MSGBOX_AUTOCLOSE
 # 40 "data/maps/AzureMountain_Peak/scripts.pory"
-	dofieldeffect FLDEFF_NPCFLY_OUT
+	waitmessage
 # 41 "data/maps/AzureMountain_Peak/scripts.pory"
-	delay 15
+	setfieldeffectargument 0, 1
 # 42 "data/maps/AzureMountain_Peak/scripts.pory"
-	removeobject 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
 # 43 "data/maps/AzureMountain_Peak/scripts.pory"
-	waitfieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
 # 44 "data/maps/AzureMountain_Peak/scripts.pory"
-	setflag FLAG_SYS_DEFEATED_RED
+	removeobject 1
 # 45 "data/maps/AzureMountain_Peak/scripts.pory"
-	setflag FLAG_HIDE_RED_AZURE_MOUNTAIN
+	waitfieldeffect FLDEFF_NPCFLY_OUT
 # 46 "data/maps/AzureMountain_Peak/scripts.pory"
-	setvar VAR_AZURE_MOUNTAIN_PEAK_STATE, 1
+	setflag FLAG_SYS_DEFEATED_RED
 # 47 "data/maps/AzureMountain_Peak/scripts.pory"
-	setvar VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0
+	setflag FLAG_HIDE_RED_AZURE_MOUNTAIN
 # 48 "data/maps/AzureMountain_Peak/scripts.pory"
+	setvar VAR_AZURE_MOUNTAIN_PEAK_STATE, 1
+# 49 "data/maps/AzureMountain_Peak/scripts.pory"
+	setvar VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0
+# 50 "data/maps/AzureMountain_Peak/scripts.pory"
 	releaseall
 	end
 
 
-# 56 "data/maps/AzureMountain_Peak/scripts.pory"
+# 58 "data/maps/AzureMountain_Peak/scripts.pory"
 AzureMountain_Peak_RedLeaves:
-# 57 "data/maps/AzureMountain_Peak/scripts.pory"
+# 59 "data/maps/AzureMountain_Peak/scripts.pory"
 	jump_up
 	step_end
 
 AzureMountain_Peak_Text_Red::
-# 52 "data/maps/AzureMountain_Peak/scripts.pory"
+# 54 "data/maps/AzureMountain_Peak/scripts.pory"
 	.string "…$"

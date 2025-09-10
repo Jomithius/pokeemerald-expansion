@@ -417,8 +417,8 @@ script Baldesia_MainHouse_EventScript_LohanThanks{
     waitmovement(0)
     msgbox("ARIA: I shouldn't make MOMO wait for me\n
         too long.\p
-        We'll be ready for a rematch soon,\n
-        {PLAYER}!", MSGBOX_AUTOCLOSE)
+        I'm gonna head back to MOSSDEEP and\n
+        get some more training in!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_AriaLeaves)
     delay(8)
@@ -432,6 +432,7 @@ script Baldesia_MainHouse_EventScript_LohanThanks{
     addvar(VAR_FINAL_REMATCH_STATE, 1)
     setflag(FLAG_SYS_BENNIS_FINAL_REMATCH)
     setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
+    setflag(FLAG_COMPLETED_BALDESIA) // for final level cap
     releaseall
     end
 }

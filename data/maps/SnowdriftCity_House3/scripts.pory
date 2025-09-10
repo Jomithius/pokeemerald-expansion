@@ -107,7 +107,9 @@ script SnowdriftCity_House3_EventScript_CynthiaBattle{
         Are you the reason?\n
         What are you?", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_CYNTHIA, SnowdriftCity_House3_Text_CynthiaLoss)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     msgbox("That was beyond my expectation!\n
         What an exceptional battle!\l
         I love being visiting HOENN.\p

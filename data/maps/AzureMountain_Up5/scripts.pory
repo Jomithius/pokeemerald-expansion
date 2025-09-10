@@ -122,7 +122,9 @@ script AzureMountain_Up5_EventScript_RivalBattle{
         Have you been raising any new POKéMON?\n
         I'll check for you.", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_BRENDAN_AZURE_MOUNTAIN, "Wow, {PLAYER}.\nYou've gotten this strong?")
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     msgbox("BRENDAN: I can see why you're the\n
 		CHAMPION, {PLAYER}.\p
 		I think I'll stick to what I'm good at…\n
@@ -164,13 +166,15 @@ script AzureMountain_Up5_EventScript_MayBattle{
         So…\n
         How about a little battle?", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE) 
     trainerbattle_no_intro(TRAINER_MAY_AZURE_MOUNTAIN, "Wow, {PLAYER}!\nYou've gotten this strong!")
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     msgbox("MAY: I can see why you're the CHAMPION,\n
 		{PLAYER}.\p
 		I think I'll stick to what I'm good at…\n
 		catching POKéMON!\p
-        I should probably head back to the lab\n
-        and share my findings with the PROF.\p
+        Well, I should probably head back to the\n
+        lab and share my findings with my dad.\p
         Okay, {PLAYER}{KUN}, let's meet again!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_RIVAL, Common_Movement_WalkRight)

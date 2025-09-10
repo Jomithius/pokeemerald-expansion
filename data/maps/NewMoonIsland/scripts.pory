@@ -50,6 +50,30 @@ script NewMoonIsland_EventScript_Maniac{
     end
 }
 
+script NewMoonIsland_EventScript_GhostBattle{
+    lock
+    faceplayer
+    playbgm(MUS_NONE, TRUE)
+    msgbox("{PLAYER}.\n
+        There's no escape.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
+    trainerbattle_no_intro(TRAINER_CHANNELER_NEWMOON_ISLAND, NewMoonIsland_House2_Text_RatduardoDefeat)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(8)
+    hideobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(16)
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(24)
+    hideobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    removeobject(VAR_LAST_TALKED)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    release
+    end
+}
+
 script NewMoonIsland_EventScript_Sign{
     lock
     msgbox(NewMoonIsland_Text_Sign, MSGBOX_SIGN)

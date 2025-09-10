@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_BRAWLY",
       "x": 9,
       "y": 4,
       "elevation": 3,
@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AzureMountain_RestStop_EventScript_Hiker",
-      "flag": "0"
+      "script": "AzureMountain_RestStop_EventScript_Liam",
+      "flag": "FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
@@ -94,10 +94,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 9,
-      "y": 5,
+      "x": 12,
+      "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -117,6 +117,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "AzureMountain_RestStop_EventScript_BlackBelt",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DIGLETT_ALOLA)",
+      "x": 9,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AzureMountain_RestStop_EventScript_Poobles",
+      "flag": "FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN"
     }
   ],
   "warp_events": [

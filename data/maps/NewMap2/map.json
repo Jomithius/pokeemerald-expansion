@@ -274,7 +274,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_JUAN",
-      "x": 26,
+      "x": 28,
       "y": 19,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -336,6 +336,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ROXANNE",
+      "x": 26,
+      "y": 19,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route137_EventScript_Steve",
+      "flag": "FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN"
     }
   ],
   "warp_events": [

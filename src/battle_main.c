@@ -1880,6 +1880,9 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
     static const u8 minDynamicLevel = 75;
     static const u8 maxDynamicLevel = 100;
 
+    // This is used to hold the level's of the player's strongest[1] and weakest[0] Pokemon
+	u8 highestLevel = 0;
+
     if(FlagGet(FLAG_SYS_DYNAMIC_LEVELS)) // dynamic levels
     {
         // Calculates Average of your party's levels
@@ -1893,10 +1896,45 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             }
 
             dynamicLevel += GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+            
+            if(i == 0)
+            {
+                highestLevel = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+            }
+            else
+            {
+                u8 LevelCheck = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+                if(LevelCheck > highestLevel)
+                    highestLevel = LevelCheck;
+            }
         }
 
         if(i == PARTY_SIZE)
             dynamicLevel /= i;
+        
+        /* The following is used to account for a player having one or two very weak Pokemon
+        along with some very strong Pokemon. It weights the averaged level more towards the
+        player's strongest Pokemon
+        */
+        if(FlagGet(FLAG_SYS_BOSS_BATTLE)) /* very strict since one strong pokemon heavily skews the average 
+        (e.g. 100 with 5 75s is only 79). essentially makes it impossible to cheese the boss fights */
+        {
+            if(highestLevel - dynamicLevel > 1)
+            {
+                if(FlagGet(FLAG_SYS_HARD_MODE))
+                {
+                    dynamicLevel = highestLevel;
+                }
+                else
+                {
+                    dynamicLevel = highestLevel - 1;
+                }
+                
+            }
+
+            if(dynamicLevel < 75) 
+                dynamicLevel = 75;
+        }   
 
         // Handling values to be always be in the range,
         if(dynamicLevel < minDynamicLevel) 
@@ -1944,13 +1982,19 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 switch(rand_diff)
                 {
                     case 0:
+					    rand_diff = 1;
+					    break;
+                    case 1:
                         rand_diff = 0;
                         break;
-                    case 1:
+                    case 2:
                         rand_diff = -1;
                         break;
-                    case 2:
-                        rand_diff = -2;
+                    case 3:
+                        rand_diff = -1;
+                        break;
+                    case 4:
+					    rand_diff = -2;
                         break;
                     default:
                         rand_diff = 0;
@@ -1960,6 +2004,8 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 dynamicLevel += rand_diff;
                 //if(dynamicLevel < 75) 
                     //dynamicLevel = 75;
+                if(dynamicLevel > 100) 
+                    dynamicLevel = 100;
             }
             
 

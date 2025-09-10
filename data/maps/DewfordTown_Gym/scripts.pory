@@ -452,7 +452,7 @@ script DewfordTown_Gym_EventScript_PooblesDugtrio{
 }
 
 script DewfordTown_Gym_EventScript_Brawly_FinalBattle{
-	trainerbattle_single(TRAINER_BRAWLY_2, "Hello, {PLAYER}.\nCongratulations on becoming CHAMPION.\pAll right! It's time to show you how strong\n POOBLES and I have gotten!", "How could you do that to POOBLES…", DewfordTown_Gym_EventScript_BrawlyDefeatedFinal)
+	trainerbattle_single(TRAINER_BRAWLY_2, "All right, {PLAYER}! It's time to show you how\n strong POOBLES and I have gotten!", "How could you do that to POOBLES…", DewfordTown_Gym_EventScript_BrawlyDefeatedFinal)
 	end
 }
 

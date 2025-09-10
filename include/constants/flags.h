@@ -1277,7 +1277,7 @@
 #define FLAG_VIKAVOLT_TOTEM                                         0x4C7 // Route 120
 #define FLAG_KOMMO_O_TOTEM                                          0x4C8 // Victory Road
 #define FLAG_ARAQUANID_TOTEM                                        0x4C9 // Route 117
-#define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
+#define FLAG_HIDE_CHANNELER_NEWMOON_ISLAND_PLAZA                    0x4CA // To make Ghost battle available on Ratduardo good ending
 #define FLAG_MIRAGE_TOWER_LINKING_CABLE                             0x4CB // Mirage Tower or New Mauville
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_METEORITE                      0x4CC // Meteor Falls
 #define FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM                             0x4CD // For Eugenia Superboss

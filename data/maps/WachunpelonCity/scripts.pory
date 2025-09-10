@@ -9,18 +9,20 @@ script WachunpelonCity_OnTransition{
 }
 
 script WachunpelonCity_EventScript_Mae{
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_single(TRAINER_MAE_3, WachunpelonCity_Text_Mae, "I'm a diva and I deserve this…", WachunpelonCity_EventScript_MaePostBattle)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     msgbox("Yasss, this beach slayyyyys!\p
         No matter what you do, I'll\n
         never leave!\p
         I'm a DIVA!\n
         And I DESERVE this!", MSGBOX_NPC)
-    waitmessage
 	end
 }
 
 script WachunpelonCity_EventScript_MaePostBattle{
     lock
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     msgbox("MAE: Usually this is the part where\n
         somebody would kick me out, right?\p
         But this time we're just on a beach.", MSGBOX_AUTOCLOSE)

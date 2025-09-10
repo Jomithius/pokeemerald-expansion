@@ -127,12 +127,20 @@ script Route137_EventScript_Joey{
     end
 }
 
+script Route137_EventScript_Steve{
+    msgbox("Yeheheaah!\n
+        This is a sick vacation!\p
+        ……………………\p
+        They're too relaxed to notice you.", MSGBOX_SIGN)
+    end
+}
+
 script Route137_EventScript_Beauty{
     lock
     faceplayer
-    msgbox("That guy next to me just keeps going\n
+    msgbox("Those guys next to me just keep saying\n
         “Yeeeaaaaheheeaaahhh…”\p
-        Is he okay?", MSGBOX_AUTOCLOSE)
+        Are they okay?", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)

@@ -80,7 +80,7 @@ script NewMoonIsland_House2_EventScript_SacredBlade{
 }
 
 script NewMoonIsland_House2_EventScript_Ratduardo{
-    lockall
+    lock
     faceplayer
     showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
     delay(8)
@@ -93,25 +93,28 @@ script NewMoonIsland_House2_EventScript_Ratduardo{
     showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
     msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_RATDUARDO_NEWMOON_ISLAND, NewMoonIsland_House2_Text_RatduardoDefeat)
-    fadescreen(FADE_TO_BLACK)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     call(NewMoonIsland_House2_HideTrapChest)
     removeobject(5)
     removeobject(6)
     removeobject(7)
     special(DrawWholeMapView)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
     resetweather
     doweather
     special(WaitWeather)
-	fadescreen(FADE_FROM_BLACK)
     setvar(VAR_NEWMOON_ISLAND_STATE, 4)
+    clearflag(FLAG_HIDE_CHANNELER_NEWMOON_ISLAND_PLAZA) // to make ghost battle available on good ending
     fadedefaultbgm
-    releaseall
+    release
     end
 }
 
 script NewMoonIsland_House2_EventScript_Channeler{
-    lockall
+    lock
     faceplayer
     showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
     delay(8)
@@ -124,20 +127,22 @@ script NewMoonIsland_House2_EventScript_Channeler{
     showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
     msgbox("…", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_CHANNELER_NEWMOON_ISLAND, NewMoonIsland_House2_Text_RatduardoDefeat)
-    fadescreen(FADE_TO_BLACK)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     call(NewMoonIsland_House2_HideTrapChest)
     removeobject(10)
     removeobject(11)
     removeobject(12)
     special(DrawWholeMapView)
-	fadescreen(FADE_FROM_BLACK)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
     resetweather
     doweather
     special(WaitWeather)
     setvar(VAR_NEWMOON_ISLAND_STATE, 4)
     fadedefaultbgm
-    releaseall
+    release
     end
 }
 

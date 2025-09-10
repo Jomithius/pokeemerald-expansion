@@ -152,137 +152,145 @@ AzureMountain_Up5_EventScript_RivalBattle::
 # 124 "data/maps/AzureMountain_Up5/scripts.pory"
 	waitmessage
 # 125 "data/maps/AzureMountain_Up5/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRENDAN_AZURE_MOUNTAIN, AzureMountain_Up5_EventScript_RivalBattle_Text_1
+	setflag FLAG_SYS_BOSS_BATTLE
 # 126 "data/maps/AzureMountain_Up5/scripts.pory"
+	trainerbattle_no_intro TRAINER_BRENDAN_AZURE_MOUNTAIN, AzureMountain_Up5_EventScript_RivalBattle_Text_1
+# 127 "data/maps/AzureMountain_Up5/scripts.pory"
+	clearflag FLAG_SYS_BOSS_BATTLE
+# 128 "data/maps/AzureMountain_Up5/scripts.pory"
 	msgbox AzureMountain_Up5_EventScript_RivalBattle_Text_2, MSGBOX_AUTOCLOSE
-# 132 "data/maps/AzureMountain_Up5/scripts.pory"
-	waitmessage
-# 133 "data/maps/AzureMountain_Up5/scripts.pory"
-	applymovement 1, Common_Movement_WalkLeft
 # 134 "data/maps/AzureMountain_Up5/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 135 "data/maps/AzureMountain_Up5/scripts.pory"
-	setfieldeffectargument 0, 1
+	applymovement 1, Common_Movement_WalkLeft
 # 136 "data/maps/AzureMountain_Up5/scripts.pory"
-	dofieldeffect FLDEFF_NPCFLY_OUT
+	waitmovement 0
 # 137 "data/maps/AzureMountain_Up5/scripts.pory"
-	delay 15
+	setfieldeffectargument 0, 1
 # 138 "data/maps/AzureMountain_Up5/scripts.pory"
-	removeobject 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
 # 139 "data/maps/AzureMountain_Up5/scripts.pory"
-	waitfieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
 # 140 "data/maps/AzureMountain_Up5/scripts.pory"
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
+	removeobject 1
 # 141 "data/maps/AzureMountain_Up5/scripts.pory"
-	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 2
+	waitfieldeffect FLDEFF_NPCFLY_OUT
 # 142 "data/maps/AzureMountain_Up5/scripts.pory"
-	savebgm MUS_DUMMY
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 # 143 "data/maps/AzureMountain_Up5/scripts.pory"
-	fadedefaultbgm
+	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 2
 # 144 "data/maps/AzureMountain_Up5/scripts.pory"
+	savebgm MUS_DUMMY
+# 145 "data/maps/AzureMountain_Up5/scripts.pory"
+	fadedefaultbgm
+# 146 "data/maps/AzureMountain_Up5/scripts.pory"
 	releaseall
 	end
 
 
 AzureMountain_Up5_EventScript_MayBattle::
-# 149 "data/maps/AzureMountain_Up5/scripts.pory"
-	lockall
-# 150 "data/maps/AzureMountain_Up5/scripts.pory"
-	playse SE_PIN
 # 151 "data/maps/AzureMountain_Up5/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
+	lockall
 # 152 "data/maps/AzureMountain_Up5/scripts.pory"
-	waitmovement 0
+	playse SE_PIN
 # 153 "data/maps/AzureMountain_Up5/scripts.pory"
-	waitse
+	applymovement 1, Common_Movement_ExclamationMark
 # 154 "data/maps/AzureMountain_Up5/scripts.pory"
-	call AzureMountain_Up5_EventScript_RivalMovementVar
-# 155 "data/maps/AzureMountain_Up5/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAY, TRUE
-# 156 "data/maps/AzureMountain_Up5/scripts.pory"
-	msgbox AzureMountain_Up5_EventScript_MayBattle_Text_0, MSGBOX_AUTOCLOSE
-# 166 "data/maps/AzureMountain_Up5/scripts.pory"
-	waitmessage
-# 167 "data/maps/AzureMountain_Up5/scripts.pory"
-	trainerbattle_no_intro TRAINER_MAY_AZURE_MOUNTAIN, AzureMountain_Up5_EventScript_MayBattle_Text_1
-# 168 "data/maps/AzureMountain_Up5/scripts.pory"
-	msgbox AzureMountain_Up5_EventScript_MayBattle_Text_2, MSGBOX_AUTOCLOSE
-# 175 "data/maps/AzureMountain_Up5/scripts.pory"
-	waitmessage
-# 176 "data/maps/AzureMountain_Up5/scripts.pory"
-	applymovement 1, Common_Movement_WalkRight
-# 177 "data/maps/AzureMountain_Up5/scripts.pory"
 	waitmovement 0
-# 178 "data/maps/AzureMountain_Up5/scripts.pory"
-	setfieldeffectargument 0, 1
+# 155 "data/maps/AzureMountain_Up5/scripts.pory"
+	waitse
+# 156 "data/maps/AzureMountain_Up5/scripts.pory"
+	call AzureMountain_Up5_EventScript_RivalMovementVar
+# 157 "data/maps/AzureMountain_Up5/scripts.pory"
+	playbgm MUS_ENCOUNTER_MAY, TRUE
+# 158 "data/maps/AzureMountain_Up5/scripts.pory"
+	msgbox AzureMountain_Up5_EventScript_MayBattle_Text_0, MSGBOX_AUTOCLOSE
+# 168 "data/maps/AzureMountain_Up5/scripts.pory"
+	waitmessage
+# 169 "data/maps/AzureMountain_Up5/scripts.pory"
+	setflag FLAG_SYS_BOSS_BATTLE
+# 170 "data/maps/AzureMountain_Up5/scripts.pory"
+	trainerbattle_no_intro TRAINER_MAY_AZURE_MOUNTAIN, AzureMountain_Up5_EventScript_MayBattle_Text_1
+# 171 "data/maps/AzureMountain_Up5/scripts.pory"
+	clearflag FLAG_SYS_BOSS_BATTLE
+# 172 "data/maps/AzureMountain_Up5/scripts.pory"
+	msgbox AzureMountain_Up5_EventScript_MayBattle_Text_2, MSGBOX_AUTOCLOSE
 # 179 "data/maps/AzureMountain_Up5/scripts.pory"
-	dofieldeffect FLDEFF_NPCFLY_OUT
+	waitmessage
 # 180 "data/maps/AzureMountain_Up5/scripts.pory"
-	delay 15
+	applymovement 1, Common_Movement_WalkRight
 # 181 "data/maps/AzureMountain_Up5/scripts.pory"
-	removeobject 1
+	waitmovement 0
 # 182 "data/maps/AzureMountain_Up5/scripts.pory"
-	waitfieldeffect FLDEFF_NPCFLY_OUT
+	setfieldeffectargument 0, 1
 # 183 "data/maps/AzureMountain_Up5/scripts.pory"
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
+	dofieldeffect FLDEFF_NPCFLY_OUT
 # 184 "data/maps/AzureMountain_Up5/scripts.pory"
-	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 2
+	delay 15
 # 185 "data/maps/AzureMountain_Up5/scripts.pory"
-	savebgm MUS_DUMMY
+	removeobject 1
 # 186 "data/maps/AzureMountain_Up5/scripts.pory"
-	fadedefaultbgm
+	waitfieldeffect FLDEFF_NPCFLY_OUT
 # 187 "data/maps/AzureMountain_Up5/scripts.pory"
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
+# 188 "data/maps/AzureMountain_Up5/scripts.pory"
+	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 2
+# 189 "data/maps/AzureMountain_Up5/scripts.pory"
+	savebgm MUS_DUMMY
+# 190 "data/maps/AzureMountain_Up5/scripts.pory"
+	fadedefaultbgm
+# 191 "data/maps/AzureMountain_Up5/scripts.pory"
 	releaseall
 	end
 
 
 AzureMountain_Up5_EventScript_RivalMovementVar::
-# 192 "data/maps/AzureMountain_Up5/scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 193 "data/maps/AzureMountain_Up5/scripts.pory"
-	switch VAR_TEMP_0
-# 194 "data/maps/AzureMountain_Up5/scripts.pory"
-	case 40, AzureMountain_Up5_EventScript_RivalMovementVar_3
 # 196 "data/maps/AzureMountain_Up5/scripts.pory"
-	case 41, AzureMountain_Up5_EventScript_RivalMovementVar_4
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 197 "data/maps/AzureMountain_Up5/scripts.pory"
+	switch VAR_TEMP_0
 # 198 "data/maps/AzureMountain_Up5/scripts.pory"
+	case 40, AzureMountain_Up5_EventScript_RivalMovementVar_3
+# 200 "data/maps/AzureMountain_Up5/scripts.pory"
+	case 41, AzureMountain_Up5_EventScript_RivalMovementVar_4
+# 202 "data/maps/AzureMountain_Up5/scripts.pory"
 	case 42, AzureMountain_Up5_EventScript_RivalMovementVar_5
-# 201 "data/maps/AzureMountain_Up5/scripts.pory"
+# 205 "data/maps/AzureMountain_Up5/scripts.pory"
 	applymovement 1, Common_Movement_WalkDown
 AzureMountain_Up5_EventScript_RivalMovementVar_1:
-# 203 "data/maps/AzureMountain_Up5/scripts.pory"
+# 207 "data/maps/AzureMountain_Up5/scripts.pory"
 	waitmovement 0
 	return
 
 AzureMountain_Up5_EventScript_RivalMovementVar_3:
-# 195 "data/maps/AzureMountain_Up5/scripts.pory"
+# 199 "data/maps/AzureMountain_Up5/scripts.pory"
 	applymovement 1, AzureMountain_Up5_MovementRivalLeftDown
 	goto AzureMountain_Up5_EventScript_RivalMovementVar_1
 
 AzureMountain_Up5_EventScript_RivalMovementVar_4:
-# 197 "data/maps/AzureMountain_Up5/scripts.pory"
+# 201 "data/maps/AzureMountain_Up5/scripts.pory"
 	applymovement 1, Common_Movement_WalkDown
 	goto AzureMountain_Up5_EventScript_RivalMovementVar_1
 
 AzureMountain_Up5_EventScript_RivalMovementVar_5:
-# 199 "data/maps/AzureMountain_Up5/scripts.pory"
+# 203 "data/maps/AzureMountain_Up5/scripts.pory"
 	applymovement 1, AzureMountain_Up5_MovementRivalRightDown
 	goto AzureMountain_Up5_EventScript_RivalMovementVar_1
 
 
-# 207 "data/maps/AzureMountain_Up5/scripts.pory"
+# 211 "data/maps/AzureMountain_Up5/scripts.pory"
 AzureMountain_Up5_MovementRivalLeftDown:
-# 208 "data/maps/AzureMountain_Up5/scripts.pory"
+# 212 "data/maps/AzureMountain_Up5/scripts.pory"
 	walk_left
-# 209 "data/maps/AzureMountain_Up5/scripts.pory"
+# 213 "data/maps/AzureMountain_Up5/scripts.pory"
 	walk_down
 	step_end
 
-# 212 "data/maps/AzureMountain_Up5/scripts.pory"
+# 216 "data/maps/AzureMountain_Up5/scripts.pory"
 AzureMountain_Up5_MovementRivalRightDown:
-# 213 "data/maps/AzureMountain_Up5/scripts.pory"
+# 217 "data/maps/AzureMountain_Up5/scripts.pory"
 	walk_right
-# 214 "data/maps/AzureMountain_Up5/scripts.pory"
+# 218 "data/maps/AzureMountain_Up5/scripts.pory"
 	walk_down
 	step_end
 
@@ -367,21 +375,21 @@ AzureMountain_Up5_EventScript_RivalBattle_Text_0:
 	.string "BRENDAN: Hey, {PLAYER}.\n So you came all the way out here, too.\p How's it going?\n There's so many cool new POKéMON\l I've never seen before.\p Have you been raising any new POKéMON?\n I'll check for you.$"
 
 AzureMountain_Up5_EventScript_RivalBattle_Text_1:
-# 125 "data/maps/AzureMountain_Up5/scripts.pory"
+# 126 "data/maps/AzureMountain_Up5/scripts.pory"
 	.string "Wow, {PLAYER}.\nYou've gotten this strong?$"
 
 AzureMountain_Up5_EventScript_RivalBattle_Text_2:
-# 126 "data/maps/AzureMountain_Up5/scripts.pory"
+# 128 "data/maps/AzureMountain_Up5/scripts.pory"
 	.string "BRENDAN: I can see why you're the\n CHAMPION, {PLAYER}.\p I think I'll stick to what I'm good at…\n raising POKéMON.\p Okay, I'm going to head back to lab to\n give a report.$"
 
 AzureMountain_Up5_EventScript_MayBattle_Text_0:
-# 156 "data/maps/AzureMountain_Up5/scripts.pory"
+# 158 "data/maps/AzureMountain_Up5/scripts.pory"
 	.string "MAY: Hi, {PLAYER}!\n So you came all the way out here, too!\p How's it going?\n There's so many cool new POKéMON\l I've never seen before!\p Anyways, while I've been out here\n searching for new POKéMON, mine have\l grown way stronger.\p So…\n How about a little battle?$"
 
 AzureMountain_Up5_EventScript_MayBattle_Text_1:
-# 167 "data/maps/AzureMountain_Up5/scripts.pory"
+# 170 "data/maps/AzureMountain_Up5/scripts.pory"
 	.string "Wow, {PLAYER}!\nYou've gotten this strong!$"
 
 AzureMountain_Up5_EventScript_MayBattle_Text_2:
-# 168 "data/maps/AzureMountain_Up5/scripts.pory"
-	.string "MAY: I can see why you're the CHAMPION,\n {PLAYER}.\p I think I'll stick to what I'm good at…\n catching POKéMON!\p I should probably head back to the lab\n and share my findings with the PROF.\p Okay, {PLAYER}{KUN}, let's meet again!$"
+# 172 "data/maps/AzureMountain_Up5/scripts.pory"
+	.string "MAY: I can see why you're the CHAMPION,\n {PLAYER}.\p I think I'll stick to what I'm good at…\n catching POKéMON!\p Well, I should probably head back to the\n lab and share my findings with my dad.\p Okay, {PLAYER}{KUN}, let's meet again!$"

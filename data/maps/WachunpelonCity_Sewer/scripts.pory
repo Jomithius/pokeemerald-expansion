@@ -3,6 +3,7 @@ mapscripts WachunpelonCity_Sewer_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
     VAR_SPEEDWAGON_STATE, 9: WachunpelonCity_Sewer_EventScript_Biker1
     ]
+    MAP_SCRIPT_ON_RESUME: WachunpelonCity_Sewer_OnResume
 }
 
 script WachunpelonCity_Sewer_OnTransition{
@@ -12,6 +13,19 @@ script WachunpelonCity_Sewer_OnTransition{
 
 script WachunpelonCity_Sewer_UpdateMusic{
     savebgm(MUS_RG_SILPH)
+    return
+}
+
+script WachunpelonCity_Sewer_OnResume{
+    call_if_defeated(TRAINER_SPEEDWAGON, WachunpelonCity_Sewer_RemovePolicemanAndBikerPokemon)
+    end
+}
+
+script WachunpelonCity_Sewer_RemovePolicemanAndBikerPokemon{
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
     return
 }
 
@@ -90,20 +104,9 @@ script WachunpelonCity_Sewer_EventScript_Speedwagon{
     playbgm(MUS_RG_ENCOUNTER_ROCKET, FALSE)
     msgbox(WachunpelonCity_Sewer_Text_Speedwagon1, MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_SPEEDWAGON_3, WachunpelonCity_Sewer_SpeedwagonDefeat)
-    lock
-    applymovement(5, Common_Movement_EnterPokeball)
-    waitmovement(5)
-    removeobject(5)
-    applymovement(6, Common_Movement_EnterPokeball)
-    waitmovement(6)
-    removeobject(6)
-    applymovement(7, Common_Movement_EnterPokeball)
-    waitmovement(7)
-    removeobject(7)
-    applymovement(8, Common_Movement_EnterPokeball)
-    waitmovement(8)
-    removeobject(8)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     playse(SE_EXIT)
     delay(60)
     clearflag(FLAG_HIDE_POLICEMAN_WACHUNPELON_SEWERS)

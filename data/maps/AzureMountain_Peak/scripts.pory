@@ -30,8 +30,10 @@ script AzureMountain_Peak_EventScript_Red{
     waitmovement(0)
     msgbox(AzureMountain_Peak_Text_Red, MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_RED, AzureMountain_Peak_Text_Red)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     applymovement(1, Common_Movement_WalkInPlaceUp)
     waitmovement(1)
     msgbox(AzureMountain_Peak_Text_Red, MSGBOX_AUTOCLOSE)

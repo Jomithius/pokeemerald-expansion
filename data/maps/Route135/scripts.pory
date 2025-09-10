@@ -108,7 +108,9 @@ script Route135_EventScript_WhitneyBattle{
         Perfect timing!\n
         Help me have some fun with a battle!", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_WHITNEY, "That was fun!")
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     goto(Route135_EventScript_GiveMiltankite)
     end
 }
