@@ -1395,8 +1395,8 @@
 	callnative BS_AllySwitchSwapBattler
 	.endm
 
-	.macro allyswitchfailchance jumpInstr:req
-	callnative BS_AllySwitchFailChance
+	.macro tryallyswitch jumpInstr:req
+	callnative BS_TryAllySwitch
 	.4byte \jumpInstr
 	.endm
 
@@ -1435,9 +1435,8 @@
 	callnative BS_TryRevertWeatherForm
 	.endm
 
-	.macro trysetoctolock battler:req, failInstr:req
+	.macro trysetoctolock failInstr:req
 	callnative BS_TrySetOctolock
-	.byte \battler
 	.4byte \failInstr
 	.endm
 
@@ -2499,6 +2498,12 @@
 	jumpifnottype BS_ATTACKER, TYPE_GRASS, 1f
 	jumpifability BS_ATTACKER_SIDE, ABILITY_FLOWER_VEIL, \jumpInstr
 	1:
+	.endm
+
+	.macro jumpifabilitycantbesuppressed battler:req, jumpInstr:req
+	callnative BS_JumpIfAbilityCantBeSuppressed
+	.byte \battler
+	.4byte \jumpInstr
 	.endm
 
 	.macro setallytonexttarget jumpInstr:req

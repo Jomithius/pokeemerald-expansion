@@ -221,12 +221,13 @@ BattleScript_EffectDoodle::
 	attackstring
 	ppreduce
 	trycopyability BS_ATTACKER, BattleScript_ButItFailed
+	saveattacker
 	attackanimation
 	waitanimation
 	setbyte gBattleCommunication, 0
 	goto BattleScript_EffectDoodle_AfterCopy
 BattleScript_EffectDoodle_CopyAbility:
-	trycopyability BS_ATTACKER, BattleScript_MoveEnd
+	trycopyability BS_ATTACKER, BattleScript_EffectDoodleMoveEnd
 BattleScript_EffectDoodle_AfterCopy:
 .if B_ABILITY_POP_UP == TRUE
 	copybyte gBattlerAbility, gBattlerAttacker
@@ -238,8 +239,10 @@ BattleScript_EffectDoodle_AfterCopy:
 	switchinabilities BS_ATTACKER
 	jumpifbyte CMP_NOT_EQUAL, gBattleCommunication, 0x0, BattleScript_MoveEnd
 	addbyte gBattleCommunication, 1
-	jumpifnoally BS_ATTACKER, BattleScript_MoveEnd
+	jumpifnoally BS_ATTACKER, BattleScript_EffectDoodleMoveEnd
 	setallytonextattacker BattleScript_EffectDoodle_CopyAbility
+	BattleScript_EffectDoodleMoveEnd:
+		restoreattacker
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectGlaiveRush::
@@ -864,7 +867,7 @@ BattleScript_EffectOctolock::
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
-	trysetoctolock BS_TARGET, BattleScript_ButItFailed
+	trysetoctolock BattleScript_ButItFailed
 	attackanimation
 	waitanimation
 	printstring STRINGID_CANTESCAPEBECAUSEOFCURRENTMOVE
@@ -1101,8 +1104,7 @@ BattleScript_EffectAllySwitch::
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
-	jumpifnoally BS_ATTACKER, BattleScript_ButItFailed
-	allyswitchfailchance BattleScript_ButItFailed
+	tryallyswitch BattleScript_ButItFailed
 	attackanimation
 	waitanimation
 	@ The actual data/gfx swap happens in the move animation. Here it's just the gBattlerAttacker / scripting battler change
@@ -1500,11 +1502,12 @@ BattleScript_EffectFlowerShield::
 	attackcanceler
 	attackstring
 	ppreduce
+	savetarget
 	selectfirstvalidtarget
 BattleScript_FlowerShieldIsAnyGrass:
 	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_FlowerShieldLoopStart
 	jumpifnexttargetvalid BattleScript_FlowerShieldIsAnyGrass
-	goto BattleScript_ButItFailed
+	goto BattleScript_RestoreTargetButItFailed
 BattleScript_FlowerShieldLoopStart:
 	selectfirstvalidtarget
 BattleScript_FlowerShieldLoop:
@@ -1529,6 +1532,7 @@ BattleScript_FlowerShieldString:
 BattleScript_FlowerShieldMoveTargetEnd:
 	moveendto MOVEEND_NEXT_TARGET
 	jumpifnexttargetvalid BattleScript_FlowerShieldLoop
+	restoretarget
 	end
 
 BattleScript_EffectRototiller::
@@ -4677,6 +4681,9 @@ BattleScript_ButItFailed::
 BattleScript_RestoreAttackerButItFailed:
 	restoreattacker
 	goto BattleScript_ButItFailed
+BattleScript_RestoreTargetButItFailed:
+	restoretarget
+	goto BattleScript_ButItFailed
 
 BattleScript_NotAffected::
 	pause B_WAIT_TIME_SHORT
@@ -5573,12 +5580,12 @@ BattleScript_PayDayMoneyAndPickUpItems::
 	end2
 
 BattleScript_LocalBattleLost::
-	jumpifbattletype BATTLE_TYPE_INGAME_PARTNER, BattleScript_LocalBattleLostPrintWhiteOut
 	jumpifbattletype BATTLE_TYPE_DOME, BattleScript_CheckDomeDrew
 	jumpifbattletype BATTLE_TYPE_FRONTIER, BattleScript_LocalBattleLostPrintTrainersWinText
 	jumpifbattletype BATTLE_TYPE_TRAINER_HILL, BattleScript_LocalBattleLostPrintTrainersWinText
 	jumpifbattletype BATTLE_TYPE_EREADER_TRAINER, BattleScript_LocalBattleLostEnd
 	jumpifhalfword CMP_EQUAL, gTrainerBattleParameter + 2, TRAINER_SECRET_BASE, BattleScript_LocalBattleLostEnd
+	jumpifbattletype BATTLE_TYPE_INGAME_PARTNER, BattleScript_LocalBattleLostPrintWhiteOut
 BattleScript_LocalBattleLostPrintWhiteOut::
 .if B_WHITEOUT_MONEY >= GEN_4
 	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_LocalBattleLostEnd
@@ -7596,7 +7603,7 @@ BattleScript_EmergencyExit::
 	switchoutabilities BS_SCRIPTING
 	waitstate
 	switchhandleorder BS_SCRIPTING, 2
-	returntoball BS_TARGET, FALSE
+	returntoball BS_SCRIPTING, FALSE
 	getswitchedmondata BS_SCRIPTING
 	switchindataupdate BS_SCRIPTING
 	hpthresholds BS_SCRIPTING
@@ -7850,6 +7857,7 @@ BattleScript_SupersweetSyrupLoopIncrement:
 	destroyabilitypopup
  	restoretarget
 	pause B_WAIT_TIME_MED
+	tryintimidatejectpack
 	end3
 
 BattleScript_SupersweetSyrupWontDecrease:
@@ -8389,7 +8397,9 @@ BattleScript_WanderingSpiritActivates::
 	printstring STRINGID_SWAPPEDABILITIES
 	waitmessage B_WAIT_TIME_LONG
 	switchinabilities BS_ATTACKER
+	jumpiffainted BS_TARGET, TRUE, BattleScript_WanderingSpiritActivatesRet
 	switchinabilities BS_TARGET
+BattleScript_WanderingSpiritActivatesRet:
 	return
 
 BattleScript_TargetsStatWasMaxedOut::
@@ -9655,9 +9665,12 @@ BattleScript_NeutralizingGasExits::
 	setbyte gBattlerAttacker, 0
 BattleScript_NeutralizingGasExitsLoop:
 	copyarraywithindex gBattlerTarget, gBattlerByTurnOrder, gBattlerAttacker, 1
+	jumpifabilitycantbesuppressed BS_TARGET, BattleScript_NeutralizingGasExitsLoopIncrement
+	jumpifability BS_TARGET, ABILITY_IMPOSTER, BattleScript_NeutralizingGasExitsLoopIncrement @ Imposter only activates when first entering the field
 	saveattacker
 	switchinabilities BS_TARGET
 	restoreattacker
+BattleScript_NeutralizingGasExitsLoopIncrement:
 	addbyte gBattlerAttacker, 1
 	jumpifbytenotequal gBattlerAttacker, gBattlersCount, BattleScript_NeutralizingGasExitsLoop
 	restoreattacker
@@ -10060,7 +10073,7 @@ BattleScript_BerserkGeneRet::
 BattleScript_BerserkGeneRet_TryConfuse:
 	jumpifability BS_SCRIPTING, ABILITY_OWN_TEMPO, BattleScript_BerserkGeneRet_OwnTempoPrevents
 	jumpifsafeguard BattleScript_BerserkGeneRet_SafeguardProtected
-	seteffectprimary MOVE_EFFECT_CONFUSION
+	seteffectprimary MOVE_EFFECT_CONFUSION | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_BerserkGeneRet_End
 BattleScript_BerserkGeneRet_SafeguardProtected::
 	pause B_WAIT_TIME_SHORT

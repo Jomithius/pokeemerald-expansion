@@ -216,6 +216,7 @@ Debug_EventScript_Script_7::
 Debug_EventScript_Script_8::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3
 	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
+	setflag FLAG_SYS_BOSS_BATTLE
 	release
 	end
 

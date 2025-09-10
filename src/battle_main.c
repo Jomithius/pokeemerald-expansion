@@ -1869,53 +1869,40 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
     }
 }
 
-static u8 findMaxLevelMonIndex(void)
-{
-    u32 index = 0, lvl, i = 0;
-
-    for (i = 0; i < PARTY_SIZE; i++)
-    {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE) 
-        {
-            lvl = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
-            if (lvl > GetMonData(&gPlayerParty[index], MON_DATA_LEVEL))
-                index = i;
-        }
-    }
-
-    return index;
-}
-
 u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer *trainer, bool32 firstTrainer, u32 battleTypeFlags)
 {
     u32 personalityValue;
     s32 i;
     u8 monsCount;
-    u16 fixedLVL = 0;
-    u8 indexMax = findMaxLevelMonIndex();
+    u16 dynamicLevel = 0;
+            
+    // Change stuff like this to get the levels you want
+    static const u8 minDynamicLevel = 75;
+    static const u8 maxDynamicLevel = 100;
 
     if(FlagGet(FLAG_SYS_DYNAMIC_LEVELS)) // dynamic levels
     {
-        for (i = 0; i < 6; i++)
+        // Calculates Average of your party's levels
+        for(i = 0; i < PARTY_SIZE; i++)
         {
-            if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
+            if(GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
             {
-                if (i == indexMax)
-                    fixedLVL += 10 * GetMonData(&gPlayerParty[i], MON_DATA_LEVEL); 
-                else
-                    fixedLVL += GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+                if(i != 0)
+                    dynamicLevel /= i;
+                break;
             }
+
+            dynamicLevel += GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
         }
 
-        if (gPlayerPartyCount)
-            fixedLVL /= 10 + gPlayerPartyCount - 1;
+        if(i == PARTY_SIZE)
+            dynamicLevel /= i;
 
-        // to stop cheesing levels by having one or two low leveled pkmn    
-        if (fixedLVL <= 73)
-            fixedLVL = 75;
-
-        //if (fixedLVL < 2)
-        //    fixedLVL = 3;
+        // Handling values to be always be in the range,
+        if(dynamicLevel < minDynamicLevel) 
+            dynamicLevel = minDynamicLevel;
+        else if(dynamicLevel > maxDynamicLevel) 
+            dynamicLevel = maxDynamicLevel;
     }
     // dynamic levels end
 
@@ -1950,6 +1937,30 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             u32 otIdType = OT_ID_RANDOM_NO_SHINY;
             u32 fixedOtId = 0;
             u32 ability = 0;
+
+            if(FlagGet(FLAG_SYS_DYNAMIC_LEVELS) && !FlagGet(FLAG_SYS_BOSS_BATTLE))
+            {
+                int rand_diff = Random() % 5;
+                switch(rand_diff)
+                {
+                    case 0:
+                        rand_diff = 0;
+                        break;
+                    case 1:
+                        rand_diff = -1;
+                        break;
+                    case 2:
+                        rand_diff = -2;
+                        break;
+                    default:
+                        rand_diff = 0;
+                        break;
+                }
+                
+                dynamicLevel += rand_diff;
+                //if(dynamicLevel < 75) 
+                    //dynamicLevel = 75;
+            }
             
 
             if (trainer->doubleBattle == TRUE)
@@ -1974,7 +1985,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             }
             if (FlagGet(FLAG_SYS_DYNAMIC_LEVELS)) // dynamic levels
             {
-                CreateMon(&party[i], partyData[monIndex].species, fixedLVL, 0, TRUE, personalityValue, otIdType, fixedOtId);
+                CreateMon(&party[i], partyData[monIndex].species, dynamicLevel, 0, TRUE, personalityValue, otIdType, fixedOtId);
             }
             else
             {
@@ -3214,6 +3225,8 @@ void SwitchInClearSetData(u32 battler)
             gBattleMons[i].status2 &= ~STATUS2_WRAPPED;
         if ((gStatuses4[i] & STATUS4_SYRUP_BOMB) && gBattleStruct->stickySyrupdBy[i] == battler)
             gStatuses4[i] &= ~STATUS4_SYRUP_BOMB;
+        if (gDisableStructs[i].octolock && gDisableStructs[i].octolockedBy == battler)
+            gDisableStructs[i].octolock = FALSE;
     }
 
     gActionSelectionCursor[battler] = 0;
@@ -4755,7 +4768,7 @@ static void HandleTurnActionSelectionState(void)
             for (i = 0; i < gBattlersCount; i++)
             {
                 if (gChosenActionByBattler[i] == B_ACTION_SWITCH)
-                    SwitchPartyOrderInGameMulti(i, gBattleStruct->monToSwitchIntoId[battler]);
+                    SwitchPartyOrderInGameMulti(i, gBattleStruct->monToSwitchIntoId[i]);
             }
         }
     }
@@ -6186,7 +6199,9 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     {
         return TYPE_WATER;
     }
-    else if (moveEffect == EFFECT_AURA_WHEEL && species == SPECIES_MORPEKO_HANGRY)
+    else if (moveEffect == EFFECT_AURA_WHEEL
+          && species == SPECIES_MORPEKO_HANGRY
+          && ability != ABILITY_NORMALIZE)
     {
         return TYPE_DARK;
     }
@@ -6197,7 +6212,9 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
         if (gMain.inBattle && ateBoost != NULL)
             *ateBoost = TRUE;
     }
-    else if (moveType != TYPE_NORMAL
+    else if (moveEffect != EFFECT_CHANGE_TYPE_ON_ITEM
+          && moveEffect != EFFECT_TERRAIN_PULSE
+          && moveEffect != EFFECT_NATURAL_GIFT
           && moveEffect != EFFECT_HIDDEN_POWER
           && moveEffect != EFFECT_WEATHER_BALL
           && ability == ABILITY_NORMALIZE
