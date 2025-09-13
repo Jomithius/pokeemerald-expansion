@@ -340,10 +340,11 @@ script PlayersHouse_2F_EventScript_SetToNormalDifficulty{
 
 script PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo{
     lockall
-    msgbox("{COLOR RED}{SHADOW LIGHT_RED}HARD MODE gives better AI to TRAINERS,\n
-        EVs to boss TRAINER POKéMON, forces\l
-        SET MODE and SLEEP CLAUSE, and turns\l
-		off bag use during TRAINER battles.\p
+    msgbox("{COLOR RED}{SHADOW LIGHT_RED}HARD MODE has stronger TRAINERS,\n
+        forced SET MODE, SLEEP CLAUSE, and\l
+        no bag use during TRAINER battles.\p
+		This mode is only recommended for\n
+		experienced players.\p
         Is this the difficulty you want?", MSGBOX_YESNO)
     waitmessage
     goto_if_eq(VAR_RESULT, YES, PlayersHouse_2F_EventScript_SetToHardDifficulty)

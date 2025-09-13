@@ -228,7 +228,8 @@ Route101_EventScript_BirchsBag::
 	setobjectxy OBJ_EVENT_ID_PLAYER, 6, 13
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	special ChooseStarter
+	@ special ChooseStarter
+	callnative StartNewPokeballCaseUI
 	waitstate
 	special SetStarterIVs
 	applymovement LOCALID_BIRCH, Route101_Movement_BirchApproachPlayer
@@ -267,7 +268,7 @@ Route101_Text_HelpMe:
 Route101_Text_PleaseHelp:
 	.string "Hello! You over there!\n"
 	.string "Please! Help!\p"
-	.string "In my BAG!\n"
+	.string "In my BRIEFCASE!\n"
 	.string "There's a POKé BALL!$"
 
 Route101_Text_DontLeaveMe:
