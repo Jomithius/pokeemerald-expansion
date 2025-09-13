@@ -208,8 +208,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaEeveeTrue{
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry{
-    fadeoutbgm(0)
-    delay(16)
+    playbgm(MUS_NONE, FALSE)
     msgbox("Are you really sorry?", MSGBOX_DEFAULT)
     waitmessage
     checkplayergender
@@ -220,7 +219,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry{
        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Yeah, I'm “soooo” sorry!", "Yes! I was a bad girl!") 
     }
     goto_if_eq(VAR_RESULT, 1, EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished)
-    fadeinbgm(0)
+    playbgm(MUS_ENCOUNTER_EXDEATH, FALSE)
     msgbox("Hmph!\n
         You're a terrible person.\p
         No more second chances!", MSGBOX_AUTOCLOSE)
@@ -239,6 +238,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry{
 
 script EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished{
     checkplayergender
+    playbgm(MUS_ENCOUNTER_EXDEATH, FALSE)
     if(var(VAR_RESULT) == MALE){
         msgbox("Hmph!\n
             Well, bad boys need to be punished.\p
@@ -254,7 +254,6 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished{
        dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "You know what? I take it back.", "Okay, okay! I'm a good girl!") 
     }
     goto_if_eq(VAR_RESULT, 1, EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
-    fadeinbgm(0)
     msgbox("Hmph!\n
         You're a terrible person.\p
         No more second chances!", MSGBOX_AUTOCLOSE)

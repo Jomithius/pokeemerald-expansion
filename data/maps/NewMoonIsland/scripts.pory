@@ -67,7 +67,10 @@ script NewMoonIsland_EventScript_GhostBattle{
     showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
     delay(24)
     hideobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
-    removeobject(VAR_LAST_TALKED)
+    delay(30)
+    showobjectat(VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2)
+    delay(24)
+    removeobject(8)
     savebgm(MUS_DUMMY)
     fadedefaultbgm
     release

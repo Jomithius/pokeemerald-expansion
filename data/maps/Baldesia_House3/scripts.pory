@@ -18,7 +18,7 @@ script Baldesia_House3_EventScript_Girl{
 script Baldesia_House3_EventScript_KimonoLady{
     if(flag(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR) == TRUE){
         msgbox("There's a rumor that the ritual\n
-        was ruined by a group of POKéMON!\p
+        was almost ruined by some POKéMON!\p
         Do you think that's really true?", MSGBOX_NPC)
     }
     else{

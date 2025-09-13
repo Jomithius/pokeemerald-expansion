@@ -130,24 +130,26 @@ script Route136_EventScript_HikerKlawf{
             the tunnel entrance!\p
             I tried hitting it to wake it up,\n
             but it's shell's too hard.", MSGBOX_AUTOCLOSE)
-        waitmessage
     }
-    msgbox("The KLAWF is finally gone!\n
-        Now I can start my hike up the\l
-        mountain.\p
-        I'll go after I take a break.\n
-        … Maybe a nap too.\p
-        The TRAINERS in there are super\n
-        scary.", MSGBOX_AUTOCLOSE)
+    else{
+        msgbox("The KLAWF is finally gone!\p
+            Now I can start my hike up the\n
+            mountain.\p
+            I'll go after I take a break.\n
+            … Maybe a nap too.\p
+            The TRAINERS in there are super\n
+            scary.", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
     release
     end
 }
 
 script Route136_EventScript_Newton{
     trainerbattle_single(TRAINER_NEWTON, "This is a prime spot!", "I still won't move!")
-    msgbox("This is a huge waterfall.\n
-        There are tons of MAGIKARP that try\l
-        to swim up the mountain each day.", MSGBOX_NPC)
+    msgbox("This is a huge waterfall.\p
+        There are tons of MAGIKARP that try\n
+        to swim up it each day.", MSGBOX_NPC)
 	end
 }
 
@@ -171,8 +173,8 @@ script Route136_EventScript_Johnithin{
 script Route136_EventScript_Bobby{
     trainerbattle_single(TRAINER_BOBBY, "I want to hike up the mountain,\nbut a POKéMON is blocking the entrance.", "Oh, well.")
     msgbox("I guess I can wait to make\n
-        the hike.
-        There's a lot of strong TRAINERS in\n
+        the hike.\p
+        There's a lot of scary TRAINERS in\n
         there either way.", MSGBOX_NPC)
 	end
 }

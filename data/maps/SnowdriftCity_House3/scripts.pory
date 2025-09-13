@@ -111,8 +111,8 @@ script SnowdriftCity_House3_EventScript_CynthiaBattle{
     trainerbattle_no_intro(TRAINER_CYNTHIA, SnowdriftCity_House3_Text_CynthiaLoss)
     clearflag(FLAG_SYS_BOSS_BATTLE)
     msgbox("That was beyond my expectation!\n
-        What an exceptional battle!\l
-        I love being visiting HOENN.\p
+        What an exceptional battle!\p
+        I really love visiting HOENN.\p
         I can't stay all year, because there's so\n
         much to investigate in SINNOH, as well.\p
         You're a great TRAINER, and it would\n
@@ -130,7 +130,7 @@ script SnowdriftCity_House3_EventScript_CynthiaBattle{
 }
 
 script SnowdriftCity_House3_EventScriptTryUnlockAreaZero{
-    if(!flag(FLAG_SYS_UNLOCKED_AREA_ZERO)){
+    if(!flag(FLAG_SYS_UNLOCKED_AREA_ZERO) && !flag(FLAG_SYS_DEFEATED_RED)){
         setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0)
     }
     return

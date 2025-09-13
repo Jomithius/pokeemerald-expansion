@@ -139,7 +139,7 @@ EasternRuins_EventScript_HexManiacThanks::
 
 EasternRuins_EventScript_Kumiko_Text_0:
 # 11 "data/maps/EasternRuins/scripts.pory"
-	.string "It should be me!\nI should be able to accompany LADY\lASAKURA!$"
+	.string "It should be me!\pI should be the one to accompany\nthe BALD MAIDEN!$"
 
 EasternRuins_EventScript_Kumiko_Text_1:
 # 11 "data/maps/EasternRuins/scripts.pory"
@@ -151,7 +151,7 @@ EasternRuins_EventScript_Kumiko_Text_2:
 
 EasternRuins_EventScript_Shiori_Text_0:
 # 17 "data/maps/EasternRuins/scripts.pory"
-	.string "Fufufu…\nI can feel the power eminating from the land…$"
+	.string "Fufufu…\pI can feel the power eminating\nfrom the land…$"
 
 EasternRuins_EventScript_Shiori_Text_1:
 # 17 "data/maps/EasternRuins/scripts.pory"
@@ -159,7 +159,7 @@ EasternRuins_EventScript_Shiori_Text_1:
 
 EasternRuins_EventScript_Shiori_Text_2:
 # 18 "data/maps/EasternRuins/scripts.pory"
-	.string "… These sacred lands…\n There is so much history in these ruins.$"
+	.string "These sacred lands…\n There is so much history in these ruins.$"
 
 EasternRuins_EventScript_Yumi_Text_0:
 # 24 "data/maps/EasternRuins/scripts.pory"

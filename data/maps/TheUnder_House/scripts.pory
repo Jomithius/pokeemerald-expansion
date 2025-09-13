@@ -147,6 +147,7 @@ movement TheUnder_House_Movement_RatduardoApproachesPlayer{
 }
 
 movement TheUnder_House_Movement_RatduardoReturnsToSeat{
+    walk_left
     walk_down * 2
-    walk_left * 2
+    walk_left
 }

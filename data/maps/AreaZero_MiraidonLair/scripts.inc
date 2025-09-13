@@ -28,7 +28,7 @@ AreaZero_MiraidonLair_EventScript_Miraidon::
 # 18 "data/maps/AreaZero_MiraidonLair/scripts.pory"
 	waitmoncry
 # 19 "data/maps/AreaZero_MiraidonLair/scripts.pory"
-	setwildbattle SPECIES_MIRAIDON, 75
+	setwildbattle SPECIES_MIRAIDON, 90
 # 20 "data/maps/AreaZero_MiraidonLair/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 21 "data/maps/AreaZero_MiraidonLair/scripts.pory"

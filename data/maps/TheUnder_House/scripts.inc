@@ -212,12 +212,12 @@ TheUnder_House_Movement_RatduardoApproachesPlayer:
 # 149 "data/maps/TheUnder_House/scripts.pory"
 TheUnder_House_Movement_RatduardoReturnsToSeat:
 # 150 "data/maps/TheUnder_House/scripts.pory"
-	walk_down
-# 150 "data/maps/TheUnder_House/scripts.pory"
-	walk_down
-# 151 "data/maps/TheUnder_House/scripts.pory"
 	walk_left
 # 151 "data/maps/TheUnder_House/scripts.pory"
+	walk_down
+# 151 "data/maps/TheUnder_House/scripts.pory"
+	walk_down
+# 152 "data/maps/TheUnder_House/scripts.pory"
 	walk_left
 	step_end
 

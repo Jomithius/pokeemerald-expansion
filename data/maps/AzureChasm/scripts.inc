@@ -41,307 +41,307 @@ AzureChasm_EventScript_Yor::
 
 
 AzureChasm_EventScript_Azelf::
-# 43 "data/maps/AzureChasm/scripts.pory"
+# 42 "data/maps/AzureChasm/scripts.pory"
 	lock
-# 44 "data/maps/AzureChasm/scripts.pory"
+# 43 "data/maps/AzureChasm/scripts.pory"
 	faceplayer
-# 45 "data/maps/AzureChasm/scripts.pory"
+# 44 "data/maps/AzureChasm/scripts.pory"
 	playmoncry SPECIES_AZELF, CRY_MODE_ENCOUNTER
-# 46 "data/maps/AzureChasm/scripts.pory"
+# 45 "data/maps/AzureChasm/scripts.pory"
 	delay 40
-# 47 "data/maps/AzureChasm/scripts.pory"
+# 46 "data/maps/AzureChasm/scripts.pory"
 	waitmoncry
+# 47 "data/maps/AzureChasm/scripts.pory"
+	setwildbattle SPECIES_AZELF, 90
 # 48 "data/maps/AzureChasm/scripts.pory"
-	setwildbattle SPECIES_AZELF, 75
-# 49 "data/maps/AzureChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 50 "data/maps/AzureChasm/scripts.pory"
+# 49 "data/maps/AzureChasm/scripts.pory"
 	waitstate
-# 51 "data/maps/AzureChasm/scripts.pory"
+# 50 "data/maps/AzureChasm/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 52 "data/maps/AzureChasm/scripts.pory"
+# 51 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureChasm_EventScript_Azelf_2
-# 52 "data/maps/AzureChasm/scripts.pory"
+# 51 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureChasm_EventScript_Azelf_2
-# 57 "data/maps/AzureChasm/scripts.pory"
+# 56 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureChasm_EventScript_Azelf_3
-# 57 "data/maps/AzureChasm/scripts.pory"
+# 56 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureChasm_EventScript_Azelf_3
 AzureChasm_EventScript_Azelf_1:
-# 60 "data/maps/AzureChasm/scripts.pory"
+# 59 "data/maps/AzureChasm/scripts.pory"
 	release
 	end
 
 AzureChasm_EventScript_Azelf_2:
-# 53 "data/maps/AzureChasm/scripts.pory"
+# 52 "data/maps/AzureChasm/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 54 "data/maps/AzureChasm/scripts.pory"
+# 53 "data/maps/AzureChasm/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 55 "data/maps/AzureChasm/scripts.pory"
+# 54 "data/maps/AzureChasm/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureChasm_EventScript_Azelf_1
 
 AzureChasm_EventScript_Azelf_3:
-# 58 "data/maps/AzureChasm/scripts.pory"
+# 57 "data/maps/AzureChasm/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureChasm_EventScript_Azelf_1
 
 
 AzureChasm_EventScript_Uxie::
-# 65 "data/maps/AzureChasm/scripts.pory"
+# 64 "data/maps/AzureChasm/scripts.pory"
 	lock
-# 66 "data/maps/AzureChasm/scripts.pory"
+# 65 "data/maps/AzureChasm/scripts.pory"
 	faceplayer
-# 67 "data/maps/AzureChasm/scripts.pory"
+# 66 "data/maps/AzureChasm/scripts.pory"
 	playmoncry SPECIES_UXIE, CRY_MODE_ENCOUNTER
-# 68 "data/maps/AzureChasm/scripts.pory"
+# 67 "data/maps/AzureChasm/scripts.pory"
 	delay 40
-# 69 "data/maps/AzureChasm/scripts.pory"
+# 68 "data/maps/AzureChasm/scripts.pory"
 	waitmoncry
+# 69 "data/maps/AzureChasm/scripts.pory"
+	setwildbattle SPECIES_UXIE, 90
 # 70 "data/maps/AzureChasm/scripts.pory"
-	setwildbattle SPECIES_UXIE, 75
-# 71 "data/maps/AzureChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 72 "data/maps/AzureChasm/scripts.pory"
+# 71 "data/maps/AzureChasm/scripts.pory"
 	waitstate
-# 73 "data/maps/AzureChasm/scripts.pory"
+# 72 "data/maps/AzureChasm/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 74 "data/maps/AzureChasm/scripts.pory"
+# 73 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureChasm_EventScript_Uxie_2
-# 74 "data/maps/AzureChasm/scripts.pory"
+# 73 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureChasm_EventScript_Uxie_2
-# 79 "data/maps/AzureChasm/scripts.pory"
+# 78 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureChasm_EventScript_Uxie_3
-# 79 "data/maps/AzureChasm/scripts.pory"
+# 78 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureChasm_EventScript_Uxie_3
 AzureChasm_EventScript_Uxie_1:
-# 82 "data/maps/AzureChasm/scripts.pory"
+# 81 "data/maps/AzureChasm/scripts.pory"
 	release
 	end
 
 AzureChasm_EventScript_Uxie_2:
-# 75 "data/maps/AzureChasm/scripts.pory"
+# 74 "data/maps/AzureChasm/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 76 "data/maps/AzureChasm/scripts.pory"
+# 75 "data/maps/AzureChasm/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 77 "data/maps/AzureChasm/scripts.pory"
+# 76 "data/maps/AzureChasm/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureChasm_EventScript_Uxie_1
 
 AzureChasm_EventScript_Uxie_3:
-# 80 "data/maps/AzureChasm/scripts.pory"
+# 79 "data/maps/AzureChasm/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureChasm_EventScript_Uxie_1
 
 
 AzureChasm_EventScript_Mesprit::
-# 87 "data/maps/AzureChasm/scripts.pory"
+# 86 "data/maps/AzureChasm/scripts.pory"
 	lock
-# 88 "data/maps/AzureChasm/scripts.pory"
+# 87 "data/maps/AzureChasm/scripts.pory"
 	faceplayer
-# 89 "data/maps/AzureChasm/scripts.pory"
+# 88 "data/maps/AzureChasm/scripts.pory"
 	playmoncry SPECIES_MESPRIT, CRY_MODE_ENCOUNTER
-# 90 "data/maps/AzureChasm/scripts.pory"
+# 89 "data/maps/AzureChasm/scripts.pory"
 	delay 40
-# 91 "data/maps/AzureChasm/scripts.pory"
+# 90 "data/maps/AzureChasm/scripts.pory"
 	waitmoncry
+# 91 "data/maps/AzureChasm/scripts.pory"
+	setwildbattle SPECIES_MESPRIT, 90
 # 92 "data/maps/AzureChasm/scripts.pory"
-	setwildbattle SPECIES_MESPRIT, 75
-# 93 "data/maps/AzureChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 94 "data/maps/AzureChasm/scripts.pory"
+# 93 "data/maps/AzureChasm/scripts.pory"
 	waitstate
-# 95 "data/maps/AzureChasm/scripts.pory"
+# 94 "data/maps/AzureChasm/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 96 "data/maps/AzureChasm/scripts.pory"
+# 95 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureChasm_EventScript_Mesprit_2
-# 96 "data/maps/AzureChasm/scripts.pory"
+# 95 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureChasm_EventScript_Mesprit_2
-# 101 "data/maps/AzureChasm/scripts.pory"
+# 100 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureChasm_EventScript_Mesprit_3
-# 101 "data/maps/AzureChasm/scripts.pory"
+# 100 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureChasm_EventScript_Mesprit_3
 AzureChasm_EventScript_Mesprit_1:
-# 104 "data/maps/AzureChasm/scripts.pory"
+# 103 "data/maps/AzureChasm/scripts.pory"
 	release
 	end
 
 AzureChasm_EventScript_Mesprit_2:
-# 97 "data/maps/AzureChasm/scripts.pory"
+# 96 "data/maps/AzureChasm/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 98 "data/maps/AzureChasm/scripts.pory"
+# 97 "data/maps/AzureChasm/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 99 "data/maps/AzureChasm/scripts.pory"
+# 98 "data/maps/AzureChasm/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureChasm_EventScript_Mesprit_1
 
 AzureChasm_EventScript_Mesprit_3:
-# 102 "data/maps/AzureChasm/scripts.pory"
+# 101 "data/maps/AzureChasm/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureChasm_EventScript_Mesprit_1
 
 
 AzureChasm_EventScript_Glastrier::
-# 109 "data/maps/AzureChasm/scripts.pory"
+# 108 "data/maps/AzureChasm/scripts.pory"
 	lock
-# 110 "data/maps/AzureChasm/scripts.pory"
+# 109 "data/maps/AzureChasm/scripts.pory"
 	faceplayer
-# 111 "data/maps/AzureChasm/scripts.pory"
+# 110 "data/maps/AzureChasm/scripts.pory"
 	playmoncry SPECIES_GLASTRIER, CRY_MODE_ENCOUNTER
-# 112 "data/maps/AzureChasm/scripts.pory"
+# 111 "data/maps/AzureChasm/scripts.pory"
 	delay 40
-# 113 "data/maps/AzureChasm/scripts.pory"
+# 112 "data/maps/AzureChasm/scripts.pory"
 	waitmoncry
+# 113 "data/maps/AzureChasm/scripts.pory"
+	setwildbattle SPECIES_GLASTRIER, 90
 # 114 "data/maps/AzureChasm/scripts.pory"
-	setwildbattle SPECIES_GLASTRIER, 75
-# 115 "data/maps/AzureChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 116 "data/maps/AzureChasm/scripts.pory"
+# 115 "data/maps/AzureChasm/scripts.pory"
 	waitstate
-# 117 "data/maps/AzureChasm/scripts.pory"
+# 116 "data/maps/AzureChasm/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 118 "data/maps/AzureChasm/scripts.pory"
+# 117 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureChasm_EventScript_Glastrier_2
-# 118 "data/maps/AzureChasm/scripts.pory"
+# 117 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureChasm_EventScript_Glastrier_2
-# 123 "data/maps/AzureChasm/scripts.pory"
+# 122 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureChasm_EventScript_Glastrier_3
-# 123 "data/maps/AzureChasm/scripts.pory"
+# 122 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureChasm_EventScript_Glastrier_3
 AzureChasm_EventScript_Glastrier_1:
-# 126 "data/maps/AzureChasm/scripts.pory"
+# 125 "data/maps/AzureChasm/scripts.pory"
 	release
 	end
 
 AzureChasm_EventScript_Glastrier_2:
-# 119 "data/maps/AzureChasm/scripts.pory"
+# 118 "data/maps/AzureChasm/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 120 "data/maps/AzureChasm/scripts.pory"
+# 119 "data/maps/AzureChasm/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 121 "data/maps/AzureChasm/scripts.pory"
+# 120 "data/maps/AzureChasm/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureChasm_EventScript_Glastrier_1
 
 AzureChasm_EventScript_Glastrier_3:
-# 124 "data/maps/AzureChasm/scripts.pory"
+# 123 "data/maps/AzureChasm/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureChasm_EventScript_Glastrier_1
 
 
 AzureChasm_EventScript_Zacian::
-# 131 "data/maps/AzureChasm/scripts.pory"
+# 130 "data/maps/AzureChasm/scripts.pory"
 	lock
-# 132 "data/maps/AzureChasm/scripts.pory"
+# 131 "data/maps/AzureChasm/scripts.pory"
 	faceplayer
-# 133 "data/maps/AzureChasm/scripts.pory"
+# 132 "data/maps/AzureChasm/scripts.pory"
 	playmoncry SPECIES_ZACIAN, CRY_MODE_ENCOUNTER
-# 134 "data/maps/AzureChasm/scripts.pory"
+# 133 "data/maps/AzureChasm/scripts.pory"
 	delay 40
-# 135 "data/maps/AzureChasm/scripts.pory"
+# 134 "data/maps/AzureChasm/scripts.pory"
 	waitmoncry
+# 135 "data/maps/AzureChasm/scripts.pory"
+	setwildbattle SPECIES_ZACIAN, 90, ITEM_RUSTED_SWORD
 # 136 "data/maps/AzureChasm/scripts.pory"
-	setwildbattle SPECIES_ZACIAN, 75, ITEM_RUSTED_SWORD
-# 137 "data/maps/AzureChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 138 "data/maps/AzureChasm/scripts.pory"
+# 137 "data/maps/AzureChasm/scripts.pory"
 	waitstate
-# 139 "data/maps/AzureChasm/scripts.pory"
+# 138 "data/maps/AzureChasm/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 140 "data/maps/AzureChasm/scripts.pory"
+# 139 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureChasm_EventScript_Zacian_2
-# 140 "data/maps/AzureChasm/scripts.pory"
+# 139 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureChasm_EventScript_Zacian_2
-# 145 "data/maps/AzureChasm/scripts.pory"
+# 144 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureChasm_EventScript_Zacian_3
-# 145 "data/maps/AzureChasm/scripts.pory"
+# 144 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureChasm_EventScript_Zacian_3
 AzureChasm_EventScript_Zacian_1:
-# 148 "data/maps/AzureChasm/scripts.pory"
+# 147 "data/maps/AzureChasm/scripts.pory"
 	release
 	end
 
 AzureChasm_EventScript_Zacian_2:
-# 141 "data/maps/AzureChasm/scripts.pory"
+# 140 "data/maps/AzureChasm/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 142 "data/maps/AzureChasm/scripts.pory"
+# 141 "data/maps/AzureChasm/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 143 "data/maps/AzureChasm/scripts.pory"
+# 142 "data/maps/AzureChasm/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureChasm_EventScript_Zacian_1
 
 AzureChasm_EventScript_Zacian_3:
-# 146 "data/maps/AzureChasm/scripts.pory"
+# 145 "data/maps/AzureChasm/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureChasm_EventScript_Zacian_1
 
 
 AzureChasm_EventScript_Zamazenta::
-# 153 "data/maps/AzureChasm/scripts.pory"
+# 152 "data/maps/AzureChasm/scripts.pory"
 	lock
-# 154 "data/maps/AzureChasm/scripts.pory"
+# 153 "data/maps/AzureChasm/scripts.pory"
 	faceplayer
-# 155 "data/maps/AzureChasm/scripts.pory"
+# 154 "data/maps/AzureChasm/scripts.pory"
 	playmoncry SPECIES_ZAMAZENTA, CRY_MODE_ENCOUNTER
-# 156 "data/maps/AzureChasm/scripts.pory"
+# 155 "data/maps/AzureChasm/scripts.pory"
 	delay 40
-# 157 "data/maps/AzureChasm/scripts.pory"
+# 156 "data/maps/AzureChasm/scripts.pory"
 	waitmoncry
+# 157 "data/maps/AzureChasm/scripts.pory"
+	setwildbattle SPECIES_ZAMAZENTA, 90
 # 158 "data/maps/AzureChasm/scripts.pory"
-	setwildbattle SPECIES_ZAMAZENTA, 75
-# 159 "data/maps/AzureChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 160 "data/maps/AzureChasm/scripts.pory"
+# 159 "data/maps/AzureChasm/scripts.pory"
 	waitstate
-# 161 "data/maps/AzureChasm/scripts.pory"
+# 160 "data/maps/AzureChasm/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 162 "data/maps/AzureChasm/scripts.pory"
+# 161 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq AzureChasm_EventScript_Zamazenta_2
-# 162 "data/maps/AzureChasm/scripts.pory"
+# 161 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AzureChasm_EventScript_Zamazenta_2
-# 167 "data/maps/AzureChasm/scripts.pory"
+# 166 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AzureChasm_EventScript_Zamazenta_3
-# 167 "data/maps/AzureChasm/scripts.pory"
+# 166 "data/maps/AzureChasm/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AzureChasm_EventScript_Zamazenta_3
 AzureChasm_EventScript_Zamazenta_1:
-# 170 "data/maps/AzureChasm/scripts.pory"
+# 169 "data/maps/AzureChasm/scripts.pory"
 	release
 	end
 
 AzureChasm_EventScript_Zamazenta_2:
-# 163 "data/maps/AzureChasm/scripts.pory"
+# 162 "data/maps/AzureChasm/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 164 "data/maps/AzureChasm/scripts.pory"
+# 163 "data/maps/AzureChasm/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 165 "data/maps/AzureChasm/scripts.pory"
+# 164 "data/maps/AzureChasm/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto AzureChasm_EventScript_Zamazenta_1
 
 AzureChasm_EventScript_Zamazenta_3:
-# 168 "data/maps/AzureChasm/scripts.pory"
+# 167 "data/maps/AzureChasm/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto AzureChasm_EventScript_Zamazenta_1
 
@@ -396,4 +396,4 @@ AzureChasm_EventScript_Yor_Text_1:
 
 AzureChasm_EventScript_Yor_Text_2:
 # 36 "data/maps/AzureChasm/scripts.pory"
-	.string "You probably didn't notice how thin\n the air was up here since you\l hiked all the way up.$"
+	.string "You probably didn't notice how thin the\n air is since you hiked all the way up.$"

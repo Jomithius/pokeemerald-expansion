@@ -104,14 +104,14 @@ script TheUnder_EventScript_Carson{
 }
 
 script TheUnder_EventScript_Maximillian{
-    trainerbattle_single(TRAINER_MAXIMILLIAN, "It was a long trip to get here!", "It was still worth it!")
-    msgbox("Before it was almost impossible to\n
-        get out here by foot.", MSGBOX_NPC)
+    trainerbattle_single(TRAINER_MAXIMILLIAN, "It took a long time to\nget here!", "It was still worth it!")
+    msgbox("It used to be nearly impossible to\n
+        get out here on foot.", MSGBOX_NPC)
 	end
 }
 
 script TheUnder_EventScript_Samothy{
-    trainerbattle_single(TRAINER_SAMOTHY, "Hey! Catch out this catch!", "I should switch spots.")
+    trainerbattle_single(TRAINER_SAMOTHY, "Hey!\nCheck out this catch!", "I should switch spots.")
     msgbox("There's a lot of weird POKéMON\n
         out here.", MSGBOX_NPC)
 	end

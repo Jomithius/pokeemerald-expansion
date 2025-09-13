@@ -5623,7 +5623,7 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_DISCIPLE:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
             {
-                PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
+                PlayBGM(MUS_VICTORY_GYM_LEADER);
                 break;
             }
             else

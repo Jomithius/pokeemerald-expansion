@@ -28,7 +28,7 @@ AreaZero_RagingBoltLair_EventScript_RagingBolt::
 # 18 "data/maps/AreaZero_RagingBoltLair/scripts.pory"
 	waitmoncry
 # 19 "data/maps/AreaZero_RagingBoltLair/scripts.pory"
-	setwildbattle SPECIES_RAGING_BOLT, 75
+	setwildbattle SPECIES_RAGING_BOLT, 90
 # 20 "data/maps/AreaZero_RagingBoltLair/scripts.pory"
 	dowildbattle
 # 21 "data/maps/AreaZero_RagingBoltLair/scripts.pory"

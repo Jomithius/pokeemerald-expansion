@@ -1,8 +1,6 @@
 NewMoonIsland_House4_MapScripts::
 # 2 "data/maps/NewMoonIsland_House4/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, NewMoonIsland_House4_OnTransition
-# 3 "data/maps/NewMoonIsland_House4/scripts.pory"
-	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	.byte 0
 
 
@@ -20,7 +18,7 @@ NewMoonIsland_House4_EventScript_Dendenne::
 # 13 "data/maps/NewMoonIsland_House4/scripts.pory"
 	faceplayer
 # 14 "data/maps/NewMoonIsland_House4/scripts.pory"
-	msgbox NewMoonIsland_House4_Text_YouLookTired, MSGBOX_DEFAULT
+	msgbox NewMoonIsland_House4_Text_YouLookTired, MSGBOX_AUTOCLOSE
 # 15 "data/maps/NewMoonIsland_House4/scripts.pory"
 	waitmessage
 # 16 "data/maps/NewMoonIsland_House4/scripts.pory"
@@ -87,6 +85,18 @@ NewMoonIsland_House4_Pokemart:
 	.2byte ITEM_DUSK_BALL
 # 61 "data/maps/NewMoonIsland_House4/scripts.pory"
 	.2byte ITEM_TIMER_BALL
+# 62 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_EXP_CANDY_L
+# 63 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_EXP_CANDY_XL
+# 64 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_ADAMANT_MINT
+# 65 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_MODEST_MINT
+# 66 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_TIMID_MINT
+# 67 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_JOLLY_MINT
 	.2byte ITEM_NONE
 
 NewMoonIsland_House4_EventScript_Togedemaru_Text_0:

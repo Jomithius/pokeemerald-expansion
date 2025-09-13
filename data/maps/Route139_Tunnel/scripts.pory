@@ -2,12 +2,20 @@ mapscripts Route139_Tunnel_MapScripts {}
 
 script Route139_Tunnel_EventScript_Natsuko{
     trainerbattle_single(TRAINER_NATSUKO, "I must test that you're\nworthy to pass!", "… You're worthy.")
+    goto_if_set(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR, Route139_Tunnel_EventScript_PostRitualWakeJirachiHint)
     msgbox("… Soon… The ritual will start…", MSGBOX_NPC)
 	end
 }
 
 script Route139_Tunnel_EventScript_Akiko{
     trainerbattle_single(TRAINER_AKIKO, "My sister and I are tasked\nwith guarding the path!", "You may pass.")
+    goto_if_set(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR, Route139_Tunnel_EventScript_PostRitualWakeJirachiHint)
     msgbox("… Soon… The ritual will start…", MSGBOX_NPC)
 	end
+}
+
+script Route139_Tunnel_EventScript_PostRitualWakeJirachiHint{
+    msgbox("The ritual…\n
+        JIRACHI will awaken again in 9 years…", MSGBOX_NPC)
+    end
 }

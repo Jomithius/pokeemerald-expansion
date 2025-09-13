@@ -33,9 +33,8 @@ script AzureChasm_EventScript_Roy{
 
 script AzureChasm_EventScript_Yor{
     trainerbattle_single(TRAINER_YOR, "There's less oxygen up here.\nGreat for training!", "I'm all out of breath…")
-    msgbox("You probably didn't notice how thin\n
-        the air was up here since you\l
-        hiked all the way up.", MSGBOX_NPC)
+    msgbox("You probably didn't notice how thin the\n
+        air is since you hiked all the way up.", MSGBOX_NPC)
 	end
 }
 
@@ -45,7 +44,7 @@ script AzureChasm_EventScript_Azelf{
     playmoncry(SPECIES_AZELF, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_AZELF, 75)
+    setwildbattle(SPECIES_AZELF, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -67,7 +66,7 @@ script AzureChasm_EventScript_Uxie{
     playmoncry(SPECIES_UXIE, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_UXIE, 75)
+    setwildbattle(SPECIES_UXIE, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -89,7 +88,7 @@ script AzureChasm_EventScript_Mesprit{
     playmoncry(SPECIES_MESPRIT, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_MESPRIT, 75)
+    setwildbattle(SPECIES_MESPRIT, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -111,7 +110,7 @@ script AzureChasm_EventScript_Glastrier{
     playmoncry(SPECIES_GLASTRIER, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_GLASTRIER, 75)
+    setwildbattle(SPECIES_GLASTRIER, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -133,7 +132,7 @@ script AzureChasm_EventScript_Zacian{
     playmoncry(SPECIES_ZACIAN, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_ZACIAN, 75, ITEM_RUSTED_SWORD)
+    setwildbattle(SPECIES_ZACIAN, 90, ITEM_RUSTED_SWORD)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -155,7 +154,7 @@ script AzureChasm_EventScript_Zamazenta{
     playmoncry(SPECIES_ZAMAZENTA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_ZAMAZENTA, 75)
+    setwildbattle(SPECIES_ZAMAZENTA, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)

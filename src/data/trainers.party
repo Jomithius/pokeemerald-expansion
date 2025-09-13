@@ -2053,7 +2053,7 @@ AI: Check Bad Move
 
 Veluza
 
-Finizen
+Tentacruel
 
 Wugtrio
 
@@ -2138,8 +2138,8 @@ Mismagius
 Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_DIDDLEVON ===
-Name: DIDDLEVON
+=== TRAINER_VON ===
+Name: VON
 Class: Nerd
 Pic: Nerd
 Gender: Male
@@ -2243,20 +2243,20 @@ Mudsdale
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CINDY_2 === /* should be FREE. not sure where its used, but other matches of this trainer were made free */
-Name: CINDY
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
+=== TRAINER_CINDY_2 === /* should be FREE. not sure where its used, but other matches of this trainer were made free. TRAINER_DENJI*/
+Name: DENJI
+Class: Ninja
+Pic: Ninja
+Gender: Male
+Music: Kimono
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint
 
-Zigzagoon @ Nugget
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Tail Whip
+Weezing
+
+Dipplin
+
+Shroodle
 
 === TRAINER_BRIANNA ===
 Name: BRIANNA
@@ -2305,7 +2305,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Palafin
+Bellibolt
 
 Gyarados
 
@@ -2506,7 +2506,9 @@ AI: Check Bad Move
 
 Decidueye-Hisui
 
-Lilligant
+Oranguru
+
+Poltchageist
 
 === TRAINER_WINSTON_1 ===
 Name: WINSTON
@@ -10515,17 +10517,17 @@ Jolly Nature
 - Zen Headbutt  
 - Sucker Punch  
 
-Dedenne @ Petaya Berry  
-Ability: Cheek Pouch 
-Level: 100 
-Tera Type: Flying  
+Dedenne @ Salac Berry  
+Ability: Cheek Pouch
+Level: 100
+Tera Type: Flying   
 EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
+Modest Nature  
 IVs: 0 Atk  
 - Parabolic Charge  
 - Endure  
 - Dazzling Gleam  
-- Grass Knot  
+- Grass Knot   
 
 Maushold @ Wide Lens  
 Ability: Technician 
@@ -19107,6 +19109,7 @@ Pic: Psychic F
 Gender: Female
 Music: Intense
 Double Battle: No
+AI: Check Bad Move / Try To Faint
 
 Chimecho
 Level: 41
@@ -19119,6 +19122,7 @@ Pic: Psychic M
 Gender: Male
 Music: Intense
 Double Battle: No
+AI: Check Bad Move / Try To Faint
 
 Banette
 Level: 41
@@ -19135,6 +19139,7 @@ Pic: Gentleman
 Gender: Male
 Music: Rich
 Double Battle: No
+AI: Check Bad Move / Try To Faint
 
 Wobbuffet
 Level: 41
@@ -19147,12 +19152,12 @@ Pic: Red
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Smart Trainer
 Mugshot: Yellow
 
 Pikachu-Partner @ Light Ball  
 Ability: Static
-Level: 100  
-Tera Type: Flying  
+Level: 100   
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Volt Tackle  
@@ -19225,6 +19230,7 @@ Pic: Leaf
 Gender: Female
 Music: Male
 Double Battle: No
+AI: Smart Trainer
 
 Bulbasaur
 Level: 5
@@ -19237,6 +19243,7 @@ Pic: RS Brendan
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Smart Trainer
 
 Sceptile @ Sceptilite
 Level: 5
@@ -19249,6 +19256,7 @@ Pic: RS May
 Gender: Female
 Music: Male
 Double Battle: No
+AI: Smart Trainer
 
 Blaziken @ Blazikenite
 Level: 5
@@ -20388,7 +20396,7 @@ Pic: Cynthia
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Smart Trainer  
+AI: Basic Trainer  
 Difficulty: Easy
 Mugshot: Yellow
 
@@ -21695,7 +21703,7 @@ Difficulty: Easy
 
 Veluza
 
-Finizen
+Tentacruel
 
 Wugtrio
 
@@ -21785,8 +21793,8 @@ Mismagius
 Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_DIDDLEVON ===
-Name: DIDDLEVON
+=== TRAINER_VON ===
+Name: VON
 Class: Nerd
 Pic: Nerd
 Gender: Male
@@ -21897,21 +21905,21 @@ Mudsdale
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CINDY_2 === /* should be FREE. not sure where its used, but other matches of this trainer were made free */
-Name: CINDY
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
+=== TRAINER_CINDY_2 === /* should be FREE. not sure where its used, but other matches of this trainer were made free. TRAINER_DENJI*/
+Name: DENJI
+Class: Ninja
+Pic: Ninja
+Gender: Male
+Music: Kimono
 Double Battle: No
-AI: Check Bad Move 
+AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Zigzagoon @ Nugget
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Tail Whip
+Weezing
+
+Dipplin
+
+Shroodle
 
 === TRAINER_BRIANNA ===
 Name: BRIANNA
@@ -21964,7 +21972,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Palafin
+Bellibolt
 
 Gyarados
 
@@ -22180,7 +22188,9 @@ Difficulty: Easy
 
 Decidueye-Hisui
 
-Lilligant
+Oranguru
+
+Poltchageist
 
 === TRAINER_WINSTON_1 ===
 Name: WINSTON
@@ -39154,13 +39164,12 @@ Pic: Red
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Basic Trainer
 Difficulty: Easy 
 
 Pikachu-Partner @ Light Ball  
 Ability: Static
 Level: 100  
-Tera Type: Flying  
 Jolly Nature  
 - Volt Tackle  
 - Iron Tail  

@@ -20,7 +20,7 @@ script AreaZero_Prehistoric_EventScript_GreatTusk{
     setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_GREAT_TUSK, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_GREAT_TUSK, 75)
+    setwildbattle(SPECIES_GREAT_TUSK, 90)
     dowildbattle
     release
     end
@@ -32,7 +32,7 @@ script AreaZero_Prehistoric_EventScript_RoaringMoon{
     setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_ROARING_MOON, 75)
+    setwildbattle(SPECIES_ROARING_MOON, 90)
     dowildbattle
     release
     end
@@ -44,7 +44,7 @@ script AreaZero_Prehistoric_EventScript_GougingFire{
     setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_GOUGING_FIRE, 75)
+    setwildbattle(SPECIES_GOUGING_FIRE, 90)
     dowildbattle
     release
     end
@@ -56,7 +56,7 @@ script AreaZero_Prehistoric_EventScript_FlutterMane{
     setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_FLUTTER_MANE, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_FLUTTER_MANE, 75)
+    setwildbattle(SPECIES_FLUTTER_MANE, 90)
     dowildbattle
     release
     end

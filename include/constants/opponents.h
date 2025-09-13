@@ -113,7 +113,7 @@
 #define TRAINER_TAMMY                       107
 #define TRAINER_VALERIE_1                   108
 #define TRAINER_TASHA                       109
-#define TRAINER_DIDDLEVON                   110
+#define TRAINER_VON                         110
 #define TRAINER_ELVINA                      111
 #define TRAINER_LENA                        112
 #define TRAINER_CHARLES                     113

@@ -60,8 +60,8 @@ script NewMoonIsland_House3_EventScript_Poobles{
     lock
     faceplayer
     playmoncry(SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER)
+    msgbox("POOOOOOOOOOOOOOOBLES!", MSGBOX_DEFAULT)
     waitmoncry
-    msgbox("POOOOOOOOOOOOOOOBLES!", MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
@@ -70,12 +70,12 @@ script NewMoonIsland_House3_EventScript_Poobles{
 script NewMoonIsland_House3_EventScript_Aria{
     lock
     fadeoutbgm(0)
-    delay(20)
+    delay(24)
     playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH! AAAAAARGH!\n
-        AAAUUAUUAAAUGH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+        AAAUUAUUAAAUGH!", MSGBOX_DEFAULT)
     waitmoncry
+    waitmessage
     playse(SE_PIN)
     applymovement(4, Common_Movement_ExclamationMark)
     waitmovement(4)

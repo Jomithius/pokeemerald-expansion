@@ -27,10 +27,13 @@ script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
         giveitem(ITEM_BIG_NUGGET, 75)
     }
     waitmessage
+    addpcitem(ITEM_EXP_CANDY_XL, 99)
     msgbox("That is worth more money than\n
             you can hold.\p
             We recommend not selling it\n
             all at once.\p
+            Also, the CEO has generously wired\n
+            EXP CANDIES to your PC account.\p
             Now, please allow me to\n
             show you to the CEO's office.", MSGBOX_AUTOCLOSE)
     waitmessage

@@ -214,9 +214,9 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3
-	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
-	setflag FLAG_SYS_BOSS_BATTLE
+	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 0
+	warp MAP_BALDESIAN_FOREST_DOJO, 8, 19
+	waitstate
 	release
 	end
 

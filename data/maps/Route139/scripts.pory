@@ -80,16 +80,22 @@ script Route139_EventScript_Katashi{
 
 script Route139_EventScript_Naoki{
     trainerbattle_single(TRAINER_NAOKI, "Be a dear and entertain me\nwith a battle.", "Thank you.\nIt was fun.")
-    msgbox("I heard LADY ASAKURA returned for\n
-        the ritual.\p
-        I hope she's in time.\n
-        She has a habit of procrastinating.", MSGBOX_NPC)
+    if(flag(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR)){
+        msgbox("I heard the ritual was almost ruined.\n
+        Is that really true?", MSGBOX_NPC)
+    }
+    else{
+        msgbox("I heard LADY ASAKURA returned for\n
+            the ritual.\p
+            I hope she's in time.\n
+            She has a habit of procrastinating.", MSGBOX_NPC)
+    }
 	end
 }
 
 script Route139_EventScript_Kyoko{
     trainerbattle_single(TRAINER_KYOKO, "Fufufu…\nThe ritual… Soon…", "…")
-    msgbox("… I saw the Young Lady has returned.\p
+    msgbox("… I saw the BALD MAIDEN.\p
         Her scalp is resplendent as ever…", MSGBOX_NPC)
 	end
 }
@@ -184,7 +190,7 @@ script Route139_EventScript_StartSidequest{
     lock
     msgbox("Hm… I sense strength in you, young one.\n
         Would you mind helping an old lady out?\p
-        These meat heads only think about\n
+        These meatheads only think about\n
         battling, and they're all bored of\l
         battling each other.\p
         Do you mind battling them?\n

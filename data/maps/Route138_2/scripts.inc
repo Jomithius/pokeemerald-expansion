@@ -28,7 +28,7 @@ Route138_EventScript_Ayumi::
 
 Route138_EventScript_Mana::
 # 23 "data/maps/Route138_2/scripts.pory"
-	trainerbattle_single TRAINER_AYUMI, Route138_EventScript_Mana_Text_0, Route138_EventScript_Mana_Text_1
+	trainerbattle_single TRAINER_MANA, Route138_EventScript_Mana_Text_0, Route138_EventScript_Mana_Text_1
 # 24 "data/maps/Route138_2/scripts.pory"
 	msgbox Route138_EventScript_Mana_Text_2, MSGBOX_NPC
 	end
@@ -105,32 +105,32 @@ Route138_EventScript_BlackBelt::
 
 
 Route138_EventScript_KimonoLady::
-# 90 "data/maps/Route138_2/scripts.pory"
+# 88 "data/maps/Route138_2/scripts.pory"
 	msgbox Route138_EventScript_KimonoLady_Text_0, MSGBOX_NPC
 	end
 
 
 Route138_EventScript_Expert_F::
-# 98 "data/maps/Route138_2/scripts.pory"
+# 96 "data/maps/Route138_2/scripts.pory"
 	lock
-# 99 "data/maps/Route138_2/scripts.pory"
+# 97 "data/maps/Route138_2/scripts.pory"
 	faceplayer
-# 100 "data/maps/Route138_2/scripts.pory"
+# 98 "data/maps/Route138_2/scripts.pory"
 	msgbox Route138_EventScript_Expert_F_Text_0, MSGBOX_YESNO
-# 102 "data/maps/Route138_2/scripts.pory"
+# 100 "data/maps/Route138_2/scripts.pory"
 	waitmessage
-# 103 "data/maps/Route138_2/scripts.pory"
+# 101 "data/maps/Route138_2/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route138_EventScript_Expert_F_2
-# 108 "data/maps/Route138_2/scripts.pory"
+# 106 "data/maps/Route138_2/scripts.pory"
 	msgbox Route138_EventScript_Expert_F_Text_2, MSGBOX_NPC
 Route138_EventScript_Expert_F_1:
-# 112 "data/maps/Route138_2/scripts.pory"
+# 110 "data/maps/Route138_2/scripts.pory"
 	release
 	end
 
 Route138_EventScript_Expert_F_2:
-# 104 "data/maps/Route138_2/scripts.pory"
+# 102 "data/maps/Route138_2/scripts.pory"
 	msgbox Route138_EventScript_Expert_F_Text_1, MSGBOX_NPC
 	goto Route138_EventScript_Expert_F_1
 
@@ -161,7 +161,7 @@ Route138_EventScript_Aiko_Text_2:
 
 Route138_EventScript_Ayumi_Text_0:
 # 16 "data/maps/Route138_2/scripts.pory"
-	.string "Hello. Are you interested in a battle?$"
+	.string "Hello.\nAre you interested in a battle?$"
 
 Route138_EventScript_Ayumi_Text_1:
 # 16 "data/maps/Route138_2/scripts.pory"
@@ -273,20 +273,20 @@ Route138_EventScript_Masashi_Text_2:
 
 Route138_EventScript_BlackBelt_Text_0:
 # 82 "data/maps/Route138_2/scripts.pory"
-	.string "Up ahead is BALDESIA, the village\n of NINJAS.\p I don't know if an outsider like\n you will be allowed in.$"
+	.string "Up ahead is BALDESIA, the village\n of NINJAS.$"
 
 Route138_EventScript_KimonoLady_Text_0:
-# 90 "data/maps/Route138_2/scripts.pory"
+# 88 "data/maps/Route138_2/scripts.pory"
 	.string "My husband and kids love using\n disguises.\p It's so fun watching them practice\n their ninjutsu.$"
 
 Route138_EventScript_Expert_F_Text_0:
-# 100 "data/maps/Route138_2/scripts.pory"
+# 98 "data/maps/Route138_2/scripts.pory"
 	.string "Oh? A traveler?\n Do you know anybody from BALDESIA?$"
 
 Route138_EventScript_Expert_F_Text_1:
-# 104 "data/maps/Route138_2/scripts.pory"
+# 102 "data/maps/Route138_2/scripts.pory"
 	.string "Fufu.\n You might be allowed in then!$"
 
 Route138_EventScript_Expert_F_Text_2:
-# 108 "data/maps/Route138_2/scripts.pory"
-	.string "Hm.\n Usually you need to know somebody\l to be allowed in…$"
+# 106 "data/maps/Route138_2/scripts.pory"
+	.string "Hm.\p Usually you need to know somebody\n to be allowed in…$"

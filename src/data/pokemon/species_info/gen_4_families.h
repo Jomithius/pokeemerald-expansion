@@ -1512,10 +1512,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     #if P_MEGA_EVOLUTIONS
     [SPECIES_LUXRAY_MEGA] =
     {
-        .baseHP        = 100,
+        .baseHP        = 80,
         .baseAttack    = 120,
         .baseDefense   = 95,
-        .baseSpeed     = 98,
+        .baseSpeed     = 118,
         .baseSpAttack  = 120,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DARK),

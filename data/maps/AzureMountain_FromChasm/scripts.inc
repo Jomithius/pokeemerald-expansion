@@ -30,7 +30,7 @@ AzureMountain_FromChasm_EventScript_Magearna::
 # 22 "data/maps/AzureMountain_FromChasm/scripts.pory"
 	waitmoncry
 # 23 "data/maps/AzureMountain_FromChasm/scripts.pory"
-	setwildbattle SPECIES_MAGEARNA, 75
+	setwildbattle SPECIES_MAGEARNA, 90
 # 24 "data/maps/AzureMountain_FromChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 25 "data/maps/AzureMountain_FromChasm/scripts.pory"
@@ -81,7 +81,7 @@ AzureMountain_FromChasm_EventScript_Zygarde::
 # 44 "data/maps/AzureMountain_FromChasm/scripts.pory"
 	waitmoncry
 # 45 "data/maps/AzureMountain_FromChasm/scripts.pory"
-	setwildbattle SPECIES_ZYGARDE, 75
+	setwildbattle SPECIES_ZYGARDE, 90
 # 46 "data/maps/AzureMountain_FromChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 47 "data/maps/AzureMountain_FromChasm/scripts.pory"
@@ -132,7 +132,7 @@ AzureMountain_FromChasm_EventScript_Yveltal::
 # 66 "data/maps/AzureMountain_FromChasm/scripts.pory"
 	waitmoncry
 # 67 "data/maps/AzureMountain_FromChasm/scripts.pory"
-	setwildbattle SPECIES_YVELTAL, 75
+	setwildbattle SPECIES_YVELTAL, 90
 # 68 "data/maps/AzureMountain_FromChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 69 "data/maps/AzureMountain_FromChasm/scripts.pory"
@@ -183,7 +183,7 @@ AzureMountain_FromChasm_EventScript_Xerneas::
 # 88 "data/maps/AzureMountain_FromChasm/scripts.pory"
 	waitmoncry
 # 89 "data/maps/AzureMountain_FromChasm/scripts.pory"
-	setwildbattle SPECIES_XERNEAS, 75
+	setwildbattle SPECIES_XERNEAS, 90
 # 90 "data/maps/AzureMountain_FromChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 91 "data/maps/AzureMountain_FromChasm/scripts.pory"

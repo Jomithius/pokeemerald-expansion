@@ -37,7 +37,7 @@ Void_EventScript_FinalBattle::
 # 27 "data/maps/Void/scripts.pory"
 	lockall
 # 28 "data/maps/Void/scripts.pory"
-	goto_if_eq VAR_FINAL_REMATCH_STATE, 7, Void_EventScript_FinalBattle2
+	goto_if_eq VAR_FINAL_REMATCH_STATE, 8, Void_EventScript_FinalBattle2
 # 29 "data/maps/Void/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3
 # 30 "data/maps/Void/scripts.pory"
@@ -77,7 +77,7 @@ Void_EventScript_FinalBattle::
 # 67 "data/maps/Void/scripts.pory"
 	waitmessage
 # 68 "data/maps/Void/scripts.pory"
-	setvar VAR_FINAL_REMATCH_STATE, 7
+	setvar VAR_FINAL_REMATCH_STATE, 8
 # 69 "data/maps/Void/scripts.pory"
 	playbgm MUS_ENCOUNTER_EXDEATH, FALSE
 # 70 "data/maps/Void/scripts.pory"
@@ -271,7 +271,7 @@ EventScript_FinalRematchesUnlocked::
 # 192 "data/maps/Void/scripts.pory"
 	waitmessage
 # 193 "data/maps/Void/scripts.pory"
-	setvar VAR_FINAL_REMATCH_STATE, 5
+	setvar VAR_FINAL_REMATCH_STATE, 6
 # 194 "data/maps/Void/scripts.pory"
 	setvar VAR_GYM_LEADER_COUNT, 0
 # 195 "data/maps/Void/scripts.pory"

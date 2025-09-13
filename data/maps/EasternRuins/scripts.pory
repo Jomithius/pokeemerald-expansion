@@ -8,14 +8,14 @@ script EasternRuins_OnTransition{
 }
 
 script EasternRuins_EventScript_Kumiko{
-    trainerbattle_single(TRAINER_KUMIKO, "It should be me!\nI should be able to accompany LADY\lASAKURA!", "I won't stand for this!")
+    trainerbattle_single(TRAINER_KUMIKO, "It should be me!\pI should be the one to accompany\nthe BALD MAIDEN!", "I won't stand for this!")
     msgbox("Why won't they let me in?!", MSGBOX_NPC)
 	end
 }
 
 script EasternRuins_EventScript_Shiori{
-    trainerbattle_single(TRAINER_SHIORI, "Fufufu…\nI can feel the power eminating from the land…", "Fufufufu…")
-    msgbox("… These sacred lands…\n
+    trainerbattle_single(TRAINER_SHIORI, "Fufufu…\pI can feel the power eminating\nfrom the land…", "Fufufufu…")
+    msgbox("These sacred lands…\n
         There is so much history in these ruins.", MSGBOX_NPC)
 	end
 }

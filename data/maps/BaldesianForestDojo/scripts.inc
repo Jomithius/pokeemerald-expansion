@@ -490,7 +490,7 @@ BaldesianForestDojo_EventScript_GiveKubfu::
 # 325 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmessage
 # 326 "data/maps/BaldesianForestDojo/scripts.pory"
-	givemon SPECIES_KUBFU, 70
+	givemon SPECIES_KUBFU, 80
 # 327 "data/maps/BaldesianForestDojo/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_KUBFU
 # 328 "data/maps/BaldesianForestDojo/scripts.pory"
@@ -762,7 +762,7 @@ BaldesianForestDojo_EventScript_AsakTrigger_14:
 
 BaldesianForestDojo_EventScript_DojoChallenge::
 # 517 "data/maps/BaldesianForestDojo/scripts.pory"
-	lock
+	lockall
 # 518 "data/maps/BaldesianForestDojo/scripts.pory"
 	clearflag FLAG_TEMP_E
 # 519 "data/maps/BaldesianForestDojo/scripts.pory"
@@ -816,7 +816,7 @@ BaldesianForestDojo_EventScript_DojoChallenge::
 # 545 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmovement 21
 # 546 "data/maps/BaldesianForestDojo/scripts.pory"
-	delay 60
+	delay 30
 # 547 "data/maps/BaldesianForestDojo/scripts.pory"
 	special HealPlayerParty
 # 548 "data/maps/BaldesianForestDojo/scripts.pory"
@@ -870,7 +870,7 @@ BaldesianForestDojo_EventScript_DojoChallenge::
 # 574 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmovement 9
 # 575 "data/maps/BaldesianForestDojo/scripts.pory"
-	delay 60
+	delay 30
 # 576 "data/maps/BaldesianForestDojo/scripts.pory"
 	special HealPlayerParty
 # 577 "data/maps/BaldesianForestDojo/scripts.pory"
@@ -1026,13 +1026,13 @@ BaldesianForestDojo_EventScript_DojoChallenge::
 # 661 "data/maps/BaldesianForestDojo/scripts.pory"
 	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 4
 # 662 "data/maps/BaldesianForestDojo/scripts.pory"
-	release
+	releaseall
 	end
 
 
 BaldesianForestDojo_EventScript_ChallengeBruno::
 # 667 "data/maps/BaldesianForestDojo/scripts.pory"
-	lock
+	lockall
 # 668 "data/maps/BaldesianForestDojo/scripts.pory"
 	clearflag FLAG_TEMP_E
 # 669 "data/maps/BaldesianForestDojo/scripts.pory"
@@ -1136,7 +1136,7 @@ BaldesianForestDojo_EventScript_ChallengeBruno::
 # 721 "data/maps/BaldesianForestDojo/scripts.pory"
 	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 4
 # 722 "data/maps/BaldesianForestDojo/scripts.pory"
-	release
+	releaseall
 	end
 
 
@@ -1478,7 +1478,7 @@ BaldesianForestDojo_EventScript_BrunoAChallenger_Text_2:
 
 BaldesianForestDojo_EventScript_GiveKubfu_Text_0:
 # 322 "data/maps/BaldesianForestDojo/scripts.pory"
-	.string "That was a great battle.\n As acknowledgement of your strength,\l I want you to accept this KUBFU.$"
+	.string "That was a great battle.\p As acknowledgement of your strength,\n I want you to accept this KUBFU.$"
 
 BaldesianForestDojo_EventScript_GiveKubfu_Text_1:
 # 330 "data/maps/BaldesianForestDojo/scripts.pory"

@@ -1,6 +1,6 @@
 mapscripts NewMoonIsland_House4_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: NewMoonIsland_House4_OnTransition
-    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+    #MAP_SCRIPT_ON_RESUME: CableClub_OnResume
 }
 
 script NewMoonIsland_House4_OnTransition{
@@ -11,7 +11,7 @@ script NewMoonIsland_House4_OnTransition{
 script NewMoonIsland_House4_EventScript_Dendenne{
     lock
     faceplayer
-    msgbox(NewMoonIsland_House4_Text_YouLookTired, MSGBOX_DEFAULT)
+    msgbox(NewMoonIsland_House4_Text_YouLookTired, MSGBOX_AUTOCLOSE)
     waitmessage
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox(NewMoonIsland_House4_Text_RestHereAnytime, MSGBOX_AUTOCLOSE)
@@ -59,4 +59,10 @@ mart NewMoonIsland_House4_Pokemart{
     ITEM_ULTRA_BALL
     ITEM_DUSK_BALL
     ITEM_TIMER_BALL
+    ITEM_EXP_CANDY_L
+    ITEM_EXP_CANDY_XL
+    ITEM_ADAMANT_MINT
+    ITEM_MODEST_MINT
+    ITEM_TIMID_MINT
+    ITEM_JOLLY_MINT
 }

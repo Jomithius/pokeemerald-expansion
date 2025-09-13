@@ -44,7 +44,7 @@ Baldesia_House3_EventScript_Girl_Text_0:
 
 Baldesia_House3_EventScript_KimonoLady_Text_0:
 # 20 "data/maps/Baldesia_House3/scripts.pory"
-	.string "There's a rumor that the ritual\n was ruined by a group of POKéMON!\p Do you think that's really true?$"
+	.string "There's a rumor that the ritual\n was almost ruined by some POKéMON!\p Do you think that's really true?$"
 
 Baldesia_House3_EventScript_KimonoLady_Text_1:
 # 25 "data/maps/Baldesia_House3/scripts.pory"

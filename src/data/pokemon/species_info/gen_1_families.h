@@ -2196,10 +2196,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_RATICATE_MEGA] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 110,
-        .baseDefense   = 90,
-        .baseSpeed     = 108,
+        .baseHP        = 55,
+        .baseAttack    = 120,
+        .baseDefense   = 100,
+        .baseSpeed     = 118,
         .baseSpAttack  = 50,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_NORMAL),
@@ -19865,12 +19865,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_DRAGONITE_MEGA] =
     {
-        .baseHP        = 120,
+        .baseHP        = 91,
         .baseAttack    = 135,
-        .baseDefense   = 110,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 130,
-        .baseSpDefense = 100,
+        .baseDefense   = 115,
+        .baseSpeed     = 114,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
         .catchRate = 45,
         .evYield_Attack = 3,

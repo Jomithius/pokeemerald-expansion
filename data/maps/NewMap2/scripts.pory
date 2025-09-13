@@ -13,7 +13,7 @@ script Route137_EventScript_Elvina{
 }
 
 script Route137_EventScript_Lena{
-    trainerbattle_single(TRAINER_LENA, "You got to try the ice cream here!", "It's so good.")
+    trainerbattle_single(TRAINER_LENA, "You have GOT to try the ice cream\nat the shop!", "It's so good!")
     msgbox("I heard the owner came all the way\n
         from UNOVA to open up a shop here.", MSGBOX_NPC)
 	end
@@ -53,8 +53,8 @@ script Route137_EventScript_Hiyoshi{
 	end
 }
 
-script Route137_EventScript_Diddlevon{
-    trainerbattle_single(TRAINER_DIDDLEVON, "Oh?\nWhat have we here?", "Oh.\nHere what we have.")
+script Route137_EventScript_Von{
+    trainerbattle_single(TRAINER_VON, "Oh?\nWhat have we here?", "Oh.\nHere what we have.")
     msgbox("Even though I look like this,\n
         I love the beach.", MSGBOX_NPC)
 	end

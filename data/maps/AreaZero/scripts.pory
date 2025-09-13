@@ -7,7 +7,14 @@ mapscripts AreaZero_MapScripts {
 
 script AreaZero_OnTransition{
     clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    call_if_eq(VAR_ULTRA_SPACE_STATE, 5, AreaZero_FirstVisit)
+    setrespawn(HEAL_LOCATION_AREA_ZERO)
     end
+}
+
+script AreaZero_FirstVisit{
+    setvar(VAR_ULTRA_SPACE_STATE, 6)
+    return
 }
 
 script AreaZero_TryRemoveLegendaries{
@@ -29,7 +36,7 @@ script Area_Zero_EventScript_ChienPao{
     setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_CHIEN_PAO, 75)
+    setwildbattle(SPECIES_CHIEN_PAO, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     release
@@ -42,7 +49,7 @@ script Area_Zero_EventScript_ChiYu{
     setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_CHI_YU, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_CHI_YU, 75)
+    setwildbattle(SPECIES_CHI_YU, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     release
@@ -55,7 +62,7 @@ script Area_Zero_EventScript_WoChien{
     setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_WO_CHIEN, 75)
+    setwildbattle(SPECIES_WO_CHIEN, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     release
@@ -68,7 +75,7 @@ script Area_Zero_EventScript_TingLu{
     setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_TING_LU, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_TING_LU, 75)
+    setwildbattle(SPECIES_TING_LU, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     release

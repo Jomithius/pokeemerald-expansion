@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route137_EventScript_Diddlevon",
+      "script": "Route137_EventScript_Von",
       "flag": "0"
     },
     {

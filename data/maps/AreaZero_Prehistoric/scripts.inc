@@ -38,7 +38,7 @@ AreaZero_Prehistoric_EventScript_GreatTusk::
 # 22 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	waitmoncry
 # 23 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setwildbattle SPECIES_GREAT_TUSK, 75
+	setwildbattle SPECIES_GREAT_TUSK, 90
 # 24 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	dowildbattle
 # 25 "data/maps/AreaZero_Prehistoric/scripts.pory"
@@ -58,7 +58,7 @@ AreaZero_Prehistoric_EventScript_RoaringMoon::
 # 34 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	waitmoncry
 # 35 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setwildbattle SPECIES_ROARING_MOON, 75
+	setwildbattle SPECIES_ROARING_MOON, 90
 # 36 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	dowildbattle
 # 37 "data/maps/AreaZero_Prehistoric/scripts.pory"
@@ -78,7 +78,7 @@ AreaZero_Prehistoric_EventScript_GougingFire::
 # 46 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	waitmoncry
 # 47 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setwildbattle SPECIES_GOUGING_FIRE, 75
+	setwildbattle SPECIES_GOUGING_FIRE, 90
 # 48 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	dowildbattle
 # 49 "data/maps/AreaZero_Prehistoric/scripts.pory"
@@ -98,7 +98,7 @@ AreaZero_Prehistoric_EventScript_FlutterMane::
 # 58 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	waitmoncry
 # 59 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setwildbattle SPECIES_FLUTTER_MANE, 75
+	setwildbattle SPECIES_FLUTTER_MANE, 90
 # 60 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	dowildbattle
 # 61 "data/maps/AreaZero_Prehistoric/scripts.pory"

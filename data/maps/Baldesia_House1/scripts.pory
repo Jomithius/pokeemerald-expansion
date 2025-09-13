@@ -4,7 +4,7 @@ script Baldesia_House1_EventScript_KimonoLady{
     lock
     faceplayer
     msgbox("My daughter gets to train under\n
-        MASTER BENNIS.\l
+        MASTER BENNIS.\p
         As a mother, I couldn't be more proud.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
@@ -35,7 +35,9 @@ script Baldesia_House1_EventScript_OldMan{
     faceplayer
     msgbox("MASTER BENNIS is not only the head\n
     retainer for the ASAKURA family.\p
-    He's also the leader of the NINJAS.", MSGBOX_AUTOCLOSE)
+    He's also a wonderful NINJA.\p
+    He's much more capable than he\n
+    may seem.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)

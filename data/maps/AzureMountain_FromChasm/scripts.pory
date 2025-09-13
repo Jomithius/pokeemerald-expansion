@@ -20,7 +20,7 @@ script AzureMountain_FromChasm_EventScript_Magearna{
     playmoncry(SPECIES_MAGEARNA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_MAGEARNA, 75)
+    setwildbattle(SPECIES_MAGEARNA, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -42,7 +42,7 @@ script AzureMountain_FromChasm_EventScript_Zygarde{
     playmoncry(SPECIES_ZYGARDE, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_ZYGARDE, 75)
+    setwildbattle(SPECIES_ZYGARDE, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -64,7 +64,7 @@ script AzureMountain_FromChasm_EventScript_Yveltal{
     playmoncry(SPECIES_YVELTAL, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_YVELTAL, 75)
+    setwildbattle(SPECIES_YVELTAL, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -86,7 +86,7 @@ script AzureMountain_FromChasm_EventScript_Xerneas{
     playmoncry(SPECIES_XERNEAS, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_XERNEAS, 75)
+    setwildbattle(SPECIES_XERNEAS, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)

@@ -38,7 +38,7 @@ AreaZero_Futuristic_EventScript_IronValiant::
 # 22 "data/maps/AreaZero_Futuristic/scripts.pory"
 	waitmoncry
 # 23 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_VALIANT, 75
+	setwildbattle SPECIES_IRON_VALIANT, 90
 # 24 "data/maps/AreaZero_Futuristic/scripts.pory"
 	dowildbattle
 # 25 "data/maps/AreaZero_Futuristic/scripts.pory"
@@ -58,7 +58,7 @@ AreaZero_Futuristic_EventScript_IronHands::
 # 34 "data/maps/AreaZero_Futuristic/scripts.pory"
 	waitmoncry
 # 35 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_HANDS, 75
+	setwildbattle SPECIES_IRON_HANDS, 90
 # 36 "data/maps/AreaZero_Futuristic/scripts.pory"
 	dowildbattle
 # 37 "data/maps/AreaZero_Futuristic/scripts.pory"
@@ -78,7 +78,7 @@ AreaZero_Futuristic_EventScript_IronBundle::
 # 46 "data/maps/AreaZero_Futuristic/scripts.pory"
 	waitmoncry
 # 47 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_BUNDLE, 75
+	setwildbattle SPECIES_IRON_BUNDLE, 90
 # 48 "data/maps/AreaZero_Futuristic/scripts.pory"
 	dowildbattle
 # 49 "data/maps/AreaZero_Futuristic/scripts.pory"
@@ -98,7 +98,7 @@ AreaZero_Futuristic_EventScript_IronTreads::
 # 58 "data/maps/AreaZero_Futuristic/scripts.pory"
 	waitmoncry
 # 59 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_TREADS, 75
+	setwildbattle SPECIES_IRON_TREADS, 90
 # 60 "data/maps/AreaZero_Futuristic/scripts.pory"
 	dowildbattle
 # 61 "data/maps/AreaZero_Futuristic/scripts.pory"
@@ -118,7 +118,7 @@ AreaZero_Futuristic_EventScript_IronLeaves::
 # 70 "data/maps/AreaZero_Futuristic/scripts.pory"
 	waitmoncry
 # 71 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_LEAVES, 75
+	setwildbattle SPECIES_IRON_LEAVES, 90
 # 72 "data/maps/AreaZero_Futuristic/scripts.pory"
 	dowildbattle
 # 73 "data/maps/AreaZero_Futuristic/scripts.pory"
@@ -138,7 +138,7 @@ AreaZero_Futuristic_EventScript_IronBoulder::
 # 82 "data/maps/AreaZero_Futuristic/scripts.pory"
 	waitmoncry
 # 83 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_BOULDER, 75
+	setwildbattle SPECIES_IRON_BOULDER, 90
 # 84 "data/maps/AreaZero_Futuristic/scripts.pory"
 	dowildbattle
 # 85 "data/maps/AreaZero_Futuristic/scripts.pory"
@@ -158,7 +158,7 @@ AreaZero_Futuristic_EventScript_IronCrown::
 # 94 "data/maps/AreaZero_Futuristic/scripts.pory"
 	waitmoncry
 # 95 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_CROWN, 75
+	setwildbattle SPECIES_IRON_CROWN, 90
 # 96 "data/maps/AreaZero_Futuristic/scripts.pory"
 	dowildbattle
 # 97 "data/maps/AreaZero_Futuristic/scripts.pory"

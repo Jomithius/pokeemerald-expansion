@@ -151,7 +151,7 @@ F_TRAINER_FEMALE |
                 MOVE_WATER_SHURIKEN,
                 MOVE_ICY_WIND,
                 MOVE_DARK_PULSE,
-                MOVE_SLUDGE_WAVE,
+                MOVE_SLUDGE_BOMB,
             },
             },
             {
@@ -160,23 +160,21 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 63
             .heldItem = ITEM_THROAT_SPRAY,
-#line 68
+#line 67
             .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
-#line 70
+#line 69
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 64
             .ability = ABILITY_UNAWARE,
-#line 66
+#line 65
             .lvl = 90,
-#line 69
+#line 68
             .nature = NATURE_CALM,
-#line 67
+#line 66
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 65
-            .teraType = TYPE_FAIRY,
             .moves = {
-#line 71
+#line 70
                 MOVE_TORCH_SONG,
                 MOVE_HEX,
                 MOVE_OMINOUS_WIND,
@@ -184,30 +182,126 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 76
+#line 75
             .species = SPECIES_KROOKODILE,
-#line 76
+#line 75
             .gender = TRAINER_MON_MALE,
-#line 76
+#line 75
             .heldItem = ITEM_LEFTOVERS,
-#line 81
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 77
-            .ability = ABILITY_INTIMIDATE,
 #line 79
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 76
+            .ability = ABILITY_INTIMIDATE,
+#line 77
             .lvl = 90,
             .nature = NATURE_HARDY,
-#line 80
+#line 78
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 78
-            .teraType = TYPE_GROUND,
             .moves = {
-#line 81
+#line 79
                 MOVE_BREAKING_SWIPE,
                 MOVE_ROCK_SLIDE,
                 MOVE_DARKEST_LARIAT,
                 MOVE_EARTHQUAKE,
+            },
+            },
+        },
+    },
+#line 84
+#line 90
+    [DIFFICULTY_EASY][PARTNER_MOMO] =
+    {
+#line 85
+        .trainerName = _("MOMO"),
+#line 86
+        .trainerClass = TRAINER_CLASS_NINJA,
+#line 87
+        .trainerPic = TRAINER_BACK_PIC_MOMO,
+        .encounterMusic_gender =
+#line 88
+F_TRAINER_FEMALE | 
+#line 89
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 92
+            .species = SPECIES_PIKACHU,
+#line 92
+            .gender = TRAINER_MON_FEMALE,
+#line 92
+            .heldItem = ITEM_LIGHT_BALL,
+#line 94
+            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 4, 0),
+#line 96
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 93
+            .ability = ABILITY_STATIC,
+#line 96
+            .lvl = 100,
+#line 95
+            .nature = NATURE_HASTY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 96
+                MOVE_NUZZLE,
+                MOVE_VOLT_TACKLE,
+                MOVE_ALLURING_VOICE,
+                MOVE_PLAY_ROUGH,
+            },
+            },
+            {
+#line 101
+            .species = SPECIES_SKELEDIRGE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 101
+            .heldItem = ITEM_THROAT_SPRAY,
+#line 105
+            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
+#line 107
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 102
+            .ability = ABILITY_UNAWARE,
+#line 103
+            .lvl = 90,
+#line 106
+            .nature = NATURE_CALM,
+#line 104
+            .isShiny = TRUE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 108
+                MOVE_TORCH_SONG,
+                MOVE_HEX,
+                MOVE_SLACK_OFF,
+                MOVE_YAWN,
+            },
+            },
+            {
+#line 113
+            .species = SPECIES_KROOKODILE,
+#line 113
+            .gender = TRAINER_MON_MALE,
+#line 113
+            .heldItem = ITEM_LEFTOVERS,
+#line 117
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 114
+            .ability = ABILITY_INTIMIDATE,
+#line 115
+            .lvl = 90,
+            .nature = NATURE_HARDY,
+#line 116
+            .isShiny = TRUE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 117
+                MOVE_BREAKING_SWIPE,
+                MOVE_ROCK_SLIDE,
+                MOVE_DARKEST_LARIAT,
+                MOVE_STOMPING_TANTRUM,
             },
             },
         },

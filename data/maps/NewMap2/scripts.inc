@@ -66,11 +66,11 @@ Route137_EventScript_Hiyoshi::
 	end
 
 
-Route137_EventScript_Diddlevon::
+Route137_EventScript_Von::
 # 57 "data/maps/NewMap2/scripts.pory"
-	trainerbattle_single TRAINER_DIDDLEVON, Route137_EventScript_Diddlevon_Text_0, Route137_EventScript_Diddlevon_Text_1
+	trainerbattle_single TRAINER_VON, Route137_EventScript_Von_Text_0, Route137_EventScript_Von_Text_1
 # 58 "data/maps/NewMap2/scripts.pory"
-	msgbox Route137_EventScript_Diddlevon_Text_2, MSGBOX_NPC
+	msgbox Route137_EventScript_Von_Text_2, MSGBOX_NPC
 	end
 
 
@@ -246,11 +246,11 @@ Route137_EventScript_Elvina_Text_1:
 
 Route137_EventScript_Lena_Text_0:
 # 16 "data/maps/NewMap2/scripts.pory"
-	.string "You got to try the ice cream here!$"
+	.string "You have GOT to try the ice cream\nat the shop!$"
 
 Route137_EventScript_Lena_Text_1:
 # 16 "data/maps/NewMap2/scripts.pory"
-	.string "It's so good.$"
+	.string "It's so good!$"
 
 Route137_EventScript_Lena_Text_2:
 # 17 "data/maps/NewMap2/scripts.pory"
@@ -308,15 +308,15 @@ Route137_EventScript_Hiyoshi_Text_2:
 # 52 "data/maps/NewMap2/scripts.pory"
 	.string "I'm training to finally beat BRUNO!$"
 
-Route137_EventScript_Diddlevon_Text_0:
+Route137_EventScript_Von_Text_0:
 # 57 "data/maps/NewMap2/scripts.pory"
 	.string "Oh?\nWhat have we here?$"
 
-Route137_EventScript_Diddlevon_Text_1:
+Route137_EventScript_Von_Text_1:
 # 57 "data/maps/NewMap2/scripts.pory"
 	.string "Oh.\nHere what we have.$"
 
-Route137_EventScript_Diddlevon_Text_2:
+Route137_EventScript_Von_Text_2:
 # 58 "data/maps/NewMap2/scripts.pory"
 	.string "Even though I look like this,\n I love the beach.$"
 

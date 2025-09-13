@@ -315,4 +315,5 @@ MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_HIGH_JUMP_KICK
 	setvar VAR_0x8005, MOVE_HEAT_WAVE
 	setvar VAR_0x8005, MOVE_TAILWIND
+	setvar VAR_0x8005, MOVE_FLATTER
 	end

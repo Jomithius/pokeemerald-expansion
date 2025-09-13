@@ -58,11 +58,10 @@ Level: 90
 - Water Shuriken 
 - Icy Wind  
 - Dark Pulse  
-- Sludge Wave
+- Sludge Bomb
 
 Skeledirge @ Throat Spray 
 Ability: Unaware
-Tera Type: Fairy
 Level: 90  
 Shiny: Yes    
 EVs: 248 HP / 8 SpA / 252 SpD  
@@ -75,10 +74,47 @@ IVs: 0 Atk
 
 Krookodile (M) @ Leftovers  
 Ability: Intimidate
-Tera Type: Ground 
 Level: 90  
 Shiny: Yes    
 - Breaking Swipe  
 - Rock Slide  
 - Darkest Lariat  
 - Earthquake  
+
+=== PARTNER_MOMO ===
+Name: MOMO
+Class: Ninja
+Pic: Momo
+Gender: Female
+Music: Female
+Difficulty: Easy
+
+Pikachu (F) @ Light Ball  
+Ability: Static  
+EVs: 252 Atk / 4 SpA / 252 Spe  
+Hasty Nature  
+- Nuzzle  
+- Volt Tackle  
+- Alluring Voice  
+- Play Rough
+
+Skeledirge @ Throat Spray 
+Ability: Unaware
+Level: 90  
+Shiny: Yes    
+EVs: 248 HP / 8 SpA / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Torch Song  
+- Hex  
+- Slack Off 
+- Yawn 
+
+Krookodile (M) @ Leftovers  
+Ability: Intimidate
+Level: 90  
+Shiny: Yes    
+- Breaking Swipe  
+- Rock Slide  
+- Darkest Lariat  
+- Stomping Tantrum  

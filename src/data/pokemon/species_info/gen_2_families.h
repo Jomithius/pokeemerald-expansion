@@ -229,12 +229,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_MEGANIUM_MEGA] =
     {
-        .baseHP        = 100,
+        .baseHP        = 80,
         .baseAttack    = 90,
-        .baseDefense   = 115,
+        .baseDefense   = 125,
         .baseSpeed     = 80,
         .baseSpAttack  = 125,
-        .baseSpDefense = 115,
+        .baseSpDefense = 125,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -587,11 +587,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_TYPHLOSION_MEGA] =
     {
-        .baseHP        = 96,
-        .baseAttack    = 115,
-        .baseDefense   = 98,
-        .baseSpeed     = 110,
-        .baseSpAttack  = 125,
+        .baseHP        = 78,
+        .baseAttack    = 105,
+        .baseDefense   = 100,
+        .baseSpeed     = 121,
+        .baseSpAttack  = 140,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
         .catchRate = 45,
@@ -655,11 +655,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_HISUIAN_FORMS
     [SPECIES_TYPHLOSION_HISUI_MEGA] =
     {
-        .baseHP        = 96,
-        .baseAttack    = 115,
-        .baseDefense   = 98,
-        .baseSpeed     = 110,
-        .baseSpAttack  = 125,
+        .baseHP        = 73,
+        .baseAttack    = 110,
+        .baseDefense   = 100,
+        .baseSpeed     = 111,
+        .baseSpAttack  = 150,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
         .catchRate = 45,
@@ -870,8 +870,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_TOTOKNIGHT] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 125,
+        .baseHP        = 85,
+        .baseAttack    = 130,
         .baseDefense   = 130,
         .baseSpeed     = 80,
         .baseSpAttack  = 50,
@@ -1084,12 +1084,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_FERALIGATR_MEGA] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 125,
+        .baseHP        = 85,
+        .baseAttack    = 130,
         .baseDefense   = 120,
-        .baseSpeed     = 90,
+        .baseSpeed     = 95,
         .baseSpAttack  = 90,
-        .baseSpDefense = 105,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -8092,12 +8092,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #if P_MEGA_EVOLUTIONS
     [SPECIES_MILTANK_MEGA] =
     {
-        .baseHP        = 125,
-        .baseAttack    = 100,
+        .baseHP        = 95,
+        .baseAttack    = 110,
         .baseDefense   = 135,
         .baseSpeed     = 70,
         .baseSpAttack  = 70,
-        .baseSpDefense = 90,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 200,
@@ -8107,7 +8107,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_THICK_FAT, ABILITY_THICK_FAT, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_FLUFFY, ABILITY_FLUFFY, ABILITY_FLUFFY },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Miltank"),
         .cryId = CRY_MILTANK,

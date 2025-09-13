@@ -4579,7 +4579,7 @@ void IsGhostTypeInParty(void)
 
 bool32 ShouldDoFinalRematchCall(void)
 {
-    if (VarGet(VAR_FINAL_REMATCH_STATE) == 4)
+    if (VarGet(VAR_FINAL_REMATCH_STATE) == 5)
     {
         switch (gMapHeader.mapType)
         {

@@ -2,6 +2,7 @@ mapscripts Route135_Lab_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE[
         VAR_ULTRA_SPACE_STATE, 0: Route135_Lab_EventScript_ToUltraSpace
         VAR_ULTRA_SPACE_STATE, 3: Route135_Lab_EventScript_EndUltraSpace
+        VAR_ULTRA_SPACE_STATE, 6: Route135_Lab_EventScript_EndAreaZero
     ]
     MAP_SCRIPT_ON_TRANSITION: Route135_Lab_OnTransition
 }
@@ -10,6 +11,7 @@ script Route135_Lab_OnTransition{
     setflag(FLAG_TEMP_E)
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_LANDMARK_ROUTE135)
+    setrespawn(HEAL_LOCATION_ROUTE135)
     call_if_set(FLAG_ENABLED_JAMES_MATCH_CALL, Route135_Lab_DisableJamesMatchCall)
     call_if_ge(VAR_ULTRA_SPACE_STATE, 4, Route135_Lab_JamesPosition)
     end
@@ -477,7 +479,7 @@ script Route135_Lab_EventScript_JamesCallsPlayerAreaZero{
 script Route135_Lab_EventScript_ToAreaZero{
     lock
     faceplayer
-    if(flag(FLAG_TEMP_1) == TRUE){
+    if(flag(FLAG_SYS_DECLINED_AREA_ZERO) == TRUE){
         msgbox("Ah, intern. Did you change your mind?", MSGBOX_YESNO)
     }
     else{
@@ -497,7 +499,7 @@ script Route135_Lab_EventScript_ToAreaZero{
         playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
         waitmoncry
         call(Route135_Lab_Shake)
-        setvar(VAR_ULTRA_SPACE_STATE, 6)
+        #setvar(VAR_ULTRA_SPACE_STATE, 6)
         warpwhitefade(MAP_AREA_ZERO, 15, 11)
         waitstate
     }
@@ -507,9 +509,56 @@ script Route135_Lab_EventScript_ToAreaZero{
         waitmessage
         applymovement(1, Common_Movement_FaceOriginalDirection)
         waitmovement(1)
-        setflag(FLAG_TEMP_1)
+        setflag(FLAG_SYS_DECLINED_AREA_ZERO)
     }
     release
+    end
+}
+
+script Route135_Lab_EventScript_EndAreaZero{
+    lockall
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    applymovement(1, Common_Movement_FacePlayer)
+    waitmovement(0)
+    msgbox("PROF.: Ah, intern!\n
+        The survey went well, yes?\l
+        Thanks for the great data.\p
+        Now that we know it's safe, I can send\n
+        JAMES there for further investigation.\p
+        What?\n
+        … … …\p
+        N-No, you weren't just a guinea pig!\n
+        …\p
+        Well, other than that, there hasn't\n
+        been any significant new developments.\p
+        But on another trip to ULTRA SPACE, we\n
+        found these devices.\p
+        After an analysis, I couldn't find any\n
+        use for them.\p
+        But… maybe you can?", MSGBOX_DEFAULT)
+    giveitem(ITEM_N_SOLARIZER)
+    waitmessage
+    giveitem(ITEM_N_LUNARIZER)
+    waitmessage
+    msgbox("If you'd like to return to one of the\n
+        previous worlds, COSMOG is ready.\p
+        It seems to trust you now." MSGBOX_AUTOCLOSE)
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(3)
+    playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    msgbox("I'm busy, so I'll leave it to you.\n
+        You know the routine by now.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(1)
+    setvar(VAR_ULTRA_SPACE_STATE, 7)
+    addvar(VAR_FINAL_REMATCH_STATE, 1)
+    clearflag(FLAG_RECEIVED_MELTAN)
+    releaseall
     end
 }
 
@@ -556,6 +605,7 @@ script Route135_Lab_EventScript_ReturnToUltraSpaceOrAreaZero{
         playmoncry(SPECIES_COSMOG, CRY_MODE_ENCOUNTER)
         waitmoncry
         call(Route135_Lab_Shake)
+        setrespawn(HEAL_LOCATION_ULTRA_SPACE)
         warpwhitefade(MAP_ULTRA_SPACE, 26, 49)
         waitstate
     }
@@ -830,11 +880,12 @@ text Route135_Lab_Text_ManiacIntroduceAreaZero{
 }
 
 text Route135_Lab_Text_ManiacExplainCosmog{
-    "The camera I put on COSMOG showed\n
-    the world has a somewhat strange\l
-    composition… Although there are signs\l
-    that it was once inhabited by humans,\l
-    so it should be safe to traverse.\p
+    "The camera I put on COSMOG showed that\n
+    the world has a somewhat… strange\l
+    composition.\p
+    Although there are signs that it was\n
+    once inhabited by humans, so it should\l
+    be safe to traverse.\p
     COSMOG will be with you, so if you want\n
     to return to the lab, just ask it.\p
     Now, it is time! Godspeed, intern!\n

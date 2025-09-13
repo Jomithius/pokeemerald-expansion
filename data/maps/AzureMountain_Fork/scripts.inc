@@ -74,7 +74,7 @@ MoveTutor_EventScript_DracoMeteorTaught::
 
 AzureMountain_Fork_EventScript_TrainerWiley_Text_0:
 # 13 "data/maps/AzureMountain_Fork/scripts.pory"
-	.string "Hm…\n To have climbed such a treacherous\l mountain… Well done.\p You may be able to learn my secret move.\n But first, I must test your strength!$"
+	.string "Hm…\p To have climbed such a treacherous\n mountain… Well done.\p You may be able to learn my secret move.\n But first, I must test your strength!$"
 
 AzureMountain_Fork_EventScript_TrainerWiley_Text_1:
 # 19 "data/maps/AzureMountain_Fork/scripts.pory"

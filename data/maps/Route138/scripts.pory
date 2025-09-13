@@ -8,7 +8,7 @@ script Route138_EventScript_Camper{
 }
 
 script Route138_EventScript_Pamela{
-    trainerbattle_single(TRAINER_PAMELA, "I swam here all the way from\nWACHUNPELON!", "I don't want to swim\nall the way back.")
+    trainerbattle_single(TRAINER_PAMELA, "I swam all the way here from\nWACHUNPELON!", "I don't want to swim\nall the way back.")
     msgbox("It's gonna be a long swim back.", MSGBOX_NPC)
 	end
 }

@@ -46,9 +46,16 @@ script AzureMountain_Peak_EventScript_Red{
     setflag(FLAG_SYS_DEFEATED_RED)
     setflag(FLAG_HIDE_RED_AZURE_MOUNTAIN)
     setvar(VAR_AZURE_MOUNTAIN_PEAK_STATE, 1)
-    setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0) //unlocks Area Zero
+    call_if_eq(VAR_ULTRA_SPACE_STATE, 4, AzureMountain_Peak_EventScriptTryUnlockAreaZero) //unlocks Area Zero
     releaseall
     end
+}
+
+script AzureMountain_Peak_EventScriptTryUnlockAreaZero{
+    if(!flag(FLAG_SYS_UNLOCKED_AREA_ZERO) && !flag(FLAG_SYS_DEFEATED_CYNTHIA)){
+        setvar(VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0)
+    }
+    return
 }
 
 text AzureMountain_Peak_Text_Red{

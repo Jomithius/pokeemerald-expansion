@@ -201,7 +201,6 @@ script AltarOfBaldesia_EventScript_GetReadyForBattle{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
     special(SavePlayerParty)
-    special(HealPlayerParty)
 	fadescreen(FADE_TO_BLACK)
 	special(ChooseHalfPartyForBattle)
 	waitstate
@@ -226,14 +225,15 @@ script AltarOfBaldesia_EventScript_DoLohanMultiBattle{
 
 script AltarOfBaldesia_EventScript_PecharuntAmbush{
     lockall
-    if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
-        special(HealPlayerParty)
-    }
     playse(SE_FLEE)
     fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_LOHAN)
     removeobject(LOCALID_WIFE)
+    if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
+        special(HealPlayerParty)
+    }
     fadescreen(FADE_FROM_BLACK)
+    waitse
     msgbox("MOMO: … They ran.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceLeft)
@@ -387,8 +387,9 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     applymovement(LOCALID_MOMO, Common_Movement_WalkUp)
     waitmovement(0)
     delay(30)
-    msgbox("MOMO: JIRACHI… …\n
-        Please bless our village with peace\l
+    msgbox("MOMO: JIRACHI…\n
+        …\p
+        Please bless our village with peace\n
         and prosperity for many years to come.", MSGBOX_AUTOCLOSE)
     waitmessage
     playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)

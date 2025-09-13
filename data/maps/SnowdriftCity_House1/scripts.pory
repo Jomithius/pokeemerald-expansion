@@ -21,8 +21,9 @@ script SnowdriftCity_House1_EventScript_BlackBelt{
     lock
     faceplayer
     goto_if_not_defeated(TRAINER_LAROLD, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle)
-    msgbox("Sorry for doubting you.\n
-        I never thought BRUNO would lose." MSGBOX_AUTOCLOSE)
+    msgbox("Sorry for doubting you!\n
+        I never thought BRUNO would lose.\p
+        You're the real deal!" MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
@@ -61,7 +62,6 @@ script SnowdriftCity_House1_EventScript_BlackBeltPrepBattle{
 }
 
 script SnowdriftCity_House1_EventScript_BlackBeltBattle{
-    lock
     playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
     msgbox("Yeah, I do!", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -70,20 +70,23 @@ script SnowdriftCity_House1_EventScript_BlackBeltBattle{
     applymovement(4, Common_Movement_ExclamationMark)
     waitmovement(4)
     waitse
-    applymovement(4, Common_Movement_FaceUp)
+    applymovement(4, Common_Movement_WalkInPlaceUp)
     waitmovement(4)
-    msgbox("What did I tell you about battling\n
-        indoors?!", MSGBOX_DEFAULT)
+    msgbox("Hey! What did I tell you about\n
+        battling indoors?!", MSGBOX_DEFAULT)
     waitmessage
-    applymovement(1, Common_Movement_FaceDown)
+    applymovement(1, Common_Movement_WalkInPlaceDown)
     waitmovement(1)
-    msgbox("Hahaha! Sorry, honey!", MSGBOX_AUTOCLOSE)
+    msgbox("LAROLD: Hahaha!\nSorry, honey!", MSGBOX_DEFAULT)
     waitmessage
-    faceplayer
-    applymovement(4, Common_Movement_FaceRight)
+    applymovement(1, Common_Movement_WalkInPlaceUp)
+    waitmovement(1)
+    delay(8)
+    applymovement(4, Common_Movement_WalkInPlaceRight)
     waitmovement(4)
-    msgbox("Sorry for doubting you.\n
-        I never thought BRUNO would lose.", MSGBOX_AUTOCLOSE)
+    msgbox("Sorry for doubting you!\n
+        I never thought BRUNO would lose.\p
+        You're the real deal!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(1, Common_Movement_FaceRight)
     waitmovement(1)

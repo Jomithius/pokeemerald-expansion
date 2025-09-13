@@ -319,11 +319,11 @@ script BaldesianForestDojo_EventScript_BrunoAChallenger{
 
 script BaldesianForestDojo_EventScript_GiveKubfu{
     lock
-    msgbox("That was a great battle.\n
-        As acknowledgement of your strength,\l
+    msgbox("That was a great battle.\p
+        As acknowledgement of your strength,\n
         I want you to accept this KUBFU.", MSGBOX_DEFAULT)
     waitmessage
-    givemon(SPECIES_KUBFU, 70)
+    givemon(SPECIES_KUBFU, 80)
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_KUBFU)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
@@ -514,7 +514,7 @@ script BaldesianForestDojo_EventScript_AsakTrigger{
 }
 
 script BaldesianForestDojo_EventScript_DojoChallenge{
-    lock
+    lockall
     clearflag(FLAG_TEMP_E)
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     callnative(UpdateFollowingPokemon)
@@ -543,7 +543,7 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     delay(8)
     applymovement(21, BaldesianForestDojo_Movement_CorneliusGoesToStage)
     waitmovement(21)
-    delay(60)
+    delay(30)
     special(HealPlayerParty)
     callnative(UpdateFollowingPokemon)
     playse(SE_BALL_OPEN)
@@ -572,7 +572,7 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     delay(8)
     applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakGoesToStage)
     waitmovement(LOCALID_ASAK)
-    delay(60)
+    delay(30)
     special(HealPlayerParty)
     callnative(UpdateFollowingPokemon)
     playse(SE_BALL_OPEN)
@@ -659,12 +659,12 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     call(BaldesianForestDojo_ResetDisciplePositions)
     fadescreen(FADE_FROM_BLACK)
     setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 4)
-    release
+    releaseall
     end
 }
 
 script BaldesianForestDojo_EventScript_ChallengeBruno{
-    lock
+    lockall
     clearflag(FLAG_TEMP_E)
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     callnative(UpdateFollowingPokemon)
@@ -719,7 +719,7 @@ script BaldesianForestDojo_EventScript_ChallengeBruno{
     call(BaldesianForestDojo_ResetDisciplePositions)
     fadescreen(FADE_FROM_BLACK)
     setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 4)
-    release
+    releaseall
     end
 }
 

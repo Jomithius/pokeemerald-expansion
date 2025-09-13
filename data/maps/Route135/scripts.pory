@@ -46,8 +46,8 @@ script Route135_UpdateDefaultMusic{
 }
 
 script Route135_EventScript_Danny{
-    trainerbattle_single(TRAINER_DANNY, "Hey!\nDoesn't this POKéMON sound weird?", "I've never heard a POKéMON like that!")
-    msgbox("I've heard seen a POKéMON like that!", MSGBOX_NPC)
+    trainerbattle_single(TRAINER_DANNY, "Hey!\nDoesn't this POKéMON sound weird?", "I've never heard a POKéMON make\na sound like that!")
+    msgbox("I've never heard a POKéMON make\na sound like that!", MSGBOX_NPC)
 	end
 }
 

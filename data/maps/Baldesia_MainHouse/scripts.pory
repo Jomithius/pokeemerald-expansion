@@ -29,7 +29,6 @@ script Baldesia_MainHouse_OnTransition{
 raw`
 Baldesia_MainHouse_OnWarp:
 	map_script_2 VAR_TEMP_1, 0, Baldesia_MainHouse_EventScript_TurnPlayerNorth
-	.2byte 0
 
 Baldesia_MainHouse_EventScript_TurnPlayerNorth::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
@@ -38,7 +37,7 @@ Baldesia_MainHouse_EventScript_TurnPlayerNorth::
 `
 
 script Baldesia_MainHouse_UpdateNPCPos{
-    setobjectxyperm(LOCALID_ARIA, 19, 9)
+    setobjectxyperm(LOCALID_ARIA, 16, 10)
     setobjectmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
     setobjectxyperm(LOCALID_PANINI, 11, 11)
     setobjectmovementtype(LOCALID_PANINI, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
@@ -85,7 +84,7 @@ script Baldesia_MainHouse_EventScript_MochiClerk{
     lock
     faceplayer
     fadenewbgm(MUS_BALDESIA_MART)
-    message("Hello.\nI'm selling mochi.")
+    message("Hello, valued customer.\nI'm selling mochi and snacks.")
 	waitmessage
 	pokemart(Baldesia_MainHouse_PokemartMochi)
 	msgbox("Thank you for your patronage.", MSGBOX_DEFAULT)
@@ -96,13 +95,20 @@ script Baldesia_MainHouse_EventScript_MochiClerk{
 }
 
 mart Baldesia_MainHouse_PokemartMochi{
-    ITEM_HEALTH_MOCHI
-    ITEM_MUSCLE_MOCHI
-    ITEM_RESIST_MOCHI
-    ITEM_GENIUS_MOCHI
-    ITEM_CLEVER_MOCHI
-    ITEM_SWIFT_MOCHI
     ITEM_FRESH_START_MOCHI
+    ITEM_EXP_CANDY_S
+    ITEM_EXP_CANDY_M
+    ITEM_EXP_CANDY_L
+    ITEM_EXP_CANDY_XL
+    ITEM_ADAMANT_MINT
+	ITEM_MODEST_MINT
+	ITEM_JOLLY_MINT
+	ITEM_TIMID_MINT
+	ITEM_BOLD_MINT
+	ITEM_IMPISH_MINT
+	ITEM_CALM_MINT
+	ITEM_CAREFUL_MINT
+	ITEM_SERIOUS_MINT
 }
 
 script Baldesia_MainHouse_EventScript_GoToChief{
@@ -166,7 +172,7 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     waitmovement(0)
     msgbox(Baldesia_MainHouse_TextLohan, MSGBOX_AUTOCLOSE)
     waitmessage
-    playbgm(MUS_PECHARUNT, FALSE)
+    //playbgm(MUS_PECHARUNT, FALSE)
     delay(16)
     playse(SE_PIN)
     applymovement(LOCALID_BENNIS, Common_Movement_ExclamationMark)
@@ -376,6 +382,12 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     setflag(FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE)
     setvar(VAR_MOMO_ARIA_STATE, 5)
     setflag(FLAG_LANDMARK_BALDESIA) // set here so fly only unlocks along w main house. prevents sequence breaking.
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    call(Baldesia_MainHouse_UpdateNPCPos)
+    special(DrawWholeMapView)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
     releaseall
     end
 }
@@ -521,10 +533,16 @@ script Baldesia_MainHouse_EventScript_Panini{
 }
 
 script Baldesia_MainHouse_EventScript_Aria{
+    lock
+    faceplayer
     msgbox("ARGH!\n
         Why can't I go with?!\p
         I guess all I can do right now is\n
-        more training!", MSGBOX_NPC)
+        train more!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
     end
 }
 
@@ -679,9 +697,9 @@ text Baldesia_MainHouse_TextLohan4{
 text Baldesia_MainHouse_Text_LohanThankYou{
     "LOHAN: You've returned.\n
     I… don't know what to say…\l
-    But I'm sorry. And thank you.\p
-    The mythical POKéMON, PECHARUNT…\n
-    There are stories of it passed down,\l
+    But, I'm sorry. And thank you.\p
+    The mythical POKéMON, PECHARUNT…\p
+    There are stories of it passed down,\n
     but I didn't believe it to be real.\p
     Apparently, it uses PECHA BERRIES and\n
     it's poison to create brainwashing\l
@@ -798,8 +816,9 @@ movement Baldesia_MainHouse_Movement_AsakLeave{
 }
 
 movement Baldesia_MainHouse_Movement_LohanReturns{
+    walk_up
     walk_right
-    walk_up * 2
+    walk_up
     walk_in_place_down
 }
 

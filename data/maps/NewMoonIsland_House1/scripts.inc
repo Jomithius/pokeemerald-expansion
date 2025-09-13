@@ -26,7 +26,7 @@ NewMoonIsland_House1_EventScript_Gimmighoul::
 # 18 "data/maps/NewMoonIsland_House1/scripts.pory"
 	waitmoncry
 # 19 "data/maps/NewMoonIsland_House1/scripts.pory"
-	setwildbattle SPECIES_GIMMIGHOUL, 75, ITEM_GIMMIGHOUL_COIN
+	setwildbattle SPECIES_GIMMIGHOUL, 85, ITEM_GIMMIGHOUL_COIN
 # 20 "data/maps/NewMoonIsland_House1/scripts.pory"
 	dowildbattle
 # 21 "data/maps/NewMoonIsland_House1/scripts.pory"

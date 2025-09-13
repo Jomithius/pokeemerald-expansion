@@ -250,11 +250,11 @@ AzureMountain_Up5_EventScript_RivalMovementVar::
 # 197 "data/maps/AzureMountain_Up5/scripts.pory"
 	switch VAR_TEMP_0
 # 198 "data/maps/AzureMountain_Up5/scripts.pory"
-	case 40, AzureMountain_Up5_EventScript_RivalMovementVar_3
+	case 39, AzureMountain_Up5_EventScript_RivalMovementVar_3
 # 200 "data/maps/AzureMountain_Up5/scripts.pory"
-	case 41, AzureMountain_Up5_EventScript_RivalMovementVar_4
+	case 40, AzureMountain_Up5_EventScript_RivalMovementVar_4
 # 202 "data/maps/AzureMountain_Up5/scripts.pory"
-	case 42, AzureMountain_Up5_EventScript_RivalMovementVar_5
+	case 41, AzureMountain_Up5_EventScript_RivalMovementVar_5
 # 205 "data/maps/AzureMountain_Up5/scripts.pory"
 	applymovement 1, Common_Movement_WalkDown
 AzureMountain_Up5_EventScript_RivalMovementVar_1:

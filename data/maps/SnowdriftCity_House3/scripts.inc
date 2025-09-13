@@ -185,13 +185,18 @@ SnowdriftCity_House3_EventScript_CynthiaBattle::
 
 SnowdriftCity_House3_EventScriptTryUnlockAreaZero::
 # 133 "data/maps/SnowdriftCity_House3/scripts.pory"
-	goto_if_unset FLAG_SYS_UNLOCKED_AREA_ZERO, SnowdriftCity_House3_EventScriptTryUnlockAreaZero_2
+	goto_if_unset FLAG_SYS_UNLOCKED_AREA_ZERO, SnowdriftCity_House3_EventScriptTryUnlockAreaZero_3
 SnowdriftCity_House3_EventScriptTryUnlockAreaZero_1:
 	return
 
 SnowdriftCity_House3_EventScriptTryUnlockAreaZero_2:
 # 134 "data/maps/SnowdriftCity_House3/scripts.pory"
 	setvar VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0
+	goto SnowdriftCity_House3_EventScriptTryUnlockAreaZero_1
+
+SnowdriftCity_House3_EventScriptTryUnlockAreaZero_3:
+# 133 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_unset FLAG_SYS_DEFEATED_RED, SnowdriftCity_House3_EventScriptTryUnlockAreaZero_2
 	goto SnowdriftCity_House3_EventScriptTryUnlockAreaZero_1
 
 
@@ -281,7 +286,7 @@ SnowdriftCity_House3_EventScript_CynthiaBattle_Text_0:
 
 SnowdriftCity_House3_EventScript_CynthiaBattle_Text_1:
 # 113 "data/maps/SnowdriftCity_House3/scripts.pory"
-	.string "That was beyond my expectation!\n What an exceptional battle!\l I love being visiting HOENN.\p I can't stay all year, because there's so\n much to investigate in SINNOH, as well.\p You're a great TRAINER, and it would\n make me happy to see you again sometime.$"
+	.string "That was beyond my expectation!\n What an exceptional battle!\p I really love visiting HOENN.\p I can't stay all year, because there's so\n much to investigate in SINNOH, as well.\p You're a great TRAINER, and it would\n make me happy to see you again sometime.$"
 
 SnowdriftCity_House3_EventScript_Cynthia_Text_0:
 # 142 "data/maps/SnowdriftCity_House3/scripts.pory"

@@ -5905,6 +5905,10 @@ u16 GetBattleBGM(void)
             return MUS_AREA_ZERO_WILD_BATTLE;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(AREA_ZERO_FUTURISTIC) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(AREA_ZERO_FUTURISTIC))
             return MUS_AREA_ZERO_WILD_BATTLE;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(AREA_ZERO_RAGING_BOLT_LAIR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(AREA_ZERO_RAGING_BOLT_LAIR))
+            return MUS_AREA_ZERO_WILD_BATTLE;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(AREA_ZERO_WALKING_WAKE_LAIR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(AREA_ZERO_WALKING_WAKE_LAIR))
+            return MUS_AREA_ZERO_WILD_BATTLE;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE138) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE138))
             return MUS_HG_VS_WILD;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE138_2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE138_2))

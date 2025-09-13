@@ -25,7 +25,7 @@ script Void_UpdateState{
 
 script Void_EventScript_FinalBattle{
     lockall
-    goto_if_eq(VAR_FINAL_REMATCH_STATE, 7, Void_EventScript_FinalBattle2)
+    goto_if_eq(VAR_FINAL_REMATCH_STATE, 8, Void_EventScript_FinalBattle2)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3)
     waitmovement(0)
     msgbox("{PLAYER}!\n
@@ -65,7 +65,7 @@ script Void_EventScript_FinalBattle{
         And here, we can go all out without\n
         worrying about anything.", MSGBOX_AUTOCLOSE)
     waitmessage
-    setvar(VAR_FINAL_REMATCH_STATE, 7)
+    setvar(VAR_FINAL_REMATCH_STATE, 8)
     playbgm(MUS_ENCOUNTER_EXDEATH, FALSE)
     clearflag(FLAG_TEMP_E)
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
@@ -190,7 +190,7 @@ script EventScript_FinalRematchesUnlocked{
         The ELITE FOUR can't be challenged until\n
         all GYM LEADERS are defeated.", MSGBOX_AUTOCLOSE)
     waitmessage
-    setvar(VAR_FINAL_REMATCH_STATE, 5)
+    setvar(VAR_FINAL_REMATCH_STATE, 6)
     setvar(VAR_GYM_LEADER_COUNT, 0)
     setflag(FLAG_SYS_FINAL_REMATCH)
     setflag(FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN)

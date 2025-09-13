@@ -16,7 +16,7 @@ script NewMoonIsland_House1_EventScript_Gimmighoul{
     waitmessage
     playmoncry(SPECIES_GIMMIGHOUL, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_GIMMIGHOUL, 75, ITEM_GIMMIGHOUL_COIN)
+    setwildbattle(SPECIES_GIMMIGHOUL, 85, ITEM_GIMMIGHOUL_COIN)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){

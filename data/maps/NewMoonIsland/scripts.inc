@@ -92,24 +92,30 @@ NewMoonIsland_EventScript_GhostBattle::
 # 69 "data/maps/NewMoonIsland/scripts.pory"
 	hideobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
 # 70 "data/maps/NewMoonIsland/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	delay 30
 # 71 "data/maps/NewMoonIsland/scripts.pory"
-	savebgm MUS_DUMMY
+	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
 # 72 "data/maps/NewMoonIsland/scripts.pory"
-	fadedefaultbgm
+	delay 24
 # 73 "data/maps/NewMoonIsland/scripts.pory"
+	removeobject 8
+# 74 "data/maps/NewMoonIsland/scripts.pory"
+	savebgm MUS_DUMMY
+# 75 "data/maps/NewMoonIsland/scripts.pory"
+	fadedefaultbgm
+# 76 "data/maps/NewMoonIsland/scripts.pory"
 	release
 	end
 
 
 NewMoonIsland_EventScript_Sign::
-# 78 "data/maps/NewMoonIsland/scripts.pory"
-	lock
-# 79 "data/maps/NewMoonIsland/scripts.pory"
-	msgbox NewMoonIsland_Text_Sign, MSGBOX_SIGN
-# 80 "data/maps/NewMoonIsland/scripts.pory"
-	waitmessage
 # 81 "data/maps/NewMoonIsland/scripts.pory"
+	lock
+# 82 "data/maps/NewMoonIsland/scripts.pory"
+	msgbox NewMoonIsland_Text_Sign, MSGBOX_SIGN
+# 83 "data/maps/NewMoonIsland/scripts.pory"
+	waitmessage
+# 84 "data/maps/NewMoonIsland/scripts.pory"
 	release
 	end
 
@@ -143,5 +149,5 @@ NewMoonIsland_EventScript_GhostBattle_Text_0:
 	.string "{PLAYER}.\n There's no escape.$"
 
 NewMoonIsland_Text_Sign::
-# 85 "data/maps/NewMoonIsland/scripts.pory"
+# 88 "data/maps/NewMoonIsland/scripts.pory"
 	.string "It's an old sign.\n  There's something scrawled on it…\p Som…hing so pecu…r shou…\n make off …ith the mot…\p The rest is too worn to read.$"

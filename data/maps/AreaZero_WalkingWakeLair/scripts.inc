@@ -28,7 +28,7 @@ AreaZero_WalkingWakeLair_EventScript_WalkingWake::
 # 18 "data/maps/AreaZero_WalkingWakeLair/scripts.pory"
 	waitmoncry
 # 19 "data/maps/AreaZero_WalkingWakeLair/scripts.pory"
-	setwildbattle SPECIES_WALKING_WAKE, 75
+	setwildbattle SPECIES_WALKING_WAKE, 90
 # 20 "data/maps/AreaZero_WalkingWakeLair/scripts.pory"
 	dowildbattle
 # 21 "data/maps/AreaZero_WalkingWakeLair/scripts.pory"

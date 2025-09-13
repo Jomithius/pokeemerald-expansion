@@ -258,7 +258,7 @@ TheUnder_EventScript_Hiker_Text_0:
 
 TheUnder_EventScript_Maximillian_Text_0:
 # 107 "data/maps/TheUnder/scripts.pory"
-	.string "It was a long trip to get here!$"
+	.string "It took a long time to\nget here!$"
 
 TheUnder_EventScript_Maximillian_Text_1:
 # 107 "data/maps/TheUnder/scripts.pory"
@@ -266,11 +266,11 @@ TheUnder_EventScript_Maximillian_Text_1:
 
 TheUnder_EventScript_Maximillian_Text_2:
 # 108 "data/maps/TheUnder/scripts.pory"
-	.string "Before it was almost impossible to\n get out here by foot.$"
+	.string "It used to be nearly impossible to\n get out here on foot.$"
 
 TheUnder_EventScript_Samothy_Text_0:
 # 114 "data/maps/TheUnder/scripts.pory"
-	.string "Hey! Catch out this catch!$"
+	.string "Hey!\nCheck out this catch!$"
 
 TheUnder_EventScript_Samothy_Text_1:
 # 114 "data/maps/TheUnder/scripts.pory"

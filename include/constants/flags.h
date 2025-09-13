@@ -1082,7 +1082,7 @@
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408 // changed
-#define FLAG_RECEIVED_TEACUP                                        0x409 // Baldesia Forest
+#define FLAG_BALDESIA_MINI_GAME_START                               0x409 // Baldesia Minigame. Flag is used to hide ninjas before talking to old man
 #define FLAG_HIDE_PLATES_CLERK                                      0x40A // Evergrande City
 #define FLAG_HIDE_MYSTERY_GIFT_MAN                                  0x40B // For vanilla mystery events: mew, deoxys, hooh lugia
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
@@ -1553,11 +1553,11 @@
 #define FLAG_SYS_DEFEATED_CYNTHIA                   (SYSTEM_FLAGS + 0xB1) // For unlocking area zero
 #define FLAG_SYS_STARTED_AS_BOY                     (SYSTEM_FLAGS + 0xB2) // For Fantasia debugging (fly and GameClear)
 #define FLAG_SYS_STARTED_AS_GIRL                    (SYSTEM_FLAGS + 0xB3) // For Fantasia debugging (fly and GameClear)
-#define FLAG_BALDESIA_MINI_GAME_START               (SYSTEM_FLAGS + 0xB4) // Ninja Mini Game
+#define FLAG_RECEIVED_TEACUP                        (SYSTEM_FLAGS + 0xB4) // Baldesia Forest Sinistcha minigame
 #define FLAG_TALKED_TO_PAIN_SPLIT_TUTOR             (SYSTEM_FLAGS + 0xB5) // to shorten text
 #define FLAG_SYS_BOSS_BATTLE                        (SYSTEM_FLAGS + 0xB6) // for post game boss battles, used to stop variance of levels
 #define FLAG_COMPLETED_BALDESIA                     (SYSTEM_FLAGS + 0xB7) // for last level cap
-#define FLAG_UNUSED_0x918                           (SYSTEM_FLAGS + 0xB8) // Unused Flag
+#define FLAG_SYS_DECLINED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB8) // 
 #define FLAG_UNUSED_0x919                           (SYSTEM_FLAGS + 0xB9) // Unused Flag
 #define FLAG_UNUSED_0x91A                           (SYSTEM_FLAGS + 0xBA) // Unused Flag
 #define FLAG_UNUSED_0x91B                           (SYSTEM_FLAGS + 0xBB) // Unused Flag

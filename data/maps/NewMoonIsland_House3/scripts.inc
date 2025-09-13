@@ -85,9 +85,9 @@ NewMoonIsland_House3_EventScript_Poobles::
 # 62 "data/maps/NewMoonIsland_House3/scripts.pory"
 	playmoncry SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER
 # 63 "data/maps/NewMoonIsland_House3/scripts.pory"
-	waitmoncry
+	msgbox NewMoonIsland_House3_EventScript_Poobles_Text_0, MSGBOX_DEFAULT
 # 64 "data/maps/NewMoonIsland_House3/scripts.pory"
-	msgbox NewMoonIsland_House3_EventScript_Poobles_Text_0, MSGBOX_AUTOCLOSE
+	waitmoncry
 # 65 "data/maps/NewMoonIsland_House3/scripts.pory"
 	waitmessage
 # 66 "data/maps/NewMoonIsland_House3/scripts.pory"
@@ -101,15 +101,15 @@ NewMoonIsland_House3_EventScript_Aria::
 # 72 "data/maps/NewMoonIsland_House3/scripts.pory"
 	fadeoutbgm 0
 # 73 "data/maps/NewMoonIsland_House3/scripts.pory"
-	delay 20
+	delay 24
 # 74 "data/maps/NewMoonIsland_House3/scripts.pory"
 	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
 # 75 "data/maps/NewMoonIsland_House3/scripts.pory"
-	msgbox NewMoonIsland_House3_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
+	msgbox NewMoonIsland_House3_EventScript_Aria_Text_0, MSGBOX_DEFAULT
 # 77 "data/maps/NewMoonIsland_House3/scripts.pory"
-	waitmessage
-# 78 "data/maps/NewMoonIsland_House3/scripts.pory"
 	waitmoncry
+# 78 "data/maps/NewMoonIsland_House3/scripts.pory"
+	waitmessage
 # 79 "data/maps/NewMoonIsland_House3/scripts.pory"
 	playse SE_PIN
 # 80 "data/maps/NewMoonIsland_House3/scripts.pory"
@@ -152,7 +152,7 @@ NewMoonIsland_House3_EventScript_Woman_Text_0:
 	.string "{PLAYER}?\n {PLAYER}?\p {PLAYER}?\n PLEASE… WAKE UP…$"
 
 NewMoonIsland_House3_EventScript_Poobles_Text_0:
-# 64 "data/maps/NewMoonIsland_House3/scripts.pory"
+# 63 "data/maps/NewMoonIsland_House3/scripts.pory"
 	.string "POOOOOOOOOOOOOOOBLES!$"
 
 NewMoonIsland_House3_EventScript_Aria_Text_0:

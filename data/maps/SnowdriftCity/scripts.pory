@@ -45,6 +45,7 @@ script SnowdriftCity_EventScript_Calyrex{
     msgbox("…", MSGBOX_DEFAULT)
     waitmessage
     dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Uh… Hello?", "Are you okay?")
+    delay(16)
     playse(SE_PIN)
     applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
     waitmovement(0)
@@ -60,8 +61,8 @@ script SnowdriftCity_EventScript_Calyrex{
 script SnowdriftCity_EventScript_CheckSpectierOrGlastrier{
     lock
     faceplayer
-    msgbox("My name is CALYREX.\n
-        Long ago, I was a ruler of a land far,\l
+    msgbox("My name is CALYREX.\p
+        Long ago, I was a ruler of a land far,\n
         far away from this place.\p
         Since my fall from grace, I've spent\n
         my days searching for my trusted\l
@@ -107,8 +108,8 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
         removeobject(9)
         fadescreen(FADE_FROM_BLACK)
         playfanfare(MUS_OBTAIN_ITEM)
-        waitfanfare
         msgbox("CALYREX joined the party!", MSGBOX_AUTOCLOSE)
+        waitfanfare
         waitmessage
         setflag(FLAG_DEFEATED_CALYREX)
     }
@@ -117,8 +118,8 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
         removeobject(9)
         fadescreen(FADE_FROM_BLACK)
         playfanfare(MUS_OBTAIN_ITEM)
-        waitfanfare
         msgbox("CALYREX was sent to the PC!", MSGBOX_AUTOCLOSE)
+        waitfanfare
         waitmessage
         setflag(FLAG_DEFEATED_CALYREX)
     }

@@ -2182,7 +2182,7 @@ MatchCall_Text_TateLiza2::
 	.string "ready for our next battle!$"
 
 MatchCall_Text_TateLiza3::
-	.string "ARGH!\n"
+	.string "ARIA: ARGH!\n"
 	.string "AAAARRRGGHHH!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
@@ -2191,7 +2191,9 @@ MatchCall_Text_TateLiza4::
 	.string "MOMO: Baldy, baldy,\n"
 	.string "over there…\p"
 	.string "ARIA: What's it like\n"
-	.string "to have no hair?$"
+	.string "to have no hair?\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_Juan1::
 	.string "JOEY: Yah…\n"
@@ -2205,7 +2207,9 @@ MatchCall_Text_Juan3::
 	.string "JOEY: Yeeeheheeaaah…$"
 
 MatchCall_Text_Juan4::
-	.string "JOEY: Yeeeheheeaaah…$"
+	.string "JOEY: Yeeeheheeaaah…\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_Sidney::
 	.string "MISA: Hello, {PLAYER}?\p"
@@ -2219,16 +2223,17 @@ MatchCall_Text_Phoebe::
 	.string "Hmph!$"
 
 MatchCall_Text_Glacia::
-	.string "XION: Hello, {PLAYER}.\p"
-	.string "I trust you haven't become\n"
-	.string "complacent with your power?\p"
-	.string "If you feel the need to cool your\n"
-	.string "hot emotions just a little, do come\l"
-	.string "to the POKéMON LEAGUE…$"
+	.string "XION: Di-di-\n"
+	.string "didilididoo.\p"
+	.string "Start diggin' in yo butt, twin.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_Drake::
 	.string "DAVE: I swear to God, dude…\n"
-	.string "Next time you better lose.$"
+	.string "Next time you better lose.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_Wallace::
 	.string "JIMMY: What's good, {PLAYER}{KUN}?\n"

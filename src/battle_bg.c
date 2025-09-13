@@ -852,13 +852,6 @@ void DrawMainBattleBackground(void)
                 LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Pink, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 return;
             }
-            else if (trainerClass == TRAINER_CLASS_CHIEF)
-            {
-                LZDecompressVram(gBattleEnvironmentTiles_Stadium2, (void *)(BG_CHAR_ADDR(2)));
-                LZDecompressVram(gBattleEnvironmentTilemap_Stadium2, (void *)(BG_SCREEN_ADDR(26)));
-                LoadCompressedPalette(gBattleEnvironmentPalette_Stadium2Brown, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-                return;
-            }
             else if (trainerClass == TRAINER_CLASS_CHAMPION)
             {
                 if(!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleCynthiaName))

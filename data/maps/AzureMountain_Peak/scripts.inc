@@ -84,18 +84,35 @@ AzureMountain_Peak_EventScript_Red::
 # 48 "data/maps/AzureMountain_Peak/scripts.pory"
 	setvar VAR_AZURE_MOUNTAIN_PEAK_STATE, 1
 # 49 "data/maps/AzureMountain_Peak/scripts.pory"
-	setvar VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0
+	call_if_eq VAR_ULTRA_SPACE_STATE, 4, AzureMountain_Peak_EventScriptTryUnlockAreaZero
 # 50 "data/maps/AzureMountain_Peak/scripts.pory"
 	releaseall
 	end
 
 
-# 58 "data/maps/AzureMountain_Peak/scripts.pory"
+AzureMountain_Peak_EventScriptTryUnlockAreaZero::
+# 55 "data/maps/AzureMountain_Peak/scripts.pory"
+	goto_if_unset FLAG_SYS_UNLOCKED_AREA_ZERO, AzureMountain_Peak_EventScriptTryUnlockAreaZero_3
+AzureMountain_Peak_EventScriptTryUnlockAreaZero_1:
+	return
+
+AzureMountain_Peak_EventScriptTryUnlockAreaZero_2:
+# 56 "data/maps/AzureMountain_Peak/scripts.pory"
+	setvar VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER, 0
+	goto AzureMountain_Peak_EventScriptTryUnlockAreaZero_1
+
+AzureMountain_Peak_EventScriptTryUnlockAreaZero_3:
+# 55 "data/maps/AzureMountain_Peak/scripts.pory"
+	goto_if_unset FLAG_SYS_DEFEATED_CYNTHIA, AzureMountain_Peak_EventScriptTryUnlockAreaZero_2
+	goto AzureMountain_Peak_EventScriptTryUnlockAreaZero_1
+
+
+# 65 "data/maps/AzureMountain_Peak/scripts.pory"
 AzureMountain_Peak_RedLeaves:
-# 59 "data/maps/AzureMountain_Peak/scripts.pory"
+# 66 "data/maps/AzureMountain_Peak/scripts.pory"
 	jump_up
 	step_end
 
 AzureMountain_Peak_Text_Red::
-# 54 "data/maps/AzureMountain_Peak/scripts.pory"
+# 61 "data/maps/AzureMountain_Peak/scripts.pory"
 	.string "…$"

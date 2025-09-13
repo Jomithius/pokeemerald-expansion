@@ -197,7 +197,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 	msgbox("What move do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "PSYCHIC NOISE", "EXPANDING FORCE", "BREAKING SWIPE", "SLUDGE WAVE", 
 		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT", "HEAT WAVE",
-		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "IRON HEAD", "POLTERGEIST", "SWAGGER", "TAILWIND")
+		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "IRON HEAD", "POLTERGEIST", "SWAGGER", "FLATTER", "TAILWIND")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_PsychicNoiseTeach)
@@ -236,6 +236,8 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 		case 17:
 			goto(MoveTutor_EventScript_SwaggerTeach)
 		case 18:
+			goto(MoveTutor_EventScript_FlatterTeach)
+		case 19:
 			goto(MoveTutor_EventScript_TailwindTeach)
 		case MULTI_B_PRESSED:
 			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
@@ -401,6 +403,15 @@ script MoveTutor_EventScript_PoltergeistTeach{
 script MoveTutor_EventScript_SwaggerTeach{
 	msgbox("Which POKéMON do you want to\nteach SWAGGER to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_SWAGGER)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_FlatterTeach{
+	msgbox("Which POKéMON do you want to\nteach FLATTER to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_FLATTER)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
@@ -580,7 +591,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning{
 		going back.\p
 		Make sure you're ready.", MSGBOX_AUTOCLOSE)
 	waitmessage
-	setvar(VAR_FINAL_REMATCH_STATE, 6)
+	setvar(VAR_FINAL_REMATCH_STATE, 7)
 	releaseall
 	end
 }

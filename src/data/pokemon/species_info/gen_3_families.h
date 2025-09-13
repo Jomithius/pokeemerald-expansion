@@ -6084,11 +6084,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #if P_MEGA_EVOLUTIONS
     [SPECIES_ROSERADE_MEGA] =
     {
-        .baseHP        = 80,
+        .baseHP        = 60,
         .baseAttack    = 100,
         .baseDefense   = 95,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 125,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 130,
         .baseSpDefense = 125,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .catchRate = 75,

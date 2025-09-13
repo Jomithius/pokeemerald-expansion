@@ -16,7 +16,7 @@ script AreaZero_KoriadonLair_EventScript_Koraidon{
     faceplayer
     playmoncry(SPECIES_KORAIDON, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_KORAIDON, 75)
+    setwildbattle(SPECIES_KORAIDON, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     release

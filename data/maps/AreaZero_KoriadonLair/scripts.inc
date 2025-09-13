@@ -28,7 +28,7 @@ AreaZero_KoriadonLair_EventScript_Koraidon::
 # 18 "data/maps/AreaZero_KoriadonLair/scripts.pory"
 	waitmoncry
 # 19 "data/maps/AreaZero_KoriadonLair/scripts.pory"
-	setwildbattle SPECIES_KORAIDON, 75
+	setwildbattle SPECIES_KORAIDON, 90
 # 20 "data/maps/AreaZero_KoriadonLair/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 21 "data/maps/AreaZero_KoriadonLair/scripts.pory"

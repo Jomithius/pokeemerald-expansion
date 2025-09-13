@@ -7,7 +7,7 @@ script AzureMountain_KyuremLair_EventScript_Kyurem{
     playmoncry(SPECIES_KYUREM, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_KYUREM, 75)
+    setwildbattle(SPECIES_KYUREM, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)

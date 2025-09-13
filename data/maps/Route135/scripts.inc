@@ -60,7 +60,7 @@ Route135_EventScript_Danny::
 # 49 "data/maps/Route135/scripts.pory"
 	trainerbattle_single TRAINER_DANNY, Route135_EventScript_Danny_Text_0, Route135_EventScript_Danny_Text_1
 # 50 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_Danny_Text_2, MSGBOX_NPC
+	msgbox Route135_EventScript_Danny_Text_1, MSGBOX_NPC
 	end
 
 
@@ -451,11 +451,7 @@ Route135_EventScript_Danny_Text_0:
 
 Route135_EventScript_Danny_Text_1:
 # 49 "data/maps/Route135/scripts.pory"
-	.string "I've never heard a POKéMON like that!$"
-
-Route135_EventScript_Danny_Text_2:
-# 50 "data/maps/Route135/scripts.pory"
-	.string "I've heard seen a POKéMON like that!$"
+	.string "I've never heard a POKéMON make\na sound like that!$"
 
 Route135_EventScript_Danuel_Text_0:
 # 55 "data/maps/Route135/scripts.pory"

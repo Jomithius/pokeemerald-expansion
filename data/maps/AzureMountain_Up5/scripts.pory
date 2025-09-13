@@ -195,11 +195,11 @@ script AzureMountain_Up5_EventScript_MayBattle{
 script AzureMountain_Up5_EventScript_RivalMovementVar{
     getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
     switch(var(VAR_TEMP_0)){
-        case 40:
+        case 39:
             applymovement(LOCALID_RIVAL, AzureMountain_Up5_MovementRivalLeftDown)
-        case 41:
+        case 40:
             applymovement(LOCALID_RIVAL, Common_Movement_WalkDown)
-        case 42:
+        case 41:
             applymovement(LOCALID_RIVAL, AzureMountain_Up5_MovementRivalRightDown)
         default:
             applymovement(LOCALID_RIVAL, Common_Movement_WalkDown)

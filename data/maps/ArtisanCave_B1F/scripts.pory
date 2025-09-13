@@ -5,25 +5,27 @@ raw`ArtisanCave_B1F_MapScripts::
 script AzureMountain_EventScript_Barley{
     trainerbattle_single(TRAINER_BARLEY, "Only the strongest TRAINERS come here!", "Whoa…")
     msgbox("Another super strong TRAINER\n
-        came through here a while ago.", MSGBOX_NPC)
+        came through here a while ago.\p
+        He beat me without saying a word!", MSGBOX_NPC)
 	end
 }
 
 script AzureMountain_EventScript_Hurley{
-    trainerbattle_single(TRAINER_HURLEY, "I got here by cheating!", "Dang…")
-    msgbox("Dang… You're strong!", MSGBOX_NPC)
+    trainerbattle_single(TRAINER_HURLEY, "I got here by cheating!", "Are you cheating too?!")
+    msgbox("There's no way you beat my team.\n
+        You've gotta be cheating too.", MSGBOX_NPC)
 	end
 }
 
 script AzureMountain_EventScript_Jessi{
-    trainerbattle_single(TRAINER_JESSI, "Oh?\nYou think you can beat me?", "Okay…\nMaybe you can beat me.")
-    msgbox("Dang… You're strong!", MSGBOX_NPC)
+    trainerbattle_single(TRAINER_JESSI, "Oh?\nYou think you can beat me?", "Okay…\nMaybe you can…")
+    msgbox("Dang…\nYou're strong!", MSGBOX_NPC)
 	end
 }
 
 script AzureMountain_EventScript_Dogfood{
-    trainerbattle_single(TRAINER_DOGFOOD, "Guys… I need pee.", "Grrr…")
-    msgbox("Guys… I need pee.", MSGBOX_NPC)
+    trainerbattle_single(TRAINER_DOGFOOD, "Guys…\nI need pee.", "Grrr…")
+    msgbox("Guys…\nI need pee.", MSGBOX_NPC)
 	end
 }
 
@@ -42,17 +44,16 @@ script AzureMountain_EventScript_Rin{
 
 script AzureMountain_EventScript_Shuji{
     trainerbattle_single(TRAINER_SHUJI, "Hm…\nI can sense your strength.", "You've come far, young one.")
-    msgbox("Hm…\n
-        Looks like the next generations have\l
+    msgbox("Hm…\p
+        Looks like the next generation has\n
         a lot of potential.", MSGBOX_NPC)
 	end
 }
 
 script AzureMountain_EventScript_Yuu{
     trainerbattle_single(TRAINER_YUU, "It's so hot over here!\nI'm fired up!", "Well, that cooled me down!")
-    msgbox("The ladder next to me leads to\n
-        the volcano deep within the\l
-        mountain.\p
+    msgbox("The ladder next to me leads to the\n
+        volcano deep within the mountain.\p
         It's so hot that I don't think\n
         I've ever seen anyone go down there!", MSGBOX_NPC)
 	end
@@ -64,7 +65,7 @@ script AzureMountain_EventScript_Keldeo{
     playmoncry(SPECIES_KELDEO, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_KELDEO, 75)
+    setwildbattle(SPECIES_KELDEO, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -86,7 +87,7 @@ script AzureMountain_EventScript_Cobalion{
     playmoncry(SPECIES_COBALION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_COBALION, 75)
+    setwildbattle(SPECIES_COBALION, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -108,7 +109,7 @@ script AzureMountain_EventScript_Virizion{
     playmoncry(SPECIES_VIRIZION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_VIRIZION, 75)
+    setwildbattle(SPECIES_VIRIZION, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -130,7 +131,7 @@ script AzureMountain_EventScript_Terrakion{
     playmoncry(SPECIES_TERRAKION, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_TERRAKION, 75)
+    setwildbattle(SPECIES_TERRAKION, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
@@ -152,7 +153,7 @@ script AzureMountain_EventScript_Hoopa{
     playmoncry(SPECIES_HOOPA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
-    setwildbattle(SPECIES_HOOPA, 75)
+    setwildbattle(SPECIES_HOOPA, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)

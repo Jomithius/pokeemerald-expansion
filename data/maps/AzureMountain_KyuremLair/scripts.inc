@@ -14,7 +14,7 @@ AzureMountain_KyuremLair_EventScript_Kyurem::
 # 9 "data/maps/AzureMountain_KyuremLair/scripts.pory"
 	waitmoncry
 # 10 "data/maps/AzureMountain_KyuremLair/scripts.pory"
-	setwildbattle SPECIES_KYUREM, 75
+	setwildbattle SPECIES_KYUREM, 90
 # 11 "data/maps/AzureMountain_KyuremLair/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 12 "data/maps/AzureMountain_KyuremLair/scripts.pory"

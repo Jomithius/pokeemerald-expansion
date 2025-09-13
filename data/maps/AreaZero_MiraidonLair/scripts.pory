@@ -16,7 +16,7 @@ script AreaZero_MiraidonLair_EventScript_Miraidon{
     faceplayer
     playmoncry(SPECIES_MIRAIDON, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_MIRAIDON, 75)
+    setwildbattle(SPECIES_MIRAIDON, 90)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     release

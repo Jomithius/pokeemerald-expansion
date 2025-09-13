@@ -93,7 +93,6 @@ script Baldesia_EventScript_OldManMiniGame{
 }
 
 script Baldesia_EventScript_StartMiniGame{
-    lock
     msgbox("Hm… I sense potential in you, young one.\n
         How about a little challenge?\p
         If you can find my 6 disciples that are\n
@@ -107,7 +106,6 @@ script Baldesia_EventScript_StartMiniGame{
 }
 
 script Baldesia_EventScript_RemindMiniGame{
-    lock
     msgbox("If you can find my 6 disciples that are\n
         hidden outside around the village, I'll\l
         give you a reward.", MSGBOX_AUTOCLOSE)
@@ -127,7 +125,6 @@ script Baldesia_EventScript_GiveResult{
 }
 
 script Baldesia_EventScript_GiveLeadersCrest{
-    lock
     msgbox("Hm… So you were able to find all\n
     of my disciples… Impressive.\p
     As promised, here's your reward." MSGBOX_AUTOCLOSE)
@@ -664,7 +661,7 @@ script Baldesia_EventScript_HisuianZoruaTrigger{
     waitmessage
     applymovement(24, Common_Movement_WalkRight)
     waitmovement(24)
-    setwildbattle(SPECIES_ZORUA_HISUI, 70)
+    setwildbattle(SPECIES_ZORUA_HISUI, 80)
     dowildbattle
     applymovement(LOCALID_PANINI, Baldesia_Movement_PaniniFaceBennis)
     waitmovement(0)

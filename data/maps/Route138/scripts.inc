@@ -54,7 +54,7 @@ Route138_EventScript_Camper_Text_0:
 
 Route138_EventScript_Pamela_Text_0:
 # 11 "data/maps/Route138/scripts.pory"
-	.string "I swam here all the way from\nWACHUNPELON!$"
+	.string "I swam all the way here from\nWACHUNPELON!$"
 
 Route138_EventScript_Pamela_Text_1:
 # 11 "data/maps/Route138/scripts.pory"

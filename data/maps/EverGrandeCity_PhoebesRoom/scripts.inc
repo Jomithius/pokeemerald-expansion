@@ -382,60 +382,60 @@ EverGrandeCity_PhoebesRoom_EventScript_EugeniaEeveeTrue::
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry::
 # 211 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	fadeoutbgm 0
+	playbgm MUS_NONE, FALSE
 # 212 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	delay 16
-# 213 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_0, MSGBOX_DEFAULT
-# 214 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 213 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmessage
-# 215 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 214 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	checkplayergender
-# 216 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 215 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_2
-# 220 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 219 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_1, EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_3
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_1:
-# 222 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 221 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto_if_eq VAR_RESULT, 1, EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished
+# 222 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	playbgm MUS_ENCOUNTER_EXDEATH, FALSE
 # 223 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	fadeinbgm 0
-# 224 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_4, MSGBOX_AUTOCLOSE
-# 227 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 226 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmessage
-# 228 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 227 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	clearflag FLAG_TEMP_E
-# 229 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 228 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 230 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 229 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	call EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle
-# 231 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 230 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playfirstmoncry
+# 231 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmoncry
 # 232 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmoncry
-# 233 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
-# 234 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 233 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmoncry
-# 235 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 234 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_DEFEATED_EUGENIA
-# 236 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 235 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat
-# 237 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 236 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated
 	return
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_2:
-# 217 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 216 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_1, EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_2
 	goto EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_1
 
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished::
-# 241 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 240 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	checkplayergender
+# 241 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	playbgm MUS_ENCOUNTER_EXDEATH, FALSE
 # 242 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished_2
@@ -449,30 +449,28 @@ EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished_1:
 # 256 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto_if_eq VAR_RESULT, 1, EverGrandeCity_PhoebesRoom_EventScript_LinaNo
 # 257 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	fadeinbgm 0
-# 258 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_4, MSGBOX_AUTOCLOSE
-# 261 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 260 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmessage
-# 262 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 261 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	clearflag FLAG_TEMP_E
-# 263 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 262 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 264 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 263 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	call EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle
-# 265 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 264 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playfirstmoncry
+# 265 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmoncry
 # 266 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmoncry
-# 267 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
-# 268 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 267 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmoncry
-# 269 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 268 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_DEFEATED_EUGENIA
-# 270 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 269 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat
-# 271 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 270 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated
 	return
 
@@ -487,286 +485,286 @@ EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished_2:
 
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle::
-# 275 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 274 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_EXDEATH, FALSE
-# 276 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 275 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_Text_EugeniaIntro, MSGBOX_AUTOCLOSE
-# 277 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 276 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmessage
-# 278 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 277 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	clearflag FLAG_TEMP_E
-# 279 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 278 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 280 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 279 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	call EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle
-# 281 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 280 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playfirstmoncry
+# 281 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmoncry
 # 282 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmoncry
-# 283 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
-# 284 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 283 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmoncry
-# 285 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 284 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_DEFEATED_EUGENIA
-# 286 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 285 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat
-# 287 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 286 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated
 	end
 
 
 EverGrandeCity_PhoebesRoom_EventScript_LinaNo::
-# 292 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 291 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
-# 293 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 292 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_Text_LinaNo, MSGBOX_AUTOCLOSE
-# 294 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 293 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmessage
-# 295 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 294 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	clearflag FLAG_TEMP_E
-# 296 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 295 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 297 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 296 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	call EliteFour_EventScript_PlayerGetsInPosition
-# 298 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 297 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playfirstmoncry
+# 298 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmoncry
 # 299 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmoncry
-# 300 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playmoncry SPECIES_LUXRAY, CRY_MODE_ENCOUNTER
-# 301 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 300 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmoncry
-# 302 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 301 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
-# 303 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 302 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_DEFEATED_LINA
-# 304 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 303 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_LINA, EverGrandeCity_PhoebesRoom_Text_Defeat
-# 305 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 304 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
-# 306 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 305 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement 0
-# 307 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 306 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	callnative RemoveFollowingPokemon
-# 308 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 307 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_TEMP_E
-# 309 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 308 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 310 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 309 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
-# 311 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 310 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 	end
 
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated::
-# 316 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 315 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
-# 317 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 316 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setvar VAR_LINA_TALKED_TO, 3
-# 318 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 317 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
-# 319 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 318 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement 0
-# 320 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 319 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	callnative RemoveFollowingPokemon
-# 321 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 320 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setflag FLAG_TEMP_E
-# 322 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 321 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 323 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 322 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
-# 324 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 323 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech, MSGBOX_DEFAULT
-# 325 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 324 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech::
-# 330 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 329 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement VAR_LAST_TALKED, EverGrandeCity_PhoebesRoom_Movement_FaceAwayPlayer
-# 331 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 330 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement 0
-# 332 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 331 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech, MSGBOX_DEFAULT
-# 333 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 332 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	release
 	end
 
 
 EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle::
-# 338 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 337 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement 2, Common_Movement_EnterPokeball
-# 339 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 338 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement 2
-# 340 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 339 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	removeobject 2
-# 341 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 340 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	specialvar VAR_RESULT, GetPlayerFacingDirection
-# 342 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 341 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	switch VAR_RESULT
-# 343 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 342 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	case DIR_NORTH, EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_3
-# 347 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 346 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	case DIR_SOUTH, EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_4
-# 353 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 352 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	case DIR_WEST, EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_5
-# 360 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 359 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth
-# 361 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 360 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement 0
 EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_1:
-# 363 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 362 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	clearflag FLAG_TEMP_E
-# 364 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 363 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	callnative UpdateFollowingPokemon
+# 364 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	playse SE_BALL_OPEN
 # 365 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	playse SE_BALL_OPEN
+	fadescreen FADE_TO_WHITE
 # 366 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	fadescreen FADE_TO_WHITE
+	waitse
 # 367 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitse
-# 368 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball
+# 368 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmovement 0
 # 369 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmovement 0
-# 370 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer
+# 370 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmovement 0
 # 371 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmovement 0
+	fadescreen FADE_FROM_WHITE
 # 372 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 373 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_Text_0, MSGBOX_AUTOCLOSE
-# 375 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 374 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmessage
-# 376 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 375 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playse SE_BALL_OPEN
-# 377 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 376 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	fadescreen FADE_TO_WHITE
+# 377 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitse
 # 378 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitse
-# 379 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	clearflag FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM
-# 380 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 379 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	addobject LOCALID_RAYQUAZA
-# 381 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 380 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	fadescreen FADE_FROM_WHITE
+# 381 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	delay 30
 # 382 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	delay 30
-# 383 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playse SE_PIN
-# 384 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 383 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExclamationMark
-# 385 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 384 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 385 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmovement 0
 # 386 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmovement 0
-# 387 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitse
+# 387 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	delay 30
 # 388 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	delay 30
-# 389 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_PhoebesRoom_Movement_PlayerStepBack
+# 389 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	delay 8
 # 390 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	delay 8
-# 391 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_PhoebesRoom_Movement_PlayerStepBack
-# 392 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 391 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement LOCALID_RAYQUAZA, EverGrandeCity_Movement_EliteFourPokemonGetsInPosition
-# 393 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 392 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement LOCALID_RAYQUAZA
-# 394 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 393 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	delay 30
-# 395 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 394 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 395 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	delay 8
 # 396 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	delay 8
-# 397 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkInPlaceRight
+# 397 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmovement 0
 # 398 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmovement 0
-# 399 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	delay 60
-# 400 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 399 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
-# 401 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 400 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	delay 8
-# 402 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 401 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkInPlaceUp
+# 402 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	waitmovement 0
 # 403 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	waitmovement 0
-# 404 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_Movement_PlayerPokemonGetsInPosition
-# 405 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 404 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement 0
-# 406 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 405 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	delay 30
 	return
 
 EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_3:
-# 344 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 343 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth
-# 345 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 344 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement 0
 	goto EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_1
 
 EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_4:
-# 348 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 347 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionSouth
-# 349 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 348 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	delay 8
-# 350 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 349 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown
-# 351 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 350 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_1
 
 EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_5:
-# 354 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 353 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionWest
-# 355 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 354 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	delay 8
-# 356 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 355 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown
-# 357 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 356 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_1
 
 
 EverGrandeCity_PhoebesRoom_EventScript_Luxray::
-# 467 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 466 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	lock
-# 468 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 467 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	faceplayer
-# 469 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 468 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playmoncry SPECIES_LUXRAY, CRY_MODE_ENCOUNTER
-# 470 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 469 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	delay 24
-# 471 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 470 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement 2, Common_Movement_FaceOriginalDirection
-# 472 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 471 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmovement 2
-# 473 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 472 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	release
 	end
 
 
-# 477 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 476 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 EverGrandeCity_PhoebesRoom_Movement_PlayerStepBack:
-# 478 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 477 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	lock_facing_direction
-# 479 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 478 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	walk_fast_down
-# 480 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 479 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 483 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 482 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 EverGrandeCity_PhoebesRoom_Movement_FaceAwayPlayer:
-# 484 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 483 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	face_away_player
 	step_end
 
@@ -791,23 +789,23 @@ EverGrandeCity_PhoebesRoom_EventScript_EugeniaEeveeTrue_Text_1:
 	.string "I'm sorry! I won't do it again!$"
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_0:
-# 213 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 212 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Are you really sorry?$"
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_1:
-# 217 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 216 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Yeah, I'm “soooo” sorry!$"
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_2:
-# 217 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 216 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Yes! I was a bad boy!$"
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_3:
-# 220 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 219 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Yes! I was a bad girl!$"
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry_Text_4:
-# 224 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 223 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Hmph!\n You're a terrible person.\p No more second chances!$"
 
 EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished_Text_0:
@@ -831,37 +829,37 @@ EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished_Text_4:
 	.string "Okay, okay! I'm a good girl!$"
 
 EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle_Text_0:
-# 373 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 372 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Hmph! I'm going to do everything I\n can to make you pay!$"
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeechVar2::
-# 411 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 410 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Wha-!\n Oh, it's you again.\p Let's get this over with so I can\n go back to reading. Hmph!$"
 
 EverGrandeCity_PhoebesRoom_Text_LinaStillGoingIntoHouses::
-# 418 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 417 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Wha-!\n You again?!\p Right when I was getting to\n the good part!\p I thought I locked the door this time…\n but you'd probably break in either way.\p Are you still going into random peoples'\n houses?$"
 
 EverGrandeCity_PhoebesRoom_Text_LinaDidYouTakeEevee::
-# 429 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 428 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Hmph! Of course you are.\p They still haven't found my EEVEE,\n by the way…\p So be honest.\n Was it you?$"
 
 EverGrandeCity_PhoebesRoom_Text_LinaReally::
-# 437 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 436 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "…\p Really?$"
 
 EverGrandeCity_PhoebesRoom_Text_EugeniaIntro::
-# 442 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 441 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "You little-\n What the fuck is wrong with you?!\l Didn't your mother raise you better?!\p You should know it's wrong to steal!\n I'm going to crush you, you dirty thief!$"
 
 EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat::
-# 450 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 449 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string ">.>\n Hmph!$"
 
 EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech::
-# 455 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 454 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Get out of my sight!\n Hmph!$"
 
 EverGrandeCity_PhoebesRoom_Text_LinaNo::
-# 460 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 459 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Hmph. Oh, well.\p Let's get this over with so I\n can get back to my book.$"

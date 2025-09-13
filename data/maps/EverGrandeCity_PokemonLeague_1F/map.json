@@ -228,7 +228,7 @@
       "y": 2,
       "elevation": 0,
       "var": "VAR_FINAL_REMATCH_STATE",
-      "var_value": "5",
+      "var_value": "6",
       "script": "EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning"
     },
     {
@@ -237,7 +237,7 @@
       "y": 2,
       "elevation": 0,
       "var": "VAR_FINAL_REMATCH_STATE",
-      "var_value": "5",
+      "var_value": "6",
       "script": "EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning"
     }
   ],
