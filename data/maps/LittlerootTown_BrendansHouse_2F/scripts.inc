@@ -646,7 +646,7 @@ PlayersHouse_2F_EventScript_SetToNormalDifficulty::
 # 328 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitfanfare
 # 329 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0, MSGBOX_DEFAULT
+	msgbox PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0, MSGBOX_AUTOCLOSE
 # 331 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmessage
 # 332 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -658,7 +658,7 @@ PlayersHouse_2F_EventScript_SetToNormalDifficulty::
 # 335 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	clearflag FLAG_SYS_SLEEP_CLAUSE
 # 336 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	giveitem ITEM_MODE_SWITCHER
+	additem ITEM_MODE_SWITCHER
 # 337 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	releaseall
 	end
@@ -688,7 +688,7 @@ PlayersHouse_2F_EventScript_SetToHardDifficulty::
 # 359 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitfanfare
 # 360 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0, MSGBOX_DEFAULT
+	msgbox PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0, MSGBOX_AUTOCLOSE
 # 362 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmessage
 # 363 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -700,7 +700,7 @@ PlayersHouse_2F_EventScript_SetToHardDifficulty::
 # 366 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	setflag FLAG_SYS_SLEEP_CLAUSE
 # 367 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	giveitem ITEM_MODE_SWITCHER
+	additem ITEM_MODE_SWITCHER
 # 368 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	releaseall
 	end
@@ -720,7 +720,7 @@ PlayersHouse_2F_EventScript_ChooseDifficulty_Text_2:
 
 PlayersHouse_2F_EventScript_SetToNormalDifficulty_Text_0:
 # 329 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Difficulty set to NORMAL.\p This can be changed at any time using\nthe MODE SWITCHER.$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Difficulty set to NORMAL.\p This can be changed at any time using\nthe MODE SWITCHER in KEY ITEMS.$"
 
 PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo_Text_0:
 # 343 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -728,4 +728,4 @@ PlayersHouse_2F_EventScript_SetToHardDifficultyYesNo_Text_0:
 
 PlayersHouse_2F_EventScript_SetToHardDifficulty_Text_0:
 # 360 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "{COLOR RED}{SHADOW LIGHT_RED}Difficulty set to HARD.\p This can be changed at any time using\nthe MODE SWITCHER.$"
+	.string "{COLOR RED}{SHADOW LIGHT_RED}Difficulty set to HARD.\p This can be changed at any time using\nthe MODE SWITCHER in KEY ITEMS.$"
