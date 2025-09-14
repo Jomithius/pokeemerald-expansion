@@ -917,7 +917,7 @@ DewfordTown_Gym_EventScript_PooblesDugtrio_Text_0:
 
 DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_0:
 # 455 "data/maps/DewfordTown_Gym/scripts.pory"
-	.string "All right, {PLAYER}! It's time to show you how\n strong POOBLES and I have gotten!$"
+	.string "All right, {PLAYER}! It's time to show\nyou how strong POOBLES has gotten!$"
 
 DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_1:
 # 455 "data/maps/DewfordTown_Gym/scripts.pory"

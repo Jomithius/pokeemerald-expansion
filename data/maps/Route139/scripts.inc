@@ -347,11 +347,11 @@ Route139_EventScript_Morgan_2:
 # 265 "data/maps/Route139/scripts.pory"
 	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 266 "data/maps/Route139/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	setobjectnewmovementtype VAR_LAST_TALKED, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
 # 267 "data/maps/Route139/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 268 "data/maps/Route139/scripts.pory"
-	setobjectmovementtype 3, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
+	waitmovement 0
 # 269 "data/maps/Route139/scripts.pory"
 	setflag FLAG_DEFEATED_WORKER_MORGAN
 	goto Route139_EventScript_Morgan_1
@@ -409,11 +409,11 @@ Route139_EventScript_Dinwiddle_2:
 # 292 "data/maps/Route139/scripts.pory"
 	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 293 "data/maps/Route139/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	setobjectnewmovementtype VAR_LAST_TALKED, MOVEMENT_TYPE_WALK_IN_PLACE_UP
 # 294 "data/maps/Route139/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 295 "data/maps/Route139/scripts.pory"
-	setobjectmovementtype 5, MOVEMENT_TYPE_WALK_IN_PLACE_UP
+	waitmovement 0
 # 296 "data/maps/Route139/scripts.pory"
 	setflag FLAG_DEFEATED_WORKER_DINWIDDLE
 	goto Route139_EventScript_Dinwiddle_1
@@ -471,11 +471,11 @@ Route139_EventScript_Widdledin_2:
 # 319 "data/maps/Route139/scripts.pory"
 	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 320 "data/maps/Route139/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	setobjectnewmovementtype VAR_LAST_TALKED, MOVEMENT_TYPE_WALK_IN_PLACE_UP
 # 321 "data/maps/Route139/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 322 "data/maps/Route139/scripts.pory"
-	setobjectmovementtype 6, MOVEMENT_TYPE_WALK_IN_PLACE_UP
+	waitmovement 0
 # 323 "data/maps/Route139/scripts.pory"
 	setflag FLAG_DEFEATED_WORKER_WIDDLEDIN
 	goto Route139_EventScript_Widdledin_1
@@ -533,11 +533,11 @@ Route139_EventScript_Johnald_2:
 # 346 "data/maps/Route139/scripts.pory"
 	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 347 "data/maps/Route139/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	setobjectnewmovementtype VAR_LAST_TALKED, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
 # 348 "data/maps/Route139/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 349 "data/maps/Route139/scripts.pory"
-	setobjectmovementtype 2, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
+	waitmovement 0
 # 350 "data/maps/Route139/scripts.pory"
 	setflag FLAG_DEFEATED_WORKER_JOHNALD
 	goto Route139_EventScript_Johnald_1
@@ -595,11 +595,11 @@ Route139_EventScript_Fredward_2:
 # 375 "data/maps/Route139/scripts.pory"
 	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 376 "data/maps/Route139/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	setobjectnewmovementtype VAR_LAST_TALKED, MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT
 # 377 "data/maps/Route139/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 378 "data/maps/Route139/scripts.pory"
-	setobjectmovementtype 7, MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT
+	waitmovement 0
 # 379 "data/maps/Route139/scripts.pory"
 	setflag FLAG_DEFEATED_WORKER_FREDWARD
 	goto Route139_EventScript_Fredward_1

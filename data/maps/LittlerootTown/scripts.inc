@@ -403,9 +403,8 @@ LittlerootTown_EventScript_BirchsLabSign::
 
 LittlerootTown_EventScript_BrendansHouseSign::
 	lockall
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_PlayersHouseSignMale
-	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_BirchsHouseSignFemale
+	call_if_set FLAG_SYS_STARTED_AS_MALE, LittlerootTown_EventScript_BirchsHouseSignMale
+	call_if_set FLAG_SYS_STARTED_AS_FEMALE, LittlerootTown_EventScript_PlayersHouseSignFemale
 	releaseall
 	end
 
@@ -419,9 +418,8 @@ LittlerootTown_EventScript_BirchsHouseSignFemale::
 
 LittlerootTown_EventScript_MaysHouseSign::
 	lockall
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_BirchsHouseSignMale
-	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_PlayersHouseSignFemale
+	call_if_set FLAG_SYS_STARTED_AS_MALE, LittlerootTown_EventScript_BirchsHouseSignMale
+	call_if_set FLAG_SYS_STARTED_AS_FEMALE, LittlerootTown_EventScript_PlayersHouseSignFemale
 	releaseall
 	end
 

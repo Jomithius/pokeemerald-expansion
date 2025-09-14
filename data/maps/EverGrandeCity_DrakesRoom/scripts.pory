@@ -74,7 +74,7 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
-	.string "Oh, hello.\n"
+	.string "Oh. Yes, hello.\n"
 	.string "I'm DAVE of the ELITE FOUR.\p"
 	.string "Do me a favor and lose to me, okay?\n"
 	.string "Thank.$"
@@ -83,7 +83,7 @@ EverGrandeCity_DrakesRoom_Text_Defeat:
 	.string "I swear to God, dude…$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
-	.string "Oh, well.\n"
+	.string "Oh well.\n"
 	.string "The CHAMPION's waiting up ahead.$"
 	
 `
@@ -117,15 +117,15 @@ script EverGrandeCity_DrakesRoom_EventScript_Banette{
 script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle{
 	playbgm(MUS_ENCOUNTER_CHAMPION, FALSE)
 	if(flag(FLAG_RECEIVED_FANTASIA) == TRUE){
-		msgbox("Oh, look who it is.\n
-			Are you going to keep your promise\l
+		msgbox("Oh, look who it is.\p
+			Are you going to keep your promise\n
 			to me this time?\p
 			Remember, you said you would lose\n
 			to me if we ever battled.", MSGBOX_YESNO)
 	}
 	else{
-		msgbox("Oh, look who it is.\n
-			Are you going to do me a favor\l
+		msgbox("Oh, look who it is.\p
+			Are you going to do me a favor\n
 			and lose to me this time?", MSGBOX_YESNO)
 	}
 	waitmessage
@@ -134,7 +134,9 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle{
 		You know, I also heard about what\n
 		you did to that BIKER gang.\p
 		Just so you know… my brother was one\n
-		of the people you helped lock up.", MSGBOX_AUTOCLOSE)
+		of the people you helped lock up.\p
+		…\n
+		I have nothing else to say to you.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	clearflag(FLAG_TEMP_E)
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
@@ -144,55 +146,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle{
 	playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
 	waitmoncry
 	msgbox("I'm going to do everything I can\n
-		to stop you here.", MSGBOX_AUTOCLOSE)
-	waitmessage
-	setflag(FLAG_DEFEATED_ELITE_4_DRAKE)
-	setflag(FLAG_DEFEATED_DAVE)
-	playbgm(MUS_NONE, TRUE)
-	trainerbattle_no_intro(TRAINER_DAVE, EverGrandeCity_DrakesRoom_Text_DaveCrashOut)
-	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
-    waitmovement(0)
-    callnative(RemoveFollowingPokemon)
-    setflag(FLAG_TEMP_E)
-    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-	msgbox("Bitch.\n
-		I'm really glad I get to do this.\p
-		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
-	waitmessage
-	setvar(VAR_RESULT, 3)
-    playse(SE_ORB)
-    special(DoOrbEffect)
-    delay(150)
-    waitstate
-    special(FadeOutOrbEffect)
-    waitstate
-    delay(150)
-	call(EverGrandeCity_DrakesRoom_Shake)
-	setrespawn(HEAL_LOCATION_VOID)
-	warpwhitefade(MAP_VOID, 9, 32)
-    waitstate
-	release
-	end
-}
-
-script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
-	lock
-	playbgm(MUS_ENCOUNTER_CHAMPION, FALSE)
-	msgbox("…\p
-		You know, I also heard about what\n
-		you did to that BIKER gang.\p
-		Just so you know… my brother was one\n
-		of the people you helped lock up.", MSGBOX_AUTOCLOSE)
-	waitmessage
-	clearflag(FLAG_TEMP_E)
-    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-	call(EliteFour_EventScript_PlayerGetsInPosition)
-	playfirstmoncry
-	waitmoncry
-	playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
-	waitmoncry
-	msgbox("I'm going to do everything I can\n
-		to stop you here.", MSGBOX_AUTOCLOSE)
+		to make sure you lose, okay?", MSGBOX_AUTOCLOSE)
 	waitmessage
 	setflag(FLAG_DEFEATED_ELITE_4_DRAKE)
 	setflag(FLAG_DEFEATED_DAVE)
@@ -214,7 +168,57 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
     waitstate
     special(FadeOutOrbEffect)
     waitstate
+    //delay(150)
+	call(EverGrandeCity_DrakesRoom_Shake)
+	setrespawn(HEAL_LOCATION_VOID)
+	warpwhitefade(MAP_VOID, 9, 32)
+    waitstate
+	release
+	end
+}
+
+script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
+	lock
+	playbgm(MUS_ENCOUNTER_CHAMPION, FALSE)
+	msgbox("…\p
+		You know, I also heard about what\n
+		you did to that BIKER gang.\p
+		Just so you know… my brother was one\n
+		of the people you helped lock up.\p
+		…\n
+		I have nothing else to say to you.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	clearflag(FLAG_TEMP_E)
+    setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(EliteFour_EventScript_PlayerGetsInPosition)
+	playfirstmoncry
+	waitmoncry
+	playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
+	waitmoncry
+	msgbox("I'm going to do everything I can\n
+		to make sure you lose, okay?", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setflag(FLAG_DEFEATED_ELITE_4_DRAKE)
+	setflag(FLAG_DEFEATED_DAVE)
+	playbgm(MUS_NONE, TRUE)
+	trainerbattle_no_intro(TRAINER_DAVE, EverGrandeCity_DrakesRoom_Text_DaveCrashOut)
+	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
+    setflag(FLAG_TEMP_E)
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	msgbox("Well, you won again. Congrats.\n
+		Here's your prize.\p
+		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setvar(VAR_RESULT, 3)
+    playse(SE_ORB)
+    special(DoOrbEffect)
     delay(150)
+    waitstate
+    special(FadeOutOrbEffect)
+    waitstate
+    //delay(150)
 	call(EverGrandeCity_DrakesRoom_Shake)
 	setrespawn(HEAL_LOCATION_VOID)
 	warpwhitefade(MAP_VOID, 9, 32)

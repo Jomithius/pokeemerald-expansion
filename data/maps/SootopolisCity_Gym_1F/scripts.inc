@@ -645,7 +645,7 @@ SootopolisCity_Gym_1F_EventScript_GoBeatTheOtherGymLeaders::
 
 SootopolisCity_Gym_1F_EventScript_Juan_FinalBattle_Text_0:
 # 315 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	.string "Yeheaaaaaaaaaaaah!$"
+	.string "Yeheheheaaaaaaaaaah!$"
 
 SootopolisCity_Gym_1F_EventScript_Juan_FinalBattle_Text_1:
 # 315 "data/maps/SootopolisCity_Gym_1F/scripts.pory"

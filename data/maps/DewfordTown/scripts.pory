@@ -851,8 +851,8 @@ text DewfordTown_Text_BennisLeft{
 }
 
 text DewfordTown_Text_BennisReturn{
-	"Those NINJAS are back again!\n
-	Did they really like this quiet town\l
+	"Those NINJAS are back again!\p
+	Did they really like this quiet town\n
 	that much?"
 }
 

@@ -2516,7 +2516,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ampharos"),
-        .cryId = CRY_AMPHAROS_MEGA,
+        .cryId = CRY_AMPHAROS,
         .natDexNum = NATIONAL_DEX_AMPHAROS,
         .categoryName = _("Light"),
         .height = 14,
@@ -5736,7 +5736,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_SKILL_LINK, ABILITY_SKILL_LINK, ABILITY_SKILL_LINK },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Heracross"),
-        .cryId = CRY_HERACROSS_MEGA,
+        .cryId = CRY_HERACROSS,
         .natDexNum = NATIONAL_DEX_HERACROSS,
         .categoryName = _("Single Horn"),
         .height = 17,
@@ -6373,6 +6373,15 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconPalIndex = 2,
         SHADOW(6, 11, SHADOW_SIZE_L)
         FOOTPRINT(Ursaluna)
+        OVERWORLD(
+            sPicTable_UrsalunaBloodmoon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_UrsalunaBloodmoon,
+            gShinyOverworldPalette_UrsalunaBloodmoon
+        )
         .levelUpLearnset = sUrsalunaBloodmoonLevelUpLearnset,
         .teachableLearnset = sUrsalunaBloodmoonTeachableLearnset,
         .formSpeciesIdTable = sUrsalunaFormSpeciesIdTable,
@@ -7601,7 +7610,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_SOLAR_POWER, ABILITY_SOLAR_POWER, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Houndoom"),
-        .cryId = CRY_HOUNDOOM_MEGA,
+        .cryId = CRY_HOUNDOOM,
         .natDexNum = NATIONAL_DEX_HOUNDOOM,
         .categoryName = _("Dark"),
         .height = 19,
@@ -8632,7 +8641,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_SAND_STREAM, ABILITY_SAND_STREAM, ABILITY_SAND_STREAM },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Tyranitar"),
-        .cryId = CRY_TYRANITAR_MEGA,
+        .cryId = CRY_TYRANITAR,
         .natDexNum = NATIONAL_DEX_TYRANITAR,
         .categoryName = _("Armor"),
         .height = 25,

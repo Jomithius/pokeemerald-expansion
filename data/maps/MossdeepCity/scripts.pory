@@ -530,16 +530,41 @@ script MossdeepCity_EventScript_Aria{
 	lock
 	goto_if_not_defeated(TRAINER_ARIA, MossdeepCity_EventScript_AriaBattle)
 	goto_if_unset(FLAG_RECEIVED_TOTODILE_PARTNER, MossdeepCity_EventScript_GiveTotodile)
-	playse(SE_M_DOUBLE_TEAM)
+	playbgm(MUS_NONE, FALSE)
+    delay(20)
+    playse(SE_M_DOUBLE_TEAM)
     waitse
     playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
-        AAAARGH!", MSGBOX_DEFAULT)
+        AAAARGH!", MSGBOX_AUTOCLOSE)
     waitmessage
     waitmoncry
-	msgbox("They're busy training.\n
-		Probably shouldn't bother them again.", MSGBOX_SIGN)
+    playse(SE_PIN)
+    applymovement(21, Common_Movement_ExclamationMark)
+    waitmovement(21)
+    waitse
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_NONE)
+    applymovement(21, Common_Movement_FacePlayer)
+    waitmovement(21)
+    delay(40)
+    //playse(SE_M_YAWN)
+	playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
+    waitmovement(21)
+    msgbox("AH!", MSGBOX_AUTOCLOSE)
+    waitmessage
+	waitmoncry
+    fadedefaultbgm
+    call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
+    waitmovement(21)
+	msgbox("{PLAYER}!\n
+		You scared me again!\p
+		If you're going to see MOMO, can you\n
+		tell her I'm gonna train for a bit more?", MSGBOX_AUTOCLOSE)
 	waitmessage
+	setobjectnewmovementtype(21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+	applymovement(21, Common_Movement_WalkInPlaceDown)
+	waitmovement(21)
 	release
 	end
 }
@@ -593,7 +618,7 @@ script MossdeepCity_EventScript_AriaBattle{
 	msgbox("I need to train more!\p
 		{PLAYER}, if you're going to see MOMO,\n
 		can you tell her I'm gonna train for\l
-		a while longer?", MSGBOX_AUTOCLOSE)
+		a little while longer?", MSGBOX_AUTOCLOSE)
 	waitmessage
 	setobjectnewmovementtype(21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
 	applymovement(21, Common_Movement_WalkInPlaceDown)
@@ -612,10 +637,11 @@ script MossdeepCity_EventScript_GiveTotodilePostBattle{
     waitse
 	msgbox("Wait…\n
 		This power I sense…!\p
-		{PLAYER}, are you also a protector\n
+		{PLAYER}, are you also a wielder\n
 		of the SACRED BLADE?!\p
-		Here. This TOTODILE is special.\n
-		It has the KNIGHT's will required\l
+		Here.\n
+		This TOTODILE is special.\p
+		It has the KNIGHT's will required\n
 		to wield the SACRED BLADE.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	givemon(SPECIES_TOTODILE_PARTNER, 100)
@@ -881,6 +907,88 @@ script MossdeepCity_EventScript_PunchesTutorTaught{
 	lock
 	msgbox("Come back if you want to teach more\n
 		POKéMON the way of the elemental fist.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script MossdeepCity_EventScript_MultiHitTutor{
+	lock
+	faceplayer
+	msgbox("ORA!\n
+		ORAORAORAORAORA!\p
+		Hitting multiple times in a row\n
+		is important to winning fights!\p
+		If you want, I can teach your POKéMON\n
+		a multi-hit move!", MSGBOX_YESNO)
+	waitmessage
+	goto_if_eq(VAR_RESULT, YES, MossdeepCity_EventScript_MultiHitTutorChoices)
+	goto(MossdeepCity_EventScript_MultiHitTutorTaught)
+	release
+	end
+}
+
+script MossdeepCity_EventScript_MultiHitTutorChoices{
+	lock
+	msgbox("Which punch do you want me\nto teach?", MSGBOX_DEFAULT)
+	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "TRIPLE AXEL", "DUAL WINGBEAT", "ROCK BLAST", "TAIL SLAP")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			goto(MoveTutor_EventScript_TripleAxelTeach)
+		case 1:
+			goto(MoveTutor_EventScript_DualWingbeatTeach)
+		case 2:
+			goto(MoveTutor_EventScript_RockBlastTeach)
+		case 3:
+			goto(MoveTutor_EventScript_TailSlapTeach)
+		case MULTI_B_PRESSED:
+			goto(MossdeepCity_EventScript_MultiHitTutorTaught)
+		default:
+			goto(MossdeepCity_EventScript_MultiHitTutorTaught)
+	}
+	end
+}
+
+script MoveTutor_EventScript_TripleAxelTeach{
+	msgbox("Which POKéMON do you want to\nteach TRIPLE AXEL to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_TRIPLE_AXEL)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught)
+	goto(MossdeepCity_EventScript_MultiHitTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_DualWingbeatTeach{
+	msgbox("Which POKéMON do you want to\nteach DUAL WINGBEAT to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_DUAL_WINGBEAT)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught)
+	goto(MossdeepCity_EventScript_MultiHitTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_RockBlastTeach{
+	msgbox("Which POKéMON do you want to\nteach ROCK BLAST to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_ROCK_BLAST)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught)
+	goto(MossdeepCity_EventScript_MultiHitTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_TailSlapTeach{
+	msgbox("Which POKéMON do you want to\nteach TAIL SLAP to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_TAIL_SLAP)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught)
+	goto(MossdeepCity_EventScript_MultiHitTutorTaught)
+	end
+}
+
+script MossdeepCity_EventScript_MultiHitTutorTaught{
+	lock
+	msgbox("Come back if you want to teach your\n
+		POKéMON a multi-hit move!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release
 	end

@@ -616,9 +616,9 @@ PlayersHouse_2F_EventScript_ChooseDifficulty::
 	compare VAR_RESULT, MALE
 	goto_if_eq PlayersHouse_2F_EventScript_ChooseDifficulty_2
 # 315 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setflag FLAG_SYS_STARTED_AS_GIRL
+	setflag FLAG_SYS_STARTED_AS_FEMALE
 # 316 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	clearflag FLAG_SYS_STARTED_AS_BOY
+	clearflag FLAG_SYS_STARTED_AS_MALE
 PlayersHouse_2F_EventScript_ChooseDifficulty_1:
 # 318 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	msgbox PlayersHouse_2F_EventScript_ChooseDifficulty_Text_0, MSGBOX_DEFAULT
@@ -632,9 +632,9 @@ PlayersHouse_2F_EventScript_ChooseDifficulty_1:
 
 PlayersHouse_2F_EventScript_ChooseDifficulty_2:
 # 311 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setflag FLAG_SYS_STARTED_AS_BOY
+	setflag FLAG_SYS_STARTED_AS_MALE
 # 312 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	clearflag FLAG_SYS_STARTED_AS_GIRL
+	clearflag FLAG_SYS_STARTED_AS_FEMALE
 	goto PlayersHouse_2F_EventScript_ChooseDifficulty_1
 
 

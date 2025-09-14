@@ -288,7 +288,6 @@ static void ShowSaveInfoWindow(void);
 static void RemoveSaveInfoWindow(void);
 static void HideStartMenuWindow(void);
 static void HideStartMenuDebug(void);
-static void SetBattleStyleToSetMode(void);
 
 void SetDexPokemonPokenavFlags(void) // unused
 {
@@ -1521,16 +1520,10 @@ static bool8 StartMenuDexNavCallback(void)
     return TRUE;
 }
 
-static void SetBattleStyleToSetMode(void)
-{
-    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SET;
-}
-
 static bool8 StartMenuModeSwitchCallback(void)
 {
     RemoveExtraStartMenuWindows();
     HideStartMenu();
-    SetBattleStyleToSetMode();
     ScriptContext_SetupScript(EventScript_ChangeDifficulty);
 
     return TRUE;

@@ -116,9 +116,10 @@ EventScript_ResetAllBerries::
 EventScript_ResetAllLegendaries::
 	setflag FLAG_HIDE_ENTEI
     setflag FLAG_HIDE_RAIKOU
-    setflag FLAG_HIDE_SUICUNE
+    setflag FLAG_ITEM_MEWTWONITE_X
+	setflag FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP
     setflag FLAG_HIDE_MOLTRES
-    setflag FLAG_HIDE_ARTICUNO
+	setflag FLAG_HIDE_MEWTWO
     setflag FLAG_HIDE_ZAPDOS
     setflag FLAG_HIDE_GALARIAN_MOLTRES
     setflag FLAG_HIDE_GALARIAN_ZAPDOS

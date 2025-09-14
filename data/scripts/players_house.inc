@@ -431,8 +431,8 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	@ call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_PlayerEnterRoomMale
 	@ call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_PlayerEnterRoomFemale
 	@ custom in case of fantasia usage
-	call_if_set FLAG_SYS_STARTED_AS_BOY, PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale
-	call_if_set FLAG_SYS_STARTED_AS_GIRL, PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale
+	call_if_set FLAG_SYS_STARTED_AS_MALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale
+	call_if_set FLAG_SYS_STARTED_AS_FEMALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale
 	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_PlayerEnterRoomMale
 	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_PlayerEnterRoomFemale
 	applymovement VAR_0x8009, Common_Movement_FacePlayer

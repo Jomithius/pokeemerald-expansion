@@ -862,4 +862,4 @@ EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech::
 
 EverGrandeCity_PhoebesRoom_Text_LinaNo::
 # 459 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	.string "Hmph. Oh, well.\p Let's get this over with so I\n can get back to my book.$"
+	.string "Hmph. Oh well.\p Let's get this over with so I\n can get back to my book.$"

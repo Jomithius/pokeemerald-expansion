@@ -5861,6 +5861,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_CHIEF:
             return MUS_HG_VS_GYM_LEADER;
         case TRAINER_CLASS_NINJA:
+        case TRAINER_CLASS_WORKER:
         case TRAINER_CLASS_DISCIPLE:
         case TRAINER_CLASS_CHANNELER:
         case TRAINER_CLASS_KIMONO_LADY:

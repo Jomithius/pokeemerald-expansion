@@ -39,6 +39,7 @@ script BennisDojoHideMedicham{
 }
 
 script BennisDojoUpdateMusic{
+    setflag(FLAG_SYS_DYNAMIC_LEVELS)
     savebgm(MUS_HG_GYM)
     return
 }
@@ -113,6 +114,7 @@ script BennisDojo_EventScript_BennisFinalBattle{
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_BENNIS_DOJO_STATE, 6) // for music
+    clearflag(FLAG_SYS_DYNAMIC_LEVELS)
     release
     end   
 }
@@ -174,6 +176,7 @@ script BennisDojo_EventScript_AsakReturn{
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_BENNIS_DOJO_STATE, 6)
+    clearflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_HIDE_ASAK_BALDESIAN_FOREST_DOJO)
     release
     end
@@ -232,6 +235,7 @@ script BennisDojo_EventScript_AsakReturnEast{
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_BENNIS_DOJO_STATE, 6)
+    clearflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_HIDE_ASAK_BALDESIAN_FOREST_DOJO)
     release
     end
@@ -295,6 +299,7 @@ script BennisDojo_EventScript_AsakReturnNorth{
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_BENNIS_DOJO_STATE, 6)
+    clearflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_HIDE_ASAK_BALDESIAN_FOREST_DOJO)
     release
     end

@@ -2159,7 +2159,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .shinyPalette = gMonShinyPalette_Garganacl,
         .iconSprite = gMonIcon_Garganacl,
         .iconPalIndex = 2,
-        SHADOW(0, 13, SHADOW_SIZE_L)
+        SHADOW(0, 8, SHADOW_SIZE_L)
         FOOTPRINT(Garganacl)
         OVERWORLD(
             sPicTable_Garganacl,
@@ -8095,11 +8095,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
 [SPECIES_AVATAR] =
     {
-        .baseHP        = 80,
+        .baseHP        = 60,
         .baseAttack    = 85,
         .baseDefense   = 80,
-        .baseSpeed     = 120,
-        .baseSpAttack  = 125,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 135,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
         .catchRate = 3,

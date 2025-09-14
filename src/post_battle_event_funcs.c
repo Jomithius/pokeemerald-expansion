@@ -36,7 +36,7 @@ int GameClear(void)
     SetContinueGameWarpStatus();
 
     //if (gSaveBlock2Ptr->playerGender == MALE)
-    if (FlagGet(FLAG_SYS_STARTED_AS_BOY))
+    if (FlagGet(FLAG_SYS_STARTED_AS_MALE))
         SetContinueGameWarpToHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F);
     else
         SetContinueGameWarpToHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F);

@@ -879,7 +879,7 @@ MauvilleCity_Gym_EventScript_Wattson_FinalBattle_Text_0:
 
 MauvilleCity_Gym_EventScript_WattsonDefeatedFinal_Text_0:
 # 445 "data/maps/MauvilleCity_Gym/scripts.pory"
-	.string "Hahaha!\n That was fun!\p But let's be honest.\n The only reason I lost was to fit a\l narrative.\p You're lucky you're destined to\n never lose.$"
+	.string "Hahaha!\n That was fun!\p But let's be honest.\p The only reason I lost was to fit a\n narrative.\p You're lucky you're destined to\n never lose.$"
 
 MauvilleCity_Gym_Text_ExplainVoltSwitch::
 # 424 "data/maps/MauvilleCity_Gym/scripts.pory"

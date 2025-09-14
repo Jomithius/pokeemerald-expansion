@@ -444,8 +444,8 @@ script MauvilleCity_Gym_EventScript_WattsonDefeatedFinal{
 	addvar(VAR_GYM_LEADER_COUNT, 1)
 	msgbox("Hahaha!\n
 		That was fun!\p
-		But let's be honest.\n
-		The only reason I lost was to fit a\l
+		But let's be honest.\p
+		The only reason I lost was to fit a\n
 		narrative.\p
 		You're lucky you're destined to\n
 		never lose.", MSGBOX_NPC)
@@ -456,8 +456,8 @@ script MauvilleCity_Gym_EventScript_WattsonDefeatedFinal{
 script MauvilleCity_Gym_EventScript_WattsonDefeatedFinal2{
 	msgbox("Hahaha!\n
 		That was fun!\p
-		But let's be honest.\n
-		The only reason I lost was to fit a\l
+		But let's be honest.\p
+		The only reason I lost was to fit a\n
 		narrative.\p
 		You're lucky you're destined to\n
 		never lose.", MSGBOX_NPC)

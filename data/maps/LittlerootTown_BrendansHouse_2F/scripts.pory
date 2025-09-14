@@ -308,13 +308,14 @@ script PlayersHouse_2F_EventScript_ChooseDifficulty{
     setflag(FLAG_SYS_DIFFICULTY_SET)
 	checkplayergender
 	if(var(VAR_RESULT) == MALE){
-		setflag(FLAG_SYS_STARTED_AS_BOY)
-		clearflag(FLAG_SYS_STARTED_AS_GIRL)
+		setflag(FLAG_SYS_STARTED_AS_MALE)
+		clearflag(FLAG_SYS_STARTED_AS_FEMALE)
 	}
 	else{
-		setflag(FLAG_SYS_STARTED_AS_GIRL)
-		clearflag(FLAG_SYS_STARTED_AS_BOY)
+		setflag(FLAG_SYS_STARTED_AS_FEMALE)
+		clearflag(FLAG_SYS_STARTED_AS_MALE)
 	}
+	callnative(SetBattleStyleToSetMode)
     msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}Please select your difficulty.", MSGBOX_DEFAULT)
     dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "NORMAL", "HARD")
     goto_if_eq(VAR_RESULT, 0, PlayersHouse_2F_EventScript_SetToNormalDifficulty)

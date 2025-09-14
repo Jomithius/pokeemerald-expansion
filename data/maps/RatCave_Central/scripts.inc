@@ -67,7 +67,7 @@ RatCave_Central_EventScript_Deanuel::
 
 
 RatCave_Central_EventScript_Camper::
-# 56 "data/maps/RatCave_Central/scripts.pory"
+# 55 "data/maps/RatCave_Central/scripts.pory"
 	msgbox RatCave_Central_Text_Camper, MSGBOX_NPC
 	end
 
@@ -94,7 +94,7 @@ RatCave_Central_EventScript_Barold_Text_1:
 
 RatCave_Central_EventScript_Barold_Text_2:
 # 18 "data/maps/RatCave_Central/scripts.pory"
-	.string "… You know what else is massive?$"
+	.string "…\nYou know what else is massive?$"
 
 RatCave_Central_EventScript_Samson_Text_0:
 # 23 "data/maps/RatCave_Central/scripts.pory"
@@ -153,5 +153,5 @@ RatCave_Central_EventScript_Deanuel_Text_2:
 	.string "I'll train more here before I go\n try to join.$"
 
 RatCave_Central_Text_Camper::
-# 60 "data/maps/RatCave_Central/scripts.pory"
+# 59 "data/maps/RatCave_Central/scripts.pory"
 	.string "This cave system looks like it was\n recently excavated…\p But whoever made it did a fantastic\n job at constructing it.\p They must be a genius.$"

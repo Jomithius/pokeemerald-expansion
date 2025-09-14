@@ -561,15 +561,17 @@ script Route115_EventScript_JamesBattle{
     }
     waitmovement(0)
     fadeoutbgm(0)
-    msgbox("This is kind of nostalgic, isn't it?\p
+    msgbox("JAMES: …\n
+        This is kind of nostalgic, isn't it?\p
         It really feels like it's been forever\n
         since I've been out here.", MSGBOX_DEFAULT)
     waitmessage
     applymovement(24, Common_Movement_WalkInPlaceDown)
     waitmovement(24)
     msgbox("I used to come out here every time I\n
-        was bullied. It was the same on the\l
-        day that we met.", MSGBOX_DEFAULT)
+        was bullied.\p
+        It was the same on the day\n
+        that we met.", MSGBOX_DEFAULT)
     waitmessage
     applymovement(24, Common_Movement_WalkInPlaceLeft)
     waitmovement(24)
@@ -595,7 +597,7 @@ script Route115_EventScript_JamesBattle{
         For real this time!\p
         One last battle!", MSGBOX_AUTOCLOSE)
     waitmessage
-    trainerbattle_no_intro(TRAINER_JAMES_FINAL, "You're still strong as\never, {PLAYER}.")
+    trainerbattle_no_intro(TRAINER_JAMES_FINAL, "You're still as strong as\never, {PLAYER}.")
     applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
     waitmovement(0)
     callnative(RemoveFollowingPokemon)

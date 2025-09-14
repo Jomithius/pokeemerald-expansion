@@ -73,10 +73,10 @@ script Void_EventScript_FinalBattle{
 	playfirstmoncry
 	waitmoncry
     bufferleadmonspeciesname(STR_VAR_1)
-	msgbox("Your {STR_VAR_1} look ready to go.\n
+	msgbox("Your {STR_VAR_1} looks ready to go.\n
         You've raised your POKéMON well.\p
-        {PLAYER}! Show me the strength of you\n
-        and your POKéMON!", MSGBOX_AUTOCLOSE)
+        Okay! Show me what you've learned\n
+        on your journey!", MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_DEFEATED_CEO)
     playbgm(MUS_NONE, TRUE)
@@ -96,8 +96,8 @@ script Void_EventScript_FinalBattle2{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3)
     waitmovement(0)
     playbgm(MUS_ENCOUNTER_EXDEATH, FALSE)
-    msgbox("{PLAYER}.\n
-        We can battle as many times\l
+    msgbox("{PLAYER}.\p
+        We can battle as many times\n
         as you want.", MSGBOX_AUTOCLOSE)
     waitmessage
     clearflag(FLAG_TEMP_E)
@@ -105,7 +105,7 @@ script Void_EventScript_FinalBattle2{
 	call(Void_EventScript_PlayerGetsInPosition)
 	playfirstmoncry
 	waitmoncry
-	msgbox("This is it!", MSGBOX_AUTOCLOSE)
+	msgbox("Come on!", MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_DEFEATED_CEO)
     playbgm(MUS_NONE, TRUE)
@@ -148,9 +148,8 @@ script Void_EventScript_GameEnd{
         I hope to see you again one day.", MSGBOX_AUTOCLOSE)
     waitmessage
     call(EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags)
-	checkplayergender
-	goto_if_set(FLAG_SYS_STARTED_AS_BOY, EverGrandeCity_HallOfFame_EventScript_GameClearMale)
-	goto_if_set(FLAG_SYS_STARTED_AS_GIRL, EverGrandeCity_HallOfFame_EventScript_GameClearFemale)
+	goto_if_set(FLAG_SYS_STARTED_AS_MALE, EverGrandeCity_HallOfFame_EventScript_GameClearMale)
+	goto_if_set(FLAG_SYS_STARTED_AS_FEMALE, EverGrandeCity_HallOfFame_EventScript_GameClearFemale)
     releaseall
     end
 }

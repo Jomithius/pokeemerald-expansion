@@ -1551,8 +1551,8 @@
 #define FLAG_SYS_DEFEATED_JAMES                     (SYSTEM_FLAGS + 0xAF) // James Final Battle
 #define FLAG_SYS_UNLOCKED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB0) // For Unlocking Area Zero since it can unlocked thru Red or Cynthia
 #define FLAG_SYS_DEFEATED_CYNTHIA                   (SYSTEM_FLAGS + 0xB1) // For unlocking area zero
-#define FLAG_SYS_STARTED_AS_BOY                     (SYSTEM_FLAGS + 0xB2) // For Fantasia debugging (fly and GameClear)
-#define FLAG_SYS_STARTED_AS_GIRL                    (SYSTEM_FLAGS + 0xB3) // For Fantasia debugging (fly and GameClear)
+#define FLAG_SYS_STARTED_AS_MALE                    (SYSTEM_FLAGS + 0xB2) // For Fantasia debugging (fly and GameClear) set at start of game, when picking difficulty
+#define FLAG_SYS_STARTED_AS_FEMALE                  (SYSTEM_FLAGS + 0xB3) // For Fantasia debugging (fly and GameClear)
 #define FLAG_RECEIVED_TEACUP                        (SYSTEM_FLAGS + 0xB4) // Baldesia Forest Sinistcha minigame
 #define FLAG_TALKED_TO_PAIN_SPLIT_TUTOR             (SYSTEM_FLAGS + 0xB5) // to shorten text
 #define FLAG_SYS_BOSS_BATTLE                        (SYSTEM_FLAGS + 0xB6) // for post game boss battles, used to stop variance of levels

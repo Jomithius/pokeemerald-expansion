@@ -171,7 +171,7 @@ script Route136_EventScript_Johnithin{
 }
 
 script Route136_EventScript_Bobby{
-    trainerbattle_single(TRAINER_BOBBY, "I want to hike up the mountain,\nbut a POKéMON is blocking the entrance.", "Oh, well.")
+    trainerbattle_single(TRAINER_BOBBY, "I want to hike up the mountain,\nbut a POKéMON is blocking the entrance.", "Oh well.")
     msgbox("I guess I can wait to make\n
         the hike.\p
         There's a lot of scary TRAINERS in\n

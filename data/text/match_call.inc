@@ -144,7 +144,7 @@ MatchCall_NegativeBattleText2::
 	.string "I challenged someone else after\n"
 	.string "we battled.\p"
 	.string "I came close, but I ended up\n"
-	.string "losing. Oh, well!$"
+	.string "losing. Oh well!$"
 
 MatchCall_NegativeBattleText3::
 	.string "Hey there, {PLAYER}!\n"

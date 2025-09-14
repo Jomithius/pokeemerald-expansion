@@ -342,7 +342,7 @@ Route136_EventScript_Bobby_Text_0:
 
 Route136_EventScript_Bobby_Text_1:
 # 174 "data/maps/Route136/scripts.pory"
-	.string "Oh, well.$"
+	.string "Oh well.$"
 
 Route136_EventScript_Bobby_Text_2:
 # 175 "data/maps/Route136/scripts.pory"

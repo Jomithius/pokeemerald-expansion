@@ -62,7 +62,7 @@ script SnowdriftCity_House1_EventScript_BlackBeltPrepBattle{
 }
 
 script SnowdriftCity_House1_EventScript_BlackBeltBattle{
-    playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
+    playbgm(MUS_RG_ENCOUNTER_BOY, FALSE)
     msgbox("Yeah, I do!", MSGBOX_AUTOCLOSE)
     waitmessage
     trainerbattle_no_intro(TRAINER_LAROLD, SnowdriftCity_House1_Text_LaroldLoss)

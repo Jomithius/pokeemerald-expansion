@@ -69,7 +69,7 @@ script MauvilleCity_House1_EventScript_BulldozeTutor{
 }
 
 script MoveTutor_EventScript_BulldozeDeclined{
-	msgbox("Hm. Alright.\p
+	msgbox("Hm. All right.\p
         Come back if you want to learn\n
         more about land development!", MSGBOX_AUTOCLOSE)
 	waitmessage

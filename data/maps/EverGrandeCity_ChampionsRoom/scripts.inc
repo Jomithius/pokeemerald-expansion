@@ -246,7 +246,7 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "Did you have fun on your journey?\p"
 	.string "There's a lot of interesting and\n"
 	.string "wonderful people in our region.\p"
-	.string "Alright! Show me how strong you\n"
+	.string "Okay! Show me how strong you\n"
 	.string "and your POKéMON have become!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:

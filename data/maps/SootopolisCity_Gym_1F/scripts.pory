@@ -312,7 +312,7 @@ script SootopolisCity_Gym_1F_EventScript_Mawile{
 }
 
 script SootopolisCity_Gym_1F_EventScript_Juan_FinalBattle{
-	trainerbattle_single(TRAINER_JUAN_2, "Yeheaaaaaaaaaaaah!", "Yeeaaaahh…", SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal)
+	trainerbattle_single(TRAINER_JUAN_2, "Yeheheheaaaaaaaaaah!", "Yeeaaaahh…", SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal)
 	end
 }
 

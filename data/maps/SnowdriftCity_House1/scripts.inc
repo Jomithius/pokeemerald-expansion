@@ -88,7 +88,7 @@ SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_7:
 
 SnowdriftCity_House1_EventScript_BlackBeltBattle::
 # 65 "data/maps/SnowdriftCity_House1/scripts.pory"
-	playbgm MUS_ENCOUNTER_INTENSE, FALSE
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 66 "data/maps/SnowdriftCity_House1/scripts.pory"
 	msgbox SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_0, MSGBOX_AUTOCLOSE
 # 67 "data/maps/SnowdriftCity_House1/scripts.pory"

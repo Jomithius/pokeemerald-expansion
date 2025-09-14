@@ -375,6 +375,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_BLACK_MAGE] = { _("BLACK MAGE"), 20, BALL_DUSK },
     [TRAINER_CLASS_DISCIPLE] = { _("DISCIPLE"), 20 },
     [TRAINER_CLASS_SHADOW_CLONE] = { _("SHADOW CLONE"), 5 },
+    [TRAINER_CLASS_WORKER] = { _("WORKER"), 15 },
     
 };
 
@@ -5620,6 +5621,7 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_KIMONO_LADY:
         case TRAINER_CLASS_KIMONO_WOMAN:
         case TRAINER_CLASS_NINJA:
+        case TRAINER_CLASS_WORKER:
         case TRAINER_CLASS_DISCIPLE:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
             {

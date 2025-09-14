@@ -757,7 +757,7 @@ LilycoveCity_PokemonCenter_1F_Text_NoChangeThanks:
 	.string "…It doesn't seem to have changed\n"
 	.string "in any way at all…\p"
 	.string "Hmm…\p"
-	.string "Oh, well!\n"
+	.string "Oh well!\n"
 	.string "Thank you very much!$"
 
 LilycoveCity_PokemonCenter_1F_Text_ReallyImprovedThanks:

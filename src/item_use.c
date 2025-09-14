@@ -1641,8 +1641,14 @@ void ItemUseOutOfBattle_Fantasia(u8 taskId)
     }
 }
 
+void SetBattleStyleToSetMode(void)
+{
+    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SET;
+}
+
 static void ItemUseCB_ModeSwitcher(u8 taskId)
 {
+    SetBattleStyleToSetMode();
     ScriptContext_SetupScript(EventScript_ChangeDifficulty);
     DestroyTask(taskId);
 }

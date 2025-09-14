@@ -153,7 +153,7 @@ MauvilleCity_House1_EventScript_BulldozeTutor_Text_1:
 
 MoveTutor_EventScript_BulldozeDeclined_Text_0:
 # 72 "data/maps/MauvilleCity_House1/scripts.pory"
-	.string "Hm. Alright.\p Come back if you want to learn\n more about land development!$"
+	.string "Hm. All right.\p Come back if you want to learn\n more about land development!$"
 
 MoveTutor_EventScript_BulldozeTaught_Text_0:
 # 81 "data/maps/MauvilleCity_House1/scripts.pory"

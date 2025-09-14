@@ -2068,7 +2068,7 @@ Route115_Text_AlixDefeat:
 	.string "Not bad!$"
 
 Route115_Text_AlixPostBattle:
-	.string "Oh, well.\n"
+	.string "Oh well.\n"
 	.string "I think I will TELEPORT home.$"
 
 Route115_Text_MarleneIntro:

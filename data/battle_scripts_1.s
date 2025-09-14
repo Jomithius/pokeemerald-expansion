@@ -6879,6 +6879,7 @@ BattleScript_FocusPunchSetUp::
 
 BattleScript_MegaEvolution::
 	jumpifspecies BS_ATTACKER, SPECIES_TOTODILE_PARTNER, BattleScript_MegaEvolutionTotodile
+	jumpifspecies BS_ATTACKER, SPECIES_DIGLETT_ALOLA, BattleScript_MegaEvolutionPoobles
 	flushtextbox
 	trytrainerslidemegaevolutionmsg
 	printstring STRINGID_MEGAEVOREACTING
@@ -6904,6 +6905,21 @@ BattleScript_MegaEvolutionTotodileAfterString:
 	waitanimation
 	handlemegaevo BS_SCRIPTING, 1
 	printstring STRINGID_MEGAEVOEVOLVEDTOTODILE
+	waitmessage B_WAIT_TIME_LONG
+	switchinabilities BS_SCRIPTING
+	end3
+
+BattleScript_MegaEvolutionPoobles::
+	flushtextbox
+	trytrainerslidemegaevolutionmsg
+	printstring STRINGID_MEGAEVOREACTING
+BattleScript_MegaEvolutionPooblesAfterString:
+	waitmessage B_WAIT_TIME_LONG
+	handlemegaevo BS_SCRIPTING, 0
+	playanimation BS_SCRIPTING, B_ANIM_MEGA_EVOLUTION
+	waitanimation
+	handlemegaevo BS_SCRIPTING, 1
+	printstring STRINGID_MEGAEVOEVOLVEDPOOBLES
 	waitmessage B_WAIT_TIME_LONG
 	switchinabilities BS_SCRIPTING
 	end3

@@ -225,9 +225,10 @@ script LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves{
 script LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags{
     clearflag(FLAG_HIDE_ENTEI)
     clearflag(FLAG_HIDE_RAIKOU)
-    clearflag(FLAG_HIDE_SUICUNE)
+    clearflag(FLAG_ITEM_MEWTWONITE_X)
     clearflag(FLAG_HIDE_MOLTRES)
-    clearflag(FLAG_HIDE_ARTICUNO)
+    clearflag(FLAG_HIDE_MEWTWO)
+    clearflag(FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP) // mega mewto y stone
     clearflag(FLAG_HIDE_ZAPDOS)
     clearflag(FLAG_HIDE_GALARIAN_MOLTRES)
     clearflag(FLAG_HIDE_GALARIAN_ZAPDOS)
