@@ -4080,9 +4080,9 @@ static void CursorCb_FieldMove(u8 taskId)
                 }
                 else
                 {
-                gPartyMenu.exitCallback = CB2_OpenFlyMap;
-                Task_ClosePartyMenu(taskId);
-                break;
+                    gPartyMenu.exitCallback = CB2_OpenFlyMap;
+                    Task_ClosePartyMenu(taskId);
+                    break;
                 }
             default:
                 gPartyMenu.exitCallback = CB2_ReturnToField;

@@ -26,8 +26,8 @@ script TheUnder_EventScript_Luna{
     waitmessage
     giveitem(ITEM_MASTER_BALL, 24)
     waitmessage
-    msgbox("He wanted me to give you this too.\n
-        Crystals of this stuff was found in\l
+    msgbox("He wanted me to give you this too.\p
+        Crystals of this stuff was found in\n
         the new caves around here.\p
         Scientists turned it into a way to make\n
         your POKéMON stronger or something.", MSGBOX_DEFAULT)

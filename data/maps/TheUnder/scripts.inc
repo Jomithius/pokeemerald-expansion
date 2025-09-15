@@ -230,7 +230,7 @@ TheUnder_EventScript_Luna_Text_0:
 
 TheUnder_EventScript_Luna_Text_1:
 # 29 "data/maps/TheUnder/scripts.pory"
-	.string "He wanted me to give you this too.\n Crystals of this stuff was found in\l the new caves around here.\p Scientists turned it into a way to make\n your POKéMON stronger or something.$"
+	.string "He wanted me to give you this too.\p Crystals of this stuff was found in\n the new caves around here.\p Scientists turned it into a way to make\n your POKéMON stronger or something.$"
 
 TheUnder_EventScript_Luna_Text_2:
 # 39 "data/maps/TheUnder/scripts.pory"
