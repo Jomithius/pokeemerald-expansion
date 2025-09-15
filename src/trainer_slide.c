@@ -194,10 +194,6 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("… This technique also clones my\nMEGA RING.{PAUSE_UNTIL_PRESS}"),
         },
-        [TRAINER_SHADOW_CLONE_MOMO] = // Momo
-        {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("………………\nMeow.{PAUSE_UNTIL_PRESS}"),
-        },
         [TRAINER_ARIA] = // Aria
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Bear witness to the power of the\nSACRED BLADE!{PAUSE_UNTIL_PRESS}"),
@@ -325,6 +321,13 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         [TRAINER_JAMES_FINAL] = // James
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, TYPHLOSION!\nWe're going all out from the start!{PAUSE_UNTIL_PRESS}"),
+        },
+    },
+    [DIFFICULTY_EASY] =
+    {
+        [TRAINER_MOMO] = // Momo
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("………………\nMeow.{PAUSE_UNTIL_PRESS}"),
         },
     },
 };

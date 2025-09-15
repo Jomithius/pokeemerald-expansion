@@ -2095,16 +2095,21 @@ Route116_Text_ClarkPostBattle:
 	.string "To a HIKER, mountains are roads!$"
 
 Route116_Text_JoeyIntro:
-	.string "My POKéMON rule!\n"
-	.string "Check them out!$"
+	.string "I just lost, so I'm trying to\n"
+	.string "find more POKéMON.\p"
+	.string "Wait! You look weak!\n"
+	.string "Come on, let's battle!$"
 
 Route116_Text_JoeyDefeat:
-	.string "Ouch! A scrape!\n"
-	.string "I have to put on a bandage!$"
+	.string "Ack! I lost again!\n"
+	.string "Doggone it!$"
 
 Route116_Text_JoeyPostBattle:
-	.string "Bandages are signs of toughness!\n"
-	.string "I've got another one!$"
+	.string "Remember my super cool RATTATA?\p"
+	.string "My RATTATA is different from\n"
+	.string "regular RATTATA.\p"
+	.string "It's like my RATTATA is in the\n"
+	.string "top percentage of all RATTATA.$"
 
 Route116_Text_JoseIntro:
 	.string "My BUG POKéMON are tough!\n"
