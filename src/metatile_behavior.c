@@ -136,6 +136,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_ROCK_STAIRS]                        = TILE_FLAG_UNUSED,
     [MB_SAND_ENCOUNTER]                     = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_SNOW]                               = TILE_FLAG_UNUSED,
+    [MB_RUINS]                              = TILE_FLAG_UNUSED,
     
 };
 
@@ -203,6 +204,14 @@ bool8 MetatileBehavior_IsSandOrDeepSand(u8 metatileBehavior)
 bool8 MetatileBehavior_IsSnow(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_SNOW)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsRuins(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_RUINS)
         return TRUE;
     else
         return FALSE;

@@ -151,16 +151,8 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	cleartrainerflag TRAINER_ROXANNE_2
-	cleartrainerflag TRAINER_BRAWLY_2
-	cleartrainerflag TRAINER_WATTSON_2
-	cleartrainerflag TRAINER_FLANNERY_2
-	cleartrainerflag TRAINER_NORMAN_2
-	cleartrainerflag TRAINER_WINONA_2
-	cleartrainerflag TRAINER_MOMO
-	cleartrainerflag TRAINER_ARIA
-	setflag FLAG_HIDE_PETALBURG_GYM_NORMAN
-	setvar VAR_PETALBURG_GYM_STATE, 7
+	warp MAP_AREA_ZERO, 15, 11
+	waitstate
 	release
 	end
 
@@ -174,46 +166,35 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
-	setflag FLAG_DEFEATED_MISA
-	setflag FLAG_SYS_FINAL_REMATCH
-	clearflag FLAG_DEFEATED_EUGENIA
-	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
-	setvar VAR_LINA_TALKED_TO, 2
-	setflag FLAG_LINA_HOUSE_EEVEE 
-	warp MAP_EVER_GRANDE_CITY_HALL1, 3, 2
+	setvar VAR_MOMO_ARIA_STATE, 3
+	warp MAP_BALDESIA_MAIN_HOUSE, 20, 20
 	waitstate
 	release
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_ULTRA_SPACE_STATE, 7
-	clearflag FLAG_SYS_DEFEATED_JAMES
-	setflag FLAG_HIDE_TYPHLOSION_ROUTE_115
-	setflag FLAG_SYS_FINAL_REMATCH
-	setflag FLAG_HIDE_RIVAL_ROUTE115
-	warp MAP_ROUTE135, 8, 10
+	setvar VAR_MOMO_ARIA_STATE, 6
+	warp MAP_ALTAR_OF_BALDESIA, 16, 28
 	waitstate
 	release
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_NEWMOON_ISLAND_STATE, 1
-	setvar VAR_RAT_CAVE_STATE, 9
-	warp MAP_THE_UNDER_CANYON_LAKE, 14, 5
+	clearflag FLAG_HIDE_CHANNELER_NEWMOON_ISLAND_PLAZA
+	warp MAP_NEW_MOON_ISLAND, 24, 10
 	waitstate
 	release
 	end
 
 Debug_EventScript_Script_7::
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL 
-	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1
-	setvar VAR_SPEEDWAGON_STATE, 1
-	setvar VAR_BIRCH_LAB_STATE, 5
+	setvar VAR_RAT_CAVE_STATE, 11
+	warp MAP_FULL_MOON_ISLAND_INTERIOR, 7, 8
+	waitstate
 	release
 	end
 
 Debug_EventScript_Script_8::
+	giveitem ITEM_POKE_FLUTE
 	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 0
 	warp MAP_BALDESIAN_FOREST_DOJO, 8, 19
 	waitstate

@@ -19167,7 +19167,7 @@ Tera Type: Poison
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Energy Ball  
+- Frenzy Plant
 - Earth Power  
 - Leech Seed  
 - Sludge Bomb  
@@ -19178,7 +19178,7 @@ Level: 100
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Weather Ball  
+- Blast Burn  
 - Air Slash  
 - Scorching Sands  
 - Dragon Pulse  
@@ -19192,7 +19192,7 @@ Modest Nature
 IVs: 0 Atk  
 - Shell Smash  
 - Flash Cannon  
-- Hydro Pump  
+- Hydro Cannon 
 - Weather Ball  
 
 Lapras @ Assault Vest  
@@ -38975,7 +38975,7 @@ Level: 100
 Tera Type: Poison   
 Modest Nature  
 IVs: 0 Atk  
-- Energy Ball  
+- Frenzy Plant  
 - Earth Power  
 - Leech Seed  
 - Sludge Bomb  
@@ -38986,7 +38986,7 @@ EVs: 252 HP / 4 SpD
 Level: 100    
 Timid Nature  
 IVs: 0 Atk / 0 SpA 
-- Weather Ball  
+- Blast Burn
 - Air Slash  
 - Scorching Sands  
 - Dragon Pulse  
@@ -38998,7 +38998,7 @@ Tera Type: Water
 Modest Nature  
 IVs: 0 Atk  
 - Flash Cannon  
-- Hydro Pump  
+- Hydro Cannon  
 - Weather Ball  
 
 Lapras @ Assault Vest  

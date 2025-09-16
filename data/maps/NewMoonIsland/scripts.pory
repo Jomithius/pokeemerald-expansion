@@ -1,8 +1,8 @@
 mapscripts NewMoonIsland_MapScripts {
-    MAP_SCRIPT_ON_LOAD: NewMoonIsland_OnLoad
+    MAP_SCRIPT_ON_TRANSITION: NewMoonIsland_OnTransition
 }
 
-script NewMoonIsland_OnLoad{
+script NewMoonIsland_OnTransition{
     setflag(FLAG_TEMP_E)
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
     call_if_eq(VAR_NEWMOON_ISLAND_STATE, 3, NewMoonIsland_House2_TryResetGhostEvent)
@@ -13,6 +13,7 @@ script NewMoonIsland_House2_TryResetGhostEvent{
     setflag(FLAG_HIDE_RATDUARDO_NEWMOON_ISLAND)
     setflag(FLAG_HIDE_CHANNELER_NEWMOON_ISLAND)
     clearflag(FLAG_NEWMOON_ISLAND_HOUSE_2_TRAP_TRIGGER)
+    return
 }
 
 script NewMoonIsland_EventScript_Maushold{

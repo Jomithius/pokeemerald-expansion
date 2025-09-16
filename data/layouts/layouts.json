@@ -5537,7 +5537,7 @@
       "width": 26,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_ShadyForest",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/AreaZero_Prehistoric/border.bin",
       "blockdata_filepath": "data/layouts/AreaZero_Prehistoric/map.bin"
     },
@@ -5557,7 +5557,7 @@
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_ShadyForest",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/AreaZero_KoriadonLair/border.bin",
       "blockdata_filepath": "data/layouts/AreaZero_KoriadonLair/map.bin"
     },
@@ -5577,7 +5577,7 @@
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_ShadyForest",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/AreaZero_RagingBoltLair/border.bin",
       "blockdata_filepath": "data/layouts/AreaZero_RagingBoltLair/map.bin"
     },
@@ -5587,7 +5587,7 @@
       "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_ShadyForest",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/AreaZero_WalkingWakeLair/border.bin",
       "blockdata_filepath": "data/layouts/AreaZero_WalkingWakeLair/map.bin"
     },

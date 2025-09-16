@@ -50242,7 +50242,7 @@ F_TRAINER_FEMALE |
             .teraType = TYPE_POISON,
             .moves = {
 #line 19170
-                MOVE_ENERGY_BALL,
+                MOVE_FRENZY_PLANT,
                 MOVE_EARTH_POWER,
                 MOVE_LEECH_SEED,
                 MOVE_SLUDGE_BOMB,
@@ -50267,7 +50267,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 19181
-                MOVE_WEATHER_BALL,
+                MOVE_BLAST_BURN,
                 MOVE_AIR_SLASH,
                 MOVE_SCORCHING_SANDS,
                 MOVE_DRAGON_PULSE,
@@ -50296,7 +50296,7 @@ F_TRAINER_FEMALE |
 #line 19193
                 MOVE_SHELL_SMASH,
                 MOVE_FLASH_CANNON,
-                MOVE_HYDRO_PUMP,
+                MOVE_HYDRO_CANNON,
                 MOVE_WEATHER_BALL,
             },
             },
@@ -101364,7 +101364,7 @@ F_TRAINER_FEMALE |
             .teraType = TYPE_POISON,
             .moves = {
 #line 38978
-                MOVE_ENERGY_BALL,
+                MOVE_FRENZY_PLANT,
                 MOVE_EARTH_POWER,
                 MOVE_LEECH_SEED,
                 MOVE_SLUDGE_BOMB,
@@ -101389,7 +101389,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 38989
-                MOVE_WEATHER_BALL,
+                MOVE_BLAST_BURN,
                 MOVE_AIR_SLASH,
                 MOVE_SCORCHING_SANDS,
                 MOVE_DRAGON_PULSE,
@@ -101415,7 +101415,7 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 39000
                 MOVE_FLASH_CANNON,
-                MOVE_HYDRO_PUMP,
+                MOVE_HYDRO_CANNON,
                 MOVE_WEATHER_BALL,
             },
             },

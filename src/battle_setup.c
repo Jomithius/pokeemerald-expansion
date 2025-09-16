@@ -690,6 +690,8 @@ u8 BattleSetup_GetEnvironmentId(void)
         return BATTLE_ENVIRONMENT_SNOW;
     if (MetatileBehavior_IsSnow(tileBehavior)) // Snow terrain
         return BATTLE_ENVIRONMENT_SNOW;
+    if (MetatileBehavior_IsRuins(tileBehavior)) // Eastern Ruins (Holy Grounds)
+        return BATTLE_ENVIRONMENT_PLAIN;
     if (MetatileBehavior_IsUltraSpaceTallGrass(tileBehavior)) // Ultra Space
         return BATTLE_ENVIRONMENT_ULTRA_SPACE;
     if (MetatileBehavior_IsLongGrass(tileBehavior))
