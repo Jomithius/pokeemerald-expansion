@@ -12129,7 +12129,6 @@ Level: 30
 Turtonator (M)
 Level: 31  
 Ability: Shell Armor  
-Tera Type: Fire  
 EVs: 252 HP / 152 SpA / 104 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -23879,7 +23878,7 @@ Mugshot: Blue
 
 Pangoro (M) @ Assault Vest  
 Ability: Iron Fist  
-Level: 55  
+Level: 60  
 Adamant Nature  
 - Bullet Punch  
 - Sucker Punch  
@@ -23888,7 +23887,7 @@ Adamant Nature
 
 Toxicroak (F) @ Black Sludge  
 Ability: Poison Touch  
-Level: 55   
+Level: 60   
 Jolly Nature   
 - Close Combat  
 - Poison Jab  
@@ -23896,7 +23895,7 @@ Jolly Nature
 
 Lilligant-Hisui
 Ability: Hustle  
-Level: 55   
+Level: 60  
 Jolly Nature  
 - Close Combat  
 - Trailblaze  
@@ -23905,7 +23904,7 @@ Jolly Nature
 
 Medicham (M) @ Expert Belt  
 Ability: Pure Power  
-Level: 55  
+Level: 60 
 Jolly Nature  
 - Fire Punch  
 - Ice Punch  
@@ -23913,7 +23912,7 @@ Jolly Nature
 
 Infernape (M) @ Punching Glove  
 Ability: Iron Fist  
-Level: 55    
+Level: 60    
 Jolly Nature   
 - Fire Punch  
 - Mach Punch  
@@ -23921,7 +23920,7 @@ Jolly Nature
 
 Primeape (M)
 Ability: Defiant  
-Level: 55  
+Level: 60  
 Happiness: 0  
 Jolly Nature  
 - Acrobatics  
