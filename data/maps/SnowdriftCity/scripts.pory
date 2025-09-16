@@ -108,9 +108,8 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
         removeobject(9)
         fadescreen(FADE_FROM_BLACK)
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("CALYREX joined the party!", MSGBOX_AUTOCLOSE)
+        msgbox("CALYREX joined the party!", MSGBOX_DEFAULT)
         waitfanfare
-        waitmessage
         setflag(FLAG_DEFEATED_CALYREX)
     }
     elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
@@ -118,9 +117,8 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
         removeobject(9)
         fadescreen(FADE_FROM_BLACK)
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("CALYREX was sent to the PC!", MSGBOX_AUTOCLOSE)
+        msgbox("CALYREX was sent to the PC!", MSGBOX_DEFAULT)
         waitfanfare
-        waitmessage
         setflag(FLAG_DEFEATED_CALYREX)
     }
     else{

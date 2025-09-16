@@ -75,7 +75,6 @@ script NewMoonIsland_House3_EventScript_Aria{
     msgbox("ARGH! AAAAAARGH!\n
         AAAUUAUUAAAUGH!", MSGBOX_DEFAULT)
     waitmoncry
-    waitmessage
     playse(SE_PIN)
     applymovement(4, Common_Movement_ExclamationMark)
     waitmovement(4)
@@ -84,10 +83,9 @@ script NewMoonIsland_House3_EventScript_Aria{
     //playse(SE_M_YAWN)
     //waitse
     playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
-    msgbox("MA-AH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox("MA-AH!", MSGBOX_DEFAULT)
     waitmoncry
-    applymovement(4, Common_Movement_FaceOriginalDirection)
+    applymovement(4, Common_Movement_WalkInPlaceFasterDown)
     waitmovement(4)
     fadeinbgm(0)
     release
@@ -120,7 +118,7 @@ text NewMoonIsland_House3_Text_Momo{
     GRGRGRGRGRGR\p
     HSISSSSS HISSSSSS BITE\n
     BITE SNARL SNARL\p
-    sniff sniff\n
+    sniff sniff… augh pllbthth\n
     GRRRRRRRRR…"
 }
 

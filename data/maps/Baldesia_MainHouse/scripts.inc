@@ -364,973 +364,985 @@ Baldesia_MainHouse_EventScript_GoToAltar::
 	waitmovement 0
 # 211 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitse
+# 212 "data/maps/Baldesia_MainHouse/scripts.pory"
+	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
 # 213 "data/maps/Baldesia_MainHouse/scripts.pory"
-	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
-# 214 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 7, Baldesia_MainHouse_Movement_WalkBackDown
-# 215 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 214 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
+# 216 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 16
 # 217 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmoncry
-# 218 "data/maps/Baldesia_MainHouse/scripts.pory"
 	playse SE_M_DOUBLE_TEAM
-# 219 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 218 "data/maps/Baldesia_MainHouse/scripts.pory"
 	addobject 9
+# 219 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 24
 # 220 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 30
+	waitse
 # 221 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitse
-# 222 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 7, Common_Movement_WalkInPlaceFasterDown
+# 222 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 7
 # 223 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 7
-# 224 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 20
-# 225 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 224 "data/maps/Baldesia_MainHouse/scripts.pory"
 	playse SE_PIN
-# 226 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 225 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 7, Common_Movement_ExclamationMark
+# 226 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
 # 227 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
+	waitse
 # 228 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitse
-# 230 "data/maps/Baldesia_MainHouse/scripts.pory"
 	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
-# 231 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 229 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 7, Baldesia_MainHouse_Movement_WalkBackUp
-# 232 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 230 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 8
-# 233 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 231 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 9, Common_Movement_WalkUp
-# 234 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 232 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 15, Baldesia_MainHouse_Movement_LeftGuard
-# 235 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 233 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 8
-# 236 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 234 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 16, Baldesia_MainHouse_Movement_RightGuard
-# 237 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 235 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 16
-# 238 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 236 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 30
-# 240 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmoncry
-# 241 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 238 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 7, Common_Movement_LookAround
-# 242 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 239 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 7
-# 243 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 240 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_1, MSGBOX_AUTOCLOSE
-# 244 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 241 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 245 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 242 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 7, Baldesia_MainHouse_Movement_AriaCharges
-# 246 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 243 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 25, Baldesia_MainHouse_Movement_WalkBackRight
-# 247 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 244 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 15, Common_Movement_WalkInPlaceUp
-# 248 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 245 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 16, Common_Movement_WalkInPlaceUp
-# 249 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 246 "data/maps/Baldesia_MainHouse/scripts.pory"
 	playse SE_NOT_EFFECTIVE
+# 247 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 248 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 249 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 8
 # 250 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
+	applymovement 5, Common_Movement_WalkInPlaceLeft
 # 251 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+	delay 6
 # 252 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 8
-# 253 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 5, Common_Movement_WalkInPlaceLeft
-# 254 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 6
-# 255 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 6, Common_Movement_WalkInPlaceRight
-# 256 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 4, Common_Movement_WalkInPlaceLeft
-# 257 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 253 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 258 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 254 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitse
-# 259 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 255 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_2, MSGBOX_AUTOCLOSE
-# 260 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 256 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 261 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 257 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceRight
+# 258 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 259 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
+# 260 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 4, Common_Movement_WalkInPlaceLeft
+# 261 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 8
 # 262 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
+	applymovement 5, Common_Movement_WalkInPlaceUp
 # 263 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
+	delay 6
 # 264 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 8
+	waitmovement 0
 # 265 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 5, Common_Movement_WalkInPlaceUp
-# 266 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 6
-# 267 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 268 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_3, MSGBOX_AUTOCLOSE
-# 269 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 266 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 270 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 267 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceDown
-# 271 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 268 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 272 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 269 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_4, MSGBOX_AUTOCLOSE
-# 273 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 270 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 274 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 271 "data/maps/Baldesia_MainHouse/scripts.pory"
 	fadenewbgm MUS_B_ARENA
-# 275 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 272 "data/maps/Baldesia_MainHouse/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 276 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 273 "data/maps/Baldesia_MainHouse/scripts.pory"
 	playse SE_FLEE
-# 277 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 274 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 15, Baldesia_MainHouse_Movement_LeftGuardReturn
-# 278 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 275 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 8
-# 279 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 276 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 16, Baldesia_MainHouse_Movement_RightGuardReturn
-# 280 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 277 "data/maps/Baldesia_MainHouse/scripts.pory"
 	removeobject 25
-# 281 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 278 "data/maps/Baldesia_MainHouse/scripts.pory"
 	removeobject 9
-# 282 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 279 "data/maps/Baldesia_MainHouse/scripts.pory"
 	addobject 26
-# 283 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 280 "data/maps/Baldesia_MainHouse/scripts.pory"
 	addobject 12
-# 284 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 281 "data/maps/Baldesia_MainHouse/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 285 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 282 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitse
-# 286 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 283 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 15
+# 284 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 285 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 8
+# 286 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 5, Common_Movement_WalkInPlaceLeft
 # 287 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+	applymovement 4, Common_Movement_WalkInPlaceDown
 # 288 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 8
+	waitmovement 0
 # 289 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 5, Common_Movement_WalkInPlaceLeft
-# 290 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 4, Common_Movement_WalkInPlaceDown
-# 291 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 292 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_5, MSGBOX_AUTOCLOSE
+# 293 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmessage
+# 294 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
+# 295 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 8
 # 296 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmessage
+	applymovement 5, Common_Movement_WalkInPlaceUp
 # 297 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
+	applymovement 4, Common_Movement_WalkInPlaceLeft
 # 298 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 8
+	waitmovement 0
 # 299 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 5, Common_Movement_WalkInPlaceUp
-# 300 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 4, Common_Movement_WalkInPlaceLeft
-# 301 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 302 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_6, MSGBOX_AUTOCLOSE
-# 304 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 301 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 305 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 302 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 303 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 8
+# 304 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+# 305 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 6
 # 306 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 8
-# 307 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 5, Common_Movement_WalkInPlaceLeft
-# 308 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 6
-# 309 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 4, Common_Movement_WalkInPlaceDown
-# 310 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 307 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 311 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 308 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_7, MSGBOX_AUTOCLOSE
-# 316 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 313 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 317 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 314 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
-# 318 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 315 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 8
-# 319 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 316 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 5, Common_Movement_WalkInPlaceUp
-# 320 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 317 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 6
-# 321 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 318 "data/maps/Baldesia_MainHouse/scripts.pory"
 	playse SE_BIKE_HOP
-# 322 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 319 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 6, Common_Movement_QuestionMark
-# 323 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 320 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 8
-# 324 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 321 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 4, Common_Movement_WalkInPlaceLeft
-# 325 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 322 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 326 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 323 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_TextLohan2, MSGBOX_AUTOCLOSE
-# 327 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 324 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 328 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 325 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 7, Common_Movement_WalkUp
-# 329 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 326 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 6
-# 330 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 327 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 5, Common_Movement_WalkInPlaceLeft
-# 331 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 328 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 332 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 329 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_8, MSGBOX_AUTOCLOSE
-# 335 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 332 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 336 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 333 "data/maps/Baldesia_MainHouse/scripts.pory"
 	playse SE_CONTEST_HEART
-# 337 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 334 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 3, ContestHall_Movement_Heart
+# 335 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 336 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitse
+# 337 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceRight
 # 338 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
 # 339 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitse
+	delay 30
 # 340 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceRight
+	applymovement 1, Common_Movement_WalkInPlaceDown
 # 341 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
 # 342 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 30
-# 343 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceDown
-# 344 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 345 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 60
-# 346 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 343 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_TextLohan3, MSGBOX_AUTOCLOSE
+# 344 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmessage
+# 345 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 3, Common_Movement_WalkInPlaceLeft
+# 346 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
 # 347 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmessage
-# 348 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceLeft
-# 349 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 350 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_9, MSGBOX_AUTOCLOSE
+# 348 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmessage
+# 349 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceRight
+# 350 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
 # 351 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmessage
-# 352 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceRight
-# 353 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 354 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_10, MSGBOX_AUTOCLOSE
-# 358 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 355 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 359 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 356 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 3, Common_Movement_WalkInPlaceDown
-# 360 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 357 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceDown
-# 361 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 358 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 362 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 359 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_TextLohan4, MSGBOX_AUTOCLOSE
-# 363 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 360 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 364 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 361 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceRight
-# 365 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 362 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 3, Common_Movement_WalkInPlaceLeft
-# 366 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 363 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 367 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 364 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_11, MSGBOX_AUTOCLOSE
-# 370 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 367 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 371 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 368 "data/maps/Baldesia_MainHouse/scripts.pory"
 	playse SE_M_PETAL_DANCE
-# 372 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 369 "data/maps/Baldesia_MainHouse/scripts.pory"
 	fadescreenspeed FADE_TO_WHITE, 4
-# 373 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 370 "data/maps/Baldesia_MainHouse/scripts.pory"
 	removeobject 3
-# 374 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 371 "data/maps/Baldesia_MainHouse/scripts.pory"
 	fadescreenspeed FADE_FROM_WHITE, 3
-# 375 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 372 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitse
-# 376 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 373 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceDown
-# 377 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 374 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 378 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 375 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_GoToAltar_Text_12, MSGBOX_AUTOCLOSE
-# 380 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 377 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 381 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 378 "data/maps/Baldesia_MainHouse/scripts.pory"
 	clearflag FLAG_HIDE_NINJA_BALDESIA
-# 382 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 379 "data/maps/Baldesia_MainHouse/scripts.pory"
 	setflag FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE
-# 383 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 380 "data/maps/Baldesia_MainHouse/scripts.pory"
 	setvar VAR_MOMO_ARIA_STATE, 5
-# 384 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 381 "data/maps/Baldesia_MainHouse/scripts.pory"
 	setflag FLAG_LANDMARK_BALDESIA
-# 385 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 382 "data/maps/Baldesia_MainHouse/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
+# 383 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 7, Common_Movement_FaceDown
+# 384 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 385 "data/maps/Baldesia_MainHouse/scripts.pory"
+	setobjectxy 7, 16, 10
 # 386 "data/maps/Baldesia_MainHouse/scripts.pory"
-	call Baldesia_MainHouse_UpdateNPCPos
+	setobjectnewmovementtype 7, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
 # 387 "data/maps/Baldesia_MainHouse/scripts.pory"
-	special DrawWholeMapView
+	setobjectxy 6, 11, 11
 # 388 "data/maps/Baldesia_MainHouse/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	setobjectnewmovementtype 6, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT
 # 389 "data/maps/Baldesia_MainHouse/scripts.pory"
-	savebgm MUS_DUMMY
+	setobjectnewmovementtype 4, MOVEMENT_TYPE_LOOK_AROUND
 # 390 "data/maps/Baldesia_MainHouse/scripts.pory"
-	fadedefaultbgm
+	call Baldesia_MainHouse_UpdateNPCPos
 # 391 "data/maps/Baldesia_MainHouse/scripts.pory"
+	special DrawWholeMapView
+# 392 "data/maps/Baldesia_MainHouse/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 393 "data/maps/Baldesia_MainHouse/scripts.pory"
+	savebgm MUS_DUMMY
+# 394 "data/maps/Baldesia_MainHouse/scripts.pory"
+	fadedefaultbgm
+# 395 "data/maps/Baldesia_MainHouse/scripts.pory"
 	releaseall
 	end
 
 
 Baldesia_MainHouse_EventScript_LohanThanks::
-# 396 "data/maps/Baldesia_MainHouse/scripts.pory"
-	lockall
-# 397 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_Text_LohanThankYou, MSGBOX_AUTOCLOSE
-# 398 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmessage
-# 399 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 1, Common_Movement_WalkDown2
 # 400 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
+	lockall
 # 401 "data/maps/Baldesia_MainHouse/scripts.pory"
-	giveitem ITEM_AUSPICIOUS_ARMOR
+	msgbox Baldesia_MainHouse_Text_LohanThankYou, MSGBOX_AUTOCLOSE
 # 402 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
 # 403 "data/maps/Baldesia_MainHouse/scripts.pory"
-	closemessage
+	applymovement 1, Common_Movement_WalkDown2
 # 404 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 1, Common_Movement_WalkLeft
+	waitmovement 0
 # 405 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
+	giveitem ITEM_AUSPICIOUS_ARMOR
 # 406 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceDown
-# 407 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 408 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 30
-# 409 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 1, Baldesia_MainHouse_Movement_LohanReturns
-# 410 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 411 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_Text_AriaRecievesArmor, MSGBOX_AUTOCLOSE
-# 412 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
+# 407 "data/maps/Baldesia_MainHouse/scripts.pory"
+	closemessage
+# 408 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 1, Common_Movement_WalkLeft
+# 409 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 410 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceDown
+# 411 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 412 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay 30
 # 413 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 4, Baldesia_MainHouse_Movement_BennisToPlayer
+	applymovement 1, Baldesia_MainHouse_Movement_LohanReturns
 # 414 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
 # 415 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_EventScript_LohanThanks_Text_0, MSGBOX_AUTOCLOSE
-# 419 "data/maps/Baldesia_MainHouse/scripts.pory"
+	msgbox Baldesia_MainHouse_Text_AriaRecievesArmor, MSGBOX_AUTOCLOSE
+# 416 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 420 "data/maps/Baldesia_MainHouse/scripts.pory"
-	playse SE_FLEE
-# 421 "data/maps/Baldesia_MainHouse/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 422 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitse
-# 423 "data/maps/Baldesia_MainHouse/scripts.pory"
-	removeobject 4
-# 424 "data/maps/Baldesia_MainHouse/scripts.pory"
-	removeobject 6
-# 425 "data/maps/Baldesia_MainHouse/scripts.pory"
-	clearflag FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE
-# 426 "data/maps/Baldesia_MainHouse/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 427 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
-# 428 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 7, Common_Movement_WalkInPlaceRight
-# 429 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 417 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 4, Baldesia_MainHouse_Movement_BennisToPlayer
+# 418 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 430 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_EventScript_LohanThanks_Text_1, MSGBOX_AUTOCLOSE
-# 434 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 419 "data/maps/Baldesia_MainHouse/scripts.pory"
+	msgbox Baldesia_MainHouse_EventScript_LohanThanks_Text_0, MSGBOX_AUTOCLOSE
+# 423 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 435 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement 7, Baldesia_MainHouse_Movement_AriaLeaves
-# 436 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 8
-# 437 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+# 424 "data/maps/Baldesia_MainHouse/scripts.pory"
+	playse SE_FLEE
+# 425 "data/maps/Baldesia_MainHouse/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 426 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitse
+# 427 "data/maps/Baldesia_MainHouse/scripts.pory"
+	removeobject 4
+# 428 "data/maps/Baldesia_MainHouse/scripts.pory"
+	removeobject 6
+# 429 "data/maps/Baldesia_MainHouse/scripts.pory"
+	clearflag FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE
+# 430 "data/maps/Baldesia_MainHouse/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 431 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 432 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement 7, Common_Movement_WalkInPlaceRight
+# 433 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 434 "data/maps/Baldesia_MainHouse/scripts.pory"
+	msgbox Baldesia_MainHouse_EventScript_LohanThanks_Text_1, MSGBOX_AUTOCLOSE
 # 438 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 7
+	waitmessage
 # 439 "data/maps/Baldesia_MainHouse/scripts.pory"
-	removeobject 7
+	applymovement 7, Baldesia_MainHouse_Movement_AriaLeaves
 # 440 "data/maps/Baldesia_MainHouse/scripts.pory"
-	setflag FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE
+	delay 8
 # 441 "data/maps/Baldesia_MainHouse/scripts.pory"
-	clearflag FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 # 442 "data/maps/Baldesia_MainHouse/scripts.pory"
-	setvar VAR_MOMO_ARIA_STATE, 8
+	waitmovement 7
 # 443 "data/maps/Baldesia_MainHouse/scripts.pory"
-	setvar VAR_BENNIS_DOJO_STATE, 5
+	removeobject 7
 # 444 "data/maps/Baldesia_MainHouse/scripts.pory"
-	addvar VAR_FINAL_REMATCH_STATE, 1
+	setflag FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE
 # 445 "data/maps/Baldesia_MainHouse/scripts.pory"
-	setflag FLAG_SYS_BENNIS_FINAL_REMATCH
+	clearflag FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO
 # 446 "data/maps/Baldesia_MainHouse/scripts.pory"
-	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
+	setvar VAR_MOMO_ARIA_STATE, 8
 # 447 "data/maps/Baldesia_MainHouse/scripts.pory"
-	setflag FLAG_COMPLETED_BALDESIA
+	setvar VAR_BENNIS_DOJO_STATE, 5
 # 448 "data/maps/Baldesia_MainHouse/scripts.pory"
+	addvar VAR_FINAL_REMATCH_STATE, 1
+# 449 "data/maps/Baldesia_MainHouse/scripts.pory"
+	setflag FLAG_SYS_BENNIS_FINAL_REMATCH
+# 450 "data/maps/Baldesia_MainHouse/scripts.pory"
+	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
+# 451 "data/maps/Baldesia_MainHouse/scripts.pory"
+	setflag FLAG_COMPLETED_BALDESIA
+# 452 "data/maps/Baldesia_MainHouse/scripts.pory"
 	releaseall
 	end
 
 
 Baldesia_MainHouse_EventScript_Guard::
-# 453 "data/maps/Baldesia_MainHouse/scripts.pory"
-	lock
-# 454 "data/maps/Baldesia_MainHouse/scripts.pory"
-	faceplayer
-# 455 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_EventScript_Guard_Text_0, MSGBOX_AUTOCLOSE
-# 456 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmessage
 # 457 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	lock
 # 458 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
+	faceplayer
 # 459 "data/maps/Baldesia_MainHouse/scripts.pory"
+	msgbox Baldesia_MainHouse_EventScript_Guard_Text_0, MSGBOX_AUTOCLOSE
+# 460 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmessage
+# 461 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 462 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 463 "data/maps/Baldesia_MainHouse/scripts.pory"
 	release
 	end
 
 
 Baldesia_MainHouse_EventScript_Ninja::
-# 464 "data/maps/Baldesia_MainHouse/scripts.pory"
-	lock
-# 465 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay 16
-# 466 "data/maps/Baldesia_MainHouse/scripts.pory"
-	playse SE_PIN
-# 467 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
 # 468 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
+	lock
 # 469 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitse
+	delay 16
 # 470 "data/maps/Baldesia_MainHouse/scripts.pory"
-	faceplayer
+	playse SE_PIN
 # 471 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_EventScript_Ninja_Text_0, MSGBOX_AUTOCLOSE
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
 # 472 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmessage
-# 473 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 474 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
+# 473 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitse
+# 474 "data/maps/Baldesia_MainHouse/scripts.pory"
+	faceplayer
 # 475 "data/maps/Baldesia_MainHouse/scripts.pory"
+	msgbox Baldesia_MainHouse_EventScript_Ninja_Text_0, MSGBOX_AUTOCLOSE
+# 476 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmessage
+# 477 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 478 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 479 "data/maps/Baldesia_MainHouse/scripts.pory"
 	release
 	end
 
 
 Baldesia_MainHouse_EventScript_NinjaBoy::
-# 480 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 484 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_NinjaBoy_Text_0, MSGBOX_SIGN
 	end
 
 
 Baldesia_MainHouse_EventScript_Bennis::
-# 486 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 490 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_Bennis_Text_0, MSGBOX_NPC
 	end
 
 
 Baldesia_MainHouse_EventScript_Asak::
-# 492 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 496 "data/maps/Baldesia_MainHouse/scripts.pory"
 	lock
-# 493 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 497 "data/maps/Baldesia_MainHouse/scripts.pory"
 	faceplayer
-# 494 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 498 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_Asak_Text_0, MSGBOX_AUTOCLOSE
-# 501 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 505 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 502 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 506 "data/maps/Baldesia_MainHouse/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_RESULT
-# 503 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 507 "data/maps/Baldesia_MainHouse/scripts.pory"
 	compare VAR_RESULT, DIR_NORTH
 	goto_if_eq Baldesia_MainHouse_EventScript_Asak_2
-# 508 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 512 "data/maps/Baldesia_MainHouse/scripts.pory"
 	compare VAR_RESULT, DIR_SOUTH
 	goto_if_eq Baldesia_MainHouse_EventScript_Asak_3
-# 512 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 516 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 5, Baldesia_MainHouse_Movement_AsakLeave
-# 513 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 517 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 8
-# 514 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 518 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 Baldesia_MainHouse_EventScript_Asak_1:
-# 516 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 520 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 5
-# 517 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 521 "data/maps/Baldesia_MainHouse/scripts.pory"
 	removeobject 5
-# 518 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 522 "data/maps/Baldesia_MainHouse/scripts.pory"
 	release
 	end
 
 Baldesia_MainHouse_EventScript_Asak_2:
-# 504 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 508 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 5, Baldesia_MainHouse_Movement_AsakLeavePlayerFacingNorth
-# 505 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 509 "data/maps/Baldesia_MainHouse/scripts.pory"
 	delay 16
-# 506 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 510 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 	goto Baldesia_MainHouse_EventScript_Asak_1
 
 Baldesia_MainHouse_EventScript_Asak_3:
-# 509 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 513 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement 5, Baldesia_MainHouse_Movement_AsakLeave
 	goto Baldesia_MainHouse_EventScript_Asak_1
 
 
 Baldesia_MainHouse_EventScript_Panini::
-# 523 "data/maps/Baldesia_MainHouse/scripts.pory"
-	lock
-# 524 "data/maps/Baldesia_MainHouse/scripts.pory"
-	faceplayer
-# 525 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_EventScript_Panini_Text_0, MSGBOX_DEFAULT
-# 526 "data/maps/Baldesia_MainHouse/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, Baldesia_MainHouse_EventScript_Panini_Text_1, Baldesia_MainHouse_EventScript_Panini_Text_2, Baldesia_MainHouse_EventScript_Panini_Text_3
 # 527 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_EventScript_Panini_Text_4, MSGBOX_AUTOCLOSE
+	lock
 # 528 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmessage
+	faceplayer
 # 529 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	msgbox Baldesia_MainHouse_EventScript_Panini_Text_0, MSGBOX_DEFAULT
 # 530 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, Baldesia_MainHouse_EventScript_Panini_Text_1, Baldesia_MainHouse_EventScript_Panini_Text_2, Baldesia_MainHouse_EventScript_Panini_Text_3
 # 531 "data/maps/Baldesia_MainHouse/scripts.pory"
+	msgbox Baldesia_MainHouse_EventScript_Panini_Text_4, MSGBOX_AUTOCLOSE
+# 532 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmessage
+# 533 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 534 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 535 "data/maps/Baldesia_MainHouse/scripts.pory"
 	release
 	end
 
 
 Baldesia_MainHouse_EventScript_Aria::
-# 536 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 540 "data/maps/Baldesia_MainHouse/scripts.pory"
 	lock
-# 537 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 541 "data/maps/Baldesia_MainHouse/scripts.pory"
 	faceplayer
-# 538 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
 # 542 "data/maps/Baldesia_MainHouse/scripts.pory"
+	msgbox Baldesia_MainHouse_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
+# 546 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmessage
-# 543 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 547 "data/maps/Baldesia_MainHouse/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 544 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 548 "data/maps/Baldesia_MainHouse/scripts.pory"
 	waitmovement 0
-# 545 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 549 "data/maps/Baldesia_MainHouse/scripts.pory"
 	release
 	end
 
 
 Baldesia_MainHouse_EventScript_OldManDojo::
-# 550 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 554 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_OldManDojo_Text_0, MSGBOX_NPC
 	end
 
 
 Baldesia_MainHouse_EventScript_OldWoman::
-# 557 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 561 "data/maps/Baldesia_MainHouse/scripts.pory"
 	compare VAR_MOMO_ARIA_STATE, 7
 	goto_if_le Baldesia_MainHouse_EventScript_OldWoman_2
-# 563 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 567 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_OldWoman_Text_1, MSGBOX_NPC
 Baldesia_MainHouse_EventScript_OldWoman_1:
 	end
 
 Baldesia_MainHouse_EventScript_OldWoman_2:
-# 558 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 562 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_OldWoman_Text_0, MSGBOX_NPC
 	goto Baldesia_MainHouse_EventScript_OldWoman_1
 
 
 Baldesia_MainHouse_EventScript_OldMan::
-# 571 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 575 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_OldMan_Text_0, MSGBOX_NPC
 	end
 
 
 Baldesia_MainHouse_EventScript_Lohan::
-# 580 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 584 "data/maps/Baldesia_MainHouse/scripts.pory"
 	compare VAR_MOMO_ARIA_STATE, 7
 	goto_if_le Baldesia_MainHouse_EventScript_Lohan_2
-# 585 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 589 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_Lohan_Text_1, MSGBOX_NPC
 Baldesia_MainHouse_EventScript_Lohan_1:
 	end
 
 Baldesia_MainHouse_EventScript_Lohan_2:
-# 581 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 585 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_Lohan_Text_0, MSGBOX_NPC
 	goto Baldesia_MainHouse_EventScript_Lohan_1
 
 
 Baldesia_MainHouse_EventScript_Lindsay::
-# 593 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 597 "data/maps/Baldesia_MainHouse/scripts.pory"
 	compare VAR_MOMO_ARIA_STATE, 7
 	goto_if_le Baldesia_MainHouse_EventScript_Lindsay_2
-# 597 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 601 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_Lindsay_Text_1, MSGBOX_NPC
 Baldesia_MainHouse_EventScript_Lindsay_1:
 	end
 
 Baldesia_MainHouse_EventScript_Lindsay_2:
-# 594 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 598 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_Lindsay_Text_0, MSGBOX_NPC
 	goto Baldesia_MainHouse_EventScript_Lindsay_1
 
 
 Baldesia_MainHouse_EventScript_KimonoGirl::
-# 605 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 609 "data/maps/Baldesia_MainHouse/scripts.pory"
 	lock
-# 606 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 610 "data/maps/Baldesia_MainHouse/scripts.pory"
 	faceplayer
-# 607 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 611 "data/maps/Baldesia_MainHouse/scripts.pory"
 	fadenewbgm MUS_RG_NET_CENTER
-# 608 "data/maps/Baldesia_MainHouse/scripts.pory"
-	msgbox Baldesia_MainHouse_EventScript_KimonoGirl_Text_0, MSGBOX_YESNO
 # 612 "data/maps/Baldesia_MainHouse/scripts.pory"
+	msgbox Baldesia_MainHouse_EventScript_KimonoGirl_Text_0, MSGBOX_YESNO
+# 616 "data/maps/Baldesia_MainHouse/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Baldesia_MainHouse_EventScript_KimonoGirl_2
-# 618 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 622 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_EventScript_KimonoGirl_Text_1, MSGBOX_DEFAULT
 Baldesia_MainHouse_EventScript_KimonoGirl_1:
-# 620 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmessage
-# 621 "data/maps/Baldesia_MainHouse/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 622 "data/maps/Baldesia_MainHouse/scripts.pory"
-	waitmovement 0
-# 623 "data/maps/Baldesia_MainHouse/scripts.pory"
-	savebgm MUS_DUMMY
 # 624 "data/maps/Baldesia_MainHouse/scripts.pory"
-	fadedefaultbgm
+	waitmessage
 # 625 "data/maps/Baldesia_MainHouse/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 626 "data/maps/Baldesia_MainHouse/scripts.pory"
+	waitmovement 0
+# 627 "data/maps/Baldesia_MainHouse/scripts.pory"
+	savebgm MUS_DUMMY
+# 628 "data/maps/Baldesia_MainHouse/scripts.pory"
+	fadedefaultbgm
+# 629 "data/maps/Baldesia_MainHouse/scripts.pory"
 	release
 	end
 
 Baldesia_MainHouse_EventScript_KimonoGirl_2:
-# 613 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 617 "data/maps/Baldesia_MainHouse/scripts.pory"
 	incrementgamestat GAME_STAT_USED_POKECENTER
-# 614 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 618 "data/maps/Baldesia_MainHouse/scripts.pory"
 	call Common_EventScript_OutOfCenterPartyHeal
-# 615 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 619 "data/maps/Baldesia_MainHouse/scripts.pory"
 	msgbox Baldesia_MainHouse_Text_ThankYouForWaiting, MSGBOX_DEFAULT
 	goto Baldesia_MainHouse_EventScript_KimonoGirl_1
 
 
-# 738 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_AsakGoesToChief:
-# 739 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_left
-# 739 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_left
-# 740 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_up
-# 741 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_left
 # 742 "data/maps/Baldesia_MainHouse/scripts.pory"
+Baldesia_MainHouse_Movement_AsakGoesToChief:
+# 743 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_left
+# 743 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_left
+# 744 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_up
+# 745 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_left
+# 746 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_in_place_fast_up
 	step_end
 
-# 745 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_AsakGoesBack:
-# 746 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 747 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 748 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 748 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
 # 749 "data/maps/Baldesia_MainHouse/scripts.pory"
+Baldesia_MainHouse_Movement_AsakGoesBack:
+# 750 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 751 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 752 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 752 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 753 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 752 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 756 "data/maps/Baldesia_MainHouse/scripts.pory"
 Baldesia_MainHouse_Movement_AriaEnter:
-# 753 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 757 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_fast_up
-# 754 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_left
-# 754 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_left
-# 754 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_left
-# 754 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_left
-# 754 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_left
-# 755 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_up
-# 755 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_up
-	step_end
-
 # 758 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_WalkBackDown:
+	walk_fast_left
+# 758 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_left
+# 758 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_left
+# 758 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_left
+# 758 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_left
 # 759 "data/maps/Baldesia_MainHouse/scripts.pory"
-	lock_facing_direction
-# 760 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_down
-# 761 "data/maps/Baldesia_MainHouse/scripts.pory"
-	unlock_facing_direction
-	step_end
-
-# 764 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_WalkBackUp:
-# 765 "data/maps/Baldesia_MainHouse/scripts.pory"
-	lock_facing_direction
-# 766 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_fast_up
-# 767 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 759 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_up
+	step_end
+
+# 762 "data/maps/Baldesia_MainHouse/scripts.pory"
+Baldesia_MainHouse_Movement_WalkBackDown:
+# 763 "data/maps/Baldesia_MainHouse/scripts.pory"
+	lock_facing_direction
+# 764 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_down
+# 765 "data/maps/Baldesia_MainHouse/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 770 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_WalkBackRight:
-# 771 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 768 "data/maps/Baldesia_MainHouse/scripts.pory"
+Baldesia_MainHouse_Movement_WalkBackUp:
+# 769 "data/maps/Baldesia_MainHouse/scripts.pory"
 	lock_facing_direction
-# 772 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_right
-# 773 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 770 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_up
+# 771 "data/maps/Baldesia_MainHouse/scripts.pory"
 	unlock_facing_direction
+	step_end
+
 # 774 "data/maps/Baldesia_MainHouse/scripts.pory"
-	face_left
+Baldesia_MainHouse_Movement_WalkBackRight:
 # 775 "data/maps/Baldesia_MainHouse/scripts.pory"
-	delay_16
+	lock_facing_direction
 # 776 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_right
+# 777 "data/maps/Baldesia_MainHouse/scripts.pory"
+	unlock_facing_direction
+# 778 "data/maps/Baldesia_MainHouse/scripts.pory"
+	face_left
+# 779 "data/maps/Baldesia_MainHouse/scripts.pory"
+	delay_16
+# 780 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_in_place_fast_up
 	step_end
 
-# 779 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 783 "data/maps/Baldesia_MainHouse/scripts.pory"
 Baldesia_MainHouse_Movement_RightGuard:
-# 780 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 780 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 780 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 780 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 780 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 780 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 780 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 781 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_left
-# 781 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_left
-# 781 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_left
-	step_end
-
 # 784 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 784 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 784 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 784 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 784 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 784 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 784 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_left
+# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_left
+# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_left
+	step_end
+
+# 788 "data/maps/Baldesia_MainHouse/scripts.pory"
 Baldesia_MainHouse_Movement_LeftGuard:
-# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 785 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_down
-# 786 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_right
-# 786 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_right
-# 786 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_right
-# 786 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_right
-# 786 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_faster_right
-	step_end
-
 # 789 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 789 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 789 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 789 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 789 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 789 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 789 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_down
+# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_right
+# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_right
+# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_right
+# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_right
+# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_faster_right
+	step_end
+
+# 793 "data/maps/Baldesia_MainHouse/scripts.pory"
 Baldesia_MainHouse_Movement_LeftGuardReturn:
-# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 794 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 794 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 794 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 794 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 790 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 794 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 791 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 791 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 791 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 791 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 791 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 791 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 791 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 792 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_in_place_down
-	step_end
-
 # 795 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_RightGuardReturn:
+	walk_up
+# 795 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 795 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 795 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 795 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 795 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 795 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
 # 796 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 796 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 796 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 797 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 797 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 797 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 797 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 797 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 797 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 797 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 798 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_in_place_down
 	step_end
 
+# 799 "data/maps/Baldesia_MainHouse/scripts.pory"
+Baldesia_MainHouse_Movement_RightGuardReturn:
+# 800 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 800 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 800 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
 # 801 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_AriaCharges:
+	walk_up
+# 801 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 801 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 801 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 801 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 801 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 801 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
 # 802 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_up
-# 802 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_up
-# 802 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_fast_up
+	walk_in_place_down
 	step_end
 
 # 805 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_AsakLeavePlayerFacingNorth:
+Baldesia_MainHouse_Movement_AriaCharges:
 # 806 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 807 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 807 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 807 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 807 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 808 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 808 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 808 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_right
-# 809 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 809 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 809 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 809 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
+	walk_fast_up
+# 806 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_up
+# 806 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_fast_up
 	step_end
 
+# 809 "data/maps/Baldesia_MainHouse/scripts.pory"
+Baldesia_MainHouse_Movement_AsakLeavePlayerFacingNorth:
+# 810 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 811 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 811 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 811 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 811 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
 # 812 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_AsakLeave:
-# 813 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 813 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 813 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 813 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_down
-# 814 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_right
-# 814 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 812 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_right
-# 814 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 812 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_right
-# 815 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 813 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 815 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 813 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 815 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 813 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 815 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 813 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
 	step_end
 
+# 816 "data/maps/Baldesia_MainHouse/scripts.pory"
+Baldesia_MainHouse_Movement_AsakLeave:
+# 817 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 817 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 817 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 817 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
 # 818 "data/maps/Baldesia_MainHouse/scripts.pory"
-Baldesia_MainHouse_Movement_LohanReturns:
-# 819 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
-# 820 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_right
-# 821 "data/maps/Baldesia_MainHouse/scripts.pory"
-	walk_up
+# 818 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 818 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 819 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 819 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 819 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+# 819 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_down
+	step_end
+
 # 822 "data/maps/Baldesia_MainHouse/scripts.pory"
+Baldesia_MainHouse_Movement_LohanReturns:
+# 823 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 824 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_right
+# 825 "data/maps/Baldesia_MainHouse/scripts.pory"
+	walk_up
+# 826 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 825 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 829 "data/maps/Baldesia_MainHouse/scripts.pory"
 Baldesia_MainHouse_Movement_BennisToPlayer:
-# 826 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 830 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 826 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 830 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 826 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 830 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 827 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 831 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
 	step_end
 
-# 830 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 834 "data/maps/Baldesia_MainHouse/scripts.pory"
 Baldesia_MainHouse_Movement_AriaLeaves:
-# 831 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 835 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 831 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 835 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 831 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 835 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 832 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 836 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 832 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 836 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 832 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 836 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 832 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 836 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 832 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 836 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_left
-# 833 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 837 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 833 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 837 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 833 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 837 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
-# 833 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 837 "data/maps/Baldesia_MainHouse/scripts.pory"
 	walk_down
 	step_end
 
@@ -1351,177 +1363,177 @@ Baldesia_MainHouse_EventScript_GoToAltar_Text_0:
 	.string "???: So you're {PLAYER}.\n MOMO told me you were coming.$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_1:
-# 243 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 240 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "ARIA: AAAARGGHH!$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_2:
-# 259 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 255 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "MOMO: … What are you doing here?$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_3:
-# 268 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 265 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "LOHAN: You know this fool? Very well.$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_4:
-# 272 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 269 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "I'll allow it.$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_5:
-# 292 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 289 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "ARIA: That scared me!\n MOMO!\p Why didn't you tell me where you\n were going?!$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_6:
-# 302 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 299 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "MOMO: … It's like… you didn't see the\n note I left you.$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_7:
-# 311 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 308 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "ARIA: All it said was “beefy ritual”!\n How am I supposed to know what that \l means?\p I'm lucky that you told BALDASARIO\n where you were actually going!$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_8:
-# 332 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 329 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "ARIA: I heard everything. I'm MOMO's\n KNIGHT. I swore to protect her.\l Please, let me go with!$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_9:
-# 350 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 347 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "MOMO: ……… Brother.$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_10:
-# 354 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 351 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "LOHAN: I won't discuss it any further.\n You're lucky I've even allowed this\l KNIGHT to show such disrespect.\p MOMO: ………$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_11:
-# 367 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 364 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "You should go on ahead, since you're\n able to get to the altar quickly.\p MOMO: ………………$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_12:
-# 378 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 375 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "LOHAN: Time is of the essence.\n Hurry to the altar, {PLAYER}.$"
 
 Baldesia_MainHouse_EventScript_LohanThanks_Text_0:
-# 415 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 419 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "MASTER BENNIS: {PLAYER}. I'll be heading\n back to my dojo.\p I want to battle you one more time.\n I'll wait for you there.$"
 
 Baldesia_MainHouse_EventScript_LohanThanks_Text_1:
-# 430 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 434 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "ARIA: I shouldn't make MOMO wait for me\n too long.\p I'm gonna head back to MOSSDEEP and\n get some more training in!$"
 
 Baldesia_MainHouse_EventScript_Guard_Text_0:
-# 455 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 459 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Don't get into any trouble.$"
 
 Baldesia_MainHouse_EventScript_Ninja_Text_0:
-# 471 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 475 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "How did you see me?!$"
 
 Baldesia_MainHouse_EventScript_NinjaBoy_Text_0:
-# 480 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 484 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Don't talk to me!\n I'm working!$"
 
 Baldesia_MainHouse_EventScript_Bennis_Text_0:
-# 486 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 490 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Hm…\n Something smells… beefy.$"
 
 Baldesia_MainHouse_EventScript_Asak_Text_0:
-# 494 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 498 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "……… I mean no disrespect, {PLAYER},\n but this really doesn't feel right.\p Still… I can't go against my Lord's will.\n Also… He's right.\p I'm ashamed of our failure…\p I think I'm going to go back home for\n a bit to retrain.$"
 
 Baldesia_MainHouse_EventScript_Panini_Text_0:
-# 525 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 529 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Panini… Panini ni.$"
 
 Baldesia_MainHouse_EventScript_Panini_Text_1:
-# 526 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 530 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "… You're right.$"
 
 Baldesia_MainHouse_EventScript_Panini_Text_2:
-# 526 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 530 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "I'll be careful.$"
 
 Baldesia_MainHouse_EventScript_Panini_Text_3:
-# 526 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 530 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "What are you even saying?$"
 
 Baldesia_MainHouse_EventScript_Panini_Text_4:
-# 527 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 531 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Panini.$"
 
 Baldesia_MainHouse_EventScript_Aria_Text_0:
-# 538 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 542 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "ARGH!\n Why can't I go with?!\p I guess all I can do right now is\n train more!$"
 
 Baldesia_MainHouse_EventScript_OldManDojo_Text_0:
-# 550 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 554 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "The former Head of the ASAKURA\n family and his wife spend a lot of\l time at the MAUVILLE GAME CORNER.$"
 
 Baldesia_MainHouse_EventScript_OldWoman_Text_0:
-# 558 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 562 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Lately the Village Chief has been\n much stricter.\p I wonder what changed.$"
 
 Baldesia_MainHouse_EventScript_OldWoman_Text_1:
-# 563 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 567 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "So PECHARUNT and the LOYAL THREE\n plotted to steal the wish…\p I wonder what it would've wished for.$"
 
 Baldesia_MainHouse_EventScript_OldMan_Text_0:
-# 571 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 575 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "While we say that JIRACHI is going\n to awaken, the truth is it's only coming\l out of a deeper state of sleep.\p During this time, the BALD MAIDEN needs\n to play the POKé FLUTE to wake it up.$"
 
 Baldesia_MainHouse_EventScript_Lohan_Text_0:
-# 581 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 585 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Move quickly, {PLAYER}.\n There's not much time left.$"
 
 Baldesia_MainHouse_EventScript_Lohan_Text_1:
-# 585 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 589 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "I can't thank you enough for what\n you've done, {PLAYER}.\p You are always welcome here.$"
 
 Baldesia_MainHouse_EventScript_Lindsay_Text_0:
-# 594 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 598 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "… We're counting on you.$"
 
 Baldesia_MainHouse_EventScript_Lindsay_Text_1:
-# 597 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 601 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "I'm so sorry for attacking you!\p And thank you so much for everything\n that you did.$"
 
 Baldesia_MainHouse_EventScript_KimonoGirl_Text_0:
-# 608 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 612 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Hello, and welcome.\p I can restore your tired POKéMON\n to full health.\p Would you like to rest your POKéMON?$"
 
 Baldesia_MainHouse_EventScript_KimonoGirl_Text_1:
-# 618 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 622 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "I hope to see you again.$"
 
 Baldesia_MainHouse_TextLohan::
-# 629 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 633 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "LOHAN: I'm LOHAN, the Village Chief of\n BALDESIA.\p I've heard that you've earned the\n respect of not only MASTER BENNIS, but\l my sister as well. Quite impressive.\p Anyways, as you may have heard, JIRACHI\n is going to awaken soon.\p During this time, the BALD MAIDEN of\n the ASAKURA family is required to\l travel to the altar to perform a\l sacred ritual.\p I want you to be her bodyguard while\n it's taking place.$"
 
 Baldesia_MainHouse_TextAsak::
-# 645 "data/maps/Baldesia_MainHouse/scripts.pory"
-	.string "ASAK: M-My Lord! With all due respect,\n tradition dictates that the Young Lady\l is escorted by her retainers!\p To delegate such a role to one person,\n an outsider as well, is unheard of!\p LOHAN: Enough!\n Her retainers?\p The ones that were unable to\n properly complete their mission?\l Have some shame and know your place.\p ASAK: ……… Yes, sir.\n My deepest apologies.$"
+# 649 "data/maps/Baldesia_MainHouse/scripts.pory"
+	.string "ASAK: M-My Lord! With all due respect,\n tradition dictates that the BALD\l MAIDEN is escorted by her retainers!\p To delegate such a role to one person,\n an outsider as well, is unheard of!\p LOHAN: Enough!\n Her retainers?\p The ones that were unable to\n properly complete their mission?\l Have some shame and know your place.\p ASAK: ……… Yes, sir.\n My deepest apologies.$"
 
 Baldesia_MainHouse_TextAsak2::
-# 660 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 664 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string " LOHAN: MOMO and HOENN's CHAMPION\n should be more than enough to deter\l anybody with ill intentions.\p Since MOMO procrastinated, there's not\n much time left before JIRACHI falls\l back into a deep slumber.\p You must leave immed-\p ???: Wait! You can't just barge in here!$"
 
 Baldesia_MainHouse_TextLohan2::
-# 670 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 674 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "MOMO: … … … …\p LOHAN: Enough!\n Why have you barged in here?$"
 
 Baldesia_MainHouse_TextLohan3::
-# 676 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 680 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "LOHAN: ………\n I see.\p You rush in here uninvited and demand\n to take place in the ritual because\l you're her… “KNIGHT”?\p There's no way I'll permit you to\n accompany her and {PLAYER}.\p Such disrespect won't be tolerated\n any longer. You will wait here.\p ARIA: But-$"
 
 Baldesia_MainHouse_TextLohan4::
-# 689 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 693 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Now, that's enough talk.\p MOMO has already waited until the last\n minute for the ritual. We need to hurry.\p {PLAYER}, make preparations quickly and\n then head out.$"
 
 Baldesia_MainHouse_Text_LohanThankYou::
-# 697 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 701 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "LOHAN: You've returned.\n I… don't know what to say…\l But, I'm sorry. And thank you.\p The mythical POKéMON, PECHARUNT…\p There are stories of it passed down,\n but I didn't believe it to be real.\p Apparently, it uses PECHA BERRIES and\n it's poison to create brainwashing\l mochi. It sounds ridiculous.\p Either way, I won't just thank you.\n I'd like to give you both rewards.$"
 
 Baldesia_MainHouse_Text_AriaRecievesArmor::
-# 711 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 715 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "ARIA: N-New armor…!\n This will increase my power…\p LOHAN: That armor is only given to the\n most trusted allies of the ASAKURA\l family.\p Where's MOMO? I want to apologize to\n her too. My memory is hazy, but I\l remember she was mad before she left.\p ARIA: … I think she went back home.\n I'll let her know.\p LOHAN: … Back home… I see.\n So she's found somewhere she belongs.\p BENNIS, can you head back to HOENN's\n mainland? To make sure she's safe?\p MASTER BENNIS: Yes, sir.\p LOHAN: Well, I won't keep you all\n any longer.\p You're welcome in BALDESIA any time.$"
 
 Baldesia_MainHouse_Text_ThankYouForWaiting::
-# 731 "data/maps/Baldesia_MainHouse/scripts.pory"
+# 735 "data/maps/Baldesia_MainHouse/scripts.pory"
 	.string "Thank you for waiting.\p I've restored your POKéMON\n to full health.\p I hope to see you again.$"

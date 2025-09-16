@@ -78,23 +78,23 @@ NewMoonIsland_EventScript_GhostBattle::
 # 63 "data/maps/NewMoonIsland/scripts.pory"
 	clearflag FLAG_SYS_BOSS_BATTLE
 # 64 "data/maps/NewMoonIsland/scripts.pory"
-	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND
 # 65 "data/maps/NewMoonIsland/scripts.pory"
 	delay 8
 # 66 "data/maps/NewMoonIsland/scripts.pory"
-	hideobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+	hideobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND
 # 67 "data/maps/NewMoonIsland/scripts.pory"
 	delay 16
 # 68 "data/maps/NewMoonIsland/scripts.pory"
-	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND
 # 69 "data/maps/NewMoonIsland/scripts.pory"
 	delay 24
 # 70 "data/maps/NewMoonIsland/scripts.pory"
-	hideobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+	hideobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND
 # 71 "data/maps/NewMoonIsland/scripts.pory"
 	delay 30
 # 72 "data/maps/NewMoonIsland/scripts.pory"
-	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND
 # 73 "data/maps/NewMoonIsland/scripts.pory"
 	delay 24
 # 74 "data/maps/NewMoonIsland/scripts.pory"

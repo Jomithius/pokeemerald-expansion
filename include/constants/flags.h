@@ -74,7 +74,7 @@
 #define FLAG_RECEIVED_PEAT_BLOCK               0x3C // Wachunpelon PokeCenter
 #define FLAG_DEFEATED_URSALUNA_BLOODMOON       0x3D // Petalburg Woods
 #define FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN   0x3E // For gym rematches
-#define FLAG_RECEIVED_CASTELIACONE             0x3F // Route 137
+#define FLAG_HIDE_LAROLDINA_BATTLER            0x3F // Bruno's Dojo
 #define FLAG_ENABLED_JOMITHIUS_MATCH_CALL      0x40 // Jomithius
 #define FLAG_ENABLED_JAMES_MATCH_CALL          0x41 // James
 #define FLAG_HIDE_TERA_SHARD_MERCHANTS         0x42 // After reaching The Under
@@ -1558,7 +1558,7 @@
 #define FLAG_SYS_BOSS_BATTLE                        (SYSTEM_FLAGS + 0xB6) // for post game boss battles, used to stop variance of levels
 #define FLAG_COMPLETED_BALDESIA                     (SYSTEM_FLAGS + 0xB7) // for last level cap
 #define FLAG_SYS_DECLINED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB8) // 
-#define FLAG_UNUSED_0x919                           (SYSTEM_FLAGS + 0xB9) // Unused Flag
+#define FLAG_RECEIVED_CASTELIACONE                  (SYSTEM_FLAGS + 0xB9) // From Misa Castelia Queen Route 137
 #define FLAG_UNUSED_0x91A                           (SYSTEM_FLAGS + 0xBA) // Unused Flag
 #define FLAG_UNUSED_0x91B                           (SYSTEM_FLAGS + 0xBB) // Unused Flag
 #define FLAG_UNUSED_0x91C                           (SYSTEM_FLAGS + 0xBC) // Unused Flag

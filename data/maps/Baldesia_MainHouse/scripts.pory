@@ -209,15 +209,14 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_ARIA, Common_Movement_ExclamationMark)
     waitmovement(0)
     waitse
-    //playse(SE_M_YAWN)
     playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_WalkBackDown)
     waitmovement(0)
-    //waitse
-    waitmoncry
+    // waitmoncry
+    delay(16)
     playse(SE_M_DOUBLE_TEAM)
     addobject(9)
-    delay(30)
+    delay(24)
     waitse
     applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceFasterDown)
     waitmovement(LOCALID_ARIA)
@@ -226,7 +225,6 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_ARIA, Common_Movement_ExclamationMark)
     waitmovement(0)
     waitse
-    //playse(SE_M_YAWN)
     playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_WalkBackUp)
     delay(8)
@@ -236,8 +234,7 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(16,  Baldesia_MainHouse_Movement_RightGuard)
     waitmovement(16)
     delay(30)
-    //waitse
-    waitmoncry
+    //waitmoncry
     applymovement(LOCALID_ARIA, Common_Movement_LookAround)
     waitmovement(LOCALID_ARIA)
     msgbox("ARIA: AAAARGGHH!", MSGBOX_AUTOCLOSE)
@@ -253,7 +250,6 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceLeft)
     delay(6)
     applymovement(LOCALID_PANINI, Common_Movement_WalkInPlaceRight)
-    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
     waitse
     msgbox("MOMO: … What are you doing here?", MSGBOX_AUTOCLOSE)
@@ -261,6 +257,7 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     applymovement(LOCALID_BRO, Common_Movement_WalkInPlaceRight)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceLeft)
     delay(8)
     applymovement(LOCALID_ASAK, Common_Movement_WalkInPlaceUp)
     delay(6)
@@ -383,6 +380,13 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     setvar(VAR_MOMO_ARIA_STATE, 5)
     setflag(FLAG_LANDMARK_BALDESIA) // set here so fly only unlocks along w main house. prevents sequence breaking.
     fadescreenswapbuffers(FADE_TO_BLACK)
+    applymovement(LOCALID_ARIA, Common_Movement_FaceDown)
+    waitmovement(0)
+    setobjectxy(LOCALID_ARIA, 16, 10)
+    setobjectnewmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
+    setobjectxy(LOCALID_PANINI, 11, 11)
+    setobjectnewmovementtype(LOCALID_PANINI, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
+    setobjectnewmovementtype(LOCALID_BENNIS, MOVEMENT_TYPE_LOOK_AROUND)
     call(Baldesia_MainHouse_UpdateNPCPos)
     special(DrawWholeMapView)
     fadescreenswapbuffers(FADE_FROM_BLACK)
@@ -644,8 +648,8 @@ text Baldesia_MainHouse_TextLohan{
 
 text Baldesia_MainHouse_TextAsak{
     "ASAK: M-My Lord! With all due respect,\n
-    tradition dictates that the Young Lady\l
-    is escorted by her retainers!\p
+    tradition dictates that the BALD\l
+    MAIDEN is escorted by her retainers!\p
     To delegate such a role to one person,\n
     an outsider as well, is unheard of!\p
     LOHAN: Enough!\n

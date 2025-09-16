@@ -140,6 +140,7 @@ script BaldesianForest_EventScript_Celebi{
     callnative(RemoveFollowingPokemon)
     delay(20)
     fadenewbgm(MUS_NONE)
+    delay(16)
     msgbox("{PLAYER} begins playing the POKé FLUTE…", MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_RG_JIGGLYPUFF, FALSE)
@@ -185,9 +186,10 @@ script BaldesianForest_EventScript_Celebi{
     else{
        applymovement(13, BaldesianForest_Movement_JirachiApproachesPlayer) 
     }
+    waitmovement(0)
     playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
     waitmoncry
-    givemon(SPECIES_CELEBI, 75)
+    givemon(SPECIES_CELEBI, 90)
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CELEBI)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         fadescreenswapbuffers(FADE_TO_BLACK)
@@ -195,9 +197,8 @@ script BaldesianForest_EventScript_Celebi{
         removeobject(17)
         fadescreenswapbuffers(FADE_FROM_BLACK)
         playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("CELEBI joined the party!", MSGBOX_DEFAULT)
         waitfanfare
-        msgbox("CELEBI joined the party!", MSGBOX_AUTOCLOSE)
-        waitmessage
         setflag(FLAG_RECEIVED_CELEBI)
         setvar(VAR_BALDESIA_FOREST_STATE, 2)
     }
@@ -207,9 +208,8 @@ script BaldesianForest_EventScript_Celebi{
         removeobject(17)
         fadescreenswapbuffers(FADE_FROM_BLACK)
         playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("CELEBI was sent to the PC!", MSGBOX_DEFAULT)
         waitfanfare
-        msgbox("CELEBI was sent to the PC!", MSGBOX_AUTOCLOSE)
-        waitmessage
         setflag(FLAG_RECEIVED_CELEBI)
         setvar(VAR_BALDESIA_FOREST_STATE, 2)
     }
@@ -222,7 +222,6 @@ script BaldesianForest_EventScript_Celebi{
 }
 
 script BaldesianForest_EventScript_NoCelebiSummon{
-    lockall
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
     waitmovement(0)

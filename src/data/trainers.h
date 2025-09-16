@@ -32002,7 +32002,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12165
-            .species = SPECIES_LILLIGANT_HISUI,
+            .species = SPECIES_PAWMO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12166
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -32013,7 +32013,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12167
-            .species = SPECIES_PAWMO,
+            .species = SPECIES_LILLIGANT_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12168
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -32089,7 +32089,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12186
-            .species = SPECIES_GALLADE,
+            .species = SPECIES_HAWLUCHA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12187
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -83389,7 +83389,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 32015
-            .species = SPECIES_LILLIGANT_HISUI,
+            .species = SPECIES_PAWMO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 32016
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -83400,7 +83400,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 32017
-            .species = SPECIES_PAWMO,
+            .species = SPECIES_LILLIGANT_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 32018
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -83477,7 +83477,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 32037
-            .species = SPECIES_GALLADE,
+            .species = SPECIES_HAWLUCHA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 32038
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

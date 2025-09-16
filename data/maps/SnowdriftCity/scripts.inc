@@ -128,15 +128,15 @@ SnowdriftCity_EventScript_ReceiveCalyrex::
 # 106 "data/maps/SnowdriftCity/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq SnowdriftCity_EventScript_ReceiveCalyrex_2
-# 116 "data/maps/SnowdriftCity/scripts.pory"
+# 115 "data/maps/SnowdriftCity/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq SnowdriftCity_EventScript_ReceiveCalyrex_3
-# 127 "data/maps/SnowdriftCity/scripts.pory"
+# 125 "data/maps/SnowdriftCity/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 SnowdriftCity_EventScript_ReceiveCalyrex_1:
-# 129 "data/maps/SnowdriftCity/scripts.pory"
+# 127 "data/maps/SnowdriftCity/scripts.pory"
 	fadedefaultbgm
-# 130 "data/maps/SnowdriftCity/scripts.pory"
+# 128 "data/maps/SnowdriftCity/scripts.pory"
 	release
 	end
 
@@ -150,31 +150,27 @@ SnowdriftCity_EventScript_ReceiveCalyrex_2:
 # 110 "data/maps/SnowdriftCity/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 111 "data/maps/SnowdriftCity/scripts.pory"
-	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_2, MSGBOX_AUTOCLOSE
+	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_2, MSGBOX_DEFAULT
 # 112 "data/maps/SnowdriftCity/scripts.pory"
 	waitfanfare
 # 113 "data/maps/SnowdriftCity/scripts.pory"
-	waitmessage
-# 114 "data/maps/SnowdriftCity/scripts.pory"
 	setflag FLAG_DEFEATED_CALYREX
 	goto SnowdriftCity_EventScript_ReceiveCalyrex_1
 
 SnowdriftCity_EventScript_ReceiveCalyrex_3:
-# 117 "data/maps/SnowdriftCity/scripts.pory"
+# 116 "data/maps/SnowdriftCity/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 118 "data/maps/SnowdriftCity/scripts.pory"
+# 117 "data/maps/SnowdriftCity/scripts.pory"
 	removeobject 9
-# 119 "data/maps/SnowdriftCity/scripts.pory"
+# 118 "data/maps/SnowdriftCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 120 "data/maps/SnowdriftCity/scripts.pory"
+# 119 "data/maps/SnowdriftCity/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
+# 120 "data/maps/SnowdriftCity/scripts.pory"
+	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_3, MSGBOX_DEFAULT
 # 121 "data/maps/SnowdriftCity/scripts.pory"
-	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_3, MSGBOX_AUTOCLOSE
-# 122 "data/maps/SnowdriftCity/scripts.pory"
 	waitfanfare
-# 123 "data/maps/SnowdriftCity/scripts.pory"
-	waitmessage
-# 124 "data/maps/SnowdriftCity/scripts.pory"
+# 122 "data/maps/SnowdriftCity/scripts.pory"
 	setflag FLAG_DEFEATED_CALYREX
 	goto SnowdriftCity_EventScript_ReceiveCalyrex_1
 
@@ -232,5 +228,5 @@ SnowdriftCity_EventScript_ReceiveCalyrex_Text_2:
 	.string "CALYREX joined the party!$"
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_3:
-# 121 "data/maps/SnowdriftCity/scripts.pory"
+# 120 "data/maps/SnowdriftCity/scripts.pory"
 	.string "CALYREX was sent to the PC!$"

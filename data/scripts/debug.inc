@@ -174,7 +174,7 @@ Debug_EventScript_Script_4::
 
 Debug_EventScript_Script_5::
 	setvar VAR_MOMO_ARIA_STATE, 6
-	warp MAP_ALTAR_OF_BALDESIA, 16, 28
+	warp MAP_EASTERN_RUINS, 16, 4
 	waitstate
 	release
 	end
@@ -195,7 +195,8 @@ Debug_EventScript_Script_7::
 
 Debug_EventScript_Script_8::
 	giveitem ITEM_POKE_FLUTE
-	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 0
+	setvar VAR_BALDESIA_FOREST_STATE, 1
+	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 3
 	warp MAP_BALDESIAN_FOREST_DOJO, 8, 19
 	waitstate
 	release
