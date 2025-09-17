@@ -46,7 +46,7 @@ RustboroCity_Misa_House3F_Emo_2:
 
 RustboroCity_Misa_House3F_Togepi::
 # 36 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	lockall
+	lock
 # 37 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	showmonpic SPECIES_TOGEPI, 10, 4
 # 38 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
@@ -62,7 +62,7 @@ RustboroCity_Misa_House3F_Togepi_1:
 # 68 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	waitmessage
 # 69 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	releaseall
+	release
 	end
 
 RustboroCity_Misa_House3F_Togepi_2:
@@ -119,7 +119,7 @@ NicknamePartyTogepi::
 	goto_if_eq NicknamePartyTogepi_2
 NicknamePartyTogepi_1:
 # 81 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	releaseall
+	release
 	end
 
 NicknamePartyTogepi_2:
@@ -142,7 +142,7 @@ NicknameBoxTogepi_1:
 # 91 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	call Common_EventScript_TransferredToPC
 # 92 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	releaseall
+	release
 	end
 
 NicknameBoxTogepi_2:
