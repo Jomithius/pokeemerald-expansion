@@ -240,6 +240,166 @@ SnowdriftCity_House3_Movement_CynthiaApproachesPlayer:
 	walk_down
 	step_end
 
+SnowdriftCity_House3_EventScript_JimmyStatReport::
+# 176 "data/maps/SnowdriftCity_House3/scripts.pory"
+	lock
+# 177 "data/maps/SnowdriftCity_House3/scripts.pory"
+	faceplayer
+# 178 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_0, MSGBOX_DEFAULT
+# 189 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 190 "data/maps/SnowdriftCity_House3/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_WIPE_COUNTER
+# 191 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_WIPE_COUNTER, 10
+	goto_if_gt SnowdriftCity_House3_EventScript_JimmyStatReport_6
+SnowdriftCity_House3_EventScript_JimmyStatReport_5:
+# 195 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_WIPE_COUNTER, 0
+	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_3
+# 201 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_3, MSGBOX_DEFAULT
+SnowdriftCity_House3_EventScript_JimmyStatReport_1:
+# 204 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 205 "data/maps/SnowdriftCity_House3/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_DIFFICULTY_SWITCH_COUNTER
+# 206 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_DIFFICULTY_SWITCH_COUNTER, 5
+	goto_if_gt SnowdriftCity_House3_EventScript_JimmyStatReport_10
+# 210 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_WIPE_COUNTER, 0
+	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_11
+# 215 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_6, MSGBOX_DEFAULT
+SnowdriftCity_House3_EventScript_JimmyStatReport_9:
+# 218 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 219 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_RAT_CAVE_STATE, 12
+	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_16
+# 225 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_8, MSGBOX_DEFAULT
+SnowdriftCity_House3_EventScript_JimmyStatReport_15:
+# 229 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 230 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_unset FLAG_SYS_DEFEATED_BRUNO, SnowdriftCity_House3_EventScript_JimmyStatReport_20
+# 236 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_10, MSGBOX_AUTOCLOSE
+SnowdriftCity_House3_EventScript_JimmyStatReport_19:
+# 239 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 240 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_unset FLAG_SYS_DEFEATED_RED, SnowdriftCity_House3_EventScript_JimmyStatReport_24
+# 249 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_12, MSGBOX_DEFAULT
+SnowdriftCity_House3_EventScript_JimmyStatReport_23:
+# 252 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 253 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_unset FLAG_SYS_DEFEATED_JAMES, SnowdriftCity_House3_EventScript_JimmyStatReport_28
+# 260 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_14, MSGBOX_DEFAULT
+SnowdriftCity_House3_EventScript_JimmyStatReport_27:
+# 264 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 265 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_unset FLAG_DEFEATED_EUGENIA, SnowdriftCity_House3_EventScript_JimmyStatReport_33
+SnowdriftCity_House3_EventScript_JimmyStatReport_31:
+# 274 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_LINA_TALKED_TO, 3
+	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_37
+SnowdriftCity_House3_EventScript_JimmyStatReport_36:
+# 283 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TOTODILE_PARTNER, SnowdriftCity_House3_EventScript_JimmyStatReport_40
+SnowdriftCity_House3_EventScript_JimmyStatReport_39:
+# 294 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_18, MSGBOX_AUTOCLOSE
+# 301 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 302 "data/maps/SnowdriftCity_House3/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 303 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmovement 0
+# 304 "data/maps/SnowdriftCity_House3/scripts.pory"
+	release
+	end
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_2:
+# 192 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_1, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_1
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_3:
+# 196 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_2, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_1
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_6:
+# 191 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_set FLAG_SYS_HARD_MODE, SnowdriftCity_House3_EventScript_JimmyStatReport_2
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_5
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_10:
+# 207 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_4, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_9
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_11:
+# 211 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_5, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_9
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_16:
+# 220 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_7, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_15
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_20:
+# 231 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_9, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_19
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_24:
+# 241 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_11, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_23
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_28:
+# 254 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_13, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_27
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_32:
+# 266 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_15, MSGBOX_DEFAULT
+# 272 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_31
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_33:
+# 265 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_LINA_TALKED_TO, 1
+	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_32
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_31
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_37:
+# 275 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_16, MSGBOX_DEFAULT
+# 281 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_36
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_40:
+# 284 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_17, MSGBOX_DEFAULT
+# 292 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_39
+
+
 SnowdriftCity_House3_EventScript_CynthiaEncounter_Text_0:
 # 28 "data/maps/SnowdriftCity_House3/scripts.pory"
 	.string "???: What's this?$"
@@ -291,6 +451,82 @@ SnowdriftCity_House3_EventScript_CynthiaBattle_Text_1:
 SnowdriftCity_House3_EventScript_Cynthia_Text_0:
 # 142 "data/maps/SnowdriftCity_House3/scripts.pory"
 	.string "You certainly bear a resemblance\n to that TRAINER who faced GIRATINA…\p Oh, pardon me.\n I was just thinking out loud.\p I love visiting HOENN.\p I can't stay all year, because there's so\n much to investigate in SINNOH, as well.\p Though I've heard in HOENN there's six\n legendary golems, compared to the four\l in SINNOH.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_0:
+# 178 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "{PLAYER}!\n I'm surprised you found me here.\p You probably didn't expect me to\n know CYNTHIA, huh!\p Were you jump scared the first time\n you walked into this house?\p Haha!\p Well, there shouldn't be anything left\n for you to do, but I can give you some\l stats about your playthrough.\p Let's see…$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_1:
+# 192 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You wiped {STR_VAR_1} times.\n Was it really that difficult?$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_2:
+# 196 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You didn't wipe at all?!\p Are you a POKéMON MASTER?\n Or were you save scumming?$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_3:
+# 201 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You wiped {STR_VAR_1} time(s).\n That's not bad!$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_4:
+# 207 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You changed difficulties {STR_VAR_1} times.\n You couldn't make up your mind or what?$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_5:
+# 211 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You stayed on the same difficulty\n your whole playthrough.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_6:
+# 215 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You changed difficulty\n {STR_VAR_1} time(s).$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_7:
+# 220 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "Oh… poor RATDUARDO.\p He'll never be free from\n DARKRAI's curse.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_8:
+# 225 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "Oh!\p You freed RATDUARDO from\n DARKRAI's curse.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_9:
+# 231 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "Wow, you didn't beat BRUNO?\p Well, I guess everybody does\n talk about how strong he is.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_10:
+# 236 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You beat BRUNO.\n Nice!$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_11:
+# 241 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You missed a familiar TRAINER.\p {PLAYER}… How did you miss that?\n Or did you see him and forget?\p Either way, go back to the fork\n at AZURE MOUNTAIN and take the\l ladder up to the peak.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_12:
+# 249 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You beat RED.\n Good job!$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_13:
+# 254 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "Oh!\n Here's something you missed.\p Go back to the lab in LUSH ACREAGE\n and talk to JAMES.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_14:
+# 260 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "Wow you even went back and\n fought JAMES again?\p I'm impressed.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_15:
+# 266 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "Damn!\n You didn't get to see the superboss!\p But you still have a chance, if you're\n interested.\p Make sure you took her EEVEE, then go\n talk to JAMES.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_16:
+# 275 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You beat EUGENIA too?\n How was that fight for you?\p I had a lot of fun when I battled\n her.\p She's still mad about you stealing\n her EEVEE!$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_17:
+# 284 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "ARIA would be disappointed.\n You never found the SACRED BLADE.\p I guess bro really was protecting\n it…\p Well, go back to JIRACHI's ALTAR\n and you'll find it.\p If you go talk to ARIA after that\n they'll have a gift for you.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_18:
+# 294 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "Well, that's it, {PLAYER}!\p There's other things you could've\p missed.\p “PuzzlesImportantItemsSecrets” in\n the SPOILERS folder has everything.\p Thanks again for playing.\n I hope you enjoyed it!$"
 
 SnowdriftCity_House3_Text_CynthiaLoss::
 # 159 "data/maps/SnowdriftCity_House3/scripts.pory"

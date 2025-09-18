@@ -139,7 +139,7 @@
 #define VAR_ROUTE124_STATE                               0x4077 // Unused Var
 #define VAR_ROUTE125_STATE                               0x4078 // Unused Var
 #define VAR_ROUTE126_STATE                               0x4079 // Unused Var
-#define VAR_ROUTE127_STATE                               0x407A // Unused Var
+#define VAR_WIPE_COUNTER                                 0x407A // Counts how many wipes the player has
 #define VAR_ROUTE128_STATE                               0x407B
 #define VAR_DIFFICULTY_SWITCH_COUNTER                    0x407C // Used to check if player switch difficulty during playthru
 #define VAR_DIFFICULTY                                   0x407D // For difficulty state, easy or normal (but listed as normal or hard for player)

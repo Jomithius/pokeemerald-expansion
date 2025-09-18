@@ -588,6 +588,7 @@ gStdScripts_End::
 
 EventScript_WhiteOut::
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
+	addvar VAR_WIPE_COUNTER, 1
 	goto EventScript_ResetMrBriney
 	end
 
@@ -600,6 +601,7 @@ EventScript_AfterWhiteOutHeal::
 	applymovement VAR_LAST_TALKED, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
 	fadedefaultbgm
+	addvar VAR_WIPE_COUNTER, 1
 	releaseall
 	end
 
@@ -619,6 +621,7 @@ EventScript_AfterWhiteOutMomHeal::
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox gText_MomExplainHPGetPotions
 	fadedefaultbgm
+	addvar VAR_WIPE_COUNTER, 1
 	releaseall
 	end
 

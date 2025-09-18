@@ -203,117 +203,119 @@ Void_EventScript_GameEnd::
 # 149 "data/maps/Void/scripts.pory"
 	waitmessage
 # 150 "data/maps/Void/scripts.pory"
-	call EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags
+	clearflag FLAG_HIDE_JIMMY_SNOWDRIFT_CITY
 # 151 "data/maps/Void/scripts.pory"
-	goto_if_set FLAG_SYS_STARTED_AS_MALE, EverGrandeCity_HallOfFame_EventScript_GameClearMale
+	call EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags
 # 152 "data/maps/Void/scripts.pory"
-	goto_if_set FLAG_SYS_STARTED_AS_FEMALE, EverGrandeCity_HallOfFame_EventScript_GameClearFemale
+	goto_if_set FLAG_SYS_STARTED_AS_MALE, EverGrandeCity_HallOfFame_EventScript_GameClearMale
 # 153 "data/maps/Void/scripts.pory"
+	goto_if_set FLAG_SYS_STARTED_AS_FEMALE, EverGrandeCity_HallOfFame_EventScript_GameClearFemale
+# 154 "data/maps/Void/scripts.pory"
 	releaseall
 	end
 
 
 Void_EventScript_PlayerGetsInPosition::
-# 158 "data/maps/Void/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth
 # 159 "data/maps/Void/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth
 # 160 "data/maps/Void/scripts.pory"
-	clearflag FLAG_TEMP_E
+	waitmovement 0
 # 161 "data/maps/Void/scripts.pory"
-	callnative UpdateFollowingPokemon
+	clearflag FLAG_TEMP_E
 # 162 "data/maps/Void/scripts.pory"
-	playse SE_BALL_OPEN
+	callnative UpdateFollowingPokemon
 # 163 "data/maps/Void/scripts.pory"
-	fadescreen FADE_TO_WHITE
+	playse SE_BALL_OPEN
 # 164 "data/maps/Void/scripts.pory"
-	addobject 3
+	fadescreen FADE_TO_WHITE
 # 165 "data/maps/Void/scripts.pory"
-	clearflag FLAG_TEMP_8
+	addobject 3
 # 166 "data/maps/Void/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball
+	clearflag FLAG_TEMP_8
 # 167 "data/maps/Void/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball
 # 168 "data/maps/Void/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer
+	waitmovement 0
 # 169 "data/maps/Void/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer
 # 170 "data/maps/Void/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 171 "data/maps/Void/scripts.pory"
-	delay 30
-# 172 "data/maps/Void/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_Movement_PlayerPokemonGetsInPosition
-# 173 "data/maps/Void/scripts.pory"
 	waitmovement 0
+# 171 "data/maps/Void/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 172 "data/maps/Void/scripts.pory"
+	delay 30
+# 173 "data/maps/Void/scripts.pory"
+	applymovement OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_Movement_PlayerPokemonGetsInPosition
 # 174 "data/maps/Void/scripts.pory"
+	waitmovement 0
+# 175 "data/maps/Void/scripts.pory"
 	delay 30
 	return
 
 
 EventScript_FinalRematchesUnlocked::
-# 179 "data/maps/Void/scripts.pory"
-	lockall
 # 180 "data/maps/Void/scripts.pory"
-	pokenavcall PokenavText_FinalMatches
+	lockall
 # 181 "data/maps/Void/scripts.pory"
-	waitmessage
+	pokenavcall PokenavText_FinalMatches
 # 182 "data/maps/Void/scripts.pory"
-	delay 30
-# 183 "data/maps/Void/scripts.pory"
-	playfanfare MUS_OBTAIN_SYMBOL
-# 184 "data/maps/Void/scripts.pory"
-	waitfanfare
-# 185 "data/maps/Void/scripts.pory"
-	msgbox EventScript_FinalRematchesUnlocked_Text_0, MSGBOX_AUTOCLOSE
-# 191 "data/maps/Void/scripts.pory"
 	waitmessage
+# 183 "data/maps/Void/scripts.pory"
+	delay 30
+# 184 "data/maps/Void/scripts.pory"
+	playfanfare MUS_OBTAIN_SYMBOL
+# 185 "data/maps/Void/scripts.pory"
+	waitfanfare
+# 186 "data/maps/Void/scripts.pory"
+	msgbox EventScript_FinalRematchesUnlocked_Text_0, MSGBOX_AUTOCLOSE
 # 192 "data/maps/Void/scripts.pory"
-	setvar VAR_FINAL_REMATCH_STATE, 6
+	waitmessage
 # 193 "data/maps/Void/scripts.pory"
-	setvar VAR_GYM_LEADER_COUNT, 0
+	setvar VAR_FINAL_REMATCH_STATE, 6
 # 194 "data/maps/Void/scripts.pory"
-	setflag FLAG_SYS_FINAL_REMATCH
+	setvar VAR_GYM_LEADER_COUNT, 0
 # 195 "data/maps/Void/scripts.pory"
-	setflag FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN
+	setflag FLAG_SYS_FINAL_REMATCH
 # 196 "data/maps/Void/scripts.pory"
-	clearflag FLAG_HIDE_GYM_LEADERS
+	setflag FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN
 # 197 "data/maps/Void/scripts.pory"
-	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	clearflag FLAG_HIDE_GYM_LEADERS
 # 198 "data/maps/Void/scripts.pory"
-	clearflag FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY
+	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
 # 199 "data/maps/Void/scripts.pory"
-	clearflag FLAG_HIDE_STAFF_EMPLOYEE_MERCHANTS
+	clearflag FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY
 # 200 "data/maps/Void/scripts.pory"
-	setflag FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST
+	clearflag FLAG_HIDE_STAFF_EMPLOYEE_MERCHANTS
 # 201 "data/maps/Void/scripts.pory"
-	setvar VAR_MOMO_ARIA_STATE, 10
+	setflag FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST
 # 202 "data/maps/Void/scripts.pory"
+	setvar VAR_MOMO_ARIA_STATE, 10
+# 203 "data/maps/Void/scripts.pory"
 	releaseall
 	end
 
 
-# 227 "data/maps/Void/scripts.pory"
+# 228 "data/maps/Void/scripts.pory"
 Void_Movement_WalkToEdge:
-# 228 "data/maps/Void/scripts.pory"
-	walk_right
-# 228 "data/maps/Void/scripts.pory"
+# 229 "data/maps/Void/scripts.pory"
 	walk_right
 # 229 "data/maps/Void/scripts.pory"
-	walk_down
+	walk_right
 # 230 "data/maps/Void/scripts.pory"
+	walk_down
+# 231 "data/maps/Void/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 233 "data/maps/Void/scripts.pory"
-Void_Movement_WalkToPlayer:
 # 234 "data/maps/Void/scripts.pory"
+Void_Movement_WalkToPlayer:
+# 235 "data/maps/Void/scripts.pory"
 	walk_up
-# 235 "data/maps/Void/scripts.pory"
-	walk_left
-# 235 "data/maps/Void/scripts.pory"
+# 236 "data/maps/Void/scripts.pory"
 	walk_left
 # 236 "data/maps/Void/scripts.pory"
+	walk_left
+# 237 "data/maps/Void/scripts.pory"
 	walk_in_place_down
 	step_end
 
@@ -366,9 +368,9 @@ Void_EventScript_GameEnd_Text_3:
 	.string "One more thing…\p Thank you, {PLAYER}.\n I really mean it.\l I appreciate you making it this far.\p And I hope it was as fun for you as\n it was for me.\p …\p I hope to see you again one day.$"
 
 EventScript_FinalRematchesUnlocked_Text_0:
-# 185 "data/maps/Void/scripts.pory"
+# 186 "data/maps/Void/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS and ELITE FOUR are now\n ready for their final rematches.\p The GYM LEADERS can be battled in any\n order.\p The ELITE FOUR can't be challenged until\n all GYM LEADERS are defeated.$"
 
 PokenavText_FinalMatches::
-# 206 "data/maps/Void/scripts.pory"
+# 207 "data/maps/Void/scripts.pory"
 	.string "… … … … … …\n … … … … … Beep!\p {PLAYER}!\n It's JIMMY.\p My staff has been giving me\n updates about you!\p Sounds like you've gotten a\n lot done out there, so…\p It's time! I'll tell all the\n LEADERS to get ready!\p And, as an extra bonus, I sent\n some of my staff members out to\l POKéMON CENTERS to help you\l prepare for the battles.\p I'm looking forward to\n seeing how strong you are now!\p … … … … … …\n … … … … … Click!$"

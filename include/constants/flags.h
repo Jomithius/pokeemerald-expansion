@@ -63,7 +63,7 @@
 #define FLAG_HIDE_GAUNTLET_TRAINERS            0x31 // Dojo Challenge
 #define FLAG_HIDE_DOJO_DISCIPLES               0x32 // Dojo Challenge
 #define FLAG_HIDE_LAROLDINA_SPECTATOR          0x33 // Dojo Challenge
-#define FLAG_RECEIVED_PROTECTIVE_PADS          0x34 // Dojo Challenge
+#define FLAG_HIDE_JIMMY_SNOWDRIFT_CITY         0x34 // For stats report
 #define FLAG_HIDE_ASAK_BALDESIAN_FOREST_DOJO   0x35 // Set if player does dojo event before battling bennis for the last time
 #define FLAG_HIDE_LOHAN_JIRACHIS_ALTAR         0x36 // Jirachis Altar CS
 #define FLAG_HIDE_BENNIS_JIRACHIS_ALTAR        0x37 // Jirachis Altar CS
@@ -1559,7 +1559,7 @@
 #define FLAG_COMPLETED_BALDESIA                     (SYSTEM_FLAGS + 0xB7) // for last level cap
 #define FLAG_SYS_DECLINED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB8) // 
 #define FLAG_RECEIVED_CASTELIACONE                  (SYSTEM_FLAGS + 0xB9) // From Misa Castelia Queen Route 137
-#define FLAG_UNUSED_0x91A                           (SYSTEM_FLAGS + 0xBA) // Unused Flag
+#define FLAG_RECEIVED_PROTECTIVE_PADS               (SYSTEM_FLAGS + 0xBA) // Dojo Challenge
 #define FLAG_UNUSED_0x91B                           (SYSTEM_FLAGS + 0xBB) // Unused Flag
 #define FLAG_UNUSED_0x91C                           (SYSTEM_FLAGS + 0xBC) // Unused Flag
 #define FLAG_UNUSED_0x91D                           (SYSTEM_FLAGS + 0xBD) // Unused Flag

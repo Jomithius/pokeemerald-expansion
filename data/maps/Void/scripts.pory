@@ -147,6 +147,7 @@ script Void_EventScript_GameEnd{
         …\p
         I hope to see you again one day.", MSGBOX_AUTOCLOSE)
     waitmessage
+    clearflag(FLAG_HIDE_JIMMY_SNOWDRIFT_CITY)
     call(EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags)
 	goto_if_set(FLAG_SYS_STARTED_AS_MALE, EverGrandeCity_HallOfFame_EventScript_GameClearMale)
 	goto_if_set(FLAG_SYS_STARTED_AS_FEMALE, EverGrandeCity_HallOfFame_EventScript_GameClearFemale)

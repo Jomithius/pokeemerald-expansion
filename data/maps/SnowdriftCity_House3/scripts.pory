@@ -171,3 +171,136 @@ movement SnowdriftCity_House3_Movement_CynthiaApproachesPlayer{
     walk_left * 2
     walk_down
 }
+
+script SnowdriftCity_House3_EventScript_JimmyStatReport{
+    lock
+    faceplayer
+    msgbox("{PLAYER}!\n
+        I'm surprised you found me here.\p
+        You probably didn't expect me to\n
+        know CYNTHIA, huh!\p
+        Were you jump scared the first time\n
+        you walked into this house?\p
+        Haha!\p
+        Well, there shouldn't be anything left\n
+        for you to do, but I can give you some\l
+        stats about your playthrough.\p
+        Let's see…", MSGBOX_DEFAULT)
+    waitmessage
+    buffernumberstring(STR_VAR_1, VAR_WIPE_COUNTER)
+    if(var(VAR_WIPE_COUNTER) > 10 && flag(FLAG_SYS_HARD_MODE)){
+        msgbox("You wiped {STR_VAR_1} times.\n
+        Was it really that difficult?", MSGBOX_DEFAULT)
+    }
+    elif(var(VAR_WIPE_COUNTER) == 0){
+        msgbox("You didn't wipe at all?!\p
+        Are you a POKéMON MASTER?\n
+        Or were you save scumming?", MSGBOX_DEFAULT)
+    }
+    else{
+       msgbox("You wiped {STR_VAR_1} time(s).\n
+        That's not bad!", MSGBOX_DEFAULT) 
+    }
+    waitmessage
+    buffernumberstring(STR_VAR_1, VAR_DIFFICULTY_SWITCH_COUNTER)
+    if(var(VAR_DIFFICULTY_SWITCH_COUNTER) > 5){
+        msgbox("You changed difficulties {STR_VAR_1} times.\n
+        You couldn't make up your mind or what?", MSGBOX_DEFAULT)
+    }
+    elif(var(VAR_WIPE_COUNTER) == 0){
+        msgbox("You stayed on the same difficulty\n
+            your whole playthrough.", MSGBOX_DEFAULT)
+    }
+    else{
+       msgbox("You changed difficulty\n
+        {STR_VAR_1} time(s).", MSGBOX_DEFAULT) 
+    }
+    waitmessage
+    if(var(VAR_RAT_CAVE_STATE) == 12){
+        msgbox("Oh… poor RATDUARDO.\p
+        He'll never be free from\n
+        DARKRAI's curse.", MSGBOX_DEFAULT)
+    }
+    else{
+        msgbox("Oh!\p
+        You freed RATDUARDO from\n
+        DARKRAI's curse.", MSGBOX_DEFAULT)
+    }
+    waitmessage
+    if(!flag(FLAG_SYS_DEFEATED_BRUNO)){
+        msgbox("Wow, you didn't beat BRUNO?\p
+            Well, I guess everybody does\n
+            talk about how strong he is.", MSGBOX_DEFAULT)
+    }
+    else{
+        msgbox("You beat BRUNO.\n
+            Nice!", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    if(!flag(FLAG_SYS_DEFEATED_RED)){
+        msgbox("You missed a familiar TRAINER.\p
+        {PLAYER}… How did you miss that?\n
+        Or did you see him and forget?\p
+        Either way, go back to the fork\n
+        at AZURE MOUNTAIN and take the\l
+        ladder up to the peak.", MSGBOX_DEFAULT)
+    }
+    else{
+        msgbox("You beat RED.\n
+            Good job!", MSGBOX_DEFAULT)
+    }
+    waitmessage
+    if(!flag(FLAG_SYS_DEFEATED_JAMES)){
+        msgbox("Oh!\n
+            Here's something you missed.\p
+            Go back to the lab in LUSH ACREAGE\n
+            and talk to JAMES.", MSGBOX_DEFAULT)
+    }
+    else{
+        msgbox("Wow you even went back and\n
+            fought JAMES again?\p
+            I'm impressed.", MSGBOX_DEFAULT)
+    }
+    waitmessage
+    if(!flag(FLAG_DEFEATED_EUGENIA) && var(VAR_LINA_TALKED_TO) == 1){
+        msgbox("Damn!\n
+        You didn't get to see the superboss!\p
+        But you still have a chance, if you're\n
+        interested.\p
+        Make sure you took her EEVEE, then go\n
+        talk to JAMES.", MSGBOX_DEFAULT)
+        waitmessage
+    }
+    if(var(VAR_LINA_TALKED_TO) == 3){
+        msgbox("You beat EUGENIA too?\n
+        How was that fight for you?\p
+        I had a lot of fun when I battled\n
+        her.\p
+        She's still mad about you stealing\n
+        her EEVEE!", MSGBOX_DEFAULT)
+        waitmessage
+    }
+    if(!flag(FLAG_RECEIVED_TOTODILE_PARTNER)){
+        msgbox("ARIA would be disappointed.\n
+            You never found the SACRED BLADE.\p
+            I guess bro really was protecting\n
+            it…\p
+            Well, go back to JIRACHI's ALTAR\n
+            and you'll find it.\p
+            If you go talk to ARIA after that\n
+            they'll have a gift for you.", MSGBOX_DEFAULT)
+        waitmessage
+    }
+    msgbox("Well, that's it, {PLAYER}!\p
+        There's other things you could've\p
+        missed.\p
+        “PuzzlesImportantItemsSecrets” in\n
+        the SPOILERS folder has everything.\p
+        Thanks again for playing.\n
+        I hope you enjoyed it!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}

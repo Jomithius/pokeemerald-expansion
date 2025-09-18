@@ -54,14 +54,14 @@ MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
 script MauvilleCity_House1_EventScript_BulldozeTutor{
     lock
 	faceplayer
-    msgbox("You can't only get rid of rocks!\n
+    msgbox("You can't just get rid of rocks!\n
         You have to flatten the land too.\p
         If you want, I can teach your POKéMON\n
         how to do so!", MSGBOX_YESNO)
 	waitmessage
     goto_if_eq(VAR_RESULT, NO, MoveTutor_EventScript_BulldozeDeclined)
 	msgbox("Which POKéMON do you want to\nteach BULLDOZE to?", MSGBOX_DEFAULT)
-	setvar(VAR_0x8005, MOVE_ROOST)
+	setvar(VAR_0x8005, MOVE_BULLDOZE)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, MoveTutor_EventScript_BulldozeDeclined)
 	goto(MoveTutor_EventScript_BulldozeTaught)

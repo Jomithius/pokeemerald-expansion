@@ -113,7 +113,7 @@ MauvilleCity_House1_EventScript_BulldozeTutor::
 # 63 "data/maps/MauvilleCity_House1/scripts.pory"
 	msgbox MauvilleCity_House1_EventScript_BulldozeTutor_Text_1, MSGBOX_DEFAULT
 # 64 "data/maps/MauvilleCity_House1/scripts.pory"
-	setvar VAR_0x8005, MOVE_ROOST
+	setvar VAR_0x8005, MOVE_BULLDOZE
 # 65 "data/maps/MauvilleCity_House1/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 66 "data/maps/MauvilleCity_House1/scripts.pory"
@@ -145,7 +145,7 @@ MoveTutor_EventScript_BulldozeTaught::
 
 MauvilleCity_House1_EventScript_BulldozeTutor_Text_0:
 # 57 "data/maps/MauvilleCity_House1/scripts.pory"
-	.string "You can't only get rid of rocks!\n You have to flatten the land too.\p If you want, I can teach your POKéMON\n how to do so!$"
+	.string "You can't just get rid of rocks!\n You have to flatten the land too.\p If you want, I can teach your POKéMON\n how to do so!$"
 
 MauvilleCity_House1_EventScript_BulldozeTutor_Text_1:
 # 63 "data/maps/MauvilleCity_House1/scripts.pory"

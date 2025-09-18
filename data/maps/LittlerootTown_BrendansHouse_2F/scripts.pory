@@ -306,6 +306,7 @@ PlayersHouse_2F_Text_ItsAGameCube:
 
 script PlayersHouse_2F_EventScript_ChooseDifficulty{
     setflag(FLAG_SYS_DIFFICULTY_SET)
+	setvar(VAR_WIPE_COUNTER, 0)
 	checkplayergender
 	if(var(VAR_RESULT) == MALE){
 		setflag(FLAG_SYS_STARTED_AS_MALE)
