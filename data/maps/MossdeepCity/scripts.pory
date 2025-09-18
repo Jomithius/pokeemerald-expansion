@@ -648,15 +648,15 @@ script MossdeepCity_EventScript_GiveTotodilePostBattle{
 	setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("{PLAYER} received TOTODILE!")
-		waitmessage
+        msgbox("{PLAYER} received TOTODILE!", MSGBOX_DEFAULT)
+		waitfanfare
         setflag(FLAG_RECEIVED_TOTODILE_PARTNER)
     }
     elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("{PLAYER} received TOTODILE!\n
-			TOTODILE was sent to the PC.")
-		waitmessage
+			TOTODILE was sent to the PC.", MSGBOX_DEFAULT)
+		waitfanfare
         setflag(FLAG_RECEIVED_TOTODILE_PARTNER)
     }
     else{

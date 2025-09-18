@@ -1309,11 +1309,11 @@ DewfordTown_Text_TownSign:
 # 655 "data/maps/DewfordTown/scripts.pory"
 DewfordTown_Text_GymSign:
 # 656 "data/maps/DewfordTown/scripts.pory"
-	.string "Text is scribbled over the gym sign:\n"
+	.string "Text is scribbled over the gym sign:\p"
 # 657 "data/maps/DewfordTown/scripts.pory"
-	.string "“Dojo of MASTER BENNIS.”\l"
+	.string "“Dojo of MASTER BENNIS.\n"
 # 658 "data/maps/DewfordTown/scripts.pory"
-	.string "“NO CHALLENGERS!”$"
+	.string "NO CHALLENGERS!”$"
 # 659 "data/maps/DewfordTown/scripts.pory"
 
 # 660 "data/maps/DewfordTown/scripts.pory"

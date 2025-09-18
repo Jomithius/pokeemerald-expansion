@@ -254,18 +254,18 @@ LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_2:
 # 138 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 139 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_0, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_0, MSGBOX_DEFAULT
 # 140 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitfanfare
 	goto LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_1
 
 LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_3:
 # 143 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 144 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_1, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_1, MSGBOX_DEFAULT
 # 146 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitfanfare
 	goto LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_1
 
 
@@ -297,18 +297,18 @@ LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_2:
 # 161 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 162 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_0, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_0, MSGBOX_DEFAULT
 # 163 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitfanfare
 	goto LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_1
 
 LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_3:
 # 166 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 167 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_Text_0, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_Text_0, MSGBOX_DEFAULT
 # 169 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitfanfare
 	goto LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_1
 
 
@@ -340,18 +340,18 @@ LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_2:
 # 184 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 185 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_Text_0, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_Text_0, MSGBOX_DEFAULT
 # 186 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitfanfare
 	goto LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_1
 
 LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_3:
 # 189 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 190 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_Text_1, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_Text_1, MSGBOX_DEFAULT
 # 192 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitfanfare
 	goto LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_1
 
 

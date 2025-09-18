@@ -1612,7 +1612,7 @@ Route115Emo1::
 
 Route115Emo2::
 # 669 "data/maps/Route115/scripts.pory"
-	.string "Sorry. It's hard to control this power.\n Any closer and you could've been\l pulled into the void…\p Anyways, who are you?\n …\p {PLAYER}, huh?\n And my mother sent you?\l I see…\l  So that means you're also a TRAINER…$"
+	.string "Sorry. It's hard to control this power.\n Any closer and you could've been\l pulled into the void…\p Anyways, who are you?\n …\p {PLAYER}, huh?\n And my mother sent you?\p I see…\n  So that means you're also a TRAINER…$"
 
 Route115Emo3::
 # 679 "data/maps/Route115/scripts.pory"
@@ -1620,7 +1620,7 @@ Route115Emo3::
 
 Route115Emo4::
 # 681 "data/maps/Route115/scripts.pory"
-	.string "… I am JOMITHIUS.\n …This must be the call of fate.\l We are.. destined to be rivals.\l You know what must be done.$"
+	.string "… I am JOMITHIUS.\n …This must be the call of fate.\l We are… destined to be rivals.\l You know what must be done.$"
 
 Route115Emo5::
 # 686 "data/maps/Route115/scripts.pory"

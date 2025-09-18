@@ -928,14 +928,16 @@ script Route_135_Lab_EventScript_Meltan{
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+            waitfanfare
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_MELTAN)
             goto(Common_EventScript_NicknameRecievedMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+            waitfanfare
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_MELTAN)
             goto(Common_EventScript_NicknameRecievedMonBox)
@@ -967,14 +969,16 @@ script Route_135_Lab_EventScript_TypeNull{
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYPE_NULL)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+            waitfanfare
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_TYPE_NULL)
             goto(Common_EventScript_NicknameRecievedMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+            waitfanfare
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_TYPE_NULL)
             goto(Common_EventScript_NicknameRecievedMonBox)

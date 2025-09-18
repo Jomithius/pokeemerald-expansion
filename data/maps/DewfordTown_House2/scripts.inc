@@ -53,5 +53,5 @@ DewfordTown_House2_Text_BrawlySoCool:
 	.string "Those three that came here would always\n"
 	.string "sing that in the morning.\p"
 	.string "It's so cool…\n"
-	.string "I wanna train to become a ninja too.$"
+	.string "I wanna train to become a NINJA too.$"
 

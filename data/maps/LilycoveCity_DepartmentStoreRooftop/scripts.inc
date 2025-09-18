@@ -487,14 +487,14 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon::
 # 260 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_2
-# 283 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+# 285 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	hidemonpic
-# 284 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+# 286 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	msgbox LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_Text_2
 LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_1:
-# 287 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+# 289 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	waitmessage
-# 288 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+# 290 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	release
 	end
 
@@ -506,12 +506,12 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_2:
 # 263 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_5
-# 270 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+# 271 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_6
-# 278 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+# 280 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	hidemonpic
-# 279 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+# 281 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_1
 
@@ -519,25 +519,29 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_5:
 # 264 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 265 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	msgbox LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_Text_1
+	msgbox LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_Text_1, MSGBOX_DEFAULT
 # 266 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	waitfanfare
 # 267 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	setflag FLAG_RECEIVED_PORYGON
+	removeobject VAR_LAST_TALKED
 # 268 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	setflag FLAG_RECEIVED_PORYGON
+# 269 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMon
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_1
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_6:
-# 271 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 272 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	msgbox LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 273 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	msgbox LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_Text_1, MSGBOX_DEFAULT
 # 274 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	setflag FLAG_RECEIVED_PORYGON
+	waitfanfare
 # 275 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 276 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	setflag FLAG_RECEIVED_PORYGON
+# 277 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	goto Common_EventScript_NicknameRecievedMonBox
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_1
 
@@ -563,5 +567,5 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_Text_1:
 	.string "{PLAYER} took the POKéMON!$"
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_Text_2:
-# 284 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+# 286 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"

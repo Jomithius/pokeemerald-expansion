@@ -12,14 +12,16 @@ script Lina_House_EventScript_Pokeball{
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_EEVEE)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the EEVEE!")
+            msgbox("{PLAYER} took the EEVEE!", MSGBOX_DEFAULT)
+            waitfanfare
             removeobject(1)
             setflag(FLAG_LINA_HOUSE_EEVEE)
             goto(NicknamePartyMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the EEVEE!")
+            msgbox("{PLAYER} took the EEVEE!", MSGBOX_DEFAULT)
+            waitfanfare
             removeobject(1)
             setflag(FLAG_LINA_HOUSE_EEVEE)
             goto(NicknameBoxMon)

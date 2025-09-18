@@ -262,14 +262,16 @@ script LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon{
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PORYGON)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+			waitfanfare
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_PORYGON)
             goto(Common_EventScript_NicknameRecievedMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+			waitfanfare
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_RECEIVED_PORYGON)
             goto(Common_EventScript_NicknameRecievedMonBox)

@@ -534,7 +534,7 @@ BaldesianForestDojo_EventScript_GiveKubfu_2:
 # 344 "data/maps/BaldesianForestDojo/scripts.pory"
 	msgbox BaldesianForestDojo_EventScript_GiveKubfu_Text_1, MSGBOX_DEFAULT
 # 345 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmessage
+	waitfanfare
 # 346 "data/maps/BaldesianForestDojo/scripts.pory"
 	setflag FLAG_SYS_DEFEATED_BRUNO
 	goto BaldesianForestDojo_EventScript_GiveKubfu_1
@@ -545,7 +545,7 @@ BaldesianForestDojo_EventScript_GiveKubfu_3:
 # 350 "data/maps/BaldesianForestDojo/scripts.pory"
 	msgbox BaldesianForestDojo_EventScript_GiveKubfu_Text_2, MSGBOX_DEFAULT
 # 352 "data/maps/BaldesianForestDojo/scripts.pory"
-	waitmessage
+	waitfanfare
 # 353 "data/maps/BaldesianForestDojo/scripts.pory"
 	setflag FLAG_SYS_DEFEATED_BRUNO
 	goto BaldesianForestDojo_EventScript_GiveKubfu_1

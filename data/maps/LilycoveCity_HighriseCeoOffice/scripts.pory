@@ -136,14 +136,14 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito{
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPRIGATITO)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("{PLAYER} received SPRIGATITO!", MSGBOX_AUTOCLOSE)
-        waitmessage
+        msgbox("{PLAYER} received SPRIGATITO!", MSGBOX_DEFAULT)
+        waitfanfare
     }
     elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("{PLAYER} received SPRIGATITO!\p
-            SPRIGATITO was sent to the PC.", MSGBOX_AUTOCLOSE)
-        waitmessage
+            SPRIGATITO was sent to the PC.", MSGBOX_DEFAULT)
+        waitfanfare
     }
     else{
         playse(SE_FAILURE)
@@ -159,14 +159,14 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco{
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FUECOCO)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("{PLAYER} received SPRIGATITO!", MSGBOX_AUTOCLOSE)
-        waitmessage
+        msgbox("{PLAYER} received SPRIGATITO!", MSGBOX_DEFAULT)
+        waitfanfare
     }
     elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("{PLAYER} received FUECOCO!\p
-            FUECOCO was sent to the PC.", MSGBOX_AUTOCLOSE)
-        waitmessage
+            FUECOCO was sent to the PC.", MSGBOX_DEFAULT)
+        waitfanfare
     }
     else{
         playse(SE_FAILURE)
@@ -182,14 +182,14 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly{
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_QUAXLY)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("{PLAYER} received QUAXLY!", MSGBOX_AUTOCLOSE)
-        waitmessage
+        msgbox("{PLAYER} received QUAXLY!", MSGBOX_DEFAULT)
+        waitfanfare
     }
     elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("{PLAYER} received QUAXLY!\p
-            QUAXLY was sent to the PC.", MSGBOX_AUTOCLOSE)
-        waitmessage
+            QUAXLY was sent to the PC.", MSGBOX_DEFAULT)
+        waitfanfare
     }
     else{
         playse(SE_FAILURE)

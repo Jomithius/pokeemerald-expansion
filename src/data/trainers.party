@@ -3151,7 +3151,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Quilladin  
 Ability: Bulletproof  
 Level: 18  
-EVs: 168 HP / 120 Atk / 208 Def / 12 SpD  
 Impish Nature  
 - Bulk Up  
 - Bullet Seed  
@@ -5722,8 +5721,7 @@ EVs: 232 Atk / 24 Def / 244 SpD
 Brave Nature  
 IVs: 0 Spe  
 - Icicle Spear  
-- Gyro Ball  
-- Stealth Rock  
+- Metal Claw  
 - Ice Shard  
 
 Frillish (F)  
@@ -5766,7 +5764,6 @@ Hasty Nature
 - Dazzling Gleam  
 - Signal Beam  
 - Nuzzle  
-- Charge Beam  
 
 Togetic @ Leftovers  
 Ability: Super Luck  
@@ -8525,7 +8522,6 @@ AI: Basic Trainer
 Jigglypuff  
 Ability: Friend Guard  
 Level: 18 
-EVs: 252 HP / 248 SpA / 8 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Dazzling Gleam  
@@ -8535,14 +8531,11 @@ IVs: 0 Atk
 Elekid @ Oran Berry  
 Ability: Static  
 Level: 19   
-EVs: 232 HP / 20 Def / 16 SpA / 236 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Follow Me  
 - Electroweb  
 - Swift  
-
-
 
 === TRAINER_LAURA ===
 Name: LAURA
@@ -11734,7 +11727,6 @@ Lonely Nature
 Kadabra  
 Ability: Magic Guard  
 Level: 18  
-EVs: 244 SpA / 16 SpD / 236 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Dazzling Gleam  
@@ -11744,7 +11736,6 @@ IVs: 0 Atk
 Falinks  
 Ability: Battle Armor  
 Level: 18   
-EVs: 112 HP / 44 Atk / 104 SpD / 244 Spe  
 Jolly Nature  
 - Bulk Up  
 - Beat Up  
@@ -25376,8 +25367,6 @@ Level: 18
 Brave Nature  
 IVs: 0 Spe  
 - Icicle Spear  
-- Gyro Ball  
-- Stealth Rock  
 - Ice Shard  
 
 Frillish (F)  
@@ -25387,10 +25376,8 @@ Sassy Nature
 IVs: 0 Atk  
 - Water Pulse  
 - Hex  
-- Will-O-Wisp  
-- Icy Wind  
 
-Swirlix @ Oran Berry  
+Swirlix
 Ability: Unburden  
 Level: 18  
 Calm Nature  
@@ -25405,7 +25392,7 @@ Ability: Thick Fat
 Level: 19   
 Adamant Nature  
 - Rock Tomb  
-- Flame Charge  
+- Ember
 - Arm Thrust
 
 Dedenne @ Oran Berry  
@@ -25413,18 +25400,13 @@ Ability: Cheek Pouch
 Level: 18  
 Hasty Nature  
 - Dazzling Gleam  
-- Signal Beam  
 - Nuzzle  
-- Charge Beam  
 
-Togetic @ Leftovers  
-Ability: Super Luck  
+Togetic @ Leftovers   
 Level: 20   
 Quiet Nature  
-- Covet  
 - Draining Kiss  
 - Air Cutter  
-- Dazzling Gleam  
 
 === TRAINER_SPEEDWAGON ===
 Name: SPEEDWAGON
@@ -39081,7 +39063,7 @@ Rattata-Alola
 Ability: Gluttony  
 Level: 14  
 - Assurance  
-- Super Fang  
+- Quick Attack
 
 Rattata  
 Ability: Run Away  
@@ -39090,10 +39072,9 @@ Level: 15
 - Bite
 
 Raticate (M) @ Oran Berry  
-Ability: Hustle  
+Ability: Run Away  
 Level: 16  
 - Pursuit  
-- Quick Attack  
 - Headbutt
 
 Raticate-Alola-Totem (M) @ Oran Berry  
@@ -39313,7 +39294,6 @@ Level: 14
 Adamant Nature  
 - Covet  
 - Odor Sleuth  
-- Work Up  
 
 Salandit (F)  
 Ability: Corrosion  
@@ -39322,14 +39302,12 @@ Mild Nature
 IVs: 0 Atk  
 - Incinerate  
 - Acid  
-- Sand Attack  
 
 Golett  
 Ability: Iron Fist  
 Level: 15  
 - Astonish  
 - Rock Tomb  
-- Bulldoze  
 
 Roselia  
 Ability: Poison Point  
@@ -39337,9 +39315,7 @@ Level: 14
 Bold Nature  
 IVs: 0 Atk  
 - Leech Seed  
-- Mega Drain  
-- Sludge  
-- Ingrain 
+- Mega Drain    
 
 Buneary (F)  
 Ability: Limber  
@@ -39347,7 +39323,6 @@ Level: 16
 Jolly Nature  
 - Covet  
 - Charm  
-- Assurance  
 - Quick Attack  
 
 Petilil (F)  
@@ -39357,7 +39332,6 @@ Timid Nature
 IVs: 0 Atk  
 - Stun Spore  
 - Mega Drain  
-- Leech Seed
 
 === TRAINER_JAMES_FINAL ===
 Name: JAMES

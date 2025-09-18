@@ -44,14 +44,16 @@ script RustboroCity_Misa_House3F_Togepi{
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOGEPI)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+            waitfanfare
             removeobject(2)
             setflag(FLAG_MISA_HOUSE_TOGEPI)
             goto(NicknamePartyTogepi)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+            waitfanfare
             removeobject(2)
             setflag(FLAG_MISA_HOUSE_TOGEPI)
             goto(NicknameBoxTogepi)

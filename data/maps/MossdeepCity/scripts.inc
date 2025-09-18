@@ -1226,9 +1226,9 @@ MossdeepCity_EventScript_GiveTotodilePostBattle_2:
 # 650 "data/maps/MossdeepCity/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 651 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_1
+	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_1, MSGBOX_DEFAULT
 # 652 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	waitfanfare
 # 653 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_RECEIVED_TOTODILE_PARTNER
 	goto MossdeepCity_EventScript_GiveTotodilePostBattle_1
@@ -1237,9 +1237,9 @@ MossdeepCity_EventScript_GiveTotodilePostBattle_3:
 # 656 "data/maps/MossdeepCity/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 657 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_2
+	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_2, MSGBOX_DEFAULT
 # 659 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	waitfanfare
 # 660 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_RECEIVED_TOTODILE_PARTNER
 	goto MossdeepCity_EventScript_GiveTotodilePostBattle_1

@@ -1,7 +1,8 @@
 mapscripts RatCave_3F_MapScripts {}
 
 script Petalburg_RatCave_Raticate{
-    lockall
+    lock
+	faceplayer
     setflag(FLAG_PETALBURG_RATICATE)
     playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
     delay(40)
@@ -22,7 +23,7 @@ script Petalburg_RatCave_Raticate{
 		call(RaticateFailed)
 	}
     waitmessage
-	releaseall
+	release
 	end
 }
  
@@ -44,7 +45,8 @@ script RaticateFailed {
 }
 
 script Petalburg_RatCave_RaticateAlola{
-    lockall
+    lock
+	faceplayer
     setflag(FLAG_PETALBURG_RATICATE_ALOLA)
     playmoncry(SPECIES_RATICATE_ALOLA_TOTEM, CRY_MODE_ENCOUNTER)
     delay(40)
@@ -65,12 +67,12 @@ script Petalburg_RatCave_RaticateAlola{
 		call(RaticateAlolaFailed)
 	}
     waitmessage
-	releaseall
+	release
 	end
 }
  
 script RaticateAlolaWon_Caught {
-   fadescreen(FADE_TO_BLACK)
+   	fadescreen(FADE_TO_BLACK)
     removeobject(2)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
 	return

@@ -409,14 +409,16 @@ script NewMauville_Inside_EventScript_Genesect{
 		clearflag(FLAG_HIDE_DRIVES_CLERK)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+			waitfanfare
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_DEFEATED_GENESECT)
             goto(Common_EventScript_NicknameRecievedMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER} took the POKéMON!")
+            msgbox("{PLAYER} took the POKéMON!", MSGBOX_DEFAULT)
+			waitfanfare
             removeobject(VAR_LAST_TALKED)
             setflag(FLAG_DEFEATED_GENESECT)
             goto(Common_EventScript_NicknameRecievedMonBox)

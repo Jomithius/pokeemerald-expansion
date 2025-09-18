@@ -12,14 +12,14 @@ Lina_House_EventScript_Pokeball::
 # 10 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Lina_House_EventScript_Pokeball_2
-# 33 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 35 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	hidemonpic
-# 34 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 36 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox LinaHouse_NotChosen
 Lina_House_EventScript_Pokeball_1:
-# 36 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 38 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
-# 37 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 39 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	release
 	end
 
@@ -31,12 +31,12 @@ Lina_House_EventScript_Pokeball_2:
 # 13 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Lina_House_EventScript_Pokeball_5
-# 20 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 21 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Lina_House_EventScript_Pokeball_6
-# 28 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 30 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	hidemonpic
-# 29 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 31 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto Lina_House_EventScript_Pokeball_1
 
@@ -44,127 +44,131 @@ Lina_House_EventScript_Pokeball_5:
 # 14 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 15 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_Pokeball_Text_1
+	msgbox Lina_House_EventScript_Pokeball_Text_1, MSGBOX_DEFAULT
 # 16 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	removeobject 1
+	waitfanfare
 # 17 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	setflag FLAG_LINA_HOUSE_EEVEE
+	removeobject 1
 # 18 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	setflag FLAG_LINA_HOUSE_EEVEE
+# 19 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	goto NicknamePartyMon
 	goto Lina_House_EventScript_Pokeball_1
 
 Lina_House_EventScript_Pokeball_6:
-# 21 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 22 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_Pokeball_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 23 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	removeobject 1
+	msgbox Lina_House_EventScript_Pokeball_Text_1, MSGBOX_DEFAULT
 # 24 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	setflag FLAG_LINA_HOUSE_EEVEE
+	waitfanfare
 # 25 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	removeobject 1
+# 26 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	setflag FLAG_LINA_HOUSE_EEVEE
+# 27 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	goto NicknameBoxMon
 	goto Lina_House_EventScript_Pokeball_1
 
 
 NicknamePartyMon::
-# 43 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 44 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	hidemonpic
 # 45 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
+# 46 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	hidemonpic
+# 47 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon_2
 NicknamePartyMon_1:
-# 49 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 51 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	release
 	end
 
 NicknamePartyMon_2:
-# 46 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 48 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 47 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 49 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto NicknamePartyMon_1
 
 
 NicknameBoxMon::
-# 54 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 55 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	hidemonpic
 # 56 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
+# 57 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	hidemonpic
+# 58 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxMon_2
 NicknameBoxMon_1:
-# 59 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 61 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	call Common_EventScript_TransferredToPC
-# 60 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 62 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	release
 	end
 
 NicknameBoxMon_2:
-# 57 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 59 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxMon_1
 
 
 Lina_House_EventScript_Bookshelf::
-# 70 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 72 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	lock
-# 71 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 73 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox Lina_House_EventScript_Bookshelf_Text_0
-# 74 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	waitmessage
-# 75 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	showmonpic SPECIES_LUCARIO, 10, 4
 # 76 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_Bookshelf_Text_1
+	waitmessage
 # 77 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	waitmessage
+	showmonpic SPECIES_LUCARIO, 10, 4
 # 78 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	hidemonpic
+	msgbox Lina_House_EventScript_Bookshelf_Text_1
 # 79 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_Bookshelf_Text_2, MSGBOX_AUTOCLOSE
-# 81 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
-# 82 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 80 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	hidemonpic
+# 81 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	msgbox Lina_House_EventScript_Bookshelf_Text_2, MSGBOX_AUTOCLOSE
+# 83 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	waitmessage
+# 84 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	release
 	end
 
 
 Lina_House_EventScript_TV::
-# 87 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 89 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	lock
-# 88 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_TV_Text_0
 # 90 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	waitmessage
-# 91 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	showmonpic SPECIES_INCINEROAR, 10, 4
+	msgbox Lina_House_EventScript_TV_Text_0
 # 92 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_TV_Text_1
+	waitmessage
 # 93 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	waitmessage
+	showmonpic SPECIES_INCINEROAR, 10, 4
 # 94 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	hidemonpic
+	msgbox Lina_House_EventScript_TV_Text_1
 # 95 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_TV_Text_2, MSGBOX_AUTOCLOSE
-# 97 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
-# 98 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 96 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	hidemonpic
+# 97 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	msgbox Lina_House_EventScript_TV_Text_2, MSGBOX_AUTOCLOSE
+# 99 "data/maps/SlateportCity_Lina_House/scripts.pory"
+	waitmessage
+# 100 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	release
 	end
 
 
 SlateportCity_Lina_House_EventScript_LinasFursuit::
-# 103 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 105 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	lock
-# 104 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 106 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	msgbox SlateportCity_Lina_House_EventScript_LinasFursuit_Text_0, MSGBOX_AUTOCLOSE
-# 112 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 114 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
-# 113 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 115 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	release
 	end
 
@@ -178,37 +182,37 @@ Lina_House_EventScript_Pokeball_Text_1:
 	.string "{PLAYER} took the EEVEE!$"
 
 NicknamePartyMon_Text_0:
-# 43 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 45 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "Would you like to nickname EEVEE?$"
 
 Lina_House_EventScript_Bookshelf_Text_0:
-# 71 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 73 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "A bookshelf. \p You grab a random book \n and look at the title.$"
 
 Lina_House_EventScript_Bookshelf_Text_1:
-# 76 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 78 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "“Muscles & Monsters”$"
 
 Lina_House_EventScript_Bookshelf_Text_2:
-# 79 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 81 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "……… \p You put the book back.$"
 
 Lina_House_EventScript_TV_Text_0:
-# 88 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 90 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "There's something playing on the TV. \p It looks like a romance game.$"
 
 Lina_House_EventScript_TV_Text_1:
-# 92 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 94 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "………$"
 
 Lina_House_EventScript_TV_Text_2:
-# 95 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 97 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "You decide it's better to not look \n anymore.$"
 
 SlateportCity_Lina_House_EventScript_LinasFursuit_Text_0:
-# 104 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 106 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "A very realistic… suit?\n ……………\p There's a letter attached to\n the front:\p “Valued patron, thank you for your\n continued support of our work.\p We hope you enjoy this fur suit as\n thanks for being a top supporter.”$"
 
 LinaHouse_NotChosen::
-# 64 "data/maps/SlateportCity_Lina_House/scripts.pory"
+# 66 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	.string "{PLAYER} decided not to take the \n POKéMON.$"

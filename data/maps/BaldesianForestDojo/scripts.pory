@@ -342,14 +342,14 @@ script BaldesianForestDojo_EventScript_GiveKubfu{
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("{PLAYER} received KUBFU!", MSGBOX_DEFAULT)
-        waitmessage
+        waitfanfare
         setflag(FLAG_SYS_DEFEATED_BRUNO)
     }
     elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("{PLAYER} received KUBFU!\n
             KUBFU was sent to the PC.", MSGBOX_DEFAULT)
-        waitmessage
+        waitfanfare
         setflag(FLAG_SYS_DEFEATED_BRUNO)
     }
     else{

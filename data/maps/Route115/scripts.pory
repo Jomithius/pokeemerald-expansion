@@ -672,15 +672,15 @@ pulled into the void…\p
 Anyways, who are you?\n
 …\p
 {PLAYER}, huh?\n
-And my mother sent you?\l
-I see…\l 
+And my mother sent you?\p
+I see…\n 
 So that means you're also a TRAINER…"}
 
 text Route115Emo3{""}
 
 text Route115Emo4{"… I am JOMITHIUS.\n
 …This must be the call of fate.\l
-We are.. destined to be rivals.\l
+We are… destined to be rivals.\l
 You know what must be done."}
 
 text Route115Emo5{"Can you withstand this power?"}
