@@ -10,7 +10,7 @@ script RusturfTunnel_2F_EventScript_Ivan{
 text RusturfTunnel_2F_Text_IvanIntro {"No matter how much I run,\n
 I'm still slow!"}
 
-text Route104_Text_IvanDefeat {"I can't catch up.."}
+text Route104_Text_IvanDefeat {"I can't catch up."}
 
 text RusturfTunnel_2F_Text_IvanPostBattle {"Why can't I get any faster?"}
 

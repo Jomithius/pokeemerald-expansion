@@ -618,15 +618,15 @@ Route117_EventScript_Araquanid::
 # 369 "data/maps/Route117/scripts.pory"
 	lock
 # 370 "data/maps/Route117/scripts.pory"
-	setflag FLAG_ARAQUANID_TOTEM
+	faceplayer
 # 371 "data/maps/Route117/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
+	setflag FLAG_ARAQUANID_TOTEM
 # 372 "data/maps/Route117/scripts.pory"
-	waitmovement VAR_LAST_TALKED
+	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 # 373 "data/maps/Route117/scripts.pory"
-	playmoncry SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER
+	waitmovement VAR_LAST_TALKED
 # 374 "data/maps/Route117/scripts.pory"
-	delay 40
+	playmoncry SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER
 # 375 "data/maps/Route117/scripts.pory"
 	waitmoncry
 # 376 "data/maps/Route117/scripts.pory"
@@ -735,4 +735,4 @@ Route117_MisaPostBattle::
 
 Route117_Text_MisaLeftovers::
 # 356 "data/maps/Route117/scripts.pory"
-	.string "Have you been eating properly?\n I have some food from the meal I had\l in VERDANTURF.\p You can have it!$"
+	.string "Have you been eating properly?\p I have some food from the meal I had\n in VERDANTURF.\p You can have the leftovers!$"

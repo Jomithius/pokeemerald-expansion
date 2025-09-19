@@ -354,10 +354,10 @@ text Route117_MisaPostBattle{
 }
 
 text Route117_Text_MisaLeftovers{
-    "Have you been eating properly?\n
-    I have some food from the meal I had\l
+    "Have you been eating properly?\p
+    I have some food from the meal I had\n
     in VERDANTURF.\p
-	You can have it!"
+	You can have the leftovers!"
 }
 
 script Route117_EventScript_SaveBikerMusic {
@@ -367,11 +367,11 @@ script Route117_EventScript_SaveBikerMusic {
 
 script Route117_EventScript_Araquanid{
     lock
+	faceplayer
     setflag(FLAG_ARAQUANID_TOTEM)
     applymovement(VAR_LAST_TALKED, Common_Movement_FacePlayer)
     waitmovement(VAR_LAST_TALKED)
     playmoncry(SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_ARAQUANID_TOTEM, 21)
     dowildbattle

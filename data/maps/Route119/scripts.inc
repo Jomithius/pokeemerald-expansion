@@ -1183,50 +1183,48 @@ Route119_EventScript_Lurantis::
 # 594 "data/maps/Route119/scripts.pory"
 	playmoncry SPECIES_LURANTIS, CRY_MODE_ENCOUNTER
 # 595 "data/maps/Route119/scripts.pory"
-	delay 40
-# 596 "data/maps/Route119/scripts.pory"
 	waitmoncry
-# 597 "data/maps/Route119/scripts.pory"
+# 596 "data/maps/Route119/scripts.pory"
 	setwildbattle SPECIES_LURANTIS_TOTEM, 37, ITEM_ABILITY_CAPSULE
-# 598 "data/maps/Route119/scripts.pory"
+# 597 "data/maps/Route119/scripts.pory"
 	dowildbattle
-# 599 "data/maps/Route119/scripts.pory"
+# 598 "data/maps/Route119/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 600 "data/maps/Route119/scripts.pory"
+# 599 "data/maps/Route119/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route119_EventScript_Lurantis_2
-# 600 "data/maps/Route119/scripts.pory"
+# 599 "data/maps/Route119/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route119_EventScript_Lurantis_2
-# 606 "data/maps/Route119/scripts.pory"
+# 605 "data/maps/Route119/scripts.pory"
 	playmoncry SPECIES_LURANTIS, CRY_MODE_ENCOUNTER
-# 607 "data/maps/Route119/scripts.pory"
+# 606 "data/maps/Route119/scripts.pory"
 	waitmoncry
-# 608 "data/maps/Route119/scripts.pory"
+# 607 "data/maps/Route119/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 609 "data/maps/Route119/scripts.pory"
+# 608 "data/maps/Route119/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 610 "data/maps/Route119/scripts.pory"
+# 609 "data/maps/Route119/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 611 "data/maps/Route119/scripts.pory"
+# 610 "data/maps/Route119/scripts.pory"
 	msgbox Route119_EventScript_Lurantis_Text_0, MSGBOX_AUTOCLOSE
-# 612 "data/maps/Route119/scripts.pory"
+# 611 "data/maps/Route119/scripts.pory"
 	waitmessage
 Route119_EventScript_Lurantis_1:
-# 614 "data/maps/Route119/scripts.pory"
+# 613 "data/maps/Route119/scripts.pory"
 	release
 	end
 
 Route119_EventScript_Lurantis_2:
-# 601 "data/maps/Route119/scripts.pory"
+# 600 "data/maps/Route119/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 602 "data/maps/Route119/scripts.pory"
+# 601 "data/maps/Route119/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 603 "data/maps/Route119/scripts.pory"
+# 602 "data/maps/Route119/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto Route119_EventScript_Lurantis_1
 
 
 Route119_EventScript_Lurantis_Text_0:
-# 611 "data/maps/Route119/scripts.pory"
+# 610 "data/maps/Route119/scripts.pory"
 	.string "The LURANTIS disappeared…$"

@@ -910,7 +910,7 @@ movement MauvileCity_Movement_Police2{
 }
 
 text MauvilleCity_Text_Police{
-	"Huff.. Huff..\n
+	"Huff… Huff…\n
 	Requesting back up on ROUTE 110!"
 }
 
@@ -940,7 +940,7 @@ script MauvilleCity_EventScript_Bikers_WomanWarn{
 
 text MauvilleCity_Text_WomanBikersRoute110{
 	"A BIKER gang took over the CYCLING\n
-	ROAD!\l
+	ROAD!\p
 	That poor policeman is outnumbered!"
 }
 

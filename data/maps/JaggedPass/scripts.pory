@@ -270,7 +270,6 @@ script JaggedPass_EventScript_Marowak{
     lock
     faceplayer
     playmoncry(SPECIES_MAROWAK_ALOLA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_MAROWAK_ALOLA_TOTEM, 32, ITEM_THICK_CLUB)
     dowildbattle

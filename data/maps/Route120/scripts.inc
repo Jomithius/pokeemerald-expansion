@@ -869,101 +869,99 @@ Route120_EventScript_Vikavolt::
 # 437 "data/maps/Route120/scripts.pory"
 	playmoncry SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER
 # 438 "data/maps/Route120/scripts.pory"
-	delay 40
-# 439 "data/maps/Route120/scripts.pory"
 	waitmoncry
-# 440 "data/maps/Route120/scripts.pory"
+# 439 "data/maps/Route120/scripts.pory"
 	setwildbattle SPECIES_VIKAVOLT_TOTEM, 40, ITEM_HEAVY_DUTY_BOOTS
-# 441 "data/maps/Route120/scripts.pory"
+# 440 "data/maps/Route120/scripts.pory"
 	dowildbattle
-# 442 "data/maps/Route120/scripts.pory"
+# 441 "data/maps/Route120/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 443 "data/maps/Route120/scripts.pory"
+# 442 "data/maps/Route120/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route120_EventScript_Vikavolt_2
-# 446 "data/maps/Route120/scripts.pory"
+# 445 "data/maps/Route120/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route120_EventScript_Vikavolt_3
-# 449 "data/maps/Route120/scripts.pory"
+# 448 "data/maps/Route120/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq Route120_EventScript_Vikavolt_4
-# 452 "data/maps/Route120/scripts.pory"
+# 451 "data/maps/Route120/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq Route120_EventScript_Vikavolt_5
 Route120_EventScript_Vikavolt_1:
-# 455 "data/maps/Route120/scripts.pory"
+# 454 "data/maps/Route120/scripts.pory"
 	waitmessage
-# 456 "data/maps/Route120/scripts.pory"
+# 455 "data/maps/Route120/scripts.pory"
 	release
 	end
 
 Route120_EventScript_Vikavolt_2:
-# 444 "data/maps/Route120/scripts.pory"
+# 443 "data/maps/Route120/scripts.pory"
 	call VikavoltWon_Caught
 	goto Route120_EventScript_Vikavolt_1
 
 Route120_EventScript_Vikavolt_3:
-# 447 "data/maps/Route120/scripts.pory"
+# 446 "data/maps/Route120/scripts.pory"
 	call VikavoltFailed
 	goto Route120_EventScript_Vikavolt_1
 
 Route120_EventScript_Vikavolt_4:
-# 450 "data/maps/Route120/scripts.pory"
+# 449 "data/maps/Route120/scripts.pory"
 	call VikavoltFailed
 	goto Route120_EventScript_Vikavolt_1
 
 Route120_EventScript_Vikavolt_5:
-# 453 "data/maps/Route120/scripts.pory"
+# 452 "data/maps/Route120/scripts.pory"
 	call VikavoltFailed
 	goto Route120_EventScript_Vikavolt_1
 
 
 VikavoltWon_Caught::
-# 461 "data/maps/Route120/scripts.pory"
+# 460 "data/maps/Route120/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 462 "data/maps/Route120/scripts.pory"
+# 461 "data/maps/Route120/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 463 "data/maps/Route120/scripts.pory"
+# 462 "data/maps/Route120/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	return
 
 
 VikavoltFailed::
-# 468 "data/maps/Route120/scripts.pory"
+# 467 "data/maps/Route120/scripts.pory"
 	playmoncry SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER
-# 469 "data/maps/Route120/scripts.pory"
+# 468 "data/maps/Route120/scripts.pory"
 	delay 20
-# 470 "data/maps/Route120/scripts.pory"
+# 469 "data/maps/Route120/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 471 "data/maps/Route120/scripts.pory"
+# 470 "data/maps/Route120/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 472 "data/maps/Route120/scripts.pory"
+# 471 "data/maps/Route120/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 473 "data/maps/Route120/scripts.pory"
+# 472 "data/maps/Route120/scripts.pory"
 	msgbox VikavoltFailed_Text_0
 	return
 
 
 Route120_EventScript_ChallengeTheGym::
-# 478 "data/maps/Route120/scripts.pory"
+# 477 "data/maps/Route120/scripts.pory"
 	lockall
-# 479 "data/maps/Route120/scripts.pory"
+# 478 "data/maps/Route120/scripts.pory"
 	msgbox Route120_EventScript_ChallengeTheGym_Text_0, MSGBOX_AUTOCLOSE
-# 480 "data/maps/Route120/scripts.pory"
+# 479 "data/maps/Route120/scripts.pory"
 	waitmessage
-# 481 "data/maps/Route120/scripts.pory"
+# 480 "data/maps/Route120/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
-# 482 "data/maps/Route120/scripts.pory"
+# 481 "data/maps/Route120/scripts.pory"
 	waitmovement 0
-# 483 "data/maps/Route120/scripts.pory"
+# 482 "data/maps/Route120/scripts.pory"
 	releaseall
 	end
 
 
 VikavoltFailed_Text_0:
-# 473 "data/maps/Route120/scripts.pory"
+# 472 "data/maps/Route120/scripts.pory"
 	.string "The VIKAVOLT disappeared…$"
 
 Route120_EventScript_ChallengeTheGym_Text_0:
-# 479 "data/maps/Route120/scripts.pory"
+# 478 "data/maps/Route120/scripts.pory"
 	.string "I should challenge the GYM first.$"

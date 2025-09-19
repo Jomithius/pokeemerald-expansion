@@ -161,7 +161,7 @@ text ShoalCave_LowTideInnerRoom_Text_BingletonIntro{
 }
 
 text ShoalCave_LowTideInnerRoom_Text_BingletonDefeat{
-    "That was cold.."
+    "That was cold…"
 }
 
 text ShoalCave_LowTideInnerRoom_Text_BingletonPostBattle{

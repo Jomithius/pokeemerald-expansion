@@ -2197,7 +2197,7 @@ MoveTutor_EventScript_IronDefenseTeach_Text_0:
 
 LilycoveCity_Text_BullyMan1::
 # 869 "data/maps/LilycoveCity/scripts.pory"
-	.string "BOY: What are you doing in LILYCOVE?\n I'm surprised a little nerd like you\l actually left your house!\p KID: Haha, for real!\n Are you still acting like a weirdo?\l “Oh, the abyss is calling me..”$"
+	.string "BOY: What are you doing in LILYCOVE?\n I'm surprised a little nerd like you\l actually left your house!\p KID: Haha, for real!\n Are you still acting like a weirdo?\l “Oh, the abyss is calling me…”$"
 
 LilycoveCity_Text_BullyGirl1::
 # 878 "data/maps/LilycoveCity/scripts.pory"

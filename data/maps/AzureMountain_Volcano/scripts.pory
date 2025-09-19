@@ -4,7 +4,6 @@ script AzureMountain_Volcano_EventScript_Volcanion{
     lock
     faceplayer
     playmoncry(SPECIES_VOLCANION, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_VOLCANION, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -26,7 +25,6 @@ script AzureMountain_Volcano_EventScript_Heatran{
     lock
     faceplayer
     playmoncry(SPECIES_HEATRAN, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_HEATRAN, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -48,7 +46,6 @@ script AzureMountain_Volcano_EventScript_Diancie{
     lock
     faceplayer
     playmoncry(SPECIES_DIANCIE, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_DIANCIE, 75, ITEM_DIANCITE)
     special(BattleSetup_StartLegendaryBattle)

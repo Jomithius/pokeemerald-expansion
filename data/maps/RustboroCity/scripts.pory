@@ -100,6 +100,7 @@ RustboroCity_EventScript_MatchCallTutorial::
 	msgbox RustboroCity_Text_AddedStatEdits, MSGBOX_YESNO
 	waitmessage
 	call_if_eq VAR_RESULT, YES, RustboroCity_EventScript_ExplainIVsEVs
+	call RustboroCity_EventScript_ImportanceOfStatEditor
 	msgbox RustboroCity_Text_IdBetterGetBackToWork, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SCIENTIST, RustboroCity_Movement_ScientistLeave
@@ -1314,6 +1315,7 @@ script RustboroCity_EventScript_Misa{
     msgbox(RustboroMisa1, MSGBOX_DEFAULT)
     waitmessage
     goto(MisaPlayerMeetRival)
+	end
 }
 
 script MisaPlayerMeetRival{
@@ -1324,7 +1326,7 @@ script MisaPlayerMeetRival{
     if(var(VAR_RESULT) == NO){
         goto(MisaDeclineMeetRival)
     }
-
+	end
 }
 
 script MisaAgreeMeetRival{
@@ -1344,6 +1346,7 @@ script MisaDeclineMeetRival{
     if(var(VAR_RESULT) == NO){
         goto(MisaDeclineMeetRival)
     }
+	end
 }
 
 script MisaEnd{
@@ -1428,14 +1431,18 @@ script RustboroCityGym_EventScript_Misa{
     msgbox(RustboroMisa1, MSGBOX_DEFAULT)
     waitmessage
     goto(MisaPlayerMeetRival)
+	end
 }
 
-text RustboroMisa1{"Oh! Excuse me. I didn't see you there.\l
-It's nice to meet you.\n
-My name's MISA.\p
-MISA: That {STR_VAR_1}… So cute!\n
-So you're a new TRAINER? That's great!\l 
-It looks like you're already raising\l 
+text RustboroMisa1{"Oh! Excuse me.\n 
+I didn't see you there.\p
+My name's MISA.\n
+… … … …\p
+{PLAYER}? I see.\n
+That's a nice name!\p
+And that {STR_VAR_1}… So cute!\n
+So you're a new TRAINER? That's great!\p 
+It looks like you're already raising\n 
 your POKéMON with love and care.\p
 I actually have a son around the\n
 same age as you.\p
@@ -1453,7 +1460,7 @@ text RustboroMisaIfNo{"Oh… Please don't be like that.\n
 Would you reconsider?"}
 
 text RustboroMisa5{"Oh! I'm almost late for the\n
-meeting! I have to go.\l
+meeting! I have to go.\p
 It was nice meeting you, {PLAYER}!"}
 
 script RustboroCity_LunaDexNav {
@@ -1467,18 +1474,6 @@ script RustboroCity_LunaDexNav {
     releaseall
     end
 }
-
-text RustboroCity_LunaDexNavText{
-    "… … … … … …\n
-    … … … … … Beep!\p
-    {PLAYER}? It's LUNA.\n
-	Are you still in the area?\p
-    I need a favor. Meet me in front of\n
-	my house in PETALBURG.\p
-	It's the one north of the POKéMON\n
-	CENTER.\p
-	… … … … … …\n
-	… … … … … Click!"}
 
 script RustboroCity_EventScript_ExplainIVsEVs{
 	msgbox("IVs, or INDIVIDUAL VALUES, are\n
@@ -1495,9 +1490,27 @@ script RustboroCity_EventScript_ExplainIVsEVs{
 		A POKéMON can have up to 510 EVs total,\n
 		with a maximum of 252 in a single stat.\p
 		A POKéMON with EVs can be much stronger\n
-		stronger than one without any!\p
+		than one without any!\p
 		I recommend you take a look\n
 		at the STAT EDITOR.", MSGBOX_DEFAULT)
+	waitmessage
+	return
+}
+
+script RustboroCity_EventScript_ImportanceOfStatEditor{
+	if(var(VAR_DIFFICULTY) == DIFFICULTY_HARD){
+		msgbox("{COLOR RED}{SHADOW LIGHT_RED}The STAT EDITOR is an extremely useful\n
+		mechanic to take advantage of.\p
+		While complex EV spreads aren't needed,\n
+		giving all of your POKéMON proper EVs\l
+		is a requirement.", MSGBOX_DEFAULT)
+	}
+	else{
+		msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The STAT EDITOR is an extremely useful\n
+		mechanic to take advantage of.\p
+		Using it will make your playthrough\n
+		much easier.", MSGBOX_DEFAULT)
+	}
 	waitmessage
 	return
 }

@@ -1,12 +1,12 @@
 mapscripts RusturfTunnel_2F_Room2_MapScripts {}
 
 script RusturfTunnel_2F_Room2_Galvantula{
-    lockall
+    lock
+    faceplayer
     setflag(FLAG_RUSTURF_GALVANTULA)
     applymovement(5, Common_Movement_FacePlayer)
     waitmovement(5)
     playmoncry(SPECIES_GALVANTULA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_GALVANTULA, 21, ITEM_MAGNET)
     dowildbattle
@@ -24,7 +24,7 @@ script RusturfTunnel_2F_Room2_Galvantula{
 		call(GalvantulaFailed)
 	}
     waitmessage
-	releaseall
+	release
     end
 }
  
@@ -47,14 +47,14 @@ script GalvantulaFailed {
 
 
 script RusturfTunnel_2F_Room2_Ariados{
-    lockall
+    lock
+    faceplayer
     setflag(FLAG_RUSTURF_ARIADOS)
     applymovement(6, Common_Movement_FacePlayer)
     waitmovement(6)
     playmoncry(SPECIES_ARIADOS, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
-    setwildbattle(SPECIES_ARIADOS, 21, ITEM_BIG_NUGGET)
+    setwildbattle(SPECIES_ARIADOS, 21, ITEM_POISON_BARB)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
@@ -70,7 +70,7 @@ script RusturfTunnel_2F_Room2_Ariados{
 		call(AriadosFailed)
 	}
     waitmessage
-	releaseall
+	release
     end
 }
  

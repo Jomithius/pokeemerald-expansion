@@ -4,17 +4,17 @@ RusturfTunnel_2F_Room2_MapScripts::
 
 RusturfTunnel_2F_Room2_Galvantula::
 # 4 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	lockall
+	lock
 # 5 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	setflag FLAG_RUSTURF_GALVANTULA
+	faceplayer
 # 6 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	applymovement 5, Common_Movement_FacePlayer
+	setflag FLAG_RUSTURF_GALVANTULA
 # 7 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	waitmovement 5
+	applymovement 5, Common_Movement_FacePlayer
 # 8 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	playmoncry SPECIES_GALVANTULA, CRY_MODE_ENCOUNTER
+	waitmovement 5
 # 9 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	delay 40
+	playmoncry SPECIES_GALVANTULA, CRY_MODE_ENCOUNTER
 # 10 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	waitmoncry
 # 11 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
@@ -39,7 +39,7 @@ RusturfTunnel_2F_Room2_Galvantula_1:
 # 26 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	waitmessage
 # 27 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	releaseall
+	release
 	end
 
 RusturfTunnel_2F_Room2_Galvantula_2:
@@ -91,21 +91,21 @@ GalvantulaFailed::
 
 RusturfTunnel_2F_Room2_Ariados::
 # 50 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	lockall
+	lock
 # 51 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	setflag FLAG_RUSTURF_ARIADOS
+	faceplayer
 # 52 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	applymovement 6, Common_Movement_FacePlayer
+	setflag FLAG_RUSTURF_ARIADOS
 # 53 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	waitmovement 6
+	applymovement 6, Common_Movement_FacePlayer
 # 54 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	playmoncry SPECIES_ARIADOS, CRY_MODE_ENCOUNTER
+	waitmovement 6
 # 55 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	delay 40
+	playmoncry SPECIES_ARIADOS, CRY_MODE_ENCOUNTER
 # 56 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	waitmoncry
 # 57 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	setwildbattle SPECIES_ARIADOS, 21, ITEM_BIG_NUGGET
+	setwildbattle SPECIES_ARIADOS, 21, ITEM_POISON_BARB
 # 58 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	dowildbattle
 # 59 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
@@ -126,7 +126,7 @@ RusturfTunnel_2F_Room2_Ariados_1:
 # 72 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	waitmessage
 # 73 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	releaseall
+	release
 	end
 
 RusturfTunnel_2F_Room2_Ariados_2:

@@ -270,7 +270,6 @@ script Ultra_Space_EventScript_Necrozma{
     waitmovement(13)
     waitse
     playmoncry(SPECIES_NECROZMA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setflag(FLAG_DEFEATED_NECROZMA)
     setwildbattle(SPECIES_NECROZMA, 75)

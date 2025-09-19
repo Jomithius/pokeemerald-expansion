@@ -627,12 +627,12 @@ MtPyre_Summit_Text_HoennTrioTale:
 `
 
 script MtPyre_Summit_EventScript_Mimikyu{
-    lockall
+    lock
+	faceplayer
     setflag(FLAG_MIMIKYU_TOTEM)
     applymovement(9, Common_Movement_FacePlayer)
     waitmovement(9)
     playmoncry(SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_MIMIKYU_TOTEM, 41, ITEM_SPELL_TAG)
     dowildbattle
@@ -650,7 +650,7 @@ script MtPyre_Summit_EventScript_Mimikyu{
 		call(MimikyuFailed)
 	}
     waitmessage
-	releaseall
+	release
     end
 }
  
@@ -675,7 +675,6 @@ script MtPyre_Summit_EventScript_Giratina{
     lock
 	faceplayer
     playmoncry(SPECIES_GIRATINA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_GIRATINA, 75, ITEM_GRISEOUS_CORE)
     special(BattleSetup_StartLegendaryBattle)
@@ -697,7 +696,6 @@ script MtPyre_Summit_EventScript_MoltresGalar{
     lock
 	faceplayer
     playmoncry(SPECIES_MOLTRES_GALAR, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_MOLTRES_GALAR, 75)
     special(BattleSetup_StartLegendaryBattle)

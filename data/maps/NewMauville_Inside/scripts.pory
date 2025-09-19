@@ -264,12 +264,12 @@ NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
 `
 
 script NewMauville_Inside_EventScript_Togedemaru{
-    lockall
+    lock
+	faceplayer
     setflag(FLAG_TOGEDEMARU_TOTEM)
     applymovement(9, Common_Movement_FacePlayer)
     waitmovement(9)
     playmoncry(SPECIES_TOGEDEMARU, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_TOGEDEMARU_TOTEM, 36, ITEM_ROCKY_HELMET)
     dowildbattle
@@ -287,7 +287,7 @@ script NewMauville_Inside_EventScript_Togedemaru{
 		call(TogedemaruFailed)
 	}
     waitmessage
-	releaseall
+	release
     end
 }
  
@@ -312,7 +312,6 @@ script NewMauville_Inside_EventScript_Raikou{
     lock
 	faceplayer
     playmoncry(SPECIES_RAIKOU, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_RAIKOU, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -334,7 +333,6 @@ script NewMauville_Inside_EventScript_Regieleki{
     lock
 	faceplayer
     playmoncry(SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_REGIELEKI, 75)
     special(StartRegiBattle)
@@ -356,7 +354,6 @@ script NewMauville_Inside_EventScript_Zeraora{
     lock
 	faceplayer
     playmoncry(SPECIES_ZERAORA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_ZERAORA, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -378,7 +375,6 @@ script NewMauville_Inside_EventScript_Zapdos{
     lock
 	faceplayer
     playmoncry(SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_ZAPDOS, 75)
     special(BattleSetup_StartLegendaryBattle)

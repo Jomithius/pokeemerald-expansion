@@ -2470,8 +2470,8 @@ MauvilleCity_Text_DacaGone::
 
 MauvilleCity_Text_Police::
 # 912 "data/maps/MauvilleCity/scripts.pory"
-	.string "Huff.. Huff..\n Requesting back up on ROUTE 110!$"
+	.string "Huff… Huff…\n Requesting back up on ROUTE 110!$"
 
 MauvilleCity_Text_WomanBikersRoute110::
 # 941 "data/maps/MauvilleCity/scripts.pory"
-	.string "A BIKER gang took over the CYCLING\n ROAD!\l That poor policeman is outnumbered!$"
+	.string "A BIKER gang took over the CYCLING\n ROAD!\p That poor policeman is outnumbered!$"

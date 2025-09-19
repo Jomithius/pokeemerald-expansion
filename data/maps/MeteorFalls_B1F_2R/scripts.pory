@@ -6,7 +6,6 @@ script MeteorFalls_B1F_2R_EventScript_Suicune{
     faceplayer
     goto_if_unset(FLAG_IS_CHAMPION, MeteorFalls_B1F_2R_EventScript_SuicuneWeaker)
     playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_SUICUNE, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -26,7 +25,6 @@ script MeteorFalls_B1F_2R_EventScript_Suicune{
 
 script MeteorFalls_B1F_2R_EventScript_SuicuneWeaker{
     playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_SUICUNE, 50)
     special(BattleSetup_StartLegendaryBattle)

@@ -27,17 +27,17 @@ FieryPath_EventScript_MoveScottToFallarbor::
 
 FieryPath_EventScript_Salazzle::
 # 17 "data/maps/FieryPath/scripts.pory"
-	lockall
+	lock
 # 18 "data/maps/FieryPath/scripts.pory"
-	setflag FLAG_SALAZZLE_TOTEM
+	faceplayer
 # 19 "data/maps/FieryPath/scripts.pory"
-	applymovement 7, Common_Movement_FacePlayer
+	setflag FLAG_SALAZZLE_TOTEM
 # 20 "data/maps/FieryPath/scripts.pory"
-	waitmovement 7
+	applymovement 7, Common_Movement_FacePlayer
 # 21 "data/maps/FieryPath/scripts.pory"
-	playmoncry SPECIES_SALAZZLE, CRY_MODE_ENCOUNTER
+	waitmovement 7
 # 22 "data/maps/FieryPath/scripts.pory"
-	delay 40
+	playmoncry SPECIES_SALAZZLE, CRY_MODE_ENCOUNTER
 # 23 "data/maps/FieryPath/scripts.pory"
 	waitmoncry
 # 24 "data/maps/FieryPath/scripts.pory"
@@ -62,7 +62,7 @@ FieryPath_EventScript_Salazzle_1:
 # 39 "data/maps/FieryPath/scripts.pory"
 	waitmessage
 # 40 "data/maps/FieryPath/scripts.pory"
-	releaseall
+	release
 	end
 
 FieryPath_EventScript_Salazzle_2:
@@ -120,45 +120,43 @@ FieryPath_EventScript_Moltres::
 # 64 "data/maps/FieryPath/scripts.pory"
 	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
 # 65 "data/maps/FieryPath/scripts.pory"
-	delay 40
-# 66 "data/maps/FieryPath/scripts.pory"
 	waitmoncry
-# 67 "data/maps/FieryPath/scripts.pory"
+# 66 "data/maps/FieryPath/scripts.pory"
 	setwildbattle SPECIES_MOLTRES, 75
-# 68 "data/maps/FieryPath/scripts.pory"
+# 67 "data/maps/FieryPath/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 69 "data/maps/FieryPath/scripts.pory"
+# 68 "data/maps/FieryPath/scripts.pory"
 	waitstate
-# 70 "data/maps/FieryPath/scripts.pory"
+# 69 "data/maps/FieryPath/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 71 "data/maps/FieryPath/scripts.pory"
+# 70 "data/maps/FieryPath/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq FieryPath_EventScript_Moltres_2
-# 71 "data/maps/FieryPath/scripts.pory"
+# 70 "data/maps/FieryPath/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq FieryPath_EventScript_Moltres_2
-# 76 "data/maps/FieryPath/scripts.pory"
+# 75 "data/maps/FieryPath/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq FieryPath_EventScript_Moltres_3
-# 76 "data/maps/FieryPath/scripts.pory"
+# 75 "data/maps/FieryPath/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq FieryPath_EventScript_Moltres_3
 FieryPath_EventScript_Moltres_1:
-# 79 "data/maps/FieryPath/scripts.pory"
+# 78 "data/maps/FieryPath/scripts.pory"
 	release
 	end
 
 FieryPath_EventScript_Moltres_2:
-# 72 "data/maps/FieryPath/scripts.pory"
+# 71 "data/maps/FieryPath/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 73 "data/maps/FieryPath/scripts.pory"
+# 72 "data/maps/FieryPath/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 74 "data/maps/FieryPath/scripts.pory"
+# 73 "data/maps/FieryPath/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto FieryPath_EventScript_Moltres_1
 
 FieryPath_EventScript_Moltres_3:
-# 77 "data/maps/FieryPath/scripts.pory"
+# 76 "data/maps/FieryPath/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto FieryPath_EventScript_Moltres_1
 

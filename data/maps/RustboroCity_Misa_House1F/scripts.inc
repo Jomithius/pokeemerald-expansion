@@ -72,4 +72,4 @@ MisaHouseCantCarryCandy::
 
 RustboroCity_Misa_House1F_Text_ExplainCandies::
 # 59 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "Don't eat them all at once!\p {COLOR BLUE}{SHADOW LIGHT_BLUE} Unlike EXP CANDIES, RARE CANDIES can\n be used to go over the level cap but are\l extremely limited.\p It's recommended to only use them if\n absolutely needed.$"
+	.string "Don't eat them all at once!\p {COLOR BLUE}{SHADOW LIGHT_BLUE} Unlike EXP CANDIES, RARE CANDIES can\n be used to go over the level cap but\l are extremely limited.\p It's recommended to only use them if\n needed.$"

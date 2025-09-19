@@ -257,16 +257,14 @@ FullMoonIslandInterior_EventScript_Cresselia::
 # 141 "data/maps/FullMoonIslandInterior/scripts.pory"
 	playmoncry SPECIES_CRESSELIA, CRY_MODE_ENCOUNTER
 # 142 "data/maps/FullMoonIslandInterior/scripts.pory"
-	delay 40
-# 143 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmoncry
-# 144 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 143 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setwildbattle SPECIES_CRESSELIA, 75
-# 145 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 144 "data/maps/FullMoonIslandInterior/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 146 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 145 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitstate
-# 147 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 146 "data/maps/FullMoonIslandInterior/scripts.pory"
 	release
 	end
 
@@ -288,17 +286,17 @@ FullMoonIslandInterior_EventScript_CresseliaChangeMind_Text_0:
 	.string "Hello again, {PLAYER}.\n Have you reconsidered my offer?$"
 
 FullMoonIslandInterior_Text_Ratduardo::
-# 151 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 150 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "… Again… You…\n Always… in my way…\p No more…!$"
 
 FullMoonIslandInterior_Text_RatduardoDefeat::
-# 156 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 155 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "…\n There's no escape for me…$"
 
 FullMoonIslandInterior_Text_CresseliaMyThanks::
-# 161 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 160 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "Thank you for coming to my aid.\n You have a very pure heart.\l May I ask for your name?\p … … … …\p I see. {PLAYER},\n I really cannot thank you enough.\p It would be an honor to join a\n TRAINER like you on your journey.$"
 
 FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind::
-# 172 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 171 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "I see.\n I'll be here if you ever change your mind.$"

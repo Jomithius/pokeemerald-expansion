@@ -435,7 +435,6 @@ script Route120_EventScript_Vikavolt{
     setflag(FLAG_VIKAVOLT_TOTEM)
     faceplayer
     playmoncry(SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_VIKAVOLT_TOTEM, 40, ITEM_HEAVY_DUTY_BOOTS)
     dowildbattle

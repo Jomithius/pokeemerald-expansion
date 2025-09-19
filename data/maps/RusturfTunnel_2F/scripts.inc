@@ -38,7 +38,7 @@ RusturfTunnel_2F_Text_IvanIntro::
 
 Route104_Text_IvanDefeat::
 # 13 "data/maps/RusturfTunnel_2F/scripts.pory"
-	.string "I can't catch up..$"
+	.string "I can't catch up.$"
 
 RusturfTunnel_2F_Text_IvanPostBattle::
 # 15 "data/maps/RusturfTunnel_2F/scripts.pory"

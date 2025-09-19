@@ -320,7 +320,6 @@ script MeteorFalls_1F_1R_EventScript_Articuno{
 	faceplayer
 	goto_if_unset(FLAG_IS_CHAMPION, MeteorFalls_1F_1R_EventScript_ArticunoWeaker)
     playmoncry(SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_ARTICUNO, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -340,7 +339,6 @@ script MeteorFalls_1F_1R_EventScript_Articuno{
 
 script MeteorFalls_1F_1R_EventScript_ArticunoWeaker{
     playmoncry(SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_ARTICUNO, 50)
     special(BattleSetup_StartLegendaryBattle)
@@ -362,7 +360,6 @@ script MeteorFalls_1F_1R_EventScript_Mewtwo{
     lock
 	faceplayer
     playmoncry(SPECIES_MEWTWO, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_MEWTWO, 75)
     special(BattleSetup_StartLegendaryBattle)

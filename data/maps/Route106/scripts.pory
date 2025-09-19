@@ -52,7 +52,6 @@ script Route106_EventScript_Wishiwashi{
     lock
 	faceplayer
     playmoncry(SPECIES_WISHIWASHI, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_WISHIWASHI_SOLO, 20, ITEM_MYSTIC_WATER)
     dowildbattle

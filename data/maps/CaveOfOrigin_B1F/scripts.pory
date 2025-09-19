@@ -124,7 +124,6 @@ script CaveOfOrigin_B1F_EventScript_Dialga{
     lock
 	faceplayer
     playmoncry(SPECIES_DIALGA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_DIALGA, 75, ITEM_ADAMANT_CRYSTAL)
     special(BattleSetup_StartLegendaryBattle)
@@ -146,7 +145,6 @@ script CaveOfOrigin_B1F_EventScript_Palkia{
     lock
 	faceplayer
     playmoncry(SPECIES_PALKIA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_PALKIA, 75, ITEM_LUSTROUS_GLOBE)
     special(BattleSetup_StartLegendaryBattle)
@@ -168,7 +166,6 @@ script CaveOfOrigin_B1F_EventScript_Arceus{
     lock
 	faceplayer
     playmoncry(SPECIES_ARCEUS, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_ARCEUS, 75)
     special(BattleSetup_StartLegendaryBattle)

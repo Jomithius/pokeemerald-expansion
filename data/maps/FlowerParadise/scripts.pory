@@ -4,7 +4,6 @@ script FlowerParadise_EventScript_Shaymin{
     lock
     faceplayer
     playmoncry(SPECIES_SHAYMIN, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_SHAYMIN, 75, ITEM_GRACIDEA)
     special(BattleSetup_StartLegendaryBattle)
@@ -26,7 +25,6 @@ script FlowerParadise_EventScript_Meloetta{
     lock
     faceplayer
     playmoncry(SPECIES_MELOETTA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_MELOETTA, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -48,7 +46,6 @@ script FlowerParadise_EventScript_Victini{
     lock
     faceplayer
     playmoncry(SPECIES_VICTINI, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_VICTINI, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -70,7 +67,6 @@ script FlowerParadise_EventScript_TapuBulu{
     lock
     faceplayer
     playmoncry(SPECIES_TAPU_BULU, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_TAPU_BULU, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -92,7 +88,6 @@ script FlowerParadise_EventScript_TapuKoko{
     lock
     faceplayer
     playmoncry(SPECIES_TAPU_KOKO, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_TAPU_KOKO, 75)
     special(BattleSetup_StartLegendaryBattle)
@@ -114,7 +109,6 @@ script FlowerParadise_EventScript_TapuLele{
     lock
     faceplayer
     playmoncry(SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_TAPU_LELE, 75)
     special(BattleSetup_StartLegendaryBattle)

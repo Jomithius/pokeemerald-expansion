@@ -537,46 +537,44 @@ JaggedPass_EventScript_Marowak::
 # 272 "data/maps/JaggedPass/scripts.pory"
 	playmoncry SPECIES_MAROWAK_ALOLA, CRY_MODE_ENCOUNTER
 # 273 "data/maps/JaggedPass/scripts.pory"
-	delay 40
-# 274 "data/maps/JaggedPass/scripts.pory"
 	waitmoncry
-# 275 "data/maps/JaggedPass/scripts.pory"
+# 274 "data/maps/JaggedPass/scripts.pory"
 	setwildbattle SPECIES_MAROWAK_ALOLA_TOTEM, 32, ITEM_THICK_CLUB
-# 276 "data/maps/JaggedPass/scripts.pory"
+# 275 "data/maps/JaggedPass/scripts.pory"
 	dowildbattle
-# 277 "data/maps/JaggedPass/scripts.pory"
+# 276 "data/maps/JaggedPass/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 278 "data/maps/JaggedPass/scripts.pory"
+# 277 "data/maps/JaggedPass/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq JaggedPass_EventScript_Marowak_2
-# 278 "data/maps/JaggedPass/scripts.pory"
+# 277 "data/maps/JaggedPass/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq JaggedPass_EventScript_Marowak_2
-# 284 "data/maps/JaggedPass/scripts.pory"
+# 283 "data/maps/JaggedPass/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 285 "data/maps/JaggedPass/scripts.pory"
+# 284 "data/maps/JaggedPass/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 286 "data/maps/JaggedPass/scripts.pory"
+# 285 "data/maps/JaggedPass/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 287 "data/maps/JaggedPass/scripts.pory"
+# 286 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_EventScript_Marowak_Text_0, MSGBOX_AUTOCLOSE
-# 288 "data/maps/JaggedPass/scripts.pory"
+# 287 "data/maps/JaggedPass/scripts.pory"
 	waitmessage
 JaggedPass_EventScript_Marowak_1:
-# 290 "data/maps/JaggedPass/scripts.pory"
+# 289 "data/maps/JaggedPass/scripts.pory"
 	release
 	end
 
 JaggedPass_EventScript_Marowak_2:
-# 279 "data/maps/JaggedPass/scripts.pory"
+# 278 "data/maps/JaggedPass/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 280 "data/maps/JaggedPass/scripts.pory"
+# 279 "data/maps/JaggedPass/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 281 "data/maps/JaggedPass/scripts.pory"
+# 280 "data/maps/JaggedPass/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto JaggedPass_EventScript_Marowak_1
 
 
 JaggedPass_EventScript_Marowak_Text_0:
-# 287 "data/maps/JaggedPass/scripts.pory"
+# 286 "data/maps/JaggedPass/scripts.pory"
 	.string "The MAROWAK disappeared…$"

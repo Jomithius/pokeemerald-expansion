@@ -101,89 +101,87 @@ Route106_EventScript_Wishiwashi::
 # 54 "data/maps/Route106/scripts.pory"
 	playmoncry SPECIES_WISHIWASHI, CRY_MODE_ENCOUNTER
 # 55 "data/maps/Route106/scripts.pory"
-	delay 40
-# 56 "data/maps/Route106/scripts.pory"
 	waitmoncry
-# 57 "data/maps/Route106/scripts.pory"
+# 56 "data/maps/Route106/scripts.pory"
 	setwildbattle SPECIES_WISHIWASHI_SOLO, 20, ITEM_MYSTIC_WATER
-# 58 "data/maps/Route106/scripts.pory"
+# 57 "data/maps/Route106/scripts.pory"
 	dowildbattle
-# 59 "data/maps/Route106/scripts.pory"
+# 58 "data/maps/Route106/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 60 "data/maps/Route106/scripts.pory"
+# 59 "data/maps/Route106/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route106_EventScript_Wishiwashi_2
-# 65 "data/maps/Route106/scripts.pory"
+# 64 "data/maps/Route106/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route106_EventScript_Wishiwashi_3
-# 73 "data/maps/Route106/scripts.pory"
+# 72 "data/maps/Route106/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq Route106_EventScript_Wishiwashi_4
-# 81 "data/maps/Route106/scripts.pory"
+# 80 "data/maps/Route106/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq Route106_EventScript_Wishiwashi_5
 Route106_EventScript_Wishiwashi_1:
-# 89 "data/maps/Route106/scripts.pory"
+# 88 "data/maps/Route106/scripts.pory"
 	waitmessage
-# 90 "data/maps/Route106/scripts.pory"
+# 89 "data/maps/Route106/scripts.pory"
 	release
 	end
 
 Route106_EventScript_Wishiwashi_2:
-# 61 "data/maps/Route106/scripts.pory"
+# 60 "data/maps/Route106/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 62 "data/maps/Route106/scripts.pory"
+# 61 "data/maps/Route106/scripts.pory"
 	removeobject 5
-# 63 "data/maps/Route106/scripts.pory"
+# 62 "data/maps/Route106/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto Route106_EventScript_Wishiwashi_1
 
 Route106_EventScript_Wishiwashi_3:
-# 66 "data/maps/Route106/scripts.pory"
+# 65 "data/maps/Route106/scripts.pory"
 	playmoncry SPECIES_WISHIWASHI, CRY_MODE_FAINT
-# 67 "data/maps/Route106/scripts.pory"
+# 66 "data/maps/Route106/scripts.pory"
 	waitmoncry
-# 68 "data/maps/Route106/scripts.pory"
+# 67 "data/maps/Route106/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 69 "data/maps/Route106/scripts.pory"
+# 68 "data/maps/Route106/scripts.pory"
 	removeobject 5
-# 70 "data/maps/Route106/scripts.pory"
+# 69 "data/maps/Route106/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 71 "data/maps/Route106/scripts.pory"
+# 70 "data/maps/Route106/scripts.pory"
 	msgbox Route106_EventScript_Wishiwashi_Text_0, MSGBOX_AUTOCLOSE
 	goto Route106_EventScript_Wishiwashi_1
 
 Route106_EventScript_Wishiwashi_4:
-# 74 "data/maps/Route106/scripts.pory"
+# 73 "data/maps/Route106/scripts.pory"
 	playmoncry SPECIES_WISHIWASHI, CRY_MODE_ENCOUNTER
-# 75 "data/maps/Route106/scripts.pory"
+# 74 "data/maps/Route106/scripts.pory"
 	waitmoncry
-# 76 "data/maps/Route106/scripts.pory"
+# 75 "data/maps/Route106/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 77 "data/maps/Route106/scripts.pory"
+# 76 "data/maps/Route106/scripts.pory"
 	removeobject 5
-# 78 "data/maps/Route106/scripts.pory"
+# 77 "data/maps/Route106/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 79 "data/maps/Route106/scripts.pory"
+# 78 "data/maps/Route106/scripts.pory"
 	msgbox Route106_EventScript_Wishiwashi_Text_0, MSGBOX_AUTOCLOSE
 	goto Route106_EventScript_Wishiwashi_1
 
 Route106_EventScript_Wishiwashi_5:
-# 82 "data/maps/Route106/scripts.pory"
+# 81 "data/maps/Route106/scripts.pory"
 	playmoncry SPECIES_WISHIWASHI, CRY_MODE_ENCOUNTER
-# 83 "data/maps/Route106/scripts.pory"
+# 82 "data/maps/Route106/scripts.pory"
 	waitmoncry
-# 84 "data/maps/Route106/scripts.pory"
+# 83 "data/maps/Route106/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 85 "data/maps/Route106/scripts.pory"
+# 84 "data/maps/Route106/scripts.pory"
 	removeobject 5
-# 86 "data/maps/Route106/scripts.pory"
+# 85 "data/maps/Route106/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 87 "data/maps/Route106/scripts.pory"
+# 86 "data/maps/Route106/scripts.pory"
 	msgbox Route106_EventScript_Wishiwashi_Text_0, MSGBOX_AUTOCLOSE
 	goto Route106_EventScript_Wishiwashi_1
 
 
 Route106_EventScript_Wishiwashi_Text_0:
-# 71 "data/maps/Route106/scripts.pory"
+# 70 "data/maps/Route106/scripts.pory"
 	.string "The WISHIWASHI disappeared…$"

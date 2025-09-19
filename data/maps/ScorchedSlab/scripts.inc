@@ -21,45 +21,43 @@ ScorchedSlab_EventScript_Entei::
 # 15 "data/maps/ScorchedSlab/scripts.pory"
 	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
 # 16 "data/maps/ScorchedSlab/scripts.pory"
-	delay 40
-# 17 "data/maps/ScorchedSlab/scripts.pory"
 	waitmoncry
-# 18 "data/maps/ScorchedSlab/scripts.pory"
+# 17 "data/maps/ScorchedSlab/scripts.pory"
 	setwildbattle SPECIES_ENTEI, 75
-# 19 "data/maps/ScorchedSlab/scripts.pory"
+# 18 "data/maps/ScorchedSlab/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 20 "data/maps/ScorchedSlab/scripts.pory"
+# 19 "data/maps/ScorchedSlab/scripts.pory"
 	waitstate
-# 21 "data/maps/ScorchedSlab/scripts.pory"
+# 20 "data/maps/ScorchedSlab/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 22 "data/maps/ScorchedSlab/scripts.pory"
+# 21 "data/maps/ScorchedSlab/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq ScorchedSlab_EventScript_Entei_2
-# 22 "data/maps/ScorchedSlab/scripts.pory"
+# 21 "data/maps/ScorchedSlab/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq ScorchedSlab_EventScript_Entei_2
-# 27 "data/maps/ScorchedSlab/scripts.pory"
+# 26 "data/maps/ScorchedSlab/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq ScorchedSlab_EventScript_Entei_3
-# 27 "data/maps/ScorchedSlab/scripts.pory"
+# 26 "data/maps/ScorchedSlab/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq ScorchedSlab_EventScript_Entei_3
 ScorchedSlab_EventScript_Entei_1:
-# 30 "data/maps/ScorchedSlab/scripts.pory"
+# 29 "data/maps/ScorchedSlab/scripts.pory"
 	release
 	end
 
 ScorchedSlab_EventScript_Entei_2:
-# 23 "data/maps/ScorchedSlab/scripts.pory"
+# 22 "data/maps/ScorchedSlab/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 24 "data/maps/ScorchedSlab/scripts.pory"
+# 23 "data/maps/ScorchedSlab/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 25 "data/maps/ScorchedSlab/scripts.pory"
+# 24 "data/maps/ScorchedSlab/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto ScorchedSlab_EventScript_Entei_1
 
 ScorchedSlab_EventScript_Entei_3:
-# 28 "data/maps/ScorchedSlab/scripts.pory"
+# 27 "data/maps/ScorchedSlab/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto ScorchedSlab_EventScript_Entei_1
 

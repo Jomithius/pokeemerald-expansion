@@ -25,9 +25,9 @@ SkyPillar_1F_EventScript_Regidrago::
 # 15 "data/maps/SkyPillar_1F/scripts.pory"
 	lock
 # 16 "data/maps/SkyPillar_1F/scripts.pory"
-	playmoncry SPECIES_REGIDRAGO, CRY_MODE_ENCOUNTER
+	faceplayer
 # 17 "data/maps/SkyPillar_1F/scripts.pory"
-	delay 40
+	playmoncry SPECIES_REGIDRAGO, CRY_MODE_ENCOUNTER
 # 18 "data/maps/SkyPillar_1F/scripts.pory"
 	waitmoncry
 # 19 "data/maps/SkyPillar_1F/scripts.pory"

@@ -305,7 +305,7 @@ ShoalCave_LowTideInnerRoom_Text_BingletonIntro::
 
 ShoalCave_LowTideInnerRoom_Text_BingletonDefeat::
 # 163 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "That was cold..$"
+	.string "That was cold…$"
 
 ShoalCave_LowTideInnerRoom_Text_BingletonPostBattle::
 # 167 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"

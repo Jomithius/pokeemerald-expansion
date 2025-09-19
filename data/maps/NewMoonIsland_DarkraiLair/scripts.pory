@@ -19,7 +19,6 @@ script NewMoonIsland_DarkraiLair_EventScript_Darkrai{
     lock
 	faceplayer
     playmoncry(SPECIES_DARKRAI, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_DARKRAI, 75, ITEM_COVERT_CLOAK)
     special(BattleSetup_StartLegendaryBattle)

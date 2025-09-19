@@ -666,8 +666,9 @@ script Route115_EventScript_PlayerGetsInPosition{
 
 text Route115Emo1{"Don't come any closer. Hold on…"}
 
-text Route115Emo2{"Sorry. It's hard to control this power.\n
-Any closer and you could've been\l
+text Route115Emo2{"Sorry.\n
+It's hard to control this power.\p
+Any closer and you could've been\n
 pulled into the void…\p
 Anyways, who are you?\n
 …\p

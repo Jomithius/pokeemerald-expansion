@@ -84,70 +84,74 @@ EasternRuins_PecharuntLair_EventScript_Munkidori::
 # 49 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	waitstate
 # 50 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 51 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq EasternRuins_PecharuntLair_EventScript_Munkidori_2
-# 50 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+# 51 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq EasternRuins_PecharuntLair_EventScript_Munkidori_2
 EasternRuins_PecharuntLair_EventScript_Munkidori_1:
-# 53 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+# 54 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	release
 	end
 
 EasternRuins_PecharuntLair_EventScript_Munkidori_2:
-# 51 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+# 52 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	addvar VAR_PECHARUNT_STATE, 1
 	goto EasternRuins_PecharuntLair_EventScript_Munkidori_1
 
 
 EasternRuins_PecharuntLair_EventScript_Pecharunt::
-# 58 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	lock
 # 59 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	faceplayer
+	lock
 # 60 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	playmoncry SPECIES_PECHARUNT, CRY_MODE_ENCOUNTER
+	faceplayer
 # 61 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_PECHARUNT, CRY_MODE_ENCOUNTER
 # 62 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	setwildbattle SPECIES_PECHARUNT, 75, ITEM_HEARTHFLAME_MASK
+	waitmoncry
 # 63 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_PECHARUNT, 75, ITEM_HEARTHFLAME_MASK
 # 64 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 65 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+	waitstate
+# 66 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 67 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq EasternRuins_PecharuntLair_EventScript_Pecharunt_2
-# 65 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+# 67 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq EasternRuins_PecharuntLair_EventScript_Pecharunt_2
 EasternRuins_PecharuntLair_EventScript_Pecharunt_1:
-# 68 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+# 70 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	release
 	end
 
 EasternRuins_PecharuntLair_EventScript_Pecharunt_2:
-# 66 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+# 68 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	addvar VAR_PECHARUNT_STATE, 1
 	goto EasternRuins_PecharuntLair_EventScript_Pecharunt_1
 
 
 EasternRuins_PecharuntLair_EventScript_Ogerpon::
-# 73 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	lock
-# 74 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	faceplayer
 # 75 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	playmoncry SPECIES_OGERPON, CRY_MODE_ENCOUNTER
+	lock
 # 76 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	waitmoncry
+	faceplayer
 # 77 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	setwildbattle SPECIES_OGERPON, 75
+	playmoncry SPECIES_OGERPON, CRY_MODE_ENCOUNTER
 # 78 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 79 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
-	waitstate
+	setwildbattle SPECIES_OGERPON, 75
 # 80 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 81 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
+	waitstate
+# 82 "data/maps/EasternRuins_PecharuntLair/scripts.pory"
 	release
 	end
 

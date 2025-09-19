@@ -592,7 +592,6 @@ script Route119_EventScript_Lurantis{
     lock
     faceplayer
     playmoncry(SPECIES_LURANTIS, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_LURANTIS_TOTEM, 37, ITEM_ABILITY_CAPSULE)
     dowildbattle

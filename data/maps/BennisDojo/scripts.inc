@@ -1249,7 +1249,7 @@ Bennis_Outro::
 
 Bennis2::
 # 571 "data/maps/BennisDojo/scripts.pory"
-	.string "MASTER BENNIS: Hm.. Beefy.$"
+	.string "MASTER BENNIS: Hm… Beefy.$"
 
 Asak5::
 # 573 "data/maps/BennisDojo/scripts.pory"

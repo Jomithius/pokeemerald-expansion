@@ -957,45 +957,43 @@ PetalburgWoods_EventScript_UrsalunaBloodmoon::
 # 482 "data/maps/PetalburgWoods/scripts.pory"
 	playmoncry SPECIES_URSALUNA, CRY_MODE_ENCOUNTER
 # 483 "data/maps/PetalburgWoods/scripts.pory"
-	delay 40
-# 484 "data/maps/PetalburgWoods/scripts.pory"
 	waitmoncry
-# 485 "data/maps/PetalburgWoods/scripts.pory"
+# 484 "data/maps/PetalburgWoods/scripts.pory"
 	setwildbattle SPECIES_URSALUNA_BLOODMOON, 75
-# 486 "data/maps/PetalburgWoods/scripts.pory"
+# 485 "data/maps/PetalburgWoods/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 487 "data/maps/PetalburgWoods/scripts.pory"
+# 486 "data/maps/PetalburgWoods/scripts.pory"
 	waitstate
-# 488 "data/maps/PetalburgWoods/scripts.pory"
+# 487 "data/maps/PetalburgWoods/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 489 "data/maps/PetalburgWoods/scripts.pory"
+# 488 "data/maps/PetalburgWoods/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq PetalburgWoods_EventScript_UrsalunaBloodmoon_2
-# 489 "data/maps/PetalburgWoods/scripts.pory"
+# 488 "data/maps/PetalburgWoods/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq PetalburgWoods_EventScript_UrsalunaBloodmoon_2
-# 494 "data/maps/PetalburgWoods/scripts.pory"
+# 493 "data/maps/PetalburgWoods/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq PetalburgWoods_EventScript_UrsalunaBloodmoon_3
-# 494 "data/maps/PetalburgWoods/scripts.pory"
+# 493 "data/maps/PetalburgWoods/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq PetalburgWoods_EventScript_UrsalunaBloodmoon_3
 PetalburgWoods_EventScript_UrsalunaBloodmoon_1:
-# 497 "data/maps/PetalburgWoods/scripts.pory"
+# 496 "data/maps/PetalburgWoods/scripts.pory"
 	release
 	end
 
 PetalburgWoods_EventScript_UrsalunaBloodmoon_2:
-# 490 "data/maps/PetalburgWoods/scripts.pory"
+# 489 "data/maps/PetalburgWoods/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 491 "data/maps/PetalburgWoods/scripts.pory"
+# 490 "data/maps/PetalburgWoods/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 492 "data/maps/PetalburgWoods/scripts.pory"
+# 491 "data/maps/PetalburgWoods/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	goto PetalburgWoods_EventScript_UrsalunaBloodmoon_1
 
 PetalburgWoods_EventScript_UrsalunaBloodmoon_3:
-# 495 "data/maps/PetalburgWoods/scripts.pory"
+# 494 "data/maps/PetalburgWoods/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto PetalburgWoods_EventScript_UrsalunaBloodmoon_1
 

@@ -47,6 +47,7 @@ script EasternRuins_PecharuntLair_EventScript_Munkidori{
     setwildbattle(SPECIES_MUNKIDORI, 75, ITEM_WELLSPRING_MASK)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
         addvar(VAR_PECHARUNT_STATE, 1)
 	}
@@ -62,6 +63,7 @@ script EasternRuins_PecharuntLair_EventScript_Pecharunt{
     setwildbattle(SPECIES_PECHARUNT, 75, ITEM_HEARTHFLAME_MASK)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
         addvar(VAR_PECHARUNT_STATE, 1)
 	}

@@ -579,7 +579,7 @@ Route112_EventScript_Emo_Text_2:
 
 Route112_Text_Emo1::
 # 257 "data/maps/Route112/scripts.pory"
-	.string "JAMES: {PLAYER}…\n We meet again.\p My power has increased since we\n last battled.\p My eye… It now burns hotter than\n the FIERY PATH..\p This time, I, JOMITHIUS, will\n achieve victory!$"
+	.string "JAMES: {PLAYER}…\n We meet again.\p My power has increased since we\n last battled.\p My eye… It now burns hotter than\n the FIERY PATH…\p This time, I, JOMITHIUS, will\n achieve victory!$"
 
 Route112_EmoDefeat::
 # 268 "data/maps/Route112/scripts.pory"

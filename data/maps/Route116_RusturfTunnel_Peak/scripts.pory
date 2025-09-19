@@ -23,7 +23,6 @@ script Route116_RusturfTunnel_Peak_Ribombee{
     setflag(FLAG_RIBOMBEE_TOTEM)
     faceplayer
     playmoncry(SPECIES_RIBOMBEE, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_RIBOMBEE_TOTEM, 20, ITEM_WISE_GLASSES)
     dowildbattle

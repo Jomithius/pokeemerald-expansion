@@ -20,6 +20,7 @@ MauvilleCity_Mart_EventScript_Clerk::
 MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_DIVE_BALL
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_MAX_REPEL

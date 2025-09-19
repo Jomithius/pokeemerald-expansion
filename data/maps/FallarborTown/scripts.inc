@@ -229,4 +229,4 @@ FallarborTown_EventScript_Man::
 
 FallarborTown_Text_Man::
 # 122 "data/maps/FallarborTown/scripts.pory"
-	.string "First nightmares and tremors,\n then RATTATA infestations..\p What's happening to this town?$"
+	.string "First nightmares and tremors,\n then RATTATA infestations…\p What's happening to this town?$"

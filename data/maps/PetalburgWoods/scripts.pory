@@ -480,7 +480,6 @@ script PetalburgWoods_EventScript_UrsalunaBloodmoon{
     lock
     faceplayer
     playmoncry(SPECIES_URSALUNA, CRY_MODE_ENCOUNTER)
-    delay(40)
     waitmoncry
     setwildbattle(SPECIES_URSALUNA_BLOODMOON, 75)
     special(BattleSetup_StartLegendaryBattle)
