@@ -632,6 +632,10 @@ MauvilleCity_GameCorner_EventScript_NoCoinCase::
 	releaseall
 	end
 
+MauvilleCity_GameCorner_EventScript_FatMan::
+	msgbox MauvilleCity_GameCorner_Text_WhatShouldIBuy, MSGBOX_SIGN
+	end
+
 MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner:
 	.string "This is MAUVILLE GAME CORNER.$"
 
@@ -782,3 +786,7 @@ MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "You can't play if you don't have\n"
 	.string "a COIN CASE.$"
 
+
+MauvilleCity_GameCorner_Text_WhatShouldIBuy:
+	.string "Aw, man… There's so many options.\n"
+	.string "Lemme get a… Uh…$"
