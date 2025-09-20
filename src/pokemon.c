@@ -5871,9 +5871,10 @@ u16 GetBattleBGM(void)
             return MUS_HG_VS_TRAINER;
         case TRAINER_CLASS_BIKER:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-                return MUS_HG_VS_TRAINER;
+                return MUS_RG_VS_TRAINER;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleSpeedwagonName))
-                return MUS_RG_VS_GYM_LEADER; 
+                return MUS_RG_VS_GYM_LEADER;
+            return MUS_RG_VS_TRAINER; 
         case TRAINER_CLASS_NIGHTMARE:
             return MUS_RG_LAVENDER;
         case TRAINER_CLASS_KNIGHT:

@@ -783,7 +783,7 @@ script PetalburgCity_EventScript_Luna {
     waitmessage
 	applymovement(9, Common_Movement_WalkDown)
 	waitmovement(9)
-    call(PetalburgCity_LunaBattle)
+    trainerbattle_no_intro(TRAINER_NORMAN_PETALBURG, PetalburgCity_LunaOutro)
     waitmessage
     msgbox(PetalburgCity_LunaText2, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -820,7 +820,7 @@ script PetalburgCity_EventScript_LunaLeft{
     waitmessage
 	applymovement(9, PetalburgCity_Movement_LunaLeftTrigger)
 	waitmovement(9)
-    call(PetalburgCity_LunaBattle)
+    trainerbattle_no_intro(TRAINER_NORMAN_PETALBURG, PetalburgCity_LunaOutro)
     waitmessage
     msgbox(PetalburgCity_LunaText2, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -857,8 +857,7 @@ script PetalburgCity_EventScript_LunaRight{
     waitmessage
 	applymovement(9, PetalburgCity_Movement_LunaRightTrigger)
 	waitmovement(9)
-    call(PetalburgCity_LunaBattle)
-    waitmessage
+    trainerbattle_no_intro(TRAINER_NORMAN_PETALBURG, PetalburgCity_LunaOutro)
     msgbox(PetalburgCity_LunaText2, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(9, PetalburgCity_LunaMove1)
@@ -878,12 +877,6 @@ script PetalburgCity_EventScript_LunaRight{
 	setvar(VAR_RAT_CAVE_STATE, 3)
 	releaseall
 	end
-}
-
-script PetalburgCity_LunaBattle{
-    trainerbattle_no_intro(TRAINER_NORMAN_PETALBURG, PetalburgCity_LunaOutro)
-    lockall
-    return
 }
 
 text PetalburgCity_LunaText1{
