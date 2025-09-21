@@ -783,7 +783,8 @@ text MossdeepCity_Text_GymLeaderGone{
     "Well met, challenger. Here to take on\n
     the GYM, I presume.\p
     The KNIGHT commander has left with the\n
-    PROTECTORS to train in SHOAL CAVE.\l
+    PROTECTORS to train in SHOAL CAVE\l
+	on ROUTE 125.\l
     You'll have to wait until they return.\p
     That is, unless you're brave enough\n
 	to go get them yourself…"
@@ -986,10 +987,11 @@ script MoveTutor_EventScript_TailSlapTeach{
 }
 
 script MossdeepCity_EventScript_MultiHitTutorTaught{
-	lock
 	msgbox("Come back if you want to teach your\n
 		POKéMON a multi-hit move!", MSGBOX_AUTOCLOSE)
 	waitmessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
 	release
 	end
 }

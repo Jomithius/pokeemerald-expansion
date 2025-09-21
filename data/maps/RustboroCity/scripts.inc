@@ -2863,126 +2863,130 @@ RustboroCity_LunaDexNav::
 # 1473 "data/maps/RustboroCity/scripts.pory"
 	clearflag FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST
 # 1474 "data/maps/RustboroCity/scripts.pory"
+	setflag FLAG_HIDE_JIMMY_SNOWDRIFT_CITY
+# 1475 "data/maps/RustboroCity/scripts.pory"
+	setvar VAR_WIPE_COUNTER, 0
+# 1476 "data/maps/RustboroCity/scripts.pory"
 	releaseall
 	end
 
 
 RustboroCity_EventScript_ExplainIVsEVs::
-# 1479 "data/maps/RustboroCity/scripts.pory"
+# 1481 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroCity_EventScript_ExplainIVsEVs_Text_0, MSGBOX_DEFAULT
-# 1496 "data/maps/RustboroCity/scripts.pory"
+# 1498 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
 	return
 
 
 RustboroCity_EventScript_ImportanceOfStatEditor::
-# 1501 "data/maps/RustboroCity/scripts.pory"
+# 1503 "data/maps/RustboroCity/scripts.pory"
 	compare VAR_DIFFICULTY, DIFFICULTY_HARD
 	goto_if_eq RustboroCity_EventScript_ImportanceOfStatEditor_2
-# 1509 "data/maps/RustboroCity/scripts.pory"
+# 1511 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroCity_EventScript_ImportanceOfStatEditor_Text_1, MSGBOX_DEFAULT
 RustboroCity_EventScript_ImportanceOfStatEditor_1:
-# 1514 "data/maps/RustboroCity/scripts.pory"
+# 1516 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
 	return
 
 RustboroCity_EventScript_ImportanceOfStatEditor_2:
-# 1502 "data/maps/RustboroCity/scripts.pory"
+# 1504 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroCity_EventScript_ImportanceOfStatEditor_Text_0, MSGBOX_DEFAULT
 	goto RustboroCity_EventScript_ImportanceOfStatEditor_1
 
 
-# 1518 "data/maps/RustboroCity/scripts.pory"
+# 1520 "data/maps/RustboroCity/scripts.pory"
 RustboroExclaim:
-# 1518 "data/maps/RustboroCity/scripts.pory"
+# 1520 "data/maps/RustboroCity/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 1520 "data/maps/RustboroCity/scripts.pory"
+# 1522 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceLeft:
-# 1520 "data/maps/RustboroCity/scripts.pory"
+# 1522 "data/maps/RustboroCity/scripts.pory"
 	face_left
 	step_end
 
-# 1522 "data/maps/RustboroCity/scripts.pory"
+# 1524 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceRight:
-# 1523 "data/maps/RustboroCity/scripts.pory"
+# 1525 "data/maps/RustboroCity/scripts.pory"
 	face_right
 	step_end
 
-# 1526 "data/maps/RustboroCity/scripts.pory"
+# 1528 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceUp:
-# 1527 "data/maps/RustboroCity/scripts.pory"
+# 1529 "data/maps/RustboroCity/scripts.pory"
 	face_up
 	step_end
 
-# 1530 "data/maps/RustboroCity/scripts.pory"
-RustboroMisaLeave1:
-# 1531 "data/maps/RustboroCity/scripts.pory"
-	walk_right
 # 1532 "data/maps/RustboroCity/scripts.pory"
+RustboroMisaLeave1:
+# 1533 "data/maps/RustboroCity/scripts.pory"
+	walk_right
+# 1534 "data/maps/RustboroCity/scripts.pory"
 	walk_down
 	step_end
 
-# 1535 "data/maps/RustboroCity/scripts.pory"
+# 1537 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeave2:
-# 1536 "data/maps/RustboroCity/scripts.pory"
+# 1538 "data/maps/RustboroCity/scripts.pory"
 	walk_right
-# 1536 "data/maps/RustboroCity/scripts.pory"
+# 1538 "data/maps/RustboroCity/scripts.pory"
 	walk_right
-# 1536 "data/maps/RustboroCity/scripts.pory"
+# 1538 "data/maps/RustboroCity/scripts.pory"
 	walk_right
-# 1537 "data/maps/RustboroCity/scripts.pory"
+# 1539 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1537 "data/maps/RustboroCity/scripts.pory"
+# 1539 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1537 "data/maps/RustboroCity/scripts.pory"
+# 1539 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1537 "data/maps/RustboroCity/scripts.pory"
+# 1539 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1537 "data/maps/RustboroCity/scripts.pory"
+# 1539 "data/maps/RustboroCity/scripts.pory"
 	walk_up
-# 1537 "data/maps/RustboroCity/scripts.pory"
+# 1539 "data/maps/RustboroCity/scripts.pory"
 	walk_up
 	step_end
 
-# 1540 "data/maps/RustboroCity/scripts.pory"
-RustboroMisaLeaveGym1:
-# 1541 "data/maps/RustboroCity/scripts.pory"
-	walk_left
 # 1542 "data/maps/RustboroCity/scripts.pory"
+RustboroMisaLeaveGym1:
+# 1543 "data/maps/RustboroCity/scripts.pory"
+	walk_left
+# 1544 "data/maps/RustboroCity/scripts.pory"
 	walk_down
 	step_end
 
-# 1545 "data/maps/RustboroCity/scripts.pory"
+# 1547 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeaveGym2:
-# 1546 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1546 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1546 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1546 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1546 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1546 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1546 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1546 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	walk_left
 	step_end
 
-# 1549 "data/maps/RustboroCity/scripts.pory"
-RustboroPlayerStepBack:
-# 1550 "data/maps/RustboroCity/scripts.pory"
-	lock_facing_direction
 # 1551 "data/maps/RustboroCity/scripts.pory"
-	walk_down
+RustboroPlayerStepBack:
 # 1552 "data/maps/RustboroCity/scripts.pory"
-	delay_16
+	lock_facing_direction
 # 1553 "data/maps/RustboroCity/scripts.pory"
+	walk_down
+# 1554 "data/maps/RustboroCity/scripts.pory"
+	delay_16
+# 1555 "data/maps/RustboroCity/scripts.pory"
 	unlock_facing_direction
 	step_end
 
@@ -2991,15 +2995,15 @@ RustboroCity_Eventscript_Promise_To_Misa_Text_0:
 	.string "I should probably keep my promise to\n MISA…$"
 
 RustboroCity_EventScript_ExplainIVsEVs_Text_0:
-# 1479 "data/maps/RustboroCity/scripts.pory"
+# 1481 "data/maps/RustboroCity/scripts.pory"
 	.string "IVs, or INDIVIDUAL VALUES, are\n the inherent talents of a POKéMON and\l can range from 0-31.\p This stat is determined from birth.\p Luckily, most POKéMON in HOENN are\n born equal in this regard.\p EVs, or EFFORT VALUES, are gained\n from battling POKéMON.\p Each stat, such as HP, ATK, etc.,\n can gain EVs from defeating certain\l POKéMON.\p A POKéMON can have up to 510 EVs total,\n with a maximum of 252 in a single stat.\p A POKéMON with EVs can be much stronger\n than one without any!\p I recommend you take a look\n at the STAT EDITOR.$"
 
 RustboroCity_EventScript_ImportanceOfStatEditor_Text_0:
-# 1502 "data/maps/RustboroCity/scripts.pory"
+# 1504 "data/maps/RustboroCity/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}The STAT EDITOR is an extremely useful\n mechanic to take advantage of.\p While complex EV spreads aren't needed,\n giving all of your POKéMON proper EVs\l is a requirement.$"
 
 RustboroCity_EventScript_ImportanceOfStatEditor_Text_1:
-# 1509 "data/maps/RustboroCity/scripts.pory"
+# 1511 "data/maps/RustboroCity/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The STAT EDITOR is an extremely useful\n mechanic to take advantage of.\p Using it will make your playthrough\n much easier.$"
 
 RustboroMisa1::

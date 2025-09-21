@@ -11516,8 +11516,8 @@ const struct Item gItemsInfo[] =
         .name = _("TM72"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Drenches the target\n"
-            "with poison. Double\n"
+            "Drenches the foe\n"
+            "in poison. Double\n"
             "damage to poisoned."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,

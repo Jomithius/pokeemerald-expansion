@@ -165,12 +165,13 @@ LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather:
 
 script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
     lock
-    faceplayer
     if(flag(FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT ) == FALSE){
-        playse(SE_PIN)
+        delay(16)
+		playse(SE_PIN)
         applymovement(8, Common_Movement_ExclamationMark)
         waitmovement(8)
         waitse
+		faceplayer
         playbgm(MUS_MISA_THEME, FALSE)
         delay(10)
         msgbox(LilycoveCity_DepartmentStore_5F_Text_Misa1, MSGBOX_DEFAULT)
@@ -182,6 +183,7 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
         setflag(FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT)
     }
     else{
+		faceplayer
         msgbox(LilycoveCity_DepartmentStore_5F_Text_Misa3, MSGBOX_AUTOCLOSE)
         waitmessage
     }

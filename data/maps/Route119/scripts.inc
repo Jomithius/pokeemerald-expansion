@@ -1201,11 +1201,11 @@ Route119_EventScript_Lurantis::
 # 606 "data/maps/Route119/scripts.pory"
 	waitmoncry
 # 607 "data/maps/Route119/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 608 "data/maps/Route119/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 609 "data/maps/Route119/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 5
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 610 "data/maps/Route119/scripts.pory"
 	msgbox Route119_EventScript_Lurantis_Text_0, MSGBOX_AUTOCLOSE
 # 611 "data/maps/Route119/scripts.pory"
@@ -1217,11 +1217,11 @@ Route119_EventScript_Lurantis_1:
 
 Route119_EventScript_Lurantis_2:
 # 600 "data/maps/Route119/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 601 "data/maps/Route119/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 602 "data/maps/Route119/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 5
+	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route119_EventScript_Lurantis_1
 
 

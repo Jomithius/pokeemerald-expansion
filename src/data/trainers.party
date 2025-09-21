@@ -431,6 +431,10 @@ Venomoth
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Houndoom
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: GRUNT
 Class: Team Aqua
@@ -3865,7 +3869,7 @@ Beedrill
 Level: 35
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Beautifly
+Butterfree
 Level: 35
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -4632,7 +4636,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+Blissey
 Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5881,7 +5885,7 @@ Shroomish
 Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Beautifly
+Pidgeotto
 Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5965,18 +5969,10 @@ AI: Check Bad Move
 Tauros
 Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hypnosis
-- Psybeam
-- Dizzy Punch
-- Teeter Dance
 
 Slaking
 Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Focus Punch
-- Yawn
-- Slack Off
-- Feint Attack
 
 === TRAINER_ANNA_AND_MEG_1 ===
 Name: ANNA & MEG
@@ -9334,6 +9330,8 @@ AI: Check Bad Move
 
 Jynx
 Level: 41
+- Explosion
+- Self-Destruct
 
 === TRAINER_IRENE ===
 Name: IRENE
@@ -10294,6 +10292,8 @@ AI: Check Bad Move / Try To Faint
 
 Jynx
 Level: 47
+- Explosion
+- Self-Destruct
 
 Sandslash-Alola
 Level: 48
@@ -11902,7 +11902,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Krokorok
+Charizard
 Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11919,7 +11919,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Claydol
+Magcargo
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11959,6 +11959,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Golem
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Magmar
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14212,21 +14216,13 @@ Music: Girl
 Double Battle: Yes
 AI: Check Bad Move
 
-Dustox
+Combee (M)
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Gust
-- Psybeam
-- Toxic
-- Protect
 
-Beautifly
+Vespiquen
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Gust
-- Mega Drain
-- Attract
-- Stun Spore
 
 === TRAINER_JOHN_AND_JAY_1 ===
 Name: JOHN & JAY
@@ -14843,7 +14839,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Swoobat
+Marowak-Alola
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14869,7 +14865,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Skuntank
+Houndoom
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14903,7 +14899,7 @@ Gligar
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sableye
+Heatmor
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14920,6 +14916,10 @@ Murkrow
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Centiskorch
+Level: 44
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
 Name: GRUNT
 Class: Team Magma
@@ -14929,7 +14929,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Quagsire
+Magcargo
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14981,7 +14981,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Scrafty
+Magmar
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15024,6 +15024,10 @@ Persian-Alola
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Ninetales
+Level: 45
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
 Name: GRUNT
 Class: Team Magma
@@ -15033,7 +15037,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Carbink
+Torkoal
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15046,7 +15050,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Claydol
+Rapidash
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15578,12 +15582,9 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer 
 
-Manectric
+Vespiquen
 Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder
-- Quick Attack
-- Thunder Wave
 
 === TRAINER_CALLIE ===
 Name: CALLIE
@@ -19963,6 +19964,10 @@ Venomoth
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Houndoom
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: GRUNT
 Class: Team Aqua
@@ -23576,7 +23581,7 @@ Beedrill
 Level: 35
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Beautifly
+Butterfree
 Level: 35
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -24327,7 +24332,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Manectric
+Blissey
 Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -24800,8 +24805,7 @@ Ability: Aftermath
 Level: 19  
 Modest Nature  
 IVs: 0 Atk  
-- Air Cutter  
-- Will-O-Wisp  
+- Air Cutter   
 - Hex  
 
 Skiddo @ Coba Berry  
@@ -25060,7 +25064,7 @@ Manectric (M) @ Air Balloon
 Ability: Static  
 Level: 38  
 Timid Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 0 Spe
 - Thunder Wave  
 - Flamethrower  
 - Thunderbolt  
@@ -25068,7 +25072,7 @@ IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
 Stoutland (M) 
 Ability: Intimidate  
 Level: 38  
-IVs: 0 HP / 30 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
+IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
 - Play Rough  
 - Iron Head   
 - Return  
@@ -25076,16 +25080,15 @@ IVs: 0 HP / 30 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Boltund (F)
 Ability: Strong Jaw  
 Level: 38  
-IVs: 0 HP / 30 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
-Jolly Nature  
-- Psychic Fangs  
+IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
+Jolly Nature   
 - Fire Fang  
 - Thunder Fang  
 
 Obstagoon (M) @ Silk Scarf  
 Ability: Reckless  
 Level: 38
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
+IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 Jolly Nature  
 - Double-Edge  
 - Knock Off  
@@ -25476,7 +25479,7 @@ Shroomish
 Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Beautifly
+Pidgeotto
 Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -25565,18 +25568,10 @@ Difficulty: Easy
 Tauros
 Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hypnosis
-- Psybeam
-- Dizzy Punch
-- Teeter Dance
 
 Slaking
 Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Focus Punch
-- Yawn
-- Slack Off
-- Feint Attack
 
 === TRAINER_ANNA_AND_MEG_1 ===
 Name: ANNA & MEG
@@ -29097,6 +29092,8 @@ Difficulty: Easy
 
 Jynx
 Level: 41
+- Explosion
+- Self-Destruct
 
 === TRAINER_IRENE ===
 Name: IRENE
@@ -30094,6 +30091,8 @@ Difficulty: Easy
 
 Jynx
 Level: 47
+- Explosion
+- Self-Destruct
 
 Sandslash-Alola
 Level: 48
@@ -31694,7 +31693,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Krokorok
+Charizard
 Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -31712,7 +31711,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Claydol
+Magcargo
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -31755,6 +31754,10 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Golem
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Magmar
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -33549,11 +33552,9 @@ Jolly Nature
 Swellow (M) @ Toxic Orb  
 Ability: Guts  
 Level: 43     
-Jolly Nature  
-- Facade  
+Jolly Nature   
 - Quick Attack  
 - Wing Attack 
-- U-turn  
 
 === TRAINER_BRUNO ===
 Name: BRUNO
@@ -33996,21 +33997,13 @@ Double Battle: Yes
 AI: Check Bad Move 
 Difficulty: Easy
 
-Dustox
+Combee (M)
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Gust
-- Psybeam
-- Toxic
-- Protect
 
-Beautifly
+Vespiquen
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Gust
-- Mega Drain
-- Attract
-- Stun Spore
 
 === TRAINER_JOHN_AND_JAY_1 ===
 Name: JOHN & JAY
@@ -34660,7 +34653,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Swoobat
+Marowak-Alola
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -34688,7 +34681,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Skuntank
+Houndoom
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -34724,7 +34717,7 @@ Gligar
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sableye
+Heatmor
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -34742,6 +34735,10 @@ Murkrow
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Centiskorch
+Level: 44
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
 Name: GRUNT
 Class: Team Magma
@@ -34752,7 +34749,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Quagsire
+Magcargo
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -34808,7 +34805,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Scrafty
+Magmar
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -34854,6 +34851,10 @@ Persian-Alola
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Ninetales
+Level: 45
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
 Name: GRUNT
 Class: Team Magma
@@ -34864,7 +34865,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Carkol
+Torkoal
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -34878,7 +34879,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Claydol
+Rapidash
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -35434,12 +35435,9 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Manectric
+Vespiquen
 Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder
-- Quick Attack
-- Thunder Wave
 
 === TRAINER_CALLIE ===
 Name: CALLIE
@@ -39171,7 +39169,7 @@ Level: 9
 Shiny: Yes  
 Relaxed Nature
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe      
-- Smack Down  
+- Rock Throw  
 - Tackle  
 - Mud-Slap  
 
@@ -39181,7 +39179,7 @@ Level: 10
 Adamant Nature  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thief  
-- Psywave  
+- Peck  
 - Disable  
 
 Impidimp @ Oran Berry  
@@ -39189,17 +39187,14 @@ Ability: Prankster
 Level: 11  
 Relaxed Nature  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Bite  
-- Assurance  
-- Fake Out  
+- Bite     
 
 Cyndaquil (M) @ Oran Berry  
 Ability: Flash Fire 
 Level: 12  
 Modest Nature  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe   
-- Incinerate  
-- Smokescreen  
+- Ember 
 - Quick Attack  
 
 === TRAINER_NORMAN_PETALBURG ===

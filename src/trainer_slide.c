@@ -151,7 +151,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_TATE_AND_LIZA_1] = // Momo & Aria
         {
-            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("ARIA: Ah! Impossible!\nMOMO: …{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("ARIA: MA-AH!\nMOMO: … Meow.{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_JUAN_1] = // Joey
         {

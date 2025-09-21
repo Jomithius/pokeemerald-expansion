@@ -777,6 +777,10 @@ script LilycoveCity_EventScript_EmoBully{
     applymovement(25, Common_Movement_WalkRight)
     waitmovement(25)
     delay(10)
+	playse(SE_PIN)
+	applymovement(23, Common_Movement_ExclamationMark)
+    waitmovement(23)
+	waitse
     playse(SE_BALL_OPEN)
     fadescreen(FADE_TO_WHITE)
     addobject(27)

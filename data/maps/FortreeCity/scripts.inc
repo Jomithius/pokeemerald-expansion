@@ -152,5 +152,5 @@ FortreeCity_Text_CitySign:
 FortreeCity_Text_GymSign:
 	.string "FORTREE CITY POKéMON GYM\n"
 	.string "LEADER: MICKEY\p"
-	.string "“The LEADER with his dogs!$"
+	.string "“The LEADER with his dogs!”$"
 

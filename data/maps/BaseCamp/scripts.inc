@@ -45,7 +45,7 @@ BaseCamp_PokemonCenter_EventScript_Camper::
 
 
 BaseCamp_PokemonCenter_EventScript_Cooltrainer::
-# 42 "data/maps/BaseCamp/scripts.pory"
+# 44 "data/maps/BaseCamp/scripts.pory"
 	msgbox BaseCamp_PokemonCenter_EventScript_Cooltrainer_Text_0, MSGBOX_NPC
 	end
 
@@ -60,8 +60,8 @@ BaseCamp_PokemonCenter_EventScript_Pokefan_M_Text_0:
 
 BaseCamp_PokemonCenter_EventScript_Camper_Text_0:
 # 37 "data/maps/BaseCamp/scripts.pory"
-	.string "A new age of exploration awaits me!$"
+	.string "Did you hear?\p A new cave was discovered on ROUTE 103\n that was home to super rare POKéMON.$"
 
 BaseCamp_PokemonCenter_EventScript_Cooltrainer_Text_0:
-# 42 "data/maps/BaseCamp/scripts.pory"
+# 44 "data/maps/BaseCamp/scripts.pory"
 	.string "I heard AZURE MOUNTAIN is where\n the strongest TRAINERS gather.\p I'm getting fired up!$"
