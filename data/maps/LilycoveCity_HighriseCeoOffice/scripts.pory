@@ -151,6 +151,7 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito{
         waitmessage
     }
     goto(LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves)
+    end
 }
 
 script LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco{
@@ -159,7 +160,7 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco{
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FUECOCO)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("{PLAYER} received SPRIGATITO!", MSGBOX_DEFAULT)
+        msgbox("{PLAYER} received FUECOCO!", MSGBOX_DEFAULT)
         waitfanfare
     }
     elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
@@ -174,6 +175,7 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco{
         waitmessage
     }
     goto(LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves)
+    end
 }
 
 script LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly{
@@ -197,6 +199,7 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly{
         waitmessage
     }
     goto(LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves)
+    end
 }
 
 script LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves{

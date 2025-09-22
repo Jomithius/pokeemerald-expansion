@@ -63,7 +63,7 @@ LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_1:
 # 49 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	removeobject 6
 # 50 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 # 51 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitmovement 0
 # 52 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
@@ -73,7 +73,7 @@ LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_1:
 # 54 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitdooranim
 # 55 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	warpdoor MAP_LILYCOVE_CITY_HIGHRISE_ELEVATOR, 2, 6
+	warpsilent MAP_LILYCOVE_CITY_HIGHRISE_ELEVATOR, 2, 6
 # 56 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	waitstate
 # 57 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"

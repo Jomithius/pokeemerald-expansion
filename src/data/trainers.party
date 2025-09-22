@@ -4794,7 +4794,7 @@ Quiet Nature
 IVs: 0 Atk / 0 Spe  
 - Water Spout  
 - Shadow Ball  
-- Trick Room  
+- Dazzling Gleam 
 - Strength Sap  
 
 Emboar (M) @ Leftovers  
@@ -4817,18 +4817,18 @@ IVs: 0 Spe
 - Swords Dance  
 - Drain Punch  
 - Brutal Swing  
-- Zen Headbutt  
+- High Horsepower 
 
 Audino (F) @ Audinite  
 Ability: Regenerator  
 Level: 75  
-EVs: 252 HP / 124 Def / 132 SpA  
-Relaxed Nature  
-IVs: 0 Atk / 0 Spe   
+EVs: 252 HP / 4 Def / 252 SpA  
+Quiet Nature  
+IVs: 0 Atk  
 - Trick Room  
 - Dazzling Gleam  
 - Misty Terrain  
-- Hyper Voice  
+- Hyper Voice
 
 Togekiss (F) @ Room Service  
 Ability: Serene Grace  
@@ -24483,7 +24483,7 @@ Ability: Prankster
 Level: 75  
 Relaxed Nature  
 IVs: 0 Atk / 0 Spe  
-- Trick Room  
+- Giga Drain  
 - Misty Terrain  
 - Dazzling Gleam  
 
@@ -24494,7 +24494,7 @@ Quiet Nature
 IVs: 0 Atk / 0 Spe  
 - Water Spout  
 - Shadow Ball  
-- Trick Room  
+- Dazzling Gleam 
 
 Emboar (M) @ Leftovers  
 Ability: Reckless  
@@ -24682,8 +24682,8 @@ Calm Nature
 IVs: 0 Atk  
 - Stealth Rock  
 - Night Shade  
-- Reflect  
-- Light Screen  
+- Destiny Bond
+
 
 Ferrothorn (M) @ Rocky Helmet  
 Ability: Iron Barbs  
@@ -24724,7 +24724,8 @@ Jolly Nature
 Banette (F) @ Banettite  
 Ability: Frisk 
 Level: 75    
-Jolly Nature  
+Jolly Nature
+IVs: 0 Atk    
 - Destiny Bond  
 - Sucker Punch  
 - Poltergeist  
@@ -26574,12 +26575,12 @@ Adamant Nature
 - Barb Barrage  
 - Crunch  
 
-Garchomp (F) @ Loaded Dice  
+Garchomp (F) @ Lum Berry  
 Ability: Rough Skin
 Level: 75   
 Jolly Nature  
 - Earthquake  
-- Dragon Claw  
+- Outrage 
 - Stone Edge  
 
 Corviknight (F) @ Leftovers  
@@ -26588,7 +26589,8 @@ Level: 75
 Careful Nature  
 - Defog  
 - Brave Bird  
-- U-turn 
+- U-turn
+- Iron Head 
 
 Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire 

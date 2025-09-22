@@ -2,7 +2,18 @@ mapscripts LilycoveCity_HighriseElevator_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
     VAR_CEO_STATE, 1: LilycoveCity_HighriseElevator_EventScript_ToFloor2
     ]
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE: LilycoveCity_HighriseElevator_OnWarp
 }
+
+raw`
+LilycoveCity_HighriseElevator_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, LilycoveCity_HighriseElevator_EventScript_TurnPlayerNorth
+
+LilycoveCity_HighriseElevator_EventScript_TurnPlayerNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+`
 
 script LilycoveCity_HighriseElevator_EventScript_ToFloor2{
     lockall

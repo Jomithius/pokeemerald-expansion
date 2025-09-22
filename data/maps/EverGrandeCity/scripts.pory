@@ -191,9 +191,13 @@ movement EverGrandeCity_Movement_BennisRight{
 
 script EverGrandeCity_EventScript_Nurse{
     lock
-    applymovement(4, Common_Movement_FacePlayer)
-    waitmovement(4)
-    msgbox(EverGrandeCity_Text_Nurse, MSGBOX_AUTOCLOSE)
+    faceplayer
+    if(!flag(FLAG_HIDE_RIVAL_EVERGRANDE_CITY)){
+        msgbox(EverGrandeCity_Text_NurseWarnJames, MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox(EverGrandeCity_Text_Nurse, MSGBOX_AUTOCLOSE)
+    }
     waitmessage
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox(EverGrandeCity_Text_Nurse2, MSGBOX_AUTOCLOSE)
@@ -202,6 +206,14 @@ script EverGrandeCity_EventScript_Nurse{
     waitmovement(4)
     release
     end
+}
+
+text EverGrandeCity_Text_NurseWarnJames{
+    "Oh! You're the second TRAINER\n 
+    I've met today.\p
+    Congratulations on making it through\n
+    VICTORY ROAD.\p
+    Please, take a quick break."
 }
 
 text EverGrandeCity_Text_Nurse{

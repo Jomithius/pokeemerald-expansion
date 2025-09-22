@@ -1270,7 +1270,7 @@ RustboroCity_Text_AddedStatEdits:
 	.string "You can use it to edit the IVs\n"
 	.string "and EVs of your POKéMON.\p"
 	.string "To use it, just select a POKéMON\n"
-	.string "from within the party menu.\p"
+	.string "from within the PARTY MENU.\p"
 	.string "Would you like an explanation\n"
 	.string "of IVs and EVs?$"
 
@@ -1517,9 +1517,9 @@ script RustboroCity_EventScript_ImportanceOfStatEditor{
 
 text RustboroCity_Text_ExplainExpShare{
 	"The EXP. SHARE is a very useful item\n
-	that gives all your POKéMON EXP.\l
+	that gives all your POKéMON EXP Points\l
 	from battles.\p
-	To use it, turn it on in the KEY\n
+	To use it, just turn it on in the KEY\n
 	ITEMS section of your bag."
 }
 

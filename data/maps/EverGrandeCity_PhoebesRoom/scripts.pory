@@ -67,6 +67,7 @@ EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech::
 
 EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
+    call Common_EventScript_OutOfCenterPartyHeal
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
@@ -133,6 +134,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_LinaFinalBattle{
     callnative(RemoveFollowingPokemon)
     setflag(FLAG_TEMP_E)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    call(Common_EventScript_OutOfCenterPartyHeal)
 	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	goto(EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
 	end
@@ -306,6 +308,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_LinaNo{
     callnative(RemoveFollowingPokemon)
     setflag(FLAG_TEMP_E)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    call(Common_EventScript_OutOfCenterPartyHeal)
 	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	goto(EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
     end
@@ -319,6 +322,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated{
     callnative(RemoveFollowingPokemon)
     setflag(FLAG_TEMP_E)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    call(Common_EventScript_OutOfCenterPartyHeal)
 	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech, MSGBOX_DEFAULT)
 	release

@@ -2271,54 +2271,50 @@ Route104_EventScript_LunaDexNav::
 # 1138 "data/maps/Route104/scripts.pory"
 	clearflag FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST
 # 1139 "data/maps/Route104/scripts.pory"
-	setflag FLAG_HIDE_JIMMY_SNOWDRIFT_CITY
-# 1140 "data/maps/Route104/scripts.pory"
-	setvar VAR_WIPE_COUNTER, 0
-# 1141 "data/maps/Route104/scripts.pory"
 	releaseall
 	end
 
 
 Route104_EventScript_SeeWhatLunaWants::
-# 1146 "data/maps/Route104/scripts.pory"
+# 1144 "data/maps/Route104/scripts.pory"
 	lockall
-# 1147 "data/maps/Route104/scripts.pory"
+# 1145 "data/maps/Route104/scripts.pory"
 	msgbox Route104_EventScript_SeeWhatLunaWants_Text_0, MSGBOX_AUTOCLOSE
-# 1148 "data/maps/Route104/scripts.pory"
+# 1146 "data/maps/Route104/scripts.pory"
 	waitmessage
-# 1149 "data/maps/Route104/scripts.pory"
+# 1147 "data/maps/Route104/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
-# 1150 "data/maps/Route104/scripts.pory"
+# 1148 "data/maps/Route104/scripts.pory"
 	waitmovement 0
-# 1151 "data/maps/Route104/scripts.pory"
+# 1149 "data/maps/Route104/scripts.pory"
 	releaseall
 	end
 
 
 Route104_EventScript_FavorToLuna::
-# 1156 "data/maps/Route104/scripts.pory"
+# 1154 "data/maps/Route104/scripts.pory"
 	lockall
-# 1157 "data/maps/Route104/scripts.pory"
+# 1155 "data/maps/Route104/scripts.pory"
 	msgbox Route104_EventScript_FavorToLuna_Text_0, MSGBOX_AUTOCLOSE
-# 1158 "data/maps/Route104/scripts.pory"
+# 1156 "data/maps/Route104/scripts.pory"
 	waitmessage
-# 1159 "data/maps/Route104/scripts.pory"
+# 1157 "data/maps/Route104/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
-# 1160 "data/maps/Route104/scripts.pory"
+# 1158 "data/maps/Route104/scripts.pory"
 	waitmovement 0
-# 1161 "data/maps/Route104/scripts.pory"
+# 1159 "data/maps/Route104/scripts.pory"
 	releaseall
 	end
 
 
 Route104_EventScript_SeeWhatLunaWants_Text_0:
-# 1147 "data/maps/Route104/scripts.pory"
+# 1145 "data/maps/Route104/scripts.pory"
 	.string "I should probably see what LUNA wants\nfirst.$"
 
 Route104_EventScript_FavorToLuna_Text_0:
-# 1157 "data/maps/Route104/scripts.pory"
+# 1155 "data/maps/Route104/scripts.pory"
 	.string "I should probably take care of that\nfavor for LUNA first.$"
 
 Route104_LunaDexNavText::
-# 1165 "data/maps/Route104/scripts.pory"
+# 1163 "data/maps/Route104/scripts.pory"
 	.string "… … … … … …\n … … … … … Beep!\p {PLAYER}? It's LUNA.\n Are you still in the area?\p I need a favor. Meet me in front of\n my house in PETALBURG.\p It's the one north of the POKéMON\n CENTER.\p Huh? How did I get your number\n already?\l Don't worry about it.\p … … … … … …\n … … … … … Click!$"

@@ -73,6 +73,7 @@ EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech::
 
 EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
+	call Common_EventScript_OutOfCenterPartyHeal
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
@@ -147,9 +148,9 @@ script EverGrandeCity_SidneysRoom_EventScript_Misa{
 	}
 	else{
 		msgbox("{PLAYER}!\n
-			It's good to see you again!\p
-			You look like more mature now.\n
-			I'm glad you and JAMES have had fun\l
+			It's good to see you again!\l
+			You look more mature now.\p
+			I'm glad you and JAMES have had fun\n
 			exploring this region.", MSGBOX_DEFAULT)
 	}
 	waitmessage
@@ -175,13 +176,14 @@ script EverGrandeCity_SidneysRoom_EventScript_Misa{
     callnative(RemoveFollowingPokemon)
     setflag(FLAG_TEMP_E)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(Common_EventScript_OutOfCenterPartyHeal)
 	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	goto(EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech)
 	end
 }
 
 script EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech{
-	msgbox("Wow, {PLAYER}.\p
+	msgbox("Wow, {PLAYER}!\p
 		You've really grown a lot since the last\n
 		time!\p
 		This mommy is proud of you! I know\n

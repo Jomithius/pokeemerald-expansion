@@ -47,12 +47,12 @@ script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
     applymovement(6, Common_Movement_WalkUp)
     waitmovement(6)
     removeobject(6)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
     waitmovement(0)
     hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_LILYCOVE_CITY_HIGHRISE_GROUND_FLOOR)
     closedoor(8, 1)
     waitdooranim
-    warpdoor(MAP_LILYCOVE_CITY_HIGHRISE_ELEVATOR, 2, 6)
+    warpsilent(MAP_LILYCOVE_CITY_HIGHRISE_ELEVATOR, 2, 6)
     waitstate
     releaseall
     end  

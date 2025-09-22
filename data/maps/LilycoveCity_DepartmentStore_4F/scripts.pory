@@ -111,11 +111,13 @@ LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
 	.2byte ITEM_CHOICE_SCARF
 	.2byte ITEM_CHOICE_BAND
 	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_MUSCLE_BAND
 	.2byte ITEM_AIR_BALLOON
 	.2byte ITEM_ASSAULT_VEST
 	.2byte ITEM_THROAT_SPRAY
 	.2byte ITEM_BLACK_SLUDGE
 	.2byte ITEM_BLUNDER_POLICY
+	.2byte ITEM_WEAKNESS_POLICY
 	.2byte ITEM_DESTINY_KNOT
 	.2byte ITEM_EJECT_BUTTON
 	.2byte ITEM_EJECT_PACK
@@ -124,6 +126,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
 	.2byte ITEM_LIFE_ORB
     .2byte ITEM_FLAME_ORB
 	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_ADRENALINE_ORB
 	.2byte ITEM_KINGS_ROCK
 	.2byte ITEM_LEFTOVERS
 	.2byte ITEM_LIGHT_CLAY
@@ -134,6 +137,10 @@ LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
     .2byte ITEM_WIDE_LENS
     .2byte ITEM_SCOPE_LENS
     .2byte ITEM_ZOOM_LENS
+	.2byte ITEM_STICKY_BARB
+	.2byte ITEM_FLOAT_STONE
+	.2byte ITEM_IRON_BALL
+	.2byte ITEM_SAFETY_GOGGLES
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_EventScript_MartEmployee::

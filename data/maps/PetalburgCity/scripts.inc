@@ -1971,7 +1971,7 @@ PetalburgCity_LunaOutro::
 
 PetalburgCity_LunaText2::
 # 891 "data/maps/PetalburgCity/scripts.pory"
-	.string "LUNA: Hm…\n Okay, you should be fine.\p Let's just say we've been having a…\n little pest problem lately.\p And it looks like they somehow got\n into my house when I was away.\p The exterminators couldn't handle it,\n But a POKéMON TRAINER should be fine.\p I'd do it myself, but I have a very\n important person I need to meet with.$"
+	.string "LUNA: Hm…\n Okay, you should be fine.\p Let's just say we've been having a…\n little pest problem lately.\p And it looks like they somehow got\n into my house when I was away.\p The exterminators couldn't handle it,\n but a POKéMON TRAINER should be fine.\p I'd do it myself, but I have a very\n important person I need to meet with.$"
 
 PetalburgCity_LunaText3::
 # 904 "data/maps/PetalburgCity/scripts.pory"

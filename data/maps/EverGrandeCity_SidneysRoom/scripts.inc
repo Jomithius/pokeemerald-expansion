@@ -149,354 +149,358 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 # 75 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
 # 76 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	call Common_EventScript_OutOfCenterPartyHeal
 # 77 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 78 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	release
+	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 # 79 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	end
+	release
 # 80 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-
+	end
 # 81 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-EverGrandeCity_SidneysRoom_Text_IntroSpeech:
+
 # 82 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "Oh, {PLAYER}!\n"
+EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 # 83 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "It's great to see you again!\p"
+	.string "Oh, {PLAYER}!\n"
 # 84 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "You're not surprised, are you?\n"
+	.string "It's great to see you again!\p"
 # 85 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "I did say where I worked, after all!\p"
+	.string "You're not surprised, are you?\n"
 # 86 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "JAMES probably didn't say anything.\n"
+	.string "I did say where I worked, after all!\p"
 # 87 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "He doesn't like to brag about me.\p"
+	.string "JAMES probably didn't say anything.\n"
 # 88 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "Speaking of JAMES, I was watching your\n"
+	.string "He doesn't like to brag about me.\p"
 # 89 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "battle earlier.\p"
+	.string "Speaking of JAMES, I was watching your\n"
 # 90 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "As a mother, I'm sad to see my child\n"
+    .string "battle earlier.\p"
 # 91 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "feel down… But I'm glad he's grown.\p"
+    .string "As a mother, I'm sad to see my child\n"
 # 92 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "Thank you for becoming his friend,\n"
+    .string "feel down… But I'm glad he's grown.\p"
 # 93 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "{PLAYER}. I really mean it.$"
+    .string "Thank you for becoming his friend,\n"
 # 94 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-
+    .string "{PLAYER}. I really mean it.$"
 # 95 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-EverGrandeCity_SidneysRoom_Text_IntroSpeech2:
+
 # 96 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "Okay, time for me to be professional!\n"
+EverGrandeCity_SidneysRoom_Text_IntroSpeech2:
 # 97 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "Welcome to the POKéMON LEAGUE!\p"
+    .string "Okay, time for me to be professional!\n"
 # 98 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "I'm MISA of the ELITE FOUR.\n"
+	.string "Welcome to the POKéMON LEAGUE!\p"
 # 99 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-    .string "ARE YOU READY TO GET S-MOTHERED?$"
+    .string "I'm MISA of the ELITE FOUR.\n"
 # 100 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-
+    .string "ARE YOU READY TO GET S-MOTHERED?$"
 # 101 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-EverGrandeCity_SidneysRoom_Text_Defeat:
-# 102 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "Wow, {PLAYER}! I lost!\n"
-# 103 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "You've grown so much!$"
-# 104 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 
+# 102 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+EverGrandeCity_SidneysRoom_Text_Defeat:
+# 103 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	.string "Wow, {PLAYER}! I lost!\n"
+# 104 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	.string "You've grown so much!$"
 # 105 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
+
 # 106 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "Well, listen to what this mommy has\n"
+EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 # 107 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "to say.\p"
+	.string "Well, listen to what this mommy has\n"
 # 108 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "You've got what it takes to go far.\n"
+	.string "to say.\p"
 # 109 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "Now, go on to the next room and enjoy\l"
+	.string "You've got what it takes to go far.\n"
 # 110 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	.string "Now, go on to the next room and enjoy\l"
+# 111 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "your battle!$"
 
 EverGrandeCity_SidneysRoom_EventScript_Togekiss::
-# 115 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	lock
 # 116 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	faceplayer
+	lock
 # 117 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	playmoncry SPECIES_TOGEKISS, CRY_MODE_ENCOUNTER
+	faceplayer
 # 118 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	delay 24
+	playmoncry SPECIES_TOGEKISS, CRY_MODE_ENCOUNTER
 # 119 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement 2, Common_Movement_FaceOriginalDirection
+	delay 24
 # 120 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	waitmovement 2
+	applymovement 2, Common_Movement_FaceOriginalDirection
 # 121 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	waitmovement 2
+# 122 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_SidneysRoom_EventScript_Misa::
-# 126 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	lock
 # 127 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	lock
 # 128 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	playbgm MUS_MISA_THEME, FALSE
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 129 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	playbgm MUS_MISA_THEME, FALSE
+# 130 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	goto_if_set FLAG_RECEIVED_CASTELIACONE, EverGrandeCity_SidneysRoom_EventScript_Misa_2
-# 149 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 150 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	msgbox EverGrandeCity_SidneysRoom_EventScript_Misa_Text_5, MSGBOX_DEFAULT
 EverGrandeCity_SidneysRoom_EventScript_Misa_1:
-# 155 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	waitmessage
 # 156 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	waitmessage
 # 157 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+# 158 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	msgbox EverGrandeCity_SidneysRoom_EventScript_Misa_Text_6, MSGBOX_AUTOCLOSE
-# 161 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	waitmessage
 # 162 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	call EliteFour_EventScript_PlayerGetsInPosition
-# 163 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	playfirstmoncry
-# 164 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	waitmoncry
-# 165 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	playmoncry SPECIES_TOGEKISS, CRY_MODE_ENCOUNTER
-# 166 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	waitmoncry
-# 167 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	msgbox EverGrandeCity_SidneysRoom_EventScript_Misa_Text_7, MSGBOX_AUTOCLOSE
-# 168 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	waitmessage
+# 163 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	call EliteFour_EventScript_PlayerGetsInPosition
+# 164 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	playfirstmoncry
+# 165 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	waitmoncry
+# 166 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	playmoncry SPECIES_TOGEKISS, CRY_MODE_ENCOUNTER
+# 167 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	waitmoncry
+# 168 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	msgbox EverGrandeCity_SidneysRoom_EventScript_Misa_Text_7, MSGBOX_AUTOCLOSE
 # 169 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
+	waitmessage
 # 170 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	setflag FLAG_DEFEATED_MISA
+	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
 # 171 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_MISA_2, EverGrandeCity_SidneysRoom_EventScript_Misa_Text_8
+	setflag FLAG_DEFEATED_MISA
 # 172 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	setflag FLAG_TEMP_E
+	trainerbattle_no_intro TRAINER_MISA_2, EverGrandeCity_SidneysRoom_EventScript_Misa_Text_8
 # 173 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
-# 174 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	waitmovement 0
-# 175 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	callnative RemoveFollowingPokemon
-# 176 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	setflag FLAG_TEMP_E
+# 174 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+# 175 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	waitmovement 0
+# 176 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	callnative RemoveFollowingPokemon
 # 177 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	setflag FLAG_TEMP_E
 # 178 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 179 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 180 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+# 181 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	goto EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech
 	end
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_2:
-# 130 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 131 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	msgbox EverGrandeCity_SidneysRoom_EventScript_Misa_Text_0, MSGBOX_DEFAULT
-# 134 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	waitmessage
 # 135 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, EverGrandeCity_SidneysRoom_EventScript_Misa_Text_1, EverGrandeCity_SidneysRoom_EventScript_Misa_Text_2
+	waitmessage
 # 136 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, EverGrandeCity_SidneysRoom_EventScript_Misa_Text_1, EverGrandeCity_SidneysRoom_EventScript_Misa_Text_2
+# 137 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq EverGrandeCity_SidneysRoom_EventScript_Misa_5
-# 142 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 143 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	msgbox EverGrandeCity_SidneysRoom_EventScript_Misa_Text_4, MSGBOX_DEFAULT
 	goto EverGrandeCity_SidneysRoom_EventScript_Misa_1
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_5:
-# 137 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 138 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	msgbox EverGrandeCity_SidneysRoom_EventScript_Misa_Text_3, MSGBOX_DEFAULT
 	goto EverGrandeCity_SidneysRoom_EventScript_Misa_1
 
 
 EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech::
-# 184 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 186 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	msgbox EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech_Text_0, MSGBOX_DEFAULT
-# 189 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 191 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	release
 	end
 
 
 EliteFour_EventScript_PlayerGetsInPosition::
-# 194 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-# 195 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	switch VAR_RESULT
 # 196 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+# 197 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	switch VAR_RESULT
+# 198 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	case DIR_NORTH, EliteFour_EventScript_PlayerGetsInPosition_3
-# 200 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 202 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	case DIR_SOUTH, EliteFour_EventScript_PlayerGetsInPosition_4
-# 206 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 208 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	case DIR_WEST, EliteFour_EventScript_PlayerGetsInPosition_5
-# 213 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 215 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth
-# 214 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 216 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	waitmovement 0
 EliteFour_EventScript_PlayerGetsInPosition_1:
-# 216 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	clearflag FLAG_TEMP_E
-# 217 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	callnative UpdateFollowingPokemon
 # 218 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	playse SE_BALL_OPEN
+	clearflag FLAG_TEMP_E
 # 219 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	fadescreen FADE_TO_WHITE
+	callnative UpdateFollowingPokemon
+# 220 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	playse SE_BALL_OPEN
 # 221 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball
-# 222 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	waitmovement 0
+	fadescreen FADE_TO_WHITE
 # 223 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball
 # 224 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	waitmovement 0
 # 225 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	fadescreen FADE_FROM_WHITE
+	applymovement OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer
 # 226 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement 2, EverGrandeCity_Movement_EliteFourPokemonGetsInPosition
-# 227 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	delay 8
-# 228 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_Movement_PlayerPokemonGetsInPosition
-# 229 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	waitmovement 0
+# 227 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 228 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	applymovement 2, EverGrandeCity_Movement_EliteFourPokemonGetsInPosition
+# 229 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	delay 8
 # 230 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	applymovement OBJ_EVENT_ID_FOLLOWER, EverGrandeCity_Movement_PlayerPokemonGetsInPosition
+# 231 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	waitmovement 0
+# 232 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	delay 30
 	return
 
 EliteFour_EventScript_PlayerGetsInPosition_3:
-# 197 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 199 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth
-# 198 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 200 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	waitmovement 0
 	goto EliteFour_EventScript_PlayerGetsInPosition_1
 
 EliteFour_EventScript_PlayerGetsInPosition_4:
-# 201 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionSouth
-# 202 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	delay 8
 # 203 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionSouth
 # 204 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	delay 8
+# 205 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown
+# 206 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto EliteFour_EventScript_PlayerGetsInPosition_1
 
 EliteFour_EventScript_PlayerGetsInPosition_5:
-# 207 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionWest
-# 208 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	delay 8
 # 209 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionWest
 # 210 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	delay 8
+# 211 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceDown
+# 212 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto EliteFour_EventScript_PlayerGetsInPosition_1
 
 
-# 234 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth:
-# 235 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
-# 235 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
 # 236 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionNorth:
+# 237 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 237 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 238 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 239 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 241 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionSouth:
-# 240 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_right
-# 241 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
-# 241 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
-# 241 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
-# 241 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
 # 242 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_left
-# 243 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_in_place_up
-	step_end
-
-# 246 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionWest:
-# 247 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
-# 247 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
-# 247 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
-# 248 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_left
-# 249 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_in_place_up
-	step_end
-
-# 252 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-EverGrandeCity_Movement_EliteFourPokemonGetsInPosition:
-# 253 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_down
-# 254 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	walk_right
+# 243 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 243 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 243 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 243 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 244 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_left
+# 245 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_in_place_up
+	step_end
+
+# 248 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+EverGrandeCity_SidneysRoom_Movement_PlayerGetsInPositionWest:
+# 249 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 249 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 249 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 250 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_left
+# 251 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_in_place_up
+	step_end
+
+# 254 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+EverGrandeCity_Movement_EliteFourPokemonGetsInPosition:
 # 255 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_down
+# 256 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_right
+# 257 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 258 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-EverGrandeCity_Movement_PlayerPokemonGetsInPosition:
-# 259 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_up
 # 260 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	walk_right
+EverGrandeCity_Movement_PlayerPokemonGetsInPosition:
 # 261 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_up
+# 262 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	walk_right
+# 263 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	walk_in_place_up
 	step_end
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_0:
-# 130 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 131 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "{PLAYER}!\n It's good to see you again!\p Did you happen to find anything out\n with that legend I told you about?$"
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_1:
-# 135 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 136 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "Yeah! Thanks for the info.$"
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_2:
-# 135 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 136 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "No…$"
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_3:
-# 137 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 138 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "Oh, I'm glad it worked out!\p I'm so happy you and JAMES have had\n fun exploring this region.$"
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_4:
-# 142 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 143 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "Oh… Well maybe it was just\n an urban legend.\p Either way, I'm glad you and JAMES have\n had fun exploring this region.$"
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_5:
-# 149 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "{PLAYER}!\n It's good to see you again!\p You look like more mature now.\n I'm glad you and JAMES have had fun\l exploring this region.$"
+# 150 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	.string "{PLAYER}!\n It's good to see you again!\l You look more mature now.\p I'm glad you and JAMES have had fun\n exploring this region.$"
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_6:
-# 157 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 158 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "Anyways, let me stop getting\n off topic.\p I'm excited to see how much stronger\n you've gotten!$"
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_7:
-# 167 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 168 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "I won't be holding back this time!$"
 
 EverGrandeCity_SidneysRoom_EventScript_Misa_Text_8:
-# 171 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+# 172 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "Nice job, {PLAYER}!$"
 
 EverGrandeCity_SidneysRoom_EventScript_MisaPostBattleSpeech_Text_0:
-# 184 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "Wow, {PLAYER}.\p You've really grown a lot since the last\n time!\p This mommy is proud of you! I know\n you'll do great on your next battle!$"
+# 186 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
+	.string "Wow, {PLAYER}!\p You've really grown a lot since the last\n time!\p This mommy is proud of you! I know\n you'll do great on your next battle!$"

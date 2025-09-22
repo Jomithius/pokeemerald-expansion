@@ -127,152 +127,156 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 # 64 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	setflag FLAG_DEFEATED_ELITE_4_GLACIA
 # 65 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	call Common_EventScript_OutOfCenterPartyHeal
 # 66 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 67 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	release
+	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 # 68 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	end
+	release
 # 69 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-
+	end
 # 70 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
+
 # 71 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "Welcome! I'm XION\n"
+EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 # 72 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "of the ELITE FOUR.\p"
+	.string "Welcome! I'm XION\n"
 # 73 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "Are you the TRAINER that MISA\n"
+	.string "of the ELITE FOUR.\p"
 # 74 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "had talked about?\p"
+	.string "Are you the TRAINER that MISA\n"
 # 75 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "Not many TRAINERS can usually\n"
+	.string "had talked about?\p"
 # 76 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "make it this far.\p"
+	.string "Not many TRAINERS can usually\n"
 # 77 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "Let me find out if you're\n"
+	.string "make it this far.\p"
 # 78 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "able to pass me!$"
+	.string "Let me find out if you're\n"
 # 79 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-
+	.string "able to pass me!$"
 # 80 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-EverGrandeCity_GlaciasRoom_Text_Defeat:
-# 81 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "Wow…\n"
-# 82 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "I knew you had potential.$"
-# 83 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 
+# 81 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+EverGrandeCity_GlaciasRoom_Text_Defeat:
+# 82 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	.string "Wow…\n"
+# 83 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	.string "I knew you had potential.$"
 # 84 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
+
 # 85 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "Go on to the next room.\p"
+EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 # 86 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "And there, witness the truly fearsome\n"
+	.string "Go on to the next room.\p"
 # 87 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	.string "And there, witness the truly fearsome\n"
+# 88 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "side of the POKéMON LEAGUE.$"
 
 EverGrandeCity_GlaciasRoom_EventScript_Xion::
-# 91 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 92 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	msgbox EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech, MSGBOX_DEFAULT
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 93 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
+	msgbox EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech, MSGBOX_DEFAULT
 # 94 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
+# 95 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
 
 
 EverGrandeCity_GlaciasRoom_EventScript_Leafeon::
-# 107 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	lock
 # 108 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	faceplayer
+	lock
 # 109 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	playmoncry SPECIES_LEAFEON, CRY_MODE_ENCOUNTER
+	faceplayer
 # 110 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	delay 24
+	playmoncry SPECIES_LEAFEON, CRY_MODE_ENCOUNTER
 # 111 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	applymovement 2, Common_Movement_FaceOriginalDirection
+	delay 24
 # 112 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmovement 2
+	applymovement 2, Common_Movement_FaceOriginalDirection
 # 113 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	waitmovement 2
+# 114 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch::
-# 119 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	lock
 # 120 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	lock
 # 121 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 122 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	clearflag FLAG_TEMP_E
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 123 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	clearflag FLAG_TEMP_E
+# 124 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	msgbox EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_0, MSGBOX_AUTOCLOSE
-# 127 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmessage
 # 128 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	call EliteFour_EventScript_PlayerGetsInPosition
-# 129 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	playfirstmoncry
-# 130 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmoncry
-# 131 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	playmoncry SPECIES_LEAFEON, CRY_MODE_ENCOUNTER
-# 132 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmoncry
-# 133 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	msgbox EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_1, MSGBOX_AUTOCLOSE
-# 134 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	waitmessage
+# 129 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	call EliteFour_EventScript_PlayerGetsInPosition
+# 130 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	playfirstmoncry
+# 131 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	waitmoncry
+# 132 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	playmoncry SPECIES_LEAFEON, CRY_MODE_ENCOUNTER
+# 133 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	waitmoncry
+# 134 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	msgbox EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_1, MSGBOX_AUTOCLOSE
 # 135 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	setflag FLAG_DEFEATED_ELITE_4_GLACIA
+	waitmessage
 # 136 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	setflag FLAG_DEFEATED_XION
+	setflag FLAG_DEFEATED_ELITE_4_GLACIA
 # 137 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_XION, EverGrandeCity_GlaciasRoom_Text_Defeat
+	setflag FLAG_DEFEATED_XION
 # 138 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+	trainerbattle_no_intro TRAINER_XION, EverGrandeCity_GlaciasRoom_Text_Defeat
 # 139 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
 # 140 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	callnative RemoveFollowingPokemon
+	waitmovement 0
 # 141 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	setflag FLAG_TEMP_E
+	callnative RemoveFollowingPokemon
 # 142 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	setflag FLAG_TEMP_E
 # 143 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 144 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 145 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+# 146 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	goto EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech
 	end
 
 
 EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech::
-# 149 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 151 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	msgbox EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech_Text_0, MSGBOX_DEFAULT
-# 155 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 157 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	release
 	end
 
 
 EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_0:
-# 123 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 124 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "{PLAYER}!\n You look well. I'm glad.\p It seems like your travels have\n caused you to get even stronger!$"
 
 EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch_Text_1:
-# 133 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 134 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "Let's see if you can match my freak!$"
 
 EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech_Text_0:
-# 149 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 151 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "I'm impressed, {PLAYER}!\n You really beat me.\p Be careful on your next battle.\p DAVE was pretty mad when he lost\n to you last time.\p He might be planning something.$"
 
 EverGrandeCity_GlaciasRoom_Text_XionIntroSpeech::
-# 98 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
+# 99 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "Oh, you're that TRAINER I met in\n VERDANTURF! So you made it this far.\l Again, I'm XION of the ELITE FOUR.\p Let me see how strong you've\n gotten since then!$"

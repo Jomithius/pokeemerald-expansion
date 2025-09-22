@@ -62,6 +62,7 @@ EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech::
 
 EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_GLACIA
+	call Common_EventScript_OutOfCenterPartyHeal
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
@@ -140,6 +141,7 @@ script EverGrandeCity_GlaciasRoom_EventScript_XionFinalRematch{
     callnative(RemoveFollowingPokemon)
     setflag(FLAG_TEMP_E)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+	call(Common_EventScript_OutOfCenterPartyHeal)
 	call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	goto(EverGrandeCity_GlaciasRoom_EventScript_XionPostBattleSpeech)
 	end
