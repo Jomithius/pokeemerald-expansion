@@ -611,7 +611,7 @@ RustboroCity_EventScript_ReturnGoods::
 	setflag FLAG_RECEIVED_EXP_SHARE
 	setflag FLAG_I_EXP_SHARE
 	call_if_eq VAR_RESULT, FALSE, RustboroCity_EventScript_BagFull
-	msgbox RustboroCity_DevonCorp_3F_Text_ExplainExpShare, MSGBOX_DEFAULT
+	msgbox RustboroCity_Text_ExplainExpShare, MSGBOX_DEFAULT
 	msgbox RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_RETURNED_DEVON_GOODS
@@ -1498,7 +1498,7 @@ script RustboroCity_EventScript_ExplainIVsEVs{
 }
 
 script RustboroCity_EventScript_ImportanceOfStatEditor{
-	if(var(VAR_DIFFICULTY) == DIFFICULTY_HARD){
+	if(flag(FLAG_SYS_HARD_MODE)){
 		msgbox("{COLOR RED}{SHADOW LIGHT_RED}The STAT EDITOR is an extremely useful\n
 		mechanic to take advantage of.\p
 		While complex EV spreads aren't needed,\n
@@ -1513,6 +1513,14 @@ script RustboroCity_EventScript_ImportanceOfStatEditor{
 	}
 	waitmessage
 	return
+}
+
+text RustboroCity_Text_ExplainExpShare{
+	"The EXP. SHARE is a very useful item\n
+	that gives all your POKéMON EXP.\l
+	from battles.\p
+	To use it, turn it on in the KEY\n
+	ITEMS section of your bag."
 }
 
 movement RustboroExclaim {emote_exclamation_mark}
