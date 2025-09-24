@@ -194,10 +194,10 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-	giveitem ITEM_POKE_FLUTE
-	setvar VAR_BALDESIA_FOREST_STATE, 1
-	setvar VAR_BALDESIA_FOREST_DOJO_STATE, 3
-	warp MAP_BALDESIAN_FOREST_DOJO, 8, 19
+	setvar VAR_MISA_STATE, 7
+	setvar VAR_CEO_STATE, 1
+	clearflag FLAG_HIDE_EMO_LILYCOVE
+	warp MAP_LILYCOVE_CITY, 58, 36
 	waitstate
 	release
 	end

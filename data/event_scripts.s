@@ -1229,7 +1229,6 @@ Common_Mart_StaffEmployee:
 	.2byte ITEM_MIRROR_HERB
 	.2byte ITEM_ROOM_SERVICE
     .2byte ITEM_AIR_BALLOON
-    .2byte ITEM_LIFE_ORB
     .2byte ITEM_ASSAULT_VEST
     .2byte ITEM_SITRUS_BERRY
     .2byte ITEM_HEAVY_DUTY_BOOTS

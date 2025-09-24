@@ -79,9 +79,10 @@ script LilycoveCity_HighriseFloor2_EventScript_CeoMeeting{
     msgbox("Great!\p
         Now that that's figured out, I have one\n
         more thing for you.\p
-        When we battled, there was a POKéMON\n
-        you had never seen before, right?\l
-        That POKéMON's from NORTHERN HOENN.\p
+        When we battled, there were POKéMON\n
+        you had never seen before, right?\p
+        Those POKéMON are only found in\n
+        NORTHERN HOENN.\p
         I think you know where this is going.\n
         Go ahead, PROF.", MSGBOX_DEFAULT)
     waitmessage
@@ -367,22 +368,22 @@ text LilycoveCity_HighriseFloor2_Text_Jimmy3{
     In that remote part of the region, there\n
     are POKéMON you've never seen before.\p
     You may be CHAMPION, but there's still\n
-    parts of this region to explore.\l
-    After you return, I want you to go and\l
-    challenge all the GYM LEADERS again.\l
-    And, of course, the ELITE FOUR.\l
+    parts of this region to explore.\p
+    After you return, I want you to go and\n
+    challenge all the GYM LEADERS again.\p
+    And, of course, the ELITE FOUR.\n
     Next time, they won't hold back."
 }
 
 text LilycoveCity_HighriseFloor2_Text_Jimmy4{
-    "I knew you'd be down for an adventure!\n
-    JAMES is already out there on another\l
-    job I asked him to work on.\l
-    You'll probably run into him at some\l 
+    "I knew you'd be down for an adventure!\p
+    JAMES is already out there on another\n
+    job I asked him to work on.\p
+    You'll probably run into him at some\n
     point.\p
     Then, after you return, I want you to\n
-    challenge all the GYM LEADERS again.\l
-    And, of course, the ELITE FOUR.\l
+    challenge all the GYM LEADERS again.\p
+    And, of course, the ELITE FOUR.\n
     Next time, they won't hold back."
 }
 

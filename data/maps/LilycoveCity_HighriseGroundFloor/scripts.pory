@@ -122,8 +122,8 @@ script LilycoveCity_HighriseGroundFloor_EventScript_Gentleman{
 
 script LilycoveCity_HighriseGroundFloor_EventScript_Maniac{
     msgbox("I heard rumors that the CEO has\n
-        experience with things of the occult.\l
-        Namely, the void…\l
+        experience with things of the occult.\p
+        Namely, the void…\n
         I'm going to ask him about it.", MSGBOX_NPC)
     end
 }

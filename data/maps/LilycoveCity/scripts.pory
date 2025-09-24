@@ -742,7 +742,13 @@ script LilycoveCity_EventScript_EmoBully{
     waitmovement(0)
     callnative(RemoveFollowingPokemon)
     fadenewbgm(MUS_NONE)
-    msgbox(LilycoveCity_Text_BullyMan1, MSGBOX_AUTOCLOSE)
+	applymovement(24, Common_Movement_WalkInPlaceRight)
+	waitmovement(24)
+    msgbox(LilycoveCity_Text_BullyMan1, MSGBOX_DEFAULT)
+    waitmessage
+	applymovement(25, Common_Movement_WalkInPlaceRight)
+	waitmovement(25)
+	msgbox(LilycoveCity_Text_BullyKid1, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(26, Common_Movement_WalkInPlaceDown)
     waitmovement(26)
@@ -751,7 +757,13 @@ script LilycoveCity_EventScript_EmoBully{
     waitmessage
     applymovement(26, Common_Movement_WalkInPlaceRight)
     waitmovement(26)
-    msgbox(LilycoveCity_Text_BullyMan2, MSGBOX_AUTOCLOSE)
+	applymovement(24, Common_Movement_WalkInPlaceRight)
+	waitmovement(24)
+    msgbox(LilycoveCity_Text_BullyMan2, MSGBOX_DEFAULT)
+    waitmessage
+	applymovement(25, Common_Movement_WalkInPlaceRight)
+	waitmovement(25)
+	msgbox(LilycoveCity_Text_BullyKid2, MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(26, Common_Movement_WalkInPlaceDown)
     waitmovement(26)
@@ -763,15 +775,17 @@ script LilycoveCity_EventScript_EmoBully{
     delay(20)
     applymovement(23, Common_Movement_WalkInPlaceDown)
     waitmovement(23)
+	applymovement(24, Common_Movement_WalkInPlaceRight)
+	waitmovement(24)
     msgbox(LilycoveCity_Text_BullyMan3, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(23, Common_Movement_WalkRight)
+	applymovement(23, Common_Movement_WalkInPlaceLeft)
     waitmovement(23)
     delay(30)
     msgbox(LilycoveCity_Text_Emo1, MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(23, Common_Movement_WalkInPlaceLeft)
-    waitmovement(23)
+	applymovement(23, LilycoveCity_Movement_WalkBackRight)
+    delay(16)
     applymovement(24, Common_Movement_WalkRight)
     delay(10)
     applymovement(25, Common_Movement_WalkRight)
@@ -827,20 +841,20 @@ script LilycoveCity_EventScript_EmoBully{
     msgbox("JAMES: Thanks, guys.", MSGBOX_AUTOCLOSE)
     waitmessage
     playmoncry(SPECIES_TYPHLOSION_HISUI, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     applymovement(27, LilycoveCity_Movement_EnterPokeball)
     waitmovement(27)
     removeobject(27)
     delay(20)
     playmoncry(SPECIES_MORGREM, CRY_MODE_ENCOUNTER)
-    delay(30)
+    waitmoncry
     applymovement(28, LilycoveCity_Movement_EnterPokeball)
     waitmovement(28)
     removeobject(28)
     delay(10)
     applymovement(23, LilycoveCity_Movement_Emo)
     waitmovement(23)
-    msgbox("JAMES: …\p So you saw that.", MSGBOX_AUTOCLOSE)
+    msgbox("JAMES: …\n So you saw that.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(23, Common_Movement_WalkRight)
     waitmovement(23)
@@ -860,6 +874,7 @@ script LilycoveCity_EventScript_EmoBully{
     waitmovement(23)
     removeobject(23)
     delay(20)
+	savebgm(MUS_DUMMY)
     fadedefaultbgm
 	callnative(UpdateFollowingPokemon)
     setvar(VAR_MISA_STATE, 8)
@@ -873,8 +888,11 @@ script LilycoveCity_EventScript_EmoBully{
 text LilycoveCity_Text_BullyMan1{
     "BOY: What are you doing in LILYCOVE?\n
     I'm surprised a little nerd like you\l
-    actually left your house!\p
-	KID: Haha, for real!\n
+    actually left your house!"
+}
+
+text LilycoveCity_Text_BullyKid1{
+    "KID: Haha, for real!\n
     Are you still acting like a weirdo?\l
     “Oh, the abyss is calling me…”"
 }
@@ -885,12 +903,15 @@ text LilycoveCity_Text_BullyGirl1{
 }
 
 text LilycoveCity_Text_BullyMan2{
-    "BOY: Seriously, I thought I'd never\n
-    have to see you and your lame acting\l
-    again after I moved.\p
+    "BOY: For real. I thought I'd never have\n
+    to see you and your lame acting again\l
+    after I moved.\p
     Acting all cocky just because your\n
-    mom's a strong TRAINER.\p
-	KID: Yeah!\n
+    mom's a strong TRAINER."
+}
+
+text LilycoveCity_Text_BullyKid2{
+    "KID: Yeah!\n
     You probably got all those badges\l
     using your mommy's POKéMON."
 }
@@ -911,16 +932,16 @@ text LilycoveCity_Text_BullyMan3{
 }
 
 text LilycoveCity_Text_Emo1{
-    "JAMES: …\p
-    I don't have anything to say to you.\p
+    "JAMES: … I…\n
+    I-I don't have anything to say to you.\p
 	BOY: What was that?!\p
 	KID: You…!"
 }
 
 text LilycoveCity_Text_Emo2{
-    "That guy…\n
-    Was the reason I stopped going\l
-    to school.\p
+    "That guy…\p
+    That guy was the reason I stopped\n
+    going to school.\p
     My mom found out what was happening\n
     and suddenly he moved away.\p
     I guess his friends still visit\n
@@ -930,7 +951,7 @@ text LilycoveCity_Text_Emo2{
 text LilycoveCity_Text_Emo3{
     "Either way, I'm…\n
     I'm a different person now.\l
-    I have my friends with me.\p
+    I have my POKéMON with me.\p
     Even if…\p
     …"
 }

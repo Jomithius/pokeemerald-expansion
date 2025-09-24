@@ -170,7 +170,7 @@ LilycoveCity_HighriseGroundFloor_EventScript_Gentleman_Text_0:
 
 LilycoveCity_HighriseGroundFloor_EventScript_Maniac_Text_0:
 # 124 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	.string "I heard rumors that the CEO has\n experience with things of the occult.\l Namely, the void…\l I'm going to ask him about it.$"
+	.string "I heard rumors that the CEO has\n experience with things of the occult.\p Namely, the void…\n I'm going to ask him about it.$"
 
 LilycoveCity_HighriseGroundFloor_Text_Attendant::
 # 61 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
