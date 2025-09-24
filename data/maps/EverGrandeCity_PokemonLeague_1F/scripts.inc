@@ -530,7 +530,7 @@ EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices_23:
 
 EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices_24:
 # 246 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	goto MoveTutor_EventScript_BodyPressTeach
+	goto MoveTutor_EventScript_StickyWebTeach
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices_1
 
 EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices_25:
@@ -833,11 +833,11 @@ MoveTutor_EventScript_MoonblastTeach::
 	end
 
 
-MoveTutor_EventScript_BodyPressTeach::
+MoveTutor_EventScript_StickyWebTeach::
 # 445 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	msgbox MoveTutor_EventScript_BodyPressTeach_Text_0, MSGBOX_DEFAULT
+	msgbox MoveTutor_EventScript_StickyWebTeach_Text_0, MSGBOX_DEFAULT
 # 446 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	setvar VAR_0x8005, MOVE_BODY_PRESS
+	setvar VAR_0x8005, MOVE_STICKY_WEB
 # 447 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 448 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
@@ -1261,7 +1261,7 @@ EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices_Text_21:
 
 EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices_Text_22:
 # 201 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.string "BODY PRESS$"
+	.string "STICKY WEB$"
 
 MoveTutor_EventScript_PsychicNoiseTeach_Text_0:
 # 256 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
@@ -1309,7 +1309,7 @@ MoveTutor_EventScript_TeleportTeach_Text_0:
 
 MoveTutor_EventScript_HeatWaveTeach_Text_0:
 # 355 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.string "Which POKéMON do you want to\nteach BRAVE BIRD to?$"
+	.string "Which POKéMON do you want to\nteach HEAT WAVE to?$"
 
 MoveTutor_EventScript_RisingVoltageTeach_Text_0:
 # 364 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
@@ -1347,9 +1347,9 @@ MoveTutor_EventScript_MoonblastTeach_Text_0:
 # 436 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	.string "Which POKéMON do you want to\nteach MOONBLAST to?$"
 
-MoveTutor_EventScript_BodyPressTeach_Text_0:
+MoveTutor_EventScript_StickyWebTeach_Text_0:
 # 445 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.string "Which POKéMON do you want to\nteach BODY PRESS to?$"
+	.string "Which POKéMON do you want to\nteach STICKY WEB to?$"
 
 EverGrandeCity_PokemonLeague_1F_EventScript_Youngster_Text_0:
 # 454 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"

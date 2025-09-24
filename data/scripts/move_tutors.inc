@@ -321,5 +321,5 @@ MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_TRIPLE_AXEL
 	setvar VAR_0x8005, MOVE_ROCK_BLAST
 	setvar VAR_0x8005, MOVE_TAIL_SLAP
-	setvar VAR_0x8005, MOVE_BODY_PRESS
+	setvar VAR_0x8005, MOVE_STICKY_WEB
 	end

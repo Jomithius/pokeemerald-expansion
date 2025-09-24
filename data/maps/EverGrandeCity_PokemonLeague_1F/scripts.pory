@@ -198,7 +198,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 	msgbox("What move do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "PSYCHIC NOISE", "EXPANDING FORCE", "BREAKING SWIPE", "SLUDGE WAVE", 
 		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT", "HEAT WAVE",
-		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "IRON HEAD", "POLTERGEIST", "SWAGGER", "FLATTER", "TAILWIND", "MOONBLAST", "BODY PRESS")
+		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "IRON HEAD", "POLTERGEIST", "SWAGGER", "FLATTER", "TAILWIND", "MOONBLAST", "STICKY WEB")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_PsychicNoiseTeach)
@@ -243,7 +243,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 		case 20:
 			goto(MoveTutor_EventScript_MoonblastTeach)
 		case 21:
-			goto(MoveTutor_EventScript_BodyPressTeach)
+			goto(MoveTutor_EventScript_StickyWebTeach)
 		case MULTI_B_PRESSED:
 			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 		default:
@@ -352,7 +352,7 @@ script MoveTutor_EventScript_TeleportTeach{
 }
 
 script MoveTutor_EventScript_HeatWaveTeach{
-	msgbox("Which POKéMON do you want to\nteach BRAVE BIRD to?", MSGBOX_DEFAULT)
+	msgbox("Which POKéMON do you want to\nteach HEAT WAVE to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_HEAT_WAVE)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
@@ -441,9 +441,9 @@ script MoveTutor_EventScript_MoonblastTeach{
 	end
 }
 
-script MoveTutor_EventScript_BodyPressTeach{
-	msgbox("Which POKéMON do you want to\nteach BODY PRESS to?", MSGBOX_DEFAULT)
-	setvar(VAR_0x8005, MOVE_BODY_PRESS)
+script MoveTutor_EventScript_StickyWebTeach{
+	msgbox("Which POKéMON do you want to\nteach STICKY WEB to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_STICKY_WEB)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
