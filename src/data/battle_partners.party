@@ -50,20 +50,21 @@ Pic: Momo
 Gender: Female
 Music: Female
 
-Greninja-Bond (M) @ Assault Vest  
-Ability: Battle Bond   
+Greninja (M) @ Wise Glasses 
+Ability: Protean
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-Level: 90
+Level: 95
 - Water Shuriken 
-- Icy Wind  
+- Grass Knot  
 - Dark Pulse  
 - Sludge Bomb
 
 Skeledirge @ Throat Spray 
 Ability: Unaware
-Level: 90  
-Shiny: Yes    
+Level: 95  
+Shiny: Yes
+Tera Type: Water    
 EVs: 248 HP / 8 SpA / 252 SpD  
 Calm Nature  
 IVs: 0 Atk  
@@ -74,12 +75,13 @@ IVs: 0 Atk
 
 Krookodile (M) @ Leftovers  
 Ability: Intimidate
-Level: 90  
-Shiny: Yes    
+Level: 95  
+Shiny: Yes
+EVs: 252 Atk / 252 Spe      
 - Breaking Swipe  
 - Rock Slide  
 - Darkest Lariat  
-- Earthquake  
+- High Horsepower  
 
 === PARTNER_MOMO ===
 Name: MOMO
@@ -91,7 +93,8 @@ Difficulty: Easy
 
 Pikachu (F) @ Light Ball  
 Ability: Static  
-EVs: 252 Atk / 4 SpA / 252 Spe  
+EVs: 252 Atk / 4 SpA / 252 Spe 
+Tera Type: Flying
 Hasty Nature  
 - Nuzzle  
 - Volt Tackle  
@@ -100,8 +103,8 @@ Hasty Nature
 
 Skeledirge @ Throat Spray 
 Ability: Unaware
-Level: 90  
-Shiny: Yes    
+Level: 100
+Shiny: Yes   
 EVs: 248 HP / 8 SpA / 252 SpD  
 Calm Nature  
 IVs: 0 Atk  
@@ -112,9 +115,10 @@ IVs: 0 Atk
 
 Krookodile (M) @ Leftovers  
 Ability: Intimidate
-Level: 90  
-Shiny: Yes    
+Level: 100  
+Shiny: Yes
+EVs: 252 Atk / 252 Spe      
 - Breaking Swipe  
 - Rock Slide  
 - Darkest Lariat  
-- Stomping Tantrum  
+- High Horsepower  

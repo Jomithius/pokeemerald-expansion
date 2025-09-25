@@ -14,7 +14,7 @@ script BaldesianForest_OnResume{
         goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
         goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
         goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
-        if(var(VAR_LAST_TALKED) == LOCALID_LANDORUS | LOCALID_THUNDURUS | LOCALID_TORNADUS | LOCALID_ENAMORUS){
+        if(var(VAR_LAST_TALKED) == LOCALID_LANDORUS || var(VAR_LAST_TALKED) == LOCALID_THUNDURUS || var(VAR_LAST_TALKED) == LOCALID_TORNADUS || var(VAR_LAST_TALKED) == LOCALID_ENAMORUS){
            removeobject(VAR_LAST_TALKED) 
         }
     }

@@ -130,26 +130,26 @@ F_TRAINER_FEMALE |
         {
             {
 #line 53
-            .species = SPECIES_GRENINJA_BOND,
+            .species = SPECIES_GRENINJA,
 #line 53
             .gender = TRAINER_MON_MALE,
 #line 53
-            .heldItem = ITEM_ASSAULT_VEST,
+            .heldItem = ITEM_WISE_GLASSES,
 #line 55
             .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 4),
 #line 58
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 54
-            .ability = ABILITY_BATTLE_BOND,
+            .ability = ABILITY_PROTEAN,
 #line 57
-            .lvl = 90,
+            .lvl = 95,
 #line 56
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 58
                 MOVE_WATER_SHURIKEN,
-                MOVE_ICY_WIND,
+                MOVE_GRASS_KNOT,
                 MOVE_DARK_PULSE,
                 MOVE_SLUDGE_BOMB,
             },
@@ -160,21 +160,23 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 63
             .heldItem = ITEM_THROAT_SPRAY,
-#line 67
+#line 68
             .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
-#line 69
+#line 70
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 64
             .ability = ABILITY_UNAWARE,
 #line 65
-            .lvl = 90,
-#line 68
+            .lvl = 95,
+#line 69
             .nature = NATURE_CALM,
 #line 66
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 67
+            .teraType = TYPE_WATER,
             .moves = {
-#line 70
+#line 71
                 MOVE_TORCH_SONG,
                 MOVE_HEX,
                 MOVE_OMINOUS_WIND,
@@ -182,70 +184,74 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 75
-            .species = SPECIES_KROOKODILE,
-#line 75
-            .gender = TRAINER_MON_MALE,
-#line 75
-            .heldItem = ITEM_LEFTOVERS,
-#line 79
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 76
-            .ability = ABILITY_INTIMIDATE,
+            .species = SPECIES_KROOKODILE,
+#line 76
+            .gender = TRAINER_MON_MALE,
+#line 76
+            .heldItem = ITEM_LEFTOVERS,
+#line 80
+            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
+#line 81
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 77
-            .lvl = 90,
-            .nature = NATURE_HARDY,
+            .ability = ABILITY_INTIMIDATE,
 #line 78
+            .lvl = 95,
+            .nature = NATURE_HARDY,
+#line 79
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 79
+#line 81
                 MOVE_BREAKING_SWIPE,
                 MOVE_ROCK_SLIDE,
                 MOVE_DARKEST_LARIAT,
-                MOVE_EARTHQUAKE,
+                MOVE_HIGH_HORSEPOWER,
             },
             },
         },
     },
-#line 84
-#line 90
+#line 86
+#line 92
     [DIFFICULTY_EASY][PARTNER_MOMO] =
     {
-#line 85
-        .trainerName = _("MOMO"),
-#line 86
-        .trainerClass = TRAINER_CLASS_NINJA,
 #line 87
+        .trainerName = _("MOMO"),
+#line 88
+        .trainerClass = TRAINER_CLASS_NINJA,
+#line 89
         .trainerPic = TRAINER_BACK_PIC_MOMO,
         .encounterMusic_gender =
-#line 88
+#line 90
 F_TRAINER_FEMALE | 
-#line 89
+#line 91
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
             {
-#line 92
-            .species = SPECIES_PIKACHU,
-#line 92
-            .gender = TRAINER_MON_FEMALE,
-#line 92
-            .heldItem = ITEM_LIGHT_BALL,
 #line 94
+            .species = SPECIES_PIKACHU,
+#line 94
+            .gender = TRAINER_MON_FEMALE,
+#line 94
+            .heldItem = ITEM_LIGHT_BALL,
+#line 96
             .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 4, 0),
-#line 96
+#line 99
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 93
-            .ability = ABILITY_STATIC,
-#line 96
-            .lvl = 100,
 #line 95
+            .ability = ABILITY_STATIC,
+#line 99
+            .lvl = 100,
+#line 98
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 97
+            .teraType = TYPE_FLYING,
             .moves = {
-#line 96
+#line 99
                 MOVE_NUZZLE,
                 MOVE_VOLT_TACKLE,
                 MOVE_ALLURING_VOICE,
@@ -253,26 +259,26 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 101
+#line 104
             .species = SPECIES_SKELEDIRGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 101
-            .heldItem = ITEM_THROAT_SPRAY,
-#line 105
-            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
-#line 107
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 102
-            .ability = ABILITY_UNAWARE,
-#line 103
-            .lvl = 90,
-#line 106
-            .nature = NATURE_CALM,
 #line 104
+            .heldItem = ITEM_THROAT_SPRAY,
+#line 108
+            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
+#line 110
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 105
+            .ability = ABILITY_UNAWARE,
+#line 106
+            .lvl = 100,
+#line 109
+            .nature = NATURE_CALM,
+#line 107
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 108
+#line 111
                 MOVE_TORCH_SONG,
                 MOVE_HEX,
                 MOVE_SLACK_OFF,
@@ -280,28 +286,30 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 113
-            .species = SPECIES_KROOKODILE,
-#line 113
-            .gender = TRAINER_MON_MALE,
-#line 113
-            .heldItem = ITEM_LEFTOVERS,
-#line 117
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 114
-            .ability = ABILITY_INTIMIDATE,
-#line 115
-            .lvl = 90,
-            .nature = NATURE_HARDY,
 #line 116
+            .species = SPECIES_KROOKODILE,
+#line 116
+            .gender = TRAINER_MON_MALE,
+#line 116
+            .heldItem = ITEM_LEFTOVERS,
+#line 120
+            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
+#line 121
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 117
+            .ability = ABILITY_INTIMIDATE,
+#line 118
+            .lvl = 100,
+            .nature = NATURE_HARDY,
+#line 119
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 117
+#line 121
                 MOVE_BREAKING_SWIPE,
                 MOVE_ROCK_SLIDE,
                 MOVE_DARKEST_LARIAT,
-                MOVE_STOMPING_TANTRUM,
+                MOVE_HIGH_HORSEPOWER,
             },
             },
         },

@@ -13852,7 +13852,7 @@ EVs: 252 HP / 252 Atk / 4 Def
 Adamant Nature  
 - Ice Fang  
 - Psychic Fangs  
-- Fishious Rend  
+- Liquidation 
 - Aqua Jet  
 
 Kingambit  
@@ -13881,8 +13881,7 @@ Ability: Oblivious
 - Order Up  
 
 Hydrapple @ White Herb  
-Ability: Supersweet Syrup  
-Tera Type: Dragon 
+Ability: Supersweet Syrup   
 Bold Nature  
 IVs: 0 Atk  
 - Nasty Plot  
@@ -33654,21 +33653,22 @@ Difficulty: Easy
 Tatsugiri  
 Ability: Commander  
 Timid Nature  
-IVs: 0 Atk  
+IVs: 0 Atk / 0 SpA  
 - Surf  
 - Draco Meteor  
 
 Feraligatr @ Feraligite
 Ability: Sheer Force  
 Adamant Nature  
+IVs: 0 Atk / 0 Spe
 - Ice Fang   
-- Fishious Rend  
+- Aqua Tail 
 - Aqua Jet 
 
 Kingambit
 Ability: Supreme Overlord  
-Tera Type: Flying 
-Adamant Nature   
+Adamant Nature
+IVs: 0 Atk / 0 Spe   
 - Kowtow Cleave  
 - Iron Head  
 - Low Kick
@@ -33691,7 +33691,6 @@ Ability: Oblivious
 
 Hydrapple 
 Ability: Supersweet Syrup  
-Tera Type: Dragon 
 Bold Nature  
 IVs: 0 Atk  
 - Fickle Beam  
@@ -33700,7 +33699,7 @@ IVs: 0 Atk
 Roserade @ Roserite
 Ability: Technician  
 Timid Nature  
-IVs: 0 Atk  
+IVs: 0 Atk / 0 Spe
 - Sludge Bomb  
 - Dazzling Gleam  
 - Leaf Storm  

@@ -22,7 +22,16 @@ BaldesianForest_OnResume_2:
 # 16 "data/maps/BaldesianForest/scripts.pory"
 	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn
 # 17 "data/maps/BaldesianForest/scripts.pory"
-	compare VAR_LAST_TALKED, 1 | 2 | 3 | 4
+	compare VAR_LAST_TALKED, 1
+	goto_if_eq BaldesianForest_OnResume_4
+# 17 "data/maps/BaldesianForest/scripts.pory"
+	compare VAR_LAST_TALKED, 2
+	goto_if_eq BaldesianForest_OnResume_4
+# 17 "data/maps/BaldesianForest/scripts.pory"
+	compare VAR_LAST_TALKED, 3
+	goto_if_eq BaldesianForest_OnResume_4
+# 17 "data/maps/BaldesianForest/scripts.pory"
+	compare VAR_LAST_TALKED, 4
 	goto_if_eq BaldesianForest_OnResume_4
 	goto BaldesianForest_OnResume_1
 
