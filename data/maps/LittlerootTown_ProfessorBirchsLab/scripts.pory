@@ -196,11 +196,12 @@ LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone, MSGBOX_DEFAULT
-	@ playfanfare MUS_OBTAIN_ITEM
-	giveitem ITEM_SHINY_CHARM
-	@ message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
+	playfanfare MUS_OBTAIN_ITEM
+	additem ITEM_CATCHING_CHARM
+	additem ITEM_SHINY_CHARM
+	message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
 	waitmessage
-	@ waitfanfare
+	waitfanfare
 	@ setflag FLAG_SYS_NATIONAL_DEX
 	@ special EnableNationalPokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIllBeCountingOnYou, MSGBOX_DEFAULT
@@ -876,8 +877,8 @@ LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
 	.string "PROF. BIRCH: Okay, all done!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
-	.string "{PLAYER}'s POKéDEX was upgraded\n"
-	.string "with a SHINY CHARM!$"
+	.string "{PLAYER} recieved a SHINY CHARM\n"
+	.string "and CATCHING CHARM!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "PROF. BIRCH: But listen.\n"

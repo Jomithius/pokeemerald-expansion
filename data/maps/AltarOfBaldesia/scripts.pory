@@ -311,7 +311,12 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     waitmovement(9)
     playmoncry(SPECIES_PECHARUNT, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_PECHARUNT, 100)
+    if(flag(FLAG_SYS_HARD_MODE)){
+        setwildbattle(SPECIES_PECHARUNT, 100)
+    }
+    else{
+        setwildbattle(SPECIES_PECHARUNT, 90)
+    }
     setflag(FLAG_SYS_NO_RUNNING)
     setflag(FLAG_SYS_NO_CATCHING)
     setflag(FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR)

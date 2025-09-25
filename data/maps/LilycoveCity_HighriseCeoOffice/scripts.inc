@@ -385,7 +385,7 @@ LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves::
 # 220 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	setvar VAR_ULTRA_SPACE_STATE, 0
 # 221 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 0
+	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 1
 # 222 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	call LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags
 # 223 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
