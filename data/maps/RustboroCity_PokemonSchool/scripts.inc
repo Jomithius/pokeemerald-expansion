@@ -1166,91 +1166,91 @@ RustboroCity_PokemonSchool_EventScript_ExplainMegaEvolution::
 RustboroCity_PokemonSchool_EventScript_ExplainTera::
 # 815 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	msgbox RustboroCity_PokemonSchool_EventScript_ExplainTera_Text_0, MSGBOX_DEFAULT
+# 843 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	waitmessage
 # 844 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	waitmessage
-# 845 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	msgbox RustboroCity_PokemonSchool_EventScript_ExplainTera_Text_1, MSGBOX_YESNO
-# 847 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 846 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	waitmessage
-# 848 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 847 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	call_if_lt VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter
-# 849 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 848 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices
-# 850 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 849 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto_if_eq VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward
-# 851 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 850 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto RustboroCity_PokemonSchool_EventScript_TutorialDecline
-# 852 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 851 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	release
 	end
 
 
 RustboroCity_PokemonSchool_UpdateTutorialCounter::
-# 857 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 856 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	addvar VAR_TUTORIAL_COUNTER, 1
 	return
 
 
 RustboroCity_PokemonSchool_EventScript_TutorialDecline::
-# 862 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 861 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	lock
-# 863 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 862 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto_if_eq VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward
-# 864 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 863 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	msgbox RustboroCity_PokemonSchool_EventScript_TutorialDecline_Text_0, MSGBOX_AUTOCLOSE
-# 866 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 865 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	waitmessage
-# 867 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 866 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	release
 	end
 
 
 RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward::
-# 872 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 871 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	msgbox RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_Text_0, MSGBOX_DEFAULT
+# 875 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	waitmessage
 # 876 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	waitmessage
-# 877 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	giveitem ITEM_RARE_CANDY, 5
-# 878 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 877 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	waitmessage
-# 879 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 878 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto_if_unset FLAG_BADGE01_GET, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_2
-# 882 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 881 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_3
-# 885 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 884 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto_if_unset FLAG_BADGE06_GET, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_4
-# 889 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 888 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	giveitem ITEM_EXP_CANDY_XL, 10
 RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_1:
+# 890 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	waitmessage
 # 891 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	waitmessage
-# 892 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	giveitem ITEM_CHERISH_BALL, 6
+# 892 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	waitmessage
 # 893 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	waitmessage
-# 894 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	msgbox RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_Text_1, MSGBOX_AUTOCLOSE
-# 898 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 897 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	waitmessage
-# 899 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 898 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	setvar VAR_TUTORIAL_COUNTER, 11
-# 900 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 899 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	release
 	end
 
 RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_2:
-# 880 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 879 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	giveitem ITEM_EXP_CANDY_S, 10
 	goto RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_1
 
 RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_3:
-# 883 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 882 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	giveitem ITEM_EXP_CANDY_M, 10
 	goto RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_1
 
 RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_4:
-# 886 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 885 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	giveitem ITEM_EXP_CANDY_L, 10
 	goto RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_1
 
@@ -1345,7 +1345,7 @@ RustboroCity_PokemonSchool_EventScript_ExplainTerrain_Text_0:
 
 RustboroCity_PokemonSchool_EventScript_ExplainPivoting_Text_0:
 # 692 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	.string "DOUBLING is an advanced switching\n technique used to get one of your\l other POKéMON in safely.\p For example, let's say you have an\n ELECTRIC-type out against a\l FIRE/GROUND-type.\p Assuming your opponent is going\n to use a GROUND-type attack, you\l don't want your WATER-type switching\l in on a move it doesn't resist.\p So instead, you switch to your\n STEEL/FLYING-type, which is immune\l to GROUND-type attacks, and then\l switch to your WATER-type on the\l expected FIRE-type attack.\p An example of a PIVOT is to switch into\n a slow and defensive POKéMON, and\l then use a switching move, such as\l VOLT SWITCH or U-TURN, which can\l let you switch into another\l POKéMON safely.\p This is why moves like TELEPORT can\n be so powerful, since they have\l negative priority, meaning they'll\l usually move last.\p Is there anything else you wanted\n me to explain?$"
+	.string "DOUBLING is an advanced switching\n technique used to get one of your\l other POKéMON in safely.\p For example, let's say you have an\n ELECTRIC-type out against a\l FIRE/GROUND-type.\p Assuming your opponent is going\n to use a GROUND-type attack, you\l don't want your WATER-type switching\l in on a move it doesn't resist.\p So instead, you switch to your\n STEEL/FLYING-type, which is immune\l to GROUND-type attacks, and next\l turn DOUBLE to your WATER-type on\l the predictable FIRE-type attack.\p An example of a PIVOT is to switch into\n a slow and defensive POKéMON, and\l then use a switching move, such as\l VOLT SWITCH or U-TURN, which can\l let you switch into another\l POKéMON safely.\p This is why moves like TELEPORT can\n be so powerful, since they have\l negative priority, meaning they'll\l usually move last.\p Is there anything else you wanted\n me to explain?$"
 
 RustboroCity_PokemonSchool_EventScript_ExplainIVsAndEVs_Text_0:
 # 729 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -1361,20 +1361,20 @@ RustboroCity_PokemonSchool_EventScript_ExplainMegaEvolution_Text_0:
 
 RustboroCity_PokemonSchool_EventScript_ExplainTera_Text_0:
 # 815 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	.string "TERASTALLIZATION is a battle mechanic\n that allows you to change your\l POKéMON's type temporarily during a\l battle.\p Similar to MEGA EVOLUTION, the type\n the POKéMON TERASTALLIZED into will\l last until the end of the battle, or\l until the POKéMON faints.\p Only one POKéMON can TERA during a\n battle, and two gimmicks can't be\l used on the same POKéMON.\p To TERASTALLIZE, press START before\n selecting your move.\p While TERASTALLIZED, POKéMON receive\n  STAB (Same Type Attack Bonus) on\l moves matching their TERA-type,\l in addition to moves matching their\l  original types.\p A POKéMON's TERA-type can be viewed\n in the summary screen.\p It will default to an existing type\n the POKéMON has. Such as:\p A mono type will have that type as\n its TERA, while a DUAL type could\l have either type as the TERA.\p TERA SHARDS are required to change\n a POKéMON's TERA-type.\p They can be bought from new vendors\n in POKé MARTS.$"
+	.string "TERASTALLIZATION is a battle mechanic\n that allows you to change your\l POKéMON's type temporarily during a\l battle.\p Similar to MEGA EVOLUTION, the type\n the POKéMON TERASTALLIZED into will\l last until the end of the battle, or\l until the POKéMON faints.\p Only one POKéMON can TERA during a\n battle, and two gimmicks can't be\l used on the same POKéMON.\p To TERASTALLIZE, press START before\n selecting your move.\p While TERASTALLIZED, POKéMON receive\n  STAB (Same Type Attack Bonus) on\l moves matching their TERA-type,\l in addition to moves matching their\l  original types.\p A POKéMON's TERA-type can be viewed\n in the summary screen.\p It will default to an existing type\n the POKéMON has.\p After using TERA, the TERA ORB needs to\n be recharged at a POKéMON CENTER.\p TERA SHARDS are required to change\n a POKéMON's TERA-type.\p They can be bought from new vendors\n in POKé MARTS.$"
 
 RustboroCity_PokemonSchool_EventScript_ExplainTera_Text_1:
-# 845 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 844 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "Is there anything else you wanted\n me to explain?$"
 
 RustboroCity_PokemonSchool_EventScript_TutorialDecline_Text_0:
-# 864 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 863 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "Okay!\n Good luck on your battles!$"
 
 RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_Text_0:
-# 872 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 871 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "Wow!\p I've never had somebody so ready to\n learn about battling!\p Here, take this a thanks for listening.$"
 
 RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_Text_1:
-# 894 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+# 893 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "I know you'll become a great TRAINER.\n I'll be rooting for you!\p If you ever need a refresher course,\n feel free to come back!$"

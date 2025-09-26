@@ -198,7 +198,8 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 	msgbox("What move do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "PSYCHIC NOISE", "EXPANDING FORCE", "BREAKING SWIPE", "SLUDGE WAVE", 
 		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT", "HEAT WAVE",
-		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "IRON HEAD", "POLTERGEIST", "SWAGGER", "FLATTER", "TAILWIND", "MOONBLAST", "STICKY WEB")
+		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "IRON HEAD", "POLTERGEIST", "SWAGGER", "FLATTER", "TAILWIND", "MOONBLAST", 
+		"STICKY WEB", "POWER GEM")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_PsychicNoiseTeach)
@@ -244,6 +245,8 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 			goto(MoveTutor_EventScript_MoonblastTeach)
 		case 21:
 			goto(MoveTutor_EventScript_StickyWebTeach)
+		case 22:
+			goto(MoveTutor_EventScript_PowerGemTeach)
 		case MULTI_B_PRESSED:
 			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 		default:
@@ -449,6 +452,16 @@ script MoveTutor_EventScript_StickyWebTeach{
 	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 	end
 }
+
+script MoveTutor_EventScript_PowerGemTeach{
+	msgbox("Which POKéMON do you want to\nteach POWER GEM to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_POWER_GEM)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
 
 script EverGrandeCity_PokemonLeague_1F_EventScript_Youngster{
 	msgbox("I made it here, but the\n

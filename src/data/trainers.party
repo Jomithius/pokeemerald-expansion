@@ -5364,10 +5364,10 @@ IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
 - Swift  
 - Hidden Power
 
-=== TRAINER_NORMAN_1 ===
+=== TRAINER_NORMAN_1 === /* FUNCTIONALLY UNUSED */
 Name: LUNA
 Class: Leader
-Pic: Luna
+Pic: Leader Norman
 Gender: Female
 Music: Female
 Double Battle: No
@@ -19213,18 +19213,78 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER === /* FUNCTIONALLY FREE */
-Name: BRENDAN
-Class: Rival
-Pic: RS Brendan
-Gender: Male
-Music: Male
+=== TRAINER_LUNA ===
+Name: LUNA
+Class: Leader
+Pic: Luna
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer 
+Mugshot: Pink
 
-Sceptile @ Sceptilite
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Linoone (F) @ Sitrus Berry  
+Ability: Gluttony  
+Level: 36  
+EVs: 248 Atk / 8 Def / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Extreme Speed  
+- Facade  
+- Shadow Claw  
+
+Alcremie @ Assault Vest  
+Ability: Sweet Veil  
+Level: 36  
+EVs: 248 HP / 12 Def / 248 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Draining Kiss  
+- Mystical Fire  
+- Magical Leaf  
+- Psyshock  
+
+Salazzle-Totem @ Charcoal  
+Ability: Corrosion  
+Level: 36  
+EVs: 248 SpA / 4 SpD / 248 Spe  
+Modest Nature  
+IVs: 0 Atk / 30 Def  
+- Flame Burst  
+- Sludge Bomb  
+- Toxic  
+- Fake Out
+
+Lilligant @ Occa Berry  
+Ability: Own Tempo  
+Level: 36  
+EVs: 8 HP / 248 Atk / 4 SpD / 248 Spe  
+Jolly Nature  
+- Swords Dance  
+- Petal Blizzard  
+- Leech Seed  
+- Facade 
+
+Primarina @ Leftovers  
+Ability: Liquid Voice  
+Level: 36  
+EVs: 244 HP / 164 Def / 84 SpA / 8 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Sparkling Aria  
+- Aqua Ring  
+- Draining Kiss  
+- Icy Wind  
+
+Lopunny (F) @ Silk Scarf  
+Ability: Cute Charm  
+Level: 36  
+EVs: 248 Atk / 4 SpD / 248 Spe  
+Naughty Nature  
+- Facade  
+- Drain Punch  
+- Ice Punch  
+- Swords Dance
 
 === TRAINER_MAY_PLACEHOLDER === /* FUNCTIONALLY FREE */
 Name: MAY
@@ -25048,10 +25108,10 @@ IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
 - Swift  
 - Hidden Power
 
-=== TRAINER_NORMAN_1 ===
+=== TRAINER_NORMAN_1 === /* FUNCTIONALLY UNUSED */
 Name: LUNA
 Class: Leader
-Pic: Luna
+Pic: Leader Norman
 Gender: Female
 Music: Female
 Double Battle: No
@@ -39019,24 +39079,74 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER === /* FUNCTIONALLY FREE */
-Name: BRENDAN
-Class: Rival
-Pic: RS Brendan
-Gender: Male
-Music: Male
+=== TRAINER_LUNA === /* FUNCTIONALLY FREE */
+Name: LUNA
+Class: Leader
+Pic: Luna
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint
-Difficulty: Easy 
+AI: Basic Trainer  
+Difficulty: Easy
+Mugshot: Pink
 
-Sceptile @ Sceptilite
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Linoone (F) @ Sitrus Berry  
+Ability: Gluttony  
+Level: 36  
+Jolly Nature  
+- Extreme Speed  
+- Facade  
+- Shadow Claw  
+
+Alcremie @ Assault Vest  
+Ability: Sweet Veil  
+Level: 36  
+Modest Nature  
+IVs: 0 Atk  
+- Draining Kiss  
+- Mystical Fire  
+- Magical Leaf  
+- Psyshock  
+
+Salazzle-Totem @ Charcoal  
+Ability: Corrosion  
+Level: 36  
+Modest Nature  
+IVs: 0 Atk / 30 Def  
+- Flame Burst  
+- Venoshock  
+- Crush Grip 
+
+Lilligant @ Occa Berry  
+Ability: Own Tempo  
+Level: 36   
+Jolly Nature  
+- Petal Blizzard  
+- Leech Seed  
+- Facade 
+- Swords Dance 
+
+Primarina @ Leftovers  
+Ability: Liquid Voice  
+Level: 36  
+Bold Nature  
+IVs: 0 Atk  
+- Sparkling Aria  
+- Draining Kiss  
+- Icy Wind  
+
+Lopunny (F) @ Silk Scarf  
+Ability: Cute Charm  
+Level: 36  
+Naughty Nature  
+- Facade  
+- Drain Punch  
+- Ice Punch  
 
 === TRAINER_MAY_PLACEHOLDER === /* FUNCTIONALLY FREE */
 Name: MAY
 Class: Rival
-Pic: RS May
+Pic: RS Brendan
 Gender: Female
 Music: Male
 Double Battle: No

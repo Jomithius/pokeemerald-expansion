@@ -20,19 +20,19 @@ script BaldesianForest_OnResume{
 
 script BaldesianForest_TryRemoveLegendary{
     specialvar(VAR_RESULT, GetBattleOutcome)
-        if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
-            if(var(VAR_LAST_TALKED) == LOCALID_LANDORUS 
-            || var(VAR_LAST_TALKED) == LOCALID_THUNDURUS 
-            || var(VAR_LAST_TALKED) == LOCALID_TORNADUS 
-            || var(VAR_LAST_TALKED) == LOCALID_ENAMORUS){
-                removeobject(VAR_LAST_TALKED)
-                clearflag(FLAG_SYS_CTRL_OBJ_DELETE) 
-            }
-            else{
-                clearflag(FLAG_SYS_CTRL_OBJ_DELETE) 
-            }
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        if(var(VAR_LAST_TALKED) == LOCALID_LANDORUS 
+        || var(VAR_LAST_TALKED) == LOCALID_THUNDURUS 
+        || var(VAR_LAST_TALKED) == LOCALID_TORNADUS 
+        || var(VAR_LAST_TALKED) == LOCALID_ENAMORUS){
+            removeobject(VAR_LAST_TALKED)
+            clearflag(FLAG_SYS_CTRL_OBJ_DELETE) 
         }
-        clearflag(FLAG_SYS_CTRL_OBJ_DELETE) 
+        else{
+            clearflag(FLAG_SYS_CTRL_OBJ_DELETE) 
+        }
+    }
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE) 
     return     
 }
 
@@ -233,6 +233,7 @@ script BaldesianForest_EventScript_Celebi{
     else{
         goto(Common_EventScript_NoMoreRoomForPokemon)
     }
+    callnative(UpdateFollowingPokemon)
     fadedefaultbgm
     releaseall
     end

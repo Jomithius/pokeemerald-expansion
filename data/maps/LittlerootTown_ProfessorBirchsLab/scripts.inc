@@ -2100,7 +2100,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle::
 # 1069 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
 # 1070 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRENDAN_PLACEHOLDER, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle_Text_1
+	trainerbattle_no_intro TRAINER_MAY_PLACEHOLDER, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle_Text_1
 # 1071 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_DEFEATED_RIVAL_BIRCH_LAB
 # 1072 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

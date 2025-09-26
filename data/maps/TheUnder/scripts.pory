@@ -182,10 +182,9 @@ text Common_Text_ExplainTera{
     A POKéMON's TERA-type can be viewed\n
     in the summary screen.\p
     It will default to an existing type\n
-    the POKéMON has. Such as:\p
-    A mono type will have that type as\n
-    its TERA, while a DUAL type could\l
-    have either type as the TERA.\p
+    the POKéMON has.\p
+    After using TERA, the TERA ORB needs to\n
+    be recharged at a POKéMON CENTER.\p
     TERA SHARDS are required to change\n
     a POKéMON's TERA-type.\p
     They can be bought from new vendors\n

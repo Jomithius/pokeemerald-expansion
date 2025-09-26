@@ -322,4 +322,5 @@ MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_ROCK_BLAST
 	setvar VAR_0x8005, MOVE_TAIL_SLAP
 	setvar VAR_0x8005, MOVE_STICKY_WEB
+	setvar VAR_0x8005, MOVE_POWER_GEM
 	end

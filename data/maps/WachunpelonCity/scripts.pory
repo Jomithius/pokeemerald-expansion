@@ -213,7 +213,7 @@ script WachunpelonCity_EventScript_PolicemanTrigger{
     applymovement(1, Common_Movement_WalkUp)
     waitmovement(1)
     removeobject(1)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
     waitmovement(0)
     hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY)
     closedoor(46, 14)
@@ -278,6 +278,7 @@ script WachunpelonCity_EventScript_PolicemanNorth{
 
 script WachunpelonCity_EventScript_PolicemanWest{
     lock
+    delay(16)
     playse(SE_PIN)
     applymovement(1, Common_Movement_ExclamationMark)
     waitmovement(1)
@@ -307,7 +308,7 @@ script WachunpelonCity_EventScript_PolicemanWest{
     applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
     waitmovement(0)
     callnative(RemoveFollowingPokemon)
-    applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerEast)
+    applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerWest)
     waitmovement(0)
     hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY)
     closedoor(46, 14)
@@ -384,11 +385,12 @@ movement WachunpelonCity_Movement_WalkBack{
 
 movement WachunpelonCity_Movement_PlayerNorth{
     walk_left
-    walk_up
+    walk_up * 2
 }
 
-movement WachunpelonCity_Movement_PlayerEast{
+movement WachunpelonCity_Movement_PlayerWest{
     walk_left * 2
+    walk_up
 }
 
 movement WachunpelonCity_Movement_OldMan1{

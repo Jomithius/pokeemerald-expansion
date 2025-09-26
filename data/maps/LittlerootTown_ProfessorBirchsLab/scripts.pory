@@ -1020,7 +1020,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 `
-// unused
+// start unused
 script LittlerootTown_ProfessorBirchsLab_EventScript_RivalRematch{
     checkplayergender
     if(var(VAR_RESULT) == MALE){
@@ -1067,7 +1067,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_BrendanBattle{
         I'm not going to lose just because\l
         you're the CHAMPION!", MSGBOX_AUTOCLOSE)
     waitmessage
-    trainerbattle_no_intro(TRAINER_BRENDAN_PLACEHOLDER, "Wow, {PLAYER}.\nYou've gotten this strong?")
+    trainerbattle_no_intro(TRAINER_MAY_PLACEHOLDER, "Wow, {PLAYER}.\nYou've gotten this strong?")
     setflag(FLAG_DEFEATED_RIVAL_BIRCH_LAB)
     goto(LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle)
     end
@@ -1088,7 +1088,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_BrendanPostBattle{
 		raising POKéMON!", MSGBOX_DEFAULT)
 	end
 }
-// unused
+// end unused
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_IHaveToPrepare{
 	checkplayergender

@@ -701,9 +701,9 @@ script RustboroCity_PokemonSchool_EventScript_ExplainPivoting{
         in on a move it doesn't resist.\p
         So instead, you switch to your\n
         STEEL/FLYING-type, which is immune\l
-        to GROUND-type attacks, and then\l
-        switch to your WATER-type on the\l
-        expected FIRE-type attack.\p
+        to GROUND-type attacks, and next\l
+        turn DOUBLE to your WATER-type on\l
+        the predictable FIRE-type attack.\p
         An example of a PIVOT is to switch into\n
         a slow and defensive POKéMON, and\l
         then use a switching move, such as\l
@@ -833,10 +833,9 @@ script RustboroCity_PokemonSchool_EventScript_ExplainTera{
         A POKéMON's TERA-type can be viewed\n
         in the summary screen.\p
         It will default to an existing type\n
-        the POKéMON has. Such as:\p
-        A mono type will have that type as\n
-        its TERA, while a DUAL type could\l
-        have either type as the TERA.\p
+        the POKéMON has.\p
+        After using TERA, the TERA ORB needs to\n
+        be recharged at a POKéMON CENTER.\p
         TERA SHARDS are required to change\n
         a POKéMON's TERA-type.\p
         They can be bought from new vendors\n
