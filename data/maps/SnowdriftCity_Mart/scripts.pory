@@ -46,6 +46,6 @@ script SnowdriftCity_Mart_EventScript_StaffEmployee{
 script SnowdriftCity_Mart_EventScript_Woman{
     msgbox("I want to buy some of these new\n
         TERA SHARDS, but I can't decide\l
-        what TERA TYPE to make my POKéMON…", MSGBOX_NPC)
+        what TERA-type to make my POKéMON…", MSGBOX_NPC)
     end
 }

@@ -351,8 +351,552 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 
 `
 
-script RustboroCity_PokemonSchool_TutorialGirl{
-    lock
-    faceplayer
+script RustboroCity_PokemonSchool_EventScript_TutorialGirl{
+	lock
+	faceplayer
+	goto_if_set(FLAG_TALKED_TO_POKEMON_SCHOOL_TUTOR, RustboroCity_PokemonSchool_EventScript_TutorialChoices2)
+	msgbox("Oh! Are you a new TRAINER?\n
+		That's great!\p
+		I'm pretty smart when it comes\n
+        to POKéMON.\p
+		If you want, I can answer any questions\n
+		you might have about battling.", MSGBOX_YESNO)
+	waitmessage
+	setflag(FLAG_TALKED_TO_POKEMON_SCHOOL_TUTOR)
+    setvar(VAR_TUTORIAL_COUNTER, 0)
+	goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+	goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+	release
+	end
+}
 
+script RustboroCity_PokemonSchool_EventScript_TutorialChoices{
+    msgbox("What do you want to know about?", MSGBOX_DEFAULT)
+    if(flag(FLAG_SYS_RECEIVED_TERA_ORB)){
+        dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
+        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION", "TERA")
+    }
+    elif(flag(FLAG_DEFEATED_JAMES_EVERGRANDE)){
+        dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
+        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION")
+    }
+    else{
+        dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
+        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS")
+    }
+    switch (var(VAR_RESULT)) {
+		case 0:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainStab)
+		case 1:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainPhysSpecialMoves)
+		case 2:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainStatusMoves)
+		case 3:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainPriorityMoves)
+		case 4:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainSetUpMoves)
+		case 5:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainWeather)
+        case 6:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainTerrain)
+        case 7:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainPivoting)
+		case 8:
+            goto(RustboroCity_PokemonSchool_EventScript_ExplainIVsAndEVs)
+        case 9:
+            goto(RustboroCity_PokemonSchool_EventScript_ExplainEVSpreads)
+        case 10:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainMegaEvolution)
+		case 11:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainTera)
+        case MULTI_B_PRESSED:
+			goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+		default:
+			goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    }
+    release
+    end	
+}
+
+script RustboroCity_PokemonSchool_EventScript_TutorialChoices2{
+    msgbox("Hey! Here to learn about battling?\nWhat do you want to know about?", MSGBOX_DEFAULT)
+    if(flag(FLAG_SYS_RECEIVED_TERA_ORB)){
+        dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
+        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION", "TERA")
+    }
+    elif(flag(FLAG_DEFEATED_JAMES_EVERGRANDE)){
+        dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
+        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION")
+    }
+    else{
+        dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
+        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS")
+    }
+    switch (var(VAR_RESULT)) {
+		case 0:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainStab)
+		case 1:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainPhysSpecialMoves)
+		case 2:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainStatusMoves)
+		case 3:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainPriorityMoves)
+		case 4:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainSetUpMoves)
+		case 5:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainWeather)
+        case 6:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainTerrain)
+        case 7:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainPivoting)
+		case 8:
+            goto(RustboroCity_PokemonSchool_EventScript_ExplainIVsAndEVs)
+        case 9:
+            goto(RustboroCity_PokemonSchool_EventScript_ExplainEVSpreads)
+        case 10:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainMegaEvolution)
+		case 11:
+			goto(RustboroCity_PokemonSchool_EventScript_ExplainTera)
+        case MULTI_B_PRESSED:
+			goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+		default:
+			goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    }
+    release
+    end	
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainStab{
+    msgbox("STAB stands for\n
+        Same Type Attack Bonus.\p
+        When a POKéMON uses a damaging move\n
+        that's the same type as one of theirs,\l
+        the move's power is increased by 1.5x.\p
+        For example, WATER PULSE usually has\n
+        a base power of 60.\p
+        If used by a WATER-type, STAB boosts\n
+        WATER PULSES's power to 90.\p
+        Also, if a POKéMON has the ability\n
+        ADAPTABILITY, STAB boosts are 2x!\p
+        Making use of your POKéMON's types\n
+        is essential to being good at battles!\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainPhysSpecialMoves{
+    msgbox("Moves are put into three different\n
+        categories: PHYSICAL, SPECIAL, and\l
+        STATUS.\p
+        All three categories have icons\n
+        to show which one they are.\p
+        Some examples of PHYSICAL moves are\n
+        TACKLE and BITE.\p
+        Some examples of SPECIAL moves are\n
+        WATER GUN and EMBER.\p
+        A POKéMON with a high ATK is\n
+        stronger with PHYSICAL moves.\p
+        A POKéMON with a high SP. ATK\n
+        is stronger with SPECIAL moves.\p
+        Knowing whether your POKéMON is a\n
+        PHYSICAL or SPECIAL attacker is\l
+        important if you want to be a\l
+        good TRAINER!\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainStatusMoves{
+    msgbox("Moves are put into three different\n
+        categories: PHYSICAL, SPECIAL, and\l
+        STATUS.\p
+        All three categories have icons\n
+        to show which one they are.\p
+        Some examples of STATUS moves are\n
+        TAIL WHIP and GROWL.\p
+        Other examples of STATUS moves are\n
+        BULK UP and THUNDER WAVE.\p
+        STATUS MOVES can do a variety of\n
+        things:\p
+        Give the foe an ailment like POISON,\n
+        or a debuff like lowering DEF., or\l
+        even giving your POKéMON a buff\l
+        by increasing its STATS!\p
+        Knowing which STATUS MOVES to use\n
+        in a battle is very important if\l
+        you want to be a good TRAINER!\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainPriorityMoves{
+    msgbox("PRIORITY MOVES are a special\n
+        set of moves that usually go first.\l
+        They can be PHYSICAL or SPECIAL.\p
+        An example of a PHYSICAL PRIORITY\n
+        MOVE is QUICK ATTACK.\p
+        A SPECIAL PRIORITY MOVE would be\n
+        VACUUM WAVE.\p
+        A STATUS PRIORITY MOVE would be\n
+        something like PROTECT.\p
+        There are also items that can increase\n
+        a POKéMON's priority, such as the\l
+        QUICK CLAW, or CUSTAP BERRY.\p
+        Some moves also reverse priority,\n
+        like TRICK ROOM.\p
+        Some abilities can even increase\n
+        priority, like PRANKSTER, which\l
+        increases priority on STATUS MOVES.\p
+        Speed control through the use of\n
+        PRIORITY MOVES can be extremely\l
+        useful if your POKéMON is slow, or if\l
+        the foe's POKéMON has a lot of boosts.\p
+        If two POKéMON use a move with the\n
+        same priority, the POKéMON that's\l
+        faster will go first.\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainSetUpMoves{
+    msgbox("SETUP MOVES are moves that give\n
+        your POKéMON some type of STAT boost.\p
+        Some examples are BULK UP, WORK UP,\n
+        CALM MIND, and NASTY PLOT.\p
+        SETUP MOVES are a great way for\n
+        a POKéMON to sweep a team.\p
+        Any STAT increase or decrease will\n
+        last until the POKéMON switches out.\p
+        This is why it's usually better to\n
+        raise your POKéMON's STATS as\l
+        opposed to lowering your foe's.\p
+        STATS can be boosted up to +6,\n
+        and lowered to -6.\p
+        SETUP MOVES can be extremely strong\n
+        when used correctly.\p
+        Consider teaching your POKéMON some\n
+        SETUP MOVES!\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainWeather{
+    msgbox("WEATHER effects can influence\n
+        a battle a lot!\p
+        There are four weather effects:\n
+        RAIN, SUN, SAND, and SNOW.\p
+        RAIN weakens FIRE-type attacks, and\n
+        boosts WATER-type attacks.\p
+        SUN weakens WATER-type attacks, and\n
+        boosts FIRE-type attacks.\p
+        SAND hurts non GROUND, ROCK, or STEEL\n
+        -types and raises the SP. DEF of ROCK\l
+        -types.\p
+        SNOW increases the DEF of ICE-types.\p
+        There are also some moves that get\n
+        affected by the WEATHER!\p
+        For example, THUNDER and HURRICANE\n
+        can't miss in RAIN.\p
+        SOLAR BEAM and SOLAR BLADE don't\n
+        need to charge in SUN.\p
+        BLIZZARD can't miss in SNOW.\p
+        Also, moves like SYNTHESIS and\n
+        GROWTH can be weaker or stronger\l
+        depending on the WEATHER.\p
+        There are also WEATHER dependent\n
+        abilities such as SWIFT SWIM, SLUSH\l
+        RUSH, and CHLOROPHYLL.\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainTerrain{
+    msgbox("TERRAINS aren't as popular as WEATHER\n
+        but still have strong effects!\p
+        There are four different TERRAINS:\n
+        ELECTRIC, GRASSY, MISTY, and PSYCHIC.\p
+        ELECTRIC TERRAIN increases the power\n
+        of ELECTRIC-type attacks, and stops\l
+        POKéMON from falling asleep.\p
+        GRASSY TERRAIN increases the power\n
+        of GRASS-type attacks and heals\l
+        POKéMON every turn.\p
+        GRASSY TERRAIN also halves the\n
+        damage of BULLDOZE, EARTHQUAKE, and\l
+        MAGNITUDE.\p
+        MISTY TERRAIN halves the damage of\n
+        DRAGON-type attacks and prevents\l
+        POKéMON from being afflicted with\l
+        ailments like burn and confusion.\p
+        PSYCHIC TERRAIN increases the power\n
+        of PSYCHIC-type attacks and also\l
+        causes any PRIORITY MOVE to fail.\p
+        Only grounded POKéMON are affected\n
+        by TERRAIN.\p
+        That means FLYING-types and LEVITATE\n
+        POKéMON aren't affected by TERRAINS!\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainPivoting{
+    msgbox("DOUBLING is an advanced switching\n
+        technique used to get one of your\l
+        other POKéMON in safely.\p
+        For example, let's say you have an\n
+        ELECTRIC-type out against a\l
+        FIRE/GROUND-type.\p
+        Assuming your opponent is going\n
+        to use a GROUND-type attack, you\l
+        don't want your WATER-type switching\l
+        in on a move it doesn't resist.\p
+        So instead, you switch to your\n
+        STEEL/FLYING-type, which is immune\l
+        to GROUND-type attacks, and then\l
+        switch to your WATER-type on the\l
+        expected FIRE-type attack.\p
+        An example of a PIVOT is to switch into\n
+        a slow and defensive POKéMON, and\l
+        then use a switching move, such as\l
+        VOLT SWITCH or U-TURN, which can\l
+        let you switch into another\l
+        POKéMON safely.\p
+        This is why moves like TELEPORT can\n
+        be so powerful, since they have\l
+        negative priority, meaning they'll\l
+        usually move last.\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainIVsAndEVs{
+    msgbox("IVs, or INDIVIDUAL VALUES, are\n
+		the inherent talents of a POKéMON and\l
+		can range from 0-31.\p
+		This stat is determined from birth.\p
+		Luckily, most POKéMON in HOENN have\n
+		perfect IVs.\p
+		EVs, or EFFORT VALUES, are gained\n
+		from battling POKéMON.\p
+		Each stat, such as HP, ATK, etc.,\n
+		can gain EVs from defeating certain\l
+		POKéMON.\p
+		A POKéMON can have up to 510 EVs total,\n
+		with a maximum of 252 in a single stat.\p
+		A POKéMON with EVs can be much stronger\n
+		than one without any!\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainEVSpreads{
+    msgbox("With proper EVs and a good NATURE\n
+        your POKéMON will be really strong!\p
+        When trying to decide how to give\n
+        your POKéMON EVs you need to consider\l
+        what the POKéMON's role on the team is\l
+        and its strengths and weaknesses.\p
+        For example, SNORLAX is a slow, bulky\n
+        POKéMON with naturally high HP and ATK.\p
+        Investing 252 EVs in its HP and ATK\n
+        respectively would be a good option.\p
+        On the other hand, a fast and frail\n
+        POKéMON that can hit hard would\l
+        gain a lot more from investing EVs\l
+        in its SPEED and ATTACK or SP. ATK.\p
+        Along with proper EVs, a POKéMON's\n
+        NATURE is also very important.\p
+        For example, a MODEST NATURE lowers\n
+        ATK and raises SP. ATK.\p
+        A NATURE like that would be terrible\n
+        on a POKéMON like SNORLAX!\p
+        While the POKéMON will always have\n
+        the NATURE it started with, you can\l
+        at least change the STAT benefits\l
+        through the use of NATURE MINTS.\p
+        You can buy NATURE MINTS from\n
+        POKé MARTS.\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainMegaEvolution{
+    msgbox("MEGA EVOLUTION is something that only\n
+        some POKéMON are able to use.\p
+        For a POKéMON to MEGA EVOLVE, it needs\n
+        to be holding the right MEGA STONE.\p
+        A POKéMON that's MEGA'd will stay\n
+        in its MEGA EVOLUTION until the\l
+        battle ends, or it faints.\p
+        To use MEGA EVOLUTION in battle, press\n
+        START before selecting your move.\p
+        Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_ExplainTera{
+    msgbox("TERASTALLIZATION is a battle mechanic\n
+        that allows you to change your\l
+        POKéMON's type temporarily during a\l
+        battle.\p
+        Similar to MEGA EVOLUTION, the type\n
+        the POKéMON TERASTALLIZED into will\l
+        last until the end of the battle, or\l
+        until the POKéMON faints.\p
+        Only one POKéMON can TERA during a\n
+        battle, and two gimmicks can't be\l
+        used on the same POKéMON.\p
+        To TERASTALLIZE, press START before\n
+        selecting your move.\p
+        While TERASTALLIZED, POKéMON receive\n 
+        STAB (Same Type Attack Bonus) on\l
+        moves matching their TERA-type,\l
+        in addition to moves matching their\l 
+        original types.\p
+        A POKéMON's TERA-type can be viewed\n
+        in the summary screen.\p
+        It will default to an existing type\n
+        the POKéMON has. Such as:\p
+        A mono type will have that type as\n
+        its TERA, while a DUAL type could\l
+        have either type as the TERA.\p
+        TERA SHARDS are required to change\n
+        a POKéMON's TERA-type.\p
+        They can be bought from new vendors\n
+        in POKé MARTS.", MSGBOX_DEFAULT)
+    waitmessage
+    msgbox("Is there anything else you wanted\n
+        me to explain?", MSGBOX_YESNO)
+    waitmessage
+    call_if_lt(VAR_TUTORIAL_COUNTER, 11, RustboroCity_PokemonSchool_UpdateTutorialCounter)
+    goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+    goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
+    release
+    end
+}
+
+script RustboroCity_PokemonSchool_UpdateTutorialCounter{
+    addvar(VAR_TUTORIAL_COUNTER, 1)
+    return
+}
+
+script RustboroCity_PokemonSchool_EventScript_TutorialDecline{
+	lock
+    goto_if_eq(VAR_TUTORIAL_COUNTER, 10, RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward)
+	msgbox("Okay!\n
+		Good luck on your battles!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward{
+    msgbox("Wow!\p
+        I've never had somebody so ready to\n
+        learn about battling!\p
+        Here, take this a thanks for listening.", MSGBOX_DEFAULT)
+    waitmessage
+    giveitem(ITEM_RARE_CANDY, 5)
+    waitmessage
+    if(!flag(FLAG_BADGE01_GET)){
+        giveitem(ITEM_EXP_CANDY_S, 10)
+    }
+    elif(!flag(FLAG_BADGE03_GET)){
+        giveitem(ITEM_EXP_CANDY_M, 10)
+    }
+    elif(!flag(FLAG_BADGE06_GET)){
+        giveitem(ITEM_EXP_CANDY_L, 10)
+    }
+    else{
+        giveitem(ITEM_EXP_CANDY_XL, 10)
+    }
+    waitmessage
+    giveitem(ITEM_CHERISH_BALL, 6)
+    waitmessage
+    msgbox("I know you'll become a great TRAINER.\n
+        I'll be rooting for you!\p
+        If you ever need a refresher course,\n
+        feel free to come back!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setvar(VAR_TUTORIAL_COUNTER, 11)
+    release
+    end    
 }

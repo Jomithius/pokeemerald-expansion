@@ -69,7 +69,7 @@ script BaldesianForest_EventScript_Yoshiko{
     trainerbattle_single(TRAINER_YOSHIKO, "Argh!\nI still can't beat BRUNO!", "Sorry for taking it out on you.")
     msgbox("I swear!\n
         BRUNO is impossible to beat!\p
-        I need to catch a FLYING TYPE\n
+        I need to catch a FLYING-type\n
         for that stupid MACHAMP!", MSGBOX_NPC)
 	end
 }

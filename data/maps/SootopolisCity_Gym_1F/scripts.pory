@@ -236,8 +236,8 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 SootopolisCity_Gym_1F_Text_ExplainFreezeDry:
 	.string "The TECHNICAL MACHINE I yeeted you\n"
 	.string "contains FREEZE DRY.\p"
-	.string "It freezes everything, even WATER\n"
-	.string "TYPES. Yeheheheaaeaaah.\p"
+	.string "It freezes everything, even WATER-\n"
+	.string "types. Yeheheheaaeaaah.\p"
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:

@@ -610,7 +610,7 @@ BaldesianForest_EventScript_Yoshiko_Text_1:
 
 BaldesianForest_EventScript_Yoshiko_Text_2:
 # 70 "data/maps/BaldesianForest/scripts.pory"
-	.string "I swear!\n BRUNO is impossible to beat!\p I need to catch a FLYING TYPE\n for that stupid MACHAMP!$"
+	.string "I swear!\n BRUNO is impossible to beat!\p I need to catch a FLYING-type\n for that stupid MACHAMP!$"
 
 BaldesianForest_EventScript_Hanzo_Text_0:
 # 78 "data/maps/BaldesianForest/scripts.pory"

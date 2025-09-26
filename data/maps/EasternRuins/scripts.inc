@@ -199,11 +199,11 @@ EasternRuins_EventScript_KleavorHint_Text_0:
 
 EasternRuins_EventScript_HexManiacMaliciousArmor_Text_0:
 # 76 "data/maps/EasternRuins/scripts.pory"
-	.string "I-I love GHOST TYPE P-POKéMON…\p Show me one a-and I'll…\n g-give you a gift…$"
+	.string "I-I love GHOST-type P-POKéMON…\p Show me one a-and I'll…\n g-give you a gift…$"
 
 EasternRuins_EventScript_HexManiacMaliciousArmor_Text_1:
 # 86 "data/maps/EasternRuins/scripts.pory"
-	.string "T-Thanks for s-showing me a\n G-GHOST TYPE P-POKéMON…\p H-Here.$"
+	.string "T-Thanks for s-showing me a\n G-GHOST-type P-POKéMON…\p H-Here.$"
 
 EasternRuins_EventScript_HexManiacMaliciousArmor_Text_2:
 # 94 "data/maps/EasternRuins/scripts.pory"
@@ -211,8 +211,8 @@ EasternRuins_EventScript_HexManiacMaliciousArmor_Text_2:
 
 EasternRuins_EventScript_HexManiacShowMeAGhostType_Text_0:
 # 101 "data/maps/EasternRuins/scripts.pory"
-	.string "O-Oh…\n You d-don't have a GHOST T-TYPE?$"
+	.string "O-Oh…\n You d-don't have a GHOST T-type?$"
 
 EasternRuins_EventScript_HexManiacThanks_Text_0:
 # 107 "data/maps/EasternRuins/scripts.pory"
-	.string "T-Thanks for s-showing me a\n G-GHOST TYPE P-POKéMON…\p I hope t-that armor suits you\n w-well…$"
+	.string "T-Thanks for s-showing me a\n G-GHOST-type P-POKéMON…\p I hope t-that armor suits you\n w-well…$"

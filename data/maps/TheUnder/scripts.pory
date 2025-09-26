@@ -163,9 +163,9 @@ text TheUnder_Text_CarsonPostBattle{
 text Common_Text_ExplainTera{
     "{COLOR BLUE}{SHADOW LIGHT_BLUE}TERASTALLIZATION is a battle mechanic\n
     that allows you to change your\l
-    POKéMON's TYPE temporarily during a\l
+    POKéMON's type temporarily during a\l
     battle.\p
-    Similar to MEGA EVOLUTION, the TYPE\n
+    Similar to MEGA EVOLUTION, the type\n
     the POKéMON TERASTALLIZED into will\l
     last until the end of the battle, or\l
     until the POKéMON faints.\p
@@ -176,18 +176,18 @@ text Common_Text_ExplainTera{
     selecting your move.\p
     While TERASTALLIZED, POKéMON receive\n 
     STAB (Same Type Attack Bonus) on\l
-    moves matching their TERA TYPE,\l
+    moves matching their TERA-type,\l
     in addition to moves matching their\l 
-    original TYPES.\p
-    A POKéMON's TERA TYPE can be viewed\n
+    original types.\p
+    A POKéMON's TERA-type can be viewed\n
     in the summary screen.\p
-    It will default to an existing TYPE\n
+    It will default to an existing type\n
     the POKéMON has. Such as:\p
-    A mono TYPE will have that TYPE as\n
-    its TERA, while a DUAL TYPE could\l
-    have either TYPE as the TERA.\p
+    A mono type will have that type as\n
+    its TERA, while a DUAL type could\l
+    have either type as the TERA.\p
     TERA SHARDS are required to change\n
-    a POKéMON's TERA TYPE.\p
+    a POKéMON's TERA-type.\p
     They can be bought from new vendors\n
     in POKé MARTS."
 }

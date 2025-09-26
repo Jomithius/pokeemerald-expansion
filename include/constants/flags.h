@@ -1516,7 +1516,7 @@
 #define FLAG_SYS_NO_CATCHING                        (SYSTEM_FLAGS + 0x8C) // To stop catching in wild battles
 #define FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123      (SYSTEM_FLAGS + 0x8D) // Check if player found speedwagon rt 123
 #define FLAG_SYS_RECEIVED_TERA_ORB                  (SYSTEM_FLAGS + 0x8E) // Unlocks Tera in Summary
-#define FLAG_SYS_TERA_ORB_CHARGED                   (SYSTEM_FLAGS + 0x8F) // Tera
+#define FLAG_SYS_TERA_ORB_CHARGED                   (SYSTEM_FLAGS + 0x8F) // Tera 2287
 #define FLAG_SYS_TALKED_TO_CALYREX                  (SYSTEM_FLAGS + 0x90) // Calryex Event
 #define FLAG_LANDMARK_ROUTE135                      (SYSTEM_FLAGS + 0x91) 
 #define FLAG_LANDMARK_THE_UNDER                     (SYSTEM_FLAGS + 0x92) 
@@ -1560,7 +1560,7 @@
 #define FLAG_SYS_DECLINED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB8) // 
 #define FLAG_RECEIVED_CASTELIACONE                  (SYSTEM_FLAGS + 0xB9) // From Misa Castelia Queen Route 137
 #define FLAG_RECEIVED_PROTECTIVE_PADS               (SYSTEM_FLAGS + 0xBA) // Dojo Challenge
-#define FLAG_UNUSED_0x91B                           (SYSTEM_FLAGS + 0xBB) // Unused Flag
+#define FLAG_TALKED_TO_POKEMON_SCHOOL_TUTOR         (SYSTEM_FLAGS + 0xBB) // Pokemon School
 #define FLAG_UNUSED_0x91C                           (SYSTEM_FLAGS + 0xBC) // Unused Flag
 #define FLAG_UNUSED_0x91D                           (SYSTEM_FLAGS + 0xBD) // Unused Flag
 #define FLAG_UNUSED_0x91E                           (SYSTEM_FLAGS + 0xBE) // Unused Flag

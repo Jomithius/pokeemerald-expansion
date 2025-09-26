@@ -79,4 +79,4 @@ SnowdriftCity_Mart_EventScript_StaffEmployee_Text_0:
 
 SnowdriftCity_Mart_EventScript_Woman_Text_0:
 # 47 "data/maps/SnowdriftCity_Mart/scripts.pory"
-	.string "I want to buy some of these new\n TERA SHARDS, but I can't decide\l what TERA TYPE to make my POKéMON…$"
+	.string "I want to buy some of these new\n TERA SHARDS, but I can't decide\l what TERA-type to make my POKéMON…$"

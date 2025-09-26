@@ -108,6 +108,7 @@ script AzureMountain_Up5_EventScript_RivalBattle{
     lockall
     checkplayergender
     goto_if_eq(VAR_RESULT, MALE, AzureMountain_Up5_EventScript_MayBattle)
+    delay(16)
     playse(SE_PIN)
     applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
     waitmovement(0)
@@ -132,7 +133,7 @@ script AzureMountain_Up5_EventScript_RivalBattle{
         Okay, I'm going to head back to lab to\n
         give a report.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(LOCALID_RIVAL, Common_Movement_WalkLeft)
+    applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
     setfieldeffectargument(0, 1)
 	dofieldeffect(FLDEFF_NPCFLY_OUT)
@@ -149,6 +150,7 @@ script AzureMountain_Up5_EventScript_RivalBattle{
 
 script AzureMountain_Up5_EventScript_MayBattle{
     lockall
+    delay(16)
     playse(SE_PIN)
     applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
     waitmovement(0)
@@ -177,7 +179,7 @@ script AzureMountain_Up5_EventScript_MayBattle{
         lab and share my findings with my dad.\p
         Okay, {PLAYER}{KUN}, let's meet again!", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(LOCALID_RIVAL, Common_Movement_WalkRight)
+    applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
     setfieldeffectargument(0, 1)
 	dofieldeffect(FLDEFF_NPCFLY_OUT)
