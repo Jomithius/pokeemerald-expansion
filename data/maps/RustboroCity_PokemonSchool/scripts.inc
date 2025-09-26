@@ -1293,7 +1293,7 @@ RustboroCity_PokemonSchool_EventScript_TutorialChoices_Text_7:
 
 RustboroCity_PokemonSchool_EventScript_TutorialChoices_Text_8:
 # 377 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	.string "PIVOTING/DOUBLING$"
+	.string "DOUBLING/PIVOT$"
 
 RustboroCity_PokemonSchool_EventScript_TutorialChoices_Text_9:
 # 377 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -1345,7 +1345,7 @@ RustboroCity_PokemonSchool_EventScript_ExplainTerrain_Text_0:
 
 RustboroCity_PokemonSchool_EventScript_ExplainPivoting_Text_0:
 # 692 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	.string "DOUBLING is an advanced switching\n technique used to get one of your\l other POKéMON in safely.\p For example, let's say you have an\n ELECTRIC-type out against a\l FIRE/GROUND-type.\p Assuming your opponent is going\n to use a GROUND-type attack, you\l don't want your WATER-type switching\l in on a move it doesn't resist.\p So instead, you switch to your\n STEEL/FLYING-type, which is immune\l to GROUND-type attacks, and next\l turn DOUBLE to your WATER-type on\l the predictable FIRE-type attack.\p An example of a PIVOT is to switch into\n a slow and defensive POKéMON, and\l then use a switching move, such as\l VOLT SWITCH or U-TURN, which can\l let you switch into another\l POKéMON safely.\p This is why moves like TELEPORT can\n be so powerful, since they have\l negative priority, meaning they'll\l usually move last.\p Is there anything else you wanted\n me to explain?$"
+	.string "DOUBLING is an advanced switching\n technique used to get one of your\l other POKéMON in safely.\p For example, let's say you have an\n ELECTRIC-type out against a\l FIRE/GROUND-type.\p Assuming your opponent is going\n to use a GROUND-type attack, you\l don't want your WATER-type switching\l in on a move it doesn't resist.\p So instead, you switch to your\n STEEL/FLYING-type, which is immune\l to GROUND-type attacks, and next\l turn double to your WATER-type on\l the predictable FIRE-type attack.\p An example of a PIVOT is to switch into\n a slow and defensive POKéMON, and\l then use a switching move, such as\l VOLT SWITCH or U-TURN, which can\l let you switch into another\l POKéMON safely.\p This is why moves like TELEPORT can\n be so powerful, since they have\l negative priority, meaning they'll\l usually move last.\p Is there anything else you wanted\n me to explain?$"
 
 RustboroCity_PokemonSchool_EventScript_ExplainIVsAndEVs_Text_0:
 # 729 "data/maps/RustboroCity_PokemonSchool/scripts.pory"

@@ -374,15 +374,15 @@ script RustboroCity_PokemonSchool_EventScript_TutorialChoices{
     msgbox("What do you want to know about?", MSGBOX_DEFAULT)
     if(flag(FLAG_SYS_RECEIVED_TERA_ORB)){
         dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
-        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION", "TERA")
+        "SET UP MOVES", "WEATHER", "TERRAIN", "DOUBLING/PIVOT", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION", "TERA")
     }
     elif(flag(FLAG_DEFEATED_JAMES_EVERGRANDE)){
         dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
-        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION")
+        "SET UP MOVES", "WEATHER", "TERRAIN", "DOUBLING/PIVOT", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION")
     }
     else{
         dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
-        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS")
+        "SET UP MOVES", "WEATHER", "TERRAIN", "DOUBLING/PIVOT", "IVs & EVs", "EV SPREADS")
     }
     switch (var(VAR_RESULT)) {
 		case 0:
@@ -422,15 +422,15 @@ script RustboroCity_PokemonSchool_EventScript_TutorialChoices2{
     msgbox("Hey! Here to learn about battling?\nWhat do you want to know about?", MSGBOX_DEFAULT)
     if(flag(FLAG_SYS_RECEIVED_TERA_ORB)){
         dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
-        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION", "TERA")
+        "SET UP MOVES", "WEATHER", "TERRAIN", "DOUBLING/PIVOT", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION", "TERA")
     }
     elif(flag(FLAG_DEFEATED_JAMES_EVERGRANDE)){
         dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
-        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION")
+        "SET UP MOVES", "WEATHER", "TERRAIN", "DOUBLING/PIVOT", "IVs & EVs", "EV SPREADS", "MEGA EVOLUTION")
     }
     else{
         dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "STAB", "PHYSICAL & SPECIAL MOVES", "STATUS MOVES", "PRIORITY MOVES", 
-        "SET UP MOVES", "WEATHER", "TERRAIN", "PIVOTING/DOUBLING", "IVs & EVs", "EV SPREADS")
+        "SET UP MOVES", "WEATHER", "TERRAIN", "DOUBLING/PIVOT", "IVs & EVs", "EV SPREADS")
     }
     switch (var(VAR_RESULT)) {
 		case 0:
@@ -702,7 +702,7 @@ script RustboroCity_PokemonSchool_EventScript_ExplainPivoting{
         So instead, you switch to your\n
         STEEL/FLYING-type, which is immune\l
         to GROUND-type attacks, and next\l
-        turn DOUBLE to your WATER-type on\l
+        turn double to your WATER-type on\l
         the predictable FIRE-type attack.\p
         An example of a PIVOT is to switch into\n
         a slow and defensive POKéMON, and\l
