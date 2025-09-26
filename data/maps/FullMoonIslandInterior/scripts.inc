@@ -1,302 +1,344 @@
 FullMoonIslandInterior_MapScripts::
-# 3 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 5 "data/maps/FullMoonIslandInterior/scripts.pory"
 	map_script MAP_SCRIPT_ON_RESUME, FullMoonIslandInterior_TryRemoveCresselia
-# 2 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 6 "data/maps/FullMoonIslandInterior/scripts.pory"
+	map_script MAP_SCRIPT_ON_TRANSITION, FullMoonIsland_OnTransition
+# 4 "data/maps/FullMoonIslandInterior/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, FullMoonIslandInterior_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 FullMoonIslandInterior_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 2 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 4 "data/maps/FullMoonIslandInterior/scripts.pory"
 	map_script_2 VAR_RAT_CAVE_STATE, 10, FullMoonIslandInterior_EventScript_RatduardoBattle
 	.2byte 0
 
 
-FullMoonIslandInterior_TryRemoveCresselia::
-# 7 "data/maps/FullMoonIslandInterior/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
-# 8 "data/maps/FullMoonIslandInterior/scripts.pory"
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn
-# 9 "data/maps/FullMoonIslandInterior/scripts.pory"
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn
+FullMoonIsland_OnTransition::
 # 10 "data/maps/FullMoonIslandInterior/scripts.pory"
-	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn
-# 11 "data/maps/FullMoonIslandInterior/scripts.pory"
-	call_if_set FLAG_TEMP_5, FullMoonIslandInterior_RemoveRatduardoPokemon
-# 12 "data/maps/FullMoonIslandInterior/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	call_if_defeated TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_RemoveRatduardoPokemon
 	end
 
 
-FullMoonIslandInterior_RemoveRatduardoPokemon::
+FullMoonIslandInterior_TryRemoveCresselia::
+# 15 "data/maps/FullMoonIslandInterior/scripts.pory"
+	call_if_defeated TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_RemoveRatduardoPokemon
+# 16 "data/maps/FullMoonIslandInterior/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
 # 17 "data/maps/FullMoonIslandInterior/scripts.pory"
-	removeobject 3
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn
 # 18 "data/maps/FullMoonIslandInterior/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn
+# 19 "data/maps/FullMoonIslandInterior/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn
+# 20 "data/maps/FullMoonIslandInterior/scripts.pory"
+	compare VAR_LAST_TALKED, 1
+	goto_if_eq FullMoonIslandInterior_TryRemoveCresselia_2
+FullMoonIslandInterior_TryRemoveCresselia_1:
+	end
+
+FullMoonIslandInterior_TryRemoveCresselia_2:
+# 21 "data/maps/FullMoonIslandInterior/scripts.pory"
+	removeobject 1
+	goto FullMoonIslandInterior_TryRemoveCresselia_1
+
+
+FullMoonIslandInterior_RemoveRatduardoPokemon::
+# 27 "data/maps/FullMoonIslandInterior/scripts.pory"
+	removeobject 3
+# 28 "data/maps/FullMoonIslandInterior/scripts.pory"
 	removeobject 4
 	return
 
 
 FullMoonIslandInterior_EventScript_RatduardoBattle::
-# 23 "data/maps/FullMoonIslandInterior/scripts.pory"
-	lockall
-# 24 "data/maps/FullMoonIslandInterior/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
-# 25 "data/maps/FullMoonIslandInterior/scripts.pory"
-	waitmovement 0
-# 26 "data/maps/FullMoonIslandInterior/scripts.pory"
-	delay 30
-# 27 "data/maps/FullMoonIslandInterior/scripts.pory"
-	playse SE_PIN
-# 28 "data/maps/FullMoonIslandInterior/scripts.pory"
-	applymovement 2, Common_Movement_ExclamationMark
-# 29 "data/maps/FullMoonIslandInterior/scripts.pory"
-	waitmovement 2
-# 30 "data/maps/FullMoonIslandInterior/scripts.pory"
-	waitse
-# 31 "data/maps/FullMoonIslandInterior/scripts.pory"
-	applymovement 2, Common_Movement_WalkInPlaceDown
-# 32 "data/maps/FullMoonIslandInterior/scripts.pory"
-	delay 8
 # 33 "data/maps/FullMoonIslandInterior/scripts.pory"
-	applymovement 3, Common_Movement_WalkDown
+	lockall
 # 34 "data/maps/FullMoonIslandInterior/scripts.pory"
-	delay 8
+	checkobjectat 8, 17
 # 35 "data/maps/FullMoonIslandInterior/scripts.pory"
-	applymovement 4, Common_Movement_WalkDown
-# 36 "data/maps/FullMoonIslandInterior/scripts.pory"
-	waitmovement 4
-# 37 "data/maps/FullMoonIslandInterior/scripts.pory"
-	playbgm MUS_OLD_CHATEAU, FALSE
-# 38 "data/maps/FullMoonIslandInterior/scripts.pory"
-	msgbox FullMoonIslandInterior_Text_Ratduardo, MSGBOX_AUTOCLOSE
+	compare VAR_RESULT, TRUE
+	goto_if_eq FullMoonIslandInterior_EventScript_RatduardoBattle_2
 # 39 "data/maps/FullMoonIslandInterior/scripts.pory"
-	waitmessage
-# 40 "data/maps/FullMoonIslandInterior/scripts.pory"
-	setflag FLAG_TEMP_5
+	applymovement OBJ_EVENT_ID_PLAYER, FullMoonIslandInterior_Movement_PlayerApproachRatduardoRightEntrance
+FullMoonIslandInterior_EventScript_RatduardoBattle_1:
 # 41 "data/maps/FullMoonIslandInterior/scripts.pory"
-	setflag FLAG_SYS_BOSS_BATTLE
+	waitmovement 0
 # 42 "data/maps/FullMoonIslandInterior/scripts.pory"
-	trainerbattle_no_intro TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_Text_RatduardoDefeat
+	delay 30
 # 43 "data/maps/FullMoonIslandInterior/scripts.pory"
-	clearflag FLAG_SYS_BOSS_BATTLE
+	playse SE_PIN
 # 44 "data/maps/FullMoonIslandInterior/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	applymovement 2, Common_Movement_ExclamationMark
 # 45 "data/maps/FullMoonIslandInterior/scripts.pory"
-	removeobject 2
+	waitmovement 2
 # 46 "data/maps/FullMoonIslandInterior/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 2
+	waitse
 # 47 "data/maps/FullMoonIslandInterior/scripts.pory"
-	applymovement 1, Common_Movement_WalkDown2
+	applymovement 2, Common_Movement_WalkInPlaceDown
 # 48 "data/maps/FullMoonIslandInterior/scripts.pory"
-	waitmovement 1
+	delay 8
 # 49 "data/maps/FullMoonIslandInterior/scripts.pory"
-	setvar VAR_RAT_CAVE_STATE, 11
+	applymovement 3, Common_Movement_WalkDown
 # 50 "data/maps/FullMoonIslandInterior/scripts.pory"
-	addvar VAR_FINAL_REMATCH_STATE, 1
+	delay 8
 # 51 "data/maps/FullMoonIslandInterior/scripts.pory"
-	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
+	applymovement 4, Common_Movement_WalkDown
 # 52 "data/maps/FullMoonIslandInterior/scripts.pory"
-	msgbox FullMoonIslandInterior_Text_CresseliaMyThanks, MSGBOX_YESNO
+	waitmovement 4
 # 53 "data/maps/FullMoonIslandInterior/scripts.pory"
-	waitmessage
+	playbgm MUS_OLD_CHATEAU, FALSE
 # 54 "data/maps/FullMoonIslandInterior/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty
+	msgbox FullMoonIslandInterior_Text_Ratduardo, MSGBOX_AUTOCLOSE
 # 55 "data/maps/FullMoonIslandInterior/scripts.pory"
-	msgbox FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE
-# 56 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmessage
+# 56 "data/maps/FullMoonIslandInterior/scripts.pory"
+	setflag FLAG_SYS_BOSS_BATTLE
 # 57 "data/maps/FullMoonIslandInterior/scripts.pory"
+	trainerbattle_no_intro TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_Text_RatduardoDefeat
+# 58 "data/maps/FullMoonIslandInterior/scripts.pory"
+	clearflag FLAG_SYS_BOSS_BATTLE
+# 59 "data/maps/FullMoonIslandInterior/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 60 "data/maps/FullMoonIslandInterior/scripts.pory"
+	removeobject 2
+# 61 "data/maps/FullMoonIslandInterior/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 2
+# 62 "data/maps/FullMoonIslandInterior/scripts.pory"
+	applymovement 1, Common_Movement_WalkDown2
+# 63 "data/maps/FullMoonIslandInterior/scripts.pory"
+	waitmovement 1
+# 64 "data/maps/FullMoonIslandInterior/scripts.pory"
+	setvar VAR_RAT_CAVE_STATE, 11
+# 65 "data/maps/FullMoonIslandInterior/scripts.pory"
+	addvar VAR_FINAL_REMATCH_STATE, 1
+# 66 "data/maps/FullMoonIslandInterior/scripts.pory"
+	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
+# 67 "data/maps/FullMoonIslandInterior/scripts.pory"
+	msgbox FullMoonIslandInterior_Text_CresseliaMyThanks, MSGBOX_YESNO
+# 68 "data/maps/FullMoonIslandInterior/scripts.pory"
+	waitmessage
+# 69 "data/maps/FullMoonIslandInterior/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty
+# 70 "data/maps/FullMoonIslandInterior/scripts.pory"
+	msgbox FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE
+# 71 "data/maps/FullMoonIslandInterior/scripts.pory"
+	waitmessage
+# 72 "data/maps/FullMoonIslandInterior/scripts.pory"
 	releaseall
 	end
 
+FullMoonIslandInterior_EventScript_RatduardoBattle_2:
+# 36 "data/maps/FullMoonIslandInterior/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
+	goto FullMoonIslandInterior_EventScript_RatduardoBattle_1
+
 
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty::
-# 62 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 77 "data/maps/FullMoonIslandInterior/scripts.pory"
 	msgbox FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_0, MSGBOX_AUTOCLOSE
-# 64 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 79 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmessage
-# 65 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 80 "data/maps/FullMoonIslandInterior/scripts.pory"
 	givemon SPECIES_CRESSELIA, 75
-# 66 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 81 "data/maps/FullMoonIslandInterior/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq FullMoonIslandInterior_EventScript_CresseliaJoinsParty_2
-# 76 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 91 "data/maps/FullMoonIslandInterior/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq FullMoonIslandInterior_EventScript_CresseliaJoinsParty_3
-# 87 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 102 "data/maps/FullMoonIslandInterior/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty_1:
-# 89 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 104 "data/maps/FullMoonIslandInterior/scripts.pory"
 	closemessage
-# 90 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 105 "data/maps/FullMoonIslandInterior/scripts.pory"
 	releaseall
 	end
 
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty_2:
-# 67 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 82 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 68 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 83 "data/maps/FullMoonIslandInterior/scripts.pory"
 	removeobject 1
-# 69 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 84 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 70 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 85 "data/maps/FullMoonIslandInterior/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 71 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 86 "data/maps/FullMoonIslandInterior/scripts.pory"
 	msgbox FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_1, MSGBOX_DEFAULT
-# 72 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 87 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitfanfare
-# 73 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 88 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setflag FLAG_DEFEATED_CRESSELIA
-# 74 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 89 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 12
 	goto FullMoonIslandInterior_EventScript_CresseliaJoinsParty_1
 
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty_3:
-# 77 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 92 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 78 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 93 "data/maps/FullMoonIslandInterior/scripts.pory"
 	removeobject 1
-# 79 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 94 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 80 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 95 "data/maps/FullMoonIslandInterior/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 81 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 96 "data/maps/FullMoonIslandInterior/scripts.pory"
 	msgbox FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_2, MSGBOX_DEFAULT
-# 82 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 97 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitfanfare
-# 83 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 98 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setflag FLAG_DEFEATED_CRESSELIA
-# 84 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 99 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 12
 	goto FullMoonIslandInterior_EventScript_CresseliaJoinsParty_1
 
 
 FullMoonIslandInterior_EventScript_CresseliaChangeMind::
-# 94 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 109 "data/maps/FullMoonIslandInterior/scripts.pory"
 	lock
-# 95 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 110 "data/maps/FullMoonIslandInterior/scripts.pory"
 	msgbox FullMoonIslandInterior_EventScript_CresseliaChangeMind_Text_0, MSGBOX_YESNO
-# 97 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 112 "data/maps/FullMoonIslandInterior/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, FullMoonIslandInterior_EventScript_CresseliaJoinsParty2
-# 98 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 113 "data/maps/FullMoonIslandInterior/scripts.pory"
 	msgbox FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind, MSGBOX_AUTOCLOSE
-# 99 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 114 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmessage
-# 100 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 115 "data/maps/FullMoonIslandInterior/scripts.pory"
 	release
 	end
 
 
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty2::
-# 105 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 120 "data/maps/FullMoonIslandInterior/scripts.pory"
 	msgbox FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_0, MSGBOX_AUTOCLOSE
-# 107 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 122 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmessage
-# 108 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 123 "data/maps/FullMoonIslandInterior/scripts.pory"
 	givemon SPECIES_CRESSELIA, 75
-# 109 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 124 "data/maps/FullMoonIslandInterior/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq FullMoonIslandInterior_EventScript_CresseliaJoinsParty2_2
-# 119 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 134 "data/maps/FullMoonIslandInterior/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq FullMoonIslandInterior_EventScript_CresseliaJoinsParty2_3
-# 130 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 145 "data/maps/FullMoonIslandInterior/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty2_1:
-# 132 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 147 "data/maps/FullMoonIslandInterior/scripts.pory"
 	closemessage
-# 133 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 148 "data/maps/FullMoonIslandInterior/scripts.pory"
 	release
 	end
 
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty2_2:
-# 110 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 125 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 111 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 126 "data/maps/FullMoonIslandInterior/scripts.pory"
 	removeobject 1
-# 112 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 127 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 113 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 128 "data/maps/FullMoonIslandInterior/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 114 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 129 "data/maps/FullMoonIslandInterior/scripts.pory"
 	msgbox FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_1, MSGBOX_DEFAULT
-# 115 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 130 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitfanfare
-# 116 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 131 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setflag FLAG_DEFEATED_CRESSELIA
-# 117 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 132 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 12
 	goto FullMoonIslandInterior_EventScript_CresseliaJoinsParty2_1
 
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty2_3:
-# 120 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 135 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 121 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 136 "data/maps/FullMoonIslandInterior/scripts.pory"
 	removeobject 1
-# 122 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 137 "data/maps/FullMoonIslandInterior/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 123 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 138 "data/maps/FullMoonIslandInterior/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 124 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 139 "data/maps/FullMoonIslandInterior/scripts.pory"
 	msgbox FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_2, MSGBOX_DEFAULT
-# 125 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 140 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitfanfare
-# 126 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 141 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setflag FLAG_DEFEATED_CRESSELIA
-# 127 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 142 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 12
 	goto FullMoonIslandInterior_EventScript_CresseliaJoinsParty2_1
 
 
 FullMoonIslandInterior_EventScript_Cresselia::
-# 138 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 153 "data/maps/FullMoonIslandInterior/scripts.pory"
 	lock
-# 139 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 154 "data/maps/FullMoonIslandInterior/scripts.pory"
 	faceplayer
-# 140 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 155 "data/maps/FullMoonIslandInterior/scripts.pory"
 	goto_if_eq VAR_RAT_CAVE_STATE, 11, FullMoonIslandInterior_EventScript_CresseliaChangeMind
-# 141 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 156 "data/maps/FullMoonIslandInterior/scripts.pory"
 	playmoncry SPECIES_CRESSELIA, CRY_MODE_ENCOUNTER
-# 142 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 157 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmoncry
-# 143 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 158 "data/maps/FullMoonIslandInterior/scripts.pory"
 	setwildbattle SPECIES_CRESSELIA, 75
-# 144 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 159 "data/maps/FullMoonIslandInterior/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 145 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 160 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitstate
-# 146 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 161 "data/maps/FullMoonIslandInterior/scripts.pory"
 	release
 	end
 
 
+# 191 "data/maps/FullMoonIslandInterior/scripts.pory"
+FullMoonIslandInterior_Movement_PlayerApproachRatduardoRightEntrance:
+# 192 "data/maps/FullMoonIslandInterior/scripts.pory"
+	walk_up
+# 192 "data/maps/FullMoonIslandInterior/scripts.pory"
+	walk_up
+# 192 "data/maps/FullMoonIslandInterior/scripts.pory"
+	walk_up
+# 192 "data/maps/FullMoonIslandInterior/scripts.pory"
+	walk_up
+# 192 "data/maps/FullMoonIslandInterior/scripts.pory"
+	walk_up
+# 193 "data/maps/FullMoonIslandInterior/scripts.pory"
+	walk_left
+# 194 "data/maps/FullMoonIslandInterior/scripts.pory"
+	walk_up
+	step_end
+
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_0:
-# 62 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 77 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "Thank you.\n I'll be in your care.$"
 
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_1:
-# 71 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 86 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "CRESSELIA joined the party!$"
 
 FullMoonIslandInterior_EventScript_CresseliaJoinsParty_Text_2:
-# 81 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 96 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "CRESSELIA was sent to the PC!$"
 
 FullMoonIslandInterior_EventScript_CresseliaChangeMind_Text_0:
-# 95 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 110 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "Hello again, {PLAYER}.\n Have you reconsidered my offer?$"
 
 FullMoonIslandInterior_Text_Ratduardo::
-# 150 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 165 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "… Again… You…\n Always… in my way…\p No more…!$"
 
 FullMoonIslandInterior_Text_RatduardoDefeat::
-# 155 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 170 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "…\n There's no escape for me…$"
 
 FullMoonIslandInterior_Text_CresseliaMyThanks::
-# 160 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 175 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "Thank you for coming to my aid.\n You have a very pure heart.\l May I ask for your name?\p … … … …\p I see. {PLAYER},\n I really cannot thank you enough.\p It would be an honor to join a\n TRAINER like you on your journey.$"
 
 FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind::
-# 171 "data/maps/FullMoonIslandInterior/scripts.pory"
+# 186 "data/maps/FullMoonIslandInterior/scripts.pory"
 	.string "I see.\n I'll be here if you ever change your mind.$"

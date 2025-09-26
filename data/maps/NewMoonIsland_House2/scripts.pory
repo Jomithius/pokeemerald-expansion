@@ -108,6 +108,7 @@ script NewMoonIsland_House2_EventScript_Ratduardo{
     special(WaitWeather)
     setvar(VAR_NEWMOON_ISLAND_STATE, 4)
     clearflag(FLAG_HIDE_CHANNELER_NEWMOON_ISLAND_PLAZA) // to make ghost battle available on good ending
+    setflag(FLAG_HIDE_RATDUARDO_FULLMOON) // for bad ending ratduardo on fullmoon
     fadedefaultbgm
     release
     end

@@ -960,7 +960,7 @@ Baldesia_EventScript_HisuianZoruaTrigger_1:
 # 604 "data/maps/Baldesia/scripts.pory"
 	playbgm MUS_NONE, FALSE
 # 605 "data/maps/Baldesia/scripts.pory"
-	delay 30
+	delay 45
 # 606 "data/maps/Baldesia/scripts.pory"
 	playse SE_BIKE_HOP
 # 607 "data/maps/Baldesia/scripts.pory"

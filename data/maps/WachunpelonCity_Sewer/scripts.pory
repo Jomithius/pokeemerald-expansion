@@ -17,7 +17,7 @@ script WachunpelonCity_Sewer_UpdateMusic{
 }
 
 script WachunpelonCity_Sewer_OnResume{
-    call_if_defeated(TRAINER_SPEEDWAGON, WachunpelonCity_Sewer_RemovePolicemanAndBikerPokemon)
+    call_if_defeated(TRAINER_SPEEDWAGON_3, WachunpelonCity_Sewer_RemovePolicemanAndBikerPokemon)
     end
 }
 
@@ -94,7 +94,6 @@ script WachunpelonCity_Sewer_EventScript_Biker2{
 }
 
 script WachunpelonCity_Sewer_EventScript_Battle{
-    lock
     msgbox("He's focused on the battle.", MSGBOX_SIGN)
     end
 }
@@ -105,9 +104,13 @@ script WachunpelonCity_Sewer_EventScript_Speedwagon{
     msgbox(WachunpelonCity_Sewer_Text_Speedwagon1, MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_SYS_BOSS_BATTLE)
+    playbgm(MUS_DUMMY, TRUE)
     trainerbattle_no_intro(TRAINER_SPEEDWAGON_3, WachunpelonCity_Sewer_SpeedwagonDefeat)
     clearflag(FLAG_SYS_BOSS_BATTLE)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
     playse(SE_EXIT)
+    waitse
     delay(60)
     clearflag(FLAG_HIDE_POLICEMAN_WACHUNPELON_SEWERS)
     addobject(14)
@@ -166,8 +169,6 @@ script WachunpelonCity_Sewer_EventScript_Speedwagon{
     delay(60)
     playse(SE_EXIT)
     removeobject(12)
-    savebgm(MUS_DUMMY)
-    fadedefaultbgm
     setflag(FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS)
     addvar(VAR_FINAL_REMATCH_STATE, 1)
     setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
@@ -240,7 +241,7 @@ text WachunpelonCity_Sewer_Text_Policeman3{
 
 text WachunpelonCity_Sewer_Text_Policeman4{
     "Well, I should head back to MAUVILLE\n
-    now. Take care."
+    CITY now. Take care."
 }
 
 movement WachunpelonCity_Sewer_Movement_Policeman1{

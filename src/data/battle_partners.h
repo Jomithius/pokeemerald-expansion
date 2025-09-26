@@ -179,23 +179,23 @@ F_TRAINER_FEMALE |
 #line 71
                 MOVE_TORCH_SONG,
                 MOVE_HEX,
-                MOVE_OMINOUS_WIND,
+                MOVE_SLACK_OFF,
                 MOVE_WILL_O_WISP,
             },
             },
             {
 #line 76
-            .species = SPECIES_KROOKODILE,
+            .species = SPECIES_DRAGONITE,
 #line 76
             .gender = TRAINER_MON_MALE,
 #line 76
-            .heldItem = ITEM_LEFTOVERS,
+            .heldItem = ITEM_DRAGONITEITE,
 #line 80
             .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
 #line 81
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 77
-            .ability = ABILITY_INTIMIDATE,
+            .ability = ABILITY_MULTISCALE,
 #line 78
             .lvl = 95,
             .nature = NATURE_HARDY,
@@ -206,8 +206,8 @@ F_TRAINER_FEMALE |
 #line 81
                 MOVE_BREAKING_SWIPE,
                 MOVE_ROCK_SLIDE,
-                MOVE_DARKEST_LARIAT,
-                MOVE_HIGH_HORSEPOWER,
+                MOVE_EXTREME_SPEED,
+                MOVE_DUAL_WINGBEAT,
             },
             },
         },
@@ -237,21 +237,21 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_FEMALE,
 #line 94
             .heldItem = ITEM_LIGHT_BALL,
-#line 96
+#line 97
             .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 4, 0),
-#line 99
+#line 100
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 95
             .ability = ABILITY_STATIC,
-#line 99
+#line 96
             .lvl = 100,
-#line 98
+#line 99
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 97
+#line 98
             .teraType = TYPE_FLYING,
             .moves = {
-#line 99
+#line 100
                 MOVE_NUZZLE,
                 MOVE_VOLT_TACKLE,
                 MOVE_ALLURING_VOICE,
@@ -259,26 +259,26 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 104
+#line 105
             .species = SPECIES_SKELEDIRGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 104
-            .heldItem = ITEM_THROAT_SPRAY,
-#line 108
-            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
-#line 110
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
 #line 105
-            .ability = ABILITY_UNAWARE,
-#line 106
-            .lvl = 100,
+            .heldItem = ITEM_THROAT_SPRAY,
 #line 109
-            .nature = NATURE_CALM,
+            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 8, 252),
+#line 111
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 106
+            .ability = ABILITY_UNAWARE,
 #line 107
+            .lvl = 100,
+#line 110
+            .nature = NATURE_CALM,
+#line 108
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 111
+#line 112
                 MOVE_TORCH_SONG,
                 MOVE_HEX,
                 MOVE_SLACK_OFF,
@@ -286,30 +286,30 @@ F_TRAINER_FEMALE |
             },
             },
             {
-#line 116
-            .species = SPECIES_KROOKODILE,
-#line 116
-            .gender = TRAINER_MON_MALE,
-#line 116
-            .heldItem = ITEM_LEFTOVERS,
-#line 120
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
-#line 121
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 117
-            .ability = ABILITY_INTIMIDATE,
+            .species = SPECIES_DRAGONITE,
+#line 117
+            .gender = TRAINER_MON_MALE,
+#line 117
+            .heldItem = ITEM_DRAGONITEITE,
+#line 121
+            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
+#line 122
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 118
+            .ability = ABILITY_MULTISCALE,
+#line 119
             .lvl = 100,
             .nature = NATURE_HARDY,
-#line 119
+#line 120
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 121
+#line 122
                 MOVE_BREAKING_SWIPE,
                 MOVE_ROCK_SLIDE,
-                MOVE_DARKEST_LARIAT,
-                MOVE_HIGH_HORSEPOWER,
+                MOVE_EXTREME_SPEED,
+                MOVE_DUAL_WINGBEAT,
             },
             },
         },

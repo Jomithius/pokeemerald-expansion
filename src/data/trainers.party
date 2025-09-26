@@ -1235,6 +1235,9 @@ Rabsca
 
 Tauros-Paldea-Combat (M)  
 Ability: Intimidate 
+- Close Combat
+- Raging Bull
+- Take Down
 
 === TRAINER_SAMOTHY ===
 Name: SAMOTHY
@@ -1319,8 +1322,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Qwilfish
+- Aqua Tail
+- Venoshock
 
 Qwilfish-Hisui
+- Aqua Tail
+- Venoshock
 
 === TRAINER_DANUEL === 
 Name: DANUEL
@@ -1332,8 +1339,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Qwilfish
+- Aqua Tail
+- Venoshock
 
 Qwilfish-Hisui
+- Aqua Tail
+- Venoshock
 
 Wugtrio
 
@@ -2019,6 +2030,8 @@ AI: Basic Trainer
 Garganacl
 
 Corviknight
+- Steel Wing
+- Drill Peck
 
 === TRAINER_TOBIAS ===
 Name: TOBIAS
@@ -2324,9 +2337,9 @@ Music: Hiker
 Double Battle: Yes
 AI: Check Bad Move
 
-Dondozo
-
 Tatsugiri
+
+Basculegion
 
 === TRAINER_HIYOSHI ===
 Name: HIYOSHI
@@ -2481,8 +2494,13 @@ Double Battle: No
 AI: Check Bad Move
 
 Overqwil
+- Aqua Tail
+- Barb Barrage
+- Crunch
 
 Qwilfish-Hisui
+- Aqua Tail
+- Venoshock
 
 Finizen
 
@@ -3112,6 +3130,8 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Greninja
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Water Shuriken
+- Dark Pulse
 
 === TRAINER_KATSUMI ===
 Name: KATSUMI
@@ -3957,6 +3977,9 @@ AI: Check Bad Move
 Sneasel-Hisui
 
 Overqwil
+- Aqua Tail
+- Barb Barrage
+- Crunch
 
 === TRAINER_HANZO ===
 Name: HANZO
@@ -4564,7 +4587,7 @@ Salamence
 
 Mewtwo
 
-Lugia
+Ho-Oh
 
 Arceus @ Splash Plate
 
@@ -9047,6 +9070,8 @@ AI: Check Bad Move
 Greninja
 Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Shuriken
+- Dark Pulse
 
 === TRAINER_SIENNA ===
 Name: SIENNA
@@ -10421,13 +10446,13 @@ Level: 100
 Tera Type: Fairy 
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
-- Noxious Torque  
+- Gunk Shot
 - Wicked Torque  
 - Blazing Torque  
-- Magical Torque  
+- Spin Out
 
 Mr. Rime (M) @ Berserk Gene  
-Ability: Tangled Feet  
+Ability: Screen Cleaner
 Level: 100  
 Tera Type: Ice
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -10512,7 +10537,7 @@ IVs: 0 Atk
 - Dazzling Gleam  
 - Grass Knot   
 
-Maushold @ Wide Lens  
+Maushold @ Sitrus Berry
 Ability: Technician 
 Level: 100  
 Tera Type: Ghost  
@@ -10522,7 +10547,6 @@ Jolly Nature
 - Bullet Seed  
 - Play Rough  
 - Tidy Up  
-
 
 === TRAINER_CHANNELER_NEWMOON_ISLAND ===
 Name: ???
@@ -10662,7 +10686,7 @@ IVs: 0 Atk
 - Dazzling Gleam  
 - Grass Knot  
 
-Maushold @ Wide Lens  
+Maushold @ Sitrus Berry
 Ability: Technician  
 Level: 100
 Tera Type: Ghost 
@@ -13669,7 +13693,7 @@ Adamant Nature
 - Bulk Up  
 - Rock Slide  
 
-Decidueye-Hisui @ Focus Band  
+Decidueye-Hisui
 Ability: Scrappy  
 Tera Type: Fighting  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -13685,7 +13709,6 @@ Tera Type: Flying
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Agility  
-- Focus Energy  
 - Close Combat  
 - Brave Bird  
 
@@ -14109,6 +14132,8 @@ AI: Check Bad Move
 Corviknight
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Steel Wing
+- Drill Peck
 
 Fearow
 Level: 49
@@ -17853,6 +17878,8 @@ AI: Check Bad Move
 Corviknight
 Level: 100
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Steel Wing
+- Drill Peck
 
 Oricorio-Pa'u
 Level: 100
@@ -20783,6 +20810,9 @@ Rabsca
 
 Tauros-Paldea-Combat (M)  
 Ability: Intimidate 
+- Close Combat
+- Raging Bull
+- Take Down
 
 === TRAINER_SAMOTHY ===
 Name: SAMOTHY
@@ -20873,8 +20903,12 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Qwilfish
+- Aqua Tail
+- Venoshock
 
 Qwilfish-Hisui
+- Aqua Tail
+- Venoshock
 
 === TRAINER_DANUEL === 
 Name: DANUEL
@@ -20887,8 +20921,12 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Qwilfish
+- Aqua Tail
+- Venoshock
 
 Qwilfish-Hisui
+- Aqua Tail
+- Venoshock
 
 Wugtrio
 
@@ -20903,8 +20941,14 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Tauros-Paldea-Aqua
+- Close Combat
+- Raging Bull
+- Take Down
 
 Tauros-Paldea-Blaze
+- Close Combat
+- Raging Bull
+- Take Down
 
 === TRAINER_BILLIAM ===
 Name: BILLIAM
@@ -21248,6 +21292,8 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Tauros
+- Raging Bull
+- Take Down
 
 Blissey
 
@@ -21607,6 +21653,8 @@ Difficulty: Easy
 Garganacl
 
 Corviknight
+- Steel Wing
+- Drill Peck
 
 === TRAINER_TOBIAS ===
 Name: TOBIAS
@@ -21933,9 +21981,9 @@ Double Battle: Yes
 AI: Check Bad Move 
 Difficulty: Easy
 
-Dondozo
-
 Tatsugiri
+
+Basculegion
 
 === TRAINER_HIYOSHI ===
 Name: HIYOSHI
@@ -22102,8 +22150,13 @@ AI: Check Bad Move
 Difficulty: Easy
 
 Overqwil
+- Aqua Tail
+- Barb Barrage
+- Crunch
 
 Qwilfish-Hisui
+- Aqua Tail
+- Venoshock
 
 Finizen
 
@@ -22780,6 +22833,8 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Greninja
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Water Shuriken
+- Dark Pulse
 
 === TRAINER_KATSUMI ===
 Name: KATSUMI
@@ -23674,6 +23729,9 @@ Difficulty: Easy
 Sneasel-Hisui
 
 Overqwil
+- Aqua Tail
+- Barb Barrage
+- Crunch
 
 === TRAINER_HANZO ===
 Name: HANZO
@@ -24262,7 +24320,7 @@ Salamence
 
 Mewtwo
 
-Lugia
+Ho-Oh
 
 Arceus @ Splash Plate
 
@@ -24277,9 +24335,6 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
-
-Pelipper
-Ability: Drizzle
 
 Kingdra
 
@@ -24306,7 +24361,6 @@ Dachsbun
 Mabosstiff
 
 Stoutland
-Ability: Sand Rush
 
 === TRAINER_BJORNULFR ===
 Name: BJORNULFR
@@ -24317,8 +24371,6 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
-
-Hippowdon
 
 Garganacl
 
@@ -26584,7 +26636,7 @@ Adamant Nature
 - Close Combat  
 - Raging Bull  
 
-Overqwil (F) @ Poison Barb
+Overqwil (F)
 Ability: Intimidate  
 Level: 75
 Tera Type: Flying   
@@ -28811,6 +28863,8 @@ Difficulty: Easy
 Greninja
 Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Shuriken
+- Dark Pulse
 
 === TRAINER_SIENNA ===
 Name: SIENNA
@@ -30230,7 +30284,7 @@ Jolly Nature
 Gengar @ Gengarite  
 Ability: Cursed Body   
 Impish Nature  
-IVs: 0 Atk / 0 SpA  
+IVs: 0 Atk / 0 SpA / 0 Spe
 - Curse  
 - Shadow Ball  
 - Sludge Bomb  
@@ -30240,16 +30294,15 @@ Revavroom @ Air Balloon
 Ability: Filter
 Level: 100  
 Jolly Nature  
-- Noxious Torque  
+- Gunk Shot
 - Wicked Torque  
 - Blazing Torque  
-- Magical Torque  
+- Spin Out 
 
 Mr. Rime (M) @ Berserk Gene  
-Ability: Tangled Feet  
+Ability: Screen Cleaner
 EVs: 252 HP / 4 SpD 
 Level: 100  
-Tera Type: Ice 
 Adamant Nature  
 - Zen Headbutt  
 - Sucker Punch  
@@ -30320,8 +30373,8 @@ IVs: 0 Atk
 - Dazzling Gleam  
 - Grass Knot  
 
-Maushold @ Wide Lens  
-Ability: Technician  
+Maushold @ Sitrus Berry 
+Ability: Cheek Pouch  
 Level: 100
 Tera Type: Ghost 
 Jolly Nature  
@@ -30453,8 +30506,8 @@ IVs: 0 Atk
 - Dazzling Gleam  
 - Grass Knot  
 
-Maushold @ Wide Lens  
-Ability: Technician  
+Maushold @ Sitrus Berry  
+Ability: Cheek Pouch
 Level: 100
 Tera Type: Ghost 
 Jolly Nature  
@@ -30551,6 +30604,8 @@ Level: 20
 
 Munchlax (M)
 Level: 21
+- Covet
+- Bite
 
 Eevee (F)
 Level: 20
@@ -30585,6 +30640,8 @@ Level: 36
 
 Munchlax (M)
 Level: 37
+- Body Slam
+- Bite
 
 Combusken (M)
 Level: 38
@@ -31967,6 +32024,9 @@ Sneasel-Hisui
 Hariyama
 
 Tauros-Paldea-Combat
+- Close Combat
+- Raging Bull
+- Take Down
 
 Poliwrath
 
@@ -33480,53 +33540,45 @@ Difficulty: Easy
 
 Sawk (M) @ Focus Band  
 Ability: Inner Focus    
-Jolly Nature  
-- Substitute  
+Jolly Nature   
 - Laser Focus  
 - Focus Punch  
 - Coaching  
 
 Lucario (M) @ Focus Sash  
-Ability: Inner Focus  
-Tera Type: Water   
+Ability: Inner Focus    
 Timid Nature  
 - Follow Me  
 - Helping Hand  
-- Copycat  
 - Focus Blast  
 
 Throh (M)  
 Ability: Inner Focus  
-Tera Type: Fighting   
+Tera Type: Rock
 Adamant Nature  
 - Circle Throw  
 - Coaching   
 - Rock Slide  
 
-Decidueye-Hisui @ Focus Band  
-Ability: Scrappy  
-Tera Type: Fighting    
+Decidueye-Hisui
+Ability: Scrappy     
 Adamant Nature  
 - Brave Bird  
 - Knock Off  
 - Triple Arrows  
-- Trailblaze  
 
 Flamigo  
-Ability: Costar  
-Tera Type: Flying    
-Adamant Nature  
-- Focus Energy  
+Ability: Costar    
+Adamant Nature   
 - Close Combat  
 - Brave Bird  
 
 Chesnaught  
-Ability: Bulletproof  
-Tera Type: Fighting  
+Ability: Bulletproof   
 Adamant Nature  
 - Spiky Shield  
 - Drain Punch  
-- Trailblaze   
+- Seed Bomb  
 
 === TRAINER_BRENDAN_LILYCOVE_TREECKO ===
 Name: BRENDAN
@@ -33592,7 +33644,7 @@ Pic: Bruno
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer  
+AI: Basic Trainer  
 Difficulty: Easy
 Mugshot: Green
 
@@ -33618,20 +33670,19 @@ Jolly Nature
 - Poison Jab  
 
 Machamp (M) @ Leftovers  
-Ability: No Guard  
-Tera Type: Fighting  
-Impish Nature  
+Ability: No Guard   
+Impish Nature 
+IVs: 0 Spe 
 - Fissure   
 
 Steelix @ Steelixite  
 Ability: Sturdy   
-Brave Nature  
-IVs: 0 Spe  
+Brave Nature   
 - Earthquake  
 - Body Press  
 - Gyro Ball  
 
-Golem-Alola @ Air Balloon  
+Golem-Alola 
 Ability: Galvanize  
 Tera Type: Electric  
 Adamant Nature  
@@ -33687,14 +33738,6 @@ Dondozo
 Ability: Oblivious   
 - Wave Crash  
 - Earthquake  
-- Rock Slide  
-
-Hydrapple 
-Ability: Supersweet Syrup  
-Bold Nature  
-IVs: 0 Atk  
-- Fickle Beam  
-- Leaf Storm 
 
 Roserade @ Roserite
 Ability: Technician  
@@ -33913,6 +33956,8 @@ Difficulty: Easy
 Corviknight
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Steel Wing
+- Drill Peck
 
 Fearow
 Level: 49
@@ -35623,6 +35668,8 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Munchlax (M)
 Level: 16
+- Tackle
+- Bite
 
 Wartortle (M)
 Level:16
@@ -37700,6 +37747,8 @@ Difficulty: Easy
 Corviknight
 Level: 100
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Steel Wing
+- Drill Peck
 
 Oricorio-Pa'u
 Level: 100
@@ -38510,8 +38559,6 @@ Ability: Thick Fat
 Adamant Nature  
 - Body Slam  
 - Bite
-- Sleep Talk  
-- Rest  
 
 Blastoise (M)
 Ability: Torrent  

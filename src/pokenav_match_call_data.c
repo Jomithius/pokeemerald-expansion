@@ -806,6 +806,17 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
             [CHECK_PAGE_INTRO_1]  = COMPOUND_STRING("Your"),
             [CHECK_PAGE_INTRO_2]  = COMPOUND_STRING("Mom.")
         }
+    },
+    {
+        .idx = MC_HEADER_NORMAN,
+        .facilityClass = FACILITY_CLASS_NORMAN,
+        .flag = 0xFFFF,
+        .flavorTexts = {
+            [CHECK_PAGE_STRATEGY] = COMPOUND_STRING("Mucho texto."),
+            [CHECK_PAGE_POKEMON]  = COMPOUND_STRING("Mucho texto."),
+            [CHECK_PAGE_INTRO_1]  = COMPOUND_STRING("Your"),
+            [CHECK_PAGE_INTRO_2]  = COMPOUND_STRING("Mom.")
+        }
     }
 };
 

@@ -602,7 +602,7 @@ script Baldesia_EventScript_HisuianZoruaTrigger{
     waitmovement(0)
     waitse
     playbgm(MUS_NONE, FALSE)
-    delay(30)
+    delay(45)
     playse(SE_BIKE_HOP)
     applymovement(LOCALID_ZORUA, Common_Movement_QuestionMark)
     delay(6)

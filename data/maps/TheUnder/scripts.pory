@@ -24,7 +24,7 @@ script TheUnder_EventScript_Luna{
         Grinding is cringe, so here.\n
         Take these.", MSGBOX_DEFAULT)
     waitmessage
-    giveitem(ITEM_MASTER_BALL, 24)
+    giveitem(ITEM_MASTER_BALL, 50)
     waitmessage
     msgbox("He wanted me to give you this too.\p
         Crystals of this stuff was found in\n

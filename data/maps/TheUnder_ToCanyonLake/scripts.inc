@@ -20,7 +20,7 @@ TheUnder_ToCanyonLake_CloseEntrance::
 
 TheUnder_ToCanyonLake_MiddleTrigger_CheckLeadMon::
 # 17 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	lock
+	lockall
 # 18 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 19 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
@@ -66,13 +66,13 @@ TheUnder_ToCanyonLake_MiddleTrigger_CheckLeadMon::
 # 39 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 40 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	release
+	releaseall
 	end
 
 
 TheUnder_ToCanyonLake_RightTrigger_CheckLeadMon::
 # 45 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	lock
+	lockall
 # 46 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 47 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
@@ -118,13 +118,13 @@ TheUnder_ToCanyonLake_RightTrigger_CheckLeadMon::
 # 67 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 68 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	release
+	releaseall
 	end
 
 
 TheUnder_ToCanyonLake_LeftTrigger_CheckLeadMon::
 # 73 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	lock
+	lockall
 # 74 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 75 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
@@ -170,86 +170,86 @@ TheUnder_ToCanyonLake_LeftTrigger_CheckLeadMon::
 # 95 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 96 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	release
+	releaseall
 	end
 
 
 TheUnder_ToCanyonLake_EventScript_ScareAwayRats::
 # 101 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	lock
-# 102 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	bufferpartymonnick STR_VAR_1, 0
-# 103 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 102 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	fadenewbgm MUS_NONE
-# 104 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 103 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	playse SE_PIN
-# 105 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 104 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	applymovement 1, Common_Movement_ExclamationMark
+# 105 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+	delay 8
 # 106 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	delay 8
-# 107 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	applymovement 2, Common_Movement_ExclamationMark
-# 108 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 107 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	delay 8
-# 109 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 108 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	applymovement 3, Common_Movement_ExclamationMark
-# 110 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 109 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	waitmovement 3
+# 110 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+	waitse
 # 111 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	waitse
-# 112 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	msgbox TheUnder_ToCanyonLake_EventScript_ScareAwayRats_Text_0, MSGBOX_AUTOCLOSE
-# 114 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 113 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	waitmessage
-# 115 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 114 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 116 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 115 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	playse SE_FLEE
-# 117 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 116 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	waitse
-# 118 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 117 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	call TheUnder_ToCanyonLake_OpenEntrance
-# 119 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 118 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	removeobject 1
-# 120 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 119 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	removeobject 2
-# 121 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 120 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	removeobject 3
-# 122 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 121 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	removeobject 4
-# 123 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 122 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	removeobject 5
-# 124 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 123 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	removeobject 6
-# 125 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 124 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	removeobject 7
-# 126 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 125 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 2
-# 127 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 126 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	fadedefaultbgm
-# 128 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 127 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 129 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 128 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	setvar VAR_NEWMOON_ISLAND_STATE, 1
-# 130 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	release
+# 129 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+	releaseall
 	end
 
 
 TheUnder_ToCanyonLake_OpenEntrance::
-# 135 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 134 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	setmetatile 8, 2, METATILE_Cave_SealedChamberEntrance_TopMid, TRUE
-# 136 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 135 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	setmetatile 8, 3, METATILE_Cave_SealedChamberEntrance_BottomMid, FALSE
-# 137 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 136 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	special DrawWholeMapView
-# 138 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 137 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	playse SE_BANG
-# 139 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 138 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	setflag FLAG_SYS_THE_UNDER_DIG
+# 139 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+	waitse
 	return
 
 
 TheUnder_ToCanyonLake_EventScript_ScareAwayRats_Text_0:
-# 112 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
+# 111 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
 	.string "The RATICATE are afraid of\n  {STR_VAR_1}!$"

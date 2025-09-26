@@ -1,15 +1,25 @@
+const LOCALID_CRESSELIA = 1
+
 mapscripts FullMoonIslandInterior_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE[VAR_RAT_CAVE_STATE, 10: FullMoonIslandInterior_EventScript_RatduardoBattle]
     MAP_SCRIPT_ON_RESUME: FullMoonIslandInterior_TryRemoveCresselia
+    MAP_SCRIPT_ON_TRANSITION: FullMoonIsland_OnTransition
+}
+
+script FullMoonIsland_OnTransition{
+    call_if_defeated(TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_RemoveRatduardoPokemon)
+    end
 }
 
 script FullMoonIslandInterior_TryRemoveCresselia{
+    call_if_defeated(TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_RemoveRatduardoPokemon)
     specialvar(VAR_RESULT, GetBattleOutcome)
     goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
-    call_if_set(FLAG_TEMP_5, FullMoonIslandInterior_RemoveRatduardoPokemon)
-    removeobject(VAR_LAST_TALKED)
+    if(var(VAR_LAST_TALKED) == LOCALID_CRESSELIA){
+        removeobject(LOCALID_CRESSELIA)
+    }
     end
 }
 
@@ -21,7 +31,13 @@ script FullMoonIslandInterior_RemoveRatduardoPokemon{
 
 script FullMoonIslandInterior_EventScript_RatduardoBattle{
     lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6)
+    checkobjectat(8, 17)
+    if(var(VAR_RESULT) == TRUE){
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6)
+    }
+    else{
+        applymovement(OBJ_EVENT_ID_PLAYER, FullMoonIslandInterior_Movement_PlayerApproachRatduardoRightEntrance)
+    }
     waitmovement(0)
     delay(30)
     playse(SE_PIN)
@@ -37,7 +53,6 @@ script FullMoonIslandInterior_EventScript_RatduardoBattle{
     playbgm(MUS_OLD_CHATEAU, FALSE)
     msgbox(FullMoonIslandInterior_Text_Ratduardo, MSGBOX_AUTOCLOSE)
     waitmessage
-    setflag(FLAG_TEMP_5)
     setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_RATDUARDO_FULLMOON_ISLAND, FullMoonIslandInterior_Text_RatduardoDefeat)
     clearflag(FLAG_SYS_BOSS_BATTLE)
@@ -171,4 +186,10 @@ text FullMoonIslandInterior_Text_CresseliaMyThanks{
 text FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind{
     "I see.\n
     I'll be here if you ever change your mind."
+}
+
+movement FullMoonIslandInterior_Movement_PlayerApproachRatduardoRightEntrance{
+    walk_up * 5
+    walk_left
+    walk_up
 }

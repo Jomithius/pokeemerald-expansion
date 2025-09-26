@@ -14,7 +14,7 @@ script TheUnder_ToCanyonLake_CloseEntrance{
 }
 
 script TheUnder_ToCanyonLake_MiddleTrigger_CheckLeadMon{
-    lock
+    lockall
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     special(IsLeadMonCat)
     playse(SE_PIN)
@@ -37,12 +37,12 @@ script TheUnder_ToCanyonLake_MiddleTrigger_CheckLeadMon{
     applymovement(1, Common_Movement_WalkInPlaceDown)
     waitmovement(1)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-    release
+    releaseall
     end
 }
 
 script TheUnder_ToCanyonLake_RightTrigger_CheckLeadMon{
-    lock
+    lockall
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     special(IsLeadMonCat)
     playse(SE_PIN)
@@ -65,12 +65,12 @@ script TheUnder_ToCanyonLake_RightTrigger_CheckLeadMon{
     applymovement(3, Common_Movement_WalkInPlaceDown)
     waitmovement(3)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-    release
+    releaseall
     end
 }
 
 script TheUnder_ToCanyonLake_LeftTrigger_CheckLeadMon{
-    lock
+    lockall
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     special(IsLeadMonCat)
     playse(SE_PIN)
@@ -93,12 +93,11 @@ script TheUnder_ToCanyonLake_LeftTrigger_CheckLeadMon{
     applymovement(2, Common_Movement_WalkInPlaceDown)
     waitmovement(2)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-    release
+    releaseall
     end
 }
 
 script TheUnder_ToCanyonLake_EventScript_ScareAwayRats{
-    lock
     bufferpartymonnick(STR_VAR_1, 0)
     fadenewbgm(MUS_NONE)
     playse(SE_PIN)
@@ -127,7 +126,7 @@ script TheUnder_ToCanyonLake_EventScript_ScareAwayRats{
     fadedefaultbgm
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     setvar(VAR_NEWMOON_ISLAND_STATE, 1)
-    release
+    releaseall
     end
 }
 
@@ -137,6 +136,7 @@ script TheUnder_ToCanyonLake_OpenEntrance{
     special(DrawWholeMapView)
     playse(SE_BANG)
     setflag(FLAG_SYS_THE_UNDER_DIG)
+    waitse
     return
 }
 

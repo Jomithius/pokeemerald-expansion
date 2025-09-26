@@ -3,7 +3,6 @@ mapscripts WachunpelonCity_MapScripts {
 }
 
 script WachunpelonCity_OnTransition{
-    setflag(FLAG_LANDMARK_WACHUNPELON)
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
     end
 }
@@ -234,7 +233,7 @@ script WachunpelonCity_EventScript_Policeman{
         goto(WachunpelonCity_EventScript_PolicemanNorth)
     }
     else{
-        goto(WachunpelonCity_EventScript_PolicemanEast)
+        goto(WachunpelonCity_EventScript_PolicemanWest)
     }
     end
 }
@@ -261,6 +260,9 @@ script WachunpelonCity_EventScript_PolicemanNorth{
     applymovement(1, Common_Movement_WalkUp)
     waitmovement(1)
     removeobject(1)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
     applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerNorth)
     waitmovement(0)
     hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY)
@@ -274,7 +276,7 @@ script WachunpelonCity_EventScript_PolicemanNorth{
     end
 }
 
-script WachunpelonCity_EventScript_PolicemanEast{
+script WachunpelonCity_EventScript_PolicemanWest{
     lock
     playse(SE_PIN)
     applymovement(1, Common_Movement_ExclamationMark)
@@ -302,6 +304,9 @@ script WachunpelonCity_EventScript_PolicemanEast{
     applymovement(1, Common_Movement_WalkUp)
     waitmovement(1)
     removeobject(1)
+    applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+    waitmovement(0)
+    callnative(RemoveFollowingPokemon)
     applymovement(OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerEast)
     waitmovement(0)
     hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY)

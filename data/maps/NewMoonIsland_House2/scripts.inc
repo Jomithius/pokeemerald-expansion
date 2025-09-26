@@ -183,149 +183,151 @@ NewMoonIsland_House2_EventScript_Ratduardo::
 # 110 "data/maps/NewMoonIsland_House2/scripts.pory"
 	clearflag FLAG_HIDE_CHANNELER_NEWMOON_ISLAND_PLAZA
 # 111 "data/maps/NewMoonIsland_House2/scripts.pory"
-	fadedefaultbgm
+	setflag FLAG_HIDE_RATDUARDO_FULLMOON
 # 112 "data/maps/NewMoonIsland_House2/scripts.pory"
+	fadedefaultbgm
+# 113 "data/maps/NewMoonIsland_House2/scripts.pory"
 	release
 	end
 
 
 NewMoonIsland_House2_EventScript_Channeler::
-# 117 "data/maps/NewMoonIsland_House2/scripts.pory"
-	lock
 # 118 "data/maps/NewMoonIsland_House2/scripts.pory"
-	faceplayer
+	lock
 # 119 "data/maps/NewMoonIsland_House2/scripts.pory"
-	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+	faceplayer
 # 120 "data/maps/NewMoonIsland_House2/scripts.pory"
-	delay 8
+	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
 # 121 "data/maps/NewMoonIsland_House2/scripts.pory"
-	hideobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+	delay 8
 # 122 "data/maps/NewMoonIsland_House2/scripts.pory"
-	delay 16
-# 123 "data/maps/NewMoonIsland_House2/scripts.pory"
-	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
-# 124 "data/maps/NewMoonIsland_House2/scripts.pory"
-	delay 24
-# 125 "data/maps/NewMoonIsland_House2/scripts.pory"
 	hideobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
-# 126 "data/maps/NewMoonIsland_House2/scripts.pory"
-	delay 30
-# 127 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 123 "data/maps/NewMoonIsland_House2/scripts.pory"
+	delay 16
+# 124 "data/maps/NewMoonIsland_House2/scripts.pory"
 	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+# 125 "data/maps/NewMoonIsland_House2/scripts.pory"
+	delay 24
+# 126 "data/maps/NewMoonIsland_House2/scripts.pory"
+	hideobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
+# 127 "data/maps/NewMoonIsland_House2/scripts.pory"
+	delay 30
 # 128 "data/maps/NewMoonIsland_House2/scripts.pory"
-	msgbox NewMoonIsland_House2_EventScript_Ratduardo_Text_0, MSGBOX_AUTOCLOSE
+	showobjectat VAR_LAST_TALKED, MAP_NEW_MOON_ISLAND_HOUSE2
 # 129 "data/maps/NewMoonIsland_House2/scripts.pory"
-	waitmessage
+	msgbox NewMoonIsland_House2_EventScript_Ratduardo_Text_0, MSGBOX_AUTOCLOSE
 # 130 "data/maps/NewMoonIsland_House2/scripts.pory"
-	setflag FLAG_SYS_BOSS_BATTLE
+	waitmessage
 # 131 "data/maps/NewMoonIsland_House2/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHANNELER_NEWMOON_ISLAND, NewMoonIsland_House2_Text_RatduardoDefeat
+	setflag FLAG_SYS_BOSS_BATTLE
 # 132 "data/maps/NewMoonIsland_House2/scripts.pory"
-	clearflag FLAG_SYS_BOSS_BATTLE
+	trainerbattle_no_intro TRAINER_CHANNELER_NEWMOON_ISLAND, NewMoonIsland_House2_Text_RatduardoDefeat
 # 133 "data/maps/NewMoonIsland_House2/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	clearflag FLAG_SYS_BOSS_BATTLE
 # 134 "data/maps/NewMoonIsland_House2/scripts.pory"
-	call NewMoonIsland_House2_HideTrapChest
+	fadescreenswapbuffers FADE_TO_BLACK
 # 135 "data/maps/NewMoonIsland_House2/scripts.pory"
-	removeobject 10
+	call NewMoonIsland_House2_HideTrapChest
 # 136 "data/maps/NewMoonIsland_House2/scripts.pory"
-	removeobject 11
+	removeobject 10
 # 137 "data/maps/NewMoonIsland_House2/scripts.pory"
-	removeobject 12
+	removeobject 11
 # 138 "data/maps/NewMoonIsland_House2/scripts.pory"
-	special DrawWholeMapView
+	removeobject 12
 # 139 "data/maps/NewMoonIsland_House2/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	special DrawWholeMapView
 # 140 "data/maps/NewMoonIsland_House2/scripts.pory"
-	resetweather
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 141 "data/maps/NewMoonIsland_House2/scripts.pory"
-	doweather
+	resetweather
 # 142 "data/maps/NewMoonIsland_House2/scripts.pory"
-	special WaitWeather
+	doweather
 # 143 "data/maps/NewMoonIsland_House2/scripts.pory"
-	setvar VAR_NEWMOON_ISLAND_STATE, 4
+	special WaitWeather
 # 144 "data/maps/NewMoonIsland_House2/scripts.pory"
-	fadedefaultbgm
+	setvar VAR_NEWMOON_ISLAND_STATE, 4
 # 145 "data/maps/NewMoonIsland_House2/scripts.pory"
+	fadedefaultbgm
+# 146 "data/maps/NewMoonIsland_House2/scripts.pory"
 	release
 	end
 
 
 NewMoonIsland_House2_EventScript_Raticate::
-# 155 "data/maps/NewMoonIsland_House2/scripts.pory"
-	lock
 # 156 "data/maps/NewMoonIsland_House2/scripts.pory"
+	lock
+# 157 "data/maps/NewMoonIsland_House2/scripts.pory"
 	msgbox NewMoonIsland_House2_EventScript_Raticate_Text_0, MSGBOX_NPC
-# 158 "data/maps/NewMoonIsland_House2/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 159 "data/maps/NewMoonIsland_House2/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 160 "data/maps/NewMoonIsland_House2/scripts.pory"
+	waitmovement 0
+# 161 "data/maps/NewMoonIsland_House2/scripts.pory"
 	release
 	end
 
 
 NewMoonIsland_House2_EventScript_RaticateAlola::
-# 165 "data/maps/NewMoonIsland_House2/scripts.pory"
-	lock
 # 166 "data/maps/NewMoonIsland_House2/scripts.pory"
-	faceplayer
+	lock
 # 167 "data/maps/NewMoonIsland_House2/scripts.pory"
+	faceplayer
+# 168 "data/maps/NewMoonIsland_House2/scripts.pory"
 	msgbox NewMoonIsland_House2_EventScript_RaticateAlola_Text_0, MSGBOX_YESNO
-# 169 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 170 "data/maps/NewMoonIsland_House2/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NewMoonIsland_House2_EventScript_RaticateAlola_2
-# 173 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 174 "data/maps/NewMoonIsland_House2/scripts.pory"
 	msgbox NewMoonIsland_House2_EventScript_RaticateAlola_Text_2, MSGBOX_AUTOCLOSE
 NewMoonIsland_House2_EventScript_RaticateAlola_1:
-# 175 "data/maps/NewMoonIsland_House2/scripts.pory"
-	waitmessage
 # 176 "data/maps/NewMoonIsland_House2/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmessage
 # 177 "data/maps/NewMoonIsland_House2/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 178 "data/maps/NewMoonIsland_House2/scripts.pory"
+	waitmovement 0
+# 179 "data/maps/NewMoonIsland_House2/scripts.pory"
 	release
 	end
 
 NewMoonIsland_House2_EventScript_RaticateAlola_2:
-# 170 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 171 "data/maps/NewMoonIsland_House2/scripts.pory"
 	msgbox NewMoonIsland_House2_EventScript_RaticateAlola_Text_1, MSGBOX_AUTOCLOSE
 	goto NewMoonIsland_House2_EventScript_RaticateAlola_1
 
 
 NewMoonIsland_House2_EventScript_RattataAlola::
-# 183 "data/maps/NewMoonIsland_House2/scripts.pory"
-	lock
 # 184 "data/maps/NewMoonIsland_House2/scripts.pory"
-	faceplayer
+	lock
 # 185 "data/maps/NewMoonIsland_House2/scripts.pory"
-	msgbox NewMoonIsland_House2_EventScript_RattataAlola_Text_0, MSGBOX_AUTOCLOSE
+	faceplayer
 # 186 "data/maps/NewMoonIsland_House2/scripts.pory"
-	waitmessage
+	msgbox NewMoonIsland_House2_EventScript_RattataAlola_Text_0, MSGBOX_AUTOCLOSE
 # 187 "data/maps/NewMoonIsland_House2/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmessage
 # 188 "data/maps/NewMoonIsland_House2/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 189 "data/maps/NewMoonIsland_House2/scripts.pory"
+	waitmovement 0
+# 190 "data/maps/NewMoonIsland_House2/scripts.pory"
 	release
 	end
 
 
 NewMoonIsland_House2_EventScript_Rattata::
-# 194 "data/maps/NewMoonIsland_House2/scripts.pory"
-	lock
 # 195 "data/maps/NewMoonIsland_House2/scripts.pory"
-	faceplayer
+	lock
 # 196 "data/maps/NewMoonIsland_House2/scripts.pory"
+	faceplayer
+# 197 "data/maps/NewMoonIsland_House2/scripts.pory"
 	msgbox NewMoonIsland_House2_EventScript_Rattata_Text_0, MSGBOX_AUTOCLOSE
-# 198 "data/maps/NewMoonIsland_House2/scripts.pory"
-	waitmessage
 # 199 "data/maps/NewMoonIsland_House2/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmessage
 # 200 "data/maps/NewMoonIsland_House2/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 201 "data/maps/NewMoonIsland_House2/scripts.pory"
+	waitmovement 0
+# 202 "data/maps/NewMoonIsland_House2/scripts.pory"
 	release
 	end
 
@@ -347,29 +349,29 @@ NewMoonIsland_House2_EventScript_Ratduardo_Text_0:
 	.string "…$"
 
 NewMoonIsland_House2_EventScript_Raticate_Text_0:
-# 156 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 157 "data/maps/NewMoonIsland_House2/scripts.pory"
 	.string "Just because we're trapped here\n doesn't mean we can't be a family.$"
 
 NewMoonIsland_House2_EventScript_RaticateAlola_Text_0:
-# 167 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 168 "data/maps/NewMoonIsland_House2/scripts.pory"
 	.string "What, {PLAYER}?\n Never seen a rat family before?$"
 
 NewMoonIsland_House2_EventScript_RaticateAlola_Text_1:
-# 170 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 171 "data/maps/NewMoonIsland_House2/scripts.pory"
 	.string "Guess you're just uncultured.$"
 
 NewMoonIsland_House2_EventScript_RaticateAlola_Text_2:
-# 173 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 174 "data/maps/NewMoonIsland_House2/scripts.pory"
 	.string "Then come join us for dinner.$"
 
 NewMoonIsland_House2_EventScript_RattataAlola_Text_0:
-# 185 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 186 "data/maps/NewMoonIsland_House2/scripts.pory"
 	.string "My stummy hurt.$"
 
 NewMoonIsland_House2_EventScript_Rattata_Text_0:
-# 196 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 197 "data/maps/NewMoonIsland_House2/scripts.pory"
 	.string "How are you so calm with her standing\n right behind you?$"
 
 NewMoonIsland_House2_Text_RatduardoDefeat::
-# 149 "data/maps/NewMoonIsland_House2/scripts.pory"
+# 150 "data/maps/NewMoonIsland_House2/scripts.pory"
 	.string "…\n There's no escape…$"

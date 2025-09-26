@@ -229,8 +229,9 @@
 #define FACILITY_CLASS_JOMITHIUS             0x52
 #define FACILITY_CLASS_JAMES                 0x53
 #define FACILITY_CLASS_LUNA                  0x54
+#define FACILITY_CLASS_NORMAN                0x55
 
-#define FACILITY_CLASSES_COUNT               0x55
+#define FACILITY_CLASSES_COUNT               0x56
 
 #define RS_FACILITY_CLASS_AQUA_LEADER_ARCHIE    0x0
 #define RS_FACILITY_CLASS_AQUA_GRUNT_M          0x1

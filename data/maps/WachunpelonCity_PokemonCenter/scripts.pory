@@ -5,6 +5,7 @@ mapscripts WachunpelonCity_PokemonCenter_MapScripts {
 
 script WachunpelonCity_PokemonCenter_OnTransition{
     setrespawn(HEAL_LOCATION_WACHUNPELON_CITY)
+    setflag(FLAG_LANDMARK_WACHUNPELON)
     end
 }
 

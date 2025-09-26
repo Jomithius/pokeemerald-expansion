@@ -511,7 +511,7 @@ Route135_EventScript_WhitneyBattle_Text_0:
 
 Route135_EventScript_WhitneyBattle_Text_1:
 # 106 "data/maps/Route135/scripts.pory"
-	.string "Huh? Who are you?\n A TRAINER?\p Perfect timing!\n Help me have some fun with a battle!$"
+	.string "Huh? Who are you?\n A TRAINER?\p Perfect timing!\n Let's have some fun with a battle!$"
 
 Route135_EventScript_WhitneyBattle_Text_2:
 # 112 "data/maps/Route135/scripts.pory"

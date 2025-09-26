@@ -30,7 +30,7 @@ TheUnder_EventScript_Luna_1:
 # 26 "data/maps/TheUnder/scripts.pory"
 	waitmessage
 # 27 "data/maps/TheUnder/scripts.pory"
-	giveitem ITEM_MASTER_BALL, 24
+	giveitem ITEM_MASTER_BALL, 50
 # 28 "data/maps/TheUnder/scripts.pory"
 	waitmessage
 # 29 "data/maps/TheUnder/scripts.pory"

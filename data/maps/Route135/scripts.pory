@@ -106,7 +106,7 @@ script Route135_EventScript_WhitneyBattle{
     msgbox("Huh? Who are you?\n
         A TRAINER?\p
         Perfect timing!\n
-        Help me have some fun with a battle!", MSGBOX_AUTOCLOSE)
+        Let's have some fun with a battle!", MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_WHITNEY, "That was fun!")

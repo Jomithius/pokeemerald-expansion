@@ -63,7 +63,7 @@ script Route135_Lab_EventScript_James{
     }
     elif(var(VAR_ULTRA_SPACE_STATE) == 6){
         msgbox("How did the expedition go?\n
-            I surveyed that place too.\p
+            I wanna survey that place too.\p
             It's crazy to think there's whole\n
             other worlds and civilizations out\l
             there parallel to ours.\p
@@ -665,7 +665,7 @@ text Route135_Lab_Text_Maniac2{
 text Route135_Lab_Text_Maniac3{
     "I presume you're already aware of\n
     what's being researched here…\p
-    But to reiterate, I'm currently looking\l
+    But to reiterate, I'm currently looking\n
     into the possibility of traveling\l
     to new worlds.\p
     In fact, I discovered the existence of\n

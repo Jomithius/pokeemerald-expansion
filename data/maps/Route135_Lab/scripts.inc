@@ -1407,7 +1407,7 @@ Route135_Lab_EventScript_James_Text_0:
 
 Route135_Lab_EventScript_James_Text_1:
 # 65 "data/maps/Route135_Lab/scripts.pory"
-	.string "How did the expedition go?\n I surveyed that place too.\p It's crazy to think there's whole\n other worlds and civilizations out\l there parallel to ours.\p Maybe the void could actually be\n real…\p Don't worry, I'm not going to\n go back to my phase.\p I'm just thinking out loud.$"
+	.string "How did the expedition go?\n I wanna survey that place too.\p It's crazy to think there's whole\n other worlds and civilizations out\l there parallel to ours.\p Maybe the void could actually be\n real…\p Don't worry, I'm not going to\n go back to my phase.\p I'm just thinking out loud.$"
 
 Route_135_EventScript_JamesGoFinishTheGame_Text_0:
 # 96 "data/maps/Route135_Lab/scripts.pory"
@@ -1531,7 +1531,7 @@ Route135_Lab_Text_Maniac2::
 
 Route135_Lab_Text_Maniac3::
 # 665 "data/maps/Route135_Lab/scripts.pory"
-	.string "I presume you're already aware of\n what's being researched here…\p But to reiterate, I'm currently looking\l into the possibility of traveling\l to new worlds.\p In fact, I discovered the existence of\n different dimensions parallel to ours.\p I've named the endless expanse\n between these worlds ULTRA SPACE.\p There have been past accounts of rifts\n opening in other regions that can\l connect our world to this ULTRA SPACE.$"
+	.string "I presume you're already aware of\n what's being researched here…\p But to reiterate, I'm currently looking\n into the possibility of traveling\l to new worlds.\p In fact, I discovered the existence of\n different dimensions parallel to ours.\p I've named the endless expanse\n between these worlds ULTRA SPACE.\p There have been past accounts of rifts\n opening in other regions that can\l connect our world to this ULTRA SPACE.$"
 
 Route135_Lab_Text_Maniac4::
 # 680 "data/maps/Route135_Lab/scripts.pory"

@@ -11,21 +11,22 @@ script AzureMountain_EventScript_Barley{
 }
 
 script AzureMountain_EventScript_Hurley{
-    trainerbattle_single(TRAINER_HURLEY, "I got here by cheating!", "Are you cheating too?!")
+    trainerbattle_single(TRAINER_HURLEY, "Hey!\nDo you know what an ACTION REPLAY is?", "Are you cheating too?!")
     msgbox("There's no way you beat my team.\n
-        You've gotta be cheating too.", MSGBOX_NPC)
+        You gotta be cheating too.", MSGBOX_NPC)
 	end
 }
 
 script AzureMountain_EventScript_Jessi{
     trainerbattle_single(TRAINER_JESSI, "Oh?\nYou think you can beat me?", "Okay…\nMaybe you can…")
-    msgbox("Dang…\nYou're strong!", MSGBOX_NPC)
+    msgbox("Wow. You're almost as strong as the\n
+        other TRAINER that came through here.", MSGBOX_NPC)
 	end
 }
 
 script AzureMountain_EventScript_Dogfood{
     trainerbattle_single(TRAINER_DOGFOOD, "Guys…\nI need pee.", "Grrr…")
-    msgbox("Guys…\nI need pee.", MSGBOX_NPC)
+    msgbox("I used to work at FORTREE's GYM,\nbut I got kicked out.", MSGBOX_NPC)
 	end
 }
 

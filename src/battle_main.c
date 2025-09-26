@@ -1983,7 +1983,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 switch(rand_diff)
                 {
                     case 0:
-					    rand_diff = 1;
+					    rand_diff = 0;
 					    break;
                     case 1:
                         rand_diff = 0;
