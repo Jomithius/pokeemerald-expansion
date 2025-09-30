@@ -1,4 +1,11 @@
-mapscripts AzureMountain_RestStop_MapScripts {}
+mapscripts AzureMountain_RestStop_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: AzureMountain_RestStop_OnTransition
+}
+
+script AzureMountain_RestStop_OnTransition{
+    call(Common_EventScript_SetPooblesGfx)
+    end
+}
 
 script AzureMountain_RestStop_EventScript_Poobles{
     lock

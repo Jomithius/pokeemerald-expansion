@@ -16,7 +16,7 @@ FortreeCity_Gym_OnWarp:
 	.2byte 0
 
 FortreeCity_Gym_OnResume:
-	call_if_defeated TRAINER_WINONA_2, FortreeCity_Gym_EventScript_RemoveGymLeaderPkmn
+	call_if_defeated TRAINER_WINONA_2, FortreeCity_Gym_EventScript_RemoveGymLeaderPkmn2
 	end
 
 FortreeCity_Gym_OnLoad:
@@ -24,6 +24,11 @@ FortreeCity_Gym_OnLoad:
 	end
 
 FortreeCity_Gym_EventScript_RemoveGymLeaderPkmn:
+	removeobject 10
+	setflag FLAG_TEMP_7
+	return
+
+FortreeCity_Gym_EventScript_RemoveGymLeaderPkmn2:
 	removeobject 10
 	return
 

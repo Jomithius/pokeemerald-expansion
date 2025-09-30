@@ -70,7 +70,7 @@ Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou:
 	.string "challenge, I'll have you know.$"
 
 Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace:
-	.string "We use these EXP CANDIES to more\n"
+	.string "We use these EXP. CANDIES to more\n"
 	.string "effectively strengthen our POKéMON\l"
 	.string "in training.\p"
 	.string "Since you've beaten all of us here,\n"

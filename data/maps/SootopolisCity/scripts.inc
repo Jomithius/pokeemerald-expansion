@@ -3945,54 +3945,56 @@ SootopolisCity_EventScript_PainSplitTutor::
 # 2000 "data/maps/SootopolisCity/scripts.pory"
 	waitmessage
 # 2001 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach
+	setflag FLAG_TALKED_TO_PAIN_SPLIT_TUTOR
 # 2002 "data/maps/SootopolisCity/scripts.pory"
-	goto SootopolisCity_EventScript_PainSplitTutorDecline
+	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach
 # 2003 "data/maps/SootopolisCity/scripts.pory"
+	goto SootopolisCity_EventScript_PainSplitTutorDecline
+# 2004 "data/maps/SootopolisCity/scripts.pory"
 	release
 	end
 
 
 SootopolisCity_EventScript_PainSplitTutor2::
-# 2008 "data/maps/SootopolisCity/scripts.pory"
-	lock
 # 2009 "data/maps/SootopolisCity/scripts.pory"
-	faceplayer
+	lock
 # 2010 "data/maps/SootopolisCity/scripts.pory"
+	faceplayer
+# 2011 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_PainSplitTutor2_Text_0, MSGBOX_YESNO
-# 2013 "data/maps/SootopolisCity/scripts.pory"
-	waitmessage
 # 2014 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach
+	waitmessage
 # 2015 "data/maps/SootopolisCity/scripts.pory"
-	goto SootopolisCity_EventScript_PainSplitTutorDecline
+	goto_if_eq VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach
 # 2016 "data/maps/SootopolisCity/scripts.pory"
+	goto SootopolisCity_EventScript_PainSplitTutorDecline
+# 2017 "data/maps/SootopolisCity/scripts.pory"
 	release
 	end
 
 
 MoveTutor_EventScript_PainSplitTeach::
-# 2021 "data/maps/SootopolisCity/scripts.pory"
-	msgbox MoveTutor_EventScript_PainSplitTeach_Text_0, MSGBOX_DEFAULT
 # 2022 "data/maps/SootopolisCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_PAIN_SPLIT
+	msgbox MoveTutor_EventScript_PainSplitTeach_Text_0, MSGBOX_DEFAULT
 # 2023 "data/maps/SootopolisCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_PAIN_SPLIT
 # 2024 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_PainSplitTutorDecline
+	call MoveTutor_EventScript_OpenPartyMenu
 # 2025 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_PainSplitTutorDecline
+# 2026 "data/maps/SootopolisCity/scripts.pory"
 	goto SootopolisCity_EventScript_PainSplitTutorDecline
 	end
 
 
 SootopolisCity_EventScript_PainSplitTutorDecline::
-# 2030 "data/maps/SootopolisCity/scripts.pory"
-	lock
 # 2031 "data/maps/SootopolisCity/scripts.pory"
+	lock
+# 2032 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_PainSplitTutorDecline_Text_0, MSGBOX_AUTOCLOSE
-# 2033 "data/maps/SootopolisCity/scripts.pory"
-	waitmessage
 # 2034 "data/maps/SootopolisCity/scripts.pory"
+	waitmessage
+# 2035 "data/maps/SootopolisCity/scripts.pory"
 	release
 	end
 
@@ -4134,13 +4136,13 @@ SootopolisCity_EventScript_PainSplitTutor_Text_0:
 	.string "Hey.\n See those two idiots over there?\l They're my brothers.\p They always yap about powering through\n the pain, but you gotta know how\l to handle it.\p I can teach your POKéMON how to\n handle pain, if you want.$"
 
 SootopolisCity_EventScript_PainSplitTutor2_Text_0:
-# 2010 "data/maps/SootopolisCity/scripts.pory"
-	.string "Hi again.\n Want to teach your POKéMON how to\n handle some pain?$"
+# 2011 "data/maps/SootopolisCity/scripts.pory"
+	.string "Hi again.\p Want to teach your POKéMON how to\n handle some pain?$"
 
 MoveTutor_EventScript_PainSplitTeach_Text_0:
-# 2021 "data/maps/SootopolisCity/scripts.pory"
+# 2022 "data/maps/SootopolisCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach PAIN SPLIT to?$"
 
 SootopolisCity_EventScript_PainSplitTutorDecline_Text_0:
-# 2031 "data/maps/SootopolisCity/scripts.pory"
+# 2032 "data/maps/SootopolisCity/scripts.pory"
 	.string "Don't listen to my idiot brothers.\n It's okay to be afraid of pain.$"

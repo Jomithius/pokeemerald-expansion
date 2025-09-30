@@ -25,6 +25,7 @@ LavaridgeTown_Gym_1F_OnLoad:
 
 LavaridgeTown_Gym_1F_EventScript_RemoveGymLeaderPkmn::
 	removeobject 7
+	setflag FLAG_TEMP_7
 	return
 
 @ Unclear where/if these temp vars are getting checked

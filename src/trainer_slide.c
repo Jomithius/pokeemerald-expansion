@@ -192,7 +192,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MOMO] = // Momo
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("… This technique also clones my\nMEGA RING.{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("… This technique also clones my\nMEGA RING. Isn't that cool?{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_ARIA] = // Aria
         {

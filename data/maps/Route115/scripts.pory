@@ -615,6 +615,7 @@ script Route115_EventScript_JamesBattle{
     applymovement(24, Common_Movement_WalkInPlaceUp)
     waitmovement(24)
     fadeoutbgm(0)
+    delay(24)
     msgbox("Actually, one more thing.", MSGBOX_DEFAULT)
     waitmessage
     applymovement(24, Common_Movement_WalkInPlaceDown)
@@ -650,7 +651,7 @@ script Route115_EventScript_PlayerGetsInPosition{
     fadescreen(FADE_TO_WHITE)
     addobject(25)
     setobjectxy(OBJ_EVENT_ID_FOLLOWER, 7, 64)
-    clearflag(FLAG_HIDE_TYPHLOSION_ROUTE_115)
+    // clearflag(FLAG_HIDE_TYPHLOSION_ROUTE_115)
     applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_ExitPokeball)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_FOLLOWER, BaldesianForestDojo_Movement_FollowerBesidePlayer)

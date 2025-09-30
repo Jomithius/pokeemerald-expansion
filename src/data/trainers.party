@@ -5163,6 +5163,7 @@ Level: 20
 EVs: 68 Def / 176 SpA / 12 SpD / 244 Spe  
 Modest Nature  
 IVs: 0 Atk  
+Ball: Nest Ball
 - Destiny Bond  
 - Air Cutter  
 - Will-O-Wisp  
@@ -5172,7 +5173,8 @@ Skiddo @ Coba Berry
 Ability: Sap Sipper  
 Level: 21  
 EVs: 244 Atk / 20 Def / 244 SpD  
-Adamant Nature  
+Adamant Nature 
+Ball: Nest Ball 
 - Bulk Up  
 - Razor Leaf  
 - Secret Power  
@@ -5183,6 +5185,7 @@ Ability: Pastel Veil
 Level: 20  
 EVs: 4 HP / 144 Atk / 8 Def / 96 SpA / 252 Spe  
 Naive Nature  
+Ball: Nest Ball
 - Stomp  
 - Dazzling Gleam  
 - Psybeam  
@@ -5193,6 +5196,7 @@ Ability: Long Reach
 Level: 21  
 EVs: 248 Atk / 12 SpD / 240 Spe  
 Adamant Nature  
+Ball: Nest Ball
 - Dual Wingbeat  
 - Steel Wing  
 - Razor Leaf  
@@ -5203,6 +5207,7 @@ Ability: Cute Charm
 Level: 21  
 EVs: 248 HP / 128 Atk  
 IVs: 0 SpA  
+Ball: Nest Ball
 - Tail Slap  
 - Rock Blast  
 - Bullet Seed   
@@ -5210,8 +5215,10 @@ IVs: 0 SpA
 POOBLES (Diglett-Alola) (M) @ Rocky Helmet  
 Ability: Tangling Hair  
 Level: 21  
+Shiny: Yes  
 EVs: 8 HP / 236 Atk / 4 SpD / 252 Spe  
-Jolly Nature  
+Jolly Nature 
+Ball: Nest Ball 
 - Metal Claw  
 - Aerial Ace  
 - Rock Tomb  
@@ -5646,7 +5653,7 @@ IVs: 0 Atk
 - Flamethrower  
 - Thunderbolt  
 
-Mawile (F) @ Life Orb  
+Bruce Wayne (Mawile) (F) @ Life Orb  
 Ability: Sheer Force  
 Level: 60 
 EVs: 252 HP / 252 Atk  
@@ -15819,7 +15826,7 @@ IVs: 0 Atk
 - Pain Split  
 - Discharge
 
-Magmortar (M) @ Heavy-Duty Boots  
+KingHenryIII (Magmortar) (M) @ Heavy-Duty Boots  
 Ability: Flame Body  
 Shiny: Yes  
 EVs: 4 Def / 252 SpA / 252 Spe  
@@ -16009,6 +16016,7 @@ Ability: Regenerator
 EVs: 252 HP / 252 Def
 Bold Nature  
 IVs: 0 Atk  
+Ball: Nest Ball
 - Future Sight  
 - Chilly Reception  
 - Scald  
@@ -16019,6 +16027,7 @@ Ability: Unaware
 Tera Type: Water  
 EVs: 252 HP / 4 Atk / 252 SpD  
 Careful Nature  
+Ball: Nest Ball
 - Toxic  
 - Stealth Rock  
 - Earthquake  
@@ -16029,6 +16038,7 @@ Ability: Unburden
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
+Ball: Nest Ball
 - Calm Mind  
 - Shadow Ball  
 - Air Slash  
@@ -16038,7 +16048,8 @@ Decidueye (M) @ Leftovers
 Ability: Overgrow  
 Tera Type: Flying  
 EVs: 248 HP / 252 Atk / 8 SpD  
-Adamant Nature  
+Adamant Nature 
+Ball: Nest Ball 
 - Swords Dance  
 - Spirit Shackle  
 - Seed Bomb  
@@ -16048,7 +16059,8 @@ Cetitan @ Sitrus Berry
 Ability: Slush Rush  
 Tera Type: Ice  
 EVs: 4 HP / 252 Atk / 252 Spe  
-Jolly Nature  
+Jolly Nature 
+Ball: Nest Ball 
 - Belly Drum  
 - Icicle Crash  
 - Earthquake  
@@ -16056,8 +16068,10 @@ Jolly Nature
 
 POOBLES (Diglett-Alola) (M) @ Pooblite
 Ability: Tangling Hair  
+Shiny: Yes  
 EVs: 252 Atk / 4 SpD / 252 Spe  
-Adamant Nature  
+Adamant Nature 
+Ball: Nest Ball 
 - Earthquake  
 - Iron Head  
 - Sucker Punch  
@@ -17408,7 +17422,7 @@ IVs: 0 Atk
 - Volt Switch  
 - Toxic  
 
-Mawile (F) @ Mawilite  
+Bruce Wayne (Mawile) (F) @ Mawilite  
 Ability: Intimidate  
 Tera Type: Steel  
 EVs: 248 HP / 252 Atk / 8 SpD  
@@ -24924,6 +24938,7 @@ Ability: Aftermath
 Level: 19  
 Modest Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ball: Nest Ball
 - Air Cutter   
 - Hex  
 
@@ -24932,6 +24947,7 @@ Ability: Sap Sipper
 Level: 20 
 Adamant Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
+Ball: Nest Ball
 - Razor Leaf  
 - Secret Power  
 - Dig 
@@ -24941,6 +24957,7 @@ Ability: Pastel Veil
 Level: 19   
 Naive Nature 
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
+Ball: Nest Ball
 - Stomp  
 - Dazzling Gleam  
 - Psybeam  
@@ -24951,6 +24968,7 @@ Ability: Long Reach
 Level: 20  
 Adamant Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ball: Nest Ball
 - Dual Wingbeat  
 - Steel Wing  
 - Razor Leaf  
@@ -24961,6 +24979,7 @@ Ability: Cute Charm
 Level: 19  
 Adamant Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
+Ball: Nest Ball
 - Tail Slap  
 - Rock Blast  
 - Bullet Seed   
@@ -24970,6 +24989,7 @@ Ability: Tangling Hair
 Level: 21  
 EVs: 252 HP
 Jolly Nature  
+Ball: Nest Ball
 - Metal Claw  
 - Aerial Ace  
 - Rock Tomb  
@@ -25357,7 +25377,7 @@ IVs: 0 Atk
 - Flamethrower  
 - Thunderbolt  
 
-Mawile (F) @ Life Orb  
+Bruce Wayne (Mawile) (F) @ Life Orb  
 Ability: Sheer Force  
 Level: 60 
 EVs: 252 HP
@@ -35788,7 +35808,7 @@ IVs: 0 Atk
 - Pain Split  
 - Discharge 
 
-Magmortar (M) @ Heavy-Duty Boots  
+KingHenryIII (Magmortar) (M) @ Heavy-Duty Boots  
 Ability: Flame Body  
 Shiny: Yes  
 EVs: 252 HP / 64 SpA
@@ -35978,7 +35998,8 @@ Mugshot: Green
 Slowking @ Heavy-Duty Boots  
 Ability: Regenerator   
 Bold Nature  
-IVs: 0 Atk  
+IVs: 0 Atk 
+Ball: Nest Ball 
 - Future Sight  
 - Chilly Reception  
 - Scald  
@@ -35987,7 +36008,8 @@ IVs: 0 Atk
 Clodsire @ Black Sludge  
 Ability: Unaware  
 Tera Type: Water  
-Careful Nature  
+Careful Nature 
+Ball: Nest Ball 
 - Toxic  
 - Stealth Rock  
 - Earthquake  
@@ -35996,6 +36018,7 @@ Drifblim (M) @ Sitrus Berry
 Ability: Unburden  
 Timid Nature  
 IVs: 0 Atk  
+Ball: Nest Ball
 - Will-O-Wisp  
 - Shadow Ball  
 - Air Slash  
@@ -36005,6 +36028,7 @@ Decidueye (M) @ Leftovers
 Ability: Overgrow  
 Tera Type: Flying  
 Adamant Nature  
+Ball: Nest Ball
 - Spirit Shackle  
 - Seed Bomb  
 - Shadow Sneak  
@@ -36013,6 +36037,7 @@ Cetitan @ Sitrus Berry
 Ability: Slush Rush  
 Tera Type: Ice  
 Jolly Nature  
+Ball: Nest Ball
 - Icicle Crash  
 - Earthquake  
 - Liquidation  
@@ -36020,7 +36045,8 @@ Jolly Nature
 POOBLES (Diglett-Alola) (M)  @ Pooblite
 Ability: Tangling Hair 
 EVs: 252 HP / 64 Atk 
-Adamant Nature  
+Adamant Nature 
+Ball: Nest Ball 
 - Earthquake  
 - Iron Head  
 - Sucker Punch  
@@ -37335,7 +37361,7 @@ IVs: 0 Atk
 - Volt Switch  
 - Toxic  
 
-Mawile (F) @ Mawilite  
+Bruce Wayne (Mawile) (F) @ Mawilite  
 Ability: Intimidate  
 EVs: 252 HP
 Tera Type: Steel   

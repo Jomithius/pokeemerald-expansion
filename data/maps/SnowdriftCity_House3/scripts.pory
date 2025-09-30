@@ -181,7 +181,6 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         know CYNTHIA, huh!\p
         Were you jump scared the first time\n
         you walked into this house?\p
-        Haha!\p
         Well, there shouldn't be anything left\n
         for you to do, but I can give you some\l
         stats about your playthrough.\p
@@ -234,7 +233,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
     }
     else{
         msgbox("You beat BRUNO.\n
-            Nice!", MSGBOX_AUTOCLOSE)
+            Nice!", MSGBOX_DEFAULT)
     }
     waitmessage
     if(!flag(FLAG_SYS_DEFEATED_RED)){

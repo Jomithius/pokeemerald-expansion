@@ -236,9 +236,9 @@ F_TRAINER_FEMALE |
 #line 94
             .gender = TRAINER_MON_FEMALE,
 #line 94
-            .heldItem = ITEM_LIGHT_BALL,
+            .heldItem = ITEM_MIRROR_HERB,
 #line 97
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 4, 0),
+            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
 #line 100
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 95
@@ -246,7 +246,7 @@ F_TRAINER_FEMALE |
 #line 96
             .lvl = 100,
 #line 99
-            .nature = NATURE_HASTY,
+            .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
 #line 98
             .teraType = TYPE_FLYING,
@@ -254,7 +254,7 @@ F_TRAINER_FEMALE |
 #line 100
                 MOVE_NUZZLE,
                 MOVE_VOLT_TACKLE,
-                MOVE_ALLURING_VOICE,
+                MOVE_FAKE_OUT,
                 MOVE_PLAY_ROUGH,
             },
             },

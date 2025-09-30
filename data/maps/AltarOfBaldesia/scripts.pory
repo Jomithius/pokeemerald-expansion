@@ -21,6 +21,8 @@ script AltarOfBaldesia_OnResume{
 
 script AltarOfBaldesia_OnTransition{
     setflag(FLAG_TEMP_E)
+    setflag(FLAG_HIDE_BENNIS_JIRACHIS_ALTAR)
+    setflag(FLAG_HIDE_LOHAN_JIRACHIS_ALTAR)
     end
 }
 
@@ -209,14 +211,14 @@ script AltarOfBaldesia_EventScript_DoLohanMultiBattle{
 script AltarOfBaldesia_EventScript_PecharuntAmbush{
     lockall
     playse(SE_FLEE)
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(LOCALID_LOHAN)
     removeobject(LOCALID_WIFE)
+    waitse
     if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
         special(HealPlayerParty)
     }
-    fadescreen(FADE_FROM_BLACK)
-    waitse
+    fadescreenswapbuffers(FADE_FROM_BLACK)
     msgbox("MOMO: … They ran.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceLeft)

@@ -55,6 +55,7 @@ LittlerootTown_MaysHouse_1F_OnFrame:
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_PetalburgGymReport
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1, LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_MAY, 3, PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV
+	map_script_2 VAR_FINAL_REMATCH_STATE, 8, PlayersHouse_1F_EventScript_GameClearMessage @ in Brendan's House Script
 	.2byte 0
 
 LittlerootTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock::

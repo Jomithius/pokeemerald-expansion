@@ -116,7 +116,6 @@ script Void_EventScript_FinalBattle2{
     setflag(FLAG_TEMP_E)
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
     goto(Void_EventScript_GameEnd)
-	releaseall
 	end
 }
 

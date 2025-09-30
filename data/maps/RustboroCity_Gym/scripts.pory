@@ -13,6 +13,7 @@ RustboroCity_Gym_OnTransition:
 
 RustboroCity_Gym_EventScript_TryRemoveGymLeaderPkmn:
 	removeobject 6
+	setflag FLAG_TEMP_7
 	return
 
 RustboroCity_Gym_EventScript_Roxanne::

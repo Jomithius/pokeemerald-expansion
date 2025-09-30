@@ -56,6 +56,7 @@ LittlerootTown_BrendansHouse_1F_OnFrame:
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_BrendansHouse_1F_EventScript_PetalburgGymReport
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_MAY, 1, LittlerootTown_BrendansHouse_1F_EventScript_YoureNewNeighbor
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_MAY, 3, PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV
+	map_script_2 VAR_FINAL_REMATCH_STATE, 8, PlayersHouse_1F_EventScript_GameClearMessage
 	.2byte 0
 
 LittlerootTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock::
@@ -456,3 +457,17 @@ PlayersHouse_1F_Text_CeoComeMeetMeInLilycove:
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 `
+
+script PlayersHouse_1F_EventScript_GameClearMessage{
+	lockall
+	playfanfare(MUS_OBTAIN_B_POINTS)
+	waitfanfare
+	msgbox("Thank you for playing AZURE EMERALD!\p
+	For stats on your playthrough and\n
+	checks if you missed anything, JIMMY\l
+	is in SNOWDRIFT CITY.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	setvar(VAR_FINAL_REMATCH_STATE, 9)
+	releaseall
+	end
+}

@@ -1998,6 +1998,7 @@ script SootopolisCity_EventScript_PainSplitTutor{
         I can teach your POKéMON how to\n
         handle pain, if you want.", MSGBOX_YESNO)
 	waitmessage
+	setflag(FLAG_TALKED_TO_PAIN_SPLIT_TUTOR)
 	goto_if_eq(VAR_RESULT, YES, MoveTutor_EventScript_PainSplitTeach)
 	goto(SootopolisCity_EventScript_PainSplitTutorDecline)
 	release
@@ -2007,7 +2008,7 @@ script SootopolisCity_EventScript_PainSplitTutor{
 script SootopolisCity_EventScript_PainSplitTutor2{
 	lock
 	faceplayer
-	msgbox("Hi again.\n
+	msgbox("Hi again.\p
         Want to teach your POKéMON how to\n
         handle some pain?", MSGBOX_YESNO)
 	waitmessage

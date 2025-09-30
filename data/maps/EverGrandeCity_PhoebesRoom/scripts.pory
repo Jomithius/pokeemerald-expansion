@@ -145,12 +145,11 @@ script EverGrandeCity_PhoebesRoom_EventScript_LinaSecretBoss{
     waitmessage
     if(var(VAR_RESULT) == YES){
         goto(EverGrandeCity_PhoebesRoom_EventScript_LinaEevee)
-        end
     }
     else{
 	    goto(EverGrandeCity_PhoebesRoom_EventScript_LinaNo)
-        end
     }
+    end
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_LinaEevee{
@@ -236,6 +235,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaAreYouReallySorry{
     setflag(FLAG_DEFEATED_EUGENIA)
 	trainerbattle_no_intro(TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat)
 	goto(EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated)
+    end
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished{
@@ -270,6 +270,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaBadNeedToBePunished{
     setflag(FLAG_DEFEATED_EUGENIA)
 	trainerbattle_no_intro(TRAINER_EUGENIA, EverGrandeCity_PhoebesRoom_Text_EugeniaDefeat)
 	goto(EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated)
+    end
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_EugeniaBattle{
@@ -379,7 +380,7 @@ script EliteFour_EventScript_PlayerGetsInPositionEugeniaBattle{
     playse(SE_BALL_OPEN)
     fadescreen(FADE_TO_WHITE)
     waitse
-    clearflag(FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM)
+    // clearflag(FLAG_HIDE_RAYQUAZA_PHOEBES_ROOM)
     addobject(LOCALID_RAYQUAZA)
 	fadescreen(FADE_FROM_WHITE)
     delay(30)

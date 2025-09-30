@@ -475,18 +475,22 @@ script MossdeepCity_EventScript_MomoBattle{
 			I… want to show you the new\n
 			ninjutsu I've been working on.", MSGBOX_AUTOCLOSE)
 		waitmessage
+		applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
+		waitmovement(0)
+		callnative(RemoveFollowingPokemon)
 		fadeoutbgm(0)
 		delay(24)
 		playse(SE_ARENA_TIMEUP1)
 		delay(16)
 		playse(SE_ARENA_TIMEUP1)
 		waitse
-		playse(SE_ARENA_TIMEUP2)
+		delay(24)
+		playse(SE_ARENA_TIMEUP1)
 		waitse
 		playse(SE_M_PETAL_DANCE)
 		fadescreenspeed(FADE_TO_WHITE, 4)
 		waitse
-		clearflag(FLAG_HIDE_MOMO_SHADOW_CLONE_MOSSDEEP)
+		// clearflag(FLAG_HIDE_MOMO_SHADOW_CLONE_MOSSDEEP)
 		addobject(20)
 		call(MossdeepCity_EventScript_MomoShadowClone)
 		fadescreenspeed(FADE_FROM_WHITE, 3)
@@ -505,10 +509,11 @@ script MossdeepCity_EventScript_MomoBattle{
 			finish their training?", MSGBOX_AUTOCLOSE)
 		waitmessage
 		addvar(VAR_GYM_LEADER_COUNT, 1)
+		callnative(UpdateFollowingPokemon)
 		goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
-		release
-		end
 	}
+	release
+	end
 }
 
 script MossdeepCity_EventScript_MomoShadowClone{

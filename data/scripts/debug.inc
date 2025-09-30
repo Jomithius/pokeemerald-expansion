@@ -151,7 +151,9 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_AREA_ZERO, 15, 11
+	setvar VAR_RAT_CAVE_STATE, 2
+	setvar VAR_MISA_STATE, 5
+	warp MAP_ROUTE112, 11, 38
 	waitstate
 	release
 	end
@@ -166,27 +168,26 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setvar VAR_BALDESIA_ROUTE_139_STATE, 0
-	clearflag FLAG_DEFEATED_WORKER_MORGAN
-	clearflag FLAG_DEFEATED_WORKER_DINWIDDLE
-	clearflag FLAG_DEFEATED_WORKER_WIDDLEDIN
-	clearflag FLAG_DEFEATED_WORKER_FREDWARD
-	clearflag FLAG_DEFEATED_WORKER_JOHNALD
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
+	setvar VAR_MISA_STATE, 11
+	clearflag FLAG_HIDE_JAMES_ROUTE_115
+	clearflag FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY
+	setflag FLAG_SYS_FINAL_REMATCH
 	release
 	end
 
 Debug_EventScript_Script_5::
 	setvar VAR_MOMO_ARIA_STATE, 6
+	clearflag FLAG_HIDE_MOMO_JIRACHIS_ALTAR
+	clearflag FLAG_DEFEATED_JIRACHI
+	clearflag FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR
 	warp MAP_EASTERN_RUINS, 16, 4
 	waitstate
 	release
 	end
 
 Debug_EventScript_Script_6::
-	clearflag FLAG_HIDE_CHANNELER_NEWMOON_ISLAND_PLAZA
-	warp MAP_NEW_MOON_ISLAND, 24, 10
+	setflag FLAG_SYS_FINAL_REMATCH
+	warp MAP_EVER_GRANDE_CITY_PHOEBES_ROOM, 6, 13
 	waitstate
 	release
 	end
@@ -199,15 +200,6 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
-	clearflag FLAG_HIDE_POLICEMAN_WACHUNPELON
-	setvar VAR_SPEEDWAGON_STATE, 8
-	clearflag FLAG_HIDE_POLICEMAN_WACHUNPELON_SEWERS
-	clearflag FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS
-	clearflag FLAG_HIDE_SPEEDWAGON_WACHUNPELON_SEWERS
-	clearflag FLAG_HIDE_POKEMON_WACHUNPELON_SEWERS
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
 	release
 	end
 

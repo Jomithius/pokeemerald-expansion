@@ -54,6 +54,7 @@ PetalburgCity_Gym_OnResume:
 
 PetalburgCity_Gym_EventScript_RemoveGymLeaderPkmn:
 	removeobject 11
+	setflag FLAG_TEMP_7
 	return
 
 PetalburgCity_Gym_EventScript_MoveWallyToEntrance::

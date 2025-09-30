@@ -75,6 +75,15 @@
       "var": "VAR_FINAL_REMATCH_STATE",
       "var_value": "8",
       "script": "Void_EventScript_FinalBattle2"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_FINAL_REMATCH_STATE",
+      "var_value": "9",
+      "script": "Void_EventScript_FinalBattle2"
     }
   ],
   "bg_events": [

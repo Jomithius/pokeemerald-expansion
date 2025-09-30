@@ -24,6 +24,7 @@ MauvilleCity_Gym_OnTransition:
 
 MauvilleCity_Gym_EventScript_RemoveGymLeaderPkmn:
 	removeobject 7
+	setflag FLAG_TEMP_7
 	return
 
 MauvilleCity_Gym_EventScript_UpdateBarriers::

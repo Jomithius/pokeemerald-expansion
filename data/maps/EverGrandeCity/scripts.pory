@@ -6,6 +6,8 @@ raw`EverGrandeCity_MapScripts::
 EverGrandeCity_OnTransition:
     clearflag FLAG_SYS_DYNAMIC_LEVELS
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+    setflag FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY
+    setflag FLAG_HIDE_BENNIS_VICTORY_ROAD
 	end
 
 EverGrandeCity_EventScript_VictoryRoadSign::
@@ -229,12 +231,14 @@ script EverGrandeCity_EventTrigger_JamesLeft{
     lockall
     setvar(VAR_TEMP_1, 1)
     goto(EverGrandeCity_EventScript_James)
+    end
 }
 
 script EverGrandeCity_EventTrigger_JamesRight{
     lockall
     setvar(VAR_TEMP_1, 2)
     goto(EverGrandeCity_EventScript_James)
+    end
 }
 
 script EverGrandeCity_EventScript_James{

@@ -22,6 +22,7 @@ SootopolisCity_Gym_1F_OnLoad:
 
 SootopolisCity_EventScript_RemoveGymLeaderPkmn:
 	removeobject 3
+	setflag FLAG_TEMP_7
 	return
 
 SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles::

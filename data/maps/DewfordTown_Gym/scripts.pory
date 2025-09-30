@@ -10,10 +10,12 @@ DewfordTown_Gym_OnResume:
 DewfordTown_Gym_OnTransition:
 	call_if_set FLAG_HIDE_GYM_LEADERS, DewfordTown_Gym_EventScript_RemoveGymLeaderPkmn
 	call DewfordTown_Gym_EventScript_SetFlashLevel
+	call Common_EventScript_SetPooblesGfx
 	end
 
 DewfordTown_Gym_EventScript_RemoveGymLeaderPkmn:
 	removeobject 7
+	setflag FLAG_TEMP_7
 	return
 
 DewfordTown_Gym_EventScript_SetFlashLevel::
@@ -472,4 +474,14 @@ script DewfordTown_Gym_EventScript_BrawlyDefeatedFinal2{
 		You even beat POOBLES at\n
 		full power!", MSGBOX_NPC)
 	end
+}
+
+script Common_EventScript_SetPooblesGfx{
+    if(!flag(FLAG_SYS_HARD_MODE)){
+        setvar(VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(DIGLETT_ALOLA))
+    }
+    else{
+        setvar(VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES_SHINY(DIGLETT_ALOLA))  
+    }
+    return
 }
