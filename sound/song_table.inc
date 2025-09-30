@@ -670,6 +670,7 @@ gSongTable::
 	song mus_hg_national_park, 0, 0
 	song mus_hg_poke_mart, 0, 0
 	song mus_baldesia_mart, 0, 0
+	song mus_ff9_boss_battle, 0, 0
 
 	.align 2
 dummy_song_header:

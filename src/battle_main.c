@@ -5625,7 +5625,7 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_DISCIPLE:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
             {
-                PlayBGM(MUS_VICTORY_GYM_LEADER);
+                PlayBGM(MUS_FF_VICTORY);
                 break;
             }
             else
@@ -5636,7 +5636,7 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_KNIGHT:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleAriaName))
             {
-                PlayBGM(MUS_VICTORY_GYM_LEADER);
+                PlayBGM(MUS_FF_VICTORY);
                 break;
             }
             else

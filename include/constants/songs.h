@@ -604,6 +604,7 @@
 #define MUS_HG_NATIONAL_PARK        666
 #define MUS_HG_POKE_MART            667
 #define MUS_BALDESIA_MART           668
+#define MUS_FF9_BOSS_BATTLE         669
 
 
 

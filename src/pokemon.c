@@ -5867,7 +5867,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_KIMONO_LADY:
         case TRAINER_CLASS_KIMONO_WOMAN:   
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleMomoName))
-                return MUS_VS_GILGAMESH;
+                return MUS_FF9_BOSS_BATTLE;
             return MUS_HG_VS_TRAINER;
         case TRAINER_CLASS_BIKER:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
@@ -5879,7 +5879,7 @@ u16 GetBattleBGM(void)
             return MUS_RG_LAVENDER;
         case TRAINER_CLASS_KNIGHT:
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleAriaName))
-                return MUS_FINAL_BATTLE;
+                return MUS_VS_GILGAMESH;
             return MUS_VS_TRAINER;       
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:
