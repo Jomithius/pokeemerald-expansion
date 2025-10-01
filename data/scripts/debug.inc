@@ -193,8 +193,7 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	setvar VAR_RAT_CAVE_STATE, 10
-	warp MAP_FULL_MOON_ISLAND, 30, 14
+	warp MAP_VOID, 9, 32
 	waitstate
 	release
 	end

@@ -1033,717 +1033,719 @@ MossdeepCity_EventScript_Aria::
 # 537 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_TOTODILE_PARTNER, MossdeepCity_EventScript_GiveTotodile
 # 538 "data/maps/MossdeepCity/scripts.pory"
-	playbgm MUS_NONE, FALSE
+	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
 # 539 "data/maps/MossdeepCity/scripts.pory"
-	delay 20
+	playbgm MUS_NONE, FALSE
 # 540 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_M_DOUBLE_TEAM
+	delay 20
 # 541 "data/maps/MossdeepCity/scripts.pory"
-	waitse
+	playse SE_M_DOUBLE_TEAM
 # 542 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
+	waitse
 # 543 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
-# 545 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
+# 544 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_DEFAULT
 # 546 "data/maps/MossdeepCity/scripts.pory"
 	waitmoncry
 # 547 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_PIN
+	closemessage
 # 548 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 549 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	applymovement 21, Common_Movement_ExclamationMark
 # 550 "data/maps/MossdeepCity/scripts.pory"
-	waitse
+	waitmovement 21
 # 551 "data/maps/MossdeepCity/scripts.pory"
-	setobjectnewmovementtype 21, MOVEMENT_TYPE_NONE
+	waitse
 # 552 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_FacePlayer
+	setobjectnewmovementtype 21, MOVEMENT_TYPE_NONE
 # 553 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	applymovement 21, Common_Movement_FacePlayer
 # 554 "data/maps/MossdeepCity/scripts.pory"
-	delay 40
-# 556 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
-# 557 "data/maps/MossdeepCity/scripts.pory"
-	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition1
-# 558 "data/maps/MossdeepCity/scripts.pory"
 	waitmovement 21
+# 555 "data/maps/MossdeepCity/scripts.pory"
+	delay 40
+# 557 "data/maps/MossdeepCity/scripts.pory"
+	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
+# 558 "data/maps/MossdeepCity/scripts.pory"
+	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition1
 # 559 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_Aria_Text_1, MSGBOX_AUTOCLOSE
+	waitmovement 21
 # 560 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	msgbox MossdeepCity_EventScript_Aria_Text_1, MSGBOX_DEFAULT
 # 561 "data/maps/MossdeepCity/scripts.pory"
 	waitmoncry
 # 562 "data/maps/MossdeepCity/scripts.pory"
-	fadedefaultbgm
+	closemessage
 # 563 "data/maps/MossdeepCity/scripts.pory"
-	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition2
+	fadedefaultbgm
 # 564 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition2
 # 565 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_Aria_Text_2, MSGBOX_AUTOCLOSE
-# 569 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
-# 570 "data/maps/MossdeepCity/scripts.pory"
-	setobjectnewmovementtype 21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
-# 571 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_WalkInPlaceDown
-# 572 "data/maps/MossdeepCity/scripts.pory"
 	waitmovement 21
+# 566 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_Aria_Text_2, MSGBOX_AUTOCLOSE
+# 570 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 571 "data/maps/MossdeepCity/scripts.pory"
+	setobjectnewmovementtype 21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
+# 572 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 21, Common_Movement_WalkInPlaceDown
 # 573 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 21
+# 574 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MossdeepCity_EventScript_AriaBattle::
-# 578 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 579 "data/maps/MossdeepCity/scripts.pory"
-	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
+	lock
 # 580 "data/maps/MossdeepCity/scripts.pory"
-	playbgm MUS_NONE, FALSE
+	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
 # 581 "data/maps/MossdeepCity/scripts.pory"
-	delay 20
+	playbgm MUS_NONE, FALSE
 # 582 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_M_DOUBLE_TEAM
+	delay 20
 # 583 "data/maps/MossdeepCity/scripts.pory"
-	waitse
+	playse SE_M_DOUBLE_TEAM
 # 584 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
+	waitse
 # 585 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
-# 587 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
+# 586 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_DEFAULT
 # 588 "data/maps/MossdeepCity/scripts.pory"
 	waitmoncry
 # 589 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_PIN
+	closemessage
 # 590 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 591 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	applymovement 21, Common_Movement_ExclamationMark
 # 592 "data/maps/MossdeepCity/scripts.pory"
-	waitse
+	waitmovement 21
 # 593 "data/maps/MossdeepCity/scripts.pory"
-	setobjectnewmovementtype 21, MOVEMENT_TYPE_NONE
+	waitse
 # 594 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_FacePlayer
+	setobjectnewmovementtype 21, MOVEMENT_TYPE_NONE
 # 595 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	applymovement 21, Common_Movement_FacePlayer
 # 596 "data/maps/MossdeepCity/scripts.pory"
-	delay 40
-# 598 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
-# 599 "data/maps/MossdeepCity/scripts.pory"
-	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition1
-# 600 "data/maps/MossdeepCity/scripts.pory"
 	waitmovement 21
+# 597 "data/maps/MossdeepCity/scripts.pory"
+	delay 40
+# 599 "data/maps/MossdeepCity/scripts.pory"
+	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
+# 600 "data/maps/MossdeepCity/scripts.pory"
+	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition1
 # 601 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_Aria_Text_1, MSGBOX_AUTOCLOSE
+	waitmovement 21
 # 602 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	msgbox MossdeepCity_EventScript_Aria_Text_1, MSGBOX_DEFAULT
 # 603 "data/maps/MossdeepCity/scripts.pory"
 	waitmoncry
 # 604 "data/maps/MossdeepCity/scripts.pory"
-	playbgm MUS_ENCOUNTER_COOL, FALSE
+	closemessage
 # 605 "data/maps/MossdeepCity/scripts.pory"
-	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition2
+	playbgm MUS_ENCOUNTER_COOL, FALSE
 # 606 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition2
 # 607 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_AriaBattle_Text_0, MSGBOX_AUTOCLOSE
-# 615 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
-# 616 "data/maps/MossdeepCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_ARIA, MossdeepCity_EventScript_AriaBattle_Text_1
-# 617 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_AriaBattle_Text_2, MSGBOX_DEFAULT
-# 619 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
-# 620 "data/maps/MossdeepCity/scripts.pory"
-	addvar VAR_GYM_LEADER_COUNT, 1
-# 621 "data/maps/MossdeepCity/scripts.pory"
-	checkitem ITEM_SACRED_BLADE
-# 622 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_EventScript_GiveTotodilePostBattle
-# 623 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_AriaBattle_Text_3, MSGBOX_AUTOCLOSE
-# 627 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
-# 628 "data/maps/MossdeepCity/scripts.pory"
-	setobjectnewmovementtype 21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
-# 629 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_WalkInPlaceDown
-# 630 "data/maps/MossdeepCity/scripts.pory"
 	waitmovement 21
+# 608 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_AriaBattle_Text_0, MSGBOX_AUTOCLOSE
+# 616 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 617 "data/maps/MossdeepCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_ARIA, MossdeepCity_EventScript_AriaBattle_Text_1
+# 618 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_AriaBattle_Text_2, MSGBOX_DEFAULT
+# 620 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 621 "data/maps/MossdeepCity/scripts.pory"
+	addvar VAR_GYM_LEADER_COUNT, 1
+# 622 "data/maps/MossdeepCity/scripts.pory"
+	checkitem ITEM_SACRED_BLADE
+# 623 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_EventScript_GiveTotodilePostBattle
+# 624 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_AriaBattle_Text_3, MSGBOX_AUTOCLOSE
+# 628 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 629 "data/maps/MossdeepCity/scripts.pory"
+	setobjectnewmovementtype 21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
+# 630 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 21, Common_Movement_WalkInPlaceDown
 # 631 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
+	waitmovement 21
 # 632 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
+# 633 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MossdeepCity_EventScript_GiveTotodilePostBattle::
-# 637 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 638 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
+	lock
 # 639 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_PIN
+	closemessage
 # 640 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 641 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	applymovement 21, Common_Movement_ExclamationMark
 # 642 "data/maps/MossdeepCity/scripts.pory"
-	waitse
+	waitmovement 21
 # 643 "data/maps/MossdeepCity/scripts.pory"
+	waitse
+# 644 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_0, MSGBOX_AUTOCLOSE
-# 651 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 652 "data/maps/MossdeepCity/scripts.pory"
-	givemon SPECIES_TOTODILE_PARTNER, 100
+	waitmessage
 # 653 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE
+	givemon SPECIES_TOTODILE_PARTNER, 100
 # 654 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE
+# 655 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq MossdeepCity_EventScript_GiveTotodilePostBattle_2
-# 660 "data/maps/MossdeepCity/scripts.pory"
+# 661 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq MossdeepCity_EventScript_GiveTotodilePostBattle_3
-# 668 "data/maps/MossdeepCity/scripts.pory"
+# 669 "data/maps/MossdeepCity/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 MossdeepCity_EventScript_GiveTotodilePostBattle_1:
-# 670 "data/maps/MossdeepCity/scripts.pory"
+# 671 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_3, MSGBOX_AUTOCLOSE
-# 675 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 676 "data/maps/MossdeepCity/scripts.pory"
-	setobjectnewmovementtype 21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
+	waitmessage
 # 677 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_WalkInPlaceDown
+	setobjectnewmovementtype 21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
 # 678 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	applymovement 21, Common_Movement_WalkInPlaceDown
 # 679 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
+	waitmovement 21
 # 680 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
+# 681 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 MossdeepCity_EventScript_GiveTotodilePostBattle_2:
-# 655 "data/maps/MossdeepCity/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 656 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_1, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
 # 657 "data/maps/MossdeepCity/scripts.pory"
-	waitfanfare
+	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_1, MSGBOX_DEFAULT
 # 658 "data/maps/MossdeepCity/scripts.pory"
+	waitfanfare
+# 659 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_RECEIVED_TOTODILE_PARTNER
 	goto MossdeepCity_EventScript_GiveTotodilePostBattle_1
 
 MossdeepCity_EventScript_GiveTotodilePostBattle_3:
-# 661 "data/maps/MossdeepCity/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 662 "data/maps/MossdeepCity/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 663 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_GiveTotodilePostBattle_Text_2, MSGBOX_DEFAULT
-# 664 "data/maps/MossdeepCity/scripts.pory"
-	waitfanfare
 # 665 "data/maps/MossdeepCity/scripts.pory"
+	waitfanfare
+# 666 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_RECEIVED_TOTODILE_PARTNER
 	goto MossdeepCity_EventScript_GiveTotodilePostBattle_1
 
 
 MossdeepCity_EventScript_GiveTotodile::
-# 685 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 686 "data/maps/MossdeepCity/scripts.pory"
-	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
+	lock
 # 687 "data/maps/MossdeepCity/scripts.pory"
-	playbgm MUS_NONE, FALSE
+	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
 # 688 "data/maps/MossdeepCity/scripts.pory"
-	delay 20
+	playbgm MUS_NONE, FALSE
 # 689 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_M_DOUBLE_TEAM
+	delay 20
 # 690 "data/maps/MossdeepCity/scripts.pory"
-	waitse
+	playse SE_M_DOUBLE_TEAM
 # 691 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
+	waitse
 # 692 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
-# 694 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
+# 693 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_Aria_Text_0, MSGBOX_DEFAULT
 # 695 "data/maps/MossdeepCity/scripts.pory"
 	waitmoncry
 # 696 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_PIN
+	closemessage
 # 697 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 698 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	applymovement 21, Common_Movement_ExclamationMark
 # 699 "data/maps/MossdeepCity/scripts.pory"
-	waitse
+	waitmovement 21
 # 700 "data/maps/MossdeepCity/scripts.pory"
-	setobjectnewmovementtype 21, MOVEMENT_TYPE_NONE
+	waitse
 # 701 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_FacePlayer
+	setobjectnewmovementtype 21, MOVEMENT_TYPE_NONE
 # 702 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
+	applymovement 21, Common_Movement_FacePlayer
 # 703 "data/maps/MossdeepCity/scripts.pory"
-	delay 40
-# 705 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
-# 706 "data/maps/MossdeepCity/scripts.pory"
-	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition1
-# 707 "data/maps/MossdeepCity/scripts.pory"
 	waitmovement 21
+# 704 "data/maps/MossdeepCity/scripts.pory"
+	delay 40
+# 706 "data/maps/MossdeepCity/scripts.pory"
+	playmoncry SPECIES_TERAPAGOS, CRY_MODE_NORMAL
+# 707 "data/maps/MossdeepCity/scripts.pory"
+	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition1
 # 708 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_Aria_Text_1, MSGBOX_AUTOCLOSE
+	waitmovement 21
 # 709 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	msgbox MossdeepCity_EventScript_Aria_Text_1, MSGBOX_DEFAULT
 # 710 "data/maps/MossdeepCity/scripts.pory"
 	waitmoncry
 # 711 "data/maps/MossdeepCity/scripts.pory"
-	fadedefaultbgm
-# 712 "data/maps/MossdeepCity/scripts.pory"
-	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition2
-# 713 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 21
-# 714 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_GiveTotodile_Text_0, MSGBOX_DEFAULT
-# 716 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
-# 717 "data/maps/MossdeepCity/scripts.pory"
-	checkitem ITEM_SACRED_BLADE
-# 718 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_EventScript_GiveTotodilePostBattle
-# 719 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
-# 720 "data/maps/MossdeepCity/scripts.pory"
-	setobjectnewmovementtype 21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
-# 721 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 21, Common_Movement_WalkInPlaceDown
-# 722 "data/maps/MossdeepCity/scripts.pory"
+# 712 "data/maps/MossdeepCity/scripts.pory"
+	fadedefaultbgm
+# 713 "data/maps/MossdeepCity/scripts.pory"
+	call ShoalCave_LowTideIceRoom_EventScript_AriaPosition2
+# 714 "data/maps/MossdeepCity/scripts.pory"
 	waitmovement 21
+# 715 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_GiveTotodile_Text_0, MSGBOX_DEFAULT
+# 717 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 718 "data/maps/MossdeepCity/scripts.pory"
+	checkitem ITEM_SACRED_BLADE
+# 719 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_EventScript_GiveTotodilePostBattle
+# 720 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 721 "data/maps/MossdeepCity/scripts.pory"
+	setobjectnewmovementtype 21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
+# 722 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 21, Common_Movement_WalkInPlaceDown
 # 723 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
+	waitmovement 21
 # 724 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
+# 725 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MossdeepCity_Gym_NPC::
-# 729 "data/maps/MossdeepCity/scripts.pory"
+# 730 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_Text_GymLeaderGone, MSGBOX_NPC
 	end
 
 
 MossdeepCity_EventScript_AriaSword::
-# 734 "data/maps/MossdeepCity/scripts.pory"
-	lockall
 # 735 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_M_DOUBLE_TEAM
+	lockall
 # 736 "data/maps/MossdeepCity/scripts.pory"
-	delay 20
+	playse SE_M_DOUBLE_TEAM
 # 737 "data/maps/MossdeepCity/scripts.pory"
+	delay 20
+# 738 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_AriaSword_Text_0, MSGBOX_AUTOCLOSE
-# 740 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 741 "data/maps/MossdeepCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
+	waitmessage
 # 742 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
 # 743 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 744 "data/maps/MossdeepCity/scripts.pory"
 	releaseall
 	end
 
 
 MossdeepCity_EventScript_RecoverTutor::
-# 748 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 749 "data/maps/MossdeepCity/scripts.pory"
-	faceplayer
+	lock
 # 750 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_RecoverTeach, MSGBOX_YESNO
+	faceplayer
 # 751 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
+	msgbox MossdeepCity_Text_RecoverTeach, MSGBOX_YESNO
 # 752 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RecoverDeclined
+	waitmessage
 # 753 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_RecoverTutor_Text_0, MSGBOX_DEFAULT
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RecoverDeclined
 # 754 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_RECOVER
+	msgbox MossdeepCity_EventScript_RecoverTutor_Text_0, MSGBOX_DEFAULT
 # 755 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_RECOVER
 # 756 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_RecoverDeclined
+	call MoveTutor_EventScript_OpenPartyMenu
 # 757 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_RecoverDeclined
+# 758 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_RecoverTaught
 	end
 
 
 MoveTutor_EventScript_RecoverDeclined::
-# 762 "data/maps/MossdeepCity/scripts.pory"
+# 763 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MoveTutor_EventScript_RecoverDeclined_Text_0, MSGBOX_AUTOCLOSE
-# 764 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 765 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 766 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MoveTutor_EventScript_RecoverTaught::
-# 770 "data/maps/MossdeepCity/scripts.pory"
+# 771 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MoveTutor_EventScript_RecoverTaught_Text_0, MSGBOX_AUTOCLOSE
-# 773 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 774 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 775 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
-# 798 "data/maps/MossdeepCity/scripts.pory"
-MossdeepCity_Movement_MomoClone:
 # 799 "data/maps/MossdeepCity/scripts.pory"
-	walk_fast_down
+MossdeepCity_Movement_MomoClone:
 # 800 "data/maps/MossdeepCity/scripts.pory"
+	walk_fast_down
+# 801 "data/maps/MossdeepCity/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 803 "data/maps/MossdeepCity/scripts.pory"
-MossdeepCity_Movement_MomoClone2:
 # 804 "data/maps/MossdeepCity/scripts.pory"
-	walk_fast_down
+MossdeepCity_Movement_MomoClone2:
 # 805 "data/maps/MossdeepCity/scripts.pory"
-	walk_fast_left
+	walk_fast_down
 # 806 "data/maps/MossdeepCity/scripts.pory"
+	walk_fast_left
+# 807 "data/maps/MossdeepCity/scripts.pory"
 	walk_in_place_right
 	step_end
 
 MossdeepCity_EventScript_PunchesTutor::
-# 810 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 811 "data/maps/MossdeepCity/scripts.pory"
-	faceplayer
+	lock
 # 812 "data/maps/MossdeepCity/scripts.pory"
+	faceplayer
+# 813 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_PunchesTutor_Text_0, MSGBOX_YESNO
-# 816 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 817 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, MossdeepCity_EventScript_PunchesTutorChoices
+	waitmessage
 # 818 "data/maps/MossdeepCity/scripts.pory"
-	goto MossdeepCity_EventScript_PunchesTutorDecline
+	goto_if_eq VAR_RESULT, YES, MossdeepCity_EventScript_PunchesTutorChoices
 # 819 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_PunchesTutorDecline
+# 820 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MossdeepCity_EventScript_PunchesTutorChoices::
-# 824 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 825 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_PunchesTutorChoices_Text_0, MSGBOX_DEFAULT
+	lock
 # 826 "data/maps/MossdeepCity/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, MossdeepCity_EventScript_PunchesTutorChoices_Text_1, MossdeepCity_EventScript_PunchesTutorChoices_Text_2, MossdeepCity_EventScript_PunchesTutorChoices_Text_3, MossdeepCity_EventScript_PunchesTutorChoices_Text_4, MossdeepCity_EventScript_PunchesTutorChoices_Text_5, MossdeepCity_EventScript_PunchesTutorChoices_Text_6
+	msgbox MossdeepCity_EventScript_PunchesTutorChoices_Text_0, MSGBOX_DEFAULT
 # 827 "data/maps/MossdeepCity/scripts.pory"
-	switch VAR_RESULT
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, MossdeepCity_EventScript_PunchesTutorChoices_Text_1, MossdeepCity_EventScript_PunchesTutorChoices_Text_2, MossdeepCity_EventScript_PunchesTutorChoices_Text_3, MossdeepCity_EventScript_PunchesTutorChoices_Text_4, MossdeepCity_EventScript_PunchesTutorChoices_Text_5, MossdeepCity_EventScript_PunchesTutorChoices_Text_6
 # 828 "data/maps/MossdeepCity/scripts.pory"
+	switch VAR_RESULT
+# 829 "data/maps/MossdeepCity/scripts.pory"
 	case 0, MossdeepCity_EventScript_PunchesTutorChoices_3
-# 830 "data/maps/MossdeepCity/scripts.pory"
+# 831 "data/maps/MossdeepCity/scripts.pory"
 	case 1, MossdeepCity_EventScript_PunchesTutorChoices_4
-# 832 "data/maps/MossdeepCity/scripts.pory"
+# 833 "data/maps/MossdeepCity/scripts.pory"
 	case 2, MossdeepCity_EventScript_PunchesTutorChoices_5
-# 834 "data/maps/MossdeepCity/scripts.pory"
+# 835 "data/maps/MossdeepCity/scripts.pory"
 	case 3, MossdeepCity_EventScript_PunchesTutorChoices_6
-# 836 "data/maps/MossdeepCity/scripts.pory"
+# 837 "data/maps/MossdeepCity/scripts.pory"
 	case 4, MossdeepCity_EventScript_PunchesTutorChoices_7
-# 838 "data/maps/MossdeepCity/scripts.pory"
+# 839 "data/maps/MossdeepCity/scripts.pory"
 	case 5, MossdeepCity_EventScript_PunchesTutorChoices_8
-# 840 "data/maps/MossdeepCity/scripts.pory"
+# 841 "data/maps/MossdeepCity/scripts.pory"
 	case MULTI_B_PRESSED, MossdeepCity_EventScript_PunchesTutorChoices_9
-# 843 "data/maps/MossdeepCity/scripts.pory"
+# 844 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_PunchesTutorDecline
 MossdeepCity_EventScript_PunchesTutorChoices_1:
 	end
 
 MossdeepCity_EventScript_PunchesTutorChoices_3:
-# 829 "data/maps/MossdeepCity/scripts.pory"
+# 830 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_FirePunchTeach
 	goto MossdeepCity_EventScript_PunchesTutorChoices_1
 
 MossdeepCity_EventScript_PunchesTutorChoices_4:
-# 831 "data/maps/MossdeepCity/scripts.pory"
+# 832 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_IcePunchTeach
 	goto MossdeepCity_EventScript_PunchesTutorChoices_1
 
 MossdeepCity_EventScript_PunchesTutorChoices_5:
-# 833 "data/maps/MossdeepCity/scripts.pory"
+# 834 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_ThunderPunchTeach
 	goto MossdeepCity_EventScript_PunchesTutorChoices_1
 
 MossdeepCity_EventScript_PunchesTutorChoices_6:
-# 835 "data/maps/MossdeepCity/scripts.pory"
+# 836 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_BulletPunchTeach
 	goto MossdeepCity_EventScript_PunchesTutorChoices_1
 
 MossdeepCity_EventScript_PunchesTutorChoices_7:
-# 837 "data/maps/MossdeepCity/scripts.pory"
+# 838 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_SuckerPunchTeach
 	goto MossdeepCity_EventScript_PunchesTutorChoices_1
 
 MossdeepCity_EventScript_PunchesTutorChoices_8:
-# 839 "data/maps/MossdeepCity/scripts.pory"
+# 840 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_FakeOutTeach
 	goto MossdeepCity_EventScript_PunchesTutorChoices_1
 
 MossdeepCity_EventScript_PunchesTutorChoices_9:
-# 841 "data/maps/MossdeepCity/scripts.pory"
+# 842 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_PunchesTutorDecline
 	goto MossdeepCity_EventScript_PunchesTutorChoices_1
 
 
 MoveTutor_EventScript_FirePunchTeach::
-# 849 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_FirePunchTeach_Text_0, MSGBOX_DEFAULT
 # 850 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_FIRE_PUNCH
+	msgbox MoveTutor_EventScript_FirePunchTeach_Text_0, MSGBOX_DEFAULT
 # 851 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_FIRE_PUNCH
 # 852 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+	call MoveTutor_EventScript_OpenPartyMenu
 # 853 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 854 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_PunchesTutorTaught
 	end
 
 
 MoveTutor_EventScript_IcePunchTeach::
-# 858 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_IcePunchTeach_Text_0, MSGBOX_DEFAULT
 # 859 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_ICE_PUNCH
+	msgbox MoveTutor_EventScript_IcePunchTeach_Text_0, MSGBOX_DEFAULT
 # 860 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_ICE_PUNCH
 # 861 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+	call MoveTutor_EventScript_OpenPartyMenu
 # 862 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 863 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_PunchesTutorTaught
 	end
 
 
 MoveTutor_EventScript_ThunderPunchTeach::
-# 867 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_ThunderPunchTeach_Text_0, MSGBOX_DEFAULT
 # 868 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_THUNDER_PUNCH
+	msgbox MoveTutor_EventScript_ThunderPunchTeach_Text_0, MSGBOX_DEFAULT
 # 869 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_THUNDER_PUNCH
 # 870 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+	call MoveTutor_EventScript_OpenPartyMenu
 # 871 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 872 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_PunchesTutorTaught
 	end
 
 
 MoveTutor_EventScript_BulletPunchTeach::
-# 876 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_BulletPunchTeach_Text_0, MSGBOX_DEFAULT
 # 877 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_BULLET_PUNCH
+	msgbox MoveTutor_EventScript_BulletPunchTeach_Text_0, MSGBOX_DEFAULT
 # 878 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_BULLET_PUNCH
 # 879 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+	call MoveTutor_EventScript_OpenPartyMenu
 # 880 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 881 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_PunchesTutorTaught
 	end
 
 
 MoveTutor_EventScript_SuckerPunchTeach::
-# 885 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_SuckerPunchTeach_Text_0, MSGBOX_DEFAULT
 # 886 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_SUCKER_PUNCH
+	msgbox MoveTutor_EventScript_SuckerPunchTeach_Text_0, MSGBOX_DEFAULT
 # 887 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_SUCKER_PUNCH
 # 888 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+	call MoveTutor_EventScript_OpenPartyMenu
 # 889 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 890 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_PunchesTutorTaught
 	end
 
 
 MoveTutor_EventScript_FakeOutTeach::
-# 894 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_FakeOutTeach_Text_0, MSGBOX_DEFAULT
 # 895 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_FAKE_OUT
+	msgbox MoveTutor_EventScript_FakeOutTeach_Text_0, MSGBOX_DEFAULT
 # 896 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_FAKE_OUT
 # 897 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+	call MoveTutor_EventScript_OpenPartyMenu
 # 898 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline
+# 899 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_PunchesTutorTaught
 	end
 
 
 MossdeepCity_EventScript_PunchesTutorDecline::
-# 903 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 904 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 905 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_PunchesTutorDecline_Text_0, MSGBOX_AUTOCLOSE
-# 907 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 908 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 909 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MossdeepCity_EventScript_PunchesTutorTaught::
-# 913 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 914 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 915 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_PunchesTutorTaught_Text_0, MSGBOX_AUTOCLOSE
-# 916 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 917 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 918 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MossdeepCity_EventScript_MultiHitTutor::
-# 922 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 923 "data/maps/MossdeepCity/scripts.pory"
-	faceplayer
+	lock
 # 924 "data/maps/MossdeepCity/scripts.pory"
+	faceplayer
+# 925 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_MultiHitTutor_Text_0, MSGBOX_YESNO
-# 930 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 931 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, MossdeepCity_EventScript_MultiHitTutorChoices
+	waitmessage
 # 932 "data/maps/MossdeepCity/scripts.pory"
-	goto MossdeepCity_EventScript_MultiHitTutorTaught
+	goto_if_eq VAR_RESULT, YES, MossdeepCity_EventScript_MultiHitTutorChoices
 # 933 "data/maps/MossdeepCity/scripts.pory"
+	goto MossdeepCity_EventScript_MultiHitTutorTaught
+# 934 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MossdeepCity_EventScript_MultiHitTutorChoices::
-# 938 "data/maps/MossdeepCity/scripts.pory"
-	lock
 # 939 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_PunchesTutorChoices_Text_0, MSGBOX_DEFAULT
+	lock
 # 940 "data/maps/MossdeepCity/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, MossdeepCity_EventScript_MultiHitTutorChoices_Text_0, MossdeepCity_EventScript_MultiHitTutorChoices_Text_1, MossdeepCity_EventScript_MultiHitTutorChoices_Text_2, MossdeepCity_EventScript_MultiHitTutorChoices_Text_3
+	msgbox MossdeepCity_EventScript_MultiHitTutorChoices_Text_0, MSGBOX_DEFAULT
 # 941 "data/maps/MossdeepCity/scripts.pory"
-	switch VAR_RESULT
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, MossdeepCity_EventScript_MultiHitTutorChoices_Text_1, MossdeepCity_EventScript_MultiHitTutorChoices_Text_2, MossdeepCity_EventScript_MultiHitTutorChoices_Text_3, MossdeepCity_EventScript_MultiHitTutorChoices_Text_4
 # 942 "data/maps/MossdeepCity/scripts.pory"
+	switch VAR_RESULT
+# 943 "data/maps/MossdeepCity/scripts.pory"
 	case 0, MossdeepCity_EventScript_MultiHitTutorChoices_3
-# 944 "data/maps/MossdeepCity/scripts.pory"
+# 945 "data/maps/MossdeepCity/scripts.pory"
 	case 1, MossdeepCity_EventScript_MultiHitTutorChoices_4
-# 946 "data/maps/MossdeepCity/scripts.pory"
+# 947 "data/maps/MossdeepCity/scripts.pory"
 	case 2, MossdeepCity_EventScript_MultiHitTutorChoices_5
-# 948 "data/maps/MossdeepCity/scripts.pory"
+# 949 "data/maps/MossdeepCity/scripts.pory"
 	case 3, MossdeepCity_EventScript_MultiHitTutorChoices_6
-# 950 "data/maps/MossdeepCity/scripts.pory"
+# 951 "data/maps/MossdeepCity/scripts.pory"
 	case MULTI_B_PRESSED, MossdeepCity_EventScript_MultiHitTutorChoices_7
-# 953 "data/maps/MossdeepCity/scripts.pory"
+# 954 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_MultiHitTutorTaught
 MossdeepCity_EventScript_MultiHitTutorChoices_1:
 	end
 
 MossdeepCity_EventScript_MultiHitTutorChoices_3:
-# 943 "data/maps/MossdeepCity/scripts.pory"
+# 944 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_TripleAxelTeach
 	goto MossdeepCity_EventScript_MultiHitTutorChoices_1
 
 MossdeepCity_EventScript_MultiHitTutorChoices_4:
-# 945 "data/maps/MossdeepCity/scripts.pory"
+# 946 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_DualWingbeatTeach
 	goto MossdeepCity_EventScript_MultiHitTutorChoices_1
 
 MossdeepCity_EventScript_MultiHitTutorChoices_5:
-# 947 "data/maps/MossdeepCity/scripts.pory"
+# 948 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_RockBlastTeach
 	goto MossdeepCity_EventScript_MultiHitTutorChoices_1
 
 MossdeepCity_EventScript_MultiHitTutorChoices_6:
-# 949 "data/maps/MossdeepCity/scripts.pory"
+# 950 "data/maps/MossdeepCity/scripts.pory"
 	goto MoveTutor_EventScript_TailSlapTeach
 	goto MossdeepCity_EventScript_MultiHitTutorChoices_1
 
 MossdeepCity_EventScript_MultiHitTutorChoices_7:
-# 951 "data/maps/MossdeepCity/scripts.pory"
+# 952 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_MultiHitTutorTaught
 	goto MossdeepCity_EventScript_MultiHitTutorChoices_1
 
 
 MoveTutor_EventScript_TripleAxelTeach::
-# 959 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_TripleAxelTeach_Text_0, MSGBOX_DEFAULT
 # 960 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_TRIPLE_AXEL
+	msgbox MoveTutor_EventScript_TripleAxelTeach_Text_0, MSGBOX_DEFAULT
 # 961 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_TRIPLE_AXEL
 # 962 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught
+	call MoveTutor_EventScript_OpenPartyMenu
 # 963 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught
+# 964 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_MultiHitTutorTaught
 	end
 
 
 MoveTutor_EventScript_DualWingbeatTeach::
-# 968 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_DualWingbeatTeach_Text_0, MSGBOX_DEFAULT
 # 969 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_DUAL_WINGBEAT
+	msgbox MoveTutor_EventScript_DualWingbeatTeach_Text_0, MSGBOX_DEFAULT
 # 970 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_DUAL_WINGBEAT
 # 971 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught
+	call MoveTutor_EventScript_OpenPartyMenu
 # 972 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught
+# 973 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_MultiHitTutorTaught
 	end
 
 
 MoveTutor_EventScript_RockBlastTeach::
-# 977 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_RockBlastTeach_Text_0, MSGBOX_DEFAULT
 # 978 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_ROCK_BLAST
+	msgbox MoveTutor_EventScript_RockBlastTeach_Text_0, MSGBOX_DEFAULT
 # 979 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_ROCK_BLAST
 # 980 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught
+	call MoveTutor_EventScript_OpenPartyMenu
 # 981 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught
+# 982 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_MultiHitTutorTaught
 	end
 
 
 MoveTutor_EventScript_TailSlapTeach::
-# 986 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MoveTutor_EventScript_TailSlapTeach_Text_0, MSGBOX_DEFAULT
 # 987 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_0x8005, MOVE_TAIL_SLAP
+	msgbox MoveTutor_EventScript_TailSlapTeach_Text_0, MSGBOX_DEFAULT
 # 988 "data/maps/MossdeepCity/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_TAIL_SLAP
 # 989 "data/maps/MossdeepCity/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught
+	call MoveTutor_EventScript_OpenPartyMenu
 # 990 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MossdeepCity_EventScript_MultiHitTutorTaught
+# 991 "data/maps/MossdeepCity/scripts.pory"
 	goto MossdeepCity_EventScript_MultiHitTutorTaught
 	end
 
 
 MossdeepCity_EventScript_MultiHitTutorTaught::
-# 995 "data/maps/MossdeepCity/scripts.pory"
+# 996 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_MultiHitTutorTaught_Text_0, MSGBOX_AUTOCLOSE
-# 997 "data/maps/MossdeepCity/scripts.pory"
-	waitmessage
 # 998 "data/maps/MossdeepCity/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmessage
 # 999 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 1000 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 1001 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
@@ -1781,177 +1783,181 @@ MossdeepCity_EventScript_MomoBattle_Text_6:
 	.string "I… lost again.\n Still, I had fun.\p {PLAYER}, if you're going to see ARIA,\n can you tell them to hurry up and\l finish their training?$"
 
 MossdeepCity_EventScript_Aria_Text_0:
-# 543 "data/maps/MossdeepCity/scripts.pory"
+# 544 "data/maps/MossdeepCity/scripts.pory"
 	.string "ARGH!\n AAAARGH!$"
 
 MossdeepCity_EventScript_Aria_Text_1:
-# 559 "data/maps/MossdeepCity/scripts.pory"
+# 560 "data/maps/MossdeepCity/scripts.pory"
 	.string "AH!$"
 
 MossdeepCity_EventScript_Aria_Text_2:
-# 565 "data/maps/MossdeepCity/scripts.pory"
+# 566 "data/maps/MossdeepCity/scripts.pory"
 	.string "{PLAYER}!\n You scared me again!\p If you're going to see MOMO, can you\n tell her I'm gonna train for a bit more?$"
 
 MossdeepCity_EventScript_AriaBattle_Text_0:
-# 607 "data/maps/MossdeepCity/scripts.pory"
+# 608 "data/maps/MossdeepCity/scripts.pory"
 	.string "{PLAYER}!\n You scared me!\p Wait…\n This murderous intent…!\p I see…\n So you would challenge this KNIGHT?\p All right! I'll show you the power of\n the SACRED BLADE!$"
 
 MossdeepCity_EventScript_AriaBattle_Text_1:
-# 616 "data/maps/MossdeepCity/scripts.pory"
+# 617 "data/maps/MossdeepCity/scripts.pory"
 	.string "M-My lord…$"
 
 MossdeepCity_EventScript_AriaBattle_Text_2:
-# 617 "data/maps/MossdeepCity/scripts.pory"
+# 618 "data/maps/MossdeepCity/scripts.pory"
 	.string "ARRGGGHH!\n I lost again!$"
 
 MossdeepCity_EventScript_AriaBattle_Text_3:
-# 623 "data/maps/MossdeepCity/scripts.pory"
+# 624 "data/maps/MossdeepCity/scripts.pory"
 	.string "I need to train more!\p {PLAYER}, if you're going to see MOMO,\n can you tell her I'm gonna train for\l a little while longer?$"
 
 MossdeepCity_EventScript_GiveTotodilePostBattle_Text_0:
-# 643 "data/maps/MossdeepCity/scripts.pory"
+# 644 "data/maps/MossdeepCity/scripts.pory"
 	.string "Wait…\n This power I sense…!\p {PLAYER}, are you also a wielder\n of the SACRED BLADE?!\p Here.\n This TOTODILE is special.\p It has the KNIGHT's will required\n to wield the SACRED BLADE.$"
 
 MossdeepCity_EventScript_GiveTotodilePostBattle_Text_1:
-# 656 "data/maps/MossdeepCity/scripts.pory"
+# 657 "data/maps/MossdeepCity/scripts.pory"
 	.string "{PLAYER} received TOTODILE!$"
 
 MossdeepCity_EventScript_GiveTotodilePostBattle_Text_2:
-# 662 "data/maps/MossdeepCity/scripts.pory"
+# 663 "data/maps/MossdeepCity/scripts.pory"
 	.string "{PLAYER} received TOTODILE!\n TOTODILE was sent to the PC.$"
 
 MossdeepCity_EventScript_GiveTotodilePostBattle_Text_3:
-# 670 "data/maps/MossdeepCity/scripts.pory"
+# 671 "data/maps/MossdeepCity/scripts.pory"
 	.string "Okay!\n I need to get back to my training!\p {PLAYER}, if you're going to see MOMO,\n can you tell her I'm gonna train for\l a while longer?$"
 
 MossdeepCity_EventScript_GiveTotodile_Text_0:
-# 714 "data/maps/MossdeepCity/scripts.pory"
+# 715 "data/maps/MossdeepCity/scripts.pory"
 	.string "{PLAYER}!\n You scared me again!$"
 
 MossdeepCity_EventScript_AriaSword_Text_0:
-# 737 "data/maps/MossdeepCity/scripts.pory"
+# 738 "data/maps/MossdeepCity/scripts.pory"
 	.string "They're swinging a sword.\n It looks dangerous to approach them\l from the front.$"
 
 MossdeepCity_EventScript_RecoverTutor_Text_0:
-# 753 "data/maps/MossdeepCity/scripts.pory"
+# 754 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach RECOVER to?$"
 
 MoveTutor_EventScript_RecoverDeclined_Text_0:
-# 762 "data/maps/MossdeepCity/scripts.pory"
+# 763 "data/maps/MossdeepCity/scripts.pory"
 	.string "Well, alright.\n Don't overexert yourself.$"
 
 MoveTutor_EventScript_RecoverTaught_Text_0:
-# 770 "data/maps/MossdeepCity/scripts.pory"
+# 771 "data/maps/MossdeepCity/scripts.pory"
 	.string "All right.\p Come back if you ever need to recover\n from your training.$"
 
 MossdeepCity_EventScript_PunchesTutor_Text_0:
-# 812 "data/maps/MossdeepCity/scripts.pory"
+# 813 "data/maps/MossdeepCity/scripts.pory"
 	.string "They called me the FISTING AVATAR in\n my prime because of my elemental fists.\p I can teach your POKéMON how to\n fist too, if you'd like.$"
 
 MossdeepCity_EventScript_PunchesTutorChoices_Text_0:
-# 825 "data/maps/MossdeepCity/scripts.pory"
+# 826 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which punch do you want me\nto teach?$"
 
 MossdeepCity_EventScript_PunchesTutorChoices_Text_1:
-# 826 "data/maps/MossdeepCity/scripts.pory"
+# 827 "data/maps/MossdeepCity/scripts.pory"
 	.string "FIRE PUNCH$"
 
 MossdeepCity_EventScript_PunchesTutorChoices_Text_2:
-# 826 "data/maps/MossdeepCity/scripts.pory"
+# 827 "data/maps/MossdeepCity/scripts.pory"
 	.string "ICE PUNCH$"
 
 MossdeepCity_EventScript_PunchesTutorChoices_Text_3:
-# 826 "data/maps/MossdeepCity/scripts.pory"
+# 827 "data/maps/MossdeepCity/scripts.pory"
 	.string "THUNDER PUNCH$"
 
 MossdeepCity_EventScript_PunchesTutorChoices_Text_4:
-# 826 "data/maps/MossdeepCity/scripts.pory"
+# 827 "data/maps/MossdeepCity/scripts.pory"
 	.string "BULLET PUNCH$"
 
 MossdeepCity_EventScript_PunchesTutorChoices_Text_5:
-# 826 "data/maps/MossdeepCity/scripts.pory"
+# 827 "data/maps/MossdeepCity/scripts.pory"
 	.string "SUCKER PUNCH$"
 
 MossdeepCity_EventScript_PunchesTutorChoices_Text_6:
-# 826 "data/maps/MossdeepCity/scripts.pory"
+# 827 "data/maps/MossdeepCity/scripts.pory"
 	.string "FAKE OUT$"
 
 MoveTutor_EventScript_FirePunchTeach_Text_0:
-# 849 "data/maps/MossdeepCity/scripts.pory"
+# 850 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach FIRE PUNCH to?$"
 
 MoveTutor_EventScript_IcePunchTeach_Text_0:
-# 858 "data/maps/MossdeepCity/scripts.pory"
+# 859 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach ICE PUNCH to?$"
 
 MoveTutor_EventScript_ThunderPunchTeach_Text_0:
-# 867 "data/maps/MossdeepCity/scripts.pory"
+# 868 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach THUNDER PUNCH to?$"
 
 MoveTutor_EventScript_BulletPunchTeach_Text_0:
-# 876 "data/maps/MossdeepCity/scripts.pory"
+# 877 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach BULLET PUNCH to?$"
 
 MoveTutor_EventScript_SuckerPunchTeach_Text_0:
-# 885 "data/maps/MossdeepCity/scripts.pory"
+# 886 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach SUCKER PUNCH to?$"
 
 MoveTutor_EventScript_FakeOutTeach_Text_0:
-# 894 "data/maps/MossdeepCity/scripts.pory"
+# 895 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach FAKE OUT to?$"
 
 MossdeepCity_EventScript_PunchesTutorDecline_Text_0:
-# 904 "data/maps/MossdeepCity/scripts.pory"
+# 905 "data/maps/MossdeepCity/scripts.pory"
 	.string "I see.\p Come back if you want to teach your\n POKéMON the way of the elemental fist.$"
 
 MossdeepCity_EventScript_PunchesTutorTaught_Text_0:
-# 914 "data/maps/MossdeepCity/scripts.pory"
+# 915 "data/maps/MossdeepCity/scripts.pory"
 	.string "Come back if you want to teach more\n POKéMON the way of the elemental fist.$"
 
 MossdeepCity_EventScript_MultiHitTutor_Text_0:
-# 924 "data/maps/MossdeepCity/scripts.pory"
+# 925 "data/maps/MossdeepCity/scripts.pory"
 	.string "ORA!\n ORAORAORAORAORA!\p Hitting multiple times in a row\n is important to winning fights!\p If you want, I can teach your POKéMON\n a multi-hit move!$"
 
 MossdeepCity_EventScript_MultiHitTutorChoices_Text_0:
 # 940 "data/maps/MossdeepCity/scripts.pory"
-	.string "TRIPLE AXEL$"
+	.string "Which move do you want me\nto teach?$"
 
 MossdeepCity_EventScript_MultiHitTutorChoices_Text_1:
-# 940 "data/maps/MossdeepCity/scripts.pory"
-	.string "DUAL WINGBEAT$"
+# 941 "data/maps/MossdeepCity/scripts.pory"
+	.string "TRIPLE AXEL$"
 
 MossdeepCity_EventScript_MultiHitTutorChoices_Text_2:
-# 940 "data/maps/MossdeepCity/scripts.pory"
-	.string "ROCK BLAST$"
+# 941 "data/maps/MossdeepCity/scripts.pory"
+	.string "DUAL WINGBEAT$"
 
 MossdeepCity_EventScript_MultiHitTutorChoices_Text_3:
-# 940 "data/maps/MossdeepCity/scripts.pory"
+# 941 "data/maps/MossdeepCity/scripts.pory"
+	.string "ROCK BLAST$"
+
+MossdeepCity_EventScript_MultiHitTutorChoices_Text_4:
+# 941 "data/maps/MossdeepCity/scripts.pory"
 	.string "TAIL SLAP$"
 
 MoveTutor_EventScript_TripleAxelTeach_Text_0:
-# 959 "data/maps/MossdeepCity/scripts.pory"
+# 960 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach TRIPLE AXEL to?$"
 
 MoveTutor_EventScript_DualWingbeatTeach_Text_0:
-# 968 "data/maps/MossdeepCity/scripts.pory"
+# 969 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach DUAL WINGBEAT to?$"
 
 MoveTutor_EventScript_RockBlastTeach_Text_0:
-# 977 "data/maps/MossdeepCity/scripts.pory"
+# 978 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach ROCK BLAST to?$"
 
 MoveTutor_EventScript_TailSlapTeach_Text_0:
-# 986 "data/maps/MossdeepCity/scripts.pory"
+# 987 "data/maps/MossdeepCity/scripts.pory"
 	.string "Which POKéMON do you want to\nteach TAIL SLAP to?$"
 
 MossdeepCity_EventScript_MultiHitTutorTaught_Text_0:
-# 995 "data/maps/MossdeepCity/scripts.pory"
+# 996 "data/maps/MossdeepCity/scripts.pory"
 	.string "Come back if you want to teach your\n POKéMON a multi-hit move!$"
 
 MossdeepCity_Text_RecoverTeach::
-# 778 "data/maps/MossdeepCity/scripts.pory"
+# 779 "data/maps/MossdeepCity/scripts.pory"
 	.string "Pfft. Those meatheads on the beach\n spend all day training.\p Giving your muscles time to recover is\n is important too.\p If you want, I could teach your POKéMON\n how to RECOVER.$"
 
 MossdeepCity_Text_GymLeaderGone::
-# 787 "data/maps/MossdeepCity/scripts.pory"
+# 788 "data/maps/MossdeepCity/scripts.pory"
 	.string "Well met, challenger. Here to take on\n the GYM, I presume.\p The KNIGHT commander has left with the\n PROTECTORS to train in SHOAL CAVE\l on ROUTE 125.\l You'll have to wait until they return.\p That is, unless you're brave enough\n to go get them yourself…$"

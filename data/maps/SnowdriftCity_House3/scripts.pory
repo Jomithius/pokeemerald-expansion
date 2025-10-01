@@ -261,7 +261,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
             I'm impressed.", MSGBOX_DEFAULT)
     }
     waitmessage
-    if(!flag(FLAG_DEFEATED_EUGENIA) && var(VAR_LINA_TALKED_TO) == 1){
+    if(var(VAR_LINA_TALKED_TO) == 1){
         msgbox("Damn!\n
         You didn't get to see the superboss!\p
         But you still have a chance, if you're\n
@@ -279,6 +279,13 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         her EEVEE!", MSGBOX_DEFAULT)
         waitmessage
     }
+    if(flag(FLAG_HIDE_MAE_WACHUNPELON)){
+        msgbox("Oh, it looks like you didn't run\n
+        into the diva in every location.\p
+        Check SLATEPORT or LILYCOVE DEPT.\n
+        STORE, then WACHUNPELON.", MSGBOX_DEFAULT)
+        waitmessage
+    }
     if(!flag(FLAG_RECEIVED_TOTODILE_PARTNER)){
         msgbox("ARIA would be disappointed.\n
             You never found the SACRED BLADE.\p
@@ -291,7 +298,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         waitmessage
     }
     msgbox("Well, that's it, {PLAYER}!\p
-        There's other things you could've\p
+        There's other things you could've\n
         missed.\p
         “PuzzlesImportantItemsSecrets” in\n
         the SPOILERS folder has everything.\p

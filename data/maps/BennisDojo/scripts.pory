@@ -105,7 +105,9 @@ script BennisDojo_EventScript_BennisFinalBattle{
         Let's get some good vibrations\n
         from this place!", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_no_intro(TRAINER_BENNIS_4, "Everyone's so mean to me…")
+    clearflag(FLAG_SYS_BOSS_BATTLE)
     goto_if_set(FLAG_SYS_DEFEATED_BRUNO, BennisDojo_EventScript_AsakReturn)
     msgbox("Hm.\n
         That was a good battle.\p

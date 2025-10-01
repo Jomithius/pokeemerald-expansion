@@ -9,6 +9,7 @@ script Void_OnTransition{
     setflag(FLAG_TEMP_E)
     clearflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_TEMP_8)
+    setrespawn(HEAL_LOCATION_VOID)
     end
 }
 

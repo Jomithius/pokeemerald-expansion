@@ -1535,7 +1535,7 @@
 #define FLAG_DEFEATED_CEO                           (SYSTEM_FLAGS + 0x9F) // For E4 Final Battles
 #define FLAG_DEFEATED_RIVAL_BIRCH_LAB               (SYSTEM_FLAGS + 0xA0) // Rematch post game
 #define FLAG_DEFEATED_EUGENIA                       (SYSTEM_FLAGS + 0xA1) // For E4 Final Battles
-#define FLAG_SYS_HARD_MODE                          (SYSTEM_FLAGS + 0xA2) // Difficulty
+#define FLAG_SYS_HARD_MODE                          (SYSTEM_FLAGS + 0xA2) // Difficulty 2306
 #define FLAG_TALKED_TO_LIQUIDATION_TUTOR            (SYSTEM_FLAGS + 0xA3) // Lilycove Dept Store
 #define FLAG_RECEIVED_TM_ROCK_TOMB                  (SYSTEM_FLAGS + 0xA4) // Rustboro Gym
 #define FLAG_RECEIVED_TM_BULK_UP                    (SYSTEM_FLAGS + 0xA5) // Dewford Gym

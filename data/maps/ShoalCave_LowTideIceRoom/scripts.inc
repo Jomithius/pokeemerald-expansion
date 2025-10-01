@@ -71,11 +71,11 @@ ShoalCave_LowTideIceRoom_EventScript_Aria::
 # 49 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	playmoncry SPECIES_ETERNATUS, CRY_MODE_NORMAL
 # 50 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	msgbox ShoalCave_LowTideIceRoom_EventScript_Aria_Text_0, MSGBOX_AUTOCLOSE
+	msgbox ShoalCave_LowTideIceRoom_EventScript_Aria_Text_0, MSGBOX_DEFAULT
 # 52 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	waitmessage
-# 53 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitmoncry
+# 53 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	closemessage
 # 54 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	playse SE_PIN
 # 55 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
@@ -99,11 +99,11 @@ ShoalCave_LowTideIceRoom_EventScript_Aria::
 # 65 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitmovement 3
 # 66 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	msgbox ShoalCave_LowTideIceRoom_EventScript_Aria_Text_1, MSGBOX_AUTOCLOSE
+	msgbox ShoalCave_LowTideIceRoom_EventScript_Aria_Text_1, MSGBOX_DEFAULT
 # 67 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
-	waitmessage
-# 68 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	waitmoncry
+# 68 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
+	closemessage
 # 69 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	fadedefaultbgm
 # 70 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"

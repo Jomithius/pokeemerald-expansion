@@ -535,15 +535,16 @@ script MossdeepCity_EventScript_Aria{
 	lock
 	goto_if_not_defeated(TRAINER_ARIA, MossdeepCity_EventScript_AriaBattle)
 	goto_if_unset(FLAG_RECEIVED_TOTODILE_PARTNER, MossdeepCity_EventScript_GiveTotodile)
+	getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
 	playbgm(MUS_NONE, FALSE)
     delay(20)
     playse(SE_M_DOUBLE_TEAM)
     waitse
     playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
-        AAAARGH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+        AAAARGH!", MSGBOX_DEFAULT)
     waitmoncry
+	closemessage
     playse(SE_PIN)
     applymovement(21, Common_Movement_ExclamationMark)
     waitmovement(21)
@@ -556,10 +557,10 @@ script MossdeepCity_EventScript_Aria{
 	playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
     waitmovement(21)
-    msgbox("AH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox("AH!", MSGBOX_DEFAULT)
 	waitmoncry
-    fadedefaultbgm
+	closemessage
+	fadedefaultbgm
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
     waitmovement(21)
 	msgbox("{PLAYER}!\n
@@ -583,9 +584,9 @@ script MossdeepCity_EventScript_AriaBattle{
     waitse
     playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
-        AAAARGH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+        AAAARGH!", MSGBOX_DEFAULT)
     waitmoncry
+	closemessage
     playse(SE_PIN)
     applymovement(21, Common_Movement_ExclamationMark)
     waitmovement(21)
@@ -598,9 +599,9 @@ script MossdeepCity_EventScript_AriaBattle{
 	playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
     waitmovement(21)
-    msgbox("AH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox("AH!", MSGBOX_DEFAULT)
 	waitmoncry
+	closemessage
 	playbgm(MUS_ENCOUNTER_COOL, FALSE)
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
     waitmovement(21)
@@ -690,9 +691,9 @@ script MossdeepCity_EventScript_GiveTotodile{
     waitse
     playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
-        AAAARGH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+        AAAARGH!", MSGBOX_DEFAULT)
     waitmoncry
+	closemessage
     playse(SE_PIN)
     applymovement(21, Common_Movement_ExclamationMark)
     waitmovement(21)
@@ -705,9 +706,9 @@ script MossdeepCity_EventScript_GiveTotodile{
 	playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL)
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
     waitmovement(21)
-    msgbox("AH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox("AH!", MSGBOX_DEFAULT)
 	waitmoncry
+	closemessage
     fadedefaultbgm
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
     waitmovement(21)
@@ -936,7 +937,7 @@ script MossdeepCity_EventScript_MultiHitTutor{
 
 script MossdeepCity_EventScript_MultiHitTutorChoices{
 	lock
-	msgbox("Which punch do you want me\nto teach?", MSGBOX_DEFAULT)
+	msgbox("Which move do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "TRIPLE AXEL", "DUAL WINGBEAT", "ROCK BLAST", "TAIL SLAP")
 	switch (var(VAR_RESULT)) {
 		case 0:

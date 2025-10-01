@@ -521,8 +521,8 @@ script Route135_Lab_EventScript_EndAreaZero{
     applymovement(1, Common_Movement_ExclamationMark)
     waitmovement(0)
     waitse
-    applymovement(1, Common_Movement_FacePlayer)
-    waitmovement(0)
+    applymovement(1, Route_135_Lab_Movement_ProfToPlayerPostAreaZero)
+    waitmovement(1)
     msgbox("PROF.: Ah, intern!\n
         The survey went well, yes?\l
         Thanks for the great data.\p
@@ -532,10 +532,10 @@ script Route135_Lab_EventScript_EndAreaZero{
         … … …\p
         N-No, you weren't just a guinea pig!\n
         …\p
-        Well, other than that, there hasn't\n
+        W-Well, other than that, there hasn't\n
         been any significant new developments.\p
-        But on another trip to ULTRA SPACE, we\n
-        found these devices.\p
+        But on another trip to the ULTRA SPACE,\n
+        we found these devices.\p
         After an analysis, I couldn't find any\n
         use for them.\p
         But… maybe you can?", MSGBOX_DEFAULT)
@@ -553,7 +553,7 @@ script Route135_Lab_EventScript_EndAreaZero{
     msgbox("I'm busy, so I'll leave it to you.\n
         You know the routine by now.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, Common_Movement_FaceOriginalDirection)
+    applymovement(1, Common_Movement_WalkRight)
     waitmovement(1)
     setvar(VAR_ULTRA_SPACE_STATE, 7)
     addvar(VAR_FINAL_REMATCH_STATE, 1)
@@ -1007,4 +1007,9 @@ movement Route_135_Lab_Movement_JamesLeavesPlayer{
 movement Route_135_Lab_Movement_JamesLeavesPlayerNorth{
     walk_right
     walk_down * 11
+}
+
+movement Route_135_Lab_Movement_ProfToPlayerPostAreaZero{
+    walk_left
+    walk_in_place_up
 }

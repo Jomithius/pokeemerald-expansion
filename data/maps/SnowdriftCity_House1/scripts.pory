@@ -79,16 +79,25 @@ script SnowdriftCity_House1_EventScript_BlackBeltBattle{
     waitmovement(1)
     msgbox("LAROLD: Hahaha!\nSorry, honey!", MSGBOX_DEFAULT)
     waitmessage
-    applymovement(1, Common_Movement_WalkInPlaceUp)
-    waitmovement(1)
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
     delay(8)
-    applymovement(4, Common_Movement_WalkInPlaceRight)
-    waitmovement(4)
+    if(var(VAR_TEMP_0) == 5){
+        applymovement(1, Common_Movement_WalkInPlaceUp)
+        waitmovement(1)
+    }
+    elif(var(VAR_TEMP_0) == 4){
+        applymovement(1, Common_Movement_WalkInPlaceLeft)
+        waitmovement(1)
+    }
+    else{
+        applymovement(1, Common_Movement_FacePlayer)
+        waitmovement(1)
+    }
     msgbox("Sorry for doubting you!\n
         I never thought BRUNO would lose.\p
         You're the real deal!", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, Common_Movement_FaceRight)
+    applymovement(1, Common_Movement_WalkInPlaceRight)
     waitmovement(1)
     release
     end

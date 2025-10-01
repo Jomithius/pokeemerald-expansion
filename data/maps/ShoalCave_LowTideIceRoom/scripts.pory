@@ -48,9 +48,9 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
     waitse
     playmoncry(SPECIES_ETERNATUS, CRY_MODE_NORMAL)
     msgbox("ARGH!\n
-        AAAARGH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+        AAAARGH!", MSGBOX_DEFAULT)
     waitmoncry
+    closemessage
     playse(SE_PIN)
     applymovement(3, Common_Movement_ExclamationMark)
     waitmovement(3)
@@ -63,9 +63,9 @@ script ShoalCave_LowTideIceRoom_EventScript_Aria{
     playmoncry(SPECIES_TERAPAGOS, CRY_MODE_NORMAL) // aria scream
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition1)
     waitmovement(3)
-    msgbox("AH!", MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox("AH!", MSGBOX_DEFAULT)
     waitmoncry
+    closemessage
     fadedefaultbgm
     call(ShoalCave_LowTideIceRoom_EventScript_AriaPosition2)
     waitmovement(3)

@@ -120,26 +120,45 @@ SnowdriftCity_House1_EventScript_BlackBeltBattle::
 # 81 "data/maps/SnowdriftCity_House1/scripts.pory"
 	waitmessage
 # 82 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceUp
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 83 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmovement 1
-# 84 "data/maps/SnowdriftCity_House1/scripts.pory"
 	delay 8
-# 85 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 4, Common_Movement_WalkInPlaceRight
-# 86 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmovement 4
-# 87 "data/maps/SnowdriftCity_House1/scripts.pory"
-	msgbox SnowdriftCity_House1_EventScript_BlackBelt_Text_0, MSGBOX_AUTOCLOSE
-# 90 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmessage
-# 91 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 1, Common_Movement_FaceRight
-# 92 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmovement 1
+# 84 "data/maps/SnowdriftCity_House1/scripts.pory"
+	compare VAR_TEMP_0, 5
+	goto_if_eq SnowdriftCity_House1_EventScript_BlackBeltBattle_2
+# 88 "data/maps/SnowdriftCity_House1/scripts.pory"
+	compare VAR_TEMP_0, 4
+	goto_if_eq SnowdriftCity_House1_EventScript_BlackBeltBattle_3
 # 93 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_FacePlayer
+# 94 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmovement 1
+SnowdriftCity_House1_EventScript_BlackBeltBattle_1:
+# 96 "data/maps/SnowdriftCity_House1/scripts.pory"
+	msgbox SnowdriftCity_House1_EventScript_BlackBelt_Text_0, MSGBOX_AUTOCLOSE
+# 99 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmessage
+# 100 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceRight
+# 101 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmovement 1
+# 102 "data/maps/SnowdriftCity_House1/scripts.pory"
 	release
 	end
+
+SnowdriftCity_House1_EventScript_BlackBeltBattle_2:
+# 85 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceUp
+# 86 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmovement 1
+	goto SnowdriftCity_House1_EventScript_BlackBeltBattle_1
+
+SnowdriftCity_House1_EventScript_BlackBeltBattle_3:
+# 89 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceLeft
+# 90 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmovement 1
+	goto SnowdriftCity_House1_EventScript_BlackBeltBattle_1
 
 
 SnowdriftCity_House1_EventScript_KimonoLady_Text_0:
@@ -203,5 +222,5 @@ SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_2:
 	.string "LAROLD: Hahaha!\nSorry, honey!$"
 
 SnowdriftCity_House1_Text_LaroldLoss::
-# 97 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 106 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "I guess you weren't lying!$"

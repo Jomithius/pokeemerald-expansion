@@ -2459,8 +2459,8 @@ Route118_Text_PerryIntro:
 	.string "the sky… They're the best!$"
 
 Route118_Text_PerryDefeat:
-	.string "Urgh…\n"
-	.string "I crashed…$"
+	.string "What?\n"
+	.string "“I don't even have a bird?”$"
 
 Route118_Text_PerryPostBattle:
 	.string "You've got great POKéMON.\n"

@@ -781,9 +781,9 @@ Route135_Lab_EventScript_EndAreaZero::
 # 523 "data/maps/Route135_Lab/scripts.pory"
 	waitse
 # 524 "data/maps/Route135_Lab/scripts.pory"
-	applymovement 1, Common_Movement_FacePlayer
+	applymovement 1, Route_135_Lab_Movement_ProfToPlayerPostAreaZero
 # 525 "data/maps/Route135_Lab/scripts.pory"
-	waitmovement 0
+	waitmovement 1
 # 526 "data/maps/Route135_Lab/scripts.pory"
 	msgbox Route135_Lab_EventScript_EndAreaZero_Text_0, MSGBOX_DEFAULT
 # 542 "data/maps/Route135_Lab/scripts.pory"
@@ -809,7 +809,7 @@ Route135_Lab_EventScript_EndAreaZero::
 # 555 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
 # 556 "data/maps/Route135_Lab/scripts.pory"
-	applymovement 1, Common_Movement_FaceOriginalDirection
+	applymovement 1, Common_Movement_WalkRight
 # 557 "data/maps/Route135_Lab/scripts.pory"
 	waitmovement 1
 # 558 "data/maps/Route135_Lab/scripts.pory"
@@ -1401,6 +1401,14 @@ Route_135_Lab_Movement_JamesLeavesPlayerNorth:
 	walk_down
 	step_end
 
+# 1012 "data/maps/Route135_Lab/scripts.pory"
+Route_135_Lab_Movement_ProfToPlayerPostAreaZero:
+# 1013 "data/maps/Route135_Lab/scripts.pory"
+	walk_left
+# 1014 "data/maps/Route135_Lab/scripts.pory"
+	walk_in_place_up
+	step_end
+
 Route135_Lab_EventScript_James_Text_0:
 # 60 "data/maps/Route135_Lab/scripts.pory"
 	.string "What's up, {PLAYER}.\n The PROF. is waiting for you.$"
@@ -1483,7 +1491,7 @@ Route135_Lab_EventScript_ToAreaZero_Text_2:
 
 Route135_Lab_EventScript_EndAreaZero_Text_0:
 # 526 "data/maps/Route135_Lab/scripts.pory"
-	.string "PROF.: Ah, intern!\n The survey went well, yes?\l Thanks for the great data.\p Now that we know it's safe, I can send\n JAMES there for further investigation.\p What?\n … … …\p N-No, you weren't just a guinea pig!\n …\p Well, other than that, there hasn't\n been any significant new developments.\p But on another trip to ULTRA SPACE, we\n found these devices.\p After an analysis, I couldn't find any\n use for them.\p But… maybe you can?$"
+	.string "PROF.: Ah, intern!\n The survey went well, yes?\l Thanks for the great data.\p Now that we know it's safe, I can send\n JAMES there for further investigation.\p What?\n … … …\p N-No, you weren't just a guinea pig!\n …\p W-Well, other than that, there hasn't\n been any significant new developments.\p But on another trip to the ULTRA SPACE,\n we found these devices.\p After an analysis, I couldn't find any\n use for them.\p But… maybe you can?$"
 
 Route135_Lab_EventScript_EndAreaZero_Text_1:
 # 546 "data/maps/Route135_Lab/scripts.pory"
