@@ -31,14 +31,14 @@ script AzureMountain_EventScript_Dogfood{
 }
 
 script AzureMountain_EventScript_Bjornulfr{
-    trainerbattle_single(TRAINER_BJORNULFR, "Huff… huff…\nWhat a hike!", "Maybe I'm out of shape…")
+    trainerbattle_single(TRAINER_BJORNULFR, "Huff… Huff…\nWhat a hike!", "Maybe I'm out of shape…")
     msgbox("There's a lot of strong POKéMON\n
         in here!", MSGBOX_NPC)
 	end
 }
 
 script AzureMountain_EventScript_Rin{
-    trainerbattle_single(TRAINER_RIN, "Fear my fists!", "Maybe I should fear you!")
+    trainerbattle_single(TRAINER_RIN, "Fear my fists!", "Maybe I should fear YOU!")
     msgbox("This is the best place to train!", MSGBOX_NPC)
 	end
 }

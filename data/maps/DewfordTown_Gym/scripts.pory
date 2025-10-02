@@ -438,17 +438,9 @@ text ExplainDazzlingGleam{
 script DewfordTown_Gym_EventScript_Poobles{
     lock
     playmoncry(SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER)
-    msgbox("POOBLES: Poooobs!", MSGBOX_AUTOCLOSE)
-    waitmessage
-    release
-    end
-}
-
-script DewfordTown_Gym_EventScript_PooblesDugtrio{
-    lock
-    playmoncry(SPECIES_DUGTRIO_ALOLA, CRY_MODE_ENCOUNTER)
-    msgbox("POOBLES: POOOOOBS!", MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox("POOBLES: Poooobs!", MSGBOX_DEFAULT)
+    waitmoncry
+	closemessage
     release
     end
 }

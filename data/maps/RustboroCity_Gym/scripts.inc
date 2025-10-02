@@ -608,35 +608,35 @@ RustboroCity_Gym_EventScript_GiveChillingWater::
 
 
 RustboroCity_Gym_Magmortar::
-# 320 "data/maps/RustboroCity_Gym/scripts.pory"
+# 319 "data/maps/RustboroCity_Gym/scripts.pory"
 	lock
-# 321 "data/maps/RustboroCity_Gym/scripts.pory"
+# 320 "data/maps/RustboroCity_Gym/scripts.pory"
 	playmoncry SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER
-# 322 "data/maps/RustboroCity_Gym/scripts.pory"
+# 321 "data/maps/RustboroCity_Gym/scripts.pory"
 	delay 20
-# 323 "data/maps/RustboroCity_Gym/scripts.pory"
+# 322 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 	end
 
 
 RustboroCity_Gym_EventScript_Roxanne_FinalBattle::
-# 328 "data/maps/RustboroCity_Gym/scripts.pory"
+# 327 "data/maps/RustboroCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_ROXANNE_2, RustboroCity_Gym_EventScript_Roxanne_FinalBattle_Text_0, RustboroCity_Gym_EventScript_Roxanne_FinalBattle_Text_1, RustboroCity_Gym_EventScript_RoxanneDefeatedFinal
 	end
 
 
 RustboroCity_Gym_EventScript_RoxanneDefeatedFinal::
-# 333 "data/maps/RustboroCity_Gym/scripts.pory"
+# 332 "data/maps/RustboroCity_Gym/scripts.pory"
 	addvar VAR_GYM_LEADER_COUNT, 1
-# 334 "data/maps/RustboroCity_Gym/scripts.pory"
+# 333 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_EventScript_RoxanneDefeatedFinal_Text_0, MSGBOX_NPC
-# 338 "data/maps/RustboroCity_Gym/scripts.pory"
+# 337 "data/maps/RustboroCity_Gym/scripts.pory"
 	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
 	end
 
 
 RustboroCity_Gym_EventScript_RoxanneDefeatedFinal2::
-# 343 "data/maps/RustboroCity_Gym/scripts.pory"
+# 342 "data/maps/RustboroCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_EventScript_RoxanneDefeatedFinal_Text_0, MSGBOX_NPC
 	end
 
@@ -646,17 +646,17 @@ RustboroCity_Gym_EventScript_GiveChillingWater_Text_0:
 	.string "And because you were on fire,\n take this to cool off!$"
 
 RustboroCity_Gym_EventScript_Roxanne_FinalBattle_Text_0:
-# 328 "data/maps/RustboroCity_Gym/scripts.pory"
+# 327 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Yo, {PLAYER}!\nI'm all fired up and ready to go!\pLet's get right to it!$"
 
 RustboroCity_Gym_EventScript_Roxanne_FinalBattle_Text_1:
-# 328 "data/maps/RustboroCity_Gym/scripts.pory"
+# 327 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Haha!\nI'm all burnt out!$"
 
 RustboroCity_Gym_EventScript_RoxanneDefeatedFinal_Text_0:
-# 334 "data/maps/RustboroCity_Gym/scripts.pory"
+# 333 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Haha!\n That was a great battle, {PLAYER}!\p You've gotten so strong now.\n You were really on fire!$"
 
 RustboroCity_Gym_Text_ExplainChillingWater::
-# 312 "data/maps/RustboroCity_Gym/scripts.pory"
+# 311 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "That TECHNICAL MACHINE, TM52,\n contains CHILLING WATER.\l It's a good way to put out a POKéMON\l that's on fire!$"

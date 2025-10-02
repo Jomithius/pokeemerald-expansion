@@ -62,6 +62,8 @@ script EverGrandeCity_EventScript_BennisTrigger{
     msgbox("Baldy baldy over there, what's it like\n
         to have no hair?", MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
     playbgm(MUS_BENNIS_DOJO, TRUE)
     delay(20)
     applymovement(3, EverGrandeCity_Movement_BennisFollower)
@@ -112,6 +114,8 @@ script EverGrandeCity_EventScript_BennisTriggerRight{
     msgbox("Baldy baldy over there, what's it like\n
     to have no hair?", MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
     playbgm(MUS_BENNIS_DOJO, TRUE)
     delay(20)
     applymovement(3, EverGrandeCity_Movement_BennisFollower)
@@ -247,6 +251,8 @@ script EverGrandeCity_EventScript_James{
     playbgm(MUS_NONE, TRUE)
     msgbox("???: I've been waiting for you.", MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
     applymovement(5, Common_Movement_WalkInPlaceDown)
     waitmovement(5)
     msgbox(EverGrandeCity_Text_James1, MSGBOX_AUTOCLOSE)

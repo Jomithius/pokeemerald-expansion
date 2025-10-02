@@ -495,33 +495,31 @@ Route117_EventScript_MisaBattle::
 # 249 "data/maps/Route117/scripts.pory"
 	compare VAR_MISA_STATE, 3
 	goto_if_eq Route117_EventScript_MisaBattle_2
-# 266 "data/maps/Route117/scripts.pory"
+# 264 "data/maps/Route117/scripts.pory"
 	compare VAR_MISA_STATE, 4
 	goto_if_eq Route117_EventScript_MisaBattle_3
-# 282 "data/maps/Route117/scripts.pory"
+# 277 "data/maps/Route117/scripts.pory"
 	goto_if_set FLAG_ROUTE117_RECEIVED_LEFTOVERS, Route117_EventScript_MisaBattle_14
-# 287 "data/maps/Route117/scripts.pory"
+# 282 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_MisaLeftovers, MSGBOX_DEFAULT
-# 288 "data/maps/Route117/scripts.pory"
+# 283 "data/maps/Route117/scripts.pory"
 	waitmessage
-# 289 "data/maps/Route117/scripts.pory"
+# 284 "data/maps/Route117/scripts.pory"
 	giveitem ITEM_LEFTOVERS
-# 290 "data/maps/Route117/scripts.pory"
+# 285 "data/maps/Route117/scripts.pory"
 	waitmessage
-# 291 "data/maps/Route117/scripts.pory"
+# 286 "data/maps/Route117/scripts.pory"
 	setflag FLAG_ROUTE117_RECEIVED_LEFTOVERS
 Route117_EventScript_MisaBattle_13:
-# 293 "data/maps/Route117/scripts.pory"
+# 288 "data/maps/Route117/scripts.pory"
 	applymovement LOCALID_MISA, Common_Movement_FaceUp
-# 294 "data/maps/Route117/scripts.pory"
+# 289 "data/maps/Route117/scripts.pory"
 	waitmovement LOCALID_MISA
-# 295 "data/maps/Route117/scripts.pory"
+# 290 "data/maps/Route117/scripts.pory"
 	delay 30
-# 296 "data/maps/Route117/scripts.pory"
-	release
-	end
-
 Route117_EventScript_MisaBattle_1:
+# 292 "data/maps/Route117/scripts.pory"
+	release
 	end
 
 Route117_EventScript_MisaBattle_2:
@@ -546,27 +544,23 @@ Route117_EventScript_MisaBattle_2:
 	applymovement LOCALID_MISA, Common_Movement_FaceUp
 # 261 "data/maps/Route117/scripts.pory"
 	waitmovement LOCALID_MISA
-# 262 "data/maps/Route117/scripts.pory"
-	release
-	end
+	goto Route117_EventScript_MisaBattle_1
 
 Route117_EventScript_MisaBattle_3:
-# 267 "data/maps/Route117/scripts.pory"
+# 265 "data/maps/Route117/scripts.pory"
 	msgbox Route117_MisaAboutTheBattle, MSGBOX_YESNO
-# 268 "data/maps/Route117/scripts.pory"
+# 266 "data/maps/Route117/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route117_EventScript_MisaBattle_10
-# 272 "data/maps/Route117/scripts.pory"
+# 270 "data/maps/Route117/scripts.pory"
 	msgbox Route117_MisaAnotherTime, MSGBOX_AUTOCLOSE
-# 273 "data/maps/Route117/scripts.pory"
+# 271 "data/maps/Route117/scripts.pory"
 	waitmessage
-# 274 "data/maps/Route117/scripts.pory"
+# 272 "data/maps/Route117/scripts.pory"
 	applymovement LOCALID_MISA, Common_Movement_FaceUp
-# 275 "data/maps/Route117/scripts.pory"
+# 273 "data/maps/Route117/scripts.pory"
 	waitmovement LOCALID_MISA
-# 276 "data/maps/Route117/scripts.pory"
-	release
-	end
+	goto Route117_EventScript_MisaBattle_1
 
 Route117_EventScript_MisaBattle_7:
 # 254 "data/maps/Route117/scripts.pory"
@@ -574,165 +568,165 @@ Route117_EventScript_MisaBattle_7:
 	goto Route117_EventScript_MisaBattle_1
 
 Route117_EventScript_MisaBattle_10:
-# 269 "data/maps/Route117/scripts.pory"
+# 267 "data/maps/Route117/scripts.pory"
 	goto Route117_MisaFriendlyBattle
 	goto Route117_EventScript_MisaBattle_1
 
 Route117_EventScript_MisaBattle_14:
-# 283 "data/maps/Route117/scripts.pory"
+# 278 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_MisaFlowers, MSGBOX_AUTOCLOSE
-# 284 "data/maps/Route117/scripts.pory"
+# 279 "data/maps/Route117/scripts.pory"
 	waitmessage
 	goto Route117_EventScript_MisaBattle_13
 
 
 Route117_MisaFriendlyBattle::
-# 303 "data/maps/Route117/scripts.pory"
+# 297 "data/maps/Route117/scripts.pory"
 	msgbox Route117_MisaFriendlyBattle_Text_0, MSGBOX_AUTOCLOSE
-# 305 "data/maps/Route117/scripts.pory"
+# 299 "data/maps/Route117/scripts.pory"
 	trainerbattle_no_intro TRAINER_MISA, Route117_MisaDefeat
-# 306 "data/maps/Route117/scripts.pory"
+# 300 "data/maps/Route117/scripts.pory"
 	msgbox Route117_MisaPostBattle, MSGBOX_AUTOCLOSE
-# 307 "data/maps/Route117/scripts.pory"
+# 301 "data/maps/Route117/scripts.pory"
 	waitmessage
-# 308 "data/maps/Route117/scripts.pory"
+# 302 "data/maps/Route117/scripts.pory"
 	delay 10
-# 309 "data/maps/Route117/scripts.pory"
+# 303 "data/maps/Route117/scripts.pory"
 	applymovement LOCALID_MISA, Common_Movement_FaceUp
-# 310 "data/maps/Route117/scripts.pory"
+# 304 "data/maps/Route117/scripts.pory"
 	waitmovement LOCALID_MISA
-# 311 "data/maps/Route117/scripts.pory"
+# 305 "data/maps/Route117/scripts.pory"
 	setvar VAR_MISA_STATE, 5
-# 312 "data/maps/Route117/scripts.pory"
+# 306 "data/maps/Route117/scripts.pory"
 	release
 	end
 
 
 Route117_EventScript_SaveBikerMusic::
-# 364 "data/maps/Route117/scripts.pory"
+# 358 "data/maps/Route117/scripts.pory"
 	savebgm MUS_RG_SILPH
 	return
 
 
 Route117_EventScript_Araquanid::
-# 369 "data/maps/Route117/scripts.pory"
+# 363 "data/maps/Route117/scripts.pory"
 	lock
-# 370 "data/maps/Route117/scripts.pory"
+# 364 "data/maps/Route117/scripts.pory"
 	faceplayer
-# 371 "data/maps/Route117/scripts.pory"
+# 365 "data/maps/Route117/scripts.pory"
 	setflag FLAG_ARAQUANID_TOTEM
-# 372 "data/maps/Route117/scripts.pory"
+# 366 "data/maps/Route117/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
-# 373 "data/maps/Route117/scripts.pory"
+# 367 "data/maps/Route117/scripts.pory"
 	waitmovement VAR_LAST_TALKED
-# 374 "data/maps/Route117/scripts.pory"
+# 368 "data/maps/Route117/scripts.pory"
 	playmoncry SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER
-# 375 "data/maps/Route117/scripts.pory"
+# 369 "data/maps/Route117/scripts.pory"
 	waitmoncry
-# 376 "data/maps/Route117/scripts.pory"
+# 370 "data/maps/Route117/scripts.pory"
 	setwildbattle SPECIES_ARAQUANID_TOTEM, 21
-# 377 "data/maps/Route117/scripts.pory"
+# 371 "data/maps/Route117/scripts.pory"
 	dowildbattle
-# 378 "data/maps/Route117/scripts.pory"
+# 372 "data/maps/Route117/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 379 "data/maps/Route117/scripts.pory"
+# 373 "data/maps/Route117/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route117_EventScript_Araquanid_2
-# 382 "data/maps/Route117/scripts.pory"
+# 376 "data/maps/Route117/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route117_EventScript_Araquanid_3
-# 385 "data/maps/Route117/scripts.pory"
+# 379 "data/maps/Route117/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq Route117_EventScript_Araquanid_4
-# 388 "data/maps/Route117/scripts.pory"
+# 382 "data/maps/Route117/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq Route117_EventScript_Araquanid_5
 Route117_EventScript_Araquanid_1:
-# 391 "data/maps/Route117/scripts.pory"
+# 385 "data/maps/Route117/scripts.pory"
 	waitmessage
-# 392 "data/maps/Route117/scripts.pory"
+# 386 "data/maps/Route117/scripts.pory"
 	release
 	end
 
 Route117_EventScript_Araquanid_2:
-# 380 "data/maps/Route117/scripts.pory"
+# 374 "data/maps/Route117/scripts.pory"
 	call AraquanidWon_Caught
 	goto Route117_EventScript_Araquanid_1
 
 Route117_EventScript_Araquanid_3:
-# 383 "data/maps/Route117/scripts.pory"
+# 377 "data/maps/Route117/scripts.pory"
 	call AraquanidWon_Caught
 	goto Route117_EventScript_Araquanid_1
 
 Route117_EventScript_Araquanid_4:
-# 386 "data/maps/Route117/scripts.pory"
+# 380 "data/maps/Route117/scripts.pory"
 	call AraquanidFailed
 	goto Route117_EventScript_Araquanid_1
 
 Route117_EventScript_Araquanid_5:
-# 389 "data/maps/Route117/scripts.pory"
+# 383 "data/maps/Route117/scripts.pory"
 	call AraquanidFailed
 	goto Route117_EventScript_Araquanid_1
 
 
 AraquanidWon_Caught::
-# 397 "data/maps/Route117/scripts.pory"
+# 391 "data/maps/Route117/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 398 "data/maps/Route117/scripts.pory"
+# 392 "data/maps/Route117/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 399 "data/maps/Route117/scripts.pory"
+# 393 "data/maps/Route117/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	return
 
 
 AraquanidFailed::
-# 404 "data/maps/Route117/scripts.pory"
+# 398 "data/maps/Route117/scripts.pory"
 	playmoncry SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER
-# 405 "data/maps/Route117/scripts.pory"
+# 399 "data/maps/Route117/scripts.pory"
 	delay 20
-# 406 "data/maps/Route117/scripts.pory"
+# 400 "data/maps/Route117/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 407 "data/maps/Route117/scripts.pory"
+# 401 "data/maps/Route117/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 408 "data/maps/Route117/scripts.pory"
+# 402 "data/maps/Route117/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 409 "data/maps/Route117/scripts.pory"
-	msgbox AraquanidFailed_Text_0
+# 403 "data/maps/Route117/scripts.pory"
+	msgbox AraquanidFailed_Text_0, MSGBOX_DEFAULT
 	return
 
 
 Route117_MisaFriendlyBattle_Text_0:
-# 303 "data/maps/Route117/scripts.pory"
+# 297 "data/maps/Route117/scripts.pory"
 	.string "Great!\n Go easy on me!$"
 
 AraquanidFailed_Text_0:
-# 409 "data/maps/Route117/scripts.pory"
+# 403 "data/maps/Route117/scripts.pory"
 	.string "The ARAQUANID disappeared…$"
 
 Route117_MisaHello::
-# 316 "data/maps/Route117/scripts.pory"
+# 310 "data/maps/Route117/scripts.pory"
 	.string "Oh! {PLAYER}!\n It's so good to see you again!\p I stopped by a friend's house in\n VERDANTURF on my way back to\l EVER GRANDE CITY.\p I just love the flowers here!\p Anyways, how's your journey going?\n … … … …\p Two badges already?!\n I'm so proud of you!\p I'd love to see how much you've grown!\n How about a friendly battle?$"
 
 Route117_Text_MisaFlowers::
-# 331 "data/maps/Route117/scripts.pory"
+# 325 "data/maps/Route117/scripts.pory"
 	.string "I still have a bit of vacation\n time, so I'm taking a scenic route back.\p I just love the flowers here!$"
 
 Route117_MisaAnotherTime::
-# 337 "data/maps/Route117/scripts.pory"
+# 331 "data/maps/Route117/scripts.pory"
 	.string "Oh…\n Maybe another time, then!$"
 
 Route117_MisaAboutTheBattle::
-# 341 "data/maps/Route117/scripts.pory"
+# 335 "data/maps/Route117/scripts.pory"
 	.string "So?\n Did you change your mind?$"
 
 Route117_MisaDefeat::
-# 345 "data/maps/Route117/scripts.pory"
+# 339 "data/maps/Route117/scripts.pory"
 	.string "You did great!$"
 
 Route117_MisaPostBattle::
-# 349 "data/maps/Route117/scripts.pory"
+# 343 "data/maps/Route117/scripts.pory"
 	.string "Wow! I can tell you and your\n POKéMON really share a strong bond.\p I'm excited to see how much more\n you'll grow!$"
 
 Route117_Text_MisaLeftovers::
-# 356 "data/maps/Route117/scripts.pory"
+# 350 "data/maps/Route117/scripts.pory"
 	.string "Have you been eating properly?\p I have some food from the meal I had\n in VERDANTURF.\p You can have the leftovers!$"

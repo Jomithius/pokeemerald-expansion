@@ -1644,11 +1644,11 @@ Route115Emo8::
 
 Route115Misa2::
 # 706 "data/maps/Route115/scripts.pory"
-	.string "MISA: Great! I made a feast since\n you're starting your journey tomorrow.\l Hurry back soon, JAMES.\p {PLAYER}, you're more than welcome\n to stop by anytime as well!$"
+	.string "MISA: Great! I made a feast since\n you're starting your journey tomorrow.\l Hurry back soon, JAMES.\p {PLAYER}, you're more than welcome\n to stop by as well!$"
 
 Route115Emo9::
 # 712 "data/maps/Route115/scripts.pory"
-	.string "Definitely JAMES: …\p I should head back then.\n {PLAYER}, next time I'll achieve victory.\l See ya.$"
+	.string "Definitely JAMES: …\n I should head back then.\p {PLAYER}, next time I'll achieve victory.\n See ya.$"
 
 Jomithius_Outro::
 # 717 "data/maps/Route115/scripts.pory"

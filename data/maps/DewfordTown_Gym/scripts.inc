@@ -863,60 +863,48 @@ DewfordTown_Gym_EventScript_Poobles::
 # 440 "data/maps/DewfordTown_Gym/scripts.pory"
 	playmoncry SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER
 # 441 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_EventScript_Poobles_Text_0, MSGBOX_AUTOCLOSE
+	msgbox DewfordTown_Gym_EventScript_Poobles_Text_0, MSGBOX_DEFAULT
 # 442 "data/maps/DewfordTown_Gym/scripts.pory"
-	waitmessage
+	waitmoncry
 # 443 "data/maps/DewfordTown_Gym/scripts.pory"
-	release
-	end
-
-
-DewfordTown_Gym_EventScript_PooblesDugtrio::
-# 448 "data/maps/DewfordTown_Gym/scripts.pory"
-	lock
-# 449 "data/maps/DewfordTown_Gym/scripts.pory"
-	playmoncry SPECIES_DUGTRIO_ALOLA, CRY_MODE_ENCOUNTER
-# 450 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_EventScript_PooblesDugtrio_Text_0, MSGBOX_AUTOCLOSE
-# 451 "data/maps/DewfordTown_Gym/scripts.pory"
-	waitmessage
-# 452 "data/maps/DewfordTown_Gym/scripts.pory"
+	closemessage
+# 444 "data/maps/DewfordTown_Gym/scripts.pory"
 	release
 	end
 
 
 DewfordTown_Gym_EventScript_Brawly_FinalBattle::
-# 457 "data/maps/DewfordTown_Gym/scripts.pory"
+# 449 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_BRAWLY_2, DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_0, DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_1, DewfordTown_Gym_EventScript_BrawlyDefeatedFinal
 	end
 
 
 DewfordTown_Gym_EventScript_BrawlyDefeatedFinal::
-# 462 "data/maps/DewfordTown_Gym/scripts.pory"
+# 454 "data/maps/DewfordTown_Gym/scripts.pory"
 	addvar VAR_GYM_LEADER_COUNT, 1
-# 463 "data/maps/DewfordTown_Gym/scripts.pory"
+# 455 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_EventScript_BrawlyDefeatedFinal_Text_0, MSGBOX_NPC
-# 467 "data/maps/DewfordTown_Gym/scripts.pory"
+# 459 "data/maps/DewfordTown_Gym/scripts.pory"
 	goto_if_eq VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch
 	end
 
 
 DewfordTown_Gym_EventScript_BrawlyDefeatedFinal2::
-# 472 "data/maps/DewfordTown_Gym/scripts.pory"
+# 464 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_EventScript_BrawlyDefeatedFinal_Text_0, MSGBOX_NPC
 	end
 
 
 Common_EventScript_SetPooblesGfx::
-# 480 "data/maps/DewfordTown_Gym/scripts.pory"
+# 472 "data/maps/DewfordTown_Gym/scripts.pory"
 	goto_if_unset FLAG_SYS_HARD_MODE, Common_EventScript_SetPooblesGfx_2
-# 484 "data/maps/DewfordTown_Gym/scripts.pory"
+# 476 "data/maps/DewfordTown_Gym/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES_SHINY ( DIGLETT_ALOLA )
 Common_EventScript_SetPooblesGfx_1:
 	return
 
 Common_EventScript_SetPooblesGfx_2:
-# 481 "data/maps/DewfordTown_Gym/scripts.pory"
+# 473 "data/maps/DewfordTown_Gym/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES ( DIGLETT_ALOLA )
 	goto Common_EventScript_SetPooblesGfx_1
 
@@ -929,20 +917,16 @@ DewfordTown_Gym_EventScript_Poobles_Text_0:
 # 441 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "POOBLES: Poooobs!$"
 
-DewfordTown_Gym_EventScript_PooblesDugtrio_Text_0:
-# 450 "data/maps/DewfordTown_Gym/scripts.pory"
-	.string "POOBLES: POOOOOBS!$"
-
 DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_0:
-# 457 "data/maps/DewfordTown_Gym/scripts.pory"
+# 449 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "All right, {PLAYER}! It's time to show\nyou how strong POOBLES has gotten!$"
 
 DewfordTown_Gym_EventScript_Brawly_FinalBattle_Text_1:
-# 457 "data/maps/DewfordTown_Gym/scripts.pory"
+# 449 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "How could you do that to POOBLES…$"
 
 DewfordTown_Gym_EventScript_BrawlyDefeatedFinal_Text_0:
-# 463 "data/maps/DewfordTown_Gym/scripts.pory"
+# 455 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "Wow.\n That was impressive, {PLAYER}!\p You even beat POOBLES at\n full power!$"
 
 ExplainDazzlingGleam::

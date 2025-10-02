@@ -2,7 +2,7 @@ mapscripts Baldesia_House2_MapScripts {}
 
 script Baldesia_House2_EventScript_OldWoman{
     msgbox("Every time JIRACHI is going to awaken,\n
-        the Young Lady of the ASAKURA\l
+        the BALD MAIDEN of the ASAKURA\l
         household is required to make the\l
         pilgrimage to the altar to perform a\l
         very sacred ritual.", MSGBOX_NPC)
@@ -14,7 +14,7 @@ script Baldesia_House2_EventScript_OldMan{
     awakens to grant one wish.\p
     That's a lie though.\n
     It really awakens every 50 years or so.\p
-    It must be a light sleeper. Hahaha!", MSGBOX_NPC)
+    It must be a light sleeper. Gahaha!", MSGBOX_NPC)
     end
 }
 

@@ -253,6 +253,9 @@ Route112_Trigger_Emo::
 # 131 "data/maps/Route112/scripts.pory"
 	compare VAR_TEMP_1, DIR_NORTH
 	goto_if_eq Route112_Trigger_Emo_2
+# 131 "data/maps/Route112/scripts.pory"
+	compare VAR_TEMP_1, DIR_SOUTH
+	goto_if_eq Route112_Trigger_Emo_2
 # 135 "data/maps/Route112/scripts.pory"
 	goto Route112_EventScript_Emo_West
 Route112_Trigger_Emo_1:

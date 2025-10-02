@@ -135,8 +135,10 @@ SnowdriftCity_EventScript_ReceiveCalyrex::
 	goto Common_EventScript_NoMoreRoomForPokemon
 SnowdriftCity_EventScript_ReceiveCalyrex_1:
 # 127 "data/maps/SnowdriftCity/scripts.pory"
-	fadedefaultbgm
+	savebgm MUS_DUMMY
 # 128 "data/maps/SnowdriftCity/scripts.pory"
+	fadedefaultbgm
+# 129 "data/maps/SnowdriftCity/scripts.pory"
 	release
 	end
 

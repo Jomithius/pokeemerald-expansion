@@ -41,7 +41,7 @@ script Route138_EventScript_Ryuu{
 
 script Route138_EventScript_Ichigo{
     trainerbattle_single(TRAINER_ICHIGO, "We're protectors of the village!", "You're mean…")
-    msgbox("We're protects of the village!", MSGBOX_NPC)
+    msgbox("We're protectors of the village!", MSGBOX_NPC)
 	end
 }
 
@@ -61,7 +61,7 @@ script Route138_EventScript_Katsumi{
 script Route138_EventScript_Hagerou{
     trainerbattle_single(TRAINER_HAGEROU, "Time to remove your hair follicles!", "You can keep them…")
     msgbox("Most NINJAS are bald in respect to\n
-        LADY ASAKURA.", MSGBOX_NPC)
+        the ASAKURA household.", MSGBOX_NPC)
 	end
 }
 

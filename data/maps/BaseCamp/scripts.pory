@@ -36,7 +36,7 @@ script BaseCamp_PokemonCenter_EventScript_Pokefan_M{
 script BaseCamp_PokemonCenter_EventScript_Camper{
 	msgbox("Did you hear?\p
 		A new cave was discovered on ROUTE 103\n
-		that was home to super rare POKéMON.", MSGBOX_NPC)
+		that's home to super rare POKéMON.", MSGBOX_NPC)
 	end
 }
 

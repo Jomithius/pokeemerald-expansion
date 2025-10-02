@@ -386,8 +386,8 @@ script Baldesia_EventScript_OldManBridge{
 }
 
 script Baldesia_EventScript_KimonoLady1{
-    msgbox("There's a new flavor of mochi that's\n
-        becoming super popular in the village.\p
+    msgbox("There's a new flavor of mochi that\n
+        was recently brought to the village.\p
         The Chief and his wife seem to enjoy it\n
         the most.", MSGBOX_NPC)
     end
@@ -454,6 +454,8 @@ script Baldesia_EventScript_HisuianZoruaTrigger{
     delay(16)
     applymovement(12, Baldesa_Movement_BlockTrainerRightGuard)
     waitmovement(12)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
     delay(10)
     msgbox("Halt!\n
         I've never seen you before.\p
@@ -657,6 +659,7 @@ script Baldesia_EventScript_HisuianZoruaTrigger{
     applymovement(24, Common_Movement_WalkInPlaceRight)
     waitmovement(24)
     playmoncry(SPECIES_ZORUA_HISUI, CRY_MODE_ENCOUNTER)
+    waitmoncry
     msgbox("ZORUA: Paneenee!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(24, Common_Movement_WalkRight)
@@ -831,7 +834,7 @@ text Baldesia_Text_Bennis2{
 }
 
 text Baldesia_Text_Bennis3{
-    "ASAK: L-LADY ASAKURA?\p
+    "ASAK: L-LADY MOMO?\p
     MASTER BENNIS: Young Lady.\n
     Your scalp is as shiny as ever.\p
     MOMO: … … … …\n
@@ -842,7 +845,7 @@ text Baldesia_Text_Bennis4{
     "MASTER BENNIS: {PLAYER}? Hm.\p
     ASAK: Huh… I just realized we never knew\n
     your name.\l
-    And you also know LADY ASAKURA…\l
+    And you also know LADY MOMO…\l
     I'm surprised."
 }
 

@@ -134,17 +134,17 @@ script EverGrandeCity_SidneysRoom_EventScript_Misa{
 			with that legend I told you about?", MSGBOX_DEFAULT)
 		waitmessage
 		dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Yeah! Thanks for the info.", "No…")
-			if(var(VAR_RESULT) == 0){
-				msgbox("Oh, I'm glad it worked out!\p
-					I'm so happy you and JAMES have had\n
-					fun exploring this region.", MSGBOX_DEFAULT)
-			}
-			else{
-				msgbox("Oh… Well maybe it was just\n
-					an urban legend.\p
-					Either way, I'm glad you and JAMES have\n
-					had fun exploring this region.", MSGBOX_DEFAULT)
-			}
+		if(var(VAR_RESULT) == 0){
+			msgbox("Oh, I'm glad it worked out!\p
+				I'm so happy you and JAMES have had\n
+				fun exploring this region.", MSGBOX_DEFAULT)
+		}
+		else{
+			msgbox("Oh… Well maybe it was just\n
+				an urban legend.\p
+				Either way, I'm glad you and JAMES have\n
+				had fun exploring this region.", MSGBOX_DEFAULT)
+		}
 	}
 	else{
 		msgbox("{PLAYER}!\n

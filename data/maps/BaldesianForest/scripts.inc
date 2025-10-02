@@ -231,330 +231,334 @@ BaldesianForest_EventScript_Celebi::
 # 160 "data/maps/BaldesianForest/scripts.pory"
 	delay 16
 # 161 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_Celebi_Text_1, MSGBOX_AUTOCLOSE
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 162 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
+	waitmovement 0
 # 163 "data/maps/BaldesianForest/scripts.pory"
-	playbgm MUS_RG_JIGGLYPUFF, FALSE
+	msgbox BaldesianForest_EventScript_Celebi_Text_1, MSGBOX_AUTOCLOSE
 # 164 "data/maps/BaldesianForest/scripts.pory"
-	delay 480
+	waitmessage
 # 165 "data/maps/BaldesianForest/scripts.pory"
-	checkobjectat 33, 12
+	playbgm MUS_RG_JIGGLYPUFF, FALSE
 # 166 "data/maps/BaldesianForest/scripts.pory"
+	delay 480
+# 167 "data/maps/BaldesianForest/scripts.pory"
+	checkobjectat 33, 12
+# 168 "data/maps/BaldesianForest/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq BaldesianForest_EventScript_Celebi_2
-# 180 "data/maps/BaldesianForest/scripts.pory"
-	playse SE_M_PETAL_DANCE
-# 181 "data/maps/BaldesianForest/scripts.pory"
-	showobjectat 13, MAP_BALDESIAN_FOREST
 # 182 "data/maps/BaldesianForest/scripts.pory"
-	delay 8
+	playse SE_M_PETAL_DANCE
 # 183 "data/maps/BaldesianForest/scripts.pory"
-	hideobjectat 13, MAP_BALDESIAN_FOREST
+	showobjectat 13, MAP_BALDESIAN_FOREST
 # 184 "data/maps/BaldesianForest/scripts.pory"
 	delay 8
 # 185 "data/maps/BaldesianForest/scripts.pory"
-	showobjectat 13, MAP_BALDESIAN_FOREST
-# 186 "data/maps/BaldesianForest/scripts.pory"
-	delay 16
-# 187 "data/maps/BaldesianForest/scripts.pory"
 	hideobjectat 13, MAP_BALDESIAN_FOREST
-# 188 "data/maps/BaldesianForest/scripts.pory"
-	delay 24
-# 189 "data/maps/BaldesianForest/scripts.pory"
+# 186 "data/maps/BaldesianForest/scripts.pory"
+	delay 8
+# 187 "data/maps/BaldesianForest/scripts.pory"
 	showobjectat 13, MAP_BALDESIAN_FOREST
+# 188 "data/maps/BaldesianForest/scripts.pory"
+	delay 16
+# 189 "data/maps/BaldesianForest/scripts.pory"
+	hideobjectat 13, MAP_BALDESIAN_FOREST
 # 190 "data/maps/BaldesianForest/scripts.pory"
+	delay 24
+# 191 "data/maps/BaldesianForest/scripts.pory"
+	showobjectat 13, MAP_BALDESIAN_FOREST
+# 192 "data/maps/BaldesianForest/scripts.pory"
 	waitse
 BaldesianForest_EventScript_Celebi_1:
-# 192 "data/maps/BaldesianForest/scripts.pory"
-	delay 16
-# 193 "data/maps/BaldesianForest/scripts.pory"
-	playse SE_PIN
 # 194 "data/maps/BaldesianForest/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	delay 16
 # 195 "data/maps/BaldesianForest/scripts.pory"
-	waitmovement 0
+	playse SE_PIN
 # 196 "data/maps/BaldesianForest/scripts.pory"
-	waitse
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 # 197 "data/maps/BaldesianForest/scripts.pory"
-	playbgm MUS_SEALED_CHAMBER, FALSE
+	waitmovement 0
 # 198 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_Celebi_Text_2, MSGBOX_AUTOCLOSE
+	waitse
 # 199 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
+	playbgm MUS_SEALED_CHAMBER, FALSE
 # 200 "data/maps/BaldesianForest/scripts.pory"
+	msgbox BaldesianForest_EventScript_Celebi_Text_2, MSGBOX_AUTOCLOSE
+# 201 "data/maps/BaldesianForest/scripts.pory"
+	waitmessage
+# 202 "data/maps/BaldesianForest/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq BaldesianForest_EventScript_Celebi_6
-# 204 "data/maps/BaldesianForest/scripts.pory"
-	applymovement 13, BaldesianForest_Movement_JirachiApproachesPlayer
-BaldesianForest_EventScript_Celebi_5:
 # 206 "data/maps/BaldesianForest/scripts.pory"
-	waitmovement 0
-# 207 "data/maps/BaldesianForest/scripts.pory"
-	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
+	applymovement 13, BaldesianForest_Movement_CelebiApproachesPlayer
+BaldesianForest_EventScript_Celebi_5:
 # 208 "data/maps/BaldesianForest/scripts.pory"
-	waitmoncry
+	waitmovement 0
 # 209 "data/maps/BaldesianForest/scripts.pory"
-	givemon SPECIES_CELEBI, 90
+	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
 # 210 "data/maps/BaldesianForest/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CELEBI
+	waitmoncry
 # 211 "data/maps/BaldesianForest/scripts.pory"
+	givemon SPECIES_CELEBI, 90
+# 212 "data/maps/BaldesianForest/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CELEBI
+# 213 "data/maps/BaldesianForest/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq BaldesianForest_EventScript_Celebi_10
-# 222 "data/maps/BaldesianForest/scripts.pory"
+# 224 "data/maps/BaldesianForest/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq BaldesianForest_EventScript_Celebi_11
-# 234 "data/maps/BaldesianForest/scripts.pory"
+# 236 "data/maps/BaldesianForest/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 BaldesianForest_EventScript_Celebi_9:
-# 236 "data/maps/BaldesianForest/scripts.pory"
-	callnative UpdateFollowingPokemon
-# 237 "data/maps/BaldesianForest/scripts.pory"
-	fadedefaultbgm
 # 238 "data/maps/BaldesianForest/scripts.pory"
+	callnative UpdateFollowingPokemon
+# 239 "data/maps/BaldesianForest/scripts.pory"
+	fadedefaultbgm
+# 240 "data/maps/BaldesianForest/scripts.pory"
 	releaseall
 	end
 
 BaldesianForest_EventScript_Celebi_2:
-# 167 "data/maps/BaldesianForest/scripts.pory"
-	playse SE_M_PETAL_DANCE
-# 168 "data/maps/BaldesianForest/scripts.pory"
-	showobjectat 17, MAP_BALDESIAN_FOREST
 # 169 "data/maps/BaldesianForest/scripts.pory"
-	delay 8
+	playse SE_M_PETAL_DANCE
 # 170 "data/maps/BaldesianForest/scripts.pory"
-	hideobjectat 17, MAP_BALDESIAN_FOREST
+	showobjectat 17, MAP_BALDESIAN_FOREST
 # 171 "data/maps/BaldesianForest/scripts.pory"
 	delay 8
 # 172 "data/maps/BaldesianForest/scripts.pory"
-	showobjectat 17, MAP_BALDESIAN_FOREST
-# 173 "data/maps/BaldesianForest/scripts.pory"
-	delay 16
-# 174 "data/maps/BaldesianForest/scripts.pory"
 	hideobjectat 17, MAP_BALDESIAN_FOREST
-# 175 "data/maps/BaldesianForest/scripts.pory"
-	delay 24
-# 176 "data/maps/BaldesianForest/scripts.pory"
+# 173 "data/maps/BaldesianForest/scripts.pory"
+	delay 8
+# 174 "data/maps/BaldesianForest/scripts.pory"
 	showobjectat 17, MAP_BALDESIAN_FOREST
+# 175 "data/maps/BaldesianForest/scripts.pory"
+	delay 16
+# 176 "data/maps/BaldesianForest/scripts.pory"
+	hideobjectat 17, MAP_BALDESIAN_FOREST
 # 177 "data/maps/BaldesianForest/scripts.pory"
+	delay 24
+# 178 "data/maps/BaldesianForest/scripts.pory"
+	showobjectat 17, MAP_BALDESIAN_FOREST
+# 179 "data/maps/BaldesianForest/scripts.pory"
 	waitse
 	goto BaldesianForest_EventScript_Celebi_1
 
 BaldesianForest_EventScript_Celebi_6:
-# 201 "data/maps/BaldesianForest/scripts.pory"
-	applymovement 17, BaldesianForest_Movement_JirachiApproachesPlayer
+# 203 "data/maps/BaldesianForest/scripts.pory"
+	applymovement 17, BaldesianForest_Movement_CelebiApproachesPlayer
 	goto BaldesianForest_EventScript_Celebi_5
 
 BaldesianForest_EventScript_Celebi_10:
-# 212 "data/maps/BaldesianForest/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 213 "data/maps/BaldesianForest/scripts.pory"
-	removeobject 13
 # 214 "data/maps/BaldesianForest/scripts.pory"
-	removeobject 17
+	fadescreenswapbuffers FADE_TO_BLACK
 # 215 "data/maps/BaldesianForest/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	removeobject 13
 # 216 "data/maps/BaldesianForest/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	removeobject 17
 # 217 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_Celebi_Text_3, MSGBOX_DEFAULT
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 218 "data/maps/BaldesianForest/scripts.pory"
-	waitfanfare
+	playfanfare MUS_OBTAIN_ITEM
 # 219 "data/maps/BaldesianForest/scripts.pory"
-	setflag FLAG_RECEIVED_CELEBI
+	msgbox BaldesianForest_EventScript_Celebi_Text_3, MSGBOX_DEFAULT
 # 220 "data/maps/BaldesianForest/scripts.pory"
+	waitfanfare
+# 221 "data/maps/BaldesianForest/scripts.pory"
+	setflag FLAG_RECEIVED_CELEBI
+# 222 "data/maps/BaldesianForest/scripts.pory"
 	setvar VAR_BALDESIA_FOREST_STATE, 2
 	goto BaldesianForest_EventScript_Celebi_9
 
 BaldesianForest_EventScript_Celebi_11:
-# 223 "data/maps/BaldesianForest/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 224 "data/maps/BaldesianForest/scripts.pory"
-	removeobject 13
 # 225 "data/maps/BaldesianForest/scripts.pory"
-	removeobject 17
+	fadescreenswapbuffers FADE_TO_BLACK
 # 226 "data/maps/BaldesianForest/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	removeobject 13
 # 227 "data/maps/BaldesianForest/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	removeobject 17
 # 228 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_Celebi_Text_4, MSGBOX_DEFAULT
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 229 "data/maps/BaldesianForest/scripts.pory"
-	waitfanfare
+	playfanfare MUS_OBTAIN_ITEM
 # 230 "data/maps/BaldesianForest/scripts.pory"
-	setflag FLAG_RECEIVED_CELEBI
+	msgbox BaldesianForest_EventScript_Celebi_Text_4, MSGBOX_DEFAULT
 # 231 "data/maps/BaldesianForest/scripts.pory"
+	waitfanfare
+# 232 "data/maps/BaldesianForest/scripts.pory"
+	setflag FLAG_RECEIVED_CELEBI
+# 233 "data/maps/BaldesianForest/scripts.pory"
 	setvar VAR_BALDESIA_FOREST_STATE, 2
 	goto BaldesianForest_EventScript_Celebi_9
 
 
 BaldesianForest_EventScript_NoCelebiSummon::
-# 243 "data/maps/BaldesianForest/scripts.pory"
-	closemessage
-# 244 "data/maps/BaldesianForest/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 # 245 "data/maps/BaldesianForest/scripts.pory"
-	waitmovement 0
+	closemessage
 # 246 "data/maps/BaldesianForest/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 247 "data/maps/BaldesianForest/scripts.pory"
+	waitmovement 0
+# 248 "data/maps/BaldesianForest/scripts.pory"
 	releaseall
 	end
 
 
 BaldesianForest_EventScript_OldMan::
-# 251 "data/maps/BaldesianForest/scripts.pory"
-	lock
-# 252 "data/maps/BaldesianForest/scripts.pory"
-	faceplayer
 # 253 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_OldMan_Text_0, MSGBOX_AUTOCLOSE
+	lock
+# 254 "data/maps/BaldesianForest/scripts.pory"
+	faceplayer
 # 255 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
-# 256 "data/maps/BaldesianForest/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	msgbox BaldesianForest_EventScript_OldMan_Text_0, MSGBOX_AUTOCLOSE
 # 257 "data/maps/BaldesianForest/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 258 "data/maps/BaldesianForest/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 259 "data/maps/BaldesianForest/scripts.pory"
+	waitmovement 0
+# 260 "data/maps/BaldesianForest/scripts.pory"
 	release
 	end
 
 
 BaldesianForest_EventScript_OldManDojo::
-# 263 "data/maps/BaldesianForest/scripts.pory"
-	lock
-# 264 "data/maps/BaldesianForest/scripts.pory"
-	faceplayer
 # 265 "data/maps/BaldesianForest/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TEACUP, BaldesianForest_EventScript_OldManDojoGiveTeaCup
+	lock
 # 266 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_OldManDojo_Text_0, MSGBOX_AUTOCLOSE
+	faceplayer
+# 267 "data/maps/BaldesianForest/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TEACUP, BaldesianForest_EventScript_OldManDojoGiveTeaCup
 # 268 "data/maps/BaldesianForest/scripts.pory"
+	msgbox BaldesianForest_EventScript_OldManDojo_Text_0, MSGBOX_AUTOCLOSE
+# 270 "data/maps/BaldesianForest/scripts.pory"
 	waitmessage
-# 269 "data/maps/BaldesianForest/scripts.pory"
+# 271 "data/maps/BaldesianForest/scripts.pory"
 	release
 	end
 
 
 BaldesianForest_EventScript_Expert_F_RevealGlass::
-# 274 "data/maps/BaldesianForest/scripts.pory"
-	lock
-# 275 "data/maps/BaldesianForest/scripts.pory"
-	faceplayer
 # 276 "data/maps/BaldesianForest/scripts.pory"
-	goto_if_unset FLAG_SYS_DEFEATED_BRUNO, BaldesianForest_EventScript_Expert_F_DefeatBruno
+	lock
 # 277 "data/maps/BaldesianForest/scripts.pory"
-	goto_if_set FLAG_RECEIVED_REVEAL_GLASS, BaldesianForest_EventScript_Expert_F_ExplainRevealGlass
+	faceplayer
 # 278 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_Expert_F_RevealGlass_Text_0, MSGBOX_DEFAULT
+	goto_if_unset FLAG_SYS_DEFEATED_BRUNO, BaldesianForest_EventScript_Expert_F_DefeatBruno
+# 279 "data/maps/BaldesianForest/scripts.pory"
+	goto_if_set FLAG_RECEIVED_REVEAL_GLASS, BaldesianForest_EventScript_Expert_F_ExplainRevealGlass
 # 280 "data/maps/BaldesianForest/scripts.pory"
-	checkitemspace ITEM_REVEAL_GLASS
-# 281 "data/maps/BaldesianForest/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	msgbox BaldesianForest_EventScript_Expert_F_RevealGlass_Text_0, MSGBOX_DEFAULT
 # 282 "data/maps/BaldesianForest/scripts.pory"
-	giveitem ITEM_REVEAL_GLASS
+	checkitemspace ITEM_REVEAL_GLASS
 # 283 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 284 "data/maps/BaldesianForest/scripts.pory"
-	setflag FLAG_RECEIVED_REVEAL_GLASS
+	giveitem ITEM_REVEAL_GLASS
 # 285 "data/maps/BaldesianForest/scripts.pory"
-	goto BaldesianForest_EventScript_Expert_F_ExplainRevealGlass
+	waitmessage
 # 286 "data/maps/BaldesianForest/scripts.pory"
+	setflag FLAG_RECEIVED_REVEAL_GLASS
+# 287 "data/maps/BaldesianForest/scripts.pory"
+	goto BaldesianForest_EventScript_Expert_F_ExplainRevealGlass
+# 288 "data/maps/BaldesianForest/scripts.pory"
 	release
 	end
 
 
 BaldesianForest_EventScript_Expert_F_DefeatBruno::
-# 291 "data/maps/BaldesianForest/scripts.pory"
+# 293 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_Expert_F_DefeatBruno_Text_0, MSGBOX_NPC
 	end
 
 
 BaldesianForest_EventScript_Expert_F_ExplainRevealGlass::
-# 299 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_Expert_F_ExplainRevealGlass_Text_0, MSGBOX_AUTOCLOSE
 # 301 "data/maps/BaldesianForest/scripts.pory"
+	msgbox BaldesianForest_EventScript_Expert_F_ExplainRevealGlass_Text_0, MSGBOX_AUTOCLOSE
+# 303 "data/maps/BaldesianForest/scripts.pory"
 	release
 	end
 
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup::
-# 306 "data/maps/BaldesianForest/scripts.pory"
-	lock
-# 307 "data/maps/BaldesianForest/scripts.pory"
-	faceplayer
 # 308 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_0, MSGBOX_YESNO
+	lock
+# 309 "data/maps/BaldesianForest/scripts.pory"
+	faceplayer
 # 310 "data/maps/BaldesianForest/scripts.pory"
+	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_0, MSGBOX_YESNO
+# 312 "data/maps/BaldesianForest/scripts.pory"
 	waitmessage
-# 311 "data/maps/BaldesianForest/scripts.pory"
+# 313 "data/maps/BaldesianForest/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BaldesianForest_EventScript_OldManDojoGiveTeaCup_2
-# 337 "data/maps/BaldesianForest/scripts.pory"
+# 339 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_6, MSGBOX_AUTOCLOSE
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_1:
-# 340 "data/maps/BaldesianForest/scripts.pory"
+# 342 "data/maps/BaldesianForest/scripts.pory"
 	waitmessage
-# 341 "data/maps/BaldesianForest/scripts.pory"
+# 343 "data/maps/BaldesianForest/scripts.pory"
 	release
 	end
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_2:
-# 312 "data/maps/BaldesianForest/scripts.pory"
+# 314 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_1, MSGBOX_DEFAULT
-# 316 "data/maps/BaldesianForest/scripts.pory"
+# 318 "data/maps/BaldesianForest/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_2, BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_3
-# 317 "data/maps/BaldesianForest/scripts.pory"
+# 319 "data/maps/BaldesianForest/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq BaldesianForest_EventScript_OldManDojoGiveTeaCup_6
-# 326 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_5, MSGBOX_DEFAULT
-# 327 "data/maps/BaldesianForest/scripts.pory"
-	checkitemspace ITEM_UNREMARKABLE_TEACUP
 # 328 "data/maps/BaldesianForest/scripts.pory"
-	goto_if_ne VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull
+	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_5, MSGBOX_DEFAULT
 # 329 "data/maps/BaldesianForest/scripts.pory"
-	giveitem ITEM_UNREMARKABLE_TEACUP
+	checkitemspace ITEM_UNREMARKABLE_TEACUP
 # 330 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
+	goto_if_ne VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull
 # 331 "data/maps/BaldesianForest/scripts.pory"
+	giveitem ITEM_UNREMARKABLE_TEACUP
+# 332 "data/maps/BaldesianForest/scripts.pory"
+	waitmessage
+# 333 "data/maps/BaldesianForest/scripts.pory"
 	setflag FLAG_RECEIVED_TEACUP
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_5:
-# 333 "data/maps/BaldesianForest/scripts.pory"
+# 335 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_OldManDojo_Text_0, MSGBOX_AUTOCLOSE
 	goto BaldesianForest_EventScript_OldManDojoGiveTeaCup_1
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_6:
-# 318 "data/maps/BaldesianForest/scripts.pory"
-	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_4, MSGBOX_DEFAULT
-# 319 "data/maps/BaldesianForest/scripts.pory"
-	checkitemspace ITEM_MASTERPIECE_TEACUP
 # 320 "data/maps/BaldesianForest/scripts.pory"
-	goto_if_ne VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull
+	msgbox BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_4, MSGBOX_DEFAULT
 # 321 "data/maps/BaldesianForest/scripts.pory"
-	giveitem ITEM_MASTERPIECE_TEACUP
+	checkitemspace ITEM_MASTERPIECE_TEACUP
 # 322 "data/maps/BaldesianForest/scripts.pory"
-	waitmessage
+	goto_if_ne VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull
 # 323 "data/maps/BaldesianForest/scripts.pory"
+	giveitem ITEM_MASTERPIECE_TEACUP
+# 324 "data/maps/BaldesianForest/scripts.pory"
+	waitmessage
+# 325 "data/maps/BaldesianForest/scripts.pory"
 	setflag FLAG_RECEIVED_TEACUP
 	goto BaldesianForest_EventScript_OldManDojoGiveTeaCup_5
 
 
 BaldesianForest_EventScript_KimonoGirl::
-# 346 "data/maps/BaldesianForest/scripts.pory"
+# 348 "data/maps/BaldesianForest/scripts.pory"
 	msgbox BaldesianForest_EventScript_KimonoGirl_Text_0, MSGBOX_NPC
 	end
 
 
-# 353 "data/maps/BaldesianForest/scripts.pory"
-BaldesianForest_Movement_JirachiApproachesPlayer:
-# 354 "data/maps/BaldesianForest/scripts.pory"
-	levitate
 # 355 "data/maps/BaldesianForest/scripts.pory"
-	walk_down
-# 355 "data/maps/BaldesianForest/scripts.pory"
-	walk_down
-# 355 "data/maps/BaldesianForest/scripts.pory"
-	walk_down
+BaldesianForest_Movement_CelebiApproachesPlayer:
 # 356 "data/maps/BaldesianForest/scripts.pory"
+	levitate
+# 357 "data/maps/BaldesianForest/scripts.pory"
+	walk_down
+# 357 "data/maps/BaldesianForest/scripts.pory"
+	walk_down
+# 357 "data/maps/BaldesianForest/scripts.pory"
+	walk_down
+# 358 "data/maps/BaldesianForest/scripts.pory"
 	stop_levitate
 	step_end
 
@@ -655,69 +659,69 @@ BaldesianForest_EventScript_Celebi_Text_0:
 	.string "You sense a mystical energy…\n Try playing the POKé FLUTE?$"
 
 BaldesianForest_EventScript_Celebi_Text_1:
-# 161 "data/maps/BaldesianForest/scripts.pory"
+# 163 "data/maps/BaldesianForest/scripts.pory"
 	.string "{PLAYER} begins playing the POKé FLUTE…$"
 
 BaldesianForest_EventScript_Celebi_Text_2:
-# 198 "data/maps/BaldesianForest/scripts.pory"
+# 200 "data/maps/BaldesianForest/scripts.pory"
 	.string "CELEBI was drawn to the sound!$"
 
 BaldesianForest_EventScript_Celebi_Text_3:
-# 217 "data/maps/BaldesianForest/scripts.pory"
+# 219 "data/maps/BaldesianForest/scripts.pory"
 	.string "CELEBI joined the party!$"
 
 BaldesianForest_EventScript_Celebi_Text_4:
-# 228 "data/maps/BaldesianForest/scripts.pory"
+# 230 "data/maps/BaldesianForest/scripts.pory"
 	.string "CELEBI was sent to the PC!$"
 
 BaldesianForest_EventScript_OldMan_Text_0:
-# 253 "data/maps/BaldesianForest/scripts.pory"
+# 255 "data/maps/BaldesianForest/scripts.pory"
 	.string "Huff… Huff…\n I might be old, but I still got it!$"
 
 BaldesianForest_EventScript_OldManDojo_Text_0:
-# 266 "data/maps/BaldesianForest/scripts.pory"
+# 268 "data/maps/BaldesianForest/scripts.pory"
 	.string "Gahaha!\n Nothing like a good wager!$"
 
 BaldesianForest_EventScript_Expert_F_RevealGlass_Text_0:
-# 278 "data/maps/BaldesianForest/scripts.pory"
+# 280 "data/maps/BaldesianForest/scripts.pory"
 	.string "Wow! You actually did it?\n As promised, you can have this.$"
 
 BaldesianForest_EventScript_Expert_F_DefeatBruno_Text_0:
-# 291 "data/maps/BaldesianForest/scripts.pory"
+# 293 "data/maps/BaldesianForest/scripts.pory"
 	.string "Hm…\n You seem strong.\p Tell you what: beat BRUNO\n and I'll give you a prize.$"
 
 BaldesianForest_EventScript_Expert_F_ExplainRevealGlass_Text_0:
-# 299 "data/maps/BaldesianForest/scripts.pory"
+# 301 "data/maps/BaldesianForest/scripts.pory"
 	.string "That artifact is said to reveal\n the true form of the forces of nature.$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_0:
-# 308 "data/maps/BaldesianForest/scripts.pory"
+# 310 "data/maps/BaldesianForest/scripts.pory"
 	.string "Hey!\n You like gambling?$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_1:
-# 312 "data/maps/BaldesianForest/scripts.pory"
+# 314 "data/maps/BaldesianForest/scripts.pory"
 	.string "Gahaha!\n All right!\p I'm holding something in my hands.\n Left or right?$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_2:
-# 316 "data/maps/BaldesianForest/scripts.pory"
+# 318 "data/maps/BaldesianForest/scripts.pory"
 	.string "Left!$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_3:
-# 316 "data/maps/BaldesianForest/scripts.pory"
+# 318 "data/maps/BaldesianForest/scripts.pory"
 	.string "Right!$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_4:
-# 318 "data/maps/BaldesianForest/scripts.pory"
+# 320 "data/maps/BaldesianForest/scripts.pory"
 	.string "Gahaha! You win!$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_5:
-# 326 "data/maps/BaldesianForest/scripts.pory"
+# 328 "data/maps/BaldesianForest/scripts.pory"
 	.string "Gahaha!\nBetter luck next time!$"
 
 BaldesianForest_EventScript_OldManDojoGiveTeaCup_Text_6:
-# 337 "data/maps/BaldesianForest/scripts.pory"
+# 339 "data/maps/BaldesianForest/scripts.pory"
 	.string "… Oh.\n Nevermind then.$"
 
 BaldesianForest_EventScript_KimonoGirl_Text_0:
-# 346 "data/maps/BaldesianForest/scripts.pory"
+# 348 "data/maps/BaldesianForest/scripts.pory"
 	.string "My grandpa used to train here\n when he was younger.\p He was one of the former MASTER's\n top disciples.$"

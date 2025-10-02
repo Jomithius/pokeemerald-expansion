@@ -64,14 +64,14 @@ script Route139_EventScript_Satoshi{
 script Route139_EventScript_Yoshio{
     trainerbattle_single(TRAINER_YOSHIO, "Too slow!", "T-Too slow…")
     msgbox("Huh?\p
-        You could see my head sticking out\n
+        You can see my head sticking out\n
         from behind the rock?", MSGBOX_NPC)
 	end
 }
 
 script Route139_EventScript_Katashi{
     trainerbattle_single(TRAINER_KATASHI, "A NINJA must be calm, swift,\nand decisive.", "Impressive.")
-    msgbox("LADY ASAKURA was able to become\n
+    msgbox("LADY MOMO was able to become\n
         a full-fledged NINJA at a very\l
         young age.\p
         She's an inspiration to us all.", MSGBOX_NPC)
@@ -85,7 +85,7 @@ script Route139_EventScript_Naoki{
         Is that really true?", MSGBOX_NPC)
     }
     else{
-        msgbox("I heard LADY ASAKURA returned for\n
+        msgbox("I heard LADY MOMO returned for\n
             the ritual.\p
             I hope she's in time.\n
             She has a habit of procrastinating.", MSGBOX_NPC)
@@ -436,5 +436,3 @@ movement Route139_Movement_MomoToPlayerTrigger{
 movement Route139_Movement_MomoToPlayerRightTrigger{
     walk_left * 8
 }
-
-

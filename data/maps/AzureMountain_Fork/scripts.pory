@@ -3,12 +3,12 @@ mapscripts AzureMountain_Fork_MapScripts {}
 script AzureMountain_Fork_EventScript_DracoMeteorTutor{
     lock
 	faceplayer
-	goto_if_not_defeated(TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerWiley)
+	goto_if_not_defeated(TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerDray)
     goto(AzureMountain_Fork_EventScript_TeachDracoMeteor)
 	end
 }
 
-script AzureMountain_Fork_EventScript_TrainerWiley{
+script AzureMountain_Fork_EventScript_TrainerDray{
     playbgm(MUS_ENCOUNTER_INTENSE, FALSE)
     msgbox("Hm…\p
         To have climbed such a treacherous\n

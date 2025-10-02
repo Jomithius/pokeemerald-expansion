@@ -306,7 +306,6 @@ script RustboroCity_Gym_EventScript_GiveChillingWater {
 	setrespawn(HEAL_LOCATION_RUSTBORO_CITY) // to avoid player missing rat cave trigger by teleporting/whiting out back to petalburg
     release
     end
-
 }
 
 text RustboroCity_Gym_Text_ExplainChillingWater{

@@ -313,11 +313,11 @@ Route135_EventScript_FirstMoo::
 # 234 "data/maps/Route135/scripts.pory"
 	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
 # 235 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_FirstMoo_Text_1, MSGBOX_AUTOCLOSE
+	msgbox Route135_EventScript_FirstMoo_Text_1, MSGBOX_DEFAULT
 # 236 "data/maps/Route135/scripts.pory"
 	waitmoncry
 # 237 "data/maps/Route135/scripts.pory"
-	waitmessage
+	closemessage
 # 238 "data/maps/Route135/scripts.pory"
 	applymovement 26, Common_Movement_WalkInPlaceDown
 # 239 "data/maps/Route135/scripts.pory"
@@ -507,7 +507,7 @@ Route135_EventScript_Whitney_Text_0:
 
 Route135_EventScript_WhitneyBattle_Text_0:
 # 96 "data/maps/Route135/scripts.pory"
-	.string "Gosh, it's so boring out here!\n Why did we have to visit our family\l out in HOENN's countryside…$"
+	.string "Gosh, it's so boring out here!\p Why did we have to visit our family\n out in HOENN's countryside…$"
 
 Route135_EventScript_WhitneyBattle_Text_1:
 # 106 "data/maps/Route135/scripts.pory"
@@ -591,12 +591,12 @@ Route135_EventScript_FirstMoo_Text_2:
 
 Route135_EventScript_Man4DidYouKnow_Text_0:
 # 254 "data/maps/Route135/scripts.pory"
-	.string "Did you know?\n Some TAUROS have different types.$"
+	.string "Did you know?\n Some TAUROS are different types.$"
 
 Route135_EventScript_Gentleman_Text_0:
 # 260 "data/maps/Route135/scripts.pory"
-	.string "That PROF. at the lab…\n He's researching some gotdang strange\l things, I'll tell you what.$"
+	.string "That PROF. at the lab…\p He's researching some gotdang strange\n things, I'll tell you what.$"
 
 Route135_EventScript_Sign_Text_0:
 # 321 "data/maps/Route135/scripts.pory"
-	.string "LUSH ACREAGE\p “The land of resplendent wonders!”$"
+	.string "LUSH ACREAGE\p “The ranch of resplendent wonders!”$"

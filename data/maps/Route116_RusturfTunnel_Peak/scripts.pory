@@ -57,7 +57,7 @@ script RibombeeFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(4)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The RIBOMBEE disappeared…")
+    msgbox("The RIBOMBEE disappeared…", MSGBOX_DEFAULT)
 	return
 }
 

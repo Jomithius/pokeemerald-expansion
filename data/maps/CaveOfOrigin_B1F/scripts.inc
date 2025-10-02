@@ -355,17 +355,17 @@ CaveOfOrigin_B1F_EventScript_Arceus::
 # 174 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_2
-# 174 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 180 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_2
-# 180 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_3
+# 185 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_3
-# 180 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_4
+# 185 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
-	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_3
+	goto_if_eq CaveOfOrigin_B1F_EventScript_Arceus_4
 CaveOfOrigin_B1F_EventScript_Arceus_1:
-# 183 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+# 188 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	release
 	end
 
@@ -382,6 +382,15 @@ CaveOfOrigin_B1F_EventScript_Arceus_2:
 
 CaveOfOrigin_B1F_EventScript_Arceus_3:
 # 181 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 182 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 183 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+	goto CaveOfOrigin_B1F_EventScript_Arceus_1
+
+CaveOfOrigin_B1F_EventScript_Arceus_4:
+# 186 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	goto Common_EventScript_NopReturn
 	goto CaveOfOrigin_B1F_EventScript_Arceus_1
 

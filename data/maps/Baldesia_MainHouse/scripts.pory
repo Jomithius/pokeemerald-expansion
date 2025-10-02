@@ -132,6 +132,7 @@ script Baldesia_MainHouse_EventScript_GoToChief{
         removeobject(19)
         removeobject(20)
         removeobject(21)
+        waitse
         setvar(VAR_MOMO_ARIA_STATE, 4)
         warpsilent(MAP_BALDESIA_MAIN_HOUSE, 13, 7)
     }
@@ -153,6 +154,7 @@ script Baldesia_MainHouse_EventScript_GoToChief{
         removeobject(22)
         removeobject(23)
         removeobject(24)
+        waitse
         setvar(VAR_MOMO_ARIA_STATE, 4)
         warpsilent(MAP_BALDESIA_MAIN_HOUSE, 13, 7)
     }
@@ -448,7 +450,7 @@ script Baldesia_MainHouse_EventScript_LohanThanks{
     addvar(VAR_FINAL_REMATCH_STATE, 1)
     setflag(FLAG_SYS_BENNIS_FINAL_REMATCH)
     setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
-    setflag(FLAG_COMPLETED_BALDESIA) // for final level cap
+    setflag(FLAG_COMPLETED_BALDESIA) // for final level cap, functionally unused
     releaseall
     end
 }

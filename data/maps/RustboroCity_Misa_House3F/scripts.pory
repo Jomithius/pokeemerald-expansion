@@ -11,13 +11,16 @@ script RustboroCity_Misa_House3F_TV{
 
 script RustboroCity_Misa_House3F_Emo{
     lock
-    if(flag(FLAG_TEMP_5) == TRUE){
+    if(!flag(FLAG_TEMP_5)){
         msgbox("AUDIO?!\n
-        WHERE'S THE AUDIO?",MSGBOX_SIGN)
-    }
-    else{
-        applymovement(1, MisaHouse3F_FacePlayer)
-        waitmovement(1)
+        WHERE'S THE AUDIO?", MSGBOX_AUTOCLOSE)
+        waitmessage
+        delay(16)
+        playse(SE_PIN)
+        applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        waitse
+        faceplayer
         msgbox("{PLAYER}…\n
             We meet again.\p
             Did you challenge the GYM LEADER yet?\n
@@ -27,6 +30,16 @@ script RustboroCity_Misa_House3F_Emo{
         applymovement(1, MisaHouse3F_FaceUp)
         waitmovement(1)
         setflag(FLAG_TEMP_5)
+    }
+    else{
+        applymovement(1, MisaHouse3F_FacePlayer)
+        waitmovement(1)
+        msgbox("Did you challenge the GYM LEADER yet?\n
+            I already did.\p
+            I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(1, MisaHouse3F_FaceUp)
+        waitmovement(1)
     }
     release
     end
@@ -115,7 +128,7 @@ script RustboroCity_Misa_House3F_James{
             I'm going to go meet him soon.", MSGBOX_AUTOCLOSE)
     }
     else{
-        msgbox("{PLAYER}?\n
+        msgbox("{PLAYER}?!\n
             What are you doing here?\p
             I'm glad you came to check on me,\n
             but I'm fine.\p
@@ -123,7 +136,7 @@ script RustboroCity_Misa_House3F_James{
             We're gonna get even stronger.\p
             So don't worry about me.\n
             Go take on the ELITE FOUR.", MSGBOX_AUTOCLOSE)
-        }
+    }
     waitmessage
     applymovement(3, MisaHouse3F_FaceUp)
     waitmovement(3)

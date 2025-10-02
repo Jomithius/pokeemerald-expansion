@@ -1399,7 +1399,7 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
 `
-script SlateportCity_EventScript_Mae {
+script SlateportCity_EventScript_Mae{
     lock
     msgbox(Mae1, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -1410,7 +1410,7 @@ script SlateportCity_EventScript_Mae {
     waitmovement(36)
     msgbox(Mae2, MSGBOX_AUTOCLOSE)
     waitmessage
-    call(SlateportCity_EventScript_MaeBattle)
+    trainerbattle_no_intro(TRAINER_MAE_1, Mae_Outro)
     playse(SE_PIN)
     applymovement(20, MaeSurprised)
     waitmovement(20)
@@ -1444,6 +1444,7 @@ script SlateportCity_EventScript_Mae {
     playse(SE_BIKE_HOP)
     applymovement(OBJ_EVENT_ID_PLAYER, SlateportConfused)
     waitmovement(0)
+	waitse
     applymovement(20, SlateportMartEmployeeMove2)
     waitmovement(20)
     msgbox(SlateportMartEmployee2, MSGBOX_AUTOCLOSE)
@@ -1456,17 +1457,11 @@ script SlateportCity_EventScript_Mae {
 	end
 }
 
-script SlateportCity_EventScript_MaeBattle{
-    trainerbattle_no_intro(TRAINER_MAE_1, Mae_Outro)
-    lock
-    return
-}
-
 text Mae1{"Ooh yes! Ten rings?!\n
 This slayyys!"}
 
 text Mae2{"Huh? Who are you? Why are you\n
-getting in the way of my shopping?\l
+getting in the way of my shopping?\p
 I'm a diva and I deserve this!"}
 
 text Mae_Outro{"I'm a diva and I deserve this…"}
@@ -1475,7 +1470,7 @@ text SlateportMartEmployee1{"MART EMPLOYEE: Excuse me!\n
 You can't battle here!\l
 I have to ask you to leave!"}
 
-text Mae3 {"MAE: Okay, whatever.\l
+text Mae3 {"MAE: Okay, whatever.\n
 I'll go shop somewhere else!"}
 
 text SlateportMartEmployee2 {"MART EMPLOYEE: Man, I swear I don't\n 
@@ -1544,7 +1539,7 @@ script SlateportCity_EventScript_Psyduck {
     playse(SE_BIKE_HOP)
     applymovement(VAR_LAST_TALKED, SlateportConfused)
     waitmovement(VAR_LAST_TALKED)
-    delay(10)
+    waitse
     playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
 	waitmoncry
     release

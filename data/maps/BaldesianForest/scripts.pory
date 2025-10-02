@@ -158,6 +158,8 @@ script BaldesianForest_EventScript_Celebi{
     delay(20)
     fadenewbgm(MUS_NONE)
     delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
     msgbox("{PLAYER} begins playing the POKé FLUTE…", MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_RG_JIGGLYPUFF, FALSE)
@@ -198,10 +200,10 @@ script BaldesianForest_EventScript_Celebi{
     msgbox("CELEBI was drawn to the sound!", MSGBOX_AUTOCLOSE)
     waitmessage
     if(var(VAR_RESULT) == TRUE){
-        applymovement(17, BaldesianForest_Movement_JirachiApproachesPlayer)
+        applymovement(17, BaldesianForest_Movement_CelebiApproachesPlayer)
     }
     else{
-       applymovement(13, BaldesianForest_Movement_JirachiApproachesPlayer) 
+       applymovement(13, BaldesianForest_Movement_CelebiApproachesPlayer) 
     }
     waitmovement(0)
     playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
@@ -314,22 +316,22 @@ script BaldesianForest_EventScript_OldManDojoGiveTeaCup{
             I'm holding something in my hands.\n
             Left or right?", MSGBOX_DEFAULT)
         dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Left!", "Right!")
-            if(var(VAR_RESULT) == 0){
-                msgbox("Gahaha! You win!", MSGBOX_DEFAULT)
-                checkitemspace(ITEM_MASTERPIECE_TEACUP)
-                goto_if_ne(VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull)
-                giveitem(ITEM_MASTERPIECE_TEACUP)
-                waitmessage
-                setflag(FLAG_RECEIVED_TEACUP)
-            }
-            else{
-                msgbox("Gahaha!\nBetter luck next time!", MSGBOX_DEFAULT)
-                checkitemspace(ITEM_UNREMARKABLE_TEACUP)
-                goto_if_ne(VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull)
-                giveitem(ITEM_UNREMARKABLE_TEACUP)
-                waitmessage
-                setflag(FLAG_RECEIVED_TEACUP)
-            }
+        if(var(VAR_RESULT) == 0){
+            msgbox("Gahaha! You win!", MSGBOX_DEFAULT)
+            checkitemspace(ITEM_MASTERPIECE_TEACUP)
+            goto_if_ne(VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull)
+            giveitem(ITEM_MASTERPIECE_TEACUP)
+            waitmessage
+            setflag(FLAG_RECEIVED_TEACUP)
+        }
+        else{
+            msgbox("Gahaha!\nBetter luck next time!", MSGBOX_DEFAULT)
+            checkitemspace(ITEM_UNREMARKABLE_TEACUP)
+            goto_if_ne(VAR_RESULT, TRUE, Common_EventScript_ShowBagIsFull)
+            giveitem(ITEM_UNREMARKABLE_TEACUP)
+            waitmessage
+            setflag(FLAG_RECEIVED_TEACUP)
+        }
         msgbox("Gahaha!\n
             Nothing like a good wager!", MSGBOX_AUTOCLOSE)
     }
@@ -350,7 +352,7 @@ script BaldesianForest_EventScript_KimonoGirl{
     end
 }
 
-movement BaldesianForest_Movement_JirachiApproachesPlayer {
+movement BaldesianForest_Movement_CelebiApproachesPlayer {
     levitate
     walk_down * 3
     stop_levitate

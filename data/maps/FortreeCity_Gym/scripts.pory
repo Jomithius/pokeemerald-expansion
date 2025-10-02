@@ -163,7 +163,7 @@ FortreeCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
 	.string "FORTREE GYM LEADER MICKEY is\n"
-	.string "a master of dog-type POKéMON.\p"
+	.string "a master of DOG-type POKéMON.\p"
 	.string "“Dog isn't a type?”\n"
 	.string "Don't let him hear you say that!$"
 
@@ -173,7 +173,7 @@ FortreeCity_Gym_Text_GymGuidePostVictory:
 
 FortreeCity_Gym_Text_JaredIntro:
 	.string "Behold the elegant battle style of\n"
-	.string "DOG POKéMON!$"
+	.string "DOG-type POKéMON!$"
 
 FortreeCity_Gym_Text_JaredDefeat:
 	.string "What?\n"
@@ -228,11 +228,11 @@ FortreeCity_Gym_Text_HumbertoPostBattle:
 
 FortreeCity_Gym_Text_DariusIntro:
 	.string "You'd better know that there are all\n"
-	.string "sorts of dog-type POKéMON.\p"
+	.string "sorts of DOG-type POKéMON.\p"
 	.string "You do know that, right?$"
 
 FortreeCity_Gym_Text_DariusDefeat:
-	.string "What do you mean dog isn't a type?$"
+	.string "What do you mean there's no DOG-type?$"
 
 FortreeCity_Gym_Text_DariusPostBattle:
 	.string "Sure, you beat me all right.\n"
@@ -242,7 +242,7 @@ FortreeCity_Gym_Text_DariusPostBattle:
 FortreeCity_Gym_Text_WinonaIntro:
 	.string "Yo! I'm MICKEY, the LEADER of\n"
 	.string "the FORTREE POKéMON GYM.\p"
-	.string "I really like DOG POKéMON.\n"
+	.string "I really like DOG-type POKéMON.\n"
 	.string "They're a man's best friend.\p"
 	.string "Witness the strength\n"
 	.string "of me and my dogs!$"
@@ -276,7 +276,7 @@ FortreeCity_Gym_Text_RegisteredWinona:
 
 FortreeCity_Gym_Text_WinonaPostBattle:
 	.string "I lost to you, but I'll still\n"
-	.string "stay devoted to DOG POKéMON.$"
+	.string "stay devoted to DOG-type POKéMON.$"
 
 FortreeCity_Gym_Text_GymStatue:
 	.string "FORTREE CITY POKéMON GYM$"

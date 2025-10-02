@@ -1346,7 +1346,7 @@ MossdeepCity_EventScript_AriaSword::
 # 736 "data/maps/MossdeepCity/scripts.pory"
 	playse SE_M_DOUBLE_TEAM
 # 737 "data/maps/MossdeepCity/scripts.pory"
-	delay 20
+	waitse
 # 738 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_AriaSword_Text_0, MSGBOX_AUTOCLOSE
 # 741 "data/maps/MossdeepCity/scripts.pory"
@@ -1832,7 +1832,7 @@ MossdeepCity_EventScript_GiveTotodile_Text_0:
 
 MossdeepCity_EventScript_AriaSword_Text_0:
 # 738 "data/maps/MossdeepCity/scripts.pory"
-	.string "They're swinging a sword.\n It looks dangerous to approach them\l from the front.$"
+	.string "They're swinging a sword.\p It looks dangerous to approach them\n from the front.$"
 
 MossdeepCity_EventScript_RecoverTutor_Text_0:
 # 754 "data/maps/MossdeepCity/scripts.pory"
@@ -1840,7 +1840,7 @@ MossdeepCity_EventScript_RecoverTutor_Text_0:
 
 MoveTutor_EventScript_RecoverDeclined_Text_0:
 # 763 "data/maps/MossdeepCity/scripts.pory"
-	.string "Well, alright.\n Don't overexert yourself.$"
+	.string "Well, all right.\n Don't overexert yourself.$"
 
 MoveTutor_EventScript_RecoverTaught_Text_0:
 # 771 "data/maps/MossdeepCity/scripts.pory"

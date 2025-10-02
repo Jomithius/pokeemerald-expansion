@@ -456,20 +456,20 @@ script Route120_EventScript_Vikavolt{
     end
 }
  
-script VikavoltWon_Caught {
+script VikavoltWon_Caught{
     fadescreen(FADE_TO_BLACK)
     removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
 	return
 }
  
-script VikavoltFailed {
+script VikavoltFailed{
 	playmoncry(SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER)
 	delay(20)
 	fadescreen(FADE_TO_BLACK)
 	removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The VIKAVOLT disappeared…")
+    msgbox("The VIKAVOLT disappeared…", MSGBOX_DEFAULT)
 	return
 }
 

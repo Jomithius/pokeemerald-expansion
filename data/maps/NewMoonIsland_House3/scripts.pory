@@ -1,8 +1,10 @@
 mapscripts NewMoonIsland_House3_MapScripts {
-    MAP_SCRIPT_ON_LOAD{
-        setflag(FLAG_TEMP_E)
-        end
-    }
+    MAP_SCRIPT_ON_TRANSITION: NewMoonIsland_House3_OnTransition
+}
+
+script NewMoonIsland_House3_OnTransition{
+    setflag(FLAG_TEMP_E)
+    end
 }
 
 script NewMoonIsland_House3_EventScript_Momo{

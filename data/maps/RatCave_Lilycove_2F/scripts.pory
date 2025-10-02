@@ -3,7 +3,7 @@ mapscripts RatCave_Lilycove_2F_MapScripts {
 }
 
 script RatCave_Lilycove_2F_OnResume{
-    call_if_set(FLAG_TEMP_7, RatCave_Lilycove_2F_RemoveRaticate)
+    call_if_defeated(TRAINER_RATDUARDO_3, RatCave_Lilycove_2F_RemoveRaticate)
     end
 }
 
@@ -36,7 +36,6 @@ script RatCave_LilycoveCity_2F_EventScript_Ratduardo{
         applymovement(5, Common_Movement_WalkDown)
         waitmovement(5)
     }
-    setflag(FLAG_TEMP_7)
     trainerbattle_no_intro(TRAINER_RATDUARDO_3, RatCave_LilycoveCity_2F_Text_RatduardoDefeat)
     call(RatCave_LilycoveCity_2F_BattleOver)
     call(LilycoveCityRatCaveShake)

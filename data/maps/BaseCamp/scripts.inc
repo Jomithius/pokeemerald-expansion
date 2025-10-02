@@ -60,7 +60,7 @@ BaseCamp_PokemonCenter_EventScript_Pokefan_M_Text_0:
 
 BaseCamp_PokemonCenter_EventScript_Camper_Text_0:
 # 37 "data/maps/BaseCamp/scripts.pory"
-	.string "Did you hear?\p A new cave was discovered on ROUTE 103\n that was home to super rare POKéMON.$"
+	.string "Did you hear?\p A new cave was discovered on ROUTE 103\n that's home to super rare POKéMON.$"
 
 BaseCamp_PokemonCenter_EventScript_Cooltrainer_Text_0:
 # 44 "data/maps/BaseCamp/scripts.pory"

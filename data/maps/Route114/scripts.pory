@@ -222,6 +222,8 @@ script Route114_EventScript_Bennis{
     msgbox("Baldy baldy over there, what's it like\n
     to have no hair?", MSGBOX_AUTOCLOSE)
     waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+	waitmovement(0)
     playbgm(MUS_BENNIS_DOJO, TRUE)
     delay(20)
     call(BennisFollowersMovementVar)
@@ -282,7 +284,7 @@ script BennisFollowersMovementVar{
         delay(20)
         applymovement(30, Route114_Movement_BennisFollowers)
     }
-    waitmovement(0)
+    waitmovement(30)
     return
 }
 
@@ -307,8 +309,8 @@ script BennisMovementVar{
 }
 
 text Route114_Text_ASAK1{
-    "ASAK: There you are!\n
-    It's time for MASTER BENNIS to regain\l
+    "ASAK: There you are!\p
+    It's time for MASTER BENNIS to regain\n
     his honor!"
 }
 
@@ -340,7 +342,7 @@ movement Route114_Movement_BennisFollowers{
 movement Route114_Movement_BennisFollowers3{
     walk_up * 5
     walk_left
-    face_up
+    walk_in_place_up
 }
 
 movement Route114_Movement_Bennis{
@@ -350,11 +352,11 @@ movement Route114_Movement_Bennis{
 movement Route114_Movement_Bennis1{
     walk_up
     walk_left
-    face_up
+    walk_in_place_up
 }
 
 movement Route114_Movement_Bennis2{
     walk_up
     walk_right
-    face_up
+    walk_in_place_up
 }

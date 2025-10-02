@@ -2821,7 +2821,7 @@ SlateportCity_EventScript_Mae::
 # 1412 "data/maps/SlateportCity/scripts.pory"
 	waitmessage
 # 1413 "data/maps/SlateportCity/scripts.pory"
-	call SlateportCity_EventScript_MaeBattle
+	trainerbattle_no_intro TRAINER_MAE_1, Mae_Outro
 # 1414 "data/maps/SlateportCity/scripts.pory"
 	playse SE_PIN
 # 1415 "data/maps/SlateportCity/scripts.pory"
@@ -2889,216 +2889,210 @@ SlateportCity_EventScript_Mae::
 # 1446 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 0
 # 1447 "data/maps/SlateportCity/scripts.pory"
-	applymovement 20, SlateportMartEmployeeMove2
+	waitse
 # 1448 "data/maps/SlateportCity/scripts.pory"
-	waitmovement 20
+	applymovement 20, SlateportMartEmployeeMove2
 # 1449 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportMartEmployee2, MSGBOX_AUTOCLOSE
+	waitmovement 20
 # 1450 "data/maps/SlateportCity/scripts.pory"
-	waitmessage
+	msgbox SlateportMartEmployee2, MSGBOX_AUTOCLOSE
 # 1451 "data/maps/SlateportCity/scripts.pory"
-	removeobject 36
+	waitmessage
 # 1452 "data/maps/SlateportCity/scripts.pory"
-	removeobject 37
+	removeobject 36
 # 1453 "data/maps/SlateportCity/scripts.pory"
-	setflag FLAG_SLATEPORT_MAE_BATTLE
+	removeobject 37
 # 1454 "data/maps/SlateportCity/scripts.pory"
-	clearflag FLAG_HIDE_LILYCOVE_MAE
+	setflag FLAG_SLATEPORT_MAE_BATTLE
 # 1455 "data/maps/SlateportCity/scripts.pory"
+	clearflag FLAG_HIDE_LILYCOVE_MAE
+# 1456 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
 
-SlateportCity_EventScript_MaeBattle::
-# 1460 "data/maps/SlateportCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_MAE_1, Mae_Outro
-# 1461 "data/maps/SlateportCity/scripts.pory"
-	lock
-	return
-
-
-# 1484 "data/maps/SlateportCity/scripts.pory"
+# 1479 "data/maps/SlateportCity/scripts.pory"
 MaeSurprised:
-# 1485 "data/maps/SlateportCity/scripts.pory"
+# 1480 "data/maps/SlateportCity/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 1488 "data/maps/SlateportCity/scripts.pory"
+# 1483 "data/maps/SlateportCity/scripts.pory"
 SlateportFaceUp:
-# 1489 "data/maps/SlateportCity/scripts.pory"
+# 1484 "data/maps/SlateportCity/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 1492 "data/maps/SlateportCity/scripts.pory"
+# 1487 "data/maps/SlateportCity/scripts.pory"
 SlateportFaceLeft:
-# 1493 "data/maps/SlateportCity/scripts.pory"
+# 1488 "data/maps/SlateportCity/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 1496 "data/maps/SlateportCity/scripts.pory"
+# 1491 "data/maps/SlateportCity/scripts.pory"
 SlateportMartEmployeeMove1:
-# 1497 "data/maps/SlateportCity/scripts.pory"
+# 1492 "data/maps/SlateportCity/scripts.pory"
 	walk_fast_right
-# 1497 "data/maps/SlateportCity/scripts.pory"
+# 1492 "data/maps/SlateportCity/scripts.pory"
 	walk_fast_right
-# 1498 "data/maps/SlateportCity/scripts.pory"
+# 1493 "data/maps/SlateportCity/scripts.pory"
 	walk_fast_up
-# 1498 "data/maps/SlateportCity/scripts.pory"
+# 1493 "data/maps/SlateportCity/scripts.pory"
 	walk_fast_up
-# 1498 "data/maps/SlateportCity/scripts.pory"
+# 1493 "data/maps/SlateportCity/scripts.pory"
 	walk_fast_up
-# 1498 "data/maps/SlateportCity/scripts.pory"
+# 1493 "data/maps/SlateportCity/scripts.pory"
 	walk_fast_up
-# 1499 "data/maps/SlateportCity/scripts.pory"
+# 1494 "data/maps/SlateportCity/scripts.pory"
 	face_player
 	step_end
 
-# 1502 "data/maps/SlateportCity/scripts.pory"
+# 1497 "data/maps/SlateportCity/scripts.pory"
 SlateportMaeMovesPlayer:
-# 1503 "data/maps/SlateportCity/scripts.pory"
+# 1498 "data/maps/SlateportCity/scripts.pory"
 	face_right
-# 1504 "data/maps/SlateportCity/scripts.pory"
+# 1499 "data/maps/SlateportCity/scripts.pory"
 	lock_facing_direction
-# 1505 "data/maps/SlateportCity/scripts.pory"
+# 1500 "data/maps/SlateportCity/scripts.pory"
 	walk_left
-# 1506 "data/maps/SlateportCity/scripts.pory"
+# 1501 "data/maps/SlateportCity/scripts.pory"
 	delay_16
-# 1507 "data/maps/SlateportCity/scripts.pory"
+# 1502 "data/maps/SlateportCity/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 1510 "data/maps/SlateportCity/scripts.pory"
+# 1505 "data/maps/SlateportCity/scripts.pory"
 SlateportMaeLeaves:
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1511 "data/maps/SlateportCity/scripts.pory"
+# 1506 "data/maps/SlateportCity/scripts.pory"
 	walk_up
 	step_end
 
-# 1514 "data/maps/SlateportCity/scripts.pory"
+# 1509 "data/maps/SlateportCity/scripts.pory"
 SlateportPsyduckLeaves1:
-# 1515 "data/maps/SlateportCity/scripts.pory"
+# 1510 "data/maps/SlateportCity/scripts.pory"
 	walk_right
-# 1516 "data/maps/SlateportCity/scripts.pory"
+# 1511 "data/maps/SlateportCity/scripts.pory"
 	walk_up
-# 1517 "data/maps/SlateportCity/scripts.pory"
+# 1512 "data/maps/SlateportCity/scripts.pory"
 	face_player
 	step_end
 
-# 1520 "data/maps/SlateportCity/scripts.pory"
+# 1515 "data/maps/SlateportCity/scripts.pory"
 SlateportMartEmployeeMove2:
-# 1521 "data/maps/SlateportCity/scripts.pory"
+# 1516 "data/maps/SlateportCity/scripts.pory"
 	walk_down
-# 1521 "data/maps/SlateportCity/scripts.pory"
+# 1516 "data/maps/SlateportCity/scripts.pory"
 	walk_down
-# 1521 "data/maps/SlateportCity/scripts.pory"
+# 1516 "data/maps/SlateportCity/scripts.pory"
 	walk_down
-# 1521 "data/maps/SlateportCity/scripts.pory"
+# 1516 "data/maps/SlateportCity/scripts.pory"
 	walk_down
-# 1522 "data/maps/SlateportCity/scripts.pory"
+# 1517 "data/maps/SlateportCity/scripts.pory"
 	walk_left
-# 1522 "data/maps/SlateportCity/scripts.pory"
+# 1517 "data/maps/SlateportCity/scripts.pory"
 	walk_left
-# 1523 "data/maps/SlateportCity/scripts.pory"
+# 1518 "data/maps/SlateportCity/scripts.pory"
 	face_original_direction
 	step_end
 
-# 1526 "data/maps/SlateportCity/scripts.pory"
+# 1521 "data/maps/SlateportCity/scripts.pory"
 SlateportFaceRight:
-# 1527 "data/maps/SlateportCity/scripts.pory"
+# 1522 "data/maps/SlateportCity/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 1530 "data/maps/SlateportCity/scripts.pory"
+# 1525 "data/maps/SlateportCity/scripts.pory"
 SlateportConfused:
-# 1531 "data/maps/SlateportCity/scripts.pory"
+# 1526 "data/maps/SlateportCity/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 1534 "data/maps/SlateportCity/scripts.pory"
+# 1529 "data/maps/SlateportCity/scripts.pory"
 SlateportFacePlayer:
-# 1535 "data/maps/SlateportCity/scripts.pory"
+# 1530 "data/maps/SlateportCity/scripts.pory"
 	face_player
 	step_end
 
 SlateportCity_EventScript_Psyduck::
-# 1540 "data/maps/SlateportCity/scripts.pory"
+# 1535 "data/maps/SlateportCity/scripts.pory"
 	lock
-# 1541 "data/maps/SlateportCity/scripts.pory"
+# 1536 "data/maps/SlateportCity/scripts.pory"
 	applymovement VAR_LAST_TALKED, SlateportFacePlayer
-# 1542 "data/maps/SlateportCity/scripts.pory"
+# 1537 "data/maps/SlateportCity/scripts.pory"
 	waitmovement VAR_LAST_TALKED
-# 1543 "data/maps/SlateportCity/scripts.pory"
+# 1538 "data/maps/SlateportCity/scripts.pory"
 	delay 30
-# 1544 "data/maps/SlateportCity/scripts.pory"
+# 1539 "data/maps/SlateportCity/scripts.pory"
 	playse SE_BIKE_HOP
-# 1545 "data/maps/SlateportCity/scripts.pory"
+# 1540 "data/maps/SlateportCity/scripts.pory"
 	applymovement VAR_LAST_TALKED, SlateportConfused
-# 1546 "data/maps/SlateportCity/scripts.pory"
+# 1541 "data/maps/SlateportCity/scripts.pory"
 	waitmovement VAR_LAST_TALKED
-# 1547 "data/maps/SlateportCity/scripts.pory"
-	delay 10
-# 1548 "data/maps/SlateportCity/scripts.pory"
+# 1542 "data/maps/SlateportCity/scripts.pory"
+	waitse
+# 1543 "data/maps/SlateportCity/scripts.pory"
 	playmoncry SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER
-# 1549 "data/maps/SlateportCity/scripts.pory"
+# 1544 "data/maps/SlateportCity/scripts.pory"
 	waitmoncry
-# 1550 "data/maps/SlateportCity/scripts.pory"
+# 1545 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
 
 SlateportCity_EventScript_GymSign::
-# 1555 "data/maps/SlateportCity/scripts.pory"
+# 1550 "data/maps/SlateportCity/scripts.pory"
 	lock
-# 1556 "data/maps/SlateportCity/scripts.pory"
+# 1551 "data/maps/SlateportCity/scripts.pory"
 	msgbox SlateportGymSign, MSGBOX_SIGN
-# 1557 "data/maps/SlateportCity/scripts.pory"
+# 1552 "data/maps/SlateportCity/scripts.pory"
 	waitmessage
-# 1558 "data/maps/SlateportCity/scripts.pory"
+# 1553 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
 
 Mae1::
-# 1465 "data/maps/SlateportCity/scripts.pory"
+# 1460 "data/maps/SlateportCity/scripts.pory"
 	.string "Ooh yes! Ten rings?!\n This slayyys!$"
 
 Mae2::
-# 1468 "data/maps/SlateportCity/scripts.pory"
-	.string "Huh? Who are you? Why are you\n getting in the way of my shopping?\l I'm a diva and I deserve this!$"
+# 1463 "data/maps/SlateportCity/scripts.pory"
+	.string "Huh? Who are you? Why are you\n getting in the way of my shopping?\p I'm a diva and I deserve this!$"
 
 Mae_Outro::
-# 1472 "data/maps/SlateportCity/scripts.pory"
+# 1467 "data/maps/SlateportCity/scripts.pory"
 	.string "I'm a diva and I deserve this…$"
 
 SlateportMartEmployee1::
-# 1474 "data/maps/SlateportCity/scripts.pory"
+# 1469 "data/maps/SlateportCity/scripts.pory"
 	.string "MART EMPLOYEE: Excuse me!\n You can't battle here!\l I have to ask you to leave!$"
 
 Mae3::
-# 1478 "data/maps/SlateportCity/scripts.pory"
-	.string "MAE: Okay, whatever.\l I'll go shop somewhere else!$"
+# 1473 "data/maps/SlateportCity/scripts.pory"
+	.string "MAE: Okay, whatever.\n I'll go shop somewhere else!$"
 
 SlateportMartEmployee2::
-# 1481 "data/maps/SlateportCity/scripts.pory"
+# 1476 "data/maps/SlateportCity/scripts.pory"
 	.string "MART EMPLOYEE: Man, I swear I don't\n  get paid enough for this.$"
 
 SlateportGymSign::
-# 1562 "data/maps/SlateportCity/scripts.pory"
+# 1557 "data/maps/SlateportCity/scripts.pory"
 	.string "SLATEPORT CITY POKéMON GYM\n LEADER: LIAM\l “Experience the power of POOBLES!”$"

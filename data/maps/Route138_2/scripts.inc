@@ -54,7 +54,7 @@ Route138_EventScript_Ichigo::
 # 43 "data/maps/Route138_2/scripts.pory"
 	trainerbattle_single TRAINER_ICHIGO, Route138_EventScript_Ichigo_Text_0, Route138_EventScript_Ichigo_Text_1
 # 44 "data/maps/Route138_2/scripts.pory"
-	msgbox Route138_EventScript_Ichigo_Text_2, MSGBOX_NPC
+	msgbox Route138_EventScript_Ichigo_Text_0, MSGBOX_NPC
 	end
 
 
@@ -215,10 +215,6 @@ Route138_EventScript_Ichigo_Text_1:
 # 43 "data/maps/Route138_2/scripts.pory"
 	.string "You're mean…$"
 
-Route138_EventScript_Ichigo_Text_2:
-# 44 "data/maps/Route138_2/scripts.pory"
-	.string "We're protects of the village!$"
-
 Route138_EventScript_Iwao_Text_0:
 # 49 "data/maps/Route138_2/scripts.pory"
 	.string "Hi-yah!$"
@@ -245,7 +241,7 @@ Route138_EventScript_Hagerou_Text_1:
 
 Route138_EventScript_Hagerou_Text_2:
 # 63 "data/maps/Route138_2/scripts.pory"
-	.string "Most NINJAS are bald in respect to\n LADY ASAKURA.$"
+	.string "Most NINJAS are bald in respect to\n the ASAKURA household.$"
 
 Route138_EventScript_Jurou_Text_0:
 # 69 "data/maps/Route138_2/scripts.pory"

@@ -10,11 +10,11 @@ FullMoonIsland_EventScript_CresseliaHelp::
 # 6 "data/maps/FullMoonIsland/scripts.pory"
 	waitmessage
 # 7 "data/maps/FullMoonIsland/scripts.pory"
-	releaseall
-# 8 "data/maps/FullMoonIsland/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 10
-# 9 "data/maps/FullMoonIsland/scripts.pory"
+# 8 "data/maps/FullMoonIsland/scripts.pory"
 	clearflag FLAG_HIDE_RATDUARDO_FULLMOON
+# 9 "data/maps/FullMoonIsland/scripts.pory"
+	releaseall
 	end
 
 

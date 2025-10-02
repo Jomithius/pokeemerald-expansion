@@ -329,9 +329,3 @@ script SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal2{
 	end
 }
 
-script SootopolisCity_Gym_1F_EventScript_GoBeatTheOtherGymLeaders{
-	msgbox("Yeheheaaaahh…\p
-		{PLAYER}, come back when you've\n
-		beaten all the other LEADERS.", MSGBOX_NPC)
-	end
-}

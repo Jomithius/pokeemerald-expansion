@@ -26,7 +26,7 @@ script RustboroCity_Misa_House1F_MisaGiveItem{
 script Misa_House1F_EventScript_Text2{
     lock
     faceplayer
-    msgbox(MisaHouse1F_3)
+    msgbox(MisaHouse1F_3, MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
@@ -38,7 +38,7 @@ JAMES is upstairs in his room.\n
 Thanks again for becoming his friend.\p
 I hope you two can help each other\n
 out on your journey.\p
-Have you eaten yet? We already put away\n
+Have you eaten yet? I already put away\n
 the leftovers, but I have some candy."
 }
 
@@ -48,7 +48,7 @@ about JAMES, but now I'll be heading\l
 back to work in EVER GRANDE CITY."}
 
 text MisaHouse1F_3{"Did you challenge the GYM yet?\p
-You're already a wonderful trainer, so\n
+You're already a wonderful TRAINER, so\n
 you should be able to beat them.\p
 Good luck!"}
 
@@ -58,7 +58,7 @@ text MisaHouseCantCarryCandy {
 
 text RustboroCity_Misa_House1F_Text_ExplainCandies{
     "Don't eat them all at once!\p
-    {COLOR BLUE}{SHADOW LIGHT_BLUE} Unlike EXP CANDIES, RARE CANDIES can\n
+    {COLOR BLUE}{SHADOW LIGHT_BLUE} Unlike EXP. CANDIES, RARE CANDIES can\n
     be used to go over the level cap but\l
     are extremely limited.\p
     It's recommended to only use them if\n

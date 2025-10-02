@@ -18,6 +18,8 @@ script TheUnder_EventScript_Luna{
         applymovement(7, TheUnder_Movement_Luna) 
     }
     waitmovement(7)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
     msgbox("LUNA: {PLAYER}. You made it.\p
         JIMMY wanted me to meet you out here.\n
         He has a message for you:\p
@@ -98,8 +100,7 @@ script TheUnder_EventScript_Hiker{
 
 script TheUnder_EventScript_Carson{
     trainerbattle_single(TRAINER_CARSON, TheUnder_Text_CarsonIntro, TheUnder_Text_CarsonDefeat)
-    msgbox(TheUnder_Text_CarsonPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(TheUnder_Text_CarsonPostBattle, MSGBOX_NPC)
 	end
 }
 

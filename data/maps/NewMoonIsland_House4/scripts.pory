@@ -6,6 +6,7 @@ mapscripts NewMoonIsland_House4_MapScripts {
 script NewMoonIsland_House4_OnTransition{
     setflag(FLAG_TEMP_E)
     setrespawn(HEAL_LOCATION_NEW_MOON_ISLAND)
+    end
 }
 
 script NewMoonIsland_House4_EventScript_Dendenne{

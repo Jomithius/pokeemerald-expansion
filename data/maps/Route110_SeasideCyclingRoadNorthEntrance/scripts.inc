@@ -193,7 +193,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_PleaseHelpUs::
 
 Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou::
 # 117 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	lock
+	lockall
 # 118 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	applymovement 1, Common_Movement_FacePlayer
 # 119 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
@@ -211,7 +211,7 @@ Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou::
 # 125 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	clearflag FLAG_ROUTE110_HIDE_CYCLIST
 # 126 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
-	release
+	releaseall
 	end
 
 

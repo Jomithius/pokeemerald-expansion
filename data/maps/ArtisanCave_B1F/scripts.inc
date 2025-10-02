@@ -362,7 +362,7 @@ AzureMountain_EventScript_Dogfood_Text_2:
 
 AzureMountain_EventScript_Bjornulfr_Text_0:
 # 34 "data/maps/ArtisanCave_B1F/scripts.pory"
-	.string "Huff… huff…\nWhat a hike!$"
+	.string "Huff… Huff…\nWhat a hike!$"
 
 AzureMountain_EventScript_Bjornulfr_Text_1:
 # 34 "data/maps/ArtisanCave_B1F/scripts.pory"
@@ -378,7 +378,7 @@ AzureMountain_EventScript_Rin_Text_0:
 
 AzureMountain_EventScript_Rin_Text_1:
 # 41 "data/maps/ArtisanCave_B1F/scripts.pory"
-	.string "Maybe I should fear you!$"
+	.string "Maybe I should fear YOU!$"
 
 AzureMountain_EventScript_Rin_Text_2:
 # 42 "data/maps/ArtisanCave_B1F/scripts.pory"

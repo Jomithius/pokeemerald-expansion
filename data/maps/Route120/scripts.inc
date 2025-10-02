@@ -938,7 +938,7 @@ VikavoltFailed::
 # 471 "data/maps/Route120/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 # 472 "data/maps/Route120/scripts.pory"
-	msgbox VikavoltFailed_Text_0
+	msgbox VikavoltFailed_Text_0, MSGBOX_DEFAULT
 	return
 
 

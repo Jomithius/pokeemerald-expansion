@@ -1,11 +1,5 @@
 mapscripts Route135_House2_MapScripts {}
 
-script Route135_House2_OnTransition{
-    setflag(FLAG_DONT_TRANSITION_MUSIC)
-    #savebgm(MUS_ETERNA_CITY_NIGHT)
-    end
-}
-
 script Route135_House2_Man{
     msgbox("A lot more people have been stopping\n
         by here recently.\p

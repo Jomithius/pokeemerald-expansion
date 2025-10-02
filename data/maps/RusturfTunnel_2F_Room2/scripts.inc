@@ -85,7 +85,7 @@ GalvantulaFailed::
 # 43 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 # 44 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	msgbox GalvantulaFailed_Text_0
+	msgbox GalvantulaFailed_Text_0, MSGBOX_DEFAULT
 	return
 
 
@@ -172,7 +172,7 @@ AriadosFailed::
 # 89 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 # 90 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	msgbox AriadosFailed_Text_0
+	msgbox AriadosFailed_Text_0, MSGBOX_DEFAULT
 	return
 
 

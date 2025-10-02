@@ -734,9 +734,9 @@ script MossdeepCity_Gym_NPC{
 script MossdeepCity_EventScript_AriaSword{
 	lockall
     playse(SE_M_DOUBLE_TEAM)
-    delay(20)
-    msgbox("They're swinging a sword.\n
-    It looks dangerous to approach them\l
+    waitse
+    msgbox("They're swinging a sword.\p
+    It looks dangerous to approach them\n
     from the front.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
@@ -760,7 +760,7 @@ script MossdeepCity_EventScript_RecoverTutor{
 }
 
 script MoveTutor_EventScript_RecoverDeclined{
-	msgbox("Well, alright.\n
+	msgbox("Well, all right.\n
 		Don't overexert yourself.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release

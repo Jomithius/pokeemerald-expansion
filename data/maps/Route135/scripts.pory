@@ -93,8 +93,8 @@ script Route135_EventScript_Whitney{
 
 script Route135_EventScript_WhitneyBattle{
     lock
-    msgbox("Gosh, it's so boring out here!\n
-        Why did we have to visit our family\l
+    msgbox("Gosh, it's so boring out here!\p
+        Why did we have to visit our family\n
         out in HOENN's countryside…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
@@ -232,9 +232,9 @@ script Route135_EventScript_FirstMoo{
     fadeoutbgm(1)
     delay(60)
     playmoncry(SPECIES_MILTANK, CRY_MODE_NORMAL)
-    msgbox("MILTANK: Moooooo!", MSGBOX_AUTOCLOSE)
+    msgbox("MILTANK: Moooooo!", MSGBOX_DEFAULT)
     waitmoncry
-    waitmessage
+    closemessage
     applymovement(26, Common_Movement_WalkInPlaceDown)
     waitmovement(26)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
@@ -252,13 +252,13 @@ script Route135_EventScript_FirstMoo{
 
 script Route135_EventScript_Man4DidYouKnow{
     msgbox("Did you know?\n
-        Some TAUROS have different types.", MSGBOX_NPC)
+        Some TAUROS are different types.", MSGBOX_NPC)
     end
 }
 
 script Route135_EventScript_Gentleman{
-    msgbox("That PROF. at the lab…\n
-        He's researching some gotdang strange\l
+    msgbox("That PROF. at the lab…\p
+        He's researching some gotdang strange\n
         things, I'll tell you what.", MSGBOX_NPC)
     end
 }
@@ -319,7 +319,7 @@ script Route135_EventScript_Miltank{
 
 script Route135_EventScript_Sign{
     msgbox("LUSH ACREAGE\p
-        “The land of resplendent wonders!”", MSGBOX_SIGN)
+        “The ranch of resplendent wonders!”", MSGBOX_SIGN)
     end
 }
 

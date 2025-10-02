@@ -22,7 +22,7 @@ script EasternRuins_EventScript_Shiori{
 
 script EasternRuins_EventScript_Yumi{
     trainerbattle_single(TRAINER_YUMI, "Fufufu…\nSoon, JIRACHI will awaken…", "Soon…")
-    msgbox("… There's an old tale of a MOCHI\n
+    msgbox("… There's an old tale of a mochi\n
         making POKéMON and his LOYAL THREE\l
         killing a TRAINER and stealing three
         sacred masks from him…\p
@@ -33,8 +33,8 @@ script EasternRuins_EventScript_Yumi{
 
 script EasternRuins_EventScript_Chestird{
     trainerbattle_single(TRAINER_CHESTIRD, "I had to pay a lot of money\nto be able to get here…", "I guess money can't help me\nwin battles!")
-    msgbox("The ruins behind me are intruiging.\n
-        It seems as though they have been\l
+    msgbox("The ruins behind me are intruiging.\p
+        It seems as though they have been\n
         recently inhabited by POKéMON.", MSGBOX_NPC)
 	end
 }
@@ -99,7 +99,7 @@ script EasternRuins_EventScript_HexManiacMaliciousArmor{
 
 script EasternRuins_EventScript_HexManiacShowMeAGhostType{
     msgbox("O-Oh…\n
-        You d-don't have a GHOST T-type?", MSGBOX_NPC)
+        You d-don't have a GHOST-t-type?", MSGBOX_NPC)
     end
 }
 

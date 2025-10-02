@@ -137,27 +137,24 @@ ShoalCave_LowTideInnerRoom_EventScript_ShoalSalt2::
 
 script ShoalCave_LowTideInnerRoom_EventScript_Bingleton{
     trainerbattle_single(TRAINER_BINGLETON, ShoalCave_LowTideInnerRoom_Text_BingletonIntro, ShoalCave_LowTideInnerRoom_Text_BingletonDefeat)
-    msgbox(ShoalCave_LowTideInnerRoom_Text_BingletonPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(ShoalCave_LowTideInnerRoom_Text_BingletonPostBattle, MSGBOX_NPC)
 	end
 }
 
 script ShoalCave_LowTideInnerRoom_EventScript_Bungleton{
     trainerbattle_single(TRAINER_BUNGLETON, ShoalCave_LowTideInnerRoom_Text_BungletonIntro, ShoalCave_LowTideInnerRoom_Text_BungletonDefeat)
-    msgbox(ShoalCave_LowTideInnerRoom_Text_BungletonPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(ShoalCave_LowTideInnerRoom_Text_BungletonPostBattle, MSGBOX_NPC)
 	end
 }
 
 script ShoalCave_LowTideInnerRoom_EventScript_Daquavius{
     trainerbattle_single(TRAINER_DAQUAVIUS, ShoalCave_LowTideInnerRoom_Text_DaquaviusIntro, ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat)
-    msgbox(ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle, MSGBOX_NPC)
 	end
 }
 
 text ShoalCave_LowTideInnerRoom_Text_BingletonIntro{
-    "Me and my brother love coming here!"
+    "My brother and I love coming here!"
 }
 
 text ShoalCave_LowTideInnerRoom_Text_BingletonDefeat{
@@ -170,7 +167,7 @@ text ShoalCave_LowTideInnerRoom_Text_BingletonPostBattle{
 }
 
 text ShoalCave_LowTideInnerRoom_Text_BungletonIntro{
-    "Me and my brother love coming here!"
+    "My brother and I love coming here!"
 }
 
 text ShoalCave_LowTideInnerRoom_Text_BungletonDefeat{
@@ -184,7 +181,7 @@ text ShoalCave_LowTideInnerRoom_Text_BungletonPostBattle{
 
 text ShoalCave_LowTideInnerRoom_Text_DaquaviusIntro{
     "I'm training to beat MOSSDEEP's\n
-    GYM LEADER!"
+    GYM LEADER MOMO!"
 }
 
 text ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat{
@@ -192,6 +189,6 @@ text ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat{
 }
 
 text ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle{
-    "The GYM LEADER has powerful fists!\n
+    "MOMO has powerful fists!\n
     I must train even more!"
 }

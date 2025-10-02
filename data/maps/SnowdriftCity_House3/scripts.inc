@@ -23,7 +23,7 @@ SnowdriftCity_House3_OnTransition::
 
 SnowdriftCity_House3_UpdateMusic::
 # 16 "data/maps/SnowdriftCity_House3/scripts.pory"
-	playbgm MUS_ENCOUNTER_CYNTHIA, TRUE
+	savebgm MUS_ENCOUNTER_CYNTHIA
 	return
 
 

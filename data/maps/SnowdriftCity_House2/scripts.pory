@@ -1,7 +1,8 @@
 mapscripts SnowdriftCity_House2_MapScripts {}
 
 script SnowdriftCity_House2_EventScript_LittleNerd{
-    msgbox("Indubitably resplendent!", MSGBOX_NPC)
+    msgbox("Indubitably resplendent!\n
+        Riveting, indeed!", MSGBOX_NPC)
     end
 }
 

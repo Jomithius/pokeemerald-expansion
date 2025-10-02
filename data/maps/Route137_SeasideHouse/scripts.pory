@@ -85,8 +85,9 @@ script Route137_SeasideHouse_EventScript_Daca{
 }
 
 script Route137_SeasideHouse_EventScript_Tuber_M{
-    msgbox("I SCREAM FOR ICE CREAM!\n
-        AAAAAAAAAAAAAAAAAAAAAHH!", MSGBOX_NPC)
+    msgbox("I SCREAM FOR ICE CREAM!\p
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!", MSGBOX_NPC)
     end
 }
 

@@ -63,8 +63,8 @@ script Route137_EventScript_Von{
 script Route137_EventScript_Woman_4{
     lock
     faceplayer
-    msgbox("My husband used to be an athlete.\n
-        Every time we come to the beach, he\l
+    msgbox("My husband used to be an athlete.\p
+        Every time we come to the beach, he\n
         has to show off how well he can swim.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)

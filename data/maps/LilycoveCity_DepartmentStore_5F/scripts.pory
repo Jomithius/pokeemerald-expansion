@@ -165,7 +165,7 @@ LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather:
 
 script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
     lock
-    if(flag(FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT ) == FALSE){
+    if(flag(FLAG_RECEIVED_RARE_CANDY_LILYCOVE_DEPT) == FALSE){
         delay(16)
 		playse(SE_PIN)
         applymovement(8, Common_Movement_ExclamationMark)
@@ -194,9 +194,9 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Misa{
 }
 
 text LilycoveCity_DepartmentStore_5F_Text_Misa1{
-    "Oh, {PLAYER}!\p
-	It's nice to see you again!\n
-    I had to stop by the DEPT. STORE\l
+    "Oh, {PLAYER}!\n
+	It's nice to see you again!\p
+    I had to stop by the DEPT. STORE\n
     before I went back to work.\l
     I just love the POKé DOLLS here!\p
     Have you eaten? I bought some\n
@@ -206,8 +206,8 @@ text LilycoveCity_DepartmentStore_5F_Text_Misa1{
 }
 
 text LilycoveCity_DepartmentStore_5F_Text_Misa2{
-    "By the way, I ran into JAMES earlier.\n
-    He seems really motivated since\l
+    "By the way, I ran into JAMES earlier.\p
+    He seems really motivated since\n
     meeting you.\p
     I also his noticed his… behavior\n
     has changed a bit as well.\p
@@ -259,8 +259,8 @@ script LilycoveCity_DepartmentStore_5F_EventScript_Lina{
 }
 
 text LilcoveCity_DepartmentStore_5F_Text_Lina1{
-    "What?\n
-    The next “Muscles & Monsters” still\l
+    "What?\p
+    The next “Muscles & Monsters” still\n
     isn't in yet…"
 }
 

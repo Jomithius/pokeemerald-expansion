@@ -88,136 +88,136 @@ TheUnder_House_Eventscript_BedRight_2:
 
 
 TheUnder_House_OutOfCenterPartyHeal::
-# 51 "data/maps/TheUnder_House/scripts.pory"
+# 50 "data/maps/TheUnder_House/scripts.pory"
 	fadenewbgm MUS_DUMMY
+# 51 "data/maps/TheUnder_House/scripts.pory"
+	delay 60
 # 52 "data/maps/TheUnder_House/scripts.pory"
-	delay 60
-# 53 "data/maps/TheUnder_House/scripts.pory"
 	fadescreenspeed FADE_TO_BLACK, 2
-# 54 "data/maps/TheUnder_House/scripts.pory"
+# 53 "data/maps/TheUnder_House/scripts.pory"
 	delay 30
-# 55 "data/maps/TheUnder_House/scripts.pory"
+# 54 "data/maps/TheUnder_House/scripts.pory"
 	playfanfare MUS_HEAL
-# 56 "data/maps/TheUnder_House/scripts.pory"
+# 55 "data/maps/TheUnder_House/scripts.pory"
 	waitfanfare
-# 57 "data/maps/TheUnder_House/scripts.pory"
+# 56 "data/maps/TheUnder_House/scripts.pory"
 	special HealPlayerParty
-# 58 "data/maps/TheUnder_House/scripts.pory"
+# 57 "data/maps/TheUnder_House/scripts.pory"
 	delay 60
-# 59 "data/maps/TheUnder_House/scripts.pory"
+# 58 "data/maps/TheUnder_House/scripts.pory"
 	warpsilent MAP_THE_UNDER_SHADY_HOUSE, 11, 2
-# 60 "data/maps/TheUnder_House/scripts.pory"
+# 59 "data/maps/TheUnder_House/scripts.pory"
 	waitstate
 	return
 
 
 TheUnder_House_PlayerAwakens::
-# 65 "data/maps/TheUnder_House/scripts.pory"
+# 64 "data/maps/TheUnder_House/scripts.pory"
 	lockall
-# 66 "data/maps/TheUnder_House/scripts.pory"
+# 65 "data/maps/TheUnder_House/scripts.pory"
 	playse SE_PIN
-# 67 "data/maps/TheUnder_House/scripts.pory"
+# 66 "data/maps/TheUnder_House/scripts.pory"
 	applymovement 1, Common_Movement_ExclamationMark
+# 67 "data/maps/TheUnder_House/scripts.pory"
+	waitmovement 1
 # 68 "data/maps/TheUnder_House/scripts.pory"
-	waitmovement 1
-# 69 "data/maps/TheUnder_House/scripts.pory"
 	waitse
-# 70 "data/maps/TheUnder_House/scripts.pory"
+# 69 "data/maps/TheUnder_House/scripts.pory"
 	delay 16
-# 71 "data/maps/TheUnder_House/scripts.pory"
+# 70 "data/maps/TheUnder_House/scripts.pory"
 	applymovement 1, TheUnder_House_Movement_RatduardoApproachesPlayer
+# 71 "data/maps/TheUnder_House/scripts.pory"
+	waitmovement 1
 # 72 "data/maps/TheUnder_House/scripts.pory"
-	waitmovement 1
-# 73 "data/maps/TheUnder_House/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
-# 74 "data/maps/TheUnder_House/scripts.pory"
+# 73 "data/maps/TheUnder_House/scripts.pory"
 	waitmovement 0
-# 75 "data/maps/TheUnder_House/scripts.pory"
+# 74 "data/maps/TheUnder_House/scripts.pory"
 	msgbox TheUnder_House_Text_Ratduardo, MSGBOX_AUTOCLOSE
-# 76 "data/maps/TheUnder_House/scripts.pory"
+# 75 "data/maps/TheUnder_House/scripts.pory"
 	waitmessage
-# 77 "data/maps/TheUnder_House/scripts.pory"
+# 76 "data/maps/TheUnder_House/scripts.pory"
 	applymovement 1, TheUnder_House_Movement_RatduardoReturnsToSeat
-# 78 "data/maps/TheUnder_House/scripts.pory"
+# 77 "data/maps/TheUnder_House/scripts.pory"
 	waitmovement 1
-# 79 "data/maps/TheUnder_House/scripts.pory"
+# 78 "data/maps/TheUnder_House/scripts.pory"
 	setvar VAR_RAT_CAVE_STATE, 14
-# 80 "data/maps/TheUnder_House/scripts.pory"
+# 79 "data/maps/TheUnder_House/scripts.pory"
 	releaseall
 	end
 
 
 TheUnder_House_EventScript_Ratduardo::
-# 85 "data/maps/TheUnder_House/scripts.pory"
+# 84 "data/maps/TheUnder_House/scripts.pory"
 	msgbox TheUnder_House_Ratduardo2, MSGBOX_NPC
 	end
 
 
 TheUnder_House_EventScript_Raticate::
-# 90 "data/maps/TheUnder_House/scripts.pory"
+# 89 "data/maps/TheUnder_House/scripts.pory"
 	lock
-# 91 "data/maps/TheUnder_House/scripts.pory"
+# 90 "data/maps/TheUnder_House/scripts.pory"
 	faceplayer
-# 92 "data/maps/TheUnder_House/scripts.pory"
+# 91 "data/maps/TheUnder_House/scripts.pory"
 	playmoncry SPECIES_RATICATE, CRY_MODE_ENCOUNTER
-# 93 "data/maps/TheUnder_House/scripts.pory"
+# 92 "data/maps/TheUnder_House/scripts.pory"
 	waitmoncry
-# 94 "data/maps/TheUnder_House/scripts.pory"
+# 93 "data/maps/TheUnder_House/scripts.pory"
 	release
 	end
 
 
 TheUnder_House_EventScript_RaticateAlola::
-# 99 "data/maps/TheUnder_House/scripts.pory"
+# 98 "data/maps/TheUnder_House/scripts.pory"
 	lock
-# 100 "data/maps/TheUnder_House/scripts.pory"
+# 99 "data/maps/TheUnder_House/scripts.pory"
 	faceplayer
-# 101 "data/maps/TheUnder_House/scripts.pory"
+# 100 "data/maps/TheUnder_House/scripts.pory"
 	playmoncry SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER
-# 102 "data/maps/TheUnder_House/scripts.pory"
+# 101 "data/maps/TheUnder_House/scripts.pory"
 	waitmoncry
-# 103 "data/maps/TheUnder_House/scripts.pory"
+# 102 "data/maps/TheUnder_House/scripts.pory"
 	release
 	end
 
 
-# 134 "data/maps/TheUnder_House/scripts.pory"
+# 133 "data/maps/TheUnder_House/scripts.pory"
 TheUnder_House_Movement_LayInBedLeft:
+# 134 "data/maps/TheUnder_House/scripts.pory"
+	walk_right
 # 135 "data/maps/TheUnder_House/scripts.pory"
-	walk_right
-# 136 "data/maps/TheUnder_House/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 139 "data/maps/TheUnder_House/scripts.pory"
+# 138 "data/maps/TheUnder_House/scripts.pory"
 TheUnder_House_Movement_LayInBedRight:
-# 140 "data/maps/TheUnder_House/scripts.pory"
+# 139 "data/maps/TheUnder_House/scripts.pory"
 	walk_left
-# 141 "data/maps/TheUnder_House/scripts.pory"
+# 140 "data/maps/TheUnder_House/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 144 "data/maps/TheUnder_House/scripts.pory"
+# 143 "data/maps/TheUnder_House/scripts.pory"
 TheUnder_House_Movement_RatduardoApproachesPlayer:
-# 145 "data/maps/TheUnder_House/scripts.pory"
+# 144 "data/maps/TheUnder_House/scripts.pory"
+	walk_up
+# 144 "data/maps/TheUnder_House/scripts.pory"
 	walk_up
 # 145 "data/maps/TheUnder_House/scripts.pory"
-	walk_up
-# 146 "data/maps/TheUnder_House/scripts.pory"
 	walk_right
-# 146 "data/maps/TheUnder_House/scripts.pory"
+# 145 "data/maps/TheUnder_House/scripts.pory"
 	walk_right
 	step_end
 
-# 149 "data/maps/TheUnder_House/scripts.pory"
+# 148 "data/maps/TheUnder_House/scripts.pory"
 TheUnder_House_Movement_RatduardoReturnsToSeat:
-# 150 "data/maps/TheUnder_House/scripts.pory"
+# 149 "data/maps/TheUnder_House/scripts.pory"
 	walk_left
-# 151 "data/maps/TheUnder_House/scripts.pory"
+# 150 "data/maps/TheUnder_House/scripts.pory"
+	walk_down
+# 150 "data/maps/TheUnder_House/scripts.pory"
 	walk_down
 # 151 "data/maps/TheUnder_House/scripts.pory"
-	walk_down
-# 152 "data/maps/TheUnder_House/scripts.pory"
 	walk_left
 	step_end
 
@@ -226,17 +226,17 @@ TheUnder_House_Eventscript_BedLeft_Text_0:
 	.string "Maybe another time.$"
 
 TheUnder_House_Text_TakeARest::
-# 107 "data/maps/TheUnder_House/scripts.pory"
+# 106 "data/maps/TheUnder_House/scripts.pory"
 	.string "There's a bed…\n Take a rest?$"
 
 TheUnder_House_Movement_FallIntoSlumber::
-# 112 "data/maps/TheUnder_House/scripts.pory"
+# 111 "data/maps/TheUnder_House/scripts.pory"
 	.string "Your eyes feel heavy as you\n fall into a deep slumber…$"
 
 TheUnder_House_Text_Ratduardo::
-# 117 "data/maps/TheUnder_House/scripts.pory"
+# 116 "data/maps/TheUnder_House/scripts.pory"
 	.string "You've been asleep for a long, long\n time… What happened to you?\p And what were you doing here?\n Nobody's been living here for years.\p Well, make sure you're okay before\n you get up.$"
 
 TheUnder_House_Ratduardo2::
-# 126 "data/maps/TheUnder_House/scripts.pory"
+# 125 "data/maps/TheUnder_House/scripts.pory"
 	.string "I haven't been home in a long time.\p But suddenly, it was like I had been\n woken up from a really long dream…\p Did you have something to do with it?\n If you did… Thank you.$"

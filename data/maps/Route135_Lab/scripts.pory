@@ -97,7 +97,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             Uh, this is kind of awkward…\p
             Honestly, I didn't expect to see\n
             you again after that last battle.\p
-            Um…\l
+            Um…\n
             …\p
             You're the type of person who needs\n
             to see EVERYTHING in a game. I see…\p
@@ -116,7 +116,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             Oh, and here's a hint: your exploration\n
             throughout the game paid off.\p
             You'll be able to challenge the\n
-            “secret” superboss. Good luck.", MSGBOX_AUTOCLOSE)
+            superboss. Good luck.", MSGBOX_AUTOCLOSE)
         waitmessage
     }
     elif(var(VAR_LINA_TALKED_TO) == 1 && !flag(FLAG_LINA_HOUSE_EEVEE)){
@@ -124,7 +124,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             Uh, this is kind of awkward…\p
             Honestly, I didn't expect to see\n
             you again after that last battle.\p
-            Um…\l
+            Um…\n
             …\p
             You're the type of person who needs\n
             to see EVERYTHING in a game. I see…\p
@@ -142,7 +142,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
         msgbox("You know what, though?\p
             It sucks you didn't keep this same\n
             energy throughout the whole game,\l
-            because you didn't unlock the “secret” \l
+            because you didn't unlock the\l
             superboss.\p
             But you know what? As a favor,\n
             I'll give you a hint:\p
@@ -156,7 +156,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             Uh, this is kind of awkward…\p
             Honestly, I didn't expect to see\n
             you again after that last battle.\p
-            Um…\l
+            Um…\n
             …\p
             You're the type of person who needs\n
             to see EVERYTHING in a game. I see…\p
@@ -174,7 +174,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
         msgbox("You know what, though?\p
             It sucks you didn't keep this same\n
             energy throughout the whole game,\l
-            because you didn't unlock the “secret” \l
+            because you didn't unlock the\l
             superboss.\p
             But you know what? As a favor,\n
             I'll make it so you have a chance\l
@@ -194,7 +194,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             Uh, this is kind of awkward…\p
             Honestly, I didn't expect to see\n
             you again after that last battle.\p
-            Um…\l
+            Um…\n
             …\p
             You're the type of person who needs\n
             to see EVERYTHING in a game. I see…\p
@@ -487,8 +487,8 @@ script Route135_Lab_EventScript_ToAreaZero{
     }
     waitmessage
     if(var(VAR_RESULT) == YES){
-        msgbox("Resplendent!\n
-            Go stand next to COSMOG.\p
+        msgbox("Resplendent!\p
+            Go stand next to COSMOG.\n
             It shall transport you.", MSGBOX_AUTOCLOSE)
         call(Route135_Lab_EventScript_PlayerGoesToCosmog)
         waitmovement(0)
@@ -562,7 +562,7 @@ script Route135_Lab_EventScript_EndAreaZero{
     end
 }
 
-script Route135_Lab_EventScript_TalkToCosmog{
+script Route135_Lab_EventScript_TalkToCosmog{ // functionally unused
     lock
     faceplayer
     msgbox("Ah, intern.\n
@@ -657,8 +657,8 @@ text Route135_Lab_Text_Maniac1{
 }
 
 text Route135_Lab_Text_Maniac2{
-    "Resplendent!\n
-    You're just in time.\l
+    "Resplendent!\p
+    You're just in time.\n
     Come with me."
 }
 
@@ -725,7 +725,6 @@ movement Route_135_Lab_ManiacLookAround{
     walk_in_place_up
     delay_8
     walk_in_place_right
-
 }
 
 movement Route_135_Lab_JamesLookAround{
@@ -736,7 +735,6 @@ movement Route_135_Lab_JamesLookAround{
     walk_in_place_down
     delay_8
     walk_in_place_left
-
 }
 
 movement Route_135_Lab_PlayerLookAround{
@@ -747,7 +745,6 @@ movement Route_135_Lab_PlayerLookAround{
     walk_in_place_up
     delay_8
     walk_in_place_left
-
 }
 
 text Route135_Lab_Text_Maniac6{
@@ -911,7 +908,8 @@ text Route_135_Lab_PokenavText_JamesComeBackToTheLab{
     He thinks you'll be interested\n
     in helping with his experiment.\p
     Can you come to the LAB when\n
-    you have a chance?\p
+    you have a chance?\l
+    I'll see you then.\p
     … … … … … …\n
 	… … … … … Click!"
 }

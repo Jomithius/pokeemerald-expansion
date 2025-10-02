@@ -72,10 +72,10 @@ script Lina_House_EventScript_Bookshelf {
     lock
     msgbox("A bookshelf. \p
     You grab a random book \n
-    and look at the title.")
+    and look at the title.", MSGBOX_DEFAULT)
     waitmessage
     showmonpic(SPECIES_LUCARIO, 10, 4)
-    msgbox("“Muscles & Monsters”")
+    msgbox("“Muscles & Monsters”", MSGBOX_DEFAULT)
     waitmessage
     hidemonpic
     msgbox("……… \p
@@ -88,10 +88,10 @@ script Lina_House_EventScript_Bookshelf {
 script Lina_House_EventScript_TV {
     lock
     msgbox ("There's something playing on the TV. \p
-    It looks like a romance game.")
+    It looks like a romance game.", MSGBOX_DEFAULT)
     waitmessage
     showmonpic(SPECIES_INCINEROAR, 10, 4)
-    msgbox("………")
+    msgbox("………", MSGBOX_DEFAULT)
     waitmessage
     hidemonpic
     msgbox("You decide it's better to not look \n

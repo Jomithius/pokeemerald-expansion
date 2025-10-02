@@ -8,21 +8,21 @@ AzureMountain_Fork_EventScript_DracoMeteorTutor::
 # 5 "data/maps/AzureMountain_Fork/scripts.pory"
 	faceplayer
 # 6 "data/maps/AzureMountain_Fork/scripts.pory"
-	goto_if_not_defeated TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerWiley
+	goto_if_not_defeated TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerDray
 # 7 "data/maps/AzureMountain_Fork/scripts.pory"
 	goto AzureMountain_Fork_EventScript_TeachDracoMeteor
 	end
 
 
-AzureMountain_Fork_EventScript_TrainerWiley::
+AzureMountain_Fork_EventScript_TrainerDray::
 # 12 "data/maps/AzureMountain_Fork/scripts.pory"
 	playbgm MUS_ENCOUNTER_INTENSE, FALSE
 # 13 "data/maps/AzureMountain_Fork/scripts.pory"
-	msgbox AzureMountain_Fork_EventScript_TrainerWiley_Text_0, MSGBOX_AUTOCLOSE
+	msgbox AzureMountain_Fork_EventScript_TrainerDray_Text_0, MSGBOX_AUTOCLOSE
 # 18 "data/maps/AzureMountain_Fork/scripts.pory"
 	waitmessage
 # 19 "data/maps/AzureMountain_Fork/scripts.pory"
-	trainerbattle_no_intro TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerWiley_Text_1
+	trainerbattle_no_intro TRAINER_DRAY, AzureMountain_Fork_EventScript_TrainerDray_Text_1
 # 20 "data/maps/AzureMountain_Fork/scripts.pory"
 	goto AzureMountain_Fork_EventScript_TeachDracoMeteor
 	end
@@ -72,11 +72,11 @@ MoveTutor_EventScript_DracoMeteorTaught::
 	end
 
 
-AzureMountain_Fork_EventScript_TrainerWiley_Text_0:
+AzureMountain_Fork_EventScript_TrainerDray_Text_0:
 # 13 "data/maps/AzureMountain_Fork/scripts.pory"
 	.string "Hm…\p To have climbed such a treacherous\n mountain… Well done.\p You may be able to learn my secret move.\n But first, I must test your strength!$"
 
-AzureMountain_Fork_EventScript_TrainerWiley_Text_1:
+AzureMountain_Fork_EventScript_TrainerDray_Text_1:
 # 19 "data/maps/AzureMountain_Fork/scripts.pory"
 	.string "You have proven yourself well,\nyoung one.$"
 

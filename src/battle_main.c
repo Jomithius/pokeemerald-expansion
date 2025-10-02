@@ -6343,3 +6343,8 @@ static s32 Factorial(s32 n)
         f *= i;
     return f;
 }
+
+void SetBattleScene (void)
+{
+    gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
+}

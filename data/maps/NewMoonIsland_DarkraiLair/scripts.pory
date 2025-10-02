@@ -1,9 +1,11 @@
 mapscripts NewMoonIsland_DarkraiLair_MapScripts {
-    MAP_SCRIPT_ON_LOAD{
-        setflag(FLAG_TEMP_E)
-        end
-    }
+    MAP_SCRIPT_ON_TRANSITION: NewMoonIsland_DarkraiLair_OnTransition
     MAP_SCRIPT_ON_RESUME: NewMoonIsland_DarkraiLair_TryRemoveDarkrai
+}
+
+script NewMoonIsland_DarkraiLair_OnTransition{
+    setflag(FLAG_TEMP_E)
+    end
 }
 
 script NewMoonIsland_DarkraiLair_TryRemoveDarkrai{

@@ -81,7 +81,7 @@ RaticateFailed::
 # 41 "data/maps/RatCave_3F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 # 42 "data/maps/RatCave_3F/scripts.pory"
-	msgbox RaticateFailed_Text_0
+	msgbox RaticateFailed_Text_0, MSGBOX_DEFAULT
 	return
 
 
@@ -164,7 +164,7 @@ RaticateAlolaFailed::
 # 84 "data/maps/RatCave_3F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 # 85 "data/maps/RatCave_3F/scripts.pory"
-	msgbox RaticateFailed_Text_0
+	msgbox RaticateFailed_Text_0, MSGBOX_DEFAULT
 # 86 "data/maps/RatCave_3F/scripts.pory"
 	waitmessage
 	return

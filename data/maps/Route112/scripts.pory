@@ -128,7 +128,7 @@ Route112_Text_RouteSignLavaridge:
 script Route112_Trigger_Emo{
     lockall
     getobjectfacingdirection(OBJ_EVENT_ID_PLAYER, VAR_TEMP_1)
-    if(var(VAR_TEMP_1) == DIR_NORTH){
+    if(var(VAR_TEMP_1) == DIR_NORTH || var(VAR_TEMP_1) == DIR_SOUTH){
         goto(Route112_EventScript_Emo)
     }
     else{

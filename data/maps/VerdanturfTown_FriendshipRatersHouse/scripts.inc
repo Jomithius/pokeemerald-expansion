@@ -259,7 +259,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_TrickTaught::
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_TrickTutor_Text_0:
 # 110 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	.string "Earlier I tricked my mom and\n she got really mad at me!\p If you want, I could teach your\n POKéMON how to trick too.$"
+	.string "Earlier I tricked Mom and\n she got really mad at me!\p If you want, I could teach your\n POKéMON how to trick too.$"
 
 MoveTutor_EventScript_TrickTeach_Text_0:
 # 122 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"

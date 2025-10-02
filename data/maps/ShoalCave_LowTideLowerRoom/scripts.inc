@@ -117,20 +117,18 @@ ShoalCave_LowTideLowerRoom_EventScript_Nicholas::
 # 62 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	trainerbattle_single TRAINER_NICHOLAS_SHOAL_CAVE, ShoalCave_LowTideLowerRoom_Text_NicholasIntro, ShoalCave_LowTideLowerRoom_Text_NicholasDefeat
 # 63 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	msgbox ShoalCave_LowTideLowerRoom_Text_NicholasPostBattle, MSGBOX_AUTOCLOSE
-# 64 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	waitmessage
+	msgbox ShoalCave_LowTideLowerRoom_Text_NicholasPostBattle, MSGBOX_NPC
 	end
 
 
 ShoalCave_LowTideLowerRoom_Text_NicholasIntro::
-# 68 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+# 67 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	.string "Fear the power of my blade!$"
 
 ShoalCave_LowTideLowerRoom_Text_NicholasDefeat::
-# 72 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+# 71 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	.string "Kuh…\n You've wounded a KNIGHT's pride…$"
 
 ShoalCave_LowTideLowerRoom_Text_NicholasPostBattle::
-# 77 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+# 76 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	.string "Our commander is training below.\n It's too cold, so I stayed up here.$"

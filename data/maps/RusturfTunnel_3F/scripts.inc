@@ -40,7 +40,7 @@ RusturfTunnel_3F_EventScript_Sarah::
 # 28 "data/maps/RusturfTunnel_3F/scripts.pory"
 	trainerbattle_single TRAINER_SARAH, RusturfTunnel_3F_Text_SarahIntro, RusturfTunnel_3F_Text_SarahDefeat
 # 29 "data/maps/RusturfTunnel_3F/scripts.pory"
-	msgbox RusturfTunnel_3F_Text_SarahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox RusturfTunnel_3F_Text_SarahPostBattle, MSGBOX_NPC
 	end
 
 
@@ -48,19 +48,15 @@ RusturfTunnel_3F_EventScript_Dawson::
 # 46 "data/maps/RusturfTunnel_3F/scripts.pory"
 	trainerbattle_single TRAINER_DAWSON, RusturfTunnel_3F_Text_DawsonIntro, RusturfTunnel_3F_Text_DawsonDefeat
 # 47 "data/maps/RusturfTunnel_3F/scripts.pory"
-	msgbox RusturfTunnel_3F_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE
-# 48 "data/maps/RusturfTunnel_3F/scripts.pory"
-	waitmessage
+	msgbox RusturfTunnel_3F_Text_DawsonPostBattle, MSGBOX_NPC
 	end
 
 
 RusturfTunnel_3F_EventScript_Jerry::
-# 65 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 64 "data/maps/RusturfTunnel_3F/scripts.pory"
 	trainerbattle_single TRAINER_JERRY, RusturfTunnel_3F_Text_JerryIntro, RusturfTunnel_3F_Text_JerryDefeat
-# 66 "data/maps/RusturfTunnel_3F/scripts.pory"
-	msgbox RusturfTunnel_3F_Text_JerryPostBattle, MSGBOX_AUTOCLOSE
-# 67 "data/maps/RusturfTunnel_3F/scripts.pory"
-	waitmessage
+# 65 "data/maps/RusturfTunnel_3F/scripts.pory"
+	msgbox RusturfTunnel_3F_Text_JerryPostBattle, MSGBOX_NPC
 	end
 
 
@@ -89,25 +85,25 @@ RusturfTunnel_3F_Text_SarahPostBattle::
 	.string "Seriously, what's that smell?$"
 
 RusturfTunnel_3F_Text_DawsonIntro::
-# 52 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 51 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Huh? I don't smell anything.$"
 
 RusturfTunnel_3F_Text_DawsonDefeat::
-# 56 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 55 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "I really don't smell anything!$"
 
 RusturfTunnel_3F_Text_DawsonPostBattle::
-# 60 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 59 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "Does it really smell bad?$"
 
 RusturfTunnel_3F_Text_JerryIntro::
-# 71 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 69 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "We learn all sorts of things at the\n TRAINER'S SCHOOL.$"
 
 RusturfTunnel_3F_Text_JerryDefeat::
-# 76 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 74 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "I slacked off in school…\n  That's why I lost.$"
 
 RusturfTunnel_3F_Text_JerryPostBattle::
-# 80 "data/maps/RusturfTunnel_3F/scripts.pory"
+# 78 "data/maps/RusturfTunnel_3F/scripts.pory"
 	.string "I should've studied more.$"

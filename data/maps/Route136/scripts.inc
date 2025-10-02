@@ -24,7 +24,7 @@ Route136_CheckEnterFromMountain::
 # 21 "data/maps/Route136/scripts.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 22 "data/maps/Route136/scripts.pory"
-	goto_if_le VAR_TEMP_1, 8, Route136_EnterFromMountain
+	call_if_le VAR_TEMP_1, 8, Route136_EnterFromMountain
 	return
 
 
@@ -33,7 +33,7 @@ Route136_EnterFromMountain::
 	setweather WEATHER_SHADE
 # 28 "data/maps/Route136/scripts.pory"
 	doweather
-	end
+	return
 
 
 Route136_RemoveKlawf::

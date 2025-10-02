@@ -26,7 +26,7 @@ script RusturfTunnel_3F_EventScript_DefogMan{
 
 script RusturfTunnel_3F_EventScript_Sarah{
 	trainerbattle_single(TRAINER_SARAH, RusturfTunnel_3F_Text_SarahIntro, RusturfTunnel_3F_Text_SarahDefeat)
-    msgbox(RusturfTunnel_3F_Text_SarahPostBattle, MSGBOX_AUTOCLOSE)
+    msgbox(RusturfTunnel_3F_Text_SarahPostBattle, MSGBOX_NPC)
 	end
 }
 
@@ -44,8 +44,7 @@ text RusturfTunnel_3F_Text_SarahPostBattle{
 
 script RusturfTunnel_3F_EventScript_Dawson{
 	trainerbattle_single(TRAINER_DAWSON, RusturfTunnel_3F_Text_DawsonIntro, RusturfTunnel_3F_Text_DawsonDefeat)
-    msgbox(RusturfTunnel_3F_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(RusturfTunnel_3F_Text_DawsonPostBattle, MSGBOX_NPC)
 	end
 }
 
@@ -63,8 +62,7 @@ text RusturfTunnel_3F_Text_DawsonPostBattle{
 
 script RusturfTunnel_3F_EventScript_Jerry{
 	trainerbattle_single(TRAINER_JERRY, RusturfTunnel_3F_Text_JerryIntro, RusturfTunnel_3F_Text_JerryDefeat)
-    msgbox(RusturfTunnel_3F_Text_JerryPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(RusturfTunnel_3F_Text_JerryPostBattle, MSGBOX_NPC)
 	end
 }
 

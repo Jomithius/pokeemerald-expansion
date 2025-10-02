@@ -34,8 +34,8 @@ Baldesia_House2_EventScript_Blissey::
 
 Baldesia_House2_EventScript_OldWoman_Text_0:
 # 4 "data/maps/Baldesia_House2/scripts.pory"
-	.string "Every time JIRACHI is going to awaken,\n the Young Lady of the ASAKURA\l household is required to make the\l pilgrimage to the altar to perform a\l very sacred ritual.$"
+	.string "Every time JIRACHI is going to awaken,\n the BALD MAIDEN of the ASAKURA\l household is required to make the\l pilgrimage to the altar to perform a\l very sacred ritual.$"
 
 Baldesia_House2_EventScript_OldMan_Text_0:
 # 13 "data/maps/Baldesia_House2/scripts.pory"
-	.string "It's said every 1000 years JIRACHI\n awakens to grant one wish.\p That's a lie though.\n It really awakens every 50 years or so.\p It must be a light sleeper. Hahaha!$"
+	.string "It's said every 1000 years JIRACHI\n awakens to grant one wish.\p That's a lie though.\n It really awakens every 50 years or so.\p It must be a light sleeper. Gahaha!$"

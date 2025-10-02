@@ -37,6 +37,7 @@ script WachunpelonCity_SmallHouse3_EventScript_LinaTryAddVar{
     release
     end
 }
+
 script WachunpelonCity_SmallHouse3_EventScript_Kai{
     msgbox("{PLAYER}!\p
         I cooked up a new strategy for the\n

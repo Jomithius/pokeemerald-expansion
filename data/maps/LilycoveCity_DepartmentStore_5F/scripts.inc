@@ -453,11 +453,11 @@ LilycoveCity_DepartmentStore_5F_EventScript_Lina_9:
 
 LilycoveCity_DepartmentStore_5F_Text_Misa1::
 # 196 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "Oh, {PLAYER}!\p It's nice to see you again!\n I had to stop by the DEPT. STORE\l before I went back to work.\l I just love the POKé DOLLS here!\p Have you eaten? I bought some\n candy earlier, but I got too much.\p Here.\n You can take the rest!$"
+	.string "Oh, {PLAYER}!\n It's nice to see you again!\p I had to stop by the DEPT. STORE\n before I went back to work.\l I just love the POKé DOLLS here!\p Have you eaten? I bought some\n candy earlier, but I got too much.\p Here.\n You can take the rest!$"
 
 LilycoveCity_DepartmentStore_5F_Text_Misa2::
 # 208 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "By the way, I ran into JAMES earlier.\n He seems really motivated since\l meeting you.\p I also his noticed his… behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on his journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
+	.string "By the way, I ran into JAMES earlier.\p He seems really motivated since\n meeting you.\p I also his noticed his… behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on his journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
 
 LilycoveCity_DepartmentStore_5F_Text_Misa3::
 # 222 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
@@ -465,7 +465,7 @@ LilycoveCity_DepartmentStore_5F_Text_Misa3::
 
 LilcoveCity_DepartmentStore_5F_Text_Lina1::
 # 261 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "What?\n The next “Muscles & Monsters” still\l isn't in yet…$"
+	.string "What?\p The next “Muscles & Monsters” still\n isn't in yet…$"
 
 LilcoveCity_DepartmentStore_5F_Text_Lina2::
 # 267 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

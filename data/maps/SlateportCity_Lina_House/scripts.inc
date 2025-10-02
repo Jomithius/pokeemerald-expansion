@@ -117,13 +117,13 @@ Lina_House_EventScript_Bookshelf::
 # 72 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	lock
 # 73 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_Bookshelf_Text_0
+	msgbox Lina_House_EventScript_Bookshelf_Text_0, MSGBOX_DEFAULT
 # 76 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
 # 77 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	showmonpic SPECIES_LUCARIO, 10, 4
 # 78 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_Bookshelf_Text_1
+	msgbox Lina_House_EventScript_Bookshelf_Text_1, MSGBOX_DEFAULT
 # 79 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
 # 80 "data/maps/SlateportCity_Lina_House/scripts.pory"
@@ -141,13 +141,13 @@ Lina_House_EventScript_TV::
 # 89 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	lock
 # 90 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_TV_Text_0
+	msgbox Lina_House_EventScript_TV_Text_0, MSGBOX_DEFAULT
 # 92 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
 # 93 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	showmonpic SPECIES_INCINEROAR, 10, 4
 # 94 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	msgbox Lina_House_EventScript_TV_Text_1
+	msgbox Lina_House_EventScript_TV_Text_1, MSGBOX_DEFAULT
 # 95 "data/maps/SlateportCity_Lina_House/scripts.pory"
 	waitmessage
 # 96 "data/maps/SlateportCity_Lina_House/scripts.pory"

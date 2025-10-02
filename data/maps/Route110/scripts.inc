@@ -2005,400 +2005,402 @@ Route110_EventScript_Speedwagon::
 # 1038 "data/maps/Route110/scripts.pory"
 	trainerbattle_no_intro TRAINER_SPEEDWAGON, Route110_SpeedwagonDefeat
 # 1039 "data/maps/Route110/scripts.pory"
-	lock
-# 1040 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_Speedwagon_PostBattle, MSGBOX_AUTOCLOSE
-# 1041 "data/maps/Route110/scripts.pory"
+# 1040 "data/maps/Route110/scripts.pory"
 	waitmessage
-# 1042 "data/maps/Route110/scripts.pory"
+# 1041 "data/maps/Route110/scripts.pory"
 	delay 30
-# 1043 "data/maps/Route110/scripts.pory"
+# 1042 "data/maps/Route110/scripts.pory"
 	playbgm MUS_DUMMY, FALSE
-# 1044 "data/maps/Route110/scripts.pory"
+# 1043 "data/maps/Route110/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 1045 "data/maps/Route110/scripts.pory"
+# 1044 "data/maps/Route110/scripts.pory"
 	playse SE_THUNDERSTORM
-# 1046 "data/maps/Route110/scripts.pory"
+# 1045 "data/maps/Route110/scripts.pory"
 	delay 120
-# 1047 "data/maps/Route110/scripts.pory"
+# 1046 "data/maps/Route110/scripts.pory"
 	playse SE_THUNDERSTORM_STOP
-# 1048 "data/maps/Route110/scripts.pory"
+# 1047 "data/maps/Route110/scripts.pory"
 	delay 20
-# 1049 "data/maps/Route110/scripts.pory"
+# 1048 "data/maps/Route110/scripts.pory"
 	playse SE_FLEE
-# 1050 "data/maps/Route110/scripts.pory"
+# 1049 "data/maps/Route110/scripts.pory"
 	removeobject 33
-# 1051 "data/maps/Route110/scripts.pory"
+# 1050 "data/maps/Route110/scripts.pory"
 	removeobject 34
-# 1052 "data/maps/Route110/scripts.pory"
+# 1051 "data/maps/Route110/scripts.pory"
 	removeobject 35
-# 1053 "data/maps/Route110/scripts.pory"
+# 1052 "data/maps/Route110/scripts.pory"
 	removeobject 36
-# 1054 "data/maps/Route110/scripts.pory"
+# 1053 "data/maps/Route110/scripts.pory"
 	removeobject 37
-# 1055 "data/maps/Route110/scripts.pory"
+# 1054 "data/maps/Route110/scripts.pory"
 	removeobject 38
-# 1056 "data/maps/Route110/scripts.pory"
+# 1055 "data/maps/Route110/scripts.pory"
 	removeobject 39
-# 1057 "data/maps/Route110/scripts.pory"
+# 1056 "data/maps/Route110/scripts.pory"
 	removeobject 40
-# 1058 "data/maps/Route110/scripts.pory"
+# 1057 "data/maps/Route110/scripts.pory"
 	removeobject 41
-# 1059 "data/maps/Route110/scripts.pory"
+# 1058 "data/maps/Route110/scripts.pory"
 	removeobject 42
-# 1060 "data/maps/Route110/scripts.pory"
+# 1059 "data/maps/Route110/scripts.pory"
 	removeobject 43
-# 1061 "data/maps/Route110/scripts.pory"
+# 1060 "data/maps/Route110/scripts.pory"
 	removeobject 44
-# 1062 "data/maps/Route110/scripts.pory"
+# 1061 "data/maps/Route110/scripts.pory"
 	removeobject 45
+# 1062 "data/maps/Route110/scripts.pory"
+	delay 10
 # 1063 "data/maps/Route110/scripts.pory"
-	delay 10
-# 1064 "data/maps/Route110/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 3
-# 1065 "data/maps/Route110/scripts.pory"
+# 1064 "data/maps/Route110/scripts.pory"
 	delay 10
-# 1066 "data/maps/Route110/scripts.pory"
+# 1065 "data/maps/Route110/scripts.pory"
 	savebgm MUS_DUMMY
-# 1067 "data/maps/Route110/scripts.pory"
+# 1066 "data/maps/Route110/scripts.pory"
 	fadedefaultbgm
-# 1068 "data/maps/Route110/scripts.pory"
+# 1067 "data/maps/Route110/scripts.pory"
 	setrespawn HEAL_LOCATION_MAUVILLE_CITY
-# 1069 "data/maps/Route110/scripts.pory"
+# 1068 "data/maps/Route110/scripts.pory"
 	setvar VAR_SPEEDWAGON_STATE, 6
-# 1070 "data/maps/Route110/scripts.pory"
+# 1069 "data/maps/Route110/scripts.pory"
 	setflag FLAG_ROUTE110_HIDE_BIKERS
-# 1071 "data/maps/Route110/scripts.pory"
+# 1070 "data/maps/Route110/scripts.pory"
 	clearflag FLAG_SYS_BIKERS_ROUTE_110
-# 1072 "data/maps/Route110/scripts.pory"
+# 1071 "data/maps/Route110/scripts.pory"
 	clearflag FLAG_DONT_TRANSITION_MUSIC
-# 1073 "data/maps/Route110/scripts.pory"
+# 1072 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
 Route110_Policeman_GiveUturn::
-# 1097 "data/maps/Route110/scripts.pory"
+# 1096 "data/maps/Route110/scripts.pory"
 	lockall
-# 1098 "data/maps/Route110/scripts.pory"
+# 1097 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Policeman_GiveUturn_Text_0, MSGBOX_AUTOCLOSE
-# 1099 "data/maps/Route110/scripts.pory"
+# 1098 "data/maps/Route110/scripts.pory"
 	waitmessage
-# 1100 "data/maps/Route110/scripts.pory"
+# 1099 "data/maps/Route110/scripts.pory"
 	clearflag FLAG_HIDE_POLICEMAN_ROUTE_110
-# 1101 "data/maps/Route110/scripts.pory"
+# 1100 "data/maps/Route110/scripts.pory"
 	addobject 46
-# 1102 "data/maps/Route110/scripts.pory"
+# 1101 "data/maps/Route110/scripts.pory"
 	checkobjectat 16, 90
-# 1103 "data/maps/Route110/scripts.pory"
+# 1102 "data/maps/Route110/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq Route110_Policeman_GiveUturn_2
-# 1108 "data/maps/Route110/scripts.pory"
+# 1107 "data/maps/Route110/scripts.pory"
 	applymovement 46, Route110_Policeman_West
-# 1109 "data/maps/Route110/scripts.pory"
+# 1108 "data/maps/Route110/scripts.pory"
 	waitmovement 46
 Route110_Policeman_GiveUturn_1:
-# 1111 "data/maps/Route110/scripts.pory"
+# 1110 "data/maps/Route110/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
-# 1112 "data/maps/Route110/scripts.pory"
+# 1111 "data/maps/Route110/scripts.pory"
 	compare VAR_TEMP_1, DIR_SOUTH
 	goto_if_ne Route110_Policeman_GiveUturn_6
 Route110_Policeman_GiveUturn_5:
-# 1116 "data/maps/Route110/scripts.pory"
+# 1115 "data/maps/Route110/scripts.pory"
 	delay 10
-# 1117 "data/maps/Route110/scripts.pory"
+# 1116 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_PolicemanThankYou, MSGBOX_DEFAULT
+# 1117 "data/maps/Route110/scripts.pory"
+	waitmessage
 # 1118 "data/maps/Route110/scripts.pory"
-	waitmessage
-# 1119 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_TM_U_TURN
+# 1119 "data/maps/Route110/scripts.pory"
+	waitmessage
 # 1120 "data/maps/Route110/scripts.pory"
-	waitmessage
-# 1121 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE
-# 1122 "data/maps/Route110/scripts.pory"
+# 1121 "data/maps/Route110/scripts.pory"
 	waitmessage
-# 1123 "data/maps/Route110/scripts.pory"
+# 1122 "data/maps/Route110/scripts.pory"
 	applymovement 46, Route110_PolicemanLeave
-# 1124 "data/maps/Route110/scripts.pory"
+# 1123 "data/maps/Route110/scripts.pory"
 	waitmovement 46
-# 1125 "data/maps/Route110/scripts.pory"
+# 1124 "data/maps/Route110/scripts.pory"
 	removeobject 46
-# 1126 "data/maps/Route110/scripts.pory"
+# 1125 "data/maps/Route110/scripts.pory"
 	setflag FLAG_HIDE_POLICEMAN_ROUTE_110
-# 1127 "data/maps/Route110/scripts.pory"
+# 1126 "data/maps/Route110/scripts.pory"
 	setvar VAR_SPEEDWAGON_STATE, 8
-# 1128 "data/maps/Route110/scripts.pory"
+# 1127 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 Route110_Policeman_GiveUturn_2:
-# 1104 "data/maps/Route110/scripts.pory"
+# 1103 "data/maps/Route110/scripts.pory"
 	applymovement 46, Route110_Policeman_South
-# 1105 "data/maps/Route110/scripts.pory"
+# 1104 "data/maps/Route110/scripts.pory"
 	waitmovement 46
 	goto Route110_Policeman_GiveUturn_1
 
 Route110_Policeman_GiveUturn_6:
-# 1113 "data/maps/Route110/scripts.pory"
+# 1112 "data/maps/Route110/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
-# 1114 "data/maps/Route110/scripts.pory"
+# 1113 "data/maps/Route110/scripts.pory"
 	waitmovement 0
 	goto Route110_Policeman_GiveUturn_5
 
 
 Route110_Policeman_GiveUturnNorth::
-# 1133 "data/maps/Route110/scripts.pory"
+# 1132 "data/maps/Route110/scripts.pory"
 	lockall
-# 1134 "data/maps/Route110/scripts.pory"
+# 1133 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Policeman_GiveUturn_Text_0, MSGBOX_AUTOCLOSE
-# 1135 "data/maps/Route110/scripts.pory"
+# 1134 "data/maps/Route110/scripts.pory"
 	waitmessage
-# 1136 "data/maps/Route110/scripts.pory"
+# 1135 "data/maps/Route110/scripts.pory"
 	clearflag FLAG_HIDE_POLICEMAN_ROUTE_110
-# 1137 "data/maps/Route110/scripts.pory"
+# 1136 "data/maps/Route110/scripts.pory"
 	addobject 47
-# 1138 "data/maps/Route110/scripts.pory"
+# 1137 "data/maps/Route110/scripts.pory"
 	checkobjectat 14, 17
-# 1139 "data/maps/Route110/scripts.pory"
+# 1138 "data/maps/Route110/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq Route110_Policeman_GiveUturnNorth_2
-# 1144 "data/maps/Route110/scripts.pory"
+# 1143 "data/maps/Route110/scripts.pory"
 	applymovement 47, Route110_Policeman_North2
-# 1145 "data/maps/Route110/scripts.pory"
+# 1144 "data/maps/Route110/scripts.pory"
 	waitmovement 47
 Route110_Policeman_GiveUturnNorth_1:
-# 1147 "data/maps/Route110/scripts.pory"
+# 1146 "data/maps/Route110/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
-# 1148 "data/maps/Route110/scripts.pory"
+# 1147 "data/maps/Route110/scripts.pory"
 	compare VAR_TEMP_1, DIR_WEST
 	goto_if_ne Route110_Policeman_GiveUturnNorth_6
 Route110_Policeman_GiveUturnNorth_5:
-# 1152 "data/maps/Route110/scripts.pory"
+# 1151 "data/maps/Route110/scripts.pory"
 	delay 10
-# 1153 "data/maps/Route110/scripts.pory"
+# 1152 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_PolicemanThankYou, MSGBOX_DEFAULT
+# 1153 "data/maps/Route110/scripts.pory"
+	waitmessage
 # 1154 "data/maps/Route110/scripts.pory"
-	waitmessage
-# 1155 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_TM_U_TURN
+# 1155 "data/maps/Route110/scripts.pory"
+	waitmessage
 # 1156 "data/maps/Route110/scripts.pory"
-	waitmessage
-# 1157 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE
-# 1158 "data/maps/Route110/scripts.pory"
+# 1157 "data/maps/Route110/scripts.pory"
 	waitmessage
-# 1159 "data/maps/Route110/scripts.pory"
+# 1158 "data/maps/Route110/scripts.pory"
 	applymovement 47, Route110_PolicemanLeaveNorth
-# 1160 "data/maps/Route110/scripts.pory"
+# 1159 "data/maps/Route110/scripts.pory"
 	waitmovement 47
-# 1161 "data/maps/Route110/scripts.pory"
+# 1160 "data/maps/Route110/scripts.pory"
 	removeobject 47
-# 1162 "data/maps/Route110/scripts.pory"
+# 1161 "data/maps/Route110/scripts.pory"
 	setflag FLAG_HIDE_POLICEMAN_ROUTE_110
-# 1163 "data/maps/Route110/scripts.pory"
+# 1162 "data/maps/Route110/scripts.pory"
 	setvar VAR_SPEEDWAGON_STATE, 8
-# 1164 "data/maps/Route110/scripts.pory"
+# 1163 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 Route110_Policeman_GiveUturnNorth_2:
-# 1140 "data/maps/Route110/scripts.pory"
+# 1139 "data/maps/Route110/scripts.pory"
 	applymovement 47, Route110_Policeman_North
-# 1141 "data/maps/Route110/scripts.pory"
+# 1140 "data/maps/Route110/scripts.pory"
 	waitmovement 47
 	goto Route110_Policeman_GiveUturnNorth_1
 
 Route110_Policeman_GiveUturnNorth_6:
-# 1149 "data/maps/Route110/scripts.pory"
+# 1148 "data/maps/Route110/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
-# 1150 "data/maps/Route110/scripts.pory"
+# 1149 "data/maps/Route110/scripts.pory"
 	waitmovement 0
 	goto Route110_Policeman_GiveUturnNorth_5
 
 
 Route110_EventScript_BikerSouthCyclingRoad::
-# 1183 "data/maps/Route110/scripts.pory"
+# 1182 "data/maps/Route110/scripts.pory"
 	lock
-# 1184 "data/maps/Route110/scripts.pory"
+# 1183 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_BikerSouthCyclingRoad_Text_0
-# 1186 "data/maps/Route110/scripts.pory"
+# 1185 "data/maps/Route110/scripts.pory"
 	waitmessage
-# 1187 "data/maps/Route110/scripts.pory"
+# 1186 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
-# 1217 "data/maps/Route110/scripts.pory"
+# 1216 "data/maps/Route110/scripts.pory"
 Route110_Policeman_North:
-# 1218 "data/maps/Route110/scripts.pory"
+# 1217 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1218 "data/maps/Route110/scripts.pory"
+# 1217 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1218 "data/maps/Route110/scripts.pory"
+# 1217 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1218 "data/maps/Route110/scripts.pory"
+# 1217 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1218 "data/maps/Route110/scripts.pory"
+# 1217 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1218 "data/maps/Route110/scripts.pory"
+# 1217 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1218 "data/maps/Route110/scripts.pory"
+# 1217 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1218 "data/maps/Route110/scripts.pory"
+# 1217 "data/maps/Route110/scripts.pory"
 	walk_right
 	step_end
 
-# 1221 "data/maps/Route110/scripts.pory"
+# 1220 "data/maps/Route110/scripts.pory"
 Route110_Policeman_North2:
+# 1221 "data/maps/Route110/scripts.pory"
+	walk_down
 # 1222 "data/maps/Route110/scripts.pory"
-	walk_down
-# 1223 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1223 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1223 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1223 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1223 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1223 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1223 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1223 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	walk_right
-# 1223 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	walk_right
 	step_end
 
-# 1226 "data/maps/Route110/scripts.pory"
+# 1225 "data/maps/Route110/scripts.pory"
 Route110_PolicemanLeaveNorth:
-# 1227 "data/maps/Route110/scripts.pory"
+# 1226 "data/maps/Route110/scripts.pory"
+	walk_left
+# 1226 "data/maps/Route110/scripts.pory"
+	walk_left
+# 1226 "data/maps/Route110/scripts.pory"
 	walk_left
 # 1227 "data/maps/Route110/scripts.pory"
-	walk_left
-# 1228 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1228 "data/maps/Route110/scripts.pory"
+# 1227 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1228 "data/maps/Route110/scripts.pory"
+# 1227 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1228 "data/maps/Route110/scripts.pory"
+# 1227 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1228 "data/maps/Route110/scripts.pory"
+# 1227 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1228 "data/maps/Route110/scripts.pory"
+# 1227 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1228 "data/maps/Route110/scripts.pory"
+# 1227 "data/maps/Route110/scripts.pory"
 	walk_up
 	step_end
 
-# 1231 "data/maps/Route110/scripts.pory"
+# 1230 "data/maps/Route110/scripts.pory"
 Route110_Policeman_South:
-# 1232 "data/maps/Route110/scripts.pory"
+# 1231 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1232 "data/maps/Route110/scripts.pory"
+# 1231 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1232 "data/maps/Route110/scripts.pory"
+# 1231 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1232 "data/maps/Route110/scripts.pory"
+# 1231 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1232 "data/maps/Route110/scripts.pory"
+# 1231 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1232 "data/maps/Route110/scripts.pory"
+# 1231 "data/maps/Route110/scripts.pory"
 	walk_up
 	step_end
 
-# 1235 "data/maps/Route110/scripts.pory"
+# 1234 "data/maps/Route110/scripts.pory"
 Route110_Policeman_West:
-# 1236 "data/maps/Route110/scripts.pory"
+# 1235 "data/maps/Route110/scripts.pory"
 	walk_left
-# 1237 "data/maps/Route110/scripts.pory"
+# 1236 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1237 "data/maps/Route110/scripts.pory"
+# 1236 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1237 "data/maps/Route110/scripts.pory"
+# 1236 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1237 "data/maps/Route110/scripts.pory"
+# 1236 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1237 "data/maps/Route110/scripts.pory"
+# 1236 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1237 "data/maps/Route110/scripts.pory"
+# 1236 "data/maps/Route110/scripts.pory"
 	walk_up
-# 1237 "data/maps/Route110/scripts.pory"
+# 1236 "data/maps/Route110/scripts.pory"
 	walk_up
 	step_end
 
-# 1240 "data/maps/Route110/scripts.pory"
+# 1239 "data/maps/Route110/scripts.pory"
 Route110_PolicemanLeave:
-# 1241 "data/maps/Route110/scripts.pory"
+# 1240 "data/maps/Route110/scripts.pory"
+	walk_down
+# 1240 "data/maps/Route110/scripts.pory"
+	walk_down
+# 1240 "data/maps/Route110/scripts.pory"
 	walk_down
 # 1241 "data/maps/Route110/scripts.pory"
+	walk_right
+# 1242 "data/maps/Route110/scripts.pory"
 	walk_down
-# 1241 "data/maps/Route110/scripts.pory"
+# 1242 "data/maps/Route110/scripts.pory"
 	walk_down
-# 1241 "data/maps/Route110/scripts.pory"
+# 1242 "data/maps/Route110/scripts.pory"
 	walk_down
-# 1241 "data/maps/Route110/scripts.pory"
-	walk_down
-# 1241 "data/maps/Route110/scripts.pory"
-	walk_down
-# 1241 "data/maps/Route110/scripts.pory"
+# 1242 "data/maps/Route110/scripts.pory"
 	walk_down
 	step_end
 
 Route110_EventScript_PolicemanHelpTrigger1::
-# 1245 "data/maps/Route110/scripts.pory"
-	lock
 # 1246 "data/maps/Route110/scripts.pory"
-	msgbox Route110_EventScript_PolicemanHelp_Text_0, MSGBOX_AUTOCLOSE
+	lock
 # 1247 "data/maps/Route110/scripts.pory"
-	waitmessage
+	msgbox Route110_EventScript_PolicemanHelp_Text_0, MSGBOX_AUTOCLOSE
 # 1248 "data/maps/Route110/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
+	waitmessage
 # 1249 "data/maps/Route110/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
 # 1250 "data/maps/Route110/scripts.pory"
+	waitmovement 0
+# 1251 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
 Route110_EventScript_PolicemanHelpTrigger2::
-# 1255 "data/maps/Route110/scripts.pory"
-	lock
 # 1256 "data/maps/Route110/scripts.pory"
-	msgbox Route110_EventScript_PolicemanHelpTrigger2_Text_0, MSGBOX_AUTOCLOSE
+	lock
 # 1257 "data/maps/Route110/scripts.pory"
-	waitmessage
+	msgbox Route110_EventScript_PolicemanHelpTrigger2_Text_0, MSGBOX_AUTOCLOSE
 # 1258 "data/maps/Route110/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	waitmessage
 # 1259 "data/maps/Route110/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 # 1260 "data/maps/Route110/scripts.pory"
+	waitmovement 0
+# 1261 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
-# 1264 "data/maps/Route110/scripts.pory"
-Route110_WalkUp:
 # 1265 "data/maps/Route110/scripts.pory"
+Route110_WalkUp:
+# 1266 "data/maps/Route110/scripts.pory"
 	walk_up
 	step_end
 
-# 1268 "data/maps/Route110/scripts.pory"
-Route110_WalkLeft:
 # 1269 "data/maps/Route110/scripts.pory"
+Route110_WalkLeft:
+# 1270 "data/maps/Route110/scripts.pory"
 	walk_left
 	step_end
 
 Route110_EventScript_SaveBikerMusic::
-# 1273 "data/maps/Route110/scripts.pory"
+# 1274 "data/maps/Route110/scripts.pory"
 	savebgm MUS_RG_SILPH
-# 1275 "data/maps/Route110/scripts.pory"
-	setflag FLAG_DONT_TRANSITION_MUSIC
 # 1276 "data/maps/Route110/scripts.pory"
+	setflag FLAG_DONT_TRANSITION_MUSIC
+# 1277 "data/maps/Route110/scripts.pory"
 	setrespawn HEAL_LOCATION_MAUVILLE_CITY
 	return
 
@@ -2420,15 +2422,15 @@ Route110_EventScript_PolicemanHelp_Text_0:
 	.string "Help!$"
 
 Route110_Policeman_GiveUturn_Text_0:
-# 1098 "data/maps/Route110/scripts.pory"
+# 1097 "data/maps/Route110/scripts.pory"
 	.string "Wait!$"
 
 Route110_EventScript_BikerSouthCyclingRoad_Text_0:
-# 1184 "data/maps/Route110/scripts.pory"
+# 1183 "data/maps/Route110/scripts.pory"
 	.string "BRRRRUBBB BRRRRUB\n BRRRUBRUBRRRRUB!$"
 
 Route110_EventScript_PolicemanHelpTrigger2_Text_0:
-# 1256 "data/maps/Route110/scripts.pory"
+# 1257 "data/maps/Route110/scripts.pory"
 	.string "I can't just leave things\nlike this!$"
 
 Route110_Text_PolicemanPleaseHelp::
@@ -2436,45 +2438,45 @@ Route110_Text_PolicemanPleaseHelp::
 	.string "Thank you for saving me.\n You're a strong TRAINER.\l Though the situation is urgent!\p Backup isn't coming, and I can't\n do this alone.\p Their boss is currently riding at\n end of CYCLING ROAD.\p If you can defeat him, all these\n other cowards should flee!\l You have a bike, right?$"
 
 Route110_Text_Speedwagon::
-# 1077 "data/maps/Route110/scripts.pory"
+# 1076 "data/maps/Route110/scripts.pory"
 	.string "Huh?\n Who's this brat?\p HUH?\n You're telling US to leave?\p You can't stop us from riding!\n Don't try to be a hero!$"
 
 Route110_SpeedwagonDefeat::
-# 1086 "data/maps/Route110/scripts.pory"
+# 1085 "data/maps/Route110/scripts.pory"
 	.string "Dress for the slide,\n not the ride…$"
 
 Route110_Text_Speedwagon_PostBattle::
-# 1091 "data/maps/Route110/scripts.pory"
+# 1090 "data/maps/Route110/scripts.pory"
 	.string "H-how are you so strong?!\n Let's get outta here, boys!$"
 
 Route110_Text_PolicemanThankYou::
-# 1168 "data/maps/Route110/scripts.pory"
+# 1167 "data/maps/Route110/scripts.pory"
 	.string "Thank you for helping me.\n Please, take this as thanks.\p One of those thugs dropped it\n as they fled.$"
 
 Route110_Text_PolicemanThankYou2::
-# 1175 "data/maps/Route110/scripts.pory"
+# 1174 "data/maps/Route110/scripts.pory"
 	.string "Well, I need to go file a report\n and help gather forces to hunt down\l all the BIKERS that got away.\p Take care.$"
 
 Route110_Biker_Intro::
-# 1191 "data/maps/Route110/scripts.pory"
+# 1190 "data/maps/Route110/scripts.pory"
 	.string "BRRRRUBBB BRRRRUB\n BRRRUBRUBRRRRUB!$"
 
 Route110_Biker_Intro2::
-# 1196 "data/maps/Route110/scripts.pory"
+# 1195 "data/maps/Route110/scripts.pory"
 	.string "Get out of my way!$"
 
 Route110_Biker_Intro3::
-# 1200 "data/maps/Route110/scripts.pory"
+# 1199 "data/maps/Route110/scripts.pory"
 	.string "The CYCLING ROAD belongs to the\n MISSISSWUAGWA RIDERS now!$"
 
 Route110_BikerDefeat::
-# 1205 "data/maps/Route110/scripts.pory"
+# 1204 "data/maps/Route110/scripts.pory"
 	.string "All outta gas…$"
 
 Route110_BikerDefeat2::
-# 1209 "data/maps/Route110/scripts.pory"
+# 1208 "data/maps/Route110/scripts.pory"
 	.string "You messed up my ride!$"
 
 Route110_BikerDefeat3::
-# 1213 "data/maps/Route110/scripts.pory"
+# 1212 "data/maps/Route110/scripts.pory"
 	.string "BRRRRUBBB BRRRUB…$"

@@ -2,8 +2,7 @@ mapscripts RusturfTunnel_2F_MapScripts {}
 
 script RusturfTunnel_2F_EventScript_Ivan{
     trainerbattle_single(TRAINER_IVAN, RusturfTunnel_2F_Text_IvanIntro, Route104_Text_IvanDefeat)
-    msgbox(RusturfTunnel_2F_Text_IvanPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(RusturfTunnel_2F_Text_IvanPostBattle, MSGBOX_NPC)
 	end
 }
 
@@ -17,8 +16,7 @@ text RusturfTunnel_2F_Text_IvanPostBattle {"Why can't I get any faster?"}
 
 script RusturfTunnel_2F_EventScript_Athena{
     trainerbattle_single(TRAINER_ATHENA, RusturfTunnel_2F_Text_AthenaIntro, RusturfTunnel_2F_Text_AthenaDefeat)
-    msgbox(RusturfTunnel_2F_Text_AthenaPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(RusturfTunnel_2F_Text_AthenaPostBattle, MSGBOX_NPC)
 	end
 }
 
@@ -30,16 +28,17 @@ text RusturfTunnel_2F_Text_AthenaPostBattle{"Resting is important too!"}
 
 script RusturfTunnel_2F_EventScript_Allen{
     trainerbattle_single(TRAINER_ALLEN, RusturfTunnel_2F_Text_AllenIntro, RusturfTunnel_2F_Text_AllenDefeated)
-    msgbox(RusturfTunnel_2F_Text_AllenPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(RusturfTunnel_2F_Text_AllenPostBattle, MSGBOX_NPC)
 	end
-    }
+}
 
 text RusturfTunnel_2F_Text_AllenIntro{"Hey! I found a sick spider nest\n
-   earlier!"}
+   earlier!"
+}
 
 text RusturfTunnel_2F_Text_AllenDefeated{"You're buggin."}
 
 text RusturfTunnel_2F_Text_AllenPostBattle{"I heard there was a giant\n
-   bee somewhere around here!"}
+   bee somewhere around here!"
+}
    

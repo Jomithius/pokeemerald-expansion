@@ -124,6 +124,7 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
     else{
         goto(Common_EventScript_NoMoreRoomForPokemon)
     }
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     release
     end  

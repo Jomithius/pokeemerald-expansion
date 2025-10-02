@@ -329,7 +329,7 @@ FortreeCity_Gym_Text_GymGuideAdvice:
 # 165 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "FORTREE GYM LEADER MICKEY is\n"
 # 166 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "a master of dog-type POKéMON.\p"
+	.string "a master of DOG-type POKéMON.\p"
 # 167 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "“Dog isn't a type?”\n"
 # 168 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -349,7 +349,7 @@ FortreeCity_Gym_Text_JaredIntro:
 # 175 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "Behold the elegant battle style of\n"
 # 176 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "DOG POKéMON!$"
+	.string "DOG-type POKéMON!$"
 # 177 "data/maps/FortreeCity_Gym/scripts.pory"
 
 # 178 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -459,7 +459,7 @@ FortreeCity_Gym_Text_DariusIntro:
 # 230 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "You'd better know that there are all\n"
 # 231 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "sorts of dog-type POKéMON.\p"
+	.string "sorts of DOG-type POKéMON.\p"
 # 232 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "You do know that, right?$"
 # 233 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -467,7 +467,7 @@ FortreeCity_Gym_Text_DariusIntro:
 # 234 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_Text_DariusDefeat:
 # 235 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "What do you mean dog isn't a type?$"
+	.string "What do you mean there's no DOG-type?$"
 # 236 "data/maps/FortreeCity_Gym/scripts.pory"
 
 # 237 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -487,7 +487,7 @@ FortreeCity_Gym_Text_WinonaIntro:
 # 244 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "the FORTREE POKéMON GYM.\p"
 # 245 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "I really like DOG POKéMON.\n"
+	.string "I really like DOG-type POKéMON.\n"
 # 246 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "They're a man's best friend.\p"
 # 247 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -555,7 +555,7 @@ FortreeCity_Gym_Text_WinonaPostBattle:
 # 278 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "I lost to you, but I'll still\n"
 # 279 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "stay devoted to DOG POKéMON.$"
+	.string "stay devoted to DOG-type POKéMON.$"
 # 280 "data/maps/FortreeCity_Gym/scripts.pory"
 
 # 281 "data/maps/FortreeCity_Gym/scripts.pory"

@@ -109,7 +109,7 @@ RibombeeFailed::
 # 59 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 # 60 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	msgbox RibombeeFailed_Text_0
+	msgbox RibombeeFailed_Text_0, MSGBOX_DEFAULT
 	return
 
 

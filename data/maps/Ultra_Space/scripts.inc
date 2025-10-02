@@ -1301,7 +1301,7 @@ Ultra_Space_Text_InvisiblePathHint::
 
 Ultra_Space_Text_Maniac1::
 # 523 "data/maps/Ultra_Space/scripts.pory"
-	.string "This wasn't supposed to happen…\n It appears we've been pulled into\l the rift.\p I'm not sure if we'll ever be able\n to return to our world…$"
+	.string "This wasn't supposed to happen…\p It appears we've been pulled into\n the rift.\p I'm not sure if we'll ever be able\n to return to our world…$"
 
 Ultra_Space_Text_James1::
 # 531 "data/maps/Ultra_Space/scripts.pory"

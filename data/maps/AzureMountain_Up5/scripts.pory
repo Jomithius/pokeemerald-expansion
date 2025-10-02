@@ -26,8 +26,8 @@ script AzureMountain_Up5_EventScript_Shurley{
 
 script AzureMountain_Up5_EventScript_Wilson{
     trainerbattle_single(TRAINER_WILSON, "What happened to the ice lake?", "I wanted to go ice skating!")
-    msgbox("It was hard getting up here.\n
-        There's so many strong TRAINERS!", MSGBOX_NPC)
+    msgbox("It was hard getting up here,\n
+        and the lake is ruined!", MSGBOX_NPC)
 	end
 }
 

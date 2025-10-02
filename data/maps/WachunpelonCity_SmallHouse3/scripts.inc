@@ -62,35 +62,35 @@ WachunpelonCity_SmallHouse3_EventScript_LinaTryAddVar_6:
 
 
 WachunpelonCity_SmallHouse3_EventScript_Kai::
-# 41 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
+# 42 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
 	msgbox WachunpelonCity_SmallHouse3_EventScript_Kai_Text_0, MSGBOX_NPC
 	end
 
 
 WachunpelonCity_SmallHouse3_EventScript_Luxray::
-# 49 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
-	lock
 # 50 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
-	faceplayer
+	lock
 # 51 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
-	playmoncry SPECIES_LUXRAY, CRY_MODE_ENCOUNTER
+	faceplayer
 # 52 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_LUXRAY, CRY_MODE_ENCOUNTER
 # 53 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
+	waitmoncry
+# 54 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
 	release
 	end
 
 
 WachunpelonCity_SmallHouse3_EventScript_Ninetales::
-# 58 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
-	lock
 # 59 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
-	faceplayer
+	lock
 # 60 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
-	playmoncry SPECIES_NINETALES, CRY_MODE_ENCOUNTER
+	faceplayer
 # 61 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_NINETALES, CRY_MODE_ENCOUNTER
 # 62 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
+	waitmoncry
+# 63 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
 	release
 	end
 
@@ -112,5 +112,5 @@ WachunpelonCity_SmallHouse3_EventScript_LinaTryAddVar_Text_2:
 	.string "Oh, it's you again.\n I'm on vacation!\nShoo!$"
 
 WachunpelonCity_SmallHouse3_EventScript_Kai_Text_0:
-# 41 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
+# 42 "data/maps/WachunpelonCity_SmallHouse3/scripts.pory"
 	.string "{PLAYER}!\p I cooked up a new strategy for the\n next time we battle!\p You better be ready!$"

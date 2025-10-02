@@ -332,7 +332,7 @@ AzureMountain_Up5_EventScript_Wilson_Text_1:
 
 AzureMountain_Up5_EventScript_Wilson_Text_2:
 # 29 "data/maps/AzureMountain_Up5/scripts.pory"
-	.string "It was hard getting up here.\n There's so many strong TRAINERS!$"
+	.string "It was hard getting up here,\n and the lake is ruined!$"
 
 AzureMountain_Up5_EventScript_Itoshi_Text_0:
 # 35 "data/maps/AzureMountain_Up5/scripts.pory"

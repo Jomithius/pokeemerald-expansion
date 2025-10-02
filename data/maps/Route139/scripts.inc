@@ -776,7 +776,7 @@ Route139_EventScript_Yoshio_Text_1:
 
 Route139_EventScript_Yoshio_Text_2:
 # 66 "data/maps/Route139/scripts.pory"
-	.string "Huh?\p You could see my head sticking out\n from behind the rock?$"
+	.string "Huh?\p You can see my head sticking out\n from behind the rock?$"
 
 Route139_EventScript_Katashi_Text_0:
 # 73 "data/maps/Route139/scripts.pory"
@@ -788,7 +788,7 @@ Route139_EventScript_Katashi_Text_1:
 
 Route139_EventScript_Katashi_Text_2:
 # 74 "data/maps/Route139/scripts.pory"
-	.string "LADY ASAKURA was able to become\n a full-fledged NINJA at a very\l young age.\p She's an inspiration to us all.$"
+	.string "LADY MOMO was able to become\n a full-fledged NINJA at a very\l young age.\p She's an inspiration to us all.$"
 
 Route139_EventScript_Naoki_Text_0:
 # 82 "data/maps/Route139/scripts.pory"
@@ -804,7 +804,7 @@ Route139_EventScript_Naoki_Text_2:
 
 Route139_EventScript_Naoki_Text_3:
 # 88 "data/maps/Route139/scripts.pory"
-	.string "I heard LADY ASAKURA returned for\n the ritual.\p I hope she's in time.\n She has a habit of procrastinating.$"
+	.string "I heard LADY MOMO returned for\n the ritual.\p I hope she's in time.\n She has a habit of procrastinating.$"
 
 Route139_EventScript_Kyoko_Text_0:
 # 97 "data/maps/Route139/scripts.pory"

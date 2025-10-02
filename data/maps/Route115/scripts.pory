@@ -707,11 +707,11 @@ text Route115Misa2{"MISA: Great! I made a feast since\n
 you're starting your journey tomorrow.\l
 Hurry back soon, JAMES.\p
 {PLAYER}, you're more than welcome\n
-to stop by anytime as well!"}
+to stop by as well!"}
 
-text Route115Emo9 {"Definitely JAMES: …\p
-I should head back then.\n
-{PLAYER}, next time I'll achieve victory.\l
+text Route115Emo9 {"Definitely JAMES: …\n
+I should head back then.\p
+{PLAYER}, next time I'll achieve victory.\n
 See ya."}
 
 text Jomithius_Outro{"I'm in my abyss…"}

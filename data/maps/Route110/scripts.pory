@@ -1036,7 +1036,6 @@ script Route110_EventScript_Speedwagon{
 	msgbox(Route110_Text_Speedwagon, MSGBOX_AUTOCLOSE)
 	waitmessage
 	trainerbattle_no_intro(TRAINER_SPEEDWAGON, Route110_SpeedwagonDefeat)
-	lock
 	msgbox(Route110_Text_Speedwagon_PostBattle, MSGBOX_AUTOCLOSE)
 	waitmessage
 	delay(30)
@@ -1224,7 +1223,7 @@ movement Route110_Policeman_North2{
 }
 
 movement Route110_PolicemanLeaveNorth{
-	walk_left * 2
+	walk_left * 3
 	walk_up * 7
 }
 
@@ -1238,7 +1237,9 @@ movement Route110_Policeman_West{
 }
 
 movement Route110_PolicemanLeave{
-	walk_down * 7
+	walk_down * 3
+	walk_right
+	walk_down * 4
 }
 
 script Route110_EventScript_PolicemanHelpTrigger1{

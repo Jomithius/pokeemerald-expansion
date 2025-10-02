@@ -46,7 +46,6 @@ script TheUnder_House_Eventscript_BedRight{
     end
 }
 
-
 script TheUnder_House_OutOfCenterPartyHeal{
     fadenewbgm(MUS_DUMMY)
     delay(60)

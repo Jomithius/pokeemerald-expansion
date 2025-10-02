@@ -60,8 +60,7 @@ ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
 
 script ShoalCave_LowTideLowerRoom_EventScript_Nicholas{
     trainerbattle_single(TRAINER_NICHOLAS_SHOAL_CAVE, ShoalCave_LowTideLowerRoom_Text_NicholasIntro, ShoalCave_LowTideLowerRoom_Text_NicholasDefeat)
-    msgbox(ShoalCave_LowTideLowerRoom_Text_NicholasPostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(ShoalCave_LowTideLowerRoom_Text_NicholasPostBattle, MSGBOX_NPC)
 	end
 }
 

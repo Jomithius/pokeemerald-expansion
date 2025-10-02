@@ -13,7 +13,7 @@ script SnowdriftCity_House3_OnTransition{
 }
 
 script SnowdriftCity_House3_UpdateMusic{
-    playbgm(MUS_ENCOUNTER_CYNTHIA, TRUE)
+    savebgm(MUS_ENCOUNTER_CYNTHIA)
     return
 }
 

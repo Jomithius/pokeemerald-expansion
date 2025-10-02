@@ -769,7 +769,7 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm sorry to have taken your time.$"
 `
 
-script PetalburgCity_EventScript_Luna {
+script PetalburgCity_EventScript_Luna{
     lockall
     opendoor(22,7)
 	waitdooranim
@@ -950,8 +950,8 @@ script PetalburgCity_EventScript_BlockGymNPC{
 }
 
 text LunaGone_FantasiaHint{
-	"LUNA's still not back.\n
-	He said he was meeting somebody\l
+	"LUNA's still not back.\p
+	He said he was meeting somebody\n
 	at MT. PYRE.\p
 	I have no idea why he would want to\n
 	go to such a haunted place."

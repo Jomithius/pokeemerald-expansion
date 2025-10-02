@@ -259,8 +259,6 @@ script Route117_EventScript_MisaBattle{
             fadedefaultbgm
             applymovement(LOCALID_MISA, Common_Movement_FaceUp)
             waitmovement(LOCALID_MISA)
-            release
-            end
         }
     }
     elif(var(VAR_MISA_STATE) == 4){
@@ -273,15 +271,12 @@ script Route117_EventScript_MisaBattle{
             waitmessage
             applymovement(LOCALID_MISA, Common_Movement_FaceUp)
             waitmovement(LOCALID_MISA)
-            release
-            end
         }
-
     }
     else{
         if(flag(FLAG_ROUTE117_RECEIVED_LEFTOVERS) == TRUE){
-        msgbox(Route117_Text_MisaFlowers, MSGBOX_AUTOCLOSE)
-		waitmessage   
+			msgbox(Route117_Text_MisaFlowers, MSGBOX_AUTOCLOSE)
+			waitmessage   
         }
         else{
             msgbox(Route117_Text_MisaLeftovers, MSGBOX_DEFAULT)
@@ -293,9 +288,8 @@ script Route117_EventScript_MisaBattle{
 		applymovement(LOCALID_MISA, Common_Movement_FaceUp)
 		waitmovement(LOCALID_MISA)
 		delay(30)
-		release
-		end 
     }
+	release
 	end
 }
 
@@ -406,6 +400,6 @@ script AraquanidFailed {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
-    msgbox("The ARAQUANID disappeared…")
+    msgbox("The ARAQUANID disappeared…", MSGBOX_DEFAULT)
 	return
 }

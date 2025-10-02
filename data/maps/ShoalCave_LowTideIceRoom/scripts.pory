@@ -10,24 +10,22 @@ script ShoalCave_LowTideIceRoom_EventScript_Sylvia{
 
 script ShoalCave_LowTideIceRoom_EventScript_Nate{
     trainerbattle_single(TRAINER_NATE_SHOAL_CAVE, ShoalCave_LowTideIceRoom_Text_NateIntro, ShoalCave_LowTideIceRoom_Text_NateDefeat)
-    msgbox(ShoalCave_LowTideIceRoom_Text_NatePostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(ShoalCave_LowTideIceRoom_Text_NatePostBattle, MSGBOX_NPC)
 	end
 }
 
 script ShoalCave_LowTideIceRoom_EventScript_Blake{
     trainerbattle_single(TRAINER_BLAKE_SHOAL_CAVE, ShoalCave_LowTideIceRoom_Text_BlakeIntro, ShoalCave_LowTideIceRoom_Text_BlakeDefeat)
-    msgbox(ShoalCave_LowTideIceRoom_Text_BlakePostBattle, MSGBOX_AUTOCLOSE)
-    waitmessage
+    msgbox(ShoalCave_LowTideIceRoom_Text_BlakePostBattle, MSGBOX_NPC)
 	end
 }
 
 script ShoalCave_LowTideIceRoom_Trigger_Aria{
     lockall
     playse(SE_M_DOUBLE_TEAM)
-    delay(20)
-    msgbox("They're swinging a sword.\n
-    It looks dangerous to approach them\l
+    waitse
+    msgbox("They're swinging a sword.\p
+    It looks dangerous to approach them\n
     from the front.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)

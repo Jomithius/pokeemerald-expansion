@@ -639,12 +639,6 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal2::
 	end
 
 
-SootopolisCity_Gym_1F_EventScript_GoBeatTheOtherGymLeaders::
-# 333 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	msgbox SootopolisCity_Gym_1F_EventScript_GoBeatTheOtherGymLeaders_Text_0, MSGBOX_NPC
-	end
-
-
 SootopolisCity_Gym_1F_EventScript_Juan_FinalBattle_Text_0:
 # 316 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	.string "Yeheheheaaaaaaaaaah!$"
@@ -656,7 +650,3 @@ SootopolisCity_Gym_1F_EventScript_Juan_FinalBattle_Text_1:
 SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal_Text_0:
 # 322 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	.string "Yeeeheeeaaaaah…$"
-
-SootopolisCity_Gym_1F_EventScript_GoBeatTheOtherGymLeaders_Text_0:
-# 333 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	.string "Yeheheaaaahh…\p {PLAYER}, come back when you've\n beaten all the other LEADERS.$"

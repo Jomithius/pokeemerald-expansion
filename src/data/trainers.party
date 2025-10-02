@@ -4923,11 +4923,11 @@ Ability: Contrary
 Level: 75  
 EVs: 248 HP / 252 SpA / 8 SpD  
 Modest Nature  
-IVs: 0 Atk / 30 SpA / 30 SpD  
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 31 Spe
 - Leaf Storm  
 - Leech Seed  
 - Dragon Pulse 
-- Hidden Power 
+- Hidden Power /* Ground */
 
 Luxray (M) @ Luxrite  
 Ability: Intimidate  
@@ -5291,7 +5291,7 @@ Ability: Volt Absorb
 Level: 25 
 EVs: 8 HP / 252 SpA / 236 Spe  
 Timid Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Charge Beam  
 - Thunder Wave  
 - Hidden Power  
@@ -5312,7 +5312,7 @@ Ability: Drought
 Level: 34  
 EVs: 140 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Will-O-Wisp 
 - Flame Burst  
 - Extrasensory  
@@ -5365,7 +5365,7 @@ Ability: Static
 Level: 34  
 EVs: 248 HP / 24 Def / 228 SpA  
 Modest Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Discharge  
 - Power Gem  
 - Swift  
@@ -5459,9 +5459,9 @@ Ability: Static
 Level: 38  
 EVs: 248 SpA / 8 SpD / 248 Spe  
 Timid Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Thunder Wave  
-- Flamethrower  
+- Overheat  
 - Hidden Power 
 - Thunderbolt  
 
@@ -5470,10 +5470,10 @@ Ability: Intimidate
 Level: 38  
 EVs: 8 HP / 252 Atk / 248 Spe  
 Jolly Nature  
-- Play Rough  
-- Iron Head  
-- Stomping Tantrum  
-- Return  
+- Crunch  
+- Facade
+- Dig
+- Psychic Fangs
 
 Boltund (F) @ Magnet  
 Ability: Strong Jaw  
@@ -5502,9 +5502,9 @@ EVs: 248 SpA / 8 SpD / 252 Spe
 Timid Nature  
 IVs: 0 Atk  
 - Calm Mind  
-- Psyshock  
+- Psychic  
 - Shadow Ball 
-- Psychic 
+- Toxic
 
 Lycanroc-Dusk (M) @ Hard Stone  
 Ability: Tough Claws  
@@ -6999,7 +6999,7 @@ Level: 75
 Shiny: Yes   
 EVs: 4 Def / 252 SpA / 252 Spe  
 Modest Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Earth Power  
 - Flamethrower  
 - Overheat  
@@ -11702,7 +11702,7 @@ Ability: Flash Fire
 Level: 31  
 EVs: 36 Def / 236 SpA / 236 Spe  
 Timid Nature  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Flame Burst  
 - Extrasensory  
 - Hidden Power 
@@ -12829,7 +12829,7 @@ Ability: Frisk
 Level: 41   
 EVs: 8 HP / 4 Def / 252 SpA / 244 Spe  
 Timid Nature  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe 
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe 
 - Infernal Parade  
 - Lava Plume  
 - Hidden Power 
@@ -16293,7 +16293,7 @@ Houndoom @ Houndoominite
 Ability: Flash Fire  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Dark Pulse  
 - Fire Blast  
 - Sludge Bomb  
@@ -16979,7 +16979,7 @@ Manectric @ Manectite
 Ability: Static   
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Thunderbolt  
 - Flamethrower  
 - Hidden Power
@@ -18375,7 +18375,7 @@ Ability: Flash Fire
 Shiny: Yes  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Flamethrower 
 - Hidden Power
 - Earth Power  
@@ -25088,7 +25088,7 @@ Jolteon (M) @ Magnet
 Ability: Volt Absorb  
 Level: 25  
 Timid Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Charge Beam  
 - Thunder Wave   
 - Volt Switch  
@@ -25108,7 +25108,7 @@ Ninetales (F) @ Heat Rock
 Ability: Drought  
 Level: 34 
 Timid Nature  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Flame Burst  
 - Extrasensory  
 - Hidden Power 
@@ -25232,7 +25232,7 @@ Mugshot: Blue
 
 Manectric (M) @ Air Balloon  
 Ability: Static  
-Level: 38
+Level: 37
 EVs: 128 HP   
 Timid Nature  
 IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 0 Spe
@@ -25242,16 +25242,16 @@ IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 0 Spe
 
 Stoutland (M) 
 Ability: Intimidate  
-Level: 38  
+Level: 37  
 EVs: 128 HP  
 IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
-- Play Rough  
-- Iron Head   
-- Return  
+- Fire Fang
+- Dig
+- Facade 
 
 Boltund (F)
 Ability: Strong Jaw  
-Level: 38  
+Level: 37  
 EVs: 128 HP  
 IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
 Jolly Nature   
@@ -25260,7 +25260,7 @@ Jolly Nature
 
 Obstagoon (M) @ Silk Scarf  
 Ability: Reckless  
-Level: 38
+Level: 36
 EVs: 128 HP  
 IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 Jolly Nature  
@@ -25270,7 +25270,7 @@ Jolly Nature
 
 Granbull @ Rocky Helmet  
 Ability: Intimidate  
-Level: 38 
+Level: 37 
 EVs: 128 HP   
 Adamant Nature  
 - Play Rough  
@@ -25286,7 +25286,7 @@ EVs: 128 HP
 Adamant Nature  
 - Accelerock  
 - Stone Edge  
-- Zen Headbutt   
+- Psychic Fangs   
 
 === TRAINER_TATE_AND_LIZA_1 ===
 Name: MOMO&ARIA
@@ -26795,7 +26795,7 @@ Ability: Flash Fire
 Level: 75  
 EVs: 252 HP / 128 SpA
 Shiny: Yes  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe 
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 Modest Nature  
 - Earth Power  
 - Flamethrower  
@@ -31684,9 +31684,10 @@ Quilava (M) @ Charcoal
 Ability: Flash Fire  
 Level: 30   
 Timid Nature  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Flame Burst  
-- Extrasensory  
+- Extrasensory
+- Hidden Power  
 
 === TRAINER_CRISTIAN ===
 Name: RACINE
@@ -32836,10 +32837,10 @@ Typhlosion-Hisui (M) @ Assault Vest
 Ability: Frisk  
 Level: 41     
 Timid Nature  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Infernal Parade  
 - Lava Plume  
-- Hidden Power 
+- Hidden Power /* Ice */
 - Shadow Ball  
 
 === TRAINER_LENNY ===
@@ -36342,7 +36343,7 @@ Houndoom @ Houndoominite
 Ability: Flash Fire  
 EVs: 252 HP / 64 SpA 
 Timid Nature  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe 
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Dark Pulse  
 - Fire Blast  
 - Sludge Bomb  
@@ -37024,7 +37025,7 @@ Manectric @ Manectite
 Ability: Static 
 EVs: 252 HP / 4 SpD   
 Timid Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Thunderbolt  
 - Flamethrower  
 - Hidden Power
@@ -38424,7 +38425,7 @@ Ability: Flash Fire
 EVs: 252 HP / 64 SpA  
 Shiny: Yes  
 Timid Nature  
-IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Heat Wave  
 - Hidden Power 
 - Earth Power  

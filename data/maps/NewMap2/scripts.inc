@@ -322,7 +322,7 @@ Route137_EventScript_Von_Text_2:
 
 Route137_EventScript_Woman_4_Text_0:
 # 66 "data/maps/NewMap2/scripts.pory"
-	.string "My husband used to be an athlete.\n Every time we come to the beach, he\l has to show off how well he can swim.$"
+	.string "My husband used to be an athlete.\p Every time we come to the beach, he\n has to show off how well he can swim.$"
 
 Route137_EventScript_Woman_1_Text_0:
 # 79 "data/maps/NewMap2/scripts.pory"

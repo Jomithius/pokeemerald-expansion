@@ -171,7 +171,7 @@ EasternRuins_EventScript_Yumi_Text_1:
 
 EasternRuins_EventScript_Yumi_Text_2:
 # 25 "data/maps/EasternRuins/scripts.pory"
-	.string "… There's an old tale of a MOCHI\n making POKéMON and his LOYAL THREE\l killing a TRAINER and stealing three sacred masks from him…\p That TRAINER's POKéMON was then said\n to be chasing after them for revenge…$"
+	.string "… There's an old tale of a mochi\n making POKéMON and his LOYAL THREE\l killing a TRAINER and stealing three sacred masks from him…\p That TRAINER's POKéMON was then said\n to be chasing after them for revenge…$"
 
 EasternRuins_EventScript_Chestird_Text_0:
 # 35 "data/maps/EasternRuins/scripts.pory"
@@ -183,7 +183,7 @@ EasternRuins_EventScript_Chestird_Text_1:
 
 EasternRuins_EventScript_Chestird_Text_2:
 # 36 "data/maps/EasternRuins/scripts.pory"
-	.string "The ruins behind me are intruiging.\n It seems as though they have been\l recently inhabited by POKéMON.$"
+	.string "The ruins behind me are intruiging.\p It seems as though they have been\n recently inhabited by POKéMON.$"
 
 EasternRuins_EventScript_ManiacBlackAugurite_Text_0:
 # 46 "data/maps/EasternRuins/scripts.pory"
@@ -211,7 +211,7 @@ EasternRuins_EventScript_HexManiacMaliciousArmor_Text_2:
 
 EasternRuins_EventScript_HexManiacShowMeAGhostType_Text_0:
 # 101 "data/maps/EasternRuins/scripts.pory"
-	.string "O-Oh…\n You d-don't have a GHOST T-type?$"
+	.string "O-Oh…\n You d-don't have a GHOST-t-type?$"
 
 EasternRuins_EventScript_HexManiacThanks_Text_0:
 # 107 "data/maps/EasternRuins/scripts.pory"

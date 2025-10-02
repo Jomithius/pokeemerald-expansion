@@ -741,6 +741,8 @@ script LilycoveCity_EventScript_EmoBully{
 	applymovement(OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball)
     waitmovement(0)
     callnative(RemoveFollowingPokemon)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
     fadenewbgm(MUS_NONE)
 	applymovement(24, Common_Movement_WalkInPlaceRight)
 	waitmovement(24)

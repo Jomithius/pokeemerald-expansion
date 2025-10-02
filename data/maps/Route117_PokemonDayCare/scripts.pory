@@ -10,14 +10,12 @@ Route117_PokemonDayCare_OnTransition:
 script PokemonDayCare_Woman{
     lock
     faceplayer
-    if(flag(FLAG_CALL_FROM_CEO) == TRUE){
-        msgbox(PokemonDayCare_Text_HoundourRecovered, MSGBOX_NPC)
-        }
-
-    else{
-        msgbox(PokemonDayCare_Text_DacaHoundour, MSGBOX_NPC)
+    if(flag(FLAG_BADGE08_GET) == TRUE){
+        msgbox(PokemonDayCare_Text_HoundourRecovered, MSGBOX_AUTOCLOSE)
     }
-
+    else{
+        msgbox(PokemonDayCare_Text_DacaHoundour, MSGBOX_AUTOCLOSE)
+    }
     waitmessage
     release
     end
@@ -27,7 +25,7 @@ text PokemonDayCare_Text_HoundourRecovered{
     "I'm so glad the HOUNDOUR made a\n
     full recovery!\p
     MAUVILLE's GYM LEADER decided to\n
-    adopt him.\p
+    adopt it.\p
     I wonder how they're doing."
 }
 

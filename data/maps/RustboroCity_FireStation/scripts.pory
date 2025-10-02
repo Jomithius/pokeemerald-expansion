@@ -2,8 +2,7 @@ mapscripts RustboroCity_FireStation_MapScripts {}
 
 script RustboroCity_FireStation_Maniac1{
     lock
-    applymovement(1, FireStationFacePlayer)
-    waitmovement(1)
+    faceplayer
     msgbox("I'm researching ROTOM. I've tested\n
     what appliances they can inhabit.\p
     It seems that they can change\n
@@ -18,13 +17,12 @@ script RustboroCity_FireStation_Maniac1{
 
 script RustboroCity_FireStation_Maniac2{
     lock
-    applymovement(2, FireStationFacePlayer)
-    waitmovement(2)
+    faceplayer
     msgbox("I'm working with the LEAGUE to\n
     investigate strange tremors in the\l
     area recently.\p
     I don't know what's going on, but\n
-    whatever it is, I'm sure we'll be ready.", MSGBOX_NPC)
+    whatever it is, I'm sure we'll be ready.", MSGBOX_AUTOCLOSE)
     applymovement(2, FireStationFaceUp)
     waitmovement(2)
     waitmessage
@@ -34,11 +32,10 @@ script RustboroCity_FireStation_Maniac2{
 
 script RustboroCity_FireStation_Man{
     lock
-    applymovement(4, FireStationFacePlayer)
-    waitmovement(4)
+    faceplayer
     msgbox("The Gym Leader, STEVE, is a first\n
     responder. There's no one better\l
-    at firefighting in HOENN.", MSGBOX_NPC)
+    at firefighting in HOENN.", MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
@@ -52,11 +49,10 @@ script RustboroCity_FireStation_FatMan{
     playse(SE_PIN)
     applymovement(5, FireStationSurprised)
     waitmovement(5)
-    delay(20)
-    applymovement(5, FireStationFacePlayer)
-    waitmovement(5)
+    waitse
+    faceplayer
     msgbox("Hey! I'm working.\n
-    Get out of here!", MSGBOX_NPC)
+    Get out of here!", MSGBOX_AUTOCLOSE)
     applymovement(5, FireStationFaceUp)
     waitmovement(5)
     waitmessage
@@ -75,13 +71,12 @@ script RustboroCity_FireStation_Rotom{
 
 script RustboroCity_FireStation_Man2{
     lock
-    applymovement(6, FireStationFacePlayer)
-    waitmovement(6)
+    faceplayer
     msgbox("I recently heard that there's a mage\n
     who sells a special drink that can\l
     change your appearance overnight.\p
     If it's real, maybe I could get my\n
-    hair back.", MSGBOX_NPC)
+    hair back.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(6, FireStationFaceUp)
     waitmovement(6)
@@ -91,8 +86,7 @@ script RustboroCity_FireStation_Man2{
 
 script RustboroCity_FireStation_Camper{
     lock
-    applymovement(7, FireStationFacePlayer)
-    waitmovement(7)
+    faceplayer
     if(flag(FLAG_RECEIVED_TM_WATER_PULSE) == TRUE){
         msgbox("WATER PULSE damages the foe,\n
         while also having a chance to confuse!", MSGBOX_AUTOCLOSE)
@@ -104,7 +98,7 @@ script RustboroCity_FireStation_Camper{
         giveitem(ITEM_TM_WATER_PULSE)
         waitmessage
         msgbox("WATER PULSE damages the foe,\n
-        while also having a chance to confuse!")
+        while also having a chance to confuse!", MSGBOX_AUTOCLOSE)
         waitmessage
         setflag(FLAG_RECEIVED_TM_WATER_PULSE)
     }
@@ -114,10 +108,6 @@ script RustboroCity_FireStation_Camper{
 
 movement FireStationSurprised{
     emote_exclamation_mark
-}
-
-movement FireStationFacePlayer{
-    face_player
 }
 
 movement FireStationFaceUp{

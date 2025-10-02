@@ -168,6 +168,7 @@ script AltarOfBaldesia_EventScript_AltarRitual{
         This is bad.", MSGBOX_AUTOCLOSE)
     waitmessage
     goto(AltarOfBaldesia_EventScript_MomoICantBeatThemAlone)
+    end
 }
 
 script AltarOfBaldesia_EventScript_MomoICantBeatThemAlone{
@@ -178,6 +179,7 @@ script AltarOfBaldesia_EventScript_MomoICantBeatThemAlone{
     msgbox("MOMO: … I can't beat them alone.", MSGBOX_AUTOCLOSE)
     waitmessage
     goto(AltarOfBaldesia_EventScript_GetReadyForBattle)
+    end
 }
 
 script AltarOfBaldesia_EventScript_GetReadyForBattle{
@@ -192,6 +194,7 @@ script AltarOfBaldesia_EventScript_GetReadyForBattle{
     goto_if_ne(VAR_RESULT, 0, AltarOfBaldesia_EventScript_DoLohanMultiBattle)
     special(LoadPlayerParty)
     goto(AltarOfBaldesia_EventScript_MomoICantBeatThemAlone)
+    end
 }
 
 script AltarOfBaldesia_EventScript_DoLohanMultiBattle{
@@ -205,7 +208,8 @@ script AltarOfBaldesia_EventScript_DoLohanMultiBattle{
         fadescreen(FADE_TO_BLACK)
 	    special(SetCB2WhiteOut)
 	    waitstate
-    } 
+    }
+    end 
 }
 
 script AltarOfBaldesia_EventScript_PecharuntAmbush{
@@ -215,7 +219,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     removeobject(LOCALID_LOHAN)
     removeobject(LOCALID_WIFE)
     waitse
-    if(var(VAR_DIFFICULTY) == DIFFICULTY_EASY){
+    if(!flag(FLAG_SYS_HARD_MODE)){
         special(HealPlayerParty)
     }
     fadescreenswapbuffers(FADE_FROM_BLACK)
@@ -256,6 +260,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     waitmovement(0)
     playse(SE_M_DOUBLE_TEAM)
     addobject(LOCALID_BENNIS)
+    waitse
     applymovement(8, Common_Movement_FaceRight)
     waitmovement(8)
     addobject(LOCALID_ARIA)

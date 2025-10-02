@@ -556,7 +556,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_RotomCatalog_Text_0:
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_RotomCatalog_Text_1:
 # 243 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	.string "ROTOM is an intruiging POKéMON.\n It can change forms just from seeing\l an appliance in a catalog.\p If you have a ROTOM, please try\n it out!$"
+	.string "ROTOM is an intruiging POKéMON.\p It can change forms just from seeing\n an appliance in a catalog.\p If you have a ROTOM, please try\n it out!$"
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_Text_0:
 # 256 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"

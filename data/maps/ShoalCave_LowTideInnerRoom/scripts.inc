@@ -273,64 +273,58 @@ ShoalCave_LowTideInnerRoom_EventScript_Bingleton::
 # 139 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	trainerbattle_single TRAINER_BINGLETON, ShoalCave_LowTideInnerRoom_Text_BingletonIntro, ShoalCave_LowTideInnerRoom_Text_BingletonDefeat
 # 140 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	msgbox ShoalCave_LowTideInnerRoom_Text_BingletonPostBattle, MSGBOX_AUTOCLOSE
-# 141 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	waitmessage
+	msgbox ShoalCave_LowTideInnerRoom_Text_BingletonPostBattle, MSGBOX_NPC
 	end
 
 
 ShoalCave_LowTideInnerRoom_EventScript_Bungleton::
-# 146 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+# 145 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	trainerbattle_single TRAINER_BUNGLETON, ShoalCave_LowTideInnerRoom_Text_BungletonIntro, ShoalCave_LowTideInnerRoom_Text_BungletonDefeat
-# 147 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	msgbox ShoalCave_LowTideInnerRoom_Text_BungletonPostBattle, MSGBOX_AUTOCLOSE
-# 148 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	waitmessage
+# 146 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideInnerRoom_Text_BungletonPostBattle, MSGBOX_NPC
 	end
 
 
 ShoalCave_LowTideInnerRoom_EventScript_Daquavius::
-# 153 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+# 151 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	trainerbattle_single TRAINER_DAQUAVIUS, ShoalCave_LowTideInnerRoom_Text_DaquaviusIntro, ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat
-# 154 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	msgbox ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle, MSGBOX_AUTOCLOSE
-# 155 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	waitmessage
+# 152 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle, MSGBOX_NPC
 	end
 
 
 ShoalCave_LowTideInnerRoom_Text_BingletonIntro::
-# 159 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "Me and my brother love coming here!$"
+# 156 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+	.string "My brother and I love coming here!$"
 
 ShoalCave_LowTideInnerRoom_Text_BingletonDefeat::
-# 163 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+# 160 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	.string "That was cold…$"
 
 ShoalCave_LowTideInnerRoom_Text_BingletonPostBattle::
-# 167 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+# 164 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	.string "I stay up here because it gets too cold\n further down.$"
 
 ShoalCave_LowTideInnerRoom_Text_BungletonIntro::
-# 172 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "Me and my brother love coming here!$"
+# 169 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+	.string "My brother and I love coming here!$"
 
 ShoalCave_LowTideInnerRoom_Text_BungletonDefeat::
-# 176 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+# 173 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	.string "B-Brother…?!$"
 
 ShoalCave_LowTideInnerRoom_Text_BungletonPostBattle::
-# 180 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+# 177 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	.string "We only stay in the inner room.\n It gets colder the deeper you go.$"
 
 ShoalCave_LowTideInnerRoom_Text_DaquaviusIntro::
-# 185 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "I'm training to beat MOSSDEEP's\n GYM LEADER!$"
+# 182 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+	.string "I'm training to beat MOSSDEEP's\n GYM LEADER MOMO!$"
 
 ShoalCave_LowTideInnerRoom_Text_DaquaviusDefeat::
-# 190 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+# 187 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	.string "Looks like I need more training…$"
 
 ShoalCave_LowTideInnerRoom_Text_DaquaviusPostBattle::
-# 194 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
-	.string "The GYM LEADER has powerful fists!\n I must train even more!$"
+# 191 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
+	.string "MOMO has powerful fists!\n I must train even more!$"

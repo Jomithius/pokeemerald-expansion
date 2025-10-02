@@ -46,7 +46,7 @@ Misa_House1F_EventScript_Text2::
 # 28 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	faceplayer
 # 29 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	msgbox MisaHouse1F_3
+	msgbox MisaHouse1F_3, MSGBOX_AUTOCLOSE
 # 30 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
 	waitmessage
 # 31 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
@@ -56,7 +56,7 @@ Misa_House1F_EventScript_Text2::
 
 MisaHouse1F_1::
 # 35 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "{PLAYER}!\n I'm glad you stopped by.\p JAMES is upstairs in his room.\n Thanks again for becoming his friend.\p I hope you two can help each other\n out on your journey.\p Have you eaten yet? We already put away\n the leftovers, but I have some candy.$"
+	.string "{PLAYER}!\n I'm glad you stopped by.\p JAMES is upstairs in his room.\n Thanks again for becoming his friend.\p I hope you two can help each other\n out on your journey.\p Have you eaten yet? I already put away\n the leftovers, but I have some candy.$"
 
 MisaHouse1F_2::
 # 45 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
@@ -64,7 +64,7 @@ MisaHouse1F_2::
 
 MisaHouse1F_3::
 # 50 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "Did you challenge the GYM yet?\p You're already a wonderful trainer, so\n you should be able to beat them.\p Good luck!$"
+	.string "Did you challenge the GYM yet?\p You're already a wonderful TRAINER, so\n you should be able to beat them.\p Good luck!$"
 
 MisaHouseCantCarryCandy::
 # 55 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
@@ -72,4 +72,4 @@ MisaHouseCantCarryCandy::
 
 RustboroCity_Misa_House1F_Text_ExplainCandies::
 # 59 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "Don't eat them all at once!\p {COLOR BLUE}{SHADOW LIGHT_BLUE} Unlike EXP CANDIES, RARE CANDIES can\n be used to go over the level cap but\l are extremely limited.\p It's recommended to only use them if\n needed.$"
+	.string "Don't eat them all at once!\p {COLOR BLUE}{SHADOW LIGHT_BLUE} Unlike EXP. CANDIES, RARE CANDIES can\n be used to go over the level cap but\l are extremely limited.\p It's recommended to only use them if\n needed.$"

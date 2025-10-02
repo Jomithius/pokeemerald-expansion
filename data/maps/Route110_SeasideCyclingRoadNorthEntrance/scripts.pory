@@ -114,7 +114,7 @@ text Route110_SeasideCyclingRoadNorthEntrance_Text_ThatBadge{
 }
 
 script Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou{
-    lock
+    lockall
 	applymovement(1, Common_Movement_FacePlayer)
 	waitmovement(1)
     msgbox("Thank you for getting rid of them!", MSGBOX_AUTOCLOSE)
@@ -123,6 +123,6 @@ script Route110_SeasisdeCyclingRoadNorthEntrance_EventScript_ThankYou{
     waitmovement(1)
     setvar(VAR_SPEEDWAGON_STATE, 7)
 	clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
-	release
+	releaseall
 	end
 }

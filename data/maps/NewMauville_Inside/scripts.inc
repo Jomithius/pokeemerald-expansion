@@ -608,7 +608,7 @@ TogedemaruFailed::
 # 306 "data/maps/NewMauville_Inside/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 # 307 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox TogedemaruFailed_Text_0
+	msgbox TogedemaruFailed_Text_0, MSGBOX_DEFAULT
 	return
 
 
