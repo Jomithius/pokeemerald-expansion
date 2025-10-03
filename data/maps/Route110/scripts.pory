@@ -958,9 +958,10 @@ script Route110_EventScript_Dale{
 	playse(SE_THUNDERSTORM)
 	delay(30)
 	playse(SE_THUNDERSTORM_STOP)
+	waitse
 	removeobject(42)
 	playse(SE_FLEE)
-	delay(10)
+	waitse
 	fadescreenspeed(FADE_FROM_BLACK, 3)
 	setflag(FLAG_ROUTE_110_BIKER_POLICEMAN)
 	setvar(VAR_SPEEDWAGON_STATE, 4)
@@ -1044,7 +1045,7 @@ script Route110_EventScript_Speedwagon{
 	playse(SE_THUNDERSTORM)
 	delay(120)
 	playse(SE_THUNDERSTORM_STOP)
-	delay(20)
+	waitse
 	playse(SE_FLEE)
 	removeobject(33)
 	removeobject(34)
@@ -1059,16 +1060,31 @@ script Route110_EventScript_Speedwagon{
 	removeobject(43)
 	removeobject(44)
 	removeobject(45)
-	delay(10)
+	waitse
 	fadescreenspeed(FADE_FROM_BLACK, 3)
 	delay(10)
 	savebgm(MUS_DUMMY)
 	fadedefaultbgm
 	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
-	setvar(VAR_SPEEDWAGON_STATE, 6)
 	setflag(FLAG_ROUTE110_HIDE_BIKERS)
 	clearflag(FLAG_SYS_BIKERS_ROUTE_110) // for overworld music
 	clearflag(FLAG_DONT_TRANSITION_MUSIC)
+	clearflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
+	addobject(48)
+	applymovement(48, Common_Movement_WalkUp5)
+	waitmovement(48)
+	delay(10)
+	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_DEFAULT)
+	waitmessage
+	giveitem(ITEM_TM_U_TURN)
+	waitmessage
+	msgbox(Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(48, Common_Movement_WalkDown6)
+	waitmovement(48)
+	removeobject(48)
+	setflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
+	setvar(VAR_SPEEDWAGON_STATE, 8)
 	release
 	end
 }
@@ -1092,7 +1108,7 @@ text Route110_Text_Speedwagon_PostBattle{
 	Let's get outta here, boys!"
 }
 
-script Route110_Policeman_GiveUturn{
+script Route110_Policeman_GiveUturn{ // functionally unused
 	lockall
 	msgbox("Wait!", MSGBOX_AUTOCLOSE)
 	waitmessage
@@ -1128,7 +1144,7 @@ script Route110_Policeman_GiveUturn{
 	end
 }
 
-script Route110_Policeman_GiveUturnNorth{
+script Route110_Policeman_GiveUturnNorth{ // functionally unused
 	lockall
 	msgbox("Wait!", MSGBOX_AUTOCLOSE)
 	waitmessage

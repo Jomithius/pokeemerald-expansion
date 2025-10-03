@@ -403,8 +403,8 @@ LittlerootTown_EventScript_BirchsLabSign::
 
 LittlerootTown_EventScript_BrendansHouseSign::
 	lockall
-	call_if_set FLAG_SYS_STARTED_AS_MALE, LittlerootTown_EventScript_BirchsHouseSignMale
-	call_if_set FLAG_SYS_STARTED_AS_FEMALE, LittlerootTown_EventScript_PlayersHouseSignFemale
+	call_if_set FLAG_SYS_STARTED_AS_MALE, LittlerootTown_EventScript_PlayersHouseSignMale
+	call_if_set FLAG_SYS_STARTED_AS_FEMALE, LittlerootTown_EventScript_BirchsHouseSignFemale
 	releaseall
 	end
 

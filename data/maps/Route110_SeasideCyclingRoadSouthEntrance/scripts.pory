@@ -1,4 +1,5 @@
 raw`Route110_SeasideCyclingRoadSouthEntrance_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route110_SeasideCyclingRoadSouthEntrance_OnTransition
 	.byte 0
 
 Route110_SeasideCyclingRoadSouthEntrance_EventScript_Clerk::
@@ -50,7 +51,7 @@ Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk:
 
 `
 
-script Route110_SeasisdeCyclingRoadSouthEntrance_EventScript_ThankYou{
+script Route110_SeasisdeCyclingRoadSouthEntrance_EventScript_ThankYou{ // functionally unused
     lockall
 	applymovement(1, Common_Movement_FacePlayer)
 	waitmovement(1)
@@ -64,3 +65,12 @@ script Route110_SeasisdeCyclingRoadSouthEntrance_EventScript_ThankYou{
 	end
 }
 
+script Route110_SeasideCyclingRoadSouthEntrance_OnTransition{
+	call_if_ge(VAR_SPEEDWAGON_STATE, 8, Route110_SeasisdeCyclingRoadEntrance_ResetCyclingRoadFlags)
+	end
+}
+
+script Route110_SeasisdeCyclingRoadEntrance_ResetCyclingRoadFlags{
+	clearflag(FLAG_ROUTE110_HIDE_CYCLIST)
+	return
+}

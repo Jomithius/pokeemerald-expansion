@@ -144,6 +144,7 @@ script BennisDojo_EventScript_AsakReturn{
     waitmovement(0)
     applymovement(11, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
+    waitse
     msgbox("ASAK: {PLAYER}?!\n
         What are you doing here?", MSGBOX_DEFAULT)
     applymovement(11, Common_Movement_WalkInPlaceLeft)
@@ -199,6 +200,7 @@ script BennisDojo_EventScript_AsakReturnEast{
     playse(SE_PIN)
     applymovement(11, Common_Movement_ExclamationMark)
     waitmovement(0)
+    waitse
     msgbox("ASAK: {PLAYER}?!\n
         What are you doing here?\p
         MASTER BENNIS: Hm. We battled.\n
@@ -333,7 +335,9 @@ script DojoBattleTrigger{
     playse(SE_PIN)
     applymovement(1, exclaim)
     waitmovement(1)
-    delay(10)
+    waitse
+    applymovement(1, Common_Movement_WalkInPlaceFasterLeft)
+    waitmovement(1)
     msgbox("???: Hey!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(1, AsakMove1)
@@ -381,7 +385,7 @@ script DojoBattleTrigger{
     waitmovement(1)
     applymovement(1, faceup)
     waitmovement(1)
-    applymovement (OBJ_EVENT_ID_PLAYER, faceup)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceup)
     waitmovement(0)
     applymovement(2, faceup)
     waitmovement(2)
@@ -421,7 +425,7 @@ script Dojo_EarlierAnswerNO{
     playse(SE_PIN)
     applymovement(1, exclaim)
     waitmovement(1)
-    delay(10)
+    waitse
     applymovement(1, AsakMove1)
     waitmovement(1)
     applymovement(OBJ_EVENT_ID_PLAYER, faceright)
@@ -478,8 +482,8 @@ script BennisEnd{
     waitmovement(0)
     msgbox(Asak5, MSGBOX_AUTOCLOSE)
     waitmessage
-    fadeoutbgm(0)
-    delay(16)
+    playbgm(MUS_DUMMY, FALSE)
+    delay(8)
     fadescreenswapbuffers(FADE_TO_BLACK)
     playse(SE_FLEE)
     setflag(FLAG_BENNIS_DOJO_1)
@@ -487,9 +491,10 @@ script BennisEnd{
     removeobject(1)
     removeobject(2)
     removeobject(3)
+    waitse
     fadescreenswapbuffers(FADE_FROM_BLACK)
     delay(24)
-    fadeinbgm(0)
+    fadedefaultbgm
     releaseall
     end
 }

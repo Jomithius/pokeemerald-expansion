@@ -19,10 +19,16 @@ MauvilleCity_OnTransition:
 	call_if_set FLAG_HIDE_DACA_RUSTURF_PEAK, MauvilleCity_EventScript_MoveWallyUpOneTile
 	call_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym
 	call_if_set FLAG_SYS_BIKERS_ROUTE_110, MauvilleCity_EventScript_SaveBikerMusic
+	call_if_ge VAR_SPEEDWAGON_STATE, 8, MauvilleCity_EventScript_ResetCyclingRoadFlags
 	end
 
+MauvilleCity_EventScript_ResetCyclingRoadFlags::
+	clearflag FLAG_ROUTE110_HIDE_CYCLIST
+	return
+
 MauvilleCity_OnFrame:
-	map_script_2 VAR_SPEEDWAGON_STATE, 6, MauvilleCity_EventScript_PolicemanGivesUturn
+	map_script_2 VAR_SPEEDWAGON_STATE, 6, MauvilleCity_EventScript_PolicemanGivesUturn @ functionally unused
+	map_script_2 VAR_SPEEDWAGON_STATE, 7, MauvilleCity_EventScript_PolicemanGivesUturn @ functionally unused
 	.2byte 0
 
 MauvilleCity_EventScript_MoveWallyUpOneTile:
