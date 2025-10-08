@@ -5,7 +5,14 @@ mapscripts SnowdriftCity_MapScripts {
 script SnowdriftCity_OnTransition{
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_LANDMARK_SNOWDRIFT_CITY)
+    call_if_set(FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN, SnowdriftCity_EventScript_HideLunaAndMickey)
     end
+}
+
+script SnowdriftCity_EventScript_HideLunaAndMickey{
+    removeobject(1)
+    removeobject(2)
+    return
 }
 
 script SnowdriftCity_EventScript_Hiker{
@@ -128,4 +135,36 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
     fadedefaultbgm
     release
     end  
+}
+
+script SnowdriftCity_Eventscript_Luna{
+    lock
+    faceplayer
+    msgbox("Oh, it's {PLAYER}!\n
+        Hm?\p
+        How am I not cold like this?\n
+        Don't worry about it.\p
+        But… it would be nice if the sand\n
+        beds were a little bit bigger.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script SnowdriftCity_Eventscript_Mickey{
+    lock
+    faceplayer
+    msgbox("Hey, {PLAYER}…\p
+        LUNA invited me on this trip but\n
+        didn't tell me he FANTASIA'd again…\l
+        He didn't even update his POKéNAV.\p
+        I would've made an excuse to not go if\n
+        I knew he was gonna look like that…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
 }

@@ -170,8 +170,9 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setvar VAR_ULTRA_SPACE_STATE, 0
-	warp MAP_ROUTE135, 8, 10
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3
+	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
+	warp MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 4, 2
 	waitstate
 	release
 	end
@@ -187,8 +188,9 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	clearflag FLAG_SYS_FINAL_REMATCH
-	warp MAP_EVER_GRANDE_CITY_DRAKES_ROOM, 6, 13
+	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 3
+	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
+	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 4, 2
 	waitstate
 	release
 	end
