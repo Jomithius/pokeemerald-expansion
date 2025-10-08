@@ -33,134 +33,138 @@ FieryPath_EventScript_Salazzle::
 # 19 "data/maps/FieryPath/scripts.pory"
 	setflag FLAG_SALAZZLE_TOTEM
 # 20 "data/maps/FieryPath/scripts.pory"
-	applymovement 7, Common_Movement_FacePlayer
-# 21 "data/maps/FieryPath/scripts.pory"
-	waitmovement 7
-# 22 "data/maps/FieryPath/scripts.pory"
 	playmoncry SPECIES_SALAZZLE, CRY_MODE_ENCOUNTER
-# 23 "data/maps/FieryPath/scripts.pory"
+# 21 "data/maps/FieryPath/scripts.pory"
 	waitmoncry
-# 24 "data/maps/FieryPath/scripts.pory"
-	setwildbattle SPECIES_SALAZZLE_TOTEM, 35, ITEM_POISON_BARB
-# 25 "data/maps/FieryPath/scripts.pory"
+# 22 "data/maps/FieryPath/scripts.pory"
+	setwildbattle SPECIES_SALAZZLE_TOTEM, 30, ITEM_POISON_BARB
+# 23 "data/maps/FieryPath/scripts.pory"
 	dowildbattle
-# 26 "data/maps/FieryPath/scripts.pory"
+# 24 "data/maps/FieryPath/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 27 "data/maps/FieryPath/scripts.pory"
+# 25 "data/maps/FieryPath/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq FieryPath_EventScript_Salazzle_2
-# 30 "data/maps/FieryPath/scripts.pory"
+# 28 "data/maps/FieryPath/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq FieryPath_EventScript_Salazzle_3
-# 33 "data/maps/FieryPath/scripts.pory"
+# 31 "data/maps/FieryPath/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq FieryPath_EventScript_Salazzle_4
-# 36 "data/maps/FieryPath/scripts.pory"
+# 34 "data/maps/FieryPath/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq FieryPath_EventScript_Salazzle_5
 FieryPath_EventScript_Salazzle_1:
-# 39 "data/maps/FieryPath/scripts.pory"
+# 37 "data/maps/FieryPath/scripts.pory"
 	waitmessage
-# 40 "data/maps/FieryPath/scripts.pory"
+# 38 "data/maps/FieryPath/scripts.pory"
 	release
 	end
 
 FieryPath_EventScript_Salazzle_2:
-# 28 "data/maps/FieryPath/scripts.pory"
+# 26 "data/maps/FieryPath/scripts.pory"
 	call SalazzleWon_Caught
 	goto FieryPath_EventScript_Salazzle_1
 
 FieryPath_EventScript_Salazzle_3:
-# 31 "data/maps/FieryPath/scripts.pory"
+# 29 "data/maps/FieryPath/scripts.pory"
 	call SalazzleWon_Caught
 	goto FieryPath_EventScript_Salazzle_1
 
 FieryPath_EventScript_Salazzle_4:
-# 34 "data/maps/FieryPath/scripts.pory"
+# 32 "data/maps/FieryPath/scripts.pory"
 	call SalazzleFailed
 	goto FieryPath_EventScript_Salazzle_1
 
 FieryPath_EventScript_Salazzle_5:
-# 37 "data/maps/FieryPath/scripts.pory"
+# 35 "data/maps/FieryPath/scripts.pory"
 	call SalazzleFailed
 	goto FieryPath_EventScript_Salazzle_1
 
 
 SalazzleWon_Caught::
-# 45 "data/maps/FieryPath/scripts.pory"
+# 43 "data/maps/FieryPath/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 46 "data/maps/FieryPath/scripts.pory"
-	removeobject 7
-# 47 "data/maps/FieryPath/scripts.pory"
+# 44 "data/maps/FieryPath/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 45 "data/maps/FieryPath/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
 	return
 
 
 SalazzleFailed::
-# 52 "data/maps/FieryPath/scripts.pory"
+# 50 "data/maps/FieryPath/scripts.pory"
 	playmoncry SPECIES_SALAZZLE, CRY_MODE_ENCOUNTER
-# 53 "data/maps/FieryPath/scripts.pory"
+# 51 "data/maps/FieryPath/scripts.pory"
 	delay 20
-# 54 "data/maps/FieryPath/scripts.pory"
+# 52 "data/maps/FieryPath/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 55 "data/maps/FieryPath/scripts.pory"
-	removeobject 7
-# 56 "data/maps/FieryPath/scripts.pory"
+# 53 "data/maps/FieryPath/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 54 "data/maps/FieryPath/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 5
-# 57 "data/maps/FieryPath/scripts.pory"
+# 55 "data/maps/FieryPath/scripts.pory"
 	msgbox SalazzleFailed_Text_0
 	return
 
 
 FieryPath_EventScript_Moltres::
-# 62 "data/maps/FieryPath/scripts.pory"
+# 60 "data/maps/FieryPath/scripts.pory"
 	lock
-# 63 "data/maps/FieryPath/scripts.pory"
+# 61 "data/maps/FieryPath/scripts.pory"
 	faceplayer
-# 64 "data/maps/FieryPath/scripts.pory"
+# 62 "data/maps/FieryPath/scripts.pory"
 	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
-# 65 "data/maps/FieryPath/scripts.pory"
+# 63 "data/maps/FieryPath/scripts.pory"
 	waitmoncry
-# 66 "data/maps/FieryPath/scripts.pory"
-	setwildbattle SPECIES_MOLTRES, 75
-# 67 "data/maps/FieryPath/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+# 64 "data/maps/FieryPath/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, FieryPath_EventScript_Moltres_2
 # 68 "data/maps/FieryPath/scripts.pory"
-	waitstate
-# 69 "data/maps/FieryPath/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
-# 70 "data/maps/FieryPath/scripts.pory"
-	compare VAR_RESULT, B_OUTCOME_CAUGHT
-	goto_if_eq FieryPath_EventScript_Moltres_2
-# 70 "data/maps/FieryPath/scripts.pory"
-	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq FieryPath_EventScript_Moltres_2
-# 75 "data/maps/FieryPath/scripts.pory"
-	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq FieryPath_EventScript_Moltres_3
-# 75 "data/maps/FieryPath/scripts.pory"
-	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
-	goto_if_eq FieryPath_EventScript_Moltres_3
+	setwildbattle SPECIES_MOLTRES, 75
 FieryPath_EventScript_Moltres_1:
+# 70 "data/maps/FieryPath/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 71 "data/maps/FieryPath/scripts.pory"
+	waitstate
+# 72 "data/maps/FieryPath/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 73 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq FieryPath_EventScript_Moltres_6
+# 73 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq FieryPath_EventScript_Moltres_6
 # 78 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq FieryPath_EventScript_Moltres_7
+# 78 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq FieryPath_EventScript_Moltres_7
+FieryPath_EventScript_Moltres_5:
+# 81 "data/maps/FieryPath/scripts.pory"
 	release
 	end
 
 FieryPath_EventScript_Moltres_2:
-# 71 "data/maps/FieryPath/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 72 "data/maps/FieryPath/scripts.pory"
-	removeobject VAR_LAST_TALKED
-# 73 "data/maps/FieryPath/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 5
+# 65 "data/maps/FieryPath/scripts.pory"
+	setwildbattle SPECIES_MOLTRES, 35
 	goto FieryPath_EventScript_Moltres_1
 
-FieryPath_EventScript_Moltres_3:
+FieryPath_EventScript_Moltres_6:
+# 74 "data/maps/FieryPath/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 75 "data/maps/FieryPath/scripts.pory"
+	removeobject VAR_LAST_TALKED
 # 76 "data/maps/FieryPath/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+	goto FieryPath_EventScript_Moltres_5
+
+FieryPath_EventScript_Moltres_7:
+# 79 "data/maps/FieryPath/scripts.pory"
 	goto Common_EventScript_NopReturn
-	goto FieryPath_EventScript_Moltres_1
+	goto FieryPath_EventScript_Moltres_5
 
 
 SalazzleFailed_Text_0:
-# 57 "data/maps/FieryPath/scripts.pory"
+# 55 "data/maps/FieryPath/scripts.pory"
 	.string "The SALAZZLE disappeared…$"

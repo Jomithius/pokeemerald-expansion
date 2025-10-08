@@ -469,9 +469,9 @@
 #define FLAG_SHOWN_AURORA_TICKET             0x1AF
 #define FLAG_SHOWN_OLD_SEA_MAP               0x1B0
 #define FLAG_HIDE_ASAK_BENNIS_DOJO           0x1B1 // used to be swagger tutor
-#define FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT       0x1B2 // functionially unused
-#define FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER   0x1B3 // functionially unused
-#define FLAG_MOVE_TUTOR_TAUGHT_MIMIC         0x1B4 // functionially unused
+#define FLAG_ITEM_JIRACHIS_ALTAR_ROSERITE    0x1B2 // Jirachis Altar
+#define FLAG_HIDE_JAMES_AND_PROF_ULTRA_SPACE 0x1B3 // after blacephalon
+#define FLAG_HIDE_MISA_POST_GAME_RUSTBORO    0x1B4 // after becoming champion
 #define FLAG_MOVE_TUTOR_TAUGHT_METRONOME     0x1B5 // functionially unused
 #define FLAG_MOVE_TUTOR_TAUGHT_SLEEP_TALK    0x1B6 // functionially unused
 #define FLAG_MOVE_TUTOR_TAUGHT_SUBSTITUTE    0x1B7 // functionially unused
@@ -1561,8 +1561,8 @@
 #define FLAG_RECEIVED_CASTELIACONE                  (SYSTEM_FLAGS + 0xB9) // From Misa Castelia Queen Route 137
 #define FLAG_RECEIVED_PROTECTIVE_PADS               (SYSTEM_FLAGS + 0xBA) // Dojo Challenge
 #define FLAG_TALKED_TO_POKEMON_SCHOOL_TUTOR         (SYSTEM_FLAGS + 0xBB) // Pokemon School
-#define FLAG_UNUSED_0x91C                           (SYSTEM_FLAGS + 0xBC) // Unused Flag
-#define FLAG_UNUSED_0x91D                           (SYSTEM_FLAGS + 0xBD) // Unused Flag
+#define FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT              (SYSTEM_FLAGS + 0xBC) // functionally unused
+#define FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER          (SYSTEM_FLAGS + 0xBD) // functionally unused
 #define FLAG_UNUSED_0x91E                           (SYSTEM_FLAGS + 0xBE) // Unused Flag
 #define FLAG_UNUSED_0x91F                           (SYSTEM_FLAGS + 0xBF) // Unused Flag
 

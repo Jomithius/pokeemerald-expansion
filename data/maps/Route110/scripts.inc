@@ -2437,6 +2437,22 @@ Route110_EventScript_SaveBikerMusic::
 	return
 
 
+Route110_EventScript_ChallengeSlateportGym::
+# 1298 "data/maps/Route110/scripts.pory"
+	lockall
+# 1299 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_ChallengeSlateportGym_Text_0, MSGBOX_AUTOCLOSE
+# 1300 "data/maps/Route110/scripts.pory"
+	waitmessage
+# 1301 "data/maps/Route110/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 1302 "data/maps/Route110/scripts.pory"
+	waitmovement 0
+# 1303 "data/maps/Route110/scripts.pory"
+	releaseall
+	end
+
+
 Route110_EventScript_Biker1_Text_0:
 # 942 "data/maps/Route110/scripts.pory"
 	.string "The CYCLING ROAD belongs to the\n MISSISSWUAGWA RIDERS now!$"
@@ -2464,6 +2480,10 @@ Route110_EventScript_BikerSouthCyclingRoad_Text_0:
 Route110_EventScript_PolicemanHelpTrigger2_Text_0:
 # 1273 "data/maps/Route110/scripts.pory"
 	.string "I can't just leave things\nlike this!$"
+
+Route110_EventScript_ChallengeSlateportGym_Text_0:
+# 1299 "data/maps/Route110/scripts.pory"
+	.string "I should challenge the GYM first.$"
 
 Route110_Text_PolicemanPleaseHelp::
 # 985 "data/maps/Route110/scripts.pory"

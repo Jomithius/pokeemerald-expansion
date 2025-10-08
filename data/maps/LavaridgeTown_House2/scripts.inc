@@ -62,7 +62,7 @@ LavaridgeTown_House2_Lina_5:
 
 LavaridgeTown_House2_Text_Lady2::
 # 15 "data/maps/LavaridgeTown_House2/scripts.pory"
-	.string "Fufu.\n She acts like she doesn't care, but\l she travels all the way from SLATEPORT\l CITY just to visit us all the time.\p Maybe she just loves her\n sister's cooking that much.$"
+	.string "Fufu.\p She acts like she doesn't care, but\n she travels all the way from SLATEPORT\l CITY just to visit us all the time.\p Maybe she just loves her\n sister's cooking that much.$"
 
 LavaridgeTown_EventScript_Text_Lady1::
 # 24 "data/maps/LavaridgeTown_House2/scripts.pory"
@@ -74,7 +74,7 @@ LavaridgeTown_House2_Text_Lina::
 
 LavaridgeTown_House2_Text_LinaEeveeStolen::
 # 58 "data/maps/LavaridgeTown_House2/scripts.pory"
-	.string "You know that's weird, right?\n You're probably the reason that\l my EEVEE went missing too.\p Shoo!$"
+	.string "You know that's weird, right?\p You're probably the reason that\n my EEVEE went missing too.\p Shoo!$"
 
 LavaridgeTown_House2_Text_LinaThatsWeird::
 # 65 "data/maps/LavaridgeTown_House2/scripts.pory"

@@ -1,6 +1,6 @@
 raw `.set LOCALID_WALLY, 6
 .set LOCALID_WALLYS_UNCLE, 7
-.set LOCALID_SCOTT, 1
+.set LOCALID_SCOTT, 11
 .set LOCALID_DACA, 8
 
 MauvilleCity_MapScripts::
@@ -203,7 +203,7 @@ MauvilleCity_EventScript_ScottApproachPlayerNorth::
 	return
 
 MauvilleCity_EventScript_ScottApproachPlayerEast::
-	setobjectxyperm LOCALID_SCOTT, 12, 13
+	setobjectxyperm LOCALID_SCOTT, 12, 14
 	addobject LOCALID_SCOTT
 	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottApproachPlayerEast
 	waitmovement 0
@@ -1055,7 +1055,7 @@ script MauvilleCity_EventScript_BikerLeave{ // for route 112, i was just lazy
 	lockall
 	playse(SE_PIN)
     applymovement(48, Common_Movement_ExclamationMark)
-    waitmovement(0)
+    waitmovement(48)
     waitse
 	msgbox("Hey, don't you see us talking?\n
 		Get out of here!", MSGBOX_AUTOCLOSE)

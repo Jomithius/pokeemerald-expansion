@@ -136,8 +136,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle{
 		you did to that BIKER gang.\p
 		Just so you know… my brother was one\n
 		of the people you helped lock up.\p
-		…\n
-		I have nothing else to say to you.", MSGBOX_AUTOCLOSE)
+		…", MSGBOX_AUTOCLOSE)
 	waitmessage
 	clearflag(FLAG_TEMP_E)
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
@@ -160,7 +159,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle{
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
 	special(HealPlayerParty)
 	callnative(UpdateFollowingPokemon)
-	msgbox("Well, you won again. Congrats.\n
+	msgbox("Well, you won again. Congrats!\n
 		Here's your prize.\p
 		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
 	waitmessage
@@ -188,8 +187,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
 		you did to that BIKER gang.\p
 		Just so you know… my brother was one\n
 		of the people you helped lock up.\p
-		…\n
-		I have nothing else to say to you.", MSGBOX_AUTOCLOSE)
+		…", MSGBOX_AUTOCLOSE)
 	waitmessage
 	clearflag(FLAG_TEMP_E)
     setflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
@@ -212,7 +210,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
     clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
 	special(HealPlayerParty)
 	callnative(UpdateFollowingPokemon)
-	msgbox("Well, you won again. Congrats.\n
+	msgbox("Well, you won again. Congrats!\n
 		Here's your prize.\p
 		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
 	waitmessage

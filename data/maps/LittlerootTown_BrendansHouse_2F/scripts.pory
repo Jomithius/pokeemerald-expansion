@@ -332,7 +332,7 @@ script PlayersHouse_2F_EventScript_SetToNormalDifficulty{
         This can be changed at any time using\nthe MODE SWITCHER in KEY ITEMS.", MSGBOX_AUTOCLOSE)
     waitmessage
     setdifficulty(DIFFICULTY_EASY)
-	setvar(VAR_DIFFICULTY_SWITCH_COUNTER, 1)
+	setvar(VAR_DIFFICULTY_SWITCH_COUNTER, 0)
     clearflag(FLAG_SYS_HARD_MODE)
     clearflag(FLAG_SYS_SLEEP_CLAUSE)
     additem(ITEM_MODE_SWITCHER)

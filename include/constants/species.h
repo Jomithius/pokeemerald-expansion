@@ -1653,8 +1653,11 @@
 #define SPECIES_KABUTOPS_FOSSIL                         1537
 #define SPECIES_AERODACTYL_FOSSIL                       1538
 #define SPECIES_MISSINGNO                               1539
+#define SPECIES_HAWLUCHA_MEGA                           1540
+#define SPECIES_VICTREEBEL_MEGA                         1541
+#define SPECIES_MALAMAR_MEGA                            1542
 
-#define SPECIES_EGG                                     (SPECIES_MISSINGNO + 1)
+#define SPECIES_EGG                                     (SPECIES_MALAMAR_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

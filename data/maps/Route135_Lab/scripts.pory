@@ -492,7 +492,7 @@ script Route135_Lab_EventScript_ToAreaZero{
             It shall transport you.", MSGBOX_AUTOCLOSE)
         call(Route135_Lab_EventScript_PlayerGoesToCosmog)
         waitmovement(0)
-        msgbox(Route135_Lab_Text_ManiacExplainCosmog, MSGBOX_AUTOCLOSE)
+        msgbox(Route135_Lab_Text_ManiacExplainAreaZeroCosmog, MSGBOX_AUTOCLOSE)
         waitmessage
         applymovement(3, Common_Movement_WalkInPlaceDown)
         waitmovement(3)
@@ -768,7 +768,7 @@ text Route135_Lab_Text_ManiacNo{
 }
 
 text Route135_Lab_Text_Maniac8{
-    "Great work COSMOG!\n
+    "Great work, COSMOG!\n
     These discoveries are monumental!\p
     I must log all my findings this instant!\n
     Come with me, COSMOG!"
@@ -876,7 +876,7 @@ text Route135_Lab_Text_ManiacIntroduceAreaZero{
     explore this new world, yes?"
 }
 
-text Route135_Lab_Text_ManiacExplainCosmog{
+text Route135_Lab_Text_ManiacExplainAreaZeroCosmog{
     "The camera I put on COSMOG showed that\n
     the world has a somewhat… strange\l
     composition.\p

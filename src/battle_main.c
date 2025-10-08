@@ -1922,7 +1922,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
         {
             if(highestLevel - dynamicLevel > 1)
             {
-                if(FlagGet(FLAG_SYS_HARD_MODE))
+                if(FlagGet(FLAG_SYS_HARD_MODE) == TRUE)
                 {
                     dynamicLevel = highestLevel;
                 }
@@ -1930,7 +1930,6 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 {
                     dynamicLevel = highestLevel - 1;
                 }
-                
             }
 
             if(dynamicLevel < 75) 

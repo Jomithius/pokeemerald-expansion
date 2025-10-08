@@ -554,6 +554,20 @@ EvergrandeCity_Movement_PlayerRightTrigger:
 	walk_up
 	step_end
 
+EverGrandeCity_EventScript_StrongTrainerWaits::
+# 395 "data/maps/EverGrandeCity/scripts.pory"
+	lockall
+# 396 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EverGrandeCity_EventScript_StrongTrainerWaits_Text_0, MSGBOX_AUTOCLOSE
+# 399 "data/maps/EverGrandeCity/scripts.pory"
+	waitmessage
+# 400 "data/maps/EverGrandeCity/scripts.pory"
+	setvar VAR_EVER_GRANDE_CITY_STATE, 1
+# 401 "data/maps/EverGrandeCity/scripts.pory"
+	releaseall
+	end
+
+
 EverGrandeCity_EventScript_BennisTrigger_Text_0:
 # 62 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Baldy baldy over there, what's it like\n to have no hair?$"
@@ -565,6 +579,10 @@ EverGrandeCity_EventScript_James_Text_0:
 EverGrandeCity_EventScript_James_Text_1:
 # 294 "data/maps/EverGrandeCity/scripts.pory"
 	.string "JAMES: …\p It feels like… I was always\n destined to lose to you, {PLAYER}.$"
+
+EverGrandeCity_EventScript_StrongTrainerWaits_Text_0:
+# 396 "data/maps/EverGrandeCity/scripts.pory"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The current level cap is 65.\p It's recommended to save before\n continuing.\p$"
 
 EverGrandeCity_Text_Asak1::
 # 164 "data/maps/EverGrandeCity/scripts.pory"

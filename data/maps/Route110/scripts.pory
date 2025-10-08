@@ -1293,3 +1293,13 @@ script Route110_EventScript_SaveBikerMusic{
 	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	return
 }
+
+script Route110_EventScript_ChallengeSlateportGym{
+	lockall
+	msgbox("I should challenge the GYM first.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+	waitmovement(0)
+	releaseall
+	end
+}

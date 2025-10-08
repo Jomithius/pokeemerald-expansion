@@ -33,10 +33,10 @@ script FullMoonIslandInterior_EventScript_RatduardoBattle{
     lockall
     checkobjectat(8, 17)
     if(var(VAR_RESULT) == TRUE){
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6)
+        applymovement(OBJ_EVENT_ID_PLAYER, FullMoonIslandInterior_Movement_PlayerApproachRatduardoRightEntrance)
     }
     else{
-        applymovement(OBJ_EVENT_ID_PLAYER, FullMoonIslandInterior_Movement_PlayerApproachRatduardoRightEntrance)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6)
     }
     waitmovement(0)
     delay(30)
@@ -165,7 +165,7 @@ script FullMoonIslandInterior_EventScript_Cresselia{
 text FullMoonIslandInterior_Text_Ratduardo{
     "… Again… You…\n
     Always… in my way…\p
-    No more…!"
+    Please…!"
 }
 text FullMoonIslandInterior_Text_RatduardoDefeat{
    "…\n

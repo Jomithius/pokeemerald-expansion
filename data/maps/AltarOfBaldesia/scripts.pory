@@ -302,10 +302,10 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     playmoncry(SPECIES_PECHARUNT, CRY_MODE_ENCOUNTER)
     waitmoncry
     if(flag(FLAG_SYS_HARD_MODE)){
-        setwildbattle(SPECIES_PECHARUNT, 100)
+        setwildbattle(SPECIES_PECHARUNT, 90)
     }
     else{
-        setwildbattle(SPECIES_PECHARUNT, 90)
+        setwildbattle(SPECIES_PECHARUNT, 80)
     }
     setflag(FLAG_SYS_NO_RUNNING)
     setflag(FLAG_SYS_NO_CATCHING)

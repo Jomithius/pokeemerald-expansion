@@ -132,138 +132,140 @@ Route136_EventScript_KlawfBattle::
 # 86 "data/maps/Route136/scripts.pory"
 	waitmessage
 # 87 "data/maps/Route136/scripts.pory"
-	setwildbattle SPECIES_KLAWF, 85
+	faceplayer
 # 88 "data/maps/Route136/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_KLAWF, 85
 # 89 "data/maps/Route136/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	dowildbattle
 # 90 "data/maps/Route136/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 91 "data/maps/Route136/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq Route136_EventScript_KlawfBattle_2
-# 90 "data/maps/Route136/scripts.pory"
+# 91 "data/maps/Route136/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq Route136_EventScript_KlawfBattle_2
-# 100 "data/maps/Route136/scripts.pory"
+# 101 "data/maps/Route136/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route136_EventScript_KlawfBattle_3
 Route136_EventScript_KlawfBattle_1:
-# 110 "data/maps/Route136/scripts.pory"
-	setvar VAR_ROUTE_136_STATE, 2
 # 111 "data/maps/Route136/scripts.pory"
+	setvar VAR_ROUTE_136_STATE, 2
+# 112 "data/maps/Route136/scripts.pory"
 	release
 	end
 
 Route136_EventScript_KlawfBattle_2:
-# 91 "data/maps/Route136/scripts.pory"
-	playmoncry SPECIES_KLAWF, CRY_MODE_ENCOUNTER
 # 92 "data/maps/Route136/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_KLAWF, CRY_MODE_ENCOUNTER
 # 93 "data/maps/Route136/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	waitmoncry
 # 94 "data/maps/Route136/scripts.pory"
-	removeobject 10
+	fadescreenswapbuffers FADE_TO_BLACK
 # 95 "data/maps/Route136/scripts.pory"
-	setflag FLAG_DEFEATED_KLAWF
+	removeobject 10
 # 96 "data/maps/Route136/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	setflag FLAG_DEFEATED_KLAWF
 # 97 "data/maps/Route136/scripts.pory"
-	msgbox Route136_EventScript_KlawfBattle_Text_2, MSGBOX_AUTOCLOSE
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 98 "data/maps/Route136/scripts.pory"
+	msgbox Route136_EventScript_KlawfBattle_Text_2, MSGBOX_AUTOCLOSE
+# 99 "data/maps/Route136/scripts.pory"
 	waitmessage
 	goto Route136_EventScript_KlawfBattle_1
 
 Route136_EventScript_KlawfBattle_3:
-# 101 "data/maps/Route136/scripts.pory"
-	playmoncry SPECIES_KLAWF, CRY_MODE_FAINT
 # 102 "data/maps/Route136/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_KLAWF, CRY_MODE_FAINT
 # 103 "data/maps/Route136/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	waitmoncry
 # 104 "data/maps/Route136/scripts.pory"
-	removeobject 10
+	fadescreenswapbuffers FADE_TO_BLACK
 # 105 "data/maps/Route136/scripts.pory"
-	setflag FLAG_DEFEATED_KLAWF
+	removeobject 10
 # 106 "data/maps/Route136/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	setflag FLAG_DEFEATED_KLAWF
 # 107 "data/maps/Route136/scripts.pory"
-	msgbox Route136_EventScript_KlawfBattle_Text_2, MSGBOX_AUTOCLOSE
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 108 "data/maps/Route136/scripts.pory"
+	msgbox Route136_EventScript_KlawfBattle_Text_2, MSGBOX_AUTOCLOSE
+# 109 "data/maps/Route136/scripts.pory"
 	waitmessage
 	goto Route136_EventScript_KlawfBattle_1
 
 
 Route136_EventScript_Expert_M::
-# 116 "data/maps/Route136/scripts.pory"
+# 117 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_Expert_M_Text_0, MSGBOX_NPC
 	end
 
 
 Route136_EventScript_HikerKlawf::
-# 126 "data/maps/Route136/scripts.pory"
-	lock
 # 127 "data/maps/Route136/scripts.pory"
-	faceplayer
+	lock
 # 128 "data/maps/Route136/scripts.pory"
+	faceplayer
+# 129 "data/maps/Route136/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_KLAWF, Route136_EventScript_HikerKlawf_2
-# 135 "data/maps/Route136/scripts.pory"
+# 136 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_HikerKlawf_Text_1, MSGBOX_AUTOCLOSE
 Route136_EventScript_HikerKlawf_1:
-# 143 "data/maps/Route136/scripts.pory"
-	waitmessage
 # 144 "data/maps/Route136/scripts.pory"
+	waitmessage
+# 145 "data/maps/Route136/scripts.pory"
 	release
 	end
 
 Route136_EventScript_HikerKlawf_2:
-# 129 "data/maps/Route136/scripts.pory"
+# 130 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_HikerKlawf_Text_0, MSGBOX_AUTOCLOSE
 	goto Route136_EventScript_HikerKlawf_1
 
 
 Route136_EventScript_Newton::
-# 149 "data/maps/Route136/scripts.pory"
-	trainerbattle_single TRAINER_NEWTON, Route136_EventScript_Newton_Text_0, Route136_EventScript_Newton_Text_1
 # 150 "data/maps/Route136/scripts.pory"
+	trainerbattle_single TRAINER_NEWTON, Route136_EventScript_Newton_Text_0, Route136_EventScript_Newton_Text_1
+# 151 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_Newton_Text_2, MSGBOX_NPC
 	end
 
 
 Route136_EventScript_Dewton::
-# 157 "data/maps/Route136/scripts.pory"
-	trainerbattle_single TRAINER_DEWTON, Route136_EventScript_Dewton_Text_0, Route136_EventScript_Dewton_Text_1
 # 158 "data/maps/Route136/scripts.pory"
+	trainerbattle_single TRAINER_DEWTON, Route136_EventScript_Dewton_Text_0, Route136_EventScript_Dewton_Text_1
+# 159 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_Dewton_Text_2, MSGBOX_NPC
 	end
 
 
 Route136_EventScript_Johnithin::
-# 165 "data/maps/Route136/scripts.pory"
-	trainerbattle_single TRAINER_JOHNITHIN, Route136_EventScript_Johnithin_Text_0, Route136_EventScript_Johnithin_Text_1
 # 166 "data/maps/Route136/scripts.pory"
+	trainerbattle_single TRAINER_JOHNITHIN, Route136_EventScript_Johnithin_Text_0, Route136_EventScript_Johnithin_Text_1
+# 167 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_Johnithin_Text_2, MSGBOX_NPC
 	end
 
 
 Route136_EventScript_Bobby::
-# 174 "data/maps/Route136/scripts.pory"
-	trainerbattle_single TRAINER_BOBBY, Route136_EventScript_Bobby_Text_0, Route136_EventScript_Bobby_Text_1
 # 175 "data/maps/Route136/scripts.pory"
+	trainerbattle_single TRAINER_BOBBY, Route136_EventScript_Bobby_Text_0, Route136_EventScript_Bobby_Text_1
+# 176 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_Bobby_Text_2, MSGBOX_NPC
 	end
 
 
 Route136_EventScript_Tobias::
-# 183 "data/maps/Route136/scripts.pory"
-	trainerbattle_single TRAINER_TOBIAS, Route136_EventScript_Tobias_Text_0, Route136_EventScript_Tobias_Text_1
 # 184 "data/maps/Route136/scripts.pory"
+	trainerbattle_single TRAINER_TOBIAS, Route136_EventScript_Tobias_Text_0, Route136_EventScript_Tobias_Text_1
+# 185 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_Tobias_Text_2, MSGBOX_NPC
 	end
 
 
 Route136_EventScript_Bentley::
-# 190 "data/maps/Route136/scripts.pory"
-	trainerbattle_single TRAINER_BENTLEY, Route136_EventScript_Bentley_Text_0, Route136_EventScript_Bentley_Text_1
 # 191 "data/maps/Route136/scripts.pory"
+	trainerbattle_single TRAINER_BENTLEY, Route136_EventScript_Bentley_Text_0, Route136_EventScript_Bentley_Text_1
+# 192 "data/maps/Route136/scripts.pory"
 	msgbox Route136_EventScript_Bentley_Text_2, MSGBOX_NPC
 	end
 
@@ -285,89 +287,89 @@ Route136_EventScript_KlawfBattle_Text_1:
 	.string "The KLAWF woke up!\n In a rage, it attacks!$"
 
 Route136_EventScript_KlawfBattle_Text_2:
-# 97 "data/maps/Route136/scripts.pory"
+# 98 "data/maps/Route136/scripts.pory"
 	.string "The KLAWF ran off somewhere…$"
 
 Route136_EventScript_Expert_M_Text_0:
-# 116 "data/maps/Route136/scripts.pory"
+# 117 "data/maps/Route136/scripts.pory"
 	.string "There's a city at the top of AZURE\n MOUNTAIN.\p It's snowy, but not that cold because\n of the geothermal energy.\p I don't really get it, but it's\n interesting.$"
 
 Route136_EventScript_HikerKlawf_Text_0:
-# 129 "data/maps/Route136/scripts.pory"
+# 130 "data/maps/Route136/scripts.pory"
 	.string "There's a stupid KLAWF blocking\n the tunnel entrance!\p I tried hitting it to wake it up,\n but it's shell's too hard.$"
 
 Route136_EventScript_HikerKlawf_Text_1:
-# 135 "data/maps/Route136/scripts.pory"
+# 136 "data/maps/Route136/scripts.pory"
 	.string "The KLAWF is finally gone!\p Now I can start my hike up the\n mountain.\p I'll go after I take a break.\n … Maybe a nap too.\p The TRAINERS in there are super\n scary.$"
 
 Route136_EventScript_Newton_Text_0:
-# 149 "data/maps/Route136/scripts.pory"
+# 150 "data/maps/Route136/scripts.pory"
 	.string "This is a prime spot!$"
 
 Route136_EventScript_Newton_Text_1:
-# 149 "data/maps/Route136/scripts.pory"
+# 150 "data/maps/Route136/scripts.pory"
 	.string "I still won't move!$"
 
 Route136_EventScript_Newton_Text_2:
-# 150 "data/maps/Route136/scripts.pory"
+# 151 "data/maps/Route136/scripts.pory"
 	.string "This is a huge waterfall.\p There are tons of MAGIKARP that try\n to swim up it each day.$"
 
 Route136_EventScript_Dewton_Text_0:
-# 157 "data/maps/Route136/scripts.pory"
+# 158 "data/maps/Route136/scripts.pory"
 	.string "All I've caught is MAGIKARP here!$"
 
 Route136_EventScript_Dewton_Text_1:
-# 157 "data/maps/Route136/scripts.pory"
+# 158 "data/maps/Route136/scripts.pory"
 	.string "I should go back to my old spot.$"
 
 Route136_EventScript_Dewton_Text_2:
-# 158 "data/maps/Route136/scripts.pory"
+# 159 "data/maps/Route136/scripts.pory"
 	.string "I heard there's a new cave that\n opened up on ROUTE 137.\p There must be rare POKéMON in there.$"
 
 Route136_EventScript_Johnithin_Text_0:
-# 165 "data/maps/Route136/scripts.pory"
+# 166 "data/maps/Route136/scripts.pory"
 	.string "I've trained so much that I've\ngotten so skinny.$"
 
 Route136_EventScript_Johnithin_Text_1:
-# 165 "data/maps/Route136/scripts.pory"
+# 166 "data/maps/Route136/scripts.pory"
 	.string "I'm so fricking skinny…$"
 
 Route136_EventScript_Johnithin_Text_2:
-# 166 "data/maps/Route136/scripts.pory"
+# 167 "data/maps/Route136/scripts.pory"
 	.string "A long time ago I used to train\n in BALDESIA.\p You should visit the dojo out there if\n you ever have the chance.$"
 
 Route136_EventScript_Bobby_Text_0:
-# 174 "data/maps/Route136/scripts.pory"
+# 175 "data/maps/Route136/scripts.pory"
 	.string "I want to hike up the mountain,\nbut a POKéMON is blocking the entrance.$"
 
 Route136_EventScript_Bobby_Text_1:
-# 174 "data/maps/Route136/scripts.pory"
+# 175 "data/maps/Route136/scripts.pory"
 	.string "Oh well.$"
 
 Route136_EventScript_Bobby_Text_2:
-# 175 "data/maps/Route136/scripts.pory"
+# 176 "data/maps/Route136/scripts.pory"
 	.string "I guess I can wait to make\n the hike.\p There's a lot of scary TRAINERS in\n there either way.$"
 
 Route136_EventScript_Tobias_Text_0:
-# 183 "data/maps/Route136/scripts.pory"
+# 184 "data/maps/Route136/scripts.pory"
 	.string "Up ahead is the tallest mountain\nin HOENN!$"
 
 Route136_EventScript_Tobias_Text_1:
-# 183 "data/maps/Route136/scripts.pory"
+# 184 "data/maps/Route136/scripts.pory"
 	.string "I'm afraid of tall things.$"
 
 Route136_EventScript_Tobias_Text_2:
-# 184 "data/maps/Route136/scripts.pory"
+# 185 "data/maps/Route136/scripts.pory"
 	.string "The TRAINERS in AZURE MOUNTAIN\n are seriously SUPER strong.$"
 
 Route136_EventScript_Bentley_Text_0:
-# 190 "data/maps/Route136/scripts.pory"
+# 191 "data/maps/Route136/scripts.pory"
 	.string "I can feel it…\nMy story starts now!$"
 
 Route136_EventScript_Bentley_Text_1:
-# 190 "data/maps/Route136/scripts.pory"
+# 191 "data/maps/Route136/scripts.pory"
 	.string "Maybe I'm not the main character…$"
 
 Route136_EventScript_Bentley_Text_2:
-# 191 "data/maps/Route136/scripts.pory"
+# 192 "data/maps/Route136/scripts.pory"
 	.string "AZURE MOUNTAIN has some crazy\n strong POKéMON and TRAINERS.$"

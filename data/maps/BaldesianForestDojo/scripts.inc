@@ -1552,7 +1552,7 @@ BaldesianForestDojo_EventScript_Asak_Text_0:
 
 BaldesianForestDojo_EventScript_Asak_Text_1:
 # 440 "data/maps/BaldesianForestDojo/scripts.pory"
-	.string "Wow… you really beat brother…\p No wonder MASTER BENNIS and LADY\n ASAKURA recognize your strength.$"
+	.string "Wow… you really beat brother…\p No wonder MASTER BENNIS and LADY\n MOMO recognize your strength.$"
 
 BaldesianForestDojo_EventScript_Nerd_Text_0:
 # 453 "data/maps/BaldesianForestDojo/scripts.pory"

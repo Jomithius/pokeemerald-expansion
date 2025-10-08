@@ -3170,12 +3170,13 @@ AI: Basic Trainer
 
 Machop
 Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Quilladin  
 Ability: Bulletproof  
 Level: 18  
-Impish Nature  
+Impish Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Bulk Up  
 - Bullet Seed  
 - Bulldoze
@@ -3351,7 +3352,6 @@ AI: Check Bad Move
 
 Electrike
 Level: 21
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Quick Attack
 - Thunder Wave
 - Spark
@@ -3359,14 +3359,12 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Voltorb
 Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Charge
 - Shock Wave
 - Screech
 
 Voltorb-Hisui
 Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Charge Beam
 - Screech
 
@@ -3435,7 +3433,7 @@ Level: 23
 Electrike  
 Ability: Minus  
 Level: 22  
-- Ice Fang  
+- Bite  
 - Volt Switch  
 
 === TRAINER_FERNANDO_1 ===
@@ -3605,7 +3603,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Swablu
+Magmar
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3810,7 +3808,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Stonjourner
+Scizor
 
 Sudowoodo
 
@@ -4406,8 +4404,6 @@ EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly Nature  
 - Outrage  
 - Dragon Ascent  
-- Scale Shot  
-- Dragon Tail  
 
 Cobalion @ Leftovers  
 Ability: Justified  
@@ -5241,7 +5237,7 @@ EVs: 248 HP / 64 Atk / 180 Def / 8 SpD
 Impish Nature  
 - Destiny Bond  
 - Leech Seed  
-- Seed Bomb  
+- Razor Leaf  
 - Shadow Sneak  
 
 Duosion (M) @ Flame Orb  
@@ -5272,7 +5268,7 @@ Level: 25
 EVs: 252 HP / 240 Atk / 12 Def / 4 Spe  
 Naughty Nature  
 - Fake Out  
-- Lash Out  
+- Thief  
 - Bulk Up  
 - Brick Break  
 
@@ -5820,8 +5816,7 @@ Level: 25
 EVs: 4 HP / 244 Atk / 12 SpD / 244 Spe  
 Jolly Nature  
 - Lash Out  
-- Facade  
-- Parting Shot  
+- Facade   
 - Trick  
 
 Slowpoke-Galar (M) @ Quick Claw  
@@ -5829,10 +5824,9 @@ Ability: Regenerator
 Level: 26   
 EVs: 244 HP / 108 Atk / 148 SpA / 4 SpD  
 Brave Nature  
-IVs: 0 Atk  
-- Tri Attack  
+IVs: 0 Atk   
 - Psybeam  
-- Grass Knot  
+- Water Pulse  
 - Icy Wind  
 
 Darumaka-Galar (M) @ Wide Lens  
@@ -5863,7 +5857,6 @@ IVs: 0 Atk
 - Icy Wind  
 - Psybeam  
 - Charge Beam  
-
 
 === TRAINER_NATE_SHOAL_CAVE ===
 Name: BALDASARIO
@@ -6620,6 +6613,7 @@ AI: Basic Trainer
 Geodude-Alola  
 Ability: Galvanize
 Level: 11  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Tackle  
 - Rock Throw  
 
@@ -6627,18 +6621,21 @@ Onix
 Ability: Rock Head  
 Level: 11  
 Hasty Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Rock Throw  
 - Defense Curl  
 - Tackle  
 
 Rolycoly  
 Ability: Steam Engine  
-Level: 12   
+Level: 12 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 - Rock Blast  
 - Incinerate
 
 Pansage
 Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6652,17 +6649,20 @@ AI: Basic Trainer
 Charmander 
 Ability: Blaze  
 Level: 12    
-Relaxed Nature  
+Relaxed Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Incinerate 
 - Scratch 
 
 Pansear
-Level: 12    
+Level: 12 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe    
 
 Silicobra  
 Ability: Shed Skin  
 Level: 13  
-Sassy Nature  
+Sassy Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mud-Slap  
 - Rock Tomb  
 
@@ -6732,7 +6732,7 @@ Jolly Nature
 
 Raticate-Alola-Totem (M) @ Sitrus Berry
 Ability: Thick Fat  
-Level: 31   
+Level: 30   
 EVs: 240 HP / 244 Atk / 24 SpD  
 Adamant Nature  
 - Bulk Up  
@@ -6995,8 +6995,7 @@ Careful Nature
 
 Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire  
-Level: 75  
-Shiny: Yes   
+Level: 75    
 EVs: 4 Def / 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
@@ -7114,7 +7113,6 @@ Jolly Nature
 - Fake Out  
 - Avalanche  
 - Assurance  
-
 
 Basculin  
 Ability: Adaptability  
@@ -8532,7 +8530,7 @@ AI: Basic Trainer
 Jigglypuff  
 Ability: Friend Guard  
 Level: 18  
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Dazzling Gleam  
 - Protect  
 - Swift  
@@ -8540,7 +8538,7 @@ IVs: 0 Atk
 Elekid @ Oran Berry  
 Ability: Static  
 Level: 19   
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 - Follow Me  
 - Electroweb  
 - Swift  
@@ -8557,7 +8555,7 @@ AI: Basic Trainer
 Flabebe 
 Ability: Flower Veil  
 Level: 17  
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Fairy Wind  
 - Draining Kiss  
 - Grass Knot  
@@ -8566,6 +8564,7 @@ IVs: 0 Atk
 Vigoroth  
 Ability: Vital Spirit  
 Level: 18 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Bulk Up  
 - Knock Off  
 - Chip Away  
@@ -10045,21 +10044,16 @@ AI: Check Bad Move
 Swinub  
 Ability: Oblivious  
 Level: 23  
-EVs: 244 HP / 244 Atk / 20 SpD  
 Adamant Nature  
-- Avalanche  
+- Powder Snow 
 - Ice Shard  
-- Smack Down  
-- Dig  
 
 Houndour  
 Ability: Flash Fire  
-Level: 23  
-EVs: 12 HP / 244 SpA / 252 Spe  
+Level: 23   
 Modest Nature  
 IVs: 0 Atk  
 - Incinerate  
-- Snarl  
 
 Delcatty  
 Ability: Normalize  
@@ -10121,12 +10115,10 @@ Ability: Wonder Guard
 Level: 24  
 - Leech Life  
 - Shadow Sneak  
-- Dig  
 
 Stonjourner  
 Ability: Power Spot  
-Level: 24  
-EVs: 244 HP / 252 SpD  
+Level: 24   
 Careful Nature  
 - Bulldoze 
 - Brutal Swing  
@@ -10145,27 +10137,21 @@ Ferroseed
 Ability: Iron Barbs  
 Level: 23   
 IVs: 0 Spe  
-- Gyro Ball  
-- Seed Bomb  
+- Rapid Spin  
+- Bullet Seed  
 - Spikes  
 
 Nuzleaf  
 Ability: Pickpocket  
-Level: 24  
-EVs: 252 HP / 252 Atk  
+Level: 24   
 Adamant Nature  
 - Fake Out  
-- Lash Out  
-- Seed Bomb  
+- Bullet Seed 
 - Thief  
 
 Crabrawler  
 Ability: Iron Fist  
 Level: 25   
-- Bulk Up  
-- Brick Break  
-- Dizzy Punch  
-- Ice Punch  
 
 === TRAINER_ROB ===
 Name: ROB
@@ -10178,22 +10164,13 @@ AI: Check Bad Move
 
 Liepard  
 Ability: Prankster  
-Level: 23   
-EVs: 80 HP / 148 Atk / 16 Def / 16 SpD / 248 Spe  
+Level: 23    
 Jolly Nature  
-- Fake Out  
-- Taunt  
-- Throat Chop  
-- Quick Attack  
 
 Koffing  
 Ability: Neutralizing Gas 
 Level: 24   
-Naughty Nature  
-- Clear Smog  
-- Cross Poison  
-- Rock Polish  
-- Self-Destruct  
+Naughty Nature    
 
 === TRAINER_STEPHEN ===
 Name: DURWIN
@@ -10206,36 +10183,22 @@ AI: Basic Trainer
 
 Murkrow  
 Ability: Prankster  
-Level: 25  
-EVs: 244 HP / 164 Def / 76 SpA / 4 SpD / 12 Spe  
+Level: 25   
 Timid Nature  
-IVs: 0 Atk  
-- Tailwind  
-- Air Cutter  
-- Quash  
-- Snarl  
+IVs: 0 Atk   
 
 Corsola  
 Ability: Hustle  
 Level: 25   
-- Icicle Spear  
-- Rock Blast  
-- Bulldoze  
 
 Seviper  
 Ability: Shed Skin  
 Level: 23 
-- Poison Tail  
-- Brick Break
-- Ice Fang  
  
-Scyther @ Black Glasses  
+Scyther
 Ability: Technician  
 Level: 22  
-EVs: 244 HP / 116 Def / 148 SpD  
 Impish Nature  
-- Brutal Swing  
-- Focus Energy  
 
 === TRAINER_WALLY_VR_1 ===
 Name: WALLY
@@ -10391,6 +10354,9 @@ Level: 37
 
 Sceptile (M) @ Miracle Seed
 Level: 38
+- Leaf Blade
+- Agility
+- Dragon Claw
 
 === TRAINER_DAQUAVIUS ===
 Name: DAQUAVIUS
@@ -10619,16 +10585,15 @@ IVs: 0 SpA
 - Mega Punch  
 - Poltergeist  
 
-Sableye @ Sablenite  
-Ability: Prankster  
-Tera Type: Dark  
-EVs: 248 HP / 8 Def / 252 SpD  
-Calm Nature  
-IVs: 0 Atk  
-- Will-O-Wisp  
+Malamar @ Malamite  
+Ability: Contrary  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Shiny: Yes
+Adamant Nature    
+- Superpower 
 - Foul Play  
-- Night Shade  
-- Destiny Bond 
+- Psycho Cut
+- Knock Off
 
 === TRAINER_RATDUARDO_FULLMOON_ISLAND ===
 Name: RATDUARDO
@@ -10715,7 +10680,7 @@ AI: Basic Trainer
 
 Hariyama
 
-Medicham
+Flamigo
 
 === TRAINER_DINWIDDLE ===
 Name: DINWIDDLE
@@ -10728,7 +10693,7 @@ AI: Basic Trainer
 
 Avalugg-Hisui
 
-Scovillain
+Medicham
 
 === TRAINER_WIDDLEDIN ===
 Name: WIDDLEDIN
@@ -11540,14 +11505,16 @@ AI: Basic Trainer
 
 Chewtle  
 Ability: Strong Jaw  
-Level: 12   
+Level: 12  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse  
 - Bite  
 
 Growlithe  
 Ability: Intimidate  
 Level: 12   
-Naughty Nature  
+Naughty Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin  
 - Will-O-Wisp  
 - Bite  
@@ -11555,7 +11522,8 @@ Naughty Nature
 Lillipup  
 Ability: Vital Spirit  
 Level: 13   
-Lonely Nature  
+Lonely Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Covet  
 - Mud-Slap  
 - Howl  
@@ -11563,7 +11531,8 @@ Lonely Nature
 Panpour @ Oran Berry  
 Ability: Gluttony  
 Level: 13   
-Lonely Nature  
+Lonely Nature
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 - Water Sport  
 - Water Pulse  
 - Astonish
@@ -11720,7 +11689,8 @@ AI: Basic Trainer
 Makuhita  
 Ability: Thick Fat  
 Level: 16   
-Adamant Nature  
+Adamant Nature
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 - Bulk Up  
 - Smelling Salts  
 - Force Palm 
@@ -11728,7 +11698,8 @@ Adamant Nature
 Diglett  
 Ability: Arena Trap  
 Level: 19 
-Lonely Nature  
+Lonely Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Magnitude  
 - Smack Down  
 
@@ -11736,7 +11707,7 @@ Kadabra
 Ability: Magic Guard  
 Level: 18  
 Timid Nature  
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Dazzling Gleam  
 - Psybeam  
 - Night Shade  
@@ -11744,7 +11715,8 @@ IVs: 0 Atk
 Falinks  
 Ability: Battle Armor  
 Level: 18   
-Jolly Nature  
+Jolly Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Bulk Up  
 - Beat Up  
 - Revenge  
@@ -12026,13 +11998,13 @@ Double Battle: No
 AI: Basic Trainer 
 
 Taillow (F)
-Level: 16
+Level: 14
 
 Seedot (M)
-Level: 16
+Level: 15
 
 Aron (M)
-Level: 16
+Level: 14
 
 Grovyle (M)
 Level: 16
@@ -12166,15 +12138,12 @@ AI: Basic Trainer
 
 Pawmo
 
-Lilligant-Hisui
-
-Sneasel-Hisui
-
 Hariyama
 
 Tauros-Paldea-Combat
-
-Poliwrath
+- Close Combat
+- Raging Bull
+- Take Down
 
 === TRAINER_CORNELIUS ===
 Name: CORNELIUS
@@ -12191,11 +12160,7 @@ Conkeldurr
 
 Crabominable
 
-Hitmontop
-
 Hitmonlee
-
-Hitmonchan
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -12988,31 +12953,18 @@ AI: Check Bad Move
 
 Liepard  
 Ability: Prankster  
-Level: 40   
-EVs: 80 HP / 148 Atk / 16 Def / 16 SpD / 248 Spe  
+Level: 40    
 Jolly Nature  
-- Fake Out  
-- Taunt  
-- Throat Chop  
-- Quick Attack  
 
 Garbodor  
 Ability: Stench  
-Level: 40   
-EVs: 236 HP / 100 Atk / 120 Def / 48 SpA  
+Level: 40    
 Naughty Nature  
-- Clear Smog  
-- Cross Poison  
-- Rock Polish  
-- Self-Destruct
 
 Grimer  
 Ability: Poison Touch  
 Level: 40   
-EVs: 248 HP / 248 Atk / 12 SpD  
 Adamant Nature  
-- Body Slam  
-- Poison Jab
 
 === TRAINER_DALE_2 ===
 Name: DALE
@@ -13031,9 +12983,8 @@ Ability: Inner Focus
 Level: 40   
 Jolly Nature  
 - Fake Out  
-- Icicle Crash  
 - Knock Off
--Ice Shard 
+- Ice Shard 
 
 Basculin  
 Ability: Adaptability  
@@ -13041,8 +12992,6 @@ Level: 40
 Naive Nature  
 - Aqua Jet  
 - Ice Fang  
-- Crunch
-- Liquidation
 
 === TRAINER_STEPHEN_2 ===
 Name: DURWIN
@@ -13055,43 +13004,23 @@ AI: Basic Trainer
 
 Honchkrow  
 Ability: Super Luck  
-Level: 41   
-EVs: 244 HP / 252 Atk / 12 SpD  
-Adamant Nature  
-- Drill Peck  
-- Night Slash  
-- U-turn  
-- Pursuit  
+Level: 41    
+Adamant Nature   
 
 Corsola
 Ability: Hustle  
-Level: 41   
-EVs: 244 HP / 248 Atk / 16 SpD  
+Level: 41    
 Adamant Nature  
-- Icicle Spear  
-- Rock Blast  
-- Bulldoze  
-- Liquidation  
 
 Seviper  
 Ability: Shed Skin  
 Level: 41   
-EVs: 244 HP / 244 Atk / 16 SpD  
 Adamant Nature  
-- Poison Tail  
-- Brick Break  
-- Ice Fang  
-- Coil  
 
-Scyther @ Black Glasses  
+Scyther  
 Ability: Technician  
 Level: 41   
-EVs: 8 HP / 252 Atk / 248 Spe  
 Jolly Nature  
-- Acrobatics  
-- Focus Energy  
-- Lunge  
-- Knock Off  
 
 === TRAINER_SPEEDWAGON_2 ===
 Name: SPEEDWAGON
@@ -13710,15 +13639,6 @@ Adamant Nature
 - Triple Arrows  
 - Trailblaze  
 
-Flamigo  
-Ability: Costar  
-Tera Type: Flying  
-EVs: 252 Atk / 4 SpD / 252 Spe  
-Adamant Nature  
-- Agility  
-- Close Combat  
-- Brave Bird  
-
 Chesnaught  
 Ability: Bulletproof  
 Tera Type: Fighting  
@@ -13879,6 +13799,7 @@ IVs: 0 Atk
 Feraligatr @ Feraligite
 Ability: Sheer Force  
 EVs: 252 HP / 252 Atk / 4 Def  
+Shiny: Yes
 Adamant Nature  
 - Ice Fang  
 - Psychic Fangs  
@@ -13921,7 +13842,8 @@ IVs: 0 Atk
 
 Roserade @ Roserite
 Ability: Technician  
-EVs: 252 SpA / 252 Spe  
+EVs: 252 SpA / 252 Spe
+Shiny: Yes  
 Timid Nature  
 IVs: 0 Atk  
 - Sludge Bomb  
@@ -14634,18 +14556,12 @@ AI: Basic Trainer
 
 Thievul  
 Ability: Stakeout  
-Level: 23    
-EVs: 188 HP / 180 Atk / 92 Def / 28 SpD / 12 Spe  
+Level: 23     
 Jolly Nature  
-- Knock Off  
-- Quick Attack  
-- U-turn  
-- Tail Slap  
 
 Dubwool  
 Ability: Fluffy  
-Level: 24   
-EVs: 252 HP / 156 Atk / 76 Def / 24 Spe  
+Level: 24    
 Impish Nature  
 - Body Press  
 - Headbutt  
@@ -15764,13 +15680,13 @@ Double Battle: No
 AI: Basic Trainer 
 
 Beautifly (F)
-Level: 16
+Level: 14
 
 Munchlax (M)
-Level: 16
+Level: 15
 
 Wartortle (M)
-Level: 16
+Level: 15
 
 Combusken (M)
 Level: 16
@@ -15840,14 +15756,15 @@ IVs: 0 Atk
 - Overheat  
 - Thunderbolt
 
-Pinsir @ Pinsirite  
-Ability: Moxie   
-EVs: 252 Atk / 4 SpD / 252 Spe  
+Hawlucha @ Hawluchite  
+Ability: Mold Breaker   
+EVs: 252 HP / 252 Atk / 4 SpD  
+Shiny: Yes
 Jolly Nature  
-- Bulk Up  
-- Return  
-- Earthquake  
-- X-Scissor  
+- Agility 
+- Roost  
+- Brave Bird  
+- Body Press  
 
 === TRAINER_ROXANNE_3 ===
 Name: ROXANNE
@@ -18371,8 +18288,7 @@ Impish Nature
 - Earthquake
 
 Typhlosion (M) @ Typhlosionite
-Ability: Flash Fire  
-Shiny: Yes  
+Ability: Flash Fire   
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
@@ -18591,7 +18507,7 @@ Sassy Nature
 - Iron Tail  
 - Tera Blast  
 
-Espathra (F) @ Weakness Policy  
+Espathra (F)
 Ability: Speed Boost
 Level: 100  
 Tera Type: Steel  
@@ -18602,16 +18518,16 @@ Sassy Nature
 - Tera Blast  
 - Dazzling Gleam
 
-Pidgeot (F) @ Pidgeotite  
-Ability: Keen Eye 
+Victreebel (F) @ Victreebite 
+Ability: Chlorophyll 
 Level: 100  
 Shiny: Yes   
-EVs: 252 Atk / 4 SpA / 252 Spe  
+EVs: 252 HP / 252 SpA / 4 SpD
 Sassy Nature   
-- Hurricane  
-- Work Up  
-- Roost  
-- Secret Power
+- Sludge Bomb
+- Toxic
+- Leaf Storm
+- Giga Drain
 
 Cetitan (F) @ Sitrus Berry  
 Ability: Thick Fat 
@@ -19361,7 +19277,6 @@ AI: Basic Trainer
 Sawk (M) @ Focus Sash  
 Ability: Inner Focus  
 Level: 16   
-EVs: 232 Atk / 124 SpD  
 Sassy Nature  
 - Focus Energy  
 - Focus Punch  
@@ -19370,7 +19285,6 @@ Sassy Nature
 Riolu (M) @ Focus Sash  
 Ability: Prankster  
 Level: 17   
-EVs: 248 HP / 8 Atk / 136 Def / 112 SpD  
 Impish Nature  
 - Follow Me   
 - Helping Hand 
@@ -19378,8 +19292,7 @@ Impish Nature
 
 Throh (M) @ Focus Sash  
 Ability: Inner Focus  
-Level: 16  
-EVs: 236 Atk  
+Level: 16   
 Relaxed Nature  
 - Focus Energy  
 - Focus Punch  
@@ -19397,7 +19310,6 @@ AI: Basic Trainer
 Tyrogue
 Ability: Vital Spirit  
 Level: 16  
-EVs: 132 HP / 152 Atk / 152 Spe  
 - Fake Out  
 - Bulk Up  
 - Mach Punch  
@@ -19406,7 +19318,6 @@ EVs: 132 HP / 152 Atk / 152 Spe
 Sneasel-Hisui (F)  
 Ability: Poison Touch  
 Level: 16  
-EVs: 68 HP / 64 Atk / 92 Def / 76 SpD  
 - Fake Out  
 - Quick Attack  
 - Rock Smash  
@@ -20228,18 +20139,23 @@ Difficulty: Easy
 
 Swanna (F)
 Level: 36
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Gorebyss (F)
 Level: 36
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Bruxish (F)
 Level: 36
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Barraskewda (M)
 Level: 36
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Wishiwashi (M) 
 Level: 36
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: SHELLY
@@ -20315,7 +20231,7 @@ Jolly Nature
 - Body Slam  
 - Lash Out  
 
-Crabominable @ Muscle Band 
+Crabominable
 Ability: Iron Fist  
 Level: 57
 Adamant Nature  
@@ -21704,15 +21620,15 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Ninetales
-Level: 58
+Level: 62
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Gothitelle
-Level: 58
+Level: 62
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Beheeyem
-Level: 58
+Level: 62
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BOBBY ===
@@ -22951,12 +22867,13 @@ Difficulty: Easy
 
 Machop
 Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Quilladin  
 Ability: Bulletproof  
 Level: 18  
-Impish Nature   
+Impish Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 - Bullet Seed  
 - Bulldoze
 
@@ -23207,29 +23124,30 @@ Difficulty: Easy
 Magnemite
 Level: 22  
 Modest Nature  
-IVs: 0 Atk  
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Charge Beam  
 - Swift  
 
 Aipom  
 Level: 21   
-Adamant Nature  
+Adamant Nature 
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe 
 - Tail Slap  
 - Aerial Ace  
 
 Klang  
 Ability: Plus  
 Level: 23   
-Rash Nature  
+Rash Nature
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe  
 - Charge Beam  
 - Gear Grind  
 
 Electrike  
 Ability: Minus  
 Level: 22  
-Mild Nature  
-- Ice Fang  
-- Signal Beam  
+Mild Nature
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe   
 
 === TRAINER_FERNANDO_1 ===
 Name: FERNANDO
@@ -23410,7 +23328,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Swablu
+Magmar
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -23627,7 +23545,7 @@ Double Battle: No
 AI: Check Bad Move 
 Difficulty: Easy
 
-Stonjourner
+Scizor
 
 Sudowoodo
 
@@ -24073,7 +23991,7 @@ Ability: Frisk
 Level: 65 
 EVs: 252 HP / 64 SpA   
 Modest Nature  
-IVs: 0 Atk / 30 Def  
+IVs: 0 Atk / 30 Def / 0 Spe 
 - Flamethrower  
 - Scorching Sands  
 - Infernal Parade 
@@ -24160,7 +24078,7 @@ Sassy Nature
 IVs: 0 Atk  
 - Surf  
 - Psychic  
-- Ice Beam  
+- Icy Wind 
 
 Flareon (F) @ Toxic Orb  
 Ability: Guts  
@@ -24176,16 +24094,14 @@ Level: 44
 Sassy Nature  
 IVs: 0 Atk  
 - Scorching Sands  
-- Sludge Bomb  
-- Thunderbolt  
+- Sludge Bomb    
 
 Tsareena @ Leftovers  
 Ability: Queenly Majesty  
 Level: 44    
 Sassy Nature   
-- Trop Kick  
-- High Jump Kick  
-- Attract  
+- Seed Bomb  
+- Stomp   
 
 Froslass @ Focus Sash  
 Ability: Cursed Body  
@@ -24194,7 +24110,6 @@ Sassy Nature
 IVs: 0 Atk  
 - Destiny Bond  
 - Ice Beam  
-- Will-O-Wisp  
 - Hex  
 
 === TRAINER_EUGENIA ===
@@ -24208,14 +24123,12 @@ AI: Basic Trainer
 Difficulty: Easy 
 Mugshot: Pink
 
-Rayquaza @ Life Orb
+Rayquaza
 Ability: Air Lock 
 EVs: 252 HP / 64 Atk   
 Jolly Nature  
 - Outrage  
-- Dragon Ascent  
-- Scale Shot  
-- Dragon Tail  
+- Dragon Ascent   
 
 Cobalion @ Leftovers  
 Ability: Justified 
@@ -24630,7 +24543,7 @@ IVs: 0 Atk / 0 Spe
 Jellicent (F) @ Rocky Helmet  
 Ability: Cursed Body  
 Level: 75  
-EVs: 252 HP 
+EVs: 164 HP 
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
 - Water Spout  
@@ -24640,7 +24553,7 @@ IVs: 0 Atk / 0 Spe
 Emboar (M) @ Leftovers  
 Ability: Reckless  
 Level: 75  
-EVs: 252 HP 
+EVs: 164 HP 
 Brave Nature  
 IVs: 0 Spe  
 - Flare Blitz  
@@ -24652,7 +24565,7 @@ Ability: Fluffy
 Level: 75 
 EVs: 252 HP  
 Brave Nature  
-IVs: 0 Spe   
+IVs: 0 Def / 0 Spe   
 - Hammer Arm  
 - Brutal Swing  
 - Zen Headbutt  
@@ -24674,8 +24587,7 @@ EVs: 252 HP / 64 SpA
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
 - Air Slash  
-- Psychic  
-- Ancient Power  
+- Psychic   
 - Dazzling Gleam  
 
 === TRAINER_PHOEBE ===
@@ -24786,8 +24698,7 @@ Modest Nature
 IVs: 0 Atk  
 - Dragon Pulse 
 - Dark Pulse  
-- Earth Power  
-- Focus Blast  
+- Earth Power   
 
 Meganium (F) @ Meganiumite 
 Ability: Overgrow  
@@ -24795,7 +24706,6 @@ Level: 75
 EVs: 252 HP    
 Modest Nature  
 - Sludge Bomb 
-- Leech Seed  
 - Giga Drain  
 - Toxic  
 
@@ -24814,8 +24724,7 @@ Leafeon (F) @ Salac Berry
 Ability: Chlorophyll  
 Level: 75 
 EVs: 252 HP / 64 Atk 
-Jolly Nature  
-- Leech Seed  
+Jolly Nature   
 - Knock Off  
 - Leaf Blade  
 - Iron Tail 
@@ -24840,7 +24749,6 @@ IVs: 0 Atk
 - Stealth Rock  
 - Night Shade  
 - Destiny Bond
-
 
 Ferrothorn (M) @ Rocky Helmet  
 Ability: Iron Barbs  
@@ -24889,7 +24797,7 @@ EVs: 252 HP / 64 Atk
 Jolly Nature  
 - Destiny Bond  
 - Sucker Punch  
-- Poltergeist  
+- Shadow Claw 
 - Will-O-Wisp  
 
 === TRAINER_ROXANNE_1 ===
@@ -24940,12 +24848,11 @@ Lax Nature
 IVs: 15 HP / 0 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe     
 - Chilling Water  
 - Acid 
-- Acid Armor 
 
 Magby @ Sitrus Berry  
 Ability: Flame Body  
-Level: 15   
-Modest Nature  
+Level: 15  
+Lax Nature 
 IVs: 0 Atk  
 - Incinerate  
 - Acid 
@@ -24990,7 +24897,6 @@ Ball: Nest Ball
 - Stomp  
 - Dazzling Gleam  
 - Psybeam  
-- Double Kick  
 
 Dartrix @ Miracle Seed  
 Ability: Long Reach  
@@ -24998,10 +24904,8 @@ Level: 20
 Adamant Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Ball: Nest Ball
-- Dual Wingbeat  
-- Steel Wing  
+- Dual Wingbeat   
 - Razor Leaf  
-- Shadow Sneak  
 
 Cinccino 
 Ability: Cute Charm 
@@ -25010,7 +24914,6 @@ Adamant Nature
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 Ball: Nest Ball
 - Tail Slap  
-- Rock Blast  
 - Bullet Seed   
 
 POOBLES (Diglett-Alola) @ Rocky Helmet  
@@ -25042,7 +24945,7 @@ Impish Nature
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe 
 - Destiny Bond  
 - Leech Seed  
-- Seed Bomb  
+- Razor Leaf  
 - Shadow Sneak  
 
 Duosion (M) @ Sticky Barb  
@@ -25071,7 +24974,7 @@ Level: 24
 Naughty Nature
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe  
 - Fake Out  
-- Lash Out   
+- Thief   
 - Brick Break  
 
 Drakloak @ Dragon Fang  
@@ -25106,24 +25009,22 @@ Mugshot: Pink
 
 Ninetales (F) @ Heat Rock  
 Ability: Drought  
-Level: 34 
+Level: 33 
 Timid Nature  
-IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+IVs: 30 HP / 31 Atk / 31 Def / 25 SpA / 31 SpD / 31 Spe
 - Flame Burst  
 - Extrasensory  
-- Hidden Power 
 
 Fletchinder (M) @ Sitrus Berry  
 Ability: Gale Wings  
-Level: 34   
+Level: 33   
 Jolly Nature  
 - Acrobatics  
-- Flame Charge  
-- Steel Wing  
+- Flame Charge   
 
 Lampent (M) @ White Herb  
 Ability: Flame Body  
-Level: 34  
+Level: 33 
 Modest Nature  
 IVs: 0 Atk  
 - Hex  
@@ -25132,7 +25033,7 @@ IVs: 0 Atk
 
 Vileplume @ Black Sludge  
 Ability: Chlorophyll  
-Level: 34  
+Level: 33 
 Modest Nature  
 IVs: 0 Atk  
 - Sludge Bomb  
@@ -25140,16 +25041,15 @@ IVs: 0 Atk
 
 Braixen @ Eviolite  
 Ability: Blaze  
-Level: 34  
+Level: 33 
 Timid Nature  
 IVs: 0 Atk  
 - Overheat  
-- Psyshock  
-- Shock Wave  
+- Psyshock   
 
 Ampharos (M) @ Air Balloon  
 Ability: Static  
-Level: 34  
+Level: 33 
 Modest Nature  
 - Discharge  
 - Power Gem  
@@ -25233,7 +25133,7 @@ Mugshot: Blue
 Manectric (M) @ Air Balloon  
 Ability: Static  
 Level: 37
-EVs: 128 HP   
+EVs: 64 HP   
 Timid Nature  
 IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 0 Spe
 - Thunder Wave  
@@ -25243,7 +25143,7 @@ IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 0 Spe
 Stoutland (M) 
 Ability: Intimidate  
 Level: 37  
-EVs: 128 HP  
+EVs: 64 HP   
 IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
 - Fire Fang
 - Dig
@@ -25252,7 +25152,7 @@ IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Boltund (F)
 Ability: Strong Jaw  
 Level: 37  
-EVs: 128 HP  
+EVs: 64 HP    
 IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
 Jolly Nature   
 - Fire Fang  
@@ -25261,22 +25161,21 @@ Jolly Nature
 Obstagoon (M) @ Silk Scarf  
 Ability: Reckless  
 Level: 36
-EVs: 128 HP  
+EVs: 64 HP   
 IVs: 31 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 Jolly Nature  
 - Double-Edge  
 - Knock Off  
 - Obstruct  
 
-Granbull @ Rocky Helmet  
-Ability: Intimidate  
-Level: 37 
-EVs: 128 HP   
-Adamant Nature  
-- Play Rough  
-- Brick Break  
-- Rock Slide  
-- Roar
+Espeon (F) @ Twisted Spoon  
+Ability: Magic Bounce  
+Level: 38  
+Timid Nature  
+IVs: 0 Atk  
+- Psychic  
+- Shadow Ball 
+- Toxic
 
 Lycanroc-Dusk (M)
 Ability: Tough Claws  
@@ -25299,14 +25198,14 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Blue
 
-Poliwrath (M)
+Poliwrath (M) @ Muscle Band
 Ability: Swift Swim  
 Level: 55 
 EVs: 164 HP   
-Adamant Nature  
-- Substitute  
-- Dynamic Punch   
-- Bulldoze 
+Adamant Nature   
+- Drain Punch   
+- Knock Off
+- Liquidation
 
 Politoed (M) @ Eject Button  
 Ability: Drizzle  
@@ -25442,19 +25341,12 @@ Difficulty: Easy
 Quagsire  
 Ability: Unaware  
 Level: 21   
-IVs: 0 Atk  
-- Chilling Water  
-- Mud Shot  
-- Haze  
-- Acid Spray
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 
 Swoobat  
 Ability: Unaware  
 Level: 21    
-IVs: 0 Atk  
-- Air Slash  
-- Swift  
-- Confusion
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 === TRAINER_TED ===
 Name: TED
@@ -25506,7 +25398,7 @@ Sandshrew-Alola
 Ability: Snow Cloak  
 Level: 18  
 Brave Nature  
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 - Icicle Spear  
 - Ice Shard  
 
@@ -25514,7 +25406,7 @@ Frillish (F)
 Ability: Cursed Body  
 Level: 17  
 Sassy Nature  
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 - Water Pulse  
 - Hex  
 
@@ -25522,7 +25414,7 @@ Swirlix
 Ability: Unburden  
 Level: 18  
 Calm Nature  
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
 - Dazzling Gleam  
 - Draining Kiss  
 - Round  
@@ -25532,7 +25424,7 @@ Pignite
 Ability: Thick Fat  
 Level: 19   
 Adamant Nature 
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
 - Rock Tomb  
 - Ember
 - Arm Thrust
@@ -25541,14 +25433,14 @@ Dedenne @ Oran Berry
 Ability: Cheek Pouch  
 Level: 18  
 Hasty Nature 
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe   
 - Dazzling Gleam  
 - Nuzzle  
 
 Togetic @ Leftovers   
 Level: 20   
 Quiet Nature 
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
 - Draining Kiss  
 - Air Cutter  
 
@@ -25563,7 +25455,7 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Yellow
 
-Stunfisk-Galar @ Sitrus Berry  
+Stunfisk-Galar @ Oran Berry  
 Ability: Mimicry  
 Level: 24    
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe 
@@ -25575,37 +25467,31 @@ Impish Nature
 Zigzagoon-Galar (M) @ Toxic Orb  
 Ability: Quick Feet  
 Level: 25  
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe  
-Jolly Nature  
-- Lash Out  
-- Facade  
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 10 Spe   
+- Thief  
+- Headbutt  
 - Trick  
 
 Slowpoke-Galar (M) @ Quick Claw  
-Ability: Regenerator  
+Ability: Own Tempo
 Level: 25   
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe 
-Brave Nature   
-- Tri Attack  
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe   
 - Psybeam  
-- Grass Knot  
-- Icy Wind  
+- Acid  
+- Water Pulse 
 
 Darumaka-Galar (M) @ Wide Lens  
 Ability: Hustle  
 Level: 24 
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe    
-Adamant Nature  
+IVs: 23 HP / 15 Atk / 23 Def / 23 SpA / 23 SpD / 20 Spe     
 - Ice Punch  
-- Brick Break  
-- Bite  
+- Brick Break   
 
 Meowth-Galar (M)
 Ability: Tough Claws  
 Level: 25 
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe  
 Adamant Nature  
-- Payback  
 - Pay Day  
 - Metal Claw  
 - Fake Out  
@@ -25613,8 +25499,7 @@ Adamant Nature
 Mr. Mime-Galar (M)
 Ability: Screen Cleaner  
 Level: 26  
-IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe   
-Modest Nature   
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe      
 - Icy Wind  
 - Psybeam  
 
@@ -26414,8 +26299,8 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Geodude-Alola  
-Ability: Galvanize
 Level: 11  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Tackle  
 - Rock Throw  
 
@@ -26423,17 +26308,20 @@ Onix
 Ability: Rock Head  
 Level: 11  
 Hasty Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Rock Throw  
 - Tackle  
 
 Rolycoly  
 Ability: Steam Engine  
-Level: 12     
+Level: 12 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe     
 - Rock Blast  
 - Incinerate
 
 Pansage
 Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -26448,17 +26336,20 @@ Difficulty: Easy
 Charmander 
 Ability: Blaze  
 Level: 12    
-Relaxed Nature  
+Relaxed Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Incinerate 
 - Scratch 
 
 Pansear
-Level: 12    
+Level: 12  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe   
 
 Silicobra  
 Ability: Shed Skin  
 Level: 13    
-Sassy Nature  
+Sassy Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mud-Slap  
 - Rock Tomb  
 
@@ -26490,19 +26381,19 @@ Difficulty: Easy
 Mugshot: Green
 
 Plusle (F) @ Wise Glasses
-Ability: Lightning Rod  
-Level: 30    
+Ability: Plus
+Level: 29    
 Hasty Nature  
-- Discharge  
+- Shock Wave    
 - Alluring Voice  
 
 Minun @ Magnet 
-Ability: Volt Absorb  
-Level: 30    
+Ability: Minus
+Level: 29    
 Timid Nature  
 IVs: 0 Atk  
-- Discharge  
-- Grass Knot  
+- Shock Wave
+- Swift   
 
 Watchog
 Ability: Keen Eye  
@@ -26513,16 +26404,14 @@ Jolly Nature
 
 Raticate (M)
 Ability: Hustle  
-Level: 31      
+Level: 30      
 Jolly Nature  
-- Zen Headbutt  
 - Hyper Fang  
 - Quick Attack  
-- U-turn  
 
-Raticate-Alola-Totem (M) @ Sitrus Berry
+Raticate-Alola-Totem (M) @ Oran Berry
 Ability: Thick Fat  
-Level: 31    
+Level: 30    
 Adamant Nature  
 - Knock Off  
 - Hyper Fang  
@@ -26706,12 +26595,15 @@ Difficulty: Easy
 
 Joltik
 Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Spinarak
 Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Ledian
 Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -26766,8 +26658,7 @@ Ability: Intimidate
 Level: 75
 EVs: 252 HP 
 Tera Type: Flying   
-Adamant Nature  
-- Toxic Spikes  
+Adamant Nature   
 - Barb Barrage  
 - Crunch  
 
@@ -26777,7 +26668,7 @@ Level: 75
 EVs: 252 HP   
 Jolly Nature  
 - Earthquake  
-- Outrage 
+- Dragon Claw 
 - Stone Edge  
 
 Corviknight (F) @ Leftovers  
@@ -26787,19 +26678,16 @@ EVs: 252 HP
 Careful Nature  
 - Defog  
 - Brave Bird  
-- U-turn
 - Iron Head 
 
 Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire 
 Level: 75  
-EVs: 252 HP / 128 SpA
-Shiny: Yes  
+EVs: 252 HP / 128 SpA 
 IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 Modest Nature  
 - Earth Power  
 - Flamethrower  
-- Overheat  
 - Hidden Power
 
 === TRAINER_ANDREW ===
@@ -26836,12 +26724,15 @@ Difficulty: Easy
 
 Geodude @ Lagging Tail
 Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Loudred @ Lagging Tail
 Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Onix @ Lagging Tail
 Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -26909,10 +26800,12 @@ Difficulty: Easy
 
 Tentacool
 Level: 22
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 
 Sneasel  
 Ability: Inner Focus  
 Level: 23   
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 Jolly Nature  
 - Fake Out  
 - Avalanche  
@@ -26921,9 +26814,9 @@ Jolly Nature
 Basculin  
 Ability: Adaptability  
 Level: 24   
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 Naive Nature  
-- Aqua Jet  
-- Ice Fang  
+- Aqua Jet   
 - Bite  
 
 === TRAINER_NOLAN ===
@@ -28418,14 +28311,14 @@ Difficulty: Easy
 Jigglypuff  
 Ability: Friend Guard  
 Level: 18   
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Dazzling Gleam  
 - Swift  
 
 Elekid
 Ability: Static  
 Level: 19    
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Thundershock
 - Swift  
 
@@ -28442,13 +28335,14 @@ Difficulty: Easy
 Flabebe 
 Ability: Flower Veil  
 Level: 17   
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fairy Wind  
 - Draining Kiss   
 
 Vigoroth  
 Ability: Vital Spirit  
 Level: 18  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Knock Off  
 - Chip Away  
 
@@ -30013,24 +29907,22 @@ Difficulty: Easy
 Swinub  
 Ability: Oblivious  
 Level: 23   
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 Adamant Nature  
-- Avalanche  
+- Powder Snow  
 - Ice Shard  
-- Smack Down  
-- Dig  
 
 Houndour  
 Ability: Flash Fire  
 Level: 23    
 Modest Nature  
-IVs: 0 Atk  
-- Incinerate  
-- Snarl  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
+- Incinerate   
 
-Delcatty  
-Ability: Normalize  
+Delcatty   
 Level: 22   
-Jolly Nature  
+Jolly Nature 
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
 - Fake Out  
 - Headbutt  
 - Fake Tears  
@@ -30067,13 +29959,16 @@ Difficulty: Easy
 Torkoal (M)
 Ability: Drought
 Level: 53
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Pyroar (M)
 Level: 53
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Talonflame (M)
 Ability: Flame Body
 Level: 53
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 === TRAINER_DARWIN ===
 Name: DARWIN
@@ -30088,16 +29983,16 @@ Difficulty: Easy
 Shedinja  
 Ability: Wonder Guard  
 Level: 24  
-- Leech Life  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
+- Fury Cutter
 - Shadow Sneak  
-- Dig  
 
 Stonjourner  
 Ability: Power Spot  
 Level: 24  
 Careful Nature  
-- Bulldoze 
-- Brutal Swing  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
+- Bulldoze  
 - Rock Slide
 - Sandstorm  
 
@@ -30114,26 +30009,26 @@ Difficulty: Easy
 Ferroseed  
 Ability: Iron Barbs  
 Level: 23   
-IVs: 0 Spe  
-- Gyro Ball  
-- Seed Bomb  
-- Spikes  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
+- Leech Seed 
+- Bullet Seed  
+- Rapid Spin
 
 Nuzleaf  
 Ability: Pickpocket  
 Level: 24   
-Adamant Nature  
+Adamant Nature 
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
 - Fake Out  
-- Lash Out  
-- Seed Bomb  
+- Bullet Seed 
 - Thief  
 
 Crabrawler  
 Ability: Iron Fist  
-Level: 25    
+Level: 25  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe   
 - Brick Break  
 - Dizzy Punch  
-- Ice Punch  
 
 === TRAINER_ROB ===
 Name: ROB
@@ -30149,19 +30044,13 @@ Liepard
 Ability: Prankster  
 Level: 23     
 Jolly Nature  
-- Fake Out  
-- Taunt  
-- Throat Chop  
-- Quick Attack  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 
 Koffing  
 Ability: Neutralizing Gas 
 Level: 24   
 Naughty Nature  
-- Clear Smog  
-- Cross Poison  
-- Rock Polish  
-- Self-Destruct   
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
 
 === TRAINER_STEPHEN ===
 Name: DURWIN
@@ -30177,31 +30066,23 @@ Murkrow
 Ability: Prankster  
 Level: 25    
 Timid Nature  
-IVs: 0 Atk  
-- Air Cutter  
-- Quash  
-- Snarl  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 
 Corsola  
 Ability: Hustle  
 Level: 25   
-- Icicle Spear  
-- Rock Blast  
-- Bulldoze  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 
 Seviper  
 Ability: Shed Skin  
 Level: 23 
-- Poison Tail  
-- Brick Break
-- Ice Fang  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
  
-Scyther @ Black Glasses  
+Scyther
 Ability: Technician  
 Level: 22   
 Impish Nature  
-- Brutal Swing  
-- Focus Energy  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 
 === TRAINER_WALLY_VR_1 ===
 Name: WALLY
@@ -30326,16 +30207,20 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Lairon (M)
-Level: 20
+Level: 19
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Swellow (F)
-Level: 21
+Level: 20
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Nuzleaf (M)
-Level: 20
+Level: 19
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Grovyle (M)
-Level: 21
+Level: 20
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -30364,6 +30249,8 @@ Level: 36
 
 Sceptile (M)
 Level: 38
+- Leaf Blade
+- Giga Drain
 
 === TRAINER_DAQUAVIUS ===
 Name: DAQUAVIUS
@@ -30405,7 +30292,7 @@ Obstagoon (M) @ Toxic Orb
 Ability: Guts  
 Level: 100  
 EVs: 252 HP
-Tera Type: Normal
+Tera Type: Dark
 Jolly Nature  
 - Body Slam  
 - Knock Off  
@@ -30433,8 +30320,9 @@ Jolly Nature
 
 Mr. Rime (M) @ Berserk Gene  
 Ability: Screen Cleaner
-EVs: 252 HP / 128 Atk
+EVs: 252 HP
 Level: 100 
+IVs: 0 Spe
 Adamant Nature  
 - Zen Headbutt  
 - Sucker Punch  
@@ -30502,7 +30390,7 @@ Dedenne @ Petaya Berry
 Ability: Cheek Pouch
 Level: 100
 EVs: 252 HP
-Tera Type: Flying   
+Tera Type: Fairy
 Timid Nature  
 IVs: 0 Atk  
 - Parabolic Charge  
@@ -30528,15 +30416,15 @@ Double Battle: No
 AI: Basic Trainer  
 Difficulty: Easy
 
-Clefable  
-Ability: Magic Guard
-Level: 100  
+Slowking-Galar
+Ability: Regenerator 
+Level: 100    
 Modest Nature  
 IVs: 0 Atk  
-- Misty Explosion  
-- Alluring Voice  
-- Chilling Water  
-- Stealth Rock  
+- Sludge Bomb  
+- Eerie Spell  
+- Hex 
+- Chilly Reception 
 
 Kabutops-Fossil
 Ability: Weak Armor  
@@ -30555,16 +30443,6 @@ Jolly Nature
 - Stone Edge  
 - Psychic Fangs  
 
-Slowking-Galar
-Ability: Regenerator 
-Level: 100
-Tera Type: Water    
-Modest Nature  
-IVs: 0 Atk  
-- Sludge Bomb  
-- Eerie Spell  
-- Hex  
-
 MissingNo
 Ability: Unnerve 
 Level: 100
@@ -30577,15 +30455,13 @@ IVs: 0 SpA
 - Mega Punch  
 - Hex  
 
-Sableye @ Sablenite  
-Ability: Prankster  
-EVs: 252 HP 
-Calm Nature  
-IVs: 0 Atk  
-- Will-O-Wisp  
+Malamar @ Malamite  
+Ability: Contrary  
+EVs: 252 HP / 64 Atk
+Adamant Nature 
+- Knock Off 
 - Foul Play  
-- Night Shade  
-- Destiny Bond 
+- Psycho Cut
 
 === TRAINER_RATDUARDO_FULLMOON_ISLAND ===
 Name: RATDUARDO
@@ -30639,7 +30515,7 @@ Dedenne @ Petaya Berry
 Ability: Cheek Pouch
 EVs: 252 HP
 Level: 100
-Tera Type: Flying   
+Tera Type: Fairy
 Timid Nature  
 IVs: 0 Atk  
 - Parabolic Charge  
@@ -30667,7 +30543,7 @@ Difficulty: Easy
 
 Hariyama
 
-Medicham
+Flamigo
 
 === TRAINER_DINWIDDLE ===
 Name: DINWIDDLE
@@ -30681,7 +30557,7 @@ Difficulty: Easy
 
 Avalugg-Hisui
 
-Scovillain
+Medicham
 
 === TRAINER_WIDDLEDIN ===
 Name: WIDDLEDIN
@@ -30740,21 +30616,26 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Beautifly (F)
-Level: 20
+Level: 19
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Munchlax (M)
-Level: 21
+Level: 20
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 - Covet
 - Bite
 
 Eevee (F)
-Level: 20
+Level: 19
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Wartortle (M)
-Level: 20
+Level: 19
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Combusken (M)
-Level: 22
+Level: 21
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
@@ -31537,6 +31418,7 @@ Difficulty: Easy
 Chewtle  
 Ability: Strong Jaw  
 Level: 12   
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Water Pulse  
 - Bite  
 
@@ -31544,13 +31426,15 @@ Growlithe
 Ability: Intimidate  
 Level: 12  
 Naughty Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Fire Spin  
 - Bite  
 
 Lillipup  
 Ability: Vital Spirit  
 Level: 13   
-Lonely Nature  
+Lonely Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Covet  
 - Mud-Slap  
 
@@ -31645,9 +31529,9 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 - Smack Down   
 - Bulldoze  
 
-Mienfoo (M) @ Heavy-Duty Boots  
+Mienfoo (M) 
 Ability: Regenerator  
-Level: 29  
+Level: 28  
 Jolly Nature
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe   
 - Fake Out  
@@ -31655,22 +31539,21 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 - Brick Break  
 - Knock Off  
 
-Emolga (F) @ Sitrus Berry  
+Emolga (F) @ Oran Berry
 Ability: Static  
-Level: 30  
-Timid Nature 
+Level: 28  
+Timid Nature
+IVs: 0 Atk / 15 Spe 
 - Acrobatics  
 - Volt Switch 
-- Thunder Wave  
+- Spark  
 
-Axew (M) @ Dragon Fang  
+Axew (M)
 Ability: Rivalry  
-Level: 29   
+Level: 28   
 Jolly Nature 
 - Bulldoze  
-- Dig  
-- Dual Chop  
-- Rock Slide 
+- Dual Chop   
 
 Morgrem @ Eviolite  
 Ability: Prankster  
@@ -31678,16 +31561,16 @@ Level: 29
 Hasty Nature  
 - Fake Out  
 - Dazzling Gleam  
-- Dark Pulse  
+- Thief  
 
 Quilava (M) @ Charcoal  
 Ability: Flash Fire  
-Level: 30   
+Level: 29   
 Timid Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Flame Burst  
 - Extrasensory
-- Hidden Power  
+- Quick Attack 
 
 === TRAINER_CRISTIAN ===
 Name: RACINE
@@ -31702,19 +31585,21 @@ Difficulty: Easy
 Makuhita  
 Ability: Thick Fat  
 Level: 16    
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Smelling Salts  
 - Force Palm 
 
 Diglett  
 Ability: Sand Veil 
 Level: 19  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Magnitude  
 - Smack Down  
 
 Kadabra  
 Ability: Synchronize 
 Level: 18   
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dazzling Gleam  
 - Confusion 
 
@@ -31760,21 +31645,15 @@ Difficulty: Easy
 
 Gurdurr
 Level: 19
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Low Kick
-- Focus Energy
-- Rock Throw
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Machoke
 Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bulk Up
-- Karate Chop
-- Knock Off
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Farfetch'd-Galar
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 === TRAINER_HARRISON ===
 Name: HARRISON
@@ -32012,16 +31891,20 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Taillow (F)
-Level: 16
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 Seedot (M)
-Level: 16
+Level: 15
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 Aron (M)
-Level: 16
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 Grovyle (M)
 Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 === TRAINER_FREDWARD ===
 Name: FREDWARD
@@ -32112,13 +31995,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Fletchinder (M)
 Level: 31    
 Ability: Flame Body 
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe   
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe    
 - Flame Charge 
 - Wing Attack
 
 Golbat
 Level: 30
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe    
 
 Turtonator (M)
 Level: 31   
@@ -32158,18 +32041,12 @@ Difficulty: Easy
 
 Pawmo
 
-Lilligant-Hisui
-
-Sneasel-Hisui
-
 Hariyama
 
 Tauros-Paldea-Combat
 - Close Combat
 - Raging Bull
 - Take Down
-
-Poliwrath
 
 === TRAINER_CORNELIUS ===
 Name: CORNELIUS
@@ -32187,11 +32064,7 @@ Conkeldurr
 
 Crabominable
 
-Hitmontop
-
 Hitmonlee
-
-Hitmonchan
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -32263,51 +32136,51 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Easy 
 
-Mightyena (M) @ Sitrus Berry  
+Mightyena (M)
 Ability: Intimidate  
 Level: 32  
 Adamant Nature  
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
-- Crunch  
-- Ice Fang  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
+- Crunch   
 - Fire Fang  
 
 Golbat (F)  
 Ability: Infiltrator
 Level: 32  
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
+- Air Cutter
+- Leech Life  
 
-Cacturne (M) @ Black Glasses  
+Cacturne (M)
 Ability: Water Absorb  
 Level: 32  
 Adamant Nature 
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
-- Stomping Tantrum  
-- Seed Bomb  
-- Brick Break  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe    
+- Bullet Seed  
+- Thief
 
 Trapinch (M)  
 Ability: Sheer Force  
 Level: 32  
 Adamant Nature 
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe    
 - Quick Attack  
 - Rock Slide  
 - Bulldoze  
 
-Drilbur (M) @ Wide Lens  
+Drilbur (M) 
 Ability: Mold Breaker 
 Level: 32   
 Jolly Nature
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe    
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe      
 - Drill Run  
 - Rock Slide  
 
-Camerupt (M) @ Soft Sand  
+Camerupt (M)
 Ability: Solid Rock  
 Level: 32   
 Bold Nature  
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe   
 - Ancient Power  
 - Flame Burst  
 - Mud Bomb
@@ -32791,26 +32664,26 @@ Mugshot: Purple
 
 Gigalith (M) @ Rocky Helmet  
 Ability: Sturdy  
-Level: 40  
-Shiny: Yes    
+Level: 39  
+Shiny: Yes 
+EVs: 64 HP    
 Impish Nature  
 - Smack Down 
 - Bulldoze  
-- Rock Slide  
-- Iron Head  
+- Stone Edge  
 
 Fraxure (M) @ Dragon Fang 
 Ability: Rivalry 
 Level: 39    
+EVs: 64 HP    
 Jolly Nature  
 - Dragon Claw  
-- Stomping Tantrum
-- Stone Edge  
 - Iron Head 
 
 Emolga (F) @ Heavy-Duty Boots  
 Ability: Static  
-Level: 40     
+Level: 39    
+EVs: 64 HP    
 Timid Nature  
 IVs: 0 Atk  
 - Volt Switch  
@@ -32819,7 +32692,7 @@ IVs: 0 Atk
 
 Cloyster
 Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe    
+IVs: 12 Atk   
 Serious Nature  
 - Icicle Spear  
 - Rock Blast  
@@ -32827,7 +32700,8 @@ Serious Nature
 
 Morgrem @ Eviolite 
 Ability: Prankster  
-Level: 41     
+Level: 40     
+EVs: 64 HP    
 Careful Nature  
 - Thunder Wave  
 - Play Rough  
@@ -32835,8 +32709,9 @@ Careful Nature
 
 Typhlosion-Hisui (M) @ Assault Vest  
 Ability: Frisk  
-Level: 41     
+Level: 40    
 Timid Nature  
+EVs: 64 HP 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Infernal Parade  
 - Lava Plume  
@@ -33006,7 +32881,8 @@ Difficulty: Easy
 Liepard  
 Ability: Prankster  
 Level: 40   
-Jolly Nature  
+Jolly Nature 
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fake Out  
 - Taunt  
 - Throat Chop  
@@ -33015,16 +32891,14 @@ Jolly Nature
 Garbodor  
 Ability: Stench  
 Level: 40    
-Naughty Nature  
-- Clear Smog  
-- Cross Poison  
-- Rock Polish  
-- Self-Destruct
+Naughty Nature 
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 
 Muk  
 Ability: Poison Touch  
 Level: 40   
-Adamant Nature  
+Adamant Nature 
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Body Slam  
 - Poison Jab
 
@@ -33040,24 +32914,24 @@ Difficulty: Easy
 
 Tentacruel
 Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 Sneasel  
 Ability: Inner Focus  
 Level: 40   
 Jolly Nature  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 - Fake Out  
-- Icicle Crash  
 - Knock Off
--Ice Shard 
+- Ice Shard 
 
 Basculin  
 Ability: Adaptability  
 Level: 40   
-Naive Nature  
+Naive Nature 
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Aqua Jet  
 - Ice Fang  
-- Crunch
-- Liquidation
 
 === TRAINER_STEPHEN_2 ===
 Name: DURWIN
@@ -33073,37 +32947,25 @@ Honchkrow
 Ability: Super Luck  
 Level: 41   
 Adamant Nature  
-- Drill Peck  
-- Night Slash  
-- U-turn  
-- Pursuit  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 
 Corsola
 Ability: Hustle  
 Level: 41   
-Adamant Nature  
-- Icicle Spear  
-- Rock Blast  
-- Bulldoze  
-- Liquidation  
+Adamant Nature 
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 
 Seviper  
 Ability: Shed Skin  
 Level: 41    
 Adamant Nature  
-- Poison Tail  
-- Brick Break  
-- Ice Fang  
-- Coil  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
-Scyther @ Black Glasses  
+Scyther
 Ability: Technician  
 Level: 41    
 Jolly Nature  
-- Acrobatics  
-- Focus Energy  
-- Lunge  
-- Knock Off  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe   
 
 === TRAINER_SPEEDWAGON_2 ===
 Name: SPEEDWAGON
@@ -33344,12 +33206,14 @@ Difficulty: Easy
 
 Granbull
 Ability: Intimidate  
-Level: 22  
+Level: 22 
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe 
 
 Bibarel  
 Ability: Simple  
 Level: 23    
-Naive Nature  
+Naive Nature 
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe 
 - Charge Beam  
 - Aqua Jet  
 - Swift  
@@ -33479,13 +33343,15 @@ Difficulty: Easy
 
 Swablu (F) @ Oran Berry
 Level:17
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 Magnemite
 Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 Kirlia (F) @ Sitrus Berry
 Level: 18
-
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
@@ -33708,12 +33574,6 @@ Adamant Nature
 - Knock Off  
 - Triple Arrows  
 
-Flamigo  
-Ability: Costar    
-Adamant Nature   
-- Close Combat  
-- Brave Bird  
-
 Chesnaught  
 Ability: Bulletproof   
 Adamant Nature  
@@ -33865,7 +33725,7 @@ IVs: 0 Atk / 0 Spe
 
 Kingambit
 Ability: Supreme Overlord  
-Adamant Nature
+Brave Nature
 IVs: 0 Atk / 0 Spe   
 - Kowtow Cleave  
 - Iron Head  
@@ -33882,7 +33742,8 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy 
 
 Dondozo  
-Ability: Oblivious   
+Ability: Oblivious
+IVs: 0 Atk   
 - Wave Crash  
 - Earthquake  
 
@@ -34494,6 +34355,7 @@ Difficulty: Easy
 Stunky  
 Ability: Stench  
 Level: 20  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Assurance  
 - Poison Tail  
 - Tail Slap
@@ -34501,7 +34363,7 @@ Level: 20
 Koffing
 Ability: Levitate  
 Level: 20     
-IVs: 0 Atk  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Poison Gas  
 - Sludge  
 - Belch
@@ -34518,7 +34380,8 @@ Difficulty: Easy
 
 Clefairy  
 Ability: Friend Guard  
-Level: 20  
+Level: 20 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Follow Me  
 - Icy Wind  
 - Draining Kiss
@@ -34526,7 +34389,8 @@ Level: 20
 Dunsparce
 Ability: Serene Grace  
 Level: 21  
-Jolly Nature  
+Jolly Nature 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Headbutt  
 - Bulldoze
 
@@ -34626,19 +34490,13 @@ Thievul
 Ability: Stakeout  
 Level: 23    
 Jolly Nature  
-- Knock Off  
-- Quick Attack  
-- U-turn  
-- Tail Slap  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe   
 
 Dubwool  
 Ability: Fluffy  
 Level: 24   
 Impish Nature  
-- Body Press  
-- Headbutt  
-- Cotton Guard  
-
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
 
 === TRAINER_MARCOS ===
 Name: MARCOS
@@ -35119,18 +34977,23 @@ Difficulty: Easy
 
 Coalossal
 Level: 47
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Marowak-Alola
 Level: 47
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Pyroar (M)
 Level: 47
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Talonflame (M)
 Level: 47
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 Camerupt
 Level: 47
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 
 === TRAINER_DARCY ===
 Name: DARCY
@@ -35813,20 +35676,22 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Beautifly (F)
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 Munchlax (M)
-Level: 16
+Level: 15
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 - Tackle
 - Bite
 
 Wartortle (M)
-Level:16
+Level:15
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 Combusken (M)
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
 
 === TRAINER_ROXANNE_2 ===
 Name: STEVE
@@ -35866,7 +35731,7 @@ EVs: 252 HP / 4 SpD
 Tera Type: Psychic    
 Modest Nature  
 IVs: 0 Atk  
-- Esper Wing  
+- Psychic 
 - Defog  
 - Air Slash  
 
@@ -35893,13 +35758,13 @@ IVs: 0 Atk
 - Overheat  
 - Thunderbolt
 
-Pinsir @ Pinsirite  
-Ability: Moxie  
+Hawlucha @ Hawluchite 
+Ability: Mold Breaker  
 EVs: 252 HP / 4 SpD   
 Jolly Nature   
-- Return  
-- Earthquake  
-- X-Scissor  
+- Flying Press  
+- Brave Bird 
+- Rock Slide  
 
 === TRAINER_ROXANNE_3 ===
 Name: ROXANNE
@@ -36307,7 +36172,7 @@ EVs: 252 HP / 4 SpD
 Tera Type: Dark  
 Jolly Nature  
 - Axe Kick  
-- First Impression  
+- Lunge 
 - Knock Off  
 - U-turn  
 
@@ -36321,7 +36186,7 @@ IVs: 0 Atk
 - Reflect  
 - Recover  
 
-Iron Boulder @ Booster Energy  
+Iron Boulder
 Ability: Quark Drive 
 EVs: 252 HP / 4 SpD   
 Jolly Nature  
@@ -36347,7 +36212,6 @@ IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Dark Pulse  
 - Fire Blast  
 - Sludge Bomb  
-- Hidden Power
 
 === TRAINER_WATTSON_3 ===
 Name: WATTSON
@@ -36543,9 +36407,7 @@ Tera Type: Ghost
 Timid Nature  
 IVs: 0 Atk  
 - Flamethrower  
-- Shadow Ball  
-- Energy Ball  
-- Clear Smog  
+- Shadow Ball   
 
 Scovillain @ Wise Glasses  
 Ability: Chlorophyll  
@@ -36556,10 +36418,9 @@ Modest Nature
 - Tera Blast  
 
 Inteleon @ Scope Lens  
-Ability: Sniper  
-Tera Type: Water   
+Ability: Sniper     
 Timid Nature  
-IVs: 0 Atk  
+IVs: 0 Atk / 0 Spe 
 - Weather Ball  
 - Ice Beam  
 - Snipe Shot  
@@ -36570,8 +36431,7 @@ Ability: Mold Breaker
 EVs: 252 HP / 128 SpA   
 Modest Nature  
 - Dragon Pulse  
-- Thunderbolt  
-- Focus Blast  
+- Thunderbolt   
 - Power Gem 
 
 === TRAINER_FLANNERY_3 ===
@@ -36755,7 +36615,6 @@ Diancie @ Rocky Helmet
 Ability: Clear Body  
 Sassy Nature  
 - Stealth Rock  
-- Trick Room  
 - Diamond Storm  
 - Moonblast  
 
@@ -37235,8 +37094,7 @@ Jolly Nature
 - Poltergeist  
 
 Aegislash @ Leftovers  
-Ability: Stance Change  
-Tera Type: Ghost  
+Ability: Stance Change   
 Adamant Nature  
 - Kings Shield   
 - Iron Head  
@@ -37341,7 +37199,7 @@ IVs: 0 Atk
 - Hyper Voice  
 
 Krookodile (M) @ Leftovers  
-Ability: Moxie 
+Ability: Intimidate
 EVs: 252 HP / 4 SpD  
 Shiny: Yes  
 Tera Type: Ground  
@@ -37652,17 +37510,19 @@ Difficulty: Easy
 
 Grimer-Alola
 Ability: Gluttony  
-Level: 23    
+Level: 23 
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe   
 - Assurance  
 
 Grimer  
 Ability: Poison Touch  
 Level: 23   
 Adamant Nature  
-IVs: 0 Atk  
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe 
 
 Beedrill   
 Level: 20   
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fury Attack  
 - Aerial Ace  
 - Twineedle  
@@ -37892,7 +37752,7 @@ Sassy Nature
 Tauros-Paldea-Blaze @ Rocky Helmet  
 Ability: Intimidate 
 EVs: 252 HP 
-Tera Type: Water  
+Tera Type: Fighting 
 Adamant Nature  
 - Raging Bull  
 - Close Combat  
@@ -37900,7 +37760,7 @@ Adamant Nature
 Lickilicky (M)
 Ability: Own Tempo 
 EVs: 252 HP 
-Tera Type: Ghost  
+Tera Type: Normal
 Modest Nature  
 - Fire Blast  
 - Thunder  
@@ -37910,7 +37770,7 @@ Modest Nature
 Farigiraf (F) @ Sitrus Berry  
 Ability: Cud Chew  
 EVs: 252 HP
-Tera Type: Electric   
+Tera Type: Psychic 
 Modest Nature   
 - Twin Beam  
 - Hyper Voice  
@@ -37926,10 +37786,11 @@ Jolly Nature
 - High Horsepower  
 - Horn Leech  
 
-Miltank (F)  @ Miltankite
+Miltank (F) @ Miltankite
 Ability: Thick Fat  
 EVs: 252 HP  
-Adamant Nature  
+Adamant Nature 
+IVs: 15 HP / 15 Atk / 1 Def
 - Rollout   
 - Milk Drink  
 - Body Slam  
@@ -38224,7 +38085,7 @@ Jolly Nature
 Roaring Moon @ Booster Energy
 Ability: Protosynthesis   
 Adamant Nature  
-IVs: 0 Spe 
+IVs: 0 Atk
 - Aerial Ace 
 - Dragon Claw 
 - Stone Edge
@@ -38423,7 +38284,6 @@ Impish Nature
 Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire 
 EVs: 252 HP / 64 SpA  
-Shiny: Yes  
 Timid Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Heat Wave  
@@ -38630,13 +38490,12 @@ Sassy Nature
 - Lumina Crash  
 - Dazzling Gleam
 
-Pidgeot (F) @ Pidgeotite  
-Ability: Keen Eye 
-Level: 100  
-Shiny: Yes    
+Victreebel (F) @ Victreebite
+Ability: Chlorophyll 
+Level: 100      
 Sassy Nature   
-- Hurricane  
-- Secret Power
+- Sludge Bomb  
+- Giga Drain
 
 Cetitan (F)
 Ability: Thick Fat 
@@ -38648,7 +38507,7 @@ Sassy Nature
 - Liquidation  
 - Ice Spinner
 
-Tsareena @ Loaded Dice 
+Tsareena
 Ability: Queenly Majesty  
 Level: 100   
 Sassy Nature  
@@ -39264,7 +39123,7 @@ Mugshot: Pink
 
 Linoone (F) @ Sitrus Berry  
 Ability: Gluttony  
-Level: 36  
+Level: 35
 Jolly Nature  
 - Extreme Speed  
 - Facade  
@@ -39272,7 +39131,7 @@ Jolly Nature
 
 Alcremie @ Assault Vest  
 Ability: Sweet Veil  
-Level: 36  
+Level: 35 
 Modest Nature  
 IVs: 0 Atk  
 - Draining Kiss  
@@ -39282,7 +39141,7 @@ IVs: 0 Atk
 
 Salazzle-Totem @ Charcoal  
 Ability: Corrosion  
-Level: 36  
+Level: 35 
 Modest Nature  
 IVs: 0 Atk / 30 Def  
 - Flame Burst  
@@ -39291,16 +39150,15 @@ IVs: 0 Atk / 30 Def
 
 Lilligant @ Occa Berry  
 Ability: Own Tempo  
-Level: 36   
+Level: 35  
 Jolly Nature  
 - Petal Blizzard  
 - Leech Seed  
 - Facade 
-- Swords Dance 
 
 Primarina @ Leftovers  
 Ability: Liquid Voice  
-Level: 36  
+Level: 35  
 Bold Nature  
 IVs: 0 Atk  
 - Sparkling Aria  
@@ -39309,7 +39167,7 @@ IVs: 0 Atk
 
 Lopunny (F) @ Silk Scarf  
 Ability: Cute Charm  
-Level: 36  
+Level: 36
 Naughty Nature  
 - Facade  
 - Drain Punch  
@@ -39357,16 +39215,15 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Raticate (M) @ Oran Berry  
 Ability: Run Away  
 Level: 16  
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe  
-- Pursuit  
+IVs: 18 HP / 15 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe  
+- Bite  
 - Headbutt
 
 Raticate-Alola-Totem (M) @ Oran Berry  
 Ability: Thick Fat 
-Level: 17  
-Jolly Nature 
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe   
-- Bite  
+Level: 16 
+IVs: 18 HP / 15 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe   
+- Assurance
 - Quick Attack  
 
 === TRAINER_ASAK ===
@@ -39494,35 +39351,33 @@ Psyduck (F)
 Ability: Damp  
 Level: 17   
 Sassy Nature  
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Pulse  
 - Psybeam   
 
 Eevee (F)  
-Ability: Adaptability  
-Level: 18   
+Ability: Anticipation
+Level: 16   
 Sassy Nature 
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe  
+IVs: 15 HP / 10 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack  
-- Bite  
-- Headbutt  
+- Bite   
 
 Nidorina 
 Ability: Rivalry  
-Level: 18   
+Level: 17  
 Sassy Nature 
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe   
 - Poison Tail  
 - Body Slam  
 - Charm  
 
 Tsareena  
 Ability: Queenly Majesty  
-Level: 19  
+Level: 18  
 Sassy Nature
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe   
-- Stomp  
-- Trop Kick  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 0 Spe    
+- Stomp   
 - Double Slap  
 - Captivate  
 
@@ -39669,8 +39524,7 @@ IVs: 0 Atk
 
 Celesteela @ Power Herb  
 Ability: Beast Boost 
-EVs: 252 HP / 4 SpD  
-Tera Type: Water  
+EVs: 252 HP / 4 SpD   
 Modest Nature  
 IVs: 0 Atk  
 - Flash Cannon  

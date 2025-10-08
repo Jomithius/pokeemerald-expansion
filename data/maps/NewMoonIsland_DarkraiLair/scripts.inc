@@ -49,41 +49,38 @@ NewMoonIsland_DarkraiLair_EventScript_Darkrai::
 # 29 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NewMoonIsland_DarkraiLair_EventScript_Darkrai_2
-NewMoonIsland_DarkraiLair_EventScript_Darkrai_1:
-# 32 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	msgbox NewMoonIsland_DarkraiLair_Text_PostDarkrai, MSGBOX_AUTOCLOSE
 # 33 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	waitmessage
+	msgbox NewMoonIsland_DarkraiLair_Text_PostDarkrai, MSGBOX_AUTOCLOSE
 # 34 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	fadescreenspeed FADE_TO_BLACK, 2
+	waitmessage
 # 35 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	delay 60
-# 36 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 3
-# 37 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	delay 90
-# 38 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	fadescreenspeed FADE_TO_BLACK, 2
-# 39 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+# 36 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	delay 60
-# 40 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+# 37 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 3
+# 38 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+	delay 90
+# 39 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+	fadescreenspeed FADE_TO_BLACK, 2
+# 40 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+	delay 60
 # 41 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	delay 90
+	fadescreenspeed FADE_FROM_BLACK, 3
 # 42 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	setflag FLAG_REMOVE_WARP_FADE
-# 43 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	setvar VAR_NEWMOON_ISLAND_STATE, 5
-# 44 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	fadescreenspeed FADE_TO_BLACK, 6
-# 45 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	delay 90
+# 43 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+	setflag FLAG_REMOVE_WARP_FADE
+# 44 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+	setvar VAR_NEWMOON_ISLAND_STATE, 5
+# 45 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
+	fadescreenspeed FADE_TO_BLACK, 6
 # 46 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	setrespawn HEAL_LOCATION_THE_UNDER
+	delay 90
 # 47 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	goto_if_eq VAR_RAT_CAVE_STATE, 8, NewMoonIsland_DarkraiLair_TryUpdateRatCaveState
+	setrespawn HEAL_LOCATION_THE_UNDER
 # 48 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
-	clearflag FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE
+	goto_if_eq VAR_RAT_CAVE_STATE, 8, NewMoonIsland_DarkraiLair_TryUpdateRatCaveState
 # 49 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	warpsilent MAP_THE_UNDER_HOUSE, 11, 2
 # 50 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
@@ -95,7 +92,7 @@ NewMoonIsland_DarkraiLair_EventScript_Darkrai_1:
 NewMoonIsland_DarkraiLair_EventScript_Darkrai_2:
 # 30 "data/maps/NewMoonIsland_DarkraiLair/scripts.pory"
 	goto Common_EventScript_NopReturn
-	goto NewMoonIsland_DarkraiLair_EventScript_Darkrai_1
+	end
 
 
 NewMoonIsland_DarkraiLair_TryUpdateRatCaveState::

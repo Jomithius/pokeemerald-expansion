@@ -2273,3 +2273,33 @@ static const u16 sDragoniteFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif // P_FAMILY_DRATINI
+
+#if P_FAMILY_HAWLUCHA
+static const u16 sHawluchaFormSpeciesIdTable[] = {
+    SPECIES_HAWLUCHA,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_HAWLUCHA_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif // P_FAMILY_HAWLUCHA
+
+#if P_FAMILY_BELLSPROUT
+static const u16 sVictreebelFormSpeciesIdTable[] = {
+    SPECIES_VICTREEBEL,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_VICTREEBEL_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif // P_FAMILY_BELLSPROUT
+
+#if P_FAMILY_INKAY
+static const u16 sMalamarFormSpeciesIdTable[] = {
+    SPECIES_MALAMAR,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_MALAMAR_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif // P_FAMILY_INKAY

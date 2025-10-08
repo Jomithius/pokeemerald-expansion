@@ -84,6 +84,7 @@ script Route136_EventScript_KlawfBattle{
     msgbox("The KLAWF woke up!\n
         In a rage, it attacks!", MSGBOX_AUTOCLOSE)
     waitmessage
+    faceplayer
     setwildbattle(SPECIES_KLAWF, 85)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)

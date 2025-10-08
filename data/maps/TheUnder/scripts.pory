@@ -26,7 +26,7 @@ script TheUnder_EventScript_Luna{
         Grinding is cringe, so here.\n
         Take these.", MSGBOX_DEFAULT)
     waitmessage
-    giveitem(ITEM_MASTER_BALL, 50)
+    giveitem(ITEM_MASTER_BALL, 24)
     waitmessage
     msgbox("He wanted me to give you this too.\p
         Crystals of this stuff was found in\n
@@ -129,9 +129,7 @@ script TheUnder_EventScript_Jason{
 }
 
 script TheUnder_EventScript_Woman{
-    msgbox("I love coming here during my days off.\n
-        The sound of the waterfall relaxes me.\p
-        If you have a chance, you should stop\n
+    msgbox("If you have a chance, you should stop\n
         by LUSH ACREAGE and try our famous\l
         MOOMOO MILK!", MSGBOX_NPC)
     end

@@ -141,6 +141,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
 	.2byte ITEM_FLOAT_STONE
 	.2byte ITEM_IRON_BALL
 	.2byte ITEM_SAFETY_GOGGLES
+	.2byte ITEM_METRONOME
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_EventScript_MartEmployee::

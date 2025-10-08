@@ -1268,7 +1268,6 @@ Common_Mart_Tera_Shards:
 	.2byte ITEM_PSYCHIC_TERA_SHARD
 	.2byte ITEM_ROCK_TERA_SHARD
 	.2byte ITEM_STEEL_TERA_SHARD
-	.2byte ITEM_ROCK_TERA_SHARD
 	.2byte ITEM_WATER_TERA_SHARD
 	pokemartlistend
 

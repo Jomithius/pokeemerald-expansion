@@ -1162,7 +1162,7 @@ PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
 	.string "Who are you?\n"
 	.string "…\p"
 	.string "Oh, {PLAYER}, huh? Sounds familiar…\n"
-	.string "Hm… Oh, yeah! I know your MOM.\p"
+	.string "Hm… Oh, yeah! I know your mom.\p"
 	.string "You and her just moved to\n"
 	.string "LITTLEROOT TOWN, right.\p"
 	.string "Nice to meet you. I'm LUNA,\n"
@@ -1176,11 +1176,11 @@ PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
 	.string "I'll be looking forward to it.$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
-	.string "Um… I…\n"
+	.string "???: Um… I…\n"
 	.string "I'd like to get a POKéMON, please…$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
-	.string "LUNA: Hm? You're… Uh… Oh, right.\n"
+	.string "LUNA: Hm? You're… Uh… Oh, yeah.\n"
 	.string "You're WALLY, right?\p"
 	.string "You do know this is a GYM… right?\n"
 	.string "Not a charity.$"
@@ -1198,7 +1198,7 @@ PetalburgCity_Gym_Text_DadHmISee:
 	.string "Yeah, that's way too much work for me.$"
 
 PetalburgCity_Gym_Text_DadPlayerGoWithWally:
-	.string "LUNA: {PLAYER}, you heard that,\n"
+	.string "{PLAYER}, you heard that,\n"
 	.string "right?\p"
 	.string "Can you go with WALLY and make sure that\n"
 	.string "he catches a POKéMON?$"
@@ -1362,7 +1362,8 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "The room's name will be on\n"
 	.string "the door, so choose carefully.\p"
 	.string "Once you've chosen the door…\n"
-	.string "Well, hey, go for it!$"
+	.string "Well, hey, go for it!\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap is 36.$"
 
 PetalburgCity_Gym_Text_GymGuidePostVictory:
 	.string "{PLAYER}! Whoa! You've overcome even\n"
@@ -1631,13 +1632,15 @@ script PetalburgCity_Gym_EventScript_Norman_FinalBattle{
 script PetalburgCity_Gym_EventScript_NormanDefeatedFinal{
 	addvar(VAR_GYM_LEADER_COUNT, 1)
 	msgbox("You beat me again, {PLAYER}.\n
-		Great job.", MSGBOX_NPC)
+		Great job.\p
+		Your mom and I are proud of you.", MSGBOX_NPC)
 	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
 	end
 }
 
 script PetalburgCity_Gym_EventScript_NormanDefeatedFinal2{
 	msgbox("You beat me again, {PLAYER}.\n
-		Great job.", MSGBOX_NPC)
+		Great job.\p
+		Your mom and I are proud of you.", MSGBOX_NPC)
 	end
 }

@@ -684,7 +684,7 @@ BaldesianForest_EventScript_OldManDojo_Text_0:
 
 BaldesianForest_EventScript_Expert_F_RevealGlass_Text_0:
 # 280 "data/maps/BaldesianForest/scripts.pory"
-	.string "Wow! You actually did it?\n As promised, you can have this.$"
+	.string "Wow! You actually beat BRUNO?\n Here, you can have this.$"
 
 BaldesianForest_EventScript_Expert_F_DefeatBruno_Text_0:
 # 293 "data/maps/BaldesianForest/scripts.pory"

@@ -256,8 +256,8 @@ script Route112_EventScript_Emo_West{
 text Route112_Text_Emo1{
     "JAMES: {PLAYER}…\n
     We meet again.\p
-    My power has increased since we\n
-    last battled.\p
+    My power has increased since our\n
+    last battle.\p
     My eye… It now burns hotter than\n
     the FIERY PATH…\p
     This time, I, JOMITHIUS, will\n
@@ -269,8 +269,7 @@ text Route112_EmoDefeat{
 }
 
 text Route112_Text_Emo2{
-    "JAMES: So victory still eludes\n
-    me…\l
+    "JAMES: So victory still eludes me…\n
     You're a worthy adversary.\p
     Out of respect for your\n
     power, I'll give you this."

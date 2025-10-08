@@ -151,9 +151,11 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_RAT_CAVE_STATE, 2
-	setvar VAR_MISA_STATE, 5
-	warp MAP_ROUTE112, 11, 38
+	setvar VAR_NEWMOON_ISLAND_STATE, 5
+	setvar VAR_SPEEDWAGON_STATE, 0
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WALLY
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE
+	warp MAP_THE_UNDER_HOUSE, 2, 6
 	waitstate
 	release
 	end
@@ -168,10 +170,9 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setvar VAR_MISA_STATE, 11
-	clearflag FLAG_HIDE_JAMES_ROUTE_115
-	clearflag FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY
-	setflag FLAG_SYS_FINAL_REMATCH
+	setvar VAR_ULTRA_SPACE_STATE, 0
+	warp MAP_ROUTE135, 8, 10
+	waitstate
 	release
 	end
 
@@ -186,8 +187,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setflag FLAG_SYS_FINAL_REMATCH
-	warp MAP_EVER_GRANDE_CITY_PHOEBES_ROOM, 6, 13
+	clearflag FLAG_SYS_FINAL_REMATCH
+	warp MAP_EVER_GRANDE_CITY_DRAKES_ROOM, 6, 13
 	waitstate
 	release
 	end

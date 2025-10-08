@@ -26,7 +26,8 @@ LilycoveCity_HighriseGroundFloor_EventScript_ToElevator::
 	waitmovement 6
 # 17 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	compare VAR_DIFFICULTY_SWITCH_COUNTER, 0
-	goto_if_eq LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_2
+	goto_if_eq LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_4
+LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_3:
 # 25 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
 	msgbox LilycoveCity_HighriseGroundFloor_Text_Attendant, MSGBOX_DEFAULT
 # 26 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
@@ -93,6 +94,11 @@ LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_2:
 	giveitem ITEM_CHERISH_BALL, 50
 	goto LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_1
 
+LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_4:
+# 17 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
+	goto_if_set FLAG_SYS_HARD_MODE, LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_2
+	goto LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_3
+
 
 LilycoveCity_HighriseGroundFloor_EventScript_NoEntry::
 # 83 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
@@ -154,7 +160,7 @@ LilycoveCity_HighriseGroundFloor_EventScript_Maniac::
 
 LilycoveCity_HighriseGroundFloor_EventScript_ToElevator_Text_0:
 # 31 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	.string "That is worth more money than\n you can hold.\p We recommend not selling it\n all at once.\p Also, the CEO has generously wired\n EXP CANDIES to your PC account.\p Now, please allow me to\n show you to the CEO's office.$"
+	.string "That is worth more money than\n you can hold.\p We recommend not selling it\n all at once.\p Also, the CEO has generously wired\n EXP. CANDIES to your PC account.\p Now, please allow me to\n show you to the CEO's office.$"
 
 LilycoveCity_HighriseGroundFloor_EventScript_Woman_Text_0:
 # 107 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"

@@ -169,9 +169,11 @@ script WachunpelonCity_Sewer_EventScript_Speedwagon{
     delay(60)
     playse(SE_EXIT)
     removeobject(12)
+    waitse
     setflag(FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS)
     addvar(VAR_FINAL_REMATCH_STATE, 1)
     setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
+    setvar(VAR_SPEEDWAGON_STATE, 12)
     release
     end
 }

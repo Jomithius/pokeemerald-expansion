@@ -122,6 +122,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_JUAN_MATCH_CALL
+	setvar VAR_EVER_GRANDE_CITY_STATE, 0
 	release
 	end
 
@@ -197,19 +198,20 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
 	.string "The rest of the way, you have to\n"
-	.string "go for it yourself!$"
+	.string "go for it yourself!\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap is 60.$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "Yow! You've beaten even JOEY, who\n"
-	.string "was supposedly the best in all HOENN!\p"
+	.string "was supposedly the best in HOENN!\p"
 	.string "Okay! Check out your TRAINER CARD.\p"
 	.string "If you've gotten all the BADGES, you're\n"
 	.string "set for the POKéMON LEAGUE challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "Yeaheheaaaaaaaaah.\n"
-	.string "I'm the GYM LEADER of SOOTOPOLIS\l"
-	.string "CITY. Yeet!$"
+	.string "Yeaheheaaaaaaaaah!\n"
+	.string "I'm JOEY, the GYM LEADER of\l"
+	.string "SOOTOPOLIS CITY!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
@@ -218,7 +220,7 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "Yeaaaaaaaaaaah…\n"
 	.string "You beat me.\p"
-	.string "Take this RAIN BADGE! Yeet!$"
+	.string "Take this RAIN BADGE!$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the RAIN BADGE\n"
@@ -313,7 +315,11 @@ script SootopolisCity_Gym_1F_EventScript_Mawile{
 }
 
 script SootopolisCity_Gym_1F_EventScript_Juan_FinalBattle{
-	trainerbattle_single(TRAINER_JUAN_2, "Yeheheheaaaaaaaaaah!", "Yeeaaaahh…", SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal)
+	playbgm(MUS_ENCOUNTER_COOL, FALSE)
+	msgbox("Yeheheheaaaaaaaaaah!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	trainerbattle_no_intro(TRAINER_JUAN_2, "Yeeaaaahh…")
+	goto(SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal)
 	end
 }
 
@@ -321,6 +327,7 @@ script SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal{
 	addvar(VAR_GYM_LEADER_COUNT, 1)
 	msgbox("Yeeeheeeaaaaah…", MSGBOX_NPC)
 	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
+	release
 	end
 }
 
@@ -328,4 +335,3 @@ script SootopolisCity_Gym_1F_EventScript_JuanDefeatedFinal2{
 	msgbox("Yeeeheeeaaaaah…", MSGBOX_NPC)
 	end
 }
-

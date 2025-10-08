@@ -278,7 +278,8 @@ MauvilleCity_Gym_Text_GymGuideAdvice:
 	.string "POKéMON she'll use! Hahaha!\p"
 	.string "And, she's put in switch-controlled\n"
 	.string "doors all over her GYM! Eccentric!\p"
-	.string "Hey, go for it!$"
+	.string "Hey, go for it!\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap is 25.$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
 	.string "Whoa, you're electrifying!\n"

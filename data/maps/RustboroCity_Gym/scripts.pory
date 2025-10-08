@@ -140,7 +140,8 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Isn't that ironic?\p"
 	.string "Come see me afterwards, if you beat\n"
 	.string "the GYM LEADER.\p"
-	.string "Well, go for it!$"
+	.string "Well, go for it!\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap is 16.$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "Whoa! What a breathtaking victory!\n"
@@ -345,3 +346,4 @@ script RustboroCity_Gym_EventScript_RoxanneDefeatedFinal2{
 		You were really on fire!", MSGBOX_NPC)
 	end
 }
+

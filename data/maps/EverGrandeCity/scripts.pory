@@ -390,3 +390,14 @@ movement EvergrandeCity_Movement_PlayerRightTrigger {
     walk_left
     walk_up
 }
+
+script EverGrandeCity_EventScript_StrongTrainerWaits{
+    lockall
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The current level cap is 65.\p
+        It's recommended to save before\n
+        continuing.\p", MSGBOX_AUTOCLOSE)
+    waitmessage
+    setvar(VAR_EVER_GRANDE_CITY_STATE, 1)
+    releaseall
+    end
+}

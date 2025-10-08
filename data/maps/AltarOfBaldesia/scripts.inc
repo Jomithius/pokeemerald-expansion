@@ -524,7 +524,7 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_1:
 # 304 "data/maps/AltarOfBaldesia/scripts.pory"
 	goto_if_set FLAG_SYS_HARD_MODE, AltarOfBaldesia_EventScript_PecharuntAmbush_5
 # 308 "data/maps/AltarOfBaldesia/scripts.pory"
-	setwildbattle SPECIES_PECHARUNT, 90
+	setwildbattle SPECIES_PECHARUNT, 80
 AltarOfBaldesia_EventScript_PecharuntAmbush_4:
 # 310 "data/maps/AltarOfBaldesia/scripts.pory"
 	setflag FLAG_SYS_NO_RUNNING
@@ -891,7 +891,7 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_2:
 
 AltarOfBaldesia_EventScript_PecharuntAmbush_5:
 # 305 "data/maps/AltarOfBaldesia/scripts.pory"
-	setwildbattle SPECIES_PECHARUNT, 100
+	setwildbattle SPECIES_PECHARUNT, 90
 	goto AltarOfBaldesia_EventScript_PecharuntAmbush_4
 
 

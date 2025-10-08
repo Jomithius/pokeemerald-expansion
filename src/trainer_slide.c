@@ -107,7 +107,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_JOMITHIUS_2] = // Jomithius Route 112
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is the moment where I reveal\nmy true power!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is where my plot armor saves me!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BENNIS_2] = // Route 114
         {
@@ -135,7 +135,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_JOMITHIUS_3] = // Jomithius Mt Pyre
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I still haven't lost yet!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is the moment where I reveal\nmy true power!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_SPEEDWAGON_2] = // Route 123
         {
@@ -200,7 +200,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_JUAN_2] = // Joey
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Yeheheeeaaaaaaaaaaaaaaaah!\nYAH YEET!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Yeheheeeaaaaaaah! BRUCE!\nTime to save GOTHAM!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_SIDNEY] = // Misa
         {
@@ -243,7 +243,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         [TRAINER_WALLACE] = // Jimmy
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION! Show them what it means\n to be CHAMPION!{PAUSE_UNTIL_PRESS}"),
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You've done well so far…\nYou're almost there, {B_PLAYER_NAME}!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You're almost there, {B_PLAYER_NAME}!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_JIMMY] = // Jimmy
         {
@@ -308,7 +308,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAE_3] = // wachun
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("YASSSS, PIDGEOT! SLAAAYYYYY!\nPERIODDDT!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("YASSSS, VICTREEBEL! SLAAAYYYYY!\nPERIODDDT!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_SPEEDWAGON_3] = // wachun
         {

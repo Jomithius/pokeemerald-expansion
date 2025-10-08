@@ -14,7 +14,7 @@ script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
     lockall
     applymovement(6, Common_Movement_WalkDown)
     waitmovement(6)
-    if(var(VAR_DIFFICULTY_SWITCH_COUNTER) == 0){
+    if(var(VAR_DIFFICULTY_SWITCH_COUNTER) == 0 && flag(FLAG_SYS_HARD_MODE)){
         msgbox(LilycoveCity_HighriseGroundFloor_Text_AttendantHardMode, MSGBOX_DEFAULT)
         waitmessage
         giveitem(ITEM_BIG_NUGGET, 75)
@@ -33,7 +33,7 @@ script LilycoveCity_HighriseGroundFloor_EventScript_ToElevator{
             We recommend not selling it\n
             all at once.\p
             Also, the CEO has generously wired\n
-            EXP CANDIES to your PC account.\p
+            EXP. CANDIES to your PC account.\p
             Now, please allow me to\n
             show you to the CEO's office.", MSGBOX_AUTOCLOSE)
     waitmessage

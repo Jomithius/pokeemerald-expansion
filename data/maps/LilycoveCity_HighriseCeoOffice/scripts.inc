@@ -242,9 +242,9 @@ LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito::
 # 150 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playse SE_FAILURE
 # 151 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_2, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_2, MSGBOX_DEFAULT
 # 152 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitse
 LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_1:
 # 154 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	goto LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves
@@ -285,9 +285,9 @@ LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco::
 # 174 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playse SE_FAILURE
 # 175 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_2, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_2, MSGBOX_DEFAULT
 # 176 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitse
 LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_1:
 # 178 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	goto LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves
@@ -328,9 +328,9 @@ LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly::
 # 198 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	playse SE_FAILURE
 # 199 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_2, MSGBOX_AUTOCLOSE
+	msgbox LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_2, MSGBOX_DEFAULT
 # 200 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitmessage
+	waitse
 LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_1:
 # 202 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	goto LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves
@@ -381,31 +381,31 @@ LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves::
 # 218 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	setflag FLAG_HIDE_JAMES_RUSTBORO_CITY
 # 219 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
+	setflag FLAG_HIDE_MISA_POST_GAME_RUSTBORO
 # 220 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	setvar VAR_ULTRA_SPACE_STATE, 0
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 # 221 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 1
+	setvar VAR_ULTRA_SPACE_STATE, 0
 # 222 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	call LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags
+	setvar VAR_AZURE_MOUNTAIN_RIVAL_STATE, 1
 # 223 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	warp MAP_LILYCOVE_CITY, 51, 7
+	call LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags
 # 224 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	waitstate
+	warp MAP_LILYCOVE_CITY, 51, 7
 # 225 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
+	waitstate
+# 226 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	releaseall
 	end
 
 
 LilycoveCity_HighriseFloor2_CeoMeeting_ClearLegendaryFlags::
-# 230 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_ENTEI
 # 231 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_RAIKOU
+	clearflag FLAG_HIDE_ENTEI
 # 232 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_ITEM_MEWTWONITE_X
+	clearflag FLAG_HIDE_RAIKOU
 # 233 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	clearflag FLAG_HIDE_MOLTRES
+	clearflag FLAG_ITEM_MEWTWONITE_X
 # 234 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	clearflag FLAG_HIDE_MEWTWO
 # 235 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
@@ -677,7 +677,7 @@ LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_0:
 
 LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_1:
 # 145 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	.string "{PLAYER} received SPRIGATITO!\p SPRIGATITO was sent to the PC.$"
+	.string "{PLAYER} received SPRIGATITO!\n SPRIGATITO was sent to the PC.$"
 
 LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito_Text_2:
 # 151 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
@@ -689,7 +689,7 @@ LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_Text_0:
 
 LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco_Text_1:
 # 169 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	.string "{PLAYER} received FUECOCO!\p FUECOCO was sent to the PC.$"
+	.string "{PLAYER} received FUECOCO!\n FUECOCO was sent to the PC.$"
 
 LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_Text_0:
 # 188 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
@@ -697,7 +697,7 @@ LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_Text_0:
 
 LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly_Text_1:
 # 193 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	.string "{PLAYER} received QUAXLY!\p QUAXLY was sent to the PC.$"
+	.string "{PLAYER} received QUAXLY!\n QUAXLY was sent to the PC.$"
 
 LilycoveCity_HighriseFloor2_Text_Jimmy1::
 # 317 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"

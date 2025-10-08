@@ -2671,7 +2671,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .shinyPalette = gMonShinyPalette_Maschiff,
         .iconSprite = gMonIcon_Maschiff,
         .iconPalIndex = 0,
-        SHADOW(2, 5, SHADOW_SIZE_L)
+        SHADOW(2, 2, SHADOW_SIZE_L)
         FOOTPRINT(Maschiff)
         OVERWORLD(
             sPicTable_Maschiff,

@@ -656,7 +656,7 @@ PlayersHouse_2F_EventScript_SetToNormalDifficulty::
 # 334 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	setdifficulty DIFFICULTY_EASY
 # 335 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setvar VAR_DIFFICULTY_SWITCH_COUNTER, 1
+	setvar VAR_DIFFICULTY_SWITCH_COUNTER, 0
 # 336 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	clearflag FLAG_SYS_HARD_MODE
 # 337 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"

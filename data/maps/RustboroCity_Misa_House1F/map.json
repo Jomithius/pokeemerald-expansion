@@ -26,6 +26,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RustboroCity_Misa_House1F_EventScript_Misa",
       "flag": "FLAG_HIDE_MISA_EMO_RUSTBORO_HOUSE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MISA",
+      "x": 12,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Misa_House1f_EventScript_PostGameMisa",
+      "flag": "FLAG_HIDE_MISA_POST_GAME_RUSTBORO"
     }
   ],
   "warp_events": [

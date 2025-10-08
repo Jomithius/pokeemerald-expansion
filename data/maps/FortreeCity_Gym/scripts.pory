@@ -165,7 +165,8 @@ FortreeCity_Gym_Text_GymGuideAdvice:
 	.string "FORTREE GYM LEADER MICKEY is\n"
 	.string "a master of DOG-type POKéMON.\p"
 	.string "“Dog isn't a type?”\n"
-	.string "Don't let him hear you say that!$"
+	.string "Don't let him hear you say that!\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap is 38.$"
 
 FortreeCity_Gym_Text_GymGuidePostVictory:
 	.string "You did it!\n"

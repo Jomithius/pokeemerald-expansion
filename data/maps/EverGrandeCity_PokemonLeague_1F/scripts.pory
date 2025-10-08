@@ -199,7 +199,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "PSYCHIC NOISE", "EXPANDING FORCE", "BREAKING SWIPE", "SLUDGE WAVE", 
 		"SCORCHING SANDS", "POLLEN PUFF", "ENERGY BALL", "GUNK SHOT", "METEOR BEAM", "DRAGON PULSE", "TELEPORT", "HEAT WAVE",
 		"RISING VOLTAGE", "GRASS KNOT", "HYPER VOICE", "IRON HEAD", "POLTERGEIST", "SWAGGER", "FLATTER", "TAILWIND", "MOONBLAST", 
-		"STICKY WEB", "POWER GEM")
+		"STICKY WEB", "POWER GEM", "GRASSY GLIDE", "AIR SLASH")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_PsychicNoiseTeach)
@@ -247,6 +247,10 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_TutorChoices{
 			goto(MoveTutor_EventScript_StickyWebTeach)
 		case 22:
 			goto(MoveTutor_EventScript_PowerGemTeach)
+		case 23:
+			goto(MoveTutor_EventScript_GrassyGlideTeach)
+		case 24:
+			goto(MoveTutor_EventScript_AirSlashTeach)
 		case MULTI_B_PRESSED:
 			goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
 		default:
@@ -462,6 +466,24 @@ script MoveTutor_EventScript_PowerGemTeach{
 	end
 }
 
+script MoveTutor_EventScript_GrassyGlideTeach{
+	msgbox("Which POKéMON do you want to\nteach GRASSY GLIDE to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_GRASSY_GLIDE)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
+script MoveTutor_EventScript_AirSlashTeach{
+	msgbox("Which POKéMON do you want to\nteach AIR SLASH to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_AIR_SLASH)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	goto(EverGrandeCity_PokemonLeague_1F_EventScript_TutorDecline)
+	end
+}
+
 
 script EverGrandeCity_PokemonLeague_1F_EventScript_Youngster{
 	msgbox("I made it here, but the\n
@@ -480,39 +502,6 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_Woman{
 		I don't know how she beats me\n
 		while being distracted like that…", MSGBOX_NPC)
 	end
-}
-
-script EverGrandeCity_PokemonLeague_1F_EventScript_MegaStoneClerk{
-    lock
-    faceplayer
-    message(gText_HowMayIServeYou)
-	waitmessage
-	pokemart(EverGrandeCity_PokemonLeague_1F_MegaStonePokemart)
-	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
-	release
-	end
-}
-
-mart EverGrandeCity_PokemonLeague_1F_MegaStonePokemart{
-    ITEM_VENUSAURITE
-    ITEM_CHARIZARDITE_X
-    ITEM_CHARIZARDITE_Y
-    ITEM_BLASTOISINITE
-    ITEM_BEEDRILLITE
-    ITEM_PIDGEOTITE
-    ITEM_ALAKAZITE
-    ITEM_SLOWBRONITE
-    ITEM_GENGARITE
-    ITEM_KANGASKHANITE
-    ITEM_PINSIRITE
-    ITEM_GYARADOSITE
-    ITEM_AERODACTYLITE
-    ITEM_AMPHAROSITE
-    ITEM_STEELIXITE
-    ITEM_SCIZORITE
-    ITEM_HERACRONITE
-    ITEM_HOUNDOOMINITE
-    ITEM_TYRANITARITE
 }
 
 script EverGrandeCity_PokemonLeague_1F_EventScript_MegaStoneClerk2{
@@ -569,6 +558,9 @@ mart EverGrandeCity_PokemonLeague_1F_MegaStonePokemart2{
     ITEM_HERACRONITE
     ITEM_HOUNDOOMINITE
     ITEM_TYRANITARITE
+	ITEM_HAWLUCHITE
+	ITEM_VICTREEBITE
+	ITEM_MALAMITE
 }
 
 script EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk{

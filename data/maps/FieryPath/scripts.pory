@@ -17,11 +17,9 @@ script FieryPath_EventScript_Salazzle{
     lock
 	faceplayer
     setflag(FLAG_SALAZZLE_TOTEM)
-    applymovement(7, Common_Movement_FacePlayer)
-    waitmovement(7)
     playmoncry(SPECIES_SALAZZLE, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_SALAZZLE_TOTEM, 35, ITEM_POISON_BARB)
+    setwildbattle(SPECIES_SALAZZLE_TOTEM, 30, ITEM_POISON_BARB)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
@@ -43,7 +41,7 @@ script FieryPath_EventScript_Salazzle{
  
 script SalazzleWon_Caught {
     fadescreen(FADE_TO_BLACK)
-    removeobject(7)
+    removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
 	return
 }
@@ -52,7 +50,7 @@ script SalazzleFailed {
 	playmoncry(SPECIES_SALAZZLE, CRY_MODE_ENCOUNTER)
 	delay(20)
 	fadescreen(FADE_TO_BLACK)
-	removeobject(7)
+	removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
     msgbox("The SALAZZLE disappeared…")
 	return
@@ -63,7 +61,12 @@ script FieryPath_EventScript_Moltres{
 	faceplayer
     playmoncry(SPECIES_MOLTRES, CRY_MODE_ENCOUNTER)
     waitmoncry
-    setwildbattle(SPECIES_MOLTRES, 75)
+	if(!flag(FLAG_IS_CHAMPION)){
+		setwildbattle(SPECIES_MOLTRES, 35)
+	}
+	else{
+		setwildbattle(SPECIES_MOLTRES, 75)	
+	}
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)

@@ -72,9 +72,8 @@ PetalburgCity_Mart_Text_RepelIsUseful:
 	.string "useful when you're in a hurry.$"
 
 PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou:
-	.string "Do you have any EXP CANDIES with\n"
+	.string "Do you have any EXP. CANDIES with\n"
 	.string "you?\p"
-	.string "EXP CANDIES are good for leveling\n"
-	.string "POKéMON quick, but can't be used to\l"
-	.string "get past the LEVEL CAP.$"
+	.string "EXP. CANDIES are good for leveling\n"
+	.string "POKéMON up quickly!$"
 

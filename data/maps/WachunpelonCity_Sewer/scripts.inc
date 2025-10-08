@@ -307,333 +307,337 @@ WachunpelonCity_Sewer_EventScript_Speedwagon::
 # 171 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	removeobject 12
 # 172 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	setflag FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS
+	waitse
 # 173 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	addvar VAR_FINAL_REMATCH_STATE, 1
+	setflag FLAG_HIDE_POLICEMAN2_WACHUNPELON_SEWERS
 # 174 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
+	addvar VAR_FINAL_REMATCH_STATE, 1
 # 175 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	setvar VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0
+# 176 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 12
+# 177 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	release
 	end
 
 
 WachunpelonCity_Sewer_EventScript_Arcanine::
-# 180 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	lock
-# 181 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	playmoncry SPECIES_ARCANINE, CRY_MODE_ENCOUNTER
 # 182 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	waitmoncry
+	lock
 # 183 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	playmoncry SPECIES_ARCANINE, CRY_MODE_ENCOUNTER
+# 184 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	waitmoncry
+# 185 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	release
 	end
 
 
 WachunpelonCity_Sewer_EventScript_Mabosstiff::
-# 188 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	lock
-# 189 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	playmoncry SPECIES_MABOSSTIFF, CRY_MODE_ENCOUNTER
 # 190 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	waitmoncry
+	lock
 # 191 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	playmoncry SPECIES_MABOSSTIFF, CRY_MODE_ENCOUNTER
+# 192 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	waitmoncry
+# 193 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	release
 	end
 
 
 WachunpelonCity_Sewer_EventScript_Sneasel::
-# 196 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	lock
-# 197 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	playmoncry SPECIES_SNEASEL, CRY_MODE_ENCOUNTER
 # 198 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	waitmoncry
+	lock
 # 199 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	playmoncry SPECIES_SNEASEL, CRY_MODE_ENCOUNTER
+# 200 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	waitmoncry
+# 201 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	release
 	end
 
 
 WachunpelonCity_Sewer_EventScript_Kleavor::
-# 204 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	lock
-# 205 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	playmoncry SPECIES_KLEAVOR, CRY_MODE_ENCOUNTER
 # 206 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	waitmoncry
+	lock
 # 207 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	playmoncry SPECIES_KLEAVOR, CRY_MODE_ENCOUNTER
+# 208 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	waitmoncry
+# 209 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	release
 	end
 
 
-# 247 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-WachunpelonCity_Sewer_Movement_Policeman1:
-# 248 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_left
-# 248 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_left
-# 248 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_left
 # 249 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_down
+WachunpelonCity_Sewer_Movement_Policeman1:
 # 250 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	delay_16
+	walk_left
+# 250 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_left
+# 250 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_left
 # 251 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_in_place_left
+	walk_down
 # 252 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	delay_16
 # 253 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_up
+	walk_in_place_left
 # 254 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	delay_16
 # 255 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_up
+# 256 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	delay_16
+# 257 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 258 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 260 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Player1:
-# 259 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 261 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_down
-# 260 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 262 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 260 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 262 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 260 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 262 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
 	step_end
 
-# 263 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 265 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Biker1:
-# 264 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 266 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 264 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 266 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 264 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 266 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 264 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 266 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
 	step_end
 
-# 267 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-WachunpelonCity_Sewer_Movement_Policeman2:
-# 268 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	emote_exclamation_mark
 # 269 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+WachunpelonCity_Sewer_Movement_Policeman2:
+# 270 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	emote_exclamation_mark
+# 271 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_in_place_fast_left
 	step_end
 
-# 273 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 275 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Biker2:
-# 274 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 276 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_left
-# 275 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 277 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 275 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 277 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 275 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 277 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 275 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 277 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 275 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 277 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 275 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 277 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 275 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 277 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 278 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Policeman3:
-# 279 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 281 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_left
-# 279 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 281 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_left
-# 279 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 281 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_left
-# 279 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 281 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_left
-# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 282 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 282 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 282 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 282 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 282 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 282 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 282 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 280 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 282 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 283 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 285 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Police12:
-# 284 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 286 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 284 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 286 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 284 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 286 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 284 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 286 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 284 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 286 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 285 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 287 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_down
-# 285 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 287 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_down
 	step_end
 
-# 288 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 290 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Police12Leave:
-# 289 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 289 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 289 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 289 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 289 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 290 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 292 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_up
-# 290 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 292 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_up
-# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 293 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 293 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 293 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
-# 291 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 293 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_left
 	step_end
 
-# 294 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Player2:
-# 295 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 297 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 295 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 297 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 295 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 297 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 295 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 297 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_down
-# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 298 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_right
-# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 298 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_right
-# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 298 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_right
-# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 298 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_right
-# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 298 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_right
-# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 298 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_right
-# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 298 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_right
-# 296 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 298 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 299 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-WachunpelonCity_Sewer_Movement_Police14:
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 300 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
 # 301 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+WachunpelonCity_Sewer_Movement_Police14:
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 302 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 303 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_in_place_fast_down
 	step_end
 
-# 304 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-WachunpelonCity_Sewer_Movement_Police15:
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
-# 305 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_fast_right
 # 306 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+WachunpelonCity_Sewer_Movement_Police15:
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 307 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_fast_right
+# 308 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_in_place_fast_up
 	step_end
 
-# 309 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 311 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Police16:
-# 310 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 312 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 310 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 312 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 310 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 312 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 310 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 312 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 310 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 312 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 310 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 312 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 310 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 312 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
 	step_end
 
-# 314 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 316 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 WachunpelonCity_Sewer_Movement_Police16_2:
-# 315 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 317 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_down
-# 316 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 318 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 316 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 318 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 316 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 318 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 316 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 318 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 316 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 318 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
-# 316 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 318 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_right
 	step_end
 
-# 319 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-WachunpelonCity_Sewer_Movement_PlayerStepBack:
-# 320 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	walk_down
 # 321 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+WachunpelonCity_Sewer_Movement_PlayerStepBack:
+# 322 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+	walk_down
+# 323 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	walk_in_place_up
 	step_end
 
@@ -654,25 +658,25 @@ WachunpelonCity_Sewer_EventScript_Speedwagon_Text_0:
 	.string "Good work.\n We'll take it from here.$"
 
 WachunpelonCity_Sewer_Text_Policeman1::
-# 211 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 213 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	.string "I don't see anybody…\n But they have to be down here.\l Let's go further-$"
 
 WachunpelonCity_Sewer_Text_Policeman2::
-# 217 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 219 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	.string "… How did they even get their bikes\n down here?\p I'll go on ahead!$"
 
 WachunpelonCity_Sewer_Text_Speedwagon1::
-# 223 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 225 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	.string "YOU AGAIN!\p They're all locked up now because of\n YOU!\p This time I'll make sure you can't\n chase us anymore!$"
 
 WachunpelonCity_Sewer_SpeedwagonDefeat::
-# 231 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 233 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	.string "I just wanted to speed my wagon…$"
 
 WachunpelonCity_Sewer_Text_Policeman3::
-# 235 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 237 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	.string "Thanks again for helping us clear\n up this case.\p Here, take this. I think the boss was\n going to use it to upgrade his bike.$"
 
 WachunpelonCity_Sewer_Text_Policeman4::
-# 242 "data/maps/WachunpelonCity_Sewer/scripts.pory"
+# 244 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	.string "Well, I should head back to MAUVILLE\n CITY now. Take care.$"

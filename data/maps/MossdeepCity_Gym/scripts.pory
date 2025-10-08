@@ -379,7 +379,8 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 	.string "outstanding combination attacks.\p"
 	.string "If you want to win, you'll need to show\n"
 	.string "them how tight you are with your\l"
-	.string "POKéMON. Go for it!$"
+	.string "POKéMON. Go for it!\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap is 55.$"
 
 MossdeepCity_Gym_Text_GymGuidePostVictory:
 	.string "Wow, you're astounding!\n"

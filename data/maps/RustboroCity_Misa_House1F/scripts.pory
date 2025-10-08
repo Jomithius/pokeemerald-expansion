@@ -32,6 +32,27 @@ script Misa_House1F_EventScript_Text2{
     end
 }
 
+script Misa_House1f_EventScript_PostGameMisa{
+    lock
+    faceplayer
+    msgbox("Oh, {PLAYER}!\n
+        Or should I say CHAMPION now?!\l
+        Congratulations!\p
+        We're spending some time at home\n
+        before heading to LILYCOVE to\l
+        meet with JIMMY.\p
+        You're going to meet with him\n
+        too, right?\p
+        I'm sure you'll like the\n
+        surprise he has for you!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+
 text MisaHouse1F_1{"{PLAYER}!\n
 I'm glad you stopped by.\p
 JAMES is upstairs in his room.\n

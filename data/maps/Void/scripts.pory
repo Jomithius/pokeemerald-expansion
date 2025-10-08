@@ -26,12 +26,15 @@ script Void_UpdateState{
 
 script Void_EventScript_FinalBattle{
     lockall
-    goto_if_eq(VAR_FINAL_REMATCH_STATE, 8, Void_EventScript_FinalBattle2)
+    #goto_if_eq(VAR_FINAL_REMATCH_STATE, 8, Void_EventScript_FinalBattle2)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3)
     waitmovement(0)
-    msgbox("{PLAYER}!\n
+    msgbox("JIMMY: {PLAYER}!\n
         I'm glad you made it here.\p
-        Welcome to the VOID.\p
+        DAVE's a good actor, isn't he?\n
+        You'd never expect him to get toxic!\p
+        Anyways, I'm sure you already know,\n
+        but welcome to the void.\p
         This place has existed forever, but\n
         most people don't know about it.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -98,7 +101,7 @@ script Void_EventScript_FinalBattle2{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3)
     waitmovement(0)
     playbgm(MUS_ENCOUNTER_EXDEATH, FALSE)
-    msgbox("{PLAYER}.\p
+    msgbox("JIMMY: {PLAYER}.\p
         We can battle as many times\n
         as you want.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -125,16 +128,17 @@ script Void_EventScript_FinalBattle2{
 script Void_EventScript_GameEnd{
     playbgm(MUS_THE_DAY_WILL_COME, FALSE)
     applymovement(1, Common_Movement_WalkInPlaceUp)
-    waitmovement(0)
-    msgbox("… I knew you could do it, {PLAYER}.", MSGBOX_AUTOCLOSE)
+    waitmovement(1)
+    msgbox("JIMMY: … I knew you could do it,\n
+        {PLAYER}.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(1, Common_Movement_WalkInPlaceRight)
-    waitmovement(0)
-    msgbox("…\n
-        Well, this is it.", MSGBOX_DEFAULT)
     applymovement(1, Common_Movement_WalkInPlaceDown)
     waitmovement(1)
-    msgbox("All that's left now is registering\n
+    #msgbox("…\n
+    #    Well, this is it.", MSGBOX_DEFAULT)
+    msgbox("…\n
+        Well, this is it.\p
+        All that's left now is registering\n
         your POKéMON in the HALL OF FAME.\p
         Come on, I'll teleport you back home.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -192,6 +196,7 @@ script EventScript_FinalRematchesUnlocked{
         The ELITE FOUR can't be challenged until\n
         all GYM LEADERS are defeated.", MSGBOX_AUTOCLOSE)
     waitmessage
+    addpcitem(ITEM_MASTER_BALL, 25)
     setvar(VAR_FINAL_REMATCH_STATE, 6)
     setvar(VAR_GYM_LEADER_COUNT, 0)
     setflag(FLAG_SYS_FINAL_REMATCH)
@@ -209,7 +214,7 @@ script EventScript_FinalRematchesUnlocked{
 text PokenavText_FinalMatches{
     "… … … … … …\n
     … … … … … Beep!\p
-    {PLAYER}!\n
+    JIMMY: {PLAYER}!\n
     It's JIMMY.\p
     My staff has been giving me\n
     updates about you!\p
@@ -221,8 +226,11 @@ text PokenavText_FinalMatches{
     some of my staff members out to\l
     POKéMON CENTERS to help you\l
     prepare for the battles.\p
-    I'm looking forward to\n
-    seeing how strong you are now!\p
+    Also, I wired some MASTER BALLS\n
+    to your PC in case you need to\l
+    catch more POKéMON.\p
+    I'm looking forward to seeing\n
+    how strong you are now!\p
     … … … … … …\n
 	… … … … … Click!"
 }

@@ -3,7 +3,7 @@
 # 2 "data/maps/MauvilleCity/scripts.pory"
 .set LOCALID_WALLYS_UNCLE, 7
 # 3 "data/maps/MauvilleCity/scripts.pory"
-.set LOCALID_SCOTT, 1
+.set LOCALID_SCOTT, 11
 # 4 "data/maps/MauvilleCity/scripts.pory"
 .set LOCALID_DACA, 8
 # 5 "data/maps/MauvilleCity/scripts.pory"
@@ -409,7 +409,7 @@ MauvilleCity_EventScript_ScottApproachPlayerNorth::
 # 205 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_ScottApproachPlayerEast::
 # 206 "data/maps/MauvilleCity/scripts.pory"
-	setobjectxyperm LOCALID_SCOTT, 12, 13
+	setobjectxyperm LOCALID_SCOTT, 12, 14
 # 207 "data/maps/MauvilleCity/scripts.pory"
 	addobject LOCALID_SCOTT
 # 208 "data/maps/MauvilleCity/scripts.pory"
@@ -2112,7 +2112,7 @@ MauvilleCity_EventScript_BikerLeave::
 # 1057 "data/maps/MauvilleCity/scripts.pory"
 	applymovement 48, Common_Movement_ExclamationMark
 # 1058 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 0
+	waitmovement 48
 # 1059 "data/maps/MauvilleCity/scripts.pory"
 	waitse
 # 1060 "data/maps/MauvilleCity/scripts.pory"

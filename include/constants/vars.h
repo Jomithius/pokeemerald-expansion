@@ -112,7 +112,7 @@
 #define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
-#define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var
+#define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Used for rival battle warning
 #define VAR_ROUTE101_STATE                               0x4060
 #define VAR_ROUTE102_STATE                               0x4061 // Unused Var
 #define VAR_ROUTE103_STATE                               0x4062 // Unused Var
@@ -137,7 +137,7 @@
 #define VAR_ROUTE122_STATE                               0x4075 // Unused Var
 #define VAR_ROUTE123_STATE                               0x4076 // Unused Var
 #define VAR_ROUTE124_STATE                               0x4077 // Unused Var
-#define VAR_ROUTE125_STATE                               0x4078 // Unused Var
+#define VAR_SLATEPORT_GYM_STATE                          0x4078 // Force player to do gym before moving on
 #define VAR_TUTORIAL_COUNTER                             0x4079 // Counts how many times you talked to tutorial girl in trainer school. 11 gives reward
 #define VAR_WIPE_COUNTER                                 0x407A // Counts how many wipes the player has
 #define VAR_ROUTE128_STATE                               0x407B

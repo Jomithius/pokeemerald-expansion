@@ -37,7 +37,7 @@ Baldesia_MainHouse_EventScript_TurnPlayerNorth::
 `
 
 script Baldesia_MainHouse_UpdateNPCPos{
-    setobjectxyperm(LOCALID_ARIA, 16, 10)
+    setobjectxyperm(LOCALID_ARIA, 14, 10)
     setobjectmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
     setobjectxyperm(LOCALID_PANINI, 11, 11)
     setobjectmovementtype(LOCALID_PANINI, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)

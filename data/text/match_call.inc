@@ -2042,7 +2042,7 @@ MatchCall_Text_Roxanne1::
 MatchCall_Text_Roxanne2::
 	.string "STEVE: Yo, {PLAYER}!\n"
 	.string "Congratulations!\l"
-	.string "I've been hearing about you!\p"
+	.string "I've been hearing a lot about you!\p"
 	.string "I look forward to battling\n"
 	.string "you again!$"
 
@@ -2081,7 +2081,7 @@ MatchCall_Text_Brawly2::
 MatchCall_Text_Brawly3::
 	.string "LIAM: Hey, {PLAYER}{KUN}!\n"
 	.string "My GYM's ready for action!\p"
-	.string "Come back to DEWFORD anytime\n"
+	.string "Come back to SLATEPORT anytime\n"
 	.string "for another challenge!$"
 
 MatchCall_Text_Brawly4::
@@ -2089,7 +2089,7 @@ MatchCall_Text_Brawly4::
 	.string "we'll ever get bored of battling you!$"
 
 MatchCall_Text_Wattson1::
-	.string "Hahaha! {PLAYER}!\n"
+	.string "DACA: Hahaha! {PLAYER}!\n"
 	.string "Let's party again soon!$"
 
 MatchCall_Text_Wattson2::
@@ -2167,10 +2167,10 @@ MatchCall_Text_Winona4::
 	.string "you never lost sight of your dream.$"
 
 MatchCall_Text_TateLiza1::
-	.string "MOMO: ……\n"
-	.string "……\p"
-	.string "……………\n"
-	.string "………………… Meow.\p"
+	.string "MOMO: Baldy, baldy,\n"
+	.string "over there…\p"
+	.string "ARIA: What's it like\n"
+	.string "to have no hair?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
@@ -2188,23 +2188,27 @@ MatchCall_Text_TateLiza3::
 	.string "… … … … … Click!$"
 
 MatchCall_Text_TateLiza4::
-	.string "MOMO: Baldy, baldy,\n"
-	.string "over there…\p"
-	.string "ARIA: What's it like\n"
-	.string "to have no hair?\p"
+	.string "MOMO: ……\n"
+	.string "……\p"
+	.string "……………\n"
+	.string "………………… Meow.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
 MatchCall_Text_Juan1::
-	.string "JOEY: Yah…\n"
-	.string "YEET!$"
+	.string "JOEY: Yeeeheheeaaah…\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_Juan2::
-	.string "JOEY: Yeeeheheeaaah…\n"
-	.string "YEET!$"
+	.string "JOEY: Yeeeheheeaaah…\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_Juan3::
-	.string "JOEY: Yeeeheheeaaah…$"
+	.string "JOEY: Yeeeheheeaaah…\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_Juan4::
 	.string "JOEY: Yeeeheheeaaah…\p"
@@ -2673,7 +2677,7 @@ MatchCall_Text_Norman3::
 
 MatchCall_Text_Norman4::
 	.string "LUNA: {PLAYER}! You'd better go visit\n"
-	.string "your MOM every so often.\p"
+	.string "your mom every so often.\p"
 	.string "Or at least give her a call.\p"
 	.string "She told me that she misses\n"
 	.string "hearing from you.$"
@@ -2686,10 +2690,10 @@ MatchCall_Text_Norman5::
 	.string "be somehow linked to a volcano?$"
 
 MatchCall_Text_Norman6::
-	.string "LUNA: LU! LU! RUB! RUB!\p"
+	.string "LUNA: LU! LU! LU! LU!\p"
 	.string "…Oh? {PLAYER}.\p"
 	.string "You caught me right in the middle\n"
-	.string "of a POKéMON training session!$"
+	.string "of a… POKéMON training session!$"
 
 MatchCall_Text_Norman7::
 	.string "LUNA: {PLAYER}.\p"
@@ -2760,7 +2764,7 @@ MatchCall_Text_Steven6::
 
 MatchCall_Text_Steven7::
 	.string "STEVEN: {PLAYER}{KUN}… Congratulations\n"
-	.string "for entering the HALL OF FAME.\p"
+	.string "on entering the HALL OF FAME.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "I hope we can meet again\n"

@@ -1,6 +1,6 @@
 mapscripts NewMoonIsland_House4_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: NewMoonIsland_House4_OnTransition
-    #MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
 }
 
 script NewMoonIsland_House4_OnTransition{

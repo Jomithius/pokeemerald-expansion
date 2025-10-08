@@ -5138,7 +5138,7 @@ void ItemUseCB_Mint(u8 taskId, TaskFunc task)
 
 void Task_TeraShard(u8 taskId)
 {
-    static const u8 askTeraText[] = _("Change {STR_VAR_1}'s TERA TYPE using\n the {STR_VAR_2}?");
+    static const u8 askTeraText[] = _("Change {STR_VAR_1}'s TERA-type using\n the {STR_VAR_2}?");
     s16 *data = gTasks[taskId].data;
 
     switch (tState)

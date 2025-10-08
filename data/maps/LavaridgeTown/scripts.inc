@@ -805,9 +805,9 @@ LavaridgeTown_Text_GymSign:
 # 403 "data/maps/LavaridgeTown/scripts.pory"
 	.string "LAVARIDGE TOWN POKéMON GYM\n"
 # 404 "data/maps/LavaridgeTown/scripts.pory"
-	.string "LEADER: KAIRYN\l"
+	.string "LEADER: KAI\l"
 # 405 "data/maps/LavaridgeTown/scripts.pory"
-	.string "“Cooking with KAIRYN!”$"
+	.string "“Cooking with KAI!”$"
 # 406 "data/maps/LavaridgeTown/scripts.pory"
 
 # 407 "data/maps/LavaridgeTown/scripts.pory"

@@ -501,6 +501,7 @@ PlayersHouse_1F_EventScript_CallFromCeo::
 	setvar VAR_CEO_STATE, 1
 	setflag FLAG_SYS_BEFORE_ELITE_4_REMATCH
 	setflag FLAG_HIDE_GYM_LEADERS
+	clearflag FLAG_HIDE_MISA_POST_GAME_RUSTBORO
 	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
 	return
 

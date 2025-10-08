@@ -5,14 +5,26 @@ mapscripts TheUnder_CanyonLake_MapScripts {
 
 script TheUnder_CanyonLake_EventScript_NewmoonIslandMan{
     lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    opendoor(14, 4)
+    waitdooranim
+    addobject(8)
+    clearflag(FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE)
+    applymovement(8, Common_Movement_WalkDown)
+    waitmovement(8)
+    closedoor(14, 4)
+    waitdooranim
     playse(SE_PIN)
-    applymovement(8, Common_Movement_ExclamationMark)
-    waitmovement(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
     waitse
-    applymovement(8, Common_Movement_WalkUp3)
-    waitmovement(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
     fadeoutbgm(0)
-    msgbox("You've been asleep for a long, long time…\n
+    delay(16)
+    msgbox("???: You've been asleep for a long,\n
+        long time…\l
         What happened to you?\p
         And what were you doing here? No one\n
         has lived here for 50 years.\p
@@ -21,15 +33,21 @@ script TheUnder_CanyonLake_EventScript_NewmoonIslandMan{
         His parents tried to find the LUNAR\n
         WING, but they failed.", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(8, Common_Movement_FaceDown)
+    hideobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    delay(8)
+    applymovement(8, TheUnder_CanyonLake_Movement_WalkAroundPlayer)
     waitmovement(8)
+    showobjectat(8, MAP_THE_UNDER_CANYON_LAKE)
+    delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
     msgbox("…\n
         …\l
         Wherever he is now…\p
         I just hope… he's finally been set\n
         free from those bad dreams…", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(8, Common_Movement_FaceUp)
+    applymovement(8, Common_Movement_FaceDown)
     waitmovement(8)
     msgbox("I'm…\n
         I'm sorry.", MSGBOX_AUTOCLOSE)
@@ -58,6 +76,11 @@ script TheUnder_CanyonLake_EventScript_NewmoonIslandMan{
     fadeinbgm(0)
     releaseall
     end
+}
+
+movement TheUnder_CanyonLake_Movement_WalkAroundPlayer{
+    walk_down * 2
+    face_up
 }
 
 movement TheUnder_CanyonLake_Movement_ManLeaves{

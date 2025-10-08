@@ -59,7 +59,7 @@ FullMoonIslandInterior_EventScript_RatduardoBattle::
 	compare VAR_RESULT, TRUE
 	goto_if_eq FullMoonIslandInterior_EventScript_RatduardoBattle_2
 # 39 "data/maps/FullMoonIslandInterior/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, FullMoonIslandInterior_Movement_PlayerApproachRatduardoRightEntrance
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
 FullMoonIslandInterior_EventScript_RatduardoBattle_1:
 # 41 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmovement 0
@@ -129,7 +129,7 @@ FullMoonIslandInterior_EventScript_RatduardoBattle_1:
 
 FullMoonIslandInterior_EventScript_RatduardoBattle_2:
 # 36 "data/maps/FullMoonIslandInterior/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
+	applymovement OBJ_EVENT_ID_PLAYER, FullMoonIslandInterior_Movement_PlayerApproachRatduardoRightEntrance
 	goto FullMoonIslandInterior_EventScript_RatduardoBattle_1
 
 
@@ -329,7 +329,7 @@ FullMoonIslandInterior_EventScript_CresseliaChangeMind_Text_0:
 
 FullMoonIslandInterior_Text_Ratduardo::
 # 165 "data/maps/FullMoonIslandInterior/scripts.pory"
-	.string "… Again… You…\n Always… in my way…\p No more…!$"
+	.string "… Again… You…\n Always… in my way…\p Please…!$"
 
 FullMoonIslandInterior_Text_RatduardoDefeat::
 # 170 "data/maps/FullMoonIslandInterior/scripts.pory"

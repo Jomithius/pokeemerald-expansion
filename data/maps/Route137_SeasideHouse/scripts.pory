@@ -29,7 +29,6 @@ script Route137_SeasideHouse_EventScript_GiveCasteliaCone{
     faceplayer
     playbgm(MUS_MISA_THEME, FALSE)
     msgbox("Oh, {PLAYER}!\n
-        Or should I say CHAMPION now?!\l
         It's good to see you again!\p
         I was visiting JAMES at his new\n
         job and decided to get a\l

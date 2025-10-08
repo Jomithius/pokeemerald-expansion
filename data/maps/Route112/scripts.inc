@@ -487,85 +487,85 @@ Route112_EventScript_Emo_West::
 	end
 
 
-# 294 "data/maps/Route112/scripts.pory"
+# 293 "data/maps/Route112/scripts.pory"
 Route112_Movement_EmoLeave:
-# 295 "data/maps/Route112/scripts.pory"
+# 294 "data/maps/Route112/scripts.pory"
+	walk_right
+# 294 "data/maps/Route112/scripts.pory"
+	walk_right
+# 294 "data/maps/Route112/scripts.pory"
+	walk_right
+# 294 "data/maps/Route112/scripts.pory"
+	walk_right
+# 294 "data/maps/Route112/scripts.pory"
+	walk_right
+# 294 "data/maps/Route112/scripts.pory"
 	walk_right
 # 295 "data/maps/Route112/scripts.pory"
-	walk_right
+	walk_down
 # 295 "data/maps/Route112/scripts.pory"
-	walk_right
-# 295 "data/maps/Route112/scripts.pory"
-	walk_right
-# 295 "data/maps/Route112/scripts.pory"
-	walk_right
-# 295 "data/maps/Route112/scripts.pory"
-	walk_right
-# 296 "data/maps/Route112/scripts.pory"
 	walk_down
 # 296 "data/maps/Route112/scripts.pory"
-	walk_down
-# 297 "data/maps/Route112/scripts.pory"
 	walk_right
-# 297 "data/maps/Route112/scripts.pory"
+# 296 "data/maps/Route112/scripts.pory"
 	walk_right
 	step_end
 
-# 300 "data/maps/Route112/scripts.pory"
+# 299 "data/maps/Route112/scripts.pory"
 Route112_Movement_EmoLeaveWest:
+# 300 "data/maps/Route112/scripts.pory"
+	walk_down
 # 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 301 "data/maps/Route112/scripts.pory"
+	walk_right
+# 302 "data/maps/Route112/scripts.pory"
 	walk_down
 # 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 302 "data/maps/Route112/scripts.pory"
-	walk_right
-# 303 "data/maps/Route112/scripts.pory"
 	walk_down
-# 303 "data/maps/Route112/scripts.pory"
-	walk_down
-# 303 "data/maps/Route112/scripts.pory"
+# 302 "data/maps/Route112/scripts.pory"
 	walk_down
 	step_end
 
-# 306 "data/maps/Route112/scripts.pory"
+# 305 "data/maps/Route112/scripts.pory"
 Route112_PlayerWalkBack:
-# 307 "data/maps/Route112/scripts.pory"
+# 306 "data/maps/Route112/scripts.pory"
 	lock_facing_direction
-# 308 "data/maps/Route112/scripts.pory"
+# 307 "data/maps/Route112/scripts.pory"
 	walk_down
-# 309 "data/maps/Route112/scripts.pory"
+# 308 "data/maps/Route112/scripts.pory"
 	delay_16
-# 310 "data/maps/Route112/scripts.pory"
+# 309 "data/maps/Route112/scripts.pory"
 	unlock_facing_direction
-# 311 "data/maps/Route112/scripts.pory"
+# 310 "data/maps/Route112/scripts.pory"
 	face_up
 	step_end
 
-# 314 "data/maps/Route112/scripts.pory"
+# 313 "data/maps/Route112/scripts.pory"
 Route112_PlayerWalkBackWest:
-# 315 "data/maps/Route112/scripts.pory"
+# 314 "data/maps/Route112/scripts.pory"
 	lock_facing_direction
-# 316 "data/maps/Route112/scripts.pory"
+# 315 "data/maps/Route112/scripts.pory"
 	walk_right
-# 317 "data/maps/Route112/scripts.pory"
+# 316 "data/maps/Route112/scripts.pory"
 	delay_16
-# 318 "data/maps/Route112/scripts.pory"
+# 317 "data/maps/Route112/scripts.pory"
 	unlock_facing_direction
-# 319 "data/maps/Route112/scripts.pory"
+# 318 "data/maps/Route112/scripts.pory"
 	face_left
 	step_end
 
@@ -583,7 +583,7 @@ Route112_EventScript_Emo_Text_2:
 
 Route112_Text_Emo1::
 # 256 "data/maps/Route112/scripts.pory"
-	.string "JAMES: {PLAYER}…\n We meet again.\p My power has increased since we\n last battled.\p My eye… It now burns hotter than\n the FIERY PATH…\p This time, I, JOMITHIUS, will\n achieve victory!$"
+	.string "JAMES: {PLAYER}…\n We meet again.\p My power has increased since our\n last battle.\p My eye… It now burns hotter than\n the FIERY PATH…\p This time, I, JOMITHIUS, will\n achieve victory!$"
 
 Route112_EmoDefeat::
 # 267 "data/maps/Route112/scripts.pory"
@@ -591,12 +591,12 @@ Route112_EmoDefeat::
 
 Route112_Text_Emo2::
 # 271 "data/maps/Route112/scripts.pory"
-	.string "JAMES: So victory still eludes\n me…\l You're a worthy adversary.\p Out of respect for your\n power, I'll give you this.$"
+	.string "JAMES: So victory still eludes me…\n You're a worthy adversary.\p Out of respect for your\n power, I'll give you this.$"
 
 Route112_Text_Emo3::
-# 279 "data/maps/Route112/scripts.pory"
+# 278 "data/maps/Route112/scripts.pory"
 	.string "I'm going to challenge the LAVARIDGE\n GYM after exploring the DESERT.\p If you're going to head north,\n be careful.\p There's been a lot of weirdos\n lurking around here lately.$"
 
 Route112_Text_Emo4::
-# 288 "data/maps/Route112/scripts.pory"
+# 287 "data/maps/Route112/scripts.pory"
 	.string "JAMES: What?\p Well, see ya, {PLAYER}.\n Next time, I won't lose.$"

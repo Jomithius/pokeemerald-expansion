@@ -172,6 +172,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	delay 30
 	setflag FLAG_ENABLE_BRAWLY_MATCH_CALL
 	setvar VAR_ROXANNE_CALL_STEP_COUNTER, 0
+	setvar VAR_SLATEPORT_GYM_STATE, 1
 	setflag FLAG_ENABLE_ROXANNE_FIRST_CALL
 	release
 	end
@@ -285,7 +286,8 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "you can barely see.\p"
 	.string "But it will get brighter after defeating\n"
 	.string "the TRAINERS in your way.\p"
-	.string "Hey, okay, go for it!$"
+	.string "Hey, okay, go for it!\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap is 21.$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:
 	.string "Whoah! It's turned too bright in here!\p"

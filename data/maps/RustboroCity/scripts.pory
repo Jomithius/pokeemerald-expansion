@@ -1517,7 +1517,7 @@ script RustboroCity_EventScript_ImportanceOfStatEditor{
 
 text RustboroCity_Text_ExplainExpShare{
 	"The EXP. SHARE is a very useful item\n
-	that gives all your POKéMON EXP Points\l
+	that gives all your POKéMON EXP. Points\l
 	from battles.\p
 	To use it, just turn it on in the KEY\n
 	ITEMS section of your bag."

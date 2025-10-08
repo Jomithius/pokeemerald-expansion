@@ -749,7 +749,7 @@ Route135_Lab_EventScript_ToAreaZero_6:
 # 494 "data/maps/Route135_Lab/scripts.pory"
 	waitmovement 0
 # 495 "data/maps/Route135_Lab/scripts.pory"
-	msgbox Route135_Lab_Text_ManiacExplainCosmog, MSGBOX_AUTOCLOSE
+	msgbox Route135_Lab_Text_ManiacExplainAreaZeroCosmog, MSGBOX_AUTOCLOSE
 # 496 "data/maps/Route135_Lab/scripts.pory"
 	waitmessage
 # 497 "data/maps/Route135_Lab/scripts.pory"
@@ -1567,7 +1567,7 @@ Route135_Lab_Text_ManiacNo::
 
 Route135_Lab_Text_Maniac8::
 # 770 "data/maps/Route135_Lab/scripts.pory"
-	.string "Great work COSMOG!\n These discoveries are monumental!\p I must log all my findings this instant!\n Come with me, COSMOG!$"
+	.string "Great work, COSMOG!\n These discoveries are monumental!\p I must log all my findings this instant!\n Come with me, COSMOG!$"
 
 Route135_Lab_Text_Maniac9::
 # 777 "data/maps/Route135_Lab/scripts.pory"
@@ -1593,7 +1593,7 @@ Route135_Lab_Text_ManiacIntroduceAreaZero::
 # 860 "data/maps/Route135_Lab/scripts.pory"
 	.string "Ah, intern.\n Salutations.\p I assume JAMES provided you with the\n relevant information, yes?\p As you saw, COSMOG is capable of\n traversing the ULTRA SPACE at will.\p With extensive testing and research,\n we've been able to survey the ULTRA\l SPACE further.\p During these surveys, we came across\n another rift that seems to lead to\l another world…\p Seeing as you were crazy enough to\n walk across the sky, I presume you'd\l be open to being the first human to\l explore this new world, yes?$"
 
-Route135_Lab_Text_ManiacExplainCosmog::
+Route135_Lab_Text_ManiacExplainAreaZeroCosmog::
 # 879 "data/maps/Route135_Lab/scripts.pory"
 	.string "The camera I put on COSMOG showed that\n the world has a somewhat… strange\l composition.\p Although there are signs that it was\n once inhabited by humans, so it should\l be safe to traverse.\p COSMOG will be with you, so if you want\n to return to the lab, just ask it.\p Now, it is time! Godspeed, intern!\n COSMOG, if you will!$"
 

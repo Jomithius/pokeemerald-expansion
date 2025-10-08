@@ -13,8 +13,8 @@ script LavaridgeTown_House2_OldLady{
 }
 
 text LavaridgeTown_House2_Text_Lady2{
-    "Fufu.\n
-    She acts like she doesn't care, but\l
+    "Fufu.\p
+    She acts like she doesn't care, but\n
     she travels all the way from SLATEPORT\l
     CITY just to visit us all the time.\p
     Maybe she just loves her\n
@@ -33,7 +33,7 @@ script LavaridgeTown_House2_Lina{
     msgbox(LavaridgeTown_House2_Text_Lina, MSGBOX_YESNO)
     waitmessage
     if(var(VAR_RESULT) == YES ){
-        if(flag(FLAG_LINA_HOUSE_EEVEE) == TRUE ){
+        if(flag(FLAG_LINA_HOUSE_EEVEE) == TRUE){
             msgbox(LavaridgeTown_House2_Text_LinaEeveeStolen, MSGBOX_NPC)
         }
         else{
@@ -56,8 +56,8 @@ text LavaridgeTown_House2_Text_Lina{
 }
 
 text LavaridgeTown_House2_Text_LinaEeveeStolen{
-    "You know that's weird, right?\n
-    You're probably the reason that\l
+    "You know that's weird, right?\p
+    You're probably the reason that\n
     my EEVEE went missing too.\p
     Shoo!"
 }

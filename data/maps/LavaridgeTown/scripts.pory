@@ -401,8 +401,8 @@ LavaridgeTown_Text_TownSign:
 
 LavaridgeTown_Text_GymSign:
 	.string "LAVARIDGE TOWN POKéMON GYM\n"
-	.string "LEADER: KAIRYN\l"
-	.string "“Cooking with KAIRYN!”$"
+	.string "LEADER: KAI\l"
+	.string "“Cooking with KAI!”$"
 
 LavaridgeTown_Text_HerbShopSign:
 	.string "POKéMON HERB SHOP\n"

@@ -12,7 +12,8 @@ mapscripts Ultra_Space_MapScripts {
 }
 
 script Ultra_Space_UpdatePCMetatiles{
-    call_if_set(FLAG_DEFEATED_BLACEPHALON, Ultra_Space_EventScript_AddPC)
+    call_if_unset(FLAG_HIDE_JAMES_AND_PROF_ULTRA_SPACE, Ultra_Space_EventScript_AddPC)
+    call_if_unset(FLAG_HIDE_COSMOG_ULTRA_SPACE, Ultra_Space_EventScript_AddPC)
     end
 }
 
@@ -162,6 +163,7 @@ script Ultra_Space_EventScript_Blacephalon{
     waitse
     msgbox("JAMES: Look out!", MSGBOX_AUTOCLOSE)
     waitmessage
+    addobject(4) // in case player somehow wiped to blacephalon
     applymovement(17, Common_Movement_WalkInPlaceUp)
     waitmovement(17)
     playse(SE_PIN)
@@ -191,8 +193,8 @@ script Ultra_Space_EventScript_Blacephalon{
     delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
     waitmovement(0)
-    msgbox("JAMES: Here you go.\n
-        They should be effective at catching\l
+    msgbox("JAMES: Here you go.\p
+        They should be effective at catching\n
         POKéMON from the ULTRA SPACE.", MSGBOX_DEFAULT)
     giveitem(ITEM_BEAST_BALL, 50)
     waitmessage
@@ -221,7 +223,7 @@ script Ultra_Space_EventScript_Blacephalon{
     waitmovement(16)
     removeobject(16)
     removeobject(17)
-    clearflag(FLAG_DEFEATED_NECROZMA)
+    clearflag(FLAG_HIDE_JAMES_AND_PROF_ULTRA_SPACE)
     call(Ultra_Space_EventScript_AddPC)
     special(DrawWholeMapView)
     setvar(VAR_ULTRA_SPACE_STATE, 3)
@@ -263,6 +265,9 @@ script Ultra_Space_EventScript_AddPC{
 
 script Ultra_Space_EventScript_Necrozma{
     lockall
+    if(flag(FLAG_DEFEATED_NECROZMA)){
+        addobject(13) // if player somehow wipes to Necrozma
+    }
     fadenewbgm(MUS_NONE)
     delay(20)
     playse(SE_RG_DEOXYS_MOVE)
@@ -276,6 +281,7 @@ script Ultra_Space_EventScript_Necrozma{
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     fadedefaultbgm
+    setflag(FLAG_HIDE_JAMES_AND_PROF_ULTRA_SPACE) // for prof by pc and james facing north
     msgbox("{PLAYER}!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Ultra_Space_Movement_PlayerWalksDown)
@@ -700,15 +706,15 @@ movement Ultra_Space_Movement_JamesGoesToPermSpot{
 }
 
 movement Ultra_Space_Movement_JamesGoesToNecrozma{
-    walk_up * 6
+    walk_up * 4
     walk_right
-    walk_in_place_up
+    walk_up * 2
 }
 
 movement Ultra_Space_Movement_ManiacGoesToNecrozma{
-    walk_up * 7
+    walk_up * 3
     walk_left
-    walk_in_place_up
+    walk_up * 4
 }
 
 movement Ultra_Space_Movement_Cosmog{

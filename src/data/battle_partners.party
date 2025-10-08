@@ -50,21 +50,20 @@ Pic: Momo
 Gender: Female
 Music: Female
 
-Greninja (M) @ Wise Glasses 
-Ability: Protean
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
-Level: 95
-- Water Shuriken 
-- Grass Knot  
-- Dark Pulse  
-- Sludge Bomb
+Pikachu (F) @ Light Ball
+Ability: Static
+Level: 95 
+EVs: 252 Atk / 4 SpD / 252 Spe 
+Adamant Nature  
+- Nuzzle  
+- Volt Tackle  
+- Fake Out 
+- Play Rough
 
 Skeledirge @ Throat Spray 
 Ability: Unaware
 Level: 95  
-Shiny: Yes
-Tera Type: Water    
+Shiny: Yes  
 EVs: 248 HP / 8 SpA / 252 SpD  
 Calm Nature  
 IVs: 0 Atk  
@@ -95,12 +94,9 @@ Pikachu (F) @ Mirror Herb
 Ability: Static
 Level: 100  
 EVs: 252 Atk / 4 SpD / 252 Spe 
-Tera Type: Flying
 Adamant Nature  
-- Nuzzle  
 - Volt Tackle  
 - Fake Out 
-- Play Rough
 
 Skeledirge @ Throat Spray 
 Ability: Unaware

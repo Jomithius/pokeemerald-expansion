@@ -116,4 +116,4 @@ MtPyre_Exterior_Dave_House_Text_Fantasia::
 
 MtPyre_Exterior_Dave_House_Text_WarnFantasia::
 # 88 "data/maps/MtPyre_Exterior_Dave_House/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}WARNING\p Using the FANTASIA may cause a few\n minor bugs.\p Check the README for more details.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}DAVE: If we have to battle in the\n future, do me a favor and lose, okay?$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}WARNING\p Using the FANTASIA may cause a few\n very minor bugs.\p Check the README for more details.\p After using the FANTASIA, your\n character needs to be reloaded\l by entering a new map to see the\l effects of FANTASIA.\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}DAVE: If we have to battle in the\n future, do me a favor and lose, okay?$"

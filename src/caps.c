@@ -19,7 +19,6 @@ u32 GetCurrentLevelCap(void)
         {FLAG_BADGE08_GET, 60}, // was 46
         {FLAG_DEFEATED_JAMES_EVERGRANDE, 65}, // was 50
         {FLAG_IS_CHAMPION, 75},
-        //{FLAG_COMPLETED_BALDESIA, 90}, // for momo's partner battle
     };
 
     u32 i;

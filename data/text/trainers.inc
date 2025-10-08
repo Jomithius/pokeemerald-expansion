@@ -1554,7 +1554,7 @@ Route113_Text_MadelineIntro:
 	.string "my dear NUMEL.$"
 
 Route113_Text_MadelineDefeat:
-	.string "Huff, huff…\n"
+	.string "Huff… Huff…\n"
 	.string "I am exhausted…$"
 
 Route113_Text_MadelinePostBattle:
@@ -2459,8 +2459,8 @@ Route118_Text_PerryIntro:
 	.string "the sky… They're the best!$"
 
 Route118_Text_PerryDefeat:
-	.string "What?\n"
-	.string "“I don't even have a bird?”$"
+	.string "Huh? What do you mean I\n"
+	.string "“don't even have a bird”?$"
 
 Route118_Text_PerryPostBattle:
 	.string "You've got great POKéMON.\n"

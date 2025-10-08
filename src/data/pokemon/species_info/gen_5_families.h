@@ -5815,7 +5815,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sYamaskGalarTeachableLearnset,
         .eggMoveLearnset = sYamaskGalarEggMoveLearnset,
         .formSpeciesIdTable = sYamaskFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_SCRIPT_TRIGGER_DMG, 49, SPECIES_RUNERIGUS}),
+        .evolutions = EVOLUTION({EVO_SPECIFIC_MAP, MAP_MIRAGE_TOWER_1F, SPECIES_RUNERIGUS},
+                                {EVO_SPECIFIC_MAP, MAP_MIRAGE_TOWER_2F, SPECIES_RUNERIGUS},
+                                {EVO_SPECIFIC_MAP, MAP_MIRAGE_TOWER_3F, SPECIES_RUNERIGUS},
+                                {EVO_SPECIFIC_MAP, MAP_MIRAGE_TOWER_4F, SPECIES_RUNERIGUS},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_RUNERIGUS}),
     },
 
     [SPECIES_RUNERIGUS] =
@@ -10900,7 +10904,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 45,
         .expYield = 172,
         .evYield_Attack = 2,
-        .itemRare = ITEM_LEADERS_CREST,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 35,
@@ -10952,7 +10955,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sBisharpLevelUpLearnset,
         .teachableLearnset = sBisharpTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_DEFEAT_THREE_WITH_ITEM, ITEM_LEADERS_CREST, SPECIES_KINGAMBIT}),
+        .evolutions = EVOLUTION({EVO_ITEM_HOLD, ITEM_LEADERS_CREST, SPECIES_KINGAMBIT}),
     },
 
 #if P_GEN_9_CROSS_EVOS

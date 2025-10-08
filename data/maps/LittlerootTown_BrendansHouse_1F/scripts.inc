@@ -935,4 +935,4 @@ PlayersHouse_1F_EventScript_GameClearMessage::
 
 PlayersHouse_1F_EventScript_GameClearMessage_Text_0:
 # 465 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "Thank you for playing AZURE EMERALD!\p For stats on your playthrough and\n checks if you missed anything, JIMMY\l is in SNOWDRIFT CITY.$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Thank you for playing AZURE EMERALD!\p For stats on your playthrough and\n checks if you missed anything, JIMMY\l is in SNOWDRIFT CITY.$"

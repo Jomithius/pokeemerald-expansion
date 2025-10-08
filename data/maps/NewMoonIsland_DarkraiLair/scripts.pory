@@ -28,6 +28,7 @@ script NewMoonIsland_DarkraiLair_EventScript_Darkrai{
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
 		goto(Common_EventScript_NopReturn)
+        end
     }
     msgbox(NewMoonIsland_DarkraiLair_Text_PostDarkrai, MSGBOX_AUTOCLOSE)
     waitmessage
@@ -45,7 +46,6 @@ script NewMoonIsland_DarkraiLair_EventScript_Darkrai{
     delay(90)
     setrespawn(HEAL_LOCATION_THE_UNDER)
     goto_if_eq(VAR_RAT_CAVE_STATE, 8, NewMoonIsland_DarkraiLair_TryUpdateRatCaveState)
-    clearflag(FLAG_HIDE_MAN_THE_UNDER_CANYON_LAKE)
     warpsilent(MAP_THE_UNDER_HOUSE, 11, 2)
     waitstate
 	release

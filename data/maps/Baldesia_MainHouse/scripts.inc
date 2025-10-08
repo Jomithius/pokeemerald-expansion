@@ -48,7 +48,7 @@ Baldesia_MainHouse_EventScript_TurnPlayerNorth::
 
 Baldesia_MainHouse_UpdateNPCPos::
 # 40 "data/maps/Baldesia_MainHouse/scripts.pory"
-	setobjectxyperm 7, 16, 10
+	setobjectxyperm 7, 14, 10
 # 41 "data/maps/Baldesia_MainHouse/scripts.pory"
 	setobjectmovementtype 7, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
 # 42 "data/maps/Baldesia_MainHouse/scripts.pory"

@@ -1,6 +1,8 @@
 NewMoonIsland_House4_MapScripts::
 # 2 "data/maps/NewMoonIsland_House4/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, NewMoonIsland_House4_OnTransition
+# 3 "data/maps/NewMoonIsland_House4/scripts.pory"
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	.byte 0
 
 

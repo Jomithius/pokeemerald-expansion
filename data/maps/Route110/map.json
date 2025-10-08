@@ -893,6 +893,33 @@
       "var": "VAR_SPEEDWAGON_STATE",
       "var_value": "5",
       "script": "Route110_EventScript_PolicemanHelpTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 78,
+      "elevation": 0,
+      "var": "VAR_SLATEPORT_GYM_STATE",
+      "var_value": "0",
+      "script": "Route110_EventScript_ChallengeSlateportGym"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 78,
+      "elevation": 0,
+      "var": "VAR_SLATEPORT_GYM_STATE",
+      "var_value": "0",
+      "script": "Route110_EventScript_ChallengeSlateportGym"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 78,
+      "elevation": 0,
+      "var": "VAR_SLATEPORT_GYM_STATE",
+      "var_value": "0",
+      "script": "Route110_EventScript_ChallengeSlateportGym"
     }
   ],
   "bg_events": [
