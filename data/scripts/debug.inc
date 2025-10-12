@@ -138,15 +138,17 @@ Debug_EventScript_Text_DefensiveIVs:
 
 Debug_EventScript_Script_1::
 	setflag FLAG_LANDMARK_THE_UNDER
-	setflag FLAG_LANDMARK_ROUTE135
-	setflag FLAG_LANDMARK_WACHUNPELON
-	setflag FLAG_LANDMARK_BALDESIA 
-	setflag FLAG_LANDMARK_SNOWDRIFT_CITY
+	@ setflag FLAG_LANDMARK_ROUTE135
+	@ setflag FLAG_LANDMARK_WACHUNPELON
+	@ setflag FLAG_LANDMARK_BALDESIA 
+	@ setflag FLAG_LANDMARK_SNOWDRIFT_CITY
 	setflag FLAG_SYS_POKENAV_GET
 	setflag FLAG_HAS_MATCH_CALL
 	setflag FLAG_SYS_STAT_EDIT_GET
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
+	@ playfanfare MUS_OBTAIN_ITEM
+	@ waitfanfare
+	warp MAP_THE_UNDER, 9, 43
+	waitstate
 	release
 	end
 

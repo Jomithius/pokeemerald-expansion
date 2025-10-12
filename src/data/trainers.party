@@ -18291,9 +18291,8 @@ Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire   
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
-- Flamethrower 
-- Hidden Power
+- Heat Wave
+- Endure
 - Earth Power  
 - Overheat  
 
@@ -38285,9 +38284,7 @@ Typhlosion (M) @ Typhlosionite
 Ability: Flash Fire 
 EVs: 252 HP / 64 SpA  
 Timid Nature  
-IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
-- Heat Wave  
-- Hidden Power 
+- Lava Plume
 - Earth Power  
 - Overheat  
 

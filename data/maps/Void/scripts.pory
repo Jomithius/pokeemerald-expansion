@@ -129,8 +129,8 @@ script Void_EventScript_GameEnd{
     playbgm(MUS_THE_DAY_WILL_COME, FALSE)
     applymovement(1, Common_Movement_WalkInPlaceUp)
     waitmovement(1)
-    msgbox("JIMMY: … I knew you could do it,\n
-        {PLAYER}.", MSGBOX_AUTOCLOSE)
+    msgbox("JIMMY: …\n
+        I knew you could do it, {PLAYER}.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(1, Common_Movement_WalkInPlaceDown)
     waitmovement(1)

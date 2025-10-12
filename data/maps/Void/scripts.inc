@@ -351,7 +351,7 @@ Void_EventScript_FinalBattle2_Text_1:
 
 Void_EventScript_GameEnd_Text_0:
 # 132 "data/maps/Void/scripts.pory"
-	.string "JIMMY: … I knew you could do it,\n {PLAYER}.$"
+	.string "JIMMY: …\n I knew you could do it, {PLAYER}.$"
 
 Void_EventScript_GameEnd_Text_1:
 # 139 "data/maps/Void/scripts.pory"
