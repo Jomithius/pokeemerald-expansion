@@ -1111,7 +1111,7 @@ RustboroCity_Text_YoureLoadedWithItems:
 	.string "I can't give you this GREAT BALL.$"
 
 RustboroCity_Text_PleaseComeWithMe:
-	.string "Excuse me, please!\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Excuse me, please!\n"
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister:
@@ -1516,7 +1516,7 @@ script RustboroCity_EventScript_ImportanceOfStatEditor{
 }
 
 text RustboroCity_Text_ExplainExpShare{
-	"The EXP. SHARE is a very useful item\n
+	"{COLOR BLUE}{SHADOW LIGHT_BLUE}The EXP. SHARE is a very useful item\n
 	that gives all your POKéMON EXP. Points\l
 	from battles.\p
 	To use it, just turn it on in the KEY\n

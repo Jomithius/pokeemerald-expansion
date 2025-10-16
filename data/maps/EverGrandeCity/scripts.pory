@@ -373,7 +373,7 @@ text EverGrandeCity_Text_James5{
 }
 
 text EverGrandeCity_Text_James6{
-    "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Well, I'm gonna go back home for now.\n
+    "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: I'm gonna go back home for now.\n
     See ya, {PLAYER}."
 }
 

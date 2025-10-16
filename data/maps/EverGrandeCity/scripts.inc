@@ -642,4 +642,4 @@ EverGrandeCity_Text_James5::
 
 EverGrandeCity_Text_James6::
 # 375 "data/maps/EverGrandeCity/scripts.pory"
-	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Well, I'm gonna go back home for now.\n See ya, {PLAYER}.$"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: I'm gonna go back home for now.\n See ya, {PLAYER}.$"

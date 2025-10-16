@@ -25,6 +25,7 @@ script Ratduardo1_BattleTrigger{
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerRatCave3)
     waitmovement(0)
     delay(60)
+    addobject(7)
     applymovement(7, RattataRun)
     delay(15)
     playmoncry(SPECIES_RATTATA, CRY_MODE_ENCOUNTER)

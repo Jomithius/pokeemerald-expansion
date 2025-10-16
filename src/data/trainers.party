@@ -19251,9 +19251,9 @@ Raticate (M) @ Oran Berry
 Ability: Hustle  
 EVs: 80 Atk / 152 Spe  
 Level: 18  
-- Pursuit  
+- Assurance  
 - Quick Attack  
-- Headbutt
+- Fury Swipes
 
 Raticate-Alola-Totem (M) @ Oran Berry  
 Ability: Thick Fat 
@@ -19262,7 +19262,6 @@ EVs: 20 Atk / 152 Spe
 Jolly Nature  
 - Bite  
 - Quick Attack  
-- Swagger  
 
 === TRAINER_ASAK ===
 Name: ASAK
@@ -39214,7 +39213,7 @@ Ability: Run Away
 Level: 16  
 IVs: 18 HP / 15 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe  
 - Bite  
-- Headbutt
+- Quick Attack
 
 Raticate-Alola-Totem (M) @ Oran Berry  
 Ability: Thick Fat 

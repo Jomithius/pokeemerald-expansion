@@ -2225,7 +2225,7 @@ RustboroCity_Text_YoureLoadedWithItems:
 # 1113 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_PleaseComeWithMe:
 # 1114 "data/maps/RustboroCity/scripts.pory"
-	.string "Excuse me, please!\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Excuse me, please!\n"
 # 1115 "data/maps/RustboroCity/scripts.pory"
 	.string "Please come with me!$"
 # 1116 "data/maps/RustboroCity/scripts.pory"
@@ -3023,4 +3023,4 @@ RustboroMisa5::
 
 RustboroCity_Text_ExplainExpShare::
 # 1518 "data/maps/RustboroCity/scripts.pory"
-	.string "The EXP. SHARE is a very useful item\n that gives all your POKéMON EXP. Points\l from battles.\p To use it, just turn it on in the KEY\n ITEMS section of your bag.$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The EXP. SHARE is a very useful item\n that gives all your POKéMON EXP. Points\l from battles.\p To use it, just turn it on in the KEY\n ITEMS section of your bag.$"

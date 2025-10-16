@@ -82,7 +82,7 @@ MisaHouse1F_1::
 
 MisaHouse1F_2::
 # 66 "data/maps/RustboroCity_Misa_House1F/scripts.pory"
-	.string "I'll be leaving soon too.\p I took time off because I was worried\n about JAMES, but now I'll be heading\l back to work in EVER GRANDE CITY.$"
+	.string "MISA: I'll be leaving soon too.\p I took time off because I was worried\n about JAMES, but now I'll be heading\l back to work in EVER GRANDE CITY.$"
 
 MisaHouse1F_3::
 # 71 "data/maps/RustboroCity_Misa_House1F/scripts.pory"

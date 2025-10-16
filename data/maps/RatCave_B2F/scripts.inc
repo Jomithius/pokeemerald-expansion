@@ -45,148 +45,150 @@ Ratduardo1_BattleTrigger::
 # 27 "data/maps/RatCave_B2F/scripts.pory"
 	delay 60
 # 28 "data/maps/RatCave_B2F/scripts.pory"
-	applymovement 7, RattataRun
+	addobject 7
 # 29 "data/maps/RatCave_B2F/scripts.pory"
-	delay 15
+	applymovement 7, RattataRun
 # 30 "data/maps/RatCave_B2F/scripts.pory"
-	playmoncry SPECIES_RATTATA, CRY_MODE_ENCOUNTER
+	delay 15
 # 31 "data/maps/RatCave_B2F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerRatCave4
+	playmoncry SPECIES_RATTATA, CRY_MODE_ENCOUNTER
 # 32 "data/maps/RatCave_B2F/scripts.pory"
-	waitmovement 0
-# 33 "data/maps/RatCave_B2F/scripts.pory"
-	delay 120
-# 34 "data/maps/RatCave_B2F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerRatCave5
-# 35 "data/maps/RatCave_B2F/scripts.pory"
-	waitmovement 0
-# 36 "data/maps/RatCave_B2F/scripts.pory"
-	delay 60
-# 37 "data/maps/RatCave_B2F/scripts.pory"
-	playmoncry SPECIES_RATICATE, CRY_MODE_ENCOUNTER
-# 38 "data/maps/RatCave_B2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PlayerRatCave4
-# 39 "data/maps/RatCave_B2F/scripts.pory"
+# 33 "data/maps/RatCave_B2F/scripts.pory"
 	waitmovement 0
+# 34 "data/maps/RatCave_B2F/scripts.pory"
+	delay 120
+# 35 "data/maps/RatCave_B2F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerRatCave5
+# 36 "data/maps/RatCave_B2F/scripts.pory"
+	waitmovement 0
+# 37 "data/maps/RatCave_B2F/scripts.pory"
+	delay 60
+# 38 "data/maps/RatCave_B2F/scripts.pory"
+	playmoncry SPECIES_RATICATE, CRY_MODE_ENCOUNTER
+# 39 "data/maps/RatCave_B2F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerRatCave4
 # 40 "data/maps/RatCave_B2F/scripts.pory"
-	fadescreenspeed FADE_TO_BLACK, 2
+	waitmovement 0
 # 41 "data/maps/RatCave_B2F/scripts.pory"
-	removeobject 7
+	fadescreenspeed FADE_TO_BLACK, 2
 # 42 "data/maps/RatCave_B2F/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 2
+	removeobject 7
 # 43 "data/maps/RatCave_B2F/scripts.pory"
-	delay 10
-# 44 "data/maps/RatCave_B2F/scripts.pory"
-	fadescreenspeed FADE_TO_BLACK, 2
-# 45 "data/maps/RatCave_B2F/scripts.pory"
-	addobject 5
-# 46 "data/maps/RatCave_B2F/scripts.pory"
 	fadescreenspeed FADE_FROM_BLACK, 2
-# 47 "data/maps/RatCave_B2F/scripts.pory"
-	trainerbattle_no_intro TRAINER_RATDUARDO_1, Ratduardo_Outro
-# 48 "data/maps/RatCave_B2F/scripts.pory"
+# 44 "data/maps/RatCave_B2F/scripts.pory"
+	delay 10
+# 45 "data/maps/RatCave_B2F/scripts.pory"
 	fadescreenspeed FADE_TO_BLACK, 2
+# 46 "data/maps/RatCave_B2F/scripts.pory"
+	addobject 5
+# 47 "data/maps/RatCave_B2F/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 2
+# 48 "data/maps/RatCave_B2F/scripts.pory"
+	trainerbattle_no_intro TRAINER_RATDUARDO_1, Ratduardo_Outro
 # 49 "data/maps/RatCave_B2F/scripts.pory"
-	removeobject 5
+	fadescreenspeed FADE_TO_BLACK, 2
 # 50 "data/maps/RatCave_B2F/scripts.pory"
-	fadescreenspeed FADE_FROM_BLACK, 3
+	removeobject 5
 # 51 "data/maps/RatCave_B2F/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 3
+# 52 "data/maps/RatCave_B2F/scripts.pory"
 	msgbox Ratduardo1_BattleTrigger_Text_0, MSGBOX_AUTOCLOSE
-# 53 "data/maps/RatCave_B2F/scripts.pory"
-	waitmessage
 # 54 "data/maps/RatCave_B2F/scripts.pory"
-	setflag FLAG_RATDUARDO_RAT_CAVE_1
+	waitmessage
 # 55 "data/maps/RatCave_B2F/scripts.pory"
-	call RatCaveShake
+	setflag FLAG_RATDUARDO_RAT_CAVE_1
 # 56 "data/maps/RatCave_B2F/scripts.pory"
-	setvar VAR_RAT_CAVE_STATE, 4
+	call RatCaveShake
 # 57 "data/maps/RatCave_B2F/scripts.pory"
+	setvar VAR_RAT_CAVE_STATE, 4
+# 58 "data/maps/RatCave_B2F/scripts.pory"
 	releaseall
 	end
 
 
-# 61 "data/maps/RatCave_B2F/scripts.pory"
+# 62 "data/maps/RatCave_B2F/scripts.pory"
 PlayerRatCave1:
-# 62 "data/maps/RatCave_B2F/scripts.pory"
-	walk_up
-# 62 "data/maps/RatCave_B2F/scripts.pory"
-	walk_up
-# 62 "data/maps/RatCave_B2F/scripts.pory"
-	walk_up
-# 62 "data/maps/RatCave_B2F/scripts.pory"
+# 63 "data/maps/RatCave_B2F/scripts.pory"
 	walk_up
 # 63 "data/maps/RatCave_B2F/scripts.pory"
+	walk_up
+# 63 "data/maps/RatCave_B2F/scripts.pory"
+	walk_up
+# 63 "data/maps/RatCave_B2F/scripts.pory"
+	walk_up
+# 64 "data/maps/RatCave_B2F/scripts.pory"
 	walk_in_place_fast_left
 	step_end
 
-# 66 "data/maps/RatCave_B2F/scripts.pory"
-PlayerRatCave2:
 # 67 "data/maps/RatCave_B2F/scripts.pory"
+PlayerRatCave2:
+# 68 "data/maps/RatCave_B2F/scripts.pory"
 	walk_in_place_fast_right
 	step_end
 
-# 70 "data/maps/RatCave_B2F/scripts.pory"
-PlayerRatCave3:
 # 71 "data/maps/RatCave_B2F/scripts.pory"
+PlayerRatCave3:
+# 72 "data/maps/RatCave_B2F/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 74 "data/maps/RatCave_B2F/scripts.pory"
-PlayerRatCave4:
 # 75 "data/maps/RatCave_B2F/scripts.pory"
-	emote_exclamation_mark
+PlayerRatCave4:
 # 76 "data/maps/RatCave_B2F/scripts.pory"
+	emote_exclamation_mark
+# 77 "data/maps/RatCave_B2F/scripts.pory"
 	face_down
 	step_end
 
-# 79 "data/maps/RatCave_B2F/scripts.pory"
+# 80 "data/maps/RatCave_B2F/scripts.pory"
 PlayerRatCave5:
-# 80 "data/maps/RatCave_B2F/scripts.pory"
+# 81 "data/maps/RatCave_B2F/scripts.pory"
 	walk_up
-# 80 "data/maps/RatCave_B2F/scripts.pory"
+# 81 "data/maps/RatCave_B2F/scripts.pory"
 	walk_up
-# 80 "data/maps/RatCave_B2F/scripts.pory"
+# 81 "data/maps/RatCave_B2F/scripts.pory"
 	walk_up
 	step_end
 
-# 83 "data/maps/RatCave_B2F/scripts.pory"
+# 84 "data/maps/RatCave_B2F/scripts.pory"
 RattataRun:
-# 84 "data/maps/RatCave_B2F/scripts.pory"
+# 85 "data/maps/RatCave_B2F/scripts.pory"
 	walk_fast_left
-# 84 "data/maps/RatCave_B2F/scripts.pory"
+# 85 "data/maps/RatCave_B2F/scripts.pory"
 	walk_fast_left
-# 84 "data/maps/RatCave_B2F/scripts.pory"
+# 85 "data/maps/RatCave_B2F/scripts.pory"
 	walk_fast_left
-# 84 "data/maps/RatCave_B2F/scripts.pory"
+# 85 "data/maps/RatCave_B2F/scripts.pory"
 	walk_fast_left
-# 84 "data/maps/RatCave_B2F/scripts.pory"
+# 85 "data/maps/RatCave_B2F/scripts.pory"
 	walk_fast_left
-# 84 "data/maps/RatCave_B2F/scripts.pory"
+# 85 "data/maps/RatCave_B2F/scripts.pory"
 	walk_fast_left
 	step_end
 
 RatCaveShake::
-# 92 "data/maps/RatCave_B2F/scripts.pory"
-	delay 30
 # 93 "data/maps/RatCave_B2F/scripts.pory"
-	setvar VAR_0x8004, 2
+	delay 30
 # 94 "data/maps/RatCave_B2F/scripts.pory"
-	setvar VAR_0x8005, 6
+	setvar VAR_0x8004, 2
 # 95 "data/maps/RatCave_B2F/scripts.pory"
-	setvar VAR_0x8006, 8
+	setvar VAR_0x8005, 6
 # 96 "data/maps/RatCave_B2F/scripts.pory"
-	setvar VAR_0x8007, 4
+	setvar VAR_0x8006, 8
 # 97 "data/maps/RatCave_B2F/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 4
 # 98 "data/maps/RatCave_B2F/scripts.pory"
-	waitstate
-# 99 "data/maps/RatCave_B2F/scripts.pory"
-	delay 60
-# 100 "data/maps/RatCave_B2F/scripts.pory"
 	special ShakeCamera
-# 101 "data/maps/RatCave_B2F/scripts.pory"
+# 99 "data/maps/RatCave_B2F/scripts.pory"
 	waitstate
+# 100 "data/maps/RatCave_B2F/scripts.pory"
+	delay 60
+# 101 "data/maps/RatCave_B2F/scripts.pory"
+	special ShakeCamera
 # 102 "data/maps/RatCave_B2F/scripts.pory"
+	waitstate
+# 103 "data/maps/RatCave_B2F/scripts.pory"
 	delay 60
 	return
 
@@ -196,9 +198,9 @@ Petalburg_RatCave_Rock_Text_0:
 	.string "Doesn't look like the cave in \n can be cleared anytime soon.$"
 
 Ratduardo1_BattleTrigger_Text_0:
-# 51 "data/maps/RatCave_B2F/scripts.pory"
+# 52 "data/maps/RatCave_B2F/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes:\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… try… to follow…$"
 
 Ratduardo_Outro::
-# 87 "data/maps/RatCave_B2F/scripts.pory"
+# 88 "data/maps/RatCave_B2F/scripts.pory"
 	.string "…$"

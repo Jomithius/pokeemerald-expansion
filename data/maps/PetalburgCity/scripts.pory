@@ -896,7 +896,7 @@ text PetalburgCity_LunaText2{
 	And it looks like they somehow got\n
 	into my house when I was away.\p
 	The exterminators couldn't handle it,\n
-    but a POKéMON TRAINER should be fine.\p
+    but a TRAINER should be fine.\p
 	I'd do it myself, but I have a very\n
 	important person I need to meet with."
 }
@@ -909,10 +909,8 @@ text PetalburgCity_LunaText3{
 
 script PetalburgCity_EventScript_Exterminator{
 	lock
-	applymovement(10, PetalburgCityFacePlayer)
-	waitmovement(10)
-	msgbox("Sorry, we got people in\n
-	there working right now.", MSGBOX_NPC)
+	faceplayer
+	msgbox("Sorry, we got people in there working\nright now.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release
 	end

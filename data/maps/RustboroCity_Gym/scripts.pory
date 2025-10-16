@@ -136,7 +136,7 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "STEVE, the GYM LEADER, is a\n"
 	.string "firefighter.\p"
 	.string "He uses a variety of POKéMON, but\n"
-	.string "his ace POKéMON is a fire type.\l"
+	.string "his ace POKéMON is a FIRE-type.\l"
 	.string "Isn't that ironic?\p"
 	.string "Come see me afterwards, if you beat\n"
 	.string "the GYM LEADER.\p"
@@ -197,7 +197,7 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "I became a GYM LEADER after my days\n"
 	.string "serving our region.\l"
 	.string "All right. I'm all fired up!\p"
-	.string "Come on! Show me you and your\n"
+	.string "Come on! Show me your\n"
 	.string "POKéMON's burning spirit!$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
