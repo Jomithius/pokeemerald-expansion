@@ -5311,9 +5311,9 @@ EVs: 140 SpA / 4 SpD / 252 Spe
 Timid Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Will-O-Wisp 
-- Flame Burst  
+- Burning Jealousy
 - Extrasensory  
-- Hidden Power 
+- Swift
 
 Fletchinder (M) @ Sitrus Berry  
 Ability: Gale Wings  
@@ -5343,14 +5343,14 @@ Modest Nature
 IVs: 0 Atk  
 - Growth  
 - Synthesis  
-- Sludge Bomb  
+- Venoshock
 - Giga Drain  
 
 Braixen @ Eviolite  
 Ability: Blaze  
 Level: 34  
 EVs: 20 Def / 240 SpA / 248 Spe  
-Timid Nature  
+Serious Nature  
 IVs: 0 Atk  
 - Overheat  
 - Psyshock  
@@ -5639,15 +5639,15 @@ IVs: 0 Atk
 - Signal Beam  
 - Icy Wind  
 
-Dragapult (M) @ Heavy-Duty Boots  
-Ability: Infiltrator  
+Mismagius (M) @ Wise Glasses
+Ability: Levitate
 Level: 60 
-EVs: 140 HP / 252 SpA / 8 SpD / 108 Spe  
-Modest Nature  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
 IVs: 0 Atk  
-- Dragon Pulse  
-- Hex  
-- Flamethrower  
+- Will-O-Wisp  
+- Shadow Ball 
+- Mystical Fire  
 - Thunderbolt  
 
 Bruce Wayne (Mawile) (M) @ Life Orb  
@@ -16175,16 +16175,16 @@ Jolly Nature
 - Knock Off  
 - U-turn  
 
-Reuniclus (M) @ Leftovers  
-Ability: Magic Guard  
-Tera Type: Electric  
-EVs: 252 HP / 4 SpA / 252 SpD  
-Calm Nature  
+Dragapult (M) @ Dragon Fang
+Ability: Infiltrator
+Tera Type: Dragon
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
 IVs: 0 Atk  
-- Psyshock  
-- Calm Mind  
-- Reflect  
-- Recover  
+- Dragon Darts 
+- Phantom Force  
+- U-turn
+- Sucker Punch
 
 Iron Boulder @ Booster Energy  
 Ability: Quark Drive  
@@ -25011,7 +25011,7 @@ Ability: Drought
 Level: 33 
 Timid Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 25 SpA / 31 SpD / 31 Spe
-- Flame Burst  
+- Incinerate 
 - Extrasensory  
 
 Fletchinder (M) @ Sitrus Berry  
@@ -25035,11 +25035,11 @@ Ability: Chlorophyll
 Level: 33 
 Modest Nature  
 IVs: 0 Atk  
-- Sludge Bomb  
+- Venoshock
 - Giga Drain  
 
 Braixen @ Eviolite  
-Ability: Blaze  
+Ability: Magician
 Level: 33 
 Timid Nature  
 IVs: 0 Atk  
@@ -25307,15 +25307,15 @@ IVs: 0 Atk
 - Signal Beam  
 - Icy Wind  
 
-Dragapult (M) @ Heavy-Duty Boots  
-Ability: Infiltrator  
-Level: 60   
+Mismagius (M) @ Wise Glasses
+Ability: Levitate
+Level: 60 
 EVs: 192 HP  
-Modest Nature  
+Timid Nature  
 IVs: 0 Atk  
-- Dragon Pulse  
-- Hex  
-- Flamethrower  
+- Will-O-Wisp  
+- Shadow Ball 
+- Mystical Fire  
 - Thunderbolt  
 
 Bruce Wayne (Mawile) (M) @ Life Orb  
@@ -36175,15 +36175,15 @@ Jolly Nature
 - Knock Off  
 - U-turn  
 
-Reuniclus (M) @ Leftovers  
-Ability: Magic Guard
+Dragapult (M) @ White Herb
+Ability: Infiltrator
 EVs: 252 HP / 4 SpD   
-Tera Type: Electric  
-Calm Nature  
+Tera Type: Dragon  
+Modest Nature  
 IVs: 0 Atk  
-- Psyshock  
-- Reflect  
-- Recover  
+- Draco Meteor
+- Shadow Ball
+- Thunderbolt
 
 Iron Boulder
 Ability: Quark Drive 

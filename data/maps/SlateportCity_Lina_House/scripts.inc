@@ -211,7 +211,7 @@ Lina_House_EventScript_TV_Text_2:
 
 SlateportCity_Lina_House_EventScript_LinasFursuit_Text_0:
 # 106 "data/maps/SlateportCity_Lina_House/scripts.pory"
-	.string "A very realistic… suit?\n ……………\p There's a letter attached to\n the front:\p “Valued patron, thank you for your\n continued support of our work.”\p “We hope you enjoy this fur suit as\n thanks for being a top supporter.”$"
+	.string "A very realistic… suit?\n ……………\p There's a letter attached to\n the front:\p “Valued patron, thank you for your\n continued support of our work.\p “We hope you enjoy this fur suit as\n thanks for being a top supporter.”$"
 
 LinaHouse_NotChosen::
 # 66 "data/maps/SlateportCity_Lina_House/scripts.pory"
