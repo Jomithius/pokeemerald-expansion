@@ -109,7 +109,7 @@ script SlateportCity_Lina_House_EventScript_LinasFursuit{
         the front:\p
         “Valued patron, thank you for your\n
         continued support of our work.\p
-        We hope you enjoy this fur suit as\n
+        “We hope you enjoy this fur suit as\n
         thanks for being a top supporter.”", MSGBOX_AUTOCLOSE)
     waitmessage
     release

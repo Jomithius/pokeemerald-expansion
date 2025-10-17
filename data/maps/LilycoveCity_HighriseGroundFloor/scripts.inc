@@ -184,7 +184,7 @@ LilycoveCity_HighriseGroundFloor_Text_Attendant::
 
 LilycoveCity_HighriseGroundFloor_Text_AttendantHardMode::
 # 68 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"
-	.string "Welcome, {PLAYER}.\n We have been expecting you.\p Please accept this gift from the CEO\n for becoming CHAMPION, along with\l this added message:\p “I'm really impressed with the skill\n that you've shown in your battles.\p You truly are one of the best\n TRAINERS in the region.\p In respect for your skill, take\n this extra gift.”$"
+	.string "Welcome, {PLAYER}.\n We have been expecting you.\p Please accept this gift from the CEO\n for becoming CHAMPION, along with\l this added message:\p “I'm really impressed with the skill\n that you've shown in your battles.\p “You truly are one of the best\n TRAINERS in the region.\p “In respect for your skill, take\n this extra gift.”$"
 
 LilycoveCity_HighriseGroundFloor_Text_StaffEmployee::
 # 101 "data/maps/LilycoveCity_HighriseGroundFloor/scripts.pory"

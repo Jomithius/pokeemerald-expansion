@@ -709,7 +709,7 @@ Route117_MisaHello::
 
 Route117_Text_MisaFlowers::
 # 325 "data/maps/Route117/scripts.pory"
-	.string "I still have a bit of vacation\n time, so I'm taking a scenic route back.\p I just love the flowers here!$"
+	.string "I still have a bit of vacation time, so\n I'm taking the scenic route back.\p I just love the flowers here!$"
 
 Route117_MisaAnotherTime::
 # 331 "data/maps/Route117/scripts.pory"

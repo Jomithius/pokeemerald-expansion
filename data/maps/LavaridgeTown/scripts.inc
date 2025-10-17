@@ -593,7 +593,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 # 297 "data/maps/LavaridgeTown/scripts.pory"
 	.string "want to lose to me, I bet!\p"
 # 298 "data/maps/LavaridgeTown/scripts.pory"
-	.string "{PLAYER}{KUN}, I think I should challenge\n"
+	.string "{PLAYER}{KUN}, I think you should challenge\n"
 # 299 "data/maps/LavaridgeTown/scripts.pory"
 	.string "LUNA in PETALBURG GYM.\p"
 # 300 "data/maps/LavaridgeTown/scripts.pory"

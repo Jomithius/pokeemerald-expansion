@@ -307,7 +307,7 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     delay(6)
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    msgbox("ARIA: All it said was “beefy ritual”!\n
+    msgbox("ARIA: All it said was “beefy BERTHA”!\n
         How am I supposed to know what that \l
         means?\p
         I'm lucky that you told BALDASARIO\n

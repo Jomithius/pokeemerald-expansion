@@ -389,6 +389,7 @@ script DojoBattleTrigger{
     waitmovement(0)
     applymovement(2, faceup)
     waitmovement(2)
+    waitse
     applymovement(3, BennisMove1)
     waitmovement(3)
     applymovement(1, AsakMove2)

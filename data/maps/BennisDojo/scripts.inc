@@ -542,58 +542,60 @@ DojoBattleTrigger_4:
 # 391 "data/maps/BennisDojo/scripts.pory"
 	waitmovement 2
 # 392 "data/maps/BennisDojo/scripts.pory"
-	applymovement 3, BennisMove1
+	waitse
 # 393 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 3
+	applymovement 3, BennisMove1
 # 394 "data/maps/BennisDojo/scripts.pory"
-	applymovement 1, AsakMove2
+	waitmovement 3
 # 395 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 1
+	applymovement 1, AsakMove2
 # 396 "data/maps/BennisDojo/scripts.pory"
-	msgbox Asak3, MSGBOX_AUTOCLOSE
+	waitmovement 1
 # 397 "data/maps/BennisDojo/scripts.pory"
-	waitmessage
+	msgbox Asak3, MSGBOX_AUTOCLOSE
 # 398 "data/maps/BennisDojo/scripts.pory"
-	applymovement 1, facedown
+	waitmessage
 # 399 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 1
+	applymovement 1, facedown
 # 400 "data/maps/BennisDojo/scripts.pory"
-	msgbox Asak3_5, MSGBOX_DEFAULT
-# 401 "data/maps/BennisDojo/scripts.pory"
-	waitmessage
-# 402 "data/maps/BennisDojo/scripts.pory"
-	msgbox DojoBattleTrigger_Text_7, MSGBOX_AUTOCLOSE
-# 404 "data/maps/BennisDojo/scripts.pory"
-	waitmessage
-# 405 "data/maps/BennisDojo/scripts.pory"
-	applymovement 1, AsakMove3
-# 406 "data/maps/BennisDojo/scripts.pory"
 	waitmovement 1
-# 407 "data/maps/BennisDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceright
-# 408 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 0
-# 409 "data/maps/BennisDojo/scripts.pory"
-	msgbox Asak4, MSGBOX_AUTOCLOSE
-# 410 "data/maps/BennisDojo/scripts.pory"
+# 401 "data/maps/BennisDojo/scripts.pory"
+	msgbox Asak3_5, MSGBOX_DEFAULT
+# 402 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
+# 403 "data/maps/BennisDojo/scripts.pory"
+	msgbox DojoBattleTrigger_Text_7, MSGBOX_AUTOCLOSE
+# 405 "data/maps/BennisDojo/scripts.pory"
+	waitmessage
+# 406 "data/maps/BennisDojo/scripts.pory"
+	applymovement 1, AsakMove3
+# 407 "data/maps/BennisDojo/scripts.pory"
+	waitmovement 1
+# 408 "data/maps/BennisDojo/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, faceright
+# 409 "data/maps/BennisDojo/scripts.pory"
+	waitmovement 0
+# 410 "data/maps/BennisDojo/scripts.pory"
+	msgbox Asak4, MSGBOX_AUTOCLOSE
 # 411 "data/maps/BennisDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceleft
+	waitmessage
 # 412 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, faceleft
 # 413 "data/maps/BennisDojo/scripts.pory"
-	applymovement 2, faceright
-# 414 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 2
-# 415 "data/maps/BennisDojo/scripts.pory"
-	msgbox DojoBattleTrigger_Text_8, MSGBOX_AUTOCLOSE
-# 416 "data/maps/BennisDojo/scripts.pory"
-	setvar VAR_BENNIS_DOJO_STATE, 1
-# 417 "data/maps/BennisDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceup
-# 418 "data/maps/BennisDojo/scripts.pory"
 	waitmovement 0
+# 414 "data/maps/BennisDojo/scripts.pory"
+	applymovement 2, faceright
+# 415 "data/maps/BennisDojo/scripts.pory"
+	waitmovement 2
+# 416 "data/maps/BennisDojo/scripts.pory"
+	msgbox DojoBattleTrigger_Text_8, MSGBOX_AUTOCLOSE
+# 417 "data/maps/BennisDojo/scripts.pory"
+	setvar VAR_BENNIS_DOJO_STATE, 1
+# 418 "data/maps/BennisDojo/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, faceup
 # 419 "data/maps/BennisDojo/scripts.pory"
+	waitmovement 0
+# 420 "data/maps/BennisDojo/scripts.pory"
 	goto BennisBattleStart
 	end
 
@@ -609,427 +611,427 @@ DojoBattleTrigger_5:
 
 
 Dojo_EarlierAnswerNO::
-# 424 "data/maps/BennisDojo/scripts.pory"
-	lockall
 # 425 "data/maps/BennisDojo/scripts.pory"
-	playse SE_PIN
+	lockall
 # 426 "data/maps/BennisDojo/scripts.pory"
-	applymovement 1, exclaim
+	playse SE_PIN
 # 427 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 1
+	applymovement 1, exclaim
 # 428 "data/maps/BennisDojo/scripts.pory"
-	waitse
-# 429 "data/maps/BennisDojo/scripts.pory"
-	applymovement 1, AsakMove1
-# 430 "data/maps/BennisDojo/scripts.pory"
 	waitmovement 1
+# 429 "data/maps/BennisDojo/scripts.pory"
+	waitse
+# 430 "data/maps/BennisDojo/scripts.pory"
+	applymovement 1, AsakMove1
 # 431 "data/maps/BennisDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceright
+	waitmovement 1
 # 432 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, faceright
 # 433 "data/maps/BennisDojo/scripts.pory"
-	msgbox Dojo_EarlierAnswerNO_Text_0, MSGBOX_AUTOCLOSE
+	waitmovement 0
 # 434 "data/maps/BennisDojo/scripts.pory"
-	applymovement 2, PaniniMove1
+	msgbox Dojo_EarlierAnswerNO_Text_0, MSGBOX_AUTOCLOSE
 # 435 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 0
+	applymovement 2, PaniniMove1
 # 436 "data/maps/BennisDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceleft
+	waitmovement 0
 # 437 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, faceleft
 # 438 "data/maps/BennisDojo/scripts.pory"
-	msgbox DojoBattleTrigger_Text_3, MSGBOX_AUTOCLOSE
-# 439 "data/maps/BennisDojo/scripts.pory"
-	delay 20
-# 440 "data/maps/BennisDojo/scripts.pory"
-	applymovement 3, BennisMove1
-# 441 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 3
-# 442 "data/maps/BennisDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceup
-# 443 "data/maps/BennisDojo/scripts.pory"
 	waitmovement 0
+# 439 "data/maps/BennisDojo/scripts.pory"
+	msgbox DojoBattleTrigger_Text_3, MSGBOX_AUTOCLOSE
+# 440 "data/maps/BennisDojo/scripts.pory"
+	delay 20
+# 441 "data/maps/BennisDojo/scripts.pory"
+	applymovement 3, BennisMove1
+# 442 "data/maps/BennisDojo/scripts.pory"
+	waitmovement 3
+# 443 "data/maps/BennisDojo/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, faceup
 # 444 "data/maps/BennisDojo/scripts.pory"
+	waitmovement 0
+# 445 "data/maps/BennisDojo/scripts.pory"
 	goto BennisBattleStart
 	end
 
 
 BennisBattleStart::
-# 449 "data/maps/BennisDojo/scripts.pory"
-	lockall
 # 450 "data/maps/BennisDojo/scripts.pory"
-	msgbox BennisBattleStart_Text_0, MSGBOX_YESNO
+	lockall
 # 451 "data/maps/BennisDojo/scripts.pory"
+	msgbox BennisBattleStart_Text_0, MSGBOX_YESNO
+# 452 "data/maps/BennisDojo/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BennisBattleStart_2
-# 458 "data/maps/BennisDojo/scripts.pory"
-	msgbox BennisIfNo, MSGBOX_AUTOCLOSE
 # 459 "data/maps/BennisDojo/scripts.pory"
-	waitmessage
+	msgbox BennisIfNo, MSGBOX_AUTOCLOSE
 # 460 "data/maps/BennisDojo/scripts.pory"
-	applymovement 3, BennisLeave
+	waitmessage
 # 461 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 3
+	applymovement 3, BennisLeave
 # 462 "data/maps/BennisDojo/scripts.pory"
-	applymovement 2, PaniniLeave
+	waitmovement 3
 # 463 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 2
+	applymovement 2, PaniniLeave
 # 464 "data/maps/BennisDojo/scripts.pory"
-	applymovement 1, AsakLeave
+	waitmovement 2
 # 465 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 1
+	applymovement 1, AsakLeave
 # 466 "data/maps/BennisDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerLeaves
+	waitmovement 1
 # 467 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerLeaves
 # 468 "data/maps/BennisDojo/scripts.pory"
-	warp MAP_DEWFORD_TOWN, 8, 18
+	waitmovement 0
 # 469 "data/maps/BennisDojo/scripts.pory"
+	warp MAP_DEWFORD_TOWN, 8, 18
+# 470 "data/maps/BennisDojo/scripts.pory"
 	waitstate
 BennisBattleStart_1:
-# 471 "data/maps/BennisDojo/scripts.pory"
+# 472 "data/maps/BennisDojo/scripts.pory"
 	releaseall
 	end
 
 BennisBattleStart_2:
-# 452 "data/maps/BennisDojo/scripts.pory"
-	msgbox Bennis_Intro, MSGBOX_AUTOCLOSE
 # 453 "data/maps/BennisDojo/scripts.pory"
-	trainerbattle_no_intro TRAINER_BENNIS_1, Bennis_Outro
+	msgbox Bennis_Intro, MSGBOX_AUTOCLOSE
 # 454 "data/maps/BennisDojo/scripts.pory"
-	waitmessage
+	trainerbattle_no_intro TRAINER_BENNIS_1, Bennis_Outro
 # 455 "data/maps/BennisDojo/scripts.pory"
+	waitmessage
+# 456 "data/maps/BennisDojo/scripts.pory"
 	goto BennisEnd
 	goto BennisBattleStart_1
 
 
 BennisEnd::
-# 476 "data/maps/BennisDojo/scripts.pory"
-	lockall
 # 477 "data/maps/BennisDojo/scripts.pory"
-	msgbox Bennis2, MSGBOX_DEFAULT
+	lockall
 # 478 "data/maps/BennisDojo/scripts.pory"
-	waitmessage
+	msgbox Bennis2, MSGBOX_DEFAULT
 # 479 "data/maps/BennisDojo/scripts.pory"
-	msgbox BennisEnd_Text_0, MSGBOX_AUTOCLOSE
+	waitmessage
 # 480 "data/maps/BennisDojo/scripts.pory"
-	waitmessage
+	msgbox BennisEnd_Text_0, MSGBOX_AUTOCLOSE
 # 481 "data/maps/BennisDojo/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceright
-# 482 "data/maps/BennisDojo/scripts.pory"
-	waitmovement 0
-# 483 "data/maps/BennisDojo/scripts.pory"
-	msgbox Asak5, MSGBOX_AUTOCLOSE
-# 484 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
+# 482 "data/maps/BennisDojo/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, faceright
+# 483 "data/maps/BennisDojo/scripts.pory"
+	waitmovement 0
+# 484 "data/maps/BennisDojo/scripts.pory"
+	msgbox Asak5, MSGBOX_AUTOCLOSE
 # 485 "data/maps/BennisDojo/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	waitmessage
 # 486 "data/maps/BennisDojo/scripts.pory"
-	delay 8
+	playbgm MUS_DUMMY, FALSE
 # 487 "data/maps/BennisDojo/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	delay 8
 # 488 "data/maps/BennisDojo/scripts.pory"
-	playse SE_FLEE
+	fadescreenswapbuffers FADE_TO_BLACK
 # 489 "data/maps/BennisDojo/scripts.pory"
-	setflag FLAG_BENNIS_DOJO_1
+	playse SE_FLEE
 # 490 "data/maps/BennisDojo/scripts.pory"
-	setvar VAR_BENNIS_DOJO_STATE, 2
+	setflag FLAG_BENNIS_DOJO_1
 # 491 "data/maps/BennisDojo/scripts.pory"
-	setvar VAR_SLATEPORT_GYM_STATE, 0
+	setvar VAR_BENNIS_DOJO_STATE, 2
 # 492 "data/maps/BennisDojo/scripts.pory"
-	removeobject 1
+	setvar VAR_SLATEPORT_GYM_STATE, 0
 # 493 "data/maps/BennisDojo/scripts.pory"
-	removeobject 2
+	removeobject 1
 # 494 "data/maps/BennisDojo/scripts.pory"
-	removeobject 3
+	removeobject 2
 # 495 "data/maps/BennisDojo/scripts.pory"
-	waitse
+	removeobject 3
 # 496 "data/maps/BennisDojo/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	waitse
 # 497 "data/maps/BennisDojo/scripts.pory"
-	delay 24
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 498 "data/maps/BennisDojo/scripts.pory"
-	fadedefaultbgm
+	delay 24
 # 499 "data/maps/BennisDojo/scripts.pory"
+	fadedefaultbgm
+# 500 "data/maps/BennisDojo/scripts.pory"
 	releaseall
 	end
 
 
-# 503 "data/maps/BennisDojo/scripts.pory"
-exclaim:
 # 504 "data/maps/BennisDojo/scripts.pory"
+exclaim:
+# 505 "data/maps/BennisDojo/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 507 "data/maps/BennisDojo/scripts.pory"
+# 508 "data/maps/BennisDojo/scripts.pory"
 AsakMove1:
-# 508 "data/maps/BennisDojo/scripts.pory"
-	walk_fast_left
-# 508 "data/maps/BennisDojo/scripts.pory"
-	walk_fast_left
-# 508 "data/maps/BennisDojo/scripts.pory"
-	walk_fast_left
-# 508 "data/maps/BennisDojo/scripts.pory"
+# 509 "data/maps/BennisDojo/scripts.pory"
 	walk_fast_left
 # 509 "data/maps/BennisDojo/scripts.pory"
-	walk_fast_down
+	walk_fast_left
+# 509 "data/maps/BennisDojo/scripts.pory"
+	walk_fast_left
+# 509 "data/maps/BennisDojo/scripts.pory"
+	walk_fast_left
 # 510 "data/maps/BennisDojo/scripts.pory"
+	walk_fast_down
+# 511 "data/maps/BennisDojo/scripts.pory"
 	face_player
 	step_end
 
-# 524 "data/maps/BennisDojo/scripts.pory"
+# 525 "data/maps/BennisDojo/scripts.pory"
 PaniniMove1:
-# 525 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 525 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 525 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 525 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 525 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 525 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 525 "data/maps/BennisDojo/scripts.pory"
+# 526 "data/maps/BennisDojo/scripts.pory"
 	walk_down
 # 526 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 526 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 526 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 526 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 526 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 526 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 527 "data/maps/BennisDojo/scripts.pory"
 	face_player
 	step_end
 
-# 532 "data/maps/BennisDojo/scripts.pory"
+# 533 "data/maps/BennisDojo/scripts.pory"
 BennisMove1:
-# 533 "data/maps/BennisDojo/scripts.pory"
+# 534 "data/maps/BennisDojo/scripts.pory"
 	walk_down
-# 533 "data/maps/BennisDojo/scripts.pory"
+# 534 "data/maps/BennisDojo/scripts.pory"
 	walk_down
-# 533 "data/maps/BennisDojo/scripts.pory"
+# 534 "data/maps/BennisDojo/scripts.pory"
 	walk_down
-# 533 "data/maps/BennisDojo/scripts.pory"
+# 534 "data/maps/BennisDojo/scripts.pory"
 	walk_down
-# 533 "data/maps/BennisDojo/scripts.pory"
+# 534 "data/maps/BennisDojo/scripts.pory"
 	walk_down
 	step_end
 
-# 568 "data/maps/BennisDojo/scripts.pory"
-faceup:
 # 569 "data/maps/BennisDojo/scripts.pory"
+faceup:
+# 570 "data/maps/BennisDojo/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 572 "data/maps/BennisDojo/scripts.pory"
-faceleft:
 # 573 "data/maps/BennisDojo/scripts.pory"
+faceleft:
+# 574 "data/maps/BennisDojo/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 576 "data/maps/BennisDojo/scripts.pory"
-faceright:
 # 577 "data/maps/BennisDojo/scripts.pory"
+faceright:
+# 578 "data/maps/BennisDojo/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 579 "data/maps/BennisDojo/scripts.pory"
-facedown:
 # 580 "data/maps/BennisDojo/scripts.pory"
+facedown:
+# 581 "data/maps/BennisDojo/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 583 "data/maps/BennisDojo/scripts.pory"
+# 584 "data/maps/BennisDojo/scripts.pory"
 PlayerLeaves:
-# 584 "data/maps/BennisDojo/scripts.pory"
+# 585 "data/maps/BennisDojo/scripts.pory"
 	walk_down
-# 584 "data/maps/BennisDojo/scripts.pory"
+# 585 "data/maps/BennisDojo/scripts.pory"
 	walk_down
-# 584 "data/maps/BennisDojo/scripts.pory"
+# 585 "data/maps/BennisDojo/scripts.pory"
 	walk_down
 	step_end
 
-# 587 "data/maps/BennisDojo/scripts.pory"
+# 588 "data/maps/BennisDojo/scripts.pory"
 AsakMove2:
-# 588 "data/maps/BennisDojo/scripts.pory"
-	walk_fast_up
-# 588 "data/maps/BennisDojo/scripts.pory"
+# 589 "data/maps/BennisDojo/scripts.pory"
 	walk_fast_up
 # 589 "data/maps/BennisDojo/scripts.pory"
+	walk_fast_up
+# 590 "data/maps/BennisDojo/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 592 "data/maps/BennisDojo/scripts.pory"
-AsakMove3:
 # 593 "data/maps/BennisDojo/scripts.pory"
+AsakMove3:
+# 594 "data/maps/BennisDojo/scripts.pory"
 	walk_fast_right
-# 594 "data/maps/BennisDojo/scripts.pory"
-	walk_fast_down
-# 594 "data/maps/BennisDojo/scripts.pory"
+# 595 "data/maps/BennisDojo/scripts.pory"
 	walk_fast_down
 # 595 "data/maps/BennisDojo/scripts.pory"
+	walk_fast_down
+# 596 "data/maps/BennisDojo/scripts.pory"
 	face_player
 	step_end
 
-# 598 "data/maps/BennisDojo/scripts.pory"
-AsakLeave:
 # 599 "data/maps/BennisDojo/scripts.pory"
+AsakLeave:
+# 600 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 600 "data/maps/BennisDojo/scripts.pory"
-	walk_right
-# 600 "data/maps/BennisDojo/scripts.pory"
-	walk_right
-# 600 "data/maps/BennisDojo/scripts.pory"
-	walk_right
-# 600 "data/maps/BennisDojo/scripts.pory"
+# 601 "data/maps/BennisDojo/scripts.pory"
 	walk_right
 # 601 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 601 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 601 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 602 "data/maps/BennisDojo/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 604 "data/maps/BennisDojo/scripts.pory"
+# 605 "data/maps/BennisDojo/scripts.pory"
 PaniniLeave:
-# 605 "data/maps/BennisDojo/scripts.pory"
+# 606 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 605 "data/maps/BennisDojo/scripts.pory"
+# 606 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 605 "data/maps/BennisDojo/scripts.pory"
+# 606 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 605 "data/maps/BennisDojo/scripts.pory"
+# 606 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 605 "data/maps/BennisDojo/scripts.pory"
+# 606 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 605 "data/maps/BennisDojo/scripts.pory"
+# 606 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 605 "data/maps/BennisDojo/scripts.pory"
+# 606 "data/maps/BennisDojo/scripts.pory"
 	walk_up
 	step_end
 
-# 608 "data/maps/BennisDojo/scripts.pory"
+# 609 "data/maps/BennisDojo/scripts.pory"
 BennisLeave:
-# 609 "data/maps/BennisDojo/scripts.pory"
+# 610 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 609 "data/maps/BennisDojo/scripts.pory"
+# 610 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 609 "data/maps/BennisDojo/scripts.pory"
+# 610 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 609 "data/maps/BennisDojo/scripts.pory"
+# 610 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 609 "data/maps/BennisDojo/scripts.pory"
+# 610 "data/maps/BennisDojo/scripts.pory"
 	walk_up
 	step_end
 
-# 612 "data/maps/BennisDojo/scripts.pory"
-BennisDojo_Movement_AsakReturns:
 # 613 "data/maps/BennisDojo/scripts.pory"
+BennisDojo_Movement_AsakReturns:
+# 614 "data/maps/BennisDojo/scripts.pory"
 	walk_right
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
-	walk_up
-# 614 "data/maps/BennisDojo/scripts.pory"
+# 615 "data/maps/BennisDojo/scripts.pory"
 	walk_up
 # 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 615 "data/maps/BennisDojo/scripts.pory"
+	walk_up
+# 616 "data/maps/BennisDojo/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 618 "data/maps/BennisDojo/scripts.pory"
+# 619 "data/maps/BennisDojo/scripts.pory"
 BennisDojo_Movement_AsakReturnsEast:
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
-# 619 "data/maps/BennisDojo/scripts.pory"
+# 620 "data/maps/BennisDojo/scripts.pory"
 	walk_up
 	step_end
 
-# 622 "data/maps/BennisDojo/scripts.pory"
+# 623 "data/maps/BennisDojo/scripts.pory"
 BennisDojo_Movement_AsakReturnsOriginalSpot:
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 623 "data/maps/BennisDojo/scripts.pory"
+# 624 "data/maps/BennisDojo/scripts.pory"
 	walk_down
 # 624 "data/maps/BennisDojo/scripts.pory"
-	walk_right
+	walk_down
 # 624 "data/maps/BennisDojo/scripts.pory"
-	walk_right
+	walk_down
 # 624 "data/maps/BennisDojo/scripts.pory"
-	walk_right
+	walk_down
 # 624 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 624 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 624 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 624 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 624 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 624 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 625 "data/maps/BennisDojo/scripts.pory"
 	walk_right
 # 625 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 625 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 625 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 626 "data/maps/BennisDojo/scripts.pory"
 	face_down
 	step_end
 
-# 628 "data/maps/BennisDojo/scripts.pory"
+# 629 "data/maps/BennisDojo/scripts.pory"
 BennisDojo_Movement_AsakReturnsOriginalSpotEast:
-# 629 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 629 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 629 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 629 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 629 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 629 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 629 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 629 "data/maps/BennisDojo/scripts.pory"
-	walk_down
-# 629 "data/maps/BennisDojo/scripts.pory"
+# 630 "data/maps/BennisDojo/scripts.pory"
 	walk_down
 # 630 "data/maps/BennisDojo/scripts.pory"
-	walk_right
+	walk_down
 # 630 "data/maps/BennisDojo/scripts.pory"
-	walk_right
+	walk_down
 # 630 "data/maps/BennisDojo/scripts.pory"
-	walk_right
+	walk_down
 # 630 "data/maps/BennisDojo/scripts.pory"
-	walk_right
+	walk_down
 # 630 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 630 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 630 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 630 "data/maps/BennisDojo/scripts.pory"
+	walk_down
+# 631 "data/maps/BennisDojo/scripts.pory"
 	walk_right
 # 631 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 631 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 631 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 631 "data/maps/BennisDojo/scripts.pory"
+	walk_right
+# 632 "data/maps/BennisDojo/scripts.pory"
 	face_down
 	step_end
 
@@ -1170,73 +1172,73 @@ DojoBattleTrigger_Text_6:
 	.string "???: What's all this noise?$"
 
 DojoBattleTrigger_Text_7:
-# 402 "data/maps/BennisDojo/scripts.pory"
+# 403 "data/maps/BennisDojo/scripts.pory"
 	.string "MASTER BENNIS: Hm.\n  I'll take you on.$"
 
 DojoBattleTrigger_Text_8:
-# 415 "data/maps/BennisDojo/scripts.pory"
+# 416 "data/maps/BennisDojo/scripts.pory"
 	.string "PANINI: Pani!$"
 
 Dojo_EarlierAnswerNO_Text_0:
-# 433 "data/maps/BennisDojo/scripts.pory"
+# 434 "data/maps/BennisDojo/scripts.pory"
 	.string "ASAK: Back again?!$"
 
 BennisBattleStart_Text_0:
-# 450 "data/maps/BennisDojo/scripts.pory"
+# 451 "data/maps/BennisDojo/scripts.pory"
 	.string "MASTER BENNIS: Are you ready now?$"
 
 BennisEnd_Text_0:
-# 479 "data/maps/BennisDojo/scripts.pory"
+# 480 "data/maps/BennisDojo/scripts.pory"
 	.string "PANINI: P-Panini?!$"
 
 Asak1::
-# 513 "data/maps/BennisDojo/scripts.pory"
+# 514 "data/maps/BennisDojo/scripts.pory"
 	.string "Who are you? Another goofball TRAINER?\n Didn't you see the sign?\p How rude of you to barge into our dojo\n when MASTER BENNIS is meditating.\p I guess I'll have to teach you a lesson!$"
 
 Asak_Outro::
-# 520 "data/maps/BennisDojo/scripts.pory"
+# 521 "data/maps/BennisDojo/scripts.pory"
 	.string "I lost my focus…$"
 
 Panini_Outro::
-# 522 "data/maps/BennisDojo/scripts.pory"
+# 523 "data/maps/BennisDojo/scripts.pory"
 	.string "Panini?!$"
 
 Asak2::
-# 529 "data/maps/BennisDojo/scripts.pory"
+# 530 "data/maps/BennisDojo/scripts.pory"
 	.string "ASAK: Show this hooligan what happens\n when you challenge our dojo!$"
 
 AsakPaniniLoss::
-# 536 "data/maps/BennisDojo/scripts.pory"
+# 537 "data/maps/BennisDojo/scripts.pory"
 	.string "ASAK: WHAT?! Even though I'VE never\n even beaten Panini…$"
 
 Asak3::
-# 540 "data/maps/BennisDojo/scripts.pory"
+# 541 "data/maps/BennisDojo/scripts.pory"
 	.string "ASAK: MASTER BENNIS! I'm sorry for\n disturbing you.\p This TRAINER was intruding on\n our dojo.$"
 
 Asak3_5::
-# 545 "data/maps/BennisDojo/scripts.pory"
+# 546 "data/maps/BennisDojo/scripts.pory"
 	.string "We tried to get rid of them, but\n I'm ashamed to say we were no match.$"
 
 Asak4::
-# 548 "data/maps/BennisDojo/scripts.pory"
+# 549 "data/maps/BennisDojo/scripts.pory"
 	.string "ASAK: Ha! It's over for you now.\n MASTER BENNIS has NEVER lost!$"
 
 BennisIfNo::
-# 551 "data/maps/BennisDojo/scripts.pory"
+# 552 "data/maps/BennisDojo/scripts.pory"
 	.string "Hm.\n Don't keep me waiting too long.$"
 
 Bennis_Intro::
-# 554 "data/maps/BennisDojo/scripts.pory"
+# 555 "data/maps/BennisDojo/scripts.pory"
 	.string "Oho. I'm gettin' good vibrations from\n this place.$"
 
 Bennis_Outro::
-# 559 "data/maps/BennisDojo/scripts.pory"
+# 560 "data/maps/BennisDojo/scripts.pory"
 	.string "Everyone's so mean to me…$"
 
 Bennis2::
-# 561 "data/maps/BennisDojo/scripts.pory"
+# 562 "data/maps/BennisDojo/scripts.pory"
 	.string "MASTER BENNIS: Hm… Beefy.$"
 
 Asak5::
-# 563 "data/maps/BennisDojo/scripts.pory"
+# 564 "data/maps/BennisDojo/scripts.pory"
 	.string "ASAK: This can't be…\n Even MASTER BENNIS…\p ASAK: W-We won't forget this\n humiliation!$"

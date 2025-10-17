@@ -1392,7 +1392,7 @@ Baldesia_MainHouse_EventScript_GoToAltar_Text_6:
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_7:
 # 310 "data/maps/Baldesia_MainHouse/scripts.pory"
-	.string "ARIA: All it said was “beefy ritual”!\n How am I supposed to know what that \l means?\p I'm lucky that you told BALDASARIO\n where you were actually going!$"
+	.string "ARIA: All it said was “beefy BERTHA”!\n How am I supposed to know what that \l means?\p I'm lucky that you told BALDASARIO\n where you were actually going!$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_8:
 # 331 "data/maps/Baldesia_MainHouse/scripts.pory"

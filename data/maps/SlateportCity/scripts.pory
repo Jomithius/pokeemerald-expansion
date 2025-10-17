@@ -1408,13 +1408,14 @@ script SlateportCity_EventScript_Mae{
     waitmovement(36)
     applymovement(36, SlateportFacePlayer)
     waitmovement(36)
+	waitse
     msgbox(Mae2, MSGBOX_AUTOCLOSE)
     waitmessage
     trainerbattle_no_intro(TRAINER_MAE_1, Mae_Outro)
     playse(SE_PIN)
     applymovement(20, MaeSurprised)
     waitmovement(20)
-    delay(10)
+    waitse
     applymovement(20, SlateportMartEmployeeMove1)
     msgbox(SlateportMartEmployee1, MSGBOX_AUTOCLOSE)
     waitmessage

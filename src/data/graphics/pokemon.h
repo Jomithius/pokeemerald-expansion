@@ -26739,7 +26739,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
     const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");
-
+    
+    const u8 gMonIcon_TotodilePartner[] = INCBIN_U8("graphics/pokemon/totodile/icon_partner.4bpp");
     const u32 gMonFrontPic_Totoknight[] = INCBIN_U32("graphics/pokemon/totoknight/front.4bpp.lz");
     const u32 gMonPalette_Totoknight[] = INCBIN_U32("graphics/pokemon/totoknight/normal.gbapal.lz");
     const u32 gMonBackPic_Totoknight[] = INCBIN_U32("graphics/pokemon/totoknight/back.4bpp.lz");

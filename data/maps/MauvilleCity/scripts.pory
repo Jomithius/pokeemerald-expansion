@@ -1073,8 +1073,8 @@ script MauvilleCity_EventScript_BikerLeft{ // for route 112, i was just lazy
 	msgbox("The boss is going to be here\n
 		soon, right?", MSGBOX_AUTOCLOSE)
 	waitmessage
-	applymovement(49, Common_Movement_WalkInPlaceLeft)
-	waitmovement(49)
+	applymovement(47, Common_Movement_WalkInPlaceLeft)
+	waitmovement(47)
 	msgbox("Yeah…\p
 		I think that pig's still\n
 		on our trail.\p
@@ -1102,8 +1102,8 @@ script MauvilleCity_EventScript_BikerRight{ // for route 112, i was just lazy
 	msgbox("The boss is going to be here\n
 		soon, right?", MSGBOX_AUTOCLOSE)
 	waitmessage
-	applymovement(49, Common_Movement_WalkInPlaceLeft)
-	waitmovement(49)
+	applymovement(47, Common_Movement_WalkInPlaceLeft)
+	waitmovement(47)
 	msgbox("Yeah…\p
 		I think that pig's still\n
 		on our trail.\p

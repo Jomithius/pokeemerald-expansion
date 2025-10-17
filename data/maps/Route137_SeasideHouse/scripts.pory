@@ -47,7 +47,7 @@ script Route137_SeasideHouse_EventScript_GiveCasteliaCone{
         It goes:\p
         “Three golems: first ice, rock, and\n
         then steel.\p
-        Next, a cold nickname bags an item\n
+        “Next, a cold nickname bags an item\n
         that awakens the sluggish ruler.”\p
         Isn't that weird?", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -64,11 +64,10 @@ script Route137_SeasideHouse_EventScript_Misa{
     faceplayer
     msgbox("There's a weird legend I heard.\n
         It goes:\p
-        “Three golems: one ice, one rock, and\n
-        one steel.\l
-        One cold nickname and one cold item\l
-        will awaken the golems' sluggish ruler\l
-        in the once cold cave.”\p
+        “Three golems: first ice, rock, and\n
+        then steel.\p
+        “Next, a cold nickname bags an item\n
+        that awakens the sluggish ruler.”\p
         Isn't that weird?", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)

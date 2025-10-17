@@ -85,86 +85,86 @@ Route137_SeasideHouse_EventScript_Misa::
 # 64 "data/maps/Route137_SeasideHouse/scripts.pory"
 	faceplayer
 # 65 "data/maps/Route137_SeasideHouse/scripts.pory"
-	msgbox Route137_SeasideHouse_EventScript_Misa_Text_0, MSGBOX_AUTOCLOSE
-# 73 "data/maps/Route137_SeasideHouse/scripts.pory"
+	msgbox Route137_SeasideHouse_EventScript_GiveCasteliaCone_Text_1, MSGBOX_AUTOCLOSE
+# 72 "data/maps/Route137_SeasideHouse/scripts.pory"
 	waitmessage
-# 74 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 73 "data/maps/Route137_SeasideHouse/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 75 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 74 "data/maps/Route137_SeasideHouse/scripts.pory"
 	waitmovement 0
-# 76 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 75 "data/maps/Route137_SeasideHouse/scripts.pory"
 	release
 	end
 
 
 Route137_SeasideHouse_EventScript_Daca::
-# 81 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 80 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Daca_Text_0, MSGBOX_NPC
 	end
 
 
 Route137_SeasideHouse_EventScript_Tuber_M::
-# 87 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 86 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Tuber_M_Text_0, MSGBOX_NPC
 	end
 
 
 Route137_SeasideHouse_EventScript_Tuber_F::
-# 94 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 93 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Tuber_F_Text_0, MSGBOX_NPC
 	end
 
 
 Route137_SeasideHouse_EventScript_Woman_4::
-# 100 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 99 "data/maps/Route137_SeasideHouse/scripts.pory"
 	lock
-# 101 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 100 "data/maps/Route137_SeasideHouse/scripts.pory"
 	applymovement 5, Common_Movement_FaceRight
-# 102 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 101 "data/maps/Route137_SeasideHouse/scripts.pory"
 	waitmovement 5
-# 103 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 102 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Woman_4_Text_0, MSGBOX_DEFAULT
+# 104 "data/maps/Route137_SeasideHouse/scripts.pory"
+	waitmessage
 # 105 "data/maps/Route137_SeasideHouse/scripts.pory"
-	waitmessage
-# 106 "data/maps/Route137_SeasideHouse/scripts.pory"
 	faceplayer
-# 107 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 106 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Woman_4_Text_1, MSGBOX_AUTOCLOSE
-# 108 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 107 "data/maps/Route137_SeasideHouse/scripts.pory"
 	waitmessage
-# 109 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 108 "data/maps/Route137_SeasideHouse/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 110 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 109 "data/maps/Route137_SeasideHouse/scripts.pory"
 	waitmovement 0
 	end
 
 
 Route137_SeasideHouse_EventScript_Beauty::
-# 115 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 114 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Beauty_Text_0, MSGBOX_NPC
 	end
 
 
 Route137_SeasideHouse_EventScript_FatMan::
-# 121 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 120 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_FatMan_Text_0, MSGBOX_NPC
 	end
 
 
 Route137_SeasideHouse_EventScript_Man::
-# 126 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 125 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Man_Text_0, MSGBOX_NPC
 	end
 
 
 Route137_SeasideHouse_EventScript_Man_4::
-# 133 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 132 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Man_4_Text_0, MSGBOX_NPC
 	end
 
 
 Route137_SeasideHouse_EventScript_Gentleman::
-# 140 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 139 "data/maps/Route137_SeasideHouse/scripts.pory"
 	msgbox Route137_SeasideHouse_EventScript_Gentleman_Text_0, MSGBOX_NPC
 	end
 
@@ -175,48 +175,44 @@ Route137_SeasideHouse_EventScript_GiveCasteliaCone_Text_0:
 
 Route137_SeasideHouse_EventScript_GiveCasteliaCone_Text_1:
 # 46 "data/maps/Route137_SeasideHouse/scripts.pory"
-	.string "There's a weird legend I heard.\n It goes:\p “Three golems: first ice, rock, and\n then steel.\p Next, a cold nickname bags an item\n that awakens the sluggish ruler.”\p Isn't that weird?$"
-
-Route137_SeasideHouse_EventScript_Misa_Text_0:
-# 65 "data/maps/Route137_SeasideHouse/scripts.pory"
-	.string "There's a weird legend I heard.\n It goes:\p “Three golems: one ice, one rock, and\n one steel.\l One cold nickname and one cold item\l will awaken the golems' sluggish ruler\l in the once cold cave.”\p Isn't that weird?$"
+	.string "There's a weird legend I heard.\n It goes:\p “Three golems: first ice, rock, and\n then steel.\p “Next, a cold nickname bags an item\n that awakens the sluggish ruler.”\p Isn't that weird?$"
 
 Route137_SeasideHouse_EventScript_Daca_Text_0:
-# 81 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 80 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "Hahaha!\n It's an ice cream party!$"
 
 Route137_SeasideHouse_EventScript_Tuber_M_Text_0:
-# 87 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 86 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "I SCREAM FOR ICE CREAM!\p AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!$"
 
 Route137_SeasideHouse_EventScript_Tuber_F_Text_0:
-# 94 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 93 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "Ice cream! Ice cream!\n Ice cream! Ice cream!$"
 
 Route137_SeasideHouse_EventScript_Woman_4_Text_0:
-# 103 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 102 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "Yes, yes! You'll get ice cream!\n And you! Stop screaming!$"
 
 Route137_SeasideHouse_EventScript_Woman_4_Text_1:
-# 107 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 106 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "It's hard being a single mom.$"
 
 Route137_SeasideHouse_EventScript_Beauty_Text_0:
-# 115 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 114 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "I know it's bad for my figure…\n But I just love ice cream.$"
 
 Route137_SeasideHouse_EventScript_FatMan_Text_0:
-# 121 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 120 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "I come here every day.$"
 
 Route137_SeasideHouse_EventScript_Man_Text_0:
-# 126 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 125 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "So this ice cream comes all the\n way from UNOVA, huh…\p I heard the LEAGUE's CEO is from there.$"
 
 Route137_SeasideHouse_EventScript_Man_4_Text_0:
-# 133 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 132 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "I live in LUSH ACREAGE.\p The ice cream here uses milk from the\n MILTANKS we raise.$"
 
 Route137_SeasideHouse_EventScript_Gentleman_Text_0:
-# 140 "data/maps/Route137_SeasideHouse/scripts.pory"
+# 139 "data/maps/Route137_SeasideHouse/scripts.pory"
 	.string "I came all the way from UNOVA\n to start expanding my business.\p I'm glad it's going so well here!$"

@@ -1459,12 +1459,12 @@
               {
                 "min_level": 18,
                 "max_level": 20,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_DITTO"
               },
               {
                 "min_level": 18,
                 "max_level": 20,
-                "species": "SPECIES_MORELULL"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 18,
@@ -1489,7 +1489,7 @@
               {
                 "min_level": 18,
                 "max_level": 20,
-                "species": "SPECIES_TANGELA"
+                "species": "SPECIES_VOLBEAT"
               }
             ]
           },

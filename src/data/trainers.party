@@ -4980,6 +4980,7 @@ IVs: 0 Atk
 Meganium (F) @ Meganiumite 
 Ability: Overgrow  
 Level: 75   
+Shiny: Yes
 EVs: 252 HP / 252 SpA / 4 SpD   
 Modest Nature  
 - Sludge Bomb 
@@ -18161,7 +18162,8 @@ IVs: 0 Atk
 
 Meganium (F) @ Meganiumite 
 Ability: Overgrow  
-EVs: 252 HP / 252 SpA / 4 SpD   
+EVs: 252 HP / 252 SpA / 4 SpD 
+Shiny: Yes  
 Modest Nature  
 - Sludge Wave 
 - Leech Seed  
@@ -19309,9 +19311,8 @@ Tyrogue
 Ability: Vital Spirit  
 Level: 16  
 - Fake Out  
-- Bulk Up  
-- Mach Punch  
-- Thief  
+- Focus Energy
+- Mach Punch
 
 Sneasel-Hisui (F)  
 Ability: Poison Touch  
@@ -39275,7 +39276,7 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Fake Out   
 - Mach Punch  
-- Thief  
+- Helping Hand 
 
 Sneasel-Hisui (F)  
 Ability: Poison Touch  

@@ -2140,9 +2140,9 @@ MauvilleCity_EventScript_BikerLeft::
 # 1075 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
 # 1076 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 49, Common_Movement_WalkInPlaceLeft
+	applymovement 47, Common_Movement_WalkInPlaceLeft
 # 1077 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 49
+	waitmovement 47
 # 1078 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvilleCity_EventScript_BikerLeft_Text_1, MSGBOX_AUTOCLOSE
 # 1083 "data/maps/MauvilleCity/scripts.pory"
@@ -2182,9 +2182,9 @@ MauvilleCity_EventScript_BikerRight::
 # 1104 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
 # 1105 "data/maps/MauvilleCity/scripts.pory"
-	applymovement 49, Common_Movement_WalkInPlaceLeft
+	applymovement 47, Common_Movement_WalkInPlaceLeft
 # 1106 "data/maps/MauvilleCity/scripts.pory"
-	waitmovement 49
+	waitmovement 47
 # 1107 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvilleCity_EventScript_BikerLeft_Text_1, MSGBOX_AUTOCLOSE
 # 1112 "data/maps/MauvilleCity/scripts.pory"

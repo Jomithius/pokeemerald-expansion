@@ -849,8 +849,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_TotodilePartner,
         .shinyPalette = gMonShinyPalette_TotodilePartner,
-        .iconSprite = gMonIcon_Totodile,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .iconSprite = gMonIcon_TotodilePartner,
+        .iconPalIndex = 2,
         SHADOW(2, 0, SHADOW_SIZE_S)
         FOOTPRINT(Totodile)
         OVERWORLD(

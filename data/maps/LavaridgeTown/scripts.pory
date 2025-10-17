@@ -295,7 +295,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "Challenging GYMS…\p"
 	.string "You're trying hard because you don't\n"
 	.string "want to lose to me, I bet!\p"
-	.string "{PLAYER}{KUN}, I think I should challenge\n"
+	.string "{PLAYER}{KUN}, I think you should challenge\n"
 	.string "LUNA in PETALBURG GYM.\p"
 	.string "See you again!$"
 

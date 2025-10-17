@@ -189,7 +189,7 @@ RustboroCity_Gym_Text_MarcDefeat:
 RustboroCity_Gym_Text_MarcPostBattle:
 	.string "I have to hand it to our LEADER.\p"
 	.string "Not only is he a firefighter, he\n"
-	.string "also served in the POKéMON WAR.$"
+	.string "also loves finding rare POKéMON.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Yo! I'm STEVE, the RUSTBORO\n"
@@ -250,11 +250,12 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "This is STEVE from RUSTBORO.\p"
 	.string "I heard that you're moving\n"
 	.string "up through the ranks of\l"
-	.string "TRAINERS at an blazing speed.\p"
-	.string "Well, I'm glad to hear it!\l"
+	.string "TRAINERS at a blazing speed.\l"
+	.string "Well, I'm glad to hear it!\p"
 	.string "Me and MAGMORTAR are excited\n"
 	.string "to see how strong you'll get.\p"
-	.string "I'm fired up!\p"
+	.string "I'll look forward to our\n"
+	.string "next battle!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 

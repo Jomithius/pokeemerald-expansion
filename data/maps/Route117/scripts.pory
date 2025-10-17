@@ -323,8 +323,8 @@ text Route117_MisaHello{
 }
 
 text Route117_Text_MisaFlowers{
-    "I still have a bit of vacation\n
-    time, so I'm taking a scenic route back.\p
+    "I still have a bit of vacation time, so\n
+	I'm taking the scenic route back.\p
     I just love the flowers here!"
 }
 
@@ -334,7 +334,7 @@ text Route117_MisaAnotherTime{
 
 text Route117_MisaAboutTheBattle{
     "So?\n
-    Did you change your mind?"}
+	Did you change your mind?"}
 
 text Route117_MisaDefeat{
     "You did great!"
