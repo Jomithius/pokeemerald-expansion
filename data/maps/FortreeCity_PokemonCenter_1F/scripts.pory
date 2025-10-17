@@ -90,7 +90,7 @@ script MoveTutor_EventScript_RoostTaught{
 text FortreeCity_PokemonCenter_1F_Text_RoostTeach{
 	"It's important for birds to be able to\n
     rest properly!\p
-    If you have a bird POKéMON, I can teach\n
+    If you have a BIRD POKéMON, I can teach\n
     it how to ROOST."
 }
 

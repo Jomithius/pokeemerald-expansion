@@ -423,7 +423,7 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "with at least two POKéMON.$"
 `
 script DewfordTown_Gym_EventScript_GiveDazzlingGleam{
-    msgbox("Please take this, too.", MSGBOX_AUTOCLOSE)
+    msgbox("Please take this, too.", MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_TM_DAZZLING_GLEAM)
     waitmessage

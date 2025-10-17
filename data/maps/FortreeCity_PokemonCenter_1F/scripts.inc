@@ -394,4 +394,4 @@ FortreeCity_PokemonCenter_1F_EventScript_FangsTutorTaught_Text_0:
 
 FortreeCity_PokemonCenter_1F_Text_RoostTeach::
 # 90 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	.string "It's important for birds to be able to\n rest properly!\p If you have a bird POKéMON, I can teach\n it how to ROOST.$"
+	.string "It's important for birds to be able to\n rest properly!\p If you have a BIRD POKéMON, I can teach\n it how to ROOST.$"

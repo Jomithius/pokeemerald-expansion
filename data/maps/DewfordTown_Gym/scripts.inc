@@ -847,7 +847,7 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 
 DewfordTown_Gym_EventScript_GiveDazzlingGleam::
 # 426 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_EventScript_GiveDazzlingGleam_Text_0, MSGBOX_AUTOCLOSE
+	msgbox DewfordTown_Gym_EventScript_GiveDazzlingGleam_Text_0, MSGBOX_DEFAULT
 # 427 "data/maps/DewfordTown_Gym/scripts.pory"
 	waitmessage
 # 428 "data/maps/DewfordTown_Gym/scripts.pory"

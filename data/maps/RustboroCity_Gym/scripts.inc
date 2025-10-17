@@ -589,7 +589,7 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 
 RustboroCity_Gym_EventScript_GiveChillingWater::
 # 299 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_EventScript_GiveChillingWater_Text_0, MSGBOX_AUTOCLOSE
+	msgbox RustboroCity_Gym_EventScript_GiveChillingWater_Text_0, MSGBOX_DEFAULT
 # 301 "data/maps/RustboroCity_Gym/scripts.pory"
 	waitmessage
 # 302 "data/maps/RustboroCity_Gym/scripts.pory"

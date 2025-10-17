@@ -297,7 +297,7 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 
 script RustboroCity_Gym_EventScript_GiveChillingWater {
 	msgbox("And because you were on fire,\n
-	take this to cool off!", MSGBOX_AUTOCLOSE)
+	take this to cool off!", MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_TM_CHILLING_WATER)
     waitmessage
