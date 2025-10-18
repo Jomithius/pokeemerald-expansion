@@ -21,7 +21,7 @@ Route135_Lab_OnTransition::
 # 12 "data/maps/Route135_Lab/scripts.pory"
 	setflag FLAG_SYS_DYNAMIC_LEVELS
 # 13 "data/maps/Route135_Lab/scripts.pory"
-	setflag FLAG_LANDMARK_ROUTE135
+	setflag FLAG_VISITED_ROUTE135
 # 14 "data/maps/Route135_Lab/scripts.pory"
 	setrespawn HEAL_LOCATION_ROUTE135
 # 15 "data/maps/Route135_Lab/scripts.pory"

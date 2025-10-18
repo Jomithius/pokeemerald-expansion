@@ -137,11 +137,11 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	setflag FLAG_LANDMARK_THE_UNDER
-	@ setflag FLAG_LANDMARK_ROUTE135
-	@ setflag FLAG_LANDMARK_WACHUNPELON
-	@ setflag FLAG_LANDMARK_BALDESIA 
-	@ setflag FLAG_LANDMARK_SNOWDRIFT_CITY
+	setflag FLAG_VISITED_THE_UNDER
+	@ setflag FLAG_VISITED_ROUTE135
+	@ setflag FLAG_VISITED_WACHUNPELON
+	@ setflag FLAG_VISITED_BALDESIA 
+	@ setflag FLAG_VISITED_SNOWDRIFT_CITY
 	setflag FLAG_SYS_POKENAV_GET
 	setflag FLAG_HAS_MATCH_CALL
 	setflag FLAG_SYS_STAT_EDIT_GET
@@ -205,6 +205,8 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
+	warp MAP_EVER_GRANDE_CITY, 18, 28
+	waitstate
 	release
 	end
 

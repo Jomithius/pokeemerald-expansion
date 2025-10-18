@@ -967,264 +967,274 @@ Route119_Text_MayExplainFly:
 # 484 "data/maps/Route119/scripts.pory"
 	.string "I bet your mom's worried about you,\n"
 # 485 "data/maps/Route119/scripts.pory"
-	.string "{PLAYER}{KUN}.\p"
+	.string "{PLAYER}{KUN}.\l"
 # 486 "data/maps/Route119/scripts.pory"
-	.string "Well, let's meet again somewhere!$"
+	.string "Well, let's meet again somewhere!\p"
 # 487 "data/maps/Route119/scripts.pory"
-
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}You need to have a POKéMON that's\n"
 # 488 "data/maps/Route119/scripts.pory"
-Route119_Text_BrendanIntro:
+	.string "able to learn FLY to use it.$"
 # 489 "data/maps/Route119/scripts.pory"
-	.string "BRENDAN: {PLAYER}! So this is where\n"
+
 # 490 "data/maps/Route119/scripts.pory"
-	.string "you've been looking for POKéMON?\p"
+Route119_Text_BrendanIntro:
 # 491 "data/maps/Route119/scripts.pory"
-	.string "Let me see how good you got.\n"
+	.string "BRENDAN: {PLAYER}! So this is where\n"
 # 492 "data/maps/Route119/scripts.pory"
-	.string "I'll test you!\p"
+	.string "you've been looking for POKéMON?\p"
 # 493 "data/maps/Route119/scripts.pory"
-	.string "Now!\n"
+	.string "Let me see how good you got.\n"
 # 494 "data/maps/Route119/scripts.pory"
-	.string "It's a battle, so battle!$"
+	.string "I'll test you!\p"
 # 495 "data/maps/Route119/scripts.pory"
-
+	.string "Now!\n"
 # 496 "data/maps/Route119/scripts.pory"
-Route119_Text_BrendanDefeat:
+	.string "It's a battle, so battle!$"
 # 497 "data/maps/Route119/scripts.pory"
-	.string "Hmm…\n"
+
 # 498 "data/maps/Route119/scripts.pory"
-	.string "You've gotten pretty darn decent.$"
+Route119_Text_BrendanDefeat:
 # 499 "data/maps/Route119/scripts.pory"
-
+	.string "Hmm…\n"
 # 500 "data/maps/Route119/scripts.pory"
-Route119_Text_BrendanIllGiveYouThis:
+	.string "You've gotten pretty darn decent.$"
 # 501 "data/maps/Route119/scripts.pory"
-	.string "BRENDAN: I'd say you're good enough\n"
+
 # 502 "data/maps/Route119/scripts.pory"
-	.string "to search for POKéMON anywhere.\p"
+Route119_Text_BrendanIllGiveYouThis:
 # 503 "data/maps/Route119/scripts.pory"
-	.string "Here, I'll give you this.\n"
+	.string "BRENDAN: I'd say you're good enough\n"
 # 504 "data/maps/Route119/scripts.pory"
-	.string "Try it out.$"
+	.string "to search for POKéMON anywhere.\p"
 # 505 "data/maps/Route119/scripts.pory"
-
+	.string "Here, I'll give you this.\n"
 # 506 "data/maps/Route119/scripts.pory"
-Route119_Text_BrendanExplainFly:
+	.string "Try it out.$"
 # 507 "data/maps/Route119/scripts.pory"
-	.string "BRENDAN: Use FLY, and your POKéMON\n"
+
 # 508 "data/maps/Route119/scripts.pory"
-	.string "instantly carries you to any town\l"
+Route119_Text_BrendanExplainFly:
 # 509 "data/maps/Route119/scripts.pory"
-	.string "you've already visited.\p"
+	.string "BRENDAN: Use FLY, and your POKéMON\n"
 # 510 "data/maps/Route119/scripts.pory"
-	.string "But you need the FORTREE GYM BADGE \n"
+	.string "instantly carries you to any town\l"
 # 511 "data/maps/Route119/scripts.pory"
-	.string "to do that.\p"
+	.string "you've already visited.\p"
 # 512 "data/maps/Route119/scripts.pory"
-	.string "Anyway, I have to move along.$"
+	.string "But you need the FORTREE GYM BADGE\n"
 # 513 "data/maps/Route119/scripts.pory"
-
+	.string "to do that.\l"
 # 514 "data/maps/Route119/scripts.pory"
-Route119_Text_ScottWayToGoBeSeeingYou:
+	.string "Anyway, I have to move along.\p"
 # 515 "data/maps/Route119/scripts.pory"
-	.string "SCOTT: Hahahah!\n"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}You need to have a POKéMON that's\n"
 # 516 "data/maps/Route119/scripts.pory"
-	.string "Way to go, {PLAYER}{KUN}!\p"
+	.string "able to learn FLY to use it.$"
 # 517 "data/maps/Route119/scripts.pory"
-	.string "I just passed by a TRAINER riding\n"
+	
 # 518 "data/maps/Route119/scripts.pory"
-	.string "a BIKE.\p"
+
 # 519 "data/maps/Route119/scripts.pory"
-	.string "You just beat that TRAINER, didn't you?\n"
+Route119_Text_ScottWayToGoBeSeeingYou:
 # 520 "data/maps/Route119/scripts.pory"
-	.string "It was pretty obvious that you did.\p"
+	.string "SCOTT: Hahahah!\n"
 # 521 "data/maps/Route119/scripts.pory"
-	.string "The kid looked really upset with\n"
+	.string "Way to go, {PLAYER}{KUN}!\p"
 # 522 "data/maps/Route119/scripts.pory"
-	.string "a face all red from anger.\p"
+	.string "I just passed by a TRAINER riding\n"
 # 523 "data/maps/Route119/scripts.pory"
-	.string "I sure seem to run into you often.\n"
+	.string "a BIKE.\p"
 # 524 "data/maps/Route119/scripts.pory"
-	.string "Are you off to FORTREE GYM next?\p"
+	.string "You just beat that TRAINER, didn't you?\n"
 # 525 "data/maps/Route119/scripts.pory"
-	.string "I expect that you'll do well at the GYM.\n"
+	.string "It was pretty obvious that you did.\p"
 # 526 "data/maps/Route119/scripts.pory"
-	.string "Well, I'll be seeing you!$"
+	.string "The kid looked really upset with\n"
 # 527 "data/maps/Route119/scripts.pory"
-
+	.string "a face all red from anger.\p"
 # 528 "data/maps/Route119/scripts.pory"
-
+	.string "I sure seem to run into you often.\n"
 # 529 "data/maps/Route119/scripts.pory"
-Route119_Text_ScottYouWonAtFortreeGym:
+	.string "Are you off to FORTREE GYM next?\p"
 # 530 "data/maps/Route119/scripts.pory"
-	.string "… … … … … …\n"
+	.string "I expect that you'll do well at the GYM.\n"
 # 531 "data/maps/Route119/scripts.pory"
-	.string "… … … … … Beep!\p"
+	.string "Well, I'll be seeing you!$"
 # 532 "data/maps/Route119/scripts.pory"
-	.string "SCOTT: Hiya, {PLAYER}{KUN}, it's me!\p"
-# 533 "data/maps/Route119/scripts.pory"
-	.string "Just as I thought, you won at\n"
-# 534 "data/maps/Route119/scripts.pory"
-	.string "the FORTREE GYM.\p"
-# 535 "data/maps/Route119/scripts.pory"
-	.string "Your strength…\n"
-# 536 "data/maps/Route119/scripts.pory"
-	.string "Perhaps you really are the TRAINER\l"
-# 537 "data/maps/Route119/scripts.pory"
-	.string "that I've been searching for.\p"
-# 538 "data/maps/Route119/scripts.pory"
-	.string "Remember, you have a fan in me.\n"
-# 539 "data/maps/Route119/scripts.pory"
-	.string "I'll be cheering from the sidelines.\l"
-# 540 "data/maps/Route119/scripts.pory"
-	.string "Keep up the great work!\p"
-# 541 "data/maps/Route119/scripts.pory"
-	.string "… … … … … …\n"
-# 542 "data/maps/Route119/scripts.pory"
-	.string "… … … … … Click!$"
-# 543 "data/maps/Route119/scripts.pory"
 
+# 533 "data/maps/Route119/scripts.pory"
+
+# 534 "data/maps/Route119/scripts.pory"
+Route119_Text_ScottYouWonAtFortreeGym:
+# 535 "data/maps/Route119/scripts.pory"
+	.string "… … … … … …\n"
+# 536 "data/maps/Route119/scripts.pory"
+	.string "… … … … … Beep!\p"
+# 537 "data/maps/Route119/scripts.pory"
+	.string "SCOTT: Hiya, {PLAYER}{KUN}, it's me!\p"
+# 538 "data/maps/Route119/scripts.pory"
+	.string "Just as I thought, you won at\n"
+# 539 "data/maps/Route119/scripts.pory"
+	.string "the FORTREE GYM.\p"
+# 540 "data/maps/Route119/scripts.pory"
+	.string "Your strength…\n"
+# 541 "data/maps/Route119/scripts.pory"
+	.string "Perhaps you really are the TRAINER\l"
+# 542 "data/maps/Route119/scripts.pory"
+	.string "that I've been searching for.\p"
+# 543 "data/maps/Route119/scripts.pory"
+	.string "Remember, you have a fan in me.\n"
 # 544 "data/maps/Route119/scripts.pory"
-Route119_Text_StayAwayFromWeatherInstitute:
+	.string "I'll be cheering from the sidelines.\l"
 # 545 "data/maps/Route119/scripts.pory"
-	.string "We're standing lookout here.\p"
+	.string "Keep up the great work!\p"
 # 546 "data/maps/Route119/scripts.pory"
-	.string "Hey, you! Stay away from the WEATHER\n"
+	.string "… … … … … …\n"
 # 547 "data/maps/Route119/scripts.pory"
-	.string "INSTITUTE. It's not safe.$"
+	.string "… … … … … Click!$"
 # 548 "data/maps/Route119/scripts.pory"
 
 # 549 "data/maps/Route119/scripts.pory"
-Route119_Text_DontGoNearWeatherInstitute:
+Route119_Text_StayAwayFromWeatherInstitute:
 # 550 "data/maps/Route119/scripts.pory"
-	.string "Lookout duty is surprisingly boring.\p"
+	.string "We're standing lookout here.\p"
 # 551 "data/maps/Route119/scripts.pory"
-	.string "Hey, you! Please don't go near the\n"
+	.string "Hey, you! Stay away from the WEATHER\n"
 # 552 "data/maps/Route119/scripts.pory"
-	.string "WEATHER INSTITUTE.$"
+	.string "INSTITUTE. It's not safe.$"
 # 553 "data/maps/Route119/scripts.pory"
 
 # 554 "data/maps/Route119/scripts.pory"
-Route119_Text_ThoughtFlyByCatchingBirdMons:
+Route119_Text_DontGoNearWeatherInstitute:
 # 555 "data/maps/Route119/scripts.pory"
-	.string "I thought you FLY by catching a whole\n"
+	.string "Lookout duty is surprisingly boring.\p"
 # 556 "data/maps/Route119/scripts.pory"
-	.string "flock of BIRD POKéMON, and then\l"
+	.string "Hey, you! Please don't go near the\n"
 # 557 "data/maps/Route119/scripts.pory"
-	.string "hanging on to them somehow.\p"
+	.string "WEATHER INSTITUTE.$"
 # 558 "data/maps/Route119/scripts.pory"
-	.string "But it turns out there's an HM move\n"
+
 # 559 "data/maps/Route119/scripts.pory"
-	.string "called FLY!\p"
+Route119_Text_ThoughtFlyByCatchingBirdMons:
 # 560 "data/maps/Route119/scripts.pory"
-	.string "I wish I'd known about that a long\n"
+	.string "I thought you FLY by catching a whole\n"
 # 561 "data/maps/Route119/scripts.pory"
-	.string "time ago…$"
+	.string "flock of BIRD POKéMON, and then\l"
 # 562 "data/maps/Route119/scripts.pory"
-
+	.string "hanging on to them somehow.\p"
 # 563 "data/maps/Route119/scripts.pory"
-Route119_Text_TallGrassSnaresBikeTires:
+	.string "But it turns out there's an HM move\n"
 # 564 "data/maps/Route119/scripts.pory"
-	.string "Tch…\n"
+	.string "called FLY!\p"
 # 565 "data/maps/Route119/scripts.pory"
-	.string "It's a no-go…\p"
+	.string "I wish I'd known about that a long\n"
 # 566 "data/maps/Route119/scripts.pory"
-	.string "The tall grass snares BIKE tires.\n"
+	.string "time ago…$"
 # 567 "data/maps/Route119/scripts.pory"
-	.string "There's no way you can cycle here.$"
-# 568 "data/maps/Route119/scripts.pory"
 
+# 568 "data/maps/Route119/scripts.pory"
+Route119_Text_TallGrassSnaresBikeTires:
 # 569 "data/maps/Route119/scripts.pory"
-Route119_Text_CanYourMonMakeSecretBase:
+	.string "Tch…\n"
 # 570 "data/maps/Route119/scripts.pory"
-	.string "Can your POKéMON use its SECRET POWER\n"
+	.string "It's a no-go…\p"
 # 571 "data/maps/Route119/scripts.pory"
-	.string "on a big pile of grass and make a\l"
+	.string "The tall grass snares BIKE tires.\n"
 # 572 "data/maps/Route119/scripts.pory"
-	.string "SECRET BASE?$"
+	.string "There's no way you can cycle here.$"
 # 573 "data/maps/Route119/scripts.pory"
 
 # 574 "data/maps/Route119/scripts.pory"
-Route119_Text_RouteSignFortree:
+Route119_Text_CanYourMonMakeSecretBase:
 # 575 "data/maps/Route119/scripts.pory"
-	.string "ROUTE 119\n"
+	.string "Can your POKéMON use its SECRET POWER\n"
 # 576 "data/maps/Route119/scripts.pory"
-	.string "{RIGHT_ARROW} FORTREE CITY$"
+	.string "on a big pile of grass and make a\l"
 # 577 "data/maps/Route119/scripts.pory"
-
+	.string "SECRET BASE?$"
 # 578 "data/maps/Route119/scripts.pory"
-Route119_Text_WeatherInstitute:
-# 579 "data/maps/Route119/scripts.pory"
-	.string "WEATHER INSTITUTE$"
-# 580 "data/maps/Route119/scripts.pory"
 
+# 579 "data/maps/Route119/scripts.pory"
+Route119_Text_RouteSignFortree:
+# 580 "data/maps/Route119/scripts.pory"
+	.string "ROUTE 119\n"
 # 581 "data/maps/Route119/scripts.pory"
-Route119_Text_TrainerTipsDecoration:
+	.string "{RIGHT_ARROW} FORTREE CITY$"
 # 582 "data/maps/Route119/scripts.pory"
-	.string "TRAINER TIPS\p"
+
 # 583 "data/maps/Route119/scripts.pory"
-	.string "Up to sixteen decorations and\n"
+Route119_Text_WeatherInstitute:
 # 584 "data/maps/Route119/scripts.pory"
-	.string "furniture items can be placed in\l"
+	.string "WEATHER INSTITUTE$"
 # 585 "data/maps/Route119/scripts.pory"
-	.string "a SECRET BASE.\p"
+
 # 586 "data/maps/Route119/scripts.pory"
-	.string "Pick your favorite items and create\n"
+Route119_Text_TrainerTipsDecoration:
 # 587 "data/maps/Route119/scripts.pory"
-	.string "your very own SECRET BASE exactly the\l"
+	.string "TRAINER TIPS\p"
 # 588 "data/maps/Route119/scripts.pory"
+	.string "Up to sixteen decorations and\n"
+# 589 "data/maps/Route119/scripts.pory"
+	.string "furniture items can be placed in\l"
+# 590 "data/maps/Route119/scripts.pory"
+	.string "a SECRET BASE.\p"
+# 591 "data/maps/Route119/scripts.pory"
+	.string "Pick your favorite items and create\n"
+# 592 "data/maps/Route119/scripts.pory"
+	.string "your very own SECRET BASE exactly the\l"
+# 593 "data/maps/Route119/scripts.pory"
 	.string "way you want.$"
 
 Route119_EventScript_Lurantis::
-# 592 "data/maps/Route119/scripts.pory"
-	lock
-# 593 "data/maps/Route119/scripts.pory"
-	faceplayer
-# 594 "data/maps/Route119/scripts.pory"
-	playmoncry SPECIES_LURANTIS, CRY_MODE_ENCOUNTER
-# 595 "data/maps/Route119/scripts.pory"
-	waitmoncry
-# 596 "data/maps/Route119/scripts.pory"
-	setwildbattle SPECIES_LURANTIS_TOTEM, 37, ITEM_ABILITY_CAPSULE
 # 597 "data/maps/Route119/scripts.pory"
-	dowildbattle
+	lock
 # 598 "data/maps/Route119/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	faceplayer
 # 599 "data/maps/Route119/scripts.pory"
+	playmoncry SPECIES_LURANTIS, CRY_MODE_ENCOUNTER
+# 600 "data/maps/Route119/scripts.pory"
+	waitmoncry
+# 601 "data/maps/Route119/scripts.pory"
+	setwildbattle SPECIES_LURANTIS_TOTEM, 37, ITEM_ABILITY_CAPSULE
+# 602 "data/maps/Route119/scripts.pory"
+	dowildbattle
+# 603 "data/maps/Route119/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 604 "data/maps/Route119/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route119_EventScript_Lurantis_2
-# 599 "data/maps/Route119/scripts.pory"
+# 604 "data/maps/Route119/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route119_EventScript_Lurantis_2
-# 605 "data/maps/Route119/scripts.pory"
-	playmoncry SPECIES_LURANTIS, CRY_MODE_ENCOUNTER
-# 606 "data/maps/Route119/scripts.pory"
-	waitmoncry
-# 607 "data/maps/Route119/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 608 "data/maps/Route119/scripts.pory"
-	removeobject VAR_LAST_TALKED
-# 609 "data/maps/Route119/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
 # 610 "data/maps/Route119/scripts.pory"
-	msgbox Route119_EventScript_Lurantis_Text_0, MSGBOX_AUTOCLOSE
+	playmoncry SPECIES_LURANTIS, CRY_MODE_ENCOUNTER
 # 611 "data/maps/Route119/scripts.pory"
+	waitmoncry
+# 612 "data/maps/Route119/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 613 "data/maps/Route119/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 614 "data/maps/Route119/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 615 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_Lurantis_Text_0, MSGBOX_AUTOCLOSE
+# 616 "data/maps/Route119/scripts.pory"
 	waitmessage
 Route119_EventScript_Lurantis_1:
-# 613 "data/maps/Route119/scripts.pory"
+# 618 "data/maps/Route119/scripts.pory"
 	release
 	end
 
 Route119_EventScript_Lurantis_2:
-# 600 "data/maps/Route119/scripts.pory"
+# 605 "data/maps/Route119/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 601 "data/maps/Route119/scripts.pory"
+# 606 "data/maps/Route119/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 602 "data/maps/Route119/scripts.pory"
+# 607 "data/maps/Route119/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route119_EventScript_Lurantis_1
 
 
 Route119_EventScript_Lurantis_Text_0:
-# 610 "data/maps/Route119/scripts.pory"
+# 615 "data/maps/Route119/scripts.pory"
 	.string "The LURANTIS disappeared…$"

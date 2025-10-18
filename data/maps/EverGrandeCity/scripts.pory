@@ -198,12 +198,7 @@ movement EverGrandeCity_Movement_BennisRight{
 script EverGrandeCity_EventScript_Nurse{
     lock
     faceplayer
-    if(!flag(FLAG_HIDE_RIVAL_EVERGRANDE_CITY)){
-        msgbox(EverGrandeCity_Text_NurseWarnJames, MSGBOX_AUTOCLOSE)
-    }
-    else{
-        msgbox(EverGrandeCity_Text_Nurse, MSGBOX_AUTOCLOSE)
-    }
+    msgbox(EverGrandeCity_Text_Nurse, MSGBOX_AUTOCLOSE)
     waitmessage
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox(EverGrandeCity_Text_Nurse2, MSGBOX_AUTOCLOSE)
@@ -266,9 +261,9 @@ script EverGrandeCity_EventScript_James{
     addobject(7)
     fadescreenspeed(FADE_FROM_WHITE, 3)
     playmoncry(SPECIES_TYPHLOSION_HISUI, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     playmoncry(SPECIES_GRIMMSNARL, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     msgbox(EverGrandeCity_Text_James2, MSGBOX_AUTOCLOSE)
     waitmessage
     if(var(VAR_TEMP_1) == 1){
@@ -289,8 +284,8 @@ script EverGrandeCity_EventScript_James{
     trainerbattle_no_intro(TRAINER_JOMITHIUS_4, EvergrandeCity_JamesDefeat)
     applymovement(5, Common_Movement_WalkUp)
     waitmovement(5)
-    delay(30)
     playbgm(MUS_THE_DAY_WILL_COME, FALSE)
+    delay(30)
     msgbox("JAMES: …\p
         It feels like… I was always\n
         destined to lose to you, {PLAYER}.", MSGBOX_DEFAULT)
@@ -393,11 +388,61 @@ movement EvergrandeCity_Movement_PlayerRightTrigger {
 
 script EverGrandeCity_EventScript_StrongTrainerWaits{
     lockall
-    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The current level cap is 65.\p
-        It's recommended to save before\n
-        continuing.\p", MSGBOX_AUTOCLOSE)
+    playse(SE_PIN)
+    applymovement(4, Common_Movement_ExclamationMark)
+    waitmovement(4)
+    waitse
+    applymovement(4, Common_Movement_FaceLeft)
+    waitmovement(4)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox("NURSE: Oh! Congratulations!\n
+        You've made it through VICTORY ROAD!\p
+        Please, allow me to heal your POKéMON.", MSGBOX_AUTOCLOSE)
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    switch(var(VAR_TEMP_1)){
+        case 28:
+            applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_Movement_PlayerToNurse28)
+        case 29:
+            applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_Movement_PlayerToNurse29)
+        case 30:
+            applymovement(OBJ_EVENT_ID_PLAYER, EverGrandeCity_Movement_PlayerToNurse30)
+        default:
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight) 
+    }
+    waitmovement(0)
+    applymovement(4, Common_Movement_FaceDown)
+    waitmovement(4)
+    call(Common_EventScript_OutOfCenterPartyHeal)
+    msgbox("NURSE: It's been a while since I've\n
+        seen a new TRAINER.\p
+        May I know your name?\n
+        … … … … … …\p
+        Ah, {PLAYER}?!\n
+        JAMES has told me about you!\l
+        He's been working so hard lately.\p
+        It almost feels like I've only been\n
+        taking care of his POKéMON!\p
+        {COLOR BLUE}{SHADOW LIGHT_BLUE}The current level cap is 65.\p
+        Also, a shortcut has now opened up on\n
+        VICTORY ROAD 1F.", MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_EVER_GRANDE_CITY_STATE, 1)
     releaseall
     end
+}
+
+movement EverGrandeCity_Movement_PlayerToNurse28{
+    walk_right * 3
+    walk_in_place_up
+}
+
+movement EverGrandeCity_Movement_PlayerToNurse29{
+    walk_right * 3
+    walk_up
+}
+
+movement EverGrandeCity_Movement_PlayerToNurse30{
+    walk_right * 3
+    walk_up * 2
 }

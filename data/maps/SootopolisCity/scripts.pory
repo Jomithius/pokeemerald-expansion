@@ -1745,7 +1745,7 @@ script SootopolisCity_EventScript_RecoilMovesTutor{
 
 script SootopolisCity_EventScript_RecoilMovesTutorChoices{
 	lock
-    goto_if_set(FLAG_LANDMARK_THE_UNDER, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9)
+    goto_if_set(FLAG_VISITED_THE_UNDER, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9)
 	msgbox("Which move do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FLARE BLITZ", "WILD CHARGE", "HEAD SMASH", "WOOD HAMMER", "SELF DESTRUCT", "BRAVE BIRD", "HIGH JUMP KICK", "DOUBLE EDGE")
 	switch (var(VAR_RESULT)) {

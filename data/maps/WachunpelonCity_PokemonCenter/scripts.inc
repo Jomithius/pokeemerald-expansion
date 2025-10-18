@@ -10,7 +10,7 @@ WachunpelonCity_PokemonCenter_OnTransition::
 # 7 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
 	setrespawn HEAL_LOCATION_WACHUNPELON_CITY
 # 8 "data/maps/WachunpelonCity_PokemonCenter/scripts.pory"
-	setflag FLAG_LANDMARK_WACHUNPELON
+	setflag FLAG_VISITED_WACHUNPELON
 	end
 
 

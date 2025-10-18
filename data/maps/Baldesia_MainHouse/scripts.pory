@@ -380,7 +380,7 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     clearflag(FLAG_HIDE_NINJA_BALDESIA)
     setflag(FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE)
     setvar(VAR_MOMO_ARIA_STATE, 5)
-    setflag(FLAG_LANDMARK_BALDESIA) // set here so fly only unlocks along w main house. prevents sequence breaking.
+    setflag(FLAG_VISITED_BALDESIA) // set here so fly only unlocks along w main house. prevents sequence breaking.
     fadescreenswapbuffers(FADE_TO_BLACK)
     applymovement(LOCALID_ARIA, Common_Movement_FaceDown)
     waitmovement(0)

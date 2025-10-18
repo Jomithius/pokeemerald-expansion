@@ -482,8 +482,10 @@ Route119_Text_MayExplainFly:
 	.string "You should FLY home and visit\n"
 	.string "LITTLEROOT for a change.\p"
 	.string "I bet your mom's worried about you,\n"
-	.string "{PLAYER}{KUN}.\p"
-	.string "Well, let's meet again somewhere!$"
+	.string "{PLAYER}{KUN}.\l"
+	.string "Well, let's meet again somewhere!\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}You need to have a POKéMON that's\n"
+	.string "able to learn FLY to use it.$"
 
 Route119_Text_BrendanIntro:
 	.string "BRENDAN: {PLAYER}! So this is where\n"
@@ -507,9 +509,12 @@ Route119_Text_BrendanExplainFly:
 	.string "BRENDAN: Use FLY, and your POKéMON\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
-	.string "But you need the FORTREE GYM BADGE \n"
-	.string "to do that.\p"
-	.string "Anyway, I have to move along.$"
+	.string "But you need the FORTREE GYM BADGE\n"
+	.string "to do that.\l"
+	.string "Anyway, I have to move along.\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}You need to have a POKéMON that's\n"
+	.string "able to learn FLY to use it.$"
+	
 
 Route119_Text_ScottWayToGoBeSeeingYou:
 	.string "SCOTT: Hahahah!\n"

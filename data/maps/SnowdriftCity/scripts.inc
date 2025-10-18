@@ -8,7 +8,7 @@ SnowdriftCity_OnTransition::
 # 6 "data/maps/SnowdriftCity/scripts.pory"
 	setflag FLAG_SYS_DYNAMIC_LEVELS
 # 7 "data/maps/SnowdriftCity/scripts.pory"
-	setflag FLAG_LANDMARK_SNOWDRIFT_CITY
+	setflag FLAG_VISITED_SNOWDRIFT_CITY
 # 8 "data/maps/SnowdriftCity/scripts.pory"
 	call_if_set FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN, SnowdriftCity_EventScript_HideLunaAndMickey
 	end

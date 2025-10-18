@@ -3,7 +3,7 @@ mapscripts TheUnder_MapScripts {
 }
 
 script TheUnder_OnTransition{
-    setflag(FLAG_LANDMARK_THE_UNDER)
+    setflag(FLAG_VISITED_THE_UNDER)
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
     end
 }

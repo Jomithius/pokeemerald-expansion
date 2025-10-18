@@ -55,6 +55,7 @@ script WachunpelonCity_EventScript_MaePostBattle{
     msgbox("MAE: …\n
         I'm still not leaving.", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_VISITED_WACHUNPELON)
     release
     end
 }
@@ -220,6 +221,7 @@ script WachunpelonCity_EventScript_PolicemanTrigger{
     waitdooranim
     setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
     setvar(VAR_SPEEDWAGON_STATE, 9)
+    setflag(FLAG_VISITED_WACHUNPELON)
     warp(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
     waitstate
     releaseall
@@ -270,6 +272,7 @@ script WachunpelonCity_EventScript_PolicemanNorth{
     waitdooranim
     setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
     setvar(VAR_SPEEDWAGON_STATE, 9)
+    setflag(FLAG_VISITED_WACHUNPELON)
     warp(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
     waitstate
     release
@@ -315,6 +318,7 @@ script WachunpelonCity_EventScript_PolicemanWest{
     waitdooranim
     setflag(FLAG_HIDE_POLICEMAN_WACHUNPELON)
     setvar(VAR_SPEEDWAGON_STATE, 9)
+    setflag(FLAG_VISITED_WACHUNPELON)
     warp(MAP_WACHUNPELON_CITY_SEWER, 26, 5)
     waitstate
     release

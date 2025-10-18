@@ -4074,7 +4074,7 @@ static void CursorCb_FieldMove(u8 taskId)
                 sPartyMenuInternal->data[0] = fieldMove;
                 break;
             case FIELD_MOVE_FLY:
-                if(FlagGet(FLAG_LANDMARK_THE_UNDER))
+                if(FlagGet(FLAG_VISITED_THE_UNDER))
                 {
                     CreateMapSelectionWindow(taskId);
                     break;
@@ -8087,7 +8087,7 @@ void IsLastMonThatKnowsSurf(void)
 static void SetRegionSelectionActions()
 {
     sPartyMenuInternal->numActions = 0;
-    if(FlagGet(FLAG_LANDMARK_THE_UNDER))
+    if(FlagGet(FLAG_VISITED_THE_UNDER))
     {
         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_HOENN);
         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_NHOENN);

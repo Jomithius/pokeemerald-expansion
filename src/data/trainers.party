@@ -4209,10 +4209,10 @@ Level: 65
 EVs: 252 HP / 4 Def / 252 SpD  
 Careful Nature  
 IVs: 0 Atk  
-- Reflect  
-- Light Screen  
+- Taunt 
+- Spirit Break  
 - Foul Play  
-- Thunder Wave  
+- Reflect
 
 Staraptor @ Heavy-Duty Boots  
 Ability: Reckless  
@@ -4224,7 +4224,7 @@ Jolly Nature
 - Defog  
 - Roost  
 
-Electivire (M) @ Air Balloon  
+Electivire (M) @ Magnet  
 Ability: Motor Drive  
 Level: 65   
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -4234,15 +4234,15 @@ Adamant Nature
 - Cross Chop
 - Ice Punch   
 
-Haxorus (M) @ Leftovers  
+Haxorus (M) @ Dragon Fang
 Ability: Mold Breaker
 Level: 65   
 EVs: 252 Atk / 4 SpD / 252 Spe  
-Jolly Nature  
+Adamant Nature  
 - Swords Dance  
 - Dragon Claw  
 - Earthquake  
-- Iron Head 
+- Rock Slide
 
 Typhlosion-Hisui (M) @ Typhlosionite 
 Ability: Frisk 
@@ -4250,8 +4250,7 @@ Level: 65
 EVs: 4 HP / 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk / 30 Def  
-- Heat Wave  
-- Overheat  
+- Heat Wave    
 - Earth Power
 - Infernal Parade 
 
@@ -23938,7 +23937,7 @@ AI: Basic Trainer Ace
 Difficulty: Easy
 Mugshot: Blue
 
-Gigalith (M) @ Custap Berry  
+Gigalith (M) @ Leftovers
 Ability: Sturdy  
 Level: 65 
 EVs: 192 HP 
@@ -23949,7 +23948,7 @@ Adamant Nature
 - Stone Edge  
 - Explosion  
 
-Grimmsnarl
+Grimmsnarl @ Light Clay
 Ability: Prankster  
 Level: 65  
 EVs: 252 HP  
@@ -23957,8 +23956,7 @@ Careful Nature
 IVs: 0 Atk  
 - Taunt  
 - Spirit Break 
-- Foul Play  
-- Thunder Wave  
+- Foul Play    
 
 Staraptor @ Heavy-Duty Boots  
 Ability: Reckless  
@@ -23974,23 +23972,24 @@ Level: 65
 EVs: 192 HP  
 Adamant Nature   
 - Supercell Slam  
-- Cross Chop   
+- Cross Chop
+- Defog   
 
-Haxorus (M) @ Leftovers  
+Haxorus (M) @ Dragon Fang
 Ability: Rivalry  
 Level: 65  
 EVs: 192 HP  
 Jolly Nature  
-- Outrage  
+- Dragon Claw
 - Earthquake  
-- Iron Head 
+- Rock Slide
 
 Typhlosion-Hisui (M) @ Typhlosionite 
 Ability: Frisk 
 Level: 65 
 EVs: 252 HP / 64 SpA   
 Modest Nature  
-IVs: 0 Atk / 30 Def / 0 Spe 
+IVs: 0 Atk / 30 Def / 10 Spe 
 - Flamethrower  
 - Scorching Sands  
 - Infernal Parade 

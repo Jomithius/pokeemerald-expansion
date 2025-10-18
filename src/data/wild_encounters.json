@@ -9739,7 +9739,7 @@
               {
                 "min_level": 48,
                 "max_level": 51,
-                "species": "SPECIES_RIOLU"
+                "species": "SPECIES_LUCARIO"
               },
               {
                 "min_level": 48,
@@ -9749,7 +9749,7 @@
               {
                 "min_level": 48,
                 "max_level": 51,
-                "species": "SPECIES_DREEPY"
+                "species": "SPECIES_DRAMPA"
               },
               {
                 "min_level": 48,
@@ -9764,12 +9764,12 @@
               {
                 "min_level": 48,
                 "max_level": 51,
-                "species": "SPECIES_RIOLU"
+                "species": "SPECIES_LUCARIO"
               },
               {
                 "min_level": 48,
                 "max_level": 51,
-                "species": "SPECIES_RIOLU"
+                "species": "SPECIES_LUCARIO"
               }
             ]
           }

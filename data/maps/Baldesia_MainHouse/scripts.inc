@@ -671,7 +671,7 @@ Baldesia_MainHouse_EventScript_GoToAltar::
 # 382 "data/maps/Baldesia_MainHouse/scripts.pory"
 	setvar VAR_MOMO_ARIA_STATE, 5
 # 383 "data/maps/Baldesia_MainHouse/scripts.pory"
-	setflag FLAG_LANDMARK_BALDESIA
+	setflag FLAG_VISITED_BALDESIA
 # 384 "data/maps/Baldesia_MainHouse/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
 # 385 "data/maps/Baldesia_MainHouse/scripts.pory"

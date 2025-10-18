@@ -3477,7 +3477,7 @@ SootopolisCity_EventScript_RecoilMovesTutorChoices::
 # 1747 "data/maps/SootopolisCity/scripts.pory"
 	lock
 # 1748 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_set FLAG_LANDMARK_THE_UNDER, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9
+	goto_if_set FLAG_VISITED_THE_UNDER, SootopolisCity_EventScript_RecoilMovesTutorChoicesGen9
 # 1749 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_RecoilMovesTutorChoices_Text_0, MSGBOX_DEFAULT
 # 1750 "data/maps/SootopolisCity/scripts.pory"

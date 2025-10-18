@@ -4,7 +4,7 @@ mapscripts SnowdriftCity_MapScripts {
 
 script SnowdriftCity_OnTransition{
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
-    setflag(FLAG_LANDMARK_SNOWDRIFT_CITY)
+    setflag(FLAG_VISITED_SNOWDRIFT_CITY)
     call_if_set(FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN, SnowdriftCity_EventScript_HideLunaAndMickey)
     end
 }

@@ -1579,7 +1579,7 @@ LilycoveCity_EventScript_EmoBully::
 # 793 "data/maps/LilycoveCity/scripts.pory"
 	waitse
 # 794 "data/maps/LilycoveCity/scripts.pory"
-	delay 16
+	delay 24
 # 795 "data/maps/LilycoveCity/scripts.pory"
 	applymovement 24, Common_Movement_WalkRight
 # 796 "data/maps/LilycoveCity/scripts.pory"
@@ -2281,7 +2281,7 @@ LilycoveCity_Text_Emo1::
 
 LilycoveCity_Text_Emo2::
 # 948 "data/maps/LilycoveCity/scripts.pory"
-	.string "That guy…\p That guy was the reason I stopped\n going to school.\p My mom found out what was happening\n and suddenly he moved away.\p I guess his friends still visit\n him out here.$"
+	.string "That guy…\p He… was the reason I stopped\n going to school.\p My mom found out what was happening\n and he suddenly moved away.\p I guess his friends still visit\n him out here.$"
 
 LilycoveCity_Text_Emo3::
 # 958 "data/maps/LilycoveCity/scripts.pory"

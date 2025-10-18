@@ -248,7 +248,7 @@ static u32 HandleMainMenuInput(struct Pokenav_Menu *menu)
         switch (sMenuItems[menu->menuType][menu->cursorPos])
         {
         case POKENAV_MENUITEM_MAP:
-            if(FlagGet(FLAG_LANDMARK_THE_UNDER))
+            if(FlagGet(FLAG_VISITED_THE_UNDER))
             {
                 menu->menuType = POKENAV_MENU_TYPE_REGION_MAPS;
                 menu->cursorPos = 0;

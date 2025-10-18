@@ -791,7 +791,7 @@ script LilycoveCity_EventScript_EmoBully{
 	applymovement(23, LilycoveCity_Movement_WalkBackFasterRight)
 	waitmovement(23)
 	waitse
-    delay(16) // remove?
+    delay(24)
     applymovement(24, Common_Movement_WalkRight)
     delay(10)
     applymovement(25, Common_Movement_WalkRight)
@@ -947,10 +947,10 @@ text LilycoveCity_Text_Emo1{
 
 text LilycoveCity_Text_Emo2{
     "That guy…\p
-    That guy was the reason I stopped\n
+    He… was the reason I stopped\n
     going to school.\p
     My mom found out what was happening\n
-    and suddenly he moved away.\p
+    and he suddenly moved away.\p
     I guess his friends still visit\n
     him out here."
 }

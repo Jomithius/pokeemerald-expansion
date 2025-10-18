@@ -6,7 +6,7 @@ TheUnder_MapScripts::
 
 TheUnder_OnTransition::
 # 6 "data/maps/TheUnder/scripts.pory"
-	setflag FLAG_LANDMARK_THE_UNDER
+	setflag FLAG_VISITED_THE_UNDER
 # 7 "data/maps/TheUnder/scripts.pory"
 	setflag FLAG_SYS_DYNAMIC_LEVELS
 	end

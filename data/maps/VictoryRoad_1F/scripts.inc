@@ -2,12 +2,17 @@
 
 VictoryRoad_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VictoryRoad_1F_OnTransition
+	map_script MAP_SCRIPT_ON_LOAD, VictoryRoad_1F_OnLoad
 	.byte 0
 
 VictoryRoad_1F_OnTransition:
 	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 1, VictoryRoad_1F_EventScript_SetEntranceWallyPos1
 	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 2, VictoryRoad_1F_EventScript_SetEntranceWallyPos2
 	end
+
+VictoryRoad_1F_OnLoad:
+	call_if_eq VAR_EVER_GRANDE_CITY_STATE, 1, VictoryRoad_1F_EventScript_SetVictoryRoadShortcut
+	end 
 
 VictoryRoad_1F_EventScript_SetEntranceWallyPos1::
 	setobjectxyperm LOCALID_WALLY_ENTRANCE, 2, 24
@@ -17,6 +22,11 @@ VictoryRoad_1F_EventScript_SetEntranceWallyPos1::
 VictoryRoad_1F_EventScript_SetEntranceWallyPos2::
 	setobjectxyperm LOCALID_WALLY_ENTRANCE, 3, 24
 	setobjectmovementtype LOCALID_WALLY_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
+	return
+
+VictoryRoad_1F_EventScript_SetVictoryRoadShortcut::
+	setmetatile 27, 23, METATILE_Cave_CaveStairs, FALSE
+	setmetatile 28, 23, METATILE_Cave_CaveStairs, FALSE
 	return
 
 VictoryRoad_1F_EventScript_WallyBattleTrigger1::

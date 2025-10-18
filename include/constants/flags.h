@@ -1518,11 +1518,11 @@
 #define FLAG_SYS_RECEIVED_TERA_ORB                  (SYSTEM_FLAGS + 0x8E) // Unlocks Tera in Summary
 #define FLAG_SYS_TERA_ORB_CHARGED                   (SYSTEM_FLAGS + 0x8F) // Tera 2287
 #define FLAG_SYS_TALKED_TO_CALYREX                  (SYSTEM_FLAGS + 0x90) // Calryex Event
-#define FLAG_LANDMARK_ROUTE135                      (SYSTEM_FLAGS + 0x91) 
-#define FLAG_LANDMARK_THE_UNDER                     (SYSTEM_FLAGS + 0x92) 
-#define FLAG_LANDMARK_WACHUNPELON                   (SYSTEM_FLAGS + 0x93) 
-#define FLAG_LANDMARK_BALDESIA                      (SYSTEM_FLAGS + 0x94) 
-#define FLAG_LANDMARK_SNOWDRIFT_CITY                (SYSTEM_FLAGS + 0x95) 
+#define FLAG_VISITED_ROUTE135                       (SYSTEM_FLAGS + 0x91) 
+#define FLAG_VISITED_THE_UNDER                      (SYSTEM_FLAGS + 0x92) 
+#define FLAG_VISITED_WACHUNPELON                    (SYSTEM_FLAGS + 0x93) 
+#define FLAG_VISITED_BALDESIA                       (SYSTEM_FLAGS + 0x94) 
+#define FLAG_VISITED_SNOWDRIFT_CITY                 (SYSTEM_FLAGS + 0x95) 
 #define FLAG_JOMITHIUS_UNAVAILABLE                  (SYSTEM_FLAGS + 0x96) // For rival match call
 #define FLAG_TALKED_TO_LINA_LAVARIDGE               (SYSTEM_FLAGS + 0x97) // Secret Boss
 #define FLAG_SYS_BIKERS_ROUTE_110                   (SYSTEM_FLAGS + 0x98) // For biker event rt 110
