@@ -35,7 +35,7 @@ script MtPyre_Exterior_EventScript_Emo{
     playse(SE_PIN)
     applymovement(3, Common_Movement_ExclamationMark)
     waitmovement(3)
-    delay(20)
+    waitse
     applymovement(3, MtPyre_Exterior_Movement_Emo1)
     waitmovement(3)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
@@ -78,7 +78,7 @@ script MtPyre_Exterior_EventScript_Emo2{
     playse(SE_PIN)
     applymovement(3, Common_Movement_ExclamationMark)
     waitmovement(3)
-    delay(20)
+    waitse
     applymovement(3, MtPyre_Exterior_Movement_Emo2)
     waitmovement(3)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
@@ -146,12 +146,12 @@ text MtPyre_Exterior_Text_RivalDefeat{
 }
 
 movement MtPyre_Exterior_Movement_Emo1{
-    walk_left * 4
+    walk_left * 2
 }
 
 movement MtPyre_Exterior_Movement_Emo2{
     walk_down
-    walk_left * 4
+    walk_left * 2
 }
 
 movement MtPyre_Exterior_Movement_EmoLeave1{

@@ -67,7 +67,7 @@ MtPyre_Exterior_EventScript_Emo::
 # 37 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmovement 3
 # 38 "data/maps/MtPyre_Exterior/scripts.pory"
-	delay 20
+	waitse
 # 39 "data/maps/MtPyre_Exterior/scripts.pory"
 	applymovement 3, MtPyre_Exterior_Movement_Emo1
 # 40 "data/maps/MtPyre_Exterior/scripts.pory"
@@ -149,7 +149,7 @@ MtPyre_Exterior_EventScript_Emo2::
 # 80 "data/maps/MtPyre_Exterior/scripts.pory"
 	waitmovement 3
 # 81 "data/maps/MtPyre_Exterior/scripts.pory"
-	delay 20
+	waitse
 # 82 "data/maps/MtPyre_Exterior/scripts.pory"
 	applymovement 3, MtPyre_Exterior_Movement_Emo2
 # 83 "data/maps/MtPyre_Exterior/scripts.pory"
@@ -221,20 +221,12 @@ MtPyre_Exterior_Movement_Emo1:
 	walk_left
 # 149 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 149 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
 	step_end
 
 # 152 "data/maps/MtPyre_Exterior/scripts.pory"
 MtPyre_Exterior_Movement_Emo2:
 # 153 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_down
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
-# 154 "data/maps/MtPyre_Exterior/scripts.pory"
-	walk_left
 # 154 "data/maps/MtPyre_Exterior/scripts.pory"
 	walk_left
 # 154 "data/maps/MtPyre_Exterior/scripts.pory"

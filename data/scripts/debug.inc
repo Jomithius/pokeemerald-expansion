@@ -153,11 +153,9 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_NEWMOON_ISLAND_STATE, 5
-	setvar VAR_SPEEDWAGON_STATE, 0
-	clearflag FLAG_HIDE_MAUVILLE_CITY_WALLY
-	clearflag FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE
-	warp MAP_THE_UNDER_HOUSE, 2, 6
+	setvar VAR_MISA_STATE, 7
+	clearflag FLAG_HIDE_EMO_LILYCOVE
+	warp MAP_LILYCOVE_CITY, 58, 36
 	waitstate
 	release
 	end
@@ -172,9 +170,12 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3
-	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
-	warp MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 4, 2
+	setvar VAR_SPEEDWAGON_STATE, 4
+	setflag FLAG_SYS_BIKERS_ROUTE_110
+	setflag FLAG_ROUTE110_HIDE_CYCLIST
+	clearflag FLAG_ROUTE110_HIDE_BIKERS
+	additem ITEM_ACRO_BIKE
+	warp MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE, 2, 4
 	waitstate
 	release
 	end

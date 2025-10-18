@@ -485,6 +485,7 @@ script Baldesia_EventScript_HisuianZoruaTrigger{
     delay(8)
     applymovement(12, Common_Movement_ExclamationMark)
     waitmovement(12)
+    waitse
     msgbox("I see! My deepest apologies.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(11, Common_Movement_WalkInPlaceDown)

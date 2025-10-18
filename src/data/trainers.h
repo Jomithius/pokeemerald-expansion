@@ -14316,13 +14316,13 @@ F_TRAINER_FEMALE |
 #line 5307
             .gender = TRAINER_MON_FEMALE,
 #line 5307
-            .heldItem = ITEM_HEAT_ROCK,
+            .heldItem = ITEM_CHARCOAL,
 #line 5310
             .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 140, 4),
 #line 5312
             .iv = TRAINER_PARTY_IVS(30, 31, 31, 31, 30, 31),
 #line 5308
-            .ability = ABILITY_DROUGHT,
+            .ability = ABILITY_FLASH_FIRE,
 #line 5309
             .lvl = 34,
 #line 5311
@@ -14331,7 +14331,7 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 5313
                 MOVE_WILL_O_WISP,
-                MOVE_BURNING_JEALOUSY,
+                MOVE_MYSTICAL_FIRE,
                 MOVE_EXTRASENSORY,
                 MOVE_SWIFT,
             },
@@ -14431,7 +14431,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5355
-                MOVE_OVERHEAT,
+                MOVE_MYSTICAL_FIRE,
                 MOVE_PSYSHOCK,
                 MOVE_WORK_UP,
                 MOVE_SHOCK_WAVE,
@@ -14443,7 +14443,7 @@ F_TRAINER_FEMALE |
 #line 5360
             .gender = TRAINER_MON_MALE,
 #line 5360
-            .heldItem = ITEM_AIR_BALLOON,
+            .heldItem = ITEM_MISTY_SEED,
 #line 5363
             .ev = TRAINER_PARTY_EVS(248, 0, 24, 0, 228, 0),
 #line 5365
@@ -65762,11 +65762,11 @@ F_TRAINER_FEMALE |
 #line 25009
             .gender = TRAINER_MON_FEMALE,
 #line 25009
-            .heldItem = ITEM_HEAT_ROCK,
+            .heldItem = ITEM_CHARCOAL,
 #line 25013
             .iv = TRAINER_PARTY_IVS(30, 31, 31, 31, 25, 31),
 #line 25010
-            .ability = ABILITY_DROUGHT,
+            .ability = ABILITY_FLASH_FIRE,
 #line 25011
             .lvl = 33,
 #line 25012
@@ -65774,7 +65774,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 25014
-                MOVE_INCINERATE,
+                MOVE_MYSTICAL_FIRE,
                 MOVE_EXTRASENSORY,
             },
             },
@@ -65861,7 +65861,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 25046
-                MOVE_OVERHEAT,
+                MOVE_MYSTICAL_FIRE,
                 MOVE_PSYSHOCK,
             },
             },
@@ -65871,7 +65871,7 @@ F_TRAINER_FEMALE |
 #line 25049
             .gender = TRAINER_MON_MALE,
 #line 25049
-            .heldItem = ITEM_AIR_BALLOON,
+            .heldItem = ITEM_MISTY_SEED,
 #line 25053
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 25050

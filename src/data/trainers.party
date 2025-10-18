@@ -5304,14 +5304,14 @@ Double Battle: No
 AI: Smart Trainer 
 Mugshot: Pink
 
-Ninetales (F) @ Heat Rock  
-Ability: Drought  
+Ninetales (F) @ Charcoal
+Ability: Flash Fire
 Level: 34  
 EVs: 140 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Will-O-Wisp 
-- Burning Jealousy
+- Mystical Fire
 - Extrasensory  
 - Swift
 
@@ -5352,12 +5352,12 @@ Level: 34
 EVs: 20 Def / 240 SpA / 248 Spe  
 Serious Nature  
 IVs: 0 Atk  
-- Overheat  
+- Mystical Fire
 - Psyshock  
 - Work Up  
 - Shock Wave  
 
-Ampharos (M) @ Air Balloon  
+Ampharos (M) @ Misty Seed 
 Ability: Static  
 Level: 34  
 EVs: 248 HP / 24 Def / 228 SpA  
@@ -25006,12 +25006,12 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Pink
 
-Ninetales (F) @ Heat Rock  
-Ability: Drought  
+Ninetales (F) @ Charcoal
+Ability: Flash Fire
 Level: 33 
 Timid Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 25 SpA / 31 SpD / 31 Spe
-- Incinerate 
+- Mystical Fire
 - Extrasensory  
 
 Fletchinder (M) @ Sitrus Berry  
@@ -25043,10 +25043,10 @@ Ability: Magician
 Level: 33 
 Timid Nature  
 IVs: 0 Atk  
-- Overheat  
+- Mystical Fire
 - Psyshock   
 
-Ampharos (M) @ Air Balloon  
+Ampharos (M) @ Misty Seed
 Ability: Static  
 Level: 33 
 Modest Nature  

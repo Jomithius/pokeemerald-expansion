@@ -1071,20 +1071,22 @@ script Route110_EventScript_Speedwagon{
 	clearflag(FLAG_DONT_TRANSITION_MUSIC)
 	clearflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
 	addobject(48)
-	applymovement(48, Common_Movement_WalkUp5)
+	applymovement(48, Common_Movement_WalkDown6)
 	waitmovement(48)
-	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
 	msgbox(Route110_Text_PolicemanThankYou, MSGBOX_DEFAULT)
 	waitmessage
 	giveitem(ITEM_TM_U_TURN)
 	waitmessage
 	msgbox(Route110_Text_PolicemanThankYou2, MSGBOX_AUTOCLOSE)
 	waitmessage
-	applymovement(48, Common_Movement_WalkDown6)
+	applymovement(48, Common_Movement_WalkUp6)
 	waitmovement(48)
 	removeobject(48)
 	setflag(FLAG_HIDE_POLICEMAN_ROUTE_110)
 	setvar(VAR_SPEEDWAGON_STATE, 8)
+	delay(16)
 	release
 	end
 }

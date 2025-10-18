@@ -786,8 +786,12 @@ script LilycoveCity_EventScript_EmoBully{
     delay(30)
     msgbox(LilycoveCity_Text_Emo1, MSGBOX_AUTOCLOSE)
     waitmessage
-	applymovement(23, LilycoveCity_Movement_WalkBackRight)
-    delay(16)
+	applymovement(24, Common_Movement_WalkInPlaceFasterRight)
+	playse(SE_NOT_EFFECTIVE)
+	applymovement(23, LilycoveCity_Movement_WalkBackFasterRight)
+	waitmovement(23)
+	waitse
+    delay(16) // remove?
     applymovement(24, Common_Movement_WalkRight)
     delay(10)
     applymovement(25, Common_Movement_WalkRight)
@@ -802,6 +806,7 @@ script LilycoveCity_EventScript_EmoBully{
     addobject(27)
     addobject(28)
     fadescreenspeed(FADE_FROM_WHITE, 2)
+	waitse
     delay(10)
     playse(SE_PIN)
     applymovement(24, Common_Movement_ExclamationMark)
@@ -995,9 +1000,9 @@ movement LilycoveCity_Movement_EmoLeave{
     walk_left * 9
 }
 
-movement LilycoveCity_Movement_WalkBackRight{
+movement LilycoveCity_Movement_WalkBackFasterRight{
     lock_facing_direction
-    walk_right
+    walk_faster_right
     unlock_facing_direction
 }
 
@@ -1081,7 +1086,7 @@ script LilycoveCity_EventScript_CEO_HighriseNoEntry{
 	applymovement(OBJ_EVENT_ID_PLAYER, LilycoveCity_Movement_WalkBackDown)
 	applymovement(30, LilycoveCity_Movement_StaffEmployee)
 	waitmovement(0)
-	msgbox(LilycoveCity_Text_StaffEmployee, MSGBOX_DEFAULT)
+	msgbox(LilycoveCity_Text_StaffEmployee, MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(30, LilycoveCity_Movement_StaffEmployee2)
 	waitmovement(30)

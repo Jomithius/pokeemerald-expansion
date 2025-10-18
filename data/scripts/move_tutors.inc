@@ -314,4 +314,5 @@ MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_GRASSY_GLIDE
 	setvar VAR_0x8005, MOVE_AIR_SLASH
 	setvar VAR_0x8005, MOVE_POWER_UP_PUNCH
+	setvar VAR_0x8005, MOVE_PSYSHOCK
 	end
