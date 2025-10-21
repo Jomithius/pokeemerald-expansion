@@ -1,3 +1,6 @@
+const LOCALID_LUNA = 1
+const LOCALID_MICKEY = 2
+
 mapscripts SnowdriftCity_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: SnowdriftCity_OnTransition 
 }
@@ -5,13 +8,15 @@ mapscripts SnowdriftCity_MapScripts {
 script SnowdriftCity_OnTransition{
     setflag(FLAG_SYS_DYNAMIC_LEVELS)
     setflag(FLAG_VISITED_SNOWDRIFT_CITY)
-    call_if_set(FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN, SnowdriftCity_EventScript_HideLunaAndMickey)
+    call_if_ge(VAR_FINAL_REMATCH_STATE, 6, SnowdriftCity_EventScript_HideLunaAndMickey)
     end
 }
 
 script SnowdriftCity_EventScript_HideLunaAndMickey{
-    removeobject(1)
-    removeobject(2)
+    removeobject(LOCALID_LUNA)
+    removeobject(LOCALID_MICKEY)
+    setflag(FLAG_HIDE_LUNA_MICKEY_SNOWDRIFT_CITY)
+    clearflag(FLAG_HIDE_OLD_MAN_SNOWDRIFT)
     return
 }
 
@@ -140,6 +145,7 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
 script SnowdriftCity_Eventscript_Luna{
     lock
     faceplayer
+    goto_if_eq(VAR_FINAL_REMATCH_STATE, 6, SnowdriftCity_EventScript_LunaAndMickeyLeave)
     msgbox("Oh, it's {PLAYER}!\n
         Hm?\p
         How am I not cold like this?\n
@@ -156,6 +162,7 @@ script SnowdriftCity_Eventscript_Luna{
 script SnowdriftCity_Eventscript_Mickey{
     lock
     faceplayer
+    goto_if_eq(VAR_FINAL_REMATCH_STATE, 6, SnowdriftCity_EventScript_LunaAndMickeyLeave)
     msgbox("Hey, {PLAYER}…\p
         LUNA invited me on this trip but\n
         didn't tell me he FANTASIA'd again…\l
@@ -165,6 +172,30 @@ script SnowdriftCity_Eventscript_Mickey{
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
+    release
+    end
+}
+
+script SnowdriftCity_EventScript_LunaAndMickeyLeave{
+    if(var(VAR_LAST_TALKED) == LOCALID_MICKEY){
+        msgbox("{PLAYER}!\p
+        I just got the message from JIMMY.\n
+        I'll wait for you back at the GYM.\p
+        It's time to let the dogs out!\n
+        Awoooohoooo!", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("{PLAYER}.\n
+        I just heard from JIMMY.\p
+        I'll be waiting for you back at\n
+        the GYM.", MSGBOX_AUTOCLOSE)
+    }
+    waitmessage
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    removeobject(LOCALID_LUNA)
+    removeobject(LOCALID_MICKEY)
+    setflag(FLAG_HIDE_LUNA_MICKEY_SNOWDRIFT_CITY)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
     release
     end
 }

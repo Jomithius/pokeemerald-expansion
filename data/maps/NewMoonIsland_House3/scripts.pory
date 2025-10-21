@@ -4,6 +4,7 @@ mapscripts NewMoonIsland_House3_MapScripts {
 
 script NewMoonIsland_House3_OnTransition{
     setflag(FLAG_TEMP_E)
+    call(Common_EventScript_SetPooblesGfx)
     end
 }
 

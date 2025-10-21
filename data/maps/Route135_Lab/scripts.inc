@@ -1495,7 +1495,7 @@ Route135_Lab_EventScript_EndAreaZero_Text_0:
 
 Route135_Lab_EventScript_EndAreaZero_Text_1:
 # 546 "data/maps/Route135_Lab/scripts.pory"
-	.string "If you'd like to return to one of the\n previous worlds, COSMOG is ready.\p It seems to trust you now.$"
+	.string "PROF.: If you'd like to return to one of\n the previous worlds, COSMOG is ready.\p It seems to trust you now.$"
 
 Route135_Lab_EventScript_EndAreaZero_Text_2:
 # 553 "data/maps/Route135_Lab/scripts.pory"
@@ -1539,7 +1539,7 @@ Route135_Lab_Text_Maniac2::
 
 Route135_Lab_Text_Maniac3::
 # 665 "data/maps/Route135_Lab/scripts.pory"
-	.string "I presume you're already aware of\n what's being researched here…\p But to reiterate, I'm currently looking\n into the possibility of traveling\l to new worlds.\p In fact, I discovered the existence of\n different dimensions parallel to ours.\p I've named the endless expanse\n between these worlds ULTRA SPACE.\p There have been past accounts of rifts\n opening in other regions that can\l connect our world to this ULTRA SPACE.$"
+	.string "I presume you're already aware of\n what's being researched here…\p But to reiterate, I'm currently looking\n into the possibility of traveling to\l new worlds.\p In fact, I discovered the existence of\n different dimensions parallel to ours.\p I've named the endless expanse\n between these worlds ULTRA SPACE.\p There have been past accounts of rifts\n opening in other regions that can\l connect our world to this ULTRA SPACE.$"
 
 Route135_Lab_Text_Maniac4::
 # 680 "data/maps/Route135_Lab/scripts.pory"
@@ -1591,7 +1591,7 @@ Route_135_Lab_Text_ImBusy::
 
 Route135_Lab_Text_ManiacIntroduceAreaZero::
 # 860 "data/maps/Route135_Lab/scripts.pory"
-	.string "Ah, intern.\n Salutations.\p I assume JAMES provided you with the\n relevant information, yes?\p As you saw, COSMOG is capable of\n traversing the ULTRA SPACE at will.\p With extensive testing and research,\n we've been able to survey the ULTRA\l SPACE further.\p During these surveys, we came across\n another rift that seems to lead to\l another world…\p Seeing as you were crazy enough to\n walk across the sky, I presume you'd\l be open to being the first human to\l explore this new world, yes?$"
+	.string "Ah, intern.\n Salutations.\p I assume JAMES provided you with the\n relevant information, yes?\p As you saw, COSMOG is capable of\n traversing the ULTRA SPACE at will.\p With extensive testing and research,\n we've been able to survey the ULTRA\l SPACE further.\p During these surveys, we came across\n another rift that seems to lead to\l a different world…\p Seeing as you were crazy enough to\n walk across the sky, I presume you'd\l be open to being the first human to\l explore this new world, yes?$"
 
 Route135_Lab_Text_ManiacExplainAreaZeroCosmog::
 # 879 "data/maps/Route135_Lab/scripts.pory"

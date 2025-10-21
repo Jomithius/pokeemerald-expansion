@@ -320,7 +320,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_JAMES_FINAL] = // James
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, TYPHLOSION!\nWe're going all out from the start!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, TYPHLOSION!\nWe're going all out!{PAUSE_UNTIL_PRESS}"),
         },
     },
     [DIFFICULTY_EASY] =

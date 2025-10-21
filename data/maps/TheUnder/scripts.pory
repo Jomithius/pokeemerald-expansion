@@ -23,12 +23,12 @@ script TheUnder_EventScript_Luna{
     msgbox("LUNA: {PLAYER}. You made it.\p
         JIMMY wanted me to meet you out here.\n
         He has a message for you:\p
-        Grinding is cringe, so here.\n
-        Take these.", MSGBOX_DEFAULT)
+        “Grinding is cringe, so here.\n
+        Take these.”", MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_MASTER_BALL, 24)
     waitmessage
-    msgbox("He wanted me to give you this too.\p
+    msgbox("LUNA: He wanted me to give you this too.\p
         Crystals of this stuff was found in\n
         the new caves around here.\p
         Scientists turned it into a way to make\n
@@ -48,8 +48,8 @@ script TheUnder_EventScript_Luna{
     waitmovement(7)
     applymovement(7, Common_Movement_WalkInPlaceUp)
     waitmovement(7)
-    msgbox("So that rat bastard dug all the way out\n
-        here, huh…", MSGBOX_AUTOCLOSE)
+    msgbox("LUNA: So that rat bastard dug all the\n
+        way out here, huh…", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(7, Common_Movement_WalkInPlaceLeft)
     waitmovement(7)

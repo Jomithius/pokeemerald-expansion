@@ -50,33 +50,32 @@ Pic: Momo
 Gender: Female
 Music: Female
 
-Pikachu (F) @ Light Ball
+Pikachu (F) @ Mirror Herb
 Ability: Static
 Level: 95 
 EVs: 252 Atk / 4 SpD / 252 Spe 
-Adamant Nature  
-- Nuzzle  
+Adamant Nature   
 - Volt Tackle  
 - Fake Out 
-- Play Rough
 
-Skeledirge @ Throat Spray 
-Ability: Unaware
-Level: 95  
+Skeledirge @ Assault Vest  
+Ability: Unaware  
+Level: 95
 Shiny: Yes  
-EVs: 248 HP / 8 SpA / 252 SpD  
-Calm Nature  
+EVs: 252 HP / 140 SpA / 116 SpD  
+Modest Nature  
 IVs: 0 Atk  
 - Torch Song  
-- Hex  
-- Slack Off  
-- Will-O-Wisp 
+- Alluring Voice  
+- Heat Wave  
+- Shadow Ball
 
 Dragonite (M) @ Dragoniteite
 Ability: Multiscale
-Level: 95  
+Level: 100  
 Shiny: Yes
-EVs: 252 Atk / 252 Spe      
+EVs: 252 Atk / 252 Spe
+Jolly Nature      
 - Breaking Swipe  
 - Rock Slide  
 - Extreme Speed  
@@ -98,23 +97,24 @@ Adamant Nature
 - Volt Tackle  
 - Fake Out 
 
-Skeledirge @ Throat Spray 
-Ability: Unaware
-Level: 100
-Shiny: Yes   
-EVs: 248 HP / 8 SpA / 252 SpD  
-Calm Nature  
+Skeledirge @ Assault Vest  
+Ability: Unaware  
+Shiny: Yes  
+Tera Type: Fire  
+EVs: 252 HP / 140 SpA / 116 SpD  
+Modest Nature  
 IVs: 0 Atk  
 - Torch Song  
-- Hex  
-- Slack Off 
-- Yawn 
+- Alluring Voice  
+- Heat Wave  
+- Shadow Ball
 
 Dragonite (M) @ Dragoniteite
 Ability: Multiscale
 Level: 100  
 Shiny: Yes
-EVs: 252 Atk / 252 Spe      
+EVs: 252 Atk / 252 Spe 
+Jolly Nature     
 - Breaking Swipe  
 - Rock Slide  
 - Extreme Speed  

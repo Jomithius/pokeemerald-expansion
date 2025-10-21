@@ -228,11 +228,11 @@ TheUnder_Movement_LunaSouth:
 
 TheUnder_EventScript_Luna_Text_0:
 # 23 "data/maps/TheUnder/scripts.pory"
-	.string "LUNA: {PLAYER}. You made it.\p JIMMY wanted me to meet you out here.\n He has a message for you:\p Grinding is cringe, so here.\n Take these.$"
+	.string "LUNA: {PLAYER}. You made it.\p JIMMY wanted me to meet you out here.\n He has a message for you:\p “Grinding is cringe, so here.\n Take these.”$"
 
 TheUnder_EventScript_Luna_Text_1:
 # 31 "data/maps/TheUnder/scripts.pory"
-	.string "He wanted me to give you this too.\p Crystals of this stuff was found in\n the new caves around here.\p Scientists turned it into a way to make\n your POKéMON stronger or something.$"
+	.string "LUNA: He wanted me to give you this too.\p Crystals of this stuff was found in\n the new caves around here.\p Scientists turned it into a way to make\n your POKéMON stronger or something.$"
 
 TheUnder_EventScript_Luna_Text_2:
 # 41 "data/maps/TheUnder/scripts.pory"
@@ -240,7 +240,7 @@ TheUnder_EventScript_Luna_Text_2:
 
 TheUnder_EventScript_Luna_Text_3:
 # 51 "data/maps/TheUnder/scripts.pory"
-	.string "So that rat bastard dug all the way out\n here, huh…$"
+	.string "LUNA: So that rat bastard dug all the\n way out here, huh…$"
 
 TheUnder_EventScript_Luna_Text_4:
 # 56 "data/maps/TheUnder/scripts.pory"

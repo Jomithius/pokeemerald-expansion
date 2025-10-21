@@ -168,7 +168,7 @@ AzureMountain_RestStop_EventScript_Poobles_Text_0:
 
 AzureMountain_RestStop_EventScript_Liam_Text_0:
 # 24 "data/maps/AzureMountain_RestStop/scripts.pory"
-	.string "{PLAYER}! Congratulations\n on becoming the CHAMPION.\p Ever since we heard the news, POOBLES\n and I have been up here training.\p We're gonna be way stronger the next\n time we battle!$"
+	.string "{PLAYER}! Congratulations on becoming\n the CHAMPION!\p Ever since we heard the news, POOBLES\n and I have been up here training.\p We're gonna be way stronger the next\n time we battle!$"
 
 AzureMountain_RestStop_EventScript_Cooltrainer_Text_0:
 # 40 "data/maps/AzureMountain_RestStop/scripts.pory"

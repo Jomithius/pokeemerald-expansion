@@ -319,11 +319,11 @@ Route139_EventScript_Morgan::
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Morgan_7
 Route139_EventScript_Morgan_5:
-# 274 "data/maps/Route139/scripts.pory"
+# 275 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Morgan_4
 Route139_EventScript_Morgan_1:
-# 277 "data/maps/Route139/scripts.pory"
+# 278 "data/maps/Route139/scripts.pory"
 	release
 	end
 
@@ -349,26 +349,28 @@ Route139_EventScript_Morgan_2:
 # 266 "data/maps/Route139/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
 # 267 "data/maps/Route139/scripts.pory"
-	setobjectnewmovementtype 3, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
+	setobjectmovementtype 3, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
 # 268 "data/maps/Route139/scripts.pory"
 	applymovement 3, Common_Movement_WalkInPlaceLeft
 # 269 "data/maps/Route139/scripts.pory"
 	waitmovement 3
 # 270 "data/maps/Route139/scripts.pory"
-	setflag FLAG_DEFEATED_WORKER_MORGAN
+	removeobject 3
 # 271 "data/maps/Route139/scripts.pory"
-	special DrawWholeMapView
+	setflag FLAG_DEFEATED_WORKER_MORGAN
 # 272 "data/maps/Route139/scripts.pory"
+	addobject 3
+# 273 "data/maps/Route139/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route139_EventScript_Morgan_1
 
 Route139_EventScript_Morgan_3:
-# 275 "data/maps/Route139/scripts.pory"
+# 276 "data/maps/Route139/scripts.pory"
 	goto Route139_EventScript_WorkerFiredUp
 	goto Route139_EventScript_Morgan_1
 
 Route139_EventScript_Morgan_4:
-# 274 "data/maps/Route139/scripts.pory"
+# 275 "data/maps/Route139/scripts.pory"
 	goto_if_set FLAG_DEFEATED_WORKER_MORGAN, Route139_EventScript_Morgan_3
 	goto Route139_EventScript_Morgan_1
 
@@ -379,370 +381,378 @@ Route139_EventScript_Morgan_7:
 
 
 Route139_EventScript_Dinwiddle::
-# 282 "data/maps/Route139/scripts.pory"
-	lock
 # 283 "data/maps/Route139/scripts.pory"
-	goto_if_eq VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored
+	lock
 # 284 "data/maps/Route139/scripts.pory"
+	goto_if_eq VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored
+# 285 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Dinwiddle_7
 Route139_EventScript_Dinwiddle_5:
-# 304 "data/maps/Route139/scripts.pory"
+# 306 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Dinwiddle_4
 Route139_EventScript_Dinwiddle_1:
-# 307 "data/maps/Route139/scripts.pory"
+# 309 "data/maps/Route139/scripts.pory"
 	release
 	end
 
 Route139_EventScript_Dinwiddle_2:
-# 285 "data/maps/Route139/scripts.pory"
-	faceplayer
 # 286 "data/maps/Route139/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
+	faceplayer
 # 287 "data/maps/Route139/scripts.pory"
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
+# 288 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
-# 289 "data/maps/Route139/scripts.pory"
-	waitmessage
 # 290 "data/maps/Route139/scripts.pory"
-	trainerbattle_no_intro TRAINER_DINWIDDLE, Route139_Text_WorkerDefeat
-# 291 "data/maps/Route139/scripts.pory"
-	msgbox Route139_EventScript_Morgan_Text_1, MSGBOX_AUTOCLOSE
-# 293 "data/maps/Route139/scripts.pory"
 	waitmessage
+# 291 "data/maps/Route139/scripts.pory"
+	trainerbattle_no_intro TRAINER_DINWIDDLE, Route139_Text_WorkerDefeat
+# 292 "data/maps/Route139/scripts.pory"
+	msgbox Route139_EventScript_Morgan_Text_1, MSGBOX_AUTOCLOSE
 # 294 "data/maps/Route139/scripts.pory"
-	addvar VAR_ROUTE_139_TRAINER_COUNT, 1
+	waitmessage
 # 295 "data/maps/Route139/scripts.pory"
-	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
+	addvar VAR_ROUTE_139_TRAINER_COUNT, 1
 # 296 "data/maps/Route139/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 297 "data/maps/Route139/scripts.pory"
-	setobjectnewmovementtype 5, MOVEMENT_TYPE_WALK_IN_PLACE_UP
+	fadescreenswapbuffers FADE_TO_BLACK
 # 298 "data/maps/Route139/scripts.pory"
-	applymovement 5, Common_Movement_WalkInPlaceUp
+	setobjectmovementtype 5, MOVEMENT_TYPE_WALK_IN_PLACE_UP
 # 299 "data/maps/Route139/scripts.pory"
-	waitmovement 5
+	applymovement 5, Common_Movement_WalkInPlaceUp
 # 300 "data/maps/Route139/scripts.pory"
-	setflag FLAG_DEFEATED_WORKER_DINWIDDLE
+	waitmovement 5
 # 301 "data/maps/Route139/scripts.pory"
-	special DrawWholeMapView
+	removeobject 5
 # 302 "data/maps/Route139/scripts.pory"
+	setflag FLAG_DEFEATED_WORKER_DINWIDDLE
+# 303 "data/maps/Route139/scripts.pory"
+	addobject 5
+# 304 "data/maps/Route139/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route139_EventScript_Dinwiddle_1
 
 Route139_EventScript_Dinwiddle_3:
-# 305 "data/maps/Route139/scripts.pory"
+# 307 "data/maps/Route139/scripts.pory"
 	goto Route139_EventScript_WorkerFiredUp
 	goto Route139_EventScript_Dinwiddle_1
 
 Route139_EventScript_Dinwiddle_4:
-# 304 "data/maps/Route139/scripts.pory"
+# 306 "data/maps/Route139/scripts.pory"
 	goto_if_set FLAG_DEFEATED_WORKER_DINWIDDLE, Route139_EventScript_Dinwiddle_3
 	goto Route139_EventScript_Dinwiddle_1
 
 Route139_EventScript_Dinwiddle_7:
-# 284 "data/maps/Route139/scripts.pory"
+# 285 "data/maps/Route139/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_WORKER_DINWIDDLE, Route139_EventScript_Dinwiddle_2
 	goto Route139_EventScript_Dinwiddle_5
 
 
 Route139_EventScript_Widdledin::
-# 312 "data/maps/Route139/scripts.pory"
-	lock
-# 313 "data/maps/Route139/scripts.pory"
-	goto_if_eq VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored
 # 314 "data/maps/Route139/scripts.pory"
+	lock
+# 315 "data/maps/Route139/scripts.pory"
+	goto_if_eq VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored
+# 316 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Widdledin_7
 Route139_EventScript_Widdledin_5:
-# 334 "data/maps/Route139/scripts.pory"
+# 337 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Widdledin_4
 Route139_EventScript_Widdledin_1:
-# 337 "data/maps/Route139/scripts.pory"
+# 340 "data/maps/Route139/scripts.pory"
 	release
 	end
 
 Route139_EventScript_Widdledin_2:
-# 315 "data/maps/Route139/scripts.pory"
-	faceplayer
-# 316 "data/maps/Route139/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 317 "data/maps/Route139/scripts.pory"
-	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
+	faceplayer
+# 318 "data/maps/Route139/scripts.pory"
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 319 "data/maps/Route139/scripts.pory"
-	waitmessage
-# 320 "data/maps/Route139/scripts.pory"
-	trainerbattle_no_intro TRAINER_WIDDLEDIN, Route139_Text_WorkerDefeat
+	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
 # 321 "data/maps/Route139/scripts.pory"
-	msgbox Route139_EventScript_Morgan_Text_1, MSGBOX_AUTOCLOSE
-# 323 "data/maps/Route139/scripts.pory"
 	waitmessage
-# 324 "data/maps/Route139/scripts.pory"
-	addvar VAR_ROUTE_139_TRAINER_COUNT, 1
+# 322 "data/maps/Route139/scripts.pory"
+	trainerbattle_no_intro TRAINER_WIDDLEDIN, Route139_Text_WorkerDefeat
+# 323 "data/maps/Route139/scripts.pory"
+	msgbox Route139_EventScript_Morgan_Text_1, MSGBOX_AUTOCLOSE
 # 325 "data/maps/Route139/scripts.pory"
-	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
+	waitmessage
 # 326 "data/maps/Route139/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	addvar VAR_ROUTE_139_TRAINER_COUNT, 1
 # 327 "data/maps/Route139/scripts.pory"
-	setobjectnewmovementtype 6, MOVEMENT_TYPE_WALK_IN_PLACE_UP
+	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 328 "data/maps/Route139/scripts.pory"
-	applymovement 6, Common_Movement_WalkInPlaceUp
+	fadescreenswapbuffers FADE_TO_BLACK
 # 329 "data/maps/Route139/scripts.pory"
-	waitmovement 6
+	setobjectmovementtype 6, MOVEMENT_TYPE_WALK_IN_PLACE_UP
 # 330 "data/maps/Route139/scripts.pory"
-	setflag FLAG_DEFEATED_WORKER_WIDDLEDIN
+	applymovement 6, Common_Movement_WalkInPlaceUp
 # 331 "data/maps/Route139/scripts.pory"
-	special DrawWholeMapView
+	waitmovement 6
 # 332 "data/maps/Route139/scripts.pory"
+	removeobject 6
+# 333 "data/maps/Route139/scripts.pory"
+	setflag FLAG_DEFEATED_WORKER_WIDDLEDIN
+# 334 "data/maps/Route139/scripts.pory"
+	addobject 6
+# 335 "data/maps/Route139/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route139_EventScript_Widdledin_1
 
 Route139_EventScript_Widdledin_3:
-# 335 "data/maps/Route139/scripts.pory"
+# 338 "data/maps/Route139/scripts.pory"
 	goto Route139_EventScript_WorkerFiredUp
 	goto Route139_EventScript_Widdledin_1
 
 Route139_EventScript_Widdledin_4:
-# 334 "data/maps/Route139/scripts.pory"
+# 337 "data/maps/Route139/scripts.pory"
 	goto_if_set FLAG_DEFEATED_WORKER_WIDDLEDIN, Route139_EventScript_Widdledin_3
 	goto Route139_EventScript_Widdledin_1
 
 Route139_EventScript_Widdledin_7:
-# 314 "data/maps/Route139/scripts.pory"
+# 316 "data/maps/Route139/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_WORKER_WIDDLEDIN, Route139_EventScript_Widdledin_2
 	goto Route139_EventScript_Widdledin_5
 
 
 Route139_EventScript_Johnald::
-# 342 "data/maps/Route139/scripts.pory"
+# 345 "data/maps/Route139/scripts.pory"
 	lock
-# 343 "data/maps/Route139/scripts.pory"
+# 346 "data/maps/Route139/scripts.pory"
 	goto_if_eq VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored
-# 344 "data/maps/Route139/scripts.pory"
+# 347 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Johnald_7
 Route139_EventScript_Johnald_5:
-# 364 "data/maps/Route139/scripts.pory"
+# 368 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Johnald_4
 Route139_EventScript_Johnald_1:
-# 367 "data/maps/Route139/scripts.pory"
+# 371 "data/maps/Route139/scripts.pory"
 	release
 	end
 
 Route139_EventScript_Johnald_2:
-# 345 "data/maps/Route139/scripts.pory"
+# 348 "data/maps/Route139/scripts.pory"
 	faceplayer
-# 346 "data/maps/Route139/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
-# 347 "data/maps/Route139/scripts.pory"
-	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
 # 349 "data/maps/Route139/scripts.pory"
-	waitmessage
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 350 "data/maps/Route139/scripts.pory"
-	trainerbattle_no_intro TRAINER_JOHNALD, Route139_Text_WorkerDefeat
-# 351 "data/maps/Route139/scripts.pory"
-	msgbox Route139_EventScript_Morgan_Text_1, MSGBOX_AUTOCLOSE
-# 353 "data/maps/Route139/scripts.pory"
+	msgbox Route139_EventScript_Morgan_Text_0, MSGBOX_AUTOCLOSE
+# 352 "data/maps/Route139/scripts.pory"
 	waitmessage
+# 353 "data/maps/Route139/scripts.pory"
+	trainerbattle_no_intro TRAINER_JOHNALD, Route139_Text_WorkerDefeat
 # 354 "data/maps/Route139/scripts.pory"
-	addvar VAR_ROUTE_139_TRAINER_COUNT, 1
-# 355 "data/maps/Route139/scripts.pory"
-	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
+	msgbox Route139_EventScript_Morgan_Text_1, MSGBOX_AUTOCLOSE
 # 356 "data/maps/Route139/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	waitmessage
 # 357 "data/maps/Route139/scripts.pory"
-	setobjectnewmovementtype 2, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
+	addvar VAR_ROUTE_139_TRAINER_COUNT, 1
 # 358 "data/maps/Route139/scripts.pory"
-	applymovement 2, Common_Movement_WalkInPlaceLeft
+	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 359 "data/maps/Route139/scripts.pory"
-	waitmovement 2
+	fadescreenswapbuffers FADE_TO_BLACK
 # 360 "data/maps/Route139/scripts.pory"
-	setflag FLAG_DEFEATED_WORKER_JOHNALD
+	setobjectmovementtype 2, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
 # 361 "data/maps/Route139/scripts.pory"
-	special DrawWholeMapView
+	applymovement 2, Common_Movement_WalkInPlaceLeft
 # 362 "data/maps/Route139/scripts.pory"
+	waitmovement 2
+# 363 "data/maps/Route139/scripts.pory"
+	removeobject 2
+# 364 "data/maps/Route139/scripts.pory"
+	setflag FLAG_DEFEATED_WORKER_JOHNALD
+# 365 "data/maps/Route139/scripts.pory"
+	addobject 2
+# 366 "data/maps/Route139/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route139_EventScript_Johnald_1
 
 Route139_EventScript_Johnald_3:
-# 365 "data/maps/Route139/scripts.pory"
+# 369 "data/maps/Route139/scripts.pory"
 	goto Route139_EventScript_WorkerFiredUp
 	goto Route139_EventScript_Johnald_1
 
 Route139_EventScript_Johnald_4:
-# 364 "data/maps/Route139/scripts.pory"
+# 368 "data/maps/Route139/scripts.pory"
 	goto_if_set FLAG_DEFEATED_WORKER_JOHNALD, Route139_EventScript_Johnald_3
 	goto Route139_EventScript_Johnald_1
 
 Route139_EventScript_Johnald_7:
-# 344 "data/maps/Route139/scripts.pory"
+# 347 "data/maps/Route139/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_WORKER_JOHNALD, Route139_EventScript_Johnald_2
 	goto Route139_EventScript_Johnald_5
 
 
 Route139_EventScript_Fredward::
-# 372 "data/maps/Route139/scripts.pory"
+# 376 "data/maps/Route139/scripts.pory"
 	lock
-# 373 "data/maps/Route139/scripts.pory"
+# 377 "data/maps/Route139/scripts.pory"
 	goto_if_eq VAR_BALDESIA_ROUTE_139_STATE, 0, Route139_EventScript_WorkerBored
-# 374 "data/maps/Route139/scripts.pory"
+# 378 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Fredward_7
 Route139_EventScript_Fredward_5:
-# 396 "data/maps/Route139/scripts.pory"
+# 401 "data/maps/Route139/scripts.pory"
 	compare VAR_BALDESIA_ROUTE_139_STATE, 1
 	goto_if_ge Route139_EventScript_Fredward_4
 Route139_EventScript_Fredward_1:
-# 399 "data/maps/Route139/scripts.pory"
+# 404 "data/maps/Route139/scripts.pory"
 	release
 	end
 
 Route139_EventScript_Fredward_2:
-# 375 "data/maps/Route139/scripts.pory"
+# 379 "data/maps/Route139/scripts.pory"
 	faceplayer
-# 376 "data/maps/Route139/scripts.pory"
+# 380 "data/maps/Route139/scripts.pory"
 	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
-# 377 "data/maps/Route139/scripts.pory"
-	msgbox Route139_EventScript_Fredward_Text_0, MSGBOX_AUTOCLOSE
 # 381 "data/maps/Route139/scripts.pory"
-	waitmessage
-# 382 "data/maps/Route139/scripts.pory"
-	trainerbattle_no_intro TRAINER_FREDWARD, Route139_Text_WorkerDefeat
-# 383 "data/maps/Route139/scripts.pory"
-	msgbox Route139_EventScript_Morgan_Text_1, MSGBOX_AUTOCLOSE
+	msgbox Route139_EventScript_Fredward_Text_0, MSGBOX_AUTOCLOSE
 # 385 "data/maps/Route139/scripts.pory"
 	waitmessage
 # 386 "data/maps/Route139/scripts.pory"
-	addvar VAR_ROUTE_139_TRAINER_COUNT, 1
+	trainerbattle_no_intro TRAINER_FREDWARD, Route139_Text_WorkerDefeat
 # 387 "data/maps/Route139/scripts.pory"
-	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
-# 388 "data/maps/Route139/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	msgbox Route139_EventScript_Morgan_Text_1, MSGBOX_AUTOCLOSE
 # 389 "data/maps/Route139/scripts.pory"
-	setobjectnewmovementtype 7, MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT
+	waitmessage
 # 390 "data/maps/Route139/scripts.pory"
-	applymovement 7, Common_Movement_WalkInPlaceRight
+	addvar VAR_ROUTE_139_TRAINER_COUNT, 1
 # 391 "data/maps/Route139/scripts.pory"
-	waitmovement 7
+	addvar VAR_BALDESIA_ROUTE_139_STATE, 1
 # 392 "data/maps/Route139/scripts.pory"
-	setflag FLAG_DEFEATED_WORKER_FREDWARD
+	fadescreenswapbuffers FADE_TO_BLACK
 # 393 "data/maps/Route139/scripts.pory"
-	special DrawWholeMapView
+	setobjectmovementtype 7, MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT
 # 394 "data/maps/Route139/scripts.pory"
+	applymovement 7, Common_Movement_WalkInPlaceRight
+# 395 "data/maps/Route139/scripts.pory"
+	waitmovement 7
+# 396 "data/maps/Route139/scripts.pory"
+	removeobject 7
+# 397 "data/maps/Route139/scripts.pory"
+	setflag FLAG_DEFEATED_WORKER_FREDWARD
+# 398 "data/maps/Route139/scripts.pory"
+	addobject 7
+# 399 "data/maps/Route139/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route139_EventScript_Fredward_1
 
 Route139_EventScript_Fredward_3:
-# 397 "data/maps/Route139/scripts.pory"
+# 402 "data/maps/Route139/scripts.pory"
 	goto Route139_EventScript_WorkerFiredUp
 	goto Route139_EventScript_Fredward_1
 
 Route139_EventScript_Fredward_4:
-# 396 "data/maps/Route139/scripts.pory"
+# 401 "data/maps/Route139/scripts.pory"
 	goto_if_set FLAG_DEFEATED_WORKER_FREDWARD, Route139_EventScript_Fredward_3
 	goto Route139_EventScript_Fredward_1
 
 Route139_EventScript_Fredward_7:
-# 374 "data/maps/Route139/scripts.pory"
+# 378 "data/maps/Route139/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_WORKER_FREDWARD, Route139_EventScript_Fredward_2
 	goto Route139_EventScript_Fredward_5
 
 
 Route139_EventScript_WorkerFiredUp::
-# 404 "data/maps/Route139/scripts.pory"
-	lock
-# 405 "data/maps/Route139/scripts.pory"
-	faceplayer
-# 406 "data/maps/Route139/scripts.pory"
-	msgbox Route139_EventScript_WorkerFiredUp_Text_0, MSGBOX_AUTOCLOSE
 # 409 "data/maps/Route139/scripts.pory"
-	waitmessage
+	lock
 # 410 "data/maps/Route139/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	faceplayer
 # 411 "data/maps/Route139/scripts.pory"
+	msgbox Route139_EventScript_WorkerFiredUp_Text_0, MSGBOX_AUTOCLOSE
+# 414 "data/maps/Route139/scripts.pory"
+	waitmessage
+# 415 "data/maps/Route139/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 416 "data/maps/Route139/scripts.pory"
 	waitmovement 0
-# 412 "data/maps/Route139/scripts.pory"
+# 417 "data/maps/Route139/scripts.pory"
 	release
 	end
 
 
 Route139_EventScript_WorkerBored::
-# 417 "data/maps/Route139/scripts.pory"
+# 422 "data/maps/Route139/scripts.pory"
 	lock
-# 418 "data/maps/Route139/scripts.pory"
+# 423 "data/maps/Route139/scripts.pory"
 	msgbox Route139_EventScript_WorkerBored_Text_0, MSGBOX_AUTOCLOSE
-# 419 "data/maps/Route139/scripts.pory"
+# 424 "data/maps/Route139/scripts.pory"
 	waitmessage
-# 420 "data/maps/Route139/scripts.pory"
+# 425 "data/maps/Route139/scripts.pory"
 	release
 	end
 
 
-# 428 "data/maps/Route139/scripts.pory"
+# 433 "data/maps/Route139/scripts.pory"
 Route139_Movement_MomoToPlayerLeftTrigger:
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
-# 429 "data/maps/Route139/scripts.pory"
+# 434 "data/maps/Route139/scripts.pory"
 	walk_left
 	step_end
 
-# 432 "data/maps/Route139/scripts.pory"
+# 437 "data/maps/Route139/scripts.pory"
 Route139_Movement_MomoToPlayerTrigger:
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
-# 433 "data/maps/Route139/scripts.pory"
+# 438 "data/maps/Route139/scripts.pory"
 	walk_left
 	step_end
 
-# 436 "data/maps/Route139/scripts.pory"
+# 441 "data/maps/Route139/scripts.pory"
 Route139_Movement_MomoToPlayerRightTrigger:
-# 437 "data/maps/Route139/scripts.pory"
+# 442 "data/maps/Route139/scripts.pory"
 	walk_left
-# 437 "data/maps/Route139/scripts.pory"
+# 442 "data/maps/Route139/scripts.pory"
 	walk_left
-# 437 "data/maps/Route139/scripts.pory"
+# 442 "data/maps/Route139/scripts.pory"
 	walk_left
-# 437 "data/maps/Route139/scripts.pory"
+# 442 "data/maps/Route139/scripts.pory"
 	walk_left
-# 437 "data/maps/Route139/scripts.pory"
+# 442 "data/maps/Route139/scripts.pory"
 	walk_left
-# 437 "data/maps/Route139/scripts.pory"
+# 442 "data/maps/Route139/scripts.pory"
 	walk_left
-# 437 "data/maps/Route139/scripts.pory"
+# 442 "data/maps/Route139/scripts.pory"
 	walk_left
-# 437 "data/maps/Route139/scripts.pory"
+# 442 "data/maps/Route139/scripts.pory"
 	walk_left
 	step_end
 
@@ -840,7 +850,7 @@ Route139_EventScript_KimonoOldWoman_Text_0:
 
 Route139_EventScript_StartSidequest_Text_0:
 # 191 "data/maps/Route139/scripts.pory"
-	.string "Hm… I sense strength in you, young one.\n Would you mind helping an old lady out?\p These meatheads only think about\n battling, and they're all bored of\l battling each other.\p Do you mind battling them?\n I want them to get fired up.\p I'll give you a reward if you can\n defeat all 5 of them.$"
+	.string "Hm… I sense strength in you, young one.\n Would you mind helping an old lady out?\p These meathead workers only think\n about battling, and they're all bored\l of battling each other.\p Do you mind battling them?\n I want them to get fired up.\p I'll give you a reward if you can\n defeat all 5 of them.$"
 
 Route139_EventScript_RemindSidequest_Text_0:
 # 208 "data/maps/Route139/scripts.pory"
@@ -867,17 +877,17 @@ Route139_EventScript_Morgan_Text_1:
 	.string "Okay!\n I feel like I can focus on my work now!$"
 
 Route139_EventScript_Fredward_Text_0:
-# 377 "data/maps/Route139/scripts.pory"
+# 381 "data/maps/Route139/scripts.pory"
 	.string "Huh? The boss said we should battle?\n All right!\p Just warning you, I'm the strongest out\n of all of us!$"
 
 Route139_EventScript_WorkerFiredUp_Text_0:
-# 406 "data/maps/Route139/scripts.pory"
+# 411 "data/maps/Route139/scripts.pory"
 	.string "Thanks!\n I lost, but that was a great battle!\p I feel like I can focus on my work now!$"
 
 Route139_EventScript_WorkerBored_Text_0:
-# 418 "data/maps/Route139/scripts.pory"
+# 423 "data/maps/Route139/scripts.pory"
 	.string "So bored…$"
 
 Route139_Text_WorkerDefeat::
-# 424 "data/maps/Route139/scripts.pory"
+# 429 "data/maps/Route139/scripts.pory"
 	.string "That was a great battle!$"

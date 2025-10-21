@@ -448,7 +448,7 @@ MtPyre_Exterior_Text_Emo2::
 
 MtPyre_Exterior_Text_Emo3::
 # 136 "data/maps/MtPyre_Exterior/scripts.pory"
-	.string "I'm heading to MOSSDEEP next\n after stopping by LILYCOVE.\p I heard the DEPT. STORE there sells\n rare items.\p See ya, {PLAYER}.$"
+	.string "JAMES: I'm heading to MOSSDEEP next\n after stopping by LILYCOVE.\p I heard the DEPT. STORE there sells\n rare items.\p See ya, {PLAYER}.$"
 
 MtPyre_Exterior_Text_RivalDefeat::
 # 144 "data/maps/MtPyre_Exterior/scripts.pory"

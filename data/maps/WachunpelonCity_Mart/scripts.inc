@@ -36,29 +36,25 @@ WachunpelonCity_Mart_EventScript_Clerk::
 # 26 "data/maps/WachunpelonCity_Mart/scripts.pory"
 WachunpelonCity_Mart_Pokemart:
 # 27 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_FULL_RESTORE
-# 28 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_FULL_HEAL
-# 29 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_ABILITY_CAPSULE
-# 30 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_ABILITY_PATCH
-# 31 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_MAX_REVIVE
-# 32 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_MAX_REPEL
-# 33 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_MAX_LURE
-# 34 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_ELIXIR
-# 35 "data/maps/WachunpelonCity_Mart/scripts.pory"
-	.2byte ITEM_QUICK_BALL
-# 36 "data/maps/WachunpelonCity_Mart/scripts.pory"
 	.2byte ITEM_ULTRA_BALL
-# 37 "data/maps/WachunpelonCity_Mart/scripts.pory"
+# 28 "data/maps/WachunpelonCity_Mart/scripts.pory"
 	.2byte ITEM_DUSK_BALL
-# 38 "data/maps/WachunpelonCity_Mart/scripts.pory"
+# 29 "data/maps/WachunpelonCity_Mart/scripts.pory"
 	.2byte ITEM_TIMER_BALL
+# 30 "data/maps/WachunpelonCity_Mart/scripts.pory"
+	.2byte ITEM_QUICK_BALL
+# 31 "data/maps/WachunpelonCity_Mart/scripts.pory"
+	.2byte ITEM_FULL_RESTORE
+# 32 "data/maps/WachunpelonCity_Mart/scripts.pory"
+	.2byte ITEM_FULL_HEAL
+# 33 "data/maps/WachunpelonCity_Mart/scripts.pory"
+	.2byte ITEM_MAX_REVIVE
+# 34 "data/maps/WachunpelonCity_Mart/scripts.pory"
+	.2byte ITEM_MAX_REPEL
+# 35 "data/maps/WachunpelonCity_Mart/scripts.pory"
+	.2byte ITEM_MAX_LURE
+# 36 "data/maps/WachunpelonCity_Mart/scripts.pory"
+	.2byte ITEM_ELIXIR
 	.2byte ITEM_NONE
 
 WachunpelonCity_Mart_EventScript_Lass_Text_0:

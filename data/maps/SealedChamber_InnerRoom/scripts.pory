@@ -150,6 +150,8 @@ script SealedChamber_InnerRoom_EventScript_RegigigasAwakens{
         waitmoncry
         fadescreenswapbuffers(FADE_TO_BLACK)
         setobjectnewmovementtype(1, MOVEMENT_TYPE_NONE)
+		applymovement(1, Common_Movement_FaceDown)
+		waitmovement(1)
         fadescreenswapbuffers(FADE_FROM_BLACK)
         msgbox("REGIGIGAS stopped moving…", MSGBOX_AUTOCLOSE)
         waitmessage

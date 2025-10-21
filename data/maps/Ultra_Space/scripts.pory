@@ -712,9 +712,9 @@ movement Ultra_Space_Movement_JamesGoesToNecrozma{
 }
 
 movement Ultra_Space_Movement_ManiacGoesToNecrozma{
-    walk_up * 3
+    walk_up * 5
     walk_left
-    walk_up * 4
+    walk_up * 2
 }
 
 movement Ultra_Space_Movement_Cosmog{

@@ -214,6 +214,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex::
 	waitmovement 0
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2, MSGBOX_DEFAULT
 	closemessage
+	setflag FLAG_HIDE_JAMES_RUSTBORO_CITY
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2
@@ -552,6 +553,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese, MSGBOX_DEFAULT
+	additem ITEM_POKE_BALL, 10
 	giveitem ITEM_QUICK_BALL, 20
 	call_if_eq VAR_RESULT, FALSE, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanNoRoomForPokeBalls
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls, MSGBOX_DEFAULT
@@ -1125,8 +1127,8 @@ text LittlerootTown_ProfessorBirchsLab_Text_BrendanIHaveToPrepare{
 }
 
 text LittlerootTown_ProfessorBirchsLab_Text_BirchIllBeCountingOnYou{
-	"Now, if the reports I've recieved\n
-	are true, we're going to be very\l
-	busy for a while.\p
+	"PROF. BIRCH: Now, if the reports I've\n
+	recieved are true, we're going to be\l
+	very busy for a while.\p
 	I'll be counting on you, {RIVAL}."
 }

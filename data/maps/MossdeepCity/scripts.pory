@@ -825,7 +825,7 @@ script MossdeepCity_EventScript_PunchesTutorChoices{
 	lock
 	msgbox("Which punch do you want me\nto teach?", MSGBOX_DEFAULT)
 	dynmultichoice(0,0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "FIRE PUNCH", "ICE PUNCH", "THUNDER PUNCH", "BULLET PUNCH", "SUCKER PUNCH", "FAKE OUT",
-																"POWER UP PUNCH")
+																"POWER UP PUNCH", "MACH PUNCH")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(MoveTutor_EventScript_FirePunchTeach)
@@ -841,6 +841,8 @@ script MossdeepCity_EventScript_PunchesTutorChoices{
 			goto(MoveTutor_EventScript_FakeOutTeach)
 		case 6:
 			goto(MoveTutor_EventScript_PowerUpPunchTeach)
+		case 7:
+			goto(MoveTutor_EventScript_MachPunchTeach)
 		case MULTI_B_PRESSED:
 			goto(MossdeepCity_EventScript_PunchesTutorDecline)
 		default:
@@ -906,6 +908,15 @@ script MoveTutor_EventScript_FakeOutTeach{
 script MoveTutor_EventScript_PowerUpPunchTeach{
 	msgbox("Which POKéMON do you want to\nteach POWER UP PUNCH to?", MSGBOX_DEFAULT)
 	setvar(VAR_0x8005, MOVE_POWER_UP_PUNCH)
+	call(MoveTutor_EventScript_OpenPartyMenu)
+	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline)
+	goto(MossdeepCity_EventScript_PunchesTutorTaught)
+	end
+}
+
+script MoveTutor_EventScript_MachPunchTeach{
+	msgbox("Which POKéMON do you want to\nteach MACH PUNCH to?", MSGBOX_DEFAULT)
+	setvar(VAR_0x8005, MOVE_MACH_PUNCH)
 	call(MoveTutor_EventScript_OpenPartyMenu)
 	goto_if_eq(VAR_RESULT, 0, MossdeepCity_EventScript_PunchesTutorDecline)
 	goto(MossdeepCity_EventScript_PunchesTutorTaught)

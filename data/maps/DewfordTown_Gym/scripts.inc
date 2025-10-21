@@ -287,11 +287,11 @@ DewfordTown_Gym_EventScript_Brawly::
 # 144 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
 # 145 "data/maps/DewfordTown_Gym/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	@ specialvar VAR_RESULT, ShouldTryRematchBattle
 # 146 "data/maps/DewfordTown_Gym/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
+	@ goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
 # 147 "data/maps/DewfordTown_Gym/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_BULK_UP, DewfordTown_Gym_EventScript_GiveBulkUp2
+	@ goto_if_unset FLAG_RECEIVED_TM_BULK_UP, DewfordTown_Gym_EventScript_GiveBulkUp2
 # 148 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
 # 149 "data/maps/DewfordTown_Gym/scripts.pory"

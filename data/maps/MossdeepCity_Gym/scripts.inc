@@ -113,11 +113,11 @@ MossdeepCity_Gym_EventScript_TateAndLiza::
 # 57 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
 # 58 "data/maps/MossdeepCity_Gym/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	@ specialvar VAR_RESULT, ShouldTryRematchBattle
 # 59 "data/maps/MossdeepCity_Gym/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_Gym_EventScript_TateAndLizaRematch
+	@ goto_if_eq VAR_RESULT, TRUE, MossdeepCity_Gym_EventScript_TateAndLizaRematch
 # 60 "data/maps/MossdeepCity_Gym/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_CALM_MIND, MossdeepCity_Gym_EventScript_GiveCalmMind2
+	@ goto_if_unset FLAG_RECEIVED_TM_CALM_MIND, MossdeepCity_Gym_EventScript_GiveCalmMind2
 # 61 "data/maps/MossdeepCity_Gym/scripts.pory"
 	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
 # 62 "data/maps/MossdeepCity_Gym/scripts.pory"

@@ -139,11 +139,11 @@ LavaridgeTown_Gym_1F_EventScript_Flannery::
 # 70 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle_single TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_Text_FlanneryIntro, LavaridgeTown_Gym_1F_Text_FlanneryDefeat, LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated, NO_MUSIC
 # 71 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	@ specialvar VAR_RESULT, ShouldTryRematchBattle
 # 72 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, LavaridgeTown_Gym_1F_EventScript_FlanneryRematch
+	@ goto_if_eq VAR_RESULT, TRUE, LavaridgeTown_Gym_1F_EventScript_FlanneryRematch
 # 73 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_OVERHEAT, LavaridgeTown_Gym_1F_EventScript_GiveOverheat2
+	@ goto_if_unset FLAG_RECEIVED_TM_OVERHEAT, LavaridgeTown_Gym_1F_EventScript_GiveOverheat2
 # 74 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	msgbox LavaridgeTown_Gym_1F_Text_FlanneryPostBattle, MSGBOX_DEFAULT
 # 75 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

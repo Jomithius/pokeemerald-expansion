@@ -177,8 +177,8 @@ text FullMoonIslandInterior_Text_CresseliaMyThanks{
     You have a very pure heart.\l
     May I ask for your name?\p
     … … … …\p
-    I see. {PLAYER},\n
-    I really cannot thank you enough.\p
+    I see. {PLAYER}, I really\n
+    cannot thank you enough.\p
     It would be an honor to join a\n
     TRAINER like you on your journey."
 }

@@ -269,7 +269,7 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_1:
 	compare VAR_DIFFICULTY_SWITCH_COUNTER, 5
 	goto_if_gt SnowdriftCity_House3_EventScript_JimmyStatReport_10
 # 209 "data/maps/SnowdriftCity_House3/scripts.pory"
-	compare VAR_WIPE_COUNTER, 0
+	compare VAR_DIFFICULTY_SWITCH_COUNTER, 0
 	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_11
 # 214 "data/maps/SnowdriftCity_House3/scripts.pory"
 	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_6, MSGBOX_DEFAULT
@@ -278,7 +278,7 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_9:
 	waitmessage
 # 218 "data/maps/SnowdriftCity_House3/scripts.pory"
 	compare VAR_RAT_CAVE_STATE, 12
-	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_16
+	goto_if_le SnowdriftCity_House3_EventScript_JimmyStatReport_16
 # 224 "data/maps/SnowdriftCity_House3/scripts.pory"
 	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_8, MSGBOX_DEFAULT
 SnowdriftCity_House3_EventScript_JimmyStatReport_15:
@@ -310,24 +310,28 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_27:
 	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_32
 SnowdriftCity_House3_EventScript_JimmyStatReport_31:
 # 273 "data/maps/SnowdriftCity_House3/scripts.pory"
-	compare VAR_LINA_TALKED_TO, 3
+	compare VAR_LINA_TALKED_TO, 2
 	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_35
 SnowdriftCity_House3_EventScript_JimmyStatReport_34:
-# 282 "data/maps/SnowdriftCity_House3/scripts.pory"
-	goto_if_set FLAG_HIDE_MAE_WACHUNPELON, SnowdriftCity_House3_EventScript_JimmyStatReport_38
+# 283 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_LINA_TALKED_TO, 3
+	goto_if_eq SnowdriftCity_House3_EventScript_JimmyStatReport_38
 SnowdriftCity_House3_EventScript_JimmyStatReport_37:
-# 289 "data/maps/SnowdriftCity_House3/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TOTODILE_PARTNER, SnowdriftCity_House3_EventScript_JimmyStatReport_41
+# 292 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_set FLAG_HIDE_MAE_WACHUNPELON, SnowdriftCity_House3_EventScript_JimmyStatReport_41
 SnowdriftCity_House3_EventScript_JimmyStatReport_40:
-# 300 "data/maps/SnowdriftCity_House3/scripts.pory"
-	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_19, MSGBOX_AUTOCLOSE
-# 307 "data/maps/SnowdriftCity_House3/scripts.pory"
-	waitmessage
-# 308 "data/maps/SnowdriftCity_House3/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 309 "data/maps/SnowdriftCity_House3/scripts.pory"
-	waitmovement 0
+# 299 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TOTODILE_PARTNER, SnowdriftCity_House3_EventScript_JimmyStatReport_44
+SnowdriftCity_House3_EventScript_JimmyStatReport_43:
 # 310 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_20, MSGBOX_AUTOCLOSE
+# 317 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+# 318 "data/maps/SnowdriftCity_House3/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 319 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmovement 0
+# 320 "data/maps/SnowdriftCity_House3/scripts.pory"
 	release
 	end
 
@@ -386,23 +390,30 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_32:
 SnowdriftCity_House3_EventScript_JimmyStatReport_35:
 # 274 "data/maps/SnowdriftCity_House3/scripts.pory"
 	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_16, MSGBOX_DEFAULT
-# 280 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 281 "data/maps/SnowdriftCity_House3/scripts.pory"
 	waitmessage
 	goto SnowdriftCity_House3_EventScript_JimmyStatReport_34
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_38:
-# 283 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 284 "data/maps/SnowdriftCity_House3/scripts.pory"
 	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_17, MSGBOX_DEFAULT
-# 287 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 290 "data/maps/SnowdriftCity_House3/scripts.pory"
 	waitmessage
 	goto SnowdriftCity_House3_EventScript_JimmyStatReport_37
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_41:
-# 290 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 293 "data/maps/SnowdriftCity_House3/scripts.pory"
 	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_18, MSGBOX_DEFAULT
-# 298 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 297 "data/maps/SnowdriftCity_House3/scripts.pory"
 	waitmessage
 	goto SnowdriftCity_House3_EventScript_JimmyStatReport_40
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_44:
+# 300 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_19, MSGBOX_DEFAULT
+# 308 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmessage
+	goto SnowdriftCity_House3_EventScript_JimmyStatReport_43
 
 
 SnowdriftCity_House3_EventScript_CynthiaEncounter_Text_0:
@@ -459,7 +470,7 @@ SnowdriftCity_House3_EventScript_Cynthia_Text_0:
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_0:
 # 178 "data/maps/SnowdriftCity_House3/scripts.pory"
-	.string "{PLAYER}!\n I'm surprised you found me here.\p You probably didn't expect me to\n know CYNTHIA, huh!\p Were you jump scared the first time\n you walked into this house?\p Well, there shouldn't be anything left\n for you to do, but I can give you some\l stats about your playthrough.\p Let's see…$"
+	.string "{PLAYER}!\n Thanks for coming.\p You probably didn't expect me to\n know CYNTHIA, huh!\p Were you jump scared the first time\n you walked into this house?\p Well, there shouldn't be anything left\n for you to do, but I can give you some\l stats about your playthrough.\p Let's see…$"
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_1:
 # 191 "data/maps/SnowdriftCity_House3/scripts.pory"
@@ -523,18 +534,22 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_Text_15:
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_16:
 # 274 "data/maps/SnowdriftCity_House3/scripts.pory"
-	.string "You beat EUGENIA too?\n How was that fight for you?\p I had a lot of fun when I battled\n her.\p She's still mad about you stealing\n her EEVEE!$"
+	.string "Oh! Did LINA ask you about\n where her EEVEE went?\l Did you lie to her?\p Or did you just apologize to her\n a bunch?\p Either way, it looks like she\n was too scary for you.$"
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_17:
-# 283 "data/maps/SnowdriftCity_House3/scripts.pory"
-	.string "Oh, it looks like you didn't run\n into the diva in every location.\p Check SLATEPORT or LILYCOVE DEPT.\n STORE, then WACHUNPELON.$"
+# 284 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "You beat EUGENIA too?\n How was that fight for you?\p I had a lot of fun when I battled\n her.\p She's still mad about you stealing\n her EEVEE!$"
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_18:
-# 290 "data/maps/SnowdriftCity_House3/scripts.pory"
-	.string "ARIA would be disappointed.\n You never found the SACRED BLADE.\p I guess bro really was protecting\n it…\p Well, go back to JIRACHI's ALTAR\n and you'll find it.\p If you go talk to ARIA after that\n they'll have a gift for you.$"
+# 293 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "Oh, it looks like you didn't run\n into the diva in every location.\p Check SLATEPORT or LILYCOVE DEPT.\n STORE, then WACHUNPELON.$"
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_19:
 # 300 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "ARIA would be disappointed…\n You never found the SACRED BLADE.\p Or maybe you just never talked\n to ARIA with it in your BAG.\p Well, go back to JIRACHI's ALTAR\n and you'll find it.\p If you go talk to ARIA after that\n they'll have a gift for you.$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_20:
+# 310 "data/maps/SnowdriftCity_House3/scripts.pory"
 	.string "Well, that's it, {PLAYER}!\p There's other things you could've\n missed.\p “PuzzlesImportantItemsSecrets” in\n the SPOILERS folder has everything.\p Thanks again for playing.\n I hope you enjoyed it!$"
 
 SnowdriftCity_House3_Text_CynthiaLoss::

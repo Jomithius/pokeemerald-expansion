@@ -5,6 +5,8 @@ const LOCALID_BENNIS = 4
 const LOCALID_ASAK = 5
 const LOCALID_PANINI = 6
 const LOCALID_ARIA = 7
+const LOCALID_ARIA_2 = 28
+const LOCALID_PANINI_2 = 29
   
 mapscripts Baldesia_MainHouse_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Baldesia_MainHouse_OnTransition
@@ -20,8 +22,8 @@ mapscripts Baldesia_MainHouse_MapScripts {
 script Baldesia_MainHouse_OnTransition{
     setrespawn(HEAL_LOCATION_BALDESIA)
     setflag(FLAG_TEMP_E)
-    call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateNPCPos)
-    call_if_eq(VAR_MOMO_ARIA_STATE, 6, Baldesia_MainHouse_UpdateNPCPos)
+    #call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateNPCPos)
+    #call_if_eq(VAR_MOMO_ARIA_STATE, 6, Baldesia_MainHouse_UpdateNPCPos)
     call_if_eq(VAR_MOMO_ARIA_STATE, 7, Baldesia_MainHouse_UpdateAriaPos)
     end
 }
@@ -35,7 +37,7 @@ Baldesia_MainHouse_EventScript_TurnPlayerNorth::
 	end
 
 `
-
+// functionally unused
 script Baldesia_MainHouse_UpdateNPCPos{
     setobjectxyperm(LOCALID_ARIA, 14, 10)
     setobjectmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
@@ -46,8 +48,10 @@ script Baldesia_MainHouse_UpdateNPCPos{
 }
 
 script Baldesia_MainHouse_UpdateAriaPos{
-    setobjectxyperm(LOCALID_ARIA, 12, 7)
-    setobjectmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_FACE_UP)
+    setobjectxyperm(LOCALID_ARIA_2, 12, 7)
+    setobjectxyperm(LOCALID_PANINI_2, 10, 6)
+    setobjectmovementtype(LOCALID_ARIA_2, MOVEMENT_TYPE_FACE_UP)
+    setobjectmovementtype(LOCALID_PANINI_2, MOVEMENT_TYPE_FACE_RIGHT)
     return
 }
 
@@ -66,18 +70,16 @@ script Baldesia_MainHouse_EventScript_Clerk{
 }
 
 mart Baldesia_MainHouse_Pokemart{
+    ITEM_ULTRA_BALL
+    ITEM_DUSK_BALL
+    ITEM_TIMER_BALL
+    ITEM_QUICK_BALL
     ITEM_FULL_RESTORE
     ITEM_FULL_HEAL
-    ITEM_ABILITY_CAPSULE
-    ITEM_ABILITY_PATCH
     ITEM_MAX_REVIVE
     ITEM_MAX_REPEL
     ITEM_MAX_LURE
     ITEM_ELIXIR
-    ITEM_QUICK_BALL
-    ITEM_ULTRA_BALL
-    ITEM_DUSK_BALL
-    ITEM_TIMER_BALL
 }
 
 script Baldesia_MainHouse_EventScript_MochiClerk{
@@ -96,11 +98,14 @@ script Baldesia_MainHouse_EventScript_MochiClerk{
 
 mart Baldesia_MainHouse_PokemartMochi{
     ITEM_FRESH_START_MOCHI
-    ITEM_EXP_CANDY_S
-    ITEM_EXP_CANDY_M
-    ITEM_EXP_CANDY_L
-    ITEM_EXP_CANDY_XL
-    ITEM_ADAMANT_MINT
+    ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
+	ITEM_EXP_CANDY_M
+	ITEM_EXP_CANDY_L
+	ITEM_EXP_CANDY_XL
+	ITEM_ABILITY_CAPSULE
+	ITEM_ABILITY_PATCH
+	ITEM_ADAMANT_MINT
 	ITEM_MODEST_MINT
 	ITEM_JOLLY_MINT
 	ITEM_TIMID_MINT
@@ -120,6 +125,7 @@ script Baldesia_MainHouse_EventScript_GoToChief{
         addobject(20)
         addobject(21)
         waitse
+        delay(16)
         playse(SE_PIN)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
         waitmovement(0)
@@ -142,6 +148,7 @@ script Baldesia_MainHouse_EventScript_GoToChief{
         addobject(23)
         addobject(24)
         waitse
+        delay(16)
         playse(SE_PIN)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
         waitmovement(0)
@@ -382,15 +389,13 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     setvar(VAR_MOMO_ARIA_STATE, 5)
     setflag(FLAG_VISITED_BALDESIA) // set here so fly only unlocks along w main house. prevents sequence breaking.
     fadescreenswapbuffers(FADE_TO_BLACK)
-    applymovement(LOCALID_ARIA, Common_Movement_FaceDown)
-    waitmovement(0)
-    setobjectxy(LOCALID_ARIA, 16, 10)
-    setobjectnewmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
-    setobjectxy(LOCALID_PANINI, 11, 11)
-    setobjectnewmovementtype(LOCALID_PANINI, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
-    setobjectnewmovementtype(LOCALID_BENNIS, MOVEMENT_TYPE_LOOK_AROUND)
-    call(Baldesia_MainHouse_UpdateNPCPos)
-    special(DrawWholeMapView)
+    setflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE)
+    removeobject(LOCALID_ARIA)
+    removeobject(LOCALID_PANINI)
+    setflag(FLAG_HIDE_MOMO_BALDESIA_MAIN_HOUSE)
+    clearflag(FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE)
+    addobject(LOCALID_ARIA_2)
+    addobject(LOCALID_PANINI_2)
     fadescreenswapbuffers(FADE_FROM_BLACK)
     savebgm(MUS_DUMMY)
     fadedefaultbgm
@@ -427,23 +432,24 @@ script Baldesia_MainHouse_EventScript_LohanThanks{
     fadescreen(FADE_TO_BLACK)
     waitse
     removeobject(LOCALID_BENNIS)
-    removeobject(LOCALID_PANINI)
-    clearflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE)
+    removeobject(LOCALID_PANINI_2)
+    clearflag(FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE)
     fadescreen(FADE_FROM_BLACK)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
-    applymovement(LOCALID_ARIA, Common_Movement_WalkInPlaceRight)
+    applymovement(LOCALID_ARIA_2, Common_Movement_WalkInPlaceRight)
     waitmovement(0)
     msgbox("ARIA: I shouldn't make MOMO wait for me\n
         too long.\p
         I'm gonna head back to MOSSDEEP and\n
         get some more training in!", MSGBOX_AUTOCLOSE)
     waitmessage
-    applymovement(LOCALID_ARIA, Baldesia_MainHouse_Movement_AriaLeaves)
+    applymovement(LOCALID_ARIA_2, Baldesia_MainHouse_Movement_AriaLeaves)
     delay(8)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
-    waitmovement(LOCALID_ARIA)
-    removeobject(LOCALID_ARIA)
-    setflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE)
+    waitmovement(LOCALID_ARIA_2)
+    removeobject(LOCALID_ARIA_2)
+    setflag(FLAG_HIDE_BENNIS_BALDESIA_MAIN_HOUSE)
+    setflag(FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE)
     clearflag(FLAG_HIDE_REMATCH_TRAINERS_BENNIS_DOJO)
     setvar(VAR_MOMO_ARIA_STATE, 8)
     setvar(VAR_BENNIS_DOJO_STATE, 5)
@@ -693,7 +699,7 @@ text Baldesia_MainHouse_TextLohan3{
 }
 
 text Baldesia_MainHouse_TextLohan4{
-    "Now, that's enough talk.\p
+    "LOHAN: Now, that's enough talk.\p
     MOMO has already waited until the last\n
     minute for the ritual. We need to hurry.\p
     {PLAYER}, make preparations quickly and\n

@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Baldesia_MainHouse_EventScript_Bennis",
-      "flag": "FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE"
+      "flag": "FLAG_HIDE_BENNIS_BALDESIA_MAIN_HOUSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
@@ -364,6 +364,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Baldesia_MainHouse_EventScript_MochiClerk",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TATE",
+      "x": 15,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Baldesia_MainHouse_EventScript_Aria",
+      "flag": "FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 10,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Baldesia_MainHouse_EventScript_Panini",
+      "flag": "FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE"
     }
   ],
   "warp_events": [

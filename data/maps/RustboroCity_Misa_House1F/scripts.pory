@@ -38,11 +38,12 @@ script Misa_House1f_EventScript_PostGameMisa{
     msgbox("Oh, {PLAYER}!\n
         Or should I say CHAMPION now?!\l
         Congratulations!\p
-        We're spending some time at home\n
-        before heading to LILYCOVE to\l
-        meet with JIMMY.\p
-        You're going to meet with him\n
-        too, right?\p
+        I'm spending some time at home\n
+        before heading out to visit\l
+        JAMES at his new job.\l
+        That reminds me!\p
+        You're probably going to meet with\n
+        JIMMY too, right?\p
         I'm sure you'll like the\n
         surprise he has for you!", MSGBOX_AUTOCLOSE)
     waitmessage

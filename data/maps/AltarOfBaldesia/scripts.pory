@@ -47,7 +47,7 @@ script AltarOfBaldesia_TryRemoveJirachi{
 script AltarOfBaldesia_EventScript_StoneTablet{
     msgbox("There's text written on the stone slab…\p
         “Baldy, baldy, over there!\n
-        What's it like to have no hair?”\p
+        What's it like to have no hair?\p
         “Is it hot? Or is it cold?\n
         I don't know, 'cause I'm not bald!”", MSGBOX_SIGN)
     end

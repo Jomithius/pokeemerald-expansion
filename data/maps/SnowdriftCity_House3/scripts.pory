@@ -176,7 +176,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
     lock
     faceplayer
     msgbox("{PLAYER}!\n
-        I'm surprised you found me here.\p
+        Thanks for coming.\p
         You probably didn't expect me to\n
         know CYNTHIA, huh!\p
         Were you jump scared the first time\n
@@ -206,7 +206,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         msgbox("You changed difficulties {STR_VAR_1} times.\n
         You couldn't make up your mind or what?", MSGBOX_DEFAULT)
     }
-    elif(var(VAR_WIPE_COUNTER) == 0){
+    elif(var(VAR_DIFFICULTY_SWITCH_COUNTER) == 0){
         msgbox("You stayed on the same difficulty\n
             your whole playthrough.", MSGBOX_DEFAULT)
     }
@@ -215,7 +215,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         {STR_VAR_1} time(s).", MSGBOX_DEFAULT) 
     }
     waitmessage
-    if(var(VAR_RAT_CAVE_STATE) == 12){
+    if(var(VAR_RAT_CAVE_STATE) <= 12){
         msgbox("Oh… poor RATDUARDO.\p
         He'll never be free from\n
         DARKRAI's curse.", MSGBOX_DEFAULT)
@@ -270,6 +270,16 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         talk to JAMES.", MSGBOX_DEFAULT)
         waitmessage
     }
+    if(var(VAR_LINA_TALKED_TO) == 2){
+        msgbox("Oh! Did LINA ask you about\n
+        where her EEVEE went?\l
+        Did you lie to her?\p
+        Or did you just apologize to her\n
+        a bunch?\p
+        Either way, it looks like she\n
+        was too scary for you.", MSGBOX_DEFAULT)
+        waitmessage
+    }
     if(var(VAR_LINA_TALKED_TO) == 3){
         msgbox("You beat EUGENIA too?\n
         How was that fight for you?\p
@@ -287,10 +297,10 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         waitmessage
     }
     if(!flag(FLAG_RECEIVED_TOTODILE_PARTNER)){
-        msgbox("ARIA would be disappointed.\n
+        msgbox("ARIA would be disappointed…\n
             You never found the SACRED BLADE.\p
-            I guess bro really was protecting\n
-            it…\p
+            Or maybe you just never talked\n
+            to ARIA with it in your BAG.\p
             Well, go back to JIRACHI's ALTAR\n
             and you'll find it.\p
             If you go talk to ARIA after that\n

@@ -1040,7 +1040,7 @@ script Route110_EventScript_Speedwagon{
 	msgbox(Route110_Text_Speedwagon_PostBattle, MSGBOX_AUTOCLOSE)
 	waitmessage
 	delay(30)
-	playbgm(MUS_DUMMY, FALSE)
+	playbgm(MUS_NONE, FALSE)
 	fadescreen(FADE_TO_BLACK)
 	playse(SE_THUNDERSTORM)
 	delay(120)

@@ -187,11 +187,11 @@ MauvilleCity_Gym_EventScript_Wattson::
 # 94 "data/maps/MauvilleCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated, NO_MUSIC
 # 95 "data/maps/MauvilleCity_Gym/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	@ specialvar VAR_RESULT, ShouldTryRematchBattle
 # 96 "data/maps/MauvilleCity_Gym/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch
+	@ goto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch
 # 97 "data/maps/MauvilleCity_Gym/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_CHARGE_BEAM, MauvilleCity_Gym_EventScript_GiveShockWave2
+	@ goto_if_unset FLAG_RECEIVED_TM_CHARGE_BEAM, MauvilleCity_Gym_EventScript_GiveShockWave2
 # 98 "data/maps/MauvilleCity_Gym/scripts.pory"
 	goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_Gym_EventScript_CompletedNewMauville
 # 99 "data/maps/MauvilleCity_Gym/scripts.pory"

@@ -145,7 +145,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_DOJO",
       "x": 21,
       "y": 14,
       "elevation": 3,
@@ -155,11 +155,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LavaridgeTown_EventScript_OldMan",
-      "flag": "FLAG_HIDE_GYM_LEADERS"
+      "flag": "FLAG_HIDE_OLD_MAN_SNOWDRIFT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KIMONO_OLDLADY",
-      "x": 24,
+      "x": 25,
       "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -168,7 +168,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LavaridgeTown_EventScript_ExpertF",
-      "flag": "FLAG_HIDE_GYM_LEADERS"
+      "flag": "0"
     }
   ],
   "warp_events": [

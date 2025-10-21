@@ -259,7 +259,7 @@ PetalburgCity_Gym_EventScript_Norman::
 # 130 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 7, PetalburgCity_Gym_EventScript_NormanPostBattle
 # 131 "data/maps/PetalburgCity_Gym/scripts.pory"
-	case 8, PetalburgCity_Gym_EventScript_NormanRematch
+	case 8, PetalburgCity_Gym_EventScript_NormanPostBattle @ was NormanRematch
 # 132 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon, MSGBOX_DEFAULT
 # 133 "data/maps/PetalburgCity_Gym/scripts.pory"

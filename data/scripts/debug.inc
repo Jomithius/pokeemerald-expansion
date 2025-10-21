@@ -138,10 +138,10 @@ Debug_EventScript_Text_DefensiveIVs:
 
 Debug_EventScript_Script_1::
 	setflag FLAG_VISITED_THE_UNDER
-	@ setflag FLAG_VISITED_ROUTE135
-	@ setflag FLAG_VISITED_WACHUNPELON
-	@ setflag FLAG_VISITED_BALDESIA 
-	@ setflag FLAG_VISITED_SNOWDRIFT_CITY
+	setflag FLAG_VISITED_ROUTE135
+	setflag FLAG_VISITED_WACHUNPELON
+	setflag FLAG_VISITED_BALDESIA 
+	setflag FLAG_VISITED_SNOWDRIFT_CITY
 	setflag FLAG_SYS_POKENAV_GET
 	setflag FLAG_HAS_MATCH_CALL
 	setflag FLAG_SYS_STAT_EDIT_GET
@@ -181,27 +181,23 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_MOMO_ARIA_STATE, 6
-	clearflag FLAG_HIDE_MOMO_JIRACHIS_ALTAR
-	clearflag FLAG_DEFEATED_JIRACHI
-	clearflag FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR
-	warp MAP_EASTERN_RUINS, 16, 4
+	setvar VAR_MOMO_ARIA_STATE, 3
+	warp MAP_BALDESIA_MAIN_HOUSE, 5, 20
 	waitstate
 	release
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 3
-	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
-	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 4, 2
+	setvar VAR_MOMO_ARIA_STATE, 7
+	warp MAP_BALDESIA_MAIN_HOUSE, 13, 7
 	waitstate
 	release
 	end
 
 Debug_EventScript_Script_7::
-	warp MAP_VOID, 9, 32
-	waitstate
-	release
+	lockall
+	goto EventScript_FinalRematchesUnlocked
+	releaseall
 	end
 
 Debug_EventScript_Script_8::

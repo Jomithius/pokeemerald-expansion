@@ -3023,4 +3023,4 @@ RustboroMisa5::
 
 RustboroCity_Text_ExplainExpShare::
 # 1518 "data/maps/RustboroCity/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The EXP. SHARE is a very useful item\n that gives all your POKéMON EXP. Points\l from battles.\p To use it, just turn it on in the KEY\n ITEMS section of your bag.$"
+	.string "The EXP. SHARE is a very useful item\n that gives all your POKéMON EXP. Points\l from battles.\p To use it, just turn it on in the KEY\n ITEMS section of your bag.$"

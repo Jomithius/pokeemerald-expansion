@@ -1405,7 +1405,7 @@ MauvilleCity_Trigger_Bikers1::
 # 716 "data/maps/MauvilleCity/scripts.pory"
 	lockall
 # 717 "data/maps/MauvilleCity/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	playbgm MUS_NONE, FALSE
 # 718 "data/maps/MauvilleCity/scripts.pory"
 	addobject 13
 # 719 "data/maps/MauvilleCity/scripts.pory"
@@ -1497,7 +1497,7 @@ MauvilleCity_Trigger_Bikers2::
 # 764 "data/maps/MauvilleCity/scripts.pory"
 	lockall
 # 765 "data/maps/MauvilleCity/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	playbgm MUS_NONE, FALSE
 # 766 "data/maps/MauvilleCity/scripts.pory"
 	addobject 13
 # 767 "data/maps/MauvilleCity/scripts.pory"
@@ -1589,7 +1589,7 @@ MauvilleCity_Trigger_Bikers3::
 # 812 "data/maps/MauvilleCity/scripts.pory"
 	lockall
 # 813 "data/maps/MauvilleCity/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	playbgm MUS_NONE, FALSE
 # 814 "data/maps/MauvilleCity/scripts.pory"
 	addobject 13
 # 815 "data/maps/MauvilleCity/scripts.pory"
@@ -1677,7 +1677,7 @@ MauvilleCity_Trigger_Bikers4::
 # 858 "data/maps/MauvilleCity/scripts.pory"
 	lockall
 # 859 "data/maps/MauvilleCity/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	playbgm MUS_NONE, FALSE
 # 860 "data/maps/MauvilleCity/scripts.pory"
 	addobject 13
 # 861 "data/maps/MauvilleCity/scripts.pory"

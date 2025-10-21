@@ -473,9 +473,9 @@
 #define FLAG_HIDE_JAMES_AND_PROF_ULTRA_SPACE 0x1B3 // after blacephalon
 #define FLAG_HIDE_MISA_POST_GAME_RUSTBORO    0x1B4 // after becoming champion
 #define FLAG_HIDE_LUNA_MICKEY_SNOWDRIFT_CITY 0x1B5 // in case player gets final rematches call when in snowdrift
-#define FLAG_MOVE_TUTOR_TAUGHT_SLEEP_TALK    0x1B6 // functionially unused
-#define FLAG_MOVE_TUTOR_TAUGHT_SUBSTITUTE    0x1B7 // functionially unused
-#define FLAG_MOVE_TUTOR_TAUGHT_DYNAMICPUNCH  0x1B8 // functionially unused
+#define FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE     0x1B6 // main house cs baldesia
+#define FLAG_HIDE_BENNIS_BALDESIA_MAIN_HOUSE 0x1B7 // main house cs baldesia
+#define FLAG_HIDE_OLD_MAN_SNOWDRIFT          0x1B8 // replaces luna in snowdrift
 #define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9 // functionially unused
 #define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA // functionially unused
 #define FLAG_DEFEATED_REGIROCK               0x1BB

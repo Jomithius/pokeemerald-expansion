@@ -1438,7 +1438,7 @@ AltarOfBaldesia_Movement_MochiDance4:
 
 AltarOfBaldesia_EventScript_StoneTablet_Text_0:
 # 48 "data/maps/AltarOfBaldesia/scripts.pory"
-	.string "There's text written on the stone slab…\p “Baldy, baldy, over there!\n What's it like to have no hair?”\p “Is it hot? Or is it cold?\n I don't know, 'cause I'm not bald!”$"
+	.string "There's text written on the stone slab…\p “Baldy, baldy, over there!\n What's it like to have no hair?\p “Is it hot? Or is it cold?\n I don't know, 'cause I'm not bald!”$"
 
 AltarOfBaldesia_EventScript_AltarRitual_Text_0:
 # 68 "data/maps/AltarOfBaldesia/scripts.pory"

@@ -21,8 +21,8 @@ script AzureMountain_RestStop_EventScript_Poobles{
 script AzureMountain_RestStop_EventScript_Liam{
     lock
     faceplayer
-    msgbox("{PLAYER}! Congratulations\n
-        on becoming the CHAMPION.\p
+    msgbox("{PLAYER}! Congratulations on becoming\n
+        the CHAMPION!\p
         Ever since we heard the news, POOBLES\n
         and I have been up here training.\p
         We're gonna be way stronger the next\n

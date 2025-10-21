@@ -1173,12 +1173,12 @@ Ultra_Space_Movement_ManiacGoesToNecrozma:
 	walk_up
 # 715 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
+# 715 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
+# 715 "data/maps/Ultra_Space/scripts.pory"
+	walk_up
 # 716 "data/maps/Ultra_Space/scripts.pory"
 	walk_left
-# 717 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
-# 717 "data/maps/Ultra_Space/scripts.pory"
-	walk_up
 # 717 "data/maps/Ultra_Space/scripts.pory"
 	walk_up
 # 717 "data/maps/Ultra_Space/scripts.pory"

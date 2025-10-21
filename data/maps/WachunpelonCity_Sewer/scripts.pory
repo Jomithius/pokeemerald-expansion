@@ -104,7 +104,7 @@ script WachunpelonCity_Sewer_EventScript_Speedwagon{
     msgbox(WachunpelonCity_Sewer_Text_Speedwagon1, MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_SYS_BOSS_BATTLE)
-    playbgm(MUS_DUMMY, TRUE)
+    playbgm(MUS_NONE, TRUE)
     trainerbattle_no_intro(TRAINER_SPEEDWAGON_3, WachunpelonCity_Sewer_SpeedwagonDefeat)
     clearflag(FLAG_SYS_BOSS_BATTLE)
     savebgm(MUS_DUMMY)

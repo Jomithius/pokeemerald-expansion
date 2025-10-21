@@ -66,38 +66,42 @@ NewMoonIsland_House4_EventScript_Togedemaru::
 # 51 "data/maps/NewMoonIsland_House4/scripts.pory"
 NewMoonIsland_House4_Pokemart:
 # 52 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_FULL_RESTORE
-# 53 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_FULL_HEAL
-# 54 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_MAX_REVIVE
-# 55 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_MAX_REPEL
-# 56 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_MAX_LURE
-# 57 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_ELIXIR
-# 58 "data/maps/NewMoonIsland_House4/scripts.pory"
 	.2byte ITEM_POKE_BALL
-# 59 "data/maps/NewMoonIsland_House4/scripts.pory"
+# 53 "data/maps/NewMoonIsland_House4/scripts.pory"
 	.2byte ITEM_QUICK_BALL
-# 60 "data/maps/NewMoonIsland_House4/scripts.pory"
+# 54 "data/maps/NewMoonIsland_House4/scripts.pory"
 	.2byte ITEM_ULTRA_BALL
-# 61 "data/maps/NewMoonIsland_House4/scripts.pory"
+# 55 "data/maps/NewMoonIsland_House4/scripts.pory"
 	.2byte ITEM_DUSK_BALL
-# 62 "data/maps/NewMoonIsland_House4/scripts.pory"
+# 56 "data/maps/NewMoonIsland_House4/scripts.pory"
 	.2byte ITEM_TIMER_BALL
+# 57 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_FULL_RESTORE
+# 58 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_FULL_HEAL
+# 59 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_MAX_REVIVE
+# 60 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_MAX_REPEL
+# 61 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_MAX_LURE
+# 62 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_ELIXIR
 # 63 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_EXP_CANDY_L
+	.2byte ITEM_ABILITY_PATCH
 # 64 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_EXP_CANDY_XL
+	.2byte ITEM_ABILITY_CAPSULE
 # 65 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_EXP_CANDY_L
 # 66 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_EXP_CANDY_XL
 # 67 "data/maps/NewMoonIsland_House4/scripts.pory"
-	.2byte ITEM_TIMID_MINT
+	.2byte ITEM_ADAMANT_MINT
 # 68 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_MODEST_MINT
+# 69 "data/maps/NewMoonIsland_House4/scripts.pory"
+	.2byte ITEM_TIMID_MINT
+# 70 "data/maps/NewMoonIsland_House4/scripts.pory"
 	.2byte ITEM_JOLLY_MINT
 	.2byte ITEM_NONE
 

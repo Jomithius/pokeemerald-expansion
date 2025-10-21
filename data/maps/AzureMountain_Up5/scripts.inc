@@ -264,6 +264,10 @@ AzureMountain_Up5_EventScript_RivalMovementVar::
 AzureMountain_Up5_EventScript_RivalMovementVar_1:
 # 209 "data/maps/AzureMountain_Up5/scripts.pory"
 	waitmovement 0
+# 210 "data/maps/AzureMountain_Up5/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 211 "data/maps/AzureMountain_Up5/scripts.pory"
+	waitmovement 0
 	return
 
 AzureMountain_Up5_EventScript_RivalMovementVar_3:
@@ -282,19 +286,19 @@ AzureMountain_Up5_EventScript_RivalMovementVar_5:
 	goto AzureMountain_Up5_EventScript_RivalMovementVar_1
 
 
-# 213 "data/maps/AzureMountain_Up5/scripts.pory"
-AzureMountain_Up5_MovementRivalLeftDown:
-# 214 "data/maps/AzureMountain_Up5/scripts.pory"
-	walk_left
 # 215 "data/maps/AzureMountain_Up5/scripts.pory"
+AzureMountain_Up5_MovementRivalLeftDown:
+# 216 "data/maps/AzureMountain_Up5/scripts.pory"
+	walk_left
+# 217 "data/maps/AzureMountain_Up5/scripts.pory"
 	walk_down
 	step_end
 
-# 218 "data/maps/AzureMountain_Up5/scripts.pory"
-AzureMountain_Up5_MovementRivalRightDown:
-# 219 "data/maps/AzureMountain_Up5/scripts.pory"
-	walk_right
 # 220 "data/maps/AzureMountain_Up5/scripts.pory"
+AzureMountain_Up5_MovementRivalRightDown:
+# 221 "data/maps/AzureMountain_Up5/scripts.pory"
+	walk_right
+# 222 "data/maps/AzureMountain_Up5/scripts.pory"
 	walk_down
 	step_end
 

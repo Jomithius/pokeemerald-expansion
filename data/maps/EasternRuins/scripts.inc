@@ -171,7 +171,7 @@ EasternRuins_EventScript_Yumi_Text_1:
 
 EasternRuins_EventScript_Yumi_Text_2:
 # 25 "data/maps/EasternRuins/scripts.pory"
-	.string "… There's an old tale of a mochi\n making POKéMON and his LOYAL THREE\l killing a TRAINER and stealing three sacred masks from him…\p That TRAINER's POKéMON was then said\n to be chasing after them for revenge…$"
+	.string "… There's an old tale of a mochi\n making POKéMON and his LOYAL THREE\l killing a TRAINER and stealing three\l sacred masks from him…\p That TRAINER's POKéMON was then said\n to be chasing after them for revenge…$"
 
 EasternRuins_EventScript_Chestird_Text_0:
 # 35 "data/maps/EasternRuins/scripts.pory"

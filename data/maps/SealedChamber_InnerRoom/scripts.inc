@@ -279,11 +279,11 @@ SealedChamber_InnerRoom_EventScript_RegigigasAwakens::
 # 148 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq SealedChamber_InnerRoom_EventScript_RegigigasAwakens_2
-# 157 "data/maps/SealedChamber_InnerRoom/scripts.pory"
+# 159 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq SealedChamber_InnerRoom_EventScript_RegigigasAwakens_3
 SealedChamber_InnerRoom_EventScript_RegigigasAwakens_1:
-# 166 "data/maps/SealedChamber_InnerRoom/scripts.pory"
+# 168 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	release
 	end
 
@@ -297,27 +297,31 @@ SealedChamber_InnerRoom_EventScript_RegigigasAwakens_2:
 # 152 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	setobjectnewmovementtype 1, MOVEMENT_TYPE_NONE
 # 153 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	applymovement 1, Common_Movement_FaceDown
 # 154 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	msgbox SealedChamber_InnerRoom_EventScript_RegigigasAwakens_Text_1, MSGBOX_AUTOCLOSE
+	waitmovement 1
 # 155 "data/maps/SealedChamber_InnerRoom/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 156 "data/maps/SealedChamber_InnerRoom/scripts.pory"
+	msgbox SealedChamber_InnerRoom_EventScript_RegigigasAwakens_Text_1, MSGBOX_AUTOCLOSE
+# 157 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	waitmessage
 	goto SealedChamber_InnerRoom_EventScript_RegigigasAwakens_1
 
 SealedChamber_InnerRoom_EventScript_RegigigasAwakens_3:
-# 158 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	playmoncry SPECIES_REGIGIGAS, CRY_MODE_FAINT
-# 159 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	waitmoncry
 # 160 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	playmoncry SPECIES_REGIGIGAS, CRY_MODE_FAINT
 # 161 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	removeobject 1
+	waitmoncry
 # 162 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 163 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	msgbox SealedChamber_InnerRoom_EventScript_RegigigasAwakens_Text_2, MSGBOX_AUTOCLOSE
+	removeobject 1
 # 164 "data/maps/SealedChamber_InnerRoom/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 165 "data/maps/SealedChamber_InnerRoom/scripts.pory"
+	msgbox SealedChamber_InnerRoom_EventScript_RegigigasAwakens_Text_2, MSGBOX_AUTOCLOSE
+# 166 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	waitmessage
 	goto SealedChamber_InnerRoom_EventScript_RegigigasAwakens_1
 
@@ -331,9 +335,9 @@ SealedChamber_InnerRoom_EventScript_RegigigasAwakens_Text_0:
 	.string "The statue started moving!$"
 
 SealedChamber_InnerRoom_EventScript_RegigigasAwakens_Text_1:
-# 154 "data/maps/SealedChamber_InnerRoom/scripts.pory"
+# 156 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	.string "REGIGIGAS stopped moving…$"
 
 SealedChamber_InnerRoom_EventScript_RegigigasAwakens_Text_2:
-# 163 "data/maps/SealedChamber_InnerRoom/scripts.pory"
+# 165 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	.string "REGIGIGAS disappeared…$"

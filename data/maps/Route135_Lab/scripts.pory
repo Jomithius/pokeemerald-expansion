@@ -543,8 +543,8 @@ script Route135_Lab_EventScript_EndAreaZero{
     waitmessage
     giveitem(ITEM_N_LUNARIZER)
     waitmessage
-    msgbox("If you'd like to return to one of the\n
-        previous worlds, COSMOG is ready.\p
+    msgbox("PROF.: If you'd like to return to one of\n
+        the previous worlds, COSMOG is ready.\p
         It seems to trust you now." MSGBOX_AUTOCLOSE)
     applymovement(3, Common_Movement_FacePlayer)
     waitmovement(3)
@@ -666,8 +666,8 @@ text Route135_Lab_Text_Maniac3{
     "I presume you're already aware of\n
     what's being researched here…\p
     But to reiterate, I'm currently looking\n
-    into the possibility of traveling\l
-    to new worlds.\p
+    into the possibility of traveling to\l
+    new worlds.\p
     In fact, I discovered the existence of\n
     different dimensions parallel to ours.\p
     I've named the endless expanse\n
@@ -869,7 +869,7 @@ text Route135_Lab_Text_ManiacIntroduceAreaZero{
     SPACE further.\p
     During these surveys, we came across\n
     another rift that seems to lead to\l
-    another world…\p
+    a different world…\p
     Seeing as you were crazy enough to\n
     walk across the sky, I presume you'd\l
     be open to being the first human to\l

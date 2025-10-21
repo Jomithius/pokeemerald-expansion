@@ -85,11 +85,11 @@ FortreeCity_Gym_EventScript_Winona::
 # 43 "data/maps/FortreeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
 # 44 "data/maps/FortreeCity_Gym/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	@ specialvar VAR_RESULT, ShouldTryRematchBattle
 # 45 "data/maps/FortreeCity_Gym/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, FortreeCity_Gym_EventScript_WinonaRematch
+	@ goto_if_eq VAR_RESULT, TRUE, FortreeCity_Gym_EventScript_WinonaRematch
 # 46 "data/maps/FortreeCity_Gym/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_AERIAL_ACE, FortreeCity_Gym_EventScript_GiveAerialAce2
+	@ goto_if_unset FLAG_RECEIVED_TM_AERIAL_ACE, FortreeCity_Gym_EventScript_GiveAerialAce2
 # 47 "data/maps/FortreeCity_Gym/scripts.pory"
 	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
 # 48 "data/maps/FortreeCity_Gym/scripts.pory"

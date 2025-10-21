@@ -67,7 +67,7 @@
       "flag": "FLAG_DEFEATED_DARKRAI"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DIGLETT_ALOLA)",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
       "x": 20,
       "y": 6,
       "elevation": 3,

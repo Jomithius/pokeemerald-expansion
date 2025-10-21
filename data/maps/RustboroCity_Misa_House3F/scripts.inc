@@ -189,13 +189,13 @@ RustboroCity_Misa_House3F_James::
 # 131 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	msgbox RustboroCity_Misa_House3F_James_Text_1, MSGBOX_AUTOCLOSE
 RustboroCity_Misa_House3F_James_1:
-# 140 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 146 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	waitmessage
-# 141 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 147 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	applymovement 3, MisaHouse3F_FaceUp
-# 142 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 148 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	waitmovement 3
-# 143 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 149 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	release
 	end
 
@@ -205,15 +205,15 @@ RustboroCity_Misa_House3F_James_2:
 	goto RustboroCity_Misa_House3F_James_1
 
 
-# 147 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 153 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 MisaHouse3F_FacePlayer:
-# 147 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 153 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	face_player
 	step_end
 
-# 149 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 155 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 MisaHouse3F_FaceUp:
-# 149 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
+# 155 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	face_up
 	step_end
 
@@ -251,7 +251,7 @@ RustboroCity_Misa_House3F_James_Text_0:
 
 RustboroCity_Misa_House3F_James_Text_1:
 # 131 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "{PLAYER}?!\n What are you doing here?\p I'm glad you came to check on me,\n but I'm fine.\p I lost again, but I'm not gonna give up.\n We're gonna get even stronger.\p So don't worry about me.\n Go take on the ELITE FOUR.$"
+	.string "{PLAYER}?!\n What are you doing here?\p I'm glad you came to check on me,\n but I'm fine.\p I lost again, but I'm not gonna give up.\n We're gonna get even stronger.\l Also, I just got news from my mom.\p I guess JIMMY is back and\n has a job for me.\p Oh, yeah. You haven't met him\n yet, right?\l You probably will soon enough.\p So don't worry about me.\n Go take on the ELITE FOUR.$"
 
 MisaHouse_NotChosen::
 # 111 "data/maps/RustboroCity_Misa_House3F/scripts.pory"

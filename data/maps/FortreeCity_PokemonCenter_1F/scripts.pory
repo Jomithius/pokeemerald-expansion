@@ -72,7 +72,7 @@ script FortreeCity_PokemonCenter_1F_EventScript_RoostTutor{
 }
 
 script MoveTutor_EventScript_RoostDeclined{
-	msgbox("Well, alright.\n
+	msgbox("Well, all right.\n
 		Come back if you have more birds.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release

@@ -2013,7 +2013,7 @@ Route110_EventScript_Speedwagon::
 # 1042 "data/maps/Route110/scripts.pory"
 	delay 30
 # 1043 "data/maps/Route110/scripts.pory"
-	playbgm MUS_DUMMY, FALSE
+	playbgm MUS_NONE, FALSE
 # 1044 "data/maps/Route110/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 1045 "data/maps/Route110/scripts.pory"

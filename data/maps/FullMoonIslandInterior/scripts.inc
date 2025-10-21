@@ -337,7 +337,7 @@ FullMoonIslandInterior_Text_RatduardoDefeat::
 
 FullMoonIslandInterior_Text_CresseliaMyThanks::
 # 175 "data/maps/FullMoonIslandInterior/scripts.pory"
-	.string "Thank you for coming to my aid.\n You have a very pure heart.\l May I ask for your name?\p … … … …\p I see. {PLAYER},\n I really cannot thank you enough.\p It would be an honor to join a\n TRAINER like you on your journey.$"
+	.string "Thank you for coming to my aid.\n You have a very pure heart.\l May I ask for your name?\p … … … …\p I see. {PLAYER}, I really\n cannot thank you enough.\p It would be an honor to join a\n TRAINER like you on your journey.$"
 
 FullMoonIslandInterior_Text_CresseliaIfYouChangeYourMind::
 # 186 "data/maps/FullMoonIslandInterior/scripts.pory"

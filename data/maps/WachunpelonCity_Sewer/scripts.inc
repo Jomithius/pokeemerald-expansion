@@ -179,7 +179,7 @@ WachunpelonCity_Sewer_EventScript_Speedwagon::
 # 106 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	setflag FLAG_SYS_BOSS_BATTLE
 # 107 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	playbgm MUS_DUMMY, TRUE
+	playbgm MUS_NONE, TRUE
 # 108 "data/maps/WachunpelonCity_Sewer/scripts.pory"
 	trainerbattle_no_intro TRAINER_SPEEDWAGON_3, WachunpelonCity_Sewer_SpeedwagonDefeat
 # 109 "data/maps/WachunpelonCity_Sewer/scripts.pory"

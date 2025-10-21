@@ -714,7 +714,7 @@ text MauvilleCity_Text_DacaGone {
 
 script MauvilleCity_Trigger_Bikers1{
 	lockall
-	playbgm(MUS_DUMMY, FALSE)
+	playbgm(MUS_NONE, FALSE)
 	addobject(13)
 	addobject(14)
 	addobject(15)
@@ -762,7 +762,7 @@ script MauvilleCity_Trigger_Bikers1{
 
 script MauvilleCity_Trigger_Bikers2{
 	lockall
-	playbgm(MUS_DUMMY, FALSE)
+	playbgm(MUS_NONE, FALSE)
 	addobject(13)
 	addobject(14)
 	addobject(15)
@@ -810,7 +810,7 @@ script MauvilleCity_Trigger_Bikers2{
 
 script MauvilleCity_Trigger_Bikers3{
 	lockall
-	playbgm(MUS_DUMMY, FALSE)
+	playbgm(MUS_NONE, FALSE)
 	addobject(13)
 	addobject(14)
 	addobject(15)
@@ -856,7 +856,7 @@ script MauvilleCity_Trigger_Bikers3{
 
 script MauvilleCity_Trigger_Bikers4{
 	lockall
-	playbgm(MUS_DUMMY, FALSE)
+	playbgm(MUS_NONE, FALSE)
 	addobject(13)
 	addobject(14)
 	addobject(15)

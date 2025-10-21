@@ -183,11 +183,11 @@ SootopolisCity_Gym_1F_EventScript_Juan::
 # 92 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
 # 93 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	@ specialvar VAR_RESULT, ShouldTryRematchBattle
 # 94 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, SootopolisCity_Gym_1F_EventScript_JuanRematch
+	@ goto_if_eq VAR_RESULT, TRUE, SootopolisCity_Gym_1F_EventScript_JuanRematch
 # 95 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_FREEZE_DRY, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
+	@ goto_if_unset FLAG_RECEIVED_TM_FREEZE_DRY, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
 # 96 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
 # 97 "data/maps/SootopolisCity_Gym_1F/scripts.pory"

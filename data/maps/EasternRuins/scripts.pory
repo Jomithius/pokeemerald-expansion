@@ -24,7 +24,7 @@ script EasternRuins_EventScript_Yumi{
     trainerbattle_single(TRAINER_YUMI, "Fufufu…\nSoon, JIRACHI will awaken…", "Soon…")
     msgbox("… There's an old tale of a mochi\n
         making POKéMON and his LOYAL THREE\l
-        killing a TRAINER and stealing three
+        killing a TRAINER and stealing three\l
         sacred masks from him…\p
         That TRAINER's POKéMON was then said\n
         to be chasing after them for revenge…", MSGBOX_NPC)

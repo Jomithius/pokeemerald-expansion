@@ -215,7 +215,6 @@ script LilycoveCity_HighriseFloor2_EventScript_PlayerLeaves{
     waitmovement(0)
     setvar(VAR_CEO_STATE, 2)
     setflag(FLAG_CALL_FROM_CEO)
-    setflag(FLAG_HIDE_JAMES_RUSTBORO_CITY)
     setflag(FLAG_HIDE_MISA_POST_GAME_RUSTBORO)
     setflag(FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL)
     setvar(VAR_ULTRA_SPACE_STATE, 0) // shouldn't be needed to be set here, but just in case

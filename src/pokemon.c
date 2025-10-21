@@ -5831,8 +5831,6 @@ u16 GetBattleBGM(void)
                 return MUS_VS_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
                 return MUS_VS_TRAINER;
-            //if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJomithiusName) && FlagGet(FLAG_BADGE05_GET))
-                //return MUS_WATERFALL_COLOSSEUM;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJomithiusName))
                 return MUS_VS_CIPHER_ADMIN;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleJamesName))
@@ -5914,6 +5912,8 @@ u16 GetBattleBGM(void)
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE138) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE138))
             return MUS_HG_VS_WILD;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE138_2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE138_2))
+            return MUS_HG_VS_WILD;
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BALDESIA) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BALDESIA))
             return MUS_HG_VS_WILD;
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE139) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE139))
             return MUS_HG_VS_WILD;

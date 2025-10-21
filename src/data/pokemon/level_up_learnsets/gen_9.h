@@ -16006,6 +16006,7 @@ static const struct LevelUpMove sHawluchaLevelUpLearnset[] = {
 static const struct LevelUpMove sDedenneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_NUZZLE),
+    LEVEL_UP_MOVE( 1, MOVE_ENDURE),
     LEVEL_UP_MOVE( 5, MOVE_TACKLE),
     LEVEL_UP_MOVE(10, MOVE_CHARGE),
     LEVEL_UP_MOVE(15, MOVE_THUNDER_SHOCK),
@@ -18882,6 +18883,7 @@ static const struct LevelUpMove sDipplinLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE( 1, MOVE_RECYCLE),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_CHEER),
     LEVEL_UP_MOVE( 4, MOVE_DRAGON_TAIL),
     LEVEL_UP_MOVE( 8, MOVE_GROWTH),
     LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
@@ -18892,6 +18894,7 @@ static const struct LevelUpMove sDipplinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_RECOVER),
     LEVEL_UP_MOVE(40, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE(44, MOVE_SUBSTITUTE),
+    LEVEL_UP_MOVE(76, MOVE_DRAGON_CHEER),
     LEVEL_UP_END
 };
 
@@ -18915,6 +18918,7 @@ static const struct LevelUpMove sHydrappleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE(44, MOVE_SUBSTITUTE),
     LEVEL_UP_MOVE(54, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(75, MOVE_LEAF_STORM),
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
