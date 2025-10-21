@@ -790,7 +790,9 @@ script Baldesia_EventScript_HisuianZoruaTrigger{
     removeobject(LOCALID_PANINI)
     setvar(VAR_MOMO_ARIA_STATE, 2)
     clearflag(FLAG_HIDE_BENNIS_BALDESIA_MAIN_HOUSE) // custom for steven, remove after building
+    clearflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE) // custom for steven, remove after building
     setflag(FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE) // custom for steven, remove after building
+    setflag(FLAG_HIDE_OLD_MAN_SNOWDRIFT) // custom for steven, remove after building
     releaseall
     end
 }

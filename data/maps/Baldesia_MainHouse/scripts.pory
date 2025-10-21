@@ -22,8 +22,8 @@ mapscripts Baldesia_MainHouse_MapScripts {
 script Baldesia_MainHouse_OnTransition{
     setrespawn(HEAL_LOCATION_BALDESIA)
     setflag(FLAG_TEMP_E)
-    #call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateNPCPos)
-    #call_if_eq(VAR_MOMO_ARIA_STATE, 6, Baldesia_MainHouse_UpdateNPCPos)
+    call_if_eq(VAR_MOMO_ARIA_STATE, 5, Baldesia_MainHouse_UpdateNPCPos)
+    call_if_eq(VAR_MOMO_ARIA_STATE, 6, Baldesia_MainHouse_UpdateNPCPos)
     call_if_eq(VAR_MOMO_ARIA_STATE, 7, Baldesia_MainHouse_UpdateAriaPos)
     end
 }
@@ -37,12 +37,8 @@ Baldesia_MainHouse_EventScript_TurnPlayerNorth::
 	end
 
 `
-// functionally unused
+
 script Baldesia_MainHouse_UpdateNPCPos{
-    setobjectxyperm(LOCALID_ARIA, 14, 10)
-    setobjectmovementtype(LOCALID_ARIA, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
-    setobjectxyperm(LOCALID_PANINI, 11, 11)
-    setobjectmovementtype(LOCALID_PANINI, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
     setobjectmovementtype(LOCALID_BENNIS, MOVEMENT_TYPE_LOOK_AROUND)
     return
 }
@@ -314,10 +310,9 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     delay(6)
     applymovement(LOCALID_BENNIS, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    msgbox("ARIA: All it said was “beefy BERTHA”!\n
-        How am I supposed to know what that \l
-        means?\p
-        I'm lucky that you told BALDASARIO\n
+    msgbox("ARIA: All it said was “bald ritual”!\n
+        How would I know what that means?\p
+        I'm lucky that BALDASARIO figured out\n
         where you were actually going!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
@@ -384,21 +379,19 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     msgbox("LOHAN: Time is of the essence.\n
         Hurry to the altar, {PLAYER}.", MSGBOX_AUTOCLOSE)
     waitmessage
+    fadenewbgm(MUS_NONE)
+    delay(16)
     clearflag(FLAG_HIDE_NINJA_BALDESIA)
     setflag(FLAG_HIDE_NINJAS_BALDESIA_MAIN_HOUSE)
     setvar(VAR_MOMO_ARIA_STATE, 5)
     setflag(FLAG_VISITED_BALDESIA) // set here so fly only unlocks along w main house. prevents sequence breaking.
-    fadescreenswapbuffers(FADE_TO_BLACK)
     setflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE)
-    removeobject(LOCALID_ARIA)
-    removeobject(LOCALID_PANINI)
     setflag(FLAG_HIDE_MOMO_BALDESIA_MAIN_HOUSE)
     clearflag(FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE)
-    addobject(LOCALID_ARIA_2)
-    addobject(LOCALID_PANINI_2)
-    fadescreenswapbuffers(FADE_FROM_BLACK)
-    savebgm(MUS_DUMMY)
-    fadedefaultbgm
+    #savebgm(MUS_DUMMY)
+    #fadedefaultbgm
+    warpsilent(MAP_BALDESIA_MAIN_HOUSE, 13, 7)
+    waitstate
     releaseall
     end
 }

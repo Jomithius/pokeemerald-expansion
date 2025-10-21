@@ -9509,40 +9509,32 @@ gBattleAnimMove_LightOfRuin::
 	loadspritegfx ANIM_TAG_ELECTRICITY @discharge
 	loadspritegfx ANIM_TAG_PINK_PETAL @pink color
 	loadspritegfx ANIM_TAG_EXPLOSION @explosion
+	call SetSolarBeamBg
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_ELECTRIC_ORBS, 0, 0xC, 0xC, 0x6DDE @Pink
 	waitforvisualfinish
 	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 20, 0, 2
 	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 0x2, 0x0
-	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0x0, 0xF, 0x6B1F
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 0, 4, 50, 1
-	createvisualtask AnimTask_FlashAnimTagWithColor, 2, ANIM_TAG_ORBS, 1, 12, RGB_RED, 16, 0, 0
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 50, 1
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
-	call LightOfRuinBeam
+	createvisualtask AnimTask_CreateSmallSolarBeamOrbs, 5
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 0
+	delay 4
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 1
+	delay 4
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 1, 0, 10, RGB(25, 31, 0)
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 2
+	delay 4
+	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 2, 0, 65, 1
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 3
+	delay 4
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 4
+	delay 4
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 5
+	delay 4
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 6
+	delay 4
+	call SolarBeamUnleash1
+	call SolarBeamUnleash1
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 1, 10, 0, RGB(25, 31, 0)
 	delay 0x20
 	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
 	createsprite gLightOfRuinPinkDischargeTemplate, ANIM_ATTACKER, 2, 0x1, 0x10, 0x10
@@ -9555,6 +9547,7 @@ gBattleAnimMove_LightOfRuin::
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0x10, 0x0, 0x7FFF
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BATTLERS_2, 0x1, 0x0, 0x0, 0x0
+	call UnsetSolarBeamBg
 	waitforvisualfinish
 	end
 LightOfRuinBeam:
@@ -10919,7 +10912,6 @@ gBattleAnimMove_SmartStrike::
 	setalpha 12, 8
 	call SonicBoomProjectile
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 10, 1
-	loadspritegfx ANIM_TAG_FLASH_CANNON_BALL
 	createsprite gSmartStrikeImpactTemplate, ANIM_TARGET, 4, 0x0, 0x0, 0x8, 0x1, 0x0
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
 	createsprite gSmartStrikeGemTemplate, ANIM_TARGET, 2, 0x1, 0x1, 0x0, 0xffe8, 0xa
@@ -10934,7 +10926,6 @@ gBattleAnimMove_SmartStrike::
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
 	blendoff
 	waitforvisualfinish
 	end
@@ -11652,29 +11643,27 @@ gBattleAnimMove_FleurCannon::
 	waitforvisualfinish
 	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 0x2, 0x0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 0, 4, 50, 1
-	createvisualtask AnimTask_FlashAnimTagWithColor, 2, ANIM_TAG_ORBS, 1, 12, RGB_RED, 16, 0, 0
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 50, 1
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
-	call FleurCannonBeam
+	createvisualtask AnimTask_CreateSmallSolarBeamOrbs, 5
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 0
+	delay 4
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 1
+	delay 4
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 1, 0, 10, RGB(25, 31, 0)
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 2
+	delay 4
+	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 2, 0, 65, 1
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 3
+	delay 4
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 4
+	delay 4
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 5
+	delay 4
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 6
+	delay 4
+	call SolarBeamUnleash1
+	call SolarBeamUnleash1
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 1, 10, 0, RGB(25, 31, 0)
 	delay 0x20
 	createsprite gFleurCannonDischargeTemplate, ANIM_ATTACKER, 2, 0x1, 0x10, 0x10
 	delay 0x2
@@ -12183,7 +12172,8 @@ gBattleAnimMove_MoongeistBeam::
 	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x0 @;Charge circle
 	call MoongeistBeamCharge
 	delay 0x20
-	createsoundtask SoundTask_LoopSEAdjustPanning, 0x7, 0xCC, 0xffc0, SOUND_PAN_TARGET, 0x1, 0xf, 0x0, 0x5
+	@ createsoundtask SoundTask_LoopSEAdjustPanning, 0x7, 0xCC, 0xffc0, SOUND_PAN_TARGET, 0x1, 0xf, 0x0, 0x5
+	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 0, 4, 50, 1
 	createvisualtask AnimTask_FlashAnimTagWithColor, 2, ANIM_TAG_ORBS, 1, 12, RGB_RED, 16, 0, 0
 	call MoongeistBeamOrbs
@@ -12224,8 +12214,9 @@ gBattleAnimMove_MoongeistBeam::
 	call MoongeistBeamOrbs
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_TARGET, 0x2, 0xb, 0x0, 0x6739
 	delay 0x1A
-	stopsound
+	@ stopsound
 	createvisualtask AnimTask_MoonlightEndFade, 0x2
+	waitforvisualfinish
 	end
 MoongeistBeamCharge:
 	createsprite gMoongeistBeamChargeTemplate, ANIM_ATTACKER, 0, 40, 0, 0, 0, 30, 10     @From right
@@ -12237,8 +12228,8 @@ MoongeistBeamCharge:
 	delay 0x5
 	return
 MoongeistBeamOrbs:
-	createsprite gMoongeistBeamBlueOrbsTemplate, ANIM_TARGET, 2
-	createsprite gMoongeistBeamPurpleOrbsTemplate, ANIM_TARGET, 2
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 0
+	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 1
 	delay 0x1
 	return
 

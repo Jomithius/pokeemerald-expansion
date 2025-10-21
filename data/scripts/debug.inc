@@ -182,6 +182,10 @@ Debug_EventScript_Script_4::
 
 Debug_EventScript_Script_5::
 	setvar VAR_MOMO_ARIA_STATE, 3
+	setflag FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE
+	clearflag FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE
+	clearflag FLAG_HIDE_MOMO_BALDESIA_MAIN_HOUSE
+	clearflag FLAG_HIDE_ASAK_BALDESIA_MAIN_HOUSE
 	warp MAP_BALDESIA_MAIN_HOUSE, 5, 20
 	waitstate
 	release
@@ -196,6 +200,7 @@ Debug_EventScript_Script_6::
 
 Debug_EventScript_Script_7::
 	lockall
+	setflag FLAG_HIDE_OLD_MAN_SNOWDRIFT
 	goto EventScript_FinalRematchesUnlocked
 	releaseall
 	end
