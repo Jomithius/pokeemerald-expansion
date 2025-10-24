@@ -122,6 +122,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
 	.2byte ITEM_EJECT_BUTTON
 	.2byte ITEM_EJECT_PACK
 	.2byte ITEM_EXPERT_BELT
+	.2byte ITEM_WISE_GLASSES
 	.2byte ITEM_HEAVY_DUTY_BOOTS
 	.2byte ITEM_LIFE_ORB
     .2byte ITEM_FLAME_ORB

@@ -75,7 +75,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAY_RUSTBORO_TORCHIC] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Okay, {B_OPPONENT_MON1_NAME}!\n We haven't lost yet!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Okay, {B_OPPONENT_MON1_NAME}!\nWe haven't lost yet!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
         {
@@ -242,12 +242,12 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_WALLACE] = // Jimmy
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("TYPHLOSION! Show them what it means\n to be CHAMPION!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("PHLYTOSION! Show them what it means\nto be CHAMPION!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You're almost there, {B_PLAYER_NAME}!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_JIMMY] = // Jimmy
         {
-            //[TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("This is what it means to be a CEO!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("This is what it means to be a CEO!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("This is it, {B_PLAYER_NAME}!\nI'll show you the power of the void!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_BRUNO] = // Bruno

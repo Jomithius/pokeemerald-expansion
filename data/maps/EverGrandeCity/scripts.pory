@@ -423,9 +423,9 @@ script EverGrandeCity_EventScript_StrongTrainerWaits{
         He's been working so hard lately.\p
         It almost feels like I've only been\n
         taking care of his POKéMON!\p
-        {COLOR BLUE}{SHADOW LIGHT_BLUE}The current level cap is 65.\p
-        Also, a shortcut has now opened up on\n
-        VICTORY ROAD 1F.", MSGBOX_AUTOCLOSE)
+        {COLOR BLUE}{SHADOW LIGHT_BLUE}A shortcut has now opened up on\n
+        VICTORY ROAD 1F.\p
+        The current level cap is 65.", MSGBOX_AUTOCLOSE)
     waitmessage
     setvar(VAR_EVER_GRANDE_CITY_STATE, 1)
     releaseall

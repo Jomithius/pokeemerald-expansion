@@ -136,8 +136,7 @@ script Baldesia_EventScript_GiveLeadersCrest{
         msgbox("That crest is demanding of respect\n
         in our culture.\p
         It proves you have the qualities to\n
-        become a powerful leader.\p
-        Try using it on a BISHARP.", MSGBOX_AUTOCLOSE)
+        become a powerful leader.", MSGBOX_AUTOCLOSE)
         setvar(VAR_BALDESIA_MINI_GAME_STATE, 8)
     }
     else{
@@ -789,10 +788,6 @@ script Baldesia_EventScript_HisuianZoruaTrigger{
     removeobject(LOCALID_BENNIS)
     removeobject(LOCALID_PANINI)
     setvar(VAR_MOMO_ARIA_STATE, 2)
-    clearflag(FLAG_HIDE_BENNIS_BALDESIA_MAIN_HOUSE) // custom for steven, remove after building
-    clearflag(FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE) // custom for steven, remove after building
-    setflag(FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE) // custom for steven, remove after building
-    setflag(FLAG_HIDE_OLD_MAN_SNOWDRIFT) // custom for steven, remove after building
     releaseall
     end
 }

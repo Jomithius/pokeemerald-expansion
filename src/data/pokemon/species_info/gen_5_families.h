@@ -8957,7 +8957,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .enemyMonElevation = 10,
         .backPic = gMonBackPic_Ferrothorn,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = 14,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         .palette = gMonPalette_Ferrothorn,
         .shinyPalette = gMonShinyPalette_Ferrothorn,
@@ -10956,6 +10956,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sBisharpLevelUpLearnset,
         .teachableLearnset = sBisharpTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM_HOLD, ITEM_LEADERS_CREST, SPECIES_KINGAMBIT}),
+                        EVOLUTION({EVO_DEFEAT_THREE_WITH_ITEM, ITEM_LEADERS_CREST, SPECIES_KINGAMBIT}),
     },
 
 #if P_GEN_9_CROSS_EVOS

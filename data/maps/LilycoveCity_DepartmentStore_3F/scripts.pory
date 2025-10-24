@@ -75,8 +75,6 @@ LilycoveCity_DepartmentStore_3F_Pokemart_PokemonItems:
 	.2byte ITEM_LEEK 
 	.2byte ITEM_THICK_CLUB 
 	.2byte ITEM_LUCKY_PUNCH 
-	.2byte ITEM_DEEP_SEA_SCALE 
-	.2byte ITEM_DEEP_SEA_TOOTH 
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkFarLeft::

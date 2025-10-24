@@ -1926,12 +1926,12 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_IMPIDIMP"
+                "species": "SPECIES_NICKIT"
               },
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_MUNNA"
+                "species": "SPECIES_IMPIDIMP"
               },
               {
                 "min_level": 5,
@@ -9255,7 +9255,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MEOWTH_ALOLA"
+                "species": "SPECIES_PURRLOIN"
               },
               {
                 "min_level": 4,

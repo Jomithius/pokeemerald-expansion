@@ -2157,6 +2157,10 @@ Mismagius
 Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+Chimecho
+Level: 39
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 === TRAINER_VON ===
 Name: VON
 Class: Nerd
@@ -4215,7 +4219,7 @@ IVs: 0 Atk
 - Reflect
 
 Staraptor @ Heavy-Duty Boots  
-Ability: Reckless  
+Ability: Intimidate  
 Level: 65    
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
@@ -6942,7 +6946,7 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Purple
 
-Meowscarada (F) @ Heavy-Duty Boots  
+Sceowmarada (Meowscarada) (F) @ Heavy-Duty Boots  
 Ability: Protean  
 Level: 75    
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -6952,7 +6956,7 @@ Jolly Nature
 - Flower Trick  
 - Play Rough  
 
-Tauros-Paldea-Aqua @ Rocky Helmet  
+Rautos (Tauros-Paldea-Aqua) @ Rocky Helmet  
 Ability: Intimidate  
 Level: 75   
 EVs: 252 HP / 204 Atk / 52 SpD  
@@ -6962,7 +6966,7 @@ Adamant Nature
 - Raging Bull  
 - Bulk Up  
 
-Overqwil (F) @ Poison Barb
+Filqwish (Overqwil) (F) @ Poison Barb
 Ability: Intimidate  
 Level: 75
 Tera Type: Flying   
@@ -6973,17 +6977,17 @@ Adamant Nature
 - Swords Dance  
 - Crunch  
 
-Garchomp (F) @ Loaded Dice  
+Chargomp (Garchomp) (F) @ Loaded Dice  
 Ability: Rough Skin 
 Level: 75    
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Earthquake  
 - Scale Shot  
-- Swords Dance  
+- Stealth Rock
 - Stone Edge  
 
-Corviknight (F) @ Leftovers  
+Dookiree (Corviknight) (F) @ Leftovers  
 Ability: Mirror Armor
 Level: 75   
 EVs: 252 HP / 164 Atk / 92 SpD  
@@ -6993,7 +6997,7 @@ Careful Nature
 - U-turn  
 - Roost    
 
-Typhlosion (M) @ Typhlosionite
+Phlytosion (Typhlosion) (M) @ Typhlosionite
 Ability: Flash Fire  
 Level: 75    
 EVs: 4 Def / 252 SpA / 252 Spe  
@@ -9365,6 +9369,10 @@ Level: 41
 - Explosion
 - Self-Destruct
 
+Grumpig
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_IRENE ===
 Name: IRENE
 Class: Picnicker
@@ -10277,6 +10285,9 @@ Level: 47
 Swoobat
 Level: 48
 
+Glalie
+Level: 48
+
 === TRAINER_BUNGLETON ===
 Name: BUNGLETON
 Class: Hiker
@@ -10292,6 +10303,9 @@ Level: 47
 - Self-Destruct
 
 Sandslash-Alola
+Level: 48
+
+Snorunt
 Level: 48
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
@@ -15768,7 +15782,7 @@ Ability: Mold Breaker
 EVs: 252 HP / 252 Atk / 4 SpD  
 Shiny: Yes
 Jolly Nature  
-- Agility 
+- Bulk Up 
 - Roost  
 - Brave Bird  
 - Body Press  
@@ -17156,12 +17170,13 @@ Mugshot: Blue
 Dragonite @ Dragoniteite
 Ability: Multiscale   
 Shiny: Yes
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
-- Tailwind  
+EVs: 252 HP / 4 Atk / 252 SpA 
+Hasty Nature  
+IVs: 0 Atk  
+- Air Cutter  
+- Extreme Speed
 - Breaking Swipe  
-- Extreme Speed  
-- Dragon Cheer  
+- Draco Meteor
 
 Greninja-Bond @ Expert Belt  
 Ability: Battle Bond  
@@ -17198,7 +17213,7 @@ Timid Nature
 IVs: 0 Atk    
 - Heat Wave  
 - Hyper Voice  
-- Air Cutter
+- Dragon Cheer
 - Dazzling Gleam  
 
 Skeledirge @ Throat Spray  
@@ -18289,14 +18304,15 @@ Impish Nature
 - Recover  
 - Earthquake
 
-Typhlosion (M) @ Typhlosionite
+Phlytosion (Typhlosion) (M) @ Typhlosionite
 Ability: Flash Fire   
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
+IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Heat Wave
 - Endure
 - Earth Power  
-- Overheat  
+- Hidden Power 
 
 Mienshao (F) @ Heavy-Duty Boots  
 Ability: Regenerator  
@@ -19060,7 +19076,7 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Yellow
 
-Pikachu-Partner @ Light Ball  
+Pikachu-Kalos @ Light Ball  
 Ability: Static
 Level: 100   
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -21778,6 +21794,10 @@ Mismagius
 Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+Chimecho
+Level: 39
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 === TRAINER_VON ===
 Name: VON
 Class: Nerd
@@ -23960,12 +23980,13 @@ IVs: 0 Atk
 - Foul Play    
 
 Staraptor @ Heavy-Duty Boots  
-Ability: Reckless  
+Ability: Intimidate  
 Level: 65  
 EVs: 192 HP  
 Jolly Nature  
 - Brave Bird  
-- Double-Edge   
+- Double-Edge
+- Defog   
 
 Electivire (M) @ Air Balloon  
 Ability: Motor Drive  
@@ -23973,11 +23994,10 @@ Level: 65
 EVs: 192 HP  
 Adamant Nature   
 - Supercell Slam  
-- Cross Chop
-- Defog   
+- Cross Chop 
 
 Haxorus (M) @ Dragon Fang
-Ability: Rivalry  
+Ability: Unnerve
 Level: 65  
 EVs: 192 HP  
 Jolly Nature  
@@ -26633,7 +26653,7 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Purple
 
-Meowscarada (F) @ Heavy-Duty Boots  
+Sceowmarada (Meowscarada) (F) @ Heavy-Duty Boots  
 Ability: Protean  
 Level: 75   
 EVs: 252 HP 
@@ -26643,7 +26663,7 @@ Jolly Nature
 - Flower Trick  
 - Play Rough  
 
-Tauros-Paldea-Aqua @ Rocky Helmet  
+Rautos (Tauros-Paldea-Aqua) @ Rocky Helmet  
 Ability: Intimidate  
 Level: 75 
 EVs: 252 HP  
@@ -26652,7 +26672,7 @@ Adamant Nature
 - Close Combat  
 - Raging Bull  
 
-Overqwil (F)
+Filqwish (Overqwil) (F)
 Ability: Intimidate  
 Level: 75
 EVs: 252 HP 
@@ -26661,16 +26681,17 @@ Adamant Nature
 - Barb Barrage  
 - Crunch  
 
-Garchomp (F) @ Lum Berry  
+Chargomp (Garchomp) (F) @ Lum Berry  
 Ability: Rough Skin
 Level: 75 
 EVs: 252 HP   
 Jolly Nature  
 - Earthquake  
 - Dragon Claw 
-- Stone Edge  
+- Stone Edge
+- Stealth Rock  
 
-Corviknight (F) @ Leftovers  
+Dookiree (Corviknight) (F) @ Leftovers  
 Ability: Mirror Armor 
 Level: 75 
 EVs: 252 HP  
@@ -26679,7 +26700,7 @@ Careful Nature
 - Brave Bird  
 - Iron Head 
 
-Typhlosion (M) @ Typhlosionite
+Phlytosion (Typhlosion) (M) @ Typhlosionite
 Ability: Flash Fire 
 Level: 75  
 EVs: 252 HP / 128 SpA 
@@ -29190,6 +29211,10 @@ Level: 41
 - Explosion
 - Self-Destruct
 
+Grumpig
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_IRENE ===
 Name: IRENE
 Class: Picnicker
@@ -30161,6 +30186,9 @@ Level: 47
 Swoobat
 Level: 48
 
+Glalie
+Level: 48
+
 === TRAINER_BUNGLETON ===
 Name: BUNGLETON
 Class: Hiker
@@ -30177,6 +30205,9 @@ Level: 47
 - Self-Destruct
 
 Sandslash-Alola
+Level: 48
+
+Snorunt
 Level: 48
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
@@ -38284,7 +38315,7 @@ Impish Nature
 - Explosion  
 - Earthquake
 
-Typhlosion (M) @ Typhlosionite
+Phlytosion (Typhlosion) (M) @ Typhlosionite
 Ability: Flash Fire 
 EVs: 252 HP / 64 SpA  
 Timid Nature  
@@ -38302,9 +38333,10 @@ Jolly Nature
 - High Jump Kick  
 - Knock Off  
 
-Walking Wake
+Walking Wake @ Booster Energy
 Ability: Protosynthesis  
 Timid Nature  
+IVs: 10 Spe  
 - Hydro Steam  
 - Draco Meteor  
 - Flamethrower  
@@ -38312,11 +38344,10 @@ Timid Nature
 Archaludon
 Ability: Stamina  
 Calm Nature  
-IVs: 0 Atk / 0 SpA  
+IVs: 0 SpA  
 - Draco Meteor  
 - Electro Shot  
 - Steel Beam  
-- Body Press
 
 Avatar @ Covert Cloak
 Ability: Dark Aura
@@ -39031,7 +39062,7 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Easy 
 
-Pikachu-Partner @ Light Ball  
+Pikachu-Kalos @ Light Ball  
 Ability: Static
 EVs: 252 HP / 128 Atk
 Level: 100  

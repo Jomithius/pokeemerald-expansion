@@ -595,6 +595,14 @@ EverGrandeCity_EventScript_StrongTrainerWaits_1:
 # 430 "data/maps/EverGrandeCity/scripts.pory"
 	setvar VAR_EVER_GRANDE_CITY_STATE, 1
 # 431 "data/maps/EverGrandeCity/scripts.pory"
+	clearflag FLAG_HIDE_BENNIS_BALDESIA_MAIN_HOUSE
+# 432 "data/maps/EverGrandeCity/scripts.pory"
+	clearflag FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE
+# 433 "data/maps/EverGrandeCity/scripts.pory"
+	setflag FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE
+# 434 "data/maps/EverGrandeCity/scripts.pory"
+	setflag FLAG_HIDE_OLD_MAN_SNOWDRIFT
+# 435 "data/maps/EverGrandeCity/scripts.pory"
 	releaseall
 	end
 
@@ -614,41 +622,41 @@ EverGrandeCity_EventScript_StrongTrainerWaits_5:
 	goto EverGrandeCity_EventScript_StrongTrainerWaits_1
 
 
-# 435 "data/maps/EverGrandeCity/scripts.pory"
+# 439 "data/maps/EverGrandeCity/scripts.pory"
 EverGrandeCity_Movement_PlayerToNurse28:
-# 436 "data/maps/EverGrandeCity/scripts.pory"
+# 440 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 436 "data/maps/EverGrandeCity/scripts.pory"
+# 440 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 436 "data/maps/EverGrandeCity/scripts.pory"
+# 440 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 437 "data/maps/EverGrandeCity/scripts.pory"
+# 441 "data/maps/EverGrandeCity/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 440 "data/maps/EverGrandeCity/scripts.pory"
+# 444 "data/maps/EverGrandeCity/scripts.pory"
 EverGrandeCity_Movement_PlayerToNurse29:
-# 441 "data/maps/EverGrandeCity/scripts.pory"
+# 445 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 441 "data/maps/EverGrandeCity/scripts.pory"
+# 445 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 441 "data/maps/EverGrandeCity/scripts.pory"
+# 445 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 442 "data/maps/EverGrandeCity/scripts.pory"
+# 446 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
 	step_end
 
-# 445 "data/maps/EverGrandeCity/scripts.pory"
+# 449 "data/maps/EverGrandeCity/scripts.pory"
 EverGrandeCity_Movement_PlayerToNurse30:
-# 446 "data/maps/EverGrandeCity/scripts.pory"
+# 450 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 446 "data/maps/EverGrandeCity/scripts.pory"
+# 450 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 446 "data/maps/EverGrandeCity/scripts.pory"
+# 450 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 447 "data/maps/EverGrandeCity/scripts.pory"
+# 451 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
-# 447 "data/maps/EverGrandeCity/scripts.pory"
+# 451 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
 	step_end
 
@@ -670,7 +678,7 @@ EverGrandeCity_EventScript_StrongTrainerWaits_Text_0:
 
 EverGrandeCity_EventScript_StrongTrainerWaits_Text_1:
 # 417 "data/maps/EverGrandeCity/scripts.pory"
-	.string "NURSE: It's been a while since I've\n seen a new TRAINER.\p May I know your name?\n … … … … … …\p Ah, {PLAYER}?!\n JAMES has told me about you!\l He's been working so hard lately.\p It almost feels like I've only been\n taking care of his POKéMON!\p {COLOR BLUE}{SHADOW LIGHT_BLUE}The current level cap is 65.\p Also, a shortcut has now opened up on\n VICTORY ROAD 1F.$"
+	.string "NURSE: It's been a while since I've\n seen a new TRAINER.\p May I know your name?\n … … … … … …\p Ah, {PLAYER}?!\n JAMES has told me about you!\l He's been working so hard lately.\p It almost feels like I've only been\n taking care of his POKéMON!\p {COLOR BLUE}{SHADOW LIGHT_BLUE}A shortcut has now opened up on\n VICTORY ROAD 1F.\p The current level cap is 65.$"
 
 EverGrandeCity_Text_Asak1::
 # 164 "data/maps/EverGrandeCity/scripts.pory"
