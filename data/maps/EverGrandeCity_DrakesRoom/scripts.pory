@@ -161,7 +161,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle{
 	callnative(UpdateFollowingPokemon)
 	msgbox("Well, you won again. Congrats!\n
 		Here's your prize.\p
-		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
+		DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	setvar(VAR_RESULT, 3)
     playse(SE_ORB)
@@ -212,7 +212,7 @@ script EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle2{
 	callnative(UpdateFollowingPokemon)
 	msgbox("Well, you won again. Congrats!\n
 		Here's your prize.\p
-		{COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
+		DAVE starts casting a spell!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	setvar(VAR_RESULT, 3)
     playse(SE_ORB)

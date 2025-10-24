@@ -595,14 +595,6 @@ EverGrandeCity_EventScript_StrongTrainerWaits_1:
 # 430 "data/maps/EverGrandeCity/scripts.pory"
 	setvar VAR_EVER_GRANDE_CITY_STATE, 1
 # 431 "data/maps/EverGrandeCity/scripts.pory"
-	clearflag FLAG_HIDE_BENNIS_BALDESIA_MAIN_HOUSE
-# 432 "data/maps/EverGrandeCity/scripts.pory"
-	clearflag FLAG_HIDE_ARIA_BALDESIA_MAIN_HOUSE
-# 433 "data/maps/EverGrandeCity/scripts.pory"
-	setflag FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE
-# 434 "data/maps/EverGrandeCity/scripts.pory"
-	setflag FLAG_HIDE_OLD_MAN_SNOWDRIFT
-# 435 "data/maps/EverGrandeCity/scripts.pory"
 	releaseall
 	end
 
@@ -622,41 +614,41 @@ EverGrandeCity_EventScript_StrongTrainerWaits_5:
 	goto EverGrandeCity_EventScript_StrongTrainerWaits_1
 
 
-# 439 "data/maps/EverGrandeCity/scripts.pory"
+# 435 "data/maps/EverGrandeCity/scripts.pory"
 EverGrandeCity_Movement_PlayerToNurse28:
-# 440 "data/maps/EverGrandeCity/scripts.pory"
+# 436 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 440 "data/maps/EverGrandeCity/scripts.pory"
+# 436 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 440 "data/maps/EverGrandeCity/scripts.pory"
+# 436 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 441 "data/maps/EverGrandeCity/scripts.pory"
+# 437 "data/maps/EverGrandeCity/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 444 "data/maps/EverGrandeCity/scripts.pory"
+# 440 "data/maps/EverGrandeCity/scripts.pory"
 EverGrandeCity_Movement_PlayerToNurse29:
-# 445 "data/maps/EverGrandeCity/scripts.pory"
+# 441 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 445 "data/maps/EverGrandeCity/scripts.pory"
+# 441 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 445 "data/maps/EverGrandeCity/scripts.pory"
+# 441 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 446 "data/maps/EverGrandeCity/scripts.pory"
+# 442 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
 	step_end
 
-# 449 "data/maps/EverGrandeCity/scripts.pory"
+# 445 "data/maps/EverGrandeCity/scripts.pory"
 EverGrandeCity_Movement_PlayerToNurse30:
-# 450 "data/maps/EverGrandeCity/scripts.pory"
+# 446 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 450 "data/maps/EverGrandeCity/scripts.pory"
+# 446 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 450 "data/maps/EverGrandeCity/scripts.pory"
+# 446 "data/maps/EverGrandeCity/scripts.pory"
 	walk_right
-# 451 "data/maps/EverGrandeCity/scripts.pory"
+# 447 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
-# 451 "data/maps/EverGrandeCity/scripts.pory"
+# 447 "data/maps/EverGrandeCity/scripts.pory"
 	walk_up
 	step_end
 

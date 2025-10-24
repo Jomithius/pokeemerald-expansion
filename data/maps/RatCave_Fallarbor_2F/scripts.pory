@@ -17,8 +17,8 @@ script RatCave_Fallarbor_2F_EventScript_Ratduardo{
     removeobject(2)
     removeobject(3)
     fadescreenspeed(FADE_FROM_BLACK, 3)
-    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes again:\p
-    {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… get… in my way…!", MSGBOX_AUTOCLOSE)
+    msgbox("RATDUARDO's voice echoes:\p
+    Don't… get… in my way…!", MSGBOX_AUTOCLOSE)
     waitmessage
     setflag(FLAG_RATDUARDO_RAT_CAVE_FALLARBOR)
     call(FallarborRatCaveShake)

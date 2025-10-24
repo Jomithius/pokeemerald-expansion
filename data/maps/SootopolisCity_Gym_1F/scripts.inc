@@ -469,7 +469,7 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 # 235 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	.string "of battle.\p"
 # 236 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	.string "Also take this.\n"
+	.string "Take this too.\n"
 # 237 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	.string "Yeet!$"
 # 238 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
@@ -511,7 +511,7 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle:
 # 256 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	.string "There, you'll find the POKéMON\n"
 # 257 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	.string "LEAGUE. Yeaaah.$"
+	.string "LEAGUE. Yeheaaah.$"
 # 258 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 
 # 259 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
