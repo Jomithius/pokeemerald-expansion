@@ -473,7 +473,7 @@ EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_3:
 
 EverGrandeCity_DrakesRoom_EventScript_DaveFinalBattle_Text_4:
 # 162 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	.string "Well, you won again. Congrats!\n Here's your prize.\p {COLOR BLUE}{SHADOW LIGHT_BLUE}DAVE starts casting a spell!$"
+	.string "Well, you won again. Congrats!\n Here's your prize.\p DAVE starts casting a spell!$"
 
 EverGrandeCity_EventScript_DaveSendsPlayerBackToTheBeginning_Text_0:
 # 235 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"

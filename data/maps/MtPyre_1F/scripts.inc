@@ -34,6 +34,12 @@ MtPyre_1F_EventScript_SpeedwagonHint::
 	msgbox MtPyre_1F_Text_HeardMotorcyclesRoute123, MSGBOX_NPC
 	end
 
+MtPyre_1F_EventScript_BigNuggets::
+	lock
+	finditem ITEM_BIG_NUGGET, 4
+	release
+	end
+
 MtPyre_1F_Text_TakeThisForYourOwnGood:
 	.string "All sorts of beings wander the slopes\n"
 	.string "of MT. PYRE…\p"

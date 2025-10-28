@@ -98,349 +98,357 @@ Route135_EventScript_Denjamin::
 
 Route135_EventScript_Whitney::
 # 86 "data/maps/Route135/scripts.pory"
-	goto_if_not_defeated TRAINER_WHITNEY, Route135_EventScript_WhitneyBattle
+	lock
 # 87 "data/maps/Route135/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_MILTANKITE, Route135_EventScript_GiveMiltankite
+	goto_if_not_defeated TRAINER_WHITNEY, Route135_EventScript_WhitneyBattle
 # 88 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_Whitney_Text_0, MSGBOX_NPC
+	goto_if_unset FLAG_RECEIVED_MILTANKITE, Route135_EventScript_GiveMiltankite
+# 89 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 90 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_Whitney_Text_0, MSGBOX_AUTOCLOSE
+# 93 "data/maps/Route135/scripts.pory"
+	waitmessage
+# 94 "data/maps/Route135/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 95 "data/maps/Route135/scripts.pory"
+	waitmovement 0
+# 96 "data/maps/Route135/scripts.pory"
+	release
 	end
 
 
 Route135_EventScript_WhitneyBattle::
-# 95 "data/maps/Route135/scripts.pory"
-	lock
-# 96 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_WhitneyBattle_Text_0, MSGBOX_AUTOCLOSE
-# 99 "data/maps/Route135/scripts.pory"
-	waitmessage
-# 100 "data/maps/Route135/scripts.pory"
-	playse SE_PIN
 # 101 "data/maps/Route135/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
-# 102 "data/maps/Route135/scripts.pory"
-	waitmovement 0
-# 103 "data/maps/Route135/scripts.pory"
-	waitse
+	msgbox Route135_EventScript_WhitneyBattle_Text_0, MSGBOX_AUTOCLOSE
 # 104 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 105 "data/maps/Route135/scripts.pory"
-	playbgm MUS_ENCOUNTER_GIRL, FALSE
-# 106 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_WhitneyBattle_Text_1, MSGBOX_AUTOCLOSE
-# 110 "data/maps/Route135/scripts.pory"
 	waitmessage
+# 105 "data/maps/Route135/scripts.pory"
+	playse SE_PIN
+# 106 "data/maps/Route135/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
+# 107 "data/maps/Route135/scripts.pory"
+	waitmovement 0
+# 108 "data/maps/Route135/scripts.pory"
+	waitse
+# 109 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 110 "data/maps/Route135/scripts.pory"
+	playbgm MUS_ENCOUNTER_GIRL, FALSE
 # 111 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_WhitneyBattle_Text_1, MSGBOX_AUTOCLOSE
+# 115 "data/maps/Route135/scripts.pory"
+	waitmessage
+# 116 "data/maps/Route135/scripts.pory"
 	setflag FLAG_SYS_BOSS_BATTLE
-# 112 "data/maps/Route135/scripts.pory"
+# 117 "data/maps/Route135/scripts.pory"
 	trainerbattle_no_intro TRAINER_WHITNEY, Route135_EventScript_WhitneyBattle_Text_2
-# 113 "data/maps/Route135/scripts.pory"
+# 118 "data/maps/Route135/scripts.pory"
 	clearflag FLAG_SYS_BOSS_BATTLE
-# 114 "data/maps/Route135/scripts.pory"
+# 119 "data/maps/Route135/scripts.pory"
 	goto Route135_EventScript_GiveMiltankite
 	end
 
 
 Route135_EventScript_GiveMiltankite::
-# 119 "data/maps/Route135/scripts.pory"
-	lock
-# 120 "data/maps/Route135/scripts.pory"
+# 124 "data/maps/Route135/scripts.pory"
 	faceplayer
-# 121 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_GiveMiltankite_Text_0, MSGBOX_DEFAULT
 # 125 "data/maps/Route135/scripts.pory"
-	waitmessage
-# 126 "data/maps/Route135/scripts.pory"
-	checkitemspace ITEM_MILTANKITE
-# 127 "data/maps/Route135/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 128 "data/maps/Route135/scripts.pory"
-	giveitem ITEM_MILTANKITE
+	msgbox Route135_EventScript_GiveMiltankite_Text_0, MSGBOX_DEFAULT
 # 129 "data/maps/Route135/scripts.pory"
-	setflag FLAG_RECEIVED_MILTANKITE
+	waitmessage
 # 130 "data/maps/Route135/scripts.pory"
-	waitmessage
+	checkitemspace ITEM_MILTANKITE
 # 131 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_GiveMiltankite_Text_1, MSGBOX_AUTOCLOSE
-# 135 "data/maps/Route135/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 132 "data/maps/Route135/scripts.pory"
+	giveitem ITEM_MILTANKITE
+# 133 "data/maps/Route135/scripts.pory"
+	setflag FLAG_RECEIVED_MILTANKITE
+# 134 "data/maps/Route135/scripts.pory"
 	waitmessage
-# 136 "data/maps/Route135/scripts.pory"
+# 135 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_GiveMiltankite_Text_1, MSGBOX_AUTOCLOSE
+# 139 "data/maps/Route135/scripts.pory"
+	waitmessage
+# 140 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 Route135_EventScript_MoomooMilkSalesman::
-# 141 "data/maps/Route135/scripts.pory"
-	lock
-# 142 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 143 "data/maps/Route135/scripts.pory"
-	message Route135_EventScript_MoomooMilkSalesman_Text_0
 # 145 "data/maps/Route135/scripts.pory"
-	waitmessage
+	lock
 # 146 "data/maps/Route135/scripts.pory"
-	pokemart Route135_Pokemart
+	faceplayer
 # 147 "data/maps/Route135/scripts.pory"
+	message Route135_EventScript_MoomooMilkSalesman_Text_0
+# 149 "data/maps/Route135/scripts.pory"
+	waitmessage
+# 150 "data/maps/Route135/scripts.pory"
+	pokemart Route135_Pokemart
+# 151 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_MoomooMilkSalesman_Text_1, MSGBOX_DEFAULT
-# 148 "data/maps/Route135/scripts.pory"
+# 152 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 152 "data/maps/Route135/scripts.pory"
+# 156 "data/maps/Route135/scripts.pory"
 Route135_Pokemart:
-# 153 "data/maps/Route135/scripts.pory"
+# 157 "data/maps/Route135/scripts.pory"
 	.2byte ITEM_MOOMOO_MILK
-# 154 "data/maps/Route135/scripts.pory"
+# 158 "data/maps/Route135/scripts.pory"
 	.2byte ITEM_BERRY_JUICE
 	.2byte ITEM_NONE
 
 Route135_EventScript_FatMan::
-# 159 "data/maps/Route135/scripts.pory"
+# 163 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_FatMan_Text_0, MSGBOX_SIGN
 	end
 
 
 Route135_EventScript_Man4::
-# 165 "data/maps/Route135/scripts.pory"
+# 169 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_Man4_Text_0, MSGBOX_NPC
 	end
 
 
 Route135_EventScript_Man1::
-# 170 "data/maps/Route135/scripts.pory"
-	lock
-# 171 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 172 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_Man1_Text_0, MSGBOX_AUTOCLOSE
-# 173 "data/maps/Route135/scripts.pory"
-	waitmessage
 # 174 "data/maps/Route135/scripts.pory"
+	lock
+# 175 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 176 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_Man1_Text_0, MSGBOX_AUTOCLOSE
+# 177 "data/maps/Route135/scripts.pory"
+	waitmessage
+# 178 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 Route135_EventScript_WomanILoveLechonk::
-# 179 "data/maps/Route135/scripts.pory"
-	lock
-# 180 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 181 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_WomanILoveLechonk_Text_0, MSGBOX_DEFAULT
-# 182 "data/maps/Route135/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, Route135_EventScript_WomanILoveLechonk_Text_1, Route135_EventScript_WomanILoveLechonk_Text_2
 # 183 "data/maps/Route135/scripts.pory"
+	lock
+# 184 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 185 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_WomanILoveLechonk_Text_0, MSGBOX_DEFAULT
+# 186 "data/maps/Route135/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, Route135_EventScript_WomanILoveLechonk_Text_1, Route135_EventScript_WomanILoveLechonk_Text_2
+# 187 "data/maps/Route135/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route135_EventScript_WomanILoveLechonk_2
-# 188 "data/maps/Route135/scripts.pory"
+# 192 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_WomanILoveLechonk_Text_4, MSGBOX_AUTOCLOSE
 Route135_EventScript_WomanILoveLechonk_1:
-# 191 "data/maps/Route135/scripts.pory"
+# 195 "data/maps/Route135/scripts.pory"
 	waitmessage
-# 192 "data/maps/Route135/scripts.pory"
+# 196 "data/maps/Route135/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 193 "data/maps/Route135/scripts.pory"
+# 197 "data/maps/Route135/scripts.pory"
 	waitmovement 0
-# 194 "data/maps/Route135/scripts.pory"
+# 198 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 Route135_EventScript_WomanILoveLechonk_2:
-# 184 "data/maps/Route135/scripts.pory"
+# 188 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_WomanILoveLechonk_Text_3, MSGBOX_AUTOCLOSE
 	goto Route135_EventScript_WomanILoveLechonk_1
 
 
 Route135_EventScript_WomanILoveMiltank::
-# 199 "data/maps/Route135/scripts.pory"
-	lock
-# 200 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 201 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_WomanILoveMiltank_Text_0, MSGBOX_DEFAULT
-# 202 "data/maps/Route135/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, Route135_EventScript_WomanILoveLechonk_Text_1, Route135_EventScript_WomanILoveMiltank_Text_1
 # 203 "data/maps/Route135/scripts.pory"
+	lock
+# 204 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 205 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_WomanILoveMiltank_Text_0, MSGBOX_DEFAULT
+# 206 "data/maps/Route135/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, Route135_EventScript_WomanILoveLechonk_Text_1, Route135_EventScript_WomanILoveMiltank_Text_1
+# 207 "data/maps/Route135/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route135_EventScript_WomanILoveMiltank_2
-# 208 "data/maps/Route135/scripts.pory"
+# 212 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_WomanILoveMiltank_Text_2, MSGBOX_AUTOCLOSE
 Route135_EventScript_WomanILoveMiltank_1:
-# 211 "data/maps/Route135/scripts.pory"
+# 215 "data/maps/Route135/scripts.pory"
 	waitmessage
-# 212 "data/maps/Route135/scripts.pory"
+# 216 "data/maps/Route135/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 213 "data/maps/Route135/scripts.pory"
+# 217 "data/maps/Route135/scripts.pory"
 	waitmovement 0
-# 214 "data/maps/Route135/scripts.pory"
+# 218 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 Route135_EventScript_WomanILoveMiltank_2:
-# 204 "data/maps/Route135/scripts.pory"
+# 208 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_WomanILoveLechonk_Text_3, MSGBOX_AUTOCLOSE
 	goto Route135_EventScript_WomanILoveMiltank_1
 
 
 Route135_EventScript_FirstMoo::
-# 219 "data/maps/Route135/scripts.pory"
-	lockall
-# 220 "data/maps/Route135/scripts.pory"
-	applymovement 26, Common_Movement_WalkInPlaceDown
-# 221 "data/maps/Route135/scripts.pory"
-	waitmovement 26
-# 222 "data/maps/Route135/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 # 223 "data/maps/Route135/scripts.pory"
-	waitmovement 0
+	lockall
 # 224 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_FirstMoo_Text_0, MSGBOX_AUTOCLOSE
-# 227 "data/maps/Route135/scripts.pory"
-	waitmessage
-# 228 "data/maps/Route135/scripts.pory"
-	applymovement 26, Common_Movement_WalkInPlaceLeft
-# 229 "data/maps/Route135/scripts.pory"
-	waitmovement 26
-# 230 "data/maps/Route135/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
-# 231 "data/maps/Route135/scripts.pory"
-	waitmovement 0
-# 232 "data/maps/Route135/scripts.pory"
-	fadeoutbgm 1
-# 233 "data/maps/Route135/scripts.pory"
-	delay 60
-# 234 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
-# 235 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_FirstMoo_Text_1, MSGBOX_DEFAULT
-# 236 "data/maps/Route135/scripts.pory"
-	waitmoncry
-# 237 "data/maps/Route135/scripts.pory"
-	closemessage
-# 238 "data/maps/Route135/scripts.pory"
 	applymovement 26, Common_Movement_WalkInPlaceDown
-# 239 "data/maps/Route135/scripts.pory"
+# 225 "data/maps/Route135/scripts.pory"
 	waitmovement 26
-# 240 "data/maps/Route135/scripts.pory"
+# 226 "data/maps/Route135/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
-# 241 "data/maps/Route135/scripts.pory"
+# 227 "data/maps/Route135/scripts.pory"
 	waitmovement 0
-# 242 "data/maps/Route135/scripts.pory"
-	msgbox Route135_EventScript_FirstMoo_Text_2, MSGBOX_AUTOCLOSE
-# 244 "data/maps/Route135/scripts.pory"
+# 228 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_FirstMoo_Text_0, MSGBOX_AUTOCLOSE
+# 231 "data/maps/Route135/scripts.pory"
 	waitmessage
-# 245 "data/maps/Route135/scripts.pory"
+# 232 "data/maps/Route135/scripts.pory"
 	applymovement 26, Common_Movement_WalkInPlaceLeft
-# 246 "data/maps/Route135/scripts.pory"
+# 233 "data/maps/Route135/scripts.pory"
 	waitmovement 26
-# 247 "data/maps/Route135/scripts.pory"
-	setvar VAR_TEMP_7, 1
+# 234 "data/maps/Route135/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 235 "data/maps/Route135/scripts.pory"
+	waitmovement 0
+# 236 "data/maps/Route135/scripts.pory"
+	fadeoutbgm 1
+# 237 "data/maps/Route135/scripts.pory"
+	delay 60
+# 238 "data/maps/Route135/scripts.pory"
+	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
+# 239 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_FirstMoo_Text_1, MSGBOX_DEFAULT
+# 240 "data/maps/Route135/scripts.pory"
+	waitmoncry
+# 241 "data/maps/Route135/scripts.pory"
+	closemessage
+# 242 "data/maps/Route135/scripts.pory"
+	applymovement 26, Common_Movement_WalkInPlaceDown
+# 243 "data/maps/Route135/scripts.pory"
+	waitmovement 26
+# 244 "data/maps/Route135/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
+# 245 "data/maps/Route135/scripts.pory"
+	waitmovement 0
+# 246 "data/maps/Route135/scripts.pory"
+	msgbox Route135_EventScript_FirstMoo_Text_2, MSGBOX_AUTOCLOSE
 # 248 "data/maps/Route135/scripts.pory"
-	fadeinbgm 1
+	waitmessage
 # 249 "data/maps/Route135/scripts.pory"
+	applymovement 26, Common_Movement_WalkInPlaceLeft
+# 250 "data/maps/Route135/scripts.pory"
+	waitmovement 26
+# 251 "data/maps/Route135/scripts.pory"
+	setvar VAR_TEMP_7, 1
+# 252 "data/maps/Route135/scripts.pory"
+	fadeinbgm 1
+# 253 "data/maps/Route135/scripts.pory"
 	releaseall
 	end
 
 
 Route135_EventScript_Man4DidYouKnow::
-# 254 "data/maps/Route135/scripts.pory"
+# 258 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_Man4DidYouKnow_Text_0, MSGBOX_NPC
 	end
 
 
 Route135_EventScript_Gentleman::
-# 260 "data/maps/Route135/scripts.pory"
+# 264 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_Gentleman_Text_0, MSGBOX_NPC
 	end
 
 
 Route135_EventScript_Lechonk::
-# 267 "data/maps/Route135/scripts.pory"
-	lock
-# 268 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 269 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_LECHONK, CRY_MODE_NORMAL
-# 270 "data/maps/Route135/scripts.pory"
-	waitmoncry
 # 271 "data/maps/Route135/scripts.pory"
+	lock
+# 272 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 273 "data/maps/Route135/scripts.pory"
+	playmoncry SPECIES_LECHONK, CRY_MODE_NORMAL
+# 274 "data/maps/Route135/scripts.pory"
+	waitmoncry
+# 275 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 Route135_EventScript_Oinkologne::
-# 276 "data/maps/Route135/scripts.pory"
-	lock
-# 277 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 278 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_OINKOLOGNE, CRY_MODE_NORMAL
-# 279 "data/maps/Route135/scripts.pory"
-	waitmoncry
 # 280 "data/maps/Route135/scripts.pory"
+	lock
+# 281 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 282 "data/maps/Route135/scripts.pory"
+	playmoncry SPECIES_OINKOLOGNE, CRY_MODE_NORMAL
+# 283 "data/maps/Route135/scripts.pory"
+	waitmoncry
+# 284 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 Route135_EventScript_Mudbray::
-# 285 "data/maps/Route135/scripts.pory"
-	lock
-# 286 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 287 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_MUDBRAY, CRY_MODE_NORMAL
-# 288 "data/maps/Route135/scripts.pory"
-	waitmoncry
 # 289 "data/maps/Route135/scripts.pory"
+	lock
+# 290 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 291 "data/maps/Route135/scripts.pory"
+	playmoncry SPECIES_MUDBRAY, CRY_MODE_NORMAL
+# 292 "data/maps/Route135/scripts.pory"
+	waitmoncry
+# 293 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 Route135_EventScript_Mudsdale::
-# 294 "data/maps/Route135/scripts.pory"
-	lock
-# 295 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 296 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_MUDSDALE, CRY_MODE_NORMAL
-# 297 "data/maps/Route135/scripts.pory"
-	waitmoncry
 # 298 "data/maps/Route135/scripts.pory"
+	lock
+# 299 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 300 "data/maps/Route135/scripts.pory"
+	playmoncry SPECIES_MUDSDALE, CRY_MODE_NORMAL
+# 301 "data/maps/Route135/scripts.pory"
+	waitmoncry
+# 302 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 Route135_EventScript_Tauros::
-# 303 "data/maps/Route135/scripts.pory"
-	lock
-# 304 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 305 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_TAUROS, CRY_MODE_NORMAL
-# 306 "data/maps/Route135/scripts.pory"
-	waitmoncry
 # 307 "data/maps/Route135/scripts.pory"
+	lock
+# 308 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 309 "data/maps/Route135/scripts.pory"
+	playmoncry SPECIES_TAUROS, CRY_MODE_NORMAL
+# 310 "data/maps/Route135/scripts.pory"
+	waitmoncry
+# 311 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 Route135_EventScript_Miltank::
-# 312 "data/maps/Route135/scripts.pory"
-	lock
-# 313 "data/maps/Route135/scripts.pory"
-	faceplayer
-# 314 "data/maps/Route135/scripts.pory"
-	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
-# 315 "data/maps/Route135/scripts.pory"
-	waitmoncry
 # 316 "data/maps/Route135/scripts.pory"
+	lock
+# 317 "data/maps/Route135/scripts.pory"
+	faceplayer
+# 318 "data/maps/Route135/scripts.pory"
+	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
+# 319 "data/maps/Route135/scripts.pory"
+	waitmoncry
+# 320 "data/maps/Route135/scripts.pory"
 	release
 	end
 
 
 Route135_EventScript_Sign::
-# 321 "data/maps/Route135/scripts.pory"
+# 325 "data/maps/Route135/scripts.pory"
 	msgbox Route135_EventScript_Sign_Text_0, MSGBOX_SIGN
 	end
 
@@ -502,101 +510,101 @@ Route135_EventScript_Denjamin_Text_2:
 	.string "It's hard work out here, but the\n pay is surprisingly good.$"
 
 Route135_EventScript_Whitney_Text_0:
-# 88 "data/maps/Route135/scripts.pory"
+# 90 "data/maps/Route135/scripts.pory"
 	.string "I'm so bored!\p I want to go back to GOLDENROD\n CITY already!$"
 
 Route135_EventScript_WhitneyBattle_Text_0:
-# 96 "data/maps/Route135/scripts.pory"
+# 101 "data/maps/Route135/scripts.pory"
 	.string "Gosh, it's so boring out here!\p Why did we have to visit our family\n out in HOENN's countryside…$"
 
 Route135_EventScript_WhitneyBattle_Text_1:
-# 106 "data/maps/Route135/scripts.pory"
+# 111 "data/maps/Route135/scripts.pory"
 	.string "Huh? Who are you?\n A TRAINER?\p Perfect timing!\n Let's have some fun with a battle!$"
 
 Route135_EventScript_WhitneyBattle_Text_2:
-# 112 "data/maps/Route135/scripts.pory"
+# 117 "data/maps/Route135/scripts.pory"
 	.string "That was fun!$"
 
 Route135_EventScript_GiveMiltankite_Text_0:
-# 121 "data/maps/Route135/scripts.pory"
+# 125 "data/maps/Route135/scripts.pory"
 	.string "That was a lot of fun!\n Did my MILTANK surprise you? Hehe!\p Here. I have an extra stone you can\n have as thanks for entertaining me!$"
 
 Route135_EventScript_GiveMiltankite_Text_1:
-# 131 "data/maps/Route135/scripts.pory"
+# 135 "data/maps/Route135/scripts.pory"
 	.string "I hope I can go back to GOLDENROD\n CITY soon.\p I want to go shopping at the DEPT.\n STORE!$"
 
 Route135_EventScript_MoomooMilkSalesman_Text_0:
-# 143 "data/maps/Route135/scripts.pory"
+# 147 "data/maps/Route135/scripts.pory"
 	.string "Welcome, partner!\n Take a gander at my wares.$"
 
 Route135_EventScript_MoomooMilkSalesman_Text_1:
-# 147 "data/maps/Route135/scripts.pory"
+# 151 "data/maps/Route135/scripts.pory"
 	.string "Pleasure doin' business!$"
 
 Route135_EventScript_FatMan_Text_0:
-# 159 "data/maps/Route135/scripts.pory"
+# 163 "data/maps/Route135/scripts.pory"
 	.string "Oh man…\n Look at all that tasty cabbage…$"
 
 Route135_EventScript_Man4_Text_0:
-# 165 "data/maps/Route135/scripts.pory"
+# 169 "data/maps/Route135/scripts.pory"
 	.string "It ain't much, but it's honest work.$"
 
 Route135_EventScript_Man1_Text_0:
-# 172 "data/maps/Route135/scripts.pory"
+# 176 "data/maps/Route135/scripts.pory"
 	.string "I lost my gosh darn hat!$"
 
 Route135_EventScript_WomanILoveLechonk_Text_0:
-# 181 "data/maps/Route135/scripts.pory"
+# 185 "data/maps/Route135/scripts.pory"
 	.string "I just love LECHONK!$"
 
 Route135_EventScript_WomanILoveLechonk_Text_1:
-# 182 "data/maps/Route135/scripts.pory"
+# 186 "data/maps/Route135/scripts.pory"
 	.string "Me too!$"
 
 Route135_EventScript_WomanILoveLechonk_Text_2:
-# 182 "data/maps/Route135/scripts.pory"
+# 186 "data/maps/Route135/scripts.pory"
 	.string "Yup. They make good bacon.$"
 
 Route135_EventScript_WomanILoveLechonk_Text_3:
-# 184 "data/maps/Route135/scripts.pory"
+# 188 "data/maps/Route135/scripts.pory"
 	.string "Right?!\n They're stinky, but sooo cute!$"
 
 Route135_EventScript_WomanILoveLechonk_Text_4:
-# 188 "data/maps/Route135/scripts.pory"
+# 192 "data/maps/Route135/scripts.pory"
 	.string "What's WRONG with you?!\n I'm vegan, you PIG!$"
 
 Route135_EventScript_WomanILoveMiltank_Text_0:
-# 201 "data/maps/Route135/scripts.pory"
+# 205 "data/maps/Route135/scripts.pory"
 	.string "I just love MILTANK!$"
 
 Route135_EventScript_WomanILoveMiltank_Text_1:
-# 202 "data/maps/Route135/scripts.pory"
+# 206 "data/maps/Route135/scripts.pory"
 	.string "Yup. They make good burgers.$"
 
 Route135_EventScript_WomanILoveMiltank_Text_2:
-# 208 "data/maps/Route135/scripts.pory"
+# 212 "data/maps/Route135/scripts.pory"
 	.string "What's WRONG with you?!\n I'm vegan, you COW!$"
 
 Route135_EventScript_FirstMoo_Text_0:
-# 224 "data/maps/Route135/scripts.pory"
-	.string "You're just in time!\n That MILTANK found it's moo!\p Listen!$"
+# 228 "data/maps/Route135/scripts.pory"
+	.string "You're just in time!\n That MILTANK found its moo!\p Listen!$"
 
 Route135_EventScript_FirstMoo_Text_1:
-# 235 "data/maps/Route135/scripts.pory"
+# 239 "data/maps/Route135/scripts.pory"
 	.string "MILTANK: Moooooo!$"
 
 Route135_EventScript_FirstMoo_Text_2:
-# 242 "data/maps/Route135/scripts.pory"
+# 246 "data/maps/Route135/scripts.pory"
 	.string "Isn't it beautiful?\n Gosh, I love nature.$"
 
 Route135_EventScript_Man4DidYouKnow_Text_0:
-# 254 "data/maps/Route135/scripts.pory"
+# 258 "data/maps/Route135/scripts.pory"
 	.string "Did you know?\n Some TAUROS are different types.$"
 
 Route135_EventScript_Gentleman_Text_0:
-# 260 "data/maps/Route135/scripts.pory"
+# 264 "data/maps/Route135/scripts.pory"
 	.string "That PROF. at the lab…\p He's researching some gotdang strange\n things, I'll tell you what.$"
 
 Route135_EventScript_Sign_Text_0:
-# 321 "data/maps/Route135/scripts.pory"
+# 325 "data/maps/Route135/scripts.pory"
 	.string "LUSH ACREAGE\p “The ranch of resplendent wonders!”$"

@@ -2883,6 +2883,10 @@ RustboroCity_EventScript_ImportanceOfStatEditor::
 RustboroCity_EventScript_ImportanceOfStatEditor_1:
 # 1514 "data/maps/RustboroCity/scripts.pory"
 	waitmessage
+# 1515 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_ImportanceOfStatEditor_Text_2, MSGBOX_DEFAULT
+# 1517 "data/maps/RustboroCity/scripts.pory"
+	waitmessage
 	return
 
 RustboroCity_EventScript_ImportanceOfStatEditor_2:
@@ -2891,97 +2895,97 @@ RustboroCity_EventScript_ImportanceOfStatEditor_2:
 	goto RustboroCity_EventScript_ImportanceOfStatEditor_1
 
 
-# 1526 "data/maps/RustboroCity/scripts.pory"
+# 1529 "data/maps/RustboroCity/scripts.pory"
 RustboroExclaim:
-# 1526 "data/maps/RustboroCity/scripts.pory"
+# 1529 "data/maps/RustboroCity/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 1528 "data/maps/RustboroCity/scripts.pory"
+# 1531 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceLeft:
-# 1528 "data/maps/RustboroCity/scripts.pory"
+# 1531 "data/maps/RustboroCity/scripts.pory"
 	face_left
 	step_end
 
-# 1530 "data/maps/RustboroCity/scripts.pory"
+# 1533 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceRight:
-# 1531 "data/maps/RustboroCity/scripts.pory"
+# 1534 "data/maps/RustboroCity/scripts.pory"
 	face_right
 	step_end
 
-# 1534 "data/maps/RustboroCity/scripts.pory"
+# 1537 "data/maps/RustboroCity/scripts.pory"
 RustboroFaceUp:
-# 1535 "data/maps/RustboroCity/scripts.pory"
+# 1538 "data/maps/RustboroCity/scripts.pory"
 	face_up
 	step_end
 
-# 1538 "data/maps/RustboroCity/scripts.pory"
+# 1541 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeave1:
-# 1539 "data/maps/RustboroCity/scripts.pory"
+# 1542 "data/maps/RustboroCity/scripts.pory"
 	walk_right
-# 1540 "data/maps/RustboroCity/scripts.pory"
-	walk_down
-	step_end
-
 # 1543 "data/maps/RustboroCity/scripts.pory"
+	walk_down
+	step_end
+
+# 1546 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeave2:
-# 1544 "data/maps/RustboroCity/scripts.pory"
+# 1547 "data/maps/RustboroCity/scripts.pory"
 	walk_right
-# 1544 "data/maps/RustboroCity/scripts.pory"
+# 1547 "data/maps/RustboroCity/scripts.pory"
 	walk_right
-# 1544 "data/maps/RustboroCity/scripts.pory"
+# 1547 "data/maps/RustboroCity/scripts.pory"
 	walk_right
-# 1545 "data/maps/RustboroCity/scripts.pory"
-	walk_up
-# 1545 "data/maps/RustboroCity/scripts.pory"
-	walk_up
-# 1545 "data/maps/RustboroCity/scripts.pory"
-	walk_up
-# 1545 "data/maps/RustboroCity/scripts.pory"
-	walk_up
-# 1545 "data/maps/RustboroCity/scripts.pory"
-	walk_up
-# 1545 "data/maps/RustboroCity/scripts.pory"
-	walk_up
-	step_end
-
 # 1548 "data/maps/RustboroCity/scripts.pory"
+	walk_up
+# 1548 "data/maps/RustboroCity/scripts.pory"
+	walk_up
+# 1548 "data/maps/RustboroCity/scripts.pory"
+	walk_up
+# 1548 "data/maps/RustboroCity/scripts.pory"
+	walk_up
+# 1548 "data/maps/RustboroCity/scripts.pory"
+	walk_up
+# 1548 "data/maps/RustboroCity/scripts.pory"
+	walk_up
+	step_end
+
+# 1551 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeaveGym1:
-# 1549 "data/maps/RustboroCity/scripts.pory"
+# 1552 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1550 "data/maps/RustboroCity/scripts.pory"
-	walk_down
-	step_end
-
 # 1553 "data/maps/RustboroCity/scripts.pory"
+	walk_down
+	step_end
+
+# 1556 "data/maps/RustboroCity/scripts.pory"
 RustboroMisaLeaveGym2:
-# 1554 "data/maps/RustboroCity/scripts.pory"
+# 1557 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1554 "data/maps/RustboroCity/scripts.pory"
+# 1557 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1554 "data/maps/RustboroCity/scripts.pory"
+# 1557 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1554 "data/maps/RustboroCity/scripts.pory"
+# 1557 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1554 "data/maps/RustboroCity/scripts.pory"
+# 1557 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1554 "data/maps/RustboroCity/scripts.pory"
+# 1557 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1554 "data/maps/RustboroCity/scripts.pory"
+# 1557 "data/maps/RustboroCity/scripts.pory"
 	walk_left
-# 1554 "data/maps/RustboroCity/scripts.pory"
+# 1557 "data/maps/RustboroCity/scripts.pory"
 	walk_left
 	step_end
 
-# 1557 "data/maps/RustboroCity/scripts.pory"
-RustboroPlayerStepBack:
-# 1558 "data/maps/RustboroCity/scripts.pory"
-	lock_facing_direction
-# 1559 "data/maps/RustboroCity/scripts.pory"
-	walk_down
 # 1560 "data/maps/RustboroCity/scripts.pory"
-	delay_16
+RustboroPlayerStepBack:
 # 1561 "data/maps/RustboroCity/scripts.pory"
+	lock_facing_direction
+# 1562 "data/maps/RustboroCity/scripts.pory"
+	walk_down
+# 1563 "data/maps/RustboroCity/scripts.pory"
+	delay_16
+# 1564 "data/maps/RustboroCity/scripts.pory"
 	unlock_facing_direction
 	step_end
 
@@ -3000,6 +3004,10 @@ RustboroCity_EventScript_ImportanceOfStatEditor_Text_0:
 RustboroCity_EventScript_ImportanceOfStatEditor_Text_1:
 # 1509 "data/maps/RustboroCity/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The STAT EDITOR is an extremely useful\n mechanic to take advantage of.\p Using it will make your playthrough\n much easier.$"
+
+RustboroCity_EventScript_ImportanceOfStatEditor_Text_2:
+# 1515 "data/maps/RustboroCity/scripts.pory"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}It's recommended to use L/R to switch\n between party POKéMON when using the\lSTAT EDITOR.$"
 
 RustboroMisa1::
 # 1437 "data/maps/RustboroCity/scripts.pory"
@@ -3022,5 +3030,5 @@ RustboroMisa5::
 	.string "Oh! I'm almost late for the\n meeting! I have to go.\p It was nice meeting you, {PLAYER}!$"
 
 RustboroCity_Text_ExplainExpShare::
-# 1518 "data/maps/RustboroCity/scripts.pory"
+# 1521 "data/maps/RustboroCity/scripts.pory"
 	.string "The EXP. SHARE is a very useful item\n that gives all your POKéMON EXP. Points\l from battles.\p To use it, just turn it on in the KEY\n ITEMS section of your bag.$"

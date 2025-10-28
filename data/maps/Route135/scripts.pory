@@ -83,16 +83,21 @@ script Route135_EventScript_Denjamin{
 }
 
 script Route135_EventScript_Whitney{
+    lock
     goto_if_not_defeated(TRAINER_WHITNEY, Route135_EventScript_WhitneyBattle)
     goto_if_unset(FLAG_RECEIVED_MILTANKITE, Route135_EventScript_GiveMiltankite)
+    faceplayer
     msgbox("I'm so bored!\p
         I want to go back to GOLDENROD\n
-        CITY already!", MSGBOX_NPC)
+        CITY already!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
 	end
 }
 
 script Route135_EventScript_WhitneyBattle{
-    lock
     msgbox("Gosh, it's so boring out here!\p
         Why did we have to visit our family\n
         out in HOENN's countryside…", MSGBOX_AUTOCLOSE)
@@ -116,7 +121,6 @@ script Route135_EventScript_WhitneyBattle{
 }
 
 script Route135_EventScript_GiveMiltankite{
-    lock
     faceplayer
     msgbox("That was a lot of fun!\n
         Did my MILTANK surprise you? Hehe!\p
@@ -222,7 +226,7 @@ script Route135_EventScript_FirstMoo{
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     msgbox("You're just in time!\n
-        That MILTANK found it's moo!\p
+        That MILTANK found its moo!\p
         Listen!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(26, Common_Movement_WalkInPlaceLeft)

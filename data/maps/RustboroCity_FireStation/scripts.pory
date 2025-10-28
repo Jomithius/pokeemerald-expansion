@@ -33,9 +33,10 @@ script RustboroCity_FireStation_Maniac2{
 script RustboroCity_FireStation_Man{
     lock
     faceplayer
-    msgbox("The Gym Leader, STEVE, is a first\n
-    responder. There's no one better\l
-    at firefighting in HOENN.", MSGBOX_AUTOCLOSE)
+    msgbox("The GYM LEADER STEVE is also a\n
+    veteran first responder.\p
+    There's no one better at firefighting\n
+    in HOENN.", MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
@@ -43,15 +44,21 @@ script RustboroCity_FireStation_Man{
 
 script RustboroCity_FireStation_FatMan{
     lock
-    msgbox("Ah, MISA's back in town…\n
-    I wish she would smother me…", MSGBOX_AUTOCLOSE)
+    if(!flag(FLAG_BADGE01_GET)){
+        msgbox("Ah, MISA's back in town…\n
+        I wish she would smother me…", MSGBOX_AUTOCLOSE)
+    }
+    else{
+        msgbox("Ah, MISA…\n
+        I wish she would smother me…", MSGBOX_AUTOCLOSE)
+    }
     waitmessage
     playse(SE_PIN)
     applymovement(5, FireStationSurprised)
     waitmovement(5)
     waitse
     faceplayer
-    msgbox("Hey! I'm working.\n
+    msgbox("H-Hey! I'm working.\n
     Get out of here!", MSGBOX_AUTOCLOSE)
     applymovement(5, FireStationFaceUp)
     waitmovement(5)

@@ -316,4 +316,6 @@ MoveTutor_EventScript_ForTeachablePy::
 	setvar VAR_0x8005, MOVE_POWER_UP_PUNCH
 	setvar VAR_0x8005, MOVE_PSYSHOCK
 	setvar VAR_0x8005, MOVE_MACH_PUNCH
+	setvar VAR_0x8005, MOVE_RETALIATE
+	setvar VAR_0x8005, MOVE_INCINERATE
 	end

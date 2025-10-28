@@ -89,7 +89,7 @@ Fallarbor_RatCave_Rock::
 
 RatCave_Fallarbor_2F_EventScript_Ratduardo_Text_0:
 # 20 "data/maps/RatCave_Fallarbor_2F/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE} RATDUARDO's voice echoes again:\p {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Don't… get… in my way…!$"
+	.string "RATDUARDO's voice echoes:\p Don't… get… in my way…!$"
 
 Fallarbor_RatCave_Rock_Text_0:
 # 56 "data/maps/RatCave_Fallarbor_2F/scripts.pory"

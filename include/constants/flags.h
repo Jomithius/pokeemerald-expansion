@@ -578,7 +578,7 @@
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_4_KEY             (FLAG_HIDDEN_ITEMS_START + 0x21)
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_6_KEY             (FLAG_HIDDEN_ITEMS_START + 0x22)
 #define FLAG_HIDDEN_ITEM_SS_TIDAL_LOWER_DECK_LEFTOVERS       (FLAG_HIDDEN_ITEMS_START + 0x23)
-#define FLAG_HIDDEN_ITEM_MT_PYRE_CHOICE_SCARF                (FLAG_HIDDEN_ITEMS_START + 0x24)
+#define FLAG_HIDDEN_ITEM_MT_PYRE_BIG_NUGGETS                (FLAG_HIDDEN_ITEMS_START + 0x24)
 #define FLAG_HIDDEN_ITEM_ROUTE_104_POTION                    (FLAG_HIDDEN_ITEMS_START + 0x25)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_2        (FLAG_HIDDEN_ITEMS_START + 0x26)
 #define FLAG_HIDDEN_ITEM_ROUTE_121_HP_UP                     (FLAG_HIDDEN_ITEMS_START + 0x27) // pp max
@@ -1555,8 +1555,8 @@
 #define FLAG_SYS_STARTED_AS_FEMALE                  (SYSTEM_FLAGS + 0xB3) // For Fantasia debugging (fly and GameClear)
 #define FLAG_RECEIVED_TEACUP                        (SYSTEM_FLAGS + 0xB4) // Baldesia Forest Sinistcha minigame
 #define FLAG_TALKED_TO_PAIN_SPLIT_TUTOR             (SYSTEM_FLAGS + 0xB5) // to shorten text
-#define FLAG_SYS_BOSS_BATTLE                        (SYSTEM_FLAGS + 0xB6) // for post game boss battles, used to stop variance of levels
-#define FLAG_COMPLETED_BALDESIA                     (SYSTEM_FLAGS + 0xB7) // for last level cap
+#define FLAG_SYS_BOSS_BATTLE                        (SYSTEM_FLAGS + 0xB6) // for post game boss battles, used to stop heavy variance of levels
+#define FLAG_COMPLETED_BALDESIA                     (SYSTEM_FLAGS + 0xB7) // for last level cap, functionally unused
 #define FLAG_SYS_DECLINED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB8) // 
 #define FLAG_RECEIVED_CASTELIACONE                  (SYSTEM_FLAGS + 0xB9) // From Misa Castelia Queen Route 137
 #define FLAG_RECEIVED_PROTECTIVE_PADS               (SYSTEM_FLAGS + 0xBA) // Dojo Challenge

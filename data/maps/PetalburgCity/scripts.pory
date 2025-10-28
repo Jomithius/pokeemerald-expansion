@@ -947,6 +947,58 @@ script PetalburgCity_EventScript_BlockGymNPC{
 	return
 }
 
+script PetalburgCity_EventScript_ExterminatorFatMan{
+	lock
+	msgbox("It's that bad down there?\n
+		Sounds like a pain.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script PetalburgCity_EventScript_ExterminatorCamper{
+	lock
+	faceplayer
+	msgbox("I heard this is going to be a big job.\n
+		I'm kind of scared.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+script PetalburgCity_EventScript_ExterminatorMan4{
+	lock
+	applymovement(10, Common_Movement_WalkInPlaceDown)
+	waitmovement(10)
+	msgbox("All right, guys!\n
+		Gear up and focus!\p
+		This is the last house.", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_WalkInPlaceUp)
+	waitmovement(0)	
+	msgbox("It shouldn't be that bad, right?", MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(10, Common_Movement_WalkInPlaceDown)
+	waitmovement(10)
+	msgbox("No. From what I saw, it was\n
+		pretty crazy down there.\p
+		But this isn't the first time we've\n
+		done this.\p
+		Let's just finish the job quickly\n
+		so we can go home for the day!\p
+		Yes, sir!", MSGBOX_AUTOCLOSE)
+	waitmessage
+	release
+	end
+}
+
+script PetalburgCity_EventScript_LunaHouseSign{
+	msgbox("LUNA's HOUSE", MSGBOX_SIGN)
+	end
+}
+
 text LunaGone_FantasiaHint{
 	"LUNA's still not back.\p
 	He said he was meeting somebody\n
