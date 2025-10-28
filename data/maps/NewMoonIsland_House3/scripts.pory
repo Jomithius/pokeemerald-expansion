@@ -65,7 +65,6 @@ script NewMoonIsland_House3_EventScript_Poobles{
     playmoncry(SPECIES_DIGLETT_ALOLA, CRY_MODE_ENCOUNTER)
     msgbox("POOOOOOOOOOOOOOOBLES!", MSGBOX_DEFAULT)
     waitmoncry
-    waitmessage
     release
     end
 }

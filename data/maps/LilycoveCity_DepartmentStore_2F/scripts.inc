@@ -384,7 +384,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_Psyduck::
 # 234 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	msgbox LilycoveCity_DepartmentStore_2F_EventScript_Psyduck_Text_0
 # 235 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	waitmessage
+	waitmoncry
 # 236 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	release
 	end

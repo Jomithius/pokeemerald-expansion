@@ -195,7 +195,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Leafeon::
 # 110 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	playmoncry SPECIES_LEAFEON, CRY_MODE_ENCOUNTER
 # 111 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	delay 24
+	waitmoncry
 # 112 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	applymovement 2, Common_Movement_FaceOriginalDirection
 # 113 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"

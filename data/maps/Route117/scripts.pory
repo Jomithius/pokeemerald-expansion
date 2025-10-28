@@ -396,7 +396,7 @@ script AraquanidWon_Caught {
  
 script AraquanidFailed {
 	playmoncry(SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	fadescreen(FADE_TO_BLACK)
 	removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)

@@ -73,7 +73,7 @@ RaticateFailed::
 # 37 "data/maps/RatCave_3F/scripts.pory"
 	playmoncry SPECIES_RATICATE, CRY_MODE_ENCOUNTER
 # 38 "data/maps/RatCave_3F/scripts.pory"
-	delay 20
+	waitmoncry
 # 39 "data/maps/RatCave_3F/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 40 "data/maps/RatCave_3F/scripts.pory"
@@ -156,7 +156,7 @@ RaticateAlolaFailed::
 # 80 "data/maps/RatCave_3F/scripts.pory"
 	playmoncry SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER
 # 81 "data/maps/RatCave_3F/scripts.pory"
-	delay 20
+	waitmoncry
 # 82 "data/maps/RatCave_3F/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 83 "data/maps/RatCave_3F/scripts.pory"

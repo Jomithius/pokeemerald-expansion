@@ -101,7 +101,7 @@ RibombeeFailed::
 # 55 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	playmoncry SPECIES_RIBOMBEE, CRY_MODE_ENCOUNTER
 # 56 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	delay 20
+	waitmoncry
 # 57 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 58 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"

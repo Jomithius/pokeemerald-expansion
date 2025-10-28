@@ -615,7 +615,7 @@ SootopolisCity_Gym_1F_EventScript_Mawile::
 # 311 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	playmoncry SPECIES_MAWILE, CRY_MODE_ENCOUNTER
 # 312 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	delay 24
+	waitmoncry
 # 313 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	release
 	end

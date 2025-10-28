@@ -309,7 +309,7 @@ script SootopolisCity_Gym_1F_EventScript_Mawile{
 	lock
 	faceplayer
 	playmoncry(SPECIES_MAWILE, CRY_MODE_ENCOUNTER)
-	delay(24)
+	waitmoncry
 	release
 	end
 }

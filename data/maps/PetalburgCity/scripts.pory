@@ -970,11 +970,12 @@ script PetalburgCity_EventScript_ExterminatorCamper{
 
 script PetalburgCity_EventScript_ExterminatorMan4{
 	lock
+	delay(24)
 	applymovement(10, Common_Movement_WalkInPlaceDown)
 	waitmovement(10)
 	msgbox("All right, guys!\n
-		Gear up and focus!\p
-		This is the last house.", MSGBOX_AUTOCLOSE)
+		Get ready and focus up!\l
+		This is the last house!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(VAR_LAST_TALKED, Common_Movement_WalkInPlaceUp)
 	waitmovement(0)	
@@ -982,12 +983,13 @@ script PetalburgCity_EventScript_ExterminatorMan4{
 	waitmessage
 	applymovement(10, Common_Movement_WalkInPlaceDown)
 	waitmovement(10)
-	msgbox("No. From what I saw, it was\n
+	msgbox("Well… from what I saw, it was\n
 		pretty crazy down there.\p
 		But this isn't the first time we've\n
-		done this.\p
+		done this!\p
 		Let's just finish the job quickly\n
-		so we can go home for the day!\p
+		so we can go home for the day!\l
+		Got it?\p
 		Yes, sir!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	release

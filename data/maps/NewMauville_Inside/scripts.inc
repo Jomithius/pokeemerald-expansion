@@ -600,7 +600,7 @@ TogedemaruFailed::
 # 302 "data/maps/NewMauville_Inside/scripts.pory"
 	playmoncry SPECIES_TOGEDEMARU, CRY_MODE_ENCOUNTER
 # 303 "data/maps/NewMauville_Inside/scripts.pory"
-	delay 20
+	waitmoncry
 # 304 "data/maps/NewMauville_Inside/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 305 "data/maps/NewMauville_Inside/scripts.pory"

@@ -98,7 +98,7 @@ RustboroCity_FireStation_Rotom::
 # 73 "data/maps/RustboroCity_FireStation/scripts.pory"
 	playmoncry SPECIES_ROTOM, CRY_MODE_ENCOUNTER
 # 74 "data/maps/RustboroCity_FireStation/scripts.pory"
-	delay 20
+	waitmoncry
 # 75 "data/maps/RustboroCity_FireStation/scripts.pory"
 	release
 	end

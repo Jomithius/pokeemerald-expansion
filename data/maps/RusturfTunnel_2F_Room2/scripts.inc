@@ -77,7 +77,7 @@ GalvantulaFailed::
 # 39 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	playmoncry SPECIES_GALVANTULA, CRY_MODE_ENCOUNTER
 # 40 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	delay 20
+	waitmoncry
 # 41 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 42 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
@@ -164,7 +164,7 @@ AriadosFailed::
 # 85 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	playmoncry SPECIES_ARIADOS, CRY_MODE_ENCOUNTER
 # 86 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
-	delay 20
+	waitmoncry
 # 87 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 88 "data/maps/RusturfTunnel_2F_Room2/scripts.pory"

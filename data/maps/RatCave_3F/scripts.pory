@@ -35,7 +35,7 @@ script RaticateWon_Caught {
  
 script RaticateFailed {
 	playmoncry(SPECIES_RATICATE, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	fadescreen(FADE_TO_BLACK)
 	removeobject(1)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
@@ -78,7 +78,7 @@ script RaticateAlolaWon_Caught {
  
 script RaticateAlolaFailed {
 	playmoncry(SPECIES_RATICATE_ALOLA, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	fadescreen(FADE_TO_BLACK)
 	removeobject(2)
 	fadescreenspeed(FADE_FROM_BLACK, 5)

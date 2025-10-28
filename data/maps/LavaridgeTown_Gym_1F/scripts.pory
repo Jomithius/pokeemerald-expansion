@@ -437,7 +437,7 @@ text LavaridgeTown_Gym_1F_Text_ExplainMysticalFire{
 script LavaridgeTown_Gym_1F_EventScript_Ninetales{
     lock
     playmoncry(SPECIES_NINETALES, CRY_MODE_ENCOUNTER)
-    delay(24)
+    waitmoncry
     release
     end
 }

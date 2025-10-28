@@ -749,7 +749,7 @@ EverGrandeCity_PhoebesRoom_EventScript_Luxray::
 # 473 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playmoncry SPECIES_LUXRAY, CRY_MODE_ENCOUNTER
 # 474 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	delay 24
+	waitmoncry
 # 475 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	applymovement 2, Common_Movement_FaceOriginalDirection
 # 476 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"

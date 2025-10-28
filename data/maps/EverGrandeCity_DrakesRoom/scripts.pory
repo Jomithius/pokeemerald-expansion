@@ -108,7 +108,7 @@ script EverGrandeCity_DrakesRoom_EventScript_Banette{
 	lock
 	faceplayer
 	playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
-	delay(24)
+	waitmoncry
 	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
 	waitmovement(VAR_LAST_TALKED)
 	release

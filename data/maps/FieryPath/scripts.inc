@@ -96,7 +96,7 @@ SalazzleFailed::
 # 50 "data/maps/FieryPath/scripts.pory"
 	playmoncry SPECIES_SALAZZLE, CRY_MODE_ENCOUNTER
 # 51 "data/maps/FieryPath/scripts.pory"
-	delay 20
+	waitmoncry
 # 52 "data/maps/FieryPath/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 53 "data/maps/FieryPath/scripts.pory"

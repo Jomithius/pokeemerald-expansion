@@ -163,8 +163,8 @@ RustboroCity_Gym_Text_JoshDefeat:
 	.string "You were too good for me…$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "ROCK type POKéMON are also\n"
-	.string "strong against fire types!$"
+	.string "ROCK-type POKéMON are also\n"
+	.string "strong against FIRE-types!$"
 
 RustboroCity_Gym_Text_TommyIntro:
 	.string "FIRE! FIRE! FIRE! FIRE!$"
@@ -312,15 +312,15 @@ script RustboroCity_Gym_EventScript_GiveChillingWater {
 
 text RustboroCity_Gym_Text_ExplainChillingWater{
     "That TECHNICAL MACHINE, TM52,\n
-	contains CHILLING WATER.\l
-    It's a good way to put out a POKéMON\l
+	contains CHILLING WATER.\p
+    It's a good way to put out a POKéMON\n
     that's on fire!"
 }
 
 script RustboroCity_Gym_Magmortar{
 	lock
 	playmoncry(SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	release
 	end
 }

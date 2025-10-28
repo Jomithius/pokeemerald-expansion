@@ -465,7 +465,7 @@ script VikavoltWon_Caught{
  
 script VikavoltFailed{
 	playmoncry(SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	fadescreen(FADE_TO_BLACK)
 	removeobject(VAR_LAST_TALKED)
 	fadescreenspeed(FADE_FROM_BLACK, 5)

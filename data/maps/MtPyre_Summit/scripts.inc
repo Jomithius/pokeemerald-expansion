@@ -1324,7 +1324,7 @@ MimikyuFailed::
 # 665 "data/maps/MtPyre_Summit/scripts.pory"
 	playmoncry SPECIES_MIMIKYU, CRY_MODE_ENCOUNTER
 # 666 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 20
+	waitmoncry
 # 667 "data/maps/MtPyre_Summit/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 668 "data/maps/MtPyre_Summit/scripts.pory"

@@ -300,7 +300,7 @@ script TogedemaruWon_Caught {
  
 script TogedemaruFailed {
 	playmoncry(SPECIES_TOGEDEMARU, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	fadescreen(FADE_TO_BLACK)
 	removeobject(9)
 	fadescreenspeed(FADE_FROM_BLACK, 5)

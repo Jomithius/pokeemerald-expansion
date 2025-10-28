@@ -195,7 +195,7 @@ EverGrandeCity_DrakesRoom_EventScript_Banette::
 # 110 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	playmoncry SPECIES_BANETTE, CRY_MODE_ENCOUNTER
 # 111 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	delay 24
+	waitmoncry
 # 112 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 113 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"

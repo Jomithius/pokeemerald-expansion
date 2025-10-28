@@ -37,7 +37,7 @@ script GalvantulaWon_Caught {
  
 script GalvantulaFailed {
 	playmoncry(SPECIES_GALVANTULA, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	fadescreen(FADE_TO_BLACK)
 	removeobject(5)
 	fadescreenspeed(FADE_FROM_BLACK, 5)
@@ -83,7 +83,7 @@ script AriadosWon_Caught {
  
 script AriadosFailed {
 	playmoncry(SPECIES_ARIADOS, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	fadescreen(FADE_TO_BLACK)
 	removeobject(6)
 	fadescreenspeed(FADE_FROM_BLACK, 5)

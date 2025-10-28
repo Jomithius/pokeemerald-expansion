@@ -683,7 +683,7 @@ AraquanidFailed::
 # 398 "data/maps/Route117/scripts.pory"
 	playmoncry SPECIES_ARAQUANID, CRY_MODE_ENCOUNTER
 # 399 "data/maps/Route117/scripts.pory"
-	delay 20
+	waitmoncry
 # 400 "data/maps/Route117/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 401 "data/maps/Route117/scripts.pory"

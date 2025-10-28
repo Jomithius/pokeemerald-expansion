@@ -851,7 +851,7 @@ LavaridgeTown_Gym_1F_EventScript_Ninetales::
 # 439 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	playmoncry SPECIES_NINETALES, CRY_MODE_ENCOUNTER
 # 440 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	delay 24
+	waitmoncry
 # 441 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	release
 	end

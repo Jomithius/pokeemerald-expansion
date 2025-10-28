@@ -1603,7 +1603,7 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 script PetalburgGym_EventScript_Lopunny{
 	lock
 	playmoncry(SPECIES_LOPUNNY, CRY_MODE_ENCOUNTER)
-	delay(20)
+	waitmoncry
 	release
 	end
 }

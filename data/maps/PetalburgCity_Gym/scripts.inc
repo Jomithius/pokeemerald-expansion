@@ -3203,7 +3203,7 @@ PetalburgGym_EventScript_Lopunny::
 # 1605 "data/maps/PetalburgCity_Gym/scripts.pory"
 	playmoncry SPECIES_LOPUNNY, CRY_MODE_ENCOUNTER
 # 1606 "data/maps/PetalburgCity_Gym/scripts.pory"
-	delay 20
+	waitmoncry
 # 1607 "data/maps/PetalburgCity_Gym/scripts.pory"
 	release
 	end

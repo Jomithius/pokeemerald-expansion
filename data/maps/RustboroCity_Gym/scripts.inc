@@ -329,9 +329,9 @@ RustboroCity_Gym_Text_JoshDefeat:
 # 165 "data/maps/RustboroCity_Gym/scripts.pory"
 RustboroCity_Gym_Text_JoshPostBattle:
 # 166 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "ROCK type POKéMON are also\n"
+	.string "ROCK-type POKéMON are also\n"
 # 167 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "strong against fire types!$"
+	.string "strong against FIRE-types!$"
 # 168 "data/maps/RustboroCity_Gym/scripts.pory"
 
 # 169 "data/maps/RustboroCity_Gym/scripts.pory"
@@ -617,7 +617,7 @@ RustboroCity_Gym_Magmortar::
 # 322 "data/maps/RustboroCity_Gym/scripts.pory"
 	playmoncry SPECIES_MAGMORTAR, CRY_MODE_ENCOUNTER
 # 323 "data/maps/RustboroCity_Gym/scripts.pory"
-	delay 20
+	waitmoncry
 # 324 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 	end
@@ -663,4 +663,4 @@ RustboroCity_Gym_EventScript_RoxanneDefeatedFinal_Text_0:
 
 RustboroCity_Gym_Text_ExplainChillingWater::
 # 313 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "That TECHNICAL MACHINE, TM52,\n contains CHILLING WATER.\l It's a good way to put out a POKéMON\l that's on fire!$"
+	.string "That TECHNICAL MACHINE, TM52,\n contains CHILLING WATER.\p It's a good way to put out a POKéMON\n that's on fire!$"

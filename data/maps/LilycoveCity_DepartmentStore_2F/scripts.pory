@@ -231,8 +231,8 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Psyduck {
     waitmovement(7)
     delay(10)
     playmoncry(SPECIES_PSYDUCK, CRY_MODE_ENCOUNTER)
-	msgbox("PSYDUCK: Psy?" MSGBOX_AUTOCLOSE)
-    waitmessage
+	msgbox("PSYDUCK: Psy?" MSGBOX_DEFAULT)
+    waitmoncry
     release
 	end
 }

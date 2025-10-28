@@ -1256,293 +1256,293 @@ Route115_EventScript_PlayerGetsInPosition::
 	return
 
 
-# 719 "data/maps/Route115/scripts.pory"
+# 718 "data/maps/Route115/scripts.pory"
 Route115EmoMove1:
-# 720 "data/maps/Route115/scripts.pory"
+# 719 "data/maps/Route115/scripts.pory"
 	walk_down
-# 720 "data/maps/Route115/scripts.pory"
+# 719 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 723 "data/maps/Route115/scripts.pory"
+# 722 "data/maps/Route115/scripts.pory"
 Route115EmoMove1Right:
-# 724 "data/maps/Route115/scripts.pory"
+# 723 "data/maps/Route115/scripts.pory"
 	walk_right
-# 725 "data/maps/Route115/scripts.pory"
+# 724 "data/maps/Route115/scripts.pory"
 	walk_down
-# 725 "data/maps/Route115/scripts.pory"
+# 724 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 728 "data/maps/Route115/scripts.pory"
+# 727 "data/maps/Route115/scripts.pory"
 Route115EmoMove1Left:
+# 728 "data/maps/Route115/scripts.pory"
+	walk_down
 # 729 "data/maps/Route115/scripts.pory"
-	walk_down
-# 730 "data/maps/Route115/scripts.pory"
 	walk_left
-# 731 "data/maps/Route115/scripts.pory"
+# 730 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 734 "data/maps/Route115/scripts.pory"
+# 733 "data/maps/Route115/scripts.pory"
 Route115EmoMove2:
-# 735 "data/maps/Route115/scripts.pory"
+# 734 "data/maps/Route115/scripts.pory"
 	walk_down
 	step_end
 
-# 738 "data/maps/Route115/scripts.pory"
+# 737 "data/maps/Route115/scripts.pory"
 Route115EmoMove3:
-# 739 "data/maps/Route115/scripts.pory"
+# 738 "data/maps/Route115/scripts.pory"
 	walk_fast_left
-# 740 "data/maps/Route115/scripts.pory"
+# 739 "data/maps/Route115/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 743 "data/maps/Route115/scripts.pory"
+# 742 "data/maps/Route115/scripts.pory"
 Route115EmoMove3Left:
-# 744 "data/maps/Route115/scripts.pory"
+# 743 "data/maps/Route115/scripts.pory"
 	walk_fast_right
-# 745 "data/maps/Route115/scripts.pory"
+# 744 "data/maps/Route115/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 748 "data/maps/Route115/scripts.pory"
+# 747 "data/maps/Route115/scripts.pory"
 Route115Exclaim:
-# 749 "data/maps/Route115/scripts.pory"
+# 748 "data/maps/Route115/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 752 "data/maps/Route115/scripts.pory"
+# 751 "data/maps/Route115/scripts.pory"
 Route115MisaWalkUp:
-# 753 "data/maps/Route115/scripts.pory"
+# 752 "data/maps/Route115/scripts.pory"
+	walk_up
+# 752 "data/maps/Route115/scripts.pory"
+	walk_up
+# 752 "data/maps/Route115/scripts.pory"
+	walk_up
+# 752 "data/maps/Route115/scripts.pory"
+	walk_up
+# 752 "data/maps/Route115/scripts.pory"
 	walk_up
 # 753 "data/maps/Route115/scripts.pory"
-	walk_up
-# 753 "data/maps/Route115/scripts.pory"
-	walk_up
-# 753 "data/maps/Route115/scripts.pory"
-	walk_up
-# 753 "data/maps/Route115/scripts.pory"
-	walk_up
-# 754 "data/maps/Route115/scripts.pory"
 	walk_left
-# 755 "data/maps/Route115/scripts.pory"
+# 754 "data/maps/Route115/scripts.pory"
 	face_up
 	step_end
 
-# 758 "data/maps/Route115/scripts.pory"
+# 757 "data/maps/Route115/scripts.pory"
 Route115MisaWalkUpRight:
-# 759 "data/maps/Route115/scripts.pory"
+# 758 "data/maps/Route115/scripts.pory"
 	walk_up
-# 759 "data/maps/Route115/scripts.pory"
+# 758 "data/maps/Route115/scripts.pory"
 	walk_up
-# 759 "data/maps/Route115/scripts.pory"
+# 758 "data/maps/Route115/scripts.pory"
 	walk_up
-# 759 "data/maps/Route115/scripts.pory"
+# 758 "data/maps/Route115/scripts.pory"
 	walk_up
-# 759 "data/maps/Route115/scripts.pory"
+# 758 "data/maps/Route115/scripts.pory"
 	walk_up
 	step_end
 
-# 762 "data/maps/Route115/scripts.pory"
+# 761 "data/maps/Route115/scripts.pory"
 Route115MisaLeave:
-# 763 "data/maps/Route115/scripts.pory"
+# 762 "data/maps/Route115/scripts.pory"
+	walk_down
+# 762 "data/maps/Route115/scripts.pory"
+	walk_down
+# 762 "data/maps/Route115/scripts.pory"
+	walk_down
+# 762 "data/maps/Route115/scripts.pory"
 	walk_down
 # 763 "data/maps/Route115/scripts.pory"
-	walk_down
+	walk_right
 # 763 "data/maps/Route115/scripts.pory"
-	walk_down
+	walk_right
 # 763 "data/maps/Route115/scripts.pory"
-	walk_down
-# 764 "data/maps/Route115/scripts.pory"
+	walk_right
+# 763 "data/maps/Route115/scripts.pory"
 	walk_right
 # 764 "data/maps/Route115/scripts.pory"
-	walk_right
+	walk_up
 # 764 "data/maps/Route115/scripts.pory"
-	walk_right
+	walk_up
 # 764 "data/maps/Route115/scripts.pory"
-	walk_right
-# 765 "data/maps/Route115/scripts.pory"
+	walk_up
+# 764 "data/maps/Route115/scripts.pory"
 	walk_up
 # 765 "data/maps/Route115/scripts.pory"
-	walk_up
+	walk_right
 # 765 "data/maps/Route115/scripts.pory"
-	walk_up
+	walk_right
 # 765 "data/maps/Route115/scripts.pory"
-	walk_up
-# 766 "data/maps/Route115/scripts.pory"
 	walk_right
-# 766 "data/maps/Route115/scripts.pory"
+# 765 "data/maps/Route115/scripts.pory"
 	walk_right
-# 766 "data/maps/Route115/scripts.pory"
+# 765 "data/maps/Route115/scripts.pory"
 	walk_right
-# 766 "data/maps/Route115/scripts.pory"
+# 765 "data/maps/Route115/scripts.pory"
 	walk_right
-# 766 "data/maps/Route115/scripts.pory"
-	walk_right
-# 766 "data/maps/Route115/scripts.pory"
-	walk_right
-# 766 "data/maps/Route115/scripts.pory"
+# 765 "data/maps/Route115/scripts.pory"
 	walk_right
 	step_end
 
-# 769 "data/maps/Route115/scripts.pory"
+# 768 "data/maps/Route115/scripts.pory"
 Route115RivalLeave:
-# 770 "data/maps/Route115/scripts.pory"
+# 769 "data/maps/Route115/scripts.pory"
+	walk_down
+# 769 "data/maps/Route115/scripts.pory"
+	walk_down
+# 769 "data/maps/Route115/scripts.pory"
+	walk_down
+# 769 "data/maps/Route115/scripts.pory"
+	walk_down
+# 769 "data/maps/Route115/scripts.pory"
 	walk_down
 # 770 "data/maps/Route115/scripts.pory"
-	walk_down
-# 770 "data/maps/Route115/scripts.pory"
-	walk_down
-# 770 "data/maps/Route115/scripts.pory"
-	walk_down
-# 770 "data/maps/Route115/scripts.pory"
-	walk_down
+	walk_right
 # 771 "data/maps/Route115/scripts.pory"
+	walk_down
+# 772 "data/maps/Route115/scripts.pory"
 	walk_right
 # 772 "data/maps/Route115/scripts.pory"
-	walk_down
-# 773 "data/maps/Route115/scripts.pory"
+	walk_right
+# 772 "data/maps/Route115/scripts.pory"
 	walk_right
 # 773 "data/maps/Route115/scripts.pory"
-	walk_right
+	walk_up
 # 773 "data/maps/Route115/scripts.pory"
-	walk_right
-# 774 "data/maps/Route115/scripts.pory"
+	walk_up
+# 773 "data/maps/Route115/scripts.pory"
+	walk_up
+# 773 "data/maps/Route115/scripts.pory"
 	walk_up
 # 774 "data/maps/Route115/scripts.pory"
-	walk_up
+	walk_right
 # 774 "data/maps/Route115/scripts.pory"
-	walk_up
+	walk_right
 # 774 "data/maps/Route115/scripts.pory"
-	walk_up
-# 775 "data/maps/Route115/scripts.pory"
 	walk_right
-# 775 "data/maps/Route115/scripts.pory"
+# 774 "data/maps/Route115/scripts.pory"
 	walk_right
-# 775 "data/maps/Route115/scripts.pory"
+# 774 "data/maps/Route115/scripts.pory"
 	walk_right
-# 775 "data/maps/Route115/scripts.pory"
+# 774 "data/maps/Route115/scripts.pory"
 	walk_right
-# 775 "data/maps/Route115/scripts.pory"
-	walk_right
-# 775 "data/maps/Route115/scripts.pory"
-	walk_right
-# 775 "data/maps/Route115/scripts.pory"
+# 774 "data/maps/Route115/scripts.pory"
 	walk_right
 	step_end
 
-# 778 "data/maps/Route115/scripts.pory"
+# 777 "data/maps/Route115/scripts.pory"
 Route115MisaLeaveLeftTrigger:
-# 779 "data/maps/Route115/scripts.pory"
+# 778 "data/maps/Route115/scripts.pory"
+	walk_down
+# 778 "data/maps/Route115/scripts.pory"
+	walk_down
+# 778 "data/maps/Route115/scripts.pory"
+	walk_down
+# 778 "data/maps/Route115/scripts.pory"
+	walk_down
+# 778 "data/maps/Route115/scripts.pory"
 	walk_down
 # 779 "data/maps/Route115/scripts.pory"
-	walk_down
-# 779 "data/maps/Route115/scripts.pory"
-	walk_down
-# 779 "data/maps/Route115/scripts.pory"
-	walk_down
-# 779 "data/maps/Route115/scripts.pory"
-	walk_down
+	walk_right
 # 780 "data/maps/Route115/scripts.pory"
+	walk_down
+# 781 "data/maps/Route115/scripts.pory"
 	walk_right
 # 781 "data/maps/Route115/scripts.pory"
-	walk_down
+	walk_right
+# 781 "data/maps/Route115/scripts.pory"
+	walk_right
+# 782 "data/maps/Route115/scripts.pory"
+	walk_right
+# 782 "data/maps/Route115/scripts.pory"
+	walk_right
 # 782 "data/maps/Route115/scripts.pory"
 	walk_right
 # 782 "data/maps/Route115/scripts.pory"
 	walk_right
 # 782 "data/maps/Route115/scripts.pory"
 	walk_right
-# 783 "data/maps/Route115/scripts.pory"
+# 782 "data/maps/Route115/scripts.pory"
 	walk_right
-# 783 "data/maps/Route115/scripts.pory"
-	walk_right
-# 783 "data/maps/Route115/scripts.pory"
-	walk_right
-# 783 "data/maps/Route115/scripts.pory"
-	walk_right
-# 783 "data/maps/Route115/scripts.pory"
-	walk_right
-# 783 "data/maps/Route115/scripts.pory"
-	walk_right
-# 783 "data/maps/Route115/scripts.pory"
+# 782 "data/maps/Route115/scripts.pory"
 	walk_right
 	step_end
 
-# 786 "data/maps/Route115/scripts.pory"
+# 785 "data/maps/Route115/scripts.pory"
 Route115Confused:
-# 787 "data/maps/Route115/scripts.pory"
+# 786 "data/maps/Route115/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 790 "data/maps/Route115/scripts.pory"
+# 789 "data/maps/Route115/scripts.pory"
 Route115FaceUp:
-# 791 "data/maps/Route115/scripts.pory"
+# 790 "data/maps/Route115/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 794 "data/maps/Route115/scripts.pory"
+# 793 "data/maps/Route115/scripts.pory"
 Route115FaceDown:
-# 795 "data/maps/Route115/scripts.pory"
+# 794 "data/maps/Route115/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 798 "data/maps/Route115/scripts.pory"
+# 797 "data/maps/Route115/scripts.pory"
 Route115FaceRight:
-# 799 "data/maps/Route115/scripts.pory"
+# 798 "data/maps/Route115/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 802 "data/maps/Route115/scripts.pory"
+# 801 "data/maps/Route115/scripts.pory"
 Route115FaceLeft:
-# 803 "data/maps/Route115/scripts.pory"
+# 802 "data/maps/Route115/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 806 "data/maps/Route115/scripts.pory"
+# 805 "data/maps/Route115/scripts.pory"
 Route115MoveLeft:
-# 807 "data/maps/Route115/scripts.pory"
+# 806 "data/maps/Route115/scripts.pory"
 	walk_left
 	step_end
 
-# 810 "data/maps/Route115/scripts.pory"
+# 809 "data/maps/Route115/scripts.pory"
 Route115MoveRight:
-# 811 "data/maps/Route115/scripts.pory"
+# 810 "data/maps/Route115/scripts.pory"
 	walk_right
 	step_end
 
-# 814 "data/maps/Route115/scripts.pory"
+# 813 "data/maps/Route115/scripts.pory"
 Route115_Movement_PlayerToJamesRightTrigger:
-# 815 "data/maps/Route115/scripts.pory"
+# 814 "data/maps/Route115/scripts.pory"
+	walk_up
+# 814 "data/maps/Route115/scripts.pory"
 	walk_up
 # 815 "data/maps/Route115/scripts.pory"
-	walk_up
-# 816 "data/maps/Route115/scripts.pory"
 	walk_left
-# 817 "data/maps/Route115/scripts.pory"
+# 816 "data/maps/Route115/scripts.pory"
 	walk_up
 	step_end
 
-# 820 "data/maps/Route115/scripts.pory"
+# 819 "data/maps/Route115/scripts.pory"
 Route115_Movement_PlayerToJamesLeftTrigger:
-# 821 "data/maps/Route115/scripts.pory"
+# 820 "data/maps/Route115/scripts.pory"
+	walk_up
+# 820 "data/maps/Route115/scripts.pory"
 	walk_up
 # 821 "data/maps/Route115/scripts.pory"
-	walk_up
-# 822 "data/maps/Route115/scripts.pory"
 	walk_right
-# 823 "data/maps/Route115/scripts.pory"
+# 822 "data/maps/Route115/scripts.pory"
 	walk_up
 	step_end
 
-# 826 "data/maps/Route115/scripts.pory"
+# 825 "data/maps/Route115/scripts.pory"
 Route115_Movement_PlayerToJamesMiddleTrigger:
-# 827 "data/maps/Route115/scripts.pory"
+# 826 "data/maps/Route115/scripts.pory"
 	walk_up
-# 827 "data/maps/Route115/scripts.pory"
+# 826 "data/maps/Route115/scripts.pory"
 	walk_up
-# 827 "data/maps/Route115/scripts.pory"
+# 826 "data/maps/Route115/scripts.pory"
 	walk_up
 	step_end
 
@@ -1628,28 +1628,28 @@ Route115Emo5::
 
 Route115Emo6::
 # 690 "data/maps/Route115/scripts.pory"
-	.string "JOMITHIUS: You're lucky I told my\n  POKéMON to only use 10% of their\l power.\l Next time I, JOMITHIUS, will-$"
+	.string "JOMITHIUS: You're lucky I told my\n  POKéMON to only use 10% of their power.\p Next time I, JOMITHIUS, will-$"
 
 Route115Emo7::
-# 695 "data/maps/Route115/scripts.pory"
+# 694 "data/maps/Route115/scripts.pory"
 	.string "JOMITHIUS: {PLAYER} is…\n a worthy opponent.$"
 
 Route115Misa1::
-# 698 "data/maps/Route115/scripts.pory"
+# 697 "data/maps/Route115/scripts.pory"
 	.string "MISA: I'm glad you two are having fun!\n Oh! By the way, JAMES,\l dinner is almost ready.$"
 
 Route115Emo8::
-# 702 "data/maps/Route115/scripts.pory"
+# 701 "data/maps/Route115/scripts.pory"
 	.string "JAMES?: …\n Yes, Mother.\l I'll be heading back soon.$"
 
 Route115Misa2::
-# 706 "data/maps/Route115/scripts.pory"
+# 705 "data/maps/Route115/scripts.pory"
 	.string "MISA: Great! I made a feast since\n you're starting your journey tomorrow.\l Hurry back soon, JAMES.\p {PLAYER}, you're more than welcome\n to stop by as well!$"
 
 Route115Emo9::
-# 712 "data/maps/Route115/scripts.pory"
+# 711 "data/maps/Route115/scripts.pory"
 	.string "Definitely JAMES: …\n I should head back then.\p {PLAYER}, next time I'll achieve victory.\n See ya.$"
 
 Jomithius_Outro::
-# 717 "data/maps/Route115/scripts.pory"
+# 716 "data/maps/Route115/scripts.pory"
 	.string "I'm in my abyss…$"

@@ -229,7 +229,7 @@ EverGrandeCity_SidneysRoom_EventScript_Togekiss::
 # 118 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	playmoncry SPECIES_TOGEKISS, CRY_MODE_ENCOUNTER
 # 119 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	delay 24
+	waitmoncry
 # 120 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	applymovement 2, Common_Movement_FaceOriginalDirection
 # 121 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"

@@ -71,7 +71,7 @@ script RustboroCity_FireStation_Rotom{
     lock
     faceplayer
     playmoncry(SPECIES_ROTOM, CRY_MODE_ENCOUNTER)
-    delay(20)
+    waitmoncry
     release
     end
 }

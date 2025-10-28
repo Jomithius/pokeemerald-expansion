@@ -930,7 +930,7 @@ VikavoltFailed::
 # 467 "data/maps/Route120/scripts.pory"
 	playmoncry SPECIES_VIKAVOLT, CRY_MODE_ENCOUNTER
 # 468 "data/maps/Route120/scripts.pory"
-	delay 20
+	waitmoncry
 # 469 "data/maps/Route120/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 470 "data/maps/Route120/scripts.pory"
