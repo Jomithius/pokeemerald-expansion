@@ -650,7 +650,7 @@ script MossdeepCity_EventScript_GiveTotodilePostBattle{
 		It has the KNIGHT's will required\n
 		to wield the SACRED BLADE.", MSGBOX_AUTOCLOSE)
 	waitmessage
-	givemon(SPECIES_TOTODILE_PARTNER, 100)
+	givemon(SPECIES_TOTODILE_PARTNER, 100, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
 	setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)

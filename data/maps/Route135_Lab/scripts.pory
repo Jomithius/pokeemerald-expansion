@@ -922,7 +922,7 @@ script Route_135_Lab_EventScript_Meltan{
     	MELTAN.\p
     	Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_MELTAN, 75)
+        givemon(SPECIES_MELTAN, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
@@ -963,7 +963,7 @@ script Route_135_Lab_EventScript_TypeNull{
     	TYPE NULL.\p
     	Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_TYPE_NULL, 70)
+        givemon(SPECIES_TYPE_NULL, 70, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYPE_NULL)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)

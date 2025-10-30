@@ -564,7 +564,7 @@ WachunpelonCity_EventScript_Mae_Text_0:
 
 WachunpelonCity_EventScript_Mae_Text_1:
 # 14 "data/maps/WachunpelonCity/scripts.pory"
-	.string "Yasss, this beach slayyyyys!\p No matter what you do, I'll\n never leave!\p I'm a DIVA!\n And I DESERVE this!$"
+	.string "MAE: Yasss, this beach slayyyyys!\p No matter what you do, I'll\n never leave!\p I'm a DIVA!\n And I DESERVE this!$"
 
 WachunpelonCity_EventScript_MaePostBattle_Text_0:
 # 25 "data/maps/WachunpelonCity/scripts.pory"
@@ -648,11 +648,11 @@ WachunpelonCity_EventScript_Cook_Text_1:
 
 WachunpelonCity_Text_Policeman1::
 # 328 "data/maps/WachunpelonCity/scripts.pory"
-	.string "It's you! Thanks again for your help on\n ROUTE 110.\p Most of the BIKERS have been arrested\n already.\p Only the boss along with a couple of\n members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
+	.string "POLICEMAN: It's you! Thanks again for\n your help on ROUTE 110.\p Most of the BIKERS have been arrested\n already.\p Only the boss along with a couple of\n members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
 
 WachunpelonCity_Text_PolicemanBikersRoute123::
 # 345 "data/maps/WachunpelonCity/scripts.pory"
-	.string "It's you! Thanks again for your help on\n ROUTE 110.\p I heard you drove those thugs away from\n ROUTE 123 as well.\p Most of them have been arrested\n already.\p Only the boss along with a couple of\n members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
+	.string "POLICEMAN: It's you! Thanks again for\n your help on ROUTE 110.\p I heard you drove those thugs away from\n ROUTE 123 as well.\p Most of them have been arrested\n already.\p Only the boss along with a couple of\n members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
 
 WachunpelonCity_Text_PolicemanNo::
 # 364 "data/maps/WachunpelonCity/scripts.pory"
@@ -664,4 +664,4 @@ WachunpelonCity_Text_Policeman2::
 
 WachunpelonCity_Text_Mae::
 # 377 "data/maps/WachunpelonCity/scripts.pory"
-	.string "Huh?\n It's you again!\p You're seriously even trying to stop\n my vacation?!\p I'm a diva and I deserve this!$"
+	.string "MAE: Huh?\n It's you again!\p You're seriously even trying to stop\n my vacation?!\p I'm a diva and I deserve this!$"

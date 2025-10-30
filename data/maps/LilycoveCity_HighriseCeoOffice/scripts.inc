@@ -230,7 +230,7 @@ LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito::
 # 135 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	hidemonpic
 # 136 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	givemon SPECIES_SPRIGATITO, 70
+	givemon SPECIES_SPRIGATITO, 70, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 137 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPRIGATITO
 # 138 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
@@ -273,7 +273,7 @@ LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco::
 # 159 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	hidemonpic
 # 160 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	givemon SPECIES_FUECOCO, 70
+	givemon SPECIES_FUECOCO, 70, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 161 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FUECOCO
 # 162 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
@@ -316,7 +316,7 @@ LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly::
 # 183 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	hidemonpic
 # 184 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
-	givemon SPECIES_QUAXLY, 70
+	givemon SPECIES_QUAXLY, 70, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 185 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_QUAXLY
 # 186 "data/maps/LilycoveCity_HighriseCeoOffice/scripts.pory"

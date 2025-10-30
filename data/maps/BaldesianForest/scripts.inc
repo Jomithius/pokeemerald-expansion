@@ -299,7 +299,7 @@ BaldesianForest_EventScript_Celebi_5:
 # 210 "data/maps/BaldesianForest/scripts.pory"
 	waitmoncry
 # 211 "data/maps/BaldesianForest/scripts.pory"
-	givemon SPECIES_CELEBI, 90
+	givemon SPECIES_CELEBI, 90, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 212 "data/maps/BaldesianForest/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CELEBI
 # 213 "data/maps/BaldesianForest/scripts.pory"

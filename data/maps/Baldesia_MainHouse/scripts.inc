@@ -1432,11 +1432,11 @@ Baldesia_MainHouse_EventScript_Bennis_Text_0:
 
 Baldesia_MainHouse_EventScript_Asak_Text_0:
 # 499 "data/maps/Baldesia_MainHouse/scripts.pory"
-	.string "……… I mean no disrespect, {PLAYER},\n but this really doesn't feel right.\p Still… I can't go against my Lord's will.\n Also… He's right.\p I'm ashamed of our failure…\p I think I'm going to go back home for\n a bit to retrain.$"
+	.string "ASAK: …I mean no disrespect, {PLAYER}.\n But… This really doesn't feel right.\p Still… I can't go against my Lord's will.\n Also… He's right.\p I'm ashamed of our failure…\p I think I'm going to go back home for\n a bit to retrain.$"
 
 Baldesia_MainHouse_EventScript_Panini_Text_0:
 # 530 "data/maps/Baldesia_MainHouse/scripts.pory"
-	.string "Panini… Panini ni.$"
+	.string "PANINI: Panini… Panini ni.$"
 
 Baldesia_MainHouse_EventScript_Panini_Text_1:
 # 531 "data/maps/Baldesia_MainHouse/scripts.pory"
@@ -1452,7 +1452,7 @@ Baldesia_MainHouse_EventScript_Panini_Text_3:
 
 Baldesia_MainHouse_EventScript_Panini_Text_4:
 # 532 "data/maps/Baldesia_MainHouse/scripts.pory"
-	.string "Panini.$"
+	.string "PANINI: Panini.$"
 
 Baldesia_MainHouse_EventScript_Aria_Text_0:
 # 543 "data/maps/Baldesia_MainHouse/scripts.pory"

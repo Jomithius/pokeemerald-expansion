@@ -211,7 +211,7 @@ script WachunpelonCity_Sewer_EventScript_Kleavor{
 }
 
 text WachunpelonCity_Sewer_Text_Policeman1{
-    "I don't see anybody…\n
+    "POLICEMAN: I don't see anybody…\n
     But they have to be down here.\l
     Let's go further-"
 }

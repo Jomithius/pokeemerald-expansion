@@ -2865,9 +2865,9 @@ SlateportCity_EventScript_Mae::
 # 1434 "data/maps/SlateportCity/scripts.pory"
 	applymovement 37, SlateportPsyduckLeaves1
 # 1435 "data/maps/SlateportCity/scripts.pory"
-	delay 10
+	delay 16
 # 1436 "data/maps/SlateportCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportFaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 # 1437 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 37
 # 1438 "data/maps/SlateportCity/scripts.pory"

@@ -1205,7 +1205,7 @@ MossdeepCity_EventScript_GiveTotodilePostBattle::
 # 652 "data/maps/MossdeepCity/scripts.pory"
 	waitmessage
 # 653 "data/maps/MossdeepCity/scripts.pory"
-	givemon SPECIES_TOTODILE_PARTNER, 100
+	givemon SPECIES_TOTODILE_PARTNER, 100, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 654 "data/maps/MossdeepCity/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE
 # 655 "data/maps/MossdeepCity/scripts.pory"

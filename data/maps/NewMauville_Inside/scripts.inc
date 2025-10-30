@@ -831,7 +831,7 @@ NewMauville_Inside_EventScript_Genesect_1:
 
 NewMauville_Inside_EventScript_Genesect_2:
 # 403 "data/maps/NewMauville_Inside/scripts.pory"
-	givemon SPECIES_GENESECT, 75
+	givemon SPECIES_GENESECT, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 404 "data/maps/NewMauville_Inside/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_GENESECT
 # 405 "data/maps/NewMauville_Inside/scripts.pory"

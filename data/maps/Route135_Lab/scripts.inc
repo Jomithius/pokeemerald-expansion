@@ -1230,7 +1230,7 @@ Route_135_Lab_EventScript_Meltan_1:
 
 Route_135_Lab_EventScript_Meltan_2:
 # 925 "data/maps/Route135_Lab/scripts.pory"
-	givemon SPECIES_MELTAN, 75
+	givemon SPECIES_MELTAN, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 926 "data/maps/Route135_Lab/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN
 # 927 "data/maps/Route135_Lab/scripts.pory"
@@ -1299,7 +1299,7 @@ Route_135_Lab_EventScript_TypeNull_1:
 
 Route_135_Lab_EventScript_TypeNull_2:
 # 966 "data/maps/Route135_Lab/scripts.pory"
-	givemon SPECIES_TYPE_NULL, 70
+	givemon SPECIES_TYPE_NULL, 70, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 967 "data/maps/Route135_Lab/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYPE_NULL
 # 968 "data/maps/Route135_Lab/scripts.pory"

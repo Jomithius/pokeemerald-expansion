@@ -77,7 +77,7 @@ script FullMoonIslandInterior_EventScript_CresseliaJoinsParty{
     msgbox("Thank you.\n
         I'll be in your care.", MSGBOX_AUTOCLOSE)
     waitmessage
-    givemon(SPECIES_CRESSELIA, 75)
+    givemon(SPECIES_CRESSELIA, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         fadescreen(FADE_TO_BLACK)
         removeobject(1)
@@ -120,7 +120,7 @@ script FullMoonIslandInterior_EventScript_CresseliaJoinsParty2{
     msgbox("Thank you.\n
         I'll be in your care.", MSGBOX_AUTOCLOSE)
     waitmessage
-    givemon(SPECIES_CRESSELIA, 75)
+    givemon(SPECIES_CRESSELIA, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         fadescreen(FADE_TO_BLACK)
         removeobject(1)

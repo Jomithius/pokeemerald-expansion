@@ -2317,4 +2317,4 @@ Route104_EventScript_FavorToLuna_Text_0:
 
 Route104_LunaDexNavText::
 # 1163 "data/maps/Route104/scripts.pory"
-	.string "… … … … … …\n … … … … … Beep!\p {PLAYER}? It's LUNA.\n Are you still in the area?\p I need a favor. Meet me in front of\n my house in PETALBURG.\p It's the one north of the POKéMON\n CENTER.\p Huh? How did I get your number\n already?\l Don't worry about it.\p … … … … … …\n … … … … … Click!$"
+	.string "… … … … … …\n … … … … … Beep!\p LUNA: {PLAYER}? It's LUNA.\n Are you still in the area?\p I need a favor. Meet me in front of\n my house in PETALBURG.\p It's the one north of the POKéMON\n CENTER.\p Huh? How did I get your number\n already?\l Uh… Don't worry about it.\p … … … … … …\n … … … … … Click!$"

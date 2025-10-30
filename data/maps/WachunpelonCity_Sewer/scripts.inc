@@ -659,7 +659,7 @@ WachunpelonCity_Sewer_EventScript_Speedwagon_Text_0:
 
 WachunpelonCity_Sewer_Text_Policeman1::
 # 213 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	.string "I don't see anybody…\n But they have to be down here.\l Let's go further-$"
+	.string "POLICEMAN: I don't see anybody…\n But they have to be down here.\l Let's go further-$"
 
 WachunpelonCity_Sewer_Text_Policeman2::
 # 219 "data/maps/WachunpelonCity_Sewer/scripts.pory"

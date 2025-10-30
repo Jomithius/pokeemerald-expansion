@@ -11,7 +11,7 @@ script WachunpelonCity_EventScript_Mae{
     setflag(FLAG_SYS_BOSS_BATTLE)
     trainerbattle_single(TRAINER_MAE_3, WachunpelonCity_Text_Mae, "I'm a diva and I deserve this…", WachunpelonCity_EventScript_MaePostBattle)
     clearflag(FLAG_SYS_BOSS_BATTLE)
-    msgbox("Yasss, this beach slayyyyys!\p
+    msgbox("MAE: Yasss, this beach slayyyyys!\p
         No matter what you do, I'll\n
         never leave!\p
         I'm a DIVA!\n
@@ -326,8 +326,8 @@ script WachunpelonCity_EventScript_PolicemanWest{
 }
 
 text WachunpelonCity_Text_Policeman1{
-    "It's you! Thanks again for your help on\n
-    ROUTE 110.\p
+    "POLICEMAN: It's you! Thanks again for\n
+    your help on ROUTE 110.\p
     Most of the BIKERS have been arrested\n
     already.\p
     Only the boss along with a couple of\n
@@ -343,8 +343,8 @@ text WachunpelonCity_Text_Policeman1{
 }
 
 text WachunpelonCity_Text_PolicemanBikersRoute123{
-    "It's you! Thanks again for your help on\n
-    ROUTE 110.\p
+    "POLICEMAN: It's you! Thanks again for\n
+    your help on ROUTE 110.\p
     I heard you drove those thugs away from\n
     ROUTE 123 as well.\p
     Most of them have been arrested\n
@@ -375,7 +375,7 @@ text WachunpelonCity_Text_Policeman2{
 }
 
 text WachunpelonCity_Text_Mae{
-    "Huh?\n
+    "MAE: Huh?\n
     It's you again!\p
     You're seriously even trying to stop\n
     my vacation?!\p

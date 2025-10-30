@@ -540,7 +540,7 @@ LilycoveCity_DepartmentStore_2F_Movement_FaceRight:
 
 LilycoveCity_DepartmentStore_2F_EventScript_Mae_Text_0:
 # 135 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	.string "EXCUSE ME!$"
+	.string "MART EMPLOYEE: EXCUSE ME!$"
 
 LilycoveCity_DepartmentStore_2F_EventScript_Psyduck_Text_0:
 # 234 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
@@ -548,7 +548,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_Psyduck_Text_0:
 
 LilycoveCity_DepartmentStore_2F_Text_Mae1::
 # 192 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	.string "OOOH YES!! THIS SLAYYYYS!$"
+	.string "MAE: OOOH YES!! THIS SLAYYYYS!$"
 
 LilycoveCity_DepartmentStore_2F_Text_Mae2::
 # 196 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
@@ -568,4 +568,4 @@ LilycoveCity_DepartmentStore_2F_Text_Cook::
 
 LilycoveCity_DepartmentStore_2F_Text_Cook2::
 # 219 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	.string "WORKER: Minimum wage to deal\n with customers like this… Really?$"
+	.string "MART EMPLOYEE: Minimum wage to deal\n with customers like this… Really?$"

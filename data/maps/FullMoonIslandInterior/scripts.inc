@@ -139,7 +139,7 @@ FullMoonIslandInterior_EventScript_CresseliaJoinsParty::
 # 79 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmessage
 # 80 "data/maps/FullMoonIslandInterior/scripts.pory"
-	givemon SPECIES_CRESSELIA, 75
+	givemon SPECIES_CRESSELIA, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 81 "data/maps/FullMoonIslandInterior/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq FullMoonIslandInterior_EventScript_CresseliaJoinsParty_2
@@ -216,7 +216,7 @@ FullMoonIslandInterior_EventScript_CresseliaJoinsParty2::
 # 122 "data/maps/FullMoonIslandInterior/scripts.pory"
 	waitmessage
 # 123 "data/maps/FullMoonIslandInterior/scripts.pory"
-	givemon SPECIES_CRESSELIA, 75
+	givemon SPECIES_CRESSELIA, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 124 "data/maps/FullMoonIslandInterior/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq FullMoonIslandInterior_EventScript_CresseliaJoinsParty2_2

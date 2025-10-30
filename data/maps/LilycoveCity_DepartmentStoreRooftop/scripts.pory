@@ -258,7 +258,7 @@ script LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon{
     	PORYGON.\p
     	Take the POKé BALL?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_PORYGON, 45)
+        givemon(SPECIES_PORYGON, 45, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
         setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PORYGON)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)

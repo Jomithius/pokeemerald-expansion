@@ -114,7 +114,7 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
             Allow this fallen king to once again\n
             fight alongside his old friend.", MSGBOX_AUTOCLOSE)
     waitmessage
-    givemon(SPECIES_CALYREX, 75)
+    givemon(SPECIES_CALYREX, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         fadescreen(FADE_TO_BLACK)
         removeobject(9)

@@ -5126,7 +5126,7 @@
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_ALOMOMOLA"
               },
               {
                 "min_level": 35,
@@ -8671,12 +8671,12 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_CORSOLA_GALAR"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_GOLDUCK"
               },
               {
                 "min_level": 10,
@@ -8909,7 +8909,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 10,
@@ -9057,12 +9057,12 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_ARROKUDA"
+                "species": "SPECIES_CORSOLA_GALAR"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_ARROKUDA"
+                "species": "SPECIES_CORSOLA"
               },
               {
                 "min_level": 25,

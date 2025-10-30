@@ -63,8 +63,8 @@ script BennisDojo_EventScript_Benson{
 
 script BennisDojo_EventScript_Panini{
     goto_if_not_defeated(TRAINER_BENSON, BennisDojo_EventScript_NoCheatingPanini)
-    trainerbattle_single(TRAINER_PANINI_2, "Panini! Panini nini pani!", "Panini! Panini panini.")
-    msgbox("Panini!", MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PANINI_2, "PANINI: Panini!\nPanini nini pani!", "Panini! Panini panini.")
+    msgbox("PANINI: Panini!", MSGBOX_NPC)
 	end
 }
 
@@ -79,8 +79,8 @@ script BennisDojo_EventScript_Bennis{
 }
 
 script BennisDojo_EventScript_Asak{
-    msgbox("{PLAYER}, please give LADY MOMO my\n 
-    regards the next time you see her.", MSGBOX_NPC)
+    msgbox("ASAK: {PLAYER}, please give LADY MOMO\n 
+    my regards the next time you see her.", MSGBOX_NPC)
     end
 }
 
@@ -316,7 +316,7 @@ script BennisDojo_EventScript_NoCheating{
 }
 
 script BennisDojo_EventScript_NoCheatingPanini{
-    msgbox("Panini?\n
+    msgbox("PANINI: Panini?\n
         Papanini panini.", MSGBOX_NPC)
     end
 }

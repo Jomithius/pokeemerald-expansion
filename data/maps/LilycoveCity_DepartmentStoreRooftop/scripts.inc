@@ -500,7 +500,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_1:
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_Porygon_2:
 # 261 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	givemon SPECIES_PORYGON, 45
+	givemon SPECIES_PORYGON, 45, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 262 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PORYGON
 # 263 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"

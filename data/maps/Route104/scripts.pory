@@ -1163,7 +1163,7 @@ script Route104_EventScript_FavorToLuna{
 text Route104_LunaDexNavText{
     "… … … … … …\n
     … … … … … Beep!\p
-    {PLAYER}? It's LUNA.\n
+    LUNA: {PLAYER}? It's LUNA.\n
 	Are you still in the area?\p
     I need a favor. Meet me in front of\n
 	my house in PETALBURG.\p
@@ -1171,7 +1171,7 @@ text Route104_LunaDexNavText{
 	CENTER.\p
 	Huh? How did I get your number\n
 	already?\l
-	Don't worry about it.\p
+	Uh… Don't worry about it.\p
 	… … … … … …\n
 	… … … … … Click!"
 }

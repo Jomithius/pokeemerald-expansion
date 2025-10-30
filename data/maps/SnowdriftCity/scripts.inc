@@ -138,7 +138,7 @@ SnowdriftCity_EventScript_ReceiveCalyrex::
 # 116 "data/maps/SnowdriftCity/scripts.pory"
 	waitmessage
 # 117 "data/maps/SnowdriftCity/scripts.pory"
-	givemon SPECIES_CALYREX, 75
+	givemon SPECIES_CALYREX, 75, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 118 "data/maps/SnowdriftCity/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq SnowdriftCity_EventScript_ReceiveCalyrex_2

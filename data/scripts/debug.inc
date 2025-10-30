@@ -206,7 +206,8 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-	warp MAP_EVER_GRANDE_CITY, 18, 28
+	clearflag FLAG_RECEIVED_PORYGON
+	warp MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP, 8, 3
 	waitstate
 	release
 	end

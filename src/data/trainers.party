@@ -5212,7 +5212,7 @@ Ball: Nest Ball
 - Rock Blast  
 - Bullet Seed   
 
-POOBLES (Diglett-Alola) (M) @ Rocky Helmet  
+Poobles (Diglett-Alola) (M) @ Rocky Helmet  
 Ability: Tangling Hair  
 Level: 21  
 Shiny: Yes  
@@ -16007,7 +16007,7 @@ Ball: Nest Ball
 - Earthquake  
 - Liquidation  
 
-POOBLES (Diglett-Alola) (M) @ Pooblite
+Poobles (Diglett-Alola) (M) @ Pooblite
 Ability: Tangling Hair  
 Shiny: Yes  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -19418,17 +19418,17 @@ Nidorina
 Ability: Rivalry  
 Level: 18  
 Sassy Nature  
-- Poison Tail  
-- Body Slam  
+- Venoshock  
+- Fury Swipes  
 - Charm  
 
-Tsareena  
-Ability: Queenly Majesty  
-Level: 19   
+Steenee 
+Ability: Oblivious
+Level: 19  
+EVs: 160 HP / 180 Atk / 96 Spe   
 Sassy Nature  
-- Stomp  
-- Trop Kick  
-- Double Slap  
+- Razor Leaf 
+- Flail 
 - Captivate  
 
 === TRAINER_JOMITHIUS ===
@@ -24935,7 +24935,7 @@ Ball: Nest Ball
 - Tail Slap  
 - Bullet Seed   
 
-POOBLES (Diglett-Alola) @ Rocky Helmet  
+Poobles (Diglett-Alola) @ Rocky Helmet  
 Ability: Tangling Hair  
 Level: 21  
 EVs: 252 HP
@@ -36020,7 +36020,7 @@ Ball: Nest Ball
 - Earthquake  
 - Liquidation  
 
-POOBLES (Diglett-Alola) (M)  @ Pooblite
+Poobles (Diglett-Alola) (M)  @ Pooblite
 Ability: Tangling Hair 
 EVs: 252 HP / 128 Atk 
 Adamant Nature 
@@ -39335,8 +39335,7 @@ Mugshot: Blue
 
 Mankey (M) 
 Ability: Anger Point  
-Level: 17   
-Jolly Nature 
+Level: 17    
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe  
 - Karate Chop  
 - Dual Chop  
@@ -39345,7 +39344,6 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Croagunk (F)  
 Ability: Poison Touch  
 Level: 17  
-Jolly Nature 
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe    
 - Bullet Punch  
 - Wake-Up Slap  
@@ -39354,8 +39352,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Meditite (M) @ Oran Berry  
 Ability: Pure Power  
 Level: 18  
-Adamant Nature 
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe   
+IVs: 18 HP / 10 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe   
 - Force Palm  
 - Bullet Punch  
 - Fake Out  
@@ -39363,7 +39360,6 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Monferno (M) @ Expert Belt  
 Ability: Iron Fist  
 Level: 19  
-Adamant Nature 
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe   
 - Mach Punch  
 - Fire Punch  
@@ -39400,18 +39396,18 @@ Ability: Rivalry
 Level: 17  
 Sassy Nature 
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe   
-- Poison Tail  
-- Body Slam  
+- Poison Sting  
+- Cut
 - Charm  
 
-Tsareena  
-Ability: Queenly Majesty  
+Steenee  
+Ability: Oblivious
 Level: 18  
 Sassy Nature
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 0 Spe    
-- Stomp   
-- Double Slap  
-- Captivate  
+- Razor Leaf   
+- Flail
+- Play Nice
 
 === TRAINER_JOMITHIUS ===
 Name: JOMITHIUS

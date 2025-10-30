@@ -133,7 +133,7 @@ script LilycoveCity_HighriseFloor2_EventScript_PickGen9Starter{
 
 script LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito{
     hidemonpic
-    givemon(SPECIES_SPRIGATITO, 70)
+    givemon(SPECIES_SPRIGATITO, 70, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPRIGATITO)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
@@ -157,7 +157,7 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveSprigatito{
 
 script LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco{
     hidemonpic
-    givemon(SPECIES_FUECOCO, 70)
+    givemon(SPECIES_FUECOCO, 70, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FUECOCO)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)
@@ -181,7 +181,7 @@ script LilycoveCity_HighriseFloor2_EventScript_GiveFuecoco{
 
 script LilycoveCity_HighriseFloor2_EventScript_GiveQuaxly{
     hidemonpic
-    givemon(SPECIES_QUAXLY, 70)
+    givemon(SPECIES_QUAXLY, 70, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
     setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_QUAXLY)
     if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
         playfanfare(MUS_OBTAIN_ITEM)

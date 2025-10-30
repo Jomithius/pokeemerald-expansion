@@ -132,7 +132,7 @@ script LilycoveCity_DepartmentStore_2F_EventScript_Mae{
     delay(10)
     applymovement(1, LilycoveCity_DepartmentStore_2F_Movement_Cook1)
     waitmovement(1)
-    msgbox("EXCUSE ME!", MSGBOX_AUTOCLOSE)
+    msgbox("MART EMPLOYEE: EXCUSE ME!", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(6, Common_Movement_FaceUp)
     waitmovement(6)
@@ -190,7 +190,7 @@ script LilycoveCity_DepartmentStore_2F_MaeMovementVar{
 
 
 text LilycoveCity_DepartmentStore_2F_Text_Mae1{
-    "OOOH YES!! THIS SLAYYYYS!"
+    "MAE: OOOH YES!! THIS SLAYYYYS!"
 }
 
 text LilycoveCity_DepartmentStore_2F_Text_Mae2{
@@ -217,7 +217,7 @@ text LilycoveCity_DepartmentStore_2F_Text_Cook{
 }
 
 text LilycoveCity_DepartmentStore_2F_Text_Cook2{
-    "WORKER: Minimum wage to deal\n
+    "MART EMPLOYEE: Minimum wage to deal\n
     with customers like this… Really?"
 }
 

@@ -503,7 +503,7 @@ DojoBattleTrigger_1:
 # 370 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
 # 371 "data/maps/BennisDojo/scripts.pory"
-	msgbox DojoBattleTrigger_Text_4, MSGBOX_AUTOCLOSE
+	msgbox BennisDojo_EventScript_Panini_Text_2, MSGBOX_AUTOCLOSE
 # 372 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
 # 373 "data/maps/BennisDojo/scripts.pory"
@@ -512,7 +512,7 @@ DojoBattleTrigger_1:
 	goto_if_unset FLAG_SYS_HARD_MODE, DojoBattleTrigger_5
 DojoBattleTrigger_4:
 # 377 "data/maps/BennisDojo/scripts.pory"
-	msgbox DojoBattleTrigger_Text_5, MSGBOX_DEFAULT
+	msgbox DojoBattleTrigger_Text_4, MSGBOX_DEFAULT
 # 378 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
 # 379 "data/maps/BennisDojo/scripts.pory"
@@ -520,7 +520,7 @@ DojoBattleTrigger_4:
 # 380 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
 # 381 "data/maps/BennisDojo/scripts.pory"
-	msgbox DojoBattleTrigger_Text_6, MSGBOX_AUTOCLOSE
+	msgbox DojoBattleTrigger_Text_5, MSGBOX_AUTOCLOSE
 # 382 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
 # 383 "data/maps/BennisDojo/scripts.pory"
@@ -564,7 +564,7 @@ DojoBattleTrigger_4:
 # 402 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
 # 403 "data/maps/BennisDojo/scripts.pory"
-	msgbox DojoBattleTrigger_Text_7, MSGBOX_AUTOCLOSE
+	msgbox DojoBattleTrigger_Text_6, MSGBOX_AUTOCLOSE
 # 405 "data/maps/BennisDojo/scripts.pory"
 	waitmessage
 # 406 "data/maps/BennisDojo/scripts.pory"
@@ -588,7 +588,7 @@ DojoBattleTrigger_4:
 # 415 "data/maps/BennisDojo/scripts.pory"
 	waitmovement 2
 # 416 "data/maps/BennisDojo/scripts.pory"
-	msgbox DojoBattleTrigger_Text_8, MSGBOX_AUTOCLOSE
+	msgbox DojoBattleTrigger_Text_7, MSGBOX_AUTOCLOSE
 # 417 "data/maps/BennisDojo/scripts.pory"
 	setvar VAR_BENNIS_DOJO_STATE, 1
 # 418 "data/maps/BennisDojo/scripts.pory"
@@ -1061,7 +1061,7 @@ BennisDojo_EventScript_Benson_Text_2:
 
 BennisDojo_EventScript_Panini_Text_0:
 # 66 "data/maps/BennisDojo/scripts.pory"
-	.string "Panini! Panini nini pani!$"
+	.string "PANINI: Panini!\nPanini nini pani!$"
 
 BennisDojo_EventScript_Panini_Text_1:
 # 66 "data/maps/BennisDojo/scripts.pory"
@@ -1069,7 +1069,7 @@ BennisDojo_EventScript_Panini_Text_1:
 
 BennisDojo_EventScript_Panini_Text_2:
 # 67 "data/maps/BennisDojo/scripts.pory"
-	.string "Panini!$"
+	.string "PANINI: Panini!$"
 
 BennisDojo_EventScript_Bennis_Text_0:
 # 74 "data/maps/BennisDojo/scripts.pory"
@@ -1077,7 +1077,7 @@ BennisDojo_EventScript_Bennis_Text_0:
 
 BennisDojo_EventScript_Asak_Text_0:
 # 82 "data/maps/BennisDojo/scripts.pory"
-	.string "{PLAYER}, please give LADY MOMO my\n  regards the next time you see her.$"
+	.string "ASAK: {PLAYER}, please give LADY MOMO\n  my regards the next time you see her.$"
 
 BennisDojo_EventScript_BennisFinalBattle_Text_0:
 # 101 "data/maps/BennisDojo/scripts.pory"
@@ -1137,7 +1137,7 @@ BennisDojo_EventScript_NoCheating_Text_0:
 
 BennisDojo_EventScript_NoCheatingPanini_Text_0:
 # 319 "data/maps/BennisDojo/scripts.pory"
-	.string "Panini?\n Papanini panini.$"
+	.string "PANINI: Panini?\n Papanini panini.$"
 
 BennisDojo_EventScript_BaldyBaldyOverThere_Text_0:
 # 326 "data/maps/BennisDojo/scripts.pory"
@@ -1160,22 +1160,18 @@ DojoBattleTrigger_Text_3:
 	.string "PANINI: Panini?$"
 
 DojoBattleTrigger_Text_4:
-# 371 "data/maps/BennisDojo/scripts.pory"
-	.string "PANINI: Panini!$"
-
-DojoBattleTrigger_Text_5:
 # 377 "data/maps/BennisDojo/scripts.pory"
 	.string "PANINI: P-Panini…$"
 
-DojoBattleTrigger_Text_6:
+DojoBattleTrigger_Text_5:
 # 381 "data/maps/BennisDojo/scripts.pory"
 	.string "???: What's all this noise?$"
 
-DojoBattleTrigger_Text_7:
+DojoBattleTrigger_Text_6:
 # 403 "data/maps/BennisDojo/scripts.pory"
 	.string "MASTER BENNIS: Hm.\n  I'll take you on.$"
 
-DojoBattleTrigger_Text_8:
+DojoBattleTrigger_Text_7:
 # 416 "data/maps/BennisDojo/scripts.pory"
 	.string "PANINI: Pani!$"
 

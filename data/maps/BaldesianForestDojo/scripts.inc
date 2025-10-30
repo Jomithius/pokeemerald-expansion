@@ -510,7 +510,7 @@ BaldesianForestDojo_EventScript_GiveKubfu::
 # 339 "data/maps/BaldesianForestDojo/scripts.pory"
 	waitmessage
 # 340 "data/maps/BaldesianForestDojo/scripts.pory"
-	givemon SPECIES_KUBFU, 80
+	givemon SPECIES_KUBFU, 80, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 341 "data/maps/BaldesianForestDojo/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_KUBFU
 # 342 "data/maps/BaldesianForestDojo/scripts.pory"

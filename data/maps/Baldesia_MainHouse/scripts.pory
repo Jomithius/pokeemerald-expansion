@@ -496,8 +496,8 @@ script Baldesia_MainHouse_EventScript_Bennis{
 script Baldesia_MainHouse_EventScript_Asak{
     lock
     faceplayer
-    msgbox("……… I mean no disrespect, {PLAYER},\n
-        but this really doesn't feel right.\p
+    msgbox("ASAK: …I mean no disrespect, {PLAYER}.\n
+        But… This really doesn't feel right.\p
         Still… I can't go against my Lord's will.\n
         Also… He's right.\p
         I'm ashamed of our failure…\p
@@ -527,9 +527,9 @@ script Baldesia_MainHouse_EventScript_Asak{
 script Baldesia_MainHouse_EventScript_Panini{
     lock
     faceplayer
-    msgbox("Panini… Panini ni.", MSGBOX_DEFAULT)
+    msgbox("PANINI: Panini… Panini ni.", MSGBOX_DEFAULT)
     dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "… You're right.", "I'll be careful.", "What are you even saying?")
-    msgbox("Panini.", MSGBOX_AUTOCLOSE)
+    msgbox("PANINI: Panini.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
