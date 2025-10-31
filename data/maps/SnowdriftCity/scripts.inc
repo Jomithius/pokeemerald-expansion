@@ -302,7 +302,7 @@ SnowdriftCity_EventScript_CheckSpectierOrGlastrier_Text_0:
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_0:
 # 103 "data/maps/SnowdriftCity/scripts.pory"
-	.string "Old friend…\n It's good to see you again.\p Thank you, brave one.\n May I ask for your name?\p … … … …\p {PLAYER}.\n  As promised, I will give you a reward.$"
+	.string "Old friend…\n It's good to see you again.\p Thank you, brave one.\n May I ask for your name?\p … … … …\p {PLAYER}.\n As promised, I will give you a reward.$"
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_1:
 # 113 "data/maps/SnowdriftCity/scripts.pory"

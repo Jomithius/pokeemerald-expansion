@@ -1474,7 +1474,7 @@ I have to ask you to leave!"}
 text Mae3 {"MAE: Okay, whatever.\n
 I'll go shop somewhere else!"}
 
-text SlateportMartEmployee2 {"MART EMPLOYEE: Man, I swear I don't\n 
+text SlateportMartEmployee2 {"MART EMPLOYEE: Man, I swear I don't\n
 get paid enough for this."}
 
 movement MaeSurprised {

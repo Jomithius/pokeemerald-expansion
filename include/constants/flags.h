@@ -476,8 +476,8 @@
 #define FLAG_HIDE_PANINI_ARIA_MAIN_HOUSE     0x1B6 // main house cs baldesia
 #define FLAG_HIDE_BENNIS_BALDESIA_MAIN_HOUSE 0x1B7 // main house cs baldesia
 #define FLAG_HIDE_OLD_MAN_SNOWDRIFT          0x1B8 // replaces luna in snowdrift
-#define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9 // functionially unused
-#define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA // functionially unused
+#define FLAG_ITEM_ROUTE_119_SILVER_POWDER    0x1B9 //
+#define FLAG_ITEM_ROUTE_111_METAL_COAT       0x1BA //
 #define FLAG_DEFEATED_REGIROCK               0x1BB
 #define FLAG_DEFEATED_REGICE                 0x1BC
 #define FLAG_DEFEATED_REGISTEEL              0x1BD
@@ -1232,7 +1232,7 @@
 #define FLAG_ITEM_RAT_CAVE_1F_HARD_STONE                            0x49A // hidden in rock
 #define FLAG_RATDUARDO_RAT_CAVE_1                                   0x49B // Ratduardo First Battle Petalburg
 #define FLAG_ITEM_RAT_CAVE_B2F_RAZOR_FANG                           0x49C // Razor Fang
-#define FLAG_ITEM_BENNIS_DOJO_EXPERT_BELT                           0x49D // Expert Belt
+#define FLAG_ITEM_BENNIS_DOJO_BLACK_BELT                            0x49D // 
 #define FLAG_ITEM_BENNIS_DOJO_FOCUS_SASH                            0x49E // Focus Sash
 #define FLAG_BENNIS_DOJO_1                                          0x49F // Bennis First Cutscene
 #define FLAG_SLATEPORT_MAE_BATTLE                                   0x4A0 // Mae First Battle

@@ -102,7 +102,7 @@ RusturfTunnel_3F_Text_JerryIntro::
 
 RusturfTunnel_3F_Text_JerryDefeat::
 # 74 "data/maps/RusturfTunnel_3F/scripts.pory"
-	.string "I slacked off in school…\n  That's why I lost.$"
+	.string "I slacked off in school…\n That's why I lost.$"
 
 RusturfTunnel_3F_Text_JerryPostBattle::
 # 78 "data/maps/RusturfTunnel_3F/scripts.pory"

@@ -694,7 +694,7 @@ EverGrandeCity_Text_Asak3::
 
 EverGrandeCity_Text_NurseWarnJames::
 # 212 "data/maps/EverGrandeCity/scripts.pory"
-	.string "Oh! You're the second TRAINER\n  I've met today.\p Congratulations on making it through\n VICTORY ROAD.\p Please, take a quick break.$"
+	.string "Oh! You're the second TRAINER\n I've met today.\p Congratulations on making it through\n VICTORY ROAD.\p Please, take a quick break.$"
 
 EverGrandeCity_Text_Nurse::
 # 220 "data/maps/EverGrandeCity/scripts.pory"

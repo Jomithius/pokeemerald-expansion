@@ -1077,7 +1077,7 @@ BennisDojo_EventScript_Bennis_Text_0:
 
 BennisDojo_EventScript_Asak_Text_0:
 # 82 "data/maps/BennisDojo/scripts.pory"
-	.string "ASAK: {PLAYER}, please give LADY MOMO\n  my regards the next time you see her.$"
+	.string "ASAK: {PLAYER}, please give LADY MOMO\n my regards the next time you see her.$"
 
 BennisDojo_EventScript_BennisFinalBattle_Text_0:
 # 101 "data/maps/BennisDojo/scripts.pory"
@@ -1169,7 +1169,7 @@ DojoBattleTrigger_Text_5:
 
 DojoBattleTrigger_Text_6:
 # 403 "data/maps/BennisDojo/scripts.pory"
-	.string "MASTER BENNIS: Hm.\n  I'll take you on.$"
+	.string "MASTER BENNIS: Hm.\n I'll take you on.$"
 
 DojoBattleTrigger_Text_7:
 # 416 "data/maps/BennisDojo/scripts.pory"

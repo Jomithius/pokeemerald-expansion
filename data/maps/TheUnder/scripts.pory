@@ -119,7 +119,7 @@ script TheUnder_EventScript_Samothy{
 }
 
 script TheUnder_EventScript_Jason{
-    trainerbattle_single(TRAINER_JASON, "They can have the ground.\nI own the sky!", "Mayday!\n Crashing and burning over here!")
+    trainerbattle_single(TRAINER_JASON, "They can have the ground.\nI own the sky!", "Mayday!\nCrashing and burning over here!")
     msgbox("I work for SNOWDRIFT CITY's\n
         CORVIKNIGHT service.\p
         We bring people up and down the\n
@@ -173,10 +173,10 @@ text Common_Text_ExplainTera{
     used on the same POKéMON.\p
     To TERASTALLIZE, press START before\n
     selecting your move.\p
-    While TERASTALLIZED, POKéMON receive\n 
+    While TERASTALLIZED, POKéMON receive\n
     STAB (Same Type Attack Bonus) on\l
     moves matching their TERA-type,\l
-    in addition to moves matching their\l 
+    in addition to moves matching their\l
     original types.\p
     A POKéMON's TERA-type can be viewed\n
     in the summary screen.\p

@@ -288,7 +288,7 @@ TheUnder_EventScript_Jason_Text_0:
 
 TheUnder_EventScript_Jason_Text_1:
 # 122 "data/maps/TheUnder/scripts.pory"
-	.string "Mayday!\n Crashing and burning over here!$"
+	.string "Mayday!\nCrashing and burning over here!$"
 
 TheUnder_EventScript_Jason_Text_2:
 # 123 "data/maps/TheUnder/scripts.pory"
@@ -324,4 +324,4 @@ TheUnder_Text_CarsonPostBattle::
 
 Common_Text_ExplainTera::
 # 162 "data/maps/TheUnder/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}TERASTALLIZATION is a battle mechanic\n that allows you to change your\l POKéMON's type temporarily during a\l battle.\p Similar to MEGA EVOLUTION, the type\n the POKéMON TERASTALLIZED into will\l last until the end of the battle, or\l until the POKéMON faints.\p Only one POKéMON can TERA during a\n battle, and two gimmicks can't be\l used on the same POKéMON.\p To TERASTALLIZE, press START before\n selecting your move.\p While TERASTALLIZED, POKéMON receive\n  STAB (Same Type Attack Bonus) on\l moves matching their TERA-type,\l in addition to moves matching their\l  original types.\p A POKéMON's TERA-type can be viewed\n in the summary screen.\p It will default to an existing type\n the POKéMON has.\p After using TERA, the TERA ORB needs to\n be recharged at a POKéMON CENTER.\p TERA SHARDS are required to change\n a POKéMON's TERA-type.\p They can be bought from new vendors\n in POKé MARTS.$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}TERASTALLIZATION is a battle mechanic\n that allows you to change your\l POKéMON's type temporarily during a\l battle.\p Similar to MEGA EVOLUTION, the type\n the POKéMON TERASTALLIZED into will\l last until the end of the battle, or\l until the POKéMON faints.\p Only one POKéMON can TERA during a\n battle, and two gimmicks can't be\l used on the same POKéMON.\p To TERASTALLIZE, press START before\n selecting your move.\p While TERASTALLIZED, POKéMON receive\n STAB (Same Type Attack Bonus) on\l moves matching their TERA-type,\l in addition to moves matching their\l original types.\p A POKéMON's TERA-type can be viewed\n in the summary screen.\p It will default to an existing type\n the POKéMON has.\p After using TERA, the TERA ORB needs to\n be recharged at a POKéMON CENTER.\p TERA SHARDS are required to change\n a POKéMON's TERA-type.\p They can be bought from new vendors\n in POKé MARTS.$"

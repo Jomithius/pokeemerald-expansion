@@ -150,4 +150,4 @@ NewMoonIsland_EventScript_GhostBattle_Text_0:
 
 NewMoonIsland_Text_Sign::
 # 89 "data/maps/NewMoonIsland/scripts.pory"
-	.string "It's an old sign.\n  There's something scrawled on it…\p Som…hing so pecu…r shou…\n make off …ith the mot…\p The rest is too worn to read.$"
+	.string "It's an old sign.\n There's something scrawled on it…\p Som…hing so pecu…r shou…\n make off …ith the mot…\p The rest is too worn to read.$"

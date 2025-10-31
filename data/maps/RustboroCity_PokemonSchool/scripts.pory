@@ -825,10 +825,10 @@ script RustboroCity_PokemonSchool_EventScript_ExplainTera{
         used on the same POKéMON.\p
         To TERASTALLIZE, press START before\n
         selecting your move.\p
-        While TERASTALLIZED, POKéMON receive\n 
+        While TERASTALLIZED, POKéMON receive\n
         STAB (Same Type Attack Bonus) on\l
         moves matching their TERA-type,\l
-        in addition to moves matching their\l 
+        in addition to moves matching their\l
         original types.\p
         A POKéMON's TERA-type can be viewed\n
         in the summary screen.\p

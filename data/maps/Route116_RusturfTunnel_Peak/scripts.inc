@@ -10,7 +10,7 @@ Route116_RusturfTunnel_Peak_Jolteon::
 # 6 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	playmoncry SPECIES_JOLTEON, CRY_MODE_ENCOUNTER
 # 7 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	delay 20
+	waitmoncry
 # 8 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	release
 	end
@@ -24,7 +24,7 @@ Route116_RusturfTunnel_Peak_Pumpkaboo::
 # 15 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	playmoncry SPECIES_PUMPKABOO, CRY_MODE_ENCOUNTER
 # 16 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	delay 20
+	waitmoncry
 # 17 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
 	release
 	end
@@ -254,4 +254,4 @@ RibombeeFailed_Text_0:
 
 Route116_RusturfTunnel_Peak_DacaText1::
 # 79 "data/maps/Route116_RusturfTunnel_Peak/scripts.pory"
-	.string "Huh?\n Who are you?\l … … … …\p Oh, a challenger?\n Hahaha, my bad!\l It's nice to meet you, {PLAYER}!\p I'm DACA, LEADER of the MAUVILLE CITY\n POKéMON GYM.\p I was grabbing some rare herbs\n  for a sick HOUNDOUR that's being\l cared for at the DAYCARE.\p Well, sorry to make you come\n all the way up here!\p I'll wait for you back at the GYM.\n Then we can party! Hahaha!$"
+	.string "Huh?\n Who are you?\l … … … …\p Oh, a challenger?\n Hahaha, my bad!\l It's nice to meet you, {PLAYER}!\p I'm DACA, LEADER of the MAUVILLE CITY\n POKéMON GYM.\p I was grabbing some rare herbs\n for a sick HOUNDOUR that's being\l cared for at the DAYCARE.\p Well, sorry to make you come\n all the way up here!\p I'll wait for you back at the GYM.\n Then we can party! Hahaha!$"

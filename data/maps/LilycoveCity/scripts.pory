@@ -861,7 +861,7 @@ script LilycoveCity_EventScript_EmoBully{
     delay(10)
     applymovement(23, LilycoveCity_Movement_Emo)
     waitmovement(23)
-    msgbox("JAMES: …\n So you saw that.", MSGBOX_AUTOCLOSE)
+    msgbox("JAMES: …\nSo you saw that.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(23, Common_Movement_WalkRight)
     waitmovement(23)

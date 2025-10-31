@@ -1720,7 +1720,7 @@ Baldesia_EventScript_GiveLeadersCrest_Text_1:
 
 Baldesia_EventScript_NinjaBoy1_Text_0:
 # 160 "data/maps/Baldesia/scripts.pory"
-	.string "Uh oh!\n  You found me!$"
+	.string "Uh oh!\n You found me!$"
 
 Baldesia_EventScript_NinjaBoy1_Text_1:
 # 177 "data/maps/Baldesia/scripts.pory"
@@ -1732,7 +1732,7 @@ Baldesia_EventScript_NinjaBoy2_Text_0:
 
 Baldesia_EventScript_NinjaBoy3_Text_0:
 # 229 "data/maps/Baldesia/scripts.pory"
-	.string "W-What?!\n  My disguise was perfect!$"
+	.string "W-What?!\n My disguise was perfect!$"
 
 Baldesia_EventScript_NinjaBoy3_Text_1:
 # 246 "data/maps/Baldesia/scripts.pory"
@@ -1740,7 +1740,7 @@ Baldesia_EventScript_NinjaBoy3_Text_1:
 
 Baldesia_EventScript_NinjaBoy4_Text_0:
 # 262 "data/maps/Baldesia/scripts.pory"
-	.string "Aw!\n  You found me!$"
+	.string "Aw!\n You found me!$"
 
 Baldesia_EventScript_NinjaBoy4_Text_1:
 # 279 "data/maps/Baldesia/scripts.pory"
@@ -1748,7 +1748,7 @@ Baldesia_EventScript_NinjaBoy4_Text_1:
 
 Baldesia_EventScript_NinjaBoy5_Text_0:
 # 296 "data/maps/Baldesia/scripts.pory"
-	.string "Dang!\n  You found me!$"
+	.string "Dang!\n You found me!$"
 
 Baldesia_EventScript_NinjaBoy5_Text_1:
 # 313 "data/maps/Baldesia/scripts.pory"

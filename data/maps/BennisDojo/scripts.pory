@@ -79,7 +79,7 @@ script BennisDojo_EventScript_Bennis{
 }
 
 script BennisDojo_EventScript_Asak{
-    msgbox("ASAK: {PLAYER}, please give LADY MOMO\n 
+    msgbox("ASAK: {PLAYER}, please give LADY MOMO\n
     my regards the next time you see her.", MSGBOX_NPC)
     end
 }
@@ -400,7 +400,7 @@ script DojoBattleTrigger{
     waitmovement(1)
     msgbox(Asak3_5, MSGBOX_DEFAULT)
     waitmessage
-    msgbox("MASTER BENNIS: Hm.\n 
+    msgbox("MASTER BENNIS: Hm.\n
     I'll take you on.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(1, AsakMove3)

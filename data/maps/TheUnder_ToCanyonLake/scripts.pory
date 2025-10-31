@@ -111,7 +111,7 @@ script TheUnder_ToCanyonLake_EventScript_ScareAwayRats{
     applymovement(3, Common_Movement_ExclamationMark)
     waitmovement(3)
     waitse
-    msgbox("The RATICATE are afraid of\n 
+    msgbox("The RATICATE are afraid of\n
         {STR_VAR_1}!", MSGBOX_AUTOCLOSE)
     waitmessage
     fadescreen(FADE_TO_BLACK)

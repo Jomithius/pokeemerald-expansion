@@ -1434,7 +1434,7 @@ script RustboroCityGym_EventScript_Misa{
 	end
 }
 
-text RustboroMisa1{"Oh! Excuse me.\n 
+text RustboroMisa1{"Oh! Excuse me.\n
 I didn't see you there.\p
 My name's MISA.\n
 … … … …\p
@@ -1442,7 +1442,7 @@ My name's MISA.\n
 That's a nice name!\p
 And that {STR_VAR_1}… So cute!\n
 So you're a new TRAINER? That's great!\p 
-It looks like you're already raising\n 
+It looks like you're already raising\n
 your POKéMON with love and care.\p
 I actually have a son around the\n
 same age as you.\p

@@ -3093,7 +3093,7 @@ Mae3::
 
 SlateportMartEmployee2::
 # 1477 "data/maps/SlateportCity/scripts.pory"
-	.string "MART EMPLOYEE: Man, I swear I don't\n  get paid enough for this.$"
+	.string "MART EMPLOYEE: Man, I swear I don't\n get paid enough for this.$"
 
 SlateportGymSign::
 # 1558 "data/maps/SlateportCity/scripts.pory"

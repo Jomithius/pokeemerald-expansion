@@ -157,7 +157,7 @@ script Baldesia_EventScript_NinjaBoy1{
         waitmovement(0)
         waitse
         faceplayer
-        msgbox("Uh oh!\n 
+        msgbox("Uh oh!\n
             You found me!", MSGBOX_AUTOCLOSE)
         waitmessage
         fadescreen(FADE_TO_BLACK)
@@ -191,7 +191,7 @@ script Baldesia_EventScript_NinjaBoy2{
         waitmovement(0)
         waitse
         faceplayer
-        msgbox("Uh oh!\n 
+        msgbox("Uh oh!\n
             You found me!", MSGBOX_AUTOCLOSE)
         waitmessage
         fadescreen(FADE_TO_BLACK)
@@ -226,7 +226,7 @@ script Baldesia_EventScript_NinjaBoy3{
         waitmovement(0)
         waitse
         faceplayer
-        msgbox("W-What?!\n 
+        msgbox("W-What?!\n
             My disguise was perfect!", MSGBOX_AUTOCLOSE)
         waitmessage
         fadescreen(FADE_TO_BLACK)
@@ -259,7 +259,7 @@ script Baldesia_EventScript_NinjaBoy4{
         waitmovement(0)
         waitse
         faceplayer
-        msgbox("Aw!\n 
+        msgbox("Aw!\n
             You found me!", MSGBOX_AUTOCLOSE)
         waitmessage
         fadescreen(FADE_TO_BLACK)
@@ -293,7 +293,7 @@ script Baldesia_EventScript_NinjaBoy5{
         waitmovement(0)
         waitse
         faceplayer
-        msgbox("Dang!\n 
+        msgbox("Dang!\n
             You found me!", MSGBOX_AUTOCLOSE)
         waitmessage
         fadescreen(FADE_TO_BLACK)

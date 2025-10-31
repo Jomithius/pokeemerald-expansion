@@ -20,4 +20,4 @@ FullMoonIsland_EventScript_CresseliaHelp::
 
 FullMoonIsland_EventScript_CresseliaHelp_Text_0:
 # 5 "data/maps/FullMoonIsland/scripts.pory"
-	.string "???: Please!\n You must hurry!$"
+	.string "???: Please!\nYou must hurry!$"

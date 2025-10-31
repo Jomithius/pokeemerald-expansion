@@ -95,7 +95,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I might lose again?{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Am I gonna lose again?{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WATTSON_1] = // Daca
         {
@@ -147,7 +147,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_BRENDAN_LILYCOVE_TREECKO] =
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Dang… Is this it?{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("It's up to you, {B_OPPONENT_MON1_NAME}!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_TATE_AND_LIZA_1] = // Momo & Aria
         {

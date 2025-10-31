@@ -1612,7 +1612,7 @@ Route115Emo1::
 
 Route115Emo2::
 # 670 "data/maps/Route115/scripts.pory"
-	.string "Sorry.\n It's hard to control this power.\p Any closer and you could've been\n pulled into the void…\p Anyways, who are you?\n …\p {PLAYER}, huh?\n And my mother sent you?\p I see…\n  So that means you're also a TRAINER…$"
+	.string "Sorry.\n It's hard to control this power.\p Any closer and you could've been\n pulled into the void…\p Anyways, who are you?\n …\p {PLAYER}, huh?\n And my mother sent you?\p I see…\n So that means you're also a TRAINER…$"
 
 Route115Emo3::
 # 681 "data/maps/Route115/scripts.pory"
@@ -1628,7 +1628,7 @@ Route115Emo5::
 
 Route115Emo6::
 # 690 "data/maps/Route115/scripts.pory"
-	.string "JOMITHIUS: You're lucky I told my\n  POKéMON to only use 10% of their power.\p Next time I, JOMITHIUS, will-$"
+	.string "JOMITHIUS: You're lucky I told my\n POKéMON to only use 10% of their power.\p Next time I, JOMITHIUS, will-$"
 
 Route115Emo7::
 # 694 "data/maps/Route115/scripts.pory"

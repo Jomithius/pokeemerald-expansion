@@ -2217,7 +2217,7 @@ LilycoveCity_EventScript_EmoBully_Text_1:
 
 LilycoveCity_EventScript_EmoBully_Text_2:
 # 864 "data/maps/LilycoveCity/scripts.pory"
-	.string "JAMES: …\n So you saw that.$"
+	.string "JAMES: …\nSo you saw that.$"
 
 LilycoveCity_EventScript_StaffEmployee_Text_0:
 # 1098 "data/maps/LilycoveCity/scripts.pory"

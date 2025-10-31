@@ -210,7 +210,7 @@ script EverGrandeCity_EventScript_Nurse{
 }
 
 text EverGrandeCity_Text_NurseWarnJames{
-    "Oh! You're the second TRAINER\n 
+    "Oh! You're the second TRAINER\n
     I've met today.\p
     Congratulations on making it through\n
     VICTORY ROAD.\p

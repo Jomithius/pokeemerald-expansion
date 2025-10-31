@@ -87,7 +87,7 @@ script NewMoonIsland_EventScript_Sign{
 }
 
 text NewMoonIsland_Text_Sign{
-    "It's an old sign.\n 
+    "It's an old sign.\n
     There's something scrawled on it…\p
     Som…hing so pecu…r shou…\n
     make off …ith the mot…\p

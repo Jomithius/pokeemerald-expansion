@@ -105,7 +105,7 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
             Thank you, brave one.\n
             May I ask for your name?\p
             … … … …\p
-            {PLAYER}.\n 
+            {PLAYER}.\n
             As promised, I will give you a reward.", MSGBOX_DEFAULT)
     waitmessage
     giveitem(ITEM_REINS_OF_UNITY)

@@ -258,4 +258,4 @@ TheUnder_ToCanyonLake_OpenEntrance::
 
 TheUnder_ToCanyonLake_EventScript_ScareAwayRats_Text_0:
 # 114 "data/maps/TheUnder_ToCanyonLake/scripts.pory"
-	.string "The RATICATE are afraid of\n  {STR_VAR_1}!$"
+	.string "The RATICATE are afraid of\n {STR_VAR_1}!$"
