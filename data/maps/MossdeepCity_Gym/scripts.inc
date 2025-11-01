@@ -857,7 +857,7 @@ MossdeepCity_Gym_Text_HannahDefeat:
 # 429 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_HannahPostBattle:
 # 430 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "I heard there's a dojo to the NORTH\n"
+	.string "I heard there's a dojo to the north\n"
 # 431 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "with a super strong sensei.\p"
 # 432 "data/maps/MossdeepCity_Gym/scripts.pory"
