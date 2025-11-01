@@ -196,7 +196,7 @@ FortreeCity_Gym_Text_EdwardoPostBattle:
 	.string "Why did I join this GYM…$"
 
 FortreeCity_Gym_Text_FlintIntro:
-	.string "WOLF PACK! WOLF PACK!\n"
+	.string "WOLF PACK! WOLF PACK! WOLF PACK!\n"
 	.string "AWOOOOOOO!$"
 
 FortreeCity_Gym_Text_FlintDefeat:

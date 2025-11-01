@@ -117,6 +117,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "JaggedPass_EventScript_Marowak",
       "flag": "FLAG_HIDE_MAROWAK_JAGGED_PASS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GUMSHOOS)",
+      "x": 8,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "JaggedPass_EventScript_Gumshoos",
+      "flag": "FLAG_DEFEATED_GUMSHOOS_TOTEM"
     }
   ],
   "warp_events": [
@@ -252,7 +265,7 @@
       "x": 7,
       "y": 29,
       "elevation": 3,
-      "item": "ITEM_GREAT_BALL",
+      "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_JAGGED_PASS_GREAT_BALL"
     }
   ]

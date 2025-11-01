@@ -54,7 +54,8 @@ script FallarborTown_House_EventScript_Old_Man{
 text FallarborTown_House_Old_Man_RatCaveHint{
     "Huh?\p
     What?\p
-    Oh, finally you're here!\p
+    Oh, finally!\n
+    You're here!\p
     We've still been hearing RATTATA noises\n
     in the basement lately.\p
     It's been so hard to sleep because\n

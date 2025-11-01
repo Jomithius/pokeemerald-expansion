@@ -575,6 +575,56 @@ JaggedPass_EventScript_Marowak_2:
 	goto JaggedPass_EventScript_Marowak_1
 
 
+JaggedPass_EventScript_Gumshoos::
+# 294 "data/maps/JaggedPass/scripts.pory"
+	lock
+# 295 "data/maps/JaggedPass/scripts.pory"
+	faceplayer
+# 296 "data/maps/JaggedPass/scripts.pory"
+	playmoncry SPECIES_GUMSHOOS, CRY_MODE_ENCOUNTER
+# 297 "data/maps/JaggedPass/scripts.pory"
+	waitmoncry
+# 298 "data/maps/JaggedPass/scripts.pory"
+	setwildbattle SPECIES_GUMSHOOS_TOTEM, 30, ITEM_ABILITY_PATCH
+# 299 "data/maps/JaggedPass/scripts.pory"
+	dowildbattle
+# 300 "data/maps/JaggedPass/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 301 "data/maps/JaggedPass/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq JaggedPass_EventScript_Gumshoos_2
+# 301 "data/maps/JaggedPass/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq JaggedPass_EventScript_Gumshoos_2
+# 307 "data/maps/JaggedPass/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 308 "data/maps/JaggedPass/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 309 "data/maps/JaggedPass/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+# 310 "data/maps/JaggedPass/scripts.pory"
+	msgbox JaggedPass_EventScript_Gumshoos_Text_0, MSGBOX_AUTOCLOSE
+# 311 "data/maps/JaggedPass/scripts.pory"
+	waitmessage
+JaggedPass_EventScript_Gumshoos_1:
+# 313 "data/maps/JaggedPass/scripts.pory"
+	release
+	end
+
+JaggedPass_EventScript_Gumshoos_2:
+# 302 "data/maps/JaggedPass/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 303 "data/maps/JaggedPass/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 304 "data/maps/JaggedPass/scripts.pory"
+	fadescreenspeed FADE_FROM_BLACK, 5
+	goto JaggedPass_EventScript_Gumshoos_1
+
+
 JaggedPass_EventScript_Marowak_Text_0:
 # 286 "data/maps/JaggedPass/scripts.pory"
 	.string "The MAROWAK disappeared…$"
+
+JaggedPass_EventScript_Gumshoos_Text_0:
+# 310 "data/maps/JaggedPass/scripts.pory"
+	.string "The GUMSHOOS disappeared…$"

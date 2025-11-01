@@ -160,11 +160,11 @@ script Route112_EventScript_Emo{
     giveitem(ITEM_TM_ACROBATICS)
     waitmessage
     delay(10)
-    msgbox("I see you also got a POKéNAV…\n
+    msgbox("JAMES: I see you also got a POKéNAV…\n
         … … … … …", MSGBOX_DEFAULT)
     waitmessage
     playfanfare(MUS_REGISTER_MATCH_CALL)
-    msgbox("Registered JOMITHIUS in the POKéNAV.", MSGBOX_AUTOCLOSE)
+    msgbox("Registered JAMES in the POKéNAV.", MSGBOX_DEFAULT)
     waitfanfare
     waitmessage
     setflag(FLAG_ENABLED_JOMITHIUS_MATCH_CALL)
@@ -173,7 +173,7 @@ script Route112_EventScript_Emo{
     msgbox(Route112_Text_Emo3, MSGBOX_DEFAULT)
     waitmessage
     delay(20)
-    msgbox("…", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_DEFAULT)
     waitmessage
     delay(30)
     applymovement(14, Common_Movement_FacePlayer)
@@ -218,11 +218,11 @@ script Route112_EventScript_Emo_West{
     giveitem(ITEM_TM_ACROBATICS)
     delay(10)
     waitmessage
-    msgbox("I see you also got a POKéNAV…\n
+    msgbox("JAMES: I see you also got a POKéNAV…\n
         … … … … …", MSGBOX_DEFAULT)
     waitmessage
     playfanfare(MUS_REGISTER_MATCH_CALL)
-    msgbox("Registered JOMITHIUS in the POKéNAV.", MSGBOX_AUTOCLOSE)
+    msgbox("Registered JAMES in the POKéNAV.", MSGBOX_DEFAULT)
     waitfanfare
     waitmessage
     setflag(FLAG_ENABLED_JOMITHIUS_MATCH_CALL)
@@ -231,7 +231,7 @@ script Route112_EventScript_Emo_West{
     msgbox(Route112_Text_Emo3, MSGBOX_DEFAULT)
     waitmessage
     delay(20)
-    msgbox("…", MSGBOX_AUTOCLOSE)
+    msgbox("…", MSGBOX_DEFAULT)
     waitmessage
     delay(30)
     applymovement(14, Common_Movement_FacePlayer)
@@ -276,8 +276,8 @@ text Route112_Text_Emo2{
 }
 
 text Route112_Text_Emo3{
-    "I'm going to challenge the LAVARIDGE\n
-    GYM after exploring the DESERT.\p
+    "JAMES: I'm going to challenge the GYM in\n
+    LAVARIDGE after exploring the DESERT.\p
     If you're going to head north,\n
     be careful.\p
     There's been a lot of weirdos\n
@@ -285,9 +285,9 @@ text Route112_Text_Emo3{
 }
 
 text Route112_Text_Emo4{
-    "JAMES: What?\p
-    Well, see ya, {PLAYER}.\n
-    Next time, I won't lose."
+    "What?\p
+    Well… See ya, {PLAYER}.\n
+    I won't lose next time."
 }
 
 movement Route112_Movement_EmoLeave{

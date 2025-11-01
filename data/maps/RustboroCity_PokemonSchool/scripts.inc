@@ -1255,6 +1255,18 @@ RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_4:
 	goto RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_1
 
 
+RustboroCity_PokemonSchool_EventScript_Boy1::
+# 904 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	msgbox RustboroCity_PokemonSchool_EventScript_Boy1_Text_0, MSGBOX_SIGN
+	end
+
+
+RustboroCity_PokemonSchool_EventScript_Girl1::
+# 918 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	msgbox RustboroCity_PokemonSchool_EventScript_Girl1_Text_0, MSGBOX_NPC
+	end
+
+
 RustboroCity_PokemonSchool_EventScript_TutorialGirl_Text_0:
 # 358 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "Oh! Are you a new TRAINER?\n That's great!\p I'm pretty smart when it comes\n to POKéMON.\p If you want, I can answer any questions\n you might have about battling.$"
@@ -1378,3 +1390,11 @@ RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_Text_0:
 RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward_Text_1:
 # 893 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "I know you'll become a great TRAINER.\n I'll be rooting for you!\p If you ever need a refresher course,\n feel free to come back!$"
+
+RustboroCity_PokemonSchool_EventScript_Boy1_Text_0:
+# 904 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	.string "“Wild POKéMON are weaker than a\n TRAINER's POKéMON.\p “This is because POKéMON gain EVs from\n battling other POKéMON.\p “It's good to make sure new POKéMON\n added to your team also get EVs.”\p Is that so…\n But… Huh?\p What are EVs?\n We didn't learn that yet…$"
+
+RustboroCity_PokemonSchool_EventScript_Girl1_Text_0:
+# 918 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	.string "Hey, did you know?\p You can change what POKé BALL your\n POKéMON is in!\p Just use any POKé BALL from the bag\n outside of battle.\p Isn't that cool?$"

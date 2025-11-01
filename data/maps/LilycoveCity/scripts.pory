@@ -1073,8 +1073,8 @@ script LilycoveCity_EventScript_Man4{
 
 text LilycoveCity_Text_Man4{
 	"I've been hearing weird noises coming\n
-	from that houses for a few days now.\p
-	But nobody's lived there for years."
+	from that house for a few days now.\p
+	But nobody's lived there for years…"
 }
 
 script LilycoveCity_EventScript_CEO_HighriseNoEntry{

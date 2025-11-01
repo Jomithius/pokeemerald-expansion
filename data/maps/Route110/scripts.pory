@@ -1020,7 +1020,7 @@ script Route110_EventScript_Biker5{
 }
 
 script Route110_EventScript_Biker6{
-	trainerbattle_single(TRAINER_ALYSSA, Route110_Biker_Intro2, Route110_BikerDefeat)
+	trainerbattle_single(TRAINER_ALYSSA, Route110_Biker_Intro, Route110_BikerDefeat)
 	msgbox(Route110_Biker_Intro3, MSGBOX_AUTOCLOSE)
 	end
 }
@@ -1092,7 +1092,9 @@ script Route110_EventScript_Speedwagon{
 }
 
 text Route110_Text_Speedwagon{
-	"Huh?\n
+	"BRRRUBRUBRRRRUB\n
+	BRRRUBRUBRRRRUB!\p
+	Huh?\n
 	Who's this brat?\p
 	HUH?\n
 	You're telling US to leave?\p
@@ -1290,7 +1292,6 @@ movement Route110_WalkLeft{
 
 script Route110_EventScript_SaveBikerMusic{
 	savebgm(MUS_RG_SILPH)
-	// playbgm(MUS_RG_SILPH, TRUE)
 	setflag(FLAG_DONT_TRANSITION_MUSIC)
 	setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
 	return

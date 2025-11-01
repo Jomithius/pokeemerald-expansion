@@ -457,7 +457,7 @@ LilycoveCity_DepartmentStore_5F_Text_Misa1::
 
 LilycoveCity_DepartmentStore_5F_Text_Misa2::
 # 208 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "By the way, I ran into JAMES earlier.\p He seems really motivated since\n meeting you.\p I also noticed his… behavior\n has changed a bit as well.\p Maybe he's growing from his experiences\n he's had on his journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
+	.string "By the way, I ran into JAMES earlier.\p He seems really motivated since\n meeting you.\p I also noticed his… behavior\n has changed a bit as well.\p Maybe he's growing from the experiences\n he's had on his journey.\p Well, I need to FLY back to EVER GRANDE\n CITY as soon as I finish shopping.\p Good luck on your last two badges!\n I'm sure we'll see each other again.$"
 
 LilycoveCity_DepartmentStore_5F_Text_Misa3::
 # 222 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

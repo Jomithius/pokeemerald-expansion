@@ -253,7 +253,7 @@ RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "MR. STONE: A POKéMON holding that\n"
-	.string "LUCKY EGG will be given extra EXP\l"
+	.string "LUCKY EGG will be given extra EXP.\l"
 	.string "Points from battle.\p"
 	.string "I would say a LUCKY EGG is quite\n"
 	.string "useful for raising weak POKéMON.\p"

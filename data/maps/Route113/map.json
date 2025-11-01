@@ -227,7 +227,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SALAZZLE_TOTEM)",
-      "x": 78,
+      "x": 79,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",

@@ -11611,14 +11611,13 @@ Jolly Nature
 - Mach Punch  
 - Bulk Up 
 
-Primeape (M) @ Blunder Policy
+Primeape (M) @ Sitrus Berry
 Ability: Defiant  
 Level: 31    
 EVs: 244 HP / 136 Atk / 12 Def / 116 Spe  
 Adamant Nature  
-- Acrobatics  
-- Brick Break  
-- Dynamic Punch  
+- Acrobatics   
+- Drain Punch 
 - Assurance  
 
 === TRAINER_JOMITHIUS_2 ===
@@ -16661,13 +16660,13 @@ IVs: 0 Atk
 - Moonblast    
 
 Lilligant @ Wise Glasses  
-Ability: Chlorophyll  
+Ability: Own Tempo
 Tera Type: Grass  
 EVs: 4 Def / 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
 - Quiver Dance  
-- Leaf Storm  
+- Petal Dance  
 - Alluring Voice  
 - Synthesis  
 
@@ -16684,11 +16683,10 @@ Impish Nature
 
 Lopunny (F) @ Lopunnite  
 Ability: Cute Charm  
-Tera Type: Normal  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Fake Out  
-- High Jump Kick  
+- Close Combat  
 - Return  
 - Ice Punch  
 
@@ -25068,7 +25066,7 @@ IVs: 0 Atk
 
 Ampharos (M) @ Misty Seed
 Ability: Static  
-Level: 33 
+Level: 34 
 Modest Nature  
 - Discharge  
 - Power Gem  
@@ -26399,14 +26397,14 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Green
 
-Plusle (F) @ Wise Glasses
+Plusle (F) @ Oran Berry
 Ability: Plus
 Level: 29    
 Hasty Nature  
 - Shock Wave    
 - Alluring Voice  
 
-Minun @ Magnet 
+Minun @ Oran Berry 
 Ability: Minus
 Level: 29    
 Timid Nature  
@@ -26417,14 +26415,14 @@ IVs: 0 Atk
 Watchog
 Ability: Keen Eye  
 Level: 28     
-Jolly Nature  
+Serious Nature  
 - Super Fang  
 - Hyper Fang  
 
 Raticate (M)
 Ability: Hustle  
 Level: 30      
-Jolly Nature  
+Serious Nature  
 - Hyper Fang  
 - Quick Attack  
 
@@ -31495,7 +31493,7 @@ Adamant Nature
 - Comet Punch  
 - Drain Punch  
 
-Meditite (M) @ Expert Belt  
+Meditite (M)
 Ability: Pure Power  
 Level: 29    
 Adamant Nature  
@@ -31513,7 +31511,7 @@ Jolly Nature
 - Bullet Punch  
 - Drain Punch  
 
-Hitmonchan @ Muscle Band 
+Hitmonchan
 Ability: Iron Fist  
 Level: 28     
 Adamant Nature  
@@ -31529,13 +31527,12 @@ Jolly Nature
 - Brick Break  
 - Mach Punch  
 
-Primeape (M)  
+Primeape (M)
 Ability: Defiant  
 Level: 30     
 Adamant Nature  
-- Acrobatics  
-- Brick Break  
-- Dynamic Punch  
+- Rock Tomb 
+- Drain Punch  
 - Assurance  
 
 === TRAINER_JOMITHIUS_2 ===
@@ -31571,8 +31568,8 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 Emolga (F) @ Oran Berry
 Ability: Static  
-Level: 28  
-Timid Nature
+Level: 27  
+Serious Nature
 IVs: 0 Atk / 15 Spe 
 - Acrobatics  
 - Volt Switch 
@@ -32745,8 +32742,7 @@ EVs: 64 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Infernal Parade  
 - Lava Plume  
-- Hidden Power /* Ice */
-- Shadow Ball  
+- Extrasensory 
 
 === TRAINER_LENNY ===
 Name: LENNY
@@ -36691,7 +36687,6 @@ Impish Nature
 Lopunny (F) @ Lopunnite  
 Ability: Cute Charm  
 EVs: 252 HP / 128 Atk 
-Tera Type: Normal   
 Jolly Nature  
 - Fake Out  
 - High Jump Kick  
@@ -39153,10 +39148,11 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Pink
 
-Linoone (F) @ Sitrus Berry  
+Linoone (F) @ Flame Orb 
 Ability: Gluttony  
 Level: 35
-Jolly Nature  
+Jolly Nature 
+IVs: 15 Atk  
 - Extreme Speed  
 - Facade  
 - Shadow Claw  
@@ -39174,8 +39170,7 @@ IVs: 0 Atk
 Salazzle-Totem @ Charcoal  
 Ability: Corrosion  
 Level: 35 
-Modest Nature  
-IVs: 0 Atk / 30 Def  
+Timid Nature  
 - Flame Burst  
 - Venoshock  
 - Crush Grip 
@@ -39200,10 +39195,11 @@ IVs: 0 Atk
 Lopunny (F) @ Silk Scarf  
 Ability: Cute Charm  
 Level: 36
-Naughty Nature  
+Naughty Nature
+IVs: 20 Spe  
 - Facade  
 - Drain Punch  
-- Ice Punch  
+- Swords Dance  
 
 === TRAINER_MAY_PLACEHOLDER === /* FUNCTIONALLY FREE */
 Name: MAY

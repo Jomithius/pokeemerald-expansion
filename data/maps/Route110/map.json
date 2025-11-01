@@ -500,11 +500,11 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 18,
-      "y": 68,
+      "x": 17,
+      "y": 69,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
-      "movement_range_x": 2,
+      "movement_range_x": 1,
       "movement_range_y": 7,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
@@ -513,7 +513,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 17,
+      "x": 18,
       "y": 55,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
@@ -555,7 +555,7 @@
       "x": 24,
       "y": 9,
       "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 3,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -653,6 +653,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_POLICEMAN_ROUTE_110"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "x": 10,
+      "y": 57,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route110_EventScript_Biker1",
+      "flag": "FLAG_ROUTE110_HIDE_BIKERS"
     }
   ],
   "warp_events": [

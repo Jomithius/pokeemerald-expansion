@@ -98,30 +98,30 @@ FallarborTown_House_EventScript_Old_Man_3:
 
 
 FallarborTown_House_EventScript_Old_Lady::
-# 79 "data/maps/FallarborTown_House/scripts.pory"
-	lock
 # 80 "data/maps/FallarborTown_House/scripts.pory"
-	applymovement 2, Common_Movement_FacePlayer
+	lock
 # 81 "data/maps/FallarborTown_House/scripts.pory"
-	waitmovement 2
+	applymovement 2, Common_Movement_FacePlayer
 # 82 "data/maps/FallarborTown_House/scripts.pory"
-	msgbox FallarborTown_House_Text_Old_Lady, MSGBOX_NPC
-# 83 "data/maps/FallarborTown_House/scripts.pory"
-	waitmessage
-# 84 "data/maps/FallarborTown_House/scripts.pory"
-	applymovement 2, Common_Movement_FaceOriginalDirection
-# 85 "data/maps/FallarborTown_House/scripts.pory"
 	waitmovement 2
+# 83 "data/maps/FallarborTown_House/scripts.pory"
+	msgbox FallarborTown_House_Text_Old_Lady, MSGBOX_NPC
+# 84 "data/maps/FallarborTown_House/scripts.pory"
+	waitmessage
+# 85 "data/maps/FallarborTown_House/scripts.pory"
+	applymovement 2, Common_Movement_FaceOriginalDirection
 # 86 "data/maps/FallarborTown_House/scripts.pory"
+	waitmovement 2
+# 87 "data/maps/FallarborTown_House/scripts.pory"
 	release
 	end
 
 
-# 98 "data/maps/FallarborTown_House/scripts.pory"
-FallarborTown_House_Movement_PlayerToOldMan:
 # 99 "data/maps/FallarborTown_House/scripts.pory"
-	walk_right
+FallarborTown_House_Movement_PlayerToOldMan:
 # 100 "data/maps/FallarborTown_House/scripts.pory"
+	walk_right
+# 101 "data/maps/FallarborTown_House/scripts.pory"
 	walk_in_place_down
 	step_end
 
@@ -131,12 +131,12 @@ FallarborTown_House_EventScript_Old_Man_Text_0:
 
 FallarborTown_House_Old_Man_RatCaveHint::
 # 54 "data/maps/FallarborTown_House/scripts.pory"
-	.string "Huh?\p What?\p Oh, finally you're here!\p We've still been hearing RATTATA noises\n in the basement lately.\p It's been so hard to sleep because\n of it.\p Be a good grandchild and go take\n care of it for me, will you?$"
+	.string "Huh?\p What?\p Oh, finally!\n You're here!\p We've still been hearing RATTATA noises\n in the basement lately.\p It's been so hard to sleep because\n of it.\p Be a good grandchild and go take\n care of it for me, will you?$"
 
 FallarborTown_House_Old_Man_RatCavePost::
-# 66 "data/maps/FallarborTown_House/scripts.pory"
+# 67 "data/maps/FallarborTown_House/scripts.pory"
 	.string "Huh?\p What?\p Oh!\n Did you take care of it?\p … … … …\p What?\n There was a giant… rat man?\p Your eyes must be worse than mine,\n youngster.$"
 
 FallarborTown_House_Text_Old_Lady::
-# 90 "data/maps/FallarborTown_House/scripts.pory"
+# 91 "data/maps/FallarborTown_House/scripts.pory"
 	.string "Lately, some of the folks have\n said they've been having a lot\l of nightmares.\p I wonder if it's something in\n the water.$"

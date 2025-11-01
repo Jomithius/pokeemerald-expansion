@@ -2293,7 +2293,7 @@ LilycoveCity_Text_Emo4::
 
 LilycoveCity_Text_Man4::
 # 1074 "data/maps/LilycoveCity/scripts.pory"
-	.string "I've been hearing weird noises coming\n from that houses for a few days now.\p But nobody's lived there for years.$"
+	.string "I've been hearing weird noises coming\n from that house for a few days now.\p But nobody's lived there for years…$"
 
 LilycoveCity_Text_StaffEmployee::
 # 1102 "data/maps/LilycoveCity/scripts.pory"

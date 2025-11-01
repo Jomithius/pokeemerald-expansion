@@ -289,3 +289,27 @@ script JaggedPass_EventScript_Marowak{
 	release
 	end
 }
+
+script JaggedPass_EventScript_Gumshoos{
+    lock
+    faceplayer
+    playmoncry(SPECIES_GUMSHOOS, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_GUMSHOOS_TOTEM, 30, ITEM_ABILITY_PATCH)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+        fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+	}
+	else{
+		fadescreen(FADE_TO_BLACK)
+        removeobject(VAR_LAST_TALKED)
+	    fadescreenspeed(FADE_FROM_BLACK, 5)
+        msgbox("The GUMSHOOS disappeared…", MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+	release
+	end
+}

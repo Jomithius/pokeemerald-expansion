@@ -319,7 +319,7 @@ Route112_EventScript_Emo::
 # 166 "data/maps/Route112/scripts.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 167 "data/maps/Route112/scripts.pory"
-	msgbox Route112_EventScript_Emo_Text_1, MSGBOX_AUTOCLOSE
+	msgbox Route112_EventScript_Emo_Text_1, MSGBOX_DEFAULT
 # 168 "data/maps/Route112/scripts.pory"
 	waitfanfare
 # 169 "data/maps/Route112/scripts.pory"
@@ -337,7 +337,7 @@ Route112_EventScript_Emo::
 # 175 "data/maps/Route112/scripts.pory"
 	delay 20
 # 176 "data/maps/Route112/scripts.pory"
-	msgbox Route112_EventScript_Emo_Text_2, MSGBOX_AUTOCLOSE
+	msgbox Route112_EventScript_Emo_Text_2, MSGBOX_DEFAULT
 # 177 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 178 "data/maps/Route112/scripts.pory"
@@ -429,7 +429,7 @@ Route112_EventScript_Emo_West::
 # 224 "data/maps/Route112/scripts.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 225 "data/maps/Route112/scripts.pory"
-	msgbox Route112_EventScript_Emo_Text_1, MSGBOX_AUTOCLOSE
+	msgbox Route112_EventScript_Emo_Text_1, MSGBOX_DEFAULT
 # 226 "data/maps/Route112/scripts.pory"
 	waitfanfare
 # 227 "data/maps/Route112/scripts.pory"
@@ -447,7 +447,7 @@ Route112_EventScript_Emo_West::
 # 233 "data/maps/Route112/scripts.pory"
 	delay 20
 # 234 "data/maps/Route112/scripts.pory"
-	msgbox Route112_EventScript_Emo_Text_2, MSGBOX_AUTOCLOSE
+	msgbox Route112_EventScript_Emo_Text_2, MSGBOX_DEFAULT
 # 235 "data/maps/Route112/scripts.pory"
 	waitmessage
 # 236 "data/maps/Route112/scripts.pory"
@@ -571,11 +571,11 @@ Route112_PlayerWalkBackWest:
 
 Route112_EventScript_Emo_Text_0:
 # 163 "data/maps/Route112/scripts.pory"
-	.string "I see you also got a POKéNAV…\n … … … … …$"
+	.string "JAMES: I see you also got a POKéNAV…\n … … … … …$"
 
 Route112_EventScript_Emo_Text_1:
 # 167 "data/maps/Route112/scripts.pory"
-	.string "Registered JOMITHIUS in the POKéNAV.$"
+	.string "Registered JAMES in the POKéNAV.$"
 
 Route112_EventScript_Emo_Text_2:
 # 176 "data/maps/Route112/scripts.pory"
@@ -595,8 +595,8 @@ Route112_Text_Emo2::
 
 Route112_Text_Emo3::
 # 278 "data/maps/Route112/scripts.pory"
-	.string "I'm going to challenge the LAVARIDGE\n GYM after exploring the DESERT.\p If you're going to head north,\n be careful.\p There's been a lot of weirdos\n lurking around here lately.$"
+	.string "JAMES: I'm going to challenge the GYM in\n LAVARIDGE after exploring the DESERT.\p If you're going to head north,\n be careful.\p There's been a lot of weirdos\n lurking around here lately.$"
 
 Route112_Text_Emo4::
 # 287 "data/maps/Route112/scripts.pory"
-	.string "JAMES: What?\p Well, see ya, {PLAYER}.\n Next time, I won't lose.$"
+	.string "What?\p Well… See ya, {PLAYER}.\n I won't lose next time.$"

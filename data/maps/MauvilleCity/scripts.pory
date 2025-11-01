@@ -1175,7 +1175,7 @@ script MauvilleCity_EventScript_WattsonNewMauvilleTrigger{
 script MauvilleCity_EventScript_TakeCareOfFavorToDaca{
 	lockall
 	msgbox("I should take care of that\n
-		favor for DACA first.", MSGBOX_AUTOCLOSE)
+	favor for DACA first.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
 	waitmovement(0)

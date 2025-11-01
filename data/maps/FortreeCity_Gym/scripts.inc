@@ -395,7 +395,7 @@ FortreeCity_Gym_Text_EdwardoPostBattle:
 # 198 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_Text_FlintIntro:
 # 199 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "WOLF PACK! WOLF PACK!\n"
+	.string "WOLF PACK! WOLF PACK! WOLF PACK!\n"
 # 200 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "AWOOOOOOO!$"
 # 201 "data/maps/FortreeCity_Gym/scripts.pory"

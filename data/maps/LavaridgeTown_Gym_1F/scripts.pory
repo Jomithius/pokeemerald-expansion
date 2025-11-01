@@ -213,10 +213,8 @@ LavaridgeTown_Gym_1F_Text_GymGuideAdvice:
 	.string "LAVARIDGE's GYM LEADER KAI\n"
 	.string "uses FIRE-type POKéMON.\p"
 	.string "Her passion for POKéMON burns stronger\n"
-	.string "than the heat in a kitchen.\p"
-	.string "Don't stay in the SUN too long!\n"
-	.string "Water her down with RAIN and then\l"
-	.string "go for it!\p"
+	.string "than the heat in a kitchen.\l"
+	.string "Hey, go for it!\p"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap is 34.$"
 
 LavaridgeTown_Gym_1F_Text_GymGuidePostVictory:

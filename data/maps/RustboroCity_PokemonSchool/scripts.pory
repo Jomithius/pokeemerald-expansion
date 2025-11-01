@@ -899,3 +899,27 @@ script RustboroCity_PokemonSchool_EventScript_TutorialGirlGiveReward{
     release
     end    
 }
+
+script RustboroCity_PokemonSchool_EventScript_Boy1{
+    msgbox("“Wild POKéMON are weaker than a\n
+        TRAINER's POKéMON.\p
+        “This is because POKéMON gain EVs from\n
+        battling other POKéMON.\p
+        “It's good to make sure new POKéMON\n
+        added to your team also get EVs.”\p
+        Is that so…\n
+        But… Huh?\p
+        What are EVs?\n
+        We didn't learn that yet…", MSGBOX_SIGN)
+    end
+}
+
+script RustboroCity_PokemonSchool_EventScript_Girl1{
+    msgbox("Hey, did you know?\p
+    You can change what POKé BALL your\n
+    POKéMON is in!\p
+    Just use any POKé BALL from the bag\n
+    outside of battle.\p
+    Isn't that cool?", MSGBOX_NPC)
+    end
+}

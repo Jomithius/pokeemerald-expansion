@@ -89,7 +89,7 @@ RustboroCity_Misa_House3F_Togepi_1:
 
 RustboroCity_Misa_House3F_Togepi_2:
 # 56 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	givemon SPECIES_TOGEPI, 10, ITEM_SITRUS_BERRY, ITEM_POKE_BALL, NATURE_MODEST, 2, MON_FEMALE, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
+	givemon SPECIES_TOGEPI, 10, ITEM_SITRUS_BERRY, ITEM_FRIEND_BALL, NATURE_MODEST, 2, MON_FEMALE, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 # 57 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOGEPI
 # 58 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
