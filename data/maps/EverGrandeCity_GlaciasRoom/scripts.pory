@@ -71,9 +71,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 	.string "Welcome! I'm XION\n"
 	.string "of the ELITE FOUR.\p"
-	.string "Are you the TRAINER that MISA\n"
-	.string "had talked about?\p"
-	.string "Not many TRAINERS can usually\n"
+	.string "Not many TRAINERS usually\n"
 	.string "make it this far.\p"
 	.string "Let me find out if you're\n"
 	.string "able to pass me!$"

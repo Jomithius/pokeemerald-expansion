@@ -10230,7 +10230,6 @@ Delcatty (F) @ Chople Berry
 Ability: Normalize
 Level: 60     
 Jolly Nature  
-- Sing  
 - Fake Out  
 - Body Slam  
 - Play Rough
@@ -20179,7 +20178,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Force Setup First Turn
 Difficulty: Easy
 
 Alomomola (F) @ Icy Rock  
@@ -23919,8 +23918,7 @@ Level: 60
 Jolly Nature  
 - Close Combat  
 - Trailblaze  
-- Petal Blizzard  
-- Triple Axel  
+- Petal Blizzard    
 
 Medicham (M) @ Expert Belt  
 Ability: Pure Power  
@@ -24000,7 +23998,7 @@ Haxorus (M) @ Dragon Fang
 Ability: Unnerve
 Level: 65  
 EVs: 192 HP  
-Jolly Nature  
+Adamant Nature  
 - Dragon Claw
 - Earthquake  
 - Rock Slide
@@ -30129,8 +30127,7 @@ Adamant Nature
 Delcatty (F) @ Chople Berry  
 Ability: Normalize 
 Level: 60    
-Jolly Nature  
-- Sing  
+Jolly Nature   
 - Fake Out  
 - Body Slam  
 - Play Rough

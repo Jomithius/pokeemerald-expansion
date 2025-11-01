@@ -427,7 +427,7 @@ MossdeepCity_Gym_Text_HannahDefeat:
 	.string "You're just too strong!$"
 
 MossdeepCity_Gym_Text_HannahPostBattle:
-	.string "I heard there's a dojo to the NORTH\n"
+	.string "I heard there's a dojo to the north\n"
 	.string "with a super strong sensei.\p"
     .string "I'm thinking about training there.$"
 
