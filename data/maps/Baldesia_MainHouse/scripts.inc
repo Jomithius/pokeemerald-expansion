@@ -1396,7 +1396,7 @@ Baldesia_MainHouse_EventScript_GoToAltar_Text_9:
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_10:
 # 355 "data/maps/Baldesia_MainHouse/scripts.pory"
-	.string "LOHAN: I won't discuss it any further.\n You're lucky I've even allowed this\l KNIGHT to show such disrespect.\p MOMO: ………$"
+	.string "LOHAN: I won't discuss it any further.\n You're lucky I've even allowed this\l “KNIGHT” to show such disrespect.\p MOMO: ………$"
 
 Baldesia_MainHouse_EventScript_GoToAltar_Text_11:
 # 368 "data/maps/Baldesia_MainHouse/scripts.pory"

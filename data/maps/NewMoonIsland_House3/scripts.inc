@@ -162,7 +162,7 @@ NewMoonIsland_House3_EventScript_Aria_Text_1:
 
 NewMoonIsland_House3_Text_James::
 # 97 "data/maps/NewMoonIsland_House3/scripts.pory"
-	.string "{PLAYER}?!\n What are you doing here?\p … … … …\p I see…\n So you were also pulled into the abyss…\p There's no saving us then…\p At least now I can tell you that the\n other me, the one you battled at\l EVERGRANDE CITY, is a fake…\p If we ever get out of here…\n DON'T ever trust him.$"
+	.string "{PLAYER}?!\n What are you doing here?\p … … … …\p I see…\n So you were also pulled into the abyss…\p There's no saving us then…\p At least now I can tell you that the\n other me, the one you battled at\l EVER GRANDE CITY, is a fake…\p If we ever get out of here…\n DON'T ever trust him.$"
 
 NewMoonIsland_House3_Text_Momo::
 # 111 "data/maps/NewMoonIsland_House3/scripts.pory"
