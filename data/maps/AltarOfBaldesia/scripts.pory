@@ -74,6 +74,7 @@ script AltarOfBaldesia_EventScript_AltarRitual{
     waitmovement(0)
     fadenewbgm(MUS_NONE)
     delay(30)
+    special(HealPlayerParty)
     msgbox("MOMO begins to play the POKé FLUTE…", MSGBOX_AUTOCLOSE)
     waitmessage
     playbgm(MUS_RG_JIGGLYPUFF, FALSE)

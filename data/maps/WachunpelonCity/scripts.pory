@@ -164,8 +164,14 @@ script WachunpelonCity_EventScript_Cook{
         Gosh… It's so yummy…\l
         Tasty…\l
         Scrumptious…\l
+        Succulent…\l
         Delicious…\l
-        Savory…", MSGBOX_AUTOCLOSE)
+        Savory…\l
+        Flavorful…\l
+        Palatable…\l
+        Mouthwatering…\l
+        Tantalazing…\l
+        Toothsome…", MSGBOX_AUTOCLOSE)
     waitmessage
     playse(SE_PIN)
     applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)

@@ -19591,7 +19591,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Axe Kick"),
         .description = COMPOUND_STRING(
-            "May miss and hurt the kicker.\n"
+            "May miss and hurt the user.\n"
             "May cause confusion."),
         .effect = EFFECT_RECOIL_IF_MISS,
         .power = 120,
@@ -20444,7 +20444,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_BLAZING_TORQUE] =
     {
         .name = COMPOUND_STRING("Blazing Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Damages the target.\n"
+            "Has a chance to burn."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_FIRE,
@@ -20458,9 +20460,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
         .copycatBanned = TRUE,
-        .sleepTalkBanned = TRUE,
+        //.sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .encoreBanned = TRUE,
+        //.encoreBanned = TRUE,
         .assistBanned = TRUE,
         .sketchBanned = (B_SKETCH_BANS >= GEN_9),
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -20473,7 +20475,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_WICKED_TORQUE] =
     {
         .name = COMPOUND_STRING("Wicked Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Damages the target. Has\n"
+            "a small chance to sleep."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_DARK,
@@ -20487,9 +20491,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
         .copycatBanned = TRUE,
-        .sleepTalkBanned = TRUE,
+        //.sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .encoreBanned = TRUE,
+        //.encoreBanned = TRUE,
         .assistBanned = TRUE,
         .sketchBanned = (B_SKETCH_BANS >= GEN_9),
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -20502,7 +20506,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_NOXIOUS_TORQUE] =
     {
         .name = COMPOUND_STRING("Noxious Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Damages the target.\n"
+            "Has a chance to poison."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_POISON,
@@ -20516,9 +20522,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
         .copycatBanned = TRUE,
-        .sleepTalkBanned = TRUE,
+        //.sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .encoreBanned = TRUE,
+        //.encoreBanned = TRUE,
         .assistBanned = TRUE,
         .sketchBanned = (B_SKETCH_BANS >= GEN_9),
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -20531,7 +20537,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_COMBAT_TORQUE] =
     {
         .name = COMPOUND_STRING("Combat Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Damages the target.\n"
+            "Has a chance to paralyze."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FIGHTING,
@@ -20545,9 +20553,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
         .copycatBanned = TRUE,
-        .sleepTalkBanned = TRUE,
+        //.sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .encoreBanned = TRUE,
+        //.encoreBanned = TRUE,
         .assistBanned = TRUE,
         .sketchBanned = (B_SKETCH_BANS >= GEN_9),
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -20560,7 +20568,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_MAGICAL_TORQUE] =
     {
         .name = COMPOUND_STRING("Magical Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Damages the target.\n"
+            "Has a chance to confuse."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FAIRY,
@@ -20574,9 +20584,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
         .copycatBanned = TRUE,
-        .sleepTalkBanned = TRUE,
+        //.sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .encoreBanned = TRUE,
+        //.encoreBanned = TRUE,
         .assistBanned = TRUE,
         .sketchBanned = (B_SKETCH_BANS >= GEN_9),
         .additionalEffects = ADDITIONAL_EFFECTS({

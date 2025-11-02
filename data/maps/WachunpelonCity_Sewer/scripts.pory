@@ -235,15 +235,15 @@ text WachunpelonCity_Sewer_SpeedwagonDefeat{
 }
 
 text WachunpelonCity_Sewer_Text_Policeman3{
-    "Thanks again for helping us clear\n
-    up this case.\p
+    "POLICEMAN: Thanks again for helping us\n
+    clear up this case.\p
     Here, take this. I think the boss was\n
     going to use it to upgrade his bike."
 }
 
 text WachunpelonCity_Sewer_Text_Policeman4{
-    "Well, I should head back to MAUVILLE\n
-    CITY now. Take care."
+    "POLICEMAN: Well, I should head back to\n
+    MAUVILLE CITY now. Take care."
 }
 
 movement WachunpelonCity_Sewer_Movement_Policeman1{

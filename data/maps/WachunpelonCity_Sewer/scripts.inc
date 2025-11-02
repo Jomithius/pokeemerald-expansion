@@ -675,8 +675,8 @@ WachunpelonCity_Sewer_SpeedwagonDefeat::
 
 WachunpelonCity_Sewer_Text_Policeman3::
 # 237 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	.string "Thanks again for helping us clear\n up this case.\p Here, take this. I think the boss was\n going to use it to upgrade his bike.$"
+	.string "POLICEMAN: Thanks again for helping us\n clear up this case.\p Here, take this. I think the boss was\n going to use it to upgrade his bike.$"
 
 WachunpelonCity_Sewer_Text_Policeman4::
 # 244 "data/maps/WachunpelonCity_Sewer/scripts.pory"
-	.string "Well, I should head back to MAUVILLE\n CITY now. Take care.$"
+	.string "POLICEMAN: Well, I should head back to\n MAUVILLE CITY now. Take care.$"

@@ -354,7 +354,7 @@ script Baldesia_MainHouse_EventScript_GoToAltar{
     waitmovement(0)
     msgbox("LOHAN: I won't discuss it any further.\n
         You're lucky I've even allowed this\l
-        KNIGHT to show such disrespect.\p
+        “KNIGHT” to show such disrespect.\p
         MOMO: ………", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_MOMO, Common_Movement_WalkInPlaceDown)

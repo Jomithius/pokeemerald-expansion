@@ -18789,7 +18789,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_BATTLE_ARMOR, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_WEAK_ARMOR, ABILITY_ROCKY_PAYLOAD },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Kabutops"),
         .cryId = CRY_KABUTOPS,
@@ -18825,12 +18825,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sPicTable_Kabutops,
             SIZE_32x32,
             SHADOW_SIZE_M,
-            TRACKS_FOOT,
+            TRACKS_NONE,
             sAnimTable_Following,
-            gOverworldPalette_Kabutops,
-            gShinyOverworldPalette_Kabutops
+            gMonPalette_MissingNo,
+            gMonShinyPalette_MissingNo
         )
-        .levelUpLearnset = sKabutopsLevelUpLearnset,
+        .levelUpLearnset = sKabutopsFossilLevelUpLearnset,
         .teachableLearnset = sKabutopsTeachableLearnset,
     },
 #endif //P_FAMILY_KABUTO
@@ -18994,7 +18994,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_ROCK_HEAD, ABILITY_PRESSURE, ABILITY_UNNERVE },
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_UNNERVE, ABILITY_ROCKY_PAYLOAD },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Aerodactyl"),
         .cryId = CRY_AERODACTYL,
@@ -19033,10 +19033,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             SHADOW_SIZE_M,
             TRACKS_NONE,
             sAnimTable_Following,
-            gOverworldPalette_Aerodactyl,
-            gShinyOverworldPalette_Aerodactyl
+            gMonPalette_MissingNo,
+            gMonShinyPalette_MissingNo
         )
-        .levelUpLearnset = sAerodactylLevelUpLearnset,
+        .levelUpLearnset = sAerodactylFossilLevelUpLearnset,
         .teachableLearnset = sAerodactylTeachableLearnset,
         .eggMoveLearnset = sAerodactylEggMoveLearnset,
     },
@@ -20353,10 +20353,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_GLOW_BLACK,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_CircledQuestionMark,
-        .backPicSize = MON_COORDS_SIZE(40, 40),
-        .backPicYOffset = 12,
-        .backAnimId = BACK_ANIM_NONE,
+        .backPic = gMonFrontPic_MissingNo,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_MissingNo,
         .shinyPalette = gMonShinyPalette_MissingNo,
         .iconSprite = gMonIcon_QuestionMark,

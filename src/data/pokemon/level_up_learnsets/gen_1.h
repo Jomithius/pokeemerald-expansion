@@ -3085,10 +3085,31 @@ static const struct LevelUpMove sKabutopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
+
+static const struct LevelUpMove sKabutopsFossilLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+    LEVEL_UP_MOVE(34, MOVE_ABSORB),
+    LEVEL_UP_MOVE(39, MOVE_SLASH),
+    LEVEL_UP_MOVE(46, MOVE_LEER),
+    LEVEL_UP_MOVE(53, MOVE_HYDRO_PUMP),
+    LEVEL_UP_END
+};
 #endif //P_FAMILY_KABUTO
 
 #if P_FAMILY_AERODACTYL
 static const struct LevelUpMove sAerodactylLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_WING_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_AGILITY),
+    LEVEL_UP_MOVE(33, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE(38, MOVE_BITE),
+    LEVEL_UP_MOVE(45, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(54, MOVE_HYPER_BEAM),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sAerodactylFossilLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_AGILITY),
     LEVEL_UP_MOVE(33, MOVE_SUPERSONIC),

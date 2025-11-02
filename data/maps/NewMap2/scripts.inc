@@ -171,55 +171,55 @@ Route137_EventScript_Joey::
 
 
 Route137_EventScript_Steve::
-# 131 "data/maps/NewMap2/scripts.pory"
+# 132 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Steve_Text_0, MSGBOX_SIGN
 	end
 
 
 Route137_EventScript_Beauty::
-# 139 "data/maps/NewMap2/scripts.pory"
-	lock
 # 140 "data/maps/NewMap2/scripts.pory"
-	faceplayer
+	lock
 # 141 "data/maps/NewMap2/scripts.pory"
+	faceplayer
+# 142 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Beauty_Text_0, MSGBOX_AUTOCLOSE
-# 144 "data/maps/NewMap2/scripts.pory"
-	waitmessage
 # 145 "data/maps/NewMap2/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmessage
 # 146 "data/maps/NewMap2/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 147 "data/maps/NewMap2/scripts.pory"
+	waitmovement 0
+# 148 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Sailor1::
-# 152 "data/maps/NewMap2/scripts.pory"
-	lock
 # 153 "data/maps/NewMap2/scripts.pory"
-	faceplayer
+	lock
 # 154 "data/maps/NewMap2/scripts.pory"
+	faceplayer
+# 155 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Sailor1_Text_0, MSGBOX_AUTOCLOSE
-# 159 "data/maps/NewMap2/scripts.pory"
-	waitmessage
 # 160 "data/maps/NewMap2/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmessage
 # 161 "data/maps/NewMap2/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 162 "data/maps/NewMap2/scripts.pory"
+	waitmovement 0
+# 163 "data/maps/NewMap2/scripts.pory"
 	release
 	end
 
 
 Route137_EventScript_Sailor2::
-# 167 "data/maps/NewMap2/scripts.pory"
+# 168 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Sailor2_Text_0, MSGBOX_SIGN
 	end
 
 
 Route137_EventScript_Sign::
-# 174 "data/maps/NewMap2/scripts.pory"
+# 175 "data/maps/NewMap2/scripts.pory"
 	msgbox Route137_EventScript_Sign_Text_0, MSGBOX_SIGN
 	end
 
@@ -342,24 +342,24 @@ Route137_EventScript_Tuber_F_2_Text_0:
 
 Route137_EventScript_Joey_Text_0:
 # 124 "data/maps/NewMap2/scripts.pory"
-	.string "Ahaha… Yeeheheaaaaaah…\p ……………………\p They're too relaxed to notice you.$"
+	.string "Ahaha…\n Yeeheheaaaaaah…\l ……………………\p They're too relaxed to notice you.$"
 
 Route137_EventScript_Steve_Text_0:
-# 131 "data/maps/NewMap2/scripts.pory"
-	.string "Yeheheaah!\n This is a sick vacation!\p ……………………\p They're too relaxed to notice you.$"
+# 132 "data/maps/NewMap2/scripts.pory"
+	.string "Yeheheaah!\n This is a sick vacation!\l ……………………\p They're too relaxed to notice you.$"
 
 Route137_EventScript_Beauty_Text_0:
-# 141 "data/maps/NewMap2/scripts.pory"
+# 142 "data/maps/NewMap2/scripts.pory"
 	.string "Those guys next to me just keep saying\n “Yeeeaaaaheheeaaahhh…”\p Are they okay?$"
 
 Route137_EventScript_Sailor1_Text_0:
-# 154 "data/maps/NewMap2/scripts.pory"
+# 155 "data/maps/NewMap2/scripts.pory"
 	.string "Huh?\n … … … …\p How did we get this ship in here with\n all these rocks?\p … You ask too many questions.$"
 
 Route137_EventScript_Sailor2_Text_0:
-# 167 "data/maps/NewMap2/scripts.pory"
+# 168 "data/maps/NewMap2/scripts.pory"
 	.string "Hm…\p That cave wasn't there the\n last time I was here…$"
 
 Route137_EventScript_Sign_Text_0:
-# 174 "data/maps/NewMap2/scripts.pory"
+# 175 "data/maps/NewMap2/scripts.pory"
 	.string "CASTELIA QUEEN\p “Come taste UNOVA's world-famous\n dessert!”$"

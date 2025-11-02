@@ -13256,7 +13256,7 @@
               {
                 "min_level": 65,
                 "max_level": 70,
-                "species": "SPECIES_PROBOPASS"
+                "species": "SPECIES_NACLI"
               },
               {
                 "min_level": 65,
@@ -13271,17 +13271,17 @@
               {
                 "min_level": 65,
                 "max_level": 70,
-                "species": "SPECIES_CARBINK"
+                "species": "SPECIES_GLIMMET"
               },
               {
                 "min_level": 65,
                 "max_level": 75,
-                "species": "SPECIES_ARCHEOPS"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 65,
                 "max_level": 65,
-                "species": "SPECIES_TYRANTRUM"
+                "species": "SPECIES_GLIMMORA"
               },
               {
                 "min_level": 65,
@@ -13553,7 +13553,12 @@
               {
                 "min_level": 75,
                 "max_level": 78,
-                "species": "SPECIES_TANDEMAUS"
+                "species": "SPECIES_KABUTOPS_FOSSIL"
+              },
+              {
+                "min_level": 75,
+                "max_level": 78,
+                "species": "SPECIES_AERODACTYL_FOSSIL"
               },
               {
                 "min_level": 75,
@@ -13563,12 +13568,7 @@
               {
                 "min_level": 75,
                 "max_level": 78,
-                "species": "SPECIES_TANDEMAUS"
-              },
-              {
-                "min_level": 75,
-                "max_level": 78,
-                "species": "SPECIES_TANDEMAUS"
+                "species": "SPECIES_MISSINGNO"
               },
               {
                 "min_level": 75,
@@ -15263,7 +15263,7 @@
               {
                 "min_level": 85,
                 "max_level": 90,
-                "species": "SPECIES_GLIMMORA"
+                "species": "SPECIES_FRIGIBAX"
               },
               {
                 "min_level": 85,

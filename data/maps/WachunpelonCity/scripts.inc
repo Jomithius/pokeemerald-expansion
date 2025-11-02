@@ -207,354 +207,354 @@ WachunpelonCity_EventScript_Cook::
 	lock
 # 163 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_EventScript_Cook_Text_0, MSGBOX_AUTOCLOSE
-# 169 "data/maps/WachunpelonCity/scripts.pory"
-	waitmessage
-# 170 "data/maps/WachunpelonCity/scripts.pory"
-	playse SE_PIN
-# 171 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
-# 172 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
-# 173 "data/maps/WachunpelonCity/scripts.pory"
-	waitse
-# 174 "data/maps/WachunpelonCity/scripts.pory"
-	faceplayer
 # 175 "data/maps/WachunpelonCity/scripts.pory"
-	msgbox WachunpelonCity_EventScript_Cook_Text_1, MSGBOX_AUTOCLOSE
-# 178 "data/maps/WachunpelonCity/scripts.pory"
 	waitmessage
-# 179 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-# 180 "data/maps/WachunpelonCity/scripts.pory"
+# 176 "data/maps/WachunpelonCity/scripts.pory"
+	playse SE_PIN
+# 177 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
+# 178 "data/maps/WachunpelonCity/scripts.pory"
 	waitmovement 0
+# 179 "data/maps/WachunpelonCity/scripts.pory"
+	waitse
+# 180 "data/maps/WachunpelonCity/scripts.pory"
+	faceplayer
 # 181 "data/maps/WachunpelonCity/scripts.pory"
+	msgbox WachunpelonCity_EventScript_Cook_Text_1, MSGBOX_AUTOCLOSE
+# 184 "data/maps/WachunpelonCity/scripts.pory"
+	waitmessage
+# 185 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 186 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 0
+# 187 "data/maps/WachunpelonCity/scripts.pory"
 	release
 	end
 
 
 WachunpelonCity_EventScript_PolicemanTrigger::
-# 186 "data/maps/WachunpelonCity/scripts.pory"
-	lockall
-# 187 "data/maps/WachunpelonCity/scripts.pory"
-	playse SE_PIN
-# 188 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
-# 189 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 1
-# 190 "data/maps/WachunpelonCity/scripts.pory"
-	delay 16
-# 191 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceLeft
 # 192 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 1
+	lockall
 # 193 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+	playse SE_PIN
 # 194 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
+	applymovement 1, Common_Movement_ExclamationMark
 # 195 "data/maps/WachunpelonCity/scripts.pory"
-	goto_if_set FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123, WachunpelonCity_EventScript_PolicemanTrigger_2
+	waitmovement 1
+# 196 "data/maps/WachunpelonCity/scripts.pory"
+	delay 16
+# 197 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceLeft
+# 198 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 1
 # 199 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 200 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 0
+# 201 "data/maps/WachunpelonCity/scripts.pory"
+	goto_if_set FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123, WachunpelonCity_EventScript_PolicemanTrigger_2
+# 205 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_Policeman1, MSGBOX_YESNO
 WachunpelonCity_EventScript_PolicemanTrigger_1:
 WachunpelonCity_EventScript_PolicemanTrigger_6:
-# 201 "data/maps/WachunpelonCity/scripts.pory"
+# 207 "data/maps/WachunpelonCity/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq WachunpelonCity_EventScript_PolicemanTrigger_7
-# 204 "data/maps/WachunpelonCity/scripts.pory"
-	msgbox WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE
-# 205 "data/maps/WachunpelonCity/scripts.pory"
-	waitmessage
-# 206 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_WalkBack
-# 207 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
-# 208 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkLeft
-# 209 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
 # 210 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceUp
+	msgbox WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE
 # 211 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 1
+	waitmessage
 # 212 "data/maps/WachunpelonCity/scripts.pory"
-	opendoor 46, 14
+	applymovement OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_WalkBack
 # 213 "data/maps/WachunpelonCity/scripts.pory"
-	waitdooranim
-# 214 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkUp
-# 215 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 1
-# 216 "data/maps/WachunpelonCity/scripts.pory"
-	removeobject 1
-# 217 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
-# 218 "data/maps/WachunpelonCity/scripts.pory"
 	waitmovement 0
+# 214 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement 1, Common_Movement_WalkLeft
+# 215 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 0
+# 216 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceUp
+# 217 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 1
+# 218 "data/maps/WachunpelonCity/scripts.pory"
+	opendoor 46, 14
 # 219 "data/maps/WachunpelonCity/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY
-# 220 "data/maps/WachunpelonCity/scripts.pory"
-	closedoor 46, 14
-# 221 "data/maps/WachunpelonCity/scripts.pory"
 	waitdooranim
+# 220 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement 1, Common_Movement_WalkUp
+# 221 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 1
 # 222 "data/maps/WachunpelonCity/scripts.pory"
-	setflag FLAG_HIDE_POLICEMAN_WACHUNPELON
+	removeobject 1
 # 223 "data/maps/WachunpelonCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 9
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 # 224 "data/maps/WachunpelonCity/scripts.pory"
-	setflag FLAG_VISITED_WACHUNPELON
+	waitmovement 0
 # 225 "data/maps/WachunpelonCity/scripts.pory"
-	warp MAP_WACHUNPELON_CITY_SEWER, 26, 5
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY
 # 226 "data/maps/WachunpelonCity/scripts.pory"
-	waitstate
+	closedoor 46, 14
 # 227 "data/maps/WachunpelonCity/scripts.pory"
+	waitdooranim
+# 228 "data/maps/WachunpelonCity/scripts.pory"
+	setflag FLAG_HIDE_POLICEMAN_WACHUNPELON
+# 229 "data/maps/WachunpelonCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 9
+# 230 "data/maps/WachunpelonCity/scripts.pory"
+	setflag FLAG_VISITED_WACHUNPELON
+# 231 "data/maps/WachunpelonCity/scripts.pory"
+	warp MAP_WACHUNPELON_CITY_SEWER, 26, 5
+# 232 "data/maps/WachunpelonCity/scripts.pory"
+	waitstate
+# 233 "data/maps/WachunpelonCity/scripts.pory"
 	releaseall
 	end
 
 WachunpelonCity_EventScript_PolicemanTrigger_2:
-# 196 "data/maps/WachunpelonCity/scripts.pory"
+# 202 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO
 	goto WachunpelonCity_EventScript_PolicemanTrigger_1
 
 WachunpelonCity_EventScript_PolicemanTrigger_7:
-# 202 "data/maps/WachunpelonCity/scripts.pory"
+# 208 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_PolicemanNo, MSGBOX_YESNO
 	goto WachunpelonCity_EventScript_PolicemanTrigger_6
 
 
 WachunpelonCity_EventScript_Policeman::
-# 232 "data/maps/WachunpelonCity/scripts.pory"
+# 238 "data/maps/WachunpelonCity/scripts.pory"
 	lock
-# 233 "data/maps/WachunpelonCity/scripts.pory"
+# 239 "data/maps/WachunpelonCity/scripts.pory"
 	getobjectfacingdirection OBJ_EVENT_ID_PLAYER, VAR_TEMP_1
-# 234 "data/maps/WachunpelonCity/scripts.pory"
+# 240 "data/maps/WachunpelonCity/scripts.pory"
 	compare VAR_TEMP_1, DIR_NORTH
 	goto_if_eq WachunpelonCity_EventScript_Policeman_2
-# 238 "data/maps/WachunpelonCity/scripts.pory"
+# 244 "data/maps/WachunpelonCity/scripts.pory"
 	goto WachunpelonCity_EventScript_PolicemanWest
 WachunpelonCity_EventScript_Policeman_1:
 	end
 
 WachunpelonCity_EventScript_Policeman_2:
-# 235 "data/maps/WachunpelonCity/scripts.pory"
+# 241 "data/maps/WachunpelonCity/scripts.pory"
 	goto WachunpelonCity_EventScript_PolicemanNorth
 	goto WachunpelonCity_EventScript_Policeman_1
 
 
 WachunpelonCity_EventScript_PolicemanNorth::
-# 244 "data/maps/WachunpelonCity/scripts.pory"
+# 250 "data/maps/WachunpelonCity/scripts.pory"
 	lock
-# 245 "data/maps/WachunpelonCity/scripts.pory"
+# 251 "data/maps/WachunpelonCity/scripts.pory"
 	goto_if_set FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123, WachunpelonCity_EventScript_PolicemanNorth_2
-# 249 "data/maps/WachunpelonCity/scripts.pory"
+# 255 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_Policeman1, MSGBOX_YESNO
 WachunpelonCity_EventScript_PolicemanNorth_1:
 WachunpelonCity_EventScript_PolicemanNorth_6:
-# 251 "data/maps/WachunpelonCity/scripts.pory"
+# 257 "data/maps/WachunpelonCity/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq WachunpelonCity_EventScript_PolicemanNorth_7
-# 254 "data/maps/WachunpelonCity/scripts.pory"
-	msgbox WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE
-# 255 "data/maps/WachunpelonCity/scripts.pory"
-	waitmessage
-# 256 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkLeft
-# 257 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
-# 258 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceUp
-# 259 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
 # 260 "data/maps/WachunpelonCity/scripts.pory"
-	opendoor 46, 14
+	msgbox WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE
 # 261 "data/maps/WachunpelonCity/scripts.pory"
-	waitdooranim
+	waitmessage
 # 262 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkUp
+	applymovement 1, Common_Movement_WalkLeft
 # 263 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 1
+	waitmovement 0
 # 264 "data/maps/WachunpelonCity/scripts.pory"
-	removeobject 1
+	applymovement 1, Common_Movement_WalkInPlaceUp
 # 265 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+	waitmovement 0
 # 266 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
+	opendoor 46, 14
 # 267 "data/maps/WachunpelonCity/scripts.pory"
-	callnative RemoveFollowingPokemon
-# 268 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerNorth
-# 269 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
-# 270 "data/maps/WachunpelonCity/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY
-# 271 "data/maps/WachunpelonCity/scripts.pory"
-	closedoor 46, 14
-# 272 "data/maps/WachunpelonCity/scripts.pory"
 	waitdooranim
+# 268 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement 1, Common_Movement_WalkUp
+# 269 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 1
+# 270 "data/maps/WachunpelonCity/scripts.pory"
+	removeobject 1
+# 271 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+# 272 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 0
 # 273 "data/maps/WachunpelonCity/scripts.pory"
-	setflag FLAG_HIDE_POLICEMAN_WACHUNPELON
+	callnative RemoveFollowingPokemon
 # 274 "data/maps/WachunpelonCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 9
+	applymovement OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerNorth
 # 275 "data/maps/WachunpelonCity/scripts.pory"
-	setflag FLAG_VISITED_WACHUNPELON
+	waitmovement 0
 # 276 "data/maps/WachunpelonCity/scripts.pory"
-	warp MAP_WACHUNPELON_CITY_SEWER, 26, 5
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY
 # 277 "data/maps/WachunpelonCity/scripts.pory"
-	waitstate
+	closedoor 46, 14
 # 278 "data/maps/WachunpelonCity/scripts.pory"
+	waitdooranim
+# 279 "data/maps/WachunpelonCity/scripts.pory"
+	setflag FLAG_HIDE_POLICEMAN_WACHUNPELON
+# 280 "data/maps/WachunpelonCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 9
+# 281 "data/maps/WachunpelonCity/scripts.pory"
+	setflag FLAG_VISITED_WACHUNPELON
+# 282 "data/maps/WachunpelonCity/scripts.pory"
+	warp MAP_WACHUNPELON_CITY_SEWER, 26, 5
+# 283 "data/maps/WachunpelonCity/scripts.pory"
+	waitstate
+# 284 "data/maps/WachunpelonCity/scripts.pory"
 	release
 	end
 
 WachunpelonCity_EventScript_PolicemanNorth_2:
-# 246 "data/maps/WachunpelonCity/scripts.pory"
+# 252 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO
 	goto WachunpelonCity_EventScript_PolicemanNorth_1
 
 WachunpelonCity_EventScript_PolicemanNorth_7:
-# 252 "data/maps/WachunpelonCity/scripts.pory"
+# 258 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_PolicemanNo, MSGBOX_YESNO
 	goto WachunpelonCity_EventScript_PolicemanNorth_6
 
 
 WachunpelonCity_EventScript_PolicemanWest::
-# 283 "data/maps/WachunpelonCity/scripts.pory"
-	lock
-# 284 "data/maps/WachunpelonCity/scripts.pory"
-	delay 16
-# 285 "data/maps/WachunpelonCity/scripts.pory"
-	playse SE_PIN
-# 286 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
-# 287 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 1
-# 288 "data/maps/WachunpelonCity/scripts.pory"
-	delay 16
 # 289 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceRight
+	lock
 # 290 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 1
+	delay 16
 # 291 "data/maps/WachunpelonCity/scripts.pory"
-	goto_if_set FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123, WachunpelonCity_EventScript_PolicemanWest_2
+	playse SE_PIN
+# 292 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement 1, Common_Movement_ExclamationMark
+# 293 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 1
+# 294 "data/maps/WachunpelonCity/scripts.pory"
+	delay 16
 # 295 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceRight
+# 296 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 1
+# 297 "data/maps/WachunpelonCity/scripts.pory"
+	goto_if_set FLAG_SYS_DEFEATED_SPEEDWAGON_ROUTE_123, WachunpelonCity_EventScript_PolicemanWest_2
+# 301 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_Policeman1, MSGBOX_YESNO
 WachunpelonCity_EventScript_PolicemanWest_1:
 WachunpelonCity_EventScript_PolicemanWest_6:
-# 297 "data/maps/WachunpelonCity/scripts.pory"
+# 303 "data/maps/WachunpelonCity/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq WachunpelonCity_EventScript_PolicemanWest_7
-# 300 "data/maps/WachunpelonCity/scripts.pory"
-	msgbox WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE
-# 301 "data/maps/WachunpelonCity/scripts.pory"
-	waitmessage
-# 302 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkLeft
-# 303 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
-# 304 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceUp
-# 305 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
 # 306 "data/maps/WachunpelonCity/scripts.pory"
-	opendoor 46, 14
+	msgbox WachunpelonCity_Text_Policeman2, MSGBOX_AUTOCLOSE
 # 307 "data/maps/WachunpelonCity/scripts.pory"
-	waitdooranim
+	waitmessage
 # 308 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement 1, Common_Movement_WalkUp
+	applymovement 1, Common_Movement_WalkLeft
 # 309 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 1
+	waitmovement 0
 # 310 "data/maps/WachunpelonCity/scripts.pory"
-	removeobject 1
+	applymovement 1, Common_Movement_WalkInPlaceUp
 # 311 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+	waitmovement 0
 # 312 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
+	opendoor 46, 14
 # 313 "data/maps/WachunpelonCity/scripts.pory"
-	callnative RemoveFollowingPokemon
-# 314 "data/maps/WachunpelonCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerWest
-# 315 "data/maps/WachunpelonCity/scripts.pory"
-	waitmovement 0
-# 316 "data/maps/WachunpelonCity/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY
-# 317 "data/maps/WachunpelonCity/scripts.pory"
-	closedoor 46, 14
-# 318 "data/maps/WachunpelonCity/scripts.pory"
 	waitdooranim
+# 314 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement 1, Common_Movement_WalkUp
+# 315 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 1
+# 316 "data/maps/WachunpelonCity/scripts.pory"
+	removeobject 1
+# 317 "data/maps/WachunpelonCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_EnterPokeball
+# 318 "data/maps/WachunpelonCity/scripts.pory"
+	waitmovement 0
 # 319 "data/maps/WachunpelonCity/scripts.pory"
-	setflag FLAG_HIDE_POLICEMAN_WACHUNPELON
+	callnative RemoveFollowingPokemon
 # 320 "data/maps/WachunpelonCity/scripts.pory"
-	setvar VAR_SPEEDWAGON_STATE, 9
+	applymovement OBJ_EVENT_ID_PLAYER, WachunpelonCity_Movement_PlayerWest
 # 321 "data/maps/WachunpelonCity/scripts.pory"
-	setflag FLAG_VISITED_WACHUNPELON
+	waitmovement 0
 # 322 "data/maps/WachunpelonCity/scripts.pory"
-	warp MAP_WACHUNPELON_CITY_SEWER, 26, 5
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_WACHUNPELON_CITY
 # 323 "data/maps/WachunpelonCity/scripts.pory"
-	waitstate
+	closedoor 46, 14
 # 324 "data/maps/WachunpelonCity/scripts.pory"
+	waitdooranim
+# 325 "data/maps/WachunpelonCity/scripts.pory"
+	setflag FLAG_HIDE_POLICEMAN_WACHUNPELON
+# 326 "data/maps/WachunpelonCity/scripts.pory"
+	setvar VAR_SPEEDWAGON_STATE, 9
+# 327 "data/maps/WachunpelonCity/scripts.pory"
+	setflag FLAG_VISITED_WACHUNPELON
+# 328 "data/maps/WachunpelonCity/scripts.pory"
+	warp MAP_WACHUNPELON_CITY_SEWER, 26, 5
+# 329 "data/maps/WachunpelonCity/scripts.pory"
+	waitstate
+# 330 "data/maps/WachunpelonCity/scripts.pory"
 	release
 	end
 
 WachunpelonCity_EventScript_PolicemanWest_2:
-# 292 "data/maps/WachunpelonCity/scripts.pory"
+# 298 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_PolicemanBikersRoute123, MSGBOX_YESNO
 	goto WachunpelonCity_EventScript_PolicemanWest_1
 
 WachunpelonCity_EventScript_PolicemanWest_7:
-# 298 "data/maps/WachunpelonCity/scripts.pory"
+# 304 "data/maps/WachunpelonCity/scripts.pory"
 	msgbox WachunpelonCity_Text_PolicemanNo, MSGBOX_YESNO
 	goto WachunpelonCity_EventScript_PolicemanWest_6
 
 
-# 385 "data/maps/WachunpelonCity/scripts.pory"
+# 391 "data/maps/WachunpelonCity/scripts.pory"
 WachunpelonCity_Movement_WalkBack:
-# 386 "data/maps/WachunpelonCity/scripts.pory"
+# 392 "data/maps/WachunpelonCity/scripts.pory"
 	walk_down
-# 387 "data/maps/WachunpelonCity/scripts.pory"
+# 393 "data/maps/WachunpelonCity/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 390 "data/maps/WachunpelonCity/scripts.pory"
+# 396 "data/maps/WachunpelonCity/scripts.pory"
 WachunpelonCity_Movement_PlayerNorth:
-# 391 "data/maps/WachunpelonCity/scripts.pory"
-	walk_left
-# 392 "data/maps/WachunpelonCity/scripts.pory"
-	walk_up
-# 392 "data/maps/WachunpelonCity/scripts.pory"
-	walk_up
-	step_end
-
-# 395 "data/maps/WachunpelonCity/scripts.pory"
-WachunpelonCity_Movement_PlayerWest:
-# 396 "data/maps/WachunpelonCity/scripts.pory"
-	walk_left
-# 396 "data/maps/WachunpelonCity/scripts.pory"
-	walk_left
 # 397 "data/maps/WachunpelonCity/scripts.pory"
+	walk_left
+# 398 "data/maps/WachunpelonCity/scripts.pory"
+	walk_up
+# 398 "data/maps/WachunpelonCity/scripts.pory"
 	walk_up
 	step_end
 
-# 400 "data/maps/WachunpelonCity/scripts.pory"
+# 401 "data/maps/WachunpelonCity/scripts.pory"
+WachunpelonCity_Movement_PlayerWest:
+# 402 "data/maps/WachunpelonCity/scripts.pory"
+	walk_left
+# 402 "data/maps/WachunpelonCity/scripts.pory"
+	walk_left
+# 403 "data/maps/WachunpelonCity/scripts.pory"
+	walk_up
+	step_end
+
+# 406 "data/maps/WachunpelonCity/scripts.pory"
 WachunpelonCity_Movement_OldMan1:
-# 401 "data/maps/WachunpelonCity/scripts.pory"
+# 407 "data/maps/WachunpelonCity/scripts.pory"
 	walk_right
-# 401 "data/maps/WachunpelonCity/scripts.pory"
+# 407 "data/maps/WachunpelonCity/scripts.pory"
 	walk_right
-# 402 "data/maps/WachunpelonCity/scripts.pory"
+# 408 "data/maps/WachunpelonCity/scripts.pory"
 	walk_up
-# 402 "data/maps/WachunpelonCity/scripts.pory"
+# 408 "data/maps/WachunpelonCity/scripts.pory"
 	walk_up
 	step_end
 
-# 405 "data/maps/WachunpelonCity/scripts.pory"
+# 411 "data/maps/WachunpelonCity/scripts.pory"
 WachunpelonCity_Movement_OldMan2:
-# 406 "data/maps/WachunpelonCity/scripts.pory"
+# 412 "data/maps/WachunpelonCity/scripts.pory"
 	walk_down
-# 406 "data/maps/WachunpelonCity/scripts.pory"
+# 412 "data/maps/WachunpelonCity/scripts.pory"
 	walk_down
-# 407 "data/maps/WachunpelonCity/scripts.pory"
+# 413 "data/maps/WachunpelonCity/scripts.pory"
 	walk_left
-# 407 "data/maps/WachunpelonCity/scripts.pory"
+# 413 "data/maps/WachunpelonCity/scripts.pory"
 	walk_left
-# 408 "data/maps/WachunpelonCity/scripts.pory"
+# 414 "data/maps/WachunpelonCity/scripts.pory"
 	walk_in_place_right
 	step_end
 
@@ -640,28 +640,28 @@ WachunpelonCity_EventScript_Woman_2_Text_0:
 
 WachunpelonCity_EventScript_Cook_Text_0:
 # 163 "data/maps/WachunpelonCity/scripts.pory"
-	.string "Hm… So he decided to use those spices…!\n Gosh… It's so yummy…\l Tasty…\l Scrumptious…\l Delicious…\l Savory…$"
+	.string "Hm… So he decided to use those spices…!\n Gosh… It's so yummy…\l Tasty…\l Scrumptious…\l Succulent…\l Delicious…\l Savory…\l Flavorful…\l Palatable…\l Mouthwatering…\l Tantalazing…\l Toothsome…$"
 
 WachunpelonCity_EventScript_Cook_Text_1:
-# 175 "data/maps/WachunpelonCity/scripts.pory"
+# 181 "data/maps/WachunpelonCity/scripts.pory"
 	.string "Excuse me!\p It's rude to bother people when they're\n eating!$"
 
 WachunpelonCity_Text_Policeman1::
-# 328 "data/maps/WachunpelonCity/scripts.pory"
+# 334 "data/maps/WachunpelonCity/scripts.pory"
 	.string "POLICEMAN: It's you! Thanks again for\n your help on ROUTE 110.\p Most of the BIKERS have been arrested\n already.\p Only the boss along with a couple of\n members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
 
 WachunpelonCity_Text_PolicemanBikersRoute123::
-# 345 "data/maps/WachunpelonCity/scripts.pory"
+# 351 "data/maps/WachunpelonCity/scripts.pory"
 	.string "POLICEMAN: It's you! Thanks again for\n your help on ROUTE 110.\p I heard you drove those thugs away from\n ROUTE 123 as well.\p Most of them have been arrested\n already.\p Only the boss along with a couple of\n members are left now, and I've tracked\l them to their hideout here.\p Backup's actually coming this time, but\n I want to get the jump on them before\l they have a chance to escape…\p So, what do you say?\p Having a strong TRAINER like you to\n cover me would be reassuring.\p Can you help me out?$"
 
 WachunpelonCity_Text_PolicemanNo::
-# 364 "data/maps/WachunpelonCity/scripts.pory"
+# 370 "data/maps/WachunpelonCity/scripts.pory"
 	.string "Come on. You've already helped me\n on this case before.\p This will be the last time.$"
 
 WachunpelonCity_Text_Policeman2::
-# 370 "data/maps/WachunpelonCity/scripts.pory"
+# 376 "data/maps/WachunpelonCity/scripts.pory"
 	.string "Great! This time I have clearance to use\n force as necessary.\p It won't be a repeat of last time.\n I'll lead.$"
 
 WachunpelonCity_Text_Mae::
-# 377 "data/maps/WachunpelonCity/scripts.pory"
+# 383 "data/maps/WachunpelonCity/scripts.pory"
 	.string "MAE: Huh?\n It's you again!\p You're seriously even trying to stop\n my vacation?!\p I'm a diva and I deserve this!$"
