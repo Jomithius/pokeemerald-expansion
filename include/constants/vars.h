@@ -136,7 +136,7 @@
 #define VAR_ROUTE121_STATE                               0x4074
 #define VAR_ROUTE122_STATE                               0x4075 // Unused Var
 #define VAR_ROUTE123_STATE                               0x4076 // Unused Var
-#define VAR_ROUTE124_STATE                               0x4077 // Unused Var
+#define VAR_JIMMY_MEETING_CALL_STATE                     0x4077 // For jimmy's call to meet him in lilycove after becoming champion
 #define VAR_SLATEPORT_GYM_STATE                          0x4078 // Force player to do gym before moving on
 #define VAR_TUTORIAL_COUNTER                             0x4079 // Counts how many times you talked to tutorial girl in trainer school. 11 gives reward
 #define VAR_WIPE_COUNTER                                 0x407A // Counts how many wipes the player has

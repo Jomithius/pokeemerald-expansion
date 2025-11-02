@@ -111,6 +111,7 @@ LittlerootTown_OnFrame:
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 1, LittlerootTown_EventScript_StepOffTruckMale
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_StepOffTruckFemale
 	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_BeginDexUpgradeScene
+	map_script_2 VAR_JIMMY_MEETING_CALL_STATE, 1, LittlerootTown_EventScript_CallFromCeo
 	.2byte 0
 
 LittlerootTown_EventScript_StepOffTruckMale::
@@ -908,6 +909,19 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	delay 30
 	return
 
+LittlerootTown_EventScript_CallFromCeo::
+	lockall
+	pokenavcall LittlerootTown_Text_CeoComeMeetMeInLilycove
+	waitmessage
+	setvar VAR_CEO_STATE, 1
+	setflag FLAG_SYS_BEFORE_ELITE_4_REMATCH
+	setflag FLAG_HIDE_GYM_LEADERS
+	clearflag FLAG_HIDE_MISA_POST_GAME_RUSTBORO
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	setvar VAR_JIMMY_MEETING_CALL_STATE, 2
+	releaseall
+	end
+
 LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "MOM: {PLAYER}, we're here, honey!\p"
 	.string "It must be tiring riding with our things\n"
@@ -1018,3 +1032,19 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_Text_CeoComeMeetMeInLilycove:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "JIMMY: Hello? {PLAYER}?\n"
+	.string "It's JIMMY.\p"
+	.string "I hope you got some good rest\n"
+	.string "after your journey.\p"
+	.string "There's something we need to talk\n"
+	.string "about.\p"
+	.string "Come meet me at my office in\n"
+	.string "LILYCOVE.\l"
+	.string "It's east of the DEPT. STORE.\p"
+	.string "We'll talk more once you get here.\n"
+	.string "I'll be waiting!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"

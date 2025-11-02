@@ -880,59 +880,25 @@ PlayersHouse_1F_Text_StillUnknownPokemon:
 	.string "MOM: Well, isn't that something!\n"
 # 441 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	.string "There are still unknown POKéMON.$"
-# 442 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-
-# 443 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-PlayersHouse_1F_Text_CeoComeMeetMeInLilycove:
-# 444 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "… … … … … …\n"
-# 445 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "… … … … … Beep!\p"
-# 446 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "Hello? {PLAYER}?\n"
-# 447 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "It's JIMMY.\p"
-# 448 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "JIMMY: I hope you were able to get\n"
-# 449 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "rest after your journey.\p"
-# 450 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "There's something we need to talk\n"
-# 451 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "about.\p"
-# 452 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "Come meet me at my office in\n"
-# 453 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "LILYCOVE.\l"
-# 454 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "It's east of the DEPT. STORE.\p"
-# 455 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "We'll talk more once you get here.\n"
-# 456 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "I'll be waiting!\p"
-# 457 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "… … … … … …\n"
-# 458 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "… … … … … Click!$"
 
 PlayersHouse_1F_EventScript_GameClearMessage::
-# 462 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+# 445 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	lockall
-# 463 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+# 446 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	playfanfare MUS_OBTAIN_B_POINTS
-# 464 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+# 447 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	waitfanfare
-# 465 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+# 448 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	msgbox PlayersHouse_1F_EventScript_GameClearMessage_Text_0, MSGBOX_AUTOCLOSE
-# 469 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+# 452 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	waitmessage
-# 470 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+# 453 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	setvar VAR_FINAL_REMATCH_STATE, 9
-# 471 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+# 454 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	releaseall
 	end
 
 
 PlayersHouse_1F_EventScript_GameClearMessage_Text_0:
-# 465 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+# 448 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Thank you for playing AZURE EMERALD!\p For stats on your playthrough and\n checks if you missed anything, JIMMY\l is in SNOWDRIFT CITY.$"

@@ -161,7 +161,12 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	call PlayersHouse_1F_EventScript_CallFromCeo
+	setvar VAR_CEO_STATE, 1
+	setflag FLAG_SYS_BEFORE_ELITE_4_REMATCH
+	setflag FLAG_HIDE_GYM_LEADERS
+	clearflag FLAG_HIDE_MISA_POST_GAME_RUSTBORO
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	setvar VAR_JIMMY_MEETING_CALL_STATE, 2
 	setvar VAR_MOMO_ARIA_STATE, 1
 	setvar VAR_RAT_CAVE_STATE, 8
 	warp MAP_THE_UNDER, 9, 43
