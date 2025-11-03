@@ -156,8 +156,8 @@ script BennisDojo_EventScript_AsakReturn{
     applymovement(7, Common_Movement_WalkInPlaceDown)
     applymovement(11, Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    msgbox("MASTER BENNIS: Oho. You beat\n
-        BRUNO? That's impressive.\p
+    msgbox("MASTER BENNIS: Oho. You beat BRUNO?\n
+        That's impressive.\p
         ASAK: Well, it feels good to be back.\n
         Any longer there and the old hag\l
         would've made me help look for a\l
@@ -174,7 +174,7 @@ script BennisDojo_EventScript_AsakReturn{
     waitmovement(11)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("Hm.\n
+    msgbox("MASTER BENNIS: Hm.\n
         Well, it was a good battle.\l
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -211,8 +211,8 @@ script BennisDojo_EventScript_AsakReturnEast{
     delay(8)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
-    msgbox("MASTER BENNIS: Oho. You beat\n
-        BRUNO? That's impressive.", MSGBOX_AUTOCLOSE)
+    msgbox("MASTER BENNIS: Oho. You beat BRUNO?\n
+        That's impressive.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(7, Common_Movement_WalkInPlaceDown)
     delay(8)
@@ -234,7 +234,7 @@ script BennisDojo_EventScript_AsakReturnEast{
     delay(8)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
-    msgbox("Hm.\n
+    msgbox("MASTER BENNIS: Hm.\n
         Well, it was a good battle.\l
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -275,7 +275,7 @@ script BennisDojo_EventScript_AsakReturnNorth{
         {PLAYER} had a wonderful victory.\p
         ASAK: I see… As expected.\n
         They also beat my brother.\p
-        MASTER BENNIS: Oho. BRUNO?\n
+        MASTER BENNIS: Oho. You beat BRUNO?\n
         That's impressive.\p
         ASAK: Well, it feels good to be back.\n
         Any longer there and the old hag\l
@@ -298,7 +298,7 @@ script BennisDojo_EventScript_AsakReturnNorth{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
-    msgbox("Hm.\n
+    msgbox("MASTER BENNIS: Hm.\n
         Well, it was a good battle.\l
         You're welcome to train here anytime.", MSGBOX_AUTOCLOSE)
     waitmessage

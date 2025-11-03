@@ -433,11 +433,15 @@ script BaldesianForestDojo_EventScript_Asak{
     lock
     faceplayer
     if(var(VAR_BALDESIA_FOREST_DOJO_STATE) <= 3){
-        msgbox("It's been a while since I've come home.\n
-            I guess brother's still a strong as ever.", MSGBOX_AUTOCLOSE)
+        msgbox("ASAK: It's been a while since I've\n
+            been home.\p
+            I guess Brother's still just as strong\n
+            as ever…\p
+            I don't know if anybody will ever\n
+            beat him.", MSGBOX_AUTOCLOSE)
     }
     else{
-        msgbox("Wow… you really beat brother…\p
+        msgbox("ASAK: Wow… you really beat Brother…\p
         No wonder MASTER BENNIS and LADY\n
         MOMO recognize your strength.", MSGBOX_AUTOCLOSE)
     }
@@ -497,7 +501,7 @@ script BaldesianForestDojo_EventScript_AsakTrigger{
             applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturns)
         }
         delay(8)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
         waitmovement(LOCALID_ASAK)
     }
     else{
@@ -519,7 +523,7 @@ script BaldesianForestDojo_EventScript_AsakTrigger{
             applymovement(LOCALID_ASAK, BaldesianForestDojo_Movement_AsakReturns)
         }
         delay(8)
-        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
         waitmovement(LOCALID_ASAK)
     }
     setvar(VAR_BALDESIA_FOREST_DOJO_STATE, 1)
@@ -654,8 +658,8 @@ script BaldesianForestDojo_EventScript_DojoChallenge{
     fadedefaultbgm
     applymovement(LOCALID_BRUNO, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("{PLAYER}, was it? After you receive\n
-        your prize, come talk to me.", MSGBOX_AUTOCLOSE)
+    msgbox("BRUNO: {PLAYER}, was it? After you\n
+        receive your prize, come talk to me.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_BRUNO, Common_Movement_WalkUp4)
     waitmovement(0)
@@ -718,8 +722,8 @@ script BaldesianForestDojo_EventScript_ChallengeBruno{
     fadedefaultbgm
     applymovement(LOCALID_BRUNO, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("{PLAYER}, was it? After you receive\n
-        your prize, come talk to me.", MSGBOX_AUTOCLOSE)
+    msgbox("BRUNO: {PLAYER}, was it? After you\n
+        receive your prize, come talk to me.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_BRUNO, Common_Movement_WalkUp4)
     waitmovement(0)

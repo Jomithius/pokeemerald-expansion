@@ -1105,11 +1105,11 @@ BennisDojo_EventScript_AsakReturn_Text_2:
 
 BennisDojo_EventScript_AsakReturn_Text_3:
 # 159 "data/maps/BennisDojo/scripts.pory"
-	.string "MASTER BENNIS: Oho. You beat\n BRUNO? That's impressive.\p ASAK: Well, it feels good to be back.\n Any longer there and the old hag\l would've made me help look for a\l successor.\p But who knows? Maybe {PLAYER} can take\n on the role once they're done with\l their travels.\p Well, time to get back to business\n as usual!$"
+	.string "MASTER BENNIS: Oho. You beat BRUNO?\n That's impressive.\p ASAK: Well, it feels good to be back.\n Any longer there and the old hag\l would've made me help look for a\l successor.\p But who knows? Maybe {PLAYER} can take\n on the role once they're done with\l their travels.\p Well, time to get back to business\n as usual!$"
 
 BennisDojo_EventScript_AsakReturn_Text_4:
 # 177 "data/maps/BennisDojo/scripts.pory"
-	.string "Hm.\n Well, it was a good battle.\l You're welcome to train here anytime.$"
+	.string "MASTER BENNIS: Hm.\n Well, it was a good battle.\l You're welcome to train here anytime.$"
 
 BennisDojo_EventScript_AsakReturnEast_Text_0:
 # 204 "data/maps/BennisDojo/scripts.pory"
@@ -1117,7 +1117,7 @@ BennisDojo_EventScript_AsakReturnEast_Text_0:
 
 BennisDojo_EventScript_AsakReturnEast_Text_1:
 # 214 "data/maps/BennisDojo/scripts.pory"
-	.string "MASTER BENNIS: Oho. You beat\n BRUNO? That's impressive.$"
+	.string "MASTER BENNIS: Oho. You beat BRUNO?\n That's impressive.$"
 
 BennisDojo_EventScript_AsakReturnEast_Text_2:
 # 221 "data/maps/BennisDojo/scripts.pory"
@@ -1129,7 +1129,7 @@ BennisDojo_EventScript_AsakReturnNorth_Text_0:
 
 BennisDojo_EventScript_AsakReturnNorth_Text_1:
 # 274 "data/maps/BennisDojo/scripts.pory"
-	.string "MASTER BENNIS: Hm. We battled.\n {PLAYER} had a wonderful victory.\p ASAK: I see… As expected.\n They also beat my brother.\p MASTER BENNIS: Oho. BRUNO?\n That's impressive.\p ASAK: Well, it feels good to be back.\n Any longer there and the old hag\l would've made me help look for a\l successor.\p But who knows? Maybe {PLAYER} can take\n on the role once they're done with\l their travels.\p Well, time to get back to business\n as usual!$"
+	.string "MASTER BENNIS: Hm. We battled.\n {PLAYER} had a wonderful victory.\p ASAK: I see… As expected.\n They also beat my brother.\p MASTER BENNIS: Oho. You beat BRUNO?\n That's impressive.\p ASAK: Well, it feels good to be back.\n Any longer there and the old hag\l would've made me help look for a\l successor.\p But who knows? Maybe {PLAYER} can take\n on the role once they're done with\l their travels.\p Well, time to get back to business\n as usual!$"
 
 BennisDojo_EventScript_NoCheating_Text_0:
 # 313 "data/maps/BennisDojo/scripts.pory"

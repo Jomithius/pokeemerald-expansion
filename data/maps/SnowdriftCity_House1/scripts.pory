@@ -21,9 +21,10 @@ script SnowdriftCity_House1_EventScript_BlackBelt{
     lock
     faceplayer
     goto_if_not_defeated(TRAINER_LAROLD, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle)
-    msgbox("Sorry for doubting you!\n
-        I never thought BRUNO would lose.\p
-        You're the real deal!" MSGBOX_AUTOCLOSE)
+    msgbox("My sister is actually training\n
+        at BRUNO's dojo now.\p
+        I wonder how she's doing.\n
+        I should go visit soon." MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end
@@ -93,6 +94,8 @@ script SnowdriftCity_House1_EventScript_BlackBeltBattle{
         applymovement(1, Common_Movement_FacePlayer)
         waitmovement(1)
     }
+    applymovement(4, Common_Movement_WalkInPlaceRight)
+    waitmovement(4)
     msgbox("Sorry for doubting you!\n
         I never thought BRUNO would lose.\p
         You're the real deal!", MSGBOX_AUTOCLOSE)

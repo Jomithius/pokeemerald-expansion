@@ -21,8 +21,8 @@ script AltarOfBaldesia_OnResume{
 
 script AltarOfBaldesia_OnTransition{
     setflag(FLAG_TEMP_E)
-    setflag(FLAG_HIDE_BENNIS_JIRACHIS_ALTAR)
-    setflag(FLAG_HIDE_LOHAN_JIRACHIS_ALTAR)
+    clearflag(FLAG_SYS_DYNAMIC_LEVELS)
+    call_if_unset(FLAG_COMPLETED_BALDESIA, AltarOfBaldesia_ResetAltarEventFlags) // for if player wipes on pecharunt
     end
 }
 
@@ -42,6 +42,15 @@ script AltarOfBaldesia_TryRemoveJirachi{
         goto(Common_EventScript_NopReturn)
     }
     end
+}
+
+script AltarOfBaldesia_ResetAltarEventFlags{
+    setflag(FLAG_HIDE_BENNIS_JIRACHIS_ALTAR)
+    setflag(FLAG_HIDE_LOHAN_JIRACHIS_ALTAR)
+    clearflag(FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR)
+    clearflag(FLAG_HIDE_OKIDOGI_JIRACHIS_ALTAR)
+    clearflag(FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR)
+    return
 }
 
 script AltarOfBaldesia_EventScript_StoneTablet{
@@ -220,9 +229,6 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     removeobject(LOCALID_LOHAN)
     removeobject(LOCALID_WIFE)
     waitse
-    if(!flag(FLAG_SYS_HARD_MODE)){
-        special(HealPlayerParty)
-    }
     fadescreenswapbuffers(FADE_FROM_BLACK)
     msgbox("MOMO: … They ran.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -504,6 +510,7 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
     setvar(VAR_MOMO_ARIA_STATE, 7)
     setvar(VAR_BALDESIA_FOREST_STATE, 1)
     setflag(FLAG_REMOVE_WARP_FADE)
+    setflag(FLAG_COMPLETED_BALDESIA) // for making sure flags are set properly if wipe on lohan or pecharunt
     playse(SE_FLEE)
     fadescreen(FADE_TO_BLACK)
     waitse
@@ -531,7 +538,7 @@ script AltarOfBaldesia_EventScript_ShouldntTryAgain{
         “If you ever feel safe, please\n
         remember that I'm out there.”\p
         Probably shouldn't try to wake\n
-        JIRACHI again…", MSGBOX_AUTOCLOSE)
+        JIRACHI up again…", MSGBOX_AUTOCLOSE)
     waitmessage
     release
     end

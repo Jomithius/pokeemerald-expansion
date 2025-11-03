@@ -1868,7 +1868,7 @@ s32 CalcCritChanceStage(u32 battlerAtk, u32 battlerDef, u32 move, bool32 recordA
                     + 1 * ((gBattleMons[battlerAtk].status2 & STATUS2_DRAGON_CHEER) != 0)
                     + GetMoveCriticalHitStage(move)
                     + GetHoldEffectCritChanceIncrease(battlerAtk, holdEffectAtk)
-                    + 2 * (B_AFFECTION_MECHANICS == TRUE && GetBattlerAffectionHearts(battlerAtk) == AFFECTION_FIVE_HEARTS && !FlagGet(FLAG_SYS_HARD_MODE))
+                    + 1 * (B_AFFECTION_MECHANICS == TRUE && GetBattlerAffectionHearts(battlerAtk) == AFFECTION_FIVE_HEARTS && !FlagGet(FLAG_SYS_HARD_MODE))
                     + (abilityAtk == ABILITY_SUPER_LUCK)
                     + gBattleStruct->bonusCritStages[gBattlerAttacker];
 

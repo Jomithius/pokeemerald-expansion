@@ -470,7 +470,7 @@ SnowdriftCity_House3_EventScript_Cynthia_Text_0:
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_0:
 # 178 "data/maps/SnowdriftCity_House3/scripts.pory"
-	.string "{PLAYER}!\n Thanks for coming.\p You probably didn't expect me to\n know CYNTHIA, huh!\p Were you jump scared the first time\n you walked into this house?\p Well, there shouldn't be anything left\n for you to do, but I can give you some\l stats about your playthrough.\p Let's see…$"
+	.string "{PLAYER}!\n Thanks for coming.\p You probably didn't expect me to\n know CYNTHIA, huh!\p Were you jump scared the first time\n you walked into this house?\p Well… There shouldn't be anything left\n for you to do, but I can give you some\l stats about your playthrough.\p Let's see…$"
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_1:
 # 191 "data/maps/SnowdriftCity_House3/scripts.pory"

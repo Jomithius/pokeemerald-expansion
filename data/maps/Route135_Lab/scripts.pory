@@ -52,16 +52,14 @@ script Route135_Lab_EventScript_James{
     if(var(VAR_ULTRA_SPACE_STATE) >= 7 && flag(FLAG_SYS_FINAL_REMATCH) && !flag(FLAG_SYS_DEFEATED_JAMES)){
         goto(Route_135_EventScript_JamesBattle)
     }
-    if(flag(FLAG_SYS_DEFEATED_JAMES)){
-        goto(Route_135_EventScript_JamesGoFinishTheGame)
-    }
+    goto_if_set(FLAG_SYS_DEFEATED_JAMES, Route_135_EventScript_JamesGoFinishTheGame)
     faceplayer
     if(var(VAR_ULTRA_SPACE_STATE) == 5){
-        msgbox("What's up, {PLAYER}.\n
+        msgbox("What's up, {PLAYER}?\n
             The PROF. is waiting for you.", MSGBOX_AUTOCLOSE)
         waitmessage
     }
-    elif(var(VAR_ULTRA_SPACE_STATE) == 6){
+    elif(var(VAR_ULTRA_SPACE_STATE) == 7){
         msgbox("How did the expedition go?\n
             I wanna survey that place too.\p
             It's crazy to think there's whole\n
@@ -101,11 +99,11 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             …\p
             You're the type of person who needs\n
             to see EVERYTHING in a game. I see…\p
-            Well, there's nothing really left for\n
+            Well… There's nothing really left for\n
             you here, unless you want to go back\l
             to ULTRA SPACE or AREA ZERO for some\l
             reason.\p
-            But you know, I felt like that last\n
+            But you know… I felt like that last\n
             battle was a good end to my story, and\l
             you just made it weird by coming back\l
             here to talk to me again.\p
@@ -128,11 +126,11 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             …\p
             You're the type of person who needs\n
             to see EVERYTHING in a game. I see…\p
-            Well, there's nothing really left for\n
+            Well… There's nothing really left for\n
             you here, unless you want to go back\l
             to ULTRA SPACE or AREA ZERO for some\l
             reason.\p
-            But you know, I felt like that last\n
+            But you know… I felt like that last\n
             battle was a good end to my story, and\l
             you just made it weird by coming back\l
             here to talk to me again.\p
@@ -160,11 +158,11 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             …\p
             You're the type of person who needs\n
             to see EVERYTHING in a game. I see…\p
-            Well, there's nothing really left for\n
+            Well… There's nothing really left for\n
             you here, unless you want to go back\l
             to ULTRA SPACE or AREA ZERO for some\l
             reason.\p
-            But you know, I felt like that last\n
+            But you know… I felt like that last\n
             battle was a good end to my story, and\l
             you just made it weird by coming back\l
             here to talk to me again.\p
@@ -180,7 +178,7 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             I'll make it so you have a chance\l
             to battle them.\p
             Good luck, {PLAYER}.\n
-            Go finish the game.", MSGBOX_AUTOCLOSE)
+            Go finish the game.", MSGBOX_DEFAULT)
         waitmessage
         playfanfare(MUS_OBTAIN_B_POINTS)
         message("{COLOR BLUE}{SHADOW LIGHT_BLUE}You're now able to challenge\n
@@ -198,11 +196,11 @@ script Route_135_EventScript_JamesGoFinishTheGame{
             …\p
             You're the type of person who needs\n
             to see EVERYTHING in a game. I see…\p
-            Well, there's nothing really left for\n
+            Well… There's nothing really left for\n
             you here, unless you want to go back\l
             to ULTRA SPACE or AREA ZERO for some\l
             reason.\p
-            But you know, I felt like that last\n
+            But you know… I felt like that last\n
             battle was a good end to my story, and\l
             you just made it weird by coming back\l
             here to talk to me again.\p
@@ -653,7 +651,8 @@ movement Route135_Lab_Movement_PlayerGoBackToPC{
 }
 
 text Route135_Lab_Text_Maniac1{
-    "Hm? Are you the new intern?"
+    "PROF: Hm?\n
+    Are you the new intern?"
 }
 
 text Route135_Lab_Text_Maniac2{
@@ -748,8 +747,8 @@ movement Route_135_Lab_PlayerLookAround{
 }
 
 text Route135_Lab_Text_Maniac6{
-    "This machine I've built should be\n
-    capable of creating the rift…\l
+    "PROF.: This machine I've built should\n
+    be capable of creating the rift…\l
     Let us begin."
 }
 
@@ -901,7 +900,7 @@ text Route_135_Lab_Text_ImBusyTalkToCosmog{
 text Route_135_Lab_PokenavText_JamesComeBackToTheLab{
     "… … … … … …\n
     … … … … … Beep!\p
-    {PLAYER}?\n
+    JAMES: {PLAYER}?\n
     It's JAMES.\p
     The PROF. says there's a new\n
     breakthrough in his research.\p

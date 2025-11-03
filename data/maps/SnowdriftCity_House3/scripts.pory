@@ -181,7 +181,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         know CYNTHIA, huh!\p
         Were you jump scared the first time\n
         you walked into this house?\p
-        Well, there shouldn't be anything left\n
+        Well… There shouldn't be anything left\n
         for you to do, but I can give you some\l
         stats about your playthrough.\p
         Let's see…", MSGBOX_DEFAULT)

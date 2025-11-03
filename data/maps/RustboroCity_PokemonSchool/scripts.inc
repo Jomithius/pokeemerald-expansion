@@ -1267,6 +1267,12 @@ RustboroCity_PokemonSchool_EventScript_Girl1::
 	end
 
 
+RustboroCity_PokemonSchool_EventScript_Girl2::
+# 928 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	msgbox RustboroCity_PokemonSchool_EventScript_Girl2_Text_0, MSGBOX_SIGN
+	end
+
+
 RustboroCity_PokemonSchool_EventScript_TutorialGirl_Text_0:
 # 358 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "Oh! Are you a new TRAINER?\n That's great!\p I'm pretty smart when it comes\n to POKéMON.\p If you want, I can answer any questions\n you might have about battling.$"
@@ -1398,3 +1404,7 @@ RustboroCity_PokemonSchool_EventScript_Boy1_Text_0:
 RustboroCity_PokemonSchool_EventScript_Girl1_Text_0:
 # 918 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "Hey, did you know?\p You can change what POKé BALL your\n POKéMON is in!\p Just use any POKé BALL from the bag\n outside of battle.\p Isn't that cool?$"
+
+RustboroCity_PokemonSchool_EventScript_Girl2_Text_0:
+# 928 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	.string "“A POKéMON that loves its TRAINER will\n perform better in battle.\p “These POKéMON can break through\n status ailments, avoid fainting\p “through sheer will, dodge attacks,\n and can even do more critical hits.”\p Wow. I never knew that…\n All right!\p I'll make sure to give my POKéMON\n extra love and care!$"

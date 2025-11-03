@@ -923,3 +923,17 @@ script RustboroCity_PokemonSchool_EventScript_Girl1{
     Isn't that cool?", MSGBOX_NPC)
     end
 }
+
+script RustboroCity_PokemonSchool_EventScript_Girl2{
+    msgbox("“A POKéMON that loves its TRAINER will\n
+        perform better in battle.\p
+        “These POKéMON can break through\n
+        status ailments, avoid fainting\p
+        “through sheer will, dodge attacks,\n
+        and can even do more critical hits.”\p
+        Wow. I never knew that…\n
+        All right!\p
+        I'll make sure to give my POKéMON\n
+        extra love and care!", MSGBOX_SIGN)
+    end
+}

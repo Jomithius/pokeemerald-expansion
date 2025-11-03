@@ -449,7 +449,6 @@ script Baldesia_MainHouse_EventScript_LohanThanks{
     addvar(VAR_FINAL_REMATCH_STATE, 1)
     setflag(FLAG_SYS_BENNIS_FINAL_REMATCH)
     setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
-    setflag(FLAG_COMPLETED_BALDESIA) // for final level cap, functionally unused
     releaseall
     end
 }
@@ -702,7 +701,7 @@ text Baldesia_MainHouse_TextLohan4{
 text Baldesia_MainHouse_Text_LohanThankYou{
     "LOHAN: You've returned.\n
     I… don't know what to say…\l
-    But, I'm sorry. And thank you.\p
+    But… I'm sorry. And thank you.\p
     The mythical POKéMON, PECHARUNT…\p
     There are stories of it passed down,\n
     but I didn't believe it to be real.\p

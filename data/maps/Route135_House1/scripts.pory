@@ -28,3 +28,19 @@ script Route135_House1_EventScript_OldWoman{
     end
 }
 
+script Route135_House1_EventScript_Woman{
+    lock
+    faceplayer
+    msgbox("Aw, you look mighty tired.\p
+        How 'bout you and your POKéMON\n
+        rest up for a bit?\p
+        We were just fixin' to make dinner.", MSGBOX_AUTOCLOSE)
+    waitmessage
+    call(Common_EventScript_OutOfCenterPartyHeal)
+    msgbox("You're welcome to stop by\n
+        by anytime, love!", MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    end
+}

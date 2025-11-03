@@ -1596,7 +1596,7 @@ Route115_EventScript_JamesBattle_Text_5:
 
 Route115_EventScript_JamesBattle_Text_6:
 # 606 "data/maps/Route115/scripts.pory"
-	.string "That was fun!\n I'm glad you asked me to battle again.\p It's not every day the CHAMPION\n asks you for a battle!\p All right! That was a good break\n from all the research, but I should\l get back to the lab now.\p See ya, {PLAYER}.$"
+	.string "JAMES: That was fun!\n I'm glad you asked me to battle again.\p It's not every day the CHAMPION\n asks you for a battle!\p All right! That was a good break\n from all the research, but I should\l get back to the lab now.\p See ya, {PLAYER}.$"
 
 Route115_EventScript_JamesBattle_Text_7:
 # 619 "data/maps/Route115/scripts.pory"

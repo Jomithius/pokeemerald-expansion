@@ -1664,7 +1664,7 @@ DewfordTown_EventScript_ReturnToPetalburgPrompt2_Text_0:
 
 DewfordTown_EventScript_GymSignUpdated_Text_0:
 # 834 "data/maps/DewfordTown/scripts.pory"
-	.string "MASTER BENNIS's DOJO\n Challengers welcome!$"
+	.string "MASTER BENNIS's DOJO\n “Challengers welcome!”$"
 
 DewfordTown_Text_BennisDojoHint::
 # 839 "data/maps/DewfordTown/scripts.pory"

@@ -1556,7 +1556,7 @@
 #define FLAG_RECEIVED_TEACUP                        (SYSTEM_FLAGS + 0xB4) // Baldesia Forest Sinistcha minigame
 #define FLAG_TALKED_TO_PAIN_SPLIT_TUTOR             (SYSTEM_FLAGS + 0xB5) // to shorten text
 #define FLAG_SYS_BOSS_BATTLE                        (SYSTEM_FLAGS + 0xB6) // for post game boss battles, used to stop heavy variance of levels
-#define FLAG_COMPLETED_BALDESIA                     (SYSTEM_FLAGS + 0xB7) // for last level cap, functionally unused
+#define FLAG_COMPLETED_BALDESIA                     (SYSTEM_FLAGS + 0xB7) //
 #define FLAG_SYS_DECLINED_AREA_ZERO                 (SYSTEM_FLAGS + 0xB8) // 
 #define FLAG_RECEIVED_CASTELIACONE                  (SYSTEM_FLAGS + 0xB9) // From Misa Castelia Queen Route 137
 #define FLAG_RECEIVED_PROTECTIVE_PADS               (SYSTEM_FLAGS + 0xBA) // Dojo Challenge

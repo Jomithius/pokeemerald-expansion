@@ -319,7 +319,7 @@ Void_Movement_WalkToPlayer:
 
 Void_EventScript_FinalBattle_Text_0:
 # 32 "data/maps/Void/scripts.pory"
-	.string "JIMMY: {PLAYER}!\n I'm glad you made it here.\p DAVE's a good actor, isn't he?\n You'd never expect him to get toxic!\p Anyways, I'm sure you already know,\n but welcome to the void.\p This place has existed forever, but\n most people don't know about it.$"
+	.string "JIMMY: {PLAYER}!\n I'm glad you made it here.\p DAVE's a good actor, isn't he?\n He'd never actually get toxic like that!\p Anyways… I'm sure you already know,\n but welcome to the void.\p This place has existed forever, but\n most people don't know about it.$"
 
 Void_EventScript_FinalBattle_Text_1:
 # 45 "data/maps/Void/scripts.pory"

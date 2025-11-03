@@ -18934,7 +18934,8 @@ static const struct LevelUpMove sAppletunLevelUpLearnset[] = {
 
 #if P_GEN_9_CROSS_EVOS
 static const struct LevelUpMove sDipplinLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_DOUBLE_HIT),
+    LEVEL_UP_MOVE( 0, MOVE_DRAGON_CHEER),
+    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_HIT),
     LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),

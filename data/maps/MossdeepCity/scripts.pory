@@ -648,7 +648,7 @@ script MossdeepCity_EventScript_GiveTotodilePostBattle{
 		Here.\n
 		This TOTODILE is special.\p
 		It has the KNIGHT's will required\n
-		to wield the SACRED BLADE.", MSGBOX_AUTOCLOSE)
+		to wield the SACRED BLADE.", MSGBOX_DEFAULT)
 	waitmessage
 	givemon(SPECIES_TOTODILE_PARTNER, 100, ITEM_NONE, ITEM_POKE_BALL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31)
 	setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE)
@@ -666,9 +666,10 @@ script MossdeepCity_EventScript_GiveTotodilePostBattle{
         setflag(FLAG_RECEIVED_TOTODILE_PARTNER)
     }
     else{
-        goto(Common_EventScript_NoMoreRoomForPokemon)
+        msgbox("You don't have any more room.", MSGBOX_DEFAULT)
+		waitmessage
     }
-	msgbox("Okay!\n
+	msgbox("ARIA: Okay!\n
 		I need to get back to my training!\p
 		{PLAYER}, if you're going to see MOMO,\n
 		can you tell her I'm gonna train for\l
@@ -677,6 +678,7 @@ script MossdeepCity_EventScript_GiveTotodilePostBattle{
 	setobjectnewmovementtype(21, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN)
 	applymovement(21, Common_Movement_WalkInPlaceDown)
 	waitmovement(21)
+	delay(60)
 	goto_if_eq(VAR_GYM_LEADER_COUNT, 9, EventScript_UnlockEliteFourFinalRematch)
 	release
 	end

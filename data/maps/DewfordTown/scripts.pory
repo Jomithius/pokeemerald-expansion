@@ -832,7 +832,7 @@ script DewfordTown_EventScript_ReturnToPetalburgPrompt2{
 
 script DewfordTown_EventScript_GymSignUpdated{
 	msgbox("MASTER BENNIS's DOJO\n
-		Challengers welcome!", MSGBOX_SIGN)
+		“Challengers welcome!”", MSGBOX_SIGN)
 	end
 }
 

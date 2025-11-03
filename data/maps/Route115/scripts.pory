@@ -603,7 +603,7 @@ script Route115_EventScript_JamesBattle{
     callnative(RemoveFollowingPokemon)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
     waitmovement(0)
-    msgbox("That was fun!\n
+    msgbox("JAMES: That was fun!\n
         I'm glad you asked me to battle again.\p
         It's not every day the CHAMPION\n
         asks you for a battle!\p

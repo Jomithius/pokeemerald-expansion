@@ -29,134 +29,138 @@ SnowdriftCity_House1_EventScript_BlackBelt::
 	goto_if_not_defeated TRAINER_LAROLD, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle
 # 24 "data/maps/SnowdriftCity_House1/scripts.pory"
 	msgbox SnowdriftCity_House1_EventScript_BlackBelt_Text_0
-# 27 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmessage
 # 28 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmessage
+# 29 "data/maps/SnowdriftCity_House1/scripts.pory"
 	release
 	end
 
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle::
-# 33 "data/maps/SnowdriftCity_House1/scripts.pory"
-	lock
 # 34 "data/maps/SnowdriftCity_House1/scripts.pory"
+	lock
+# 35 "data/maps/SnowdriftCity_House1/scripts.pory"
 	msgbox SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_0, MSGBOX_DEFAULT
-# 36 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmessage
 # 37 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmessage
+# 38 "data/maps/SnowdriftCity_House1/scripts.pory"
 	goto_if_set FLAG_SYS_DEFEATED_BRUNO, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_2
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_1:
-# 59 "data/maps/SnowdriftCity_House1/scripts.pory"
-	closemessage
 # 60 "data/maps/SnowdriftCity_House1/scripts.pory"
+	closemessage
+# 61 "data/maps/SnowdriftCity_House1/scripts.pory"
 	release
 	end
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_2:
-# 38 "data/maps/SnowdriftCity_House1/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_1, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_2
 # 39 "data/maps/SnowdriftCity_House1/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_1, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_2
+# 40 "data/maps/SnowdriftCity_House1/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_4
-# 55 "data/maps/SnowdriftCity_House1/scripts.pory"
-	msgbox SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_7, MSGBOX_AUTOCLOSE
 # 56 "data/maps/SnowdriftCity_House1/scripts.pory"
+	msgbox SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_7, MSGBOX_AUTOCLOSE
+# 57 "data/maps/SnowdriftCity_House1/scripts.pory"
 	waitmessage
 	goto SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_1
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_4:
-# 40 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 41 "data/maps/SnowdriftCity_House1/scripts.pory"
 	msgbox SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_3, MSGBOX_DEFAULT
-# 43 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmessage
 # 44 "data/maps/SnowdriftCity_House1/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_4, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_5
+	waitmessage
 # 45 "data/maps/SnowdriftCity_House1/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_4, SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_5
+# 46 "data/maps/SnowdriftCity_House1/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_7
-# 49 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 50 "data/maps/SnowdriftCity_House1/scripts.pory"
 	msgbox SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_6, MSGBOX_AUTOCLOSE
-# 51 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 52 "data/maps/SnowdriftCity_House1/scripts.pory"
 	waitmessage
 	goto SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_1
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_7:
-# 46 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 47 "data/maps/SnowdriftCity_House1/scripts.pory"
 	goto SnowdriftCity_House1_EventScript_BlackBeltBattle
 	goto SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_1
 
 
 SnowdriftCity_House1_EventScript_BlackBeltBattle::
-# 65 "data/maps/SnowdriftCity_House1/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 66 "data/maps/SnowdriftCity_House1/scripts.pory"
-	msgbox SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_0, MSGBOX_AUTOCLOSE
+	playbgm MUS_RG_ENCOUNTER_BOY, FALSE
 # 67 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmessage
+	msgbox SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_0, MSGBOX_AUTOCLOSE
 # 68 "data/maps/SnowdriftCity_House1/scripts.pory"
-	trainerbattle_no_intro TRAINER_LAROLD, SnowdriftCity_House1_Text_LaroldLoss
+	waitmessage
 # 69 "data/maps/SnowdriftCity_House1/scripts.pory"
-	playse SE_PIN
+	trainerbattle_no_intro TRAINER_LAROLD, SnowdriftCity_House1_Text_LaroldLoss
 # 70 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 4, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 71 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmovement 4
+	applymovement 4, Common_Movement_ExclamationMark
 # 72 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitse
-# 73 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 4, Common_Movement_WalkInPlaceUp
-# 74 "data/maps/SnowdriftCity_House1/scripts.pory"
 	waitmovement 4
+# 73 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitse
+# 74 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 4, Common_Movement_WalkInPlaceUp
 # 75 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmovement 4
+# 76 "data/maps/SnowdriftCity_House1/scripts.pory"
 	msgbox SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_1, MSGBOX_DEFAULT
-# 77 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmessage
 # 78 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceDown
-# 79 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmovement 1
-# 80 "data/maps/SnowdriftCity_House1/scripts.pory"
-	msgbox SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_2, MSGBOX_DEFAULT
-# 81 "data/maps/SnowdriftCity_House1/scripts.pory"
 	waitmessage
+# 79 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceDown
+# 80 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmovement 1
+# 81 "data/maps/SnowdriftCity_House1/scripts.pory"
+	msgbox SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_2, MSGBOX_DEFAULT
 # 82 "data/maps/SnowdriftCity_House1/scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	waitmessage
 # 83 "data/maps/SnowdriftCity_House1/scripts.pory"
-	delay 8
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 84 "data/maps/SnowdriftCity_House1/scripts.pory"
+	delay 8
+# 85 "data/maps/SnowdriftCity_House1/scripts.pory"
 	compare VAR_TEMP_0, 5
 	goto_if_eq SnowdriftCity_House1_EventScript_BlackBeltBattle_2
-# 88 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 89 "data/maps/SnowdriftCity_House1/scripts.pory"
 	compare VAR_TEMP_0, 4
 	goto_if_eq SnowdriftCity_House1_EventScript_BlackBeltBattle_3
-# 93 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 1, Common_Movement_FacePlayer
 # 94 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_FacePlayer
+# 95 "data/maps/SnowdriftCity_House1/scripts.pory"
 	waitmovement 1
 SnowdriftCity_House1_EventScript_BlackBeltBattle_1:
-# 96 "data/maps/SnowdriftCity_House1/scripts.pory"
-	msgbox SnowdriftCity_House1_EventScript_BlackBelt_Text_0, MSGBOX_AUTOCLOSE
+# 97 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 4, Common_Movement_WalkInPlaceRight
+# 98 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmovement 4
 # 99 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmessage
-# 100 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceRight
-# 101 "data/maps/SnowdriftCity_House1/scripts.pory"
-	waitmovement 1
+	msgbox SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_3, MSGBOX_AUTOCLOSE
 # 102 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmessage
+# 103 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceRight
+# 104 "data/maps/SnowdriftCity_House1/scripts.pory"
+	waitmovement 1
+# 105 "data/maps/SnowdriftCity_House1/scripts.pory"
 	release
 	end
 
 SnowdriftCity_House1_EventScript_BlackBeltBattle_2:
-# 85 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceUp
 # 86 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceUp
+# 87 "data/maps/SnowdriftCity_House1/scripts.pory"
 	waitmovement 1
 	goto SnowdriftCity_House1_EventScript_BlackBeltBattle_1
 
 SnowdriftCity_House1_EventScript_BlackBeltBattle_3:
-# 89 "data/maps/SnowdriftCity_House1/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceLeft
 # 90 "data/maps/SnowdriftCity_House1/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceLeft
+# 91 "data/maps/SnowdriftCity_House1/scripts.pory"
 	waitmovement 1
 	goto SnowdriftCity_House1_EventScript_BlackBeltBattle_1
 
@@ -175,52 +179,56 @@ SnowdriftCity_House1_EventScript_Girl_Text_0:
 
 SnowdriftCity_House1_EventScript_BlackBelt_Text_0:
 # 24 "data/maps/SnowdriftCity_House1/scripts.pory"
-	.string "Sorry for doubting you!\n I never thought BRUNO would lose.\p You're the real deal!$"
+	.string "My sister is actually training\n at BRUNO's dojo now.\p I wonder how she's doing.\n I should go visit soon.$"
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_0:
-# 34 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 35 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "I grew up training with BRUNO.\n I've never seen him lose a fight.$"
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_1:
-# 38 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 39 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "I beat him.$"
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_2:
-# 38 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 39 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "Yeah. He was strong.$"
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_3:
-# 40 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 41 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "What?!\n There's no way you did.\p Quit lying.$"
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_4:
-# 44 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 45 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "Want me to prove it?$"
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_5:
-# 44 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 45 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "Yeah, you're right.$"
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_6:
-# 49 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 50 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "That's what I thought.\n There's no way he could lose.$"
 
 SnowdriftCity_House1_EventScript_BlackBeltPrepBattle_Text_7:
-# 55 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 56 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "Yeah. He really is.$"
 
 SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_0:
-# 66 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 67 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "Yeah, I do!$"
 
 SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_1:
-# 75 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 76 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "Hey! What did I tell you about\n battling indoors?!$"
 
 SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_2:
-# 80 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 81 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "LAROLD: Hahaha!\nSorry, honey!$"
 
+SnowdriftCity_House1_EventScript_BlackBeltBattle_Text_3:
+# 99 "data/maps/SnowdriftCity_House1/scripts.pory"
+	.string "Sorry for doubting you!\n I never thought BRUNO would lose.\p You're the real deal!$"
+
 SnowdriftCity_House1_Text_LaroldLoss::
-# 106 "data/maps/SnowdriftCity_House1/scripts.pory"
+# 109 "data/maps/SnowdriftCity_House1/scripts.pory"
 	.string "I guess you weren't lying!$"

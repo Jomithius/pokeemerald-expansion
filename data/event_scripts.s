@@ -1290,6 +1290,7 @@ EventScript_UnlockEliteFourFinalRematch::
 	waitmessage
 	closemessage
 	addvar VAR_GYM_LEADER_COUNT, 1
+	release
 	end
 
 gText_TheEliteFourAreReady::

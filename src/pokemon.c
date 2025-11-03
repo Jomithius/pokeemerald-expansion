@@ -5813,10 +5813,10 @@ u16 GetBattleBGM(void)
                 return MUS_VS_TRAINER;
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_GYM_LEADER;
-            if (FlagGet(FLAG_SYS_FINAL_REMATCH))
-                return MUS_FINAL_BATTLE;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleLunaName))
                 return MUS_VS_CHAMPION_NEMONA;
+            if (FlagGet(FLAG_SYS_FINAL_REMATCH))
+                return MUS_FINAL_BATTLE;
             return MUS_VS_GYM_LEADER;
         case TRAINER_CLASS_CHAMPION:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)

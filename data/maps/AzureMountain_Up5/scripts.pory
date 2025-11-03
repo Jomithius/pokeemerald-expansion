@@ -38,15 +38,16 @@ script AzureMountain_Up5_EventScript_Itoshi{
 }
 
 script AzureMountain_Up5_EventScript_Hiker{
-    msgbox("It's way colder over here!\p
-        I guess the geothermal heat doesn't\n
-        reach this side of the mountain.", MSGBOX_NPC)
+    msgbox("This rest stop is really a\n
+        blessing!\p
+        I heard it was warm up here so\n
+        I barely packed anything.", MSGBOX_NPC)
     end
 }
 
 script AzureMountain_Up5_EventScript_RestStopSign{
     msgbox("REST STOP\p
-        Stop in and warm up!", MSGBOX_SIGN)
+        “Stop in and warm up!”", MSGBOX_SIGN)
     release
     end
 }
@@ -130,8 +131,8 @@ script AzureMountain_Up5_EventScript_RivalBattle{
 		CHAMPION, {PLAYER}.\p
 		I think I'll stick to what I'm good at…\n
 		raising POKéMON.\p
-        Okay, I'm going to head back to lab to\n
-        give a report.", MSGBOX_AUTOCLOSE)
+        Okay, I'm going to head back to the lab\n
+        to give a report.", MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceDown)
     waitmovement(0)

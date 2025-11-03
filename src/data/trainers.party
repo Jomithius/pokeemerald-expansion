@@ -36915,7 +36915,6 @@ Timid Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Thunderbolt  
 - Flamethrower  
-- Hidden Power
 - Volt Switch  
 
 === TRAINER_WINONA_3 ===
@@ -37121,10 +37120,10 @@ Jolly Nature
 - Night Slash  
 - Poltergeist  
 
-Aegislash @ Leftovers  
+Aegislash
 Ability: Stance Change   
 Adamant Nature  
-- Kings Shield   
+- Protect  
 - Iron Head  
 - Shadow Sneak  
 
@@ -37315,9 +37314,10 @@ Adamant Nature
 - Gunk Shot  
 - Knock Off  
 
-Flutter Mane @ Booster Energy  
+Flutter Mane
 Ability: Protosynthesis   
-Timid Nature  
+Timid Nature 
+EVs: 64 SpD 
 IVs: 0 SpA / 1 Spe 
 - Thunderbolt  
 - Shadow Ball  
@@ -37329,7 +37329,6 @@ Ability: Torrent
 Tera Type: Water  
 EVs: 252 HP 
 Modest Nature  
-IVs: 0 Atk  
 - Earth Power  
 - Scald  
 - Surf  
@@ -37339,7 +37338,6 @@ Corviknight (F)
 Ability: Pressure   
 EVs: 252 HP 
 Impish Nature  
-- Roost  
 - Iron Head  
 - Brave Bird  
 - U-turn  
@@ -37347,7 +37345,7 @@ Impish Nature
 Shaymin @ Wise Glasses  
 Ability: Natural Cure 
 EVs: 252 HP
-Timid Nature  
+Serious Nature  
 IVs: 0 Atk  
 - Dazzling Gleam  
 - Energy Ball  
@@ -37876,18 +37874,13 @@ Alomomola @ Leftovers
 Ability: Regenerator 
 EVs: 252 HP  
 Modest Nature  
-- Light Screen  
 - Flip Turn  
 - Surf  
 - Icy Wind  
 
 Victini @ Heavy-Duty Boots  
-Ability: Victory Star 
-EVs: 252 HP   
-Jolly Nature  
-IVs: 0 Atk  
-- Searing Shot  
-- Expanding Force  
+Ability: Victory Star  
+Serious Nature  
 - Blue Flare  
 - Glaciate  
 
@@ -37903,21 +37896,17 @@ Jolly Nature
 Audino (F) @ Audinite  
 Ability: Regenerator  
 EVs: 252 HP / 192 SpA  
-Modest Nature  
-IVs: 0 Atk  
-- Protect  
+Modest Nature   
 - Hyper Voice  
 - Dazzling Gleam  
 
-Scream Tail @ Booster Energy  
+Scream Tail @ Terrain Extender  
 Ability: Protosynthesis  
 EVs: 252 HP
-Modest Nature  
-IVs: 0 Atk  
+Modest Nature   
 - Psychic Terrain  
 - Dazzling Gleam  
-- Expanding Force  
-- Reflect  
+- Expanding Force    
 
 === TRAINER_CORY_2 ===
 Name: CORY
@@ -38113,7 +38102,7 @@ Jolly Nature
 
 Roaring Moon @ Booster Energy
 Ability: Protosynthesis   
-Adamant Nature  
+Serious Nature  
 IVs: 0 Atk
 - Aerial Ace 
 - Dragon Claw 
@@ -38134,8 +38123,7 @@ EVs: 252 HP
 Tera Type: Electric   
 Modest Nature  
 IVs: 0 Atk  
-- Earth Power  
-- Alluring Voice  
+- Earth Power   
 - Hyper Voice  
 - Energy Ball
 
@@ -38145,10 +38133,8 @@ EVs: 252 HP
 Tera Type: Water   
 Timid Nature  
 IVs: 0 Atk  
-- Draining Kiss  
 - Hydro Pump  
 - Ice Beam  
-- Recover
 
 Incineroar (F) @ Heavy-Duty Boots  
 Ability: Intimidate 
@@ -38157,7 +38143,6 @@ Tera Type: Fire
 Adamant Nature   
 - Darkest Lariat  
 - Flare Blitz  
-- Parting Shot
 
 === TRAINER_XION ===
 Name: XION
@@ -38253,7 +38238,7 @@ IVs: 0 Atk
 - Shadow Ball  
 - Scald  
 
-Marshadow @ Punching Glove
+Marshadow
 Ability: Technician 
 EVs: 128 HP   
 Jolly Nature
@@ -38277,7 +38262,7 @@ EVs: 252 HP / 4 Def
 Jolly Nature  
 - Seismic Toss  
 - Counter  
-- Explosion  
+- Hyper Beam
 - Metronome
 
 Banette (F) @ Banettite  
@@ -39537,9 +39522,8 @@ Jolly Nature
 
 Grimmsnarl @ Light Clay  
 Ability: Prankster  
-EVs: 252 HP / 4 SpD 
-Calm Nature  
-IVs: 0 Atk  
+EVs: 252 HP / 64 Atk / 4 SpD 
+Calm Nature    
 - Reflect  
 - Fake Out  
 - Foul Play  
@@ -39548,8 +39532,7 @@ IVs: 0 Atk
 Celesteela @ Power Herb  
 Ability: Beast Boost 
 EVs: 252 HP / 4 SpD   
-Modest Nature  
-IVs: 0 Atk  
+Modest Nature   
 - Flash Cannon  
 - Air Slash  
 - Meteor Beam   
@@ -39561,7 +39544,6 @@ Adamant Nature
 - Supercell Slam  
 - Close Combat  
 - Earthquake  
-- Fake Out  
 
 Naganadel @ Choice Specs  
 Ability: Beast Boost  
