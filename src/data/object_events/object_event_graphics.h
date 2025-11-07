@@ -527,3 +527,28 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 
 const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
+
+const u32 gObjectEventPic_LunaMaleNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/walking.4bpp", "graphics/object_events/pics/people/luna_male/running.4bpp");
+const u16 gObjectEventPal_LunaMale[] = INCBIN_U16("graphics/object_events/palettes/luna_male.gbapal");
+const u16 gObjectEventPal_LunaMaleReflection[] = INCBIN_U16("graphics/object_events/palettes/luna_male_reflection.gbapal");
+const u32 gObjectEventPic_LunaMaleFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/field_move.4bpp");
+const u32 gObjectEventPic_LunaMaleSurfing[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/surfing.4bpp");
+const u32 gObjectEventPic_LunaMaleMachBike[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/mach_bike.4bpp");
+const u32 gObjectEventPic_LunaMaleAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/acro_bike.4bpp");
+const u32 gObjectEventPic_LunaMaleFishing[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/fishing.4bpp");
+const u32 gObjectEventPic_LunaMaleWatering[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/watering.4bpp");
+const u32 gObjectEventPic_LunaMaleDecorating[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/decorating.4bpp");
+const u32 gObjectEventPic_LunaMaleUnderwater[] = INCBIN_U32("graphics/object_events/pics/people/luna_male/underwater.4bpp");
+
+const u32 gObjectEventPic_LunaFemaleNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/walking.4bpp", "graphics/object_events/pics/people/luna_female/running.4bpp");
+const u16 gObjectEventPal_LunaFemale[] = INCBIN_U16("graphics/object_events/palettes/luna_female.gbapal");
+const u16 gObjectEventPal_LunaFemaleReflection[] = INCBIN_U16("graphics/object_events/palettes/luna_female_reflection.gbapal");
+const u32 gObjectEventPic_LunaFemaleFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/field_move.4bpp");
+const u32 gObjectEventPic_LunaFemaleSurfing[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/surfing.4bpp");
+const u32 gObjectEventPic_LunaFemaleMachBike[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/mach_bike.4bpp");
+const u32 gObjectEventPic_LunaFemaleAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/acro_bike.4bpp");
+const u32 gObjectEventPic_LunaFemaleFishing[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/fishing.4bpp");
+const u32 gObjectEventPic_LunaFemaleWatering[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/watering.4bpp");
+const u16 gObjectEventPal_LunaFemaleWatering[] = INCBIN_U16("graphics/object_events/palettes/luna_female_watering.gbapal");
+const u32 gObjectEventPic_LunaFemaleDecorating[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/decorating.4bpp");
+const u32 gObjectEventPic_LunaFemaleUnderwater[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/underwater.4bpp");

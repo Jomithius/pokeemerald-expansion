@@ -132,6 +132,11 @@ static const u8 sRegionMapPlayerIcon_BrendanGfx[] = INCBIN_U8("graphics/pokenav/
 static const u16 sRegionMapPlayerIcon_MayPal[] = INCBIN_U16("graphics/pokenav/region_map/may_icon.gbapal");
 static const u8 sRegionMapPlayerIcon_MayGfx[] = INCBIN_U8("graphics/pokenav/region_map/may_icon.4bpp");
 
+static const u16 sRegionMapPlayerIcon_LunaMalePal[] = INCBIN_U16("graphics/pokenav/region_map/luna_male_icon.gbapal");
+static const u8 sRegionMapPlayerIcon_LunaMaleGfx[] = INCBIN_U8("graphics/pokenav/region_map/luna_male_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_LunaFemalePal[] = INCBIN_U16("graphics/pokenav/region_map/luna_female_icon.gbapal");
+static const u8 sRegionMapPlayerIcon_LunaFemaleGfx[] = INCBIN_U8("graphics/pokenav/region_map/luna_female_icon.4bpp");
+
 #include "data/region_map/region_map_layout.h"
 #include "data/region_map/region_map_layout_nhoenn.h"
 #include "data/region_map/region_map_entries.h"

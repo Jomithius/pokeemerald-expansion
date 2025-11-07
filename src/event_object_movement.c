@@ -556,6 +556,11 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
+    {gObjectEventPal_LunaMale,              OBJ_EVENT_PAL_TAG_LUNA_MALE},
+    {gObjectEventPal_LunaMaleReflection,    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION},
+    {gObjectEventPal_LunaFemale,            OBJ_EVENT_PAL_TAG_LUNA_FEMALE},
+    {gObjectEventPal_LunaFemaleReflection,  OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION},
+    {gObjectEventPal_LunaFemaleWatering,    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_WATERING},
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
     {gObjectEventPal_UltraBall,             OBJ_EVENT_PAL_TAG_BALL_ULTRA},
@@ -703,6 +708,20 @@ static const u16 sReflectionPaletteTags_RedLeaf[] = {
     OBJ_EVENT_PAL_TAG_RED_LEAF,
 };
 
+static const u16 sReflectionPaletteTags_LunaMale[] = {
+    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
+};
+
+static const u16 sReflectionPaletteTags_LunaFemale[] = {
+    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+};
+
 static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_BRENDAN,          sReflectionPaletteTags_Brendan},
     {OBJ_EVENT_PAL_TAG_MAY,              sReflectionPaletteTags_May},
@@ -717,6 +736,8 @@ static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_NPC_3,            sReflectionPaletteTags_Npc3},
     {OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW, sReflectionPaletteTags_SubmarineShadow},
     {OBJ_EVENT_PAL_TAG_RED_LEAF,         sReflectionPaletteTags_RedLeaf},
+    {OBJ_EVENT_PAL_TAG_LUNA_MALE,        sReflectionPaletteTags_LunaMale},
+    {OBJ_EVENT_PAL_TAG_LUNA_FEMALE,      sReflectionPaletteTags_LunaFemale},
     {OBJ_EVENT_PAL_TAG_NONE,             NULL},
 };
 

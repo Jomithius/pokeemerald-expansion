@@ -262,6 +262,26 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphir
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMay;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleDecorating;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleDecorating;
+
+
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -542,6 +562,22 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
+    [OBJ_EVENT_GFX_LUNA_MALE_NORMAL] =         &gObjectEventGraphicsInfo_LunaMaleNormal,
+    [OBJ_EVENT_GFX_LUNA_MALE_MACH_BIKE] =      &gObjectEventGraphicsInfo_LunaMaleMachBike,
+    [OBJ_EVENT_GFX_LUNA_MALE_SURFING] =        &gObjectEventGraphicsInfo_LunaMaleSurfing,
+    [OBJ_EVENT_GFX_LUNA_MALE_FIELD_MOVE] =     &gObjectEventGraphicsInfo_LunaMaleFieldMove,
+    [OBJ_EVENT_GFX_LUNA_MALE_UNDERWATER] =     &gObjectEventGraphicsInfo_LunaMaleUnderwater,
+    [OBJ_EVENT_GFX_LUNA_MALE_FISHING] =        &gObjectEventGraphicsInfo_LunaMaleFishing,
+    [OBJ_EVENT_GFX_LUNA_MALE_WATERING] =       &gObjectEventGraphicsInfo_LunaMaleWatering,
+    [OBJ_EVENT_GFX_LUNA_MALE_DECORATING] =     &gObjectEventGraphicsInfo_LunaMaleDecorating,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_NORMAL] =       &gObjectEventGraphicsInfo_LunaFemaleNormal,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_MACH_BIKE] =    &gObjectEventGraphicsInfo_LunaFemaleMachBike,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_SURFING] =      &gObjectEventGraphicsInfo_LunaFemaleSurfing,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_FIELD_MOVE] =   &gObjectEventGraphicsInfo_LunaFemaleFieldMove,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_UNDERWATER] =   &gObjectEventGraphicsInfo_LunaFemaleUnderwater,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_FISHING] =      &gObjectEventGraphicsInfo_LunaFemaleFishing,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_WATERING] =     &gObjectEventGraphicsInfo_LunaFemaleWatering,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_DECORATING] =   &gObjectEventGraphicsInfo_LunaFemaleDecorating,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

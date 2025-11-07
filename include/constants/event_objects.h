@@ -268,12 +268,28 @@
 #define OBJ_EVENT_GFX_CYNTHIA                    264
 #define OBJ_EVENT_GFX_ARIA                       265
 #define OBJ_EVENT_GFX_WHITNEY                    266
+#define OBJ_EVENT_GFX_LUNA_MALE_NORMAL           267
+#define OBJ_EVENT_GFX_LUNA_MALE_MACH_BIKE        268
+#define OBJ_EVENT_GFX_LUNA_MALE_SURFING          269
+#define OBJ_EVENT_GFX_LUNA_MALE_FIELD_MOVE       270
+#define OBJ_EVENT_GFX_LUNA_MALE_UNDERWATER       271
+#define OBJ_EVENT_GFX_LUNA_MALE_FISHING          272
+#define OBJ_EVENT_GFX_LUNA_MALE_WATERING         273
+#define OBJ_EVENT_GFX_LUNA_MALE_DECORATING       274
+#define OBJ_EVENT_GFX_LUNA_FEMALE_NORMAL         275
+#define OBJ_EVENT_GFX_LUNA_FEMALE_MACH_BIKE      276
+#define OBJ_EVENT_GFX_LUNA_FEMALE_SURFING        277
+#define OBJ_EVENT_GFX_LUNA_FEMALE_FIELD_MOVE     278
+#define OBJ_EVENT_GFX_LUNA_FEMALE_UNDERWATER     279
+#define OBJ_EVENT_GFX_LUNA_FEMALE_FISHING        280
+#define OBJ_EVENT_GFX_LUNA_FEMALE_WATERING       281
+#define OBJ_EVENT_GFX_LUNA_FEMALE_DECORATING     282
 
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        267
+#define NUM_OBJ_EVENT_GFX                        283
 
 
 // These are dynamic object gfx ids.
@@ -488,6 +504,11 @@
 #define OBJ_EVENT_PAL_TAG_CYNTHIA                 0x1174
 #define OBJ_EVENT_PAL_TAG_ARIA                    0x1175
 #define OBJ_EVENT_PAL_TAG_WHITNEY                 0x1176
+#define OBJ_EVENT_PAL_TAG_LUNA_MALE               0x1177
+#define OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION    0x1178
+#define OBJ_EVENT_PAL_TAG_LUNA_FEMALE             0x1179
+#define OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION  0x1180
+#define OBJ_EVENT_PAL_TAG_LUNA_FEMALE_WATERING    0x1181
 
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002

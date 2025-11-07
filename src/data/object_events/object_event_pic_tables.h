@@ -1490,3 +1490,130 @@ static const struct SpriteFrameImage sPicTable_KirliaOld[] = {
 static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireMayNormal, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_LunaMaleNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaMaleNormalRunning, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaMaleMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaMaleMachBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaMaleAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaMaleAcroBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaMaleSurfing[] = {
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_LunaMaleSurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaMaleUnderwater[] = {
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaMaleUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaMaleFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaMaleFieldMove, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaMaleFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaMaleFishing, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaMaleWatering[] = {
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_LunaMaleWatering, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaMaleDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_LunaMaleDecorating),
+};
+
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaFemaleNormalRunning, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaFemaleMachBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaFemaleAcroBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleSurfing[] = {
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_LunaFemaleSurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleUnderwater[] = {
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaFemaleUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaFemaleFieldMove, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_LunaFemaleFishing, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleWatering[] = {
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_LunaFemaleWatering, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_LunaFemaleDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_LunaFemaleDecorating),
+};
