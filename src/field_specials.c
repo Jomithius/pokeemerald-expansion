@@ -4369,9 +4369,58 @@ void GetCodeFeedback(void)
         gSpecialVar_Result = 0;
 }
 
-u16 GetLeadMonSpecies(void)
+void SetStarterMegaStoneVar(void)
 {
-    return GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, NULL);
+    u8 i;
+    u16 species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gPlayerParty[i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG) && !GetMonData(&gPlayerParty[0], MON_DATA_HP_LOST))
+        {
+            species = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
+            switch(species)
+            {
+            case SPECIES_BULBASAUR:
+                VarSet(VAR_STARTER_MEGA_STONE, 1);
+                break;
+            case SPECIES_CHARMANDER:
+                VarSet(VAR_STARTER_MEGA_STONE, 2);
+                break;
+            case SPECIES_SQUIRTLE:
+                VarSet(VAR_STARTER_MEGA_STONE, 3);
+                break;
+            case SPECIES_TREECKO:
+                VarSet(VAR_STARTER_MEGA_STONE, 4);
+                break;
+            case SPECIES_TORCHIC:
+                VarSet(VAR_STARTER_MEGA_STONE, 5);
+                break;
+            case SPECIES_MUDKIP:
+                VarSet(VAR_STARTER_MEGA_STONE, 6);
+                break;
+            case SPECIES_CHIKORITA:
+                VarSet(VAR_STARTER_MEGA_STONE, 7);
+                break;
+            case SPECIES_TOTODILE:
+                VarSet(VAR_STARTER_MEGA_STONE, 8);
+                break;
+            case SPECIES_CYNDAQUIL:
+                VarSet(VAR_STARTER_MEGA_STONE, 9);
+                break;
+            case SPECIES_TOTODILE_PARTNER:
+                VarSet(VAR_STARTER_MEGA_STONE, 10);
+                break;
+            case SPECIES_FROAKIE:
+                VarSet(VAR_STARTER_MEGA_STONE, 11);
+                break;
+            default:
+                VarSet(VAR_STARTER_MEGA_STONE, 0);
+                break;
+            }
+        }
+    }
 }
 
 void IsLeadMonCat(void)

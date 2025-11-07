@@ -563,7 +563,7 @@ gSpecials::
 	def_special UseBlankMessageToCancelPokemonPic
 	def_special EnterCode
 	def_special GetCodeFeedback
-	def_special GetLeadMonSpecies
+	def_special SetStarterMegaStoneVar
 	def_special IsLeadMonCat
 	def_special SetObjectMovementType
 	def_special IsLeadMonSpectrierOrGlastrier

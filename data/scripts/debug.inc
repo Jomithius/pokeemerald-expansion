@@ -204,10 +204,10 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	lockall
-	setflag FLAG_HIDE_OLD_MAN_SNOWDRIFT
-	goto EventScript_FinalRematchesUnlocked
-	releaseall
+	setvar VAR_MISA_STATE, 8
+	warp MAP_EVER_GRANDE_CITY, 18, 11
+	waitstate
+	release
 	end
 
 Debug_EventScript_Script_8::

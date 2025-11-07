@@ -300,6 +300,8 @@ script EverGrandeCity_EventScript_James{
     waitmessage
     giveitem(ITEM_MEGA_RING)
     waitmessage
+    call(EverGrandeCity_EventScript_GiveMegaStone)
+    waitmessage
     giveitem(ITEM_EXP_CANDY_XL, 99)
     waitmessage
     msgbox(EverGrandeCity_Text_James5, MSGBOX_AUTOCLOSE)
@@ -324,6 +326,55 @@ script EverGrandeCity_EventScript_James{
     fadedefaultbgm
     releaseall
     end
+}
+
+script EverGrandeCity_EventScript_GiveMegaStone{
+    switch(var(VAR_STARTER_MEGA_STONE)){
+        case 1:
+            giveitem(ITEM_VENUSAURITE)
+            break
+        case 2:
+            giveitem(ITEM_CHARIZARDITE_X)
+            waitmessage
+            giveitem(ITEM_CHARIZARDITE_Y)
+            break
+        case 3:
+            giveitem(ITEM_BLASTOISINITE)
+            break
+        case 4:
+            giveitem(ITEM_SCEPTILITE)
+            break
+        case 5:
+            giveitem(ITEM_BLAZIKENITE)
+            break
+        case 6:
+            giveitem(ITEM_SWAMPERTITE)
+            break
+        case 7:
+            setflag(FLAG_ROUTE_137_MEGANIUMITE)
+            giveitem(ITEM_MEGANIUMITE)
+            break
+        case 8:
+            setflag(FLAG_BEACHSIDE_CAVE_FERALIGITE)
+            giveitem(ITEM_FERALIGITE)
+            break
+        case 9:
+            setflag(FLAG_ITEM_THE_UNDER_TYPHLOSIONITE)
+            giveitem(ITEM_TYPHLOSIONITE)
+            break
+        case 10:
+            setflag(FLAG_RECEIVED_SACRED_BLADE)
+            giveitem(ITEM_SACRED_BLADE)
+            break
+        case 11:
+            setflag(FLAG_ITEM_JIRACHIS_ALTAR_DRAGONITEITE)
+            giveitem(ITEM_DRAGONITEITE)
+            break
+        default:
+            giveitem(ITEM_BIG_NUGGET, 2)
+            break
+    }
+    return
 }
 
 text EverGrandeCity_Text_James1{

@@ -135,7 +135,7 @@
 #define VAR_ROUTE120_STATE                               0x4073 // Used to make sure you get 6th Gym Badge
 #define VAR_ROUTE121_STATE                               0x4074
 #define VAR_ROUTE122_STATE                               0x4075 // Unused Var
-#define VAR_ROUTE123_STATE                               0x4076 // Unused Var
+#define VAR_STARTER_MEGA_STONE                           0x4076 // For free Mega Stone given by James in Evergrande. Default 0; 1-3 Bulba/Charm/Squirtle; 4-6 Treecko/Torchic/Mudkip; 7-9 Chiko/Toto/Cynda; 10-11 Totodile-Partner/Dragoniteite
 #define VAR_JIMMY_MEETING_CALL_STATE                     0x4077 // For jimmy's call to meet him in lilycove after becoming champion
 #define VAR_SLATEPORT_GYM_STATE                          0x4078 // Force player to do gym before moving on
 #define VAR_TUTORIAL_COUNTER                             0x4079 // Counts how many times you talked to tutorial girl in trainer school. 11 gives reward
