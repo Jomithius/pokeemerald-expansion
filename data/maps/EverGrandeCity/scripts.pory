@@ -364,6 +364,7 @@ script EverGrandeCity_EventScript_GiveMegaStone{
             break
         case 10:
             setflag(FLAG_RECEIVED_SACRED_BLADE)
+            setflag(FLAG_RECEIVED_TOTODILE_PARTNER)
             giveitem(ITEM_SACRED_BLADE)
             break
         case 11:

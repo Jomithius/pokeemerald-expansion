@@ -347,6 +347,12 @@ const u32 gTrainerPalette_Cynthia[] = INCBIN_U32("graphics/trainers/palettes/cyn
 const u32 gTrainerFrontPic_Whitney[] = INCBIN_U32("graphics/trainers/front_pics/whitney.4bpp.lz");
 const u32 gTrainerPalette_Whitney[] = INCBIN_U32("graphics/trainers/palettes/whitney.gbapal.lz");
 
+const u32 gTrainerFrontPic_LunaMale[] = INCBIN_U32("graphics/trainers/front_pics/luna_male.4bpp.lz");
+const u32 gTrainerPalette_LunaMale[] = INCBIN_U32("graphics/trainers/palettes/luna_male.gbapal.lz");
+
+const u32 gTrainerFrontPic_LunaFemale[] = INCBIN_U32("graphics/trainers/front_pics/luna_female.4bpp.lz");
+const u32 gTrainerPalette_LunaFemale[] = INCBIN_U32("graphics/trainers/palettes/luna_female.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -356,6 +362,8 @@ const u8 gTrainerBackPic_RubySapphireMay[] = INCBIN_U8("graphics/trainers/back_p
 const u8 gTrainerBackPic_Wally[] = INCBIN_U8("graphics/trainers/back_pics/wally.4bpp");
 const u8 gTrainerBackPic_Steven[] = INCBIN_U8("graphics/trainers/back_pics/steven.4bpp");
 const u8 gTrainerBackPic_Momo[] = INCBIN_U8("graphics/trainers/back_pics/momo.4bpp");
+const u8 gTrainerBackPic_LunaMale[] = INCBIN_U8("graphics/trainers/back_pics/luna_male.4bpp");
+const u8 gTrainerBackPic_LunaFemale[] = INCBIN_U8("graphics/trainers/back_pics/luna_female.4bpp");
 
 const u32 gTrainerBackPicPalette_Red[] = INCBIN_U32("graphics/trainers/back_pics/red.gbapal.lz");
 const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pics/leaf.gbapal.lz");
@@ -624,6 +632,24 @@ const struct SpriteFrameImage gTrainerBackPicTable_Momo[] =
     {gTrainerBackPic_Momo + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
 };
 
+const struct SpriteFrameImage gTrainerBackPicTable_LunaMale[] =
+{
+    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
+};
+
+const struct SpriteFrameImage gTrainerBackPicTable_LunaFemale[] =
+{
+    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
+};
+
 // .backPic goes functionally unused, since none of these pics are compressed
 // and the place they would get extracted to gets overwritten later anyway
 // the casts are so they'll play nice with the strict struct definition
@@ -647,4 +673,6 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_WALLY, 4, gTrainerBackPic_Wally, gTrainerBackPicTable_Wally, gTrainerPalette_Wally, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_STEVEN, 4, gTrainerBackPic_Steven, gTrainerBackPicTable_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MOMO, 5, gTrainerBackPic_Momo, gTrainerBackPicTable_Momo, gTrainerBackPicPalette_Momo, sBackAnims_Kanto),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUNA_MALE, 5, gTrainerBackPic_LunaMale, gTrainerBackPicTable_LunaMale, gTrainerPalette_LunaMale, sBackAnims_Kanto),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUNA_FEMALE, 5, gTrainerBackPic_LunaFemale, gTrainerBackPicTable_LunaFemale, gTrainerPalette_LunaFemale, sBackAnims_Kanto),
 };

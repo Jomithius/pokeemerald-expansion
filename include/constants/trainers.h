@@ -131,7 +131,9 @@
 #define TRAINER_PIC_NIGHTMARE             113
 #define TRAINER_PIC_CYNTHIA               114
 #define TRAINER_PIC_WHITNEY               115
-#define TRAINER_PIC_COUNT                 116
+#define TRAINER_PIC_LUNA_MALE             116
+#define TRAINER_PIC_LUNA_FEMALE           117
+#define TRAINER_PIC_COUNT                 118
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -143,6 +145,8 @@
 #define TRAINER_BACK_PIC_WALLY                  6
 #define TRAINER_BACK_PIC_STEVEN                 7
 #define TRAINER_BACK_PIC_MOMO                   8
+#define TRAINER_BACK_PIC_LUNA_MALE              9
+#define TRAINER_BACK_PIC_LUNA_FEMALE            10
 
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1
