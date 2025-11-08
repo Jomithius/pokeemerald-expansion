@@ -146,13 +146,17 @@ SnowdriftCity_EventScript_ReceiveCalyrex::
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq SnowdriftCity_EventScript_ReceiveCalyrex_3
 # 137 "data/maps/SnowdriftCity/scripts.pory"
-	goto Common_EventScript_NoMoreRoomForPokemon
-SnowdriftCity_EventScript_ReceiveCalyrex_1:
+	removeitem ITEM_REINS_OF_UNITY
+# 138 "data/maps/SnowdriftCity/scripts.pory"
+	msgbox SnowdriftCity_EventScript_ReceiveCalyrex_Text_4, MSGBOX_DEFAULT
 # 139 "data/maps/SnowdriftCity/scripts.pory"
-	savebgm MUS_DUMMY
-# 140 "data/maps/SnowdriftCity/scripts.pory"
-	fadedefaultbgm
+	waitmessage
+SnowdriftCity_EventScript_ReceiveCalyrex_1:
 # 141 "data/maps/SnowdriftCity/scripts.pory"
+	savebgm MUS_DUMMY
+# 142 "data/maps/SnowdriftCity/scripts.pory"
+	fadedefaultbgm
+# 143 "data/maps/SnowdriftCity/scripts.pory"
 	release
 	end
 
@@ -192,70 +196,70 @@ SnowdriftCity_EventScript_ReceiveCalyrex_3:
 
 
 SnowdriftCity_Eventscript_Luna::
-# 146 "data/maps/SnowdriftCity/scripts.pory"
-	lock
-# 147 "data/maps/SnowdriftCity/scripts.pory"
-	faceplayer
 # 148 "data/maps/SnowdriftCity/scripts.pory"
-	goto_if_eq VAR_FINAL_REMATCH_STATE, 6, SnowdriftCity_EventScript_LunaAndMickeyLeave
+	lock
 # 149 "data/maps/SnowdriftCity/scripts.pory"
+	faceplayer
+# 150 "data/maps/SnowdriftCity/scripts.pory"
+	goto_if_eq VAR_FINAL_REMATCH_STATE, 6, SnowdriftCity_EventScript_LunaAndMickeyLeave
+# 151 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_Eventscript_Luna_Text_0, MSGBOX_AUTOCLOSE
-# 155 "data/maps/SnowdriftCity/scripts.pory"
-	waitmessage
-# 156 "data/maps/SnowdriftCity/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 157 "data/maps/SnowdriftCity/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 158 "data/maps/SnowdriftCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 159 "data/maps/SnowdriftCity/scripts.pory"
+	waitmovement 0
+# 160 "data/maps/SnowdriftCity/scripts.pory"
 	release
 	end
 
 
 SnowdriftCity_Eventscript_Mickey::
-# 163 "data/maps/SnowdriftCity/scripts.pory"
-	lock
-# 164 "data/maps/SnowdriftCity/scripts.pory"
-	faceplayer
 # 165 "data/maps/SnowdriftCity/scripts.pory"
-	goto_if_eq VAR_FINAL_REMATCH_STATE, 6, SnowdriftCity_EventScript_LunaAndMickeyLeave
+	lock
 # 166 "data/maps/SnowdriftCity/scripts.pory"
+	faceplayer
+# 167 "data/maps/SnowdriftCity/scripts.pory"
+	goto_if_eq VAR_FINAL_REMATCH_STATE, 6, SnowdriftCity_EventScript_LunaAndMickeyLeave
+# 168 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_Eventscript_Mickey_Text_0, MSGBOX_AUTOCLOSE
-# 172 "data/maps/SnowdriftCity/scripts.pory"
-	waitmessage
-# 173 "data/maps/SnowdriftCity/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 174 "data/maps/SnowdriftCity/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 175 "data/maps/SnowdriftCity/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 176 "data/maps/SnowdriftCity/scripts.pory"
+	waitmovement 0
+# 177 "data/maps/SnowdriftCity/scripts.pory"
 	release
 	end
 
 
 SnowdriftCity_EventScript_LunaAndMickeyLeave::
-# 180 "data/maps/SnowdriftCity/scripts.pory"
+# 182 "data/maps/SnowdriftCity/scripts.pory"
 	compare VAR_LAST_TALKED, 2
 	goto_if_eq SnowdriftCity_EventScript_LunaAndMickeyLeave_2
-# 188 "data/maps/SnowdriftCity/scripts.pory"
+# 190 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_EventScript_LunaAndMickeyLeave_Text_1, MSGBOX_AUTOCLOSE
 SnowdriftCity_EventScript_LunaAndMickeyLeave_1:
-# 193 "data/maps/SnowdriftCity/scripts.pory"
-	waitmessage
-# 194 "data/maps/SnowdriftCity/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
 # 195 "data/maps/SnowdriftCity/scripts.pory"
-	removeobject 1
+	waitmessage
 # 196 "data/maps/SnowdriftCity/scripts.pory"
-	removeobject 2
+	fadescreenswapbuffers FADE_TO_BLACK
 # 197 "data/maps/SnowdriftCity/scripts.pory"
-	setflag FLAG_HIDE_LUNA_MICKEY_SNOWDRIFT_CITY
+	removeobject 1
 # 198 "data/maps/SnowdriftCity/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	removeobject 2
 # 199 "data/maps/SnowdriftCity/scripts.pory"
+	setflag FLAG_HIDE_LUNA_MICKEY_SNOWDRIFT_CITY
+# 200 "data/maps/SnowdriftCity/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 201 "data/maps/SnowdriftCity/scripts.pory"
 	release
 	end
 
 SnowdriftCity_EventScript_LunaAndMickeyLeave_2:
-# 181 "data/maps/SnowdriftCity/scripts.pory"
+# 183 "data/maps/SnowdriftCity/scripts.pory"
 	msgbox SnowdriftCity_EventScript_LunaAndMickeyLeave_Text_0, MSGBOX_AUTOCLOSE
 	goto SnowdriftCity_EventScript_LunaAndMickeyLeave_1
 
@@ -298,7 +302,7 @@ SnowdriftCity_EventScript_Calyrex_Text_3:
 
 SnowdriftCity_EventScript_CheckSpectierOrGlastrier_Text_0:
 # 76 "data/maps/SnowdriftCity/scripts.pory"
-	.string "My name is CALYREX.\p Long ago, I was a ruler of a land far,\n far away from this place.\p Since my fall from grace, I've spent\n my days searching for my trusted\l partners: SPECTRIER and GLASTRIER.\l Still, my search has been in vain.\l Please, adventurer.\p If you come across either of my old\n partners, could you bring them here?\p I'll reward you if you do.$"
+	.string "My name is CALYREX.\p Long ago, I was a ruler of a land far,\n far away from this place.\p Since my fall from grace, I've spent\n my days searching for my trusted\l partners: SPECTRIER and GLASTRIER.\l So far my search has been in vain.\l Please, adventurer.\p If you come across either of my old\n partners, could you bring them here?\p I'll reward you if you do.$"
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_0:
 # 103 "data/maps/SnowdriftCity/scripts.pory"
@@ -306,7 +310,7 @@ SnowdriftCity_EventScript_ReceiveCalyrex_Text_0:
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_1:
 # 113 "data/maps/SnowdriftCity/scripts.pory"
-	.string "Also… I humbly ask you.\p Allow this fallen king to once again\n fight alongside his old friend.$"
+	.string "CALYREX: Also… I humbly ask you.\p Allow this fallen king to once again\n fight alongside his old friend.$"
 
 SnowdriftCity_EventScript_ReceiveCalyrex_Text_2:
 # 123 "data/maps/SnowdriftCity/scripts.pory"
@@ -316,18 +320,22 @@ SnowdriftCity_EventScript_ReceiveCalyrex_Text_3:
 # 132 "data/maps/SnowdriftCity/scripts.pory"
 	.string "CALYREX was sent to the PC!$"
 
+SnowdriftCity_EventScript_ReceiveCalyrex_Text_4:
+# 138 "data/maps/SnowdriftCity/scripts.pory"
+	.string "You don't have any room.$"
+
 SnowdriftCity_Eventscript_Luna_Text_0:
-# 149 "data/maps/SnowdriftCity/scripts.pory"
+# 151 "data/maps/SnowdriftCity/scripts.pory"
 	.string "Oh, it's {PLAYER}!\n Hm?\p How am I not cold like this?\n Don't worry about it.\p But… it would be nice if the sand\n beds were a little bit bigger.$"
 
 SnowdriftCity_Eventscript_Mickey_Text_0:
-# 166 "data/maps/SnowdriftCity/scripts.pory"
+# 168 "data/maps/SnowdriftCity/scripts.pory"
 	.string "Hey, {PLAYER}…\p LUNA invited me on this trip but\n didn't tell me he FANTASIA'd again…\l He didn't even update his POKéNAV.\p I would've made an excuse to not go if\n I knew he was gonna look like that…$"
 
 SnowdriftCity_EventScript_LunaAndMickeyLeave_Text_0:
-# 181 "data/maps/SnowdriftCity/scripts.pory"
+# 183 "data/maps/SnowdriftCity/scripts.pory"
 	.string "{PLAYER}!\p I just got the message from JIMMY.\n I'll wait for you back at the GYM.\p It's time to let the dogs out!\n Awoooohoooo!$"
 
 SnowdriftCity_EventScript_LunaAndMickeyLeave_Text_1:
-# 188 "data/maps/SnowdriftCity/scripts.pory"
+# 190 "data/maps/SnowdriftCity/scripts.pory"
 	.string "{PLAYER}.\n I just heard from JIMMY.\p I'll be waiting for you back at\n the GYM.$"

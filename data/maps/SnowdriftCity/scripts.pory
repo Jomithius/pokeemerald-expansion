@@ -79,7 +79,7 @@ script SnowdriftCity_EventScript_CheckSpectierOrGlastrier{
         Since my fall from grace, I've spent\n
         my days searching for my trusted\l
         partners: SPECTRIER and GLASTRIER.\l
-        Still, my search has been in vain.\l
+        So far my search has been in vain.\l
         Please, adventurer.\p
         If you come across either of my old\n
         partners, could you bring them here?\p
@@ -110,7 +110,7 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
     waitmessage
     giveitem(ITEM_REINS_OF_UNITY)
     waitmessage
-    msgbox("Also… I humbly ask you.\p
+    msgbox("CALYREX: Also… I humbly ask you.\p
             Allow this fallen king to once again\n
             fight alongside his old friend.", MSGBOX_AUTOCLOSE)
     waitmessage
@@ -134,7 +134,9 @@ script SnowdriftCity_EventScript_ReceiveCalyrex{
         setflag(FLAG_DEFEATED_CALYREX)
     }
     else{
-        goto(Common_EventScript_NoMoreRoomForPokemon)
+        removeitem(ITEM_REINS_OF_UNITY)
+        msgbox("You don't have any room.", MSGBOX_DEFAULT)
+        waitmessage
     }
     savebgm(MUS_DUMMY)
     fadedefaultbgm

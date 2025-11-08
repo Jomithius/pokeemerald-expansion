@@ -5472,7 +5472,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleFishing 
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleWatering = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_LUNA_FEMALE_WATERING,
+    .paletteTag = OBJ_EVENT_PAL_TAG_LUNA_FEMALE,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
     .size = 512,
     .width = 32,
