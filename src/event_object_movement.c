@@ -624,6 +624,20 @@ static const u16 sReflectionPaletteTags_PlayerUnderwater[] = {
     OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER,
 };
 
+static const u16 sReflectionPaletteTags_LunaMale[] = {
+    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
+};
+
+static const u16 sReflectionPaletteTags_LunaFemale[] = {
+    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+};
+
 static const struct PairedPalettes sPlayerReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_BRENDAN,           sReflectionPaletteTags_Brendan},
     {OBJ_EVENT_PAL_TAG_MAY,               sReflectionPaletteTags_May},
@@ -706,20 +720,6 @@ static const u16 sReflectionPaletteTags_RedLeaf[] = {
     OBJ_EVENT_PAL_TAG_RED_LEAF,
     OBJ_EVENT_PAL_TAG_RED_LEAF,
     OBJ_EVENT_PAL_TAG_RED_LEAF,
-};
-
-static const u16 sReflectionPaletteTags_LunaMale[] = {
-    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
-    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
-    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
-    OBJ_EVENT_PAL_TAG_LUNA_MALE_REFLECTION,
-};
-
-static const u16 sReflectionPaletteTags_LunaFemale[] = {
-    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
-    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
-    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
-    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
 };
 
 static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {

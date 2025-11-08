@@ -501,6 +501,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_NIGHTMARE, gTrainerFrontPic_Nightmare, gTrainerPalette_Nightmare),
     TRAINER_SPRITE(TRAINER_PIC_CYNTHIA, gTrainerFrontPic_Cynthia, gTrainerPalette_Cynthia),
     TRAINER_SPRITE(TRAINER_PIC_WHITNEY, gTrainerFrontPic_Whitney, gTrainerPalette_Whitney),
+    TRAINER_SPRITE(TRAINER_PIC_LUNA_MALE, gTrainerFrontPic_LunaMale, gTrainerPalette_LunaMale),
+    TRAINER_SPRITE(TRAINER_PIC_LUNA_FEMALE, gTrainerFrontPic_LunaFemale, gTrainerPalette_LunaFemale),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
@@ -634,20 +636,20 @@ const struct SpriteFrameImage gTrainerBackPicTable_Momo[] =
 
 const struct SpriteFrameImage gTrainerBackPicTable_LunaMale[] =
 {
-    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
-    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
-    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
-    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
-    {gTrainerBackPicTable_LunaMale + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaMale + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaMale + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaMale + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaMale + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaMale + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
 };
 
 const struct SpriteFrameImage gTrainerBackPicTable_LunaFemale[] =
 {
-    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
-    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
-    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
-    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
-    {gTrainerBackPicTable_LunaFemale + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaFemale + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaFemale + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaFemale + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaFemale + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_LunaFemale + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
 };
 
 // .backPic goes functionally unused, since none of these pics are compressed

@@ -265,6 +265,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleAcroBike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleSurfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleUnderwater;
@@ -274,6 +275,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaMaleDec
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleAcroBike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleSurfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleUnderwater;
@@ -564,6 +566,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LUNA_MALE_NORMAL] =         &gObjectEventGraphicsInfo_LunaMaleNormal,
     [OBJ_EVENT_GFX_LUNA_MALE_MACH_BIKE] =      &gObjectEventGraphicsInfo_LunaMaleMachBike,
+    [OBJ_EVENT_GFX_LUNA_MALE_ACRO_BIKE] =      &gObjectEventGraphicsInfo_LunaMaleAcroBike,
     [OBJ_EVENT_GFX_LUNA_MALE_SURFING] =        &gObjectEventGraphicsInfo_LunaMaleSurfing,
     [OBJ_EVENT_GFX_LUNA_MALE_FIELD_MOVE] =     &gObjectEventGraphicsInfo_LunaMaleFieldMove,
     [OBJ_EVENT_GFX_LUNA_MALE_UNDERWATER] =     &gObjectEventGraphicsInfo_LunaMaleUnderwater,
@@ -572,6 +575,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LUNA_MALE_DECORATING] =     &gObjectEventGraphicsInfo_LunaMaleDecorating,
     [OBJ_EVENT_GFX_LUNA_FEMALE_NORMAL] =       &gObjectEventGraphicsInfo_LunaFemaleNormal,
     [OBJ_EVENT_GFX_LUNA_FEMALE_MACH_BIKE] =    &gObjectEventGraphicsInfo_LunaFemaleMachBike,
+    [OBJ_EVENT_GFX_LUNA_FEMALE_ACRO_BIKE] =    &gObjectEventGraphicsInfo_LunaFemaleAcroBike,
     [OBJ_EVENT_GFX_LUNA_FEMALE_SURFING] =      &gObjectEventGraphicsInfo_LunaFemaleSurfing,
     [OBJ_EVENT_GFX_LUNA_FEMALE_FIELD_MOVE] =   &gObjectEventGraphicsInfo_LunaFemaleFieldMove,
     [OBJ_EVENT_GFX_LUNA_FEMALE_UNDERWATER] =   &gObjectEventGraphicsInfo_LunaFemaleUnderwater,
