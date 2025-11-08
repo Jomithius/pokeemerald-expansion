@@ -204,15 +204,14 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	setvar VAR_MISA_STATE, 8
-	warp MAP_EVER_GRANDE_CITY, 18, 11
+	setflag FLAG_DEFEATED_VOLCARONA
+	warp MAP_MIRAGE_TOWER_3F, 9, 8
 	waitstate
 	release
 	end
 
 Debug_EventScript_Script_8::
-	clearflag FLAG_RECEIVED_PORYGON
-	warp MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP, 8, 3
+	warp MAP_ROUTE112_CABLE_CAR_STATION, 6, 7
 	waitstate
 	release
 	end

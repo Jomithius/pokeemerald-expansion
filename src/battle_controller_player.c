@@ -1885,7 +1885,7 @@ u32 LinkPlayerGetTrainerPicId(u32 multiplayerId)
     else if (version == VERSION_RUBY || version == VERSION_SAPPHIRE)
         trainerPicId = gender + TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN;
     else
-        trainerPicId = gender + TRAINER_BACK_PIC_BRENDAN;
+        trainerPicId = gender + TRAINER_BACK_PIC_LUNA_MALE;
 
     return trainerPicId;
 }
@@ -1897,7 +1897,7 @@ static u32 PlayerGetTrainerBackPicId(void)
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
         trainerPicId = LinkPlayerGetTrainerPicId(GetMultiplayerId());
     else
-        trainerPicId = gSaveBlock2Ptr->playerGender + TRAINER_BACK_PIC_BRENDAN;
+        trainerPicId = gSaveBlock2Ptr->playerGender + TRAINER_BACK_PIC_LUNA_MALE;
 
     return trainerPicId;
 }

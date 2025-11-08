@@ -368,6 +368,8 @@ const u8 gTrainerBackPic_LunaFemale[] = INCBIN_U8("graphics/trainers/back_pics/l
 const u32 gTrainerBackPicPalette_Red[] = INCBIN_U32("graphics/trainers/back_pics/red.gbapal.lz");
 const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pics/leaf.gbapal.lz");
 const u32 gTrainerBackPicPalette_Momo[] = INCBIN_U32("graphics/trainers/palettes/momoback.gbapal.lz");
+const u32 gTrainerBackPicPalette_LunaMale[] = INCBIN_U32("graphics/trainers/back_pics/luna_male.gbapal.lz");
+const u32 gTrainerBackPicPalette_LunaFemale[] = INCBIN_U32("graphics/trainers/back_pics/luna_female.gbapal.lz");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -675,6 +677,6 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_WALLY, 4, gTrainerBackPic_Wally, gTrainerBackPicTable_Wally, gTrainerPalette_Wally, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_STEVEN, 4, gTrainerBackPic_Steven, gTrainerBackPicTable_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MOMO, 5, gTrainerBackPic_Momo, gTrainerBackPicTable_Momo, gTrainerBackPicPalette_Momo, sBackAnims_Kanto),
-    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUNA_MALE, 5, gTrainerBackPic_LunaMale, gTrainerBackPicTable_LunaMale, gTrainerPalette_LunaMale, sBackAnims_Kanto),
-    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUNA_FEMALE, 5, gTrainerBackPic_LunaFemale, gTrainerBackPicTable_LunaFemale, gTrainerPalette_LunaFemale, sBackAnims_Kanto),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUNA_MALE, 5, gTrainerBackPic_LunaMale, gTrainerBackPicTable_LunaMale, gTrainerBackPicPalette_LunaMale, sBackAnims_Kanto),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUNA_FEMALE, 5, gTrainerBackPic_LunaFemale, gTrainerBackPicTable_LunaFemale, gTrainerBackPicPalette_LunaFemale, sBackAnims_Kanto),
 };
