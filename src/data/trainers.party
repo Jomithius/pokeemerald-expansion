@@ -5319,7 +5319,7 @@ IVs: 30 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 - Swift
 
 Fletchinder (M) @ Sitrus Berry  
-Ability: Gale Wings  
+Ability: Flame Body  
 Level: 34  
 EVs: 4 HP / 244 Atk / 60 Def / 80 SpD / 104 Spe  
 Jolly Nature  
@@ -5332,8 +5332,7 @@ Ability: Flame Body
 Level: 34  
 EVs: 224 HP / 20 Def / 168 SpA / 72 SpD / 16 Spe  
 Modest Nature  
-IVs: 0 Atk  
-- Confuse Ray  
+IVs: 0 Atk   
 - Hex  
 - Overheat  
 - Will-O-Wisp  
@@ -5344,8 +5343,7 @@ Level: 34
 EVs: 104 HP / 144 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Growth  
-- Synthesis  
+- Growth   
 - Venoshock
 - Giga Drain  
 
@@ -5356,8 +5354,7 @@ EVs: 20 Def / 240 SpA / 248 Spe
 Serious Nature  
 IVs: 0 Atk  
 - Mystical Fire
-- Psyshock  
-- Work Up  
+- Psyshock    
 - Shock Wave  
 
 Ampharos (M) @ Misty Seed 
@@ -5369,7 +5366,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
 - Discharge  
 - Power Gem  
 - Swift  
-- Hidden Power
 
 === TRAINER_NORMAN_1 === /* FUNCTIONALLY UNUSED */
 Name: LUNA
@@ -16422,7 +16418,7 @@ Chandelure (M) @ Misty Seed
 Ability: Infiltrator
 EVs: 252 HP / 252 SpA / 4 SpD
 Modest Nature  
-- Flamethrower  
+- Overheat  
 - Shadow Ball  
 - Energy Ball  
 - Clear Smog  
@@ -16437,9 +16433,8 @@ Modest Nature
 - Tera Blast  
 - Growth  
 
-Inteleon @ Scope Lens  
-Ability: Sniper  
-Tera Type: Water  
+Inteleon @ Utility Umbrella  
+Ability: Sniper    
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -25033,17 +25028,16 @@ IVs: 30 HP / 31 Atk / 31 Def / 25 SpA / 31 SpD / 31 Spe
 - Extrasensory  
 
 Fletchinder (M) @ Sitrus Berry  
-Ability: Gale Wings  
+Ability: Flame Body  
 Level: 33   
 Jolly Nature  
-- Acrobatics  
+- Aerial Ace  
 - Flame Charge   
 
 Lampent (M) @ White Herb  
 Ability: Flame Body  
 Level: 33 
-Modest Nature  
-IVs: 0 Atk  
+Serious Nature   
 - Hex  
 - Overheat  
 - Will-O-Wisp  
@@ -25051,7 +25045,7 @@ IVs: 0 Atk
 Vileplume @ Black Sludge  
 Ability: Chlorophyll  
 Level: 33 
-Modest Nature  
+Serious Nature  
 IVs: 0 Atk  
 - Venoshock
 - Giga Drain  
@@ -25064,10 +25058,10 @@ IVs: 0 Atk
 - Mystical Fire
 - Psyshock   
 
-Ampharos (M) @ Misty Seed
+Ampharos (M) @ Magnet
 Ability: Static  
 Level: 34 
-Modest Nature  
+Serious Nature  
 - Discharge  
 - Power Gem  
 - Swift  
@@ -30260,22 +30254,22 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Torkoal (M)
-Level: 37
+Level: 35
 
 Swellow (F)
-Level: 37
+Level: 35
 
 Tropius (M)
 Level: 36
 
 Nuzleaf (M)
-Level: 37
+Level: 36
 
 Aggron (M)
 Level: 36
 
 Sceptile (M)
-Level: 38
+Level: 36
 - Leaf Blade
 - Giga Drain
 
@@ -30687,12 +30681,12 @@ Eevee (F)
 Level: 36
 
 Munchlax (M)
-Level: 37
+Level: 36
 - Body Slam
 - Bite
 
-Combusken (M)
-Level: 38
+Blaziken (M)
+Level: 36
 
 === TRAINER_ISAAC_1 ===
 Name: ISAAC
@@ -32724,7 +32718,7 @@ Serious Nature
 - Rock Blast  
 - Ice Shard  
 
-Morgrem @ Eviolite 
+Morgrem @ Fairy Feather
 Ability: Prankster  
 Level: 40     
 EVs: 64 HP    
@@ -36411,7 +36405,7 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Pink
 
-Ninetales (F) @ Heat Rock  
+Ninetales (F) @ Charcoal 
 Ability: Drought 
 EVs: 252 HP / 4 SpD   
 Timid Nature  
@@ -36435,7 +36429,7 @@ EVs: 252 HP / 4 SpD
 Tera Type: Ghost   
 Timid Nature  
 IVs: 0 Atk  
-- Flamethrower  
+- Overheat  
 - Shadow Ball   
 
 Scovillain @ Wise Glasses  
@@ -39227,15 +39221,15 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Raticate (M) @ Oran Berry  
 Ability: Run Away  
 Level: 16  
-IVs: 18 HP / 15 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe  
+IVs: 18 HP / 10 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe  
 - Bite  
 - Quick Attack
 
 Raticate-Alola-Totem (M) @ Oran Berry  
 Ability: Thick Fat 
 Level: 16 
-IVs: 18 HP / 15 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe   
-- Assurance
+IVs: 15 HP / 10 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe   
+- Bite
 - Quick Attack  
 
 === TRAINER_ASAK ===

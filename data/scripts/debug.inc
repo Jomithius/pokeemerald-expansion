@@ -204,8 +204,8 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	setflag FLAG_DEFEATED_VOLCARONA
-	warp MAP_MIRAGE_TOWER_3F, 9, 8
+	setvar VAR_MOMO_ARIA_STATE, 6
+	warp MAP_EASTERN_RUINS, 16, 3
 	waitstate
 	release
 	end

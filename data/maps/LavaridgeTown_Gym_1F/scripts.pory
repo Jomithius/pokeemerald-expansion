@@ -90,7 +90,7 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 	setflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
 	setvar VAR_LAVARIDGE_TOWN_STATE, 1
 	call LavaridgeTown_Gym_1F_EventScript_GiveOverheat
-	closemessage
+	@ closemessage
 	delay 30
     call LavaridgeTown_Gym_1F_EventScript_GiveMysticalFire
     closemessage

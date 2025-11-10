@@ -167,7 +167,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	playfanfare MUS_REGISTER_MATCH_CALL
 	msgbox DewfordTown_Gym_Text_RegisteredBrawly, MSGBOX_DEFAULT
 	waitfanfare
-	closemessage
+	@ closemessage
     call DewfordTown_Gym_EventScript_GiveDazzlingGleam
 	delay 30
 	setflag FLAG_ENABLE_BRAWLY_MATCH_CALL

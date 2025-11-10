@@ -337,7 +337,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 # 169 "data/maps/DewfordTown_Gym/scripts.pory"
 	waitfanfare
 # 170 "data/maps/DewfordTown_Gym/scripts.pory"
-	closemessage
+	@ closemessage
 # 171 "data/maps/DewfordTown_Gym/scripts.pory"
     call DewfordTown_Gym_EventScript_GiveDazzlingGleam
 # 172 "data/maps/DewfordTown_Gym/scripts.pory"

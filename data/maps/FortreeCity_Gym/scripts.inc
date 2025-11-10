@@ -119,9 +119,9 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 # 60 "data/maps/FortreeCity_Gym/scripts.pory"
 	call FortreeCity_Gym_EventScript_GiveAerialAce
 # 61 "data/maps/FortreeCity_Gym/scripts.pory"
-	closemessage
+	@ closemessage
 # 62 "data/maps/FortreeCity_Gym/scripts.pory"
-	delay 30
+	@ delay 30
 # 63 "data/maps/FortreeCity_Gym/scripts.pory"
     call FortreeCity_Gym_EventScript_GiveStoneEdge
 # 64 "data/maps/FortreeCity_Gym/scripts.pory"

@@ -183,7 +183,7 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 # 92 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	call LavaridgeTown_Gym_1F_EventScript_GiveOverheat
 # 93 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	closemessage
+	@ closemessage
 # 94 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	delay 30
 # 95 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

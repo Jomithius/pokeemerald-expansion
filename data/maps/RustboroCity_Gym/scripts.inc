@@ -507,7 +507,7 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 # 254 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Well, I'm glad to hear it!\p"
 # 255 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "Me and MAGMORTAR are excited\n"
+	.string "Me and KING HENRY are excited\n"
 # 256 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "to see how strong you'll get.\p"
 # 257 "data/maps/RustboroCity_Gym/scripts.pory"

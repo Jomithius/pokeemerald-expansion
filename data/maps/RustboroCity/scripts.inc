@@ -3011,7 +3011,7 @@ RustboroCity_EventScript_ImportanceOfStatEditor_Text_2:
 
 RustboroMisa1::
 # 1437 "data/maps/RustboroCity/scripts.pory"
-	.string "Oh! Excuse me.\n I didn't see you there.\p My name's MISA.\n … … … …\p {PLAYER}? I see.\n That's a nice name!\p And that {STR_VAR_1}… So cute!\n So you're a new TRAINER? That's great!\p  It looks like you're already raising\n your POKéMON with love and care.\p I actually have a son around the\n same age as you.\p He's also starting his journey soon.\n He should be on ROUTE 115 preparing.$"
+	.string "???: Oh! Excuse me.\n I didn't see you there.\p My name's MISA.\n … … … …\p MISA: {PLAYER}? I see.\n That's a nice name!\p And that {STR_VAR_1}… So cute!\n So you're a new TRAINER? That's great!\p  It looks like you're already raising\n your POKéMON with love and care.\p I actually have a son around the\n same age as you.\p He's also starting his journey soon.\n He should be on ROUTE 115 preparing.$"
 
 RustboroMisa4::
 # 1452 "data/maps/RustboroCity/scripts.pory"

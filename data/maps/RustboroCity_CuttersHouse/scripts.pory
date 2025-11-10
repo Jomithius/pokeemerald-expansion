@@ -56,8 +56,9 @@ script RustboroCity_CuttersHouse_EventScript_IncinerateTutor{
     lock
 	faceplayer
     msgbox("We don't only CUT down to trees\n
-        to maintain the forest, we also do\l
-        controlled burns using POKéMON.\p
+        to maintain the forest.\p
+		We also do controlled burns using\n
+		POKéMON that can use INCINERATE.\p
         If you want, I can teach your POKéMON\n
         how to INCINERATE trees too.", MSGBOX_YESNO)
 	waitmessage

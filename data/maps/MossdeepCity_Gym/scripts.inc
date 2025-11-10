@@ -169,9 +169,9 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 # 85 "data/maps/MossdeepCity_Gym/scripts.pory"
 	call MossdeepCity_Gym_EventScript_GiveCalmMind
 # 86 "data/maps/MossdeepCity_Gym/scripts.pory"
-	closemessage
+	@ closemessage
 # 87 "data/maps/MossdeepCity_Gym/scripts.pory"
-	delay 30
+	@ delay 30
 # 88 "data/maps/MossdeepCity_Gym/scripts.pory"
     call MossdeepCity_Gym_EventScript_GiveNastyPlot
 # 89 "data/maps/MossdeepCity_Gym/scripts.pory"

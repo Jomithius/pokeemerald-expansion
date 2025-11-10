@@ -43,15 +43,15 @@
             .species = SPECIES_METAGROSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15
-            .heldItem = ITEM_METAL_COAT,
+            .heldItem = ITEM_COLBUR_BERRY,
 #line 19
-            .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 6, 0),
+            .ev = TRAINER_PARTY_EVS(252, 252, 6, 0, 0, 0),
 #line 18
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 17
             .lvl = 55,
 #line 16
-            .nature = NATURE_BRAVE,
+            .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 20
@@ -68,7 +68,7 @@
 #line 25
             .heldItem = ITEM_ROCKY_HELMET,
 #line 29
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 6, 252),
+            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
 #line 28
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 27
@@ -78,8 +78,8 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 30
-                MOVE_TOXIC,
-                MOVE_AIR_SLASH,
+                MOVE_ROOST,
+                MOVE_BRAVE_BIRD,
                 MOVE_PROTECT,
                 MOVE_IRON_HEAD,
             },
@@ -187,7 +187,7 @@ F_TRAINER_FEMALE |
 #line 73
             .heldItem = ITEM_DRAGONITEITE,
 #line 77
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
+            .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
 #line 79
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 74
@@ -195,16 +195,16 @@ F_TRAINER_FEMALE |
 #line 75
             .lvl = 100,
 #line 78
-            .nature = NATURE_JOLLY,
+            .nature = NATURE_TIMID,
 #line 76
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 79
-                MOVE_BREAKING_SWIPE,
-                MOVE_ROCK_SLIDE,
-                MOVE_EXTREME_SPEED,
-                MOVE_DUAL_WINGBEAT,
+                MOVE_DRACO_METEOR,
+                MOVE_AIR_SLASH,
+                MOVE_ICY_WIND,
+                MOVE_HEAT_WAVE,
             },
             },
         },
@@ -288,7 +288,7 @@ F_TRAINER_FEMALE |
 #line 112
             .heldItem = ITEM_DRAGONITEITE,
 #line 116
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
+            .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
 #line 118
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 113
@@ -296,16 +296,16 @@ F_TRAINER_FEMALE |
 #line 114
             .lvl = 100,
 #line 117
-            .nature = NATURE_JOLLY,
+            .nature = NATURE_TIMID,
 #line 115
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 118
-                MOVE_BREAKING_SWIPE,
-                MOVE_ROCK_SLIDE,
-                MOVE_EXTREME_SPEED,
-                MOVE_DUAL_WINGBEAT,
+                MOVE_DRACO_METEOR,
+                MOVE_AIR_SLASH,
+                MOVE_ICY_WIND,
+                MOVE_HEAT_WAVE,
             },
             },
         },

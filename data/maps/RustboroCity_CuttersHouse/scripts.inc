@@ -108,55 +108,55 @@ RustboroCity_CuttersHouse_EventScript_IncinerateTutor::
 	faceplayer
 # 58 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	msgbox RustboroCity_CuttersHouse_EventScript_IncinerateTutor_Text_0, MSGBOX_YESNO
-# 63 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	waitmessage
 # 64 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_IncinerateDeclined
+	waitmessage
 # 65 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	msgbox RustboroCity_CuttersHouse_EventScript_IncinerateTutor_Text_1, MSGBOX_DEFAULT
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_IncinerateDeclined
 # 66 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	setvar VAR_0x8005, MOVE_INCINERATE
+	msgbox RustboroCity_CuttersHouse_EventScript_IncinerateTutor_Text_1, MSGBOX_DEFAULT
 # 67 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	call MoveTutor_EventScript_OpenPartyMenu
+	setvar VAR_0x8005, MOVE_INCINERATE
 # 68 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_IncinerateDeclined
+	call MoveTutor_EventScript_OpenPartyMenu
 # 69 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_IncinerateDeclined
+# 70 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	goto MoveTutor_EventScript_IncinerateTaught
 	end
 
 
 MoveTutor_EventScript_IncinerateDeclined::
-# 74 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+# 75 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	msgbox MoveTutor_EventScript_IncinerateDeclined_Text_0, MSGBOX_AUTOCLOSE
-# 77 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	waitmessage
 # 78 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+	waitmessage
+# 79 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	release
 	end
 
 
 MoveTutor_EventScript_IncinerateTaught::
-# 83 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+# 84 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	msgbox MoveTutor_EventScript_IncinerateTaught_Text_0, MSGBOX_AUTOCLOSE
-# 85 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	waitmessage
 # 86 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+	waitmessage
+# 87 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	release
 	end
 
 
 RustboroCity_CuttersHouse_EventScript_IncinerateTutor_Text_0:
 # 58 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	.string "We don't only CUT down to trees\n to maintain the forest, we also do\l controlled burns using POKéMON.\p If you want, I can teach your POKéMON\n how to INCINERATE trees too.$"
+	.string "We don't only CUT down to trees\n to maintain the forest.\p We also do controlled burns using\n POKéMON that can use INCINERATE.\p If you want, I can teach your POKéMON\n how to INCINERATE trees too.$"
 
 RustboroCity_CuttersHouse_EventScript_IncinerateTutor_Text_1:
-# 65 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+# 66 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "Which POKéMON do you want to\nteach INCINERATE to?$"
 
 MoveTutor_EventScript_IncinerateDeclined_Text_0:
-# 74 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+# 75 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "Okay!\p Come back if you want to learn\n about controlled burns.$"
 
 MoveTutor_EventScript_IncinerateTaught_Text_0:
-# 83 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+# 84 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "Come back if you want to learn\n more about controlled burns!$"

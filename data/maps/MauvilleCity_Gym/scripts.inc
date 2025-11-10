@@ -247,7 +247,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 # 124 "data/maps/MauvilleCity_Gym/scripts.pory"
 	waitfanfare
 # 125 "data/maps/MauvilleCity_Gym/scripts.pory"
-	closemessage
+	@ closemessage
 # 126 "data/maps/MauvilleCity_Gym/scripts.pory"
     call MauvilleCity_Gym_EventScript_GiveVoltSwitch
 # 127 "data/maps/MauvilleCity_Gym/scripts.pory"

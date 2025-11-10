@@ -1434,11 +1434,11 @@ script RustboroCityGym_EventScript_Misa{
 	end
 }
 
-text RustboroMisa1{"Oh! Excuse me.\n
+text RustboroMisa1{"???: Oh! Excuse me.\n
 I didn't see you there.\p
 My name's MISA.\n
 … … … …\p
-{PLAYER}? I see.\n
+MISA: {PLAYER}? I see.\n
 That's a nice name!\p
 And that {STR_VAR_1}… So cute!\n
 So you're a new TRAINER? That's great!\p 
