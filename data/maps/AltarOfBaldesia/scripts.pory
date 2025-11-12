@@ -500,6 +500,9 @@ script AltarOfBaldesia_EventScript_PecharuntAmbush{
         We should head back to the MAIN HOUSE.\n
         The Chief and Madam should be waiting.", MSGBOX_AUTOCLOSE)
     waitmessage
+    if(var(VAR_STARTER_MEGA_STONE) == 11){ // froakie, for momo
+        givemon(SPECIES_OKIDOGI, 70, ITEM_JOLLY_MINT, ITEM_MOON_BALL, NATURE_JOLLY, 0, MON_MALE, 0, 255, 0, 255, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_THUNDER_PUNCH, MOVE_POISON_JAB, MOVE_ICE_PUNCH, MOVE_BULK_UP)
+    }
     setflag(FLAG_HIDE_BENNIS_JIRACHIS_ALTAR)
     setflag(FLAG_HIDE_LOHAN_JIRACHIS_ALTAR)
     setflag(FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR)

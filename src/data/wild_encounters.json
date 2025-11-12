@@ -477,7 +477,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_STUNKY"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 4,
@@ -1186,7 +1186,7 @@
               {
                 "min_level": 24,
                 "max_level": 26,
-                "species": "SPECIES_LOTAD"
+                "species": "SPECIES_BIDOOF"
               },
               {
                 "min_level": 24,
@@ -12952,63 +12952,63 @@
             "encounter_rate": 15,
             "mons": [
               {
-                "min_level": 13,
-                "max_level": 13,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_COMBEE"
               },
               {
-                "min_level": 14,
-                "max_level": 14,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_HERACROSS"
               },
               {
-                "min_level": 12,
-                "max_level": 12,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_SPRITZEE"
               },
               {
-                "min_level": 13,
-                "max_level": 13,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_CUBONE"
               },
               {
-                "min_level": 12,
-                "max_level": 15,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_HOUNDOUR"
               },
               {
-                "min_level": 13,
-                "max_level": 13,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_SOLOSIS"
               },
               {
-                "min_level": 14,
-                "max_level": 14,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_SOLOSIS"
               },
               {
-                "min_level": 13,
-                "max_level": 14,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_FARFETCHD_GALAR"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_FARFETCHD"
               },
               {
-                "min_level": 13,
-                "max_level": 13,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_FARFETCHD_GALAR"
               },
               {
-                "min_level": 14,
-                "max_level": 14,
+                "min_level": 18,
+                "max_level": 20,
                 "species": "SPECIES_PACHIRISU"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
+                "min_level": 18,
+                "max_level": 18,
                 "species": "SPECIES_PACHIRISU"
               }
             ]
@@ -13187,7 +13187,7 @@
               {
                 "min_level": 17,
                 "max_level": 19,
-                "species": "SPECIES_SHINX"
+                "species": "SPECIES_ZIGZAGOON_GALAR"
               },
               {
                 "min_level": 17,

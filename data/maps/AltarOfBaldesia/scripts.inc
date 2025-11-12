@@ -868,34 +868,38 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_1:
 # 502 "data/maps/AltarOfBaldesia/scripts.pory"
 	waitmessage
 # 503 "data/maps/AltarOfBaldesia/scripts.pory"
-	setflag FLAG_HIDE_BENNIS_JIRACHIS_ALTAR
-# 504 "data/maps/AltarOfBaldesia/scripts.pory"
-	setflag FLAG_HIDE_LOHAN_JIRACHIS_ALTAR
-# 505 "data/maps/AltarOfBaldesia/scripts.pory"
-	setflag FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR
+	compare VAR_STARTER_MEGA_STONE, 11
+	goto_if_eq AltarOfBaldesia_EventScript_PecharuntAmbush_6
+AltarOfBaldesia_EventScript_PecharuntAmbush_5:
 # 506 "data/maps/AltarOfBaldesia/scripts.pory"
-	setflag FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR
+	setflag FLAG_HIDE_BENNIS_JIRACHIS_ALTAR
 # 507 "data/maps/AltarOfBaldesia/scripts.pory"
-	clearflag FLAG_FEZANDIPITI_EASTERN_RUINS
+	setflag FLAG_HIDE_LOHAN_JIRACHIS_ALTAR
 # 508 "data/maps/AltarOfBaldesia/scripts.pory"
-	clearflag FLAG_MUNKIDORI_EASTERN_RUINS
+	setflag FLAG_HIDE_PECHARUNT_JIRACHIS_ALTAR
 # 509 "data/maps/AltarOfBaldesia/scripts.pory"
-	clearflag FLAG_PECHARUNT_EASTERN_RUINS
+	setflag FLAG_HIDE_LOYAL_THREE_JIRACHIS_ALTAR
 # 510 "data/maps/AltarOfBaldesia/scripts.pory"
-	setvar VAR_MOMO_ARIA_STATE, 7
+	clearflag FLAG_FEZANDIPITI_EASTERN_RUINS
 # 511 "data/maps/AltarOfBaldesia/scripts.pory"
-	setvar VAR_BALDESIA_FOREST_STATE, 1
+	clearflag FLAG_MUNKIDORI_EASTERN_RUINS
 # 512 "data/maps/AltarOfBaldesia/scripts.pory"
-	setflag FLAG_REMOVE_WARP_FADE
+	clearflag FLAG_PECHARUNT_EASTERN_RUINS
 # 513 "data/maps/AltarOfBaldesia/scripts.pory"
-	setflag FLAG_COMPLETED_BALDESIA
+	setvar VAR_MOMO_ARIA_STATE, 7
 # 514 "data/maps/AltarOfBaldesia/scripts.pory"
-	playse SE_FLEE
+	setvar VAR_BALDESIA_FOREST_STATE, 1
 # 515 "data/maps/AltarOfBaldesia/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	setflag FLAG_REMOVE_WARP_FADE
 # 516 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitse
+	setflag FLAG_COMPLETED_BALDESIA
 # 517 "data/maps/AltarOfBaldesia/scripts.pory"
+	playse SE_FLEE
+# 518 "data/maps/AltarOfBaldesia/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 519 "data/maps/AltarOfBaldesia/scripts.pory"
+	waitse
+# 520 "data/maps/AltarOfBaldesia/scripts.pory"
 	warpsilent MAP_BALDESIA_MAIN_HOUSE, 13, 7
 	end
 
@@ -904,545 +908,550 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_2:
 	setwildbattle SPECIES_PECHARUNT, 90
 	goto AltarOfBaldesia_EventScript_PecharuntAmbush_1
 
+AltarOfBaldesia_EventScript_PecharuntAmbush_6:
+# 504 "data/maps/AltarOfBaldesia/scripts.pory"
+	givemon SPECIES_OKIDOGI, 70, ITEM_JOLLY_MINT, ITEM_MOON_BALL, NATURE_JOLLY, 0, MON_MALE, 0, 255, 0, 255, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_THUNDER_PUNCH, MOVE_POISON_JAB, MOVE_ICE_PUNCH, MOVE_BULK_UP
+	goto AltarOfBaldesia_EventScript_PecharuntAmbush_5
+
 
 AltarOfBaldesia_EventScript_Jirachi::
-# 522 "data/maps/AltarOfBaldesia/scripts.pory"
-	lock
-# 523 "data/maps/AltarOfBaldesia/scripts.pory"
-	checkitem ITEM_POKE_FLUTE
-# 524 "data/maps/AltarOfBaldesia/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn
 # 525 "data/maps/AltarOfBaldesia/scripts.pory"
-	goto_if_eq VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle
+	lock
 # 526 "data/maps/AltarOfBaldesia/scripts.pory"
-	goto_if_eq VAR_JIRACHI_COUNTER, 10, AltarOfBaldesia_EventScript_ShouldntTryAgain
+	checkitem ITEM_POKE_FLUTE
 # 527 "data/maps/AltarOfBaldesia/scripts.pory"
-	msgbox AltarOfBaldesia_EventScript_Jirachi_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn
+# 528 "data/maps/AltarOfBaldesia/scripts.pory"
+	goto_if_eq VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle
 # 529 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmessage
+	goto_if_eq VAR_JIRACHI_COUNTER, 10, AltarOfBaldesia_EventScript_ShouldntTryAgain
 # 530 "data/maps/AltarOfBaldesia/scripts.pory"
+	msgbox AltarOfBaldesia_EventScript_Jirachi_Text_0, MSGBOX_YESNO
+# 532 "data/maps/AltarOfBaldesia/scripts.pory"
+	waitmessage
+# 533 "data/maps/AltarOfBaldesia/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, AltarOfBaldesia_EventScript_TryAwakenJirachi
-# 531 "data/maps/AltarOfBaldesia/scripts.pory"
+# 534 "data/maps/AltarOfBaldesia/scripts.pory"
 	release
 	end
 
 
 AltarOfBaldesia_EventScript_ShouldntTryAgain::
-# 536 "data/maps/AltarOfBaldesia/scripts.pory"
+# 539 "data/maps/AltarOfBaldesia/scripts.pory"
 	lock
-# 537 "data/maps/AltarOfBaldesia/scripts.pory"
+# 540 "data/maps/AltarOfBaldesia/scripts.pory"
 	msgbox AltarOfBaldesia_EventScript_ShouldntTryAgain_Text_0, MSGBOX_AUTOCLOSE
-# 542 "data/maps/AltarOfBaldesia/scripts.pory"
+# 545 "data/maps/AltarOfBaldesia/scripts.pory"
 	waitmessage
-# 543 "data/maps/AltarOfBaldesia/scripts.pory"
+# 546 "data/maps/AltarOfBaldesia/scripts.pory"
 	release
 	end
 
 
 AltarOfBaldesia_EventScript_TryAwakenJirachi::
-# 548 "data/maps/AltarOfBaldesia/scripts.pory"
-	lock
-# 549 "data/maps/AltarOfBaldesia/scripts.pory"
-	fadenewbgm MUS_NONE
-# 550 "data/maps/AltarOfBaldesia/scripts.pory"
-	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_0, MSGBOX_AUTOCLOSE
 # 551 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmessage
+	lock
 # 552 "data/maps/AltarOfBaldesia/scripts.pory"
-	playbgm MUS_RG_JIGGLYPUFF, FALSE
+	fadenewbgm MUS_NONE
 # 553 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay 450
+	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_0, MSGBOX_AUTOCLOSE
 # 554 "data/maps/AltarOfBaldesia/scripts.pory"
-	addvar VAR_JIRACHI_COUNTER, 1
+	waitmessage
 # 555 "data/maps/AltarOfBaldesia/scripts.pory"
-	goto_if_eq VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle
+	playbgm MUS_RG_JIGGLYPUFF, FALSE
 # 556 "data/maps/AltarOfBaldesia/scripts.pory"
-	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_1, MSGBOX_YESNO
+	delay 450
+# 557 "data/maps/AltarOfBaldesia/scripts.pory"
+	addvar VAR_JIRACHI_COUNTER, 1
 # 558 "data/maps/AltarOfBaldesia/scripts.pory"
+	goto_if_eq VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle
+# 559 "data/maps/AltarOfBaldesia/scripts.pory"
+	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_1, MSGBOX_YESNO
+# 561 "data/maps/AltarOfBaldesia/scripts.pory"
 	waitmessage
 AltarOfBaldesia_EventScript_TryAwakenJirachi_2:
-# 559 "data/maps/AltarOfBaldesia/scripts.pory"
+# 562 "data/maps/AltarOfBaldesia/scripts.pory"
 	compare VAR_JIRACHI_COUNTER, 7
 	goto_if_le AltarOfBaldesia_EventScript_TryAwakenJirachi_4
 AltarOfBaldesia_EventScript_TryAwakenJirachi_1:
-# 569 "data/maps/AltarOfBaldesia/scripts.pory"
+# 572 "data/maps/AltarOfBaldesia/scripts.pory"
 	compare VAR_JIRACHI_COUNTER, 8
 	goto_if_eq AltarOfBaldesia_EventScript_TryAwakenJirachi_9
 AltarOfBaldesia_EventScript_TryAwakenJirachi_7:
-# 576 "data/maps/AltarOfBaldesia/scripts.pory"
+# 579 "data/maps/AltarOfBaldesia/scripts.pory"
 	goto_if_eq VAR_JIRACHI_COUNTER, 9, AltarOfBaldesia_EventScript_JirachiBattle
-# 577 "data/maps/AltarOfBaldesia/scripts.pory"
+# 580 "data/maps/AltarOfBaldesia/scripts.pory"
 	fadedefaultbgm
-# 578 "data/maps/AltarOfBaldesia/scripts.pory"
+# 581 "data/maps/AltarOfBaldesia/scripts.pory"
 	release
 	end
 
 AltarOfBaldesia_EventScript_TryAwakenJirachi_3:
-# 560 "data/maps/AltarOfBaldesia/scripts.pory"
-	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_0, MSGBOX_AUTOCLOSE
-# 561 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmessage
-# 562 "data/maps/AltarOfBaldesia/scripts.pory"
-	playbgm MUS_RG_JIGGLYPUFF, FALSE
 # 563 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay 450
+	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_0, MSGBOX_AUTOCLOSE
 # 564 "data/maps/AltarOfBaldesia/scripts.pory"
-	addvar VAR_JIRACHI_COUNTER, 1
+	waitmessage
 # 565 "data/maps/AltarOfBaldesia/scripts.pory"
-	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_1, MSGBOX_YESNO
+	playbgm MUS_RG_JIGGLYPUFF, FALSE
+# 566 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay 450
 # 567 "data/maps/AltarOfBaldesia/scripts.pory"
+	addvar VAR_JIRACHI_COUNTER, 1
+# 568 "data/maps/AltarOfBaldesia/scripts.pory"
+	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_1, MSGBOX_YESNO
+# 570 "data/maps/AltarOfBaldesia/scripts.pory"
 	waitmessage
 	goto AltarOfBaldesia_EventScript_TryAwakenJirachi_2
 
 AltarOfBaldesia_EventScript_TryAwakenJirachi_4:
-# 559 "data/maps/AltarOfBaldesia/scripts.pory"
+# 562 "data/maps/AltarOfBaldesia/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq AltarOfBaldesia_EventScript_TryAwakenJirachi_3
 	goto AltarOfBaldesia_EventScript_TryAwakenJirachi_1
 
 AltarOfBaldesia_EventScript_TryAwakenJirachi_8:
-# 570 "data/maps/AltarOfBaldesia/scripts.pory"
-	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_0, MSGBOX_AUTOCLOSE
-# 571 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmessage
-# 572 "data/maps/AltarOfBaldesia/scripts.pory"
-	playbgm MUS_RG_JIGGLYPUFF, FALSE
 # 573 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay 450
+	msgbox AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_0, MSGBOX_AUTOCLOSE
 # 574 "data/maps/AltarOfBaldesia/scripts.pory"
+	waitmessage
+# 575 "data/maps/AltarOfBaldesia/scripts.pory"
+	playbgm MUS_RG_JIGGLYPUFF, FALSE
+# 576 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay 450
+# 577 "data/maps/AltarOfBaldesia/scripts.pory"
 	addvar VAR_JIRACHI_COUNTER, 1
 	goto AltarOfBaldesia_EventScript_TryAwakenJirachi_7
 
 AltarOfBaldesia_EventScript_TryAwakenJirachi_9:
-# 569 "data/maps/AltarOfBaldesia/scripts.pory"
+# 572 "data/maps/AltarOfBaldesia/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq AltarOfBaldesia_EventScript_TryAwakenJirachi_8
 	goto AltarOfBaldesia_EventScript_TryAwakenJirachi_7
 
 
 AltarOfBaldesia_EventScript_JirachiBattle::
-# 584 "data/maps/AltarOfBaldesia/scripts.pory"
-	lock
-# 585 "data/maps/AltarOfBaldesia/scripts.pory"
-	playse SE_PIN
-# 586 "data/maps/AltarOfBaldesia/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 # 587 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmovement 0
+	lock
 # 588 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitse
+	playse SE_PIN
 # 589 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay 16
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 # 590 "data/maps/AltarOfBaldesia/scripts.pory"
-	playse SE_M_THUNDER_WAVE
+	waitmovement 0
 # 591 "data/maps/AltarOfBaldesia/scripts.pory"
-	fadescreen FADE_TO_WHITE
+	waitse
 # 592 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitse
+	delay 16
 # 593 "data/maps/AltarOfBaldesia/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 594 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay 30
-# 595 "data/maps/AltarOfBaldesia/scripts.pory"
 	playse SE_M_THUNDER_WAVE
-# 596 "data/maps/AltarOfBaldesia/scripts.pory"
+# 594 "data/maps/AltarOfBaldesia/scripts.pory"
 	fadescreen FADE_TO_WHITE
-# 597 "data/maps/AltarOfBaldesia/scripts.pory"
+# 595 "data/maps/AltarOfBaldesia/scripts.pory"
 	waitse
-# 598 "data/maps/AltarOfBaldesia/scripts.pory"
-	setobjectnewmovementtype 1, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
-# 599 "data/maps/AltarOfBaldesia/scripts.pory"
+# 596 "data/maps/AltarOfBaldesia/scripts.pory"
 	fadescreen FADE_FROM_WHITE
+# 597 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay 30
+# 598 "data/maps/AltarOfBaldesia/scripts.pory"
+	playse SE_M_THUNDER_WAVE
+# 599 "data/maps/AltarOfBaldesia/scripts.pory"
+	fadescreen FADE_TO_WHITE
 # 600 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay 30
+	waitse
 # 601 "data/maps/AltarOfBaldesia/scripts.pory"
-	faceplayer
+	setobjectnewmovementtype 1, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
 # 602 "data/maps/AltarOfBaldesia/scripts.pory"
-	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
+	fadescreen FADE_FROM_WHITE
 # 603 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmoncry
-# 604 "data/maps/AltarOfBaldesia/scripts.pory"
 	delay 30
+# 604 "data/maps/AltarOfBaldesia/scripts.pory"
+	faceplayer
 # 605 "data/maps/AltarOfBaldesia/scripts.pory"
-	playbgm MUS_SEALED_CHAMBER, TRUE
+	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
 # 606 "data/maps/AltarOfBaldesia/scripts.pory"
+	waitmoncry
+# 607 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay 30
+# 608 "data/maps/AltarOfBaldesia/scripts.pory"
+	playbgm MUS_SEALED_CHAMBER, TRUE
+# 609 "data/maps/AltarOfBaldesia/scripts.pory"
 	msgbox AltarOfBaldesia_EventScript_JirachiBattle_Text_0, MSGBOX_AUTOCLOSE
-# 610 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmessage
-# 611 "data/maps/AltarOfBaldesia/scripts.pory"
-	setwildbattle SPECIES_JIRACHI, 75
-# 612 "data/maps/AltarOfBaldesia/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
 # 613 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitstate
+	waitmessage
 # 614 "data/maps/AltarOfBaldesia/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setwildbattle SPECIES_JIRACHI, 75
 # 615 "data/maps/AltarOfBaldesia/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 616 "data/maps/AltarOfBaldesia/scripts.pory"
+	waitstate
+# 617 "data/maps/AltarOfBaldesia/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 618 "data/maps/AltarOfBaldesia/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AltarOfBaldesia_EventScript_JirachiBattle_2
-# 615 "data/maps/AltarOfBaldesia/scripts.pory"
+# 618 "data/maps/AltarOfBaldesia/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AltarOfBaldesia_EventScript_JirachiBattle_2
-# 625 "data/maps/AltarOfBaldesia/scripts.pory"
+# 628 "data/maps/AltarOfBaldesia/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq AltarOfBaldesia_EventScript_JirachiBattle_3
 AltarOfBaldesia_EventScript_JirachiBattle_1:
-# 635 "data/maps/AltarOfBaldesia/scripts.pory"
+# 638 "data/maps/AltarOfBaldesia/scripts.pory"
 	savebgm MUS_DUMMY
-# 636 "data/maps/AltarOfBaldesia/scripts.pory"
+# 639 "data/maps/AltarOfBaldesia/scripts.pory"
 	fadedefaultbgm
-# 637 "data/maps/AltarOfBaldesia/scripts.pory"
+# 640 "data/maps/AltarOfBaldesia/scripts.pory"
 	release
 	end
 
 AltarOfBaldesia_EventScript_JirachiBattle_2:
-# 616 "data/maps/AltarOfBaldesia/scripts.pory"
-	playmoncry SPECIES_JIRACHI, CRY_MODE_WEAK
-# 617 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmoncry
-# 618 "data/maps/AltarOfBaldesia/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
 # 619 "data/maps/AltarOfBaldesia/scripts.pory"
-	setobjectnewmovementtype 1, MOVEMENT_TYPE_NONE
+	playmoncry SPECIES_JIRACHI, CRY_MODE_WEAK
 # 620 "data/maps/AltarOfBaldesia/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	waitmoncry
 # 621 "data/maps/AltarOfBaldesia/scripts.pory"
-	msgbox AltarOfBaldesia_EventScript_JirachiBattle_Text_1, MSGBOX_AUTOCLOSE
+	fadescreenswapbuffers FADE_TO_BLACK
 # 622 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmessage
+	setobjectnewmovementtype 1, MOVEMENT_TYPE_NONE
 # 623 "data/maps/AltarOfBaldesia/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 624 "data/maps/AltarOfBaldesia/scripts.pory"
+	msgbox AltarOfBaldesia_EventScript_JirachiBattle_Text_1, MSGBOX_AUTOCLOSE
+# 625 "data/maps/AltarOfBaldesia/scripts.pory"
+	waitmessage
+# 626 "data/maps/AltarOfBaldesia/scripts.pory"
 	setvar VAR_JIRACHI_COUNTER, 8
 	goto AltarOfBaldesia_EventScript_JirachiBattle_1
 
 AltarOfBaldesia_EventScript_JirachiBattle_3:
-# 626 "data/maps/AltarOfBaldesia/scripts.pory"
-	playmoncry SPECIES_JIRACHI, CRY_MODE_FAINT
-# 627 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmoncry
-# 628 "data/maps/AltarOfBaldesia/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
 # 629 "data/maps/AltarOfBaldesia/scripts.pory"
-	setobjectnewmovementtype 1, MOVEMENT_TYPE_NONE
+	playmoncry SPECIES_JIRACHI, CRY_MODE_FAINT
 # 630 "data/maps/AltarOfBaldesia/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	waitmoncry
 # 631 "data/maps/AltarOfBaldesia/scripts.pory"
-	msgbox AltarOfBaldesia_EventScript_JirachiBattle_Text_2, MSGBOX_AUTOCLOSE
+	fadescreenswapbuffers FADE_TO_BLACK
 # 632 "data/maps/AltarOfBaldesia/scripts.pory"
-	waitmessage
+	setobjectnewmovementtype 1, MOVEMENT_TYPE_NONE
 # 633 "data/maps/AltarOfBaldesia/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 634 "data/maps/AltarOfBaldesia/scripts.pory"
+	msgbox AltarOfBaldesia_EventScript_JirachiBattle_Text_2, MSGBOX_AUTOCLOSE
+# 635 "data/maps/AltarOfBaldesia/scripts.pory"
+	waitmessage
+# 636 "data/maps/AltarOfBaldesia/scripts.pory"
 	addvar VAR_JIRACHI_COUNTER, 1
 	goto AltarOfBaldesia_EventScript_JirachiBattle_1
 
 
-# 675 "data/maps/AltarOfBaldesia/scripts.pory"
+# 678 "data/maps/AltarOfBaldesia/scripts.pory"
 AltarOfBaldesia_Movement_PlayerWalksToMomo:
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 676 "data/maps/AltarOfBaldesia/scripts.pory"
+# 679 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
-# 677 "data/maps/AltarOfBaldesia/scripts.pory"
+# 680 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 680 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_PlayerWalksToMomoRightEntrance:
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 681 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 682 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_left
 # 683 "data/maps/AltarOfBaldesia/scripts.pory"
+AltarOfBaldesia_Movement_PlayerWalksToMomoRightEntrance:
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_up
 # 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 684 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 685 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_left
+# 686 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 687 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 687 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_JirachiLevitate:
-# 688 "data/maps/AltarOfBaldesia/scripts.pory"
-	levitate
-# 689 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay_16
 # 690 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay_16
+AltarOfBaldesia_Movement_JirachiLevitate:
 # 691 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay_16
+	levitate
 # 692 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay_16
+# 693 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay_16
+# 694 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay_16
+# 695 "data/maps/AltarOfBaldesia/scripts.pory"
 	destroy_extra_task
 	step_end
 
-# 695 "data/maps/AltarOfBaldesia/scripts.pory"
+# 698 "data/maps/AltarOfBaldesia/scripts.pory"
 AltarOfBaldesia_Movement_JirachiEndLevitate:
-# 696 "data/maps/AltarOfBaldesia/scripts.pory"
+# 699 "data/maps/AltarOfBaldesia/scripts.pory"
 	levitate
-# 697 "data/maps/AltarOfBaldesia/scripts.pory"
+# 700 "data/maps/AltarOfBaldesia/scripts.pory"
 	stop_levitate
 	step_end
 
-# 700 "data/maps/AltarOfBaldesia/scripts.pory"
+# 703 "data/maps/AltarOfBaldesia/scripts.pory"
 AltarOfBaldesia_Movement_Pecharunt:
-# 701 "data/maps/AltarOfBaldesia/scripts.pory"
+# 704 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 701 "data/maps/AltarOfBaldesia/scripts.pory"
+# 704 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 701 "data/maps/AltarOfBaldesia/scripts.pory"
+# 704 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 701 "data/maps/AltarOfBaldesia/scripts.pory"
+# 704 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 701 "data/maps/AltarOfBaldesia/scripts.pory"
+# 704 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 701 "data/maps/AltarOfBaldesia/scripts.pory"
+# 704 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 701 "data/maps/AltarOfBaldesia/scripts.pory"
+# 704 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 702 "data/maps/AltarOfBaldesia/scripts.pory"
+# 705 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_in_place_fast_right
 	step_end
 
-# 705 "data/maps/AltarOfBaldesia/scripts.pory"
+# 708 "data/maps/AltarOfBaldesia/scripts.pory"
 AltarOfBaldesia_Movement_Okidogi:
-# 706 "data/maps/AltarOfBaldesia/scripts.pory"
+# 709 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 706 "data/maps/AltarOfBaldesia/scripts.pory"
+# 709 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 706 "data/maps/AltarOfBaldesia/scripts.pory"
+# 709 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 706 "data/maps/AltarOfBaldesia/scripts.pory"
+# 709 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 706 "data/maps/AltarOfBaldesia/scripts.pory"
+# 709 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 706 "data/maps/AltarOfBaldesia/scripts.pory"
+# 709 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 706 "data/maps/AltarOfBaldesia/scripts.pory"
+# 709 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_down
-# 707 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_fast_left
-	step_end
-
 # 710 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_Munkidori:
-# 711 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_fast_left
-# 711 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_fast_left
-# 711 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_fast_left
-# 711 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_fast_left
-# 711 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_fast_left
-# 711 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_fast_left
-# 712 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_fast_up
-# 713 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_left
 	step_end
 
+# 713 "data/maps/AltarOfBaldesia/scripts.pory"
+AltarOfBaldesia_Movement_Munkidori:
+# 714 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_fast_left
+# 714 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_fast_left
+# 714 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_fast_left
+# 714 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_fast_left
+# 714 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_fast_left
+# 714 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_fast_left
+# 715 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_fast_up
 # 716 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_fast_left
+	step_end
+
+# 719 "data/maps/AltarOfBaldesia/scripts.pory"
 AltarOfBaldesia_Movement_Fezandipiti:
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 717 "data/maps/AltarOfBaldesia/scripts.pory"
+# 720 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_right
-# 718 "data/maps/AltarOfBaldesia/scripts.pory"
+# 721 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 721 "data/maps/AltarOfBaldesia/scripts.pory"
+# 724 "data/maps/AltarOfBaldesia/scripts.pory"
 AltarOfBaldesia_Movement_AriaEnters:
-# 722 "data/maps/AltarOfBaldesia/scripts.pory"
+# 725 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_up
-# 722 "data/maps/AltarOfBaldesia/scripts.pory"
+# 725 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_up
-# 722 "data/maps/AltarOfBaldesia/scripts.pory"
+# 725 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_up
-# 722 "data/maps/AltarOfBaldesia/scripts.pory"
+# 725 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_up
-# 722 "data/maps/AltarOfBaldesia/scripts.pory"
+# 725 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_up
-# 722 "data/maps/AltarOfBaldesia/scripts.pory"
+# 725 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_up
-# 722 "data/maps/AltarOfBaldesia/scripts.pory"
+# 725 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_fast_up
-# 723 "data/maps/AltarOfBaldesia/scripts.pory"
+# 726 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_in_place_fast_right
 	step_end
 
-# 726 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_MunkidoriPushedBack:
-# 727 "data/maps/AltarOfBaldesia/scripts.pory"
-	lock_facing_direction
-# 728 "data/maps/AltarOfBaldesia/scripts.pory"
-	jump_2_right
 # 729 "data/maps/AltarOfBaldesia/scripts.pory"
-	unlock_facing_direction
-	step_end
-
-# 732 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_MomoHandsItem:
-# 733 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_down
-# 734 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_in_place_left
-	step_end
-
-# 737 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_FezStepsBack:
-# 738 "data/maps/AltarOfBaldesia/scripts.pory"
+AltarOfBaldesia_Movement_MunkidoriPushedBack:
+# 730 "data/maps/AltarOfBaldesia/scripts.pory"
 	lock_facing_direction
-# 739 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_left
-# 740 "data/maps/AltarOfBaldesia/scripts.pory"
-	unlock_facing_direction
-	step_end
-
-# 743 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_AriaNextToMomo:
-# 744 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_left
-# 745 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 745 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_up
-# 746 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_in_place_left
-	step_end
-
-# 749 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_MochiDance1:
-# 750 "data/maps/AltarOfBaldesia/scripts.pory"
-	lock_facing_direction
-# 751 "data/maps/AltarOfBaldesia/scripts.pory"
+# 731 "data/maps/AltarOfBaldesia/scripts.pory"
 	jump_2_right
+# 732 "data/maps/AltarOfBaldesia/scripts.pory"
+	unlock_facing_direction
+	step_end
+
+# 735 "data/maps/AltarOfBaldesia/scripts.pory"
+AltarOfBaldesia_Movement_MomoHandsItem:
+# 736 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_down
+# 737 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_in_place_left
+	step_end
+
+# 740 "data/maps/AltarOfBaldesia/scripts.pory"
+AltarOfBaldesia_Movement_FezStepsBack:
+# 741 "data/maps/AltarOfBaldesia/scripts.pory"
+	lock_facing_direction
+# 742 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_left
+# 743 "data/maps/AltarOfBaldesia/scripts.pory"
+	unlock_facing_direction
+	step_end
+
+# 746 "data/maps/AltarOfBaldesia/scripts.pory"
+AltarOfBaldesia_Movement_AriaNextToMomo:
+# 747 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_left
+# 748 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 748 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_up
+# 749 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_in_place_left
+	step_end
+
 # 752 "data/maps/AltarOfBaldesia/scripts.pory"
-	unlock_facing_direction
-	step_end
-
+AltarOfBaldesia_Movement_MochiDance1:
+# 753 "data/maps/AltarOfBaldesia/scripts.pory"
+	lock_facing_direction
+# 754 "data/maps/AltarOfBaldesia/scripts.pory"
+	jump_2_right
 # 755 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_MochiDance2:
-# 756 "data/maps/AltarOfBaldesia/scripts.pory"
-	lock_facing_direction
-# 757 "data/maps/AltarOfBaldesia/scripts.pory"
-	jump_2_left
+	unlock_facing_direction
+	step_end
+
 # 758 "data/maps/AltarOfBaldesia/scripts.pory"
-	unlock_facing_direction
-	step_end
-
-# 761 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_MochiDance3:
-# 762 "data/maps/AltarOfBaldesia/scripts.pory"
+AltarOfBaldesia_Movement_MochiDance2:
+# 759 "data/maps/AltarOfBaldesia/scripts.pory"
 	lock_facing_direction
-# 763 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_faster_down
-# 763 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_faster_down
-# 764 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay_16
-# 765 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_faster_up
-# 765 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_faster_up
-# 766 "data/maps/AltarOfBaldesia/scripts.pory"
+# 760 "data/maps/AltarOfBaldesia/scripts.pory"
+	jump_2_left
+# 761 "data/maps/AltarOfBaldesia/scripts.pory"
 	unlock_facing_direction
 	step_end
 
+# 764 "data/maps/AltarOfBaldesia/scripts.pory"
+AltarOfBaldesia_Movement_MochiDance3:
+# 765 "data/maps/AltarOfBaldesia/scripts.pory"
+	lock_facing_direction
+# 766 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_faster_down
+# 766 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_faster_down
+# 767 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay_16
+# 768 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_faster_up
+# 768 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_faster_up
 # 769 "data/maps/AltarOfBaldesia/scripts.pory"
-AltarOfBaldesia_Movement_MochiDance4:
-# 770 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_in_place_faster_down
-# 771 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay_4
+	unlock_facing_direction
+	step_end
+
 # 772 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_in_place_faster_right
+AltarOfBaldesia_Movement_MochiDance4:
 # 773 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay_4
+	walk_in_place_faster_down
 # 774 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_in_place_faster_up
+	delay_4
 # 775 "data/maps/AltarOfBaldesia/scripts.pory"
-	delay_4
+	walk_in_place_faster_right
 # 776 "data/maps/AltarOfBaldesia/scripts.pory"
-	walk_in_place_faster_left
-# 777 "data/maps/AltarOfBaldesia/scripts.pory"
 	delay_4
+# 777 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_in_place_faster_up
 # 778 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay_4
+# 779 "data/maps/AltarOfBaldesia/scripts.pory"
+	walk_in_place_faster_left
+# 780 "data/maps/AltarOfBaldesia/scripts.pory"
+	delay_4
+# 781 "data/maps/AltarOfBaldesia/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
@@ -1567,49 +1576,49 @@ AltarOfBaldesia_EventScript_PecharuntAmbush_Text_20:
 	.string "MASTER BENNIS: … Hm.\n Just give her some time.\p We should head back to the MAIN HOUSE.\n The Chief and Madam should be waiting.$"
 
 AltarOfBaldesia_EventScript_Jirachi_Text_0:
-# 527 "data/maps/AltarOfBaldesia/scripts.pory"
+# 530 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "JIRACHI is in a deep slumber.\n … Try playing the POKé FLUTE?$"
 
 AltarOfBaldesia_EventScript_ShouldntTryAgain_Text_0:
-# 537 "data/maps/AltarOfBaldesia/scripts.pory"
+# 540 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "MOMO's voice echoes…\p “If you ever feel safe, please\n remember that I'm out there.”\p Probably shouldn't try to wake\n JIRACHI up again…$"
 
 AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_0:
-# 550 "data/maps/AltarOfBaldesia/scripts.pory"
+# 553 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "{PLAYER} begins playing the POKé FLUTE…$"
 
 AltarOfBaldesia_EventScript_TryAwakenJirachi_Text_1:
-# 556 "data/maps/AltarOfBaldesia/scripts.pory"
+# 559 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "Nothing happened!\n Try again?$"
 
 AltarOfBaldesia_EventScript_JirachiBattle_Text_0:
-# 606 "data/maps/AltarOfBaldesia/scripts.pory"
+# 609 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "JIRACHI woke!\n It looks mad!\l … Maybe it was having a good dream?\p In a rage, JIRACHI attacks!$"
 
 AltarOfBaldesia_EventScript_JirachiBattle_Text_1:
-# 621 "data/maps/AltarOfBaldesia/scripts.pory"
+# 624 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "JIRACHI went back to sleep…$"
 
 AltarOfBaldesia_EventScript_JirachiBattle_Text_2:
-# 631 "data/maps/AltarOfBaldesia/scripts.pory"
+# 634 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "JIRACHI fell into a deep slumber…$"
 
 AltarOfBaldesia_Text_MomoAndLohan::
-# 641 "data/maps/AltarOfBaldesia/scripts.pory"
+# 644 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "MOMO: B-Brother…?!\n ……\l Why are you here?\p Only the MAIDEN and her guards are\n allowed to be at the altar during\l the ritual.\p LOHAN: MO………$"
 
 AltarOfBaldesia_Text_LohanIntro::
-# 651 "data/maps/AltarOfBaldesia/scripts.pory"
+# 654 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "… Just… give… us what… we want…$"
 
 AltarOfBaldesia_Text_LindsayIntro::
-# 655 "data/maps/AltarOfBaldesia/scripts.pory"
+# 658 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "…… Don't… try to stop us…$"
 
 AltarOfBaldesia_Text_Bennis::
-# 659 "data/maps/AltarOfBaldesia/scripts.pory"
+# 662 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "MASTER BENNIS: Young Lady.\n The Chief and Madam are brainwashed.\p I can explain after we take care of\n these POKéMON.$"
 
 AltarOfBaldesia_Text_ExplainPecharunt::
-# 666 "data/maps/AltarOfBaldesia/scripts.pory"
+# 669 "data/maps/AltarOfBaldesia/scripts.pory"
 	.string "MASTER BENNIS: So they fled…\p I thought it was only a myth… but\n that POKéMON, PECHARUNT, was the one\l who brainwashed the Chief and Madam.\p {PLAYER} weakened it, so it probably\n can't keep its control over them.$"

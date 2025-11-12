@@ -369,6 +369,11 @@ script EverGrandeCity_EventScript_GiveMegaStone{
             break
         case 11:
             setflag(FLAG_ITEM_JIRACHIS_ALTAR_DRAGONITEITE)
+            givemon(SPECIES_DRATINI, 70, ITEM_MODEST_MINT, ITEM_MOON_BALL, NATURE_TIMID, 2, MON_FEMALE, 0, 0, 0, 255, 255, 0, 31, 31, 31, 31, 31, 31, MOVE_DRACO_METEOR, MOVE_AIR_SLASH, MOVE_TAKE_HEART, MOVE_DRAGON_PULSE, TRUE)
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER} received DRATINI!\n
+                DRATINI was sent to the PC.", MSGBOX_DEFAULT)
+            waitfanfare
             giveitem(ITEM_DRAGONITEITE)
             break
         default:

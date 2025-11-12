@@ -1205,7 +1205,7 @@ Asak2::
 
 AsakPaniniLoss::
 # 537 "data/maps/BennisDojo/scripts.pory"
-	.string "ASAK: WHAT?! Even though I'VE never\n even beaten Panini…$"
+	.string "ASAK: WHAT?! Even though I'VE never\n even beaten PANINI…$"
 
 Asak3::
 # 541 "data/maps/BennisDojo/scripts.pory"
