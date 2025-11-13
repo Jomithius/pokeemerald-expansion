@@ -42,126 +42,140 @@ AreaZero_Futuristic_EventScript_IronValiant::
 # 24 "data/maps/AreaZero_Futuristic/scripts.pory"
 	dowildbattle
 # 25 "data/maps/AreaZero_Futuristic/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 26 "data/maps/AreaZero_Futuristic/scripts.pory"
 	release
 	end
 
 
 AreaZero_Futuristic_EventScript_IronHands::
-# 30 "data/maps/AreaZero_Futuristic/scripts.pory"
-	lock
 # 31 "data/maps/AreaZero_Futuristic/scripts.pory"
-	faceplayer
+	lock
 # 32 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	faceplayer
 # 33 "data/maps/AreaZero_Futuristic/scripts.pory"
-	playmoncry SPECIES_IRON_HANDS, CRY_MODE_ENCOUNTER
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 34 "data/maps/AreaZero_Futuristic/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_IRON_HANDS, CRY_MODE_ENCOUNTER
 # 35 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_HANDS, 90
+	waitmoncry
 # 36 "data/maps/AreaZero_Futuristic/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_IRON_HANDS, 90
 # 37 "data/maps/AreaZero_Futuristic/scripts.pory"
+	dowildbattle
+# 38 "data/maps/AreaZero_Futuristic/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 39 "data/maps/AreaZero_Futuristic/scripts.pory"
 	release
 	end
 
 
 AreaZero_Futuristic_EventScript_IronBundle::
-# 42 "data/maps/AreaZero_Futuristic/scripts.pory"
-	lock
-# 43 "data/maps/AreaZero_Futuristic/scripts.pory"
-	faceplayer
 # 44 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	lock
 # 45 "data/maps/AreaZero_Futuristic/scripts.pory"
-	playmoncry SPECIES_IRON_BUNDLE, CRY_MODE_ENCOUNTER
+	faceplayer
 # 46 "data/maps/AreaZero_Futuristic/scripts.pory"
-	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 47 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_BUNDLE, 90
+	playmoncry SPECIES_IRON_BUNDLE, CRY_MODE_ENCOUNTER
 # 48 "data/maps/AreaZero_Futuristic/scripts.pory"
-	dowildbattle
+	waitmoncry
 # 49 "data/maps/AreaZero_Futuristic/scripts.pory"
+	setwildbattle SPECIES_IRON_BUNDLE, 90
+# 50 "data/maps/AreaZero_Futuristic/scripts.pory"
+	dowildbattle
+# 51 "data/maps/AreaZero_Futuristic/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 52 "data/maps/AreaZero_Futuristic/scripts.pory"
 	release
 	end
 
 
 AreaZero_Futuristic_EventScript_IronTreads::
-# 54 "data/maps/AreaZero_Futuristic/scripts.pory"
-	lock
-# 55 "data/maps/AreaZero_Futuristic/scripts.pory"
-	faceplayer
-# 56 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 57 "data/maps/AreaZero_Futuristic/scripts.pory"
-	playmoncry SPECIES_IRON_TREADS, CRY_MODE_ENCOUNTER
+	lock
 # 58 "data/maps/AreaZero_Futuristic/scripts.pory"
-	waitmoncry
+	faceplayer
 # 59 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_TREADS, 90
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 60 "data/maps/AreaZero_Futuristic/scripts.pory"
-	dowildbattle
+	playmoncry SPECIES_IRON_TREADS, CRY_MODE_ENCOUNTER
 # 61 "data/maps/AreaZero_Futuristic/scripts.pory"
+	waitmoncry
+# 62 "data/maps/AreaZero_Futuristic/scripts.pory"
+	setwildbattle SPECIES_IRON_TREADS, 90
+# 63 "data/maps/AreaZero_Futuristic/scripts.pory"
+	dowildbattle
+# 64 "data/maps/AreaZero_Futuristic/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 65 "data/maps/AreaZero_Futuristic/scripts.pory"
 	release
 	end
 
 
 AreaZero_Futuristic_EventScript_IronLeaves::
-# 66 "data/maps/AreaZero_Futuristic/scripts.pory"
-	lock
-# 67 "data/maps/AreaZero_Futuristic/scripts.pory"
-	faceplayer
-# 68 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 69 "data/maps/AreaZero_Futuristic/scripts.pory"
-	playmoncry SPECIES_IRON_LEAVES, CRY_MODE_ENCOUNTER
 # 70 "data/maps/AreaZero_Futuristic/scripts.pory"
-	waitmoncry
+	lock
 # 71 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_LEAVES, 90
+	faceplayer
 # 72 "data/maps/AreaZero_Futuristic/scripts.pory"
-	dowildbattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 73 "data/maps/AreaZero_Futuristic/scripts.pory"
+	playmoncry SPECIES_IRON_LEAVES, CRY_MODE_ENCOUNTER
+# 74 "data/maps/AreaZero_Futuristic/scripts.pory"
+	waitmoncry
+# 75 "data/maps/AreaZero_Futuristic/scripts.pory"
+	setwildbattle SPECIES_IRON_LEAVES, 90
+# 76 "data/maps/AreaZero_Futuristic/scripts.pory"
+	dowildbattle
+# 77 "data/maps/AreaZero_Futuristic/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 78 "data/maps/AreaZero_Futuristic/scripts.pory"
 	release
 	end
 
 
 AreaZero_Futuristic_EventScript_IronBoulder::
-# 78 "data/maps/AreaZero_Futuristic/scripts.pory"
-	lock
-# 79 "data/maps/AreaZero_Futuristic/scripts.pory"
-	faceplayer
-# 80 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 81 "data/maps/AreaZero_Futuristic/scripts.pory"
-	playmoncry SPECIES_IRON_BOULDER, CRY_MODE_ENCOUNTER
-# 82 "data/maps/AreaZero_Futuristic/scripts.pory"
-	waitmoncry
 # 83 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_BOULDER, 90
+	lock
 # 84 "data/maps/AreaZero_Futuristic/scripts.pory"
-	dowildbattle
+	faceplayer
 # 85 "data/maps/AreaZero_Futuristic/scripts.pory"
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+# 86 "data/maps/AreaZero_Futuristic/scripts.pory"
+	playmoncry SPECIES_IRON_BOULDER, CRY_MODE_ENCOUNTER
+# 87 "data/maps/AreaZero_Futuristic/scripts.pory"
+	waitmoncry
+# 88 "data/maps/AreaZero_Futuristic/scripts.pory"
+	setwildbattle SPECIES_IRON_BOULDER, 90
+# 89 "data/maps/AreaZero_Futuristic/scripts.pory"
+	dowildbattle
+# 90 "data/maps/AreaZero_Futuristic/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 91 "data/maps/AreaZero_Futuristic/scripts.pory"
 	release
 	end
 
 
 AreaZero_Futuristic_EventScript_IronCrown::
-# 90 "data/maps/AreaZero_Futuristic/scripts.pory"
-	lock
-# 91 "data/maps/AreaZero_Futuristic/scripts.pory"
-	faceplayer
-# 92 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 93 "data/maps/AreaZero_Futuristic/scripts.pory"
-	playmoncry SPECIES_IRON_CROWN, CRY_MODE_ENCOUNTER
-# 94 "data/maps/AreaZero_Futuristic/scripts.pory"
-	waitmoncry
-# 95 "data/maps/AreaZero_Futuristic/scripts.pory"
-	setwildbattle SPECIES_IRON_CROWN, 90
 # 96 "data/maps/AreaZero_Futuristic/scripts.pory"
-	dowildbattle
+	lock
 # 97 "data/maps/AreaZero_Futuristic/scripts.pory"
+	faceplayer
+# 98 "data/maps/AreaZero_Futuristic/scripts.pory"
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+# 99 "data/maps/AreaZero_Futuristic/scripts.pory"
+	playmoncry SPECIES_IRON_CROWN, CRY_MODE_ENCOUNTER
+# 100 "data/maps/AreaZero_Futuristic/scripts.pory"
+	waitmoncry
+# 101 "data/maps/AreaZero_Futuristic/scripts.pory"
+	setwildbattle SPECIES_IRON_CROWN, 90
+# 102 "data/maps/AreaZero_Futuristic/scripts.pory"
+	dowildbattle
+# 103 "data/maps/AreaZero_Futuristic/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 104 "data/maps/AreaZero_Futuristic/scripts.pory"
 	release
 	end
 

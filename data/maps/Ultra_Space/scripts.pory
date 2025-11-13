@@ -540,7 +540,7 @@ text Ultra_Space_Text_James1{
 }
 
 text Ultra_Space_Text_Maniac2{
-    "PROF.: … Intruiging.\p
+    "PROF.: That's… quite perplexing.\p
     Perhaps you had stumbled across a rift\n
     in the past…\p
     Although I've never heard reports of\n
@@ -548,7 +548,7 @@ text Ultra_Space_Text_Maniac2{
 }
 
 text Ultra_Space_Text_Maniac3{
-    "PROF.: Hm… Intruiging.\p
+    "PROF.: Hm… Perplexing…\p
     It appears as though these caves\n
     are a means of connection to the\l
     other floating islands…\p

@@ -22,6 +22,7 @@ script AreaZero_Prehistoric_EventScript_GreatTusk{
     waitmoncry
     setwildbattle(SPECIES_GREAT_TUSK, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -34,6 +35,7 @@ script AreaZero_Prehistoric_EventScript_RoaringMoon{
     waitmoncry
     setwildbattle(SPECIES_ROARING_MOON, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -46,6 +48,7 @@ script AreaZero_Prehistoric_EventScript_GougingFire{
     waitmoncry
     setwildbattle(SPECIES_GOUGING_FIRE, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -58,6 +61,7 @@ script AreaZero_Prehistoric_EventScript_FlutterMane{
     waitmoncry
     setwildbattle(SPECIES_FLUTTER_MANE, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }

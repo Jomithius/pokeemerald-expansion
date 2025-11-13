@@ -1,7 +1,7 @@
 # 1 "data/maps/MirageTower_4F/scripts.pory"
 MirageTower_4F_MapScripts::
 # 2 "data/maps/MirageTower_4F/scripts.pory"
-    map_script MAP_SCRIPT_ON_RESUME, MirageTower_4F_RemoveVolcarona
+    map_script MAP_SCRIPT_ON_RESUME, MirageTower_4F_OnResume
 # 3 "data/maps/MirageTower_4F/scripts.pory"
 	.byte 0
 # 4 "data/maps/MirageTower_4F/scripts.pory"
@@ -157,102 +157,120 @@ MirageTower_4F_Text_LeaveClawFossilAlone:
 # 79 "data/maps/MirageTower_4F/scripts.pory"
 	.string "{PLAYER} left the CLAW FOSSIL alone.$"
 
-MirageTower_4F_RemoveVolcarona::
+MirageTower_4F_OnResume::
 # 84 "data/maps/MirageTower_4F/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
-# 85 "data/maps/MirageTower_4F/scripts.pory"
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn
-# 86 "data/maps/MirageTower_4F/scripts.pory"
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn
-# 87 "data/maps/MirageTower_4F/scripts.pory"
-	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn
-# 88 "data/maps/MirageTower_4F/scripts.pory"
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Common_EventScript_NopReturn
-# 89 "data/maps/MirageTower_4F/scripts.pory"
-	removeobject 1
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, MirageTower_4F_TryRemoveVolcarona
 	end
+
+
+MirageTower_4F_TryRemoveVolcarona::
+# 89 "data/maps/MirageTower_4F/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 90 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn
+# 91 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn
+# 92 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn
+# 93 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Common_EventScript_NopReturn
+# 94 "data/maps/MirageTower_4F/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 95 "data/maps/MirageTower_4F/scripts.pory"
+	setflag FLAG_DEFEATED_VOLCARONA
+# 96 "data/maps/MirageTower_4F/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	return
 
 
 MirageTower_4F_EventScript_Volcarona::
-# 94 "data/maps/MirageTower_4F/scripts.pory"
-	lock
-# 95 "data/maps/MirageTower_4F/scripts.pory"
-	faceplayer
-# 96 "data/maps/MirageTower_4F/scripts.pory"
-	setflag FLAG_DEFEATED_VOLCARONA
-# 97 "data/maps/MirageTower_4F/scripts.pory"
-	playmoncry SPECIES_VOLCARONA, CRY_MODE_ENCOUNTER
-# 98 "data/maps/MirageTower_4F/scripts.pory"
-	waitmoncry
-# 99 "data/maps/MirageTower_4F/scripts.pory"
-	setwildbattle SPECIES_VOLCARONA, 35
-# 100 "data/maps/MirageTower_4F/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
 # 101 "data/maps/MirageTower_4F/scripts.pory"
-	waitstate
+	lock
 # 102 "data/maps/MirageTower_4F/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	faceplayer
 # 103 "data/maps/MirageTower_4F/scripts.pory"
-	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq MirageTower_4F_EventScript_Volcarona_2
-# 103 "data/maps/MirageTower_4F/scripts.pory"
-	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
-	goto_if_eq MirageTower_4F_EventScript_Volcarona_2
-# 114 "data/maps/MirageTower_4F/scripts.pory"
-	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq MirageTower_4F_EventScript_Volcarona_3
-# 126 "data/maps/MirageTower_4F/scripts.pory"
-	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
-# 127 "data/maps/MirageTower_4F/scripts.pory"
-	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
-MirageTower_4F_EventScript_Volcarona_1:
-# 129 "data/maps/MirageTower_4F/scripts.pory"
-	release
-	end
-
-MirageTower_4F_EventScript_Volcarona_2:
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 104 "data/maps/MirageTower_4F/scripts.pory"
 	playmoncry SPECIES_VOLCARONA, CRY_MODE_ENCOUNTER
 # 105 "data/maps/MirageTower_4F/scripts.pory"
 	waitmoncry
 # 106 "data/maps/MirageTower_4F/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	setwildbattle SPECIES_VOLCARONA, 35
 # 107 "data/maps/MirageTower_4F/scripts.pory"
-	removeobject 1
+	special BattleSetup_StartLegendaryBattle
 # 108 "data/maps/MirageTower_4F/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	waitstate
 # 109 "data/maps/MirageTower_4F/scripts.pory"
-	msgbox MirageTower_4F_EventScript_Volcarona_Text_0, MSGBOX_AUTOCLOSE
+	specialvar VAR_RESULT, GetBattleOutcome
 # 110 "data/maps/MirageTower_4F/scripts.pory"
-	waitmessage
-# 111 "data/maps/MirageTower_4F/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq MirageTower_4F_EventScript_Volcarona_2
+# 110 "data/maps/MirageTower_4F/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq MirageTower_4F_EventScript_Volcarona_2
+# 123 "data/maps/MirageTower_4F/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq MirageTower_4F_EventScript_Volcarona_3
+# 137 "data/maps/MirageTower_4F/scripts.pory"
 	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
+# 138 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
+MirageTower_4F_EventScript_Volcarona_1:
+# 140 "data/maps/MirageTower_4F/scripts.pory"
+	release
+	end
+
+MirageTower_4F_EventScript_Volcarona_2:
+# 111 "data/maps/MirageTower_4F/scripts.pory"
+	playmoncry SPECIES_VOLCARONA, CRY_MODE_ENCOUNTER
 # 112 "data/maps/MirageTower_4F/scripts.pory"
+	waitmoncry
+# 113 "data/maps/MirageTower_4F/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 114 "data/maps/MirageTower_4F/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 115 "data/maps/MirageTower_4F/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 116 "data/maps/MirageTower_4F/scripts.pory"
+	setflag FLAG_DEFEATED_VOLCARONA
+# 117 "data/maps/MirageTower_4F/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 118 "data/maps/MirageTower_4F/scripts.pory"
+	msgbox MirageTower_4F_EventScript_Volcarona_Text_0, MSGBOX_AUTOCLOSE
+# 119 "data/maps/MirageTower_4F/scripts.pory"
+	waitmessage
+# 120 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
+# 121 "data/maps/MirageTower_4F/scripts.pory"
 	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
 	goto MirageTower_4F_EventScript_Volcarona_1
 
 MirageTower_4F_EventScript_Volcarona_3:
-# 115 "data/maps/MirageTower_4F/scripts.pory"
+# 124 "data/maps/MirageTower_4F/scripts.pory"
 	playmoncry SPECIES_VOLCARONA, CRY_MODE_FAINT
-# 116 "data/maps/MirageTower_4F/scripts.pory"
+# 125 "data/maps/MirageTower_4F/scripts.pory"
 	waitmoncry
-# 117 "data/maps/MirageTower_4F/scripts.pory"
+# 126 "data/maps/MirageTower_4F/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 118 "data/maps/MirageTower_4F/scripts.pory"
-	removeobject 1
-# 119 "data/maps/MirageTower_4F/scripts.pory"
+# 127 "data/maps/MirageTower_4F/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 128 "data/maps/MirageTower_4F/scripts.pory"
+	setflag FLAG_DEFEATED_VOLCARONA
+# 129 "data/maps/MirageTower_4F/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 130 "data/maps/MirageTower_4F/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 120 "data/maps/MirageTower_4F/scripts.pory"
+# 131 "data/maps/MirageTower_4F/scripts.pory"
 	msgbox MirageTower_4F_EventScript_Volcarona_Text_0, MSGBOX_AUTOCLOSE
-# 121 "data/maps/MirageTower_4F/scripts.pory"
+# 132 "data/maps/MirageTower_4F/scripts.pory"
 	waitmessage
-# 122 "data/maps/MirageTower_4F/scripts.pory"
+# 133 "data/maps/MirageTower_4F/scripts.pory"
 	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
-# 123 "data/maps/MirageTower_4F/scripts.pory"
+# 134 "data/maps/MirageTower_4F/scripts.pory"
 	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, MirageTower_4F_EventScript_CollapseMirageTower
 	goto MirageTower_4F_EventScript_Volcarona_1
 
 
 MirageTower_4F_EventScript_Volcarona_Text_0:
-# 109 "data/maps/MirageTower_4F/scripts.pory"
+# 118 "data/maps/MirageTower_4F/scripts.pory"
 	.string "The VOLCARONA disappeared…$"

@@ -22,6 +22,7 @@ script AreaZero_Futuristic_EventScript_IronValiant{
     waitmoncry
     setwildbattle(SPECIES_IRON_VALIANT, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -34,6 +35,7 @@ script AreaZero_Futuristic_EventScript_IronHands{
     waitmoncry
     setwildbattle(SPECIES_IRON_HANDS, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -46,6 +48,7 @@ script AreaZero_Futuristic_EventScript_IronBundle{
     waitmoncry
     setwildbattle(SPECIES_IRON_BUNDLE, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -58,6 +61,7 @@ script AreaZero_Futuristic_EventScript_IronTreads{
     waitmoncry
     setwildbattle(SPECIES_IRON_TREADS, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -70,6 +74,7 @@ script AreaZero_Futuristic_EventScript_IronLeaves{
     waitmoncry
     setwildbattle(SPECIES_IRON_LEAVES, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -82,6 +87,7 @@ script AreaZero_Futuristic_EventScript_IronBoulder{
     waitmoncry
     setwildbattle(SPECIES_IRON_BOULDER, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }
@@ -94,6 +100,7 @@ script AreaZero_Futuristic_EventScript_IronCrown{
     waitmoncry
     setwildbattle(SPECIES_IRON_CROWN, 90)
     dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     release
     end
 }

@@ -1319,11 +1319,11 @@ Ultra_Space_Text_James1::
 
 Ultra_Space_Text_Maniac2::
 # 542 "data/maps/Ultra_Space/scripts.pory"
-	.string "PROF.: … Intruiging.\p Perhaps you had stumbled across a rift\n in the past…\p Although I've never heard reports of\n such an occurence happening to anyone.$"
+	.string "PROF.: That's… quite perplexing.\p Perhaps you had stumbled across a rift\n in the past…\p Although I've never heard reports of\n such an occurence happening to anyone.$"
 
 Ultra_Space_Text_Maniac3::
 # 550 "data/maps/Ultra_Space/scripts.pory"
-	.string "PROF.: Hm… Intruiging.\p It appears as though these caves\n are a means of connection to the\l other floating islands…\p Perhaps we can find another rift\n through them…\p I must get a closer look!$"
+	.string "PROF.: Hm… Perplexing…\p It appears as though these caves\n are a means of connection to the\l other floating islands…\p Perhaps we can find another rift\n through them…\p I must get a closer look!$"
 
 Ultra_Space_Text_Maniac4::
 # 560 "data/maps/Ultra_Space/scripts.pory"

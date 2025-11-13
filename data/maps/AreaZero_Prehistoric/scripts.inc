@@ -42,66 +42,74 @@ AreaZero_Prehistoric_EventScript_GreatTusk::
 # 24 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	dowildbattle
 # 25 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 26 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	release
 	end
 
 
 AreaZero_Prehistoric_EventScript_RoaringMoon::
-# 30 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	lock
 # 31 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	faceplayer
+	lock
 # 32 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	faceplayer
 # 33 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	playmoncry SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 34 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER
 # 35 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setwildbattle SPECIES_ROARING_MOON, 90
+	waitmoncry
 # 36 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_ROARING_MOON, 90
 # 37 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	dowildbattle
+# 38 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 39 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	release
 	end
 
 
 AreaZero_Prehistoric_EventScript_GougingFire::
-# 42 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	lock
-# 43 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	faceplayer
 # 44 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	lock
 # 45 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	playmoncry SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER
+	faceplayer
 # 46 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 47 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setwildbattle SPECIES_GOUGING_FIRE, 90
+	playmoncry SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER
 # 48 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	dowildbattle
+	waitmoncry
 # 49 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	setwildbattle SPECIES_GOUGING_FIRE, 90
+# 50 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	dowildbattle
+# 51 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 52 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	release
 	end
 
 
 AreaZero_Prehistoric_EventScript_FlutterMane::
-# 54 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	lock
-# 55 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	faceplayer
-# 56 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 57 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	playmoncry SPECIES_FLUTTER_MANE, CRY_MODE_ENCOUNTER
+	lock
 # 58 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	waitmoncry
+	faceplayer
 # 59 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	setwildbattle SPECIES_FLUTTER_MANE, 90
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 60 "data/maps/AreaZero_Prehistoric/scripts.pory"
-	dowildbattle
+	playmoncry SPECIES_FLUTTER_MANE, CRY_MODE_ENCOUNTER
 # 61 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	waitmoncry
+# 62 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	setwildbattle SPECIES_FLUTTER_MANE, 90
+# 63 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	dowildbattle
+# 64 "data/maps/AreaZero_Prehistoric/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 65 "data/maps/AreaZero_Prehistoric/scripts.pory"
 	release
 	end
 

@@ -1,5 +1,5 @@
 raw`MirageTower_4F_MapScripts::
-    map_script MAP_SCRIPT_ON_RESUME, MirageTower_4F_RemoveVolcarona
+    map_script MAP_SCRIPT_ON_RESUME, MirageTower_4F_OnResume
 	.byte 0
 
 MirageTower_4F_EventScript_RootFossil::
@@ -80,20 +80,27 @@ MirageTower_4F_Text_LeaveClawFossilAlone:
 
 `
 
-script MirageTower_4F_RemoveVolcarona{
+script MirageTower_4F_OnResume{
+	call_if_set(FLAG_SYS_CTRL_OBJ_DELETE, MirageTower_4F_TryRemoveVolcarona)
+	end
+}
+
+script MirageTower_4F_TryRemoveVolcarona{
     specialvar(VAR_RESULT, GetBattleOutcome)
     goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
     goto_if_eq(VAR_RESULT, B_OUTCOME_WON, Common_EventScript_NopReturn)
-    removeobject(1)
-    end
+    removeobject(VAR_LAST_TALKED)
+	setflag(FLAG_DEFEATED_VOLCARONA)
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    return
 }
 
 script MirageTower_4F_EventScript_Volcarona{
     lock
     faceplayer
-    setflag(FLAG_DEFEATED_VOLCARONA)
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     playmoncry(SPECIES_VOLCARONA, CRY_MODE_ENCOUNTER)
     waitmoncry
     setwildbattle(SPECIES_VOLCARONA, 35)
@@ -104,7 +111,9 @@ script MirageTower_4F_EventScript_Volcarona{
         playmoncry(SPECIES_VOLCARONA, CRY_MODE_ENCOUNTER)
         waitmoncry
         fadescreenswapbuffers(FADE_TO_BLACK)
-        removeobject(1)
+        removeobject(VAR_LAST_TALKED)
+		clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+		setflag(FLAG_DEFEATED_VOLCARONA)
         fadescreenswapbuffers(FADE_FROM_BLACK)
         msgbox("The VOLCARONA disappeared…", MSGBOX_AUTOCLOSE)
         waitmessage
@@ -115,7 +124,9 @@ script MirageTower_4F_EventScript_Volcarona{
         playmoncry(SPECIES_VOLCARONA, CRY_MODE_FAINT)
         waitmoncry
         fadescreenswapbuffers(FADE_TO_BLACK)
-        removeobject(1)
+        removeobject(VAR_LAST_TALKED)
+		setflag(FLAG_DEFEATED_VOLCARONA)
+		clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
         fadescreenswapbuffers(FADE_FROM_BLACK)
         msgbox("The VOLCARONA disappeared…", MSGBOX_AUTOCLOSE)
         waitmessage

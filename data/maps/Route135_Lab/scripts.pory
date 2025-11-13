@@ -666,7 +666,7 @@ text Route135_Lab_Text_Maniac3{
     what's being researched here…\p
     But to reiterate, I'm currently looking\n
     into the possibility of traveling to\l
-    new worlds.\p
+    new worlds. Perplexing, yes?\p
     In fact, I discovered the existence of\n
     different dimensions parallel to ours.\p
     I've named the endless expanse\n
@@ -680,7 +680,7 @@ text Route135_Lab_Text_Maniac4{
     "I've reached a breakthrough in my\n
     experiments and now plan to attempt\l
     to open a rift to the ULTRA SPACE.\p
-    You made it just in time.\n
+    You made it just in time, intern.\n
     Quite fortuitous, indeed."
 }
 
@@ -806,7 +806,6 @@ text Route_135_Lab_Text_ImGoingToStayHere{
     tolerate it."
 }
 
-
 movement Route_135_Lab_Movement_ManiacReturnsToComputer{
     walk_fast_down
     walk_fast_right * 4
@@ -878,7 +877,7 @@ text Route135_Lab_Text_ManiacIntroduceAreaZero{
 text Route135_Lab_Text_ManiacExplainAreaZeroCosmog{
     "The camera I put on COSMOG showed that\n
     the world has a somewhat… strange\l
-    composition.\p
+    composition. Quite perplexing, indeed.\p
     Although there are signs that it was\n
     once inhabited by humans, so it should\l
     be safe to traverse.\p
