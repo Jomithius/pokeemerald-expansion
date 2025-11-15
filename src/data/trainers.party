@@ -18458,8 +18458,7 @@ Ability: Poison Touch
 - Close Combat  
 
 Kommo-o  
-Ability: Bulletproof   
-EVs: 252 SpA / 4 SpD / 252 Spe  
+Ability: Bulletproof  
 Timid Nature  
 IVs: 0 Atk  
 - Clanging Scales  
@@ -18467,15 +18466,16 @@ IVs: 0 Atk
 - Aura Sphere  
 - Vacuum Wave  
 
-Hitmontop (M)  
-Ability: Intimidate   
-- Bullet Punch  
-- Triple Axel  
-- Triple Kick  
-- Fake Out 
+Arcanine-Hisui (F)
+Ability: Rock Head  
+Tera Type: Fighting 
+- Head Smash  
+- Flare Blitz  
+- Close Combat
 
 Pawmot @ Leppa Berry  
 Ability: Iron Fist
+EVs: 252 Atk / 4 SpD / 252 Spe  
 Tera Type: Electric  
 - Double Shock  
 - Close Combat  
@@ -19313,12 +19313,11 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer 
 
-Tyrogue
-Ability: Vital Spirit  
+Growlithe-Hisui (F)  
+Ability: Intimidate  
 Level: 16  
-- Fake Out  
-- Focus Energy
-- Mach Punch
+- Flame Wheel  
+- Bite
 
 Sneasel-Hisui (F)  
 Ability: Poison Touch  
@@ -20285,7 +20284,7 @@ Sharpedo
 Ability: Rough Skin  
 Level: 57
 Serious Nature  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe 
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 0 Spe 
 - Aqua Jet  
 - Crunch  
 
@@ -23911,10 +23910,9 @@ Level: 60
 Jolly Nature   
 - Drain Punch
 - Poison Jab  
-- Bullet Punch  
 
 Lilligant-Hisui
-Ability: Hustle  
+Ability: Leaf Guard
 Level: 60  
 Jolly Nature  
 - Brick Break   
@@ -30018,15 +30016,14 @@ Double Battle: No
 AI: Basic Trainer  
 Difficulty: Easy
 
-Altaria @ Yache Berry  
+Altaria 
 Ability: Cloud Nine  
 Level: 60   
 Adamant Nature  
 - Dragon Claw  
 - Dual Wingbeat  
-- Iron Tail
 
-Delcatty (F) @ Chople Berry  
+Delcatty (F) 
 Ability: Normalize 
 Level: 60    
 Jolly Nature   
@@ -30041,12 +30038,10 @@ Level: 60
 - Giga Drain
 - Toxic
 
-Magnezone @ Air Balloon
+Magnezone
 Level: 60  
-- Supersonic
 - Thunderbolt
 - Flash Cannon
-- Charge Beam
 
 Gallade  
 Ability: Sharpness  
@@ -30054,7 +30049,6 @@ Level: 60
 Jolly Nature  
 - Psycho Cut  
 - Sacred Sword  
-- Leaf Blade
 
 === TRAINER_NICHOLAS_SHOAL_CAVE ===
 Name: NICHOLAS
@@ -30269,7 +30263,7 @@ AI: Basic Trainer
 Difficulty: Easy
 
 Azumarill (F) @ Sitrus Berry
-Ability: Huge Power 
+Ability: Thick Fat
 Level: 100
 Adamant Nature  
 - Play Rough  
@@ -30281,7 +30275,7 @@ Level: 100
 Tera Type: Steel  
 Impish Nature  
 - Fake Out  
-- Nuzzle  
+- Spark 
 - Iron Head  
 
 Raticate-Alola-Totem (M) @ Leftovers  
@@ -30299,7 +30293,7 @@ Jolly Nature
 - Body Slam  
 - Crunch   
 
-Dedenne @ Petaya Berry  
+Dedenne @ Oran Berry
 Ability: Cheek Pouch
 Level: 100
 Tera Type: Fairy
@@ -30376,7 +30370,7 @@ Difficulty: Easy
 Mugshot: Green
 
 Azumarill (F) @ Sitrus Berry
-Ability: Huge Power 
+Ability: Thick Fat
 Level: 100
 Adamant Nature  
 - Play Rough  
@@ -30388,7 +30382,7 @@ Level: 100
 Tera Type: Steel  
 Impish Nature  
 - Fake Out  
-- Nuzzle  
+- Spark 
 - Iron Head  
 
 Raticate-Alola-Totem (M) @ Leftovers  
@@ -30406,7 +30400,7 @@ Jolly Nature
 - Body Slam  
 - Crunch   
 
-Dedenne @ Petaya Berry  
+Dedenne @ Oran Berry
 Ability: Cheek Pouch
 Level: 100
 Tera Type: Fairy
@@ -30420,7 +30414,7 @@ Ability: Friend Guard
 Level: 100
 Jolly Nature  
 - Super Fang   
-- Play Rough  
+- Play Rough   
 
 === TRAINER_MORGAN ===
 Name: MORGAN
@@ -37506,12 +37500,11 @@ Mugshot: Pink
 
 Clefable (F) @ Leftovers  
 Ability: Magic Guard 
-Sassy Nature  
-- Stealth Rock  
+Sassy Nature   
 - Moonblast   
 - Knock Off  
 
-Tauros-Paldea-Blaze @ Rocky Helmet  
+Tauros-Paldea-Blaze 
 Ability: Intimidate 
 Tera Type: Fighting 
 Adamant Nature  
@@ -37536,9 +37529,9 @@ Modest Nature
 Sawsbuck-Summer
 Ability: Serene Grace 
 Tera Type: Fairy   
-Serious Nature  
+Serious Nature 
+IVs: 0 Spe 
 - Headbutt  
-- Zen Headbutt  
 - High Horsepower  
 - Horn Leech  
 
@@ -38130,33 +38123,31 @@ AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
 Sneasler (F) @ Black Sludge  
-Ability: Poison Touch  
+Ability: Poison Touch 
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 0 Spe 
 - Dire Claw  
 - Fake Out  
 - Close Combat  
 
-Hitmontop (M)  
-Ability: Intimidate  
-Tera Type: Fighting  
-- Bullet Punch  
-- Triple Axel  
-- Triple Kick  
-- Fake Out
+Arcanine-Hisui (F)  
+Ability: Intimidate 
+Tera Type: Fighting 
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 0 Spe 
+- Rock Slide  
+- Heat Crash 
 
 Kommo-o  
 Ability: Bulletproof    
 Timid Nature  
-IVs: 0 Atk  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 0 Spe 
 - Clanging Scales  
-- Aura Sphere  
-- Vacuum Wave   
+- Aura Sphere   
 
 Pawmot
 Ability: Volt Absorb  
-Tera Type: Electric  
+Tera Type: Fighting
 - Double Shock  
-- Close Combat  
-- Ice Punch  
+- Close Combat   
 
 === TRAINER_MAE_3 ===
 Name: MAE
@@ -38941,13 +38932,12 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 Difficulty: Easy
 
-Tyrogue
-Ability: Vital Spirit  
+Growlithe-Hisui (F)  
+Ability: Rock Head  
 Level: 16  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
-- Fake Out   
-- Mach Punch  
-- Helping Hand 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Ember 
+- Bite
 
 Sneasel-Hisui (F)  
 Ability: Poison Touch  

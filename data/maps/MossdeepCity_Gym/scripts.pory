@@ -478,7 +478,7 @@ MossdeepCity_Gym_Text_NateDefeat:
 	.string "Thoust'th haveth true power'th'nt'nst!$"
 
 MossdeepCity_Gym_Text_NatePostBattle:
-	.string "Thoust'th shall'th movest fowardst,\n"
+	.string "Thoust'th shall'th movest forwardst,\n"
 	.string "to'th challenge'th ourst commander.$"
 
 MossdeepCity_Gym_Text_KathleenIntro:

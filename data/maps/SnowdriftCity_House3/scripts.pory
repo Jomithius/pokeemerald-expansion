@@ -307,7 +307,9 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
             they'll have a gift for you.", MSGBOX_DEFAULT)
         waitmessage
     }
-    msgbox("Well, that's it, {PLAYER}!\p
+    msgbox("Do you want me to reset the GYM\nLEADER final rematches too?", MSGBOX_YESNO)
+    call_if_eq(VAR_RESULT, YES, SnowdriftCity_House3_EventScript_ResetFinalRematches)
+    msgbox("JIMMY: Well, that's it, {PLAYER}!\p
         There's other things you could've\n
         missed.\p
         “PuzzlesImportantItemsSecrets” in\n
@@ -319,4 +321,28 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
     waitmovement(0)
     release
     end
+}
+
+script SnowdriftCity_House3_EventScript_ResetFinalRematches{
+    cleartrainerflag(TRAINER_ROXANNE_2)
+    cleartrainerflag(TRAINER_BRAWLY_2)
+    cleartrainerflag(TRAINER_WATTSON_2)
+    cleartrainerflag(TRAINER_FLANNERY_2)
+    cleartrainerflag(TRAINER_NORMAN_2)
+    cleartrainerflag(TRAINER_WINONA_2)
+    cleartrainerflag(TRAINER_MOMO)
+    cleartrainerflag(TRAINER_ARIA)
+    cleartrainerflag(TRAINER_JUAN_2)
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS can now be fought again.\pThe ELITE FOUR can be re-challenged at\nanytime.", MSGBOX_DEFAULT)
+    waitfanfare
+    if(var(VAR_LINA_TALKED_TO) == 3){
+        setvar(VAR_LINA_TALKED_TO, 2)
+        msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}EUGENIA can also be re-challenged.", MSGBOX_DEFAULT)
+    }
+    if(flag(FLAG_SYS_DEFEATED_JAMES)){
+        clearflag(FLAG_SYS_DEFEATED_JAMES)
+        msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}JAMES can also be re-challenged.", MSGBOX_DEFAULT)
+    }
+    return
 }

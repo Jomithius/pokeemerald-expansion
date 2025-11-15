@@ -112,6 +112,8 @@ LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
 	.2byte ITEM_CHOICE_BAND
 	.2byte ITEM_CHOICE_SPECS
 	.2byte ITEM_MUSCLE_BAND
+	.2byte ITEM_FOCUS_SASH
+	.2byte ITEM_FOCUS_BAND
 	.2byte ITEM_AIR_BALLOON
 	.2byte ITEM_ASSAULT_VEST
 	.2byte ITEM_THROAT_SPRAY

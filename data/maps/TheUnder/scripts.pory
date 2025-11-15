@@ -150,13 +150,17 @@ text TheUnder_Text_CarsonIntro{
 }
 
 text TheUnder_Text_CarsonDefeat{
-    "Huh… Why weren't they scared now?"
+    "…Hunh?\nWhy weren't they scared now?"
 }
 
 text TheUnder_Text_CarsonPostBattle{
     "If only I could figure out why my\n
     POKéMON are so scared of those\l
-    RATICATE…"
+    RATICATE…\p
+    It seemed like my DONPHAN and\n
+    COPPERAJAH were the most scared…\p
+    Hunh? …I don't get it.\n
+    It really perplexes me…"
 }
 
 text Common_Text_ExplainTera{

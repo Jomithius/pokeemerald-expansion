@@ -651,7 +651,7 @@ movement Route135_Lab_Movement_PlayerGoBackToPC{
 }
 
 text Route135_Lab_Text_Maniac1{
-    "PROF: Hm?\n
+    "PROF.: Hm?\n
     Are you the new intern?"
 }
 

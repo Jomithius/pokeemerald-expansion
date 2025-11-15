@@ -2223,8 +2223,10 @@ MatchCall_Text_Sidney::
 	.string "scold you!$"
 
 MatchCall_Text_Phoebe::
-	.string "LINA: Why are you calling me?\p"
-	.string "Hmph!$"
+	.string "LINA: W-Why are you calling me?!\p"
+	.string "Hmph!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_Glacia::
 	.string "XION: Di-di-\n"
@@ -2235,7 +2237,7 @@ MatchCall_Text_Glacia::
 
 MatchCall_Text_Drake::
 	.string "DAVE: I swear to God, dude…\n"
-	.string "Next time you better lose.\p"
+	.string "Next time you better lose, okay?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
@@ -2290,11 +2292,9 @@ MatchCall_Text_May1::
 MatchCall_Text_May2::
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
 	.string "You know how little towns like\n"
-	.string "PETALBURG and DEWFORD have GYMS?\p"
-	.string "For some reason, the big port of\n"
-	.string "SLATEPORT doesn't have a GYM.\p"
-	.string "When they finally build a GYM there,\n"
-	.string "I should apply to be the LEADER.$"
+	.string "PETALBURG have GYMS?\p"
+	.string "For some reason, DEWFORD TOWN\n"
+	.string "doesn't have a GYM anymore.$"
 
 MatchCall_Text_May3::
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
@@ -2416,11 +2416,9 @@ MatchCall_Text_Brendan1::
 MatchCall_Text_Brendan2::
 	.string "BRENDAN: Hey, {PLAYER}!\p"
 	.string "I don't get how little towns like\n"
-	.string "PETALBURG and DEWFORD have GYMS.\p"
-	.string "I mean, not when the big port of\n"
-	.string "SLATEPORT doesn't have a GYM.\p"
-	.string "When they finally build a GYM there,\n"
-	.string "I should apply to be the LEADER.$"
+	.string "PETALBURG have GYMS.\p"
+	.string "I mean, not when DEWFORD doesn't\n"
+	.string "even have a GYM anymore.$"
 
 MatchCall_Text_Brendan3::
 	.string "BRENDAN: Yo, {PLAYER}!\p"

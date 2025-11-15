@@ -329,7 +329,8 @@ script PlayersHouse_2F_EventScript_SetToNormalDifficulty{
     playfanfare(MUS_LEVEL_UP)
     waitfanfare
     msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}Difficulty set to NORMAL.\p
-        This can be changed at any time using\nthe MODE SWITCHER in KEY ITEMS.", MSGBOX_AUTOCLOSE)
+        This can be changed at any time using\nthe MODE SWITCHER in KEY ITEMS.\p
+		The BATTLE STYLE can be set back to\nthe usual default “SWITCH” in OPTIONS.", MSGBOX_AUTOCLOSE)
     waitmessage
     setdifficulty(DIFFICULTY_EASY)
 	setvar(VAR_DIFFICULTY_SWITCH_COUNTER, 0)

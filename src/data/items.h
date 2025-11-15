@@ -11383,7 +11383,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A fighting dance\n"
             "that sharply\n"
-            "raises ATTACK."), // custom
+            "raises Atk."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11713,7 +11713,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A mystical dance\n"
             "that raises Atk\n"
-            "and Spd."), // custom
+            "and Spe."), // custom
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

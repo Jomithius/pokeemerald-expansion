@@ -959,7 +959,7 @@ MossdeepCity_Gym_Text_NateDefeat:
 # 480 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_NatePostBattle:
 # 481 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "Thoust'th shall'th movest fowardst,\n"
+	.string "Thoust'th shall'th movest forwardst,\n"
 # 482 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "to'th challenge'th ourst commander.$"
 # 483 "data/maps/MossdeepCity_Gym/scripts.pory"

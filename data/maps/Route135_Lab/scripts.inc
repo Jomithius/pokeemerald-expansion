@@ -1525,7 +1525,7 @@ Route_135_Lab_EventScript_TypeNull_Text_0:
 
 Route135_Lab_Text_Maniac1::
 # 653 "data/maps/Route135_Lab/scripts.pory"
-	.string "PROF: Hm?\n Are you the new intern?$"
+	.string "PROF.: Hm?\n Are you the new intern?$"
 
 Route135_Lab_Text_Maniac2::
 # 658 "data/maps/Route135_Lab/scripts.pory"

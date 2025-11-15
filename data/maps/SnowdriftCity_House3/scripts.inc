@@ -324,14 +324,18 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_40:
 	goto_if_unset FLAG_RECEIVED_TOTODILE_PARTNER, SnowdriftCity_House3_EventScript_JimmyStatReport_44
 SnowdriftCity_House3_EventScript_JimmyStatReport_43:
 # 310 "data/maps/SnowdriftCity_House3/scripts.pory"
-	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_20, MSGBOX_AUTOCLOSE
-# 317 "data/maps/SnowdriftCity_House3/scripts.pory"
-	waitmessage
-# 318 "data/maps/SnowdriftCity_House3/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_20, MSGBOX_YESNO
+# 311 "data/maps/SnowdriftCity_House3/scripts.pory"
+	call_if_eq VAR_RESULT, YES, SnowdriftCity_House3_EventScript_ResetFinalRematches
+# 312 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_JimmyStatReport_Text_21, MSGBOX_AUTOCLOSE
 # 319 "data/maps/SnowdriftCity_House3/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 320 "data/maps/SnowdriftCity_House3/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 321 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitmovement 0
+# 322 "data/maps/SnowdriftCity_House3/scripts.pory"
 	release
 	end
 
@@ -414,6 +418,55 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_44:
 # 308 "data/maps/SnowdriftCity_House3/scripts.pory"
 	waitmessage
 	goto SnowdriftCity_House3_EventScript_JimmyStatReport_43
+
+
+SnowdriftCity_House3_EventScript_ResetFinalRematches::
+# 327 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_ROXANNE_2
+# 328 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_BRAWLY_2
+# 329 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_WATTSON_2
+# 330 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_FLANNERY_2
+# 331 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_NORMAN_2
+# 332 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_WINONA_2
+# 333 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_MOMO
+# 334 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_ARIA
+# 335 "data/maps/SnowdriftCity_House3/scripts.pory"
+	cleartrainerflag TRAINER_JUAN_2
+# 336 "data/maps/SnowdriftCity_House3/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 337 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_0, MSGBOX_DEFAULT
+# 338 "data/maps/SnowdriftCity_House3/scripts.pory"
+	waitfanfare
+# 339 "data/maps/SnowdriftCity_House3/scripts.pory"
+	compare VAR_LINA_TALKED_TO, 3
+	goto_if_eq SnowdriftCity_House3_EventScript_ResetFinalRematches_2
+SnowdriftCity_House3_EventScript_ResetFinalRematches_1:
+# 343 "data/maps/SnowdriftCity_House3/scripts.pory"
+	goto_if_set FLAG_SYS_DEFEATED_JAMES, SnowdriftCity_House3_EventScript_ResetFinalRematches_5
+SnowdriftCity_House3_EventScript_ResetFinalRematches_4:
+	return
+
+SnowdriftCity_House3_EventScript_ResetFinalRematches_2:
+# 340 "data/maps/SnowdriftCity_House3/scripts.pory"
+	setvar VAR_LINA_TALKED_TO, 2
+# 341 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_1, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_ResetFinalRematches_1
+
+SnowdriftCity_House3_EventScript_ResetFinalRematches_5:
+# 344 "data/maps/SnowdriftCity_House3/scripts.pory"
+	clearflag FLAG_SYS_DEFEATED_JAMES
+# 345 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_2, MSGBOX_DEFAULT
+	goto SnowdriftCity_House3_EventScript_ResetFinalRematches_4
 
 
 SnowdriftCity_House3_EventScript_CynthiaEncounter_Text_0:
@@ -550,7 +603,23 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_Text_19:
 
 SnowdriftCity_House3_EventScript_JimmyStatReport_Text_20:
 # 310 "data/maps/SnowdriftCity_House3/scripts.pory"
-	.string "Well, that's it, {PLAYER}!\p There's other things you could've\n missed.\p “PuzzlesImportantItemsSecrets” in\n the SPOILERS folder has everything.\p Thanks again for playing.\n I hope you enjoyed it!$"
+	.string "Do you want me to reset the GYM\nLEADER final rematches too?$"
+
+SnowdriftCity_House3_EventScript_JimmyStatReport_Text_21:
+# 312 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "JIMMY: Well, that's it, {PLAYER}!\p There's other things you could've\n missed.\p “PuzzlesImportantItemsSecrets” in\n the SPOILERS folder has everything.\p Thanks again for playing.\n I hope you enjoyed it!$"
+
+SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_0:
+# 337 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS can now be fought again.\pThe ELITE FOUR can be re-challenged at\nanytime.$"
+
+SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_1:
+# 341 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}EUGENIA can also be re-challenged.$"
+
+SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_2:
+# 345 "data/maps/SnowdriftCity_House3/scripts.pory"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}JAMES can also be re-challenged.$"
 
 SnowdriftCity_House3_Text_CynthiaLoss::
 # 159 "data/maps/SnowdriftCity_House3/scripts.pory"

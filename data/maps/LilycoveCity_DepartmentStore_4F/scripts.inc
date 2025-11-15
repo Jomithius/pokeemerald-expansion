@@ -227,170 +227,174 @@ LilycoveCity_DepartmentStore_4F_Pokemart_HoldItems:
 # 114 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_MUSCLE_BAND
 # 115 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_AIR_BALLOON
+	.2byte ITEM_FOCUS_SASH
 # 116 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_ASSAULT_VEST
+	.2byte ITEM_FOCUS_BAND
 # 117 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_THROAT_SPRAY
+	.2byte ITEM_AIR_BALLOON
 # 118 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_BLACK_SLUDGE
+	.2byte ITEM_ASSAULT_VEST
 # 119 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_BLUNDER_POLICY
+	.2byte ITEM_THROAT_SPRAY
 # 120 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_WEAKNESS_POLICY
+	.2byte ITEM_BLACK_SLUDGE
 # 121 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_DESTINY_KNOT
+	.2byte ITEM_BLUNDER_POLICY
 # 122 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_EJECT_BUTTON
+	.2byte ITEM_WEAKNESS_POLICY
 # 123 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_EJECT_PACK
+	.2byte ITEM_DESTINY_KNOT
 # 124 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_EXPERT_BELT
+	.2byte ITEM_EJECT_BUTTON
 # 125 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_WISE_GLASSES
+	.2byte ITEM_EJECT_PACK
 # 126 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_HEAVY_DUTY_BOOTS
+	.2byte ITEM_EXPERT_BELT
 # 127 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_LIFE_ORB
+	.2byte ITEM_WISE_GLASSES
 # 128 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-    .2byte ITEM_FLAME_ORB
+	.2byte ITEM_HEAVY_DUTY_BOOTS
 # 129 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_LIFE_ORB
 # 130 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_ADRENALINE_ORB
+    .2byte ITEM_FLAME_ORB
 # 131 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_TOXIC_ORB
 # 132 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_LEFTOVERS
+	.2byte ITEM_ADRENALINE_ORB
 # 133 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_LIGHT_CLAY
+	.2byte ITEM_KINGS_ROCK
 # 134 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_ROCKY_HELMET
+	.2byte ITEM_LEFTOVERS
 # 135 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_RED_CARD
+	.2byte ITEM_LIGHT_CLAY
 # 136 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_SHED_SHELL
+	.2byte ITEM_ROCKY_HELMET
 # 137 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_EVIOLITE
+	.2byte ITEM_RED_CARD
 # 138 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-    .2byte ITEM_WIDE_LENS
+	.2byte ITEM_SHED_SHELL
 # 139 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-    .2byte ITEM_SCOPE_LENS
+	.2byte ITEM_EVIOLITE
 # 140 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-    .2byte ITEM_ZOOM_LENS
+    .2byte ITEM_WIDE_LENS
 # 141 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_STICKY_BARB
+    .2byte ITEM_SCOPE_LENS
 # 142 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_FLOAT_STONE
+    .2byte ITEM_ZOOM_LENS
 # 143 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_IRON_BALL
+	.2byte ITEM_STICKY_BARB
 # 144 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_SAFETY_GOGGLES
+	.2byte ITEM_FLOAT_STONE
 # 145 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_METRONOME
+	.2byte ITEM_IRON_BALL
 # 146 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	pokemartlistend
+	.2byte ITEM_SAFETY_GOGGLES
 # 147 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-
+	.2byte ITEM_METRONOME
 # 148 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-LilycoveCity_DepartmentStore_4F_EventScript_MartEmployee::
-# 149 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	lock
-# 150 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	faceplayer
-# 151 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	message LilycoveCity_DepartmentStore_4F_Text_WeatherItems
-# 152 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	waitmessage
-# 153 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_AbsorbItems
-# 154 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-# 155 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	release
-# 156 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	end
-# 157 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-
-# 158 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.align 2
-# 159 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-LilycoveCity_DepartmentStore_4F_Pokemart_AbsorbItems:
-# 160 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_DAMP_ROCK
-# 161 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_HEAT_ROCK
-# 162 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_SMOOTH_ROCK
-# 163 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_ICY_ROCK
-# 164 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_TERRAIN_EXTENDER
-# 165 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_ELECTRIC_SEED
-# 166 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_PSYCHIC_SEED
-# 167 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_MISTY_SEED
-# 168 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_GRASSY_SEED
-# 169 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_ABSORB_BULB
-# 170 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_CELL_BATTERY
-# 171 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_LUMINOUS_MOSS
-# 172 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_SNOWBALL
-# 173 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	pokemartlistend
+# 149 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+
+# 150 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+LilycoveCity_DepartmentStore_4F_EventScript_MartEmployee::
+# 151 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	lock
+# 152 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	faceplayer
+# 153 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	message LilycoveCity_DepartmentStore_4F_Text_WeatherItems
+# 154 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	waitmessage
+# 155 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_AbsorbItems
+# 156 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 157 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	release
+# 158 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	end
+# 159 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+
+# 160 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.align 2
+# 161 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+LilycoveCity_DepartmentStore_4F_Pokemart_AbsorbItems:
+# 162 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_DAMP_ROCK
+# 163 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_HEAT_ROCK
+# 164 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_SMOOTH_ROCK
+# 165 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_ICY_ROCK
+# 166 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_TERRAIN_EXTENDER
+# 167 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_ELECTRIC_SEED
+# 168 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_PSYCHIC_SEED
+# 169 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_MISTY_SEED
+# 170 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_GRASSY_SEED
+# 171 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_ABSORB_BULB
+# 172 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_CELL_BATTERY
+# 173 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.2byte ITEM_LUMINOUS_MOSS
 # 174 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-
+	.2byte ITEM_SNOWBALL
 # 175 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
+	pokemartlistend
 # 176 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "Hmm…\p"
+
 # 177 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "An attacking move…\n"
+LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
 # 178 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "Or a defensive move…\p"
+	.string "Hmm…\p"
 # 179 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "It's no easy matter to decide which TM\n"
+	.string "An attacking move…\n"
 # 180 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "moves should be taught to POKéMON…$"
+	.string "Or a defensive move…\p"
 # 181 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-
+	.string "It's no easy matter to decide which TM\n"
 # 182 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
+	.string "moves should be taught to POKéMON…$"
 # 183 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "There are so many different kinds of\n"
-# 184 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "TM moves.\p"
-# 185 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "A catalog I read said there are 100\n"
-# 186 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "different kinds.$"
-# 187 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 
+# 184 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
+# 185 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.string "There are so many different kinds of\n"
+# 186 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.string "TM moves.\p"
+# 187 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.string "A catalog I read said there are 100\n"
 # 188 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
+	.string "different kinds.$"
 # 189 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "I'd like to get all the different TMs,\n"
+
 # 190 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
+# 191 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.string "I'd like to get all the different TMs,\n"
+# 192 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "but a POKéMON learns only four moves.$"
 
 LilycoveCity_DepartmentStore_4F_Text_EvoItems::
-# 194 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 196 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "Welcome!\p I sell a bunch of EVOLUTION items!$"
 
 LilycoveCity_DepartmentStore_4F_Text_WeatherItems::
-# 199 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 201 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "Welcome!\p Get your field setting items here!$"
 
 LilycoveCity_DepartmentStore_4F_Text_HoldItems::
-# 204 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 206 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "Welcome, welcome!\p I got MUST-HAVE hold items for sale!\n Guaranteed to upgrade your battling!$"
 
 LilycoveCity_DepartmentStore_4F_Text_TMs::
-# 210 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 212 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "TMs! Get your TMs here!\n We have tons of rare TMs!$"
