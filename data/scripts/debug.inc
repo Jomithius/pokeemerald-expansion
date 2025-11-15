@@ -197,8 +197,10 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_MOMO_ARIA_STATE, 7
-	warp MAP_BALDESIA_MAIN_HOUSE, 13, 7
+	setvar VAR_RAT_CAVE_STATE, 13
+	clearflag FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE
+	clearflag FLAG_HIDE_JIMMY_SNOWDRIFT_CITY
+	warp MAP_THE_UNDER_HOUSE, 11, 2
 	waitstate
 	release
 	end

@@ -81,7 +81,44 @@ script TheUnder_House_PlayerAwakens{
 }
 
 script TheUnder_House_EventScript_Ratduardo{
-    msgbox(TheUnder_House_Ratduardo2, MSGBOX_NPC)
+    lock
+    faceplayer
+    msgbox(TheUnder_House_Ratduardo2, MSGBOX_AUTOCLOSE)
+    fadeoutbgm(0)
+    delay(24)
+    hideobjectat(1, MAP_THE_UNDER_HOUSE)
+    hideobjectat(2, MAP_THE_UNDER_HOUSE)
+    hideobjectat(3, MAP_THE_UNDER_HOUSE)
+    delay(8)
+    showobjectat(1, MAP_THE_UNDER_HOUSE)
+    showobjectat(2, MAP_THE_UNDER_HOUSE)
+    showobjectat(3, MAP_THE_UNDER_HOUSE)
+    delay(12)
+    hideobjectat(1, MAP_THE_UNDER_HOUSE)
+    hideobjectat(2, MAP_THE_UNDER_HOUSE)
+    hideobjectat(3, MAP_THE_UNDER_HOUSE)
+    delay(8)
+    showobjectat(1, MAP_THE_UNDER_HOUSE)
+    showobjectat(2, MAP_THE_UNDER_HOUSE)
+    showobjectat(3, MAP_THE_UNDER_HOUSE)
+    delay(32)
+    hideobjectat(1, MAP_THE_UNDER_HOUSE)
+    hideobjectat(2, MAP_THE_UNDER_HOUSE)
+    hideobjectat(3, MAP_THE_UNDER_HOUSE)
+    delay(16)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    setflag(FLAG_HIDE_RATDUARDO_THE_UNDER_HOUSE)
+    msgbox("RATDUARDO's voice echoes:\p
+        Thank you…", MSGBOX_AUTOCLOSE)
+    waitmessage
+    fadeinbgm(0)
+    delay(24)
+    additem(ITEM_MASTER_BALL, 10)
+    giveitem(ITEM_CHERISH_BALL, 4)
+    waitmessage
+    release
     end
 }
 
@@ -123,11 +160,15 @@ text TheUnder_House_Text_Ratduardo{
 }
 
 text TheUnder_House_Ratduardo2{
-    "I haven't been home in a long time.\p
-    But suddenly, it was like I had been\n
+    "I haven't been home in… Huh?\n
+    … I can't… remember how long it's been.\p
+    But… Suddenly, it was like I had been\n
     woken up from a really long dream…\p
-    Did you have something to do with it?\n
-    If you did… Thank you."
+    I'm not sure… But did you have\n
+    something to do with it?\l
+    …\p
+    I… Sorry- I'm just…\n
+    I can finally see them again…"
 }
 
 movement TheUnder_House_Movement_LayInBedLeft{

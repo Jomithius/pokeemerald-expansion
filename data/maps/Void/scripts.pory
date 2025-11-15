@@ -197,6 +197,7 @@ script EventScript_FinalRematchesUnlocked{
         all GYM LEADERS are defeated.", MSGBOX_AUTOCLOSE)
     waitmessage
     addpcitem(ITEM_MASTER_BALL, 25)
+    addpcitem(ITEM_BIG_NUGGET, 33)
     setvar(VAR_FINAL_REMATCH_STATE, 6)
     setvar(VAR_GYM_LEADER_COUNT, 0)
     setflag(FLAG_SYS_FINAL_REMATCH)
@@ -227,8 +228,8 @@ text PokenavText_FinalMatches{
     POKéMON CENTERS to help you\l
     prepare for the battles.\p
     Also, I wired some MASTER BALLS\n
-    to your PC in case you need to\l
-    catch more POKéMON.\p
+    and money to your PC in case you\l
+    need to prepare more.\p
     I'm looking forward to seeing\n
     how strong you are now!\p
     … … … … … …\n

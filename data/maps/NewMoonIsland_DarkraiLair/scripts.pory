@@ -9,11 +9,14 @@ script NewMoonIsland_DarkraiLair_OnTransition{
 }
 
 script NewMoonIsland_DarkraiLair_TryRemoveDarkrai{
-    specialvar(VAR_RESULT, GetBattleOutcome)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
-    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
-    removeobject(VAR_LAST_TALKED)
+    if(flag(FLAG_SYS_CTRL_OBJ_DELETE)){
+        specialvar(VAR_RESULT, GetBattleOutcome)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_RAN, Common_EventScript_NopReturn)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Common_EventScript_NopReturn)
+        goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, Common_EventScript_NopReturn)
+        removeobject(VAR_LAST_TALKED)
+        clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    }
     end
 }
 
@@ -22,12 +25,14 @@ script NewMoonIsland_DarkraiLair_EventScript_Darkrai{
 	faceplayer
     playmoncry(SPECIES_DARKRAI, CRY_MODE_ENCOUNTER)
     waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
     setwildbattle(SPECIES_DARKRAI, 75, ITEM_COVERT_CLOAK)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
-		goto(Common_EventScript_NopReturn)
+        clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+        goto(NewMoonIsland_DarkraiLair_EventScript_NopReturn)
         end
     }
     msgbox(NewMoonIsland_DarkraiLair_Text_PostDarkrai, MSGBOX_AUTOCLOSE)
@@ -45,6 +50,7 @@ script NewMoonIsland_DarkraiLair_EventScript_Darkrai{
     fadescreenspeed(FADE_TO_BLACK, 6)
     delay(90)
     setrespawn(HEAL_LOCATION_THE_UNDER)
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
     goto_if_eq(VAR_RAT_CAVE_STATE, 8, NewMoonIsland_DarkraiLair_TryUpdateRatCaveState)
     warpsilent(MAP_THE_UNDER_HOUSE, 11, 2)
     waitstate
@@ -61,6 +67,11 @@ script NewMoonIsland_DarkraiLair_TryUpdateRatCaveState{
     setvar(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER, 0)
     warpsilent(MAP_THE_UNDER_HOUSE, 11, 2)
     waitstate
+    end
+}
+
+script NewMoonIsland_DarkraiLair_EventScript_NopReturn{
+    release
     end
 }
 

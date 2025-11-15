@@ -9,11 +9,17 @@ mapscripts SnowdriftCity_House3_MapScripts {
 script SnowdriftCity_House3_OnTransition{
     setflag(FLAG_TEMP_E)
     call_if_not_defeated(TRAINER_CYNTHIA, SnowdriftCity_House3_UpdateMusic)
+    call_if_ge(VAR_FINAL_REMATCH_STATE, 9, SnowdriftCity_House3_UpdateMusicJimmy)
     end
 }
 
 script SnowdriftCity_House3_UpdateMusic{
     savebgm(MUS_ENCOUNTER_CYNTHIA)
+    return
+}
+
+script SnowdriftCity_House3_UpdateMusicJimmy{
+    savebgm(MUS_THE_DAY_WILL_COME)
     return
 }
 
@@ -309,7 +315,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
     }
     msgbox("Do you want me to reset the GYM\nLEADER final rematches too?", MSGBOX_YESNO)
     call_if_eq(VAR_RESULT, YES, SnowdriftCity_House3_EventScript_ResetFinalRematches)
-    msgbox("JIMMY: Well, that's it, {PLAYER}!\p
+    msgbox("JIMMY: Well… that's it, {PLAYER}!\p
         There's other things you could've\n
         missed.\p
         “PuzzlesImportantItemsSecrets” in\n
@@ -334,7 +340,7 @@ script SnowdriftCity_House3_EventScript_ResetFinalRematches{
     cleartrainerflag(TRAINER_ARIA)
     cleartrainerflag(TRAINER_JUAN_2)
     playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS can now be fought again.\pThe ELITE FOUR can be re-challenged at\nanytime.", MSGBOX_DEFAULT)
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS can now be fought\nagain.\pThe ELITE FOUR can be re-challenged at\nanytime.", MSGBOX_DEFAULT)
     waitfanfare
     if(var(VAR_LINA_TALKED_TO) == 3){
         setvar(VAR_LINA_TALKED_TO, 2)

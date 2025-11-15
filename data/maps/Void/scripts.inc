@@ -269,51 +269,53 @@ EventScript_FinalRematchesUnlocked::
 # 199 "data/maps/Void/scripts.pory"
 	addpcitem ITEM_MASTER_BALL, 25
 # 200 "data/maps/Void/scripts.pory"
-	setvar VAR_FINAL_REMATCH_STATE, 6
+	addpcitem ITEM_BIG_NUGGET, 33
 # 201 "data/maps/Void/scripts.pory"
-	setvar VAR_GYM_LEADER_COUNT, 0
+	setvar VAR_FINAL_REMATCH_STATE, 6
 # 202 "data/maps/Void/scripts.pory"
-	setflag FLAG_SYS_FINAL_REMATCH
+	setvar VAR_GYM_LEADER_COUNT, 0
 # 203 "data/maps/Void/scripts.pory"
-	setflag FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN
+	setflag FLAG_SYS_FINAL_REMATCH
 # 204 "data/maps/Void/scripts.pory"
-	clearflag FLAG_HIDE_GYM_LEADERS
+	setflag FLAG_HIDE_GYM_LEADERS_NORTHERN_HOENN
 # 205 "data/maps/Void/scripts.pory"
-	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	clearflag FLAG_HIDE_GYM_LEADERS
 # 206 "data/maps/Void/scripts.pory"
-	clearflag FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY
+	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
 # 207 "data/maps/Void/scripts.pory"
-	clearflag FLAG_HIDE_STAFF_EMPLOYEE_MERCHANTS
+	clearflag FLAG_HIDE_MOMO_ARIA_MOSSDEEP_CITY
 # 208 "data/maps/Void/scripts.pory"
-	setflag FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST
+	clearflag FLAG_HIDE_STAFF_EMPLOYEE_MERCHANTS
 # 209 "data/maps/Void/scripts.pory"
-	setvar VAR_MOMO_ARIA_STATE, 10
+	setflag FLAG_HIDE_PETALBURG_GYM_NPC_RATDUARDO_SIDEQUEST
 # 210 "data/maps/Void/scripts.pory"
+	setvar VAR_MOMO_ARIA_STATE, 10
+# 211 "data/maps/Void/scripts.pory"
 	releaseall
 	end
 
 
-# 238 "data/maps/Void/scripts.pory"
+# 239 "data/maps/Void/scripts.pory"
 Void_Movement_WalkToEdge:
-# 239 "data/maps/Void/scripts.pory"
-	walk_right
-# 239 "data/maps/Void/scripts.pory"
+# 240 "data/maps/Void/scripts.pory"
 	walk_right
 # 240 "data/maps/Void/scripts.pory"
-	walk_down
+	walk_right
 # 241 "data/maps/Void/scripts.pory"
+	walk_down
+# 242 "data/maps/Void/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 244 "data/maps/Void/scripts.pory"
-Void_Movement_WalkToPlayer:
 # 245 "data/maps/Void/scripts.pory"
+Void_Movement_WalkToPlayer:
+# 246 "data/maps/Void/scripts.pory"
 	walk_up
-# 246 "data/maps/Void/scripts.pory"
-	walk_left
-# 246 "data/maps/Void/scripts.pory"
+# 247 "data/maps/Void/scripts.pory"
 	walk_left
 # 247 "data/maps/Void/scripts.pory"
+	walk_left
+# 248 "data/maps/Void/scripts.pory"
 	walk_in_place_down
 	step_end
 
@@ -366,5 +368,5 @@ EventScript_FinalRematchesUnlocked_Text_0:
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS and ELITE FOUR are now\n ready for their final rematches.\p The GYM LEADERS can be battled in any\n order.\p The ELITE FOUR can't be challenged until\n all GYM LEADERS are defeated.$"
 
 PokenavText_FinalMatches::
-# 214 "data/maps/Void/scripts.pory"
-	.string "… … … … … …\n … … … … … Beep!\p JIMMY: {PLAYER}!\n It's JIMMY.\p My staff has been giving me\n updates about you!\p Sounds like you've gotten a\n lot done out there, so…\p It's time! I'll tell all the\n LEADERS to get ready!\p And, as an extra bonus, I sent\n some of my staff members out to\l POKéMON CENTERS to help you\l prepare for the battles.\p Also, I wired some MASTER BALLS\n to your PC in case you need to\l catch more POKéMON.\p I'm looking forward to seeing\n how strong you are now!\p … … … … … …\n … … … … … Click!$"
+# 215 "data/maps/Void/scripts.pory"
+	.string "… … … … … …\n … … … … … Beep!\p JIMMY: {PLAYER}!\n It's JIMMY.\p My staff has been giving me\n updates about you!\p Sounds like you've gotten a\n lot done out there, so…\p It's time! I'll tell all the\n LEADERS to get ready!\p And, as an extra bonus, I sent\n some of my staff members out to\l POKéMON CENTERS to help you\l prepare for the battles.\p Also, I wired some MASTER BALLS\n and money to your PC in case you\l need to prepare more.\p I'm looking forward to seeing\n how strong you are now!\p … … … … … …\n … … … … … Click!$"

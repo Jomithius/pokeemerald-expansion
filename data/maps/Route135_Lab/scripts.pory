@@ -256,6 +256,7 @@ script Route_135_EventScript_JamesBattle{
     removeobject(2)
     playse(SE_EXIT)
     waitse
+    setflag(FLAG_HIDE_JAMES_ROUTE_135_LAB)
     clearflag(FLAG_HIDE_JAMES_ROUTE_115)
     setvar(VAR_MISA_STATE, 11)
     release

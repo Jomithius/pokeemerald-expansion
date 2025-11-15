@@ -4636,7 +4636,7 @@ bool32 ShouldDoFinalRematchCall(void)
         case MAP_TYPE_CITY:
         case MAP_TYPE_ROUTE:
         case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER)) < 33)
+            if (++(*GetVarPointer(VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER)) < 3)
                 return FALSE;
             break;
         default:
