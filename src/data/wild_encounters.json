@@ -3701,12 +3701,12 @@
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_BRUXISH"
+                "species": "SPECIES_FEEBAS"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_BRUXISH"
+                "species": "SPECIES_FEEBAS"
               },
               {
                 "min_level": 20,
@@ -10896,7 +10896,7 @@
               {
                 "min_level": 70,
                 "max_level": 75,
-                "species": "SPECIES_MUDKIP"
+                "species": "SPECIES_SQUIRTLE"
               }
             ]
           },
@@ -10921,12 +10921,12 @@
               {
                 "min_level": 70,
                 "max_level": 75,
-                "species": "SPECIES_FUECOCO"
+                "species": "SPECIES_TORCHIC"
               },
               {
                 "min_level": 70,
                 "max_level": 75,
-                "species": "SPECIES_FUECOCO"
+                "species": "SPECIES_TREECKO"
               }
             ]
           },
@@ -10956,32 +10956,32 @@
               {
                 "min_level": 70,
                 "max_level": 75,
-                "species": "SPECIES_FUECOCO"
-              },
-              {
-                "min_level": 70,
-                "max_level": 75,
-                "species": "SPECIES_SOBBLE"
-              },
-              {
-                "min_level": 70,
-                "max_level": 75,
-                "species": "SPECIES_SOBBLE"
-              },
-              {
-                "min_level": 70,
-                "max_level": 75,
-                "species": "SPECIES_POPPLIO"
-              },
-              {
-                "min_level": 70,
-                "max_level": 75,
                 "species": "SPECIES_MUDKIP"
               },
               {
                 "min_level": 70,
                 "max_level": 75,
-                "species": "SPECIES_MUDKIP"
+                "species": "SPECIES_CHESPIN"
+              },
+              {
+                "min_level": 70,
+                "max_level": 75,
+                "species": "SPECIES_SQUIRTLE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 75,
+                "species": "SPECIES_FENNEKIN"
+              },
+              {
+                "min_level": 70,
+                "max_level": 75,
+                "species": "SPECIES_SPRIGATITO"
+              },
+              {
+                "min_level": 70,
+                "max_level": 75,
+                "species": "SPECIES_SPRIGATITO"
               }
             ]
           }
@@ -13626,7 +13626,7 @@
               {
                 "min_level": 70,
                 "max_level": 70,
-                "species": "SPECIES_BASCULEGION"
+                "species": "SPECIES_GRENINJA"
               },
               {
                 "min_level": 70,
