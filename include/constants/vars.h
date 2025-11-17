@@ -146,7 +146,7 @@
 #define VAR_AZURE_MOUNTAIN_RIVAL_STATE                   0x407E // For Brendan/May battle Azure Mountain
 #define VAR_GYM_LEADER_COUNT                             0x407F // For final rematches
 #define VAR_JIMMY_FINAL_REMATCH_CALL_STEP_COUNTER        0x4080 // For unlocking rematches post game
-#define VAR_FINAL_REMATCH_STATE                          0x4081 // For unlocking rematches post game
+#define VAR_FINAL_REMATCH_STATE                          0x4081 // For unlocking rematches post game 1-6 unlocking final rematches (5 needed for call), 7-8 e4 to champion battle, 9 game end
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
 #define VAR_JAMES_AREA_ZERO_CALL_STEP_COUNTER            0x4083 // Area Zero Call
 #define VAR_BIRCH_LAB_STATE                              0x4084

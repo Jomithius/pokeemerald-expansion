@@ -502,7 +502,7 @@ script MossdeepCity_EventScript_MomoBattle{
 			Okay, let's battle.", MSGBOX_AUTOCLOSE)
 		waitmessage
 		trainerbattle_two_trainers(TRAINER_MOMO, "Everyone's so mean to me…", TRAINER_SHADOW_CLONE_MOMO, "</3")
-		msgbox("I… lost again.\n
+		msgbox("MOMO: I… lost again.\n
 			Still, I had fun.\p
 			{PLAYER}, if you're going to see ARIA,\n
 			can you tell them to hurry up and\l
@@ -615,12 +615,14 @@ script MossdeepCity_EventScript_AriaBattle{
 		the SACRED BLADE!", MSGBOX_AUTOCLOSE)
 	waitmessage
 	trainerbattle_no_intro(TRAINER_ARIA, "M-My lord…")
-	msgbox("ARRGGGHH!\n
+	msgbox("ARIA: ARRGGGHH!\n
 		I lost again!", MSGBOX_DEFAULT)
 	waitmessage
 	addvar(VAR_GYM_LEADER_COUNT, 1)
-	checkitem(ITEM_SACRED_BLADE)
-	goto_if_eq(VAR_RESULT, TRUE, MossdeepCity_EventScript_GiveTotodilePostBattle)
+	if(!flag(FLAG_RECEIVED_TOTODILE_PARTNER)){
+		checkitem(ITEM_SACRED_BLADE)
+		goto_if_eq(VAR_RESULT, TRUE, MossdeepCity_EventScript_GiveTotodilePostBattle)
+	}
 	msgbox("I need to train more!\p
 		{PLAYER}, if you're going to see MOMO,\n
 		can you tell her I'm gonna train for\l

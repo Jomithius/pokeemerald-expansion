@@ -323,6 +323,7 @@ script SnowdriftCity_House3_EventScript_JimmyStatReport{
         Thanks again for playing.\n
         I hope you enjoyed it!", MSGBOX_AUTOCLOSE)
     waitmessage
+    setflag(FLAG_HIDE_FAT_MAN_BATTLE_FRONTIER) // unlocks battle frontier
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
     release
@@ -339,7 +340,7 @@ script SnowdriftCity_House3_EventScript_ResetFinalRematches{
     cleartrainerflag(TRAINER_MOMO)
     cleartrainerflag(TRAINER_ARIA)
     cleartrainerflag(TRAINER_JUAN_2)
-    playfanfare(MUS_OBTAIN_ITEM)
+    playfanfare(MUS_OBTAIN_BADGE)
     msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS can now be fought\nagain.\pThe ELITE FOUR can be re-challenged at\nanytime.", MSGBOX_DEFAULT)
     waitfanfare
     if(var(VAR_LINA_TALKED_TO) == 3){

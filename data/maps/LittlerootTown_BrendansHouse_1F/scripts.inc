@@ -890,15 +890,15 @@ PlayersHouse_1F_EventScript_GameClearMessage::
 	waitfanfare
 # 448 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	msgbox PlayersHouse_1F_EventScript_GameClearMessage_Text_0, MSGBOX_AUTOCLOSE
-# 452 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	waitmessage
-# 453 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	setvar VAR_FINAL_REMATCH_STATE, 9
 # 454 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	waitmessage
+# 455 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+	setvar VAR_FINAL_REMATCH_STATE, 9
+# 456 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	releaseall
 	end
 
 
 PlayersHouse_1F_EventScript_GameClearMessage_Text_0:
 # 448 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Thank you for playing AZURE EMERALD!\p For stats on your playthrough and\n checks if you missed anything, JIMMY\l is in SNOWDRIFT CITY.$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Thank you for playing AZURE EMERALD!\p For stats on your playthrough and\n checks if you missed anything, JIMMY\l is in SNOWDRIFT CITY.\p Also, the BATTLE FRONTIER is now\n available.$"

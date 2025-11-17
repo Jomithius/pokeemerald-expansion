@@ -245,7 +245,7 @@ Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles:
 # 123 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	.string "streak, I want you to take these.\p"
 # 124 "data/maps/Route109_SeashoreHouse/scripts.pory"
-	.string "It's half a dozen bottles of SODA POP!$"
+	.string "It's half a dozen bottles of MTN DEW!$"
 # 125 "data/maps/Route109_SeashoreHouse/scripts.pory"
 
 # 126 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -259,7 +259,7 @@ Route109_SeashoreHouse_Text_BagFull:
 # 130 "data/maps/Route109_SeashoreHouse/scripts.pory"
 Route109_SeashoreHouse_Text_WantToBuySodaPop:
 # 131 "data/maps/Route109_SeashoreHouse/scripts.pory"
-	.string "Want to buy some SODA POP?\n"
+	.string "Want to buy some MTN DEW?\n"
 # 132 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	.string "POKéMON love it!\p"
 # 133 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -311,7 +311,7 @@ Route109_SeashoreHouse_Text_DwaynePostBattle:
 # 156 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	.string "Whenever I'm in SLATEPORT, I enjoy\n"
 # 157 "data/maps/Route109_SeashoreHouse/scripts.pory"
-	.string "hot battles and ice-cold SODA POP!$"
+	.string "hot battles and ice-cold MTN DEW!$"
 # 158 "data/maps/Route109_SeashoreHouse/scripts.pory"
 
 # 159 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -335,7 +335,7 @@ Route109_SeashoreHouse_Text_JohannaPostBattle:
 # 168 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	.string "Whew, I'm all thirsty.\n"
 # 169 "data/maps/Route109_SeashoreHouse/scripts.pory"
-	.string "Maybe I'll have a SODA POP.$"
+	.string "Maybe I'll have a MTN DEW.$"
 # 170 "data/maps/Route109_SeashoreHouse/scripts.pory"
 
 # 171 "data/maps/Route109_SeashoreHouse/scripts.pory"

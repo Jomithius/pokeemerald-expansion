@@ -295,7 +295,7 @@ AzureChasm_EventScript_Zamazenta::
 # 150 "data/maps/AzureChasm/scripts.pory"
 	waitmoncry
 # 151 "data/maps/AzureChasm/scripts.pory"
-	setwildbattle SPECIES_ZAMAZENTA, 90
+	setwildbattle SPECIES_ZAMAZENTA, 90, ITEM_RUSTED_SHIELD
 # 152 "data/maps/AzureChasm/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 153 "data/maps/AzureChasm/scripts.pory"

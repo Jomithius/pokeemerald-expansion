@@ -5263,7 +5263,7 @@ IVs: 0 Atk
 - Icy Wind  
 - Aqua Ring  
 
-Scrafty @ Sitrus Berry
+Scrafty (M) @ Sitrus Berry
 Ability: Intimidate  
 Level: 25  
 EVs: 252 HP / 240 Atk / 12 Def / 4 Spe  
@@ -17138,11 +17138,11 @@ IVs: 0 Atk
 - Vacuum Wave  
 - Flash Cannon  
 
-Totodile-Partner (M) @ Sacred Blade  
+Chomper (Totodile-Partner) (M) @ Sacred Blade  
 Ability: Strong Jaw   
 EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
-- Tachyon Cutter  
+- Smart Strike  
 - Sacred Sword  
 - Aqua Cutter  
 - Psyblade  
@@ -17157,7 +17157,7 @@ Double Battle: No
 AI: Smart Trainer 
 Mugshot: Blue
 
-Dragonite @ Dragoniteite
+MALDMO (Dragonite) @ Dragoniteite
 Ability: Multiscale   
 Shiny: Yes
 EVs: 252 HP / 4 Atk / 252 SpA 
@@ -19178,7 +19178,7 @@ IVs: 0 Atk
 - Magical Leaf  
 - Psyshock  
 
-Salazzle-Totem @ Charcoal  
+THE GRIPPER (Salazzle-Totem) @ Charcoal  
 Ability: Corrosion  
 Level: 36  
 EVs: 248 SpA / 4 SpD / 248 Spe  
@@ -24121,16 +24121,16 @@ AI: Basic Trainer
 Difficulty: Easy 
 Mugshot: Pink
 
-Rayquaza
+Rayquaza @ Life Orb
 Ability: Air Lock 
-EVs: 252 HP / 64 Atk   
+EVs: 252 HP / 64 Atk / 128 Spe  
 Jolly Nature  
 - Outrage  
 - Dragon Ascent   
 
 Cobalion @ Leftovers  
 Ability: Justified 
-EVs: 252 HP / 4 SpD  
+EVs: 252 HP / 128 Spe  
 Tera Type: Steel  
 Jolly Nature   
 - Close Combat  
@@ -24139,7 +24139,7 @@ Jolly Nature
 
 Reshiram @ Choice Specs  
 Ability: Turboblaze
-EVs: 252 HP / 4 SpD   
+EVs: 252 HP / 128 SpA   
 Tera Type: Fire   
 Timid Nature  
 IVs: 0 Atk  
@@ -24148,15 +24148,15 @@ IVs: 0 Atk
 
 Lugia @ Heavy-Duty Boots  
 Ability: Multiscale  
-EVs: 252 HP / 4 SpD  
+EVs: 252 HP / 128 SpA  
 Bold Nature  
 IVs: 0 Atk   
 - Hurricane  
 - Psychic 
 
-Spectrier
+Spectrier @ Sitrus Berry
 Ability: Grim Neigh
-EVs: 252 HP / 4 SpD   
+EVs: 252 HP / 128 Spe   
 Tera Type: Ghost   
 Timid Nature 
 IVs: 0 SpA 
@@ -24165,7 +24165,7 @@ IVs: 0 SpA
 
 Chien-Pao @ Ability Shield  
 Ability: Sword of Ruin 
-EVs: 252 HP
+EVs: 252 HP / 128 Spe
 Tera Type: Dark   
 Jolly Nature  
 - Icicle Crash  
@@ -24917,7 +24917,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 1 Spe
 - Water Pulse  
 - Mud Bomb  
 
-Scrafty 
+Scrafty (M)
 Ability: Intimidate  
 Level: 24  
 Naughty Nature
@@ -35606,7 +35606,8 @@ Modest Nature
 
 Hawlucha @ Hawluchite 
 Ability: Mold Breaker  
-Jolly Nature   
+Jolly Nature
+IVs: 15 Def   
 - Flying Press  
 - Rock Slide  
 
@@ -35804,8 +35805,8 @@ Ball: Nest Ball
 - Air Cutter   
 
 Decidueye (M) @ Muscle Band
-Ability: Overgrow 
-Tera Type: Flying  
+Ability: Long Reach
+Tera Type: Ghost 
 Adamant Nature  
 Ball: Nest Ball
 - Spirit Shackle  
@@ -35989,12 +35990,11 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Green
 
-Pincurchin @ Terrain Extender 
-Ability: Electric Surge  
-Bold Nature  
-IVs: 0 Atk  
-- Thunderbolt 
-- Spikes  
+Scrafty (M) @ Black Glasses
+Ability: Intimidate
+Adamant Nature   
+- Brick Break
+- Crunch 
 
 Lokix @ Heavy-Duty Boots  
 Ability: Swarm
@@ -36007,7 +36007,7 @@ Dragapult (M) @ Spell Tag
 Ability: Infiltrator  
 Tera Type: Dragon  
 Modest Nature  
-IVs: 0 Atk / 10 SpA / 15 Spe
+IVs: 0 Atk / 10 SpA / 0 Spe
 - Dragon Pulse
 - Shadow Ball
 
@@ -36018,12 +36018,12 @@ IVs: 0 Atk
 - Mighty Cleave  
 - Psycho Cut   
 
-Jolteon (M) @ Electric Seed  
+Jolteon (M) @ Magnet
 Ability: Volt Absorb 
 Tera Type: Fairy   
 Timid Nature  
 IVs: 0 SpA / 0 Spe
-- Rising Voltage  
+- Thunderbolt 
 - Alluring Voice  
 
 Houndoom @ Houndoominite  
@@ -36202,24 +36202,22 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Pink
 
-Ninetales (F) @ Heat Rock
+Ninetales (F) @ Sitrus Berry
 Ability: Drought   
 Serious Nature  
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe    
-- Fire Blast  
+- Flamethrower  
 - Psyshock  
-- Solar Beam  
 
-Talonflame (M) @ Heavy-Duty Boots  
+Talonflame (M) @ Charcoal 
 Ability: Flame Body  
-Tera Type: Steel   
+Tera Type: Fire  
 Serious Nature  
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe   
 - Brave Bird  
-- Flare Blitz  
-- Steel Wing  
+- Temper Flare  
 
-Chandelure (M) @ Misty Seed
+Chandelure (M) @ Spell Tag
 Ability: Infiltrator
 Tera Type: Ghost   
 Serious Nature  
@@ -36228,9 +36226,8 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Shadow Ball   
 
 Scovillain @ Wise Glasses  
-Ability: Chlorophyll  
-Serious Nature  
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe   
+Ability: Insomnia
+Serious Nature   
 - Energy Ball  
 - Fire Blast  
 - Tera Blast  
@@ -36244,8 +36241,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Ampharos (M) @ Ampharosite  
 Ability: Static
-Serious Nature  
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+Serious Nature   
 - Dragon Pulse  
 - Thunderbolt   
 - Power Gem 
@@ -36438,7 +36434,6 @@ THE GRIPPER (Salazzle) @ Grip Claw
 Ability: Gooey  
 Tera Type: Ghost
 Naughty Nature  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Role Play  
 - Swallow  
 - Lick  
@@ -36473,7 +36468,7 @@ Ability: Cute Charm
 Jolly Nature  
 - Fake Out  
 - Return  
-- Drain Punch  
+- Close Combat
 
 === TRAINER_NORMAN_3 ===
 Name: NORMAN
@@ -36904,12 +36899,13 @@ IVs: 0 Atk
 - Aura Sphere  
 - Flash Cannon  
 
-Totodile-Partner (M) @ Sacred Blade  
+Chomper (Totodile-Partner) (M) @ Sacred Blade  
 Ability: Strong Jaw 
 EVs: 252 HP
 Adamant Nature   
 - Sacred Sword  
-- Aqua Cutter  
+- Aqua Cutter
+- Smart Strike  
 
 === TRAINER_MOMO ===
 Name: MOMO
@@ -36922,7 +36918,7 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Blue
 
-Dragonite @ Dragoniteite
+MALDMO (Dragonite) @ Dragoniteite
 Ability: Multiscale 
 Shiny: Yes   
 Adamant Nature  
@@ -37591,11 +37587,10 @@ IVs: 0 Atk
 - Dazzling Gleam  
 
 Alomomola @ Leftovers  
-Ability: Regenerator 
-Modest Nature  
-- Flip Turn  
-- Surf  
-- Icy Wind  
+Ability: Healer
+Modest Nature   
+- Scald 
+- Blizzard 
 
 Victini @ Heavy-Duty Boots  
 Ability: Victory Star  
@@ -37606,7 +37601,7 @@ IVs: 0 SpA / 0 Spe
 
 Tinkaton (F) @ Fairy Feather 
 Ability: Mold Breaker  
-Tera Type: Fairy  
+Tera Type: Steel  
 Jolly Nature  
 - Fake Out  
 - Gigaton Hammer  
@@ -38267,9 +38262,9 @@ Difficulty: Easy
 Aggron (M) 
 Ability: Rock Head   
 Adamant Nature  
-- Stealth Rock  
 - Earthquake  
-- Head Smash  
+- Rock Slide
+- Heavy Slam  
 
 Bombirdier 
 Ability: Rocky Payload   
@@ -38287,7 +38282,7 @@ IVs: 0 Atk
 - Extrasensory  
 - Shadow Ball  
 
-Klawf @ Assault Vest  
+Klawf
 Ability: Anger Shell    
 Adamant Nature  
 - Crabhammer   
@@ -38331,9 +38326,8 @@ Ability: Torrent
 Tera Type: Water  
 Modest Nature  
 IVs: 0 Atk    
-- Hydro Cannon  
+- Hydro Pump
 - Blizzard  
-- Dragon Pulse  
 
 Glaceon (F)
 Ability: Ice Body 
@@ -38353,10 +38347,10 @@ Mild Nature
 
 Dachsbun @ Rocky Helmet
 Ability: Well-Baked Body  
+Tera Type: Fairy
 Adamant Nature  
 - Play Rough  
-- Body Press  
-- Psychic Fangs  
+- Body Press   
 
 Blaziken (M) @ Blazikenite  
 Ability: Blaze
@@ -38705,6 +38699,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 Difficulty: Easy 
+Mugshot: Yellow
 
 Pikachu-Kalos @ Light Ball  
 Ability: Static
@@ -38799,7 +38794,7 @@ Modest Nature
 - Mystical Fire  
 - Psyshock  
 
-Salazzle-Totem @ Charcoal  
+THE GRIPPER (Salazzle-Totem) @ Charcoal  
 Ability: Corrosion  
 Level: 35 
 Serious Nature  

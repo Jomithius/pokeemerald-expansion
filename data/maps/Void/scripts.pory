@@ -32,7 +32,7 @@ script Void_EventScript_FinalBattle{
     msgbox("JIMMY: {PLAYER}!\n
         I'm glad you made it here.\p
         DAVE's a good actor, isn't he?\n
-        He'd never actually get toxic like that!\p
+        He'd never actually get toxic!\p
         Anyways… I'm sure you already know,\n
         but welcome to the void.\p
         This place has existed forever, but\n
@@ -154,6 +154,7 @@ script Void_EventScript_GameEnd{
         I hope to see you again one day.", MSGBOX_AUTOCLOSE)
     waitmessage
     clearflag(FLAG_HIDE_JIMMY_SNOWDRIFT_CITY)
+    setflag(FLAG_HIDE_FAT_MAN_BATTLE_FRONTIER) // unlocks battle frontier after beating game
     call(EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags)
 	goto_if_set(FLAG_SYS_STARTED_AS_MALE, EverGrandeCity_HallOfFame_EventScript_GameClearMale)
 	goto_if_set(FLAG_SYS_STARTED_AS_FEMALE, EverGrandeCity_HallOfFame_EventScript_GameClearFemale)

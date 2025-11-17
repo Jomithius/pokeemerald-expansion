@@ -1219,6 +1219,7 @@ Common_EventScript_StaffEmployeeClerk::
 	.align 2
 Common_Mart_StaffEmployee:
 	.2byte ITEM_RARE_CANDY
+	.2byte ITEM_MASTER_BALL
 	.2byte ITEM_PP_MAX
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH

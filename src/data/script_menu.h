@@ -211,7 +211,7 @@ static const struct MenuAction MultichoiceList_Mechadoll5_Q3[] =
 static const struct MenuAction MultichoiceList_VendingMachine[] =
 {
     {COMPOUND_STRING("FRESH WATER{CLEAR_TO 0x48}¥200")},
-    {COMPOUND_STRING("SODA POP{CLEAR_TO 0x48}¥300")},
+    {COMPOUND_STRING("MTN DEW{CLEAR_TO 0x48}¥300")},
     {COMPOUND_STRING("LEMONADE{CLEAR_TO 0x48}¥350")},
     {gText_Exit},
 };

@@ -795,11 +795,11 @@ const struct Item gItemsInfo[] =
 
     [ITEM_SODA_POP] =
     {
-        .name = _("Soda Pop"),
+        .name = _("Mtn Dew"),
         .price = 300,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
-            "A fizzy soda drink\n"
+            "A fizzy baja blast\n"
             "that restores HP\n"
         #if I_HEALTH_RECOVERY >= GEN_7
             "by 50 points."),

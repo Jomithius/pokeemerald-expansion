@@ -821,7 +821,7 @@ Route109_Text_EdmondPostBattle:
 	.string "I'm a SAILOR, but…$"
 
 Route109_Text_RickyIntro:
-	.string "I'm thirsty… I could go for a SODA POP\n"
+	.string "I'm thirsty… I could go for a MTN DEW\n"
 	.string "at the SEASHORE HOUSE…$"
 
 Route109_Text_RickyDefeated:

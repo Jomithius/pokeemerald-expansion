@@ -24,4 +24,4 @@ SnowdriftCity_NewMap3_EventScript_BirdKeeper::
 
 SnowdriftCity_NewMap3_EventScript_BirdKeeper_Text_0:
 # 13 "data/maps/NewMap3/scripts.pory"
-	.string "I run a business flying people up\n the mountain.\p It's can be risky, but we've never\n had any accidents.$"
+	.string "I run a business flying people up\n the mountain.\p It can be risky, but we've never\n had any accidents.$"

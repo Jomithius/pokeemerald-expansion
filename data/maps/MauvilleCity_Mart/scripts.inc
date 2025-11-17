@@ -23,6 +23,7 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_DIVE_BALL
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_REVIVE
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_MAX_LURE
 	.2byte ITEM_FULL_HEAL

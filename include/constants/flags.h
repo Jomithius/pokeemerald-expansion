@@ -99,7 +99,7 @@
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
 #define FLAG_HIDE_RIVAL_AZURE_MOUNTAIN       0x54  // Brendan/May
-#define FLAG_RECEIVED_REVEAL_GLASS           0x55  // Baldesia Forest
+#define FLAG_HIDE_FAT_MAN_BATTLE_FRONTIER    0x55  // Used to block battle frontier before finishing story
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -1563,7 +1563,7 @@
 #define FLAG_TALKED_TO_POKEMON_SCHOOL_TUTOR         (SYSTEM_FLAGS + 0xBB) // Pokemon School
 #define FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT              (SYSTEM_FLAGS + 0xBC) // functionally unused
 #define FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER          (SYSTEM_FLAGS + 0xBD) // functionally unused
-#define FLAG_UNUSED_0x91E                           (SYSTEM_FLAGS + 0xBE) // Unused Flag
+#define FLAG_RECEIVED_REVEAL_GLASS                  (SYSTEM_FLAGS + 0xBE) // Baldesia Forest Dojo
 #define FLAG_UNUSED_0x91F                           (SYSTEM_FLAGS + 0xBF) // Unused Flag
 
 // Daily Flags

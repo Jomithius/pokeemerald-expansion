@@ -298,6 +298,14 @@ BattleFrontier_ReceptionGate_EventScript_ExitFrontierPassGuide::
 	release
 	end
 
+BattleFrontier_ReceptionGate_EventScript_FatMan::
+	lock
+	faceplayer
+	msgbox BattleFrontier_ReceptionGate_Text_FatMan, MSGBOX_AUTOCLOSE
+	waitmessage
+	release
+	end
+
 BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
 	.string "Is it your first time here?\n"
 	.string "Please step this way!$"
@@ -508,3 +516,6 @@ BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
 	.string "for prizes at the EXCHANGE SERVICE\l"
 	.string "CORNER.$"
 
+BattleFrontier_ReceptionGate_Text_FatMan:
+	.string "Today, we're spinning for no reason.\n"
+	.string "One day, we'll be gone for no reason.$"

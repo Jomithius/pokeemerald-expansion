@@ -63,7 +63,7 @@ script BennisDojo_EventScript_Benson{
 
 script BennisDojo_EventScript_Panini{
     goto_if_not_defeated(TRAINER_BENSON, BennisDojo_EventScript_NoCheatingPanini)
-    trainerbattle_single(TRAINER_PANINI_2, "PANINI: Panini!\nPanini nini pani!", "Panini! Panini panini.")
+    trainerbattle_single(TRAINER_PANINI_2, "PANINI: Panini!\nPanini nini pani!", "Nooo!\nFoiled again…")
     msgbox("PANINI: Panini!", MSGBOX_NPC)
 	end
 }

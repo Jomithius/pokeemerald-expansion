@@ -1065,7 +1065,7 @@ BennisDojo_EventScript_Panini_Text_0:
 
 BennisDojo_EventScript_Panini_Text_1:
 # 66 "data/maps/BennisDojo/scripts.pory"
-	.string "Panini! Panini panini.$"
+	.string "Nooo!\nFoiled again…$"
 
 BennisDojo_EventScript_Panini_Text_2:
 # 67 "data/maps/BennisDojo/scripts.pory"

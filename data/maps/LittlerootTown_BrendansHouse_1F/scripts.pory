@@ -448,7 +448,9 @@ script PlayersHouse_1F_EventScript_GameClearMessage{
 	msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}Thank you for playing AZURE EMERALD!\p
 	For stats on your playthrough and\n
 	checks if you missed anything, JIMMY\l
-	is in SNOWDRIFT CITY.", MSGBOX_AUTOCLOSE)
+	is in SNOWDRIFT CITY.\p
+	Also, the BATTLE FRONTIER is now\n
+	available.", MSGBOX_AUTOCLOSE)
 	waitmessage
 	setvar(VAR_FINAL_REMATCH_STATE, 9)
 	releaseall

@@ -92,7 +92,7 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 script EverGrandeCity_PhoebesRoom_EventScript_Lina{
     lock
     goto_if_set(FLAG_DEFEATED_EUGENIA, EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech)
-    goto_if_set(FLAG_DEFEATED_LINA, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
+    goto_if_set(FLAG_DEFEATED_LINA, EverGrandeCity_PhoebesRoom_EventScript_LinaPostBattleSpeech)
     goto_if_set(FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech)
     delay(16)
     playse(SE_PIN)
@@ -328,6 +328,13 @@ script EverGrandeCity_PhoebesRoom_EventScript_EugeniaDefeated{
 	msgbox(EverGrandeCity_PhoebesRoom_Text_EugeniaPostBattleSpeech, MSGBOX_DEFAULT)
 	release
 	end
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_LinaPostBattleSpeech{
+    faceplayer
+    msgbox(EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+    release
+    end
 }
 
 script EverGrandeCity_PhoebesRoom_EventScript_EugeniaPostBattleSpeech{
