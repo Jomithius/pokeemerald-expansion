@@ -576,7 +576,8 @@ BattleFrontier_BattlePyramidLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "POKéMON qualified for the challenge.\p"
 	.string "Please also remember to take all\n"
 	.string "items from your POKéMON.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "EGGS, LEGENDARIES, MYTHICAL\n"
+	.string "POKéMON and such are ineligible.\p"
 	.string "When you are ready, please have\n"
 	.string "a word with me.$"
 
@@ -588,7 +589,8 @@ BattleFrontier_BattlePyramidLobby_Text_NotEnoughValidMonsLv50:
 	.string "and each no higher than Level 50.\p"
 	.string "Please also remember to take all\n"
 	.string "items from your POKéMON.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "EGGS, LEGENDARIES, MYTHICAL\n"
+	.string "POKéMON and such are ineligible.\p"
 	.string "When you are ready, please have\n"
 	.string "a word with me.$"
 

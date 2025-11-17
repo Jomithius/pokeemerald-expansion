@@ -52,7 +52,8 @@ FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
 	.string "required for entry.\p"
 	.string "They also must not hold the same\n"
 	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "EGGS, LEGENDARIES, MYTHICAL\n"
+	.string "POKéMON and such are ineligible.\p"
 	.string "When you have made your preparations,\n"
 	.string "please do return.$"
 
@@ -64,7 +65,8 @@ FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "different kinds of POKéMON.\p"
 	.string "They also must not hold the same\n"
 	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "EGGS, LEGENDARIES, MYTHICAL\n"
+	.string "POKéMON and such are ineligible.\p"
 	.string "When you have made your preparations,\n"
 	.string "please do return.$"
 
@@ -165,7 +167,8 @@ VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
 	.string "different kinds of POKéMON.\p"
 	.string "They also must not be holding\n"
 	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "EGGS, LEGENDARIES, MYTHICAL\n"
+	.string "POKéMON and such are ineligible.\p"
 	.string "Come back when you have made\n"
 	.string "your preparations.$"
 
@@ -177,7 +180,8 @@ VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "different kinds of POKéMON.\p"
 	.string "They also must not be holding\n"
 	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "EGGS, LEGENDARIES, MYTHICAL\n"
+	.string "POKéMON and such are ineligible.\p"
 	.string "Come back when you have made\n"
 	.string "your preparations.$"
 

@@ -1943,7 +1943,7 @@ static void CheckBattleTypeFlag(void)
         gSpecialVar_Result = FALSE;
 }
 
-#define SPECIES_PER_LINE 3
+/*#define SPECIES_PER_LINE 3
 
 static void AppendCaughtBannedMonSpeciesName(u16 species, u8 count, s32 numBannedMonsCaught)
 {
@@ -1960,6 +1960,7 @@ static void AppendCaughtBannedMonSpeciesName(u16 species, u8 count, s32 numBanne
     }
     StringAppend(gStringVar1, GetSpeciesName(species));
 }
+*/
 
 static void AppendIfValid(u16 species, u16 heldItem, u16 hp, u8 lvlMode, u8 monLevel, u16 *speciesArray, u16 *itemsArray, u8 *count)
 {
@@ -2077,22 +2078,6 @@ static void CheckPartyIneligibility(void)
         }
         gStringVar1[0] = EOS;
         gSpecialVar_0x8004 = TRUE;
-        for (i = 0; i < totalCaughtBanned; i++)
-            AppendCaughtBannedMonSpeciesName(caughtBanned[i], i+1, totalCaughtBanned);
-
-        if (totalCaughtBanned == 0)
-        {
-            StringAppend(gStringVar1, gText_Space2);
-            StringAppend(gStringVar1, gText_Are);
-        }
-        else
-        {
-            if (totalCaughtBanned % SPECIES_PER_LINE == SPECIES_PER_LINE - 1)
-                StringAppend(gStringVar1, gText_LineBreak);
-            else
-                StringAppend(gStringVar1, gText_Space2);
-            StringAppend(gStringVar1, gText_Are2);
-        }
     }
     else
     {
@@ -2102,7 +2087,7 @@ static void CheckPartyIneligibility(void)
     #undef numEligibleMons
 }
 
-#undef SPECIES_PER_LINE
+//#undef SPECIES_PER_LINE
 
 static void ValidateVisitingTrainer(void)
 {
