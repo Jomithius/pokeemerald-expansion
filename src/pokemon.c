@@ -812,7 +812,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
         .anims = NULL,
-        .images = gTrainerBackPicTable_Brendan,
+        .images = gTrainerBackPicTable_LunaMale,
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
@@ -821,7 +821,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
         .anims = NULL,
-        .images = gTrainerBackPicTable_May,
+        .images = gTrainerBackPicTable_LunaFemale,
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
@@ -6418,9 +6418,9 @@ u16 FacilityClassToPicIndex(u16 facilityClass)
 u16 PlayerGenderToFrontTrainerPicId(u8 playerGender)
 {
     if (playerGender != MALE)
-        return FacilityClassToPicIndex(FACILITY_CLASS_MAY);
+        return FacilityClassToPicIndex(FACILITY_CLASS_LUNA_FEMALE);
     else
-        return FacilityClassToPicIndex(FACILITY_CLASS_BRENDAN);
+        return FacilityClassToPicIndex(FACILITY_CLASS_LUNA_MALE);
 }
 
 void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
