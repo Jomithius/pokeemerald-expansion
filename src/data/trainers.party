@@ -849,14 +849,14 @@ IVs: 0 Atk
 - Defog  
 - Air Slash  
 - Aura Sphere  
-- Dazzling Gleam  
+- Moonblast 
 
 Lucario (M) @ Expert Belt 
 Ability: Inner Focus 
 Level: 100   
 Tera Type: Flying  
 EVs: 4 Atk / 252 SpA / 252 Spe  
-Hasty Nature  
+Timid Nature  
 - Aura Sphere  
 - Dragon Pulse  
 - Extreme Speed  
@@ -867,7 +867,8 @@ Ability: Marvel Scale
 Level: 100  
 Tera Type: Water 
 EVs: 252 HP / 252 Def / 4 SpD   
-IVs: 0 Atk  
+IVs: 0 Atk
+Calm Nature    
 - Surf  
 - Ice Beam  
 - Mirror Coat  
@@ -16886,16 +16887,15 @@ Adamant Nature
 - Stone Edge  
 - Zen Headbutt  
 
-Mightyena @ Choice Scarf  
-Ability: Moxie  
+Mabosstiff @ Muscle Band  
+Ability: Intimidate  
 Tera Type: Dark  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
-IVs: 0 SpA  
 - Crunch  
-- Fire Fang  
-- Ice Fang  
+- Thunder Fang  
 - Psychic Fangs  
+- Ice Fang
 
 Manectric @ Manectite  
 Ability: Static   
@@ -19178,16 +19178,15 @@ IVs: 0 Atk
 - Magical Leaf  
 - Psyshock  
 
-THE GRIPPER (Salazzle-Totem) @ Charcoal  
-Ability: Corrosion  
+The Gripper (Salazzle-Totem) @ Grip Claw
+Ability: Gooey   
 Level: 36  
-EVs: 248 SpA / 4 SpD / 248 Spe  
-Modest Nature  
-IVs: 0 Atk / 30 Def  
-- Flame Burst  
-- Sludge Bomb  
-- Toxic  
-- Fake Out
+EVs: 248 HP / 4 SpD / 248 Spe  
+Jolly Nature  
+- Crush Grip  
+- Lick  
+- Role Play 
+- Wrap
 
 Lilligant @ Occa Berry  
 Ability: Own Tempo  
@@ -19483,7 +19482,7 @@ Adamant Nature
 - Odor Sleuth  
 - Work Up  
 
-Salandit (F)  
+Salandit (M)  
 Ability: Corrosion  
 Level: 15   
 EVs: 140 SpA / 32 Spe  
@@ -36430,7 +36429,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Diamond Storm  
 - Moonblast  
 
-THE GRIPPER (Salazzle) @ Grip Claw  
+The Gripper (Salazzle) @ Grip Claw  
 Ability: Gooey  
 Tera Type: Ghost
 Naughty Nature  
@@ -36656,7 +36655,6 @@ Dachsbun @ Leftovers
 Ability: Well-Baked Body 
 Tera Type: Normal  
 Impish Nature  
-- Wish  
 - Body Press  
 - Play Rough  
 
@@ -36667,12 +36665,13 @@ Adamant Nature
 - Accelerock   
 - Zen Headbutt  
 
-Mightyena @ Black Glasses
-Ability: Moxie 
+Mabosstiff @ Muscle Band  
+Ability: Guard Dog 
 Tera Type: Dark  
 Jolly Nature  
 - Crunch  
-- Fire Fang  
+- Thunder Fang  
+- Ice Fang
 
 Manectric @ Manectite  
 Ability: Static 
@@ -38794,13 +38793,14 @@ Modest Nature
 - Mystical Fire  
 - Psyshock  
 
-THE GRIPPER (Salazzle-Totem) @ Charcoal  
-Ability: Corrosion  
+The Gripper (Salazzle-Totem) @ Grip Claw
+Ability: Gooey  
 Level: 35 
 Serious Nature  
-- Flame Burst  
-- Venoshock  
+- Lick  
+- Role Play  
 - Crush Grip 
+- Body Press
 
 Lilligant @ Sitrus Berry  
 Ability: Own Tempo  
@@ -39094,7 +39094,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Covet  
 - Odor Sleuth  
 
-Salandit (F)  
+Salandit (M)  
 Ability: Corrosion  
 Level: 15   
 Mild Nature  
