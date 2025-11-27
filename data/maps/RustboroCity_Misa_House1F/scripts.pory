@@ -4,6 +4,7 @@ script RustboroCity_Misa_House1F_EventScript_Misa{
     lock
     goto_if_unset(FLAG_RUSTBORO_MISA_HOUSE_RARECANDY, RustboroCity_Misa_House1F_MisaGiveItem)
     goto(Misa_House1F_EventScript_Text2)
+    release
     end
 }
 
@@ -19,6 +20,8 @@ script RustboroCity_Misa_House1F_MisaGiveItem{
     waitmessage
     msgbox(MisaHouse1F_2, MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
     release
     end
 }
@@ -28,6 +31,8 @@ script Misa_House1F_EventScript_Text2{
     faceplayer
     msgbox(MisaHouse1F_3, MSGBOX_AUTOCLOSE)
     waitmessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
     release
     end
 }
@@ -72,6 +77,8 @@ back to work in EVER GRANDE CITY."}
 text MisaHouse1F_3{"Did you challenge the GYM yet?\p
 You're already a wonderful TRAINER, so\n
 you should be able to beat them.\p
+If you don't feel confident yet, you\n
+can study up at the TRAINER SCHOOL.\p
 Good luck!"}
 
 text MisaHouseCantCarryCandy {

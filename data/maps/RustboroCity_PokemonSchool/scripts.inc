@@ -713,7 +713,7 @@ RustboroCity_PokemonSchool_EventScript_TutorialGirl::
 # 365 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	setflag FLAG_TALKED_TO_POKEMON_SCHOOL_TUTOR
 # 366 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	setvar VAR_TUTORIAL_COUNTER, 0
+	setvar VAR_TUTORIAL_COUNTER, 1
 # 367 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices
 # 368 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -1335,7 +1335,7 @@ RustboroCity_PokemonSchool_EventScript_TutorialChoices2_Text_0:
 
 RustboroCity_PokemonSchool_EventScript_ExplainStab_Text_0:
 # 470 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	.string "STAB stands for\n Same Type Attack Bonus.\p When a POKéMON uses a damaging move\n that's the same type as one of theirs,\l the move's power is increased by 1.5x.\p For example, WATER PULSE usually has\n a base power of 60.\p If used by a WATER-type, STAB boosts\n WATER PULSES's power to 90.\p Also, if a POKéMON has the ability\n ADAPTABILITY, STAB boosts are 2x!\p Making use of your POKéMON's types\n is essential to being good at battles!\p Is there anything else you wanted\n me to explain?$"
+	.string "STAB stands for\n Same Type Attack Bonus.\p When a POKéMON uses a damaging move\n that's the same type as one of theirs,\l the move's power is increased by 1.5x.\p For example, WATER PULSE usually has\n a base power of 60.\p If used by a WATER-type, STAB boosts\n WATER PULSE's power to 90.\p Also, if a POKéMON has the ability\n ADAPTABILITY, STAB boosts are 2x!\p Making use of your POKéMON's types\n is essential to being good at battles!\p Is there anything else you wanted\n me to explain?$"
 
 RustboroCity_PokemonSchool_EventScript_ExplainPhysSpecialMoves_Text_0:
 # 495 "data/maps/RustboroCity_PokemonSchool/scripts.pory"

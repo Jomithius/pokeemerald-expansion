@@ -24,7 +24,7 @@ script RustboroCity_Misa_House3F_Emo{
         msgbox("{PLAYER}…\n
             We meet again.\p
             Did you challenge the GYM LEADER yet?\n
-            I already did.\p
+            I already did a while back.\p
             I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
         waitmessage
         applymovement(1, MisaHouse3F_FaceUp)
@@ -35,7 +35,7 @@ script RustboroCity_Misa_House3F_Emo{
         applymovement(1, MisaHouse3F_FacePlayer)
         waitmovement(1)
         msgbox("Did you challenge the GYM LEADER yet?\n
-            I already did.\p
+            I already did a while back.\p
             I'll wait for you to catch up.", MSGBOX_AUTOCLOSE)
         waitmessage
         applymovement(1, MisaHouse3F_FaceUp)
@@ -109,7 +109,7 @@ script NicknameBoxTogepi{
 }
 
 text MisaHouse_NotChosen{
-    "{PLAYER} decided not to take the \n
+    "{PLAYER} decided not to take the\n
     POKéMON."
 }
 

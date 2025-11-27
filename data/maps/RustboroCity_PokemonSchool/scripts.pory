@@ -363,7 +363,7 @@ script RustboroCity_PokemonSchool_EventScript_TutorialGirl{
 		you might have about battling.", MSGBOX_YESNO)
 	waitmessage
 	setflag(FLAG_TALKED_TO_POKEMON_SCHOOL_TUTOR)
-    setvar(VAR_TUTORIAL_COUNTER, 0)
+    setvar(VAR_TUTORIAL_COUNTER, 1)
 	goto_if_eq(VAR_RESULT, YES, RustboroCity_PokemonSchool_EventScript_TutorialChoices)
 	goto(RustboroCity_PokemonSchool_EventScript_TutorialDecline)
 	release
@@ -475,7 +475,7 @@ script RustboroCity_PokemonSchool_EventScript_ExplainStab{
         For example, WATER PULSE usually has\n
         a base power of 60.\p
         If used by a WATER-type, STAB boosts\n
-        WATER PULSES's power to 90.\p
+        WATER PULSE's power to 90.\p
         Also, if a POKéMON has the ability\n
         ADAPTABILITY, STAB boosts are 2x!\p
         Making use of your POKéMON's types\n

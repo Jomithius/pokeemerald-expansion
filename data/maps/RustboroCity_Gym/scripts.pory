@@ -138,6 +138,8 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "He uses a variety of POKéMON, but\n"
 	.string "his ace POKéMON is a FIRE-type.\l"
 	.string "Isn't that ironic?\p"
+	.string "Make sure your team is ready! All\n"
+	.string "GYM LEADERS have a full, balanced team.\p"
 	.string "Come see me afterwards, if you beat\n"
 	.string "the GYM LEADER.\p"
 	.string "Well, go for it!\p"

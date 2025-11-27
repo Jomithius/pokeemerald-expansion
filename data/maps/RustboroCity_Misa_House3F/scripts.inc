@@ -227,11 +227,11 @@ RustboroCity_Misa_House3F_Emo_Text_0:
 
 RustboroCity_Misa_House3F_Emo_Text_1:
 # 24 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "{PLAYER}…\n We meet again.\p Did you challenge the GYM LEADER yet?\n I already did.\p I'll wait for you to catch up.$"
+	.string "{PLAYER}…\n We meet again.\p Did you challenge the GYM LEADER yet?\n I already did a while back.\p I'll wait for you to catch up.$"
 
 RustboroCity_Misa_House3F_Emo_Text_2:
 # 37 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "Did you challenge the GYM LEADER yet?\n I already did.\p I'll wait for you to catch up.$"
+	.string "Did you challenge the GYM LEADER yet?\n I already did a while back.\p I'll wait for you to catch up.$"
 
 RustboroCity_Misa_House3F_Togepi_Text_0:
 # 51 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
@@ -255,4 +255,4 @@ RustboroCity_Misa_House3F_James_Text_1:
 
 MisaHouse_NotChosen::
 # 111 "data/maps/RustboroCity_Misa_House3F/scripts.pory"
-	.string "{PLAYER} decided not to take the \n POKéMON.$"
+	.string "{PLAYER} decided not to take the\n POKéMON.$"
