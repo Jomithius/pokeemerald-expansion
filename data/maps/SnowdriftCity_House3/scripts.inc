@@ -452,9 +452,9 @@ SnowdriftCity_House3_EventScript_ResetFinalRematches::
 # 343 "data/maps/SnowdriftCity_House3/scripts.pory"
 	playfanfare MUS_OBTAIN_BADGE
 # 344 "data/maps/SnowdriftCity_House3/scripts.pory"
-	msgbox SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_0, MSGBOX_DEFAULT
-# 345 "data/maps/SnowdriftCity_House3/scripts.pory"
 	waitfanfare
+# 345 "data/maps/SnowdriftCity_House3/scripts.pory"
+	msgbox SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_0, MSGBOX_DEFAULT
 # 346 "data/maps/SnowdriftCity_House3/scripts.pory"
 	compare VAR_LINA_TALKED_TO, 3
 	goto_if_eq SnowdriftCity_House3_EventScript_ResetFinalRematches_2
@@ -620,7 +620,7 @@ SnowdriftCity_House3_EventScript_JimmyStatReport_Text_21:
 	.string "JIMMY: Well… that's it, {PLAYER}!\p There's other things you could've\n missed.\p “PuzzlesImportantItemsSecrets” in\n the SPOILERS folder has everything.\p Thanks again for playing.\n I hope you enjoyed it!$"
 
 SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_0:
-# 344 "data/maps/SnowdriftCity_House3/scripts.pory"
+# 345 "data/maps/SnowdriftCity_House3/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS can now be fought\nagain.\pThe ELITE FOUR can be re-challenged at\nanytime.$"
 
 SnowdriftCity_House3_EventScript_ResetFinalRematches_Text_1:

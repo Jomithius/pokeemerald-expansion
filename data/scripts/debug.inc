@@ -153,9 +153,10 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_MISA_STATE, 7
-	clearflag FLAG_HIDE_EMO_LILYCOVE
-	warp MAP_LILYCOVE_CITY, 58, 36
+	setvar VAR_MISA_STATE, 8
+	clearflag FLAG_HIDE_RIVAL_EVERGRANDE_CITY
+	setflag FLAG_HIDE_RIVAL_POKEMON_EVERGRANDE_CITY
+	warp MAP_EVER_GRANDE_CITY, 18, 15
 	waitstate
 	release
 	end

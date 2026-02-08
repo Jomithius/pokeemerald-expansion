@@ -341,8 +341,8 @@ script SnowdriftCity_House3_EventScript_ResetFinalRematches{
     cleartrainerflag(TRAINER_ARIA)
     cleartrainerflag(TRAINER_JUAN_2)
     playfanfare(MUS_OBTAIN_BADGE)
-    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS can now be fought\nagain.\pThe ELITE FOUR can be re-challenged at\nanytime.", MSGBOX_DEFAULT)
     waitfanfare
+    msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}The GYM LEADERS can now be fought\nagain.\pThe ELITE FOUR can be re-challenged at\nanytime.", MSGBOX_DEFAULT)
     if(var(VAR_LINA_TALKED_TO) == 3){
         setvar(VAR_LINA_TALKED_TO, 2)
         msgbox("{COLOR BLUE}{SHADOW LIGHT_BLUE}EUGENIA can also be re-challenged.", MSGBOX_DEFAULT)
