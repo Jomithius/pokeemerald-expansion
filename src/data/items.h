@@ -14569,4 +14569,106 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Ampharosite,
     },
 
+    [ITEM_DELPHITE] =
+    {
+        .name = _("Delphite"),
+        .price = 50000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Delphox to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Gengarite,
+        .iconPalette = gItemIconPalette_Gengarite,
+    },
+
+    [ITEM_DRAGALGITE] =
+    {
+        .name = _("Dragalgite"),
+        .price = 50000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Dragalge to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Lucarionite,
+        .iconPalette = gItemIconPalette_Lucarionite,
+    },
+
+    [ITEM_FROSLITE] =
+    {
+        .name = _("Froslite"),
+        .price = 50000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Froslass to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Abomasite,
+        .iconPalette = gItemIconPalette_Abomasite,
+    },
+
+    [ITEM_SCRAFTITE] =
+    {
+        .name = _("Scraftite"),
+        .price = 50000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Scrafty to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Alakazite,
+        .iconPalette = gItemIconPalette_Alakazite,
+    },
+
+    [ITEM_STARMITE] =
+    {
+        .name = _("Starmite"),
+        .price = 50000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Starmie to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Latiasite,
+        .iconPalette = gItemIconPalette_Latiasite,
+    },
+
+    [ITEM_ZERAORITE] =
+    {
+        .name = _("Zeraorite"),
+        .price = 50000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Zeraora to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Manectite,
+        .iconPalette = gItemIconPalette_Manectite,
+    },
+
 };

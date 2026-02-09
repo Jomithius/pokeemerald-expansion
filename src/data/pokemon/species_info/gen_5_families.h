@@ -5531,7 +5531,78 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sScraftyLevelUpLearnset,
         .teachableLearnset = sScraftyTeachableLearnset,
+        .formSpeciesIdTable = sScraftyFormSpeciesIdTable,
+        .formChangeTable = sScraftyFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_SCRAFTY_MEGA] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 130,
+        .baseDefense   = 135,
+        .baseSpeed     = 68,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 135,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
+        .catchRate = 90,
+        .expYield = 171,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_SHED_SHELL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_MOXIE, ABILITY_MOXIE, ABILITY_MOXIE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Scrafty"),
+        .cryId = CRY_SCRAFTY,
+        .natDexNum = NATIONAL_DEX_SCRAFTY,
+        .categoryName = _("Hoodlum"),
+        .height = 11,
+        .weight = 300,
+        .description = COMPOUND_STRING(
+            "Groups of them beat up anything that\n"
+            "enters their territory. The one with the\n"
+            "biggest crest is the group leader, and\n"
+            "is the most respected."),
+        .pokemonScale = 320,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ScraftyMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_ScraftyMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 5,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_ScraftyMega,
+        .shinyPalette = gMonShinyPalette_ScraftyMega,
+        .iconSprite = gMonIcon_ScraftyMega,
+        .iconPalIndex = 0,
+        SHADOW(2, 13, SHADOW_SIZE_S)
+        FOOTPRINT(Scrafty)
+        OVERWORLD(
+            sPicTable_Scrafty,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Scrafty,
+            gShinyOverworldPalette_Scrafty
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sScraftyLevelUpLearnset,
+        .teachableLearnset = sScraftyTeachableLearnset,
+        .formSpeciesIdTable = sScraftyFormSpeciesIdTable,
+        .formChangeTable = sScraftyFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SCRAGGY
 
 #if P_FAMILY_SIGILYPH

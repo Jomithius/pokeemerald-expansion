@@ -561,6 +561,12 @@ mart EverGrandeCity_PokemonLeague_1F_MegaStonePokemart2{
 	ITEM_HAWLUCHITE
 	ITEM_VICTREEBITE
 	ITEM_MALAMITE
+	ITEM_DELPHITE
+	ITEM_DRAGALGITE
+	ITEM_FROSLITE
+	ITEM_SCRAFTITE
+	ITEM_STARMITE
+	ITEM_ZERAORITE
 }
 
 script EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk{

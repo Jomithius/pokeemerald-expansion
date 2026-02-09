@@ -1008,11 +1008,17 @@
 #define ITEM_HAWLUCHITE    841
 #define ITEM_VICTREEBITE   842
 #define ITEM_MALAMITE      843
+#define ITEM_DELPHITE      844
+#define ITEM_DRAGALGITE    845
+#define ITEM_FROSLITE      846
+#define ITEM_SCRAFTITE     847
+#define ITEM_STARMITE      848
+#define ITEM_ZERAORITE     849
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 844
+#define ITEMS_COUNT 850
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

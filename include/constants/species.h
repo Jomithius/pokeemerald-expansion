@@ -1656,8 +1656,14 @@
 #define SPECIES_HAWLUCHA_MEGA                           1540
 #define SPECIES_VICTREEBEL_MEGA                         1541
 #define SPECIES_MALAMAR_MEGA                            1542
+#define SPECIES_DELPHOX_MEGA                            1543
+#define SPECIES_DRAGALGE_MEGA                           1544
+#define SPECIES_FROSLASS_MEGA                           1545
+#define SPECIES_SCRAFTY_MEGA                            1546
+#define SPECIES_STARMIE_MEGA                            1547
+#define SPECIES_ZERAORA_MEGA                            1548
 
-#define SPECIES_EGG                                     (SPECIES_MALAMAR_MEGA + 1)
+#define SPECIES_EGG                                     (SPECIES_ZERAORA_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

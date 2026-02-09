@@ -7309,7 +7309,78 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sZeraoraLevelUpLearnset,
         .teachableLearnset = sZeraoraTeachableLearnset,
+        .formSpeciesIdTable = sZeraoraFormSpeciesIdTable,
+        .formChangeTable = sZeraoraFormChangeTable, 
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_ZERAORA_MEGA] =
+    {
+        .baseHP        = 88,
+        .baseAttack    = 157,
+        .baseDefense   = 75,
+        .baseSpeed     = 153,
+        .baseSpAttack  = 147,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 3,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
+        .evYield_Speed = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Zeraora"),
+        .cryId = CRY_ZERAORA,
+        .natDexNum = NATIONAL_DEX_ZERAORA,
+        .categoryName = _("Thunderclap"),
+        .height = 15,
+        .weight = 445,
+        .description = COMPOUND_STRING(
+            "It approaches its enemies at the speed\n"
+            "of lightning, then tears them limb from\n"
+            "limb with its sharp claws."),
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ZeraoraMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_ZeraoraMega,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 11,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_ZeraoraMega,
+        .shinyPalette = gMonShinyPalette_ZeraoraMega,
+        .iconSprite = gMonIcon_ZeraoraMega,
+        .iconPalIndex = 0,
+        SHADOW(-5, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Zeraora)
+        OVERWORLD(
+            sPicTable_Zeraora,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Zeraora,
+            gShinyOverworldPalette_Zeraora
+        )
+        .isMythical = TRUE,
+        .isMegaEvolution = TRUE,
+        .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sZeraoraLevelUpLearnset,
+        .teachableLearnset = sZeraoraTeachableLearnset,
+        .formSpeciesIdTable = sZeraoraFormSpeciesIdTable,
+        .formChangeTable = sZeraoraFormChangeTable, 
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ZERAORA
 
 #if P_FAMILY_MELTAN

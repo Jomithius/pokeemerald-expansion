@@ -421,7 +421,8 @@ text EverGrandeCity_Text_James5{
     {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}JAMES: The ELITE FOUR are strong.\n
     Be careful.\p
     {COLOR BLUE}{SHADOW LIGHT_BLUE}The level cap for the ELITE FOUR\n
-    is 75."
+    is 75.\p
+    It's recommended to SAVE after each battle."
 }
 
 text EverGrandeCity_Text_James6{

@@ -1033,140 +1033,152 @@ EverGrandeCity_PokemonLeague_1F_MegaStonePokemart2:
 	.2byte ITEM_VICTREEBITE
 # 563 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	.2byte ITEM_MALAMITE
+# 564 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_DELPHITE
+# 565 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_DRAGALGITE
+# 566 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_FROSLITE
+# 567 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_SCRAFTITE
+# 568 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_STARMITE
+# 569 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_ZERAORITE
 	.2byte ITEM_NONE
 
 EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk::
-# 567 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	lock
-# 568 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	faceplayer
-# 569 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	message EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk_Text_0
-# 571 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	waitmessage
-# 572 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	pokemart EverGrandeCity_PokemonLeague_1F_PlatesPokemart
 # 573 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	lock
 # 574 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	faceplayer
+# 575 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	message EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk_Text_0
+# 577 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	waitmessage
+# 578 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	pokemart EverGrandeCity_PokemonLeague_1F_PlatesPokemart
+# 579 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 580 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 578 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-EverGrandeCity_PokemonLeague_1F_PlatesPokemart:
-# 579 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_FLAME_PLATE
-# 580 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_SPLASH_PLATE
-# 581 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_ZAP_PLATE
-# 582 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_MEADOW_PLATE
-# 583 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_ICICLE_PLATE
 # 584 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_FIST_PLATE
+EverGrandeCity_PokemonLeague_1F_PlatesPokemart:
 # 585 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_TOXIC_PLATE
+	.2byte ITEM_FLAME_PLATE
 # 586 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_EARTH_PLATE
+	.2byte ITEM_SPLASH_PLATE
 # 587 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_SKY_PLATE
+	.2byte ITEM_ZAP_PLATE
 # 588 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_MIND_PLATE
+	.2byte ITEM_MEADOW_PLATE
 # 589 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_INSECT_PLATE
+	.2byte ITEM_ICICLE_PLATE
 # 590 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_STONE_PLATE
+	.2byte ITEM_FIST_PLATE
 # 591 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_SPOOKY_PLATE
+	.2byte ITEM_TOXIC_PLATE
 # 592 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_DRACO_PLATE
+	.2byte ITEM_EARTH_PLATE
 # 593 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_DREAD_PLATE
+	.2byte ITEM_SKY_PLATE
 # 594 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_IRON_PLATE
+	.2byte ITEM_MIND_PLATE
 # 595 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_INSECT_PLATE
+# 596 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_STONE_PLATE
+# 597 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_SPOOKY_PLATE
+# 598 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_DRACO_PLATE
+# 599 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_DREAD_PLATE
+# 600 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_IRON_PLATE
+# 601 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	.2byte ITEM_PIXIE_PLATE
 	.2byte ITEM_NONE
 
 EverGrandeCity_PokemonLeague_1F_EventScript_DrivesClerk::
-# 599 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	lock
-# 600 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	faceplayer
-# 601 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	message EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk_Text_0
-# 603 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	waitmessage
-# 604 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	pokemart EverGrandeCity_PokemonLeague_1F_DrivesPokemart
 # 605 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	lock
 # 606 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	faceplayer
+# 607 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	message EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk_Text_0
+# 609 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	waitmessage
+# 610 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	pokemart EverGrandeCity_PokemonLeague_1F_DrivesPokemart
+# 611 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 612 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 610 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-EverGrandeCity_PokemonLeague_1F_DrivesPokemart:
-# 611 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_DOUSE_DRIVE
-# 612 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_SHOCK_DRIVE
-# 613 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_BURN_DRIVE
-# 614 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_CHILL_DRIVE
-# 615 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_FIRE_MEMORY
 # 616 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_WATER_MEMORY
+EverGrandeCity_PokemonLeague_1F_DrivesPokemart:
 # 617 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_ELECTRIC_MEMORY
+	.2byte ITEM_DOUSE_DRIVE
 # 618 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_GRASS_MEMORY
+	.2byte ITEM_SHOCK_DRIVE
 # 619 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_ICE_MEMORY
+	.2byte ITEM_BURN_DRIVE
 # 620 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_FIGHTING_MEMORY
+	.2byte ITEM_CHILL_DRIVE
 # 621 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_POISON_MEMORY
+	.2byte ITEM_FIRE_MEMORY
 # 622 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_GROUND_MEMORY
+	.2byte ITEM_WATER_MEMORY
 # 623 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_FLYING_MEMORY
+	.2byte ITEM_ELECTRIC_MEMORY
 # 624 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_PSYCHIC_MEMORY
+	.2byte ITEM_GRASS_MEMORY
 # 625 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_BUG_MEMORY
+	.2byte ITEM_ICE_MEMORY
 # 626 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_ROCK_MEMORY
+	.2byte ITEM_FIGHTING_MEMORY
 # 627 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_GHOST_MEMORY
+	.2byte ITEM_POISON_MEMORY
 # 628 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_DRAGON_MEMORY
+	.2byte ITEM_GROUND_MEMORY
 # 629 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_DARK_MEMORY
+	.2byte ITEM_FLYING_MEMORY
 # 630 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	.2byte ITEM_STEEL_MEMORY
+	.2byte ITEM_PSYCHIC_MEMORY
 # 631 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_BUG_MEMORY
+# 632 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_ROCK_MEMORY
+# 633 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_GHOST_MEMORY
+# 634 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_DRAGON_MEMORY
+# 635 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_DARK_MEMORY
+# 636 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	.2byte ITEM_STEEL_MEMORY
+# 637 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	.2byte ITEM_FAIRY_MEMORY
 	.2byte ITEM_NONE
 
 EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning::
-# 635 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	lockall
-# 636 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	msgbox EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning_Text_0, MSGBOX_AUTOCLOSE
-# 640 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	waitmessage
 # 641 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
-	setvar VAR_FINAL_REMATCH_STATE, 7
+	lockall
 # 642 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	msgbox EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning_Text_0, MSGBOX_AUTOCLOSE
+# 646 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	waitmessage
+# 647 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+	setvar VAR_FINAL_REMATCH_STATE, 7
+# 648 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	releaseall
 	end
 
@@ -1392,13 +1404,13 @@ EverGrandeCity_PokemonLeague_1F_EventScript_Woman_Text_0:
 	.string "I've only made it past MISA.\n The second ELITE FOUR member just\l ignores me!\p She's always playing a game or\n reading a stupid book.\p I don't know how she beats me\n while being distracted like that…$"
 
 EverGrandeCity_PokemonLeague_1F_EventScript_PlatesClerk_Text_0:
-# 569 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+# 575 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	.string "I sell unique items.\n Take a look!$"
 
 EverGrandeCity_PokemonLeague_1F_EventScript_FinalWarning_Text_0:
-# 636 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+# 642 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}WARNING\p {COLOR BLUE}{SHADOW LIGHT_BLUE}Once you enter, there's no\n going back.\p Make sure you're ready.$"
 
 EverGrandeCity_PokemonLeague_1F_Text_WhichPkmnDoYouWantToTeach::
-# 646 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
+# 652 "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.pory"
 	.string "Which POKéMON do you want to\nteach {STR_VAR_1} to?$"
