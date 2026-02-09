@@ -5165,9 +5165,8 @@ Modest Nature
 IVs: 0 Atk  
 Ball: Nest Ball
 - Destiny Bond  
-- Air Cutter  
-- Will-O-Wisp  
-- Hex  
+- Air Cutter   
+- Ominous Wind
 
 Skiddo @ Coba Berry  
 Ability: Sap Sipper  
@@ -5194,13 +5193,12 @@ Ball: Nest Ball
 Dartrix (M) @ Miracle Seed  
 Ability: Long Reach  
 Level: 21  
-EVs: 248 Atk / 12 SpD / 240 Spe  
+EVs: 192 Atk / 12 SpD / 240 Spe  
 Adamant Nature  
 Ball: Nest Ball
-- Dual Wingbeat  
+- Aerial Ace  
 - Steel Wing  
 - Razor Leaf  
-- Shadow Sneak  
 
 Cinccino 
 Ability: Cute Charm 
@@ -13852,17 +13850,16 @@ IVs: 0 Atk
 - Recover  
 - Leaf Storm 
 
-Roserade @ Roserite
-Ability: Technician 
+Froslass @ Froslite
+Ability: Cursed Body 
 Level: 85
 EVs: 252 SpA / 252 Spe
 Shiny: Yes  
 Timid Nature  
 IVs: 0 Atk  
-- Sludge Bomb  
-- Dazzling Gleam  
-- Toxic  
-- Leaf Storm  
+- Shadow Ball 
+- Ice Beam  
+- Draining Kiss  
 
 === TRAINER_MAY_LILYCOVE_TORCHIC ===
 Name: MAY
@@ -16198,14 +16195,15 @@ Adamant Nature
 - U-turn
 - Sucker Punch
 
-Iron Boulder @ Booster Energy  
-Ability: Quark Drive   
-EVs: 252 Atk / 4 SpD / 252 Spe  
+Scrafty @ Scraftite 
+Ability: Intimidate  
+Shiny: Yes  
+EVs: 252 HP / 252 Atk / 4 SpD
 Adamant Nature  
-- Swords Dance  
-- Mighty Cleave  
-- Psycho Cut  
-- Close Combat  
+- Bulk Up  
+- Close Combat 
+- Knock Off  
+- Ice Punch
 
 Jolteon (M) @ Electric Seed  
 Ability: Volt Absorb  
@@ -16218,7 +16216,7 @@ IVs: 0 Atk
 - Rising Voltage  
 - Alluring Voice  
 
-Houndoom @ Houndoominite  
+Houndoom @ Charcoal  
 Ability: Flash Fire  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -16413,14 +16411,15 @@ Jolly Nature
 - U-turn  
 - Steel Wing  
 
-Chandelure (M) @ Misty Seed
-Ability: Infiltrator
-EVs: 252 HP / 252 SpA / 4 SpD
-Modest Nature  
-- Overheat  
-- Shadow Ball  
-- Energy Ball  
-- Clear Smog  
+Delphox (F) @ Delphite
+Ability: Blaze
+Shiny: Yes
+EVs: 164 SpA / 64 SpD / 252 Spe
+Bold Nature  
+- Mystical Fire 
+- Expanding Force 
+- Future Sight 
+- Shadow Ball
 
 Scovillain @ Wise Glasses  
 Ability: Chlorophyll  
@@ -16442,7 +16441,7 @@ IVs: 0 Atk
 - Snipe Shot  
 - Scald  
 
-Ampharos (M) @ Ampharosite  
+Ampharos (M) @ Misty Seed  
 Ability: Static   
 EVs: 248 HP / 252 SpA / 8 SpD  
 Modest Nature  
@@ -18165,24 +18164,24 @@ IVs: 0 Atk
 - Earth Power  
 - Focus Blast 
 
-Meganium (F) @ Meganiumite 
-Ability: Overgrow  
-EVs: 252 HP / 252 SpA / 4 SpD 
+Zeraora @ Zeraorite 
+Ability: Volt Absorb 
+EVs: 252 Atk / 252 Spe
 Shiny: Yes  
-Modest Nature  
-- Sludge Wave 
-- Leech Seed  
-- Energy Ball  
-- Synthesis 
+Serious Nature  
+- Plasma Fists
+- Acrobatics 
+- Close Combat 
+- Iron Tail
 
-Iron Valiant @ Booster Energy  
-Ability: Quark Drive  
-EVs: 4 Atk / 252 SpA / 252 Spe  
-Naive Nature  
-- Moonblast  
-- Close Combat  
-- Destiny Bond  
-- Vacuum Wave
+Rampardos @ Electric Seed 
+Ability: Sheer Force 
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Earthquake  
+- Stone Edge 
+- Zen Headbutt 
+- Iron Head
 
 Orthworm @ Sitrus Berry  
 Ability: Earth Eater  
@@ -18194,10 +18193,9 @@ Impish Nature
 - Stealth Rock  
 - Iron Head
 
-Keldeo-Resolute @ Wise Glasses
-Ability: Justified  
-Tera Type: Water  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+Keldeo-Resolute
+Ability: Justified   
+EVs: 128 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Calm Mind  
@@ -18525,16 +18523,15 @@ Sassy Nature
 - Tera Blast  
 - Dazzling Gleam
 
-Victreebel (F) @ Victreebite 
-Ability: Chlorophyll 
+Starmie (F) @ Starmite 
+Ability: Illuminate
 Level: 100  
 Shiny: Yes   
-EVs: 252 HP / 252 SpA / 4 SpD
+EVs: 252 Atk / 252 Spe
 Sassy Nature   
-- Sludge Bomb
-- Toxic
-- Leaf Storm
-- Giga Drain
+- Waterfall
+- Rapid Spin
+- Psycho Cut
 
 Cetitan (F) @ Sitrus Berry  
 Ability: Thick Fat 
@@ -24823,14 +24820,14 @@ AI: Basic Trainer Ace
 Difficulty: Easy
 Mugshot: Green
 
-Drifloon @ Sitrus Berry  
+Drifloon @ Oran Berry
 Ability: Aftermath 
 Level: 19  
 Modest Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Ball: Nest Ball
 - Air Cutter   
-- Hex  
+- Astonish  
 
 Skiddo @ Coba Berry  
 Ability: Sap Sipper  
@@ -24858,7 +24855,7 @@ Level: 20
 Adamant Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Ball: Nest Ball
-- Dual Wingbeat   
+- Aerial Ace   
 - Razor Leaf  
 
 Cinccino 
@@ -33610,13 +33607,13 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aqua Tail
 - Body Slam
 
-Roserade @ Roserite
-Ability: Technician 
+Froslass @ Froslite
+Ability: Snow Cloak
 Level: 85 
 Serious Nature  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Dazzling Gleam  
-- Energy Ball
+- Ice Beam  
+- Shadow Ball
 
 === TRAINER_MAY_LILYCOVE_TORCHIC ===
 Name: MAY
@@ -35989,7 +35986,7 @@ AI: Basic Trainer
 Difficulty: Easy
 Mugshot: Green
 
-Scrafty (M) @ Black Glasses
+Scrafty (M) @ Scraftite
 Ability: Intimidate
 Adamant Nature   
 - Brick Break
@@ -36025,7 +36022,7 @@ IVs: 0 SpA / 0 Spe
 - Thunderbolt 
 - Alluring Voice  
 
-Houndoom @ Houndoominite  
+Houndoom @ Charcoal  
 Ability: Flash Fire  
 Timid Nature  
 IVs: 30 HP / 31 Atk / 31 Def / 10 SpA / 31 SpD / 15 Spe
@@ -36216,13 +36213,12 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Brave Bird  
 - Temper Flare  
 
-Chandelure (M) @ Spell Tag
-Ability: Infiltrator
-Tera Type: Ghost   
-Serious Nature  
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
-- Overheat  
-- Shadow Ball   
+Delphox (F) @ Delphite
+Ability: Blaze  
+Timid Nature  
+IVs: 0 SpA
+- Mystical Fire  
+- Psychic   
 
 Scovillain @ Wise Glasses  
 Ability: Insomnia
@@ -36238,9 +36234,10 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Snipe Shot  
 - Ice Beam 
 
-Ampharos (M) @ Ampharosite  
+Ampharos (M) @ Air Balloon  
 Ability: Static
-Serious Nature   
+Serious Nature 
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe   
 - Dragon Pulse  
 - Thunderbolt   
 - Power Gem 
@@ -37875,20 +37872,20 @@ IVs: 0 Atk
 - Dragon Pulse 
 - Dark Pulse
 
-Meganium (F) @ Meganiumite 
-Ability: Overgrow   
-Modest Nature  
-IVs: 0 SpA
-- Sludge Wave  
-- Energy Ball  
+Zeraora @ Zeraorite
+Ability: Volt Absorb  
+Serious Nature  
+IVs: 10 HP / 0 Atk / 10 Def / 10 SpA / 10 SpD / 0 Spe 
+- Plasma Fists  
+- Brick Break  
 
-Iron Valiant 
-Ability: Quark Drive  
+Rampardos 
+Ability: Mold Breaker
 Naive Nature
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe 
-- Moonblast  
-- Close Combat   
-- Vacuum Wave
+- Stone Edge  
+- Superpower   
+- Earthquake
 
 Orthworm @ Sitrus Berry  
 Ability: Earth Eater
@@ -38166,7 +38163,8 @@ Flareon (F)
 Ability: Guts  
 Level: 100 
 Tera Type: Fire  
-Sassy Nature  
+Sassy Nature 
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
 - Flare Blitz 
 - Iron Tail   
 
@@ -38174,23 +38172,25 @@ Espathra (F)
 Ability: Frisk
 Level: 100  
 Tera Type: Steel  
-Sassy Nature   
+Sassy Nature  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
 - Psychic  
 - Dazzling Gleam
 
-Victreebel (F) @ Victreebite
-Ability: Chlorophyll 
+Starmie (F) @ Starmite
+Ability: Illuminate
 Level: 100      
 Sassy Nature   
-- Sludge Bomb  
-- Giga Drain
+- Waterfall 
+- Psychic
 
 Cetitan (F)
 Ability: Thick Fat 
 Level: 100 
 Shiny: Yes  
 Tera Type: Ice   
-Sassy Nature  
+Sassy Nature
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe   
 - Ice Shard  
 - Liquidation  
 - Ice Spinner
@@ -38198,7 +38198,8 @@ Sassy Nature
 Tsareena
 Ability: Queenly Majesty  
 Level: 100   
-Sassy Nature  
+Sassy Nature
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe   
 - Knock Off  
 - Bullet Seed  
 - High Jump Kick  

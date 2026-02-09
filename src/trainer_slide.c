@@ -176,11 +176,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_WATTSON_2] = // Daca
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Hahaha!\nIt's time to party!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Hahaha! {B_OPPONENT_MON1_NAME}!\nIt's time to party!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_FLANNERY_2] = // Kai
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, LUME!\nLet's cook!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Okay, {B_OPPONENT_MON1_NAME}!\nLet's cook!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_NORMAN_2] = // Luna
         {
@@ -228,9 +228,9 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("MEGANIUM!\nMatch my freak!{PAUSE_UNTIL_PRESS}"),
         },
-        [TRAINER_XION] = // Xion
+        [TRAINER_XION] = // Xion final rematch
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("MEGANIUM!\nMatch my freak!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("{B_OPPONENT_MON1_NAME}!\nMatch my freak!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_DRAKE] = // Dave
         {
@@ -308,7 +308,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_MAE_3] = // wachun
         {
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("YASSSS, VICTREEBEL! SLAAAYYYYY!\nPERIODDDT!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("YASSSS, {B_OPPONENT_MON1_NAME}! SLAAAYYYYY!\nPERIODDDT!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_SPEEDWAGON_3] = // wachun
         {
