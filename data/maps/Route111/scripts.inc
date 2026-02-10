@@ -67,7 +67,7 @@ Route111_EventScript_SetFallingPlayerGfxMale::
 	return
 
 Route111_EventScript_SetFallingPlayerGfxFemale::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LUNA_FEMALE_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_BALDMO_NORMAL
 	return
 
 Route111_EventScript_CheckSetSandstorm::

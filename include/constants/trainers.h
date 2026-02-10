@@ -133,7 +133,8 @@
 #define TRAINER_PIC_WHITNEY               115
 #define TRAINER_PIC_LUNA_MALE             116
 #define TRAINER_PIC_LUNA_FEMALE           117
-#define TRAINER_PIC_COUNT                 118
+#define TRAINER_PIC_BALDMO                118
+#define TRAINER_PIC_COUNT                 119
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -147,6 +148,7 @@
 #define TRAINER_BACK_PIC_MOMO                   8
 #define TRAINER_BACK_PIC_LUNA_MALE              9
 #define TRAINER_BACK_PIC_LUNA_FEMALE            10
+#define TRAINER_BACK_PIC_BALDMO                 11
 
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1
@@ -235,8 +237,9 @@
 #define FACILITY_CLASS_LUNA                  0x54
 #define FACILITY_CLASS_LUNA_MALE             0x55
 #define FACILITY_CLASS_LUNA_FEMALE           0x56
+#define FACILITY_CLASS_BALDMO                0x57
 
-#define FACILITY_CLASSES_COUNT               0x57
+#define FACILITY_CLASSES_COUNT               0x58
 
 #define RS_FACILITY_CLASS_AQUA_LEADER_ARCHIE    0x0
 #define RS_FACILITY_CLASS_AQUA_GRUNT_M          0x1

@@ -552,3 +552,15 @@ const u32 gObjectEventPic_LunaFemaleWatering[] = INCBIN_U32("graphics/object_eve
 const u16 gObjectEventPal_LunaFemaleWatering[] = INCBIN_U16("graphics/object_events/palettes/luna_female_watering.gbapal");
 const u32 gObjectEventPic_LunaFemaleDecorating[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/decorating.4bpp");
 const u32 gObjectEventPic_LunaFemaleUnderwater[] = INCBIN_U32("graphics/object_events/pics/people/luna_female/underwater.4bpp");
+
+const u32 gObjectEventPic_BaldmoNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/walking.4bpp", "graphics/object_events/pics/people/baldmo/running.4bpp");
+const u16 gObjectEventPal_Baldmo[] = INCBIN_U16("graphics/object_events/palettes/baldmo.gbapal");
+const u16 gObjectEventPal_BaldmoReflection[] = INCBIN_U16("graphics/object_events/palettes/baldmo_reflection.gbapal");
+const u32 gObjectEventPic_BaldmoFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/field_move.4bpp");
+const u32 gObjectEventPic_BaldmoSurfing[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/surfing.4bpp");
+const u32 gObjectEventPic_BaldmoMachBike[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/mach_bike.4bpp");
+const u32 gObjectEventPic_BaldmoAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/acro_bike.4bpp");
+const u32 gObjectEventPic_BaldmoFishing[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/fishing.4bpp");
+const u32 gObjectEventPic_BaldmoWatering[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/watering.4bpp");
+const u32 gObjectEventPic_BaldmoDecorating[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/decorating.4bpp");
+const u32 gObjectEventPic_BaldmoUnderwater[] = INCBIN_U32("graphics/object_events/pics/people/baldmo/underwater.4bpp");

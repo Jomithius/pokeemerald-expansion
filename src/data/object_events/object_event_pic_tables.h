@@ -1617,3 +1617,66 @@ static const struct SpriteFrameImage sPicTable_LunaFemaleWatering[] = {
 static const struct SpriteFrameImage sPicTable_LunaFemaleDecorating[] = {
     obj_frame_tiles(gObjectEventPic_LunaFemaleDecorating),
 };
+
+static const struct SpriteFrameImage sPicTable_BaldmoNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_BaldmoNormalRunning, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_BaldmoMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_BaldmoMachBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_BaldmoAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_BaldmoAcroBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_BaldmoSurfing[] = {
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_BaldmoSurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_BaldmoUnderwater[] = {
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_BaldmoUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_BaldmoFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_BaldmoFieldMove, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_BaldmoFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_BaldmoFishing, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_BaldmoWatering[] = {
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_BaldmoWatering, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_BaldmoDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_BaldmoDecorating),
+};

@@ -792,7 +792,7 @@ static void CreateCableCarSprites(void)
 
     u16 playerGraphicsIds[2] = {
         [MALE]   = OBJ_EVENT_GFX_LUNA_MALE_NORMAL,
-        [FEMALE] = OBJ_EVENT_GFX_LUNA_FEMALE_NORMAL
+        [FEMALE] = OBJ_EVENT_GFX_BALDMO_NORMAL
     };
     u16 rval = Random();
     u16 hikerGraphicsIds[4] = {

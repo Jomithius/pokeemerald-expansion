@@ -561,6 +561,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_LunaFemale,            OBJ_EVENT_PAL_TAG_LUNA_FEMALE},
     {gObjectEventPal_LunaFemaleReflection,  OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION},
     {gObjectEventPal_LunaFemaleWatering,    OBJ_EVENT_PAL_TAG_LUNA_FEMALE_WATERING},
+    {gObjectEventPal_Baldmo,                OBJ_EVENT_PAL_TAG_BALDMO},
+    {gObjectEventPal_BaldmoReflection,      OBJ_EVENT_PAL_TAG_BALDMO_REFLECTION},
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
     {gObjectEventPal_UltraBall,             OBJ_EVENT_PAL_TAG_BALL_ULTRA},
@@ -636,6 +638,13 @@ static const u16 sReflectionPaletteTags_LunaFemale[] = {
     OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
     OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
     OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION,
+};
+
+static const u16 sReflectionPaletteTags_Baldmo[] = {
+    OBJ_EVENT_PAL_TAG_BALDMO_REFLECTION,
+    OBJ_EVENT_PAL_TAG_BALDMO_REFLECTION,
+    OBJ_EVENT_PAL_TAG_BALDMO_REFLECTION,
+    OBJ_EVENT_PAL_TAG_BALDMO_REFLECTION,
 };
 
 static const struct PairedPalettes sPlayerReflectionPaletteSets[] = {
@@ -738,6 +747,7 @@ static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_RED_LEAF,         sReflectionPaletteTags_RedLeaf},
     {OBJ_EVENT_PAL_TAG_LUNA_MALE,        sReflectionPaletteTags_LunaMale},
     {OBJ_EVENT_PAL_TAG_LUNA_FEMALE,      sReflectionPaletteTags_LunaFemale},
+    {OBJ_EVENT_PAL_TAG_BALDMO,           sReflectionPaletteTags_Baldmo},
     {OBJ_EVENT_PAL_TAG_NONE,             NULL},
 };
 

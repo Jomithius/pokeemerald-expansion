@@ -284,14 +284,23 @@
 #define OBJ_EVENT_GFX_LUNA_FEMALE_FIELD_MOVE     280
 #define OBJ_EVENT_GFX_LUNA_FEMALE_UNDERWATER     281
 #define OBJ_EVENT_GFX_LUNA_FEMALE_FISHING        282
-#define OBJ_EVENT_GFX_LUNA_FEMALE_WATERING       283 // unused
+#define OBJ_EVENT_GFX_LUNA_FEMALE_WATERING       283
 #define OBJ_EVENT_GFX_LUNA_FEMALE_DECORATING     284
+#define OBJ_EVENT_GFX_BALDMO_NORMAL              285
+#define OBJ_EVENT_GFX_BALDMO_MACH_BIKE           286
+#define OBJ_EVENT_GFX_BALDMO_ACRO_BIKE           287
+#define OBJ_EVENT_GFX_BALDMO_SURFING             288
+#define OBJ_EVENT_GFX_BALDMO_FIELD_MOVE          289
+#define OBJ_EVENT_GFX_BALDMO_UNDERWATER          290
+#define OBJ_EVENT_GFX_BALDMO_FISHING             291
+#define OBJ_EVENT_GFX_BALDMO_WATERING            292
+#define OBJ_EVENT_GFX_BALDMO_DECORATING          293
 
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        285
+#define NUM_OBJ_EVENT_GFX                        294
 
 
 // These are dynamic object gfx ids.
@@ -511,6 +520,8 @@
 #define OBJ_EVENT_PAL_TAG_LUNA_FEMALE             0x1179
 #define OBJ_EVENT_PAL_TAG_LUNA_FEMALE_REFLECTION  0x1180
 #define OBJ_EVENT_PAL_TAG_LUNA_FEMALE_WATERING    0x1181 // unused
+#define OBJ_EVENT_PAL_TAG_BALDMO                  0x1182
+#define OBJ_EVENT_PAL_TAG_BALDMO_REFLECTION       0x1183
 
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002

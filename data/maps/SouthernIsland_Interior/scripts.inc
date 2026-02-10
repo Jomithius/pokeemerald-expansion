@@ -42,7 +42,7 @@ SouthernIsland_Interior_EventScript_SetBrendanGfx::
 	return
 
 SouthernIsland_Interior_EventScript_SetMayGfx::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LUNA_FEMALE_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_BALDMO_NORMAL
 	return
 
 SouthernIsland_Interior_EventScript_TryLatiEncounter::

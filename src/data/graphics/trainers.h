@@ -353,6 +353,9 @@ const u32 gTrainerPalette_LunaMale[] = INCBIN_U32("graphics/trainers/palettes/lu
 const u32 gTrainerFrontPic_LunaFemale[] = INCBIN_U32("graphics/trainers/front_pics/luna_female.4bpp.lz");
 const u32 gTrainerPalette_LunaFemale[] = INCBIN_U32("graphics/trainers/palettes/luna_female.gbapal.lz");
 
+const u32 gTrainerFrontPic_Baldmo[] = INCBIN_U32("graphics/trainers/front_pics/baldmo.4bpp.lz");
+const u32 gTrainerPalette_Baldmo[] = INCBIN_U32("graphics/trainers/palettes/baldmo.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -364,6 +367,7 @@ const u8 gTrainerBackPic_Steven[] = INCBIN_U8("graphics/trainers/back_pics/steve
 const u8 gTrainerBackPic_Momo[] = INCBIN_U8("graphics/trainers/back_pics/momo.4bpp");
 const u8 gTrainerBackPic_LunaMale[] = INCBIN_U8("graphics/trainers/back_pics/luna_male.4bpp");
 const u8 gTrainerBackPic_LunaFemale[] = INCBIN_U8("graphics/trainers/back_pics/luna_female.4bpp");
+const u8 gTrainerBackPic_Baldmo[] = INCBIN_U8("graphics/trainers/back_pics/baldmo.4bpp");
 
 const u32 gTrainerBackPicPalette_Red[] = INCBIN_U32("graphics/trainers/back_pics/red.gbapal.lz");
 const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pics/leaf.gbapal.lz");
@@ -505,6 +509,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_WHITNEY, gTrainerFrontPic_Whitney, gTrainerPalette_Whitney),
     TRAINER_SPRITE(TRAINER_PIC_LUNA_MALE, gTrainerFrontPic_LunaMale, gTrainerPalette_LunaMale),
     TRAINER_SPRITE(TRAINER_PIC_LUNA_FEMALE, gTrainerFrontPic_LunaFemale, gTrainerPalette_LunaFemale),
+    TRAINER_SPRITE(TRAINER_PIC_BALDMO, gTrainerFrontPic_Baldmo, gTrainerPalette_Baldmo),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
@@ -654,6 +659,15 @@ const struct SpriteFrameImage gTrainerBackPicTable_LunaFemale[] =
     {gTrainerBackPic_LunaFemale + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
 };
 
+const struct SpriteFrameImage gTrainerBackPicTable_Baldmo[] =
+{
+    {gTrainerBackPic_Baldmo + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Baldmo + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Baldmo + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Baldmo + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Baldmo + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
+};
+
 // .backPic goes functionally unused, since none of these pics are compressed
 // and the place they would get extracted to gets overwritten later anyway
 // the casts are so they'll play nice with the strict struct definition
@@ -669,7 +683,7 @@ const struct SpriteFrameImage gTrainerBackPicTable_LunaFemale[] =
 const struct TrainerBacksprite gTrainerBacksprites[] =
 {
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_BRENDAN, 5, gTrainerBackPic_LunaMale, gTrainerBackPicTable_LunaMale, gTrainerBackPicPalette_LunaMale, sBackAnims_Kanto),
-    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MAY, 5, gTrainerBackPic_LunaFemale, gTrainerBackPicTable_LunaFemale, gTrainerBackPicPalette_LunaFemale, sBackAnims_Kanto),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MAY, 5, gTrainerBackPic_Baldmo, gTrainerBackPicTable_Baldmo, gTrainerPalette_Baldmo, sBackAnims_Kanto),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_RED, 5, gTrainerBackPic_Red, gTrainerBackPicTable_Red, gTrainerBackPicPalette_Red, sBackAnims_Kanto),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LEAF, 5, gTrainerBackPic_Leaf, gTrainerBackPicTable_Leaf, gTrainerBackPicPalette_Leaf, sBackAnims_Kanto),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN, 4, gTrainerBackPic_RubySapphireBrendan, gTrainerBackPicTable_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan, sBackAnims_Hoenn),
@@ -679,4 +693,5 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MOMO, 5, gTrainerBackPic_Momo, gTrainerBackPicTable_Momo, gTrainerBackPicPalette_Momo, sBackAnims_Kanto),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUNA_MALE, 5, gTrainerBackPic_LunaMale, gTrainerBackPicTable_LunaMale, gTrainerBackPicPalette_LunaMale, sBackAnims_Kanto),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUNA_FEMALE, 5, gTrainerBackPic_LunaFemale, gTrainerBackPicTable_LunaFemale, gTrainerBackPicPalette_LunaFemale, sBackAnims_Kanto),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_BALDMO, 5, gTrainerBackPic_Baldmo, gTrainerBackPicTable_Baldmo, gTrainerPalette_Baldmo, sBackAnims_Kanto),
 };

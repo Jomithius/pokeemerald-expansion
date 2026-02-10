@@ -137,6 +137,9 @@ static const u8 sRegionMapPlayerIcon_LunaMaleGfx[] = INCBIN_U8("graphics/pokenav
 static const u16 sRegionMapPlayerIcon_LunaFemalePal[] = INCBIN_U16("graphics/pokenav/region_map/luna_female_icon.gbapal");
 static const u8 sRegionMapPlayerIcon_LunaFemaleGfx[] = INCBIN_U8("graphics/pokenav/region_map/luna_female_icon.4bpp");
 
+static const u16 sRegionMapPlayerIcon_BaldmoPal[] = INCBIN_U16("graphics/pokenav/region_map/baldmo_icon.gbapal");
+static const u8 sRegionMapPlayerIcon_BaldmoGfx[] = INCBIN_U8("graphics/pokenav/region_map/baldmo_icon.4bpp");
+
 #include "data/region_map/region_map_layout.h"
 #include "data/region_map/region_map_layout_nhoenn.h"
 #include "data/region_map/region_map_entries.h"
@@ -1625,8 +1628,8 @@ void CreateRegionMapPlayerIcon(u16 tileTag, u16 paletteTag)
     }
     if (gSaveBlock2Ptr->playerGender == FEMALE)
     {
-        sheet.data = sRegionMapPlayerIcon_LunaFemaleGfx;
-        palette.data = sRegionMapPlayerIcon_LunaFemalePal;
+        sheet.data = sRegionMapPlayerIcon_BaldmoGfx;
+        palette.data = sRegionMapPlayerIcon_BaldmoPal;
     }
     LoadSpriteSheet(&sheet);
     LoadSpritePalette(&palette);

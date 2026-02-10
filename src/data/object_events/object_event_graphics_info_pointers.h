@@ -283,6 +283,16 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleF
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleWatering;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LunaFemaleDecorating;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaldmoDecorating;
+
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
@@ -412,11 +422,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BREAKABLE_ROCK] =           &gObjectEventGraphicsInfo_BreakableRock,
     [OBJ_EVENT_GFX_PUSHABLE_BOULDER] =         &gObjectEventGraphicsInfo_PushableBoulder,
     [OBJ_EVENT_GFX_MR_BRINEYS_BOAT] =          &gObjectEventGraphicsInfo_MrBrineysBoat,
-    [OBJ_EVENT_GFX_MAY_NORMAL] =               &gObjectEventGraphicsInfo_LunaFemaleNormal,
-    [OBJ_EVENT_GFX_MAY_MACH_BIKE] =            &gObjectEventGraphicsInfo_LunaFemaleMachBike,
-    [OBJ_EVENT_GFX_MAY_ACRO_BIKE] =            &gObjectEventGraphicsInfo_LunaFemaleAcroBike,
-    [OBJ_EVENT_GFX_MAY_SURFING] =              &gObjectEventGraphicsInfo_LunaFemaleSurfing,
-    [OBJ_EVENT_GFX_MAY_FIELD_MOVE] =           &gObjectEventGraphicsInfo_LunaFemaleFieldMove,
+    [OBJ_EVENT_GFX_MAY_NORMAL] =               &gObjectEventGraphicsInfo_BaldmoNormal,
+    [OBJ_EVENT_GFX_MAY_MACH_BIKE] =            &gObjectEventGraphicsInfo_BaldmoMachBike,
+    [OBJ_EVENT_GFX_MAY_ACRO_BIKE] =            &gObjectEventGraphicsInfo_BaldmoAcroBike,
+    [OBJ_EVENT_GFX_MAY_SURFING] =              &gObjectEventGraphicsInfo_BaldmoSurfing,
+    [OBJ_EVENT_GFX_MAY_FIELD_MOVE] =           &gObjectEventGraphicsInfo_BaldmoFieldMove,
     [OBJ_EVENT_GFX_TRUCK] =                    &gObjectEventGraphicsInfo_Truck,
     [OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX] =    &gObjectEventGraphicsInfo_VigorothCarryingBox,
     [OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY] =     &gObjectEventGraphicsInfo_VigorothFacingAway,
@@ -435,7 +445,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RIVAL_MAY_FIELD_MOVE] =     &gObjectEventGraphicsInfo_RivalMayFieldMove,
     [OBJ_EVENT_GFX_CAMERAMAN] =                &gObjectEventGraphicsInfo_Cameraman,
     [OBJ_EVENT_GFX_BRENDAN_UNDERWATER] =       &gObjectEventGraphicsInfo_LunaMaleUnderwater,
-    [OBJ_EVENT_GFX_MAY_UNDERWATER] =           &gObjectEventGraphicsInfo_LunaFemaleUnderwater,
+    [OBJ_EVENT_GFX_MAY_UNDERWATER] =           &gObjectEventGraphicsInfo_BaldmoUnderwater,
     [OBJ_EVENT_GFX_MOVING_BOX] =               &gObjectEventGraphicsInfo_MovingBox,
     [OBJ_EVENT_GFX_CABLE_CAR] =                &gObjectEventGraphicsInfo_CableCar,
     [OBJ_EVENT_GFX_SCIENTIST_2] =              &gObjectEventGraphicsInfo_Scientist2,
@@ -461,7 +471,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WALLY] =                    &gObjectEventGraphicsInfo_Wally,
     [OBJ_EVENT_GFX_LITTLE_BOY_3] =             &gObjectEventGraphicsInfo_RubySapphireLittleBoy,
     [OBJ_EVENT_GFX_BRENDAN_FISHING] =          &gObjectEventGraphicsInfo_LunaMaleFishing,
-    [OBJ_EVENT_GFX_MAY_FISHING] =              &gObjectEventGraphicsInfo_LunaFemaleFishing,
+    [OBJ_EVENT_GFX_MAY_FISHING] =              &gObjectEventGraphicsInfo_BaldmoFishing,
     [OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN] =    &gObjectEventGraphicsInfo_HotSpringsOldWoman,
     [OBJ_EVENT_GFX_SS_TIDAL] =                 &gObjectEventGraphicsInfo_SSTidal,
     [OBJ_EVENT_GFX_SUBMARINE_SHADOW] =         &gObjectEventGraphicsInfo_SubmarineShadow,
@@ -515,9 +525,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_GAMEBOY_KID] =              &gObjectEventGraphicsInfo_GameboyKid,
     [OBJ_EVENT_GFX_CONTEST_JUDGE] =            &gObjectEventGraphicsInfo_ContestJudge,
     [OBJ_EVENT_GFX_BRENDAN_WATERING] =         &gObjectEventGraphicsInfo_LunaMaleWatering,
-    [OBJ_EVENT_GFX_MAY_WATERING] =             &gObjectEventGraphicsInfo_LunaFemaleWatering,
+    [OBJ_EVENT_GFX_MAY_WATERING] =             &gObjectEventGraphicsInfo_BaldmoWatering,
     [OBJ_EVENT_GFX_BRENDAN_DECORATING] =       &gObjectEventGraphicsInfo_LunaMaleDecorating,
-    [OBJ_EVENT_GFX_MAY_DECORATING] =           &gObjectEventGraphicsInfo_LunaFemaleDecorating,
+    [OBJ_EVENT_GFX_MAY_DECORATING] =           &gObjectEventGraphicsInfo_BaldmoDecorating,
     [OBJ_EVENT_GFX_ARCHIE] =                   &gObjectEventGraphicsInfo_Archie,
     [OBJ_EVENT_GFX_MAXIE] =                    &gObjectEventGraphicsInfo_Maxie,
     [OBJ_EVENT_GFX_KYOGRE_FRONT] =             &gObjectEventGraphicsInfo_KyogreFront,
@@ -582,6 +592,15 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LUNA_FEMALE_FISHING] =      &gObjectEventGraphicsInfo_LunaFemaleFishing,
     [OBJ_EVENT_GFX_LUNA_FEMALE_WATERING] =     &gObjectEventGraphicsInfo_LunaFemaleWatering,
     [OBJ_EVENT_GFX_LUNA_FEMALE_DECORATING] =   &gObjectEventGraphicsInfo_LunaFemaleDecorating,
+    [OBJ_EVENT_GFX_BALDMO_NORMAL] =            &gObjectEventGraphicsInfo_BaldmoNormal,
+    [OBJ_EVENT_GFX_BALDMO_MACH_BIKE] =         &gObjectEventGraphicsInfo_BaldmoMachBike,
+    [OBJ_EVENT_GFX_BALDMO_ACRO_BIKE] =         &gObjectEventGraphicsInfo_BaldmoAcroBike,
+    [OBJ_EVENT_GFX_BALDMO_SURFING] =           &gObjectEventGraphicsInfo_BaldmoSurfing,
+    [OBJ_EVENT_GFX_BALDMO_FIELD_MOVE] =        &gObjectEventGraphicsInfo_BaldmoFieldMove,
+    [OBJ_EVENT_GFX_BALDMO_UNDERWATER] =        &gObjectEventGraphicsInfo_BaldmoUnderwater,
+    [OBJ_EVENT_GFX_BALDMO_FISHING] =           &gObjectEventGraphicsInfo_BaldmoFishing,
+    [OBJ_EVENT_GFX_BALDMO_WATERING] =          &gObjectEventGraphicsInfo_BaldmoWatering,
+    [OBJ_EVENT_GFX_BALDMO_DECORATING] =        &gObjectEventGraphicsInfo_BaldmoDecorating,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
