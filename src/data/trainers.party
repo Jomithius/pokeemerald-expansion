@@ -5206,7 +5206,7 @@ Level: 21
 EVs: 248 HP / 128 Atk  
 Ball: Nest Ball
 - Tail Slap   
-- Bullet Seed   
+- Dazzling Gleam   
 
 Poobles (Diglett-Alola) (M) @ Rocky Helmet  
 Ability: Tangling Hair  
@@ -5265,6 +5265,7 @@ IVs: 0 Atk
 Scrafty (M) @ Sitrus Berry
 Ability: Intimidate  
 Level: 25  
+Shiny: Yes
 EVs: 252 HP / 240 Atk / 12 Def / 4 Spe  
 Naughty Nature  
 - Fake Out  
@@ -24852,20 +24853,20 @@ Ball: Nest Ball
 Dartrix @ Miracle Seed  
 Ability: Long Reach  
 Level: 20  
-Adamant Nature  
+Serious Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Ball: Nest Ball
 - Aerial Ace   
 - Razor Leaf  
 
-Cinccino 
+Minccino 
 Ability: Cute Charm 
 Level: 19  
-Adamant Nature  
+Serious Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe 
 Ball: Nest Ball
-- Tail Slap  
-- Bullet Seed   
+- Swift 
+- Dazzling Gleam   
 
 Poobles (Diglett-Alola) @ Rocky Helmet  
 Ability: Tangling Hair  
@@ -24914,10 +24915,10 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 1 Spe
 - Mud Bomb  
 
 Scrafty (M)
-Ability: Intimidate  
+Ability: Shed Skin 
 Level: 24  
 Naughty Nature
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe  
+IVs: 10 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe  
 - Fake Out  
 - Thief   
 - Brick Break  

@@ -313,7 +313,7 @@ static const u8 sTrainerPicFacilityClass[][GENDER_COUNT] =
     [CARD_TYPE_EMERALD] =
     {
         [MALE]   = FACILITY_CLASS_LUNA_MALE,
-        [FEMALE] = FACILITY_CLASS_BALDMO
+        [FEMALE] = FACILITY_CLASS_LUNA_FEMALE
     }
 };
 

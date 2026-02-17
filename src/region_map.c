@@ -1628,8 +1628,8 @@ void CreateRegionMapPlayerIcon(u16 tileTag, u16 paletteTag)
     }
     if (gSaveBlock2Ptr->playerGender == FEMALE)
     {
-        sheet.data = sRegionMapPlayerIcon_BaldmoGfx;
-        palette.data = sRegionMapPlayerIcon_BaldmoPal;
+        sheet.data = sRegionMapPlayerIcon_LunaFemaleGfx;
+        palette.data = sRegionMapPlayerIcon_LunaFemalePal;
     }
     LoadSpriteSheet(&sheet);
     LoadSpritePalette(&palette);

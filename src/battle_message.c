@@ -895,7 +895,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNSENTTOPCAFTERCATCH]               = gText_PkmnSentToPCAfterCatch,
     [STRINGID_MEGAEVOREACTINGTOTODILE]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} draws its {B_LAST_ITEM}!"),
     [STRINGID_MEGAEVOEVOLVEDTOTODILE]               = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} has Mega Evolved into Totoknight!"),
-    [STRINGID_MEGAEVOEVOLVEDPOOBLES]                = COMPOUND_STRING("POOBLES has Mega Evolved into Mega Poobles!"),
+    [STRINGID_MEGAEVOEVOLVEDPOOBLES]                = COMPOUND_STRING("Poobles has Mega Evolved into Mega Poobles!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

@@ -821,7 +821,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
         .anims = NULL,
-        .images = gTrainerBackPicTable_Baldmo,
+        .images = gTrainerBackPicTable_LunaFemale,
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
@@ -6427,7 +6427,7 @@ u16 FacilityClassToPicIndex(u16 facilityClass)
 u16 PlayerGenderToFrontTrainerPicId(u8 playerGender)
 {
     if (playerGender != MALE)
-        return FacilityClassToPicIndex(FACILITY_CLASS_BALDMO);
+        return FacilityClassToPicIndex(FACILITY_CLASS_LUNA_FEMALE);
     else
         return FacilityClassToPicIndex(FACILITY_CLASS_LUNA_MALE);
 }
